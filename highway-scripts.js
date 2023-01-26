@@ -1954,23 +1954,23 @@ function vegetationFeatureSetHandler(marker,featureSet){
     if (featureSet.features.length >= 1){
         var asset = featureSet.features[0];
         var attributes = asset.attributes;
-        KDF.setVal("object_id", attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.objectid"]);
-        KDF.setVal("longitude_x", marker.geometry.x);
-        KDF.setVal("latitude_y", marker.geometry.y);
-        KDF.setVal("asset_type", attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.featuretypename"]);
-        KDF.setVal("asset_type_id", attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.featureid"]);
-        KDF.setVal("central_asset_id", attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.centralassetid"]);
-        KDF.setVal("asset_responsibility", attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.responsibility"]);
-        KDF.setVal("site_name", attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.sitename"]);
-        KDF.setVal("txt_streetdescription", attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.sitename"]);
-        KDF.setVal("site_code", attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.sitecode"]);
-        KDF.setVal("txt_usrn", attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.sitecode"]);
-        vmap.setInfoWindow({
-            xcoord: marker.geometry.x,
-            ycoord: marker.geometry.y,
-            title: "Details",
-            content: "<strong>" + attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.featuretypename"] + ":</strong> " + attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.sitename"]
-        });
+		KDF.setVal("object_id", attributes["objectid"]);
+		KDF.setVal("longitude_x", marker.geometry.x);
+		KDF.setVal("latitude_y", marker.geometry.y);
+		KDF.setVal("asset_type",attributes["featuretypename"]);
+		KDF.setVal("asset_type_id",attributes["featureid"]);
+		KDF.setVal("central_asset_id",attributes["centralassetid"]);
+		KDF.setVal("asset_responsibility",attributes["responsibility"]);
+		KDF.setVal("site_name",attributes["sitename"]);
+		KDF.setVal("txt_streetdescription", attributes["sitename"]);
+		KDF.setVal("site_code",attributes["sitecode"]);
+		KDF.setVal("txt_usrn",attributes["sitecode"]);
+		vmap.setInfoWindow({
+			xcoord: marker.geometry.x,
+			ycoord: marker.geometry.y,
+			title: "Details",
+			content: "<strong>Feature:</strong> " + attributes["featuretypename"] + "<br/><strong>Site Name:</strong> " + attributes["sitename"]
+		});
         queryCityCentre(marker);
     } else{
         queryRoads(marker);
