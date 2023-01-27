@@ -1089,146 +1089,66 @@ var mapParams ={
     //hostUrl: "https://forms-sheffieldcc.squiz.cloud"
 };
 
-var featureLayers ={
+var featureLayers = 
+{
+    //Start: Bourday Line
+        boundary: {id:0, url:"/usrsvcs/servers/97cfdc3a164c48219826b907c0a5064f/rest/services/AGOL/Boundaries/MapServer"},
+    //Finish: Bourday Line
+    
+    //Start: LLPG
+        //LLPG: {id:0, url:"/usrsvcs/servers/af62c54a431540369ce04b70ea3cf51a/rest/services/LLPGCascade/CASCADE/GeocodeServer"},
+        //https://utility.arcgis.com/usrsvcs/servers/af62c54a431540369ce04b70ea3cf51a/rest/services/LLPGCascade/CASCADE/GeocodeServer
+    //Finish: LLPG
+    
+    //Start: Highways Feature Layers
+        signs: {id:0, url: "/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer"},
+        trafficsignals: {id:41, url:"/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer"},
+        drains: {id:2, url:"/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer"},
+        gritbins: {id:3, url:"/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer"},
+        litterbins: {id:4, url:"/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer"},
+        streetfurniture: {id:5, url:"/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer"},
+        streetlights: {id:6, url:"/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer"},
+        structures: {id:7, url:"/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer"},
+        fences: {id:8, url:"/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer"},
+        pavements: {id:9, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+        roads: {id:12, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+        
+        //Start: Cleaning Layers
+            citycentre: {id:14, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+            hotspotasspss: {id:15, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+            hotspotschools: {id:16, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+            principalshopsite: {id:17, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+            neighbourhoodshopsite: {id:18, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+            gateway: {id:19, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+            prowflytipping: {id:23, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+        //Finish: Cleaning Layers
+        
+        vegetation: {id:24, url:"/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer"},
+        trees: {id:27, url:"/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer"},
+    //Finish: Highways Feature Layers
+    
+    //Start: Other Feature Layers
+        adoptedhighways: {id:4, url:"/usrsvcs/servers/f5c0484e329e41188ea83b3f7076f75f/rest/services/Portal/Highways_Internal/MapServer"},
+        allotments: {id:0, url:"/usrsvcs/servers/78e31557159b4b7aa156df1dce76157a/rest/services/AGOL/INSPIRE/MapServer"},
+        parks: {id:12, url:"/usrsvcs/servers/78e31557159b4b7aa156df1dce76157a/rest/services/AGOL/INSPIRE/MapServer"},
+        woodlands: {id:12, url:"/usrsvcs/servers/065324b0c63a49a7981670d56f7906c5/rest/services/AGOL/Parks/MapServer"},
+        openfaults: {id:11, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+        otherdesignatedland: {id:21, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+        nonadoptedgm: {id:22, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+        gmsites: {id:29, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+        shmisc: {id:30, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+        ptleases: {id:43, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+        ptholdings: {id:34, url:"/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"},
+    //Finish: Other Feature Layers
 
-    boundary:{
-        id: 0,
-        url: "/usrsvcs/servers/97cfdc3a164c48219826b907c0a5064f/rest/services/AGOL/Boundaries/MapServer"
+    url(layer) 
+    {
+        // return vmap.getMapParams().hostUrl + layer.url;
+        return layer.url;
     },
-
-    signs:{
-        id: 0,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    drains:{
-        id: 2,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    gritbins:{
-        id: 3,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    litterbins:{
-        id: 4,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    streetfurniture:{
-        id: 5,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    streetlights:{
-        id: 6,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    structures:{
-        id: 7,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    fences:{
-        id: 8,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    pavements:{
-        id: 9,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    roads:{
-        id: 12,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    citycentre:{
-        id: 14,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    hotspotasspss:{
-        id: 15,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    hotspotschools:{
-        id: 16,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    principalshopsite:{
-        id: 17,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    neighbourhoodshopsite:{
-        id: 18,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    gateway:{
-        id: 19,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    prowflytipping:{
-        id: 23,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    vegetation:{
-        id: 24,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    trees:{
-        id: 27,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    adoptedhighways:{
-        id: 4,
-        url: "/usrsvcs/servers/f5c0484e329e41188ea83b3f7076f75f/rest/services/Portal/Highways_Internal/MapServer"
-    },
-    allotments:{
-        id: 0,
-        url: "/usrsvcs/servers/78e31557159b4b7aa156df1dce76157a/rest/services/AGOL/INSPIRE/MapServer"
-    },
-    parks:{
-        id: 12,
-        url: "/usrsvcs/servers/78e31557159b4b7aa156df1dce76157a/rest/services/AGOL/INSPIRE/MapServer"
-    },
-    woodlands:{
-        id: 12,
-        url: "/usrsvcs/servers/065324b0c63a49a7981670d56f7906c5/rest/services/AGOL/Parks/MapServer"
-    },
-    openfaults:{
-        id: 11,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    otherdesignatedland:{
-        id: 21,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    nonadoptedgm:{
-        id: 22,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    gmsites:{
-        id: 29,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    shmisc:{
-        id: 30,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    ptleases:{
-        id: 43,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    ptholdings:{
-        id: 34,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-    trafficsignals:{
-        id: 41,
-        url: "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer"
-    },
-
-    url(layer){
-        return vmap.getMapParams().hostUrl + layer.url;
-    },
-    getQueryLayer(layer){
-        return{
-            url: this.url(layer) + '/' + layer.id,
-            wkid: layer.wkid
-        };
+    getQueryLayer(layer) 
+    {
+        return {url: this.url(layer) + '/' + layer.id, wkid: layer.wkid};
     }
 };
 
