@@ -1676,21 +1676,24 @@ function roadsFeatureSetHandler(marker,featureSet){
     if (featureSet.features.length >= 1){
         var asset = featureSet.features[0];
         var attributes = asset.attributes;
-        KDF.setVal("object_id", attributes["objectid"]);
+        // KDF.setVal("object_id", attributes["objectid"]);
         KDF.setVal("longitude_x", marker.geometry.x);
         KDF.setVal("latitude_y", marker.geometry.y);
-        KDF.setVal("asset_type", attributes["feature_ty"]);
-        KDF.setVal("asset_type_id", attributes["feature_id"]);
-        KDF.setVal("central_asset_id", attributes["central_as"]);
+        // KDF.setVal("asset_type", attributes["feature_ty"]);
+        // KDF.setVal("asset_type_id", attributes["feature_id"]);
+        // KDF.setVal("central_asset_id", attributes["central_as"]);
         if (KDF.getVal('Level_1_data') === 'Fly-Tipping' && KDF.getVal('Level_2_data') === 'Known'){
             KDF.setVal("asset_responsibility", "");
         } else {
             KDF.setVal("asset_responsibility", "AMEY (PFI)");
         }
-        KDF.setVal("site_name", attributes["site_name"]);
-        KDF.setVal("txt_streetdescription", attributes["site_name"]);
-        KDF.setVal("site_code", attributes["site_code"]);
-        KDF.setVal("txt_usrn", attributes["site_code"]);
+        KDF.setVal("site_name", attributes["streetname"]);
+        KDF.setVal("txt_streetdescription", attributes["streetname"]);
+        KDF.setVal("txt_fulladdress", attributes["streetname"]);
+        KDF.setVal("site_code", attributes["usrn"]);
+        KDF.setVal("txt_usrn", attributes["usrn"]);
+        KDF.showSection('area_lacation_description');
+
         vmap.setInfoWindow({
             xcoord: marker.geometry.x,
             ycoord: marker.geometry.y,
@@ -1715,21 +1718,23 @@ function pavementsFeatureSetHandler(marker,featureSet){
     if (featureSet.features.length >= 1){
         var asset = featureSet.features[0];
         var attributes = asset.attributes;
-        KDF.setVal("object_id", attributes["objectid"]);
+//      KDF.setVal("object_id", attributes["objectid"]);
         KDF.setVal("longitude_x", marker.geometry.x);
         KDF.setVal("latitude_y", marker.geometry.y);
-        KDF.setVal("asset_type", attributes["featuretypename"]);
-        KDF.setVal("asset_type_id", attributes["featureid"]);
-        KDF.setVal("central_asset_id", attributes["centralassetid"]);
+//      KDF.setVal("asset_type", attributes["feature_ty"]);
+//      KDF.setVal("asset_type_id", attributes["feature_id"]);
+//      KDF.setVal("central_asset_id", attributes["central_as"]);
         if (KDF.getVal('Level_1_data') === 'Fly-Tipping' && KDF.getVal('Level_2_data') === 'Known'){
             KDF.setVal("asset_responsibility", "");
         } else {
             KDF.setVal("asset_responsibility", "AMEY (PFI)");
         }
-        KDF.setVal("site_name", attributes["sitename"]);
-        KDF.setVal("txt_streetdescription", attributes["site_name"]);
-        KDF.setVal("site_code", attributes["sitecode"]);
-        KDF.setVal("txt_usrn", attributes["sitecode"]);
+        KDF.setVal("site_name", attributes["streetname"]);
+        KDF.setVal("txt_streetdescription", attributes["streetname"]);
+        KDF.setVal("txt_fulladdress", attributes["streetname"]);
+        KDF.setVal("site_code", attributes["usrn"]);
+        KDF.setVal("txt_usrn", attributes["usrn"]);
+
         vmap.setInfoWindow({
             xcoord: marker.geometry.x,
             ycoord: marker.geometry.y,
@@ -1749,9 +1754,10 @@ function pavementsFeatureSetHandler2(marker,featureSet){
     if (featureSet.features.length >= 1){
         var asset = featureSet.features[0];
         var attributes = asset.attributes;
-        KDF.setVal("site_name", attributes["sitename"]);
-        KDF.setVal("txt_streetdescription", attributes["sitename"]);
-        KDF.setVal("txt_usrn", attributes["sitecode"]);
+        KDF.setVal("site_name", attributes["streetname"]);
+        KDF.setVal("txt_streetdescription", attributes["streetname"]);
+        KDF.setVal("site_code", attributes["usrn"]);
+        KDF.setVal("txt_usrn", attributes["usrn"]);
     }
 }
 
