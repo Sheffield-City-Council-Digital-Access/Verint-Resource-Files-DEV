@@ -1090,7 +1090,6 @@ var mapParams ={
 };
 
 var featureLayers = 
-var featureLayers = 
     		{
     			//Start: Bourday Line
     				boundary: {id:0, url:"/usrsvcs/servers/97cfdc3a164c48219826b907c0a5064f/rest/services/AGOL/Boundaries/MapServer"},
