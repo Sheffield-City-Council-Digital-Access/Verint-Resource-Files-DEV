@@ -1698,7 +1698,7 @@ function roadsFeatureSetHandler(marker,featureSet){
             xcoord: marker.geometry.x,
             ycoord: marker.geometry.y,
             title: "Details",
-            content: attributes["site_name"]
+            content: attributes["streetname"]
         });
         queryCityCentre(marker);
     } else{
@@ -1739,7 +1739,7 @@ function pavementsFeatureSetHandler(marker,featureSet){
             xcoord: marker.geometry.x,
             ycoord: marker.geometry.y,
             title: "Details",
-            content: attributes["sitename"]
+            content: attributes["streetname"]
         });
         queryCityCentre(marker);
     } else{
