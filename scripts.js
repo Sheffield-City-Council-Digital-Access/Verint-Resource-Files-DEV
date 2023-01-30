@@ -1156,35 +1156,48 @@ function setChannelType() {
 		KDF.custom('email_generic','_KDF_save', 'email_from,email_to,email_cc,email_bcc,email_subject,txt_reference,txt_greeting,txta_emailbody','email_to,email_from',true,true,true);
 	}    	
 	
-	function send_email(email_name, email_field, button_name)
-	{
-		setTimeDate();
-		if (hour >= '0' && hour < '12')
-		{
+	function send_email(email_value, email_field, button_name, mainbody, link, linkDisplay) {
+		const hours = new Date().getHours();
+		KDF.setVal('txt_timecurrent', hours);
+		if (hours >= '0' && hours < '12') {
 			KDF.setVal('txt_greeting', 'Good Morning');
-		}
-		else if (hour >= '12' && hour < '18')
-		{
+		} else if (hours >= '12' && hours < '18') {
 			KDF.setVal('txt_greeting', 'Good Afternoon');
-		}
-		else if (hour >= '18')
-		{
+		} else if (hours >= '18') {
 			KDF.setVal('txt_greeting', 'Good Evening');
 		}
-		if (email_field !== '')
-		{
-			KDF.setVal('email_to', email_field);
-			if (button_name === 'but_testbutton2')
-			{
-				KDF.setVal('txta_emailbody', KDF.getVal('ahtm_testemail'));
+
+		if (email_value !=='') {
+			if (mainbody === '' || mainbody === null || mainbody === undefined) {
+				mainbody = KDF.getVal('txta_emailbody');
 			}
-			KDF.custom('a_emailsend', 'dform_widget_button_ + button_name', 'email_to,email_from,email_cc,email_bcc,email_subject,txta_emailbody', 'email_to,email_from,email_subject,txta_emailbody', true, false, true);
-			KDF.showSuccess('<font color="#4CAF50">âœ“</font> - An Email has been sent');
-		}
-		else
-		{
-			KDF.showWarning('<font color="#ff9800">âœ—</font> - Please enter an email address');
-			$('#dform_widget_' + email_name).addClass("dform_fielderror");
+			if (link !== '') {
+				if (linkDisplay === '' || linkDisplay === null || linkDisplay === undefined) {
+					linkDisplay = link;
+				}
+				var email_body = KDF.getVal('txt_greeting') + "<br/><br/>\
+				Thanks for contacting Sheffield City Council regarding a Children's Travel Pass.\
+				<br/><br/>" + mainbody + " " + "<a href=" + link + ">" + linkDisplay + "</a>\
+				<br/><br/>Kind Regards<br/>Customer Services"
+			} else {
+				var email_body = KDF.getVal('txt_greeting') + "<br/><br/>\
+				Thanks for contacting Sheffield City Council regarding a Children's Travel Pass.\
+				<br/><br/>" + mainbody + " <br/><br/>Kind Regards<br/>Customer Services"
+			}
+			
+			KDF.customdata('a_emailsend', 'dform_widget_button_' + button_name, true, true, {
+				'email_to': email_value,
+				'email_from': KDF.getVal('email_to'),
+				'email_cc': KDF.getVal('email_cc'),
+				'email_bcc': KDF.getVal('email_bcc'),
+				'email_subject': KDF.getVal('email_subject'),
+				'txta_emailbody': email_body
+			});
+			
+			KDF.showSuccess('<font color="#4CAF50">✔</font> An Email has been sent');
+		} else {
+			KDF.showWarning('<font color="#ff9800">⚠</font> Please enter an email address');
+			$('#dform_widget_' + email_field).addClass("dform_fielderror");
 		}
 	}
 
