@@ -930,7 +930,7 @@ function mapClicked(map,marker){
 
     clearMapData();
 
-    if (KDF.getVal('txt_agentteam') === 'housing@crm.com'){
+    if (KDF.getVal('txt_agentteam') === '07000000004'){
         queryGMSitesHousing(marker);
     } else {
         queryLayer(marker);
