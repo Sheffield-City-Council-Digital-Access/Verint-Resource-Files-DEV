@@ -442,6 +442,7 @@ form.dform {
     background: #EEEEEE;
     padding: 30px 16px;
     margin: 30px 0 6px 0;
+    display: grid;
 }
 
 .dform_widget {
@@ -1948,7 +1949,7 @@ p.privacy-notice {
 }
 
 #dform_container .currency_icon:before {
-    content: "£";
+    content: "Â£";
 }
 
 
