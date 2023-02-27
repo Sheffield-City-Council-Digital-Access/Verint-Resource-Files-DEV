@@ -229,14 +229,14 @@ function setBriefDetails(){
 }
 
 function capitalisation(field){
-	if (KDF.getVal(field)){
-		str = KDF.getVal(field);
-		var splitStr = str.toLowerCase().split(' ');
-		for (var i = 0; i < splitStr.length; i++){
-			splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
-		}
-		KDF.setVal(field, splitStr.join(' '));
-	}
+	// if (KDF.getVal(field)){
+	// 	str = KDF.getVal(field);
+	// 	var splitStr = str.toLowerCase().split(' ');
+	// 	for (var i = 0; i < splitStr.length; i++){
+	// 		splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+	// 	}
+	// 	KDF.setVal(field, splitStr.join(' '));
+	// }
 }
 
 function searchObjectType(le_object_type){
