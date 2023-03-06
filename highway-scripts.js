@@ -228,15 +228,15 @@ function setBriefDetails(){
 	}
 }
 
-function capitalisation(field){
-	// if (KDF.getVal(field)){
-	// 	str = KDF.getVal(field);
-	// 	var splitStr = str.toLowerCase().split(' ');
-	// 	for (var i = 0; i < splitStr.length; i++){
-	// 		splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
-	// 	}
-	// 	KDF.setVal(field, splitStr.join(' '));
-	// }
+function capitalisation(id, value) {
+    const string = capitalizeString(value);
+    const inputField = document.querySelector("#" + id);
+    inputField.value = string;
+}
+
+function capitalizeString(str) {
+	str = str.toLowerCase();
+    return str.replace(/\b\w/g, (match) => match.toUpperCase());
 }
 
 function searchObjectType(le_object_type){
@@ -995,8 +995,7 @@ function customAction(action,response){
     }
 
     if (action === 'retrieve-address'){
-        capitalisation("txt_cusfulladdress");
-        KDF.setVal('txt_cusfulladdress',KDF.getVal('txt_cusfulladdress').slice(0, -7) + KDF.getVal('txt_cusfulladdress').substr(-7).toUpperCase());
+        KDF.setVal('txt_cusfulladdress', capitalizeString(response.data.txt_cusfulladdress.slice(0, -7)) + KDF.getVal('txt_cusfulladdress').substr(-7).toUpperCase());
         KDF.hideSection('area_address_clickcomment');
         KDF.hideSection('area_address_search_result');
         KDF.hideSection('area_address_fields');
@@ -1038,10 +1037,8 @@ function customAction(action,response){
 	}
 	
 	if (action === 'retrieve-property'){
-	    capitalisation("txt_fulladdress");
-	    KDF.setVal('txt_fulladdress',KDF.getVal('txt_fulladdress').slice(0, -7) + KDF.getVal('txt_fulladdress').substr(-7).toUpperCase());
-	    capitalisation("site_name");
-	    KDF.setVal('site_name',KDF.getVal('site_name').slice(0, -7) + KDF.getVal('site_name').substr(-7).toUpperCase());
+        KDF.setVal('txt_fulladdress', capitalizeString(response.data.txt_fulladdress.slice(0, -7)) + KDF.getVal('txt_fulladdress').substr(-7).toUpperCase());
+        KDF.setVal('site_name', capitalizeString(response.data.site_name.slice(0, -7)) + KDF.getVal('site_name').substr(-7).toUpperCase());
         KDF.hideSection('area_property_clickcomment');
         KDF.hideSection('area_property_searchresults');
         KDF.showSection('area_selected_property');

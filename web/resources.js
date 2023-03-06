@@ -108,11 +108,11 @@ function handleCustomActions(action, response) {
             val.property_search_result.forEach(populateAddressList);
             function populateAddressList(item, key) {
                 if (item) {
-                    // var lable = item.col_property;
-                    // var toLowerCase = capitalisation(lable.substr(0, lable.indexOf(',')));
-                    // var lcLength = toLowerCase.length;
-                    // var toUpperCase = lable.slice(lcLength);
-                    // property_search_result.push({"col_property" : toLowerCase + toUpperCase, "col_property_id" : item.col_property_id});
+                    var lable = item.col_property;
+                    var toLowerCase = capitalizeString(lable.substr(0, lable.indexOf(',')));
+                    var lcLength = toLowerCase.length;
+                    var toUpperCase = lable.slice(lcLength);
+                    property_search_result.push({"col_property" : toLowerCase + toUpperCase, "col_property_id" : item.col_property_id});
                     property_search_result.push({"col_property" : item.col_property, "col_property_id" : item.col_property_id});
                 }
             }
@@ -132,27 +132,27 @@ function handleCustomActions(action, response) {
 	
 	if (action === 'retrieve-address-web') {
 		if (pageID === 'page_about_you') {
-// 			KDF.setVal('txt_cusaddressnumber', capitalisation(val.address_number));
+			KDF.setVal('txt_cusaddressnumber', capitalizeString(val.address_number));
 			KDF.setVal('txt_cusaddressnumber', val.address_number);
-// 			KDF.setVal('txt_cusaddressline1', capitalisation(val.address_line_1));
+			KDF.setVal('txt_cusaddressline1', capitalizeString(val.address_line_1));
 			KDF.setVal('txt_cusaddressline1', val.address_line_1);
 			KDF.setVal('txt_custown', val.town);
 			KDF.setVal('txt_cuspostcode', val.postcode);
 			KDF.setVal('txt_cusfulladdress', KDF.getVal('txt_cusaddressnumber') + ' ' + KDF.getVal('txt_cusaddressline1') + ', ' + KDF.getVal('txt_custown') + ', ' + KDF.getVal('txt_cuspostcode'));
 			KDF.setVal('txt_cusuprn' + val.uprn);
 		} else if (pageID === 'page_about_another') {
-// 			KDF.setVal('txt_cusaddressnumber_another', capitalisation(val.address_number));
+			KDF.setVal('txt_cusaddressnumber_another', capitalizeString(val.address_number));
 			KDF.setVal('txt_cusaddressnumber_another', val.address_number);
-// 			KDF.setVal('txt_cusaddressline1_another', capitalisation(val.address_line_1));
+			KDF.setVal('txt_cusaddressline1_another', capitalizeString(val.address_line_1));
 			KDF.setVal('txt_cusaddressline1_another', val.address_line_1);
 			KDF.setVal('txt_custown_another', val.town);
 			KDF.setVal('txt_cuspostcode_another', val.postcode);
 			KDF.setVal('txt_cusfulladdress_another', KDF.getVal('txt_cusaddressnumber_another') + ' ' + KDF.getVal('txt_cusaddressline1_another') + ', ' + KDF.getVal('txt_custown_another') + ', ' + KDF.getVal('txt_cuspostcode_another'));
 			KDF.setVal('txt_cusuprn_another' + val.uprn);
 		} else {
-// 			KDF.setVal('txt_addressnumber_' + pageID, capitalisation(val.address_number));
+			KDF.setVal('txt_addressnumber_' + pageID, capitalizeString(val.address_number));
 			KDF.setVal('txt_addressnumber_' + pageID, val.address_number);
-// 			KDF.setVal('txt_addressline1_' + pageID, capitalisation(val.address_line_1));
+			KDF.setVal('txt_addressline1_' + pageID, capitalizeString(val.address_line_1));
 			KDF.setVal('txt_addressline1_' + pageID, val.address_line_1);
 			KDF.setVal('txt_town_' + pageID, val.town);
 			KDF.setVal('txt_postcode_' + pageID, val.postcode);
@@ -163,9 +163,9 @@ function handleCustomActions(action, response) {
 			KDF.setVal('txt_usrn_' + pageID, val.usrn);
 			KDF.setVal('txt_streetid_' + pageID, val.street_id);
 			if (pageID === 'page_about_the_location') {
-                // KDF.setVal("txt_fulladdress", capitalisation(val.address_number) + ' ' + capitalisation(val.address_line_1) + ', ' + val.town + ', ' + val.postcode);
+                KDF.setVal("txt_fulladdress", capitalizeString(val.address_number) + ' ' + capitalizeString(val.address_line_1) + ', ' + val.town + ', ' + val.postcode);
                 KDF.setVal("txt_fulladdress", val.address_number + ' ' + val.address_line_1 + ', ' + val.town + ', ' + val.postcode);
-                // KDF.setVal("txt_streetdescription", capitalisation(val.address_line_1));
+                KDF.setVal("txt_streetdescription", capitalizeString(val.address_line_1));
                 KDF.setVal("txt_streetdescription", val.address_line_1);
                 KDF.setVal("txt_uprn", val.uprn);
                 KDF.setVal("txt_propertyid", val.property_id);
@@ -174,7 +174,7 @@ function handleCustomActions(action, response) {
                 KDF.setVal("txt_streetid", val.street_id);
                 KDF.setVal('longitude_x', val.longitude_x);
 			    KDF.setVal('latitude_y', val.latitude_y);
-                // KDF.setVal('site_name', capitalisation(val.address_line_1));
+                KDF.setVal('site_name', capitalizeString(val.address_line_1));
                 KDF.setVal('site_name', val.address_line_1);
 			    KDF.setVal('site_code', val.usrn);
 			}
@@ -629,10 +629,11 @@ function handleAddressSearchFunctionality(event, kdf) {
         enterAddressManually();
     });
 
-//  $('.addressNumber, .addressLine1').change(function(e) {
-//      field = e.target.id.substring(13);
-//      KDF.setVal(field, capitalisation(KDF.getVal(field)));
-// 	});
+    $('.addressNumber, .addressLine1').change(function(e) {
+        //  field = e.target.id.substring(13);
+        //  KDF.setVal(field, capitalisation(KDF.getVal(field)));
+        capitalisation(e.target.id, e.target.value);
+    });
 
     $('#dform_widget_button_but_use_current_location').click(function() {
         getLocation();
@@ -653,9 +654,9 @@ function handleAddressSearchFunctionality(event, kdf) {
         resetErrorMessage("txt_search_property_" + pageID, "Enter a postcode or street name in the correct format");
     });
     
-//  $('#dform_widget_txt_firstname, #dform_widget_txt_surname, #dform_widget_txt_firstname_another, #dform_widget_txt_surname_another').change(function() {
-//      KDF.setVal(this.id.substring(13), capitalisation(this.value));
-// 	});
+    $('#dform_widget_txt_firstname, #dform_widget_txt_surname, #dform_widget_txt_firstname_another, #dform_widget_txt_surname_another').change(function() {
+        capitalisation(this.id, this.value);
+    });
 	
 	$('#dform_widget_txt_phone, #dform_widget_txt_email, #dform_widget_txt_phone_another, #dform_widget_txt_email_another').keyup(function() {
         KDF.setVal(this.id.substring(13), this.value.replace(/ /g, ""));
@@ -1289,12 +1290,16 @@ function characterCountAppender(field) {
     characterCounter(field);
 }
 
-function capitalisation(str) {
-    // var splitStr = str.toLowerCase().split(' ');
-    // for (var i = 0; i < splitStr.length; i++) {
-    //     splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
-    // }
-    // return splitStr.join(' ');
+// Set String to Title Case
+function capitalisation(id, value) {
+    const string = capitalizeString(value);
+    const inputField = document.querySelector("#" + id);
+    inputField.value = string;
+}
+
+function capitalizeString(str) {
+	str = str.toLowerCase();
+    return str.replace(/\b\w/g, (match) => match.toUpperCase());
 }
 
 // Redirect to review page when viewing a case in the back office.
