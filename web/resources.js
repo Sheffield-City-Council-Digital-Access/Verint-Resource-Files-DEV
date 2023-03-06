@@ -113,7 +113,6 @@ function handleCustomActions(action, response) {
                     var lcLength = toLowerCase.length;
                     var toUpperCase = lable.slice(lcLength);
                     property_search_result.push({"col_property" : toLowerCase + toUpperCase, "col_property_id" : item.col_property_id});
-                    property_search_result.push({"col_property" : item.col_property, "col_property_id" : item.col_property_id});
                 }
             }
             KDF.setVal('tab_property_search_result_' + pageID, property_search_result);
@@ -121,7 +120,8 @@ function handleCustomActions(action, response) {
             KDF.showWidget('tab_property_search_result_' + pageID);
             KDF.showSection('area_address_selected_' + pageID);
         } else {
-            displayErrorMessage("txt_search_property_" + pageID, "Enter a valid postcode within the Sheffield City Council area", "block");
+            // KDF.showWidget('ahtm_address_search_result_error_' + pageID);
+            displayErrorMessage("txt_search_property_" + pageID, "Enter a valid postcode/street name within the Sheffield City Council area", "block");
 			if (KDF.getVal('txt_manual_address_' + pageID) === 'false') {
                 // do nothing
             } else {
@@ -129,7 +129,7 @@ function handleCustomActions(action, response) {
             }
         }
     }
-	
+
 	if (action === 'retrieve-address-web') {
 		if (pageID === 'page_about_you') {
 			KDF.setVal('txt_cusaddressnumber', capitalizeString(val.address_number));
@@ -1069,7 +1069,7 @@ function getAndSetReviewPageData() {
                     var fieldName = $(pageFields[j]).attr("data-name");
                     var fieldClass = $(pageFields[j]).attr("class");
                     //console.log(fieldClass);
-                    console.log(fieldClass.indexOf('search-address'));
+                    // console.log(fieldClass.indexOf('search-address-web'));
                     // initialise field label and value, to be reassigned further down
                     var fieldLabel = "";
                     var fieldValue = "";
@@ -1084,7 +1084,7 @@ function getAndSetReviewPageData() {
                         // postcode value is visible further down the page as part of the address textbox fields
                         if (fieldClass.indexOf('search-postcode') >= 0) {
                         
-                        } else if (fieldClass.indexOf('search-address') >= 0) {
+                        } else if (fieldClass.indexOf('search-address-web') >= 0) {
                             
                         } else {
                             fieldLabel = $("div[data-name=" + fieldName + "] > div > label").text();
