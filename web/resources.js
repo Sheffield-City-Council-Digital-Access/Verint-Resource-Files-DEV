@@ -1458,7 +1458,7 @@ function submitFormHighways() {
     KDF.setVal('le_description', KDF.getVal('faultinfo') + ' || ' + KDF.getVal('locinfo'));
     // KDF.custom('kdf-save-custom', '_submit_function', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle,txt_title,txt_firstname,txt_surname,txt_dob,txt_phone,txt_email,level_1_data,level_2_data,level_3_data,txt_streetdescription,txt_usrn,txt_streetid,txt_fulladdress,txt_uprn,txt_propertyid,txt_postcodearea,txta_report_details,txta_location_details,txt_channel,locinfo,faultinfo,txt_receivedby,doctitle,docpath,txt_customertype,secondcustomer,linkedcaseid,asset_type,asset_type_id,central_asset_id,asset_responsibility,object_id,txt_prestige,longitude_x,latitude_y,site_name,site_code,empref,confirmenq,confirmjobid,gis_map,gis_map_lat,gis_map_lon,locator_page_about_the_location,file_upload', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle', true, true, true);
     KDF.setVal('le_form_name', 'highways_report');
-    KDF.setVal('le_save_process', 'false');
+    KDF.setVal('le_upload_file', 'false');
     KDF.save();
 }
 
@@ -2908,7 +2908,7 @@ function processFile() {
             setFileBlobData(reader.result);
             if (!formParams.kdfSaveFlag) {
                 // KDF.setVal('le_form_name', 'vof_sharepoint');
-                KDF.setVal('le_save_process', 'true');
+                KDF.setVal('le_upload_file', 'true');
                 KDF.save();
                 document.getElementById("custom_fileupload_holder_" + pageID).focus();
             } else {
@@ -2966,7 +2966,7 @@ function fileUploader(access_token) {
             KDF.setVal('txt_sharepoint_link_' + pageID, response['webUrl']);
         }
         // KDF.setVal('le_form_name', 'vof_sharepoint');
-        KDF.setVal('le_save_process', 'true');
+        KDF.setVal('le_upload_file', 'true');
         KDF.save();
     });
 }
@@ -3064,7 +3064,7 @@ function deleteFile(access_token) {
         $("#custom_fileupload_" + pageID).attr('file-data', 'No file chosen');
         $("#custom_fileupload_files_" + pageID).text('No file chosen');
         // KDF.setVal('le_form_name', 'vof_sharepoint');
-        KDF.setVal('le_save_process', 'true');
+        KDF.setVal('le_upload_file', 'true');
         KDF.save();
     }).fail(function() {
         $('#custom_file_error_' + pageID).html('Delete file has failed, please try again');
