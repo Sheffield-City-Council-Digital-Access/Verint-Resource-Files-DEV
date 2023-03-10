@@ -3022,7 +3022,7 @@ function addFileContainer(fieldName) {
             widgetName = 'txt_filename_' + pageID;
         }
     }
-    $("#custom_fileupload_container_" + pageID).append('<button type="button" id="delete_' + fieldName + '" data-fieldname="' + fieldName + '" style="font-weight:bold;" class="delete_file" aria-label="Delete file"><i class="fa fa-trash"></i></button>');
+    $("#custom_fileupload_container_" + pageID).append('<button type="button" id="delete_' + pageID + '" data-fieldname="' + pageID + '" style="font-weight:bold;" class="delete_file" aria-label="Delete file"><i class="fa fa-trash"></i></button>');
     $("#custom_fileupload_files_" + pageID).text(fileName);
     KDF.unlock();
 }
