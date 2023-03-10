@@ -2107,6 +2107,7 @@ p.privacy-notice {
     width: 100%;
     font-family: 'Open Sans Semibold';
     color: #DB0000;
+    padding-bottom: 2px;
 }
 
 /* --- FINISH: FILE UPLOAD --- */
