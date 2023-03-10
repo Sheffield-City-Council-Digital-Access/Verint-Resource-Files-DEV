@@ -1,3 +1,19 @@
+var formParams = {
+    fileBlob: '',
+    inputFileID: '$("#custom_fileupload_holder")',
+    randomNumber: '',
+    allowedFileType: '',
+    maxFileSize: '4000000',
+    maxFileSizeDisplay: '4000000',
+    imgClickSelector: '',
+    deleteFileSelector: '',
+    kdfSaveFlag: false,
+    full_classification: '',
+    fileUploadUrl: 'https://graph.microsoft.com/v1.0/sites/72001c08-b630-488d-8b06-a765c24ef0e8/drive/items/',
+    fieldNames: []
+};
+
+
 function initiateStartUp() {
     // Function designed to run before the form is ready.
     
@@ -2769,21 +2785,6 @@ VMap.prototype.addSearch = function addSearch() {
 };
 
 // ----- START: FILE UPLOAD ----------------------------------------------------
-
-var formParams = {
-    fileBlob: '',
-    inputFileID: '$("#custom_fileupload_holder")',
-    randomNumber: '',
-    allowedFileType: '',
-    maxFileSize: '4000000',
-    maxFileSizeDisplay: '4000000',
-    imgClickSelector: '',
-    deleteFileSelector: '',
-    kdfSaveFlag: false,
-    full_classification: '',
-    fileUploadUrl: 'https://graph.microsoft.com/v1.0/sites/72001c08-b630-488d-8b06-a765c24ef0e8/drive/items/',
-    fieldNames: []
-};
 
 function setFiledNames(fieldnames) {
     formParams.fieldNames = fieldnames;
