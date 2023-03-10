@@ -5,7 +5,7 @@ function initiateStartUp() {
     setHtmlHead(KDF.getVal('txt_formtitle'));
 }
 
-function initiateReady(event, kdf, progressBar) {
+function initiateReady(event, kdf, progressBar, filePath) {
     // Function designed to run when the form is ready.
     
     // Use to enable and disable the maps during downtime
