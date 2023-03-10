@@ -2083,15 +2083,14 @@ p.privacy-notice {
     opacity: 0;
 }
 
-
 #dform_container .delete_file,
 #dform_container .delete_file:hover,
 #dform_container .delete_file:focus {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    height: 70%;
-    width: 70%;
-    margin: 0;
+    height: 10px;
+    width: 10px;
+    margin-left: auto;
     transform: translateY(-5px);
     display: flex;
     align-items: center;
