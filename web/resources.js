@@ -3022,7 +3022,7 @@ function addFileContainer(fieldName) {
             widgetName = 'txt_filename_' + pageID;
         }
     }
-    $("#custom_fileupload_container_" + pageID).append('<button type="button" id="delete_' + name + '" data-fieldname="' + name + '" style="font-weight:bold;" class="delete_file" aria-label="Delete file"><i class="fa fa-trash"></i></button>');
+    $("#custom_fileupload_container_" + pageID).append('<button type="button" id="delete_' + fieldName + '" data-fieldname="' + fieldName + '" style="font-weight:bold;" class="delete_file" aria-label="Delete file"><i class="fa fa-trash"></i></button>');
     $("#custom_fileupload_files_" + pageID).text(fileName);
     KDF.unlock();
 }
@@ -3052,7 +3052,7 @@ function deleteFile(access_token) {
         method: 'DELETE'
 
     }).done(function(response) {
-        $('button.txt_filename_' + selector).remove();
+        $('#delete_' + selector).remove();
         KDF.setVal('txt_sharepointID_' + selector, '');
         KDF.setVal('txt_filename_' + selector, '');
         KDF.setVal('txt_filename_' + selector + '_thumb', '');
