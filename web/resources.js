@@ -2907,7 +2907,8 @@ function processFile() {
         reader.onloadend = function() {
             setFileBlobData(reader.result);
             if (!formParams.kdfSaveFlag) {
-                KDF.setVal('le_form_name', 'vof_sharepoint');
+                // KDF.setVal('le_form_name', 'vof_sharepoint');
+                KDF.setVal('le_save_process', 'true');
                 KDF.save();
                 document.getElementById("custom_fileupload_holder_" + pageID).focus();
             } else {
@@ -2964,7 +2965,8 @@ function fileUploader(access_token) {
             KDF.setVal('txt_filename_' + pageID, fileName);
             KDF.setVal('txt_sharepoint_link_' + pageID, response['webUrl']);
         }
-        KDF.setVal('le_form_name', 'vof_sharepoint');
+        // KDF.setVal('le_form_name', 'vof_sharepoint');
+        KDF.setVal('le_save_process', 'true');
         KDF.save();
     });
 }
@@ -3061,7 +3063,8 @@ function deleteFile(access_token) {
         KDF.setVal('txt_sharepoint_link_' + selector, '');
         $("#custom_fileupload_" + pageID).attr('file-data', 'No file chosen');
         $("#custom_fileupload_files_" + pageID).text('No file chosen');
-        KDF.setVal('le_form_name', 'vof_sharepoint');
+        // KDF.setVal('le_form_name', 'vof_sharepoint');
+        KDF.setVal('le_save_process', 'true');
         KDF.save();
     }).fail(function() {
         $('#custom_file_error_' + pageID).html('Delete file has failed, please try again');
