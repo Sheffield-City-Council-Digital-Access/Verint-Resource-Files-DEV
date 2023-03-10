@@ -3057,6 +3057,7 @@ function deleteFile(access_token) {
         KDF.setVal('txt_filename_' + selector, '');
         KDF.setVal('txt_filename_' + selector + '_thumb', '');
         KDF.setVal('txt_sharepoint_link_' + selector, '');
+        $("#custom_fileupload_" + pageID).attr('file-data', 'No file chosen');
         $("#custom_fileupload_files_" + pageID).text('No file chosen');
         KDF.setVal('le_form_name', 'vof_sharepoint');
         KDF.save();
