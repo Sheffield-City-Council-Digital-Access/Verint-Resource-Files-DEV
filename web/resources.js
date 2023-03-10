@@ -149,7 +149,8 @@ function handleCustomActions(action, response) {
                 if ($('#custom_fileupload_holder_' + name).length > 0) {
                     var widget = '<div data-type="file" data-name="file_ootb" data-active="true" data-agentonly="false" class="file-progress">' +
                     	'<div><label>' + sharepoint_title + '</label></div>' +
-                    	'<div class="dform_validationMessage">Upload a file</div>' +
+                    	// '<div class="dform_validationMessage">Upload a file</div>' +
+                        '<div id ="custom_file_error_' + name + '" class="fileError"></div>' +
                     	'<div id="custom_fileupload_container_' + name + '" class="file-upload-container" style="position: relative;">' +
                     	    '<label  for="custom_fileupload_' + name + '" class="custom-file-upload" aria-label="Upload file">Choose file</label>' +
                     	    '<input id="custom_fileupload_' + name + '" class="file-upload" type="file" name="uploadedFile" aria-label="Upload file">' +
