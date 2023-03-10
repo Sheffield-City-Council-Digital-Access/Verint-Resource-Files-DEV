@@ -22,10 +22,15 @@ function initiateReady(event, kdf, progressBar) {
     handleAddressSearchFunctionality(event, kdf);
 
     if (arguments[2]) {
-        if (arguments[2].toLowerCase() === 'progress bar') {
+        if (progressBar === true || progressBar.toLowerCase() === 'progress bar') {
             addProgressBarHtml();
             setProgressBarWidthAndLabel();
         }
+    }
+    
+    if (arguments[3]) {
+        kdfReadyFile(event, kdf, filePath);
+        setFiledNames(fileUploadFields);
     }
 
     $('#dform_widget_txt_dob').change(function() {
@@ -101,7 +106,63 @@ function handleCustomActions(action, response) {
 	
 	var val = response.data;
 	
-	if (action === 'search-address-web') {
+    if (action === 'sharepoint_token') {
+        var access_token = response.data['access_token'];
+        if (!KDF.kdf().form.readonly && formParams.deleteFileSelector == '') {
+            if (KDF.kdf().viewmode == 'U' && formParams.fileBlob == '') {
+                setFileThumbnails(access_token);
+            } else if (formParams.fileBlob !== '') {
+                if (!formParams.kdfSaveFlag) {
+                    formParams.kdfSaveFlag = true;
+                }
+                fileUploader(access_token);
+            }
+
+        } else if (!KDF.kdf().form.readonly && formParams.deleteFileSelector !== '') {
+            deleteFile(access_token);
+        }
+        if (KDF.kdf().form.readonly && formParams.imgClickSelector == '') {
+            setFileThumbnails(access_token);
+        } else if (KDF.kdf().form.readonly && formParams.imgClickSelector !== '') {
+            fileDownloader(access_token)
+        }
+    } else if (action == 'sharepoint_config') {
+        if (response.data['pass_status']) {
+            if (response.data['pass_status'] == 'good') {
+                processFile();
+            } else {
+                $('#custom_file_error_' + pageID).html('Incorrect file type selected');
+            }
+        } else {
+            var sharepoint_title = '';
+            if ($('#dform_widget_txt_sharepoint_title').length > 0) {
+                sharepoint_title = KDF.getVal('txt_sharepoint_title');
+            } else {
+                sharepoint_title = 'Upload a file (optional)';
+            }
+            var txt_file_types = response.data['txt_file_types'];
+            formParams.allowedFileType = txt_file_types.replace(/'/g, '').replace('(', '').replace(')', '').replace(/,/g, ', ');
+            formParams.maxFileSizeDisplay = response.data['txt_max_filesize'];
+
+            for (var i = 0; i < formParams.fieldNames.length; i++) {
+                var name = formParams.fieldNames[i];
+                if ($('#custom_fileupload_holder_' + name).length > 0) {
+                    var widget = '<div data-type="file" data-name="file_ootb" data-active="true" data-agentonly="false" class="file-progress">' +
+                    	'<div><label>' + sharepoint_title + '</label></div>' +
+                    	'<div class="dform_validationMessage">Upload a file</div>' +
+                    	'<div id="custom_fileupload_container_' + name + '" class="file-upload-container" style="position: relative;">' +
+                    	    '<label  for="custom_fileupload_' + name + '" class="custom-file-upload" aria-label="Upload file">Choose file</label>' +
+                    	    '<input id="custom_fileupload_' + name + '" class="file-upload" type="file" name="uploadedFile" aria-label="Upload file">' +
+                            '<span class="filenames" id="custom_fileupload_files_' + name + '">No file chosen</span>' +
+                    	'</div>' +
+                    '</div>';
+                    $('#custom_fileupload_holder_' + name).html(widget);
+                    $('.custom-file-upload').attr('file-data', 'No file chosen');
+                }
+            }
+            $('#custom_file_error_' + pageID).html('');
+        }
+    } else if (action === 'search-address-web') {
 	    const property_search_result = [];
 		KDF.setVal('tab_property_search_result_' + pageID, property_search_result);
         if (val.property_search_result.length > 0) {
@@ -2706,3 +2767,304 @@ VMap.prototype.addSearch = function addSearch() {
         search.startup();
     });
 };
+
+// ----- START: FILE UPLOAD ----------------------------------------------------
+
+var formParams = {
+    fileBlob: '',
+    inputFileID: '$("#custom_fileupload_holder")',
+    randomNumber: '',
+    allowedFileType: '',
+    maxFileSize: '4000000',
+    maxFileSizeDisplay: '4000000',
+    imgClickSelector: '',
+    deleteFileSelector: '',
+    kdfSaveFlag: false,
+    full_classification: '',
+    fileUploadUrl: 'https://graph.microsoft.com/v1.0/sites/72001c08-b630-488d-8b06-a765c24ef0e8/drive/items/',
+    fieldNames: []
+};
+
+function setFiledNames(fieldnames) {
+    formParams.fieldNames = fieldnames;
+}
+
+function setFileUploadUrl(url) {
+    formParams.fileUploadUrl = url;
+}
+
+function kdfReadyFile(event, kdf, service) {
+    formParams.full_classification = service;
+    var template_name = KDF.getVal('txt_FT_template');
+    
+    if (KDF.getVal('txt_FT_template') == '' || $('#dform_widget_txt_FT_template').length < 1) {
+        template_name = 'FT_template1';
+    }
+    
+    KDF.customdata('sharepoint_config', '', true, true, {
+        ft_operation: 'file_list',
+        txt_FT_template: template_name
+    });
+
+    var CustomFileUploadWidget = $('#custom_fileupload_' + pageID);
+    $(document).on('drop dragover', function(e) {
+        $('#custom_file_error_' + pageID).html('');
+        e.preventDefault();
+    });
+
+    $(document).on('change', 'input', function() {
+        if (this.id.startsWith("custom_fileupload")) {
+            $('#custom_file_error_' + pageID).html('');
+            displayErrorMessage(this.id, "Upload a file", "");
+            var fileName = $("#" + this.id)[0].files[0].name;
+            var fileNameClean = fileName.split('.').pop();
+            var template_name = KDF.getVal('txt_FT_template');
+    
+            if (KDF.getVal('txt_FT_template') == '' || $('#dform_widget_txt_FT_template').length < 1) {
+                template_name = 'FT_template1';
+            }
+            
+            KDF.customdata('sharepoint_config', '', true, true, {
+                txt_FT_template: template_name,
+                txt_file_format: fileNameClean
+            });
+        }
+    });
+
+    $('body').on('click', 'img', function() {
+        $('#custom_file_error_' + pageID).html('');
+        if ($(this).data('fieldname')) {
+            if (KDF.kdf().form.readonly) {
+                formParams.imgClickSelector = $(this).data('fieldname');
+                KDF.customdata('sharepoint_token', 'imgClickEvent', true, true, {});
+            }
+        }
+    });
+
+    $('body').on('click', '.fileicon', function() {
+        $('#custom_file_error_' + pageID).html('');
+        if ($(this).data('fieldname')) {
+            if (KDF.kdf().form.readonly) {
+                formParams.imgClickSelector = $(this).data('fieldname');
+                KDF.customdata('sharepoint_token', 'imgClickEvent', true, true, {});
+            }
+        }
+    });
+
+    $('body').on('click', '.delete_file', function() {
+        $('#custom_file_error_' + pageID).html('');
+        formParams.deleteFileSelector = $(this).closest('span').data('fieldname');
+        KDF.customdata('sharepoint_token', 'imgClickEvent', true, true, {});
+    });
+}
+
+function setFileBlobData(fileBlob) {
+    formParams.fileBlob = fileBlob;
+}
+
+function processFile() {
+    var fileError = false;
+    var fileName = $("#custom_fileupload_" + pageID)[0].files[0].name;
+    var fileNameClean = fileName.split('.').pop();
+
+    if ($("#custom_fileupload_" + pageID)[0].files[0].size <= formParams.maxFileSize) {
+        fileError = false;
+    } else {
+        fileError = true;
+        $('#custom_file_error_' + pageID).html('File size is too large');
+    }
+
+    if (!fileError) {
+        fileNames = [];
+        if (formParams.fieldNames.every(function(fieldName) { return KDF.getVal('txt_filename_' + pageID) !== '' })) {
+            fileError = true;
+            $('#custom_file_error_' + pageID).html('Maximum number of file uploads has been reached');
+        }
+    }
+
+    if (!fileError) {
+        for (var i = 0; i < formParams.fieldNames.length; i++) {
+            if (KDF.getVal('txt_filename_' + formParams.fieldNames[i]) == fileName) {
+                fileError = true;
+                $('#custom_file_error_' + pageID).html('A file with this name already exists');
+                break;
+            }
+        }
+    }
+
+    if (!fileError) {
+        KDF.hideMessages();
+        var selector = formParams.inputFileID;
+
+        $("#custom_fileupload").prop('disabled', true);
+
+        var reader = new FileReader();
+        reader.readAsArrayBuffer($("#custom_fileupload_" + pageID)[0].files[0]);
+
+        reader.onloadend = function() {
+            setFileBlobData(reader.result);
+            if (!formParams.kdfSaveFlag) {
+                console.log('Save: function processFile');
+                KDF.setVal('le_form_name', 'vof_sharepoint');
+                KDF.save();
+                document.getElementById("custom_fileupload_holder_" + pageID).focus();
+            } else {
+                KDF.customdata('sharepoint_token', 'imitateKdfReady', true, true, {});
+            }
+        };
+    }
+}
+
+function setFileThumbnails(access_token) {
+    formParams.fieldNames.forEach(function(name) {
+        if (KDF.getVal('txt_filename_' + pageID) !== '') {
+            fileThumbnail(KDF.getVal('txt_sharepointID_' + pageID), access_token, 'txt_filename_' + pageID, pageID);
+        }
+    });
+}
+
+function kdfSaveFile() {
+    if (formParams.fileBlob !== '') {
+        $('#custom_fileupload_' + pageID).focus();
+    }
+
+    if (!formParams.kdfSaveFlag) {
+        if (formParams.fileBlob !== '') {
+            $('#custom_fileupload_' + pageID).focus();
+            $('#dform_successMessage').remove();
+            KDF.customdata('sharepoint_token', 'imitateKdfReady', true, true, {
+                'SaveForm': 'true',
+                'caseid': KDF.kdf().form.caseid
+            });
+        }
+    }
+}
+
+function fileUploader(access_token) {
+    KDF.lock();
+    var fileName = $("#custom_fileupload_" + pageID)[0].files[0].name;
+    var fileSize = $("#custom_fileupload_" + pageID)[0].files[0].size;
+    var uploadURL = formParams.fileUploadUrl + 'root:/' + formParams.full_classification + '/' + KDF.kdf().form.caseid + '/' + fileName + ':/content';
+
+    $.ajax({
+        url: uploadURL,
+        dataType: 'json',
+        processData: false,
+        headers: { 'Authorization': access_token },
+        data: formParams.fileBlob,
+        method: 'PUT',
+
+    }).done(function(response) {
+        fileThumbnail(response.id, access_token);
+        
+        if (KDF.getVal('txt_sharepointID_' + pageID) == '') {
+            KDF.setVal('txt_sharepointID_' + pageID, response.id);
+            KDF.setVal('txt_filename_' + pageID, fileName);
+            KDF.setVal('txt_sharepoint_link_' + pageID, response['webUrl']);
+        }
+        KDF.setVal('le_form_name', 'vof_sharepoint');
+        KDF.save();
+    });
+}
+
+function fileThumbnail(itemID, access_token, widgetName, fieldName) {
+    var getThumbnailURL = formParams.fileUploadUrl + itemID + '/thumbnails';
+
+    $.ajax({
+        url: getThumbnailURL,
+        dataType: 'json',
+        headers: { Authorization: access_token },
+        method: 'GET',
+
+    }).done(function(response) {
+        var thumbnailURL = (response.value[0]) ? response.value[0].medium['url'] : undefined;
+        if (!KDF.kdf().form.readonly) {
+            if (KDF.kdf().viewmode === 'U' && formParams.fileBlob == '') {
+                if (fieldName) {
+                    KDF.setVal('txt_filename_' + fieldName + '_thumb', thumbnailURL);
+                }
+                addFileContainer(fieldName);
+            } else if (formParams.fileBlob !== '') {
+  
+                if (KDF.getVal('txt_filename_' + pageID + '_thumb') == '') {
+                    KDF.setVal('txt_filename_' + pageID + '_thumb', thumbnailURL);
+                }
+
+                setTimeout(function() {
+                    addFileContainer();
+                }, 1000);
+            }
+
+        } else if (KDF.kdf().form.readonly || KDF.kdf().viewmode == 'R') {
+            var fileName = KDF.getVal(widgetName);
+            var html;
+
+            html = '<div id="' + widgetName + '"style="float: left;">' +
+                '<div style="margin-right: 10px">' + getImage(thumbnailURL, widgetName, fileName, fieldName) +
+                '</div><div>' + fileName + '</div></div>';
+
+            setTimeout(function() { $('#custom_fileupload_view').append(html) }, 1000);
+        }
+    });
+
+    $("#custom_fileupload_" + pageID).prop('disabled', false);
+}
+
+function addFileContainer(fieldName) {
+    var fileName;
+    var widgetName = 'txt_filename_' + fieldName;
+
+    if (KDF.kdf().viewmode == 'U' && formParams.fileBlob == '') {
+        fileName = KDF.getVal(widgetName);
+    } else if (formParams.fileBlob !== '') {
+        if ($('.filenames .txt_filename_' + pageID).length < 1) {
+            fileName = KDF.getVal('txt_filename_' + pageID);
+            widgetName = 'txt_filename_' + pageID;
+        }
+    }
+    $("#custom_fileupload_container_" + pageID).append('<button type="button" id="delete_' + name + '" data-fieldname="' + name + '" style="font-weight:bold;" class="delete_file" aria-label="Delete file"><i class="fa fa-trash"></i></button>');
+    $("#custom_fileupload_files_" + pageID).text(fileName);
+    KDF.unlock();
+}
+
+function fileDownloader(access_token) {
+    var sharepointID = KDF.getVal('txt_sharepointID_' + formParams.imgClickSelector);
+    var getFileURL = formParams.fileUploadUrl + sharepointID + '/preview';
+
+    $.ajax({
+        url: getFileURL,
+        headers: { Authorization: access_token },
+        type: 'POST'
+    }).done(function(response) {
+        window.open(response.getUrl);
+    }).fail(function() {});
+    formParams.imgClickSelector = '';
+}
+
+function deleteFile(access_token) {
+    var selector = pageID;
+    var fileID = KDF.getVal('txt_sharepointID_' + selector);
+    var deleteURL = formParams.fileUploadUrl + fileID;
+    $.ajax({
+        url: deleteURL,
+        processData: false,
+        headers: { 'Authorization': access_token },
+        method: 'DELETE'
+
+    }).done(function(response) {
+        $('span.txt_filename_' + selector).remove();
+        KDF.setVal('txt_sharepointID_' + selector, '');
+        KDF.setVal('txt_filename_' + selector, '');
+        KDF.setVal('txt_filename_' + selector + '_thumb', '');
+        KDF.setVal('txt_sharepoint_link_' + selector, '');
+        $("#custom_fileupload_files_" + pageID).text('No file chosen');
+        KDF.setVal('le_form_name', 'vof_sharepoint');
+        KDF.save();
+    }).fail(function() {
+        $('#custom_file_error_' + pageID).html('Delete file has failed, please try again');
+    });
+
+    formParams.deleteFileSelector = '';
+}
+
+// ----- FINISH: FILE UPLOAD ---------------------------------------------------

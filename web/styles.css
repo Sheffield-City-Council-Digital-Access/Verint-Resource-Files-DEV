@@ -2001,3 +2001,111 @@ p.privacy-notice {
 .dform_widget_ahtm_fulladdress {
     max-width: 700px;
 }
+
+/* --- FINISH: FILE UPLOAD --- */
+
+#dform_container .file-progress {
+    position: relative;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+#dform_container .file-upload-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: max-content repeat(1fr);
+    gap: 1rem;
+    align-items: center;
+    padding: .2rem .2rem .3rem;
+    height: 46px;
+    max-width: 100%;
+}
+
+@media (min-width: 44.375rem) {
+    #dform_container .file-upload-container {
+        grid-template-columns: repeat(2, max-content) 1fr;
+        max-width: 445px;
+    }
+}
+
+#dform_container .file-upload-container:focus-within {
+    outline: 4px solid #FFCC02;
+    -moz-box-shadow: inset 0 0 0 3px #6B6B6B;
+    -webkit-box-shadow: inset 0 0 0 3px #6B6B6B;
+    box-shadow: inset 0 0 0 3px #6B6B6B;
+    border-color: #6B6B6B;
+    background-color: #ffffff;
+}
+
+#dform_container .custom-file-upload {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+    margin: 2px 0 5px 1px;
+    padding: 6px 10px 5px;
+    transform: translateY(-4px);
+    background-color: #eeeeee;
+    border: 1px solid #707070;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#dform_container .custom-file-upload:hover,
+#dform_container .custom-file-upload:active {
+    background-color: #e0e0e0;
+}
+
+#dform_container .filenames {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2 ;
+    transform: translateY(-4px);
+    position: relative;
+    font-family: inherit;
+    font-size: inherit;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media (min-width: 44.375rem) {
+    #dform_container .filenames {
+        max-width: 258px;
+    }
+}
+
+#dform_container .file-upload {
+    z-index: -1;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: 1px;
+    line-height: .1;
+    opacity: 0;
+}
+
+
+#dform_container .delete_file,
+#dform_container .delete_file:hover,
+#dform_container .delete_file:focus {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    height: 70%;
+    width: 70%;
+    margin: 0;
+    transform: translateY(-5px);
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: #000000;
+    box-shadow: none;
+    outline: none;
+    padding-left: 0px;
+}
+
+#dform_container .fileError {
+    width: 100%;
+    font-family: 'Open Sans Semibold';
+    color: #DB0000;
+}
+
+/* --- FINISH: FILE UPLOAD --- */
