@@ -3052,7 +3052,7 @@ function deleteFile(access_token) {
         method: 'DELETE'
 
     }).done(function(response) {
-        $('span.txt_filename_' + selector).remove();
+        $('button.txt_filename_' + selector).remove();
         KDF.setVal('txt_sharepointID_' + selector, '');
         KDF.setVal('txt_filename_' + selector, '');
         KDF.setVal('txt_filename_' + selector + '_thumb', '');
