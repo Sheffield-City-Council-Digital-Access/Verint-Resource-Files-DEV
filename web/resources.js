@@ -1006,7 +1006,7 @@ function submitForm() {
     });
     // KDF.custom('kdf-save-web', '_submit_function', textFieldNames + numberFieldNames + selectFieldNames + checkFieldNames + radioFieldNames + emailFieldNames + telFieldNames + dateFieldNames + timeFieldNames + 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type', true, true, true);
     KDF.setVal('le_upload_file', 'false');
-    if (txt_sharepoint_link_page_file_upload) {
+    if (KDF.getVal('txt_sharepoint_link_page_file_upload')) {
         KDF.setVal('le_reclassify_case', 'true');
     }
     KDF.save();
