@@ -1055,7 +1055,9 @@ function submitFormCustom() {
     $(timeFields).each(function() {
         timeFieldNames += $(this).prop("name") + ",";
     });
-    KDF.custom('kdf-save-custom', '_submit_function', textFieldNames + numberFieldNames + selectFieldNames + checkFieldNames + radioFieldNames + emailFieldNames + telFieldNames + dateFieldNames + timeFieldNames + 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name', true, true, true);
+    // KDF.custom('kdf-save-custom', '_submit_function', textFieldNames + numberFieldNames + selectFieldNames + checkFieldNames + radioFieldNames + emailFieldNames + telFieldNames + dateFieldNames + timeFieldNames + 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name', true, true, true);
+    KDF.setVal('le_upload_file', 'false');
+    KDF.save();
 }
 
 // Produce Submission Review Page
