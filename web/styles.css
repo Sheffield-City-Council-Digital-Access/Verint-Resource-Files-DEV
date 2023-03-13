@@ -2002,13 +2002,18 @@ p.privacy-notice {
     max-width: 700px;
 }
 
-/* --- FINISH: FILE UPLOAD --- */
+/* --- START: FILE UPLOAD --- */
 
 #dform_container .file-progress {
     position: relative;
     width: inherit;
     display: flex;
     flex-direction: column;
+}
+
+#dform_container .file-upload-content{
+    max-width: 445px;
+    margin-bottom: 24px;
 }
 
 #dform_container .file-upload-container {
