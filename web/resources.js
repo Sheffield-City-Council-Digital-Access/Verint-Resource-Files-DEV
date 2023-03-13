@@ -1004,7 +1004,8 @@ function submitForm() {
     $(timeFields).each(function() {
         timeFieldNames += $(this).prop("name") + ",";
     });
-    KDF.custom('kdf-save-web', '_submit_function', textFieldNames + numberFieldNames + selectFieldNames + checkFieldNames + radioFieldNames + emailFieldNames + telFieldNames + dateFieldNames + timeFieldNames + 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type', true, true, true);
+    // KDF.custom('kdf-save-web', '_submit_function', textFieldNames + numberFieldNames + selectFieldNames + checkFieldNames + radioFieldNames + emailFieldNames + telFieldNames + dateFieldNames + timeFieldNames + 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type', true, true, true);
+    KDF.save();
 }
 
 function submitFormCustom() {
