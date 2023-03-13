@@ -2017,7 +2017,7 @@ p.privacy-notice {
     grid-template-columns: max-content repeat(1fr);
     gap: 1rem;
     align-items: center;
-    padding: .2rem .2rem .3rem;
+    padding: 2px;
     height: 46px;
     max-width: 100%;
 }
