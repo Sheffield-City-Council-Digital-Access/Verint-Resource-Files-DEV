@@ -1218,7 +1218,9 @@ function assignStepSize(fieldname, step) {
 }
 
 function fixCurrency(field) {
-    KDF.setVal(field, parseFloat(KDF.getVal(field)).toFixed(2));
+    const string = parseFloat(KDF.getVal(field)).toFixed(2);
+    const inputField = document.querySelector("#dform_widget_" + field);
+    inputField.value = string;
 }
 
 function timeCheck(fieldname, datefield) {
