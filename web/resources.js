@@ -2782,8 +2782,8 @@ var formParams = {
     inputFileID: '$("#custom_fileupload_holder")',
     randomNumber: '',
     allowedFileType: '',
-    maxFileSize: '10000000',
-    maxFileSizeDisplay: '10000000',
+    maxFileSize: '10000000', // bytes
+    maxFileSizeDisplay: '10000000', // bytes
     imgClickSelector: '',
     deleteFileSelector: '',
     kdfSaveFlag: false,

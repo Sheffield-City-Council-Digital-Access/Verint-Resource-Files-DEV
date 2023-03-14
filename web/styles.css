@@ -2047,7 +2047,7 @@ p.privacy-notice {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     position: relative;
-    top: 3px;
+    top: 4px;
     left: 2px;
     padding: 6px 10px 6px;
     transform: translateY(-4px);
