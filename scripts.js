@@ -1076,26 +1076,27 @@ function autoCloseCase()
 
 //Start: Update Case
 
-function updateNoAction(le_queue)
-{
-	KDF.setVal('le_queue', le_queue);
-	KDF.setVal('txt_casenote', KDF.getVal('txt_username') + " has accessed the form but released no action taken");
-	KDF.custom('a_casemanagementnoaction', '', 'txt_reference,le_queue,txt_casenote', 'txt_reference,le_queue,txt_casenote', false, false, false);
+function updateNoAction() {
+	KDF.customdata('add-case-note', 'function updateNoAction', true, true, {
+		'txt_reference': KDF.getVal('txt_reference'),
+		'txt_case_note': `${KDF.getVal('txt_username')}: has accessed the form but released no action taken`
+	});
 	KDF.showSuccess("Saving & Returning");
 }
 
-function updateSaveAndReturn(le_queue)
-{
-	KDF.setVal('le_queue', le_queue);
-	KDF.setVal('txt_casenote', KDF.getVal('txt_username') + " added the following update - " + KDF.getVal('txta_hc_addcasenote'));
-	KDF.custom('a_casemanagementsaveandreturn', '', 'txt_reference,le_queue,le_title,txt_casenote', 'txt_reference,le_queue,le_title,txt_casenote', false, false, false);
+function updateSaveAndReturn() {
+	KDF.customdata('add-case-note', 'function updateSaveAndReturn', true, true, {
+		'txt_reference': KDF.getVal('txt_reference'),
+		'txt_case_note': `${KDF.getVal('txt_username')}: added the following update - ${KDF.getVal('txta_hc_addcasenote')}`
+	});
 	KDF.showSuccess("Saving & Updating");
 }
 
-function updateSaveAndClose()
-{
-	KDF.setVal('txt_casenote', "Final note added by " + KDF.getVal('txt_username') + " - " + KDF.getVal('txta_hc_addcasenote'));
-	KDF.custom('a_casemanagementsaveandclose', '', 'txt_reference,txt_casenote', 'txt_reference,txt_casenote', false, false, false);
+function updateSaveAndClose() {
+	KDF.customdata('close-case', 'function updateSaveAndClose', false, true, {
+		'txt_reference': KDF.getVal('txt_reference'),
+		'txt_case_note': `Final note added by: ${KDF.getVal('txt_username')} - ${KDF.getVal('txta_hc_addcasenote')}`
+	});
 	KDF.showSuccess("Saving & Closing");
 }
 
