@@ -2963,7 +2963,7 @@ function kdfSaveFile() {
             $('#dform_successMessage').remove();
             KDF.customdata('sharepoint_token', 'imitateKdfReady', true, true, {
                 'SaveForm': 'true',
-                'caseid': KDF.kdf().form.caseid
+                'caseid': KDF.getVal('txt_reference')
             });
         }
     }
@@ -2973,7 +2973,7 @@ function fileUploader(access_token) {
     KDF.lock();
     var fileName = $("#custom_fileupload_" + pageID)[0].files[0].name;
     var fileSize = $("#custom_fileupload_" + pageID)[0].files[0].size;
-    var uploadURL = formParams.fileUploadUrl + 'root:/' + formParams.full_classification + '/' + KDF.kdf().form.caseid + '/' + fileName + ':/content';
+    var uploadURL = formParams.fileUploadUrl + 'root:/' + formParams.full_classification + '/' + KDF.getVal('txt_reference') + '/' + fileName + ':/content';
 
     $.ajax({
         url: uploadURL,
