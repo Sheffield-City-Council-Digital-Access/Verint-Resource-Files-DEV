@@ -1006,7 +1006,7 @@ function submitForm() {
     });
     // KDF.custom('kdf-save-web', '_submit_function', textFieldNames + numberFieldNames + selectFieldNames + checkFieldNames + radioFieldNames + emailFieldNames + telFieldNames + dateFieldNames + timeFieldNames + 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type', true, true, true);
     KDF.setVal('le_upload_file', 'false');
-    KDF.save();
+    saveForm();
 }
 
 function submitFormCustom() {
@@ -1057,7 +1057,7 @@ function submitFormCustom() {
     });
     // KDF.custom('kdf-save-custom', '_submit_function', textFieldNames + numberFieldNames + selectFieldNames + checkFieldNames + radioFieldNames + emailFieldNames + telFieldNames + dateFieldNames + timeFieldNames + 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name', true, true, true);
     KDF.setVal('le_upload_file', 'false');
-    KDF.save();
+    saveForm();
 }
 
 // Produce Submission Review Page
@@ -1465,7 +1465,7 @@ function submitFormHighways() {
     // KDF.custom('kdf-save-custom', '_submit_function', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle,txt_title,txt_firstname,txt_surname,txt_dob,txt_phone,txt_email,level_1_data,level_2_data,level_3_data,txt_streetdescription,txt_usrn,txt_streetid,txt_fulladdress,txt_uprn,txt_propertyid,txt_postcodearea,txta_report_details,txta_location_details,txt_channel,locinfo,faultinfo,txt_receivedby,doctitle,docpath,txt_customertype,secondcustomer,linkedcaseid,asset_type,asset_type_id,central_asset_id,asset_responsibility,object_id,txt_prestige,longitude_x,latitude_y,site_name,site_code,empref,confirmenq,confirmjobid,gis_map,gis_map_lat,gis_map_lon,locator_page_about_the_location,file_upload', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle', true, true, true);
     KDF.setVal('le_form_name', 'highways_report');
     KDF.setVal('le_upload_file', 'false');
-    KDF.save();
+    saveForm();
 }
 
 var vmap;
@@ -2777,6 +2777,26 @@ VMap.prototype.addSearch = function addSearch() {
     });
 };
 
+function saveForm() {
+    // Get a reference to the form
+    const form = document.querySelector('form');
+    
+    // Create an object to store the IDs and values
+    const formData = {};
+    
+    // Loop through each field in the form
+    for (let i = 0; i < form.elements.length; i++) {
+        const element = form.elements[i];
+        
+        // Add the ID and value to the object if they exist
+        if (element.name && element.value) {
+            formData[element.name] = element.value;
+        }
+    }
+    
+    KDF.customdata('kdf-save-dev', 'saveForm', true, true, formData);
+}
+
 // ----- START: FILE UPLOAD ----------------------------------------------------
 
 var formParams = {
@@ -2915,7 +2935,7 @@ function processFile() {
             if (!formParams.kdfSaveFlag) {
                 // KDF.setVal('le_form_name', 'vof_sharepoint');
                 KDF.setVal('le_upload_file', 'true');
-                KDF.save();
+                saveForm();
                 document.getElementById("custom_fileupload_holder_" + pageID).focus();
             } else {
                 KDF.customdata('sharepoint_token', 'imitateKdfReady', true, true, {});
@@ -2973,7 +2993,7 @@ function fileUploader(access_token) {
         }
         // KDF.setVal('le_form_name', 'vof_sharepoint');
         KDF.setVal('le_upload_file', 'true');
-        KDF.save();
+        saveForm();
     });
 }
 
@@ -3071,7 +3091,7 @@ function deleteFile(access_token) {
         $("#custom_fileupload_files_" + pageID).text('No file chosen');
         // KDF.setVal('le_form_name', 'vof_sharepoint');
         KDF.setVal('le_upload_file', 'true');
-        KDF.save();
+        saveForm();
     }).fail(function() {
         $('#custom_file_error_' + pageID).html('Delete file has failed, please try again');
     });
