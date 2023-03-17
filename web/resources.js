@@ -2793,8 +2793,11 @@ function saveForm() {
             formData[element.name] = element.value;
         }
     }
-    
-    KDF.customdata('kdf-save-dev', 'saveForm', true, true, formData);
+    if (KDF.getVal('txt_reference')) {
+        KDF.customdata('kdf-update-dev', 'saveForm', true, true, formData);
+    } else {
+        KDF.customdata('kdf-save-dev', 'saveForm', true, true, formData);
+    }
 }
 
 // ----- START: FILE UPLOAD ----------------------------------------------------
