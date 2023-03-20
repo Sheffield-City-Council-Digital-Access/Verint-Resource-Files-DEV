@@ -2781,20 +2781,22 @@ VMap.prototype.addSearch = function addSearch() {
 
 function saveForm() {
     // Get a reference to the form
-    const form = document.querySelector('form');
-    
+    const form = document.querySelector('#dform_container');
+
+    // Filter on input types
+    const inputs = form.querySelectorAll('input[type="text"], input[type="email"], input[type="checkbox"], input[type="radio"], select, textarea');
+
     // Create an object to store the IDs and values
     const formData = {};
-    
+
     // Loop through each field in the form
-    for (let i = 0; i < form.elements.length; i++) {
-        const element = form.elements[i];
-        
+    inputs.forEach(input => {
         // Add the ID and value to the object if they exist
-        if (element.name && element.value) {
-            formData[element.name] = element.value;
+        if (input.value !== '' && input.value !== 'Please select...') {
+            formData[input.name] = input.value;
         }
-    }
+    });
+
     if (KDF.getVal('txt_reference')) {
         KDF.customdata('kdf-update-web', 'saveForm', true, true, formData);
     } else {
