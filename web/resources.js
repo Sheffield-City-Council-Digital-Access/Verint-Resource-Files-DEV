@@ -2794,9 +2794,9 @@ function saveForm() {
         }
     }
     if (KDF.getVal('txt_reference')) {
-        KDF.customdata('kdf-update-dev', 'saveForm', true, true, formData);
+        KDF.customdata('kdf-update-web', 'saveForm', true, true, formData);
     } else {
-        KDF.customdata('kdf-save-dev', 'saveForm', true, true, formData);
+        KDF.customdata('kdf-save-web', 'saveForm', true, true, formData);
     }
 }
 
