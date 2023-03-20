@@ -2011,15 +2011,15 @@ p.privacy-notice {
     flex-direction: column;
 }
 
-#dform_container .file-upload-content{
-    max-width: 445px;
+#dform_container .file-upload-content {
+    max-width: 100%;
     margin-bottom: 24px;
 }
 
 #dform_container .file-upload-container {
     position: relative;
     display: grid;
-    grid-template-columns: max-content repeat(1fr);
+    grid-template-columns: repeat(2, max-content) 1fr;
     gap: 1rem;
     align-items: center;
     padding: 2px 3px;
@@ -2029,7 +2029,9 @@ p.privacy-notice {
 
 @media (min-width: 44.375rem) {
     #dform_container .file-upload-container {
-        grid-template-columns: repeat(2, max-content) 1fr;
+        max-width: 445px;
+    }
+    #dform_container .file-upload-content {
         max-width: 445px;
     }
 }
@@ -2055,6 +2057,7 @@ p.privacy-notice {
     border: 1px solid #707070;
     border-radius: 3px;
     cursor: pointer;
+    text-align: center;
 }
 
 #dform_container .custom-file-upload:hover,
