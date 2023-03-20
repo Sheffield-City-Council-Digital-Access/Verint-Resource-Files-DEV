@@ -279,7 +279,9 @@ function handleCustomActions(action, response) {
     }
 
     if (action === 'kdf-save-web') {
-        KDF.save();
+        //Do nothing
+    } else if (action === 'kdf-save-web') {
+        //Do nothing
     } else if (action === 'kdf-save-custom') {
         //Do nothing
     } else {
