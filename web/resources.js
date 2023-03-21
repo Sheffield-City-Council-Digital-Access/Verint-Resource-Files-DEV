@@ -306,7 +306,7 @@ function setHtmlHead(formTitle) {
         document.title = formTitle;
     }, 10);
     var favicon = document.querySelector("link[rel~='icon']");
-    favicon.href = 'https://www.sheffield.gov.uk/etc/designs/sheffield/clientlib-site/images/logos/black.png';
+    favicon.href = 'https://www.sheffield.gov.uk/verint-files/black.png';
 }
 
 function addProgressBarHtml() {
