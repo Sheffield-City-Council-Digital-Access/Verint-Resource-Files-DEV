@@ -10,44 +10,44 @@
     font-family: 'Wayfarer';
     font-weight: 400;
     font-style: normal;
-    src: url('https://sheffield-cc-verint.bigbluedoor.net/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.eot');
-    src: url('https://sheffield-cc-verint.bigbluedoor.net/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.eot?#iefix') format('embedded-opentype'),
+    src: url('https://www.sheffield.gov.uk/verint-files/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.eot');
+    src: url('https://www.sheffield.gov.uk/verint-files/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.eot?#iefix') format('embedded-opentype'),
         local('Wayfarer Regular'),
         local('Wayfarer-Regular'),
-        url('https://sheffield-cc-verint.bigbluedoor.net/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.woff2') format('woff2'),
-        url('https://sheffield-cc-verint.bigbluedoor.net/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.woff') format('woff'),
-        url('https://sheffield-cc-verint.bigbluedoor.net/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.ttf') format('truetype'),
-        url('https://sheffield-cc-verint.bigbluedoor.net/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.svg#Wayfarer-Regular') format('svg');
+        url('https://www.sheffield.gov.uk/verint-files/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.woff2') format('woff2'),
+        url('https://www.sheffield.gov.uk/verint-files/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.woff') format('woff'),
+        url('https://www.sheffield.gov.uk/verint-files/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.ttf') format('truetype'),
+        url('https://www.sheffield.gov.uk/verint-files/fonts/Wayfarer/Wayfarer-Regular/Wayfarer-Regular.svg#Wayfarer-Regular') format('svg');
 }
 
 @font-face {
     font-family: 'Open Sans Regular';
     font-weight: 400;
     font-style: normal;
-    src: url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.eot);
-    src: url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.eot?#iefix) format("embedded-opentype"),
-        url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.woff2) format("woff2"),
-        url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.woff) format("woff"),
-        url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.ttf) format("truetype"),
-        url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.svg#OpenSans) format("svg");
+    src: url(https://www.sheffield.gov.uk/verint-files/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.eot);
+    src: url(https://www.sheffield.gov.uk/verint-files/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.eot?#iefix) format("embedded-opentype"),
+        url(https://www.sheffield.gov.uk/verint-files/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.woff2) format("woff2"),
+        url(https://www.sheffield.gov.uk/verint-files/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.woff) format("woff"),
+        url(https://www.sheffield.gov.uk/verint-files/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.ttf) format("truetype"),
+        url(https://www.sheffield.gov.uk/verint-files/fonts/Open-Sans/Open-Sans-regular/Open-Sans-regular.svg#OpenSans) format("svg");
 }
 
 @font-face {
     font-family: 'Open Sans Semibold';
     font-weight: 600;
     font-style: semibold;
-    src: url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.eot);
-    src: url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.eot?#iefix) format("embedded-opentype"),
-        url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.woff2) format("woff2"),
-        url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.woff) format("woff"),
-        url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.ttf) format("truetype"),
-        url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.svg#OpenSans) format("svg");
+    src: url(https://www.sheffield.gov.uk/verint-files/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.eot);
+    src: url(https://www.sheffield.gov.uk/verint-files/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.eot?#iefix) format("embedded-opentype"),
+        url(https://www.sheffield.gov.uk/verint-files/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.woff2) format("woff2"),
+        url(https://www.sheffield.gov.uk/verint-files/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.woff) format("woff"),
+        url(https://www.sheffield.gov.uk/verint-files/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.ttf) format("truetype"),
+        url(https://www.sheffield.gov.uk/verint-files/fonts/Open-Sans/Open-Sans-600/Open-Sans-600.svg#OpenSans) format("svg");
 }
 
 @font-face {
     font-family: 'icomoon';
-    src: url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Icomoon/icomoon.eot);
-    src: url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Icomoon/icomoon.eot#iefix) format("embedded-opentype"), url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Icomoon/icomoon.ttf) format("truetype"), url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Icomoon/icomoon.woff) format("woff"), url(https://sheffield-cc-verint.bigbluedoor.net/fonts/Icomoon/icomoon.svg#icomoon) format("svg");
+    src: url(https://www.sheffield.gov.uk/verint-files/fonts/Icomoon/icomoon.eot);
+    src: url(https://www.sheffield.gov.uk/verint-files/fonts/Icomoon/icomoon.eot#iefix) format("embedded-opentype"), url(https://www.sheffield.gov.uk/verint-files/fonts/Icomoon/icomoon.ttf) format("truetype"), url(https://www.sheffield.gov.uk/verint-files/fonts/Icomoon/icomoon.woff) format("woff"), url(https://www.sheffield.gov.uk/verint-files/fonts/Icomoon/icomoon.svg#icomoon) format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -309,7 +309,7 @@ footer.scc_footer div.scc_row div:last-child {
     margin: 2rem auto;
     width: 100px;
     height: 79px;
-    background: url(https://sheffield-cc-verint.bigbluedoor.net/logo.png) no-repeat 50%;
+    background: url(https://www.sheffield.gov.uk/verint-files/logo.png) no-repeat 50%;
     background-size: 100% auto;
     content: "";
 }
