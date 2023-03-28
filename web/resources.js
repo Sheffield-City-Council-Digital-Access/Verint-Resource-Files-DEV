@@ -3393,3 +3393,28 @@ VMap.prototype.addSearch = function addSearch() {
     search.startup();
   });
 };
+
+function saveForm() {
+  // Get a reference to the form
+  const form = document.querySelector("#dform_container");
+
+  // Filter on input types
+  const inputs = form.querySelectorAll("input, select, textarea");
+
+  // Create an object to store the IDs and values
+  const formData = {};
+
+  // Loop through each field in the form
+  inputs.forEach((input) => {
+    // Add the ID and value to the object if they exist
+    if (input.value !== "" && input.value !== "Please select...") {
+      formData[input.name] = input.value;
+    }
+  });
+
+  if (KDF.getVal("txt_reference")) {
+    KDF.customdata("kdf-update-web", "saveForm", true, true, formData);
+  } else {
+    KDF.customdata("kdf-save-web", "saveForm", true, true, formData);
+  }
+}
