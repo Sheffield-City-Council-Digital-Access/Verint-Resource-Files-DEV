@@ -5,6 +5,11 @@
   font-size: 16px;
 }
 
+::selection {
+  background-color: #007c53;
+  color: #ffffff;
+}
+
 @font-face {
   font-family: "Wayfarer";
   font-weight: 400;
