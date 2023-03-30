@@ -138,234 +138,234 @@ function initiatePageChange(event, kdf, currentpageid, targetpageid) {
   heckCurrentPageFields();
 }
 
-function handleCustomActions(action, response) {
-  // Function designed to run when a custom action has run successfully.
-  KDF.hideMessages();
+// function handleCustomActions(action, response) {
+//   // Function designed to run when a custom action has run successfully.
+//   KDF.hideMessages();
 
-  checkCurrentPageFields();
+//   checkCurrentPageFields();
 
-  let val = response.data;
+//   let val = response.data;
 
-  if (action === "search-address-web") {
-    if (val.property_search_result.length > 0) {
-      let property_search_results = val.property_search_result;
-      let updated_results = [];
-      $.each(property_search_results, function (index, result) {
-        let label_parts = result.label.split(",");
-        let updated_label = label_parts[0]
-          .trim()
-          .replace(/\b\w+/g, function (txt) {
-            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-          });
-        if (updated_label !== "") {
-          result.label = `${updated_label}, ${label_parts
-            .slice(1)
-            .join(",")
-            .trim()}`;
-          updated_results.push(result);
-        }
-      });
-      const data = updated_results;
-      data.sort(function (a, b) {
-        let aLabel = parseInt(a.label.split(" ")[0]);
-        let bLabel = parseInt(b.label.split(" ")[0]);
-        return aLabel - bLabel;
-      });
-      property_search_results = data;
-      KDF.setVal(
-        `sel_property_search_result_${pageID}`,
-        property_search_results
-      );
-      $(
-        `#dform_widget_sel_property_search_result_${pageID} option:eq(0)`
-      ).remove();
-      KDF.showWidget(`sel_property_search_result_${pageID}`);
-      KDF.showSection(`area_address_selected_${pageID}`);
-      $(`#dform_widget_sel_property_search_result_${pageID}`).focus();
-    } else {
-      displayErrorMessage(
-        `txt_search_property_${pageID}`,
-        "Enter a valid postcode/street name within the Sheffield City Council area",
-        "block"
-      );
-      if (KDF.getVal(`txt_manual_address_${pageID}`) === "false") {
-        // do nothing
-      } else {
-        enterAddressManually();
-      }
-    }
-  }
+//   if (action === "search-address-web") {
+//     if (val.property_search_result.length > 0) {
+//       let property_search_results = val.property_search_result;
+//       let updated_results = [];
+//       $.each(property_search_results, function (index, result) {
+//         let label_parts = result.label.split(",");
+//         let updated_label = label_parts[0]
+//           .trim()
+//           .replace(/\b\w+/g, function (txt) {
+//             return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+//           });
+//         if (updated_label !== "") {
+//           result.label = `${updated_label}, ${label_parts
+//             .slice(1)
+//             .join(",")
+//             .trim()}`;
+//           updated_results.push(result);
+//         }
+//       });
+//       const data = updated_results;
+//       data.sort(function (a, b) {
+//         let aLabel = parseInt(a.label.split(" ")[0]);
+//         let bLabel = parseInt(b.label.split(" ")[0]);
+//         return aLabel - bLabel;
+//       });
+//       property_search_results = data;
+//       KDF.setVal(
+//         `sel_property_search_result_${pageID}`,
+//         property_search_results
+//       );
+//       $(
+//         `#dform_widget_sel_property_search_result_${pageID} option:eq(0)`
+//       ).remove();
+//       KDF.showWidget(`sel_property_search_result_${pageID}`);
+//       KDF.showSection(`area_address_selected_${pageID}`);
+//       $(`#dform_widget_sel_property_search_result_${pageID}`).focus();
+//     } else {
+//       displayErrorMessage(
+//         `txt_search_property_${pageID}`,
+//         "Enter a valid postcode/street name within the Sheffield City Council area",
+//         "block"
+//       );
+//       if (KDF.getVal(`txt_manual_address_${pageID}`) === "false") {
+//         // do nothing
+//       } else {
+//         enterAddressManually();
+//       }
+//     }
+//   }
 
-  if (action === "retrieve-address-web") {
-    if (pageID === "page_about_you") {
-      KDF.setVal("txt_cusaddressnumber", capitalizeString(val.address_number));
-      KDF.setVal("txt_cusaddressnumber", val.address_number);
-      KDF.setVal("txt_cusaddressline1", capitalizeString(val.address_line_1));
-      KDF.setVal("txt_cusaddressline1", val.address_line_1);
-      KDF.setVal("txt_custown", val.town);
-      KDF.setVal("txt_cuspostcode", val.postcode);
-      KDF.setVal(
-        "txt_cusfulladdress",
-        KDF.getVal("txt_cusaddressnumber") +
-          " " +
-          KDF.getVal("txt_cusaddressline1") +
-          ", " +
-          KDF.getVal("txt_custown") +
-          ", " +
-          KDF.getVal("txt_cuspostcode")
-      );
-      KDF.setVal("txt_cusuprn", val.uprn);
-    } else if (pageID === "page_about_another") {
-      KDF.setVal(
-        "txt_cusaddressnumber_another",
-        capitalizeString(val.address_number)
-      );
-      KDF.setVal("txt_cusaddressnumber_another", val.address_number);
-      KDF.setVal(
-        "txt_cusaddressline1_another",
-        capitalizeString(val.address_line_1)
-      );
-      KDF.setVal("txt_cusaddressline1_another", val.address_line_1);
-      KDF.setVal("txt_custown_another", val.town);
-      KDF.setVal("txt_cuspostcode_another", val.postcode);
-      KDF.setVal(
-        "txt_cusfulladdress_another",
-        KDF.getVal("txt_cusaddressnumber_another") +
-          " " +
-          KDF.getVal("txt_cusaddressline1_another") +
-          ", " +
-          KDF.getVal("txt_custown_another") +
-          ", " +
-          KDF.getVal("txt_cuspostcode_another")
-      );
-      KDF.setVal("txt_cusuprn_another", val.uprn);
-    } else {
-      KDF.setVal(
-        `txt_addressnumber__${pageID}`,
-        capitalizeString(val.address_number)
-      );
-      KDF.setVal(`txt_addressnumber__${pageID}`, val.address_number);
-      KDF.setVal(
-        `txt_addressline1__${pageID}`,
-        capitalizeString(val.address_line_1)
-      );
-      KDF.setVal(`txt_addressline1__${pageID}`, val.address_line_1);
-      KDF.setVal(`txt_town__${pageID}`, val.town);
-      KDF.setVal(`txt_postcode__${pageID}`, val.postcode);
-      KDF.setVal(
-        `txt_fulladdress__${pageID}`,
-        KDF.getVal(`txt_addressnumber_${pageID}`) +
-          " " +
-          KDF.getVal(`txt_addressline1_${pageID}`) +
-          ", " +
-          KDF.getVal(`txt_town_${pageID}`) +
-          ", " +
-          KDF.getVal(`txt_postcode_${pageID}`)
-      );
-      KDF.setVal(`txt_postcodearea__${pageID}`, val.postcode_area);
-      KDF.setVal(`txt_uprn__${pageID}`, val.uprn);
-      KDF.setVal(`txt_propertyid__${pageID}`, val.property_id);
-      KDF.setVal(`txt_usrn__${pageID}`, val.usrn);
-      KDF.setVal(`txt_streetid_${pageID}`, val.street_id);
-      if (pageID === "page_about_the_location") {
-        KDF.setVal(
-          "txt_fulladdress",
-          capitalizeString(val.address_number) +
-            " " +
-            capitalizeString(val.address_line_1) +
-            ", " +
-            val.town +
-            ", " +
-            val.postcode
-        );
-        KDF.setVal(
-          "txt_fulladdress",
-          val.address_number +
-            " " +
-            val.address_line_1 +
-            ", " +
-            val.town +
-            ", " +
-            val.postcode
-        );
-        KDF.setVal(
-          "txt_streetdescription",
-          capitalizeString(val.address_line_1)
-        );
-        KDF.setVal("txt_streetdescription", val.address_line_1);
-        KDF.setVal("txt_uprn", val.uprn);
-        KDF.setVal("txt_propertyid", val.property_id);
-        KDF.setVal("txt_postcodearea", val.postcode_area);
-        KDF.setVal("txt_usrn", val.usrn);
-        KDF.setVal("txt_streetid", val.street_id);
-        KDF.setVal("longitude_x", val.longitude_x);
-        KDF.setVal("latitude_y", val.latitude_y);
-        KDF.setVal("site_name", capitalizeString(val.address_line_1));
-        KDF.setVal("site_name", val.address_line_1);
-        KDF.setVal("site_code", val.usrn);
-      }
-    }
-    KDF.showWidget(`ahtm_fulladdress_${pageID}`);
-    KDF.hideWidget(`sel_property_search_result_${pageID}`);
-    KDF.showSection(`area_address_selected_${pageID}`);
-    KDF.showSection(`area_lacation_description_${pageID}`);
-    $(`#dform_widget_html_ahtm_fulladdress_${pageID}`).focus();
-  }
+//   if (action === "retrieve-address-web") {
+//     if (pageID === "page_about_you") {
+//       KDF.setVal("txt_cusaddressnumber", capitalizeString(val.address_number));
+//       KDF.setVal("txt_cusaddressnumber", val.address_number);
+//       KDF.setVal("txt_cusaddressline1", capitalizeString(val.address_line_1));
+//       KDF.setVal("txt_cusaddressline1", val.address_line_1);
+//       KDF.setVal("txt_custown", val.town);
+//       KDF.setVal("txt_cuspostcode", val.postcode);
+//       KDF.setVal(
+//         "txt_cusfulladdress",
+//         KDF.getVal("txt_cusaddressnumber") +
+//           " " +
+//           KDF.getVal("txt_cusaddressline1") +
+//           ", " +
+//           KDF.getVal("txt_custown") +
+//           ", " +
+//           KDF.getVal("txt_cuspostcode")
+//       );
+//       KDF.setVal("txt_cusuprn", val.uprn);
+//     } else if (pageID === "page_about_another") {
+//       KDF.setVal(
+//         "txt_cusaddressnumber_another",
+//         capitalizeString(val.address_number)
+//       );
+//       KDF.setVal("txt_cusaddressnumber_another", val.address_number);
+//       KDF.setVal(
+//         "txt_cusaddressline1_another",
+//         capitalizeString(val.address_line_1)
+//       );
+//       KDF.setVal("txt_cusaddressline1_another", val.address_line_1);
+//       KDF.setVal("txt_custown_another", val.town);
+//       KDF.setVal("txt_cuspostcode_another", val.postcode);
+//       KDF.setVal(
+//         "txt_cusfulladdress_another",
+//         KDF.getVal("txt_cusaddressnumber_another") +
+//           " " +
+//           KDF.getVal("txt_cusaddressline1_another") +
+//           ", " +
+//           KDF.getVal("txt_custown_another") +
+//           ", " +
+//           KDF.getVal("txt_cuspostcode_another")
+//       );
+//       KDF.setVal("txt_cusuprn_another", val.uprn);
+//     } else {
+//       KDF.setVal(
+//         `txt_addressnumber__${pageID}`,
+//         capitalizeString(val.address_number)
+//       );
+//       KDF.setVal(`txt_addressnumber__${pageID}`, val.address_number);
+//       KDF.setVal(
+//         `txt_addressline1__${pageID}`,
+//         capitalizeString(val.address_line_1)
+//       );
+//       KDF.setVal(`txt_addressline1__${pageID}`, val.address_line_1);
+//       KDF.setVal(`txt_town__${pageID}`, val.town);
+//       KDF.setVal(`txt_postcode__${pageID}`, val.postcode);
+//       KDF.setVal(
+//         `txt_fulladdress__${pageID}`,
+//         KDF.getVal(`txt_addressnumber_${pageID}`) +
+//           " " +
+//           KDF.getVal(`txt_addressline1_${pageID}`) +
+//           ", " +
+//           KDF.getVal(`txt_town_${pageID}`) +
+//           ", " +
+//           KDF.getVal(`txt_postcode_${pageID}`)
+//       );
+//       KDF.setVal(`txt_postcodearea__${pageID}`, val.postcode_area);
+//       KDF.setVal(`txt_uprn__${pageID}`, val.uprn);
+//       KDF.setVal(`txt_propertyid__${pageID}`, val.property_id);
+//       KDF.setVal(`txt_usrn__${pageID}`, val.usrn);
+//       KDF.setVal(`txt_streetid_${pageID}`, val.street_id);
+//       if (pageID === "page_about_the_location") {
+//         KDF.setVal(
+//           "txt_fulladdress",
+//           capitalizeString(val.address_number) +
+//             " " +
+//             capitalizeString(val.address_line_1) +
+//             ", " +
+//             val.town +
+//             ", " +
+//             val.postcode
+//         );
+//         KDF.setVal(
+//           "txt_fulladdress",
+//           val.address_number +
+//             " " +
+//             val.address_line_1 +
+//             ", " +
+//             val.town +
+//             ", " +
+//             val.postcode
+//         );
+//         KDF.setVal(
+//           "txt_streetdescription",
+//           capitalizeString(val.address_line_1)
+//         );
+//         KDF.setVal("txt_streetdescription", val.address_line_1);
+//         KDF.setVal("txt_uprn", val.uprn);
+//         KDF.setVal("txt_propertyid", val.property_id);
+//         KDF.setVal("txt_postcodearea", val.postcode_area);
+//         KDF.setVal("txt_usrn", val.usrn);
+//         KDF.setVal("txt_streetid", val.street_id);
+//         KDF.setVal("longitude_x", val.longitude_x);
+//         KDF.setVal("latitude_y", val.latitude_y);
+//         KDF.setVal("site_name", capitalizeString(val.address_line_1));
+//         KDF.setVal("site_name", val.address_line_1);
+//         KDF.setVal("site_code", val.usrn);
+//       }
+//     }
+//     KDF.showWidget(`ahtm_fulladdress_${pageID}`);
+//     KDF.hideWidget(`sel_property_search_result_${pageID}`);
+//     KDF.showSection(`area_address_selected_${pageID}`);
+//     KDF.showSection(`area_lacation_description_${pageID}`);
+//     $(`#dform_widget_html_ahtm_fulladdress_${pageID}`).focus();
+//   }
 
-  if (action === "retrieve-current-location-web") {
-    if (val.result === "Location not found") {
-      KDF.showWidget("ahtm_current_location_error");
-      // $("#current-location-error").val("Your location is outside of the Sheffield City Council area");
-    } else {
-      KDF.setWidgetNotRequired(`txt_search_property_${pageID}`);
-      KDF.setVal(`txt_addressnumber_${pageID}`, val.number);
-      KDF.setVal(`txt_addressline1_${pageID}`, val.streetName);
-      KDF.setVal(`txt_town_${pageID}`, val.city);
-      KDF.setVal(`txt_postcode_${pageID}`, val.postcode);
-      KDF.setVal(
-        `txt_fulladdress_${pageID}`,
-        val.number +
-          " " +
-          val.streetName +
-          ", " +
-          val.city +
-          ", " +
-          val.postcode
-      );
-      KDF.setVal(
-        "txt_fulladdress",
-        val.number +
-          " " +
-          val.streetName +
-          ", " +
-          val.city +
-          ", " +
-          val.postcode
-      );
-      KDF.setVal(`txt_streetdescription${pageID}`, val.streetName);
-      KDF.setVal(`txt_usrn_${pageID}`, val.usrn);
-      KDF.setVal("txt_usrn", val.usrn);
-      KDF.setVal(`txt_streetid_${pageID}`, val.streetID);
-      KDF.setVal("txt_streetid", val.streetID);
-      KDF.setVal("site_name", val.streetName);
-      KDF.setVal("site_code", val.usrn);
-      KDF.setVal("longitude_x", val.xLongitude);
-      KDF.setVal("latitude_y", val.yLatitude);
-      KDF.showWidget(`ahtm_fulladdress_${pageID}`);
-      KDF.hideWidget(`sel_property_search_result_${pageID}`);
-      KDF.showSection(`area_address_selected_${pageID}`);
-      KDF.showSection(`area_lacation_description_${pageID}`);
-    }
-  }
+//   if (action === "retrieve-current-location-web") {
+//     if (val.result === "Location not found") {
+//       KDF.showWidget("ahtm_current_location_error");
+//       // $("#current-location-error").val("Your location is outside of the Sheffield City Council area");
+//     } else {
+//       KDF.setWidgetNotRequired(`txt_search_property_${pageID}`);
+//       KDF.setVal(`txt_addressnumber_${pageID}`, val.number);
+//       KDF.setVal(`txt_addressline1_${pageID}`, val.streetName);
+//       KDF.setVal(`txt_town_${pageID}`, val.city);
+//       KDF.setVal(`txt_postcode_${pageID}`, val.postcode);
+//       KDF.setVal(
+//         `txt_fulladdress_${pageID}`,
+//         val.number +
+//           " " +
+//           val.streetName +
+//           ", " +
+//           val.city +
+//           ", " +
+//           val.postcode
+//       );
+//       KDF.setVal(
+//         "txt_fulladdress",
+//         val.number +
+//           " " +
+//           val.streetName +
+//           ", " +
+//           val.city +
+//           ", " +
+//           val.postcode
+//       );
+//       KDF.setVal(`txt_streetdescription${pageID}`, val.streetName);
+//       KDF.setVal(`txt_usrn_${pageID}`, val.usrn);
+//       KDF.setVal("txt_usrn", val.usrn);
+//       KDF.setVal(`txt_streetid_${pageID}`, val.streetID);
+//       KDF.setVal("txt_streetid", val.streetID);
+//       KDF.setVal("site_name", val.streetName);
+//       KDF.setVal("site_code", val.usrn);
+//       KDF.setVal("longitude_x", val.xLongitude);
+//       KDF.setVal("latitude_y", val.yLatitude);
+//       KDF.showWidget(`ahtm_fulladdress_${pageID}`);
+//       KDF.hideWidget(`sel_property_search_result_${pageID}`);
+//       KDF.showSection(`area_address_selected_${pageID}`);
+//       KDF.showSection(`area_lacation_description_${pageID}`);
+//     }
+//   }
 
-  if (action === "kdf-save-web") {
-    KDF.save();
-  } else if (action === "kdf-save-custom") {
-    //Do nothing
-  } else {
-    checkCurrentPageFields();
-  }
-}
+//   if (action === "kdf-save-web") {
+//     KDF.save();
+//   } else if (action === "kdf-save-custom") {
+//     //Do nothing
+//   } else {
+//     checkCurrentPageFields();
+//   }
+// }
 
 function setPageHeaderAndFooter(formTitle) {
   var body = document.getElementsByTagName("body")[0];
@@ -838,24 +838,24 @@ function handleAddressSearchFunctionality(event, kdf) {
     }
   });
 
-  $(`#dform_widget_sel_property_search_result_${pageID}`).on(
-    "click keyup",
-    function (e) {
-      if (e.type === "keyup" && e.keyCode !== 13) {
-        return;
-      } else {
-        resetErrorMessage(
-          this.name.substring(0, this.name.length - 2),
-          "Enter your postcode in the correct format"
-        );
-        if (this.value) {
-          KDF.customdata("retrieve-address-web", this.id, true, true, {
-            search_property: this.value,
-          });
-        }
-      }
-    }
-  );
+  // $(`#dform_widget_sel_property_search_result_${pageID}`).on(
+  //   "click keyup",
+  //   function (e) {
+  //     if (e.type === "keyup" && e.keyCode !== 13) {
+  //       return;
+  //     } else {
+  //       resetErrorMessage(
+  //         this.name.substring(0, this.name.length - 2),
+  //         "Enter your postcode in the correct format"
+  //       );
+  //       if (this.value) {
+  //         KDF.customdata("retrieve-address-web", this.id, true, true, {
+  //           search_property: this.value,
+  //         });
+  //       }
+  //     }
+  //   }
+  // );
 
   $(".manual-address").click(function () {
     resetErrorMessage(
@@ -999,204 +999,204 @@ function handleAddressSearchFunctionality(event, kdf) {
     submitFormHighways();
   });
 
-  function locationValidation(action) {
-    function displayErrorMessage(errorMessage, display) {
-      $("#dform_widget_txt_search_property_" + pageID)
-        .parents(".dform_widget_txt_search_property_" + pageID)
-        .find(".dform_validationMessage")
-        .html(errorMessage);
-      $("#dform_widget_txt_search_property_" + pageID)
-        .parents(".dform_widget_txt_search_property_" + pageID)
-        .find(".dform_validationMessage")
-        .css({
-          display: display,
-        });
-      displayError("txt_property_search");
-    }
+  // function locationValidation(action) {
+  //   function displayErrorMessage(errorMessage, display) {
+  //     $("#dform_widget_txt_search_property_" + pageID)
+  //       .parents(".dform_widget_txt_search_property_" + pageID)
+  //       .find(".dform_validationMessage")
+  //       .html(errorMessage);
+  //     $("#dform_widget_txt_search_property_" + pageID)
+  //       .parents(".dform_widget_txt_search_property_" + pageID)
+  //       .find(".dform_validationMessage")
+  //       .css({
+  //         display: display,
+  //       });
+  //     displayError("txt_property_search");
+  //   }
 
-    function hideFieldError(errorMessage, display) {
-      $("#dform_widget_txt_search_property_" + pageID)
-        .parent()
-        .find(".dform_validationMessage")
-        .html(errorMessage);
-      $("#dform_widget_txt_search_property_" + pageID)
-        .parent()
-        .find(".dform_validationMessage")
-        .css({
-          display: display,
-        });
-    }
+  //   function hideFieldError(errorMessage, display) {
+  //     $("#dform_widget_txt_search_property_" + pageID)
+  //       .parent()
+  //       .find(".dform_validationMessage")
+  //       .html(errorMessage);
+  //     $("#dform_widget_txt_search_property_" + pageID)
+  //       .parent()
+  //       .find(".dform_validationMessage")
+  //       .css({
+  //         display: display,
+  //       });
+  //   }
 
-    function displayErrorMessageMap(errorMessage, display) {
-      $("#dform_widget_gis_map")
-        .find(".dform_validationMessage")
-        .html(errorMessage);
-      $("#dform_widget_gis_map").find(".dform_validationMessage").css({
-        display: display,
-      });
-      hideFieldErrorMap("gis_map");
-    }
+  //   function displayErrorMessageMap(errorMessage, display) {
+  //     $("#dform_widget_gis_map")
+  //       .find(".dform_validationMessage")
+  //       .html(errorMessage);
+  //     $("#dform_widget_gis_map").find(".dform_validationMessage").css({
+  //       display: display,
+  //     });
+  //     hideFieldErrorMap("gis_map");
+  //   }
 
-    function hideFieldErrorMap(errorMessage, display) {
-      $("#dform_widget_gis_map")
-        .find(".dform_validationMessage")
-        .html(errorMessage);
-      $("#dform_widget_gis_map").find(".dform_validationMessage").css({
-        display: display,
-      });
-    }
+  //   function hideFieldErrorMap(errorMessage, display) {
+  //     $("#dform_widget_gis_map")
+  //       .find(".dform_validationMessage")
+  //       .html(errorMessage);
+  //     $("#dform_widget_gis_map").find(".dform_validationMessage").css({
+  //       display: display,
+  //     });
+  //   }
 
-    var defaultErrorMessage = "Enter your postcode in the correct format";
-    hideFieldError(defaultErrorMessage, "none");
-    var postcodeSearchValue = $(
-      "#dform_widget_txt_search_property_" + pageID
-    ).val();
-    var postcodeSearchPattern = $(
-      "#dform_widget_txt_search_property_" + pageID
-    ).attr("pattern");
-    var postcodeSearchRegex = new RegExp(postcodeSearchPattern);
-    var isPostcodeValid = postcodeSearchRegex.test(postcodeSearchValue);
-    var isAddressListVisible = $(
-      "#dform_table_tab_property_search_result_" + pageID
-    ).is(":visible");
-    if (KDF.getVal("locator_page_about_the_location") === "Map") {
-      if (KDF.getVal("longitude_x") === "" || KDF.getVal("latitude_y") === "") {
-        displayErrorMessageMap(
-          "Select a location on the public highway",
-          "block"
-        );
-      } else {
-        progressAction(action);
-      }
-    } else if (
-      KDF.getVal("locator_page_about_the_location") === "Current Location"
-    ) {
-      var defaultErrorMessage =
-        "Enter a postcode or street name in the correct format";
-      if (
-        KDF.getVal("longitude_x") === "" &&
-        KDF.getVal("latitude_y") === "" &&
-        KDF.getVal("site_name") === ""
-      ) {
-        displayErrorMessage(defaultErrorMessage, "block");
-        $("#dform_widget_txt_search_property_" + pageID).removeClass(
-          "dform_fielderror"
-        );
-      } else {
-        progressAction(action);
-      }
-    } else if (KDF.getVal("locator_" + pageID) === "Manual") {
-      if (pageID === "page_about_you") {
-        KDF.setWidgetNotRequired("txt_search_property_page_about_you");
-        KDF.setVal(
-          "txt_cusfulladdress",
-          KDF.getVal("txt_cusaddressnumber") +
-            " " +
-            KDF.getVal("txt_cusaddressline1") +
-            ", " +
-            KDF.getVal("txt_custown") +
-            ", " +
-            KDF.getVal("txt_cuspostcode")
-        );
-      } else if (pageID === "page_about_another") {
-        KDF.setWidgetNotRequired("txt_search_property_page_about_another");
-        KDF.setVal(
-          "txt_cusfulladdress_another",
-          KDF.getVal("txt_cusaddressnumber_another") +
-            " " +
-            KDF.getVal("txt_cusaddressline1_another") +
-            ", " +
-            KDF.getVal("txt_custown_another") +
-            ", " +
-            KDF.getVal("txt_cuspostcode_another")
-        );
-      } else {
-        KDF.setWidgetNotRequired("txt_search_property_" + pageID);
-        KDF.setVal(
-          "txt_fulladdress_" + pageID,
-          KDF.getVal("txt_addressnumber_" + pageID) +
-            " " +
-            KDF.getVal("txt_addressline1_" + pageID) +
-            ", " +
-            KDF.getVal("txt_town_" + pageID) +
-            ", " +
-            KDF.getVal("txt_postcode_" + pageID)
-        );
-      }
-      progressAction(action);
-    } else {
-      if (pageID === "page_about_you") {
-        if (KDF.getVal("txt_cusfulladdress") === "") {
-          if (KDF.getVal("txt_search_property_" + pageID) === "") {
-            displayErrorMessage(defaultErrorMessage, "block");
-          } else {
-            if (!isAddressListVisible) {
-              displayErrorMessage("Click find address", "block");
-            } else {
-              displayErrorMessage("Select an address from the list", "block");
-            }
-          }
-        } else {
-          progressAction(action);
-        }
-      } else if (pageID === "page_about_another") {
-        if (KDF.getVal("txt_cusfulladdress_another") === "") {
-          if (KDF.getVal("txt_search_property_" + pageID) === "") {
-            displayErrorMessage(defaultErrorMessage, "block");
-          } else {
-            if (!isAddressListVisible) {
-              displayErrorMessage("Click find address", "block");
-            } else {
-              displayErrorMessage("Select an address from the list", "block");
-            }
-          }
-        } else {
-          progressAction(action);
-        }
-      } else {
-        if (KDF.getVal("txt_fulladdress_" + pageID) === "") {
-          if (KDF.getVal("txt_search_property_" + pageID) === "") {
-            displayErrorMessage(defaultErrorMessage, "block");
-          } else {
-            if (!isAddressListVisible) {
-              displayErrorMessage("Click find address", "block");
-            } else {
-              displayErrorMessage("Select an address from the list", "block");
-            }
-          }
-        } else {
-          progressAction(action);
-        }
-      }
-    }
+  //   var defaultErrorMessage = "Enter your postcode in the correct format";
+  //   hideFieldError(defaultErrorMessage, "none");
+  //   var postcodeSearchValue = $(
+  //     "#dform_widget_txt_search_property_" + pageID
+  //   ).val();
+  //   var postcodeSearchPattern = $(
+  //     "#dform_widget_txt_search_property_" + pageID
+  //   ).attr("pattern");
+  //   var postcodeSearchRegex = new RegExp(postcodeSearchPattern);
+  //   var isPostcodeValid = postcodeSearchRegex.test(postcodeSearchValue);
+  //   var isAddressListVisible = $(
+  //     "#dform_table_tab_property_search_result_" + pageID
+  //   ).is(":visible");
+  //   if (KDF.getVal("locator_page_about_the_location") === "Map") {
+  //     if (KDF.getVal("longitude_x") === "" || KDF.getVal("latitude_y") === "") {
+  //       displayErrorMessageMap(
+  //         "Select a location on the public highway",
+  //         "block"
+  //       );
+  //     } else {
+  //       progressAction(action);
+  //     }
+  //   } else if (
+  //     KDF.getVal("locator_page_about_the_location") === "Current Location"
+  //   ) {
+  //     var defaultErrorMessage =
+  //       "Enter a postcode or street name in the correct format";
+  //     if (
+  //       KDF.getVal("longitude_x") === "" &&
+  //       KDF.getVal("latitude_y") === "" &&
+  //       KDF.getVal("site_name") === ""
+  //     ) {
+  //       displayErrorMessage(defaultErrorMessage, "block");
+  //       $("#dform_widget_txt_search_property_" + pageID).removeClass(
+  //         "dform_fielderror"
+  //       );
+  //     } else {
+  //       progressAction(action);
+  //     }
+  //   } else if (KDF.getVal("locator_" + pageID) === "Manual") {
+  //     if (pageID === "page_about_you") {
+  //       KDF.setWidgetNotRequired("txt_search_property_page_about_you");
+  //       KDF.setVal(
+  //         "txt_cusfulladdress",
+  //         KDF.getVal("txt_cusaddressnumber") +
+  //           " " +
+  //           KDF.getVal("txt_cusaddressline1") +
+  //           ", " +
+  //           KDF.getVal("txt_custown") +
+  //           ", " +
+  //           KDF.getVal("txt_cuspostcode")
+  //       );
+  //     } else if (pageID === "page_about_another") {
+  //       KDF.setWidgetNotRequired("txt_search_property_page_about_another");
+  //       KDF.setVal(
+  //         "txt_cusfulladdress_another",
+  //         KDF.getVal("txt_cusaddressnumber_another") +
+  //           " " +
+  //           KDF.getVal("txt_cusaddressline1_another") +
+  //           ", " +
+  //           KDF.getVal("txt_custown_another") +
+  //           ", " +
+  //           KDF.getVal("txt_cuspostcode_another")
+  //       );
+  //     } else {
+  //       KDF.setWidgetNotRequired("txt_search_property_" + pageID);
+  //       KDF.setVal(
+  //         "txt_fulladdress_" + pageID,
+  //         KDF.getVal("txt_addressnumber_" + pageID) +
+  //           " " +
+  //           KDF.getVal("txt_addressline1_" + pageID) +
+  //           ", " +
+  //           KDF.getVal("txt_town_" + pageID) +
+  //           ", " +
+  //           KDF.getVal("txt_postcode_" + pageID)
+  //       );
+  //     }
+  //     progressAction(action);
+  //   } else {
+  //     if (pageID === "page_about_you") {
+  //       if (KDF.getVal("txt_cusfulladdress") === "") {
+  //         if (KDF.getVal("txt_search_property_" + pageID) === "") {
+  //           displayErrorMessage(defaultErrorMessage, "block");
+  //         } else {
+  //           if (!isAddressListVisible) {
+  //             displayErrorMessage("Click find address", "block");
+  //           } else {
+  //             displayErrorMessage("Select an address from the list", "block");
+  //           }
+  //         }
+  //       } else {
+  //         progressAction(action);
+  //       }
+  //     } else if (pageID === "page_about_another") {
+  //       if (KDF.getVal("txt_cusfulladdress_another") === "") {
+  //         if (KDF.getVal("txt_search_property_" + pageID) === "") {
+  //           displayErrorMessage(defaultErrorMessage, "block");
+  //         } else {
+  //           if (!isAddressListVisible) {
+  //             displayErrorMessage("Click find address", "block");
+  //           } else {
+  //             displayErrorMessage("Select an address from the list", "block");
+  //           }
+  //         }
+  //       } else {
+  //         progressAction(action);
+  //       }
+  //     } else {
+  //       if (KDF.getVal("txt_fulladdress_" + pageID) === "") {
+  //         if (KDF.getVal("txt_search_property_" + pageID) === "") {
+  //           displayErrorMessage(defaultErrorMessage, "block");
+  //         } else {
+  //           if (!isAddressListVisible) {
+  //             displayErrorMessage("Click find address", "block");
+  //           } else {
+  //             displayErrorMessage("Select an address from the list", "block");
+  //           }
+  //         }
+  //       } else {
+  //         progressAction(action);
+  //       }
+  //     }
+  //   }
 
-    function progressAction(action) {
-      if (action === "Submit") {
-        submitForm();
-      } else if (action === "Submit-Custom") {
-        submitFormCustom();
-      } else if (action === "Submit-Anonymous") {
-        KDF.setVal("txt_title", "");
-        KDF.setVal("txt_firstname", "");
-        KDF.setVal("txt_surname", "");
-        KDF.setVal("txt_phone", "");
-        KDF.setVal("txt_email", "");
-        KDF.setVal("txt_dob", "");
-        submitFormHighways();
-      } else if (action === "Submit-Anon") {
-        KDF.setVal("txt_title", "");
-        KDF.setVal("txt_firstname", "");
-        KDF.setVal("txt_surname", "");
-        KDF.setVal("txt_phone", "");
-        KDF.setVal("txt_email", "");
-        KDF.setVal("txt_dob", "");
-        submitForm();
-      } else {
-        console.log("Next");
-        KDF.gotoNextPage();
-      }
-    }
-  }
+  //   function progressAction(action) {
+  //     if (action === "Submit") {
+  //       submitForm();
+  //     } else if (action === "Submit-Custom") {
+  //       submitFormCustom();
+  //     } else if (action === "Submit-Anonymous") {
+  //       KDF.setVal("txt_title", "");
+  //       KDF.setVal("txt_firstname", "");
+  //       KDF.setVal("txt_surname", "");
+  //       KDF.setVal("txt_phone", "");
+  //       KDF.setVal("txt_email", "");
+  //       KDF.setVal("txt_dob", "");
+  //       submitFormHighways();
+  //     } else if (action === "Submit-Anon") {
+  //       KDF.setVal("txt_title", "");
+  //       KDF.setVal("txt_firstname", "");
+  //       KDF.setVal("txt_surname", "");
+  //       KDF.setVal("txt_phone", "");
+  //       KDF.setVal("txt_email", "");
+  //       KDF.setVal("txt_dob", "");
+  //       submitForm();
+  //     } else {
+  //       console.log("Next");
+  //       KDF.gotoNextPage();
+  //     }
+  //   }
+  // }
 }
 
 function displayErrorMessage(field, errorMessage, display) {
