@@ -107,42 +107,51 @@ function handleCustomActions(action, response) {
 
   checkCurrentPageFields();
 
-  var val = response.data;
+  let val = response.data;
 
   if (action === "search-address-web") {
-    const property_search_result = [];
-    KDF.setVal("tab_property_search_result_" + pageID, property_search_result);
     if (val.property_search_result.length > 0) {
-      val.property_search_result.forEach(populateAddressList);
-      function populateAddressList(item, key) {
-        if (item) {
-          var lable = item.col_property;
-          var toLowerCase = capitalizeString(
-            lable.substr(0, lable.indexOf(","))
-          );
-          var lcLength = toLowerCase.length;
-          var toUpperCase = lable.slice(lcLength);
-          property_search_result.push({
-            col_property: toLowerCase + toUpperCase,
-            col_property_id: item.col_property_id,
+      let property_search_results = val.property_search_result;
+      let updated_results = [];
+      $.each(property_search_results, function (index, result) {
+        let label_parts = result.label.split(",");
+        let updated_label = label_parts[0]
+          .trim()
+          .replace(/\b\w+/g, function (txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
           });
+        if (updated_label !== "") {
+          result.label = `${updated_label}, ${label_parts
+            .slice(1)
+            .join(",")
+            .trim()}`;
+          updated_results.push(result);
         }
-      }
+      });
+      const data = updated_results;
+      data.sort(function (a, b) {
+        let aLabel = parseInt(a.label.split(" ")[0]);
+        let bLabel = parseInt(b.label.split(" ")[0]);
+        return aLabel - bLabel;
+      });
+      property_search_results = data;
       KDF.setVal(
-        "tab_property_search_result_" + pageID,
-        property_search_result
+        `sel_property_search_result_${pageID}`,
+        property_search_results
       );
-      KDF.showWidget("ahtm_label_for_tab_property_search_result_" + pageID);
-      KDF.showWidget("tab_property_search_result_" + pageID);
-      KDF.showSection("area_address_selected_" + pageID);
+      $(
+        `#dform_widget_sel_property_search_result_${pageID} option:eq(0)`
+      ).remove();
+      KDF.showWidget(`sel_property_search_result_${pageID}`);
+      KDF.showSection(`area_address_selected_${pageID}`);
+      $(`#dform_widget_sel_property_search_result_${pageID}`).focus();
     } else {
-      // KDF.showWidget('ahtm_address_search_result_error_' + pageID);
       displayErrorMessage(
-        "txt_search_property_" + pageID,
+        `txt_search_property_${pageID}`,
         "Enter a valid postcode/street name within the Sheffield City Council area",
         "block"
       );
-      if (KDF.getVal("txt_manual_address_" + pageID) === "false") {
+      if (KDF.getVal(`txt_manual_address_${pageID}`) === "false") {
         // do nothing
       } else {
         enterAddressManually();
@@ -168,7 +177,7 @@ function handleCustomActions(action, response) {
           ", " +
           KDF.getVal("txt_cuspostcode")
       );
-      KDF.setVal("txt_cusuprn" + val.uprn);
+      KDF.setVal("txt_cusuprn", val.uprn);
     } else if (pageID === "page_about_another") {
       KDF.setVal(
         "txt_cusaddressnumber_another",
@@ -192,35 +201,35 @@ function handleCustomActions(action, response) {
           ", " +
           KDF.getVal("txt_cuspostcode_another")
       );
-      KDF.setVal("txt_cusuprn_another" + val.uprn);
+      KDF.setVal("txt_cusuprn_another", val.uprn);
     } else {
       KDF.setVal(
-        "txt_addressnumber_" + pageID,
+        `txt_addressnumber__${pageID}`,
         capitalizeString(val.address_number)
       );
-      KDF.setVal("txt_addressnumber_" + pageID, val.address_number);
+      KDF.setVal(`txt_addressnumber__${pageID}`, val.address_number);
       KDF.setVal(
-        "txt_addressline1_" + pageID,
+        `txt_addressline1__${pageID}`,
         capitalizeString(val.address_line_1)
       );
-      KDF.setVal("txt_addressline1_" + pageID, val.address_line_1);
-      KDF.setVal("txt_town_" + pageID, val.town);
-      KDF.setVal("txt_postcode_" + pageID, val.postcode);
+      KDF.setVal(`txt_addressline1__${pageID}`, val.address_line_1);
+      KDF.setVal(`txt_town__${pageID}`, val.town);
+      KDF.setVal(`txt_postcode__${pageID}`, val.postcode);
       KDF.setVal(
-        "txt_fulladdress_" + pageID,
-        KDF.getVal("txt_addressnumber_" + pageID) +
+        `txt_fulladdress__${pageID}`,
+        KDF.getVal(`txt_addressnumber_${pageID}`) +
           " " +
-          KDF.getVal("txt_addressline1_" + pageID) +
+          KDF.getVal(`txt_addressline1_${pageID}`) +
           ", " +
-          KDF.getVal("txt_town_" + pageID) +
+          KDF.getVal(`txt_town_${pageID}`) +
           ", " +
-          KDF.getVal("txt_postcode_" + pageID)
+          KDF.getVal(`txt_postcode_${pageID}`)
       );
-      KDF.setVal("txt_postcodearea_" + pageID, val.postcode_area);
-      KDF.setVal("txt_uprn_" + pageID, val.uprn);
-      KDF.setVal("txt_propertyid_" + pageID, val.property_id);
-      KDF.setVal("txt_usrn_" + pageID, val.usrn);
-      KDF.setVal("txt_streetid_" + pageID, val.street_id);
+      KDF.setVal(`txt_postcodearea__${pageID}`, val.postcode_area);
+      KDF.setVal(`txt_uprn__${pageID}`, val.uprn);
+      KDF.setVal(`txt_propertyid__${pageID}`, val.property_id);
+      KDF.setVal(`txt_usrn__${pageID}`, val.usrn);
+      KDF.setVal(`txt_streetid_${pageID}`, val.street_id);
       if (pageID === "page_about_the_location") {
         KDF.setVal(
           "txt_fulladdress",
@@ -259,12 +268,11 @@ function handleCustomActions(action, response) {
         KDF.setVal("site_code", val.usrn);
       }
     }
-    KDF.showWidget("ahtm_fulladdress_" + pageID);
-    KDF.hideWidget("ahtm_address_table_" + pageID);
-    KDF.hideWidget("ahtm_label_for_tab_property_search_result_" + pageID);
-    KDF.hideWidget("tab_property_search_result_" + pageID);
-    KDF.showSection("area_address_selected_" + pageID);
-    KDF.showSection("area_lacation_description_" + pageID);
+    KDF.showWidget(`ahtm_fulladdress_${pageID}`);
+    KDF.hideWidget(`sel_property_search_result_${pageID}`);
+    KDF.showSection(`area_address_selected_${pageID}`);
+    KDF.showSection(`area_lacation_description_${pageID}`);
+    $(`#dform_widget_html_ahtm_fulladdress_${pageID}`).focus();
   }
 
   if (action === "retrieve-current-location-web") {
@@ -272,13 +280,13 @@ function handleCustomActions(action, response) {
       KDF.showWidget("ahtm_current_location_error");
       // $("#current-location-error").val("Your location is outside of the Sheffield City Council area");
     } else {
-      KDF.setWidgetNotRequired("txt_search_property_" + pageID);
-      KDF.setVal("txt_addressnumber_" + pageID, val.number);
-      KDF.setVal("txt_addressline1_" + pageID, val.streetName);
-      KDF.setVal("txt_town_" + pageID, val.city);
-      KDF.setVal("txt_postcode_" + pageID, val.postcode);
+      KDF.setWidgetNotRequired(`txt_search_property_${pageID}`);
+      KDF.setVal(`txt_addressnumber_${pageID}`, val.number);
+      KDF.setVal(`txt_addressline1_${pageID}`, val.streetName);
+      KDF.setVal(`txt_town_${pageID}`, val.city);
+      KDF.setVal(`txt_postcode_${pageID}`, val.postcode);
       KDF.setVal(
-        "txt_fulladdress_" + pageID,
+        `txt_fulladdress_${pageID}`,
         val.number +
           " " +
           val.streetName +
@@ -297,27 +305,24 @@ function handleCustomActions(action, response) {
           ", " +
           val.postcode
       );
-      KDF.setVal("txt_streetdescription" + pageID, val.streetName);
-      KDF.setVal("txt_usrn_" + pageID, val.usrn);
+      KDF.setVal(`txt_streetdescription${pageID}`, val.streetName);
+      KDF.setVal(`txt_usrn_${pageID}`, val.usrn);
       KDF.setVal("txt_usrn", val.usrn);
-      KDF.setVal("txt_streetid_" + pageID, val.streetID);
+      KDF.setVal(`txt_streetid_${pageID}`, val.streetID);
       KDF.setVal("txt_streetid", val.streetID);
       KDF.setVal("site_name", val.streetName);
       KDF.setVal("site_code", val.usrn);
       KDF.setVal("longitude_x", val.xLongitude);
       KDF.setVal("latitude_y", val.yLatitude);
-      KDF.hideWidget("ahtm_address_table_" + pageID);
-      KDF.hideWidget("ahtm_label_for_tab_property_search_result_" + pageID);
-      KDF.hideWidget("tab_property_search_result_" + pageID);
-      KDF.showSection("area_address_selected_" + pageID);
-      KDF.showSection("area_lacation_description_" + pageID);
+      KDF.showWidget(`ahtm_fulladdress_${pageID}`);
+      KDF.hideWidget(`sel_property_search_result_${pageID}`);
+      KDF.showSection(`area_address_selected_${pageID}`);
+      KDF.showSection(`area_lacation_description_${pageID}`);
     }
   }
 
   if (action === "kdf-save-web") {
-    //Do nothing
-  } else if (action === "kdf-save-web") {
-    //Do nothing
+    KDF.save();
   } else if (action === "kdf-save-custom") {
     //Do nothing
   } else {
@@ -659,31 +664,24 @@ function handleAddressSearchFunctionality(event, kdf) {
     }
   );
 
-  $("#dform_widget_address_search_result").change(function () {
-    // Achive fine_address and this can be removed
-    KDF.custom(
-      "web_retrieve_address",
-      "_widget_address_search_result",
-      "address_search_result",
-      "address_search_result",
-      true,
-      true,
-      true
-    );
-  });
-
-  $("#dform_widget_address_search_result_another").change(function () {
-    // Achive fine_address and this can be removed
-    KDF.custom(
-      "web_retrieve_address_another",
-      "_widget_address_search_result_another",
-      "address_search_result_another",
-      "address_search_result_another",
-      true,
-      true,
-      true
-    );
-  });
+  $(`#dform_widget_sel_property_search_result_${pageID}`).on(
+    "click keyup",
+    function (e) {
+      if (e.type === "keyup" && e.keyCode !== 13) {
+        return;
+      } else {
+        resetErrorMessage(
+          this.name.substring(0, this.name.length - 2),
+          "Enter your postcode in the correct format"
+        );
+        if (this.value) {
+          KDF.customdata("retrieve-address-web", this.id, true, true, {
+            search_property: this.value,
+          });
+        }
+      }
+    }
+  );
 
   $(".search-postcode").keydown(function (e) {
     resetErrorMessage(
