@@ -2106,3 +2106,75 @@ p.privacy-notice {
 .dform_widget_ahtm_fulladdress {
   max-width: 700px;
 }
+
+/* --- DATE OF BIRTH --- */
+
+#dform_container .container-date {
+  position: reletive;
+  width: 100%;
+}
+
+#dform_container .date-field {
+  position: reletive;
+  max-width: 277px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+#dform_container .date-field .helptext,
+#dform_container .date-field .dform_validationMessage {
+  position: reletive;
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 21.5rem) {
+  #dform_container .date-field .helptext,
+  #dform_container .date-field .dform_validationMessage {
+    width: 120%;
+  }
+}
+
+@media (min-width: 24.7rem) {
+  #dform_container .date-field .helptext,
+  #dform_container .date-field .dform_validationMessage {
+    width: 200%;
+  }
+}
+
+#dform_container .date-input-fields {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.date-input-fields div:not(:last-child) {
+  margin-right: auto;
+}
+
+#dform_container .date-dd,
+#dform_container .date-mm,
+#dform_container .date-yy {
+  position: reletive;
+  width: 65px;
+  font-size: inherit;
+  text-align: center;
+}
+
+#dform_container .date-yy {
+  width: 107px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
