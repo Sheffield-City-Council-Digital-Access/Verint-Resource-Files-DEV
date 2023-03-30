@@ -1262,6 +1262,38 @@ textarea::placeholder {
 
 /* Finish: Find address */
 
+/* Start: Select address */
+#dform_container .container.address-selector select,
+#dform_container .container.address-selector.dform_widget_type_select {
+  position: relative;
+  padding: 0;
+  height: 100%;
+  max-height: 200px;
+  width: 100%;
+  max-width: 700px;
+}
+
+#dform_container .container.address-selector option {
+  position: reletive;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  height: 44px;
+}
+
+#dform_container .container.address-selector option:not(:last-child) {
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#dform_container .container.address-selector select option:focus,
+#dform_container .container.address-selector select option:hover,
+#dform_container .container.address-selector select option:checked {
+  background-color: #007c53;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* Finish: Select address */
+
 /* Start: Enter address manually*/
 #dform_container .container .box-address-locator .bset-manual-address {
   order: 2;
@@ -1300,7 +1332,7 @@ textarea::placeholder {
 /* Finish: Enter address manually */
 
 /* Start: Retrieve address */
-#dform_container .container .address-list-label {
+/* #dform_container .container .address-list-label {
   margin-bottom: 0px;
 }
 
@@ -1337,7 +1369,7 @@ textarea::placeholder {
 #dform_container .container .dform_tr:hover .dform_td {
   background-color: #007c53;
   color: white;
-}
+} */
 /* Finish: Retrieve address */
 
 /* Start: Address selected */
