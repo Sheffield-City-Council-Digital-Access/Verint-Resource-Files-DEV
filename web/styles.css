@@ -1905,6 +1905,12 @@ p.privacy-notice {
   -webkit-box-shadow: none;
 }
 
+#dform_container #dform_widget_gis_map.dform_fielderror {
+  border: 2px solid #db0000;
+  box-shadow: inset 0 0 0 1px #db0000;
+  outline: none;
+}
+
 #dform_container .container .mapLocation {
   padding: 0;
   border: none;

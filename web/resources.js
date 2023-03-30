@@ -965,6 +965,25 @@ function handleAddressSearchFunctionality(event, kdf) {
         });
     }
 
+    function displayErrorMessageMap(errorMessage, display) {
+      $("#dform_widget_gis_map")
+        .find(".dform_validationMessage")
+        .html(errorMessage);
+      $("#dform_widget_gis_map").find(".dform_validationMessage").css({
+        display: display,
+      });
+      hideFieldErrorMap("gis_map");
+    }
+
+    function hideFieldErrorMap(errorMessage, display) {
+      $("#dform_widget_gis_map")
+        .find(".dform_validationMessage")
+        .html(errorMessage);
+      $("#dform_widget_gis_map").find(".dform_validationMessage").css({
+        display: display,
+      });
+    }
+
     var defaultErrorMessage = "Enter your postcode in the correct format";
     hideFieldError(defaultErrorMessage, "none");
     var postcodeSearchValue = $(
@@ -979,12 +998,10 @@ function handleAddressSearchFunctionality(event, kdf) {
       "#dform_table_tab_property_search_result_" + pageID
     ).is(":visible");
     if (KDF.getVal("locator_page_about_the_location") === "Map") {
-      var defaultErrorMessage =
-        "Enter a postcode or street name in the correct format";
       if (KDF.getVal("longitude_x") === "" || KDF.getVal("latitude_y") === "") {
-        displayErrorMessage("Select a location on the public highway", "block");
-        $("#dform_widget_txt_search_property_" + pageID).removeClass(
-          "dform_fielderror"
+        displayErrorMessageMap(
+          "Select a location on the public highway",
+          "block"
         );
       } else {
         progressAction(action);
