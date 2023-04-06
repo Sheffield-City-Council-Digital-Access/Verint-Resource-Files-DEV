@@ -879,9 +879,11 @@ function postcodeslice() {
 //Start: Set Channel Type
 
 function setChannelType() {
-  if (KDF.getVal("txt_agentteam") === "07000000004") {
+  if (KDF.getVal("07000000003")) {
     if (
       [
+        "Howden House Firstpoint",
+        "The Sheffield Property Shop",
         "Burngreave",
         "Burngreave - Telephone",
         "Crystal Peaks",
@@ -916,6 +918,8 @@ function setChannelType() {
   } else if (KDF.getVal("txt_agentteam") === "07000000000") {
     if (
       [
+        "Howden House Firstpoint",
+        "The Sheffield Property Shop",
         "Burngreave",
         "Burngreave - Telephone",
         "Crystal Peaks",
@@ -947,7 +951,11 @@ function setChannelType() {
     } else {
       KDF.setVal("le_channel", "voice_in");
     }
-  } else if (KDF.getVal("txt_agentteam") === "07000000002") {
+  } else if (
+    KDF.getVal("txt_agentteam") === "07000000004" ||
+    KDF.getVal("txt_agentteam") === "070000000011" ||
+    KDF.getVal("txt_agentteam") === "07000000012"
+  ) {
     KDF.setVal("le_channel", "email_in");
   } else if (KDF.getVal("txt_agentteam") === "07000000001") {
     KDF.setVal("le_channel", "face_to_face");
@@ -1777,3 +1785,15 @@ function customerparamsfunction() {
 //Finish: Customer Params
 
 //Finish: Params
+
+function capitalisation(id, value) {
+  return;
+  // const string = capitalizeString(value);
+  // const inputField = document.querySelector("#" + id);
+  // inputField.value = string;
+}
+
+const capitalizeString = (str) => {
+  str = str.toLowerCase();
+  return str.replace(/\b\w/g, (match) => match.toUpperCase());
+};

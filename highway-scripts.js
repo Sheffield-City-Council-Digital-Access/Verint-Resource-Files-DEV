@@ -56,9 +56,9 @@ function submitFormHighways() {
     }
 
     if (
-      KDF.getVal("txt_agentteam") === "backoffice@crm.com" ||
-      KDF.getVal("txt_agentteam") === "firstpoint@crm.com" ||
-      KDF.getVal("txt_agentteam") === "admin@crm.com"
+      KDF.getVal("txt_agentteam") === "07000000004" ||
+      KDF.getVal("txt_agentteam") === "07000000001" ||
+      KDF.getVal("txt_agentteam") === "07000000000"
     ) {
       KDF.setVal("txt_channel", "EMAI");
       KDF.setVal("txt_receivedby", "CSC");
@@ -317,17 +317,6 @@ function setBriefDetails() {
     }
 }
 
-function capitalisation(id, value) {
-  const string = capitalizeString(value);
-  const inputField = document.querySelector("#" + id);
-  inputField.value = string;
-}
-
-function capitalizeString(str) {
-  str = str.toLowerCase();
-  return str.replace(/\b\w/g, (match) => match.toUpperCase());
-}
-
 function searchObjectType(le_object_type) {
   KDF.setVal("le_object_type", le_object_type);
 
@@ -568,7 +557,14 @@ function updateObject() {
 
   if (
     KDF.getVal("txt_personpin") !== "" &&
-    KDF.getVal("txt_agentteam") === "housing@crm.com"
+    (KDF.getVal("txt_agentteam").toLowerCase() === "07000000000" ||
+      KDF.getVal("txt_agentteam").toLowerCase() === "07000000001" ||
+      KDF.getVal("txt_agentteam").toLowerCase() === "07000000002" ||
+      KDF.getVal("txt_agentteam").toLowerCase() === "07000000003" ||
+      KDF.getVal("txt_agentteam").toLowerCase() === "07000000004" ||
+      KDF.getVal("txt_agentteam").toLowerCase() === "07000000007" ||
+      KDF.getVal("txt_agentteam").toLowerCase() === "07000000011" ||
+      KDF.getVal("txt_agentteam").toLowerCase() === "07000000012")
   ) {
     $(".housingHubScrean").show();
     $(".updateRecord").hide();
@@ -602,20 +598,7 @@ function updateObject() {
 
     KDF.setVal("ahtm_HUBpersonnotes", ifrm2);
   } else {
-    if (
-      $(location).attr("hostname").substring(6, 8) === "de" &&
-      KDF.getVal("txt_customerid") === "101000612659"
-    ) {
-      $(".anonymousRecord").show();
-    } else if (
-      $(location).attr("hostname").substring(6, 8) === "qa" &&
-      KDF.getVal("txt_customerid") === "101000000791"
-    ) {
-      $(".anonymousRecord").show();
-    } else if (
-      $(location).attr("hostname").substring(6, 8) === "sh" &&
-      KDF.getVal("txt_customerid") === "101001971935"
-    ) {
+    if (KDF.getVal("txt_customerid") === "101001971935") {
       $(".anonymousRecord").show();
     } else {
       $(".housingHubScrean").hide();
@@ -803,7 +786,7 @@ function showWarningMessages() {
 }
 
 function showFaxingInfomration() {
-  if (KDF.getVal("txt_agentteam") === "housing@crm.com") {
+  if (KDF.getVal("txt_agentteam") === "07000000003") {
     KDF.showSection("area_ahtmcallingtransfer");
   } else {
     KDF.hideSection("area_ahtmcallingtransfer");
@@ -943,78 +926,6 @@ function showHistoryButtons() {
   }
   if (KDF.getVal("txt_streetid") === "") {
     KDF.hideWidget("but_history_switch_to_street");
-  }
-}
-
-function setChannelType() {
-  if (
-    [
-      "housing@crm.com",
-      "housingsolutionsgeneric@sheffield.gov.uk",
-      "neighbourhoods+burngreave&shiregreen@sheffield.gov.uk",
-      "neighbouhood+city&west@sheffield.gov.uk",
-      "neighbourhoods+east@sheffield.gov.uk",
-      "neighbourhoods+firthppark&southey@sheffield.gov.uk",
-      "neighbourhoods+north@sheffield.gov.uk",
-      "salaih.zahir@sheffield.gov.uk",
-      "homesarease@sheffield.gov.uk",
-      "hrmcustomerservices@sheffield.gov.uk",
-    ].includes(KDF.getVal("txt_agentteam"))
-  ) {
-    if (
-      [
-        "Burngreave",
-        "Crystal Peaks",
-        "Darnall",
-        "Firth Park",
-        "Chapeltown",
-        "Hillsborough",
-        "Howden House Firstpoint",
-        "Manor Library",
-        "Jordanthorpe",
-        "Low Edges",
-        "Newfield Green",
-        "Stocksbridge",
-        "Wordsworth Avenue",
-        "The Sheffield Property Shop",
-      ].includes(KDF.getVal("txt_agentlocation"))
-    ) {
-      KDF.setVal("le_channel", "face_to_face");
-    } else {
-      KDF.setVal("le_channel", "voice_in");
-    }
-  } else if (
-    KDF.getVal("txt_agentteam") === "admin@crm.com" ||
-    KDF.getVal("txt_agentteam") === "utt@sheffield.gov.uk"
-  ) {
-    if (
-      [
-        "Burngreave",
-        "Crystal Peaks",
-        "Darnall",
-        "Firth Park",
-        "Chapeltown",
-        "Hillsborough",
-        "Howden House Firstpoint",
-        "Manor Library",
-        "Jordanthorpe",
-        "Low Edges",
-        "Newfield Green",
-        "Stocksbridge",
-        "Wordsworth Avenue",
-        "The Sheffield Property Shop",
-      ].includes(KDF.getVal("txt_agentlocation"))
-    ) {
-      KDF.setVal("le_channel", "face_to_face");
-    } else {
-      KDF.setVal("le_channel", "voice_in");
-    }
-  } else if (KDF.getVal("txt_agentteam") === "backoffice@crm.com") {
-    KDF.setVal("le_channel", "email_in");
-  } else if (KDF.getVal("txt_agentteam") === "firstpoint@crm.com") {
-    KDF.setVal("le_channel", "face_to_face");
-  } else {
-    KDF.setVal("le_channel", "voice_in");
   }
 }
 
@@ -1412,7 +1323,7 @@ function customAction(action, response) {
           "ahtm_property_clickcomment",
           '<h3 id="NoProperty">Property not found, type it in manually and contact the admin team so they can update the property database.</h3>'
         );
-        if (KDF.getVal("txt_agentteam") !== "housing@crm.com") {
+        if (KDF.getVal("txt_agentteam") !== "07000000003") {
           KDF.showSection("area_property_not_found");
         }
       }
@@ -1420,7 +1331,7 @@ function customAction(action, response) {
     } else {
       KDF.showSection("area_property_searchresults");
       if (propclick >= 2) {
-        if (KDF.getVal("txt_agentteam") !== "housing@crm.com") {
+        if (KDF.getVal("txt_agentteam") !== "07000000003") {
           KDF.showSection("area_property_not_found");
         }
       }
@@ -1488,7 +1399,7 @@ var mapParams = {
     radiusUnit: "esriMeters",
   }, //default query circle geometry properties
   hostUrl: "https://" + $(location).attr("hostname"),
-  //hostUrl: "https://forms-sheffieldcc.squiz.cloud"
+  //hostUrl: "https://forms-dev-sheffield.squiz.cloud"
 };
 
 var featureLayers = {
@@ -2517,23 +2428,53 @@ function vegetationFeatureSetHandler(marker, featureSet) {
     KDF.setVal("object_id", attributes["objectid"]);
     KDF.setVal("longitude_x", marker.geometry.x);
     KDF.setVal("latitude_y", marker.geometry.y);
-    KDF.setVal("asset_type", attributes["featuretypename"]);
-    KDF.setVal("asset_type_id", attributes["featureid"]);
-    KDF.setVal("central_asset_id", attributes["centralassetid"]);
-    KDF.setVal("asset_responsibility", attributes["responsibility"]);
-    KDF.setVal("site_name", attributes["sitename"]);
-    KDF.setVal("txt_streetdescription", attributes["sitename"]);
-    KDF.setVal("site_code", attributes["sitecode"]);
-    KDF.setVal("txt_usrn", attributes["sitecode"]);
+    KDF.setVal(
+      "asset_type",
+      attributes[
+        "sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_name"
+      ]
+    );
+    KDF.setVal(
+      "asset_type_id",
+      attributes[
+        "sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_code"
+      ]
+    );
+    KDF.setVal(
+      "central_asset_id",
+      attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.centralassetid"]
+    );
+    KDF.setVal(
+      "asset_responsibility",
+      attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"]
+    );
+    KDF.setVal(
+      "site_name",
+      attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.site_name"]
+    );
+    KDF.setVal(
+      "txt_streetdescription",
+      attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.site_name"]
+    );
+    KDF.setVal(
+      "site_code",
+      attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"]
+    );
+    KDF.setVal(
+      "txt_usrn",
+      attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"]
+    );
     vmap.setInfoWindow({
       xcoord: marker.geometry.x,
       ycoord: marker.geometry.y,
       title: "Details",
       content:
         "<strong>Feature:</strong> " +
-        attributes["featuretypename"] +
+        attributes[
+          "sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_name"
+        ] +
         "<br/><strong>Site Name:</strong> " +
-        attributes["sitename"],
+        attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.site_name"],
     });
     queryCityCentre(marker);
   } else {
