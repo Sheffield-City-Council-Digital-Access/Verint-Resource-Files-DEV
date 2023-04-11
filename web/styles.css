@@ -157,6 +157,7 @@ nav.scc_az-links {
   text-align: center;
   margin: 0;
   padding: 0 1rem;
+  display: none;
 }
 
 nav h2 {
@@ -1608,7 +1609,6 @@ p.privacy-notice {
 
   footer.scc_footer nav.scc_az-links h2 a {
     font-size: 1.875rem;
-    display: none;
   }
 
   nav.scc_az-links {
