@@ -1272,7 +1272,7 @@ textarea::placeholder {
 #dform_container .container.address-selector.dform_widget_type_select {
   position: relative;
   padding: 0;
-  height: 100%;
+  height: max-content;
   max-height: 200px;
   width: 100%;
   max-width: 700px;
@@ -1612,6 +1612,7 @@ p.privacy-notice {
 
   nav.scc_az-links {
     margin: 0 auto 2rem;
+    display: none;
   }
 
   [class*="scc_icon-"]:before,
@@ -1832,6 +1833,10 @@ p.privacy-notice {
   footer.scc_footer nav.scc_az-links h2:focus,
   footer.scc_footer nav.scc_az-links h2 a:focus-visible {
     background: rgba(255, 255, 255, 0.2);
+  }
+
+  footer.scc_footer nav.scc_az-links ul li:hover,
+  footer.scc_footer nav.scc_az-links h2:hover {
     outline: none;
   }
 
@@ -1883,6 +1888,19 @@ p.privacy-notice {
 
   footer.scc_footer nav.scc_az-links ul {
     display: inline-flex;
+  }
+
+  .scc_logo a:focus,
+  .scc_logo a:focus-visible,
+  .scc_wrap a:focus,
+  .scc_wrap a:focus-visible,
+  .scc_h2 a:focus,
+  .scc_h2 a:focus-visible,
+  nav.scc_az-links:focus,
+  nav.scc_az-links:focus-visible,
+  .scc_row a:focus,
+  .scc_row a:focus-visible {
+    outline: #ffcc00 solid 4px;
   }
 }
 
