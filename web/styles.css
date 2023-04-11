@@ -1608,11 +1608,11 @@ p.privacy-notice {
 
   footer.scc_footer nav.scc_az-links h2 a {
     font-size: 1.875rem;
+    display: none;
   }
 
   nav.scc_az-links {
     margin: 0 auto 2rem;
-    display: none;
   }
 
   [class*="scc_icon-"]:before,
