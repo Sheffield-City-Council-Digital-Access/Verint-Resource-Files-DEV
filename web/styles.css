@@ -179,6 +179,7 @@ footer.scc_footer nav.scc_az-links ul {
   padding: 0;
   width: 1px;
   height: 1px;
+  display: none;
 }
 
 footer.scc_footer {
@@ -1891,8 +1892,8 @@ p.privacy-notice {
 
   .scc_logo a:focus,
   .scc_logo a:focus-visible,
-  .scc_wrap a:focus,
-  .scc_wrap a:focus-visible,
+  .scc_wrap > h2 > a:focus,
+  .scc_wrap > h2 > a:focus-visible,
   .scc_h2 a:focus,
   .scc_h2 a:focus-visible,
   nav.scc_az-links:focus,
