@@ -1346,9 +1346,7 @@ function submitForm() {
   // );
   // KDF.setVal("le_upload_file", "false");
   // saveForm("false");
-}
 
-const submitForm = () => {
   const activePage = $('.dform_page[data-active="true"]');
 
   const textFields = activePage.find(
@@ -1421,7 +1419,7 @@ const submitForm = () => {
     true,
     true
   );
-};
+}
 
 function submitFormCustom() {
   // var textFields = $('.dform_page[data-active="true"]').find(
