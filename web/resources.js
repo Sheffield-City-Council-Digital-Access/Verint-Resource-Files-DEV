@@ -609,11 +609,24 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
     }
   }
   // check all fields other than radio/checkboxes
-  otherFields.each(function () {
-    if (this.value) {
+  // otherFields.each(function () {
+  //   if (this.value) {
+  //     // if value exists, remove whitespace and check other characters are entered
+  //     var whitespaceRemoved = $(this).val().replace(/\s/g, "");
+  //     var fieldValueLength = whitespaceRemoved.length;
+  //     if (fieldValueLength === 0) {
+  //       allOtherFieldsFilled = false;
+  //     }
+  //   } else {
+  //     // if no value, button disabled
+  //     allOtherFieldsFilled = false;
+  //   }
+  // });
+  otherFields.each((index, field) => {
+    if (field.value) {
       // if value exists, remove whitespace and check other characters are entered
-      var whitespaceRemoved = $(this).val().replace(/\s/g, "");
-      var fieldValueLength = whitespaceRemoved.length;
+      const whitespaceRemoved = $(field).val().replace(/\s/g, "");
+      const fieldValueLength = whitespaceRemoved.length;
       if (fieldValueLength === 0) {
         allOtherFieldsFilled = false;
       }
