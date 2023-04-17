@@ -6,8 +6,8 @@
 }
 
 ::selection {
-  background-color: #007c53;
-  color: #ffffff;
+  background-color: #ffcc00;
+  color: #000000;
 }
 
 @font-face {
@@ -364,6 +364,19 @@ footer.scc_footer div.scc_row div:last-child {
   color: #ffffff;
   margin: -2px 0 3px 0;
   font-size: 15px;
+}
+
+.scc_logo a:focus,
+.scc_logo a:focus-visible,
+.scc_wrap > h2 > a:focus,
+.scc_wrap > h2 > a:focus-visible,
+.scc_h2 a:focus,
+.scc_h2 a:focus-visible,
+nav.scc_az-links:focus,
+nav.scc_az-links:focus-visible,
+.scc_row a:focus,
+.scc_row a:focus-visible {
+  outline: #ffcc00 solid 4px;
 }
 
 /*Overwrite media queries causing overlapping white container background */
