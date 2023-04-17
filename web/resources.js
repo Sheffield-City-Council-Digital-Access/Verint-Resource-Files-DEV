@@ -774,7 +774,7 @@ function handleAddressSearchFunctionality(event, kdf) {
       "Enter your postcode in the correct format"
     );
     if (e.keyCode == 13) {
-      $("#dform_widget_button_but_find_property_" + pageID).click();
+      $(`#dform_widget_button_but_find_property_${pageID}`).click();
     }
   });
 
@@ -784,16 +784,16 @@ function handleAddressSearchFunctionality(event, kdf) {
       "Enter your postcode or streetname in the correct format"
     );
     if (e.keyCode == 13) {
-      $("#dform_widget_button_but_find_property_" + pageID).click();
+      $(`#dform_widget_button_but_find_property_${pageID}`).click();
     }
   });
 
   $(".find-address").click(function () {
-    KDF.hideWidget("ahtm_address_search_result_error_" + pageID);
+    KDF.hideWidget(`ahtm_address_search_result_error_${pageID}`);
     KDF.hideWidget("ahtm_current_location_error");
     KDF.hideSection("area_gis_map");
-    KDF.setWidgetRequired("txt_search_property_" + pageID);
-    KDF.setVal("locator_" + pageID, "Address");
+    KDF.setWidgetRequired(`txt_search_property_${pageID}`);
+    KDF.setVal(`locator_${pageID}`, "Address");
     if (pageID === "page_about_you") {
       KDF.hideWidget("txt_cusaddressnumber");
       KDF.setVal("txt_cusaddressnumber", "");
@@ -821,20 +821,20 @@ function handleAddressSearchFunctionality(event, kdf) {
       KDF.hideWidget("txt_cusuprn_another");
       KDF.setVal("txt_cusuprn_another", "");
     } else {
-      KDF.hideWidget("txt_addressnumber_" + pageID);
-      KDF.setVal("txt_addressnumber_" + pageID, "");
-      KDF.hideWidget("txt_addressline1_" + pageID);
-      KDF.setVal("txt_addressline1_" + pageID, "");
-      KDF.hideWidget("txt_town_" + pageID);
-      KDF.setVal("txt_town_" + pageID, "");
-      KDF.hideWidget("txt_postcode_" + pageID);
-      KDF.setVal("txt_postcode_" + pageID, "");
-      KDF.setVal("txt_fulladdress_" + pageID, "");
-      KDF.setVal("txt_postcodearea_" + pageID, "");
-      KDF.setVal("txt_uprn_" + pageID, "");
-      KDF.setVal("txt_propertyid_" + pageID, "");
-      KDF.setVal("txt_usrn_" + pageID, "");
-      KDF.setVal("txt_streetid_" + pageID, "");
+      KDF.hideWidget(`txt_addressnumber_${pageID}`);
+      KDF.setVal(`txt_addressnumber_${pageID}`, "");
+      KDF.hideWidget(`txt_addressline1_${pageID}`);
+      KDF.setVal(`txt_addressline1_${pageID}`, "");
+      KDF.hideWidget(`txt_town_${pageID}`);
+      KDF.setVal(`txt_town_${pageID}`, "");
+      KDF.hideWidget(`txt_postcode_${pageID}`);
+      KDF.setVal(`txt_postcode_${pageID}`, "");
+      KDF.setVal(`txt_fulladdress_${pageID}`, "");
+      KDF.setVal(`txt_postcodearea_${pageID}`, "");
+      KDF.setVal(`txt_uprn_${pageID}`, "");
+      KDF.setVal(`txt_propertyid_${pageID}`, "");
+      KDF.setVal(`txt_usrn_${pageID}`, "");
+      KDF.setVal(`txt_streetid_${pageID}`, "");
       if (pageID === "page_about_the_location") {
         KDF.setVal("lnglat", "");
         KDF.setVal("txt_fulladdress", "");
@@ -856,22 +856,23 @@ function handleAddressSearchFunctionality(event, kdf) {
         KDF.setVal("txt_prestige", "");
       }
     }
-    KDF.hideWidget("ahtm_address_search_result_error_" + pageID);
-    KDF.hideWidget("ahtm_address_table_" + pageID);
-    KDF.hideSection("area_address_selected_" + pageID);
-    KDF.hideWidget("ahtm_fulladdress_" + pageID);
-    KDF.hideSection("area_lacation_description_" + pageID);
-    var fieldID = "txt_search_property_" + pageID;
+    KDF.hideWidget(`ahtm_address_search_result_error_${pageID}`);
+    KDF.hideWidget(`ahtm_address_table_${pageID}`);
+    KDF.hideSection(`area_address_selected_${pageID}`);
+    KDF.hideWidget(`ahtm_fulladdress_${pageID}`);
+    KDF.hideSection(`area_lacation_description_${pageID}`);
+    var fieldID = `txt_search_property_${pageID}`;
     var fieldValue = KDF.getVal(fieldID);
     resetErrorMessage(fieldID, "Enter your postcode in the correct format");
-    var tableOfResults = document
-      .getElementById("dform_table_tab_property_search_result_" + pageID)
-      .getElementsByTagName("div");
+    var tableOfResults = document.getElementById(
+      `dform_table_tab_property_search_result_${pageID}`
+    );
+    // .getElementsByTagName("div");
     $(tableOfResults).remove();
     if (fieldValue) {
       KDF.customdata("search-address-web", this.id, true, true, {
         search_property: fieldValue,
-        search_town: KDF.getVal("txt_limit_address_" + pageID),
+        search_town: KDF.getVal(`txt_limit_address_${pageID}`),
       });
     } else {
       resetErrorMessage(fieldID, "Enter your postcode in the correct format");
@@ -881,7 +882,7 @@ function handleAddressSearchFunctionality(event, kdf) {
 
   $(".manual-address").click(function () {
     resetErrorMessage(
-      "txt_search_property_" + pageID,
+      `txt_search_property_${pageID}`,
       "Enter your postcode in the correct format"
     );
     enterAddressManually();
@@ -897,11 +898,11 @@ function handleAddressSearchFunctionality(event, kdf) {
     getLocation();
     KDF.hideWidget("ahtm_current_location_error");
     KDF.hideSection("area_gis_map");
-    KDF.hideWidget("ahtm_label_for_tab_property_search_result_" + pageID);
-    KDF.hideWidget("tab_property_search_result_" + pageID);
-    KDF.hideWidget("ahtm_fulladdress_" + pageID);
+    KDF.hideWidget(`ahtm_label_for_tab_property_search_result_${pageID}`);
+    KDF.hideWidget(`tab_property_search_result_${pageID}`);
+    KDF.hideWidget(`ahtm_fulladdress_${pageID}`);
     resetErrorMessage(
-      "txt_search_property_" + pageID,
+      `txt_search_property_${pageID}`,
       "Enter a postcode or street name in the correct format"
     );
   });
@@ -909,11 +910,11 @@ function handleAddressSearchFunctionality(event, kdf) {
   $("#dform_widget_button_but_use_map_location").click(function () {
     setLocator("Map");
     KDF.hideWidget("ahtm_current_location_error");
-    KDF.hideWidget("ahtm_label_for_tab_property_search_result_" + pageID);
-    KDF.hideWidget("tab_property_search_result_" + pageID);
-    KDF.hideWidget("ahtm_fulladdress_" + pageID);
+    KDF.hideWidget(`ahtm_label_for_tab_property_search_result_${pageID}`);
+    KDF.hideWidget(`tab_property_search_result_${pageID}`);
+    KDF.hideWidget(`ahtm_fulladdress_${pageID}`);
     resetErrorMessage(
-      "txt_search_property_" + pageID,
+      `txt_search_property_${pageID}`,
       "Enter a postcode or street name in the correct format"
     );
   });
@@ -932,7 +933,7 @@ function handleAddressSearchFunctionality(event, kdf) {
 
   $(".manual-postcode").keyup(function () {
     resetErrorMessage(
-      "txt_search_property_" + pageID,
+      `txt_search_property_${pageID}`,
       "Enter your postcode in the correct format"
     );
   });
