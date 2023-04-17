@@ -610,7 +610,6 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   }
   // check all fields other than radio/checkboxes
   otherFields.each(function () {
-    console.log(this, this.id, this.value);
     if (this.value) {
       // if value exists, remove whitespace and check other characters are entered
       var whitespaceRemoved = $(this).val().replace(/\s/g, "");
@@ -1189,7 +1188,6 @@ function handleAddressSearchFunctionality(event, kdf) {
         KDF.setVal("txt_dob", "");
         submitForm();
       } else {
-        console.log("Next");
         KDF.gotoNextPage();
       }
     }
