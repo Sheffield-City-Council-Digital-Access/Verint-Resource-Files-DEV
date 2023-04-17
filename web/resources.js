@@ -194,69 +194,19 @@ function handleCustomActions(action, response) {
 
   let val = response.data;
 
-  // if (action === "search-address-web") {
-  //   if (val.property_search_result.length > 0) {
-  //     let property_search_results = val.property_search_result;
-  //     let updated_results = [];
-  //     $.each(property_search_results, function (index, result) {
-  //       let label_parts = result.label.split(",");
-  //       let updated_label = label_parts[0]
-  //         .trim()
-  //         .replace(/\b\w+/g, function (txt) {
-  //           return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-  //         });
-  //       if (updated_label !== "") {
-  //         result.label = `${updated_label}, ${label_parts
-  //           .slice(1)
-  //           .join(",")
-  //           .trim()}`;
-  //         updated_results.push(result);
-  //       }
-  //     });
-  //     const data = updated_results;
-  //     data.sort(function (a, b) {
-  //       let aLabel = parseInt(a.label.split(" ")[0]);
-  //       let bLabel = parseInt(b.label.split(" ")[0]);
-  //       return aLabel - bLabel;
-  //     });
-  //     property_search_results = data;
-  //     KDF.setVal(
-  //       `sel_property_search_result_${pageID}`,
-  //       property_search_results
-  //     );
-  //     $(
-  //       `#dform_widget_sel_property_search_result_${pageID} option:eq(0)`
-  //     ).remove();
-  //     KDF.showWidget(`sel_property_search_result_${pageID}`);
-  //     KDF.showSection(`area_address_selected_${pageID}`);
-  //     $(`#dform_widget_sel_property_search_result_${pageID}`).focus();
-  //   } else {
-  //     displayErrorMessage(
-  //       `txt_search_property_${pageID}`,
-  //       "Enter a valid postcode/street name within the Sheffield City Council area",
-  //       "block"
-  //     );
-  //     if (KDF.getVal(`txt_manual_address_${pageID}`) === "false") {
-  //       // do nothing
-  //     } else {
-  //       enterAddressManually();
-  //     }
-  //   }
-  // }
-  
   if (action === "search-address-web") {
     if (val.property_search_result.length > 0) {
       let property_search_results = val.property_search_result;
       let updated_results = [];
       $.each(property_search_results, function (index, result) {
-        let label_parts = result.col_property.split(",");
+        let label_parts = result.label.split(",");
         let updated_label = label_parts[0]
           .trim()
           .replace(/\b\w+/g, function (txt) {
             return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
           });
         if (updated_label !== "") {
-          result.col_property = `${updated_label}, ${label_parts
+          result.label = `${updated_label}, ${label_parts
             .slice(1)
             .join(",")
             .trim()}`;
@@ -265,8 +215,8 @@ function handleCustomActions(action, response) {
       });
       const data = updated_results;
       data.sort(function (a, b) {
-        let aLabel = parseInt(a.col_property.split(" ")[0]);
-        let bLabel = parseInt(b.col_property.split(" ")[0]);
+        let aLabel = parseInt(a.label.split(" ")[0]);
+        let bLabel = parseInt(b.label.split(" ")[0]);
         return aLabel - bLabel;
       });
       property_search_results = data;
@@ -294,7 +244,6 @@ function handleCustomActions(action, response) {
     }
   }
   
-
   if (action === "retrieve-address-web") {
     if (pageID === "page_about_you") {
       KDF.setVal("txt_cusaddressnumber", capitalizeString(val.address_number));
