@@ -1240,42 +1240,42 @@ function resetErrorMessage(field, defaultErrorMessage) {
 
 // Required for KDF.custom submission function/forms adapter field validation
 function submitForm() {
-  // var textFields = $('.dform_page[data-active="true"]').find('input[type="text"], textarea, select[name="txt_"]');
-  // var textFieldNames = "";
-  // $(textFields).each(function () {textFieldNames += $(this).prop("name") + ",";});
-  // var numberFields = $('.dform_page[data-active="true"]').find('input[type="number"], number, select[name="num_"]');
-  // var numberFieldNames = "";
-  // $(numberFields).each(function () {numberFieldNames += $(this).prop("name") + ",";});
-  // var numberFields = $('.dform_page[data-active="true"]').find('input[type="number"], number, select[name="cur_"]' );
-  // var numberFieldNames = "";
-  // $(numberFields).each(function () {numberFieldNames += $(this).prop("name") + ",";});
-  // var selectFields = $('.dform_page[data-active="true"]').find('input[type="select"], select, select[name="sel_"]');
-  // var selectFieldNames = "";
-  // $(selectFields).each(function () {selectFieldNames += $(this).prop("name") + ",";});
-  // var checkFields = $('.dform_page[data-active="true"]').find('input[type="checkField"], checkField, select[name="chk_"]');
-  // var checkFieldNames = "";
-  // $(checkFields).each(function () {checkFieldNames += $(this).prop("name") + ",";});
-  // var checkFields = $('.dform_page[data-active="true"]').find('input[type="checkField"], checkField, select[name="mchk_"]');
-  // var checkFieldNames = "";
-  // $(checkFields).each(function () {checkFieldNames += $(this).prop("name") + ",";});
-  // var radioFields = $('.dform_page[data-active="true"]').find('input[type="radio"], radio, select[name="rad_"]');
-  // var radioFieldNames = "";
-  // $(radioFields).each(function () {radioFieldNames += $(this).prop("name") + ",";});
-  // var emailFields = $('.dform_page[data-active="true"]').find('input[type="email"], email, select[name="eml_"]');
-  // var emailFieldNames = "";
-  // $(emailFields).each(function () {emailFieldNames += $(this).prop("name") + ",";});
-  // var telFields = $('.dform_page[data-active="true"]').find('input[type="tel"], tel, select[name="tel_"]');
-  // var telFieldNames = "";
-  // $(telFields).each(function () {telFieldNames += $(this).prop("name") + ",";});
-  // var dateFields = $('.dform_page[data-active="true"]').find('input[type="date"], date, select[name="dt_"]');
-  // var dateFieldNames = "";
-  // $(dateFields).each(function () {dateFieldNames += $(this).prop("name") + ",";});
-  // var timeFields = $('.dform_page[data-active="true"]').find('input[type="time"], time, select[name="time_"]');
-  // var timeFieldNames = "";
-  // $(timeFields).each(function () {timeFieldNames += $(this).prop("name") + ",";});
+  var textFields = $('.dform_page[data-active="true"]').find('input[type="text"], textarea, select[name="txt_"]');
+  var textFieldNames = "";
+  $(textFields).each(function () {textFieldNames += $(this).prop("name") + ",";});
+  var numberFields = $('.dform_page[data-active="true"]').find('input[type="number"], number, select[name="num_"]');
+  var numberFieldNames = "";
+  $(numberFields).each(function () {numberFieldNames += $(this).prop("name") + ",";});
+  var numberFields = $('.dform_page[data-active="true"]').find('input[type="number"], number, select[name="cur_"]' );
+  var numberFieldNames = "";
+  $(numberFields).each(function () {numberFieldNames += $(this).prop("name") + ",";});
+  var selectFields = $('.dform_page[data-active="true"]').find('input[type="select"], select, select[name="sel_"]');
+  var selectFieldNames = "";
+  $(selectFields).each(function () {selectFieldNames += $(this).prop("name") + ",";});
+  var checkFields = $('.dform_page[data-active="true"]').find('input[type="checkField"], checkField, select[name="chk_"]');
+  var checkFieldNames = "";
+  $(checkFields).each(function () {checkFieldNames += $(this).prop("name") + ",";});
+  var checkFields = $('.dform_page[data-active="true"]').find('input[type="checkField"], checkField, select[name="mchk_"]');
+  var checkFieldNames = "";
+  $(checkFields).each(function () {checkFieldNames += $(this).prop("name") + ",";});
+  var radioFields = $('.dform_page[data-active="true"]').find('input[type="radio"], radio, select[name="rad_"]');
+  var radioFieldNames = "";
+  $(radioFields).each(function () {radioFieldNames += $(this).prop("name") + ",";});
+  var emailFields = $('.dform_page[data-active="true"]').find('input[type="email"], email, select[name="eml_"]');
+  var emailFieldNames = "";
+  $(emailFields).each(function () {emailFieldNames += $(this).prop("name") + ",";});
+  var telFields = $('.dform_page[data-active="true"]').find('input[type="tel"], tel, select[name="tel_"]');
+  var telFieldNames = "";
+  $(telFields).each(function () {telFieldNames += $(this).prop("name") + ",";});
+  var dateFields = $('.dform_page[data-active="true"]').find('input[type="date"], date, select[name="dt_"]');
+  var dateFieldNames = "";
+  $(dateFields).each(function () {dateFieldNames += $(this).prop("name") + ",";});
+  var timeFields = $('.dform_page[data-active="true"]').find('input[type="time"], time, select[name="time_"]');
+  var timeFieldNames = "";
+  $(timeFields).each(function () {timeFieldNames += $(this).prop("name") + ",";});
   // KDF.custom("kdf-save-web", "_submit_function",textFieldNames + numberFieldNames + selectFieldNames + checkFieldNames + radioFieldNames + emailFieldNames + telFieldNames + dateFieldNames + timeFieldNames + "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type", "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type", true, true, true);
-
-  KDF.custom("kdf-save-web", "_submit_function", "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle,txt_title,txt_firstname,txt_surname,txt_dob,dt_dob,txt_phone,txt_email,txt_cusaddressnumber,txt_cusaddressline1,txt_custown,txt_cuspostcode,txt_cusfulladdress,txt_cusuprn", "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle,txt_title,txt_firstname,txt_surname,txt_dob,dt_dob,txt_phone,txt_email", true, true, true);
+  console.log(textFieldNames, numberFieldNames, selectFieldNames, checkFieldNames, radioFieldNames, emailFieldNames, telFieldNames, dateFieldNames, timeFieldNames);
+  // KDF.custom("kdf-save-web", "_submit_function", "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle,txt_title,txt_firstname,txt_surname,txt_dob,dt_dob,txt_phone,txt_email,txt_cusaddressnumber,txt_cusaddressline1,txt_custown,txt_cuspostcode,txt_cusfulladdress,txt_cusuprn", "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle,txt_title,txt_firstname,txt_surname,txt_dob,dt_dob,txt_phone,txt_email", true, true, true);
 
   // saveForm("false");
 }
