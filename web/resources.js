@@ -626,10 +626,12 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
       allOtherFieldsFilled = false;
     } else {
       // if value exists, remove whitespace and check other characters are entered
-      var whitespaceRemoved = $(this).val().replace(/\s/g, "");
-      var fieldValueLength = whitespaceRemoved.length;
-      if (fieldValueLength === 0) {
-        allOtherFieldsFilled = false;
+      if (this.value) {
+        var whitespaceRemoved = $(this).val().replace(/\s/g, "");
+        var fieldValueLength = whitespaceRemoved.length;
+        if (fieldValueLength === 0) {
+          allOtherFieldsFilled = false;
+        }
       }
     }
   });
