@@ -623,7 +623,7 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   //   }
   // });
   otherFields.each((index, field) => {
-    if (field.value) {
+    if ($(field).val()) {
       // if value exists, remove whitespace and check other characters are entered
       const whitespaceRemoved = $(field).val().replace(/\s/g, "");
       const fieldValueLength = whitespaceRemoved.length;
