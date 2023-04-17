@@ -1252,7 +1252,6 @@ function submitForm() {
   // var textFields = $('.dform_page[data-active="true"]').find(
   //   'input[type="text"], textarea, select[name="txt_"]'
   // );
-
   // var textFieldNames = "";
   // $(textFields).each(function () {
   //   textFieldNames += $(this).prop("name") + ",";
@@ -1260,7 +1259,6 @@ function submitForm() {
   // var numberFields = $('.dform_page[data-active="true"]').find(
   //   'input[type="number"], number, select[name="num_"]'
   // );
-
   // var numberFieldNames = "";
   // $(numberFields).each(function () {
   //   numberFieldNames += $(this).prop("name") + ",";
@@ -1268,7 +1266,6 @@ function submitForm() {
   // var numberFields = $('.dform_page[data-active="true"]').find(
   //   'input[type="number"], number, select[name="cur_"]'
   // );
-
   // var numberFieldNames = "";
   // $(numberFields).each(function () {
   //   numberFieldNames += $(this).prop("name") + ",";
@@ -1276,7 +1273,6 @@ function submitForm() {
   // var selectFields = $('.dform_page[data-active="true"]').find(
   //   'input[type="select"], select, select[name="sel_"]'
   // );
-
   // var selectFieldNames = "";
   // $(selectFields).each(function () {
   //   selectFieldNames += $(this).prop("name") + ",";
@@ -1284,7 +1280,6 @@ function submitForm() {
   // var checkFields = $('.dform_page[data-active="true"]').find(
   //   'input[type="checkField"], checkField, select[name="chk_"]'
   // );
-
   // var checkFieldNames = "";
   // $(checkFields).each(function () {
   //   checkFieldNames += $(this).prop("name") + ",";
@@ -1292,7 +1287,6 @@ function submitForm() {
   // var checkFields = $('.dform_page[data-active="true"]').find(
   //   'input[type="checkField"], checkField, select[name="mchk_"]'
   // );
-
   // var checkFieldNames = "";
   // $(checkFields).each(function () {
   //   checkFieldNames += $(this).prop("name") + ",";
@@ -1300,7 +1294,6 @@ function submitForm() {
   // var radioFields = $('.dform_page[data-active="true"]').find(
   //   'input[type="radio"], radio, select[name="rad_"]'
   // );
-
   // var radioFieldNames = "";
   // $(radioFields).each(function () {
   //   radioFieldNames += $(this).prop("name") + ",";
@@ -1308,7 +1301,6 @@ function submitForm() {
   // var emailFields = $('.dform_page[data-active="true"]').find(
   //   'input[type="email"], email, select[name="eml_"]'
   // );
-
   // var emailFieldNames = "";
   // $(emailFields).each(function () {
   //   emailFieldNames += $(this).prop("name") + ",";
@@ -1316,7 +1308,6 @@ function submitForm() {
   // var telFields = $('.dform_page[data-active="true"]').find(
   //   'input[type="tel"], tel, select[name="tel_"]'
   // );
-
   // var telFieldNames = "";
   // $(telFields).each(function () {
   //   telFieldNames += $(this).prop("name") + ",";
@@ -1324,7 +1315,6 @@ function submitForm() {
   // var dateFields = $('.dform_page[data-active="true"]').find(
   //   'input[type="date"], date, select[name="dt_"]'
   // );
-
   // var dateFieldNames = "";
   // $(dateFields).each(function () {
   //   dateFieldNames += $(this).prop("name") + ",";
@@ -1332,7 +1322,6 @@ function submitForm() {
   // var timeFields = $('.dform_page[data-active="true"]').find(
   //   'input[type="time"], time, select[name="time_"]'
   // );
-
   // var timeFieldNames = "";
   // $(timeFields).each(function () {
   //   timeFieldNames += $(this).prop("name") + ",";
@@ -1355,31 +1344,84 @@ function submitForm() {
   //   true,
   //   true
   // );
-
   // KDF.setVal("le_upload_file", "false");
   // saveForm("false");
-
-  // Get a reference to the form
-  const form = document.querySelector("#dform_container");
-
-  // Filter on input types
-  const inputs = form.querySelectorAll(
-    "input, multicheckbox, select, textarea"
-  );
-
-  // Create an object to store the IDs and values
-  const formData = {};
-
-  // Loop through each field in the form
-  inputs.forEach((input) => {
-    // Add the ID and value to the object if they exist
-    if (input.value !== "" && input.value !== "Please select...") {
-      formData[input.name] = input.value;
-    }
-  });
-
-  KDF.customdata("kdf-save-web", "saveForm", true, true, formData);
 }
+
+const submitForm = () => {
+  const activePage = $('.dform_page[data-active="true"]');
+
+  const textFields = activePage.find(
+    'input[type="text"], textarea, select[name="txt_"]'
+  );
+  const textFieldNames = textFields.map((field) => field.name).join(",");
+
+  const numberFields = activePage.find(
+    'input[type="number"], number, select[name="num_"]'
+  );
+  const numberFieldNames = numberFields.map((field) => field.name).join(",");
+
+  const currencyFields = activePage.find(
+    'input[type="number"], number, select[name="cur_"]'
+  );
+  const currencyFieldNames = currencyFields
+    .map((field) => field.name)
+    .join(",");
+
+  const selectFields = activePage.find(
+    'input[type="select"], select, select[name="sel_"]'
+  );
+  const selectFieldNames = selectFields.map((field) => field.name).join(",");
+
+  const checkboxFields = activePage.find(
+    'input[type="checkbox"], checkbox, select[name="chk_"]'
+  );
+  const checkboxFieldNames = checkboxFields
+    .map((field) => field.name)
+    .join(",");
+
+  const multipleCheckboxFields = activePage.find(
+    'input[type="checkbox"], checkbox, select[name="mchk_"]'
+  );
+  const multipleCheckboxFieldNames = multipleCheckboxFields
+    .map((field) => field.name)
+    .join(",");
+
+  const radioFields = activePage.find(
+    'input[type="radio"], radio, select[name="rad_"]'
+  );
+  const radioFieldNames = radioFields.map((field) => field.name).join(",");
+
+  const emailFields = activePage.find(
+    'input[type="email"], email, select[name="eml_"]'
+  );
+  const emailFieldNames = emailFields.map((field) => field.name).join(",");
+
+  const telFields = activePage.find(
+    'input[type="tel"], tel, select[name="tel_"]'
+  );
+  const telFieldNames = telFields.map((field) => field.name).join(",");
+
+  const dateFields = activePage.find(
+    'input[type="date"], date, select[name="dt_"]'
+  );
+  const dateFieldNames = dateFields.map((field) => field.name).join(",");
+
+  const timeFields = activePage.find(
+    'input[type="time"], time, select[name="time_"]'
+  );
+  const timeFieldNames = timeFields.map((field) => field.name).join(",");
+
+  KDF.custom(
+    "kdf-save-web",
+    "_submit_function",
+    `${textFieldNames},${numberFieldNames},${currencyFieldNames},${selectFieldNames},${checkboxFieldNames},${multipleCheckboxFieldNames},${radioFieldNames},${emailFieldNames},${telFieldNames},${dateFieldNames},${timeFieldNames},le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type`,
+    "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type",
+    true,
+    true,
+    true
+  );
+};
 
 function submitFormCustom() {
   // var textFields = $('.dform_page[data-active="true"]').find(
