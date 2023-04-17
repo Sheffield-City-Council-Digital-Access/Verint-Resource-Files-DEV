@@ -1249,11 +1249,6 @@ function submitForm() {
   var numberFields = $('.dform_page[data-active="true"]').find('input[type="number"], number, select[name="cur_"]' );
   var numberFieldNames = "";
   $(numberFields).each(function () { numberFieldNames += $(this).prop("name") + ","; });
-  
-  // var selectFields = $('.dform_page[data-active="true"]').find('input[type="select"], select, select[name="sel_"]');
-  // var selectFieldNames = "";
-  // $(selectFields).each(function () { selectFieldNames += $(this).prop("name") + ","; });
-
   var selectFields = $('.dform_page[data-active="true"]').find('select[name^="sel_"]:not([name^="sel_property_search_result_"])');
   var selectFieldNames = "";
   $(selectFields).each(function () {selectFieldNames += $(this).prop("name") + ",";});
@@ -1278,10 +1273,7 @@ function submitForm() {
   var timeFields = $('.dform_page[data-active="true"]').find('input[type="time"], time, select[name="time_"]');
   var timeFieldNames = "";
   $(timeFields).each(function () { timeFieldNames += $(this).prop("name") + ","; });
-  console.log(textFieldNames, numberFieldNames, checkFieldNames, radioFieldNames, selectFieldNames, emailFieldNames, telFieldNames, dateFieldNames, timeFieldNames);
   KDF.custom("kdf-save-web", "_submit_function",textFieldNames + numberFieldNames + selectFieldNames + checkFieldNames + radioFieldNames + emailFieldNames + telFieldNames + dateFieldNames + timeFieldNames + "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type", "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type", true, true, true);
-  
-  // KDF.custom("kdf-save-web", "_submit_function", "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle,txt_title,txt_firstname,txt_surname,txt_dob,dt_dob,txt_phone,txt_email,txt_cusaddressnumber,txt_cusaddressline1,txt_custown,txt_cuspostcode,txt_cusfulladdress,txt_cusuprn", "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle,txt_title,txt_firstname,txt_surname,txt_dob,dt_dob,txt_phone,txt_email", true, true, true);
 
   // saveForm("false");
 }
@@ -1296,7 +1288,7 @@ function submitFormCustom() {
   var numberFields = $('.dform_page[data-active="true"]').find('input[type="number"], number, select[name="cur_"]' );
   var numberFieldNames = "";
   $(numberFields).each(function () {numberFieldNames += $(this).prop("name") + ",";});
-  var selectFields = $('.dform_page[data-active="true"]').find('input[type="select"], select, select[name="sel_"]');
+  var selectFields = $('.dform_page[data-active="true"]').find('select[name^="sel_"]:not([name^="sel_property_search_result_"])');
   var selectFieldNames = "";
   $(selectFields).each(function () {selectFieldNames += $(this).prop("name") + ",";});
   var checkFields = $('.dform_page[data-active="true"]').find('input[type="checkField"], checkField, select[name="chk_"]');
