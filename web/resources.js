@@ -638,16 +638,19 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   // check all fields other than radio/checkboxes
   otherFields.each(function () {
     console.log(this, this.id, this.value);
-    if (!$(this).val()) {
-      // if no value, button disabled
-      allOtherFieldsFilled = false;
-    } else {
+    // if (!$(this).val()) {
+    //   // if no value, button disabled
+    //   allOtherFieldsFilled = false;
+    // }
+    if (this.value) {
       // if value exists, remove whitespace and check other characters are entered
       var whitespaceRemoved = $(this).val().replace(/\s/g, "");
       var fieldValueLength = whitespaceRemoved.length;
       if (fieldValueLength === 0) {
         allOtherFieldsFilled = false;
       }
+    } else {
+      allOtherFieldsFilled = false;
     }
   });
   var currentPage = $('.dform_page[data-active="true"]:visible');
