@@ -15,6 +15,7 @@ function initiateReady(event, kdf, progressBar) {
       "aria-disabled",
       "true"
     );
+
     $("#dform_widget_button_but_use_map_location").attr("disabled", "disabled");
     KDF.showWidget("ahtm_map_unavailable_error");
   }
@@ -25,7 +26,7 @@ function initiateReady(event, kdf, progressBar) {
   handleAddressSearchFunctionality(event, kdf);
 
   if (arguments[2]) {
-    if (progressBar === true || progressBar.toLowerCase() === "progress bar") {
+    if (arguments[2].toLowerCase() === "progress bar") {
       addProgressBarHtml();
       setProgressBarWidthAndLabel();
     }
@@ -38,106 +39,6 @@ function initiateReady(event, kdf, progressBar) {
   $("#dform_widget_txt_dob_another").change(function () {
     convertDateToField("txt_dob_another", "txt_dob_another_1");
   });
-
-  $("#dform_widget_num_date_dd, #dform_widget_num_date_dd_another").on(
-    "keyup focusout",
-    function (e) {
-      const main = "dform_widget_num_date_dd";
-      const another = "dform_widget_num_date_dd_another";
-      if (e.type === "keyup") {
-        inputDate(
-          this.id,
-          `${
-            this.id === "dform_widget_num_date_dd_another"
-              ? "dform_widget_num_date_mm_another"
-              : "dform_widget_num_date_mm"
-          }`,
-          e.which
-        );
-      } else {
-        if (this.value) {
-          $(this).val($(this).val().padStart(2, "0"));
-        }
-      }
-    }
-  );
-
-  $("#dform_widget_num_date_mm, #dform_widget_num_date_mm_another").on(
-    "keyup focusout",
-    function (e) {
-      const another = `${
-        this.id === "dform_widget_num_date_mm_another" ? "_another" : ""
-      }`;
-      const dd = $(`#dform_widget_num_date_dd${another}`).val();
-      const yy = $(`#dform_widget_num_date_yy${another}`).val();
-      if (e.type === "keyup") {
-        inputDate(
-          this.id,
-          `${
-            this.id === "dform_widget_num_date_mm_another"
-              ? "dform_widget_num_date_yy_another"
-              : "dform_widget_num_date_yy"
-          }`,
-          e.which
-        );
-      } else {
-        if (this.value) {
-          $(this).val($(this).val().padStart(2, "0"));
-        } else {
-          if (dd === "")
-            $(`#dform_widget_num_date_dd${another}`).addClass(
-              "dform_fielderror"
-            );
-          if (yy === "")
-            $(`#dform_widget_num_date_yy${another}`).addClass(
-              "dform_fielderror"
-            );
-          $(`#dform_widget_date_field${another}`)
-            .find(".dform_validationMessage")
-            .text(
-              `Enter ${another === "_another" ? "their" : "your"} date of birth`
-            )
-            .show();
-        }
-      }
-    }
-  );
-
-  $("#dform_widget_num_date_yy, #dform_widget_num_date_yy_another")
-    .attr("min", new Date().getFullYear() - 120)
-    .attr("max", new Date().getFullYear())
-    .on("keyup focusout", function (e) {
-      const another = `${
-        this.id === "dform_widget_num_date_yy_another" ? "_another" : ""
-      }`;
-      const dd =
-        $(`#dform_widget_num_date_dd${another}`).val() !== "" ? true : false;
-      const mm =
-        $(`#dform_widget_num_date_mm${another}`).val() !== "" ? true : false;
-      $(`#dform_widget_date_field${another}`)
-        .find(".dform_validationMessage")
-        .text(
-          `Enter ${another === "_another" ? "their" : "your"} date of birth`
-        )
-        .hide();
-      if (e.type === "keyup") {
-        inputDate(this.id, "", e.which);
-      }
-    });
-
-  $("#dform_widget_date_field, #dform_widget_date_field_another").on(
-    "change focusout",
-    function () {
-      const another = `${
-        this.id === "dform_widget_date_field_another" ? "_another" : ""
-      }`;
-      const dd = $(`#dform_widget_num_date_dd${another}`).val();
-      const mm = $(`#dform_widget_num_date_mm${another}`).val();
-      const yy = $(`#dform_widget_num_date_yy${another}`).val();
-      checkDate(this.id, another, dd, mm, yy);
-      checkMaxDay(this.id, dd, mm, yy);
-    }
-  );
 
   //Start: Google Analytics
   //Added Google Anyltics Tag Container Tracking - included here to min rebuilding DOM
@@ -173,6 +74,21 @@ function initiateReady(event, kdf, progressBar) {
   }
 }
 
+function handleTableClick(event, kdf, tableid, row) {
+  // Function designed to run when a table has been clicked.
+
+  if (tableid.startsWith("tab_property_search_result")) {
+    resetErrorMessage(
+      "txt_search_property_" + pageID,
+      "Enter your postcode in the correct format"
+    );
+    var fieldValue = row.col_property_id;
+    KDF.customdata("retrieve-address-web", this.id, true, true, {
+      search_property: fieldValue,
+    });
+  }
+}
+
 var pageID = "";
 function initiatePageChange(event, kdf, currentpageid, targetpageid) {
   // Function designed to run when the page is changed.
@@ -192,51 +108,42 @@ function handleCustomActions(action, response) {
 
   checkCurrentPageFields();
 
-  let val = response.data;
+  var val = response.data;
 
   if (action === "search-address-web") {
+    const property_search_result = [];
+    KDF.setVal("tab_property_search_result_" + pageID, property_search_result);
     if (val.property_search_result.length > 0) {
-      let property_search_results = val.property_search_result;
-      let updated_results = [];
-      $.each(property_search_results, function (index, result) {
-        let label_parts = result.label.split(",");
-        let updated_label = label_parts[0]
-          .trim()
-          .replace(/\b\w+/g, function (txt) {
-            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      val.property_search_result.forEach(populateAddressList);
+      function populateAddressList(item, key) {
+        if (item) {
+          var lable = item.col_property;
+          var toLowerCase = capitalizeString(
+            lable.substr(0, lable.indexOf(","))
+          );
+          var lcLength = toLowerCase.length;
+          var toUpperCase = lable.slice(lcLength);
+          property_search_result.push({
+            col_property: toLowerCase + toUpperCase,
+            col_property_id: item.col_property_id,
           });
-        if (updated_label !== "") {
-          result.label = `${updated_label}, ${label_parts
-            .slice(1)
-            .join(",")
-            .trim()}`;
-          updated_results.push(result);
         }
-      });
-      const data = updated_results;
-      data.sort(function (a, b) {
-        let aLabel = parseInt(a.label.split(" ")[0]);
-        let bLabel = parseInt(b.label.split(" ")[0]);
-        return aLabel - bLabel;
-      });
-      property_search_results = data;
+      }
       KDF.setVal(
-        `sel_property_search_result_${pageID}`,
-        property_search_results
+        "tab_property_search_result_" + pageID,
+        property_search_result
       );
-      $(
-        `#dform_widget_sel_property_search_result_${pageID} option:eq(0)`
-      ).remove();
-      KDF.showWidget(`sel_property_search_result_${pageID}`);
-      KDF.showSection(`area_address_selected_${pageID}`);
-      $(`#dform_widget_sel_property_search_result_${pageID}`).focus();
+      KDF.showWidget("ahtm_label_for_tab_property_search_result_" + pageID);
+      KDF.showWidget("tab_property_search_result_" + pageID);
+      KDF.showSection("area_address_selected_" + pageID);
     } else {
+      // KDF.showWidget('ahtm_address_search_result_error_' + pageID);
       displayErrorMessage(
-        `txt_search_property_${pageID}`,
+        "txt_search_property_" + pageID,
         "Enter a valid postcode/street name within the Sheffield City Council area",
         "block"
       );
-      if (KDF.getVal(`txt_manual_address_${pageID}`) === "false") {
+      if (KDF.getVal("txt_manual_address_" + pageID) === "false") {
         // do nothing
       } else {
         enterAddressManually();
@@ -253,12 +160,16 @@ function handleCustomActions(action, response) {
       KDF.setVal("txt_custown", val.town);
       KDF.setVal("txt_cuspostcode", val.postcode);
       KDF.setVal(
-        `txt_cusfulladdress`,
-        `${capitalizeString(val.address_number)} ${capitalizeString(
-          val.address_line_1
-        )}, ${val.town}, ${val.postcode}`
+        "txt_cusfulladdress",
+        KDF.getVal("txt_cusaddressnumber") +
+          " " +
+          KDF.getVal("txt_cusaddressline1") +
+          ", " +
+          KDF.getVal("txt_custown") +
+          ", " +
+          KDF.getVal("txt_cuspostcode")
       );
-      KDF.setVal("txt_cusuprn", val.uprn);
+      KDF.setVal("txt_cusuprn" + val.uprn);
     } else if (pageID === "page_about_another") {
       KDF.setVal(
         "txt_cusaddressnumber_another",
@@ -273,41 +184,64 @@ function handleCustomActions(action, response) {
       KDF.setVal("txt_custown_another", val.town);
       KDF.setVal("txt_cuspostcode_another", val.postcode);
       KDF.setVal(
-        `txt_cusfulladdress_another`,
-        `${capitalizeString(val.address_number)} ${capitalizeString(
-          val.address_line_1
-        )}, ${val.town}, ${val.postcode}`
+        "txt_cusfulladdress_another",
+        KDF.getVal("txt_cusaddressnumber_another") +
+          " " +
+          KDF.getVal("txt_cusaddressline1_another") +
+          ", " +
+          KDF.getVal("txt_custown_another") +
+          ", " +
+          KDF.getVal("txt_cuspostcode_another")
       );
-      KDF.setVal("txt_cusuprn_another", val.uprn);
+      KDF.setVal("txt_cusuprn_another" + val.uprn);
     } else {
       KDF.setVal(
-        `txt_addressnumber_${pageID}`,
+        "txt_addressnumber_" + pageID,
         capitalizeString(val.address_number)
       );
+      KDF.setVal("txt_addressnumber_" + pageID, val.address_number);
       KDF.setVal(
-        `txt_addressline1_${pageID}`,
+        "txt_addressline1_" + pageID,
         capitalizeString(val.address_line_1)
       );
-      KDF.setVal(`txt_addressline1_${pageID}`, val.address_line_1);
-      KDF.setVal(`txt_town_${pageID}`, val.town);
-      KDF.setVal(`txt_postcode_${pageID}`, val.postcode);
+      KDF.setVal("txt_addressline1_" + pageID, val.address_line_1);
+      KDF.setVal("txt_town_" + pageID, val.town);
+      KDF.setVal("txt_postcode_" + pageID, val.postcode);
       KDF.setVal(
-        `txt_fulladdress_${pageID}`,
-        `${capitalizeString(val.address_number)} ${capitalizeString(
-          val.address_line_1
-        )}, ${val.town}, ${val.postcode}`
+        "txt_fulladdress_" + pageID,
+        KDF.getVal("txt_addressnumber_" + pageID) +
+          " " +
+          KDF.getVal("txt_addressline1_" + pageID) +
+          ", " +
+          KDF.getVal("txt_town_" + pageID) +
+          ", " +
+          KDF.getVal("txt_postcode_" + pageID)
       );
-      KDF.setVal(`txt_postcodearea_${pageID}`, val.postcode_area);
-      KDF.setVal(`txt_uprn_${pageID}`, val.uprn);
-      KDF.setVal(`txt_propertyid_${pageID}`, val.property_id);
-      KDF.setVal(`txt_usrn_${pageID}`, val.usrn);
-      KDF.setVal(`txt_streetid_${pageID}`, val.street_id);
+      KDF.setVal("txt_postcodearea_" + pageID, val.postcode_area);
+      KDF.setVal("txt_uprn_" + pageID, val.uprn);
+      KDF.setVal("txt_propertyid_" + pageID, val.property_id);
+      KDF.setVal("txt_usrn_" + pageID, val.usrn);
+      KDF.setVal("txt_streetid_" + pageID, val.street_id);
       if (pageID === "page_about_the_location") {
         KDF.setVal(
-          `txt_fulladdress`,
-          `${capitalizeString(val.address_number)} ${capitalizeString(
-            val.address_line_1
-          )}, ${val.town}, ${val.postcode}`
+          "txt_fulladdress",
+          capitalizeString(val.address_number) +
+            " " +
+            capitalizeString(val.address_line_1) +
+            ", " +
+            val.town +
+            ", " +
+            val.postcode
+        );
+        KDF.setVal(
+          "txt_fulladdress",
+          val.address_number +
+            " " +
+            val.address_line_1 +
+            ", " +
+            val.town +
+            ", " +
+            val.postcode
         );
         KDF.setVal(
           "txt_streetdescription",
@@ -326,11 +260,12 @@ function handleCustomActions(action, response) {
         KDF.setVal("site_code", val.usrn);
       }
     }
-    KDF.showWidget(`ahtm_fulladdress_${pageID}`);
-    KDF.hideWidget(`sel_property_search_result_${pageID}`);
-    KDF.showSection(`area_address_selected_${pageID}`);
-    KDF.showSection(`area_lacation_description_${pageID}`);
-    $(`#dform_widget_html_ahtm_fulladdress_${pageID}`).focus();
+    KDF.showWidget("ahtm_fulladdress_" + pageID);
+    KDF.hideWidget("ahtm_address_table_" + pageID);
+    KDF.hideWidget("ahtm_label_for_tab_property_search_result_" + pageID);
+    KDF.hideWidget("tab_property_search_result_" + pageID);
+    KDF.showSection("area_address_selected_" + pageID);
+    KDF.showSection("area_lacation_description_" + pageID);
   }
 
   if (action === "retrieve-current-location-web") {
@@ -338,13 +273,13 @@ function handleCustomActions(action, response) {
       KDF.showWidget("ahtm_current_location_error");
       // $("#current-location-error").val("Your location is outside of the Sheffield City Council area");
     } else {
-      KDF.setWidgetNotRequired(`txt_search_property_${pageID}`);
-      KDF.setVal(`txt_addressnumber_${pageID}`, val.number);
-      KDF.setVal(`txt_addressline1_${pageID}`, val.streetName);
-      KDF.setVal(`txt_town_${pageID}`, val.city);
-      KDF.setVal(`txt_postcode_${pageID}`, val.postcode);
+      KDF.setWidgetNotRequired("txt_search_property_" + pageID);
+      KDF.setVal("txt_addressnumber_" + pageID, val.number);
+      KDF.setVal("txt_addressline1_" + pageID, val.streetName);
+      KDF.setVal("txt_town_" + pageID, val.city);
+      KDF.setVal("txt_postcode_" + pageID, val.postcode);
       KDF.setVal(
-        `txt_fulladdress_${pageID}`,
+        "txt_fulladdress_" + pageID,
         val.number +
           " " +
           val.streetName +
@@ -363,19 +298,20 @@ function handleCustomActions(action, response) {
           ", " +
           val.postcode
       );
-      KDF.setVal(`txt_streetdescription${pageID}`, val.streetName);
-      KDF.setVal(`txt_usrn_${pageID}`, val.usrn);
+      KDF.setVal("txt_streetdescription" + pageID, val.streetName);
+      KDF.setVal("txt_usrn_" + pageID, val.usrn);
       KDF.setVal("txt_usrn", val.usrn);
-      KDF.setVal(`txt_streetid_${pageID}`, val.streetID);
+      KDF.setVal("txt_streetid_" + pageID, val.streetID);
       KDF.setVal("txt_streetid", val.streetID);
       KDF.setVal("site_name", val.streetName);
       KDF.setVal("site_code", val.usrn);
       KDF.setVal("longitude_x", val.xLongitude);
       KDF.setVal("latitude_y", val.yLatitude);
-      KDF.showWidget(`ahtm_fulladdress_${pageID}`);
-      KDF.hideWidget(`sel_property_search_result_${pageID}`);
-      KDF.showSection(`area_address_selected_${pageID}`);
-      KDF.showSection(`area_lacation_description_${pageID}`);
+      KDF.hideWidget("ahtm_address_table_" + pageID);
+      KDF.hideWidget("ahtm_label_for_tab_property_search_result_" + pageID);
+      KDF.hideWidget("tab_property_search_result_" + pageID);
+      KDF.showSection("area_address_selected_" + pageID);
+      KDF.showSection("area_lacation_description_" + pageID);
     }
   }
 
@@ -390,14 +326,17 @@ function handleCustomActions(action, response) {
 
 function setPageHeaderAndFooter(formTitle) {
   var body = document.getElementsByTagName("body")[0];
+
   body.insertAdjacentHTML(
     "afterbegin",
     '<header role="banner"> <div class="scc_wrap" id="top"> <div class="scc_logo"> <a href="https://www.sheffield.gov.uk" title="Back to homepage"> <img src="https://www.sheffield.gov.uk/verint-files/logo.png" alt="Sheffield City Council Logo"> </a> </div> </div> <div id="form-title-outer"><div id="form-title-inner"><h1 id="form-title"></h1></div></div></header>'
   );
+
   body.insertAdjacentHTML(
     "beforeend",
     '<footer class="scc_footer" role="contentinfo"> <nav role="navigation" class="scc_az-links"> <div class="scc_wrap"> <h2><a href="https://www.sheffield.gov.uk/utilities/a-z">A-Z of services</a></h2><p class="scc_skip"><a href="#scc_footer-content" class="scc_button scc_hide-screen scc_focusable">Skip the A to Z services</a></p><ul class="scc_h2"> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#a"><span>Services</span> A</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#b"><span>Services</span> B</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#c"><span>Services</span> C</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#d"><span>Services</span> D</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#e"><span>Services</span> E</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#f"><span>Services</span> F</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#g"><span>Services</span> G</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#h"><span>Services</span> H</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#i"><span>Services</span> I</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#j"><span>Services</span> J</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#k"><span>Services</span> K</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#l"><span>Services</span> L</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#m"><span>Services</span> M</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#n"><span>Services</span> N</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#o"><span>Services</span> O</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#p"><span>Services</span> P</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#q"><span>Services</span> Q</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#r"><span>Services</span> R</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#s"><span>Services</span> S</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#t"><span>Services</span> T</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#u"><span>Services</span> U</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#v"><span>Services</span> V</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#w"><span>Services</span> W</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#x"><span>Services</span> X</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#y"><span>Services</span> Y</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#z"><span>Services</span> Z</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#123"><span>Services</span> 123</a></li> </div> </ul> </nav> <div class="scc_wrap" id="scc_footer-content"> <div class="scc_row"> <div class="scc_col" id="legal-links"> <ul> <li><a href="https://www.sheffield.gov.uk/content/sheffield/home.html">Site Home Page</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/footer-links/privacy-notice.html">Privacy notice</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/footer-links/cookie-policy.html">Use of cookies</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/footer-links/accessibility-statement.html">Accessibility statement</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/footer-links/legal-notices.html">Legal notices</a></li> </ul> </div> <div class="scc_col" id="other-links"> <ul> <li><a href="https://www.sheffield.gov.uk/content/sheffield/home/job-vacancies.html">Jobs and volunteering with Sheffield City Council</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/home/your-city-council/access-to-information.html">Get access to information</a></li> <li><a href="http://www.welcometosheffield.co.uk/visit/events">Sheffield events</a></li> <li><a href="https://sheffield.citizenspace.com">Have your say - consultations</a></li> <li><a href="http://www.sheffieldnewsroom.co.uk">News and press</a></li> <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/footer-links/advertising.html">Advertising</a></li> <li><a href="https://sheffield.gov.uk/content/sheffield/home/business.html">Business</a></li> </ul> </div> <div class="scc_col" id="social-links"> <ul> <li><a href="https://twitter.com/sheffcouncil?lang=en" class="scc_icon-twitter-after"><span>Twitter</span></a></li> <li><a href="https://www.facebook.com/SheffCityCouncil/" class="scc_icon-facebook-after"><span>Facebook</span></a></li> <li><a href="https://www.youtube.com/user/SheffieldCCouncil" class="scc_icon-youtube-after"><span>YouTube</span></a></li> <li><a href="https://www.instagram.com/sheffieldcitycouncil/" class="scc_icon-instagram-after"><span>Instagram</span></a></li> <li><a href="https://public.govdelivery.com/accounts/UKSHEFFIELD/subscriber/new" class="scc_icon-mail-after"><span>Email alerts</span></a></li> </ul> </div> </div> <div class="scc_info"> <p class="scc_modified"></p> <p class="scc_copyright">&copy; Copyright Sheffield City Council</p> </div> <a href="#top" id="jump-to-top">Top</a> </div> </footer>'
   );
+
   document.getElementById("form-title").innerHTML = formTitle;
 }
 
@@ -421,6 +360,7 @@ function addProgressBarHtml() {
   var form = document.getElementById("dform_holder");
 
   // header.insertAdjacentHTML('afterend', "<div id='progress-bar-outer-box'><div id='progress-bar-inner-box'><div role='progressbar' aria-valuenow='0' aria-valuemin='0' aria-valuemax='100' id='progress-bar-dynamic-box'><p id='progress-bar-text'>0%</p></div></div></div>")
+
   form.insertAdjacentHTML(
     "afterbegin",
     "<div id='progress-bar-outer-box'><div id='progress-bar-inner-box'><div role='progressbar' aria-valuenow='0' aria-valuemin='0' aria-valuemax='100' id='progress-bar-dynamic-box' aria-label='Progress bar'><p id='progress-bar-text'>0%</p></div></div></div>"
@@ -545,6 +485,7 @@ function disableButton(id) {
 
 function disabledButtons() {
   // get the buttons to disable = only next or submit buttons
+
   var nextOrSubmitButtons =
     ".dform_widget_type_button[data-type='next'], .next-button, submit-button, .property-search-page-button, .secondary-cta-property-search, .secondary-cta-property-search-custom, .location-search-page-button--highways, .secondary-cta-location-search--highways, .location-search-page-button--map, .secondary-cta-location-search--custom, .secondary-cta-location-search--map, .address-search-page-button--next, .address-search-page-button--submit, .address-search-page-button--submit-custom, .address-search-page-button--submit-highways, .address-search-page-button--submit-no-address, .address-search-page-button--submit-custom-no-address, .address-search-page-button--next-another, .address-search-page-button--submit-another, .address-search-page-button--submit-another-no-address, .address-search-page-button--submit-another-custom, .address-search-page-button--submit-another-custom-no-address, .secondary-cta-mandatory, .web-black";
   // set those buttons to disabled by default
@@ -553,6 +494,7 @@ function disabledButtons() {
   var requiredInputTypes = "input:required, textarea:required, select:required";
 
   // run checker on page load
+
   checkCurrentPageFields();
   // run checker when any required field is changed
   $(requiredInputTypes).on("change keyup blur", function () {
@@ -574,13 +516,16 @@ function checkCurrentPageFields() {
     // get current page (which includes next/previous pages when next/back buttons pressed)
     var currentPage = $('.dform_page[data-active="true"]:visible');
     // get only visible fields on current page
+
     var radiosAndCheckboxes = $(currentPage)
       .find("input[type='radio']:required, input[type='checkbox']:required")
       .filter(":visible");
+
     var otherFields = $(currentPage)
       .find(requiredInputTypes)
       .not("input[type='radio'], input[type='checkbox']")
       .filter(":visible");
+
     // pass fields to toggle function for validation
     disabledButtonToggle(radiosAndCheckboxes, otherFields);
   }, 0);
@@ -598,6 +543,7 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
       radioAndCheckboxNames.push(radiosAndCheckboxes[i].name);
     }
   }
+
   // 2 - check that each of the radio/checkbox groups are checked
   for (var j = 0; j < radioAndCheckboxNames.length; j++) {
     if (
@@ -608,31 +554,19 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
       allRadiosAndCheckboxesFilled = false;
     }
   }
+
   // check all fields other than radio/checkboxes
-  // otherFields.each(function () {
-  //   if (this.value) {
-  //     // if value exists, remove whitespace and check other characters are entered
-  //     var whitespaceRemoved = $(this).val().replace(/\s/g, "");
-  //     var fieldValueLength = whitespaceRemoved.length;
-  //     if (fieldValueLength === 0) {
-  //       allOtherFieldsFilled = false;
-  //     }
-  //   } else {
-  //     // if no value, button disabled
-  //     allOtherFieldsFilled = false;
-  //   }
-  // });
-  otherFields.each((index, field) => {
-    if ($(field).val()) {
+  otherFields.each(function () {
+    if (!$(this).val()) {
+      // if no value, button disabled
+      allOtherFieldsFilled = false;
+    } else {
       // if value exists, remove whitespace and check other characters are entered
-      const whitespaceRemoved = $(field).val().replace(/\s/g, "");
-      const fieldValueLength = whitespaceRemoved.length;
+      var whitespaceRemoved = $(this).val().replace(/\s/g, "");
+      var fieldValueLength = whitespaceRemoved.length;
       if (fieldValueLength === 0) {
         allOtherFieldsFilled = false;
       }
-    } else {
-      // if no value, button disabled
-      allOtherFieldsFilled = false;
     }
   });
   var currentPage = $('.dform_page[data-active="true"]:visible');
@@ -699,11 +633,13 @@ function confirmationURL(
     }
     confirmationPageUrlSlugAndQueries += additionalParameters;
   }
+
   //Redirect to Confirmation page
   redirectOnSubmission(confirmationPageUrlSlugAndQueries);
 
   function ampCheck() {
     //check if URL currently ends with a '?'' or a '&'' if not add a '&' before moving on
+
     if (
       !confirmationPageUrlSlugAndQueries.endsWith("?") &&
       !confirmationPageUrlSlugAndQueries.endsWith("&")
@@ -719,6 +655,7 @@ function redirectOnSubmission(confirmationPageUrlSlugAndQueries) {
   var confirmationPageUrl =
     "https://www.sheffield.gov.uk/utilities/" +
     confirmationPageUrlSlugAndQueries;
+
   window.location = confirmationPageUrl;
 }
 
@@ -735,24 +672,31 @@ function handleAddressSearchFunctionality(event, kdf) {
     }
   );
 
-  $(`#dform_widget_sel_property_search_result_${pageID}`).on(
-    "click keyup",
-    function (e) {
-      if (e.type === "keyup" && e.keyCode !== 13) {
-        return;
-      } else {
-        resetErrorMessage(
-          this.name.substring(0, this.name.length - 2),
-          "Enter your postcode in the correct format"
-        );
-        if (this.value) {
-          KDF.customdata("retrieve-address-web", this.id, true, true, {
-            search_property: this.value,
-          });
-        }
-      }
-    }
-  );
+  $("#dform_widget_address_search_result").change(function () {
+    // Achive fine_address and this can be removed
+    KDF.custom(
+      "web_retrieve_address",
+      "_widget_address_search_result",
+      "address_search_result",
+      "address_search_result",
+      true,
+      true,
+      true
+    );
+  });
+
+  $("#dform_widget_address_search_result_another").change(function () {
+    // Achive fine_address and this can be removed
+    KDF.custom(
+      "web_retrieve_address_another",
+      "_widget_address_search_result_another",
+      "address_search_result_another",
+      "address_search_result_another",
+      true,
+      true,
+      true
+    );
+  });
 
   $(".search-postcode").keydown(function (e) {
     resetErrorMessage(
@@ -760,7 +704,7 @@ function handleAddressSearchFunctionality(event, kdf) {
       "Enter your postcode in the correct format"
     );
     if (e.keyCode == 13) {
-      $(`#dform_widget_button_but_find_property_${pageID}`).click();
+      $("#dform_widget_button_but_find_property_" + pageID).click();
     }
   });
 
@@ -770,16 +714,16 @@ function handleAddressSearchFunctionality(event, kdf) {
       "Enter your postcode or streetname in the correct format"
     );
     if (e.keyCode == 13) {
-      $(`#dform_widget_button_but_find_property_${pageID}`).click();
+      $("#dform_widget_button_but_find_property_" + pageID).click();
     }
   });
 
   $(".find-address").click(function () {
-    KDF.hideWidget(`ahtm_address_search_result_error_${pageID}`);
+    KDF.hideWidget("ahtm_address_search_result_error_" + pageID);
     KDF.hideWidget("ahtm_current_location_error");
     KDF.hideSection("area_gis_map");
-    KDF.setWidgetRequired(`txt_search_property_${pageID}`);
-    KDF.setVal(`locator_${pageID}`, "Address");
+    KDF.setWidgetRequired("txt_search_property_" + pageID);
+    KDF.setVal("locator_" + pageID, "Address");
     if (pageID === "page_about_you") {
       KDF.hideWidget("txt_cusaddressnumber");
       KDF.setVal("txt_cusaddressnumber", "");
@@ -807,20 +751,20 @@ function handleAddressSearchFunctionality(event, kdf) {
       KDF.hideWidget("txt_cusuprn_another");
       KDF.setVal("txt_cusuprn_another", "");
     } else {
-      KDF.hideWidget(`txt_addressnumber_${pageID}`);
-      KDF.setVal(`txt_addressnumber_${pageID}`, "");
-      KDF.hideWidget(`txt_addressline1_${pageID}`);
-      KDF.setVal(`txt_addressline1_${pageID}`, "");
-      KDF.hideWidget(`txt_town_${pageID}`);
-      KDF.setVal(`txt_town_${pageID}`, "");
-      KDF.hideWidget(`txt_postcode_${pageID}`);
-      KDF.setVal(`txt_postcode_${pageID}`, "");
-      KDF.setVal(`txt_fulladdress_${pageID}`, "");
-      KDF.setVal(`txt_postcodearea_${pageID}`, "");
-      KDF.setVal(`txt_uprn_${pageID}`, "");
-      KDF.setVal(`txt_propertyid_${pageID}`, "");
-      KDF.setVal(`txt_usrn_${pageID}`, "");
-      KDF.setVal(`txt_streetid_${pageID}`, "");
+      KDF.hideWidget("txt_addressnumber_" + pageID);
+      KDF.setVal("txt_addressnumber_" + pageID, "");
+      KDF.hideWidget("txt_addressline1_" + pageID);
+      KDF.setVal("txt_addressline1_" + pageID, "");
+      KDF.hideWidget("txt_town_" + pageID);
+      KDF.setVal("txt_town_" + pageID, "");
+      KDF.hideWidget("txt_postcode_" + pageID);
+      KDF.setVal("txt_postcode_" + pageID, "");
+      KDF.setVal("txt_fulladdress_" + pageID, "");
+      KDF.setVal("txt_postcodearea_" + pageID, "");
+      KDF.setVal("txt_uprn_" + pageID, "");
+      KDF.setVal("txt_propertyid_" + pageID, "");
+      KDF.setVal("txt_usrn_" + pageID, "");
+      KDF.setVal("txt_streetid_" + pageID, "");
       if (pageID === "page_about_the_location") {
         KDF.setVal("lnglat", "");
         KDF.setVal("txt_fulladdress", "");
@@ -842,23 +786,22 @@ function handleAddressSearchFunctionality(event, kdf) {
         KDF.setVal("txt_prestige", "");
       }
     }
-    KDF.hideWidget(`ahtm_address_search_result_error_${pageID}`);
-    KDF.hideWidget(`ahtm_address_table_${pageID}`);
-    KDF.hideSection(`area_address_selected_${pageID}`);
-    KDF.hideWidget(`ahtm_fulladdress_${pageID}`);
-    KDF.hideSection(`area_lacation_description_${pageID}`);
-    var fieldID = `txt_search_property_${pageID}`;
+    KDF.hideWidget("ahtm_address_search_result_error_" + pageID);
+    KDF.hideWidget("ahtm_address_table_" + pageID);
+    KDF.hideSection("area_address_selected_" + pageID);
+    KDF.hideWidget("ahtm_fulladdress_" + pageID);
+    KDF.hideSection("area_lacation_description_" + pageID);
+    var fieldID = "txt_search_property_" + pageID;
     var fieldValue = KDF.getVal(fieldID);
     resetErrorMessage(fieldID, "Enter your postcode in the correct format");
-    var tableOfResults = document.getElementById(
-      `dform_table_tab_property_search_result_${pageID}`
-    );
-    // .getElementsByTagName("div");
+    var tableOfResults = document
+      .getElementById("dform_table_tab_property_search_result_" + pageID)
+      .getElementsByTagName("div");
     $(tableOfResults).remove();
     if (fieldValue) {
       KDF.customdata("search-address-web", this.id, true, true, {
         search_property: fieldValue,
-        search_town: KDF.getVal(`txt_limit_address_${pageID}`),
+        search_town: KDF.getVal("txt_limit_address_" + pageID),
       });
     } else {
       resetErrorMessage(fieldID, "Enter your postcode in the correct format");
@@ -868,7 +811,7 @@ function handleAddressSearchFunctionality(event, kdf) {
 
   $(".manual-address").click(function () {
     resetErrorMessage(
-      `txt_search_property_${pageID}`,
+      "txt_search_property_" + pageID,
       "Enter your postcode in the correct format"
     );
     enterAddressManually();
@@ -884,23 +827,26 @@ function handleAddressSearchFunctionality(event, kdf) {
     getLocation();
     KDF.hideWidget("ahtm_current_location_error");
     KDF.hideSection("area_gis_map");
-    KDF.hideWidget(`ahtm_label_for_tab_property_search_result_${pageID}`);
-    KDF.hideWidget(`tab_property_search_result_${pageID}`);
-    KDF.hideWidget(`ahtm_fulladdress_${pageID}`);
+    KDF.hideWidget("ahtm_label_for_tab_property_search_result_" + pageID);
+    KDF.hideWidget("tab_property_search_result_" + pageID);
+
+    KDF.hideWidget("ahtm_fulladdress_" + pageID);
     resetErrorMessage(
-      `txt_search_property_${pageID}`,
+      "txt_search_property_" + pageID,
       "Enter a postcode or street name in the correct format"
     );
   });
 
   $("#dform_widget_button_but_use_map_location").click(function () {
     setLocator("Map");
+
     KDF.hideWidget("ahtm_current_location_error");
-    KDF.hideWidget(`ahtm_label_for_tab_property_search_result_${pageID}`);
-    KDF.hideWidget(`tab_property_search_result_${pageID}`);
-    KDF.hideWidget(`ahtm_fulladdress_${pageID}`);
+    KDF.hideWidget("ahtm_label_for_tab_property_search_result_" + pageID);
+    KDF.hideWidget("tab_property_search_result_" + pageID);
+
+    KDF.hideWidget("ahtm_fulladdress_" + pageID);
     resetErrorMessage(
-      `txt_search_property_${pageID}`,
+      "txt_search_property_" + pageID,
       "Enter a postcode or street name in the correct format"
     );
   });
@@ -919,7 +865,7 @@ function handleAddressSearchFunctionality(event, kdf) {
 
   $(".manual-postcode").keyup(function () {
     resetErrorMessage(
-      `txt_search_property_${pageID}`,
+      "txt_search_property_" + pageID,
       "Enter your postcode in the correct format"
     );
   });
@@ -1028,6 +974,7 @@ function handleAddressSearchFunctionality(event, kdf) {
         .parent()
         .find(".dform_validationMessage")
         .html(errorMessage);
+
       $("#dform_widget_txt_search_property_" + pageID)
         .parent()
         .find(".dform_validationMessage")
@@ -1036,43 +983,31 @@ function handleAddressSearchFunctionality(event, kdf) {
         });
     }
 
-    function displayErrorMessageMap(errorMessage, display) {
-      $("#dform_widget_gis_map")
-        .find(".dform_validationMessage")
-        .html(errorMessage);
-      $("#dform_widget_gis_map").find(".dform_validationMessage").css({
-        display: display,
-      });
-      displayError("gis_map");
-    }
-
-    function hideFieldErrorMap(errorMessage, display) {
-      $("#dform_widget_gis_map")
-        .find(".dform_validationMessage")
-        .html(errorMessage);
-      $("#dform_widget_gis_map").find(".dform_validationMessage").css({
-        display: display,
-      });
-    }
-
     var defaultErrorMessage = "Enter your postcode in the correct format";
     hideFieldError(defaultErrorMessage, "none");
+
     var postcodeSearchValue = $(
       "#dform_widget_txt_search_property_" + pageID
     ).val();
+
     var postcodeSearchPattern = $(
       "#dform_widget_txt_search_property_" + pageID
     ).attr("pattern");
+
     var postcodeSearchRegex = new RegExp(postcodeSearchPattern);
     var isPostcodeValid = postcodeSearchRegex.test(postcodeSearchValue);
+
     var isAddressListVisible = $(
       "#dform_table_tab_property_search_result_" + pageID
     ).is(":visible");
+
     if (KDF.getVal("locator_page_about_the_location") === "Map") {
+      var defaultErrorMessage =
+        "Enter a postcode or street name in the correct format";
       if (KDF.getVal("longitude_x") === "" || KDF.getVal("latitude_y") === "") {
-        displayErrorMessageMap(
-          "Select a location on the public highway",
-          "block"
+        displayErrorMessage("Select a location on the public highway", "block");
+        $("#dform_widget_txt_search_property_" + pageID).removeClass(
+          "dform_fielderror"
         );
       } else {
         progressAction(action);
@@ -1201,6 +1136,7 @@ function handleAddressSearchFunctionality(event, kdf) {
         KDF.setVal("txt_dob", "");
         submitForm();
       } else {
+        console.log("Next");
         KDF.gotoNextPage();
       }
     }
@@ -1237,155 +1173,205 @@ function resetErrorMessage(field, defaultErrorMessage) {
 
 // Required for KDF.custom submission function/forms adapter field validation
 function submitForm() {
-  // var textFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="text"], textarea, select[name="txt_"]'
-  // );
-  // var textFieldNames = "";
-  // $(textFields).each(function () {
-  //   textFieldNames += $(this).prop("name") + ",";
-  // });
-  // var numberFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="number"], number, select[name="num_"]'
-  // );
-  // var numberFieldNames = "";
-  // $(numberFields).each(function () {
-  //   numberFieldNames += $(this).prop("name") + ",";
-  // });
-  // var numberFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="number"], number, select[name="cur_"]'
-  // );
-  // var numberFieldNames = "";
-  // $(numberFields).each(function () {
-  //   numberFieldNames += $(this).prop("name") + ",";
-  // });
-  // var selectFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="select"], select, select[name="sel_"]'
-  // );
-  // var selectFieldNames = "";
-  // $(selectFields).each(function () {
-  //   selectFieldNames += $(this).prop("name") + ",";
-  // });
-  // var checkFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="checkField"], checkField, select[name="chk_"]'
-  // );
-  // var checkFieldNames = "";
-  // $(checkFields).each(function () {
-  //   checkFieldNames += $(this).prop("name") + ",";
-  // });
-  // var checkFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="checkField"], checkField, select[name="mchk_"]'
-  // );
-  // var checkFieldNames = "";
-  // $(checkFields).each(function () {
-  //   checkFieldNames += $(this).prop("name") + ",";
-  // });
-  // var radioFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="radio"], radio, select[name="rad_"]'
-  // );
-  // var radioFieldNames = "";
-  // $(radioFields).each(function () {
-  //   radioFieldNames += $(this).prop("name") + ",";
-  // });
-  // var emailFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="email"], email, select[name="eml_"]'
-  // );
-  // var emailFieldNames = "";
-  // $(emailFields).each(function () {
-  //   emailFieldNames += $(this).prop("name") + ",";
-  // });
-  // var telFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="tel"], tel, select[name="tel_"]'
-  // );
-  // var telFieldNames = "";
-  // $(telFields).each(function () {
-  //   telFieldNames += $(this).prop("name") + ",";
-  // });
-  // var dateFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="date"], date, select[name="dt_"]'
-  // );
-  // var dateFieldNames = "";
-  // $(dateFields).each(function () {
-  //   dateFieldNames += $(this).prop("name") + ",";
-  // });
-  // var timeFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="time"], time, select[name="time_"]'
-  // );
-  // var timeFieldNames = "";
-  // $(timeFields).each(function () {
-  //   timeFieldNames += $(this).prop("name") + ",";
-  // });
-  // KDF.custom('kdf-save-web', '_submit_function', textFieldNames + numberFieldNames + selectFieldNames + checkFieldNames + radioFieldNames + emailFieldNames + telFieldNames + dateFieldNames + timeFieldNames + 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type', true, true, true);
-  KDF.setVal("le_upload_file", "false");
-  saveForm();
+  var textFields = $('.dform_page[data-active="true"]').find(
+    'input[type="text"], textarea, select[name="txt_"]'
+  );
+
+  var textFieldNames = "";
+  $(textFields).each(function () {
+    textFieldNames += $(this).prop("name") + ",";
+  });
+  var numberFields = $('.dform_page[data-active="true"]').find(
+    'input[type="number"], number, select[name="num_"]'
+  );
+
+  var numberFieldNames = "";
+  $(numberFields).each(function () {
+    numberFieldNames += $(this).prop("name") + ",";
+  });
+  var numberFields = $('.dform_page[data-active="true"]').find(
+    'input[type="number"], number, select[name="cur_"]'
+  );
+
+  var numberFieldNames = "";
+  $(numberFields).each(function () {
+    numberFieldNames += $(this).prop("name") + ",";
+  });
+  var selectFields = $('.dform_page[data-active="true"]').find(
+    'input[type="select"], select, select[name="sel_"]'
+  );
+
+  var selectFieldNames = "";
+  $(selectFields).each(function () {
+    selectFieldNames += $(this).prop("name") + ",";
+  });
+  var checkFields = $('.dform_page[data-active="true"]').find(
+    'input[type="checkField"], checkField, select[name="chk_"]'
+  );
+
+  var checkFieldNames = "";
+  $(checkFields).each(function () {
+    checkFieldNames += $(this).prop("name") + ",";
+  });
+  var checkFields = $('.dform_page[data-active="true"]').find(
+    'input[type="checkField"], checkField, select[name="mchk_"]'
+  );
+
+  var checkFieldNames = "";
+  $(checkFields).each(function () {
+    checkFieldNames += $(this).prop("name") + ",";
+  });
+  var radioFields = $('.dform_page[data-active="true"]').find(
+    'input[type="radio"], radio, select[name="rad_"]'
+  );
+
+  var radioFieldNames = "";
+  $(radioFields).each(function () {
+    radioFieldNames += $(this).prop("name") + ",";
+  });
+  var emailFields = $('.dform_page[data-active="true"]').find(
+    'input[type="email"], email, select[name="eml_"]'
+  );
+
+  var emailFieldNames = "";
+  $(emailFields).each(function () {
+    emailFieldNames += $(this).prop("name") + ",";
+  });
+  var telFields = $('.dform_page[data-active="true"]').find(
+    'input[type="tel"], tel, select[name="tel_"]'
+  );
+
+  var telFieldNames = "";
+  $(telFields).each(function () {
+    telFieldNames += $(this).prop("name") + ",";
+  });
+  var dateFields = $('.dform_page[data-active="true"]').find(
+    'input[type="date"], date, select[name="dt_"]'
+  );
+
+  var dateFieldNames = "";
+  $(dateFields).each(function () {
+    dateFieldNames += $(this).prop("name") + ",";
+  });
+  var timeFields = $('.dform_page[data-active="true"]').find(
+    'input[type="time"], time, select[name="time_"]'
+  );
+
+  var timeFieldNames = "";
+  $(timeFields).each(function () {
+    timeFieldNames += $(this).prop("name") + ",";
+  });
+  KDF.custom(
+    "kdf-save-web",
+    "_submit_function",
+    textFieldNames +
+      numberFieldNames +
+      selectFieldNames +
+      checkFieldNames +
+      radioFieldNames +
+      emailFieldNames +
+      telFieldNames +
+      dateFieldNames +
+      timeFieldNames +
+      "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type",
+    "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type",
+    true,
+    true,
+    true
+  );
 }
 
 function submitFormCustom() {
-  // var textFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="text"], textarea, select[name="txt_"]'
-  // );
-  // var textFieldNames = "";
-  // $(textFields).each(function () {
-  //   textFieldNames += $(this).prop("name") + ",";
-  // });
-  // var numberFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="number"], number, select[name="num_"]'
-  // );
-  // var numberFieldNames = "";
-  // $(numberFields).each(function () {
-  //   numberFieldNames += $(this).prop("name") + ",";
-  // });
-  // var selectFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="select"], select, select[name="sel_"]'
-  // );
-  // var selectFieldNames = "";
-  // $(selectFields).each(function () {
-  //   selectFieldNames += $(this).prop("name") + ",";
-  // });
-  // var checkFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="checkField"], checkField, select[name="chk_"]'
-  // );
-  // var checkFieldNames = "";
-  // $(checkFields).each(function () {
-  //   checkFieldNames += $(this).prop("name") + ",";
-  // });
-  // var radioFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="radio"], radio, select[name="rad_"]'
-  // );
-  // var radioFieldNames = "";
-  // $(radioFields).each(function () {
-  //   radioFieldNames += $(this).prop("name") + ",";
-  // });
-  // var emailFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="email"], email, select[name="eml_"]'
-  // );
-  // var emailFieldNames = "";
-  // $(emailFields).each(function () {
-  //   emailFieldNames += $(this).prop("name") + ",";
-  // });
-  // var telFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="tel"], tel, select[name="tel_"]'
-  // );
-  // var telFieldNames = "";
-  // $(telFields).each(function () {
-  //   telFieldNames += $(this).prop("name") + ",";
-  // });
-  // var dateFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="date"], date, select[name="dt_"]'
-  // );
-  // var dateFieldNames = "";
-  // $(dateFields).each(function () {
-  //   dateFieldNames += $(this).prop("name") + ",";
-  // });
-  // var timeFields = $('.dform_page[data-active="true"]').find(
-  //   'input[type="time"], time, select[name="time_"]'
-  // );
-  // var timeFieldNames = "";
-  // $(timeFields).each(function () {
-  //   timeFieldNames += $(this).prop("name") + ",";
-  // });
-  // KDF.custom('kdf-save-custom', '_submit_function', textFieldNames + numberFieldNames + selectFieldNames + checkFieldNames + radioFieldNames + emailFieldNames + telFieldNames + dateFieldNames + timeFieldNames + 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name', true, true, true);
-  KDF.setVal("le_upload_file", "false");
-  saveForm();
+  var textFields = $('.dform_page[data-active="true"]').find(
+    'input[type="text"], textarea, select[name="txt_"]'
+  );
+
+  var textFieldNames = "";
+  $(textFields).each(function () {
+    textFieldNames += $(this).prop("name") + ",";
+  });
+  var numberFields = $('.dform_page[data-active="true"]').find(
+    'input[type="number"], number, select[name="num_"]'
+  );
+
+  var numberFieldNames = "";
+  $(numberFields).each(function () {
+    numberFieldNames += $(this).prop("name") + ",";
+  });
+  var selectFields = $('.dform_page[data-active="true"]').find(
+    'input[type="select"], select, select[name="sel_"]'
+  );
+
+  var selectFieldNames = "";
+  $(selectFields).each(function () {
+    selectFieldNames += $(this).prop("name") + ",";
+  });
+  var checkFields = $('.dform_page[data-active="true"]').find(
+    'input[type="checkField"], checkField, select[name="chk_"]'
+  );
+
+  var checkFieldNames = "";
+  $(checkFields).each(function () {
+    checkFieldNames += $(this).prop("name") + ",";
+  });
+  var radioFields = $('.dform_page[data-active="true"]').find(
+    'input[type="radio"], radio, select[name="rad_"]'
+  );
+
+  var radioFieldNames = "";
+  $(radioFields).each(function () {
+    radioFieldNames += $(this).prop("name") + ",";
+  });
+  var emailFields = $('.dform_page[data-active="true"]').find(
+    'input[type="email"], email, select[name="eml_"]'
+  );
+
+  var emailFieldNames = "";
+  $(emailFields).each(function () {
+    emailFieldNames += $(this).prop("name") + ",";
+  });
+  var telFields = $('.dform_page[data-active="true"]').find(
+    'input[type="tel"], tel, select[name="tel_"]'
+  );
+
+  var telFieldNames = "";
+  $(telFields).each(function () {
+    telFieldNames += $(this).prop("name") + ",";
+  });
+  var dateFields = $('.dform_page[data-active="true"]').find(
+    'input[type="date"], date, select[name="dt_"]'
+  );
+
+  var dateFieldNames = "";
+  $(dateFields).each(function () {
+    dateFieldNames += $(this).prop("name") + ",";
+  });
+  var timeFields = $('.dform_page[data-active="true"]').find(
+    'input[type="time"], time, select[name="time_"]'
+  );
+
+  var timeFieldNames = "";
+  $(timeFields).each(function () {
+    timeFieldNames += $(this).prop("name") + ",";
+  });
+  KDF.custom(
+    "kdf-save-custom",
+    "_submit_function",
+    textFieldNames +
+      numberFieldNames +
+      selectFieldNames +
+      checkFieldNames +
+      radioFieldNames +
+      emailFieldNames +
+      telFieldNames +
+      dateFieldNames +
+      timeFieldNames +
+      "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name",
+    "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name",
+    true,
+    true,
+    true
+  );
 }
 
 // Produce Submission Review Page
@@ -1397,6 +1383,7 @@ function getAndSetReviewPageData() {
   var thisPageNumber = $('.dform_page[data-active="true"]:visible').attr(
     "data-pos"
   );
+
   formUserPath.push(thisPageNumber);
   // console.log("formUserPath", formUserPath);
   // function runs on each page change, but most of the functionality only required when landing on the review page
@@ -1418,6 +1405,7 @@ function getAndSetReviewPageData() {
       // if it is not greater, it is part of a previous path that the user has since overwritten
       // e.g. from above, the correct backwards path is 5, 4, 2, 1 [skipping 5, 4, 3, 2]
       //  console.log(formUserPathReversed[i], ">", formUserPathReversed[i+1], "?");
+
       if (
         parseInt(formUserPathReversed[i]) >
         parseInt(formUserPathReversed[i + 1])
@@ -1503,7 +1491,7 @@ function getAndSetReviewPageData() {
                   "div[data-name=" + fieldName + "] > div > label"
                 ).text();
                 fieldValue =
-                  "Â£" +
+                  "Ã‚Â£" +
                   $(
                     "div[data-name=" + fieldName + "] > div > div > input"
                   ).val();
@@ -1526,6 +1514,7 @@ function getAndSetReviewPageData() {
             fieldLabel = $(
               "div[data-name=" + fieldName + "] > div > label"
             ).text();
+
             fieldValue = $(
               "div[data-name=" +
                 fieldName +
@@ -1536,6 +1525,7 @@ function getAndSetReviewPageData() {
             var radioFieldset = $(
               "div[data-name=" + fieldName + "] > div > fieldset"
             );
+
             fieldLabel = $(radioFieldset).find("legend").text();
             $(radioFieldset)
               .find("span")
@@ -1549,6 +1539,7 @@ function getAndSetReviewPageData() {
             var checkboxFieldset = $(
               "div[data-name=" + fieldName + "] > div > fieldset"
             );
+
             fieldLabel = $(checkboxFieldset).find("legend").text();
             var checkboxValueArr = [];
             $(checkboxFieldset)
@@ -1564,9 +1555,11 @@ function getAndSetReviewPageData() {
             fieldLabel = $(
               "div[data-name=" + fieldName + "] > div > label"
             ).text();
+
             var dateFieldValue = $(
               "div[data-name=" + fieldName + "] > div > input"
             ).val();
+
             if (dateFieldValue) {
               // parse date from yyyy-mm-dd to dd/mm/yyyy
               var dateFieldItems = dateFieldValue.split("-");
@@ -1604,9 +1597,7 @@ function assignStepSize(fieldname, step) {
 }
 
 function fixCurrency(field) {
-  const string = parseFloat(KDF.getVal(field)).toFixed(2);
-  const inputField = document.querySelector("#dform_widget_" + field);
-  inputField.value = string;
+  KDF.setVal(field, parseFloat(KDF.getVal(field)).toFixed(2));
 }
 
 function timeCheck(fieldname, datefield) {
@@ -1650,6 +1641,7 @@ function timeCheck(fieldname, datefield) {
       }
       //Finish: Minute
     }
+
     //Finish: Correct <10's
     var date = yyyy + "-" + mm + "-" + dd;
     var time = hh + ":" + min;
@@ -1717,6 +1709,7 @@ function validateFields(input) {
   if (errors > 0) {
     KDF.showFieldError(input);
   }
+
   return errors;
 }
 
@@ -1741,6 +1734,7 @@ function characterCounter(field) {
   var string = KDF.getVal(field);
   var stringLength = string.length;
   var idConcat = "characterCounter" + field;
+
   document.getElementById(idConcat).innerHTML =
     document.getElementById("dform_widget_" + field).maxLength -
     stringLength +
@@ -1755,6 +1749,7 @@ function characterCountAppender(field) {
         field +
         "></div>"
     );
+
   characterCounter(field);
 }
 
@@ -1847,6 +1842,7 @@ function setLocator(locator) {
     KDF.hideSection("area_gis_map");
     KDF.showSection("area_lacation_description");
   }
+
   checkCurrentPageFields();
 }
 
@@ -1874,162 +1870,28 @@ function submitFormHighways() {
       KDF.setVal("le_title", "Report about " + KDF.getVal("level_1_data"));
     }
   }
+
   KDF.setVal(
     "faultinfo",
     KDF.getVal("le_title") + " - " + KDF.getVal("txta_report_details")
   );
+
   KDF.setVal("locinfo", KDF.getVal("txt_fulladdress"));
+
   KDF.setVal(
     "le_description",
     KDF.getVal("faultinfo") + " || " + KDF.getVal("locinfo")
   );
-  // KDF.custom('kdf-save-custom', '_submit_function', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle,txt_title,txt_firstname,txt_surname,txt_dob,txt_phone,txt_email,level_1_data,level_2_data,level_3_data,txt_streetdescription,txt_usrn,txt_streetid,txt_fulladdress,txt_uprn,txt_propertyid,txt_postcodearea,txta_report_details,txta_location_details,txt_channel,locinfo,faultinfo,txt_receivedby,doctitle,docpath,txt_customertype,secondcustomer,linkedcaseid,asset_type,asset_type_id,central_asset_id,asset_responsibility,object_id,txt_prestige,longitude_x,latitude_y,site_name,site_code,empref,confirmenq,confirmjobid,gis_map,gis_map_lat,gis_map_lon,locator_page_about_the_location,file_upload', 'le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle', true, true, true);
-  KDF.setVal("le_form_name", "highways_report");
-  KDF.setVal("le_upload_file", "false");
-  saveForm();
-}
 
-function checkMaxDay(id, dd, mm, yy) {
-  const dayID = `${
-    id === "dform_widget_date_field_another"
-      ? "dform_widget_num_date_dd_another"
-      : "dform_widget_num_date_dd"
-  }`;
-  const ddMax = new Date(yy, mm, 0).getDate();
-  $(`#${dayID}`).attr("max", ddMax);
-  if (dd > ddMax) {
-    $(`#${dayID}`).addClass("dform_fielderror");
-  } else if (dd !== "") {
-    $(`#${dayID}`).removeClass("dform_fielderror");
-  }
-}
-
-function checkDate(id, another, dd, mm, yy) {
-  if (!dd)
-    $(`#dform_widget_num_date_dd${another}`).addClass("dform_fielderror");
-  if (!mm)
-    $(`#dform_widget_num_date_mm${another}`).addClass("dform_fielderror");
-  if (!yy)
-    $(`#dform_widget_num_date_yy${another}`).addClass("dform_fielderror");
-  $(`#${id}`)
-    .find(".dform_validationMessage")
-    .text(
-      `Enter ${
-        id === "dform_widget_date_field_another" ? "their" : "your"
-      } date of birth`
-    )
-    .hide();
-
-  if (!dd && mm && yy)
-    $(`#dform_widget_date_field${another}`)
-      .find(".dform_validationMessage")
-      .text("Date of birth must include a day")
-      .show();
-  if (dd && !mm && yy)
-    $(`#dform_widget_date_field${another}`)
-      .find(".dform_validationMessage")
-      .text("Date of birth must include a month")
-      .show();
-  if (dd && mm && !yy)
-    $(`#dform_widget_num_date_yy${another}`).removeClass("dform_fielderror");
-  if (!dd && !mm && yy)
-    $(`#dform_widget_date_field${another}`)
-      .find(".dform_validationMessage")
-      .text("Date of birth must include a day and month")
-      .show();
-  if (!dd && mm && !yy)
-    $(`#dform_widget_date_field${another}`)
-      .find(".dform_validationMessage")
-      .text("Date of birth must include a day and year")
-      .show();
-  if (dd && !mm && !yy) {
-    $(`#dform_widget_num_date_mm${another}`).removeClass("dform_fielderror");
-    $(`#dform_widget_num_date_yy${another}`).removeClass("dform_fielderror");
-  }
-  if (!dd && !mm && !yy)
-    $(`#dform_widget_date_field${another}`)
-      .find(".dform_validationMessage")
-      .text(`Enter ${another === "_another" ? "their" : "your"} date of birth`)
-      .show();
-
-  if (dd && mm && yy) {
-    if (validDate(id, dd, mm, yy)) {
-      const formattedDate = `${dd.substr(0, 2)}/${mm.substr(0, 2)}/${yy.substr(
-        0,
-        4
-      )}`;
-      if (id === "dform_widget_date_field_another") {
-        $("#dform_widget_txt_dob_another").val(formattedDate);
-        $("#dform_widget_dt_dob_another").val(formattedDate);
-      } else {
-        $("#dform_widget_txt_dob").val(formattedDate);
-        $("#dform_widget_dt_dob").val(formattedDate);
-      }
-    } else {
-      $(`#${id}`)
-        .parents(`#${id}`)
-        .find(".dform_validationMessage")
-        .css({ display: "block" });
-    }
-  } else {
-    $(`#${id}`)
-      .parents(`#${id}`)
-      .find(".dform_validationMessage")
-      .css({ display: "block" });
-  }
-}
-
-function inputDate(id, nextID, key) {
-  const ignoredKeys = [9, 16, 37, 38, 39, 40];
-  if (ignoredKeys.indexOf(key) !== -1) return;
-  const maxLength = $(`#${id}`).attr("maxlength");
-  let value = $(`#${id}`).val();
-  if (value.length >= maxLength) {
-    $(`#${id}`).val(value.substring(0, maxLength));
-    $(`#${id}`).val(value.substring(0, maxLength));
-    if (nextID) {
-      $(`#${id}`).blur().parent().next().children(`#${nextID}`).focus();
-    } else {
-      $(`#${id}`).blur().parent().next().focus();
-    }
-  }
-}
-
-function validDate(id, day, month, year) {
-  const dateFields = $(".date-input-fields input");
-  const parentContainer = $(`#${id}`);
-  const validationMsg = parentContainer
-    .find(".dform_validationMessage")
-    .text(
-      `Enter ${
-        id === "dform_widget_date_field_another" ? "their" : "your"
-      } date of birth`
-    )
-    .hide();
-  const date = new Date(year, month - 1, day);
-  const now = new Date();
-  const minDate = new Date();
-  minDate.setFullYear(minDate.getFullYear() - 120);
-  minDate.setHours(0, 0, 0, 0);
-  if (
-    date.getFullYear() != year ||
-    date.getMonth() + 1 != month ||
-    date.getDate() != day
-  ) {
-    validationMsg.text("Date of birth must be a real date").show();
-    return false;
-  }
-  if (date > now) {
-    validationMsg.text("Date of birth must be today or in the past").show();
-    return false;
-  }
-  if (date < minDate) {
-    validationMsg
-      .text("Date of birth cannot be more that 120 years in the past")
-      .show();
-    return false;
-  }
-  return true;
+  KDF.custom(
+    "kdf-save-custom",
+    "_submit_function",
+    "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle,txt_title,txt_firstname,txt_surname,txt_dob,txt_phone,txt_email,level_1_data,level_2_data,level_3_data,txt_streetdescription,txt_usrn,txt_streetid,txt_fulladdress,txt_uprn,txt_propertyid,txt_postcodearea,txta_report_details,txta_location_details,txt_channel,locinfo,faultinfo,txt_receivedby,doctitle,docpath,txt_customertype,secondcustomer,linkedcaseid,asset_type,asset_type_id,central_asset_id,asset_responsibility,object_id,txt_prestige,longitude_x,latitude_y,site_name,site_code,empref,confirmenq,confirmjobid,gis_map,gis_map_lat,gis_map_lon,locator_page_about_the_location,file_upload",
+    "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle",
+    true,
+    true,
+    true
+  );
 }
 
 var vmap;
@@ -2150,6 +2012,7 @@ function clearMapData() {
     "txt_search_property_" + pageID,
     "Enter your postcode in the correct format"
   );
+
   KDF.setVal("lnglat", "");
   KDF.setVal("txt_fulladdress", "");
   KDF.setVal("txt_streetdescription", "");
@@ -2248,9 +2111,11 @@ function showPosition(position) {
     "dojo/domReady!",
   ], function (Point, GeometryService, ProjectParameters, SpatialReference) {
     var outSR = "27700";
+
     var geometryService = new GeometryService(
       "https://utility.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer"
     );
+
     var inputpoint = new Point({
       longitude: position.coords.longitude,
       latitude: position.coords.latitude,
@@ -2293,6 +2158,7 @@ function drawLayer(evt) {
   if (KDF.getVal("level_1_data") === "Gulley") {
     drawDrains();
   }
+
   if (
     KDF.getVal("level_1_data") === "Fence" ||
     KDF.getVal("level_1_data") === "Handrail" ||
@@ -2307,6 +2173,7 @@ function drawLayer(evt) {
   if (KDF.getVal("level_1_data") === "Litter Bin") {
     drawLitterBins();
   }
+
   if (
     KDF.getVal("level_1_data") === "Cameras / Electronic Signs" ||
     KDF.getVal("level_1_data") === "Illuminated Road Signs" ||
@@ -2316,6 +2183,7 @@ function drawLayer(evt) {
   ) {
     drawSigns();
   }
+
   if (
     KDF.getVal("level_1_data") === "Art or Sculpture" ||
     KDF.getVal("level_1_data") === "Bollard" ||
@@ -2328,6 +2196,7 @@ function drawLayer(evt) {
   if (KDF.getVal("level_1_data") === "Street Light") {
     drawStreetLights();
   }
+
   if (
     KDF.getVal("level_1_data") === "Bridge" ||
     KDF.getVal("level_1_data") === "Culvert" ||
@@ -2341,12 +2210,14 @@ function drawLayer(evt) {
   if (KDF.getVal("level_1_data") === "Traffic Signals") {
     drawTrafficSignals();
   }
+
   if (
     KDF.getVal("level_1_data") === "Tree or Branch" ||
     KDF.getVal("level_1_data") === "Tree Grille"
   ) {
     drawTrees();
   }
+
   if (
     KDF.getVal("level_1_data") === "Box Planter" ||
     KDF.getVal("level_1_data") === "Grass Verge" ||
@@ -2362,6 +2233,7 @@ function drawAssetLayer() {
   if (KDF.getVal("level_1_data") === "Gulley") {
     drawDrains();
   }
+
   if (
     KDF.getVal("level_1_data") === "Fence" ||
     KDF.getVal("level_1_data") === "Handrail" ||
@@ -2376,6 +2248,7 @@ function drawAssetLayer() {
   if (KDF.getVal("level_1_data") === "Litter Bin") {
     drawLitterBins();
   }
+
   if (
     KDF.getVal("level_1_data") === "Cameras / Electronic Signs" ||
     KDF.getVal("level_1_data") === "Illuminated Road Signs" ||
@@ -2385,6 +2258,7 @@ function drawAssetLayer() {
   ) {
     drawSigns();
   }
+
   if (
     KDF.getVal("level_1_data") === "Art or Sculpture" ||
     KDF.getVal("level_1_data") === "Bollard" ||
@@ -2397,6 +2271,7 @@ function drawAssetLayer() {
   if (KDF.getVal("level_1_data") === "Street Light") {
     drawStreetLights();
   }
+
   if (
     KDF.getVal("level_1_data") === "Bridge" ||
     KDF.getVal("level_1_data") === "Culvert" ||
@@ -2410,12 +2285,14 @@ function drawAssetLayer() {
   if (KDF.getVal("level_1_data") === "Traffic Signals") {
     drawTrafficSignals();
   }
+
   if (
     KDF.getVal("level_1_data") === "Tree or Branch" ||
     KDF.getVal("level_1_data") === "Tree Grille"
   ) {
     drawTrees();
   }
+
   if (
     KDF.getVal("level_1_data") === "Box Planter" ||
     KDF.getVal("level_1_data") === "Grass Verge" ||
@@ -2819,6 +2696,7 @@ function roadsFeatureSetHandler(marker, featureSet) {
   } else {
     queryParks(marker);
   }
+
   vmap.centerAtLonLat({
     lon: marker.geometry.x,
     lat: marker.geometry.y,
@@ -2899,6 +2777,7 @@ function pavementsFeatureSetHandler(marker, featureSet) {
       displayErrorMessage("", "block");
     }
   }
+
   vmap.centerAtLonLat({
     lon: marker.geometry.x,
     lat: marker.geometry.y,
@@ -3028,6 +2907,7 @@ function treeFeatureSetHandler(marker, featureSet) {
       "site_name",
       attributes["featurelocation"] + " " + attributes["sitename"]
     );
+
     KDF.setVal("txt_streetdescription", attributes["sitename"]);
     KDF.setVal("txt_fulladdress", attributes["sitename"]);
     KDF.showSection("area_lacation_description_" + pageID);
@@ -3083,53 +2963,66 @@ function vegetationFeatureSetHandler(marker, featureSet) {
     KDF.setWidgetNotRequired("txt_search_property_" + pageID);
     var asset = featureSet.features[0];
     var attributes = asset.attributes;
+
     KDF.setVal(
       "object_id",
       attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.objectid"]
     );
+
     KDF.setVal("longitude_x", marker.geometry.x);
     KDF.setVal("latitude_y", marker.geometry.y);
+
     KDF.setVal(
       "asset_type",
       attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.featuretypename"]
     );
+
     KDF.setVal(
       "asset_type_id",
       attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.featureid"]
     );
+
     KDF.setVal(
       "central_asset_id",
       attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.centralassetid"]
     );
+
     KDF.setVal(
       "asset_responsibility",
       attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.responsibility"]
     );
+
     KDF.setVal(
       "site_name",
       attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.sitename"]
     );
+
     KDF.setVal(
       "txt_streetdescription",
       attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.sitename"]
     );
+
     KDF.setVal(
       "txt_fulladdress",
       attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.sitename"]
     );
+
     KDF.setVal(
       "site_code",
       attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.sitecode"]
     );
+
     KDF.setVal(
       "txt_usrn",
       attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.sitecode"]
     );
+
     KDF.showSection("area_lacation_description_" + pageID);
     vmap.setInfoWindow({
       xcoord: marker.geometry.x,
       ycoord: marker.geometry.y,
       title: "Details",
+
       content:
         attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.sitename"],
     });
@@ -3236,6 +3129,7 @@ function citycentreFeatureSetHandler(marker, featureSet) {
 
 function queryHotspotAssPSS(marker) {
   var queryLayer = featureLayers.getQueryLayer(featureLayers.hotspotasspss);
+
   vmap.findFeaturesNear(
     marker,
     queryLayer,
@@ -3257,6 +3151,7 @@ function hotspotasspssFeatureSetHandler(marker, featureSet) {
 
 function queryHotspotSchools(marker) {
   var queryLayer = featureLayers.getQueryLayer(featureLayers.hotspotschools);
+
   vmap.findFeaturesNear(
     marker,
     queryLayer,
@@ -3277,6 +3172,7 @@ function hotspotschoolsFeatureSetHandler(marker, featureSet) {
 
 function queryPrincipalShopsite(marker) {
   var queryLayer = featureLayers.getQueryLayer(featureLayers.principalshopsite);
+
   vmap.findFeaturesNear(
     marker,
     queryLayer,
@@ -3299,6 +3195,7 @@ function queryNeighbourhoodShopsite(marker) {
   var queryLayer = featureLayers.getQueryLayer(
     featureLayers.neighbourhoodshopsite
   );
+
   vmap.findFeaturesNear(
     marker,
     queryLayer,
@@ -3455,6 +3352,7 @@ VMap.prototype.centerAtLonLat = function centerAtLonLat(centerConfig) {
       Number(config.lat),
       new SpatialReference(params.WKID)
     );
+
     params.map.centerAt(point);
   });
 };
@@ -3482,6 +3380,7 @@ VMap.prototype.setInfoWindow = function setInfoWindow(infoWindowConfig) {
       infoWindowConfig.ycoord,
       new SpatialReference(wkid)
     );
+
     map.infoWindow.setTitle(infoWindowConfig.title);
     map.infoWindow.setContent(infoWindowConfig.content);
     map.infoWindow.show(point);
@@ -3556,6 +3455,7 @@ VMap.prototype.addPoint = function addPoint(pointConfig) {
       config.marker.width,
       config.marker.height
     );
+
     markerSymbol.setOffset(0, 20);
     var graphic = new Graphic(point, markerSymbol);
     var markerLayer = new GraphicsLayer(config.layer);
@@ -3574,6 +3474,7 @@ VMap.prototype.convertLonLat = function convertLonLat(config) {
     config.outputProjection.projection,
     config.coordinates
   );
+
   config.successCallBack(result);
 };
 VMap.prototype.addSearch = function addSearch() {
@@ -3590,30 +3491,3 @@ VMap.prototype.addSearch = function addSearch() {
     search.startup();
   });
 };
-
-function saveForm() {
-  // Get a reference to the form
-  const form = document.querySelector("#dform_container");
-
-  // Filter on input types
-  const inputs = form.querySelectorAll(
-    "input, multicheckbox, select, textarea"
-  );
-
-  // Create an object to store the IDs and values
-  const formData = {};
-
-  // Loop through each field in the form
-  inputs.forEach((input) => {
-    // Add the ID and value to the object if they exist
-    if (input.value !== "" && input.value !== "Please select...") {
-      formData[input.name] = input.value;
-    }
-  });
-
-  if (KDF.getVal("txt_reference")) {
-    KDF.customdata("kdf-update-web", "saveForm", true, true, formData);
-  } else {
-    KDF.customdata("kdf-save-web", "saveForm", true, true, formData);
-  }
-}
