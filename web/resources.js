@@ -253,14 +253,10 @@ function handleCustomActions(action, response) {
       KDF.setVal("txt_custown", val.town);
       KDF.setVal("txt_cuspostcode", val.postcode);
       KDF.setVal(
-        "txt_cusfulladdress",
-        KDF.getVal("txt_cusaddressnumber") +
-          " " +
-          KDF.getVal("txt_cusaddressline1") +
-          ", " +
-          KDF.getVal("txt_custown") +
-          ", " +
-          KDF.getVal("txt_cuspostcode")
+        `txt_cusfulladdress`,
+        `${capitalizeString(val.address_number)} ${capitalizeString(
+          val.address_line_1
+        )}, ${val.town}, ${val.postcode}`
       );
       KDF.setVal("txt_cusuprn", val.uprn);
     } else if (pageID === "page_about_another") {
@@ -277,64 +273,41 @@ function handleCustomActions(action, response) {
       KDF.setVal("txt_custown_another", val.town);
       KDF.setVal("txt_cuspostcode_another", val.postcode);
       KDF.setVal(
-        "txt_cusfulladdress_another",
-        KDF.getVal("txt_cusaddressnumber_another") +
-          " " +
-          KDF.getVal("txt_cusaddressline1_another") +
-          ", " +
-          KDF.getVal("txt_custown_another") +
-          ", " +
-          KDF.getVal("txt_cuspostcode_another")
+        `txt_cusfulladdress_another`,
+        `${capitalizeString(val.address_number)} ${capitalizeString(
+          val.address_line_1
+        )}, ${val.town}, ${val.postcode}`
       );
       KDF.setVal("txt_cusuprn_another", val.uprn);
     } else {
       KDF.setVal(
-        `txt_addressnumber__${pageID}`,
+        `txt_addressnumber_${pageID}`,
         capitalizeString(val.address_number)
       );
-      KDF.setVal(`txt_addressnumber__${pageID}`, val.address_number);
       KDF.setVal(
-        `txt_addressline1__${pageID}`,
+        `txt_addressline1_${pageID}`,
         capitalizeString(val.address_line_1)
       );
-      KDF.setVal(`txt_addressline1__${pageID}`, val.address_line_1);
-      KDF.setVal(`txt_town__${pageID}`, val.town);
-      KDF.setVal(`txt_postcode__${pageID}`, val.postcode);
+      KDF.setVal(`txt_addressline1_${pageID}`, val.address_line_1);
+      KDF.setVal(`txt_town_${pageID}`, val.town);
+      KDF.setVal(`txt_postcode_${pageID}`, val.postcode);
       KDF.setVal(
-        `txt_fulladdress__${pageID}`,
-        KDF.getVal(`txt_addressnumber_${pageID}`) +
-          " " +
-          KDF.getVal(`txt_addressline1_${pageID}`) +
-          ", " +
-          KDF.getVal(`txt_town_${pageID}`) +
-          ", " +
-          KDF.getVal(`txt_postcode_${pageID}`)
+        `txt_fulladdress_${pageID}`,
+        `${capitalizeString(val.address_number)} ${capitalizeString(
+          val.address_line_1
+        )}, ${val.town}, ${val.postcode}`
       );
-      KDF.setVal(`txt_postcodearea__${pageID}`, val.postcode_area);
-      KDF.setVal(`txt_uprn__${pageID}`, val.uprn);
-      KDF.setVal(`txt_propertyid__${pageID}`, val.property_id);
-      KDF.setVal(`txt_usrn__${pageID}`, val.usrn);
+      KDF.setVal(`txt_postcodearea_${pageID}`, val.postcode_area);
+      KDF.setVal(`txt_uprn_${pageID}`, val.uprn);
+      KDF.setVal(`txt_propertyid_${pageID}`, val.property_id);
+      KDF.setVal(`txt_usrn_${pageID}`, val.usrn);
       KDF.setVal(`txt_streetid_${pageID}`, val.street_id);
       if (pageID === "page_about_the_location") {
         KDF.setVal(
-          "txt_fulladdress",
-          capitalizeString(val.address_number) +
-            " " +
-            capitalizeString(val.address_line_1) +
-            ", " +
-            val.town +
-            ", " +
-            val.postcode
-        );
-        KDF.setVal(
-          "txt_fulladdress",
-          val.address_number +
-            " " +
-            val.address_line_1 +
-            ", " +
-            val.town +
-            ", " +
-            val.postcode
+          `txt_fulladdress`,
+          `${capitalizeString(val.address_number)} ${capitalizeString(
+            val.address_line_1
+          )}, ${val.town}, ${val.postcode}`
         );
         KDF.setVal(
           "txt_streetdescription",
@@ -638,10 +611,6 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   // check all fields other than radio/checkboxes
   otherFields.each(function () {
     console.log(this, this.id, this.value);
-    // if (!$(this).val()) {
-    //   // if no value, button disabled
-    //   allOtherFieldsFilled = false;
-    // }
     if (this.value) {
       // if value exists, remove whitespace and check other characters are entered
       var whitespaceRemoved = $(this).val().replace(/\s/g, "");
@@ -650,6 +619,7 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
         allOtherFieldsFilled = false;
       }
     } else {
+      // if no value, button disabled
       allOtherFieldsFilled = false;
     }
   });
