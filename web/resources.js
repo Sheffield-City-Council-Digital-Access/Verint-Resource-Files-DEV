@@ -1248,10 +1248,12 @@ function submitForm() {
   $(numberFields).each(function () {numberFieldNames += $(this).prop("name") + ",";});
   var numberFields = $('.dform_page[data-active="true"]').find('input[type="number"], number, select[name="cur_"]' );
   var numberFieldNames = "";
-  $(numberFields).each(function () {numberFieldNames += $(this).prop("name") + ",";});
+  $(numberFields).each(function () { numberFieldNames += $(this).prop("name") + ","; });
+  
   // var selectFields = $('.dform_page[data-active="true"]').find('input[type="select"], select, select[name="sel_"]');
   // var selectFieldNames = "";
   // $(selectFields).each(function () { selectFieldNames += $(this).prop("name") + ","; });
+
   var selectFields = $('.dform_page[data-active="true"]').find('select[name^="sel_"]:not([name^="sel_property_search_result_"])');
   var selectFieldNames = "";
   $(selectFields).each(function () {selectFieldNames += $(this).prop("name") + ",";});
