@@ -1275,23 +1275,7 @@ function submitForm() {
   // $(timeFields).each(function () {timeFieldNames += $(this).prop("name") + ",";});
   // KDF.custom("kdf-save-web", "_submit_function",textFieldNames + numberFieldNames + selectFieldNames + checkFieldNames + radioFieldNames + emailFieldNames + telFieldNames + dateFieldNames + timeFieldNames + "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type", "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type", true, true, true);
 
-  // Get a reference to the form
-  const form = document.querySelector("#dform_container");
-
-  // Filter on input types
-  const inputs = form.querySelectorAll(
-    "input, multicheckbox, select, textarea"
-  );
-
-  // Create an object to store the IDs and values
-  const formData = {};
-
-  // Loop through each field in the form
-  inputs.forEach((input) => {
-    // Add the ID and value to the object if they exist
-    if (input.value !== "" && input.value !== "Please select...") formData[input.name] = input.value;
-  });
-  KDF.customdata("kdf-save-web", "saveForm", true, true, formData);
+  KDF.custom("kdf-save-web", "_submit_function", "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle,txt_title,txt_firstname,txt_surname,txt_dob,dt_dob,txt_phone,txt_email,txt_cusaddressnumber,txt_cusaddressline1,txt_custown,txt_cuspostcode,txt_cusfulladdress,txt_cusuprn", "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle,txt_title,txt_firstname,txt_surname,txt_dob,dt_dob,txt_phone,txt_email", true, true, true);
 
   // saveForm("false");
 }
