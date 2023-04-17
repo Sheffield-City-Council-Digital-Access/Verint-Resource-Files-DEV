@@ -1251,7 +1251,7 @@ function submitForm() {
   $(numberFields).each(function () {numberFieldNames += $(this).prop("name") + ",";});
   // var selectFields = $('.dform_page[data-active="true"]').find('input[type="select"], select, select[name="sel_"]');
   // var selectFieldNames = "";
-  $(selectFields).each(function () {selectFieldNames += $(this).prop("name") + ",";});
+  // $(selectFields).each(function () {selectFieldNames += $(this).prop("name") + ",";});
   var checkFields = $('.dform_page[data-active="true"]').find('input[type="checkField"], checkField, select[name="chk_"]');
   var checkFieldNames = "";
   $(checkFields).each(function () {checkFieldNames += $(this).prop("name") + ",";});
