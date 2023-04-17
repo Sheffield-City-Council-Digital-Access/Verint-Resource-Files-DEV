@@ -851,9 +851,10 @@ function handleAddressSearchFunctionality(event, kdf) {
     var fieldID = `txt_search_property_${pageID}`;
     var fieldValue = KDF.getVal(fieldID);
     resetErrorMessage(fieldID, "Enter your postcode in the correct format");
-    var tableOfResults = document
-      .getElementById(`dform_table_tab_property_search_result_${pageID}`)
-      .getElementsByTagName("div");
+    var tableOfResults = document.getElementById(
+      `dform_table_tab_property_search_result_${pageID}`
+    );
+    // .getElementsByTagName("div");
     $(tableOfResults).remove();
     if (fieldValue) {
       KDF.customdata("search-address-web", this.id, true, true, {
