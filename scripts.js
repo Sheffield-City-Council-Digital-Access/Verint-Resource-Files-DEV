@@ -876,7 +876,7 @@ function postcodeslice() {
 
 //Finish: Fill Postcode Area
 
-//Start: Set Channel Type
+//Start: Set Channel Types
 
 function setChannelType() {
   if (KDF.getVal("07000000003")) {
@@ -977,7 +977,7 @@ function setChannelType() {
     KDF.setVal("le_channel", "voice_in");
   }
 }
-//Finish: Set Channel Type
+//Finish: Set Channel Types
 
 //Start: Time and Date
 
