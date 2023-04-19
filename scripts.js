@@ -962,20 +962,21 @@ function setChannelType() {
   } 
   let agentLocation = KDF.getVal('txt_agentlocation');
   else
-  if (agentLocation.includes(" - WEB")) {
+  if (agentLocation.includes("WEB")) {
      KDF.setVal("le_channel", "WEB");
   }
   else
-  if (agentLocation.includes(" - Mail_In")) {
+  if (agentLocation.includes("Mail_In")) {
     KDF.setVal("le_channel", "Mail_In");
   }
   else
-  if (agentLocation.includes(" - email_in")) {
+  if (agentLocation.includes("email_in")) {
     KDF.setVal("le_channel", "email_in");
   }
   else {
     KDF.setVal("le_channel", "voice_in");
   }
+console.log('Current Channel is: ' + KDF.getVal('le_channel');
 }
 //Finish: Set Channel Types
 
