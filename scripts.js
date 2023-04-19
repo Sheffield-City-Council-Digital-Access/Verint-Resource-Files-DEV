@@ -959,7 +959,19 @@ function setChannelType() {
     KDF.setVal("le_channel", "email_in");
   } else if (KDF.getVal("txt_agentteam") === "07000000001") {
     KDF.setVal("le_channel", "face_to_face");
-  } else {
+  } 
+  if (agentLocation.includes(" - WEB")) {
+     KDF.setVal("le_channel", "WEB");
+  }
+  else
+  if (agentLocation.includes(" - Mail_In")) {
+    KDF.setVal("le_channel", "Mail_In");
+  }
+  else
+  if (agentLocation.includes(" - email_in")) {
+    KDF.setVal("le_channel", "email_in");
+  }
+  else {
     KDF.setVal("le_channel", "voice_in");
   }
 }
