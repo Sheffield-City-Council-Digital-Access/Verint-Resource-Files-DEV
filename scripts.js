@@ -876,7 +876,7 @@ function postcodeslice() {
 
 //Finish: Fill Postcode Area
 
-//Start: Set Channel Types
+//Start: Set Channel Typess
 
 function setChannelType() {
 console.log('I use to be a function');
@@ -981,7 +981,7 @@ console.log('I use to be a function');
   console.log('Agent Location is: ' + agentLocation);
   console.log('Channel Type is: ' + KDF.getVal('le_channel');*/
 }
-//Finish: Set Channel Types
+//Finish: Set Channel Typess
 
 //Start: Time and Date
 
