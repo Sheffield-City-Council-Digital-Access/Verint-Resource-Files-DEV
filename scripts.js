@@ -977,6 +977,7 @@ function setChannelType() {
     KDF.setVal("le_channel", "voice_in");
   }
 console.log('Current Channel is: ' + KDF.getVal('le_channel');
+console.log('Agent Location is: ' + agentLocation;
 }
 //Finish: Set Channel Types
 
