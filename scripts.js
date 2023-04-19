@@ -879,6 +879,7 @@ function postcodeslice() {
 //Start: Set Channel Types
 
 function setChannelType() {
+let agentLocation = KDF.getVal('txt_agentlocation');
   if (KDF.getVal("07000000003")) {
     if (
       [
@@ -960,7 +961,7 @@ function setChannelType() {
   } else if (KDF.getVal("txt_agentteam") === "07000000001") {
     KDF.setVal("le_channel", "face_to_face");
   } 
-  let agentLocation = KDF.getVal('txt_agentlocation');
+  
   else
   if (agentLocation.includes("WEB")) {
      KDF.setVal("le_channel", "WEB");
@@ -976,8 +977,8 @@ function setChannelType() {
   else {
     KDF.setVal("le_channel", "voice_in");
   }
-console.log('Current Channel is: ' + KDF.getVal('le_channel');
-console.log('Agent Location is: ' + agentLocation;
+  console.log('Agent Location is: ' + agentLocation);
+  console.log('Channel Type is: ' + KDF.getVal('le_channel');
 }
 //Finish: Set Channel Types
 
