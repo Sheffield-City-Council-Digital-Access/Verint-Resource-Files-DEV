@@ -876,10 +876,10 @@ function postcodeslice() {
 
 //Finish: Fill Postcode Area
 
-//Start: Set Channel Typess
+//Start: Set Channel Type
 
 function setChannelType() {
-console.log('I use to be a function');
+console.log('Params should now correctly carry this across, is this still required?');
   /*let agentLocation = KDF.getVal('txt_agentlocation');
   if (KDF.getVal("07000000003")) {
     if (
@@ -981,7 +981,7 @@ console.log('I use to be a function');
   console.log('Agent Location is: ' + agentLocation);
   console.log('Channel Type is: ' + KDF.getVal('le_channel');*/
 }
-//Finish: Set Channel Typess
+//Finish: Set Channel Type
 
 //Start: Time and Date
 
