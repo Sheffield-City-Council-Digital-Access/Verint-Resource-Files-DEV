@@ -619,7 +619,7 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   const nextOrSubmitButtons = document.querySelectorAll(".dform_widget_type_button[data-type='next'], .next-button, submit-button, .property-search-page-button, .secondary-cta-property-search, .secondary-cta-property-search-custom, .location-search-page-button--highways, .secondary-cta-location-search--highways, .location-search-page-button--map, .secondary-cta-location-search--map, .secondary-cta-location-search--custom, .address-search-page-button--next, .address-search-page-button--submit, .address-search-page-button--submit-custom, .address-search-page-button--submit-highways, .address-search-page-button--submit-no-address, .address-search-page-button--submit-custom-no-address, .address-search-page-button--next-another, .address-search-page-button--submit-another, .address-search-page-button--submit-another-no-address, .address-search-page-button--submit-another-custom, .address-search-page-button--submit-another-custom-no-address, .secondary-cta-mandatory, .web-black");
 
   // Enable or disable buttons based on the filled state of inputs and visibility of errors
-  // nextOrSubmitButtons.forEach(button => button.setAttribute("aria-disabled", !(allRadiosAndCheckboxesFilled && allOtherFieldsFilled && !errorMessagesVisible && !ineligibleAlertPanelVisible)));
+  nextOrSubmitButtons.forEach(button => button.setAttribute("aria-disabled", !(allRadiosAndCheckboxesFilled && allOtherFieldsFilled && !errorMessagesVisible && !ineligibleAlertPanelVisible)));
 
   console.log(allRadiosAndCheckboxesFilled, allOtherFieldsFilled, errorMessagesVisible, ineligibleAlertPanelVisible);
 
