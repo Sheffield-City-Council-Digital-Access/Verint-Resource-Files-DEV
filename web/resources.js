@@ -595,35 +595,35 @@ function checkCurrentPageFields() {
   }, 0);
 }
 
-// function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
-//   // Check if all radio and checkbox inputs are filled
-//   const allRadiosAndCheckboxesFilled = !Array.from(radiosAndCheckboxes).some(
-//     input => !input.checked
-//   );
+function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
+  // Check if all radio and checkbox inputs are filled
+  const allRadiosAndCheckboxesFilled = !Array.from(radiosAndCheckboxes).some(
+    input => !input.checked
+  );
 
-//   // Check if all other fields are filled
-//   const allOtherFieldsFilled = Array.from(otherFields).every(
-//     field => field.value.trim() !== ""
-//   );
+  // Check if all other fields are filled
+  const allOtherFieldsFilled = Array.from(otherFields).every(
+    field => field.value.trim() !== ""
+  );
 
-//   // Get the current active page
-//   const currentPage = document.querySelector('.dform_page[data-active="true"]');
+  // Get the current active page
+  const currentPage = document.querySelector('.dform_page[data-active="true"]');
   
-//   // Check if error messages are visible on the current page
-//   const errorMessagesVisible = currentPage.querySelectorAll(".dform_validationMessage:not([style*='display: none'])").length;
+  // Check if error messages are visible on the current page
+  const errorMessagesVisible = currentPage.querySelectorAll(".dform_validationMessage:not([style*='display: none'])").length;
 
-//   // Check if ineligible alert panels are visible on the current page
-//   const ineligibleAlertPanelVisible = currentPage.querySelectorAll(".alert-panel--ineligible:not([style*='display: none'])").length;
+  // Check if ineligible alert panels are visible on the current page
+  const ineligibleAlertPanelVisible = currentPage.querySelectorAll(".alert-panel--ineligible:not([style*='display: none'])").length;
 
-//   // Get all next and submit buttons on the page
-//   const nextOrSubmitButtons = document.querySelectorAll(".dform_widget_type_button[data-type='next'], .next-button, submit-button, .property-search-page-button, .secondary-cta-property-search, .secondary-cta-property-search-custom, .location-search-page-button--highways, .secondary-cta-location-search--highways, .location-search-page-button--map, .secondary-cta-location-search--map, .secondary-cta-location-search--custom, .address-search-page-button--next, .address-search-page-button--submit, .address-search-page-button--submit-custom, .address-search-page-button--submit-highways, .address-search-page-button--submit-no-address, .address-search-page-button--submit-custom-no-address, .address-search-page-button--next-another, .address-search-page-button--submit-another, .address-search-page-button--submit-another-no-address, .address-search-page-button--submit-another-custom, .address-search-page-button--submit-another-custom-no-address, .secondary-cta-mandatory, .web-black");
+  // Get all next and submit buttons on the page
+  const nextOrSubmitButtons = document.querySelectorAll(".dform_widget_type_button[data-type='next'], .next-button, submit-button, .property-search-page-button, .secondary-cta-property-search, .secondary-cta-property-search-custom, .location-search-page-button--highways, .secondary-cta-location-search--highways, .location-search-page-button--map, .secondary-cta-location-search--map, .secondary-cta-location-search--custom, .address-search-page-button--next, .address-search-page-button--submit, .address-search-page-button--submit-custom, .address-search-page-button--submit-highways, .address-search-page-button--submit-no-address, .address-search-page-button--submit-custom-no-address, .address-search-page-button--next-another, .address-search-page-button--submit-another, .address-search-page-button--submit-another-no-address, .address-search-page-button--submit-another-custom, .address-search-page-button--submit-another-custom-no-address, .secondary-cta-mandatory, .web-black");
 
-//   // Enable or disable buttons based on the filled state of inputs and visibility of errors
-//   nextOrSubmitButtons.forEach(button => button.setAttribute("aria-disabled", !(allRadiosAndCheckboxesFilled && allOtherFieldsFilled && !errorMessagesVisible && !ineligibleAlertPanelVisible)));
+  // Enable or disable buttons based on the filled state of inputs and visibility of errors
+  nextOrSubmitButtons.forEach(button => button.setAttribute("aria-disabled", !(allRadiosAndCheckboxesFilled && allOtherFieldsFilled && !errorMessagesVisible && !ineligibleAlertPanelVisible)));
 
-//   console.log(allRadiosAndCheckboxesFilled, allOtherFieldsFilled, errorMessagesVisible, ineligibleAlertPanelVisible);
+  console.log(allRadiosAndCheckboxesFilled, allOtherFieldsFilled, errorMessagesVisible, ineligibleAlertPanelVisible);
 
-// }
+}
 
 function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   // set all fields to filled by default
@@ -687,6 +687,8 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   } else {
     $(nextOrSubmitButtons).attr("aria-disabled", "true");
   }
+
+  console.log(allRadiosAndCheckboxesFilled, allOtherFieldsFilled, errorMessagesVisible, ineligibleAlertPanelVisible);
 }
 
 function confirmationURL(
