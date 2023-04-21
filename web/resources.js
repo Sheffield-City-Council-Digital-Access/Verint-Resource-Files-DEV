@@ -595,6 +595,24 @@ function checkCurrentPageFields() {
   }, 0);
 }
 
+// function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
+//   const allRadiosAndCheckboxesFilled = !Array.from(radiosAndCheckboxes).some(
+//     input => !input.checked
+//   );
+
+//   const allOtherFieldsFilled = Array.from(otherFields).every(
+//     field => field.value.trim() !== ""
+//   );
+
+//   const currentPage = document.querySelector('.dform_page[data-active="true"]:visible');
+//   const errorMessagesVisible = currentPage.querySelectorAll(".dform_validationMessage:visible").length;
+//   const ineligibleAlertPanelVisible = currentPage.querySelectorAll(".alert-panel--ineligible:visible").length;
+
+//   const nextOrSubmitButtons = document.querySelectorAll(".dform_widget_type_button[data-type='next'], .next-button, submit-button, .property-search-page-button, .secondary-cta-property-search, .secondary-cta-property-search-custom, .location-search-page-button--highways, .secondary-cta-location-search--highways, .location-search-page-button--map, .secondary-cta-location-search--map, .secondary-cta-location-search--custom, .address-search-page-button--next, .address-search-page-button--submit, .address-search-page-button--submit-custom, .address-search-page-button--submit-highways, .address-search-page-button--submit-no-address, .address-search-page-button--submit-custom-no-address, .address-search-page-button--next-another, .address-search-page-button--submit-another, .address-search-page-button--submit-another-no-address, .address-search-page-button--submit-another-custom, .address-search-page-button--submit-another-custom-no-address, .secondary-cta-mandatory, .web-black");
+
+//   nextOrSubmitButtons.forEach(button => button.setAttribute("aria-disabled", !(allRadiosAndCheckboxesFilled && allOtherFieldsFilled && !errorMessagesVisible && !ineligibleAlertPanelVisible)));
+// }
+
 function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   const allRadiosAndCheckboxesFilled = !Array.from(radiosAndCheckboxes).some(
     input => !input.checked
@@ -604,9 +622,9 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
     field => field.value.trim() !== ""
   );
 
-  const currentPage = document.querySelector('.dform_page[data-active="true"]:visible');
-  const errorMessagesVisible = currentPage.querySelectorAll(".dform_validationMessage:visible").length;
-  const ineligibleAlertPanelVisible = currentPage.querySelectorAll(".alert-panel--ineligible:visible").length;
+  const currentPage = document.querySelector('.dform_page[data-active="true"]');
+  const errorMessagesVisible = currentPage.querySelectorAll(".dform_validationMessage:not([style*='display: none'])").length;
+  const ineligibleAlertPanelVisible = currentPage.querySelectorAll(".alert-panel--ineligible:not([style*='display: none'])").length;
 
   const nextOrSubmitButtons = document.querySelectorAll(".dform_widget_type_button[data-type='next'], .next-button, submit-button, .property-search-page-button, .secondary-cta-property-search, .secondary-cta-property-search-custom, .location-search-page-button--highways, .secondary-cta-location-search--highways, .location-search-page-button--map, .secondary-cta-location-search--map, .secondary-cta-location-search--custom, .address-search-page-button--next, .address-search-page-button--submit, .address-search-page-button--submit-custom, .address-search-page-button--submit-highways, .address-search-page-button--submit-no-address, .address-search-page-button--submit-custom-no-address, .address-search-page-button--next-another, .address-search-page-button--submit-another, .address-search-page-button--submit-another-no-address, .address-search-page-button--submit-another-custom, .address-search-page-button--submit-another-custom-no-address, .secondary-cta-mandatory, .web-black");
 
