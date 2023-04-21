@@ -735,7 +735,7 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
 
   nextOrSubmitButtons.forEach(button => button.disabled = !(allRadiosAndCheckboxesFilled && allOtherFieldsFilled && !errorMessagesVisible && !ineligibleAlertPanelVisible));
 
-  console.log(allRadiosAndCheckboxesFilled, allOtherFieldsFilled, errorMessagesVisible, ineligibleAlertPanelVisible);
+  console.log(allRadiosAndCheckboxesFilled, allOtherFieldsFilled, !errorMessagesVisible, ineligibleAlertPanelVisible);
 }
 
 
