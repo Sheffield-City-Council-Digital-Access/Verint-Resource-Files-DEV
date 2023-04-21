@@ -714,10 +714,10 @@ function disabledButtons() {
 
 
 async function checkCurrentPageFields() {
-  const requiredInputTypes = "input:required, textarea:required, select:required";
+  const requiredInputTypes = "input:required:visible, textarea:required:visible, select:required:visible";
 
-  const currentPage = document.querySelector('.dform_page[data-active="true"]:not([style*="display: none"])');
-  const radiosAndCheckboxes = currentPage.querySelectorAll("input[type='radio']:required, input[type='checkbox']:required:not(:disabled):not([readonly])");
+  const currentPage = document.querySelector('.dform_page[data-active="true"]:not([style*="display: none"]):visible');
+  const radiosAndCheckboxes = currentPage.querySelectorAll("input[type='radio']:required:visible, input[type='checkbox']:required:visible:not(:disabled):not([readonly])");
   const otherFields = currentPage.querySelectorAll(`${requiredInputTypes}:not(input[type='radio']):not(input[type='checkbox']):not(:disabled):not([readonly])`);
 
   await disabledButtonToggle(Array.from(radiosAndCheckboxes), Array.from(otherFields));
@@ -727,7 +727,7 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   const allRadiosAndCheckboxesFilled = radiosAndCheckboxes.every(input => input.checked);
   const allOtherFieldsFilled = Array.from(otherFields).every(field => field.value.trim() !== "");
 
-  const currentPage = document.querySelector('.dform_page[data-active="true"]');
+  const currentPage = document.querySelector('.dform_page[data-active="true"]:visible');
   const errorMessagesVisible = currentPage.querySelectorAll(".dform_validationMessage:not([style*='display: none'])").length > 0;
   const ineligibleAlertPanelVisible = currentPage.querySelectorAll(".alert-panel--ineligible:not([style*='display: none'])").length > 0;
 
