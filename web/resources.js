@@ -656,8 +656,6 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   } else {
     $(nextOrSubmitButtons).attr("aria-disabled", "true");
   }
-
-  console.log(allRadiosAndCheckboxesFilled, allOtherFieldsFilled, errorMessagesVisible, ineligibleAlertPanelVisible);
 }
 
 
