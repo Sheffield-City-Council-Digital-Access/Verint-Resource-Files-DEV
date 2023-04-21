@@ -621,16 +621,8 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   // Enable or disable buttons based on the filled state of inputs and visibility of errors
   // nextOrSubmitButtons.forEach(button => button.setAttribute("aria-disabled", !(allRadiosAndCheckboxesFilled && allOtherFieldsFilled && !errorMessagesVisible && !ineligibleAlertPanelVisible)));
 
-  if (
-    allOtherFieldsFilled &&
-    allRadiosAndCheckboxesFilled &&
-    errorMessagesVisible === 0 &&
-    ineligibleAlertPanelVisible === 0
-  ) {
-    $(nextOrSubmitButtons).attr("aria-disabled", "false");
-  } else {
-    $(nextOrSubmitButtons).attr("aria-disabled", "true");
-  }
+  console.log(allRadiosAndCheckboxesFilled, allOtherFieldsFilled, errorMessagesVisible, ineligibleAlertPanelVisible);
+
 }
 
 
