@@ -756,6 +756,7 @@ function redirectOnSubmission(confirmationPageUrlSlugAndQueries) {
 }
 
 function handleAddressSearchFunctionality(event, kdf) {
+  console.log("this:", this);
   $("#dform_widget_button_but_enter_address_manually").click(function () {
     // Need to chnage this to work on class and look up and show the fields on that page
     enterAddressManually();
@@ -771,7 +772,6 @@ function handleAddressSearchFunctionality(event, kdf) {
   $(`#dform_widget_sel_property_search_result_${pageID}`).on(
     "click keyup",
     function (e) {
-      console.log("this:", this);
       if (e.type === "keyup" && e.keyCode !== 13) {
         return;
       } else {
