@@ -621,7 +621,7 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
 
   // check all fields other than radio/checkboxes
   otherFields.each(function () {
-    console.log("Field ID: " + this.id + ", Value: " + $(this).val());
+    console.log(`Field ID: ${this.id}`, `Value: ${$(this).val()}`);
     if (!$(this).val().trim()) {
       allOtherFieldsFilled = false;
     }
