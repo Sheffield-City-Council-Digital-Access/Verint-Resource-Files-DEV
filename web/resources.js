@@ -597,52 +597,50 @@ function checkCurrentPageFields() {
 
 function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   // set all fields to filled by default
-  var allRadiosAndCheckboxesFilled = true;
-  var allOtherFieldsFilled = true;
+  const allRadiosAndCheckboxesFilled = $("input[type='radio'], input[type='checkbox']").not(":checked").length === 0;
+  let allOtherFieldsFilled = true;
   // check radio/checkboxes
   // 1 - get HTML names of radio/checbox groups
-  var radioAndCheckboxNames = [];
-  for (var i = 0; i < radiosAndCheckboxes.length; i++) {
-    if (radioAndCheckboxNames.indexOf(radiosAndCheckboxes[i].name) === -1) {
-      radioAndCheckboxNames.push(radiosAndCheckboxes[i].name);
-    }
-  }
+  // var radioAndCheckboxNames = [];
+  // for (var i = 0; i < radiosAndCheckboxes.length; i++) {
+  //   if (radioAndCheckboxNames.indexOf(radiosAndCheckboxes[i].name) === -1) {
+  //     radioAndCheckboxNames.push(radiosAndCheckboxes[i].name);
+  //   }
+  // }
 
   // 2 - check that each of the radio/checkbox groups are checked
-  for (var j = 0; j < radioAndCheckboxNames.length; j++) {
-    if (
-      $("input[name='" + radioAndCheckboxNames[j] + "']:checked").length === 0
-    ) {
-      // if a radio/checkbox group is not checked
-      // set checker variable to false
-      allRadiosAndCheckboxesFilled = false;
-    }
-  }
+  // for (var j = 0; j < radioAndCheckboxNames.length; j++) {
+  //   if (
+  //     $("input[name='" + radioAndCheckboxNames[j] + "']:checked").length === 0
+  //   ) {
+  //     // if a radio/checkbox group is not checked
+  //     // set checker variable to false
+  //     allRadiosAndCheckboxesFilled = false;
+  //   }
+  // }
 
   // check all fields other than radio/checkboxes
   otherFields.each(function () {
-    console.group(" --- function disabledButtonToggle : otherFields.each --- ");
-      console.log(this);
-      console.log(this.id);
-      console.log(this.name);
-      console.log(this.label);
-      console.log(this.value);
-      console.log($(this).val());
-    console.groupEnd();
-    if (!$(this).val()) {
-      // if no value, button disabled
+    console.log("Field ID: " + this.id + ", Value: " + $(this).val());
+    if (!$(this).val().trim()) {
       allOtherFieldsFilled = false;
-    } else {
-      // if value exists, remove whitespace and check other characters are entered
-      if (this.value) {
-        var whitespaceRemoved = $(this).val().replace(/\s/g, "");
-        var fieldValueLength = whitespaceRemoved.length;
-        if (fieldValueLength === 0) {
-          allOtherFieldsFilled = false;
-        }
-      }
     }
   });
+  // otherFields.each(function () {
+  //   if (!$(this).val()) {
+  //     // if no value, button disabled
+  //     allOtherFieldsFilled = false;
+  //   } else {
+  //     // if value exists, remove whitespace and check other characters are entered
+  //     if (this.value) {
+  //       var whitespaceRemoved = $(this).val().replace(/\s/g, "");
+  //       var fieldValueLength = whitespaceRemoved.length;
+  //       if (fieldValueLength === 0) {
+  //         allOtherFieldsFilled = false;
+  //       }
+  //     }
+  //   }
+  // });
   var currentPage = $('.dform_page[data-active="true"]:visible');
   var errorMessagesVisible = currentPage.has(
     ".dform_validationMessage:visible"
