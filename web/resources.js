@@ -595,111 +595,99 @@ function checkCurrentPageFields() {
   }, 0);
 }
 
-function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
-  // Check if all radio and checkbox inputs are filled
-  const allRadiosAndCheckboxesFilled = !Array.from(radiosAndCheckboxes).some(
-    input => !input.checked
-  );
-
-  // Check if all other fields are filled
-  const allOtherFieldsFilled = Array.from(otherFields).every(
-    field => field.value.trim() !== ""
-  );
-
-  // Get the current active page
-  const currentPage = document.querySelector('.dform_page[data-active="true"]');
-  
-  // Check if error messages are visible on the current page
-  const errorMessagesVisible = currentPage.querySelectorAll(".dform_validationMessage:not([style*='display: none'])").length;
-
-  // Check if ineligible alert panels are visible on the current page
-  const ineligibleAlertPanelVisible = currentPage.querySelectorAll(".alert-panel--ineligible:not([style*='display: none'])").length;
-
-  // Get all next and submit buttons on the page
-  const nextOrSubmitButtons = document.querySelectorAll(".dform_widget_type_button[data-type='next'], .next-button, submit-button, .property-search-page-button, .secondary-cta-property-search, .secondary-cta-property-search-custom, .location-search-page-button--highways, .secondary-cta-location-search--highways, .location-search-page-button--map, .secondary-cta-location-search--map, .secondary-cta-location-search--custom, .address-search-page-button--next, .address-search-page-button--submit, .address-search-page-button--submit-custom, .address-search-page-button--submit-highways, .address-search-page-button--submit-no-address, .address-search-page-button--submit-custom-no-address, .address-search-page-button--next-another, .address-search-page-button--submit-another, .address-search-page-button--submit-another-no-address, .address-search-page-button--submit-another-custom, .address-search-page-button--submit-another-custom-no-address, .secondary-cta-mandatory, .web-black");
-
-  // Enable or disable buttons based on the filled state of inputs and visibility of errors
-  nextOrSubmitButtons.forEach(button => button.setAttribute("aria-disabled", !(allRadiosAndCheckboxesFilled && allOtherFieldsFilled && !errorMessagesVisible && !ineligibleAlertPanelVisible)));
-
-  console.log(allRadiosAndCheckboxesFilled, allOtherFieldsFilled, errorMessagesVisible, ineligibleAlertPanelVisible);
-
-}
-
-
-
 // function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
-//   // set all fields to filled by default
-//   const allRadiosAndCheckboxesFilled = $("input[type='radio'], input[type='checkbox']").not(":checked").length === 0;
-//   let allOtherFieldsFilled = true;
-//   // check radio/checkboxes
-//   // 1 - get HTML names of radio/checbox groups
-//   // var radioAndCheckboxNames = [];
-//   // for (var i = 0; i < radiosAndCheckboxes.length; i++) {
-//   //   if (radioAndCheckboxNames.indexOf(radiosAndCheckboxes[i].name) === -1) {
-//   //     radioAndCheckboxNames.push(radiosAndCheckboxes[i].name);
-//   //   }
-//   // }
+//   // Check if all radio and checkbox inputs are filled
+//   const allRadiosAndCheckboxesFilled = !Array.from(radiosAndCheckboxes).some(
+//     input => !input.checked
+//   );
 
-//   // 2 - check that each of the radio/checkbox groups are checked
-//   // for (var j = 0; j < radioAndCheckboxNames.length; j++) {
-//   //   if (
-//   //     $("input[name='" + radioAndCheckboxNames[j] + "']:checked").length === 0
-//   //   ) {
-//   //     // if a radio/checkbox group is not checked
-//   //     // set checker variable to false
-//   //     allRadiosAndCheckboxesFilled = false;
-//   //   }
-//   // }
+//   // Check if all other fields are filled
+//   const allOtherFieldsFilled = Array.from(otherFields).every(
+//     field => field.value.trim() !== ""
+//   );
 
-//   // check all fields other than radio/checkboxes
-//   otherFields.each(function () {
-//     console.log(`Field ID: ${this.id}`, `Value: ${$(this).val()}`);
-//     if (!$(this).val().trim()) {
-//       console.log('false');
-//       allOtherFieldsFilled = false;
-//     }
-//     if ($(this).val().trim()) {
-//       console.log('true');
-//       allOtherFieldsFilled = false;
-//     }
-//   });
-//   // otherFields.each(function () {
-//   //   if (!$(this).val()) {
-//   //     // if no value, button disabled
-//   //     allOtherFieldsFilled = false;
-//   //   } else {
-//   //     // if value exists, remove whitespace and check other characters are entered
-//   //     if (this.value) {
-//   //       var whitespaceRemoved = $(this).val().replace(/\s/g, "");
-//   //       var fieldValueLength = whitespaceRemoved.length;
-//   //       if (fieldValueLength === 0) {
-//   //         allOtherFieldsFilled = false;
-//   //       }
-//   //     }
-//   //   }
-//   // });
-//   var currentPage = $('.dform_page[data-active="true"]:visible');
-//   var errorMessagesVisible = currentPage.has(
-//     ".dform_validationMessage:visible"
-//   ).length;
-//   var ineligibleAlertPanelVisible = currentPage.has(
-//     ".alert-panel--ineligible:visible"
-//   ).length;
-//   // get the buttons to enable/disable = only next or submit buttons
-//   var nextOrSubmitButtons =
-//     ".dform_widget_type_button[data-type='next'], .next-button, submit-button, .property-search-page-button, .secondary-cta-property-search, .secondary-cta-property-search-custom, .location-search-page-button--highways, .secondary-cta-location-search--highways, .location-search-page-button--map, .secondary-cta-location-search--map, .secondary-cta-location-search--custom, .address-search-page-button--next, .address-search-page-button--submit, .address-search-page-button--submit-custom, .address-search-page-button--submit-highways, .address-search-page-button--submit-no-address, .address-search-page-button--submit-custom-no-address, .address-search-page-button--next-another, .address-search-page-button--submit-another, .address-search-page-button--submit-another-no-address, .address-search-page-button--submit-another-custom, .address-search-page-button--submit-another-custom-no-address, .secondary-cta-mandatory, .web-black";
-//   // check that all radio/checkbox and other fields are all still set to filled
-//   if (
-//     allOtherFieldsFilled &&
-//     allRadiosAndCheckboxesFilled &&
-//     errorMessagesVisible === 0 &&
-//     ineligibleAlertPanelVisible === 0
-//   ) {
-//     $(nextOrSubmitButtons).attr("aria-disabled", "false");
-//   } else {
-//     $(nextOrSubmitButtons).attr("aria-disabled", "true");
-//   }
+//   // Get the current active page
+//   const currentPage = document.querySelector('.dform_page[data-active="true"]');
+  
+//   // Check if error messages are visible on the current page
+//   const errorMessagesVisible = currentPage.querySelectorAll(".dform_validationMessage:not([style*='display: none'])").length;
+
+//   // Check if ineligible alert panels are visible on the current page
+//   const ineligibleAlertPanelVisible = currentPage.querySelectorAll(".alert-panel--ineligible:not([style*='display: none'])").length;
+
+//   // Get all next and submit buttons on the page
+//   const nextOrSubmitButtons = document.querySelectorAll(".dform_widget_type_button[data-type='next'], .next-button, submit-button, .property-search-page-button, .secondary-cta-property-search, .secondary-cta-property-search-custom, .location-search-page-button--highways, .secondary-cta-location-search--highways, .location-search-page-button--map, .secondary-cta-location-search--map, .secondary-cta-location-search--custom, .address-search-page-button--next, .address-search-page-button--submit, .address-search-page-button--submit-custom, .address-search-page-button--submit-highways, .address-search-page-button--submit-no-address, .address-search-page-button--submit-custom-no-address, .address-search-page-button--next-another, .address-search-page-button--submit-another, .address-search-page-button--submit-another-no-address, .address-search-page-button--submit-another-custom, .address-search-page-button--submit-another-custom-no-address, .secondary-cta-mandatory, .web-black");
+
+//   // Enable or disable buttons based on the filled state of inputs and visibility of errors
+//   nextOrSubmitButtons.forEach(button => button.setAttribute("aria-disabled", !(allRadiosAndCheckboxesFilled && allOtherFieldsFilled && !errorMessagesVisible && !ineligibleAlertPanelVisible)));
+
+//   console.log(allRadiosAndCheckboxesFilled, allOtherFieldsFilled, errorMessagesVisible, ineligibleAlertPanelVisible);
+
 // }
+
+function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
+  // set all fields to filled by default
+  const allRadiosAndCheckboxesFilled = true;
+  let allOtherFieldsFilled = true;
+  // check radio/checkboxes
+  // 1 - get HTML names of radio/checbox groups
+  var radioAndCheckboxNames = [];
+  for (var i = 0; i < radiosAndCheckboxes.length; i++) {
+    if (radioAndCheckboxNames.indexOf(radiosAndCheckboxes[i].name) === -1) {
+      radioAndCheckboxNames.push(radiosAndCheckboxes[i].name);
+    }
+  }
+
+  // 2 - check that each of the radio/checkbox groups are checked
+  for (var j = 0; j < radioAndCheckboxNames.length; j++) {
+    if (
+      $("input[name='" + radioAndCheckboxNames[j] + "']:checked").length === 0
+    ) {
+      // if a radio/checkbox group is not checked
+      // set checker variable to false
+      allRadiosAndCheckboxesFilled = false;
+    }
+  }
+
+  // check all fields other than radio/checkboxes
+  otherFields.each(function () {
+    if (!$(this).val()) {
+      // if no value, button disabled
+      allOtherFieldsFilled = false;
+    } else {
+      // if value exists, remove whitespace and check other characters are entered
+      if (this.value) {
+        var whitespaceRemoved = $(this).val().replace(/\s/g, "");
+        var fieldValueLength = whitespaceRemoved.length;
+        if (fieldValueLength === 0) {
+          allOtherFieldsFilled = false;
+        }
+      }
+    }
+  });
+
+  var currentPage = $('.dform_page[data-active="true"]:visible');
+  var errorMessagesVisible = currentPage.has(
+    ".dform_validationMessage:visible"
+  ).length;
+  var ineligibleAlertPanelVisible = currentPage.has(
+    ".alert-panel--ineligible:visible"
+  ).length;
+  // get the buttons to enable/disable = only next or submit buttons
+  var nextOrSubmitButtons =
+    ".dform_widget_type_button[data-type='next'], .next-button, submit-button, .property-search-page-button, .secondary-cta-property-search, .secondary-cta-property-search-custom, .location-search-page-button--highways, .secondary-cta-location-search--highways, .location-search-page-button--map, .secondary-cta-location-search--map, .secondary-cta-location-search--custom, .address-search-page-button--next, .address-search-page-button--submit, .address-search-page-button--submit-custom, .address-search-page-button--submit-highways, .address-search-page-button--submit-no-address, .address-search-page-button--submit-custom-no-address, .address-search-page-button--next-another, .address-search-page-button--submit-another, .address-search-page-button--submit-another-no-address, .address-search-page-button--submit-another-custom, .address-search-page-button--submit-another-custom-no-address, .secondary-cta-mandatory, .web-black";
+  // check that all radio/checkbox and other fields are all still set to filled
+  if (
+    allOtherFieldsFilled &&
+    allRadiosAndCheckboxesFilled &&
+    errorMessagesVisible === 0 &&
+    ineligibleAlertPanelVisible === 0
+  ) {
+    $(nextOrSubmitButtons).attr("aria-disabled", "false");
+  } else {
+    $(nextOrSubmitButtons).attr("aria-disabled", "true");
+  }
+}
 
 function confirmationURL(
   kdf,
