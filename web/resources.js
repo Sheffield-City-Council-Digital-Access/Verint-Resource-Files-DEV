@@ -623,6 +623,11 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   otherFields.each(function () {
     console.log(`Field ID: ${this.id}`, `Value: ${$(this).val()}`);
     if (!$(this).val().trim()) {
+      console.log('false');
+      allOtherFieldsFilled = false;
+    }
+    if ($(this).val().trim()) {
+      console.log('true');
       allOtherFieldsFilled = false;
     }
   });
