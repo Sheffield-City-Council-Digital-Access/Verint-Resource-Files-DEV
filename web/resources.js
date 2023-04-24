@@ -173,13 +173,14 @@ function initiateReady(event, kdf, progressBar) {
   }
 }
 
-var pageID = "";
+let pageID = "";
 function initiatePageChange(event, kdf, currentpageid, targetpageid) {
   // Function designed to run when the page is changed.
 
   $(`div[data-type="page"][data-pos="${targetpageid}"]`).each(function () {
     pageID = this.id.slice(11);
   });
+  console.log(pageID);
 
   setTimeout(setHtmlHead(KDF.getVal("txt_formtitle")), 0);
   setProgressBarWidthAndLabel();
@@ -243,7 +244,7 @@ function handleCustomActions(action, response) {
       }
     }
   }
-  
+
   if (action === "retrieve-address-web") {
     if (pageID === "page_about_you") {
       KDF.setVal("txt_cusaddressnumber", capitalizeString(val.address_number));
@@ -599,7 +600,9 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   // set all fields to filled by default
   let allRadiosAndCheckboxesFilled = true;
   //   let allOtherFieldsFilled = true;
-  const allOtherFieldsFilled = Array.from(otherFields).every(field => field.value.trim() !== "");
+  const allOtherFieldsFilled = Array.from(otherFields).every(
+    (field) => field.value.trim() !== ""
+  );
   // check radio/checkboxes
   // 1 - get HTML names of radio/checbox groups
   let radioAndCheckboxNames = [];
@@ -611,7 +614,9 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
 
   // 2 - check that each of the radio/checkbox groups are checked
   for (let j = 0; j < radioAndCheckboxNames.length; j++) {
-    if ($("input[name='" + radioAndCheckboxNames[j] + "']:checked").length === 0) {
+    if (
+      $("input[name='" + radioAndCheckboxNames[j] + "']:checked").length === 0
+    ) {
       // if a radio/checkbox group is not checked
       // set checker variable to false
       allRadiosAndCheckboxesFilled = false;
@@ -658,8 +663,6 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   }
 }
 
-
-
 // async function checkCurrentPageFields() {
 //   const requiredInputTypes = "input:required:not([type='hidden']), textarea:required:not([type='hidden']), select:required:not([type='hidden'])";
 
@@ -684,9 +687,6 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
 
 //   console.log(allRadiosAndCheckboxesFilled, allOtherFieldsFilled, !errorMessagesVisible, ineligibleAlertPanelVisible);
 // }
-
-
-
 
 function confirmationURL(
   kdf,
@@ -755,13 +755,6 @@ function redirectOnSubmission(confirmationPageUrlSlugAndQueries) {
   window.location = confirmationPageUrl;
 }
 
-// function HandleOptionsSelected(event, kdf, field, label, val) {
-//   if (field === `sel_property_search_result_${pageID}[]`) {
-//     resetErrorMessage(field.substring(0, field.length - 2), "Enter your postcode in the correct format");
-//     if (val) KDF.customdata("retrieve-address-web", this.id, true, true, {search_property: this.value,});
-//   }
-// }
-
 function handleAddressSearchFunctionality(event, kdf) {
   $("#dform_widget_button_but_enter_address_manually").click(function () {
     // Need to chnage this to work on class and look up and show the fields on that page
@@ -775,24 +768,20 @@ function handleAddressSearchFunctionality(event, kdf) {
     }
   );
 
-  $(`#dform_widget_sel_property_search_result_${pageID}`).on(
-    "click keyup",
-    function (e) {
-      if (e.type === "keyup" && e.keyCode !== 13) {
-        return;
-      } else {
-        resetErrorMessage(
-          this.name.substring(0, this.name.length - 2),
-          "Enter your postcode in the correct format"
-        );
-        if (this.value) {
-          KDF.customdata("retrieve-address-web", this.id, true, true, {
-            search_property: this.value,
-          });
-        }
-      }
+  $(".address-selector select").on("change click keyup", function (e) {
+    if (e.type === "keyup" && e.keyCode !== 13) {
+      return;
+    } else {
+      resetErrorMessage(
+        this.name.substring(0, this.name.length - 2),
+        "Enter your postcode in the correct format"
+      );
+      if (this.value)
+        KDF.customdata("retrieve-address-web", this.id, true, true, {
+          search_property: this.value,
+        });
     }
-  );
+  });
 
   $(".search-postcode").keydown(function (e) {
     resetErrorMessage(
@@ -1170,7 +1159,16 @@ function handleAddressSearchFunctionality(event, kdf) {
         );
       } else {
         KDF.setWidgetNotRequired(`txt_search_property_${pageID}`);
-        KDF.setVal(`txt_fulladdress_${pageID}`, KDF.getVal(`txt_addressnumber_${pageID}`) + " " + KDF.getVal(`txt_addressline1_${pageID}`) + ", " + KDF.getVal(`txt_town_${pageID}`) + ", " + KDF.getVal(`txt_postcode_${pageID}`));
+        KDF.setVal(
+          `txt_fulladdress_${pageID}`,
+          KDF.getVal(`txt_addressnumber_${pageID}`) +
+            " " +
+            KDF.getVal(`txt_addressline1_${pageID}`) +
+            ", " +
+            KDF.getVal(`txt_town_${pageID}`) +
+            ", " +
+            KDF.getVal(`txt_postcode_${pageID}`)
+        );
       }
       progressAction(action);
     } else {
@@ -1277,101 +1275,251 @@ function resetErrorMessage(field, defaultErrorMessage) {
 
 // Required for KDF.custom submission function/forms adapter field validation
 function submitForm() {
-  var textFields = $('.dform_page[data-active="true"]').find('input[type="text"], textarea, select[name="txt_"]');
+  var textFields = $('.dform_page[data-active="true"]').find(
+    'input[type="text"], textarea, select[name="txt_"]'
+  );
   var textFieldNames = "";
-  $(textFields).each(function () {textFieldNames += $(this).prop("name") + ",";});
-  var numberFields = $('.dform_page[data-active="true"]').find('input[type="number"], number, select[name="num_"]');
+  $(textFields).each(function () {
+    textFieldNames += $(this).prop("name") + ",";
+  });
+  var numberFields = $('.dform_page[data-active="true"]').find(
+    'input[type="number"], number, select[name="num_"]'
+  );
   var numberFieldNames = "";
-  $(numberFields).each(function () {numberFieldNames += $(this).prop("name") + ",";});
-  var numberFields = $('.dform_page[data-active="true"]').find('input[type="number"], number, select[name="cur_"]' );
+  $(numberFields).each(function () {
+    numberFieldNames += $(this).prop("name") + ",";
+  });
+  var numberFields = $('.dform_page[data-active="true"]').find(
+    'input[type="number"], number, select[name="cur_"]'
+  );
   var numberFieldNames = "";
-  $(numberFields).each(function () { numberFieldNames += $(this).prop("name") + ","; });
-  var selectFields = $('.dform_page[data-active="true"]').find('select[name^="sel_"]:not([name^="sel_property_search_result_"])');
+  $(numberFields).each(function () {
+    numberFieldNames += $(this).prop("name") + ",";
+  });
+  var selectFields = $('.dform_page[data-active="true"]').find(
+    'select[name^="sel_"]:not([name^="sel_property_search_result_"])'
+  );
   var selectFieldNames = "";
-  $(selectFields).each(function () {selectFieldNames += $(this).prop("name") + ",";});
-  var checkFields = $('.dform_page[data-active="true"]').find('input[type="checkField"], checkField, select[name="chk_"]');
+  $(selectFields).each(function () {
+    selectFieldNames += $(this).prop("name") + ",";
+  });
+  var checkFields = $('.dform_page[data-active="true"]').find(
+    'input[type="checkField"], checkField, select[name="chk_"]'
+  );
   var checkFieldNames = "";
-  $(checkFields).each(function () {checkFieldNames += $(this).prop("name") + ",";});
-  var checkFields = $('.dform_page[data-active="true"]').find('input[type="checkField"], checkField, select[name="mchk_"]');
+  $(checkFields).each(function () {
+    checkFieldNames += $(this).prop("name") + ",";
+  });
+  var checkFields = $('.dform_page[data-active="true"]').find(
+    'input[type="checkField"], checkField, select[name="mchk_"]'
+  );
   var checkFieldNames = "";
-  $(checkFields).each(function () {checkFieldNames += $(this).prop("name") + ",";});
-  var radioFields = $('.dform_page[data-active="true"]').find('input[type="radio"], radio, select[name="rad_"]');
+  $(checkFields).each(function () {
+    checkFieldNames += $(this).prop("name") + ",";
+  });
+  var radioFields = $('.dform_page[data-active="true"]').find(
+    'input[type="radio"], radio, select[name="rad_"]'
+  );
   var radioFieldNames = "";
-  $(radioFields).each(function () {radioFieldNames += $(this).prop("name") + ",";});
-  var emailFields = $('.dform_page[data-active="true"]').find('input[type="email"], email, select[name="eml_"]');
+  $(radioFields).each(function () {
+    radioFieldNames += $(this).prop("name") + ",";
+  });
+  var emailFields = $('.dform_page[data-active="true"]').find(
+    'input[type="email"], email, select[name="eml_"]'
+  );
   var emailFieldNames = "";
-  $(emailFields).each(function () {emailFieldNames += $(this).prop("name") + ",";});
-  var telFields = $('.dform_page[data-active="true"]').find('input[type="tel"], tel, select[name="tel_"]');
+  $(emailFields).each(function () {
+    emailFieldNames += $(this).prop("name") + ",";
+  });
+  var telFields = $('.dform_page[data-active="true"]').find(
+    'input[type="tel"], tel, select[name="tel_"]'
+  );
   var telFieldNames = "";
-  $(telFields).each(function () {telFieldNames += $(this).prop("name") + ",";});
-  var dateFields = $('.dform_page[data-active="true"]').find('input[type="date"], date, select[name="dt_"]');
+  $(telFields).each(function () {
+    telFieldNames += $(this).prop("name") + ",";
+  });
+  var dateFields = $('.dform_page[data-active="true"]').find(
+    'input[type="date"], date, select[name="dt_"]'
+  );
   var dateFieldNames = "";
-  $(dateFields).each(function () {dateFieldNames += $(this).prop("name") + ",";});
-  var timeFields = $('.dform_page[data-active="true"]').find('input[type="time"], time, select[name="time_"]');
+  $(dateFields).each(function () {
+    dateFieldNames += $(this).prop("name") + ",";
+  });
+  var timeFields = $('.dform_page[data-active="true"]').find(
+    'input[type="time"], time, select[name="time_"]'
+  );
   var timeFieldNames = "";
-  $(timeFields).each(function () { timeFieldNames += $(this).prop("name") + ","; });
-  KDF.custom("kdf-save-web", "_submit_function",textFieldNames + numberFieldNames + selectFieldNames + checkFieldNames + radioFieldNames + emailFieldNames + telFieldNames + dateFieldNames + timeFieldNames + "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type", "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type", true, true, true);
+  $(timeFields).each(function () {
+    timeFieldNames += $(this).prop("name") + ",";
+  });
+  KDF.custom(
+    "kdf-save-web",
+    "_submit_function",
+    textFieldNames +
+      numberFieldNames +
+      selectFieldNames +
+      checkFieldNames +
+      radioFieldNames +
+      emailFieldNames +
+      telFieldNames +
+      dateFieldNames +
+      timeFieldNames +
+      "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type",
+    "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type",
+    true,
+    true,
+    true
+  );
 
   // saveForm("false");
 }
 
 function submitFormCustom() {
-  var textFields = $('.dform_page[data-active="true"]').find('input[type="text"], textarea, select[name="txt_"]');
+  var textFields = $('.dform_page[data-active="true"]').find(
+    'input[type="text"], textarea, select[name="txt_"]'
+  );
   var textFieldNames = "";
-  $(textFields).each(function () {textFieldNames += $(this).prop("name") + ",";});
-  var numberFields = $('.dform_page[data-active="true"]').find('input[type="number"], number, select[name="num_"]');
+  $(textFields).each(function () {
+    textFieldNames += $(this).prop("name") + ",";
+  });
+  var numberFields = $('.dform_page[data-active="true"]').find(
+    'input[type="number"], number, select[name="num_"]'
+  );
   var numberFieldNames = "";
-  $(numberFields).each(function () {numberFieldNames += $(this).prop("name") + ",";});
-  var numberFields = $('.dform_page[data-active="true"]').find('input[type="number"], number, select[name="cur_"]' );
+  $(numberFields).each(function () {
+    numberFieldNames += $(this).prop("name") + ",";
+  });
+  var numberFields = $('.dform_page[data-active="true"]').find(
+    'input[type="number"], number, select[name="cur_"]'
+  );
   var numberFieldNames = "";
-  $(numberFields).each(function () {numberFieldNames += $(this).prop("name") + ",";});
-  var selectFields = $('.dform_page[data-active="true"]').find('select[name^="sel_"]:not([name^="sel_property_search_result_"])');
+  $(numberFields).each(function () {
+    numberFieldNames += $(this).prop("name") + ",";
+  });
+  var selectFields = $('.dform_page[data-active="true"]').find(
+    'select[name^="sel_"]:not([name^="sel_property_search_result_"])'
+  );
   var selectFieldNames = "";
-  $(selectFields).each(function () {selectFieldNames += $(this).prop("name") + ",";});
-  var checkFields = $('.dform_page[data-active="true"]').find('input[type="checkField"], checkField, select[name="chk_"]');
+  $(selectFields).each(function () {
+    selectFieldNames += $(this).prop("name") + ",";
+  });
+  var checkFields = $('.dform_page[data-active="true"]').find(
+    'input[type="checkField"], checkField, select[name="chk_"]'
+  );
   var checkFieldNames = "";
-  $(checkFields).each(function () {checkFieldNames += $(this).prop("name") + ",";});
-  var checkFields = $('.dform_page[data-active="true"]').find('input[type="checkField"], checkField, select[name="mchk_"]');
+  $(checkFields).each(function () {
+    checkFieldNames += $(this).prop("name") + ",";
+  });
+  var checkFields = $('.dform_page[data-active="true"]').find(
+    'input[type="checkField"], checkField, select[name="mchk_"]'
+  );
   var checkFieldNames = "";
-  $(checkFields).each(function () {checkFieldNames += $(this).prop("name") + ",";});
-  var radioFields = $('.dform_page[data-active="true"]').find('input[type="radio"], radio, select[name="rad_"]');
+  $(checkFields).each(function () {
+    checkFieldNames += $(this).prop("name") + ",";
+  });
+  var radioFields = $('.dform_page[data-active="true"]').find(
+    'input[type="radio"], radio, select[name="rad_"]'
+  );
   var radioFieldNames = "";
-  $(radioFields).each(function () {radioFieldNames += $(this).prop("name") + ",";});
-  var emailFields = $('.dform_page[data-active="true"]').find('input[type="email"], email, select[name="eml_"]');
+  $(radioFields).each(function () {
+    radioFieldNames += $(this).prop("name") + ",";
+  });
+  var emailFields = $('.dform_page[data-active="true"]').find(
+    'input[type="email"], email, select[name="eml_"]'
+  );
   var emailFieldNames = "";
-  $(emailFields).each(function () {emailFieldNames += $(this).prop("name") + ",";});
-  var telFields = $('.dform_page[data-active="true"]').find('input[type="tel"], tel, select[name="tel_"]');
+  $(emailFields).each(function () {
+    emailFieldNames += $(this).prop("name") + ",";
+  });
+  var telFields = $('.dform_page[data-active="true"]').find(
+    'input[type="tel"], tel, select[name="tel_"]'
+  );
   var telFieldNames = "";
-  $(telFields).each(function () {telFieldNames += $(this).prop("name") + ",";});
-  var dateFields = $('.dform_page[data-active="true"]').find('input[type="date"], date, select[name="dt_"]');
+  $(telFields).each(function () {
+    telFieldNames += $(this).prop("name") + ",";
+  });
+  var dateFields = $('.dform_page[data-active="true"]').find(
+    'input[type="date"], date, select[name="dt_"]'
+  );
   var dateFieldNames = "";
-  $(dateFields).each(function () {dateFieldNames += $(this).prop("name") + ",";});
-  var timeFields = $('.dform_page[data-active="true"]').find('input[type="time"], time, select[name="time_"]');
+  $(dateFields).each(function () {
+    dateFieldNames += $(this).prop("name") + ",";
+  });
+  var timeFields = $('.dform_page[data-active="true"]').find(
+    'input[type="time"], time, select[name="time_"]'
+  );
   var timeFieldNames = "";
-  $(timeFields).each(function () {timeFieldNames += $(this).prop("name") + ",";});
-  KDF.custom("kdf-save-custom", "_submit_function",textFieldNames + numberFieldNames + selectFieldNames + checkFieldNames + radioFieldNames + emailFieldNames + telFieldNames + dateFieldNames + timeFieldNames + "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name","le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name", true, true, true);
+  $(timeFields).each(function () {
+    timeFieldNames += $(this).prop("name") + ",";
+  });
+  KDF.custom(
+    "kdf-save-custom",
+    "_submit_function",
+    textFieldNames +
+      numberFieldNames +
+      selectFieldNames +
+      checkFieldNames +
+      radioFieldNames +
+      emailFieldNames +
+      telFieldNames +
+      dateFieldNames +
+      timeFieldNames +
+      "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name",
+    "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name",
+    true,
+    true,
+    true
+  );
 
   // saveForm("false");
 }
 
 function submitFormHighways() {
   if (KDF.getVal("level_3_data") !== "") {
-    KDF.setVal("le_title", "Report about " + KDF.getVal("level_1_data") + " - " + KDF.getVal("level_2_data") + " - " + KDF.getVal("level_3_data"));
+    KDF.setVal(
+      "le_title",
+      "Report about " +
+        KDF.getVal("level_1_data") +
+        " - " +
+        KDF.getVal("level_2_data") +
+        " - " +
+        KDF.getVal("level_3_data")
+    );
   } else {
     if (KDF.getVal("level_2_data") !== "") {
-      KDF.setVal("le_title", "Report about " + KDF.getVal("level_1_data") + " - " + KDF.getVal("level_2_data"));
+      KDF.setVal(
+        "le_title",
+        "Report about " +
+          KDF.getVal("level_1_data") +
+          " - " +
+          KDF.getVal("level_2_data")
+      );
     } else {
       KDF.setVal("le_title", "Report about " + KDF.getVal("level_1_data"));
     }
   }
 
-  KDF.setVal("faultinfo", KDF.getVal("le_title") + " - " + KDF.getVal("txta_report_details"));
+  KDF.setVal(
+    "faultinfo",
+    KDF.getVal("le_title") + " - " + KDF.getVal("txta_report_details")
+  );
 
   KDF.setVal("locinfo", KDF.getVal("txt_fulladdress"));
 
-  KDF.setVal("le_description", KDF.getVal("faultinfo") + " || " + KDF.getVal("locinfo"));
+  KDF.setVal(
+    "le_description",
+    KDF.getVal("faultinfo") + " || " + KDF.getVal("locinfo")
+  );
 
-  KDF.custom("kdf-save-custom", "_submit_function", "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle,txt_title,txt_firstname,txt_surname,txt_dob,txt_phone,txt_email,level_1_data,level_2_data,level_3_data,txt_streetdescription,txt_usrn,txt_streetid,txt_fulladdress,txt_uprn,txt_propertyid,txt_postcodearea,txta_report_details,txta_location_details,txt_channel,locinfo,faultinfo,txt_receivedby,doctitle,docpath,txt_customertype,secondcustomer,linkedcaseid,asset_type,asset_type_id,central_asset_id,asset_responsibility,object_id,txt_prestige,longitude_x,latitude_y,site_name,site_code,empref,confirmenq,confirmjobid,gis_map,gis_map_lat,gis_map_lon,locator_page_about_the_location,file_upload", "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle", true, true, true);
+  KDF.custom(
+    "kdf-save-custom",
+    "_submit_function",
+    "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle,txt_title,txt_firstname,txt_surname,txt_dob,txt_phone,txt_email,level_1_data,level_2_data,level_3_data,txt_streetdescription,txt_usrn,txt_streetid,txt_fulladdress,txt_uprn,txt_propertyid,txt_postcodearea,txta_report_details,txta_location_details,txt_channel,locinfo,faultinfo,txt_receivedby,doctitle,docpath,txt_customertype,secondcustomer,linkedcaseid,asset_type,asset_type_id,central_asset_id,asset_responsibility,object_id,txt_prestige,longitude_x,latitude_y,site_name,site_code,empref,confirmenq,confirmjobid,gis_map,gis_map_lat,gis_map_lon,locator_page_about_the_location,file_upload",
+    "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,service_code,subject_code,txt_formtitle",
+    true,
+    true,
+    true
+  );
 
   // saveForm("false", "highways_report");
 }
@@ -1394,7 +1542,8 @@ function saveForm(le_upload_file, le_form_name) {
   // Loop through each field in the form
   inputs.forEach((input) => {
     // Add the ID and value to the object if they exist
-    if (input.value !== "" && input.value !== "Please select...") formData[input.name] = input.value;
+    if (input.value !== "" && input.value !== "Please select...")
+      formData[input.name] = input.value;
   });
 
   if (KDF.getVal("txt_reference")) {
