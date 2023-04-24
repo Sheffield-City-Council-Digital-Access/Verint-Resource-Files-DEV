@@ -755,12 +755,12 @@ function redirectOnSubmission(confirmationPageUrlSlugAndQueries) {
   window.location = confirmationPageUrl;
 }
 
-function HandleOptionsSelected(event, kdf, field, label, val) {
-  if (field === `sel_property_search_result_${pageID}[]`) {
-    resetErrorMessage(field.substring(0, field.length - 2), "Enter your postcode in the correct format");
-    if (val) KDF.customdata("retrieve-address-web", this.id, true, true, {search_property: this.value,});
-  }
-}
+// function HandleOptionsSelected(event, kdf, field, label, val) {
+//   if (field === `sel_property_search_result_${pageID}[]`) {
+//     resetErrorMessage(field.substring(0, field.length - 2), "Enter your postcode in the correct format");
+//     if (val) KDF.customdata("retrieve-address-web", this.id, true, true, {search_property: this.value,});
+//   }
+// }
 
 function handleAddressSearchFunctionality(event, kdf) {
   $("#dform_widget_button_but_enter_address_manually").click(function () {
