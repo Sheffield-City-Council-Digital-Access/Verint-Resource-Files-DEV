@@ -756,7 +756,7 @@ function redirectOnSubmission(confirmationPageUrlSlugAndQueries) {
 }
 
 function handleAddressSearchFunctionality(event, kdf) {
-  console.log("this:", this);
+  console.log("event:", event, "kdf:", kdf);
   $("#dform_widget_button_but_enter_address_manually").click(function () {
     // Need to chnage this to work on class and look up and show the fields on that page
     enterAddressManually();
