@@ -775,7 +775,7 @@ function handleAddressSearchFunctionality(event, kdf) {
     }
   );
 
-  $(`#dform_widget_sel_property_search_result_${pageID}[]`).on(
+  $(`#dform_widget_sel_property_search_result_${pageID}`).on(
     "click keyup",
     function (e) {
       if (e.type === "keyup" && e.keyCode !== 13) {
