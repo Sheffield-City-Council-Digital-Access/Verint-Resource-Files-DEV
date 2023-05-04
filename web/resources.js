@@ -3240,6 +3240,8 @@ function vegetationFeatureSetHandler(marker, featureSet) {
     var asset = featureSet.features[0];
     var attributes = asset.attributes;
 
+    console.log(attributes);
+
     KDF.setVal(
       "object_id",
       attributes["sheffield.corpmap.CFP_ASSETS_GRASSPLANTAREA.objectid"]
