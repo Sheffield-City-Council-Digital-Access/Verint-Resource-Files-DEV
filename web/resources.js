@@ -180,8 +180,7 @@ function initiatePageChange(event, kdf, currentpageid, targetpageid) {
   $(`div[data-type="page"][data-pos="${targetpageid}"]`).each(function () {
     pageID = this.id.slice(11);
   });
-  console.log(pageID);
-
+  
   setTimeout(setHtmlHead(KDF.getVal("txt_formtitle")), 0);
   setProgressBarWidthAndLabel();
   getAndSetReviewPageData();
@@ -1297,7 +1296,7 @@ function submitForm() {
     numberFieldNames += $(this).prop("name") + ",";
   });
   var selectFields = $('.dform_page[data-active="true"]').find(
-    'select[name^="sel_"]:not([name^="sel_property_search_result_"])'
+    'select[name^="sel_"]:not([name^="sel_property_search_result_"]), select[name^="txt_"]'
   );
   var selectFieldNames = "";
   $(selectFields).each(function () {
@@ -1397,7 +1396,7 @@ function submitFormCustom() {
     numberFieldNames += $(this).prop("name") + ",";
   });
   var selectFields = $('.dform_page[data-active="true"]').find(
-    'select[name^="sel_"]:not([name^="sel_property_search_result_"])'
+    'select[name^="sel_"]:not([name^="sel_property_search_result_"]), select[name^="txt_"]'
   );
   var selectFieldNames = "";
   $(selectFields).each(function () {
