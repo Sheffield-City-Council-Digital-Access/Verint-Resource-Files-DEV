@@ -782,7 +782,7 @@ function handleAddressSearchFunctionality(event, kdf) {
   //   }
   // });
 
-  $(".address-selector select").on("change click keyup", function (e) {
+  $(".address-selector select").on("change click keypress", function (e) {
     if (e.keyCode !== 13 && e.keyCode >= 37 && e.keyCode <= 40) {
       // Ignore arrow keys
       return;
