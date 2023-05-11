@@ -767,8 +767,24 @@ function handleAddressSearchFunctionality(event, kdf) {
     }
   );
 
+  // $(".address-selector select").on("change click keyup", function (e) {
+  //   if (e.type === "keyup" && e.keyCode !== 13) {
+  //     return;
+  //   } else {
+  //     resetErrorMessage(
+  //       this.name.substring(0, this.name.length - 2),
+  //       "Enter your postcode in the correct format"
+  //     );
+  //     if (this.value)
+  //       KDF.customdata("retrieve-address-web", this.id, true, true, {
+  //         search_property: this.value,
+  //       });
+  //   }
+  // });
+
   $(".address-selector select").on("change click keyup", function (e) {
-    if (e.type === "keyup" && e.keyCode !== 13) {
+    if (e.type === "keyup" && e.keyCode !== 13 && e.keyCode >= 37 && e.keyCode <= 40) {
+      // Ignore arrow keys
       return;
     } else {
       resetErrorMessage(
