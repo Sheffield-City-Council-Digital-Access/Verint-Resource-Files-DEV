@@ -199,6 +199,7 @@ function handleCustomActions(action, response) {
   if (action === 'search-national-address') {
     nationalAddress = true;
     nationalAddressArray = [];
+    $(`#dform_widget_sel_property_search_result_${pageID} option:eq(0)`).remove();
     
     const toTitleCase = (str) => {
       return str.toLowerCase().replace(/(?:^|\s|-)\S/g, (match) => {
