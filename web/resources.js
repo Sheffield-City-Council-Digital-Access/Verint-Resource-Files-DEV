@@ -198,6 +198,7 @@ function handleCustomActions(action, response) {
 
   if (action === 'search-national-address') {
     nationalAddress = true;
+    nationalAddressArray = [];
     
     const toTitleCase = (str) => {
       return str.toLowerCase().replace(/(?:^|\s|-)\S/g, (match) => {
@@ -907,6 +908,7 @@ function handleAddressSearchFunctionality(event, kdf) {
   });
 
   $(".find-address").click(function () {
+    $(`#sel_property_search_result_${pageID}`).empty();
     KDF.hideWidget(`ahtm_address_search_result_error_${pageID}`);
     KDF.hideWidget("ahtm_current_location_error");
     KDF.hideSection("area_gis_map");
