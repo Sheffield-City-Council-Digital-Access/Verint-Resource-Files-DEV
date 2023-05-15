@@ -1923,7 +1923,7 @@
         position: fixed;
         /*bottom: 0px;
           right: 0px;*/
-          background: URL('https://empro-sheffieldcc.squiz.cloud/resources/images/Infinity.gif');
+          background: URL('images/Infinity.gif');
           background-repeat: no-repeat;
     }
     #dform_container .dform_fielderror {
@@ -1970,7 +1970,7 @@
 /****** Start of Header Image ******/
 #dform_container #dform_pageholder   {
     /** Start of Header Image **/
-    background-image:url(https://empro-sheffieldcc.squiz.cloud/resources/images/vofheader.png);
+    background-image:url("images/vofheader.png");
     /*background-color:#6fbdad;*/
     background-position:center top;
     background-repeat:no-repeat;
