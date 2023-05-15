@@ -567,7 +567,6 @@ function enterAddressManually() {
     KDF.setVal("txt_custown_another", "");
     KDF.showWidget("txt_cuspostcode_another");
     KDF.setVal("txt_cuspostcode_another", "");
-    KDF.hideWidget("txt_cusfulladdress_another");
     KDF.setVal("txt_cusfulladdress_another", "");
     KDF.hideWidget("txt_cusuprn_another");
     KDF.setVal("txt_cusuprn_another", "");
