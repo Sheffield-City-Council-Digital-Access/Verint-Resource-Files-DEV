@@ -186,6 +186,8 @@ function initiatePageChange(event, kdf, currentpageid, targetpageid) {
   getAndSetReviewPageData();
 }
 
+let nationalAddress = false;
+let nationalAddressArray = [];
 function handleCustomActions(action, response) {
   // Function designed to run when a custom action has run successfully.
   KDF.hideMessages();
@@ -194,7 +196,61 @@ function handleCustomActions(action, response) {
 
   let val = response.data;
 
+  if (action === 'search-national-address') {
+    nationalAddress = true;
+    
+    const toTitleCase = (str) => {
+      return str.toLowerCase().replace(/(?:^|\s|-)\S/g, (match) => {
+        return match.toUpperCase();
+      }).replace(/\s+/g, ' ').trim();
+    };
+
+    const selectList = document.getElementById(`dform_widget_sel_property_search_result_${pageID}`);
+    if (val.searchResults.length > 0) {
+      for (const result of val.searchResults) {
+
+        result.addressNumber = toTitleCase(result.addressNumber);
+        result.addressLine1 = toTitleCase(result.addressLine1);
+        result.addressLine2 = toTitleCase(result.addressLine2);
+        result.label = [
+          result.addressNumber + ' ' + result.addressLine1,
+          result.townCity,
+          result.postcode
+        ].join(', ');
+    
+        nationalAddressArray = response.data.searchResults;
+    
+        const option = document.createElement('option');
+    
+        option.textContent = [
+          result.addressNumber + ' ' + result.addressLine1,
+          result.townCity,
+          result.postcode
+        ].join(', ');
+    
+        option.value = result.value;
+    
+        selectList.appendChild(option);
+      }
+      KDF.showWidget(`sel_property_search_result_${pageID}`);
+      KDF.showSection(`area_address_selected_${pageID}`);
+      $(`#dform_widget_sel_property_search_result_${pageID}`).focus();
+    } else {
+      displayErrorMessage(
+        `txt_search_property_${pageID}`,
+        "Enter a valid postcode",
+        "block"
+      );
+      if (KDF.getVal(`txt_manual_address_${pageID}`) === "false") {
+        // do nothing
+      } else {
+        enterAddressManually();
+      }
+    }
+  }
+
   if (action === "search-address-web") {
+    nationalAddress = false;
     if (val.property_search_result.length > 0) {
       let property_search_results = val.property_search_result;
       let updated_results = [];
@@ -233,7 +289,7 @@ function handleCustomActions(action, response) {
     } else {
       displayErrorMessage(
         `txt_search_property_${pageID}`,
-        "Enter a valid postcode/street name within the Sheffield City Council area",
+        "Enter a valid postcode",
         "block"
       );
       if (KDF.getVal(`txt_manual_address_${pageID}`) === "false") {
@@ -754,6 +810,17 @@ function redirectOnSubmission(confirmationPageUrlSlugAndQueries) {
   window.location = confirmationPageUrl;
 }
 
+function isSheffieldPostcode(postcode) {
+  if (postcode) {
+    const sheffieldPostcodeRegex = /^(S1|S2|S3|S4|S5|S6|S7|S8|S9|S10|S11|S12|S13|S14|S17|S20|S35|S36)\s*\d{1,2}[A-Z]{0,2}$/i;
+    const isSheffield = sheffieldPostcodeRegex.test(postcode);
+    if (isSheffield) return true;
+    return false;
+  } else {
+    return;
+  }
+}
+
 function handleAddressSearchFunctionality(event, kdf) {
   $("#dform_widget_button_but_enter_address_manually").click(function () {
     // Need to chnage this to work on class and look up and show the fields on that page
@@ -777,9 +844,45 @@ function handleAddressSearchFunctionality(event, kdf) {
         "Enter your postcode in the correct format"
       );
       if (this.value)
-        KDF.customdata("retrieve-address-web", this.id, true, true, {
-          search_property: this.value,
-        });
+        if (nationalAddress) {
+              const selectedValue = this.value;
+              const selectedAddress = nationalAddressArray.find(result => result.value === selectedValue);
+              
+              if (selectedAddress) {
+                if (pageID === "page_about_you") {
+                  KDF.setVal('txt_cusaddressnumber', selectedAddress.addressNumber);
+                  KDF.setVal('txt_cusaddressline1', selectedAddress.addressLine1);
+                  KDF.setVal('txt_custown', selectedAddress.townCity);
+                  KDF.setVal('txt_cuspostcode', selectedAddress.postcode);
+                  KDF.setVal('txt_cusfulladdress', `${selectedAddress.addressNumber} ${selectedAddress.addressLine1}, ${selectedAddress.townCity}, ${selectedAddress.postcode}`);
+                  KDF.hideWidget(`sel_property_search_result_${pageID}`);
+                  KDF.showWidget(`ahtm_fulladdress_${pageID}`);
+                  $(`#ahtm_fulladdress_page_${pageID}`).focus();
+                } else if (pageID === "page_about_another") {
+                  KDF.setVal('txt_cusaddressnumber_another', selectedAddress.addressNumber);
+                  KDF.setVal('txt_cusaddressline1_another', selectedAddress.addressLine1);
+                  KDF.setVal('txt_custown_another', selectedAddress.townCity);
+                  KDF.setVal('txt_cuspostcode_another', selectedAddress.postcode);
+                  KDF.setVal('txt_cusfulladdress_another', `${selectedAddress.addressNumber} ${selectedAddress.addressLine1}, ${selectedAddress.townCity}, ${selectedAddress.postcode}`);
+                  KDF.hideWidget(`sel_property_search_result_${pageID}`);
+                  KDF.showWidget(`ahtm_fulladdress_${pageID}`);
+                  $(`#ahtm_fulladdress_page_${pageID}`).focus();
+                } else {
+                  KDF.setVal(`txt_addressnumber_${pageID}`, selectedAddress.addressNumber);
+                  KDF.setVal(`txt_addressline1_${pageID}`, selectedAddress.addressLine1);
+                  KDF.setVal(`txt_town_${pageID}`, selectedAddress.townCity);
+                  KDF.setVal(`txt_postcode_${pageID}`, selectedAddress.postcode);
+                  KDF.setVal(`txt_fulladdress_${pageID}`, `${selectedAddress.addressNumber} ${selectedAddress.addressLine1}, ${selectedAddress.townCity}, ${selectedAddress.postcode}`);
+                  KDF.showWidget(`ahtm_fulladdress_${pageID}`);
+                  KDF.hideWidget(`sel_property_search_result_${pageID}`);
+                  KDF.showSection(`area_address_selected_${pageID}`);
+                  KDF.showSection(`area_lacation_description_${pageID}`);
+                  $(`#dform_widget_html_ahtm_fulladdress_${pageID}`).focus();
+                }
+              }
+        } else {
+            KDF.customdata("retrieve-address-web", this.id, true, true, { search_property: this.value });
+        }
     }
   });
 
@@ -818,7 +921,6 @@ function handleAddressSearchFunctionality(event, kdf) {
       KDF.setVal("txt_custown", "");
       KDF.hideWidget("txt_cuspostcode");
       KDF.setVal("txt_cuspostcode", "");
-      KDF.hideWidget("txt_cusfulladdress");
       KDF.setVal("txt_cusfulladdress", "");
       KDF.hideWidget("txt_cusuprn");
       KDF.setVal("txt_cusuprn", "");
@@ -882,13 +984,13 @@ function handleAddressSearchFunctionality(event, kdf) {
     var tableOfResults = document.getElementById(
       `dform_table_tab_property_search_result_${pageID}`
     );
-    // .getElementsByTagName("div");
     $(tableOfResults).remove();
     if (fieldValue) {
-      KDF.customdata("search-address-web", this.id, true, true, {
-        search_property: fieldValue,
-        search_town: KDF.getVal(`txt_limit_address_${pageID}`),
-      });
+      if (!isSheffieldPostcode(fieldValue) && (pageID === "page_about_you" || pageID === "page_about_another")) {
+        KDF.customdata('search-national-address', '_KDF_ready', true, true, { postcode: fieldValue });
+      } else {
+        KDF.customdata("search-address-web", this.id, true, true, { search_property: fieldValue });
+      }
     } else {
       resetErrorMessage(fieldID, "Enter your postcode in the correct format");
       KDF.checkProgress();
