@@ -680,23 +680,6 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
     }
   }
 
-  // check all fields other than radio/checkboxes
-  //   otherFields.each(function () {
-  //     if (!$(this).val()) {
-  //       // if no value, button disabled
-  //       allOtherFieldsFilled = false;
-  //     } else {
-  //       // if value exists, remove whitespace and check other characters are entered
-  //       if (this.value) {
-  //         let whitespaceRemoved = $(this).val().replace(/\s/g, "");
-  //         let fieldValueLength = whitespaceRemoved.length;
-  //         if (fieldValueLength === 0) {
-  //           allOtherFieldsFilled = false;
-  //         }
-  //       }
-  //     }
-  //   });
-
   var currentPage = $('.dform_page[data-active="true"]:visible');
   var errorMessagesVisible = currentPage.has(
     ".dform_validationMessage:visible"
