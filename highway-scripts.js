@@ -2472,7 +2472,7 @@ function vegetationFeatureSetHandler(marker, featureSet) {
       content:
         "<strong>Feature:</strong> " +
         attributes[
-          "sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_name"
+          "sheffield.corpmap.HCFP_Assets_GrassPlantArea.featuretypename"
         ] +
         "<br/><strong>Site Name:</strong> " +
         attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"],
