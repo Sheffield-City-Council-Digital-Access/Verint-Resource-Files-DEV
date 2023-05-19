@@ -2425,7 +2425,6 @@ function vegetationFeatureSetHandler(marker, featureSet) {
   if (featureSet.features.length >= 1) {
     var asset = featureSet.features[0];
     var attributes = asset.attributes;
-    console.log(JSON.stringify(attributes));
     console.log(attributes);
     KDF.setVal("object_id", attributes["objectid"]);
     KDF.setVal("longitude_x", marker.geometry.x);
@@ -2433,7 +2432,7 @@ function vegetationFeatureSetHandler(marker, featureSet) {
     KDF.setVal(
       "asset_type",
       attributes[
-        "sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_name"
+        "sheffield.corpmap.HCFP_Assets_GrassPlantArea.featuretypename"
       ]
     );
     KDF.setVal(
@@ -2452,11 +2451,11 @@ function vegetationFeatureSetHandler(marker, featureSet) {
     );
     KDF.setVal(
       "site_name",
-      attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.site_name"]
+      attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"]
     );
     KDF.setVal(
       "txt_streetdescription",
-      attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.site_name"]
+      attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"]
     );
     KDF.setVal(
       "site_code",
