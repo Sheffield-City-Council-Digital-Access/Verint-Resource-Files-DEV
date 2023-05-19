@@ -2475,7 +2475,7 @@ function vegetationFeatureSetHandler(marker, featureSet) {
           "sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_name"
         ] +
         "<br/><strong>Site Name:</strong> " +
-        attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.site_name"],
+        attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"],
     });
     queryCityCentre(marker);
   } else {
