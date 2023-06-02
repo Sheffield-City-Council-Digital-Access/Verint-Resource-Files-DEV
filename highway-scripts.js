@@ -2465,6 +2465,11 @@ function vegetationFeatureSetHandler(marker, featureSet) {
       "txt_usrn",
       attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"]
     );
+    KDF.setVal(
+      "txt_usrn",
+      attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"]
+    );
+    KDF.setVal("grass_category", attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category"]);
     vmap.setInfoWindow({
       xcoord: marker.geometry.x,
       ycoord: marker.geometry.y,

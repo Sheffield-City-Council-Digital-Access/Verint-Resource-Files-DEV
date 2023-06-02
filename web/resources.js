@@ -1863,11 +1863,32 @@ function assignStepSize(fieldname, step) {
   deformWidget.attr("step", step);
 }
 
-function fixCurrency(field) {
-  const string = parseFloat(KDF.getVal(field)).toFixed(2);
-  const inputField = document.querySelector("#dform_widget_" + field);
-  inputField.value = string;
-}
+// function fixCurrency(field) {
+//   const string = parseFloat(KDF.getVal(field)).toFixed(2);
+//   const inputField = document.querySelector("#dform_widget_" + field);
+//   inputField.value = string;
+// }
+
+const fixCurrency = field => {
+  const inputValue = $(`#dform_widget_${field}`).val().replace(/[^\d]/g, ''); // Remove non-numeric characters
+
+  // Remove leading zeros
+  const nonZeroIndex = inputValue.search(/[^0]/);
+  const formattedValue = inputValue.slice(nonZeroIndex);
+
+  let value;
+  if (formattedValue.length > 2) {
+    // Format the input value
+    const integerPart = formattedValue.slice(0, -2);
+    const decimalPart = formattedValue.slice(-2);
+    value = integerPart + '.' + decimalPart;
+  } else {
+    value = '0.' + formattedValue.padStart(2, '0');
+  }
+
+  // Update the input value
+  $(`#dform_widget_${field}`).val(value);
+};
 
 function timeCheck(fieldname, datefield) {
   if (KDF.getVal(fieldname) !== "" && KDF.getVal(datefield) !== "") {
