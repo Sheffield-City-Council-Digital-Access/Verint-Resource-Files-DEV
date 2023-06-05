@@ -964,15 +964,16 @@ function handleAddressSearchFunctionality(event, kdf) {
     KDF.hideSection(`area_address_selected_${pageID}`);
     KDF.hideWidget(`ahtm_fulladdress_${pageID}`);
     KDF.hideSection(`area_lacation_description_${pageID}`);
-    var fieldID = `txt_search_property_${pageID}`;
-    var fieldValue = KDF.getVal(fieldID);
+    const fieldID = `txt_search_property_${pageID}`;
+    const fieldValue = KDF.getVal(fieldID);
     resetErrorMessage(fieldID, "Enter your postcode in the correct format");
-    var tableOfResults = document.getElementById(
+    const tableOfResults = document.getElementById(
       `dform_table_tab_property_search_result_${pageID}`
     );
     $(tableOfResults).remove();
     if (fieldValue) {
-      if (pageID === "page_about_you" || pageID === "page_about_another") {
+      // if (pageID === "page_about_you" || pageID === "page_about_another") {
+      if (KDF.getVal(`search_type_${pageID}`).toLowerCase() === 'national') {
         KDF.customdata('search-national-address', '_KDF_ready', true, true, { postcode: fieldValue });
       } else {
         KDF.customdata("search-address-web", this.id, true, true, { search_property: fieldValue });
