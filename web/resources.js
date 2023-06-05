@@ -973,7 +973,7 @@ function handleAddressSearchFunctionality(event, kdf) {
     $(tableOfResults).remove();
     if (fieldValue) {
       // if (pageID === "page_about_you" || pageID === "page_about_another") {
-      if (KDF.getVal(`search_type_${pageID}`).toLowerCase() === 'national') {
+      if (KDF.getVal(`search_type_${pageID}`) === 'national') {
         KDF.customdata('search-national-address', '_KDF_ready', true, true, { postcode: fieldValue });
       } else {
         KDF.customdata("search-address-web", this.id, true, true, { search_property: fieldValue });
