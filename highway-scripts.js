@@ -2218,7 +2218,8 @@ function roadsFeatureSetHandler(marker, featureSet) {
     });
     queryCityCentre(marker);
   } else {
-    queryPavements(marker);
+    queryPavements(pavements);
+    // queryPavements(marker);
   }
   vmap.centerAtLonLat({
     lon: marker.geometry.x,

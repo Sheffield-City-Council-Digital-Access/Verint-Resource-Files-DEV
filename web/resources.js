@@ -795,17 +795,6 @@ function redirectOnSubmission(confirmationPageUrlSlugAndQueries) {
   window.location = confirmationPageUrl;
 }
 
-function isSheffieldPostcode(postcode) {
-  if (postcode) {
-    const sheffieldPostcodeRegex = /^(S1|S2|S3|S4|S5|S6|S7|S8|S9|S10|S11|S12|S13|S14|S17|S20|S35|S36)\s*\d{1,2}[A-Z]{0,2}$/i;
-    const isSheffield = sheffieldPostcodeRegex.test(postcode);
-    if (isSheffield) return true;
-    return false;
-  } else {
-    return;
-  }
-}
-
 function handleAddressSearchFunctionality(event, kdf) {
   $("#dform_widget_button_but_enter_address_manually").click(function () {
     // Need to chnage this to work on class and look up and show the fields on that page
