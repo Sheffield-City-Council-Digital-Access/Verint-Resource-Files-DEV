@@ -1166,7 +1166,7 @@ function handleAddressSearchFunctionality(event, kdf) {
       });
     }
 
-    var defaultErrorMessage = "Enter your postcode in the correct format";
+    var defaultErrorMessage = (pageID === "page_about_you") ? 'Enter your postcode in the correct format' : 'Enter the postcode in the correct format';
     hideFieldError(defaultErrorMessage, "none");
 
     var postcodeSearchValue = $(
