@@ -65,7 +65,7 @@
     
     ::selection {
         background-color: var(--color-information);
-        color: var(--color-white);
+        color: var(--color-black);
     }
     
     form.dform {
@@ -383,3 +383,652 @@
       to { transform: rotate(360deg); }
     }
     
+    
+    /* -------------------------------------------------------------------------- */
+    
+    
+    .dform_widget {
+        position: relative;
+        margin: 3rem 0;
+    }
+    
+    .no-margin {
+        margin: 0;
+    }
+    
+    #dform_container p,
+    #dform_container div,
+    #dform_container label,
+    #dform_container legend {
+        color: #000000;
+    }
+    
+    label,
+    #dform_container label,
+    legend,
+    #dform_container legend {
+        display: block;
+        margin: 0 0 .4rem 0;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+        max-width: 100%;
+    }
+    
+    input,
+    #dform_container input,
+    select,
+    #dform_container select,
+    textarea,
+    #dform_container textarea {
+        height: 5rem;
+        width: 100%;
+        max-width: 55rem;
+        border: .1rem solid var(--color-grey-5);
+        border-radius: 0;
+        padding: 0.75rem 1rem;
+        background: var(--color-white);
+        color: var(--color-black);
+        box-sizing: border-box;
+        box-shadow: none;
+        font: 400 var(--font-size-p1) var(--font-paragraph);
+        line-height: var(--font-height-p1);
+    }
+    
+    textarea,
+    #dform_container textarea {
+        height: 17.1rem;
+    }
+    
+    select,
+    #dform_container select {
+        appearance: revert;
+        color: var(--color-black);
+    }
+    
+    fieldset legend {
+        font-family: "Open Sans Semibold", "Trebuchet MS", "Lucida Grande", "Geneva", Sans-Serif;
+        line-height: 1.4;
+        display: block;
+        margin: 0 0 8px 0;
+    }
+    
+    .radiogroup,
+    #dform_container fieldset {
+        border: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .radiogroup input,
+    #dform_container input[type='radio'] {
+        border: 2px solid #6B6B6B;
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        background: #FFFFFF;
+        padding: 0;
+        margin: -2px 15px 12px 0;
+    }
+    
+    #dform_container .radiogroup,
+    #dform_container .checkboxgroup {
+        /*remove space of br tag*/
+        margin: 0 0 -1.4rem 0;
+    }
+    
+    .horizontal>div>fieldset>span {
+        display: inline-flex;
+        margin: 0 48px 0 0;
+    }
+    
+    .vertical>div>fieldset>span,
+    fieldset.checkboxgroup>span {
+        display: flex;
+    }
+    
+    .horizontal>div>fieldset>span>input,
+    .vertical>div>fieldset>span>input {
+        min-width: 34px;
+    }
+    
+    #dform_container .radiogroup legend,
+    #dform_container .checkboxgroup legend {
+        margin: 0 0 18px 0;
+    }
+    
+    .radiogroup input,
+    #dform_container input[type='radio'] {
+        border: 2px solid #6B6B6B;
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        background: #FFFFFF;
+        padding: 0;
+        margin: 0 0 16px 0;
+    }
+    
+    #dform_container .radiogroup label {
+        font-family: 'Open Sans Regular';
+        margin: 6px 0 0 13px;
+    }
+    
+    .radiogroup input:focus,
+    #dform_container input[type='radio']:focus {
+        -moz-box-shadow: inset 0 0 0 2px #6B6B6B, 0 0 0 4px #ffcc02;
+        -webkit-box-shadow: inset 0 0 0 2px #6B6B6B, 0 0 0 4px #ffcc02;
+        box-shadow: inset 0 0 0 2px #6B6B6B, 0 0 0 4px #ffcc02;
+        outline: none;
+    }
+    
+    .radiogroup input:checked::after,
+    #dform_container input[type='radio']:checked::after {
+        display: block;
+        position: relative;
+        background-color: #6B6B6B;
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+    #dform_container input[type="radio"].dform_fielderror,
+    #dform_container input[type="radio"].dform_fielderrorCustom {
+        border-color: #FD3333;
+        outline: none;
+    }
+    
+    #dform_container input[type="radio"].dform_fielderror:focus,
+    #dform_container input[type="radio"].dform_fielderrorCustom:focus {
+        -moz-box-shadow: inset 0 0 0 2px #6b6b6b, 0 0 0 4px #ffcc02;
+        -webkit-box-shadow: inset 0 0 0 2px #6b6b6b, 0 0 0 4px #ffcc02;
+        box-shadow: inset 0 0 0 2px #6b6b6b, 0 0 0 4px #ffcc02;
+        outline: none;
+    }
+    
+    .radiogroup label {
+        font-weight: 400;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .dform_widget_type_checkbox>div,
+    #dform_container .container .dform_widget_type_checkbox>div {
+        display: flex;
+        flex-direction: initial;
+        flex-wrap: wrap;
+    }
+    
+    #dform_container input[type='checkbox'],
+    .dform_widget_type_checkbox input {
+        display: inline-block;
+        border: 1px solid #ccc;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0;
+        background: white;
+    }
+    
+    #dform_container input[type='checkbox']:checked::after,
+    .dform_widget_type_checkbox input:checked::after {
+        content: '';
+        display: block;
+        position: relative;
+        top: -5px;
+        left: -9px;
+        width: 24px;
+        height: 24px;
+        background: #007c53;
+    }
+    
+    .dform_widget_type_checkbox label,
+    #dform_container .dform_widget_type_checkbox label {
+        display: inline-block;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: auto;
+    }
+    
+    #dform_container .checkboxgroup label {
+        font-family: 'Open Sans Regular';
+        margin: 7px 0 0 13px;
+    }
+    
+    .checkboxgroup input,
+    #dform_container input[type='checkbox'] {
+        margin: 0 11px 10px 0;
+        min-width: 40px;
+    }
+    
+    #dform_container input[type='checkbox']:checked::after,
+    .dform_widget_type_checkbox input:checked::after {
+        font-family: 'icomoon';
+        content: "\e92f";
+        color: #6B6B6B;
+        background: none;
+        font-size: 22px;
+        position: relative;
+        bottom: 7px;
+        right: 7px;
+        /*overwrite hosted CSS*/
+        width: auto;
+        height: auto;
+        top: auto;
+        left: auto;
+    }
+    
+    #dform_container .radiogroup > .dform_validationMessage,
+    #dform_container .checkboxgroup > .dform_validationMessage {
+        margin: 0 0 4px 0;
+    }
+    
+    #dform_container input[type="checkbox"].dform_fielderror,
+    #dform_container input[type="checkbox"].dform_fielderrorCustom {
+        border: 1px solid #FD3333;
+        box-shadow: inset 0 0 0 1px #FD3333;
+        outline: none;
+    }
+    
+    /*Removes blank outline around checkboxes when focus-visible*/
+    input:focus-visible {
+        outline-offset: 0px;
+    }
+    
+    
+    #dform_container input[type='date'] {
+        text-transform: uppercase;
+    }
+    
+    input:focus,
+    select:focus,
+    #dform_container input:focus,
+    #dform_container textarea:focus,
+    #dform_container select:focus {
+        z-index: 1;
+        outline: 4px solid #FFCC02;
+        -moz-box-shadow: inset 0 0 0 3px #6B6B6B;
+        -webkit-box-shadow: inset 0 0 0 3px #6B6B6B;
+        box-shadow: inset 0 0 0 3px #6B6B6B;
+        border-color: #6B6B6B;
+    }
+    
+    #dform_container .helptext {
+        font-family: 'Open Sans Regular';
+        color: #6B6B6B;
+        font-style: normal;
+        margin: -8px 0 8px 0;
+    }
+    
+    #dform_container .dform_fielderror,
+    #dform_container .dform_fielderrorCustom {
+        z-index: 1;
+        border: 2px solid #DB0000;
+        box-shadow: none;
+    }
+    
+    #dform_container .dform_validationMessage,
+    #dform_container #address-lookup-error,
+    #dform_container #address-lookup-error-you,
+    #dform_container #address-lookup-error-another,
+    #dform_container #current-location-error,
+    #dform_container #address-lookup-error-location,
+    #dform_container #address-lookup-error-location-highways {
+        width: 100%;
+        font-family: 'Open Sans Semibold';
+        color: #DB0000;
+        line-height: 1.4;
+        margin: 10px 0 4px 0;
+        padding: 0;
+    }
+    
+    #dform_container input.dform_fielderror:focus,
+    #dform_container textarea.dform_fielderror:focus,
+    #dform_container .dform_fielderror:focus,
+    #dform_container input.dform_fielderrorCustom:focus,
+    #dform_container textarea.dform_fielderrorCustom:focus,
+    #dform_container .dform_fielderrorCustom:focus,
+    #jump-to-top:focus {
+        outline: 4px solid #FFCC02;
+        z-index: 1;
+        -moz-box-shadow: inset 0 0 0 3px #6B6B6B;
+        -webkit-box-shadow: inset 0 0 0 3px #6B6B6B;
+        box-shadow: inset 0 0 0 3px #6B6B6B;
+        border-color: #6B6B6B;
+    }
+    
+    input::placeholder,
+    textarea::placeholder {
+        color: #6B6B6B;
+    }
+    
+    .dform_widget:first-child,
+    #dform_container .container .dform_widget:first-child .dform_widget_type_buttonset {
+        margin-top: 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* ------ MODAL ------------------------------------------------------------- */
+    
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+      filter: blur(.5rem);
+      display: none;
+    }
+    
+    #modal {
+      min-width: 100rem;
+      width: 80%;
+      background-color: var(--color-white);
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+      outline: .3rem solid var(--color-information);
+      box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.3);
+    }
+    
+    #modal button#close-modal {
+      position: absolute;
+      display: block;
+      top: 1rem;
+      right: 1rem;
+      background: orangered;
+      color: white;
+      height: 2.5rem;
+      width: 2.5rem;
+      border: none;
+      border-radius: .5rem;
+      font-size: 2.4rem;
+      cursor: pointer;
+    }
+    
+    #modal button#close-modal:focus {
+      outline: 4px solid var(--color-information);
+    }
+    
+    #modal:empty {
+      display: none;
+    }
+    
+    .search-profile-container,
+    .update-profile-container,
+    .create-profile-container {
+      display: flex;
+      flex-direction: column;
+    
+      background: var(--color-grey-3);
+    }
+    
+    .search-profile-container__header,
+    .search-profile-container__input,
+    .search-profile-container__results,
+    .search-profile-container__buttons,
+    .update-profile-container__header,
+    .update-profile-container__input,
+    .update-profile-container__results,
+    .update-profile-container__buttons,
+    .create-profile-container__header,
+    .create-profile-container__input,
+    .create-profile-container__results,
+    .create-profile-container__buttons {
+      padding: 2.5rem;
+    }
+    
+    .search-profile-container__header > *,
+    .search-profile-container__input > *,
+    .search-profile-container__results > *,
+    .search-profile-container__buttons > *,
+    .update-profile-container__header > *,
+    .update-profile-container__input > *,
+    .update-profile-container__results > *,
+    .update-profile-container__buttons > *,
+    .create-profile-container__header > *,
+    .create-profile-container__input > *,
+    .create-profile-container__results > *,
+    .create-profile-container__buttons > * {
+      margin: 0;
+    }
+    
+    .search-profile-container__header,
+    .update-profile-container__header,
+    .create-profile-container__header {
+      display: grid;
+      align-content: center;
+      justify-content: space-between;
+      align-items: stretch;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2.5vw;
+      background-color: var(--color-black);
+      border-bottom: .4rem solid var(--color-primary);
+      justify-items: stretch;
+      padding-top: 5rem;
+    }
+    
+    .update-profile-container__header,
+    .create-profile-container__header {
+      grid-template-columns: 1fr;
+    }
+    
+    .modal-header-title {
+      grid-area: 1 / 1 / 2 / 2;
+      transform: translateX(-30px);
+      padding: 0;
+      font-size: var(--font-size-h2);
+      line-height: var(--font-height-h2);
+      font-family: var(--font-heaning);
+      color: var(--color-white) !important;
+      text-decoration: underline .25rem solid var(--color-primary) !important;
+      margin: 0 auto 0 3rem !important;
+    }
+    
+    .dform_widget_but_individual_search,
+    .dform_widget_but_organisation_search {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .dform_widget_but_reset_search {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+    
+    .dform_widget_but_individual_search,
+    .dform_widget_but_organisation_search,
+    .dform_widget_but_reset_search,
+    .dform_widget_but_search_object,
+    .dform_widget_but_record_found,
+    .dform_widget_but_create_record,
+    .dform_widget_but_continue_anonymous,
+    .dform_widget_but_update_continue_with_enquiry,
+    .dform_widget_but_create_continue_with_enquiry,
+    .dform_widget_but_update_address,
+    .dform_widget_but_create_address {
+      border-radius: 0;
+      border: .2rem solid var(--color-primary);
+      padding: 0.75rem 1.05rem;
+      background: var(--color-white);
+      text-align: center;
+      font-family: var(--font-paragraph);
+      font-size: var(--font-size-h4);
+      line-height: var(--font-height-p1);
+      letter-spacing: .1rem;
+      font-weight: bold;
+      color: var(--color-primary);
+      cursor: pointer;
+      box-shadow: none;
+    }
+    
+    .dform_widget_but_individual_search:hover,
+    .dform_widget_but_organisation_search:hover,
+    .dform_widget_but_reset_search:hover,
+    .dform_widget_but_search_object:hover,
+    .dform_widget_but_record_found:hover,
+    .dform_widget_but_create_record:hover,
+    .dform_widget_but_continue_anonymous:hover,
+    .dform_widget_but_update_continue_with_enquiry:hover,
+    .dform_widget_but_create_continue_with_enquiry:hover,
+    .dform_widget_but_update_address:hover,
+    .dform_widget_but_create_address:hover{
+      background: var(--color-primary);
+      color: var(--color-white);
+      border: .2rem solid var(--color-primary);
+    }
+    
+    .dform_widget_but_individual_search:focus,
+    .dform_widget_but_organisation_search:focus,
+    .dform_widget_but_reset_search:focus,
+    .dform_widget_but_search_object:focus,
+    .dform_widget_but_record_found:focus,
+    .dform_widget_but_create_record:focus,
+    .dform_widget_but_continue_anonymous:focus,
+    .dform_widget_but_update_continue_with_enquiry:focus,
+    .dform_widget_but_create_continue_with_enquiry:focus,
+    .dform_widget_but_update_address:focus,
+    .dform_widget_but_create_address:focus {
+      background: var(--color-primary);
+      color: var(--color-white);
+      outline: 4px solid var(--color-information);
+    }
+    
+    .search-profile-container__input,
+    .update-profile-container__input,
+    .create-profile-container__input {
+        padding-top: 3.5rem;
+        display: grid;
+        align-content: center;
+        justify-content: space-around;
+        align-items: baseline;
+        justify-items: stretch;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, max-content);
+        grid-gap: 2.5vw;
+    }
+    
+    .dform_widget_search_organisation_name,
+    .dform_widget_search_forename,
+    .dform_widget_update_title,
+    .dform_widget_create_title {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .dform_widget_search_surname,
+    .dform_widget_update_organisation_name,
+    .dform_widget_update_dob,
+    .dform_widget_create_organisation_name,
+    .dform_widget_create_dob {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    
+    .dform_widget_search_dob {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+    
+    .dform_widget_search_number,
+    .dform_widget_update_forename,
+    .dform_widget_create_forename {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .dform_widget_search_street_name,
+    .dform_widget_update_phone,
+    .dform_widget_create_phone {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    
+    .dform_widget_search_postcode{
+      grid-area: 3 / 2 / 4 / 3;
+    }
+    
+    .update_address_text,
+    .create_address_text {
+      grid-area: 3 / 1 / 4 / 3;
+    }
+    
+    .dform_widget_search_phone,
+    .dform_widget_update_surname,
+    .dform_widget_create_surname {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+    
+    .dform_widget_search_email,
+    .dform_widget_update_email,
+    .dform_widget_create_email {
+      grid-area: 2 / 3 / 3 / 4;
+    }
+    
+    .dform_widget_but_search_object {
+      grid-area: 3 / 3 / 4 / 4;
+      align-self: end;
+      height: 5rem;
+    }
+    
+    .dform_widget_update_postcode,
+    .dform_widget_create_postcode {
+      grid-area: 3 / 3 / 4 / 4;
+    }
+    
+    /* .search-profile-container__results,
+    .update-profile-container__results,
+    .create-profile-container__results {
+    
+    } */
+    
+    .search-profile-container__buttons,
+    .update-profile-container__buttons,
+    .create-profile-container__buttons {
+      display: grid;
+      align-content: center;
+      justify-content: space-around;
+      align-items: baseline;
+      justify-items: stretch;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2.5vw;
+    }
+    
+    .dform_widget_but_record_found,
+    .dform_widget_but_update_continue_with_enquiry,
+    .dform_widget_but_create_continue_with_enquiry {
+      color: var(--color-white);
+      background: var(--color-black);
+      border: .2rem solid var(--color-black);
+    }
+    
+    .dform_widget_but_record_found,
+    .dform_widget_but_create_record,
+    .dform_widget_but_continue_anonymous,
+    .dform_widget_but_update_continue_with_enquiry,
+    .dform_widget_but_create_continue_with_enquiry,
+    .dform_widget_but_search_address {
+      height: 5rem;
+    }
+    
+    .postcode-search-field {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: stretch;
+    }
+    
+    .dform_widget_but_update_address,
+    .dform_widget_but_create_address {
+      margin: 0;
+    }

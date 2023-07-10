@@ -67,15 +67,14 @@ const characterCounter = (name) => {
 const getValue = name => document.getElementById(`dform_widget_${name}`).value;
 
 // Function to set value by widget name
-const setValue = (name, value) => document.getElementById(`dform_widget_${name}`).value = value || '';
-// const setValue = (name, value) => {
-//   const element = document.getElementById(`dform_widget_${name}`);
-//   if (element) {
-//     element.value = value || '';
-//   } else {
-//     console.log(`Element with ID "dform_widget_${name}" not found.`);
-//   }
-// };
+const setValue = (name, value) => {
+  const element = document.getElementById(`dform_widget_${name}`);
+  if (element) {
+    element.value = value || '';
+  } else {
+    console.log(`Element with ID "dform_widget_${name}" not found.`);
+  }
+};
 
 // Function to show element by name
 const showElement = (names) => {
@@ -461,9 +460,39 @@ const accordion = (() => {
     });
 })();
 
-// Function to hide multiple containers
-const hideContainers = () => {
-    $('.search-profile-container, .update-profile-container, .create-profile-container, .contact-history-container, .search-property-container').hide();
+const disableNavButtons = values => {
+  // Destructure values object with default values
+  const {
+    enableHome = true,
+    enableNavi = true,
+    enableInfo = true
+  } = values;
+  
+  // Define button classes and their corresponding enable values
+  const buttonClasses = {
+    'nav-button__home': enableHome,
+    'nav-button__navi': enableNavi,
+    'nav-button__info': enableInfo
+  };
+
+  // Iterate over button classes and enable values
+  for (const [buttonClass, enabled] of Object.entries(buttonClasses)) {
+    // Select all elements with the specified class
+    const buttons = document.querySelectorAll(`.${buttonClass}`);
+
+    // Check if the buttons should be disabled or enabled
+    if (!enabled) {
+      // Disable buttons
+      buttons.forEach(button => {
+        button.disabled = true;
+      });
+    } else {
+      // Enable buttons
+      buttons.forEach(button => {
+        button.disabled = false;
+      });
+    }
+  }
 };
 
 // -- GREETING -------------------------------------------------------------- //
@@ -496,78 +525,19 @@ const getRandomGreeting = () => {
     return greetingArray[randomIndex];
 };
 
-// -- MODAL ----------------------------------------------------------------- //
+// -- CONTACT PROFILE ------------------------------------------------------- //
 
-// Get the reference to the close button element with the ID "close-modal"
-const closeModalButton = document.getElementById("close-modal");
-
-// Get the reference to the modal element with the ID "modal"
-const modal = document.getElementById("modal");
-
-// Get the reference to the overlay element with the ID "overlay"
-const overlay = document.getElementById("overlay");
-
-// Function to show the modal
-const showModal = () => {
-    hideContainers(); // Hide any existing containers
-    // resetNavMenu(); // Reset the navigation menu
-    modal.showModal(); // Show the modal
-    overlay.style.display = "block"; // Display the overlay
-    document.body.style.overflow = "hidden"; // Prevent scrolling on the body
-};
-
-// Function to hide the modal
-const hideModal = () => {
-    modal.close(); // Close the modal
-    overlay.style.display = "none"; // Hide the overlay
-    document.body.style.overflow = "auto"; // Allow scrolling on the body
-};
-
-// Function to launch the customer modal
-const launchCustomerModal = () => {
-    showModal(); // Show the modal
-    
-    const customerId = getValue('txt_customerid'); // Get the customer ID from the input field
-    if (customerId && customerId !== '101000159871') {
-        $('.update-profile-container').show(); // Show the update profile container if the customer ID is not empty and not equal to a specific value
-    } else {
-        resetSearchRecord(); // Reset the search record
-        $('.search-profile-container').show(); // Show the search profile container
-    }
-};
-
-// Function to launch the contact history modal
-const launchContactHistoryModal = () => {
-    showModal(); // Show the modal
-    $('.contact-history-container').show(); // Show the contact history container
-};
-
-// Function to launch the property modal
-const launchPropertyModal = () => {
-    showModal(); // Show the modal
-    $('.search-property-container').show(); // Show the search property container
+const resetSearchRecord = () => {
+    $(".dform_widget_but_individual_search, .dform_widget_search_organisation_name, .dform_widget_update_organisation_name, .search-profile-container__results, .dform_widget_object_search_results, #no_profile_found, .update-profile-container__results, .dform_widget_address_search_results, #no_address_found").hide();
+    $('#dform_widget_object_search_results').find('option').not(':first').remove();
+    $("#dform_widget_button_but_create_record, #dform_widget_button_but_record_found").prop("disabled", true);
+    $('#dform_widget_le_object_type').val('individual');
 };
 
 // ----- ON FORM READY ------------------------------------------------------ //
 
 const onFormReady = (event, kdf) => {
-    // Inport parameters 
-
 // -- HEADER BUTTONS -------------------------------------------------------- //
-    // Define an array of navigation buttons
-    const navButtons = [
-        { label: "Corporate - Contact Centre", value: "menu_corporate" },  // Button for corporate contact center
-        { label: "Clean Air Zone", value: "menu_clean_air" },  // Button for clean air zone
-        { label: "Feedback and Complaints", value: "menu_feedback" },  // Button for feedback and complaints
-        { label: "First Point", value: "menu_first_point" },  // Button for first point
-        { label: "Fullfilment", value: "menu_back_office" },  // Button for fulfillment
-        { label: "Housing - Contact Centre", value: "menu_housing_cc" },  // Button for housing contact center
-        { label: "Housing - In Person", value: "menu_housing_ip" },  // Button for housing in person
-        { label: "Out of Hours", value: "menu_out_of_hours" },  // Button for out of hours
-        { label: "Repairs", value: "menu_repairs" },  // Button for repairs
-        { label: "Revenue and Benefits", value: "menu_revenue_benefits" },  // Button for revenue and benefits
-    ];
-
     // Define an array of info buttons
     const infoButtons = [
         { label: "Customer Search", value: "customer_search" },  // Button for customer search
@@ -662,6 +632,90 @@ const onFormReady = (event, kdf) => {
 
     const header = document.querySelector("header");
     header.insertAdjacentElement("afterend", navButtonContainer);  // Insert the button container after the header
+
+// -- MODAL ----------------------------------------------------------------- //
+
+    // Listen for the keydown event on the document
+    document.addEventListener("keydown", (event) => {
+        // Check if the pressed key is Escape (keyCode 27)
+        if (event.keyCode === 27) {
+            // Prevent the default behavior
+            event.preventDefault();
+            // Prevent the event propagation
+            event.stopPropagation();
+            hideModal();
+        }
+    });
+
+    // Function to hide multiple containers
+    const hideContainers = () => {
+        $('.search-profile-container, .update-profile-container, .create-profile-container, .contact-history-container, .search-property-container').hide();
+    };
+    
+    // Get the reference to the close button element with the ID "close-modal"
+    const closeModalButton = document.getElementById("close-modal");
+    
+    // Get the reference to the modal element with the ID "modal"
+    const modal = document.getElementById("modal");
+    
+    // Get the reference to the overlay element with the ID "overlay"
+    const overlay = document.getElementById("overlay");
+    
+    // Function to show the modal
+    const showModal = () => {
+        hideContainers(); // Hide any existing containers
+        resetNavMenu(); // Reset the navigation menu
+        modal.showModal(); // Show the modal
+        overlay.style.display = "block"; // Display the overlay
+        document.body.style.overflow = "hidden"; // Prevent scrolling on the body
+    };
+    
+    // Function to hide the modal
+    const hideModal = () => {
+        modal.close(); // Close the modal
+        overlay.style.display = "none"; // Hide the overlay
+        document.body.style.overflow = "auto"; // Allow scrolling on the body
+        
+        if (!getValue('txt_customerid')) {
+            // reset search
+        } else if (getValue('txt_customerid') === anonymousID) {
+            // check against process to see if Anon is allowed
+        } else {
+            // continue with enquiry
+        }
+    };
+    
+    // Close modal
+    closeModalButton.addEventListener("click", () => {
+        hideModal();
+    });
+    
+    // Function to launch the customer modal
+    const launchCustomerModal = () => {
+        showModal(); // Show the modal
+        
+        const customerId = getValue('txt_customerid'); // Get the customer ID from the input field
+        if (customerId && customerId !== '101000159871') {
+            $('.update-profile-container').show(); // Show the update profile container if the customer ID is not empty and not equal to a specific value
+        } else {
+            resetSearchRecord(); // Reset the search record
+            $('.search-profile-container').show(); // Show the search profile container
+        }
+    };
+    
+    // Function to launch the contact history modal
+    const launchContactHistoryModal = () => {
+        showModal(); // Show the modal
+        $('.contact-history-container').show(); // Show the contact history container
+    };
+    
+    // Function to launch the property modal
+    const launchPropertyModal = () => {
+        showModal(); // Show the modal
+        $('.search-property-container').show(); // Show the search property container
+    };
+
+// -- ACTIONS --------------------------------------------------------------- //
 
     // Create Object
     // Switch Search Type
@@ -771,6 +825,7 @@ const onPageChange = (currentpageid, targetpageid) => {
 };
 
 // ----- ON SUCESSEFULL ACTION ---------------------------------------------- //
+
 const onSucessefullAction = (action, response) => {
     KDF.hideMessages();
     const rd = response.data;
@@ -894,6 +949,898 @@ const onUnsucessefullSave = () => {
     KDF.showError(`Error: This form has failed to save. Try it again. If this error persists, report it via the ServiceNow portal.`);
 
     console.log(caseDetails);
+};
+
+// ----- Map -------------------------------------------------------------------
+
+const clearMapData = () => {
+  const values = {
+    object_id: "",
+    longitude_x: "",
+    latitude_y: "",
+    asset_type: "",
+    asset_type_id: "",
+    central_asset_id: "",
+    asset_responsibility: "",
+    site_name: "",
+    txt_streetdescription: "",
+    site_code: "",
+    txt_usrn: "",
+    txt_prestige: "",
+    grass_category: ""
+  };
+
+  Object.entries(values).forEach(([key, value]) => {
+    KDF.setVal(key, value);
+  });
+
+  showElement("but_next_page_about_the_location");
+  showElement("but_submit_anonymously_page_about_the_location");
+  hideElement("but_resolve_enquiry_page_about_the_location");
+};
+
+const checkReportType = () => {
+  if (getValue("level_1_data") === "Fly-Tipping" ||
+    getValue("level_1_data") === "Dead Animal" ||
+    getValue("level_1_data") === "Dog Fouling" ||
+    getValue("level_1_data") === "Needles / Syringes" ||
+    getValue("level_1_data") === "Giant Hogweed" ||
+    getValue("level_1_data") === "Japanese Knotweed" ||
+    ((getValue("level_1_data") === "Hedge" ||
+      getValue("level_1_data") === "Tree or Branch") &&
+      getValue("level_2_data") === "Overgrown")) {
+    KDF.setVal("asset_responsibility", "Environmental");
+  } else {
+    hideElement("but_next_page_about_the_location");
+    hideElement("but_submit_anonymously_page_about_the_location");
+    showElement("but_resolve_enquiry_page_about_the_location");
+  }
+};
+
+const mapParams = {
+  WKID: 27700,
+  assetMaxDrawZoom: 17,
+  assetClick: {
+    radius: 3,
+    radiusUnit: "esriMeters",
+  },
+  hostUrl: `https://${$(location).attr("hostname")}`,
+};
+
+const PFR = "/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer";
+const CFI = "/usrsvcs/servers/3aca7e85a5834db39e0a41cb833ac8db/rest/services/Portal/Customer_First_Internal/MapServer";
+
+const featureLayers = {
+  boundary: {
+    id: 0,
+    url: "/usrsvcs/servers/97cfdc3a164c48219826b907c0a5064f/rest/services/AGOL/Boundaries/MapServer",
+  },
+
+  LLPG: {
+    id:0, 
+    url:"/usrsvcs/servers/af62c54a431540369ce04b70ea3cf51a/rest/services/LLPGCascade/CASCADE/GeocodeServer"
+  },
+
+  signs: {
+    id: 0,
+    url: `${PFR}`,
+  },
+  trafficsignals: {
+    id: 41,
+    url: `${PFR}`,
+  },
+  drains: {
+    id: 2,
+    url: `${PFR}`,
+  },
+  gritbins: {
+    id: 3,
+    url: `${PFR}`,
+  },
+  litterbins: {
+    id: 4,
+    url: `${PFR}`,
+  },
+  streetfurniture: {
+    id: 5,
+    url: `${PFR}`,
+  },
+  streetlights: {
+    id: 6,
+    url: `${PFR}`,
+  },
+  structures: {
+    id: 7,
+    url: `${PFR}`,
+  },
+  fences: {
+    id: 8,
+    url: `${PFR}`,
+  },
+  vegetation: {
+    id: 24,
+    url: `${PFR}`,
+  },
+  trees: {
+    id: 27,
+    url: `${PFR}`,
+  },
+  pavements: {
+    id: 57,
+    url: `${PFR}`,
+  },
+  roads: {
+    id: 55,
+    url: `${PFR}`,
+  },
+  usrn: {
+    id: 55,
+    url: `${PFR}`,
+  },
+  citycentre: {
+    id: 14,
+    url: `${PFR}`,
+  },
+  hotspotasspss: {
+    id: 15,
+    url: `${PFR}`,
+  },
+  hotspotschools: {
+    id: 16,
+    url: `${PFR}`,
+  },
+  principalshopsite: {
+    id: 17,
+    url: `${PFR}`,
+  },
+  neighbourhoodshopsite: {
+    id: 18,
+    url: `${PFR}`,
+  },
+  gateway: {
+    id: 19,
+    url: `${PFR}`,
+  },
+  prowflytipping: {
+    id: 23,
+    url: `${PFR}`,
+  },
+  adoptedhighways: {
+    id: 4,
+    url: "/usrsvcs/servers/f5c0484e329e41188ea83b3f7076f75f/rest/services/Portal/Highways_Internal/MapServer",
+  },
+  parks: {
+    id: 49,
+    url: `${PFR}`,
+  },
+  openfaults: {
+    id: 11,
+    url: `${CFI}`,
+  },
+  otherdesignatedland: {
+    id: 21,
+    url: `${CFI}`,
+  },
+  nonadoptedgm: {
+    id: 22,
+    url: `${CFI}`,
+  },
+  gmsites: {
+    id: 29,
+    url: `${CFI}`,
+  },
+  shmisc: {
+    id: 30,
+    url: `${CFI}`,
+  },
+  ptleases: {
+    id: 43,
+    url: `${CFI}`,
+  },
+  ptholdings: {
+    id: 34,
+    url: `${CFI}`,
+  },
+
+  url(layer) {
+    return layer.url;
+  },
+  getQueryLayer(layer) {
+    return { url: this.url(layer) + "/" + layer.id, wkid: layer.wkid };
+  },
+};
+
+let queriesComplete = 0;
+let queryCount = 0;
+let retrievedFeatures = [];
+
+const extentChanged = (evt) => {
+  vmap.zoomLevelChanged(evt, zoomChanged);
+};
+
+const zoomChanged = (evt) => {
+  setClickRadius(evt.lod.level);
+  if (vmap.getMapParams().assetMaxDrawZoom) {
+    if (evt.lod.level >= vmap.getMapParams().assetMaxDrawZoom) {
+      drawLayer(evt);
+    }
+  } else {
+    removeLayer(evt);
+    if (evt.lod.level >= 6) {
+      drawLayer(evt);
+    }
+  }
+};
+
+const setClickRadius = (zoomLevel) => {
+  const assetClick = vmap.getMapParams().assetClick;
+
+  switch (zoomLevel) {
+    case 14:
+      assetClick.radius = 34;
+      break;
+    case 15:
+      assetClick.radius = 21;
+      break;
+    case 16:
+      assetClick.radius = 13;
+      break;
+    case 17:
+      assetClick.radius = 8;
+      break;
+    case 18:
+      assetClick.radius = 5;
+      break;
+    case 19:
+      assetClick.radius = 3;
+      break;
+    default:
+      assetClick.radius = 50;
+      break;
+  }
+};
+
+// ----- Map Error Handling ----------------------------------------------------
+
+const genericErrorHandler = (e) => {
+  vmap.setInfoWindow({
+    xcoord: marker.geometry.x,
+    ycoord: marker.geometry.y,
+    title: "Error",
+    content: "</strong>Please click on the map again.</strong>",
+  });
+};
+
+const multiErrorHandler = (error) => {
+  queriesComplete++;
+  $(`#dform_${window.location.href.split("/").pop().split("?")[0]}`).trigger("_GIS_queryComplete");
+};
+
+// ----- Query Map Layer -------------------------------------------------------
+
+const queryMapLayer = (marker, id) => {
+  console.log(id);
+  const queryLayerObj = featureLayers.getQueryLayer(featureLayers[id]);
+  
+  const mapLayerNames = ['signs', 'trafficsignals', 'drains', 'gritbins', 'litterbins', 'streetfurniture', 'streetlights', 'structures', 'fences', 'vegetation', 'trees'];
+
+  let featureSetHandler;
+  if (mapLayerNames.includes(id)) {
+    featureSetHandler = eval('assetFeatureSetHandler');
+  } else {
+    featureSetHandler = eval(`${id}FeatureSetHandler`);
+  }
+  
+  vmap.findFeaturesNear(marker, queryLayerObj, featureSetHandler, genericErrorHandler);
+};
+
+// ----- Draw Map Layer -------------------------------------------------------
+
+const drawMapLayer = (id) => {
+  const layerConfig = {
+    url: featureLayers.url(featureLayers[id]),
+    codes: [featureLayers[id].id],
+    id: `${id}Layer`,
+  };
+  vmap.drawDynamicLayer(layerConfig);
+};
+
+const drawAssetLayer = (marker) => {
+  const latitude = getValue("latitude_y");
+  const longitude = getValue("longitude_x");
+  
+  if (latitude !== "" && longitude !== "") {
+    vmap.getMapParams().assetClick.radius = 21;
+    queryLayer(marker);
+  } else {
+    vmap.getMapParams().assetClick.radius = 3;
+  }
+  drawLayer();
+};
+
+const drawLayer = () => {
+  const level1Data = getValue("level_1_data");
+  const assetLayer = '';
+  if (level1Data === "Gulley") {
+    assetLayer = 'drains';
+  } else if (["Fence", "Handrail", "Pedestrian Barrier", "Vehicle Barrier/Safety Fence"].includes(level1Data)) {
+    assetLayer = 'fences';
+  } else if (level1Data === "Grit Bin") {
+    assetLayer = 'gritbins';
+  } else if (level1Data === "Litter Bin") {
+    assetLayer = 'litterbins';
+  } else if (["Cameras / Electronic Signs", "Illuminated Road Signs", "Lit Bollard", "Non-Illuminated Road Signs", "Street Name Plates"].includes(level1Data)) {
+    assetLayer = 'signs';
+  } else if (["Art or Sculpture", "Bollard", "Cycle Barrier", "Cycle Stand", "Seat or Bench", "Tree or Branch"].includes(level1Data)) {
+    assetLayer = 'streetfurniture';
+  } else if (level1Data === "Street Light") {
+    assetLayer = 'streetlights';
+  } else if (["Bridge", "Culvert", "Earth Bank / Cutting", "Gantry", "Retaining Wall", "Subway"].includes(level1Data)) {
+    assetLayer = 'structures';
+  } else if (level1Data === "Traffic Signals") {
+    assetLayer = 'trafficsignals';
+  } else if (["Tree or Branch", "Tree Grille"].includes(level1Data)) {
+    assetLayer = 'trees';
+  } else if (["Box Planter", "Grass Verge", "Hedge", "Plants or Planted Area"].includes(level1Data)) {
+    assetLayer = 'vegetation';
+  }
+  
+  const layerIds = ['boundary', 'prowflytipping', assetLayer];
+  layerIds.forEach((id) => {
+    if (id) drawMapLayer(id);
+  });
+};
+
+// ----- Remove Map Layer -------------------------------------------------------
+
+const removeMapLayer = (id) => {
+  const layerConfig = { id: `${id}Layer` };
+  vmap.removeLayer(layerConfig);
+};
+
+// ----- Set Data to Fields ----------------------------------------------------
+
+const setValues = (marker, featureSet, nextLayer, responsibility) => {
+  if (featureSet.features.length >= 1) {
+    const attributes = featureSet.features[0].attributes;
+    console.log(featureSet.features[0]._layer._name)
+
+    KDF.setVal("object_id", attributes.objectid || attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.objectid"] || "");
+    KDF.setVal("longitude_x", marker.geometry.x);
+    KDF.setVal("latitude_y", marker.geometry.y);
+    KDF.setVal("asset_type", attributes.featuretypename || attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.featuretypename"] || attributes.type || "");
+    KDF.setVal("asset_type_id", attributes.featureid || "");
+    KDF.setVal("central_asset_id", attributes.centralassetid || attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.centralassetid"] || "");
+    if (responsibility) {
+      KDF.setVal("asset_responsibility", responsibility);
+    } else {
+      KDF.setVal("asset_responsibility", attributes.responsibility || attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] || attributes.customer || "");
+    }
+    KDF.setVal("site_name", attributes.sitename || attributes.site_name || attributes.streetname || attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"] || attributes.description || "");
+    KDF.setVal("txt_streetdescription", attributes.sitename || attributes.site_name || attributes.streetname || attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"] || attributes.description || "");
+    KDF.setVal("site_code", attributes.sitecode || attributes.site_code || attributes.usrn || attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] || "");
+    KDF.setVal("txt_usrn", attributes.sitecode || attributes.site_code || attributes.usrn || attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] || "");
+    KDF.setVal("grass_category", attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category"] || "");
+    KDF.setVal("txt_prestige", attributes.locality || "");
+
+    const siteName = `${attributes.sitename || attributes.site_name || attributes.streetname || attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"] || attributes.description}`;
+    let assetType = `${attributes.featuretypename || attributes["sheffield.corpmap.HCFP_Assets_GrassPlantArea.featuretypename"]}`;
+    if (assetType.includes('DR ') || assetType.includes('SL: ')) assetType = assetType.replace('DR ', '').replace('SL: ', '');
+    if (assetType.includes('TS: SCN Site')) assetType = assetType.replace('TS: SCN Site', 'Traffic Signal');
+    if (assetType === "undefined") assetType = "Site";
+
+    vmap.setInfoWindow({
+      xcoord: marker.geometry.x,
+      ycoord: marker.geometry.y,
+      title: "Details",
+      content: `<strong>${assetType}:</strong> ${siteName}`,
+    });
+    
+    vmap.centerAtLonLat({
+      lon: marker.geometry.x,
+      lat: marker.geometry.y,
+    });
+    
+    if (!getValue("site_code")) queryMapLayer(marker, 'usrn');
+    if (!getValue("asset_responsibility")) queryMapLayer(marker, 'adoptedhighways');
+    if (!getValue("txt_prestige")) queryMapLayer(marker, 'citycentre');
+  } else {
+    queryMapLayer(marker, nextLayer);
+  }
+};
+
+// ----- Prestige Feature Set Handler ------------------------------------------
+
+const gatewayFeatureSetHandler = (marker, featureSet) => {
+  if (featureSet.features.length >= 1) {
+    const attributes = featureSet.features[0].attributes;
+    KDF.setVal("txt_prestige", attributes.status);
+  }
+};
+
+const neighbourhoodshopsiteFeatureSetHandler = (marker, featureSet) => {
+  if (featureSet.features.length >= 1) {
+    const attributes = featureSet.features[0].attributes;
+    KDF.setVal("txt_prestige", attributes.status);
+  } else {
+    queryMapLayer(marker, 'gateway');
+  }
+};
+
+const principalshopsiteFeatureSetHandler = (marker, featureSet) => {
+  if (featureSet.features.length >= 1) {
+    const attributes = featureSet.features[0].attributes;
+    KDF.setVal("txt_prestige", attributes.status);
+  } else {
+    queryMapLayer(marker, 'neighbourhoodshopsite');
+  }
+};
+
+const hotspotschoolsFeatureSetHandler = (marker, featureSet) => {
+  if (featureSet.features.length >= 1) {
+    const attributes = featureSet.features[0].attributes;
+    KDF.setVal("txt_prestige", attributes.status);
+  } else {
+    queryMapLayer(marker, 'principalshopsite');
+  }
+};
+
+const hotspotasspssFeatureSetHandler = (marker, featureSet) => {
+  if (featureSet.features.length >= 1) {
+    const attributes = featureSet.features[0].attributes;
+    KDF.setVal("txt_prestige", attributes.status);
+  } else {
+    queryMapLayer(marker, 'hotspotschools');
+  }
+};
+
+const citycentreFeatureSetHandler = (marker, featureSet) => {
+  if (featureSet.features.length >= 1) {
+    const attributes = featureSet.features[0].attributes;
+    const status = attributes["status"];
+    const prestige = status.startsWith("Co")
+      ? "Copper"
+      : status.startsWith("B")
+      ? "Bronze"
+      : status.startsWith("S")
+      ? "Silver"
+      : status.startsWith("G")
+      ? "Gold"
+      : status.startsWith("P")
+      ? "Platinum"
+      : attributes["status"];
+    KDF.setVal("txt_prestige", prestige);
+  } else {
+    queryMapLayer(marker, 'hotspotasspss');
+  }
+};
+
+// ----- PT Holdings Feature Set Handler ---------------------------------------
+
+const holdingsSetHandlerHousing = (marker, featureSet) => {
+  if (featureSet.features.length >= 1) {
+    const asset = featureSet.features[0];
+    const attributes = asset.attributes;
+
+    setValues(marker, featureSet, {
+      asset_responsibility: "",
+      site_content: "Housing"
+    });
+
+    vmap.setInfoWindow({
+      xcoord: marker.geometry.x,
+      ycoord: marker.geometry.y,
+      title: "Details",
+      content: "<strong>Site:</strong> Council Land",
+    });
+  } else {
+    queryLayer(marker);
+  }
+};
+
+const queryPTHoldingsHousing = (marker) => {
+  const queryLayer = featureLayers.getQueryLayer(featureLayers.ptholdings);
+  vmap.findFeaturesNear(marker, queryLayer, holdingsSetHandlerHousing, genericErrorHandler);
+};
+
+const ptholdingsFeatureSetHandler = (marker, featureSet) => {
+  KDF.setVal("longitude_x", marker.geometry.x);
+  KDF.setVal("latitude_y", marker.geometry.y);
+  if (featureSet.features.length >= 1) {
+    vmap.setInfoWindow({
+      xcoord: marker.geometry.x,
+      ycoord: marker.geometry.y,
+      title: "Details",
+      content: "<strong>Site:</strong> Unidentified Council Land",
+    });
+  } else {
+    KDF.setVal("asset_responsibility", "Private Land");
+    vmap.setInfoWindow({
+      xcoord: marker.geometry.x,
+      ycoord: marker.geometry.y,
+      title: "Details",
+      content: "<strong>Site:</strong> Private Land",
+    });
+  }
+  vmap.centerAtLonLat({
+    lon: marker.geometry.x,
+    lat: marker.geometry.y,
+  });
+  checkReportType();
+};
+
+// ----- PT Lease Feature Set Handler ------------------------------------------
+
+const ptleasesFeatureSetHandler = (marker, featureSet) => {
+  setValues(marker, featureSet, 'ptholdings', 'Leased Site');
+};
+
+// ----- GM Sites Feature Set Handler ------------------------------------------
+
+const gmsitesSetHandlerHousing = (marker, featureSet) => {
+  if (featureSet.features.length >= 1) {
+    const asset = featureSet.features[0];
+    const attributes = asset.attributes;
+
+    setValues(attributes, marker, {
+      asset_type: "type",
+      asset_type_id: "",
+      central_asset_id: "",
+      asset_responsibility: "customer",
+      site_name: "sitename",
+      txt_streetdescription: "site_name",
+      site_code: "",
+      txt_usrn: ""
+    });
+
+    vmap.setInfoWindow({
+      xcoord: marker.geometry.x,
+      ycoord: marker.geometry.y,
+      title: "Details",
+      content: attributes.sitename,
+    });
+  } else {
+    queryMapLayer(marker, 'ptholdings');
+  }
+};
+
+const queryGMSitesHousing = (marker) => {
+  const queryLayer = featureLayers.getQueryLayer(featureLayers.gmsites);
+  vmap.findFeaturesNear(
+    marker,
+    queryLayer,
+    gmsitesSetHandlerHousing,
+    genericErrorHandler
+  );
+};
+
+const gmsitesFeatureSetHandler = (marker, featureSet) => {
+  setValues(marker, featureSet, 'ptleases');
+};
+
+// ----- Parks Feature Set Handler ---------------------------------------------
+
+const parksFeatureSetHandler = (marker, featureSet) => {
+  setValues(marker, featureSet, 'gmsites', 'Parks and Public Realms');
+};
+
+// ----- Adopted Highways Feature Set Handler ----------------------------------
+
+const adoptedhighwaysFeatureSetHandler = (marker, featureSet) => {
+  if (featureSet.features.length >= 1) {
+    const attributes = featureSet.features[0].attributes;
+
+    KDF.setVal("asset_responsibility", attributes["status"].startsWith("A") ? "AMEY (PFI)" : "Unadopted Highway");
+    
+    if (attributes["status"].startsWith("U")) {
+      vmap.setInfoWindow({
+        xcoord: marker.geometry.x,
+        ycoord: marker.geometry.y,
+        title: "Details",
+        content: `<strong>Site:</strong> ${attributes.name}
+        <br>${getValue("asset_responsibility")}`,
+      });
+      checkReportType();
+    }
+  }
+};
+
+// ----- Roads Feature Set Handler ---------------------------------------------
+
+const usrnFeatureSetHandler = (marker, featureSet) => {
+  if (featureSet.features.length >= 1) {
+    const attributes = featureSet.features[0].attributes;
+    KDF.setVal("site_code", attributes.usrn || "");
+    KDF.setVal("txt_usrn", attributes.usrn || "");
+  }
+};
+
+// ----- Pavements Feature Set Handler -----------------------------------------
+
+const pavementsFeatureSetHandler = (marker, featureSet) => {
+  setValues(marker, featureSet, 'parks');
+};
+
+// ----- Roads Feature Set Handler ---------------------------------------------
+
+const roadsFeatureSetHandler = (marker, featureSet) => {
+  console.log(featureSet)
+  setValues(marker, featureSet, 'pavements');
+};
+
+// ----- Asset Feature Set Hanlder -------------------------------------------
+
+const assetFeatureSetHandler = (marker, featureSet) => {
+  setValues(marker, featureSet, 'roads');
+};
+
+// ----- Query Map Layers ------------------------------------------------------
+
+const queryLayer = (marker) => {
+  const level1Data = getValue("level_1_data");
+
+  if (level1Data === "Gulley") {
+    queryDrains(marker);
+  } else if (["Fence", "Handrail", "Pedestrian Barrier", "Vehicle Barrier/Safety Fence"].includes(level1Data)) {
+    queryMapLayer(marker, 'fences');
+  } else if (level1Data === "Grit Bin") {
+     queryMapLayer(marker, 'gritbins');
+  } else if (level1Data === "Litter Bin") {
+    queryMapLayer(marker, 'litterbins');
+  } else if (["Cameras / Electronic Signs", "Illuminated Road Signs", "Lit Bollard", "Non-Illuminated Road Signs", "Street Name Plates"].includes(level1Data)) {
+    queryMapLayer(marker, 'signs');
+  } else if (["Art or Sculpture", "Bollard", "Cycle Barrier", "Cycle Stand", "Seat or Bench", "Tree or Branch"].includes(level1Data)) {
+    queryMapLayer(marker, 'streetfurniture');
+  } else if (level1Data === "Street Light") {
+    queryMapLayer(marker, 'streetlights');
+  } else if (["Bridge", "Culvert", "Earth Bank / Cutting", "Gantry", "Retaining Wall", "Subway"].includes(level1Data)) {
+    queryMapLayer(marker, 'structures');
+  } else if (level1Data === "Traffic Signals") {
+    queryMapLayer(marker, 'trafficsignals');
+  } else if (["Tree or Branch", "Tree Grille"].includes(level1Data)) {
+    queryMapLayer(marker, 'trees');
+  } else if (["Box Planter", "Grass Verge", "Hedge", "Plants or Planted Area"].includes(level1Data)) {
+    queryMapLayer(marker, 'vegetation');
+  } else {
+    queryMapLayer(marker, 'roads');
+  }
+};
+
+// ----- Core Map Functionality ------------------------------------------------
+
+class VMap {
+  constructor(mapParams) {
+    this.mapParams = mapParams;
+  }
+  getMapParams() {
+    return this.mapParams;
+  }
+}
+VMap.prototype.extentChanged = function extentChanged(evt, layerDrawingFunc) {
+  if (evt["levelChange"] == true) {
+    if (this.getMapParams().assetMaxDrawZoom) {
+      if (evt.lod.level >= this.getMapParams().assetMaxDrawZoom) {
+        layerDrawingFunc(evt);
+      } else {
+        this.getMapParams().map.graphics.clear();
+      }
+    } else {
+      if (evt.lod.level >= 6) {
+        layerDrawingFunc(evt);
+      } else {
+        this.getMapParams().map.graphics.clear();
+      }
+    }
+  }
+};
+VMap.prototype.zoomLevelChanged = function zoomLevelChanged(evt, zoomChanged) {
+  if (evt["levelChange"] == true) {
+    zoomChanged(evt);
+  }
+};
+VMap.prototype.drawDynamicLayer = function drawDynamicLayer(layerConfig) {
+  var layer = new esri.layers.ArcGISDynamicMapServiceLayer(layerConfig.url, {
+    id: layerConfig.id,
+  });
+  layer.setVisibleLayers(layerConfig.codes);
+  layer.setOpacity(0.9);
+  this.getMapParams().map.addLayer(layer);
+};
+VMap.prototype.removeLayer = function removeLayer(layerConfig) {
+  var layer = this.getMapParams().map.getLayer(layerConfig.id);
+  this.getMapParams().map.removeLayer(layer);
+};
+VMap.prototype.removeAllLayers = function removeAllLayers() {
+  this.getMapParams().map.removeAllLayers();
+};
+VMap.prototype.loadCaseMarkers = function loadCaseMarkers(
+  response,
+  selectedCaseCallback
+) {
+  var map = this.getMapParams().map;
+  var mapParams = this.getMapParams();
+  map.graphics.clear();
+  require([
+    "esri/geometry/Point",
+    "esri/symbols/PictureMarkerSymbol",
+    "esri/graphic",
+    "esri/layers/GraphicsLayer",
+    "dojo/domReady!",
+  ], function (Point, PictureMarkerSymbol, Graphic, GraphicsLayer) {
+    var newlayer = new GraphicsLayer({
+      id: "custom_marker_layer",
+    });
+    $.each(response.data, function () {
+      var markerinfo = this;
+      var point = new Point(
+        Number(markerinfo.longitude),
+        Number(markerinfo.latitude),
+        new esri.SpatialReference(mapParams.WKID)
+      );
+      var markerSymbol = new PictureMarkerSymbol(markerinfo.icon, 20, 32);
+      markerSymbol.setOffset(0, 0); //0,32
+      var marker = new Graphic(point, markerSymbol);
+      marker.setAttributes({
+        title: "",
+        description: '<img src="/dformresources/content/ajax-loader.gif" />',
+        caseid: markerinfo.title,
+      });
+      newlayer.add(marker);
+    });
+    newlayer.on("click", function (event) {
+      setTimeout(function () {
+        selectedCaseCallback(event.graphic);
+      }, 200);
+    });
+    map.addLayer(newlayer);
+  });
+};
+VMap.prototype.centerAtLonLat = function centerAtLonLat(centerConfig) {
+  var params = this.getMapParams();
+  var config = centerConfig;
+  require(["esri/geometry/Point", "esri/SpatialReference"], function (
+    Point,
+    SpatialReference
+  ) {
+    var point = new Point(
+      Number(config.lon),
+      Number(config.lat),
+      new SpatialReference(params.WKID)
+    );
+    params.map.centerAt(point);
+  });
+};
+VMap.prototype.geoLocate = function geoLocate(success, error) {
+  if (navigator.geolocation) {
+    var options = {
+      enableHighAccuracy: true,
+      timeout: 5000,
+      maximumAge: 0,
+    };
+    navigator.geolocation.getCurrentPosition(success, error, options);
+  } else {
+    //console.log("navigator.geolocation undefined");
+  }
+};
+VMap.prototype.setInfoWindow = function setInfoWindow(infoWindowConfig) {
+  var wkid = this.getMapParams().WKID;
+  var map = this.getMapParams().map;
+  require(["esri/geometry/Point", "esri/SpatialReference"], function (
+    Point,
+    SpatialReference
+  ) {
+    var point = new Point(
+      infoWindowConfig.xcoord,
+      infoWindowConfig.ycoord,
+      new SpatialReference(wkid)
+    );
+    map.infoWindow.setTitle(infoWindowConfig.title);
+    map.infoWindow.setContent(infoWindowConfig.content);
+    map.infoWindow.show(point);
+    // map.infoWindow.reposition();
+  });
+};
+VMap.prototype.findFeaturesNear = function findFeaturesNear(
+  marker,
+  layerConfig,
+  featureSetHandler,
+  errorCallback
+) {
+  var assetClick = this.getMapParams().assetClick;
+  var wkid = this.getMapParams().WKID;
+  var map = this.getMapParams().map;
+  var queryLayerConfig = layerConfig;
+  require([
+    "esri/InfoTemplate",
+    "esri/layers/FeatureLayer",
+    "esri/geometry/Circle",
+    "esri/tasks/query",
+    "esri/SpatialReference",
+  ], function (InfoTemplate, FeatureLayer, Circle, Query, SpatialReference) {
+    var infoTemplate = new InfoTemplate("Attributes", "${*}");
+    var featureLayer = new FeatureLayer(queryLayerConfig.url, {
+      mode: FeatureLayer.MODE_ONDEMAND,
+      infoTemplate: infoTemplate,
+      outFields: ["*"],
+    });
+    var circle = new Circle(marker.geometry, {
+      radius: assetClick.radius,
+      radiusUnit: assetClick.radiusUnit,
+    });
+    if (queryLayerConfig.wkid) {
+      circle.spatialReference = new SpatialReference(queryLayerConfig.wkid);
+    }
+    var query = new Query();
+    query.geometry = circle;
+    query.spatialRelationship = Query.SPATIAL_REL_INTERSECTS;
+    query.returnGeometry = true;
+    query.outFields = ["*"];
+    featureLayer.queryFeatures(
+      query,
+      function (featureSet) {
+        featureSetHandler(marker, featureSet);
+      },
+      function (error) {
+        errorCallback(error);
+      }
+    );
+  });
+};
+VMap.prototype.addPoint = function addPoint(pointConfig) {
+  var config = pointConfig;
+  var mapParams = this.getMapParams();
+  require([
+    "esri/geometry/Point",
+    "esri/symbols/PictureMarkerSymbol",
+    "esri/graphic",
+    "esri/layers/GraphicsLayer",
+    "dojo/domReady!",
+  ], function (Point, PictureMarkerSymbol, Graphic, GraphicsLayer) {
+    var point = new Point(
+      Number(config.longitude),
+      Number(config.latitude),
+      new esri.SpatialReference({
+        wkid: Number(mapParams.WKID),
+      })
+    );
+    var markerSymbol = new PictureMarkerSymbol(
+      config.marker.url,
+      config.marker.width,
+      config.marker.height
+    );
+    markerSymbol.setOffset(0, 20);
+    var graphic = new Graphic(point, markerSymbol);
+    var markerLayer = new GraphicsLayer(config.layer);
+    mapParams.map.addLayer(markerLayer, 0);
+    markerLayer.add(graphic);
+  });
+};
+VMap.prototype.removePoints = function removePoints(layerId) {
+  if (this.getMapParams().map.getLayer(layerId)) {
+    this.getMapParams().map.getLayer(layerId).clear();
+  }
+};
+VMap.prototype.convertLonLat = function convertLonLat(config) {
+  var result = proj4(
+    config.inputProjection.projection,
+    config.outputProjection.projection,
+    config.coordinates
+  );
+  config.successCallBack(result);
+};
+VMap.prototype.addSearch = function addSearch() {
+  var mapParams = this.getMapParams();
+  require(["esri/config", "esri/dijit/Search"], function (esriConfig, Search) {
+    esriConfig.defaults.geometryService =
+      mapParams.hostUrl + mapParams.geometryService;
+    var search = new Search(
+      {
+        map: mapParams.map,
+      },
+      "search"
+    );
+    search.startup();
+  });
 };
 
 // ----- HTML CONTENT ------------------------------------------------------- //
@@ -1192,7 +2139,7 @@ const createProfileHTML = `
     </div>
     <div class="create-profile-container__buttons">
       <button type="button" id="dform_widget_button_but_create_continue_with_enquiry" data-active="true"
-        class="dform_widget dform_widget_type_button dform_widget_but_ccreate_ontinue_with_enquiry">
+        class="dform_widget dform_widget_type_button dform_widget_but_create_continue_with_enquiry">
         Continue with enquiry
       </button>
     </div>
@@ -1214,9 +2161,9 @@ const setPageHeaderAndFooter = (() => {
                     <img class="scc-logo" src="https://www.sheffield.gov.uk/themes/custom/bbd_localgov/logo.png" alt="Sheffield City Council Logo">
                     <h1 class="header-title">${getValue('txt_form_title')}</h1>
                     <div class="header-nav">
-                        <button type="button" class="nav-button">Home</button>
-                        <button type="button" class="nav-button">Navigation</button>
-                        <button type="button" class="nav-button">Information</button>
+                        <button type="button" class="nav-button nav-button__home">Home</button>
+                        <button type="button" class="nav-button nav-button__navi">Navigation</button>
+                        <button type="button" class="nav-button nav-button__info">Information</button>
                     </div>
                 </div>
             </div>

@@ -3,10 +3,16 @@ function initiateStartUp() {
 
   setPageHeaderAndFooter(KDF.getVal("txt_formtitle"));
   setHtmlHead(KDF.getVal("txt_formtitle"));
+
+  // default screen to top
+  window.scrollTo(0, 0);
 }
 
 function initiateReady(event, kdf, progressBar) {
   // Function designed to run when the form is ready.
+
+  // default screen to top
+  window.scrollTo(0, 0);
 
   // Use to enable and disable the maps during downtime
   const mapAvailable = true;
@@ -176,6 +182,9 @@ function initiateReady(event, kdf, progressBar) {
 let pageID = "";
 function initiatePageChange(event, kdf, currentpageid, targetpageid) {
   // Function designed to run when the page is changed.
+
+  // default screen to top
+  window.scrollTo(0, 0);
 
   $(`div[data-type="page"][data-pos="${targetpageid}"]`).each(function () {
     pageID = this.id.slice(11);
