@@ -63,45 +63,61 @@ const characterCounter = (name) => {
     document.querySelector(`#${idConcat}`).innerHTML = `${remainingCharacters} characters remaining`;
 };
 
-// Function to get value by widget name
-const getValue = name => document.getElementById(`dform_widget_${name}`).value;
-
-// Function to set value by widget name
-const setValue = (name, value) => {
+// Function to get element by name
+const getElementByName = name => {
   const element = document.getElementById(`dform_widget_${name}`);
+  if (!element) {
+    console.log(`Element with ID "dform_widget_${name}" not found.`);
+  }
+  return element;
+};
+
+// Function to get value by widget name
+const getValue = name => {
+  const element = getElementByName(name);
   if (element) {
-    element.value = value || '';
+    return element.value;
   } else {
     console.log(`Element with ID "dform_widget_${name}" not found.`);
+    return '';
   }
 };
 
+// Function to set value by widget(s) name
+const setValue = nameValuePairs => {
+  nameValuePairs.forEach(([name, value]) => {
+    const element = getElementByName(name);
+    if (element) {
+      element.value = value || '';
+    }
+  });
+};
+
 // Function to show element by name
-const showElement = (names) => {
-    names.forEach((name) => {
-        if (name.includes(page_)) {
-            KDF.showPage(name);
-        } else if (name.includes(area_) || name.includes(box_)) {
-            KDF.showSection(name);
-        } else {
-            KDF.showWidget(name);
-        }
-    });
+const showElement = names => {
+  names.forEach((name) => {
+    const element = name.startsWith('page_')
+      ? KDF.showPage
+      : name.startsWith('area_') || name.startsWith('box_')
+      ? KDF.showSection
+      : KDF.showWidget;
+    element(name);
+  });
 };
 
 // Function to hide element by name
-const hideElement = (names) => {
-    names.forEach((name) => {
-        if (name.includes(page_)) {
-            KDF.hidePage(name);
-        } else if (name.includes(area_) || name.includes(box_)) {
-            KDF.hideSection(name);
-        } else {
-            KDF.hideWidget(name);
-        }
-    });
+const hideElement = names => {
+  names.forEach((name) => {
+    const element = name.startsWith('page_')
+      ? KDF.hidePage
+      : name.startsWith('area_') || name.startsWith('box_')
+      ? KDF.hideSection
+      : KDF.hideWidget;
+    element(name);
+  });
 };
 
+// function to got back in the form jurney
 const goToPreviousPage = pageID => {
     // Go to the specified page if pageID is provided, otherwise go to the previous page
     if (pageID) {
@@ -111,6 +127,7 @@ const goToPreviousPage = pageID => {
     }
 };
 
+// function to got forward in the form jurney
 const goToNextPage = pageID => {
     // Go to the specified page if pageID is provided, otherwise go to the next page
     if (pageID) {

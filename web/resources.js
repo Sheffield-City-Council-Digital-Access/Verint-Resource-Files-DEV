@@ -2200,10 +2200,7 @@ function checkDate(id, another, dd, mm, yy) {
 
   if (dd && mm && yy) {
     if (validDate(id, dd, mm, yy)) {
-      const formattedDate = `${dd.substr(0, 2)}/${mm.substr(0, 2)}/${yy.substr(
-        0,
-        4
-      )}`;
+      const formattedDate = `${dd.toString().padStart(2, '0')}/${mm.toString().padStart(2, '0')}/${yy.substr(0, 4)}`;
       if (id === "dform_widget_date_field_another") {
         $("#dform_widget_txt_dob_another").val(formattedDate);
         $("#dform_widget_dt_dob_another").val(formattedDate);
