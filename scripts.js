@@ -11,11 +11,14 @@
 // }
 
 // Determine the server environment based on the current URL
-const serverEnvironment = window.location.href.includes("forms-dev-sheffield")
-  ? "https://forms-dev-sheffield.squiz.cloud" // If URL includes "forms-dev-sheffield", set server environment to development
-  : window.location.href.includes("forms-qa-sheffield")
-    ? "https://forms-qa-sheffield.squiz.cloud" // If URL includes "forms-qa-sheffield", set server environment to quality assurance
-    : "https://forms-sheffield.squiz.cloud"; // Otherwise, set server environment to production
+// const serverEnvironment = window.location.href.includes("forms-dev-sheffield")
+//   ? "https://forms-dev-sheffield.squiz.cloud" // If URL includes "forms-dev-sheffield", set server environment to development
+//   : window.location.href.includes("forms-qa-sheffield")
+//     ? "https://forms-qa-sheffield.squiz.cloud" // If URL includes "forms-qa-sheffield", set server environment to quality assurance
+//     : "https://forms-sheffield.squiz.cloud"; // Otherwise, set server environment to production
+
+var serverEnvironment = "https://forms-dev-sheffield.squiz.cloud";
+var anonID = "101001971935";
 
 //Finish: Establish Environment
 
