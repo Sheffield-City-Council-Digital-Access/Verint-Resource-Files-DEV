@@ -1,14 +1,22 @@
 //Start: Establish Environment
-if (window.location.href.includes("forms-sheffield")) {
-  var serverEnvironment = "https://forms-sheffield.squiz.cloud";
-  var anonID = "101001971935";
-} else if (window.location.href.includes("forms-qa-sheffield")) {
-  var serverEnvironment = "https://forms-qa-sheffield.squiz.cloud";
-  var anonID = "101001971935";
-} else if (window.location.href.includes("forms-dev-sheffield")) {
-  var serverEnvironment = "https://forms-dev-sheffield.squiz.cloud";
-  var anonID = "101001971935";
-}
+// if (window.location.href.includes("forms-sheffield")) {
+//   var serverEnvironment = "https://forms-sheffield.squiz.cloud";
+//   var anonID = "101001971935";
+// } else if (window.location.href.includes("forms-qa-sheffield")) {
+//   var serverEnvironment = "https://forms-qa-sheffield.squiz.cloud";
+//   var anonID = "101001971935";
+// } else if (window.location.href.includes("forms-dev-sheffield")) {
+//   var serverEnvironment = "https://forms-dev-sheffield.squiz.cloud";
+//   var anonID = "101001971935";
+// }
+
+// Determine the server environment based on the current URL
+const serverEnvironment = window.location.href.includes("forms-dev-sheffield")
+  ? "https://forms-dev-sheffield.squiz.cloud" // If URL includes "forms-dev-sheffield", set server environment to development
+  : window.location.href.includes("forms-qa-sheffield")
+    ? "https://forms-qa-sheffield.squiz.cloud" // If URL includes "forms-qa-sheffield", set server environment to quality assurance
+    : "https://forms-sheffield.squiz.cloud"; // Otherwise, set server environment to production
+
 //Finish: Establish Environment
 
 //Start: Classify Fields Function
