@@ -152,7 +152,7 @@ function initiateReady(event, kdf, progressBar) {
   }
 
   loadGoogleAnalytics(); //Create the script
-
+*/
   window.dataLayer = window.dataLayer || [];
 
   function gtag() {
@@ -165,7 +165,7 @@ function initiateReady(event, kdf, progressBar) {
   //Confirmed with Google tag Assistant
   //Finish: Google Analytics
 
-  */
+  
 
   if (kdf.name !== "cwca_process") {
     if (kdf.form.caseid !== "") {
