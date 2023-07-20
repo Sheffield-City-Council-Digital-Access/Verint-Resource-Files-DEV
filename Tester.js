@@ -141,7 +141,7 @@ function initiateReady(event, kdf, progressBar) {
 
   //Start: Google Analytics
   //Added Google Anyltics Tag Container Tracking - included here to min rebuilding DOM
-  /*function loadGoogleAnalytics() {
+  function loadGoogleAnalytics() {
     var ga = document.createElement("script");
     ga.type = "text/javascript";
     ga.async = true;
@@ -152,7 +152,7 @@ function initiateReady(event, kdf, progressBar) {
   }
 
   loadGoogleAnalytics(); //Create the script
-*/
+/*
   window.dataLayer = window.dataLayer || [];
 
   function gtag() {
@@ -161,7 +161,7 @@ function initiateReady(event, kdf, progressBar) {
 
   gtag("js", new Date());
 
-  gtag("config", "UA-16453174-9");
+  gtag("config", "UA-16453174-9");*/
   //Confirmed with Google tag Assistant
   //Finish: Google Analytics
 
