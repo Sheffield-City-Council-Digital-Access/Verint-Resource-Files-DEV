@@ -141,7 +141,7 @@ function initiateReady(event, kdf, progressBar) {
 
   //Start: Google Analytics
   //Added Google Anyltics Tag Container Tracking - included here to min rebuilding DOM
-  function loadGoogleAnalytics() {
+  /*function loadGoogleAnalytics() {
     var ga = document.createElement("script");
     ga.type = "text/javascript";
     ga.async = true;
@@ -164,6 +164,8 @@ function initiateReady(event, kdf, progressBar) {
   gtag("config", "UA-16453174-9");
   //Confirmed with Google tag Assistant
   //Finish: Google Analytics
+
+  */
 
   if (kdf.name !== "cwca_process") {
     if (kdf.form.caseid !== "") {
