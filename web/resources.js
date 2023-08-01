@@ -482,7 +482,7 @@ function setHtmlHead(formTitle) {
     document.title = formTitle;
   }, 10);
   var favicon = document.querySelector("link[rel~='icon']");
-  favicon.href = "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
+  favicon.href = "SCC%20Favicon.png";
 }
 
 function addProgressBarHtml() {
