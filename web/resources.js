@@ -482,7 +482,7 @@ function setHtmlHead(formTitle) {
     document.title = formTitle;
   }, 10);
   var favicon = document.querySelector("link[rel~='icon']");
-  favicon.href = "SCC%20Favicon.png";
+  favicon.href = "https://sheffield-city-council-digital-access.github.io/Verint-Resource-Files-DEV/web/SCC%20Favicon.png";
 }
 
 function addProgressBarHtml() {
