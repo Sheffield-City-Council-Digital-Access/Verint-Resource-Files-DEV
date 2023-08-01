@@ -10,7 +10,7 @@ function initiateStartUp() {
 
 function initiateReady(event, kdf, progressBar) {
   // Function designed to run when the form is ready.
-  document.getElementById("form-title").innerHTML = formTitle;
+
   // default screen to top
   window.scrollTo(0, 0);
 
