@@ -1,6 +1,12 @@
 function initiateStartUp() {
   // Function designed to run before the form is ready.
 
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PBGBFQVW');
+
   setPageHeaderAndFooter(KDF.getVal("txt_formtitle"));
   setHtmlHead(KDF.getVal("txt_formtitle"));
 
@@ -144,32 +150,6 @@ function initiateReady(event, kdf, progressBar) {
       checkMaxDay(this.id, dd, mm, yy);
     }
   );
-
-  //Start: Google Analytics
-  //Added Google Anyltics Tag Container Tracking - included here to min rebuilding DOM
-  function loadGoogleAnalytics() {
-    var ga = document.createElement("script");
-    ga.type = "text/javascript";
-    ga.async = true;
-    ga.src = "https://www.googletagmanager.com/gtag/js?id=GTM-KQRMMXC";
-
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(ga, s);
-  }
-
-  loadGoogleAnalytics(); //Create the script
-
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-
-  gtag("js", new Date());
-
-  gtag("config", "UA-16453174-9");
-  //Confirmed with Google tag Assistant
-  //Finish: Google Analytics
 
   if (kdf.name !== "cwca_process") {
     if (kdf.form.caseid !== "") {
@@ -459,22 +439,31 @@ function handleCustomActions(action, response) {
 function setPageHeaderAndFooter(formTitle) {
   var body = document.getElementsByTagName("body")[0];
 
+  // Determine if form title should be rendered based on window.location.pathname
+  const shouldRenderFormTitle = !window.location.pathname.startsWith('/site');
+
+  // Get the reference to the body element
+  const body = document.body;
+
+  // Add the header HTML
   body.insertAdjacentHTML(
     "afterbegin",
-      `<header role="banner">
-        <div class="scc_wrap" id="top">
-          <div class="scc_logo">
-            <a href="https://www.sheffield.gov.uk" title="Back to homepage">
-              <img src="https://www.sheffield.gov.uk/verint-files/logo.png" alt="Sheffield City Council Logo">
-            </a>
-          </div>
+    `<header role="banner">
+      <div class="scc_wrap" id="top">
+        <div class="scc_logo">
+          <a href="https://www.sheffield.gov.uk" title="Back to homepage">
+            <img src="https://www.sheffield.gov.uk/verint-files/logo.png" alt="Sheffield City Council Logo">
+          </a>
         </div>
-        <!--div id="form-title-outer">
+      </div>
+      ${shouldRenderFormTitle ? 
+        `<div id="form-title-outer">
           <div id="form-title-inner">
             <h1 id="form-title"></h1>
           </div>
-        </div-->
-      </header>`
+        </div>` 
+        : ''}
+    </header>`
   );
 
   body.insertAdjacentHTML(
@@ -559,7 +548,7 @@ function setPageHeaderAndFooter(formTitle) {
             </footer>`
   );
 
-  document.getElementById("form-title").innerHTML = formTitle;
+  if (shouldRenderFormTitle) document.getElementById("form-title").innerHTML = formTitle;
 }
 
 function setHtmlHead(formTitle) {

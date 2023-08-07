@@ -389,7 +389,7 @@ nav.scc_az-links:focus-visible,
   padding-right: 0px;
 }
 
-#dform_container, .contentInner {
+#dform_container {
   font-family: "Open Sans Regular", "Trebuchet MS", "Lucida Grande", "Geneva",
     Sans-Serif;
   line-height: 1.4;
@@ -435,7 +435,7 @@ h4 {
   border-top: 4px solid white;
 }
 
-#form-title-inner, .contentInner {
+#form-title-inner {
   max-width: 1544px;
   margin: auto;
 }
@@ -478,7 +478,7 @@ h4 {
   padding: 0;
 }
 
-form.dform, content {
+form.dform {
   background: #eeeeee;
   padding: 30px 16px;
   margin: 30px 0 6px 0;
