@@ -557,7 +557,7 @@ function setHtmlHead(formTitle) {
     document.title = formTitle;
   }, 10);
   var favicon = document.querySelector("link[rel~='icon']");
-  favicon.href = "https://github.com/bigbluedoor/sheffield-cc-verint-bbd/blob/dev/verint-files/SCC%20Favicon.png";
+  favicon.href = "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
 }
 
 function addProgressBarHtml() {
