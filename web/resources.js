@@ -22,6 +22,8 @@ function initiateReady(event, kdf, progressBar) {
   // default screen to top
   window.scrollTo(0, 0);
 
+  if (portal && portalPage === '/request') document.getElementById("form-title").innerHTML = KDF.getVal("txt_formtitle");
+
   // Use to enable and disable the maps during downtime
   const mapAvailable = true;
   if (mapAvailable === false) {
@@ -167,8 +169,6 @@ function initiatePageChange(event, kdf, currentpageid, targetpageid) {
 
   // default screen to top
   window.scrollTo(0, 0);
-
-  if (portal && portalPage === '/request') setTimeout(document.getElementById("form-title").innerHTML = KDF.getVal("txt_formtitle"), 0);
 
   $(`div[data-type="page"][data-pos="${targetpageid}"]`).each(function () {
     pageID = this.id.slice(11);
