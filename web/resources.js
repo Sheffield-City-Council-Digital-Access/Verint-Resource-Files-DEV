@@ -9,9 +9,9 @@ function initiateStartUp() {
 
     // const portal = !window.location.pathname.startsWith('/site');
     // const portalPage = `/${window.location.pathname.split('/')[3]}`;
-    console.log(portal);
+    console.log(portal, portalPage);
     if (portal) {
-
+          if (portalPage === '/requests') document.getElementById("form-title").innerHTML = document.getElementById('dform_widget_txt_formtitle').value;
     } else {
       setPageHeaderAndFooter(KDF.getVal("txt_formtitle"));
       setHtmlHead(KDF.getVal("txt_formtitle"));
