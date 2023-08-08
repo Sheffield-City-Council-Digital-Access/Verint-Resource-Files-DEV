@@ -7,8 +7,15 @@ function initiateStartUp() {
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PBGBFQVW');
 
-    setPageHeaderAndFooter(KDF.getVal("txt_formtitle"));
-    setHtmlHead(KDF.getVal("txt_formtitle"));
+    const portal = !window.location.pathname.startsWith('/site');
+    const portalPage = `/${window.location.pathname.split('/')[3]}`;
+  
+    if (portal) {
+
+    } else {
+      setPageHeaderAndFooter(KDF.getVal("txt_formtitle"));
+      setHtmlHead(KDF.getVal("txt_formtitle"));
+    }
 
   // default screen to top
   window.scrollTo(0, 0);
@@ -439,48 +446,23 @@ function handleCustomActions(action, response) {
 function setPageHeaderAndFooter(formTitle) {
   var body = document.getElementsByTagName("body")[0];
 
-// Determine if form title should be rendered based on window.location.pathname
-const shouldRenderFormTitle = !window.location.pathname.startsWith('/site');
-
-// Add the header HTML
-body.insertAdjacentHTML(
-  "afterbegin",
-  `<header role="banner">
-    <div class="scc_wrap" id="top">
-      <div class="scc_logo">
-        <a href="https://www.sheffield.gov.uk" title="Back to homepage">
-          <img src="https://www.sheffield.gov.uk/verint-files/logo.png" alt="Sheffield City Council Logo">
-        </a>
-      </div>
-    </div>
-    ${shouldRenderFormTitle ? 
-      `<div id="form-title-outer">
-        <div id="form-title-inner">
-          <h1 id="form-title"></h1>
+  body.insertAdjacentHTML(
+    "afterbegin",
+      `<header role="banner">
+        <div class="scc_wrap" id="top">
+          <div class="scc_logo">
+            <a href="https://www.sheffield.gov.uk" title="Back to homepage">
+              <img src="https://www.sheffield.gov.uk/verint-files/logo.png" alt="Sheffield City Council Logo">
+            </a>
+          </div>
         </div>
-      </div>` 
-      : ''}
-  </header>`
-);
-
-
-  // body.insertAdjacentHTML(
-  //   "afterbegin",
-  //     `<header role="banner">
-  //       <div class="scc_wrap" id="top">
-  //         <div class="scc_logo">
-  //           <a href="https://www.sheffield.gov.uk" title="Back to homepage">
-  //             <img src="https://www.sheffield.gov.uk/verint-files/logo.png" alt="Sheffield City Council Logo">
-  //           </a>
-  //         </div>
-  //       </div>
-  //       <div id="form-title-outer">
-  //         <div id="form-title-inner">
-  //           <h1 id="form-title"></h1>
-  //         </div>
-  //       </div>
-  //     </header>`
-  // );
+        <div id="form-title-outer">
+          <div id="form-title-inner">
+            <h1 id="form-title"></h1>
+          </div>
+        </div>
+      </header>`
+  );
 
   body.insertAdjacentHTML(
     "beforeend",
@@ -564,7 +546,8 @@ body.insertAdjacentHTML(
             </footer>`
   );
 
-  document.getElementById("form-title").innerHTML = formTitle;
+  if (!portal) document.getElementById("form-title").innerHTML = formTitle;
+  if (portal && portalPage === '/requests') document.getElementById("form-title").innerHTML = formTitle;
 }
 
 function setHtmlHead(formTitle) {
