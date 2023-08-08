@@ -9,7 +9,7 @@ function initiateStartUp() {
 
 
   console.log(portal, portalPage, portal && portalPage === '/request');
-    if (portal && portalPage === '/request') document.getElementById("form-title").innerHTML = KDF.getVal("txt_formtitle");
+    if (portal && portalPage === '/request') setTimeout(document.getElementById("form-title").innerHTML = KDF.getVal("txt_formtitle"), 0);
     if (!portal) {
       setPageHeaderAndFooter(KDF.getVal("txt_formtitle"));
       setHtmlHead(KDF.getVal("txt_formtitle"));
@@ -175,7 +175,6 @@ function initiatePageChange(event, kdf, currentpageid, targetpageid) {
     pageID = this.id.slice(11);
   });
   
-  if (!portal) setTimeout(setHtmlHead(KDF.getVal("txt_formtitle")), 0);
   setProgressBarWidthAndLabel();
   getAndSetReviewPageData();
 }
