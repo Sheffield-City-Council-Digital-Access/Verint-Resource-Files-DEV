@@ -7,9 +7,6 @@ function initiateStartUp() {
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PBGBFQVW');
 
-
-  console.log(portal, portalPage, portal && portalPage === '/request');
-    if (portal && portalPage === '/request') setTimeout(document.getElementById("form-title").innerHTML = KDF.getVal("txt_formtitle"), 1000);
     if (!portal) {
       setPageHeaderAndFooter(KDF.getVal("txt_formtitle"));
       setHtmlHead(KDF.getVal("txt_formtitle"));
@@ -170,6 +167,8 @@ function initiatePageChange(event, kdf, currentpageid, targetpageid) {
 
   // default screen to top
   window.scrollTo(0, 0);
+
+  if (portal && portalPage === '/request') setTimeout(document.getElementById("form-title").innerHTML = KDF.getVal("txt_formtitle"), 0);
 
   $(`div[data-type="page"][data-pos="${targetpageid}"]`).each(function () {
     pageID = this.id.slice(11);
