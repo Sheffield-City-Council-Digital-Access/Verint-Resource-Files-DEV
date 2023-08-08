@@ -11,7 +11,7 @@ function initiateStartUp() {
     // const portalPage = `/${window.location.pathname.split('/')[3]}`;
     console.log(portal, portalPage);
     if (portal) {
-          if (portalPage === '/requests') document.getElementById("form-title").innerHTML = document.getElementById('dform_widget_txt_formtitle').value;
+      if (portalPage === '/requests') document.getElementById("form-title").innerHTML = KDF.getVal("txt_formtitle");
     } else {
       setPageHeaderAndFooter(KDF.getVal("txt_formtitle"));
       setHtmlHead(KDF.getVal("txt_formtitle"));
