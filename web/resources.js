@@ -8,7 +8,8 @@ function initiateStartUp() {
     })(window,document,'script','dataLayer','GTM-PBGBFQVW');
 
 
-  console.log(portal, portalPage);
+  console.log(portal, portalPage, portal && portalPage === '/request');
+    if (portal && portalPage === '/request') document.getElementById("form-title").innerHTML = KDF.getVal("txt_formtitle");
     if (!portal) {
       setPageHeaderAndFooter(KDF.getVal("txt_formtitle"));
       setHtmlHead(KDF.getVal("txt_formtitle"));
