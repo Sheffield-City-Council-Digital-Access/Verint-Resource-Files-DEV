@@ -176,7 +176,7 @@ function initiatePageChange(event, kdf, currentpageid, targetpageid) {
     pageID = this.id.slice(11);
   });
   
-  setTimeout(setHtmlHead(KDF.getVal("txt_formtitle")), 0);
+  if (!portal) setTimeout(setHtmlHead(KDF.getVal("txt_formtitle")), 0);
   setProgressBarWidthAndLabel();
   getAndSetReviewPageData();
 }
@@ -550,7 +550,6 @@ function setPageHeaderAndFooter(formTitle) {
 
 function setHtmlHead(formTitle) {
   // Function designed to set title and favicon to display in browser tab
-
   document.title = formTitle;
 
   // overwrite Verint's reset of document.title
