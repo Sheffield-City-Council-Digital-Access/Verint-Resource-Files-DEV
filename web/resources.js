@@ -9,7 +9,7 @@ function initiateStartUp() {
 
 
   console.log(portal, portalPage, portal && portalPage === '/request');
-    if (portal && portalPage === '/request') setTimeout(document.getElementById("form-title").innerHTML = KDF.getVal("txt_formtitle"), 0);
+    if (portal && portalPage === '/request') setTimeout(document.getElementById("form-title").innerHTML = KDF.getVal("txt_formtitle"), 1000);
     if (!portal) {
       setPageHeaderAndFooter(KDF.getVal("txt_formtitle"));
       setHtmlHead(KDF.getVal("txt_formtitle"));
