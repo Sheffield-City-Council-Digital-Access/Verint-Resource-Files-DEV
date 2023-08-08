@@ -7,10 +7,10 @@ function initiateStartUp() {
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PBGBFQVW');
 
-    // const portal = !window.location.pathname.startsWith('/site');
-    // const portalPage = `/${window.location.pathname.split('/')[3]}`;
+    const portal = !window.location.pathname.startsWith('/site');
+    const portalPage = `/${window.location.pathname.split('/')[3]}`;
     if (portal) {
-      if (portalPage === '/requests') document.getElementById("form-title").innerHTML = KDF.getVal("txt_formtitle");
+      if (portalPage === '/request') document.getElementById("form-title").innerHTML = KDF.getVal("txt_formtitle");
     } else {
       setPageHeaderAndFooter(KDF.getVal("txt_formtitle"));
       setHtmlHead(KDF.getVal("txt_formtitle"));
