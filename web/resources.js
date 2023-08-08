@@ -7,9 +7,9 @@ function initiateStartUp() {
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PBGBFQVW');
 
-    const portal = !window.location.pathname.startsWith('/site');
-    const portalPage = `/${window.location.pathname.split('/')[3]}`;
-  
+    // const portal = !window.location.pathname.startsWith('/site');
+    // const portalPage = `/${window.location.pathname.split('/')[3]}`;
+    console.log(portal);
     if (portal) {
 
     } else {
@@ -546,8 +546,7 @@ function setPageHeaderAndFooter(formTitle) {
             </footer>`
   );
 
-  if (!portal) document.getElementById("form-title").innerHTML = formTitle;
-  if (portal && portalPage === '/requests') document.getElementById("form-title").innerHTML = formTitle;
+  document.getElementById("form-title").innerHTML = formTitle;
 }
 
 function setHtmlHead(formTitle) {
