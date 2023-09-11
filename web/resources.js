@@ -370,8 +370,8 @@ function handleCustomActions(action, response) {
         KDF.setVal("txt_postcodearea", val.postcode_area);
         KDF.setVal("txt_usrn", val.usrn);
         KDF.setVal("txt_streetid", val.street_id);
-        KDF.setVal("longitude_x", val.longitude_x);
-        KDF.setVal("latitude_y", val.latitude_y);
+        KDF.setVal("longitude_x", val.longitude_x_cords);
+        KDF.setVal("latitude_y", val.latitude_y_cords);
         KDF.setVal("site_name", capitalizeString(val.address_line_1));
         KDF.setVal("site_name", val.address_line_1);
         KDF.setVal("site_code", val.usrn);
