@@ -3527,7 +3527,7 @@ function parksFeatureSetHandler(marker, featureSet) {
         attributes["site_name"],
     });
   } else {
-    if (KDF.getVal("le_form_name") === "highways_report") {
+    if (KDF.getVal("le_form_name") === "highways_report"  || KDF.getVal("le_form_name") === "was_abandoned_vehicle") {
       vmap.setInfoWindow({
         xcoord: marker.geometry.x,
         ycoord: marker.geometry.y,
