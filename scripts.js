@@ -102,7 +102,7 @@ function searches(
 ) {
   KDF.setVal("txt_mandatory", mandatory);
   if (searchtype === "Customer") {
-    if (KDF.getVal("txt_customerid") !=== "") {
+    if (KDF.getVal("txt_customerid") !== "") {
       if (
         KDF.getVal("txt_customerid") === anonID &&
         KDF.getVal("txt_mandatory") === "Mandatory"
