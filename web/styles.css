@@ -509,7 +509,7 @@ legend,
   margin: 0 0 8px 0;
   padding-inline-start: 0;
   padding-inline-end: 0;
-  width: 100%;
+  width: max-content;
   max-width: 445px;
 }
 
@@ -588,17 +588,16 @@ fieldset legend {
 #dform_container input[type="radio"] {
   border: 2px solid #6b6b6b;
   border-radius: 50%;
-  width: 34px;
-  height: 34px;
+  width: 42px;
+  height: 42px;
   background: #ffffff;
   padding: 0;
   margin: -2px 15px 12px 0;
 }
 
-#dform_container .radiogroup,
-#dform_container .checkboxgroup {
-  /*remove space of br tag*/
-  margin: 0 0 -1.4rem 0;
+fieldset.radiogroup br,
+fieldset.checkboxgroup br {
+  display: none;
 }
 
 .horizontal > div > fieldset > span {
@@ -613,23 +612,12 @@ fieldset.checkboxgroup > span {
 
 .horizontal > div > fieldset > span > input,
 .vertical > div > fieldset > span > input {
-  min-width: 34px;
+  min-width: 42px;
 }
 
 #dform_container .radiogroup legend,
 #dform_container .checkboxgroup legend {
   margin: 0 0 18px 0;
-}
-
-.radiogroup input,
-#dform_container input[type="radio"] {
-  border: 2px solid #6b6b6b;
-  border-radius: 50%;
-  width: 34px;
-  height: 34px;
-  background: #ffffff;
-  padding: 0;
-  margin: 0 0 16px 0;
 }
 
 #dform_container .radiogroup label {
@@ -694,6 +682,7 @@ fieldset.checkboxgroup > span {
   height: 40px;
   margin-bottom: 0;
   background: white;
+  padding: 8px;
 }
 
 #dform_container input[type="checkbox"]:checked::after,
@@ -701,8 +690,8 @@ fieldset.checkboxgroup > span {
   content: "";
   display: block;
   position: relative;
-  /* top: -5px;
-  left: -9px; */
+  top: -5px;
+  left: -9px;
   width: 24px;
   height: 24px;
   background: #007c53;
@@ -740,7 +729,7 @@ fieldset.checkboxgroup > span {
   height: auto;
   top: 50%;
   left: 50%;
-  transform: translateX(-60%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 #dform_container .radiogroup > .dform_validationMessage,
