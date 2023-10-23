@@ -105,7 +105,7 @@ function searches(
     if (KDF.getVal("txt_customerid") !== "") {
       if (
         KDF.getVal("txt_customerid") === anonID &&
-        KDF.getVal("txt_mandatory") == "Mandatory"
+        KDF.getVal("txt_mandatory") === "Mandatory"
       ) {
         passToSearches(
           previousform,
@@ -169,7 +169,7 @@ function searches(
     (searchtype === "CustomerProperty") |
     (searchtype === "PropertyCustomer")
   ) {
-    if (KDF.getVal("txt_customerid") == "") {
+    if (KDF.getVal("txt_customerid") === "") {
       passToSearches(
         previousform,
         previouspage,
@@ -180,7 +180,7 @@ function searches(
         searchtype,
         scrollbox
       );
-    } else if (KDF.getVal("txt_propertyid") == "") {
+    } else if (KDF.getVal("txt_propertyid") === "") {
       passToSearches(
         previousform,
         previouspage,
@@ -194,7 +194,7 @@ function searches(
     } else {
       if (
         KDF.getVal("txt_customerid") === anonID &&
-        KDF.getVal("txt_mandatory") == "Mandatory"
+        KDF.getVal("txt_mandatory") === "Mandatory"
       ) {
         passToSearches(
           previousform,
@@ -967,7 +967,8 @@ console.log('Params should now correctly carry this across, is this still requir
   } else if (
     KDF.getVal("txt_agentteam") === "07000000004" ||
     KDF.getVal("txt_agentteam") === "070000000011" ||
-    KDF.getVal("txt_agentteam") === "07000000012"
+    KDF.getVal("txt_agentteam") === "07000000012"||
+    KDF.getVal("txt_agentteam") === "07000000013"
   ) {
     KDF.setVal("le_channel", "email_in");
   } else if (KDF.getVal("txt_agentteam") === "07000000001") {
