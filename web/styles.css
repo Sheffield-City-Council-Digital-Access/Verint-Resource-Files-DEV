@@ -622,7 +622,7 @@ fieldset.checkboxgroup > span {
 
 #dform_container .radiogroup label {
   font-family: "Open Sans Regular";
-  margin: 6px 0 0 13px;
+  margin: 8px 0 0 0;
 }
 
 .radiogroup input:focus,
