@@ -1,16 +1,14 @@
 function initiateStartUp() {
-  // Function designed to run before the form is ready.
+  // Function designed to run before the form is ready
 
   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PBGBFQVW');
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PBGBFQVW');
 
-    if (!portal) {
-      setPageHeaderAndFooter(KDF.getVal("txt_formtitle"));
-      setHtmlHead(KDF.getVal("txt_formtitle"));
-    }
+  setPageHeaderAndFooter(KDF.getVal("txt_formtitle"));
+  setHtmlHead(KDF.getVal("txt_formtitle"));
 
   // default screen to top
   window.scrollTo(0, 0);
@@ -21,8 +19,6 @@ function initiateReady(event, kdf, progressBar) {
 
   // default screen to top
   window.scrollTo(0, 0);
-
-  if (portal && portalPage === '/request') document.getElementById("form-title").innerHTML = KDF.getVal("txt_formtitle");
 
   // Use to enable and disable the maps during downtime
   const mapAvailable = true;
@@ -174,6 +170,7 @@ function initiatePageChange(event, kdf, currentpageid, targetpageid) {
     pageID = this.id.slice(11);
   });
   
+  setTimeout(setHtmlHead(KDF.getVal("txt_formtitle")), 0);
   setProgressBarWidthAndLabel();
   getAndSetReviewPageData();
 }
@@ -444,102 +441,99 @@ function setPageHeaderAndFooter(formTitle) {
 
   body.insertAdjacentHTML(
     "afterbegin",
-      `<header role="banner">
-        <div class="scc_wrap" id="top">
-          <div class="scc_logo">
-            <a href="https://www.sheffield.gov.uk" title="Back to homepage">
-              <img src="https://www.sheffield.gov.uk/verint-files/logo.png" alt="Sheffield City Council Logo">
-            </a>
-          </div>
+    `<header role="banner">
+      <div class="scc_wrap" id="top">
+        <div class="scc_logo">
+          <a href="https://www.sheffield.gov.uk" title="Back to homepage">
+            <img src="https://www.sheffield.gov.uk/verint-files/logo.png" alt="Sheffield City Council Logo">
+          </a>
         </div>
-        <div id="form-title-outer">
-          <div id="form-title-inner">
-            <h1 id="form-title"></h1>
-          </div>
+      </div>
+      <div id="form-title-outer">
+        <div id="form-title-inner">
+          <h1 id="form-title"></h1>
         </div>
-      </header>`
+      </div>
+    </header>`
   );
 
   body.insertAdjacentHTML(
     "beforeend",
-      `<footer class="scc_footer" role="contentinfo">
-        <nav role="navigation" class="scc_az-links">
-          <div class="scc_wrap">
-            <h2>
-              <a href="https://www.sheffield.gov.uk/utilities/a-z">A-Z of services</a>
-            </h2>
-            <p class="scc_skip">
-              <a href="#scc_footer-content" class="scc_button scc_hide-screen scc_focusable">Skip the A to Z services</a>
-            </p>
-            <ul class="scc_h2">
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#a"><span>Services</span> A</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#b"><span>Services</span> B</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#c"><span>Services</span> C</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#d"><span>Services</span> D</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#e"><span>Services</span> E</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#f"><span>Services</span> F</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#g"><span>Services</span> G</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#h"><span>Services</span> H</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#i"><span>Services</span> I</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#j"><span>Services</span> J</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#k"><span>Services</span> K</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#l"><span>Services</span> L</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#m"><span>Services</span> M</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#n"><span>Services</span> N</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#o"><span>Services</span> O</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#p"><span>Services</span> P</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#q"><span>Services</span> Q</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#r"><span>Services</span> R</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#s"><span>Services</span> S</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#t"><span>Services</span> T</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#u"><span>Services</span> U</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#v"><span>Services</span> V</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#w"><span>Services</span> W</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#x"><span>Services</span> X</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#y"><span>Services</span> Y</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#z"><span>Services</span> Z</a></li>
-              <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#123"><span>Services</span> 123</a></li>
+    `<footer class="scc_footer" role="contentinfo">
+      <nav role="navigation" class="scc_az-links">
+        <div class="scc_wrap">
+          <h2><a href="https://www.sheffield.gov.uk/utilities/a-z">A-Z of services</a></h2>
+          <p class="scc_skip"><a href="#scc_footer-content" class="scc_button scc_hide-screen scc_focusable">Skip the A to Z services</a></p>
+          <ul class="scc_h2">
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#a"><span>Services</span> A</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#b"><span>Services</span> B</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#c"><span>Services</span> C</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#d"><span>Services</span> D</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#e"><span>Services</span> E</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#f"><span>Services</span> F</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#g"><span>Services</span> G</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#h"><span>Services</span> H</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#i"><span>Services</span> I</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#j"><span>Services</span> J</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#k"><span>Services</span> K</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#l"><span>Services</span> L</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#m"><span>Services</span> M</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#n"><span>Services</span> N</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#o"><span>Services</span> O</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#p"><span>Services</span> P</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#q"><span>Services</span> Q</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#r"><span>Services</span> R</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#s"><span>Services</span> S</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#t"><span>Services</span> T</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#u"><span>Services</span> U</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#v"><span>Services</span> V</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#w"><span>Services</span> W</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#x"><span>Services</span> X</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#y"><span>Services</span> Y</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#z"><span>Services</span> Z</a></li>
+            <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#123"><span>Services</span> 123</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="scc_wrap" id="scc_footer-content">
+        <div class="scc_row">
+          <div class="scc_col" id="legal-links">
+            <ul>
+              <li><a href="https://www.sheffield.gov.uk/">Site Home Page</a></li>
+              <li><a href="https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice">Privacy notice</a></li>
+              <li><a href="https://www.sheffield.gov.uk/utilities/footer-links/cookie-policy">Use of cookies</a></li>
+              <li><a href="https://www.sheffield.gov.uk/utilities/footer-links/accessibility-statement">Accessibility statement</a></li>
+              <li><a href="https://www.sheffield.gov.uk/utilities/footer-links/legal-notices">Legal notices</a></li>
             </ul>
-          </nav>
-          <div class="scc_wrap" id="scc_footer-content">
-            <div class="scc_row">
-              <div class="scc_col" id="legal-links">
-                <ul>
-                  <li><a href="https://www.sheffield.gov.uk/content/sheffield/home.html">Site Home Page</a></li>
-                  <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/footer-links/privacy-notice.html">Privacy notice</a></li>
-                  <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/footer-links/cookie-policy.html">Use of cookies</a></li>
-                  <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/footer-links/accessibility-statement.html">Accessibility statement</a></li>
-                  <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/footer-links/legal-notices.html">Legal notices</a></li>
-                </ul>
-              </div>
-              <div class="scc_col" id="other-links">
-                <ul>
-                  <li><a href="https://www.sheffield.gov.uk/content/sheffield/home/job-vacancies.html">Jobs and volunteering with Sheffield City Council</a></li>
-                  <li><a href="https://www.sheffield.gov.uk/content/sheffield/home/your-city-council/access-to-information.html">Get access to information</a></li>
-                  <li><a href="http://www.welcometosheffield.co.uk/visit/events">Sheffield events</a></li>
-                  <li><a href="https://sheffield.citizenspace.com">Have your say - consultations</a></li>
-                  <li><a href="http://www.sheffieldnewsroom.co.uk">News and press</a></li>
-                  <li><a href="https://www.sheffield.gov.uk/content/sheffield/utilities/footer-links/advertising.html">Advertising</a></li>
-                  <li><a href="https://sheffield.gov.uk/content/sheffield/home/business.html">Business</a></li>
-                </ul>
-              </div>
-              <div class="scc_col" id="social-links">
-                <ul>
-                  <li><a href="https://twitter.com/sheffcouncil?lang=en" class="scc_icon-twitter-after"><span>Twitter</span></a></li>
-                  <li><a href="https://www.facebook.com/SheffCityCouncil/" class="scc_icon-facebook-after"><span>Facebook</span></a></li>
-                  <li><a href="https://www.youtube.com/user/SheffieldCCouncil" class="scc_icon-youtube-after"><span>YouTube</span></a></li>
-                  <li><a href="https://www.instagram.com/sheffieldcitycouncil/" class="scc_icon-instagram-after"><span>Instagram</span></a></li>
-                  <li><a href="https://public.govdelivery.com/accounts/UKSHEFFIELD/subscriber/new" class="scc_icon-mail-after"><span>Email alerts</span></a></li>
-                </ul>
-              </div>
-              </div>
-                <div class="scc_info">
-                  <p class="scc_modified"></p>
-                  <p class="scc_copyright">&copy; Copyright Sheffield City Council</p>
-                </div>
-                <a href="#top" id="jump-to-top">Top</a>
-              </div>
-            </footer>`
+          </div>
+          <div class="scc_col" id="other-links">
+            <ul>
+              <li><a href="https://www.sheffield.gov.uk/job-vacancies">Jobs and volunteering with Sheffield City Council</a></li>
+              <li><a href="https://www.sheffield.gov.uk/your-city-council/access-to-information">Get access to information</a></li>
+              <li><a href="http://www.welcometosheffield.co.uk/visit/events">Sheffield events</a></li>
+              <li><a href="https://haveyoursay.sheffield.gov.uk/">Have your say - consultations</a></li>
+              <li><a href="http://www.sheffieldnewsroom.co.uk">News and press</a></li>
+              <li><a href="https://www.sheffield.gov.uk/utilities/footer-links/advertising">Advertising</a></li>
+              <li><a href="https://www.sheffield.gov.uk/business">Business</a></li>
+            </ul> 
+          </div>
+          <div class="scc_col" id="social-links">
+            <ul>
+              <li><a href="https://twitter.com/sheffcouncil?lang=en" class="scc_icon-twitter-after"><span>Twitter</span></a></li>
+              <li><a href="https://www.facebook.com/SheffCityCouncil/" class="scc_icon-facebook-after"><span>Facebook</span></a></li>
+              <li><a href="https://www.youtube.com/user/SheffieldCCouncil" class="scc_icon-youtube-after"><span>YouTube</span></a></li>
+              <li><a href="https://www.instagram.com/sheffieldcitycouncil/" class="scc_icon-instagram-after"><span>Instagram</span></a></li>
+              <li><a href="https://public.govdelivery.com/accounts/UKSHEFFIELD/subscriber/new" class="scc_icon-mail-after"><span>Email alerts</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="scc_info">
+          <p class="scc_modified"></p>
+          <p class="scc_copyright">&copy; Copyright Sheffield City Council</p>
+        </div>
+        <a href="#top" id="jump-to-top">Top</a>
+      </div>
+    </footer>`
   );
 
   document.getElementById("form-title").innerHTML = formTitle;
@@ -547,6 +541,7 @@ function setPageHeaderAndFooter(formTitle) {
 
 function setHtmlHead(formTitle) {
   // Function designed to set title and favicon to display in browser tab
+
   document.title = formTitle;
 
   // overwrite Verint's reset of document.title
@@ -622,8 +617,8 @@ function enterAddressManually() {
   KDF.hideWidget("ahtm_current_location_error");
   KDF.hideSection("area_gis_map");
   KDF.setWidgetNotRequired(`txt_search_property_${pageID}`);
-  KDF.hideWidget(`ahtm_label_for_tab_property_search_result_${pageID}`);
-  KDF.hideWidget(`tab_property_search_result_${pageID}`);
+  KDF.hideWidget(`ahtm_address_search_result_error_${pageID}`);
+  KDF.hideWidget(`sel_property_search_result_${pageID}`);
   KDF.hideWidget(`ahtm_fulladdress_${pageID}`);
   KDF.showSection(`area_address_selected_${pageID}`);
   if (pageID === "page_about_you") {
@@ -648,6 +643,7 @@ function enterAddressManually() {
     KDF.setVal("txt_custown_another", "");
     KDF.showWidget("txt_cuspostcode_another");
     KDF.setVal("txt_cuspostcode_another", "");
+    KDF.hideWidget("txt_cusfulladdress_another");
     KDF.setVal("txt_cusfulladdress_another", "");
     KDF.hideWidget("txt_cusuprn_another");
     KDF.setVal("txt_cusuprn_another", "");
@@ -760,6 +756,23 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
       allRadiosAndCheckboxesFilled = false;
     }
   }
+
+  // check all fields other than radio/checkboxes
+  //   otherFields.each(function () {
+  //     if (!$(this).val()) {
+  //       // if no value, button disabled
+  //       allOtherFieldsFilled = false;
+  //     } else {
+  //       // if value exists, remove whitespace and check other characters are entered
+  //       if (this.value) {
+  //         let whitespaceRemoved = $(this).val().replace(/\s/g, "");
+  //         let fieldValueLength = whitespaceRemoved.length;
+  //         if (fieldValueLength === 0) {
+  //           allOtherFieldsFilled = false;
+  //         }
+  //       }
+  //     }
+  //   });
 
   var currentPage = $('.dform_page[data-active="true"]:visible');
   var errorMessagesVisible = currentPage.has(
@@ -896,8 +909,8 @@ function handleAddressSearchFunctionality(event, kdf) {
     } else {
       resetErrorMessage(
         this.name.substring(0, this.name.length - 2),
-        "Enter your postcode in the correct format"
-      );
+        (pageID === "page_about_you") ? 'Enter your postcode in the correct format' : 'Enter the postcode in the correct format'
+      );      
       if (this.value)
         if (nationalAddress) {
               const selectedValue = this.value;
@@ -944,7 +957,7 @@ function handleAddressSearchFunctionality(event, kdf) {
   $(".search-postcode").keydown(function (e) {
     resetErrorMessage(
       e.target.name,
-      "Enter your postcode in the correct format"
+      (pageID === "page_about_you") ? 'Enter your postcode in the correct format' : 'Enter the postcode in the correct format'
     );
     if (e.keyCode == 13) {
       $(`#dform_widget_button_but_find_property_${pageID}`).click();
@@ -954,14 +967,14 @@ function handleAddressSearchFunctionality(event, kdf) {
   $(".search-address").keydown(function (e) {
     resetErrorMessage(
       e.target.name,
-      "Enter your postcode or streetname in the correct format"
+      "Enter the postcode or streetname in the correct format"
     );
     if (e.keyCode == 13) {
       $(`#dform_widget_button_but_find_property_${pageID}`).click();
     }
   });
 
-  $(".find-address").click(function () {
+ $(".find-address").click(function () {
     $(`#sel_property_search_result_${pageID}`).empty();
     KDF.hideWidget(`ahtm_address_search_result_error_${pageID}`);
     KDF.hideWidget("ahtm_current_location_error");
@@ -1042,14 +1055,13 @@ function handleAddressSearchFunctionality(event, kdf) {
     );
     $(tableOfResults).remove();
     if (fieldValue) {
-      // if (pageID === "page_about_you" || pageID === "page_about_another") {
       if (KDF.getVal(`search_type_${pageID}`) === 'national') {
         KDF.customdata('search-national-address', '_KDF_ready', true, true, { postcode: fieldValue });
       } else {
         KDF.customdata("search-address-web", this.id, true, true, { search_property: fieldValue });
       }
     } else {
-      resetErrorMessage(fieldID, "Enter your postcode in the correct format");
+      resetErrorMessage(fieldID, (pageID === "page_about_you") ? 'Enter your postcode in the correct format' : 'Enter the postcode in the correct format');
       KDF.checkProgress();
     }
   });
@@ -1057,10 +1069,10 @@ function handleAddressSearchFunctionality(event, kdf) {
   $(".manual-address").click(function () {
     resetErrorMessage(
       `txt_search_property_${pageID}`,
-      "Enter your postcode in the correct format"
+      (pageID === "page_about_you") ? 'Enter your postcode in the correct format' : 'Enter the postcode in the correct format'
     );
     enterAddressManually();
-  });
+  });  
 
   $(".addressNumber, .addressLine1").change(function (e) {
     //  field = e.target.id.substring(13);
@@ -1108,11 +1120,12 @@ function handleAddressSearchFunctionality(event, kdf) {
     KDF.setVal(this.id.substring(13), this.value.replace(/ /g, ""));
   });
 
-  $(".manual-postcode").keyup(function () {
+  $(".manual-address").click(function () {
     resetErrorMessage(
       `txt_search_property_${pageID}`,
-      "Enter your postcode in the correct format"
+      (pageID === "page_about_you") ? 'Enter your postcode in the correct format' : 'Enter the postcode in the correct format'
     );
+    enterAddressManually();
   });
 
   $(".property-search-page-button").click(function () {
@@ -1812,6 +1825,7 @@ function getAndSetReviewPageData() {
             pageFieldType !== "textarea" &&
             pageFieldType !== "select" &&
             pageFieldType !== "radio" &&
+            pageFieldType !== "checkbox" &&
             pageFieldType !== "multicheckbox" &&
             // pageFieldType !== "number" &&
             pageFieldType !== "date"
@@ -1829,7 +1843,7 @@ function getAndSetReviewPageData() {
                   "div[data-name=" + fieldName + "] > div > label"
                 ).text();
                 fieldValue =
-                  "£" +
+                  "Â£" +
                   $(
                     "div[data-name=" + fieldName + "] > div > div > input"
                   ).val();
@@ -1872,6 +1886,12 @@ function getAndSetReviewPageData() {
                   fieldValue = $(this).find("label").text();
                 }
               });
+          }
+          if (pageFieldType === "checkbox") {
+            if ($(`div[data-name=${fieldName}] input[type='checkbox']`).prop("checked")) {
+                fieldLabel = $(`div[data-name=${fieldName}] > div > label`).text();
+                fieldValue = $(`div[data-name=${fieldName}] > div > input`).val();
+            }
           }
           if (pageFieldType === "multicheckbox") {
             var checkboxFieldset = $(
@@ -1933,12 +1953,6 @@ function assignStepSize(fieldname, step) {
   var deformWidget = $("#dform_widget_" + fieldname);
   deformWidget.attr("step", step);
 }
-
-// function fixCurrency(field) {
-//   const string = parseFloat(KDF.getVal(field)).toFixed(2);
-//   const inputField = document.querySelector("#dform_widget_" + field);
-//   inputField.value = string;
-// }
 
 const fixCurrency = field => {
   const inputValue = $(`#dform_widget_${field}`).val().replace(/[^\d]/g, ''); // Remove non-numeric characters
@@ -2463,7 +2477,7 @@ var retrievedFeatures = [];
 function clearMapData() {
   resetErrorMessage(
     "txt_search_property_" + pageID,
-    "Enter your postcode in the correct format"
+    (pageID === "page_about_you") ? 'Enter your postcode in the correct format' : 'Enter the postcode in the correct format'
   );
 
   KDF.setVal("lnglat", "");
@@ -3527,7 +3541,7 @@ function parksFeatureSetHandler(marker, featureSet) {
         attributes["site_name"],
     });
   } else {
-    if (KDF.getVal("le_form_name") === "highways_report"  || KDF.getVal("le_form_name") === "was_abandoned_vehicle") {
+    if (KDF.getVal("le_form_name") === "highways_report") {
       vmap.setInfoWindow({
         xcoord: marker.geometry.x,
         ycoord: marker.geometry.y,
