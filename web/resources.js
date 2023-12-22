@@ -1528,26 +1528,29 @@ function submitForm() {
   $(timeFields).each(function () {
     timeFieldNames += $(this).prop("name") + ",";
   });
-  KDF.custom(
-    "kdf-save-web",
-    "_submit_function",
-    textFieldNames +
-      numberFieldNames +
-      selectFieldNames +
-      checkFieldNames +
-      radioFieldNames +
-      emailFieldNames +
-      telFieldNames +
-      dateFieldNames +
-      timeFieldNames +
-      "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type",
-    "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type",
-    true,
-    true,
-    true
-  );
 
-  // saveForm("false");
+  if (KDF.getVal(le_associated_obj_id)) {
+    KDF.save();
+  } else {
+    KDF.custom(
+      "kdf-save-web",
+      "_submit_function",
+      textFieldNames +
+        numberFieldNames +
+        selectFieldNames +
+        checkFieldNames +
+        radioFieldNames +
+        emailFieldNames +
+        telFieldNames +
+        dateFieldNames +
+        timeFieldNames +
+        "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type",
+      "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type",
+      true,
+      true,
+      true
+    );
+  }
 }
 
 function submitFormCustom() {
@@ -1628,6 +1631,7 @@ function submitFormCustom() {
   $(timeFields).each(function () {
     timeFieldNames += $(this).prop("name") + ",";
   });
+  
   KDF.custom(
     "kdf-save-custom",
     "_submit_function",
@@ -1640,8 +1644,8 @@ function submitFormCustom() {
       telFieldNames +
       dateFieldNames +
       timeFieldNames +
-      "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name",
-    "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name",
+      "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,interactionid",
+    "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,interactionid",
     true,
     true,
     true
