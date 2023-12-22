@@ -1532,6 +1532,7 @@ function submitForm() {
   if (KDF.getVal('le_associated_obj_id')) {
     // KDF.save();
     KDF.markComplete();
+    KDF.gotoPage('page_complete',true,true,true);
   } else {
     KDF.custom(
       "kdf-save-web",
