@@ -1529,7 +1529,7 @@ function submitForm() {
     timeFieldNames += $(this).prop("name") + ",";
   });
 
-  if (KDF.getVal(le_associated_obj_id)) {
+  if (KDF.getVal('le_associated_obj_id')) {
     KDF.save();
   } else {
     KDF.custom(
