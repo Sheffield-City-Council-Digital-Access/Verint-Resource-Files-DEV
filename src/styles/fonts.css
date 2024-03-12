@@ -108,9 +108,9 @@ h4,
 }
 
 
-[class*="icon-"]:before,
-[class*="icon-"]:after {
-  display: inline-block;
+/* [class*="icon-"]:before, */
+/* [class*="icon-"]:after { */
+/* display: inline-block;
   font-family: var(--font-icon);
   speak: none;
   font-style: normal;
@@ -119,15 +119,15 @@ h4,
   font-weight: var(--font-weight-regular);
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
+  line-height: 1; */
+/* Better Font Rendering =========== */
+/* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 0.5em;
-}
+  padding: 0.5em; */
+/* } */
 
 /* Verint Icons */
-.sitelinks>[class^="icon-"],
+/* .sitelinks>[class^="icon-"],
 .sitelinks>[class*=" icon-"] {
   font-family: 'verint_lux' !important;
   speak: never;
@@ -141,4 +141,4 @@ h4,
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
