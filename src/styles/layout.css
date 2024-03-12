@@ -1,0 +1,43 @@
+form.dform {
+  position: relative;
+  width: clamp(0rem, 95vw, 155rem);
+  margin: 5rem auto;
+  padding: 5rem clamp(0rem, 10vw, 10rem);
+  background: var(--color-grey-3);
+  display: grid;
+  min-height: 77.6vh;
+}
+
+#dform_container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+#dform_pageholder {
+  position: relative;
+  width: 100% !important;
+}
+
+.page-header-area {
+  padding: 0;
+}
+
+.page-footer-area {
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+}
+
+.area {
+  position: relative;
+  padding: 0;
+}
+
+.box {
+  padding: 0;
+}
+
+.dform_widget {
+  margin-block: 4rem;
+}

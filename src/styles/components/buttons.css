@@ -1,0 +1,156 @@
+/* --- BUTTONS -------------------------------------------------------------- */
+
+#dform_container .dform_widget_type_buttonset {
+  margin: 0;
+  text-align: left;
+  font-family: "Open Sans Regular", "Trebuchet MS", "Lucida Grande", "Geneva",
+    Sans-Serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+#dform_container .dform_widget_type_buttonset.vertical {
+  flex-direction: column;
+}
+
+#dform_container button {
+  /*.esri-search button {*/
+  color: var(--color-primary);
+  font-size: var(--font-height-p2);
+  line-height: var(--font-height-p2);
+  font-weight: var(--font-weight-semibold);
+  margin: 6rem 0 0;
+  padding: 0.5rem;
+  border: solid 0.1rem var(--color-primary);
+  text-decoration: none;
+  cursor: pointer;
+  background: var(--color-white);
+  border-radius: unset;
+  transition: 0.2s ease all;
+  width: 100%;
+  max-width: 44.5rem;
+  height: 5rem;
+  transition: all 0.2s ease;
+}
+
+#dform_container button.primary-btn.dform_widget_type_button {
+  color: var(--color-white);
+  background: var(--color-black);
+  border-color: var(--color-black);
+}
+
+#dform_container button.disabled,
+#dform_container button[disabled] {
+  color: var(--color-grey-4);
+  background: var(--color-white);
+  border: solid 0.1rem var(--color-grey-4);
+  cursor: not-allowed;
+}
+
+#dform_container button.primary-btn.dform_widget_type_button.disabled {
+  color: var(--color-white) !important;
+  background: var(--color-grey-4) !important;
+  border: solid 0.1rem var(--color-grey-4) !important;
+  cursor: not-allowed !important;
+}
+
+/* --- BUTTONS HOVER -------------------------------------------------------- */
+
+#dform_container button:not(.disabled):hover,
+#dform_container button.primary-btn.dform_widget_type_button:not(.disabled):hover {
+  /*.esri-search button:hover {*/
+  color: var(--color-white);
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+/* --- BUTTONS FOCUS -------------------------------------------------------- */
+
+#dform_container button:focus {
+  /*.esri-search button:focus {*/
+  color: var(--color-primary);
+  background: var(--color-white);
+  border-color: var(--color-primary);
+  box-shadow: none;
+  outline: 0.4rem solid var(--color-warning);
+}
+
+#dform_container button.disabled:focus {
+  color: var(--color-grey-4);
+  background: var(--color-white);
+  border: solid 0.1rem var(--color-grey-4);
+  cursor: not-allowed;
+  outline: none;
+}
+
+#dform_container button.primary-btn.dform_widget_type_button:focus {
+  color: var(--color-white);
+  background: var(--color-black);
+  border-color: var(--color-black);
+  box-shadow: none;
+  outline: 0.4rem solid var(--color-warning);
+}
+
+#dform_container button.primary-btn.dform_widget_type_button.disabled:focus {
+  color: var(--color-white);
+  background: var(--color-grey-4);
+  border: solid 0.1rem var(--color-grey-4);
+  cursor: not-allowed;
+  outline: none;
+}
+
+/* --- BACK BUTTON ---------------------------------------------------------- */
+
+#dform_container .dform_widget_type_buttonset.back-btn-container {
+  display: unset;
+  font-size: unset;
+  transition: all 0.2s ease;
+}
+
+#dform_container .dform_widget_type_buttonset.back-btn-container:focus-within {
+  background-color: var(--color-warning);
+}
+
+#dform_container .dform_widget_type_buttonset.back-btn-container::before {
+  content: "<";
+  padding-right: 0.5rem;
+  font-family: inherit;
+  font-size: var(--font-height-p2);
+  font-weight: var(--font-weight-semibold);
+}
+
+#dform_container button.back-btn {
+  border: none;
+  background: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 0 3rem;
+  width: max-content;
+  height: max-content;
+  text-decoration: underline;
+  text-underline-offset: .4rem;
+  font-family: var(--font-paragraph);
+  font-size: var(--font-height-p2);
+  line-height: auto;
+  color: var(--color-black);
+  font-weight: var(--font-weight-regular);
+  transition: text-decoration-thickness 0.2s ease;
+}
+
+#dform_container button.back-btn:hover {
+  text-decoration-thickness: 0.4rem;
+}
+
+#dform_container .dform_widget_type_buttonset.back-btn-container:focus-within {
+  background-color: var(--color-warning);
+  border-bottom: .4rem solid var(--color-black);
+}
+
+#dform_container button.back-btn:focus {
+  text-decoration: none;
+  outline: none;
+}

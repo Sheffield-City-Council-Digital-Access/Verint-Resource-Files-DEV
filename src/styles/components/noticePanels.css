@@ -1,0 +1,73 @@
+/* --- NOTICE PANELS -------------------------------------------------------- */
+
+#dform_container .alert-panel,
+#dform_container .alert-panel--ineligible,
+#dform_container .info-panel,
+#dform_container .notice-panel,
+#dform_container .message-panel {
+  position: relative;
+  font-family: var(--font-paragraph);
+  font-size: var(--font-size-p1);
+  line-height: var(--font-height-p1);
+  font-weight: var(--font-weight-regular);
+  background: var(--color-grey-1);
+  max-width: 44.5rem;
+  padding: 2.4rem 2.1rem 2.4rem 4.9rem;
+}
+
+#dform_container .message-panel {
+  background: transparent;
+  padding: 0;
+}
+
+#dform_container .alert-panel,
+#dform_container .alert-panel--ineligible {
+  border-left: .2rem solid var(--color-error);
+}
+
+#dform_container .info-panel {
+  border-left: 2px solid var(--color-warning);
+}
+
+#dform_container .alert-panel:before,
+#dform_container .alert-panel--ineligible:before,
+#dform_container .info-panel:before {
+  font-family: "icomoon";
+  width: 3.6rem;
+  height: 3.6rem;
+  line-height: 3.6rem;
+  font-size: 2.6rem;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 1.7rem;
+}
+
+#dform_container .alert-panel:before,
+#dform_container .alert-panel--ineligible:before {
+  content: "\e934";
+  background: var(--color-error);
+}
+
+#dform_container .info-panel:before {
+  content: "\e915";
+  background: var(--color-warning);
+  color: var(--color-black);
+  border-radius: 0 50% 50% 0;
+}
+
+#dform_container .alert-panel h3,
+#dform_container .alert-panel--ineligible h3,
+#dform_container .info-panel h3,
+#dform_container .notice-panel h3 {
+  margin: 0 0 1.2rem 0;
+  line-height: 2.2rem;
+}
+
+#dform_container .alert-panel p,
+#dform_container .alert-panel--ineligible p,
+#dform_container .info-panel p,
+#dform_container .notice-panel p {
+  margin: 0;
+}

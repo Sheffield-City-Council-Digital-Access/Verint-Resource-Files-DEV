@@ -1,0 +1,72 @@
+#dform_container .find-container>div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#dform_container .dform_widget.find-input,
+#dform_container .dform_widget.find-btn-container,
+#dform_container .dform_widget.enter-manually-btn-container {
+  padding: 0;
+  margin: 0;
+  width: max-content;
+}
+
+#dform_container .dform_widget.find-input.small label,
+#dform_container .dform_widget.find-input.small .dform_validationMessage {
+  max-width: 21rem;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+#dform_container .dform_widget.find-input label,
+#dform_container .dform_widget.find-input .dform_validationMessage {
+  max-width: 44.5rem;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+#dform_container .dform_widget.find-input input {
+  width: 100%;
+}
+
+#dform_container .dform_widget.find-btn-container,
+#dform_container .dform_widget.enter-manually-btn-container {
+  margin: 0;
+}
+
+#dform_container .dform_widget.find-btn-container button,
+#dform_container .dform_widget.enter-manually-btn-container button {
+  margin: 0;
+  width: 13.5rem;
+  font-size: var(--font-size-p1);
+}
+
+#dform_container .dform_widget.find-btn-container button {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 450px) {
+  #dform_container .dform_widget.find-btn-container button {
+    margin-right: 2.5rem;
+  }
+}
+
+#dform_container .dform_widget.enter-manually-btn-container button {
+  border: none;
+  background: none;
+  text-decoration: none;
+  font-size: var(--font-size-p1);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--font-height-p1);
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+#dform_container .dform_widget.enter-manually-btn-container button:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+  box-shadow: none;
+}

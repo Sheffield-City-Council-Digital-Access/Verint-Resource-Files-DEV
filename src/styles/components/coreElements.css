@@ -1,0 +1,256 @@
+/* --- INPUT ELEMENTS ------------------------------------------------------- */
+
+#dform_container label,
+#dform_container legend,
+#dform_container .radiogroup label,
+#dform_container .checkboxgroup label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: var(--font-size-p1);
+  line-height: var(--font-height-p1);
+  font-weight: var(--font-weight-semibold);
+  vertical-align: unset;
+  background: transparent;
+}
+
+#dform_container fieldset.area>legend,
+#dform_container fieldset.box>legend,
+#dform_container fieldset.searchwidget>legend {
+  margin: 0 0 3rem;
+  padding: 0;
+  font-size: var(--font-size-h2);
+  line-height: var(--font-height-h2);
+  font-family: var(--font-heaning);
+  font-weight: var(--font-weight-semibold);
+  background: transparent;
+}
+
+#dform_container .radiogroup label,
+#dform_container .checkboxgroup label {
+  display: inline;
+  margin: 0;
+}
+
+#dform_container .helptext {
+  padding: 0;
+  color: var(--color-grey-5);
+  font-size: var(--font-size-p1);
+  font-style: unset;
+}
+
+#dform_container .dform_fielderror {
+  box-shadow: none;
+  border: solid 0.2rem var(--color-error);
+  outline: none;
+}
+
+#dform_container .dform_validationMessage {
+  padding: 0;
+  font-size: var(--font-size-p1);
+  color: var(--color-error);
+}
+
+#dform_container input,
+#dform_container select,
+#dform_container textarea {
+  display: block;
+  margin-bottom: 0;
+  padding: 0.8rem;
+  height: 5rem;
+  width: min(100%, 445px);
+  font-size: var(--font-size-p1);
+  font-family: inherit;
+  background: var(--color-white);
+  border: .1rem solid var(--color-grey-5);
+  transition: all 0.2s ease;
+}
+
+#dform_container .small input {
+  width: min(100%, 21rem);
+}
+
+#dform_container .large input,
+#dform_container textarea {
+  width: min(100%, 70rem);
+}
+
+#dform_container textarea {
+  height: 17rem;
+}
+
+option {
+  font-size: 2rem;
+  line-height: var(--font-height-p1);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-paragraph);
+  display: block;
+  min-height: 4rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  white-space: nowrap;
+}
+
+#dform_container fieldset {
+  display: inline-block;
+  min-width: unset;
+  margin: 0;
+}
+
+#dform_container fieldset,
+#dform_container div[data-type="child"] {
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 100%;
+  clear: both;
+}
+
+#dform_container .radiogroup,
+#dform_container .checkboxgroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 0 2.5rem 0;
+}
+
+#dform_container .radiogroup .helptext,
+#dform_container .radiogroup .dform_validationMessage {
+  width: 100%;
+}
+
+#dform_container .vertical .radiogroup,
+#dform_container .checkboxgroup {
+  flex-direction: column;
+}
+
+#dform_container .radiogroup br,
+#dform_container .checkboxgroup br {
+  display: none;
+}
+
+#dform_container .radiogroup span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 4rem;
+}
+
+#dform_container .vertical .radiogroup span {
+  margin-bottom: 1rem;
+}
+
+#dform_container input[type="radio"],
+#dform_container input[type="checkbox"] {
+  display: inline-block;
+  margin: 0;
+  width: 5rem;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+#dform_container input[type="radio"]:checked::after {
+  display: block;
+  position: relative;
+  background-color: var(--color-grey-5);
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  outline: .9rem solid var(--color-white);
+}
+
+#dform_container .checkboxgroup>span,
+#dform_container .dform_widget_type_checkbox>div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+#dform_container .dform_widget_type_checkbox>div .dform_validationMessage {
+  width: 100%;
+}
+
+#dform_container .checkboxgroup>span {
+  margin-bottom: 1rem;
+}
+
+#dform_container input[type="checkbox"]:checked::after {
+  font-family: "icomoon";
+  display: flex;
+  content: "\e92f";
+  color: var(--color-grey-5);
+  background: var(--color-white);
+  font-size: 30px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  border: .1rem solid var(--color-grey-5);
+}
+
+
+#dform_container .currency {
+  position: relative;
+}
+
+#dform_container .currency::before {
+  content: '£';
+  position: absolute;
+  left: 1.5rem;
+  top: 76%;
+  transform: translateY(-50%);
+  font-size: var(--font-size-p1);
+}
+
+#dform_container .currency input[type="number"] {
+  padding-left: 2.75rem;
+}
+
+/* --- INPUT FOCUS ---------------------------------------------------------- */
+
+#dform_container input:focus,
+#dform_container textarea:focus,
+#dform_container select:focus {
+  /*#dform_container input:hover,*/
+  /*#dform_container textarea:hover,*/
+  /*#dform_container select:hover { */
+  box-shadow: none;
+  border: 0.4rem solid var(--color-grey-5);
+  outline: 0.4rem solid var(--color-warning);
+}
+
+#dform_container input[type="radio"]:focus,
+#dform_container input[type="radio"]:checked:focus::after {
+  border: none;
+  outline: none;
+  box-shadow: inset 0 0 0 0.4rem var(--color-grey-5), 0 0 0 0.4rem var(--color-warning);
+}
+
+#dform_container input[type="checkbox"]:focus,
+#dform_container input[type="checkbox"]:checked:focus::after {
+  border: none;
+  outline: none;
+  box-shadow: inset 0 0 0 0.4rem var(--color-grey-5), 0 0 0 0.4rem var(--color-warning);
+}
+
+/* --- CHATACTER COUNT ---------------------------------------------------------- */
+
+div[data-type="textarea"] span {
+  color: var(--color-primary);
+  font-size: var(--font-size-p1);
+  font-weight: var(--font-weight-semibold);
+  /*letter-spacing: .1rem;*/
+}
+
+div[data-type="textarea"] textarea+span+span::after {
+  content: " characters used";
+}

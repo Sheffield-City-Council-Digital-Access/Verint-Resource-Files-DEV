@@ -17,7 +17,7 @@ let process = "";
 // ----- FUNCTIONS ---------------------------------------------------------- //
 
 // Function to normalize spaces in a given text
-const normalizeSpaces = text => text.replace(/\s+/g, ' ');
+const normalizeSpaces = text => text.trim().replace(/\s+/g, ' ');
 
 // Function to convert a sentence to title case
 const toTitleCase = sentence => sentence.replace(/\b\w/g, match => match.toUpperCase());
@@ -25,16 +25,29 @@ const toTitleCase = sentence => sentence.replace(/\b\w/g, match => match.toUpper
 // Function to remove non-numeric characters from a string
 const removeNonNumeric = str => str.replace(/\D/g, '');
 
-// Function to remove spaces and symbols from a string
-const removeSpacesAndSymbols = str => str.replace(/[\s\W]/g, '');
-
 // Array of symbols commonly used in scripts
+const scriptSymbols = ['<', '>', '&', '"', "'", '`', '=', '/', '(', ')', ';', '+', '-', '*', '%', '!', '[', ']', '{', '}', '|', '\\'];
+
+// Function to remove script symbols from a string
 const removeScriptSymbols = str => {
-    // Array of symbols commonly used in scripts
-    const scriptSymbols = ['<', '>', '&', '"', "'", '`', '=', '/', '(', ')', ';', '+', '-', '*', '%', '!', '[', ']', '{', '}', '|', '\\'];
-  
     // Create a regular expression with all the script symbols and replace any occurrence of script symbols with an empty string
-    return str.replace(new RegExp(`[${scriptSymbols.join('\\')}]`, 'g'), '');
+    return str.replace(new RegExp(`[${scriptSymbols.join('\\')}]`, 'g'), '').trim();
+};
+
+// Function to count and display the remaining characters in a field
+const characterCounter = (name) => {
+  const string = getValue(name);
+  const stringLength = string.length;
+  const idConcat = `characterCounter${name}`;
+
+  // Get the maximum character length from the field element
+  const maxLength = document.getElementById(`dform_widget_${name}`).maxLength;
+
+  // Calculate the remaining characters
+  const remainingCharacters = maxLength - stringLength;
+
+  // Update the character count element with the remaining characters
+  document.getElementById(`${idConcat}`).innerHTML = `${remainingCharacters} characters remaining`;
 };
 
 // Function to append a character count element to a field
@@ -46,75 +59,59 @@ const characterCountAppender = (name) => {
     // Call the characterCounter function to update the character count
     characterCounter(name);
 };
-  
-// Function to count and display the remaining characters in a field
-const characterCounter = (name) => {
-    const string = getValue(name);
-    const stringLength = string.length;
-    const idConcat = `characterCounter${name}`;
 
-    // Get the maximum character length from the field element
-    const maxLength = document.querySelector(`#dform_widget_${name}`).maxLength;
-
-    // Calculate the remaining characters
-    const remainingCharacters = maxLength - stringLength;
-
-    // Update the character count element with the remaining characters
-    document.querySelector(`#${idConcat}`).innerHTML = `${remainingCharacters} characters remaining`;
-};
 
 // Function to get element by name
 const getElementByName = name => {
   const element = document.getElementById(`dform_widget_${name}`);
   if (!element) {
-    console.log(`Element with ID "dform_widget_${name}" not found.`);
+    logElementNotFound(name);
   }
   return element;
+};
+
+// Log element not found
+const logElementNotFound = name => {
+  console.log(`Element with name "${name}" not found.`);
 };
 
 // Function to get value by widget name
 const getValue = name => {
   const element = getElementByName(name);
-  if (element) {
-    return element.value;
-  } else {
-    console.log(`Element with ID "dform_widget_${name}" not found.`);
-    return '';
-  }
+  return element ? element.value : '';
 };
 
 // Function to set value by widget(s) name
 const setValue = nameValuePairs => {
-  nameValuePairs.forEach(([name, value]) => {
+  nameValuePairs.map(([name, value]) => {
     const element = getElementByName(name);
     if (element) {
       element.value = value || '';
     }
+    return null; // Returning null to maintain the same array length
   });
 };
 
+// Function to toggle element visibility by name
+const toggleElementVisibility = (names, showFn, hideFn) => {
+  names.map(name => {
+    const element = getElementByName(name);
+    if (element) {
+      name.startsWith('page_') ? showFn(name) : hideFn(name);
+    }
+    return null; // Returning null to maintain the same array length
+  });
+};
+
+
 // Function to show element by name
 const showElement = names => {
-  names.forEach((name) => {
-    const element = name.startsWith('page_')
-      ? KDF.showPage
-      : name.startsWith('area_') || name.startsWith('box_')
-      ? KDF.showSection
-      : KDF.showWidget;
-    element(name);
-  });
+  toggleElementVisibility(names, KDF.showPage, KDF.showWidget);
 };
 
 // Function to hide element by name
 const hideElement = names => {
-  names.forEach((name) => {
-    const element = name.startsWith('page_')
-      ? KDF.hidePage
-      : name.startsWith('area_') || name.startsWith('box_')
-      ? KDF.hideSection
-      : KDF.hideWidget;
-    element(name);
-  });
+  toggleElementVisibility(names, KDF.hidePage, KDF.hideWidget);
 };
 
 // function to got back in the form jurney
@@ -149,13 +146,14 @@ const checkFormProgress = () => {
             button.classList.add('disabled');
             button.disabled = true;
         });
-    } else {
-        // Enable action buttons if form progress is incomplete
-        actionButtons.forEach(button => {
-            button.classList.remove('disabled');
-            button.disabled = false;
-        });
+        return false;
     }
+    // Enable action buttons if form progress is incomplete
+    actionButtons.forEach(button => {
+        button.classList.remove('disabled');
+        button.disabled = false;
+    });
+    return true;
 };
 
 // Function to set agent details based on the provided values

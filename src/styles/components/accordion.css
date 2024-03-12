@@ -1,0 +1,100 @@
+/* --- ACCORDION ------------------------------------------------------------ */
+
+#privacy-notice {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#dform_container .privacy-accordion {
+  font-family: var(--font-heaning);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-regular);
+  width: min(100%, 44.5rem);
+  height: auto;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  margin: 0;
+  padding: 1.3rem 1.6rem;
+  border: solid black;
+  border-width: .1rem 0;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+#dform_container .privacy-accordion:after {
+  content: "\e909";
+  font-family: "icomoon";
+  float: right;
+  background-color: var(--color-success);
+  color: var(--color-white);
+  width: 2.25em;
+  height: 2.25em;
+  line-height: 2.35;
+  text-align: center;
+  flex: 0 0 auto;
+  margin: auto 0 auto 1rem;
+}
+
+#dform_container .privacy-accordion:hover {
+  background-color: var(--color-grey-1);
+  color: var(--color-black);
+  border-color: var(--color-grey-5);
+  border-width: .1rem 0;
+  box-shadow: none;
+}
+
+#dform_container .privacy-accordion:focus {
+  color: var(--color-black);
+  border-width: .1rem 0;
+}
+
+#dform_container .privacy-accordion:hover:after {
+  background-color: var(--color-white);
+  color: var(--color-success);
+}
+
+#dform_container .privacy-accordion .active {
+  color: var(--color-black);
+  border-width: 1px 0;
+  /* make sure focus state outline appears on top of expanded panel */
+  z-index: 1;
+}
+
+#dform_container .privacy-accordion .active:after {
+  content: "\e90c";
+  font-family: "icomoon";
+  float: right;
+  background-color: var(--color-success);
+  color: var(--color-white);
+  width: 2.25em;
+  height: 2.25em;
+  line-height: 2.35;
+  text-align: center;
+}
+
+#dform_container .privacy-accordion .active:hover:after {
+  background-color: var(--color-white);
+  color: var(--color-success);
+}
+
+#dform_container .privacy-panel {
+  font-size: var(--font-size-p1);
+  font-family: var(--font-paragraph);
+  font-weight: var(--font-weight-regular) !important;
+  display: none;
+  color: var(--color-black);
+  background: var(--color-white);
+  padding: 2rem 1.5rem;
+  width: min(100%, 44.5rem);
+}
+
+#dform_container .privacy-panel p {
+  margin-bottom: 1.6rem;
+}
+
+p.privacy-notice {
+  font-family: var(--font-paragraph);
+  font-weight: var(--font-weight-regular);
+}

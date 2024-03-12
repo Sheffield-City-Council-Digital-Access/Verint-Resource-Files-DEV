@@ -1,0 +1,38 @@
+/* --- NOTICE BANNERS ------------------------------------------------------- */
+
+#dform_container .dform_info {
+  color: var(--color-white);
+  background: var(--color-information);
+}
+
+#dform_container .dform_success {
+  color: var(--color-white);
+  background: var(--color-success);
+}
+
+#dform_container .dform_warning {
+  color: var(--color-black);
+  background: var(--color-warning);
+}
+
+#dform_container .dform_error {
+  color: var(--color-white);
+  background: var(--color-error);
+}
+
+#dform_container .dform_info,
+#dform_container .dform_success,
+#dform_container .dform_warning,
+#dform_container .dform_error {
+  border: none;
+  margin: 0;
+  height: 12rem;
+  padding: 1rem;
+  border-radius: unset;
+  font-family: var(--font-heaning);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--font-height-h3);
+  padding-block: 4rem;
+  text-align: center;
+}

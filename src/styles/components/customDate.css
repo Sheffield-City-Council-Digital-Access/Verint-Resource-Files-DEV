@@ -1,0 +1,61 @@
+/* --- CUSTOM DATE FIELD ---------------------------------------------------- */
+
+#dform_container .container-date {
+  position: reletive;
+  width: 100%;
+}
+
+#dform_container .date-field {
+  position: reletive;
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+#dform_container .date-field .helptext,
+#dform_container .date-field .dform_validationMessage {
+  position: reletive;
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 21.5em) {
+
+  #dform_container .date-field .helptext,
+  #dform_container .date-field .dform_validationMessage {
+    width: 120%;
+  }
+}
+
+@media (min-width: 24.7em) {
+
+  #dform_container .date-field .helptext,
+  #dform_container .date-field .dform_validationMessage {
+    width: 200%;
+  }
+}
+
+#dform_container .date-input-fields {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.date-input-fields div:not(:last-child) {
+  margin-right: auto;
+}
+
+#dform_container .date-dd,
+#dform_container .date-mm,
+#dform_container .date-yy {
+  position: reletive;
+  width: 6.5rem;
+  font-size: inherit;
+  text-align: center;
+}
+
+#dform_container .date-yy {
+  width: 11rem;
+}
