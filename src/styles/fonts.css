@@ -127,8 +127,8 @@ h4,
 }
 
 /* Verint Icons */
-.sitelinks [class^="icon-"],
-.sitelinks [class*=" icon-"] {
+.sitelinks>[class^="icon-"],
+.sitelinks>[class*=" icon-"] {
   font-family: 'verint_lux' !important;
   speak: never;
   font-style: normal;
