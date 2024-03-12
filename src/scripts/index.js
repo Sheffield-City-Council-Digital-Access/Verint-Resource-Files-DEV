@@ -1,7 +1,11 @@
-import './components/tabIconAndTitle.js';
-import './components/formHeader.js';
-import './components/formTitle.js';
-import './components/formFooter.js';
+function test() {
+  console.log('test');
+}
+
+// import './components/tabIconAndTitle.js';
+// import './components/formHeader.js';
+// import './components/formTitle.js';
+// import './components/formFooter.js';
 
 import { handleOnReadyEvent } from './eventListeners/formReady.js';
 import { handlePageChangeEvent } from './eventListeners/pageChange.js';
@@ -18,6 +22,3 @@ import { handleObjectIdSet } from './eventListeners/objectIdSet.js';
 
 handleOnReadyEvent(event, kdf);
 
-function test() {
-  console.log('test');
-}
