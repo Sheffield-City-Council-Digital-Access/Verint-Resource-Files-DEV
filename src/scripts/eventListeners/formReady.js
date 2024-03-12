@@ -45,4 +45,4 @@ function handleOnReadyEvent(event, kdf) {
   });
 }
 
-export { handleOnReadyEvent };
+export default { handleOnReadyEvent };

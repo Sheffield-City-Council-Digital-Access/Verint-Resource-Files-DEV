@@ -7,7 +7,7 @@ function test() {
 // import './components/formTitle.js';
 // import './components/formFooter.js';
 
-// import { handleOnReadyEvent } from './eventListeners/formReady.js';
+import { handleOnReadyEvent } from './eventListeners/formReady.js';
 // import { handlePageChangeEvent } from './eventListeners/pageChange.js';
 // import { handleFieldChangeEvent } from './eventListeners/fieldChange.js';
 // import { } from './eventListeners/optionSelected.js';
@@ -20,5 +20,5 @@ function test() {
 // import { } from './eventListeners/saveFailed.js';
 // import { } from './eventListeners/formComplete.js';
 
-// handleOnReadyEvent(event, kdf);
+handleOnReadyEvent(event, kdf);
 
