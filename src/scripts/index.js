@@ -16,4 +16,7 @@ import { handleObjectIdSet } from './eventListeners/objectIdSet.js';
 // import { } from './eventListeners/saveFailed.js';
 // import { } from './eventListeners/formComplete.js';
 
-handleOnReadyEvent()
+function test() {
+
+  handleOnReadyEvent()
+}
