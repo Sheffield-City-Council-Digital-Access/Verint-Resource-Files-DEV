@@ -5,7 +5,7 @@ import { handleEnterVehicleDetailsClick } from '../components/vehicleLookUp.js';
 
 
 function handleOnReadyEvent(event, kdf) {
-
+  console.log('handleOnReadyEvent')
   // need to move the event listners over.
   handleDateInput();
 
