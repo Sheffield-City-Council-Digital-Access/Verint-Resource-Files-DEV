@@ -109,24 +109,6 @@
   display: none;
 }
 
-[class*="icon-"]:before,
-[class*="icon-"]:after {
-  display: inline-block;
-  font-family: var(--font-icon);
-  speak: none;
-  font-style: normal;
-  font-size: var(--font-size-h4);
-  line-height: var(--font-height-h4);
-  font-weight: var(--font-weight-regular);
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 0.5em;
-}
-
 /*#social-links [class*="icon-"]:before,*/
 /*#social-links [class*="icon-"]:after {*/
 /*    padding: 0;*/
