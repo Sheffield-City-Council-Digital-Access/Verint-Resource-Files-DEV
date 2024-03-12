@@ -981,14 +981,14 @@ function handleOnReadyEvent(event, kdf) {
 
 function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   logArguments(event, kdf, currentpageid, targetpageid);
-  checkPageProgress();
+  // checkPageProgress();
 }
 
 // --- HANDLE ON FIELD CHANGE EVENT ---------------------------------------- \\
 
 function handleFieldChangeEvent(event, kdf, field) {
   logArguments(event, kdf, field);
-  checkPageProgress();
+  // checkPageProgress();
 }
 
 // --- HANDLE ON OPTION SELECTED EVENT ------------------------------------ \\
