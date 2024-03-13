@@ -55,13 +55,14 @@
 #dform_container textarea {
   display: block;
   margin-bottom: 0;
-  padding: 0.8rem;
+  padding: 1.2rem 1.6rem;
   height: 5rem;
   width: min(100%, 445px);
   font-size: var(--font-size-p1);
   font-family: inherit;
   background: var(--color-white);
   border: .1rem solid var(--color-grey-5);
+  box-sizing: border-box;
   transition: all 0.2s ease;
 }
 
