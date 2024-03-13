@@ -1,5 +1,3 @@
-// CANT USE IMPORT WITH VERINT ........!
-
 // import './components/tabIconAndTitle.js';
 // import './components/formHeader.js';
 // import './components/formTitle.js';
