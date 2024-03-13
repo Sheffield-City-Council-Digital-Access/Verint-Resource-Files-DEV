@@ -142,6 +142,8 @@
 }
 
 #dform_container button.back-btn:hover {
+  color: var(--color-black);
+  background-color: transparent;
   text-decoration-thickness: 0.4rem;
 }
 

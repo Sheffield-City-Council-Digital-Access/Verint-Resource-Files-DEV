@@ -90,12 +90,12 @@
 
 .footer-links-container ul li a:hover {
   color: var(--color-white);
-  text-decoration: underline var(--color-secondary);
+  /* text-decoration: underline var(--color-secondary); */
 }
 
-.footer-links-container ul li a:hover::after {
+/* .footer-links-container ul li a:hover::after {
   color: var(--color-secondary);
-}
+} */
 
 #social-links {
   grid-row: 1 / 2;
