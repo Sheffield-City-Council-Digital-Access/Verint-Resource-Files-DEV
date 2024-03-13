@@ -398,7 +398,6 @@ function handleOnReadyEvent(event, kdf) {
 
   $('.search-results').on('change', event => {
     KDF.customdata('retrieve-property', event.target.id, true, true, { propertyId: event.target.value });
-    showAddressFields();
   });
 
   $('.address-details').on('click', event => {
