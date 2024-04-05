@@ -27,7 +27,7 @@ function logArguments(event, kdf, ...args) {
 }
 
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
-function handleinitialisingEvent() {
+function handleInitialisingEvent() {
   // Update the browser tab title and icon
   (() => {
     // Set form title
