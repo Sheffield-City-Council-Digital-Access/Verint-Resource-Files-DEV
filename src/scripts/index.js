@@ -386,7 +386,6 @@ function handleinitialisingEvent() {
   })();
 }
 
-
 // --- HANDLE ON READY EVENT ----------------------------------------------- \\
 
 function handleOnReadyEvent(event, kdf) {
@@ -480,7 +479,12 @@ function handleOnReadyEvent(event, kdf) {
 
 function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   logArguments(event, kdf, currentpageid, targetpageid);
+
   // checkPageProgress();
+
+  setTimeout(function () {
+    updateProgressBar(targetpageid);
+  }, 0);
 }
 
 // --- HANDLE ON FIELD CHANGE EVENT ---------------------------------------- \\
@@ -1120,3 +1124,36 @@ function addPrivacyNoticeAccordionFuntionality() {
     });
   }
 }
+
+// --- PROGRESS BAR --------------------------------------------------------- \\
+
+const updateProgressBar = currentPageIndex => {
+  const pageHolderDiv = document.getElementById("dform_pageholder");
+  const parentDiv = document.getElementById("dform_progressbar");
+  const childDiv = parentDiv.querySelector("div");
+
+  if (parentDiv && childDiv && pageHolderDiv) {
+    // Get all pages
+    const pages = pageHolderDiv.querySelectorAll('.dform_page');
+
+    // Count visible pages
+    const visiblePages = Array.from(pages).filter(page => !page.classList.contains('dform_hidden')).length;
+    const currentPageDeduction = ((1 / visiblePages) * 100);
+
+    // Calculate percentage
+    let percentage = 0;
+    if (currentPageIndex > 1) {
+      percentage = Math.round(((currentPageIndex - 1) / visiblePages) * 100 - ((1 / visiblePages) * 100));
+    }
+
+    // Set width, text content, colour
+    if (percentage === 0) {
+      childDiv.style.width = `max-content`;
+      childDiv.style.background = "var(--color-grey-4)";
+    } else {
+      childDiv.style.width = `${percentage}%`;
+      childDiv.style.background = "var(--color-primary)";
+    }
+    childDiv.textContent = `${percentage}%`;
+  }
+};
