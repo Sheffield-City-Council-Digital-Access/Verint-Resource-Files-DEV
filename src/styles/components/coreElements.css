@@ -3,7 +3,8 @@
 #dform_container label,
 #dform_container legend,
 #dform_container .radiogroup label,
-#dform_container .checkboxgroup label {
+#dform_container .checkboxgroup label,
+#dform_container .dform_widget_type_checkbox label {
   display: inline-block;
   margin-bottom: 0.5rem;
   font-size: var(--font-size-p1);
@@ -11,6 +12,13 @@
   font-weight: var(--font-weight-semibold);
   vertical-align: unset;
   background: transparent;
+}
+
+#dform_container .radiogroup label,
+#dform_container .checkboxgroup label,
+#dform_container .dform_widget_type_checkbox label {
+  display: inline;
+  margin-bottom: 0;
 }
 
 #dform_container fieldset.area>legend,
@@ -23,12 +31,6 @@
   font-family: var(--font-heaning);
   font-weight: var(--font-weight-semibold);
   background: transparent;
-}
-
-#dform_container .radiogroup label,
-#dform_container .checkboxgroup label {
-  display: inline;
-  margin: 0;
 }
 
 #dform_container .helptext {
