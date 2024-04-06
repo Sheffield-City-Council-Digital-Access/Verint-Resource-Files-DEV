@@ -480,7 +480,7 @@ function handleOnReadyEvent(event, kdf) {
 function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   logArguments(event, kdf, currentpageid, targetpageid);
 
-  // checkPageProgress();
+  checkPageProgress();
 
   setTimeout(function () {
     updateProgressBar(targetpageid);
@@ -491,7 +491,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
 
 function handleFieldChangeEvent(event, kdf, field) {
   logArguments(event, kdf, field);
-  // checkPageProgress();
+  checkPageProgress();
 }
 
 // --- HANDLE ON OPTION SELECTED EVENT ------------------------------------ \\
