@@ -1,7 +1,7 @@
 form.dform {
   position: relative;
   width: clamp(0rem, 95vw, 155rem);
-  margin: 2.25rem auto 5rem;
+  margin: 2.25rem auto;
   padding: 5rem clamp(0rem, 10vw, 10rem);
   background: var(--color-grey-3);
   display: grid;
@@ -12,6 +12,10 @@ form.dform {
   position: relative;
   margin: 0;
   padding: 0;
+}
+
+#dform_container .container>.twelve {
+  float: unset;
 }
 
 #dform_pageholder {
