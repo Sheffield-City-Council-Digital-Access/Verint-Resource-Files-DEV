@@ -12,7 +12,12 @@
   font-weight: var(--font-weight-regular);
   background: var(--color-grey-1);
   max-width: 44.5rem;
-  padding: 2.4rem 2.1rem 2.4rem 4.9rem;
+  padding: 2.4rem 2.4rem 2.4rem 4.9rem;
+}
+
+#dform_container .notice-panel,
+#dform_container .message-panel {
+  padding: 2.4rem;
 }
 
 #dform_container .message-panel {
