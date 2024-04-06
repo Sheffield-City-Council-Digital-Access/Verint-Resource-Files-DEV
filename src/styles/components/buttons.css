@@ -22,7 +22,7 @@
   font-size: var(--font-height-p2);
   line-height: var(--font-height-p2);
   font-weight: var(--font-weight-semibold);
-  margin: 6rem 0 0;
+  margin: 1.6rem 0;
   padding: 0.5rem;
   border: solid 0.1rem var(--color-primary);
   text-decoration: none;
@@ -155,4 +155,87 @@
 #dform_container button.back-btn:focus {
   text-decoration: none;
   outline: none;
+}
+
+/* --- LINK BUTTON ---------------------------------------------------------- */
+
+#dform_container button.link-btn.dform_widget_type_button {
+  padding: 0;
+  font-size: var(--font-size-p1);
+  font-weight: var(--font-weight-semibold);
+  text-align: unset;
+  background: transparent;
+  border: none;
+}
+
+#dform_container button.link-btn.dform_widget_type_button:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+  border: none;
+  box-shadow: none;
+}
+
+/* --- MAP ICON ------------------------------------------------------------- */
+
+#dform_container button.link-btn.map-icon.dform_widget_type_button::before {
+  content: "\e921";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  width: 5rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  font-size: var(--font-size-h4);
+  font-family: var(--font-icon);
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+/* --- GEO LOCATION --------------------------------------------------------- */
+
+#dform_container button.geo-btn.dform_widget_type_button {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  grid-template-rows: 2.5rem 2.5rem;
+  grid-column-gap: 1rem;
+  align-items: center;
+  padding: 0;
+  ont-size: 1.6rem;
+  font-size: var(--font-size-p1);
+  font-weight: var(--font-weight-semibold);
+  text-align: unset;
+  background: transparent;
+  border: none;
+}
+
+#dform_container button.geo-btn.dform_widget_type_button:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+  border: none;
+  box-shadow: none;
+}
+
+#dform_container button.geo-btn.dform_widget_type_button::before {
+  content: "\e918";
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  width: 5rem;
+  padding: 1rem;
+  font-size: var(--font-size-h4);
+  font-family: var(--font-icon);
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+#dform_container button.geo-btn.dform_widget_type_button::after {
+  content: "(only works on a device with geolocation)";
+  color: var(--color-black);
+  font-weight: var(--font-weight-regular);
+  text-decoration: underline;
+  text-decoration-color: var(--color-grey-3);
 }
