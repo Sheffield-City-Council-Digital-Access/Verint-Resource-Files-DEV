@@ -550,7 +550,9 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
   if (action === 'retrieve-property') {
     const { property, streetName, city, postCode, fullAddress } = response.data;
-    KDF.hideWidget('sel_search_results');
+    showHideInputFields([
+      { alias: "searchResult", display: false },
+    ]);
     setValuesToInputFields([
       { alias: "property", value: property },
       { alias: "streetName", value: streetName },

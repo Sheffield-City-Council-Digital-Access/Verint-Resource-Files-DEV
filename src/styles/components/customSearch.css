@@ -1,3 +1,7 @@
+#dform_container .find-container {
+  margin-bottom: 5rem;
+}
+
 #dform_container .find-container>div {
   display: flex;
   align-items: flex-end;
