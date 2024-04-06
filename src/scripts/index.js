@@ -1138,13 +1138,12 @@ const updateProgressBar = currentPageIndex => {
 
     // Count visible pages
     const visiblePages = Array.from(pages).filter(page => !page.classList.contains('dform_hidden')).length;
-    const currentPageDeduction = ((1 / visiblePages) * 100);
 
     // Calculate percentage
     let percentage = 0;
     if (currentPageIndex > 1) {
       percentage = Math.round(((currentPageIndex - 1) / visiblePages) * 100 - ((1 / visiblePages) * 100));
-    }
+    } console.log(percentage);
 
     // Set width, text content, colour
     if (percentage === 0) {
