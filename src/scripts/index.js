@@ -1156,19 +1156,19 @@ const updateProgressBar = currentPageIndex => {
       }
       console.log("The last element is the last element.");
     }
-  }
-  console.log("--percentage--", percentage);
 
-  // Set width, text content, colour
-  if (percentage === 0) {
-    childDiv.style.width = `max-content`;
-    childDiv.style.color = "var(--color-black)";
-    childDiv.style.background = "var(--color-grey-4)";
-  } else {
-    childDiv.style.width = `${percentage}%`;
-    childDiv.style.color = "var(--color-white)";
-    childDiv.style.background = "var(--color-primary)";
+    console.log("--percentage--", percentage);
+
+    // Set width, text content, colour
+    if (percentage === 0) {
+      childDiv.style.width = `max-content`;
+      childDiv.style.color = "var(--color-black)";
+      childDiv.style.background = "var(--color-grey-4)";
+    } else {
+      childDiv.style.width = `${percentage}%`;
+      childDiv.style.color = "var(--color-white)";
+      childDiv.style.background = "var(--color-primary)";
+    }
+    childDiv.textContent = `${percentage}%`;
   }
-  childDiv.textContent = `${percentage}%`;
-}
 };
