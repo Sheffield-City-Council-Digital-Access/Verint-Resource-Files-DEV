@@ -1145,7 +1145,8 @@ const updateProgressBar = currentPageIndex => {
     let percentage = 0;
     if (currentPageIndex > 1) {
       percentage = Math.round(((currentPageIndex - 1) / visiblePages) * 100 - ((1 / visiblePages) * 100));
-    } console.log(percentage);
+    }
+    console.log("--percentage--", percentage);
 
     // Set width, text content, colour
     if (percentage === 0) {
