@@ -1141,24 +1141,34 @@ const updateProgressBar = currentPageIndex => {
     // Count visible pages
     const visiblePages = Array.from(pages).filter(page => !page.classList.contains('dform_hidden')).length;
 
+    // Check if the last visible page is the last page in the array
+    const lastVisiblePage = visiblePages[visiblePages.length - 1];
+    const isLastVisiblePage = lastVisiblePage === visiblePages[visiblePages.length - 1];
+
     // Calculate percentage
     let percentage = 0;
     if (currentPageIndex > 1) {
       console.log("--update--percentage--", percentage);
-      percentage = Math.round((currentPageIndex / visiblePages) * 100 - ((1 / visiblePages) * 100));
+      if (isLastVisiblePage) {
+        percentage = Math.round((currentPageIndex / visiblePages) * 100);
+      } else {
+        percentage = Math.round((currentPageIndex / (visiblePages - 1)) * 100);
+      }
+      console.log("The last element is the last element.");
     }
-    console.log("--percentage--", percentage);
-
-    // Set width, text content, colour
-    if (percentage === 0) {
-      childDiv.style.width = `max-content`;
-      childDiv.style.color = "var(--color-black)";
-      childDiv.style.background = "var(--color-grey-4)";
-    } else {
-      childDiv.style.width = `${percentage}%`;
-      childDiv.style.color = "var(--color-white)";
-      childDiv.style.background = "var(--color-primary)";
-    }
-    childDiv.textContent = `${percentage}%`;
   }
+  console.log("--percentage--", percentage);
+
+  // Set width, text content, colour
+  if (percentage === 0) {
+    childDiv.style.width = `max-content`;
+    childDiv.style.color = "var(--color-black)";
+    childDiv.style.background = "var(--color-grey-4)";
+  } else {
+    childDiv.style.width = `${percentage}%`;
+    childDiv.style.color = "var(--color-white)";
+    childDiv.style.background = "var(--color-primary)";
+  }
+  childDiv.textContent = `${percentage}%`;
+}
 };
