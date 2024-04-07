@@ -1157,18 +1157,16 @@ const updateProgressBar = currentPageIndex => {
 
     // Calculate percentage
     let percentage = 0;
-    console.log("--percentage--", percentage);
-    console.log("--currentPageIndex--", currentPageIndex);
-    console.log("--visiblePages--", visiblePages);
     // if (currentPageIndex > 1) {
     if (isLastVisiblePage) {
       percentage = Math.round((currentPageIndex / visiblePages) * 100);
-      console.log("The last element is the last element.");
     } else {
-      console.log("NOT the last element is the last element.");
-      percentage = Math.round(((currentPageIndex / visiblePages) * 100) - ((1 / visiblePages) * 100));
+      percentage = Math.round(((currentPageIndex - 1) / visiblePages) * 100);
+      console.log("--percentage--", percentage);
+      console.log("--currentPageIndex--", currentPageIndex);
+      console.log("--visiblePages--", visiblePages);
+      console.log("--math--", Math.round(((currentPageIndex - 1) / visiblePages) * 100));
     }
-    console.log("--update--percentage--", percentage);
     // }
 
     // Set width, text content, colour
