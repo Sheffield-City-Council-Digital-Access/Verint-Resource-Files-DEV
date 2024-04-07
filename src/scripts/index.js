@@ -28,7 +28,7 @@ function logArguments(event, kdf, ...args) {
 
 // --- GLOBAL CONSTA AND VARIABLES ----------------------------------------- \\
 
-let pageID = '';
+let pageName = '';
 
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
 function handleInitialisingEvent() {
@@ -484,10 +484,10 @@ function handleOnReadyEvent(event, kdf) {
 function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   logArguments(event, kdf, currentpageid, targetpageid);
 
-  // Get the ID for the current page
+  // Get the name for the current page
   $(`div[data-type="page"][data-pos="${targetpageid}"]`).each(function () {
-    pageID = this.id.slice(11);
-    console.log(pageID);
+    pageName = this.id.slice(11);
+    console.log(pageName);
   });
 
   checkPageProgress();
