@@ -1145,7 +1145,7 @@ const updateProgressBar = currentPageIndex => {
     let percentage = 0;
     if (currentPageIndex > 1) {
       console.log("--update--percentage--", percentage);
-      percentage = Math.round(((currentPageIndex - 1) / visiblePages) * 100 - ((1 / visiblePages) * 100));
+      percentage = Math.round((currentPageIndex / visiblePages) * 100 - ((1 / visiblePages) * 100));
     }
     console.log("--percentage--", percentage);
 
