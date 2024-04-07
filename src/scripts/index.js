@@ -1132,16 +1132,16 @@ function addPrivacyNoticeAccordionFuntionality() {
 const updateProgressBar = currentPageIndex => {
 
   // Check if the old ID exists
-  if (document.getElementById("dform_progressbar")) {
-    // Select the element by its current ID
-    const element = document.getElementById("dform_progressbar");
+  // if (document.getElementById("dform_progressbar")) {
+  //   // Select the element by its current ID
+  //   const element = document.getElementById("dform_progressbar");
 
-    // Change the ID of the element to prevent system defaults
-    element.id = "dform_progressbar_sheffield";
-  }
+  //   // Change the ID of the element to prevent system defaults
+  //   element.id = "dform_progressbar_sheffield";
+  // }
 
   const pageHolderDiv = document.getElementById("dform_pageholder");
-  const parentDiv = document.getElementById("dform_progressbar_sheffield");
+  const parentDiv = document.getElementById("dform_progressbar");
   const childDiv = parentDiv.querySelector("div");
 
   if (parentDiv && childDiv && pageHolderDiv) {
