@@ -1166,6 +1166,7 @@ const updateProgressBar = currentPageIndex => {
     console.log("--currentPageIndex--", currentPageIndex);
     console.log("--visiblePages--", visiblePages);
     console.log("--math--", Math.round(((currentPageIndex - 1) / visiblePages) * 100));
+    console.log(isLastVisiblePage)
     // }
     // }
 
