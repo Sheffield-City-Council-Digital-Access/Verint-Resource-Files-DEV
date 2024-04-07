@@ -1156,7 +1156,7 @@ const updateProgressBar = currentPageIndex => {
         console.log("The last element is the last element.");
       } else {
         console.log("NOT the last element is the last element.");
-        percentage = Math.round(((currentPageIndex / visiblePages) * 100) - ((1 / visiblePages) * 100));
+        percentage = Math.round(((currentPageIndex - 1) / (visiblePages - 1)) * 100);
       }
       console.log("--update--percentage--", percentage);
     }
