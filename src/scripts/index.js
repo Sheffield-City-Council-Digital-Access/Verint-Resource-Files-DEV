@@ -482,9 +482,9 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
 
   checkPageProgress();
 
-  setTimeout(function () {
-    updateProgressBar(targetpageid);
-  }, 10);
+  // setTimeout(function () {
+  updateProgressBar(targetpageid);
+  // }, 10);
 }
 
 // --- HANDLE ON FIELD CHANGE EVENT ---------------------------------------- \\
