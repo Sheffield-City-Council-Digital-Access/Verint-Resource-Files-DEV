@@ -484,7 +484,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
 
   setTimeout(function () {
     updateProgressBar(targetpageid);
-  }, 0);
+  }, 10);
 }
 
 // --- HANDLE ON FIELD CHANGE EVENT ---------------------------------------- \\
@@ -1144,6 +1144,7 @@ const updateProgressBar = currentPageIndex => {
     // Calculate percentage
     let percentage = 0;
     if (currentPageIndex > 1) {
+      console.log("--update--percentage--", percentage);
       percentage = Math.round(((currentPageIndex - 1) / visiblePages) * 100 - ((1 / visiblePages) * 100));
     }
     console.log("--percentage--", percentage);
