@@ -1,0 +1,24 @@
+#dform_container .custom-multi-check-container {
+  margin-block: 4rem;
+}
+
+#dform_container .custom-multi-check-container div>* {
+  margin-block: 0;
+  padding-block: 0;
+}
+
+#dform_container .custom-multi-check-container div[data-type="checkbox"] {
+  margin-bottom: 1rem;
+}
+
+#dform_container .custom-multi-check-container div[data-type="text"],
+#dform_container .custom-multi-check-container div[data-type="number"],
+#dform_container .custom-multi-check-container div[data-type="email"],
+#dform_container .custom-multi-check-container div[data-type="tel"],
+#dform_container .custom-multi-check-container div[data-type="textarea"],
+#dform_container .custom-multi-check-container div[data-type="select"],
+#dform_container .custom-multi-check-container div[data-type="radio"],
+#dform_container .custom-multi-check-container div[data-type="date"],
+#dform_container .custom-multi-check-container div[data-type="time"] {
+  margin-bottom: 4rem;
+}
