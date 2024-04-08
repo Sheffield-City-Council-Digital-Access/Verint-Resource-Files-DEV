@@ -397,6 +397,12 @@ function handleOnReadyEvent(event, kdf) {
 
   addPrivacyNoticeAccordionFuntionality();
 
+  // --- HANDLE FORMAT TITLE CASE ------------------------------------------ \\
+
+  $(".format-title-case").change(event => {
+    $(`#${event.target.id}`).val(formatTitleCase(event.target.value));
+  });
+
   // --- HANDLE ADDRESS LOOKUP --------------------------------------------- \\
 
   $('.search-results').on('change', event => {
@@ -500,12 +506,34 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
 function handleFieldChangeEvent(event, kdf, field) {
   logArguments(event, kdf, field);
   checkPageProgress();
+
+  // --- HANDLE FORMAT REMOVE ECCESS WHITE SPACES -------------------------- \\
+
+  if (
+    field.type === 'text'
+    || field.type === 'number'
+    || field.type === 'email'
+    || field.type === 'tel'
+    || field.type === 'textarea'
+  ) {
+    $(`#${field.id}`).val(formatRemoveEccessWhiteSpace(KDF.getVal(field.name)));
+  }
 }
 
 // --- HANDLE ON OPTION SELECTED EVENT ------------------------------------ \\
 
 function handleOptionSelectedEvent(event, kdf, field, label, val) {
   logArguments(event, kdf, field, label, val);
+  checkPageProgress();
+
+  // --- HANDLE SET MULTI CHECK VALUE TO TEXT FIELD ------------------------ \\
+
+  if (field.startsWith('mchk_')) {
+    const mchkField = field.replace('[]', '');
+    const textField = mchkField.replace('mchk_', 'txt_');
+    const stringValue = KDF.getVal(mchkField).toString().replace(/,/gi, ', ');
+    KDF.setVal(textField, stringValue);
+  }
 }
 
 // --- HANDLE ON MAP READY EVENT ------------------------------------------ \\
@@ -1138,7 +1166,6 @@ function addPrivacyNoticeAccordionFuntionality() {
 // --- PROGRESS BAR --------------------------------------------------------- \\
 
 const updateProgressBar = currentPageIndex => {
-
   // Check if the old ID exists
   if (document.getElementById("dform_progressbar")) {
     // Select the element by its current ID
@@ -1187,3 +1214,20 @@ const updateProgressBar = currentPageIndex => {
     }
   }
 };
+
+// --- FORMATING FUNCTIONS -------------------------------------------------- \\
+
+// --- FORMATING TO TITLE CASE ---------------------------------------------- \\
+
+function formatTitleCase(value) {
+  const string = value.toLowerCase();
+  const formatedString = string.replace(/\b\w/g, (match) => match.toUpperCase());
+  return formatedString;
+}
+
+// --- FORMATING REMOVE ECCESS WHITE SPACES --------------------------------- \\
+
+function formatRemoveEccessWhiteSpace(value) {
+  const formattedString = value.replace(/\s+/g, ' ').trim();
+  return formattedString;
+}
