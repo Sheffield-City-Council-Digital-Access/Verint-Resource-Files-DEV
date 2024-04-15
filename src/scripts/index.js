@@ -30,6 +30,10 @@ function logArguments(event, kdf, ...args) {
 
 let pageName = '';
 
+const defaultDateMessage = "Enter the date in the correct format";
+
+const dateMessages = {};
+
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
 function handleInitialisingEvent() {
   // Update the browser tab title and icon
@@ -491,9 +495,15 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   logArguments(event, kdf, currentpageid, targetpageid);
 
   // Get the name for the current page
+  $(`div[data-type="page"][data-pos="${currentpageid}"]`).each(function () {
+    pageName = this.id.slice(11);
+    console.log('currentpageid', currentpageid);
+  });
+
+  // Get the name for the current page
   $(`div[data-type="page"][data-pos="${targetpageid}"]`).each(function () {
     pageName = this.id.slice(11);
-    console.log(pageName);
+    console.log('targetpageid', targetpageid);
   });
 
   checkPageProgress();
