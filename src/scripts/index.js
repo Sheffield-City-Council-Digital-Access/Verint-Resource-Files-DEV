@@ -991,43 +991,50 @@ function checkDate(id, dd, mm, yy) {
   if (!yy) $(`#${id} .date-yy`).addClass("dform_fielderror");
 
   const dateMessage = dateMessages[id] || defaultDateMessage;
+  $(`#${id.replace("_date_", "_txt_")}`).val("");
+  $(`#${id.replace("_date_", "_dt_")}`).val("");
   $(`#${id}`)
     .find(".dform_validationMessage")
     .text(dateMessage)
     .hide();
 
-  if (!dd && mm && yy)
+  if (!dd && mm && yy) {
     $(`#${id}`)
       .find(".dform_validationMessage")
       .text("Date must include a day")
       .show();
-  if (dd && !mm && yy)
+  }
+  if (dd && !mm && yy) {
     $(`#${id}`)
       .find(".dform_validationMessage")
       .text("Date must include a month")
       .show();
-  if (dd && mm && !yy)
+  }
+  if (dd && mm && !yy) {
     $(`#${id} .date-yy`).removeClass("dform_fielderror");
-  if (!dd && !mm && yy)
+  }
+  if (!dd && !mm && yy) {
     $(`#${id}`)
       .find(".dform_validationMessage")
       .text("Date must include a day and month")
       .show();
-  if (!dd && mm && !yy)
+  }
+  if (!dd && mm && !yy) {
     $(`#${id}`)
       .find(".dform_validationMessage")
       .text("Date must include a day and year")
       .show();
+  }
   if (dd && !mm && !yy) {
     $(`#${id} .date-mm`).removeClass("dform_fielderror");
     $(`#${id} .date-yy`).removeClass("dform_fielderror");
   }
-  if (!dd && !mm && !yy)
+  if (!dd && !mm && !yy) {
     $(`#${id}`)
       .find(".dform_validationMessage")
       .text(dateMessage)
       .show();
-
+  }
   if (dd && mm && yy) {
     if (validDate(id, dd, mm, yy)) {
       const date = `${yy.substr(0, 4)}-${mm.toString().padStart(2, '0')}-${dd.toString().padStart(2, '0')}`;
@@ -1035,17 +1042,19 @@ function checkDate(id, dd, mm, yy) {
       $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
       $(`#${id.replace("_date_", "_dt_")}`).val(date);
     } else {
-      $(`#${id.replace("_date_", "_txt_")}`).val("");
-      $(`#${id.replace("_date_", "_dt_")}`).val("");
       $(`#${id}`)
         .parents(`#${id}`)
         .find(".dform_validationMessage")
+        .text(defaultDateMessage)
+        .show()
         .css({ display: "block" });
     }
   } else {
     $(`#${id}`)
       .parents(`#${id}`)
       .find(".dform_validationMessage")
+      .text(defaultDateMessage)
+      .show()
       .css({ display: "block" });
   }
 }
