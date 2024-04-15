@@ -1035,6 +1035,8 @@ function checkDate(id, dd, mm, yy) {
       $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
       $(`#${id.replace("_date_", "_dt_")}`).val(date);
     } else {
+      $(`#${id.replace("_date_", "_txt_")}`).val("");
+      $(`#${id.replace("_date_", "_dt_")}`).val("");
       $(`#${id}`)
         .parents(`#${id}`)
         .find(".dform_validationMessage")
