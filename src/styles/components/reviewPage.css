@@ -1,0 +1,42 @@
+#dform_container .review-page-edit-button {
+  width: 81px;
+  float: right;
+}
+
+@media (min-width: 44rem) {
+  #dform_container .review-page-edit-button {
+    width: 135px;
+  }
+}
+
+#review-page-content-container {
+  border-top: 1px solid #707070;
+}
+
+@media (min-width: 44rem) {
+  #review-page-content-container {
+    max-width: 700px;
+  }
+}
+
+.review-page-content-section {
+  padding: 21px 0;
+  border-bottom: 1px solid #707070;
+}
+
+.review-page-item {
+  margin: 1px 0;
+}
+
+.review-page-question-text {
+  font-family: "Open Sans Semibold";
+  font-weight: 600;
+}
+
+#dform_container button.review-page-edit-button:hover {
+  background: #007c53;
+  color: white;
+  box-shadow: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
