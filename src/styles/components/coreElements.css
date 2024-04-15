@@ -65,7 +65,7 @@
   background: var(--color-white);
   border: .1rem solid var(--color-grey-5);
   box-sizing: border-box;
-  transition: all 0.2s ease;
+  /* transition: all 0.2s ease; */
 }
 
 #dform_container .small input {
@@ -168,10 +168,14 @@ option {
 
 #dform_container .checkboxgroup>span,
 #dform_container .dform_widget_type_checkbox>div {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: start;
   gap: 1rem;
+}
+
+#dform_container .checkboxgroup>span>label {
+  align-self: center;
 }
 
 #dform_container .dform_widget_type_checkbox>div .dform_validationMessage {
@@ -200,7 +204,6 @@ option {
   border: .1rem solid var(--color-grey-5);
 }
 
-
 #dform_container .currency {
   position: relative;
 }
@@ -223,9 +226,6 @@ option {
 #dform_container input:focus,
 #dform_container textarea:focus,
 #dform_container select:focus {
-  /*#dform_container input:hover,*/
-  /*#dform_container textarea:hover,*/
-  /*#dform_container select:hover { */
   box-shadow: none;
   border: 0.4rem solid var(--color-grey-5);
   outline: 0.4rem solid var(--color-warning);
@@ -251,7 +251,6 @@ div[data-type="textarea"] span {
   color: var(--color-primary);
   font-size: var(--font-size-p1);
   font-weight: var(--font-weight-semibold);
-  /*letter-spacing: .1rem;*/
 }
 
 div[data-type="textarea"] textarea+span+span::after {

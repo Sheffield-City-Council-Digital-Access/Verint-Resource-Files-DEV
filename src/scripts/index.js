@@ -559,6 +559,43 @@ function handleObjectIdSet(event, kdf, type, id) {
 
 function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   logArguments(event, kdf, response, action, actionedby);
+
+  // Check if the action is to check the map status
+  if (action === 'check-map-status') {
+    // Spread the data object
+    const { isMapAvailable } = response.data;
+
+    // Select all elements with the class "map-icon"
+    const mapIcon = $(".map-icon");
+
+    // Check if the response data indicates unavailable maps
+    if (isMapAvailable === 'false') {
+      // (Optional) Disable elements using native method (comment out if not used)
+      mapIcon.prop("disabled", true);
+
+      // Set aria-disabled to true for accessibility
+      mapIcon.attr("aria-disabled", "true");
+
+      // Add the "disabled" class for styling
+      mapIcon.addClass("disabled");
+
+      // Show the "maps-unavailable-notice" element
+      $(".maps-unavailable-notice").show();
+    } else {
+      // (Optional) Enable elements using native method (comment out if not used)
+      mapIcon.prop("disabled", false);
+
+      // Set aria-disabled to false for accessibility
+      mapIcon.attr("aria-disabled", "false");
+
+      // Remove the "disabled" class
+      mapIcon.removeClass("disabled");
+
+      // Hide the "maps-unavailable-notice" element
+      $(".maps-unavailable-notice").hide();
+    }
+  }
+
   if (action === 'set-raised-by') {
     const { customerid } = response.data;
     if (!customerid) {

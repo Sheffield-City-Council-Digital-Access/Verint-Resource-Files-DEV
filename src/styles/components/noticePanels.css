@@ -76,3 +76,9 @@
 #dform_container .notice-panel p {
   margin: 0;
 }
+
+/* --- MAP UN available ----------------------------------------------------- */
+
+#dform_container .maps-unavailable-notice {
+  margin-top: 0;
+}
