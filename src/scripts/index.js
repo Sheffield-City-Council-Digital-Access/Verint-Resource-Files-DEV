@@ -427,65 +427,63 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE CUSTOM DATE ------------------------------------------------ \\
 
-  // $(`.date-field .date-dd`)
-  //   .on("keyup focusout", function (e) {
-  //     if (e.type === "keyup") {
-  //       inputDate(this.id, `${this.id.slice(0, -2)}mm`, e.which);
-  //       return;
-  //     }
-  //     if (this.value) $(this).val($(this).val().padStart(2, "0"));
-  //   });
+  $(`.date-field`).find('.dform_validationMessage').hide();
 
-  // $(`.date-field .date-mm`)
-  //   .on("keyup focusout", function (e) {
-  //     const parentId = $(this).parent().attr("id");
-  //     const dateMessage = dateMessages[parentId] || defaultDateMessage;
-  //     const dd = $(`#${this.id.slice(0, -2)}dd`).val();
-  //     const yy = $(`#${this.id.slice(0, -2)}yy`).val();
-  //     if (e.type === "keyup") {
-  //       inputDate(this.id, `${this.id.slice(0, -2)}yy`, e.which);
-  //       return;
-  //     }
-  //     if (this.value) {
-  //       $(this).val($(this).val().padStart(2, "0"));
-  //       return;
-  //     }
-  //     if (dd === "") $(`#${this.id.slice(0, -2)}dd`).addClass("dform_fielderror");
-  //     if (yy === "") $(`#${this.id.slice(0, -2)}yy`).addClass("dform_fielderror");
-  //     $(`#${this.id.replace("num_", "").slice(0, -3)}`)
-  //       .find(".dform_validationMessage")
-  //       .text(dateMessage)
-  //       .show();
-  //   });
+  $(`.date-dd`)
+    .on("input focusout", function (e) {
+      const parentId = $(this).attr('id').replace("_num_", "_date_").slice(0, -3);
+      if (e.type === "input") {
+        inputDate(this.id, `${this.id.slice(0, -2)}mm`, e.which);
+        return;
+      }
+      if (this.value) $(this).val($(this).val().padStart(2, "0"));
+      handleDateValidation(parentId);
+    });
 
-  // $(`.date-field .date-yy`)
-  //   .attr("min", function () {
-  //     const hasFutureClass = $(this).closest('.date-field').hasClass('future');
-  //     return hasFutureClass ? new Date().getFullYear() : new Date().getFullYear() - 120;
-  //   })
-  //   .attr("max", function () {
-  //     const hasFutureClass = $(this).closest('.date-field').hasClass('future');
-  //     return hasFutureClass ? new Date().getFullYear() + 5 : new Date().getFullYear();
-  //   })
-  //   .on("keyup focusout", function (e) {
-  //     const parentId = $(this).parent().attr("id");
-  //     const dateMessage = dateMessages[parentId] || defaultDateMessage;
-  //     const dd = $(`#${this.id.slice(0, -2)}dd`).val() !== "" ? true : false;
-  //     const mm = $(`#${this.id.slice(0, -2)}mm`).val() !== "" ? true : false;
-  //     $(`${this.id.slice(0, -3)}`)
-  //       .find(".dform_validationMessage")
-  //       .text(dateMessage)
-  //       .hide();
-  //     if (e.type === "keyup") inputDate(this.id, "", e.which);
-  //   });
+  $(`.date-mm`)
+    .on("input focusout", function (e) {
+      const parentId = $(this).attr('id').replace("_num_", "_date_").slice(0, -3);
+      const dateMessage = dateMessages[parentId] || defaultDateMessage;
+      const dd = $(`#${this.id.slice(0, -2)}dd`).val();
+      const yy = $(`#${this.id.slice(0, -2)}yy`).val();
+      if (e.type === "input") {
+        inputDate(this.id, `${this.id.slice(0, -2)}yy`, e.which);
+        return;
+      }
+      if (this.value) {
+        $(this).val($(this).val().padStart(2, "0"));
+        return;
+      }
+      if (dd === "") $(`#${this.id.slice(0, -2)}dd`).addClass("dform_fielderror");
+      if (yy === "") $(`#${this.id.slice(0, -2)}yy`).addClass("dform_fielderror");
+      $(`#${parentId}`)
+        .find(".dform_validationMessage")
+        .text(dateMessage)
+        .show();
+      handleDateValidation(parentId);
+    });
 
-  // $(`.date-field`).on("change focusout", function () {
-  //   const dd = $(`#${this.id} .date-dd`).val();
-  //   const mm = $(`#${this.id} .date-mm`).val();
-  //   const yy = $(`#${this.id} .date-yy`).val();
-  //   checkDate(this.id, dd, mm, yy);
-  //   checkMaxDay(this.id, dd, mm, yy);
-  // });
+  $(`.date-yy`)
+    .attr("min", function () {
+      const hasFutureClass = $(this).closest('.date-field').hasClass('future');
+      return hasFutureClass ? new Date().getFullYear() : new Date().getFullYear() - 120;
+    })
+    .attr("max", function () {
+      const hasFutureClass = $(this).closest('.date-field').hasClass('future');
+      return hasFutureClass ? new Date().getFullYear() + 5 : new Date().getFullYear();
+    })
+    .on("input focusout", function (e) {
+      const parentId = $(this).attr('id').replace("_num_", "_date_").slice(0, -3);
+      const dateMessage = dateMessages[parentId] || defaultDateMessage;
+      const dd = $(`#${this.id.slice(0, -2)}dd`).val() !== "" ? true : false;
+      const mm = $(`#${this.id.slice(0, -2)}mm`).val() !== "" ? true : false;
+      $(`#${parentId}`)
+        .find(".dform_validationMessage")
+        .text(dateMessage)
+        .hide();
+      if (e.type === "input") inputDate(this.id, null, e.which);
+      handleDateValidation(parentId);
+    });
 
 }
 
@@ -968,165 +966,169 @@ const showVehicleFields = () => {
 }
 
 // --- CUSTOM DATE FUNCTIONS ------------------------------------------------ \\
-// debuging
-// function checkMaxDay(id, dd, mm, yy) {
-//   const ddMax = new Date(yy, mm, 0).getDate();
-//   $(`#${id} .date-dd`).attr("max", ddMax);
-//   if (dd > ddMax) {
-//     $(`#${id} .date-dd`).addClass("dform_fielderror");
-//   } else if (dd !== "") {
-//     $(`#${id} .date-dd`).removeClass("dform_fielderror");
-//   }
-// }
 
-// function checkDate(id, dd, mm, yy) {
-//   if (!dd) $(`#${id} .date-dd`).addClass("dform_fielderror");
-//   if (!mm) $(`#${id} .date-mm`).addClass("dform_fielderror");
-//   if (!yy) $(`#${id} .date-yy`).addClass("dform_fielderror");
+function handleDateValidation(parentId) {
+  const dd = $(`#${parentId.replace("_date_", "_num_")}_dd`).val();
+  const mm = $(`#${parentId.replace("_date_", "_num_")}_mm`).val();
+  const yy = $(`#${parentId.replace("_date_", "_num_")}_yy`).val();
+  checkDate(parentId, dd, mm, yy);
+  checkMaxDay(parentId, dd, mm, yy);
+}
 
-//   const dateMessage = dateMessages[id] || defaultDateMessage;
-//   $(`#${id}`)
-//     .find(".dform_validationMessage")
-//     .text(dateMessage)
-//     .hide();
+function checkMaxDay(id, dd, mm, yy) {
+  const ddMax = new Date(yy, mm, 0).getDate();
+  $(`#${id} .date-dd`).attr("max", ddMax);
+  if (dd > ddMax) {
+    $(`#${id} .date-dd`).addClass("dform_fielderror");
+  } else if (dd !== "") {
+    $(`#${id} .date-dd`).removeClass("dform_fielderror");
+  }
+}
 
-//   if (!dd && mm && yy)
-//     $(`#${id}`)
-//       .find(".dform_validationMessage")
-//       .text("Date must include a day")
-//       .show();
-//   if (dd && !mm && yy)
-//     $(`#${id}`)
-//       .find(".dform_validationMessage")
-//       .text("Date must include a month")
-//       .show();
-//   if (dd && mm && !yy)
-//     $(`#${id} .date-yy`).removeClass("dform_fielderror");
-//   if (!dd && !mm && yy)
-//     $(`#${id}`)
-//       .find(".dform_validationMessage")
-//       .text("Date must include a day and month")
-//       .show();
-//   if (!dd && mm && !yy)
-//     $(`#${id}`)
-//       .find(".dform_validationMessage")
-//       .text("Date must include a day and year")
-//       .show();
-//   if (dd && !mm && !yy) {
-//     $(`#${id} .date-mm`).removeClass("dform_fielderror");
-//     $(`#${id} .date-yy`).removeClass("dform_fielderror");
-//   }
-//   if (!dd && !mm && !yy)
-//     $(`#${id}`)
-//       .find(".dform_validationMessage")
-//       .text(dateMessage)
-//       .show();
+function checkDate(id, dd, mm, yy) {
+  if (!dd) $(`#${id} .date-dd`).addClass("dform_fielderror");
+  if (!mm) $(`#${id} .date-mm`).addClass("dform_fielderror");
+  if (!yy) $(`#${id} .date-yy`).addClass("dform_fielderror");
 
-//   if (dd && mm && yy) {
-//     if (validDate(id, dd, mm, yy)) {
-//       const formattedDate = `${dd.toString().padStart(2, '0')}/${mm.toString().padStart(2, '0')}/${yy.substr(0, 4)}`;
-//       if (id === "dform_widget_date_field") {
-//         $("#dform_widget_txt_dob, #dform_widget_dt_dob").val(formattedDate);
-//       } else if (id === "dform_widget_date_field_another") {
-//         $("#dform_widget_txt_dob_another, #dform_widget_dt_dob_another").val(formattedDate);
-//       } else {
-//         $(`#${id.replace("date_", "dt_")}`).val(formattedDate);
-//       }
-//     } else {
-//       $(`#${id}`)
-//         .parents(`#${id}`)
-//         .find(".dform_validationMessage")
-//         .css({ display: "block" });
-//     }
-//   } else {
-//     $(`#${id}`)
-//       .parents(`#${id}`)
-//       .find(".dform_validationMessage")
-//       .css({ display: "block" });
-//   }
-// }
+  const dateMessage = dateMessages[id] || defaultDateMessage;
+  $(`#${id}`)
+    .find(".dform_validationMessage")
+    .text(dateMessage)
+    .hide();
 
-// function inputDate(id, nextID, key) {
-//   const ignoredKeys = [9, 16, 37, 38, 39, 40];
-//   if (ignoredKeys.indexOf(key) !== -1) return;
-//   const maxLength = $(`#${id}`).attr("maxlength");
-//   let value = $(`#${id}`).val();
-//   if (value.length >= maxLength) {
-//     $(`#${id}`).val(value.substring(0, maxLength));
-//     $(`#${id}`).val(value.substring(0, maxLength));
-//     if (nextID) {
-//       $(`#${id}`).blur().parent().next().children(`#${nextID}`).focus();
-//     } else {
-//       $(`#${id}`).blur().parent().next().focus();
-//     }
-//   }
-// }
+  if (!dd && mm && yy)
+    $(`#${id}`)
+      .find(".dform_validationMessage")
+      .text("Date must include a day")
+      .show();
+  if (dd && !mm && yy)
+    $(`#${id}`)
+      .find(".dform_validationMessage")
+      .text("Date must include a month")
+      .show();
+  if (dd && mm && !yy)
+    $(`#${id} .date-yy`).removeClass("dform_fielderror");
+  if (!dd && !mm && yy)
+    $(`#${id}`)
+      .find(".dform_validationMessage")
+      .text("Date must include a day and month")
+      .show();
+  if (!dd && mm && !yy)
+    $(`#${id}`)
+      .find(".dform_validationMessage")
+      .text("Date must include a day and year")
+      .show();
+  if (dd && !mm && !yy) {
+    $(`#${id} .date-mm`).removeClass("dform_fielderror");
+    $(`#${id} .date-yy`).removeClass("dform_fielderror");
+  }
+  if (!dd && !mm && !yy)
+    $(`#${id}`)
+      .find(".dform_validationMessage")
+      .text(dateMessage)
+      .show();
 
-// function validDate(id, day, month, year) {
-//   const dateMessage = dateMessages[id] || defaultDateMessage;
-//   const validationMsg = $(`#${id}`)
-//     .find(".dform_validationMessage")
-//     .text(dateMessage)
-//     .hide();
-//   const date = new Date(year, month - 1, day);
-//   const now = new Date();
+  if (dd && mm && yy) {
+    if (validDate(id, dd, mm, yy)) {
+      const date = `${yy.substr(0, 4)}-${mm.toString().padStart(2, '0')}-${dd.toString().padStart(2, '0')}`;
+      const localFormat = new Date(date).toLocaleDateString('en-GB');
+      $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
+      $(`#${id.replace("_date_", "_dt_")}`).val(date);
+    } else {
+      $(`#${id}`)
+        .parents(`#${id}`)
+        .find(".dform_validationMessage")
+        .css({ display: "block" });
+    }
+  } else {
+    $(`#${id}`)
+      .parents(`#${id}`)
+      .find(".dform_validationMessage")
+      .css({ display: "block" });
+  }
+}
 
-//   const dobField = $(`#${id}`).hasClass("dob") ? true : false;
+function inputDate(id, nextID, key) {
+  const ignoredKeys = [9, 16, 37, 38, 39, 40];
+  if (ignoredKeys.indexOf(key) !== -1) return;
+  const maxLength = $(`#${id}`).attr("maxlength");
+  let value = $(`#${id}`).val();
+  if (value.length >= maxLength) {
+    $(`#${id}`).val(value.substring(0, maxLength));
+    $(`#${id}`).val(value.substring(0, maxLength));
+    if (nextID) {
+      $(`#${nextID}`).focus();
+    } else {
+      $(`#${id}`).blur();
+    }
+  }
+}
 
-//   if (date.getFullYear() != year ||
-//     date.getMonth() + 1 != month ||
-//     date.getDate() != day) {
-//     validationMsg
-//       .text(`${dobField
-//         ? "Date of birth must be a real date"
-//         : "Must be a real date"}`)
-//       .show();
-//     return false;
-//   }
+function validDate(id, day, month, year) {
+  const dateMessage = dateMessages[id] || defaultDateMessage;
+  const validationMsg = $(`#${id}`)
+    .find(".dform_validationMessage")
+    .text(dateMessage)
+    .hide();
+  const date = new Date(year, month - 1, day);
+  const now = new Date();
 
-//   const dateRange = $(`#${id}`).hasClass("future") ? "future" : "past";
+  const dobField = $(`#${id}`).hasClass("dob") ? true : false;
 
-//   const minDate = new Date();
-//   minDate.setFullYear(minDate.getFullYear() - 120);
-//   minDate.setHours(0, 0, 0, 0);
+  if (date.getFullYear() != year ||
+    date.getMonth() + 1 != month ||
+    date.getDate() != day) {
+    validationMsg
+      .text(`${dobField
+        ? "Date of birth must be a real date"
+        : "Must be a real date"}`)
+      .show();
+    return false;
+  }
 
-//   if (dateRange === 'past') {
-//     if (date < minDate) {
-//       validationMsg.
-//         text("Date cannot be more that 120 years in the past")
-//         .show();
-//       return false;
-//     }
-//     if (date > now) {
-//       validationMsg
-//         .text(`${dobField
-//           ? "Date of birth must be today or in the past"
-//           : "Date must be today or in the past"}`)
-//         .show();
-//       return false;
-//     }
-//     return true;
-//   }
+  const dateRange = $(`#${id}`).hasClass("future") ? "future" : "past";
 
-//   const maxDate = new Date();
-//   maxDate.setFullYear(maxDate.getFullYear() + 5);
-//   maxDate.setHours(0, 0, 0, 0);
+  const minDate = new Date();
+  minDate.setFullYear(minDate.getFullYear() - 120);
+  minDate.setHours(0, 0, 0, 0);
 
-//   if (dateRange === 'future') {
-//     if (date > maxDate) {
-//       validationMsg
-//         .text("Date cannot be more that 5 years in the future")
-//         .show();
-//       return false;
-//     }
-//     if (date < now) {
-//       validationMsg
-//         .text("Date must be today or in the future")
-//         .show();
-//     }
-//     return true;
-//   }
-// }
+  if (dateRange === 'past') {
+    if (date < minDate) {
+      validationMsg.
+        text("Date cannot be more that 120 years in the past")
+        .show();
+      return false;
+    }
+    if (date > now) {
+      validationMsg
+        .text(`${dobField
+          ? "Date of birth must be today or in the past"
+          : "Date must be today or in the past"}`)
+        .show();
+      return false;
+    }
+    return true;
+  }
+
+  const maxDate = new Date();
+  maxDate.setFullYear(maxDate.getFullYear() + 5);
+  maxDate.setHours(0, 0, 0, 0);
+
+  if (dateRange === 'future') {
+    if (date > maxDate) {
+      validationMsg
+        .text("Date cannot be more that 5 years in the future")
+        .show();
+      return false;
+    }
+    if (date < now) {
+      validationMsg
+        .text("Date must be today or in the future")
+        .show();
+    }
+    return true;
+  }
+}
 
 // --- PRIVACY NOTICE ------------------------------------------------------- \\
 
