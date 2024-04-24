@@ -9,7 +9,7 @@
   justify-content: flex-start;
 }
 
-#dform_container .find-container .small>div {
+#dform_container .find-container.small>div {
   grid-template-columns: minmax(0, 21rem) max-content;
 }
 
@@ -18,7 +18,7 @@
     grid-template-columns: minmax(0, 44.5rem) max-content max-content;
   }
 
-  #dform_container .find-container .small>div {
+  #dform_container .find-container.small>div {
     grid-template-columns: minmax(0, 21rem) max-content;
   }
 }
@@ -35,8 +35,8 @@
   width: max-content;
 }
 
-#dform_container .dform_widget.find-input.small label,
-#dform_container .dform_widget.find-input.small .dform_validationMessage {
+/* #dform_container .dform_widget.find-input label,
+#dform_container .dform_widget.find-input .dform_validationMessage {
   max-width: 21rem;
   overflow: visible;
   white-space: nowrap;
@@ -47,7 +47,7 @@
   max-width: 44.5rem;
   overflow: visible;
   white-space: nowrap;
-}
+} */
 
 #dform_container .dform_widget.find-input input {
   width: min(100%, 44.5rem);

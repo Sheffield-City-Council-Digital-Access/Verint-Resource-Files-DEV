@@ -42,7 +42,7 @@
 
 #dform_container .dform_fielderror {
   box-shadow: none;
-  border: solid 0.2rem var(--color-error);
+  border: solid 0.2rem var(--color-error) !important;
   outline: none;
 }
 
