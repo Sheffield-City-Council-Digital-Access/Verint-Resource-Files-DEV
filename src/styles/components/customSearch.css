@@ -13,6 +13,10 @@
   grid-template-columns: minmax(0, 21rem) max-content;
 }
 
+#dform_container .find-container.locator>div {
+  margin-bottom: 1.6rem;
+}
+
 @media screen and (min-width: 800px) {
   #dform_container .find-container>div {
     grid-template-columns: minmax(0, 44.5rem) max-content max-content;
