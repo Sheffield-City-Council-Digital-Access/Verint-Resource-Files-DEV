@@ -35,28 +35,23 @@
   width: max-content;
 }
 
-/* #dform_container .dform_widget.find-input label,
+#dform_container .dform_widget.find-input label,
 #dform_container .dform_widget.find-input .dform_validationMessage {
-  max-width: 21rem;
+  width: min(100%, 44.5rem);
   overflow: visible;
   white-space: nowrap;
 }
-
-#dform_container .dform_widget.find-input label,
-#dform_container .dform_widget.find-input .dform_validationMessage {
-  max-width: 44.5rem;
-  overflow: visible;
-  white-space: nowrap;
-} */
 
 #dform_container .dform_widget.find-input input {
   width: min(100%, 44.5rem);
   border-right: transparent;
 }
 
-#dform_container .dform_widget.find-input .small input {
+#dform_container .dform_widget.find-input .small input,
+#dform_container .dform_widget.find-input .dform_validationMessage {
   width: min(100%, 21rem);
-
+  overflow: visible;
+  white-space: nowrap;
 }
 
 #dform_container .dform_widget.find-btn-container,
