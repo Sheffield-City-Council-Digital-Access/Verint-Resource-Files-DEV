@@ -42,7 +42,15 @@
 }
 
 #dform_container .dform_widget.find-input input {
-  width: 100%;
+  border-right: transparent;
+}
+
+#dform_container .dform_widget.find-input .small input {
+  width: min(100%, 21rem);
+}
+
+#dform_container .dform_widget.find-input .large input {
+  width: min(100%, 70rem);
 }
 
 #dform_container .dform_widget.find-btn-container,
