@@ -775,7 +775,6 @@ function handleFormSave(event, kdf) {
 // --- HANDLE ON FAILED SAVE EVENT ---------------------------------------- \\
 
 function handleFailedSave(event, kdf) {
-  logArguments(event, kdf);
   KDF.hideMessages();
 
 }
