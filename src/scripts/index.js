@@ -516,7 +516,7 @@ function handleOnReadyEvent(event, kdf) {
 // --- HANDLE ON PAGE CHANGE EVENT ----------------------------------------- \\
 
 function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
-  logArguments(event, kdf, currentpageid, targetpageid);
+  KDF.hideMessages();
 
   // Get the name for the current page
   $(`div[data-type="page"][data-pos="${currentpageid}"]`).each(function () {
