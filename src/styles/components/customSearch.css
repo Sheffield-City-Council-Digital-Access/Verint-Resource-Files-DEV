@@ -3,10 +3,16 @@
 }
 
 #dform_container .find-container>div {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto max-content;
   align-items: flex-end;
   justify-content: flex-start;
-  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 800px) {
+  #dform_container .find-container>div {
+    grid-template-columns: auto max-content max-content;
+  }
 }
 
 #dform_container .dform_widget.find-input,
@@ -14,6 +20,10 @@
 #dform_container .dform_widget.enter-manually-btn-container {
   padding: 0;
   margin: 0;
+}
+
+#dform_container .dform_widget.find-btn-container,
+#dform_container .dform_widget.enter-manually-btn-container {
   width: max-content;
 }
 
