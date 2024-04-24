@@ -769,6 +769,7 @@ function handleFailedAction(event, action, xhr, settings, thrownError) {
 // --- HANDLE ON SUCCESSFUL SAVE EVENT ------------------------------------ \\
 
 function handleFormSave(event, kdf) {
+  KDF.hideMessages();
 
 }
 
