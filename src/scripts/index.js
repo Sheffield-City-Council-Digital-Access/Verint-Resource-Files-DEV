@@ -17,7 +17,7 @@
 // import { } from './eventListeners/formComplete.js';
 
 function logArguments(event, kdf, ...args) {
-  console.group(event.type);
+  console.group(event.type ? event.type : 'event');
   console.log('event', event);
   console.log('kdf', kdf);
   args.forEach((arg, index) => {
@@ -36,6 +36,7 @@ const dateMessages = {};
 
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
 function handleInitialisingEvent() {
+
   // Update the browser tab title and icon
   (() => {
     // Set form title
@@ -102,25 +103,27 @@ function handleInitialisingEvent() {
 
   // Create and inject a title to the form
   (() => {
-    // Find the element with id "dform_controls"
-    const dformControls = document.getElementById("dform_controls");
+    if (KDF.kdf().access === 'citizen') {
+      // Find the element with id "dform_controls"
+      const dformControls = document.getElementById("dform_controls");
 
-    // Create the new title container element
-    const titleContainer = document.createElement("div");
-    titleContainer.className = "title-container";
+      // Create the new title container element
+      const titleContainer = document.createElement("div");
+      titleContainer.className = "title-container";
 
-    // Create the title element
-    const title = document.createElement("h1");
-    title.className = "form-title";
-    title.id = "form-title";
-    title.textContent = document.getElementById("dform_widget_le_title").value;
+      // Create the title element
+      const title = document.createElement("h1");
+      title.className = "form-title";
+      title.id = "form-title";
+      title.textContent = document.getElementById("dform_widget_le_title").value;
 
-    // Append the title element to the title container
-    titleContainer.appendChild(title);
+      // Append the title element to the title container
+      titleContainer.appendChild(title);
 
-    // Insert the title container before the dformControls element
-    if (dformControls && dformControls.parentNode) {
-      dformControls.parentNode.insertBefore(titleContainer, dformControls);
+      // Insert the title container before the dformControls element
+      if (dformControls && dformControls.parentNode) {
+        dformControls.parentNode.insertBefore(titleContainer, dformControls);
+      }
     }
   })();
 
@@ -1202,7 +1205,7 @@ const updateProgressBar = currentPageIndex => {
       if (percentage === 0) {
         childDiv.style.width = `max-content`;
         childDiv.style.color = "var(--color-black)";
-        childDiv.style.background = "var(--color-grey-4)";
+        childDiv.style.background = "var(--color-empty-pb)";
       } else {
         childDiv.style.width = `${percentage}%`;
         childDiv.style.color = "var(--color-white)";

@@ -28,6 +28,9 @@
   --color-primary: #007c53;
   /* <-- pink ------- */
   --color-secondary: #cc3399;
+  /* <-- grey ------- */
+  --color-background: #e0e0e0;
+  --color-empty-pb: #cccccc;
 
   /* <-- green ------ */
   --color-success: #007c53;

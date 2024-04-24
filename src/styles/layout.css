@@ -10,7 +10,7 @@ form.dform {
   width: clamp(0rem, 95vw, 155rem);
   margin: 2.25rem auto 6.5rem;
   padding: 5rem clamp(0rem, 10vw, 10rem);
-  background: var(--color-grey-3);
+  background: var(--color-background);
   display: grid;
   min-height: 77.6vh;
 }
