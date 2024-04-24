@@ -17,13 +17,13 @@
 // import { } from './eventListeners/formComplete.js';
 
 function logArguments(event, kdf, ...args) {
-  console.group(event.type ? event.type : 'event');
-  console.log('event', event);
-  console.log('kdf', kdf);
-  args.forEach((arg, index) => {
-    console.log(`arg${index + 1}`, arg);
-  });
-  console.groupEnd();
+  // console.group(event.type ? event.type : 'event');
+  // console.log('event', event);
+  // console.log('kdf', kdf);
+  // args.forEach((arg, index) => {
+  //   console.log(`arg${index + 1}`, arg);
+  // });
+  // console.groupEnd();
 }
 
 // --- GLOBAL CONSTA AND VARIABLES ----------------------------------------- \\
