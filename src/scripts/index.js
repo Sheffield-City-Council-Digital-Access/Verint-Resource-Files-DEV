@@ -770,10 +770,6 @@ function handleFailedAction(event, action, xhr, settings, thrownError) {
 
 function handleFormSave(event, kdf) {
 
-  KDF.setVal('num_case_reference', kdf.form.caseid);
-  KDF.setVal('txt_form_reference', kdf.form.ref);
-  KDF.markComplete();
-
 }
 
 // --- HANDLE ON FAILED SAVE EVENT ---------------------------------------- \\
@@ -789,7 +785,7 @@ function handleFailedSave(event, kdf) {
 function handleFomComplate(event, kdf) {
   KDF.hideMessages();
 
-  $("#dform_progressbar_sheffield").hide();
+  $("#dform_progressbar_sheffield, #dform_ref_display").hide();
 
 }
 
