@@ -17,16 +17,18 @@
 // import { } from './eventListeners/formComplete.js';
 
 function logArguments(event, kdf, ...args) {
-  // console.group(event.type ? event.type : 'event');
-  // console.log('event', event);
-  // console.log('kdf', kdf);
-  // args.forEach((arg, index) => {
-  //   console.log(`arg${index + 1}`, arg);
-  // });
-  // console.groupEnd();
+  console.group(event.type ? event.type : 'event');
+  console.log('event', event);
+  console.log('kdf', kdf);
+  args.forEach((arg, index) => {
+    console.log(`arg${index + 1}`, arg);
+  });
+  console.groupEnd();
 }
 
 // --- GLOBAL CONSTA AND VARIABLES ----------------------------------------- \\
+
+let customerSetState = false;
 
 let pageName = '';
 
@@ -35,9 +37,10 @@ const defaultDateMessage = "Enter the date in the correct format";
 const dateMessages = {};
 
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
-function handleInitialisingEvent() {
+function handleInitialisingEvent(addDateMessages) {
 
-  // Update the browser tab title and icon
+  // --- ADD TAB TITLE AND ICON  ------------------------------------------- \\
+
   (() => {
     // Set form title
     const formTitle = document.getElementById("dform_widget_le_title").value;
@@ -63,9 +66,9 @@ function handleInitialisingEvent() {
     }
   })();
 
-  // Create and inject a header to the form
-  (() => {
-    if (KDF.kdf().access === 'citizen') {
+  if (KDF.kdf().access === 'citizen') {
+    // --- ADD FORM HEADER ------------------------------------------------- \\
+    (() => {
       // Create the header element
       const header = document.createElement("header");
       header.setAttribute("role", "banner");
@@ -98,12 +101,10 @@ function handleInitialisingEvent() {
 
       // Insert the header at the beginning of the body
       document.body.insertBefore(header, document.body.firstChild);
-    }
-  })();
+    })();
 
-  // Create and inject a title to the form
-  (() => {
-    if (KDF.kdf().access === 'citizen') {
+    // --- ADD FORM TITLE -------------------------------------------------- \\
+    (() => {
       // Find the element with id "dform_controls"
       const dformControls = document.getElementById("dform_controls");
 
@@ -124,12 +125,10 @@ function handleInitialisingEvent() {
       if (dformControls && dformControls.parentNode) {
         dformControls.parentNode.insertBefore(titleContainer, dformControls);
       }
-    }
-  })();
+    })();
 
-  // Create and inject a footer to the form
-  (() => {
-    if (KDF.kdf().access === 'citizen') {
+    // --- ADD FORM FOOTER ------------------------------------------------- \\
+    (() => {
       // Create the footer HTML string
       const footerHTML = `
             <footer class="footer" role="contentinfo">
@@ -393,14 +392,38 @@ function handleInitialisingEvent() {
 
       // Insert the footer HTML at the end of the body
       body.insertAdjacentHTML("beforeend", footerHTML);
-    }
-  })();
+    })();
+  }
+
+  // --- ADD CUSTOM DATE MASSAGES ------------------------------------------ \\
+
+  if (addDateMessages) {
+    Object.assign(dateMessages, addDateMessages);
+  }
 }
 
 // --- HANDLE ON READY EVENT ----------------------------------------------- \\
 
 function handleOnReadyEvent(event, kdf) {
-  logArguments(event, kdf);
+
+  customerSetState = kdf.customerset;
+
+  // --- APPLY INTERNAL SYLE CHANGES --------------------------------------- \\
+
+  if (KDF.kdf().access === 'agent') {
+    const root = document.documentElement;
+
+    root.style.setProperty('--color-background', '#eeeeee');
+    root.style.setProperty('--color-empty-pb', '#e0e0e0');
+    root.style.setProperty('--color-primary', '#007aff');
+
+    $("form.dform").css({
+      "margin": "0 auto",
+      "min-height": "88vh"
+    });
+  }
+
+  // --- HANDLE ACCORDION -------------------------------------------------- \\
 
   addPrivacyNoticeAccordionFuntionality();
 
@@ -510,12 +533,19 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   checkPageProgress();
 
   updateProgressBar(targetpageid);
+
+  if (pageName === 'page_about_you') {
+    if (kdf.access === 'agent' && kdf.customerset === 'agent_false') {
+      KDF.sendDesktopAction('raised_by');
+    }
+  }
+
 }
 
 // --- HANDLE ON FIELD CHANGE EVENT ---------------------------------------- \\
 
 function handleFieldChangeEvent(event, kdf, field) {
-  logArguments(event, kdf, field);
+
   checkPageProgress();
 
   // --- HANDLE FORMAT REMOVE ECCESS WHITE SPACES -------------------------- \\
@@ -534,7 +564,7 @@ function handleFieldChangeEvent(event, kdf, field) {
 // --- HANDLE ON OPTION SELECTED EVENT ------------------------------------ \\
 
 function handleOptionSelectedEvent(event, kdf, field, label, val) {
-  logArguments(event, kdf, field, label, val);
+
   checkPageProgress();
 
   // --- HANDLE SET MULTI CHECK VALUE TO TEXT FIELD ------------------------ \\
@@ -559,17 +589,44 @@ function handleMapClickEvent(event, kdf, type, name, map, positionLayer, markerL
   logArguments(event, kdf, type, name, map, positionLayer, markerLayer, marker, lat, lon, plat, plon);
 }
 
-// --- HANDLE ON OBJECT SET EVENT ----------------------------------------- \\
+// --- HANDLE ON OBJECT EVENT --------------------------------------------- \\
 
 function handleObjectIdSet(event, kdf, type, id) {
-  logArguments(event, kdf, type, id);
-  KDF.setVal('num_customer_id', id);
+
+  KDF.setVal('le_reporter_obj_type', type);
+  KDF.setVal('le_reporter_obj_id', id);
+
+  // Update customer set state
+  customerSetState = 'agent_true';
+
+  // Hide submit anonymously option and info
+  $('.anonymous').hide();
+
+}
+
+function handleObjectIdLoaded(event, kdf, response, type, id) {
+
+  // Set date to input fields and trigger change
+  const date = new Date(response['profile-DateOfBirth']);
+  $('#dform_widget_num_date_of_birth_about_you_dd').val(date.getDate()).blur().prop('readolny');
+  $('#dform_widget_num_date_of_birth_about_you_mm').val(date.getMonth() + 1).blur();
+  $('#dform_widget_num_date_of_birth_about_you_yy').val(date.getFullYear()).blur();
+
+  // 
+  KDF.hideSection('area_address_lookup_about_you');
+
+  // Set and show address
+  setSelectedAddress(response['profile-Address'], 'show');
+
+  if (pageName === 'page_about_you') {
+    KDF.gotoNextPage();
+  }
+
 }
 
 // --- HANDLE ON SUCCESSFUL ACTION EVENT ---------------------------------- \\
 
 function handleSuccessfulAction(event, kdf, response, action, actionedby) {
-  logArguments(event, kdf, response, action, actionedby);
 
   // Check if the action is to check the map status
   if (action === 'check-map-status') {
@@ -698,7 +755,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
 function handleFailedAction(event, action, xhr, settings, thrownError) {
   logArguments(event, action, xhr, settings, thrownError);
-  // KDF.hideMessages();
+  KDF.hideMessages();
 
   if (action === 'retrieve-vehicle-details') {
     resetVehicleSearch(false);
@@ -712,7 +769,7 @@ function handleFailedAction(event, action, xhr, settings, thrownError) {
 // --- HANDLE ON SUCCESSFUL SAVE EVENT ------------------------------------ \\
 
 function handleFormSave(event, kdf) {
-  logArguments(event, kdf);
+
   KDF.setVal('num_case_reference', kdf.form.caseid);
   KDF.setVal('txt_form_reference', kdf.form.ref);
   KDF.markComplete();
@@ -723,13 +780,16 @@ function handleFormSave(event, kdf) {
 
 function handleFailedSave(event, kdf) {
   logArguments(event, kdf);
+  KDF.hideMessages();
 
 }
 
 // --- HANDLE ON COMPLETE EVENT ------------------------------------------- \\
 
 function handleFomComplate(event, kdf) {
-  logArguments(event, kdf);
+  KDF.hideMessages();
+
+  $("#dform_progressbar_sheffield").hide();
 
 }
 
@@ -1085,7 +1145,7 @@ function validDate(id, day, month, year) {
     .text(dateMessage)
     .hide();
   const date = new Date(year, month - 1, day);
-  const now = new Date();
+  const now = new Date().setHours(0, 0, 0, 0);
 
   const dobField = $(`#${id}`).hasClass("dob") ? true : false;
 
