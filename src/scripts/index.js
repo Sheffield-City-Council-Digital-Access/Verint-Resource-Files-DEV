@@ -690,7 +690,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   }
 
   if (action === 'retrieve-property') {
-    const { property, streetName, city, postCode, fullAddress } = response.data;
+    const { property, streetName, city, postcode, fullAddress } = response.data;
     showHideInputFields([
       { alias: "searchResult", display: false },
     ]);
@@ -698,7 +698,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       { alias: "property", value: property },
       { alias: "streetName", value: streetName },
       { alias: "city", value: city },
-      { alias: "postCode", value: postCode },
+      { alias: "postCode", value: postcode },
       { alias: "fullAddress", value: fullAddress },
     ]);
     setSelectedAddress(fullAddress, 'show');
