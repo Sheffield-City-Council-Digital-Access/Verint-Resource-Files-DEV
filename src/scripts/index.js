@@ -540,6 +540,8 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     }
   }
 
+  getAndSetReviewPageData();
+
 }
 
 // --- HANDLE ON FIELD CHANGE EVENT ---------------------------------------- \\
@@ -1272,6 +1274,155 @@ const updateProgressBar = currentPageIndex => {
   }
 };
 
+// --- CREATE REVIEW PAGE --------------------------------------------------- \\
+
+function getValueFromAlias(pageId, alias) {
+  // Find the element with the matching data-customalias attribute
+  const element = document.querySelector(`
+    #${pageId} input[data-customalias="${alias}"], 
+    #${pageId} select[data-customalias="${alias}"],
+    #${pageId} textarea[data-customalias="${alias}"]
+  `);
+
+  // If the element is found, return its value
+  if (element) {
+    return element.value;
+  }
+
+  // If not found, return undefined
+  return undefined;
+}
+
+// Initialize an array to store the user's form page history
+const formUserPath = [];
+
+// Function to get and set data for the review page
+function getAndSetReviewPageData() {
+  // Find the currently active form page
+  const activeFormPage = $('.dform_page[data-active="true"]:visible');
+  // Get the page number of the current form page
+  const thisPageNumber = activeFormPage.attr("data-pos");
+
+  // Add the current page number to the user's history
+  formUserPath.push(thisPageNumber);
+
+  // Check if the review page is currently visible
+  const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
+
+  if (reviewPageIsVisible) {
+    // Clear the review content HTML
+    $("#review-page-content-container").html("");
+
+    // Reverse the user's path to look back at the visited pages
+    const formUserPathReversed = [...formUserPath].reverse();
+    const relevantPagesReversed = [];
+
+    // Determine relevant pages by looking back from the review page
+    for (let i = 0; i < formUserPathReversed.length - 1; i++) {
+      if (parseInt(formUserPathReversed[i]) > parseInt(formUserPathReversed[i + 1])) {
+        relevantPagesReversed.push(formUserPathReversed[i + 1]);
+      } else {
+        formUserPathReversed.splice(i + 1, 1);
+        i--;
+      }
+    }
+
+    // Reverse the relevant pages to the correct order
+    const relevantPages = [...relevantPagesReversed].reverse();
+
+    // Find all form pages except the review page
+    const formPages = $('.dform_page[data-active="true"]').not("#dform_page_page_review");
+
+    formPages.each(function (i) {
+      // Get the page number of the current form page
+      const pageNumber = $(this).attr("data-pos");
+
+      // Check if the page is relevant and should be added to the review page
+      if (relevantPages.indexOf(pageNumber) > -1) {
+        // Extract the page name from the element's ID
+        const pageId = $(formPages[i]).attr("id");
+        const pageName = pageId.split("dform_page_")[1];
+        const contentDivId = "review-page-content--" + pageName;
+
+        // Create a container for the review page content
+        $("#review-page-content-container").append(
+          `<div class="review-page-content-section" id="${contentDivId}"></div>`
+        );
+
+        // Create a button to allow editing of the page
+        const buttonHtml = `<button class="review-page-edit-button">Edit</button>`;
+        const contentDiv = $("#" + contentDivId);
+        contentDiv.append(buttonHtml);
+
+        // Attach a click event handler to the button
+        const button = contentDiv.find('.review-page-edit-button');
+        button.on('click', function () {
+          KDF.gotoPage(pageName, true, true, true);
+        });
+
+        // Get the page header text
+        const pageHeader = $(formPages[i]).find(".page-title").text();
+        $("#" + contentDivId).append(`<h3>${pageHeader}</h3`);
+
+        // Find all visible fields on the page
+        const pageFields = $(formPages[i])
+          .find(".dform_widget_field")
+          .filter(function () {
+            return $(this).css("display") === "block";
+          });
+
+        pageFields.each(function (field) {
+          const fieldType = $(pageFields[field]).attr("data-type");
+          const fieldName = $(pageFields[field]).attr("data-name");
+          const fieldClass = $(pageFields[field]).attr("class");
+          let fieldLabel = "";
+          let fieldValue = "";
+
+          if (fieldClass.indexOf('address-search') !== -1) {
+            fieldLabel = 'Address';
+            fieldValue = getValueFromAlias(pageId, 'fullAddress');
+            return;
+          }
+
+          function getLegendText(classSelector) {
+            const parentElement = $(`.container[data-name="${fieldName}"]`).length
+              ? $(`.container[data-name="${fieldName}"]`)
+              : $(`.container.dform_widget_${fieldName}`);
+
+            if (parentElement.length) {
+              return parentElement.find(`.${classSelector} legend`).text();
+            }
+          }
+
+          if (fieldType === "radio") {
+            fieldLabel = getLegendText('radiogroup');
+            fieldValue = KDF.getVal(fieldName);
+          } else if (fieldType === "multicheckbox") {
+            fieldLabel = getLegendText('checkboxgroup');
+            fieldValue = KDF.getVal(fieldName);
+          } else {
+            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+            fieldValue = KDF.getVal(fieldName);
+          }
+
+          // Check if the field has a label
+          if (fieldLabel) {
+            // Set a default value for optional fields that are visible but not answered
+            if (fieldValue === "") {
+              fieldValue = "Not answered";
+            }
+
+            // Append the field information to the review page content
+            $(`#${contentDivId}`).append(
+              `<p class="review-page-item"><span class="review-page-question-text">${fieldLabel}:</span> ${fieldValue}</p>`
+            );
+          }
+        });
+      }
+    });
+  }
+}
+
 // --- FORMATING FUNCTIONS -------------------------------------------------- \\
 
 // --- FORMATING TO TITLE CASE ---------------------------------------------- \\
@@ -1288,3 +1439,6 @@ function formatRemoveEccessWhiteSpace(value) {
   const formattedString = value.replace(/\s+/g, ' ').trim();
   return formattedString;
 }
+
+
+
