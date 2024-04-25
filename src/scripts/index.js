@@ -1329,7 +1329,7 @@ function getAndSetReviewPageData() {
 
     // Reverse the relevant pages to the correct order
     let relevantPages = [];
-    if (KDF.setVal('txt_pages')) {
+    if (KDF.getVal('txt_pages')) {
       relevantPages = KDF.getVal('txt_pages').split(",");
       console.log(relevantPages, KDF.getVal('txt_pages').split(","));
     } else {
