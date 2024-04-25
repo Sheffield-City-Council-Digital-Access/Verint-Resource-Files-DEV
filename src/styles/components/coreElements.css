@@ -169,8 +169,12 @@ option {
 #dform_container .dform_widget_type_checkbox>div {
   display: grid;
   grid-template-columns: max-content 1fr;
-  align-items: start;
+  align-items: center;
   gap: 1rem;
+}
+
+#dform_container .checkboxgroup>span {
+  align-items: start;
 }
 
 #dform_container .checkboxgroup>span>label {
