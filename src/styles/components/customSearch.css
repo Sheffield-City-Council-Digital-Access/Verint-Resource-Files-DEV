@@ -13,7 +13,7 @@
   grid-template-columns: minmax(0, 21rem) max-content;
 }
 
-#dform_container .find-container.locator>div {
+#dform_container .find-container.locator {
   margin-bottom: 1.6rem;
 }
 
