@@ -824,7 +824,7 @@ const checkPageProgress = () => {
     #${currentPageId} input[type="checkbox"]:not(.dform_hidden input):not([disabled])
   `);
   // #${currentPageId} select[required]:not([disabled])
-  // Use map to check if any required field is empty
+  // Use to check if any required field is empty
   const fieldChecks = Array.from(visibleFields).map(field => {
     // if (field.tagName.toLowerCase() === 'select') {
     //   // If the field is a select element
@@ -855,8 +855,13 @@ const checkPageProgress = () => {
           return false;
         }
       } else {
-        // Logic for other selects remains the same
-        // ... (your existing code for other selects)
+        // If an option is selected
+        const selectedOption = field.options[field.selectedIndex];
+        if (selectedOption.disabled || selectedOption.value === '') {
+          allFieldsCompleted = false;
+          hasVisibleRequiredField = true;
+          return false;
+        }
       }
     } else if (field.type === 'radio') {
       // Check for radio buttons
