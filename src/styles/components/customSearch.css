@@ -1,7 +1,3 @@
-/* #dform_container .find-container {
-  margin-bottom: 5rem;
-} */
-
 #dform_container .find-container>div {
   display: grid;
   grid-template-columns: minmax(0, 44.5rem) max-content;
