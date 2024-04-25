@@ -1328,14 +1328,13 @@ function getAndSetReviewPageData() {
     }
 
     // Reverse the relevant pages to the correct order
-    let relevantPages = [...relevantPagesReversed].reverse();
-    KDF.setVal('txt_pages', relevantPages.join(','));
-    console.log(KDF.getVal('txt_pages').split(","));
-    // if (KDF.setVal('txt_pages')) {
-    //   relevantPages = KDF.getVal('txt_pages').split(",");
-    // } else {
-    //   KDF.setVal('txt_pages', relevantPages.join(','));
-    // }
+    let relevantPages = [];
+    if (KDF.setVal('txt_pages')) {
+      relevantPages = KDF.getVal('txt_pages').split(",");
+    } else {
+      relevantPages = [...relevantPagesReversed].reverse();
+      KDF.setVal('txt_pages', relevantPages.join(','));
+    }
 
     // Find all form pages except the review page
     const formPages = $('.dform_page[data-active="true"]').not("#dform_page_page_review");
