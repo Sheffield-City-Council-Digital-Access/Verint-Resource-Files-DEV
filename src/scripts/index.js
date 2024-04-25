@@ -846,7 +846,7 @@ const checkPageProgress = () => {
     //   }
     // }
     if (field.tagName.toLowerCase() === 'select') {
-      const isRequiredSearchSelect = field.parentNode.classList.contains('search-results') && field.hasAttribute('required');
+      const isRequiredSearchSelect = field.id.startsWith('sel_search_results') && field.hasAttribute('required');
       if (isRequiredSearchSelect) {
         // Logic for required search results selects
         if (field.selectedIndex === 0 || field.selectedIndex === -1) {
