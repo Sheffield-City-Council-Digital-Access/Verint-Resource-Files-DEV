@@ -1331,7 +1331,6 @@ function getAndSetReviewPageData() {
     let relevantPages = [];
     if (KDF.getVal('txt_pages')) {
       relevantPages = KDF.getVal('txt_pages').split(",");
-      console.log(relevantPages, KDF.getVal('txt_pages').split(","));
     } else {
       relevantPages = [...relevantPagesReversed].reverse();
       KDF.setVal('txt_pages', relevantPages.join(','));
@@ -1365,6 +1364,7 @@ function getAndSetReviewPageData() {
         const button = contentDiv.find('.review-page-edit-button');
         button.on('click', function () {
           KDF.gotoPage(pageName, true, true, true);
+          KDF.setVal('txt_pages', '');
         });
 
         // Get the page header text
