@@ -423,6 +423,14 @@ function handleOnReadyEvent(event, kdf) {
     });
   }
 
+  // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
+
+  if (kdf.form.caseid) {
+    KDF.gotoPage('page_review');
+    $(".review-page-edit-button").remove();
+    $('.dform_section_box_review div[data-type="buttonset"]').remove();
+  }
+
   // --- HANDLE ACCORDION -------------------------------------------------- \\
 
   addPrivacyNoticeAccordionFuntionality();
