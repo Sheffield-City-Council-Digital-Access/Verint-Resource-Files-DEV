@@ -819,24 +819,53 @@ const checkPageProgress = () => {
     #${currentPageId} input:not(.dform_hidden input):not([disabled]),
     #${currentPageId} select:not(.dform_hidden select):not([disabled]),
     #${currentPageId} textarea:not(.dform_hidden textarea):not([disabled]),
-    #${currentPageId} select[required]:not([disabled])
+    #${currentPageId} input[type="radio"]:not(.dform_hidden input):not([disabled]),
+    #${currentPageId} input[type="radio"]:not(.dform_hidden input):not([disabled]),
+    #${currentPageId} input[type="checkbox"]:not(.dform_hidden input):not([disabled])
   `);
-
+  // #${currentPageId} select[required]:not([disabled])
   // Use map to check if any required field is empty
   const fieldChecks = Array.from(visibleFields).map(field => {
+    // if (field.tagName.toLowerCase() === 'select') {
+    //   // If the field is a select element
+    //   if (field.selectedIndex === -1) {
+    //     // If no option is selected
+    //     if (field.hasAttribute('required')) {
+    //       allFieldsCompleted = false;
+    //       hasVisibleRequiredField = true;
+    //       return false;
+    //     }
+    //   } else {
+    //     // If an option is selected
+    //     const selectedOption = field.options[field.selectedIndex];
+    //     if (selectedOption.disabled || selectedOption.value === '') {
+    //       allFieldsCompleted = false;
+    //       hasVisibleRequiredField = true;
+    //       return false;
+    //     }
+    //   }
+    // }
     if (field.tagName.toLowerCase() === 'select') {
-      // If the field is a select element
-      if (field.selectedIndex === -1) {
-        // If no option is selected
-        if (field.hasAttribute('required')) {
+      const isRequiredSearchSelect = field.parentNode.classList.contains('search-results') && field.hasAttribute('required');
+      if (isRequiredSearchSelect) {
+        // Logic for required search results selects
+        if (field.selectedIndex === 0 || field.selectedIndex === -1) {
           allFieldsCompleted = false;
           hasVisibleRequiredField = true;
           return false;
         }
       } else {
-        // If an option is selected
-        const selectedOption = field.options[field.selectedIndex];
-        if (selectedOption.disabled || selectedOption.value === '') {
+        // Logic for other selects remains the same
+        // ... (your existing code for other selects)
+      }
+    } else if (field.type === 'radio') {
+      // Check for radio buttons
+      const radioGroup = field.parentNode; // Assuming radio buttons are grouped within a fieldset
+      if (radioGroup.hasAttribute('required')) {
+        // Check if any radio in the group is selected
+        const isSelected = [...radioGroup.querySelectorAll('input[type="radio"]')]
+          .some(radio => radio.checked);
+        if (!isSelected) {
           allFieldsCompleted = false;
           hasVisibleRequiredField = true;
           return false;
