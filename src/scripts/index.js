@@ -822,7 +822,7 @@ const checkPageProgress = () => {
   #${currentPageId} select[required]:not([disabled])
  `);
 
-  const selectedInputs = document.querySelectorAll("#${currentPageId} input:not(.dform_hidden input):not([disabled])");
+  const selectedInputs = document.querySelectorAll(`#${currentPageId} input:not(.dform_hidden input):not([disabled])`);
   console.log("Retrieved Input Elements:", selectedInputs);
 
   // Use to check if any required field is empty
