@@ -1329,6 +1329,7 @@ function getAndSetReviewPageData() {
 
     // Reverse the relevant pages to the correct order
     const relevantPages = [...relevantPagesReversed].reverse();
+    console.log(relevantPages, ...relevantPages)
     KDF.setVal('txt_pages', ...relevantPages);
 
     // Find all form pages except the review page
