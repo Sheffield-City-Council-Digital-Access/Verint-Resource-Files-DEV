@@ -119,7 +119,13 @@ body {
   background: var(--color-white);
 }
 
+p {
+  margin-block: 1.6rem;
+}
 
+ul {
+  padding-left: 4rem;
+}
 
 
 
