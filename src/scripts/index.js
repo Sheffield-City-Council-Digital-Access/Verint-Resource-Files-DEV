@@ -1331,6 +1331,7 @@ function getAndSetReviewPageData() {
     let relevantPages = [];
     if (KDF.setVal('txt_pages')) {
       relevantPages = KDF.getVal('txt_pages').split(",");
+      console.log(relevantPages, KDF.getVal('txt_pages').split(","));
     } else {
       relevantPages = [...relevantPagesReversed].reverse();
       KDF.setVal('txt_pages', relevantPages.join(','));
