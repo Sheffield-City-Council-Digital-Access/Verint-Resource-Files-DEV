@@ -1330,9 +1330,9 @@ function getAndSetReviewPageData() {
     // Reverse the relevant pages to the correct order
     let relevantPages = [...relevantPagesReversed].reverse();
     KDF.setVal('txt_pages', relevantPages.join(','));
-    console.log(KDF.setVal('txt_pages').split(","));
+    console.log(KDF.getVal('txt_pages').split(","));
     // if (KDF.setVal('txt_pages')) {
-    //   relevantPages = KDF.setVal('txt_pages').split(",");
+    //   relevantPages = KDF.getVal('txt_pages').split(",");
     // } else {
     //   KDF.setVal('txt_pages', relevantPages.join(','));
     // }
