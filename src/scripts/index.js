@@ -1329,8 +1329,8 @@ function getAndSetReviewPageData() {
 
     // Reverse the relevant pages to the correct order
     const relevantPages = [...relevantPagesReversed].reverse();
-    console.log(relevantPages, ...relevantPages)
-    KDF.setVal('txt_pages', ...relevantPages);
+    console.log(relevantPages, relevantPages.join(','))
+    KDF.setVal('txt_pages', relevantPages.join(','));
 
     // Find all form pages except the review page
     const formPages = $('.dform_page[data-active="true"]').not("#dform_page_page_review");
