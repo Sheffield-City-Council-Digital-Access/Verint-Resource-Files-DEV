@@ -621,6 +621,7 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
   $('#dform_widget_num_date_of_birth_about_you_dd').val(date.getDate()).blur().prop('readolny');
   $('#dform_widget_num_date_of_birth_about_you_mm').val(date.getMonth() + 1).blur();
   $('#dform_widget_num_date_of_birth_about_you_yy').val(date.getFullYear()).blur();
+  console.log(KDF.getVal('dt_date_of_birth_about_you'), KDF.getVal('txt_date_of_birth_about_you'));
 
   // 
   KDF.hideSection('area_address_lookup_about_you');
