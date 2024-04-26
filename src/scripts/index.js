@@ -605,6 +605,7 @@ function handleObjectIdSet(event, kdf, type, id) {
 
   KDF.setVal('le_reporter_obj_type', type);
   KDF.setVal('le_reporter_obj_id', id);
+  console.log(KDF.getVal('txt_reporter_obj_type'), KDF.getVal('num_reporter_obj_id'));
 
   // Update customer set state
   customerSetState = 'agent_true';
