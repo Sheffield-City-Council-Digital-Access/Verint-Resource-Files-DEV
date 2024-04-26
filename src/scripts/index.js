@@ -630,9 +630,9 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
   // Set and show address
   setSelectedAddress(response['profile-Address'], 'show');
 
-  if (pageName === 'page_about_you') {
-    KDF.gotoNextPage();
-  }
+  // if (pageName === 'page_about_you') {
+  //   KDF.gotoNextPage();
+  // }
 
 }
 
