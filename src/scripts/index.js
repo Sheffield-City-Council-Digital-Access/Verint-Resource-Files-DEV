@@ -795,7 +795,9 @@ function handleFailedSave(event, kdf) {
 // --- HANDLE ON COMPLETE EVENT ------------------------------------------- \\
 
 function handleFomComplate(event, kdf) {
-  KDF.hideMessages();
+  setTimeout(function () {
+    KDF.hideMessages();
+  }, 0);
 
   $("#dform_progressbar_sheffield, #dform_ref_display").hide();
 
