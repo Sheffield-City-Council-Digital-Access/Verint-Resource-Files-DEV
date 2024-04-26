@@ -28,7 +28,7 @@ function logArguments(event, kdf, ...args) {
 
 // --- GLOBAL CONSTA AND VARIABLES ----------------------------------------- \\
 
-let customerSetState = false;
+let customerState = false;
 
 let pageName = '';
 
@@ -405,8 +405,8 @@ function handleInitialisingEvent(addDateMessages) {
 // --- HANDLE ON READY EVENT ----------------------------------------------- \\
 
 function handleOnReadyEvent(event, kdf) {
-
-  customerSetState = kdf.customerset;
+  console.log(kdf);
+  customerState = kdf.customerset;
 
   // --- APPLY INTERNAL SYLE CHANGES --------------------------------------- \\
 
@@ -543,7 +543,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   updateProgressBar(targetpageid);
 
   if (pageName === 'page_about_you') {
-    if (kdf.access === 'agent' && kdf.customerset === 'agent_false') {
+    if (kdf.access === 'agent' && customerState !== 'agent_true') {
       KDF.sendDesktopAction('raised_by');
     }
   }
@@ -608,7 +608,7 @@ function handleObjectIdSet(event, kdf, type, id) {
   console.log(KDF.getVal('txt_reporter_obj_type'), KDF.getVal('num_reporter_obj_id'));
 
   // Update customer set state
-  customerSetState = 'agent_true';
+  customerState = 'agent_true';
 
   // Hide submit anonymously option and info
   $('.anonymous').hide();
