@@ -617,18 +617,7 @@ function handleObjectIdSet(event, kdf, type, id) {
 
 function handleObjectIdLoaded(event, kdf, response, type, id) {
 
-  // Set date to input fields and trigger change
-  const date = new Date(response['profile-DateOfBirth']);
-  $('#dform_widget_num_date_of_birth_about_you_dd').val(date.getDate()).blur().prop('readolny');
-  $('#dform_widget_num_date_of_birth_about_you_mm').val(date.getMonth() + 1).blur();
-  $('#dform_widget_num_date_of_birth_about_you_yy').val(date.getFullYear()).blur();
-  console.log(KDF.getVal('dt_date_of_birth_about_you'), KDF.getVal('txt_date_of_birth_about_you'));
-
-  // 
-  KDF.hideSection('area_address_lookup_about_you');
-
-  // Set and show address
-  setSelectedAddress(response['profile-Address'], 'show');
+  handleSetReporter(new Date(response['profile-DateOfBirth']), response['profile-Address']);
 
   // if (pageName === 'page_about_you') {
   //   KDF.gotoNextPage();
@@ -1289,6 +1278,24 @@ const updateProgressBar = currentPageIndex => {
     }
   }
 };
+
+// --- SET REPORTER --------------------------------------------------------- \\
+
+function handleSetReporter(date, address) {
+  // Set date to input fields and trigger change
+  $('#dform_widget_num_date_of_birth_about_you_dd').val(date.getDate()).blur();
+  $('#dform_widget_num_date_of_birth_about_you_mm').val(date.getMonth() + 1).blur();
+  $('#dform_widget_num_date_of_birth_about_you_yy').val(date.getFullYear()).blur();
+
+  // 
+  KDF.hideSection('area_address_lookup_about_you');
+
+  // Set and show address
+  setSelectedAddress(address, 'show');
+
+  // Hide submit anonymously option and info
+  $('.anonymous').hide();
+}
 
 // --- CREATE REVIEW PAGE --------------------------------------------------- \\
 
