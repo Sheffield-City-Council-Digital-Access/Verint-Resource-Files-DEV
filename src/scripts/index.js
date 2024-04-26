@@ -808,12 +808,12 @@ const checkPageProgress = () => {
   let hasVisibleRequiredField = false;
 
   // Get all visible inputs, selects, and textareas on the current page, including those with the required attribute
-  const visibleFields = document.querySelectorAll([
-    `#${currentPageId} input:not(.dform_hidden):not([disabled]))`,
-    `#${currentPageId} select:not(.dform_hidden):not([disabled])`,
-    `#${currentPageId} textarea:not(.dform_hidden):not([disabled])`,
-    `#${currentPageId} select[required]:not([disabled])`,
-  ]);
+  const visibleFields = document.querySelectorAll(`
+    #${currentPageId} input:not(.dform_hidden):not([disabled])
+    #${currentPageId} select:not(.dform_hidden):not([disabled])
+    #${currentPageId} textarea:not(.dform_hidden):not([disabled])
+    #${currentPageId} select[required]:not([disabled])
+  `);
 
   // Use to check if any required field is empty
   const fieldChecks = Array.from(visibleFields).map(field => {
