@@ -1287,7 +1287,10 @@ const updateProgressBar = currentPageIndex => {
     const pageHolderDiv = document.getElementById("dform_pageholder");
     const parentDiv = document.getElementById("dform_progressbar_sheffield");
     const childDiv = parentDiv.querySelector("div");
-
+    console.log('pageHolderDiv', pageHolderDiv);
+    console.log('parentDiv', parentDiv);
+    console.log('childDiv', childDiv);
+    console.log(parentDiv && childDiv && pageHolderDiv);
     if (parentDiv && childDiv && pageHolderDiv) {
       console.log('checking..');
       // Get all pages
