@@ -1286,7 +1286,14 @@ const updateProgressBar = currentPageIndex => {
     console.log('getting..');
     const pageHolderDiv = document.getElementById("dform_pageholder");
     const parentDiv = document.getElementById("dform_progressbar_sheffield");
-    const childDiv = parentDiv.querySelector("div");
+
+    // Check for child div and create if it doesn't exist
+    let childDiv = parentDiv.querySelector("div");
+    if (!childDiv) {
+      console.log('creating child div..');
+      childDiv = document.createElement("div");
+      parentDiv.appendChild(childDiv);
+    }
     console.log('pageHolderDiv', pageHolderDiv);
     console.log('parentDiv', parentDiv);
     console.log('childDiv', childDiv);
