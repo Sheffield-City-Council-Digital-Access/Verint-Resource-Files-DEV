@@ -1294,14 +1294,14 @@ const updateProgressBar = currentPageIndex => {
     if (parentDiv && childDiv && pageHolderDiv) {
       // Get all pages
       const pages = pageHolderDiv.querySelectorAll('.dform_page');
-
+      console.log(pages)
       // Count visible pages
       const visiblePages = Array.from(pages).filter(page => !page.classList.contains('dform_hidden')).length;
-
+      console.log(visiblePages)
       // Check if the last visible page is the last page in the array
       const lastVisiblePage = visiblePages[visiblePages.length - 1];
       const isLastVisiblePage = lastVisiblePage === visiblePages[visiblePages.length - 1];
-      console.log(lastVisiblePage)
+      console.log(lastVisiblePage, isLastVisiblePage)
       // Calculate percentage
       let percentage = 0;
       if (isLastVisiblePage) {
