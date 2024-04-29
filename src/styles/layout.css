@@ -5,6 +5,10 @@
   border-bottom: none;
 }
 
+#dform_ref_display {
+  display: none;
+}
+
 form.dform {
   position: relative;
   width: clamp(0rem, 95vw, 155rem);
