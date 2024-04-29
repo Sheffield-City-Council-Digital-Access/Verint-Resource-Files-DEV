@@ -1297,7 +1297,7 @@ const updateProgressBar = currentPageIndex => {
       console.log(pages)
       // Count visible pages
       const visiblePages = Array.from(pages).filter(page => !page.classList.contains('dform_hidden'));
-      const numberOfVisiblePages = visiblePages.length
+      const numberOfVisiblePages = visiblePages.length - 1; // -1 to deduct the confirmation page
       console.log(visiblePages, numberOfVisiblePages)
       // Check if the last visible page is the last page in the array
       const lastVisiblePage = visiblePages[numberOfVisiblePages - 1];
@@ -1306,6 +1306,7 @@ const updateProgressBar = currentPageIndex => {
       // Calculate percentage
       let percentage = 0;
       if (isLastVisiblePage) {
+        // -1 to deduct the current page
         percentage = Math.round(((currentPageIndex - 1) / numberOfVisiblePages) * 100);
       } else {
         percentage = Math.round((currentPageIndex / numberOfVisiblePages) * 100);
