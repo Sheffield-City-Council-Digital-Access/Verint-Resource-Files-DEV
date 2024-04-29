@@ -1,21 +1,3 @@
-// import './components/tabIconAndTitle.js';
-// import './components/formHeader.js';
-// import './components/formTitle.js';
-// import './components/formFooter.js';
-
-// import { handleOnReadyEvent } from './eventListeners/formReady.js';
-// import { handlePageChangeEvent } from './eventListeners/pageChange.js';
-// import { handleFieldChangeEvent } from './eventListeners/fieldChange.js';
-// import { } from './eventListeners/optionSelected.js';
-// import { } from './eventListeners/mapReady.js';
-// import { } from './eventListeners/mapClicked.js';
-// import { handleSuccessfulAction } from './eventListeners/actionSuccessful.js';
-// import { handleFailedAction } from './eventListeners/actionFailed.js';
-// import { handleObjectIdSet } from './eventListeners/objectIdSet.js';
-// import { } from './eventListeners/saveSuccessful.js';
-// import { } from './eventListeners/saveFailed.js';
-// import { } from './eventListeners/formComplete.js';
-
 function logArguments(event, kdf, ...args) {
   console.group(event.type ? event.type : 'event');
   console.log('event', event);
@@ -405,8 +387,14 @@ function handleInitialisingEvent(addDateMessages) {
 // --- HANDLE ON READY EVENT ----------------------------------------------- \\
 
 function handleOnReadyEvent(event, kdf) {
-  console.log(kdf);
+
   customerState = kdf.customerset;
+
+  // --- SET FORM START DATE AND TIME -------------------------------------- \\
+
+  if (!kdf.form.caseid) {
+    //   KDF.setVal('txt_start_date_and_time', getCurrentTimeAndDate());
+  }
 
   // --- APPLY INTERNAL SYLE CHANGES --------------------------------------- \\
 
@@ -520,6 +508,58 @@ function handleOnReadyEvent(event, kdf) {
       handleDateValidation(parentId);
     });
 
+  // --- HANDLE SET REPORTER ----------------------------------------------- \\
+
+  // Check if customer set state is true
+  if (KDF.kdf().customerset === 'agent_true' || KDF.kdf().customerset === 'citizen_true') {
+    handleSetReporter(new Date(kdf.profileData['profile-DateOfBirth']), kdf.profileData['profile-Address']);
+  }
+
+  // --- HANDLE CHECK AGENT SET CUSTOMER ----------------------------------- \\
+
+  $('#dform_widget_button_but_next_about_you').on('click', () => {
+    if (KDF.kdf().access === 'agent' && KDF.getVal('le_customer_set') === 'agent_false') {
+      KDF.sendDesktopAction('raised_by');
+    } else {
+      KDF.gotoNextPage();
+    }
+  });
+
+  $('#dform_widget_button_but_submit_about_you').on('click', () => {
+    if (KDF.kdf().access === 'agent' && KDF.getVal('le_customer_set') === 'agent_false') {
+      KDF.sendDesktopAction('raised_by');
+    } else {
+      KDF.gotoPage('complete', true, true, false);
+    }
+  });
+
+  // --- HANDLE AONYMOUS SUBMITION ----------------------------------------- \\
+
+  $('.anonymous-btn').on('click', () => {
+    KDF.hidePage('page_about_you');
+
+    // Clear any entered customer data
+    KDF.setVal('sel_title', '');
+    KDF.setVal('txt_forename', 'Remained');
+    KDF.setVal('txt_surname', 'Anonymous');
+    KDF.setVal('dform_widget_num_date_of_birth_about_you_dd', '');
+    KDF.setVal('dform_widget_num_date_of_birth_about_you_mm', '');
+    KDF.setVal('dform_widget_num_date_of_birth_about_you_yy', '');
+    KDF.setVal('txt_date_of_birth_about_you', '');
+    KDF.setVal('dt_date_of_birth_about_you', '');
+    KDF.setVal('eml_address', '');
+    KDF.setVal('tel_phone_number', '');
+    KDF.setVal('txt_find_postcode_about_you', '');
+    KDF.setVal('sel_search_results_about_you', '');
+    KDF.setVal('txt_property_about_you', '');
+    KDF.setVal('txt_street_name_about_you', '');
+    KDF.setVal('txt_city_about_you', '');
+    KDF.setVal('txt_postcode_about_you', '');
+    KDF.setVal('txt_full_address_about_you', '');
+
+    KDF.gotoPage('complete', true, true, false);
+  });
+
 }
 
 // --- HANDLE ON PAGE CHANGE EVENT ----------------------------------------- \\
@@ -546,6 +586,9 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   if (pageName === 'page_about_you') {
     if (kdf.access === 'agent' && customerState !== 'agent_true') {
       KDF.sendDesktopAction('raised_by');
+    }
+    if (!KDF.getVal('eml_address')) {
+      KDF.hideWidget('ahtm_confirmation_email_send');
     }
   }
 
