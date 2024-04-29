@@ -1270,10 +1270,8 @@ function addPrivacyNoticeAccordionFuntionality() {
 // --- PROGRESS BAR --------------------------------------------------------- \\
 
 const updateProgressBar = currentPageIndex => {
-  console.log('running..');
   // Check if the old ID exists
   if (document.getElementById("dform_progressbar")) {
-    console.log('renaming..');
     // Select the element by its current ID
     const element = document.getElementById("dform_progressbar");
 
@@ -1283,23 +1281,17 @@ const updateProgressBar = currentPageIndex => {
 
   // Check if the new ID exists
   if (document.getElementById("dform_progressbar_sheffield")) {
-    console.log('getting..');
     const pageHolderDiv = document.getElementById("dform_pageholder");
     const parentDiv = document.getElementById("dform_progressbar_sheffield");
 
     // Check for child div and create if it doesn't exist
     let childDiv = parentDiv.querySelector("div");
     if (!childDiv) {
-      console.log('creating child div..');
       childDiv = document.createElement("div");
       parentDiv.appendChild(childDiv);
     }
-    console.log('pageHolderDiv', pageHolderDiv);
-    console.log('parentDiv', parentDiv);
-    console.log('childDiv', childDiv);
-    console.log(parentDiv && childDiv && pageHolderDiv);
+
     if (parentDiv && childDiv && pageHolderDiv) {
-      console.log('checking..');
       // Get all pages
       const pages = pageHolderDiv.querySelectorAll('.dform_page');
 
@@ -1309,7 +1301,7 @@ const updateProgressBar = currentPageIndex => {
       // Check if the last visible page is the last page in the array
       const lastVisiblePage = visiblePages[visiblePages.length - 1];
       const isLastVisiblePage = lastVisiblePage === visiblePages[visiblePages.length - 1];
-
+      console.log(lastVisiblePage)
       // Calculate percentage
       let percentage = 0;
       if (isLastVisiblePage) {
@@ -1317,7 +1309,6 @@ const updateProgressBar = currentPageIndex => {
       } else {
         percentage = Math.round((currentPageIndex / visiblePages) * 100);
       }
-      console.log('percentage..', percentage);
 
       // Set width, text content, colour
       if (percentage === 0) {
@@ -1330,7 +1321,6 @@ const updateProgressBar = currentPageIndex => {
         childDiv.style.background = "var(--color-primary)";
       }
       childDiv.textContent = `${percentage}%`;
-      console.log('updating..');
     }
   }
 };
