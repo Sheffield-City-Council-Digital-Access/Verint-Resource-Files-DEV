@@ -1296,19 +1296,19 @@ const updateProgressBar = currentPageIndex => {
       const pages = pageHolderDiv.querySelectorAll('.dform_page');
       console.log(pages)
       // Count visible pages
-      // const visiblePages = Array.from(pages).filter(page => !page.classList.contains('dform_hidden')).length;
       const visiblePages = Array.from(pages).filter(page => !page.classList.contains('dform_hidden'));
-      console.log(visiblePages, visiblePages.length)
+      const numberOfVisiblePages = visiblePages.length
+      console.log(visiblePages, numberOfVisiblePages)
       // Check if the last visible page is the last page in the array
-      const lastVisiblePage = visiblePages[visiblePages.length - 1];
-      const isLastVisiblePage = lastVisiblePage === visiblePages[visiblePages.length - 1];
+      const lastVisiblePage = visiblePages[numberOfVisiblePages - 1];
+      const isLastVisiblePage = lastVisiblePage === visiblePages[numberOfVisiblePages - 1];
       console.log(lastVisiblePage, isLastVisiblePage)
       // Calculate percentage
       let percentage = 0;
       if (isLastVisiblePage) {
-        percentage = Math.round(((currentPageIndex - 1) / visiblePages) * 100);
+        percentage = Math.round(((currentPageIndex - 1) / numberOfVisiblePages) * 100);
       } else {
-        percentage = Math.round((currentPageIndex / visiblePages) * 100);
+        percentage = Math.round((currentPageIndex / numberOfVisiblePages) * 100);
       }
 
       // Set width, text content, colour
