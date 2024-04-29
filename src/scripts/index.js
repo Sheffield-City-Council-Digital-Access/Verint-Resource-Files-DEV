@@ -1298,7 +1298,7 @@ const updateProgressBar = currentPageIndex => {
       // Count visible pages
       // const visiblePages = Array.from(pages).filter(page => !page.classList.contains('dform_hidden')).length;
       const visiblePages = Array.from(pages).filter(page => !page.classList.contains('dform_hidden'));
-      console.log(visiblePages)
+      console.log(visiblePages, visiblePages.length)
       // Check if the last visible page is the last page in the array
       const lastVisiblePage = visiblePages[visiblePages.length - 1];
       const isLastVisiblePage = lastVisiblePage === visiblePages[visiblePages.length - 1];
