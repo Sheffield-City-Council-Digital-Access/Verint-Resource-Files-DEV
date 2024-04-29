@@ -1305,7 +1305,7 @@ const updateProgressBar = currentPageIndex => {
 
       // Calculate percentage
       let percentage = 0;
-      if (isLastVisiblePage) {
+      if (!isLastVisiblePage) {
         // -1 to deduct the current page
         percentage = Math.round(((currentPageIndex - 1) / numberOfVisiblePages) * 100);
       } else {
