@@ -393,7 +393,7 @@ function handleOnReadyEvent(event, kdf) {
   // --- SET FORM START DATE AND TIME -------------------------------------- \\
 
   if (!kdf.form.caseid) {
-    // KDF.setVal('txt_start_date_and_time', formatDateTime().utc);
+    KDF.setVal('txt_start_date_and_time', formatDateTime().utc);
   }
 
   // --- APPLY INTERNAL SYLE CHANGES --------------------------------------- \\
@@ -570,13 +570,11 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   // Get the name for the current page
   $(`div[data-type="page"][data-pos="${currentpageid}"]`).each(function () {
     pageName = this.id.slice(11);
-    console.log('currentpageid', currentpageid);
   });
 
   // Get the name for the current page
   $(`div[data-type="page"][data-pos="${targetpageid}"]`).each(function () {
     pageName = this.id.slice(11);
-    console.log('targetpageid', targetpageid);
   });
 
   checkPageProgress();
@@ -592,9 +590,9 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     }
   }
 
-  // if (pageName === 'complete') {
-  //   KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
-  // }
+  if (pageName === 'complete') {
+    KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
+  }
 
   getAndSetReviewPageData();
 
@@ -653,7 +651,6 @@ function handleObjectIdSet(event, kdf, type, id) {
 
   KDF.setVal('le_reporter_obj_type', type);
   KDF.setVal('le_reporter_obj_id', id);
-  console.log(KDF.getVal('txt_reporter_obj_type'), KDF.getVal('num_reporter_obj_id'));
 
   // Update customer set state
   customerState = 'agent_true';
@@ -854,7 +851,7 @@ function checkPageProgress() {
   const currentPage = $(`#${getCurrentPageId()}`);
 
   const addressField = $(`#${getCurrentPageId()}`).find(".full-address-field");
-  const AddressFieldName = addressField[0].attributes[1].nodeValue;
+  const AddressFieldName = addressField.length ? addressField[0].attributes[1].nodeValue : null;
 
   const radiosAndCheckboxes = $(currentPage)
     .find("input[type='radio']:required, input[type='checkbox']:required")
@@ -973,7 +970,7 @@ const setSelectedAddress = (selectedAddress, action) => {
 
   // Get the output element within the selected-address-container
   const outputElement = addressContainer.querySelector('.selected-address');
-  console.log(outputElement);
+
   // Set the selected address as the content of the output element
   outputElement.textContent = selectedAddress;
 
