@@ -393,7 +393,7 @@ function handleOnReadyEvent(event, kdf) {
   // --- SET FORM START DATE AND TIME -------------------------------------- \\
 
   if (!kdf.form.caseid) {
-    KDF.setVal('txt_start_date_and_time', formatDateTime().utc);
+    // KDF.setVal('txt_start_date_and_time', formatDateTime().utc);
   }
 
   // --- APPLY INTERNAL SYLE CHANGES --------------------------------------- \\
@@ -592,9 +592,9 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     }
   }
 
-  if (pageName === 'complete') {
-    KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
-  }
+  // if (pageName === 'complete') {
+  //   KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
+  // }
 
   getAndSetReviewPageData();
 
