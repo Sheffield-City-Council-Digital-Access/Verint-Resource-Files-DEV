@@ -393,7 +393,7 @@ function handleOnReadyEvent(event, kdf) {
   // --- SET FORM START DATE AND TIME -------------------------------------- \\
 
   if (!kdf.form.caseid) {
-    //   KDF.setVal('txt_start_date_and_time', getCurrentTimeAndDate());
+    KDF.setVal('txt_start_date_and_time', formatDateTime().utc);
   }
 
   // --- APPLY INTERNAL SYLE CHANGES --------------------------------------- \\
@@ -590,6 +590,10 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     if (!KDF.getVal('eml_address')) {
       KDF.hideWidget('ahtm_confirmation_email_send');
     }
+  }
+
+  if (pageName === 'complete') {
+    KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
   }
 
   getAndSetReviewPageData();
@@ -868,7 +872,6 @@ function checkPageProgress() {
   for (let i = 0; i < allFields.length; i++) {
     const field = allFields[i];
     const fieldName = field.name.replace("[]", "");
-    console.log(fieldName);
     if (fieldName.startsWith("mchk_")) {
       const multiCheckbox = $(`[data-name="${fieldName}"]`);
       const checkboxes = multiCheckbox.find('input[type="checkbox"]');
@@ -1497,5 +1500,48 @@ function formatRemoveEccessWhiteSpace(value) {
   return formattedString;
 }
 
+function formatDateTime(dateTime) {
+  if (!dateTime) {
+    dateTime = Math.floor(Date.now() / 1000); // Use current time if no argument
+  }
+
+  // Create a new Date object with options for UK locale and milliseconds
+  const date = new Date(dateTime * 1000);
+
+  const year = date.getFullYear().toString();
+  const month = date.getMonth().toString().padStart(2, '0');
+  const day = date.getDate().toString().padStart(2, '0');
+  const hours = date.getHours().toString().padStart(2, '0');
+  const minutes = date.getMinutes().toString().padStart(2, '0');
+  const seconds = date.getSeconds().toString().padStart(2, '0');
+  const milliseconds = date.getMilliseconds().toString().padStart(3, '0');
+
+  return {
+    base: {
+      year: year,
+      month: month,
+      day: day,
+      hours: hours,
+      minutes: minutes,
+      seconds: seconds,
+      milliseconds: milliseconds,
+      weekday: {
+        short: date.toLocaleDateString('en-GB', { weekday: 'short' }),
+        long: date.toLocaleDateString('en-GB', { weekday: 'long' })
+      },
+    },
+    uk: {
+      date: date.toLocaleString('en-GB', { timeZone: 'Europe/London', year: 'numeric', month: '2-digit', day: '2-digit' }),
+      time: date.toLocaleString('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit', second: '2-digit', millisecond: '3-digit' }),
+      dateTime: date.toLocaleString('en-GB', { timeZone: 'Europe/London', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', millisecond: '3-digit' })
+    },
+    readable: {
+      date: date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }),
+      dayDate: date.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'long', year: 'numeric' })
+    },
+    iso: date.toISOString().replace(/\.\d{3}Z/, 'Z'),
+    utc: `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}Z`
+  };
+}
 
 
