@@ -1288,10 +1288,11 @@ const updateProgressBar = currentPageIndex => {
       const visiblePages = Array.from(pages).filter(page => !page.classList.contains('dform_hidden'));
       // -1 from currentPageIndex for the active page
       // -1 from visiblePages for the confirmation page
-      const percentage = Math.round(((currentPageIndex - 1) / visiblePages.length - 1) * 100);
+      let percentage = Math.round(((currentPageIndex - 1) / visiblePages.length - 1) * 100);
 
       // Set width, text content, colour
-      if (percentage === 0) {
+      if (percentage <= 0) {
+        percentage = 0;
         childDiv.style.width = `max-content`;
         childDiv.style.color = "var(--color-black)";
         childDiv.style.background = "var(--color-empty-pb)";
