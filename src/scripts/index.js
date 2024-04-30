@@ -845,59 +845,60 @@ const getCurrentPageId = () => {
 
 // --- DISABLE BUTTONS ------------------------------------------------------ \\
 
-const checkPageProgress = () => {
-  // Get the current page ID
-  const currentPageId = getCurrentPageId();
+function checkPageProgress() {
+  const requiredInputTypes = "input:required, textarea:required, select:required";
+  const currentPage = $(`#${getCurrentPageId()}`);
 
-  let allFieldsCompleted = true;
+  //   const searchResult = $(currentPage).find(".search-results");
+  //     console.log(searchResult)
 
-  // Get all visible inputs, selects, and textareas on the current page
-  const visibleFields = document.querySelectorAll(`
-    #${currentPageId} input:not(.dform_hidden):not([disabled])
-    #${currentPageId} select:not(.dform_hidden):not([disabled])
-    #${currentPageId} textarea:not(.dform_hidden):not([disabled])
-    #${currentPageId} input[type='radio']:required:not(.dform_hidden):not([disabled])
-    #${currentPageId} input[type='checkbox']:required:not(.dform_hidden):not([disabled])
-  `);
+  const radiosAndCheckboxes = $(currentPage)
+    .find("input[type='radio']:required, input[type='checkbox']:required")
+    .filter(":visible");
 
-  // Check if any required field is empty
-  const fieldChecks = Array.from(visibleFields).map(field => {
-    if (field.tagName.toLowerCase() === 'select') {
-      // If the field is a select element
-      if (field.selectedIndex === -1) {
-        // If no option is selected
-        if (field.hasAttribute('required')) {
-          allFieldsCompleted = false;
-          return false;
-        }
-      } else {
-        // If an option is selected
-        const selectedOption = field.options[field.selectedIndex];
-        if (selectedOption.disabled || selectedOption.value === '') {
-          allFieldsCompleted = false;
-          return false;
-        }
+  const otherFields = $(currentPage)
+    .find(requiredInputTypes)
+    .not("input[type='radio'], input[type='checkbox']")
+    .filter(":visible");
+
+  // Calculate total number of required fields
+  const totalRequiredFields = radiosAndCheckboxes.length + otherFields.length;
+
+  const allFields = [...radiosAndCheckboxes, ...otherFields];
+
+  // Loop through non-empty other fields and collect names
+  let isPageComplete = true;
+  for (let i = 0; i < allFields.length; i++) {
+    const field = allFields[i];
+    const fieldName = field.name.replace("[]", "");
+    console.log(fieldName);
+    if (fieldName.startsWith("mchk_")) {
+      const multiCheckbox = $(`[data-name="${fieldName}"]`);
+      const checkboxes = multiCheckbox.find('input[type="checkbox"]');
+      const anyCheckboxChecked = checkboxes.is(':checked');
+      if (!anyCheckboxChecked) {
+        isPageComplete = false;
       }
     } else {
-      // For other field types, check if the value is empty
-      if (field.hasAttribute('required') && !field.value.trim()) {
-        allFieldsCompleted = false;
-        return false;
+      if (!KDF.getVal(fieldName)) {
+        isPageComplete = false;
       }
     }
-    return true;
-  });
+  }
+  disabledButtonToggle(isPageComplete);
+}
 
-  // Disable next and move buttons if there's a visible required field on the page
-  const nextAndMoveButtons = document.querySelectorAll(`
-    #${currentPageId} button[data-type="next"], 
-    #${currentPageId} button[data-type="move"]
-  `);
-  nextAndMoveButtons.forEach(button => {
-    button.disabled = !allFieldsCompleted; // directly use allFieldsCompleted
-    button.classList.toggle('disabled', !allFieldsCompleted); // toggle disabled class
-  });
-};
+function disabledButtonToggle(disable) {
+  // Check conditions and set button disabled state
+  if (disable) {
+    $('.primary-btn, .anonymous-btn').removeClass('disabled').prop("disabled", false).attr("aria-disabled", "false");  // Enable buttons and remove disabled class
+  } else {
+    if (getCurrentPageId() !== 'dform_page_page_about_you') {
+      $('.anonymous-btn').addClass('disabled').prop("disabled", true).attr("aria-disabled", "true");   // Disable buttons and add disabled class
+    }
+    $('.primary-btn').addClass('disabled').prop("disabled", true).attr("aria-disabled", "true");   // Disable buttons and add disabled class
+  }
+}
 
 // --- SET VALUE TO FIELD ON CURRENT PAGE ----------------------------------- \\
 
