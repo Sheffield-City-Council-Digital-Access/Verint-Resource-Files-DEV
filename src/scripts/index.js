@@ -849,8 +849,8 @@ function checkPageProgress() {
   const requiredInputTypes = "input:required, textarea:required, select:required";
   const currentPage = $(`#${getCurrentPageId()}`);
 
-  //   const searchResult = $(currentPage).find(".search-results");
-  //     console.log(searchResult)
+  const addressField = $(`#${getCurrentPageId()}`).find(".full-address-field");
+  const AddressFieldName = addressField[0].attributes[1].nodeValue;
 
   const radiosAndCheckboxes = $(currentPage)
     .find("input[type='radio']:required, input[type='checkbox']:required")
@@ -861,10 +861,7 @@ function checkPageProgress() {
     .not("input[type='radio'], input[type='checkbox']")
     .filter(":visible");
 
-  // Calculate total number of required fields
-  const totalRequiredFields = radiosAndCheckboxes.length + otherFields.length;
-
-  const allFields = [...radiosAndCheckboxes, ...otherFields];
+  const allFields = [...radiosAndCheckboxes, ...otherFields,];
 
   // Loop through non-empty other fields and collect names
   let isPageComplete = true;
@@ -884,6 +881,9 @@ function checkPageProgress() {
         isPageComplete = false;
       }
     }
+  }
+  if (!KDF.getVal(AddressFieldName)) {
+    isPageComplete = false;
   }
   disabledButtonToggle(isPageComplete);
 }
