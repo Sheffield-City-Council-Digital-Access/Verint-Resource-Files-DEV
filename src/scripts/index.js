@@ -1537,11 +1537,19 @@ function formatDateTime(dateTime) {
     },
     readable: {
       date: date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }),
-      dayDate: date.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'long', year: 'numeric' })
+      dayDate: date.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'long', year: 'numeric' }),
+      time: getReadableTime(date)
     },
     iso: date.toISOString().replace(/\.\d{3}Z/, 'Z'),
     utc: `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}Z`
   };
 }
 
+function getReadableTime(date) {
+  const hours = date.getHours().toString().padStart(2, '0');
+  const minutes = date.getMinutes().toString().padStart(2, '0');
+  const isAmPm = date.getHours() >= 12 ? 'PM' : 'AM';
+  const hours12 = date.getHours() % 12 || 12; // Convert to 12-hour format
 
+  return `${hours12}:${minutes} ${isAmPm}`;
+}
