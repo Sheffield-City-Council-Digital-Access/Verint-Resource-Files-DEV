@@ -861,7 +861,7 @@ function checkPageProgress() {
     .not("input[type='radio'], input[type='checkbox']")
     .filter(":visible");
 
-  const allFields = [...radiosAndCheckboxes, ...otherFields,];
+  const allFields = [...radiosAndCheckboxes, ...otherFields];
 
   // Loop through non-empty other fields and collect names
   let isPageComplete = true;
