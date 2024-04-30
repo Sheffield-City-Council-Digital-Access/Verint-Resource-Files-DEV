@@ -1545,7 +1545,7 @@ function formatDateTime(dateTime) {
   };
 }
 
-function getReadableTime(date) {
+function formatReadableTime(date) {
   const hours = date.getHours().toString().padStart(2, '0');
   const minutes = date.getMinutes().toString().padStart(2, '0');
   const isAmPm = date.getHours() >= 12 ? 'PM' : 'AM';
