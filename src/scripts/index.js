@@ -1526,8 +1526,8 @@ function formatDateTime(dateTime) {
       seconds: seconds,
       milliseconds: milliseconds,
       weekday: {
-        short: date.toLocaleDateString('en-GB', { weekday: 'short' }),
-        long: date.toLocaleDateString('en-GB', { weekday: 'long' })
+        short: date.toLocaleDateString('en-GB', { timeZone: 'Europe/London', weekday: 'short' }),
+        long: date.toLocaleDateString('en-GB', { timeZone: 'Europe/London', weekday: 'long' })
       },
     },
     uk: {
