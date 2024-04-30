@@ -1500,6 +1500,8 @@ function formatRemoveEccessWhiteSpace(value) {
   return formattedString;
 }
 
+// --- FORMATING DATE AND TIME ---------------------------------------------- \\
+
 function formatDateTime(dateTime) {
   if (!dateTime) {
     dateTime = Math.floor(Date.now() / 1000); // Use current time if no argument
@@ -1526,8 +1528,8 @@ function formatDateTime(dateTime) {
       seconds: seconds,
       milliseconds: milliseconds,
       weekday: {
-        short: date.toLocaleDateString('en-GB', { timeZone: 'Europe/London', weekday: 'short' }),
-        long: date.toLocaleDateString('en-GB', { timeZone: 'Europe/London', weekday: 'long' })
+        short: date.toLocaleDateString('en-GB', { weekday: 'short' }),
+        long: date.toLocaleDateString('en-GB', { weekday: 'long' })
       },
     },
     uk: {
