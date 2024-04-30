@@ -1538,7 +1538,7 @@ function formatDateTime(dateTime) {
     readable: {
       date: date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }),
       dayDate: date.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'long', year: 'numeric' }),
-      time: getReadableTime(date)
+      time: formatReadableTime(date)
     },
     iso: date.toISOString().replace(/\.\d{3}Z/, 'Z'),
     utc: `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}Z`
