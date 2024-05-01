@@ -2,6 +2,10 @@
   margin-block: 4rem;
 }
 
+#dform_container .custom-multi-check-container .dform_widget {
+  margin-block: 0;
+}
+
 #dform_container .custom-multi-check-container div>* {
   margin-block: 0;
   padding-block: 0;
