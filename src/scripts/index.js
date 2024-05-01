@@ -847,57 +847,57 @@ const getCurrentPageId = () => {
 // --- DISABLE BUTTONS ------------------------------------------------------ \\
 
 function checkPageProgress() {
-  //   const requiredInputTypes = "input:required, textarea:required, select:required";
-  //   const currentPage = $(`#${getCurrentPageId()}`);
+  const requiredInputTypes = "input:required, textarea:required, select:required";
+  const currentPage = $(`#${getCurrentPageId()}`);
 
-  //   const addressField = $(`#${getCurrentPageId()}`).find(".full-address-field");
-  //   const AddressFieldName = addressField.length ? addressField[0].attributes[1].nodeValue : null;
+  const addressField = $(`#${getCurrentPageId()}`).find(".full-address-field");
+  const AddressFieldName = addressField.length ? addressField[0].attributes[1].nodeValue : null;
 
-  //   const radiosAndCheckboxes = $(currentPage)
-  //     .find("input[type='radio']:required, input[type='checkbox']:required")
-  //     .filter(":visible");
+  const radiosAndCheckboxes = $(currentPage)
+    .find("input[type='radio']:required, input[type='checkbox']:required")
+    .filter(":visible");
 
-  //   const otherFields = $(currentPage)
-  //     .find(requiredInputTypes)
-  //     .not("input[type='radio'], input[type='checkbox']")
-  //     .filter(":visible");
+  const otherFields = $(currentPage)
+    .find(requiredInputTypes)
+    .not("input[type='radio'], input[type='checkbox']")
+    .filter(":visible");
 
-  //   const allFields = [...radiosAndCheckboxes, ...otherFields];
+  const allFields = [...radiosAndCheckboxes, ...otherFields];
 
-  //   // Loop through non-empty other fields and collect names
-  //   let isPageComplete = true;
-  //   for (let i = 0; i < allFields.length; i++) {
-  //     const field = allFields[i];
-  //     const fieldName = field.name.replace("[]", "");
-  //     if (fieldName.startsWith("mchk_")) {
-  //       const multiCheckbox = $(`[data-name="${fieldName}"]`);
-  //       const checkboxes = multiCheckbox.find('input[type="checkbox"]');
-  //       const anyCheckboxChecked = checkboxes.is(':checked');
-  //       if (!anyCheckboxChecked) {
-  //         isPageComplete = false;
-  //       }
-  //     } else {
-  //       if (!KDF.getVal(fieldName)) {
-  //         isPageComplete = false;
-  //       }
-  //     }
-  //   }
-  //   if (!KDF.getVal(AddressFieldName)) {
-  //     isPageComplete = false;
-  //   }
-  //   disabledButtonToggle(isPageComplete);
-  // }
+  // Loop through non-empty other fields and collect names
+  let isPageComplete = true;
+  for (let i = 0; i < allFields.length; i++) {
+    const field = allFields[i];
+    const fieldName = field.name.replace("[]", "");
+    if (fieldName.startsWith("mchk_")) {
+      const multiCheckbox = $(`[data-name="${fieldName}"]`);
+      const checkboxes = multiCheckbox.find('input[type="checkbox"]');
+      const anyCheckboxChecked = checkboxes.is(':checked');
+      if (!anyCheckboxChecked) {
+        isPageComplete = false;
+      }
+    } else {
+      if (!KDF.getVal(fieldName)) {
+        isPageComplete = false;
+      }
+    }
+  }
+  if (!KDF.getVal(AddressFieldName)) {
+    isPageComplete = false;
+  }
+  disabledButtonToggle(isPageComplete);
+}
 
-  // function disabledButtonToggle(disable) {
-  //   // Check conditions and set button disabled state
-  //   if (disable) {
-  //     $('.primary-btn, .anonymous-btn').removeClass('disabled').prop("disabled", false).attr("aria-disabled", "false");  // Enable buttons and remove disabled class
-  //   } else {
-  //     if (getCurrentPageId() !== 'dform_page_page_about_you') {
-  //       $('.anonymous-btn').addClass('disabled').prop("disabled", true).attr("aria-disabled", "true");   // Disable buttons and add disabled class
-  //     }
-  //     $('.primary-btn').addClass('disabled').prop("disabled", true).attr("aria-disabled", "true");   // Disable buttons and add disabled class
-  //   }
+function disabledButtonToggle(disable) {
+  // Check conditions and set button disabled state
+  if (disable) {
+    $('.primary-btn, .anonymous-btn').removeClass('disabled').prop("disabled", false).attr("aria-disabled", "false");  // Enable buttons and remove disabled class
+  } else {
+    if (getCurrentPageId() !== 'dform_page_page_about_you') {
+      $('.anonymous-btn').addClass('disabled').prop("disabled", true).attr("aria-disabled", "true");   // Disable buttons and add disabled class
+    }
+    $('.primary-btn').addClass('disabled').prop("disabled", true).attr("aria-disabled", "true");   // Disable buttons and add disabled class
+  }
 }
 
 // --- SET VALUE TO FIELD ON CURRENT PAGE ----------------------------------- \\
