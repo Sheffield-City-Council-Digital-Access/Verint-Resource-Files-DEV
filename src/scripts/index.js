@@ -24,7 +24,6 @@ function handleInitialisingEvent(addDateMessages) {
   // --- ADD TAB TITLE AND ICON  ------------------------------------------- \\
 
   (() => {
-    console.log('run')
     // Set form title
     const formTitle = document.getElementById("dform_widget_le_title").value;
 
