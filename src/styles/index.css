@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('./layout.css');
+/* @import url('./layout.css');
 @import url('./fonts.css');
 
 @import url('./components/formHeader.css');
@@ -19,7 +19,7 @@
 @import url('./components/accordion.css');
 
 @import url('./components/customDate.css');
-@import url('./components/customSearch.css');
+@import url('./components/customSearch.css'); */
 
 :root {
   /* ----- COLOURS ---------------------------------------------------------- */
