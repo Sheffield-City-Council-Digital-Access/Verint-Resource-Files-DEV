@@ -48,6 +48,26 @@ function handleInitialisingEvent(addDateMessages) {
     }
   })();
 
+  // --- ADD LOADiNG SPINNER  ---------------------------------------------- \\
+
+  (() => {
+    // Select the target element
+    const targetDiv = document.getElementById("dform_lockMsg");
+
+    // Create the spinner element
+    const spinnerDiv = document.createElement("div");
+    spinnerDiv.classList.add("lds-spinner");
+
+    // Add child elements to the spinner
+    for (let i = 0; i < 12; i++) {
+      const dot = document.createElement("div");
+      spinnerDiv.appendChild(dot);
+    }
+
+    // Insert the spinner element inside the target div
+    targetDiv.appendChild(spinnerDiv);
+  })();
+
   if (KDF.kdf().access === 'citizen') {
     // --- ADD FORM HEADER ------------------------------------------------- \\
     (() => {
@@ -1552,3 +1572,6 @@ function formatReadableTime(date) {
 
   return `${hours12}:${minutes} ${isAmPm}`;
 }
+
+
+

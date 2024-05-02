@@ -2,6 +2,8 @@
 @import url('./layout.css');
 @import url('./fonts.css');
 
+@import url('./components/loadingSpinner.css');
+
 @import url('./components/formHeader.css');
 @import url('./components/formTitle.css');
 @import url('./components/formFooter.css');
@@ -89,6 +91,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 ::selection {
