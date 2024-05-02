@@ -2,7 +2,7 @@
 @import url('./layout.css');
 @import url('./fonts.css');
 
-@import url('./components/loadingSpinner.css');
+/* @import url('./components/loadingSpinner.css'); */
 
 @import url('./components/formHeader.css');
 @import url('./components/formTitle.css');
