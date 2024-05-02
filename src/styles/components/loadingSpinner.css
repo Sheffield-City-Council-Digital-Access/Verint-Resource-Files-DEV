@@ -1,4 +1,4 @@
-#dform_container #dform_lockMsg {
+/* #dform_container #dform_lockMsg {
   z-index: 2000;
   padding: 10px;
   width: max-content;
@@ -108,4 +108,4 @@
   100% {
     opacity: 0;
   }
-}
+} */
