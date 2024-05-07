@@ -453,7 +453,11 @@ function handleOnReadyEvent(event, kdf) {
   // --- HANDLE ADDRESS LOOKUP --------------------------------------------- \\
 
   $('.search-results').on('change', event => {
-    KDF.customdata('retrieve-property', event.target.id, true, true, { propertyId: event.target.value });
+    if (event.target.value) {
+      KDF.customdata('retrieve-property', event.target.id, true, true, { propertyId: event.target.value });
+    } else {
+      // show validation error
+    }
   });
 
   $('.address-details').on('click', event => {
