@@ -399,9 +399,9 @@ function handleInitialisingEvent(addDateMessages) {
 
   // --- ADD CUSTOM DATE MASSAGES ------------------------------------------ \\
 
-  if (addDateMessages) {
-    Object.assign(dateMessages, addDateMessages);
-  }
+  // if (addDateMessages) {
+  //   Object.assign(dateMessages, addDateMessages);
+  // }
 }
 
 // --- HANDLE ON READY EVENT ----------------------------------------------- \\
