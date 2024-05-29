@@ -23,50 +23,50 @@ function handleInitialisingEvent(addDateMessages) {
 
   // --- ADD TAB TITLE AND ICON  ------------------------------------------- \\
 
-  (() => {
-    // Set form title
-    const formTitle = document.getElementById("dform_widget_le_title").value;
+  // (() => {
+  //   // Set form title
+  //   const formTitle = document.getElementById("dform_widget_le_title").value;
 
-    // Set document title
-    document.title = formTitle;
+  //   // Set document title
+  //   document.title = formTitle;
 
-    // Update document title after a short delay to ensure it's set properly
-    setTimeout(() => {
-      document.title = formTitle;
-    }, 10);
+  //   // Update document title after a short delay to ensure it's set properly
+  //   setTimeout(() => {
+  //     document.title = formTitle;
+  //   }, 10);
 
-    // Update favicon
-    const favicon = document.querySelector("link[rel~='icon']");
-    if (favicon) {
-      favicon.href = "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
-    } else {
-      // If favicon element doesn't exist, create it and append to head
-      const newFavicon = document.createElement("link");
-      newFavicon.rel = "icon";
-      newFavicon.href = "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
-      document.head.appendChild(newFavicon);
-    }
-  })();
+  //   // Update favicon
+  //   const favicon = document.querySelector("link[rel~='icon']");
+  //   if (favicon) {
+  //     favicon.href = "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
+  //   } else {
+  //     // If favicon element doesn't exist, create it and append to head
+  //     const newFavicon = document.createElement("link");
+  //     newFavicon.rel = "icon";
+  //     newFavicon.href = "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
+  //     document.head.appendChild(newFavicon);
+  //   }
+  // })();
 
   // --- ADD LOADiNG SPINNER  ---------------------------------------------- \\
 
-  (() => {
-    // Select the target element
-    const targetDiv = document.getElementById("dform_lockMsg");
+  // (() => {
+  //   // Select the target element
+  //   const targetDiv = document.getElementById("dform_lockMsg");
 
-    // Create the spinner element
-    const spinnerDiv = document.createElement("div");
-    spinnerDiv.classList.add("lds-spinner");
+  //   // Create the spinner element
+  //   const spinnerDiv = document.createElement("div");
+  //   spinnerDiv.classList.add("lds-spinner");
 
-    // Add child elements to the spinner
-    for (let i = 0; i < 12; i++) {
-      const dot = document.createElement("div");
-      spinnerDiv.appendChild(dot);
-    }
+  //   // Add child elements to the spinner
+  //   for (let i = 0; i < 12; i++) {
+  //     const dot = document.createElement("div");
+  //     spinnerDiv.appendChild(dot);
+  //   }
 
-    // Insert the spinner element inside the target div
-    targetDiv.appendChild(spinnerDiv);
-  })();
+  //   // Insert the spinner element inside the target div
+  //   targetDiv.appendChild(spinnerDiv);
+  // })();
 
   if (KDF.kdf().access === 'citizen') {
     // --- ADD FORM HEADER ------------------------------------------------- \\
@@ -399,9 +399,9 @@ function handleInitialisingEvent(addDateMessages) {
 
   // --- ADD CUSTOM DATE MASSAGES ------------------------------------------ \\
 
-  // if (addDateMessages) {
-  //   Object.assign(dateMessages, addDateMessages);
-  // }
+  if (addDateMessages) {
+    Object.assign(dateMessages, addDateMessages);
+  }
 }
 
 // --- HANDLE ON READY EVENT ----------------------------------------------- \\
