@@ -125,7 +125,8 @@ p {
   margin-block: 1.6rem;
 }
 
-ul {
+ul,
+ol {
   padding-left: 4rem;
 }
 
