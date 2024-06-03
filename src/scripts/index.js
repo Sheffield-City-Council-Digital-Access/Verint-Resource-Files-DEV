@@ -744,7 +744,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       KDF.showError('Customer ID Not Set');
       return;
     }
-    KDF.setCustomerID(customerid, false, KDF.gotoNextPage()); // < don't think this works for citizen access
+    KDF.setCustomerID(customerid, false, KDF.gotoNextPage());
     // KDF.setVal('num_customer_id', customerid);
     // KDF.gotoNextPage();
   }
@@ -752,8 +752,15 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   if (action === 'search-property') {
     const { propertySearchResult } = response.data;
     if (propertySearchResult.length > 0) {
+      const formattedSearchResult = propertySearchResult.map((addressLine) => {
+        // Create a copy to avoid mutating the original object
+        const newAddressLine = { ...addressLine };
+        const parts = newAddressLine.label.split(",");
+        newAddressLine.label = formatTitleCase(parts[0]) + "," + parts.slice(1).join(",");
+        return newAddressLine;
+      });
       setValuesToInputFields([
-        { alias: "searchResult", value: propertySearchResult },
+        { alias: "searchResult", value: formattedSearchResult },
       ]);
       showHideInputFields([
         { alias: "searchResult", display: true },
