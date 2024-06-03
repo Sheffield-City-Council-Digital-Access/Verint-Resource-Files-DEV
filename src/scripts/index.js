@@ -613,6 +613,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
 
   if (pageName === 'complete') {
+    KDF.unlock();
     $("form.dform").css({
       "margin": "8px",
       "padding": "16px",
