@@ -1267,10 +1267,8 @@ function validDate(id, day, month, year) {
 // --- PROGRESS BAR --------------------------------------------------------- \\
 
 const updateProgressBar = currentPageIndex => {
-  console.log('fn: updateProgressBar', currentPageIndex)
   // Check if the old ID exists
   if (document.getElementById("dform_progressbar")) {
-    console.log('replace: dform_progressbar, with: dform_progressbar_sheffield')
     // Select the element by its current ID
     const element = document.getElementById("dform_progressbar");
 
@@ -1280,20 +1278,17 @@ const updateProgressBar = currentPageIndex => {
 
   // Check if the new ID exists
   if (document.getElementById("dform_progressbar_sheffield")) {
-    console.log('if: dform_progressbar_sheffield')
     const pageHolderDiv = document.getElementById("dform_pageholder");
     const parentDiv = document.getElementById("dform_progressbar_sheffield");
 
     // Check for child div and create if it doesn't exist
     let childDiv = parentDiv.querySelector("div");
     if (!childDiv) {
-      console.log('if: !childDiv')
       childDiv = document.createElement("div");
       parentDiv.appendChild(childDiv);
     }
 
     if (parentDiv && childDiv && pageHolderDiv) {
-      console.log('if: parentDiv && childDiv && pageHolderDiv')
       // Get all pages
       const pages = pageHolderDiv.querySelectorAll('.dform_page');
 
@@ -1302,7 +1297,6 @@ const updateProgressBar = currentPageIndex => {
       // -1 from currentPageIndex for the active page
       // -1 from visiblePages for the confirmation page
       let percentage = Math.round(((currentPageIndex - 1) / (visiblePages.length - 1)) * 100);
-      console.log('percentage', percentage, currentPageIndex, visiblePages.length)
       // Set width, text content, colour
       if (percentage <= 0) {
         percentage = 0;
