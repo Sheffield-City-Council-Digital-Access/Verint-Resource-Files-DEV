@@ -613,6 +613,11 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
 
   if (pageName === 'complete') {
+    $("form.dform").css({
+      "margin": "8px",
+      "padding": "16px",
+      "background": "var(--color-white)"
+    });
     KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
   }
 
