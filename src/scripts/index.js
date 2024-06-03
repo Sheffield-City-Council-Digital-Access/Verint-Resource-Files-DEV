@@ -1267,6 +1267,7 @@ function validDate(id, day, month, year) {
 // --- PROGRESS BAR --------------------------------------------------------- \\
 
 const updateProgressBar = currentPageIndex => {
+  console.log('fn: updateProgressBar', currentPageIndex)
   // Check if the old ID exists
   if (document.getElementById("dform_progressbar")) {
     // Select the element by its current ID
