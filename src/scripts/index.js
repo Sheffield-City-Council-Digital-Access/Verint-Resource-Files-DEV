@@ -772,8 +772,6 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
   if (action === 'retrieve-property') {
     const { property, streetName, city, postcode, fullAddress } = response.data;
-    const parts = fullAddress.split(",");
-    fullAddress = formatTitleCase(parts[0]) + "," + parts.slice(1).join(",");
     showHideInputFields([
       { alias: "searchResult", display: false },
     ]);
@@ -782,7 +780,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       { alias: "streetName", value: formatTitleCase(streetName) },
       { alias: "city", value: city },
       { alias: "postCode", value: postcode },
-      { alias: "fullAddress", value: fullAddress },
+      { alias: "fullAddress", value: `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${city}, ${postcode}` },
     ]);
     setSelectedAddress(fullAddress, 'show');
   }
