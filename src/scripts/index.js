@@ -771,7 +771,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   }
 
   if (action === 'retrieve-property') {
-    const { property, streetName, city, postcode, fullAddress, propertyId, uprn, streetId, usrn } = response.data;
+    let { property, streetName, city, postcode, fullAddress, propertyId, uprn, streetId, usrn } = response.data;
     property = formatTitleCase(property);
     streetName = formatTitleCase(streetName);
     fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${city}, ${postcode}`;
