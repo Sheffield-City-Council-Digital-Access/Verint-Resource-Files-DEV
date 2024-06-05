@@ -614,6 +614,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
 
   if (pageName === 'complete') {
     KDF.unlock();
+    KDF.makeWritable();
     $("form.dform").css({
       "margin": "8px",
       "padding": "16px",
@@ -875,7 +876,7 @@ function handleFomComplate(event, kdf) {
     KDF.hideMessages();
   }, 0);
 
-  $("#dform_progressbar_sheffield, #dform_ref_display").hide();
+  // $("#dform_progressbar_sheffield, #dform_ref_display").hide();
 
 }
 
