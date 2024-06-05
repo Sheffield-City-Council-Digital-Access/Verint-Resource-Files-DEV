@@ -771,16 +771,23 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   }
 
   if (action === 'retrieve-property') {
-    const { property, streetName, city, postcode, fullAddress } = response.data;
+    const { property, streetName, city, postcode, fullAddress, propertyId, uprn, streetId, usrn } = response.data;
+    property = formatTitleCase(property);
+    streetName = formatTitleCase(streetName);
+    fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${city}, ${postcode}`;
     showHideInputFields([
       { alias: "searchResult", display: false },
     ]);
     setValuesToInputFields([
-      { alias: "property", value: formatTitleCase(property) },
-      { alias: "streetName", value: formatTitleCase(streetName) },
+      { alias: "property", value: property },
+      { alias: "streetName", value: streetName },
       { alias: "city", value: city },
       { alias: "postCode", value: postcode },
-      { alias: "fullAddress", value: `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${city}, ${postcode}` },
+      { alias: "fullAddress", value: fullAddress },
+      { alias: "uprn", value: uprn },
+      { alias: "usrn", value: usrn },
+      { alias: "siteName", value: streetName },
+      { alias: "siteCode", value: usrn },
     ]);
     setSelectedAddress(fullAddress, 'show');
   }
