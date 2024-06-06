@@ -876,7 +876,7 @@ function handleFomComplate(event, kdf) {
     KDF.hideMessages();
   }, 0);
 
-  // $("#dform_progressbar_sheffield, #dform_ref_display").hide();
+  $("#dform_progressbar_sheffield, #dform_ref_display").hide();
 
 }
 

@@ -25,6 +25,10 @@ form.dform {
   padding: 0;
 }
 
+#dform_controls .container> {
+  display: none;
+}
+
 #dform_container .container>.twelve {
   float: unset;
 }
