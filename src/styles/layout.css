@@ -25,7 +25,7 @@ form.dform {
   padding: 0;
 }
 
-#dform_controls .container> {
+#dform_controls>div.container {
   display: none;
 }
 
