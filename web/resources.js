@@ -1,11 +1,14 @@
 function initiateStartUp() {
   // Function designed to run before the form is ready
 
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PBGBFQVW');
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-PBGBFQVW');
 
   if (!portal) {
     setPageHeaderAndFooter(KDF.getVal("txt_formtitle"));
@@ -63,10 +66,9 @@ function initiateReady(event, kdf, progressBar) {
       if (e.type === "keyup") {
         inputDate(
           this.id,
-          `${
-            this.id === "dform_widget_num_date_dd_another"
-              ? "dform_widget_num_date_mm_another"
-              : "dform_widget_num_date_mm"
+          `${this.id === "dform_widget_num_date_dd_another"
+            ? "dform_widget_num_date_mm_another"
+            : "dform_widget_num_date_mm"
           }`,
           e.which
         );
@@ -81,18 +83,16 @@ function initiateReady(event, kdf, progressBar) {
   $("#dform_widget_num_date_mm, #dform_widget_num_date_mm_another").on(
     "keyup focusout",
     function (e) {
-      const another = `${
-        this.id === "dform_widget_num_date_mm_another" ? "_another" : ""
-      }`;
+      const another = `${this.id === "dform_widget_num_date_mm_another" ? "_another" : ""
+        }`;
       const dd = $(`#dform_widget_num_date_dd${another}`).val();
       const yy = $(`#dform_widget_num_date_yy${another}`).val();
       if (e.type === "keyup") {
         inputDate(
           this.id,
-          `${
-            this.id === "dform_widget_num_date_mm_another"
-              ? "dform_widget_num_date_yy_another"
-              : "dform_widget_num_date_yy"
+          `${this.id === "dform_widget_num_date_mm_another"
+            ? "dform_widget_num_date_yy_another"
+            : "dform_widget_num_date_yy"
           }`,
           e.which
         );
@@ -123,9 +123,8 @@ function initiateReady(event, kdf, progressBar) {
     .attr("min", new Date().getFullYear() - 120)
     .attr("max", new Date().getFullYear())
     .on("keyup focusout", function (e) {
-      const another = `${
-        this.id === "dform_widget_num_date_yy_another" ? "_another" : ""
-      }`;
+      const another = `${this.id === "dform_widget_num_date_yy_another" ? "_another" : ""
+        }`;
       const dd =
         $(`#dform_widget_num_date_dd${another}`).val() !== "" ? true : false;
       const mm =
@@ -144,9 +143,8 @@ function initiateReady(event, kdf, progressBar) {
   $("#dform_widget_date_field, #dform_widget_date_field_another").on(
     "change focusout",
     function () {
-      const another = `${
-        this.id === "dform_widget_date_field_another" ? "_another" : ""
-      }`;
+      const another = `${this.id === "dform_widget_date_field_another" ? "_another" : ""
+        }`;
       const dd = $(`#dform_widget_num_date_dd${another}`).val();
       const mm = $(`#dform_widget_num_date_mm${another}`).val();
       const yy = $(`#dform_widget_num_date_yy${another}`).val();
@@ -173,7 +171,7 @@ function initiatePageChange(event, kdf, currentpageid, targetpageid) {
   $(`div[data-type="page"][data-pos="${targetpageid}"]`).each(function () {
     pageID = this.id.slice(11);
   });
-  
+
   setTimeout(setHtmlHead(KDF.getVal("txt_formtitle")), 0);
   setProgressBarWidthAndLabel();
   getAndSetReviewPageData();
@@ -192,7 +190,7 @@ function handleCustomActions(action, response) {
   if (action === 'search-national-address') {
     nationalAddress = true;
     nationalAddressArray = [];
-    
+
     const toTitleCase = (str) => {
       return str.toLowerCase().replace(/(?:^|\s|-)\S/g, (match) => {
         return match.toUpperCase();
@@ -213,19 +211,19 @@ function handleCustomActions(action, response) {
           result.townCity,
           result.postcode
         ].join(', ');
-    
+
         nationalAddressArray = response.data.searchResults;
-    
+
         const option = document.createElement('option');
-    
+
         option.textContent = [
           result.addressNumber + ' ' + result.addressLine1,
           result.townCity,
           result.postcode
         ].join(', ');
-    
+
         option.value = result.value;
-    
+
         selectList.appendChild(option);
       }
       KDF.showWidget(`sel_property_search_result_${pageID}`);
@@ -398,22 +396,22 @@ function handleCustomActions(action, response) {
       KDF.setVal(
         `txt_fulladdress_${pageID}`,
         val.number +
-          " " +
-          val.streetName +
-          ", " +
-          val.city +
-          ", " +
-          val.postcode
+        " " +
+        val.streetName +
+        ", " +
+        val.city +
+        ", " +
+        val.postcode
       );
       KDF.setVal(
         "txt_fulladdress",
         val.number +
-          " " +
-          val.streetName +
-          ", " +
-          val.city +
-          ", " +
-          val.postcode
+        " " +
+        val.streetName +
+        ", " +
+        val.city +
+        ", " +
+        val.postcode
       );
       KDF.setVal(`txt_streetdescription${pageID}`, val.streetName);
       KDF.setVal(`txt_usrn_${pageID}`, val.usrn);
@@ -445,7 +443,7 @@ function setPageHeaderAndFooter(formTitle) {
 
   body.insertAdjacentHTML(
     "afterbegin",
-      `<header role="banner">
+    `<header role="banner">
         <div class="scc_wrap" id="top">
           <div class="scc_logo">
             <a href="https://www.sheffield.gov.uk" title="Back to homepage">
@@ -720,27 +718,38 @@ function checkCurrentPageFields() {
     var currentPage = $('.dform_page[data-active="true"]:visible');
     // get only visible fields on current page
 
+    var filesUploads = $(currentPage)
+      .find("input[type='file']:required")
+      .filter(":visible");
+
     var radiosAndCheckboxes = $(currentPage)
       .find("input[type='radio']:required, input[type='checkbox']:required")
       .filter(":visible");
 
     var otherFields = $(currentPage)
       .find(requiredInputTypes)
-      .not("input[type='radio'], input[type='checkbox']")
+      .not("input[type='radio'], input[type='checkbox'], input[type='file']")
       .filter(":visible");
 
     // pass fields to toggle function for validation
-    disabledButtonToggle(radiosAndCheckboxes, otherFields);
+    disabledButtonToggle(radiosAndCheckboxes, otherFields, filesUploads);
   }, 0);
 }
 
-function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
+function disabledButtonToggle(radiosAndCheckboxes, otherFields, filesUploads) {
   // set all fields to filled by default
   let allRadiosAndCheckboxesFilled = true;
   //   let allOtherFieldsFilled = true;
   const allOtherFieldsFilled = Array.from(otherFields).every(
     (field) => field.value.trim() !== ""
   );
+
+  const filesUploaded = Array.from(filesUploads).every(
+    (field) => {
+      return field.disabled;
+    }
+  );
+
   // check radio/checkboxes
   // 1 - get HTML names of radio/checbox groups
   let radioAndCheckboxNames = [];
@@ -792,6 +801,7 @@ function disabledButtonToggle(radiosAndCheckboxes, otherFields) {
   if (
     allOtherFieldsFilled &&
     allRadiosAndCheckboxesFilled &&
+    filesUploaded &&
     errorMessagesVisible === 0 &&
     ineligibleAlertPanelVisible === 0
   ) {
@@ -914,46 +924,46 @@ function handleAddressSearchFunctionality(event, kdf) {
       resetErrorMessage(
         this.name.substring(0, this.name.length - 2),
         (pageID === "page_about_you") ? 'Enter your postcode in the correct format' : 'Enter the postcode in the correct format'
-      );      
+      );
       if (this.value)
         if (nationalAddress) {
-              const selectedValue = this.value;
-              const selectedAddress = nationalAddressArray.find(result => result.value === selectedValue);
-              
-              if (selectedAddress) {
-                if (pageID === "page_about_you") {
-                  KDF.setVal('txt_cusaddressnumber', selectedAddress.addressNumber);
-                  KDF.setVal('txt_cusaddressline1', selectedAddress.addressLine1);
-                  KDF.setVal('txt_custown', selectedAddress.townCity);
-                  KDF.setVal('txt_cuspostcode', selectedAddress.postcode);
-                  KDF.setVal('txt_cusfulladdress', `${selectedAddress.addressNumber} ${selectedAddress.addressLine1}, ${selectedAddress.townCity}, ${selectedAddress.postcode}`);
-                  KDF.hideWidget(`sel_property_search_result_${pageID}`);
-                  KDF.showWidget(`ahtm_fulladdress_${pageID}`);
-                  $(`#ahtm_fulladdress_page_${pageID}`).focus();
-                } else if (pageID === "page_about_another") {
-                  KDF.setVal('txt_cusaddressnumber_another', selectedAddress.addressNumber);
-                  KDF.setVal('txt_cusaddressline1_another', selectedAddress.addressLine1);
-                  KDF.setVal('txt_custown_another', selectedAddress.townCity);
-                  KDF.setVal('txt_cuspostcode_another', selectedAddress.postcode);
-                  KDF.setVal('txt_cusfulladdress_another', `${selectedAddress.addressNumber} ${selectedAddress.addressLine1}, ${selectedAddress.townCity}, ${selectedAddress.postcode}`);
-                  KDF.hideWidget(`sel_property_search_result_${pageID}`);
-                  KDF.showWidget(`ahtm_fulladdress_${pageID}`);
-                  $(`#ahtm_fulladdress_page_${pageID}`).focus();
-                } else {
-                  KDF.setVal(`txt_addressnumber_${pageID}`, selectedAddress.addressNumber);
-                  KDF.setVal(`txt_addressline1_${pageID}`, selectedAddress.addressLine1);
-                  KDF.setVal(`txt_town_${pageID}`, selectedAddress.townCity);
-                  KDF.setVal(`txt_postcode_${pageID}`, selectedAddress.postcode);
-                  KDF.setVal(`txt_fulladdress_${pageID}`, `${selectedAddress.addressNumber} ${selectedAddress.addressLine1}, ${selectedAddress.townCity}, ${selectedAddress.postcode}`);
-                  KDF.showWidget(`ahtm_fulladdress_${pageID}`);
-                  KDF.hideWidget(`sel_property_search_result_${pageID}`);
-                  KDF.showSection(`area_address_selected_${pageID}`);
-                  KDF.showSection(`area_lacation_description_${pageID}`);
-                  $(`#dform_widget_html_ahtm_fulladdress_${pageID}`).focus();
-                }
-              }
+          const selectedValue = this.value;
+          const selectedAddress = nationalAddressArray.find(result => result.value === selectedValue);
+
+          if (selectedAddress) {
+            if (pageID === "page_about_you") {
+              KDF.setVal('txt_cusaddressnumber', selectedAddress.addressNumber);
+              KDF.setVal('txt_cusaddressline1', selectedAddress.addressLine1);
+              KDF.setVal('txt_custown', selectedAddress.townCity);
+              KDF.setVal('txt_cuspostcode', selectedAddress.postcode);
+              KDF.setVal('txt_cusfulladdress', `${selectedAddress.addressNumber} ${selectedAddress.addressLine1}, ${selectedAddress.townCity}, ${selectedAddress.postcode}`);
+              KDF.hideWidget(`sel_property_search_result_${pageID}`);
+              KDF.showWidget(`ahtm_fulladdress_${pageID}`);
+              $(`#ahtm_fulladdress_page_${pageID}`).focus();
+            } else if (pageID === "page_about_another") {
+              KDF.setVal('txt_cusaddressnumber_another', selectedAddress.addressNumber);
+              KDF.setVal('txt_cusaddressline1_another', selectedAddress.addressLine1);
+              KDF.setVal('txt_custown_another', selectedAddress.townCity);
+              KDF.setVal('txt_cuspostcode_another', selectedAddress.postcode);
+              KDF.setVal('txt_cusfulladdress_another', `${selectedAddress.addressNumber} ${selectedAddress.addressLine1}, ${selectedAddress.townCity}, ${selectedAddress.postcode}`);
+              KDF.hideWidget(`sel_property_search_result_${pageID}`);
+              KDF.showWidget(`ahtm_fulladdress_${pageID}`);
+              $(`#ahtm_fulladdress_page_${pageID}`).focus();
+            } else {
+              KDF.setVal(`txt_addressnumber_${pageID}`, selectedAddress.addressNumber);
+              KDF.setVal(`txt_addressline1_${pageID}`, selectedAddress.addressLine1);
+              KDF.setVal(`txt_town_${pageID}`, selectedAddress.townCity);
+              KDF.setVal(`txt_postcode_${pageID}`, selectedAddress.postcode);
+              KDF.setVal(`txt_fulladdress_${pageID}`, `${selectedAddress.addressNumber} ${selectedAddress.addressLine1}, ${selectedAddress.townCity}, ${selectedAddress.postcode}`);
+              KDF.showWidget(`ahtm_fulladdress_${pageID}`);
+              KDF.hideWidget(`sel_property_search_result_${pageID}`);
+              KDF.showSection(`area_address_selected_${pageID}`);
+              KDF.showSection(`area_lacation_description_${pageID}`);
+              $(`#dform_widget_html_ahtm_fulladdress_${pageID}`).focus();
+            }
+          }
         } else {
-            KDF.customdata("retrieve-address-web", this.id, true, true, { search_property: this.value });
+          KDF.customdata("retrieve-address-web", this.id, true, true, { search_property: this.value });
         }
     }
   });
@@ -978,7 +988,7 @@ function handleAddressSearchFunctionality(event, kdf) {
     }
   });
 
- $(".find-address").click(function () {
+  $(".find-address").click(function () {
     $(`#sel_property_search_result_${pageID}`).empty();
     KDF.hideWidget(`ahtm_address_search_result_error_${pageID}`);
     KDF.hideWidget("ahtm_current_location_error");
@@ -1076,7 +1086,7 @@ function handleAddressSearchFunctionality(event, kdf) {
       (pageID === "page_about_you") ? 'Enter your postcode in the correct format' : 'Enter the postcode in the correct format'
     );
     enterAddressManually();
-  });  
+  });
 
   $(".addressNumber, .addressLine1").change(function (e) {
     //  field = e.target.id.substring(13);
@@ -1314,36 +1324,36 @@ function handleAddressSearchFunctionality(event, kdf) {
         KDF.setVal(
           "txt_cusfulladdress",
           KDF.getVal("txt_cusaddressnumber") +
-            " " +
-            KDF.getVal("txt_cusaddressline1") +
-            ", " +
-            KDF.getVal("txt_custown") +
-            ", " +
-            KDF.getVal("txt_cuspostcode")
+          " " +
+          KDF.getVal("txt_cusaddressline1") +
+          ", " +
+          KDF.getVal("txt_custown") +
+          ", " +
+          KDF.getVal("txt_cuspostcode")
         );
       } else if (pageID === "page_about_another") {
         KDF.setWidgetNotRequired("txt_search_property_page_about_another");
         KDF.setVal(
           "txt_cusfulladdress_another",
           KDF.getVal("txt_cusaddressnumber_another") +
-            " " +
-            KDF.getVal("txt_cusaddressline1_another") +
-            ", " +
-            KDF.getVal("txt_custown_another") +
-            ", " +
-            KDF.getVal("txt_cuspostcode_another")
+          " " +
+          KDF.getVal("txt_cusaddressline1_another") +
+          ", " +
+          KDF.getVal("txt_custown_another") +
+          ", " +
+          KDF.getVal("txt_cuspostcode_another")
         );
       } else {
         KDF.setWidgetNotRequired(`txt_search_property_${pageID}`);
         KDF.setVal(
           `txt_fulladdress_${pageID}`,
           KDF.getVal(`txt_addressnumber_${pageID}`) +
-            " " +
-            KDF.getVal(`txt_addressline1_${pageID}`) +
-            ", " +
-            KDF.getVal(`txt_town_${pageID}`) +
-            ", " +
-            KDF.getVal(`txt_postcode_${pageID}`)
+          " " +
+          KDF.getVal(`txt_addressline1_${pageID}`) +
+          ", " +
+          KDF.getVal(`txt_town_${pageID}`) +
+          ", " +
+          KDF.getVal(`txt_postcode_${pageID}`)
         );
       }
       progressAction(action);
@@ -1532,21 +1542,21 @@ function submitForm() {
   if (KDF.getVal('le_associated_obj_id')) {
     // KDF.save();
     KDF.markComplete();
-    KDF.gotoPage('page_complete',true,true,true);
+    KDF.gotoPage('page_complete', true, true, true);
   } else {
     KDF.custom(
       "kdf-save-web",
       "_submit_function",
       textFieldNames +
-        numberFieldNames +
-        selectFieldNames +
-        checkFieldNames +
-        radioFieldNames +
-        emailFieldNames +
-        telFieldNames +
-        dateFieldNames +
-        timeFieldNames +
-        "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type",
+      numberFieldNames +
+      selectFieldNames +
+      checkFieldNames +
+      radioFieldNames +
+      emailFieldNames +
+      telFieldNames +
+      dateFieldNames +
+      timeFieldNames +
+      "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type",
       "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type",
       true,
       true,
@@ -1633,20 +1643,20 @@ function submitFormCustom() {
   $(timeFields).each(function () {
     timeFieldNames += $(this).prop("name") + ",";
   });
-  
+
   KDF.custom(
     "kdf-save-custom",
     "_submit_function",
     textFieldNames +
-      numberFieldNames +
-      selectFieldNames +
-      checkFieldNames +
-      radioFieldNames +
-      emailFieldNames +
-      telFieldNames +
-      dateFieldNames +
-      timeFieldNames +
-      "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,interactionid",
+    numberFieldNames +
+    selectFieldNames +
+    checkFieldNames +
+    radioFieldNames +
+    emailFieldNames +
+    telFieldNames +
+    dateFieldNames +
+    timeFieldNames +
+    "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,interactionid",
     "le_channel,le_eventcode,le_title,le_description,le_queue,le_associated_obj_type,le_form_name,interactionid",
     true,
     true,
@@ -1661,20 +1671,20 @@ function submitFormHighways() {
     KDF.setVal(
       "le_title",
       "Report about " +
-        KDF.getVal("level_1_data") +
-        " - " +
-        KDF.getVal("level_2_data") +
-        " - " +
-        KDF.getVal("level_3_data")
+      KDF.getVal("level_1_data") +
+      " - " +
+      KDF.getVal("level_2_data") +
+      " - " +
+      KDF.getVal("level_3_data")
     );
   } else {
     if (KDF.getVal("level_2_data") !== "") {
       KDF.setVal(
         "le_title",
         "Report about " +
-          KDF.getVal("level_1_data") +
-          " - " +
-          KDF.getVal("level_2_data")
+        KDF.getVal("level_1_data") +
+        " - " +
+        KDF.getVal("level_2_data")
       );
     } else {
       KDF.setVal("le_title", "Report about " + KDF.getVal("level_1_data"));
@@ -1800,8 +1810,8 @@ function getAndSetReviewPageData() {
         var contentDivId = "review-page-content--" + pageName;
         $("#review-page-content-container").append(
           '<div class="review-page-content-section" id=' +
-            contentDivId +
-            "></div>"
+          contentDivId +
+          "></div>"
         );
         var onclickFunction =
           'KDF.gotoPage("' + pageName + '", true, true, true)';
@@ -1879,8 +1889,8 @@ function getAndSetReviewPageData() {
 
             fieldValue = $(
               "div[data-name=" +
-                fieldName +
-                "] > div > select > option:selected"
+              fieldName +
+              "] > div > select > option:selected"
             ).text();
           }
           if (pageFieldType === "radio") {
@@ -1899,8 +1909,8 @@ function getAndSetReviewPageData() {
           }
           if (pageFieldType === "checkbox") {
             if ($(`div[data-name=${fieldName}] input[type='checkbox']`).prop("checked")) {
-                fieldLabel = $(`div[data-name=${fieldName}] > div > label`).text();
-                fieldValue = $(`div[data-name=${fieldName}] > div > input`).val();
+              fieldLabel = $(`div[data-name=${fieldName}] > div > label`).text();
+              fieldValue = $(`div[data-name=${fieldName}] > div > input`).val();
             }
           }
           if (pageFieldType === "multicheckbox") {
@@ -1947,10 +1957,10 @@ function getAndSetReviewPageData() {
             }
             $("#" + contentDivId).append(
               '<p class="review-page-item"><span class="review-page-question-text">' +
-                fieldLabel +
-                ":</span> " +
-                fieldValue +
-                "</p>"
+              fieldLabel +
+              ":</span> " +
+              fieldValue +
+              "</p>"
             );
           }
         });
@@ -2131,8 +2141,8 @@ function characterCountAppender(field) {
     .parent()
     .append(
       "<div class=character-count aria-live=polite id=characterCounter" +
-        field +
-        "></div>"
+      field +
+      "></div>"
     );
 
   characterCounter(field);
@@ -2232,11 +2242,10 @@ function setLocator(locator) {
 }
 
 function checkMaxDay(id, dd, mm, yy) {
-  const dayID = `${
-    id === "dform_widget_date_field_another"
+  const dayID = `${id === "dform_widget_date_field_another"
       ? "dform_widget_num_date_dd_another"
       : "dform_widget_num_date_dd"
-  }`;
+    }`;
   const ddMax = new Date(yy, mm, 0).getDate();
   $(`#${dayID}`).attr("max", ddMax);
   if (dd > ddMax) {
@@ -2256,8 +2265,7 @@ function checkDate(id, another, dd, mm, yy) {
   $(`#${id}`)
     .find(".dform_validationMessage")
     .text(
-      `Enter ${
-        id === "dform_widget_date_field_another" ? "their" : "your"
+      `Enter ${id === "dform_widget_date_field_another" ? "their" : "your"
       } date of birth`
     )
     .hide();
@@ -2340,8 +2348,7 @@ function validDate(id, day, month, year) {
   const validationMsg = parentContainer
     .find(".dform_validationMessage")
     .text(
-      `Enter ${
-        id === "dform_widget_date_field_another" ? "their" : "your"
+      `Enter ${id === "dform_widget_date_field_another" ? "their" : "your"
       } date of birth`
     )
     .hide();
