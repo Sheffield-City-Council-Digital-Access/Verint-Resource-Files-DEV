@@ -297,3 +297,13 @@
   border-top: 0.1rem solid var(--color-grey-5);
   border-bottom: 0.1rem solid var(--color-grey-5);
 }
+
+/* --- EXIT ----------------------------------------------------------------- */
+
+button .exit-btn::after,
+#dform_container .exit-btn::after {
+  content: "\e91c";
+  display: inline-block;
+  font-family: "Icomoon", sans-serif;
+  margin-left: 1.5rem;
+}
