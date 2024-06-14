@@ -113,6 +113,8 @@ html {
 body {
   min-width: 32rem;
   min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
   font-size: var(--font-size-p1);
   line-height: var(--font-height-p1);
   font-weight: var(--font-weight-regular);
