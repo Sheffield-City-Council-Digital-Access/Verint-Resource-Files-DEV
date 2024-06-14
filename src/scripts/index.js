@@ -872,7 +872,7 @@ function handleFailedSave(event, kdf) {
 // --- HANDLE ON COMPLETE EVENT ------------------------------------------- \\
 
 function handleFomComplate(event, kdf) {
-  document.getElementById("form-title").textContent = Confirmation;
+  document.getElementById("form-title").textContent = 'Confirmation';
 
   setTimeout(function () {
     KDF.hideMessages();
