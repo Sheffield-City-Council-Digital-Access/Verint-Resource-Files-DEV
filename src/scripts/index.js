@@ -616,8 +616,8 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     KDF.unlock();
     KDF.makeWritable();
     $("form.dform").css({
-      "margin": "8px",
-      "padding": "16px",
+      // "margin": "8px",
+      // "padding": "16px",
       "background": "var(--color-white)"
     });
     KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
