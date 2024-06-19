@@ -1583,6 +1583,7 @@ function formatReadableTime(date) {
 
 function hideShowMultipleElements(fields) {
   fields.map((field) => {
+    console.log(field)
     const type = field.type
     const name = field.name;
     const display = field.display;
