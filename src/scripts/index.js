@@ -1589,19 +1589,19 @@ function hideShowMultipleElements(fields) {
     const display = field.display;
 
     if (type === 'page_') {
-      if (display == ture || display === 'show') {
+      if (display === 'true' || display === 'show') {
         KDF.showPage(name);
       } else {
         KDF.hidePage(name);
       }
     } else if (type === 'area_') {
-      if (display == ture || display === 'show') {
+      if (display === 'true' || display === 'show') {
         KDF.showSection(name);
       } else {
         KDF.hideSection(name);
       }
     } else {
-      if (display == ture || display === 'show') {
+      if (display === 'true' || display === 'show') {
         KDF.showWidget(name);
       } else {
         KDF.hideWidget(name);
