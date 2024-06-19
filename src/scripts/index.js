@@ -1583,16 +1583,17 @@ function formatReadableTime(date) {
 
 function hideShowMultipleElements(fields) {
   fields.map((field) => {
+    const type = field.type
     const name = field.name;
     const display = field.display;
 
-    if (name && name.startsWith('page_')) {
+    if (type === 'page_') {
       if (display == ture || display === 'show') {
         KDF.showPage(name);
       } else {
         KDF.hidePage(name);
       }
-    } else if (name && name.startsWith('area_')) {
+    } else if (type === 'area_') {
       if (display == ture || display === 'show') {
         KDF.showSection(name);
       } else {
@@ -1612,12 +1613,12 @@ function hideShowMultipleElements(fields) {
 
 function updateMultipleLables(fields) {
   fields.map((field) => {
-    updateLabel(field.name, field.value)
+    updateLabel(field.type, field.name, field.value)
   });
 }
 
-function updateLabel(name, value) {
-  if (name.startsWith('but_')) {
+function updateLabel(type, name, value) {
+  if (type === 'button' || type === 'btn') {
     $(`#dform_widget_button_${name}`).html(value);
   } else {
     $(`dform_widget_${name}`).text(value);
