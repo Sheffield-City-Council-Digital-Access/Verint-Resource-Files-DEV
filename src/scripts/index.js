@@ -1577,5 +1577,63 @@ function formatReadableTime(date) {
   return `${hours12}:${minutes} ${isAmPm}`;
 }
 
+// --- HELPER FUNCTIONS ----------------------------------------------------- \\
 
+// --- SHOW / HIDE ELEMENTS ------------------------------------------------- \\
 
+function hideShowMultipleElements(fields) {
+  fields.map((field) => {
+    const name = field.name
+    const display = field.display.toLowerCase();
+
+    if (name.startsWith('page_')) {
+      if (display === 'ture' || display === 'show') {
+        KDF.showPage(name);
+      } else {
+        KDF.hidePage(name);
+      }
+    } else if (name.startsWith('area_')) {
+      if (display === 'ture' || display === 'show') {
+        KDF.showSection(name);
+      } else {
+        KDF.hideSection(name);
+      }
+    } else {
+      if (display === 'ture' || display === 'show') {
+        KDF.showWidget(name);
+      } else {
+        KDF.hideWidget(name);
+      }
+    }
+  });
+}
+
+// --- UPDATE LABEL TEXT ---------------------------------------------------- \\
+
+function updateMultipleLables(fields) {
+  fields.map((field) => {
+    updateLabel(field.name, field.value)
+  });
+}
+
+function updateLabel(name, value) {
+  if (name.startsWith('but_')) {
+    $(`#dform_widget_${name}`).html(value);
+  } else {
+    $(`dform_widget_${name}`).text(value);
+  }
+}
+
+// --- UPDATE VALUDATION TEXT ----------------------------------------------- \\
+
+function updateMultipleValidationMessages(data) {
+  data.map((field) => {
+    updateValidationMessage(field.name, field.value)
+  });
+}
+
+function updateValidationMessage(name, value) {
+  $(`#dform_widget_${name}`)
+    .siblings(".dform_validationMessage")
+    .text(value);
+}
