@@ -1613,12 +1613,12 @@ function hideShowMultipleElements(fields) {
 
 function updateMultipleLables(fields) {
   fields.map((field) => {
-    updateLabel(field.type, field.name, field.value)
+    updateLabel(field.name, field.value)
   });
 }
 
-function updateLabel(type, name, value) {
-  if (type === 'button' || type === 'btn') {
+function updateLabel(name, value) {
+  if (name.startsWith('but_')) {
     $(`#dform_widget_button_${name}`).html(value);
   } else {
     $(`dform_widget_${name}`).text(value);
