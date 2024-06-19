@@ -1583,16 +1583,16 @@ function formatReadableTime(date) {
 
 function hideShowMultipleElements(fields) {
   fields.map((field) => {
-    const name = field.name
+    const name = field.name;
     const display = field.display;
 
-    if (name.startsWith('page_')) {
+    if (name && name.startsWith('page_')) {
       if (display == ture || display === 'show') {
         KDF.showPage(name);
       } else {
         KDF.hidePage(name);
       }
-    } else if (name.startsWith('area_')) {
+    } else if (name && name.startsWith('area_')) {
       if (display == ture || display === 'show') {
         KDF.showSection(name);
       } else {
