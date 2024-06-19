@@ -955,9 +955,9 @@ const setValuesToInputFields = (aliasesAndValues) => {
   aliasesAndValues.forEach(({ alias, value }) => {
     // Get the element with the specified data-customalias attribute on the current page
     const element = document.querySelector(`
-        #${currentPageId} input[data-customalias="${alias}"], 
-        #${currentPageId} select[data-customalias="${alias}"],
-        #${currentPageId} textarea[data-customalias="${alias}"]
+      #${currentPageId} input[data-customalias="${alias}"], 
+      #${currentPageId} select[data-customalias="${alias}"],
+      #${currentPageId} textarea[data-customalias="${alias}"]
     `);
 
     // If element is found, set its value using KDF.setVal();
