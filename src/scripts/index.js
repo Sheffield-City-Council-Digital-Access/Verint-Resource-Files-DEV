@@ -1330,6 +1330,13 @@ const updateProgressBar = currentPageIndex => {
       parentDiv.appendChild(childDiv);
     }
 
+    // Check for child childSpan and create if it doesn't exist
+    let childSpan = parentDiv.querySelector("div");
+    if (!childSpan) {
+      childSpan = document.createElement("div");
+      parentDiv.appendChild(childSpan);
+    }
+
     if (parentDiv && childDiv && pageHolderDiv) {
       // Get all pages
       const pages = pageHolderDiv.querySelectorAll('.dform_page');
@@ -1351,7 +1358,7 @@ const updateProgressBar = currentPageIndex => {
         childDiv.style.background = "var(--color-primary)";
       }
       childDiv.textContent = `${percentage}%`;
-      $('#dform_progressbar_sheffield::after').css('width', `${100 - percentage}%`);
+      childSpan.style.width = `${100 - percentage}%`;
     }
   }
 };
