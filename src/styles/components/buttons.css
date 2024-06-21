@@ -37,6 +37,12 @@
   transition: all 0.2s ease;
 }
 
+#dform_container a.link-btn {
+  display: flex;
+  height: 5rem;
+  width: 44.5rem;
+}
+
 #dform_container button.primary-btn.dform_widget_type_button {
   color: var(--color-white);
   background: var(--color-black);
