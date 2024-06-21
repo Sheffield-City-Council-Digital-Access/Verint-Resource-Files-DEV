@@ -10,9 +10,8 @@
   border-radius: 0;
 }
 
-#dform_container #dform_progressbar_sheffield:after {
+#dform_container #dform_progressbar_sheffield span {
   content: "";
-  width: 100%;
   height: 20px;
   background: var(--color-empty-pb);
 }
