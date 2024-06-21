@@ -39,6 +39,8 @@
 
 #dform_container a.link-btn {
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 5rem;
   width: 44.5rem;
 }
