@@ -14,6 +14,8 @@ let customerState = false;
 
 let pageName = '';
 
+let addressSearchType = {};
+
 const defaultDateMessage = "Enter the date in the correct format";
 
 const dateMessages = {};
@@ -450,7 +452,8 @@ function handleOnReadyEvent(event, kdf) {
 
   $('.search-results').on('change', event => {
     if (event.target.value) {
-      KDF.customdata('retrieve-property', event.target.id, true, true, { propertyId: event.target.value });
+      const action = addreSearchType[getCurrentPageId()] === 'local' ? 'retrieve-property' : 'retrieve-national-address';
+      KDF.customdata(action, event.target.id, true, true, { propertyId: event.target.value });
     } else {
       // show validation error
     }
@@ -750,7 +753,10 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     // KDF.gotoNextPage();
   }
 
-  if (action === 'search-property') {
+  if (action === 'search-property' || action === 'search-national-address') {
+    if (action === 'search-property') addreSearchType[getCurrentPageId()] = 'local';
+    if (action === 'search-national-address') addreSearchType[getCurrentPageId()] = 'national';
+
     const { propertySearchResult } = response.data;
     if (propertySearchResult.length > 0) {
       const formattedSearchResult = propertySearchResult.map((addressLine) => {
@@ -771,7 +777,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     }
   }
 
-  if (action === 'retrieve-property') {
+  if (action === 'retrieve-property' || action === 'retrieve-national-address') {
     let { property, streetName, city, postcode, fullAddress, propertyId, uprn, streetId, usrn } = response.data;
     property = formatTitleCase(property);
     streetName = formatTitleCase(streetName);
