@@ -1331,9 +1331,9 @@ const updateProgressBar = currentPageIndex => {
     }
 
     // Check for child childSpan and create if it doesn't exist
-    let childSpan = parentDiv.querySelector("div");
+    let childSpan = parentDiv.querySelector("span");
     if (!childSpan) {
-      childSpan = document.createElement("div");
+      childSpan = document.createElement("span");
       parentDiv.appendChild(childSpan);
     }
 
