@@ -634,6 +634,24 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
 
 function handleFieldChangeEvent(event, kdf, field) {
 
+  // --- HANDLE IF NI OR NASS IS REQUIREMENT ------------------------------- \\
+
+  if (field.name === 'txt_national_insurance') {
+    if ($(`#${field.id}`).is(':valid')) {
+      KDF.setWidgetNotRequired('txt_national_asylum_support');
+    } else {
+      KDF.setWidgetRequired('txt_national_asylum_support');
+    }
+  }
+
+  if (field.name === 'txt_national_asylum_support') {
+    if ($(`#${field.id}`).is(':valid')) {
+      KDF.setWidgetNotRequired('txt_national_insurance');
+    } else {
+      KDF.setWidgetRequired('txt_national_insurance');
+    }
+  }
+
   checkPageProgress();
 
   // --- HANDLE FORMAT REMOVE ECCESS WHITE SPACES -------------------------- \\
