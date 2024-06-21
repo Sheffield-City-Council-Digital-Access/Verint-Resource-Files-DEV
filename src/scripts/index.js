@@ -452,7 +452,7 @@ function handleOnReadyEvent(event, kdf) {
 
   $('.search-results').on('change', event => {
     if (event.target.value) {
-      const action = addressSearchType[getCurrentPageId()] === 'local' ? 'retrieve-property' : 'retrieve-national-address';
+      const action = addressSearchType[getCurrentPageId()] === 'local' ? 'retrieve-local-address' : 'retrieve-national-address';
       KDF.customdata(action, event.target.id, true, true, { propertyId: event.target.value });
     } else {
       // show validation error
@@ -753,8 +753,8 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     // KDF.gotoNextPage();
   }
 
-  if (action === 'search-property' || action === 'search-national-address') {
-    if (action === 'search-property') addressSearchType[getCurrentPageId()] = 'local';
+  if (action === 'search-local-address' || action === 'search-national-address') {
+    if (action === 'search-local-address') addressSearchType[getCurrentPageId()] = 'local';
     if (action === 'search-national-address') addressSearchType[getCurrentPageId()] = 'national';
 
     const { propertySearchResult } = response.data;
@@ -777,7 +777,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     }
   }
 
-  if (action === 'retrieve-property' || action === 'retrieve-national-address') {
+  if (action === 'retrieve-local-address' || action === 'retrieve-national-address') {
     let { property, streetName, city, postcode, fullAddress, propertyId, uprn, streetId, usrn } = response.data;
     property = formatTitleCase(property);
     streetName = formatTitleCase(streetName);
