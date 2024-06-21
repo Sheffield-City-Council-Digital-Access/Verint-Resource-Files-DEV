@@ -16,7 +16,8 @@
   flex-direction: column;
 }
 
-#dform_container button {
+#dform_container button,
+#dform_container a.link-btn {
   /*.esri-search button {*/
   color: var(--color-primary);
   font-size: var(--font-height-p2);
@@ -59,6 +60,7 @@
 
 /* --- BUTTONS HOVER -------------------------------------------------------- */
 
+#dform_container a.link-btn:hover,
 #dform_container button:not(.disabled):hover,
 #dform_container button.primary-btn.dform_widget_type_button:not(.disabled):hover {
   /*.esri-search button:hover {*/
@@ -69,7 +71,8 @@
 
 /* --- BUTTONS FOCUS -------------------------------------------------------- */
 
-#dform_container button:focus {
+#dform_container button:focus,
+#dform_container a.link-btn:focus {
   /*.esri-search button:focus {*/
   color: var(--color-primary);
   background: var(--color-white);
