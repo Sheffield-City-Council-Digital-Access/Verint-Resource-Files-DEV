@@ -1350,6 +1350,7 @@ const updateProgressBar = currentPageIndex => {
         childDiv.style.color = "var(--color-white)";
         childDiv.style.background = "var(--color-primary)";
       }
+      $('#dform_container #dform_progressbar_sheffield:after').css('width', `${percentage - 100}%`);
       childDiv.textContent = `${percentage}%`;
     }
   }
