@@ -1351,7 +1351,7 @@ const updateProgressBar = currentPageIndex => {
         childDiv.style.background = "var(--color-primary)";
       }
       childDiv.textContent = `${percentage}%`;
-      $('#dform_container #dform_progressbar_sheffield:after').css('width', `${100 - percentage}%`);
+      $('#dform_progressbar_sheffield:after').css('width', `${100 - percentage}%`);
     }
   }
 };
