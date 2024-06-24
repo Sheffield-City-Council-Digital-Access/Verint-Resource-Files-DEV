@@ -437,7 +437,7 @@ function handleOnReadyEvent(event, kdf) {
 
     // --- CHECK AGENT LOCATION -------------------------------------------- \\
 
-    checkAndRefreshAgentLocation();
+    // checkAndRefreshAgentLocation();
     // Event listener for closeModal event
     window.addEventListener('closeModal', function (event) {
       console.log('closeModal event received:', event);
