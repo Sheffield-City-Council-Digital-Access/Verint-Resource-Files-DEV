@@ -441,6 +441,7 @@ function handleOnReadyEvent(event, kdf) {
       // Event listener for closeModal event
       window.addEventListener('closeModal', function (event) {
         console.log(event)
+        KDF.setVal('txt_agent_location', event.detail);
         const modalId = 'setAgentLocationModal';
         const modal = document.getElementById(modalId);
         if (modal) {
@@ -958,7 +959,7 @@ function createModal() {
   modalContent.className = 'modal-content';
 
   const iframe = document.createElement('iframe');
-  iframe.src = 'https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/set_agent_location';
+  iframe.src = 'https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/set_agent_location?channel=voice_in';
   iframe.frameBorder = '0';
   iframe.style.width = '100%';
   iframe.style.height = '100%';
