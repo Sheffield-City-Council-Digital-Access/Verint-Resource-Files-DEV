@@ -434,13 +434,13 @@ function handleOnReadyEvent(event, kdf) {
       "min-height": "88vh"
     });
 
-
     // --- CHECK AGENT LOCATION -------------------------------------------- \\
 
     if (kdf.form.name !== 'set_agent_location' && !kdf.form.caseid) {
       checkAndRefreshAgentLocation();
       // Event listener for closeModal event
       window.addEventListener('closeModal', function (event) {
+        console.log(event)
         const modalId = 'setAgentLocationModal';
         const modal = document.getElementById(modalId);
         if (modal) {
