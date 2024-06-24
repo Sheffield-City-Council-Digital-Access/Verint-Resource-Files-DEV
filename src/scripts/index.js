@@ -423,6 +423,8 @@ function handleOnReadyEvent(event, kdf) {
   if (KDF.kdf().access === 'agent') {
     const root = document.documentElement;
 
+    // --- APPLY INTERNAL SYLE CHANGES ------------------------------------- \\
+
     root.style.setProperty('--color-background', '#eeeeee');
     root.style.setProperty('--color-empty-pb', '#e0e0e0');
     root.style.setProperty('--color-primary', '#007aff');
@@ -430,6 +432,20 @@ function handleOnReadyEvent(event, kdf) {
     $("form.dform").css({
       "margin": "0 auto",
       "min-height": "88vh"
+    });
+
+
+    // --- CHECK AGENT LOCATION -------------------------------------------- \\
+
+    checkAndRefreshAgentLocation();
+    // Event listener for closeModal event
+    window.addEventListener('closeModal', function (event) {
+      console.log('closeModal event received:', event);
+      const modalId = 'setAgentLocationModal';
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        destroyModal(modal);
+      }
     });
   }
 
@@ -454,8 +470,6 @@ function handleOnReadyEvent(event, kdf) {
     if (event.target.value) {
       const action = addressSearchType[getCurrentPageId()] === 'local' ? 'retrieve-local-address' : 'retrieve-national-address';
       KDF.customdata(action, event.target.id, true, true, { propertyId: event.target.value });
-    } else {
-      // show validation error
     }
   });
 
@@ -912,6 +926,75 @@ function handleFomComplate(event, kdf) {
 const getCurrentPageId = () => {
   return document.querySelector('[data-type="page"]:not([style*="display: none"])').id;
 };
+
+// --- HANDLE SET AGENT LOCATION -------------------------------------------- \\
+
+function checkAndRefreshAgentLocation() {
+  const data = JSON.parse(localStorage.getItem('agentLocation'));
+  if (data) {
+    const currentTime = new Date().getTime();
+    if (currentTime < data.expiry) {
+      // Refresh expiry time for another hour
+      data.expiry = currentTime + 60 * 60 * 1000; // 1 hour in milliseconds
+      localStorage.setItem('agentLocation', JSON.stringify(data));
+    } else {
+      // Data has expired
+      localStorage.removeItem('agentLocation');
+    }
+  } else {
+    checkAndDisplayModal();
+  }
+}
+
+// Function to create and display the modal
+function createModal() {
+  // Create modal elements
+  const modal = document.createElement('div');
+  modal.id = 'setAgentLocationModal';
+  modal.className = 'modal';
+
+  const modalContent = document.createElement('div');
+  modalContent.className = 'modal-content';
+
+  const iframe = document.createElement('iframe');
+  iframe.src = 'https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/set_agent_location';
+  iframe.frameBorder = '0';
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+
+  modalContent.appendChild(iframe);
+  modal.appendChild(modalContent);
+  document.body.appendChild(modal);
+
+  // Optionally, add a close button
+  const closeButton = document.createElement('span');
+  closeButton.className = 'close';
+  closeButton.innerHTML = '&times;';
+  closeButton.onclick = function () {
+    destroyModal(modal);
+  };
+  modalContent.appendChild(closeButton);
+
+  // Display the modal
+  modal.style.display = 'block';
+}
+
+// Function to destroy the modal
+function destroyModal(modal) {
+  // Remove modal from the DOM
+  if (modal && modal.parentNode) {
+    modal.parentNode.removeChild(modal);
+  }
+}
+
+// Function to check and display modal if needed
+function checkAndDisplayModal() {
+  const data = JSON.parse(localStorage.getItem('agentLocation'));
+  if (!data || new Date().getTime() > data.expiry) {
+    // Data is not present or has expired
+    createModal();
+  }
+}
 
 // --- DISABLE BUTTONS ------------------------------------------------------ \\
 
