@@ -437,16 +437,17 @@ function handleOnReadyEvent(event, kdf) {
 
     // --- CHECK AGENT LOCATION -------------------------------------------- \\
 
-    // checkAndRefreshAgentLocation();
-    // Event listener for closeModal event
-    window.addEventListener('closeModal', function (event) {
-      console.log('closeModal event received:', event);
-      const modalId = 'setAgentLocationModal';
-      const modal = document.getElementById(modalId);
-      if (modal) {
-        destroyModal(modal);
-      }
-    });
+    if (kdf.form.name !== 'set_agent_location' && !kdf.form.caseid) {
+      checkAndRefreshAgentLocation();
+      // Event listener for closeModal event
+      window.addEventListener('closeModal', function (event) {
+        const modalId = 'setAgentLocationModal';
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          destroyModal(modal);
+        }
+      });
+    }
   }
 
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
