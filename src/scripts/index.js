@@ -438,7 +438,7 @@ function handleOnReadyEvent(event, kdf) {
     // --- CHECK AGENT LOCATION -------------------------------------------- \\
 
     if (kdf.form.name !== 'set_agent_location' && !kdf.form.caseid) {
-      checkAndRefreshAgentLocation();
+      // checkAndRefreshAgentLocation();
       // Event listener for closeModal event
       window.addEventListener('closeModal', function (event) {
         const modalId = 'setAgentLocationModal';
