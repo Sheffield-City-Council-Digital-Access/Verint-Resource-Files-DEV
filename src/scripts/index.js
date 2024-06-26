@@ -414,7 +414,7 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- SET FORM START DATE AND TIME -------------------------------------- \\
 
-  if (!kdf.form.caseid) {
+  if (!kdf.form.ref) {
     KDF.setVal('txt_start_date_and_time', formatDateTime().utc);
   }
 
@@ -440,7 +440,6 @@ function handleOnReadyEvent(event, kdf) {
       // checkAndRefreshAgentLocation();
       // Event listener for closeModal event
       window.addEventListener('closeModal', function (event) {
-        console.log(event)
         KDF.setVal('txt_agent_location', event.detail);
         const modalId = 'setAgentLocationModal';
         const modal = document.getElementById(modalId);
@@ -453,16 +452,16 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
 
-  if (kdf.form.caseid) {
+  if (kdf.form.ref) {
     KDF.showPage('page_review');
     KDF.gotoPage('page_review');
-    $(".review-page-edit-button").remove();
+    $('.review-page-edit-button').remove();
     $('.dform_section_box_review div[data-type="buttonset"]').remove();
   }
 
   // --- HANDLE FORMAT TITLE CASE ------------------------------------------ \\
 
-  $(".format-title-case").change(event => {
+  $('.format-title-case').on('change', event => {
     $(`#${event.target.id}`).val(formatTitleCase(event.target.value));
   });
 
