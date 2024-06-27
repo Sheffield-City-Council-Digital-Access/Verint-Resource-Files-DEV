@@ -936,7 +936,7 @@ function checkAndRefreshAgentLocation() {
     const currentTime = new Date().getTime();
     if (currentTime < data.expiry) {
       // Refresh expiry time for another hour
-      data.expiry = currentTime + 60 * 60 * 1000; // 1 hour in milliseconds
+      data.expiry = currentTime + 25 * 60 * 1000; // 25 minutes in milliseconds
       localStorage.setItem('agentLocation', JSON.stringify(data));
     } else {
       // Data has expired
