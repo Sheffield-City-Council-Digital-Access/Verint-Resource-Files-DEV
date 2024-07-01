@@ -1,0 +1,91 @@
+aside.contact-information {
+  display: none;
+  min-width: 250px;
+  width: 30vw;
+  max-width: 445px;
+  float: right;
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  padding: 0px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  z-index: 99;
+}
+
+@media only screen and (min-width: 767px) {
+  aside.contact-information {
+    display: block;
+  }
+}
+
+aside.contact-information header {
+  padding: 2.2rem 2.7rem 2.7rem;
+}
+
+aside.contact-information header h2 {
+  margin: 0 !important;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+aside.contact-information main {
+  margin-bottom: 3rem;
+  padding-inline: 2.7rem;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 1.5rem .75rem;
+  align-items: center;
+  font-size: 16px;
+}
+
+aside.contact-information main i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  color: var(--color-primary);
+  background: var(--color-background);
+  text-align: center;
+  padding: 1.7rem;
+}
+
+.align-self {
+  align-self: baseline;
+}
+
+.icon-email::before {
+  content: "\e904";
+  font: 2rem / 1.875 "Icomoon", sans-serif;
+}
+
+.icon-phone::before {
+  content: "\e920";
+  font: 2rem / 1.875 "Icomoon", sans-serif;
+}
+
+.icon-location::before {
+  content: "\e919";
+  font: 2rem / 1.875 "Icomoon", sans-serif;
+}
+
+aside.contact-information main a {
+  text-decoration: none;
+  color: #007c53;
+}
+
+aside.contact-information main a:hover {
+  text-decoration: underline;
+}
+
+aside.contact-information main p {
+  margin-top: 0;
+  padding-top: .5rem;
+}
+
+aside.contact-information footer img {
+  width: 100%;
+  transform: translateY(7px);
+}

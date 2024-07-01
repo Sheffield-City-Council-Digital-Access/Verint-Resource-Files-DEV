@@ -634,10 +634,11 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     KDF.unlock();
     KDF.makeWritable();
     $("form.dform").css({
-      // "margin": "8px",
-      // "padding": "16px",
+      "margin": "8px",
+      "padding": "16px",
       "background": "var(--color-white)"
     });
+    showContactTeamPanel();
     KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
   }
 
@@ -1617,6 +1618,78 @@ function getAndSetReviewPageData() {
         });
       }
     });
+  }
+}
+
+// --- CONTACT TEAM PANEL --------------------------------------------------- \\
+
+function showContactTeamPanel() {
+  const contactInfo = document.createElement('aside');
+  contactInfo.classList.add('contact-information');
+
+  const header = document.createElement('header');
+  const headerTitle = document.createElement('h2');
+  headerTitle.textContent = 'Contact Customer Services';
+  header.appendChild(headerTitle);
+
+  const main = document.createElement('main');
+  main.classList.add('contact-details');
+
+  const emailIcon = document.createElement('i');
+  emailIcon.classList.add('icon');
+  const emailIconSpan = document.createElement('span');
+  emailIconSpan.classList.add('icon-email');
+  emailIcon.appendChild(emailIconSpan);
+
+  const emailLink = document.createElement('a');
+  emailLink.href = KDF.getVal('txt_contact_link');
+  emailLink.textContent = 'Ask us a question';
+
+  main.appendChild(emailIcon);
+  main.appendChild(emailLink);
+
+  const phoneIcon = document.createElement('i');
+  phoneIcon.classList.add('icon');
+  const phoneIconSpan = document.createElement('span');
+  phoneIconSpan.classList.add('icon-phone');
+  phoneIcon.appendChild(phoneIconSpan);
+
+  const phoneLink = document.createElement('a');
+  phoneLink.href = `tel:${KDF.getVal('tel_contact_number')}`;
+  phoneLink.textContent = `${KDF.getVal('tel_contact_number').slice(0, 4)} ${KDF.getVal('tel_contact_number').slice(4, 7)} ${KDF.getVal('tel_contact_number').slice(7, 11)}`;
+  main.appendChild(phoneIcon);
+  main.appendChild(phoneLink);
+
+  const locationIcon = document.createElement('i');
+  locationIcon.classList.add('icon');
+  locationIcon.classList.add('align-self');
+  const locationIconSpan = document.createElement('span');
+  locationIconSpan.classList.add('icon-location');
+  locationIcon.appendChild(locationIconSpan);
+
+  const address = document.createElement('p');
+  const addressString = KDF.getVal('txt_contact_address').replace(/, /g, "<br/>");
+  address.innerHTML = addressString;
+  main.appendChild(address);
+  main.appendChild(locationIcon);
+  main.appendChild(address);
+
+  const footer = document.createElement('footer');
+  const footerImg = document.createElement('img');
+  footerImg.src = 'https://www.sheffield.gov.uk/themes/custom/bbd_localgov/images/council-tax.jpeg';
+  footerImg.alt = 'Footer Image';
+
+  footer.appendChild(footerImg);
+
+  contactInfo.appendChild(header);
+  contactInfo.appendChild(main);
+  contactInfo.appendChild(footer);
+
+  const target = document.querySelector('.title-container');
+  if (target) {
+    target.after(contactInfo);
+  } else {
+    console.error('Element with class title-container not found');
   }
 }
 
