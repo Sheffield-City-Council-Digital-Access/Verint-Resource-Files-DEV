@@ -50,7 +50,7 @@ function handleInitialisingEvent(addDateMessages) {
     }
   })();
 
-  // --- ADD LOADiNG SPINNER  ---------------------------------------------- \\
+  // --- ADD LOADING SPINNER  ---------------------------------------------- \\
 
   (() => {
     // Select the target element
