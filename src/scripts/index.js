@@ -639,7 +639,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
       "background": "var(--color-white)"
     });
     if (KDF.kdf().access === 'citizen') {
-      showContactTeamPanel();
+      // showContactTeamPanel();
     }
     KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
   }
