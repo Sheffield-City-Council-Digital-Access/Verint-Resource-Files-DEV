@@ -638,7 +638,9 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
       "padding": "16px",
       "background": "var(--color-white)"
     });
-    showContactTeamPanel();
+    if (KDF.kdf().access === 'citizen') {
+      showContactTeamPanel();
+    }
     KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
   }
 
