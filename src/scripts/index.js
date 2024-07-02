@@ -1629,7 +1629,7 @@ function showContactTeamPanel() {
 
   const header = document.createElement('header');
   const headerTitle = document.createElement('h2');
-  headerTitle.textContent = 'Contact Customer Services';
+  headerTitle.textContent = KDF.getVal('txt_contact_title');
   header.appendChild(headerTitle);
 
   const main = document.createElement('main');
