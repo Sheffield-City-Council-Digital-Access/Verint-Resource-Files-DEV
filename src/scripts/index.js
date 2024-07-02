@@ -452,7 +452,7 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
 
-  if (kdf.form.ref) {
+  if (kdf.form.caseid && kdf.form.ref) {
     KDF.showPage('page_review');
     KDF.gotoPage('page_review');
     $('.review-page-edit-button').remove();
@@ -639,7 +639,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
       "background": "var(--color-white)"
     });
     if (KDF.kdf().access === 'citizen') {
-      // showContactTeamPanel();
+      showContactTeamPanel();
     }
     KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
   }
