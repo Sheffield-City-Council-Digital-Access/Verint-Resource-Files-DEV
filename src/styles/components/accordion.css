@@ -20,6 +20,7 @@
 }
 
 #dform_container .accordion-header>h3 {
+  display: inline;
   margin: 0;
 }
 
@@ -65,4 +66,45 @@
 
 #dform_container details[open] .accordion-content {
   display: block;
+}
+
+/* --- DETAILS ACCORDION ---------------------------------------------------- */
+
+#dform_container .details-accordion {
+  max-width: 57.1rem;
+}
+
+#dform_container .details-accordion summary {
+  padding-right: 1rem;
+  font-size: var(--font-size-p1);
+  line-height: var(--font-height-p1);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+}
+
+#dform_container .details-accordion:hover summary {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#dform_container .details-accordion[open] {
+  background: var(--color-white);
+}
+
+#dform_container .details-accordion[open] summary {
+  width: max-content;
+  background: var(--color-warning);
+  color: var(--color-black);
+  border-bottom: .4rem solid var(--color-black);
+}
+
+#dform_container .details-accordion-content p {
+  border-left: solid .4rem var(--color-grey-5);
+  padding-block: 1rem;
+  padding-inline: 1.9rem 1.5rem;
+  margin: 0;
+}
+
+#dform_container .dob {
+  margin-bottom: 1.2rem;
 }
