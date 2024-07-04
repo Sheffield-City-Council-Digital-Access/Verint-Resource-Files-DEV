@@ -623,6 +623,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     if (kdf.access === 'agent' && customerState !== 'agent_true') {
       KDF.sendDesktopAction('raised_by');
     }
+    console.log(KDF.getVal('eml_address'));
     if (!KDF.getVal('eml_address') || KDF.getVal('eml_address') === '' || KDF.getVal('eml_address') === undefined || KDF.getVal('eml_address') === null) {
       KDF.hideWidget('ahtm_confirmation_email_send');
     } else {
