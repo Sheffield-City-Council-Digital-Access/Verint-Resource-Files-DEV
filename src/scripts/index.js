@@ -604,6 +604,19 @@ function handleOnReadyEvent(event, kdf) {
     KDF.gotoPage('complete', true, true, false);
   });
 
+  // --- HANDLE CLOSE CASE CLICK ------------------------------------------- \\
+
+  $('.close-case-btn').on('click', (event) => {
+    if (checkIsFormComplete(fieldsToCheckBeforeClose)) {
+      const noteDetails = KDF.getVal('txta_closure_details') ? ` - ${KDF.getVal('txta_closure_details')}` : '';
+      KDF.customdata('close-case', event.target.name, true, true, {
+        caseNote: `${KDF.getVal('sel_closure_reason')}${noteDetails}`
+      });
+    } else {
+      KDF.showError('Please ensure all fields have been completed.');
+    }
+  });
+
 }
 
 // --- HANDLE ON PAGE CHANGE EVENT ----------------------------------------- \\
@@ -1700,6 +1713,24 @@ function showContactTeamPanel() {
   } else {
     console.error('Element with class title-container not found');
   }
+}
+
+// --- CHECK CASE PROGRESS -------------------------------------------------- \\
+
+function checkIsFormComplete(fields) {
+  let isComplete = true;
+  fields.map(field => {
+    if (
+      KDF.getVal(field) === ''
+      || KDF.getVal(field) === null
+      || KDF.getVal(field) === undefined
+      || KDF.getVal(field) === 'Pending'
+      || KDF.getVal(field) === 'In progress'
+    ) {
+      isComplete = false;
+    }
+  });
+  return isComplete;
 }
 
 // --- FORMATING FUNCTIONS -------------------------------------------------- \\
