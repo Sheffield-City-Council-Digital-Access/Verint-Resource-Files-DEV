@@ -1830,3 +1830,65 @@ function updateValidationMessage(name, value) {
     .siblings(".dform_validationMessage")
     .text(value);
 }
+
+// --- CHECK DATE FUNCTIONS ------------------------------------------------- \\
+
+async function fetchUKBankHolidays() {
+  try {
+    const response = await fetch('https://www.gov.uk/bank-holidays.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    const bankHolidaysEW = data?.['england-and-wales'].events || [];
+    const bankHolidaysSL = data?.scotland.events || [];
+    const bankHolidaysNI = data?.['northern-ireland'].events || [];
+    const allBankHolidays = [...new Set([...bankHolidaysEW, ...bankHolidaysSL, ...bankHolidaysNI])];
+    // Return the array of bank holidays
+    return allBankHolidays.map(holiday => new Date(holiday.date));
+  } catch (error) {
+    console.error('Error fetching bank holidays:', error);
+    return []; // Return an empty array in case of an error
+  }
+}
+
+function isWeekend(date) {
+  return date.getDay() === 0 || date.getDay() === 6;
+}
+
+async function isUKBankHoliday(date) {
+  const bankHolidays = await fetchUKBankHolidays();
+  return bankHolidays.some((holiday) => {
+    return (
+      holiday.getFullYear() === date.getFullYear() &&
+      holiday.getMonth() === date.getMonth() &&
+      holiday.getDate() === date.getDate()
+    );
+  });
+}
+
+async function isNonWorkingDay(date) {
+  if (!isWeekend(date)) {
+    return await isUKBankHoliday(date);
+  }
+  return true;
+}
+
+async function getNextWorkingDay(date) {
+  while (await isNonWorkingDay(date)) {
+    date.setDate(date.getDate() + 1);
+  }
+  return date;
+}
+
+async function addDaysToDate(date, daysToAdd, considerWorkingDays = false) {
+  const newDate = new Date(date); // Create a copy to avoid modifying the original
+  newDate.setDate(newDate.getDate() + daysToAdd);
+
+  if (considerWorkingDays) {
+    const nextWorkingDay = await getNextWorkingDay(new Date(newDate));
+    return nextWorkingDay;
+  }
+
+  return newDate;
+}
