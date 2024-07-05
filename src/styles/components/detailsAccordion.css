@@ -1,0 +1,48 @@
+/* --- DETAILS ACCORDION ---------------------------------------------------- */
+
+#dform_container .details-accordion {
+  max-width: 571px;
+}
+
+#dform_container .details-accordion:focus-within {
+  border: none;
+}
+
+#dform_container .details-accordion[open]:focus-within {
+  background: var(--color-white);
+}
+
+#dform_container .details-accordion summary {
+  padding-right: 16px;
+  font-size: var(--font-size-p1);
+  line-height: var(--font-height-p1);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  border-bottom: 4px solid transparent;
+}
+
+#dform_container .details-accordion:hover summary {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#dform_container .details-accordion summary:focus {
+  border: none;
+  background: var(--color-white);
+  width: max-content;
+  background: var(--color-warning);
+  color: var(--color-black);
+  border-bottom: 4px solid var(--color-black);
+  outline: none;
+}
+
+#dform_container .details-accordion-content {
+  background: var(--color-white);
+}
+
+#dform_container .details-accordion-content p {
+  border-left: solid 4px var(--color-grey-5);
+  padding-block: 6px 10px;
+  padding-inline: 19px 15px;
+  margin: 0;
+}
