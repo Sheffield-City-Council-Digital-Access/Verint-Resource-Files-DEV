@@ -6,6 +6,7 @@ function logArguments(event, kdf, ...args) {
     console.log(`arg${index + 1}`, arg);
   });
   console.groupEnd();
+
 }
 
 // --- GLOBAL CONSTA AND VARIABLES ----------------------------------------- \\
