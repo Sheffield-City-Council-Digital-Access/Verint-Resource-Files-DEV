@@ -144,11 +144,3 @@ ol {
   border: none !important;
   outline: none !important;
 }
-
-
-#dform_container .selected-address-container {
-  width: 100%;
-  font-size: var(--font-size-p1);
-  line-height: var(--font-height-p1);
-  font-weight: var(--font-weight-semibold);
-}
