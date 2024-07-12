@@ -1757,17 +1757,11 @@ function formatDateTime(dateTime) {
   let date;
   if (!dateTime) {
     date = new Date(); // Use current time if no argument
+
   } else if (typeof dateTime === 'number') {
-    date = new Date(dateTime * 1000); // Handle timestamp input
-  } else if (typeof dateTime === 'string' && dateTime.match(/^\d{4}-\d{2}-\d{2}$/)) {
-    // Handle yyyy-mm-dd format
-    const [year, month, day] = dateTime.split('-').map(Number);
-    date = new Date(year, month - 1, day); // Month is 0-indexed in JavaScript
-  } else if (typeof dateTime === 'string' && dateTime.match(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?Z$/)) {
-    // Handle ISO 8601 format
-    date = new Date(dateTime);
+    date = new Date(dateTime); // Assume dateTime is already a timestamp
   } else {
-    return null; // Invalid input format
+    date = new Date(dateTime); // Try to parse dateTime as a date string
   }
 
   const year = date.getFullYear().toString();
@@ -1803,7 +1797,8 @@ function formatDateTime(dateTime) {
       time: formatReadableTime(date)
     },
     iso: date.toISOString().replace(/\.\d{3}Z/, 'Z'),
-    utc: `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}Z`
+    utc: `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}Z`,
+    inputField: `${year}-${month}-${day}`,
   };
 }
 
@@ -1934,8 +1929,8 @@ async function addDaysToDate(date, daysToAdd, considerWorkingDays = false) {
 
   if (considerWorkingDays) {
     const nextWorkingDay = await getNextWorkingDay(new Date(newDate));
-    return nextWorkingDay;
+    return new Date(nextWorkingDay).toISOString().slice(0, 10);
   }
 
-  return newDate;
+  return formatDateTime(newDate).inputField;
 }
