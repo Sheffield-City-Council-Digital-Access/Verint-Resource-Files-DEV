@@ -1754,12 +1754,21 @@ function formatRemoveEccessWhiteSpace(value) {
 // --- FORMATING DATE AND TIME ---------------------------------------------- \\
 
 function formatDateTime(dateTime) {
+  let date;
   if (!dateTime) {
-    dateTime = Math.floor(Date.now() / 1000); // Use current time if no argument
+    date = new Date(); // Use current time if no argument
+  } else if (typeof dateTime === 'number') {
+    date = new Date(dateTime * 1000); // Handle timestamp input
+  } else if (typeof dateTime === 'string' && dateTime.match(/^\d{4}-\d{2}-\d{2}$/)) {
+    // Handle yyyy-mm-dd format
+    const [year, month, day] = dateTime.split('-').map(Number);
+    date = new Date(year, month - 1, day); // Month is 0-indexed in JavaScript
+  } else if (typeof dateTime === 'string' && dateTime.match(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?Z$/)) {
+    // Handle ISO 8601 format
+    date = new Date(dateTime);
+  } else {
+    return null; // Invalid input format
   }
-
-  // Create a new Date object with options for UK locale and milliseconds
-  const date = new Date(dateTime * 1000);
 
   const year = date.getFullYear().toString();
   const month = date.getMonth().toString().padStart(2, '0');
@@ -1925,8 +1934,8 @@ async function addDaysToDate(date, daysToAdd, considerWorkingDays = false) {
 
   if (considerWorkingDays) {
     const nextWorkingDay = await getNextWorkingDay(new Date(newDate));
-    return formatDateTime(nextWorkingDay).utc;
+    return nextWorkingDay;
   }
 
-  return formatDateTime(newDate).utc;
+  return newDate;
 }
