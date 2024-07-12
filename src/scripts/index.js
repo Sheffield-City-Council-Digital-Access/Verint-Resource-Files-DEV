@@ -1928,5 +1928,5 @@ async function addDaysToDate(date, daysToAdd, considerWorkingDays = false) {
     return nextWorkingDay;
   }
 
-  return newDate.toISOString().slice(0, 10);
+  return newDate;
 }
