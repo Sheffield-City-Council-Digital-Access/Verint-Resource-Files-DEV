@@ -1928,4 +1928,5 @@ async function addDaysToDate(date, daysToAdd, considerWorkingDays = false) {
     return nextWorkingDay;
   }
 
-  return newDate.toString();
+  return newDate.toString;
+}
