@@ -1925,7 +1925,7 @@ async function addDaysToDate(date, daysToAdd, considerWorkingDays = false) {
 
   if (considerWorkingDays) {
     const nextWorkingDay = await getNextWorkingDay(new Date(newDate));
-    return nextWorkingDay;
+    return formatDateTime(nextWorkingDay).uk.date;
   }
 
   return formatDateTime(newDate).uk.date;
