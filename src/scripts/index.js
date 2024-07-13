@@ -1929,7 +1929,7 @@ async function addDaysToDate(date, daysToAdd, considerWorkingDays = false) {
 
   if (considerWorkingDays) {
     const nextWorkingDay = await getNextWorkingDay(new Date(newDate));
-    return new Date(nextWorkingDay).toISOString().slice(0, 10);
+    return new Date(nextWorkingDay).inputField;
   }
 
   return formatDateTime(newDate).inputField;
