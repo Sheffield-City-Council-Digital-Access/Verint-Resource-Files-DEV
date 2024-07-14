@@ -415,15 +415,15 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- REMOVE TAB INDEX FROM SELECT ELEMENTS ----------------------------- \\
 
-  // $('.remove-tab').each(function () {
-  //   $(this).attr('tabindex', '-1');
-  // });
+  $('.remove-tab').each(function () {
+    $(this).attr('tabindex', '-1');
+  });
 
   // --- SET FORM START DATE AND TIME -------------------------------------- \\
 
-  if (!kdf.form.ref) {
-    KDF.setVal('txt_start_date_and_time', formatDateTime().utc);
-  }
+  // if (!kdf.form.ref) {
+  //   KDF.setVal('txt_start_date_and_time', formatDateTime().utc);
+  // }
 
   // --- APPLY INTERNAL SYLE CHANGES --------------------------------------- \\
 
