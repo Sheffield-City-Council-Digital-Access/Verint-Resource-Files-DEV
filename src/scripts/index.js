@@ -421,9 +421,9 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- SET FORM START DATE AND TIME -------------------------------------- \\
 
-  // if (!kdf.form.ref) {
-  //   KDF.setVal('txt_start_date_and_time', formatDateTime().utc);
-  // }
+  if (!kdf.form.ref) {
+    KDF.setVal('txt_start_date_and_time', formatDateTime().utc);
+  }
 
   // --- APPLY INTERNAL SYLE CHANGES --------------------------------------- \\
 
@@ -443,18 +443,18 @@ function handleOnReadyEvent(event, kdf) {
 
     // --- CHECK AGENT LOCATION -------------------------------------------- \\
 
-    if (kdf.form.name !== 'set_agent_location' && !kdf.form.caseid) {
-      checkAndRefreshAgentLocation();
-      // Event listener for closeModal event
-      window.addEventListener('closeModal', function (event) {
-        KDF.setVal('txt_agent_location', event.detail);
-        const modalId = 'setAgentLocationModal';
-        const modal = document.getElementById(modalId);
-        if (modal) {
-          destroyModal(modal);
-        }
-      });
-    }
+    // if (kdf.form.name !== 'set_agent_location' && !kdf.form.caseid) {
+    //   checkAndRefreshAgentLocation();
+    //   // Event listener for closeModal event
+    //   window.addEventListener('closeModal', function (event) {
+    //     KDF.setVal('txt_agent_location', event.detail);
+    //     const modalId = 'setAgentLocationModal';
+    //     const modal = document.getElementById(modalId);
+    //     if (modal) {
+    //       destroyModal(modal);
+    //     }
+    //   });
+    // }
   }
 
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
