@@ -411,13 +411,13 @@ function handleInitialisingEvent(addDateMessages) {
 
 function handleOnReadyEvent(event, kdf) {
 
-  // customerState = kdf.customerset;
+  customerState = kdf.customerset;
 
   // --- REMOVE TAB INDEX FROM SELECT ELEMENTS ----------------------------- \\
 
-  $('.remove-tab').each(function () {
-    $(this).attr('tabindex', '-1');
-  });
+  // $('.remove-tab').each(function () {
+  //   $(this).attr('tabindex', '-1');
+  // });
 
   // --- SET FORM START DATE AND TIME -------------------------------------- \\
 
