@@ -409,216 +409,216 @@ function handleInitialisingEvent(addDateMessages) {
 
 // --- HANDLE ON READY EVENT ----------------------------------------------- \\
 
-function handleOnReadyEvent(event, kdf) {
+// function handleOnReadyEvent(event, kdf) {
 
-  customerState = kdf.customerset;
+//   customerState = kdf.customerset;
 
-  // --- REMOVE TAB INDEX FROM SELECT ELEMENTS ----------------------------- \\
+//   // --- REMOVE TAB INDEX FROM SELECT ELEMENTS ----------------------------- \\
 
-  $('.remove-tab').each(function () {
-    $(this).attr('tabindex', '-1');
-  });
+//   $('.remove-tab').each(function () {
+//     $(this).attr('tabindex', '-1');
+//   });
 
-  // --- SET FORM START DATE AND TIME -------------------------------------- \\
+//   // --- SET FORM START DATE AND TIME -------------------------------------- \\
 
-  if (!kdf.form.ref) {
-    KDF.setVal('txt_start_date_and_time', formatDateTime().utc);
-  }
+//   if (!kdf.form.ref) {
+//     KDF.setVal('txt_start_date_and_time', formatDateTime().utc);
+//   }
 
-  // --- APPLY INTERNAL SYLE CHANGES --------------------------------------- \\
+//   // --- APPLY INTERNAL SYLE CHANGES --------------------------------------- \\
 
-  if (KDF.kdf().access === 'agent') {
-    const root = document.documentElement;
+//   if (KDF.kdf().access === 'agent') {
+//     const root = document.documentElement;
 
-    // --- APPLY INTERNAL SYLE CHANGES ------------------------------------- \\
+//     // --- APPLY INTERNAL SYLE CHANGES ------------------------------------- \\
 
-    root.style.setProperty('--color-background', '#eeeeee');
-    root.style.setProperty('--color-empty-pb', '#e0e0e0');
-    root.style.setProperty('--color-primary', '#007aff');
+//     root.style.setProperty('--color-background', '#eeeeee');
+//     root.style.setProperty('--color-empty-pb', '#e0e0e0');
+//     root.style.setProperty('--color-primary', '#007aff');
 
-    $("form.dform").css({
-      "margin": "0 auto",
-      "min-height": "88vh"
-    });
+//     $("form.dform").css({
+//       "margin": "0 auto",
+//       "min-height": "88vh"
+//     });
 
-    // --- CHECK AGENT LOCATION -------------------------------------------- \\
+//     // --- CHECK AGENT LOCATION -------------------------------------------- \\
 
-    // if (kdf.form.name !== 'set_agent_location' && !kdf.form.caseid) {
-    //   checkAndRefreshAgentLocation();
-    //   // Event listener for closeModal event
-    //   window.addEventListener('closeModal', function (event) {
-    //     KDF.setVal('txt_agent_location', event.detail);
-    //     const modalId = 'setAgentLocationModal';
-    //     const modal = document.getElementById(modalId);
-    //     if (modal) {
-    //       destroyModal(modal);
-    //     }
-    //   });
-    // }
-  }
+//     if (kdf.form.name !== 'set_agent_location' && !kdf.form.caseid) {
+//       checkAndRefreshAgentLocation();
+//       // Event listener for closeModal event
+//       window.addEventListener('closeModal', function (event) {
+//         KDF.setVal('txt_agent_location', event.detail);
+//         const modalId = 'setAgentLocationModal';
+//         const modal = document.getElementById(modalId);
+//         if (modal) {
+//           destroyModal(modal);
+//         }
+//       });
+//     }
+//   }
 
-  // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
+//   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
 
-  if (kdf.form.caseid && kdf.form.ref) {
-    KDF.showPage('page_review');
-    KDF.gotoPage('page_review');
-    $('.review-page-edit-button').remove();
-    $('.dform_section_box_review div[data-type="buttonset"]').remove();
-  }
+//   if (kdf.form.caseid && kdf.form.ref) {
+//     KDF.showPage('page_review');
+//     KDF.gotoPage('page_review');
+//     $('.review-page-edit-button').remove();
+//     $('.dform_section_box_review div[data-type="buttonset"]').remove();
+//   }
 
-  // --- HANDLE FORMAT TITLE CASE ------------------------------------------ \\
+//   // --- HANDLE FORMAT TITLE CASE ------------------------------------------ \\
 
-  $('.format-title-case').on('change', event => {
-    $(`#${event.target.id}`).val(formatTitleCase(event.target.value));
-  });
+//   $('.format-title-case').on('change', event => {
+//     $(`#${event.target.id}`).val(formatTitleCase(event.target.value));
+//   });
 
-  // --- HANDLE ADDRESS LOOKUP --------------------------------------------- \\
+//   // --- HANDLE ADDRESS LOOKUP --------------------------------------------- \\
 
-  $('.search-results').on('change', event => {
-    if (event.target.value) {
-      const action = addressSearchType[getCurrentPageId()] === 'local' ? 'retrieve-local-address' : 'retrieve-national-address';
-      KDF.customdata(action, event.target.id, true, true, { propertyId: event.target.value });
-    }
-  });
+//   $('.search-results').on('change', event => {
+//     if (event.target.value) {
+//       const action = addressSearchType[getCurrentPageId()] === 'local' ? 'retrieve-local-address' : 'retrieve-national-address';
+//       KDF.customdata(action, event.target.id, true, true, { propertyId: event.target.value });
+//     }
+//   });
 
-  $('.address-details').on('click', event => {
-    resetAddressSearch(false);
-    showAddressFields();
-  });
+//   $('.address-details').on('click', event => {
+//     resetAddressSearch(false);
+//     showAddressFields();
+//   });
 
-  // --- HANDLE VEHICLE LOOKUP --------------------------------------------- \\
+//   // --- HANDLE VEHICLE LOOKUP --------------------------------------------- \\
 
-  $('.vehicle-details').on('click', event => {
-    resetVehicleSearch(false);
-    showVehicleFields();
-  });
+//   $('.vehicle-details').on('click', event => {
+//     resetVehicleSearch(false);
+//     showVehicleFields();
+//   });
 
-  // --- HANDLE CUSTOM DATE ------------------------------------------------ \\
+//   // --- HANDLE CUSTOM DATE ------------------------------------------------ \\
 
-  $(`.date-field`).find('.dform_validationMessage').hide();
+//   $(`.date-field`).find('.dform_validationMessage').hide();
 
-  $(`.date-dd`)
-    .on("input focusout", function (e) {
-      const parentId = $(this).attr('id').replace("_num_", "_date_").slice(0, -3);
-      if (e.type === "input") {
-        inputDate(this.id, `${this.id.slice(0, -2)}mm`, e.which);
-        return;
-      }
-      if (this.value) $(this).val($(this).val().padStart(2, "0"));
-      handleDateValidation(parentId);
-    });
+//   $(`.date-dd`)
+//     .on("input focusout", function (e) {
+//       const parentId = $(this).attr('id').replace("_num_", "_date_").slice(0, -3);
+//       if (e.type === "input") {
+//         inputDate(this.id, `${this.id.slice(0, -2)}mm`, e.which);
+//         return;
+//       }
+//       if (this.value) $(this).val($(this).val().padStart(2, "0"));
+//       handleDateValidation(parentId);
+//     });
 
-  $(`.date-mm`)
-    .on("input focusout", function (e) {
-      const parentId = $(this).attr('id').replace("_num_", "_date_").slice(0, -3);
-      const dateMessage = dateMessages[parentId] || defaultDateMessage;
-      const dd = $(`#${this.id.slice(0, -2)}dd`).val();
-      const yy = $(`#${this.id.slice(0, -2)}yy`).val();
-      if (e.type === "input") {
-        inputDate(this.id, `${this.id.slice(0, -2)}yy`, e.which);
-        return;
-      }
-      if (this.value) {
-        $(this).val($(this).val().padStart(2, "0"));
-        return;
-      }
-      if (dd === "") $(`#${this.id.slice(0, -2)}dd`).addClass("dform_fielderror");
-      if (yy === "") $(`#${this.id.slice(0, -2)}yy`).addClass("dform_fielderror");
-      $(`#${parentId}`)
-        .find(".dform_validationMessage")
-        .text(dateMessage)
-        .show();
-      handleDateValidation(parentId);
-    });
+//   $(`.date-mm`)
+//     .on("input focusout", function (e) {
+//       const parentId = $(this).attr('id').replace("_num_", "_date_").slice(0, -3);
+//       const dateMessage = dateMessages[parentId] || defaultDateMessage;
+//       const dd = $(`#${this.id.slice(0, -2)}dd`).val();
+//       const yy = $(`#${this.id.slice(0, -2)}yy`).val();
+//       if (e.type === "input") {
+//         inputDate(this.id, `${this.id.slice(0, -2)}yy`, e.which);
+//         return;
+//       }
+//       if (this.value) {
+//         $(this).val($(this).val().padStart(2, "0"));
+//         return;
+//       }
+//       if (dd === "") $(`#${this.id.slice(0, -2)}dd`).addClass("dform_fielderror");
+//       if (yy === "") $(`#${this.id.slice(0, -2)}yy`).addClass("dform_fielderror");
+//       $(`#${parentId}`)
+//         .find(".dform_validationMessage")
+//         .text(dateMessage)
+//         .show();
+//       handleDateValidation(parentId);
+//     });
 
-  $(`.date-yy`)
-    .attr("min", function () {
-      const hasFutureClass = $(this).closest('.date-field').hasClass('future');
-      return hasFutureClass ? new Date().getFullYear() : new Date().getFullYear() - 120;
-    })
-    .attr("max", function () {
-      const hasFutureClass = $(this).closest('.date-field').hasClass('future');
-      return hasFutureClass ? new Date().getFullYear() + 5 : new Date().getFullYear();
-    })
-    .on("input focusout", function (e) {
-      const parentId = $(this).attr('id').replace("_num_", "_date_").slice(0, -3);
-      const dateMessage = dateMessages[parentId] || defaultDateMessage;
-      const dd = $(`#${this.id.slice(0, -2)}dd`).val() !== "" ? true : false;
-      const mm = $(`#${this.id.slice(0, -2)}mm`).val() !== "" ? true : false;
-      $(`#${parentId}`)
-        .find(".dform_validationMessage")
-        .text(dateMessage)
-        .hide();
-      if (e.type === "input") inputDate(this.id, null, e.which);
-      handleDateValidation(parentId);
-    });
+//   $(`.date-yy`)
+//     .attr("min", function () {
+//       const hasFutureClass = $(this).closest('.date-field').hasClass('future');
+//       return hasFutureClass ? new Date().getFullYear() : new Date().getFullYear() - 120;
+//     })
+//     .attr("max", function () {
+//       const hasFutureClass = $(this).closest('.date-field').hasClass('future');
+//       return hasFutureClass ? new Date().getFullYear() + 5 : new Date().getFullYear();
+//     })
+//     .on("input focusout", function (e) {
+//       const parentId = $(this).attr('id').replace("_num_", "_date_").slice(0, -3);
+//       const dateMessage = dateMessages[parentId] || defaultDateMessage;
+//       const dd = $(`#${this.id.slice(0, -2)}dd`).val() !== "" ? true : false;
+//       const mm = $(`#${this.id.slice(0, -2)}mm`).val() !== "" ? true : false;
+//       $(`#${parentId}`)
+//         .find(".dform_validationMessage")
+//         .text(dateMessage)
+//         .hide();
+//       if (e.type === "input") inputDate(this.id, null, e.which);
+//       handleDateValidation(parentId);
+//     });
 
-  // --- HANDLE SET REPORTER ----------------------------------------------- \\
+//   // --- HANDLE SET REPORTER ----------------------------------------------- \\
 
-  // Check if customer set state is true
-  if (KDF.kdf().customerset === 'agent_true' || KDF.kdf().customerset === 'citizen_true') {
-    handleSetReporter(new Date(kdf.profileData['profile-DateOfBirth']), kdf.profileData['profile-Address']);
-  }
+//   // Check if customer set state is true
+//   if (KDF.kdf().customerset === 'agent_true' || KDF.kdf().customerset === 'citizen_true') {
+//     handleSetReporter(new Date(kdf.profileData['profile-DateOfBirth']), kdf.profileData['profile-Address']);
+//   }
 
-  // --- HANDLE CHECK AGENT SET CUSTOMER ----------------------------------- \\
+//   // --- HANDLE CHECK AGENT SET CUSTOMER ----------------------------------- \\
 
-  $('#dform_widget_button_but_next_about_you').on('click', () => {
-    if (KDF.kdf().access === 'agent' && KDF.getVal('le_customer_set') === 'agent_false') {
-      KDF.sendDesktopAction('raised_by');
-    } else {
-      KDF.gotoNextPage();
-    }
-  });
+//   $('#dform_widget_button_but_next_about_you').on('click', () => {
+//     if (KDF.kdf().access === 'agent' && KDF.getVal('le_customer_set') === 'agent_false') {
+//       KDF.sendDesktopAction('raised_by');
+//     } else {
+//       KDF.gotoNextPage();
+//     }
+//   });
 
-  $('#dform_widget_button_but_submit_about_you').on('click', () => {
-    if (KDF.kdf().access === 'agent' && KDF.getVal('le_customer_set') === 'agent_false') {
-      KDF.sendDesktopAction('raised_by');
-    } else {
-      KDF.gotoPage('complete', true, true, false);
-    }
-  });
+//   $('#dform_widget_button_but_submit_about_you').on('click', () => {
+//     if (KDF.kdf().access === 'agent' && KDF.getVal('le_customer_set') === 'agent_false') {
+//       KDF.sendDesktopAction('raised_by');
+//     } else {
+//       KDF.gotoPage('complete', true, true, false);
+//     }
+//   });
 
-  // --- HANDLE AONYMOUS SUBMITION ----------------------------------------- \\
+//   // --- HANDLE AONYMOUS SUBMITION ----------------------------------------- \\
 
-  $('.anonymous-btn').on('click', () => {
-    KDF.hidePage('page_about_you');
+//   $('.anonymous-btn').on('click', () => {
+//     KDF.hidePage('page_about_you');
 
-    // Clear any entered customer data
-    KDF.setVal('sel_title', '');
-    KDF.setVal('txt_forename', 'Remained');
-    KDF.setVal('txt_surname', 'Anonymous');
-    KDF.setVal('dform_widget_num_date_of_birth_about_you_dd', '');
-    KDF.setVal('dform_widget_num_date_of_birth_about_you_mm', '');
-    KDF.setVal('dform_widget_num_date_of_birth_about_you_yy', '');
-    KDF.setVal('txt_date_of_birth_about_you', '');
-    KDF.setVal('dt_date_of_birth_about_you', '');
-    KDF.setVal('eml_address', '');
-    KDF.setVal('tel_phone_number', '');
-    KDF.setVal('txt_find_postcode_about_you', '');
-    KDF.setVal('sel_search_results_about_you', '');
-    KDF.setVal('txt_property_about_you', '');
-    KDF.setVal('txt_street_name_about_you', '');
-    KDF.setVal('txt_city_about_you', '');
-    KDF.setVal('txt_postcode_about_you', '');
-    KDF.setVal('txt_full_address_about_you', '');
+//     // Clear any entered customer data
+//     KDF.setVal('sel_title', '');
+//     KDF.setVal('txt_forename', 'Remained');
+//     KDF.setVal('txt_surname', 'Anonymous');
+//     KDF.setVal('dform_widget_num_date_of_birth_about_you_dd', '');
+//     KDF.setVal('dform_widget_num_date_of_birth_about_you_mm', '');
+//     KDF.setVal('dform_widget_num_date_of_birth_about_you_yy', '');
+//     KDF.setVal('txt_date_of_birth_about_you', '');
+//     KDF.setVal('dt_date_of_birth_about_you', '');
+//     KDF.setVal('eml_address', '');
+//     KDF.setVal('tel_phone_number', '');
+//     KDF.setVal('txt_find_postcode_about_you', '');
+//     KDF.setVal('sel_search_results_about_you', '');
+//     KDF.setVal('txt_property_about_you', '');
+//     KDF.setVal('txt_street_name_about_you', '');
+//     KDF.setVal('txt_city_about_you', '');
+//     KDF.setVal('txt_postcode_about_you', '');
+//     KDF.setVal('txt_full_address_about_you', '');
 
-    KDF.gotoPage('complete', true, true, false);
-  });
+//     KDF.gotoPage('complete', true, true, false);
+//   });
 
-  // --- HANDLE CLOSE CASE CLICK ------------------------------------------- \\
+//   // --- HANDLE CLOSE CASE CLICK ------------------------------------------- \\
 
-  $('.close-case-btn').on('click', (event) => {
-    if (checkIsFormComplete(fieldsToCheckBeforeClose)) {
-      const noteDetails = KDF.getVal('txta_closure_details') ? ` - ${KDF.getVal('txta_closure_details')}` : '';
-      KDF.customdata('close-case', event.target.name, true, true, {
-        caseNote: `${KDF.getVal('sel_closure_reason')}${noteDetails}`
-      });
-    } else {
-      KDF.showError('Please ensure all fields have been completed.');
-    }
-  });
+//   $('.close-case-btn').on('click', (event) => {
+//     if (checkIsFormComplete(fieldsToCheckBeforeClose)) {
+//       const noteDetails = KDF.getVal('txta_closure_details') ? ` - ${KDF.getVal('txta_closure_details')}` : '';
+//       KDF.customdata('close-case', event.target.name, true, true, {
+//         caseNote: `${KDF.getVal('sel_closure_reason')}${noteDetails}`
+//       });
+//     } else {
+//       KDF.showError('Please ensure all fields have been completed.');
+//     }
+//   });
 
-}
+// }
 
 // --- HANDLE ON PAGE CHANGE EVENT ----------------------------------------- \\
 
