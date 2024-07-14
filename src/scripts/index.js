@@ -554,7 +554,7 @@ function handleOnReadyEvent(event, kdf) {
     });
 
   // --- HANDLE SET REPORTER ----------------------------------------------- \\
-
+  // erroring
   // Check if customer set state is true
   // if (KDF.kdf().customerset === 'agent_true' || KDF.kdf().customerset === 'citizen_true') {
   //   handleSetReporter(new Date(kdf.profileData['profile-DateOfBirth']), kdf.profileData['profile-Address']);
