@@ -411,7 +411,7 @@ function handleInitialisingEvent(addDateMessages) {
 
 function handleOnReadyEvent(event, kdf) {
 
-  customerState = kdf.customerset;
+  // customerState = kdf.customerset;
 
   // --- REMOVE TAB INDEX FROM SELECT ELEMENTS ----------------------------- \\
 
