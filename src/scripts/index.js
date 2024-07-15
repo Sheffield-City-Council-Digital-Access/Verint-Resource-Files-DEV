@@ -1855,7 +1855,7 @@ function updateLabel(name, value) {
   if (name.startsWith('but_')) {
     $(`#dform_widget_button_${name}`).html(value);
   } else {
-    $(`#dform_widget_${name}`).text(value);
+    $(`#dform_widget_label_${name}`).html(value);
   }
 }
 
