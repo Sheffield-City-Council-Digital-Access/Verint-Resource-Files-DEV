@@ -1868,9 +1868,13 @@ function updateMultipleValidationMessages(fields) {
 }
 
 function updateValidationMessage(name, value) {
-  $(`#dform_widget_${name}`)
-    .siblings(".dform_validationMessage")
-    .text(value);
+  if (name.startsWith('rad_')) {
+
+  } else {
+    $(`#dform_widget_${name}`)
+      .siblings(".dform_validationMessage")
+      .text(value);
+  }
 }
 
 // --- CHECK DATE FUNCTIONS ------------------------------------------------- \\
