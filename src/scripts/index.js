@@ -1845,7 +1845,7 @@ function hideShowMultipleElements(fields) {
 
 // --- UPDATE LABEL TEXT ---------------------------------------------------- \\
 
-function updateMultipleLables(fields) {
+function updateMultipleLabels(fields) {
   fields.map((field) => {
     updateLabel(field.name, field.value)
   });
@@ -1861,8 +1861,8 @@ function updateLabel(name, value) {
 
 // --- UPDATE VALUDATION TEXT ----------------------------------------------- \\
 
-function updateMultipleValidationMessages(data) {
-  data.map((field) => {
+function updateMultipleValidationMessages(fields) {
+  fields.map((field) => {
     updateValidationMessage(field.name, field.value)
   });
 }
