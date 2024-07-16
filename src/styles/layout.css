@@ -62,6 +62,11 @@ form.dform {
   margin-block: 4rem;
 }
 
+#dform_page_page_core_confirm_fields {
+  padding-inline: 6.5rem;
+  margin-inline: auto;
+}
+
 #dform_container .confirmation-container .dform_widget {
   margin: 0;
 }

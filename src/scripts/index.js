@@ -441,6 +441,10 @@ function handleOnReadyEvent(event, kdf) {
       "min-height": "88vh"
     });
 
+    $("#dform_page_complete").css({
+      "margin-inline": "0 40%"
+    });
+
     // --- CHECK AGENT LOCATION -------------------------------------------- \\
 
     if (kdf.form.name !== 'set_agent_location' && !kdf.form.caseid) {
