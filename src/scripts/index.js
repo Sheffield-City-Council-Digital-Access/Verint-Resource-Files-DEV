@@ -659,9 +659,9 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
       "padding": "16px",
       "background": "var(--color-white)"
     });
-    if (KDF.kdf().access === 'citizen') {
-      showContactTeamPanel();
-    }
+    // if (KDF.kdf().access === 'citizen') {
+    showContactTeamPanel();
+    // }
     KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
   }
 
@@ -751,7 +751,10 @@ function handleObjectIdSet(event, kdf, type, id) {
 
 function handleObjectIdLoaded(event, kdf, response, type, id) {
 
-  handleSetReporter(new Date(response['profile-DateOfBirth']), response['profile-Address']);
+  property = formatTitleCase(response['profile-AddressNumber']);
+  streetName = formatTitleCase(response['profile-AddressLine1']);
+  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${response['profile-AddressLine4']}, ${response['profile-Postcode']}`;
+  handleSetReporter(new Date(response['profile-DateOfBirth']), fullAddress);
 
   // if (pageName === 'page_about_you') {
   //   KDF.gotoNextPage();
@@ -1475,9 +1478,9 @@ const updateProgressBar = currentPageIndex => {
 
 function handleSetReporter(date, address) {
   // Set date to input fields and trigger change
-  $('#dform_widget_num_date_of_birth_about_you_dd').val(date.getDate()).blur();
-  $('#dform_widget_num_date_of_birth_about_you_mm').val(date.getMonth() + 1).blur();
-  $('#dform_widget_num_date_of_birth_about_you_yy').val(date.getFullYear()).blur();
+  $('#dform_widget_num_date_of_birth_dd').val(date.getDate()).blur();
+  $('#dform_widget_num_date_of_birth_mm').val(date.getMonth() + 1).blur();
+  $('#dform_widget_num_date_of_birth_yy').val(date.getFullYear()).blur();
 
   // 
   KDF.hideSection('area_address_lookup_about_you');
