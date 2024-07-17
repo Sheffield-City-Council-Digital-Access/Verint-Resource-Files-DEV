@@ -616,10 +616,7 @@ function handleOnReadyEvent(event, kdf) {
 
   $('.close-case-btn').on('click', (event) => {
     if (checkIsFormComplete(fieldsToCheckBeforeClose)) {
-      const noteDetails = KDF.getVal('txta_closure_details') ? ` - ${KDF.getVal('txta_closure_details')}` : '';
-      KDF.customdata('close-case', event.target.name, true, true, {
-        caseNote: `${KDF.getVal('sel_closure_reason')}${noteDetails}`
-      });
+      KDF.gotoPage('complete', false, false, false);
     } else {
       KDF.showError('Please ensure all fields have been completed.');
     }
@@ -1742,6 +1739,13 @@ function checkIsFormComplete(fields) {
     }
   });
   return isComplete;
+}
+
+function closeCase() {
+  const noteDetails = KDF.getVal('txta_closure_details') ? ` - ${KDF.getVal('txta_closure_details')}` : '';
+  KDF.customdata('close-case', '_KDF_complete', true, true, {
+    caseNote: `${KDF.getVal('sel_closure_reason')}${noteDetails}`
+  });
 }
 
 // --- FORMATING FUNCTIONS -------------------------------------------------- \\
