@@ -463,12 +463,12 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
 
-  if (kdf.form.caseid && kdf.form.ref) {
-    KDF.showPage('page_review');
-    KDF.gotoPage('page_review');
-    $('.review-page-edit-button').remove();
-    $('.dform_section_box_review div[data-type="buttonset"]').remove();
-  }
+  // if (kdf.form.caseid && kdf.form.ref) {
+  //   KDF.showPage('page_review');
+  //   KDF.gotoPage('page_review');
+  //   $('.review-page-edit-button').remove();
+  //   $('.dform_section_box_review div[data-type="buttonset"]').remove();
+  // }
 
   // --- HANDLE FORMAT TITLE CASE ------------------------------------------ \\
 
@@ -561,7 +561,10 @@ function handleOnReadyEvent(event, kdf) {
   // erroring
   // Check if customer set state is true
   // if (KDF.kdf().customerset === 'agent_true' || KDF.kdf().customerset === 'citizen_true') {
-  //   handleSetReporter(new Date(kdf.profileData['profile-DateOfBirth']), kdf.profileData['profile-Address']);
+  // property = formatTitleCase(kdf.profileData['profile-AddressNumber']);
+  // streetName = formatTitleCase(kdf.profileData['profile-AddressLine1']);
+  // fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${kdf.profileData['profile-AddressLine4']}, ${kdf.profileData['profile-Postcode']}`;
+  //   handleSetReporter(new Date(kdf.profileData['profile-DateOfBirth']), fullAddress);
   // }
 
   // --- HANDLE CHECK AGENT SET CUSTOMER ----------------------------------- \\
