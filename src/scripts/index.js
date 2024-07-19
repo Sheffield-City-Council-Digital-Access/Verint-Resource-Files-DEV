@@ -612,9 +612,15 @@ function handleOnReadyEvent(event, kdf) {
     KDF.gotoPage('complete', true, true, false);
   });
 
+  // --- HANDLE SAVE AND EXIT CLICK ---------------------------------------- \\
+
+  $('.save-exit-btn').on('click', () => {
+    KDF.save();
+  });
+
   // --- HANDLE CLOSE CASE CLICK ------------------------------------------- \\
 
-  $('.close-case-btn').on('click', (event) => {
+  $('.close-case-btn').on('click', () => {
     if (checkIsFormComplete(fieldsToCheckBeforeClose)) {
       KDF.gotoPage('complete', false, false, false);
     } else {
