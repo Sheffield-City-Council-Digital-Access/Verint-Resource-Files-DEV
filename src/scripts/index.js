@@ -466,7 +466,7 @@ function handleOnReadyEvent(event, kdf) {
   if (kdf.form.caseid && kdf.form.ref) {
     KDF.showPage('page_review');
     KDF.gotoPage('page_review');
-    if (!form.name.startsWith('cm_') && !value.endsWith('_cm')) {
+    if (!form.name.startsWith('cm_') && !form.name.endsWith('_cm')) {
       $('.review-page-edit-button').remove();
       $('.dform_section_box_review div[data-type="buttonset"]').remove();
     }
