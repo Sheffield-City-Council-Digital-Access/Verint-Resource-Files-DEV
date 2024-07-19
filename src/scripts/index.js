@@ -21,6 +21,8 @@ const defaultDateMessage = "Enter the date in the correct format";
 
 const dateMessages = {};
 
+let fieldsToCheckBeforeClose = [];
+
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
 function handleInitialisingEvent(addDateMessages) {
 
