@@ -1752,7 +1752,7 @@ function checkIsFormComplete(fields) {
 }
 
 function closeCase() {
-  const noteDetails = KDF.getVal('txta_closure_details') ? ` - ${KDF.getVal('txta_closure_details')}` : '';
+  const noteDetails = KDF.getVal('txta_closure_details') ? `${KDF.getVal('txta_closure_details')}` : '';
   KDF.customdata('close-case', '_KDF_complete', true, true, {
     caseNote: `${KDF.getVal('sel_closure_reason')}: ${noteDetails}`
   });
