@@ -1962,3 +1962,25 @@ async function addDaysToDate(date, daysToAdd, considerWorkingDays = false) {
 
   return formatDateTime(newDate).inputField;
 }
+
+// --- COOKIE FUNCTIONS ----------------------------------------------------- \\
+
+function setCookie(name, value, minutes) {
+  let expires = "";
+  if (minutes) {
+    const d = new Date();
+    d.setTime(d.getTime() + (minutes * 60 * 1000));
+    expires = `; expires=${d.toUTCString()}`;
+  }
+  document.cookie = `${name}=${encodeURIComponent(value)}${expires}; path=/`;
+}
+
+function getCookie(name) {
+  const nameEQ = name + "=";
+  const ca = document.cookie.split(';');
+
+  const cookies = ca.map(c => c.trim()); // Trim leading spaces
+  const foundCookie = cookies.find(c => c.startsWith(nameEQ));
+
+  return foundCookie ? decodeURIComponent(foundCookie.substring(nameEQ.length)) : null;
+}
