@@ -449,7 +449,7 @@ function handleOnReadyEvent(event, kdf) {
 
     // --- CHECK AGENT LOCATION -------------------------------------------- \\
 
-    if (kdf.form.name !== 'set_agent_location' && !kdf.form.caseid) {
+    if (kdf.access === 'agent' && kdf.form.name !== 'set_agent_location' && !kdf.form.caseid) {
       checkAndRefreshAgentLocation();
       // Event listener for closeModal event
       window.addEventListener('closeModal', function (event) {
@@ -465,19 +465,34 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
 
-  if (kdf.form.caseid && kdf.form.ref) {
+  // if (kdf.form.caseid && kdf.form.ref) {
+  //   KDF.showPage('page_review');
+  //   KDF.gotoPage('page_review');
+  if (kdf.form.complete === 'Y') {
     KDF.showPage('page_review');
     KDF.gotoPage('page_review');
-    if (KDF.kdf().access === 'agent') {
-      if (!kdf.form.name.startsWith('cm_') && !kdf.form.name.endsWith('_cm')) {
-        $('.dform_section_box_review div[data-type="buttonset"]').hide();
-      }
-      KDF.customdata('retrieve-process-status', '_KDF_ready', true, true, {});
+    if (kdf.access === 'agent') {
+      $('.review-page-edit-button').hide();
+      $('.dform_section_box_review div[data-type="buttonset"]').hide();
     } else {
       $('.review-page-edit-button').remove();
       $('.dform_section_box_review div[data-type="buttonset"]').remove();
     }
+  } else {
+    $(`div[data-type="page"][data-pos="${kdf.form.currentpage}"]`).each(function () {
+      KDF.gotoPage(this.id.slice(11));
+    });
   }
+  //     if (kdf.form.complete === 'Y') {
+
+  //   if (!kdf.form.name.startsWith('cm_') && !kdf.form.name.endsWith('_cm')) {
+  //     $('.dform_section_box_review div[data-type="buttonset"]').hide();
+  //   }
+  //   KDF.customdata('retrieve-process-status', '_KDF_ready', true, true, {});
+  // } else {
+  //   $('.review-page-edit-button').remove();
+  //   $('.dform_section_box_review div[data-type="buttonset"]').remove();
+  // }
 
   // --- HANDLE FORMAT TITLE CASE ------------------------------------------ \\
 
