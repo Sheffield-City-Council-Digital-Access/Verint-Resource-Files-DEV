@@ -471,12 +471,12 @@ function handleOnReadyEvent(event, kdf) {
   if (kdf.form.complete === 'Y') {
     KDF.showPage('page_review');
     KDF.gotoPage('page_review');
-    if (kdf.params.viewmode === 'r') {
+    if (kdf.params.viewmode === 'R') {
       $('.review-page-edit-button').remove();
       $('.dform_section_box_review div[data-type="buttonset"]').remove();
     }
   } else {
-    if (kdf.params.viewmode === 'r') {
+    if (kdf.params.viewmode === 'R') {
       KDF.showPage('page_review');
       KDF.gotoPage('page_review');
       $('.review-page-edit-button').remove();
