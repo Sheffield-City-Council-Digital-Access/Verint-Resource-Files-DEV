@@ -483,7 +483,7 @@ function handleOnReadyEvent(event, kdf) {
       $('.dform_section_box_review div[data-type="buttonset"]').remove();
     } else {
       $(`div[data-type="page"][data-pos="${kdf.form.currentpage}"]`).each(function () {
-        console.log(this.id.slice(11))
+        console.log(kdf.form.currentpage, this.id.slice(11))
         KDF.gotoPage(this.id.slice(11));
       });
     }
