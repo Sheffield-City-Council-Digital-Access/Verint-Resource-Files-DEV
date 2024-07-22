@@ -1573,36 +1573,42 @@ function getAndSetReviewPageData() {
   formUserPath.push(thisPageNumber);
   console.log(formUserPath);
 
+
+
+  // Reverse the user's path to look back at the visited pages
+  const formUserPathReversed = [...formUserPath].reverse();
+  const relevantPagesReversed = [];
+
+  // Determine relevant pages by looking back from the review page
+  for (let i = 0; i < formUserPathReversed.length - 1; i++) {
+    if (parseInt(formUserPathReversed[i]) > parseInt(formUserPathReversed[i + 1])) {
+      relevantPagesReversed.push(formUserPathReversed[i + 1]);
+    } else {
+      formUserPathReversed.splice(i + 1, 1);
+      i--;
+    }
+  }
+  let relevantPages = [];
+  relevantPages = [...relevantPagesReversed].reverse();
+  KDF.setVal('txt_pages', relevantPages.join(','));
+
   // Check if the review page is currently visible
   const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
+
   if (reviewPageIsVisible) {
     // Clear the review content HTML
     $("#review-page-content-container").html("");
 
-    // Reverse the user's path to look back at the visited pages
-    const formUserPathReversed = [...formUserPath].reverse();
-    const relevantPagesReversed = [];
-
-    // Determine relevant pages by looking back from the review page
-    for (let i = 0; i < formUserPathReversed.length - 1; i++) {
-      if (parseInt(formUserPathReversed[i]) > parseInt(formUserPathReversed[i + 1])) {
-        relevantPagesReversed.push(formUserPathReversed[i + 1]);
-      } else {
-        formUserPathReversed.splice(i + 1, 1);
-        i--;
-      }
-    }
-
     // Reverse the relevant pages to the correct order
-    let relevantPages = [];
-    console.log('relevantPages', relevantPages)
-    if (KDF.getVal('txt_pages')) {
-      relevantPages = KDF.getVal('txt_pages').split(",");
-    } else {
-      relevantPages = [...relevantPagesReversed].reverse();
-      console.log(relevantPages, relevantPages.join(','))
-      KDF.setVal('txt_pages', relevantPages.join(','));
-    }
+    // let relevantPages = [];
+    // console.log('relevantPages', relevantPages)
+    // if (KDF.getVal('txt_pages')) {
+    //   relevantPages = KDF.getVal('txt_pages').split(",");
+    // } else {
+    //   relevantPages = [...relevantPagesReversed].reverse();
+    //   console.log(relevantPages, relevantPages.join(','))
+    //   KDF.setVal('txt_pages', relevantPages.join(','));
+    // }
 
     // Find all form pages except the review page
     const formPages = $('.dform_page[data-active="true"]').not("#dform_page_page_review");
