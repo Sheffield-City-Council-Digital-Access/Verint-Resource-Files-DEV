@@ -1574,8 +1574,8 @@ function getAndSetReviewPageData() {
   console.log(formUserPath);
 
   // Check if the review page is currently visible
-  const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
-
+  // const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
+  const reviewPageIsVisible = true;
   if (reviewPageIsVisible) {
     // Clear the review content HTML
     $("#review-page-content-container").html("");
