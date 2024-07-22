@@ -1564,14 +1564,17 @@ const formUserPath = [];
 // Function to get and set data for the review page
 function getAndSetReviewPageData() {
   console.log('running getAndSetReviewPageData');
+
   // Find the currently active form page
   const activeFormPage = $('.dform_page[data-active="true"]:visible');
   // Get the page number of the current form page
   const thisPageNumber = activeFormPage.attr("data-pos");
 
-  // Add the current page number to the user's history
-  formUserPath.push(thisPageNumber);
-  console.log(formUserPath);
+  // Add the current page number to the user's history if not already there
+  if (!formUserPath.includes(thisPageNumber)) {
+    formUserPath.push(thisPageNumber);
+  }
+  console.log("Current formUserPath:", formUserPath);
 
   // Check if the review page is currently visible
   const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
@@ -1603,12 +1606,13 @@ function getAndSetReviewPageData() {
 
   // Reverse the relevant pages to the correct order
   let relevantPages = [];
-  console.log('relevantPages', relevantPages);
+  console.log('Relevant Pages (before checking txt_pages):', relevantPages);
+
   if (KDF.getVal('txt_pages')) {
     relevantPages = KDF.getVal('txt_pages').split(",");
   } else {
     relevantPages = [...relevantPagesReversed].reverse();
-    console.log(relevantPages, relevantPages.join(','));
+    console.log('Relevant Pages (after processing):', relevantPages);
     KDF.setVal('txt_pages', relevantPages.join(','));
   }
 
@@ -1644,7 +1648,7 @@ function getAndSetReviewPageData() {
 
       // Get the page header text
       const pageHeader = $(formPages[i]).find(".page-title").text();
-      $("#" + contentDivId).append(`<h3>${pageHeader}</h3`);
+      $("#" + contentDivId).append(`<h3>${pageHeader}</h3>`);
 
       // Find all visible fields on the page
       const pageFields = $(formPages[i])
@@ -1703,6 +1707,7 @@ function getAndSetReviewPageData() {
     }
   });
 }
+
 
 // --- CONTACT TEAM PANEL --------------------------------------------------- \\
 
