@@ -468,7 +468,12 @@ function handleOnReadyEvent(event, kdf) {
   if (kdf.form.caseid && kdf.form.ref) {
     KDF.showPage('page_review');
     KDF.gotoPage('page_review');
-    if (!kdf.form.name.startsWith('cm_') && !kdf.form.name.endsWith('_cm')) {
+    if (KDF.kdf().access === 'agent') {
+      if (!kdf.form.name.startsWith('cm_') && !kdf.form.name.endsWith('_cm')) {
+        $('.dform_section_box_review div[data-type="buttonset"]').hide();
+      }
+      KDF.customdata('retrieve-process-status', '_KDF_ready', true, true, {});
+    } else {
       $('.review-page-edit-button').remove();
       $('.dform_section_box_review div[data-type="buttonset"]').remove();
     }
@@ -917,6 +922,13 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       { alias: "model", display: true },
       { alias: "colour", display: false },
     ]);
+  }
+
+  if (action === 'retrieve-process-status') {
+    const { caseStatus, formStatus } = response.data;
+    if (formStatus === 'Y') {
+      $('.review-page-edit-button').remove();
+    }
   }
 }
 
