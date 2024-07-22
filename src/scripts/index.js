@@ -482,6 +482,8 @@ function handleOnReadyEvent(event, kdf) {
       if (kdf.params.viewmode === 'R') {
         $('.review-page-edit-button').remove();
         $('.dform_section_box_review div[data-type="buttonset"]').remove();
+      } else {
+        $('.dform_section_box_review div[data-type="buttonset"]').hide();
       }
     }
   }
@@ -1590,10 +1592,12 @@ function getAndSetReviewPageData() {
 
     // Reverse the relevant pages to the correct order
     let relevantPages = [];
+    console.log('relevantPages', relevantPages)
     if (KDF.getVal('txt_pages')) {
       relevantPages = KDF.getVal('txt_pages').split(",");
     } else {
       relevantPages = [...relevantPagesReversed].reverse();
+      console.log(relevantPages, relevantPages.join(','))
       KDF.setVal('txt_pages', relevantPages.join(','));
     }
 
