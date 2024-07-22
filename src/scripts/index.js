@@ -21,6 +21,8 @@ const defaultDateMessage = "Enter the date in the correct format";
 
 const dateMessages = {};
 
+let fieldsToCheckBeforeClose = [];
+
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
 function handleInitialisingEvent(addDateMessages) {
 
@@ -441,9 +443,13 @@ function handleOnReadyEvent(event, kdf) {
       "min-height": "88vh"
     });
 
+    $("#dform_page_complete").css({
+      "margin-inline": "0 40%"
+    });
+
     // --- CHECK AGENT LOCATION -------------------------------------------- \\
 
-    if (kdf.form.name !== 'set_agent_location' && !kdf.form.caseid) {
+    if (kdf.access === 'agent' && kdf.form.name !== 'set_agent_location' && !kdf.form.caseid) {
       checkAndRefreshAgentLocation();
       // Event listener for closeModal event
       window.addEventListener('closeModal', function (event) {
@@ -459,12 +465,38 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
 
-  if (kdf.form.caseid && kdf.form.ref) {
+  // if (kdf.form.caseid && kdf.form.ref) {
+  //   KDF.showPage('page_review');
+  //   KDF.gotoPage('page_review');
+  if (kdf.form.complete === 'Y') {
     KDF.showPage('page_review');
     KDF.gotoPage('page_review');
+    // if (kdf.params.viewmode === 'R') {
     $('.review-page-edit-button').remove();
     $('.dform_section_box_review div[data-type="buttonset"]').remove();
+    // }
+  } else {
+    if (kdf.form.caseid && kdf.form.ref) {
+      KDF.showPage('page_review');
+      KDF.gotoPage('page_review');
+      if (kdf.params.viewmode === 'R') {
+        $('.review-page-edit-button').remove();
+        $('.dform_section_box_review div[data-type="buttonset"]').remove();
+      } else {
+        $('.dform_section_box_review div[data-type="buttonset"]').hide();
+      }
+    }
   }
+  //     if (kdf.form.complete === 'Y') {
+
+  //   if (!kdf.form.name.startsWith('cm_') && !kdf.form.name.endsWith('_cm')) {
+  //     $('.dform_section_box_review div[data-type="buttonset"]').hide();
+  //   }
+  //   KDF.customdata('retrieve-process-status', '_KDF_ready', true, true, {});
+  // } else {
+  //   $('.review-page-edit-button').remove();
+  //   $('.dform_section_box_review div[data-type="buttonset"]').remove();
+  // }
 
   // --- HANDLE FORMAT TITLE CASE ------------------------------------------ \\
 
@@ -554,11 +586,14 @@ function handleOnReadyEvent(event, kdf) {
     });
 
   // --- HANDLE SET REPORTER ----------------------------------------------- \\
-
+  // erroring
   // Check if customer set state is true
-  if (KDF.kdf().customerset === 'agent_true' || KDF.kdf().customerset === 'citizen_true') {
-    handleSetReporter(new Date(kdf.profileData['profile-DateOfBirth']), kdf.profileData['profile-Address']);
-  }
+  // if (KDF.kdf().customerset === 'agent_true' || KDF.kdf().customerset === 'citizen_true') {
+  // property = formatTitleCase(kdf.profileData['profile-AddressNumber']);
+  // streetName = formatTitleCase(kdf.profileData['profile-AddressLine1']);
+  // fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${kdf.profileData['profile-AddressLine4']}, ${kdf.profileData['profile-Postcode']}`;
+  //   handleSetReporter(new Date(kdf.profileData['profile-DateOfBirth']), fullAddress);
+  // }
 
   // --- HANDLE CHECK AGENT SET CUSTOMER ----------------------------------- \\
 
@@ -605,14 +640,17 @@ function handleOnReadyEvent(event, kdf) {
     KDF.gotoPage('complete', true, true, false);
   });
 
+  // --- HANDLE SAVE AND EXIT CLICK ---------------------------------------- \\
+
+  $('.save-exit-btn').on('click', () => {
+    KDF.save();
+  });
+
   // --- HANDLE CLOSE CASE CLICK ------------------------------------------- \\
 
-  $('.close-case-btn').on('click', (event) => {
+  $('.close-case-btn').on('click', () => {
     if (checkIsFormComplete(fieldsToCheckBeforeClose)) {
-      const noteDetails = KDF.getVal('txta_closure_details') ? ` - ${KDF.getVal('txta_closure_details')}` : '';
-      KDF.customdata('close-case', event.target.name, true, true, {
-        caseNote: `${KDF.getVal('sel_closure_reason')}${noteDetails}`
-      });
+      KDF.gotoPage('complete', false, false, false);
     } else {
       KDF.showError('Please ensure all fields have been completed.');
     }
@@ -624,6 +662,7 @@ function handleOnReadyEvent(event, kdf) {
 
 function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   KDF.hideMessages();
+  logArguments(event, kdf, currentpageid, targetpageid)
 
   // Get the name for the current page
   $(`div[data-type="page"][data-pos="${currentpageid}"]`).each(function () {
@@ -659,12 +698,13 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
       "padding": "16px",
       "background": "var(--color-white)"
     });
-    if (KDF.kdf().access === 'citizen') {
-      showContactTeamPanel();
-    }
+    // if (KDF.kdf().access === 'citizen') {
+    showContactTeamPanel();
+    // }
     KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
   }
 
+  console.log('run getAndSetReviewPageData')
   getAndSetReviewPageData();
 
 }
@@ -738,8 +778,8 @@ function handleMapClickEvent(event, kdf, type, name, map, positionLayer, markerL
 
 function handleObjectIdSet(event, kdf, type, id) {
 
-  KDF.setVal('le_reporter_obj_type', type);
-  KDF.setVal('le_reporter_obj_id', id);
+  KDF.setVal('txt_reporter_obj_type', type);
+  KDF.setVal('num_reporter_obj_id', id);
 
   // Update customer set state
   customerState = 'agent_true';
@@ -751,7 +791,10 @@ function handleObjectIdSet(event, kdf, type, id) {
 
 function handleObjectIdLoaded(event, kdf, response, type, id) {
 
-  handleSetReporter(new Date(response['profile-DateOfBirth']), response['profile-Address']);
+  property = formatTitleCase(response['profile-AddressNumber']);
+  streetName = formatTitleCase(response['profile-AddressLine1']);
+  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${response['profile-AddressLine4']}, ${response['profile-Postcode']}`;
+  handleSetReporter(new Date(response['profile-DateOfBirth']), fullAddress);
 
   // if (pageName === 'page_about_you') {
   //   KDF.gotoNextPage();
@@ -900,6 +943,13 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       { alias: "model", display: true },
       { alias: "colour", display: false },
     ]);
+  }
+
+  if (action === 'retrieve-process-status') {
+    const { caseStatus, formStatus } = response.data;
+    if (formStatus === 'Y') {
+      $('.review-page-edit-button').remove();
+    }
   }
 }
 
@@ -1475,9 +1525,9 @@ const updateProgressBar = currentPageIndex => {
 
 function handleSetReporter(date, address) {
   // Set date to input fields and trigger change
-  $('#dform_widget_num_date_of_birth_about_you_dd').val(date.getDate()).blur();
-  $('#dform_widget_num_date_of_birth_about_you_mm').val(date.getMonth() + 1).blur();
-  $('#dform_widget_num_date_of_birth_about_you_yy').val(date.getFullYear()).blur();
+  $('#dform_widget_num_date_of_birth_dd').val(date.getDate()).blur();
+  $('#dform_widget_num_date_of_birth_mm').val(date.getMonth() + 1).blur();
+  $('#dform_widget_num_date_of_birth_yy').val(date.getFullYear()).blur();
 
   // 
   KDF.hideSection('area_address_lookup_about_you');
@@ -1513,6 +1563,7 @@ const formUserPath = [];
 
 // Function to get and set data for the review page
 function getAndSetReviewPageData() {
+  console.log('running getAndSetReviewPageData')
   // Find the currently active form page
   const activeFormPage = $('.dform_page[data-active="true"]:visible');
   // Get the page number of the current form page
@@ -1520,10 +1571,10 @@ function getAndSetReviewPageData() {
 
   // Add the current page number to the user's history
   formUserPath.push(thisPageNumber);
+  console.log(formUserPath);
 
   // Check if the review page is currently visible
   const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
-
   if (reviewPageIsVisible) {
     // Clear the review content HTML
     $("#review-page-content-container").html("");
@@ -1544,10 +1595,12 @@ function getAndSetReviewPageData() {
 
     // Reverse the relevant pages to the correct order
     let relevantPages = [];
+    console.log('relevantPages', relevantPages)
     if (KDF.getVal('txt_pages')) {
       relevantPages = KDF.getVal('txt_pages').split(",");
     } else {
       relevantPages = [...relevantPagesReversed].reverse();
+      console.log(relevantPages, relevantPages.join(','))
       KDF.setVal('txt_pages', relevantPages.join(','));
     }
 
@@ -1734,6 +1787,13 @@ function checkIsFormComplete(fields) {
   return isComplete;
 }
 
+function closeCase() {
+  const noteDetails = KDF.getVal('txta_closure_details') ? `${KDF.getVal('txta_closure_details')}` : '';
+  KDF.customdata('close-case', '_KDF_complete', true, true, {
+    caseNote: `${KDF.getVal('sel_closure_reason')}: ${noteDetails}`
+  });
+}
+
 // --- FORMATING FUNCTIONS -------------------------------------------------- \\
 
 // --- FORMATING TO TITLE CASE ---------------------------------------------- \\
@@ -1754,15 +1814,18 @@ function formatRemoveEccessWhiteSpace(value) {
 // --- FORMATING DATE AND TIME ---------------------------------------------- \\
 
 function formatDateTime(dateTime) {
+  let date;
   if (!dateTime) {
-    dateTime = Math.floor(Date.now() / 1000); // Use current time if no argument
+    date = new Date(); // Use current time if no argument
+
+  } else if (typeof dateTime === 'number') {
+    date = new Date(dateTime); // Assume dateTime is already a timestamp
+  } else {
+    date = new Date(dateTime); // Try to parse dateTime as a date string
   }
 
-  // Create a new Date object with options for UK locale and milliseconds
-  const date = new Date(dateTime * 1000);
-
   const year = date.getFullYear().toString();
-  const month = date.getMonth().toString().padStart(2, '0');
+  const month = (date.getMonth() + 1).toString().padStart(2, '0');
   const day = date.getDate().toString().padStart(2, '0');
   const hours = date.getHours().toString().padStart(2, '0');
   const minutes = date.getMinutes().toString().padStart(2, '0');
@@ -1794,7 +1857,8 @@ function formatDateTime(dateTime) {
       time: formatReadableTime(date)
     },
     iso: date.toISOString().replace(/\.\d{3}Z/, 'Z'),
-    utc: `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}Z`
+    utc: `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}Z`,
+    inputField: `${year}-${month}-${day}`,
   };
 }
 
@@ -1813,35 +1877,35 @@ function formatReadableTime(date) {
 
 function hideShowMultipleElements(fields) {
   fields.map((field) => {
-    console.log(field)
-    const name = field.name;
-    const display = field.display;
-
-    if (name.startsWith('page_')) {
-      if (display === 'true' || display === 'show') {
-        KDF.showPage(name);
-      } else {
-        KDF.hidePage(name);
-      }
-    } else if (name.startsWith('area_')) {
-      if (display === 'true' || display === 'show') {
-        KDF.showSection(name);
-      } else {
-        KDF.hideSection(name);
-      }
-    } else {
-      if (display === 'true' || display === 'show') {
-        KDF.showWidget(name);
-      } else {
-        KDF.hideWidget(name);
-      }
-    }
+    hideShowElement(field.name, field.display)
   });
+}
+
+function hideShowElement(name, display) {
+  if (name.startsWith('page_')) {
+    if (display === true || display === 'true' || display === 'show') {
+      KDF.showPage(name);
+    } else {
+      KDF.hidePage(name);
+    }
+  } else if (name.startsWith('area_')) {
+    if (display === true || display === 'true' || display === 'show') {
+      KDF.showSection(name);
+    } else {
+      KDF.hideSection(name);
+    }
+  } else {
+    if (display === true || display === 'true' || display === 'show') {
+      KDF.showWidget(name);
+    } else {
+      KDF.hideWidget(name);
+    }
+  }
 }
 
 // --- UPDATE LABEL TEXT ---------------------------------------------------- \\
 
-function updateMultipleLables(fields) {
+function updateMultipleLabels(fields) {
   fields.map((field) => {
     updateLabel(field.name, field.value)
   });
@@ -1851,22 +1915,26 @@ function updateLabel(name, value) {
   if (name.startsWith('but_')) {
     $(`#dform_widget_button_${name}`).html(value);
   } else {
-    $(`dform_widget_${name}`).text(value);
+    $(`#dform_widget_label_${name}`).html(value);
   }
 }
 
 // --- UPDATE VALUDATION TEXT ----------------------------------------------- \\
 
-function updateMultipleValidationMessages(data) {
-  data.map((field) => {
+function updateMultipleValidationMessages(fields) {
+  fields.map((field) => {
     updateValidationMessage(field.name, field.value)
   });
 }
 
 function updateValidationMessage(name, value) {
-  $(`#dform_widget_${name}`)
-    .siblings(".dform_validationMessage")
-    .text(value);
+  if (name.startsWith('rad_')) {
+
+  } else {
+    $(`#dform_widget_${name}`)
+      .siblings(".dform_validationMessage")
+      .text(value);
+  }
 }
 
 // --- CHECK DATE FUNCTIONS ------------------------------------------------- \\
@@ -1925,8 +1993,30 @@ async function addDaysToDate(date, daysToAdd, considerWorkingDays = false) {
 
   if (considerWorkingDays) {
     const nextWorkingDay = await getNextWorkingDay(new Date(newDate));
-    return nextWorkingDay;
+    return formatDateTime(nextWorkingDay).inputField;
   }
 
-  return newDate;
+  return formatDateTime(newDate).inputField;
+}
+
+// --- COOKIE FUNCTIONS ----------------------------------------------------- \\
+
+function setCookie(name, value, minutes) {
+  let expires = "";
+  if (minutes) {
+    const d = new Date();
+    d.setTime(d.getTime() + (minutes * 60 * 1000));
+    expires = `; expires=${d.toUTCString()}`;
+  }
+  document.cookie = `${name}=${encodeURIComponent(value)}${expires}; path=/`;
+}
+
+function getCookie(name) {
+  const nameEQ = name + "=";
+  const ca = document.cookie.split(';');
+
+  const cookies = ca.map(c => c.trim()); // Trim leading spaces
+  const foundCookie = cookies.find(c => c.startsWith(nameEQ));
+
+  return foundCookie ? decodeURIComponent(foundCookie.substring(nameEQ.length)) : null;
 }
