@@ -471,22 +471,18 @@ function handleOnReadyEvent(event, kdf) {
   if (kdf.form.complete === 'Y') {
     KDF.showPage('page_review');
     KDF.gotoPage('page_review');
-    if (kdf.params.viewmode === 'R') {
-      $('.review-page-edit-button').remove();
-      $('.dform_section_box_review div[data-type="buttonset"]').remove();
-    }
+    // if (kdf.params.viewmode === 'R') {
+    $('.review-page-edit-button').remove();
+    $('.dform_section_box_review div[data-type="buttonset"]').remove();
+    // }
   } else {
-    if (kdf.params.viewmode === 'R') {
+    if (kdf.form.caseid && kdf.form.ref) {
       KDF.showPage('page_review');
       KDF.gotoPage('page_review');
-      $('.review-page-edit-button').remove();
-      $('.dform_section_box_review div[data-type="buttonset"]').remove();
-    } else {
-      console.log('else')
-      $(`div[data-type="page"][data-pos="${kdf.form.currentpage}"]`).each(function () {
-        console.log(kdf.form.currentpage, this.id.slice(11))
-        KDF.gotoPage(this.id.slice(11));
-      });
+      if (kdf.params.viewmode === 'R') {
+        $('.review-page-edit-button').remove();
+        $('.dform_section_box_review div[data-type="buttonset"]').remove();
+      }
     }
   }
   //     if (kdf.form.complete === 'Y') {
