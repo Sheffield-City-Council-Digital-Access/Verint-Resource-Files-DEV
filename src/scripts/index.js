@@ -1841,30 +1841,30 @@ function formatReadableTime(date) {
 
 function hideShowMultipleElements(fields) {
   fields.map((field) => {
-    console.log(field)
-    const name = field.name;
-    const display = field.display;
-
-    if (name.startsWith('page_')) {
-      if (display === true || display === 'true' || display === 'show') {
-        KDF.showPage(name);
-      } else {
-        KDF.hidePage(name);
-      }
-    } else if (name.startsWith('area_')) {
-      if (display === true || display === 'true' || display === 'show') {
-        KDF.showSection(name);
-      } else {
-        KDF.hideSection(name);
-      }
-    } else {
-      if (display === true || display === 'true' || display === 'show') {
-        KDF.showWidget(name);
-      } else {
-        KDF.hideWidget(name);
-      }
-    }
+    hideShowElement(field.name, field.display)
   });
+}
+
+function hideShowElement(name, display) {
+  if (name.startsWith('page_')) {
+    if (display === true || display === 'true' || display === 'show') {
+      KDF.showPage(name);
+    } else {
+      KDF.hidePage(name);
+    }
+  } else if (name.startsWith('area_')) {
+    if (display === true || display === 'true' || display === 'show') {
+      KDF.showSection(name);
+    } else {
+      KDF.hideSection(name);
+    }
+  } else {
+    if (display === true || display === 'true' || display === 'show') {
+      KDF.showWidget(name);
+    } else {
+      KDF.hideWidget(name);
+    }
+  }
 }
 
 // --- UPDATE LABEL TEXT ---------------------------------------------------- \\
