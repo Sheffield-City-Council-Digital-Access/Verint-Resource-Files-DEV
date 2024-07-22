@@ -482,6 +482,7 @@ function handleOnReadyEvent(event, kdf) {
       $('.review-page-edit-button').remove();
       $('.dform_section_box_review div[data-type="buttonset"]').remove();
     } else {
+      console.log('else')
       $(`div[data-type="page"][data-pos="${kdf.form.currentpage}"]`).each(function () {
         console.log(kdf.form.currentpage, this.id.slice(11))
         KDF.gotoPage(this.id.slice(11));
