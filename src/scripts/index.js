@@ -704,6 +704,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
   }
 
+  console.log('run getAndSetReviewPageData')
   getAndSetReviewPageData();
 
 }
@@ -1562,6 +1563,7 @@ const formUserPath = [];
 
 // Function to get and set data for the review page
 function getAndSetReviewPageData() {
+  console.log('running getAndSetReviewPageData')
   // Find the currently active form page
   const activeFormPage = $('.dform_page[data-active="true"]:visible');
   // Get the page number of the current form page
@@ -1569,6 +1571,7 @@ function getAndSetReviewPageData() {
 
   // Add the current page number to the user's history
   formUserPath.push(thisPageNumber);
+  console.log(formUserPath);
 
   // Check if the review page is currently visible
   const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
