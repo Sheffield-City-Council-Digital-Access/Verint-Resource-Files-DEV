@@ -773,8 +773,8 @@ function handleMapClickEvent(event, kdf, type, name, map, positionLayer, markerL
 
 function handleObjectIdSet(event, kdf, type, id) {
 
-  KDF.setVal('le_reporter_obj_type', type);
-  KDF.setVal('le_reporter_obj_id', id);
+  KDF.setVal('txt_reporter_obj_type', type);
+  KDF.setVal('num_reporter_obj_id', id);
 
   // Update customer set state
   customerState = 'agent_true';
