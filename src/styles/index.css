@@ -144,3 +144,11 @@ ol {
   border: none !important;
   outline: none !important;
 }
+
+#skip a:focus {
+  z-index: 999;
+  position: absolute;
+  top: 20%;
+  left: 13%;
+  transform: translateX(-50%);
+}
