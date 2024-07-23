@@ -465,16 +465,13 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
 
-  // if (kdf.form.caseid && kdf.form.ref) {
-  //   KDF.showPage('page_review');
-  //   KDF.gotoPage('page_review');
   if (kdf.form.complete === 'Y') {
     KDF.showPage('page_review');
     KDF.gotoPage('page_review');
-    // if (kdf.params.viewmode === 'R') {
-    $('.review-page-edit-button').remove();
-    $('.dform_section_box_review div[data-type="buttonset"]').remove();
-    // }
+    if (kdf.params.viewmode === 'R') {
+      $('.review-page-edit-button').remove();
+      $('.dform_section_box_review div[data-type="buttonset"]').remove();
+    }
   } else {
     if (kdf.form.caseid && kdf.form.ref) {
       KDF.showPage('page_review');
@@ -487,16 +484,6 @@ function handleOnReadyEvent(event, kdf) {
       }
     }
   }
-  //     if (kdf.form.complete === 'Y') {
-
-  //   if (!kdf.form.name.startsWith('cm_') && !kdf.form.name.endsWith('_cm')) {
-  //     $('.dform_section_box_review div[data-type="buttonset"]').hide();
-  //   }
-  //   KDF.customdata('retrieve-process-status', '_KDF_ready', true, true, {});
-  // } else {
-  //   $('.review-page-edit-button').remove();
-  //   $('.dform_section_box_review div[data-type="buttonset"]').remove();
-  // }
 
   // --- HANDLE FORMAT TITLE CASE ------------------------------------------ \\
 
@@ -586,19 +573,21 @@ function handleOnReadyEvent(event, kdf) {
     });
 
   // --- HANDLE SET REPORTER ----------------------------------------------- \\
-  // erroring
+
   // Check if customer set state is true
-  // if (KDF.kdf().customerset === 'agent_true' || KDF.kdf().customerset === 'citizen_true') {
-  // property = formatTitleCase(kdf.profileData['profile-AddressNumber']);
-  // streetName = formatTitleCase(kdf.profileData['profile-AddressLine1']);
-  // fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${kdf.profileData['profile-AddressLine4']}, ${kdf.profileData['profile-Postcode']}`;
-  //   handleSetReporter(new Date(kdf.profileData['profile-DateOfBirth']), fullAddress);
-  // }
+  console.log('!!!!!!!', kdf.access === 'agent', kdf.profileData['profile-FullName'])
+  if (kdf.access === 'agent' && kdf.profileData['profile-FullName']) {
+
+    property = formatTitleCase(kdf.profileData['profile-AddressNumber']);
+    streetName = formatTitleCase(kdf.profileData['profile-AddressLine1']);
+    fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${kdf.profileData['profile-AddressLine4']}, ${kdf.profileData['profile-Postcode']}`;
+    handleSetReporter(new Date(kdf.profileData['profile-DateOfBirth']), fullAddress);
+  }
 
   // --- HANDLE CHECK AGENT SET CUSTOMER ----------------------------------- \\
 
   $('#dform_widget_button_but_next_about_you').on('click', () => {
-    if (KDF.kdf().access === 'agent' && KDF.getVal('le_customer_set') === 'agent_false') {
+    if (kdf.access === 'agent' && !KDF.getVal('num_reporter_obj_id')) {
       KDF.sendDesktopAction('raised_by');
     } else {
       KDF.gotoNextPage();
@@ -606,7 +595,7 @@ function handleOnReadyEvent(event, kdf) {
   });
 
   $('#dform_widget_button_but_submit_about_you').on('click', () => {
-    if (KDF.kdf().access === 'agent' && KDF.getVal('le_customer_set') === 'agent_false') {
+    if (kdf.access === 'agent' && !KDF.getVal('num_reporter_obj_id')) {
       KDF.sendDesktopAction('raised_by');
     } else {
       KDF.gotoPage('complete', true, true, false);
@@ -682,7 +671,6 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     if (kdf.access === 'agent' && customerState !== 'agent_true') {
       KDF.sendDesktopAction('raised_by');
     }
-    console.log(KDF.getVal('eml_address'));
     if (!KDF.getVal('eml_address') || KDF.getVal('eml_address') === '' || KDF.getVal('eml_address') === undefined || KDF.getVal('eml_address') === null) {
       KDF.hideWidget('ahtm_confirmation_email_send');
     } else {
@@ -704,7 +692,6 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
   }
 
-  console.log('run getAndSetReviewPageData')
   getAndSetReviewPageData();
 
 }
@@ -795,11 +782,6 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
   streetName = formatTitleCase(response['profile-AddressLine1']);
   fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${response['profile-AddressLine4']}, ${response['profile-Postcode']}`;
   handleSetReporter(new Date(response['profile-DateOfBirth']), fullAddress);
-
-  // if (pageName === 'page_about_you') {
-  //   KDF.gotoNextPage();
-  // }
-
 }
 
 // --- HANDLE ON SUCCESSFUL ACTION EVENT ---------------------------------- \\
@@ -1186,11 +1168,11 @@ const showHideInputFields = (aliasesAndDisplay) => {
 // --- SET SELECTED ADDRESS ------------------------------------------------- \\
 
 // Function to update the output on the current page
-const setSelectedAddress = (selectedAddress, action) => {
-  const currentPageId = getCurrentPageId(); // Get the current page ID
+const setSelectedAddress = (selectedAddress, action, targetPageId) => {
+  targetPageId = targetPageId ? targetPageId : getCurrentPageId(); // Get the current page ID
 
   // Get the selected-address-container element on the current page
-  const addressContainer = document.querySelector(`#${currentPageId} .selected-address-container`);
+  const addressContainer = document.querySelector(`#${targetPageId} .selected-address-container`);
 
   // Obtain the data-name attribute of the addressContainer
   const name = addressContainer.getAttribute('data-name');
@@ -1466,7 +1448,7 @@ function validDate(id, day, month, year) {
 
 // --- PROGRESS BAR --------------------------------------------------------- \\
 
-const updateProgressBar = currentPageIndex => {
+function updateProgressBar(currentPageIndex) {
   // Check if the old ID exists
   if (document.getElementById("dform_progressbar")) {
     // Select the element by its current ID
@@ -1498,22 +1480,36 @@ const updateProgressBar = currentPageIndex => {
     if (parentDiv && childDiv && pageHolderDiv) {
       // Get all pages
       const pages = pageHolderDiv.querySelectorAll('.dform_page');
+      const currentPageIndex = $('.dform_page[data-active="true"]:visible').index('.dform_page[data-active="true"]');
+      const visiblePages = $('.dform_page[data-active="true"]').length;
 
-      // Count visible pages
-      const visiblePages = Array.from(pages).filter(page => !page.classList.contains('dform_hidden'));
-      // -1 from currentPageIndex for the active page
-      // -1 from visiblePages for the confirmation page
-      let percentage = Math.round(((currentPageIndex - 1) / (visiblePages.length - 1)) * 100);
+      let percentage = 0;
+      if ($(`#dform_page_save`).length > 0) {
+        // -1 from visiblePages for the save page
+        // -1 from visiblePages for the confirmation page
+        percentage = Math.round(currentPageIndex / (visiblePages - 2) * 100);
+      } else {
+        // -1 from visiblePages for the confirmation page
+        percentage = Math.round(currentPageIndex / (visiblePages - 1) * 100);
+      }
       // Set width, text content, colour
       if (percentage <= 0) {
         percentage = 0;
         childDiv.style.width = `max-content`;
         childDiv.style.color = "var(--color-black)";
         childDiv.style.background = "var(--color-empty-pb)";
+        parentDiv.style.background = "var(--color-background)";
+      } else if (percentage >= 100) {
+        percentage = 100;
+        childDiv.style.width = `${percentage}%`;
+        childDiv.style.color = "var(--color-white)";
+        childDiv.style.background = "var(--color-white)";
+        parentDiv.style.background = "var(--color-white)";
       } else {
         childDiv.style.width = `${percentage}%`;
         childDiv.style.color = "var(--color-white)";
         childDiv.style.background = "var(--color-primary)";
+        parentDiv.style.background = "var(--color-background)";
       }
       childDiv.textContent = `${percentage}%`;
       childSpan.style.width = `${100 - percentage}%`;
@@ -1529,11 +1525,11 @@ function handleSetReporter(date, address) {
   $('#dform_widget_num_date_of_birth_mm').val(date.getMonth() + 1).blur();
   $('#dform_widget_num_date_of_birth_yy').val(date.getFullYear()).blur();
 
-  // 
+  // Hide address lookup
   KDF.hideSection('area_address_lookup_about_you');
 
   // Set and show address
-  setSelectedAddress(address, 'show');
+  setSelectedAddress(address, 'show', 'dform_page_page_about_you');
 
   // Hide submit anonymously option and info
   $('.anonymous').hide();
@@ -1563,7 +1559,6 @@ const formUserPath = [];
 
 // Function to get and set data for the review page
 function getAndSetReviewPageData() {
-  console.log('running getAndSetReviewPageData')
   // Find the currently active form page
   const activeFormPage = $('.dform_page[data-active="true"]:visible');
   // Get the page number of the current form page
@@ -1571,38 +1566,47 @@ function getAndSetReviewPageData() {
 
   // Add the current page number to the user's history
   formUserPath.push(thisPageNumber);
-  console.log(formUserPath);
 
   // Check if the review page is currently visible
   const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
-  if (reviewPageIsVisible) {
-    // Clear the review content HTML
-    $("#review-page-content-container").html("");
 
-    // Reverse the user's path to look back at the visited pages
-    const formUserPathReversed = [...formUserPath].reverse();
-    const relevantPagesReversed = [];
+  // Reverse the user's path to look back at the visited pages
+  const formUserPathReversed = [...formUserPath].reverse();
+  const relevantPagesReversed = [];
 
-    // Determine relevant pages by looking back from the review page
-    for (let i = 0; i < formUserPathReversed.length - 1; i++) {
-      if (parseInt(formUserPathReversed[i]) > parseInt(formUserPathReversed[i + 1])) {
-        relevantPagesReversed.push(formUserPathReversed[i + 1]);
-      } else {
-        formUserPathReversed.splice(i + 1, 1);
-        i--;
-      }
-    }
-
-    // Reverse the relevant pages to the correct order
-    let relevantPages = [];
-    console.log('relevantPages', relevantPages)
-    if (KDF.getVal('txt_pages')) {
-      relevantPages = KDF.getVal('txt_pages').split(",");
+  // Determine relevant pages by looking back from the review page
+  for (let i = 0; i < formUserPathReversed.length - 1; i++) {
+    if (parseInt(formUserPathReversed[i]) > parseInt(formUserPathReversed[i + 1])) {
+      relevantPagesReversed.push(formUserPathReversed[i + 1]);
     } else {
+      formUserPathReversed.splice(i + 1, 1);
+      i--;
+    }
+  }
+
+  // Reverse the relevant pages to the correct order
+  let relevantPages = [];
+
+  if (KDF.kdf().form.complete === 'Y') { // use stored page array when complete
+    relevantPages = KDF.getVal('txt_pages').split(",");
+  } else {
+    if (KDF.kdf().form.name.startsWith('cm_') && KDF.kdf().form.name.endsWith('_cm')) { // use stored page array when case management
+      relevantPages = KDF.getVal('txt_pages').split(",");
+    } else if (KDF.kdf().form.caseid && KDF.getVal('txt_resume_form') === 'true') { // use stored page array when resumed
+      relevantPages = KDF.getVal('txt_pages').split(",");
+      if (reviewPageIsVisible) { // check for review page due to page changes 
+        KDF.setVal('txt_resume_form', 'false'); // to prevent coming back down the resume path and construct page array
+      }
+    } else { // construct page array
       relevantPages = [...relevantPagesReversed].reverse();
       console.log(relevantPages, relevantPages.join(','))
       KDF.setVal('txt_pages', relevantPages.join(','));
     }
+  }
+
+  if (reviewPageIsVisible) {
+    // Clear the review content HTML
+    $("#review-page-content-container").html("");
 
     // Find all form pages except the review page
     const formPages = $('.dform_page[data-active="true"]').not("#dform_page_page_review");
@@ -1631,6 +1635,10 @@ function getAndSetReviewPageData() {
         // Attach a click event handler to the button
         const button = contentDiv.find('.review-page-edit-button');
         button.on('click', function () {
+          const buttonSet = $('.dform_section_box_review div[data-type="buttonset"]');
+          if (buttonSet.is(":hidden")) {
+            buttonSet.show();
+          }
           KDF.gotoPage(pageName, true, true, true);
         });
 
