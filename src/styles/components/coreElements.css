@@ -234,12 +234,12 @@ option {
   outline: 0.4rem solid var(--color-warning);
 }
 
-#dform_container input[type="radio"]:focus,
-#dform_container input[type="radio"]:checked:focus::after {
+/* #dform_container input[type="radio"]:focus,
+#dform_container input[type="radio"]:checked:focus::before {
   border: none;
   outline: none;
   box-shadow: inset 0 0 0 0.4rem var(--color-grey-5), 0 0 0 0.4rem var(--color-warning);
-}
+} */
 
 #dform_container input[type="checkbox"]:focus,
 #dform_container input[type="checkbox"]:checked:focus::after {
