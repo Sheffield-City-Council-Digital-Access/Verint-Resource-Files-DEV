@@ -595,11 +595,11 @@ function handleOnReadyEvent(event, kdf) {
   });
 
   $('#dform_widget_button_but_submit_about_you').on('click', () => {
-    if (kdf.access === 'agent' && !KDF.getVal('num_reporter_obj_id')) {
-      KDF.sendDesktopAction('raised_by');
-    } else {
-      KDF.gotoPage('complete', true, true, false);
-    }
+    // if (kdf.access === 'agent' && !KDF.getVal('num_reporter_obj_id')) {
+    //   KDF.sendDesktopAction('raised_by');
+    // } else {
+    // }
+    KDF.gotoPage('complete', true, true, false);
   });
 
   // --- HANDLE AONYMOUS SUBMITION ----------------------------------------- \\
