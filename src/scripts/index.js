@@ -1974,7 +1974,7 @@ function updateValidationMessage(name, value) {
     $(`.dform_widget_${name} .dform_validationMessage`).text(value);
   } else {
     $(`#dform_widget_${name}`)
-      .attr('aria-label', value)
+      .attr('title', value)
       .siblings(".dform_validationMessage").text(value);
   }
 }
