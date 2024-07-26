@@ -1918,7 +1918,7 @@ function hideShowElement(name, display) {
 function updateMultipleWidgetsText(fields) {
   console.log(fields)
   fields.map((field) => {
-    updateWidgetText(field.name, field.label, field.helpMessage, field.alidation);
+    updateWidgetText(field.name, field.label, field.helpMessage, field.validation);
   });
 }
 
