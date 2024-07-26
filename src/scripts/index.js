@@ -1744,19 +1744,21 @@ function showContactTeamPanel() {
   main.appendChild(phoneIcon);
   main.appendChild(phoneLink);
 
-  const locationIcon = document.createElement('i');
-  locationIcon.classList.add('icon');
-  locationIcon.classList.add('align-self');
-  const locationIconSpan = document.createElement('span');
-  locationIconSpan.classList.add('icon-location');
-  locationIcon.appendChild(locationIconSpan);
+  if (KDF.getVal('txt_contact_address')) {
+    const locationIcon = document.createElement('i');
+    locationIcon.classList.add('icon');
+    locationIcon.classList.add('align-self');
+    const locationIconSpan = document.createElement('span');
+    locationIconSpan.classList.add('icon-location');
+    locationIcon.appendChild(locationIconSpan);
 
-  const address = document.createElement('p');
-  const addressString = KDF.getVal('txt_contact_address').replace(/, /g, "<br/>");
-  address.innerHTML = addressString;
-  main.appendChild(address);
-  main.appendChild(locationIcon);
-  main.appendChild(address);
+    const address = document.createElement('p');
+    const addressString = KDF.getVal('txt_contact_address').replace(/, /g, "<br/>");
+    address.innerHTML = addressString;
+    main.appendChild(address);
+    main.appendChild(locationIcon);
+    main.appendChild(address);
+  }
 
   const footer = document.createElement('footer');
   const footerImg = document.createElement('img');
