@@ -1941,11 +1941,11 @@ function updateMultipleLabels(fields) {
 
 function updateLabel(name, value) {
   if (name.startsWith('but_')) {
-    $(`#dform_widget_button_${name}`).html(value);
-  } else if (name.startsWith('rad_')) {
-    $(`#dform_widget_label_${name}`).text(value);
+    $(`#dform_widget_button_${name}`).text(value);
+  } else if (name.startsWith('rad_') || name.startsWith('mchk_')) {
+    $(`.dform_widget_${name}  legend`).text(value);
   } else {
-    $(`#dform_widget_label_${name}`).html(value);
+    $(`#dform_widget_label_${name}`).text(value);
   }
 }
 
@@ -1970,13 +1970,8 @@ function updateMultipleValidationMessages(fields) {
 }
 
 function updateValidationMessage(name, value) {
-  if (name.startsWith('rad_')) {
-    $(`.dform_widget_${name} .dform_validationMessage`).text(value);
-  } else {
-    $(`#dform_widget_${name}`)
-      .attr('title', value)
-      .siblings(".dform_validationMessage").text(value);
-  }
+  $(`.dform_widget_${name} .dform_validationMessage`).text(value);
+  $(`.dform_widget_${name}`).attr('title', value);
 }
 
 // --- CHECK DATE FUNCTIONS ------------------------------------------------- \\
