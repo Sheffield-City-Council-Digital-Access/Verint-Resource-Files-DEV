@@ -1915,7 +1915,7 @@ function hideShowElement(name, display) {
 
 function updateMultipleWidgetsText(fields) {
   fields.map((field) => {
-    updateTextMultipleWidget(field.name, field.label, field.helpMessage, field.alidation);
+    updateWidgetText(field.name, field.label, field.helpMessage, field.alidation);
   });
 }
 
