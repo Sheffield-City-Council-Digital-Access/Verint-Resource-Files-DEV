@@ -1916,19 +1916,24 @@ function hideShowElement(name, display) {
 // --- UPDATE ALL WIDGET TEXT ----------------------------------------------- \\
 
 function updateMultipleWidgetsText(fields) {
+  console.log(fields)
   fields.map((field) => {
     updateWidgetText(field.name, field.label, field.helpMessage, field.alidation);
   });
 }
 
 function updateWidgetText(name, label, helpMessage, validation) {
+  console.log(name, label, helpMessage, validation)
   if (label) {
+    console.log('label', label)
     updateLabel(name, label);
   }
   if (helpMessage) {
+    console.log('helpMessage', helpMessage)
     updateHelpText(name, helpMessage);
   }
   if (validation) {
+    console.log('validation', validation)
     updateValidationMessage(name, validation);
   }
 }
