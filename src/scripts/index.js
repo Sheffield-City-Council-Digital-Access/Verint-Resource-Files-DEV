@@ -1896,7 +1896,7 @@ function hideShowElement(name, display) {
     } else {
       KDF.hidePage(name);
     }
-  } else if (name.startsWith('area_')) {
+  } else if (name.startsWith('area_') || name.startsWith('box_')) {
     if (display === true || display === 'true' || display === 'show') {
       KDF.showSection(name);
     } else {
@@ -1911,6 +1911,26 @@ function hideShowElement(name, display) {
   }
 }
 
+// --- UPDATE ALL WIDGET TEXT ----------------------------------------------- \\
+
+function updateMultipleWidgetsText(fields) {
+  fields.map((field) => {
+    updateTextMultipleWidget(field.name, field.label, field.helpMessage, field.alidation);
+  });
+}
+
+function updateWidgetText(name, label, helpMessage, validation) {
+  if (label) {
+    updateLabel(name, label);
+  }
+  if (helpMessage) {
+    updateHelpText(name, helpMessage);
+  }
+  if (validation) {
+    updateValidationMessage(name, validation);
+  }
+}
+
 // --- UPDATE LABEL TEXT ---------------------------------------------------- \\
 
 function updateMultipleLabels(fields) {
@@ -1922,9 +1942,23 @@ function updateMultipleLabels(fields) {
 function updateLabel(name, value) {
   if (name.startsWith('but_')) {
     $(`#dform_widget_button_${name}`).html(value);
+  } else if (name.startsWith('rad_')) {
+    $(`#dform_widget_label_${name}`).text(value);
   } else {
     $(`#dform_widget_label_${name}`).html(value);
   }
+}
+
+// --- UPDATE HELP TEXT ----------------------------------------------------- \\
+
+function updateMultipleHelpTexts(fields) {
+  fields.map((field) => {
+    updateHelpText(field.name, field.value)
+  });
+}
+
+function updateHelpText(name, value) {
+  $(`.dform_widget_${name} .helptext`).text(value);
 }
 
 // --- UPDATE VALUDATION TEXT ----------------------------------------------- \\
@@ -1937,11 +1971,11 @@ function updateMultipleValidationMessages(fields) {
 
 function updateValidationMessage(name, value) {
   if (name.startsWith('rad_')) {
-
+    $(`.dform_widget_${name} .dform_validationMessage`).text(value);
   } else {
     $(`#dform_widget_${name}`)
-      .siblings(".dform_validationMessage")
-      .text(value);
+      .attr('aria-label', value)
+      .siblings(".dform_validationMessage").text(value);
   }
 }
 
