@@ -1965,6 +1965,7 @@ function updateMultipleHelpTexts(fields) {
 }
 
 function updateHelpText(name, value) {
+  console.log('updateHelpText', name, value);
   $(`.dform_widget_${name} .helptext`).text(value);
 }
 
