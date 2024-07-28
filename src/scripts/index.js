@@ -575,7 +575,6 @@ function handleOnReadyEvent(event, kdf) {
   // --- HANDLE SET REPORTER ----------------------------------------------- \\
 
   // Check if customer set state is true
-  console.log('!!!!!!!', kdf.access === 'agent', kdf.profileData['profile-FullName'])
   if (kdf.access === 'agent' && kdf.profileData['profile-FullName']) {
 
     property = formatTitleCase(kdf.profileData['profile-AddressNumber']);
@@ -1599,7 +1598,6 @@ function getAndSetReviewPageData() {
       }
     } else { // construct page array
       relevantPages = [...relevantPagesReversed].reverse();
-      console.log(relevantPages, relevantPages.join(','))
       KDF.setVal('txt_pages', relevantPages.join(','));
     }
   }
@@ -1919,24 +1917,19 @@ function hideShowElement(name, display) {
 // --- UPDATE ALL WIDGET TEXT ----------------------------------------------- \\
 
 function updateMultipleWidgetsText(fields) {
-  console.log(fields)
   fields.map((field) => {
     updateWidgetText(field.name, field.label, field.helpMessage, field.validation);
   });
 }
 
 function updateWidgetText(name, label, helpMessage, validation) {
-  console.log(name, label, helpMessage, validation)
   if (label) {
-    console.log('label', label)
     updateLabel(name, label);
   }
   if (helpMessage) {
-    console.log('helpMessage', helpMessage)
     updateHelpText(name, helpMessage);
   }
   if (validation) {
-    console.log('validation', validation)
     updateValidationMessage(name, validation);
   }
 }
@@ -1968,7 +1961,6 @@ function updateMultipleHelpTexts(fields) {
 }
 
 function updateHelpText(name, value) {
-  console.log('updateHelpText', name, value);
   $(`.dform_widget_${name} .helptext`).text(value);
 }
 
@@ -2001,7 +1993,6 @@ async function fetchUKBankHolidays() {
     // Return the array of bank holidays
     return allBankHolidays.map(holiday => new Date(holiday.date));
   } catch (error) {
-    console.error('Error fetching bank holidays:', error);
     return []; // Return an empty array in case of an error
   }
 }
