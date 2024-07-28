@@ -1809,6 +1809,7 @@ function closeCase() {
 // --- FORMATING TO TITLE CASE ---------------------------------------------- \\
 
 function formatTitleCase(value) {
+  console.log('formatTitleCase', value)
   const string = value.toLowerCase();
   const formatedString = string.replace(/\b\w/g, (match) => match.toUpperCase());
   return formatedString;
