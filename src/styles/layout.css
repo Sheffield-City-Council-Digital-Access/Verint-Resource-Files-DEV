@@ -83,6 +83,10 @@ form.dform {
   display: none !important;
 }
 
+#dform_files {
+  display: none !important;
+}
+
 .flex-grow {
   flex: 1 !important;
 }
