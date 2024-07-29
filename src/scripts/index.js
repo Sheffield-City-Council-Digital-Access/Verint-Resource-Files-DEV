@@ -688,6 +688,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
       "background": "var(--color-white)"
     });
     getAndSetReviewPageData();
+    showContactTeamPanel();
     KDF.save();
   }
 
