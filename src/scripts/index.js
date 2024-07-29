@@ -479,8 +479,6 @@ function handleOnReadyEvent(event, kdf) {
       if (kdf.params.viewmode === 'R') {
         $('.review-page-edit-button').remove();
         $('.dform_section_box_review div[data-type="buttonset"]').remove();
-      } else {
-        $('.dform_section_box_review div[data-type="buttonset"]').hide();
       }
     }
   }
