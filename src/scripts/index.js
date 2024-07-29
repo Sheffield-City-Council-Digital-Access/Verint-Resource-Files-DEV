@@ -677,17 +677,27 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     }
   }
 
-  if (pageName === 'complete') {
-    KDF.unlock();
-    KDF.makeWritable();
+  if (pageName === 'save') {
+    KDF.setVal('txt_resume_form', 'true');
+    $("#dform_page_complete").css({
+      "margin-inline": "0 40%"
+    });
     $("form.dform").css({
       "margin": "8px",
       "padding": "16px",
       "background": "var(--color-white)"
     });
-    // if (KDF.kdf().access === 'citizen') {
+    getAndSetReviewPageData();
+    KDF.save();
+  }
+
+  if (pageName === 'complete') {
+    $("form.dform").css({
+      "margin": "8px",
+      "padding": "16px",
+      "background": "var(--color-white)"
+    });
     showContactTeamPanel();
-    // }
     KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
   }
 
@@ -1167,7 +1177,6 @@ const showHideInputFields = (aliasesAndDisplay) => {
 // --- SET SELECTED ADDRESS ------------------------------------------------- \\
 
 const setSelectedAddress = (selectedAddress, action, targetPageId) => {
-  console.log(selectedAddress, action, targetPageId);
   targetPageId = targetPageId ? targetPageId : getCurrentPageId();
 
   // Get the selected-address-container element on the current page
@@ -1191,7 +1200,6 @@ const setSelectedAddress = (selectedAddress, action, targetPageId) => {
     }
   }
 };
-
 
 // --- RESER ADDRESS FIELDS ------------------------------------------------- \\
 
@@ -1594,7 +1602,6 @@ function getAndSetReviewPageData() {
   } else {
     if (KDF.kdf().form.name.startsWith('cm_') || KDF.kdf().form.name.endsWith('_cm')) { // use stored page array when case management
       relevantPages = KDF.getVal('txt_pages').split(",");
-      console.log('cm_', KDF.getVal('txt_pages').split(","))
     } else if (KDF.kdf().form.caseid && KDF.getVal('txt_resume_form') === 'true') { // use stored page array when resumed
       relevantPages = KDF.getVal('txt_pages').split(",");
       if (reviewPageIsVisible) { // check for review page due to page changes 
