@@ -1168,6 +1168,7 @@ const showHideInputFields = (aliasesAndDisplay) => {
 
 // Function to update the output on the current page
 const setSelectedAddress = (selectedAddress, action, targetPageId) => {
+  console.log(selectedAddress, action, targetPageId)
   targetPageId = targetPageId ? targetPageId : getCurrentPageId(); // Get the current page ID
 
   // Get the selected-address-container element on the current page
