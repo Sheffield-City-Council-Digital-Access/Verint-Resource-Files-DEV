@@ -1589,8 +1589,9 @@ function getAndSetReviewPageData() {
   if (KDF.kdf().form.complete === 'Y') { // use stored page array when complete
     relevantPages = KDF.getVal('txt_pages').split(",");
   } else {
-    if (KDF.kdf().form.name.startsWith('cm_') && KDF.kdf().form.name.endsWith('_cm')) { // use stored page array when case management
+    if (KDF.kdf().form.name.startsWith('cm_') || KDF.kdf().form.name.endsWith('_cm')) { // use stored page array when case management
       relevantPages = KDF.getVal('txt_pages').split(",");
+      console.log('cm_', KDF.getVal('txt_pages').split(","))
     } else if (KDF.kdf().form.caseid && KDF.getVal('txt_resume_form') === 'true') { // use stored page array when resumed
       relevantPages = KDF.getVal('txt_pages').split(",");
       if (reviewPageIsVisible) { // check for review page due to page changes 
