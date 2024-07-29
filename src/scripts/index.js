@@ -1172,7 +1172,7 @@ const setSelectedAddress = (selectedAddress, action, targetPageId) => {
 
   // Get the selected-address-container element on the current page
   const addressContainer = document.querySelector(`#${targetPageId} .selected-address-container`);
-
+  console.log('addressContainer', addressContainer)
   if (addressContainer) {
     // Obtain the data-name attribute of the addressContainer
     const name = addressContainer.getAttribute('data-name');
