@@ -1172,23 +1172,23 @@ const setSelectedAddress = (selectedAddress, action, targetPageId) => {
 
   // Get the selected-address-container element on the current page
   const addressContainer = document.querySelector(`#${targetPageId} .selected-address-container`);
-  console.log('addressContainer', addressContainer)
+
   if (addressContainer) {
     // Obtain the data-name attribute of the addressContainer
     const name = addressContainer.getAttribute('data-name');
-  }
 
-  // Get the output element within the selected-address-container
-  const outputElement = addressContainer.querySelector('.selected-address');
+    // Get the output element within the selected-address-container
+    const outputElement = addressContainer.querySelector('.selected-address');
 
-  // Set the selected address as the content of the output element
-  outputElement.textContent = selectedAddress;
+    // Set the selected address as the content of the output element
+    outputElement.textContent = selectedAddress;
 
-  // Show or hides the data-name attribute of the addressContainer
-  if (action) {
-    KDF.showWidget(name);
-  } else {
-    KDF.hideWidget(name);
+    // Show or hides the data-name attribute of the addressContainer
+    if (action) {
+      KDF.showWidget(name);
+    } else {
+      KDF.hideWidget(name);
+    }
   }
 };
 
