@@ -583,11 +583,15 @@ function handleOnReadyEvent(event, kdf) {
 
   // Check if customer set state is true
   if (kdf.access === 'agent' && kdf.profileData['profile-FullName']) {
-
     property = formatTitleCase(kdf.profileData['profile-AddressNumber']);
     streetName = formatTitleCase(kdf.profileData['profile-AddressLine1']);
     fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${kdf.profileData['profile-AddressLine4']}, ${kdf.profileData['profile-Postcode']}`;
     handleSetReporter(new Date(kdf.profileData['profile-DateOfBirth']), fullAddress);
+  } else if (kdf.access === 'agent' && KDF.getVal('txt_full_address_about_you')) {
+    property = formatTitleCase(KDF.getVal('txt_property_about_you'));
+    streetName = formatTitleCase(KDF.getVal('txt_street_name_about_you'));
+    fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${KDF.getVal('txt_city_about_you')}, ${KDF.getVal('txt_postcode_about_you')}`;
+    handleSetReporter(new Date(KDF.getVal('dt_date_of_birth')), fullAddress);
   }
 
   // --- HANDLE CHECK AGENT SET CUSTOMER ----------------------------------- \\
@@ -674,13 +678,8 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   updateProgressBar(targetpageid);
 
   if (pageName === 'page_about_you') {
-    if (kdf.access === 'agent' && customerState !== 'agent_true') {
+    if (kdf.access === 'agent' && (customerState !== 'agent_true' || !KDF.getVal('num_reporter_obj_id'))) {
       KDF.sendDesktopAction('raised_by');
-    }
-    if (!KDF.getVal('eml_address') || KDF.getVal('eml_address') === '' || KDF.getVal('eml_address') === undefined || KDF.getVal('eml_address') === null) {
-      KDF.hideWidget('ahtm_confirmation_email_send');
-    } else {
-      KDF.showWidget('ahtm_confirmation_email_send');
     }
   }
 
@@ -700,6 +699,12 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
 
   if (pageName === 'complete') {
+    if (!KDF.getVal('eml_address')) {
+      KDF.hideWidget('ahtm_confirmation_email_send');
+    } else {
+      KDF.showWidget('ahtm_confirmation_email_send');
+    }
+
     $("form.dform").css({
       "margin": "8px",
       "padding": "16px",
