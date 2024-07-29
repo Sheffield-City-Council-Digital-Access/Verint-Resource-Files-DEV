@@ -82,3 +82,7 @@ form.dform {
 #dform_pagenav {
   display: none !important;
 }
+
+.flex-grow {
+  flex: 1 !important;
+}
