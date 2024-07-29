@@ -468,10 +468,16 @@ function handleOnReadyEvent(event, kdf) {
   if (kdf.form.complete === 'Y') {
     KDF.showPage('page_review');
     KDF.gotoPage('page_review');
-    // if (kdf.params.viewmode === 'R') {
-    $('.review-page-edit-button').remove();
-    $('.dform_section_box_review div[data-type="buttonset"]').remove();
-    // }
+    if (kdf.params.viewmode === 'R') {
+      $('.review-page-edit-button').remove();
+      $('.dform_section_box_review div[data-type="buttonset"]').remove();
+    } else {
+      // use stored page array when case management
+      if (!KDF.kdf().form.name.startsWith('cm_') || !KDF.kdf().form.name.endsWith('_cm')) {
+        $('.review-page-edit-button').remove();
+        $('.dform_section_box_review div[data-type="buttonset"]').remove();
+      }
+    }
   } else {
     if (kdf.form.caseid && kdf.form.ref) {
       KDF.showPage('page_review');
