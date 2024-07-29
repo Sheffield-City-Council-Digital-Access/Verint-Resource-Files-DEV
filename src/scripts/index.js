@@ -1166,16 +1166,17 @@ const showHideInputFields = (aliasesAndDisplay) => {
 
 // --- SET SELECTED ADDRESS ------------------------------------------------- \\
 
-// Function to update the output on the current page
 const setSelectedAddress = (selectedAddress, action, targetPageId) => {
-  console.log(selectedAddress, action, targetPageId)
-  targetPageId = targetPageId ? targetPageId : getCurrentPageId(); // Get the current page ID
+  console.log(selectedAddress, action, targetPageId);
+  targetPageId = targetPageId ? targetPageId : getCurrentPageId();
 
   // Get the selected-address-container element on the current page
   const addressContainer = document.querySelector(`#${targetPageId} .selected-address-container`);
 
-  // Obtain the data-name attribute of the addressContainer
-  const name = addressContainer.getAttribute('data-name');
+  if (addressContainer) {
+    // Obtain the data-name attribute of the addressContainer
+    const name = addressContainer.getAttribute('data-name');
+  }
 
   // Get the output element within the selected-address-container
   const outputElement = addressContainer.querySelector('.selected-address');
@@ -1190,6 +1191,7 @@ const setSelectedAddress = (selectedAddress, action, targetPageId) => {
     KDF.hideWidget(name);
   }
 };
+
 
 // --- RESER ADDRESS FIELDS ------------------------------------------------- \\
 
