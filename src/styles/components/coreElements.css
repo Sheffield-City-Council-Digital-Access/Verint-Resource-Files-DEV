@@ -257,7 +257,7 @@ option {
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-p1);
   line-height: var(--font-height-p1);
-  margin: 0 0 0.8rem 0;
+  margin: .4rem 0 .8rem 0;
   padding-inline-start: 0;
   padding-inline-end: 0;
 }
