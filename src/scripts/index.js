@@ -73,7 +73,8 @@ function handleInitialisingEvent(addDateMessages) {
     targetDiv.appendChild(spinnerDiv);
   })();
 
-  // --- ADD FORM TITLE -------------------------------------------------- \\
+  // --- ADD FORM TITLE ---------------------------------------------------- \\
+
   (() => {
     // Find the element with id "dform_controls"
     const dformControls = document.getElementById("dform_controls");
@@ -401,6 +402,38 @@ function handleInitialisingEvent(addDateMessages) {
       body.insertAdjacentHTML("beforeend", footerHTML);
     })();
   }
+
+  // --- ADD CHARACTER COUNT ----------------------------------------------- \\
+
+  (() => {
+    const textareas = document.querySelectorAll('div[data-type="textarea"]');
+
+    textareas.forEach(textareaContainer => {
+      const textarea = textareaContainer.querySelector('textarea');
+      const maxLength = textarea.getAttribute('maxlength');
+      const name = textarea.name;
+
+      // Remove existing span elements
+      const spans = textareaContainer.querySelectorAll('span');
+      spans.forEach(span => span.remove());
+
+      // Create and append the character count div
+      const characterCountDiv = document.createElement('div');
+      characterCountDiv.classList.add('character-count');
+      characterCountDiv.setAttribute('aria-live', 'polite');
+      characterCountDiv.id = `characterCounter_${name}`;
+      textareaContainer.appendChild(characterCountDiv);
+
+      textarea.addEventListener('input', () => {
+        const remainingChars = maxLength - textarea.value.length;
+        characterCountDiv.textContent = `${remainingChars} characters remaining`;
+      });
+
+      // Initial character count display
+      const initialChars = maxLength - textarea.value.length;
+      characterCountDiv.textContent = `${initialChars} characters remaining`;
+    });
+  })();
 
   // --- ADD CUSTOM DATE MASSAGES ------------------------------------------ \\
 

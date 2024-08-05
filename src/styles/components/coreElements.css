@@ -250,12 +250,14 @@ option {
 
 /* --- CHATACTER COUNT ---------------------------------------------------------- */
 
-div[data-type="textarea"] span {
+#dform_container .character-count {
   color: var(--color-primary);
-  font-size: var(--font-size-p1);
+  display: block;
+  font-family: var(--font-paragraph);
   font-weight: var(--font-weight-semibold);
-}
-
-div[data-type="textarea"] textarea+span+span::after {
-  content: " characters used";
+  font-size: var(--font-size-p2);
+  line-height: var(--font-height-p2);
+  margin: 0 0 0.8rem 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
 }
