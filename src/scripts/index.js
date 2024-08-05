@@ -426,7 +426,7 @@ function handleInitialisingEvent(addDateMessages) {
 
       textarea.addEventListener('input', () => {
         const remainingChars = maxLength - textarea.value.length;
-        characterCountDiv.textContent = `${remainingChars} characters remaining`;
+        characterCountDiv.textContent = remainingChars === 1 ? `${remainingChars} character remaining` : `${remainingChars} characters remaining`;
       });
 
       // Initial character count display
