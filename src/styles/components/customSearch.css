@@ -1,3 +1,8 @@
+#dform_container div.area.find-area-container,
+#dform_container div.area.find-area-container>fieldset>legend {
+  margin: 0 0 3rem;
+}
+
 #dform_container .find-container>div {
   display: grid;
   grid-template-columns: minmax(0, 44.5rem) max-content;
@@ -98,4 +103,9 @@
 
 #dform_container .find-input input:focus {
   border-right: 0.4rem solid var(--color-grey-5);
+}
+
+#dform_container .locator-selected-address output {
+  margin-left: .6rem;
+  font-size: 1.6rem;
 }

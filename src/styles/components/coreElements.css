@@ -57,7 +57,7 @@
 #dform_container textarea {
   display: block;
   margin-bottom: 0;
-  padding: 1.2rem 1.6rem;
+  padding: 1.2rem 1.6rem !important;
   height: 5rem;
   width: min(100%, 445px);
   font-size: var(--font-size-p1);
