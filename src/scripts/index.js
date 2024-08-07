@@ -450,14 +450,18 @@ function handleInitialisingEvent(addDateMessages) {
       const deleteButton = getFileDeleteByInputId(field);
       const fileNameField = field.replace('file_', 'txt_');
 
-      $(`#${field}`).prop('disabled', true);
+      $(`#${field}`).prop('disabled', true).css({
+        "color": "var(--color-background)"
+      });
       $(`#${fileNameField}`).val(filename);
 
       if (deleteButton) {
         deleteButton.addEventListener('click', () => {
           setTimeout(() => {
             if (!KDF.kdf().form.filetokens.includes(token)) {
-              $(`#${field}`).prop('disabled', false);
+              $(`#${field}`).prop('disabled', false).css({
+                "color": "var(--color-black)"
+              });
               $(`#${fileNameField}`).val('');
             }
           }, 0);

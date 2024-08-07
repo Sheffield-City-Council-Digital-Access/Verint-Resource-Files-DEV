@@ -266,7 +266,7 @@ option {
 
 #dform_container div[data-type="file"]>div:nth-child(2) {
   display: grid;
-  grid-template-columns: 12rem minmax(11rem, 31.5rem);
+  grid-template-columns: 11.5rem minmax(11rem, 32rem);
   align-items: baseline;
 }
 
