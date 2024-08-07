@@ -440,6 +440,43 @@ function handleInitialisingEvent(addDateMessages) {
   if (addDateMessages) {
     Object.assign(dateMessages, addDateMessages);
   }
+
+  // --- HANDLE FILE UPLOAD ------------------------------------------------ \\
+
+  $(document).ajaxComplete(function (event, xhr, settings) {
+    if (settings.url.startsWith(KDF.kdf().rest.attachFiles)) {
+      console.log(event, xhr, settings, KDF.kdf());
+      const { field, token, filename, mimetype } = xhr.responseJSON[0];
+      const deleteButton = getFileDeleteByInputId(field);
+      const fileNameField = field.replace('file_', 'txt_');
+
+      $(`#${field}`).prop('disabled', true);
+      $(`#${fileNameField}`).val(filename);
+
+      if (deleteButton) {
+        deleteButton.addEventListener('click', () => {
+          setTimeout(() => {
+            if (!KDF.kdf().form.filetokens.includes(token)) {
+              $(`#${field}`).prop('disabled', false);
+              $(`#${fileNameField}`).val('');
+            }
+          }, 0);
+        });
+      }
+    }
+  });
+
+  // Function to find file_delete element by input ID (defined previously)
+  function getFileDeleteByInputId(fileUploadId) {
+    const fileUploadElement = document.getElementById(fileUploadId);
+    if (fileUploadElement) {
+      const fileDeleteElement = fileUploadElement.closest('.container').querySelector('.file_delete');
+      if (fileDeleteElement) {
+        return fileDeleteElement;
+      }
+    }
+    return null;
+  }
 }
 
 // --- HANDLE ON READY EVENT ----------------------------------------------- \\
