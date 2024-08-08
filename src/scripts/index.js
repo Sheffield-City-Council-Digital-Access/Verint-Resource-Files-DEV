@@ -1778,7 +1778,7 @@ function getAndSetReviewPageData() {
             fieldValue = KDF.getVal(fieldName);
           } else if (fieldType === "multicheckbox") {
             fieldLabel = getLegendText('checkboxgroup');
-            fieldValue = KDF.getVal(fieldName).join('<br>');
+            fieldValue = `<br/>${KDF.getVal(fieldName).join('<br>')}`;
           } else if (fieldType === 'date') {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
             fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
