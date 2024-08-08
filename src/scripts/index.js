@@ -1094,6 +1094,7 @@ function checkAndRefreshAgentLocation() {
     } else {
       // Data has expired
       localStorage.removeItem('agentLocation');
+      checkAndDisplayModal();
     }
   } else {
     checkAndDisplayModal();
