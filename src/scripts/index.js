@@ -1116,6 +1116,7 @@ function createModal() {
   iframe.frameBorder = '0';
   iframe.style.width = '100%';
   iframe.style.height = '100%';
+  modal.style.zIndex = '9999';
 
   modalContent.appendChild(iframe);
   modal.appendChild(modalContent);
@@ -1132,6 +1133,10 @@ function createModal() {
 
   // Display the modal
   modal.style.display = 'block';
+
+  // Disable focusable elements outside the modal
+  const focusableElements = $('*:focusable');
+  focusableElements.attr('tabindex', '-1');
 }
 
 // Function to destroy the modal
@@ -1139,6 +1144,10 @@ function destroyModal(modal) {
   // Remove modal from the DOM
   if (modal && modal.parentNode) {
     modal.parentNode.removeChild(modal);
+
+    // Re-enable focusable elements
+    const focusableElements = $('*:focusable');
+    focusableElements.attr('tabindex', '');
   }
 }
 
