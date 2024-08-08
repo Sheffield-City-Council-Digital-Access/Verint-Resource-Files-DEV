@@ -325,7 +325,7 @@ button .exit-btn::after,
 }
 
 .print-page-link-btn::before {
-  content: "\e918";
+  content: "\e909";
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -349,4 +349,13 @@ button .exit-btn::after,
   text-align: unset;
   background: transparent;
   border: none;
+}
+
+.print-page-link-btn:hover::before {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-white);
+  background: var(--color-white);
+  border: solid 0.1rem var(--color-primary);
+  box-shadow: none;
 }
