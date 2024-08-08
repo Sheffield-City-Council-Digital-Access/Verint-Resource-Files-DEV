@@ -1778,7 +1778,7 @@ function getAndSetReviewPageData() {
             fieldValue = KDF.getVal(fieldName);
           } else if (fieldType === "multicheckbox") {
             fieldLabel = getLegendText('checkboxgroup');
-            fieldValue = KDF.getVal(fieldName);
+            fieldValue = KDF.getVal(fieldName).join('<br>');
           } else if (fieldType === 'date') {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
             fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
@@ -1794,7 +1794,11 @@ function getAndSetReviewPageData() {
           if (fieldLabel) {
             // Set a default value for optional fields that are visible but not answered
             if (fieldValue === "") {
-              fieldValue = "Not answered";
+              if (fieldType === 'file') {
+                fieldValue = "Not uploaded";
+              } else {
+                fieldValue = "Not answered";
+              }
             }
 
             // Append the field information to the review page content
