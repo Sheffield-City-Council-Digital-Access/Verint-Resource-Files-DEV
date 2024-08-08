@@ -1779,6 +1779,12 @@ function getAndSetReviewPageData() {
           } else if (fieldType === "multicheckbox") {
             fieldLabel = getLegendText('checkboxgroup');
             fieldValue = KDF.getVal(fieldName);
+          } else if (fieldType === 'date') {
+            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+            fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
+          } else if (fieldType === 'file') {
+            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+            fieldValue = KDF.getVal(fieldName.replace('file_', 'txt_'));
           } else {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
             fieldValue = KDF.getVal(fieldName);
