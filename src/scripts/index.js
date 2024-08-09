@@ -1795,6 +1795,10 @@ function getAndSetReviewPageData() {
           } else if (fieldType === 'file') {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
             fieldValue = KDF.getVal(fieldName.replace('file_', 'txt_file_name_'));
+            const filePath = KDF.getVal(fieldName.replace('file_', 'txt_file_path_'));
+            if (KDF.kdf().access === 'agent' && filePath) {
+              fieldValue = `<a href="${filePath}" target="_blank">${KDF.getVal(fieldValue)}</a>`;
+            }
           } else {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
             fieldValue = KDF.getVal(fieldName);
