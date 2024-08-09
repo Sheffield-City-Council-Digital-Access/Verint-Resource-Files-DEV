@@ -1084,16 +1084,16 @@ const getCurrentPageId = () => {
 // --- HANDLE SET AGENT LOCATION -------------------------------------------- \\
 
 function checkAndRefreshAgentLocation() {
-  const data = JSON.parse(sessionStorage.getItem('agentLocation'));
+  const data = JSON.parse(localStorage.getItem('agentLocation'));
   if (data) {
     const currentTime = new Date().getTime();
     if (currentTime < data.expiry) {
       // Refresh expiry time for another hour
       data.expiry = currentTime + 25 * 60 * 1000; // 25 minutes in milliseconds
-      sessionStorage.setItem('agentLocation', JSON.stringify(data));
+      localStorage.setItem('agentLocation', JSON.stringify(data));
     } else {
       // Data has expired
-      sessionStorage.removeItem('agentLocation');
+      localStorage.removeItem('agentLocation');
       checkAndDisplayModal();
     }
   } else {
