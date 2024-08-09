@@ -448,7 +448,7 @@ function handleInitialisingEvent(addDateMessages) {
       console.log(event, xhr, settings, KDF.kdf());
       const { field, token, filename, mimetype } = xhr.responseJSON[0];
       const deleteButton = getFileDeleteByInputId(field);
-      const fileNameField = field.replace('file_', 'txt_');
+      const fileNameField = field.replace('file_', 'txt_file_name_');
 
       $(`#${field}`).prop('disabled', true).css({
         "color": "var(--color-background)"
@@ -1794,7 +1794,7 @@ function getAndSetReviewPageData() {
             fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
           } else if (fieldType === 'file') {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-            fieldValue = KDF.getVal(fieldName.replace('file_', 'txt_'));
+            fieldValue = KDF.getVal(fieldName.replace('file_', 'txt_file_name_'));
           } else {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
             fieldValue = KDF.getVal(fieldName);
