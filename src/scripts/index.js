@@ -678,7 +678,7 @@ function handleOnReadyEvent(event, kdf) {
     }
   });
 
-  $('#dform_widget_button_but_submit_about_you').on('click', () => {
+  $('#dform_widget_button_but_submit_about_you, .submit-btn').on('click', () => {
     // if (kdf.access === 'agent' && !KDF.getVal('num_reporter_obj_id')) {
     //   KDF.sendDesktopAction('raised_by');
     // } else {
