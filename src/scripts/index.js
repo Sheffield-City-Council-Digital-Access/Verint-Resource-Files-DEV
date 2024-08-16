@@ -412,26 +412,27 @@ function handleInitialisingEvent(addDateMessages) {
       const textarea = textareaContainer.querySelector('textarea');
       const maxLength = textarea.getAttribute('maxlength');
       const name = textarea.name;
+      if (maxLength > 0) {
+        // Remove existing span elements
+        const spans = textareaContainer.querySelectorAll('span');
+        spans.forEach(span => span.remove());
 
-      // Remove existing span elements
-      const spans = textareaContainer.querySelectorAll('span');
-      spans.forEach(span => span.remove());
+        // Create and append the character count div
+        const characterCountDiv = document.createElement('div');
+        characterCountDiv.classList.add('character-count');
+        characterCountDiv.setAttribute('aria-live', 'polite');
+        characterCountDiv.id = `characterCounter_${name}`;
+        textareaContainer.appendChild(characterCountDiv);
 
-      // Create and append the character count div
-      const characterCountDiv = document.createElement('div');
-      characterCountDiv.classList.add('character-count');
-      characterCountDiv.setAttribute('aria-live', 'polite');
-      characterCountDiv.id = `characterCounter_${name}`;
-      textareaContainer.appendChild(characterCountDiv);
+        textarea.addEventListener('input', () => {
+          const remainingChars = maxLength - textarea.value.length;
+          characterCountDiv.textContent = remainingChars === 1 ? `${remainingChars} character remaining` : `${remainingChars} characters remaining`;
+        });
 
-      textarea.addEventListener('input', () => {
-        const remainingChars = maxLength - textarea.value.length;
-        characterCountDiv.textContent = remainingChars === 1 ? `${remainingChars} character remaining` : `${remainingChars} characters remaining`;
-      });
-
-      // Initial character count display
-      const initialChars = maxLength - textarea.value.length;
-      characterCountDiv.textContent = `${initialChars} characters remaining`;
+        // Initial character count display
+        const initialChars = maxLength - textarea.value.length;
+        characterCountDiv.textContent = `${initialChars} characters remaining`;
+      }
     });
   })();
 
