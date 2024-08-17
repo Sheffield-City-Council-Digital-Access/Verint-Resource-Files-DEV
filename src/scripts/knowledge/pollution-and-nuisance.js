@@ -48,7 +48,11 @@ const abandonedVehicles = {
     typeKey: `abandoned_vehicle_information_provided`
   },
   meta: {
-    keywords: ['Abandoned vehicles'],
+    keywords: [
+      'Abandoned vehicles',
+      'abandned', 'abondened', 'abandonded', 'abondoned',
+      'vechicle', 'vehcile', 'vehical', 'vehilce'
+    ],
     categories: ['Pollution and Nuisance', 'Waste Management', 'report']
   },
 };
