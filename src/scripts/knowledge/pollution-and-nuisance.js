@@ -33,9 +33,6 @@ const abandonedVehicles = {
             <li>looks damaged or run-down</li>
           </ul>
         </p>
-        <p>Please give as much useful information as possible, including the make,
-        model, licence plate, colour and location. You can upload a photo of the 
-        vehicle if you have one.</p>
     `,
   process: {
     buttonLabel: `Report an abandoned vehicle`,
