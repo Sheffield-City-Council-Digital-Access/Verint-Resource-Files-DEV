@@ -119,7 +119,6 @@ form.dform {
 
 #main-nav .link-button {
   position: relative;
-  /* Add this line */
   margin: 0;
   padding: 0 .6rem !important;
   font-size: 1.8rem !important;
@@ -136,15 +135,15 @@ form.dform {
 #main-nav .link-button.new-badge::after {
   content: "New";
   position: absolute;
-  top: 6px;
-  right: -17px;
+  top: .4rem;
+  right: -1.7rem;
   background-color: var(--color-primary);
   color: white;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: bold;
-  padding: 8px 5px;
+  padding: .9rem .5rem;
   border-radius: 50%;
-  height: 17px;
+  height: 1.8rem;
   transform: rotate(27deg);
 }
 
