@@ -40,5 +40,35 @@ const newsArticles = [
     createdDate: '2024-08-15',
     publishDate: '2024-08-15',
     archiveDate: '2025-01-01'
+  },
+  {
+    title: 'New NEWS!',
+    content: `
+            <p>Just to show the new news badge</p>
+        `,
+    createdBy: 'Elliott Griffiths',
+    createdDate: '2024-08-15',
+    publishDate: '2024-08-19',
+    archiveDate: '2025-01-01'
+  },
+  {
+    title: 'Unpublished NEWS!',
+    content: `
+            <p>Just to show the unpublished news</p>
+        `,
+    createdBy: 'Elliott Griffiths',
+    createdDate: '2024-08-15',
+    publishDate: '2024-08-20',
+    archiveDate: '2025-01-01'
+  },
+  {
+    title: 'Archived NEWS!',
+    content: `
+            <p>Just to show the archived news</p>
+        `,
+    createdBy: 'Elliott Griffiths',
+    createdDate: '2024-08-15',
+    publishDate: '2024-08-15',
+    archiveDate: '2025-01-19'
   }
 ];
