@@ -241,9 +241,11 @@ function handleOnReadyKnowledge() {
   const newsContainer = document.getElementById('news-container');
   const archivedNewsContainer = document.getElementById('archived-news-container');
 
-  renderArticles(latestNews, newsContainer, isWithinDisplayDate);
+  const sortedNews = latestNews.slice().sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
 
-  renderArticles(latestNews, archivedNewsContainer, (publishDate, archiveDate) => {
+  renderArticles(sortedNews, newsContainer, isWithinDisplayDate);
+
+  renderArticles(sortedNews, archivedNewsContainer, (publishDate, archiveDate) => {
     const currentDate = new Date();
     return new Date(archiveDate) <= currentDate;
   });

@@ -69,6 +69,6 @@ const newsArticles = [
     createdBy: 'Elliott Griffiths',
     createdDate: '2024-08-15',
     publishDate: '2024-08-15',
-    archiveDate: '2025-01-19'
+    archiveDate: '2024-08-19'
   }
 ];
