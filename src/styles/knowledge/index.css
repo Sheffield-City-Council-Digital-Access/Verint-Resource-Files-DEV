@@ -118,6 +118,8 @@ form.dform {
 }
 
 #main-nav .link-button {
+  position: relative;
+  /* Add this line */
   margin: 0;
   padding: 0 .6rem !important;
   font-size: 1.8rem !important;
@@ -129,6 +131,21 @@ form.dform {
   font-size: 1rem;
   padding: 0;
   box-shadow: none;
+}
+
+#main-nav .link-button.new-badge::after {
+  content: "New";
+  position: absolute;
+  top: 6px;
+  right: -17px;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 5px;
+  border-radius: 50%;
+  height: 17px;
+  transform: rotate(27deg);
 }
 
 #main-nav .link-button:hover,

@@ -283,6 +283,23 @@ function handleOnReadyKnowledge() {
     });
   }
 
+  function checkLatestNews() {
+    const button = document.getElementById('latestNews');
+    const currentDate = new Date();
+
+    for (const news of latestNews) {
+      const publishDate = new Date(news.publishDate);
+
+      // Check if the news was published within the last 3 days
+      if ((currentDate - publishDate) / (1000 * 60 * 60 * 24) <= 3) {
+        button.classList.add('new-badge');
+        break;
+      }
+    }
+  }
+
+  checkLatestNews();
+
   // --- SEARCH ------------------------------------------------------------- \\
 
   function searchKnowledge(knowledge, latestNews, searchQuery) {
@@ -423,6 +440,3 @@ function handleOnReadyKnowledge() {
     window.location.href = `${url}${redirectToForm}?${customerid}${interactionid}`;
   });
 }
-
-// --- FUNCTIONS ------------------------------------------------------------ \\
-
