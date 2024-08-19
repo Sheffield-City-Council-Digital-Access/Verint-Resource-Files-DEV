@@ -277,7 +277,7 @@ function handleOnReadyKnowledge() {
 
         const metadata = document.createElement('p');
         metadata.classList.add('metadata');
-        metadata.textContent = `Created by ${newsItem.createdBy} on ${formattedDate}`;
+        metadata.textContent = `Published by ${newsItem.createdBy} on ${formattedDate}`;
         article.appendChild(metadata);
 
         container.appendChild(article);
@@ -408,11 +408,11 @@ function handleOnReadyKnowledge() {
       contentContainer.innerHTML = result.content;
 
       const button = document.getElementById('dform_widget_button_but_launch_process');
-      button.textContent = result.buttonLabel;
+      button.textContent = result.process.buttonLabel;
 
       hideShowMultipleElements([
         { name: 'page_content', display: 'show' },
-        { name: 'but_launch_process', display: result.formName ? 'show' : 'hide' }
+        { name: 'but_launch_process', display: result.process.formName ? 'show' : 'hide' }
       ]);
 
       KDF.showPage('page_content');
