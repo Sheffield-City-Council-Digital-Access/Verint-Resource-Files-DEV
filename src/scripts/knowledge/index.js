@@ -312,10 +312,11 @@ function handleOnReadyKnowledge() {
 
     const searchTerms = searchQuery.toLowerCase().split(' ');
 
-    const calculateRelevance = (item, textToSearch) => {
+    const calculateRelevance = (textToSearch) => {
       let relevance = 0;
       searchTerms.forEach(term => {
-        const matches = textToSearch.match(new RegExp(term, 'gi'));
+        const regex = new RegExp(term, 'gi');
+        const matches = textToSearch.match(regex);
         relevance += matches ? matches.length : 0;
       });
       return relevance;
@@ -323,24 +324,34 @@ function handleOnReadyKnowledge() {
 
     const searchableItems = knowledge.flatMap(service =>
       service.subjects.map(subject => {
-        const textToSearch = `${subject.meta.keywords.join(' ')} ${subject.meta.categories.join(' ')} ${subject.description || ''} ${subject.content || ''}`;
+        const textToSearch = `
+        ${subject.meta.keywords.join(' ')} 
+        ${subject.meta.categories.join(' ')} 
+        ${subject.description || ''} 
+        ${subject.content || ''}
+      `.toLowerCase();
+
         return {
           ...subject,
           serviceName: service.name,
           type: 'knowledge',
-          relevance: calculateRelevance(subject, textToSearch)
+          relevance: calculateRelevance(textToSearch),
         };
       })
     );
 
     const newsItems = latestNews.map(news => {
-      const textToSearch = `${news.title} ${news.content}`;
+      const textToSearch = `
+      ${news.title} 
+      ${news.content}
+    `.toLowerCase();
+
       return {
         title: news.title,
         description: news.content,
         content: news.content,
         type: 'news',
-        relevance: calculateRelevance(news, textToSearch)
+        relevance: calculateRelevance(textToSearch),
       };
     });
 
@@ -348,13 +359,21 @@ function handleOnReadyKnowledge() {
 
     const results = combinedItems
       .filter(item => {
-        const textToSearch = `${item.title} ${item.description || ''} ${item.content || ''}`.toLowerCase();
-        return searchTerms.every(term => textToSearch.includes(term));
+        const textToSearch = `
+        ${item.meta ? item.meta.keywords.join(' ') : ''} 
+        ${item.meta ? item.meta.categories.join(' ') : ''} 
+        ${item.title || ''} 
+        ${item.description || ''} 
+        ${item.content || ''}
+      `.toLowerCase();
+
+        return searchTerms.some(term => textToSearch.includes(term));
       })
       .sort((a, b) => b.relevance - a.relevance);
 
     return results;
   }
+
 
   function renderSearchResults(results) {
     const resultsContainer = document.getElementById('search-results');
