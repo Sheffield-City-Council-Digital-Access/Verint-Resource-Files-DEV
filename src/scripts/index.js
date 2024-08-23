@@ -583,6 +583,9 @@ function handleOnReadyEvent(event, kdf) {
       if (container) {
         container.classList.add("dform_hidden");
       }
+      if ($('.geo-btn-container').find('.dform_validationMessage').length) {
+        $('.geo-btn-container').find('.dform_validationMessage').css('display', 'none');
+      }
       resetAddressSearch();
     }
     if ($(this).text() === 'Find vehicle') {
@@ -681,6 +684,9 @@ function handleOnReadyEvent(event, kdf) {
   // --- HANDLE FIND ON MAP CLICK ------------------------------------------ \\
 
   $('.link-btn.map-icon').on('click', function () {
+    if ($('.geo-btn-container').find('.dform_validationMessage').length) {
+      $('.geo-btn-container').find('.dform_validationMessage').css('display', 'none');
+    }
     const currentPageId = getCurrentPageId();
     const container = document.querySelector(`#${currentPageId} .map-container`);
     const elementId = container.id;
