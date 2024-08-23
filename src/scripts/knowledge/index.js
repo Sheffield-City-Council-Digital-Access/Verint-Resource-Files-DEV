@@ -292,7 +292,6 @@ function handleOnReadyKnowledge() {
     for (const news of latestNews) {
       const publishDate = new Date(news.publishDate);
 
-      // Check if the news was published within the last 3 days
       if ((currentDate - publishDate) / (1000 * 60 * 60 * 24) <= 3) {
         button.classList.add('new-badge');
         break;
@@ -373,7 +372,6 @@ function handleOnReadyKnowledge() {
 
     return results;
   }
-
 
   function renderSearchResults(results) {
     const resultsContainer = document.getElementById('search-results');

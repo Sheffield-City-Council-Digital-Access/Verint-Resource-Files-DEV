@@ -48,7 +48,7 @@ const newsArticles = [
         `,
     createdBy: 'Elliott Griffiths',
     createdDate: '2024-08-15',
-    publishDate: '2024-08-19',
+    publishDate: '2024-08-29',
     archiveDate: '2025-01-01'
   },
   {
@@ -58,7 +58,7 @@ const newsArticles = [
         `,
     createdBy: 'Elliott Griffiths',
     createdDate: '2024-08-15',
-    publishDate: '2024-08-20',
+    publishDate: '2024-09-01',
     archiveDate: '2025-01-01'
   },
   {

@@ -42,7 +42,7 @@ const payYourCouncilTax = {
   },
   meta: {
     keywords: [
-      'Pay', 'Countil Tax', 'Poll Tax', 'Gound Rents', 'Domestic Rates', 'Community Charge',
+      'Pay', 'Countil Tax', 'Poll Tax', 'Ground Rents', 'Domestic Rates', 'Community Charge',
       'Forgotten to pay', 'Ways to pay', 'Direct Debit', 'Online', 'Phone', 'Stanging Order', 'Post Office', 'PayPoint'
     ],
     categories: ['Countil Tax']
