@@ -1518,7 +1518,16 @@ const resetAddressSearch = (hideFields = true) => {
     { alias: "streetName", value: '' },
     { alias: "city", value: '' },
     { alias: "postCode", value: '' },
-    { alias: "fullAddress", value: '' },
+    { alias: "uprn", value: '' },
+    { alias: "usrn", value: '' },
+    { alias: "siteName", value: '' },
+    { alias: "siteCode", value: '' },
+    { alias: "featureName", value: '' },
+    { alias: "featureType", value: '' },
+    { alias: "responsibility", value: '' },
+    { alias: "prestige", value: '' },
+    { alias: "easting", value: '' },
+    { alias: "northing", value: '' },
   ]);
   if (hideFields) {
     showHideInputFields([
