@@ -536,6 +536,10 @@ function handleOnReadyEvent(event, kdf) {
         }
       });
     }
+
+    // --- MAP --------------------------------------------------------------- \\
+
+    do_KDF_Ready_esriMap();
   }
 
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
@@ -684,7 +688,6 @@ function handleOnReadyEvent(event, kdf) {
   // --- HANDLE FIND ON MAP CLICK ------------------------------------------ \\
 
   $('.link-btn.map-icon').on('click', function () {
-    do_KDF_Ready_esriMap();
     if ($('.geo-btn-container').find('.dform_validationMessage').length) {
       $('.geo-btn-container').find('.dform_validationMessage').css('display', 'none');
     }
