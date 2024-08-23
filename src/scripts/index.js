@@ -2269,7 +2269,7 @@ async function fetchUKBankHolidays() {
     const bankHolidaysNI = data?.['northern-ireland'].events || [];
     const allBankHolidays = [...new Set([...bankHolidaysEW, ...bankHolidaysSL, ...bankHolidaysNI])];
     // Return the array of bank holidays
-    return allBankHolidays.map(holiday => new Date(holiday.date));
+    return bankHolidaysEW.map(holiday => new Date(holiday.date));
   } catch (error) {
     return []; // Return an empty array in case of an error
   }
@@ -2311,6 +2311,19 @@ async function addDaysToDate(date, daysToAdd, considerWorkingDays = false) {
   if (considerWorkingDays) {
     const nextWorkingDay = await getNextWorkingDay(new Date(newDate));
     return formatDateTime(nextWorkingDay).inputField;
+  }
+
+  return formatDateTime(newDate).inputField;
+}
+
+async function addWorkingDays(date, workingDaysToAdd) {
+  const newDate = new Date(date);
+
+  while (workingDaysToAdd > 0) {
+    newDate.setDate(newDate.getDate() + 1);
+    if (!(await isNonWorkingDay(newDate))) {
+      workingDaysToAdd--;
+    }
   }
 
   return formatDateTime(newDate).inputField;
