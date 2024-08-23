@@ -1348,47 +1348,7 @@ function checkAndDisplayModal() {
 
 // --- DISABLE BUTTONS ------------------------------------------------------ \\
 
-function checkPageProgress() {
-  // const requiredInputTypes = "input:required, textarea:required, select:required";
-  // const currentPage = $(`#${getCurrentPageId()}`);
 
-  // const addressField = $(`#${getCurrentPageId()}`).find(".full-address-field");
-  // const AddressFieldName = addressField.length ? addressField[0].attributes[1].nodeValue : null;
-
-  // const radiosAndCheckboxes = $(currentPage)
-  //   .find("input[type='radio']:required, input[type='checkbox']:required")
-  //   .filter(":visible");
-
-  // const otherFields = $(currentPage)
-  //   .find(requiredInputTypes)
-  //   .not("input[type='radio'], input[type='checkbox']")
-  //   .filter(":visible");
-
-  // const allFields = [...radiosAndCheckboxes, ...otherFields];
-
-  // // Loop through non-empty other fields and collect names
-  // let isPageComplete = true;
-  // for (let i = 0; i < allFields.length; i++) {
-  //   const field = allFields[i];
-  //   const fieldName = field.name.replace("[]", "");
-  //   if (fieldName.startsWith("mchk_")) {
-  //     const multiCheckbox = $(`[data-name="${fieldName}"]`);
-  //     const checkboxes = multiCheckbox.find('input[type="checkbox"]');
-  //     const anyCheckboxChecked = checkboxes.is(':checked');
-  //     if (!anyCheckboxChecked) {
-  //       isPageComplete = false;
-  //     }
-  //   } else {
-  //     if (!KDF.getVal(fieldName)) {
-  //       isPageComplete = false;
-  //     }
-  //   }
-  // }
-  // if (!KDF.getVal(AddressFieldName)) {
-  //   isPageComplete = false;
-  // }
-  // disabledButtonToggle(isPageComplete);
-}
 
 function disabledButtonToggle(disable) {
   // Check conditions and set button disabled state
