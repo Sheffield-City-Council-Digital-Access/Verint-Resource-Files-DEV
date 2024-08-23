@@ -907,20 +907,19 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
       // Show the "maps-unavailable-notice" element
       $(".maps-unavailable-notice").show();
+    } else {
+      // (Optional) Enable elements using native method (comment out if not used)
+      mapIcon.prop("disabled", false);
+
+      // Set aria-disabled to false for accessibility
+      mapIcon.attr("aria-disabled", "false");
+
+      // Remove the "disabled" class
+      mapIcon.removeClass("disabled");
+
+      // Hide the "maps-unavailable-notice" element
+      $(".maps-unavailable-notice").hide();
     }
-    // else {
-    //   // (Optional) Enable elements using native method (comment out if not used)
-    //   mapIcon.prop("disabled", false);
-
-    //   // Set aria-disabled to false for accessibility
-    //   mapIcon.attr("aria-disabled", "false");
-
-    //   // Remove the "disabled" class
-    //   mapIcon.removeClass("disabled");
-
-    //   // Hide the "maps-unavailable-notice" element
-    //   $(".maps-unavailable-notice").hide();
-    // }
   }
 
   if (action === 'set-raised-by') {
@@ -958,7 +957,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     }
   }
 
-  if (action === 'retrieve-local-address' || action === 'retrieve-national-address' || 'retrieve-location-from-coordinates') {
+  if (action === 'retrieve-local-address' || action === 'retrieve-national-address' || action === 'retrieve-location-from-coordinates') {
     let { property, streetName, city, postcode, fullAddress, propertyId, uprn, streetId, usrn } = response.data;
     property = formatTitleCase(property);
     streetName = formatTitleCase(streetName);
