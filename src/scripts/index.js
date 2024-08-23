@@ -611,6 +611,7 @@ function handleOnReadyEvent(event, kdf) {
   // --- HANDLE FIND CURRENT LOCATION CLICK -------------------------------- \\
 
   $('.geo-btn').on('click', function () {
+    const currentPageId = getCurrentPageId();
     const container = document.querySelector(`#${currentPageId} .map-container`);
     const mapContainer = container.id;
     mapContainer.classList.add("dform_hidden");
