@@ -29,6 +29,7 @@
 
 @import url('./components/customDate.css');
 @import url('./components/customSearch.css');
+@import url('./components/customMap.css');
 
 :root {
   /* ----- COLOURS ---------------------------------------------------------- */

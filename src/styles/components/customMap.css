@@ -1,0 +1,24 @@
+#map_container {
+  border: .1rem solid var(--color-grey-5);
+  border-radius: 0 !important;
+  box-sizing: border-box;
+}
+
+#map_container:focus,
+#map_container:focus-within {
+  box-shadow: none;
+  border: 0.4rem solid var(--color-grey-5);
+  outline: 0.4rem solid var(--color-warning);
+}
+
+#map_container>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-left.esri-ui-corner>div>div:nth-child(1):focus,
+#map_container>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-left.esri-ui-corner>div>div:nth-child(2):focus {
+  box-shadow: none;
+  border: 0.4rem solid var(--color-grey-5);
+  outline: 0.4rem solid var(--color-warning);
+}
+
+#map_container>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-manual-container>div.esri-component.esri-attribution.esri-widget,
+#map_container>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-manual-container>div.esri-component.esri-popup.esri-popup--aligned-top-center.esri-popup--shadow>div.esri-popup__main-container.esri-widget>div>section {
+  display: none;
+}
