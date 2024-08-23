@@ -957,7 +957,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     }
   }
 
-  if (action === 'retrieve-local-address' || action === 'retrieve-national-address') {
+  if (action === 'retrieve-local-address' || action === 'retrieve-national-address' || 'retrieve-location-from-coordinates') {
     let { property, streetName, city, postcode, fullAddress, propertyId, uprn, streetId, usrn } = response.data;
     property = formatTitleCase(property);
     streetName = formatTitleCase(streetName);
