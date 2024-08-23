@@ -684,6 +684,7 @@ function handleOnReadyEvent(event, kdf) {
   // --- HANDLE FIND ON MAP CLICK ------------------------------------------ \\
 
   $('.link-btn.map-icon').on('click', function () {
+    do_KDF_Ready_esriMap();
     if ($('.geo-btn-container').find('.dform_validationMessage').length) {
       $('.geo-btn-container').find('.dform_validationMessage').css('display', 'none');
     }
@@ -956,18 +957,22 @@ function handleOptionSelectedEvent(event, kdf, field, label, val) {
     const stringValue = KDF.getVal(mchkField).toString().replace(/,/gi, ', ');
     KDF.setVal(textField, stringValue);
   }
+
+  // --- MAP --------------------------------------------------------------- \\
+
+  do_KDF_optionSelected_esriMap(field, label, val);
 }
 
 // --- HANDLE ON MAP READY EVENT ------------------------------------------ \\
 
 function handleMapReadyEvent(event, kdf, type, name, map, positionLayer, markerLayer, marker, projection) {
-  logArguments(event, kdf, type, name, map, positionLayer, markerLayer, marker, projection);
+  do_KDF_mapReady_esriMap(map, positionLayer);
 }
 
 // --- HANDLE ON MAP CLICK EVENT ------------------------------------------ \\
 
 function handleMapClickEvent(event, kdf, type, name, map, positionLayer, markerLayer, marker, lat, lon, plat, plon) {
-  logArguments(event, kdf, type, name, map, positionLayer, markerLayer, marker, lat, lon, plat, plon);
+
 }
 
 // --- HANDLE ON MAP LAYRE SELECTED EVENT --------------------------------- \\
@@ -1204,6 +1209,10 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       $('.review-page-edit-button').remove();
     }
   }
+
+  // --- MAP --------------------------------------------------------------- \\
+
+  do_KDF_Custom_esriMap(action, response);
 }
 
 // --- HANDLE ON FAILED ACTION EVENT -------------------------------------- \\
