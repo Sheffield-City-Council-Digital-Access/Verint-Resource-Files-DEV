@@ -573,6 +573,20 @@ function handleOnReadyEvent(event, kdf) {
     $(`#${event.target.id}`).val(formatTitleCase(event.target.value));
   });
 
+  // --- HANDLE FIND BUTTON CLICK ------------------------------------------ \\
+
+  $('.find-btn').on('click', function () {
+    if ($(this).text() === 'Find address') {
+      const container = document.querySelector(`#${currentPageId} .map-container`);
+      const mapContainer = container.id;
+      mapContainer.classList.add("dform_hidden");
+      resetAddressSearch();
+    }
+    if ($(this).text() === 'Find vehicle') {
+      resetVehicleSearch();
+    }
+  });
+
   // --- HANDLE ADDRESS LOOKUP --------------------------------------------- \\
 
   $('.search-results').on('change', event => {
@@ -592,6 +606,92 @@ function handleOnReadyEvent(event, kdf) {
   $('.vehicle-details').on('click', event => {
     resetVehicleSearch(false);
     showVehicleFields();
+  });
+
+  // --- HANDLE FIND CURRENT LOCATION CLICK -------------------------------- \\
+
+  $('.geo-btn').on('click', function () {
+    const container = document.querySelector(`#${currentPageId} .map-container`);
+    const mapContainer = container.id;
+    mapContainer.classList.add("dform_hidden");
+    resetAddressSearch();
+
+    const $button = $(this);
+    const $container = $button.closest('.geo-btn-container');
+    const $validationMessage = $container.find('.dform_validationMessage');
+
+    // Hide the validation message if it's visible
+    if ($validationMessage.is(':visible')) {
+      $validationMessage.hide();
+    }
+
+    // Proceed with geolocation retrieval
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        function (position) {
+          const { latitude, longitude } = position.coords;
+          console.log(latitude, longitude);
+          KDF.customdata('retrieve-location-from-coordinates', $button.attr('id'), true, true, {
+            longitude: longitude.toString(),
+            latitude: latitude.toString(),
+          });
+        },
+        function (error) {
+          const errorMessage = error.code === error.PERMISSION_DENIED ? "User denied the request for Geolocation."
+            : error.code === error.POSITION_UNAVAILABLE ? "Location information is unavailable."
+              : error.code === error.TIMEOUT ? "The request to get user location timed out."
+                : "An unknown error occurred.";
+
+          const errorMessageHtml = `
+                    <div class="dform_validationMessage" style="display: block; transform: translateY(12px);">
+                        ${errorMessage}
+                    </div>
+                `;
+
+          if (!$validationMessage.length) {
+            $button.before(errorMessageHtml);
+          } else {
+            $validationMessage.html(errorMessage).show();
+          }
+        }
+      );
+    } else {
+      const errorMessage = "Geolocation is not supported by this browser.";
+
+      const errorMessageHtml = `
+            <div class="dform_validationMessage" style="display: block; transform: translateY(12px);">
+                ${errorMessage}
+            </div>
+        `;
+
+      if (!$validationMessage.length) {
+        $button.before(errorMessageHtml);
+      } else {
+        $validationMessage.html(errorMessage).show();
+      }
+    }
+  });
+
+  // --- HANDLE FIND ON MAP CLICK ------------------------------------------ \\
+
+  $('.link-btn.map-icon').on('click', function () {
+    const currentPageId = getCurrentPageId();
+    const container = document.querySelector(`#${currentPageId} .map-container`);
+    const elementId = container.id;
+    const element = document.getElementById(elementId);
+
+    if (element) {
+      const isHidden = element.classList.contains("dform_hidden");
+
+      if (isHidden) {
+        element.classList.remove("dform_hidden");
+      } else {
+        element.classList.add("dform_hidden");
+      }
+    } else {
+      setRequiredStateByAlias('postcode', 'required');
+    }
+    resetAddressSearch();
   });
 
   // --- HANDLE CUSTOM DATE ------------------------------------------------ \\
@@ -791,7 +891,6 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
 
   getAndSetReviewPageData();
-
 }
 
 // --- HANDLE ON FIELD CHANGE EVENT ---------------------------------------- \\
@@ -871,7 +970,6 @@ function handleObjectIdSet(event, kdf, type, id) {
 
   // Hide submit anonymously option and info
   $('.anonymous').hide();
-
 }
 
 function handleObjectIdLoaded(event, kdf, response, type, id) {
@@ -957,8 +1055,28 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     }
   }
 
-  if (action === 'retrieve-local-address' || action === 'retrieve-national-address' || action === 'retrieve-location-from-coordinates') {
-    let { property, streetName, city, postcode, fullAddress, propertyId, uprn, streetId, usrn } = response.data;
+  if (action === 'retrieve-local-address'
+    || action === 'retrieve-national-address'
+    || action === 'retrieve-location-from-coordinates') {
+    let { property, streetName, city, postcode, fullAddress, propertyId, uprn, streetId, usrn, status, message } = response.data;
+    if (status == 400) {
+      const $button = $('.geo-btn');
+      const $container = $button.closest('.geo-btn-container');
+      const $validationMessage = $container.find('.dform_validationMessage');
+      const errorMessageHtml = `
+        <div class="dform_validationMessage" style="display: block; transform: translateY(12px);">
+          ${errorMessage}
+        </div>
+      `;
+
+      if (!$validationMessage.length) {
+        $button.before(errorMessageHtml);
+      } else {
+        $validationMessage.html(errorMessage).show();
+      }
+      return;
+    }
+
     property = formatTitleCase(property);
     streetName = formatTitleCase(streetName);
     fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${city}, ${postcode}`;
@@ -1271,6 +1389,30 @@ const showHideInputFields = (aliasesAndDisplay) => {
       }
     }
   });
+};
+
+const setRequiredStateByAlias = (alias, state) => {
+  const currentPageId = getCurrentPageId(); // Get the current page ID
+
+  // Construct the selector string with the provided alias
+  const selector = `
+    #${currentPageId} input[data-customalias="${alias}"], 
+    #${currentPageId} select[data-customalias="${alias}"],
+    #${currentPageId} textarea[data-customalias="${alias}"]
+  `;
+
+  // Find the element matching the selector
+  const element = document.querySelector(selector);
+
+  if (element) {
+    // Get the name of the element
+    const name = element.name;
+    if (state === 'required') {
+      KDF.setWidgetRequired(name);
+    } else {
+      KDF.setWidgetNotRequired(name);
+    }
+  }
 };
 
 // --- SET SELECTED ADDRESS ------------------------------------------------- \\
