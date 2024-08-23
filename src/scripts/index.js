@@ -646,13 +646,13 @@ function handleOnReadyEvent(event, kdf) {
           });
         },
         function (error) {
-          const errorMessage = error.code === error.PERMISSION_DENIED ? "User denied the request for Geolocation."
-            : error.code === error.POSITION_UNAVAILABLE ? "Location information is unavailable."
-              : error.code === error.TIMEOUT ? "The request to get user location timed out."
-                : "An unknown error occurred.";
+          const errorMessage = error.code === error.PERMISSION_DENIED ? "User denied the request for Geolocation"
+            : error.code === error.POSITION_UNAVAILABLE ? "Location information is unavailable"
+              : error.code === error.TIMEOUT ? "The request to get user location timed out"
+                : "An unknown error occurred";
 
           const errorMessageHtml = `
-                    <div class="dform_validationMessage" style="display: block; transform: translateY(12px);">
+                    <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
                         ${errorMessage}
                     </div>
                 `;
@@ -665,10 +665,10 @@ function handleOnReadyEvent(event, kdf) {
         }
       );
     } else {
-      const errorMessage = "Geolocation is not supported by this browser.";
+      const errorMessage = "Geolocation is not supported by this browser";
 
       const errorMessageHtml = `
-            <div class="dform_validationMessage" style="display: block; transform: translateY(12px);">
+            <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
                 ${errorMessage}
             </div>
         `;
@@ -1076,7 +1076,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       const $container = $button.closest('.geo-btn-container');
       const $validationMessage = $container.find('.dform_validationMessage');
       const errorMessageHtml = `
-        <div class="dform_validationMessage" style="display: block; transform: translateY(12px);">
+        <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
           ${message}
         </div>
       `;
