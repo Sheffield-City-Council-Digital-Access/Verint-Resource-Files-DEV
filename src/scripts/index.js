@@ -1071,20 +1071,20 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     || action === 'retrieve-national-address'
     || action === 'retrieve-location-from-coordinates') {
     let { property, streetName, city, postcode, fullAddress, propertyId, uprn, streetId, usrn, status, message } = response.data;
-    if (status == 400) {
+    if (status == 400 && action === 'retrieve-location-from-coordinates') {
       const $button = $('.geo-btn');
       const $container = $button.closest('.geo-btn-container');
       const $validationMessage = $container.find('.dform_validationMessage');
       const errorMessageHtml = `
         <div class="dform_validationMessage" style="display: block; transform: translateY(12px);">
-          ${errorMessage}
+          ${message}
         </div>
       `;
 
       if (!$validationMessage.length) {
         $button.before(errorMessageHtml);
       } else {
-        $validationMessage.html(errorMessage).show();
+        $validationMessage.html(message).show();
       }
       return;
     }
