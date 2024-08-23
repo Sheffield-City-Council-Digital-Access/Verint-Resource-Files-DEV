@@ -1,6 +1,10 @@
 #map_container {
+  padding: 0;
+  margin: 0;
+  height: 400px;
+  width: 100%;
   border: .1rem solid var(--color-grey-5);
-  border-radius: 0 !important;
+  border-radius: 0;
   box-sizing: border-box;
 }
 
@@ -9,6 +13,18 @@
   box-shadow: none;
   border: 0.4rem solid var(--color-grey-5);
   outline: 0.4rem solid var(--color-warning);
+}
+
+#dform_container .dform_gis_reversegeo {
+  color: #000000 !important;
+}
+
+.esri-popup__main-container {
+  width: auto !important;
+}
+
+.map_container_error {
+  border: .4rem solid var(--color-error) !important;
 }
 
 #map_container>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-left.esri-ui-corner>div>div:nth-child(1):focus,
