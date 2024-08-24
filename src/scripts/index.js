@@ -2714,7 +2714,6 @@ function mapClick(evt) {
         } else {
 
           streetMapPositionLayer.removeAll();
-          //console.log(graphic);
           var layerAttributes;
           var layerName;
           graphic.forEach(function (arrayItem) {
@@ -2776,7 +2775,6 @@ function map_extent_change() {
           yminE = streetMapView.extent.ymin;
           ymaxE = streetMapView.extent.ymax;
 
-          //call_navigator();
           viewInitialLoad = true;
         }
         if (a[0] && !b[0]) {
@@ -2897,6 +2895,7 @@ function do_KDF_Custom_esriMap(action, response) {
       ]);
       setSelectedAddress(fullAddress, 'show');
       $('.popup').text(streetName);
+      setRequiredStateByAlias('postcode', 'not required');
     }
 
   }
