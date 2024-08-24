@@ -160,13 +160,12 @@ input[type="radio"]:checked {
   border-color: var(--color-grey-5);
 }
 
-/* #dform_container input[type="radio"]:checked::after */
 #dform_container input[type="radio"]:checked::before {
   content: '';
   display: block;
   width: 60%;
   height: 60%;
-  background-color: black;
+  background-color: var(--color-grey-5);
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -262,12 +261,11 @@ input[type="radio"]:checked {
   outline: 0.4rem solid var(--color-warning);
 }
 
-/* #dform_container input[type="radio"]:focus,
-#dform_container input[type="radio"]:checked:focus::before {
+#dform_container input[type="radio"]:focus {
   border: none;
   outline: none;
   box-shadow: inset 0 0 0 0.4rem var(--color-grey-5), 0 0 0 0.4rem var(--color-warning);
-} */
+}
 
 #dform_container input[type="checkbox"]:focus,
 #dform_container input[type="checkbox"]:checked:focus::after {
