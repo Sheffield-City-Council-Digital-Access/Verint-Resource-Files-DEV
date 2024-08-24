@@ -107,8 +107,7 @@ option {
   clear: both;
 }
 
-#dform_container .radiogroup,
-#dform_container .checkboxgroup {
+#dform_container .radiogroup {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -120,13 +119,11 @@ option {
   width: 100%;
 }
 
-#dform_container .vertical .radiogroup,
-#dform_container .checkboxgroup {
+#dform_container .vertical .radiogroup {
   flex-direction: column;
 }
 
-#dform_container .radiogroup br,
-#dform_container .checkboxgroup br {
+#dform_container .radiogroup br {
   display: none;
 }
 
@@ -142,27 +139,58 @@ option {
   margin-bottom: 1rem;
 }
 
-#dform_container input[type="radio"],
+#dform_container input[type="radio"] {
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-grey-5);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--color-white);
+  border-color: var(--color-grey-5);
+}
+
+/* #dform_container input[type="radio"]:checked::after */
+#dform_container input[type="radio"]:checked::before {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 60%;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#dform_container .checkboxgroup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 0 2.5rem 0;
+}
+
+#dform_container .checkboxgroup br {
+  display: none;
+}
+
 #dform_container input[type="checkbox"] {
   display: inline-block;
   margin: 0;
   width: 5rem;
   border-radius: 50%;
   transition: all 0.2s ease;
-}
-
-#dform_container input[type="radio"]:checked::after {
-  display: block;
-  position: relative;
-  background-color: var(--color-grey-5);
-  width: 60%;
-  height: 60%;
-  border-radius: 50%;
-  content: "";
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  outline: .9rem solid var(--color-white);
 }
 
 #dform_container .checkboxgroup>span,
