@@ -3160,7 +3160,7 @@ function hideShowMultipleElements(fields) {
 }
 
 function hideShowElement(name, display) {
-  display.toLowerCase();
+  display = display.toLowerCase();
   if (name.startsWith('page_')) {
     if (display === true || display === 'true' || display === 'show') {
       KDF.showPage(name);
@@ -3254,7 +3254,7 @@ function updateMultipleRequiredStates(fields) {
 }
 
 function updateRequiredState(name, isRequired) {
-  isRequired.toLowerCase();
+  isRequired = isRequired.toLowerCase();
   if (isRequired === true || isRequired === 'true' || isRequired === 'required') {
     KDF.setWidgetRequired(name);
   } else {
