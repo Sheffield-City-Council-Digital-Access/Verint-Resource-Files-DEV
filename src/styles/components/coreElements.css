@@ -131,7 +131,7 @@ option {
 #dform_container .radiogroup span {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   margin-right: 4rem;
   text-align: center;
@@ -142,6 +142,7 @@ option {
   max-width: 100%;
   white-space: normal;
   word-wrap: break-word;
+  transform: translateY(1.6rem);
 }
 
 #dform_container .vertical .radiogroup span {
@@ -216,7 +217,12 @@ option {
 }
 
 #dform_container .checkboxgroup>span>label {
-  align-self: center;
+  align-self: flex-start;
+  text-align: left;
+  max-width: 100%;
+  white-space: normal;
+  word-wrap: break-word;
+  transform: translateY(1.6rem);
 }
 
 #dform_container .dform_widget_type_checkbox>div .dform_validationMessage {
