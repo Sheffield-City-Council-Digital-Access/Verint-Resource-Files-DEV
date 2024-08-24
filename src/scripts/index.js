@@ -847,14 +847,12 @@ function handleOnReadyEvent(event, kdf) {
       KDF.showError('Please ensure all fields have been completed.');
     }
   });
-
 }
 
 // --- HANDLE ON PAGE CHANGE EVENT ----------------------------------------- \\
 
 function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   KDF.hideMessages();
-  logArguments(event, kdf, currentpageid, targetpageid)
 
   // Get the name for the current page
   $(`div[data-type="page"][data-pos="${currentpageid}"]`).each(function () {
@@ -865,8 +863,6 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   $(`div[data-type="page"][data-pos="${targetpageid}"]`).each(function () {
     pageName = this.id.slice(11);
   });
-
-  checkPageProgress();
 
   updateProgressBar(targetpageid);
 
@@ -908,6 +904,9 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
 
   getAndSetReviewPageData();
+
+  // keep at the bottom
+  checkPageProgress();
 }
 
 // --- HANDLE ON FIELD CHANGE EVENT ---------------------------------------- \\
@@ -946,8 +945,6 @@ function handleFieldChangeEvent(event, kdf, field) {
 
 function handleOptionSelectedEvent(event, kdf, field, label, val) {
 
-  checkPageProgress();
-
   // --- HANDLE SET MULTI CHECK VALUE TO TEXT FIELD ------------------------ \\
 
   if (field.startsWith('mchk_')) {
@@ -960,18 +957,26 @@ function handleOptionSelectedEvent(event, kdf, field, label, val) {
   // --- MAP --------------------------------------------------------------- \\
 
   do_KDF_optionSelected_esriMap(field, label, val);
+
+  // keep at the bottom
+  checkPageProgress();
 }
 
 // --- HANDLE ON MAP READY EVENT ------------------------------------------ \\
 
 function handleMapReadyEvent(event, kdf, type, name, map, positionLayer, markerLayer, marker, projection) {
   do_KDF_mapReady_esriMap(map, positionLayer);
+
+  // keep at the bottom
+  checkPageProgress();
 }
 
 // --- HANDLE ON MAP CLICK EVENT ------------------------------------------ \\
 
 function handleMapClickEvent(event, kdf, type, name, map, positionLayer, markerLayer, marker, lat, lon, plat, plon) {
 
+  // keep at the bottom
+  checkPageProgress();
 }
 
 // --- HANDLE ON MAP LAYRE SELECTED EVENT --------------------------------- \\
@@ -1004,6 +1009,9 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
       { alias: "siteCode", value: siteCode }
     ]);
   }
+
+  // keep at the bottom
+  checkPageProgress();
 }
 
 // --- HANDLE CLEAR MAP FIELDS EVENT -------------------------------------- \\
@@ -1015,6 +1023,9 @@ function handleClearMapFieldsEvent() {
     { alias: "responsibility", value: '' },
     { alias: "prestige", value: '' }
   ]);
+
+  // keep at the bottom
+  checkPageProgress();
 }
 
 // --- HANDLE ON OBJECT EVENT --------------------------------------------- \\
@@ -1029,6 +1040,9 @@ function handleObjectIdSet(event, kdf, type, id) {
 
   // Hide submit anonymously option and info
   $('.anonymous').hide();
+
+  // keep at the bottom
+  checkPageProgress();
 }
 
 function handleObjectIdLoaded(event, kdf, response, type, id) {
@@ -1037,6 +1051,9 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
   streetName = formatTitleCase(response['profile-AddressLine1']);
   fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${response['profile-AddressLine4']}, ${response['profile-Postcode']}`;
   handleSetReporter(new Date(response['profile-DateOfBirth']), fullAddress);
+
+  // keep at the bottom
+  checkPageProgress();
 }
 
 // --- HANDLE ON SUCCESSFUL ACTION EVENT ---------------------------------- \\
@@ -1212,6 +1229,9 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   // --- MAP --------------------------------------------------------------- \\
 
   do_KDF_Custom_esriMap(action, response);
+
+  // keep at the bottom
+  checkPageProgress();
 }
 
 // --- HANDLE ON FAILED ACTION EVENT -------------------------------------- \\
@@ -1227,6 +1247,9 @@ function handleFailedAction(event, action, xhr, settings, thrownError) {
     // temp
     KDF.showError(`${action} failed: ${thrownError}`);
   }
+
+  // keep at the bottom
+  checkPageProgress();
 }
 
 // --- HANDLE ON SUCCESSFUL SAVE EVENT ------------------------------------ \\
