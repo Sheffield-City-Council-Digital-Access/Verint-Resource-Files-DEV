@@ -212,7 +212,6 @@ option {
 
 #dform_container .checkboxgroup>span {
   align-items: start;
-  margin: 0;
 }
 
 #dform_container .checkboxgroup>span>label {
@@ -226,10 +225,6 @@ option {
 
 #dform_container .dform_widget_type_checkbox>div .dform_validationMessage {
   width: 100%;
-}
-
-#dform_container .checkboxgroup>span {
-  margin-bottom: 1rem;
 }
 
 #dform_container input[type="checkbox"]:checked::after {
