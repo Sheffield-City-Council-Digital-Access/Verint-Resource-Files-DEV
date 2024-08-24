@@ -711,6 +711,48 @@ function handleOnReadyEvent(event, kdf) {
     resetAddressSearch();
   });
 
+  // --- HANDLE LOCATOR BUTTON CLICK --------------------------------------- \\
+
+  $('.locator-btn').click(function () {
+    const currentPageId = getCurrentPageId();
+
+    const fullAddress = document.querySelector(`#${currentPageId} input[data-customalias="fullAddress"]`);
+    const fullAddressHasValue = KDF.getVal(fullAddress.name) ? true : false;
+
+    if (fullAddressHasValue) {
+      KDF.checkProgress();
+    } else {
+      const isMapContainerVisible = $('#map_container').is(':visible');
+      if (isMapContainerVisible) {
+        if ($('#map_error').length == '0') {
+          $('#dform_widget_html_ahtm_map_container').prepend('<div id="map_error" class="dform_validationMessage" style="display: block;">Select a location inside the Sheffield area</div>');
+        }
+        KDF.setVal('ahtm_map_location_error', 'Select a location inside the Sheffield area');
+        KDF.showWidget('ahtm_map_location_error');
+      } else {
+        const searchResult = document.querySelector(`#${currentPageId} select[data-customalias="searchResult"]`);
+        const isSearchResultVisible = $(`#${searchResult.id}`).is(':visible');
+        if (isSearchResultVisible) {
+          document.querySelector(`div[data-name="${searchResult.name}"] .dform_validationMessage`).style.display = 'block';
+        } else {
+          const postcode = document.querySelector(`#${currentPageId} input[data-customalias="postcode"]`);
+          const postcodeHasValue = KDF.getVal(postcode.name) ? true : false;
+          if (postcodeHasValue) {
+            const findButton = document.querySelector(`#${currentPageId} .find-btn`);
+            if (findButton) {
+              findButton.click();
+            } else {
+              document.querySelector(`div[data-name="${postcode.name}"] .dform_validationMessage`).style.display = 'block';
+            }
+            findButton.click();
+          } else {
+            document.querySelector(`div[data-name="${postcode.name}"] .dform_validationMessage`).style.display = 'block';
+          }
+        }
+      }
+    }
+  });
+
   // --- HANDLE CUSTOM DATE ------------------------------------------------ \\
 
   $(`.date-field`).find('.dform_validationMessage').hide();
