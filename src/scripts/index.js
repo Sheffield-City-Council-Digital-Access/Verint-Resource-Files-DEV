@@ -1169,6 +1169,17 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
         { alias: "searchResult", display: true },
       ]);
     } else {
+      const currentPageId = getCurrentPageId();
+      const postcodeInput = document.querySelector(`#${currentPageId} input[data-customalias="postcode"]`);
+
+      if (postcodeInput) {
+        const validationMessageElement = document.querySelector(`div[data-name="${postcodeInput.name}"] .dform_validationMessage`);
+
+        if (validationMessageElement) {
+          validationMessageElement.textContent = "Enter a valid postcode";
+          validationMessageElement.style.display = 'block';
+        }
+      }
       showAddressFields();
     }
   }
