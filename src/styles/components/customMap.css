@@ -1,6 +1,10 @@
+.map-container {
+  margin-top: 2rem;
+}
+
 #map_container {
   padding: 0;
-  margin: 2rem 0 0;
+  margin: 0;
   height: 40rem;
   width: 100%;
   border: .1rem solid var(--color-grey-5);

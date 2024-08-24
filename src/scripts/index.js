@@ -468,6 +468,7 @@ function handleInitialisingEvent(addDateMessages) {
           }, 0);
         });
       }
+      checkPageProgress();
     }
   });
 
@@ -916,22 +917,14 @@ function handleFieldChangeEvent(event, kdf, field) {
   // --- HANDLE IF NI OR NASS IS REQUIREMENT ------------------------------- \\
 
   if (field.name === 'txt_national_insurance') {
-    if ($(`#${field.id}`).is(':valid')) {
-      KDF.setWidgetNotRequired('txt_national_asylum_support');
-    } else {
-      KDF.setWidgetRequired('txt_national_asylum_support');
-    }
+    const requiredState = $(`#${field.id}`).is(':valid') ? true : false;
+    updateRequiredState('txt_national_asylum_support', requiredState);
   }
 
   if (field.name === 'txt_national_asylum_support') {
-    if ($(`#${field.id}`).is(':valid')) {
-      KDF.setWidgetNotRequired('txt_national_insurance');
-    } else {
-      KDF.setWidgetRequired('txt_national_insurance');
-    }
+    const requiredState = $(`#${field.id}`).is(':valid') ? true : false;
+    updateRequiredState('txt_national_insurance', requiredState);
   }
-
-  checkPageProgress();
 
   // --- HANDLE FORMAT REMOVE ECCESS WHITE SPACES -------------------------- \\
 
@@ -944,6 +937,9 @@ function handleFieldChangeEvent(event, kdf, field) {
   ) {
     $(`#${field.id}`).val(formatRemoveEccessWhiteSpace(KDF.getVal(field.name)));
   }
+
+  // keep at the bottom
+  checkPageProgress();
 }
 
 // --- HANDLE ON OPTION SELECTED EVENT ------------------------------------ \\
@@ -1349,59 +1345,83 @@ function checkAndDisplayModal() {
 // --- DISABLE BUTTONS ------------------------------------------------------ \\
 
 function checkPageProgress() {
-  // const requiredInputTypes = "input:required, textarea:required, select:required";
-  // const currentPage = $(`#${getCurrentPageId()}`);
+  const currentPageId = getCurrentPageId();
+  const currentPageElement = document.getElementById(currentPageId);
 
-  // const addressField = $(`#${getCurrentPageId()}`).find(".full-address-field");
-  // const AddressFieldName = addressField.length ? addressField[0].attributes[1].nodeValue : null;
+  // Handle file inputs separately
+  const fileUploads = Array.from(currentPageElement.querySelectorAll("input[type='file']:required"))
+    .filter(el => isVisible(el));
 
-  // const radiosAndCheckboxes = $(currentPage)
-  //   .find("input[type='radio']:required, input[type='checkbox']:required")
-  //   .filter(":visible");
+  // Handle radio buttons and checkboxes separately
+  const radiosAndCheckboxes = Array.from(currentPageElement.querySelectorAll("input[type='radio']:required, input[type='checkbox']:required"))
+    .filter(el => isVisible(el));
 
-  // const otherFields = $(currentPage)
-  //   .find(requiredInputTypes)
-  //   .not("input[type='radio'], input[type='checkbox']")
-  //   .filter(":visible");
+  // Handle all other required input types (excluding radio, checkbox, and file)
+  const otherFields = Array.from(currentPageElement.querySelectorAll("input[required], select[required], textarea[required]"))
+    .filter(el => isVisible(el) && !["radio", "checkbox", "file"].includes(el.type));
 
-  // const allFields = [...radiosAndCheckboxes, ...otherFields];
-
-  // // Loop through non-empty other fields and collect names
-  // let isPageComplete = true;
-  // for (let i = 0; i < allFields.length; i++) {
-  //   const field = allFields[i];
-  //   const fieldName = field.name.replace("[]", "");
-  //   if (fieldName.startsWith("mchk_")) {
-  //     const multiCheckbox = $(`[data-name="${fieldName}"]`);
-  //     const checkboxes = multiCheckbox.find('input[type="checkbox"]');
-  //     const anyCheckboxChecked = checkboxes.is(':checked');
-  //     if (!anyCheckboxChecked) {
-  //       isPageComplete = false;
-  //     }
-  //   } else {
-  //     if (!KDF.getVal(fieldName)) {
-  //       isPageComplete = false;
-  //     }
-  //   }
-  // }
-  // if (!KDF.getVal(AddressFieldName)) {
-  //   isPageComplete = false;
-  // }
-  // disabledButtonToggle(isPageComplete);
-}
-
-function disabledButtonToggle(disable) {
-  // Check conditions and set button disabled state
-  if (disable) {
-    $('.primary-btn, .anonymous-btn').removeClass('disabled').prop("disabled", false).attr("aria-disabled", "false");  // Enable buttons and remove disabled class
-  } else {
-    if (getCurrentPageId() !== 'dform_page_page_about_you') {
-      $('.anonymous-btn').addClass('disabled').prop("disabled", true).attr("aria-disabled", "true");   // Disable buttons and add disabled class
-    }
-    $('.primary-btn').addClass('disabled').prop("disabled", true).attr("aria-disabled", "true");   // Disable buttons and add disabled class
+  function isVisible(element) {
+    return !!(element.offsetWidth || element.offsetHeight || element.getClientRects().length);
   }
+
+  // Check if any of the file inputs are empty based on the filenames in the associated div
+  const hasEmptyFileUploads = fileUploads.some(el => {
+    const filenamesContainer = el.closest('.dform_widget').querySelector('.dform_filenames');
+    const hasFiles = filenamesContainer && filenamesContainer.children.length > 0;
+
+    return !hasFiles;
+  });
+
+  // Check if any radio or checkbox groups are unchecked
+  const hasEmptyRadiosAndCheckboxes = radiosAndCheckboxes.some(el => {
+    const name = el.name;
+    const isUnchecked = !currentPageElement.querySelector(`input[name='${name}']:checked`);
+
+    return isUnchecked;
+  });
+
+  // Check if any other required fields are empty or invalid
+  const hasEmptyOrInvalidOtherFields = otherFields.some(el => {
+    const isEmpty = el.value.trim() === '';
+    const isValid = el.checkValidity();
+
+    return isEmpty || !isValid;
+  });
+
+  // Combine all the checks
+  const hasEmptyRequiredElement = hasEmptyFileUploads || hasEmptyRadiosAndCheckboxes || hasEmptyOrInvalidOtherFields;
+
+  // Call the disabledButtonToggle function based on the check
+  disabledButtonToggle(!hasEmptyRequiredElement);
 }
 
+function disabledButtonToggle(enable) {
+  const buttons = document.querySelectorAll('.primary-btn, .anonymous-btn');
+
+  buttons.forEach(button => {
+    if (enable) {
+      // Enable buttons and remove disabled class
+      button.classList.remove('disabled');
+      button.disabled = false;
+      button.setAttribute("aria-disabled", "false");
+    } else {
+      if (getCurrentPageId() !== 'dform_page_page_about_you') {
+        // Disable anonymous buttons and add disabled class
+        if (button.classList.contains('anonymous-btn')) {
+          button.classList.add('disabled');
+          button.disabled = true;
+          button.setAttribute("aria-disabled", "true");
+        }
+      }
+      // Disable primary buttons and add disabled class
+      if (button.classList.contains('primary-btn')) {
+        button.classList.add('disabled');
+        button.disabled = true;
+        button.setAttribute("aria-disabled", "true");
+      }
+    }
+  });
+}
 // --- SET VALUE TO FIELD ON CURRENT PAGE ----------------------------------- \\
 
 // Function to set value to fields based on data-customalias attributes of inputs on the current page
@@ -1458,7 +1478,7 @@ const showHideInputFields = (aliasesAndDisplay) => {
   });
 };
 
-const setRequiredStateByAlias = (alias, state) => {
+const setRequiredStateByAlias = (alias, requiredState) => {
   const currentPageId = getCurrentPageId(); // Get the current page ID
 
   // Construct the selector string with the provided alias
@@ -1472,13 +1492,7 @@ const setRequiredStateByAlias = (alias, state) => {
   const element = document.querySelector(selector);
 
   if (element) {
-    // Get the name of the element
-    const name = element.name;
-    if (state === 'required') {
-      KDF.setWidgetRequired(name);
-    } else {
-      KDF.setWidgetNotRequired(name);
-    }
+    updateRequiredState(element.name, requiredState);
   }
 };
 
@@ -3081,6 +3095,7 @@ function hideShowMultipleElements(fields) {
 }
 
 function hideShowElement(name, display) {
+  display.toLowerCase();
   if (name.startsWith('page_')) {
     if (display === true || display === 'true' || display === 'show') {
       KDF.showPage(name);
@@ -3163,6 +3178,24 @@ function updateMultipleValidationMessages(fields) {
 function updateValidationMessage(name, value) {
   $(`.dform_widget_${name} .dform_validationMessage`).text(value);
   $(`.dform_widget_${name}`).attr('title', value);
+}
+
+// --- UPDATE REQUIRED STATE ------------------------------------------------ \\
+
+function updateMultipleRequiredStates(fields) {
+  fields.map((field) => {
+    updateRequiredState(field.name, field.isRequired);
+  });
+}
+
+function updateRequiredState(name, isRequired) {
+  isRequired.toLowerCase();
+  if (isRequired === true || isRequired === 'true' || isRequired === 'required') {
+    KDF.setWidgetRequired(name);
+  } else {
+    KDF.setWidgetNotRequired(name);
+  }
+  checkPageProgress();
 }
 
 // --- CHECK DATE FUNCTIONS ------------------------------------------------- \\
