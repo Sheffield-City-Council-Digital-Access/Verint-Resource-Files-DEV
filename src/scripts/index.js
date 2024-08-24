@@ -720,7 +720,7 @@ function handleOnReadyEvent(event, kdf) {
     const fullAddressHasValue = KDF.getVal(fullAddress.name) ? true : false;
 
     if (fullAddressHasValue) {
-      KDF.checkProgress();
+      KDF.gotoNextPage();
     } else {
       const isMapContainerVisible = $('#map_container').is(':visible');
       if (isMapContainerVisible) {
