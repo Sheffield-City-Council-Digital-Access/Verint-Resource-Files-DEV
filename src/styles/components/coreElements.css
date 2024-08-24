@@ -122,6 +122,7 @@ option {
 
 #dform_container .vertical .radiogroup {
   flex-direction: column;
+  gap: 1rem;
 }
 
 #dform_container .radiogroup br {
@@ -143,10 +144,6 @@ option {
   white-space: normal;
   word-wrap: break-word;
   transform: translateY(1.6rem);
-}
-
-#dform_container .vertical .radiogroup span {
-  margin-bottom: 1rem;
 }
 
 #dform_container input[type="radio"] {
@@ -190,6 +187,7 @@ option {
   flex-wrap: wrap;
   margin: 0 0 2.5rem 0;
   width: min(100%, 44.5rem);
+  gap: 1rem;
 }
 
 #dform_container .checkboxgroup br {
@@ -214,6 +212,7 @@ option {
 
 #dform_container .checkboxgroup>span {
   align-items: start;
+  margin: 0;
 }
 
 #dform_container .checkboxgroup>span>label {
