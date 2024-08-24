@@ -130,9 +130,17 @@ option {
 #dform_container .radiogroup span {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   margin-right: 4rem;
+  text-align: center;
+}
+
+#dform_container .radiogroup span label {
+  text-align: left;
+  max-width: 200px;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 #dform_container .vertical .radiogroup span {
@@ -153,9 +161,10 @@ option {
   cursor: pointer;
   outline: none;
   transition: all 0.2s ease;
+  flex-shrink: 0;
 }
 
-input[type="radio"]:checked {
+#dform_container input[type="radio"]:checked {
   background-color: var(--color-white);
   border-color: var(--color-grey-5);
 }
