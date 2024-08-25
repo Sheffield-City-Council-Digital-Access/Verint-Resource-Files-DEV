@@ -2160,13 +2160,12 @@ function getAndSetReviewPageData() {
               fieldValue = `<a href="${filePath}" target="_blank">${fieldValue}</a>`;
             }
           } else {
-            if (fieldClass.indexOf('property') || fieldClass.indexOf('street-name') || fieldClass.indexOf('city') || fieldClass.indexOf('postcode')) {
-              fieldLabel = false;
-              fieldValue = '';
-            }
             if (fieldClass.indexOf('address-search') !== -1) {
               fieldLabel = 'Address';
               fieldValue = getValueFromAlias(pageId, 'fullAddress');
+            } else if (fieldClass.indexOf('property') || fieldClass.indexOf('street-name') || fieldClass.indexOf('city') || fieldClass.indexOf('postcode')) {
+              fieldLabel = false;
+              fieldValue = '';
             } else {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
               fieldValue = KDF.getVal(fieldName);
