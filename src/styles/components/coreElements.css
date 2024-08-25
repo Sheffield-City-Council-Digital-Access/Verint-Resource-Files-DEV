@@ -245,21 +245,36 @@ option {
   border: .1rem solid var(--color-grey-5);
 }
 
-#dform_container .currency {
-  position: relative;
+#dform_page_page_primary_input_fields>div>div>div>div.currency>div:nth-child(2) {
+  display: grid;
+  align-items: baseline;
+  width: 100%;
 }
 
-#dform_container .currency::before {
+#dform_page_page_primary_input_fields>div>div>div>div.currency>div:nth-child(2)::after {
   content: '£';
-  position: absolute;
-  left: 1.5rem;
-  top: 76%;
-  transform: translateY(-50%);
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+  padding-left: 1.2rem;
+  padding-block: 1.6rem;
+  width: max-content;
+  font-size: var(--font-size-p1);
+}
+
+#dform_container .currency-symbol {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  z-index: 3;
+  padding-left: 1.2rem;
+  padding-block: 1.6rem;
+  width: max-content;
   font-size: var(--font-size-p1);
 }
 
 #dform_container .currency input[type="number"] {
-  padding-left: 2.75rem;
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+  padding-left: 2.4rem !important;
 }
 
 /* --- INPUT FOCUS ---------------------------------------------------------- */
