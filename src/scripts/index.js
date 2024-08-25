@@ -2160,8 +2160,9 @@ function getAndSetReviewPageData() {
               fieldValue = `<a href="${filePath}" target="_blank">${fieldValue}</a>`;
             }
           } else {
-            if (fieldClass.indexOf('address-search') !== -1) {
-              console.log('----------', getValueFromAlias(pageId, 'fullAddress'))
+            if (fieldClass.indexOf('property') || fieldClass.indexOf('street-name') || fieldClass.indexOf('city') || fieldClass.indexOf('postcode')) {
+              return;
+            } else if (fieldClass.indexOf('address-search') !== -1) {
               fieldLabel = 'Address';
               fieldValue = getValueFromAlias(pageId, 'fullAddress');
             } else {
