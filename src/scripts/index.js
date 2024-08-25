@@ -574,8 +574,9 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE FORMAT TITLE CASE ------------------------------------------ \\
 
-  $('.format-title-case').on('change', event => {
-    $(`#${event.target.id}`).val(formatTitleCase(event.target.value));
+  $('.format-title-case').on('change', function () {
+    console.log('debug')
+    KDF.setVal(this.name, formatTitleCase(this.value));
   });
 
   // --- HANDLE FIND BUTTON CLICK ------------------------------------------ \\
