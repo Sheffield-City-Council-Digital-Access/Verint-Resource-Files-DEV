@@ -610,6 +610,7 @@ function handleOnReadyEvent(event, kdf) {
   $('.address-details').on('click', event => {
     resetAddressSearch(false);
     showAddressFields();
+    setRequiredStateByAlias('postcode', 'not required');
   });
 
   // --- HANDLE VEHICLE LOOKUP --------------------------------------------- \\
@@ -2770,7 +2771,6 @@ function mapClick(evt) {
           store_layer_attr.main_attribute = {};
           store_layer_attr.main_attribute = layerAttributes;
           store_layer_attr.main_attribute.layername = layerName;
-          console.log(streetMapView.zoom)
 
           KDF.customdata('reverse_geocode_osmap', 'asset_code', true, true, {
             longitude: mapX,
