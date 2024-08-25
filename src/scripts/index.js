@@ -2137,7 +2137,7 @@ function getAndSetReviewPageData() {
             console.log('----------', getValueFromAlias(pageId, 'fullAddress'))
             fieldLabel = 'Address';
             fieldValue = getValueFromAlias(pageId, 'fullAddress');
-            return;
+            // return;
           }
 
           function getLegendText(classSelector) {
