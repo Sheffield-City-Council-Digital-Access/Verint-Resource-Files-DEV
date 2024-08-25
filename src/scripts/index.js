@@ -1539,7 +1539,7 @@ const getValuesOfInputFields = (aliases) => {
     // If element is found, add an object with alias and value to results
     if (element) {
       const name = element.name;
-      const processedValue = KDF.getVal(name, value); // Assuming KDF.getVal processes the value
+      const processedValue = KDF.getVal(name);
 
       results.push({
         alias,
