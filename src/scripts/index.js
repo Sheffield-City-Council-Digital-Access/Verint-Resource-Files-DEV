@@ -1523,26 +1523,32 @@ const setValuesToInputFields = (aliasesAndValues) => {
   });
 };
 
-const getValuesOfInputFields = (aliasesAndValues) => {
+const getValuesOfInputFields = (aliases) => {
   const currentPageId = getCurrentPageId(); // Get the current page ID
+  const results = [];
 
   // Iterate over each custom alias and value pair
-  aliasesAndValues.forEach(({ alias, value }) => {
-    // Get the element with the specified data-customalias attribute on the current page
+  aliases.forEach(({ alias }) => {
+    // Get the element with the specified data-customalias attribute
     const element = document.querySelector(`
       #${currentPageId} input[data-customalias="${alias}"], 
       #${currentPageId} select[data-customalias="${alias}"],
       #${currentPageId} textarea[data-customalias="${alias}"]
     `);
 
-    // If element is found, set its value using KDF.setVal();
+    // If element is found, add an object with alias and value to results
     if (element) {
-      //  Get the name of the element
       const name = element.name;
+      const processedValue = KDF.getVal(name, value); // Assuming KDF.getVal processes the value
 
-      KDF.getVal(name, value);
+      results.push({
+        alias,
+        value: processedValue,
+      });
     }
   });
+
+  return results;
 };
 
 // --- SHOW / HIDE FIELD ON CURRENT PAGE ------------------------------------ \\
