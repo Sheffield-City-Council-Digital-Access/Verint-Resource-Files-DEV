@@ -2133,13 +2133,6 @@ function getAndSetReviewPageData() {
           let fieldLabel = "";
           let fieldValue = "";
 
-          if (fieldClass.indexOf('address-search') !== -1) {
-            console.log('----------', getValueFromAlias(pageId, 'fullAddress'))
-            fieldLabel = 'Address';
-            fieldValue = getValueFromAlias(pageId, 'fullAddress');
-            // return;
-          }
-
           function getLegendText(classSelector) {
             const parentElement = $(`.container[data-name="${fieldName}"]`).length
               ? $(`.container[data-name="${fieldName}"]`)
@@ -2167,8 +2160,14 @@ function getAndSetReviewPageData() {
               fieldValue = `<a href="${filePath}" target="_blank">${fieldValue}</a>`;
             }
           } else {
-            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-            fieldValue = KDF.getVal(fieldName);
+            if (fieldClass.indexOf('address-search') !== -1) {
+              console.log('----------', getValueFromAlias(pageId, 'fullAddress'))
+              fieldLabel = 'Address';
+              fieldValue = getValueFromAlias(pageId, 'fullAddress');
+            } else {
+              fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+              fieldValue = KDF.getVal(fieldName);
+            }
           }
 
           // Check if the field has a label
