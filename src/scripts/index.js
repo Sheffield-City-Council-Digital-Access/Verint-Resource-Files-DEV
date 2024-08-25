@@ -574,9 +574,8 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE FORMAT TITLE CASE ------------------------------------------ \\
 
-  $('.format-title-case').on('change', function () {
-    console.log('debug')
-    KDF.setVal(this.name, formatTitleCase(this.value));
+  $('.format-title-case').on('change', event => {
+    $(`#${event.target.id}`).val(formatTitleCase(event.target.value));
   });
 
   // --- HANDLE FIND BUTTON CLICK ------------------------------------------ \\
@@ -3113,7 +3112,7 @@ function fetchSccRing() {
 // --- FORMATING TO TITLE CASE ---------------------------------------------- \\
 
 function formatTitleCase(value) {
-  if (typeof myVariable === "string") {
+  if (typeof value === "string") {
     const string = value.toLowerCase();
     const formatedString = string.replace(/\b\w/g, (match) => match.toUpperCase());
     return formatedString;
