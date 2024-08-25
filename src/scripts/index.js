@@ -2163,7 +2163,7 @@ function getAndSetReviewPageData() {
             if (fieldClass.indexOf('address-search') !== -1) {
               fieldLabel = 'Address';
               fieldValue = getValueFromAlias(pageId, 'fullAddress');
-            } else if (fieldClass.indexOf('property') || fieldClass.indexOf('street-name') || fieldClass.indexOf('city') || fieldClass.indexOf('postcode')) {
+            } else if (fieldClass.indexOf('property') !== -1 || fieldClass.indexOf('street-name') !== -1 || fieldClass.indexOf('city') !== -1 || fieldClass.indexOf('postcode') !== -1) {
               fieldLabel = false;
               fieldValue = '';
             } else {
