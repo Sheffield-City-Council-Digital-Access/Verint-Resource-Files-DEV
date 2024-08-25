@@ -2161,7 +2161,7 @@ function getAndSetReviewPageData() {
             }
           } else {
             if (fieldClass.indexOf('property') || fieldClass.indexOf('street-name') || fieldClass.indexOf('city') || fieldClass.indexOf('postcode')) {
-              return;
+              // leave blank, so manual address doesnt apear on review page
             } else if (fieldClass.indexOf('address-search') !== -1) {
               fieldLabel = 'Address';
               fieldValue = getValueFromAlias(pageId, 'fullAddress');
