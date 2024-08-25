@@ -2163,7 +2163,8 @@ function getAndSetReviewPageData() {
             if (fieldClass.indexOf('property') || fieldClass.indexOf('street-name') || fieldClass.indexOf('city') || fieldClass.indexOf('postcode')) {
               fieldLabel = false;
               fieldValue = '';
-            } else if (fieldClass.indexOf('address-search') !== -1) {
+            }
+            if (fieldClass.indexOf('address-search') !== -1) {
               fieldLabel = 'Address';
               fieldValue = getValueFromAlias(pageId, 'fullAddress');
             } else {
