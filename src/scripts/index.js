@@ -592,6 +592,7 @@ function handleOnReadyEvent(event, kdf) {
         $('.geo-btn-container').find('.dform_validationMessage').css('display', 'none');
       }
       resetAddressSearch();
+      setRequiredStateByAlias('postcode', 'required');
     }
     if ($(this).text() === 'Find vehicle') {
       resetVehicleSearch();
@@ -611,6 +612,32 @@ function handleOnReadyEvent(event, kdf) {
     resetAddressSearch(false);
     showAddressFields();
     setRequiredStateByAlias('postcode', 'not required');
+  });
+
+  // --- HANDLE MANUAL ADDRESS ENTRY --------------------------------------- \\
+
+  $(`.property, .street-name, .city, .postcode`).on('change', function () {
+    const fieldsArray = getValuesOfInputFields([
+      { alias: "property" },
+      { alias: "streetName" },
+      { alias: "city" },
+      { alias: "postCode" }
+    ]);
+
+    const fields = fieldsArray.reduce((field, item) => {
+      field[item.alias] = item.value;
+      return field;
+    }, {});
+
+    if (!fields.property || !fields.streetName || !fields.city || !fields.postCode) {
+      return;
+    }
+
+    const fullAddress = `${formatTitleCase(fields.property)} ${formatTitleCase(fields.streetName)}, ${fields.city.toUpperCase()}, ${fields.postCode.toUpperCase()}`;
+
+    setValuesToInputFields([
+      { alias: "fullAddress", value: fullAddress }
+    ]);
   });
 
   // --- HANDLE VEHICLE LOOKUP --------------------------------------------- \\
@@ -1637,6 +1664,7 @@ const resetAddressSearch = (hideFields = true) => {
     { alias: "streetName", value: '' },
     { alias: "city", value: '' },
     { alias: "postCode", value: '' },
+    { alias: "fullAddress", value: '' },
     { alias: "uprn", value: '' },
     { alias: "usrn", value: '' },
     { alias: "siteName", value: '' },
@@ -2106,6 +2134,7 @@ function getAndSetReviewPageData() {
           let fieldValue = "";
 
           if (fieldClass.indexOf('address-search') !== -1) {
+            console.log('----------', getValueFromAlias(pageId, 'fullAddress'))
             fieldLabel = 'Address';
             fieldValue = getValueFromAlias(pageId, 'fullAddress');
             return;
