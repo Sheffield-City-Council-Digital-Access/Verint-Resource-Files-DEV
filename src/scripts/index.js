@@ -1790,6 +1790,24 @@ function checkMaxDay(id, dd, mm, yy) {
   }
 }
 
+function getMinMaxDates(dateElementId) {
+  const $dateElement = $(`#${dateElementId}`);
+  if ($dateElement.length === 0) {
+    console.error(`Element with ID "${dateElementId}" not found.`);
+    return null;
+  }
+  let minDate = $dateElement.attr('data-mindate');
+  let maxDate = $dateElement.attr('data-maxdate');
+
+  const now = new Date();
+  minDate = minDate ? calculateRelativeDate(minDate, now) : null;
+  maxDate = maxDate ? calculateRelativeDate(maxDate, now) : null;
+  minDate.setHours(0, 0, 0, 0);
+  maxDate.setHours(0, 0, 0, 0);
+
+  return { minDate, maxDate };
+}
+
 function checkDate(id, dd, mm, yy) {
   if (!dd) $(`#${id} .date-dd`).addClass("dform_fielderror");
   if (!mm) $(`#${id} .date-mm`).addClass("dform_fielderror");
@@ -1840,6 +1858,7 @@ function checkDate(id, dd, mm, yy) {
       .text(dateMessage)
       .show();
   }
+
   if (dd && mm && yy) {
     if (validDate(id, dd, mm, yy)) {
       const date = `${yy.substr(0, 4)}-${mm.toString().padStart(2, '0')}-${dd.toString().padStart(2, '0')}`;
@@ -1891,59 +1910,79 @@ function validDate(id, day, month, year) {
 
   const dobField = $(`#${id}`).hasClass("dob") ? true : false;
 
-  if (date.getFullYear() != year ||
+  if (
+    date.getFullYear() != year ||
     date.getMonth() + 1 != month ||
-    date.getDate() != day) {
+    date.getDate() != day
+  ) {
     validationMsg
-      .text(`${dobField
-        ? "Date of birth must be a real date"
-        : "Must be a real date"}`)
+      .text(`${dobField ? "Date of birth must be a real date" : "Must be a real date"
+        }`)
       .show();
     return false;
   }
 
+  const dateElementId = id.replace("_date_", "_dt_");
+  const { minDate, maxDate } = getMinMaxDates(dateElementId);
+
   const dateRange = $(`#${id}`).hasClass("future") ? "future" : "past";
 
-  const minDate = new Date();
-  minDate.setFullYear(minDate.getFullYear() - 120);
-  minDate.setHours(0, 0, 0, 0);
+  if (datePairs && Array.isArray(datePairs) && datePairs.length > 0) {
+    for (const pair of datePairs) {
+      const [dateAId, dateBId] = pair.dateFields;
+      if (id === dateAId) {
+        const dateBValue = $(`#${dateBId.replace("_date_", "_dt_")}`).val();
+        if (dateBValue && !checkDateRelationship(date, new Date(dateBValue), pair.rule)) {
+          validationMsg.text(pair.validationMessages[0]).show();
+          return false;
+        }
+      } else if (id === dateBId) {
+        const dateAValue = $(`#${dateAId.replace("_date_", "_dt_")}`).val();
+        if (dateAValue && !checkDateRelationship(new Date(dateAValue), date, pair.rule)) {
+          validationMsg.text(pair.validationMessages[1]).show();
+          return false;
+        }
+      }
+    }
+  }
 
-  if (dateRange === 'past') {
+  if (dateRange === "past") {
     if (date < minDate) {
-      validationMsg.
-        text("Date cannot be more that 120 years in the past")
+      validationMsg
+        .text(
+          `Date cannot be more than ${minDate.getFullYear()} years in the past`
+        )
         .show();
       return false;
     }
     if (date > now) {
       validationMsg
-        .text(`${dobField
-          ? "Date of birth must be today or in the past"
-          : "Date must be today or in the past"}`)
+        .text(
+          `${dobField
+            ? "Date of birth must be today or in the past"
+            : "Date must be today or in the past"
+          }`
+        )
         .show();
       return false;
     }
-    return true;
   }
 
-  const maxDate = new Date();
-  maxDate.setFullYear(maxDate.getFullYear() + 5);
-  maxDate.setHours(0, 0, 0, 0);
-
-  if (dateRange === 'future') {
+  if (dateRange === "future") {
     if (date > maxDate) {
       validationMsg
-        .text("Date cannot be more that 5 years in the future")
+        .text(
+          `Date cannot be more than ${maxDate.getFullYear()} years in the future`
+        )
         .show();
       return false;
     }
     if (date < now) {
-      validationMsg
-        .text("Date must be today or in the future")
-        .show();
+      validationMsg.text("Date must be today or in the future").show();
     }
-    return true;
   }
+
+  return true; // If all validations pass
 }
 
 // --- PROGRESS BAR --------------------------------------------------------- \\
@@ -3431,6 +3470,35 @@ async function addWorkingDays(date, workingDaysToAdd) {
   }
 
   return formatDateTime(newDate).inputField;
+}
+
+async function updateMinMaxDates(dateElementId, attribute, value) {
+  const $dateElement = $(`#${dateElementId}`);
+  if ($dateElement.length === 0) {
+    console.error(`Element with ID "${dateElementId}" not found.`);
+    return;
+  }
+  const now = new Date();
+  let newDate;
+  if (attribute === 'min') {
+    if (typeof value === 'number') {
+      newDate = await addWorkingDays(now, value);
+    } else {
+      newDate = value ? calculateRelativeDate(value, now) : null;
+    }
+    if (newDate) {
+      $dateElement.attr('min', newDate.toISOString().split('T')[0]);
+    }
+  } else if (attribute === 'max') {
+    if (typeof value === 'number') {
+      newDate = await addWorkingDays(now, value);
+    } else {
+      newDate = value ? calculateRelativeDate(value, now) : null;
+    }
+    if (newDate) {
+      $dateElement.attr('max', newDate);
+    }
+  }
 }
 
 // --- COOKIE FUNCTIONS ----------------------------------------------------- \\
