@@ -850,6 +850,23 @@ function handleOnReadyEvent(event, kdf) {
     checkPageProgress();
   });
 
+  // --- HANDLE CURRENCY INPUT --------------------------------------------- \\
+
+  $('.currency').on('change', function () {
+    const currencyField = $(this).data('name');
+
+    // Remove anything that's not a digit or decimal point
+    let rawValue = $(`#dform_widget_${currencyField}`).val().replace(/[^0-9.]/g, '');
+
+    let value = parseFloat(rawValue); // Convert the cleaned value to a float
+
+    if (!isNaN(value)) {
+      $(`#dform_widget_${currencyField}`).val(value.toFixed(2));
+    } else {
+      $(`#dform_widget_${currencyField}`).val('');
+    }
+  });
+
   // --- HANDLE SET REPORTER ----------------------------------------------- \\
 
   // Check if customer set state is true
@@ -1535,6 +1552,7 @@ function disabledButtonToggle(enable) {
     }
   });
 }
+
 // --- SET VALUE TO FIELD ON CURRENT PAGE ----------------------------------- \\
 
 // Function to set value to fields based on data-customalias attributes of inputs on the current page
@@ -2166,7 +2184,10 @@ function getAndSetReviewPageData() {
               fieldValue = `<a href="${filePath}" target="_blank">${fieldValue}</a>`;
             }
           } else {
-            if (fieldClass.indexOf('address-search') !== -1) {
+            if (fieldClass.indexOf('currency') !== -1) {
+              fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+              fieldValue = `£${KDF.getVal(fieldName)}`;
+            } else if (fieldClass.indexOf('address-search') !== -1) {
               fieldLabel = 'Address';
               fieldValue = getValueFromAlias(pageId, 'fullAddress');
             } else if (fieldClass.indexOf('property') !== -1 || fieldClass.indexOf('street-name') !== -1 || fieldClass.indexOf('city') !== -1 || fieldClass.indexOf('postcode') !== -1) {
