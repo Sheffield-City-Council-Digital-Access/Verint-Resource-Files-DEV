@@ -73,7 +73,7 @@ form.dform {
 
 
 #dform_container .no-margin fieldset legend {
-  margin: 3rem 0 0;
+  margin: 3rem 0 0 !important;
 }
 
 #dform_container fieldset.area>legend,
