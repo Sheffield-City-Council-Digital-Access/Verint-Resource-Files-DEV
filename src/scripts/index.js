@@ -1922,6 +1922,15 @@ function inputDate(id, nextID, key) {
   }
 }
 
+function checkDateRelationship(date1, date2, rule) {
+  if (rule === "before") {
+    return date1 < date2;
+  } else if (rule === "after") {
+    return date1 > date2;
+  }
+  return true;
+}
+
 function validDate(id, day, month, year) {
   const dateMessage = dateMessages[id] || defaultDateMessage;
   const validationMsg = $(`#${id}`)
