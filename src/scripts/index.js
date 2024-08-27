@@ -744,14 +744,22 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE LOCATOR BUTTON CLICK --------------------------------------- \\
 
-  $('.locator-btn').click(function () {
+  $('.locator-btn, .address-btn').click(function () {
+    checkAddressHasBeenSet();
+  });
+
+  function checkAddressHasBeenSet(action = 'next page') {
     const currentPageId = getCurrentPageId();
 
     const fullAddress = document.querySelector(`#${currentPageId} input[data-customalias="fullAddress"]`);
     const fullAddressHasValue = KDF.getVal(fullAddress.name) ? true : false;
 
     if (fullAddressHasValue) {
-      KDF.gotoNextPage();
+      if (action === 'submit') {
+        KDF.gotoPage('complete', true, true, false);
+      } else {
+        KDF.gotoNextPage();
+      }
     } else {
       const isMapContainerVisible = $('#map_container').is(':visible');
       if (isMapContainerVisible) {
@@ -782,7 +790,7 @@ function handleOnReadyEvent(event, kdf) {
         }
       }
     }
-  });
+  }
 
   // --- HANDLE CUSTOM DATE ------------------------------------------------ \\
 
@@ -884,20 +892,17 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE CHECK AGENT SET CUSTOMER ----------------------------------- \\
 
-  $('#dform_widget_button_but_next_about_you').on('click', () => {
-    if (kdf.access === 'agent' && !KDF.getVal('num_reporter_obj_id')) {
-      KDF.sendDesktopAction('raised_by');
-    } else {
-      KDF.gotoNextPage();
+  $('.submit-btn').on('click', () => {
+    function elementExists(selector) {
+      return document.querySelector(selector) !== null;
     }
-  });
 
-  $('#dform_widget_button_but_submit_about_you, .submit-btn').on('click', () => {
-    // if (kdf.access === 'agent' && !KDF.getVal('num_reporter_obj_id')) {
-    //   KDF.sendDesktopAction('raised_by');
-    // } else {
-    // }
-    KDF.gotoPage('complete', true, true, false);
+    // Check if the postcode element exists
+    if (elementExists(`#${currentPageId} input[data-customalias="postcode"]`)) {
+      checkAddressHasBeenSet('submit');
+    } else {
+      KDF.gotoPage('complete', true, true, false);
+    }
   });
 
   // --- HANDLE AONYMOUS SUBMITION ----------------------------------------- \\
@@ -963,7 +968,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   updateProgressBar(targetpageid);
 
   if (pageName === 'page_about_you') {
-    if (kdf.access === 'agent' && (customerState !== 'agent_true' || !KDF.getVal('num_reporter_obj_id'))) {
+    if (kdf.access === 'agent' && kdf.customerset === 'agent_false') {
       KDF.sendDesktopAction('raised_by');
     }
   }
@@ -1008,18 +1013,6 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
 // --- HANDLE ON FIELD CHANGE EVENT ---------------------------------------- \\
 
 function handleFieldChangeEvent(event, kdf, field) {
-
-  // --- HANDLE IF NI OR NASS IS REQUIREMENT ------------------------------- \\
-
-  if (field.name === 'txt_national_insurance') {
-    const requiredState = $(`#${field.id}`).is(':valid') ? true : false;
-    updateRequiredState('txt_national_asylum_support', requiredState);
-  }
-
-  if (field.name === 'txt_national_asylum_support') {
-    const requiredState = $(`#${field.id}`).is(':valid') ? true : false;
-    updateRequiredState('txt_national_insurance', requiredState);
-  }
 
   // --- HANDLE FORMAT REMOVE ECCESS WHITE SPACES -------------------------- \\
 
