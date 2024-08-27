@@ -1790,6 +1790,28 @@ function checkMaxDay(id, dd, mm, yy) {
   }
 }
 
+function calculateRelativeDate(relativeDate, now) {
+  const match = relativeDate.match(/(-?\d+)([YMD])/);
+  if (!match) {
+    return new Date(relativeDate); // Try to parse as a normal date
+  }
+  const value = parseInt(match[1], 10);
+  const unit = match[2];
+  const newDate = new Date(now);
+  switch (unit) {
+    case 'Y':
+      newDate.setFullYear(now.getFullYear() + value);
+      break;
+    case 'M':
+      newDate.setMonth(now.getMonth() + value);
+      break;
+    case 'D':
+      newDate.setDate(now.getDate() + value);
+      break;
+  }
+  return newDate;
+}
+
 function getMinMaxDates(dateElementId) {
   const $dateElement = $(`#${dateElementId}`);
   if ($dateElement.length === 0) {
