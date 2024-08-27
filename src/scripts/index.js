@@ -494,6 +494,11 @@ function handleOnReadyEvent(event, kdf) {
 
   customerState = kdf.customerset;
 
+  // --- ADD CONTENT TO WHY WE NEED DATE OF BIRTH --------------------------- \\
+
+  $('.dob-reason').text('Your date of birth is a helpful way to confirm your identity and protect your information.');
+  $('.their-dob-reason').text('Their date of birth is a helpful way to confirm their identity and protect their information.');
+
   // --- REMOVE TAB INDEX FROM SELECT ELEMENTS ----------------------------- \\
 
   $('.remove-tab').each(function () {
