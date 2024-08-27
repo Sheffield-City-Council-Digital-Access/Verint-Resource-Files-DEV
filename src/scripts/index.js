@@ -20,6 +20,7 @@ let addressSearchType = {};
 const defaultDateMessage = "Enter the date in the correct format";
 
 const dateMessages = {};
+const datePairs = [];
 
 let fieldsToCheckBeforeClose = [];
 
