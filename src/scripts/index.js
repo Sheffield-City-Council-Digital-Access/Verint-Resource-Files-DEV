@@ -893,6 +893,7 @@ function handleOnReadyEvent(event, kdf) {
   // --- HANDLE CHECK AGENT SET CUSTOMER ----------------------------------- \\
 
   $('.submit-btn').on('click', () => {
+    const currentPageId = getCurrentPageId();
     function elementExists(selector) {
       return document.querySelector(selector) !== null;
     }
