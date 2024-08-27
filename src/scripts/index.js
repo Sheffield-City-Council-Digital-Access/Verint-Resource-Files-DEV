@@ -9,7 +9,7 @@ function logArguments(event, kdf, ...args) {
 
 }
 
-// --- GLOBAL CONSTA AND VARIABLES ----------------------------------------- \\
+// --- GLOBAL CONSTS AND VARIABLES ----------------------------------------- \\
 
 let customerState = false;
 
@@ -22,6 +22,9 @@ const defaultDateMessage = "Enter the date in the correct format";
 const dateMessages = {};
 
 let fieldsToCheckBeforeClose = [];
+
+// Initialize an array to store the user's form page history
+const formUserPath = [];
 
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
 function handleInitialisingEvent(addDateMessages) {
@@ -139,261 +142,261 @@ function handleInitialisingEvent(addDateMessages) {
     (() => {
       // Create the footer HTML string
       const footerHTML = `
-            <footer class="footer" role="contentinfo">
-                <div class="az-links-container">
-                    <nav role="navigation" class="az-links">
-                        <a href="https://www.sheffield.gov.uk/utilities/a-z">A-Z of services</a>
-                        <p class="skip">
-                            <a href="#footer-content" class="button hide-screen focusable">
-                                Skip the A to Z services
-                            </a>
-                        </p>
-                        <ul class="az-menu">
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#a">
-                                    <span>Services</span> A
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#b">
-                                    <span>Services</span> B
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#c">
-                                    <span>Services</span> C
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#d">
-                                    <span>Services</span> D
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#e">
-                                    <span>Services</span> E
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#f">
-                                    <span>Services</span> F
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#g">
-                                    <span>Services</span> G
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#h">
-                                    <span>Services</span> H
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#i">
-                                    <span>Services</span> I
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#j">
-                                    <span>Services</span> J
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#k">
-                                    <span>Services</span> K
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#l">
-                                    <span>Services</span> L
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#m">
-                                    <span>Services</span> M
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#n">
-                                    <span>Services</span> N
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#o">
-                                    <span>Services</span> O
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#p">
-                                    <span>Services</span> P
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#q">
-                                    <span>Services</span> Q
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#r">
-                                    <span>Services</span> R
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#s">
-                                    <span>Services</span> S
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#t">
-                                    <span>Services</span> T
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#u">
-                                    <span>Services</span> U
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#v">
-                                    <span>Services</span> V
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#w">
-                                    <span>Services</span> W
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#x">
-                                    <span>Services</span> X
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#y">
-                                    <span>Services</span> Y
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#z">
-                                    <span>Services</span> Z
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#123">
-                                    <span>Services</span> 123
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer-links-container" id="footer-content">
-                    <ul id="legal-links">
-                        <li>
-                            <a href="https://www.sheffield.gov.uk/">
-                                Site Home Page
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice">
-                                Privacy notice
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.sheffield.gov.uk/utilities/footer-links/cookie-policy">
-                                Use of cookies
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.sheffield.gov.uk/utilities/footer-links/accessibility-statement">
-                                Accessibility statement
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.sheffield.gov.uk/utilities/footer-links/legal-notices">
-                                Legal notices
-                            </a>
-                        </li>
-                    </ul>
-                    <ul id="other-links">
-                        <li>
-                            <a href="https://www.sheffield.gov.uk/job-vacancies">
-                                Jobs and volunteering with Sheffield City Council
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.sheffield.gov.uk/your-city-council/access-to-information">
-                                Get access to information
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.welcometosheffield.co.uk/visit/events">
-                                Sheffield events
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://haveyoursay.sheffield.gov.uk/">
-                                Have your say - consultations
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.sheffieldnewsroom.co.uk">
-                                News and press
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.sheffield.gov.uk/utilities/footer-links/advertising">
-                                Advertising
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.sheffield.gov.uk/business">
-                                Business
-                            </a>
-                        </li>
-                    </ul>
-                    <ul id="social-links">
-                        <li>
-                            <a href="https://twitter.com/sheffcouncil?lang=en" class="icon-twitter-after">
-                                <span>Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/SheffCityCouncil/" class="icon-facebook-after">
-                                <span>Facebook</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/user/SheffieldCCouncil" class="icon-youtube-after">
-                                <span>YouTube</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/sheffieldcitycouncil/" class="icon-instagram-after">
-                                <span>Instagram</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://public.govdelivery.com/accounts/UKSHEFFIELD/subscriber/new" class="icon-mail-after">
-                                <span>Email alerts</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="info">
-                    <p class="modified"></p>
-                    <p class="copyright">${new Date().getFullYear()} &copy; Copyright Sheffield City Council</p>
-                </div>
-                <div class="logo-container">
-                    <a href="https://www.sheffield.gov.uk" title="Back to homepage" class="footer-logo-link">
-                        <img class="footer-logo" src="https://www.sheffield.gov.uk/verint-files/logo.png" alt="Sheffield City Council Logo">
-                    </a>
-                </div>
-                <div class="jump-container">
-                    <a href="#top" id="jump-to-top">Top</a>
-                </div>
-            </footer>
-        `;
+              <footer class="footer" role="contentinfo">
+                  <div class="az-links-container">
+                      <nav role="navigation" class="az-links">
+                          <a href="https://www.sheffield.gov.uk/utilities/a-z">A-Z of services</a>
+                          <p class="skip">
+                              <a href="#footer-content" class="button hide-screen focusable">
+                                  Skip the A to Z services
+                              </a>
+                          </p>
+                          <ul class="az-menu">
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#a">
+                                      <span>Services</span> A
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#b">
+                                      <span>Services</span> B
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#c">
+                                      <span>Services</span> C
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#d">
+                                      <span>Services</span> D
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#e">
+                                      <span>Services</span> E
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#f">
+                                      <span>Services</span> F
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#g">
+                                      <span>Services</span> G
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#h">
+                                      <span>Services</span> H
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#i">
+                                      <span>Services</span> I
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#j">
+                                      <span>Services</span> J
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#k">
+                                      <span>Services</span> K
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#l">
+                                      <span>Services</span> L
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#m">
+                                      <span>Services</span> M
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#n">
+                                      <span>Services</span> N
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#o">
+                                      <span>Services</span> O
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#p">
+                                      <span>Services</span> P
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#q">
+                                      <span>Services</span> Q
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#r">
+                                      <span>Services</span> R
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#s">
+                                      <span>Services</span> S
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#t">
+                                      <span>Services</span> T
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#u">
+                                      <span>Services</span> U
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#v">
+                                      <span>Services</span> V
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#w">
+                                      <span>Services</span> W
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#x">
+                                      <span>Services</span> X
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#y">
+                                      <span>Services</span> Y
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#z">
+                                      <span>Services</span> Z
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.sheffield.gov.uk/content/sheffield/utilities/a-z.html#123">
+                                      <span>Services</span> 123
+                                  </a>
+                              </li>
+                          </ul>
+                      </nav>
+                  </div>
+                  <div class="footer-links-container" id="footer-content">
+                      <ul id="legal-links">
+                          <li>
+                              <a href="https://www.sheffield.gov.uk/">
+                                  Site Home Page
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice">
+                                  Privacy notice
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.sheffield.gov.uk/utilities/footer-links/cookie-policy">
+                                  Use of cookies
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.sheffield.gov.uk/utilities/footer-links/accessibility-statement">
+                                  Accessibility statement
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.sheffield.gov.uk/utilities/footer-links/legal-notices">
+                                  Legal notices
+                              </a>
+                          </li>
+                      </ul>
+                      <ul id="other-links">
+                          <li>
+                              <a href="https://www.sheffield.gov.uk/job-vacancies">
+                                  Jobs and volunteering with Sheffield City Council
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.sheffield.gov.uk/your-city-council/access-to-information">
+                                  Get access to information
+                              </a>
+                          </li>
+                          <li>
+                              <a href="http://www.welcometosheffield.co.uk/visit/events">
+                                  Sheffield events
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://haveyoursay.sheffield.gov.uk/">
+                                  Have your say - consultations
+                              </a>
+                          </li>
+                          <li>
+                              <a href="http://www.sheffieldnewsroom.co.uk">
+                                  News and press
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.sheffield.gov.uk/utilities/footer-links/advertising">
+                                  Advertising
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.sheffield.gov.uk/business">
+                                  Business
+                              </a>
+                          </li>
+                      </ul>
+                      <ul id="social-links">
+                          <li>
+                              <a href="https://twitter.com/sheffcouncil?lang=en" class="icon-twitter-after">
+                                  <span>Twitter</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.facebook.com/SheffCityCouncil/" class="icon-facebook-after">
+                                  <span>Facebook</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.youtube.com/user/SheffieldCCouncil" class="icon-youtube-after">
+                                  <span>YouTube</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.instagram.com/sheffieldcitycouncil/" class="icon-instagram-after">
+                                  <span>Instagram</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://public.govdelivery.com/accounts/UKSHEFFIELD/subscriber/new" class="icon-mail-after">
+                                  <span>Email alerts</span>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="info">
+                      <p class="modified"></p>
+                      <p class="copyright">${new Date().getFullYear()} &copy; Copyright Sheffield City Council</p>
+                  </div>
+                  <div class="logo-container">
+                      <a href="https://www.sheffield.gov.uk" title="Back to homepage" class="footer-logo-link">
+                          <img class="footer-logo" src="https://www.sheffield.gov.uk/verint-files/logo.png" alt="Sheffield City Council Logo">
+                      </a>
+                  </div>
+                  <div class="jump-container">
+                      <a href="#top" id="jump-to-top">Top</a>
+                  </div>
+              </footer>
+          `;
 
       // Find the body element
       const body = document.getElementsByTagName("body")[0];
@@ -685,10 +688,10 @@ function handleOnReadyEvent(event, kdf) {
                 : "An unknown error occurred";
 
           const errorMessageHtml = `
-                    <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
-                        ${errorMessage}
-                    </div>
-                `;
+                      <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
+                          ${errorMessage}
+                      </div>
+                  `;
 
           if (!$validationMessage.length) {
             $button.before(errorMessageHtml);
@@ -701,10 +704,10 @@ function handleOnReadyEvent(event, kdf) {
       const errorMessage = "Geolocation is not supported by this browser";
 
       const errorMessageHtml = `
-            <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
-                ${errorMessage}
-            </div>
-        `;
+              <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
+                  ${errorMessage}
+              </div>
+          `;
 
       if (!$validationMessage.length) {
         $button.before(errorMessageHtml);
@@ -840,6 +843,12 @@ function handleOnReadyEvent(event, kdf) {
       if (e.type === "input") inputDate(this.id, null, e.which);
       handleDateValidation(parentId);
     });
+
+  // --- HANDLE KEYUP EVENTLISTENER FOR CHECK PROGRESS --------------------- \\
+
+  $('input, textarea').keyup(function () {
+    checkPageProgress();
+  });
 
   // --- HANDLE SET REPORTER ----------------------------------------------- \\
 
@@ -1221,10 +1230,10 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       const $container = $button.closest('.geo-btn-container');
       const $validationMessage = $container.find('.dform_validationMessage');
       const errorMessageHtml = `
-        <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
-          ${message}
-        </div>
-      `;
+          <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
+            ${message}
+          </div>
+        `;
 
       if (!$validationMessage.length) {
         $button.before(errorMessageHtml);
@@ -1363,7 +1372,7 @@ function handleFomComplate(event, kdf) {
 // --- GET CURRENT PAGE ----------------------------------------------------- \\
 
 // Function to get the current page ID
-const getCurrentPageId = () => {
+function getCurrentPageId() {
   return document.querySelector('[data-type="page"]:not([style*="display: none"])').id;
 };
 
@@ -1529,17 +1538,17 @@ function disabledButtonToggle(enable) {
 // --- SET VALUE TO FIELD ON CURRENT PAGE ----------------------------------- \\
 
 // Function to set value to fields based on data-customalias attributes of inputs on the current page
-const setValuesToInputFields = (aliasesAndValues) => {
+function setValuesToInputFields(aliasesAndValues) {
   const currentPageId = getCurrentPageId(); // Get the current page ID
 
   // Iterate over each custom alias and value pair
   aliasesAndValues.forEach(({ alias, value }) => {
     // Get the element with the specified data-customalias attribute on the current page
     const element = document.querySelector(`
-      #${currentPageId} input[data-customalias="${alias}"], 
-      #${currentPageId} select[data-customalias="${alias}"],
-      #${currentPageId} textarea[data-customalias="${alias}"]
-    `);
+        #${currentPageId} input[data-customalias="${alias}"], 
+        #${currentPageId} select[data-customalias="${alias}"],
+        #${currentPageId} textarea[data-customalias="${alias}"]
+      `);
 
     // If element is found, set its value using KDF.setVal();
     if (element) {
@@ -1551,7 +1560,7 @@ const setValuesToInputFields = (aliasesAndValues) => {
   });
 };
 
-const getValuesOfInputFields = (aliases) => {
+function getValuesOfInputFields(aliases) {
   const currentPageId = getCurrentPageId(); // Get the current page ID
   const results = [];
 
@@ -1559,10 +1568,10 @@ const getValuesOfInputFields = (aliases) => {
   aliases.forEach(({ alias }) => {
     // Get the element with the specified data-customalias attribute
     const element = document.querySelector(`
-      #${currentPageId} input[data-customalias="${alias}"], 
-      #${currentPageId} select[data-customalias="${alias}"],
-      #${currentPageId} textarea[data-customalias="${alias}"]
-    `);
+        #${currentPageId} input[data-customalias="${alias}"], 
+        #${currentPageId} select[data-customalias="${alias}"],
+        #${currentPageId} textarea[data-customalias="${alias}"]
+      `);
 
     // If element is found, add an object with alias and value to results
     if (element) {
@@ -1582,7 +1591,7 @@ const getValuesOfInputFields = (aliases) => {
 // --- SHOW / HIDE FIELD ON CURRENT PAGE ------------------------------------ \\
 
 // Function to show or hide select fields based on data-customalias attributes of selects on the current page
-const showHideInputFields = (aliasesAndDisplay) => {
+function showHideInputFields(aliasesAndDisplay) {
 
   const currentPageId = getCurrentPageId(); // Get the current page ID
 
@@ -1590,10 +1599,10 @@ const showHideInputFields = (aliasesAndDisplay) => {
   aliasesAndDisplay.forEach(({ alias, display }) => {
     // Get the select element with the specified data-customalias attribute on the current page
     const element = document.querySelector(`
-        #${currentPageId} input[data-customalias="${alias}"], 
-        #${currentPageId} select[data-customalias="${alias}"],
-        #${currentPageId} textarea[data-customalias="${alias}"]
-    `);
+          #${currentPageId} input[data-customalias="${alias}"], 
+          #${currentPageId} select[data-customalias="${alias}"],
+          #${currentPageId} textarea[data-customalias="${alias}"]
+      `);
 
     // Ensure selectElement exists before accessing its properties
     if (element) {
@@ -1610,15 +1619,15 @@ const showHideInputFields = (aliasesAndDisplay) => {
   });
 };
 
-const setRequiredStateByAlias = (alias, requiredState) => {
+function setRequiredStateByAlias(alias, requiredState) {
   const currentPageId = getCurrentPageId(); // Get the current page ID
 
   // Construct the selector string with the provided alias
   const selector = `
-    #${currentPageId} input[data-customalias="${alias}"], 
-    #${currentPageId} select[data-customalias="${alias}"],
-    #${currentPageId} textarea[data-customalias="${alias}"]
-  `;
+      #${currentPageId} input[data-customalias="${alias}"], 
+      #${currentPageId} select[data-customalias="${alias}"],
+      #${currentPageId} textarea[data-customalias="${alias}"]
+    `;
 
   // Find the element matching the selector
   const element = document.querySelector(selector);
@@ -1630,7 +1639,7 @@ const setRequiredStateByAlias = (alias, requiredState) => {
 
 // --- SET SELECTED ADDRESS ------------------------------------------------- \\
 
-const setSelectedAddress = (selectedAddress, action, targetPageId) => {
+function setSelectedAddress(selectedAddress, action, targetPageId) {
   targetPageId = targetPageId ? targetPageId : getCurrentPageId();
 
   // Get the selected-address-container element on the current page
@@ -1657,7 +1666,7 @@ const setSelectedAddress = (selectedAddress, action, targetPageId) => {
 
 // --- RESER ADDRESS FIELDS ------------------------------------------------- \\
 
-const resetAddressSearch = (hideFields = true) => {
+function resetAddressSearch(hideFields = true) {
   setValuesToInputFields([
     { alias: "searchResult", value: '' },
     { alias: "property", value: '' },
@@ -1691,7 +1700,7 @@ const resetAddressSearch = (hideFields = true) => {
 
 // --- SHOW ADDRESS FIELDS ------------------------------------------------- \\
 
-const showAddressFields = () => {
+function showAddressFields() {
   showHideInputFields([
     { alias: "searchResult", display: false },
     { alias: "property", display: true },
@@ -1703,7 +1712,7 @@ const showAddressFields = () => {
 
 // --- RESER VEHICLE FIELDS ------------------------------------------------- \\
 
-const resetVehicleSearch = (hideFields = true) => {
+function resetVehicleSearch(hideFields = true) {
   setValuesToInputFields([
     { alias: "co2Emissions", value: '' },
     { alias: "colour", value: '' },
@@ -1735,7 +1744,7 @@ const resetVehicleSearch = (hideFields = true) => {
 
 // --- SHOW VEHICLE FIELDS ------------------------------------------------- \\
 
-const showVehicleFields = () => {
+function showVehicleFields() {
   showHideInputFields([
     { alias: "registrationNumber", display: true },
     { alias: "make", display: true },
@@ -2014,10 +2023,10 @@ function handleSetReporter(date, address) {
 function getValueFromAlias(pageId, alias) {
   // Find the element with the matching data-customalias attribute
   const element = document.querySelector(`
-    #${pageId} input[data-customalias="${alias}"], 
-    #${pageId} select[data-customalias="${alias}"],
-    #${pageId} textarea[data-customalias="${alias}"]
-  `);
+      #${pageId} input[data-customalias="${alias}"], 
+      #${pageId} select[data-customalias="${alias}"],
+      #${pageId} textarea[data-customalias="${alias}"]
+    `);
 
   // If the element is found, return its value
   if (element) {
@@ -2027,9 +2036,6 @@ function getValueFromAlias(pageId, alias) {
   // If not found, return undefined
   return undefined;
 }
-
-// Initialize an array to store the user's form page history
-const formUserPath = [];
 
 // Function to get and set data for the review page
 function getAndSetReviewPageData() {
@@ -3228,24 +3234,26 @@ function hideShowMultipleElements(fields) {
 }
 
 function hideShowElement(name, display) {
-  display = display.toLowerCase();
-  if (name.startsWith('page_')) {
-    if (display === true || display === 'true' || display === 'show') {
-      KDF.showPage(name);
+  if (name && (typeof display === 'string' || typeof display === 'boolean')) {
+    display = display.toLowerCase();
+    if (name.startsWith('page_')) {
+      if (display === true || display === 'true' || display === 'show') {
+        KDF.showPage(name);
+      } else {
+        KDF.hidePage(name);
+      }
+    } else if (name.startsWith('area_') || name.startsWith('box_')) {
+      if (display === true || display === 'true' || display === 'show') {
+        KDF.showSection(name);
+      } else {
+        KDF.hideSection(name);
+      }
     } else {
-      KDF.hidePage(name);
-    }
-  } else if (name.startsWith('area_') || name.startsWith('box_')) {
-    if (display === true || display === 'true' || display === 'show') {
-      KDF.showSection(name);
-    } else {
-      KDF.hideSection(name);
-    }
-  } else {
-    if (display === true || display === 'true' || display === 'show') {
-      KDF.showWidget(name);
-    } else {
-      KDF.hideWidget(name);
+      if (display === true || display === 'true' || display === 'show') {
+        KDF.showWidget(name);
+      } else {
+        KDF.hideWidget(name);
+      }
     }
   }
 }
@@ -3426,5 +3434,3 @@ function getCookie(name) {
 
   return foundCookie ? decodeURIComponent(foundCookie.substring(nameEQ.length)) : null;
 }
-
-
