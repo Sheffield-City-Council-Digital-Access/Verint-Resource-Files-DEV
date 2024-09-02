@@ -264,7 +264,7 @@ form.dform {
 #dform_container .a-z-filter {
   grid-column: 1 / 3;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: .5rem;
 }
 
