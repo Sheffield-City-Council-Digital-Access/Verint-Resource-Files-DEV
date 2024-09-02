@@ -520,6 +520,7 @@ function handleOnReadyKnowledge() {
 }
 
 function handleServicesAtoZ(forms) {
+  const resetFilter = document.querySelector('.reset-filter');
   const aToZFilter = document.querySelector('.a-z-filter');
   const categoriesList = document.querySelector('.categories ul');
   const optionsContainer = document.querySelector('.options');
@@ -542,13 +543,13 @@ function handleServicesAtoZ(forms) {
       });
       aToZFilter.appendChild(button);
     }
-    // const showAllButton = document.createElement('button');
-    // showAllButton.textContent = 'Reset';
-    // showAllButton.addEventListener('click', () => {
-    //   createOptions();
-    //   clearActiveFilters();
-    // });
-    // aToZFilter.appendChild(showAllButton);
+    const showAllButton = document.createElement('button');
+    showAllButton.textContent = 'Reset';
+    showAllButton.addEventListener('click', () => {
+      createOptions();
+      clearActiveFilters();
+    });
+    resetFilter.appendChild(showAllButton);
   }
 
   function createCategories() {
@@ -562,13 +563,13 @@ function handleServicesAtoZ(forms) {
       });
       categoriesList.appendChild(li);
     });
-    const showAllCategories = document.createElement('li');
-    showAllCategories.textContent = 'Reset';
-    showAllCategories.addEventListener('click', () => {
-      createOptions();
-      clearActiveFilters();
-    });
-    categoriesList.appendChild(showAllCategories);
+    // const showAllCategories = document.createElement('li');
+    // showAllCategories.textContent = 'Reset';
+    // showAllCategories.addEventListener('click', () => {
+    //   createOptions();
+    //   clearActiveFilters();
+    // });
+    // categoriesList.appendChild(showAllCategories);
   }
 
   function createOptions(formsToDisplay = forms) {
