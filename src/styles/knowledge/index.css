@@ -39,7 +39,8 @@ form.dform {
 }
 
 #dform_page_page_content,
-#dform_page_page_latest_news #dform_page_page_service_a_z {
+#dform_page_page_latest_news,
+#dform_page_page_service_a_z {
   background: #eeeeee;
 }
 
@@ -257,8 +258,6 @@ form.dform {
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
   gap: 1rem;
-  padding: 2rem;
-  /* background: var(--color-grey-1); */
   min-height: 68vh;
 }
 
