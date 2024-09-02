@@ -2,6 +2,7 @@
 
 let knowledge = [];
 let latestNews = [];
+let forms = [];
 
 // --- FUNCTIONS ------------------------------------------------------------ \\
 
@@ -32,6 +33,7 @@ function handleInitialisingKnowledge() {
 
     const navItems = [
       { label: 'Home', page: 'page_service_menu' },
+      { label: 'Services A-Z', page: 'page_service_a_z' },
       { label: 'Latest News', page: 'page_latest_news' }
     ];
 
@@ -55,7 +57,8 @@ function handleInitialisingKnowledge() {
             { name: 'page_topic_menu', display: 'hide' },
             { name: 'page_content', display: 'hide' },
             { name: 'page_search_results', display: 'hide' },
-            { name: 'page_latest_news', display: 'hide' }
+            { name: 'page_latest_news', display: 'hide' },
+            { name: 'page_service_a_z', display: 'hide' }
           ]);
         }
         hideShowElement(item.page, 'show');
@@ -77,6 +80,24 @@ function handleInitialisingKnowledge() {
       }
     });
   })();
+
+  (() => {
+    // Create the footer HTML string
+    const footerHTML = `
+    <footer class="footer" role="contentinfo">
+      <div class="footer-links">
+        <a href="https://sheffieldcc-it.uk.4me.com/self-service/requests/new" target="_blank">Request a change</a>
+        <a href="https://sheffieldcc-it.uk.4me.com/self-service/requests/new/provide_description?template_id=681" target="_blank">Report a problem</a>
+      </div>
+    </footer>
+  `;
+
+    // Find the body element
+    const body = document.getElementsByTagName("body")[0];
+
+    // Insert the footer HTML at the end of the body
+    body.insertAdjacentHTML("beforeend", footerHTML);
+  })();
 }
 
 function handleOnReadyKnowledge() {
@@ -86,20 +107,24 @@ function handleOnReadyKnowledge() {
   // --- BACK BUTTON HANDLER ------------------------------------------------ \\
 
   $('.back-btn').on('click', function () {
+    hideShowElement(this.name, 'hide');
     if (this.name === 'but_back_subject_menu') {
       hideShowElement('page_subject_menu', 'hide');
     }
-    if (this.id === 'but_back_topic_menu') {
+    if (this.name === 'but_back_topic_menu') {
       hideShowElement('page_topic_menu', 'hide');
     }
-    if (this.id === 'but_back_search_results') {
+    if (this.name === 'but_back_search_results') {
       hideShowElement('page_search_results', 'hide');
     }
-    if (this.id === 'but_back_search_results') {
+    if (this.name === 'but_back_content') {
       hideShowElement('page_content', 'hide');
     }
-    if (this.id === 'but_back_latest_news') {
+    if (this.name === 'but_back_latest_news') {
       hideShowElement('page_latest_news', 'hide');
+    }
+    if (this.name === 'but_back_service_a_z') {
+      hideShowElement('page_service_a_z', 'hide');
     }
   });
 
@@ -482,4 +507,99 @@ function handleOnReadyKnowledge() {
 
     window.location.href = `${url}${redirectToForm}?${customerid}${interactionid}`;
   });
+
+  // --- SERVICES A-Z ------------------------------------------------------- \\
+
+  const aToZFilter = document.querySelector('.a-z-filter');
+  const categoriesList = document.querySelector('.categories ul');
+  const optionsContainer = document.querySelector('.options');
+
+  function createAtoZFilter() {
+    for (let i = 65; i <= 90; i++) {
+      const letter = String.fromCharCode(i);
+      const button = document.createElement
+        ('button');
+      button.textContent = letter;
+      button.disabled = true;
+      forms.forEach(form => {
+        if (form.label.toUpperCase().startsWith(letter)) {
+          button.disabled = false;
+        }
+      });
+      button.addEventListener('click', () => {
+        filterOptions(letter);
+        highlightActiveFilter(button, '.a-z-filter button');
+      });
+      aToZFilter.appendChild(button);
+    }
+    const showAllButton = document.createElement('button');
+    showAllButton.textContent = 'Show All';
+    showAllButton.addEventListener('click', () => {
+      createOptions();
+      clearActiveFilters();
+    });
+    aToZFilter.appendChild(showAllButton);
+  }
+
+  function createCategories() {
+    const categories = new Set(forms.map(form => form.category));
+    categories.forEach(category => {
+      const li = document.createElement('li');
+      li.textContent = category;
+      li.addEventListener('click', () => {
+        filterByCategory(category);
+        highlightActiveFilter(li, '.categories li');
+      });
+      categoriesList.appendChild(li);
+    });
+    const showAllCategories = document.createElement('li');
+    showAllCategories.textContent = 'Show All';
+    showAllCategories.addEventListener('click', () => {
+      createOptions();
+      clearActiveFilters();
+    });
+    categoriesList.appendChild(showAllCategories);
+  }
+
+  function createOptions(formsToDisplay = forms) {
+    optionsContainer.innerHTML = '';
+    formsToDisplay.sort((a, b) => a.label.localeCompare(b.label))
+      .forEach(form => {
+        const optionDiv = document.createElement('div');
+        optionDiv.classList.add('option');
+        optionDiv.innerHTML = `<h4>${form.label}</h4><p>${form.description}</p>`;
+        optionDiv.addEventListener('click', () => {
+          const { protocol, hostname } = window.location;
+          const url = `${protocol}//${hostname}/form/launch/`;
+          const customerid = KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : '';
+          const interactionid = `interactionid=${KDF.getParams().interactionid}`;
+          window.location.href = `${url}${form.name}?${customerid}${interactionid}`;
+        });
+        optionsContainer.appendChild(optionDiv);
+      });
+  }
+
+  function filterOptions(letter) {
+    const filteredForms = forms.filter(form => form.label.toUpperCase().startsWith(letter));
+    createOptions(filteredForms);
+  }
+
+  function filterByCategory(category) {
+    const filteredForms = forms.filter(form => form.category === category);
+    createOptions(filteredForms);
+  }
+
+  function highlightActiveFilter(element, selector) {
+    clearActiveFilters(selector);
+    element.classList.add('active');
+  }
+
+  function clearActiveFilters(selector = '.a-z-filter button, .categories li') {
+    const activeElements = document.querySelectorAll(selector);
+    activeElements.forEach(el => el.classList.remove('active'));
+  }
+
+  createAtoZFilter();
+  createCategories();
+  createOptions();
 }
