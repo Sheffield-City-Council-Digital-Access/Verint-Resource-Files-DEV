@@ -54,6 +54,5 @@ const formList = [
   new Form('request_sharp_collection', 'Sharps Collection', 'Request a sharps collection', 'Request'),
   new Form('send_link_to_service', 'Link to Service', 'Request a link to a service to be sent.', 'Request'),
   new Form('sr_location', 'Street Light (Demo)', 'Demo for map development', 'Report'),
-  new Form('zz_demo_form', 'Demo Input Form', 'This form is for demonstration purposes. It shows the journey of a front-end data collection form.', 'Demonstration'),
 ];
 
