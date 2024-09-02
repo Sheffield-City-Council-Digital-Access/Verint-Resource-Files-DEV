@@ -33,14 +33,12 @@ form.dform {
 #dform_page_page_subject_menu,
 #dform_page_page_content,
 #dform_page_page_search_results,
-#dform_page_page_latest_news,
-#dform_page_page_service_a_z {
+#dform_page_page_latest_news {
   padding: 5rem;
 }
 
 #dform_page_page_content,
-#dform_page_page_latest_news,
-#dform_page_page_service_a_z {
+#dform_page_page_latest_news {
   background: #eeeeee;
 }
 
