@@ -257,16 +257,17 @@ form.dform {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
-  gap: 1rem;
-  min-height: 68vh;
+  min-height: 86vh;
 }
 
 #dform_container .a-z-filter {
   grid-column: 1 / 3;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   gap: .5rem;
-  margin-bottom: 2rem;
+  padding: .5rem 1rem;
+  background: var(--color-grey-2);
 }
 
 #dform_container .a-z-filter button {
@@ -296,7 +297,8 @@ form.dform {
 
 #dform_container .categories {
   grid-row: 2;
-  margin-right: 2.4rem;
+  background: var(--color-grey-2);
+  padding: .5rem 3rem;
 }
 
 #dform_container .categories h3 {
@@ -328,7 +330,9 @@ form.dform {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  margin-top: 2rem;
+  padding: 2rem;
+  border-top-left-radius: 1rem;
+  background: var(--color-grey-1);
 }
 
 #dform_container .option {

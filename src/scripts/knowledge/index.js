@@ -542,13 +542,13 @@ function handleServicesAtoZ(forms) {
       });
       aToZFilter.appendChild(button);
     }
-    const showAllButton = document.createElement('button');
-    showAllButton.textContent = 'Reset';
-    showAllButton.addEventListener('click', () => {
-      createOptions();
-      clearActiveFilters();
-    });
-    aToZFilter.appendChild(showAllButton);
+    // const showAllButton = document.createElement('button');
+    // showAllButton.textContent = 'Reset';
+    // showAllButton.addEventListener('click', () => {
+    //   createOptions();
+    //   clearActiveFilters();
+    // });
+    // aToZFilter.appendChild(showAllButton);
   }
 
   function createCategories() {
