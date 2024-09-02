@@ -533,7 +533,7 @@ function handleOnReadyKnowledge() {
       aToZFilter.appendChild(button);
     }
     const showAllButton = document.createElement('button');
-    showAllButton.textContent = 'Show All';
+    showAllButton.textContent = 'Reset';
     showAllButton.addEventListener('click', () => {
       createOptions();
       clearActiveFilters();
@@ -553,7 +553,7 @@ function handleOnReadyKnowledge() {
       categoriesList.appendChild(li);
     });
     const showAllCategories = document.createElement('li');
-    showAllCategories.textContent = 'Show All';
+    showAllCategories.textContent = 'Reset';
     showAllCategories.addEventListener('click', () => {
       createOptions();
       clearActiveFilters();
