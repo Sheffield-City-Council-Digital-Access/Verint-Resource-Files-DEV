@@ -266,6 +266,7 @@ form.dform {
   display: flex;
   flex-wrap: wrap;
   gap: .5rem;
+  margin-bottom: 2rem;
 }
 
 #dform_container .a-z-filter button {
@@ -327,6 +328,7 @@ form.dform {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  margin-top: 2rem;
 }
 
 #dform_container .option {

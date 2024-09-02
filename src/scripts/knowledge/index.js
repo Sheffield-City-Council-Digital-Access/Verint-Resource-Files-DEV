@@ -371,12 +371,17 @@ function handleOnReadyKnowledge() {
 
     const searchableItems = knowledge.flatMap(service =>
       service.subjects.map(subject => {
+        const keywords = (subject.meta && subject.meta.keywords) || [];
+        const categories = (subject.meta && subject.meta.categories) || [];
+        const description = subject.description || '';
+        const content = subject.content || '';
+
         const textToSearch = `
-        ${subject.meta.keywords.join(' ')} 
-        ${subject.meta.categories.join(' ')} 
-        ${subject.description || ''} 
-        ${subject.content || ''}
-      `.toLowerCase();
+                ${keywords.join(' ')} 
+                ${categories.join(' ')} 
+                ${description} 
+                ${content}
+            `.toLowerCase();
 
         return {
           ...subject,
@@ -389,9 +394,9 @@ function handleOnReadyKnowledge() {
 
     const newsItems = latestNews.map(news => {
       const textToSearch = `
-      ${news.title} 
-      ${news.content}
-    `.toLowerCase();
+            ${news.title} 
+            ${news.content}
+        `.toLowerCase();
 
       return {
         title: news.title,
@@ -406,13 +411,19 @@ function handleOnReadyKnowledge() {
 
     const results = combinedItems
       .filter(item => {
+        const keywords = (item.meta && item.meta.keywords) || [];
+        const categories = (item.meta && item.meta.categories) || [];
+        const title = item.title || '';
+        const description = item.description || '';
+        const content = item.content || '';
+
         const textToSearch = `
-        ${item.meta ? item.meta.keywords.join(' ') : ''} 
-        ${item.meta ? item.meta.categories.join(' ') : ''} 
-        ${item.title || ''} 
-        ${item.description || ''} 
-        ${item.content || ''}
-      `.toLowerCase();
+                ${keywords.join(' ')} 
+                ${categories.join(' ')} 
+                ${title} 
+                ${description} 
+                ${content}
+            `.toLowerCase();
 
         return searchTerms.some(term => textToSearch.includes(term));
       })
