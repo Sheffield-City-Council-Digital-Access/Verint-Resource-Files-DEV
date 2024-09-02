@@ -13,7 +13,8 @@ form.dform {
 #dform_page_page_topic_menu>div>div,
 #dform_page_page_content>div>div,
 #dform_page_page_search_results>div>div,
-#dform_page_page_latest_news>div>div {
+#dform_page_page_latest_news>div>div,
+#dform_page_service_a_z>div>div {
   width: 100% !important;
 }
 
