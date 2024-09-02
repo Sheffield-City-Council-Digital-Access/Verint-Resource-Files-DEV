@@ -31,7 +31,7 @@ function handleInitialisingKnowledge() {
     titleContainer.appendChild(nav);
 
     const navItems = [
-      { label: 'Home', page: 'page_service_menu' },
+      { label: 'Main menu', page: 'page_service_menu' },
       { label: 'Services A-Z', page: 'page_service_a_z' },
       { label: 'Latest News', page: 'page_latest_news' }
     ];
