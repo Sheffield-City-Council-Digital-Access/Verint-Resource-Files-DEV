@@ -544,7 +544,7 @@ function handleServicesAtoZ(forms) {
       aToZFilter.appendChild(button);
     }
     const showAllButton = document.createElement('button');
-    showAllButton.textContent = 'Reset';
+    showAllButton.textContent = '↺';
     showAllButton.addEventListener('click', () => {
       createOptions();
       clearActiveFilters();

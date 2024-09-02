@@ -263,6 +263,18 @@ form.dform {
   background: var(--color-grey-2);
 }
 
+#dform_container .reset-filter button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+}
+
+#dform_container .reset-filter button:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
 #dform_container .a-z-filter {
   grid-column: 2 / 3;
   display: flex;
