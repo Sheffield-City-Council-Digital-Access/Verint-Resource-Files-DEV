@@ -50,7 +50,6 @@ function handleInitialisingKnowledge() {
       button.classList.add('link-button');
 
       button.addEventListener('click', () => {
-        updateBreadcrumb([item.label]);
         if (item.label === 'Home') {
           hideShowMultipleElements([
             { name: 'page_subject_menu', display: 'hide' },
@@ -70,12 +69,6 @@ function handleInitialisingKnowledge() {
       nav.appendChild(li);
     });
 
-    const breadcrumbContainer = document.createElement('div');
-    breadcrumbContainer.id = 'breadcrumb-container';
-    breadcrumbContainer.innerHTML = '<ul id="breadcrumb"></ul>';
-
-    titleContainer.insertBefore(breadcrumbContainer, nav.nextSibling);
-
     const searchInput = document.getElementById('search-input');
     const searchButton = document.getElementById('search-button');
 
@@ -88,6 +81,7 @@ function handleInitialisingKnowledge() {
   })();
 
   (() => {
+    // Create the footer HTML string
     const footerHTML = `
     <footer class="footer" role="contentinfo">
       <div class="footer-links">
@@ -103,23 +97,6 @@ function handleInitialisingKnowledge() {
     // Insert the footer HTML at the end of the body
     body.insertAdjacentHTML("beforeend", footerHTML);
   })();
-}
-
-function updateBreadcrumb(pathArray) {
-  const breadcrumb = document.getElementById('breadcrumb');
-  breadcrumb.innerHTML = '';
-
-  pathArray.forEach((path, index) => {
-    const listItem = document.createElement('li');
-    listItem.textContent = path;
-    if (index < pathArray.length - 1) {
-      listItem.classList.add('breadcrumb-item');
-      listItem.innerHTML += ' &gt; ';
-    } else {
-      listItem.classList.add('breadcrumb-item-active');
-    }
-    breadcrumb.appendChild(listItem);
-  });
 }
 
 function handleOnReadyKnowledge() {
@@ -279,9 +256,6 @@ function handleOnReadyKnowledge() {
           createCards(subject.topics, topicsMenuContainer);
           const titleElement = document.getElementById('dform_widget_header_hrd_page_title_topic_menu');
           titleElement.textContent = subject.name;
-
-          updateBreadcrumb(['Home', previousData.name, subject.name]);
-
           hideShowElement('page_topic_menu', 'show');
           KDF.gotoPage('page_topic_menu', true, true, true);
         } else {
@@ -293,7 +267,6 @@ function handleOnReadyKnowledge() {
     }
   });
 
-
   topicsMenuContainer.addEventListener('click', (event) => {
     const target = event.target;
     if (target.tagName === 'BUTTON') {
@@ -302,8 +275,6 @@ function handleOnReadyKnowledge() {
 
       const topic = previousData.find(topic => topic.id === topicId);
       if (topic) {
-        updateBreadcrumb(['Home', previousData.name, topic.name]);
-
         redirectToContentPage(topic);
       } else {
         KDF.showError('Topic not found');
