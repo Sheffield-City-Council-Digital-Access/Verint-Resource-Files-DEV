@@ -107,6 +107,7 @@ function handleOnReadyKnowledge() {
 
   const serviceMenuContainer = document.getElementById('service-menu');
   const subjectMenuContainer = document.getElementById('subject-menu');
+  const topicsMenuContainer = document.getElementById('topics-menu');
 
   let currentLevel = 'main';
   let previousData = [];
@@ -141,21 +142,21 @@ function handleOnReadyKnowledge() {
       container.appendChild(card);
 
       card.addEventListener('click', () => {
-        const nextLevelData = item.subjects;
+        const nextLevelData = item.subjects || item.topics;
         if (nextLevelData) {
-          previousData = item.subjects;
-          currentLevel = 'sub';
-          createCards(nextLevelData, subjectMenuContainer);
+          previousData = nextLevelData;
+          currentLevel = item.subjects ? 'sub' : 'topics';
+          createCards(nextLevelData, item.subjects ? subjectMenuContainer : topicsMenuContainer);
 
-          const titleElement = document.getElementById('dform_widget_header_hrd_page_title_sub_menu');
+          const titleElement = document.getElementById(item.subjects ? 'dform_widget_header_hrd_page_title_sub_menu' : 'dform_widget_header_hrd_page_title_topic_menu');
           if (titleElement) {
             titleElement.textContent = item.name;
           } else {
             console.error('Title element not found');
           }
 
-          hideShowElement('page_subject_menu', 'show');
-          KDF.gotoPage('page_subject_menu', true, true, true);
+          hideShowElement(item.subjects ? 'page_subject_menu' : 'page_topic_menu', 'show');
+          KDF.gotoPage(item.subjects ? 'page_subject_menu' : 'page_topic_menu', true, true, true);
         } else {
           redirectToContentPage(item);
         }
@@ -227,9 +228,32 @@ function handleOnReadyKnowledge() {
 
       const subject = previousData.find(subject => subject.id === subjectId);
       if (subject) {
-        redirectToContentPage(subject);
+        if (subject.topics) {
+          createCards(subject.topics, topicsMenuContainer);
+          const titleElement = document.getElementById('dform_widget_header_hrd_page_title_topic_menu');
+          titleElement.textContent = subject.name;
+          hideShowElement('page_topic_menu', 'show');
+          KDF.gotoPage('page_topic_menu', true, true, true);
+        } else {
+          redirectToContentPage(subject);
+        }
       } else {
         KDF.showError('Subject not found');
+      }
+    }
+  });
+
+  topicsMenuContainer.addEventListener('click', (event) => {
+    const target = event.target;
+    if (target.tagName === 'BUTTON') {
+      const card = target.closest('.card');
+      const topicId = card.dataset.id;
+
+      const topic = previousData.find(topic => topic.id === topicId);
+      if (topic) {
+        redirectToContentPage(topic);
+      } else {
+        KDF.showError('Topic not found');
       }
     }
   });
