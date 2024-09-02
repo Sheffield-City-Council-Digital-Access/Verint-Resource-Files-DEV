@@ -271,6 +271,7 @@ form.dform {
 #dform_container .a-z-filter button {
   border: none;
   padding: .5rem;
+  margin-block: .5rem;
   cursor: pointer;
   width: 3rem;
   height: 3rem;
