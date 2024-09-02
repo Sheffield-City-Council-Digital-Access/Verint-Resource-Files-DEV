@@ -255,24 +255,25 @@ form.dform {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
-  gap: 10px;
-  padding: 10px;
+  gap: 1rem;
+  padding: 2rem;
+  background: var(--color-grey-1);
 }
 
 #dform_container .a-z-filter {
   grid-column: 1 / 3;
   display: flex;
   flex-wrap: nowrap;
-  gap: 5px;
+  gap: .5rem;
 }
 
 #dform_container .a-z-filter button {
-  background-color: #f0f0f0;
   border: none;
-  padding: 5px;
+  padding: .5rem;
   cursor: pointer;
   width: 3rem;
   height: 3rem;
+  border: .1rem solid var(--color-primary);
 }
 
 #dform_container .a-z-filter button:last-child {
@@ -332,10 +333,14 @@ form.dform {
   box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.2);
   padding: 2rem;
   flex-grow: 1;
-  background: #f3f3f3;
+  background: var(--color-white);
   transition: box-shadow 0.3s, border-color 0.3s;
-  max-height: 14rem;
+  max-height: 11.5rem;
   cursor: pointer;
+}
+
+#dform_container .option h4 {
+  margin: 0 0 1rem;
 }
 
 #dform_container .option:hover {
