@@ -2,7 +2,6 @@
 
 let knowledge = [];
 let latestNews = [];
-let forms = [];
 
 // --- FUNCTIONS ------------------------------------------------------------ \\
 
@@ -507,9 +506,9 @@ function handleOnReadyKnowledge() {
 
     window.location.href = `${url}${redirectToForm}?${customerid}${interactionid}`;
   });
+}
 
-  // --- SERVICES A-Z ------------------------------------------------------- \\
-
+function handleServicesAtoZ(forms) {
   const aToZFilter = document.querySelector('.a-z-filter');
   const categoriesList = document.querySelector('.categories ul');
   const optionsContainer = document.querySelector('.options');
