@@ -258,6 +258,7 @@ form.dform {
   gap: 1rem;
   padding: 2rem;
   background: var(--color-grey-1);
+  min-height: 68vh;
 }
 
 #dform_container .a-z-filter {
