@@ -3012,20 +3012,20 @@ function do_KDF_Custom_esriMap(action, response) {
 
     if (response.data.return_type == 'street_search') {
       var parseResult = JSON.parse(response.data.result.replace(/\\/g, ""));
-      if (parseResult.features.length < 1) {
-        $('#map_container').addClass('map_container_error');
-        if ($('#map_error').length == '0') {
-          $('#dform_widget_html_ahtm_map_container').prepend('<div id="map_error" class="dform_validationMessage" style="display: block;">Select a location inside the Sheffield area</div>');
-        }
-        KDF.setVal(
-          'ahtm_map_location_error',
-          'Select a location on the public highway'
-        );
+      // if (parseResult.features.length < 1) {
+      //   $('#map_container').addClass('map_container_error');
+      //   if ($('#map_error').length == '0') {
+      //     $('#dform_widget_html_ahtm_map_container').prepend('<div id="map_error" class="dform_validationMessage" style="display: block;">Select a location inside the Sheffield area</div>');
+      //   }
+      //   KDF.setVal(
+      //     'ahtm_map_location_error',
+      //     'Select a location on the public highway'
+      //   );
 
-        KDF.showWidget('ahtm_map_location_error');
-        resetAddressSearch();
-        return;
-      }
+      //   KDF.showWidget('ahtm_map_location_error');
+      //   resetAddressSearch();
+      //   return;
+      // }
       var parseFeature = parseResult.features[0].attributes;
     } else {
       var source = new proj4.Proj('EPSG:27700');
@@ -3063,7 +3063,6 @@ function do_KDF_Custom_esriMap(action, response) {
       $('.popup').text(streetName);
       setRequiredStateByAlias('postcode', 'not required');
     }
-
   }
 
   if (action === 'feature_layer_request') {

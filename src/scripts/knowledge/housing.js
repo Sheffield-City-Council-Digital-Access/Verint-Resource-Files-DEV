@@ -3,8 +3,8 @@ const topicExample1 = {
   name: `Example 1`,
   description: `Example 1`,
   content: `
-      <p>example text</p>
-    `,
+    <p>example text</p>
+  `,
   process: {
     buttonLabel: `Example 1`,
     formName: `example_form`
