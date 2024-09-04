@@ -2544,7 +2544,7 @@ var vmap_config = {
       "number": "11",
       "name": "city centre",
       "title": "city centre",
-      "layer_type": "Display",
+      "layer_type": "Background",
       "layerid": "14",
       "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/14",
       "popup": {}
@@ -2553,7 +2553,7 @@ var vmap_config = {
       "number": "12",
       "name": "hot spot",
       "title": "hot spot",
-      "layer_type": "Display",
+      "layer_type": "Background",
       "layerid": "15",
       "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/15",
       "popup": {}
@@ -2562,7 +2562,7 @@ var vmap_config = {
       "number": "13",
       "name": "hot spot schools",
       "title": "hot spot schools",
-      "layer_type": "Display",
+      "layer_type": "Background",
       "layerid": "16",
       "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/16",
       "popup": {}
@@ -2571,7 +2571,7 @@ var vmap_config = {
       "number": "14",
       "name": "principal shop site",
       "title": "principal shop site",
-      "layer_type": "Display",
+      "layer_type": "Background",
       "layerid": "17",
       "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/17",
       "popup": {}
@@ -2580,7 +2580,7 @@ var vmap_config = {
       "number": "15",
       "name": "neighbourhood shop site",
       "title": "neighbourhood shop site",
-      "layer_type": "Display",
+      "layer_type": "Background",
       "layerid": "18",
       "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/18",
       "popup": {}
@@ -2589,7 +2589,7 @@ var vmap_config = {
       "number": "16",
       "name": "gateway",
       "title": "gateway",
-      "layer_type": "Display",
+      "layer_type": "Background",
       "layerid": "19",
       "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/19",
       "popup": {}
@@ -2598,7 +2598,7 @@ var vmap_config = {
       "number": "17",
       "name": "public right of way",
       "title": "public right of way",
-      "layer_type": "Display",
+      "layer_type": "Background",
       "layerid": "23",
       "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/23",
       "popup": {}
