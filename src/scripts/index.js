@@ -1444,7 +1444,6 @@ function createModal() {
 
   const iframe = document.createElement('iframe');
   const { protocol, hostname } = window.location;
-  const url = `${protocol}//${hostname}/form/launch/`;
   iframe.src = `${protocol}//${hostname}/form/launch/set_agent_location?channel=voice_in`;
   iframe.frameBorder = '0';
   iframe.style.width = '100%';
