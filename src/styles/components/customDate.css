@@ -29,7 +29,7 @@
   -moz-appearance: textfield;
   -webkit-appearance: none;
   appearance: none;
-  padding-right: 0.5rem;
+  padding-right: 0.5rem !important;
 }
 
 #dform_container .dob {
