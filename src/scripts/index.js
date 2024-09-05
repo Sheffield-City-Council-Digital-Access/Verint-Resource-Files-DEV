@@ -1497,9 +1497,9 @@ function checkPageProgress() {
   const currentPageId = getCurrentPageId();
   const currentPageElement = document.getElementById(currentPageId);
 
-  // Check if the alert panel is visible
-  const alertPanel = document.getElementById('dform_widget_html_ahtm_alert_panel_ineligible');
-  const isAlertPanelVisible = alertPanel && isVisible(alertPanel);
+  // Check if the alert panel with class 'alert-panel--ineligible' is visible
+  const alertPanels = currentPageElement.querySelectorAll('.alert-panel--ineligible');
+  const isAlertPanelVisible = Array.from(alertPanels).some(isVisible);
 
   // Handle file inputs separately
   const fileUploads = Array.from(currentPageElement.querySelectorAll("input[type='file']:required"))
@@ -1544,7 +1544,7 @@ function checkPageProgress() {
   // Combine all the checks
   const hasEmptyRequiredElement = hasEmptyFileUploads || hasEmptyRadiosAndCheckboxes || hasEmptyOrInvalidOtherFields;
 
-  // If the alert panel is visible, force disabling the buttons
+  // If any alert panel is visible, force disabling the buttons
   const shouldDisableButton = hasEmptyRequiredElement || isAlertPanelVisible;
 
   // Call the disabledButtonToggle function based on the check
