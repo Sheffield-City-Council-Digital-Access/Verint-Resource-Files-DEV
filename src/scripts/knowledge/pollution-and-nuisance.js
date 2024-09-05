@@ -83,7 +83,7 @@ const abandonedVehicles = new ContentPaN(
     ],
     categories: ['Pollution and Nuisance', 'Waste Management'],
   },
-  { date: '2024-0-05', name: 'Elliott Griffiths' }
+  { date: '05/09/2024', name: 'Elliott Griffiths' }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\

@@ -212,7 +212,8 @@ function handleOnReadyKnowledge() {
     const contentContainer = document.getElementById('dform_widget_html_ahtm_content_container');
     contentContainer.innerHTML = item.content;
 
-    const lastModifiedInfo = document.createElement('p');
+    const lastModifiedInfo = document.createElement('small');
+    lastModifiedInfo.className = 'last-modified-info';
     lastModifiedInfo.textContent = `Last modified on: ${item.lastModified.date} by ${item.lastModified.name}`;
     contentContainer.appendChild(lastModifiedInfo);
 

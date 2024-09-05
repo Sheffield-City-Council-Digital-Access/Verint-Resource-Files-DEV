@@ -45,7 +45,7 @@ const topicExample1 = new ContentH(
   { typeKey: 'example_transfered_to_service' },
   { typeKey: 'example_information_provided' },
   { keywords: [], categories: ['Housing'] },
-  { date: '2024-0-05', name: 'Elliott Griffiths' }
+  { date: '05/09/2024', name: 'Elliott Griffiths' }
 );
 
 // Example instantiation for subjectExample2 (Menu with topics)
@@ -66,7 +66,7 @@ const subjectExample1 = new ContentH(
   { typeKey: 'example_transfered_to_service' },
   { typeKey: 'example_information_provided' },
   { keywords: [], categories: ['Housing'] },
-  { date: '2024-0-05', name: 'Elliott Griffiths' }
+  { date: '05/09/2024', name: 'Elliott Griffiths' }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
