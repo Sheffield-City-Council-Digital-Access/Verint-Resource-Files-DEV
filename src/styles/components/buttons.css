@@ -18,7 +18,6 @@
 
 #dform_container button,
 #dform_container a.link-btn {
-  /*.esri-search button {*/
   color: var(--color-primary);
   font-size: var(--font-height-p2);
   line-height: var(--font-height-p2);
@@ -86,6 +85,7 @@
   border-color: var(--color-primary);
   box-shadow: none;
   outline: 0.4rem solid var(--color-warning);
+  z-index: 999;
 }
 
 #dform_container button.disabled:focus {

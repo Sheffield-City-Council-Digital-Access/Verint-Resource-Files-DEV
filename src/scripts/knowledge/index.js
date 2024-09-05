@@ -530,29 +530,55 @@ function handleServicesAtoZ(forms) {
   const optionsContainer = document.querySelector('.options');
 
   function createAtoZFilter() {
+    // Loop through letters A-Z to create buttons
     for (let i = 65; i <= 90; i++) {
       const letter = String.fromCharCode(i);
-      const button = document.createElement
-        ('button');
+      const button = document.createElement('button');
       button.textContent = letter;
       button.disabled = true;
+
+      // Enable the button if form label starts with the letter
       forms.forEach(form => {
         if (form.label.toUpperCase().startsWith(letter)) {
           button.disabled = false;
         }
       });
+
+      // Filter options and highlight active filter on click
       button.addEventListener('click', () => {
         filterOptions(letter);
         highlightActiveFilter(button, '.a-z-filter button');
       });
+
       aToZFilter.appendChild(button);
     }
+
+    // Create the "Show All" button with spinning text
     const showAllButton = document.createElement('button');
-    showAllButton.textContent = '↺';
+    const span = document.createElement('span');
+    span.textContent = '↺'; // Rotating text
+    showAllButton.appendChild(span);
+
+    // Add spinning animation to the text (but not the button itself)
+    span.style.display = 'inline-block';
+    span.style.animation = 'spin 2s linear infinite';
+
+    // Define spinning animation using CSS keyframes
+    const style = document.createElement('style');
+    style.innerHTML = `
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Reset filters when the "Show All" button is clicked
     showAllButton.addEventListener('click', () => {
       createOptions();
       clearActiveFilters();
     });
+
     resetFilter.appendChild(showAllButton);
   }
 
