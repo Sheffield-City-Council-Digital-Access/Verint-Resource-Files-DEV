@@ -212,6 +212,10 @@ function handleOnReadyKnowledge() {
     const contentContainer = document.getElementById('dform_widget_html_ahtm_content_container');
     contentContainer.innerHTML = item.content;
 
+    const lastModifiedInfo = document.createElement('p');
+    lastModifiedInfo.textContent = `Last modified on: ${item.lastModified.date} by ${item.lastModified.name}`;
+    contentContainer.appendChild(lastModifiedInfo);
+
     const button = document.getElementById('dform_widget_button_but_launch_process');
     button.textContent = item.process.buttonLabel;
 
@@ -224,6 +228,7 @@ function handleOnReadyKnowledge() {
     ]);
     KDF.gotoPage('page_content', true, true, true);
   }
+
 
   serviceMenuContainer.addEventListener('click', (event) => {
     const target = event.target;

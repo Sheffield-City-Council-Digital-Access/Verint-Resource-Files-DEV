@@ -21,18 +21,19 @@ class Menu extends Core {
 }
 
 class Content extends Core {
-  constructor(id, name, description, content, process, transfer, finish, meta) {
+  constructor(id, name, description, content, process, transfer, finish, meta, lastModified) {
     super(id, name, description);
     this.content = content;
     this.process = process;
     this.transfer = transfer;
     this.finish = finish;
     this.meta = meta;
+    this.lastModified = lastModified;
   }
 }
 
-// // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
-// // --- v - ADD SCRIPT BELOW THIS  LINE - v ---------------------------------- \\
+// --------- KEEP THIS AT THE TOP ------------------------------------------- \\
+// --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
 // Example instantiation for topicExample1
 const topicExample1 = new Content(
@@ -43,7 +44,8 @@ const topicExample1 = new Content(
   { buttonLabel: 'Example 1', formName: 'example_form' },
   { typeKey: 'example_transfered_to_service' },
   { typeKey: 'example_information_provided' },
-  { keywords: [], categories: ['Housing'] }
+  { keywords: [], categories: ['Housing'] },
+  { date: '2024-0-05', name: 'Elliott Griffiths' }
 );
 
 // Example instantiation for subjectExample2 (Menu with topics)
@@ -63,11 +65,12 @@ const subjectExample1 = new Content(
   { buttonLabel: 'Example 1', formName: 'example_form' },
   { typeKey: 'example_transfered_to_service' },
   { typeKey: 'example_information_provided' },
-  { keywords: [], categories: ['Housing'] }
+  { keywords: [], categories: ['Housing'] },
+  { date: '2024-0-05', name: 'Elliott Griffiths' }
 );
 
-// // --- ^ - ADD SCRIPT ABOVE THIS  LINE - ^ ---------------------------------- \\
-// // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
+// --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
+// --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const housing = new Service(
   'housing',
