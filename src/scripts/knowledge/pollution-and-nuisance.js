@@ -89,7 +89,7 @@ const abandonedVehicles = new ContentPaN(
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
-const pollutionAndNuisance = new Service(
+const pollutionAndNuisance = new ServicePaN(
   'pollutionAndNuisance',
   'Pollution and Nuisance',
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour…`,

@@ -6,21 +6,21 @@ class CoreLaA {
   }
 }
 
-class ServiceLaA extends CoreCoreLaA {
+class ServiceLaA extends CoreLaA {
   constructor(id, name, description, subjects = []) {
     super(id, name, description);
     this.subjects = subjects;
   }
 }
 
-class MenuLaA extends CoreCoreLaA {
+class MenuLaA extends CoreLaA {
   constructor(id, name, description, topics = []) {
     super(id, name, description);
     this.topics = topics;
   }
 }
 
-class ContentLaA extends CoreCoreLaA {
+class ContentLaA extends CoreLaA {
   constructor(id, name, description, content, process, transfer, finish, meta, lastModified) {
     super(id, name, description);
     this.content = content;

@@ -6,21 +6,21 @@ class CorePSaR {
   }
 }
 
-class ServicePSaR extends CoreSaR {
+class ServicePSaR extends CorePSaR {
   constructor(id, name, description, subjects = []) {
     super(id, name, description);
     this.subjects = subjects;
   }
 }
 
-class MenuPSaR extends CoreSaR {
+class MenuPSaR extends CorePSaR {
   constructor(id, name, description, topics = []) {
     super(id, name, description);
     this.topics = topics;
   }
 }
 
-class ContentPSaR extends CoreSaR {
+class ContentPSaR extends CorePSaR {
   constructor(id, name, description, content, process, transfer, finish, meta, lastModified) {
     super(id, name, description);
     this.content = content;
