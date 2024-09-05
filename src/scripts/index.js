@@ -1109,6 +1109,19 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
   if (siteName && siteCode) {
     // console.log(getValuesOfInputFields({ alias: "fullAddress" }))
     setSelectedAddress(siteName, 'show');
+  } else {
+    $('#map_container').addClass('map_container_error');
+    if ($('#map_error').length == '0') {
+      $('#dform_widget_html_ahtm_map_container').prepend('<div id="map_error" class="dform_validationMessage" style="display: block;">Select a location inside the Sheffield area</div>');
+    }
+    KDF.setVal(
+      'ahtm_map_location_error',
+      'Select a location on the public highway'
+    );
+
+    KDF.showWidget('ahtm_map_location_error');
+    resetAddressSearch();
+    return;
   }
 
   // keep at the bottom
