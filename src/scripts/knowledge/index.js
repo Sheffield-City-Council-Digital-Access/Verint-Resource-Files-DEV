@@ -172,7 +172,7 @@ function handleOnReadyKnowledge() {
           currentLevel = item.subjects ? 'sub' : 'topics';
           createCards(nextLevelData, item.subjects ? subjectMenuContainer : topicsMenuContainer);
 
-          const titleElement = document.getElementById(item.subjects ? 'dform_widget_header_hrd_page_title_sub_menu' : 'dform_widget_header_hrd_page_title_topic_menu');
+          const titleElement = document.getElementById(item.subjects ? 'dform_widget_header_hrd_page_title_subject_menu' : 'dform_widget_header_hrd_page_title_topic_menu');
           if (titleElement) {
             titleElement.textContent = item.name;
           } else {
@@ -238,7 +238,7 @@ function handleOnReadyKnowledge() {
       const service = knowledge.find(service => service.id === serviceId);
       if (service) {
         createCards(service.subjects, subjectMenuContainer);
-        const titleElement = document.getElementById('dform_widget_header_hrd_page_title_sub_menu');
+        const titleElement = document.getElementById('dform_widget_header_hrd_page_title_subject_menu');
         titleElement.textContent = service.name;
         hideShowElement('page_subject_menu', 'show');
         KDF.gotoPage('page_subject_menu', true, true, true);
