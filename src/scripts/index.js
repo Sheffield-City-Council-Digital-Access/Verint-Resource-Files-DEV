@@ -1081,11 +1081,11 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
 
   const { main_attribute: main, background_attribute: bg } = layerAttributes;
 
-  const siteName = main.sitename || main.site_name || main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"] || main.streetname || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] || "");
-  const siteCode = main.sitecode || main.usrn || main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] || "");
+  const siteName = bg.sitename || main.sitename || main.site_name || main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"] || main.streetname || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] || "");
+  const siteCode = bg.sitecode || main.sitecode || main.usrn || main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] || "");
   const featureTypeName = main.featuretypename || main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_name"] || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_name"] || "");
   const featureType = main.featuregroupcode || main.site_type || main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_code"] || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_code"] || "");
-  const responsibility = main.responsibility || bg.customer || main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] || "");
+  const responsibility = bg.customer || main.responsibility || main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] || "");
   const prestige = bg.status || (bg?.status) || main['sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category'] || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category"] || "");
   setValuesToInputFields([
     { alias: "featureName", value: featureTypeName },
@@ -3052,7 +3052,7 @@ function do_KDF_Custom_esriMap(action, response) {
       //   resetAddressSearch();
       //   return;
       // }
-      var parseFeature = parseResult.features[0].attributes;
+      var parseFeature = parseResult.features[0]?.attributes;
     } else {
       var source = new proj4.Proj('EPSG:27700');
       var dest4326 = new proj4.Proj('EPSG:4326');
