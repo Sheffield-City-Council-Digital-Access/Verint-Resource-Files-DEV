@@ -1413,6 +1413,25 @@ function checkAndRefreshAgentLocation() {
   }
 }
 
+function createOptions(formsToDisplay = forms) {
+  optionsContainer.innerHTML = '';
+  formsToDisplay.sort((a, b) => a.label.localeCompare(b.label))
+    .forEach(form => {
+      const optionDiv = document.createElement('div');
+      optionDiv.classList.add('option');
+      optionDiv.innerHTML = `<h4>${form.label}</h4><p>${form.description}</p>`;
+      optionDiv.addEventListener('click', () => {
+        const { protocol, hostname } = window.location;
+        const url = `${protocol}//${hostname}/form/launch/`;
+        const customerid = KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : '';
+        const interactionid = `interactionid=${KDF.getParams().interactionid}`;
+        window.location.href = `${url}${form.name}?${customerid}${interactionid}`;
+      });
+      optionsContainer.appendChild(optionDiv);
+    });
+}
+
+
 // Function to create and display the modal
 function createModal() {
   // Create modal elements
@@ -1424,7 +1443,9 @@ function createModal() {
   modalContent.className = 'modal-content';
 
   const iframe = document.createElement('iframe');
-  iframe.src = 'https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/set_agent_location?channel=voice_in';
+  const { protocol, hostname } = window.location;
+  const url = `${protocol}//${hostname}/form/launch/`;
+  iframe.src = `${protocol}//${hostname}/form/launch/set_agent_location?channel=voice_in`;
   iframe.frameBorder = '0';
   iframe.style.width = '100%';
   iframe.style.height = '100%';
