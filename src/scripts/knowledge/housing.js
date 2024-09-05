@@ -44,7 +44,7 @@ const topicExample1 = new ContentH(
   { buttonLabel: 'Example 1', formName: 'example_form' },
   { typeKey: 'example_transfered_to_service' },
   { typeKey: 'example_information_provided' },
-  { keywords: [], categories: ['Housing'] },
+  { type: 'Request', keywords: [], categories: ['Housing'] },
   { date: '05/09/2024', name: 'Elliott Griffiths' }
 );
 
@@ -65,7 +65,7 @@ const subjectExample1 = new ContentH(
   { buttonLabel: 'Example 1', formName: 'example_form' },
   { typeKey: 'example_transfered_to_service' },
   { typeKey: 'example_information_provided' },
-  { keywords: [], categories: ['Housing'] },
+  { type: 'Rpply', keywords: [], categories: ['Housing'] },
   { date: '05/09/2024', name: 'Elliott Griffiths' }
 );
 

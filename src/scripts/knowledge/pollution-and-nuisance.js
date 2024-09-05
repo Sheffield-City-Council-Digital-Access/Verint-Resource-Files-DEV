@@ -75,7 +75,7 @@ const abandonedVehicles = new ContentPaN(
   { typeKey: 'abandoned_vehicle_transfered_to_service' },
   { typeKey: 'abandoned_vehicle_information_provided' },
   {
-    type: 'report',
+    type: 'Report',
     keywords: [
       'Abandoned vehicles',
       'abandned', 'abondened', 'abandonded', 'abondoned',
