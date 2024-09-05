@@ -38,8 +38,8 @@ class ContentH extends CoreH {
 // Example instantiation for topicExample1
 const topicExample1 = new ContentH(
   'topicexample1',
-  'Example 1',
-  'Example 1',
+  'Topic Title Example 1',
+  'Topic Description Example 1',
   '<p>example text</p>',
   { buttonLabel: 'Example 1', formName: 'example_form' },
   { typeKey: 'example_transfered_to_service' },
@@ -51,16 +51,16 @@ const topicExample1 = new ContentH(
 // Example instantiation for subjectExample2 (Menu with topics)
 const subjectExample2 = new MenuH(
   'subjectexample2',
-  'Example 2',
-  'Example 2',
+  'Subject Title Example 2',
+  'Subject Description Example 2',
   [topicExample1]
 );
 
 // Example instantiation for subjectExample1 (Full content)
 const subjectExample1 = new ContentH(
   'subjectexample1',
-  'Example 1',
-  'Example 1',
+  'Subject Title Example 1',
+  'Subject Description Example 1',
   '<p>example text</p>',
   { buttonLabel: 'Example 1', formName: 'example_form' },
   { typeKey: 'example_transfered_to_service' },
