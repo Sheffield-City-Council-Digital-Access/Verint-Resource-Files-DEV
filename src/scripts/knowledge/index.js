@@ -559,16 +559,17 @@ function handleServicesAtoZ(forms) {
     span.textContent = '↺'; // Rotating text
     showAllButton.appendChild(span);
 
-    // Add spinning animation to the text (but not the button itself)
-    span.style.display = 'inline-block';
-    span.style.animation = 'spin 2s linear infinite';
-
-    // Define spinning animation using CSS keyframes
+    // Add hover effect for spinning text
     const style = document.createElement('style');
     style.innerHTML = `
-      @keyframes spin {
+      @keyframes spinOnce {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
+      }
+
+      .reset-filter button span:hover {
+        display: inline-block;
+        animation: spinOnce 0.5s ease-in-out 1;
       }
     `;
     document.head.appendChild(style);
