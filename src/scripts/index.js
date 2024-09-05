@@ -1107,7 +1107,7 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
   }
 
   if (siteName && siteCode) {
-    console.log(!getValuesOfInputFields('fullAddress'))
+    console.log(!getValuesOfInputFields({ alias: "fullAddress" }))
     setSelectedAddress(siteName, 'show');
   }
 
