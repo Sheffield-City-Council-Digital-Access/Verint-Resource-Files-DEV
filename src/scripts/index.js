@@ -1106,7 +1106,8 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     ]);
   }
 
-  if (siteName && siteCode && !getValuesOfInputFields(fullAddress)) {
+  if (siteName && siteCode) {
+    console.log(!getValuesOfInputFields(fullAddress))
     setSelectedAddress(siteName, 'show');
   }
 
