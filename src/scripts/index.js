@@ -1106,6 +1106,10 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     ]);
   }
 
+  if (siteName && siteCode && !getValuesOfInputFields(fullAddress)) {
+    setSelectedAddress(siteName, 'show');
+  }
+
   // keep at the bottom
   checkPageProgress();
 }
