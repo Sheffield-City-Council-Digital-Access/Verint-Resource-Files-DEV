@@ -554,7 +554,15 @@ function handleOnReadyKnowledge(knowledge) {
 
   function createCards(data, container) {
     if (!container) return;
-    container.innerHTML = '';
+
+    // Check if data is an array and has items
+    if (!Array.isArray(data) || data.length === 0) {
+      console.error('Invalid or empty data passed to createCards:', data);
+      container.innerHTML = '<p>No items to display</p>';
+      return;
+    }
+
+    container.innerHTML = ''; // Clear existing content
 
     data.forEach(item => {
       const card = document.createElement('div');
@@ -615,6 +623,7 @@ function handleOnReadyKnowledge(knowledge) {
       });
     });
   }
+
 
   function redirectToContentPage(item) {
     if (item.content) {
