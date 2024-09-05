@@ -1431,7 +1431,6 @@ function createOptions(formsToDisplay = forms) {
     });
 }
 
-
 // Function to create and display the modal
 function createModal() {
   // Create modal elements
@@ -3345,7 +3344,9 @@ function hideShowMultipleElements(fields) {
 
 function hideShowElement(name, display) {
   if (name && (typeof display === 'string' || typeof display === 'boolean')) {
-    display = display.toLowerCase();
+    if (typeof display === 'string') {
+      display = display.toLowerCase();
+    }
     if (name.startsWith('page_')) {
       if (display === true || display === 'true' || display === 'show') {
         KDF.showPage(name);
