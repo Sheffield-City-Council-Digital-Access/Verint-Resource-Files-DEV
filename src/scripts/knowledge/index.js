@@ -571,6 +571,14 @@ function handleOnReadyKnowledge() {
           highlightActiveFilter(button, '.a-z-filter button');
         });
 
+        // Allow navigation with Enter key
+        button.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter') {
+            event.preventDefault();
+            button.click();
+          }
+        });
+
         aToZFilter.appendChild(button);
       }
 
@@ -602,10 +610,19 @@ function handleOnReadyKnowledge() {
       sortedCategories.forEach(category => {
         const li = document.createElement('li');
         li.textContent = category;
+        li.tabIndex = 0; // Make the category tabbable
 
         li.addEventListener('click', () => {
           filterByCategory(category);
           highlightActiveFilter(li, '.categories li');
+        });
+
+        // Allow navigation with Enter key
+        li.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter') {
+            event.preventDefault();
+            li.click();
+          }
         });
 
         categoriesList.appendChild(li);
@@ -702,7 +719,7 @@ function handleOnReadyKnowledge() {
         option.card.addEventListener('keydown', (event) => {
           if (event.key === 'Enter') {
             event.preventDefault();
-            handleCardClick(plainOption);
+            option.card.click();
           }
         });
 
@@ -809,6 +826,7 @@ function handleOnReadyKnowledge() {
       console.error('services is not defined or not an array');
     }
   }
+
 
   handleServicesAtoZ(knowledge);
 }
