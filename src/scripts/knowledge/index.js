@@ -529,11 +529,137 @@ function handleOnReadyKnowledge() {
   });
 }
 
+// function handleServicesAtoZ(forms) {
+//   const resetFilter = document.querySelector('.reset-filter');
+//   const aToZFilter = document.querySelector('.a-z-filter');
+//   const categoriesList = document.querySelector('.categories ul');
+//   const optionsContainer = document.querySelector('.options');
+
+//   function createAtoZFilter() {
+//     // Loop through letters A-Z to create buttons
+//     for (let i = 65; i <= 90; i++) {
+//       const letter = String.fromCharCode(i);
+//       const button = document.createElement('button');
+//       button.textContent = letter;
+//       button.disabled = true;
+
+//       // Enable the button if form label starts with the letter
+//       forms.forEach(form => {
+//         if (form.label.toUpperCase().startsWith(letter)) {
+//           button.disabled = false;
+//         }
+//       });
+
+//       // Filter options and highlight active filter on click
+//       button.addEventListener('click', () => {
+//         filterOptions(letter);
+//         highlightActiveFilter(button, '.a-z-filter button');
+//       });
+
+//       aToZFilter.appendChild(button);
+//     }
+
+//     // Create the "Show All" button with spinning text
+//     const showAllButton = document.createElement('button');
+//     const span = document.createElement('span');
+//     span.textContent = '↺'; // Rotating text
+//     showAllButton.appendChild(span);
+
+//     // Add hover effect for spinning text
+//     const style = document.createElement('style');
+//     style.innerHTML = `
+//       @keyframes spinOnce {
+//         0% { transform: rotate(0deg); }
+//         100% { transform: rotate(360deg); }
+//       }
+
+//       .reset-filter button span:hover {
+//         display: inline-block;
+//         animation: spinOnce 0.5s ease-in-out 1;
+//       }
+//     `;
+//     document.head.appendChild(style);
+
+//     // Reset filters when the "Show All" button is clicked
+//     showAllButton.addEventListener('click', () => {
+//       createOptions();
+//       clearActiveFilters();
+//     });
+
+//     resetFilter.appendChild(showAllButton);
+//   }
+
+//   function createCategories() {
+//     const categories = new Set(forms.map(form => form.category));
+//     categories.forEach(category => {
+//       const li = document.createElement('li');
+//       li.textContent = category;
+//       li.addEventListener('click', () => {
+//         filterByCategory(category);
+//         highlightActiveFilter(li, '.categories li');
+//       });
+//       categoriesList.appendChild(li);
+//     });
+//     // const showAllCategories = document.createElement('li');
+//     // showAllCategories.textContent = 'Reset';
+//     // showAllCategories.addEventListener('click', () => {
+//     //   createOptions();
+//     //   clearActiveFilters();
+//     // });
+//     // categoriesList.appendChild(showAllCategories);
+//   }
+
+//   function createOptions(formsToDisplay = forms) {
+//     optionsContainer.innerHTML = '';
+//     formsToDisplay.sort((a, b) => a.label.localeCompare(b.label))
+//       .forEach(form => {
+//         const optionDiv = document.createElement('div');
+//         optionDiv.classList.add('option');
+//         optionDiv.innerHTML = `<h4>${form.label}</h4><p>${form.description}</p>`;
+//         optionDiv.addEventListener('click', () => {
+//           const { protocol, hostname } = window.location;
+//           const url = `${protocol}//${hostname}/form/launch/`;
+//           const customerid = KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : '';
+//           const interactionid = `interactionid=${KDF.getParams().interactionid}`;
+//           window.location.href = `${url}${form.name}?${customerid}${interactionid}`;
+//         });
+//         optionsContainer.appendChild(optionDiv);
+//       });
+//   }
+
+//   function filterOptions(letter) {
+//     const filteredForms = forms.filter(form => form.label.toUpperCase().startsWith(letter));
+//     createOptions(filteredForms);
+//   }
+
+//   function filterByCategory(category) {
+//     const filteredForms = forms.filter(form => form.category === category);
+//     createOptions(filteredForms);
+//   }
+
+//   function highlightActiveFilter(element, selector) {
+//     clearActiveFilters(selector);
+//     element.classList.add('active');
+//   }
+
+//   function clearActiveFilters(selector = '.a-z-filter button, .categories li') {
+//     const activeElements = document.querySelectorAll(selector);
+//     activeElements.forEach(el => el.classList.remove('active'));
+//   }
+
+//   createAtoZFilter();
+//   createCategories();
+//   createOptions();
+// }
+
 function handleServicesAtoZ(forms) {
   const resetFilter = document.querySelector('.reset-filter');
   const aToZFilter = document.querySelector('.a-z-filter');
   const categoriesList = document.querySelector('.categories ul');
   const optionsContainer = document.querySelector('.options');
+
+  // Filter forms to only include those with content (i.e., formName exists)
+  const formsWithContent = forms.filter(form => form.name && form.name.trim() !== '');
 
   function createAtoZFilter() {
     // Loop through letters A-Z to create buttons
@@ -543,8 +669,8 @@ function handleServicesAtoZ(forms) {
       button.textContent = letter;
       button.disabled = true;
 
-      // Enable the button if form label starts with the letter
-      forms.forEach(form => {
+      // Enable the button if form label starts with the letter and has content
+      formsWithContent.forEach(form => {
         if (form.label.toUpperCase().startsWith(letter)) {
           button.disabled = false;
         }
@@ -590,7 +716,8 @@ function handleServicesAtoZ(forms) {
   }
 
   function createCategories() {
-    const categories = new Set(forms.map(form => form.category));
+    // Only create categories for forms with content
+    const categories = new Set(formsWithContent.map(form => form.category));
     categories.forEach(category => {
       const li = document.createElement('li');
       li.textContent = category;
@@ -600,16 +727,9 @@ function handleServicesAtoZ(forms) {
       });
       categoriesList.appendChild(li);
     });
-    // const showAllCategories = document.createElement('li');
-    // showAllCategories.textContent = 'Reset';
-    // showAllCategories.addEventListener('click', () => {
-    //   createOptions();
-    //   clearActiveFilters();
-    // });
-    // categoriesList.appendChild(showAllCategories);
   }
 
-  function createOptions(formsToDisplay = forms) {
+  function createOptions(formsToDisplay = formsWithContent) {
     optionsContainer.innerHTML = '';
     formsToDisplay.sort((a, b) => a.label.localeCompare(b.label))
       .forEach(form => {
@@ -628,12 +748,12 @@ function handleServicesAtoZ(forms) {
   }
 
   function filterOptions(letter) {
-    const filteredForms = forms.filter(form => form.label.toUpperCase().startsWith(letter));
+    const filteredForms = formsWithContent.filter(form => form.label.toUpperCase().startsWith(letter));
     createOptions(filteredForms);
   }
 
   function filterByCategory(category) {
-    const filteredForms = forms.filter(form => form.category === category);
+    const filteredForms = formsWithContent.filter(form => form.category === category);
     createOptions(filteredForms);
   }
 
