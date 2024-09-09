@@ -601,7 +601,7 @@ function handleOnReadyKnowledge() {
       });
     }
 
-    function createOptions(filteredServices) {
+    function createOptions(filteredServices, updateAtoZ = true) {
       const resultsContainer = document.querySelector('.options');
       resultsContainer.innerHTML = '';
 
@@ -731,22 +731,24 @@ function handleOnReadyKnowledge() {
         }
       });
 
-      // Update A-Z filter with the visible letters
-      createAtoZFilter(visibleLetters);
+      if (updateAtoZ) {
+        // Update A-Z filter with the visible letters
+        createAtoZFilter(visibleLetters);
+      }
     }
 
     function filterOptionsByLetter(letter) {
       const filteredServices = services.filter(service =>
         service.name.toUpperCase().startsWith(letter) || service.subjects.some(subject => subject.name.toUpperCase().startsWith(letter))
       );
-      createOptions(filteredServices);
+      createOptions(filteredServices, false);
     }
 
     function filterByCategory(category) {
       const filteredForms = services.filter(service =>
         service.subjects.some(subject => subject.meta && subject.meta.type === category)
       );
-      createOptions(filteredForms);
+      createOptions(filteredForms, false);
     }
 
     function highlightActiveFilter(element, selector) {
