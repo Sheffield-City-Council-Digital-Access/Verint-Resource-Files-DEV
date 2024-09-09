@@ -577,21 +577,29 @@ function handleOnReadyKnowledge() {
     }
 
     function createCategories() {
-      const categories = new Set();
+      const categories = new Set(); // Use Set to avoid duplicates
+
+      // Loop through services and their subjects
       services.forEach(service => {
         service.subjects.forEach(subject => {
-          subject.meta.categories.forEach(category => categories.add(category));
+          if (subject.meta && subject.meta.type) {
+            categories.add(subject.meta.type); // Add the type to the Set
+          }
         });
       });
 
+      // Create the list of categories (types)
       categories.forEach(category => {
         const li = document.createElement('li');
         li.textContent = category;
+
+        // Add click event listener for filtering by category (type)
         li.addEventListener('click', () => {
-          filterByCategory(category);
+          filterByCategory(category); // Filter when category is clicked
           highlightActiveFilter(li, '.categories li');
         });
-        categoriesList.appendChild(li);
+
+        categoriesList.appendChild(li); // Append category item to the list
       });
     }
 
