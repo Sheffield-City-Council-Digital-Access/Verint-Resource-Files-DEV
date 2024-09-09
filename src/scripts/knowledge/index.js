@@ -772,7 +772,7 @@ function handleOnReadyKnowledge() {
       clearActiveFilters('.categories li');
 
       // Highlight the selected letter
-      const activeLetterButton = document.querySelector(`.a-z-filter button:contains('${letter}')`);
+      const activeLetterButton = document.querySelector(`.a-z-filter button:nth-of-type(${letter.charCodeAt(0) - 64})`); // Adjust for 1-based index
       highlightActiveFilter(activeLetterButton, '.a-z-filter button');
     }
 
@@ -807,10 +807,9 @@ function handleOnReadyKnowledge() {
       clearActiveFilters('.a-z-filter button');
 
       // Highlight the selected category
-      const activeCategoryButton = document.querySelector(`.categories li:contains('${category}')`);
+      const activeCategoryButton = Array.from(document.querySelectorAll('.categories li')).find(li => li.textContent.trim() === category);
       highlightActiveFilter(activeCategoryButton, '.categories li');
     }
-
 
     function highlightActiveFilter(element, selector) {
       clearActiveFilters(selector);
