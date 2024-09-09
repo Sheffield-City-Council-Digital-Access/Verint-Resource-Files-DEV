@@ -601,25 +601,20 @@ function handleOnReadyKnowledge() {
       });
     }
 
-    function createOptions(filteredServices = services) {
-      const resultsContainer = optionsContainer;
+    function createOptions(services) {
+      const resultsContainer = document.querySelector('.options');
       resultsContainer.innerHTML = '';
 
-      filteredServices.forEach(service => {
-        // Loop through the subjects of each service
+      services.forEach(service => {
         service.subjects.forEach(subject => {
-          // Render if subject contains content
           if (subject.content) {
-            // Create the card container for each subject
             const card = document.createElement('div');
             card.classList.add('search-card');
             card.setAttribute('tabindex', '0');
 
-            // Add the title for the subject
             const title = document.createElement('h3');
             title.textContent = subject.name;
 
-            // Add the description
             const description = document.createElement('div');
             description.innerHTML = subject.description;
 
@@ -628,20 +623,31 @@ function handleOnReadyKnowledge() {
 
             resultsContainer.appendChild(card);
 
-            // Add click event to handle interaction
+            // Convert ContentH to a plain object and add click event
+            const plainSubject = {
+              id: subject.id,
+              name: subject.name,
+              description: subject.description,
+              content: subject.content,
+              process: subject.process,
+              transfer: subject.transfer,
+              finish: subject.finish,
+              meta: subject.meta,
+              lastModified: subject.lastModified,
+              serviceName: service.name
+            };
+
             card.addEventListener('click', () => {
-              handleCardClick(subject);
+              handleCardClick(plainSubject);
             });
 
-            // Add keyboard accessibility for the card
             card.addEventListener('keydown', (event) => {
               if (event.key === 'Enter') {
                 event.preventDefault();
-                handleCardClick(subject);
+                handleCardClick(plainSubject);
               }
             });
 
-            // Add focus and blur events for better accessibility
             card.addEventListener('focus', () => {
               card.classList.add('focus');
             });
@@ -651,24 +657,19 @@ function handleOnReadyKnowledge() {
             });
           }
 
-          // Render topics if they exist and have content
           if (subject.topics) {
             subject.topics.forEach(topic => {
               if (topic.content) {
-                // Create the card container for each topic
                 const card = document.createElement('div');
                 card.classList.add('search-card');
                 card.setAttribute('tabindex', '0');
 
-                // Add the title for the topic
                 const title = document.createElement('h3');
                 title.textContent = topic.name;
 
-                // Add the description
                 const description = document.createElement('div');
                 description.innerHTML = topic.description;
 
-                // Add the content snippet
                 const content = document.createElement('div');
                 content.innerHTML = topic.content;
 
@@ -678,20 +679,31 @@ function handleOnReadyKnowledge() {
 
                 resultsContainer.appendChild(card);
 
-                // Add click event to handle interaction
+                // Convert ContentH to a plain object and add click event
+                const plainTopic = {
+                  id: topic.id,
+                  name: topic.name,
+                  description: topic.description,
+                  content: topic.content,
+                  process: topic.process,
+                  transfer: topic.transfer,
+                  finish: topic.finish,
+                  meta: topic.meta,
+                  lastModified: topic.lastModified,
+                  serviceName: service.name
+                };
+
                 card.addEventListener('click', () => {
-                  handleCardClick(topic);
+                  handleCardClick(plainTopic);
                 });
 
-                // Add keyboard accessibility for the card
                 card.addEventListener('keydown', (event) => {
                   if (event.key === 'Enter') {
                     event.preventDefault();
-                    handleCardClick(topic);
+                    handleCardClick(plainTopic);
                   }
                 });
 
-                // Add focus and blur events for better accessibility
                 card.addEventListener('focus', () => {
                   card.classList.add('focus');
                 });
