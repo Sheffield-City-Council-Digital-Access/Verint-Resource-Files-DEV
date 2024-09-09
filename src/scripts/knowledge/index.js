@@ -755,10 +755,22 @@ function handleOnReadyKnowledge() {
       const filteredServices = services.filter(service =>
         service.subjects.some(subject =>
           (subject.meta && subject.meta.type === category) ||
-          (subject.topics && subject.topics.some(topic => topic.meta && topic.meta.type === category))
+          (Array.isArray(subject.topics) && subject.topics.some(topic => topic.meta && topic.meta.type === category))
         )
       );
-      createOptions(filteredServices, false);
+
+      // Ensure the filtering distinguishes between subjects and topics
+      const refinedFilteredServices = filteredServices.map(service => {
+        return {
+          ...service,
+          subjects: service.subjects.map(subject => ({
+            ...subject,
+            topics: subject.topics.filter(topic => topic.meta.type === category) // Filter topics by category
+          })).filter(subject => subject.meta.type === category || subject.topics.length > 0) // Ensure subjects are filtered by category or have valid topics
+        };
+      });
+
+      createOptions(refinedFilteredServices, false);
     }
 
     function highlightActiveFilter(element, selector) {
