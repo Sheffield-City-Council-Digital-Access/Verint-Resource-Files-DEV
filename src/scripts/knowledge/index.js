@@ -631,10 +631,10 @@ function handleOnReadyKnowledge() {
     }
 
     function filterByCategory(category) {
-      const filteredServices = services.filter(service =>
-        service.subjects.some(subject => subject.meta.categories.includes(category))
+      const filteredForms = knowledge.filter(service =>
+        service.subjects.some(subject => subject.meta && subject.meta.type === category)
       );
-      createOptions(filteredServices);
+      createOptions(filteredForms);
     }
 
     function highlightActiveFilter(element, selector) {
