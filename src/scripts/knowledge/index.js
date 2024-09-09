@@ -596,7 +596,10 @@ function handleOnReadyKnowledge() {
         });
       });
 
-      categories.forEach(category => {
+      // Convert the set to an array and sort it
+      const sortedCategories = Array.from(categories).sort();
+
+      sortedCategories.forEach(category => {
         const li = document.createElement('li');
         li.textContent = category;
 
@@ -615,6 +618,8 @@ function handleOnReadyKnowledge() {
 
       const visibleLetters = new Set(); // Set to keep track of visible letters
 
+      let options = []; // Array to hold all options
+
       filteredServices.forEach(service => {
         if (Array.isArray(service.subjects)) {
           service.subjects.forEach(subject => {
@@ -632,40 +637,7 @@ function handleOnReadyKnowledge() {
               card.appendChild(title);
               card.appendChild(description);
 
-              resultsContainer.appendChild(card);
-
-              const plainSubject = {
-                id: subject.id,
-                name: subject.name,
-                description: subject.description,
-                content: subject.content,
-                process: subject.process,
-                transfer: subject.transfer,
-                finish: subject.finish,
-                meta: subject.meta,
-                lastModified: subject.lastModified,
-                serviceName: service.name,
-                type: "knowledge"
-              };
-
-              card.addEventListener('click', () => {
-                handleCardClick(plainSubject);
-              });
-
-              card.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter') {
-                  event.preventDefault();
-                  handleCardClick(plainSubject);
-                }
-              });
-
-              card.addEventListener('focus', () => {
-                card.classList.add('focus');
-              });
-
-              card.addEventListener('blur', () => {
-                card.classList.remove('focus');
-              });
+              options.push({ card, name: subject.name, type: "subject" });
 
               // Track visible letter for A-Z filter
               if (subject.name) {
@@ -689,40 +661,7 @@ function handleOnReadyKnowledge() {
                   card.appendChild(title);
                   card.appendChild(description);
 
-                  resultsContainer.appendChild(card);
-
-                  const plainTopic = {
-                    id: topic.id,
-                    name: topic.name,
-                    description: topic.description,
-                    content: topic.content,
-                    process: topic.process,
-                    transfer: topic.transfer,
-                    finish: topic.finish,
-                    meta: topic.meta,
-                    lastModified: topic.lastModified,
-                    serviceName: service.name,
-                    type: "knowledge"
-                  };
-
-                  card.addEventListener('click', () => {
-                    handleCardClick(plainTopic);
-                  });
-
-                  card.addEventListener('keydown', (event) => {
-                    if (event.key === 'Enter') {
-                      event.preventDefault();
-                      handleCardClick(plainTopic);
-                    }
-                  });
-
-                  card.addEventListener('focus', () => {
-                    card.classList.add('focus');
-                  });
-
-                  card.addEventListener('blur', () => {
-                    card.classList.remove('focus');
-                  });
+                  options.push({ card, name: topic.name, type: "topic" });
 
                   // Track visible letter for A-Z filter
                   if (topic.name) {
@@ -733,6 +672,47 @@ function handleOnReadyKnowledge() {
             }
           });
         }
+      });
+
+      // Sort options alphabetically by name
+      options.sort((a, b) => a.name.localeCompare(b.name));
+
+      // Append sorted options to the container
+      options.forEach(option => {
+        resultsContainer.appendChild(option.card);
+
+        const plainOption = {
+          id: option.card.id,
+          name: option.name,
+          description: option.card.querySelector('div').innerHTML,
+          content: option.card.querySelector('div').innerHTML,
+          process: option.card.querySelector('div').innerHTML,
+          transfer: option.card.querySelector('div').innerHTML,
+          finish: option.card.querySelector('div').innerHTML,
+          meta: {},
+          lastModified: new Date(),
+          serviceName: "",
+          type: option.type
+        };
+
+        option.card.addEventListener('click', () => {
+          handleCardClick(plainOption);
+        });
+
+        option.card.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter') {
+            event.preventDefault();
+            handleCardClick(plainOption);
+          }
+        });
+
+        option.card.addEventListener('focus', () => {
+          option.card.classList.add('focus');
+        });
+
+        option.card.addEventListener('blur', () => {
+          option.card.classList.remove('focus');
+        });
       });
 
       if (updateAtoZ) {
@@ -829,7 +809,6 @@ function handleOnReadyKnowledge() {
       console.error('services is not defined or not an array');
     }
   }
-
 
   handleServicesAtoZ(knowledge);
 }
