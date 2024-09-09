@@ -653,6 +653,7 @@ function handleOnReadyKnowledge() {
 // }
 
 function handleServicesAtoZ() {
+  console.log('initial', knowledge);
   const resetFilter = document.querySelector('.reset-filter');
   const aToZFilter = document.querySelector('.a-z-filter');
   const categoriesList = document.querySelector('.categories ul');
@@ -788,6 +789,7 @@ function handleServicesAtoZ() {
     createAtoZFilter();
     createCategories();
     createOptions();
+    console.log('timedout', knowledge);
   }, 0);
 
 }
