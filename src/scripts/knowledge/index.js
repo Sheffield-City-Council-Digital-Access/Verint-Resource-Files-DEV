@@ -528,9 +528,6 @@ function handleOnReadyKnowledge() {
     window.location.href = `${url}${redirectToForm}?${customerid}${interactionid}`;
   });
 
-
-
-
   function handleServicesAtoZ(services) {
     const resetFilter = document.querySelector('.reset-filter');
     const aToZFilter = document.querySelector('.a-z-filter');
@@ -603,26 +600,56 @@ function handleOnReadyKnowledge() {
       });
     }
 
-    function createOptions(servicesToDisplay = services) {
-      optionsContainer.innerHTML = '';
-
-      servicesToDisplay.forEach(service => {
-        // Display service name
+    function createOptions() {
+      services.forEach(service => {
+        // Create the service container
         const serviceDiv = document.createElement('div');
         serviceDiv.classList.add('option');
-        serviceDiv.innerHTML = `<h4>${service.name}</h4><p>${service.description}</p>`;
 
-        // Display service subjects and topics
+        // Add the service name and description
+        const serviceTitle = document.createElement('h4');
+        serviceTitle.textContent = service.name;
+        serviceDiv.appendChild(serviceTitle);
+
+        const serviceDescription = document.createElement('p');
+        serviceDescription.textContent = service.description;
+        serviceDiv.appendChild(serviceDescription);
+
+        // Process each subject within the service
         service.subjects.forEach(subject => {
-          const subjectDiv = document.createElement('div');
-          subjectDiv.innerHTML = `<h5>${subject.name}</h5><p>${subject.description}</p>`;
-          serviceDiv.appendChild(subjectDiv);
+          // Only render if the subject contains content
+          if (subject instanceof ContentH && subject.content) {
+            const subjectDiv = document.createElement('div');
 
-          if (subject.topics) {
+            // Add subject title and description
+            const subjectTitle = document.createElement('h5');
+            subjectTitle.textContent = subject.name;
+            subjectDiv.appendChild(subjectTitle);
+
+            const subjectDescription = document.createElement('p');
+            subjectDescription.textContent = subject.description;
+            subjectDiv.appendChild(subjectDescription);
+
+            serviceDiv.appendChild(subjectDiv);
+          }
+
+          // Process topics if the subject is a MenuH
+          if (subject instanceof MenuH && subject.topics) {
             subject.topics.forEach(topic => {
-              const topicDiv = document.createElement('div');
-              topicDiv.innerHTML = `<h6>${topic.name}</h6><p>${topic.description}</p>`;
-              subjectDiv.appendChild(topicDiv);
+              if (topic.content) {
+                const topicDiv = document.createElement('div');
+
+                // Add topic title and description
+                const topicTitle = document.createElement('h6');
+                topicTitle.textContent = topic.name;
+                topicDiv.appendChild(topicTitle);
+
+                const topicDescription = document.createElement('p');
+                topicDescription.textContent = topic.description;
+                topicDiv.appendChild(topicDescription);
+
+                serviceDiv.appendChild(topicDiv);
+              }
             });
           }
         });
