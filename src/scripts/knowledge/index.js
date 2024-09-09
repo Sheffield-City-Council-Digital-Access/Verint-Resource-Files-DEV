@@ -765,7 +765,15 @@ function handleOnReadyKnowledge() {
         };
       });
 
+      // Update the display with the filtered options
       createOptions(refinedFilteredServices, false);
+
+      // Clear active class from categories
+      clearActiveFilters('.categories li');
+
+      // Highlight the selected letter
+      const activeLetterButton = document.querySelector(`.a-z-filter button:contains('${letter}')`);
+      highlightActiveFilter(activeLetterButton, '.a-z-filter button');
     }
 
     function filterByCategory(category) {
@@ -792,8 +800,17 @@ function handleOnReadyKnowledge() {
         };
       });
 
+      // Update the display with the filtered options
       createOptions(refinedFilteredServices, false);
+
+      // Clear active class from letter filters
+      clearActiveFilters('.a-z-filter button');
+
+      // Highlight the selected category
+      const activeCategoryButton = document.querySelector(`.categories li:contains('${category}')`);
+      highlightActiveFilter(activeCategoryButton, '.categories li');
     }
+
 
     function highlightActiveFilter(element, selector) {
       clearActiveFilters(selector);
