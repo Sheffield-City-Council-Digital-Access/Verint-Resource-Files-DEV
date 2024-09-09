@@ -654,7 +654,7 @@ function handleOnReadyKnowledge() {
               card.appendChild(title);
               card.appendChild(description);
 
-              options.push({ card, name: subject.name, type: "subject" });
+              options.push({ card, name: subject.name, type: "knowledge" });
 
               // Track visible letter for A-Z filter
               if (subject.name) {
@@ -678,7 +678,7 @@ function handleOnReadyKnowledge() {
                   card.appendChild(title);
                   card.appendChild(description);
 
-                  options.push({ card, name: topic.name, type: "topic" });
+                  options.push({ card, name: topic.name, type: "knowledge" });
 
                   // Track visible letter for A-Z filter
                   if (topic.name) {
