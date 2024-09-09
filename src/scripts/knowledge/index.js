@@ -493,7 +493,7 @@ function handleOnReadyKnowledge() {
       contentContainer.innerHTML = result.content;
 
       const lastModifiedInfo = document.createElement('small');
-      lastModifiedInfo.textContent = `Last modified on: ${item.lastModified.date} by ${item.lastModified.name}`;
+      lastModifiedInfo.textContent = `Last modified on: ${result.lastModified.date} by ${result.lastModified.name}`;
       contentContainer.appendChild(lastModifiedInfo);
 
       const button = document.getElementById('dform_widget_button_but_launch_process');
