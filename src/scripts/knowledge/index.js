@@ -632,7 +632,8 @@ function handleOnReadyKnowledge() {
                   finish: subject.finish,
                   meta: subject.meta,
                   lastModified: subject.lastModified,
-                  serviceName: service.name
+                  serviceName: service.name,
+                  type: "knowledge"
                 };
 
                 card.addEventListener('click', () => {
