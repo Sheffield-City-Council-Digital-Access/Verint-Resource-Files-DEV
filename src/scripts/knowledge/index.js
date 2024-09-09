@@ -536,21 +536,21 @@ function handleOnReadyKnowledge() {
     const optionsContainer = document.querySelector('.options');
 
     function createAtoZFilter() {
-      // Loop through letters A-Z to create buttons
       for (let i = 65; i <= 90; i++) {
         const letter = String.fromCharCode(i);
         const button = document.createElement('button');
         button.textContent = letter;
         button.disabled = true;
 
-        // Enable the button if service or its subjects start with the letter
-        services.forEach(service => {
-          if (service.name.toUpperCase().startsWith(letter) || service.subjects.some(subject => subject.name.toUpperCase().startsWith(letter))) {
-            button.disabled = false;
-          }
-        });
+        // Check if services is an array before processing
+        if (Array.isArray(services)) {
+          services.forEach(service => {
+            if (service.name.toUpperCase().startsWith(letter) || service.subjects.some(subject => subject.name.toUpperCase().startsWith(letter))) {
+              button.disabled = false;
+            }
+          });
+        }
 
-        // Filter options and highlight active filter on click
         button.addEventListener('click', () => {
           filterOptionsByLetter(letter);
           highlightActiveFilter(button, '.a-z-filter button');
@@ -559,15 +559,13 @@ function handleOnReadyKnowledge() {
         aToZFilter.appendChild(button);
       }
 
-      // Create the "Show All" button
       const showAllButton = document.createElement('button');
       const span = document.createElement('span');
-      span.textContent = '↺'; // Rotating text
+      span.textContent = '↺';
       showAllButton.appendChild(span);
 
-      // Reset filters when the "Show All" button is clicked
       showAllButton.addEventListener('click', () => {
-        createOptions(services);
+        createOptions();
         clearActiveFilters();
       });
 
@@ -575,132 +573,76 @@ function handleOnReadyKnowledge() {
     }
 
     function createCategories() {
-      const categories = new Set(); // Use Set to avoid duplicates
+      const categories = new Set();
 
-      // Loop through services and their subjects
-      services.forEach(service => {
-        service.subjects.forEach(subject => {
-          if (subject.meta && subject.meta.type) {
-            categories.add(subject.meta.type); // Add the type to the Set
-          }
+      if (Array.isArray(services)) {
+        services.forEach(service => {
+          service.subjects.forEach(subject => {
+            if (subject.meta && subject.meta.type) {
+              categories.add(subject.meta.type);
+            }
+          });
         });
-      });
+      }
 
-      // Create the list of categories (types)
       categories.forEach(category => {
         const li = document.createElement('li');
         li.textContent = category;
 
-        // Add click event listener for filtering by category (type)
         li.addEventListener('click', () => {
-          filterByCategory(category); // Filter when category is clicked
+          filterByCategory(category);
           highlightActiveFilter(li, '.categories li');
         });
 
-        categoriesList.appendChild(li); // Append category item to the list
+        categoriesList.appendChild(li);
       });
     }
 
-    function createOptions(services) {
+    function createOptions() {
       const resultsContainer = document.querySelector('.options');
       resultsContainer.innerHTML = '';
 
-      services.forEach(service => {
-        service.subjects.forEach(subject => {
-          if (subject.content) {
-            const card = document.createElement('div');
-            card.classList.add('search-card');
-            card.setAttribute('tabindex', '0');
-
-            const title = document.createElement('h3');
-            title.textContent = subject.name;
-
-            const description = document.createElement('div');
-            description.innerHTML = subject.description;
-
-            card.appendChild(title);
-            card.appendChild(description);
-
-            resultsContainer.appendChild(card);
-
-            // Convert ContentH to a plain object and add click event
-            const plainSubject = {
-              id: subject.id,
-              name: subject.name,
-              description: subject.description,
-              content: subject.content,
-              process: subject.process,
-              transfer: subject.transfer,
-              finish: subject.finish,
-              meta: subject.meta,
-              lastModified: subject.lastModified,
-              serviceName: service.name
-            };
-
-            card.addEventListener('click', () => {
-              handleCardClick(plainSubject);
-            });
-
-            card.addEventListener('keydown', (event) => {
-              if (event.key === 'Enter') {
-                event.preventDefault();
-                handleCardClick(plainSubject);
-              }
-            });
-
-            card.addEventListener('focus', () => {
-              card.classList.add('focus');
-            });
-
-            card.addEventListener('blur', () => {
-              card.classList.remove('focus');
-            });
-          }
-
-          if (subject.topics) {
-            subject.topics.forEach(topic => {
-              if (topic.content) {
+      if (Array.isArray(services)) {
+        services.forEach(service => {
+          if (Array.isArray(service.subjects)) {
+            service.subjects.forEach(subject => {
+              if (subject.content) {
                 const card = document.createElement('div');
                 card.classList.add('search-card');
                 card.setAttribute('tabindex', '0');
 
                 const title = document.createElement('h3');
-                title.textContent = topic.name;
+                title.textContent = subject.name;
 
                 const description = document.createElement('div');
-                description.innerHTML = topic.description;
-
-                const content = document.createElement('div');
-                content.innerHTML = topic.content;
+                description.innerHTML = subject.description;
 
                 card.appendChild(title);
                 card.appendChild(description);
-                card.appendChild(content);
 
                 resultsContainer.appendChild(card);
 
-                // Convert ContentH to a plain object and add click event
-                const plainTopic = {
-                  id: topic.id,
-                  name: topic.name,
-                  description: topic.description,
-                  content: topic.content,
-                  process: topic.process,
-                  transfer: topic.transfer,
-                  finish: topic.finish,
-                  meta: topic.meta,
-                  lastModified: topic.lastModified,
+                const plainSubject = {
+                  id: subject.id,
+                  name: subject.name,
+                  description: subject.description,
+                  content: subject.content,
+                  process: subject.process,
+                  transfer: subject.transfer,
+                  finish: subject.finish,
+                  meta: subject.meta,
+                  lastModified: subject.lastModified,
                   serviceName: service.name
                 };
 
                 card.addEventListener('click', () => {
-                  handleCardClick(plainTopic);
+                  handleCardClick(plainSubject);
                 });
 
                 card.addEventListener('keydown', (event) => {
                   if (event.key === 'Enter') {
                     event.preventDefault();
-                    handleCardClick(plainTopic);
+                    handleCardClick(plainSubject);
                   }
                 });
 
@@ -712,10 +654,67 @@ function handleOnReadyKnowledge() {
                   card.classList.remove('focus');
                 });
               }
+
+              if (Array.isArray(subject.topics)) {
+                subject.topics.forEach(topic => {
+                  if (topic.content) {
+                    const card = document.createElement('div');
+                    card.classList.add('search-card');
+                    card.setAttribute('tabindex', '0');
+
+                    const title = document.createElement('h3');
+                    title.textContent = topic.name;
+
+                    const description = document.createElement('div');
+                    description.innerHTML = topic.description;
+
+                    const content = document.createElement('div');
+                    content.innerHTML = topic.content;
+
+                    card.appendChild(title);
+                    card.appendChild(description);
+                    card.appendChild(content);
+
+                    resultsContainer.appendChild(card);
+
+                    const plainTopic = {
+                      id: topic.id,
+                      name: topic.name,
+                      description: topic.description,
+                      content: topic.content,
+                      process: topic.process,
+                      transfer: topic.transfer,
+                      finish: topic.finish,
+                      meta: topic.meta,
+                      lastModified: topic.lastModified,
+                      serviceName: service.name
+                    };
+
+                    card.addEventListener('click', () => {
+                      handleCardClick(plainTopic);
+                    });
+
+                    card.addEventListener('keydown', (event) => {
+                      if (event.key === 'Enter') {
+                        event.preventDefault();
+                        handleCardClick(plainTopic);
+                      }
+                    });
+
+                    card.addEventListener('focus', () => {
+                      card.classList.add('focus');
+                    });
+
+                    card.addEventListener('blur', () => {
+                      card.classList.remove('focus');
+                    });
+                  }
+                });
+              }
             });
           }
         });
-      });
+      }
     }
 
     function filterOptionsByLetter(letter) {
@@ -742,10 +741,16 @@ function handleOnReadyKnowledge() {
       activeElements.forEach(el => el.classList.remove('active'));
     }
 
-    createAtoZFilter();
-    createCategories();
-    createOptions();
+    // Ensure services is an array before creating filters and options
+    if (Array.isArray(services)) {
+      createAtoZFilter();
+      createCategories();
+      createOptions();
+    } else {
+      console.error('services is not defined or not an array');
+    }
   }
+
 
   handleServicesAtoZ(knowledge);
 }
