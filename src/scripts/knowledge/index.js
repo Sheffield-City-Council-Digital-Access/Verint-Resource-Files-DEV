@@ -536,28 +536,26 @@ function handleOnReadyKnowledge() {
     const optionsContainer = document.querySelector('.options');
 
     function createAtoZFilter() {
-      const activeLetters = new Set();
+      const letters = new Set();
 
-      // Determine which letters should be active based on services and subjects
+      // Collect all starting letters from service and subject names
       services.forEach(service => {
         if (service.name) {
-          activeLetters.add(service.name[0].toUpperCase());
+          letters.add(service.name[0].toUpperCase());
         }
         service.subjects.forEach(subject => {
           if (subject.name) {
-            activeLetters.add(subject.name[0].toUpperCase());
+            letters.add(subject.name[0].toUpperCase());
           }
         });
       });
 
-      // Clear existing buttons and create new ones
-      aToZFilter.innerHTML = '';
-
+      // Create buttons for each letter that exists
       for (let i = 65; i <= 90; i++) {
         const letter = String.fromCharCode(i);
         const button = document.createElement('button');
         button.textContent = letter;
-        button.disabled = !activeLetters.has(letter);
+        button.disabled = !letters.has(letter); // Enable only if letter is in the set
 
         // Filter options and highlight active filter on click
         button.addEventListener('click', () => {
@@ -571,11 +569,12 @@ function handleOnReadyKnowledge() {
       // Create the "Show All" button
       const showAllButton = document.createElement('button');
       const span = document.createElement('span');
-      span.textContent = '↺'; // Rotating text
+      span.textContent = '↺';
       showAllButton.appendChild(span);
 
+      // Reset filters when the "Show All" button is clicked
       showAllButton.addEventListener('click', () => {
-        createOptions(services);
+        createOptions();
         clearActiveFilters();
       });
 
