@@ -550,7 +550,9 @@ function handleOnReadyKnowledge() {
         });
       });
 
-      // Loop through letters A-Z to create buttons
+      // Clear existing buttons and create new ones
+      aToZFilter.innerHTML = '';
+
       for (let i = 65; i <= 90; i++) {
         const letter = String.fromCharCode(i);
         const button = document.createElement('button');
@@ -572,7 +574,6 @@ function handleOnReadyKnowledge() {
       span.textContent = '↺'; // Rotating text
       showAllButton.appendChild(span);
 
-      // Reset filters when the "Show All" button is clicked
       showAllButton.addEventListener('click', () => {
         createOptions(services);
         clearActiveFilters();
@@ -580,7 +581,6 @@ function handleOnReadyKnowledge() {
 
       resetFilter.appendChild(showAllButton);
     }
-
 
     function createCategories() {
       const categories = new Set();
@@ -608,82 +608,125 @@ function handleOnReadyKnowledge() {
       });
     }
 
-    function createOptions(filteredServices) {
+    function createOptions() {
       const resultsContainer = document.querySelector('.options');
       resultsContainer.innerHTML = '';
 
-      // Flatten the subjects and topics into an array
-      const allOptions = filteredServices.flatMap(service =>
-        service.subjects.flatMap(subject => {
-          const subjectCards = [];
+      if (Array.isArray(services)) {
+        services.forEach(service => {
+          if (Array.isArray(service.subjects)) {
+            service.subjects.forEach(subject => {
+              if (subject.content) {
+                const card = document.createElement('div');
+                card.classList.add('search-card');
+                card.setAttribute('tabindex', '0');
 
-          if (subject.content) {
-            subjectCards.push({
-              id: subject.id,
-              name: subject.name,
-              description: subject.description,
-              content: subject.content,
-              type: 'subject',
-              serviceName: service.name
+                const title = document.createElement('h3');
+                title.textContent = subject.name;
+
+                const description = document.createElement('div');
+                description.innerHTML = subject.description;
+
+                card.appendChild(title);
+                card.appendChild(description);
+
+                resultsContainer.appendChild(card);
+
+                const plainSubject = {
+                  id: subject.id,
+                  name: subject.name,
+                  description: subject.description,
+                  content: subject.content,
+                  process: subject.process,
+                  transfer: subject.transfer,
+                  finish: subject.finish,
+                  meta: subject.meta,
+                  lastModified: subject.lastModified,
+                  serviceName: service.name,
+                  type: "knowledge"
+                };
+
+                card.addEventListener('click', () => {
+                  handleCardClick(plainSubject);
+                });
+
+                card.addEventListener('keydown', (event) => {
+                  if (event.key === 'Enter') {
+                    event.preventDefault();
+                    handleCardClick(plainSubject);
+                  }
+                });
+
+                card.addEventListener('focus', () => {
+                  card.classList.add('focus');
+                });
+
+                card.addEventListener('blur', () => {
+                  card.classList.remove('focus');
+                });
+              }
+
+              if (Array.isArray(subject.topics)) {
+                subject.topics.forEach(topic => {
+                  if (topic.content) {
+                    const card = document.createElement('div');
+                    card.classList.add('search-card');
+                    card.setAttribute('tabindex', '0');
+
+                    const title = document.createElement('h3');
+                    title.textContent = topic.name;
+
+                    const description = document.createElement('div');
+                    description.innerHTML = topic.description;
+
+                    const content = document.createElement('div');
+                    content.innerHTML = topic.content;
+
+                    card.appendChild(title);
+                    card.appendChild(description);
+                    card.appendChild(content);
+
+                    resultsContainer.appendChild(card);
+
+                    const plainTopic = {
+                      id: topic.id,
+                      name: topic.name,
+                      description: topic.description,
+                      content: topic.content,
+                      process: topic.process,
+                      transfer: topic.transfer,
+                      finish: topic.finish,
+                      meta: topic.meta,
+                      lastModified: topic.lastModified,
+                      serviceName: service.name,
+                      type: 'topic'
+                    };
+
+                    card.addEventListener('click', () => {
+                      handleCardClick(plainTopic);
+                    });
+
+                    card.addEventListener('keydown', (event) => {
+                      if (event.key === 'Enter') {
+                        event.preventDefault();
+                        handleCardClick(plainTopic);
+                      }
+                    });
+
+                    card.addEventListener('focus', () => {
+                      card.classList.add('focus');
+                    });
+
+                    card.addEventListener('blur', () => {
+                      card.classList.remove('focus');
+                    });
+                  }
+                });
+              }
             });
           }
-
-          if (subject.topics) {
-            subjectCards.push(...subject.topics.filter(topic => topic.content).map(topic => ({
-              id: topic.id,
-              name: topic.name,
-              description: topic.description,
-              content: topic.content,
-              type: 'topic',
-              serviceName: service.name
-            })));
-          }
-
-          return subjectCards;
-        })
-      );
-
-      // Sort the options alphabetically by name
-      allOptions.sort((a, b) => a.name.localeCompare(b.name));
-
-      // Create and append the cards
-      allOptions.forEach(option => {
-        const card = document.createElement('div');
-        card.classList.add('search-card');
-        card.setAttribute('tabindex', '0');
-
-        const title = document.createElement('h3');
-        title.textContent = option.name;
-        const description = document.createElement('div');
-        description.innerHTML = option.description;
-        const content = option.type === 'topic' ? document.createElement('div') : null;
-        if (content) content.innerHTML = option.content;
-
-        card.appendChild(title);
-        card.appendChild(description);
-        if (content) card.appendChild(content);
-
-        resultsContainer.appendChild(card);
-
-        card.addEventListener('click', () => {
-          handleCardClick(option);
         });
-
-        card.addEventListener('keydown', (event) => {
-          if (event.key === 'Enter') {
-            event.preventDefault();
-            handleCardClick(option);
-          }
-        });
-
-        card.addEventListener('focus', () => {
-          card.classList.add('focus');
-        });
-
-        card.addEventListener('blur', () => {
-          card.classList.remove('focus');
-        });
-      });
+      }
     }
 
     function filterOptionsByLetter(letter) {
