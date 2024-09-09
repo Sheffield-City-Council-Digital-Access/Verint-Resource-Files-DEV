@@ -50,6 +50,8 @@ function handleInitialisingKnowledge() {
       button.classList.add('link-button');
 
       button.addEventListener('click', () => {
+        logUserJourney('Navigate', `Navigated to ${item.label}`);
+
         if (item.label === 'Home') {
           hideShowMultipleElements([
             { name: 'page_subject_menu', display: 'hide' },
@@ -204,6 +206,8 @@ function handleOnReadyKnowledge() {
   }
 
   function redirectToContentPage(item) {
+    logUserJourney('View Content', `Viewed content: ${item.name}`);
+
     redirectToForm = item.process.formName ? item.process.formName : '';
 
     const titleElement = document.getElementById('dform_widget_header_hrd_page_title_content');
@@ -507,6 +511,8 @@ function handleOnReadyKnowledge() {
 
   $('#search-button').on('click', () => {
     const results = searchKnowledge(knowledge, latestNews, searchInput.value.toLowerCase());
+    logUserJourney('Search', `Search performed for query: ${searchQuery}`);
+
     renderSearchResults(results);
     hideShowElement('page_search_results', 'show');
     KDF.gotoPage('page_search_results', true, true, true);
@@ -644,4 +650,19 @@ function handleServicesAtoZ(forms) {
   createAtoZFilter();
   createCategories();
   createOptions();
+}
+
+function logUserJourney(action, details) {
+  const journeyField = document.getElementById('dform_widget_txt_knowledge_path');
+  const journey = journeyField.value ? JSON.parse(journeyField.value) : [];
+  const timestamp = new Date().toISOString();
+
+  journey.push({
+    action,
+    details,
+    timestamp
+  });
+
+  // Update the field value
+  journeyField.value = JSON.stringify(journey);
 }
