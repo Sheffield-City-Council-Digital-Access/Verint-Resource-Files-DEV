@@ -751,8 +751,8 @@ function handleOnReadyKnowledge() {
     function filterByCategory(category) {
       const filteredServices = services.filter(service =>
         service.subjects.some(subject =>
-          subject.meta && subject.meta.type === category ||
-          subject.topics && subject.topics.some(topic => topic.meta && topic.meta.type === category)
+          (subject.meta && subject.meta.type === category) ||
+          (subject.topics && subject.topics.some(topic => topic.meta && topic.meta.type === category))
         )
       );
       createOptions(filteredServices, false);
