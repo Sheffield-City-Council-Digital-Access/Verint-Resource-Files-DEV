@@ -484,7 +484,7 @@ function handleOnReadyKnowledge() {
   }
 
   function handleCardClick(result) {
-    console.log('handleCardClick')
+    console.log('handleCardClick', result)
     if (result.type === 'knowledge') {
       const titleElement = document.getElementById('dform_widget_header_hrd_page_title_content');
       titleElement.textContent = result.title;
