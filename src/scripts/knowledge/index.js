@@ -566,7 +566,7 @@ function handleOnReadyKnowledge() {
 
       // Reset filters when the "Show All" button is clicked
       showAllButton.addEventListener('click', () => {
-        createOptions();
+        createOptions(services);
         clearActiveFilters();
       });
 
@@ -600,11 +600,11 @@ function handleOnReadyKnowledge() {
       });
     }
 
-    function createOptions() {
-      const resultsContainer = document.querySelector('.options');
+    function createOptions(filteredServices = services) {
+      const resultsContainer = optionsContainer;
       resultsContainer.innerHTML = '';
 
-      services.forEach(service => {
+      filteredServices.forEach(service => {
         // Loop through the subjects of each service
         service.subjects.forEach(subject => {
           // Render if subject contains content
@@ -622,13 +622,8 @@ function handleOnReadyKnowledge() {
             const description = document.createElement('div');
             description.innerHTML = subject.description;
 
-            // Add the content snippet
-            const content = document.createElement('div');
-            content.innerHTML = subject.content;
-
             card.appendChild(title);
             card.appendChild(description);
-            card.appendChild(content);
 
             resultsContainer.appendChild(card);
 
@@ -718,7 +713,7 @@ function handleOnReadyKnowledge() {
     }
 
     function filterByCategory(category) {
-      const filteredForms = knowledge.filter(service =>
+      const filteredForms = services.filter(service =>
         service.subjects.some(subject => subject.meta && subject.meta.type === category)
       );
       createOptions(filteredForms);
