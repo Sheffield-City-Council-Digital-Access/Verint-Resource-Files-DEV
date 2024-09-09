@@ -535,6 +535,24 @@ function handleOnReadyKnowledge() {
     const categoriesList = document.querySelector('.categories ul');
     const optionsContainer = document.querySelector('.options');
 
+    // Remove any existing reset button
+    function createResetButton() {
+      resetFilter.innerHTML = ''; // Clear existing reset buttons
+      const showAllButton = document.createElement('button');
+      const span = document.createElement('span');
+      span.textContent = '↺'; // Rotating text
+      showAllButton.appendChild(span);
+
+      // Reset filters when the "Show All" button is clicked
+      showAllButton.addEventListener('click', () => {
+        createOptions(services); // Show all options
+        clearActiveFilters();
+        createAtoZFilter(new Set()); // Rebuild A-Z filter without active letters
+      });
+
+      resetFilter.appendChild(showAllButton);
+    }
+
     function createAtoZFilter(visibleLetters) {
       // Remove existing filter buttons
       aToZFilter.innerHTML = '';
@@ -555,20 +573,7 @@ function handleOnReadyKnowledge() {
         aToZFilter.appendChild(button);
       }
 
-      // Create the "Show All" button
-      const showAllButton = document.createElement('button');
-      const span = document.createElement('span');
-      span.textContent = '↺'; // Rotating text
-      showAllButton.appendChild(span);
-
-      // Reset filters when the "Show All" button is clicked
-      showAllButton.addEventListener('click', () => {
-        createOptions(services); // Show all options
-        clearActiveFilters();
-        createAtoZFilter(new Set()); // Rebuild A-Z filter without active letters
-      });
-
-      resetFilter.appendChild(showAllButton);
+      createResetButton(); // Create the reset button
     }
 
     function createCategories() {
@@ -761,6 +766,7 @@ function handleOnReadyKnowledge() {
       console.error('services is not defined or not an array');
     }
   }
+
 
   handleServicesAtoZ(knowledge);
 }
