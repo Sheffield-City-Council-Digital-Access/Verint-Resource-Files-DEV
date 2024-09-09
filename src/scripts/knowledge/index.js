@@ -678,12 +678,8 @@ function handleOnReadyKnowledge() {
                   const description = document.createElement('div');
                   description.innerHTML = topic.description;
 
-                  const content = document.createElement('div');
-                  content.innerHTML = topic.content;
-
                   card.appendChild(title);
                   card.appendChild(description);
-                  card.appendChild(content);
 
                   resultsContainer.appendChild(card);
 
@@ -738,7 +734,6 @@ function handleOnReadyKnowledge() {
     }
 
     function filterOptionsByLetter(letter) {
-      clearActiveFilters(selector);
       const filteredServices = services.filter(service =>
         service.name.toUpperCase().startsWith(letter) || service.subjects.some(subject => subject.name.toUpperCase().startsWith(letter))
       );
@@ -746,7 +741,6 @@ function handleOnReadyKnowledge() {
     }
 
     function filterByCategory(category) {
-      clearActiveFilters(selector);
       const filteredForms = services.filter(service =>
         service.subjects.some(subject => subject.meta && subject.meta.type === category)
       );
