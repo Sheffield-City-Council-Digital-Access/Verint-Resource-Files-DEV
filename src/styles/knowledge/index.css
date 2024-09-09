@@ -47,7 +47,7 @@ form.dform {
   margin-top: 4rem !important;
 }
 
-small.last-modified-info {
+small {
   display: block;
   margin-top: 4rem;
   padding: .6rem;
@@ -358,26 +358,8 @@ small.last-modified-info {
   border-top-left-radius: 1rem;
 }
 
-#dform_container .option {
-  border: .1rem solid #cccccc;
-  border-radius: .5rem;
-  box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.2);
-  padding: 2rem;
-  flex-grow: 1;
-  background: var(--color-white);
-  transition: box-shadow 0.3s, border-color 0.3s;
-  max-height: 11.5rem;
-  cursor: pointer;
-}
-
-#dform_container .option h4 {
-  margin: 0 0 1rem;
-}
-
-#dform_container .option:hover {
-  border-left: .4rem solid var(--color-information);
-  box-shadow: 0 0 .8rem rgba(0, 123, 255, 0.5);
-  cursor: pointer;
+#dform_container .options .search-card {
+  background: var(--color-grey-2);
 }
 
 @keyframes spinOnce {
