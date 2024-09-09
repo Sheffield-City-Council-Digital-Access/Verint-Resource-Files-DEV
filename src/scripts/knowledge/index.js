@@ -652,14 +652,30 @@ function handleOnReadyKnowledge() {
 //   createOptions();
 // }
 
-function handleServicesAtoZ(forms) {
+function handleServicesAtoZ(services) {
   const resetFilter = document.querySelector('.reset-filter');
   const aToZFilter = document.querySelector('.a-z-filter');
   const categoriesList = document.querySelector('.categories ul');
   const optionsContainer = document.querySelector('.options');
 
-  // Filter forms to only include those with content (i.e., formName exists)
-  const formsWithContent = forms.filter(form => form.name && form.name.trim() !== '');
+  // Helper function to extract all topics from subjects
+  function extractForms(service) {
+    let forms = [];
+    service.subjects.forEach(subject => {
+      if (subject.meta && subject.meta.type === 'Subject') {
+        forms.push(subject); // Add the subject
+        if (subject.topics && subject.topics.length > 0) {
+          forms = forms.concat(subject.topics.filter(topic => topic.meta && topic.meta.type === 'Topic')); // Add topics
+        }
+      }
+    });
+    return forms;
+  }
+
+  // Flatten all the forms with valid meta.type from all services
+  const formsWithContent = services.reduce((acc, service) => {
+    return acc.concat(extractForms(service));
+  }, []);
 
   function createAtoZFilter() {
     // Loop through letters A-Z to create buttons
@@ -671,7 +687,7 @@ function handleServicesAtoZ(forms) {
 
       // Enable the button if form label starts with the letter and has content
       formsWithContent.forEach(form => {
-        if (form.label.toUpperCase().startsWith(letter)) {
+        if (form.name.toUpperCase().startsWith(letter)) {
           button.disabled = false;
         }
       });
@@ -717,7 +733,7 @@ function handleServicesAtoZ(forms) {
 
   function createCategories() {
     // Only create categories for forms with content
-    const categories = new Set(formsWithContent.map(form => form.category));
+    const categories = new Set(formsWithContent.map(form => form.meta.categories).flat());
     categories.forEach(category => {
       const li = document.createElement('li');
       li.textContent = category;
@@ -731,29 +747,29 @@ function handleServicesAtoZ(forms) {
 
   function createOptions(formsToDisplay = formsWithContent) {
     optionsContainer.innerHTML = '';
-    formsToDisplay.sort((a, b) => a.label.localeCompare(b.label))
+    formsToDisplay.sort((a, b) => a.name.localeCompare(b.name))
       .forEach(form => {
         const optionDiv = document.createElement('div');
         optionDiv.classList.add('option');
-        optionDiv.innerHTML = `<h4>${form.label}</h4><p>${form.description}</p>`;
+        optionDiv.innerHTML = `<h4>${form.name}</h4><p>${form.description}</p>`;
         optionDiv.addEventListener('click', () => {
           const { protocol, hostname } = window.location;
           const url = `${protocol}//${hostname}/form/launch/`;
           const customerid = KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : '';
           const interactionid = `interactionid=${KDF.getParams().interactionid}`;
-          window.location.href = `${url}${form.name}?${customerid}${interactionid}`;
+          window.location.href = `${url}${form.process.formName}?${customerid}${interactionid}`;
         });
         optionsContainer.appendChild(optionDiv);
       });
   }
 
   function filterOptions(letter) {
-    const filteredForms = formsWithContent.filter(form => form.label.toUpperCase().startsWith(letter));
+    const filteredForms = formsWithContent.filter(form => form.name.toUpperCase().startsWith(letter));
     createOptions(filteredForms);
   }
 
   function filterByCategory(category) {
-    const filteredForms = formsWithContent.filter(form => form.category === category);
+    const filteredForms = formsWithContent.filter(form => form.meta.categories.includes(category));
     createOptions(filteredForms);
   }
 
@@ -771,6 +787,7 @@ function handleServicesAtoZ(forms) {
   createCategories();
   createOptions();
 }
+
 
 function logUserJourney(action, details) {
   const journeyField = document.getElementById('dform_widget_txt_knowledge_path');
