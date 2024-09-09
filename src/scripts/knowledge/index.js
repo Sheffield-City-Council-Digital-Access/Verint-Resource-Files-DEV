@@ -535,27 +535,16 @@ function handleOnReadyKnowledge() {
     const categoriesList = document.querySelector('.categories ul');
     const optionsContainer = document.querySelector('.options');
 
-    function createAtoZFilter() {
-      const letters = new Set();
-
-      // Collect all starting letters from service and subject names
-      services.forEach(service => {
-        if (service.name) {
-          letters.add(service.name[0].toUpperCase());
-        }
-        service.subjects.forEach(subject => {
-          if (subject.name) {
-            letters.add(subject.name[0].toUpperCase());
-          }
-        });
-      });
+    function createAtoZFilter(visibleLetters) {
+      // Remove existing filter buttons
+      aToZFilter.innerHTML = '';
 
       // Create buttons for each letter that exists
       for (let i = 65; i <= 90; i++) {
         const letter = String.fromCharCode(i);
         const button = document.createElement('button');
         button.textContent = letter;
-        button.disabled = !letters.has(letter); // Enable only if letter is in the set
+        button.disabled = !visibleLetters.has(letter); // Enable only if letter is in the set
 
         // Filter options and highlight active filter on click
         button.addEventListener('click', () => {
@@ -569,13 +558,14 @@ function handleOnReadyKnowledge() {
       // Create the "Show All" button
       const showAllButton = document.createElement('button');
       const span = document.createElement('span');
-      span.textContent = '↺';
+      span.textContent = '↺'; // Rotating text
       showAllButton.appendChild(span);
 
       // Reset filters when the "Show All" button is clicked
       showAllButton.addEventListener('click', () => {
-        createOptions();
+        createOptions(services); // Show all options
         clearActiveFilters();
+        createAtoZFilter(new Set()); // Rebuild A-Z filter without active letters
       });
 
       resetFilter.appendChild(showAllButton);
@@ -584,15 +574,13 @@ function handleOnReadyKnowledge() {
     function createCategories() {
       const categories = new Set();
 
-      if (Array.isArray(services)) {
-        services.forEach(service => {
-          service.subjects.forEach(subject => {
-            if (subject.meta && subject.meta.type) {
-              categories.add(subject.meta.type);
-            }
-          });
+      services.forEach(service => {
+        service.subjects.forEach(subject => {
+          if (subject.meta && subject.meta.type) {
+            categories.add(subject.meta.type);
+          }
         });
-      }
+      });
 
       categories.forEach(category => {
         const li = document.createElement('li');
@@ -611,78 +599,134 @@ function handleOnReadyKnowledge() {
       const resultsContainer = document.querySelector('.options');
       resultsContainer.innerHTML = '';
 
-      // Flatten and sort the subjects and topics
-      const allOptions = filteredServices.flatMap(service =>
-        service.subjects.flatMap(subject => {
-          const subjectCards = [];
+      const visibleLetters = new Set(); // Set to keep track of visible letters
 
-          if (subject.content) {
-            subjectCards.push({
-              id: subject.id,
-              name: subject.name,
-              description: subject.description,
-              content: subject.content,
-              type: 'subject',
-              serviceName: service.name
-            });
-          }
+      filteredServices.forEach(service => {
+        if (Array.isArray(service.subjects)) {
+          service.subjects.forEach(subject => {
+            if (subject.content) {
+              const card = document.createElement('div');
+              card.classList.add('search-card');
+              card.setAttribute('tabindex', '0');
 
-          if (subject.topics) {
-            subjectCards.push(...subject.topics.filter(topic => topic.content).map(topic => ({
-              id: topic.id,
-              name: topic.name,
-              description: topic.description,
-              content: topic.content,
-              type: 'topic',
-              serviceName: service.name
-            })));
-          }
+              const title = document.createElement('h3');
+              title.textContent = subject.name;
 
-          return subjectCards;
-        })
-      );
+              const description = document.createElement('div');
+              description.innerHTML = subject.description;
 
-      // Sort the options alphabetically by name
-      allOptions.sort((a, b) => a.name.localeCompare(b.name));
+              card.appendChild(title);
+              card.appendChild(description);
 
-      // Create and append the cards
-      allOptions.forEach(option => {
-        const card = document.createElement('div');
-        card.classList.add('search-card');
-        card.setAttribute('tabindex', '0');
+              resultsContainer.appendChild(card);
 
-        const title = document.createElement('h3');
-        title.textContent = option.name;
-        const description = document.createElement('div');
-        description.innerHTML = option.description;
-        const content = document.createElement('div');
-        content.innerHTML = option.content;
+              const plainSubject = {
+                id: subject.id,
+                name: subject.name,
+                description: subject.description,
+                content: subject.content,
+                process: subject.process,
+                transfer: subject.transfer,
+                finish: subject.finish,
+                meta: subject.meta,
+                lastModified: subject.lastModified,
+                serviceName: service.name,
+                type: "knowledge"
+              };
 
-        card.appendChild(title);
-        card.appendChild(description);
-        card.appendChild(content);
+              card.addEventListener('click', () => {
+                handleCardClick(plainSubject);
+              });
 
-        resultsContainer.appendChild(card);
+              card.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {
+                  event.preventDefault();
+                  handleCardClick(plainSubject);
+                }
+              });
 
-        card.addEventListener('click', () => {
-          handleCardClick(option);
-        });
+              card.addEventListener('focus', () => {
+                card.classList.add('focus');
+              });
 
-        card.addEventListener('keydown', (event) => {
-          if (event.key === 'Enter') {
-            event.preventDefault();
-            handleCardClick(option);
-          }
-        });
+              card.addEventListener('blur', () => {
+                card.classList.remove('focus');
+              });
 
-        card.addEventListener('focus', () => {
-          card.classList.add('focus');
-        });
+              // Track visible letter for A-Z filter
+              if (subject.name) {
+                visibleLetters.add(subject.name[0].toUpperCase());
+              }
+            }
 
-        card.addEventListener('blur', () => {
-          card.classList.remove('focus');
-        });
+            if (Array.isArray(subject.topics)) {
+              subject.topics.forEach(topic => {
+                if (topic.content) {
+                  const card = document.createElement('div');
+                  card.classList.add('search-card');
+                  card.setAttribute('tabindex', '0');
+
+                  const title = document.createElement('h3');
+                  title.textContent = topic.name;
+
+                  const description = document.createElement('div');
+                  description.innerHTML = topic.description;
+
+                  const content = document.createElement('div');
+                  content.innerHTML = topic.content;
+
+                  card.appendChild(title);
+                  card.appendChild(description);
+                  card.appendChild(content);
+
+                  resultsContainer.appendChild(card);
+
+                  const plainTopic = {
+                    id: topic.id,
+                    name: topic.name,
+                    description: topic.description,
+                    content: topic.content,
+                    process: topic.process,
+                    transfer: topic.transfer,
+                    finish: topic.finish,
+                    meta: topic.meta,
+                    lastModified: topic.lastModified,
+                    serviceName: service.name,
+                    type: 'topic'
+                  };
+
+                  card.addEventListener('click', () => {
+                    handleCardClick(plainTopic);
+                  });
+
+                  card.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter') {
+                      event.preventDefault();
+                      handleCardClick(plainTopic);
+                    }
+                  });
+
+                  card.addEventListener('focus', () => {
+                    card.classList.add('focus');
+                  });
+
+                  card.addEventListener('blur', () => {
+                    card.classList.remove('focus');
+                  });
+
+                  // Track visible letter for A-Z filter
+                  if (topic.name) {
+                    visibleLetters.add(topic.name[0].toUpperCase());
+                  }
+                }
+              });
+            }
+          });
+        }
       });
+
+      // Update A-Z filter with the visible letters
+      createAtoZFilter(visibleLetters);
     }
 
     function filterOptionsByLetter(letter) {
@@ -711,14 +755,12 @@ function handleOnReadyKnowledge() {
 
     // Ensure services is an array before creating filters and options
     if (Array.isArray(services)) {
-      createAtoZFilter();
       createCategories();
-      createOptions();
+      createOptions(services); // Initialize with all services
     } else {
       console.error('services is not defined or not an array');
     }
   }
-
 
   handleServicesAtoZ(knowledge);
 }
