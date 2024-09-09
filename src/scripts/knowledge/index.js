@@ -745,10 +745,27 @@ function handleOnReadyKnowledge() {
       const filteredServices = services.filter(service =>
         service.subjects.some(subject =>
           subject.name.toUpperCase().startsWith(letter) ||
-          (subject.topics && subject.topics.some(topic => topic.name.toUpperCase().startsWith(letter)))
+          (Array.isArray(subject.topics) && subject.topics.some(topic => topic.name.toUpperCase().startsWith(letter)))
         )
       );
-      createOptions(filteredServices, false);
+
+      // Ensure the filtering distinguishes between subjects and topics
+      const refinedFilteredServices = filteredServices.map(service => {
+        return {
+          ...service,
+          subjects: service.subjects.map(subject => ({
+            ...subject,
+            topics: Array.isArray(subject.topics)
+              ? subject.topics.filter(topic => topic.name.toUpperCase().startsWith(letter))
+              : [] // Ensure topics is an array before filtering
+          })).filter(subject =>
+            subject.name.toUpperCase().startsWith(letter) ||
+            subject.topics.length > 0 // Only keep subjects that match the letter or have matching topics
+          )
+        };
+      });
+
+      createOptions(refinedFilteredServices, false);
     }
 
     function filterByCategory(category) {
