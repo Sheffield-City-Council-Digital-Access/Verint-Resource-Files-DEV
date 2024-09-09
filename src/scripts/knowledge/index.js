@@ -744,8 +744,8 @@ function handleOnReadyKnowledge() {
     function filterOptionsByLetter(letter) {
       const filteredServices = services.filter(service =>
         service.subjects.some(subject =>
-          subject.name && subject.name.toUpperCase().startsWith(letter) ||
-          (subject.topics && subject.topics.some(topic => topic.name && topic.name.toUpperCase().startsWith(letter)))
+          subject.name.toUpperCase().startsWith(letter) ||
+          (subject.topics && subject.topics.some(topic => topic.name.toUpperCase().startsWith(letter)))
         )
       );
       createOptions(filteredServices, false);
