@@ -527,6 +527,132 @@ function handleOnReadyKnowledge() {
 
     window.location.href = `${url}${redirectToForm}?${customerid}${interactionid}`;
   });
+
+
+
+
+  function handleServicesAtoZ(services) {
+    const resetFilter = document.querySelector('.reset-filter');
+    const aToZFilter = document.querySelector('.a-z-filter');
+    const categoriesList = document.querySelector('.categories ul');
+    const optionsContainer = document.querySelector('.options');
+
+    function createAtoZFilter() {
+      // Loop through letters A-Z to create buttons
+      for (let i = 65; i <= 90; i++) {
+        const letter = String.fromCharCode(i);
+        const button = document.createElement('button');
+        button.textContent = letter;
+        button.disabled = true;
+
+        // Enable the button if service or its subjects start with the letter
+        services.forEach(service => {
+          if (service.name.toUpperCase().startsWith(letter) || service.subjects.some(subject => subject.name.toUpperCase().startsWith(letter))) {
+            button.disabled = false;
+          }
+        });
+
+        // Filter options and highlight active filter on click
+        button.addEventListener('click', () => {
+          filterOptionsByLetter(letter);
+          highlightActiveFilter(button, '.a-z-filter button');
+        });
+
+        aToZFilter.appendChild(button);
+      }
+
+      // Create the "Show All" button
+      const showAllButton = document.createElement('button');
+      const span = document.createElement('span');
+      span.textContent = '↺'; // Rotating text
+      showAllButton.appendChild(span);
+
+      // Reset filters when the "Show All" button is clicked
+      showAllButton.addEventListener('click', () => {
+        createOptions();
+        clearActiveFilters();
+      });
+
+      resetFilter.appendChild(showAllButton);
+    }
+
+    function createCategories() {
+      const categories = new Set();
+      services.forEach(service => {
+        service.subjects.forEach(subject => {
+          subject.meta.categories.forEach(category => categories.add(category));
+        });
+      });
+
+      categories.forEach(category => {
+        const li = document.createElement('li');
+        li.textContent = category;
+        li.addEventListener('click', () => {
+          filterByCategory(category);
+          highlightActiveFilter(li, '.categories li');
+        });
+        categoriesList.appendChild(li);
+      });
+    }
+
+    function createOptions(servicesToDisplay = services) {
+      optionsContainer.innerHTML = '';
+
+      servicesToDisplay.forEach(service => {
+        // Display service name
+        const serviceDiv = document.createElement('div');
+        serviceDiv.classList.add('option');
+        serviceDiv.innerHTML = `<h4>${service.name}</h4><p>${service.description}</p>`;
+
+        // Display service subjects and topics
+        service.subjects.forEach(subject => {
+          const subjectDiv = document.createElement('div');
+          subjectDiv.innerHTML = `<h5>${subject.name}</h5><p>${subject.description}</p>`;
+          serviceDiv.appendChild(subjectDiv);
+
+          if (subject.topics) {
+            subject.topics.forEach(topic => {
+              const topicDiv = document.createElement('div');
+              topicDiv.innerHTML = `<h6>${topic.name}</h6><p>${topic.description}</p>`;
+              subjectDiv.appendChild(topicDiv);
+            });
+          }
+        });
+
+        optionsContainer.appendChild(serviceDiv);
+      });
+    }
+
+    function filterOptionsByLetter(letter) {
+      const filteredServices = services.filter(service =>
+        service.name.toUpperCase().startsWith(letter) || service.subjects.some(subject => subject.name.toUpperCase().startsWith(letter))
+      );
+      createOptions(filteredServices);
+    }
+
+    function filterByCategory(category) {
+      const filteredServices = services.filter(service =>
+        service.subjects.some(subject => subject.meta.categories.includes(category))
+      );
+      createOptions(filteredServices);
+    }
+
+    function highlightActiveFilter(element, selector) {
+      clearActiveFilters(selector);
+      element.classList.add('active');
+    }
+
+    function clearActiveFilters(selector = '.a-z-filter button, .categories li') {
+      const activeElements = document.querySelectorAll(selector);
+      activeElements.forEach(el => el.classList.remove('active'));
+    }
+
+    createAtoZFilter();
+    createCategories();
+    createOptions();
+  }
+
+  handleServicesAtoZ(knowledge);
 }
 
 // function handleServicesAtoZ(forms) {
@@ -651,148 +777,6 @@ function handleOnReadyKnowledge() {
 //   createCategories();
 //   createOptions();
 // }
-
-function handleServicesAtoZ() {
-  console.log('initial', knowledge);
-  const resetFilter = document.querySelector('.reset-filter');
-  const aToZFilter = document.querySelector('.a-z-filter');
-  const categoriesList = document.querySelector('.categories ul');
-  const optionsContainer = document.querySelector('.options');
-
-  // Helper function to extract all topics from subjects within services
-  function extractForms(service) {
-    let forms = [];
-    service.subjects.forEach(subject => {
-      if (subject.meta && subject.meta.type === 'Subject') {
-        forms.push(subject); // Add the subject
-        if (subject.topics && subject.topics.length > 0) {
-          forms = forms.concat(subject.topics.filter(topic => topic.meta && topic.meta.type === 'Topic')); // Add topics
-        }
-      }
-    });
-    return forms;
-  }
-
-  // Flatten all the forms with valid meta.type from all services in the global knowledge array
-  const formsWithContent = knowledge.reduce((acc, service) => {
-    return acc.concat(extractForms(service));
-  }, []);
-
-  function createAtoZFilter() {
-    // Loop through letters A-Z to create buttons
-    for (let i = 65; i <= 90; i++) {
-      const letter = String.fromCharCode(i);
-      const button = document.createElement('button');
-      button.textContent = letter;
-      button.disabled = true;
-
-      // Enable the button if form name starts with the letter
-      formsWithContent.forEach(form => {
-        if (form.name.toUpperCase().startsWith(letter)) {
-          button.disabled = false;
-        }
-      });
-
-      // Filter options and highlight active filter on click
-      button.addEventListener('click', () => {
-        filterOptions(letter);
-        highlightActiveFilter(button, '.a-z-filter button');
-      });
-
-      aToZFilter.appendChild(button);
-    }
-
-    // Create the "Show All" button with spinning text
-    const showAllButton = document.createElement('button');
-    const span = document.createElement('span');
-    span.textContent = '↺'; // Rotating text
-    showAllButton.appendChild(span);
-
-    // Add hover effect for spinning text
-    const style = document.createElement('style');
-    style.innerHTML = `
-      @keyframes spinOnce {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
-
-      .reset-filter button span:hover {
-        display: inline-block;
-        animation: spinOnce 0.5s ease-in-out 1;
-      }
-    `;
-    document.head.appendChild(style);
-
-    // Reset filters when the "Show All" button is clicked
-    showAllButton.addEventListener('click', () => {
-      createOptions();
-      clearActiveFilters();
-    });
-
-    resetFilter.appendChild(showAllButton);
-  }
-
-  function createCategories() {
-    // Only create categories for forms with content
-    const categories = new Set(formsWithContent.map(form => form.meta.categories).flat());
-    categories.forEach(category => {
-      const li = document.createElement('li');
-      li.textContent = category;
-      li.addEventListener('click', () => {
-        filterByCategory(category);
-        highlightActiveFilter(li, '.categories li');
-      });
-      categoriesList.appendChild(li);
-    });
-  }
-
-  function createOptions(formsToDisplay = formsWithContent) {
-    optionsContainer.innerHTML = '';
-    formsToDisplay.sort((a, b) => a.name.localeCompare(b.name))
-      .forEach(form => {
-        const optionDiv = document.createElement('div');
-        optionDiv.classList.add('option');
-        optionDiv.innerHTML = `<h4>${form.name}</h4><p>${form.description}</p>`;
-        optionDiv.addEventListener('click', () => {
-          const { protocol, hostname } = window.location;
-          const url = `${protocol}//${hostname}/form/launch/`;
-          const customerid = KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : '';
-          const interactionid = `interactionid=${KDF.getParams().interactionid}`;
-          window.location.href = `${url}${form.process.formName}?${customerid}${interactionid}`;
-        });
-        optionsContainer.appendChild(optionDiv);
-      });
-  }
-
-  function filterOptions(letter) {
-    const filteredForms = formsWithContent.filter(form => form.name.toUpperCase().startsWith(letter));
-    createOptions(filteredForms);
-  }
-
-  function filterByCategory(category) {
-    const filteredForms = formsWithContent.filter(form => form.meta.categories.includes(category));
-    createOptions(filteredForms);
-  }
-
-  function highlightActiveFilter(element, selector) {
-    clearActiveFilters(selector);
-    element.classList.add('active');
-  }
-
-  function clearActiveFilters(selector = '.a-z-filter button, .categories li') {
-    const activeElements = document.querySelectorAll(selector);
-    activeElements.forEach(el => el.classList.remove('active'));
-  }
-
-  // Initialize filters and options display
-  setTimeout(() => {
-    createAtoZFilter();
-    createCategories();
-    createOptions();
-    console.log('timedout', knowledge);
-  }, 0);
-
-}
 
 function logUserJourney(action, details) {
   const journeyField = document.getElementById('dform_widget_txt_knowledge_path');
