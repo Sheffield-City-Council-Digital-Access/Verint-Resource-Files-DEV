@@ -654,7 +654,22 @@ function handleOnReadyKnowledge() {
               card.appendChild(title);
               card.appendChild(description);
 
-              options.push({ card, name: subject.name, type: "knowledge" });
+              // Store detailed option info for later use
+              card.dataset.option = JSON.stringify({
+                id: subject.id,
+                name: subject.name,
+                description: subject.description,
+                content: subject.content,
+                process: subject.process,
+                transfer: subject.transfer,
+                finish: subject.finish,
+                meta: subject.meta,
+                lastModified: subject.lastModified,
+                serviceName: service.name,
+                type: "subject"
+              });
+
+              options.push(card);
 
               // Track visible letter for A-Z filter
               if (subject.name) {
@@ -678,7 +693,22 @@ function handleOnReadyKnowledge() {
                   card.appendChild(title);
                   card.appendChild(description);
 
-                  options.push({ card, name: topic.name, type: "knowledge" });
+                  // Store detailed option info for later use
+                  card.dataset.option = JSON.stringify({
+                    id: topic.id,
+                    name: topic.name,
+                    description: topic.description,
+                    content: topic.content,
+                    process: topic.process,
+                    transfer: topic.transfer,
+                    finish: topic.finish,
+                    meta: topic.meta,
+                    lastModified: topic.lastModified,
+                    serviceName: service.name,
+                    type: "topic"
+                  });
+
+                  options.push(card);
 
                   // Track visible letter for A-Z filter
                   if (topic.name) {
@@ -692,43 +722,34 @@ function handleOnReadyKnowledge() {
       });
 
       // Sort options alphabetically by name
-      options.sort((a, b) => a.name.localeCompare(b.name));
+      options.sort((a, b) => {
+        const nameA = JSON.parse(a.dataset.option).name.toUpperCase();
+        const nameB = JSON.parse(b.dataset.option).name.toUpperCase();
+        return nameA.localeCompare(nameB);
+      });
 
       // Append sorted options to the container
-      options.forEach(option => {
-        resultsContainer.appendChild(option.card);
+      options.forEach(card => {
+        resultsContainer.appendChild(card);
 
-        const plainOption = {
-          id: option.card.id,
-          name: option.name,
-          description: option.card.querySelector('div').innerHTML,
-          content: option.card.querySelector('div').innerHTML,
-          process: option.card.querySelector('div').innerHTML,
-          transfer: option.card.querySelector('div').innerHTML,
-          finish: option.card.querySelector('div').innerHTML,
-          meta: {},
-          lastModified: new Date(),
-          serviceName: "",
-          type: option.type
-        };
-
-        option.card.addEventListener('click', () => {
-          handleCardClick(plainOption);
+        card.addEventListener('click', () => {
+          const optionData = JSON.parse(card.dataset.option);
+          handleCardClick(optionData);
         });
 
-        option.card.addEventListener('keydown', (event) => {
+        card.addEventListener('keydown', (event) => {
           if (event.key === 'Enter') {
             event.preventDefault();
-            option.card.click();
+            card.click();
           }
         });
 
-        option.card.addEventListener('focus', () => {
-          option.card.classList.add('focus');
+        card.addEventListener('focus', () => {
+          card.classList.add('focus');
         });
 
-        option.card.addEventListener('blur', () => {
-          option.card.classList.remove('focus');
+        card.addEventListener('blur', () => {
+          card.classList.remove('focus');
         });
       });
 
@@ -826,6 +847,7 @@ function handleOnReadyKnowledge() {
       console.error('services is not defined or not an array');
     }
   }
+
 
 
   handleServicesAtoZ(knowledge);
