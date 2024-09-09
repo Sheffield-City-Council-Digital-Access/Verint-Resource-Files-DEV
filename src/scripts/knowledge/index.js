@@ -487,7 +487,7 @@ function handleOnReadyKnowledge() {
     console.log('handleCardClick', result)
     if (result.type === 'knowledge') {
       const titleElement = document.getElementById('dform_widget_header_hrd_page_title_content');
-      titleElement.textContent = result.title;
+      titleElement.textContent = result.title || result.name;
 
       const contentContainer = document.getElementById('dform_widget_html_ahtm_content_container');
       contentContainer.innerHTML = result.content;
@@ -702,7 +702,7 @@ function handleOnReadyKnowledge() {
                     meta: topic.meta,
                     lastModified: topic.lastModified,
                     serviceName: service.name,
-                    type: 'topic'
+                    type: "knowledge"
                   };
 
                   card.addEventListener('click', () => {
