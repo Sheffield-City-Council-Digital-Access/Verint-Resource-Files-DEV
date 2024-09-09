@@ -535,26 +535,22 @@ function handleOnReadyKnowledge() {
     const categoriesList = document.querySelector('.categories ul');
     const optionsContainer = document.querySelector('.options');
 
-    // Remove any existing reset button
-    function createResetButton() {
-      resetFilter.innerHTML = ''; // Clear existing reset buttons
-      const showAllButton = document.createElement('button');
-      const span = document.createElement('span');
-      span.textContent = '↺'; // Rotating text
-      showAllButton.appendChild(span);
+    function createAtoZFilter() {
+      const letters = new Set();
 
-      // Reset filters when the "Show All" button is clicked
-      showAllButton.addEventListener('click', () => {
-        createOptions(services); // Show all options
-        clearActiveFilters();
-        createAtoZFilter(new Set()); // Rebuild A-Z filter without active letters
+      // Collect all starting letters from service and subject names
+      services.forEach(service => {
+        if (service.name) {
+          letters.add(service.name[0].toUpperCase());
+        }
+        service.subjects.forEach(subject => {
+          if (subject.name) {
+            letters.add(subject.name[0].toUpperCase());
+          }
+        });
       });
 
-      resetFilter.appendChild(showAllButton);
-    }
-
-    function createAtoZFilter(visibleLetters) {
-      // Remove existing filter buttons
+      // Remove existing buttons to avoid duplicates
       aToZFilter.innerHTML = '';
 
       // Create buttons for each letter that exists
@@ -562,7 +558,7 @@ function handleOnReadyKnowledge() {
         const letter = String.fromCharCode(i);
         const button = document.createElement('button');
         button.textContent = letter;
-        button.disabled = !visibleLetters.has(letter); // Enable only if letter is in the set
+        button.disabled = !letters.has(letter); // Enable only if letter is in the set
 
         // Filter options and highlight active filter on click
         button.addEventListener('click', () => {
@@ -573,19 +569,38 @@ function handleOnReadyKnowledge() {
         aToZFilter.appendChild(button);
       }
 
-      createResetButton(); // Create the reset button
+      // Create the "Show All" button
+      let showAllButton = document.querySelector('.reset-filter button');
+      if (!showAllButton) {
+        showAllButton = document.createElement('button');
+        const span = document.createElement('span');
+        span.textContent = '↺';
+        showAllButton.appendChild(span);
+
+        // Reset filters when the "Show All" button is clicked
+        showAllButton.addEventListener('click', () => {
+          createOptions(services);
+          clearActiveFilters();
+        });
+
+        resetFilter.appendChild(showAllButton);
+      }
     }
 
     function createCategories() {
       const categories = new Set();
 
-      services.forEach(service => {
-        service.subjects.forEach(subject => {
-          if (subject.meta && subject.meta.type) {
-            categories.add(subject.meta.type);
-          }
+      if (Array.isArray(services)) {
+        services.forEach(service => {
+          service.subjects.forEach(subject => {
+            if (subject.meta && subject.meta.type) {
+              categories.add(subject.meta.type);
+            }
+          });
         });
-      });
+      }
+
+      categoriesList.innerHTML = ''; // Clear existing categories
 
       categories.forEach(category => {
         const li = document.createElement('li');
@@ -600,138 +615,125 @@ function handleOnReadyKnowledge() {
       });
     }
 
-    function createOptions(filteredServices) {
+    function createOptions(filteredServices = services) {
       const resultsContainer = document.querySelector('.options');
       resultsContainer.innerHTML = '';
 
-      const visibleLetters = new Set(); // Set to keep track of visible letters
+      if (Array.isArray(filteredServices)) {
+        filteredServices.forEach(service => {
+          if (Array.isArray(service.subjects)) {
+            service.subjects.forEach(subject => {
+              if (subject.content) {
+                const card = document.createElement('div');
+                card.classList.add('search-card');
+                card.setAttribute('tabindex', '0');
 
-      filteredServices.forEach(service => {
-        if (Array.isArray(service.subjects)) {
-          service.subjects.forEach(subject => {
-            if (subject.content) {
-              const card = document.createElement('div');
-              card.classList.add('search-card');
-              card.setAttribute('tabindex', '0');
+                const title = document.createElement('h3');
+                title.textContent = subject.name;
 
-              const title = document.createElement('h3');
-              title.textContent = subject.name;
+                const description = document.createElement('div');
+                description.innerHTML = subject.description;
 
-              const description = document.createElement('div');
-              description.innerHTML = subject.description;
+                card.appendChild(title);
+                card.appendChild(description);
 
-              card.appendChild(title);
-              card.appendChild(description);
+                resultsContainer.appendChild(card);
 
-              resultsContainer.appendChild(card);
+                const plainSubject = {
+                  id: subject.id,
+                  name: subject.name,
+                  description: subject.description,
+                  content: subject.content,
+                  process: subject.process,
+                  transfer: subject.transfer,
+                  finish: subject.finish,
+                  meta: subject.meta,
+                  lastModified: subject.lastModified,
+                  serviceName: service.name,
+                  type: "knowledge"
+                };
 
-              const plainSubject = {
-                id: subject.id,
-                name: subject.name,
-                description: subject.description,
-                content: subject.content,
-                process: subject.process,
-                transfer: subject.transfer,
-                finish: subject.finish,
-                meta: subject.meta,
-                lastModified: subject.lastModified,
-                serviceName: service.name,
-                type: "knowledge"
-              };
-
-              card.addEventListener('click', () => {
-                handleCardClick(plainSubject);
-              });
-
-              card.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter') {
-                  event.preventDefault();
+                card.addEventListener('click', () => {
                   handleCardClick(plainSubject);
-                }
-              });
+                });
 
-              card.addEventListener('focus', () => {
-                card.classList.add('focus');
-              });
-
-              card.addEventListener('blur', () => {
-                card.classList.remove('focus');
-              });
-
-              // Track visible letter for A-Z filter
-              if (subject.name) {
-                visibleLetters.add(subject.name[0].toUpperCase());
-              }
-            }
-
-            if (Array.isArray(subject.topics)) {
-              subject.topics.forEach(topic => {
-                if (topic.content) {
-                  const card = document.createElement('div');
-                  card.classList.add('search-card');
-                  card.setAttribute('tabindex', '0');
-
-                  const title = document.createElement('h3');
-                  title.textContent = topic.name;
-
-                  const description = document.createElement('div');
-                  description.innerHTML = topic.description;
-
-                  const content = document.createElement('div');
-                  content.innerHTML = topic.content;
-
-                  card.appendChild(title);
-                  card.appendChild(description);
-                  card.appendChild(content);
-
-                  resultsContainer.appendChild(card);
-
-                  const plainTopic = {
-                    id: topic.id,
-                    name: topic.name,
-                    description: topic.description,
-                    content: topic.content,
-                    process: topic.process,
-                    transfer: topic.transfer,
-                    finish: topic.finish,
-                    meta: topic.meta,
-                    lastModified: topic.lastModified,
-                    serviceName: service.name,
-                    type: 'topic'
-                  };
-
-                  card.addEventListener('click', () => {
-                    handleCardClick(plainTopic);
-                  });
-
-                  card.addEventListener('keydown', (event) => {
-                    if (event.key === 'Enter') {
-                      event.preventDefault();
-                      handleCardClick(plainTopic);
-                    }
-                  });
-
-                  card.addEventListener('focus', () => {
-                    card.classList.add('focus');
-                  });
-
-                  card.addEventListener('blur', () => {
-                    card.classList.remove('focus');
-                  });
-
-                  // Track visible letter for A-Z filter
-                  if (topic.name) {
-                    visibleLetters.add(topic.name[0].toUpperCase());
+                card.addEventListener('keydown', (event) => {
+                  if (event.key === 'Enter') {
+                    event.preventDefault();
+                    handleCardClick(plainSubject);
                   }
-                }
-              });
-            }
-          });
-        }
-      });
+                });
 
-      // Update A-Z filter with the visible letters
-      createAtoZFilter(visibleLetters);
+                card.addEventListener('focus', () => {
+                  card.classList.add('focus');
+                });
+
+                card.addEventListener('blur', () => {
+                  card.classList.remove('focus');
+                });
+              }
+
+              if (Array.isArray(subject.topics)) {
+                subject.topics.forEach(topic => {
+                  if (topic.content) {
+                    const card = document.createElement('div');
+                    card.classList.add('search-card');
+                    card.setAttribute('tabindex', '0');
+
+                    const title = document.createElement('h3');
+                    title.textContent = topic.name;
+
+                    const description = document.createElement('div');
+                    description.innerHTML = topic.description;
+
+                    const content = document.createElement('div');
+                    content.innerHTML = topic.content;
+
+                    card.appendChild(title);
+                    card.appendChild(description);
+                    card.appendChild(content);
+
+                    resultsContainer.appendChild(card);
+
+                    const plainTopic = {
+                      id: topic.id,
+                      name: topic.name,
+                      description: topic.description,
+                      content: topic.content,
+                      process: topic.process,
+                      transfer: topic.transfer,
+                      finish: topic.finish,
+                      meta: topic.meta,
+                      lastModified: topic.lastModified,
+                      serviceName: service.name,
+                      type: 'topic'
+                    };
+
+                    card.addEventListener('click', () => {
+                      handleCardClick(plainTopic);
+                    });
+
+                    card.addEventListener('keydown', (event) => {
+                      if (event.key === 'Enter') {
+                        event.preventDefault();
+                        handleCardClick(plainTopic);
+                      }
+                    });
+
+                    card.addEventListener('focus', () => {
+                      card.classList.add('focus');
+                    });
+
+                    card.addEventListener('blur', () => {
+                      card.classList.remove('focus');
+                    });
+                  }
+                });
+              }
+            });
+          }
+        });
+      }
     }
 
     function filterOptionsByLetter(letter) {
@@ -760,12 +762,14 @@ function handleOnReadyKnowledge() {
 
     // Ensure services is an array before creating filters and options
     if (Array.isArray(services)) {
+      createAtoZFilter();
       createCategories();
-      createOptions(services); // Initialize with all services
+      createOptions();
     } else {
       console.error('services is not defined or not an array');
     }
   }
+
 
 
   handleServicesAtoZ(knowledge);
