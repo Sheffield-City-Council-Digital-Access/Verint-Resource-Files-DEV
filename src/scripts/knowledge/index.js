@@ -583,7 +583,15 @@ function handleOnReadyKnowledge() {
       services.forEach(service => {
         service.subjects.forEach(subject => {
           if (subject.meta && subject.meta.type) {
-            categories.add(subject.meta.type);
+            categories.add(subject.meta.type); // Ensure all types are captured
+          }
+          // Also add types from topics if needed
+          if (Array.isArray(subject.topics)) {
+            subject.topics.forEach(topic => {
+              if (topic.meta && topic.meta.type) {
+                categories.add(topic.meta.type); // Capture types from topics
+              }
+            });
           }
         });
       });
@@ -741,10 +749,13 @@ function handleOnReadyKnowledge() {
     }
 
     function filterByCategory(category) {
-      const filteredForms = services.filter(service =>
-        service.subjects.some(subject => subject.meta && subject.meta.type === category)
+      const filteredServices = services.filter(service =>
+        service.subjects.some(subject =>
+          subject.meta && subject.meta.type === category ||
+          subject.topics && subject.topics.some(topic => topic.meta && topic.meta.type === category)
+        )
       );
-      createOptions(filteredForms, false);
+      createOptions(filteredServices, false);
     }
 
     function highlightActiveFilter(element, selector) {
