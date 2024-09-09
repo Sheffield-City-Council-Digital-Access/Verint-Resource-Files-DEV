@@ -784,9 +784,12 @@ function handleServicesAtoZ() {
   }
 
   // Initialize filters and options display
-  createAtoZFilter();
-  createCategories();
-  createOptions();
+  setTimeout(() => {
+    createAtoZFilter();
+    createCategories();
+    createOptions();
+  }, 0);
+
 }
 
 function logUserJourney(action, details) {
