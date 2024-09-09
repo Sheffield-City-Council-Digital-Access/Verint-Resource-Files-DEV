@@ -492,6 +492,10 @@ function handleOnReadyKnowledge() {
       const contentContainer = document.getElementById('dform_widget_html_ahtm_content_container');
       contentContainer.innerHTML = result.content;
 
+      const lastModifiedInfo = document.createElement('small');
+      lastModifiedInfo.textContent = `Last modified on: ${item.lastModified.date} by ${item.lastModified.name}`;
+      contentContainer.appendChild(lastModifiedInfo);
+
       const button = document.getElementById('dform_widget_button_but_launch_process');
       button.textContent = result.process.buttonLabel;
 
@@ -666,7 +670,7 @@ function handleOnReadyKnowledge() {
                 meta: subject.meta,
                 lastModified: subject.lastModified,
                 serviceName: service.name,
-                type: "subject"
+                type: "knowledge"
               });
 
               options.push(card);
@@ -705,7 +709,7 @@ function handleOnReadyKnowledge() {
                     meta: topic.meta,
                     lastModified: topic.lastModified,
                     serviceName: service.name,
-                    type: "topic"
+                    type: "knowledge"
                   });
 
                   options.push(card);
