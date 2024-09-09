@@ -765,8 +765,13 @@ function handleOnReadyKnowledge() {
           ...service,
           subjects: service.subjects.map(subject => ({
             ...subject,
-            topics: subject.topics.filter(topic => topic.meta.type === category) // Filter topics by category
-          })).filter(subject => subject.meta.type === category || subject.topics.length > 0) // Ensure subjects are filtered by category or have valid topics
+            topics: Array.isArray(subject.topics)
+              ? subject.topics.filter(topic => topic.meta && topic.meta.type === category)
+              : [] // Ensure topics is an array before filtering
+          })).filter(subject =>
+            (subject.meta && subject.meta.type === category) ||
+            subject.topics.length > 0 // Only keep subjects with valid topics or matching meta.type
+          )
         };
       });
 
