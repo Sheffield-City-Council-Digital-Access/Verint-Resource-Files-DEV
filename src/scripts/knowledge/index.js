@@ -511,7 +511,7 @@ function handleOnReadyKnowledge() {
 
   $('#search-button').on('click', () => {
     const results = searchKnowledge(knowledge, latestNews, searchInput.value.toLowerCase());
-    logUserJourney('Search', `Search performed for query: ${searchQuery}`);
+    logUserJourney('Search', `Search performed for query: ${searchInput}`);
 
     renderSearchResults(results);
     hideShowElement('page_search_results', 'show');
@@ -601,60 +601,112 @@ function handleOnReadyKnowledge() {
     }
 
     function createOptions() {
+      const resultsContainer = document.querySelector('.options');
+      resultsContainer.innerHTML = '';
+
       services.forEach(service => {
-        // Create the service container
-        const serviceDiv = document.createElement('div');
-        serviceDiv.classList.add('option');
-
-        // Add the service name and description
-        const serviceTitle = document.createElement('h4');
-        serviceTitle.textContent = service.name;
-        serviceDiv.appendChild(serviceTitle);
-
-        const serviceDescription = document.createElement('p');
-        serviceDescription.textContent = service.description;
-        serviceDiv.appendChild(serviceDescription);
-
-        // Process each subject within the service
+        // Loop through the subjects of each service
         service.subjects.forEach(subject => {
-          // Only render if the subject contains content
-          if (subject instanceof ContentH && subject.content) {
-            const subjectDiv = document.createElement('div');
+          // Render if subject contains content
+          if (subject.content) {
+            // Create the card container for each subject
+            const card = document.createElement('div');
+            card.classList.add('search-card');
+            card.setAttribute('tabindex', '0');
 
-            // Add subject title and description
-            const subjectTitle = document.createElement('h5');
-            subjectTitle.textContent = subject.name;
-            subjectDiv.appendChild(subjectTitle);
+            // Add the title for the subject
+            const title = document.createElement('h3');
+            title.textContent = subject.name;
 
-            const subjectDescription = document.createElement('p');
-            subjectDescription.textContent = subject.description;
-            subjectDiv.appendChild(subjectDescription);
+            // Add the description
+            const description = document.createElement('div');
+            description.innerHTML = subject.description;
 
-            serviceDiv.appendChild(subjectDiv);
+            // Add the content snippet
+            const content = document.createElement('div');
+            content.innerHTML = subject.content;
+
+            card.appendChild(title);
+            card.appendChild(description);
+            card.appendChild(content);
+
+            resultsContainer.appendChild(card);
+
+            // Add click event to handle interaction
+            card.addEventListener('click', () => {
+              handleCardClick(subject);
+            });
+
+            // Add keyboard accessibility for the card
+            card.addEventListener('keydown', (event) => {
+              if (event.key === 'Enter') {
+                event.preventDefault();
+                handleCardClick(subject);
+              }
+            });
+
+            // Add focus and blur events for better accessibility
+            card.addEventListener('focus', () => {
+              card.classList.add('focus');
+            });
+
+            card.addEventListener('blur', () => {
+              card.classList.remove('focus');
+            });
           }
 
-          // Process topics if the subject is a MenuH
-          if (subject instanceof MenuH && subject.topics) {
+          // Render topics if they exist and have content
+          if (subject.topics) {
             subject.topics.forEach(topic => {
               if (topic.content) {
-                const topicDiv = document.createElement('div');
+                // Create the card container for each topic
+                const card = document.createElement('div');
+                card.classList.add('search-card');
+                card.setAttribute('tabindex', '0');
 
-                // Add topic title and description
-                const topicTitle = document.createElement('h6');
-                topicTitle.textContent = topic.name;
-                topicDiv.appendChild(topicTitle);
+                // Add the title for the topic
+                const title = document.createElement('h3');
+                title.textContent = topic.name;
 
-                const topicDescription = document.createElement('p');
-                topicDescription.textContent = topic.description;
-                topicDiv.appendChild(topicDescription);
+                // Add the description
+                const description = document.createElement('div');
+                description.innerHTML = topic.description;
 
-                serviceDiv.appendChild(topicDiv);
+                // Add the content snippet
+                const content = document.createElement('div');
+                content.innerHTML = topic.content;
+
+                card.appendChild(title);
+                card.appendChild(description);
+                card.appendChild(content);
+
+                resultsContainer.appendChild(card);
+
+                // Add click event to handle interaction
+                card.addEventListener('click', () => {
+                  handleCardClick(topic);
+                });
+
+                // Add keyboard accessibility for the card
+                card.addEventListener('keydown', (event) => {
+                  if (event.key === 'Enter') {
+                    event.preventDefault();
+                    handleCardClick(topic);
+                  }
+                });
+
+                // Add focus and blur events for better accessibility
+                card.addEventListener('focus', () => {
+                  card.classList.add('focus');
+                });
+
+                card.addEventListener('blur', () => {
+                  card.classList.remove('focus');
+                });
               }
             });
           }
         });
-
-        optionsContainer.appendChild(serviceDiv);
       });
     }
 

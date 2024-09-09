@@ -65,7 +65,7 @@ const subjectExample1 = new ContentH(
   { buttonLabel: 'Example 1', formName: 'example_form' },
   { typeKey: 'example_transfered_to_service' },
   { typeKey: 'example_information_provided' },
-  { type: 'Rpply', keywords: [], categories: ['Housing'] },
+  { type: 'Apply', keywords: [], categories: ['Housing'] },
   { date: '05/09/2024', name: 'Elliott Griffiths' }
 );
 
