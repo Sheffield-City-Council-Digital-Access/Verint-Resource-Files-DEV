@@ -652,13 +652,13 @@ function handleOnReadyKnowledge() {
 //   createOptions();
 // }
 
-function handleServicesAtoZ(services) {
+function handleServicesAtoZ() {
   const resetFilter = document.querySelector('.reset-filter');
   const aToZFilter = document.querySelector('.a-z-filter');
   const categoriesList = document.querySelector('.categories ul');
   const optionsContainer = document.querySelector('.options');
 
-  // Helper function to extract all topics from subjects
+  // Helper function to extract all topics from subjects within services
   function extractForms(service) {
     let forms = [];
     service.subjects.forEach(subject => {
@@ -672,8 +672,8 @@ function handleServicesAtoZ(services) {
     return forms;
   }
 
-  // Flatten all the forms with valid meta.type from all services
-  const formsWithContent = services.reduce((acc, service) => {
+  // Flatten all the forms with valid meta.type from all services in the global knowledge array
+  const formsWithContent = knowledge.reduce((acc, service) => {
     return acc.concat(extractForms(service));
   }, []);
 
@@ -685,7 +685,7 @@ function handleServicesAtoZ(services) {
       button.textContent = letter;
       button.disabled = true;
 
-      // Enable the button if form label starts with the letter and has content
+      // Enable the button if form name starts with the letter
       formsWithContent.forEach(form => {
         if (form.name.toUpperCase().startsWith(letter)) {
           button.disabled = false;
@@ -783,11 +783,11 @@ function handleServicesAtoZ(services) {
     activeElements.forEach(el => el.classList.remove('active'));
   }
 
+  // Initialize filters and options display
   createAtoZFilter();
   createCategories();
   createOptions();
 }
-
 
 function logUserJourney(action, details) {
   const journeyField = document.getElementById('dform_widget_txt_knowledge_path');
