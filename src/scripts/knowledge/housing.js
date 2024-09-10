@@ -60,8 +60,6 @@ const rentsExample = new MenuH(
   [retTopic]
 )
 
-
-
 // Example instantiation for topicExample1
 const topicExample1 = new ContentH(
   'topicexample1',
