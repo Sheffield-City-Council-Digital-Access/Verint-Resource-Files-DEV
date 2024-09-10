@@ -35,6 +35,28 @@ class ContentH extends CoreH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
+const retTopic = new ContentH(
+  'retTopicID',
+  'ret Topic enample',
+  'info about rent topic',
+  `<p>1st info here</p>
+  <h4>header 4</h4>
+  <p>2nd infor here</p>
+  <ul>
+  <li>list item</li>
+  </ul>
+  `
+)
+
+const rentsExample = new MenuH(
+  'rentMenuID',
+  'rent menu name',
+  'indormation about rent tpoics',
+  [retTopic]
+)
+
+
+
 // Example instantiation for topicExample1
 const topicExample1 = new ContentH(
   'topicexample1',
@@ -78,6 +100,7 @@ const housing = new ServiceH(
   'Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…',
   [
     subjectExample1,
-    subjectExample2
+    subjectExample2,
+    rentsExample
   ]
 );
