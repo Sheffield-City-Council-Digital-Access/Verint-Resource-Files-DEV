@@ -35,31 +35,6 @@ class ContentH extends CoreH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-const retTopic = new ContentH(
-  'retTopicID',
-  'ret Topic enample',
-  'info about rent topic',
-  `<p>1st info here</p>
-  <h4>header 4</h4>
-  <p>2nd infor here</p>
-  <ul>
-  <li>list item</li>
-  </ul>
-  `,
-  { buttonLabel: 'check rent balence', formName: 'hsg_check_rent_balence' },
-  { typeKey: 'rent_type_key' },
-  { typeKey: 'rend_info' },
-  { type: 'Report', keywords: ['keyword1', 'kw2'], categories: ['cat'] },
-  { date: '10/09/2024', name: 'Elliott Griffiths' }
-)
-//test
-const rentsExample = new MenuH(
-  'rentMenuID',
-  'rent menu name',
-  'indormation about rent tpoics',
-  [retTopic]
-)
-
 // Example instantiation for topicExample1
 const topicExample1 = new ContentH(
   'topicexample1',
@@ -103,7 +78,6 @@ const housing = new ServiceH(
   'Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…',
   [
     subjectExample1,
-    subjectExample2,
-    rentsExample
+    subjectExample2
   ]
 );
