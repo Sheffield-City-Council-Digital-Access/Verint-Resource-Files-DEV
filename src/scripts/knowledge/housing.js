@@ -45,7 +45,12 @@ const retTopic = new ContentH(
   <ul>
   <li>list item</li>
   </ul>
-  `
+  `,
+  { buttonLabel: 'check rent balence', formName: 'hsg_check_rent_balence' },
+  { typeKey: 'rent_type_key' },
+  { typeKey: 'rend_info' },
+  { type: 'Report', keywords: ['keyword1', 'kw2'], categories: ['cat'] },
+  { date: '10/09/2024', name: 'Elliott Griffiths' }
 )
 
 const rentsExample = new MenuH(
