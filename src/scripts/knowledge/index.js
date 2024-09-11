@@ -509,7 +509,7 @@ function handleOnReadyKnowledge() {
 
       hideShowMultipleElements([
         { name: 'page_content', display: 'show' },
-        { name: 'but_launch_process', display: result.process.formName ? 'show' : 'hide' },
+        { name: 'but_launch_process', display: result.process?.formName ? 'show' : 'hide' },
         { name: 'but_transfer_enquiry', display: result.transfer?.typeKey ? 'show' : 'hide' },
         { name: 'but_finish_enquiry', display: result.finish?.typeKey ? 'show' : 'hide' },
       ]);
@@ -544,11 +544,23 @@ function handleOnReadyKnowledge() {
   });
 
   $('#dform_widget_button_but_transfer_enquiry').on('click', () => {
-    
+    const { protocol, hostname } = window.location;
+    const url = `${protocol}//${hostname}/form/launch/`;
+
+    const customerid = KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : '';
+    const interactionid = `interactionid=${KDF.getParams().interactionid}`;
+
+    window.location.href = `${url}zz_eg_playpen?${customerid}${interactionid}&typekey=${tranferTypeKey}`;
   });
 
   $('#dform_widget_button_but_finish_enquiry').on('click', () => {
-    
+    const { protocol, hostname } = window.location;
+    const url = `${protocol}//${hostname}/form/launch/`;
+
+    const customerid = KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : '';
+    const interactionid = `interactionid=${KDF.getParams().interactionid}`;
+
+    window.location.href = `${url}zz_eg_playpen?${customerid}${interactionid}&typekey=${finishTypeKey}`;
   });
 
   // --- SERVICES A-Z ------------------------------------------------------- \\
