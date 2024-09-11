@@ -80,7 +80,7 @@ const abandonedVehicles = new ContentPaN(
     </p>
   `,
   { buttonLabel: 'Report an abandoned vehicle', formName: 'report_abandoned_vehicle' },
-  { typeKey: 'abandoned_vehicle_transfered_to_service' },
+  { typeKey: 'abandoned_vehicle_transferred_to_service' },
   { typeKey: 'abandoned_vehicle_information_provided' },
   {
     type: 'Report',
