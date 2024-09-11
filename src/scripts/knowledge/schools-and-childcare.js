@@ -82,12 +82,11 @@ Eligible working parents of children from 9 months to school age will be entitle
       </p>
         
       
-  `
+  `,
 
-
-  { buttonLabel: 'Report an abandoned vehicle', formName: 'report_abandoned_vehicle' },
-  { typeKey: 'abandoned_vehicle_transfered_to_service' },
-  { typeKey: 'abandoned_vehicle_information_provided' },
+  { buttonLabel: 'Apply Funded Early Learning', formName: 'report_abandoned_vehicle?' },
+  { typeKey: 'abandoned_vehicle_transfered_to_service?' },
+  { typeKey: 'abandoned_vehicle_information_provided?' },
   
 
   {
@@ -99,7 +98,7 @@ Eligible working parents of children from 9 months to school age will be entitle
       'lerning', 'learnning', 'lurning', 'lreaning', 'leanring',
 
     ],
-    categories: ['Schools and Childcare',],
+    categories: ['Schools and Childcare'],
   },
   { date: '11/09/2024', name: 'Gee Whitehouse' }
 );
@@ -111,5 +110,9 @@ const schoolsAndChildcare = new ServiceSaC(
   'schoolsAndChildcare',
   'Schools and Childcare',
   `Admissions, catchment areas, find schools, school travel, attendance, childcare and nurseries, teaching jobs…`,
-  [fundedEarlyLearning]
+  [
+    
+    fundedEarlyLearning
+
+  ]
 );
