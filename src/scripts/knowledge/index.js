@@ -553,7 +553,7 @@ function handleOnReadyKnowledge() {
     const customerid = KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : '';
     const interactionid = `interactionid=${KDF.getParams().interactionid}`;
 
-    window.location.href = `${url}zz_eg_playpen?${customerid}${interactionid}&enquiry=${enquiryType}&typekey=${tranferTypeKey}`;
+    window.location.href = `${url}transfered_enquiry?${customerid}${interactionid}&enquiry=${enquiryType}&typekey=${tranferTypeKey}`;
   });
 
   $('#dform_widget_button_but_finish_enquiry').on('click', () => {
@@ -563,7 +563,7 @@ function handleOnReadyKnowledge() {
     const customerid = KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : '';
     const interactionid = `interactionid=${KDF.getParams().interactionid}`;
 
-    window.location.href = `${url}zz_eg_playpen?${customerid}${interactionid}&enquiry=${enquiryType}&typekey=${finishTypeKey}`;
+    window.location.href = `${url}general_enquiry?${customerid}${interactionid}&enquiry=${enquiryType}&typekey=${finishTypeKey}`;
   });
 
   // --- SERVICES A-Z ------------------------------------------------------- \\
