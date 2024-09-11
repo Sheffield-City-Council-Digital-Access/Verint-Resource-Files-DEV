@@ -106,6 +106,7 @@ function handleOnReadyKnowledge() {
   let redirectToForm = '';
   let tranferTypeKey = '';
   let finishTypeKey = '';
+  let enquiryType = '';
 
   // --- BACK BUTTON HANDLER ------------------------------------------------ \\
 
@@ -213,6 +214,7 @@ function handleOnReadyKnowledge() {
     redirectToForm = item.process.formName ? item.process.formName : '';
     tranferTypeKey = item.transfer.typeKey ? item.transfer.typeKey : '';
     finishTypeKey = item.finish.typeKey ? item.finish.typeKey : '';
+    enquiryType = item.name;
 
     const titleElement = document.getElementById('dform_widget_header_hrd_page_title_content');
     titleElement.textContent = item.name;
@@ -493,6 +495,7 @@ function handleOnReadyKnowledge() {
       redirectToForm = result.process.formName ? result.process.formName : '';
       tranferTypeKey = result.transfer.typeKey ? result.transfer.typeKey : '';
       finishTypeKey = result.finish.typeKey ? result.finish.typeKey : '';
+      enquiryType = result.title || result.name;
 
       const titleElement = document.getElementById('dform_widget_header_hrd_page_title_content');
       titleElement.textContent = result.title || result.name;
@@ -550,7 +553,7 @@ function handleOnReadyKnowledge() {
     const customerid = KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : '';
     const interactionid = `interactionid=${KDF.getParams().interactionid}`;
 
-    window.location.href = `${url}zz_eg_playpen?${customerid}${interactionid}&typekey=${tranferTypeKey}`;
+    window.location.href = `${url}zz_eg_playpen?${customerid}${interactionid}&enquiry=${enquiryType}&typekey=${tranferTypeKey}`;
   });
 
   $('#dform_widget_button_but_finish_enquiry').on('click', () => {
@@ -560,7 +563,7 @@ function handleOnReadyKnowledge() {
     const customerid = KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : '';
     const interactionid = `interactionid=${KDF.getParams().interactionid}`;
 
-    window.location.href = `${url}zz_eg_playpen?${customerid}${interactionid}&typekey=${finishTypeKey}`;
+    window.location.href = `${url}zz_eg_playpen?${customerid}${interactionid}&enquiry=${enquiryType}&typekey=${finishTypeKey}`;
   });
 
   // --- SERVICES A-Z ------------------------------------------------------- \\
