@@ -69,6 +69,9 @@ const subjectExample1 = new ContentH(
   { date: '05/09/2024', name: 'Elliott Griffiths' }
 );
 
+
+
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -78,6 +81,7 @@ const housing = new ServiceH(
   'Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…',
   [
     subjectExample1,
-    subjectExample2
+    subjectExample2,
+   
   ]
 );
