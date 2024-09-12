@@ -231,7 +231,7 @@ function handleOnReadyKnowledge() {
     const breadcrumbElement = document.querySelector(".content-btn");
     breadcrumbElement.textContent = item.name;
 
-    const titleElement = document.getElemenquetById(
+    const titleElement = document.getElementById(
       "dform_widget_header_hrd_page_title_content"
     );
     titleElement.textContent = item.name;
