@@ -571,8 +571,8 @@ function handleOnReadyKnowledge() {
       subjectBCElement.textContent = result.serviceName;
 
       if (result.subjectName) {
-        topicBCElement.textContent = result.subjectName;
-        topicBCElement.forEach((btn) => {
+        subjectBCElement.textContent = result.subjectName;
+        subjectBCElement.forEach((btn) => {
           btn.style.display = "block";
         });
       } else {
