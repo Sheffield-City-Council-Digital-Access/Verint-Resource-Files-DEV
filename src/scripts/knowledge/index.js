@@ -51,18 +51,6 @@ function handleInitialisingKnowledge() {
 
       button.addEventListener("click", () => {
         logUserJourney("Navigate", `Navigated to ${item.label}`);
-
-        if (item.label === "Home") {
-          hideShowMultipleElements([
-            { name: "page_subject_menu", display: "hide" },
-            { name: "page_topic_menu", display: "hide" },
-            { name: "page_content", display: "hide" },
-            { name: "page_search_results", display: "hide" },
-            { name: "page_latest_news", display: "hide" },
-            { name: "page_service_a_z", display: "hide" },
-          ]);
-        }
-        hideShowElement(item.page, "show");
         KDF.gotoPage(item.page, true, true, true);
       });
 
@@ -106,30 +94,6 @@ function handleOnReadyKnowledge() {
   let tranferTypeKey = "";
   let finishTypeKey = "";
   let enquiryType = "";
-
-  // --- BACK BUTTON HANDLER ------------------------------------------------ \\
-
-  $(".back-btn").on("click", function () {
-    hideShowElement(this.name, "hide");
-    if (this.name === "but_back_subject_menu") {
-      hideShowElement("page_subject_menu", "hide");
-    }
-    if (this.name === "but_back_topic_menu") {
-      hideShowElement("page_topic_menu", "hide");
-    }
-    if (this.name === "but_back_search_results") {
-      hideShowElement("page_search_results", "hide");
-    }
-    if (this.name === "but_back_content") {
-      hideShowElement("page_content", "hide");
-    }
-    if (this.name === "but_back_latest_news") {
-      hideShowElement("page_latest_news", "hide");
-    }
-    if (this.name === "but_back_service_a_z") {
-      hideShowElement("page_service_a_z", "hide");
-    }
-  });
 
   // --- MENU CREATOR AND HANDLER ------------------------------------------- \\
 
@@ -205,10 +169,6 @@ function handleOnReadyKnowledge() {
             });
           }
 
-          hideShowElement(
-            item.subjects ? "page_subject_menu" : "page_topic_menu",
-            "show"
-          );
           KDF.gotoPage(
             item.subjects ? "page_subject_menu" : "page_topic_menu",
             true,
@@ -267,7 +227,6 @@ function handleOnReadyKnowledge() {
     );
     button.textContent = item.process.buttonLabel;
 
-    hideShowElement("page_content", "show");
     hideShowMultipleElements([
       {
         name: "but_launch_process",
@@ -281,8 +240,6 @@ function handleOnReadyKnowledge() {
         name: "but_finish_enquiry",
         display: item.finish?.typeKey ? "show" : "hide",
       },
-      { name: "page_search_results", display: "hide" },
-      { name: "page_content", display: "show" },
     ]);
     KDF.gotoPage("page_content", true, true, true);
   }
@@ -300,7 +257,6 @@ function handleOnReadyKnowledge() {
           "dform_widget_header_hrd_page_title_subject_menu"
         );
         titleElement.textContent = service.name;
-        hideShowElement("page_subject_menu", "show");
         KDF.gotoPage("page_subject_menu", true, true, true);
       } else {
         KDF.showError("Service not found");
@@ -322,7 +278,6 @@ function handleOnReadyKnowledge() {
             "dform_widget_header_hrd_page_title_topic_menu"
           );
           titleElement.textContent = subject.name;
-          hideShowElement("page_topic_menu", "show");
           KDF.gotoPage("page_topic_menu", true, true, true);
         } else {
           redirectToContentPage(subject);
@@ -609,7 +564,6 @@ function handleOnReadyKnowledge() {
       button.textContent = result.process.buttonLabel;
 
       hideShowMultipleElements([
-        { name: "page_content", display: "show" },
         {
           name: "but_launch_process",
           display: result.process?.formName ? "show" : "hide",
@@ -624,10 +578,8 @@ function handleOnReadyKnowledge() {
         },
       ]);
 
-      KDF.showPage("page_content");
       KDF.gotoPage("page_content", true, true, true);
     } else if (result.type === "news") {
-      KDF.showPage("page_latest_news");
       KDF.gotoPage("page_latest_news", true, true, true);
     }
   }
@@ -643,7 +595,6 @@ function handleOnReadyKnowledge() {
     logUserJourney("Search", `Search performed for query: ${searchInput}`);
 
     renderSearchResults(results);
-    hideShowElement("page_search_results", "show");
     KDF.gotoPage("page_search_results", true, true, true);
   });
 
