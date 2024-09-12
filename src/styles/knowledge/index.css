@@ -43,13 +43,13 @@ form.dform {
 
 #dform_container div.container.area.menu-area,
 #dform_container div.container.area.content-area {
-    width: 98%;
-    margin-inline: auto;
-    padding: 2rem 4rem;
+  width: 98%;
+  margin-inline: auto;
 }
-
+  
 #dform_container div.container.area.content-area {
-    background: var(--color-grey-2);
+  padding: 2rem 4rem;
+  background: var(--color-grey-2);
 }
 
 small {
