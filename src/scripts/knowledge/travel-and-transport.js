@@ -71,7 +71,7 @@ const disabledTravelPermit = new ContentTaT(
         If you have any supporting evidence/eligibility that has an end date, your pass will be issued up to that date.<br>
         If during the time you have the pass, you would turn 66, your pass will expire on your 66th birthday.
       </p>
-      <h3>How do i appeal the decision</h3>
+      <h3>How do I appeal the decision</h3>
       <p>
         Appeals must be made in writing to:<br>
         Customer Services<br>
@@ -81,7 +81,7 @@ const disabledTravelPermit = new ContentTaT(
         Sheffield<br>
         S1 2SH
       </p>
-      <h3>When can i use my Travel Permit</h3>
+      <h3>When can I use my Travel Permit</h3>
       <p>
         A disabled persons pass enables free public transport on buses, trams and trains.
       </p>
@@ -95,7 +95,7 @@ const disabledTravelPermit = new ContentTaT(
     formName: "disabled_travel_pass",
   },
 
-  { typeKey: "disabled_travel_pass_application" },
+  false,
 
   { typeKey: "disabled_travel_pass_information_provided" },
 
@@ -119,6 +119,8 @@ const disabledTravelPermit = new ContentTaT(
       "pemit",
       "permet",
       "permot",
+      "dtp",
+      "mobility",
     ],
 
     categories: ["Travel Permit", "Disablity"],
