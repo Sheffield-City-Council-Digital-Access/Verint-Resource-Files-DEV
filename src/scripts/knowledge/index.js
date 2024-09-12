@@ -152,8 +152,6 @@ function handleOnReadyKnowledge() {
             breadcrumbElements.forEach((breadcrumbElement) => {
               breadcrumbElement.textContent = item.name;
             });
-          } else {
-            console.error("Title elements not found");
           }
 
           const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
@@ -305,6 +303,39 @@ function handleOnReadyKnowledge() {
 
   createCards(knowledge, serviceMenuContainer);
 
+  const subjectMenuBtn = document.querySelector(".subject-menu-btn");
+  const topicMenuBtn = document.querySelector(".topic-menu-btn");
+
+  function renderSubjectMenu(label) {
+    const subject = housing.subjects.find((sub) => sub.name === label);
+    if (subject) {
+      createCards(subject.topics, subjectMenuContainer);
+      subjectMenuBtn.textContent = subject.name;
+      KDF.gotoPage("page_subject_menu", true, true, true);
+    }
+  }
+
+  function renderTopicMenu(label) {
+    housing.subjects.forEach((sub) => {
+      const topic = sub.topics.find((top) => top.name === label);
+      if (topic) {
+        createCards([topic], topicsMenuContainer);
+        topicMenuBtn.textContent = topic.name;
+        KDF.gotoPage("page_topic_menu", true, true, true);
+      }
+    });
+  }
+
+  subjectMenuBtn.addEventListener("click", () => {
+    const label = subjectMenuBtn.textContent;
+    renderSubjectMenu(label);
+  });
+
+  topicMenuBtn.addEventListener("click", () => {
+    const label = topicMenuBtn.textContent;
+    renderTopicMenu(label);
+  });
+
   // --- LATEST NEWS -------------------------------------------------------- \\
 
   const newsContainer = document.getElementById("news-container");
@@ -382,7 +413,6 @@ function handleOnReadyKnowledge() {
 
   function searchKnowledge(knowledge, latestNews, searchQuery) {
     if (!Array.isArray(knowledge) || !Array.isArray(latestNews)) {
-      console.error("Knowledge and latestNews must be arrays");
       return [];
     }
 
@@ -513,7 +543,6 @@ function handleOnReadyKnowledge() {
   }
 
   function handleCardClick(result) {
-    console.log(result, result.serviceName);
     if (result.type === "knowledge") {
       redirectToForm = result.process.formName ? result.process.formName : "";
       tranferTypeKey = result.transfer.typeKey ? result.transfer.typeKey : "";
@@ -642,17 +671,15 @@ function handleOnReadyKnowledge() {
     const categoriesList = document.querySelector(".categories ul");
     const optionsContainer = document.querySelector(".options");
 
-    // Remove any existing reset button
     function createResetButton() {
-      resetFilter.innerHTML = ""; // Clear existing reset buttons
+      resetFilter.innerHTML = "";
       const showAllButton = document.createElement("button");
       const span = document.createElement("span");
       span.textContent = "↺";
       showAllButton.appendChild(span);
 
-      // Reset filters when the "Show All" button is clicked
       showAllButton.addEventListener("click", () => {
-        createOptions(services); // Show all options
+        createOptions(services);
         clearActiveFilters();
       });
 
@@ -660,23 +687,19 @@ function handleOnReadyKnowledge() {
     }
 
     function createAtoZFilter(visibleLetters) {
-      // Remove existing filter buttons
       aToZFilter.innerHTML = "";
 
-      // Create buttons for each letter that exists
       for (let i = 65; i <= 90; i++) {
         const letter = String.fromCharCode(i);
         const button = document.createElement("button");
         button.textContent = letter;
-        button.disabled = !visibleLetters.has(letter); // Enable only if letter is in the set
+        button.disabled = !visibleLetters.has(letter);
 
-        // Filter options and highlight active filter on click
         button.addEventListener("click", () => {
           filterOptionsByLetter(letter);
           highlightActiveFilter(button, ".a-z-filter button");
         });
 
-        // Allow navigation with Enter key
         button.addEventListener("keydown", (event) => {
           if (event.key === "Enter") {
             event.preventDefault();
@@ -687,7 +710,7 @@ function handleOnReadyKnowledge() {
         aToZFilter.appendChild(button);
       }
 
-      createResetButton(); // Create the reset button
+      createResetButton();
     }
 
     function createCategories() {
@@ -696,33 +719,30 @@ function handleOnReadyKnowledge() {
       services.forEach((service) => {
         service.subjects.forEach((subject) => {
           if (subject.meta && subject.meta.type) {
-            categories.add(subject.meta.type); // Ensure all types are captured
+            categories.add(subject.meta.type);
           }
-          // Also add types from topics if needed
           if (Array.isArray(subject.topics)) {
             subject.topics.forEach((topic) => {
               if (topic.meta && topic.meta.type) {
-                categories.add(topic.meta.type); // Capture types from topics
+                categories.add(topic.meta.type);
               }
             });
           }
         });
       });
 
-      // Convert the set to an array and sort it
       const sortedCategories = Array.from(categories).sort();
 
       sortedCategories.forEach((category) => {
         const li = document.createElement("li");
         li.textContent = category;
-        li.tabIndex = 0; // Make the category tabbable
+        li.tabIndex = 0;
 
         li.addEventListener("click", () => {
           filterByCategory(category);
           highlightActiveFilter(li, ".categories li");
         });
 
-        // Allow navigation with Enter key
         li.addEventListener("keydown", (event) => {
           if (event.key === "Enter") {
             event.preventDefault();
@@ -738,9 +758,9 @@ function handleOnReadyKnowledge() {
       const resultsContainer = document.querySelector(".options");
       resultsContainer.innerHTML = "";
 
-      const visibleLetters = new Set(); // Set to keep track of visible letters
+      const visibleLetters = new Set();
 
-      let options = []; // Array to hold all options
+      let options = [];
 
       filteredServices.forEach((service) => {
         if (Array.isArray(service.subjects)) {
@@ -759,7 +779,6 @@ function handleOnReadyKnowledge() {
               card.appendChild(title);
               card.appendChild(description);
 
-              // Store detailed option info for later use
               card.dataset.option = JSON.stringify({
                 id: subject.id,
                 name: subject.name,
@@ -776,7 +795,6 @@ function handleOnReadyKnowledge() {
 
               options.push(card);
 
-              // Track visible letter for A-Z filter
               if (subject.name) {
                 visibleLetters.add(subject.name[0].toUpperCase());
               }
@@ -798,7 +816,6 @@ function handleOnReadyKnowledge() {
                   card.appendChild(title);
                   card.appendChild(description);
 
-                  // Store detailed option info for later use
                   card.dataset.option = JSON.stringify({
                     id: topic.id,
                     name: topic.name,
@@ -816,7 +833,6 @@ function handleOnReadyKnowledge() {
 
                   options.push(card);
 
-                  // Track visible letter for A-Z filter
                   if (topic.name) {
                     visibleLetters.add(topic.name[0].toUpperCase());
                   }
@@ -827,14 +843,12 @@ function handleOnReadyKnowledge() {
         }
       });
 
-      // Sort options alphabetically by name
       options.sort((a, b) => {
         const nameA = JSON.parse(a.dataset.option).name.toUpperCase();
         const nameB = JSON.parse(b.dataset.option).name.toUpperCase();
         return nameA.localeCompare(nameB);
       });
 
-      // Append sorted options to the container
       options.forEach((card) => {
         resultsContainer.appendChild(card);
 
@@ -860,7 +874,6 @@ function handleOnReadyKnowledge() {
       });
 
       if (updateAtoZ) {
-        // Update A-Z filter with the visible letters
         createAtoZFilter(visibleLetters);
       }
     }
@@ -877,7 +890,6 @@ function handleOnReadyKnowledge() {
         )
       );
 
-      // Ensure the filtering distinguishes between subjects and topics
       const refinedFilteredServices = filteredServices.map((service) => {
         return {
           ...service,
@@ -888,26 +900,23 @@ function handleOnReadyKnowledge() {
                 ? subject.topics.filter((topic) =>
                     topic.name.toUpperCase().startsWith(letter)
                   )
-                : [], // Ensure topics is an array before filtering
+                : [],
             }))
             .filter(
               (subject) =>
                 subject.name.toUpperCase().startsWith(letter) ||
-                subject.topics.length > 0 // Only keep subjects that match the letter or have matching topics
+                subject.topics.length > 0
             ),
         };
       });
 
-      // Update the display with the filtered options
       createOptions(refinedFilteredServices, false);
 
-      // Clear active class from categories
       clearActiveFilters(".categories li");
 
-      // Highlight the selected letter
       const activeLetterButton = document.querySelector(
         `.a-z-filter button:nth-of-type(${letter.charCodeAt(0) - 64})`
-      ); // Adjust for 1-based index
+      );
       highlightActiveFilter(activeLetterButton, ".a-z-filter button");
     }
 
@@ -923,7 +932,6 @@ function handleOnReadyKnowledge() {
         )
       );
 
-      // Ensure the filtering distinguishes between subjects and topics
       const refinedFilteredServices = filteredServices.map((service) => {
         return {
           ...service,
@@ -934,23 +942,20 @@ function handleOnReadyKnowledge() {
                 ? subject.topics.filter(
                     (topic) => topic.meta && topic.meta.type === category
                   )
-                : [], // Ensure topics is an array before filtering
+                : [],
             }))
             .filter(
               (subject) =>
                 (subject.meta && subject.meta.type === category) ||
-                subject.topics.length > 0 // Only keep subjects with valid topics or matching meta.type
+                subject.topics.length > 0
             ),
         };
       });
 
-      // Update the display with the filtered options
       createOptions(refinedFilteredServices, false);
 
-      // Clear active class from letter filters
       clearActiveFilters(".a-z-filter button");
 
-      // Highlight the selected category
       const activeCategoryButton = Array.from(
         document.querySelectorAll(".categories li")
       ).find((li) => li.textContent.trim() === category);
@@ -969,12 +974,9 @@ function handleOnReadyKnowledge() {
       activeElements.forEach((el) => el.classList.remove("active"));
     }
 
-    // Ensure services is an array before creating filters and options
     if (Array.isArray(services)) {
       createCategories();
-      createOptions(services); // Initialize with all services
-    } else {
-      console.error("services is not defined or not an array");
+      createOptions(services);
     }
   }
 
