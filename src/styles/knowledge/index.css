@@ -260,7 +260,10 @@ small {
   cursor: default;
 }
 
-#dform_container #dform_widget_button_but_main_menu_service_menu {
+#dform_container #dform_widget_button_but_main_menu_service_menu,
+#dform_container #dform_widget_button_but_latest_news,
+#dform_container #dform_widget_button_but_search_results,
+#dform_container #dform_widget_button_but_service_a_z {
     clip-path: unset;
 }
 
