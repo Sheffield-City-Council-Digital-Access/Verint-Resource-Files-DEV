@@ -303,58 +303,58 @@ function handleOnReadyKnowledge() {
 
   createCards(knowledge, serviceMenuContainer);
 
-  const subjectMenuButtons = document.querySelectorAll(".subject-menu-btn");
-  const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
+  // const subjectMenuButtons = document.querySelectorAll(".subject-menu-btn");
+  // const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
 
-  function renderSubjectMenu(label) {
-    const service = knowledge.find((service) =>
-      service.subjects.some((sub) => sub.name === label)
-    );
+  // function renderSubjectMenu(label) {
+  //   const service = knowledge.find((service) =>
+  //     service.subjects.some((sub) => sub.name === label)
+  //   );
 
-    if (service) {
-      const subject = service.subjects.find((sub) => sub.name === label);
-      if (subject) {
-        createCards(subject.topics || [], subjectMenuContainer);
-        KDF.gotoPage("page_subject_menu", true, true, true);
-      }
-    } else {
-      console.error("Subject not found in knowledge");
-    }
-  }
+  //   if (service) {
+  //     const subject = service.subjects.find((sub) => sub.name === label);
+  //     if (subject) {
+  //       createCards(subject.topics || [], subjectMenuContainer);
+  //       KDF.gotoPage("page_subject_menu", true, true, true);
+  //     }
+  //   } else {
+  //     console.error("Subject not found in knowledge");
+  //   }
+  // }
 
-  function renderTopicMenu(subjectLabel) {
-    let found = false;
+  // function renderTopicMenu(subjectLabel) {
+  //   let found = false;
 
-    knowledge.forEach((service) => {
-      const subject = service.subjects.find((sub) => sub.name === subjectLabel);
+  //   knowledge.forEach((service) => {
+  //     const subject = service.subjects.find((sub) => sub.name === subjectLabel);
 
-      if (subject && subject.topics) {
-        createCards(subject.topics, topicsMenuContainer);
-        KDF.gotoPage("page_topic_menu", true, true, true);
-        found = true;
-      }
-    });
+  //     if (subject && subject.topics) {
+  //       createCards(subject.topics, topicsMenuContainer);
+  //       KDF.gotoPage("page_topic_menu", true, true, true);
+  //       found = true;
+  //     }
+  //   });
 
-    if (!found) {
-      console.error("No topics found for subject:", subjectLabel);
-    }
-  }
+  //   if (!found) {
+  //     console.error("No topics found for subject:", subjectLabel);
+  //   }
+  // }
 
-  subjectMenuButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      console.log(button);
-      const label = button.textContent;
-      renderSubjectMenu(label);
-    });
-  });
+  // subjectMenuButtons.forEach((button) => {
+  //   button.addEventListener("click", () => {
+  //     console.log(button);
+  //     const label = button.textContent;
+  //     renderSubjectMenu(label);
+  //   });
+  // });
 
-  topicMenuButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      console.log(button);
-      const label = button.textContent;
-      renderTopicMenu(label);
-    });
-  });
+  // topicMenuButtons.forEach((button) => {
+  //   button.addEventListener("click", () => {
+  //     console.log(button);
+  //     const label = button.textContent;
+  //     renderTopicMenu(label);
+  //   });
+  // });
 
   // --- LATEST NEWS -------------------------------------------------------- \\
 
