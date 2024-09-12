@@ -566,8 +566,8 @@ function handleOnReadyKnowledge() {
       enquiryType = result.title || result.name;
 
       const subjectBCElement = document.querySelectorAll(".subject-menu-btn");
-      const topicBCElement = document.querySelectorAll(".topic-menu-btn");
       subjectBCElement.textContent = result.serviceName;
+      const topicBCElement = document.querySelectorAll(".topic-menu-btn");
 
       // if (result.subjectName) {
       //   subjectBCElement.textContent = result.subjectName;
