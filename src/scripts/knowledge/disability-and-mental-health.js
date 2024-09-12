@@ -95,5 +95,5 @@ const disabilityAndMentalHealth = new ServiceDaMH(
   'disabilityAndMentalHealth',
   'Disability and Mental Health',
   `Help and support, travel and transport, equipment, children with disabilities, care and carers, mental health services…`,
-  [disabledTravelPermit,]
+  ['disabledTravelPermit',]
 );
