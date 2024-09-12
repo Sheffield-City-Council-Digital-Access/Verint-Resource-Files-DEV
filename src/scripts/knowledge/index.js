@@ -303,14 +303,13 @@ function handleOnReadyKnowledge() {
 
   createCards(knowledge, serviceMenuContainer);
 
-  const subjectMenuBtn = document.querySelector(".subject-menu-btn");
-  const topicMenuBtn = document.querySelector(".topic-menu-btn");
+  const subjectMenuButtons = document.querySelectorAll(".subject-menu-btn");
+  const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
 
   function renderSubjectMenu(label) {
     const subject = housing.subjects.find((sub) => sub.name === label);
     if (subject) {
       createCards(subject.topics, subjectMenuContainer);
-      subjectMenuBtn.textContent = subject.name;
       KDF.gotoPage("page_subject_menu", true, true, true);
     }
   }
@@ -320,22 +319,25 @@ function handleOnReadyKnowledge() {
       const topic = sub.topics.find((top) => top.name === label);
       if (topic) {
         createCards([topic], topicsMenuContainer);
-        topicMenuBtn.textContent = topic.name;
         KDF.gotoPage("page_topic_menu", true, true, true);
       }
     });
   }
 
-  subjectMenuBtn.addEventListener("click", () => {
-    console.log(subjectMenuBtn);
-    const label = subjectMenuBtn.textContent;
-    renderSubjectMenu(label);
+  subjectMenuButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      console.log(button);
+      const label = button.textContent;
+      renderSubjectMenu(label);
+    });
   });
 
-  topicMenuBtn.addEventListener("click", () => {
-    console.log(topicMenuBtn);
-    const label = topicMenuBtn.textContent;
-    renderTopicMenu(label);
+  topicMenuButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      console.log(button);
+      const label = button.textContent;
+      renderTopicMenu(label);
+    });
   });
 
   // --- LATEST NEWS -------------------------------------------------------- \\
