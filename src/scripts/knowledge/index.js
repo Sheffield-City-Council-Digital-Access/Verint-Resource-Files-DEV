@@ -196,14 +196,14 @@ function handleOnReadyKnowledge() {
           const subjectMenuButtons =
             document.querySelectorAll(".subject-menu-btn");
 
-          if (item.topics) {
-            topicMenuButtons.forEach((btn) => {
-              btn.style.display = "block";
-            });
-            subjectMenuButtons.forEach((btn) => {
-              btn.style.display = "none";
-            });
-          }
+          // if (item.topics) {
+          //   topicMenuButtons.forEach((btn) => {
+          //     btn.style.display = "block";
+          //   });
+          //   subjectMenuButtons.forEach((btn) => {
+          //     btn.style.display = "none";
+          //   });
+          // }
 
           hideShowElement(
             item.subjects ? "page_subject_menu" : "page_topic_menu",
