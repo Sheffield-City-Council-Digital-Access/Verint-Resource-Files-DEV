@@ -307,21 +307,40 @@ function handleOnReadyKnowledge() {
   const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
 
   function renderSubjectMenu(label) {
-    const subject = housing.subjects.find((sub) => sub.name === label);
-    if (subject) {
-      createCards(subject.topics, subjectMenuContainer);
-      KDF.gotoPage("page_subject_menu", true, true, true);
+    const service = knowledge.find((service) =>
+      service.subjects.some((sub) => sub.name === label)
+    );
+
+    if (service) {
+      const subject = service.subjects.find((sub) => sub.name === label);
+      if (subject) {
+        createCards(subject.topics || [], subjectMenuContainer);
+        KDF.gotoPage("page_subject_menu", true, true, true);
+      }
+    } else {
+      console.error("Subject not found in knowledge");
     }
   }
 
   function renderTopicMenu(label) {
-    housing.subjects.forEach((sub) => {
-      const topic = sub.topics.find((top) => top.name === label);
-      if (topic) {
-        createCards([topic], topicsMenuContainer);
-        KDF.gotoPage("page_topic_menu", true, true, true);
-      }
+    let found = false;
+
+    knowledge.forEach((service) => {
+      service.subjects.forEach((sub) => {
+        const topic = sub.topics
+          ? sub.topics.find((top) => top.name === label)
+          : null;
+        if (topic) {
+          createCards([topic], topicsMenuContainer);
+          KDF.gotoPage("page_topic_menu", true, true, true);
+          found = true;
+        }
+      });
     });
+
+    if (!found) {
+      console.error("Topic not found in knowledge");
+    }
   }
 
   subjectMenuButtons.forEach((button) => {
