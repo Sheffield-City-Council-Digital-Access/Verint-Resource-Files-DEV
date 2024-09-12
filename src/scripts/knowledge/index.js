@@ -558,7 +558,7 @@ function handleOnReadyKnowledge() {
   }
 
   function handleCardClick(result) {
-    console.log(result);
+    console.log(result, result.serviceName);
     if (result.type === "knowledge") {
       redirectToForm = result.process.formName ? result.process.formName : "";
       tranferTypeKey = result.transfer.typeKey ? result.transfer.typeKey : "";
@@ -566,19 +566,25 @@ function handleOnReadyKnowledge() {
       enquiryType = result.title || result.name;
 
       const subjectBCElement = document.querySelectorAll(".subject-menu-btn");
-      subjectBCElement.textContent = result.serviceName;
-      const topicBCElement = document.querySelectorAll(".topic-menu-btn");
+      if (subjectBCElement.length > 0) {
+        subjectBCElement.forEach((subjectBCElement) => {
+          subjectBCElement.textContent = result.serviceName;
+        });
+      }
 
-      // if (result.subjectName) {
-      //   subjectBCElement.textContent = result.subjectName;
-      //   subjectBCElement.forEach((btn) => {
-      //     btn.style.display = "block";
-      //   });
-      // } else {
-      //   topicBCElement.forEach((btn) => {
-      //     btn.style.display = "none";
-      //   });
-      // }
+      const topicBCElement = document.querySelectorAll(".topic-menu-btn");
+      if (result.subjectName) {
+        if (topicBCElement.length > 0) {
+          topicBCElement.forEach((btn) => {
+            btn.textContent = result.subjectName;
+            btn.style.display = "block";
+          });
+        }
+      } else {
+        topicBCElement.forEach((btn) => {
+          btn.style.display = "none";
+        });
+      }
 
       const breadcrumbElement = document.querySelector(".content-btn");
       breadcrumbElement.textContent = enquiryType;
