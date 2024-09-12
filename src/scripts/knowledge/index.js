@@ -510,6 +510,14 @@ function handleOnReadyKnowledge() {
     const resultsContainer = document.getElementById("search-results");
     resultsContainer.innerHTML = "";
 
+    if (!results || results.length === 0) {
+      const noResultsMessage = document.createElement("div");
+      noResultsMessage.classList.add("no-results-message");
+      noResultsMessage.textContent = "No results found.";
+      resultsContainer.appendChild(noResultsMessage);
+      return;
+    }
+
     results.forEach((result, index) => {
       const card = document.createElement("div");
       card.classList.add("search-card");

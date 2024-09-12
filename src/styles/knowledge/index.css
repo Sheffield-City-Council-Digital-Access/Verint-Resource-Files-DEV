@@ -94,7 +94,7 @@ small {
   background: var(--color-grey-1);
 }
 
-#service-a-z-container .search-card {
+#service-a-z-container>.options>.search-card {
   background: var(--color-white);
 }
 
