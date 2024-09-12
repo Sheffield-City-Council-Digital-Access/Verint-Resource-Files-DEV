@@ -94,6 +94,10 @@ small {
   background: var(--color-grey-1);
 }
 
+#service-a-z-container .search-card {
+  background: var(--color-white);
+}
+
 .search-card:hover {
   background-color: var(--color-white);
   border-left: .4rem solid var(--color-primary);
