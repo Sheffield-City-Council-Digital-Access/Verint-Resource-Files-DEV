@@ -196,14 +196,7 @@ function handleOnReadyKnowledge() {
           const subjectMenuButtons =
             document.querySelectorAll(".subject-menu-btn");
 
-          if (item.subjects) {
-            topicMenuButtons.forEach((btn) => {
-              btn.style.display = "none";
-            });
-            subjectMenuButtons.forEach((btn) => {
-              btn.style.display = "block";
-            });
-          } else if (item.topics) {
+          if (item.topics) {
             topicMenuButtons.forEach((btn) => {
               btn.style.display = "block";
             });
