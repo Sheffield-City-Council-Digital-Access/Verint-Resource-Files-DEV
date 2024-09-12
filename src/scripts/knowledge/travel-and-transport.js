@@ -50,67 +50,44 @@ const disabledTravelPermit = new ContentDTP(
   "Disabled Travel Permit",
   "What is the Eligibility Criteria for a Disabled Travel Permit",
   `
-
-    <p> You may qualify for a pass if you're aged between 5 and 66 and meet one of the following criteria:</p>
-
     <p>
-
+      You may qualify for a pass if you're aged between 5 and 66 and meet one of the following criteria:
+    </p>
+    <p>
         <ul>
-
           <li>a current blue badge holder</li>
-
           <li>registered blind, partially sighted or deaf</li>
-
           <li>registered with Social Services as having a learning disability</li>
-
           <li>unable to use both of your arms</li>
-
           <li>unable to drive because of a health problem, such as autism or epilepsy</li>
-
           <li>currently suffering from, a psychiatric disorder, or have an enhanced level care programme approach</li>
-
           <li>unable to speak</li>
-
           <li>suffering from a substantial and long-term disabilities or injuries which severely impacts your ability to walk</li>
-
         </ul>
-
-      </p>
-
+    </p>
       <h3>How long does a Disabled Travel Permit last for</h3>
-
-      <p>If your application is successful, passes are issued between 1 and 5 years the timescale is dependent on your qualifying criteria, you will be made aware of the timescale when your application is approved.<br>
-
-        If you have any supporting evidence/eligibility that has an end date, your pass will be issued up to that date.<br>
-
-        If during the time you have the pass, you would turn 66, your pass will expire on your 66th birthday.</p></p>
-
-      <h3>How do i appeal the decision</h3>
-
       <p>
-
+        If your application is successful, passes are issued between 1 and 5 years the timescale is dependent on your qualifying criteria, you will be made aware of the timescale when your application is approved.<br>
+        If you have any supporting evidence/eligibility that has an end date, your pass will be issued up to that date.<br>
+        If during the time you have the pass, you would turn 66, your pass will expire on your 66th birthday.
+      </p>
+      <h3>How do i appeal the decision</h3>
+      <p>
         Appeals must be made in writing to:<br>
-
         Customer Services<br>
-
         Floor 2<br>
-
         Howden House<br>
-
         1 Union Street<br>
-
         Sheffield<br>
-
-        S1 2SH</p>
-
+        S1 2SH
+      </p>
       <h3>When can i use my Travel Permit</h3>
-
-      <p>A disabled persons pass enables free public transport on buses, trams and trains.</p>
-
-      <p>If the Pass is being used within South Yorkshire the pass can be used at all times of the day, however if the pass is being used beyond South Yorkshire (within England or Wales) your pass is only valid between 9:30am - 11pm.
-
-</p>
-
+      <p>
+        A disabled persons pass enables free public transport on buses, trams and trains.
+      </p>
+      <p>
+        If the Pass is being used within South Yorkshire the pass can be used at all times of the day, however if the pass is being used beyond South Yorkshire (within England or Wales) your pass is only valid between 9:30am - 11pm.
+      </p>
        `,
 
   {
