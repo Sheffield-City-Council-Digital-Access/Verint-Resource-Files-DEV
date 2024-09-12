@@ -217,6 +217,7 @@ small {
 
 #dform_container button.breadcrumb-btn:hover:not([disabled]),
 #dform_container button.breadcrumb-btn:focus:not([disabled]) {
+  color: var(--color-white);
   background-color: #007bff !important;
   text-decoration: underline;
   outline: none;
