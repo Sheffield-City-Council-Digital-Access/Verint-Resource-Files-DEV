@@ -558,6 +558,7 @@ function handleOnReadyKnowledge() {
   }
 
   function handleCardClick(result) {
+    console.log(result);
     if (result.type === "knowledge") {
       redirectToForm = result.process.formName ? result.process.formName : "";
       tranferTypeKey = result.transfer.typeKey ? result.transfer.typeKey : "";
@@ -782,7 +783,7 @@ function handleOnReadyKnowledge() {
 
               card.appendChild(title);
               card.appendChild(description);
-              console.log(service);
+
               // Store detailed option info for later use
               card.dataset.option = JSON.stringify({
                 id: subject.id,
@@ -834,6 +835,7 @@ function handleOnReadyKnowledge() {
                     meta: topic.meta,
                     lastModified: topic.lastModified,
                     serviceName: service.name,
+                    subjectName: subject.name,
                     type: "knowledge",
                   });
 
