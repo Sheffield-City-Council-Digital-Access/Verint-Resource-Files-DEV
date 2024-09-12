@@ -45,7 +45,7 @@ class ContentTaT extends CoreTaT {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-const disabledTravelPermit = new ContentDTP(
+const disabledTravelPermit = new ContentTaT(
   "disabledTravelPermit",
   "Disabled Travel Permit",
   "What is the Eligibility Criteria for a Disabled Travel Permit",
