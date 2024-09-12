@@ -513,7 +513,7 @@ function handleOnReadyKnowledge() {
     if (!results || results.length === 0) {
       const noResultsMessage = document.createElement("div");
       noResultsMessage.classList.add("no-results-message");
-      noResultsMessage.textContent = "No results found.";
+      noResultsMessage.textContent = "No results found";
       resultsContainer.appendChild(noResultsMessage);
       return;
     }
