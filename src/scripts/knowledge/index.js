@@ -565,10 +565,29 @@ function handleOnReadyKnowledge() {
       finishTypeKey = result.finish.typeKey ? result.finish.typeKey : "";
       enquiryType = result.title || result.name;
 
+      const subjectBCElement = document.querySelectorAll(".subject-menu-btn");
+      const topicBCElement = document.querySelectorAll(".topic-menu-btn");
+
+      subjectBCElement.textContent = result.serviceName;
+
+      if (result.subjectName) {
+        topicBCElement.textContent = result.subjectName;
+        topicBCElement.forEach((btn) => {
+          btn.style.display = "block";
+        });
+      } else {
+        topicBCElement.forEach((btn) => {
+          btn.style.display = "none";
+        });
+      }
+
+      const breadcrumbElement = document.querySelector(".content-btn");
+      breadcrumbElement.textContent = enquiryType;
+
       const titleElement = document.getElementById(
         "dform_widget_header_hrd_page_title_content"
       );
-      titleElement.textContent = result.title || result.name;
+      titleElement.textContent = enquiryType;
 
       const contentContainer = document.getElementById(
         "dform_widget_html_ahtm_content_container"
