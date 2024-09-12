@@ -88,20 +88,15 @@ const disabledTravelPermit = new ContentTaT(
       <p>
         If the Pass is being used within South Yorkshire the pass can be used at all times of the day, however if the pass is being used beyond South Yorkshire (within England or Wales) your pass is only valid between 9:30am - 11pm.
       </p>
-       `,
-
+   `,
   {
     buttonLabel: "Apply for disabled travel permit",
     formName: "disabled_travel_pass",
   },
-
   false,
-
   { typeKey: "disabled_travel_pass_information_provided" },
-
   {
-    type: "Application",
-
+    type: "Apply",
     keywords: [
       "disabled travel pass",
       "dissabled ",
@@ -122,10 +117,8 @@ const disabledTravelPermit = new ContentTaT(
       "dtp",
       "mobility",
     ],
-
     categories: ["Travel Permit", "Disablity"],
   },
-
   { date: "11/09/2024", name: "Dinah Williams" }
 );
 

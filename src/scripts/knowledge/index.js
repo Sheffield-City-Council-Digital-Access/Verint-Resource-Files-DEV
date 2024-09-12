@@ -782,7 +782,7 @@ function handleOnReadyKnowledge() {
 
               card.appendChild(title);
               card.appendChild(description);
-
+              console.log(service);
               // Store detailed option info for later use
               card.dataset.option = JSON.stringify({
                 id: subject.id,
