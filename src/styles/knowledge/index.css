@@ -29,14 +29,6 @@ form.dform {
   max-width: unset;
 }
 
-#dform_page_page_latest_news {
-  padding: 5rem;
-}
-
-#dform_page_page_latest_news {
-  background: var(--color-grey-2);
-}
-
 #dform_widget_buttonset_bset_actions_initial_page {
   margin-top: 4rem !important;
 }
@@ -268,6 +260,13 @@ small {
 }
 
 /* ----- LATEST NEWS -------------------------------------------------------- */
+
+#dform_container div.container.area.latest-news-area {
+  width: 98%;
+  margin-inline: auto;
+  padding: 4rem;
+  background: var(--color-grey-2);
+}
 
 #dform_widget_html_ahtm_latest_news_container {
   margin-bottom: 7rem !important;
