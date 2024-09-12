@@ -174,6 +174,7 @@ function handleOnReadyKnowledge() {
         if (nextLevelData) {
           previousData = nextLevelData;
           currentLevel = item.subjects ? "sub" : "topics";
+
           createCards(
             nextLevelData,
             item.subjects ? subjectMenuContainer : topicsMenuContainer
@@ -189,6 +190,26 @@ function handleOnReadyKnowledge() {
             });
           } else {
             console.error("Title elements not found");
+          }
+
+          const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
+          const subjectMenuButtons =
+            document.querySelectorAll(".subject-menu-btn");
+
+          if (item.subjects) {
+            topicMenuButtons.forEach((btn) => {
+              btn.style.display = "none";
+            });
+            subjectMenuButtons.forEach((btn) => {
+              btn.style.display = "block";
+            });
+          } else if (item.topics) {
+            topicMenuButtons.forEach((btn) => {
+              btn.style.display = "block";
+            });
+            subjectMenuButtons.forEach((btn) => {
+              btn.style.display = "none";
+            });
           }
 
           hideShowElement(
