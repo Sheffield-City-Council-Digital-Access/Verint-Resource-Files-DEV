@@ -179,13 +179,16 @@ function handleOnReadyKnowledge() {
             item.subjects ? subjectMenuContainer : topicsMenuContainer
           );
 
-          const titleElement = document.querySelector(
+          const breadcrumbElements = document.querySelectorAll(
             item.subjects ? ".subject-menu-btn" : ".topic-menu-btn"
           );
-          if (titleElement) {
-            titleElement.textContent = item.name;
+
+          if (breadcrumbElements.length > 0) {
+            breadcrumbElements.forEach((breadcrumbElement) => {
+              breadcrumbElement.textContent = item.name;
+            });
           } else {
-            console.error("Title element not found");
+            console.error("Title elements not found");
           }
 
           hideShowElement(
