@@ -327,11 +327,13 @@ function handleOnReadyKnowledge() {
   }
 
   subjectMenuBtn.addEventListener("click", () => {
+    console.log(subjectMenuBtn);
     const label = subjectMenuBtn.textContent;
     renderSubjectMenu(label);
   });
 
   topicMenuBtn.addEventListener("click", () => {
+    console.log(topicMenuBtn);
     const label = topicMenuBtn.textContent;
     renderTopicMenu(label);
   });
