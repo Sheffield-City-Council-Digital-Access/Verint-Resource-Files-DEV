@@ -8,6 +8,14 @@ form.dform {
   margin: 0 !important;
 }
 
+h1, #dform_container h1, #dform_container .header1 {
+  margin: 0 0 3rem;
+  padding: 0;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-family: var(--font-heading);
+}
+
 #dform_page_page_service_menu>div>div,
 #dform_page_page_subject_menu>div>div,
 #dform_page_page_topic_menu>div>div,
@@ -182,7 +190,7 @@ small {
   list-style: none;
   padding: 0;
   margin: 0;
-  transform: translateX(2.1%);
+  transform: translateX(1.5%);
 }
 
 #dform_container button.breadcrumb-btn {
@@ -194,17 +202,19 @@ small {
   font: inherit;
   cursor: pointer;
   text-decoration: none;
-  white-space: nowrap;
   clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
   transition: background-color 0.3s ease;
   z-index: 1;
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
   margin-left: -3.6%;
   width: 25%;
   height: 3rem;
-  font-size: 2rem;
+  font-size: clamp(1rem, 2vw, 2rem);
+  white-space: normal;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 #dform_container button.breadcrumb-btn:hover:not([disabled]),
