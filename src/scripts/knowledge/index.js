@@ -567,19 +567,18 @@ function handleOnReadyKnowledge() {
 
       const subjectBCElement = document.querySelectorAll(".subject-menu-btn");
       const topicBCElement = document.querySelectorAll(".topic-menu-btn");
-
       subjectBCElement.textContent = result.serviceName;
 
-      if (result.subjectName) {
-        subjectBCElement.textContent = result.subjectName;
-        subjectBCElement.forEach((btn) => {
-          btn.style.display = "block";
-        });
-      } else {
-        topicBCElement.forEach((btn) => {
-          btn.style.display = "none";
-        });
-      }
+      // if (result.subjectName) {
+      //   subjectBCElement.textContent = result.subjectName;
+      //   subjectBCElement.forEach((btn) => {
+      //     btn.style.display = "block";
+      //   });
+      // } else {
+      //   topicBCElement.forEach((btn) => {
+      //     btn.style.display = "none";
+      //   });
+      // }
 
       const breadcrumbElement = document.querySelector(".content-btn");
       breadcrumbElement.textContent = enquiryType;
