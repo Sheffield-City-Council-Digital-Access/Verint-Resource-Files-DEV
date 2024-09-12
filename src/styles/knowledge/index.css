@@ -210,15 +210,15 @@ small {
   clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
   transition: background-color 0.3s ease;
   z-index: 1;
-  display: inline-flex !important;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-left: -3.6%;
-  width: 25%;
-  height: 3rem;
+  width: 100%;
+  max-width: 33%;
+  height: 4rem;
   font-size: clamp(1rem, 2vw, 2rem);
   white-space: normal;
-  flex-wrap: wrap;
   overflow: hidden;
 }
 
