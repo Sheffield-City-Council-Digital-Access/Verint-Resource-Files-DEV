@@ -179,9 +179,8 @@ small {
 /* ----- BREADCRUMB --------------------------------------------------------- */
 
 #dform_container div.container.area.breadcrumb-area {
-    background: white;
-    padding: 2rem;
-    padding-left: 3rem;
+  background: white;
+  padding: .5rem 2rem 2rem 3rem;
 }
 
 #dform_container .dform_widget_type_buttonset.breadcrumb-container {

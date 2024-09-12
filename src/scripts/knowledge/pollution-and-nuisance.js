@@ -21,7 +21,17 @@ class MenuPaN extends CorePaN {
 }
 
 class ContentPaN extends CorePaN {
-  constructor(id, name, description, content, process, transfer, finish, meta, lastModified) {
+  constructor(
+    id,
+    name,
+    description,
+    content,
+    process,
+    transfer,
+    finish,
+    meta,
+    lastModified
+  ) {
     super(id, name, description);
     this.content = content;
     this.process = process;
@@ -36,15 +46,15 @@ class ContentPaN extends CorePaN {
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
 const abandonedVehicles = new ContentPaN(
-  'abandonedVehicles',
-  'Abandoned vehicles',
-  'Report an abandoned vehicle',
+  "abandonedVehicles",
+  "Abandoned vehicles",
+  "Report an abandoned vehicle",
   `
     <p>
       We have a duty to remove abandoned vehicles.The decision as to whether
       a vehicle is abandoned is taken by an authorised Council Officer. Abandoning
       a vehicle is an offence under the Refuse disposal (Amenity) Act 1978 and 
-      carries a maximum fine of £2, 500 and / or 3 months imprisonment.
+      carries a maximum fine of £2,500 and / or 3 months imprisonment.
     </p>
     <h3>Who is responsible for removing the abandoned vehicle</h3>
     <p>
@@ -79,29 +89,36 @@ const abandonedVehicles = new ContentPaN(
       </ul>
     </p>
   `,
-  { buttonLabel: 'Report an abandoned vehicle', formName: 'report_abandoned_vehicle' },
-  { typeKey: 'abandoned_vehicle_transferred_to_service' },
-  { typeKey: 'abandoned_vehicle_information_provided' },
   {
-    type: 'Report',
-    keywords: [
-      'Abandoned vehicles',
-      'abandned', 'abondened', 'abandonded', 'abondoned',
-      'vechicle', 'vehcile', 'vehical', 'vehilce'
-    ],
-    categories: ['Pollution and Nuisance', 'Waste Management'],
+    buttonLabel: "Report an abandoned vehicle",
+    formName: "report_abandoned_vehicle",
   },
-  { date: '05/09/2024', name: 'Elliott Griffiths' }
+  { typeKey: "abandoned_vehicle_transferred_to_service" },
+  { typeKey: "abandoned_vehicle_information_provided" },
+  {
+    type: "Report",
+    keywords: [
+      "Abandoned vehicles",
+      "abandned",
+      "abondened",
+      "abandonded",
+      "abondoned",
+      "vechicle",
+      "vehcile",
+      "vehical",
+      "vehilce",
+    ],
+    categories: ["Pollution and Nuisance", "Waste Management"],
+  },
+  { date: "05/09/2024", name: "Elliott Griffiths" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const pollutionAndNuisance = new ServicePaN(
-  'pollutionAndNuisance',
-  'Pollution and Nuisance',
+  "pollutionAndNuisance",
+  "Pollution and Nuisance",
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour…`,
-  [
-    abandonedVehicles
-  ]
+  [abandonedVehicles]
 );
