@@ -8,6 +8,11 @@ form.dform {
   margin: 0 !important;
 }
 
+#dform_container .header-top {
+    display: flex;
+    align-items: center;
+}
+
 h1, #dform_container h1, #dform_container .header1 {
   margin: 0 0 3rem;
   padding: 0;
