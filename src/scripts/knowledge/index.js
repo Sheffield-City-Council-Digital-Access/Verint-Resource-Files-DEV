@@ -322,24 +322,21 @@ function handleOnReadyKnowledge() {
     }
   }
 
-  function renderTopicMenu(label) {
+  function renderTopicMenu(subjectLabel) {
     let found = false;
 
     knowledge.forEach((service) => {
-      service.subjects.forEach((sub) => {
-        const topic = sub.topics
-          ? sub.topics.find((top) => top.name === label)
-          : null;
-        if (topic) {
-          createCards([topic], topicsMenuContainer);
-          KDF.gotoPage("page_topic_menu", true, true, true);
-          found = true;
-        }
-      });
+      const subject = service.subjects.find((sub) => sub.name === subjectLabel);
+
+      if (subject && subject.topics) {
+        createCards(subject.topics, topicsMenuContainer);
+        KDF.gotoPage("page_topic_menu", true, true, true);
+        found = true;
+      }
     });
 
     if (!found) {
-      console.error("Topic not found in knowledge");
+      console.error("No topics found for subject:", subjectLabel);
     }
   }
 
