@@ -1,19 +1,18 @@
 function logArguments(event, kdf, ...args) {
-  console.group(event.type ? event.type : 'event');
-  console.log('event', event);
-  console.log('kdf', kdf);
+  console.group(event.type ? event.type : "event");
+  console.log("event", event);
+  console.log("kdf", kdf);
   args.forEach((arg, index) => {
     console.log(`arg${index + 1}`, arg);
   });
   console.groupEnd();
-
 }
 
 // --- GLOBAL CONSTS AND VARIABLES ----------------------------------------- \\
 
 let customerState = false;
 
-let pageName = '';
+let pageName = "";
 
 let addressSearchType = {};
 
@@ -29,7 +28,6 @@ const formUserPath = [];
 
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
 function handleInitialisingEvent(addDateMessages) {
-
   // --- ADD TAB TITLE AND ICON  ------------------------------------------- \\
 
   (() => {
@@ -47,12 +45,14 @@ function handleInitialisingEvent(addDateMessages) {
     // Update favicon
     const favicon = document.querySelector("link[rel~='icon']");
     if (favicon) {
-      favicon.href = "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
+      favicon.href =
+        "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
     } else {
       // If favicon element doesn't exist, create it and append to head
       const newFavicon = document.createElement("link");
       newFavicon.rel = "icon";
-      newFavicon.href = "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
+      newFavicon.href =
+        "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
       document.head.appendChild(newFavicon);
     }
   })();
@@ -102,7 +102,7 @@ function handleInitialisingEvent(addDateMessages) {
     }
   })();
 
-  if (KDF.kdf().access === 'citizen') {
+  if (KDF.kdf().access === "citizen") {
     // --- ADD FORM HEADER ------------------------------------------------- \\
     (() => {
       // Create the header element
@@ -412,25 +412,28 @@ function handleInitialisingEvent(addDateMessages) {
   (() => {
     const textareas = document.querySelectorAll('div[data-type="textarea"]');
 
-    textareas.forEach(textareaContainer => {
-      const textarea = textareaContainer.querySelector('textarea');
-      const maxLength = textarea.getAttribute('maxlength');
+    textareas.forEach((textareaContainer) => {
+      const textarea = textareaContainer.querySelector("textarea");
+      const maxLength = textarea.getAttribute("maxlength");
       const name = textarea.name;
       if (maxLength > 0) {
         // Remove existing span elements
-        const spans = textareaContainer.querySelectorAll('span');
-        spans.forEach(span => span.remove());
+        const spans = textareaContainer.querySelectorAll("span");
+        spans.forEach((span) => span.remove());
 
         // Create and append the character count div
-        const characterCountDiv = document.createElement('div');
-        characterCountDiv.classList.add('character-count');
-        characterCountDiv.setAttribute('aria-live', 'polite');
+        const characterCountDiv = document.createElement("div");
+        characterCountDiv.classList.add("character-count");
+        characterCountDiv.setAttribute("aria-live", "polite");
         characterCountDiv.id = `characterCounter_${name}`;
         textareaContainer.appendChild(characterCountDiv);
 
-        textarea.addEventListener('input', () => {
+        textarea.addEventListener("input", () => {
           const remainingChars = maxLength - textarea.value.length;
-          characterCountDiv.textContent = remainingChars === 1 ? `${remainingChars} character remaining` : `${remainingChars} characters remaining`;
+          characterCountDiv.textContent =
+            remainingChars === 1
+              ? `${remainingChars} character remaining`
+              : `${remainingChars} characters remaining`;
         });
 
         // Initial character count display
@@ -453,21 +456,21 @@ function handleInitialisingEvent(addDateMessages) {
       console.log(event, xhr, settings, KDF.kdf());
       const { field, token, filename, mimetype } = xhr.responseJSON[0];
       const deleteButton = getFileDeleteByInputId(field);
-      const fileNameField = field.replace('file_', 'txt_file_name_');
+      const fileNameField = field.replace("file_", "txt_file_name_");
 
-      $(`#${field}`).prop('disabled', true).css({
-        "color": "var(--color-background)"
+      $(`#${field}`).prop("disabled", true).css({
+        color: "var(--color-background)",
       });
       $(`#${fileNameField}`).val(filename);
 
       if (deleteButton) {
-        deleteButton.addEventListener('click', () => {
+        deleteButton.addEventListener("click", () => {
           setTimeout(() => {
             if (!KDF.kdf().form.filetokens.includes(token)) {
-              $(`#${field}`).prop('disabled', false).css({
-                "color": "var(--color-black)"
+              $(`#${field}`).prop("disabled", false).css({
+                color: "var(--color-black)",
               });
-              $(`#${fileNameField}`).val('');
+              $(`#${fileNameField}`).val("");
             }
           }, 0);
         });
@@ -480,7 +483,9 @@ function handleInitialisingEvent(addDateMessages) {
   function getFileDeleteByInputId(fileUploadId) {
     const fileUploadElement = document.getElementById(fileUploadId);
     if (fileUploadElement) {
-      const fileDeleteElement = fileUploadElement.closest('.container').querySelector('.file_delete');
+      const fileDeleteElement = fileUploadElement
+        .closest(".container")
+        .querySelector(".file_delete");
       if (fileDeleteElement) {
         return fileDeleteElement;
       }
@@ -492,54 +497,61 @@ function handleInitialisingEvent(addDateMessages) {
 // --- HANDLE ON READY EVENT ----------------------------------------------- \\
 
 function handleOnReadyEvent(event, kdf) {
-
   customerState = kdf.customerset;
 
   // --- ADD CONTENT TO WHY WE NEED DATE OF BIRTH --------------------------- \\
 
-  $('.dob-reason').text('Your date of birth is a helpful way to confirm your identity and protect your information.');
-  $('.their-dob-reason').text('Their date of birth is a helpful way to confirm their identity and protect their information.');
+  $(".dob-reason").text(
+    "Your date of birth is a helpful way to confirm your identity and protect your information."
+  );
+  $(".their-dob-reason").text(
+    "Their date of birth is a helpful way to confirm their identity and protect their information."
+  );
 
   // --- REMOVE TAB INDEX FROM SELECT ELEMENTS ----------------------------- \\
 
-  $('.remove-tab').each(function () {
-    $(this).attr('tabindex', '-1');
+  $(".remove-tab").each(function () {
+    $(this).attr("tabindex", "-1");
   });
 
   // --- SET FORM START DATE AND TIME -------------------------------------- \\
 
   if (!kdf.form.ref) {
-    KDF.setVal('txt_start_date_and_time', formatDateTime().utc);
+    KDF.setVal("txt_start_date_and_time", formatDateTime().utc);
   }
 
   // --- APPLY INTERNAL SYLE CHANGES --------------------------------------- \\
 
-  if (KDF.kdf().access === 'agent') {
+  if (KDF.kdf().access === "agent") {
     const root = document.documentElement;
 
     // --- APPLY INTERNAL SYLE CHANGES ------------------------------------- \\
 
-    root.style.setProperty('--color-background', '#eeeeee');
-    root.style.setProperty('--color-empty-pb', '#e0e0e0');
-    root.style.setProperty('--color-primary', '#007aff');
+    root.style.setProperty("--color-background", "#eeeeee");
+    root.style.setProperty("--color-empty-pb", "#e0e0e0");
+    root.style.setProperty("--color-primary", "#007aff");
 
     $("form.dform").css({
-      "margin": "0 auto",
-      "min-height": "88vh"
+      margin: "0 auto",
+      "min-height": "88vh",
     });
 
     $("#dform_page_complete").css({
-      "margin-inline": "0 40%"
+      "margin-inline": "0 40%",
     });
 
     // --- CHECK AGENT LOCATION -------------------------------------------- \\
 
-    if (kdf.access === 'agent' && kdf.form.name !== 'set_agent_location' && !kdf.form.caseid) {
+    if (
+      kdf.access === "agent" &&
+      kdf.form.name !== "set_agent_location" &&
+      !kdf.form.caseid
+    ) {
       checkAndRefreshAgentLocation();
       // Event listener for closeModal event
-      window.addEventListener('closeModal', function (event) {
-        KDF.setVal('txt_agent_location', event.detail);
-        const modalId = 'setAgentLocationModal';
+      window.addEventListener("closeModal", function (event) {
+        KDF.setVal("txt_agent_location", event.detail);
+        const modalId = "setAgentLocationModal";
         const modal = document.getElementById(modalId);
         if (modal) {
           destroyModal(modal);
@@ -554,28 +566,31 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
 
-  if (kdf.form.complete === 'Y') {
-    KDF.showPage('page_review');
-    KDF.gotoPage('page_review');
-    if (kdf.params.viewmode === 'R') {
+  if (kdf.form.complete === "Y") {
+    KDF.showPage("page_review");
+    KDF.gotoPage("page_review");
+    if (kdf.params.viewmode === "R") {
       KDF.makeReadonly();
-      $('.review-page-edit-button').remove();
+      $(".review-page-edit-button").remove();
       $('.dform_section_box_review div[data-type="buttonset"]').remove();
     } else {
       // use stored page array when case management
-      if (!KDF.kdf().form.name.startsWith('cm_') && !KDF.kdf().form.name.endsWith('_cm')) {
+      if (
+        !KDF.kdf().form.name.startsWith("cm_") &&
+        !KDF.kdf().form.name.endsWith("_cm")
+      ) {
         KDF.makeReadonly();
-        $('.review-page-edit-button').remove();
+        $(".review-page-edit-button").remove();
         $('.dform_section_box_review div[data-type="buttonset"]').remove();
       }
     }
   } else {
     if (kdf.form.caseid && kdf.form.ref) {
-      KDF.showPage('page_review');
-      KDF.gotoPage('page_review');
-      if (kdf.params.viewmode === 'R') {
+      KDF.showPage("page_review");
+      KDF.gotoPage("page_review");
+      if (kdf.params.viewmode === "R") {
         KDF.makeReadonly();
-        $('.review-page-edit-button').remove();
+        $(".review-page-edit-button").remove();
         $('.dform_section_box_review div[data-type="buttonset"]').remove();
       }
     }
@@ -583,54 +598,63 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE FORMAT TITLE CASE ------------------------------------------ \\
 
-  $('.format-title-case').on('change', event => {
+  $(".format-title-case").on("change", (event) => {
     $(`#${event.target.id}`).val(formatTitleCase(event.target.value));
   });
 
   // --- HANDLE FIND BUTTON CLICK ------------------------------------------ \\
 
-  $('.find-btn').on('click', function () {
-    if ($(this).text() === 'Find address') {
+  $(".find-btn").on("click", function () {
+    if ($(this).text() === "Find address") {
       const currentPageId = getCurrentPageId();
-      const container = document.querySelector(`#${currentPageId} .map-container`);
+      const container = document.querySelector(
+        `#${currentPageId} .map-container`
+      );
 
       if (container) {
         container.classList.add("dform_hidden");
       }
-      if ($('.geo-btn-container').find('.dform_validationMessage').length) {
-        $('.geo-btn-container').find('.dform_validationMessage').css('display', 'none');
+      if ($(".geo-btn-container").find(".dform_validationMessage").length) {
+        $(".geo-btn-container")
+          .find(".dform_validationMessage")
+          .css("display", "none");
       }
       resetAddressSearch();
-      setRequiredStateByAlias('postcode', 'required');
+      setRequiredStateByAlias("postcode", "required");
     }
-    if ($(this).text() === 'Find vehicle') {
+    if ($(this).text() === "Find vehicle") {
       resetVehicleSearch();
     }
   });
 
   // --- HANDLE ADDRESS LOOKUP --------------------------------------------- \\
 
-  $('.search-results').on('change', event => {
+  $(".search-results").on("change", (event) => {
     if (event.target.value) {
-      const action = addressSearchType[getCurrentPageId()] === 'local' ? 'retrieve-local-address' : 'retrieve-national-address';
-      KDF.customdata(action, event.target.id, true, true, { propertyId: event.target.value });
+      const action =
+        addressSearchType[getCurrentPageId()] === "local"
+          ? "retrieve-local-address"
+          : "retrieve-national-address";
+      KDF.customdata(action, event.target.id, true, true, {
+        propertyId: event.target.value,
+      });
     }
   });
 
-  $('.address-details').on('click', event => {
+  $(".address-details").on("click", (event) => {
     resetAddressSearch(false);
     showAddressFields();
-    setRequiredStateByAlias('postcode', 'not required');
+    setRequiredStateByAlias("postcode", "not required");
   });
 
   // --- HANDLE MANUAL ADDRESS ENTRY --------------------------------------- \\
 
-  $(`.property, .street-name, .city, .postcode`).on('change', function () {
+  $(`.property, .street-name, .city, .postcode`).on("change", function () {
     const fieldsArray = getValuesOfInputFields([
       { alias: "property" },
       { alias: "streetName" },
       { alias: "city" },
-      { alias: "postCode" }
+      { alias: "postCode" },
     ]);
 
     const fields = fieldsArray.reduce((field, item) => {
@@ -638,29 +662,36 @@ function handleOnReadyEvent(event, kdf) {
       return field;
     }, {});
 
-    if (!fields.property || !fields.streetName || !fields.city || !fields.postCode) {
+    if (
+      !fields.property ||
+      !fields.streetName ||
+      !fields.city ||
+      !fields.postCode
+    ) {
       return;
     }
 
-    const fullAddress = `${formatTitleCase(fields.property)} ${formatTitleCase(fields.streetName)}, ${fields.city.toUpperCase()}, ${fields.postCode.toUpperCase()}`;
+    const fullAddress = `${formatTitleCase(fields.property)} ${formatTitleCase(
+      fields.streetName
+    )}, ${fields.city.toUpperCase()}, ${fields.postCode.toUpperCase()}`;
 
-    setValuesToInputFields([
-      { alias: "fullAddress", value: fullAddress }
-    ]);
+    setValuesToInputFields([{ alias: "fullAddress", value: fullAddress }]);
   });
 
   // --- HANDLE VEHICLE LOOKUP --------------------------------------------- \\
 
-  $('.vehicle-details').on('click', event => {
+  $(".vehicle-details").on("click", (event) => {
     resetVehicleSearch(false);
     showVehicleFields();
   });
 
   // --- HANDLE FIND CURRENT LOCATION CLICK -------------------------------- \\
 
-  $('.geo-btn').on('click', function () {
+  $(".geo-btn").on("click", function () {
     const currentPageId = getCurrentPageId();
-    const container = document.querySelector(`#${currentPageId} .map-container`);
+    const container = document.querySelector(
+      `#${currentPageId} .map-container`
+    );
 
     if (container) {
       container.classList.add("dform_hidden");
@@ -668,11 +699,11 @@ function handleOnReadyEvent(event, kdf) {
     resetAddressSearch();
 
     const $button = $(this);
-    const $container = $button.closest('.geo-btn-container');
-    const $validationMessage = $container.find('.dform_validationMessage');
+    const $container = $button.closest(".geo-btn-container");
+    const $validationMessage = $container.find(".dform_validationMessage");
 
     // Hide the validation message if it's visible
-    if ($validationMessage.is(':visible')) {
+    if ($validationMessage.is(":visible")) {
       $validationMessage.hide();
     }
 
@@ -682,16 +713,26 @@ function handleOnReadyEvent(event, kdf) {
         function (position) {
           const { latitude, longitude } = position.coords;
           console.log(latitude, longitude);
-          KDF.customdata('retrieve-location-from-coordinates', $button.attr('id'), true, true, {
-            longitude: longitude.toString(),
-            latitude: latitude.toString(),
-          });
+          KDF.customdata(
+            "retrieve-location-from-coordinates",
+            $button.attr("id"),
+            true,
+            true,
+            {
+              longitude: longitude.toString(),
+              latitude: latitude.toString(),
+            }
+          );
         },
         function (error) {
-          const errorMessage = error.code === error.PERMISSION_DENIED ? "User denied the request for Geolocation"
-            : error.code === error.POSITION_UNAVAILABLE ? "Location information is unavailable"
-              : error.code === error.TIMEOUT ? "The request to get user location timed out"
-                : "An unknown error occurred";
+          const errorMessage =
+            error.code === error.PERMISSION_DENIED
+              ? "User denied the request for Geolocation"
+              : error.code === error.POSITION_UNAVAILABLE
+              ? "Location information is unavailable"
+              : error.code === error.TIMEOUT
+              ? "The request to get user location timed out"
+              : "An unknown error occurred";
 
           const errorMessageHtml = `
                       <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
@@ -725,12 +766,16 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE FIND ON MAP CLICK ------------------------------------------ \\
 
-  $('.link-btn.map-icon').on('click', function () {
-    if ($('.geo-btn-container').find('.dform_validationMessage').length) {
-      $('.geo-btn-container').find('.dform_validationMessage').css('display', 'none');
+  $(".link-btn.map-icon").on("click", function () {
+    if ($(".geo-btn-container").find(".dform_validationMessage").length) {
+      $(".geo-btn-container")
+        .find(".dform_validationMessage")
+        .css("display", "none");
     }
     const currentPageId = getCurrentPageId();
-    const container = document.querySelector(`#${currentPageId} .map-container`);
+    const container = document.querySelector(
+      `#${currentPageId} .map-container`
+    );
     const elementId = container.id;
     const element = document.getElementById(elementId);
 
@@ -743,55 +788,74 @@ function handleOnReadyEvent(event, kdf) {
         element.classList.add("dform_hidden");
       }
     } else {
-      setRequiredStateByAlias('postcode', 'required');
+      setRequiredStateByAlias("postcode", "required");
     }
     resetAddressSearch();
   });
 
   // --- HANDLE LOCATOR BUTTON CLICK --------------------------------------- \\
 
-  $('.locator-btn, .address-btn').click(function () {
+  $(".locator-btn, .address-btn").click(function () {
     checkAddressHasBeenSet();
   });
 
-  function checkAddressHasBeenSet(action = 'next page') {
+  function checkAddressHasBeenSet(action = "next page") {
     const currentPageId = getCurrentPageId();
 
-    const fullAddress = document.querySelector(`#${currentPageId} input[data-customalias="fullAddress"]`);
+    const fullAddress = document.querySelector(
+      `#${currentPageId} input[data-customalias="fullAddress"]`
+    );
     const fullAddressHasValue = KDF.getVal(fullAddress.name) ? true : false;
 
     if (fullAddressHasValue) {
-      if (action === 'submit') {
-        KDF.gotoPage('complete', true, true, false);
+      if (action === "submit") {
+        KDF.gotoPage("complete", true, true, false);
       } else {
         KDF.gotoNextPage();
       }
     } else {
-      const isMapContainerVisible = $('#map_container').is(':visible');
+      const isMapContainerVisible = $("#map_container").is(":visible");
       if (isMapContainerVisible) {
-        if ($('#map_error').length == '0') {
-          $('#dform_widget_html_ahtm_map_container').prepend('<div id="map_error" class="dform_validationMessage" style="display: block;">Select a location inside the Sheffield area</div>');
+        if ($("#map_error").length == "0") {
+          $("#dform_widget_html_ahtm_map_container").prepend(
+            '<div id="map_error" class="dform_validationMessage" style="display: block;">Select a location inside the Sheffield area</div>'
+          );
         }
-        KDF.setVal('ahtm_map_location_error', 'Select a location inside the Sheffield area');
-        KDF.showWidget('ahtm_map_location_error');
+        KDF.setVal(
+          "ahtm_map_location_error",
+          "Select a location inside the Sheffield area"
+        );
+        KDF.showWidget("ahtm_map_location_error");
       } else {
-        const searchResult = document.querySelector(`#${currentPageId} select[data-customalias="searchResult"]`);
-        const isSearchResultVisible = $(`#${searchResult.id}`).is(':visible');
+        const searchResult = document.querySelector(
+          `#${currentPageId} select[data-customalias="searchResult"]`
+        );
+        const isSearchResultVisible = $(`#${searchResult.id}`).is(":visible");
         if (isSearchResultVisible) {
-          document.querySelector(`div[data-name="${searchResult.name}"] .dform_validationMessage`).style.display = 'block';
+          document.querySelector(
+            `div[data-name="${searchResult.name}"] .dform_validationMessage`
+          ).style.display = "block";
         } else {
-          const postcode = document.querySelector(`#${currentPageId} input[data-customalias="postcode"]`);
+          const postcode = document.querySelector(
+            `#${currentPageId} input[data-customalias="postcode"]`
+          );
           const postcodeHasValue = KDF.getVal(postcode.name) ? true : false;
           if (postcodeHasValue) {
-            const findButton = document.querySelector(`#${currentPageId} .find-btn`);
+            const findButton = document.querySelector(
+              `#${currentPageId} .find-btn`
+            );
             if (findButton) {
               findButton.click();
             } else {
-              document.querySelector(`div[data-name="${postcode.name}"] .dform_validationMessage`).style.display = 'block';
+              document.querySelector(
+                `div[data-name="${postcode.name}"] .dform_validationMessage`
+              ).style.display = "block";
             }
             findButton.click();
           } else {
-            document.querySelector(`div[data-name="${postcode.name}"] .dform_validationMessage`).style.display = 'block';
+            document.querySelector(
+              `div[data-name="${postcode.name}"] .dform_validationMessage`
+            ).style.display = "block";
           }
         }
       }
@@ -800,53 +864,55 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE CUSTOM DATE ------------------------------------------------ \\
 
-  $(`.date-field`).find('.dform_validationMessage').hide();
+  $(`.date-field`).find(".dform_validationMessage").hide();
 
-  $(`.date-dd`)
-    .on("input focusout", function (e) {
-      const parentId = $(this).attr('id').replace("_num_", "_date_").slice(0, -3);
-      if (e.type === "input") {
-        inputDate(this.id, `${this.id.slice(0, -2)}mm`, e.which);
-        return;
-      }
-      if (this.value) $(this).val($(this).val().padStart(2, "0"));
-      handleDateValidation(parentId);
-    });
+  $(`.date-dd`).on("input focusout", function (e) {
+    const parentId = $(this).attr("id").replace("_num_", "_date_").slice(0, -3);
+    if (e.type === "input") {
+      inputDate(this.id, `${this.id.slice(0, -2)}mm`, e.which);
+      return;
+    }
+    if (this.value) $(this).val($(this).val().padStart(2, "0"));
+    handleDateValidation(parentId);
+  });
 
-  $(`.date-mm`)
-    .on("input focusout", function (e) {
-      const parentId = $(this).attr('id').replace("_num_", "_date_").slice(0, -3);
-      const dateMessage = dateMessages[parentId] || defaultDateMessage;
-      const dd = $(`#${this.id.slice(0, -2)}dd`).val();
-      const yy = $(`#${this.id.slice(0, -2)}yy`).val();
-      if (e.type === "input") {
-        inputDate(this.id, `${this.id.slice(0, -2)}yy`, e.which);
-        return;
-      }
-      if (this.value) {
-        $(this).val($(this).val().padStart(2, "0"));
-        return;
-      }
-      if (dd === "") $(`#${this.id.slice(0, -2)}dd`).addClass("dform_fielderror");
-      if (yy === "") $(`#${this.id.slice(0, -2)}yy`).addClass("dform_fielderror");
-      $(`#${parentId}`)
-        .find(".dform_validationMessage")
-        .text(dateMessage)
-        .show();
-      handleDateValidation(parentId);
-    });
+  $(`.date-mm`).on("input focusout", function (e) {
+    const parentId = $(this).attr("id").replace("_num_", "_date_").slice(0, -3);
+    const dateMessage = dateMessages[parentId] || defaultDateMessage;
+    const dd = $(`#${this.id.slice(0, -2)}dd`).val();
+    const yy = $(`#${this.id.slice(0, -2)}yy`).val();
+    if (e.type === "input") {
+      inputDate(this.id, `${this.id.slice(0, -2)}yy`, e.which);
+      return;
+    }
+    if (this.value) {
+      $(this).val($(this).val().padStart(2, "0"));
+      return;
+    }
+    if (dd === "") $(`#${this.id.slice(0, -2)}dd`).addClass("dform_fielderror");
+    if (yy === "") $(`#${this.id.slice(0, -2)}yy`).addClass("dform_fielderror");
+    $(`#${parentId}`).find(".dform_validationMessage").text(dateMessage).show();
+    handleDateValidation(parentId);
+  });
 
   $(`.date-yy`)
     .attr("min", function () {
-      const hasFutureClass = $(this).closest('.date-field').hasClass('future');
-      return hasFutureClass ? new Date().getFullYear() : new Date().getFullYear() - 120;
+      const hasFutureClass = $(this).closest(".date-field").hasClass("future");
+      return hasFutureClass
+        ? new Date().getFullYear()
+        : new Date().getFullYear() - 120;
     })
     .attr("max", function () {
-      const hasFutureClass = $(this).closest('.date-field').hasClass('future');
-      return hasFutureClass ? new Date().getFullYear() + 5 : new Date().getFullYear();
+      const hasFutureClass = $(this).closest(".date-field").hasClass("future");
+      return hasFutureClass
+        ? new Date().getFullYear() + 5
+        : new Date().getFullYear();
     })
     .on("input focusout", function (e) {
-      const parentId = $(this).attr('id').replace("_num_", "_date_").slice(0, -3);
+      const parentId = $(this)
+        .attr("id")
+        .replace("_num_", "_date_")
+        .slice(0, -3);
       const dateMessage = dateMessages[parentId] || defaultDateMessage;
       const dd = $(`#${this.id.slice(0, -2)}dd`).val() !== "" ? true : false;
       const mm = $(`#${this.id.slice(0, -2)}mm`).val() !== "" ? true : false;
@@ -860,45 +926,61 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE KEYUP EVENTLISTENER FOR CHECK PROGRESS --------------------- \\
 
-  $('input, textarea').keyup(function () {
+  $("input, textarea").keyup(function () {
     checkPageProgress();
   });
 
   // --- HANDLE CURRENCY INPUT --------------------------------------------- \\
 
-  $('.currency').on('change', function () {
-    const currencyField = $(this).data('name');
+  $(".currency").on("change", function () {
+    const currencyField = $(this).data("name");
 
     // Remove anything that's not a digit or decimal point
-    let rawValue = $(`#dform_widget_${currencyField}`).val().replace(/[^0-9.]/g, '');
+    let rawValue = $(`#dform_widget_${currencyField}`)
+      .val()
+      .replace(/[^0-9.]/g, "");
 
     let value = parseFloat(rawValue); // Convert the cleaned value to a float
 
     if (!isNaN(value)) {
       $(`#dform_widget_${currencyField}`).val(value.toFixed(2));
     } else {
-      $(`#dform_widget_${currencyField}`).val('');
+      $(`#dform_widget_${currencyField}`).val("");
     }
   });
 
   // --- HANDLE SET REPORTER ----------------------------------------------- \\
 
   // Check if customer set state is true
-  if (kdf.access === 'agent' && kdf.profileData['profile-FullName']) {
-    property = formatTitleCase(kdf.profileData['profile-AddressNumber']);
-    streetName = formatTitleCase(kdf.profileData['profile-AddressLine1']);
-    fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${kdf.profileData['profile-AddressLine4']}, ${kdf.profileData['profile-Postcode']}`;
-    handleSetReporter(new Date(kdf.profileData['profile-DateOfBirth']), fullAddress);
-  } else if (kdf.access === 'agent' && KDF.getVal('txt_full_address_about_you')) {
-    property = formatTitleCase(KDF.getVal('txt_property_about_you'));
-    streetName = formatTitleCase(KDF.getVal('txt_street_name_about_you'));
-    fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${KDF.getVal('txt_city_about_you')}, ${KDF.getVal('txt_postcode_about_you')}`;
-    handleSetReporter(new Date(KDF.getVal('dt_date_of_birth')), fullAddress);
+  if (kdf.access === "agent" && kdf.profileData["profile-FullName"]) {
+    property = formatTitleCase(kdf.profileData["profile-AddressNumber"]);
+    streetName = formatTitleCase(kdf.profileData["profile-AddressLine1"]);
+    fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
+      streetName
+    )}, ${kdf.profileData["profile-AddressLine4"]}, ${
+      kdf.profileData["profile-Postcode"]
+    }`;
+    handleSetReporter(
+      new Date(kdf.profileData["profile-DateOfBirth"]),
+      fullAddress
+    );
+  } else if (
+    kdf.access === "agent" &&
+    KDF.getVal("txt_full_address_about_you")
+  ) {
+    property = formatTitleCase(KDF.getVal("txt_property_about_you"));
+    streetName = formatTitleCase(KDF.getVal("txt_street_name_about_you"));
+    fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
+      streetName
+    )}, ${KDF.getVal("txt_city_about_you")}, ${KDF.getVal(
+      "txt_postcode_about_you"
+    )}`;
+    handleSetReporter(new Date(KDF.getVal("dt_date_of_birth")), fullAddress);
   }
 
   // --- HANDLE CHECK AGENT SET CUSTOMER ----------------------------------- \\
 
-  $('.submit-btn').on('click', () => {
+  $(".submit-btn").on("click", () => {
     const currentPageId = getCurrentPageId();
     function elementExists(selector) {
       return document.querySelector(selector) !== null;
@@ -906,53 +988,53 @@ function handleOnReadyEvent(event, kdf) {
 
     // Check if the postcode element exists
     if (elementExists(`#${currentPageId} input[data-customalias="postcode"]`)) {
-      checkAddressHasBeenSet('submit');
+      checkAddressHasBeenSet("submit");
     } else {
-      KDF.gotoPage('complete', true, true, false);
+      KDF.gotoPage("complete", true, true, false);
     }
   });
 
   // --- HANDLE AONYMOUS SUBMITION ----------------------------------------- \\
 
-  $('.anonymous-btn').on('click', () => {
-    KDF.hidePage('page_about_you');
+  $(".anonymous-btn").on("click", () => {
+    KDF.hidePage("page_about_you");
 
     // Clear any entered customer data
-    KDF.setVal('sel_title', '');
-    KDF.setVal('txt_forename', 'Remained');
-    KDF.setVal('txt_surname', 'Anonymous');
-    KDF.setVal('dform_widget_num_date_of_birth_about_you_dd', '');
-    KDF.setVal('dform_widget_num_date_of_birth_about_you_mm', '');
-    KDF.setVal('dform_widget_num_date_of_birth_about_you_yy', '');
-    KDF.setVal('txt_date_of_birth_about_you', '');
-    KDF.setVal('dt_date_of_birth_about_you', '');
-    KDF.setVal('eml_address', '');
-    KDF.setVal('tel_phone_number', '');
-    KDF.setVal('txt_find_postcode_about_you', '');
-    KDF.setVal('sel_search_results_about_you', '');
-    KDF.setVal('txt_property_about_you', '');
-    KDF.setVal('txt_street_name_about_you', '');
-    KDF.setVal('txt_city_about_you', '');
-    KDF.setVal('txt_postcode_about_you', '');
-    KDF.setVal('txt_full_address_about_you', '');
+    KDF.setVal("sel_title", "");
+    KDF.setVal("txt_forename", "Remained");
+    KDF.setVal("txt_surname", "Anonymous");
+    KDF.setVal("dform_widget_num_date_of_birth_about_you_dd", "");
+    KDF.setVal("dform_widget_num_date_of_birth_about_you_mm", "");
+    KDF.setVal("dform_widget_num_date_of_birth_about_you_yy", "");
+    KDF.setVal("txt_date_of_birth_about_you", "");
+    KDF.setVal("dt_date_of_birth_about_you", "");
+    KDF.setVal("eml_address", "");
+    KDF.setVal("tel_phone_number", "");
+    KDF.setVal("txt_find_postcode_about_you", "");
+    KDF.setVal("sel_search_results_about_you", "");
+    KDF.setVal("txt_property_about_you", "");
+    KDF.setVal("txt_street_name_about_you", "");
+    KDF.setVal("txt_city_about_you", "");
+    KDF.setVal("txt_postcode_about_you", "");
+    KDF.setVal("txt_full_address_about_you", "");
 
-    KDF.gotoPage('complete', true, true, false);
+    KDF.gotoPage("complete", true, true, false);
   });
 
   // --- HANDLE SAVE AND EXIT CLICK ---------------------------------------- \\
 
-  $('.save-exit-btn').on('click', () => {
+  $(".save-exit-btn").on("click", () => {
     KDF.save();
   });
 
   // --- HANDLE CLOSE CASE CLICK ------------------------------------------- \\
 
-  $('.close-case-btn').on('click', () => {
+  $(".close-case-btn").on("click", () => {
     if (checkIsFormComplete(fieldsToCheckBeforeClose)) {
       KDF.markComplete();
-      KDF.gotoPage('complete', false, false, false);
+      KDF.gotoPage("complete", false, false, false);
     } else {
-      KDF.showError('Please ensure all fields have been completed.');
+      KDF.showError("Please ensure all fields have been completed.");
     }
   });
 }
@@ -974,41 +1056,41 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
 
   updateProgressBar(targetpageid);
 
-  if (pageName === 'page_about_you') {
-    if (kdf.access === 'agent' && kdf.customerset === 'agent_false') {
-      KDF.sendDesktopAction('raised_by');
+  if (pageName === "page_about_you") {
+    if (kdf.access === "agent" && kdf.customerset === "agent_false") {
+      KDF.sendDesktopAction("raised_by");
     }
   }
 
-  if (pageName === 'save') {
-    KDF.setVal('txt_resume_form', 'true');
+  if (pageName === "save") {
+    KDF.setVal("txt_resume_form", "true");
     $("#dform_page_complete").css({
-      "margin-inline": "0 40%"
+      "margin-inline": "0 40%",
     });
     $("form.dform").css({
-      "margin": "8px",
-      "padding": "16px",
-      "background": "var(--color-white)"
+      margin: "8px",
+      padding: "16px",
+      background: "var(--color-white)",
     });
     getAndSetReviewPageData();
     showContactTeamPanel();
     KDF.save();
   }
 
-  if (pageName === 'complete') {
-    if (!KDF.getVal('eml_address')) {
-      KDF.hideWidget('ahtm_confirmation_email_send');
+  if (pageName === "complete") {
+    if (!KDF.getVal("eml_address")) {
+      KDF.hideWidget("ahtm_confirmation_email_send");
     } else {
-      KDF.showWidget('ahtm_confirmation_email_send');
+      KDF.showWidget("ahtm_confirmation_email_send");
     }
 
     $("form.dform").css({
-      "margin": "8px",
-      "padding": "16px",
-      "background": "var(--color-white)"
+      margin: "8px",
+      padding: "16px",
+      background: "var(--color-white)",
     });
     showContactTeamPanel();
-    KDF.setVal('txt_finish_date_and_time', formatDateTime().utc);
+    KDF.setVal("txt_finish_date_and_time", formatDateTime().utc);
   }
 
   getAndSetReviewPageData();
@@ -1020,15 +1102,14 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
 // --- HANDLE ON FIELD CHANGE EVENT ---------------------------------------- \\
 
 function handleFieldChangeEvent(event, kdf, field) {
-
   // --- HANDLE FORMAT REMOVE ECCESS WHITE SPACES -------------------------- \\
 
   if (
-    field.type === 'text'
-    || field.type === 'number'
-    || field.type === 'email'
-    || field.type === 'tel'
-    || field.type === 'textarea'
+    field.type === "text" ||
+    field.type === "number" ||
+    field.type === "email" ||
+    field.type === "tel" ||
+    field.type === "textarea"
   ) {
     $(`#${field.id}`).val(formatRemoveEccessWhiteSpace(KDF.getVal(field.name)));
   }
@@ -1040,13 +1121,12 @@ function handleFieldChangeEvent(event, kdf, field) {
 // --- HANDLE ON OPTION SELECTED EVENT ------------------------------------ \\
 
 function handleOptionSelectedEvent(event, kdf, field, label, val) {
-
   // --- HANDLE SET MULTI CHECK VALUE TO TEXT FIELD ------------------------ \\
 
-  if (field.startsWith('mchk_')) {
-    const mchkField = field.replace('[]', '');
-    const textField = mchkField.replace('mchk_', 'txt_');
-    const stringValue = KDF.getVal(mchkField).toString().replace(/,/gi, ', ');
+  if (field.startsWith("mchk_")) {
+    const mchkField = field.replace("[]", "");
+    const textField = mchkField.replace("mchk_", "txt_");
+    const stringValue = KDF.getVal(mchkField).toString().replace(/,/gi, ", ");
     KDF.setVal(textField, stringValue);
   }
 
@@ -1060,7 +1140,17 @@ function handleOptionSelectedEvent(event, kdf, field, label, val) {
 
 // --- HANDLE ON MAP READY EVENT ------------------------------------------ \\
 
-function handleMapReadyEvent(event, kdf, type, name, map, positionLayer, markerLayer, marker, projection) {
+function handleMapReadyEvent(
+  event,
+  kdf,
+  type,
+  name,
+  map,
+  positionLayer,
+  markerLayer,
+  marker,
+  projection
+) {
   do_KDF_mapReady_esriMap(map, positionLayer);
 
   // keep at the bottom
@@ -1069,8 +1159,20 @@ function handleMapReadyEvent(event, kdf, type, name, map, positionLayer, markerL
 
 // --- HANDLE ON MAP CLICK EVENT ------------------------------------------ \\
 
-function handleMapClickEvent(event, kdf, type, name, map, positionLayer, markerLayer, marker, lat, lon, plat, plon) {
-
+function handleMapClickEvent(
+  event,
+  kdf,
+  type,
+  name,
+  map,
+  positionLayer,
+  markerLayer,
+  marker,
+  lat,
+  lon,
+  plat,
+  plon
+) {
   // keep at the bottom
   checkPageProgress();
 }
@@ -1078,48 +1180,77 @@ function handleMapClickEvent(event, kdf, type, name, map, positionLayer, markerL
 // --- HANDLE ON MAP LAYRE SELECTED EVENT --------------------------------- \\
 
 function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
-
   const { main_attribute: main, background_attribute: bg } = layerAttributes;
 
-  const siteName = bg.sitename || main.sitename || main.site_name || main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"] || main.streetname || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] || "");
-  const siteCode = bg.sitecode || main.sitecode || main.usrn || main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] || "");
-  const featureTypeName = main.featuretypename || main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_name"] || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_name"] || "");
-  const featureType = main.featuregroupcode || main.site_type || main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_code"] || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_code"] || "");
-  const responsibility = bg.customer || main.responsibility || main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] || "");
-  const prestige = bg.status || (bg?.status) || main['sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category'] || (main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category"] || "");
+  const siteName =
+    bg.sitename ||
+    main.sitename ||
+    main.site_name ||
+    main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"] ||
+    main.streetname ||
+    main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
+    "";
+  const siteCode =
+    bg.sitecode ||
+    main.sitecode ||
+    main.usrn ||
+    main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
+    main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
+    "";
+  const featureTypeName =
+    main.featuretypename ||
+    main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_name"] ||
+    main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_name"] ||
+    "";
+  const featureType =
+    main.featuregroupcode ||
+    main.site_type ||
+    main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_code"] ||
+    main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_code"] ||
+    "";
+  const responsibility =
+    bg.customer ||
+    main.responsibility ||
+    main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
+    main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
+    "";
+  const prestige =
+    bg.status ||
+    bg?.status ||
+    main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category"] ||
+    main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category"] ||
+    "";
   setValuesToInputFields([
     { alias: "featureName", value: featureTypeName },
     { alias: "featureType", value: featureType },
     { alias: "responsibility", value: responsibility },
-    { alias: "prestige", value: prestige }
+    { alias: "prestige", value: prestige },
   ]);
 
   if (siteName) {
-    setValuesToInputFields([
-      { alias: "siteName", value: siteName }
-    ]);
+    setValuesToInputFields([{ alias: "siteName", value: siteName }]);
   }
 
   if (siteCode) {
-    setValuesToInputFields([
-      { alias: "siteCode", value: siteCode }
-    ]);
+    setValuesToInputFields([{ alias: "siteCode", value: siteCode }]);
   }
 
   if (siteName && siteCode) {
     // console.log(getValuesOfInputFields({ alias: "fullAddress" }))
-    setSelectedAddress(siteName, 'show');
+    setSelectedAddress(siteName, "show");
   } else {
-    $('#map_container').addClass('map_container_error');
-    if ($('#map_error').length == '0') {
-      $('#dform_widget_html_ahtm_map_container').prepend('<div id="map_error" class="dform_validationMessage" style="display: block;">Select a location inside the Sheffield area</div>');
+    $("#map_container").addClass("map_container_error");
+    if ($("#map_error").length == "0") {
+      $("#dform_widget_html_ahtm_map_container").prepend(
+        '<div id="map_error" class="dform_validationMessage" style="display: block;">Select a location inside the Sheffield area</div>'
+      );
     }
     KDF.setVal(
-      'ahtm_map_location_error',
-      'Select a location on the public highway'
+      "ahtm_map_location_error",
+      "Select a location on the public highway"
     );
 
-    KDF.showWidget('ahtm_map_location_error');
+    KDF.showWidget("ahtm_map_location_error");
     resetAddressSearch();
     return;
   }
@@ -1132,10 +1263,10 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
 
 function handleClearMapFieldsEvent() {
   setValuesToInputFields([
-    { alias: "featureName", value: '' },
-    { alias: "featureType", value: '' },
-    { alias: "responsibility", value: '' },
-    { alias: "prestige", value: '' }
+    { alias: "featureName", value: "" },
+    { alias: "featureType", value: "" },
+    { alias: "responsibility", value: "" },
+    { alias: "prestige", value: "" },
   ]);
 
   // keep at the bottom
@@ -1145,26 +1276,26 @@ function handleClearMapFieldsEvent() {
 // --- HANDLE ON OBJECT EVENT --------------------------------------------- \\
 
 function handleObjectIdSet(event, kdf, type, id) {
-
-  KDF.setVal('txt_reporter_obj_type', type);
-  KDF.setVal('num_reporter_obj_id', id);
+  KDF.setVal("txt_reporter_obj_type", type);
+  KDF.setVal("num_reporter_obj_id", id);
 
   // Update customer set state
-  customerState = 'agent_true';
+  customerState = "agent_true";
 
   // Hide submit anonymously option and info
-  $('.anonymous').hide();
+  $(".anonymous").hide();
 
   // keep at the bottom
   checkPageProgress();
 }
 
 function handleObjectIdLoaded(event, kdf, response, type, id) {
-
-  property = formatTitleCase(response['profile-AddressNumber']);
-  streetName = formatTitleCase(response['profile-AddressLine1']);
-  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${response['profile-AddressLine4']}, ${response['profile-Postcode']}`;
-  handleSetReporter(new Date(response['profile-DateOfBirth']), fullAddress);
+  property = formatTitleCase(response["profile-AddressNumber"]);
+  streetName = formatTitleCase(response["profile-AddressLine1"]);
+  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${
+    response["profile-AddressLine4"]
+  }, ${response["profile-Postcode"]}`;
+  handleSetReporter(new Date(response["profile-DateOfBirth"]), fullAddress);
 
   // keep at the bottom
   checkPageProgress();
@@ -1173,9 +1304,8 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
 // --- HANDLE ON SUCCESSFUL ACTION EVENT ---------------------------------- \\
 
 function handleSuccessfulAction(event, kdf, response, action, actionedby) {
-
   // Check if the action is to check the map status
-  if (action === 'check-map-status') {
+  if (action === "check-map-status") {
     // Spread the data object
     const { isMapAvailable } = response.data;
 
@@ -1183,7 +1313,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     const mapIcon = $(".map-icon");
 
     // Check if the response data indicates unavailable maps
-    if (isMapAvailable === 'false') {
+    if (isMapAvailable === "false") {
       // (Optional) Disable elements using native method (comment out if not used)
       mapIcon.prop("disabled", true);
 
@@ -1210,10 +1340,10 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     }
   }
 
-  if (action === 'set-raised-by') {
+  if (action === "set-raised-by") {
     const { customerid } = response.data;
     if (!customerid) {
-      KDF.showError('Customer ID Not Set');
+      KDF.showError("Customer ID Not Set");
       return;
     }
     KDF.setCustomerID(customerid, false, KDF.gotoNextPage());
@@ -1221,9 +1351,14 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     // KDF.gotoNextPage();
   }
 
-  if (action === 'search-local-address' || action === 'search-national-address') {
-    if (action === 'search-local-address') addressSearchType[getCurrentPageId()] = 'local';
-    if (action === 'search-national-address') addressSearchType[getCurrentPageId()] = 'national';
+  if (
+    action === "search-local-address" ||
+    action === "search-national-address"
+  ) {
+    if (action === "search-local-address")
+      addressSearchType[getCurrentPageId()] = "local";
+    if (action === "search-national-address")
+      addressSearchType[getCurrentPageId()] = "national";
 
     const { propertySearchResult } = response.data;
     if (propertySearchResult.length > 0) {
@@ -1231,39 +1366,56 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
         // Create a copy to avoid mutating the original object
         const newAddressLine = { ...addressLine };
         const parts = newAddressLine.label.split(",");
-        newAddressLine.label = formatTitleCase(parts[0]) + "," + parts.slice(1).join(",");
+        newAddressLine.label =
+          formatTitleCase(parts[0]) + "," + parts.slice(1).join(",");
         return newAddressLine;
       });
       setValuesToInputFields([
         { alias: "searchResult", value: formattedSearchResult },
       ]);
-      showHideInputFields([
-        { alias: "searchResult", display: true },
-      ]);
+      showHideInputFields([{ alias: "searchResult", display: true }]);
     } else {
       const currentPageId = getCurrentPageId();
-      const postcodeInput = document.querySelector(`#${currentPageId} input[data-customalias="postcode"]`);
+      const postcodeInput = document.querySelector(
+        `#${currentPageId} input[data-customalias="postcode"]`
+      );
 
       if (postcodeInput) {
-        const validationMessageElement = document.querySelector(`div[data-name="${postcodeInput.name}"] .dform_validationMessage`);
+        const validationMessageElement = document.querySelector(
+          `div[data-name="${postcodeInput.name}"] .dform_validationMessage`
+        );
 
         if (validationMessageElement) {
           validationMessageElement.textContent = "Enter a valid postcode";
-          validationMessageElement.style.display = 'block';
+          validationMessageElement.style.display = "block";
         }
       }
       showAddressFields();
     }
   }
 
-  if (action === 'retrieve-local-address'
-    || action === 'retrieve-national-address'
-    || action === 'retrieve-location-from-coordinates') {
-    let { property, streetName, city, postcode, fullAddress, propertyId, uprn, streetId, usrn, status, message } = response.data;
-    if (status == 400 && action === 'retrieve-location-from-coordinates') {
-      const $button = $('.geo-btn');
-      const $container = $button.closest('.geo-btn-container');
-      const $validationMessage = $container.find('.dform_validationMessage');
+  if (
+    action === "retrieve-local-address" ||
+    action === "retrieve-national-address" ||
+    action === "retrieve-location-from-coordinates"
+  ) {
+    let {
+      property,
+      streetName,
+      city,
+      postcode,
+      fullAddress,
+      propertyId,
+      uprn,
+      streetId,
+      usrn,
+      status,
+      message,
+    } = response.data;
+    if (status == 400 && action === "retrieve-location-from-coordinates") {
+      const $button = $(".geo-btn");
+      const $container = $button.closest(".geo-btn-container");
+      const $validationMessage = $container.find(".dform_validationMessage");
       const errorMessageHtml = `
           <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
             ${message}
@@ -1280,10 +1432,10 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
     property = formatTitleCase(property);
     streetName = formatTitleCase(streetName);
-    fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${city}, ${postcode}`;
-    showHideInputFields([
-      { alias: "searchResult", display: false },
-    ]);
+    fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
+      streetName
+    )}, ${city}, ${postcode}`;
+    showHideInputFields([{ alias: "searchResult", display: false }]);
     setValuesToInputFields([
       { alias: "property", value: property },
       { alias: "streetName", value: streetName },
@@ -1295,10 +1447,10 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       { alias: "siteName", value: streetName },
       { alias: "siteCode", value: usrn },
     ]);
-    setSelectedAddress(fullAddress, 'show');
+    setSelectedAddress(fullAddress, "show");
   }
 
-  if (action === 'retrieve-vehicle-details') {
+  if (action === "retrieve-vehicle-details") {
     const {
       co2Emissions,
       colour,
@@ -1315,7 +1467,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       taxStatus,
       typeApproval,
       wheelplan,
-      yearOfManufacture
+      yearOfManufacture,
     } = response.data;
     setValuesToInputFields([
       { alias: "co2Emissions", value: co2Emissions },
@@ -1325,7 +1477,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       { alias: "fuelType", value: fuelType },
       { alias: "make", value: make },
       { alias: "markedForExport", value: markedForExport },
-      { alias: "model", value: '' },
+      { alias: "model", value: "" },
       { alias: "monthOfFirstRegistration", value: monthOfFirstRegistration },
       { alias: "motExpiryDate", value: motExpiryDate },
       { alias: "motStatus", value: motStatus },
@@ -1344,10 +1496,10 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     ]);
   }
 
-  if (action === 'retrieve-process-status') {
+  if (action === "retrieve-process-status") {
     const { caseStatus, formStatus } = response.data;
-    if (formStatus === 'Y') {
-      $('.review-page-edit-button').remove();
+    if (formStatus === "Y") {
+      $(".review-page-edit-button").remove();
     }
   }
 
@@ -1365,7 +1517,7 @@ function handleFailedAction(event, action, xhr, settings, thrownError) {
   logArguments(event, action, xhr, settings, thrownError);
   KDF.hideMessages();
 
-  if (action === 'retrieve-vehicle-details') {
+  if (action === "retrieve-vehicle-details") {
     resetVehicleSearch(false);
     showVehicleFields();
   } else {
@@ -1381,49 +1533,48 @@ function handleFailedAction(event, action, xhr, settings, thrownError) {
 
 function handleFormSave(event, kdf) {
   KDF.hideMessages();
-
 }
 
 // --- HANDLE ON FAILED SAVE EVENT ---------------------------------------- \\
 
 function handleFailedSave(event, kdf) {
   KDF.hideMessages();
-
 }
 
 // --- HANDLE ON COMPLETE EVENT ------------------------------------------- \\
 
 function handleFomComplate(event, kdf) {
-  document.getElementById("form-title").textContent = 'Confirmation';
+  document.getElementById("form-title").textContent = "Confirmation";
 
   setTimeout(function () {
     KDF.hideMessages();
   }, 0);
 
   $("#dform_progressbar_sheffield, #dform_ref_display").hide();
-
 }
 
 // --- GET CURRENT PAGE ----------------------------------------------------- \\
 
 // Function to get the current page ID
 function getCurrentPageId() {
-  return document.querySelector('[data-type="page"]:not([style*="display: none"])').id;
-};
+  return document.querySelector(
+    '[data-type="page"]:not([style*="display: none"])'
+  ).id;
+}
 
 // --- HANDLE SET AGENT LOCATION -------------------------------------------- \\
 
 function checkAndRefreshAgentLocation() {
-  const data = JSON.parse(localStorage.getItem('agentLocation'));
+  const data = JSON.parse(localStorage.getItem("agentLocation"));
   if (data) {
     const currentTime = new Date().getTime();
     if (currentTime < data.expiry) {
       // Refresh expiry time for another hour
       data.expiry = currentTime + 25 * 60 * 1000; // 25 minutes in milliseconds
-      localStorage.setItem('agentLocation', JSON.stringify(data));
+      localStorage.setItem("agentLocation", JSON.stringify(data));
     } else {
       // Data has expired
-      localStorage.removeItem('agentLocation');
+      localStorage.removeItem("agentLocation");
       checkAndDisplayModal();
     }
   } else {
@@ -1432,16 +1583,19 @@ function checkAndRefreshAgentLocation() {
 }
 
 function createOptions(formsToDisplay = forms) {
-  optionsContainer.innerHTML = '';
-  formsToDisplay.sort((a, b) => a.label.localeCompare(b.label))
-    .forEach(form => {
-      const optionDiv = document.createElement('div');
-      optionDiv.classList.add('option');
+  optionsContainer.innerHTML = "";
+  formsToDisplay
+    .sort((a, b) => a.label.localeCompare(b.label))
+    .forEach((form) => {
+      const optionDiv = document.createElement("div");
+      optionDiv.classList.add("option");
       optionDiv.innerHTML = `<h4>${form.label}</h4><p>${form.description}</p>`;
-      optionDiv.addEventListener('click', () => {
+      optionDiv.addEventListener("click", () => {
         const { protocol, hostname } = window.location;
         const url = `${protocol}//${hostname}/form/launch/`;
-        const customerid = KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : '';
+        const customerid = KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : "";
         const interactionid = `interactionid=${KDF.getParams().interactionid}`;
         window.location.href = `${url}${form.name}?${customerid}${interactionid}`;
       });
@@ -1450,42 +1604,42 @@ function createOptions(formsToDisplay = forms) {
 }
 
 // Function to create and display the modal
-function createModal() {
+function createModal(modalId, form) {
   // Create modal elements
-  const modal = document.createElement('div');
-  modal.id = 'setAgentLocationModal';
-  modal.className = 'modal';
+  const modal = document.createElement("div");
+  modal.id = modalId;
+  modal.className = "modal";
 
-  const modalContent = document.createElement('div');
-  modalContent.className = 'modal-content';
+  const modalContent = document.createElement("div");
+  modalContent.className = "modal-content";
 
-  const iframe = document.createElement('iframe');
+  const iframe = document.createElement("iframe");
   const { protocol, hostname } = window.location;
-  iframe.src = `${protocol}//${hostname}/form/launch/set_agent_location?channel=voice_in`;
-  iframe.frameBorder = '0';
-  iframe.style.width = '100%';
-  iframe.style.height = '100%';
-  modal.style.zIndex = '9999';
+  iframe.src = `${protocol}//${hostname}/form/launch/${form}?channel=voice_in`;
+  iframe.frameBorder = "0";
+  iframe.style.width = "100%";
+  iframe.style.height = "100%";
+  modal.style.zIndex = "9999";
 
   modalContent.appendChild(iframe);
   modal.appendChild(modalContent);
   document.body.appendChild(modal);
 
   // Optionally, add a close button
-  const closeButton = document.createElement('span');
-  closeButton.className = 'close';
-  closeButton.innerHTML = '&times;';
+  const closeButton = document.createElement("span");
+  closeButton.className = "close";
+  closeButton.innerHTML = "&times;";
   closeButton.onclick = function () {
     destroyModal(modal);
   };
   modalContent.appendChild(closeButton);
 
   // Display the modal
-  modal.style.display = 'block';
+  modal.style.display = "block";
 
   // Disable focusable elements outside the modal
-  const focusableElements = $('*:focusable');
-  focusableElements.attr('tabindex', '-1');
+  const focusableElements = $("*:focusable");
+  focusableElements.attr("tabindex", "-1");
 }
 
 // Function to destroy the modal
@@ -1495,17 +1649,17 @@ function destroyModal(modal) {
     modal.parentNode.removeChild(modal);
 
     // Re-enable focusable elements
-    const focusableElements = $('*:focusable');
-    focusableElements.attr('tabindex', '');
+    const focusableElements = $("*:focusable");
+    focusableElements.attr("tabindex", "");
   }
 }
 
 // Function to check and display modal if needed
 function checkAndDisplayModal() {
-  const data = JSON.parse(localStorage.getItem('agentLocation'));
+  const data = JSON.parse(localStorage.getItem("agentLocation"));
   if (!data || new Date().getTime() > data.expiry) {
     // Data is not present or has expired
-    createModal();
+    createModal("setAgentLocationModal", "set_agent_location");
   }
 }
 
@@ -1516,51 +1670,74 @@ function checkPageProgress() {
   const currentPageElement = document.getElementById(currentPageId);
 
   // Check if the alert panel with class 'alert-panel--ineligible' is visible
-  const alertPanels = currentPageElement.querySelectorAll('.alert-panel--ineligible');
+  const alertPanels = currentPageElement.querySelectorAll(
+    ".alert-panel--ineligible"
+  );
   const isAlertPanelVisible = Array.from(alertPanels).some(isVisible);
 
   // Handle file inputs separately
-  const fileUploads = Array.from(currentPageElement.querySelectorAll("input[type='file']:required"))
-    .filter(el => isVisible(el));
+  const fileUploads = Array.from(
+    currentPageElement.querySelectorAll("input[type='file']:required")
+  ).filter((el) => isVisible(el));
 
   // Handle radio buttons and checkboxes separately
-  const radiosAndCheckboxes = Array.from(currentPageElement.querySelectorAll("input[type='radio']:required, input[type='checkbox']:required"))
-    .filter(el => isVisible(el));
+  const radiosAndCheckboxes = Array.from(
+    currentPageElement.querySelectorAll(
+      "input[type='radio']:required, input[type='checkbox']:required"
+    )
+  ).filter((el) => isVisible(el));
 
   // Handle all other required input types (excluding radio, checkbox, and file)
-  const otherFields = Array.from(currentPageElement.querySelectorAll("input[required], select[required], textarea[required]"))
-    .filter(el => isVisible(el) && !["radio", "checkbox", "file"].includes(el.type));
+  const otherFields = Array.from(
+    currentPageElement.querySelectorAll(
+      "input[required], select[required], textarea[required]"
+    )
+  ).filter(
+    (el) => isVisible(el) && !["radio", "checkbox", "file"].includes(el.type)
+  );
 
   function isVisible(element) {
-    return !!(element.offsetWidth || element.offsetHeight || element.getClientRects().length);
+    return !!(
+      element.offsetWidth ||
+      element.offsetHeight ||
+      element.getClientRects().length
+    );
   }
 
   // Check if any of the file inputs are empty based on the filenames in the associated div
-  const hasEmptyFileUploads = fileUploads.some(el => {
-    const filenamesContainer = el.closest('.dform_widget').querySelector('.dform_filenames');
-    const hasFiles = filenamesContainer && filenamesContainer.children.length > 0;
+  const hasEmptyFileUploads = fileUploads.some((el) => {
+    const filenamesContainer = el
+      .closest(".dform_widget")
+      .querySelector(".dform_filenames");
+    const hasFiles =
+      filenamesContainer && filenamesContainer.children.length > 0;
 
     return !hasFiles;
   });
 
   // Check if any radio or checkbox groups are unchecked
-  const hasEmptyRadiosAndCheckboxes = radiosAndCheckboxes.some(el => {
+  const hasEmptyRadiosAndCheckboxes = radiosAndCheckboxes.some((el) => {
     const name = el.name;
-    const isUnchecked = !currentPageElement.querySelector(`input[name='${name}']:checked`);
+    const isUnchecked = !currentPageElement.querySelector(
+      `input[name='${name}']:checked`
+    );
 
     return isUnchecked;
   });
 
   // Check if any other required fields are empty or invalid
-  const hasEmptyOrInvalidOtherFields = otherFields.some(el => {
-    const isEmpty = el.value.trim() === '';
+  const hasEmptyOrInvalidOtherFields = otherFields.some((el) => {
+    const isEmpty = el.value.trim() === "";
     const isValid = el.checkValidity();
 
     return isEmpty || !isValid;
   });
 
   // Combine all the checks
-  const hasEmptyRequiredElement = hasEmptyFileUploads || hasEmptyRadiosAndCheckboxes || hasEmptyOrInvalidOtherFields;
+  const hasEmptyRequiredElement =
+    hasEmptyFileUploads ||
+    hasEmptyRadiosAndCheckboxes ||
+    hasEmptyOrInvalidOtherFields;
 
   // If any alert panel is visible, force disabling the buttons
   const shouldDisableButton = hasEmptyRequiredElement || isAlertPanelVisible;
@@ -1570,26 +1747,26 @@ function checkPageProgress() {
 }
 
 function disabledButtonToggle(enable) {
-  const buttons = document.querySelectorAll('.primary-btn, .anonymous-btn');
+  const buttons = document.querySelectorAll(".primary-btn, .anonymous-btn");
 
-  buttons.forEach(button => {
+  buttons.forEach((button) => {
     if (enable) {
       // Enable buttons and remove disabled class
-      button.classList.remove('disabled');
+      button.classList.remove("disabled");
       button.disabled = false;
       button.setAttribute("aria-disabled", "false");
     } else {
-      if (getCurrentPageId() !== 'dform_page_page_about_you') {
+      if (getCurrentPageId() !== "dform_page_page_about_you") {
         // Disable anonymous buttons and add disabled class
-        if (button.classList.contains('anonymous-btn')) {
-          button.classList.add('disabled');
+        if (button.classList.contains("anonymous-btn")) {
+          button.classList.add("disabled");
           button.disabled = true;
           button.setAttribute("aria-disabled", "true");
         }
       }
       // Disable primary buttons and add disabled class
-      if (button.classList.contains('primary-btn')) {
-        button.classList.add('disabled');
+      if (button.classList.contains("primary-btn")) {
+        button.classList.add("disabled");
         button.disabled = true;
         button.setAttribute("aria-disabled", "true");
       }
@@ -1620,7 +1797,7 @@ function setValuesToInputFields(aliasesAndValues) {
       KDF.setVal(name, value);
     }
   });
-};
+}
 
 function getValuesOfInputFields(aliases) {
   const currentPageId = getCurrentPageId(); // Get the current page ID
@@ -1648,13 +1825,12 @@ function getValuesOfInputFields(aliases) {
   });
 
   return results;
-};
+}
 
 // --- SHOW / HIDE FIELD ON CURRENT PAGE ------------------------------------ \\
 
 // Function to show or hide select fields based on data-customalias attributes of selects on the current page
 function showHideInputFields(aliasesAndDisplay) {
-
   const currentPageId = getCurrentPageId(); // Get the current page ID
 
   // Iterate over each custom alias and action pair
@@ -1679,7 +1855,7 @@ function showHideInputFields(aliasesAndDisplay) {
       }
     }
   });
-};
+}
 
 function setRequiredStateByAlias(alias, requiredState) {
   const currentPageId = getCurrentPageId(); // Get the current page ID
@@ -1697,7 +1873,7 @@ function setRequiredStateByAlias(alias, requiredState) {
   if (element) {
     updateRequiredState(element.name, requiredState);
   }
-};
+}
 
 // --- SET SELECTED ADDRESS ------------------------------------------------- \\
 
@@ -1705,14 +1881,16 @@ function setSelectedAddress(selectedAddress, action, targetPageId) {
   targetPageId = targetPageId ? targetPageId : getCurrentPageId();
 
   // Get the selected-address-container element on the current page
-  const addressContainer = document.querySelector(`#${targetPageId} .selected-address-container`);
+  const addressContainer = document.querySelector(
+    `#${targetPageId} .selected-address-container`
+  );
 
   if (addressContainer) {
     // Obtain the data-name attribute of the addressContainer
-    const name = addressContainer.getAttribute('data-name');
+    const name = addressContainer.getAttribute("data-name");
 
     // Get the output element within the selected-address-container
-    const outputElement = addressContainer.querySelector('.selected-address');
+    const outputElement = addressContainer.querySelector(".selected-address");
 
     // Set the selected address as the content of the output element
     outputElement.textContent = selectedAddress;
@@ -1724,28 +1902,28 @@ function setSelectedAddress(selectedAddress, action, targetPageId) {
       KDF.hideWidget(name);
     }
   }
-};
+}
 
 // --- RESER ADDRESS FIELDS ------------------------------------------------- \\
 
 function resetAddressSearch(hideFields = true) {
   setValuesToInputFields([
-    { alias: "searchResult", value: '' },
-    { alias: "property", value: '' },
-    { alias: "streetName", value: '' },
-    { alias: "city", value: '' },
-    { alias: "postCode", value: '' },
-    { alias: "fullAddress", value: '' },
-    { alias: "uprn", value: '' },
-    { alias: "usrn", value: '' },
-    { alias: "siteName", value: '' },
-    { alias: "siteCode", value: '' },
-    { alias: "featureName", value: '' },
-    { alias: "featureType", value: '' },
-    { alias: "responsibility", value: '' },
-    { alias: "prestige", value: '' },
-    { alias: "easting", value: '' },
-    { alias: "northing", value: '' },
+    { alias: "searchResult", value: "" },
+    { alias: "property", value: "" },
+    { alias: "streetName", value: "" },
+    { alias: "city", value: "" },
+    { alias: "postCode", value: "" },
+    { alias: "fullAddress", value: "" },
+    { alias: "uprn", value: "" },
+    { alias: "usrn", value: "" },
+    { alias: "siteName", value: "" },
+    { alias: "siteCode", value: "" },
+    { alias: "featureName", value: "" },
+    { alias: "featureType", value: "" },
+    { alias: "responsibility", value: "" },
+    { alias: "prestige", value: "" },
+    { alias: "easting", value: "" },
+    { alias: "northing", value: "" },
   ]);
   if (hideFields) {
     showHideInputFields([
@@ -1757,8 +1935,8 @@ function resetAddressSearch(hideFields = true) {
       { alias: "fullAddress", display: false },
     ]);
   }
-  setSelectedAddress('', false);
-};
+  setSelectedAddress("", false);
+}
 
 // --- SHOW ADDRESS FIELDS ------------------------------------------------- \\
 
@@ -1776,23 +1954,23 @@ function showAddressFields() {
 
 function resetVehicleSearch(hideFields = true) {
   setValuesToInputFields([
-    { alias: "co2Emissions", value: '' },
-    { alias: "colour", value: '' },
-    { alias: "dateOfLastV5CIssued", value: '' },
-    { alias: "engineCapacity", value: '' },
-    { alias: "fuelType", value: '' },
-    { alias: "make", value: '' },
-    { alias: "markedForExport", value: '' },
-    { alias: "model", value: '' },
-    { alias: "monthOfFirstRegistration", value: '' },
-    { alias: "motExpiryDate", value: '' },
-    { alias: "motStatus", value: '' },
-    { alias: "registrationNumber", value: '' },
-    { alias: "taxDueDate", value: '' },
-    { alias: "taxStatus", value: '' },
-    { alias: "typeApproval", value: '' },
-    { alias: "wheelplan", value: '' },
-    { alias: "yearOfManufacture", value: '' },
+    { alias: "co2Emissions", value: "" },
+    { alias: "colour", value: "" },
+    { alias: "dateOfLastV5CIssued", value: "" },
+    { alias: "engineCapacity", value: "" },
+    { alias: "fuelType", value: "" },
+    { alias: "make", value: "" },
+    { alias: "markedForExport", value: "" },
+    { alias: "model", value: "" },
+    { alias: "monthOfFirstRegistration", value: "" },
+    { alias: "motExpiryDate", value: "" },
+    { alias: "motStatus", value: "" },
+    { alias: "registrationNumber", value: "" },
+    { alias: "taxDueDate", value: "" },
+    { alias: "taxStatus", value: "" },
+    { alias: "typeApproval", value: "" },
+    { alias: "wheelplan", value: "" },
+    { alias: "yearOfManufacture", value: "" },
   ]);
   if (hideFields) {
     showHideInputFields([
@@ -1802,7 +1980,7 @@ function resetVehicleSearch(hideFields = true) {
       { alias: "colour", display: false },
     ]);
   }
-};
+}
 
 // --- SHOW VEHICLE FIELDS ------------------------------------------------- \\
 
@@ -1844,13 +2022,13 @@ function calculateRelativeDate(relativeDate, now) {
   const unit = match[2];
   const newDate = new Date(now);
   switch (unit) {
-    case 'Y':
+    case "Y":
       newDate.setFullYear(now.getFullYear() + value);
       break;
-    case 'M':
+    case "M":
       newDate.setMonth(now.getMonth() + value);
       break;
-    case 'D':
+    case "D":
       newDate.setDate(now.getDate() + value);
       break;
   }
@@ -1863,8 +2041,8 @@ function getMinMaxDates(dateElementId) {
     console.error(`Element with ID "${dateElementId}" not found.`);
     return null;
   }
-  let minDate = $dateElement.attr('data-mindate');
-  let maxDate = $dateElement.attr('data-maxdate');
+  let minDate = $dateElement.attr("data-mindate");
+  let maxDate = $dateElement.attr("data-maxdate");
 
   const now = new Date();
   minDate = minDate ? calculateRelativeDate(minDate, now) : null;
@@ -1883,10 +2061,7 @@ function checkDate(id, dd, mm, yy) {
   const dateMessage = dateMessages[id] || defaultDateMessage;
   $(`#${id.replace("_date_", "_txt_")}`).val("");
   $(`#${id.replace("_date_", "_dt_")}`).val("");
-  $(`#${id}`)
-    .find(".dform_validationMessage")
-    .text(dateMessage)
-    .hide();
+  $(`#${id}`).find(".dform_validationMessage").text(dateMessage).hide();
 
   if (!dd && mm && yy) {
     $(`#${id}`)
@@ -1920,16 +2095,15 @@ function checkDate(id, dd, mm, yy) {
     $(`#${id} .date-yy`).removeClass("dform_fielderror");
   }
   if (!dd && !mm && !yy) {
-    $(`#${id}`)
-      .find(".dform_validationMessage")
-      .text(dateMessage)
-      .show();
+    $(`#${id}`).find(".dform_validationMessage").text(dateMessage).show();
   }
 
   if (dd && mm && yy) {
     if (validDate(id, dd, mm, yy)) {
-      const date = `${yy.substr(0, 4)}-${mm.toString().padStart(2, '0')}-${dd.toString().padStart(2, '0')}`;
-      const localFormat = new Date(date).toLocaleDateString('en-GB');
+      const date = `${yy.substr(0, 4)}-${mm.toString().padStart(2, "0")}-${dd
+        .toString()
+        .padStart(2, "0")}`;
+      const localFormat = new Date(date).toLocaleDateString("en-GB");
       $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
       $(`#${id.replace("_date_", "_dt_")}`).val(date);
     } else {
@@ -1992,8 +2166,11 @@ function validDate(id, day, month, year) {
     date.getDate() != day
   ) {
     validationMsg
-      .text(`${dobField ? "Date of birth must be a real date" : "Must be a real date"
-        }`)
+      .text(
+        `${
+          dobField ? "Date of birth must be a real date" : "Must be a real date"
+        }`
+      )
       .show();
     return false;
   }
@@ -2008,13 +2185,19 @@ function validDate(id, day, month, year) {
       const [dateAId, dateBId] = pair.dateFields;
       if (id === dateAId) {
         const dateBValue = $(`#${dateBId.replace("_date_", "_dt_")}`).val();
-        if (dateBValue && !checkDateRelationship(date, new Date(dateBValue), pair.rule)) {
+        if (
+          dateBValue &&
+          !checkDateRelationship(date, new Date(dateBValue), pair.rule)
+        ) {
           validationMsg.text(pair.validationMessages[0]).show();
           return false;
         }
       } else if (id === dateBId) {
         const dateAValue = $(`#${dateAId.replace("_date_", "_dt_")}`).val();
-        if (dateAValue && !checkDateRelationship(new Date(dateAValue), date, pair.rule)) {
+        if (
+          dateAValue &&
+          !checkDateRelationship(new Date(dateAValue), date, pair.rule)
+        ) {
           validationMsg.text(pair.validationMessages[1]).show();
           return false;
         }
@@ -2034,9 +2217,10 @@ function validDate(id, day, month, year) {
     if (date > now) {
       validationMsg
         .text(
-          `${dobField
-            ? "Date of birth must be today or in the past"
-            : "Date must be today or in the past"
+          `${
+            dobField
+              ? "Date of birth must be today or in the past"
+              : "Date must be today or in the past"
           }`
         )
         .show();
@@ -2094,18 +2278,20 @@ function updateProgressBar(currentPageIndex) {
 
     if (parentDiv && childDiv && pageHolderDiv) {
       // Get all pages
-      const pages = pageHolderDiv.querySelectorAll('.dform_page');
-      const currentPageIndex = $('.dform_page[data-active="true"]:visible').index('.dform_page[data-active="true"]');
+      const pages = pageHolderDiv.querySelectorAll(".dform_page");
+      const currentPageIndex = $(
+        '.dform_page[data-active="true"]:visible'
+      ).index('.dform_page[data-active="true"]');
       const visiblePages = $('.dform_page[data-active="true"]').length;
 
       let percentage = 0;
       if ($(`#dform_page_save`).length > 0) {
         // -1 from visiblePages for the save page
         // -1 from visiblePages for the confirmation page
-        percentage = Math.round(currentPageIndex / (visiblePages - 2) * 100);
+        percentage = Math.round((currentPageIndex / (visiblePages - 2)) * 100);
       } else {
         // -1 from visiblePages for the confirmation page
-        percentage = Math.round(currentPageIndex / (visiblePages - 1) * 100);
+        percentage = Math.round((currentPageIndex / (visiblePages - 1)) * 100);
       }
       // Set width, text content, colour
       if (percentage <= 0) {
@@ -2130,24 +2316,26 @@ function updateProgressBar(currentPageIndex) {
       childSpan.style.width = `${100 - percentage}%`;
     }
   }
-};
+}
 
 // --- SET REPORTER --------------------------------------------------------- \\
 
 function handleSetReporter(date, address) {
   // Set date to input fields and trigger change
-  $('#dform_widget_num_date_of_birth_dd').val(date.getDate()).blur();
-  $('#dform_widget_num_date_of_birth_mm').val(date.getMonth() + 1).blur();
-  $('#dform_widget_num_date_of_birth_yy').val(date.getFullYear()).blur();
+  $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
+  $("#dform_widget_num_date_of_birth_mm")
+    .val(date.getMonth() + 1)
+    .blur();
+  $("#dform_widget_num_date_of_birth_yy").val(date.getFullYear()).blur();
 
   // Hide address lookup
-  KDF.hideSection('area_address_lookup_about_you');
+  KDF.hideSection("area_address_lookup_about_you");
 
   // Set and show address
-  setSelectedAddress(address, 'show', 'dform_page_page_about_you');
+  setSelectedAddress(address, "show", "dform_page_page_about_you");
 
   // Hide submit anonymously option and info
-  $('.anonymous').hide();
+  $(".anonymous").hide();
 }
 
 // --- CREATE REVIEW PAGE --------------------------------------------------- \\
@@ -2188,7 +2376,9 @@ function getAndSetReviewPageData() {
 
   // Determine relevant pages by looking back from the review page
   for (let i = 0; i < formUserPathReversed.length - 1; i++) {
-    if (parseInt(formUserPathReversed[i]) > parseInt(formUserPathReversed[i + 1])) {
+    if (
+      parseInt(formUserPathReversed[i]) > parseInt(formUserPathReversed[i + 1])
+    ) {
       relevantPagesReversed.push(formUserPathReversed[i + 1]);
     } else {
       formUserPathReversed.splice(i + 1, 1);
@@ -2199,19 +2389,30 @@ function getAndSetReviewPageData() {
   // Reverse the relevant pages to the correct order
   let relevantPages = [];
 
-  if (KDF.kdf().form.complete === 'Y') { // use stored page array when complete
-    relevantPages = KDF.getVal('txt_pages').split(",");
+  if (KDF.kdf().form.complete === "Y") {
+    // use stored page array when complete
+    relevantPages = KDF.getVal("txt_pages").split(",");
   } else {
-    if (KDF.kdf().form.name.startsWith('cm_') || KDF.kdf().form.name.endsWith('_cm')) { // use stored page array when case management
-      relevantPages = KDF.getVal('txt_pages').split(",");
-    } else if (KDF.kdf().form.caseid && KDF.getVal('txt_resume_form') === 'true') { // use stored page array when resumed
-      relevantPages = KDF.getVal('txt_pages').split(",");
-      if (reviewPageIsVisible) { // check for review page due to page changes 
-        KDF.setVal('txt_resume_form', 'false'); // to prevent coming back down the resume path and construct page array
+    if (
+      KDF.kdf().form.name.startsWith("cm_") ||
+      KDF.kdf().form.name.endsWith("_cm")
+    ) {
+      // use stored page array when case management
+      relevantPages = KDF.getVal("txt_pages").split(",");
+    } else if (
+      KDF.kdf().form.caseid &&
+      KDF.getVal("txt_resume_form") === "true"
+    ) {
+      // use stored page array when resumed
+      relevantPages = KDF.getVal("txt_pages").split(",");
+      if (reviewPageIsVisible) {
+        // check for review page due to page changes
+        KDF.setVal("txt_resume_form", "false"); // to prevent coming back down the resume path and construct page array
       }
-    } else { // construct page array
+    } else {
+      // construct page array
       relevantPages = [...relevantPagesReversed].reverse();
-      KDF.setVal('txt_pages', relevantPages.join(','));
+      KDF.setVal("txt_pages", relevantPages.join(","));
     }
   }
 
@@ -2220,7 +2421,9 @@ function getAndSetReviewPageData() {
     $("#review-page-content-container").html("");
 
     // Find all form pages except the review page
-    const formPages = $('.dform_page[data-active="true"]').not("#dform_page_page_review");
+    const formPages = $('.dform_page[data-active="true"]').not(
+      "#dform_page_page_review"
+    );
 
     formPages.each(function (i) {
       // Get the page number of the current form page
@@ -2244,9 +2447,11 @@ function getAndSetReviewPageData() {
         contentDiv.append(buttonHtml);
 
         // Attach a click event handler to the button
-        const button = contentDiv.find('.review-page-edit-button');
-        button.on('click', function () {
-          const buttonSet = $('.dform_section_box_review div[data-type="buttonset"]');
+        const button = contentDiv.find(".review-page-edit-button");
+        button.on("click", function () {
+          const buttonSet = $(
+            '.dform_section_box_review div[data-type="buttonset"]'
+          );
           if (buttonSet.is(":hidden")) {
             buttonSet.show();
           }
@@ -2272,7 +2477,8 @@ function getAndSetReviewPageData() {
           let fieldValue = "";
 
           function getLegendText(classSelector) {
-            const parentElement = $(`.container[data-name="${fieldName}"]`).length
+            const parentElement = $(`.container[data-name="${fieldName}"]`)
+              .length
               ? $(`.container[data-name="${fieldName}"]`)
               : $(`.container.dform_widget_${fieldName}`);
 
@@ -2282,31 +2488,40 @@ function getAndSetReviewPageData() {
           }
 
           if (fieldType === "radio") {
-            fieldLabel = getLegendText('radiogroup');
+            fieldLabel = getLegendText("radiogroup");
             fieldValue = KDF.getVal(fieldName);
           } else if (fieldType === "multicheckbox") {
-            fieldLabel = getLegendText('checkboxgroup');
-            fieldValue = `<br/>${KDF.getVal(fieldName).join('<br>')}`;
-          } else if (fieldType === 'date') {
+            fieldLabel = getLegendText("checkboxgroup");
+            fieldValue = `<br/>${KDF.getVal(fieldName).join("<br>")}`;
+          } else if (fieldType === "date") {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
             fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
-          } else if (fieldType === 'file') {
+          } else if (fieldType === "file") {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-            fieldValue = KDF.getVal(fieldName.replace('file_', 'txt_file_name_'));
-            const filePath = KDF.getVal(fieldName.replace('file_', 'txt_file_path_'));
-            if (KDF.kdf().access === 'agent' && filePath) {
+            fieldValue = KDF.getVal(
+              fieldName.replace("file_", "txt_file_name_")
+            );
+            const filePath = KDF.getVal(
+              fieldName.replace("file_", "txt_file_path_")
+            );
+            if (KDF.kdf().access === "agent" && filePath) {
               fieldValue = `<a href="${filePath}" target="_blank">${fieldValue}</a>`;
             }
           } else {
-            if (fieldClass.indexOf('currency') !== -1) {
+            if (fieldClass.indexOf("currency") !== -1) {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
               fieldValue = `£${KDF.getVal(fieldName)}`;
-            } else if (fieldClass.indexOf('address-search') !== -1) {
-              fieldLabel = 'Address';
-              fieldValue = getValueFromAlias(pageId, 'fullAddress');
-            } else if (fieldClass.indexOf('property') !== -1 || fieldClass.indexOf('street-name') !== -1 || fieldClass.indexOf('city') !== -1 || fieldClass.indexOf('postcode') !== -1) {
+            } else if (fieldClass.indexOf("address-search") !== -1) {
+              fieldLabel = "Address";
+              fieldValue = getValueFromAlias(pageId, "fullAddress");
+            } else if (
+              fieldClass.indexOf("property") !== -1 ||
+              fieldClass.indexOf("street-name") !== -1 ||
+              fieldClass.indexOf("city") !== -1 ||
+              fieldClass.indexOf("postcode") !== -1
+            ) {
               fieldLabel = false;
-              fieldValue = '';
+              fieldValue = "";
             } else {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
               fieldValue = KDF.getVal(fieldName);
@@ -2317,7 +2532,7 @@ function getAndSetReviewPageData() {
           if (fieldLabel) {
             // Set a default value for optional fields that are visible but not answered
             if (fieldValue === "") {
-              if (fieldType === 'file') {
+              if (fieldType === "file") {
                 fieldValue = "Not uploaded";
               } else {
                 fieldValue = "Not answered";
@@ -2338,62 +2553,71 @@ function getAndSetReviewPageData() {
 // --- CONTACT TEAM PANEL --------------------------------------------------- \\
 
 function showContactTeamPanel() {
-  const contactInfo = document.createElement('aside');
-  contactInfo.classList.add('contact-information');
+  const contactInfo = document.createElement("aside");
+  contactInfo.classList.add("contact-information");
 
-  const header = document.createElement('header');
-  const headerTitle = document.createElement('h2');
-  headerTitle.textContent = KDF.getVal('txt_contact_title');
+  const header = document.createElement("header");
+  const headerTitle = document.createElement("h2");
+  headerTitle.textContent = KDF.getVal("txt_contact_title");
   header.appendChild(headerTitle);
 
-  const main = document.createElement('main');
-  main.classList.add('contact-details');
+  const main = document.createElement("main");
+  main.classList.add("contact-details");
 
-  const emailIcon = document.createElement('i');
-  emailIcon.classList.add('icon');
-  const emailIconSpan = document.createElement('span');
-  emailIconSpan.classList.add('icon-email');
+  const emailIcon = document.createElement("i");
+  emailIcon.classList.add("icon");
+  const emailIconSpan = document.createElement("span");
+  emailIconSpan.classList.add("icon-email");
   emailIcon.appendChild(emailIconSpan);
 
-  const emailLink = document.createElement('a');
-  emailLink.href = KDF.getVal('txt_contact_link');
-  emailLink.textContent = 'Ask us a question';
+  const emailLink = document.createElement("a");
+  emailLink.href = KDF.getVal("txt_contact_link");
+  emailLink.textContent = "Ask us a question";
 
   main.appendChild(emailIcon);
   main.appendChild(emailLink);
 
-  const phoneIcon = document.createElement('i');
-  phoneIcon.classList.add('icon');
-  const phoneIconSpan = document.createElement('span');
-  phoneIconSpan.classList.add('icon-phone');
+  const phoneIcon = document.createElement("i");
+  phoneIcon.classList.add("icon");
+  const phoneIconSpan = document.createElement("span");
+  phoneIconSpan.classList.add("icon-phone");
   phoneIcon.appendChild(phoneIconSpan);
 
-  const phoneLink = document.createElement('a');
-  phoneLink.href = `tel:${KDF.getVal('tel_contact_number')}`;
-  phoneLink.textContent = `${KDF.getVal('tel_contact_number').slice(0, 4)} ${KDF.getVal('tel_contact_number').slice(4, 7)} ${KDF.getVal('tel_contact_number').slice(7, 11)}`;
+  const phoneLink = document.createElement("a");
+  phoneLink.href = `tel:${KDF.getVal("tel_contact_number")}`;
+  phoneLink.textContent = `${KDF.getVal("tel_contact_number").slice(
+    0,
+    4
+  )} ${KDF.getVal("tel_contact_number").slice(4, 7)} ${KDF.getVal(
+    "tel_contact_number"
+  ).slice(7, 11)}`;
   main.appendChild(phoneIcon);
   main.appendChild(phoneLink);
 
-  if (KDF.getVal('txt_contact_address')) {
-    const locationIcon = document.createElement('i');
-    locationIcon.classList.add('icon');
-    locationIcon.classList.add('align-self');
-    const locationIconSpan = document.createElement('span');
-    locationIconSpan.classList.add('icon-location');
+  if (KDF.getVal("txt_contact_address")) {
+    const locationIcon = document.createElement("i");
+    locationIcon.classList.add("icon");
+    locationIcon.classList.add("align-self");
+    const locationIconSpan = document.createElement("span");
+    locationIconSpan.classList.add("icon-location");
     locationIcon.appendChild(locationIconSpan);
 
-    const address = document.createElement('p');
-    const addressString = KDF.getVal('txt_contact_address').replace(/, /g, "<br/>");
+    const address = document.createElement("p");
+    const addressString = KDF.getVal("txt_contact_address").replace(
+      /, /g,
+      "<br/>"
+    );
     address.innerHTML = addressString;
     main.appendChild(address);
     main.appendChild(locationIcon);
     main.appendChild(address);
   }
 
-  const footer = document.createElement('footer');
-  const footerImg = document.createElement('img');
-  footerImg.src = 'https://www.sheffield.gov.uk/themes/custom/bbd_localgov/images/council-tax.jpeg';
-  footerImg.alt = 'Footer Image';
+  const footer = document.createElement("footer");
+  const footerImg = document.createElement("img");
+  footerImg.src =
+    "https://www.sheffield.gov.uk/themes/custom/bbd_localgov/images/council-tax.jpeg";
+  footerImg.alt = "Footer Image";
 
   footer.appendChild(footerImg);
 
@@ -2401,11 +2625,11 @@ function showContactTeamPanel() {
   contactInfo.appendChild(main);
   contactInfo.appendChild(footer);
 
-  const target = document.querySelector('.title-container');
+  const target = document.querySelector(".title-container");
   if (target) {
     target.after(contactInfo);
   } else {
-    console.error('Element with class title-container not found');
+    console.error("Element with class title-container not found");
   }
 }
 
@@ -2413,13 +2637,13 @@ function showContactTeamPanel() {
 
 function checkIsFormComplete(fields) {
   let isComplete = true;
-  fields.map(field => {
+  fields.map((field) => {
     if (
-      KDF.getVal(field) === ''
-      || KDF.getVal(field) === null
-      || KDF.getVal(field) === undefined
-      || KDF.getVal(field) === 'Pending'
-      || KDF.getVal(field) === 'In progress'
+      KDF.getVal(field) === "" ||
+      KDF.getVal(field) === null ||
+      KDF.getVal(field) === undefined ||
+      KDF.getVal(field) === "Pending" ||
+      KDF.getVal(field) === "In progress"
     ) {
       isComplete = false;
     }
@@ -2428,282 +2652,317 @@ function checkIsFormComplete(fields) {
 }
 
 function closeCase() {
-  const noteDetails = KDF.getVal('txta_closure_details') ? `${KDF.getVal('txta_closure_details')}` : '';
-  KDF.customdata('close-case', '_KDF_complete', true, true, {
-    caseNote: `${KDF.getVal('sel_closure_reason')}: ${noteDetails}`
+  const noteDetails = KDF.getVal("txta_closure_details")
+    ? `${KDF.getVal("txta_closure_details")}`
+    : "";
+  KDF.customdata("close-case", "_KDF_complete", true, true, {
+    caseNote: `${KDF.getVal("sel_closure_reason")}: ${noteDetails}`,
   });
 }
 
 // --- MAP FUNCTIONS -------------------------------------------------------- \\
 
-var streetMapView, streetMapPositionLayer, mapPoint, caseLayer, markerSymbol, assetSymbol, esriAssetUrl;
+var streetMapView,
+  streetMapPositionLayer,
+  mapPoint,
+  caseLayer,
+  markerSymbol,
+  assetSymbol,
+  esriAssetUrl;
 var xminE, xmaxE, yminE, ymaxE, streetLightLayer, esrimap, highlightSelect;
-var viewPointX, viewPointY, assetWatch, scc_boundary_ring, mapZoomLevel, streetlight_unittype, BG_layer;
+var viewPointX,
+  viewPointY,
+  assetWatch,
+  scc_boundary_ring,
+  mapZoomLevel,
+  streetlight_unittype,
+  BG_layer;
 var assetWatchStatus = false;
 var viewInitialLoad = false;
 var asset_init = false;
 var selectedLocation = "";
 const popupContent = function (feature) {
   const div = document.createElement("div");
-  div.innerHTML = "<div class='popup' style='font-weight: bold; font-size: medium;'></br>";
+  div.innerHTML =
+    "<div class='popup' style='font-weight: bold; font-size: medium;'></br>";
   return div;
 };
 
 var vmap_config = {
-  "mapClickType": "Normal",
-  "featureLayers": [
+  mapClickType: "Normal",
+  featureLayers: [
     {
-      "number": "0",
-      "name": "street_light",
-      "title": "Street Light",
-      "layer_type": "Display",
-      "layerid": "6",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/6",
-      "popup": {
-        "title": "",
-        "content": popupContent
-      }
+      number: "0",
+      name: "street_light",
+      title: "Street Light",
+      layer_type: "Display",
+      layerid: "6",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/6",
+      popup: {
+        title: "",
+        content: popupContent,
+      },
     },
     {
-      "number": "1",
-      "name": "vegetation",
-      "title": "Vegetation",
-      "layer_type": "Display",
-      "layerid": "24",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/24",
-      "popup": {
-        "title": "",
-        "content": popupContent
-      }
+      number: "1",
+      name: "vegetation",
+      title: "Vegetation",
+      layer_type: "Display",
+      layerid: "24",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/24",
+      popup: {
+        title: "",
+        content: popupContent,
+      },
     },
     {
-      "number": "2",
-      "name": "Signs",
-      "title": "Signs",
-      "layer_type": "Display",
-      "layerid": "0",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/0",
-      "popup": {
-        "title": "",
-        "content": popupContent
-      }
+      number: "2",
+      name: "Signs",
+      title: "Signs",
+      layer_type: "Display",
+      layerid: "0",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/0",
+      popup: {
+        title: "",
+        content: popupContent,
+      },
     },
     {
-      "number": "3",
-      "name": "Traffic Signs",
-      "title": "Traffic Signs",
-      "layer_type": "Display",
-      "layerid": "41",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/41",
-      "popup": {
-        "title": "",
-        "content": popupContent
-      }
+      number: "3",
+      name: "Traffic Signs",
+      title: "Traffic Signs",
+      layer_type: "Display",
+      layerid: "41",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/41",
+      popup: {
+        title: "",
+        content: popupContent,
+      },
     },
     {
-      "number": "4",
-      "name": "Drains",
-      "title": "Drains",
-      "layer_type": "Display",
-      "layerid": "2",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/2",
-      "popup": {
-        "title": "",
-        "content": popupContent
-      }
+      number: "4",
+      name: "Drains",
+      title: "Drains",
+      layer_type: "Display",
+      layerid: "2",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/2",
+      popup: {
+        title: "",
+        content: popupContent,
+      },
     },
     {
-      "number": "5",
-      "name": "Grit Bins",
-      "title": "Grit Bins",
-      "layer_type": "Display",
-      "layerid": "3",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/3",
-      "popup": {
-        "title": "",
-        "content": popupContent
-      }
+      number: "5",
+      name: "Grit Bins",
+      title: "Grit Bins",
+      layer_type: "Display",
+      layerid: "3",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/3",
+      popup: {
+        title: "",
+        content: popupContent,
+      },
     },
     {
-      "number": "6",
-      "name": "Litter Bins",
-      "title": "Litter Bins",
-      "layer_type": "Display",
-      "layerid": "4",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/4",
-      "popup": {
-        "title": "",
-        "content": popupContent
-      }
+      number: "6",
+      name: "Litter Bins",
+      title: "Litter Bins",
+      layer_type: "Display",
+      layerid: "4",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/4",
+      popup: {
+        title: "",
+        content: popupContent,
+      },
     },
     {
-      "number": "7",
-      "name": "Street Furniture",
-      "title": "Street Furniture",
-      "layer_type": "Display",
-      "layerid": "5",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/5",
-      "popup": {
-        "title": "",
-        "content": popupContent
-      }
+      number: "7",
+      name: "Street Furniture",
+      title: "Street Furniture",
+      layer_type: "Display",
+      layerid: "5",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/5",
+      popup: {
+        title: "",
+        content: popupContent,
+      },
     },
     {
-      "number": "8",
-      "name": "Structure",
-      "title": "Structure",
-      "layer_type": "Display",
-      "layerid": "7",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/7",
-      "popup": {
-        "title": "",
-        "content": popupContent
-      }
+      number: "8",
+      name: "Structure",
+      title: "Structure",
+      layer_type: "Display",
+      layerid: "7",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/7",
+      popup: {
+        title: "",
+        content: popupContent,
+      },
     },
     {
-      "number": "9",
-      "name": "Fences",
-      "title": "Fences",
-      "layer_type": "Display",
-      "layerid": "8",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/8",
-      "popup": {
-        "title": "",
-        "content": popupContent
-      }
+      number: "9",
+      name: "Fences",
+      title: "Fences",
+      layer_type: "Display",
+      layerid: "8",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/8",
+      popup: {
+        title: "",
+        content: popupContent,
+      },
     },
     {
-      "number": "10",
-      "name": "Trees",
-      "title": "Trees",
-      "layer_type": "Display",
-      "layerid": "27",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/27",
-      "popup": {
-        "title": "",
-        "content": popupContent
-      }
+      number: "10",
+      name: "Trees",
+      title: "Trees",
+      layer_type: "Display",
+      layerid: "27",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/27",
+      popup: {
+        title: "",
+        content: popupContent,
+      },
     },
     {
-      "number": "11",
-      "name": "city centre",
-      "title": "city centre",
-      "layer_type": "Background",
-      "layerid": "14",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/14",
-      "popup": {}
+      number: "11",
+      name: "city centre",
+      title: "city centre",
+      layer_type: "Background",
+      layerid: "14",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/14",
+      popup: {},
     },
     {
-      "number": "12",
-      "name": "hot spot",
-      "title": "hot spot",
-      "layer_type": "Background",
-      "layerid": "15",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/15",
-      "popup": {}
+      number: "12",
+      name: "hot spot",
+      title: "hot spot",
+      layer_type: "Background",
+      layerid: "15",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/15",
+      popup: {},
     },
     {
-      "number": "13",
-      "name": "hot spot schools",
-      "title": "hot spot schools",
-      "layer_type": "Background",
-      "layerid": "16",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/16",
-      "popup": {}
+      number: "13",
+      name: "hot spot schools",
+      title: "hot spot schools",
+      layer_type: "Background",
+      layerid: "16",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/16",
+      popup: {},
     },
     {
-      "number": "14",
-      "name": "principal shop site",
-      "title": "principal shop site",
-      "layer_type": "Background",
-      "layerid": "17",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/17",
-      "popup": {}
+      number: "14",
+      name: "principal shop site",
+      title: "principal shop site",
+      layer_type: "Background",
+      layerid: "17",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/17",
+      popup: {},
     },
     {
-      "number": "15",
-      "name": "neighbourhood shop site",
-      "title": "neighbourhood shop site",
-      "layer_type": "Background",
-      "layerid": "18",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/18",
-      "popup": {}
+      number: "15",
+      name: "neighbourhood shop site",
+      title: "neighbourhood shop site",
+      layer_type: "Background",
+      layerid: "18",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/18",
+      popup: {},
     },
     {
-      "number": "16",
-      "name": "gateway",
-      "title": "gateway",
-      "layer_type": "Background",
-      "layerid": "19",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/19",
-      "popup": {}
+      number: "16",
+      name: "gateway",
+      title: "gateway",
+      layer_type: "Background",
+      layerid: "19",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/19",
+      popup: {},
     },
     {
-      "number": "17",
-      "name": "public right of way",
-      "title": "public right of way",
-      "layer_type": "Background",
-      "layerid": "23",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/23",
-      "popup": {}
+      number: "17",
+      name: "public right of way",
+      title: "public right of way",
+      layer_type: "Background",
+      layerid: "23",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/23",
+      popup: {},
     },
     {
-      "number": "18",
-      "name": "ground maintenance sites",
-      "title": "ground maintenance sites",
-      "layer_type": "Background",
-      "layerid": "49",
-      "url": "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/49",
-      "popup": {}
-    }
-  ]
-}
+      number: "18",
+      name: "ground maintenance sites",
+      title: "ground maintenance sites",
+      layer_type: "Background",
+      layerid: "49",
+      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/49",
+      popup: {},
+    },
+  ],
+};
 
 proj4.defs([
-  ['EPSG:4326', '+title=WGS 84 (long/lat) +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs'],
   [
-    'SR-ORG:7483',
-    '+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs',
+    "EPSG:4326",
+    "+title=WGS 84 (long/lat) +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
   ],
   [
-    'EPSG:27700',
-    '+title=OSGB 1936 / British National Grid (UTM) +proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +datum=OSGB36 +units=m +no_defs',
+    "SR-ORG:7483",
+    "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs",
+  ],
+  [
+    "EPSG:27700",
+    "+title=OSGB 1936 / British National Grid (UTM) +proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +datum=OSGB36 +units=m +no_defs",
   ],
 ]);
 
-var store_layer_attr = { main_attribute: {}, background_attribute: {} }
+var store_layer_attr = { main_attribute: {}, background_attribute: {} };
 
 function do_KDF_Ready_esriMap() {
   fetchSccRing();
   var symbol;
-  require(['esri/symbols/PictureMarkerSymbol'], function (PictureMarkerSymbol) {
+  require(["esri/symbols/PictureMarkerSymbol"], function (PictureMarkerSymbol) {
     symbol = {
-      type: 'picture-marker',
-      url: 'https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield/Images/map-pin.png',
+      type: "picture-marker",
+      url: "https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield/Images/map-pin.png",
       width: 20,
       height: 35,
       yoffset: 10,
     };
-
   });
 
   markerSymbol = symbol;
-  KDF.customdata('get_osmap_api_key', '', true, false, {});
+  KDF.customdata("get_osmap_api_key", "", true, false, {});
 
-  $('#map_container').html('');
+  $("#map_container").html("");
 }
 
 function initialize_map(map_param) {
   let map, finalUrl;
-  finalUrl = 'https://api.os.uk/maps/raster/v1/zxy/Road_3857/{level}/{col}/{row}.png?key=' + map_param;
+  finalUrl =
+    "https://api.os.uk/maps/raster/v1/zxy/Road_3857/{level}/{col}/{row}.png?key=" +
+    map_param;
 
   require([
     "esri/Map",
     "esri/views/MapView",
     "esri/layers/WebTileLayer",
-    "esri/Graphic", "esri/layers/TileLayer", "esri/Basemap", "esri/geometry/Point", "esri/geometry/SpatialReference", "esri/layers/GraphicsLayer", 'esri/layers/FeatureLayer'
-  ], function (Map, MapView, WebTileLayer, Graphic, TileLayer, Basemap, Point, SpatialReference, GraphicsLayer, FeatureLayer) {
-
+    "esri/Graphic",
+    "esri/layers/TileLayer",
+    "esri/Basemap",
+    "esri/geometry/Point",
+    "esri/geometry/SpatialReference",
+    "esri/layers/GraphicsLayer",
+    "esri/layers/FeatureLayer",
+  ], function (
+    Map,
+    MapView,
+    WebTileLayer,
+    Graphic,
+    TileLayer,
+    Basemap,
+    Point,
+    SpatialReference,
+    GraphicsLayer,
+    FeatureLayer
+  ) {
     let positionLayer = new GraphicsLayer();
 
     const tileLayer = new WebTileLayer({ urlTemplate: finalUrl });
@@ -2712,8 +2971,8 @@ function initialize_map(map_param) {
       x: 435219,
       y: 387419,
       spatialReference: {
-        wkid: 27700
-      }
+        wkid: 27700,
+      },
     });
 
     map = new Map({ layers: [tileLayer] });
@@ -2727,23 +2986,32 @@ function initialize_map(map_param) {
       constraints: {
         minZoom: 7,
         maxZoom: 20,
-        rotationEnabled: false
-      }
+        rotationEnabled: false,
+      },
     });
 
-    streetMapView.on('click', mapClick);
+    streetMapView.on("click", mapClick);
 
     mapZoomLevel = streetMapView.zoom;
-    $('#dform_' + KDF.kdf().form.name).trigger('_KDF_mapReady', [null, 'arcgis', 'map_container', map, positionLayer, null, null, null]);
+    $("#dform_" + KDF.kdf().form.name).trigger("_KDF_mapReady", [
+      null,
+      "arcgis",
+      "map_container",
+      map,
+      positionLayer,
+      null,
+      null,
+      null,
+    ]);
 
     districtLayer = new FeatureLayer({
-      id: 'scc_boundary',
-      url: 'https://utility.arcgis.com/usrsvcs/servers/97cfdc3a164c48219826b907c0a5064f/rest/services/AGOL/Boundaries/MapServer/0',
+      id: "scc_boundary",
+      url: "https://utility.arcgis.com/usrsvcs/servers/97cfdc3a164c48219826b907c0a5064f/rest/services/AGOL/Boundaries/MapServer/0",
     }); //Border Layer
     districtLayer.renderer = {
-      type: 'simple',
+      type: "simple",
       symbol: {
-        type: 'simple-fill',
+        type: "simple-fill",
         color: [0, 0, 0, 0],
         outline: {
           color: [0, 0, 0, 255],
@@ -2753,7 +3021,7 @@ function initialize_map(map_param) {
     };
     esrimap.add(districtLayer);
 
-    if (KDF.kdf().form.complete !== 'Y') {
+    if (KDF.kdf().form.complete !== "Y") {
       streetMapView.when(function () {
         map_extent_change();
       });
@@ -2765,35 +3033,40 @@ function do_KDF_mapReady_esriMap(map, positionLayer) {
   streetMapPositionLayer = positionLayer;
 
   if (
-    KDF.kdf().form.complete === 'Y' ||
-    KDF.kdf().viewmode === 'U' ||
-    KDF.kdf().viewmode === 'R'
+    KDF.kdf().form.complete === "Y" ||
+    KDF.kdf().viewmode === "U" ||
+    KDF.kdf().viewmode === "R"
   ) {
-    var lon = KDF.getVal('le_gis_lon');
-    var lat = KDF.getVal('le_gis_lat');
+    var lon = KDF.getVal("le_gis_lon");
+    var lat = KDF.getVal("le_gis_lat");
 
-    if (lon !== '' && lat !== '') {
-      require(['esri/geometry/Point', 'esri/geometry/SpatialReference'], function (
-        Point,
-        SpatialReference
-      ) {
+    if (lon !== "" && lat !== "") {
+      require([
+        "esri/geometry/Point",
+        "esri/geometry/SpatialReference",
+      ], function (Point, SpatialReference) {
         centerpoint = new Point({
-          x: KDF.getVal('le_gis_lon'),
-          y: KDF.getVal('le_gis_lat'),
+          x: KDF.getVal("le_gis_lon"),
+          y: KDF.getVal("le_gis_lat"),
           spatialReference: new SpatialReference({ wkid: 4326 }),
         });
 
         streetMapView.when(function () {
-          if (KDF.kdf().viewmode === 'U') {
+          if (KDF.kdf().viewmode === "U") {
             map_extent_change();
 
-            if (typeof KDF.getVal('txt_layerid') !== 'undefined' && KDF.getVal('txt_layerid') != '') {
-              if (!asset_init) { initializeAssetLayer(streetMapView.zoom); }
+            if (
+              typeof KDF.getVal("txt_layerid") !== "undefined" &&
+              KDF.getVal("txt_layerid") != ""
+            ) {
+              if (!asset_init) {
+                initializeAssetLayer(streetMapView.zoom);
+              }
             }
           }
           streetMapView.goTo({
             center: centerpoint,
-            zoom: 18
+            zoom: 18,
           });
         });
         addPoint(streetMapView, centerpoint, markerSymbol);
@@ -2803,34 +3076,34 @@ function do_KDF_mapReady_esriMap(map, positionLayer) {
 }
 
 function mapClick(evt) {
-  KDF.setVal('txt_site_name', '');
-  KDF.setVal('txt_site_code', '');
-  KDF.setVal('txt_feature_name', '');
-  KDF.setVal('txt_feature_type', '');
-  KDF.setVal('txt_responsibility', '');
-  KDF.setVal('txt_prestige', '');
+  KDF.setVal("txt_site_name", "");
+  KDF.setVal("txt_site_code", "");
+  KDF.setVal("txt_feature_name", "");
+  KDF.setVal("txt_feature_type", "");
+  KDF.setVal("txt_responsibility", "");
+  KDF.setVal("txt_prestige", "");
   setValuesToInputFields([
-    { alias: "property", value: '' },
-    { alias: "streetName", value: '' },
-    { alias: "city", value: '' },
-    { alias: "postCode", value: '' },
-    { alias: "fullAddress", value: '' },
-    { alias: "uprn", value: '' },
-    { alias: "usrn", value: '' },
-    { alias: "siteName", value: '' },
-    { alias: "siteCode", value: '' },
+    { alias: "property", value: "" },
+    { alias: "streetName", value: "" },
+    { alias: "city", value: "" },
+    { alias: "postCode", value: "" },
+    { alias: "fullAddress", value: "" },
+    { alias: "uprn", value: "" },
+    { alias: "usrn", value: "" },
+    { alias: "siteName", value: "" },
+    { alias: "siteCode", value: "" },
   ]);
-  setSelectedAddress('', 'hide');
+  setSelectedAddress("", "hide");
 
-  $('.esriPopup').hide();
-  if (KDF.kdf().form.complete !== 'Y' || KDF.kdf().viewmode === 'U') {
+  $(".esriPopup").hide();
+  if (KDF.kdf().form.complete !== "Y" || KDF.kdf().viewmode === "U") {
     selectedLocation = "";
-    KDF.setVal('le_gis_lat', '');
-    KDF.setVal('le_gis_lon', '');
-    KDF.setVal('le_gis_latgeo', '');
-    KDF.setVal('le_gis_longeo', '');
-    KDF.setVal('txta_location_address', '');
-    KDF.hideWidget('ahtm_map_location_error');
+    KDF.setVal("le_gis_lat", "");
+    KDF.setVal("le_gis_lon", "");
+    KDF.setVal("le_gis_latgeo", "");
+    KDF.setVal("le_gis_longeo", "");
+    KDF.setVal("txta_location_address", "");
+    KDF.hideWidget("ahtm_map_location_error");
     var screenPoint = {
       x: evt.x,
       y: evt.y,
@@ -2838,16 +3111,22 @@ function mapClick(evt) {
     streetMapView.hitTest(screenPoint).then(function (response) {
       let graphic = response.results;
       selectedLocation = evt.mapPoint;
-      var source = new proj4.Proj('SR-ORG:7483');
-      var dest = new proj4.Proj('EPSG:27700');
-      var dest4326 = new proj4.Proj('EPSG:4326');
-      var convertPointP4 = new proj4.Point(selectedLocation.x, selectedLocation.y);
-      var convertPoint4326 = new proj4.Point(selectedLocation.x, selectedLocation.y);
+      var source = new proj4.Proj("SR-ORG:7483");
+      var dest = new proj4.Proj("EPSG:27700");
+      var dest4326 = new proj4.Proj("EPSG:4326");
+      var convertPointP4 = new proj4.Point(
+        selectedLocation.x,
+        selectedLocation.y
+      );
+      var convertPoint4326 = new proj4.Point(
+        selectedLocation.x,
+        selectedLocation.y
+      );
 
       proj4.transform(source, dest, convertPointP4);
       proj4.transform(source, dest4326, convertPoint4326);
-      KDF.setVal('le_gis_lon', convertPoint4326.x.toString());
-      KDF.setVal('le_gis_lat', convertPoint4326.y.toString());
+      KDF.setVal("le_gis_lon", convertPoint4326.x.toString());
+      KDF.setVal("le_gis_lat", convertPoint4326.y.toString());
       mapX = convertPointP4.x.toString();
       mapY = convertPointP4.y.toString();
 
@@ -2858,77 +3137,81 @@ function mapClick(evt) {
       store_layer_attr.background_attribute = {};
 
       if (!withinSccCheck(convertPointP4)) {
-        $('#map_container').addClass('map_container_error');
-        if ($('#map_error').length == '0') {
-          $('#dform_widget_html_ahtm_map_container').prepend('<div id="map_error" class="dform_validationMessage" style="display: block;">Select a location inside the Sheffield area</div>');
+        $("#map_container").addClass("map_container_error");
+        if ($("#map_error").length == "0") {
+          $("#dform_widget_html_ahtm_map_container").prepend(
+            '<div id="map_error" class="dform_validationMessage" style="display: block;">Select a location inside the Sheffield area</div>'
+          );
         }
         KDF.setVal(
-          'ahtm_map_location_error',
-          'Select a location inside the Sheffield area'
+          "ahtm_map_location_error",
+          "Select a location inside the Sheffield area"
         );
         resetAddressSearch();
-        KDF.showWidget('ahtm_map_location_error');
+        KDF.showWidget("ahtm_map_location_error");
         selectedLocation = "";
-        KDF.setVal('le_gis_lat', '');
-        KDF.setVal('le_gis_lon', '');
-        KDF.setVal('le_gis_latgeo', '');
-        KDF.setVal('le_gis_longeo', '');
+        KDF.setVal("le_gis_lat", "");
+        KDF.setVal("le_gis_lon", "");
+        KDF.setVal("le_gis_latgeo", "");
+        KDF.setVal("le_gis_longeo", "");
 
-        $('#dform_' + KDF.kdf().form.name).trigger('_KDF_mapOutsideBoundary', [null]);
-
+        $("#dform_" + KDF.kdf().form.name).trigger("_KDF_mapOutsideBoundary", [
+          null,
+        ]);
       } else {
-        $('#map_error').remove();
+        $("#map_error").remove();
         if (streetMapView.zoom >= 18) {
           streetMapView.goTo({
-            center: evt.mapPoint
+            center: evt.mapPoint,
           });
         } else if (streetMapView.zoom < 18) {
           streetMapView.goTo({
             center: evt.mapPoint,
-            zoom: 18
+            zoom: 18,
           });
         }
 
-        KDF.customdata('gis_background_layer', '', true, true, {
+        KDF.customdata("gis_background_layer", "", true, true, {
           url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/42",
           longitude: mapX,
           latitude: mapY,
-          distance: 20
+          distance: 20,
         });
 
-        $('#map_container').removeClass('map_container_error');
-        if (graphic[0].layer.id === 'scc_boundary') {
+        $("#map_container").removeClass("map_container_error");
+        if (graphic[0].layer.id === "scc_boundary") {
           addPoint(streetMapView, evt.mapPoint, markerSymbol);
-          $('.esriPopup').hide();
+          $(".esriPopup").hide();
           mapPoint = evt.mapPoint;
           addPoint(streetMapView, mapPoint, markerSymbol);
 
           mapX = convertPointP4.x.toString();
           mapY = convertPointP4.y.toString();
-          KDF.setVal('le_gis_lon', mapX_4326);
-          KDF.setVal('le_gis_lat', mapY_4326);
-          KDF.customdata('reverse_geocode_osmap', 'mapClick', true, true, {
+          KDF.setVal("le_gis_lon", mapX_4326);
+          KDF.setVal("le_gis_lat", mapY_4326);
+          KDF.customdata("reverse_geocode_osmap", "mapClick", true, true, {
             longitude: mapX,
             latitude: mapY,
           });
 
           if (vmap_config.mapClickType == "Background") {
-            KDF.customdata('feature_layer_request', 'mapClick', true, true, {
+            KDF.customdata("feature_layer_request", "mapClick", true, true, {
               url: vmap_config.featureLayers[BG_layer].url,
               longitude: mapX,
               latitude: mapY,
-              distance: "5"
+              distance: "5",
             });
           }
 
-          $('#dform_' + KDF.kdf().form.name).trigger('_KDF_clearAttribute', [null]);
+          $("#dform_" + KDF.kdf().form.name).trigger("_KDF_clearAttribute", [
+            null,
+          ]);
         } else {
-
           streetMapPositionLayer.removeAll();
           var layerAttributes;
           var layerName;
           graphic.forEach(function (arrayItem) {
-            if (arrayItem.layer.id !== 'scc_boundary') {
+            if (arrayItem.layer.id !== "scc_boundary") {
               layerAttributes = arrayItem.graphic.attributes;
               layerName = arrayItem.layer.id.toString();
             }
@@ -2936,125 +3219,148 @@ function mapClick(evt) {
 
           mapX = convertPointP4.x.toString();
           mapY = convertPointP4.y.toString();
-          KDF.setVal('le_gis_lon', mapX_4326);
-          KDF.setVal('le_gis_lat', mapY_4326);
+          KDF.setVal("le_gis_lon", mapX_4326);
+          KDF.setVal("le_gis_lat", mapY_4326);
 
           store_layer_attr.main_attribute = {};
           store_layer_attr.main_attribute = layerAttributes;
           store_layer_attr.main_attribute.layername = layerName;
 
-          KDF.customdata('reverse_geocode_osmap', 'asset_code', true, true, {
+          KDF.customdata("reverse_geocode_osmap", "asset_code", true, true, {
             longitude: mapX,
             latitude: mapY,
           });
         }
       }
-
     });
   }
 }
 
 function retrieveAttribute() {
-  $('#dform_' + KDF.kdf().form.name).trigger('_Selected_Layer', [null, "asset_layer", store_layer_attr]);
+  $("#dform_" + KDF.kdf().form.name).trigger("_Selected_Layer", [
+    null,
+    "asset_layer",
+    store_layer_attr,
+  ]);
 }
 
 function map_extent_change() {
-
-  if (typeof KDF.getVal('txt_layerid') !== 'undefined' && KDF.getVal('txt_layerid') !== '') {
+  if (
+    typeof KDF.getVal("txt_layerid") !== "undefined" &&
+    KDF.getVal("txt_layerid") !== ""
+  ) {
     var arrayCount;
-    var layerId = KDF.getVal('txt_layerid').split(",");
+    var layerId = KDF.getVal("txt_layerid").split(",");
     for (var i = 0; i < layerId.length; i++) {
       arrayCount = layerId[i];
-      console.log(vmap_config.featureLayers[arrayCount])
-      if (vmap_config.featureLayers[arrayCount].layer_type == 'Background') {
+      console.log(vmap_config.featureLayers[arrayCount]);
+      if (vmap_config.featureLayers[arrayCount].layer_type == "Background") {
         BG_layer = vmap_config.featureLayers[arrayCount].number;
         vmap_config.mapClickType = "Background";
       }
     }
   }
 
-  require(['esri/views/MapView', 'esri/layers/FeatureLayer', 'esri/core/reactiveUtils'], function (
-    MapView,
-    FeatureLayer, ReactiveUtils
-  ) {
-    if (KDF.kdf().viewmode !== 'R') {
-      assetWatch = ReactiveUtils.when(() => [streetMapView.stationary, streetMapView.interacting], (a, b) => {
-        if (!viewInitialLoad) {
-          xminE = streetMapView.extent.xmin;
-          xmaxE = streetMapView.extent.xmax;
-          yminE = streetMapView.extent.ymin;
-          ymaxE = streetMapView.extent.ymax;
+  require([
+    "esri/views/MapView",
+    "esri/layers/FeatureLayer",
+    "esri/core/reactiveUtils",
+  ], function (MapView, FeatureLayer, ReactiveUtils) {
+    if (KDF.kdf().viewmode !== "R") {
+      assetWatch = ReactiveUtils.when(
+        () => [streetMapView.stationary, streetMapView.interacting],
+        (a, b) => {
+          if (!viewInitialLoad) {
+            xminE = streetMapView.extent.xmin;
+            xmaxE = streetMapView.extent.xmax;
+            yminE = streetMapView.extent.ymin;
+            ymaxE = streetMapView.extent.ymax;
 
-          viewInitialLoad = true;
-        }
-        if (a[0] && !b[0]) {
-          if (xminE !== streetMapView.extent.xmin && xmaxE != streetMapView.extent.xmax &&
-            yminE !== streetMapView.extent.ymin && ymaxE !== streetMapView.extent.ymax) {
-            KDF.hideWidget('ahtm_map_location_error');
+            viewInitialLoad = true;
+          }
+          if (a[0] && !b[0]) {
+            if (
+              xminE !== streetMapView.extent.xmin &&
+              xmaxE != streetMapView.extent.xmax &&
+              yminE !== streetMapView.extent.ymin &&
+              ymaxE !== streetMapView.extent.ymax
+            ) {
+              KDF.hideWidget("ahtm_map_location_error");
 
-            if (parseInt(streetMapView.zoom) >= 16) {
-              mapZoomLevel = streetMapView.zoom;
-              if (typeof KDF.getVal('txt_layerid') !== 'undefined' && KDF.getVal('txt_layerid') != '') {
-                if (!asset_init) { initializeAssetLayer(streetMapView.zoom); }
-                else if (asset_init) {
-                  var arrayCount;
+              if (parseInt(streetMapView.zoom) >= 16) {
+                mapZoomLevel = streetMapView.zoom;
+                if (
+                  typeof KDF.getVal("txt_layerid") !== "undefined" &&
+                  KDF.getVal("txt_layerid") != ""
+                ) {
+                  if (!asset_init) {
+                    initializeAssetLayer(streetMapView.zoom);
+                  } else if (asset_init) {
+                    var arrayCount;
 
-                  var layerId = KDF.getVal('txt_layerid').split(",");
+                    var layerId = KDF.getVal("txt_layerid").split(",");
+                    for (var i = 0; i < layerId.length; i++) {
+                      arrayCount = layerId[i];
+                      esrimap.findLayerById(
+                        vmap_config.featureLayers[arrayCount].name
+                      ).visible = true;
+                    }
+                  }
+                }
+              }
+
+              if (parseInt(streetMapView.zoom) < 16) {
+                var arrayCount;
+                if (asset_init) {
+                  var layerId = KDF.getVal("txt_layerid").split(",");
                   for (var i = 0; i < layerId.length; i++) {
                     arrayCount = layerId[i];
-                    esrimap.findLayerById(vmap_config.featureLayers[arrayCount].name).visible = true;
-                  }
-                };
-              }
-            }
-
-            if (parseInt(streetMapView.zoom) < 16) {
-              var arrayCount;
-              if (asset_init) {
-                var layerId = KDF.getVal('txt_layerid').split(",");
-                for (var i = 0; i < layerId.length; i++) {
-                  arrayCount = layerId[i];
-                  if (vmap_config.featureLayers[arrayCount].layer_type == 'Display') {
-                    esrimap.findLayerById(vmap_config.featureLayers[arrayCount].name).visible = false;
+                    if (
+                      vmap_config.featureLayers[arrayCount].layer_type ==
+                      "Display"
+                    ) {
+                      esrimap.findLayerById(
+                        vmap_config.featureLayers[arrayCount].name
+                      ).visible = false;
+                    }
                   }
                 }
               }
             }
 
+            xminE = streetMapView.extent.xmin;
+            xmaxE = streetMapView.extent.xmax;
+            yminE = streetMapView.extent.ymin;
+            ymaxE = streetMapView.extent.ymax;
           }
-
-          xminE = streetMapView.extent.xmin;
-          xmaxE = streetMapView.extent.xmax;
-          yminE = streetMapView.extent.ymin;
-          ymaxE = streetMapView.extent.ymax;
         }
-      });
+      );
     }
   });
 }
 
 function do_KDF_optionSelected_esriMap(field, label, val) {
-  if (field === 'ps_property_search_map_id' && val !== null) {
-    if (val !== '') {
-      KDF.customdata('retrieve-property', '', true, true, { object_id: val });
+  if (field === "ps_property_search_map_id" && val !== null) {
+    if (val !== "") {
+      KDF.customdata("retrieve-property", "", true, true, { object_id: val });
     }
   }
 }
 
 function do_KDF_Custom_esriMap(action, response) {
-  if (action === 'reverse_geocode_osmap') {
-    $('#map_container').removeClass('map_container_error');
-    $('#map_error').remove();
+  if (action === "reverse_geocode_osmap") {
+    $("#map_container").removeClass("map_container_error");
+    $("#map_error").remove();
 
-    if (response.actionedby == 'propertySearch') {
-      $('#dform_' + KDF.kdf().form.name).trigger('_KDF_clearAttribute', [null]);
+    if (response.actionedby == "propertySearch") {
+      $("#dform_" + KDF.kdf().form.name).trigger("_KDF_clearAttribute", [null]);
     }
 
-    if (response.data.outcome == 'failed') {
+    if (response.data.outcome == "failed") {
       return;
     }
 
-    if (response.data.return_type == 'street_search') {
+    if (response.data.return_type == "street_search") {
       var parseResult = JSON.parse(response.data.result.replace(/\\/g, ""));
       // if (parseResult.features.length < 1) {
       //   $('#map_container').addClass('map_container_error');
@@ -3072,24 +3378,47 @@ function do_KDF_Custom_esriMap(action, response) {
       // }
       var parseFeature = parseResult.features[0]?.attributes;
     } else {
-      var source = new proj4.Proj('EPSG:27700');
-      var dest4326 = new proj4.Proj('EPSG:4326');
-      var convertPoint4326 = new proj4.Point(response.data.longitude, response.data.latitude);
+      var source = new proj4.Proj("EPSG:27700");
+      var dest4326 = new proj4.Proj("EPSG:4326");
+      var convertPoint4326 = new proj4.Point(
+        response.data.longitude,
+        response.data.latitude
+      );
       proj4.transform(source, dest4326, convertPoint4326);
-      KDF.setVal('le_gis_lon', convertPoint4326.x.toString());
-      KDF.setVal('le_gis_lat', convertPoint4326.y.toString());
+      KDF.setVal("le_gis_lon", convertPoint4326.x.toString());
+      KDF.setVal("le_gis_lat", convertPoint4326.y.toString());
 
-      var originCoor = proj4('EPSG:27700', 'EPSG:4326', [response.data.longitude, response.data.latitude]);
-      var propertyCoor = proj4('EPSG:27700', 'EPSG:4326', [response.data.easting, response.data.northing]);
+      var originCoor = proj4("EPSG:27700", "EPSG:4326", [
+        response.data.longitude,
+        response.data.latitude,
+      ]);
+      var propertyCoor = proj4("EPSG:27700", "EPSG:4326", [
+        response.data.easting,
+        response.data.northing,
+      ]);
 
       var p2 = { x: originCoor[0], y: originCoor[1] };
       var p1 = { x: propertyCoor[0], y: propertyCoor[1] };
 
-      let { addressNumber, streetName, town, postcode, fullAddress, propertyId, UPRN, streetId, USRN, easting, northing } = response.data;
+      let {
+        addressNumber,
+        streetName,
+        town,
+        postcode,
+        fullAddress,
+        propertyId,
+        UPRN,
+        streetId,
+        USRN,
+        easting,
+        northing,
+      } = response.data;
 
       property = formatTitleCase(addressNumber);
       streetName = formatTitleCase(streetName);
-      fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${town}, ${postcode}`;
+      fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
+        streetName
+      )}, ${town}, ${postcode}`;
       setValuesToInputFields([
         { alias: "property", value: property },
         { alias: "streetName", value: streetName },
@@ -3103,41 +3432,41 @@ function do_KDF_Custom_esriMap(action, response) {
         { alias: "easting", value: easting },
         { alias: "northing", value: northing },
       ]);
-      setSelectedAddress(fullAddress, 'show');
-      $('.popup').text(streetName);
-      setRequiredStateByAlias('postcode', 'not required');
+      setSelectedAddress(fullAddress, "show");
+      $(".popup").text(streetName);
+      setRequiredStateByAlias("postcode", "not required");
     }
   }
 
-  if (action === 'feature_layer_request') {
+  if (action === "feature_layer_request") {
     var parseResult = JSON.parse(response.data.result.replace(/\\/g, ""));
     var parseFeature = parseResult.features;
     var nearestFeature, nearestDistance;
     var initiateLoop = true;
     var current_radius = Number(response.data.distance);
 
-    console.log(parseFeature.length)
+    console.log(parseFeature.length);
 
     if (parseFeature.length < 1) {
       current_radius += 10;
 
       if (current_radius < 100) {
-        KDF.customdata('feature_layer_request', '', true, true, {
+        KDF.customdata("feature_layer_request", "", true, true, {
           url: vmap_config.featureLayers[BG_layer].url,
           longitude: response.data.longitude,
           latitude: response.data.latitude,
-          distance: current_radius.toString()
+          distance: current_radius.toString(),
         });
       }
     }
     store_layer_attr.main_attribute = {};
     store_layer_attr.main_attribute = parseFeature;
-  } else if (action == 'get_osmap_api_key') {
+  } else if (action == "get_osmap_api_key") {
     initialize_map(response.data.map_param);
-  } else if (action == 'gis_background_layer') {
+  } else if (action == "gis_background_layer") {
     var parseResult = JSON.parse(response.data.result.replace(/\\/g, ""));
     var parseFeature = parseResult.features;
-    console.log(store_layer_attr.background_attribute)
+    console.log(store_layer_attr.background_attribute);
 
     store_layer_attr.background_attribute = {};
 
@@ -3148,16 +3477,16 @@ function do_KDF_Custom_esriMap(action, response) {
     retrieveAttribute();
   }
 
-  if (action === 'retrieve-property') {
-    var coor = proj4('EPSG:27700', 'EPSG:4326', [
+  if (action === "retrieve-property") {
+    var coor = proj4("EPSG:27700", "EPSG:4326", [
       response.data.easting,
       response.data.northing,
     ]);
     var centerpoint;
-    require(['esri/geometry/Point', 'esri/geometry/SpatialReference'], function (
-      Point,
-      SpatialReference
-    ) {
+    require([
+      "esri/geometry/Point",
+      "esri/geometry/SpatialReference",
+    ], function (Point, SpatialReference) {
       centerpoint = new Point({
         x: response.data.easting,
         y: response.data.northing,
@@ -3172,54 +3501,63 @@ function do_KDF_Custom_esriMap(action, response) {
     addPoint(streetMapView, centerpoint, markerSymbol);
 
     if (vmap_config.mapClickType == "Background") {
-      KDF.customdata('feature_layer_request', '5', true, true, {
-        url: vmap_config.featureLayers[KDF.getVal('txt_layerid')].url,
+      KDF.customdata("feature_layer_request", "5", true, true, {
+        url: vmap_config.featureLayers[KDF.getVal("txt_layerid")].url,
         longitude: response.data.easting,
         latitude: response.data.northing,
-        distance: "5"
+        distance: "5",
       });
     }
 
-    KDF.customdata('reverse_geocode_osmap', 'propertySearch', true, true, {
+    KDF.customdata("reverse_geocode_osmap", "propertySearch", true, true, {
       longitude: response.data.easting,
       latitude: response.data.northing,
     });
 
-    $('.esriPopup').hide();
-    KDF.setVal('le_gis_lon', coor[0]);
-    KDF.setVal('le_gis_lat', coor[1]);
-    KDF.setVal('le_gis_lon_alloy', coor[0]);
-    KDF.setVal('le_gis_lat_alloy', coor[1]);
-    KDF.setVal('le_gis_longeo', centerpoint.longitude);
-    KDF.setVal('le_gis_latgeo', centerpoint.latitude);
-    KDF.setVal('le_title', response.data.description);
-    KDF.hideWidget('ahtm_map_location_error');
+    $(".esriPopup").hide();
+    KDF.setVal("le_gis_lon", coor[0]);
+    KDF.setVal("le_gis_lat", coor[1]);
+    KDF.setVal("le_gis_lon_alloy", coor[0]);
+    KDF.setVal("le_gis_lat_alloy", coor[1]);
+    KDF.setVal("le_gis_longeo", centerpoint.longitude);
+    KDF.setVal("le_gis_latgeo", centerpoint.latitude);
+    KDF.setVal("le_title", response.data.description);
+    KDF.hideWidget("ahtm_map_location_error");
     selectedLocation = centerpoint;
 
-    KDF.customdata('gis_background_layer', 'do_KDF_Custom_esriMap', true, true, {
-      url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/42",
-      longitude: response.data.easting,
-      latitude: response.data.northing,
-      distance: 20
-    });
+    KDF.customdata(
+      "gis_background_layer",
+      "do_KDF_Custom_esriMap",
+      true,
+      true,
+      {
+        url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/42",
+        longitude: response.data.easting,
+        latitude: response.data.northing,
+        distance: 20,
+      }
+    );
   }
 }
 
 function initializeAssetLayer(zoomLevel) {
   if (vmap_config.mapClickType !== "Background") {
-    var layerId = KDF.getVal('txt_layerid').split(",");
+    var layerId = KDF.getVal("txt_layerid").split(",");
     var arrayCount;
-    require(['esri/layers/FeatureLayer'], function (FeatureLayer) {
+    require(["esri/layers/FeatureLayer"], function (FeatureLayer) {
       for (var i = 0; i < layerId.length; i++) {
         arrayCount = layerId[i];
-        if (typeof esrimap.findLayerById(vmap_config.featureLayers[arrayCount].name) == 'undefined' &&
-          vmap_config.featureLayers[arrayCount].layer_type == 'Display') {
-
+        if (
+          typeof esrimap.findLayerById(
+            vmap_config.featureLayers[arrayCount].name
+          ) == "undefined" &&
+          vmap_config.featureLayers[arrayCount].layer_type == "Display"
+        ) {
           assetObj = new FeatureLayer({
             id: vmap_config.featureLayers[arrayCount].name,
             url: vmap_config.featureLayers[arrayCount].url,
             popupTemplate: vmap_config.featureLayers[arrayCount].popup,
-            outFields: "*"
+            outFields: "*",
           });
 
           esrimap.add(assetObj);
@@ -3235,7 +3573,7 @@ function addPoint(map, point, markerSymbol) {
 
   var pointGraphic;
 
-  require(['esri/geometry/Point', 'esri/Graphic'], function (Point, Graphic) {
+  require(["esri/geometry/Point", "esri/Graphic"], function (Point, Graphic) {
     pointGraphic = new Graphic(new Point(point), markerSymbol);
     streetMapPositionLayer.add(pointGraphic);
   });
@@ -3245,17 +3583,30 @@ function addPoint(map, point, markerSymbol) {
 
 function withinSccCheck(geometry) {
   var result;
-  require(['esri/geometry/Polygon', 'esri/geometry/geometryEngine', 'esri/geometry/Point', 'esri/geometry/SpatialReference'], function (Polygon, geometryEngine, Point, SpatialReference) {
+  require([
+    "esri/geometry/Polygon",
+    "esri/geometry/geometryEngine",
+    "esri/geometry/Point",
+    "esri/geometry/SpatialReference",
+  ], function (Polygon, geometryEngine, Point, SpatialReference) {
     var clickedPoint = new Polygon({
       hasZ: false,
       hasM: false,
       rings: [[[geometry.x, geometry.y]]],
-      spatialReference: { wkid: 27700 }
+      spatialReference: { wkid: 27700 },
     });
 
-    let new_point = new Point(geometry.x, geometry.y, new SpatialReference({ wkid: '27700' }));
+    let new_point = new Point(
+      geometry.x,
+      geometry.y,
+      new SpatialReference({ wkid: "27700" })
+    );
     var isWithin = geometryEngine.within(new_point, scc_boundary_ring);
-    if (isWithin) { result = true; } else { result = false; }
+    if (isWithin) {
+      result = true;
+    } else {
+      result = false;
+    }
   });
   return result;
 }
@@ -3265,15 +3616,18 @@ function fetchSccRing() {
   $.ajax({
     url: "https://utility.arcgis.com/usrsvcs/servers/97cfdc3a164c48219826b907c0a5064f/rest/services/AGOL/Boundaries/MapServer/0/query?&where=1%3D1&geometryType=esriGeometryEnvelope&f=json",
     success: function (result) {
-      require(['esri/geometry/Polygon', 'esri/geometry/geometryEngine'], function (Polygon, geometryEngine) {
+      require([
+        "esri/geometry/Polygon",
+        "esri/geometry/geometryEngine",
+      ], function (Polygon, geometryEngine) {
         scc_boundary_ring = new Polygon({
           hasZ: false,
           hasM: false,
           rings: result.features[0].geometry.rings[0],
-          spatialReference: { wkid: 27700 }
+          spatialReference: { wkid: 27700 },
         });
       });
-    }
+    },
   });
 }
 
@@ -3284,7 +3638,9 @@ function fetchSccRing() {
 function formatTitleCase(value) {
   if (typeof value === "string") {
     const string = value.toLowerCase();
-    const formatedString = string.replace(/\b\w/g, (match) => match.toUpperCase());
+    const formatedString = string.replace(/\b\w/g, (match) =>
+      match.toUpperCase()
+    );
     return formatedString;
   }
   return value;
@@ -3293,7 +3649,7 @@ function formatTitleCase(value) {
 // --- FORMATING REMOVE ECCESS WHITE SPACES --------------------------------- \\
 
 function formatRemoveEccessWhiteSpace(value) {
-  const formattedString = value.replace(/\s+/g, ' ').trim();
+  const formattedString = value.replace(/\s+/g, " ").trim();
   return formattedString;
 }
 
@@ -3303,20 +3659,19 @@ function formatDateTime(dateTime) {
   let date;
   if (!dateTime) {
     date = new Date(); // Use current time if no argument
-
-  } else if (typeof dateTime === 'number') {
+  } else if (typeof dateTime === "number") {
     date = new Date(dateTime); // Assume dateTime is already a timestamp
   } else {
     date = new Date(dateTime); // Try to parse dateTime as a date string
   }
 
   const year = date.getFullYear().toString();
-  const month = (date.getMonth() + 1).toString().padStart(2, '0');
-  const day = date.getDate().toString().padStart(2, '0');
-  const hours = date.getHours().toString().padStart(2, '0');
-  const minutes = date.getMinutes().toString().padStart(2, '0');
-  const seconds = date.getSeconds().toString().padStart(2, '0');
-  const milliseconds = date.getMilliseconds().toString().padStart(3, '0');
+  const month = (date.getMonth() + 1).toString().padStart(2, "0");
+  const day = date.getDate().toString().padStart(2, "0");
+  const hours = date.getHours().toString().padStart(2, "0");
+  const minutes = date.getMinutes().toString().padStart(2, "0");
+  const seconds = date.getSeconds().toString().padStart(2, "0");
+  const milliseconds = date.getMilliseconds().toString().padStart(3, "0");
 
   return {
     base: {
@@ -3328,30 +3683,59 @@ function formatDateTime(dateTime) {
       seconds: seconds,
       milliseconds: milliseconds,
       weekday: {
-        short: date.toLocaleDateString('en-GB', { weekday: 'short' }),
-        long: date.toLocaleDateString('en-GB', { weekday: 'long' })
+        short: date.toLocaleDateString("en-GB", { weekday: "short" }),
+        long: date.toLocaleDateString("en-GB", { weekday: "long" }),
       },
     },
     uk: {
-      date: date.toLocaleString('en-GB', { timeZone: 'Europe/London', year: 'numeric', month: '2-digit', day: '2-digit' }),
-      time: date.toLocaleString('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit', second: '2-digit', millisecond: '3-digit' }),
-      dateTime: date.toLocaleString('en-GB', { timeZone: 'Europe/London', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', millisecond: '3-digit' })
+      date: date.toLocaleString("en-GB", {
+        timeZone: "Europe/London",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+      }),
+      time: date.toLocaleString("en-GB", {
+        timeZone: "Europe/London",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        millisecond: "3-digit",
+      }),
+      dateTime: date.toLocaleString("en-GB", {
+        timeZone: "Europe/London",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        millisecond: "3-digit",
+      }),
     },
     readable: {
-      date: date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }),
-      dayDate: date.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'long', year: 'numeric' }),
-      time: formatReadableTime(date)
+      date: date.toLocaleDateString("en-GB", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      }),
+      dayDate: date.toLocaleDateString("en-GB", {
+        weekday: "short",
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      }),
+      time: formatReadableTime(date),
     },
-    iso: date.toISOString().replace(/\.\d{3}Z/, 'Z'),
+    iso: date.toISOString().replace(/\.\d{3}Z/, "Z"),
     utc: `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}Z`,
     inputField: `${year}-${month}-${day}`,
   };
 }
 
 function formatReadableTime(date) {
-  const hours = date.getHours().toString().padStart(2, '0');
-  const minutes = date.getMinutes().toString().padStart(2, '0');
-  const isAmPm = date.getHours() >= 12 ? 'PM' : 'AM';
+  const hours = date.getHours().toString().padStart(2, "0");
+  const minutes = date.getMinutes().toString().padStart(2, "0");
+  const isAmPm = date.getHours() >= 12 ? "PM" : "AM";
   const hours12 = date.getHours() % 12 || 12; // Convert to 12-hour format
 
   return `${hours12}:${minutes} ${isAmPm}`;
@@ -3363,29 +3747,29 @@ function formatReadableTime(date) {
 
 function hideShowMultipleElements(fields) {
   fields.map((field) => {
-    hideShowElement(field.name, field.display)
+    hideShowElement(field.name, field.display);
   });
 }
 
 function hideShowElement(name, display) {
-  if (name && (typeof display === 'string' || typeof display === 'boolean')) {
-    if (typeof display === 'string') {
+  if (name && (typeof display === "string" || typeof display === "boolean")) {
+    if (typeof display === "string") {
       display = display.toLowerCase();
     }
-    if (name.startsWith('page_')) {
-      if (display === true || display === 'true' || display === 'show') {
+    if (name.startsWith("page_")) {
+      if (display === true || display === "true" || display === "show") {
         KDF.showPage(name);
       } else {
         KDF.hidePage(name);
       }
-    } else if (name.startsWith('area_') || name.startsWith('box_')) {
-      if (display === true || display === 'true' || display === 'show') {
+    } else if (name.startsWith("area_") || name.startsWith("box_")) {
+      if (display === true || display === "true" || display === "show") {
         KDF.showSection(name);
       } else {
         KDF.hideSection(name);
       }
     } else {
-      if (display === true || display === 'true' || display === 'show') {
+      if (display === true || display === "true" || display === "show") {
         KDF.showWidget(name);
       } else {
         KDF.hideWidget(name);
@@ -3398,7 +3782,12 @@ function hideShowElement(name, display) {
 
 function updateMultipleWidgetsText(fields) {
   fields.map((field) => {
-    updateWidgetText(field.name, field.label, field.helpMessage, field.validation);
+    updateWidgetText(
+      field.name,
+      field.label,
+      field.helpMessage,
+      field.validation
+    );
   });
 }
 
@@ -3418,14 +3807,14 @@ function updateWidgetText(name, label, helpMessage, validation) {
 
 function updateMultipleLabels(fields) {
   fields.map((field) => {
-    updateLabel(field.name, field.value)
+    updateLabel(field.name, field.value);
   });
 }
 
 function updateLabel(name, value) {
-  if (name.startsWith('but_')) {
+  if (name.startsWith("but_")) {
     $(`#dform_widget_button_${name}`).text(value);
-  } else if (name.startsWith('rad_') || name.startsWith('mchk_')) {
+  } else if (name.startsWith("rad_") || name.startsWith("mchk_")) {
     $(`.dform_widget_${name}  legend`).text(value);
   } else {
     $(`#dform_widget_label_${name}`).text(value);
@@ -3436,7 +3825,7 @@ function updateLabel(name, value) {
 
 function updateMultipleHelpTexts(fields) {
   fields.map((field) => {
-    updateHelpText(field.name, field.value)
+    updateHelpText(field.name, field.value);
   });
 }
 
@@ -3448,13 +3837,13 @@ function updateHelpText(name, value) {
 
 function updateMultipleValidationMessages(fields) {
   fields.map((field) => {
-    updateValidationMessage(field.name, field.value)
+    updateValidationMessage(field.name, field.value);
   });
 }
 
 function updateValidationMessage(name, value) {
   $(`.dform_widget_${name} .dform_validationMessage`).text(value);
-  $(`.dform_widget_${name}`).attr('title', value);
+  $(`.dform_widget_${name}`).attr("title", value);
 }
 
 // --- UPDATE REQUIRED STATE ------------------------------------------------ \\
@@ -3467,7 +3856,11 @@ function updateMultipleRequiredStates(fields) {
 
 function updateRequiredState(name, isRequired) {
   isRequired = isRequired.toLowerCase();
-  if (isRequired === true || isRequired === 'true' || isRequired === 'required') {
+  if (
+    isRequired === true ||
+    isRequired === "true" ||
+    isRequired === "required"
+  ) {
     KDF.setWidgetRequired(name);
   } else {
     KDF.setWidgetNotRequired(name);
@@ -3479,17 +3872,19 @@ function updateRequiredState(name, isRequired) {
 
 async function fetchUKBankHolidays() {
   try {
-    const response = await fetch('https://www.gov.uk/bank-holidays.json');
+    const response = await fetch("https://www.gov.uk/bank-holidays.json");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-    const bankHolidaysEW = data?.['england-and-wales'].events || [];
+    const bankHolidaysEW = data?.["england-and-wales"].events || [];
     const bankHolidaysSL = data?.scotland.events || [];
-    const bankHolidaysNI = data?.['northern-ireland'].events || [];
-    const allBankHolidays = [...new Set([...bankHolidaysEW, ...bankHolidaysSL, ...bankHolidaysNI])];
+    const bankHolidaysNI = data?.["northern-ireland"].events || [];
+    const allBankHolidays = [
+      ...new Set([...bankHolidaysEW, ...bankHolidaysSL, ...bankHolidaysNI]),
+    ];
     // Return the array of bank holidays
-    return bankHolidaysEW.map(holiday => new Date(holiday.date));
+    return bankHolidaysEW.map((holiday) => new Date(holiday.date));
   } catch (error) {
     return []; // Return an empty array in case of an error
   }
@@ -3557,23 +3952,23 @@ async function updateMinMaxDates(dateElementId, attribute, value) {
   }
   const now = new Date();
   let newDate;
-  if (attribute === 'min') {
-    if (typeof value === 'number') {
+  if (attribute === "min") {
+    if (typeof value === "number") {
       newDate = await addWorkingDays(now, value);
     } else {
       newDate = value ? calculateRelativeDate(value, now) : null;
     }
     if (newDate) {
-      $dateElement.attr('min', newDate.toISOString().split('T')[0]);
+      $dateElement.attr("min", newDate.toISOString().split("T")[0]);
     }
-  } else if (attribute === 'max') {
-    if (typeof value === 'number') {
+  } else if (attribute === "max") {
+    if (typeof value === "number") {
       newDate = await addWorkingDays(now, value);
     } else {
       newDate = value ? calculateRelativeDate(value, now) : null;
     }
     if (newDate) {
-      $dateElement.attr('max', newDate);
+      $dateElement.attr("max", newDate);
     }
   }
 }
@@ -3584,7 +3979,7 @@ function setCookie(name, value, minutes) {
   let expires = "";
   if (minutes) {
     const d = new Date();
-    d.setTime(d.getTime() + (minutes * 60 * 1000));
+    d.setTime(d.getTime() + minutes * 60 * 1000);
     expires = `; expires=${d.toUTCString()}`;
   }
   document.cookie = `${name}=${encodeURIComponent(value)}${expires}; path=/`;
@@ -3592,10 +3987,12 @@ function setCookie(name, value, minutes) {
 
 function getCookie(name) {
   const nameEQ = name + "=";
-  const ca = document.cookie.split(';');
+  const ca = document.cookie.split(";");
 
-  const cookies = ca.map(c => c.trim()); // Trim leading spaces
-  const foundCookie = cookies.find(c => c.startsWith(nameEQ));
+  const cookies = ca.map((c) => c.trim()); // Trim leading spaces
+  const foundCookie = cookies.find((c) => c.startsWith(nameEQ));
 
-  return foundCookie ? decodeURIComponent(foundCookie.substring(nameEQ.length)) : null;
+  return foundCookie
+    ? decodeURIComponent(foundCookie.substring(nameEQ.length))
+    : null;
 }
