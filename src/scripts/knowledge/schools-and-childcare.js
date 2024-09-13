@@ -80,7 +80,8 @@ const freeSchoolMeals = new ContentSaC(
         be taken over more weeks: for example, your child could take 12 hours a week for 47½ weeks. Talk to your childcare
         provider about what options are available. For Funded Early Learning enquiries and more information on the Family
         Hubs
-        for Families, please contact the Family Hubs - <b>0114 273 5665</b>.</p>
+        for Families, please contact the Family Hubs: <a href="tel:0114 273 5665">0114 273 5665</a>
+    .</p>
       <p>For information about the new 2-year-old extended working entitlement (15 hours offer starts April 2024, from 9
         months old from September 2024) please visit the childcare choices page, there is an assessment tool offering
         families
@@ -271,9 +272,11 @@ const freeSchoolMeals = new ContentSaC(
         the letter with the eCode will tell you how much money the eCode is worth.</p>
       <p>You need to go online to swap this code for an eGift card (an online voucher).</p>
       <p>You can redeem your eCode button on the website: </p>
-      <p><b>https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/</b></p>
+      <p><a href="https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/">https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/</a>
+    </p>
       <p>or you can visit:</p>
-      <p><b>www.selectyourcompliment.co.uk</b></p>
+      <p><a href="www.selectyourcompliment.co.uk">www.selectyourcompliment.co.uk</a>
+    </p>
       <p>Enter the code into the box on the website and click Redeem</p>
       <ol>
         <li>Choose your supermarket.
