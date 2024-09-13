@@ -85,8 +85,8 @@ const freeSchoolMeals = new ContentSaC(
       <p>For information about the new 2-year-old extended working entitlement (15 hours offer starts April 2024, from 9
         months old from September 2024) please visit the childcare choices page, there is an assessment tool offering
         families
-        details of childcare support they might be eligible for and a link to apply to:</p>
-      <p>HMRC: <a href="www.childcarechoices.gov.uk">www.childcarechoices.gov.uk</a>
+        details of childcare support they might be eligible for and a link to apply to HMRC: 
+        <a href="www.childcarechoices.gov.uk">www.childcarechoices.gov.uk</a>
       </p>
       <p>From September 2025 eligible working parents of children from 9 months to school age will be entitled to 30 hours
         of
@@ -271,11 +271,10 @@ const freeSchoolMeals = new ContentSaC(
       <p>You will have received a letter from us, the letter will contain a unique 16 digit eCode
         the letter with the eCode will tell you how much money the eCode is worth.</p>
       <p>You need to go online to swap this code for an eGift card (an online voucher).</p>
-      <p>You can redeem your eCode button on the website: </p>
-      <p><a href="https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/">https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/</a>
+      <p>You can redeem your eCode button on the website: 
+        <a href="https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/">https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/</a>
     </p>
-      <p>or you can visit:</p>
-      <p><a href="www.selectyourcompliment.co.uk">www.selectyourcompliment.co.uk</a>
+      <p>or you can visit: <a href="www.selectyourcompliment.co.uk">www.selectyourcompliment.co.uk</a>
     </p>
       <p>Enter the code into the box on the website and click Redeem</p>
       <ol>
@@ -329,11 +328,11 @@ const freeSchoolMeals = new ContentSaC(
         September,
         we will not know about the ones that became eligible after the 1st of September.</p>
       <p>Parents will have to ask schools when they open.</p>
-
       <h3>Complex Enquiry</h3>
-      <p>Where possible complex enquiries should be referred to the Fulfilment Team (Audrey/Tracey) who can pass this on to
-        Sarah or Leah when needed.</p>
-
+      <p>
+        Where possible complex enquiries should be referred to the Fulfilment Team (Audrey/Tracey) who can pass this on to
+        Sarah or Leah when needed.
+      </p>
       <h3>Draft Letter</h3>
       <p>Screenshot of Draft Letter appears</p>
       <h3>Background Information</h3>
@@ -360,9 +359,11 @@ const freeSchoolMeals = new ContentSaC(
         There is an Edenred User guide and an Edenred Parent FAQ document which are both useful as references, these are
         available on the Edenred website:
       </p>
-      <a href="https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/">
-        https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/
-      </a>
+      <p>
+        <a href="https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/">
+          https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/
+        </a>
+      </p>
     </section>
   `,
   { buttonLabel: "Apply school meals", formName: "apply_school_meals" },
