@@ -251,10 +251,6 @@ function handleOnReadyKnowledge() {
       const service = knowledge.find((service) => service.id === serviceId);
       if (service) {
         createCards(service.subjects, subjectMenuContainer);
-        const titleElement = document.getElementById(
-          "dform_widget_header_hrd_page_title_subject_menu"
-        );
-        titleElement.textContent = service.name;
         KDF.gotoPage("page_subject_menu", true, true, true);
       } else {
         KDF.showError("Service not found");
@@ -272,10 +268,6 @@ function handleOnReadyKnowledge() {
       if (subject) {
         if (subject.topics) {
           createCards(subject.topics, topicsMenuContainer);
-          const titleElement = document.getElementById(
-            "dform_widget_header_hrd_page_title_topic_menu"
-          );
-          titleElement.textContent = subject.name;
           KDF.gotoPage("page_topic_menu", true, true, true);
         } else {
           redirectToContentPage(subject);
