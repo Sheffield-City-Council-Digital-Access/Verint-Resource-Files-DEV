@@ -555,7 +555,7 @@ function handleOnReadyEvent(event, kdf) {
           KDF.setVal("txt_agent_location", event.detail.location);
         }
         console.log(
-          vent.detail.reporter,
+          event.detail.reporter,
           modalId === "setReporterModal" && event.detail.reporter
         );
         if (modalId === "setReporterModal" && event.detail.reporter) {
