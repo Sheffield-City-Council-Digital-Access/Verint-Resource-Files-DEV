@@ -551,12 +551,12 @@ function handleOnReadyEvent(event, kdf) {
       // Event listener for closeModal event
       window.addEventListener("closeModal", function (event) {
         console.log(event);
-        const modalId = event.id;
+        const modalId = event.detail.id;
         if (modalId === "setAgentLocationModal") {
-          KDF.setVal("txt_agent_location", event.detail);
+          KDF.setVal("txt_agent_location", event.detail.location);
         }
         if (modalId === "setReporterModal") {
-          KDF.setCustomerID(event.reporter, true, "page_about_you");
+          KDF.setCustomerID(event.detail.reporter, true, "page_about_you");
         }
         const modal = document.getElementById(modalId);
         if (modal) {
