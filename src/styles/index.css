@@ -131,15 +131,6 @@ body {
   background: var(--color-white);
 }
 
-p {
-  margin-block: 1.6rem;
-}
-
-ul,
-ol {
-  padding-left: 4rem;
-}
-
 .remove-tab {
   margin: 0 !important;
   border: none !important;
