@@ -550,12 +550,15 @@ function handleOnReadyEvent(event, kdf) {
       checkAndRefreshAgentLocation();
       // Event listener for closeModal event
       window.addEventListener("closeModal", function (event) {
-        console.log(event);
         const modalId = event.detail.id;
         if (modalId === "setAgentLocationModal") {
           KDF.setVal("txt_agent_location", event.detail.location);
         }
-        if (modalId === "setReporterModal") {
+        console.log(
+          vent.detail.reporter,
+          modalId === "setReporterModal" && event.detail.reporter
+        );
+        if (modalId === "setReporterModal" && event.detail.reporter) {
           KDF.setCustomerID(event.detail.reporter, true, "page_about_you");
         }
         const modal = document.getElementById(modalId);
