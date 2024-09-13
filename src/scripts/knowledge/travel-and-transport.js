@@ -51,7 +51,7 @@ const blueBadge = new ContentTaT(
   "Who can apply for a Blue Badge",
   `
     <p>
-    From April 2024, eligible working parents of 2-year-olds can access 15 hours childcare support. By September 2025, eligible working families with children aged between 9 months and 5 years old will be entitled to 30 hours of childcare support.
+      From April 2024, eligible working parents of 2-year-olds can access 15 hours childcare support. By September 2025, eligible working families with children aged between 9 months and 5 years old will be entitled to 30 hours of childcare support.
     </p>
     <p>The changes are being introduced gradually to make sure that providers can meet the needs of more families. This means that:</p>
     <p>From September 2025, eligible working parents of children from 9 months to school age will be entitled to 30 hours of childcare a week.</p>
@@ -67,16 +67,16 @@ const blueBadge = new ContentTaT(
       <li>younger children improving their sleeping patterns and toilet training</li>
     </ul>
     <p>The funded hours also help parents and carers access employment and training, spend time with their younger children or just find time to get things done.</p>
-    <p>The hours must be taken over a minimum of 38 weeks (15 hours a week, or 30 if entitled to additional hours) but can be taken over more weeks: for example, your child could take 12 hours a week for 47½ weeks. Talk to your childcare provider about what options are available. For Funded Early Learning enquiries and more information on the Family Hubs for Families, please contact the Family Hubs - <b>0114 273 5665</b></p>
+    <p>The hours must be taken over a minimum of 38 weeks (15 hours a week, or 30 if entitled to additional hours) but can be taken over more weeks: for example, your child could take 12 hours a week for 47½ weeks. Talk to your childcare provider about what options are available. For Funded Early Learning enquiries and more information on the Family Hubs for Families, please contact the Family Hubs - <a href="tel:01142735665">0114 2735665</a></p>
     <p>For information about the new 2-year-old extended working entitlement (15 hours offer starts April 2024, from 9 months old from September 2024) please visit the childcare choices page, there is an assessment tool offering families details of childcare support they might be eligible for and a link to apply to:</p>
-    <p>HMRC:<b> www.childcarechoices.gov.uk</b></p>
+    <p>HMRC: <a href="https://www.childcarechoices.gov.uk">https://www.childcarechoices.gov.uk</a></p>
     <p>From September 2025, eligible working parents of children from 9 months to school age will be entitled to 30 hours of childcare a week.</p>
     <h3>What is happening with my Blue Badge Application</h3>
     <p>Update/Chasing Application</p>
     <p>You may be able to provide the customer with an update to their application using the case notes or status update. All cases will be dealt with in date order, there are no exceptions to this regardless of circumstances so do not raise requests of this nature to FFT. Blue Badge applications will be assessed within 28 days calendar days from the date the application was received. The order date of the blue badge is not the despatch date from our 3rd party who produce the Blue Badge.</p>
     <p>Once Sheffield City Council have ordered the Blue Badge the 3rd Party have 3-4 working days to despatch and weekends need to be taken into account.</p>
     <h3>What should I do if my Blue Badge is confiscated by an Enforcement Officer</h3>
-    <p>Send an e-mail to: <b>customerservices@sheffield.gov.uk</b> or send a letter to:</p>
+    <p>Send an e-mail to: <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> or send a letter to:</p>
     <p>Customer Services<br>
       Floor 2<br>
       Howden House<br>
@@ -153,29 +153,29 @@ const disabledTravelPermit = new ContentTaT(
           <li>suffering from a substantial and long-term disabilities or injuries which severely impacts your ability to walk</li>
         </ul>
     </p>
-      <h3>How long does a Disabled Travel Permit last for</h3>
-      <p>
-        If your application is successful, passes are issued between 1 and 5 years the timescale is dependent on your qualifying criteria, you will be made aware of the timescale when your application is approved.<br>
-        If you have any supporting evidence/eligibility that has an end date, your pass will be issued up to that date.<br>
-        If during the time you have the pass, you would turn 66, your pass will expire on your 66th birthday.
-      </p>
-      <h3>How do I appeal the decision</h3>
-      <p>
-        Appeals must be made in writing to:<br>
-        Customer Services<br>
-        Floor 2<br>
-        Howden House<br>
-        1 Union Street<br>
-        Sheffield<br>
-        S1 2SH
-      </p>
-      <h3>When can I use my Travel Permit</h3>
-      <p>
-        A disabled persons pass enables free public transport on buses, trams and trains.
-      </p>
-      <p>
-        If the Pass is being used within South Yorkshire the pass can be used at all times of the day, however if the pass is being used beyond South Yorkshire (within England or Wales) your pass is only valid between 9:30am - 11pm.
-      </p>
+    <h3>How long does a Disabled Travel Permit last for</h3>
+    <p>
+      If your application is successful, passes are issued between 1 and 5 years the timescale is dependent on your qualifying criteria, you will be made aware of the timescale when your application is approved.<br>
+      If you have any supporting evidence/eligibility that has an end date, your pass will be issued up to that date.<br>
+      If during the time you have the pass, you would turn 66, your pass will expire on your 66th birthday.
+    </p>
+    <h3>How do I appeal the decision</h3>
+    <p>
+      Appeals must be made in writing to:<br>
+      Customer Services<br>
+      Floor 2<br>
+      Howden House<br>
+      1 Union Street<br>
+      Sheffield<br>
+      S1 2SH
+    </p>
+    <h3>When can I use my Travel Permit</h3>
+    <p>
+      A disabled persons pass enables free public transport on buses, trams and trains.
+    </p>
+    <p>
+      If the Pass is being used within South Yorkshire the pass can be used at all times of the day, however if the pass is being used beyond South Yorkshire (within England or Wales) your pass is only valid between 9:30am - 11pm.
+    </p>
    `,
   {
     buttonLabel: "Apply for disabled travel permit",
