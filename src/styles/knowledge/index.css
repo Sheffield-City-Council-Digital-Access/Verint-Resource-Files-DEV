@@ -8,6 +8,19 @@ form.dform {
   margin: 0 !important;
 }
 
+#dform_container .header-top {
+    display: flex;
+    align-items: center;
+}
+
+h1, #dform_container h1, #dform_container .header1 {
+  margin: 0 0 3rem;
+  padding: 0;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-family: var(--font-heading);
+}
+
 #dform_page_page_service_menu>div>div,
 #dform_page_page_subject_menu>div>div,
 #dform_page_page_topic_menu>div>div,
@@ -29,22 +42,19 @@ form.dform {
   max-width: unset;
 }
 
-#dform_page_page_service_menu,
-#dform_page_page_subject_menu,
-#dform_page_page_topic_menu,
-#dform_page_page_content,
-#dform_page_page_search_results,
-#dform_page_page_latest_news {
-  padding: 5rem;
-}
-
-#dform_page_page_content,
-#dform_page_page_latest_news {
-  background: var(--color-grey-2);
-}
-
 #dform_widget_buttonset_bset_actions_initial_page {
   margin-top: 4rem !important;
+}
+
+#dform_container div.container.area.menu-area,
+#dform_container div.container.area.content-area {
+  width: 98%;
+  margin-inline: auto;
+}
+  
+#dform_container div.container.area.content-area {
+  padding: 2rem 4rem;
+  background: var(--color-grey-2);
 }
 
 small {
@@ -84,6 +94,10 @@ small {
   background: var(--color-grey-1);
 }
 
+#service-a-z-container > div.a-z-container > div.options > div.search-card {
+  background: var(--color-white);
+}
+
 .search-card:hover {
   background-color: var(--color-white);
   border-left: .4rem solid var(--color-primary);
@@ -114,6 +128,16 @@ small {
 
 .search-card:focus {
   outline: .4rem solid var(--color-warning);
+}
+
+.no-results-message {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 2rem;
+    background-color: var(--color-grey-1);
+    border: .1rem solid var(--color-grey-4);
+    border-radius: .5rem;
+    margin-top: 2rem;
 }
 
 /* ----- NAVIGATION MENU ---------------------------------------------------- */
@@ -171,7 +195,107 @@ small {
   color: var(--color-grey-primary);
 }
 
+/* ----- BREADCRUMB --------------------------------------------------------- */
+
+#dform_container div.container.area.breadcrumb-area {
+  background: white;
+  padding: .5rem 2rem 2rem 3rem;
+}
+
+#dform_container .dform_widget_type_buttonset.breadcrumb-container {
+  all: unset;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transform: translateX(1.5%);
+}
+
+#dform_container button.breadcrumb-btn {
+  all: unset;
+  color: var(--color-black);
+  text-align: center;
+  padding: 0.5rem 2rem;
+  position: relative;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+  transition: background-color 0.3s ease;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -3.6%;
+  width: 100%;
+  max-width: 33%;
+  height: 4rem;
+  font-size: clamp(1rem, 2vw, 2rem);
+  white-space: normal;
+  overflow: hidden;
+}
+
+#dform_container button.breadcrumb-btn:hover:not([disabled]),
+#dform_container button.breadcrumb-btn:focus:not([disabled]) {
+  color: var(--color-white);
+  background-color: #007bff !important;
+  text-decoration: underline;
+  outline: none;
+}
+
+#dform_container button.breadcrumb-btn:focus {
+  outline: 2px solid #fff;
+}
+
+#dform_container button.breadcrumb-btn + #dform_container button.breadcrumb-btn {
+  margin-left: -3.5%;
+}
+
+#dform_container button.breadcrumb-btn:first-child {
+  background-color: var(--color-grey-4);
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  z-index: 6;
+}
+
+#dform_container button.breadcrumb-btn:nth-child(2) {
+  background-color: var(--color-grey-3);
+  z-index: 5;
+}
+
+#dform_container button.breadcrumb-btn:nth-child(3) {
+  background-color: var(--color-grey-2);
+  z-index: 4;
+}
+
+#dform_container button.breadcrumb-btn:last-child {
+  color: var(--color-white);
+  text-decoration: none !important;
+  background-color: var(--color-primary);
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 1;
+  cursor: default;
+}
+
+#dform_container #dform_widget_button_but_main_menu_service_menu,
+#dform_container #dform_widget_button_but_latest_news,
+#dform_container #dform_widget_button_but_search_results,
+#dform_container #dform_widget_button_but_service_a_z {
+    clip-path: unset;
+}
+
 /* ----- LATEST NEWS -------------------------------------------------------- */
+
+#dform_container div.container.area.latest-news-area {
+  width: 98%;
+  margin-inline: auto;
+  padding: 4rem;
+  background: var(--color-grey-2);
+}
 
 #dform_widget_html_ahtm_latest_news_container {
   margin-bottom: 7rem !important;
