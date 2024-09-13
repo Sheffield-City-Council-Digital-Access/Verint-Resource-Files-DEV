@@ -217,5 +217,5 @@ const travelAndTransport = new ServiceTaT(
   "travelAndTransport",
   "Travel and Transport",
   `Public transport, driving, cycling, walking, travel cards and passes, school passes, travel news and updates…`,
-  [disabledTravelPermit]
+  [blueBadge, disabledTravelPermit]
 );
