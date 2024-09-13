@@ -554,10 +554,6 @@ function handleOnReadyEvent(event, kdf) {
         if (modalId === "setAgentLocationModal") {
           KDF.setVal("txt_agent_location", event.detail.location);
         }
-        console.log(
-          event.detail.reporter,
-          modalId === "setReporterModal" && event.detail.reporter
-        );
         if (modalId === "setReporterModal" && event.detail.reporter) {
           KDF.setCustomerID(event.detail.reporter, true, "page_about_you");
         }
@@ -1067,7 +1063,8 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
 
   if (pageName === "page_about_you") {
     if (kdf.access === "agent" && kdf.customerset === "agent_false") {
-      KDF.sendDesktopAction("raised_by");
+      // KDF.sendDesktopAction("raised_by");
+      createModal("setReporterModal", "system_search_record");
     }
   }
 
