@@ -556,6 +556,13 @@ function handleOnReadyEvent(event, kdf) {
         }
         if (modalId === "setReporterModal" && event.detail.reporter) {
           console.log(event);
+          KDF.customdata(
+            "retrieve-individuals-details",
+            `dform_widget_${field}`,
+            true,
+            true,
+            { customerid: event.detail.reporter }
+          );
           // KDF.setCustomerID(event.detail.reporter, true, "page_about_you");
         }
         const modal = document.getElementById(modalId);
