@@ -557,8 +557,8 @@ function handleOnReadyEvent(event, kdf) {
         if (modalId === "setReporterModal" && event.detail.reporter) {
           console.log(event);
           KDF.customdata(
-            "closeModal_setReporterModal",
-            `dform_widget_${field}`,
+            "retrieve-individuals-details",
+            `closeModal_setReporterModal`,
             true,
             true,
             {
