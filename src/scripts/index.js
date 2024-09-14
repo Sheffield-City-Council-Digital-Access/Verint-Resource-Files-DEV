@@ -565,6 +565,8 @@ function handleOnReadyEvent(event, kdf) {
               customerid: event.detail.reporter,
             }
           );
+          KDF.setVal("le_associated_obj_type", "C1");
+          KDF.setVal("le_associated_obj_id", event.detail.reporter);
           // KDF.setCustomerID(event.detail.reporter, true, "page_about_you");
         }
         const modal = document.getElementById(modalId);
