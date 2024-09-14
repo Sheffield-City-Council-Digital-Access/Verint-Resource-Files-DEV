@@ -555,7 +555,8 @@ function handleOnReadyEvent(event, kdf) {
           KDF.setVal("txt_agent_location", event.detail.location);
         }
         if (modalId === "setReporterModal" && event.detail.reporter) {
-          KDF.setCustomerID(event.detail.reporter, false, "page_about_you"); // launching DT action...
+          console.log(event);
+          // KDF.setCustomerID(event.detail.reporter, true, "page_about_you");
         }
         const modal = document.getElementById(modalId);
         if (modal) {
