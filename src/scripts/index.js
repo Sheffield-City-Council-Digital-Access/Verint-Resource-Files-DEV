@@ -557,11 +557,13 @@ function handleOnReadyEvent(event, kdf) {
         if (modalId === "setReporterModal" && event.detail.reporter) {
           console.log(event);
           KDF.customdata(
-            "retrieve-individuals-details",
+            "closeModal_setReporterModal",
             `dform_widget_${field}`,
             true,
             true,
-            { customerid: event.detail.reporter }
+            {
+              customerid: event.detail.reporter,
+            }
           );
           // KDF.setCustomerID(event.detail.reporter, true, "page_about_you");
         }
@@ -4010,3 +4012,4 @@ function getCookie(name) {
     ? decodeURIComponent(foundCookie.substring(nameEQ.length))
     : null;
 }
+_;
