@@ -98,6 +98,7 @@ ul, ol,
   padding-left: 4rem;
 }
 
+a,
 #dform_container a {
   font-size: var(--font-size-p1);
   line-height: var(--font-height-p1);

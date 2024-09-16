@@ -57,6 +57,26 @@ h1, #dform_container h1, #dform_container .header1 {
   background: var(--color-grey-2);
 }
 
+#dform_widget_html_ahtm_content_container > h3 {
+    margin-top: 5rem;
+}
+
+#dform_container details.accordion {
+    margin-block: 3rem;
+}
+
+#dform_container details.accordion > div > details.details-accordion {
+    margin-block: 1rem;
+}
+
+#dform_container details.accordion > div > details.details-accordion:first-child {
+    margin-block: 0 1rem;
+}
+
+#dform_container details.accordion > div > details.details-accordion:last-child {
+    margin-block: 1rem 0;
+}
+
 small {
   display: block;
   margin-top: 4rem;
