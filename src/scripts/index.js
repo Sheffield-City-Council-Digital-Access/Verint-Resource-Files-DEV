@@ -1205,7 +1205,6 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     main.sitename ||
     main.site_name ||
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"] ||
-    main.streetname ||
     main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
     "";
   const siteCode =
