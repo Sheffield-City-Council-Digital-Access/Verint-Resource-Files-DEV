@@ -556,18 +556,18 @@ function handleOnReadyEvent(event, kdf) {
         }
         if (modalId === "setReporterModal" && event.detail.reporter) {
           console.log(event);
-          KDF.customdata(
-            "retrieve-individuals-details",
-            `closeModal_setReporterModal`,
-            true,
-            true,
-            {
-              customerid: event.detail.reporter,
-            }
-          );
-          KDF.setVal("le_associated_obj_type", "C1");
-          KDF.setVal("le_associated_obj_id", event.detail.reporter);
-          // KDF.setCustomerID(event.detail.reporter, true, "page_about_you");
+          // KDF.customdata(
+          //   "retrieve-individuals-details",
+          //   `closeModal_setReporterModal`,
+          //   true,
+          //   true,
+          //   {
+          //     customerid: event.detail.reporter,
+          //   }
+          // );
+          // KDF.setVal("le_associated_obj_type", "C1");
+          // KDF.setVal("le_associated_obj_id", event.detail.reporter);
+          KDF.setCustomerID(event.detail.reporter, true, "page_about_you");
         }
         const modal = document.getElementById(modalId);
         if (modal) {
@@ -1075,8 +1075,8 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
 
   if (pageName === "page_about_you") {
     if (kdf.access === "agent" && kdf.customerset === "agent_false") {
-      // KDF.sendDesktopAction("raised_by");
-      createModal("setReporterModal", "system_search_record");
+      KDF.sendDesktopAction("raised_by");
+      // createModal("setReporterModal", "system_search_record");
     }
   }
 
