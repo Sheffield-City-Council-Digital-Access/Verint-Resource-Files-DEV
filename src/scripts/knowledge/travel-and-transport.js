@@ -97,7 +97,7 @@ const blueBadge = new ContentTaT(
   `,
   {
     buttonLabel: "Apply for or renew a Blue Badge",
-    formName: "Blue_badge_application",
+    formName: "blue_badge_application",
   },
   { typeKey: "apply_blue_badge_transfered_to_service" },
   { typeKey: "apply_blue_badge_information_provided" },
