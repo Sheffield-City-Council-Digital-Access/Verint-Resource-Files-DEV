@@ -151,16 +151,6 @@ const childrensTravelPass = new ContentCtP(
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
-const parksSportAndRecreation = new ServicePSaR(
-  "parksSportAndRecreation",
-  "Parks, Sport and Recreation",
-  `Parks, gardens, trees and woodlands, allotments, leisure and sports facilities, what's on, tourist information…`,
-  []
-);
-
-// --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
-// --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
-
 const travelAndTransport = new ServiceTaT(
   "travelAndTransport",
   "Travel and Transport",
