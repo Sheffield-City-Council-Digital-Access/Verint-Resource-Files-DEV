@@ -66,7 +66,8 @@ For information about the new 2-year-old extended working entitlement (15 hours 
     <p>Eligible working parents of children from 9 months to school age will be entitled to 30 hours of childcare a week. </p>
 
   `,
-  { buttonLabel: 'Funded Early Learning', formName: '?' },
+  { buttonLabel: 'Funded Early Learning', formName: '' },
+  { typeKey: 'funded_early_learning_information_provided' },
 
   {
     type: 'Information',
