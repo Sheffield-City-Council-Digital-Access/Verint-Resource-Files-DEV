@@ -44,10 +44,10 @@ class ContentSaC extends CoreSaC {
 
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
-const freeSchoolMeals = new ContentFSM(
-  'freeschoolmeals',
-  'Free School Meals',
-  'Apply free school meals',
+const freeSchoolMeals = new ContentSaC(
+  "freeschoolmeals",
+  "Free School Meals",
+  "Apply free school meals",
   `
     <h3>What is the Eligibility criteria for Free School Meals</h3>
     <p>From April 2024, eligible working parents of 2-year-olds can access 15 hours childcare support. By September 2025,
