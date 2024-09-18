@@ -145,6 +145,7 @@ const pollutionAndNuisance = new ServicePaN(
   'Pollution and Nuisance',
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour…`,
   [
-    abandonedVehicles
+    abandonedVehicles,
+    cleanAirZone,
   ]
 );

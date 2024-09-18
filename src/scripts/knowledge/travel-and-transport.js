@@ -119,6 +119,60 @@ const childrensTravelPass = new ContentCtP(
   { date: "12/09/2024", name: "Gee Whitehouse" }
 );
 
+const disabledTravelPass = new ContentCtP(
+  "disabledTravelPass",
+  "Disabled Travel Pass",
+  "Apply for Disabled Travel Pass",
+  `
+      <h1>Disabled Travel Permit</h1>
+    <h2>What is the Eligibility Criteria for a Disabled Travel Permit</h2>
+    <p>You may qualify for a pass if you're aged between 5 and 66 and meet one of the following criteria:</p>
+    <ul>
+        <li>A current blue badge holder</li>
+        <li>Registered blind, partially sighted or deaf</li>
+        <li>Registered with Social Services as having a learning disability</li>
+        <li>Unable to use both of your arms</li>
+        <li>Unable to drive because of a health problem, such as mental health or epilepsy</li>
+        <li>Currently suffering from a psychiatric disorder, or have an enhanced level care programme approach</li>
+        <li>Unable to speak</li>
+        <li>Suffering from substantial and long-term disabilities or injuries which severely impact your ability to walk</li>
+    </ul>
+    <h2>How long does a Disabled Travel Permit last for</h2>
+    <p>If your application is successful, passes are issued between 1 and 5 years. The timescale is dependent on your qualifying criteria, and you will be made aware of the timescale when your application is approved.</p>
+    <p>If you have any supporting evidence/eligibility that has an end date, your pass will be issued up to that date.</p>
+    <p>If during the time you have the pass, you turn 66, your pass will expire on your 66th birthday.</p>
+    <h2>How do I appeal the decision</h2>
+    <p>Appeals must be made via email to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> or in writing to:</p>
+    <address>
+        Customer Services<br>
+        Floor 2<br>
+        Howden House<br>
+        1 Union Street<br>
+        Sheffield<br>
+        S1 2SH
+    </address>
+    <h2>When can I use my Travel Permit</h2>
+<p>A disabled person's pass enables free public transport on buses, trams, and trains.</p>
+ <p>If the pass is being used within South Yorkshire, it can be used at all times of the day. However, if the pass is being used beyond South Yorkshire (within England or Wales), your pass is only valid between 9:30 AM - 11 PM.</p>
+
+  `,
+  {
+    buttonLabel: "Apply for Disabled Travel Permit",
+    formName: "disabled_travel_pass",
+  },
+  { typeKey: "disabled_travel_pass_transfered_to_service" },
+  { typeKey: "disabled_travel_pass_information_provided" },
+  {
+    type: "Apply",
+    keywords: ["disabled travel pass",'disbaled Travel Pass', 'disabled Tavel Pass', 'disabled Travle Pass', 'dissabled Travel Pass', 'disabled Travel Pazz',
+'traval', 'travle', 'trvel', 'trevel', 'travell','pas', 'pess', 'passs', 'pase', 'pazs',
+
+ ],
+    categories: ["travel and transport", "disability and mental health"],
+  },
+  { date: "18/09/2024", name: "Dinah Williams" }
+);
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -128,6 +182,8 @@ const travelAndTransport = new ServiceTaT(
   `Public transport, driving, cycling, walking, travel cards and passes, school passes, travel news and updates…`,
   [
     childrensTravelPass,
+    disabledTravelPass,
+
 
   ]
 );
