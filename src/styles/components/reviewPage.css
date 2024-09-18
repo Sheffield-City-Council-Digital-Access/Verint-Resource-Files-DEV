@@ -25,7 +25,7 @@
 }
 
 .review-page-item {
-  margin: 1px 0;
+  margin-block: 0 !important;
 }
 
 .review-page-question-text {
