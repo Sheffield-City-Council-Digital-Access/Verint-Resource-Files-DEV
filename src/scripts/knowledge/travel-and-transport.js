@@ -6,21 +6,21 @@ class CoreTaT {
   }
 }
 
-class ServiceSC extends CoreTaT {
+class ServiceTaT extends CoreTaT {
   constructor(id, name, description, subjects = []) {
     super(id, name, description);
     this.subjects = subjects;
   }
 }
 
-class MenuSC extends CoreTaT {
+class MenuTaT extends CoreTaT {
   constructor(id, name, description, topics = []) {
     super(id, name, description);
     this.topics = topics;
   }
 }
 
-class ContentSC extends CoreTaT {
+class ContentTaT extends CoreTaT {
   constructor(
     id,
     name,
