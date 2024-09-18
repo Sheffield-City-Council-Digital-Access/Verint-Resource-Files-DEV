@@ -23,7 +23,7 @@
   line-height: var(--font-height-p2);
   font-weight: var(--font-weight-semibold);
   margin: 1.6rem 0;
-  padding: 0.5rem;
+  padding: 0.6rem 1.2rem;
   border: solid 0.1rem var(--color-primary);
   text-decoration: none;
   cursor: pointer;
@@ -32,7 +32,8 @@
   transition: 0.2s ease all;
   width: 100%;
   max-width: 44.5rem;
-  height: 5rem;
+  min-height: 5rem;
+  height: max-content;
   transition: all 0.2s ease;
 }
 

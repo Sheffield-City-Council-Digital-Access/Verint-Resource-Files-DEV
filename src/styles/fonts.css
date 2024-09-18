@@ -86,7 +86,24 @@ h4,
   font-family: var(--font-heaning);
 }
 
+
+p,
+#dform_container p {
+  margin-block: 1.6rem;
+}
+
+ul, ol,
+#dform_container ul,
+#dform_container ol {
+  padding-left: 4rem;
+}
+
+a,
 #dform_container a {
+  font-size: var(--font-size-p1);
+  line-height: var(--font-height-p1);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-paragraph);
   color: var(--color-primary);
   cursor: pointer;
   text-decoration: none;
