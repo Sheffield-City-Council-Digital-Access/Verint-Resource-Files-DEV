@@ -21,7 +21,17 @@ class MenuDaMH extends CoreDaMH {
 }
 
 class ContentDaMH extends CoreDaMH {
-  constructor(id, name, description, content, process, transfer, finish, meta, lastModified) {
+  constructor(
+    id,
+    name,
+    description,
+    content,
+    process,
+    transfer,
+    finish,
+    meta,
+    lastModified
+  ) {
     super(id, name, description);
     this.content = content;
     this.process = process;
@@ -35,10 +45,10 @@ class ContentDaMH extends CoreDaMH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-const disabledTravelPermit = new ContentDTP(
-  'disabledTravelPermit',
-  'Disabled Travel Permit',
-  'What is the Eligibility Criteria for a Disabled Travel Permit',
+const disabledTravelPermit = new ContentDaMH(
+  "disabledTravelPermit",
+  "Disabled Travel Permit",
+  "What is the Eligibility Criteria for a Disabled Travel Permit",
   `
     <p> You may qualify for a pass if you're aged between 5 and 66 and meet one of the following criteria:</p>
     <p>
@@ -73,27 +83,43 @@ const disabledTravelPermit = new ContentDTP(
       <p>If the Pass is being used within South Yorkshire the pass can be used at all times of the day, however if the pass is being used beyond South Yorkshire (within England or Wales) your pass is only valid between 9:30am - 11pm.
  </p>
        `,
-  { buttonLabel: 'Apply for disabled travel permit', formName: 'disabled_travel_pass'},
-  { typeKey: 'disabled_travel_pass_application' },
-  { typeKey: 'disabled_travel_pass_information_provided' },
   {
-    type: 'Application',
-    keywords: [
-      'disabled travel pass',
-      'dissabled ', 'disabeled', 'disabld', 'disaabled','disableed', 'traval', 'travle', 
-      'trvel', 'travell', 'treval', 'premit', 'permitt', 'pemit','permet','permot'
-    ],
-    categories: ['Travel Permit??', 'Disablity??'],
+    buttonLabel: "Apply for disabled travel permit",
+    formName: "disabled_travel_pass",
   },
-  { date: '11/09/2024', name: 'Dinah Williams' }
+  { typeKey: "disabled_travel_pass_application" },
+  { typeKey: "disabled_travel_pass_information_provided" },
+  {
+    type: "Application",
+    keywords: [
+      "disabled travel pass",
+      "dissabled ",
+      "disabeled",
+      "disabld",
+      "disaabled",
+      "disableed",
+      "traval",
+      "travle",
+      "trvel",
+      "travell",
+      "treval",
+      "premit",
+      "permitt",
+      "pemit",
+      "permet",
+      "permot",
+    ],
+    categories: ["Travel Permit??", "Disablity??"],
+  },
+  { date: "11/09/2024", name: "Dinah Williams" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const disabilityAndMentalHealth = new ServiceDaMH(
-  'disabilityAndMentalHealth',
-  'Disability and Mental Health',
+  "disabilityAndMentalHealth",
+  "Disability and Mental Health",
   `Help and support, travel and transport, equipment, children with disabilities, care and carers, mental health services…`,
-  ['disabledTravelPermit',]
+  ["disabledTravelPermit"]
 );
