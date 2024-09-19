@@ -35,7 +35,7 @@ class ContentDaMH extends CoreDaMH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-const cleanAirZone = new ContentDaMH(
+const shortBreaks = new ContentDaMH(
   'shortBreaks',
   'Short Breaks',
   'Short Breaks',
@@ -143,6 +143,6 @@ const disabilityAndMentalHealth = new ServiceDaMH(
   'Disability and Mental Health',
   `Help and support, travel and transport, equipment, children with disabilities, care and carers, mental health services…`,
   [
-    cleanAirZone,
+    shortBreaks,
   ]
 );
