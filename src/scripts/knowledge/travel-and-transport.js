@@ -304,7 +304,7 @@ const disabledTravelPermit = new ContentTaT(
     buttonLabel: "Apply for disabled travel permit",
     formName: "disabled_travel_pass",
   },
-  false,
+  { typeKey: "" },
   { typeKey: "disabled_travel_pass_information_provided" },
   {
     type: "Application",

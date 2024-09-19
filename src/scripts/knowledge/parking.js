@@ -484,9 +484,8 @@ const parkingPermits = new ContentP(
 	<p>Should be reported to Parking Enforcement</p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-
   { typeKey: "parking_permit_information_provided" },
-  false,
+  { typeKey: "" },
   {
     type: "Information",
     keywords: [
@@ -508,7 +507,6 @@ const parkingPermits = new ContentP(
       "pemit",
       "premit",
     ],
-
     categories: ["Parking"],
   },
   { date: "18/09/2024", name: "Dinah WIlliams" }

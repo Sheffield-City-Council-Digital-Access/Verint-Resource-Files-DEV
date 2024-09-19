@@ -278,7 +278,7 @@ You should also consider signposting the caller to other services such as the Co
   `,
   { buttonLabel: "Local Assistance Scheme", formName: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
-  false,
+  { typeKey: "" },
   {
     type: "Information",
     keywords: [
