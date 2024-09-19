@@ -50,7 +50,6 @@ const localAssistanceScheme = new ContentB(
   "Local Assistance Scheme",
   "Local Assistance Scheme",
   `
-   <h2>Local Assistance Scheme</h2>
 <h2>Crisis Grant Information </h2>
 <h3>Who can apply</h3>
   <p>You may be able to get a Local Assistance Loan if: You are a Sheffield resident and are getting one of the qualifying benefits listed below or are assessed to have insufficient income to meet your needs: <p>
