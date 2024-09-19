@@ -486,6 +486,7 @@ const parkingPermits = new ContentP(
   { buttonLabel: "Parking Permit", formName: "" },
 
   { typeKey: "parking_permit_information_provided" },
+  false,
   {
     type: "Information",
     keywords: [
