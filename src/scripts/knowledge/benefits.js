@@ -45,7 +45,7 @@ class ContentB extends CoreB {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-const localAssistanceScheme = new ContentPaN(
+const localAssistanceScheme = new ContentB(
   "localAssistanceScheme",
   "Local Assistance Scheme",
   "Local Assistance Scheme",
