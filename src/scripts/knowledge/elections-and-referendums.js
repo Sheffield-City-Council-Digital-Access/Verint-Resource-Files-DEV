@@ -63,7 +63,7 @@ const registeringToVote = new MenuEaR(
   "registeringToVote",
   "Registering to vote",
   "add description",
-  [topicExample1]
+  [informationInDifferentFormats]
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
