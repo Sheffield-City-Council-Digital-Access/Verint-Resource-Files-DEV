@@ -1247,7 +1247,7 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     setValuesToInputFields([{ alias: "siteName", value: siteName }]);
   }
 
-  console.log('sitecode', bg.sitecode,  'longitude:', KDF.getVal('le_gis_lon'), 'latitude:', KDF.getVal('le_gis_lon'))
+  console.log('sitecode', bg.sitecode, siteCode.startsWith('GM'), siteCode, 'longitude:', KDF.getVal('le_gis_lon'), 'latitude:', KDF.getVal('le_gis_lon'))
   if (siteCode.startsWith('GM')) {
     setValuesToInputFields([{ alias: "siteCode", value: siteCode }]);
   }
