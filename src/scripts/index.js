@@ -1248,7 +1248,7 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
   }
 
   if (siteCode.startsWith('GM')) {
-    console.log('GM Run:',  'longitude:', KDF.getVal('le_gis_lon'), 'latitude:', KDF.getVal('le_gis_lon')')
+    console.log('GM Run:',  'longitude:', KDF.getVal('le_gis_lon'), 'latitude:', KDF.getVal('le_gis_lon'))
     setValuesToInputFields([{ alias: "siteCode", value: siteCode }]);
     KDF.customdata("gis_background_layer", "do_KDF_Custom_esriMap", true, true,
       {
