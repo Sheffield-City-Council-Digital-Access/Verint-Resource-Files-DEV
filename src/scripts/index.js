@@ -1247,8 +1247,8 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     setValuesToInputFields([{ alias: "siteName", value: siteName }]);
   }
 
-  console.log('sitecode', bg.sitecode, siteCode.startsWith('GM'), siteCode, 'longitude:', KDF.getVal('le_gis_lon'), 'latitude:', KDF.getVal('le_gis_lon'))
   if (siteCode.startsWith('GM')) {
+    console.log('sitecode', bg.sitecode, siteCode.startsWith('GM'), siteCode, 'longitude:', KDF.getVal('le_gis_lon'), 'latitude:', KDF.getVal('le_gis_lon'))
     setValuesToInputFields([{ alias: "siteCode", value: siteCode }]);
   }
 
@@ -2675,6 +2675,8 @@ function closeCase() {
 }
 
 // --- MAP FUNCTIONS -------------------------------------------------------- \\
+var mapX;
+var mapY;
 
 var streetMapView,
   streetMapPositionLayer,
