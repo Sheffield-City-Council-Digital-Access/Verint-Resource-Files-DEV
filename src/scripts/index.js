@@ -746,10 +746,10 @@ function handleOnReadyEvent(event, kdf) {
             error.code === error.PERMISSION_DENIED
               ? "User denied the request for Geolocation"
               : error.code === error.POSITION_UNAVAILABLE
-              ? "Location information is unavailable"
-              : error.code === error.TIMEOUT
-              ? "The request to get user location timed out"
-              : "An unknown error occurred";
+                ? "Location information is unavailable"
+                : error.code === error.TIMEOUT
+                  ? "The request to get user location timed out"
+                  : "An unknown error occurred";
 
           const errorMessageHtml = `
                       <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
@@ -974,9 +974,8 @@ function handleOnReadyEvent(event, kdf) {
     streetName = formatTitleCase(kdf.profileData["profile-AddressLine1"]);
     fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
       streetName
-    )}, ${kdf.profileData["profile-AddressLine4"]}, ${
-      kdf.profileData["profile-Postcode"]
-    }`;
+    )}, ${kdf.profileData["profile-AddressLine4"]}, ${kdf.profileData["profile-Postcode"]
+      }`;
     handleSetReporter(
       new Date(kdf.profileData["profile-DateOfBirth"]),
       fullAddress
@@ -1309,9 +1308,8 @@ function handleObjectIdSet(event, kdf, type, id) {
 function handleObjectIdLoaded(event, kdf, response, type, id) {
   property = formatTitleCase(response["profile-AddressNumber"]);
   streetName = formatTitleCase(response["profile-AddressLine1"]);
-  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${
-    response["profile-AddressLine4"]
-  }, ${response["profile-Postcode"]}`;
+  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${response["profile-AddressLine4"]
+    }, ${response["profile-Postcode"]}`;
   handleSetReporter(new Date(response["profile-DateOfBirth"]), fullAddress);
 
   // keep at the bottom
@@ -2184,8 +2182,7 @@ function validDate(id, day, month, year) {
   ) {
     validationMsg
       .text(
-        `${
-          dobField ? "Date of birth must be a real date" : "Must be a real date"
+        `${dobField ? "Date of birth must be a real date" : "Must be a real date"
         }`
       )
       .show();
@@ -2234,10 +2231,9 @@ function validDate(id, day, month, year) {
     if (date > now) {
       validationMsg
         .text(
-          `${
-            dobField
-              ? "Date of birth must be today or in the past"
-              : "Date must be today or in the past"
+          `${dobField
+            ? "Date of birth must be today or in the past"
+            : "Date must be today or in the past"
           }`
         )
         .show();
@@ -2685,7 +2681,8 @@ var streetMapView,
   caseLayer,
   markerSymbol,
   assetSymbol,
-  esriAssetUrl;
+  esriAssetUrl,
+  groupLayer;
 var xminE, xmaxE, yminE, ymaxE, streetLightLayer, esrimap, highlightSelect;
 var viewPointX,
   viewPointY,
@@ -2707,6 +2704,7 @@ const popupContent = function (feature) {
 
 var vmap_config = {
   mapClickType: "Normal",
+  consolidated_layer_url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/49",
   featureLayers: [
     {
       number: "0",
@@ -2905,8 +2903,8 @@ var vmap_config = {
     },
     {
       number: "18",
-      name: "ground maintenance sites",
-      title: "ground maintenance sites",
+      name: "parks",
+      title: "parks",
       layer_type: "Background",
       layerid: "49",
       url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/49",
@@ -2953,9 +2951,7 @@ function do_KDF_Ready_esriMap() {
 
 function initialize_map(map_param) {
   let map, finalUrl;
-  finalUrl =
-    "https://api.os.uk/maps/raster/v1/zxy/Road_3857/{level}/{col}/{row}.png?key=" +
-    map_param;
+  finalUrl = `https://api.os.uk/maps/raster/v1/zxy/Road_3857/{level}/{col}/{row}.png?key=${map_param}`;
 
   require([
     "esri/Map",
@@ -2968,6 +2964,7 @@ function initialize_map(map_param) {
     "esri/geometry/SpatialReference",
     "esri/layers/GraphicsLayer",
     "esri/layers/FeatureLayer",
+    "esri/layers/GroupLayer"
   ], function (
     Map,
     MapView,
@@ -2978,7 +2975,8 @@ function initialize_map(map_param) {
     Point,
     SpatialReference,
     GraphicsLayer,
-    FeatureLayer
+    FeatureLayer,
+    GroupLayer
   ) {
     let positionLayer = new GraphicsLayer();
 
@@ -3010,7 +3008,7 @@ function initialize_map(map_param) {
     streetMapView.on("click", mapClick);
 
     mapZoomLevel = streetMapView.zoom;
-    $("#dform_" + KDF.kdf().form.name).trigger("_KDF_mapReady", [
+    $(`#dform_${KDF.kdf().form.name}`).trigger("_KDF_mapReady", [
       null,
       "arcgis",
       "map_container",
@@ -3043,6 +3041,12 @@ function initialize_map(map_param) {
         map_extent_change();
       });
     }
+
+    var layerGroup = new GroupLayer({
+      title: "GIS Layers",
+      visible: true
+    });
+    groupLayer = layerGroup;
   });
 }
 
@@ -3172,9 +3176,7 @@ function mapClick(evt) {
         KDF.setVal("le_gis_latgeo", "");
         KDF.setVal("le_gis_longeo", "");
 
-        $("#dform_" + KDF.kdf().form.name).trigger("_KDF_mapOutsideBoundary", [
-          null,
-        ]);
+        $(`#dform_${KDF.kdf().form.name}`).trigger("_KDF_mapOutsideBoundary", [null]);
       } else {
         $("#map_error").remove();
         if (streetMapView.zoom >= 18) {
@@ -3188,8 +3190,8 @@ function mapClick(evt) {
           });
         }
 
-        KDF.customdata("gis_background_layer", "", true, true, {
-          url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/42",
+        KDF.customdata("gis_background_layer", "mapClick", true, true, {
+          url: vmap_config.consolidated_layer_url,
           longitude: mapX,
           latitude: mapY,
           distance: 20,
@@ -3220,9 +3222,7 @@ function mapClick(evt) {
             });
           }
 
-          $("#dform_" + KDF.kdf().form.name).trigger("_KDF_clearAttribute", [
-            null,
-          ]);
+          $(`#dform_${KDF.kdf().form.name}`).trigger("_KDF_clearAttribute", [null]);
         } else {
           streetMapPositionLayer.removeAll();
           var layerAttributes;
@@ -3254,7 +3254,7 @@ function mapClick(evt) {
 }
 
 function retrieveAttribute() {
-  $("#dform_" + KDF.kdf().form.name).trigger("_Selected_Layer", [
+  $(`#dform_${KDF.kdf().form.name}`).trigger("_Selected_Layer", [
     null,
     "asset_layer",
     store_layer_attr,
@@ -3262,10 +3262,7 @@ function retrieveAttribute() {
 }
 
 function map_extent_change() {
-  if (
-    typeof KDF.getVal("txt_layerid") !== "undefined" &&
-    KDF.getVal("txt_layerid") !== ""
-  ) {
+  if (typeof KDF.getVal("txt_layerid") !== "undefined" && KDF.getVal("txt_layerid") !== "") {
     var arrayCount;
     var layerId = KDF.getVal("txt_layerid").split(",");
     for (var i = 0; i < layerId.length; i++) {
@@ -3359,7 +3356,7 @@ function map_extent_change() {
 function do_KDF_optionSelected_esriMap(field, label, val) {
   if (field === "ps_property_search_map_id" && val !== null) {
     if (val !== "") {
-      KDF.customdata("retrieve-property", "", true, true, { object_id: val });
+      KDF.customdata("retrieve-property", "do_KDF_optionSelected_esriMap", true, true, { object_id: val });
     }
   }
 }
@@ -3370,7 +3367,7 @@ function do_KDF_Custom_esriMap(action, response) {
     $("#map_error").remove();
 
     if (response.actionedby == "propertySearch") {
-      $("#dform_" + KDF.kdf().form.name).trigger("_KDF_clearAttribute", [null]);
+      $(`#dform_${KDF.kdf().form.name}`).trigger("_KDF_clearAttribute", [null]);
     }
 
     if (response.data.outcome == "failed") {
@@ -3379,21 +3376,28 @@ function do_KDF_Custom_esriMap(action, response) {
 
     if (response.data.return_type == "street_search") {
       var parseResult = JSON.parse(response.data.result.replace(/\\/g, ""));
-      // if (parseResult.features.length < 1) {
-      //   $('#map_container').addClass('map_container_error');
-      //   if ($('#map_error').length == '0') {
-      //     $('#dform_widget_html_ahtm_map_container').prepend('<div id="map_error" class="dform_validationMessage" style="display: block;">Select a location inside the Sheffield area</div>');
-      //   }
-      //   KDF.setVal(
-      //     'ahtm_map_location_error',
-      //     'Select a location on the public highway'
-      //   );
+      if (parseResult.features.length < 1) {
+        if (!isObjEmpty(store_layer_attr.background_attribute)) {
+          const siteName = store_layer_attr.background_attribute.sitename;
+          setSelectedAddress(siteName, "show");
+          $(".popup").text(siteName);
+          setRequiredStateByAlias("postcode", "not required");
+          return;
+        } else {
+          if ($('#map_error').length == '0') {
+            $('#dform_widget_html_ahtm_map_container').prepend('<div id="map_error" class="dform_validationMessage" style="display: block;">Select a location inside the Sheffield area</div>');
+          }
+          KDF.setVal(
+            'ahtm_map_location_error',
+            'Select a location on the public highway'
+          );
 
-      //   KDF.showWidget('ahtm_map_location_error');
-      //   resetAddressSearch();
-      //   return;
-      // }
-      var parseFeature = parseResult.features[0]?.attributes;
+          $('#map_container').addClass('map_container_error');
+          KDF.showWidget('ahtm_map_location_error');
+          resetAddressSearch();
+          return;
+        }
+      }
     } else {
       var source = new proj4.Proj("EPSG:27700");
       var dest4326 = new proj4.Proj("EPSG:4326");
@@ -3483,7 +3487,6 @@ function do_KDF_Custom_esriMap(action, response) {
   } else if (action == "gis_background_layer") {
     var parseResult = JSON.parse(response.data.result.replace(/\\/g, ""));
     var parseFeature = parseResult.features;
-    console.log(store_layer_attr.background_attribute);
 
     store_layer_attr.background_attribute = {};
 
@@ -3542,19 +3545,23 @@ function do_KDF_Custom_esriMap(action, response) {
     KDF.hideWidget("ahtm_map_location_error");
     selectedLocation = centerpoint;
 
-    KDF.customdata(
-      "gis_background_layer",
-      "do_KDF_Custom_esriMap",
-      true,
-      true,
+    KDF.customdata("gis_background_layer", "do_KDF_Custom_esriMap", true, true,
       {
-        url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/42",
+        url: vmap_config.consolidated_layer_url,
         longitude: response.data.easting,
         latitude: response.data.northing,
         distance: 20,
       }
     );
   }
+}
+
+function isObjEmpty(obj) {
+  for (var prop in obj) {
+    if (obj.hasOwnProperty(prop))
+      return false;
+  }
+  return true;
 }
 
 function initializeAssetLayer(zoomLevel) {
@@ -3577,12 +3584,44 @@ function initializeAssetLayer(zoomLevel) {
             outFields: "*",
           });
 
-          esrimap.add(assetObj);
+          //esrimap.add(assetObj);
+          groupLayer.add(assetObj);
         }
       }
     });
+    esrimap.add(groupLayer);
     asset_init = true;
+
+    if (KDF.kdf().access == 'agent') {
+      initLayerList();
+    }
   }
+}
+
+function initLayerList() {
+  var allLayers = esrimap.allLayers.items;
+  for (var i = 0; i < allLayers.length; i++) {
+    arrayCount = allLayers[i];
+    if (i == 0 || i == 1 || i == 2) {
+      esrimap.findLayerById(arrayCount.id).listMode = 'hide';
+    }
+  }
+
+  require(["esri/widgets/LayerList"], (LayerList) => {
+    let layerList = new LayerList({
+      view: streetMapView,
+      collapsed: true,
+      label: 'List of GIS layer'
+    });
+
+    layerList.visibleElements = {
+      collapseButton: true,
+    }
+    layerList.collapsed = true;
+    streetMapView.ui.add(layerList, {
+      position: "top-right"
+    });
+  });
 }
 
 function addPoint(map, point, markerSymbol) {

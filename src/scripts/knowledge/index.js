@@ -71,7 +71,6 @@ function handleInitialisingKnowledge() {
   })();
 
   (() => {
-    // Create the footer HTML string
     const footerHTML = `
     <footer class="footer" role="contentinfo">
       <div class="footer-links">
@@ -80,11 +79,7 @@ function handleInitialisingKnowledge() {
       </div>
     </footer>
   `;
-
-    // Find the body element
     const body = document.getElementsByTagName("body")[0];
-
-    // Insert the footer HTML at the end of the body
     body.insertAdjacentHTML("beforeend", footerHTML);
   })();
 }
@@ -997,6 +992,5 @@ function logUserJourney(action, details) {
     timestamp,
   });
 
-  // Update the field value
   journeyField.value = JSON.stringify(journey);
 }
