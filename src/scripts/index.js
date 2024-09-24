@@ -2840,6 +2840,13 @@ var viewInitialLoad = false;
 var asset_init = false;
 var selectedLocation = "";
 
+const popupContent = function (feature) {
+  const div = document.createElement("div");
+  div.innerHTML =
+    "<div class='popup' style='font-weight: bold; font-size: medium;'></br>";
+  return div;
+};
+
 proj4.defs([
   ['EPSG:4326', '+title=WGS 84 (long/lat) +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs'],
   [
