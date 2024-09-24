@@ -2675,6 +2675,21 @@ function closeCase() {
 }
 
 // --- MAP FUNCTIONS -------------------------------------------------------- \\
+var streetMapView, streetMapPositionLayer, mapPoint, caseLayer, markerSymbol, assetSymbol, esriAssetUrl, groupLayer;
+var xminE, xmaxE, yminE, ymaxE, streetLightLayer, esrimap, highlightSelect;
+var viewPointX, viewPointY, assetWatch, scc_boundary_ring, mapZoomLevel, streetlight_unittype, BG_layer;
+var assetWatchStatus = false;
+var viewInitialLoad = false;
+var asset_init = false;
+var selectedLocation = "";
+
+const popupContent = function (feature) {
+  const div = document.createElement("div");
+  div.innerHTML =
+    "<div class='popup' style='font-weight: bold; font-size: medium;'></br>";
+  return div;
+};
+
 var vmap_config = {
   mapClickType: "Normal",
   consolidated_layer_url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/42",
@@ -2830,21 +2845,6 @@ var vmap_config = {
       popup: {},
     },
   ],
-};
-
-var streetMapView, streetMapPositionLayer, mapPoint, caseLayer, markerSymbol, assetSymbol, esriAssetUrl, groupLayer;
-var xminE, xmaxE, yminE, ymaxE, streetLightLayer, esrimap, highlightSelect;
-var viewPointX, viewPointY, assetWatch, scc_boundary_ring, mapZoomLevel, streetlight_unittype, BG_layer;
-var assetWatchStatus = false;
-var viewInitialLoad = false;
-var asset_init = false;
-var selectedLocation = "";
-
-const popupContent = function (feature) {
-  const div = document.createElement("div");
-  div.innerHTML =
-    "<div class='popup' style='font-weight: bold; font-size: medium;'></br>";
-  return div;
 };
 
 proj4.defs([
