@@ -1228,6 +1228,7 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     main.responsibility ||
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
     main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
+    main?.[0].attributes.site_type ||
     bg.customer ||
     "";
   const prestige =
@@ -1244,7 +1245,7 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     { alias: "responsibility", value: responsibility },
     { alias: "prestige", value: prestige },
   ]);
-
+  
   // if (siteName) {
   //   setValuesToInputFields([{ alias: "siteName", value: siteName }]);
   // }
