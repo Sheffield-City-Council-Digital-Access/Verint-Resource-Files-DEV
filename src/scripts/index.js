@@ -1228,7 +1228,7 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     main.responsibility ||
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
     main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
-    main[0].attributes.site_type ||
+    main[0]?.attributes.site_type ||
     bg.customer ||
     "";
   const prestige =
