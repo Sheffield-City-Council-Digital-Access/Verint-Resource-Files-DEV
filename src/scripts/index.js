@@ -2697,7 +2697,7 @@ const popupContent = function (feature) {
 
 var vmap_config = {
   mapClickType: "Normal",
-  consolidated_layer_url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/42",
+  consolidated_layer_url: "https://utility.arcgis.com/usrsvcs/servers/25557d31a8ba43408a6ad3a0495aa290/rest/services/AGOL/Verint_PublicFaultReporting/MapServer/49",
   featureLayers: [
     {
       number: "0",
