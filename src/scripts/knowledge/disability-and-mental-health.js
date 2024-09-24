@@ -50,27 +50,8 @@ const shortBreakGrants = new ContentDaMH(
   "Short Breaks Grants",
   "Apply for a short break grant",
   `
-  <p>To help you with your enquiry, I will need to transfer you through to <a href="tel:0114 2735068">0114 2735068</a>.
-</p>
-<p>Alternatively, you can email <a
-    href="mailto:SNIPSBusinessSupport@sheffield.gov.uk">SNIPSBusinessSupport@sheffield.gov.uk</a>.</p>
-<h3>Direct Payments</h3>
-<p>To help you with your enquiry, I will need to transfer you through to <a href="tel:0114 2735068">0114 2735068</a>.
-</p>
-<p>Alternatively, you can email <a
-    href="mailto:SNIPSBusinessSupport@sheffield.gov.uk">SNIPSBusinessSupport@sheffield.gov.uk</a>.</p>
-<h3>Foster Care</h3>
-<p>To help you with your enquiry, I will need to transfer you through to <a href="tel:0114 2735068">0114 2735068</a>.
-</p>
-<p>Alternatively, you can email <a
-    href="mailto:SNIPSBusinessSupport@sheffield.gov.uk">SNIPSBusinessSupport@sheffield.gov.uk</a>.</p>
-<h3>Overnight Respite</h3>
-<p>To help you with your enquiry, I will need to transfer you through to <a href="tel:0114 2735068">0114 2735068</a>.
-</p>
-<p>Alternatively, you can email <a
-    href="mailto:SNIPSBusinessSupport@sheffield.gov.uk">SNIPSBusinessSupport@sheffield.gov.uk</a>.</p>  
-  
-  <h3>Eligibility</h3>
+  <p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.
+<h3>Eligibility</h3>
     <p>Household income is the total income of all people sharing a household.</p>
     <p>The easiest way for us to tell if you are eligible to apply is to look if you are entitled to free school meals. This
       does not show us your income, but if a family is eligible for free school meals it usually means that they are in
@@ -103,7 +84,26 @@ const shortBreakGrants = new ContentDaMH(
     <p>Please note that Disability Living Allowance (DLA) and Personal Independence Payment (PIP) are non-taxable and
       therefore not counted as income for means-tested benefits. DLA and PIP does not count as part of your household income
       in these proposals.</p>
-    <h3>Special Needs Inclusion Playcare Services</h3>
+</p>
+<p>Alternatively, you can email <a
+    href="mailto:SNIPSBusinessSupport@sheffield.gov.uk">SNIPSBusinessSupport@sheffield.gov.uk</a>.</p>
+<h3>Direct Payments</h3>
+<p>To help you with your enquiry, I will need to transfer you through to <a href="tel:0114 2735068">0114 2735068</a>.
+</p>
+<p>Alternatively, you can email <a
+    href="mailto:SNIPSBusinessSupport@sheffield.gov.uk">SNIPSBusinessSupport@sheffield.gov.uk</a>.</p>
+<h3>Foster Care</h3>
+<p>To help you with your enquiry, I will need to transfer you through to <a href="tel:0114 2735068">0114 2735068</a>.
+</p>
+<p>Alternatively, you can email <a
+    href="mailto:SNIPSBusinessSupport@sheffield.gov.uk">SNIPSBusinessSupport@sheffield.gov.uk</a>.</p>
+<h3>Overnight Respite</h3>
+<p>To help you with your enquiry, I will need to transfer you through to <a href="tel:0114 2735068">0114 2735068</a>.
+</p>
+<p>Alternatively, you can email <a
+    href="mailto:SNIPSBusinessSupport@sheffield.gov.uk">SNIPSBusinessSupport@sheffield.gov.uk</a>.</p>  
+  
+      <h3>Special Needs Inclusion Playcare Services</h3>
     <p>Mainstream or “universal” clubs usually have a number of children attending, not all with disabilities, and are open
       to the general public. Targeted or “specialist” clubs are delivered for disabled children only and are not open to the
       general public.</p>
@@ -161,7 +161,181 @@ const shortBreakGrants = new ContentDaMH(
   },
   { date: "18/09/2024", name: "Dinah WIlliams" }
 );
+const directPayments = new ContentDaMH(
+  'directPayments',
+  'Direct Payments',
+  `<p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>`,
+  { buttonLabel: '', formName: '' },
+  { typeKey: '' },
+  { typeKey: '' },
+  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
+  { date: '24/09/2024', name: 'Dinah Williams' }
+);
 
+// Example instantiation for subjectExample2 (Menu with topics)
+const directPayments = new MenuDaMH(
+  'directPayments',
+  'Direct Payments',
+  'Description',
+  [directPayments,]
+);
+
+const fosterCare = new ContentDaMH(
+  'fosterCare',
+  'Foster Care',
+  `<p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>`,
+  { buttonLabel: '', formName: '' },
+  { typeKey: '' },
+  { typeKey: '' },
+  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
+  { date: '24/09/2024', name: 'Dinah Williams' }
+);
+// Example instantiation for subjectExample2 (Menu with topics)
+const fosterCare = new MenuDaMH(
+  'fosterCare',
+  'Foster Care',
+  'Description',
+  [fosterCare,]
+)
+const overnightRespite = new ContentDaMH(
+  'overnightRespite',
+  'Overnight Respite',
+  `<p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>`,
+  { buttonLabel: '', formName: '' },
+  { typeKey: '' },
+  { typeKey: '' },
+  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
+  { date: '24/09/2024', name: 'Dinah Williams' }
+);
+// Example instantiation for subjectExample2 (Menu with topics)
+const overnightRespite = new MenuDaMH(
+  'overnightRespite',
+  'Overnight Respite',
+  'Description',
+  [overnightRespite,]
+)
+const overnightRespite = new ContentDaMH(
+  'overnightRespite',
+  'Overnight Respite',
+  `<p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>`,
+  { buttonLabel: '', formName: '' },
+  { typeKey: '' },
+  { typeKey: '' },
+  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
+  { date: '24/09/2024', name: 'Dinah Williams' }
+);
+// Example instantiation for subjectExample2 (Menu with topics)
+const overnightRespite = new MenuDaMH(
+  'overnightRespite',
+  'Overnight Respite',
+  'Description',
+  [overnightRespite,]
+)
+const specialneedsinclusionplaycareServices = new ContentDaMH(
+  'specialneedsinclusionplaycareServices',
+  'Special Needs Inclusion Playcare Services',
+  '<p>Mainstream or “universal” clubs usually have a number of children attending, not all with disabilities, and are open to the general public. Targeted or “specialist” clubs are delivered for disabled children only and are not open to the general public.</p>
+    '<p>If you are unsure please ask the club or contact your SNIPS mentor.</p>',
+  { buttonLabel: '', formName: '' },
+  { typeKey: '' },
+  { typeKey: '' },
+  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
+  { date: '24/09/2024', name: 'Dinah Williams' }
+);
+// Example instantiation for subjectExample2 (Menu with topics)
+const specialneedsinclusionplaycareServices = new MenuDaMH(
+  'specialneedsinclusionplaycareServices',
+  'Special Needs Inclusion Playcare Services',
+  'Description',
+  [specialneedsinclusionplaycareServices,]
+)
+const universalClubs = new ContentDaMH(
+  'universalClubs',
+  'Universal Clubs',
+  `<p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>`,
+  { buttonLabel: '', formName: '' },
+  { typeKey: '' },
+  { typeKey: '' },
+  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
+  { date: '24/09/2024', name: 'Dinah Williams' }
+);
+// Example instantiation for subjectExample2 (Menu with topics)
+const universalClubs = new MenuDaMH(
+  'universalClubs',
+  'Universal Clubs',
+  'Parents will be asked to pay the basic activity cost to the club',
+  [universalClubs,]
+)
+const affordability = new ContentDaMH(
+  'affordability',
+  'Affordabiity',
+  `<p>If you are in receipt of means tested benefits or your household income is below £21,000.00 you will not have to pay for the actiity cost. Please complete the household income assessment.</p>`,
+  '<p>If families receive other financial support, some of these might be able to be used to help with these costs.</p>'
+  '<p>If your child attends a club that you find to expensive to pay on an ongoing basis you may be able to find a lower cost alternative.</p>'
+  { buttonLabel: '', formName: '' },
+  { typeKey: '' },
+  { typeKey: '' },
+  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
+  { date: '24/09/2024', name: 'Dinah Williams' }
+);
+
+const ifyourchildcannotattendaSession = new ContentDaMH(
+  'ifyourchildcannotattendaSession',
+  'If your child cannot attend a session',
+  `<p>You will still need to pay because the staff are employed for each session to support your child, and so the club still has to pay these costs.</p>`,
+  { buttonLabel: '', formName: '' },
+  { typeKey: '' },
+  { typeKey: '' },
+  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
+  { date: '24/09/2024', name: 'Dinah Williams' }
+);
+const waysofPaying= new ContentDaMH(
+  'waysofPaying',
+  'Ways of paying',
+  `<p>You will pay the club directly.</p>`,
+  { buttonLabel: '', formName: '' },
+  { typeKey: '' },
+  { typeKey: '' },
+  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
+  { date: '24/09/2024', name: 'Dinah Williams' }
+);
+const specialistClubs = new MenuDaMH(
+  'specialistClubs',
+  'Specialist Clubs',
+  'For each session that is allocated as part of your package of support the cost to families will be £7.00.  So if your child should attend every Saturday, you will pay £7.00 for every Saturday.</p>',
+  'If you have more than one child attending a specialist club your session payment will be a maximum of £10.00.'
+  [universalClubs,]
+)
+const affordability = new ContentDaMH(
+  'affordability',
+  'Affordabiity',
+  `<p>If you are in receipt of means-tested benefits or your household income is below £21,000.00 you will not have to pay for the actiity cost. Please complete the household income assessment.</p>`,
+  { buttonLabel: '', formName: '' },
+  { typeKey: '' },
+  { typeKey: '' },
+  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
+  { date: '24/09/2024', name: 'Dinah Williams' }
+);
+const ifyourchildcannotattendaSession = new ContentDaMH(
+  'ifyourchildcannotattendaSession',
+  'If your child cannot attend a session',
+  `<p>You will still need to pay because the staff are employed for each session to support your child, and so the club still has to pay these costs.</p>`,
+  { buttonLabel: '', formName: '' },
+  { typeKey: '' },
+  { typeKey: '' },
+  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
+  { date: '24/09/2024', name: 'Dinah Williams' }
+);
+const waysofPaying= new ContentDaMH(
+  'waysofPaying',
+  'Ways of paying',
+  `<p>You will pay the club directly.</p>`,
+  { buttonLabel: '', formName: '' },
+  { typeKey: '' },
+  { typeKey: '' },
+  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
+  { date: '24/09/2024', name: 'Dinah Williams' }
+);
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -169,5 +343,5 @@ const disabilityAndMentalHealth = new ServiceDaMH(
   "disabilityAndMentalHealth",
   "Disability and Mental Health",
   `Help and support, travel and transport, equipment, children with disabilities, care and carers, mental health services…`,
-  [shortBreakGrants]
+  [shortBreakGrants, affordability, ifchildcannotattendaSession, waysofPaying,]
 );
