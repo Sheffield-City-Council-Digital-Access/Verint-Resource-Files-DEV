@@ -1224,13 +1224,13 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_code"] ||
     main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_code"] ||
     "";
-  const responsibility =
-    main.responsibility ||
-    main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
-    main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
-    main[0]?.attributes.site_type ||
-    bg.customer ||
-    "";
+  // const responsibility =
+  //   main.responsibility ||
+  //   main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
+  //   main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
+  //   main[0]?.attributes.site_type ||
+  //   bg.customer ||
+  //   "";
   const prestige =
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category"] ||
     main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category"] ||
@@ -3243,11 +3243,10 @@ function do_KDF_Custom_esriMap(action, response) {
       if (parseResult.features.length < 1) {
         if (!isObjEmpty(store_layer_attr.background_attribute)) {
           setValuesToInputFields([
-            { alias: "streetName", value: store_layer_attr.background_attribute.sitename },
-            { alias: "fullAddress", value: store_layer_attr.background_attribute.sitename  },
-            { alias: "uprn", value: store_layer_attr.background_attribute.sitecode },
+            { alias: "fullAddress", value: store_layer_attr.background_attribute.sitename },
             { alias: "siteName", value: store_layer_attr.background_attribute.sitename },
             { alias: "siteCode", value: store_layer_attr.background_attribute.sitecode },
+            { alias: "responsibility", value: 'PWC' },
           ]);
           setSelectedAddress(store_layer_attr.background_attribute.sitename, 'show');
           $('.popup').text(store_layer_attr.background_attribute.sitename);
@@ -3261,6 +3260,11 @@ function do_KDF_Custom_esriMap(action, response) {
         }
       }
 
+      if (!isObjEmpty(store_layer_attr.background_attribute)) {
+        setValuesToInputFields([
+          { alias: "responsibility", value: 'CHS' },
+        ]);
+      }
       var parseFeature = parseResult.features[0].attributes;
 
       setValuesToInputFields([
