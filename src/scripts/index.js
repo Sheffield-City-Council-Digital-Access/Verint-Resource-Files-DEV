@@ -23,8 +23,6 @@ const datePairs = [];
 
 let fieldsToCheckBeforeClose = [];
 
-let acceptGMSites = false;
-
 // Initialize an array to store the user's form page history
 const formUserPath = [];
 
@@ -1213,9 +1211,7 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     main.usrn ||
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
     main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
-    (acceptGMSites
-      ? bg.sitecode.startsWith('344') ? bg.sitecode : ""
-      : bg.sitecode) ||
+    bg.sitecode  ||
     "";
   const featureTypeName =
     main.featuretypename ||
