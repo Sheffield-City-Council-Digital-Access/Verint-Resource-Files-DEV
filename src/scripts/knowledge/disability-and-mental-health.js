@@ -60,7 +60,7 @@ const shortBreakGrants = new ContentDaMH(
       below):</p>
     <ul>
       <li>Income-based Free School Meals</li>
-      <li>Income-based Jobseeker’s Allowance (JSA)</li>
+      <li>Income-based Jobseekers Allowance (JSA)</li>
       <li>Income-related Employment and Support Allowance (ESA)</li>
       <li>Income Support</li>
       <li>Pension Credit</li>
@@ -73,7 +73,7 @@ const shortBreakGrants = new ContentDaMH(
     <p>If you are not receiving any of the benefits listed, we will ask for evidence of your family income. The types of
       income taken into account are:</p>
     <ul>
-      <li>PAYE – including commission, bonuses, overtime</li>
+      <li>PAYE-including commission, bonuses, overtime</li>
       <li>Self-employed income (taxable profit for financial year ending between 6 April 2015 and 5 April 2016)</li>
       <li>Income from property</li>
       <li>Pension income</li>
@@ -234,8 +234,8 @@ const overnightRespite = new MenuDaMH(
 const specialneedsinclusionplaycareServices = new ContentDaMH(
   'specialneedsinclusionplaycareServices',
   'Special Needs Inclusion Playcare Services',
-  '<p>Mainstream or “universal” clubs usually have a number of children attending, not all with disabilities, and are open to the general public. Targeted or “specialist” clubs are delivered for disabled children only and are not open to the general public.</p>
-    '<p>If you are unsure please ask the club or contact your SNIPS mentor.</p>',
+  '<p>Mainstream or “universal” clubs usually have a number of children attending, not all with disabilities, and are open to the general public. Targeted or “specialist” clubs are delivered for disabled children only and are not open to the general public.</p>'
+  '<p>If you are unsure please ask the club or contact your SNIPS mentor.</p>',
   { buttonLabel: '', formName: '' },
   { typeKey: '' },
   { typeKey: '' },
@@ -289,7 +289,7 @@ const ifyourchildcannotattendaSession = new ContentDaMH(
   { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
-const waysofPaying= new ContentDaMH(
+const waysofPaying = new ContentDaMH(
   'waysofPaying',
   'Ways of paying',
   `<p>You will pay the club directly.</p>`,
@@ -326,7 +326,7 @@ const ifyourchildcannotattendaSession = new ContentDaMH(
   { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
-const waysofPaying= new ContentDaMH(
+const waysofPaying = new ContentDaMH(
   'waysofPaying',
   'Ways of paying',
   `<p>You will pay the club directly.</p>`,
