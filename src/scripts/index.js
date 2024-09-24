@@ -581,29 +581,6 @@ function handleOnReadyEvent(event, kdf) {
 
   do_KDF_Ready_esriMap();
 
-  function handleLocationSelection(acceptGMSites = false) {
-    console.log('handleLocationSelection', acceptGMSites)
-    const siteNameSet = !!KDF.getVal('txt_site_name'); // true if site name has a value
-    const siteCodeSet = !!KDF.getVal('txt_site_code'); // true if site code has a value
-    const validSiteCode = acceptGMSites || KDF.getVal('txt_site_code').startsWith('344'); // valid if acceptGMSites is true or site code starts with '344'
-    console.log(siteNameSet, siteCodeSet, validSiteCode)
-    if (siteNameSet && siteCodeSet && validSiteCode) {
-      setRequiredStateByAlias('postcode', 'not required');
-      KDF.gotoNextPage();
-      return;
-    }
-
-    // Show appropriate error message
-    const errorMessage = acceptGMSites ? 'Select a location inside the Sheffield area' : 'Select a location on the public highway';
-    $('#map_container').addClass('map_container_error');
-    
-    if ($('#map_error').length === 0) {
-      $('#dform_widget_html_ahtm_map_container').prepend(`<div id="map_error">${errorMessage}</div>`);
-    }
-
-    KDF.setVal('ahtm_map_location_error', errorMessage);
-  }
-
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
 
   if (kdf.form.complete === "Y") {
@@ -1222,20 +1199,20 @@ function handleMapClickEvent(
 function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
   const { main_attribute: main, background_attribute: bg } = layerAttributes;
 
-  const siteName =
-    main.sitename ||
-    main.site_name ||
-    main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"] ||
-    main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
-    bg.sitename ||
-    "";
-  const siteCode =
-    main.sitecode ||
-    main.usrn ||
-    main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
-    main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
-    bg.sitecode  ||
-    "";
+  // const siteName =
+  //   main.sitename ||
+  //   main.site_name ||
+  //   main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"] ||
+  //   main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
+  //   bg.sitename ||
+  //   "";
+  // const siteCode =
+  //   main.sitecode ||
+  //   main.usrn ||
+  //   main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
+  //   main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
+  //   bg.sitecode  ||
+  //   "";
   const featureTypeName =
     main.featuretypename ||
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_name"] ||
@@ -1262,8 +1239,8 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     "";
 
   setValuesToInputFields([
-    { alias: "siteName", value: siteName },
-    { alias: "siteCode", value: siteCode },
+    // { alias: "siteName", value: siteName },
+    // { alias: "siteCode", value: siteCode },
     { alias: "featureName", value: featureTypeName },
     { alias: "featureType", value: featureType },
     { alias: "responsibility", value: responsibility },
@@ -2996,8 +2973,8 @@ function do_KDF_mapReady_esriMap(map, positionLayer) {
         addPoint(streetMapView, centerpoint, markerSymbol);
       });
 
-      setSelectedAddress(KDF.getVal('txt_location'), "show");
-      $(".popup").text(KDF.getVal('txt_location'));
+      setSelectedAddress(KDF.getVal('txt_site_name'), "show");
+      $(".popup").text(KDF.getVal('txt_site_name'));
       setRequiredStateByAlias('postcode', 'not required');
     }
   }
@@ -3076,7 +3053,7 @@ function mapClick(evt) {
         KDF.setVal('le_gis_latgeo', '');
         KDF.setVal('le_gis_longeo', '');
         KDF.setVal('txta_location', '');
-        KDF.setVal('txt_location', '');
+        KDF.setVal('txt_site_name', '');
         KDF.setVal('txt_location_UPRN', '');
         KDF.setVal('txt_location_USRN', '');
 
@@ -3265,6 +3242,13 @@ function do_KDF_Custom_esriMap(action, response) {
       var parseResult = JSON.parse(response.data.result.replace(/\\/g, ""));
       if (parseResult.features.length < 1) {
         if (!isObjEmpty(store_layer_attr.background_attribute)) {
+          setValuesToInputFields([
+            { alias: "streetName", value: store_layer_attr.background_attribute.sitename },
+            { alias: "fullAddress", value: store_layer_attr.background_attribute.sitename  },
+            { alias: "uprn", value: store_layer_attr.background_attribute.sitecode },
+            { alias: "siteName", value: store_layer_attr.background_attribute.sitename },
+            { alias: "siteCode", value: store_layer_attr.background_attribute.sitecode },
+          ]);
           setSelectedAddress(store_layer_attr.background_attribute.sitename, 'show');
           $('.popup').text(store_layer_attr.background_attribute.sitename);
           setRequiredStateByAlias('postcode', 'not required');
@@ -3279,15 +3263,24 @@ function do_KDF_Custom_esriMap(action, response) {
 
       var parseFeature = parseResult.features[0].attributes;
 
-      KDF.setVal('txt_location', parseFeature['streetname']);
-      KDF.setVal('txt_location_USRN', parseFeature['usrn']);
+      setValuesToInputFields([
+        { alias: "streetName", value: parseFeature['streetname'] },
+        { alias: "fullAddress", value: parseFeature['streetname']  },
+        { alias: "uprn", value: parseFeature['usrn'] },
+        { alias: "siteName", value: parseFeature['streetname'] },
+        { alias: "siteCode", value: parseFeature['usrn'] },
+      ]);
       setSelectedAddress(parseFeature['streetname'], 'show');
       $('.popup').text(parseFeature['streetname']);
       setRequiredStateByAlias('postcode', 'not required');
     } else {
-      KDF.setVal('txt_map_uprn', response.data.UPRN);
-      KDF.setVal('txt_location_UPRN', response.data.UPRN);
-      KDF.setVal('txt_location', response.data.description);
+      setValuesToInputFields([
+        { alias: "streetName", value: response.data.description },
+        { alias: "fullAddress", value: response.data.description  },
+        { alias: "uprn", value: response.data.UPRN },
+        { alias: "siteName", value: response.data.description },
+        { alias: "siteCode", value: response.data.UPRN },
+      ]);
 
       var source = new proj4.Proj('EPSG:27700');
       var dest4326 = new proj4.Proj('EPSG:4326');
@@ -3427,8 +3420,6 @@ function do_KDF_Custom_esriMap(action, response) {
     KDF.setVal('txt_location_UPRN', response.data.UPRN);
     KDF.setVal('txt_location_ward_code', response.data.WardRef);
     KDF.setVal('txt_location_ward_name', response.data.WardName);
-
-    KDF.setVal('txt_location', response.data.address);
 
     setSelectedAddress(response.data.address, 'show');
     $('.popup').text(response.data.address);
