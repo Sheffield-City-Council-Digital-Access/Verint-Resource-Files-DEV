@@ -577,27 +577,31 @@ function handleOnReadyEvent(event, kdf) {
     }
   }
 
-    // --- MAP --------------------------------------------------------------- \\
+  // --- MAP --------------------------------------------------------------- \\
 
-    do_KDF_Ready_esriMap();
+  do_KDF_Ready_esriMap();
 
-    function handleLocationSelection(acceptGMSites = false) {
-      const siteNameSet = KDF.getVal('txt_site_name') ? true : false;
-      const siteCodeSet = KDF.getVal('txt_site_code') ? true : false;
-      const validSiteCode = acceptGMSites ? true : KDF.getVal('txt_site_code').startsWith('344') ? true : false;
-      if (siteNameSet && siteCodeSet && validSiteCode) {
+  function handleLocationSelection(acceptGMSites = false) {
+    const siteNameSet = !!KDF.getVal('txt_site_name'); // true if site name has a value
+    const siteCodeSet = !!KDF.getVal('txt_site_code'); // true if site code has a value
+    const validSiteCode = acceptGMSites || KDF.getVal('txt_site_code').startsWith('344'); // valid if acceptGMSites is true or site code starts with '344'
+    
+    if (siteNameSet && siteCodeSet && validSiteCode) {
         setRequiredStateByAlias('postcode', 'not required');
         KDF.gotoNextPage();
         return;
-      }
-      
-      const errorMessage = acceptGMSites ? 'Select a location inside the Sheffield area' : 'Select a location on the public highway';
-      $('#map_container').addClass('map_container_error');
-      if ($('#map_error').length == '0') {
-        $('#dform_widget_html_ahtm_map_container').prepend(`<div id="map_error">${errorMessage}</div>`);
-      }
-      KDF.setVal('ahtm_map_location_error', errorMessage);
     }
+
+    // Show appropriate error message
+    const errorMessage = acceptGMSites ? 'Select a location inside the Sheffield area' : 'Select a location on the public highway';
+    $('#map_container').addClass('map_container_error');
+    
+    if ($('#map_error').length === 0) {
+        $('#dform_widget_html_ahtm_map_container').prepend(`<div id="map_error">${errorMessage}</div>`);
+    }
+
+    KDF.setVal('ahtm_map_location_error', errorMessage);
+  }
 
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
 
