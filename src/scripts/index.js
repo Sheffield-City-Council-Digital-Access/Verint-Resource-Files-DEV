@@ -1246,36 +1246,7 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     { alias: "responsibility", value: responsibility },
     { alias: "prestige", value: prestige },
   ]);
-  
-  // if (siteName) {
-  //   setValuesToInputFields([{ alias: "siteName", value: siteName }]);
-  // }
-
-  // if (siteCode.startsWith('GM')) {
-  //   console.log('sitecode', bg.sitecode, siteCode.startsWith('GM'), siteCode, 'longitude:', KDF.getVal('le_gis_lon'), 'latitude:', KDF.getVal('le_gis_lon'))
-  //   setValuesToInputFields([{ alias: "siteCode", value: siteCode }]);
-  // }
-
-  // if (siteName && siteCode) {
-  //   // console.log(getValuesOfInputFields({ alias: "fullAddress" }))
-  //   setSelectedAddress(siteName, "show");
-  // } else {
-  //   $("#map_container").addClass("map_container_error");
-  //   if ($("#map_error").length == "0") {
-  //     $("#dform_widget_html_ahtm_map_container").prepend(
-  //       '<div id="map_error" class="dform_validationMessage" style="display: block;">Select a location inside the Sheffield area</div>'
-  //     );
-  //   }
-  //   KDF.setVal(
-  //     "ahtm_map_location_error",
-  //     "Select a location on the public highway"
-  //   );
-
-  //   KDF.showWidget("ahtm_map_location_error");
-  //   resetAddressSearch();
-  //   return;
-  // }
-
+ 
   // keep at the bottom
   checkPageProgress();
 }
@@ -3067,7 +3038,7 @@ function mapClick(evt) {
       if (!withinSccCheck(convertPointP4)) {
         $('#map_container').addClass('map_container_error');
         if ($('#map_error').length == '0') {
-          $('#dform_widget_html_ahtm_map_container').prepend('<div id="map_error" style="font-weight: bold;color: red;font-size:21px">Select a location inside Sheffield area</div>')
+          $('#dform_widget_html_ahtm_map_container').prepend('<div id="map_error">Select a location inside Sheffield area</div>')
         }
         KDF.setVal(
           'ahtm_map_location_error',
