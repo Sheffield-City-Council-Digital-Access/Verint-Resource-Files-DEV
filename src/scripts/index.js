@@ -1199,19 +1199,8 @@ function handleMapClickEvent(
 function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
   const { main_attribute: main, background_attribute: bg } = layerAttributes;
 
-  // const siteName =
-  //   main.sitename ||
-  //   main.site_name ||
-  //   main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitename"] ||
-  //   main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
-  //   bg.sitename ||
-  //   "";
   const siteCode =
-    // main.sitecode ||
-    // main.usrn ||
-    // main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
-    // main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
-    bg.sitecode  ||
+    bg.sitecode ||
     "";
   const featureTypeName =
     main.featuretypename ||
@@ -1224,13 +1213,11 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_code"] ||
     main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_code"] ||
     "";
-  // const responsibility =
-  //   main.responsibility ||
-  //   main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
-  //   main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
-  //   main[0]?.attributes.site_type ||
-  //   bg.customer ||
-  //   "";
+  const responsibility =
+    main.responsibility ||
+    main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
+    main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
+    bg.sitecode ? "CHS" : "";
   const prestige =
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category"] ||
     main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category"] ||
@@ -1239,11 +1226,10 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     "";
 
   setValuesToInputFields([
-    // { alias: "siteName", value: siteName },
     { alias: "siteCode", value: siteCode },
     { alias: "featureName", value: featureTypeName },
     { alias: "featureType", value: featureType },
-    { alias: "responsibility", value: 'CHS' },
+    { alias: "responsibility", value: responsibility },
     { alias: "prestige", value: prestige },
   ]);
  
@@ -3260,11 +3246,6 @@ function do_KDF_Custom_esriMap(action, response) {
         }
       }
 
-      if (!isObjEmpty(store_layer_attr.background_attribute)) {
-        setValuesToInputFields([
-          { alias: "responsibility", value: 'CHS' },
-        ]);
-      }
       var parseFeature = parseResult.features[0].attributes;
 
       setValuesToInputFields([
@@ -3272,7 +3253,6 @@ function do_KDF_Custom_esriMap(action, response) {
         { alias: "fullAddress", value: parseFeature['streetname']  },
         { alias: "uprn", value: parseFeature['usrn'] },
         { alias: "siteName", value: parseFeature['streetname'] },
-        // { alias: "siteCode", value: parseFeature['usrn'] },
       ]);
       setSelectedAddress(parseFeature['streetname'], 'show');
       $('.popup').text(parseFeature['streetname']);
