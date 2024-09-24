@@ -1206,13 +1206,13 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
   //   main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
   //   bg.sitename ||
   //   "";
-  // const siteCode =
-  //   main.sitecode ||
-  //   main.usrn ||
-  //   main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
-  //   main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
-  //   bg.sitecode  ||
-  //   "";
+  const siteCode =
+    // main.sitecode ||
+    // main.usrn ||
+    // main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
+    // main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.sitecode"] ||
+    bg.sitecode  ||
+    "";
   const featureTypeName =
     main.featuretypename ||
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_name"] ||
@@ -1240,10 +1240,10 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
 
   setValuesToInputFields([
     // { alias: "siteName", value: siteName },
-    // { alias: "siteCode", value: siteCode },
+    { alias: "siteCode", value: siteCode },
     { alias: "featureName", value: featureTypeName },
     { alias: "featureType", value: featureType },
-    { alias: "responsibility", value: responsibility },
+    // { alias: "responsibility", value: responsibility },
     { alias: "prestige", value: prestige },
   ]);
  
@@ -3272,7 +3272,7 @@ function do_KDF_Custom_esriMap(action, response) {
         { alias: "fullAddress", value: parseFeature['streetname']  },
         { alias: "uprn", value: parseFeature['usrn'] },
         { alias: "siteName", value: parseFeature['streetname'] },
-        { alias: "siteCode", value: parseFeature['usrn'] },
+        // { alias: "siteCode", value: parseFeature['usrn'] },
       ]);
       setSelectedAddress(parseFeature['streetname'], 'show');
       $('.popup').text(parseFeature['streetname']);
