@@ -1243,7 +1243,7 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     { alias: "siteCode", value: siteCode },
     { alias: "featureName", value: featureTypeName },
     { alias: "featureType", value: featureType },
-    // { alias: "responsibility", value: responsibility },
+    { alias: "responsibility", value: 'CHS' },
     { alias: "prestige", value: prestige },
   ]);
  
