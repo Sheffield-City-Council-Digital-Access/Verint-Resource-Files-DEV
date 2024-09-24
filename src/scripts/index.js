@@ -582,6 +582,7 @@ function handleOnReadyEvent(event, kdf) {
   do_KDF_Ready_esriMap();
 
   function handleLocationSelection(acceptGMSites = false) {
+    console.log('handleLocationSelection', acceptGMSites)
     const siteNameSet = !!KDF.getVal('txt_site_name'); // true if site name has a value
     const siteCodeSet = !!KDF.getVal('txt_site_code'); // true if site code has a value
     const validSiteCode = acceptGMSites || KDF.getVal('txt_site_code').startsWith('344'); // valid if acceptGMSites is true or site code starts with '344'
