@@ -190,13 +190,15 @@ const fosterCare = new ContentDaMH(
   { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
+
 // Example instantiation for subjectExample2 (Menu with topics)
 const fosterCare = new MenuDaMH(
   'fosterCare',
   'Foster Care',
   'Description',
   [fosterCare,]
-)
+);
+
 const overnightRespite = new ContentDaMH(
   'overnightRespite',
   'Overnight Respite',
@@ -207,30 +209,16 @@ const overnightRespite = new ContentDaMH(
   { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
+
 // Example instantiation for subjectExample2 (Menu with topics)
 const overnightRespite = new MenuDaMH(
   'overnightRespite',
   'Overnight Respite',
   'Description',
   [overnightRespite,]
-)
-const overnightRespite = new ContentDaMH(
-  'overnightRespite',
-  'Overnight Respite',
-  `<p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>`,
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
-  { date: '24/09/2024', name: 'Dinah Williams' }
+
 );
-// Example instantiation for subjectExample2 (Menu with topics)
-const overnightRespite = new MenuDaMH(
-  'overnightRespite',
-  'Overnight Respite',
-  'Description',
-  [overnightRespite,]
-)
+
 const specialneedsinclusionplaycareServices = new ContentDaMH(
   'specialneedsinclusionplaycareServices',
   'Special Needs Inclusion Playcare Services',
@@ -242,13 +230,15 @@ const specialneedsinclusionplaycareServices = new ContentDaMH(
   { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
+
 // Example instantiation for subjectExample2 (Menu with topics)
 const specialneedsinclusionplaycareServices = new MenuDaMH(
-  'specialneedsinclusionplaycareServices',
+  'specialneedsInclusionplaycareServices',
   'Special Needs Inclusion Playcare Services',
   'Description',
   [specialneedsinclusionplaycareServices,]
-)
+
+);
 const universalClubs = new ContentDaMH(
   'universalClubs',
   'Universal Clubs',
@@ -259,13 +249,15 @@ const universalClubs = new ContentDaMH(
   { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
+
 // Example instantiation for subjectExample2 (Menu with topics)
 const universalClubs = new MenuDaMH(
   'universalClubs',
   'Universal Clubs',
   'Parents will be asked to pay the basic activity cost to the club',
   [universalClubs,]
-)
+);
+
 const affordability = new ContentDaMH(
   'affordability',
   'Affordabiity',
@@ -289,6 +281,7 @@ const ifyourchildcannotattendaSession = new ContentDaMH(
   { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
+
 const waysofPaying = new ContentDaMH(
   'waysofPaying',
   'Ways of paying',
@@ -299,13 +292,15 @@ const waysofPaying = new ContentDaMH(
   { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
+
 const specialistClubs = new MenuDaMH(
   'specialistClubs',
   'Specialist Clubs',
   'For each session that is allocated as part of your package of support the cost to families will be £7.00.  So if your child should attend every Saturday, you will pay £7.00 for every Saturday.</p>',
   'If you have more than one child attending a specialist club your session payment will be a maximum of £10.00.'
   [universalClubs,]
-)
+);
+
 const affordability = new ContentDaMH(
   'affordability',
   'Affordabiity',
@@ -316,6 +311,7 @@ const affordability = new ContentDaMH(
   { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
+
 const ifyourchildcannotattendaSession = new ContentDaMH(
   'ifyourchildcannotattendaSession',
   'If your child cannot attend a session',
@@ -326,6 +322,7 @@ const ifyourchildcannotattendaSession = new ContentDaMH(
   { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
+
 const waysofPaying = new ContentDaMH(
   'waysofPaying',
   'Ways of paying',
@@ -343,5 +340,5 @@ const disabilityAndMentalHealth = new ServiceDaMH(
   "disabilityAndMentalHealth",
   "Disability and Mental Health",
   `Help and support, travel and transport, equipment, children with disabilities, care and carers, mental health services…`,
-  [shortBreakGrants, affordability, ifchildcannotattendaSession, waysofPaying,]
+  [disabilityAndMentalHealth, shortBreakGrants, affordability, ifyourchildcannotattendaSession, waysofPaying,]
 );
