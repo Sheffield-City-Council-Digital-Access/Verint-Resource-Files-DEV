@@ -212,7 +212,7 @@ const revisionsToTheElectoralRegister = new ContentEaR(
 const useOfEmailAddressandPhoneNumber = new ContentEaR(
   "useOfEmailAddressandPhoneNumber",
   "Use Of Email Address and Phone Number",
-  "Will my Email Address or Phone Number be used for anything else?",
+  "Set a discreption",
   `
     <p>
       If you provide an email address or phone number as part of your application,
