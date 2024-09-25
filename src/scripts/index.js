@@ -4086,7 +4086,7 @@ function getCookie(name) {
   const nameEQ = name + "=";
   const ca = document.cookie.split(";");
 
-  const cookies = ca.map((c) => c.trim()); // Trim leading spaces
+  const cookies = ca.map((c) => c.trim());
   const foundCookie = cookies.find((c) => c.startsWith(nameEQ));
 
   return foundCookie
