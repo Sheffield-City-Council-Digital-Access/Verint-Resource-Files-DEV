@@ -164,6 +164,8 @@ const shortBreakGrants = new ContentDaMH(
 const directPayments = new ContentDaMH(
   'directPayments',
   'Direct Payments',
+  
+  'Information about Direct Payments'
   `<p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>`,
   { buttonLabel: '', formName: '' },
   { typeKey: '' },
@@ -175,6 +177,8 @@ const directPayments = new ContentDaMH(
 const fosterCare = new ContentDaMH(
   'fosterCare',
   'Foster Care',
+
+  'Information about Foster Care'
   `<p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>`,
   { buttonLabel: '', formName: '' },
   { typeKey: '' },
@@ -186,6 +190,8 @@ const fosterCare = new ContentDaMH(
 const overnightRespite = new ContentDaMH(
   'overnightRespite',
   'Overnight Respite',
+
+  'Overnight Respite'
   `<p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>`,
   { buttonLabel: '', formName: '' },
   { typeKey: '' },
@@ -197,6 +203,8 @@ const overnightRespite = new ContentDaMH(
 const specialneedsinclusionplaycareServices = new ContentDaMH(
   'specialneedsinclusionplaycareServices',
   'Special Needs Inclusion Playcare Services',
+
+  'Information about Special Needs Inclusion Playcare Services'
   `<p>Mainstream or “universal” clubs usually have a number of children attending, not all with disabilities, and are open to the general public. Targeted or “specialist” clubs are delivered for disabled children only and are not open to the general public.</p>
   <p>If you are unsure please ask the club or contact your SNIPS mentor.</p>`,
   { buttonLabel: '', formName: '' },
@@ -209,6 +217,8 @@ const specialneedsinclusionplaycareServices = new ContentDaMH(
 const universalClubs = new ContentDaMH(
   'universalClubs',
   'Universal Clubs',
+
+  'Information about Universal Clubs'
   `<p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>
   <h3>Affordability</h3>
   <p>If you are in receipt of means tested benefits or your household income is below £21,000.00 you will not have to pay for the actiity cost. Please complete the household income assessment.</p>
@@ -229,6 +239,8 @@ const universalClubs = new ContentDaMH(
 const specialistClubs = new ContentDaMH(
   'specialistClubs',
   'Specialist Clubs',
+
+  'Information about Specialist Clubs'
   `<p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>
   <h3>Affordability</h3>
   <p>If you are in receipt of means tested benefits or your household income is below £21,000.00 you will not have to pay for the actiity cost. Please complete the household income assessment.</p>
