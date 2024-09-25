@@ -164,68 +164,84 @@ const shortBreakGrants = new ContentDaMH(
   { date: "18/09/2024", name: "Dinah WIlliams" }
 );
 const directPayments = new ContentDaMH(
-  'directPayments',
-  'Direct Payments',
-  'Information about Direct Payments'
+  "directPayments",
+  "Direct Payments",
+  "Information about Direct Payments",
   `
     <p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>
   `,
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
-  { date: '24/09/2024', name: 'Dinah Williams' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Disability and Mental Health"],
+  },
+  { date: "24/09/2024", name: "Dinah Williams" }
 );
 
 const fosterCare = new ContentDaMH(
-  'fosterCare',
-  'Foster Care',
-  'Information about Foster Care'
+  "fosterCare",
+  "Foster Care",
+  "Information about Foster Care",
   `
     <p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>
   `,
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
-  { date: '24/09/2024', name: 'Dinah Williams' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Disability and Mental Health"],
+  },
+  { date: "24/09/2024", name: "Dinah Williams" }
 );
 
 const overnightRespite = new ContentDaMH(
-  'overnightRespite',
-  'Overnight Respite',
-  'Overnight Respite'
+  "overnightRespite",
+  "Overnight Respite",
+  "Overnight Respite",
   `
     <p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>
   `,
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
-  { date: '24/09/2024', name: 'Dinah Williams' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Disability and Mental Health"],
+  },
+  { date: "24/09/2024", name: "Dinah Williams" }
 );
 
-const specialneedsinclusionplaycareServices = new ContentDaMH(
-  'specialneedsinclusionplaycareServices',
-  'Special Needs Inclusion Playcare Services',
-  'Information about Special Needs Inclusion Playcare Services'
+const specialNeedsInclusionPlaycareServices = new ContentDaMH(
+  "specialNeedsInclusionPlaycareServices",
+  "Special Needs Inclusion Playcare Services",
+  "Information about Special Needs Inclusion Playcare Services",
   `
     <p>Mainstream or “universal” clubs usually have a number of children attending, not all with disabilities, and are open
     to the general public. Targeted or “specialist” clubs are delivered for disabled children only and are not open to
     the general public.</p>
     <p>If you are unsure please ask the club or contact your SNIPS mentor.</p>  
   `,
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
-  { date: '24/09/2024', name: 'Dinah Williams' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Disability and Mental Health"],
+  },
+  { date: "24/09/2024", name: "Dinah Williams" }
 );
 
 const universalClubs = new ContentDaMH(
-  'universalClubs',
-  'Universal Clubs',
-  'Information about Universal Clubs'
+  "universalClubs",
+  "Universal Clubs",
+  "Information about Universal Clubs",
   `
     <p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>
     <h3>Affordability</h3>
@@ -240,17 +256,21 @@ const universalClubs = new ContentDaMH(
     <h3>Ways of Paying</h3>
     <p>You will pay the club directly.</p>
   `,
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
-  { date: '24/09/2024', name: 'Dinah Williams' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Disability and Mental Health"],
+  },
+  { date: "24/09/2024", name: "Dinah Williams" }
 );
 
 const specialistClubs = new ContentDaMH(
-  'specialistClubs',
-  'Specialist Clubs',
-  'Information about Specialist Clubs'
+  "specialistClubs",
+  "Specialist Clubs",
+  "Information about Specialist Clubs",
   `
     <p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>
     <h3>Affordability</h3>
@@ -262,18 +282,30 @@ const specialistClubs = new ContentDaMH(
     <h3>Ways of Paying</h3>
     <p>You will pay the club directly.</p>
   `,
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
-  { date: '24/09/2024', name: 'Dinah Williams' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Disability and Mental Health"],
+  },
+  { date: "24/09/2024", name: "Dinah Williams" }
 );
 
 const shortBreaks = new MenuDaMH(
-  'shortBreaks',
-  'Short Breaks Services',
-  'Subject Description Example 2',
-  [shortBreakGrants, directPayments, overnightRespite, universalClubs, specialistClubs, fosterCare, specialneedsinclusionplaycareServices]
+  "shortBreaks",
+  "Short Breaks Services",
+  "Subject Description Example 2",
+  [
+    shortBreakGrants,
+    directPayments,
+    overnightRespite,
+    universalClubs,
+    specialistClubs,
+    fosterCare,
+    specialNeedsInclusionPlaycareServices,
+  ]
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
