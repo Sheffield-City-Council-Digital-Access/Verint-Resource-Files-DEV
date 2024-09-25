@@ -906,6 +906,7 @@ const requestproxyVote = new ContentEaR(
 const waiverApplication = new ContentEaR(
   "waiverApplication",
   "Waiver Application",
+  "Set a discreption",
   `
     <p>
       A waiver is used for postal and proxy voting applications when a voter is
