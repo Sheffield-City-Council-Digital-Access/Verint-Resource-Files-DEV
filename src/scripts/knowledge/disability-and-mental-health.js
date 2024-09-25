@@ -172,14 +172,6 @@ const directPayments = new ContentDaMH(
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
 
-// Example instantiation for subjectExample2 (Menu with topics)
-const directPayments = new MenuDaMH(
-  'directPayments',
-  'Direct Payments',
-  'Description',
-  [directPayments,]
-);
-
 const fosterCare = new ContentDaMH(
   'fosterCare',
   'Foster Care',
@@ -189,14 +181,6 @@ const fosterCare = new ContentDaMH(
   { typeKey: '' },
   { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
   { date: '24/09/2024', name: 'Dinah Williams' }
-);
-
-// Example instantiation for subjectExample2 (Menu with topics)
-const fosterCare = new MenuDaMH(
-  'fosterCare',
-  'Foster Care',
-  'Description',
-  [fosterCare,]
 );
 
 const overnightRespite = new ContentDaMH(
@@ -210,20 +194,11 @@ const overnightRespite = new ContentDaMH(
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
 
-// Example instantiation for subjectExample2 (Menu with topics)
-const overnightRespite = new MenuDaMH(
-  'overnightRespite',
-  'Overnight Respite',
-  'Description',
-  [overnightRespite,]
-
-);
-
 const specialneedsinclusionplaycareServices = new ContentDaMH(
   'specialneedsinclusionplaycareServices',
   'Special Needs Inclusion Playcare Services',
-  '<p>Mainstream or “universal” clubs usually have a number of children attending, not all with disabilities, and are open to the general public. Targeted or “specialist” clubs are delivered for disabled children only and are not open to the general public.</p>'
-  '<p>If you are unsure please ask the club or contact your SNIPS mentor.</p>',
+  `<p>Mainstream or “universal” clubs usually have a number of children attending, not all with disabilities, and are open to the general public. Targeted or “specialist” clubs are delivered for disabled children only and are not open to the general public.</p>
+  <p>If you are unsure please ask the club or contact your SNIPS mentor.</p>`,
   { buttonLabel: '', formName: '' },
   { typeKey: '' },
   { typeKey: '' },
@@ -231,18 +206,19 @@ const specialneedsinclusionplaycareServices = new ContentDaMH(
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
 
-// Example instantiation for subjectExample2 (Menu with topics)
-const specialneedsinclusionplaycareServices = new MenuDaMH(
-  'specialneedsInclusionplaycareServices',
-  'Special Needs Inclusion Playcare Services',
-  'Description',
-  [specialneedsinclusionplaycareServices,]
-
-);
 const universalClubs = new ContentDaMH(
   'universalClubs',
   'Universal Clubs',
-  `<p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>`,
+  `<p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>
+  <h3>Affordability</h3>
+  <p>If you are in receipt of means tested benefits or your household income is below £21,000.00 you will not have to pay for the actiity cost. Please complete the household income assessment.</p>
+  <p>If families receive other financial support, some of these might be able to be used to help with these costs.</p>
+  <p>If your child attends a club that you find to expensive to pay on an ongoing basis you may be able to find a lower cost alternative.</p>
+  <h3>If your child cannot attend a session</h3>
+<p>You will still need to pay because the staff are employed for each session to support your child, and so the club still has to pay these costs.</p>
+<h3>Ways of Paying</h3> 
+<p>You will pay the club directly.</p>
+`,
   { buttonLabel: '', formName: '' },
   { typeKey: '' },
   { typeKey: '' },
@@ -250,61 +226,17 @@ const universalClubs = new ContentDaMH(
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
 
-// Example instantiation for subjectExample2 (Menu with topics)
-const universalClubs = new MenuDaMH(
-  'universalClubs',
-  'Universal Clubs',
-  'Parents will be asked to pay the basic activity cost to the club',
-  [universalClubs,]
-);
-
-const affordability = new ContentDaMH(
-  'affordability',
-  'Affordabiity',
-  `<p>If you are in receipt of means tested benefits or your household income is below £21,000.00 you will not have to pay for the actiity cost. Please complete the household income assessment.</p>`,
-  '<p>If families receive other financial support, some of these might be able to be used to help with these costs.</p>'
-  '<p>If your child attends a club that you find to expensive to pay on an ongoing basis you may be able to find a lower cost alternative.</p>'
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
-  { date: '24/09/2024', name: 'Dinah Williams' }
-);
-
-const ifyourchildcannotattendaSession = new ContentDaMH(
-  'ifyourchildcannotattendaSession',
-  'If your child cannot attend a session',
-  `<p>You will still need to pay because the staff are employed for each session to support your child, and so the club still has to pay these costs.</p>`,
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
-  { date: '24/09/2024', name: 'Dinah Williams' }
-);
-
-const waysofPaying = new ContentDaMH(
-  'waysofPaying',
-  'Ways of paying',
-  `<p>You will pay the club directly.</p>`,
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
-  { date: '24/09/2024', name: 'Dinah Williams' }
-);
-
-const specialistClubs = new MenuDaMH(
+const specialistClubs = new ContentDaMH(
   'specialistClubs',
   'Specialist Clubs',
-  'For each session that is allocated as part of your package of support the cost to families will be £7.00.  So if your child should attend every Saturday, you will pay £7.00 for every Saturday.</p>',
-  'If you have more than one child attending a specialist club your session payment will be a maximum of £10.00.'
-  [universalClubs,]
-);
-
-const affordability = new ContentDaMH(
-  'affordability',
-  'Affordabiity',
-  `<p>If you are in receipt of means-tested benefits or your household income is below £21,000.00 you will not have to pay for the actiity cost. Please complete the household income assessment.</p>`,
+  `<p>Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the call is not answered raise a case.</p>
+  <h3>Affordability</h3>
+  <p>If you are in receipt of means tested benefits or your household income is below £21,000.00 you will not have to pay for the actiity cost. Please complete the household income assessment.</p>
+  <h3>If your child cannot attend a session</h3>
+<p>You will still need to pay because the staff are employed for each session to support your child, and so the club still has to pay these costs.</p>
+<h3>Ways of Paying</h3> 
+<p>You will pay the club directly.</p>
+`,
   { buttonLabel: '', formName: '' },
   { typeKey: '' },
   { typeKey: '' },
@@ -312,26 +244,11 @@ const affordability = new ContentDaMH(
   { date: '24/09/2024', name: 'Dinah Williams' }
 );
 
-const ifyourchildcannotattendaSession = new ContentDaMH(
-  'ifyourchildcannotattendaSession',
-  'If your child cannot attend a session',
-  `<p>You will still need to pay because the staff are employed for each session to support your child, and so the club still has to pay these costs.</p>`,
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
-  { date: '24/09/2024', name: 'Dinah Williams' }
-);
-
-const waysofPaying = new ContentDaMH(
-  'waysofPaying',
-  'Ways of paying',
-  `<p>You will pay the club directly.</p>`,
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Request', keywords: [], categories: ['Disability and Mental Health'] },
-  { date: '24/09/2024', name: 'Dinah Williams' }
+const shortBreaks = new MenuDaMH(
+  'shortBreaks',
+  'Short Breaks Services',
+  'Subject Description Example 2',
+  [shortBreakGrants, directPayments, overnightRespite, universalClubs, specialistClubs, fosterCare, specialneedsinclusionplaycareServices]
 );
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -340,5 +257,5 @@ const disabilityAndMentalHealth = new ServiceDaMH(
   "disabilityAndMentalHealth",
   "Disability and Mental Health",
   `Help and support, travel and transport, equipment, children with disabilities, care and carers, mental health services…`,
-  [disabilityAndMentalHealth, shortBreakGrants, affordability, ifyourchildcannotattendaSession, waysofPaying,]
+  [shortBreaks]
 );
