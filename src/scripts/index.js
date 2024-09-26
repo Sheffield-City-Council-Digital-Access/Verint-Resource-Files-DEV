@@ -3127,7 +3127,6 @@ function mapClick(evt) {
           "ahtm_map_location_error",
           "Select a location inside the Sheffield area"
         );
-
         KDF.showWidget("ahtm_map_location_error");
         //clear location information when out of our area
         selectedLocation = "";
