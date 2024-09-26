@@ -3633,7 +3633,7 @@ function initializeAssetLayer(zoomLevel) {
 
   esrimap.add(groupLayer);
   asset_init = true;
-  if (KDF.kdf().access == "agent") {
+  if (KDF.kdf().access == "agent" && KDF.kdf().form.name === "zz_eg_playpen") {
     initLayerList();
   }
 }
