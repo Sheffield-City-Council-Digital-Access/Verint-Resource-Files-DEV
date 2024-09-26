@@ -115,9 +115,9 @@ They may have just moved into a property that has been vacant, have received bit
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
-const enviromentalServices = new ServicePH(
-  "enviromentalServices",
-  "Enviromental Services",
-  `Information regarding enviromental services`,
+const publicHealth = new ServicePH(
+  "publicHealth",
+  "Public Health",
+  `Food safety, hygiene ratings, training, disease, health and wellbeing, immunisation, maternity care, flooding…`,
   [fleaTreatments]
 );
