@@ -45,7 +45,7 @@ class ContentB extends CoreB {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-const whoCanApply = new ContentLaS(
+const whoCanApply = new ContentB(
   "whoCanApply",
   "who Can Apply",
   "Description",
@@ -70,7 +70,7 @@ const whoCanApply = new ContentLaS(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const WhatIsItFor = new ContentLaS(
+const WhatIsItFor = new ContentB(
   "WhatIsItFor",
   "What Is It For",
   "Description",
@@ -97,7 +97,7 @@ const WhatIsItFor = new ContentLaS(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const howDoesTheApplicationProcessWork = new ContentLaS(
+const howDoesTheApplicationProcessWork = new ContentB(
   "howDoesTheApplicationProcessWork",
   "How does the application process work",
   "Description",
@@ -128,7 +128,7 @@ www.sheffield.gov.uk/localassistance"> Local Assistance </a> The form can be fil
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const WhatWillCrisisGrantsBeMadeFor = new ContentLaS(
+const WhatWillCrisisGrantsBeMadeFor = new ContentB(
   "WhatWillCrisisGrantsBeMadeFor",
   "What will Crisis Grants be made for",
   "Description",
@@ -152,7 +152,7 @@ or travel expenses (access to hospital) if there is no other way to prevent a se
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const WhatWillNotCrisisGrantsBeMadeFor = new ContentLaS(
+const WhatWillNotCrisisGrantsBeMadeFor = new ContentB(
   "WhatWillNotCrisisGrantsBeMadeFor",
   "What will Not Crisis Grants be made for",
   "Description",
@@ -189,7 +189,7 @@ const WhatWillNotCrisisGrantsBeMadeFor = new ContentLaS(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const howIsTheDecisionMade = new ContentLaS(
+const howIsTheDecisionMade = new ContentB(
   "howIsTheDecisionMade",
   "How Is The Decision Made",
   "Description",
@@ -212,7 +212,7 @@ const howIsTheDecisionMade = new ContentLaS(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const howWillIBeNotifiedOfTheDecision = new ContentLaS(
+const howWillIBeNotifiedOfTheDecision = new ContentB(
   "howWillIBeNotifiedOfTheDecision",
   "How will i be notified of the decision",
   "Description",
@@ -234,7 +234,7 @@ const howWillIBeNotifiedOfTheDecision = new ContentLaS(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const WhatIfIDisagreeWithTheDecision = new ContentLaS(
+const WhatIfIDisagreeWithTheDecision = new ContentB(
   "WhatIfIDisagreeWithTheDecision",
   "What if i disagree with the decision",
   "Description",
@@ -265,7 +265,7 @@ within one calendar month of the date on the decision notice: </p>
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const howWillIGetMySheffieldCrisisGrant = new ContentLaS(
+const howWillIGetMySheffieldCrisisGrant = new ContentB(
   "WhatIfIDisagreeWithTheDecision",
   "What if i disagree with the decision",
   "Description",
@@ -303,7 +303,7 @@ const howWillIGetMySheffieldCrisisGrant = new ContentLaS(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const fraudulentClaims = new ContentLaS(
+const fraudulentClaims = new ContentB(
   "fraudulentClaims",
   "Fraudulent Claims",
   "Description",
@@ -323,7 +323,7 @@ const fraudulentClaims = new ContentLaS(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const whoCanApplyForIndependenceGrant = new ContentLaS(
+const whoCanApplyForIndependenceGrant = new ContentB(
   "whoCanApplyForIndependenceGrant",
   "Who Can Apply For Independence Grant",
   "Description",
@@ -364,7 +364,7 @@ const whoCanApplyForIndependenceGrant = new ContentLaS(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const WhatIndependanceGrantInformationIsItFor = new ContentLaS(
+const WhatIndependanceGrantInformationIsItFor = new ContentB(
   "wWhatIndependanceGrantInformationIsItFor",
   "What Independance Grant Information Is It For",
   "Description",
@@ -400,7 +400,7 @@ const WhatIndependanceGrantInformationIsItFor = new ContentLaS(
 );
 
 const howDoesTheIndependanceGrantInformationApplicationProcessWork =
-  new ContentLaS(
+  new ContentB(
     "howDoesTheIndependanceGrantInformationApplicationProcessWork",
     "How Does The Independance Grant Information Application Process Work",
     "Description",
@@ -437,7 +437,7 @@ const howDoesTheIndependanceGrantInformationApplicationProcessWork =
     { date: "25/09/2024", name: "George Whitehouse" }
   );
 
-const WhatWillIndepedenceGrantsBeMadeFor = new ContentLaS(
+const WhatWillIndepedenceGrantsBeMadeFor = new ContentB(
   "WhatWillIndepedenceGrantsBeMade",
   "What will Indepedence Grants be made for",
   "Description",
@@ -475,7 +475,7 @@ const WhatWillIndepedenceGrantsBeMadeFor = new ContentLaS(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const WhatWillNotIndepedenceGrantsBeMadeFor = new ContentLaS(
+const WhatWillNotIndepedenceGrantsBeMadeFor = new ContentB(
   "WhatWillIndepedenceGrantsBeMade",
   "What will Indepedence Grants be made for",
   "Description",
@@ -506,7 +506,7 @@ const WhatWillNotIndepedenceGrantsBeMadeFor = new ContentLaS(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const howLongDoesItTakeToGetADecision = new ContentLaS(
+const howLongDoesItTakeToGetADecision = new ContentB(
   "howLongDoesItTakeToGetADecision",
   "How long does it take to get a decision",
   "Description",
@@ -538,7 +538,7 @@ decided whether your financial circumstances merit the provision of assistance. 
 );
 
 const howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation =
-  new ContentLaS(
+  new ContentB(
     "howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation",
     "How will I be notified of the decision For Indepence Grant Information",
     "Description",
@@ -559,7 +559,7 @@ const howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation =
     { date: "25/09/2024", name: "George Whitehouse" }
   );
 
-const whatIfIDisagreeWithTheIndependenceGrantdecision = new ContentLaS(
+const whatIfIDisagreeWithTheIndependenceGrantdecision = new ContentB(
   "whatIfIDisagreeWithTheIndependenceGrantdecision",
   "What if i disagree with the decision the Independence Grant decision",
   "Description",
@@ -589,7 +589,7 @@ within one calendar month of the date on the decision notice: </p>
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const howWillIGetMySheffieldIndependanceGrant = new ContentLaS(
+const howWillIGetMySheffieldIndependanceGrant = new ContentB(
   "howWillIGetMySheffieldIndependanceGrant",
   "How will I get my Sheffield Independance Grant",
   "Description",
@@ -630,7 +630,7 @@ const howWillIGetMySheffieldIndependanceGrant = new ContentLaS(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const fraudulentClaimsForIndependanceGrants = new ContentLaS(
+const fraudulentClaimsForIndependanceGrants = new ContentB(
   "fraudulentClaimsForIndependanceGrants",
   "Fraudulent Claims For Independance Grants",
   "Description",
@@ -652,7 +652,7 @@ const fraudulentClaimsForIndependanceGrants = new ContentLaS(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const generalInformation = new ContentLaS(
+const generalInformation = new ContentB(
   "generalInformation",
   "General Information",
   "Description",
@@ -670,7 +670,7 @@ const generalInformation = new ContentLaS(
   { date: "26/09/2024", name: "George Whitehouse" }
 );
 
-const eligibilityCriteria = new ContentLaS(
+const eligibilityCriteria = new ContentB(
   "eligibilityCriteria",
   "Eligibility Criteria",
   "Description",
@@ -688,7 +688,7 @@ const eligibilityCriteria = new ContentLaS(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const howDoIApply = new ContentLaS(
+const howDoIApply = new ContentB(
   "howDoIApply",
   "How do I apply",
   "Description",
@@ -706,7 +706,7 @@ const howDoIApply = new ContentLaS(
   { date: "26/09/2024", name: "George Whitehouse" }
 );
 
-const otherSupportAvailable = new ContentLaS(
+const otherSupportAvailable = new ContentB(
   "otherSupportAvailable",
   "Other Support Available",
   "Description",
@@ -728,7 +728,7 @@ to discuss whether any support can be given with regards to repayment of Rent or
   { date: "26/09/2024", name: "George Whitehouse" }
 );
 
-const howLongDoesItTakeToGetADecisionForHouseholdSupportFund = new ContentLaS(
+const howLongDoesItTakeToGetADecisionForHouseholdSupportFund = new ContentB(
   "howLongDoesItTakeToGetADecisionForHouseholdSupportFund",
   "What If I Disagree With The Decision For Household Support Fund",
   "Description",
@@ -746,7 +746,7 @@ it will be decided whether your financial circumstances merit the provision of a
   { date: "26/09/2024", name: "George Whitehouse" }
 );
 
-const WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund = new ContentLaS(
+const WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund = new ContentB(
   "WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund",
   "What if I disagree with the decision",
   "Description",
@@ -764,7 +764,7 @@ const WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund = new ContentLaS(
   { date: "26/09/2024", name: "George Whitehouse" }
 );
 
-const howillIGetMyHouseholdSupportFundPayment = new ContentLaS(
+const howillIGetMyHouseholdSupportFundPayment = new ContentB(
   "WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund",
   "How will I get my Household Support Fund payment",
   "Description",
@@ -784,7 +784,7 @@ const howillIGetMyHouseholdSupportFundPayment = new ContentLaS(
   { date: "26/09/2024", name: "George Whitehouse" }
 );
 
-const fraudulentClaimsForHouseholdSupportFund = new ContentLaS(
+const fraudulentClaimsForHouseholdSupportFund = new ContentB(
   "fraudulentClaimsForHouseholdSupportFund",
   "Fraudulent Claims For Household Support Fund",
   "Description",
@@ -803,7 +803,7 @@ const fraudulentClaimsForHouseholdSupportFund = new ContentLaS(
   { date: "26/09/2024", name: "George Whitehouse" }
 );
 
-const crisisGrantInformation = new MenuLaS(
+const crisisGrantInformation = new MenuB(
   "crisisGrantInformation",
   "Crisis Grant Information",
   "Discreption",
@@ -821,7 +821,7 @@ const crisisGrantInformation = new MenuLaS(
   ]
 );
 
-const independanceGrantInformation = new MenuLaS(
+const independanceGrantInformation = new MenuB(
   "independanceGrantInformation",
   "Independance Grant Information",
   "Discreption",
@@ -836,7 +836,7 @@ const independanceGrantInformation = new MenuLaS(
   ]
 );
 
-const householdSupportFund = new MenuLaS(
+const householdSupportFund = new MenuB(
   "householdSupportFund",
   "Household Support Fund",
   "Discreption",
@@ -854,7 +854,7 @@ const householdSupportFund = new MenuLaS(
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
-const localAssistanceScheme = new ServiceLas(
+const localAssistanceScheme = new ServiceB(
   "localAssistanceScheme",
   "Local Assistance Scheme",
   "Information regarding Local Assistance Scheme",
