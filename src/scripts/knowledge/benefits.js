@@ -858,5 +858,5 @@ const benefits = new ServiceB(
   "benefits",
   "Benefits",
   `Housing Benefit, Council Tax Support, budgeting, local assistance grants and loans, benefits calculator, appeals…`,
-  []
+  [crisisGrantInformation, independanceGrantInformation, householdSupportFund]
 );
