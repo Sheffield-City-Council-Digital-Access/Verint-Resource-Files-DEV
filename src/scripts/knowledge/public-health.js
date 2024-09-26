@@ -21,7 +21,17 @@ class MenuPH extends CorePH {
 }
 
 class ContentPH extends CorePH {
-  constructor(id, name, description, content, process, transfer, finish, meta, lastModified) {
+  constructor(
+    id,
+    name,
+    description,
+    content,
+    process,
+    transfer,
+    finish,
+    meta,
+    lastModified
+  ) {
     super(id, name, description);
     this.content = content;
     this.process = process;
@@ -36,19 +46,16 @@ class ContentPH extends CorePH {
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
 //const fleaTreatments = new MenuE( column B menu)
- // 'fleaTreatments',
-  //'Flea Treatments',
-  //'Description',
-  //[column c headings]
+// 'fleaTreatments',
+//'Flea Treatments',
+//'Description',
+//[column c headings]
 //);
 
-
-
-
-const fleaTreatments = new ContentE(
-  'fleaTreatments',
-  'Flea Treatments',
-  'Information regarding Flea Treatments',
+const fleaTreatments = new ContentPH(
+  "fleaTreatments",
+  "Flea Treatments",
+  "Information regarding Flea Treatments",
   `
    <h2>Flea Treatments</h2>
 
@@ -72,32 +79,45 @@ They may have just moved into a property that has been vacant, have received bit
  Also, we could suggest monitoring their property to determine if there is a flea problem, then offer a treatment if fleas are found on the traps.</p>
 
   `,
-  { buttonLabel: '', formName: ''},
-  { typeKey: 'flea_Treatments_transfered_to_service' },
-  { typeKey: 'flea_Treatments_information_provided' },
+  { buttonLabel: "", formName: "" },
+  { typeKey: "flea_Treatments_transfered_to_service" },
+  { typeKey: "flea_Treatments_information_provided" },
   {
-    type: 'Information',
+    type: "Information",
     keywords: [
-      'flea treatments','flea treatmets', 'flea tretments', 'fleaa treatments', 'flea teatments', 'flea treetments','fle', 'fleea', 'fllea', 'fea', 'flae','treatmnts', 'tretments', 'treatmets', 'treatmants', 'treatmens',
-'treatmant', 'tretment', 'treatmint', 'treatmen', 'treatmnet'
-      
-   
+      "flea treatments",
+      "flea treatmets",
+      "flea tretments",
+      "fleaa treatments",
+      "flea teatments",
+      "flea treetments",
+      "fle",
+      "fleea",
+      "fllea",
+      "fea",
+      "flae",
+      "treatmnts",
+      "tretments",
+      "treatmets",
+      "treatmants",
+      "treatmens",
+      "treatmant",
+      "tretment",
+      "treatmint",
+      "treatmen",
+      "treatmnet",
     ],
-    categories: ['public health',],
+    categories: ["public health"],
   },
-  { date: '25/09/2024', name: 'Gee Whitehouse' }
+  { date: "25/09/2024", name: "Gee Whitehouse" }
 );
-
-
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
-const enviromentalServices = new ServiceE( // First Menu regarding the service first tile under service
-  'enviromentalServices',
-  'Enviromental Services',
+const enviromentalServices = new ServicePH(
+  "enviromentalServices",
+  "Enviromental Services",
   `Information regarding enviromental services`,
   [fleaTreatments]
 );
-
-

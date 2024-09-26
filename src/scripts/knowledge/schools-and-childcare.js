@@ -45,7 +45,7 @@ class ContentSaC extends CoreSaC {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-const fundedEarlyLearning = new ContentFeL(
+const fundedEarlyLearning = new ContentSaC(
   "fundedEarlyLearning",
   "Funded Early Learning",
   "Funded Early Learning",
@@ -104,7 +104,7 @@ For information about the new 2-year-old extended working entitlement (15 hours 
   { date: "17/09/2024", name: "Gee Whitehouse" }
 );
 
-const freeSchoolMeals = new ContentFeL(
+const freeSchoolMeals = new ContentSaC(
   "freeSchoolMeals",
   "Free School Meals",
   "Apply Free School Meals",
@@ -256,5 +256,5 @@ const schoolsAndChildcare = new ServiceSaC(
   "schoolsAndChildcare",
   "Schools and Childcare",
   `Admissions, catchment areas, find schools, school travel, attendance, childcare and nurseries, teaching jobs…`,
-  [freeSchoolMeals,fundedEarlyLearning]
+  [freeSchoolMeals, fundedEarlyLearning]
 );
