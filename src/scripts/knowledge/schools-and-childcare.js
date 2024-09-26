@@ -51,12 +51,19 @@ const fundedEarlyLearning = new ContentSaC(
   "Funded Early Learning",
   `
   <h2>Funded Early Learning</h2>
+
     <p>From April 2024, eligible working parents of 2-year-olds can access 15 hours childcare support. By September 2025, eligible working families with children aged between 9 months and 5 years old will be entitled to 30 hours of childcare support. <p>
+
     <p>The changes are being introduced gradually to make sure that providers can meet the needs of more families. This means that: <p/>
+
     <p>From September 2025, eligible working parents of children from 9 months to school age will be entitled to 30 hours of childcare a week. </p>
+
     <p>Like the existing offer, depending on your provider, these hours can be used over 38 weeks of the year, or up to 52 weeks if you use fewer than your total hours per week. </p
+
     <p>All eligible children are entitled to at least 570 hours of funded childcare each year. </p>
+
     <p>FEL helps children learn through play activities. Some benefits that parents have seen; </p>
+
  <ul>
     <li> children making friends their own age </li>
     <li>children behaving better with grown-ups</li>
@@ -65,10 +72,14 @@ const fundedEarlyLearning = new ContentSaC(
     <li>children are more willing to try new foods which improves their nutrition</li>
     <li>younger children improving their sleeping patterns and toilet training</li>
 </ul>
+
     <p>The funded hours also help parents and carers access employment and training, spend time with their younger children or just find time to get things done. </p>
+
     <p>The hours must be taken over a minimum of 38 weeks (15 hours a week, or 30 if entitled to additional hours) but can be taken over more weeks: for example, your child could take 12 hours a week for 47½ weeks. Talk to your childcare provider about what options are available. For Funded Early Learning enquiries and more information on the Family Hubs for Families, please contact the Family Hubs - 0114 273 5665. </p>
-    <p>
-For information about the new 2-year-old extended working entitlement (15 hours offer starts April 2024, from 9 months old from September 2024) please visit the childcare choices page, there is an assessment tool offering families details of childcare support they might be eligible for and a link to apply to HMRC. <a href="www.childcarechoices.gov.uk> HMRC </a> From September 2025 </p>
+
+    
+    <p>For information about the new 2-year-old extended working entitlement (15 hours offer starts April 2024, from 9 months old from September 2024) please visit the childcare choices page, there is an assessment tool offering families details of childcare support they might be eligible for and a link to apply to HMRC. <a href="www.childcarechoices.gov.uk> HMRC </a> From September 2025 </p>
+
     <p>Eligible working parents of children from 9 months to school age will be entitled to 30 hours of childcare a week. </p>
   `,
   { buttonLabel: "Funded Early Learning", formName: "" },
