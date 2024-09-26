@@ -854,9 +854,9 @@ const householdSupportFund = new MenuB(
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
-const localAssistanceScheme = new ServiceB(
-  "localAssistanceScheme",
-  "Local Assistance Scheme",
-  "Information regarding Local Assistance Scheme",
-  [crisisGrantInformation, independanceGrantInformation, householdSupportFund]
+const benefits = new ServiceB(
+  "benefits",
+  "Benefits",
+  `Housing Benefit, Council Tax Support, budgeting, local assistance grants and loans, benefits calculator, appeals…`,
+  []
 );
