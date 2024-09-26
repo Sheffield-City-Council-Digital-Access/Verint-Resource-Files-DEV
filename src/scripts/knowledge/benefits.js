@@ -21,7 +21,17 @@ class MenuB extends CoreB {
 }
 
 class ContentB extends CoreB {
-  constructor(id, name, description, content, process, transfer, finish, meta, lastModified) {
+  constructor(
+    id,
+    name,
+    description,
+    content,
+    process,
+    transfer,
+    finish,
+    meta,
+    lastModified
+  ) {
     super(id, name, description);
     this.content = content;
     this.process = process;
@@ -36,58 +46,65 @@ class ContentB extends CoreB {
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
 const whoCanApply = new ContentLaS(
-  'whoCanApply',
-  'who Can Apply',
-  'Description',
+  "whoCanApply",
+  "who Can Apply",
+  "Description",
   `<h3>Who can apply</h3>
-    <p>You may be able to get a Local Assistance Loan if: You are a Sheffield resident and are getting one of the qualifying benefits listed below or are assessed to have insufficient income to meet your needs: <p>
+    <p>You may be able to get a Local Assistance Loan if: 
+    You are a Sheffield resident and are getting one of the qualifying benefits listed below or are assessed to have insufficient income to meet your needs: <p>
   <ul>
     <il>Universal Credit</il>
     <il>Income Support</il>
     <il>Income-based Jobseekers Allowance</il>
   </ul>
-    <p>Income-related Employment and Support Allowance Any type of Pension Credit, and You need help because of an emergency or disaster and the health and safety of you or a member of your family will be at serious risk if you do not get any money If you are not receiving a qualifying benefit, you will need to provide bank statements for the last 3 months in order for us to consider your application. These can be provided in person, by post or via email. </p>
-    <p>If you do not provide these bank statements within the processing time-scale of your application, it will be rejected.  You haven't been awarded two Sheffield Crisis Grants in any 12 month period, regardless of any change in circumstances. </p>`,
+    <p>Income-related Employment and Support Allowance Any type of Pension Credit, and You need help because of an emergency or disaster and 
+    the health and safety of you or a member of your family will be at serious risk if you do not get any money If you are not receiving a qualifying benefit, 
+    you will need to provide bank statements for the last 3 months in order for us to consider your application. These can be provided in person, by post or via email. </p>
+    <p>If you do not provide these bank statements within the processing time-scale of your application, it will be rejected.  
+    You haven't been awarded two Sheffield Crisis Grants in any 12 month period, regardless of any change in circumstances. </p>`,
 
-    
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Information', keywords: [], categories: ['benefits'] },
-  { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
 const WhatIsItFor = new ContentLaS(
-  'WhatIsItFor',
-  'What Is It For',
-  'Description',
+  "WhatIsItFor",
+  "What Is It For",
+  "Description",
   `<h3>What Is It For</h3>
-    <p>Sheffield Crisis Grants are to help people who do not have enough money to meet their short term needs because of an emergency or disaster. They are used to prevent serious risk to the health and safety of an individual or a family member residing with them. </p>
+    <p>Sheffield Crisis Grants are to help people who do not have enough money to meet their short term needs because of an emergency or disaster.
+     They are used to prevent serious risk to the health and safety of an individual or a family member residing with them. </p>
 
     <p>An emergency means an unforeseen event or situation resulting in needs that must be met urgently (for example theft). </p>
 
-    <p>A disaster is an event of sudden and great misfortune (for example a major fire, flood or gas explosion). Less serious situations such as a small fire in one room or a leak from a washing machine do not qualify as a disaster. </p>
+    <p>A disaster is an event of sudden and great misfortune (for example a major fire, flood or gas explosion). 
+    Less serious situations such as a small fire in one room or a leak from a washing machine do not qualify as a disaster. </p>
 
-    <p>Sheffield Crisis Grants cannot be used to help with financial hardship which is not the direct result of an emergency or disaster (for example a reduction in benefits). </p>
+    <p>Sheffield Crisis Grants cannot be used to help with financial hardship which is not the direct result of an emergency or disaster 
+    (for example a reduction in benefits). </p>
 
     <p>Sheffield Crisis Grant awards do not need to be paid back. </p>
     
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
 const howDoesTheApplicationProcessWork = new ContentLaS(
-  'howDoesTheApplicationProcessWork',
-  'How does the application process work',
-  'Description',
+  "howDoesTheApplicationProcessWork",
+  "How does the application process work",
+  "Description",
   `<h3>How does the application process work</h3>
      <p>Applications for Sheffield Crisis Grants can be made by filling in our online form <a href="
-www.sheffield.gov.uk/localassistance"> Local Assistance </a> The form can be filled in on a computer or mobile device. If you apply online you will be able to save your application and return to it later if you are missing any information. </p>
+www.sheffield.gov.uk/localassistance"> Local Assistance </a> The form can be filled in on a computer or mobile device. If you apply online you will be able to save
+ your application and return to it later if you are missing any information. </p>
 
     <p>If you do not have internet access at home, you can use the internet for free at your local library or at any First Point sites. </p>
 
@@ -99,43 +116,46 @@ www.sheffield.gov.uk/localassistance"> Local Assistance </a> The form can be fil
 
     <p>Some of the information you provide (for example the benefits you receive) will be checked before a decision can be made. </p>
 
-    <p>If you are applying by telephone you will need to make sure you have this information ready before you make the call. If you apply online you will be able to save your application and return to it later if you are missing any information. </p>
+    <p>If you are applying by telephone you will need to make sure you have this information ready before you make the call. If you apply online you will be able to 
+    save your application and return to it later if you are missing any information. </p>
     
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
 const WhatWillCrisisGrantsBeMadeFor = new ContentLaS(
-  'WhatWillCrisisGrantsBeMadeFor',
-  'What will Crisis Grants be made for',
-  'Description',
+  "WhatWillCrisisGrantsBeMadeFor",
+  "What will Crisis Grants be made for",
+  "Description",
   `<h3>What will Crisis Grants be made for</h3>
 
       <p>Sheffield Crisis Grants are generally awarded to cover day to day living expenses (food, groceries, nappies, money for pay as you go fuel meters). </p>
 
-    <p>In some situations a Sheffield Crisis Grant could also be used to help with accommodation costs (rent in advance for privately rented properties, board and lodging or hostel charges)
+    <p>In some situations a Sheffield Crisis Grant could also be used to help with accommodation costs (rent in advance for privately rented properties, 
+    board and lodging or hostel charges)
 or travel expenses (access to hospital) if there is no other way to prevent a serious health and safety risk to you or your family. </p>
 
-    <p>In the event of a disaster a Sheffield Crisis Grant could be used to help with items or services other than day to day living expenses (for example clothing, household items or travel expenses to enable you to return home if you are stranded outside Sheffield as the result of a disaster). </p>
+    <p>In the event of a disaster a Sheffield Crisis Grant could be used to help with items or services other than day to day living expenses (for example clothing, 
+    household items or travel expenses to enable you to return home if you are stranded outside Sheffield as the result of a disaster). </p>
 
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
 const WhatWillNotCrisisGrantsBeMadeFor = new ContentLaS(
-  'WhatWillNotCrisisGrantsBeMadeFor',
-  'What will Not Crisis Grants be made for',
-  'Description',
+  "WhatWillNotCrisisGrantsBeMadeFor",
+  "What will Not Crisis Grants be made for",
+  "Description",
   `
 <h3>What will Not Crisis Grants be made for</h3>
  <p>It is not intended that a Sheffield Crisis Grant will be awarded to help with any of the following expenses: </p>
@@ -156,66 +176,73 @@ const WhatWillNotCrisisGrantsBeMadeFor = new ContentLaS(
     <li>Maternity and Funeral Expenses</li>
   </ul>
 
-    <p>Accommodation charges including meals and services. If an application is made for payment in advance to secure accommodation and the accommodation charge includes meals and / or services then the award will be made to cover the accommodation charge only. </p>
+    <p>Accommodation charges including meals and services. 
+    If an application is made for payment in advance to secure accommodation and the accommodation charge includes meals and / or services then the award 
+    will be made to cover the accommodation charge only. </p>
 
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
 const howIsTheDecisionMade = new ContentLaS(
-  'howIsTheDecisionMade',
-  'How Is The Decision Made',
-  'Description',
+  "howIsTheDecisionMade",
+  "How Is The Decision Made",
+  "Description",
   `
 <h3>How Is The Decision Made</h3>
 
- <p>A council officer will look at all the information on your application before deciding if we can make a payment. You may be awarded less than the amount you have asked for. </p>
+ <p>A council officer will look at all the information on your application before deciding if we can make a payment. 
+ You may be awarded less than the amount you have asked for. </p>
 
-    <p>There is only a limited amount of money available for Sheffield Crisis Grants so we cannot make a payment in every case. The decision maker has to meet priority needs first. </p>
+    <p>There is only a limited amount of money available for Sheffield Crisis Grants so we cannot make a payment in every case. 
+    The decision maker has to meet priority needs first. </p>
 
 
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
 const howWillIBeNotifiedOfTheDecision = new ContentLaS(
-  'howWillIBeNotifiedOfTheDecision',
-  'How will i be notified of the decision',
-  'Description',
+  "howWillIBeNotifiedOfTheDecision",
+  "How will i be notified of the decision",
+  "Description",
   `
 <h3>How will i be notified of the decision</h3>
 
- <p>A council officer will look at all the information on your application before deciding if we can make a payment. You may be awarded less than the amount you have asked for. </p>
+ <p>A council officer will look at all the information on your application before deciding if we can make a payment. 
+ You may be awarded less than the amount you have asked for. </p>
 
-    <p>There is only a limited amount of money available for Sheffield Crisis Grants so we cannot make a payment in every case. The decision maker has to meet priority needs first. </p>
+    <p>There is only a limited amount of money available for Sheffield Crisis Grants so we cannot make a payment in every case. 
+    The decision maker has to meet priority needs first. </p>
 
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
 const WhatIfIDisagreeWithTheDecision = new ContentLaS(
-  'WhatIfIDisagreeWithTheDecision',
-  'What if i disagree with the decision',
-  'Description',
+  "WhatIfIDisagreeWithTheDecision",
+  "What if i disagree with the decision",
+  "Description",
   `
 <h3>What if i disagree with the decision</h3>
 
-<p>If you are unhappy with the outcome of your application, you may request a review of the decision. Review requests should be submitted in writing by post or email, within one calendar month of the date on the decision notice: </p>
+<p>If you are unhappy with the outcome of your application, you may request a review of the decision. Review requests should be submitted in writing by post or email, 
+within one calendar month of the date on the decision notice: </p>
 
     <p>FAO Local Assistance Scheme<br> 
     3rd Floor<br> 
@@ -231,29 +258,32 @@ const WhatIfIDisagreeWithTheDecision = new ContentLaS(
 
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
 const howWillIGetMySheffieldCrisisGrant = new ContentLaS(
-  'WhatIfIDisagreeWithTheDecision',
-  'What if i disagree with the decision',
-  'Description',
+  "WhatIfIDisagreeWithTheDecision",
+  "What if i disagree with the decision",
+  "Description",
   `
 <h3>How will i get my Sheffield Crisis Grant</h3>
 
  <p>
-    Sheffield Crisis Grants will be administered by the Cashiers service based in Howden House. You will be advised of the payment process and required identification documents by the advisor or officer who has processed your application. </p>
+    Sheffield Crisis Grants will be administered by the Cashiers service based in Howden House. You will be advised of the payment process 
+    and required identification documents by the advisor or officer who has processed your application. </p>
 
 
     <p>
     The first exception to this is for Rent in Advance awards, which will be made directly to the landlord or letting agent via BACS transfer. </p>
 
 
-    <p> The second exception to this is for Household Goods (except for ovens and washing machines for non-Council tenants) awarded in Disaster situations, which will be delivered through the Furnished Accommodation team within the Council. If an award is made for a Washing Machine or either a Gas or Electric Oven and you do not live in a Council tenancy, a payment will be made via Cashiers instead. </p>
+    <p> The second exception to this is for Household Goods (except for ovens and washing machines for non-Council tenants) awarded in Disaster situations, 
+    which will be delivered through the Furnished Accommodation team within the Council. 
+    If an award is made for a Washing Machine or either a Gas or Electric Oven and you do not live in a Council tenancy, a payment will be made via Cashiers instead. </p>
   <ul>
     <li>I.D. for Cashiers</li>
     <li>One of the Following Or one of the following Plus one of the following</li>
@@ -266,35 +296,37 @@ const howWillIGetMySheffieldCrisisGrant = new ContentLaS(
 
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
 const fraudulentClaims = new ContentLaS(
-  'fraudulentClaims',
-  'Fraudulent Claims',
-  'Description',
+  "fraudulentClaims",
+  "Fraudulent Claims",
+  "Description",
   `
 <h3>Fraudulent Claims</h3>
 
- <p>The Council, to ensure that limited resources are most effectively used to meet need, is committed to taking action against fraudulent claims for assistance. Where the Council is satisfied that the Applicant has made a fraudulent claim, for example by falsely declaring their circumstances, providing a false statement or evidence in support of their application, it will take appropriate action, including prosecution. </p>
+ <p>The Council, to ensure that limited resources are most effectively used to meet need, is committed to taking action against fraudulent claims for assistance. 
+ Where the Council is satisfied that the Applicant has made a fraudulent claim, for example by falsely declaring their circumstances, providing a false statement 
+ or evidence in support of their application, it will take appropriate action, including prosecution. </p>
 
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
 const whoCanApplyForIndependenceGrant = new ContentLaS(
-  'whoCanApplyForIndependenceGrant',
-  'Who Can Apply For Independence Grant',
-  'Description',
+  "whoCanApplyForIndependenceGrant",
+  "Who Can Apply For Independence Grant",
+  "Description",
   `<h3>Who can apply</h3>
     
   
@@ -317,27 +349,25 @@ const whoCanApplyForIndependenceGrant = new ContentLaS(
     You cannot meet the cost by any other means</li>
   <ul>
     <p>
-    If you are not receiving qualifying benefit, you will need to provide bank statements for the last 3 months in order for us to consider your application. These can be provided in person, by post or via email. </p>
+    If you are not receiving qualifying benefit, you will need to provide bank statements for the last 3 months in order for us to consider your application. 
+    These can be provided in person, by post or via email. </p>
 
     <p>If you do not provide these bank statements within the processing time-scale of your application, it will be rejected. </p>
 
     <p>You can only be awarded one Sheffield Independence Grant in a rolling 12 month period, regardless of any change in circumstances. </p>
 
-  `
-     ,
-
-    
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Information', keywords: [], categories: ['benefits'] },
-  { date: '25/09/2024', name: 'George Whitehouse' }
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
 const WhatIndependanceGrantInformationIsItFor = new ContentLaS(
-  'wWhatIndependanceGrantInformationIsItFor',
-  'What Independance Grant Information Is It For',
-  'Description',
+  "wWhatIndependanceGrantInformationIsItFor",
+  "What Independance Grant Information Is It For",
+  "Description",
   `<h3>What is it for</h3>
     
   <p>Sheffield Independence Grants are to support independent living in the community. A Sheffield Independence Grant can help: </p>
@@ -357,23 +387,24 @@ const WhatIndependanceGrantInformationIsItFor = new ContentLaS(
     <li>Sheffield Independence Grants do not have to be paid back. </li>
   </ul>
 
-    <p>*All individuals and families on low income face pressures. Exceptional pressure means a situation which causes additional pressure on an individual or family. Examples of this could be a relationship breakdown, having to cope with new health problems or existing health problems suddenly getting worse. </p>
+    <p>*All individuals and families on low income face pressures. Exceptional pressure means a situation which causes additional pressure on an individual or family. 
+    Examples of this could be a relationship breakdown, having to cope with new health problems or existing health problems suddenly getting worse. </p>
   
   `,
 
-    
-  { buttonLabel: '', formName: '' },
-  { typeKey: '' },
-  { typeKey: '' },
-  { type: 'Information', keywords: [], categories: ['benefits'] },
-  { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const howDoesTheIndependanceGrantInformationApplicationProcessWork = new ContentLaS(
-  'howDoesTheIndependanceGrantInformationApplicationProcessWork',
-  'How Does The Independance Grant Information Application Process Work',
-  'Description',
-  `
+const howDoesTheIndependanceGrantInformationApplicationProcessWork =
+  new ContentLaS(
+    "howDoesTheIndependanceGrantInformationApplicationProcessWork",
+    "How Does The Independance Grant Information Application Process Work",
+    "Description",
+    `
 <h3>How does the application process work</h3>
 
 
@@ -391,30 +422,31 @@ const howDoesTheIndependanceGrantInformationApplicationProcessWork = new Content
 
     <li>Assisted Self Service. If you have a key worker they will be able to advise you on the process and help you with your application. </li>
 
-    <li>A key worker is someone who is providing you with professional support. Examples of key workers are Social Workers, Tenancy Support Workers, Housing Support Workers, Mental Health Workers, Probation Officers, Drug & Alcohol Support Workers (these are examples only – not an exhaustive list). </li>
+    <li>A key worker is someone who is providing you with professional support. Examples of key workers are Social Workers, Tenancy Support Workers, 
+    Housing Support Workers, Mental Health Workers, Probation Officers, Drug & Alcohol Support Workers (these are examples only – not an exhaustive list). </li>
 
     <li>If you have no support and are not able to access the internet (for example because you are in hospital), you can request a paper form. </li>
   </ul>
 
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
-);
-
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    { type: "Information", keywords: [], categories: ["benefits"] },
+    { date: "25/09/2024", name: "George Whitehouse" }
+  );
 
 const WhatWillIndepedenceGrantsBeMadeFor = new ContentLaS(
-  'WhatWillIndepedenceGrantsBeMade',
-  'What will Indepedence Grants be made for',
-  'Description',
+  "WhatWillIndepedenceGrantsBeMade",
+  "What will Indepedence Grants be made for",
+  "Description",
   `
 <h3>What will Indepedence Grants be made for</h3>
 
  <p>It is not intended that a Sheffield Crisis Grant will be awarded to help with any of the following expenses: </p>
-    <p>Sheffield Independence Grants are generally awarded to help buy household items such as white goods (for example fridges, ovens and washing machines), essential cooking equipment, seating, carpets, curtains, beds and bedding. </p>
+    <p>Sheffield Independence Grants are generally awarded to help buy household items such as white goods (for example fridges, ovens and washing machines), 
+    essential cooking equipment, seating, carpets, curtains, beds and bedding. </p>
     <p>
     Under some circumstances a Sheffield Independence Grant could also be awarded to help with:
     </p>
@@ -426,7 +458,8 @@ const WhatWillIndepedenceGrantsBeMadeFor = new ContentLaS(
     <li>Travel expenses to hospital for appointments</li>
     <li>Certain other travel expenses (including an overnight stay if this is essential) as described in the  “What is it for?” section (above) Travel expenses</li>
     <li>Clothing</li>
-    <li>We will not pay for items provided in furnished tenancies by your landlord. If you are a tenant, your landlord is responsible for repairs and maintenance of items they have provided. </li>
+    <li>We will not pay for items provided in furnished tenancies by your landlord. If you are a tenant, your landlord is responsible for repairs and maintenance 
+    of items they have provided. </li>
     <li>Please check with them and your tenancy agreement first as we will not be able to pay for items your landlord is responsible for. </li>
     <li>If you are a council tenant, you can contact the Council Housing Service. </li>
     <li>If you are unsure about your rights as a tenant, you can contact Housing Aid. </li>
@@ -435,17 +468,17 @@ const WhatWillIndepedenceGrantsBeMadeFor = new ContentLaS(
 
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
 const WhatWillNotIndepedenceGrantsBeMadeFor = new ContentLaS(
-  'WhatWillIndepedenceGrantsBeMade',
-  'What will Indepedence Grants be made for',
-  'Description',
+  "WhatWillIndepedenceGrantsBeMade",
+  "What will Indepedence Grants be made for",
+  "Description",
   `
 <h3>What will not Indepedence Grants be made for</h3>
 
@@ -453,78 +486,88 @@ const WhatWillNotIndepedenceGrantsBeMadeFor = new ContentLaS(
     <li>The cost of buying, renting or installing a telephone or any call charges. </li>
     <li>The cost of fuel consumption and any associated standing charges (gas or electricity bills). </li>
     <li>Council tax or water charges or arrears. </li>
-    <li>Any housing costs, including repairs or improvements to your home (unless very minor), deposits to secure accommodation, rent, mortgage payments, service costs and all other charges for accommodation (whether or not that charge includes payment for meals and/or services). </li>
+    <li>Any housing costs, including repairs or improvements to your home (unless very minor), deposits to secure accommodation, rent, mortgage payments, 
+    service costs and all other charges for accommodation (whether or not that charge includes payment for meals and/or services). </li>
     <li>Any item or service which the Local Authority has a statutory duty to provide. </li>
     <li>Maternity or Funeral expenses. </li>
     <li>Rent in advance for people leaving care. </li>
-    <li>Daily living expenses such as food and groceries unless these are additional expenses because you or your partner are looking after a prisoner or young offender on temporary licence. </li>
+    <li>Daily living expenses such as food and groceries unless these are additional expenses because you or your partner are looking after a prisoner 
+    or young offender on temporary licence. </li>
     <li>This list is not exhaustive. </li>
   </ul>
 
 
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
 const howLongDoesItTakeToGetADecision = new ContentLaS(
-  'howLongDoesItTakeToGetADecision',
-  'How long does it take to get a decision',
-  'Description',
+  "howLongDoesItTakeToGetADecision",
+  "How long does it take to get a decision",
+  "Description",
   `
 <h3>How long does it take to get a decision</h3>
 
-<p>A decision will be made about your Sheffield Independence Grant within 15 working days of us receiving a fully completed application, it will be decided whether your financial circumstances merit the provision of assistance. </p>
+<p>A decision will be made about your Sheffield Independence Grant within 15 working days of us receiving a fully completed application, it will be 
+decided whether your financial circumstances merit the provision of assistance. </p>
 
     <p>When deciding whether to award a Sheffield Independence Grant, we need to take into account how much money is left in the budget. </p>
 
-    <p>Where a Sheffield Independence Grant is awarded, it will be paid to help you meet identified needs that reflect the aims of the scheme (as explained in the “What is it for?” section). </p>
+    <p>Where a Sheffield Independence Grant is awarded, it will be paid to help you meet identified needs that reflect the aims of the scheme
+     (as explained in the “What is it for?” section). </p>
 
     <p>We will take in to account any savings you have in deciding how much you will be awarded. </p>
 
-    <p>The council officer may contact other people who have been working with you (for example a social worker or tenancy support worker) to help them make the right decision. You will be asked to give permission for them to do this in your application. </p>
+    <p>The council officer may contact other people who have been working with you 
+    (for example a social worker or tenancy support worker) to help them make the right decision. 
+    You will be asked to give permission for them to do this in your application. </p>
 
 
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
-const howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation = new ContentLaS(
-  'howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation',
-  'How will I be notified of the decision For Indepence Grant Information',
-  'Description',
-  `
+const howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation =
+  new ContentLaS(
+    "howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation",
+    "How will I be notified of the decision For Indepence Grant Information",
+    "Description",
+    `
 <h3>How will i be notified of the decision</h3>
 
- <p>If you have provided us with an email address, written confirmation of the decision will be sent to you by email. If you do not have an email address, the decision notice will be sent to your home address by second class post. </p>
+ <p>If you have provided us with an email address, written confirmation of the decision will be sent to you by email.
+  If you do not have an email address, 
+ the decision notice will be sent to your home address by second class post. </p>
 
 
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
-);
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    { type: "Information", keywords: [], categories: ["benefits"] },
+    { date: "25/09/2024", name: "George Whitehouse" }
+  );
 
 const whatIfIDisagreeWithTheIndependenceGrantdecision = new ContentLaS(
-  'whatIfIDisagreeWithTheIndependenceGrantdecision',
-  'What if i disagree with the decision the Independence Grant decision',
-  'Description',
+  "whatIfIDisagreeWithTheIndependenceGrantdecision",
+  "What if i disagree with the decision the Independence Grant decision",
+  "Description",
   `
 <h3>What if i disagree with the decision</h3>
 
-<p>If you are unhappy with the outcome of your application, you may request a review of the decision. Review requests should be submitted in writing by post or email, within one calendar month of the date on the decision notice: </p>
+<p>If you are unhappy with the outcome of your application, you may request a review of the decision. Review requests should be submitted in writing by post or email, 
+within one calendar month of the date on the decision notice: </p>
     <p>
     FAO Local Assistance Scheme<br>
     3rd Floor<br>
@@ -539,27 +582,31 @@ const whatIfIDisagreeWithTheIndependenceGrantdecision = new ContentLaS(
 
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
 const howWillIGetMySheffieldIndependanceGrant = new ContentLaS(
-  'howWillIGetMySheffieldIndependanceGrant',
-  'How will I get my Sheffield Independance Grant',
-  'Description',
+  "howWillIGetMySheffieldIndependanceGrant",
+  "How will I get my Sheffield Independance Grant",
+  "Description",
   `
 <h3>How will I get my Sheffield Independance Grant</h3>
 
- <p>Household goods (except for ovens and washing machines for non-Council tenants) will be delivered through the Furnished Accommodation team within the Council. If an award is made for a Washing Machine or either a Gas or Electric Oven and you do not live in a Council tenancy, a payment will be made via BACS directly into your bank account instead. </p>
+ <p>Household goods (except for ovens and washing machines for non-Council tenants) will be delivered through the Furnished Accommodation team within the Council. 
+ If an award is made for a Washing Machine or either a Gas or Electric Oven and you do not live in a Council tenancy, a payment will be made via BACS directly into 
+ your bank account instead. </p>
 
     <p>Please note that the Furnished Accommodation team are not responsible for the maintenance or repair of any items delivered on behalf of the Local Assistance Scheme. </p>
 
-    <p>Travel awards will be issued as advance tickets for buses and trams through the Cashiers service in Howden House or arrangements will be made by the back office team for trains and taxis. Awards for removals will still be issued as cash but will be sent directly to the removal company. </p>
+    <p>Travel awards will be issued as advance tickets for buses and trams through the Cashiers service in Howden House or arrangements will be made by the back office team
+     for trains and taxis. Awards for removals will still be issued as cash but will be sent directly to the removal company. </p>
 
-    <p>Sheffield Independence Grants must be used to pay for the items we have agreed to fund and you should keep receipts as proof of purchase. We may contact you to provide these. </p>
+    <p>Sheffield Independence Grants must be used to pay for the items we have agreed to fund and you should keep receipts as proof of purchase. We may contact you to 
+    provide these. </p>
 
     <p>Sheffield Independence Grants do not need to be paid back.
     I.D. for Cashiers</p>
@@ -576,158 +623,240 @@ const howWillIGetMySheffieldIndependanceGrant = new ContentLaS(
 
     `,
 
-    { buttonLabel: '', formName: '' },
-    { typeKey: '' },
-    { typeKey: '' },
-    { type: 'Information', keywords: [], categories: ['benefits'] },
-    { date: '25/09/2024', name: 'George Whitehouse' }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
 );
 
+const fraudulentClaimsForIndependanceGrants = new ContentLaS(
+  "fraudulentClaimsForIndependanceGrants",
+  "Fraudulent Claims For Independance Grants",
+  "Description",
+  `
+<h3>Fraudulent Claims</h3>
+
+  <p>The Council, to ensure that limited resources are most effectively used to meet need, is committed to taking action against fraudulent claims for assistance. 
+  Where the Council is satisfied that the Applicant has made a fraudulent claim, 
+  for example by falsely declaring their circumstances, providing a false statement or evidence in support of their application, 
+  it will take appropriate action, including prosecution. </p>
+
+
+    `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
+);
+
+const generalInformation = new ContentLaS(
+  "generalInformation",
+  "General Information",
+  "Description",
+  `
+<h3>General Information</h3>
+
+  <p>Residents facing hardship are currently able to apply for a Household Support fund none repayable grant if they are unable to meet the costs of food, 
+  energy or wider essentials. </p>
+    `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "26/09/2024", name: "George Whitehouse" }
+);
+
+const eligibilityCriteria = new ContentLaS(
+  "eligibilityCriteria",
+  "Eligibility Criteria",
+  "Description",
+  `
+<h3>Eligibility Criteria</h3>
+
+ <p>Are on a qualifying means tested benefit, or are able to evidence that you are unable to meet essential costs. </p>
+
+    `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
+);
+
+const howDoIApply = new ContentLaS(
+  "howDoIApply",
+  "How do I apply",
+  "Description",
+  `
+<h3>How do I apply</h3>
+
+ <p>Applications can be made on our website at www.sheffield.gov.uk/cost-of-living, if you need assistance to apply, 
+ you can call the Community Helpline on 01142734567 (option 0) </p>
+    `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "26/09/2024", name: "George Whitehouse" }
+);
+
+const otherSupportAvailable = new ContentLaS(
+  "otherSupportAvailable",
+  "Other Support Available",
+  "Description",
+  `
+<h3>Other Support Available</h3>
+
+  <p>If a caller does not meet the eligibility criteria you should consider whether there are other hardship paymentsor support available to them 
+  (for example a discretionary housing payment), or whether other support can be offered with regards to income maximisation food or utility support via the
+   Community Support Helpline. br>
+You should also consider signposting the caller to other services such as the Council Tax helpline and Council Housing if they are a Council tenant, 
+to discuss whether any support can be given with regards to repayment of Rent or Council Tax. </p>
+
+    `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "26/09/2024", name: "George Whitehouse" }
+);
+
+const howLongDoesItTakeToGetADecisionForHouseholdSupportFund = new ContentLaS(
+  "howLongDoesItTakeToGetADecisionForHouseholdSupportFund",
+  "What If I Disagree With The Decision For Household Support Fund",
+  "Description",
+  `
+<h3>What If I Disagree With The Decision For Household Support Fund</h3>
+
+<p>On average, a decision will be made about your Household Support Fund application within 3 working days of us receiving a fully completed application, 
+it will be decided whether your financial circumstances merit the provision of assistance. </p>
+    `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "26/09/2024", name: "George Whitehouse" }
+);
+
+const WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund = new ContentLaS(
+  "WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund",
+  "What if I disagree with the decision",
+  "Description",
+  `
+<h3>What if I disagree with the decision</h3>
+
+ <p>If you disagree with a decision about your application, you can request that the decision is reviewed by emailing HSF@sheffield.gov.uk, 
+ or by calling the Community Helpline on 0114 2734567 (option 0) </p>
+    `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "26/09/2024", name: "George Whitehouse" }
+);
+
+const howillIGetMyHouseholdSupportFundPayment = new ContentLaS(
+  "WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund",
+  "How will I get my Household Support Fund payment",
+  "Description",
+  `
+<h3>How will I get my Household Support Fund payment</h3>
+
+  <p>Unless requested otherwise, you will receive a text or email from PayPoint. 
+  This email or text will contain a link and instructions to allow you to add the funds to your bank account or obtain cash at any PayPoint shop.
+   You can request that funds are paid to your bank account by BACS if you would prefer this. </p>
+
+    `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "26/09/2024", name: "George Whitehouse" }
+);
+
+const fraudulentClaimsForHouseholdSupportFund = new ContentLaS(
+  "fraudulentClaimsForHouseholdSupportFund",
+  "Fraudulent Claims For Household Support Fund",
+  "Description",
+  `
+<h3>Fraudulent Claims</h3>
+
+  <p>The Council, to ensure that limited resources are most effectively used to meet need, is committed to taking action against fraudulent claims for assistance.
+   Where the Council is satisfied that the Applicant has made a fraudulent claim, for example by falsely declaring their circumstances, 
+   providing a false statement or evidence in support of their application, it will take appropriate action, including prosecution. </p>
+    `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "26/09/2024", name: "George Whitehouse" }
+);
 
 const crisisGrantInformation = new MenuLaS(
-  'crisisGrantInformation',
-  'Crisis Grant Information',
-  'Discreption',
-  [whoCanApply,WhatIsItFor,howDoesTheApplicationProcessWork,WhatWillCrisisGrantsBeMadeFor,WhatWillNotCrisisGrantsBeMadeFor,howIsTheDecisionMade,howWillIBeNotifiedOfTheDecision,WhatIfIDisagreeWithTheDecision,howWillIGetMySheffieldCrisisGrant,fraudulentClaims]
-  
+  "crisisGrantInformation",
+  "Crisis Grant Information",
+  "Discreption",
+  [
+    whoCanApply,
+    WhatIsItFor,
+    howDoesTheApplicationProcessWork,
+    WhatWillCrisisGrantsBeMadeFor,
+    WhatWillNotCrisisGrantsBeMadeFor,
+    howIsTheDecisionMade,
+    howWillIBeNotifiedOfTheDecision,
+    WhatIfIDisagreeWithTheDecision,
+    howWillIGetMySheffieldCrisisGrant,
+    fraudulentClaims,
+  ]
 );
 
 const independanceGrantInformation = new MenuLaS(
-  'independanceGrantInformation',
-  'Independance Grant Information',
-  'Discreption',
-  [WhatIndependanceGrantInformationIsItFor,howDoesTheIndependanceGrantInformationApplicationProcessWork,howLongDoesItTakeToGetADecision,howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation,whatIfIDisagreeWithTheIndependenceGrantdecision,howWillIGetMySheffieldIndependanceGrant]
-  
+  "independanceGrantInformation",
+  "Independance Grant Information",
+  "Discreption",
+  [
+    WhatIndependanceGrantInformationIsItFor,
+    howDoesTheIndependanceGrantInformationApplicationProcessWork,
+    howLongDoesItTakeToGetADecision,
+    howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation,
+    whatIfIDisagreeWithTheIndependenceGrantdecision,
+    howWillIGetMySheffieldIndependanceGrant,
+    fraudulentClaimsForIndependanceGrants,
+  ]
 );
 
-
-
-
-
-
-
-const localAssistanceScheme = new ContentLaS(
-  'localAssistanceScheme',
-  'Local Assistance Scheme',
-  'Local Assistance Scheme',
-  `
-  
-
-
-
-   
-  
-  <h2>How long does it take to get a decision?</h2>
-
-    
-  <h2>How will I be notified of the decision?</h2>
-
-    <p>If you have provided us with an email address, written confirmation of the decision will be sent to you by email. If you do not have an email address, the decision notice will be sent to your home address by second class post. </p>
-
-  <h2>What if I disagree with the decision?</h2>
-
-    <p>If you are unhappy with the outcome of your application, you may request a review of the decision. Review requests should be submitted in writing by post or email, within one calendar month of the date on the decision notice: </p>
-    <p>
-    FAO Local Assistance Scheme<br>
-    3rd Floor<br>
-    Howden House<br>
-    1 Union Street<br>
-    Sheffield<br>
-    S1 2SH<br>
-    </p>
-    <p>
-    LAS@sheffield.gov.uk
-    </p>
-  <h2>How will i get my Sheffield Independence #Grant</h2>
-
-    <p>Household goods (except for ovens and washing machines for non-Council tenants) will be delivered through the Furnished Accommodation team within the Council. If an award is made for a Washing Machine or either a Gas or Electric Oven and you do not live in a Council tenancy, a payment will be made via BACS directly into your bank account instead. </p>
-
-    <p>Please note that the Furnished Accommodation team are not responsible for the maintenance or repair of any items delivered on behalf of the Local Assistance Scheme. </p>
-
-    <p>Travel awards will be issued as advance tickets for buses and trams through the Cashiers service in Howden House or arrangements will be made by the back office team for trains and taxis. Awards for removals will still be issued as cash but will be sent directly to the removal company. </p>
-
-    <p>Sheffield Independence Grants must be used to pay for the items we have agreed to fund and you should keep receipts as proof of purchase. We may contact you to provide these. </p>
-
-    <p>Sheffield Independence Grants do not need to be paid back.
-    I.D. for Cashiers</p>
-
-    <p>One of the Following Or one of the following Plus one of the following: </p>
-  <ul>
-    <li>Passport Paper Driving Licence Council Tax Letter (dated within last 3 months) </li>
-    <li>Driving Licence Card Benefit letter (dated within last 3 months) Bank or Credit Card Statement (dated within last 3 months, not from internet) </li>
-    <li>National Identity Card EU Member State Card Utility Bill (dated within last 3 months, not from internet) </li>
-    <li>ID Card (Northern Ireland Electoral Office) Inland Revenue Tax Notification 
-    Residence Permit</li> 
-  </ul>
-
-  <h2>Fraudulent Claims</h2>
-
-    <p>The Council, to ensure that limited resources are most effectively used to meet need, is committed to taking action against fraudulent claims for assistance. Where the Council is satisfied that the Applicant has made a fraudulent claim, for example by falsely declaring their circumstances, providing a false statement or evidence in support of their application, it will take appropriate action, including prosecution. </p>
-
-  <h2>Household Support Fund</h2>
-
-  <h3>General Information</h3>
-
-    <p>Residents facing hardship are currently able to apply for a Household Support fund none repayable grant if they are unable to meet the costs of food, energy or wider essentials. </p>
-
-
-  <h2>Eligibility Criteria</h2>
-
-    <p>Are on a qualifying means tested benefit, or are able to evidence that you are unable to meet essential costs. </p>
-
-  <h2>How do I apply? </h2>
-
-    <p>Applications can be made on our website at www.sheffield.gov.uk/cost-of-living, if you need assistance to apply, you can call the Community Helpline on 01142734567 (option 0) </p>
-
-  <h2>Other Support Available</h2>
-
-    <p>If a caller does not meet the eligibility criteria you should consider whether there are other hardship paymentsor support available to them (for example a discretionary housing payment), or whether other support can be offered with regards to income maximisation food or utility support via the Community Support Helpline. br>
-You should also consider signposting the caller to other services such as the Council Tax helpline and Council Housing if they are a Council tenant, to discuss whether any support can be given with regards to repayment of Rent or Council Tax. </p>
-
-  <h2>How long does it take to get a decision?</h2>
-
-    <p>On average, a decision will be made about your Household Support Fund application within 3 working days of us receiving a fully completed application, it will be decided whether your financial circumstances merit the provision of assistance. </p>
-
-  <h2>What if I disagree with the decision?</h2>
-
-    <p>If you disagree with a decision about your application, you can request that the decision is reviewed by emailing HSF@sheffield.gov.uk, or by calling the Community Helpline on 0114 2734567 (option 0) </p>
-
-  <h2>How will I get my Household Support Fund payment?</h2>
-
-    <p>Unless requested otherwise, you will receive a text or email from PayPoint. This email or text will contain a link and instructions to allow you to add the funds to your bank account or obtain cash at any PayPoint shop.  You can request that funds are paid to your bank account by BACS if you would prefer this. </p>
-
-  <h2>Fraudulent Claims</h2>
-
-    <p>The Council, to ensure that limited resources are most effectively used to meet need, is committed to taking action against fraudulent claims for assistance. Where the Council is satisfied that the Applicant has made a fraudulent claim, for example by falsely declaring their circumstances, providing a false statement or evidence in support of their application, it will take appropriate action, including prosecution. </p>
-
-
-  `,
-  { buttonLabel: 'Local Assistance Scheme', formName: '' },
-  { typeKey: 'local_assistance_scheme_information_provided' },
-  
-
-  {
-    type: 'Information',
-    keywords: [
-      'Local Assistance Scheme','Local Asistance Scheme', 'Local Assistence Scheme', 'Local Assistance Schme', 'Lokal Assistance Scheme', 'Local Assitance Scheme',
-      'Locel', 'Lokal', 'Loclal', 'Loacal', 'Locol','sheme', 'schme', 'scehme', 'scheam', 'scheeme',
-      'assitance', 'assistence', 'asistance', 'assistence', 'assisstance',
-
-    ],
-    categories: ['School and Childcare','benefits'],
-  },
-  { date: '17/09/2024', name: 'Gee Whitehouse' }
+const householdSupportFund = new MenuLaS(
+  "householdSupportFund",
+  "Household Support Fund",
+  "Discreption",
+  [
+    generalInformation,
+    eligibilityCriteria,
+    howDoIApply,
+    otherSupportAvailable,
+    howLongDoesItTakeToGetADecisionForHouseholdSupportFund,
+    howillIGetMyHouseholdSupportFundPayment,
+    fraudulentClaimsForHouseholdSupportFund,
+  ]
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const localAssistanceScheme = new ServiceLas(
-  'localAssistanceScheme',
-  'Local Assistance Scheme',
-  'Information regarding Local Assistance Scheme',
-  [
-
-    crisisGrantInformation,
-  ]
+  "localAssistanceScheme",
+  "Local Assistance Scheme",
+  "Information regarding Local Assistance Scheme",
+  [crisisGrantInformation]
 );
