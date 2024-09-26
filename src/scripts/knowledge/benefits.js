@@ -858,5 +858,5 @@ const localAssistanceScheme = new ServiceLas(
   "localAssistanceScheme",
   "Local Assistance Scheme",
   "Information regarding Local Assistance Scheme",
-  [crisisGrantInformation]
+  [crisisGrantInformation, independanceGrantInformation, householdSupportFund]
 );
