@@ -814,7 +814,7 @@ const fraudulentClaimsForHouseholdSupportFund = new ContentB(
 const localAssistantScheme = new MenuB(
   "localAssistantScheme",
   "Local Assistant Scheme",
-  "Discreption",
+  "The Local Assistance Scheme (LAS) provides Sheffield Independence Grants to support independent living and Sheffield Crisis Grants to help Sheffield residents in crisis situations who aren't receiving help",
   [
     crisisGrantInformation,independanceGrantInformation,householdSupportFund,
   ]
