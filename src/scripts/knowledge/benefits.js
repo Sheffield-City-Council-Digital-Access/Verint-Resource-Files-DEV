@@ -519,21 +519,18 @@ const howLongDoesItTakeToGetADecision = new ContentB(
   `
 <h3>How long does it take to get a decision</h3>
 
-<p>A decision will be made about your Sheffield Independence Grant within 15 working days of us receiving a fully completed application. It will be 
-decided whether your financial circumstances merit the provision of assistance.</p>
+<p>A decision will be made about your Sheffield Independence Grant within 15 working days of us receiving a fully completed application. It will be decided whether your financial circumstances merit the provision of assistance.</p>
 
     <p>When deciding whether to award a Sheffield Independence Grant, we need to take into account how much money is left in the budget. </p>
 
-    <p>Where a Sheffield Independence Grant is awarded, it will be paid to help you meet identified needs that reflect the aims of the scheme
+    <p>Where a Sheffield Independence Grant is awarded, it will be paid to help you meet identified needs that reflect the aims of the scheme.
      (as explained in the “What is it for?” section). </p>
 
     <p>We will take into account any savings you have in deciding how much you will be awarded. </p>
 
-    <p>The council officer may contact other people who have been working with you 
+    <p>The council officer may contact other people who have been working with you. 
     (for example, a social worker or tenancy support worker) to help them make the right decision. 
     You will be asked to give permission for them to do this in your application. </p>
-
-
     `,
 
   { buttonLabel: "", formName: "" },
@@ -815,9 +812,7 @@ const localAssistantScheme = new MenuB(
   "localAssistantScheme",
   "Local Assistant Scheme",
   "The Local Assistance Scheme (LAS) provides Sheffield Independence Grants to support independent living and Sheffield Crisis Grants to help Sheffield residents in crisis situations who aren't receiving help",
-  [
-    crisisGrantInformation,independanceGrantInformation,householdSupportFund,
-  ]
+  [crisisGrantInformation, independanceGrantInformation, householdSupportFund]
 );
 
 const crisisGrantInformation = new MenuB(
