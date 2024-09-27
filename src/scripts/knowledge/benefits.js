@@ -69,8 +69,8 @@ const whoCanApply = new ContentB(
     You haven't been awarded two Sheffield Crisis Grants in any 12-month period, regardless of any change in circumstances. </p>`,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -98,8 +98,8 @@ const WhatIsItFor = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -131,8 +131,8 @@ www.sheffield.gov.uk/localassistance"> Local Assistance.</a> The form can be fil
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -155,8 +155,8 @@ or travel expenses (access to hospital) if there is no other way to prevent a se
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -194,8 +194,8 @@ const WhatWillNotCrisisGrantsBeMadeFor = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -217,8 +217,8 @@ const howIsTheDecisionMade = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -239,8 +239,8 @@ const howWillIBeNotifiedOfTheDecision = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -270,8 +270,8 @@ within one calendar month of the date on the decision notice: </p>
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -310,8 +310,8 @@ const howWillIGetMySheffieldCrisisGrant = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -330,8 +330,8 @@ const fraudulentClaims = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -370,8 +370,8 @@ const whoCanApplyForIndependenceGrant = new ContentB(
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -407,8 +407,8 @@ const WhatIndependanceGrantInformationIsItFor = new ContentB(
   `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -437,8 +437,8 @@ const howDoesTheIndependanceGrantInformationApplicationProcessWork =
     `,
 
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "local_assistance_scheme_transferred_to_service" },
+    { typeKey: "local_assistance_scheme_information_provided" },
     { type: "Information", keywords: [], categories: ["benefits"] },
     { date: "25/09/2024", name: "George Whitehouse" }
   );
@@ -476,8 +476,8 @@ const WhatWillIndepedenceGrantsBeMadeFor = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -506,8 +506,8 @@ const WhatWillNotIndependenceGrantsBeMadeFor = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -534,8 +534,8 @@ const howLongDoesItTakeToGetADecision = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -555,8 +555,8 @@ the decision notice will be sent to your home address by second-class post.</p>
     `,
 
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "local_assistance_scheme_transferred_to_service" },
+    { typeKey: "local_assistance_scheme_information_provided" },
     { type: "Information", keywords: [], categories: ["benefits"] },
     { date: "25/09/2024", name: "George Whitehouse" }
   );
@@ -585,8 +585,8 @@ within one calendar month of the date on the decision notice: </p>
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -627,8 +627,8 @@ const howWillIGetMySheffieldIndependanceGrant = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -649,8 +649,8 @@ const fraudulentClaimsForIndependanceGrants = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -667,8 +667,8 @@ const generalInformation = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "26/09/2024", name: "George Whitehouse" }
 );
@@ -685,8 +685,8 @@ const eligibilityCriteria = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
 );
@@ -705,8 +705,8 @@ const howDoIApply = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "26/09/2024", name: "George Whitehouse" }
 );
@@ -727,8 +727,8 @@ to discuss whether any support can be given with regards to repayment of Rent or
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "26/09/2024", name: "George Whitehouse" }
 );
@@ -745,8 +745,8 @@ it will be decided whether your financial circumstances merit the provision of a
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "26/09/2024", name: "George Whitehouse" }
 );
@@ -763,8 +763,8 @@ const WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "26/09/2024", name: "George Whitehouse" }
 );
@@ -783,8 +783,8 @@ const howillIGetMyHouseholdSupportFundPayment = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "26/09/2024", name: "George Whitehouse" }
 );
@@ -802,8 +802,8 @@ const fraudulentClaimsForHouseholdSupportFund = new ContentB(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "26/09/2024", name: "George Whitehouse" }
 );
