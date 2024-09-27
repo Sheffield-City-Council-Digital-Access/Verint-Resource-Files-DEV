@@ -1,18 +1,31 @@
 // --- VARIABLES ------------------------------------------------------------ \\
 
+// Global variables to store knowledge base and latest news data
+// These are kept global to allow easy access across different functions
 let knowledge = [];
 let latestNews = [];
 
 // --- FUNCTIONS ------------------------------------------------------------ \\
 
+/**
+ * Initializes the knowledge base interface
+ * This function sets up the header, navigation, and footer
+ */
 function handleInitialisingKnowledge() {
+  // IIFE for header and navigation setup
+  // Using an IIFE to encapsulate the setup logic and avoid polluting the global scope
   (() => {
+    // DOM element selection
     const titleContainer = document.querySelector(".title-container");
     const title = titleContainer.querySelector("h1");
 
+    // Create header top section
+    // This creates a new container for the title and search functionality
     const headerTop = document.createElement("div");
     headerTop.classList.add("header-top");
 
+    // Create search container
+    // The search functionality is added here for easy access
     const searchContainer = document.createElement("div");
     searchContainer.id = "search-container";
     searchContainer.innerHTML = `
@@ -20,22 +33,33 @@ function handleInitialisingKnowledge() {
         <button type="button" id="search-button">Search</button>
       `;
 
+    // Assemble header top section
     headerTop.appendChild(title);
     headerTop.appendChild(searchContainer);
 
+    // Insert header top at the beginning of title container
+    // This ensures the new header structure is at the top of the page
     titleContainer.insertBefore(headerTop, titleContainer.firstChild);
 
+    // Create main navigation
     const nav = document.createElement("nav");
     nav.id = "main-nav";
 
     titleContainer.appendChild(nav);
 
+    // Define navigation items
+    // This array allows for easy addition or modification of navigation items
     const navItems = [
       { label: "Main menu", page: "page_service_menu" },
       { label: "Services A-Z", page: "page_service_a_z" },
       { label: "Latest News", page: "page_latest_news" },
     ];
 
+
+    /**
+     * Helper function to convert labels to camelCase
+     * This is used for creating consistent IDs for navigation buttons
+     */
     function toCamelCase(label) {
       return label
         .replace(/\s(.)/g, (match) => match.toUpperCase())
@@ -43,12 +67,15 @@ function handleInitialisingKnowledge() {
         .replace(/^(.)/, (match) => match.toLowerCase());
     }
 
+    // Create navigation buttons
     navItems.forEach((item) => {
       const button = document.createElement("button");
       button.textContent = item.label;
       button.id = toCamelCase(item.label);
       button.classList.add("link-button");
 
+      // Add click event listener for navigation
+      // This logs the user journey and navigates to the appropriate page
       button.addEventListener("click", () => {
         logUserJourney("Navigate", `Navigated to ${item.label}`);
         KDF.gotoPage(item.page, true, true, true);
@@ -59,9 +86,12 @@ function handleInitialisingKnowledge() {
       nav.appendChild(li);
     });
 
+    // Set up search functionality
     const searchInput = document.getElementById("search-input");
     const searchButton = document.getElementById("search-button");
 
+    // Enable search on Enter key press
+    // This improves user experience by allowing search via Enter key
     searchInput.addEventListener("keydown", (event) => {
       if (event.key === "Enter") {
         event.preventDefault();
@@ -70,6 +100,8 @@ function handleInitialisingKnowledge() {
     });
   })();
 
+  // IIFE for footer setup
+  // Using an IIFE to encapsulate the footer setup logic
   (() => {
     const footerHTML = `
     <footer class="footer" role="contentinfo">
@@ -79,6 +111,8 @@ function handleInitialisingKnowledge() {
       </div>
     </footer>
   `;
+    // Append footer to the end of the body
+    // This ensures the footer is always at the bottom of the page
     const body = document.getElementsByTagName("body")[0];
     body.insertAdjacentHTML("beforeend", footerHTML);
   })();
@@ -696,6 +730,7 @@ function handleOnReadyKnowledge() {
           highlightActiveFilter(button, ".a-z-filter button");
         });
 
+
         button.addEventListener("keydown", (event) => {
           if (event.key === "Enter") {
             event.preventDefault();
@@ -726,6 +761,7 @@ function handleOnReadyKnowledge() {
           }
         });
       });
+
 
       const sortedCategories = Array.from(categories).sort();
 
@@ -758,6 +794,7 @@ function handleOnReadyKnowledge() {
 
       let options = [];
 
+
       filteredServices.forEach((service) => {
         if (Array.isArray(service.subjects)) {
           service.subjects.forEach((subject) => {
@@ -788,6 +825,7 @@ function handleOnReadyKnowledge() {
                 serviceName: service.name,
                 type: "knowledge",
               });
+
 
               options.push(card);
 
@@ -845,6 +883,7 @@ function handleOnReadyKnowledge() {
         return nameA.localeCompare(nameB);
       });
 
+
       options.forEach((card) => {
         resultsContainer.appendChild(card);
 
@@ -869,6 +908,7 @@ function handleOnReadyKnowledge() {
         });
       });
 
+
       if (updateAtoZ) {
         createAtoZFilter(visibleLetters);
       }
@@ -885,6 +925,7 @@ function handleOnReadyKnowledge() {
               ))
         )
       );
+
 
       const refinedFilteredServices = filteredServices.map((service) => {
         return {
@@ -905,6 +946,7 @@ function handleOnReadyKnowledge() {
             ),
         };
       });
+
 
       createOptions(refinedFilteredServices, false);
 
@@ -978,6 +1020,7 @@ function handleOnReadyKnowledge() {
 
   handleServicesAtoZ(knowledge);
 }
+
 
 function logUserJourney(action, details) {
   const journeyField = document.getElementById(
