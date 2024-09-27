@@ -8,6 +8,11 @@ let latestNews = [];
 let currentLevel = "main"; // "main", "sub", "topics"
 let previousData = [];
 
+// DOM Containers
+let serviceMenuContainer;
+let subjectMenuContainer;
+let topicsMenuContainer;
+
 // --- FUNCTIONS ------------------------------------------------------------ \\
 
 /**
@@ -289,10 +294,9 @@ function handleInitialisingKnowledge() {
  * Handles actions when the document is ready.
  */
 function handleOnReadyKnowledge() {
-  // DOM Containers
-  const serviceMenuContainer = document.getElementById("service-menu");
-  const subjectMenuContainer = document.getElementById("subject-menu");
-  const topicsMenuContainer = document.getElementById("topics-menu");
+  serviceMenuContainer = document.getElementById("service-menu");
+  subjectMenuContainer = document.getElementById("subject-menu");
+  topicsMenuContainer = document.getElementById("topics-menu");
 
   let redirectToForm = "";
   let tranferTypeKey = "";
