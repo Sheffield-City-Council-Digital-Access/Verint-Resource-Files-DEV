@@ -8,11 +8,6 @@ let latestNews = [];
 let currentLevel = "main"; // "main", "sub", "topics"
 let previousData = [];
 
-// DOM Containers
-const serviceMenuContainer = document.getElementById("service-menu");
-const subjectMenuContainer = document.getElementById("subject-menu");
-const topicsMenuContainer = document.getElementById("topics-menu");
-
 // --- FUNCTIONS ------------------------------------------------------------ \\
 
 /**
@@ -294,6 +289,11 @@ function handleInitialisingKnowledge() {
  * Handles actions when the document is ready.
  */
 function handleOnReadyKnowledge() {
+  // DOM Containers
+  const serviceMenuContainer = document.getElementById("service-menu");
+  const subjectMenuContainer = document.getElementById("subject-menu");
+  const topicsMenuContainer = document.getElementById("topics-menu");
+
   let redirectToForm = "";
   let tranferTypeKey = "";
   let finishTypeKey = "";
@@ -323,10 +323,16 @@ function handleOnReadyKnowledge() {
     const target = event.target;
     if (target.tagName === "BUTTON") {
       const card = target.closest(".card");
-      const parent = previousData.find((parent) => parent.id === card.dataset.id);
+      const parent = previousData.find(
+        (parent) => parent.id === card.dataset.id
+      );
 
       if (parent) {
-        createCards(parent.topics || parent.subjects, topicsMenuContainer, parent);
+        createCards(
+          parent.topics || parent.subjects,
+          topicsMenuContainer,
+          parent
+        );
         KDF.gotoPage("page_topic_menu", true, true, true);
       } else {
         KDF.showError("Parent not found");
