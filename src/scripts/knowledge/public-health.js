@@ -80,8 +80,8 @@ They may have just moved into a property that has been vacant, have received bit
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "flea_Treatments_transfered_to_service" },
-  { typeKey: "flea_Treatments_information_provided" },
+  { typeKey: "pest_control_transfered_to_service" },
+  { typeKey: "pest_control_information_provided" },
   {
     type: "Information",
     keywords: [
