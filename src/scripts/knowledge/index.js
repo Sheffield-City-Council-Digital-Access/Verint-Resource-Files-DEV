@@ -181,16 +181,13 @@ function createCards(data, container, parent = null) {
 }
 
 function redirectToContentPage(item) {
-  logUserJourney("View Content", `Viewed content: ${item.name}`);
-
-  const redirectToForm = item.process?.formName || "";
-  const tranferTypeKey = item.transfer?.typeKey || "";
-  const finishTypeKey = item.finish?.typeKey || "";
   const enquiryType = item.name;
+
+  logUserJourney("View Content", `Viewed content: ${enquiryType}`);
 
   const breadcrumbElement = document.querySelector(".content-btn");
   if (breadcrumbElement) {
-    breadcrumbElement.textContent = item.name;
+    breadcrumbElement.textContent = enquiryType;
   } else {
     console.warn("Breadcrumb element '.content-btn' not found.");
   }
@@ -199,7 +196,7 @@ function redirectToContentPage(item) {
     "dform_widget_header_hrd_page_title_content"
   );
   if (titleElement) {
-    titleElement.textContent = item.name;
+    titleElement.textContent = enquiryType;
   } else {
     console.warn(
       "Title element 'dform_widget_header_hrd_page_title_content' not found."
