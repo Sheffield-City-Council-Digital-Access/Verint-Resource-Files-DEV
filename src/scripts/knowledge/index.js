@@ -132,95 +132,133 @@ function handleOnReadyKnowledge() {
   let currentLevel = "main";
   let previousData = [];
 
-  function createCards(data, container) {
+  /**
+   * Creates card elements based on the provided data and container.
+   * @param {Array} data - The data array containing objects to create cards for.
+   * @param {HTMLElement} container - The DOM element to append the cards to.
+   * @param {Function} filterFn - A function to filter items based on custom logic.
+   */
+  function createCards(data, container, filterFn = () => true) {
     if (!container) {
       return;
     }
 
     container.innerHTML = "";
 
-    data.forEach((item) => {
-      const card = document.createElement("div");
-      card.classList.add("card");
-      card.setAttribute("data-id", item.id);
-      card.setAttribute("tabindex", "0");
+    data
+      .filter(filterFn) // **Apply the Filter Function Here**
+      .forEach((item) => {
+        const card = document.createElement("div");
+        card.classList.add("card");
+        card.setAttribute("data-id", item.id);
+        card.setAttribute("tabindex", "0");
 
-      const cardBody = document.createElement("div");
-      cardBody.classList.add("card-body");
+        const cardBody = document.createElement("div");
+        cardBody.classList.add("card-body");
 
-      const cardTitle = document.createElement("h3");
-      cardTitle.classList.add("card-title");
-      cardTitle.textContent = item.name;
+        const cardTitle = document.createElement("h3");
+        cardTitle.classList.add("card-title");
+        cardTitle.textContent = item.name;
 
-      const cardText = document.createElement("p");
-      cardText.classList.add("card-text");
-      cardText.textContent = item.description;
+        const cardText = document.createElement("p");
+        cardText.classList.add("card-text");
+        cardText.textContent = item.description;
 
-      cardBody.appendChild(cardTitle);
-      cardBody.appendChild(cardText);
-      card.appendChild(cardBody);
-      container.appendChild(card);
+        cardBody.appendChild(cardTitle);
+        cardBody.appendChild(cardText);
+        card.appendChild(cardBody);
+        container.appendChild(card);
 
-      card.addEventListener("click", () => {
-        const nextLevelData = item.subjects || item.topics;
-        if (nextLevelData) {
-          previousData = nextLevelData;
-          currentLevel = item.subjects ? "sub" : "topics";
+        // **Event Listeners (unchanged)**
+        card.addEventListener("click", () => {
+          const nextLevelData = item.subjects || item.topics;
+          if (nextLevelData) {
+            previousData = nextLevelData;
+            currentLevel = item.subjects ? "sub" : "topics";
 
-          createCards(
-            nextLevelData,
-            item.subjects ? subjectMenuContainer : topicsMenuContainer
-          );
+            createCards(
+              nextLevelData,
+              item.subjects ? subjectMenuContainer : topicsMenuContainer,
+              determineFilter(currentLevel) // **Determine the Appropriate Filter**
+            );
 
-          const breadcrumbElements = document.querySelectorAll(
-            item.subjects ? ".subject-menu-btn" : ".topic-menu-btn"
-          );
+            const breadcrumbElements = document.querySelectorAll(
+              item.subjects ? ".subject-menu-btn" : ".topic-menu-btn"
+            );
 
-          if (breadcrumbElements.length > 0) {
-            breadcrumbElements.forEach((breadcrumbElement) => {
-              breadcrumbElement.textContent = item.name;
-            });
+            if (breadcrumbElements.length > 0) {
+              breadcrumbElements.forEach((breadcrumbElement) => {
+                breadcrumbElement.textContent = item.name;
+              });
+            }
+
+            const topicMenuButtons =
+              document.querySelectorAll(".topic-menu-btn");
+
+            if (item.subjects) {
+              topicMenuButtons.forEach((btn) => {
+                btn.style.display = "none";
+              });
+            }
+            if (item.topics) {
+              topicMenuButtons.forEach((btn) => {
+                btn.style.display = "block";
+              });
+            }
+
+            KDF.gotoPage(
+              item.subjects ? "page_subject_menu" : "page_topic_menu",
+              true,
+              true,
+              true
+            );
+          } else {
+            redirectToContentPage(item);
           }
+        });
 
-          const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
-
-          if (item.subjects) {
-            topicMenuButtons.forEach((btn) => {
-              btn.style.display = "none";
-            });
+        card.addEventListener("keydown", (event) => {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            card.click();
           }
-          if (item.topics) {
-            topicMenuButtons.forEach((btn) => {
-              btn.style.display = "block";
-            });
-          }
+        });
 
-          KDF.gotoPage(
-            item.subjects ? "page_subject_menu" : "page_topic_menu",
-            true,
-            true,
-            true
-          );
-        } else {
-          redirectToContentPage(item);
-        }
-      });
+        card.addEventListener("focus", () => {
+          card.classList.add("focus");
+        });
 
-      card.addEventListener("keydown", (event) => {
-        if (event.key === "Enter") {
-          event.preventDefault();
-          card.click();
-        }
+        card.addEventListener("blur", () => {
+          card.classList.remove("focus");
+        });
       });
+  }
 
-      card.addEventListener("focus", () => {
-        card.classList.add("focus");
-      });
+  /**
+   * Determines the filter function based on the current menu level.
+   * @param {string} level - The current menu level ("main", "sub", "topics").
+   * @returns {Function} - The filter function to apply.
+   */
+  function determineFilter(level) {
+    switch (level) {
+      case "main":
+        // Filter for Service instances
+        return (item) =>
+          item.constructor && item.constructor.name.startsWith("Service");
 
-      card.addEventListener("blur", () => {
-        card.classList.remove("focus");
-      });
-    });
+      case "sub":
+        // Filter for Menu instances
+        return (item) =>
+          item.constructor && item.constructor.name.startsWith("Menu");
+
+      case "topics":
+        // Filter for Content classes starting with "Content"
+        return (item) =>
+          item.constructor && item.constructor.name.startsWith("Content");
+
+      default:
+        return () => true; // No filtering by default
+    }
   }
 
   function redirectToContentPage(item) {
@@ -278,7 +316,11 @@ function handleOnReadyKnowledge() {
 
       const service = knowledge.find((service) => service.id === serviceId);
       if (service) {
-        createCards(service.subjects, subjectMenuContainer);
+        createCards(
+          service.subjects,
+          subjectMenuContainer,
+          determineFilter("sub") // **Apply MenuH Filter**
+        );
         KDF.gotoPage("page_subject_menu", true, true, true);
       } else {
         KDF.showError("Service not found");
@@ -286,22 +328,22 @@ function handleOnReadyKnowledge() {
     }
   });
 
-  subjectMenuContainer.addEventListener("click", (event) => {
+  serviceMenuContainer.addEventListener("click", (event) => {
     const target = event.target;
     if (target.tagName === "BUTTON") {
       const card = target.closest(".card");
-      const subjectId = card.dataset.id;
+      const serviceId = card.dataset.id;
 
-      const subject = previousData.find((subject) => subject.id === subjectId);
-      if (subject) {
-        if (subject.topics) {
-          createCards(subject.topics, topicsMenuContainer);
-          KDF.gotoPage("page_topic_menu", true, true, true);
-        } else {
-          redirectToContentPage(subject);
-        }
+      const service = knowledge.find((service) => service.id === serviceId);
+      if (service) {
+        createCards(
+          service.subjects,
+          subjectMenuContainer,
+          determineFilter("sub") // **Apply MenuH Filter**
+        );
+        KDF.gotoPage("page_subject_menu", true, true, true);
       } else {
-        KDF.showError("Subject not found");
+        KDF.showError("Service not found");
       }
     }
   });
@@ -332,7 +374,11 @@ function handleOnReadyKnowledge() {
       const service = knowledge.find((service) => service.name === label);
 
       if (service) {
-        createCards(service.subjects, subjectMenuContainer);
+        createCards(
+          service.subjects,
+          subjectMenuContainer,
+          determineFilter("sub") // **Apply MenuH Filter**
+        );
         KDF.gotoPage("page_subject_menu", true, true, true);
       }
     });
@@ -348,7 +394,11 @@ function handleOnReadyKnowledge() {
       });
 
       if (service) {
-        createCards(service.subjects, subjectMenuContainer);
+        createCards(
+          service.subjects,
+          subjectMenuContainer,
+          determineFilter("sub") // **Apply MenuH Filter**
+        );
         const label = button.textContent;
 
         const subject = service.subjects.find(
@@ -357,7 +407,11 @@ function handleOnReadyKnowledge() {
 
         if (subject) {
           if (subject.topics) {
-            createCards(subject.topics, topicsMenuContainer);
+            createCards(
+              subject.topics,
+              topicsMenuContainer,
+              determineFilter("topics") // **Apply Content Class Filter**
+            );
             KDF.gotoPage("page_topic_menu", true, true, true);
           }
         }
