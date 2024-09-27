@@ -55,7 +55,6 @@ function handleInitialisingKnowledge() {
       { label: "Latest News", page: "page_latest_news" },
     ];
 
-
     /**
      * Helper function to convert labels to camelCase
      * This is used for creating consistent IDs for navigation buttons
@@ -459,33 +458,41 @@ function handleOnReadyKnowledge() {
     };
 
     const searchableItems = knowledge.flatMap((service) =>
-      service.subjects.map((subject) => {
-        const keywords = (subject.meta && subject.meta.keywords) || [];
-        const categories = (subject.meta && subject.meta.categories) || [];
-        const description = subject.description || "";
-        const content = subject.content || "";
+      service.subjects
+        .filter(
+          (subject) =>
+            subject.constructor &&
+            subject.constructor.name.startsWith("Content")
+        )
+        .map((contentSubject) => {
+          const keywords =
+            (contentSubject.meta && contentSubject.meta.keywords) || [];
+          const categories =
+            (contentSubject.meta && contentSubject.meta.categories) || [];
+          const description = contentSubject.description || "";
+          const content = contentSubject.content || "";
 
-        const textToSearch = `
-                ${keywords.join(" ")}
-                ${categories.join(" ")}
-                ${description}
-                ${content}
-            `.toLowerCase();
+          const textToSearch = `
+          ${keywords.join(" ")}
+          ${categories.join(" ")}
+          ${description}
+          ${content}
+        `.toLowerCase();
 
-        return {
-          ...subject,
-          serviceName: service.name,
-          type: "knowledge",
-          relevance: calculateRelevance(textToSearch),
-        };
-      })
+          return {
+            ...contentSubject,
+            serviceName: service.name,
+            type: "knowledge",
+            relevance: calculateRelevance(textToSearch),
+          };
+        })
     );
 
     const newsItems = latestNews.map((news) => {
       const textToSearch = `
-            ${news.title}
-            ${news.content}
-        `.toLowerCase();
+      ${news.title}
+      ${news.content}
+    `.toLowerCase();
 
       return {
         title: news.title,
@@ -507,12 +514,12 @@ function handleOnReadyKnowledge() {
         const content = item.content || "";
 
         const textToSearch = `
-                ${keywords.join(" ")}
-                ${categories.join(" ")}
-                ${title}
-                ${description}
-                ${content}
-            `.toLowerCase();
+        ${keywords.join(" ")}
+        ${categories.join(" ")}
+        ${title}
+        ${description}
+        ${content}
+      `.toLowerCase();
 
         return searchTerms.some((term) => textToSearch.includes(term));
       })
@@ -730,7 +737,6 @@ function handleOnReadyKnowledge() {
           highlightActiveFilter(button, ".a-z-filter button");
         });
 
-
         button.addEventListener("keydown", (event) => {
           if (event.key === "Enter") {
             event.preventDefault();
@@ -761,7 +767,6 @@ function handleOnReadyKnowledge() {
           }
         });
       });
-
 
       const sortedCategories = Array.from(categories).sort();
 
@@ -794,7 +799,6 @@ function handleOnReadyKnowledge() {
 
       let options = [];
 
-
       filteredServices.forEach((service) => {
         if (Array.isArray(service.subjects)) {
           service.subjects.forEach((subject) => {
@@ -825,7 +829,6 @@ function handleOnReadyKnowledge() {
                 serviceName: service.name,
                 type: "knowledge",
               });
-
 
               options.push(card);
 
@@ -883,7 +886,6 @@ function handleOnReadyKnowledge() {
         return nameA.localeCompare(nameB);
       });
 
-
       options.forEach((card) => {
         resultsContainer.appendChild(card);
 
@@ -908,7 +910,6 @@ function handleOnReadyKnowledge() {
         });
       });
 
-
       if (updateAtoZ) {
         createAtoZFilter(visibleLetters);
       }
@@ -925,7 +926,6 @@ function handleOnReadyKnowledge() {
               ))
         )
       );
-
 
       const refinedFilteredServices = filteredServices.map((service) => {
         return {
@@ -946,7 +946,6 @@ function handleOnReadyKnowledge() {
             ),
         };
       });
-
 
       createOptions(refinedFilteredServices, false);
 
@@ -1020,7 +1019,6 @@ function handleOnReadyKnowledge() {
 
   handleServicesAtoZ(knowledge);
 }
-
 
 function logUserJourney(action, details) {
   const journeyField = document.getElementById(
