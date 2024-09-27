@@ -1,11 +1,184 @@
 // --- VARIABLES ------------------------------------------------------------ \\
 
 // Global variables to store knowledge base and latest news data
-// These are kept global to allow easy access across different functions
 let knowledge = [];
 let latestNews = [];
 
+// Current navigation state
+let currentLevel = "main"; // "main", "sub", "topics"
+let previousData = [];
+
+// DOM Containers
+const serviceMenuContainer = document.getElementById("service-menu");
+const subjectMenuContainer = document.getElementById("subject-menu");
+const topicsMenuContainer = document.getElementById("topics-menu");
+
 // --- FUNCTIONS ------------------------------------------------------------ \\
+
+/**
+ * Determines the type of children within a parent object.
+ * @param {Object} parent - The parent object containing children.
+ * @returns {string} - The type of children ("Menu", "Content", or "Unknown").
+ */
+function getChildType(parent) {
+  if (!parent.subjects && !parent.topics) {
+    return "Unknown";
+  }
+
+  const firstChild = parent.subjects?.[0] || parent.topics?.[0];
+
+  if (!firstChild || !firstChild.constructor || !firstChild.constructor.name) {
+    return "Unknown";
+  }
+
+  const className = firstChild.constructor.name;
+
+  if (className.startsWith("Menu")) {
+    return "Menu";
+  } else if (className.startsWith("Content")) {
+    return "Content";
+  } else {
+    return "Unknown";
+  }
+}
+
+/**
+ * Determines the filter function based on the current parent object.
+ * @param {Object} parent - The current parent object.
+ * @returns {Function} - The filter function to apply.
+ */
+function determineFilter(parent) {
+  const childType = getChildType(parent);
+
+  switch (childType) {
+    case "Menu":
+      return (item) =>
+        item.constructor && item.constructor.name.startsWith("Menu");
+
+    case "Content":
+      return (item) =>
+        item.constructor && item.constructor.name.startsWith("Content");
+
+    default:
+      return () => true; // No filtering or unknown type
+  }
+}
+
+/**
+ * Creates card elements based on the provided data and container.
+ * @param {Array} data - The data array containing objects to create cards for.
+ * @param {HTMLElement} container - The DOM element to append the cards to.
+ * @param {Object} parent - The parent object containing the current data.
+ */
+function createCards(data, container, parent = null) {
+  if (!container) {
+    return;
+  }
+
+  container.innerHTML = "";
+
+  // Determine filter based on parent
+  const filterFn = parent ? determineFilter(parent) : () => true;
+
+  data
+    .filter(filterFn) // **Apply the Dynamic Filter**
+    .forEach((item) => {
+      const card = document.createElement("div");
+      card.classList.add("card");
+      card.setAttribute("data-id", item.id);
+      card.setAttribute("tabindex", "0");
+
+      const cardBody = document.createElement("div");
+      cardBody.classList.add("card-body");
+
+      const cardTitle = document.createElement("h3");
+      cardTitle.classList.add("card-title");
+      cardTitle.textContent = item.name;
+
+      const cardText = document.createElement("p");
+      cardText.classList.add("card-text");
+      cardText.textContent = item.description;
+
+      cardBody.appendChild(cardTitle);
+      cardBody.appendChild(cardText);
+      card.appendChild(cardBody);
+      container.appendChild(card);
+
+      // **Event Listeners**
+      card.addEventListener("click", () => {
+        const hasSubjects = item.subjects && item.subjects.length > 0;
+        const hasTopics = item.topics && item.topics.length > 0;
+        let nextLevelData = null;
+
+        if (hasSubjects) {
+          nextLevelData = item.subjects;
+          currentLevel = "sub";
+        } else if (hasTopics) {
+          nextLevelData = item.topics;
+          currentLevel = "topics";
+        }
+
+        if (nextLevelData) {
+          previousData = nextLevelData;
+          const nextContainer = hasSubjects
+            ? subjectMenuContainer
+            : topicsMenuContainer;
+
+          createCards(nextLevelData, nextContainer, item);
+
+          // **Update Breadcrumbs**
+          const breadcrumbElements = document.querySelectorAll(
+            hasSubjects ? ".subject-menu-btn" : ".topic-menu-btn"
+          );
+
+          if (breadcrumbElements.length > 0) {
+            breadcrumbElements.forEach((breadcrumbElement) => {
+              breadcrumbElement.textContent = item.name;
+            });
+          }
+
+          // **Toggle Visibility of Topic Menu Buttons**
+          const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
+
+          if (hasSubjects) {
+            topicMenuButtons.forEach((btn) => {
+              btn.style.display = "none";
+            });
+          }
+          if (hasTopics) {
+            topicMenuButtons.forEach((btn) => {
+              btn.style.display = "block";
+            });
+          }
+
+          // **Navigate to the Appropriate Page**
+          KDF.gotoPage(
+            hasSubjects ? "page_subject_menu" : "page_topic_menu",
+            true,
+            true,
+            true
+          );
+        } else {
+          redirectToContentPage(item);
+        }
+      });
+
+      card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          card.click();
+        }
+      });
+
+      card.addEventListener("focus", () => {
+        card.classList.add("focus");
+      });
+
+      card.addEventListener("blur", () => {
+        card.classList.remove("focus");
+      });
+    });
+}
 
 /**
  * Initializes the knowledge base interface
@@ -117,6 +290,9 @@ function handleInitialisingKnowledge() {
   })();
 }
 
+/**
+ * Handles actions when the document is ready.
+ */
 function handleOnReadyKnowledge() {
   let redirectToForm = "";
   let tranferTypeKey = "";
@@ -125,189 +301,7 @@ function handleOnReadyKnowledge() {
 
   // --- MENU CREATOR AND HANDLER ------------------------------------------- \\
 
-  const serviceMenuContainer = document.getElementById("service-menu");
-  const subjectMenuContainer = document.getElementById("subject-menu");
-  const topicsMenuContainer = document.getElementById("topics-menu");
-
-  let currentLevel = "main";
-  let previousData = [];
-
-  /**
-   * Creates card elements based on the provided data and container.
-   * @param {Array} data - The data array containing objects to create cards for.
-   * @param {HTMLElement} container - The DOM element to append the cards to.
-   * @param {Function} filterFn - A function to filter items based on custom logic.
-   */
-  function createCards(data, container, filterFn = () => true) {
-    if (!container) {
-      return;
-    }
-
-    container.innerHTML = "";
-
-    data
-      .filter(filterFn) // **Apply the Filter Function Here**
-      .forEach((item) => {
-        const card = document.createElement("div");
-        card.classList.add("card");
-        card.setAttribute("data-id", item.id);
-        card.setAttribute("tabindex", "0");
-
-        const cardBody = document.createElement("div");
-        cardBody.classList.add("card-body");
-
-        const cardTitle = document.createElement("h3");
-        cardTitle.classList.add("card-title");
-        cardTitle.textContent = item.name;
-
-        const cardText = document.createElement("p");
-        cardText.classList.add("card-text");
-        cardText.textContent = item.description;
-
-        cardBody.appendChild(cardTitle);
-        cardBody.appendChild(cardText);
-        card.appendChild(cardBody);
-        container.appendChild(card);
-
-        // **Event Listeners (unchanged)**
-        card.addEventListener("click", () => {
-          const nextLevelData = item.subjects || item.topics;
-          if (nextLevelData) {
-            previousData = nextLevelData;
-            currentLevel = item.subjects ? "sub" : "topics";
-
-            createCards(
-              nextLevelData,
-              item.subjects ? subjectMenuContainer : topicsMenuContainer,
-              determineFilter(currentLevel) // **Determine the Appropriate Filter**
-            );
-
-            const breadcrumbElements = document.querySelectorAll(
-              item.subjects ? ".subject-menu-btn" : ".topic-menu-btn"
-            );
-
-            if (breadcrumbElements.length > 0) {
-              breadcrumbElements.forEach((breadcrumbElement) => {
-                breadcrumbElement.textContent = item.name;
-              });
-            }
-
-            const topicMenuButtons =
-              document.querySelectorAll(".topic-menu-btn");
-
-            if (item.subjects) {
-              topicMenuButtons.forEach((btn) => {
-                btn.style.display = "none";
-              });
-            }
-            if (item.topics) {
-              topicMenuButtons.forEach((btn) => {
-                btn.style.display = "block";
-              });
-            }
-
-            KDF.gotoPage(
-              item.subjects ? "page_subject_menu" : "page_topic_menu",
-              true,
-              true,
-              true
-            );
-          } else {
-            redirectToContentPage(item);
-          }
-        });
-
-        card.addEventListener("keydown", (event) => {
-          if (event.key === "Enter") {
-            event.preventDefault();
-            card.click();
-          }
-        });
-
-        card.addEventListener("focus", () => {
-          card.classList.add("focus");
-        });
-
-        card.addEventListener("blur", () => {
-          card.classList.remove("focus");
-        });
-      });
-  }
-
-  /**
-   * Determines the filter function based on the current menu level.
-   * @param {string} level - The current menu level ("main", "sub", "topics").
-   * @returns {Function} - The filter function to apply.
-   */
-  function determineFilter(level) {
-    switch (level) {
-      case "main":
-        // Filter for Service instances
-        return (item) =>
-          item.constructor && item.constructor.name.startsWith("Service");
-
-      case "sub":
-        // Filter for Menu instances
-        return (item) =>
-          item.constructor && item.constructor.name.startsWith("Menu");
-
-      case "topics":
-        // Filter for Content classes starting with "Content"
-        return (item) =>
-          item.constructor && item.constructor.name.startsWith("Content");
-
-      default:
-        return () => true; // No filtering by default
-    }
-  }
-
-  function redirectToContentPage(item) {
-    logUserJourney("View Content", `Viewed content: ${item.name}`);
-
-    redirectToForm = item.process.formName ? item.process.formName : "";
-    tranferTypeKey = item.transfer.typeKey ? item.transfer.typeKey : "";
-    finishTypeKey = item.finish.typeKey ? item.finish.typeKey : "";
-    enquiryType = item.name;
-
-    const breadcrumbElement = document.querySelector(".content-btn");
-    breadcrumbElement.textContent = item.name;
-
-    const titleElement = document.getElementById(
-      "dform_widget_header_hrd_page_title_content"
-    );
-    titleElement.textContent = item.name;
-
-    const contentContainer = document.getElementById(
-      "dform_widget_html_ahtm_content_container"
-    );
-    contentContainer.innerHTML = item.content;
-
-    const lastModifiedInfo = document.createElement("small");
-    lastModifiedInfo.textContent = `Last modified on: ${item.lastModified.date} by ${item.lastModified.name}`;
-    contentContainer.appendChild(lastModifiedInfo);
-
-    const button = document.getElementById(
-      "dform_widget_button_but_launch_process"
-    );
-    button.textContent = item.process.buttonLabel;
-
-    hideShowMultipleElements([
-      {
-        name: "but_launch_process",
-        display: item.process?.formName ? "show" : "hide",
-      },
-      {
-        name: "but_transfer_enquiry",
-        display: item.transfer?.typeKey ? "show" : "hide",
-      },
-      {
-        name: "but_finish_enquiry",
-        display: item.finish?.typeKey ? "show" : "hide",
-      },
-    ]);
-    KDF.gotoPage("page_content", true, true, true);
-  }
-
+  // Event Listeners for Service Menu
   serviceMenuContainer.addEventListener("click", (event) => {
     const target = event.target;
     if (target.tagName === "BUTTON") {
@@ -316,11 +310,7 @@ function handleOnReadyKnowledge() {
 
       const service = knowledge.find((service) => service.id === serviceId);
       if (service) {
-        createCards(
-          service.subjects,
-          subjectMenuContainer,
-          determineFilter("sub") // **Apply MenuH Filter**
-        );
+        createCards(service.subjects, subjectMenuContainer, service);
         KDF.gotoPage("page_subject_menu", true, true, true);
       } else {
         KDF.showError("Service not found");
@@ -328,37 +318,34 @@ function handleOnReadyKnowledge() {
     }
   });
 
-  serviceMenuContainer.addEventListener("click", (event) => {
+  // Event Listeners for Subject Menu
+  subjectMenuContainer.addEventListener("click", (event) => {
     const target = event.target;
     if (target.tagName === "BUTTON") {
       const card = target.closest(".card");
-      const serviceId = card.dataset.id;
+      const parent = previousData.find((parent) => parent.id === card.dataset.id);
 
-      const service = knowledge.find((service) => service.id === serviceId);
-      if (service) {
-        createCards(
-          service.subjects,
-          subjectMenuContainer,
-          determineFilter("sub") // **Apply MenuH Filter**
-        );
-        KDF.gotoPage("page_subject_menu", true, true, true);
+      if (parent) {
+        createCards(parent.topics || parent.subjects, topicsMenuContainer, parent);
+        KDF.gotoPage("page_topic_menu", true, true, true);
       } else {
-        KDF.showError("Service not found");
+        KDF.showError("Parent not found");
       }
     }
   });
 
+  // Event Listeners for Topics Menu
   topicsMenuContainer.addEventListener("click", (event) => {
     const target = event.target;
     if (target.tagName === "BUTTON") {
       const card = target.closest(".card");
-      const topicId = card.dataset.id;
+      const contentId = card.dataset.id;
 
-      const topic = previousData.find((topic) => topic.id === topicId);
-      if (topic) {
-        redirectToContentPage(topic);
+      const contentItem = previousData.find((item) => item.id === contentId);
+      if (contentItem) {
+        redirectToContentPage(contentItem);
       } else {
-        KDF.showError("Topic not found");
+        KDF.showError("Content not found");
       }
     }
   });
