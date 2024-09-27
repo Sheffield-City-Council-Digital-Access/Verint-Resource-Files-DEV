@@ -164,7 +164,7 @@ const registerToVote = new ContentEaR(
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
-const requestForEvidenceLetter = new ContentEaR(
+const requestforEvidenceLetter = new ContentEaR(
   "requestForEvidenceLetter",
   "Request For Evidence Letter (Registering)",
   "Set a discreption",
@@ -182,7 +182,7 @@ const requestForEvidenceLetter = new ContentEaR(
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
-const revisionsToTheElectoralRegister = new ContentEaR(
+const revisionstoTheElectoralRegister = new ContentEaR(
   "revisionsToTheElectoralRegister",
   "Revisions to The Electoral Register (To Be Updated)",
   "Set a discreption",
@@ -209,7 +209,7 @@ const revisionsToTheElectoralRegister = new ContentEaR(
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
-const useOfEmailAddressandPhoneNumber = new ContentEaR(
+const useofEmailAddressandPhoneNumber = new ContentEaR(
   "useOfEmailAddressandPhoneNumber",
   "Use Of Email Address and Phone Number",
   "Set a discreption",
@@ -228,7 +228,7 @@ const useOfEmailAddressandPhoneNumber = new ContentEaR(
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
-const changeOfNameOnTheRegister = new ContentEaR(
+const changeofNameonTheRegister = new ContentEaR(
   "changeOfNameOnTheRegister",
   "Change of Name on the Register",
   "Set a discreption",
@@ -352,7 +352,7 @@ const incorrectDetailsOnElectoralRegister = new ContentEaR(
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
-const optOutOfTheOpenRegister = new ContentEaR(
+const optOutofTheOpenRegister = new ContentEaR(
   "optOutOfTheOpenRegister",
   "Opt Out of the Open Register",
   "Set a discreption",
@@ -440,7 +440,7 @@ const archiveCopies = new ContentEaR(
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
 
-const changeOfAddressForm = new ContentEaR(
+const changeofAddressForm = new ContentEaR(
   "changeOfAddressForm",
   "Change Of Address Form",
   "Set a discreption",
@@ -488,19 +488,19 @@ const registeringToVote = new MenuEaR(
     includeSomeoneElseontheRegisterForm,
     lostMyInvitationToRegister,
     registerToVote,
-    requestForEvidenceLetter,
-    revisionsToTheElectoralRegister,
-    useOfEmailAddressandPhoneNumber,
-    changeOfNameOnTheRegister,
+    requestforEvidenceLetter,
+    revisionstoTheElectoralRegister,
+    useofEmailAddressandPhoneNumber,
+    changeofNameonTheRegister,
     creditReferencingAgencies,
     doINeedToRegister,
     doINeedToReRegisterEachYear,
     successfulOnlineRegistration,
     incorrectDetailsOnElectoralRegister,
-    optOutOfTheOpenRegister,
+    optOutofTheOpenRegister,
     electoralRegisterConfirmationLetter,
     requestOtherElectionsReferral,
-    changeOfAddressForm,
+    changeofAddressForm,
     needToIncludeEmailAddressandPhoneNumber,
   ]
 );
@@ -706,7 +706,7 @@ const removalFromRegister = new ContentEaR(
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
-const informationChangeAndHowToUpdateIt = new ContentEaR(
+const informationChangeandHowToUpdateIt = new ContentEaR(
   "informationChangeAndHowToUpdateIt",
   "Information Change and How to Update It",
   "Set a discreption",
@@ -742,7 +742,7 @@ const annualCanvasMenu = new MenuEaR(
     lostCCACCBorCanvassForm,
     studentVoters,
     removalFromRegister,
-    informationChangeAndHowToUpdateIt,
+    informationChangeandHowToUpdateIt,
   ]
 );
 
@@ -882,8 +882,7 @@ const requestproxyVote = new ContentEaR(
       You can request to vote by proxy to have another person vote on your behalf at
       your Polling Station. This can be done online at
       <a href="https://www.gov.uk/apply-proxy-vote" target="_blank"
-        >www.gov.uk/apply-proxy-vote</a
-      >
+        >www.gov.uk/apply-proxy-vote</a>
       or using a paper form.
     </p>
     <p>
@@ -1204,7 +1203,7 @@ const annualCanvas = new ContentEaR(
   "Set a discreption",
   `
     <p>
-      The Electoral Registration Officer (ERO) is required to send a communication
+      The Electoral Registration Officer (ERO) is required to send a communication 
       to all residential properties. Households are legally obliged to respond to a
       CCB or CF form, and the ERO must follow up with non-respondents using
       reminders and personal visits. Where a property is sent a CCA form, the ERO
