@@ -83,8 +83,8 @@ const fundedEarlyLearning = new ContentSaC(
     <p>Eligible working parents of children from 9 months to school age will be entitled to 30 hours of childcare a week. </p>
   `,
   { buttonLabel: "Funded Early Learning", formName: "" },
+  { typeKey: "funded_early_learning_transfered_to_service" },
   { typeKey: "funded_early_learning_information_provided" },
-  { typeKey: "" },
   {
     type: "Information",
     keywords: [
