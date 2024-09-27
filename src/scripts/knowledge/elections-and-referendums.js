@@ -50,10 +50,21 @@ const informationInDifferentFormats = new ContentEaR(
   "informationInDifferentFormats",
   "Information in different formats",
   "Accessing information in different formats (Braille, Large Print etc)",
-  ``,
+  `
+  <p>Some information is available in alternative formats. If you are registering
+      to vote, do so at
+      <a href="https://www.gov.uk/register-to-vote" target="_blank"
+        >https://www.gov.uk/register-to-vote</a
+      >, which works with assistive technologies such as screen readers, or we can
+      send you an application in your preferred format where available. For
+      additional information, please call: 0114 2734093.
+      </p>
+
+      `,
+
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -61,21 +72,17 @@ const informationInDifferentFormats = new ContentEaR(
 const invitationToRegister = new ContentEaR(
   "invitationToRegister",
   "Invitation to Register",
-  "Set a discreption",
+
   `
     <p>
-      Some information is available in alternative formats. If you are registering
-      to vote, do so at
-      <a href="https://www.gov.uk/register-to-vote" target="_blank"
-        >https://www.gov.uk/register-to-vote</a
-      >, which works with assistive technologies such as screen readers, or we can
-      send you an application in your preferred format where available. For
-      additional information, please call: 0114 2734093.
+    An ITR is an Invitation To Register, this is a letter that is sent out to an individual 
+    needing to complete register to vote. The letter advises you how to register to vote 
+    using the online service or the attached form.
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -83,7 +90,7 @@ const invitationToRegister = new ContentEaR(
 const movingHomeorMovedHome = new ContentEaR(
   "movingHomeorMovedHome",
   "Moving Home or Moved Home",
-  "Set a discreption",
+
   `
     <p>
       If you have moved, you need to re-register for voting at your new address. You
@@ -95,8 +102,8 @@ const movingHomeorMovedHome = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -116,8 +123,8 @@ const includeSomeoneElseontheRegisterForm = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -125,7 +132,7 @@ const includeSomeoneElseontheRegisterForm = new ContentEaR(
 const lostMyInvitationToRegister = new ContentEaR(
   "lostMyInvitationToRegister",
   "Lost My Invitation To Register",
-  "Set a discreption",
+
   `
     <p>
       If you have lost your form, you can apply to register online at
@@ -135,8 +142,8 @@ const lostMyInvitationToRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -144,7 +151,7 @@ const lostMyInvitationToRegister = new ContentEaR(
 const registerToVote = new ContentEaR(
   "registerToVote",
   "Register To Vote",
-  "Set a discreption",
+
   `
     <p>
       Everyone is responsible for registering themselves. This is called Individual
@@ -158,8 +165,8 @@ const registerToVote = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -167,7 +174,7 @@ const registerToVote = new ContentEaR(
 const requestforEvidenceLetter = new ContentEaR(
   "requestForEvidenceLetter",
   "Request For Evidence Letter (Registering)",
-  "Set a discreption",
+
   `
     <p>
       This letter is sent when documents are requested to support someone's
@@ -176,8 +183,8 @@ const requestforEvidenceLetter = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -185,7 +192,7 @@ const requestforEvidenceLetter = new ContentEaR(
 const revisionstoTheElectoralRegister = new ContentEaR(
   "revisionsToTheElectoralRegister",
   "Revisions to The Electoral Register (To Be Updated)",
-  "Set a discreption",
+
   `
     <p>
       Additions or changes to the register are usually added on the next monthly
@@ -203,8 +210,8 @@ const revisionstoTheElectoralRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -212,7 +219,7 @@ const revisionstoTheElectoralRegister = new ContentEaR(
 const useofEmailAddressandPhoneNumber = new ContentEaR(
   "useOfEmailAddressandPhoneNumber",
   "Use Of Email Address and Phone Number",
-  "Set a discreption",
+
   `
     <p>
       If you provide an email address or phone number as part of your application,
@@ -222,8 +229,8 @@ const useofEmailAddressandPhoneNumber = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -231,7 +238,7 @@ const useofEmailAddressandPhoneNumber = new ContentEaR(
 const changeofNameonTheRegister = new ContentEaR(
   "changeOfNameOnTheRegister",
   "Change of Name on the Register",
-  "Set a discreption",
+ 
   `
     <p>
       If your name has changed, you can complete a change of name form with your
@@ -240,8 +247,8 @@ const changeofNameonTheRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -249,7 +256,7 @@ const changeofNameonTheRegister = new ContentEaR(
 const creditReferencingAgencies = new ContentEaR(
   "creditReferencingAgencies",
   "Credit Referencing Agencies",
-  "Set a discreption",
+
   `
     <p>
       Credit referencing agencies have access to the electoral register (previously
@@ -268,8 +275,8 @@ const creditReferencingAgencies = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -288,8 +295,8 @@ const doINeedToRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -305,8 +312,8 @@ const doINeedToReRegisterEachYear = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -324,8 +331,8 @@ const successfulOnlineRegistration = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -333,7 +340,7 @@ const successfulOnlineRegistration = new ContentEaR(
 const incorrectDetailsOnElectoralRegister = new ContentEaR(
   "incorrectDetailsOnElectoralRegister",
   "Incorrect Details On Electoral Register",
-  "Set a discreption",
+
   `
     <p>
       If an error is found on the electoral register, please let us know so it can
@@ -346,8 +353,8 @@ const incorrectDetailsOnElectoralRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -355,7 +362,7 @@ const incorrectDetailsOnElectoralRegister = new ContentEaR(
 const optOutofTheOpenRegister = new ContentEaR(
   "optOutOfTheOpenRegister",
   "Opt Out of the Open Register",
-  "Set a discreption",
+
   `
     <p>
       Your name and address will be included in the open register unless you ask for
@@ -370,8 +377,8 @@ const optOutofTheOpenRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
@@ -379,7 +386,7 @@ const optOutofTheOpenRegister = new ContentEaR(
 const electoralRegisterConfirmationLetter = new ContentEaR(
   "electoralRegisterConfirmationLetter",
   "Electoral Register Confirmation Letter",
-  "Set a discreption",
+
   `
     <p>
       Letters can be requested from Electoral Services for Proof of Registration.
@@ -389,8 +396,8 @@ const electoralRegisterConfirmationLetter = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
@@ -398,17 +405,17 @@ const electoralRegisterConfirmationLetter = new ContentEaR(
 const requestOtherElectionsReferral = new ContentEaR(
   "requestOtherElectionsReferral",
   "Request Other Elections Referral",
-  "Set a discreption",
+  
   `
     <p>
-      Note to advisor - This is only to be used if the caller does not have access
+      <strong>Note to advisor</strong> - This is only to be used if the caller does not have access
       to the internet or if a copy of the requested letter is not held on Weberos.
       Request Other Elections Referral.
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
@@ -416,7 +423,7 @@ const requestOtherElectionsReferral = new ContentEaR(
 const archiveCopies = new ContentEaR(
   "archiveCopies",
   "Archive Copies",
-  "Set a discreption",
+
   `
     <p>
       Copies of the register are supplied to the British Library. Copies of the
@@ -434,8 +441,8 @@ const archiveCopies = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
@@ -443,7 +450,7 @@ const archiveCopies = new ContentEaR(
 const changeofAddressForm = new ContentEaR(
   "changeOfAddressForm",
   "Change Of Address Form",
-  "Set a discreption",
+ 
   `
     <p>
       We do not issue a change of address form, to change the address you are
@@ -453,8 +460,8 @@ const changeofAddressForm = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
@@ -471,8 +478,8 @@ const needToIncludeEmailAddressandPhoneNumber = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "registering_to_vote_information_provided" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
@@ -480,7 +487,8 @@ const needToIncludeEmailAddressandPhoneNumber = new ContentEaR(
 const registeringToVote = new MenuEaR(
   "registeringToVote",
   "Registering to Vote",
-  "Set a discreption",
+  "You must be registered to vote before you can vote in UK elections or referendums.",
+  "You can do this in any type of election, whether it's a general election, a local council election or a referendum.",
   [
     informationInDifferentFormats,
     invitationToRegister,
@@ -508,7 +516,7 @@ const registeringToVote = new MenuEaR(
 const ccaCCBForms = new ContentEaR(
   "ccaCCBForms",
   "CCA/CCB Forms",
-  "Set a discreption",
+
   `
     <p>
       Each year, the <strong>Electoral Registration Officer (ERO)</strong> is
@@ -549,8 +557,8 @@ const ccaCCBForms = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "annual_canvass_information_provided" },
+  { typeKey: "annual_canvass_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
@@ -558,7 +566,7 @@ const ccaCCBForms = new ContentEaR(
 const canvassForm = new ContentEaR(
   "canvassForm",
   "Canvass Form (CF)",
-  "Set a discreption",
+
   `
     <p>
       Any residential property that does not respond to the CCB form will receive a
@@ -584,8 +592,8 @@ const canvassForm = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "annual_canvass_information_provided" },
+  { typeKey: "annual_canvass_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
@@ -619,8 +627,8 @@ const ccaCCBorCanvassForms = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "annual_canvass_information_provided" },
+  { typeKey: "annual_canvass_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -628,7 +636,7 @@ const ccaCCBorCanvassForms = new ContentEaR(
 const lostCCACCBorCanvassForm = new ContentEaR(
   "lostCCACCBorCanvassForm",
   "Lost My CCA CCB or Canvass Form",
-  "Set a discreption",
+
   `
     <p>
       If you have lost your form then a duplicate can be sent, or you can wait for a
@@ -645,8 +653,8 @@ const lostCCACCBorCanvassForm = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "annual_canvass_information_provided" },
+  { typeKey: "annual_canvass_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -654,7 +662,7 @@ const lostCCACCBorCanvassForm = new ContentEaR(
 const studentVoters = new ContentEaR(
   "studentVoters",
   "Student Voters",
-  "Set a discreption",
+
   `
     <p>
       Students can be registered in both their term-time and home address but can
@@ -670,8 +678,8 @@ const studentVoters = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "annual_canvass_information_provided" },
+  { typeKey: "annual_canvass_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -679,7 +687,7 @@ const studentVoters = new ContentEaR(
 const removalFromRegister = new ContentEaR(
   "removalFromRegister",
   "Removal From Register",
-  "Set a discreption",
+
   `
     <p>
       If you have received a CCA, CCB, or CF with a previous resident's details on,
@@ -700,8 +708,8 @@ const removalFromRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "annual_canvass_information_provided" },
+  { typeKey: "annual_canvass_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -709,7 +717,7 @@ const removalFromRegister = new ContentEaR(
 const informationChangeandHowToUpdateIt = new ContentEaR(
   "informationChangeAndHowToUpdateIt",
   "Information Change and How to Update It",
-  "Set a discreption",
+
   `
     <p>
       If anyone listed on the form is not living at your address, their name should
@@ -725,8 +733,8 @@ const informationChangeandHowToUpdateIt = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "annual_canvass_information_provided" },
+  { typeKey: "annual_canvass_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -734,7 +742,7 @@ const informationChangeandHowToUpdateIt = new ContentEaR(
 const annualCanvasMenu = new MenuEaR(
   "annualCanvasMenu",
   "Annual Canvas",
-  "Set a discreption",
+  "The household canvass takes place each year to enable us to ensure the electoral register is up to date for each residential property in the city.",
   [
     ccaCCBForms,
     canvassForm,
@@ -749,7 +757,7 @@ const annualCanvasMenu = new MenuEaR(
 const swappingFromPostalToProxyVoting = new ContentEaR(
   "swappingFromPostalToProxyVoting",
   "Swapping From Postal To Proxy Voting",
-  "Set a discreption",
+
   `
     <p>
       You can do this at any time of the year, but specific deadlines apply before
@@ -763,8 +771,8 @@ const swappingFromPostalToProxyVoting = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "postal_or_proxy_voting_information_provided" },
+  { typeKey: "postal_or_proxy_voting_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -772,7 +780,7 @@ const swappingFromPostalToProxyVoting = new ContentEaR(
 const swappingFromProxyToPostalVoting = new ContentEaR(
   "swappingFromProxyToPostalVoting",
   "Swapping From Proxy To Postal Voting",
-  "Set a discreption",
+
   `
     <p>
       You can do this at any time of the year, but specific deadlines apply before
@@ -787,8 +795,8 @@ const swappingFromProxyToPostalVoting = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "postal_or_proxy_voting_information_provided" },
+  { typeKey: "postal_or_proxy_voting_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -796,7 +804,7 @@ const swappingFromProxyToPostalVoting = new ContentEaR(
 const postalVoteNotReceivedorLost = new ContentEaR(
   "postalVoteNotReceivedorLost",
   "Postal Vote Not Received or Lost",
-  "Set a discreption",
+
   `
     <p>
       If you have not received your postal voting pack by 4 working days before
@@ -810,8 +818,8 @@ const postalVoteNotReceivedorLost = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "postal_or_proxy_voting_information_provided" },
+  { typeKey: "postal_or_proxy_voting_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -819,7 +827,7 @@ const postalVoteNotReceivedorLost = new ContentEaR(
 const postalProxyVote = new ContentEaR(
   "postalProxyVote",
   "Postal Proxy Vote",
-  "Set a discreption",
+
   `
     <p>
       If a person has been appointed as a proxy voter for someone else, but cannot
@@ -835,8 +843,8 @@ const postalProxyVote = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "postal_or_proxy_voting_information_provided" },
+  { typeKey: "postal_or_proxy_voting_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -844,7 +852,7 @@ const postalProxyVote = new ContentEaR(
 const applyingForPostalVote = new ContentEaR(
   "applyingForPostalVote",
   "Applying For Postal Vote",
-  "Set a discreption",
+
   `
     <p>
       You can choose to vote using a postal vote in all elections that you are
@@ -867,8 +875,8 @@ const applyingForPostalVote = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "postal_or_proxy_voting_information_provided" },
+  { typeKey: "postal_or_proxy_voting_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -876,7 +884,7 @@ const applyingForPostalVote = new ContentEaR(
 const requestproxyVote = new ContentEaR(
   "requestproxyVote",
   "Request Proxy Vote",
-  "Set a discreption",
+
   `
     <p>
       You can request to vote by proxy to have another person vote on your behalf at
@@ -896,8 +904,8 @@ const requestproxyVote = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "postal_or_proxy_voting_information_provided" },
+  { typeKey: "postal_or_proxy_voting_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -905,7 +913,7 @@ const requestproxyVote = new ContentEaR(
 const waiverApplication = new ContentEaR(
   "waiverApplication",
   "Waiver Application",
-  "Set a discreption",
+
   `
     <p>
       A waiver is used for postal and proxy voting applications when a voter is
@@ -915,16 +923,17 @@ const waiverApplication = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "postal_or_proxy_voting_information_provided" },
+  { typeKey: "postal_or_proxy_voting_transferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
-const postalOrProxyVoting = new MenuEaR(
+const postalorProxyVoting = new MenuEaR(
   "postalOrProxyVotingas",
   "Postal or Proxy Voting",
-  "Set a discreption",
+  "If you would prefer to return your ballot paper by post rather than going to the polling station you must apply for a postal vote.",
+  "If you want someone to vote on your behalf, you can choose to vote by proxy.", 
   [
     swappingFromPostalToProxyVoting,
     swappingFromProxyToPostalVoting,
@@ -939,15 +948,15 @@ const postalOrProxyVoting = new MenuEaR(
 const whereDoIVote = new ContentEaR(
   "whereDoIVote",
   "Where Do I Vote",
-  "Set a discreption",
+
   `
     <p>
       SERVICE HAS NOT PROVIDED THE LINK FOR 'WHERE DO I VOTE?
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "elections_and_voting_information_provided" },
+  { typeKey: "elections_and_voting_tarnsferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -955,7 +964,7 @@ const whereDoIVote = new ContentEaR(
 const assistanceForPartiallySightedVoters = new ContentEaR(
   "assistanceForPartiallySightedVoters",
   "Assistance For Partially Sighted Voters",
-  "Set a discreption",
+
   `
     <p>
       <strong>Voting in Person:</strong>Large print copies of ballot papers are
@@ -975,8 +984,8 @@ const assistanceForPartiallySightedVoters = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "elections_and_voting_information_provided" },
+  { typeKey: "elections_and_voting_tarnsferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -984,15 +993,15 @@ const assistanceForPartiallySightedVoters = new ContentEaR(
 const howToCompletePostalVote = new ContentEaR(
   "howToCompletePostalVote",
   "Assistance For Partially Sighted Voters",
-  "Set a discreption",
+
   `
     <p>
       CLICK to ENHANCE IMAGE
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "elections_and_voting_information_provided" },
+  { typeKey: "elections_and_voting_tarnsferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -1000,7 +1009,7 @@ const howToCompletePostalVote = new ContentEaR(
 const postalVoteNoLongerRequired = new ContentEaR(
   "postalVoteNoLongerRequired",
   "Postal Vote No Longer Required",
-  "Set a discreption",
+
   `
     <p>
       You can cancel your application for a postal vote at any time up to the postal
@@ -1038,8 +1047,8 @@ const postalVoteNoLongerRequired = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "elections_and_voting_information_provided" },
+  { typeKey: "elections_and_voting_tarnsferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -1047,7 +1056,7 @@ const postalVoteNoLongerRequired = new ContentEaR(
 const postalVoteReceivedButNotRequested = new ContentEaR(
   "postalVoteReceivedButNotRequested",
   "Postal Vote Received But Not Requested",
-  "Set a discreption",
+
   `
     <p>
       If you have received a postal ballot and did not request one or cannot
@@ -1059,8 +1068,8 @@ const postalVoteReceivedButNotRequested = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "elections_and_voting_information_provided" },
+  { typeKey: "elections_and_voting_tarnsferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -1068,7 +1077,7 @@ const postalVoteReceivedButNotRequested = new ContentEaR(
 const postalVoteSendingAbroad = new ContentEaR(
   "postalVoteSendingAbroad",
   "Postal Vote Sending Abroad",
-  "Set a discreption",
+
   `
     <p>
       Postal votes can be sent abroad, but it is at your own risk. We are unable to
@@ -1079,8 +1088,8 @@ const postalVoteSendingAbroad = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "elections_and_voting_information_provided" },
+  { typeKey: "elections_and_voting_tarnsferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -1088,7 +1097,7 @@ const postalVoteSendingAbroad = new ContentEaR(
 const spoiltorDamagedPostalVote = new ContentEaR(
   "spoiltorDamagedPostalVote",
   "Spoilt or Damaged Postal Vote",
-  "Set a discreption",
+
   `
     <p>
       We can issue replacement postal vote ballot papers in the event of the
@@ -1113,8 +1122,8 @@ const spoiltorDamagedPostalVote = new ContentEaR(
     <p>We will then re-issue the ballot by post.</p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "elections_and_voting_information_provided" },
+  { typeKey: "elections_and_voting_tarnsferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -1122,7 +1131,7 @@ const spoiltorDamagedPostalVote = new ContentEaR(
 const localElections = new ContentEaR(
   "localElections",
   "Local Elections",
-  "Set a discreption",
+
   `
     <p>
       Local elections are held on a four-year cycle. There is an election for the
@@ -1136,8 +1145,8 @@ const localElections = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "elections_and_voting_information_provided" },
+  { typeKey: "elections_and_voting_tarnsferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -1145,7 +1154,7 @@ const localElections = new ContentEaR(
 const parishElections = new ContentEaR(
   "parishElections",
   "parish Elections",
-  "Set a discreption",
+
   `
     <p>
       Parish Councils are separate local authorities to the City Council, with their
@@ -1174,8 +1183,8 @@ const parishElections = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "elections_and_voting_information_provided" },
+  { typeKey: "elections_and_voting_tarnsferred_to_service" },
   { type: "Request", keywords: [], categories: ["Electoral"] },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
@@ -1183,7 +1192,8 @@ const parishElections = new ContentEaR(
 const electionsAndVoting = new MenuEaR(
   "electionsAndVoting",
   "Elections And Voting",
-  "Set a discreption",
+  "Elections usually take place every 4 years or 5 years dependant on the type of election.",
+  "Information about Voting in these elections can be found here.", 
   [
     whereDoIVote,
     assistanceForPartiallySightedVoters,
@@ -1200,7 +1210,7 @@ const electionsAndVoting = new MenuEaR(
 const annualCanvas = new ContentEaR(
   "annualCanvas",
   "Annual Canvas",
-  "Set a discreption",
+
   `
     <p>
       The Electoral Registration Officer (ERO) is required to send a communication 
@@ -1242,7 +1252,7 @@ const annualCanvas = new ContentEaR(
 const electionResults = new ContentEaR(
   "electionResults",
   "Election Results",
-  "Set a discreption",
+
   `
     <p>
       SERVICE HAS TO PROVIDE PREVIOUS ELECTION RESULTS
@@ -1258,7 +1268,7 @@ const electionResults = new ContentEaR(
 const whereICanVote = new ContentEaR(
   "whereICanVotes",
   "where I Can Vote",
-  "Set a discreption",
+
   `
     <p>
       SERVICE HAS NOwhereICanVoteT PROVIDED THE LINK FOR 'WHERE DO I VOTE?
@@ -1274,7 +1284,7 @@ const whereICanVote = new ContentEaR(
 const councillors = new ContentEaR(
   "councillors",
   "Councillors",
-  "Set a discreption",
+
   `
     <p>
       For more information about Sheffield Councillors and their duties, you can
@@ -1296,7 +1306,7 @@ const councillors = new ContentEaR(
 const familyTreeorGenealogy = new ContentEaR(
   "familyTreeorGenealogy",
   "family Tree or Genealogy",
-  "Set a discreption",
+ 
   `
     <p>
       The electoral register is compiled for election purposes and is not intended
@@ -1318,7 +1328,6 @@ const familyTreeorGenealogy = new ContentEaR(
 const wards = new ContentEaR(
   "wards",
   "Wards",
-  "Set a discreption",
   `
     <p>
       Sheffield has 28 electoral areas called Wards, and each Ward is represented by
@@ -1341,7 +1350,7 @@ const wards = new ContentEaR(
 const topEnquiries = new MenuEaR(
   "topEnquiries",
   "Top Enquiries",
-  "Set a discreption",
+
   [
     annualCanvas,
     electionResults,
@@ -1358,11 +1367,11 @@ const topEnquiries = new MenuEaR(
 const electionsAndReferendums = new ServiceEaR(
   "electionsAndReferendums",
   "Elections and Referendums",
-  `General elections, local elections, by-election, mayoral election, police and crime commitioner, referendums, voting`,
+  `General elections, local elections, by-election, mayoral election, police and crime commissioner, referendums and voting`,
   [
     registeringToVote,
     annualCanvasMenu,
-    postalOrProxyVoting,
+    postalorProxyVoting,
     electionsAndVoting,
     topEnquiries,
   ]
