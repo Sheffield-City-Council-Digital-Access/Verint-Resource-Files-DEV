@@ -180,6 +180,78 @@ function createCards(data, container, parent = null) {
     });
 }
 
+function redirectToContentPage(item) {
+  logUserJourney("View Content", `Viewed content: ${item.name}`);
+
+  const redirectToForm = item.process?.formName || "";
+  const tranferTypeKey = item.transfer?.typeKey || "";
+  const finishTypeKey = item.finish?.typeKey || "";
+  const enquiryType = item.name;
+
+  const breadcrumbElement = document.querySelector(".content-btn");
+  if (breadcrumbElement) {
+    breadcrumbElement.textContent = item.name;
+  } else {
+    console.warn("Breadcrumb element '.content-btn' not found.");
+  }
+
+  const titleElement = document.getElementById(
+    "dform_widget_header_hrd_page_title_content"
+  );
+  if (titleElement) {
+    titleElement.textContent = item.name;
+  } else {
+    console.warn(
+      "Title element 'dform_widget_header_hrd_page_title_content' not found."
+    );
+  }
+
+  const contentContainer = document.getElementById(
+    "dform_widget_html_ahtm_content_container"
+  );
+  if (contentContainer) {
+    contentContainer.innerHTML = item.content || "";
+
+    if (item.lastModified) {
+      const lastModifiedInfo = document.createElement("small");
+      lastModifiedInfo.textContent = `Last modified on: ${item.lastModified.date} by ${item.lastModified.name}`;
+      contentContainer.appendChild(lastModifiedInfo);
+    }
+  } else {
+    console.warn(
+      "Content container 'dform_widget_html_ahtm_content_container' not found."
+    );
+  }
+
+  const button = document.getElementById(
+    "dform_widget_button_but_launch_process"
+  );
+  if (button) {
+    button.textContent = item.process?.buttonLabel || "Launch Process";
+  } else {
+    console.warn(
+      "Button element 'dform_widget_button_but_launch_process' not found."
+    );
+  }
+
+  hideShowMultipleElements([
+    {
+      name: "but_launch_process",
+      display: item.process?.formName ? "show" : "hide",
+    },
+    {
+      name: "but_transfer_enquiry",
+      display: item.transfer?.typeKey ? "show" : "hide",
+    },
+    {
+      name: "but_finish_enquiry",
+      display: item.finish?.typeKey ? "show" : "hide",
+    },
+  ]);
+
+  KDF.gotoPage("page_content", true, true, true);
+}
+
 /**
  * Initializes the knowledge base interface
  * This function sets up the header, navigation, and footer
