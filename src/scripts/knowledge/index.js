@@ -491,30 +491,28 @@ function handleOnReadyKnowledge() {
 
   // --- LATEST NEWS -------------------------------------------------------- \\
 
-  // Global variable to store latest news data
-  // let latestNews = [];
-  let currentPage = 1;
-  const articlesPerPage = 5;
-  console.log(latestNews);
   /**
    * Initializes the latest news section.
    */
   function initializeLatestNews() {
     try {
-      latestNews = sortNewsByDate(newsArticles); // Use local data
+      console.log("Initializing latest news...");
+      latestNews = sortNewsByDate(newsArticles);
+      console.log("Sorted Latest News:", latestNews);
       if (latestNews.length === 0) {
         displayNoNewsMessage();
         return;
       }
       renderLatestNews(latestNews);
-      renderArchivedNews(latestNews);
-      checkLatestNewsBadge();
+      // Uncomment if these functions are defined
+      // renderArchivedNews(latestNews);
+      // checkLatestNewsBadge();
     } catch (error) {
       displayLoadError(error);
       console.error("Error initializing latest news:", error);
     }
   }
-  console.log(latestNews);
+
   /**
    * Sorts news articles by publish date in descending order.
    * @param {Array} newsArray - Array of news articles.
@@ -533,30 +531,22 @@ function handleOnReadyKnowledge() {
   function renderLatestNews(newsArray) {
     const newsContainer = document.getElementById("news-container");
     newsContainer.innerHTML = "";
-    displayPage(newsArray, newsContainer, currentPage, articlesPerPage);
-    setupPagination(newsArray.length, articlesPerPage);
+    displayAllNews(newsArray, newsContainer);
   }
 
   /**
-   * Displays a specific page of news articles.
+   * Displays all news articles.
    * @param {Array} newsArray - Array of news articles.
    * @param {HTMLElement} container - The container to render articles.
-   * @param {number} page - The current page number.
-   * @param {number} perPage - Number of articles per page.
    */
-  function displayPage(newsArray, container, page, perPage) {
-    const start = (page - 1) * perPage;
-    const end = start + perPage;
-    const paginatedNews = newsArray.slice(start, end);
-
-    paginatedNews.forEach((newsItem) => {
+  function displayAllNews(newsArray, container) {
+    newsArray.forEach((newsItem) => {
       if (isWithinDisplayDate(newsItem.publishDate, newsItem.archiveDate)) {
         const article = createNewsArticle(newsItem);
         container.appendChild(article);
       }
     });
 
-    // Initialize lazy loading after articles are appended
     initializeLazyLoading();
   }
 
@@ -572,52 +562,45 @@ function handleOnReadyKnowledge() {
     article.setAttribute("role", "article");
     article.setAttribute(
       "aria-labelledby",
-      `news-title-${newsItem.title.replace(/\s+/g, "-").toLowerCase()}`
+      `news-title-${sanitizeTitle(newsItem.title)}`
     );
 
     const publishDate = formatDate(newsItem.publishDate);
 
     article.innerHTML = `
-    <h2 id="news-title-${newsItem.title.replace(/\s+/g, "-").toLowerCase()}">${
-      newsItem.title
-    }</h2>
-    <div>
-      ${
-        newsItem.imageUrl
-          ? `<img data-src="${newsItem.imageUrl}" alt="${newsItem.title}" class="lazy-image">`
-          : ""
-      }
-      ${newsItem.content}
-    </div>
-    <p class="metadata">Published by ${newsItem.createdBy} on ${publishDate}</p>
+    <h2 id="news-title-${sanitizeTitle(newsItem.title)}">${newsItem.title}</h2>
+    <p><small>Published on ${publishDate} by ${newsItem.createdBy}</small></p>
+    <div>${newsItem.content}</div>
   `;
-
-    // Keyboard Accessibility
-    article.addEventListener("keydown", (event) => {
-      if (event.key === "Enter") {
-        article.click();
-      }
-    });
 
     return article;
   }
 
   /**
-   * Formats a date string to a more readable format.
-   * @param {string} dateStr - The date string to format.
-   * @returns {string} - The formatted date string.
+   * Sanitizes the title to create a valid ID.
+   * @param {string} title - The news article title.
+   * @returns {string} - Sanitized title string.
    */
-  function formatDate(dateStr) {
-    const options = { year: "numeric", month: "long", day: "numeric" };
-    return new Date(dateStr).toLocaleDateString(undefined, options);
+  function sanitizeTitle(title) {
+    return title.replace(/\s+/g, "-").toLowerCase();
   }
 
   /**
-   * Observes elements for lazy loading images or additional content.
+   * Formats a date string into a more readable format.
+   * @param {string} dateString - The date string to format.
+   * @returns {string} - Formatted date string.
+   */
+  function formatDate(dateString) {
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    const date = new Date(dateString);
+    return date.toLocaleDateString(undefined, options);
+  }
+
+  /**
+   * Initializes lazy loading for images.
    */
   function initializeLazyLoading() {
     const lazyImages = document.querySelectorAll("img[data-src]");
-
     const imageObserver = new IntersectionObserver(
       (entries, observer) => {
         entries.forEach((entry) => {
@@ -642,54 +625,6 @@ function handleOnReadyKnowledge() {
   }
 
   /**
-   * Determines if the news article is within the display date range.
-   * @param {string} publishDate - The publish date of the news article.
-   * @param {string} archiveDate - The archive date of the news article.
-   * @returns {boolean} - True if within display range, else false.
-   */
-  function isWithinDisplayDate(publishDate, archiveDate) {
-    const currentDate = new Date();
-    const publish = new Date(publishDate);
-    const archive = new Date(archiveDate);
-    return currentDate >= publish && currentDate < archive;
-  }
-
-  /**
-   * Sets up pagination controls.
-   * @param {number} totalItems - Total number of news articles.
-   * @param {number} itemsPerPage - Number of articles per page.
-   */
-  function setupPagination(totalItems, itemsPerPage) {
-    const paginationContainer = document.getElementById("news-pagination");
-
-    // Check if the pagination container exists
-    if (!paginationContainer) {
-      console.error(
-        "Pagination container with ID 'news-pagination' not found in the DOM."
-      );
-      return;
-    }
-
-    // Clear existing pagination
-    paginationContainer.innerHTML = "";
-
-    const totalPages = Math.ceil(totalItems / itemsPerPage);
-
-    for (let i = 1; i <= totalPages; i++) {
-      const pageButton = document.createElement("button");
-      pageButton.textContent = i;
-      pageButton.classList.add("pagination-button");
-
-      pageButton.addEventListener("click", () => {
-        currentPage = i;
-        renderLatestNews(latestNews);
-      });
-
-      paginationContainer.appendChild(pageButton);
-    }
-  }
-
-  /**
    * Displays a message when there are no news articles.
    */
   function displayNoNewsMessage() {
@@ -706,7 +641,7 @@ function handleOnReadyKnowledge() {
 
     newsContainer.innerHTML = `<p>Failed to load latest news. Please try again later.</p>`;
 
-    // Optionally, log detailed error information for debugging
+    // Optionally, display error details in the console for debugging
     console.error("Error loading latest news:", error);
   }
 
