@@ -113,7 +113,7 @@ function createCards(data, container, parent = null) {
       // **Event Listeners**
       card.addEventListener("click", () => {
         const childType = getChildType(item);
-
+        console.log("**Event Listeners**", childType);
         if (childType === "Form") {
           // Redirect directly to the form URL
           redirectToFormPage(item);
@@ -873,23 +873,6 @@ function handleOnReadyKnowledge() {
 
     window.location.href = item.contentURL; // Redirect to the content URL
   }
-
-  // /**
-  //  * Redirects the user to the specified form URL.
-  //  * @param {Object} item - The form item containing the form URL details.
-  //  */
-  // function redirectToFormPage(item) {
-  //   const formURL = item.formURL; // Ensure that each Form item has a 'formURL' property
-
-  //   if (!formURL) {
-  //     console.warn("Form URL not specified for item:", item);
-  //     return;
-  //   }
-
-  //   logUserJourney("View Form", `Redirected to form: ${formURL}`);
-
-  //   window.location.href = formURL; // Redirect to the external form URL
-  // }
 
   /**
    * Logs the user's journey for analytics or tracking purposes.
