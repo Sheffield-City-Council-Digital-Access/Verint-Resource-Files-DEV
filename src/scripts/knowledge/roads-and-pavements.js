@@ -51,7 +51,18 @@ class FormRaP extends CoreRaP {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-
+const damagedMissingKerb = new FormRaP(
+  "damagedMissingKerb",
+  "Damaged, missing kerb",
+  "Report a damaged or missing kerb",
+  "damaged_missing_kerb",
+  {
+    type: "Report",
+    keywords: ["Kerb"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "28/09/2024", name: "Elliott Griffiths" }
+);
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
