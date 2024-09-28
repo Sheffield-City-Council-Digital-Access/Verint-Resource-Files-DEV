@@ -179,8 +179,11 @@ function createCards(data, container, parent = null) {
             );
           } else {
             // No further navigation, handle content
-            console.log(item);
-            redirectToContentPage(item);
+            if (item.formName) {
+              redirectToFormPage(item);
+            } else {
+              redirectToContentPage(item);
+            }
           }
       });
 
