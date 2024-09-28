@@ -565,17 +565,10 @@ function handleOnReadyKnowledge() {
       return [];
     }
 
-    const searchTerms = searchQuery.toLowerCase().split(" ");
-
-    const calculateRelevance = (textToSearch) => {
-      let relevance = 0;
-      searchTerms.forEach((term) => {
-        const regex = new RegExp(term, "gi");
-        const matches = textToSearch.match(regex);
-        relevance += matches ? matches.length : 0;
-      });
-      return relevance;
-    };
+    const searchTerms = searchQuery
+      .toLowerCase()
+      .split(" ")
+      .filter((term) => term.length >= 2);
 
     const searchableItems = knowledge.flatMap((service) =>
       service.subjects
@@ -599,11 +592,13 @@ function handleOnReadyKnowledge() {
           ${content}
         `.toLowerCase();
 
+          const relevance = calculateRelevance(contentSubject, searchTerms);
+
           return {
             ...contentSubject,
             serviceName: service.name,
             type: "knowledge",
-            relevance: calculateRelevance(textToSearch),
+            relevance,
           };
         })
     );
@@ -614,35 +609,21 @@ function handleOnReadyKnowledge() {
       ${news.content}
     `.toLowerCase();
 
+      const relevance = calculateRelevance(news, searchTerms);
+
       return {
         title: news.title,
         description: news.content,
         content: news.content,
         type: "news",
-        relevance: calculateRelevance(textToSearch),
+        relevance,
       };
     });
 
     const combinedItems = [...searchableItems, ...newsItems];
 
     const results = combinedItems
-      .filter((item) => {
-        const keywords = (item.meta && item.meta.keywords) || [];
-        const categories = (item.meta && item.meta.categories) || [];
-        const title = item.title || "";
-        const description = item.description || "";
-        const content = item.content || "";
-
-        const textToSearch = `
-        ${keywords.join(" ")}
-        ${categories.join(" ")}
-        ${title}
-        ${description}
-        ${content}
-      `.toLowerCase();
-
-        return searchTerms.some((term) => textToSearch.includes(term));
-      })
+      .filter((item) => item.relevance > 0)
       .sort((a, b) => b.relevance - a.relevance);
 
     return results;
