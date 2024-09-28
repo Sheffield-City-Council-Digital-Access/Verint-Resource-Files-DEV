@@ -118,77 +118,76 @@ function createCards(data, container, parent = null) {
       card.addEventListener("click", () => {
         const childType = getChildType(item);
 
-          const hasSubjects = item.subjects && item.subjects.length > 0;
-          const hasTopics = item.topics && item.topics.length > 0;
-          let nextLevelData = null;
+        const hasSubjects = item.subjects && item.subjects.length > 0;
+        const hasTopics = item.topics && item.topics.length > 0;
+        let nextLevelData = null;
+
+        if (hasSubjects) {
+          nextLevelData = item.subjects;
+          currentLevel = "sub";
+        } else if (hasTopics) {
+          nextLevelData = item.topics;
+          currentLevel = "topics";
+        }
+
+        if (nextLevelData) {
+          previousData = nextLevelData;
+          const nextContainer = hasSubjects
+            ? subjectMenuContainer
+            : hasTopics
+            ? topicsMenuContainer
+            : null;
+
+          createCards(nextLevelData, nextContainer, item);
+
+          // **Update Breadcrumbs**
+          const breadcrumbElements = document.querySelectorAll(
+            hasSubjects
+              ? ".subject-menu-btn"
+              : hasTopics
+              ? ".topic-menu-btn"
+              : null
+          );
+
+          if (breadcrumbElements.length > 0) {
+            breadcrumbElements.forEach((breadcrumbElement) => {
+              breadcrumbElement.textContent = item.name;
+            });
+          }
+
+          // **Toggle Visibility of Menu Buttons**
+          const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
 
           if (hasSubjects) {
-            nextLevelData = item.subjects;
-            currentLevel = "sub";
-          } else if (hasTopics) {
-            nextLevelData = item.topics;
-            currentLevel = "topics";
+            topicMenuButtons.forEach((btn) => {
+              btn.style.display = "none";
+            });
+          }
+          if (hasTopics) {
+            topicMenuButtons.forEach((btn) => {
+              btn.style.display = "block";
+            });
           }
 
-          if (nextLevelData) {
-            previousData = nextLevelData;
-            const nextContainer = hasSubjects
-              ? subjectMenuContainer
+          // **Navigate to the Appropriate Page**
+          KDF.gotoPage(
+            hasSubjects
+              ? "page_subject_menu"
               : hasTopics
-              ? topicsMenuContainer
-              : null;
-
-            createCards(nextLevelData, nextContainer, item);
-
-            // **Update Breadcrumbs**
-            const breadcrumbElements = document.querySelectorAll(
-              hasSubjects
-                ? ".subject-menu-btn"
-                : hasTopics
-                ? ".topic-menu-btn"
-                : null
-            );
-
-            if (breadcrumbElements.length > 0) {
-              breadcrumbElements.forEach((breadcrumbElement) => {
-                breadcrumbElement.textContent = item.name;
-              });
-            }
-
-            // **Toggle Visibility of Menu Buttons**
-            const topicMenuButtons =
-              document.querySelectorAll(".topic-menu-btn");
-
-            if (hasSubjects) {
-              topicMenuButtons.forEach((btn) => {
-                btn.style.display = "none";
-              });
-            }
-            if (hasTopics) {
-              topicMenuButtons.forEach((btn) => {
-                btn.style.display = "block";
-              });
-            }
-
-            // **Navigate to the Appropriate Page**
-            KDF.gotoPage(
-              hasSubjects
-                ? "page_subject_menu"
-                : hasTopics
-                ? "page_topic_menu"
-                : null,
-              true,
-              true,
-              true
-            );
+              ? "page_topic_menu"
+              : null,
+            true,
+            true,
+            true
+          );
+        } else {
+          // No further navigation, handle content
+          if (item.formName) {
+            redirectToFormPage(item);
           } else {
-            // No further navigation, handle content
-            if (item.formName) {
-              redirectToFormPage(item);
-            } else {
-              redirectToContentPage(item);
-            }
+            redirectToContentPage(item);
           }
+        }
       });
 
       card.addEventListener("keydown", (event) => {
@@ -1098,43 +1097,36 @@ function handleOnReadyKnowledge() {
               }
 
               // Handle Forms
-              if (Array.isArray(subject.forms)) {
-                subject.forms.forEach((form) => {
-                  if (form.content) {
-                    const card = document.createElement("div");
-                    card.classList.add("search-card");
-                    card.setAttribute("tabindex", "0");
+              if (subject.forms) {
+                const card = document.createElement("div");
+                card.classList.add("search-card");
+                card.setAttribute("tabindex", "0");
 
-                    const title = document.createElement("h3");
-                    title.textContent = form.name;
+                const title = document.createElement("h3");
+                title.textContent = form.name;
 
-                    const description = document.createElement("div");
-                    description.innerHTML = form.description;
+                const description = document.createElement("div");
+                description.innerHTML = form.description;
 
-                    card.appendChild(title);
-                    card.appendChild(description);
+                card.appendChild(title);
+                card.appendChild(description);
 
-                    card.dataset.option = JSON.stringify({
-                      id: form.id,
-                      name: form.name,
-                      description: form.description,
-                      content: form.content,
-                      process: form.process,
-                      transfer: form.transfer,
-                      finish: form.finish,
-                      meta: form.meta,
-                      lastModified: form.lastModified,
-                      serviceName: service.name,
-                      type: "form", // Explicit type
-                    });
-
-                    options.push(card);
-
-                    if (form.name) {
-                      visibleLetters.add(form.name[0].toUpperCase());
-                    }
-                  }
+                card.dataset.option = JSON.stringify({
+                  id: form.id,
+                  name: form.name,
+                  description: form.description,
+                  formName: form.formName,
+                  meta: form.meta,
+                  lastModified: form.lastModified,
+                  serviceName: service.name,
+                  type: "form", // Explicit type
                 });
+
+                options.push(card);
+
+                if (form.name) {
+                  visibleLetters.add(form.name[0].toUpperCase());
+                }
               }
 
               // Handle Topics
