@@ -487,26 +487,170 @@ function handleOnReadyKnowledge() {
 
   // --- LATEST NEWS -------------------------------------------------------- \\
 
-  const newsContainer = document.getElementById("news-container");
-  const archivedNewsContainer = document.getElementById(
-    "archived-news-container"
-  );
+  // src/scripts/knowledge/index.js
 
-  const sortedNews = latestNews
-    .slice()
-    .sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
+  // --- LATEST NEWS -------------------------------------------------------- \\
 
-  renderArticles(sortedNews, newsContainer, isWithinDisplayDate);
+  // Global variable to store latest news data
+  let latestNews = [];
+  let currentPage = 1;
+  const articlesPerPage = 5;
 
-  renderArticles(
-    sortedNews,
-    archivedNewsContainer,
-    (publishDate, archiveDate) => {
-      const currentDate = new Date();
-      return new Date(archiveDate) <= currentDate;
+  /**
+   * Initializes the latest news section.
+   */
+  function initializeLatestNews() {
+    fetchLatestNews()
+      .then((news) => {
+        latestNews = sortNewsByDate(news);
+        if (latestNews.length === 0) {
+          displayNoNewsMessage();
+          return;
+        }
+        renderLatestNews(latestNews);
+        renderArchivedNews(latestNews);
+        checkLatestNewsBadge();
+      })
+      .catch((error) => {
+        displayLoadError();
+        console.error("Error initializing latest news:", error);
+      });
+  }
+
+  /**
+   * Fetches the latest news from the server or API.
+   * @returns {Promise<Array>} - A promise that resolves to an array of news items.
+   */
+  function fetchLatestNews() {
+    return fetch("/api/latest-news") // Replace with actual API endpoint
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      });
+  }
+
+  /**
+   * Sorts news articles by publish date in descending order.
+   * @param {Array} newsArray - Array of news articles.
+   * @returns {Array} - Sorted array of news articles.
+   */
+  function sortNewsByDate(newsArray) {
+    return newsArray
+      .slice()
+      .sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
+  }
+
+  /**
+   * Renders the latest news articles with pagination.
+   * @param {Array} newsArray - Array of sorted news articles.
+   */
+  function renderLatestNews(newsArray) {
+    const newsContainer = document.getElementById("news-container");
+    newsContainer.innerHTML = "";
+    displayPage(newsArray, newsContainer, currentPage, articlesPerPage);
+    setupPagination(newsArray.length, articlesPerPage);
+  }
+
+  /**
+   * Displays a specific page of news articles.
+   * @param {Array} newsArray - Array of news articles.
+   * @param {HTMLElement} container - The container to render articles.
+   * @param {number} page - The current page number.
+   * @param {number} perPage - Number of articles per page.
+   */
+  function displayPage(newsArray, container, page, perPage) {
+    const start = (page - 1) * perPage;
+    const end = start + perPage;
+    const paginatedNews = newsArray.slice(start, end);
+
+    paginatedNews.forEach((newsItem) => {
+      if (isWithinDisplayDate(newsItem.publishDate, newsItem.archiveDate)) {
+        const article = createNewsArticle(newsItem);
+        container.appendChild(article);
+      }
+    });
+
+    initializeLazyLoading();
+  }
+
+  /**
+   * Sets up pagination controls.
+   * @param {number} totalArticles - Total number of articles.
+   * @param {number} perPage - Number of articles per page.
+   */
+  function setupPagination(totalArticles, perPage) {
+    const paginationContainer = document.getElementById("news-pagination");
+    paginationContainer.innerHTML = "";
+
+    const totalPages = Math.ceil(totalArticles / perPage);
+
+    for (let i = 1; i <= totalPages; i++) {
+      const pageButton = document.createElement("button");
+      pageButton.textContent = i;
+      pageButton.classList.add("pagination-button");
+      if (i === currentPage) pageButton.classList.add("active");
+
+      pageButton.addEventListener("click", () => {
+        currentPage = i;
+        renderLatestNews(latestNews);
+      });
+
+      paginationContainer.appendChild(pageButton);
     }
-  );
+  }
 
+  /**
+   * Renders archived news articles.
+   * @param {Array} newsArray - Array of sorted news articles.
+   */
+  function renderArchivedNews(newsArray) {
+    const archivedNewsContainer = document.getElementById(
+      "archived-news-container"
+    );
+    const currentDate = new Date();
+
+    const archivedNews = newsArray.filter(
+      (news) => new Date(news.archiveDate) <= currentDate
+    );
+    renderArchivedNewsList(archivedNews, archivedNewsContainer);
+  }
+
+  /**
+   * Renders a list of archived news articles.
+   * @param {Array} newsArray - Array of news articles.
+   * @param {HTMLElement} container - The container to render articles.
+   */
+  function renderArchivedNewsList(newsArray, container) {
+    newsArray.forEach((newsItem) => {
+      const article = createNewsArticle(newsItem);
+      container.appendChild(article);
+    });
+  }
+
+  /**
+   * Checks and displays a badge if there are recent news articles.
+   */
+  function checkLatestNewsBadge() {
+    const badgeButton = document.getElementById("latestNews");
+    const recentNews = latestNews.some((news) => {
+      const publishDate = new Date(news.publishDate);
+      const daysDifference = (new Date() - publishDate) / (1000 * 60 * 60 * 24);
+      return daysDifference <= 3;
+    });
+
+    if (recentNews) {
+      badgeButton.classList.add("new-badge");
+    }
+  }
+
+  /**
+   * Determines if the news article is within the display date range.
+   * @param {string} publishDate - The publish date of the news article.
+   * @param {string} archiveDate - The archive date of the news article.
+   * @returns {boolean} - True if within display range, else false.
+   */
   function isWithinDisplayDate(publishDate, archiveDate) {
     const currentDate = new Date();
     const publish = new Date(publishDate);
@@ -514,49 +658,127 @@ function handleOnReadyKnowledge() {
     return currentDate >= publish && currentDate < archive;
   }
 
+  /**
+   * Formats a date string to a more readable format.
+   * @param {string} dateStr - The date string to format.
+   * @returns {string} - The formatted date string.
+   */
+  function formatDate(dateStr) {
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    return new Date(dateStr).toLocaleDateString(undefined, options);
+  }
+
+  /**
+   * Renders articles into the specified container.
+   * @param {Array} newsArray - Array of news articles.
+   * @param {HTMLElement} container - The DOM element to append articles to.
+   * @param {Function} filterFunction - Function to filter news articles.
+   */
   function renderArticles(newsArray, container, filterFunction) {
+    if (!container) {
+      console.warn("Container not found");
+      return;
+    }
+
+    container.innerHTML = "";
+
+    const fragment = document.createDocumentFragment();
+
     newsArray.forEach((newsItem) => {
       if (filterFunction(newsItem.publishDate, newsItem.archiveDate)) {
-        const article = document.createElement("article");
-        article.classList.add("news-article");
-        article.tabIndex = 0;
-
-        const title = document.createElement("h2");
-        title.textContent = newsItem.title;
-        article.appendChild(title);
-
-        const content = document.createElement("div");
-        content.innerHTML = newsItem.content;
-        article.appendChild(content);
-
-        const publishDate = new Date(newsItem.publishDate);
-        const formattedDate = publishDate.toLocaleDateString();
-
-        const metadata = document.createElement("p");
-        metadata.classList.add("metadata");
-        metadata.textContent = `Published by ${newsItem.createdBy} on ${formattedDate}`;
-        article.appendChild(metadata);
-
-        container.appendChild(article);
+        const article = createNewsArticle(newsItem);
+        fragment.appendChild(article);
       }
+    });
+
+    container.appendChild(fragment);
+    initializeLazyLoading();
+  }
+
+  /**
+   * Creates a single news article element with enhanced accessibility.
+   * @param {Object} newsItem - The news article data.
+   * @returns {HTMLElement} - The constructed accessible article element.
+   */
+  function createNewsArticle(newsItem) {
+    const article = document.createElement("article");
+    article.classList.add("news-article");
+    article.setAttribute("tabindex", "0");
+    article.setAttribute("role", "article");
+    article.setAttribute("aria-labelledby", `news-title-${newsItem.id}`);
+
+    const publishDate = formatDate(newsItem.publishDate);
+
+    article.innerHTML = `
+    <h2 id="news-title-${newsItem.id}">${newsItem.title}</h2>
+    <div>
+      ${
+        newsItem.imageUrl
+          ? `<img data-src="${newsItem.imageUrl}" alt="${newsItem.title}" class="lazy-image">`
+          : ""
+      }
+      ${newsItem.content}
+    </div>
+    <p class="metadata">Published by ${newsItem.createdBy} on ${publishDate}</p>
+  `;
+
+    // Keyboard Accessibility
+    article.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        article.click();
+      }
+    });
+
+    return article;
+  }
+
+  /**
+   * Observes elements for lazy loading images or additional content.
+   */
+  function initializeLazyLoading() {
+    const lazyImages = document.querySelectorAll("img[data-src]");
+
+    const imageObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.getAttribute("data-src");
+            img.removeAttribute("data-src");
+            observer.unobserve(img);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      }
+    );
+
+    lazyImages.forEach((img) => {
+      imageObserver.observe(img);
     });
   }
 
-  function checkLatestNews() {
-    const button = document.getElementById("latestNews");
-    const currentDate = new Date();
-
-    for (const news of latestNews) {
-      const publishDate = new Date(news.publishDate);
-
-      if ((currentDate - publishDate) / (1000 * 60 * 60 * 24) <= 3) {
-        button.classList.add("new-badge");
-        break;
-      }
-    }
+  /**
+   * Displays a message when there are no news articles.
+   */
+  function displayNoNewsMessage() {
+    const newsContainer = document.getElementById("news-container");
+    newsContainer.innerHTML = "<p>No latest news available at the moment.</p>";
   }
 
-  checkLatestNews();
+  /**
+   * Displays an error message when news fails to load.
+   */
+  function displayLoadError() {
+    const newsContainer = document.getElementById("news-container");
+    newsContainer.innerHTML =
+      "<p>Failed to load latest news. Please try again later.</p>";
+  }
+
+  initializeLatestNews();
 
   // --- SEARCH ------------------------------------------------------------- \\
 
