@@ -68,8 +68,8 @@ const damagedMissingKerb = new FormRaP(
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const roadsAndPavements = new ServiceRaP(
-  'roadsAndPavements',
-  'Roads and Pavements',
+  "roadsAndPavements",
+  "Roads and Pavements",
   `Roadworks, Streets Ahead, maintenance, street lighting, traffic lights, road signs, traffic cameras, bus lanes, cycling…`,
-  []
+  [damagedMissingKerb]
 );

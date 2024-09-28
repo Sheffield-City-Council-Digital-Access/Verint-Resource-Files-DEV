@@ -136,7 +136,7 @@ function createCards(data, container, parent = null) {
               ? subjectMenuContainer
               : hasTopics
               ? topicsMenuContainer
-              : null; // Removed formsMenuContainer
+              : null;
 
             createCards(nextLevelData, nextContainer, item);
 
@@ -176,7 +176,7 @@ function createCards(data, container, parent = null) {
                 ? "page_subject_menu"
                 : hasTopics
                 ? "page_topic_menu"
-                : null, // Removed form page
+                : null,
               true,
               true,
               true
