@@ -570,35 +570,81 @@ function handleOnReadyKnowledge() {
   }
 
   /**
-   * Calculates the relevance score for an item based on search terms.
+   * Enhances relevance scoring based on term co-occurrence.
+   * @param {number} relevance - Current relevance score.
+   * @param {Object} item - The item being scored.
+   * @param {Array} searchTerms - Array of search terms.
+   * @returns {number} - Enhanced relevance score.
+   */
+  const enhanceRelevanceForCoOccurrence = (relevance, item, searchTerms) => {
+    const allTermsPresent = searchTerms.every((term) => {
+      const regex = new RegExp(`\\b${escapeRegExp(term)}\\b`, "i");
+      return (
+        (item.title && regex.test(item.title)) ||
+        (item.description && regex.test(item.description)) ||
+        (item.content && regex.test(item.content))
+      );
+    });
+
+    if (allTermsPresent) {
+      relevance += 10; // Boost for all terms found
+    }
+
+    return relevance;
+  };
+
+  /**
+   * Calculates the relevance score for an item based on search terms and phrases.
    * @param {Object} item - The item to calculate relevance for.
    * @param {Array} searchTerms - The array of search terms.
+   * @param {Array} searchPhrases - The array of search phrases.
    * @returns {number} - The relevance score.
    */
-  const calculateRelevance = (item, searchTerms) => {
+  const calculateRelevance = (item, searchTerms, searchPhrases) => {
     let relevance = 0;
 
-    searchTerms.forEach((term) => {
-      if (term.length < 2) {
-        // Skip very short terms to avoid noise
-        return;
+    // Handle phrases first
+    searchPhrases.forEach((phrase) => {
+      if (phrase.length < 2) return; // Skip very short phrases
+
+      const escapedPhrase = escapeRegExp(phrase);
+      const regexPhrase = new RegExp(`\\b${escapedPhrase}\\b`, "gi");
+
+      if (item.title && regexPhrase.test(item.title)) {
+        relevance += 50; // High weight for exact phrase in title
       }
 
+      if (item.description && regexPhrase.test(item.description)) {
+        relevance += 30; // Medium weight for exact phrase in description
+      }
+
+      if (item.content && regexPhrase.test(item.content)) {
+        relevance += 10; // Lower weight for exact phrase in content
+      }
+
+      // Enhance relevance if all terms are present
+      relevance = enhanceRelevanceForCoOccurrence(relevance, item, searchTerms);
+    });
+
+    // Handle individual terms
+    searchTerms.forEach((term) => {
+      if (term.length < 2) return; // Skip very short terms
+
       const escapedTerm = escapeRegExp(term);
-      const regex = new RegExp(`\\b${escapedTerm}\\b`, "gi");
+      const regexTerm = new RegExp(`\\b${escapedTerm}\\b`, "gi");
 
       // Title matches carry more weight
-      if (item.title && regex.test(item.title)) {
+      if (item.title && regexTerm.test(item.title)) {
         relevance += 5; // Weight for title matches
       }
 
       // Description matches have medium weight
-      if (item.description && regex.test(item.description)) {
+      if (item.description && regexTerm.test(item.description)) {
         relevance += 3; // Weight for description matches
       }
 
       // Content matches have lower weight
-      if (item.content && regex.test(item.content)) {
+      if (item.content && regexTerm.test(item.content)) {
         relevance += 1; // Weight for content matches
       }
     });
@@ -618,7 +664,18 @@ function handleOnReadyKnowledge() {
       return [];
     }
 
-    const searchTerms = searchQuery
+    // Split searchQuery into terms and phrases
+    const phrasePattern = /"([^"]+)"/g;
+    let match;
+    const searchPhrases = [];
+    let tempQuery = searchQuery;
+
+    while ((match = phrasePattern.exec(searchQuery)) !== null) {
+      searchPhrases.push(match[1].toLowerCase());
+      tempQuery = tempQuery.replace(match[0], "");
+    }
+
+    const searchTerms = tempQuery
       .toLowerCase()
       .split(" ")
       .filter((term) => term.length >= 2);
@@ -631,14 +688,11 @@ function handleOnReadyKnowledge() {
             subject.constructor.name.startsWith("Content")
         )
         .map((contentSubject) => {
-          const keywords =
-            (contentSubject.meta && contentSubject.meta.keywords) || [];
-          const categories =
-            (contentSubject.meta && contentSubject.meta.categories) || [];
-          const description = contentSubject.description || "";
-          const content = contentSubject.content || "";
-
-          const relevance = calculateRelevance(contentSubject, searchTerms);
+          const relevance = calculateRelevance(
+            contentSubject,
+            searchTerms,
+            searchPhrases
+          );
 
           return {
             ...contentSubject,
@@ -650,7 +704,7 @@ function handleOnReadyKnowledge() {
     );
 
     const newsItems = latestNews.map((news) => {
-      const relevance = calculateRelevance(news, searchTerms);
+      const relevance = calculateRelevance(news, searchTerms, searchPhrases);
 
       return {
         title: news.title,
