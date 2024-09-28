@@ -12,20 +12,23 @@ let previousData = [];
 let serviceMenuContainer;
 let subjectMenuContainer;
 let topicsMenuContainer;
+let searchInput;
 
 // --- FUNCTIONS ------------------------------------------------------------ \\
 
 /**
  * Determines the type of children within a parent object.
  * @param {Object} parent - The parent object containing children.
- * @returns {string} - The type of children ("Menu", "Content", or "Unknown").
+ * @returns {string} - The type of children ("Menu", "Content", "Form", or "Unknown").
  */
 function getChildType(parent) {
-  if (!parent.subjects && !parent.topics) {
+  if (!parent.subjects && !parent.topics && !parent.forms) {
+    // Added !parent.forms
     return "Unknown";
   }
 
-  const firstChild = parent.subjects?.[0] || parent.topics?.[0];
+  const firstChild =
+    parent.subjects?.[0] || parent.topics?.[0] || parent.forms?.[0]; // Added parent.forms
 
   if (!firstChild || !firstChild.constructor || !firstChild.constructor.name) {
     return "Unknown";
@@ -37,6 +40,9 @@ function getChildType(parent) {
     return "Menu";
   } else if (className.startsWith("Content")) {
     return "Content";
+  } else if (className.startsWith("Form")) {
+    // New condition for Form
+    return "Form";
   } else {
     return "Unknown";
   }
@@ -106,60 +112,79 @@ function createCards(data, container, parent = null) {
 
       // **Event Listeners**
       card.addEventListener("click", () => {
-        const hasSubjects = item.subjects && item.subjects.length > 0;
-        const hasTopics = item.topics && item.topics.length > 0;
-        let nextLevelData = null;
+        const childType = getChildType(item);
 
-        if (hasSubjects) {
-          nextLevelData = item.subjects;
-          currentLevel = "sub";
-        } else if (hasTopics) {
-          nextLevelData = item.topics;
-          currentLevel = "topics";
-        }
-
-        if (nextLevelData) {
-          previousData = nextLevelData;
-          const nextContainer = hasSubjects
-            ? subjectMenuContainer
-            : topicsMenuContainer;
-
-          createCards(nextLevelData, nextContainer, item);
-
-          // **Update Breadcrumbs**
-          const breadcrumbElements = document.querySelectorAll(
-            hasSubjects ? ".subject-menu-btn" : ".topic-menu-btn"
-          );
-
-          if (breadcrumbElements.length > 0) {
-            breadcrumbElements.forEach((breadcrumbElement) => {
-              breadcrumbElement.textContent = item.name;
-            });
-          }
-
-          // **Toggle Visibility of Topic Menu Buttons**
-          const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
+        if (childType === "Form") {
+          // Redirect directly to the form URL
+          redirectToFormPage(item);
+        } else {
+          const hasSubjects = item.subjects && item.subjects.length > 0;
+          const hasTopics = item.topics && item.topics.length > 0;
+          let nextLevelData = null;
 
           if (hasSubjects) {
-            topicMenuButtons.forEach((btn) => {
-              btn.style.display = "none";
-            });
-          }
-          if (hasTopics) {
-            topicMenuButtons.forEach((btn) => {
-              btn.style.display = "block";
-            });
+            nextLevelData = item.subjects;
+            currentLevel = "sub";
+          } else if (hasTopics) {
+            nextLevelData = item.topics;
+            currentLevel = "topics";
           }
 
-          // **Navigate to the Appropriate Page**
-          KDF.gotoPage(
-            hasSubjects ? "page_subject_menu" : "page_topic_menu",
-            true,
-            true,
-            true
-          );
-        } else {
-          redirectToContentPage(item);
+          if (nextLevelData) {
+            previousData = nextLevelData;
+            const nextContainer = hasSubjects
+              ? subjectMenuContainer
+              : hasTopics
+              ? topicsMenuContainer
+              : null; // Removed formsMenuContainer
+
+            createCards(nextLevelData, nextContainer, item);
+
+            // **Update Breadcrumbs**
+            const breadcrumbElements = document.querySelectorAll(
+              hasSubjects
+                ? ".subject-menu-btn"
+                : hasTopics
+                ? ".topic-menu-btn"
+                : null
+            );
+
+            if (breadcrumbElements.length > 0) {
+              breadcrumbElements.forEach((breadcrumbElement) => {
+                breadcrumbElement.textContent = item.name;
+              });
+            }
+
+            // **Toggle Visibility of Menu Buttons**
+            const topicMenuButtons =
+              document.querySelectorAll(".topic-menu-btn");
+
+            if (hasSubjects) {
+              topicMenuButtons.forEach((btn) => {
+                btn.style.display = "none";
+              });
+            }
+            if (hasTopics) {
+              topicMenuButtons.forEach((btn) => {
+                btn.style.display = "block";
+              });
+            }
+
+            // **Navigate to the Appropriate Page**
+            KDF.gotoPage(
+              hasSubjects
+                ? "page_subject_menu"
+                : hasTopics
+                ? "page_topic_menu"
+                : null, // Removed form page
+              true,
+              true,
+              true
+            );
+          } else {
+            // No further navigation, handle content
+            redirectToContentPage(item);
+          }
         }
       });
 
@@ -247,6 +272,31 @@ function redirectToContentPage(item) {
   ]);
 
   KDF.gotoPage("page_content", true, true, true);
+}
+
+/**
+ * Redirects the user to the specified form URL.
+ * @param {Object} item - The form item containing the form URL details.
+ */
+function redirectToFormPage(item) {
+  const formName = item.formName; // Ensure that each Form item has a 'formURL' property
+
+  if (!formName) {
+    console.warn("Form name not specified for item:", item);
+    return;
+  }
+
+  logUserJourney("View Form", `Viewed form: ${formName}`);
+
+  const { protocol, hostname } = window.location;
+  const url = `${protocol}//${hostname}/form/launch/`;
+
+  const customerid = KDF.getParams().customerid
+    ? `customerid=${KDF.getParams().customerid}&`
+    : "";
+  const interactionid = `interactionid=${KDF.getParams().interactionid}`;
+
+  window.location.href = `${url}${formName}?${customerid}${interactionid}`;
 }
 
 /**
@@ -689,7 +739,8 @@ function handleOnReadyKnowledge() {
         .filter(
           (subject) =>
             subject.constructor &&
-            subject.constructor.name.startsWith("Content")
+            (subject.constructor.name.startsWith("Content") ||
+              subject.constructor.name.startsWith("Form")) // Include Form
         )
         .map((contentSubject) => {
           const relevance = calculateRelevance(
@@ -701,7 +752,9 @@ function handleOnReadyKnowledge() {
           return {
             ...contentSubject,
             serviceName: service.name,
-            type: "knowledge",
+            type: contentSubject.constructor.name.startsWith("Form")
+              ? "form" // Set type to form
+              : "knowledge",
             relevance,
           };
         })
@@ -779,78 +832,84 @@ function handleOnReadyKnowledge() {
     });
   }
 
+  /**
+   * Handles the click event on a search result or option card.
+   * @param {Object} result - The search result or option item.
+   */
   function handleCardClick(result) {
-    if (result.type === "knowledge") {
-      redirectToForm = result.process.formName ? result.process.formName : "";
-      tranferTypeKey = result.transfer.typeKey ? result.transfer.typeKey : "";
-      finishTypeKey = result.finish.typeKey ? result.finish.typeKey : "";
-      enquiryType = result.title || result.name;
+    switch (result.type) {
+      case "knowledge":
+        // Redirect to the content page for knowledge items
+        redirectToContentPage(result);
+        break;
 
-      const subjectBCElement = document.querySelectorAll(".subject-menu-btn");
-      if (subjectBCElement.length > 0) {
-        subjectBCElement.forEach((subjectBCElement) => {
-          subjectBCElement.textContent = result.serviceName;
-        });
-      }
+      case "news":
+        // Navigate to the latest news page
+        KDF.gotoPage("page_latest_news", true, true, true);
+        break;
 
-      const topicBCElement = document.querySelectorAll(".topic-menu-btn");
-      if (result.subjectName) {
-        if (topicBCElement.length > 0) {
-          topicBCElement.forEach((btn) => {
-            btn.textContent = result.subjectName;
-            btn.style.display = "block";
-          });
-        }
-      } else {
-        topicBCElement.forEach((btn) => {
-          btn.style.display = "none";
-        });
-      }
+      case "form":
+        // Redirect directly to the external form URL
+        redirectToFormPage(result);
+        break;
 
-      const breadcrumbElement = document.querySelector(".content-btn");
-      breadcrumbElement.textContent = enquiryType;
-
-      const titleElement = document.getElementById(
-        "dform_widget_header_hrd_page_title_content"
-      );
-      titleElement.textContent = enquiryType;
-
-      const contentContainer = document.getElementById(
-        "dform_widget_html_ahtm_content_container"
-      );
-      contentContainer.innerHTML = result.content;
-
-      const lastModifiedInfo = document.createElement("small");
-      lastModifiedInfo.textContent = `Last modified on: ${result.lastModified.date} by ${result.lastModified.name}`;
-      contentContainer.appendChild(lastModifiedInfo);
-
-      const button = document.getElementById(
-        "dform_widget_button_but_launch_process"
-      );
-      button.textContent = result.process.buttonLabel;
-
-      hideShowMultipleElements([
-        {
-          name: "but_launch_process",
-          display: result.process?.formName ? "show" : "hide",
-        },
-        {
-          name: "but_transfer_enquiry",
-          display: result.transfer?.typeKey ? "show" : "hide",
-        },
-        {
-          name: "but_finish_enquiry",
-          display: result.finish?.typeKey ? "show" : "hide",
-        },
-      ]);
-
-      KDF.gotoPage("page_content", true, true, true);
-    } else if (result.type === "news") {
-      KDF.gotoPage("page_latest_news", true, true, true);
+      default:
+        console.warn("Unknown result type:", result.type);
+        break;
     }
   }
 
-  const searchInput = document.getElementById("search-input");
+  /**
+   * Redirects the user to the specified content page.
+   * @param {Object} item - The knowledge item to display.
+   */
+  function redirectToContentPage(item) {
+    if (!item.contentURL) {
+      console.warn("Content URL not specified for item:", item);
+      return;
+    }
+
+    logUserJourney("View Content", `Viewed content: ${item.contentURL}`);
+
+    window.location.href = item.contentURL; // Redirect to the content URL
+  }
+
+  /**
+   * Redirects the user to the specified form URL.
+   * @param {Object} item - The form item containing the form URL details.
+   */
+  function redirectToFormPage(item) {
+    const formURL = item.formURL; // Ensure that each Form item has a 'formURL' property
+
+    if (!formURL) {
+      console.warn("Form URL not specified for item:", item);
+      return;
+    }
+
+    logUserJourney("View Form", `Redirected to form: ${formURL}`);
+
+    window.location.href = formURL; // Redirect to the external form URL
+  }
+
+  /**
+   * Logs the user's journey for analytics or tracking purposes.
+   * @param {string} eventType - The type of event (e.g., "View Content", "View Form").
+   * @param {string} description - A description of the event.
+   */
+  function logUserJourney(eventType, description) {
+    // Implement your logging or analytics tracking here
+    // Example:
+    if (window.analytics) {
+      window.analytics.track(eventType, {
+        description: description,
+        timestamp: new Date().toISOString(),
+      });
+    } else {
+      console.log(`${eventType}: ${description}`);
+    }
+  }
+
+  searchInput = document.getElementById("search-input");
 
   $("#search-button").on("click", () => {
     const results = searchKnowledge(
@@ -965,6 +1024,14 @@ function handleOnReadyKnowledge() {
               }
             });
           }
+          if (Array.isArray(subject.forms)) {
+            // Include forms
+            subject.forms.forEach((form) => {
+              if (form.meta && form.meta.type) {
+                categories.add(form.meta.type);
+              }
+            });
+          }
         });
       });
 
@@ -1005,6 +1072,7 @@ function handleOnReadyKnowledge() {
           service.subjects
             .filter(filterFn) // Apply Content Class Filtering
             .forEach((subject) => {
+              // Handle Content subjects
               if (subject.content) {
                 const card = document.createElement("div");
                 card.classList.add("search-card");
@@ -1030,7 +1098,9 @@ function handleOnReadyKnowledge() {
                   meta: subject.meta,
                   lastModified: subject.lastModified,
                   serviceName: service.name,
-                  type: "knowledge",
+                  type: subject.constructor.name.startsWith("Form")
+                    ? "form"
+                    : "knowledge", // Set type
                 });
 
                 options.push(card);
@@ -1040,6 +1110,47 @@ function handleOnReadyKnowledge() {
                 }
               }
 
+              // Handle Forms
+              if (Array.isArray(subject.forms)) {
+                subject.forms.forEach((form) => {
+                  if (form.content) {
+                    const card = document.createElement("div");
+                    card.classList.add("search-card");
+                    card.setAttribute("tabindex", "0");
+
+                    const title = document.createElement("h3");
+                    title.textContent = form.name;
+
+                    const description = document.createElement("div");
+                    description.innerHTML = form.description;
+
+                    card.appendChild(title);
+                    card.appendChild(description);
+
+                    card.dataset.option = JSON.stringify({
+                      id: form.id,
+                      name: form.name,
+                      description: form.description,
+                      content: form.content,
+                      process: form.process,
+                      transfer: form.transfer,
+                      finish: form.finish,
+                      meta: form.meta,
+                      lastModified: form.lastModified,
+                      serviceName: service.name,
+                      type: "form", // Explicit type
+                    });
+
+                    options.push(card);
+
+                    if (form.name) {
+                      visibleLetters.add(form.name[0].toUpperCase());
+                    }
+                  }
+                });
+              }
+
+              // Handle Topics
               if (Array.isArray(subject.topics)) {
                 const topicFilterFn = determineFilter(subject);
                 subject.topics
@@ -1129,7 +1240,11 @@ function handleOnReadyKnowledge() {
             (Array.isArray(subject.topics) &&
               subject.topics.some((topic) =>
                 topic.name.toUpperCase().startsWith(letter)
-              ))
+              )) ||
+            (Array.isArray(subject.forms) &&
+              subject.forms.some((form) =>
+                form.name.toUpperCase().startsWith(letter)
+              )) // Include forms
         )
       );
 
@@ -1144,11 +1259,17 @@ function handleOnReadyKnowledge() {
                     topic.name.toUpperCase().startsWith(letter)
                   )
                 : [],
+              forms: Array.isArray(subject.forms)
+                ? subject.forms.filter((form) =>
+                    form.name.toUpperCase().startsWith(letter)
+                  )
+                : [],
             }))
             .filter(
               (subject) =>
                 subject.name.toUpperCase().startsWith(letter) ||
-                subject.topics.length > 0
+                subject.topics.length > 0 ||
+                subject.forms.length > 0 // Include forms
             ),
         };
       });
@@ -1173,7 +1294,11 @@ function handleOnReadyKnowledge() {
             (Array.isArray(subject.topics) &&
               subject.topics.some(
                 (topic) => topic.meta && topic.meta.type === category
-              ))
+              )) ||
+            (Array.isArray(subject.forms) &&
+              subject.forms.some(
+                (form) => form.meta && form.meta.type === category
+              )) // Include forms
         )
       );
 
@@ -1188,11 +1313,17 @@ function handleOnReadyKnowledge() {
                     (topic) => topic.meta && topic.meta.type === category
                   )
                 : [],
+              forms: Array.isArray(subject.forms)
+                ? subject.forms.filter(
+                    (form) => form.meta && form.meta.type === category
+                  )
+                : [],
             }))
             .filter(
               (subject) =>
                 (subject.meta && subject.meta.type === category) ||
-                subject.topics.length > 0
+                subject.topics.length > 0 ||
+                subject.forms.length > 0 // Include forms
             ),
         };
       });
