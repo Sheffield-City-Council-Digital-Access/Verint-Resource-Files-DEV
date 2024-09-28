@@ -512,7 +512,7 @@ function handleOnReadyKnowledge() {
         checkLatestNewsBadge();
       })
       .catch((error) => {
-        displayLoadError();
+        displayLoadError(error);
         console.error("Error initializing latest news:", error);
       });
   }
@@ -771,11 +771,19 @@ function handleOnReadyKnowledge() {
 
   /**
    * Displays an error message when news fails to load.
+   * @param {Error} error - The error object.
    */
-  function displayLoadError() {
+  function displayLoadError(error) {
     const newsContainer = document.getElementById("news-container");
-    newsContainer.innerHTML =
-      "<p>Failed to load latest news. Please try again later.</p>";
+
+    if (error instanceof TypeError) {
+      newsContainer.innerHTML = `<p>Error: ${error.message}. Please check the API endpoint.</p>`;
+    } else {
+      newsContainer.innerHTML = `<p>Failed to load latest news. Please try again later.</p>`;
+    }
+
+    // Optional: Log detailed error information for debugging
+    console.error("Error loading latest news:", error);
   }
 
   initializeLatestNews();
