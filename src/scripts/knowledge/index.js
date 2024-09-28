@@ -495,7 +495,7 @@ function handleOnReadyKnowledge() {
   let latestNews = [];
   let currentPage = 1;
   const articlesPerPage = 5;
-
+  console.log(latestNews);
   /**
    * Initializes the latest news section.
    */
@@ -514,7 +514,7 @@ function handleOnReadyKnowledge() {
       console.error("Error initializing latest news:", error);
     }
   }
-
+  console.log(latestNews);
   /**
    * Sorts news articles by publish date in descending order.
    * @param {Array} newsArray - Array of news articles.
