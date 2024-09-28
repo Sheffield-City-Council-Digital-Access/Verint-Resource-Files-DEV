@@ -500,35 +500,19 @@ function handleOnReadyKnowledge() {
    * Initializes the latest news section.
    */
   function initializeLatestNews() {
-    fetchLatestNews()
-      .then((news) => {
-        latestNews = sortNewsByDate(news);
-        if (latestNews.length === 0) {
-          displayNoNewsMessage();
-          return;
-        }
-        renderLatestNews(latestNews);
-        renderArchivedNews(latestNews);
-        checkLatestNewsBadge();
-      })
-      .catch((error) => {
-        displayLoadError(error);
-        console.error("Error initializing latest news:", error);
-      });
-  }
-
-  /**
-   * Fetches the latest news from the server or API.
-   * @returns {Promise<Array>} - A promise that resolves to an array of news items.
-   */
-  function fetchLatestNews() {
-    return fetch("/api/latest-news") // Replace with actual API endpoint
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      });
+    try {
+      latestNews = sortNewsByDate(newsArticles);
+      if (latestNews.length === 0) {
+        displayNoNewsMessage();
+        return;
+      }
+      renderLatestNews(latestNews);
+      renderArchivedNews(latestNews);
+      checkLatestNewsBadge();
+    } catch (error) {
+      displayLoadError(error);
+      console.error("Error initializing latest news:", error);
+    }
   }
 
   /**
@@ -543,7 +527,7 @@ function handleOnReadyKnowledge() {
   }
 
   /**
-   * Renders the latest news articles with pagination.
+   * Renders the latest news articles.
    * @param {Array} newsArray - Array of sorted news articles.
    */
   function renderLatestNews(newsArray) {
@@ -602,50 +586,6 @@ function handleOnReadyKnowledge() {
   }
 
   /**
-   * Renders archived news articles.
-   * @param {Array} newsArray - Array of sorted news articles.
-   */
-  function renderArchivedNews(newsArray) {
-    const archivedNewsContainer = document.getElementById(
-      "archived-news-container"
-    );
-    const currentDate = new Date();
-
-    const archivedNews = newsArray.filter(
-      (news) => new Date(news.archiveDate) <= currentDate
-    );
-    renderArchivedNewsList(archivedNews, archivedNewsContainer);
-  }
-
-  /**
-   * Renders a list of archived news articles.
-   * @param {Array} newsArray - Array of news articles.
-   * @param {HTMLElement} container - The container to render articles.
-   */
-  function renderArchivedNewsList(newsArray, container) {
-    newsArray.forEach((newsItem) => {
-      const article = createNewsArticle(newsItem);
-      container.appendChild(article);
-    });
-  }
-
-  /**
-   * Checks and displays a badge if there are recent news articles.
-   */
-  function checkLatestNewsBadge() {
-    const badgeButton = document.getElementById("latestNews");
-    const recentNews = latestNews.some((news) => {
-      const publishDate = new Date(news.publishDate);
-      const daysDifference = (new Date() - publishDate) / (1000 * 60 * 60 * 24);
-      return daysDifference <= 3;
-    });
-
-    if (recentNews) {
-      badgeButton.classList.add("new-badge");
-    }
-  }
-
-  /**
    * Determines if the news article is within the display date range.
    * @param {string} publishDate - The publish date of the news article.
    * @param {string} archiveDate - The archive date of the news article.
@@ -659,46 +599,9 @@ function handleOnReadyKnowledge() {
   }
 
   /**
-   * Formats a date string to a more readable format.
-   * @param {string} dateStr - The date string to format.
-   * @returns {string} - The formatted date string.
-   */
-  function formatDate(dateStr) {
-    const options = { year: "numeric", month: "long", day: "numeric" };
-    return new Date(dateStr).toLocaleDateString(undefined, options);
-  }
-
-  /**
-   * Renders articles into the specified container.
-   * @param {Array} newsArray - Array of news articles.
-   * @param {HTMLElement} container - The DOM element to append articles to.
-   * @param {Function} filterFunction - Function to filter news articles.
-   */
-  function renderArticles(newsArray, container, filterFunction) {
-    if (!container) {
-      console.warn("Container not found");
-      return;
-    }
-
-    container.innerHTML = "";
-
-    const fragment = document.createDocumentFragment();
-
-    newsArray.forEach((newsItem) => {
-      if (filterFunction(newsItem.publishDate, newsItem.archiveDate)) {
-        const article = createNewsArticle(newsItem);
-        fragment.appendChild(article);
-      }
-    });
-
-    container.appendChild(fragment);
-    initializeLazyLoading();
-  }
-
-  /**
-   * Creates a single news article element with enhanced accessibility.
+   * Creates a single news article element.
    * @param {Object} newsItem - The news article data.
-   * @returns {HTMLElement} - The constructed accessible article element.
+   * @returns {HTMLElement} - The constructed article element.
    */
   function createNewsArticle(newsItem) {
     const article = document.createElement("article");
@@ -730,6 +633,16 @@ function handleOnReadyKnowledge() {
     });
 
     return article;
+  }
+
+  /**
+   * Formats a date string to a more readable format.
+   * @param {string} dateStr - The date string to format.
+   * @returns {string} - The formatted date string.
+   */
+  function formatDate(dateStr) {
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    return new Date(dateStr).toLocaleDateString(undefined, options);
   }
 
   /**
@@ -782,7 +695,7 @@ function handleOnReadyKnowledge() {
       newsContainer.innerHTML = `<p>Failed to load latest news. Please try again later.</p>`;
     }
 
-    // Optional: Log detailed error information for debugging
+    // Optionally, display error details in the console for debugging
     console.error("Error loading latest news:", error);
   }
 
