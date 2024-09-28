@@ -1040,12 +1040,16 @@ function handleOnReadyKnowledge() {
       });
     }
 
+    /**
+     * Creates options for the A-Z filter based on the provided services.
+     * @param {Array} filteredServices - The filtered services array.
+     * @param {boolean} updateAtoZ - Whether to update the A-Z filter.
+     */
     function createOptions(filteredServices, updateAtoZ = true) {
       const resultsContainer = document.querySelector(".options");
       resultsContainer.innerHTML = "";
 
       const visibleLetters = new Set();
-
       let options = [];
 
       filteredServices.forEach((service) => {
