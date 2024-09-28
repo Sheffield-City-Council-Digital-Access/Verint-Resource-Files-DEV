@@ -1058,7 +1058,7 @@ function handleOnReadyKnowledge() {
           service.subjects
             .filter(filterFn) // Apply Content Class Filtering
             .forEach((subject) => {
-              console.log(subject)
+              console.log(service, subject);
               // Handle Content subjects
               if (subject.content) {
                 const card = document.createElement("div");
