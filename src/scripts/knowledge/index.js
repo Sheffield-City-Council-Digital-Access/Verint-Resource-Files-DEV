@@ -1103,29 +1103,29 @@ function handleOnReadyKnowledge() {
                 card.setAttribute("tabindex", "0");
 
                 const title = document.createElement("h3");
-                title.textContent = form.name;
+                title.textContent = subject.name;
 
                 const description = document.createElement("div");
-                description.innerHTML = form.description;
+                description.innerHTML = subject.description;
 
                 card.appendChild(title);
                 card.appendChild(description);
 
                 card.dataset.option = JSON.stringify({
-                  id: form.id,
-                  name: form.name,
-                  description: form.description,
-                  formName: form.formName,
-                  meta: form.meta,
-                  lastModified: form.lastModified,
+                  id: subject.id,
+                  name: subject.name,
+                  description: subject.description,
+                  formName: subject.formName,
+                  meta: subject.meta,
+                  lastModified: subject.lastModified,
                   serviceName: service.name,
                   type: "form", // Explicit type
                 });
 
                 options.push(card);
 
-                if (form.name) {
-                  visibleLetters.add(form.name[0].toUpperCase());
+                if (subject.name) {
+                  visibleLetters.add(subject.name[0].toUpperCase());
                 }
               }
 
