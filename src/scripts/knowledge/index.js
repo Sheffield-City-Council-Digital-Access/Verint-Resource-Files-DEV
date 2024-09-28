@@ -1040,16 +1040,12 @@ function handleOnReadyKnowledge() {
       });
     }
 
-    /**
-     * Creates options for the A-Z filter based on the provided services.
-     * @param {Array} filteredServices - The filtered services array.
-     * @param {boolean} updateAtoZ - Whether to update the A-Z filter.
-     */
     function createOptions(filteredServices, updateAtoZ = true) {
       const resultsContainer = document.querySelector(".options");
       resultsContainer.innerHTML = "";
 
       const visibleLetters = new Set();
+
       let options = [];
 
       filteredServices.forEach((service) => {
@@ -1058,6 +1054,7 @@ function handleOnReadyKnowledge() {
           service.subjects
             .filter(filterFn) // Apply Content Class Filtering
             .forEach((subject) => {
+              console.log(subject)
               // Handle Content subjects
               if (subject.content) {
                 const card = document.createElement("div");
