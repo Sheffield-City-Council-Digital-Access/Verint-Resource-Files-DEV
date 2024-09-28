@@ -491,164 +491,76 @@ function handleOnReadyKnowledge() {
 
   // --- LATEST NEWS -------------------------------------------------------- \\
 
-  /**
-   * Initializes the latest news section.
-   */
-  function initializeLatestNews() {
-    try {
-      console.log("Initializing latest news...");
-      latestNews = sortNewsByDate(newsArticles);
-      console.log("Sorted Latest News:", latestNews);
-      if (latestNews.length === 0) {
-        displayNoNewsMessage();
-        return;
-      }
-      renderLatestNews(latestNews);
-      // Uncomment if these functions are defined
-      // renderArchivedNews(latestNews);
-      // checkLatestNewsBadge();
-    } catch (error) {
-      displayLoadError(error);
-      console.error("Error initializing latest news:", error);
+  const newsContainer = document.getElementById("news-container");
+  const archivedNewsContainer = document.getElementById(
+    "archived-news-container"
+  );
+
+  const sortedNews = latestNews
+    .slice()
+    .sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
+
+  renderArticles(sortedNews, newsContainer, isWithinDisplayDate);
+
+  renderArticles(
+    sortedNews,
+    archivedNewsContainer,
+    (publishDate, archiveDate) => {
+      const currentDate = new Date();
+      return new Date(archiveDate) <= currentDate;
     }
+  );
+
+  function isWithinDisplayDate(publishDate, archiveDate) {
+    const currentDate = new Date();
+    const publish = new Date(publishDate);
+    const archive = new Date(archiveDate);
+    return currentDate >= publish && currentDate < archive;
   }
 
-  /**
-   * Sorts news articles by publish date in descending order.
-   * @param {Array} newsArray - Array of news articles.
-   * @returns {Array} - Sorted array of news articles.
-   */
-  function sortNewsByDate(newsArray) {
-    return newsArray
-      .slice()
-      .sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
-  }
-
-  /**
-   * Renders the latest news articles.
-   * @param {Array} newsArray - Array of sorted news articles.
-   */
-  function renderLatestNews(newsArray) {
-    const newsContainer = document.getElementById("news-container");
-    newsContainer.innerHTML = "";
-    displayAllNews(newsArray, newsContainer);
-  }
-
-  /**
-   * Displays all news articles.
-   * @param {Array} newsArray - Array of news articles.
-   * @param {HTMLElement} container - The container to render articles.
-   */
-  function displayAllNews(newsArray, container) {
+  function renderArticles(newsArray, container, filterFunction) {
     newsArray.forEach((newsItem) => {
-      if (isWithinDisplayDate(newsItem.publishDate, newsItem.archiveDate)) {
-        const article = createNewsArticle(newsItem);
+      if (filterFunction(newsItem.publishDate, newsItem.archiveDate)) {
+        const article = document.createElement("article");
+        article.classList.add("news-article");
+        article.tabIndex = 0;
+
+        const title = document.createElement("h2");
+        title.textContent = newsItem.title;
+        article.appendChild(title);
+
+        const content = document.createElement("div");
+        content.innerHTML = newsItem.content;
+        article.appendChild(content);
+
+        const publishDate = new Date(newsItem.publishDate);
+        const formattedDate = publishDate.toLocaleDateString();
+
+        const metadata = document.createElement("p");
+        metadata.classList.add("metadata");
+        metadata.textContent = `Published by ${newsItem.createdBy} on ${formattedDate}`;
+        article.appendChild(metadata);
+
         container.appendChild(article);
       }
     });
-
-    initializeLazyLoading();
   }
 
-  /**
-   * Creates a single news article element.
-   * @param {Object} newsItem - The news article data.
-   * @returns {HTMLElement} - The constructed article element.
-   */
-  function createNewsArticle(newsItem) {
-    const article = document.createElement("article");
-    article.classList.add("news-article");
-    article.setAttribute("tabindex", "0");
-    article.setAttribute("role", "article");
-    article.setAttribute(
-      "aria-labelledby",
-      `news-title-${sanitizeTitle(newsItem.title)}`
-    );
+  function checkLatestNews() {
+    const button = document.getElementById("latestNews");
+    const currentDate = new Date();
 
-    const publishDate = formatDate(newsItem.publishDate);
+    for (const news of latestNews) {
+      const publishDate = new Date(news.publishDate);
 
-    article.innerHTML = `
-    <h2 id="news-title-${sanitizeTitle(newsItem.title)}">${newsItem.title}</h2>
-    <p><small>Published on ${publishDate} by ${newsItem.createdBy}</small></p>
-    <div>${newsItem.content}</div>
-  `;
-
-    return article;
-  }
-
-  /**
-   * Sanitizes the title to create a valid ID.
-   * @param {string} title - The news article title.
-   * @returns {string} - Sanitized title string.
-   */
-  function sanitizeTitle(title) {
-    return title.replace(/\s+/g, "-").toLowerCase();
-  }
-
-  /**
-   * Formats a date string into a more readable format.
-   * @param {string} dateString - The date string to format.
-   * @returns {string} - Formatted date string.
-   */
-  function formatDate(dateString) {
-    const options = { year: "numeric", month: "long", day: "numeric" };
-    const date = new Date(dateString);
-    return date.toLocaleDateString(undefined, options);
-  }
-
-  /**
-   * Initializes lazy loading for images.
-   */
-  function initializeLazyLoading() {
-    const lazyImages = document.querySelectorAll("img[data-src]");
-    const imageObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const img = entry.target;
-            img.src = img.getAttribute("data-src");
-            img.removeAttribute("data-src");
-            observer.unobserve(img);
-          }
-        });
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.1,
+      if ((currentDate - publishDate) / (1000 * 60 * 60 * 24) <= 3) {
+        button.classList.add("new-badge");
+        break;
       }
-    );
-
-    lazyImages.forEach((img) => {
-      imageObserver.observe(img);
-    });
+    }
   }
 
-  /**
-   * Displays a message when there are no news articles.
-   */
-  function displayNoNewsMessage() {
-    const newsContainer = document.getElementById("news-container");
-    newsContainer.innerHTML = "<p>No latest news available at the moment.</p>";
-  }
-
-  /**
-   * Displays an error message when news fails to load.
-   * @param {Error} error - The error object.
-   */
-  function displayLoadError(error) {
-    const newsContainer = document.getElementById("news-container");
-
-    newsContainer.innerHTML = `<p>Failed to load latest news. Please try again later.</p>`;
-
-    // Optionally, display error details in the console for debugging
-    console.error("Error loading latest news:", error);
-  }
-
-  // Initialize Latest News on Document Ready
-  document.addEventListener("DOMContentLoaded", () => {
-    initializeLatestNews();
-  });
+  checkLatestNews();
 
   // --- SEARCH ------------------------------------------------------------- \\
 
