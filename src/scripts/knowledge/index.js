@@ -492,7 +492,7 @@ function handleOnReadyKnowledge() {
   // --- LATEST NEWS -------------------------------------------------------- \\
 
   // Global variable to store latest news data
-  let latestNews = [];
+  // let latestNews = [];
   let currentPage = 1;
   const articlesPerPage = 5;
   console.log(latestNews);
