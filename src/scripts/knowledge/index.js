@@ -443,7 +443,7 @@ function handleOnReadyKnowledge() {
         createCards(
           service.subjects,
           subjectMenuContainer,
-          determineFilter("sub") // **Apply MenuH Filter**
+          determineFilter("sub") // **Apply Menu Filter**
         );
         KDF.gotoPage("page_subject_menu", true, true, true);
       }
@@ -463,7 +463,7 @@ function handleOnReadyKnowledge() {
         createCards(
           service.subjects,
           subjectMenuContainer,
-          determineFilter("sub") // **Apply MenuH Filter**
+          determineFilter("sub") // **Apply Menu Filter**
         );
         const label = button.textContent;
 
@@ -921,82 +921,88 @@ function handleOnReadyKnowledge() {
 
       filteredServices.forEach((service) => {
         if (Array.isArray(service.subjects)) {
-          service.subjects.forEach((subject) => {
-            if (subject.content) {
-              const card = document.createElement("div");
-              card.classList.add("search-card");
-              card.setAttribute("tabindex", "0");
+          const filterFn = determineFilter(service);
+          service.subjects
+            .filter(filterFn) // Apply Content Class Filtering
+            .forEach((subject) => {
+              if (subject.content) {
+                const card = document.createElement("div");
+                card.classList.add("search-card");
+                card.setAttribute("tabindex", "0");
 
-              const title = document.createElement("h3");
-              title.textContent = subject.name;
+                const title = document.createElement("h3");
+                title.textContent = subject.name;
 
-              const description = document.createElement("div");
-              description.innerHTML = subject.description;
+                const description = document.createElement("div");
+                description.innerHTML = subject.description;
 
-              card.appendChild(title);
-              card.appendChild(description);
+                card.appendChild(title);
+                card.appendChild(description);
 
-              card.dataset.option = JSON.stringify({
-                id: subject.id,
-                name: subject.name,
-                description: subject.description,
-                content: subject.content,
-                process: subject.process,
-                transfer: subject.transfer,
-                finish: subject.finish,
-                meta: subject.meta,
-                lastModified: subject.lastModified,
-                serviceName: service.name,
-                type: "knowledge",
-              });
+                card.dataset.option = JSON.stringify({
+                  id: subject.id,
+                  name: subject.name,
+                  description: subject.description,
+                  content: subject.content,
+                  process: subject.process,
+                  transfer: subject.transfer,
+                  finish: subject.finish,
+                  meta: subject.meta,
+                  lastModified: subject.lastModified,
+                  serviceName: service.name,
+                  type: "knowledge",
+                });
 
-              options.push(card);
+                options.push(card);
 
-              if (subject.name) {
-                visibleLetters.add(subject.name[0].toUpperCase());
-              }
-            }
-
-            if (Array.isArray(subject.topics)) {
-              subject.topics.forEach((topic) => {
-                if (topic.content) {
-                  const card = document.createElement("div");
-                  card.classList.add("search-card");
-                  card.setAttribute("tabindex", "0");
-
-                  const title = document.createElement("h3");
-                  title.textContent = topic.name;
-
-                  const description = document.createElement("div");
-                  description.innerHTML = topic.description;
-
-                  card.appendChild(title);
-                  card.appendChild(description);
-
-                  card.dataset.option = JSON.stringify({
-                    id: topic.id,
-                    name: topic.name,
-                    description: topic.description,
-                    content: topic.content,
-                    process: topic.process,
-                    transfer: topic.transfer,
-                    finish: topic.finish,
-                    meta: topic.meta,
-                    lastModified: topic.lastModified,
-                    serviceName: service.name,
-                    subjectName: subject.name,
-                    type: "knowledge",
-                  });
-
-                  options.push(card);
-
-                  if (topic.name) {
-                    visibleLetters.add(topic.name[0].toUpperCase());
-                  }
+                if (subject.name) {
+                  visibleLetters.add(subject.name[0].toUpperCase());
                 }
-              });
-            }
-          });
+              }
+
+              if (Array.isArray(subject.topics)) {
+                const topicFilterFn = determineFilter(subject);
+                subject.topics
+                  .filter(topicFilterFn) // Apply Content Class Filtering
+                  .forEach((topic) => {
+                    if (topic.content) {
+                      const card = document.createElement("div");
+                      card.classList.add("search-card");
+                      card.setAttribute("tabindex", "0");
+
+                      const title = document.createElement("h3");
+                      title.textContent = topic.name;
+
+                      const description = document.createElement("div");
+                      description.innerHTML = topic.description;
+
+                      card.appendChild(title);
+                      card.appendChild(description);
+
+                      card.dataset.option = JSON.stringify({
+                        id: topic.id,
+                        name: topic.name,
+                        description: topic.description,
+                        content: topic.content,
+                        process: topic.process,
+                        transfer: topic.transfer,
+                        finish: topic.finish,
+                        meta: topic.meta,
+                        lastModified: topic.lastModified,
+                        serviceName: service.name,
+                        subjectName: subject.name,
+                        type: "knowledge",
+                      });
+
+                      options.push(card);
+
+                      if (topic.name) {
+                        visibleLetters.add(topic.name[0].toUpperCase());
+                      }
+                    }
+                  });
+              }
+            });
         }
       });
 
@@ -1071,10 +1077,12 @@ function handleOnReadyKnowledge() {
 
       clearActiveFilters(".categories li");
 
-      const activeLetterButton = document.querySelector(
-        `.a-z-filter button:nth-of-type(${letter.charCodeAt(0) - 64})`
+      const activeLetterButton = Array.from(aToZFilter.children).find(
+        (btn) => btn.textContent === letter
       );
-      highlightActiveFilter(activeLetterButton, ".a-z-filter button");
+      if (activeLetterButton) {
+        highlightActiveFilter(activeLetterButton, ".a-z-filter button");
+      }
     }
 
     function filterByCategory(category) {
@@ -1116,7 +1124,9 @@ function handleOnReadyKnowledge() {
       const activeCategoryButton = Array.from(
         document.querySelectorAll(".categories li")
       ).find((li) => li.textContent.trim() === category);
-      highlightActiveFilter(activeCategoryButton, ".categories li");
+      if (activeCategoryButton) {
+        highlightActiveFilter(activeCategoryButton, ".categories li");
+      }
     }
 
     function highlightActiveFilter(element, selector) {
