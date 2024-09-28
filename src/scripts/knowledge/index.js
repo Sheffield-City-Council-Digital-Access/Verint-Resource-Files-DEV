@@ -501,7 +501,7 @@ function handleOnReadyKnowledge() {
    */
   function initializeLatestNews() {
     try {
-      latestNews = sortNewsByDate(newsArticles);
+      latestNews = sortNewsByDate(newsArticles); // Use local data
       if (latestNews.length === 0) {
         displayNoNewsMessage();
         return;
@@ -556,46 +556,8 @@ function handleOnReadyKnowledge() {
       }
     });
 
+    // Initialize lazy loading after articles are appended
     initializeLazyLoading();
-  }
-
-  /**
-   * Sets up pagination controls.
-   * @param {number} totalArticles - Total number of articles.
-   * @param {number} perPage - Number of articles per page.
-   */
-  function setupPagination(totalArticles, perPage) {
-    const paginationContainer = document.getElementById("news-pagination");
-    paginationContainer.innerHTML = "";
-
-    const totalPages = Math.ceil(totalArticles / perPage);
-
-    for (let i = 1; i <= totalPages; i++) {
-      const pageButton = document.createElement("button");
-      pageButton.textContent = i;
-      pageButton.classList.add("pagination-button");
-      if (i === currentPage) pageButton.classList.add("active");
-
-      pageButton.addEventListener("click", () => {
-        currentPage = i;
-        renderLatestNews(latestNews);
-      });
-
-      paginationContainer.appendChild(pageButton);
-    }
-  }
-
-  /**
-   * Determines if the news article is within the display date range.
-   * @param {string} publishDate - The publish date of the news article.
-   * @param {string} archiveDate - The archive date of the news article.
-   * @returns {boolean} - True if within display range, else false.
-   */
-  function isWithinDisplayDate(publishDate, archiveDate) {
-    const currentDate = new Date();
-    const publish = new Date(publishDate);
-    const archive = new Date(archiveDate);
-    return currentDate >= publish && currentDate < archive;
   }
 
   /**
@@ -608,12 +570,17 @@ function handleOnReadyKnowledge() {
     article.classList.add("news-article");
     article.setAttribute("tabindex", "0");
     article.setAttribute("role", "article");
-    article.setAttribute("aria-labelledby", `news-title-${newsItem.id}`);
+    article.setAttribute(
+      "aria-labelledby",
+      `news-title-${newsItem.title.replace(/\s+/g, "-").toLowerCase()}`
+    );
 
     const publishDate = formatDate(newsItem.publishDate);
 
     article.innerHTML = `
-    <h2 id="news-title-${newsItem.id}">${newsItem.title}</h2>
+    <h2 id="news-title-${newsItem.title.replace(/\s+/g, "-").toLowerCase()}">${
+      newsItem.title
+    }</h2>
     <div>
       ${
         newsItem.imageUrl
@@ -675,6 +642,54 @@ function handleOnReadyKnowledge() {
   }
 
   /**
+   * Determines if the news article is within the display date range.
+   * @param {string} publishDate - The publish date of the news article.
+   * @param {string} archiveDate - The archive date of the news article.
+   * @returns {boolean} - True if within display range, else false.
+   */
+  function isWithinDisplayDate(publishDate, archiveDate) {
+    const currentDate = new Date();
+    const publish = new Date(publishDate);
+    const archive = new Date(archiveDate);
+    return currentDate >= publish && currentDate < archive;
+  }
+
+  /**
+   * Sets up pagination controls.
+   * @param {number} totalItems - Total number of news articles.
+   * @param {number} itemsPerPage - Number of articles per page.
+   */
+  function setupPagination(totalItems, itemsPerPage) {
+    const paginationContainer = document.getElementById("news-pagination");
+
+    // Check if the pagination container exists
+    if (!paginationContainer) {
+      console.error(
+        "Pagination container with ID 'news-pagination' not found in the DOM."
+      );
+      return;
+    }
+
+    // Clear existing pagination
+    paginationContainer.innerHTML = "";
+
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+    for (let i = 1; i <= totalPages; i++) {
+      const pageButton = document.createElement("button");
+      pageButton.textContent = i;
+      pageButton.classList.add("pagination-button");
+
+      pageButton.addEventListener("click", () => {
+        currentPage = i;
+        renderLatestNews(latestNews);
+      });
+
+      paginationContainer.appendChild(pageButton);
+    }
+  }
+
+  /**
    * Displays a message when there are no news articles.
    */
   function displayNoNewsMessage() {
@@ -689,17 +704,16 @@ function handleOnReadyKnowledge() {
   function displayLoadError(error) {
     const newsContainer = document.getElementById("news-container");
 
-    if (error instanceof TypeError) {
-      newsContainer.innerHTML = `<p>Error: ${error.message}. Please check the API endpoint.</p>`;
-    } else {
-      newsContainer.innerHTML = `<p>Failed to load latest news. Please try again later.</p>`;
-    }
+    newsContainer.innerHTML = `<p>Failed to load latest news. Please try again later.</p>`;
 
-    // Optionally, display error details in the console for debugging
+    // Optionally, log detailed error information for debugging
     console.error("Error loading latest news:", error);
   }
 
-  initializeLatestNews();
+  // Initialize Latest News on Document Ready
+  document.addEventListener("DOMContentLoaded", () => {
+    initializeLatestNews();
+  });
 
   // --- SEARCH ------------------------------------------------------------- \\
 
