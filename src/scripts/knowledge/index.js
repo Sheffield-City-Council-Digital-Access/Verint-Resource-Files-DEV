@@ -560,6 +560,59 @@ function handleOnReadyKnowledge() {
 
   // --- SEARCH ------------------------------------------------------------- \\
 
+  /**
+   * Escapes special characters in a string for use in a regex.
+   * @param {string} string - The string to escape.
+   * @returns {string} - The escaped string.
+   */
+  function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  /**
+   * Calculates the relevance score for an item based on search terms.
+   * @param {Object} item - The item to calculate relevance for.
+   * @param {Array} searchTerms - The array of search terms.
+   * @returns {number} - The relevance score.
+   */
+  const calculateRelevance = (item, searchTerms) => {
+    let relevance = 0;
+
+    searchTerms.forEach((term) => {
+      if (term.length < 2) {
+        // Skip very short terms to avoid noise
+        return;
+      }
+
+      const escapedTerm = escapeRegExp(term);
+      const regex = new RegExp(`\\b${escapedTerm}\\b`, "gi");
+
+      // Title matches carry more weight
+      if (item.title && regex.test(item.title)) {
+        relevance += 5; // Weight for title matches
+      }
+
+      // Description matches have medium weight
+      if (item.description && regex.test(item.description)) {
+        relevance += 3; // Weight for description matches
+      }
+
+      // Content matches have lower weight
+      if (item.content && regex.test(item.content)) {
+        relevance += 1; // Weight for content matches
+      }
+    });
+
+    return relevance;
+  };
+
+  /**
+   * Searches the knowledge base and latest news for a given query.
+   * @param {Array} knowledge - The knowledge base array.
+   * @param {Array} latestNews - The latest news array.
+   * @param {string} searchQuery - The user's search query.
+   * @returns {Array} - The sorted array of search results.
+   */
   function searchKnowledge(knowledge, latestNews, searchQuery) {
     if (!Array.isArray(knowledge) || !Array.isArray(latestNews)) {
       return [];
@@ -585,13 +638,6 @@ function handleOnReadyKnowledge() {
           const description = contentSubject.description || "";
           const content = contentSubject.content || "";
 
-          const textToSearch = `
-          ${keywords.join(" ")}
-          ${categories.join(" ")}
-          ${description}
-          ${content}
-        `.toLowerCase();
-
           const relevance = calculateRelevance(contentSubject, searchTerms);
 
           return {
@@ -604,11 +650,6 @@ function handleOnReadyKnowledge() {
     );
 
     const newsItems = latestNews.map((news) => {
-      const textToSearch = `
-      ${news.title}
-      ${news.content}
-    `.toLowerCase();
-
       const relevance = calculateRelevance(news, searchTerms);
 
       return {
