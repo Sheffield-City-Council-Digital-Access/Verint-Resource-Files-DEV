@@ -65,6 +65,10 @@ function determineFilter(parent) {
       return (item) =>
         item.constructor && item.constructor.name.startsWith("Content");
 
+    case "Form":
+      return (item) =>
+        item.constructor && item.constructor.name.startsWith("Form");
+
     default:
       return () => true; // No filtering or unknown type
   }
