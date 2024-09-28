@@ -114,10 +114,10 @@ function createCards(data, container, parent = null) {
       card.addEventListener("click", () => {
         const childType = getChildType(item);
         console.log("**Event Listeners**", childType);
-        if (childType === "Form") {
-          // Redirect directly to the form URL
-          redirectToFormPage(item);
-        } else {
+        // if (childType === "Form") {
+        //   // Redirect directly to the form URL
+        //   redirectToFormPage(item);
+        // } else {
           const hasSubjects = item.subjects && item.subjects.length > 0;
           const hasTopics = item.topics && item.topics.length > 0;
           let nextLevelData = null;
@@ -185,7 +185,7 @@ function createCards(data, container, parent = null) {
             // No further navigation, handle content
             redirectToContentPage(item);
           }
-        }
+        //}
       });
 
       card.addEventListener("keydown", (event) => {
