@@ -20,25 +20,28 @@ let topicMenuButtons;
 
 /**
  * Determines the types of children within a parent object.
+ * Supports both 'subjects' and 'topics'.
  * @param {Object} parent - The parent object containing children.
  * @returns {Set<string>} - A set of child types ("Menu", "Content", "Form").
  */
 function getChildTypes(parent) {
   const childTypes = new Set();
 
-  if (parent.subjects) {
-    parent.subjects.forEach((item) => {
-      if (item.constructor && item.constructor.name.startsWith("Menu")) {
-        childTypes.add("Menu");
-      }
-      if (item.constructor && item.constructor.name.startsWith("Content")) {
-        childTypes.add("Content");
-      }
-      if (item.constructor && item.constructor.name.startsWith("Form")) {
-        childTypes.add("Form");
-      }
-    });
-  }
+  ['subjects', 'topics'].forEach((key) => {
+    if (parent[key]) {
+      parent[key].forEach((item) => {
+        if (item.constructor && item.constructor.name.startsWith("Menu")) {
+          childTypes.add("Menu");
+        }
+        if (item.constructor && item.constructor.name.startsWith("Content")) {
+          childTypes.add("Content");
+        }
+        if (item.constructor && item.constructor.name.startsWith("Form")) {
+          childTypes.add("Form");
+        }
+      });
+    }
+  });
 
   return childTypes;
 }
@@ -64,9 +67,9 @@ function determineFilter(parent) {
       case "Content":
         filterFunctions.push(
           (item) =>
-            item.constructor && item.constructor.name.startsWith("Content")
-            // (item.constructor.name.startsWith("Content") ||
-            //   item.constructor.name.startsWith("Form"))
+            item.constructor &&
+            (item.constructor.name.startsWith("Content") ||
+              item.constructor.name.startsWith("Form"))
         );
         break;
 
