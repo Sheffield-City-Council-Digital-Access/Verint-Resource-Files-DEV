@@ -7,12 +7,14 @@ let latestNews = [];
 // Current navigation state
 let currentLevel = "main"; // "main", "sub", "topics"
 let previousData = [];
+let navigationStack = [];
 
 // DOM Containers
 let serviceMenuContainer;
 let subjectMenuContainer;
 let topicsMenuContainer;
 let searchInput;
+let breadcrumbContainer;
 let subjectMenuButtons;
 let topicMenuButtons;
 
@@ -93,145 +95,209 @@ function determineFilter(parent) {
   return (item) => filterFunctions.some((fn) => fn(item));
 }
 
-   /**
-    * Creates card elements based on the provided data and container.
-    * @param {Array} data - The data array containing objects to create cards for.
-    * @param {HTMLElement} container - The DOM element to append the cards to.
-    * @param {Object} parent - The parent object containing the current data.
-    */
-   function createCards(data, container, parent = null) {
-     if (!container) {
-       return;
-     }
+/**
+ * Creates card elements based on the provided data and container.
+ * @param {Array} data - The data array containing objects to create cards for.
+ * @param {HTMLElement} container - The DOM element to append the cards to.
+ * @param {Object} parent - The parent object containing the current data.
+ */
+function createCards(data, container, parent = null) {
+  if (!container) {
+    return;
+  }
 
-     container.innerHTML = "";
+  container.innerHTML = "";
 
-     // Determine filter based on parent
-     const filterFn = parent ? determineFilter(parent) : () => true;
+  // Determine filter based on parent
+  const filterFn = parent ? determineFilter(parent) : () => true;
 
-     data
-       .filter(filterFn) // **Apply the Dynamic Filter**
-       .forEach((item) => {
-         const card = document.createElement("div");
-         card.classList.add("card");
-         card.setAttribute("data-id", item.id);
-         card.setAttribute("tabindex", "0");
+  data
+    .filter(filterFn) // **Apply the Dynamic Filter**
+    .forEach((item) => {
+      const card = document.createElement("div");
+      card.classList.add("card");
+      card.setAttribute("data-id", item.id);
+      card.setAttribute("tabindex", "0");
 
-         const cardBody = document.createElement("div");
-         cardBody.classList.add("card-body");
+      const cardBody = document.createElement("div");
+      cardBody.classList.add("card-body");
 
-         const cardTitle = document.createElement("h3");
-         cardTitle.classList.add("card-title");
-         cardTitle.textContent = item.name;
+      const cardTitle = document.createElement("h3");
+      cardTitle.classList.add("card-title");
+      cardTitle.textContent = item.name;
 
-         const cardText = document.createElement("p");
-         cardText.classList.add("card-text");
-         cardText.textContent = item.description;
+      const cardText = document.createElement("p");
+      cardText.classList.add("card-text");
+      cardText.textContent = item.description;
 
-         cardBody.appendChild(cardTitle);
-         cardBody.appendChild(cardText);
-         card.appendChild(cardBody);
-         container.appendChild(card);
+      cardBody.appendChild(cardTitle);
+      cardBody.appendChild(cardText);
+      card.appendChild(cardBody);
+      container.appendChild(card);
 
-         // **Event Listeners**
-         card.addEventListener("click", () => {
-           const childTypes = getChildTypes(item);
+      // **Event Listeners**
+      card.addEventListener("click", () => {
+        const childTypes = getChildTypes(item);
 
-           const hasSubjects = item.subjects && item.subjects.length > 0;
-           const hasTopics = item.topics && item.topics.length > 0;
-           let nextLevelData = null;
+        const hasSubjects = item.subjects && item.subjects.length > 0;
+        const hasTopics = item.topics && item.topics.length > 0;
+        let nextLevelData = null;
 
-           if (hasSubjects) {
-             nextLevelData = item.subjects;
-             currentLevel = "sub";
-           } else if (hasTopics) {
-             nextLevelData = item.topics;
-             currentLevel = "topics";
-           }
+        if (hasSubjects) {
+          nextLevelData = item.subjects;
+          currentLevel = "sub";
+        } else if (hasTopics) {
+          nextLevelData = item.topics;
+          currentLevel = "topics";
+        }
 
-           if (nextLevelData) {
-             previousData = nextLevelData;
-             const nextContainer = hasSubjects
-               ? subjectMenuContainer
-               : hasTopics
-               ? topicsMenuContainer
-               : null;
+        if (nextLevelData) {
+          previousData = nextLevelData;
+          const nextContainer = hasSubjects
+            ? subjectMenuContainer
+            : hasTopics
+            ? topicsMenuContainer
+            : null;
 
-             createCards(nextLevelData, nextContainer, item);
+          createCards(nextLevelData, nextContainer, item);
 
-             // **Update Breadcrumbs**
-             updateBreadcrumbs(item);
+          // **Update Breadcrumbs**
+          updateBreadcrumbs(item);
 
-             // **Toggle Visibility of Menu Buttons**
-             const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
+          // **Toggle Visibility of Menu Buttons**
+          const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
 
-             if (hasSubjects) {
-               topicMenuButtons.forEach((btn) => {
-                 btn.style.display = "none";
-               });
-             }
-             if (hasTopics) {
-               topicMenuButtons.forEach((btn) => {
-                 btn.style.display = "block";
-               });
-             }
+          if (hasSubjects) {
+            topicMenuButtons.forEach((btn) => {
+              btn.style.display = "none";
+            });
+          }
+          if (hasTopics) {
+            topicMenuButtons.forEach((btn) => {
+              btn.style.display = "block";
+            });
+          }
 
-             // **Navigate to the Appropriate Page**
-             KDF.gotoPage(
-               hasSubjects
-                 ? "page_subject_menu"
-                 : hasTopics
-                 ? "page_topic_menu"
-                 : null,
-               true,
-               true,
-               true
-             );
-           } else {
-             // No further navigation, handle content
-             if (item.formName) {
-               redirectToFormPage(item);
-             } else {
-               redirectToContentPage(item);
-             }
-           }
-         });
+          // **Navigate to the Appropriate Page**
+          KDF.gotoPage(
+            hasSubjects
+              ? "page_subject_menu"
+              : hasTopics
+              ? "page_topic_menu"
+              : null,
+            true,
+            true,
+            true
+          );
+        } else {
+          // No further navigation, handle content
+          if (item.formName) {
+            redirectToFormPage(item);
+          } else {
+            redirectToContentPage(item);
+          }
+        }
+      });
 
-         card.addEventListener("keydown", (event) => {
-           if (event.key === "Enter") {
-             event.preventDefault();
-             card.click();
-           }
-         });
+      card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          card.click();
+        }
+      });
 
-         card.addEventListener("focus", () => {
-           card.classList.add("focus");
-         });
+      card.addEventListener("focus", () => {
+        card.classList.add("focus");
+      });
 
-         card.addEventListener("blur", () => {
-           card.classList.remove("focus");
-         });
-       });
-   }
+      card.addEventListener("blur", () => {
+        card.classList.remove("focus");
+      });
+    });
+}
 
-   /**
-    * Updates the breadcrumb navigation based on the current item.
-    * @param {Object} currentItem - The current data item.
-    */
-   function updateBreadcrumbs(currentItem) {
-     const breadcrumbContainer = document.getElementById("breadcrumb-container");
-     breadcrumbContainer.innerHTML = ""; // Clear existing breadcrumbs
+/**
+ * Updates the breadcrumb navigation based on the current item.
+ * @param {Object} currentItem - The current data item.
+ */
+function updateBreadcrumbs(currentItem) {
+  // Add the current item to the navigation stack
+  navigationStack.push(currentItem);
 
-     // Create breadcrumb button for the current item
-     const breadcrumbButton = document.createElement("button");
-     breadcrumbButton.classList.add(
-       currentLevel === "sub" ? "subject-menu-btn" : "topic-menu-btn"
-     );
-     breadcrumbButton.textContent = currentItem.name;
-     breadcrumbButton.setAttribute("data-id", currentItem.id); // Store ID for reference
+  // Clear existing breadcrumbs
+  breadcrumbContainer.innerHTML = "";
 
-     breadcrumbContainer.appendChild(breadcrumbButton);
-   }
+  // Iterate through the navigation stack to build breadcrumbs
+  navigationStack.forEach((item, index) => {
+    const li = document.createElement("li");
+    li.classList.add("breadcrumb-item");
+
+    if (index < navigationStack.length - 1) {
+      // Create clickable breadcrumb links
+      const a = document.createElement("a");
+      a.href = "#";
+      a.classList.add("breadcrumb-link");
+      a.textContent = item.name;
+      a.setAttribute("data-id", item.id);
+      li.appendChild(a);
+    } else {
+      // Last breadcrumb item is active and not clickable
+      li.classList.add("active");
+      li.setAttribute("aria-current", "page");
+      li.textContent = item.name;
+    }
+
+    breadcrumbContainer.appendChild(li);
+  });
+}
+
+/**
+ * Initializes breadcrumb event listeners.
+ */
+function initializeBreadcrumbListeners() {
+  breadcrumbContainer = document.getElementById("breadcrumb-container");
+
+  // Use event delegation to handle clicks on breadcrumb buttons
+  breadcrumbContainer.addEventListener("click", (event) => {
+    const target = event.target;
+    if (target.tagName === "BUTTON") {
+      const id = target.getAttribute("data-id");
+      const label = target.textContent;
+
+      if (currentLevel === "sub") {
+        // Navigate back to the service level
+        const service = knowledge.find((service) => service.id === id);
+        if (service) {
+          currentLevel = "main";
+          previousData = knowledge; // Reset to main level or as needed
+
+          createCards(service.subjects, subjectMenuContainer, service);
+          KDF.gotoPage("page_subject_menu", true, true, true);
+        } else {
+          KDF.showError("Service not found");
+        }
+      } else if (currentLevel === "topics") {
+        // Navigate back to the subject level
+        const service = knowledge.find((service) =>
+          service.subjects.some((subject) => subject.id === id)
+        );
+
+        if (service) {
+          const subject = service.subjects.find((subject) => subject.id === id);
+          if (subject) {
+            createCards(subject.topics, topicsMenuContainer, subject);
+            currentLevel = "sub";
+            KDF.gotoPage("page_topic_menu", true, true, true);
+          } else {
+            KDF.showError("Subject not found");
+          }
+        } else {
+          KDF.showError("Service not found");
+        }
+      }
+    }
+  });
+}
 
 function redirectToContentPage(item) {
   const enquiryType = item.name;
@@ -444,6 +510,9 @@ function handleOnReadyKnowledge() {
   serviceMenuContainer = document.getElementById("service-menu");
   subjectMenuContainer = document.getElementById("subject-menu");
   topicsMenuContainer = document.getElementById("topics-menu");
+  
+  // **Initialize Breadcrumb Event Listeners**
+  initializeBreadcrumbListeners();
 
   let redirectToForm = "";
   let tranferTypeKey = "";
