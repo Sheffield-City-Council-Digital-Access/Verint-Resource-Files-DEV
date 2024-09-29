@@ -186,7 +186,7 @@ const reportMudGravel = new FormRaP(
 
 const reportPotholeCrack = new FormRaP(
   "reportPotholeCrack",
-  "RePothole or crack on the highway",
+  "Pothole or crack on the highway",
   "Report problems such as potholes or cracks in the road or pavement",
   "report_pothole_crack",
   {

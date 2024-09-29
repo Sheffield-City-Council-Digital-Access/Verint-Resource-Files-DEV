@@ -24,27 +24,28 @@ let topicMenuButtons;
  * @param {Object} parent - The parent object containing children.
  * @returns {Set<string>} - A set of child types ("Menu", "Content", "Form").
  */
-function getChildTypes(parent) {
-  const childTypes = new Set();
+   function getChildTypes(parent) {
+     const childTypes = new Set();
 
-  ["subjects", "topics"].forEach((key) => {
-    if (parent[key]) {
-      parent[key].forEach((item) => {
-        if (item.constructor && item.constructor.name.startsWith("Menu")) {
-          childTypes.add("Menu");
-        }
-        if (item.constructor && item.constructor.name.startsWith("Content")) {
-          childTypes.add("Content");
-        }
-        if (item.constructor && item.constructor.name.startsWith("Form")) {
-          childTypes.add("Form");
-        }
-      });
-    }
-  });
+     ["subjects", "topics"].forEach((key) => {
+       if (parent[key]) {
+         parent[key].forEach((item) => {
+           if (item.type) {
+             childTypes.add(item.type);
+             console.log(
+               `Identified child type: ${item.type} in parent: ${parent.name}`
+             );
+           }
+         });
+       }
+     });
 
-  return childTypes;
-}
+     console.log(
+       `Child types for parent "${parent.name}":`,
+       Array.from(childTypes)
+     );
+     return childTypes;
+   }
 
 /**
  * Determines the filter function based on the current parent object.
@@ -59,26 +60,18 @@ function determineFilter(parent) {
   childTypes.forEach((type) => {
     switch (type) {
       case "Menu":
-        filterFunctions.push(
-          (item) => item.constructor && item.constructor.name.startsWith("Menu")
-        );
+        filterFunctions.push((item) => item.type === "Menu");
         break;
 
       case "Content":
         filterFunctions.push(
-          (item) =>
-            item.constructor &&
-            (item.constructor.name.startsWith("Content") ||
-              item.constructor.name.startsWith("Form"))
+          (item) => item.type === "Content" || item.type === "Form"
         );
         break;
 
       case "Form":
         filterFunctions.push(
-          (item) =>
-            item.constructor &&
-            (item.constructor.name.startsWith("Form") ||
-              item.constructor.name.startsWith("Content"))
+          (item) => item.type === "Form" || item.type === "Content"
         );
         break;
 
@@ -89,8 +82,18 @@ function determineFilter(parent) {
     }
   });
 
+  console.log(
+    `Filter functions for parent "${parent.name}": ${filterFunctions.length} types detected.`
+  );
+
   // Combine all filter functions using OR logic
-  return (item) => filterFunctions.some((fn) => fn(item));
+  return (item) => {
+    const result = filterFunctions.some((fn) => fn(item));
+    if (result) {
+      console.log(`Item "${item.name}" passed the filter.`);
+    }
+    return result;
+  };
 }
 
 /**
@@ -857,7 +860,6 @@ function handleOnReadyKnowledge() {
    * @param {Object} result - The search result or option item.
    */
   function handleCardClick(result) {
-    console.log("handleCardClick", result);
     switch (result.type) {
       case "knowledge":
         // Redirect to the content page for knowledge items
