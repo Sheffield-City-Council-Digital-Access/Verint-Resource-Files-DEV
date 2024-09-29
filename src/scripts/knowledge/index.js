@@ -512,11 +512,7 @@ function handleOnReadyKnowledge() {
 
       if (service) {
         console.log("subjectMenuButtons", service);
-        createCards(
-          service.subjects,
-          subjectMenuContainer,
-          service
-        );
+        createCards(service.subjects, subjectMenuContainer, service);
         KDF.gotoPage("page_subject_menu", true, true, true);
       }
     });
@@ -533,11 +529,7 @@ function handleOnReadyKnowledge() {
 
       if (service) {
         console.log("topicMenuButtons", service);
-        createCards(
-          service.subjects,
-          subjectMenuContainer,
-          service
-        );
+        createCards(service.subjects, subjectMenuContainer, service);
         const label = button.textContent;
 
         const subject = service.subjects.find(
@@ -546,11 +538,7 @@ function handleOnReadyKnowledge() {
 
         if (subject) {
           if (subject.topics) {
-            createCards(
-              subject.topics,
-              topicsMenuContainer,
-              subject
-            );
+            createCards(subject.topics, topicsMenuContainer, subject);
             KDF.gotoPage("page_topic_menu", true, true, true);
           }
         }
@@ -889,21 +877,6 @@ function handleOnReadyKnowledge() {
         console.warn("Unknown result type:", result.type);
         break;
     }
-  }
-
-  /**
-   * Redirects the user to the specified content page.
-   * @param {Object} item - The knowledge item to display.
-   */
-  function redirectToContentPage(item) {
-    if (!item.contentURL) {
-      console.warn("Content URL not specified for item:", item);
-      return;
-    }
-
-    logUserJourney("View Content", `Viewed content: ${item.contentURL}`);
-
-    window.location.href = item.contentURL; // Redirect to the content URL
   }
 
   /**
