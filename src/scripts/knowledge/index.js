@@ -27,7 +27,7 @@ let topicMenuButtons;
 function getChildTypes(parent) {
   const childTypes = new Set();
 
-  ['subjects', 'topics'].forEach((key) => {
+  ["subjects", "topics"].forEach((key) => {
     if (parent[key]) {
       parent[key].forEach((item) => {
         if (item.constructor && item.constructor.name.startsWith("Menu")) {
@@ -93,138 +93,145 @@ function determineFilter(parent) {
   return (item) => filterFunctions.some((fn) => fn(item));
 }
 
-/**
- * Creates card elements based on the provided data and container.
- * @param {Array} data - The data array containing objects to create cards for.
- * @param {HTMLElement} container - The DOM element to append the cards to.
- * @param {Object} parent - The parent object containing the current data.
- */
-function createCards(data, container, parent = null) {
-  if (!container) {
-    return;
-  }
+   /**
+    * Creates card elements based on the provided data and container.
+    * @param {Array} data - The data array containing objects to create cards for.
+    * @param {HTMLElement} container - The DOM element to append the cards to.
+    * @param {Object} parent - The parent object containing the current data.
+    */
+   function createCards(data, container, parent = null) {
+     if (!container) {
+       return;
+     }
 
-  container.innerHTML = "";
+     container.innerHTML = "";
 
-  // Determine filter based on parent
-  const filterFn = parent ? determineFilter(parent) : () => true;
+     // Determine filter based on parent
+     const filterFn = parent ? determineFilter(parent) : () => true;
 
-  data
-    .filter(filterFn) // **Apply the Dynamic Filter**
-    .forEach((item) => {
-      const card = document.createElement("div");
-      card.classList.add("card");
-      card.setAttribute("data-id", item.id);
-      card.setAttribute("tabindex", "0");
+     data
+       .filter(filterFn) // **Apply the Dynamic Filter**
+       .forEach((item) => {
+         const card = document.createElement("div");
+         card.classList.add("card");
+         card.setAttribute("data-id", item.id);
+         card.setAttribute("tabindex", "0");
 
-      const cardBody = document.createElement("div");
-      cardBody.classList.add("card-body");
+         const cardBody = document.createElement("div");
+         cardBody.classList.add("card-body");
 
-      const cardTitle = document.createElement("h3");
-      cardTitle.classList.add("card-title");
-      cardTitle.textContent = item.name;
+         const cardTitle = document.createElement("h3");
+         cardTitle.classList.add("card-title");
+         cardTitle.textContent = item.name;
 
-      const cardText = document.createElement("p");
-      cardText.classList.add("card-text");
-      cardText.textContent = item.description;
+         const cardText = document.createElement("p");
+         cardText.classList.add("card-text");
+         cardText.textContent = item.description;
 
-      cardBody.appendChild(cardTitle);
-      cardBody.appendChild(cardText);
-      card.appendChild(cardBody);
-      container.appendChild(card);
+         cardBody.appendChild(cardTitle);
+         cardBody.appendChild(cardText);
+         card.appendChild(cardBody);
+         container.appendChild(card);
 
-      // **Event Listeners**
-      card.addEventListener("click", () => {
-        const childType = getChildTypes(item);
+         // **Event Listeners**
+         card.addEventListener("click", () => {
+           const childTypes = getChildTypes(item);
 
-        const hasSubjects = item.subjects && item.subjects.length > 0;
-        const hasTopics = item.topics && item.topics.length > 0;
-        let nextLevelData = null;
+           const hasSubjects = item.subjects && item.subjects.length > 0;
+           const hasTopics = item.topics && item.topics.length > 0;
+           let nextLevelData = null;
 
-        if (hasSubjects) {
-          nextLevelData = item.subjects;
-          currentLevel = "sub";
-        } else if (hasTopics) {
-          nextLevelData = item.topics;
-          currentLevel = "topics";
-        }
+           if (hasSubjects) {
+             nextLevelData = item.subjects;
+             currentLevel = "sub";
+           } else if (hasTopics) {
+             nextLevelData = item.topics;
+             currentLevel = "topics";
+           }
 
-        if (nextLevelData) {
-          previousData = nextLevelData;
-          const nextContainer = hasSubjects
-            ? subjectMenuContainer
-            : hasTopics
-            ? topicsMenuContainer
-            : null;
+           if (nextLevelData) {
+             previousData = nextLevelData;
+             const nextContainer = hasSubjects
+               ? subjectMenuContainer
+               : hasTopics
+               ? topicsMenuContainer
+               : null;
 
-          createCards(nextLevelData, nextContainer, item);
+             createCards(nextLevelData, nextContainer, item);
 
-          // **Update Breadcrumbs**
-          const breadcrumbElements = document.querySelectorAll(
-            hasSubjects
-              ? ".subject-menu-btn"
-              : hasTopics
-              ? ".topic-menu-btn"
-              : null
-          );
+             // **Update Breadcrumbs**
+             updateBreadcrumbs(item);
 
-          if (breadcrumbElements.length > 0) {
-            breadcrumbElements.forEach((breadcrumbElement) => {
-              breadcrumbElement.textContent = item.name;
-            });
-          }
+             // **Toggle Visibility of Menu Buttons**
+             const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
 
-          // **Toggle Visibility of Menu Buttons**
-          const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
+             if (hasSubjects) {
+               topicMenuButtons.forEach((btn) => {
+                 btn.style.display = "none";
+               });
+             }
+             if (hasTopics) {
+               topicMenuButtons.forEach((btn) => {
+                 btn.style.display = "block";
+               });
+             }
 
-          if (hasSubjects) {
-            topicMenuButtons.forEach((btn) => {
-              btn.style.display = "none";
-            });
-          }
-          if (hasTopics) {
-            topicMenuButtons.forEach((btn) => {
-              btn.style.display = "block";
-            });
-          }
+             // **Navigate to the Appropriate Page**
+             KDF.gotoPage(
+               hasSubjects
+                 ? "page_subject_menu"
+                 : hasTopics
+                 ? "page_topic_menu"
+                 : null,
+               true,
+               true,
+               true
+             );
+           } else {
+             // No further navigation, handle content
+             if (item.formName) {
+               redirectToFormPage(item);
+             } else {
+               redirectToContentPage(item);
+             }
+           }
+         });
 
-          // **Navigate to the Appropriate Page**
-          KDF.gotoPage(
-            hasSubjects
-              ? "page_subject_menu"
-              : hasTopics
-              ? "page_topic_menu"
-              : null,
-            true,
-            true,
-            true
-          );
-        } else {
-          // No further navigation, handle content
-          if (item.formName) {
-            redirectToFormPage(item);
-          } else {
-            redirectToContentPage(item);
-          }
-        }
-      });
+         card.addEventListener("keydown", (event) => {
+           if (event.key === "Enter") {
+             event.preventDefault();
+             card.click();
+           }
+         });
 
-      card.addEventListener("keydown", (event) => {
-        if (event.key === "Enter") {
-          event.preventDefault();
-          card.click();
-        }
-      });
+         card.addEventListener("focus", () => {
+           card.classList.add("focus");
+         });
 
-      card.addEventListener("focus", () => {
-        card.classList.add("focus");
-      });
+         card.addEventListener("blur", () => {
+           card.classList.remove("focus");
+         });
+       });
+   }
 
-      card.addEventListener("blur", () => {
-        card.classList.remove("focus");
-      });
-    });
-}
+   /**
+    * Updates the breadcrumb navigation based on the current item.
+    * @param {Object} currentItem - The current data item.
+    */
+   function updateBreadcrumbs(currentItem) {
+     const breadcrumbContainer = document.getElementById("breadcrumb-container");
+     breadcrumbContainer.innerHTML = ""; // Clear existing breadcrumbs
+
+     // Create breadcrumb button for the current item
+     const breadcrumbButton = document.createElement("button");
+     breadcrumbButton.classList.add(
+       currentLevel === "sub" ? "subject-menu-btn" : "topic-menu-btn"
+     );
+     breadcrumbButton.textContent = currentItem.name;
+     breadcrumbButton.setAttribute("data-id", currentItem.id); // Store ID for reference
+
+     breadcrumbContainer.appendChild(breadcrumbButton);
+   }
 
 function redirectToContentPage(item) {
   const enquiryType = item.name;
