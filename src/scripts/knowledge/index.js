@@ -857,6 +857,7 @@ function handleOnReadyKnowledge() {
    * @param {Object} result - The search result or option item.
    */
   function handleCardClick(result) {
+    console.log("handleCardClick", result);
     switch (result.type) {
       case "knowledge":
         // Redirect to the content page for knowledge items
