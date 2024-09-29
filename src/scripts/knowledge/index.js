@@ -7,14 +7,12 @@ let latestNews = [];
 // Current navigation state
 let currentLevel = "main"; // "main", "sub", "topics"
 let previousData = [];
-let navigationStack = [];
 
 // DOM Containers
 let serviceMenuContainer;
 let subjectMenuContainer;
 let topicsMenuContainer;
 let searchInput;
-let breadcrumbContainer;
 let subjectMenuButtons;
 let topicMenuButtons;
 
@@ -137,7 +135,7 @@ function createCards(data, container, parent = null) {
 
       // **Event Listeners**
       card.addEventListener("click", () => {
-        const childTypes = getChildTypes(item);
+        const childType = getChildTypes(item);
 
         const hasSubjects = item.subjects && item.subjects.length > 0;
         const hasTopics = item.topics && item.topics.length > 0;
@@ -162,7 +160,19 @@ function createCards(data, container, parent = null) {
           createCards(nextLevelData, nextContainer, item);
 
           // **Update Breadcrumbs**
-          updateBreadcrumbs(item);
+          const breadcrumbElements = document.querySelectorAll(
+            hasSubjects
+              ? ".subject-menu-btn"
+              : hasTopics
+              ? ".topic-menu-btn"
+              : null
+          );
+
+          if (breadcrumbElements.length > 0) {
+            breadcrumbElements.forEach((breadcrumbElement) => {
+              breadcrumbElement.textContent = item.name;
+            });
+          }
 
           // **Toggle Visibility of Menu Buttons**
           const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
@@ -214,89 +224,6 @@ function createCards(data, container, parent = null) {
         card.classList.remove("focus");
       });
     });
-}
-
-/**
- * Updates the breadcrumb navigation based on the current item.
- * @param {Object} currentItem - The current data item.
- */
-function updateBreadcrumbs(currentItem) {
-  // Add the current item to the navigation stack
-  navigationStack.push(currentItem);
-
-  // Clear existing breadcrumbs
-  breadcrumbContainer.innerHTML = "";
-
-  // Iterate through the navigation stack to build breadcrumbs
-  navigationStack.forEach((item, index) => {
-    const li = document.createElement("li");
-    li.classList.add("breadcrumb-item");
-
-    if (index < navigationStack.length - 1) {
-      // Create clickable breadcrumb links
-      const a = document.createElement("a");
-      a.href = "#";
-      a.classList.add("breadcrumb-link");
-      a.textContent = item.name;
-      a.setAttribute("data-id", item.id);
-      li.appendChild(a);
-    } else {
-      // Last breadcrumb item is active and not clickable
-      li.classList.add("active");
-      li.setAttribute("aria-current", "page");
-      li.textContent = item.name;
-    }
-
-    breadcrumbContainer.appendChild(li);
-  });
-}
-
-/**
- * Initializes breadcrumb event listeners.
- */
-function initializeBreadcrumbListeners() {
-  breadcrumbContainer = document.getElementById("breadcrumb-container");
-
-  // Use event delegation to handle clicks on breadcrumb buttons
-  breadcrumbContainer.addEventListener("click", (event) => {
-    const target = event.target;
-    if (target.tagName === "BUTTON") {
-      const id = target.getAttribute("data-id");
-      const label = target.textContent;
-
-      if (currentLevel === "sub") {
-        // Navigate back to the service level
-        const service = knowledge.find((service) => service.id === id);
-        if (service) {
-          currentLevel = "main";
-          previousData = knowledge; // Reset to main level or as needed
-
-          createCards(service.subjects, subjectMenuContainer, service);
-          KDF.gotoPage("page_subject_menu", true, true, true);
-        } else {
-          KDF.showError("Service not found");
-        }
-      } else if (currentLevel === "topics") {
-        // Navigate back to the subject level
-        const service = knowledge.find((service) =>
-          service.subjects.some((subject) => subject.id === id)
-        );
-
-        if (service) {
-          const subject = service.subjects.find((subject) => subject.id === id);
-          if (subject) {
-            createCards(subject.topics, topicsMenuContainer, subject);
-            currentLevel = "sub";
-            KDF.gotoPage("page_topic_menu", true, true, true);
-          } else {
-            KDF.showError("Subject not found");
-          }
-        } else {
-          KDF.showError("Service not found");
-        }
-      }
-    }
-  });
 }
 
 function redirectToContentPage(item) {
@@ -510,9 +437,6 @@ function handleOnReadyKnowledge() {
   serviceMenuContainer = document.getElementById("service-menu");
   subjectMenuContainer = document.getElementById("subject-menu");
   topicsMenuContainer = document.getElementById("topics-menu");
-  
-  // **Initialize Breadcrumb Event Listeners**
-  initializeBreadcrumbListeners();
 
   let redirectToForm = "";
   let tranferTypeKey = "";
