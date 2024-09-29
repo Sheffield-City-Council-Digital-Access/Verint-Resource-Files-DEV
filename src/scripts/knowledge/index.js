@@ -28,10 +28,10 @@ function getChildTypes(parent) {
     parent.subjects.forEach((item) => {
       if (item.constructor && item.constructor.name.startsWith("Menu")) {
         childTypes.add("Menu");
-      } 
+      }
       if (item.constructor && item.constructor.name.startsWith("Content")) {
         childTypes.add("Content");
-      } 
+      }
       if (item.constructor && item.constructor.name.startsWith("Form")) {
         childTypes.add("Form");
       }
@@ -54,24 +54,26 @@ function determineFilter(parent) {
   childTypes.forEach((type) => {
     switch (type) {
       case "Menu":
-        filterFunctions.push((item) =>
-          item.constructor && item.constructor.name.startsWith("Menu")
+        filterFunctions.push(
+          (item) => item.constructor && item.constructor.name.startsWith("Menu")
         );
         break;
 
       case "Content":
-        filterFunctions.push((item) =>
-          item.constructor &&
-          (item.constructor.name.startsWith("Content") ||
-            item.constructor.name.startsWith("Form"))
+        filterFunctions.push(
+          (item) =>
+            item.constructor &&
+            (item.constructor.name.startsWith("Content") ||
+              item.constructor.name.startsWith("Form"))
         );
         break;
 
       case "Form":
-        filterFunctions.push((item) =>
-          item.constructor &&
-          (item.constructor.name.startsWith("Form") ||
-            item.constructor.name.startsWith("Content"))
+        filterFunctions.push(
+          (item) =>
+            item.constructor &&
+            (item.constructor.name.startsWith("Form") ||
+              item.constructor.name.startsWith("Content"))
         );
         break;
 
@@ -128,7 +130,7 @@ function createCards(data, container, parent = null) {
 
       // **Event Listeners**
       card.addEventListener("click", () => {
-        const childType = getChildType(item);
+        const childType = getChildTypes(item);
 
         const hasSubjects = item.subjects && item.subjects.length > 0;
         const hasTopics = item.topics && item.topics.length > 0;
