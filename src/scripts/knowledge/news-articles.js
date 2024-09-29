@@ -1,5 +1,12 @@
 class NewsArticle {
-  constructor(title, content, createdBy, createdDate, publishDate, archiveDate) {
+  constructor(
+    title,
+    content,
+    createdBy,
+    createdDate,
+    publishDate,
+    archiveDate
+  ) {
     this.title = title;
     this.content = content;
     this.createdBy = createdBy;
@@ -11,7 +18,7 @@ class NewsArticle {
 
 const newsArticles = [
   new NewsArticle(
-    'Verint CRM Upgrade Coming Soon!',
+    "Verint CRM Upgrade Coming Soon!",
     `
         <p><strong>We anticipate launching the new system on 18th November 2024.</strong></p>
         <p>To ensure a smooth transition and address any questions or issues that may arise, 
@@ -26,13 +33,13 @@ const newsArticles = [
         <p>We appreciate your patience and support as we work to enhance your experience.</p>
         <p><strong>Stay tuned for more updates!</strong></p>
     `,
-    'Elliott Griffiths',
-    '2024-08-15',
-    '2024-09-29',
-    '2025-01-01'
+    "Elliott Griffiths",
+    "2024-08-15",
+    "2024-08-15",
+    "2024-12-31"
   ),
   new NewsArticle(
-    'New Housing system Coming Soon!',
+    "New Housing system Coming Soon!",
     `
         <p><strong>We anticipate launching the new system on 18th November 2024.</strong></p>
         <p>To ensure a smooth transition and address any questions or issues that may arise, 
@@ -47,9 +54,9 @@ const newsArticles = [
         <p>We appreciate your patience and support as we work to enhance your experience.</p>
         <p><strong>Stay tuned for more updates!</strong></p>
     `,
-    'Elliott Griffiths',
-    '2024-08-15',
-    '2024-08-15',
-    '2024-09-28'
+    "Elliott Griffiths",
+    "2024-08-15",
+    "2024-08-15",
+    "2024-12-31"
   ),
 ];
