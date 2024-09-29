@@ -56,8 +56,8 @@ class FormRaP extends CoreRaP {
 
 const reportDamagedMissingKerb = new FormRaP(
   "reportDamagedMissingKerb",
-  "Damaged, missing kerb",
-  "Report a damaged or missing kerb",
+  "Report damaged or missing kerbs",
+  "",
   "damaged_missing_kerb",
   {
     type: "Report",
@@ -69,8 +69,8 @@ const reportDamagedMissingKerb = new FormRaP(
 
 const requestLitterPickCollection = new FormRaP(
   "requestLitterPickCollection",
-  "Litter pick collection",
-  "Request a collection after a litter pick",
+  "Request litter collection after a litter pick",
+  "",
   "litter_pick_collection",
   {
     type: "Report",
@@ -82,8 +82,8 @@ const requestLitterPickCollection = new FormRaP(
 
 const manholeStopcockCover = new FormRaP(
   "manholeStopcockCover",
-  "Manhole stopcock cover",
-  "Report a damaged or missing manhole stopcock cover",
+  "Report a problem with a manhole or stopcock cover",
+  "",
   "manhole_stopcock_cover",
   {
     type: "Report",
@@ -95,8 +95,8 @@ const manholeStopcockCover = new FormRaP(
 
 const reportDrainGulley = new FormRaP(
   "reportDrainGulley",
-  "Drain gulley",
-  "Report a drain gulley",
+  "Report a problem with a drain or gulley",
+  "",
   "report_drain_gulley",
   {
     type: "Report",
@@ -108,8 +108,8 @@ const reportDrainGulley = new FormRaP(
 
 const reportFenceBarrier = new FormRaP(
   "reportFenceBarrier",
-  "Fence barrier",
-  "Report a fence barrier",
+  "Report a problem with fences or safety barriers",
+  "",
   "report_fence_barrier",
   {
     type: "Report",
@@ -122,7 +122,7 @@ const reportFenceBarrier = new FormRaP(
 const reportFloodedArea = new FormRaP(
   "reportFloodedArea",
   "Flooded area",
-  "Report a flooded area",
+  "",
   "report_flooded_area",
   {
     type: "Report",
@@ -134,8 +134,8 @@ const reportFloodedArea = new FormRaP(
 
 const reportGritBin = new FormRaP(
   "reportGritBin",
-  "Grit bin",
-  "Report a grit bin",
+  "Report a problem with a grit bin",
+  "",
   "report_grit_bin",
   {
     type: "Report",
@@ -147,8 +147,8 @@ const reportGritBin = new FormRaP(
 
 const reportHighwayDamage = new FormRaP(
   "reportHighwayDamage",
-  "Highway damage",
   "Report damage to the highway",
+  "",
   "report_highway_damage",
   {
     type: "Report",
@@ -160,8 +160,8 @@ const reportHighwayDamage = new FormRaP(
 
 const reportHighwaySpillage = new FormRaP(
   "reportHighwaySpillage",
-  "Highway spillage",
-  "Report a highway spillage",
+  "Report items or spillages on the highway",
+  "",
   "report_highway_spillage",
   {
     type: "Report",
@@ -173,8 +173,8 @@ const reportHighwaySpillage = new FormRaP(
 
 const reportMudGravel = new FormRaP(
   "reportMudGravel",
-  "Mud or gravel",
-  "Report mud or gravel",
+  "Report mud or gravel on the highway",
+  "",
   "report_mud_gravel",
   {
     type: "Report",
@@ -186,8 +186,8 @@ const reportMudGravel = new FormRaP(
 
 const reportPotholeCrack = new FormRaP(
   "reportPotholeCrack",
-  "Pothole or crack",
-  "Report a pothole or crack",
+  "Report a pothole or crack on the highway",
+  "",
   "report_pothole_crack",
   {
     type: "Report",
@@ -199,8 +199,8 @@ const reportPotholeCrack = new FormRaP(
 
 const reportRoadMarking = new FormRaP(
   "reportRoadMarking",
-  "Road marking",
-  "Report a road marking",
+  "Report missing or damaged road markings",
+  "",
   "report_road_marking",
   {
     type: "Report",
@@ -212,8 +212,8 @@ const reportRoadMarking = new FormRaP(
 
 const reportStreetFurniture = new FormRaP(
   "reportStreetFurniture",
-  "Street furniture",
-  "Report street furniture",
+  "Report a problem with street furniture",
+  "",
   "report_street_furniture",
   {
     type: "Report",
@@ -225,8 +225,8 @@ const reportStreetFurniture = new FormRaP(
 
 const reportStreetLight = new FormRaP(
   "reportStreetLight",
-  "Street light",
-  "Report a street light",
+  "Report a problem with a street light",
+  "",
   "report_street_light",
   {
     type: "Report",
@@ -238,8 +238,8 @@ const reportStreetLight = new FormRaP(
 
 const reportTrafficSignal = new FormRaP(
   "reportTrafficSignal",
-  "Traffic signal",
-  "Report a traffic signal",
+  "Report a problem with a traffic signal, pedestrian crossing, camera or electronic sign",
+  "",
   "report_traffic_signal",
   {
     type: "Report",
@@ -251,8 +251,8 @@ const reportTrafficSignal = new FormRaP(
 
 const requestClaimsPack = new FormRaP(
   "requestClaimsPack",
-  "Claims pack",
   "Request a claims pack",
+  "",
   "request_claims_pack",
   {
     type: "Request",
@@ -264,7 +264,7 @@ const requestClaimsPack = new FormRaP(
 
 const requestGritBin = new ContentRaP(
   "requestGritBin",
-  "Grit bin",
+  "Grit bin locations",
   "View grit bin locations and request a grit bin",
   ``,
   {
@@ -283,7 +283,7 @@ const requestGritBin = new ContentRaP(
 
 const requestGritting = new ContentRaP(
   "requestGritting",
-  "Gritting and snow clearing",
+  "Gritting routes",
   "View gritting routes and request gritting or snow clearance",
   ``,
   {
@@ -302,8 +302,8 @@ const requestGritting = new ContentRaP(
 
 const roadPavementSurface = new FormRaP(
   "roadPavementSurface",
-  "Road pavement surface",
-  "Report a road pavement surface",
+  "Report a problem with the road or pavement surface",
+  "",
   "report_road_pavement_surface",
   {
     type: "Report",
@@ -315,8 +315,8 @@ const roadPavementSurface = new FormRaP(
 
 const reportDeadAnimal = new FormRaP(
   "reportDeadAnimal",
-  "Dead animal",
   "Report a dead animal",
+  "",
   "report_dead_animal",
   {
     type: "Report",
@@ -328,8 +328,8 @@ const reportDeadAnimal = new FormRaP(
 
 const reportDogFouling = new FormRaP(
   "reportDogFouling",
-  "Dog fouling",
   "Report dog fouling",
+  "",
   "report_dog_fouling",
   {
     type: "Report",
@@ -341,8 +341,8 @@ const reportDogFouling = new FormRaP(
 
 const reportFallenLeaves = new FormRaP(
   "reportFallenLeaves",
-  "Fallen leaves",
-  "Report fallen leaves",
+  "Report fallen leaves on the highway",
+  "",
   "report_fallen_leaves",
   {
     type: "Report",
@@ -354,8 +354,8 @@ const reportFallenLeaves = new FormRaP(
 
 const reportFlyPosting = new FormRaP(
   "reportFlyPosting",
-  "Fly posting",
-  "Report a fly posting",
+  "Report fly-posting",
+  "",
   "report_fly_posting",
   {
     type: "Report",
@@ -367,8 +367,8 @@ const reportFlyPosting = new FormRaP(
 
 const reportFlyTipping = new FormRaP(
   "reportFlyTipping",
-  "Fly tipping",
-  "Report a fly tipping",
+  "Report fly-tipping",
+  "",
   "report_fly_tipping",
   {
     type: "Report",
@@ -380,8 +380,8 @@ const reportFlyTipping = new FormRaP(
 
 const reportGraffiti = new FormRaP(
   "reportGraffiti",
-  "Graffiti",
-  "Report graffiti",
+  "Report graffiti on the highway",
+  "",
   "report_graffiti",
   {
     type: "Report",
@@ -393,8 +393,8 @@ const reportGraffiti = new FormRaP(
 
 const reportHedgePlantGrass = new ContentRaP(
   "reportHedgePlantGrass",
-  "Hedge, plant, grass",
-  "Report a hedge, plant or grass",
+  "Report a problem with hedges, plants or grassed areas",
+  "",
   ``,
   {
     buttonLabel: "Report a hedge, plant or grass",
@@ -412,8 +412,8 @@ const reportHedgePlantGrass = new ContentRaP(
 
 const reportLitter = new FormRaP(
   "reportLitter",
-  "Litter",
   "Report litter",
+  "",
   "report_litter",
   {
     type: "Report",
@@ -425,8 +425,8 @@ const reportLitter = new FormRaP(
 
 const reportLitterBin = new FormRaP(
   "reportLitterBin",
-  "Litter bin",
-  "Report a litter bin",
+  "Report a problem with a litter bin",
+  "",
   "report_litter_bin",
   {
     type: "Report",
@@ -438,8 +438,8 @@ const reportLitterBin = new FormRaP(
 
 const reportNeedlesGlass = new FormRaP(
   "reportNeedlesGlass",
-  "Needles or glass",
-  "Report needles or glass",
+  "Report needles or broken glass",
+  "",
   "report_needles_glass",
   {
     type: "Report",
@@ -449,10 +449,23 @@ const reportNeedlesGlass = new FormRaP(
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
+const reportStreetSignBollard = new FormRaP(
+  "reportStreetSignBollard",
+  "Report a problem with a street sign or bollard",
+  "",
+  "road_street_sign_bollard",
+  {
+    type: "Report",
+    keywords: ["Street", "sign", "bollard"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
 const reportTree = new FormRaP(
   "reportTree",
-  "Tree",
-  "Report a tree",
+  "Report a problem with a tree",
+  "",
   "report_tree",
   {
     type: "Report",
@@ -518,6 +531,7 @@ const roadsAndPavements = new ServiceRaP(
     reportLitter,
     reportLitterBin,
     reportNeedlesGlass,
+    reportStreetSignBollard,
     reportTree,
     requestHighwayInfo,
   ]
