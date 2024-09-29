@@ -511,6 +511,7 @@ function handleOnReadyKnowledge() {
       const service = knowledge.find((service) => service.name === label);
 
       if (service) {
+        console.log("subjectMenuButtons", service);
         createCards(
           service.subjects,
           subjectMenuContainer,
@@ -523,12 +524,15 @@ function handleOnReadyKnowledge() {
 
   topicMenuButtons.forEach((button) => {
     button.addEventListener("click", () => {
+      console.log("topicMenuButtons", service);
       let service;
+      console.log("topicMenuButtons", service);
 
       subjectMenuButtons.forEach((subjectButton) => {
         const subjectLabel = subjectButton.textContent;
         service = knowledge.find((service) => service.name === subjectLabel);
       });
+      console.log("topicMenuButtons", service);
 
       if (service) {
         createCards(
