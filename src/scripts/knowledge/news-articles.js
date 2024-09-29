@@ -50,6 +50,6 @@ const newsArticles = [
     'Elliott Griffiths',
     '2024-08-15',
     '2024-08-15',
-    '2025-09-28'
+    '2024-09-28'
   ),
 ];
