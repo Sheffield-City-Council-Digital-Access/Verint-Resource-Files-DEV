@@ -539,10 +539,6 @@ function handleOnReadyKnowledge() {
 
   // --- LATEST NEWS -------------------------------------------------------- \\
 
-  // src/scripts/knowledge/index.js
-
-  // --- LATEST NEWS -------------------------------------------------------- \\
-
   const newsContainer = document.getElementById("news-container");
   const archivedNewsContainer = document.getElementById(
     "archived-news-container"
@@ -571,30 +567,43 @@ function handleOnReadyKnowledge() {
   }
 
   function renderArticles(newsArray, container, filterFunction) {
-    newsArray.forEach((newsItem) => {
-      if (filterFunction(newsItem.publishDate, newsItem.archiveDate)) {
-        const article = document.createElement("article");
-        article.classList.add("news-article");
-        article.tabIndex = 0;
+    container.innerHTML = ""; // Clear previous content
 
-        const title = document.createElement("h2");
-        title.textContent = newsItem.title;
-        article.appendChild(title);
+    // Check if there are any articles to render
+    const filteredNews = newsArray.filter((newsItem) =>
+      filterFunction(newsItem.publishDate, newsItem.archiveDate)
+    );
 
-        const content = document.createElement("div");
-        content.innerHTML = newsItem.content;
-        article.appendChild(content);
+    if (filteredNews.length === 0) {
+      const noArticlesMessage = document.createElement("div");
+      noArticlesMessage.classList.add("no-results-message");
+      noArticlesMessage.textContent = "No articles available"; // Message for no articles
+      container.appendChild(noArticlesMessage);
+      return;
+    }
 
-        const publishDate = new Date(newsItem.publishDate);
-        const formattedDate = publishDate.toLocaleDateString();
+    filteredNews.forEach((newsItem) => {
+      const article = document.createElement("article");
+      article.classList.add("news-article");
+      article.tabIndex = 0;
 
-        const metadata = document.createElement("p");
-        metadata.classList.add("metadata");
-        metadata.textContent = `Published by ${newsItem.createdBy} on ${formattedDate}`;
-        article.appendChild(metadata);
+      const title = document.createElement("h2");
+      title.textContent = newsItem.title;
+      article.appendChild(title);
 
-        container.appendChild(article);
-      }
+      const content = document.createElement("div");
+      content.innerHTML = newsItem.content;
+      article.appendChild(content);
+
+      const publishDate = new Date(newsItem.publishDate);
+      const formattedDate = publishDate.toLocaleDateString();
+
+      const metadata = document.createElement("p");
+      metadata.classList.add("metadata");
+      metadata.textContent = `Published by ${newsItem.createdBy} on ${formattedDate}`;
+      article.appendChild(metadata);
+
+      container.appendChild(article);
     });
   }
 
@@ -1057,7 +1066,6 @@ function handleOnReadyKnowledge() {
           service.subjects
             .filter(filterFn) // Apply Content Class Filtering
             .forEach((subject) => {
-              
               // Handle Content subjects
               if (subject.content) {
                 const card = document.createElement("div");
@@ -1223,7 +1231,7 @@ function handleOnReadyKnowledge() {
             (Array.isArray(subject.forms) &&
               subject.forms.some((form) =>
                 form.name.toUpperCase().startsWith(letter)
-              )) // Include forms
+              ))
         )
       );
 
@@ -1248,7 +1256,7 @@ function handleOnReadyKnowledge() {
               (subject) =>
                 subject.name.toUpperCase().startsWith(letter) ||
                 subject.topics.length > 0 ||
-                subject.forms.length > 0 // Include forms
+                subject.forms.length > 0
             ),
         };
       });
@@ -1277,7 +1285,7 @@ function handleOnReadyKnowledge() {
             (Array.isArray(subject.forms) &&
               subject.forms.some(
                 (form) => form.meta && form.meta.type === category
-              )) // Include forms
+              ))
         )
       );
 
