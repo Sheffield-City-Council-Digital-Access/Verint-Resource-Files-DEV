@@ -112,6 +112,8 @@ small {
   border-radius: .5rem;
   box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.2);
   background: var(--color-grey-1);
+  will-change: background-color, border-left;
+  transition: background-color 0.3s ease, border-left 0.3s ease;
 }
 
 #service-a-z-container > div.a-z-container > div.options > div.search-card {
@@ -184,6 +186,7 @@ small {
   font-size: 1rem;
   padding: 0;
   box-shadow: none;
+  transition: color 0.3s ease, background 0.3s ease;
 }
 
 #main-nav .link-button.new-badge::after {
@@ -218,7 +221,7 @@ small {
 /* ----- BREADCRUMB --------------------------------------------------------- */
 
 #dform_container div.container.area.breadcrumb-area {
-  background: white;
+  background: var(--color-white);
   padding: .5rem 2rem 2rem 3rem;
 }
 
@@ -254,18 +257,19 @@ small {
   font-size: clamp(1rem, 2vw, 2rem);
   white-space: normal;
   overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #dform_container button.breadcrumb-btn:hover:not([disabled]),
 #dform_container button.breadcrumb-btn:focus:not([disabled]) {
   color: var(--color-white);
-  background-color: #007bff !important;
+  background-color: var(--color-primary) !important;
   text-decoration: underline;
   outline: none;
 }
 
 #dform_container button.breadcrumb-btn:focus {
-  outline: 2px solid #fff;
+  outline: .2rem solid var(--color-white);
 }
 
 #dform_container button.breadcrumb-btn + #dform_container button.breadcrumb-btn {
@@ -364,7 +368,7 @@ small {
   width: 29%;
   flex-grow: 1;
   background: var(--color-grey-1);
-  transition: box-shadow 0.3s, border-color 0.3s;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .card:hover {
@@ -378,6 +382,7 @@ small {
 .card:focus-visible {
   border: solid .2rem var(--color-black);
   outline: solid .4rem var(--color-warning);
+  will-change: border, outline; 
 }
 
 .card-body {
@@ -445,7 +450,7 @@ small {
   padding: .5rem;
   margin-block: .5rem;
   cursor: pointer;
-  width: 2.6rem;
+  width: 2.9rem;
   height: 3rem;
 }
 
@@ -549,6 +554,7 @@ footer .footer-links a {
   padding: 0;
   box-shadow: none;
   text-decoration: none;
+  will-change: color, background; 
 }
 
 footer .footer-links a:hover,

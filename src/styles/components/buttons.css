@@ -9,7 +9,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: stretch;
   gap: 1.2rem;
+}
+
+#dform_container .dform_widget_type_buttonset button {
+    flex: 1;
+    min-height: 5rem;
 }
 
 #dform_container .dform_widget_type_buttonset.vertical {
