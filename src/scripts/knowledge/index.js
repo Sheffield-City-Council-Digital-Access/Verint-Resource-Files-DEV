@@ -1060,7 +1060,7 @@ function handleOnReadyKnowledge() {
           const filterFn = determineFilter(service);
           console.log("a-z", filterFn);
           service.subjects
-            .filter(filterFn) // Apply Content Class Filtering
+            // .filter(filterFn) // Apply Content Class Filtering
             .forEach((subject) => {
               // Handle Content subjects
               if (subject.content) {
