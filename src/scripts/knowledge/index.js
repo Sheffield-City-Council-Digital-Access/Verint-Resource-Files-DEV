@@ -1355,3 +1355,16 @@ function logUserJourney(action, details) {
 
   journeyField.value = JSON.stringify(journey);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const resetFilterButton = document.querySelector('#dform_container .reset-filter button');
+    if (resetFilterButton) {
+        resetFilterButton.addEventListener('click', function() {
+            const span = this.querySelector('span');
+            span.classList.add('spinning');
+            setTimeout(() => {
+                span.classList.remove('spinning');
+            }, 500); // Remove class after animation completes
+        });
+    }
+});

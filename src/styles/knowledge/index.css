@@ -524,12 +524,11 @@ small {
   }
 }
 
-#dform_container .reset-filter button:hover span {
+#dform_container .reset-filter button span {
   display: inline-block;
-  transition: transform 0.5s ease-in-out;
 }
 
-#dform_container .reset-filter button:active span {
+#dform_container .reset-filter button span.spinning {
   animation: spinOnce 0.5s ease-in-out 1;
 }
 
