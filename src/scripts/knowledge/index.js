@@ -515,7 +515,8 @@ function handleOnReadyKnowledge() {
         createCards(
           service.subjects,
           subjectMenuContainer,
-          determineFilter("sub") // **Apply Menu Filter**
+          // determineFilter(service) // **Apply Menu Filter**
+          service
         );
         KDF.gotoPage("page_subject_menu", true, true, true);
       }
@@ -524,21 +525,20 @@ function handleOnReadyKnowledge() {
 
   topicMenuButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      console.log("topicMenuButtons", service);
       let service;
-      console.log("topicMenuButtons", service);
 
       subjectMenuButtons.forEach((subjectButton) => {
         const subjectLabel = subjectButton.textContent;
         service = knowledge.find((service) => service.name === subjectLabel);
       });
-      console.log("topicMenuButtons", service);
 
       if (service) {
+        console.log("topicMenuButtons", service);
         createCards(
           service.subjects,
           subjectMenuContainer,
-          determineFilter(service) // **Apply Menu Filter**
+          // determineFilter(service) // **Apply Menu Filter**
+          service
         );
         const label = button.textContent;
 
@@ -551,7 +551,8 @@ function handleOnReadyKnowledge() {
             createCards(
               subject.topics,
               topicsMenuContainer,
-              determineFilter(subject) // **Apply Content Class Filter**
+              // determineFilter(subject) // **Apply Content Class Filter**
+              subject
             );
             KDF.gotoPage("page_topic_menu", true, true, true);
           }
