@@ -1058,6 +1058,7 @@ function handleOnReadyKnowledge() {
         if (Array.isArray(service.subjects)) {
           console.log('a-z', service)
           const filterFn = determineFilter(service);
+          console.log("a-z", filterFn);
           service.subjects
             .filter(filterFn) // Apply Content Class Filtering
             .forEach((subject) => {
@@ -1075,7 +1076,7 @@ function handleOnReadyKnowledge() {
 
                 card.appendChild(title);
                 card.appendChild(description);
-        console.log("a-z", filterFn);
+        
                 card.dataset.option = JSON.stringify({
                   id: subject.id,
                   name: subject.name,
