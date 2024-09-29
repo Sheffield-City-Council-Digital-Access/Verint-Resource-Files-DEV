@@ -13,6 +13,8 @@ let serviceMenuContainer;
 let subjectMenuContainer;
 let topicsMenuContainer;
 let searchInput;
+let subjectMenuButtons;
+let topicMenuButtons;
 
 // --- FUNCTIONS ------------------------------------------------------------ \\
 
@@ -62,9 +64,9 @@ function determineFilter(parent) {
       case "Content":
         filterFunctions.push(
           (item) =>
-            item.constructor &&
-            (item.constructor.name.startsWith("Content") ||
-              item.constructor.name.startsWith("Form"))
+            item.constructor && item.constructor.name.startsWith("Content")
+            // (item.constructor.name.startsWith("Content") ||
+            //   item.constructor.name.startsWith("Form"))
         );
         break;
 
@@ -497,8 +499,8 @@ function handleOnReadyKnowledge() {
 
   createCards(knowledge, serviceMenuContainer);
 
-  const subjectMenuButtons = document.querySelectorAll(".subject-menu-btn");
-  const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
+  subjectMenuButtons = document.querySelectorAll(".subject-menu-btn");
+  topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
 
   subjectMenuButtons.forEach((button) => {
     button.addEventListener("click", () => {
