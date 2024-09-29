@@ -515,7 +515,6 @@ function handleOnReadyKnowledge() {
         createCards(
           service.subjects,
           subjectMenuContainer,
-          // determineFilter(service) // **Apply Menu Filter**
           service
         );
         KDF.gotoPage("page_subject_menu", true, true, true);
@@ -537,7 +536,6 @@ function handleOnReadyKnowledge() {
         createCards(
           service.subjects,
           subjectMenuContainer,
-          // determineFilter(service) // **Apply Menu Filter**
           service
         );
         const label = button.textContent;
@@ -551,7 +549,6 @@ function handleOnReadyKnowledge() {
             createCards(
               subject.topics,
               topicsMenuContainer,
-              // determineFilter(subject) // **Apply Content Class Filter**
               subject
             );
             KDF.gotoPage("page_topic_menu", true, true, true);
