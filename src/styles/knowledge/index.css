@@ -518,7 +518,6 @@ small {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
@@ -526,6 +525,7 @@ small {
 
 #dform_container .reset-filter button span {
   display: inline-block;
+  animation: spinOnce 0.5s ease-in-out 1;
 }
 
 #dform_container .reset-filter button span.spinning {

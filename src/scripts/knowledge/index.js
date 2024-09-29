@@ -1361,10 +1361,17 @@ document.addEventListener('DOMContentLoaded', function() {
     if (resetFilterButton) {
         resetFilterButton.addEventListener('click', function() {
             const span = this.querySelector('span');
+            // Remove the class if it's already there
+            span.classList.remove('spinning');
+            // Force a reflow
+            void span.offsetWidth;
+            // Add the class to trigger the animation
             span.classList.add('spinning');
+            
+            // Remove the class after the animation completes
             setTimeout(() => {
                 span.classList.remove('spinning');
-            }, 500); // Remove class after animation completes
+            }, 500);
         });
     }
 });
