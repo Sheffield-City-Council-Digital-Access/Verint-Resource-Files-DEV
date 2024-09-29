@@ -17,61 +17,73 @@ let searchInput;
 // --- FUNCTIONS ------------------------------------------------------------ \\
 
 /**
- * Determines the type of children within a parent object.
+ * Determines the types of children within a parent object.
  * @param {Object} parent - The parent object containing children.
- * @returns {string} - The type of children ("Menu", "Content", "Form", or "Unknown").
+ * @returns {Set<string>} - A set of child types ("Menu", "Content", "Form").
  */
-function getChildType(parent) {
-  if (!parent.subjects && !parent.topics && !parent.forms) {
-    // Added !parent.forms
-    return "Unknown";
+function getChildTypes(parent) {
+  const childTypes = new Set();
+
+  if (parent.subjects) {
+    parent.subjects.forEach((item) => {
+      if (item.constructor && item.constructor.name.startsWith("Menu")) {
+        childTypes.add("Menu");
+      } 
+      if (item.constructor && item.constructor.name.startsWith("Content")) {
+        childTypes.add("Content");
+      } 
+      if (item.constructor && item.constructor.name.startsWith("Form")) {
+        childTypes.add("Form");
+      }
+    });
   }
 
-  const firstChild =
-    parent.subjects?.[0] || parent.topics?.[0] || parent.forms?.[0]; // Added parent.forms
-
-  if (!firstChild || !firstChild.constructor || !firstChild.constructor.name) {
-    return "Unknown";
-  }
-
-  const className = firstChild.constructor.name;
-
-  if (className.startsWith("Menu")) {
-    return "Menu";
-  } else if (className.startsWith("Content")) {
-    return "Content";
-  } else if (className.startsWith("Form")) {
-    // New condition for Form
-    return "Form";
-  } else {
-    return "Unknown";
-  }
+  return childTypes;
 }
 
 /**
  * Determines the filter function based on the current parent object.
+ * Supports multiple child types (Menu, Content, Form).
  * @param {Object} parent - The current parent object.
- * @returns {Function} - The filter function to apply.
+ * @returns {Function} - The combined filter function to apply.
  */
 function determineFilter(parent) {
-  const childType = getChildType(parent);
+  const childTypes = getChildTypes(parent);
+  const filterFunctions = [];
 
-  switch (childType) {
-    case "Menu":
-      return (item) =>
-        item.constructor && item.constructor.name.startsWith("Menu");
+  childTypes.forEach((type) => {
+    switch (type) {
+      case "Menu":
+        filterFunctions.push((item) =>
+          item.constructor && item.constructor.name.startsWith("Menu")
+        );
+        break;
 
-    case "Content":
-      return (item) =>
-        item.constructor && item.constructor.name.startsWith("Content");
+      case "Content":
+        filterFunctions.push((item) =>
+          item.constructor &&
+          (item.constructor.name.startsWith("Content") ||
+            item.constructor.name.startsWith("Form"))
+        );
+        break;
 
-    case "Form":
-      return (item) =>
-        item.constructor && item.constructor.name.startsWith("Form");
+      case "Form":
+        filterFunctions.push((item) =>
+          item.constructor &&
+          (item.constructor.name.startsWith("Form") ||
+            item.constructor.name.startsWith("Content"))
+        );
+        break;
 
-    default:
-      return () => true; // No filtering or unknown type
-  }
+      default:
+        // No filtering for unknown types
+        filterFunctions.push(() => true);
+        break;
+    }
+  });
+
+  // Combine all filter functions using OR logic
+  return (item) => filterFunctions.some((fn) => fn(item));
 }
 
 /**
