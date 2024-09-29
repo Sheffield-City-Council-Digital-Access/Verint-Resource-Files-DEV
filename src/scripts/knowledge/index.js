@@ -24,28 +24,27 @@ let topicMenuButtons;
  * @param {Object} parent - The parent object containing children.
  * @returns {Set<string>} - A set of child types ("Menu", "Content", "Form").
  */
-   function getChildTypes(parent) {
-     const childTypes = new Set();
+function getChildTypes(parent) {
+  const childTypes = new Set();
 
-     ["subjects", "topics"].forEach((key) => {
-       if (parent[key]) {
-         parent[key].forEach((item) => {
-           if (item.type) {
-             childTypes.add(item.type);
-             console.log(
-               `Identified child type: ${item.type} in parent: ${parent.name}`
-             );
-           }
-         });
-       }
-     });
+  ["subjects", "topics"].forEach((key) => {
+    if (parent[key]) {
+      parent[key].forEach((item) => {
+        if (item.constructor && item.constructor.name.startsWith("Menu")) {
+          childTypes.add("Menu");
+        }
+        if (item.constructor && item.constructor.name.startsWith("Content")) {
+          childTypes.add("Content");
+        }
+        if (item.constructor && item.constructor.name.startsWith("Form")) {
+          childTypes.add("Form");
+        }
+      });
+    }
+  });
 
-     console.log(
-       `Child types for parent "${parent.name}":`,
-       Array.from(childTypes)
-     );
-     return childTypes;
-   }
+  return childTypes;
+}
 
 /**
  * Determines the filter function based on the current parent object.
@@ -60,18 +59,26 @@ function determineFilter(parent) {
   childTypes.forEach((type) => {
     switch (type) {
       case "Menu":
-        filterFunctions.push((item) => item.type === "Menu");
+        filterFunctions.push(
+          (item) => item.constructor && item.constructor.name.startsWith("Menu")
+        );
         break;
 
       case "Content":
         filterFunctions.push(
-          (item) => item.type === "Content" || item.type === "Form"
+          (item) =>
+            item.constructor &&
+            (item.constructor.name.startsWith("Content") ||
+              item.constructor.name.startsWith("Form"))
         );
         break;
 
       case "Form":
         filterFunctions.push(
-          (item) => item.type === "Form" || item.type === "Content"
+          (item) =>
+            item.constructor &&
+            (item.constructor.name.startsWith("Form") ||
+              item.constructor.name.startsWith("Content"))
         );
         break;
 
@@ -82,18 +89,8 @@ function determineFilter(parent) {
     }
   });
 
-  console.log(
-    `Filter functions for parent "${parent.name}": ${filterFunctions.length} types detected.`
-  );
-
   // Combine all filter functions using OR logic
-  return (item) => {
-    const result = filterFunctions.some((fn) => fn(item));
-    if (result) {
-      console.log(`Item "${item.name}" passed the filter.`);
-    }
-    return result;
-  };
+  return (item) => filterFunctions.some((fn) => fn(item));
 }
 
 /**
@@ -1059,6 +1056,7 @@ function handleOnReadyKnowledge() {
 
       filteredServices.forEach((service) => {
         if (Array.isArray(service.subjects)) {
+          console.log('a-z', service)
           const filterFn = determineFilter(service);
           service.subjects
             .filter(filterFn) // Apply Content Class Filtering
@@ -1077,7 +1075,7 @@ function handleOnReadyKnowledge() {
 
                 card.appendChild(title);
                 card.appendChild(description);
-
+        console.log("a-z", filterFn);
                 card.dataset.option = JSON.stringify({
                   id: subject.id,
                   name: subject.name,
