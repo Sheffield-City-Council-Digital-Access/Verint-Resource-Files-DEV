@@ -524,7 +524,7 @@ small {
   }
 }
 
-#dform_container .reset-filter button span:hover {
+#dform_container .reset-filter button {
   display: inline-block;
   animation: spinOnce 0.5s ease-in-out 1;
 }
