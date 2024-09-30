@@ -496,7 +496,6 @@ const registeringToVote = new MenuEaR(
   "registeringToVote",
   "Registering to Vote",
   "You must be registered to vote before you can vote in UK elections or referendums.",
-  "You can do this in any type of election, whether it's a general election, a local council election or a referendum.",
   [
     informationInDifferentFormats,
     invitationToRegister,
@@ -940,8 +939,7 @@ const waiverApplication = new ContentEaR(
 const postalorProxyVoting = new MenuEaR(
   "postalOrProxyVotingas",
   "Postal or Proxy Voting",
-  "If you would prefer to return your ballot paper by post rather than going to the polling station you must apply for a postal vote.",
-  "If you want someone to vote on your behalf, you can choose to vote by proxy.", 
+  "If you want someone to vote on your behalf, you can choose to vote by proxy.",
   [
     swappingFromPostalToProxyVoting,
     swappingFromProxyToPostalVoting,
@@ -1200,8 +1198,7 @@ const parishElections = new ContentEaR(
 const electionsAndVoting = new MenuEaR(
   "electionsAndVoting",
   "Elections And Voting",
-  "Elections usually take place every 4 years or 5 years dependant on the type of election.",
-  "Information about Voting in these elections can be found here.", 
+  "Information about Voting in these elections can be found here",
   [
     whereDoIVote,
     assistanceForPartiallySightedVoters,
@@ -1356,19 +1353,14 @@ const wards = new ContentEaR(
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
-const topEnquiries = new MenuEaR(
-  "topEnquiries",
-  "Top Enquiries",
-  "",
-  [
-    annualCanvas,
-    electionResults,
-    whereICanVote,
-    councillors,
-    familyTreeorGenealogy,
-    wards,
-  ]
-);
+const topEnquiries = new MenuEaR("topEnquiries", "Top Enquiries", "", [
+  annualCanvas,
+  electionResults,
+  whereICanVote,
+  councillors,
+  familyTreeorGenealogy,
+  wards,
+]);
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
