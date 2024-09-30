@@ -42,8 +42,95 @@ class ContentPaN extends CorePaN {
   }
 }
 
+class FormPaN extends CorePaN {
+  constructor(id, name, description, formName, meta, lastModified) {
+    super(id, name, description);
+    this.formName = formName;
+    this.meta = meta;
+    this.lastModified = lastModified;
+  }
+}
+
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
+
+const reportNeedlesGlass = new FormPaN(
+  "reportNeedlesGlass",
+  "Needles or broken glass",
+  "Report problems with hazardous items",
+  "report_needles_glass",
+  {
+    type: "Report",
+    keywords: ["Needles", "glass"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
+const reportLitter = new FormPaN(
+  "reportLitter",
+  "Litter",
+  "Report problems such as litter or waste on the highway",
+  "report_litter",
+  {
+    type: "Report",
+    keywords: ["Litter"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
+const reportGraffiti = new FormPaN(
+  "reportGraffiti",
+  "Graffiti",
+  "Report problems such as offensive or non-offensive graffiti",
+  "report_graffiti",
+  {
+    type: "Report",
+    keywords: ["Graffiti"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
+const reportFlyPosting = new FormPaN(
+  "reportFlyPosting",
+  "Fly-posting",
+  "Report fly-posting on the highway",
+  "report_fly_posting",
+  {
+    type: "Report",
+    keywords: ["Fly", "posting"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
+const reportFlyTipping = new FormPaN(
+  "reportFlyTipping",
+  "Fly-tipping",
+  "Report issues of illegal dumping",
+  "report_fly_tipping",
+  {
+    type: "Report",
+    keywords: ["Fly", "tipping"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
+const reportDogFouling = new FormPaN(
+  "reportDogFouling",
+  "Dog fouling",
+  "Report dog fouling on the highway",
+  "report_dog_fouling",
+  {
+    type: "Report",
+    keywords: ["Dog", "fouling"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "30/09/2024", name: "Elliott Griffiths" }
+);
 
 const abandonedVehicles = new ContentPaN(
   "abandonedVehicles",
@@ -120,5 +207,12 @@ const pollutionAndNuisance = new ServicePaN(
   "pollutionAndNuisance",
   "Pollution and Nuisance",
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour…`,
-  [abandonedVehicles]
+  [
+    abandonedVehicles,
+    reportLitter,
+    reportGraffiti,
+    reportFlyPosting,
+    reportFlyTipping,
+    reportDogFouling,
+  ]
 );

@@ -42,6 +42,15 @@ class ContentB extends CoreB {
   }
 }
 
+class FormB extends CoreB {
+  constructor(id, name, description, formName, meta, lastModified) {
+    super(id, name, description);
+    this.formName = formName;
+    this.meta = meta;
+    this.lastModified = lastModified;
+  }
+}
+
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
