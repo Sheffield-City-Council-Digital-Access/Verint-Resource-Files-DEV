@@ -28,6 +28,7 @@ let fieldsToCheckBeforeClose = [];
 const formUserPath = [];
 
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
+
 function handleInitialisingEvent(addDateMessages) {
   // --- ADD TAB TITLE AND ICON  ------------------------------------------- \\
 
@@ -949,16 +950,24 @@ function handleOnReadyEvent(event, kdf) {
 
   $(`.date-yy`)
     .attr("min", function () {
-      const hasFutureClass = $(this).closest(".date-field").hasClass("future");
-      return hasFutureClass
-        ? new Date().getFullYear()
-        : new Date().getFullYear() - 120;
+      const minDate = $(this)
+        .closest(".container")
+        .find("input[type='date']")
+        .data("mindate");
+
+      // Calculate the minimum year based on the minDate
+      const minYear = new Date().getFullYear() + parseInt(minDate);
+      return minYear;
     })
     .attr("max", function () {
-      const hasFutureClass = $(this).closest(".date-field").hasClass("future");
-      return hasFutureClass
-        ? new Date().getFullYear() + 5
-        : new Date().getFullYear();
+      const maxDate = $(this)
+        .closest(".container")
+        .find("input[type='date']")
+        .data("maxdate");
+
+      // Calculate the maximum year based on the maxDate
+      const maxYear = new Date().getFullYear() + parseInt(maxDate);
+      return maxYear;
     })
     .on("input focusout", function (e) {
       const parentId = $(this)
@@ -975,6 +984,35 @@ function handleOnReadyEvent(event, kdf) {
       if (e.type === "input") inputDate(this.id, null, e.which);
       handleDateValidation(parentId);
     });
+
+  // $(`.date-yy`)
+  //   .attr("min", function () {
+  //     const hasFutureClass = $(this).closest(".date-field").hasClass("future");
+  //     return hasFutureClass
+  //       ? new Date().getFullYear()
+  //       : new Date().getFullYear() - 120;
+  //   })
+  //   .attr("max", function () {
+  //     const hasFutureClass = $(this).closest(".date-field").hasClass("future");
+  //     return hasFutureClass
+  //       ? new Date().getFullYear() + 5
+  //       : new Date().getFullYear();
+  //   })
+  //   .on("input focusout", function (e) {
+  //     const parentId = $(this)
+  //       .attr("id")
+  //       .replace("_num_", "_date_")
+  //       .slice(0, -3);
+  //     const dateMessage = dateMessages[parentId] || defaultDateMessage;
+  //     const dd = $(`#${this.id.slice(0, -2)}dd`).val() !== "" ? true : false;
+  //     const mm = $(`#${this.id.slice(0, -2)}mm`).val() !== "" ? true : false;
+  //     $(`#${parentId}`)
+  //       .find(".dform_validationMessage")
+  //       .text(dateMessage)
+  //       .hide();
+  //     if (e.type === "input") inputDate(this.id, null, e.which);
+  //     handleDateValidation(parentId);
+  //   });
 
   // --- HANDLE KEYUP EVENTLISTENER FOR CHECK PROGRESS --------------------- \\
 
@@ -2169,31 +2207,59 @@ function validDate(id, day, month, year) {
     .find(".dform_validationMessage")
     .text(dateMessage)
     .hide();
+
   const date = new Date(year, month - 1, day);
   const now = new Date().setHours(0, 0, 0, 0);
 
-  const dobField = $(`#${id}`).hasClass("dob") ? true : false;
-
+  // Check if the constructed date is valid
   if (
-    date.getFullYear() != year ||
-    date.getMonth() + 1 != month ||
-    date.getDate() != day
+    date.getFullYear() !== year ||
+    date.getMonth() + 1 !== month ||
+    date.getDate() !== day
   ) {
-    validationMsg
-      .text(
-        `${
-          dobField ? "Date of birth must be a real date" : "Must be a real date"
-        }`
-      )
-      .show();
+    validationMsg.text(`Must be a real date`).show();
     return false;
   }
 
   const dateElementId = id.replace("_date_", "_dt_");
   const { minDate, maxDate } = getMinMaxDates(dateElementId);
 
-  const dateRange = $(`#${id}`).hasClass("future") ? "future" : "past";
+  // Validate against min and max dates
+  function getYearLabel(years) {
+    return years === 1 ? "year" : "years";
+  }
 
+  // Inside the validDate function
+  if (date < minDate) {
+    const yearsPast = new Date().getFullYear() - minDate.getFullYear();
+    validationMsg
+      .text(
+        `Date cannot be more than ${yearsPast} ${getYearLabel(
+          yearsPast
+        )} in the past`
+      )
+      .show();
+    return false;
+  }
+
+  if (date > maxDate) {
+    const yearsFuture = maxDate.getFullYear() - new Date().getFullYear();
+    validationMsg
+      .text(
+        `Date cannot be more than ${yearsFuture} ${getYearLabel(
+          yearsFuture
+        )} in the future`
+      )
+      .show();
+    return false;
+  }
+
+  // Additional check for the current date
+  if (date < now) {
+    validationMsg.text("Date must be today or in the future").show();
+  }
+
+  // Date relationship checks
   if (datePairs && Array.isArray(datePairs) && datePairs.length > 0) {
     for (const pair of datePairs) {
       const [dateAId, dateBId] = pair.dateFields;
@@ -2219,45 +2285,104 @@ function validDate(id, day, month, year) {
     }
   }
 
-  if (dateRange === "past") {
-    if (date < minDate) {
-      validationMsg
-        .text(
-          `Date cannot be more than ${minDate.getFullYear()} years in the past`
-        )
-        .show();
-      return false;
-    }
-    if (date > now) {
-      validationMsg
-        .text(
-          `${
-            dobField
-              ? "Date of birth must be today or in the past"
-              : "Date must be today or in the past"
-          }`
-        )
-        .show();
-      return false;
-    }
-  }
-
-  if (dateRange === "future") {
-    if (date > maxDate) {
-      validationMsg
-        .text(
-          `Date cannot be more than ${maxDate.getFullYear()} years in the future`
-        )
-        .show();
-      return false;
-    }
-    if (date < now) {
-      validationMsg.text("Date must be today or in the future").show();
-    }
-  }
-
   return true; // If all validations pass
 }
+
+// function validDate(id, day, month, year) {
+//   const dateMessage = dateMessages[id] || defaultDateMessage;
+//   const validationMsg = $(`#${id}`)
+//     .find(".dform_validationMessage")
+//     .text(dateMessage)
+//     .hide();
+//   const date = new Date(year, month - 1, day);
+//   const now = new Date().setHours(0, 0, 0, 0);
+
+//   const dobField = $(`#${id}`).hasClass("dob") ? true : false;
+
+//   if (
+//     date.getFullYear() != year ||
+//     date.getMonth() + 1 != month ||
+//     date.getDate() != day
+//   ) {
+//     validationMsg
+//       .text(
+//         `${
+//           dobField ? "Date of birth must be a real date" : "Must be a real date"
+//         }`
+//       )
+//       .show();
+//     return false;
+//   }
+
+//   const dateElementId = id.replace("_date_", "_dt_");
+//   const { minDate, maxDate } = getMinMaxDates(dateElementId);
+
+//   const dateRange = $(`#${id}`).hasClass("future") ? "future" : "past";
+
+//   if (datePairs && Array.isArray(datePairs) && datePairs.length > 0) {
+//     for (const pair of datePairs) {
+//       const [dateAId, dateBId] = pair.dateFields;
+//       if (id === dateAId) {
+//         const dateBValue = $(`#${dateBId.replace("_date_", "_dt_")}`).val();
+//         if (
+//           dateBValue &&
+//           !checkDateRelationship(date, new Date(dateBValue), pair.rule)
+//         ) {
+//           validationMsg.text(pair.validationMessages[0]).show();
+//           return false;
+//         }
+//       } else if (id === dateBId) {
+//         const dateAValue = $(`#${dateAId.replace("_date_", "_dt_")}`).val();
+//         if (
+//           dateAValue &&
+//           !checkDateRelationship(new Date(dateAValue), date, pair.rule)
+//         ) {
+//           validationMsg.text(pair.validationMessages[1]).show();
+//           return false;
+//         }
+//       }
+//     }
+//   }
+
+//   if (dateRange === "past") {
+//     if (date < minDate) {
+//       validationMsg
+//         .text(
+//           `Date cannot be more than ${minDate.getFullYear()} years in the past`
+//         )
+//         .show();
+//       return false;
+//     }
+//     if (date > now) {
+//       validationMsg
+//         .text(
+//           `${
+//             dobField
+//               ? "Date of birth must be today or in the past"
+//               : "Date must be today or in the past"
+//           }`
+//         )
+//         .show();
+//       return false;
+//     }
+//   }
+
+//   if (dateRange === "future") {
+//     if (date > maxDate) {
+//       validationMsg
+//         .text(
+//           `Date cannot be more than ${maxDate.getFullYear()} years in the future`
+//         )
+//         .show();
+//       return false;
+//     }
+//     if (date < now) {
+//       validationMsg.text("Date must be today or in the future").show();
+//     }
+//   }
+
+//   return true; // If all validations pass
+// }
 
 // --- PROGRESS BAR --------------------------------------------------------- \\
 
