@@ -51,17 +51,16 @@ const informationInDifferentFormats = new ContentEaR(
   "Information in different formats",
   "Accessing information in different formats (Braille, Large Print etc)",
   `
-  <p>Some information is available in alternative formats. If you are registering
+    <p>
+      Some information is available in alternative formats. If you are registering
       to vote, do so at
       <a href="https://www.gov.uk/register-to-vote" target="_blank"
         >https://www.gov.uk/register-to-vote</a
       >, which works with assistive technologies such as screen readers, or we can
       send you an application in your preferred format where available. For
       additional information, please call: 0114 2734093.
-      </p>
-
-      `,
-
+    </p>
+  `,
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
@@ -72,12 +71,12 @@ const informationInDifferentFormats = new ContentEaR(
 const invitationToRegister = new ContentEaR(
   "invitationToRegister",
   "Invitation to Register",
-
+  "What is an Invitation To Register (ITR)?",
   `
     <p>
-    An ITR is an Invitation To Register, this is a letter that is sent out to an individual 
-    needing to complete register to vote. The letter advises you how to register to vote 
-    using the online service or the attached form.
+      An ITR is an Invitation To Register, this is a letter that is sent out to an individual 
+      needing to complete register to vote. The letter advises you how to register to vote 
+      using the online service or the attached form.
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -90,7 +89,7 @@ const invitationToRegister = new ContentEaR(
 const movingHomeorMovedHome = new ContentEaR(
   "movingHomeorMovedHome",
   "Moving Home or Moved Home",
-
+  "What happens if I move home?",
   `
     <p>
       If you have moved, you need to re-register for voting at your new address. You
@@ -132,7 +131,7 @@ const includeSomeoneElseontheRegisterForm = new ContentEaR(
 const lostMyInvitationToRegister = new ContentEaR(
   "lostMyInvitationToRegister",
   "Lost My Invitation To Register",
-
+  "What happens if I lose my Invitation To Register (ITR)?",
   `
     <p>
       If you have lost your form, you can apply to register online at
@@ -151,7 +150,7 @@ const lostMyInvitationToRegister = new ContentEaR(
 const registerToVote = new ContentEaR(
   "registerToVote",
   "Register To Vote",
-
+  "How to register to vote",
   `
     <p>
       Everyone is responsible for registering themselves. This is called Individual
@@ -174,7 +173,7 @@ const registerToVote = new ContentEaR(
 const requestforEvidenceLetter = new ContentEaR(
   "requestForEvidenceLetter",
   "Request For Evidence Letter (Registering)",
-
+  "What is a Request For Evidence Letter (Registering)?",
   `
     <p>
       This letter is sent when documents are requested to support someone's
@@ -192,7 +191,7 @@ const requestforEvidenceLetter = new ContentEaR(
 const revisionstoTheElectoralRegister = new ContentEaR(
   "revisionsToTheElectoralRegister",
   "Revisions to The Electoral Register (To Be Updated)",
-
+  "What are the revision dates for the Electoral Register?",
   `
     <p>
       Additions or changes to the register are usually added on the next monthly
@@ -219,7 +218,7 @@ const revisionstoTheElectoralRegister = new ContentEaR(
 const useofEmailAddressandPhoneNumber = new ContentEaR(
   "useOfEmailAddressandPhoneNumber",
   "Use Of Email Address and Phone Number",
-
+  "What happens if I provide an email address or phone number?",
   `
     <p>
       If you provide an email address or phone number as part of your application,
@@ -238,7 +237,7 @@ const useofEmailAddressandPhoneNumber = new ContentEaR(
 const changeofNameonTheRegister = new ContentEaR(
   "changeOfNameOnTheRegister",
   "Change of Name on the Register",
- 
+  "What happens if my name has changed?",
   `
     <p>
       If your name has changed, you can complete a change of name form with your
@@ -256,7 +255,7 @@ const changeofNameonTheRegister = new ContentEaR(
 const creditReferencingAgencies = new ContentEaR(
   "creditReferencingAgencies",
   "Credit Referencing Agencies",
-
+  "What are Credit Referencing Agencies?",
   `
     <p>
       Credit referencing agencies have access to the electoral register (previously
@@ -340,7 +339,7 @@ const successfulOnlineRegistration = new ContentEaR(
 const incorrectDetailsOnElectoralRegister = new ContentEaR(
   "incorrectDetailsOnElectoralRegister",
   "Incorrect Details On Electoral Register",
-
+  "What happens if I find incorrect details on the electoral register?",
   `
     <p>
       If an error is found on the electoral register, please let us know so it can
@@ -362,7 +361,7 @@ const incorrectDetailsOnElectoralRegister = new ContentEaR(
 const optOutofTheOpenRegister = new ContentEaR(
   "optOutOfTheOpenRegister",
   "Opt Out of the Open Register",
-
+  "What happens if I opt out of the open register?",
   `
     <p>
       Your name and address will be included in the open register unless you ask for
@@ -386,7 +385,7 @@ const optOutofTheOpenRegister = new ContentEaR(
 const electoralRegisterConfirmationLetter = new ContentEaR(
   "electoralRegisterConfirmationLetter",
   "Electoral Register Confirmation Letter",
-
+  "What is an Electoral Register Confirmation Letter?",
   `
     <p>
       Letters can be requested from Electoral Services for Proof of Registration.
@@ -405,7 +404,7 @@ const electoralRegisterConfirmationLetter = new ContentEaR(
 const requestOtherElectionsReferral = new ContentEaR(
   "requestOtherElectionsReferral",
   "Request Other Elections Referral",
-  
+  "",
   `
     <p>
       <strong>Note to advisor</strong> - This is only to be used if the caller does not have access
@@ -423,7 +422,7 @@ const requestOtherElectionsReferral = new ContentEaR(
 const archiveCopies = new ContentEaR(
   "archiveCopies",
   "Archive Copies",
-
+  "What happens if I request a copy of the electoral register?",
   `
     <p>
       Copies of the register are supplied to the British Library. Copies of the
@@ -450,7 +449,7 @@ const archiveCopies = new ContentEaR(
 const changeofAddressForm = new ContentEaR(
   "changeOfAddressForm",
   "Change Of Address Form",
- 
+  "What happens if I change address?",
   `
     <p>
       We do not issue a change of address form, to change the address you are
@@ -516,7 +515,7 @@ const registeringToVote = new MenuEaR(
 const ccaCCBForms = new ContentEaR(
   "ccaCCBForms",
   "CCA/CCB Forms",
-
+  "What are CCA/CCB Forms?",
   `
     <p>
       Each year, the <strong>Electoral Registration Officer (ERO)</strong> is
@@ -566,7 +565,7 @@ const ccaCCBForms = new ContentEaR(
 const canvassForm = new ContentEaR(
   "canvassForm",
   "Canvass Form (CF)",
-
+  "",
   `
     <p>
       Any residential property that does not respond to the CCB form will receive a
@@ -636,7 +635,7 @@ const ccaCCBorCanvassForms = new ContentEaR(
 const lostCCACCBorCanvassForm = new ContentEaR(
   "lostCCACCBorCanvassForm",
   "Lost My CCA CCB or Canvass Form",
-
+  "What happens if I lose my CCA CCB or Canvass Form?",
   `
     <p>
       If you have lost your form then a duplicate can be sent, or you can wait for a
@@ -662,7 +661,7 @@ const lostCCACCBorCanvassForm = new ContentEaR(
 const studentVoters = new ContentEaR(
   "studentVoters",
   "Student Voters",
-
+  "What are Student Voters?",
   `
     <p>
       Students can be registered in both their term-time and home address but can
@@ -687,7 +686,7 @@ const studentVoters = new ContentEaR(
 const removalFromRegister = new ContentEaR(
   "removalFromRegister",
   "Removal From Register",
-
+  "What happens if I move out of a property?",
   `
     <p>
       If you have received a CCA, CCB, or CF with a previous resident's details on,
@@ -717,7 +716,7 @@ const removalFromRegister = new ContentEaR(
 const informationChangeandHowToUpdateIt = new ContentEaR(
   "informationChangeAndHowToUpdateIt",
   "Information Change and How to Update It",
-
+  "What happens if I change my name, address, nationality, or anything else on the form?",
   `
     <p>
       If anyone listed on the form is not living at your address, their name should
@@ -757,7 +756,7 @@ const annualCanvasMenu = new MenuEaR(
 const swappingFromPostalToProxyVoting = new ContentEaR(
   "swappingFromPostalToProxyVoting",
   "Swapping From Postal To Proxy Voting",
-
+  "What happens if I swap from postal to proxy voting?",
   `
     <p>
       You can do this at any time of the year, but specific deadlines apply before
@@ -780,7 +779,7 @@ const swappingFromPostalToProxyVoting = new ContentEaR(
 const swappingFromProxyToPostalVoting = new ContentEaR(
   "swappingFromProxyToPostalVoting",
   "Swapping From Proxy To Postal Voting",
-
+  "What happens if I swap from proxy to postal voting?",
   `
     <p>
       You can do this at any time of the year, but specific deadlines apply before
@@ -804,7 +803,7 @@ const swappingFromProxyToPostalVoting = new ContentEaR(
 const postalVoteNotReceivedorLost = new ContentEaR(
   "postalVoteNotReceivedorLost",
   "Postal Vote Not Received or Lost",
-
+  "What happens if I have not received my postal voting pack or lost it?",
   `
     <p>
       If you have not received your postal voting pack by 4 working days before
@@ -827,7 +826,7 @@ const postalVoteNotReceivedorLost = new ContentEaR(
 const postalProxyVote = new ContentEaR(
   "postalProxyVote",
   "Postal Proxy Vote",
-
+  "What is a postal proxy vote?",
   `
     <p>
       If a person has been appointed as a proxy voter for someone else, but cannot
@@ -852,7 +851,7 @@ const postalProxyVote = new ContentEaR(
 const applyingForPostalVote = new ContentEaR(
   "applyingForPostalVote",
   "Applying For Postal Vote",
-
+  "How do I apply for a postal vote?",
   `
     <p>
       You can choose to vote using a postal vote in all elections that you are
@@ -884,7 +883,7 @@ const applyingForPostalVote = new ContentEaR(
 const requestproxyVote = new ContentEaR(
   "requestproxyVote",
   "Request Proxy Vote",
-
+  "How do I request a proxy vote?",
   `
     <p>
       You can request to vote by proxy to have another person vote on your behalf at
@@ -913,7 +912,7 @@ const requestproxyVote = new ContentEaR(
 const waiverApplication = new ContentEaR(
   "waiverApplication",
   "Waiver Application",
-
+  "What is a waiver?",
   `
     <p>
       A waiver is used for postal and proxy voting applications when a voter is
@@ -948,7 +947,7 @@ const postalorProxyVoting = new MenuEaR(
 const whereDoIVote = new ContentEaR(
   "whereDoIVote",
   "Where Do I Vote",
-
+  "",
   `
     <p>
       SERVICE HAS NOT PROVIDED THE LINK FOR 'WHERE DO I VOTE?
@@ -964,7 +963,7 @@ const whereDoIVote = new ContentEaR(
 const assistanceForPartiallySightedVoters = new ContentEaR(
   "assistanceForPartiallySightedVoters",
   "Assistance For Partially Sighted Voters",
-
+  "What assistance is available for partially sighted voters?",
   `
     <p>
       <strong>Voting in Person:</strong>Large print copies of ballot papers are
@@ -993,7 +992,7 @@ const assistanceForPartiallySightedVoters = new ContentEaR(
 const howToCompletePostalVote = new ContentEaR(
   "howToCompletePostalVote",
   "Assistance For Partially Sighted Voters",
-
+  "How do I complete my postal vote?",
   `
     <p>
       CLICK to ENHANCE IMAGE
@@ -1009,7 +1008,7 @@ const howToCompletePostalVote = new ContentEaR(
 const postalVoteNoLongerRequired = new ContentEaR(
   "postalVoteNoLongerRequired",
   "Postal Vote No Longer Required",
-
+  "How do I cancel my postal vote?",
   `
     <p>
       You can cancel your application for a postal vote at any time up to the postal
@@ -1056,7 +1055,7 @@ const postalVoteNoLongerRequired = new ContentEaR(
 const postalVoteReceivedButNotRequested = new ContentEaR(
   "postalVoteReceivedButNotRequested",
   "Postal Vote Received But Not Requested",
-
+  "What happens if I have received a postal ballot and did not request one or cannot remember requesting one?",
   `
     <p>
       If you have received a postal ballot and did not request one or cannot
@@ -1077,7 +1076,7 @@ const postalVoteReceivedButNotRequested = new ContentEaR(
 const postalVoteSendingAbroad = new ContentEaR(
   "postalVoteSendingAbroad",
   "Postal Vote Sending Abroad",
-
+  "Can I send my postal vote abroad?",
   `
     <p>
       Postal votes can be sent abroad, but it is at your own risk. We are unable to
@@ -1097,7 +1096,7 @@ const postalVoteSendingAbroad = new ContentEaR(
 const spoiltorDamagedPostalVote = new ContentEaR(
   "spoiltorDamagedPostalVote",
   "Spoilt or Damaged Postal Vote",
-
+  "What do I do if my postal vote is spoilt or damaged?",
   `
     <p>
       We can issue replacement postal vote ballot papers in the event of the
@@ -1131,7 +1130,7 @@ const spoiltorDamagedPostalVote = new ContentEaR(
 const localElections = new ContentEaR(
   "localElections",
   "Local Elections",
-
+  "Local elections are held on a four-year cycle. There is an election for the first three years and then no election in the fourth year. In these elections, you are voting to elect Councillors of Sheffield who will represent your views for the ward (area) in which you live. Further info on Councillors can be found using the link below:",
   `
     <p>
       Local elections are held on a four-year cycle. There is an election for the
@@ -1154,7 +1153,7 @@ const localElections = new ContentEaR(
 const parishElections = new ContentEaR(
   "parishElections",
   "parish Elections",
-
+  "Parish Councils are separate local authorities to the City Council, with their own elected members. They are wholly contained within the City Council boundary. A parish councillor can stand for election to the City Council and vice versa.",
   `
     <p>
       Parish Councils are separate local authorities to the City Council, with their
@@ -1210,7 +1209,7 @@ const electionsAndVoting = new MenuEaR(
 const annualCanvas = new ContentEaR(
   "annualCanvas",
   "Annual Canvas",
-
+  "What is an Annual Canvas?",
   `
     <p>
       The Electoral Registration Officer (ERO) is required to send a communication 
@@ -1252,7 +1251,7 @@ const annualCanvas = new ContentEaR(
 const electionResults = new ContentEaR(
   "electionResults",
   "Election Results",
-
+  "Where can I find the results of previous elections?",
   `
     <p>
       SERVICE HAS TO PROVIDE PREVIOUS ELECTION RESULTS
@@ -1267,8 +1266,8 @@ const electionResults = new ContentEaR(
 
 const whereICanVote = new ContentEaR(
   "whereICanVotes",
-  "where I Can Vote",
-
+  "Where can I vote",
+  "",
   `
     <p>
       SERVICE HAS NOwhereICanVoteT PROVIDED THE LINK FOR 'WHERE DO I VOTE?
@@ -1284,7 +1283,7 @@ const whereICanVote = new ContentEaR(
 const councillors = new ContentEaR(
   "councillors",
   "Councillors",
-
+  "",
   `
     <p>
       For more information about Sheffield Councillors and their duties, you can
@@ -1306,7 +1305,7 @@ const councillors = new ContentEaR(
 const familyTreeorGenealogy = new ContentEaR(
   "familyTreeorGenealogy",
   "family Tree or Genealogy",
- 
+  "",
   `
     <p>
       The electoral register is compiled for election purposes and is not intended
@@ -1328,6 +1327,7 @@ const familyTreeorGenealogy = new ContentEaR(
 const wards = new ContentEaR(
   "wards",
   "Wards",
+  "",
   `
     <p>
       Sheffield has 28 electoral areas called Wards, and each Ward is represented by
@@ -1350,7 +1350,7 @@ const wards = new ContentEaR(
 const topEnquiries = new MenuEaR(
   "topEnquiries",
   "Top Enquiries",
-
+  "",
   [
     annualCanvas,
     electionResults,
