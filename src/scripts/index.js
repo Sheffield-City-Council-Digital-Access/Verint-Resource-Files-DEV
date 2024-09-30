@@ -2224,6 +2224,7 @@ function checkDate(id, dd, mm, yy) {
   }
 
   // If all components are valid, proceed to validate the full date
+  console.log(validDate(id, dd, mm, yy));
   if (validDate(id, dd, mm, yy)) {
     const date = `${yy.toString().padStart(4, "0")}-${mm
       .toString()
