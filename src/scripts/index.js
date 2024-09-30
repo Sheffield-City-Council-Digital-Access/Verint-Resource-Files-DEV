@@ -2048,9 +2048,19 @@ function showVehicleFields() {
 // --- CUSTOM DATE FUNCTIONS ------------------------------------------------ \\
 
 function handleDateValidation(parentId) {
-  const dd = $(`#${parentId.replace("_date_", "_num_")}_dd`).val();
-  const mm = $(`#${parentId.replace("_date_", "_num_")}_mm`).val();
-  const yy = $(`#${parentId.replace("_date_", "_num_")}_yy`).val();
+  const dd = parseInt(
+    $(`#${parentId.replace("_date_", "_num_")}_dd`).val(),
+    10
+  );
+  const mm = parseInt(
+    $(`#${parentId.replace("_date_", "_num_")}_mm`).val(),
+    10
+  );
+  const yy = parseInt(
+    $(`#${parentId.replace("_date_", "_num_")}_yy`).val(),
+    10
+  );
+
   checkDate(parentId, dd, mm, yy);
   checkMaxDay(parentId, dd, mm, yy);
 }
@@ -2105,74 +2115,127 @@ function getMinMaxDates(dateElementId) {
   return { minDate, maxDate };
 }
 
-function checkDate(id, dd, mm, yy) {
-  if (!dd) $(`#${id} .date-dd`).addClass("dform_fielderror");
-  if (!mm) $(`#${id} .date-mm`).addClass("dform_fielderror");
-  if (!yy) $(`#${id} .date-yy`).addClass("dform_fielderror");
+// function checkDate(id, dd, mm, yy) {
+//   if (!dd) $(`#${id} .date-dd`).addClass("dform_fielderror");
+//   if (!mm) $(`#${id} .date-mm`).addClass("dform_fielderror");
+//   if (!yy) $(`#${id} .date-yy`).addClass("dform_fielderror");
 
+//   const dateMessage = dateMessages[id] || defaultDateMessage;
+//   $(`#${id.replace("_date_", "_txt_")}`).val("");
+//   $(`#${id.replace("_date_", "_dt_")}`).val("");
+//   $(`#${id}`).find(".dform_validationMessage").text(dateMessage).hide();
+
+//   if (!dd && mm && yy) {
+//     $(`#${id}`)
+//       .find(".dform_validationMessage")
+//       .text("Date must include a day")
+//       .show();
+//   }
+//   if (dd && !mm && yy) {
+//     $(`#${id}`)
+//       .find(".dform_validationMessage")
+//       .text("Date must include a month")
+//       .show();
+//   }
+//   if (dd && mm && !yy) {
+//     $(`#${id} .date-yy`).removeClass("dform_fielderror");
+//   }
+//   if (!dd && !mm && yy) {
+//     $(`#${id}`)
+//       .find(".dform_validationMessage")
+//       .text("Date must include a day and month")
+//       .show();
+//   }
+//   if (!dd && mm && !yy) {
+//     $(`#${id}`)
+//       .find(".dform_validationMessage")
+//       .text("Date must include a day and year")
+//       .show();
+//   }
+//   if (dd && !mm && !yy) {
+//     $(`#${id} .date-mm`).removeClass("dform_fielderror");
+//     $(`#${id} .date-yy`).removeClass("dform_fielderror");
+//   }
+//   if (!dd && !mm && !yy) {
+//     $(`#${id}`).find(".dform_validationMessage").text(dateMessage).show();
+//   }
+
+//   if (dd && mm && yy) {
+//     if (validDate(id, dd, mm, yy)) {
+//       const date = `${yy.substr(0, 4)}-${mm.toString().padStart(2, "0")}-${dd
+//         .toString()
+//         .padStart(2, "0")}`;
+//       const localFormat = new Date(date).toLocaleDateString("en-GB");
+//       $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
+//       $(`#${id.replace("_date_", "_dt_")}`).val(date);
+//     } else {
+//       $(`#${id}`)
+//         .parents(`#${id}`)
+//         .find(".dform_validationMessage")
+//         .text(defaultDateMessage)
+//         .show()
+//         .css({ display: "block" });
+//     }
+//   } else {
+//     $(`#${id}`)
+//       .parents(`#${id}`)
+//       .find(".dform_validationMessage")
+//       .text(defaultDateMessage)
+//       .show()
+//       .css({ display: "block" });
+//   }
+// }
+
+function checkDate(id, dd, mm, yy) {
   const dateMessage = dateMessages[id] || defaultDateMessage;
-  $(`#${id.replace("_date_", "_txt_")}`).val("");
-  $(`#${id.replace("_date_", "_dt_")}`).val("");
+  let hasError = false;
+
+  // Clear previous errors
+  $(`#${id} .date-dd, #${id} .date-mm, #${id} .date-yy`).removeClass(
+    "dform_fielderror"
+  );
   $(`#${id}`).find(".dform_validationMessage").text(dateMessage).hide();
 
-  if (!dd && mm && yy) {
-    $(`#${id}`)
-      .find(".dform_validationMessage")
-      .text("Date must include a day")
-      .show();
+  if (!dd) {
+    $(`#${id} .date-dd`).addClass("dform_fielderror");
+    hasError = true;
   }
-  if (dd && !mm && yy) {
-    $(`#${id}`)
-      .find(".dform_validationMessage")
-      .text("Date must include a month")
-      .show();
+  if (!mm) {
+    $(`#${id} .date-mm`).addClass("dform_fielderror");
+    hasError = true;
   }
-  if (dd && mm && !yy) {
-    $(`#${id} .date-yy`).removeClass("dform_fielderror");
-  }
-  if (!dd && !mm && yy) {
-    $(`#${id}`)
-      .find(".dform_validationMessage")
-      .text("Date must include a day and month")
-      .show();
-  }
-  if (!dd && mm && !yy) {
-    $(`#${id}`)
-      .find(".dform_validationMessage")
-      .text("Date must include a day and year")
-      .show();
-  }
-  if (dd && !mm && !yy) {
-    $(`#${id} .date-mm`).removeClass("dform_fielderror");
-    $(`#${id} .date-yy`).removeClass("dform_fielderror");
-  }
-  if (!dd && !mm && !yy) {
-    $(`#${id}`).find(".dform_validationMessage").text(dateMessage).show();
+  if (!yy) {
+    $(`#${id} .date-yy`).addClass("dform_fielderror");
+    hasError = true;
   }
 
-  if (dd && mm && yy) {
-    if (validDate(id, dd, mm, yy)) {
-      const date = `${yy.substr(0, 4)}-${mm.toString().padStart(2, "0")}-${dd
-        .toString()
-        .padStart(2, "0")}`;
-      const localFormat = new Date(date).toLocaleDateString("en-GB");
-      $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
-      $(`#${id.replace("_date_", "_dt_")}`).val(date);
-    } else {
-      $(`#${id}`)
-        .parents(`#${id}`)
-        .find(".dform_validationMessage")
-        .text(defaultDateMessage)
-        .show()
-        .css({ display: "block" });
-    }
+  if (hasError) {
+    const errorMsg =
+      !dd && !mm && !yy
+        ? "Date must include a day, month, and year"
+        : !dd && mm && yy
+        ? "Date must include a day"
+        : !mm && dd && yy
+        ? "Date must include a month"
+        : "Invalid date. Please enter valid components.";
+
+    $(`#${id}`).find(".dform_validationMessage").text(errorMsg).show();
+    return; // Early return on error
+  }
+
+  // If all components are valid, proceed to validate the full date
+  if (validDate(id, dd, mm, yy)) {
+    const date = `${yy.toString().padStart(4, "0")}-${mm
+      .toString()
+      .padStart(2, "0")}-${dd.toString().padStart(2, "0")}`;
+    const localFormat = new Date(date).toLocaleDateString("en-GB");
+    $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
+    $(`#${id.replace("_date_", "_dt_")}`).val(date);
   } else {
     $(`#${id}`)
-      .parents(`#${id}`)
       .find(".dform_validationMessage")
-      .text(defaultDateMessage)
-      .show()
-      .css({ display: "block" });
+      .text("Must be a real date")
+      .show();
   }
 }
 
