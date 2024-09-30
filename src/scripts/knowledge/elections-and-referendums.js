@@ -159,7 +159,7 @@ const lostMyInvitationToRegister = new ContentEaR(
 const registerToVote = new ContentEaR(
   "registerToVote",
   "Register To Vote",
-  "How to register to vote",
+  "",
   `
     <p>
       Everyone is responsible for registering themselves. This is called Individual
@@ -182,7 +182,7 @@ const registerToVote = new ContentEaR(
 const requestforEvidenceLetter = new ContentEaR(
   "requestForEvidenceLetter",
   "Request For Evidence Letter (Registering)",
-  "What is a Request For Evidence Letter (Registering)?",
+  "",
   `
     <p>
       This letter is sent when documents are requested to support someone's
@@ -264,7 +264,7 @@ const changeofNameonTheRegister = new ContentEaR(
 const creditReferencingAgencies = new ContentEaR(
   "creditReferencingAgencies",
   "Credit Referencing Agencies",
-  "What are Credit Referencing Agencies?",
+  "",
   `
     <p>
       Credit referencing agencies have access to the electoral register (previously
@@ -292,7 +292,7 @@ const creditReferencingAgencies = new ContentEaR(
 const doINeedToRegister = new ContentEaR(
   "doINeedToRegister",
   "Do I Need To Register",
-  "Do I Need To Register? What Happens If I do not?",
+  "What Happens If I do not?",
   `
     <p>
       If we have invited you to register to vote, it is important that you respond.
@@ -312,7 +312,7 @@ const doINeedToRegister = new ContentEaR(
 const doINeedToReRegisterEachYear = new ContentEaR(
   "doINeedToReRegisterEachYear",
   "Do I Need To Re-Register Each Year",
-  "Do I Need To Register? What Happens If I do not?",
+  "What Happens If I do not?",
   `
     <p>
       You do not need to register again unless you change address. You should also
@@ -348,7 +348,7 @@ const successfulOnlineRegistration = new ContentEaR(
 const incorrectDetailsOnElectoralRegister = new ContentEaR(
   "incorrectDetailsOnElectoralRegister",
   "Incorrect Details On Electoral Register",
-  "What happens if I find incorrect details on the electoral register?",
+  "",
   `
     <p>
       If an error is found on the electoral register, please let us know so it can
@@ -370,7 +370,7 @@ const incorrectDetailsOnElectoralRegister = new ContentEaR(
 const optOutofTheOpenRegister = new ContentEaR(
   "optOutOfTheOpenRegister",
   "Opt Out of the Open Register",
-  "What happens if I opt out of the open register?",
+  "",
   `
     <p>
       Your name and address will be included in the open register unless you ask for
@@ -394,7 +394,7 @@ const optOutofTheOpenRegister = new ContentEaR(
 const electoralRegisterConfirmationLetter = new ContentEaR(
   "electoralRegisterConfirmationLetter",
   "Electoral Register Confirmation Letter",
-  "What is an Electoral Register Confirmation Letter?",
+  "",
   `
     <p>
       Letters can be requested from Electoral Services for Proof of Registration.
@@ -458,7 +458,7 @@ const archiveCopies = new ContentEaR(
 const changeofAddressForm = new ContentEaR(
   "changeOfAddressForm",
   "Change Of Address Form",
-  "What happens if I change address?",
+  "",
   `
     <p>
       We do not issue a change of address form, to change the address you are
@@ -523,7 +523,7 @@ const registeringToVote = new MenuEaR(
 const ccaCCBForms = new ContentEaR(
   "ccaCCBForms",
   "CCA/CCB Forms",
-  "What are CCA/CCB Forms?",
+  "",
   `
     <p>
       Each year, the <strong>Electoral Registration Officer (ERO)</strong> is
@@ -643,7 +643,7 @@ const ccaCCBorCanvassForms = new ContentEaR(
 const lostCCACCBorCanvassForm = new ContentEaR(
   "lostCCACCBorCanvassForm",
   "Lost My CCA CCB or Canvass Form",
-  "What happens if I lose my CCA CCB or Canvass Form?",
+  "",
   `
     <p>
       If you have lost your form then a duplicate can be sent, or you can wait for a
@@ -669,7 +669,7 @@ const lostCCACCBorCanvassForm = new ContentEaR(
 const studentVoters = new ContentEaR(
   "studentVoters",
   "Student Voters",
-  "What are Student Voters?",
+  "",
   `
     <p>
       Students can be registered in both their term-time and home address but can
@@ -764,7 +764,7 @@ const annualCanvasMenu = new MenuEaR(
 const swappingFromPostalToProxyVoting = new ContentEaR(
   "swappingFromPostalToProxyVoting",
   "Swapping From Postal To Proxy Voting",
-  "What happens if I swap from postal to proxy voting?",
+  "",
   `
     <p>
       You can do this at any time of the year, but specific deadlines apply before
@@ -787,7 +787,7 @@ const swappingFromPostalToProxyVoting = new ContentEaR(
 const swappingFromProxyToPostalVoting = new ContentEaR(
   "swappingFromProxyToPostalVoting",
   "Swapping From Proxy To Postal Voting",
-  "What happens if I swap from proxy to postal voting?",
+  "",
   `
     <p>
       You can do this at any time of the year, but specific deadlines apply before
@@ -811,7 +811,7 @@ const swappingFromProxyToPostalVoting = new ContentEaR(
 const postalVoteNotReceivedorLost = new ContentEaR(
   "postalVoteNotReceivedorLost",
   "Postal Vote Not Received or Lost",
-  "What happens if I have not received my postal voting pack or lost it?",
+  "",
   `
     <p>
       If you have not received your postal voting pack by 4 working days before
@@ -834,7 +834,7 @@ const postalVoteNotReceivedorLost = new ContentEaR(
 const postalProxyVote = new ContentEaR(
   "postalProxyVote",
   "Postal Proxy Vote",
-  "What is a postal proxy vote?",
+  "",
   `
     <p>
       If a person has been appointed as a proxy voter for someone else, but cannot
@@ -859,7 +859,7 @@ const postalProxyVote = new ContentEaR(
 const applyingForPostalVote = new ContentEaR(
   "applyingForPostalVote",
   "Applying For Postal Vote",
-  "How do I apply for a postal vote?",
+  "",
   `
     <p>
       You can choose to vote using a postal vote in all elections that you are
@@ -891,7 +891,7 @@ const applyingForPostalVote = new ContentEaR(
 const requestproxyVote = new ContentEaR(
   "requestproxyVote",
   "Request Proxy Vote",
-  "How do I request a proxy vote?",
+  "",
   `
     <p>
       You can request to vote by proxy to have another person vote on your behalf at
@@ -920,7 +920,7 @@ const requestproxyVote = new ContentEaR(
 const waiverApplication = new ContentEaR(
   "waiverApplication",
   "Waiver Application",
-  "What is a waiver?",
+  "",
   `
     <p>
       A waiver is used for postal and proxy voting applications when a voter is
@@ -970,7 +970,7 @@ const whereDoIVote = new ContentEaR(
 const assistanceForPartiallySightedVoters = new ContentEaR(
   "assistanceForPartiallySightedVoters",
   "Assistance For Partially Sighted Voters",
-  "What assistance is available for partially sighted voters?",
+  "",
   `
     <p>
       <strong>Voting in Person:</strong>Large print copies of ballot papers are
@@ -998,8 +998,8 @@ const assistanceForPartiallySightedVoters = new ContentEaR(
 
 const howToCompletePostalVote = new ContentEaR(
   "howToCompletePostalVote",
-  "Assistance For Partially Sighted Voters",
-  "How do I complete my postal vote?",
+  "How to Complete Postal Vote",
+  "",
   `
     <p>
       CLICK to ENHANCE IMAGE
@@ -1015,7 +1015,7 @@ const howToCompletePostalVote = new ContentEaR(
 const postalVoteNoLongerRequired = new ContentEaR(
   "postalVoteNoLongerRequired",
   "Postal Vote No Longer Required",
-  "How do I cancel my postal vote?",
+  "",
   `
     <p>
       You can cancel your application for a postal vote at any time up to the postal
@@ -1083,7 +1083,7 @@ const postalVoteReceivedButNotRequested = new ContentEaR(
 const postalVoteSendingAbroad = new ContentEaR(
   "postalVoteSendingAbroad",
   "Postal Vote Sending Abroad",
-  "Can I send my postal vote abroad?",
+  "",
   `
     <p>
       Postal votes can be sent abroad, but it is at your own risk. We are unable to
@@ -1103,7 +1103,7 @@ const postalVoteSendingAbroad = new ContentEaR(
 const spoiltorDamagedPostalVote = new ContentEaR(
   "spoiltorDamagedPostalVote",
   "Spoilt or Damaged Postal Vote",
-  "What do I do if my postal vote is spoilt or damaged?",
+  "",
   `
     <p>
       We can issue replacement postal vote ballot papers in the event of the
@@ -1215,7 +1215,7 @@ const electionsAndVoting = new MenuEaR(
 const annualCanvas = new ContentEaR(
   "annualCanvas",
   "Annual Canvas",
-  "What is an Annual Canvas?",
+  "",
   `
     <p>
       The Electoral Registration Officer (ERO) is required to send a communication 
