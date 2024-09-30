@@ -17,14 +17,14 @@
   display: none;
 }
 
-.dform_widget_num_example_date_of_birth_dd,
-.dform_widget_num_example_date_of_birth_mm,
-.dform_widget_num_example_date_of_birth_yy {
+.date-dd,
+.date-mm,
+.date-yy{
   margin: 0;
   width: 100%;
 }
 
-.dform_widget_num_example_date_of_birth_yy {
+.date-yy {
   max-width: 11rem;
 }
 

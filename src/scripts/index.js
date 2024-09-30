@@ -2231,6 +2231,10 @@ function checkDate(id, dd, mm, yy) {
     const localFormat = new Date(date).toLocaleDateString("en-GB");
     $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
     $(`#${id.replace("_date_", "_dt_")}`).val(date);
+    $(`#${id}`)
+      .find(".dform_validationMessage")
+      .text("Must be a real mokey")
+      .hide();
   } else {
     $(`#${id}`)
       .find(".dform_validationMessage")
