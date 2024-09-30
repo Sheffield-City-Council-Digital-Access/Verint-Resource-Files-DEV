@@ -149,6 +149,10 @@ const childrensTravelPass = new ContentTaT(
   { date: "12/09/2024", name: "Gee Whitehouse" }
 );
 
+
+// --------- KEEP THIS AT THE TOP ------------------------------------------- \\
+// --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
+
 const blueBadge = new ContentTaT(
   "bluebadge",
   "Blue Badge",
