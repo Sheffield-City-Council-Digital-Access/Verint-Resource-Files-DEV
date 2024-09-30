@@ -976,7 +976,7 @@ const localAssistantScheme = new MenuB(
   "localAssistantScheme",
   "Local Assistant Scheme",
   "The Local Assistance Scheme (LAS) provides Sheffield Independence Grants to support independent living and Sheffield Crisis Grants to help Sheffield residents in crisis situations who aren't receiving help",
-  [crisisGrantInformation, independanceGrantInformation, householdSupportFund]
+  [independanceGrantInformation, householdSupportFund]
 );
 
 const crisisGrantInformation = new MenuB(
