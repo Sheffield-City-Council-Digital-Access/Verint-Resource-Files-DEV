@@ -21,7 +21,17 @@ class MenuPaD extends CorePaD {
 }
 
 class ContentPaD extends CorePaD {
-  constructor(id, name, description, content, process, transfer, finish, meta, lastModified) {
+  constructor(
+    id,
+    name,
+    description,
+    content,
+    process,
+    transfer,
+    finish,
+    meta,
+    lastModified
+  ) {
     super(id, name, description);
     this.content = content;
     this.process = process;
@@ -32,17 +42,24 @@ class ContentPaD extends CorePaD {
   }
 }
 
+class FormPaD extends CorePaD {
+  constructor(id, name, description, formName, meta, lastModified) {
+    super(id, name, description);
+    this.formName = formName;
+    this.meta = meta;
+    this.lastModified = lastModified;
+  }
+}
+
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
-
-
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const planningAndDevelopment = new ServicePaD(
-  'planningAndDevelopment',
-  'Planning and Development',
+  "planningAndDevelopment",
+  "Planning and Development",
   `Planning applications, building regulations, conservation, regeneration, planning committee…`,
   []
 );

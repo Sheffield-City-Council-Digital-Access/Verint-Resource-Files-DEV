@@ -326,19 +326,6 @@ const reportDeadAnimal = new FormRaP(
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
-const reportDogFouling = new FormRaP(
-  "reportDogFouling",
-  "Dog fouling",
-  "Report dog fouling on the highway",
-  "report_dog_fouling",
-  {
-    type: "Report",
-    keywords: ["Dog", "fouling"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
-  },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
-);
-
 const reportFallenLeaves = new FormRaP(
   "reportFallenLeaves",
   "Fallen leaves on the highway",
@@ -347,45 +334,6 @@ const reportFallenLeaves = new FormRaP(
   {
     type: "Report",
     keywords: ["Fallen", "leaves"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
-  },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
-);
-
-const reportFlyPosting = new FormRaP(
-  "reportFlyPosting",
-  "Fly-posting",
-  "Report fly-posting on the highway",
-  "report_fly_posting",
-  {
-    type: "Report",
-    keywords: ["Fly", "posting"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
-  },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
-);
-
-const reportFlyTipping = new FormRaP(
-  "reportFlyTipping",
-  "Fly-tipping",
-  "Report issues of illegal dumping",
-  "report_fly_tipping",
-  {
-    type: "Report",
-    keywords: ["Fly", "tipping"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
-  },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
-);
-
-const reportGraffiti = new FormRaP(
-  "reportGraffiti",
-  "Graffiti",
-  "Report problems such as offensive or non-offensive graffiti",
-  "report_graffiti",
-  {
-    type: "Report",
-    keywords: ["Graffiti"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
@@ -410,19 +358,6 @@ const reportHedgePlantGrass = new ContentRaP(
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
-const reportLitter = new FormRaP(
-  "reportLitter",
-  "Litter",
-  "Report problems such as litter or waste on the highway",
-  "report_litter",
-  {
-    type: "Report",
-    keywords: ["Litter"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
-  },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
-);
-
 const reportLitterBin = new FormRaP(
   "reportLitterBin",
   "Litter bins",
@@ -431,19 +366,6 @@ const reportLitterBin = new FormRaP(
   {
     type: "Report",
     keywords: ["Litter", "bin"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
-  },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
-);
-
-const reportNeedlesGlass = new FormRaP(
-  "reportNeedlesGlass",
-  "Needles or broken glass",
-  "Report problems with hazardous items",
-  "report_needles_glass",
-  {
-    type: "Report",
-    keywords: ["Needles", "glass"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
@@ -522,15 +444,9 @@ const roadsAndPavements = new ServiceRaP(
     requestGritting,
     roadPavementSurface,
     reportDeadAnimal,
-    reportDogFouling,
     reportFallenLeaves,
-    reportFlyPosting,
-    reportFlyTipping,
-    reportGraffiti,
     reportHedgePlantGrass,
-    reportLitter,
     reportLitterBin,
-    reportNeedlesGlass,
     reportStreetSignBollard,
     reportTree,
     requestHighwayInfo,

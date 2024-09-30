@@ -1056,123 +1056,122 @@ function handleOnReadyKnowledge() {
 
       filteredServices.forEach((service) => {
         if (Array.isArray(service.subjects)) {
-          service.subjects
-            .forEach((subject) => {
-              // Handle Content subjects
-              if (subject.content) {
-                const card = document.createElement("div");
-                card.classList.add("search-card");
-                card.setAttribute("tabindex", "0");
+          service.subjects.forEach((subject) => {
+            // Handle Content subjects
+            if (subject.content) {
+              const card = document.createElement("div");
+              card.classList.add("search-card");
+              card.setAttribute("tabindex", "0");
 
-                const title = document.createElement("h3");
-                title.textContent = subject.name;
+              const title = document.createElement("h3");
+              title.textContent = subject.name;
 
-                const description = document.createElement("div");
-                description.innerHTML = subject.description;
+              const description = document.createElement("div");
+              description.innerHTML = subject.description;
 
-                card.appendChild(title);
-                card.appendChild(description);
-        
-                card.dataset.option = JSON.stringify({
-                  id: subject.id,
-                  name: subject.name,
-                  description: subject.description,
-                  content: subject.content,
-                  process: subject.process,
-                  transfer: subject.transfer,
-                  finish: subject.finish,
-                  meta: subject.meta,
-                  lastModified: subject.lastModified,
-                  serviceName: service.name,
-                  type: subject.constructor.name.startsWith("Form")
-                    ? "form"
-                    : "knowledge", // Set type
-                });
+              card.appendChild(title);
+              card.appendChild(description);
 
-                options.push(card);
+              card.dataset.option = JSON.stringify({
+                id: subject.id,
+                name: subject.name,
+                description: subject.description,
+                content: subject.content,
+                process: subject.process,
+                transfer: subject.transfer,
+                finish: subject.finish,
+                meta: subject.meta,
+                lastModified: subject.lastModified,
+                serviceName: service.name,
+                type: subject.constructor.name.startsWith("Form")
+                  ? "form"
+                  : "knowledge", // Set type
+              });
 
-                if (subject.name) {
-                  visibleLetters.add(subject.name[0].toUpperCase());
-                }
+              options.push(card);
+
+              if (subject.name) {
+                visibleLetters.add(subject.name[0].toUpperCase());
               }
+            }
 
-              // Handle Forms
-              if (subject.forms) {
-                const card = document.createElement("div");
-                card.classList.add("search-card");
-                card.setAttribute("tabindex", "0");
+            // Handle Forms
+            if (subject.forms) {
+              const card = document.createElement("div");
+              card.classList.add("search-card");
+              card.setAttribute("tabindex", "0");
 
-                const title = document.createElement("h3");
-                title.textContent = subject.name;
+              const title = document.createElement("h3");
+              title.textContent = subject.name;
 
-                const description = document.createElement("div");
-                description.innerHTML = subject.description;
+              const description = document.createElement("div");
+              description.innerHTML = subject.description;
 
-                card.appendChild(title);
-                card.appendChild(description);
+              card.appendChild(title);
+              card.appendChild(description);
 
-                card.dataset.option = JSON.stringify({
-                  id: subject.id,
-                  name: subject.name,
-                  description: subject.description,
-                  formName: subject.formName,
-                  meta: subject.meta,
-                  lastModified: subject.lastModified,
-                  serviceName: service.name,
-                  type: "form", // Explicit type
-                });
+              card.dataset.option = JSON.stringify({
+                id: subject.id,
+                name: subject.name,
+                description: subject.description,
+                formName: subject.formName,
+                meta: subject.meta,
+                lastModified: subject.lastModified,
+                serviceName: service.name,
+                type: "form", // Explicit type
+              });
 
-                options.push(card);
+              options.push(card);
 
-                if (subject.name) {
-                  visibleLetters.add(subject.name[0].toUpperCase());
-                }
+              if (subject.name) {
+                visibleLetters.add(subject.name[0].toUpperCase());
               }
+            }
 
-              // Handle Topics
-              if (Array.isArray(subject.topics)) {
-                const topicFilterFn = determineFilter(subject);
-                subject.topics
-                  .filter(topicFilterFn) // Apply Content Class Filtering
-                  .forEach((topic) => {
-                    if (topic.content) {
-                      const card = document.createElement("div");
-                      card.classList.add("search-card");
-                      card.setAttribute("tabindex", "0");
+            // Handle Topics
+            if (Array.isArray(subject.topics)) {
+              const topicFilterFn = determineFilter(subject);
+              subject.topics
+                .filter(topicFilterFn) // Apply Content Class Filtering
+                .forEach((topic) => {
+                  if (topic.content) {
+                    const card = document.createElement("div");
+                    card.classList.add("search-card");
+                    card.setAttribute("tabindex", "0");
 
-                      const title = document.createElement("h3");
-                      title.textContent = topic.name;
+                    const title = document.createElement("h3");
+                    title.textContent = topic.name;
 
-                      const description = document.createElement("div");
-                      description.innerHTML = topic.description;
+                    const description = document.createElement("div");
+                    description.innerHTML = topic.description;
 
-                      card.appendChild(title);
-                      card.appendChild(description);
+                    card.appendChild(title);
+                    card.appendChild(description);
 
-                      card.dataset.option = JSON.stringify({
-                        id: topic.id,
-                        name: topic.name,
-                        description: topic.description,
-                        content: topic.content,
-                        process: topic.process,
-                        transfer: topic.transfer,
-                        finish: topic.finish,
-                        meta: topic.meta,
-                        lastModified: topic.lastModified,
-                        serviceName: service.name,
-                        subjectName: subject.name,
-                        type: "knowledge",
-                      });
+                    card.dataset.option = JSON.stringify({
+                      id: topic.id,
+                      name: topic.name,
+                      description: topic.description,
+                      content: topic.content,
+                      process: topic.process,
+                      transfer: topic.transfer,
+                      finish: topic.finish,
+                      meta: topic.meta,
+                      lastModified: topic.lastModified,
+                      serviceName: service.name,
+                      subjectName: subject.name,
+                      type: "knowledge",
+                    });
 
-                      options.push(card);
+                    options.push(card);
 
-                      if (topic.name) {
-                        visibleLetters.add(topic.name[0].toUpperCase());
-                      }
+                    if (topic.name) {
+                      visibleLetters.add(topic.name[0].toUpperCase());
                     }
-                  });
-              }
-            });
+                  }
+                });
+            }
+          });
         }
       });
 
@@ -1356,22 +1355,24 @@ function logUserJourney(action, details) {
   journeyField.value = JSON.stringify(journey);
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const resetFilterButton = document.querySelector('#dform_container .reset-filter button');
-    if (resetFilterButton) {
-        resetFilterButton.addEventListener('click', function() {
-            const span = this.querySelector('span');
-            // Remove the class if it's already there
-            span.classList.remove('spinning');
-            // Force a reflow
-            void span.offsetWidth;
-            // Add the class to trigger the animation
-            span.classList.add('spinning');
-            
-            // Remove the class after the animation completes
-            setTimeout(() => {
-                span.classList.remove('spinning');
-            }, 500);
-        });
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  const resetFilterButton = document.querySelector(
+    "#dform_container .reset-filter button"
+  );
+  if (resetFilterButton) {
+    resetFilterButton.addEventListener("click", function () {
+      const span = this.querySelector("span");
+      // Remove the class if it's already there
+      span.classList.remove("spinning");
+      // Force a reflow
+      void span.offsetWidth;
+      // Add the class to trigger the animation
+      span.classList.add("spinning");
+
+      // Remove the class after the animation completes
+      setTimeout(() => {
+        span.classList.remove("spinning");
+      }, 500);
+    });
+  }
 });
