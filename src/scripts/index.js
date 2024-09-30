@@ -2217,14 +2217,13 @@ function checkDate(id, dd, mm, yy) {
         ? "Date must include a day"
         : !mm && dd && yy
         ? "Date must include a month"
-        : "Invalid date. Please enter valid components.";
+        : "";
 
     $(`#${id}`).find(".dform_validationMessage").text(errorMsg).show();
     return; // Early return on error
   }
 
   // If all components are valid, proceed to validate the full date
-  console.log(validDate(id, dd, mm, yy));
   if (validDate(id, dd, mm, yy)) {
     const date = `${yy.toString().padStart(4, "0")}-${mm
       .toString()
@@ -2239,7 +2238,7 @@ function checkDate(id, dd, mm, yy) {
   } else {
     $(`#${id}`)
       .find(".dform_validationMessage")
-      .text("Must be a real mokey")
+      .text("Must be a real date")
       .show();
   }
 }
