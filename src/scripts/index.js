@@ -2238,7 +2238,7 @@ function checkDate(id, dd, mm, yy) {
   } else {
     $(`#${id}`)
       .find(".dform_validationMessage")
-      .text("Must be a real date")
+      // .text("Must be a real date")
       .show();
   }
 }
