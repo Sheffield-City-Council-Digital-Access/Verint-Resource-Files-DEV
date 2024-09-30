@@ -2210,7 +2210,7 @@ function validDate(id, day, month, year) {
 
   const date = new Date(year, month - 1, day);
   const now = new Date().setHours(0, 0, 0, 0);
-
+  console.log(id, day, month, year);
   // Check if the constructed date is valid
   if (
     date.getFullYear() !== year ||
