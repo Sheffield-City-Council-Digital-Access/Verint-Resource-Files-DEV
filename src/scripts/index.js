@@ -2201,6 +2201,10 @@ function checkDateRelationship(date1, date2, rule) {
   return true;
 }
 
+function getYearLabel(years) {
+  return years === 1 ? "year" : "years";
+}
+
 function validDate(id, day, month, year) {
   const dateMessage = dateMessages[id] || defaultDateMessage;
   const validationMsg = $(`#${id}`)
@@ -2208,9 +2212,11 @@ function validDate(id, day, month, year) {
     .text(dateMessage)
     .hide();
 
-  const date = new Date(year, month - 1, day);
-  const now = new Date().setHours(0, 0, 0, 0);
-  console.log(id, day, month, year);
+  // Construct the date from the provided values
+  const date = new Date(year, month - 1, day); // month is zero-indexed
+  console.log(`Constructed Date: ${date}`);
+  console.log(`Input values: day=${day}, month=${month}, year=${year}`);
+
   // Check if the constructed date is valid
   if (
     date.getFullYear() !== year ||
@@ -2225,11 +2231,6 @@ function validDate(id, day, month, year) {
   const { minDate, maxDate } = getMinMaxDates(dateElementId);
 
   // Validate against min and max dates
-  function getYearLabel(years) {
-    return years === 1 ? "year" : "years";
-  }
-
-  // Inside the validDate function
   if (date < minDate) {
     const yearsPast = new Date().getFullYear() - minDate.getFullYear();
     validationMsg
@@ -2252,37 +2253,6 @@ function validDate(id, day, month, year) {
       )
       .show();
     return false;
-  }
-
-  // Additional check for the current date
-  if (date < now) {
-    validationMsg.text("Date must be today or in the future").show();
-  }
-
-  // Date relationship checks
-  if (datePairs && Array.isArray(datePairs) && datePairs.length > 0) {
-    for (const pair of datePairs) {
-      const [dateAId, dateBId] = pair.dateFields;
-      if (id === dateAId) {
-        const dateBValue = $(`#${dateBId.replace("_date_", "_dt_")}`).val();
-        if (
-          dateBValue &&
-          !checkDateRelationship(date, new Date(dateBValue), pair.rule)
-        ) {
-          validationMsg.text(pair.validationMessages[0]).show();
-          return false;
-        }
-      } else if (id === dateBId) {
-        const dateAValue = $(`#${dateAId.replace("_date_", "_dt_")}`).val();
-        if (
-          dateAValue &&
-          !checkDateRelationship(new Date(dateAValue), date, pair.rule)
-        ) {
-          validationMsg.text(pair.validationMessages[1]).show();
-          return false;
-        }
-      }
-    }
   }
 
   return true; // If all validations pass
