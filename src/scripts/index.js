@@ -29,7 +29,7 @@ const formUserPath = [];
 
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
 
-function handleInitialisingEvent(addDateMessages) {
+function handleInitialisingEvent() {
   // --- ADD TAB TITLE AND ICON  ------------------------------------------- \\
 
   (() => {
@@ -445,12 +445,6 @@ function handleInitialisingEvent(addDateMessages) {
     });
   })();
 
-  // --- ADD CUSTOM DATE MASSAGES ------------------------------------------ \\
-
-  if (addDateMessages) {
-    Object.assign(dateMessages, addDateMessages);
-  }
-
   // --- HANDLE FILE UPLOAD ------------------------------------------------ \\
 
   $(document).ajaxComplete(function (event, xhr, settings) {
@@ -557,18 +551,6 @@ function handleOnReadyEvent(event, kdf) {
           KDF.setVal("txt_agent_location", event.detail.location);
         }
         if (modalId === "setReporterModal" && event.detail.reporter) {
-          console.log(event);
-          // KDF.customdata(
-          //   "retrieve-individuals-details",
-          //   `closeModal_setReporterModal`,
-          //   true,
-          //   true,
-          //   {
-          //     customerid: event.detail.reporter,
-          //   }
-          // );
-          // KDF.setVal("le_associated_obj_type", "C1");
-          // KDF.setVal("le_associated_obj_id", event.detail.reporter);
           KDF.setCustomerID(event.detail.reporter, true, "page_about_you");
         }
         const modal = document.getElementById(modalId);
@@ -578,6 +560,10 @@ function handleOnReadyEvent(event, kdf) {
       });
     }
   }
+
+  // --- UPDATE SESSION ---------------------------------------------------- \\
+
+  storeDefaultValidationMessages();
 
   // --- MAP --------------------------------------------------------------- \\
 
@@ -981,6 +967,8 @@ function handleOnReadyEvent(event, kdf) {
         .text(dateMessage)
         .hide();
       if (e.type === "input") inputDate(this.id, null, e.which);
+      {
+      }
       handleDateValidation(parentId);
     });
 
@@ -1173,6 +1161,13 @@ function handleFieldChangeEvent(event, kdf, field) {
     field.type === "textarea"
   ) {
     $(`#${field.id}`).val(formatRemoveEccessWhiteSpace(KDF.getVal(field.name)));
+  }
+
+  if (field.name.startsWith("txt_find_address_")) {
+    const defaultMessage = getValidationMessageFromSession(field.id);
+    if (defaultMessage) {
+      updateValidationMessage(field.name, defaultMessage);
+    }
   }
 
   // keep at the bottom
@@ -2163,7 +2158,7 @@ function getYearLabel(years) {
 }
 
 function validDate(id, day, month, year) {
-  const dateMessage = dateMessages[id] || defaultDateMessage;
+  const dateMessage = getValidationMessageFromSession(id);
   const validationMsg = $(`#${id}`)
     .find(".dform_validationMessage")
     .text(dateMessage)
@@ -4055,4 +4050,49 @@ function getCookie(name) {
   return foundCookie
     ? decodeURIComponent(foundCookie.substring(nameEQ.length))
     : null;
+}
+
+// --- STORE VALIDATION MESSAGES -------------------------------------------- \\
+
+function storeDefaultValidationMessages() {
+  const fieldClasses = ["address-search", "date-field"];
+
+  fieldClasses.forEach((className) => addValidationMessageToSession(className));
+}
+
+function addValidationMessageToSession(className) {
+  const dateFieldElements = document.querySelectorAll(`.${className}`);
+
+  dateFieldElements.forEach((dateFieldElement) => {
+    const inputField = dateFieldElement.querySelector(
+      'input[type="date"], input[type="text"]'
+    );
+    const validationMessageElement = dateFieldElement.querySelector(
+      ".dform_validationMessage"
+    );
+
+    const inputFieldId = inputField ? inputField.id : null;
+    const validationMessage = validationMessageElement
+      ? validationMessageElement.textContent
+      : null;
+
+    if (inputFieldId && validationMessage) {
+      let validationMessages =
+        JSON.parse(sessionStorage.getItem("validationMessages")) || {};
+      validationMessages[inputFieldId] = validationMessage;
+      sessionStorage.setItem(
+        "validationMessages",
+        JSON.stringify(validationMessages)
+      );
+    }
+  });
+}
+
+function getValidationMessageFromSession(id) {
+  const fieldElement = document.getElementById(id);
+  if (fieldElement) {
+    let validationMessages =
+      JSON.parse(sessionStorage.getItem("validationMessages")) || {};
+    return validationMessages[id] || "Validation message not found";
+  }
 }
