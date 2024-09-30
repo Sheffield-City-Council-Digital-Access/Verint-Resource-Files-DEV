@@ -2232,10 +2232,10 @@ function checkDate(id, dd, mm, yy) {
     $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
     $(`#${id.replace("_date_", "_dt_")}`).val(date);
   } else {
-    $(`#${id}`)
-      .find(".dform_validationMessage")
-      .text("Must be a real date")
-      .show();
+    // $(`#${id}`)
+    //   .find(".dform_validationMessage")
+    //   .text("Must be a real date")
+    //   .show();
   }
 }
 
