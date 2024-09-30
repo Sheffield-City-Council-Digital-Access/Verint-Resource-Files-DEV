@@ -19,7 +19,6 @@ let acceptGMSites = true;
 
 const defaultDateMessage = "Enter the date in the correct format";
 
-const dateMessages = {};
 const datePairs = [];
 
 let fieldsToCheckBeforeClose = [];
@@ -2157,7 +2156,7 @@ function getYearLabel(years) {
   return years === 1 ? "year" : "years";
 }
 
-function validDate(id, day, month, year) {
+function validDate(id, day, month, year, datePairs) {
   const dateMessage = getValidationMessageFromSession(id);
   const validationMsg = $(`#${id}`)
     .find(".dform_validationMessage")
@@ -2213,6 +2212,32 @@ function validDate(id, day, month, year) {
       validationMsg.text(`Date can't be after today`).show();
     }
     return false;
+  }
+
+  // Check date relationships
+  if (datePairs && Array.isArray(datePairs) && datePairs.length > 0) {
+    for (const pair of datePairs) {
+      const [dateAId, dateBId] = pair.dateFields;
+      if (id === dateAId) {
+        const dateBValue = $(`#${dateBId.replace("_date_", "_dt_")}`).val();
+        if (
+          dateBValue &&
+          !checkDateRelationship(date, new Date(dateBValue), pair.rule)
+        ) {
+          validationMsg.text(pair.validationMessages[0]).show();
+          return false;
+        }
+      } else if (id === dateBId) {
+        const dateAValue = $(`#${dateAId.replace("_date_", "_dt_")}`).val();
+        if (
+          dateAValue &&
+          !checkDateRelationship(new Date(dateAValue), date, pair.rule)
+        ) {
+          validationMsg.text(pair.validationMessages[1]).show();
+          return false;
+        }
+      }
+    }
   }
 
   return true; // If all validations pass
