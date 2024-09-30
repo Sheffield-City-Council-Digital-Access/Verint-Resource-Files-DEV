@@ -322,7 +322,7 @@ const WhatIfIDisagreeWithTheDecision = new ContentB(
 );
 
 const howWillIGetMySheffieldCrisisGrant = new ContentB(
-  "WhatIfIDisagreeWithTheDecision",
+  "howWillIGetMySheffieldCrisisGrant",
   "What if I disagree with the decision",
   "",
   `
@@ -514,7 +514,7 @@ const howDoesTheIndependanceGrantInformationApplicationProcessWork =
         <ul>
           <li>
             Self Service. You can fill in the form yourself on our website:
-            <a href="www.sheffield.gov.uk/localassistance">Local Assistance</a>. The
+            <a href="https://www.sheffield.gov.uk/localassistance">Local Assistance</a>. The
             form can be filled in on a computer or mobile device.
           </li>
           <li>
@@ -932,7 +932,7 @@ const WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund = new ContentB(
 );
 
 const howillIGetMyHouseholdSupportFundPayment = new ContentB(
-  "WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund",
+  "howillIGetMyHouseholdSupportFundPayment",
   "How will I get my Household Support Fund payment",
   "Description",
   `
