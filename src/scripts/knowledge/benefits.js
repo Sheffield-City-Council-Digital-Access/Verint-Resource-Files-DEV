@@ -57,7 +57,7 @@ class FormB extends CoreB {
 const whoCanApply = new ContentB(
   "whoCanApply",
   "Who Can Apply",
-  "Description",
+  "",
   `
     <p>
       You may be able to get a Local Assistance Loan if: You are a Sheffield
@@ -304,7 +304,7 @@ const WhatIfIDisagreeWithTheDecision = new ContentB(
       review of the decision. Review requests should be submitted in writing by post
       or email, within one calendar month of the date on the decision notice:
     </p>
-    <addredd>
+    <address>
       FAO Local Assistance Scheme<br />
       3rd Floor<br />
       Howden House<br />
