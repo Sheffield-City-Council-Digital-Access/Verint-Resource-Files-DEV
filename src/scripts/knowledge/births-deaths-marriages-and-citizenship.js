@@ -21,7 +21,17 @@ class MenuBDMaC extends CoreBDMaC {
 }
 
 class ContentBDMaC extends CoreBDMaC {
-  constructor(id, name, description, content, process, transfer, finish, meta, lastModified) {
+  constructor(
+    id,
+    name,
+    description,
+    content,
+    process,
+    transfer,
+    finish,
+    meta,
+    lastModified
+  ) {
     super(id, name, description);
     this.content = content;
     this.process = process;
@@ -32,17 +42,24 @@ class ContentBDMaC extends CoreBDMaC {
   }
 }
 
+class FormBDMaC extends CoreBDMaC {
+  constructor(id, name, description, formName, meta, lastModified) {
+    super(id, name, description);
+    this.formName = formName;
+    this.meta = meta;
+    this.lastModified = lastModified;
+  }
+}
+
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
-
-
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const birthsDeathsMarriagesAndCitizenship = new ServiceBDMaC(
-  'birthsDeathsMarriagesAndCitizenship',
-  'Births, Deaths, Marriages and Citizenship',
+  "birthsDeathsMarriagesAndCitizenship",
+  "Births, Deaths, Marriages and Citizenship",
   `Register Office, naming ceremonies, burials and memorials, civil partnerships, citizenship ceremonies, order copies of certificates…`,
   []
 );
