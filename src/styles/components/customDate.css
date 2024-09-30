@@ -2,7 +2,7 @@
 
 #dform_container .container-date {
   display: grid;
-  grid-template-columns: repeat(2, 6.5rem) 11rem;
+  grid-template-columns: repeat(2, 6.5rem) auto;
   column-gap: 1.6rem;
   max-width: 45rem;
 }
@@ -22,6 +22,10 @@
 .dform_widget_num_example_date_of_birth_yy {
   margin: 0;
   width: 100%;
+}
+
+.dform_widget_num_example_date_of_birth_yy {
+  max-width: 11rem;
 }
 
 #dform_container .container-date input[type="number"] {
