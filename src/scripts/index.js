@@ -916,7 +916,7 @@ function handleOnReadyEvent(event, kdf) {
 
   $(`.date-mm`).on("input focusout", function (e) {
     const parentId = $(this).attr("id").replace("_num_", "_date_").slice(0, -3);
-    const dateMessage = dateMessages[parentId] || defaultDateMessage;
+    const dateMessage = getValidationMessageFromSession(parentId);
     const dd = $(`#${this.id.slice(0, -2)}dd`).val();
     const yy = $(`#${this.id.slice(0, -2)}yy`).val();
     if (e.type === "input") {
@@ -958,7 +958,7 @@ function handleOnReadyEvent(event, kdf) {
         .attr("id")
         .replace("_num_", "_date_")
         .slice(0, -3);
-      const dateMessage = dateMessages[parentId] || defaultDateMessage;
+      const dateMessage = getValidationMessageFromSession(parentId);
       const dd = $(`#${this.id.slice(0, -2)}dd`).val() !== "" ? true : false;
       const mm = $(`#${this.id.slice(0, -2)}mm`).val() !== "" ? true : false;
       $(`#${parentId}`)
@@ -2080,7 +2080,7 @@ function getMinMaxDates(dateElementId) {
 }
 
 function checkDate(id, dd, mm, yy) {
-  const dateMessage = dateMessages[id] || defaultDateMessage;
+  const dateMessage = getValidationMessageFromSession(id);
   let hasError = false;
 
   // Clear previous errors
