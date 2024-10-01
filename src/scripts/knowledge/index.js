@@ -239,25 +239,13 @@ function redirectToContentPage(item) {
     return;
   }
 
-  const { service, subject, topic } = hierarchy;
+  const { subject, topic } = hierarchy;
+  console.log(hierarchy);
 
   // Update Breadcrumbs
-  // const serviceBreadcrumb = document.querySelector(".service-btn");
   const subjectBreadcrumb = document.querySelector(".subject-menu-btn");
   const topicBreadcrumb = document.querySelector(".topic-menu-btn");
   const contentBreadcrumb = document.querySelector(".content-btn");
-
-  // if (serviceBreadcrumb) {
-  //   serviceBreadcrumb.textContent = service.name;
-  //   serviceBreadcrumb.setAttribute("data-id", service.id);
-  //   // Optionally, add click event to navigate back to the service
-  //   serviceBreadcrumb.onclick = () => {
-  //     createCards(knowledge.find(s => s.id === service.id).subjects, subjectMenuContainer, service);
-  //     KDF.gotoPage("page_subject_menu", true, true, true);
-  //   };
-  // } else {
-  //   console.warn("Breadcrumb element '.service-btn' not found.");
-  // }
 
   if (subjectBreadcrumb) {
     subjectBreadcrumb.textContent = subject.name;
