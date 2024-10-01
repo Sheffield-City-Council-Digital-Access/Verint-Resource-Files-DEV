@@ -226,29 +226,98 @@ function createCards(data, container, parent = null) {
     });
 }
 
+/**
+ * Redirects the user to the content page and updates breadcrumbs based on the item's hierarchy.
+ * @param {Object} item - The content item being displayed.
+ */
 function redirectToContentPage(item) {
-  const enquiryType = item.name;
+  // Find the parent hierarchy for the clicked item
+  const hierarchy = findParentHierarchy(knowledge, item.id);
 
-  logUserJourney("View Content", `Viewed content: ${enquiryType}`);
+  if (!hierarchy) {
+    console.warn("Parent hierarchy not found for item:", item);
+    return;
+  }
 
-  const breadcrumbElement = document.querySelector(".content-btn");
-  if (breadcrumbElement) {
-    breadcrumbElement.textContent = enquiryType;
+  const { service, subject, topic } = hierarchy;
+
+  // Update Breadcrumbs
+  const serviceBreadcrumb = document.querySelector(".service-btn");
+  const subjectBreadcrumb = document.querySelector(".subject-btn");
+  const topicBreadcrumb = document.querySelector(".topic-btn");
+  const contentBreadcrumb = document.querySelector(".content-btn");
+
+  if (serviceBreadcrumb) {
+    serviceBreadcrumb.textContent = service.name;
+    serviceBreadcrumb.setAttribute("data-id", service.id);
+    // Optionally, add click event to navigate back to the service
+    serviceBreadcrumb.onclick = () => {
+      createCards(knowledge.find(s => s.id === service.id).subjects, subjectMenuContainer, service);
+      KDF.gotoPage("page_subject_menu", true, true, true);
+    };
+  } else {
+    console.warn("Breadcrumb element '.service-btn' not found.");
+  }
+
+  if (subjectBreadcrumb) {
+    subjectBreadcrumb.textContent = subject.name;
+    subjectBreadcrumb.setAttribute("data-id", subject.id);
+    // Optionally, add click event to navigate back to the subject
+    subjectBreadcrumb.onclick = () => {
+      createCards(subject.topics || subject.subjects, topicsMenuContainer, subject);
+      KDF.gotoPage("page_topic_menu", true, true, true);
+    };
+  } else {
+    console.warn("Breadcrumb element '.subject-btn' not found.");
+  }
+
+  if (topic) {
+    if (topicBreadcrumb) {
+      topicBreadcrumb.textContent = topic.name;
+      topicBreadcrumb.setAttribute("data-id", topic.id);
+      // Optionally, add click event to navigate back to the topic
+      topicBreadcrumb.onclick = () => {
+        createCards(topic.content || topic.topics, someContainerForTopic, topic);
+        KDF.gotoPage("page_specific_topic", true, true, true);
+      };
+    } else {
+      console.warn("Breadcrumb element '.topic-btn' not found.");
+    }
+  } else {
+    // If there's no topic, hide or reset the topic breadcrumb
+    if (topicBreadcrumb) {
+      topicBreadcrumb.textContent = "";
+      topicBreadcrumb.style.display = "none"; // Or any other way to hide
+    }
+  }
+
+  if (contentBreadcrumb) {
+    contentBreadcrumb.textContent = item.name;
   } else {
     console.warn("Breadcrumb element '.content-btn' not found.");
   }
 
+  // Update other elements as necessary
+  const breadcrumbElement = document.querySelector(".content-btn");
+  if (breadcrumbElement) {
+    breadcrumbElement.textContent = item.name;
+  } else {
+    console.warn("Breadcrumb element '.content-btn' not found.");
+  }
+
+  // Update the title
   const titleElement = document.getElementById(
     "dform_widget_header_hrd_page_title_content"
   );
   if (titleElement) {
-    titleElement.textContent = enquiryType;
+    titleElement.textContent = item.name;
   } else {
     console.warn(
       "Title element 'dform_widget_header_hrd_page_title_content' not found."
     );
   }
 
+  // Update the content container
   const contentContainer = document.getElementById(
     "dform_widget_html_ahtm_content_container"
   );
@@ -266,6 +335,7 @@ function redirectToContentPage(item) {
     );
   }
 
+  // Update the button label
   const button = document.getElementById(
     "dform_widget_button_but_launch_process"
   );
@@ -277,6 +347,7 @@ function redirectToContentPage(item) {
     );
   }
 
+  // Show or hide multiple elements based on the item properties
   hideShowMultipleElements([
     {
       name: "but_launch_process",
@@ -292,6 +363,7 @@ function redirectToContentPage(item) {
     },
   ]);
 
+  // Navigate to the content page
   KDF.gotoPage("page_content", true, true, true);
 }
 
@@ -318,6 +390,44 @@ function redirectToFormPage(item) {
   const interactionid = `interactionid=${KDF.getParams().interactionid}`;
 
   window.location.href = `${url}${formName}?${customerid}${interactionid}`;
+}
+
+/**
+ * Recursively searches the knowledge base to find the parent hierarchy of a given item ID.
+ * @param {Array} knowledgeData - The knowledge base array.
+ * @param {string} itemId - The ID of the item to find.
+ * @returns {Object|null} - An object containing service, subject, and topic, or null if not found.
+ */
+function findParentHierarchy(knowledgeData, itemId) {
+  for (const service of knowledgeData) {
+    for (const subject of service.subjects) {
+      // Check if the subject is the item
+      if (subject.id === itemId) {
+        return { service, subject, topic: null };
+      }
+
+      // Check if the subject has topics
+      if (Array.isArray(subject.topics)) {
+        for (const topic of subject.topics) {
+          if (topic.id === itemId) {
+            return { service, subject, topic };
+          }
+        }
+      }
+
+      // If the subject has forms, check them as well
+      if (Array.isArray(subject.forms)) {
+        for (const form of subject.forms) {
+          if (form.id === itemId) {
+            return { service, subject, topic: null };
+          }
+        }
+      }
+    }
+  }
+
+  // Item not found
+  return null;
 }
 
 /**
