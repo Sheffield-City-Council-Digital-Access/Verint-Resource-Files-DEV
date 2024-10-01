@@ -226,6 +226,8 @@ function createCards(data, container, parent = null) {
     });
 }
 
+// src/scripts/knowledge/index.js
+
 /**
  * Redirects the user to the content page and updates breadcrumbs based on the item's hierarchy.
  * @param {Object} item - The content item being displayed.
@@ -242,80 +244,93 @@ function redirectToContentPage(item) {
   const { service, subject, topic } = hierarchy;
   console.log("hierarchy", hierarchy);
 
-  // Update Breadcrumbs using unique IDs
-  const subjectMenuSubjectMenuBtn = document.getElementById(
-    "dform_widget_button_but_subject_menu_subject_menu"
-  );
-  const subjectMenuTopicMenuBtn = document.getElementById(
-    "dform_widget_button_but_subject_menu_topic_menu"
-  );
-  const subjectMenuContentBtn = document.getElementById(
-    "dform_widget_button_but_subject_menu_content"
-  );
-  const topicMenuContentBtn = document.getElementById(
-    "dform_widget_button_but_topic_menu_content"
-  );
-  const contentBreadcrumb = document.querySelector(".breadcrumb .active");
+  // Select breadcrumb elements by their unique IDs
+  const serviceBreadcrumb = document.getElementById("dform_widget_button_but_subject_menu_content");
+  const topicBreadcrumb = document.getElementById("dform_widget_button_but_topic_menu_content");
+  const contentBreadcrumb = document.getElementById("dform_widget_button_but_content_content");
+  const activeBreadcrumb = document.querySelector(".breadcrumb .active");
 
-  // // Update Service Breadcrumb
-  // if (subjectMenuSubjectMenuBtn) {
-  //   subjectMenuSubjectMenuBtn.textContent = service.name;
-  //   subjectMenuSubjectMenuBtn.setAttribute("data-id", service.id);
-  //   // Click event to navigate back to the subject
-  //   subjectMenuSubjectMenuBtn.onclick = () => {
-  //     createCards(service.subjects, subjectMenuContainer, service);
-  //     KDF.gotoPage("page_subject_menu", true, true, true);
-  //   };
-  // } else {
-  //   console.warn(
-  //     "Breadcrumb element '#dform_widget_button_but_subject_menu_subject_menu' not found."
-  //   );
-  // }
-
-  // Update Topic Breadcrumb
-  if (subjectMenuContentBtn) {
-    subjectMenuContentBtn.textContent = subject.name;
-    subjectMenuContentBtn.setAttribute("data-id", subject.id);
-    // Click event to navigate back to the Topic
-    subjectMenuContentBtn.onclick = () => {
-      createCards(
-        subject.topics || subject.subjects,
-        topicsMenuContainer,
-        subject
-      );
-      KDF.gotoPage("page_topic_menu", true, true, true);
+  if (serviceBreadcrumb) {
+    serviceBreadcrumb.textContent = service.name;
+    serviceBreadcrumb.setAttribute("data-id", service.id);
+    // Add click event to navigate back to the service
+    serviceBreadcrumb.onclick = () => {
+      createCards(service.subjects, subjectMenuContainer, service);
+      KDF.gotoPage("page_subject_menu", true, true, true);
     };
   } else {
     console.warn(
-      "Breadcrumb element '#dform_widget_button_but_subject_menu_topic_menu' not found."
+      "Breadcrumb element '#dform_widget_button_but_subject_menu_content' not found."
     );
   }
 
-  // Update Topic Breadcrumb
-  if (topicMenuContentBtn) {
-    if (topic) {
-      // topicMenuContentBtn.textContent = topic.name;
-      // topicMenuContentBtn.setAttribute("data-id", topic.id);
-      // topicMenuContentBtn.style.display = "block"; // Ensure it's visible
-      // // Optionally, add click event to navigate back to the topic
-      // topicMenuContentBtn.onclick = () => {
-      //   createCards(subject.topics, topicsMenuContainer, subject);
-      //   KDF.gotoPage("page_specific_topic", true, true, true);
-      // };
+  if (topic) {
+    // Route 1: topic is not null
+    if (subject) {
+      if (topicBreadcrumb) {
+        topicBreadcrumb.textContent = subject.name;
+        topicBreadcrumb.setAttribute("data-id", subject.id);
+        topicBreadcrumb.style.display = "block"; // Ensure it's visible
+        // Add click event to navigate back to the subject
+        topicBreadcrumb.onclick = () => {
+          createCards(subject.topics || subject.subjects, topicsMenuContainer, subject);
+          KDF.gotoPage("page_topic_menu", true, true, true);
+        };
+      } else {
+        console.warn(
+          "Breadcrumb element '#dform_widget_button_but_topic_menu_content' not found."
+        );
+      }
+    }
+
+    if (contentBreadcrumb) {
+      contentBreadcrumb.textContent = topic.name;
+      contentBreadcrumb.setAttribute("data-id", topic.id);
+      contentBreadcrumb.style.display = "block"; // Ensure it's visible
+      // Add click event to navigate back to the topic
+      contentBreadcrumb.onclick = () => {
+        createCards(topic.content, contentContainer, topic);
+        KDF.gotoPage("page_specific_topic", true, true, true);
+      };
     } else {
-      // If there's no topic, hide or reset the topic breadcrumb
-      topicMenuContentBtn.textContent = "";
-      topicMenuContentBtn.style.display = "none"; // Hide the breadcrumb
+      console.warn(
+        "Breadcrumb element '#dform_widget_button_but_content_content' not found."
+      );
+    }
+
+    // Hide or show breadcrumbs appropriately
+    if (topicBreadcrumb) {
+      topicBreadcrumb.style.display = "block";
     }
   } else {
-    console.warn(
-      "Breadcrumb element '#dform_widget_button_but_topic_menu_content' not found."
-    );
+    // Route 2: topic is null
+    if (subject) {
+      if (contentBreadcrumb) {
+        contentBreadcrumb.textContent = subject.name;
+        contentBreadcrumb.setAttribute("data-id", subject.id);
+        contentBreadcrumb.style.display = "block"; // Ensure it's visible
+        // Add click event to navigate back to the subject
+        contentBreadcrumb.onclick = () => {
+          createCards(subject.subjects, subjectMenuContainer, subject);
+          KDF.gotoPage("page_subject_menu", true, true, true);
+        };
+      } else {
+        console.warn(
+          "Breadcrumb element '#dform_widget_button_but_content_content' not found."
+        );
+      }
+    }
+
+    // Hide the topic breadcrumb since topic is null
+    if (topicBreadcrumb) {
+      topicBreadcrumb.textContent = "";
+      topicBreadcrumb.style.display = "none"; // Hide the breadcrumb
+    }
   }
 
   // Update Content Breadcrumb
-  if (contentBreadcrumb) {
-    contentBreadcrumb.textContent = item.name;
+  if (activeBreadcrumb) {
+    activeBreadcrumb.textContent = item.name;
   } else {
     console.warn("Breadcrumb element '.breadcrumb .active' not found.");
   }
@@ -381,6 +396,7 @@ function redirectToContentPage(item) {
   // Navigate to the Content Page
   KDF.gotoPage("page_content", true, true, true);
 }
+
 /**
  * Redirects the user to the specified form URL.
  * @param {Object} item - The form item containing the form URL details.
