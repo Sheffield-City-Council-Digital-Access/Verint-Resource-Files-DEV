@@ -359,6 +359,7 @@ function redirectToContentPage(item) {
       topicBreadcrumbContent.textContent = topic.name;
       topicBreadcrumbContent.setAttribute("data-id", topic.id);
       topicBreadcrumbContent.style.display = "block"; // Ensure it's visible
+      subjectBreadcrumbContent.classList.remove("last-visible");
       // Add click event to navigate back to the topic
       topicBreadcrumbContent.onclick = () => {
         createCards(topic.content, contentContainer, topic);
@@ -445,11 +446,15 @@ function redirectToContentPage(item) {
     if (subjectBreadcrumbTopicMenu) {
       subjectBreadcrumbTopicMenu.textContent = "";
       subjectBreadcrumbTopicMenu.style.display = "none"; // Hide the breadcrumb
+      // Update the last visible breadcrumb
+      subjectBreadcrumbContent.classList.add("last-visible");
     }
 
     if (topicBreadcrumbContent) {
       topicBreadcrumbContent.textContent = "";
       topicBreadcrumbContent.style.display = "none"; // Hide the breadcrumb
+      // Update the last visible breadcrumb
+      subjectBreadcrumbContent.classList.add("last-visible");
     }
 
     // Ensure serviceBreadcrumbTopicMenu related to Route 2 is handled as Route 1 does
@@ -462,9 +467,6 @@ function redirectToContentPage(item) {
   } else {
     console.warn("Breadcrumb element '.breadcrumb .active' not found.");
   }
-
-  // Update the last visible breadcrumb
-  updateLastVisibleBreadcrumb();
 
   // Update Other Elements as Necessary
   const titleElement = document.getElementById(
@@ -526,42 +528,6 @@ function redirectToContentPage(item) {
 
   // Navigate to the Content Page
   KDF.gotoPage("page_content", true, true, true);
-}
-
-/**
- * Updates the breadcrumb buttons by assigning the 'last-visible' class
- * to the last breadcrumb button that is visible.
- */
-function updateLastVisibleBreadcrumb() {
-  const breadcrumbContainer = document.querySelector("#dform_container");
-  if (!breadcrumbContainer) {
-    console.warn("Breadcrumb container '#dform_container' not found.");
-    return;
-  }
-
-  // Select all breadcrumb buttons
-  const breadcrumbButtons = breadcrumbContainer.querySelectorAll(
-    "button.breadcrumb-btn"
-  );
-
-  // Remove 'last-visible' class from all buttons
-  breadcrumbButtons.forEach((button) =>
-    button.classList.remove("last-visible")
-  );
-
-  // Iterate from the end to find the last visible breadcrumb button
-  for (let i = breadcrumbButtons.length - 1; i >= 0; i--) {
-    const button = breadcrumbButtons[i];
-    const style = window.getComputedStyle(button);
-    if (
-      style.display !== "none" &&
-      style.visibility !== "hidden" &&
-      button.offsetParent !== null
-    ) {
-      button.classList.add("last-visible");
-      break;
-    }
-  }
 }
 
 /**
