@@ -247,14 +247,26 @@ function redirectToContentPage(item) {
   console.log("hierarchy", hierarchy);
 
   // Select breadcrumb elements by their unique IDs
-  const serviceBreadcrumbContent = document.getElementById("dform_widget_button_but_subject_menu_content");
-  const serviceBreadcrumbTopicMenu = document.getElementById("dform_widget_button_but_subject_menu_topic_menu");
-  const serviceBreadcrumbSubjectMenu = document.getElementById("dform_widget_button_but_subject_menu_subject_menu");
+  const serviceBreadcrumbContent = document.getElementById(
+    "dform_widget_button_but_subject_menu_content"
+  );
+  const serviceBreadcrumbTopicMenu = document.getElementById(
+    "dform_widget_button_but_subject_menu_topic_menu"
+  );
+  const serviceBreadcrumbSubjectMenu = document.getElementById(
+    "dform_widget_button_but_subject_menu_subject_menu"
+  );
 
-  const subjectBreadcrumbContent = document.getElementById("dform_widget_button_but_topic_menu_content");
-  const subjectBreadcrumbTopicMenu = document.getElementById("dform_widget_button_but_topic_menu_topic_menu");
+  const subjectBreadcrumbContent = document.getElementById(
+    "dform_widget_button_but_topic_menu_content"
+  );
+  const subjectBreadcrumbTopicMenu = document.getElementById(
+    "dform_widget_button_but_topic_menu_topic_menu"
+  );
 
-  const topicBreadcrumbContent = document.getElementById("dform_widget_button_but_content_content");
+  const topicBreadcrumbContent = document.getElementById(
+    "dform_widget_button_but_content_content"
+  );
 
   const activeBreadcrumb = document.querySelector(".breadcrumb .active");
 
@@ -311,7 +323,11 @@ function redirectToContentPage(item) {
       subjectBreadcrumbContent.style.display = "block"; // Ensure it's visible
       // Add click event to navigate back to the subject
       subjectBreadcrumbContent.onclick = () => {
-        createCards(subject.topics || subject.subjects, topicsMenuContainer, subject);
+        createCards(
+          subject.topics || subject.subjects,
+          topicsMenuContainer,
+          subject
+        );
         KDF.gotoPage("page_topic_menu", true, true, true);
       };
     } else {
@@ -325,7 +341,11 @@ function redirectToContentPage(item) {
       subjectBreadcrumbTopicMenu.setAttribute("data-id", subject.id);
       // Add click event to navigate back to the subject's topic menu
       subjectBreadcrumbTopicMenu.onclick = () => {
-        createCards(subject.topics || subject.subjects, topicsMenuContainer, subject);
+        createCards(
+          subject.topics || subject.subjects,
+          topicsMenuContainer,
+          subject
+        );
         KDF.gotoPage("page_topic_menu", true, true, true);
       };
     } else {
@@ -351,10 +371,14 @@ function redirectToContentPage(item) {
     }
 
     // Ensure all breadcrumbs related to Route 1 are visible
-    if (serviceBreadcrumbContent) serviceBreadcrumbContent.style.display = "block";
-    if (serviceBreadcrumbTopicMenu) serviceBreadcrumbTopicMenu.style.display = "block";
-    if (serviceBreadcrumbSubjectMenu) serviceBreadcrumbSubjectMenu.style.display = "block";
-    if (subjectBreadcrumbTopicMenu) subjectBreadcrumbTopicMenu.style.display = "block";
+    if (serviceBreadcrumbContent)
+      serviceBreadcrumbContent.style.display = "block";
+    if (serviceBreadcrumbTopicMenu)
+      serviceBreadcrumbTopicMenu.style.display = "block";
+    if (serviceBreadcrumbSubjectMenu)
+      serviceBreadcrumbSubjectMenu.style.display = "block";
+    if (subjectBreadcrumbTopicMenu)
+      subjectBreadcrumbTopicMenu.style.display = "block";
   } else {
     // **Route 2:** topic is null
 
@@ -439,6 +463,9 @@ function redirectToContentPage(item) {
     console.warn("Breadcrumb element '.breadcrumb .active' not found.");
   }
 
+  // Update the last visible breadcrumb
+  updateLastVisibleBreadcrumb();
+
   // Update Other Elements as Necessary
   const titleElement = document.getElementById(
     "dform_widget_header_hrd_page_title_content"
@@ -499,6 +526,42 @@ function redirectToContentPage(item) {
 
   // Navigate to the Content Page
   KDF.gotoPage("page_content", true, true, true);
+}
+
+/**
+ * Updates the breadcrumb buttons by assigning the 'last-visible' class
+ * to the last breadcrumb button that is visible.
+ */
+function updateLastVisibleBreadcrumb() {
+  const breadcrumbContainer = document.querySelector("#dform_container");
+  if (!breadcrumbContainer) {
+    console.warn("Breadcrumb container '#dform_container' not found.");
+    return;
+  }
+
+  // Select all breadcrumb buttons
+  const breadcrumbButtons = breadcrumbContainer.querySelectorAll(
+    "button.breadcrumb-btn"
+  );
+
+  // Remove 'last-visible' class from all buttons
+  breadcrumbButtons.forEach((button) =>
+    button.classList.remove("last-visible")
+  );
+
+  // Iterate from the end to find the last visible breadcrumb button
+  for (let i = breadcrumbButtons.length - 1; i >= 0; i--) {
+    const button = breadcrumbButtons[i];
+    const style = window.getComputedStyle(button);
+    if (
+      style.display !== "none" &&
+      style.visibility !== "hidden" &&
+      button.offsetParent !== null
+    ) {
+      button.classList.add("last-visible");
+      break;
+    }
+  }
 }
 
 /**
