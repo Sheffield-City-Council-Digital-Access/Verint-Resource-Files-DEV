@@ -257,27 +257,27 @@ function redirectToContentPage(item) {
   );
   const contentBreadcrumb = document.querySelector(".breadcrumb .active");
 
-  // Update Service Breadcrumb
-  if (subjectMenuSubjectMenuBtn) {
-    subjectMenuSubjectMenuBtn.textContent = service.name;
-    subjectMenuSubjectMenuBtn.setAttribute("data-id", service.id);
-    // Click event to navigate back to the subject
-    subjectMenuSubjectMenuBtn.onclick = () => {
-      createCards(service.subjects, subjectMenuContainer, service);
-      KDF.gotoPage("page_subject_menu", true, true, true);
-    };
-  } else {
-    console.warn(
-      "Breadcrumb element '#dform_widget_button_but_subject_menu_subject_menu' not found."
-    );
-  }
+  // // Update Service Breadcrumb
+  // if (subjectMenuSubjectMenuBtn) {
+  //   subjectMenuSubjectMenuBtn.textContent = service.name;
+  //   subjectMenuSubjectMenuBtn.setAttribute("data-id", service.id);
+  //   // Click event to navigate back to the subject
+  //   subjectMenuSubjectMenuBtn.onclick = () => {
+  //     createCards(service.subjects, subjectMenuContainer, service);
+  //     KDF.gotoPage("page_subject_menu", true, true, true);
+  //   };
+  // } else {
+  //   console.warn(
+  //     "Breadcrumb element '#dform_widget_button_but_subject_menu_subject_menu' not found."
+  //   );
+  // }
 
   // Update Topic Breadcrumb
-  if (subjectMenuTopicMenuBtn) {
-    subjectMenuTopicMenuBtn.textContent = subject.name;
-    subjectMenuTopicMenuBtn.setAttribute("data-id", subject.id);
+  if (subjectMenuContentBtn) {
+    subjectMenuContentBtn.textContent = subject.name;
+    subjectMenuContentBtn.setAttribute("data-id", subject.id);
     // Click event to navigate back to the Topic
-    subjectMenuTopicMenuBtn.onclick = () => {
+    subjectMenuContentBtn.onclick = () => {
       createCards(
         subject.topics || subject.subjects,
         topicsMenuContainer,
