@@ -240,7 +240,8 @@ function redirectToContentPage(item) {
   }
 
   const { service, subject, topic } = hierarchy;
-
+  console.log("hierarchy", hierarchy);
+  
   // Update Breadcrumbs
   // const serviceBreadcrumb = document.querySelector(".service-btn");
   const subjectBreadcrumb = document.querySelector(".subject-menu-btn");
@@ -260,6 +261,7 @@ function redirectToContentPage(item) {
   // }
 
   if (subjectBreadcrumb) {
+    console.log('subjectBreadcrumb', service.name);
     subjectBreadcrumb.textContent = service.name;
     subjectBreadcrumb.setAttribute("data-id", service.id);
     // Optionally, add click event to navigate back to the subject
@@ -276,7 +278,9 @@ function redirectToContentPage(item) {
   }
 
   if (topic) {
+    console.log("topic", topic);
     if (topicBreadcrumb) {
+      console.log("topicBreadcrumb", subject.name);
       topicBreadcrumb.textContent = subject.name;
       topicBreadcrumb.setAttribute("data-id", subject.id);
       // Optionally, add click event to navigate back to the topic
@@ -292,6 +296,7 @@ function redirectToContentPage(item) {
       console.warn("Breadcrumb element '.topic-btn' not found.");
     }
   } else {
+    console.log("null topic", topic);
     // If there's no topic, hide or reset the topic breadcrumb
     if (topicBreadcrumb) {
       topicBreadcrumb.textContent = "";
