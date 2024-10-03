@@ -57,7 +57,7 @@ class FormSaC extends CoreSaC {
 const fundedEarlyLearning = new ContentSaC(
   "fundedEarlyLearning",
   "Funded Early Learning",
-  "Funded Early Learning",
+  "",
   `
     <p>
       From April 2024, eligible working parents of 2-year-olds can access 15 hours
@@ -85,19 +85,19 @@ const fundedEarlyLearning = new ContentSaC(
     <p>
       FEL helps children learn through play activities. Some benefits that parents
       have seen:
-      <ul>
-        <li>children making friends their own age</li>
-        <li>children behaving better with grown-ups</li>
-        <li>children improving their speech and language</li>
-        <li>children settle down and concentrate for longer</li>
-        <li>
-          children are more willing to try new foods which improves their nutrition
-        </li>
-        <li>
-          younger children improving their sleeping patterns and toilet training
-        </li>
-      </ul>
     </p>
+    <ul>
+      <li>children making friends their own age</li>
+      <li>children behaving better with grown-ups</li>
+      <li>children improving their speech and language</li>
+      <li>children settle down and concentrate for longer</li>
+      <li>
+        children are more willing to try new foods which improves their nutrition
+      </li>
+      <li>
+        younger children improving their sleeping patterns and toilet training
+      </li>
+    </ul>
     <p>
       The funded hours also help parents and carers access employment and training,
       spend time with their younger children or just find time to get things done.
@@ -500,13 +500,11 @@ const freeSchoolMealsold = new ContentSaC(
   { date: "18/09/2024", name: "Dinal Willaims" }
 );
 
-
 const eligibilitycriteriaforfreeschoolmeals = new ContentSaC(
   "eligibilitycriteriaforfreeschoolmeals",
   "What is the Eligibility criteria for Free School Meals",
-  "Description",
+  "",
   `
-    <h3>What is the Eligibility criteria for Free School Meals</h3>
     <p>
       Your child is eligible for a Free School Meal if you receive any of the
       following:
@@ -535,9 +533,12 @@ const eligibilitycriteriaforfreeschoolmeals = new ContentSaC(
       If your child/ren is/are currently eligible for free school meals, they’ll
       remain eligible until they finish the phase of schooling (primary or
       secondary) they’re in on 31 March 2023.
-    </p>
- `,
-    { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+    </p> 
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -584,18 +585,19 @@ const eligibilitycriteriaforfreeschoolmeals = new ContentSaC(
 const changeincircumstance = new ContentSaC(
   "changeincircumstance",
   "What if I have a change in circumstance",
-  "Description",
+  "",
   `
-     <h2>What if I have a change in circumstance</h2>
     <p>
       If your circumstances change, such as if you no longer receive benefits, have
       moved house, or the school attended has changed, this may affect your right to
       claim, and you should reapply for Free School Meals, unless the School
       attending is out of Sheffield you will need to apply to that local authority.
     </p>
-  
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -639,13 +641,11 @@ const changeincircumstance = new ContentSaC(
   { date: "18/09/2024", name: "Dinal Willaims" }
 );
 
-
 const whyisitimportanttoregisterforfreeschoolmeals = new ContentSaC(
   "whyisitimportanttoregisterforfreeschoolmeals",
   "Why is it important to register for Free School Meals",
-  "Description",
+  "",
   `
-  <h3>Why is it important to register for Free School Meals</h3>
     <p>
       Applying for free school meals is very important because the amount of money
       that your child’s school receives from central government depends on the
@@ -656,9 +656,11 @@ const whyisitimportanttoregisterforfreeschoolmeals = new ContentSaC(
       receiving up free school meals will save you around £360 per year per child
       and enable your child to have a balanced and nutritious lunch.
     </p>
-  
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -705,9 +707,8 @@ const whyisitimportanttoregisterforfreeschoolmeals = new ContentSaC(
 const childisatnurseryorprimaryschool = new ContentSaC(
   "childisatnurseryorprimaryschool",
   "What do I do if my child is at Nursery or Primary School?",
-  "Description",
+  "",
   `
-<h3>What do I do if my child is at Nursery or Primary School?</h3>
     <p>
       Although Primary School Children within the year groups: Reception, Year 1 and
       Year 2 automatically receive Free School Meals, we recommend people still
@@ -722,8 +723,11 @@ const childisatnurseryorprimaryschool = new ContentSaC(
       Meals Team. If you are eligible, your child will start receiving their free
       school meal.
     </p>
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -770,9 +774,8 @@ const childisatnurseryorprimaryschool = new ContentSaC(
 const childisatsecondaryschool = new ContentSaC(
   "childisatsecondaryschool",
   "What do i do if my child is at Secondary School",
-  "Description",
+  "",
   `
- <h3>What do I do if my child is at Secondary School?</h3>
     <p>
       Secondary school pupils can only receive a free school meal if their
       parent/carer is eligible and if a Free School Meals Application Form has been
@@ -780,9 +783,11 @@ const childisatsecondaryschool = new ContentSaC(
       that your eligibility can be checked by the Free School Meals Team. If you are
       eligible, your child can then take up their free school meal.
     </p>
-
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -829,9 +834,8 @@ const childisatsecondaryschool = new ContentSaC(
 const childisover16 = new ContentSaC(
   "childisover16",
   "What do I do if my child is over 16",
-  "Description",
+  "",
   `
-<h3>What do I do if my child is over 16?</h3>
     <p>
       Over 16s can still receive free school meals if they are staying in education
       at a sixth form. You should complete a Free School Meals Application Form. The
@@ -842,9 +846,11 @@ const childisover16 = new ContentSaC(
       new fund available to support students aged 16 to 19 to stay in education and
       is the replacement for the Education Maintenance Allowance (EMA).
     </p>
-
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -891,7 +897,7 @@ const childisover16 = new ContentSaC(
 const childattendsanacademy = new ContentSaC(
   "childattendsanacademy",
   "What do  do if my child attends an Academy",
-  "Description",
+  "",
   `
     <p>
       You do not have to provide proof of benefits when completing the Free School
@@ -901,9 +907,11 @@ const childattendsanacademy = new ContentSaC(
       proof of the benefit you are receiving so that we can double check that the
       details we hold are correct.
     </p>
-
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -950,18 +958,19 @@ const childattendsanacademy = new ContentSaC(
 const afterimakemyapplication = new ContentSaC(
   "afterimakemyapplication",
   "What happens after I make my application",
-  "Description",
+  "",
   `
-   <h3>What happens after I make my application</h3>
     <p>
       We will let the school know whether or not your child is entitled to free
       school meals. Your child will then be able to take up their free school meal
       if eligible. We may also contact you if we need further information to process
       your application.
     </p>
-
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -1005,22 +1014,23 @@ const afterimakemyapplication = new ContentSaC(
   { date: "18/09/2024", name: "Dinal Willaims" }
 );
 
-
 const proofofbenefits = new ContentSaC(
   "proofofbenefits",
   "Do you need proof of my benefits",
-  "Description",
+  "",
   `
-   <h3>What happens after I make my application</h3>
+    <h3>What happens after I make my application</h3>
     <p>
       We will let the school know whether or not your child is entitled to free
       school meals. Your child will then be able to take up their free school meal
       if eligible. We may also contact you if we need further information to process
       your application.
     </p>
-
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -1067,9 +1077,8 @@ const proofofbenefits = new ContentSaC(
 const circumstanceschange = new ContentSaC(
   "circumstanceschange",
   "What if my circumstances change?",
-  "Description",
+  "",
   `
-<h3>What if my circumstances change</h3>
     <p>
       If a previous application for free school meals was not successful and a
       change in your circumstances means that you think you may now be eligible
@@ -1078,9 +1087,11 @@ const circumstanceschange = new ContentSaC(
       start work, start to receive Working Tax Credit, or stop receiving one of the
       qualifying benefits you must notify us as soon as possible.
     </p>
-
  `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -1127,17 +1138,18 @@ const circumstanceschange = new ContentSaC(
 const claimbackdate = new ContentSaC(
   "claimbackdate",
   "Can my claim be backdated",
-  "Description",
+  "",
   `
-    <h3>Can my claim be backdated?</h3>
     <p>
       It is important that you apply as soon as possible as we are unable to
       backdate claims for free school meals to cover unpaid dinner money, or to
       refund dinner money paid prior to the date of a successful application.
     </p>
-
  `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -1184,17 +1196,18 @@ const claimbackdate = new ContentSaC(
 const childchangesschool = new ContentSaC(
   "childchangesschool",
   "What if my child changes school",
-  "Description",
+  "",
   `
-    <h3>What if my child changes school?</h3>
     <p>
       If your child has moved schools they do not need to re-apply unless the
       child's new School is out of Sheffield then they would apply to that local
       authority.
     </p>
-
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -1241,9 +1254,8 @@ const childchangesschool = new ContentSaC(
 const reneweveryyear = new ContentSaC(
   "reneweveryyear",
   "Do I have to renew my claim every year",
-  "Description",
+  "",
   `
-    <h3>Do I have to renew my claim every year?</h3>
     <p>
       You do not have apply yearly, however If your child attended a school outside
       of Sheffield then you would need to reapply
@@ -1256,9 +1268,11 @@ const reneweveryyear = new ContentSaC(
       If the child/ren is/are eligible under Universal Credit, you will not need to
       reapply for Free School Meals until April 2023.
     </p>
-
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -1305,9 +1319,8 @@ const reneweveryyear = new ContentSaC(
 const redeemvoucher = new ContentSaC(
   "redeemvoucher",
   "How do I redeem a voucher and spend it",
-  "Description",
+  "",
   `
-    <h3>How do I redeem a voucher and spend it?</h3>
     <p>Please Note: that vouchers will be awarded at £15 per child</p>
     <p>
       You will have received a letter from us, the letter will contain a unique 16
@@ -1351,9 +1364,11 @@ const redeemvoucher = new ContentSaC(
       cannot be used again. Please delete the email or throw away the printed eGift
       card.
     </p>
-
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -1400,12 +1415,8 @@ const redeemvoucher = new ContentSaC(
 const nosmartphoneaccess = new ContentSaC(
   "nosmartphoneaccess",
   "I dont have a smartphone or computer/laptop or cant access the voucher and cant print it",
-  "Description",
+  "",
   `
-     <h3>
-      I don’t have a smartphone or computer/laptop or can’t access the voucher and
-      can’t print it
-    </h3>
     <p>
       <b
         >This may need to be removed if it is decided that the scheme will no longer
@@ -1431,7 +1442,10 @@ const nosmartphoneaccess = new ContentSaC(
     </p>
 
  `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -1478,17 +1492,18 @@ const nosmartphoneaccess = new ContentSaC(
 const voucherforallmychildren = new ContentSaC(
   "voucherforallmychildren",
   "I haven't got a voucher for all my children",
-  "Description",
+  "",
   `
-    <h3>I haven't got a voucher for all my children</h3>
     <p>
       Due to the protection of Free School Meals this can happen, transfer the call
       through to the general Free School Meal line where their entitlement can be
       checked.
     </p>
-
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -1535,12 +1550,8 @@ const voucherforallmychildren = new ContentSaC(
 const childrenentitledtofsm = new ContentSaC(
   "childrenentitledtofsm",
   "I haven't received a voucher but I feel my children are entitled to Free School Meals",
-  "Description",
+  "",
   `
-<h3>
-      I haven't received a voucher but I feel my children are entitled to FSM (Free
-      School Meals)
-    </h3>
     <p>
       Check if they have applied for Free School Meals previously or does their
       child already receive Free School Meal?
@@ -1561,9 +1572,11 @@ const childrenentitledtofsm = new ContentSaC(
       was sent to, etc, before we can issue a replacement voucher, Refer this to
       Audrey/Tracey or Sarah C or Annabel H.
     </p>
-
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -1610,9 +1623,9 @@ const childrenentitledtofsm = new ContentSaC(
 const novoucherrecieved = new ContentSaC(
   "novoucherrecieved",
   "I have not received a voucher for my child - they attend and Oasis Academy School (such as Don Valley, Fir Vale or Watermead",
-  "Description",
+  "",
   `
-<p>
+    <p>
       Unfortunately from the 1st of September Oasis Academy Schools decided to
       manage their own Free School Meal provisions.
     </p>
@@ -1622,9 +1635,11 @@ const novoucherrecieved = new ContentSaC(
       became eligible after the 1st of September.
     </p>
     <p>Parents will have to ask schools when they open.</p>
-
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -1671,15 +1686,17 @@ const novoucherrecieved = new ContentSaC(
 const complexenquiry = new ContentSaC(
   "complexenquiry",
   "Complex Enquiry",
+  "",
   `
-<h3>Complex Enquiry</h3>
     <p>
       Where possible complex enquiries should be referred to the Fulfilment Team
       (Audrey/Tracey) who can pass this on to Sarah or Leah when needed.
     </p>
-
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -1726,9 +1743,8 @@ const complexenquiry = new ContentSaC(
 const backgroundinformation = new ContentSaC(
   "backgroundinformation",
   "Background Information",
-  "Description",
+  "",
   `
-<h3>Background Information</h3>
     <p>
       22,500 letters sent to parents/carers with a unique eCode to exchange for a
       £15 food voucher to cover them over the half term break (see copy of the
@@ -1759,9 +1775,11 @@ const backgroundinformation = new ContentSaC(
     <p>
       <a>https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/</a>
     </p>
-
- `,
-  { buttonLabel: "Apply for Free School Meals", formName: "apply_school_meals" },
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
   { typeKey: "apply_school_meals_transfered_to_service" },
   { typeKey: "apply_school_meals_information_provided" },
   {
@@ -1805,40 +1823,38 @@ const backgroundinformation = new ContentSaC(
   { date: "18/09/2024", name: "Dinal Willaims" }
 );
 
-const freeschoolmeals = new MenuB(
+const freeschoolmeals = new MenuSaC(
   "freeschoolmeals",
   "Free School Meals",
-  "Discreption",
-  [
-    eligibilitycriteriaforfreeschoolmeals,faqs,fsmvoucherinformation
-  ]
+  "",
+  [eligibilitycriteriaforfreeschoolmeals, faqs, fsmvoucherinformation]
 );
 
-const faqs = new MenuB(
-  "faqs",
-  "FAQ's",
-  "Discreption",
-  [
-    changeincircumstance,childisatnurseryorprimaryschool,childisatsecondaryschool,childisover16,afterimakemyapplication,childattendsanacademy,circumstanceschange,childchangesschool,
-  ]
-);
+const faqs = new MenuSaC("faqs", "FAQ's", "Discreption", [
+  changeincircumstance,
+  childisatnurseryorprimaryschool,
+  childisatsecondaryschool,
+  childisover16,
+  afterimakemyapplication,
+  childattendsanacademy,
+  circumstanceschange,
+  childchangesschool,
+]);
 
-const fsmvoucherinformation = new MenuB(
+const fsmvoucherinformation = new MenuSaC(
   "fsmvoucherinformation",
   "FSM Voucher Information",
-  "Discreption",
+  "",
   [
-    redeemvoucher,nosmartphoneaccess,voucherforallmychildren,childrenentitledtofsm,novoucherrecieved,complexenquiry,backgroundinformation
+    redeemvoucher,
+    nosmartphoneaccess,
+    voucherforallmychildren,
+    childrenentitledtofsm,
+    novoucherrecieved,
+    complexenquiry,
+    backgroundinformation,
   ]
 );
-
-
-
-
-
-
-
-
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -1847,5 +1863,5 @@ const schoolsAndChildcare = new ServiceSaC(
   "schoolsAndChildcare",
   "Schools and Childcare",
   `Admissions, catchment areas, find schools, school travel, attendance, childcare and nurseries, teaching jobs…`,
-  [freeSchoolMeals, fundedEarlyLearning]
+  [freeschoolmeals, fundedEarlyLearning, fsmvoucherinformation, faqs]
 );
