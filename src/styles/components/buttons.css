@@ -35,6 +35,7 @@
   width: 100%;
   max-width: 44.5rem;
   min-height: 5rem;
+  max-height: 10rem;
   transition: all 0.2s ease;
 }
 

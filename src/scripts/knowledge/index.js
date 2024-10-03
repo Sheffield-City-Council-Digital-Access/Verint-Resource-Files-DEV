@@ -498,15 +498,40 @@ function redirectToContentPage(item) {
     );
   }
 
-  // Update the Button Label
+  // Update the Button Label and Set Data Attributes
   const button = document.getElementById(
     "dform_widget_button_but_launch_process"
   );
   if (button) {
     button.textContent = item.process?.buttonLabel || "Launch Process";
+    button.dataset.formName = item.process?.formName || "";
   } else {
     console.warn(
       "Button element 'dform_widget_button_but_launch_process' not found."
+    );
+  }
+
+  const transferButton = document.getElementById(
+    "dform_widget_button_but_transfer_enquiry"
+  );
+  if (transferButton) {
+    transferButton.dataset.transferTypeKey = item.transfer?.typeKey || "";
+    transferButton.dataset.enquiryType = item.name || "";
+  } else {
+    console.warn(
+      "Button element 'dform_widget_button_but_transfer_enquiry' not found."
+    );
+  }
+
+  const finishButton = document.getElementById(
+    "dform_widget_button_but_finish_enquiry"
+  );
+  if (finishButton) {
+    finishButton.dataset.finishTypeKey = item.finish?.typeKey || "";
+    finishButton.dataset.enquiryType = item.name || "";
+  } else {
+    console.warn(
+      "Button element 'dform_widget_button_but_finish_enquiry' not found."
     );
   }
 
@@ -1185,41 +1210,97 @@ function handleOnReadyKnowledge() {
     KDF.gotoPage("page_search_results", true, true, true);
   });
 
-  $("#dform_widget_button_but_launch_process").on("click", () => {
-    const { protocol, hostname } = window.location;
-    const url = `${protocol}//${hostname}/form/launch/`;
+  // Updated Event Handler for Launch Process Button
+  $("#dform_widget_button_but_launch_process")
+    .off("click")
+    .on("click", function () {
+      const formName = $(this).data("form-name");
+      
+      if (!formName) {
+        alert("Unable to launch the process. Form information is missing.");
+        return;
+      }
 
-    const customerid = KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : "";
-    const interactionid = `interactionid=${KDF.getParams().interactionid}`;
+      const { protocol, hostname } = window.location;
+      const url = `${protocol}//${hostname}/form/launch/`;
+      const customerid = KDF.getParams().customerid
+        ? `customerid=${encodeURIComponent(KDF.getParams().customerid)}&`
+        : "";
+      const interactionid = `interactionid=${encodeURIComponent(
+        KDF.getParams().interactionid
+      )}`;
 
-    // window.location.href = `${url}${redirectToForm}?${customerid}${interactionid}`;
+      window.location.href = `${url}${encodeURIComponent(
+        formName
+      )}?${customerid}${interactionid}`;
+    });
   });
 
-  $("#dform_widget_button_but_transfer_enquiry").on("click", () => {
-    const { protocol, hostname } = window.location;
-    const url = `${protocol}//${hostname}/form/launch/`;
+  // Updated Event Handler for Transfer Enquiry Button
+  $("#dform_widget_button_but_transfer_enquiry")
+    .off("click")
+    .on("click", function () {
+      const transferTypeKey = $(this).data("transfer-type-key");
+      const enquiryType = $(this).data("enquiry-type");
+      console.log(
+        "Transfer Enquiry Button Clicked. Transfer Type Key:",
+        transferTypeKey,
+        "Enquiry Type:",
+        enquiryType
+      );
 
-    const customerid = KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : "";
-    const interactionid = `interactionid=${KDF.getParams().interactionid}`;
+      if (!transferTypeKey || !enquiryType) {
+        console.warn("Transfer Type Key or Enquiry Type is not specified.");
+        alert("Unable to transfer enquiry. Required information is missing.");
+        return;
+      }
 
-    window.location.href = `${url}transfered_enquiry?${customerid}${interactionid}&enquiry=${enquiryType}&typekey=${tranferTypeKey}`;
-  });
+      const { protocol, hostname } = window.location;
+      const url = `${protocol}//${hostname}/form/launch/`;
+      const customerid = KDF.getParams().customerid
+        ? `customerid=${encodeURIComponent(KDF.getParams().customerid)}&`
+        : "";
+      const interactionid = `interactionid=${encodeURIComponent(
+        KDF.getParams().interactionid
+      )}`;
 
-  $("#dform_widget_button_but_finish_enquiry").on("click", () => {
-    const { protocol, hostname } = window.location;
-    const url = `${protocol}//${hostname}/form/launch/`;
+      window.location.href = `${url}transfered_enquiry?${customerid}${interactionid}&enquiry=${encodeURIComponent(
+        enquiryType
+      )}&typekey=${encodeURIComponent(transferTypeKey)}`;
+    });
 
-    const customerid = KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : "";
-    const interactionid = `interactionid=${KDF.getParams().interactionid}`;
+  // Updated Event Handler for Finish Enquiry Button
+  $("#dform_widget_button_but_finish_enquiry")
+    .off("click")
+    .on("click", function () {
+      const finishTypeKey = $(this).data("finish-type-key");
+      const enquiryType = $(this).data("enquiry-type");
+      console.log(
+        "Finish Enquiry Button Clicked. Finish Type Key:",
+        finishTypeKey,
+        "Enquiry Type:",
+        enquiryType
+      );
 
-    window.location.href = `${url}general_enquiry?${customerid}${interactionid}&enquiry=${enquiryType}&typekey=${finishTypeKey}`;
-  });
+      if (!finishTypeKey || !enquiryType) {
+        console.warn("Finish Type Key or Enquiry Type is not specified.");
+        alert("Unable to finish enquiry. Required information is missing.");
+        return;
+      }
+
+      const { protocol, hostname } = window.location;
+      const url = `${protocol}//${hostname}/form/launch/`;
+      const customerid = KDF.getParams().customerid
+        ? `customerid=${encodeURIComponent(KDF.getParams().customerid)}&`
+        : "";
+      const interactionid = `interactionid=${encodeURIComponent(
+        KDF.getParams().interactionid
+      )}`;
+
+      window.location.href = `${url}general_enquiry?${customerid}${interactionid}&enquiry=${encodeURIComponent(
+        enquiryType
+      )}&typekey=${encodeURIComponent(finishTypeKey)}`;
+    });
 
   // --- SERVICES A-Z ------------------------------------------------------- \\
 
@@ -1322,17 +1403,17 @@ function handleOnReadyKnowledge() {
 
     function createOptions(filteredServices, updateAtoZ = true) {
       const resultsContainer = document.querySelector(".options");
-      resultsContainer.innerHTML = "";
+      resultsContainer.innerHTML = ""; // Clear existing options
 
       const visibleLetters = new Set();
-
       let options = [];
+      const addedItemIds = new Set(); // To prevent duplication
 
       filteredServices.forEach((service) => {
         if (Array.isArray(service.subjects)) {
           service.subjects.forEach((subject) => {
             // Handle Content subjects
-            if (subject.content) {
+            if (subject.content && !addedItemIds.has(subject.id)) {
               const card = document.createElement("div");
               card.classList.add("search-card");
               card.setAttribute("tabindex", "0");
@@ -1363,6 +1444,7 @@ function handleOnReadyKnowledge() {
               });
 
               options.push(card);
+              addedItemIds.add(subject.id);
 
               if (subject.name) {
                 visibleLetters.add(subject.name[0].toUpperCase());
@@ -1371,35 +1453,40 @@ function handleOnReadyKnowledge() {
 
             // Handle Forms
             if (subject.forms) {
-              const card = document.createElement("div");
-              card.classList.add("search-card");
-              card.setAttribute("tabindex", "0");
+              subject.forms.forEach((form) => {
+                if (!addedItemIds.has(form.id)) {
+                  const card = document.createElement("div");
+                  card.classList.add("search-card");
+                  card.setAttribute("tabindex", "0");
 
-              const title = document.createElement("h3");
-              title.textContent = subject.name;
+                  const title = document.createElement("h3");
+                  title.textContent = form.name;
 
-              const description = document.createElement("div");
-              description.innerHTML = subject.description;
+                  const description = document.createElement("div");
+                  description.innerHTML = form.description;
 
-              card.appendChild(title);
-              card.appendChild(description);
+                  card.appendChild(title);
+                  card.appendChild(description);
 
-              card.dataset.option = JSON.stringify({
-                id: subject.id,
-                name: subject.name,
-                description: subject.description,
-                formName: subject.formName,
-                meta: subject.meta,
-                lastModified: subject.lastModified,
-                serviceName: service.name,
-                type: "form", // Explicit type
+                  card.dataset.option = JSON.stringify({
+                    id: form.id,
+                    name: form.name,
+                    description: form.description,
+                    formName: form.formName,
+                    meta: form.meta,
+                    lastModified: form.lastModified,
+                    serviceName: service.name,
+                    type: "form", // Explicit type
+                  });
+
+                  options.push(card);
+                  addedItemIds.add(form.id);
+
+                  if (form.name) {
+                    visibleLetters.add(form.name[0].toUpperCase());
+                  }
+                }
               });
-
-              options.push(card);
-
-              if (subject.name) {
-                visibleLetters.add(subject.name[0].toUpperCase());
-              }
             }
 
             // Handle Topics
@@ -1408,7 +1495,7 @@ function handleOnReadyKnowledge() {
               subject.topics
                 .filter(topicFilterFn) // Apply Content Class Filtering
                 .forEach((topic) => {
-                  if (topic.content) {
+                  if (topic.content && !addedItemIds.has(topic.id)) {
                     const card = document.createElement("div");
                     card.classList.add("search-card");
                     card.setAttribute("tabindex", "0");
@@ -1438,6 +1525,7 @@ function handleOnReadyKnowledge() {
                     });
 
                     options.push(card);
+                    addedItemIds.add(topic.id);
 
                     if (topic.name) {
                       visibleLetters.add(topic.name[0].toUpperCase());
@@ -1454,6 +1542,8 @@ function handleOnReadyKnowledge() {
         const nameB = JSON.parse(b.dataset.option).name.toUpperCase();
         return nameA.localeCompare(nameB);
       });
+
+      resultsContainer.innerHTML = "";
 
       options.forEach((card) => {
         resultsContainer.appendChild(card);
@@ -1485,27 +1575,25 @@ function handleOnReadyKnowledge() {
     }
 
     function filterOptionsByLetter(letter) {
-      const filteredServices = services.filter((service) =>
-        service.subjects.some(
-          (subject) =>
-            subject.name.toUpperCase().startsWith(letter) ||
-            (Array.isArray(subject.topics) &&
-              subject.topics.some((topic) =>
-                topic.name.toUpperCase().startsWith(letter)
-              )) ||
-            (Array.isArray(subject.forms) &&
-              subject.forms.some((form) =>
-                form.name.toUpperCase().startsWith(letter)
-              ))
-        )
-      );
-
-      const refinedFilteredServices = filteredServices.map((service) => {
-        return {
+      const filteredServices = services
+        .map((service) => ({
           ...service,
           subjects: service.subjects
+            .filter(
+              (subject) =>
+                subject.name.toUpperCase().startsWith(letter) ||
+                (Array.isArray(subject.topics) &&
+                  subject.topics.some((topic) =>
+                    topic.name.toUpperCase().startsWith(letter)
+                  )) ||
+                (Array.isArray(subject.forms) &&
+                  subject.forms.some((form) =>
+                    form.name.toUpperCase().startsWith(letter)
+                  ))
+            )
             .map((subject) => ({
               ...subject,
+              subjects: subject.subjects, // Preserve existing subjects if any
               topics: Array.isArray(subject.topics)
                 ? subject.topics.filter((topic) =>
                     topic.name.toUpperCase().startsWith(letter)
@@ -1516,17 +1604,11 @@ function handleOnReadyKnowledge() {
                     form.name.toUpperCase().startsWith(letter)
                   )
                 : [],
-            }))
-            .filter(
-              (subject) =>
-                subject.name.toUpperCase().startsWith(letter) ||
-                subject.topics.length > 0 ||
-                subject.forms.length > 0
-            ),
-        };
-      });
+            })),
+        }))
+        .filter((service) => service.subjects.length > 0);
 
-      createOptions(refinedFilteredServices, false);
+      createOptions(filteredServices, false);
 
       clearActiveFilters(".categories li");
 
@@ -1539,25 +1621,22 @@ function handleOnReadyKnowledge() {
     }
 
     function filterByCategory(category) {
-      const filteredServices = services.filter((service) =>
-        service.subjects.some(
-          (subject) =>
-            (subject.meta && subject.meta.type === category) ||
-            (Array.isArray(subject.topics) &&
-              subject.topics.some(
-                (topic) => topic.meta && topic.meta.type === category
-              )) ||
-            (Array.isArray(subject.forms) &&
-              subject.forms.some(
-                (form) => form.meta && form.meta.type === category
-              ))
-        )
-      );
-
-      const refinedFilteredServices = filteredServices.map((service) => {
-        return {
+      const filteredServices = services
+        .map((service) => ({
           ...service,
           subjects: service.subjects
+            .filter(
+              (subject) =>
+                (subject.meta && subject.meta.type === category) ||
+                (Array.isArray(subject.topics) &&
+                  subject.topics.some(
+                    (topic) => topic.meta && topic.meta.type === category
+                  )) ||
+                (Array.isArray(subject.forms) &&
+                  subject.forms.some(
+                    (form) => form.meta && form.meta.type === category
+                  ))
+            )
             .map((subject) => ({
               ...subject,
               topics: Array.isArray(subject.topics)
@@ -1570,17 +1649,11 @@ function handleOnReadyKnowledge() {
                     (form) => form.meta && form.meta.type === category
                   )
                 : [],
-            }))
-            .filter(
-              (subject) =>
-                (subject.meta && subject.meta.type === category) ||
-                subject.topics.length > 0 ||
-                subject.forms.length > 0 // Include forms
-            ),
-        };
-      });
+            })),
+        }))
+        .filter((service) => service.subjects.length > 0);
 
-      createOptions(refinedFilteredServices, false);
+      createOptions(filteredServices, true);
 
       clearActiveFilters(".a-z-filter button");
 

@@ -907,7 +907,7 @@ const utilityPermit = new ContentP(
   { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
   {
-    type: "Information",
+    type: "Apply",
     keywords: [
       "parking permit",
       "parking pass",
