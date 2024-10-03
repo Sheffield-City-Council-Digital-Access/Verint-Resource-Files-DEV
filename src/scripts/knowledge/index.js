@@ -1192,7 +1192,7 @@ function handleOnReadyKnowledge() {
       ? `customerid=${KDF.getParams().customerid}&`
       : "";
     const interactionid = `interactionid=${KDF.getParams().interactionid}`;
-    console.log(item, result, enquiryType, tranferTypeKey);
+    console.log(result, enquiryType, tranferTypeKey);
     // window.location.href = `${url}${redirectToForm}?${customerid}${interactionid}`;
   });
 
