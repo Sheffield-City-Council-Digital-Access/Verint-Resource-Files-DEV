@@ -551,8 +551,8 @@ function redirectToFormPage(item) {
     ? `customerid=${KDF.getParams().customerid}&`
     : "";
   const interactionid = `interactionid=${KDF.getParams().interactionid}`;
-
-  window.location.href = `${url}${formName}?${customerid}${interactionid}`;
+  console.log(item, formName);
+  // window.location.href = `${url}${formName}?${customerid}${interactionid}`;
 }
 
 /**
