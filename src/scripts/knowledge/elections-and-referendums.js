@@ -64,7 +64,7 @@ const informationInDifferentFormats = new ContentEaR(
       Some information is available in alternative formats. If you are registering
       to vote, do so at
       <a href="https://www.gov.uk/register-to-vote" target="_blank"
-        >https://www.gov.uk/register-to-vote</a
+        >www.gov.uk/register-to-vote</a
       >, which works with assistive technologies such as screen readers, or we can
       send you an application in your preferred format where available. For
       additional information, please call: 0114 2734093.

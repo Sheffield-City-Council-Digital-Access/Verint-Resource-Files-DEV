@@ -325,10 +325,6 @@ const notEligibleCTP = new ContentTaT(
   { date: "26/09/2024", name: "Gee Whitehouse" }
 );
 
-
-// --------- KEEP THIS AT THE TOP ------------------------------------------- \\
-// --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
-
 const lostPassCTP = new ContentTaT(
   "notEligibleCTP",
   "What should I do if my child has lost their Children’s Travel Pass",
