@@ -516,7 +516,7 @@ function redirectToContentPage(item) {
   );
   if (transferButton) {
     transferButton.dataset.transferTypeKey = item.transfer?.typeKey || "";
-    transferButton.name = item.name || "";
+    transferButton.dataset.enquiryType = item.name || "";
   } else {
     console.warn(
       "Button element 'dform_widget_button_but_transfer_enquiry' not found."
@@ -528,7 +528,7 @@ function redirectToContentPage(item) {
   );
   if (finishButton) {
     finishButton.dataset.finishTypeKey = item.finish?.typeKey || "";
-    finishButton.name = item.name || "";
+    finishButton.dataset.enquiryType = item.name || "";
   } else {
     console.warn(
       "Button element 'dform_widget_button_but_finish_enquiry' not found."
