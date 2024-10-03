@@ -576,8 +576,8 @@ function redirectToFormPage(item) {
     ? `customerid=${KDF.getParams().customerid}&`
     : "";
   const interactionid = `interactionid=${KDF.getParams().interactionid}`;
-
-  window.location.href = `${url}${formName}?${customerid}${interactionid}`;
+  console.log(item, formName);
+  // window.location.href = `${url}${formName}?${customerid}${interactionid}`;
 }
 
 /**
@@ -1155,6 +1155,7 @@ function handleOnReadyKnowledge() {
    * @param {Object} result - The search result or option item.
    */
   function handleCardClick(result) {
+    console.log(result);
     switch (result.type) {
       case "knowledge":
         // Redirect to the content page for knowledge items
@@ -1233,6 +1234,7 @@ function handleOnReadyKnowledge() {
         formName
       )}?${customerid}${interactionid}`;
     });
+  });
 
   // Updated Event Handler for Transfer Enquiry Button
   $("#dform_widget_button_but_transfer_enquiry")
