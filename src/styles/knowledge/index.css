@@ -295,7 +295,8 @@ small {
   z-index: 4;
 }
 
-#dform_container button.breadcrumb-btn:last-child {
+#dform_container button.breadcrumb-btn:last-child,
+#dform_container button.breadcrumb-btn.last-visible {
   color: var(--color-white);
   text-decoration: none !important;
   background-color: var(--color-primary);
