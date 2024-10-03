@@ -61,7 +61,7 @@ const informationInDifferentFormats = new ContentEaR(
 const invitationToRegister = new ContentEaR(
   "invitationToRegister",
   "Invitation to Register",
-  "Set a discreption",
+  "Set a description",
   `
     <p>
       Some information is available in alternative formats. If you are registering
