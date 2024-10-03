@@ -226,29 +226,261 @@ function createCards(data, container, parent = null) {
     });
 }
 
+// src/scripts/knowledge/index.js
+
+// src/scripts/knowledge/index.js
+
+/**
+ * Redirects the user to the content page and updates breadcrumbs based on the item's hierarchy.
+ * @param {Object} item - The content item being displayed.
+ */
 function redirectToContentPage(item) {
-  const enquiryType = item.name;
+  // Find the parent hierarchy for the clicked item
+  const hierarchy = findParentHierarchy(knowledge, item.id);
 
-  logUserJourney("View Content", `Viewed content: ${enquiryType}`);
-
-  const breadcrumbElement = document.querySelector(".content-btn");
-  if (breadcrumbElement) {
-    breadcrumbElement.textContent = enquiryType;
-  } else {
-    console.warn("Breadcrumb element '.content-btn' not found.");
+  if (!hierarchy) {
+    console.warn("Parent hierarchy not found for item:", item);
+    return;
   }
 
+  const { service, subject, topic } = hierarchy;
+  console.log("hierarchy", hierarchy);
+
+  // Select breadcrumb elements by their unique IDs
+  const serviceBreadcrumbContent = document.getElementById(
+    "dform_widget_button_but_subject_menu_content"
+  );
+  const serviceBreadcrumbTopicMenu = document.getElementById(
+    "dform_widget_button_but_subject_menu_topic_menu"
+  );
+  const serviceBreadcrumbSubjectMenu = document.getElementById(
+    "dform_widget_button_but_subject_menu_subject_menu"
+  );
+
+  const subjectBreadcrumbContent = document.getElementById(
+    "dform_widget_button_but_topic_menu_content"
+  );
+  const subjectBreadcrumbTopicMenu = document.getElementById(
+    "dform_widget_button_but_topic_menu_topic_menu"
+  );
+
+  const topicBreadcrumbContent = document.getElementById(
+    "dform_widget_button_but_content_content"
+  );
+
+  const activeBreadcrumb = document.querySelector(".breadcrumb .active");
+
+  if (topic) {
+    // **Route 1:** topic is not null
+
+    // Update Service Breadcrumbs
+    if (serviceBreadcrumbContent) {
+      serviceBreadcrumbContent.textContent = service.name;
+      serviceBreadcrumbContent.setAttribute("data-id", service.id);
+      // Add click event to navigate back to the service
+      serviceBreadcrumbContent.onclick = () => {
+        createCards(service.subjects, subjectMenuContainer, service);
+        KDF.gotoPage("page_subject_menu", true, true, true);
+      };
+    } else {
+      console.warn(
+        "Breadcrumb element '#dform_widget_button_but_subject_menu_content' not found."
+      );
+    }
+
+    if (serviceBreadcrumbTopicMenu) {
+      serviceBreadcrumbTopicMenu.textContent = service.name;
+      serviceBreadcrumbTopicMenu.setAttribute("data-id", service.id);
+      // Add click event to navigate back to the service topic menu
+      serviceBreadcrumbTopicMenu.onclick = () => {
+        createCards(service.subjects, subjectMenuContainer, service);
+        KDF.gotoPage("page_subject_menu", true, true, true);
+      };
+    } else {
+      console.warn(
+        "Breadcrumb element '#dform_widget_button_but_subject_menu_topic_menu' not found."
+      );
+    }
+
+    if (serviceBreadcrumbSubjectMenu) {
+      serviceBreadcrumbSubjectMenu.textContent = service.name;
+      serviceBreadcrumbSubjectMenu.setAttribute("data-id", service.id);
+      // Add click event to navigate back to the service subject menu
+      serviceBreadcrumbSubjectMenu.onclick = () => {
+        createCards(service.subjects, subjectMenuContainer, service);
+        KDF.gotoPage("page_subject_menu", true, true, true);
+      };
+    } else {
+      console.warn(
+        "Breadcrumb element '#dform_widget_button_but_subject_menu_subject_menu' not found."
+      );
+    }
+
+    // Update Subject Breadcrumbs
+    if (subjectBreadcrumbContent) {
+      subjectBreadcrumbContent.textContent = subject.name;
+      subjectBreadcrumbContent.setAttribute("data-id", subject.id);
+      subjectBreadcrumbContent.style.display = "block"; // Ensure it's visible
+      // Add click event to navigate back to the subject
+      subjectBreadcrumbContent.onclick = () => {
+        createCards(
+          subject.topics || subject.subjects,
+          topicsMenuContainer,
+          subject
+        );
+        KDF.gotoPage("page_topic_menu", true, true, true);
+      };
+    } else {
+      console.warn(
+        "Breadcrumb element '#dform_widget_button_but_topic_menu_content' not found."
+      );
+    }
+
+    if (subjectBreadcrumbTopicMenu) {
+      subjectBreadcrumbTopicMenu.textContent = subject.name;
+      subjectBreadcrumbTopicMenu.setAttribute("data-id", subject.id);
+      // Add click event to navigate back to the subject's topic menu
+      subjectBreadcrumbTopicMenu.onclick = () => {
+        createCards(
+          subject.topics || subject.subjects,
+          topicsMenuContainer,
+          subject
+        );
+        KDF.gotoPage("page_topic_menu", true, true, true);
+      };
+    } else {
+      console.warn(
+        "Breadcrumb element '#dform_widget_button_but_topic_menu_topic_menu' not found."
+      );
+    }
+
+    // Update Topic Breadcrumb
+    if (topicBreadcrumbContent) {
+      topicBreadcrumbContent.textContent = topic.name;
+      topicBreadcrumbContent.setAttribute("data-id", topic.id);
+      topicBreadcrumbContent.style.display = "block"; // Ensure it's visible
+      subjectBreadcrumbContent.classList.remove("last-visible");
+      // Add click event to navigate back to the topic
+      topicBreadcrumbContent.onclick = () => {
+        createCards(topic.content, contentContainer, topic);
+        KDF.gotoPage("page_specific_topic", true, true, true);
+      };
+    } else {
+      console.warn(
+        "Breadcrumb element '#dform_widget_button_but_content_content' not found."
+      );
+    }
+
+    // Ensure all breadcrumbs related to Route 1 are visible
+    if (serviceBreadcrumbContent)
+      serviceBreadcrumbContent.style.display = "block";
+    if (serviceBreadcrumbTopicMenu)
+      serviceBreadcrumbTopicMenu.style.display = "block";
+    if (serviceBreadcrumbSubjectMenu)
+      serviceBreadcrumbSubjectMenu.style.display = "block";
+    if (subjectBreadcrumbTopicMenu)
+      subjectBreadcrumbTopicMenu.style.display = "block";
+  } else {
+    // **Route 2:** topic is null
+
+    // Update Service Breadcrumbs
+    if (serviceBreadcrumbContent) {
+      serviceBreadcrumbContent.textContent = service.name;
+      serviceBreadcrumbContent.setAttribute("data-id", service.id);
+      // Add click event to navigate back to the service
+      serviceBreadcrumbContent.onclick = () => {
+        createCards(service.subjects, subjectMenuContainer, service);
+        KDF.gotoPage("page_subject_menu", true, true, true);
+      };
+    } else {
+      console.warn(
+        "Breadcrumb element '#dform_widget_button_but_subject_menu_content' not found."
+      );
+    }
+
+    if (serviceBreadcrumbSubjectMenu) {
+      serviceBreadcrumbSubjectMenu.textContent = service.name;
+      serviceBreadcrumbSubjectMenu.setAttribute("data-id", service.id);
+      // Add click event to navigate back to the service subject menu
+      serviceBreadcrumbSubjectMenu.onclick = () => {
+        createCards(service.subjects, subjectMenuContainer, service);
+        KDF.gotoPage("page_subject_menu", true, true, true);
+      };
+    } else {
+      console.warn(
+        "Breadcrumb element '#dform_widget_button_but_subject_menu_subject_menu' not found."
+      );
+    }
+
+    if (serviceBreadcrumbTopicMenu) {
+      serviceBreadcrumbTopicMenu.textContent = service.name;
+      serviceBreadcrumbTopicMenu.setAttribute("data-id", service.id);
+      // Add click event to navigate back to the service topic menu
+      serviceBreadcrumbTopicMenu.onclick = () => {
+        createCards(service.subjects, subjectMenuContainer, service);
+        KDF.gotoPage("page_subject_menu", true, true, true);
+      };
+    } else {
+      console.warn(
+        "Breadcrumb element '#dform_widget_button_but_subject_menu_topic_menu' not found."
+      );
+    }
+
+    // Update Subject Breadcrumb
+    if (subjectBreadcrumbContent) {
+      subjectBreadcrumbContent.textContent = subject.name;
+      subjectBreadcrumbContent.setAttribute("data-id", subject.id);
+      subjectBreadcrumbContent.style.display = "block"; // Ensure it's visible
+      // Add click event to navigate back to the subject
+      subjectBreadcrumbContent.onclick = () => {
+        createCards(subject.subjects, subjectMenuContainer, subject);
+        KDF.gotoPage("page_subject_menu", true, true, true);
+      };
+    } else {
+      console.warn(
+        "Breadcrumb element '#dform_widget_button_but_content_content' not found."
+      );
+    }
+
+    // Hide Topic Breadcrumb since topic is null
+    if (subjectBreadcrumbTopicMenu) {
+      subjectBreadcrumbTopicMenu.textContent = "";
+      subjectBreadcrumbTopicMenu.style.display = "none"; // Hide the breadcrumb
+      // Update the last visible breadcrumb
+      subjectBreadcrumbContent.classList.add("last-visible");
+    }
+
+    if (topicBreadcrumbContent) {
+      topicBreadcrumbContent.textContent = "";
+      topicBreadcrumbContent.style.display = "none"; // Hide the breadcrumb
+      // Update the last visible breadcrumb
+      subjectBreadcrumbContent.classList.add("last-visible");
+    }
+
+    // Ensure serviceBreadcrumbTopicMenu related to Route 2 is handled as Route 1 does
+    // If there are any Route 2 specific elements, handle them here
+  }
+
+  // Update Active Breadcrumb (Content)
+  if (activeBreadcrumb) {
+    activeBreadcrumb.textContent = item.name;
+  } else {
+    console.warn("Breadcrumb element '.breadcrumb .active' not found.");
+  }
+
+  // Update Other Elements as Necessary
   const titleElement = document.getElementById(
     "dform_widget_header_hrd_page_title_content"
   );
   if (titleElement) {
-    titleElement.textContent = enquiryType;
+    titleElement.textContent = item.name;
   } else {
     console.warn(
       "Title element 'dform_widget_header_hrd_page_title_content' not found."
     );
   }
 
+  // Update the Content Container
   const contentContainer = document.getElementById(
     "dform_widget_html_ahtm_content_container"
   );
@@ -266,6 +498,7 @@ function redirectToContentPage(item) {
     );
   }
 
+  // Update the Button Label
   const button = document.getElementById(
     "dform_widget_button_but_launch_process"
   );
@@ -277,6 +510,7 @@ function redirectToContentPage(item) {
     );
   }
 
+  // Show or Hide Multiple Elements Based on the Item Properties
   hideShowMultipleElements([
     {
       name: "but_launch_process",
@@ -292,6 +526,7 @@ function redirectToContentPage(item) {
     },
   ]);
 
+  // Navigate to the Content Page
   KDF.gotoPage("page_content", true, true, true);
 }
 
@@ -318,6 +553,44 @@ function redirectToFormPage(item) {
   const interactionid = `interactionid=${KDF.getParams().interactionid}`;
 
   window.location.href = `${url}${formName}?${customerid}${interactionid}`;
+}
+
+/**
+ * Recursively searches the knowledge base to find the parent hierarchy of a given item ID.
+ * @param {Array} knowledgeData - The knowledge base array.
+ * @param {string} itemId - The ID of the item to find.
+ * @returns {Object|null} - An object containing service, subject, and topic, or null if not found.
+ */
+function findParentHierarchy(knowledgeData, itemId) {
+  for (const service of knowledgeData) {
+    for (const subject of service.subjects) {
+      // Check if the subject is the item
+      if (subject.id === itemId) {
+        return { service, subject, topic: null };
+      }
+
+      // Check if the subject has topics
+      if (Array.isArray(subject.topics)) {
+        for (const topic of subject.topics) {
+          if (topic.id === itemId) {
+            return { service, subject, topic };
+          }
+        }
+      }
+
+      // If the subject has forms, check them as well
+      if (Array.isArray(subject.forms)) {
+        for (const form of subject.forms) {
+          if (form.id === itemId) {
+            return { service, subject, topic: null };
+          }
+        }
+      }
+    }
+  }
+
+  // Item not found
+  return null;
 }
 
 /**
