@@ -1321,10 +1321,9 @@ function handleOnReadyKnowledge() {
 
     function createOptions(filteredServices, updateAtoZ = true) {
       const resultsContainer = document.querySelector(".options");
-      resultsContainer.innerHTML = "";
+      resultsContainer.innerHTML = ""; // Clear existing options
 
       const visibleLetters = new Set();
-
       let options = [];
 
       filteredServices.forEach((service) => {
@@ -1454,6 +1453,8 @@ function handleOnReadyKnowledge() {
         return nameA.localeCompare(nameB);
       });
 
+      resultsContainer.innerHTML = "";
+      
       options.forEach((card) => {
         resultsContainer.appendChild(card);
 
