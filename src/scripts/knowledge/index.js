@@ -1130,6 +1130,7 @@ function handleOnReadyKnowledge() {
    * @param {Object} result - The search result or option item.
    */
   function handleCardClick(result) {
+    console.log(result);
     switch (result.type) {
       case "knowledge":
         // Redirect to the content page for knowledge items
@@ -1192,7 +1193,7 @@ function handleOnReadyKnowledge() {
       ? `customerid=${KDF.getParams().customerid}&`
       : "";
     const interactionid = `interactionid=${KDF.getParams().interactionid}`;
-    console.log(result, enquiryType, tranferTypeKey);
+
     // window.location.href = `${url}${redirectToForm}?${customerid}${interactionid}`;
   });
 
