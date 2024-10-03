@@ -1192,8 +1192,8 @@ function handleOnReadyKnowledge() {
       ? `customerid=${KDF.getParams().customerid}&`
       : "";
     const interactionid = `interactionid=${KDF.getParams().interactionid}`;
-
-    window.location.href = `${url}${redirectToForm}?${customerid}${interactionid}`;
+    console.log(item, result, enquiryType, tranferTypeKey);
+    // window.location.href = `${url}${redirectToForm}?${customerid}${interactionid}`;
   });
 
   $("#dform_widget_button_but_transfer_enquiry").on("click", () => {
