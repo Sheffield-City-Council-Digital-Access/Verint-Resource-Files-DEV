@@ -443,7 +443,7 @@ const disabledTravelPermit = new ContentTaT(
   { typeKey: "" },
   { typeKey: "disabled_travel_pass_information_provided" },
   {
-    type: "Application",
+    type: "Apply",
     keywords: [
       "Blue badge application",
       "bluebadg",

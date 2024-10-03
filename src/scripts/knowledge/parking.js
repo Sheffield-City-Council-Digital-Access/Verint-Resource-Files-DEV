@@ -189,7 +189,7 @@ const blueBadge = new ContentP(
   { typeKey: "apply_blue_badge_transfered_to_service" },
   { typeKey: "apply_blue_badge_information_provided" },
   {
-    type: "Application",
+    type: "Apply",
     keywords: [
       "Blue badge application",
       "bluebadg",

@@ -498,15 +498,40 @@ function redirectToContentPage(item) {
     );
   }
 
-  // Update the Button Label
+  // Update the Button Label and Set Data Attributes
   const button = document.getElementById(
     "dform_widget_button_but_launch_process"
   );
   if (button) {
     button.textContent = item.process?.buttonLabel || "Launch Process";
+    button.dataset.formName = item.formName || "";
   } else {
     console.warn(
       "Button element 'dform_widget_button_but_launch_process' not found."
+    );
+  }
+
+  const transferButton = document.getElementById(
+    "dform_widget_button_but_transfer_enquiry"
+  );
+  if (transferButton) {
+    transferButton.dataset.transferTypeKey = item.transfer?.typeKey || "";
+    transferButton.dataset.enquiryType = item.transfer?.enquiryType || "";
+  } else {
+    console.warn(
+      "Button element 'dform_widget_button_but_transfer_enquiry' not found."
+    );
+  }
+
+  const finishButton = document.getElementById(
+    "dform_widget_button_but_finish_enquiry"
+  );
+  if (finishButton) {
+    finishButton.dataset.finishTypeKey = item.finish?.typeKey || "";
+    finishButton.dataset.enquiryType = item.finish?.enquiryType || "";
+  } else {
+    console.warn(
+      "Button element 'dform_widget_button_but_finish_enquiry' not found."
     );
   }
 
