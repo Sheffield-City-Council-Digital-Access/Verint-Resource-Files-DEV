@@ -1209,77 +1209,118 @@ function handleOnReadyKnowledge() {
     KDF.gotoPage("page_search_results", true, true, true);
   });
 
+  // Function to set data attributes
+  function setButtonData() {
+    const launchButton = $("#dform_widget_button_but_launch_process");
+    const transferButton = $("#dform_widget_button_but_transfer_enquiry");
+    const finishButton = $("#dform_widget_button_but_finish_enquiry");
+
+    // Example of setting data attributes; replace with actual data
+    launchButton.data("form-name", "report_abandoned_vehicle");
+    transferButton.data(
+      "transfer-type-key",
+      "abandoned_vehicle_transferred_to_service"
+    );
+    transferButton.data("enquiry-type", "some_enquiry_type"); // Ensure this is set
+    finishButton.data(
+      "finish-type-key",
+      "abandoned_vehicle_information_provided"
+    );
+    finishButton.data("enquiry-type", "some_finish_enquiry_type"); // Ensure this is set
+  }
+
   // Updated Event Handler for Launch Process Button
-  $("#dform_widget_button_but_launch_process").on("click", function () {
-    const button = $(this);
-    const formName = button.data("form-name");
+  $("#dform_widget_button_but_launch_process")
+    .off("click")
+    .on("click", function () {
+      const formName = $(this).data("form-name");
+      console.log("Launch Process Button Clicked. Form Name:", formName);
 
-    if (!formName) {
-      console.warn("Form name is not specified.");
-      alert("Unable to launch the process. Form information is missing.");
-      return;
-    }
+      if (!formName) {
+        console.warn("Form name is not specified.");
+        alert("Unable to launch the process. Form information is missing.");
+        return;
+      }
 
-    const { protocol, hostname } = window.location;
-    const url = `${protocol}//${hostname}/form/launch/`;
+      const { protocol, hostname } = window.location;
+      const url = `${protocol}//${hostname}/form/launch/`;
+      const customerid = KDF.getParams().customerid
+        ? `customerid=${encodeURIComponent(KDF.getParams().customerid)}&`
+        : "";
+      const interactionid = `interactionid=${encodeURIComponent(
+        KDF.getParams().interactionid
+      )}`;
 
-    const customerid = KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : "";
-    const interactionid = `interactionid=${KDF.getParams().interactionid}`;
-
-    window.location.href = `${url}${formName}?${customerid}${interactionid}`;
-  });
+      window.location.href = `${url}${encodeURIComponent(
+        formName
+      )}?${customerid}${interactionid}`;
+    });
 
   // Updated Event Handler for Transfer Enquiry Button
-  $("#dform_widget_button_but_transfer_enquiry").on("click", function () {
-    const button = $(this);
-    const transferTypeKey = button.data("transfer-type-key");
-    const enquiryType = button.data("enquiry-type");
+  $("#dform_widget_button_but_transfer_enquiry")
+    .off("click")
+    .on("click", function () {
+      const transferTypeKey = $(this).data("transfer-type-key");
+      const enquiryType = $(this).data("enquiry-type");
+      console.log(
+        "Transfer Enquiry Button Clicked. Transfer Type Key:",
+        transferTypeKey,
+        "Enquiry Type:",
+        enquiryType
+      );
 
-    if (!transferTypeKey || !enquiryType) {
-      console.warn("Transfer Type Key or Enquiry Type is not specified.");
-      alert("Unable to transfer enquiry. Required information is missing.");
-      return;
-    }
+      if (!transferTypeKey || !enquiryType) {
+        console.warn("Transfer Type Key or Enquiry Type is not specified.");
+        alert("Unable to transfer enquiry. Required information is missing.");
+        return;
+      }
 
-    const { protocol, hostname } = window.location;
-    const url = `${protocol}//${hostname}/form/launch/`;
+      const { protocol, hostname } = window.location;
+      const url = `${protocol}//${hostname}/form/launch/`;
+      const customerid = KDF.getParams().customerid
+        ? `customerid=${encodeURIComponent(KDF.getParams().customerid)}&`
+        : "";
+      const interactionid = `interactionid=${encodeURIComponent(
+        KDF.getParams().interactionid
+      )}`;
 
-    const customerid = KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : "";
-    const interactionid = `interactionid=${KDF.getParams().interactionid}`;
-
-    window.location.href = `${url}transfered_enquiry?${customerid}${interactionid}&enquiry=${encodeURIComponent(
-      enquiryType
-    )}&typekey=${encodeURIComponent(transferTypeKey)}`;
-  });
+      window.location.href = `${url}transfered_enquiry?${customerid}${interactionid}&enquiry=${encodeURIComponent(
+        enquiryType
+      )}&typekey=${encodeURIComponent(transferTypeKey)}`;
+    });
 
   // Updated Event Handler for Finish Enquiry Button
-  $("#dform_widget_button_but_finish_enquiry").on("click", function () {
-    const button = $(this);
-    const finishTypeKey = button.data("finish-type-key");
-    const enquiryType = button.data("enquiry-type");
+  $("#dform_widget_button_but_finish_enquiry")
+    .off("click")
+    .on("click", function () {
+      const finishTypeKey = $(this).data("finish-type-key");
+      const enquiryType = $(this).data("enquiry-type");
+      console.log(
+        "Finish Enquiry Button Clicked. Finish Type Key:",
+        finishTypeKey,
+        "Enquiry Type:",
+        enquiryType
+      );
 
-    if (!finishTypeKey || !enquiryType) {
-      console.warn("Finish Type Key or Enquiry Type is not specified.");
-      alert("Unable to finish enquiry. Required information is missing.");
-      return;
-    }
+      if (!finishTypeKey || !enquiryType) {
+        console.warn("Finish Type Key or Enquiry Type is not specified.");
+        alert("Unable to finish enquiry. Required information is missing.");
+        return;
+      }
 
-    const { protocol, hostname } = window.location;
-    const url = `${protocol}//${hostname}/form/launch/`;
+      const { protocol, hostname } = window.location;
+      const url = `${protocol}//${hostname}/form/launch/`;
+      const customerid = KDF.getParams().customerid
+        ? `customerid=${encodeURIComponent(KDF.getParams().customerid)}&`
+        : "";
+      const interactionid = `interactionid=${encodeURIComponent(
+        KDF.getParams().interactionid
+      )}`;
 
-    const customerid = KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : "";
-    const interactionid = `interactionid=${KDF.getParams().interactionid}`;
-
-    window.location.href = `${url}general_enquiry?${customerid}${interactionid}&enquiry=${encodeURIComponent(
-      enquiryType
-    )}&typekey=${encodeURIComponent(finishTypeKey)}`;
-  });
+      window.location.href = `${url}general_enquiry?${customerid}${interactionid}&enquiry=${encodeURIComponent(
+        enquiryType
+      )}&typekey=${encodeURIComponent(finishTypeKey)}`;
+    });
 
   // --- SERVICES A-Z ------------------------------------------------------- \\
 
