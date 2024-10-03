@@ -1234,7 +1234,6 @@ function handleOnReadyKnowledge() {
         formName
       )}?${customerid}${interactionid}`;
     });
-  });
 
   // Updated Event Handler for Transfer Enquiry Button
   $("#dform_widget_button_but_transfer_enquiry")
