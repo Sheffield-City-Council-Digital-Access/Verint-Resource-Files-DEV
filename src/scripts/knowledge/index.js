@@ -762,5 +762,3 @@ function filterByCategory(category) {
     highlightActiveFilter(activeCategoryButton, ".categories li");
   }
 }
-```
-</rewritten_file>
