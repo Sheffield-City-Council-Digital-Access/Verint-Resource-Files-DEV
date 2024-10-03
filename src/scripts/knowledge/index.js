@@ -516,7 +516,7 @@ function redirectToContentPage(item) {
   );
   if (transferButton) {
     transferButton.dataset.transferTypeKey = item.transfer?.typeKey || "";
-    transferButton.dataset.enquiryType = item.transfer?.enquiryType || "";
+    transferButton.name = item.name || "";
   } else {
     console.warn(
       "Button element 'dform_widget_button_but_transfer_enquiry' not found."
@@ -528,7 +528,7 @@ function redirectToContentPage(item) {
   );
   if (finishButton) {
     finishButton.dataset.finishTypeKey = item.finish?.typeKey || "";
-    finishButton.dataset.enquiryType = item.finish?.enquiryType || "";
+    finishButton.name = item.name || "";
   } else {
     console.warn(
       "Button element 'dform_widget_button_but_finish_enquiry' not found."
@@ -1209,35 +1209,13 @@ function handleOnReadyKnowledge() {
     KDF.gotoPage("page_search_results", true, true, true);
   });
 
-  // Function to set data attributes
-  function setButtonData() {
-    const launchButton = $("#dform_widget_button_but_launch_process");
-    const transferButton = $("#dform_widget_button_but_transfer_enquiry");
-    const finishButton = $("#dform_widget_button_but_finish_enquiry");
-
-    // Example of setting data attributes; replace with actual data
-    launchButton.data("form-name", "report_abandoned_vehicle");
-    transferButton.data(
-      "transfer-type-key",
-      "abandoned_vehicle_transferred_to_service"
-    );
-    transferButton.data("enquiry-type", "some_enquiry_type"); // Ensure this is set
-    finishButton.data(
-      "finish-type-key",
-      "abandoned_vehicle_information_provided"
-    );
-    finishButton.data("enquiry-type", "some_finish_enquiry_type"); // Ensure this is set
-  }
-
   // Updated Event Handler for Launch Process Button
   $("#dform_widget_button_but_launch_process")
     .off("click")
     .on("click", function () {
       const formName = $(this).data("form-name");
-      console.log("Launch Process Button Clicked. Form Name:", formName);
-
+      
       if (!formName) {
-        console.warn("Form name is not specified.");
         alert("Unable to launch the process. Form information is missing.");
         return;
       }
