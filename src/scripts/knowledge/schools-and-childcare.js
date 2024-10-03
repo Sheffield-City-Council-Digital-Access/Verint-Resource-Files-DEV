@@ -1827,19 +1827,24 @@ const freeschoolmeals = new MenuSaC(
   "freeschoolmeals",
   "Free School Meals",
   "",
-  [eligibilitycriteriaforfreeschoolmeals, faqs, fsmvoucherinformation]
+  [eligibilitycriteriaforfreeschoolmeals]
 );
 
-const faqs = new MenuSaC("faqs", "FAQ's", "Discreption", [
-  changeincircumstance,
-  childisatnurseryorprimaryschool,
-  childisatsecondaryschool,
-  childisover16,
-  afterimakemyapplication,
-  childattendsanacademy,
-  circumstanceschange,
-  childchangesschool,
-]);
+const freeSchoolMealsFaqs = new MenuSaC(
+  "freeSchoolMealsFaqs",
+  "FAQ's",
+  "Discreption",
+  [
+    changeincircumstance,
+    childisatnurseryorprimaryschool,
+    childisatsecondaryschool,
+    childisover16,
+    afterimakemyapplication,
+    childattendsanacademy,
+    circumstanceschange,
+    childchangesschool,
+  ]
+);
 
 const fsmvoucherinformation = new MenuSaC(
   "fsmvoucherinformation",
@@ -1863,5 +1868,10 @@ const schoolsAndChildcare = new ServiceSaC(
   "schoolsAndChildcare",
   "Schools and Childcare",
   `Admissions, catchment areas, find schools, school travel, attendance, childcare and nurseries, teaching jobs…`,
-  [freeschoolmeals, fundedEarlyLearning, fsmvoucherinformation, faqs]
+  [
+    freeschoolmeals,
+    fundedEarlyLearning,
+    fsmvoucherinformation,
+    freeSchoolMealsFaqs,
+  ]
 );
