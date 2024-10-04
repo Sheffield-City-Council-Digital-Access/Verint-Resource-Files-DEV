@@ -156,11 +156,12 @@ const fundedEarlyLearning = new ContentSaC(
   { date: "17/09/2024", name: "Gee Whitehouse" }
 );
 
-const eligibilityCriteriaForFreeSchoolMeals = new ContentSaC(
-  "eligibilitycriteriaforfreeschoolmeals",
-  "What is the Eligibility criteria for Free School Meals",
-  "",
+const freeSchoolMeals = new ContentSaC(
+  "freeSchoolMeals",
+  "Free School Meals",
+  "Apply for free School meals",
   `
+    <h3>Eligibility</h3>
     <p>
       Your child is eligible for a Free School Meal if you receive any of the
       following:
@@ -189,552 +190,14 @@ const eligibilityCriteriaForFreeSchoolMeals = new ContentSaC(
       If your child/ren is/are currently eligible for free school meals, they’ll
       remain eligible until they finish the phase of schooling (primary or
       secondary) they’re in on 31 March 2023.
-    </p> 
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const changeInCircumstance = new ContentSaC(
-  "changeincircumstance",
-  "What if I have a change in circumstance",
-  "",
-  `
+    </p>
+    <h3>Change in circumstance</h3>
     <p>
       If your circumstances change, such as if you no longer receive benefits, have
       moved house, or the school attended has changed, this may affect your right to
       claim, and you should reapply for Free School Meals, unless the School
       attending is out of Sheffield you will need to apply to that local authority.
     </p>
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const whyIsItImportantToRegisterForFreeSchoolMeals = new ContentSaC(
-  "whyIsItImportantToRegisterForFreeSchoolMeals",
-  "Why is it important to register for Free School Meals",
-  "",
-  `
-    <p>
-      Applying for free school meals is very important because the amount of money
-      that your child’s school receives from central government depends on the
-      number of children registered as entitled to free school meals. The government
-      has also stated that it is keen for universities to actively recruit pupils
-      that have previously received free school meals so it is important that those
-      eligible for free school meals do register for them. Most importantly,
-      receiving up free school meals will save you around £360 per year per child
-      and enable your child to have a balanced and nutritious lunch.
-    </p>
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const childIsAtNurseryOrPrimarySchool = new ContentSaC(
-  "childIsAtNurseryOrPrimarySchool",
-  "What do I do if my child is at Nursery or Primary School?",
-  "",
-  `
-    <p>
-      Although Primary School Children within the year groups: Reception, Year 1 and
-      Year 2 automatically receive Free School Meals, we recommend people still
-      apply for Free School Meals as this provides Funding to the Schools via Pupil
-      Premium.
-    </p>
-    <p>
-      Children within the Year groups 3 - 6 can only receive a free school meal if
-      their parents/carers are eligible and if a Free School Meals Application Form
-      has been completed. You must therefore complete a Free School Meals
-      Application Form so that your eligibility can be checked by the Free School
-      Meals Team. If you are eligible, your child will start receiving their free
-      school meal.
-    </p>
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const childIsAtSecondarySchool = new ContentSaC(
-  "childisatsecondaryschool",
-  "What do i do if my child is at Secondary School",
-  "",
-  `
-    <p>
-      Secondary school pupils can only receive a free school meal if their
-      parent/carer is eligible and if a Free School Meals Application Form has been
-      completed. You must therefore complete a Free School Meals Application Form so
-      that your eligibility can be checked by the Free School Meals Team. If you are
-      eligible, your child can then take up their free school meal.
-    </p>
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const childIsOver16 = new ContentSaC(
-  "childIsOver16",
-  "What do I do if my child is over 16",
-  "",
-  `
-    <p>
-      Over 16s can still receive free school meals if they are staying in education
-      at a sixth form. You should complete a Free School Meals Application Form. The
-      process is the same as the process for secondary school applications. All year
-      11 pupils applying for the 16-19 bursary fund to help with their place in
-      sixth form in the following year will need to complete a free school meals
-      application form in order to apply for the bursary. The 16-19 bursary is the
-      new fund available to support students aged 16 to 19 to stay in education and
-      is the replacement for the Education Maintenance Allowance (EMA).
-    </p>
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const childAttendsAnacademy = new ContentSaC(
-  "childAttendsAnacademy",
-  "What do  do if my child attends an Academy",
-  "",
-  `
-    <p>
-      You do not have to provide proof of benefits when completing the Free School
-      Meals Application Form as we can check for eligibility against a central
-      government database. If our checks indicate that you are not entitled to free
-      school meals and you think that you should be entitled, we may have to ask for
-      proof of the benefit you are receiving so that we can double check that the
-      details we hold are correct.
-    </p>
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const afterIMakeMyApplication = new ContentSaC(
-  "afterIMakeMyApplication",
-  "What happens after I make my application",
-  "",
-  `
-    <p>
-      We will let the school know whether or not your child is entitled to free
-      school meals. Your child will then be able to take up their free school meal
-      if eligible. We may also contact you if we need further information to process
-      your application.
-    </p>
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const proofOfBenefits = new ContentSaC(
-  "proofOfBenefits",
-  "Do you need proof of my benefits",
-  "",
-  `
-    <h3>What happens after I make my application</h3>
-    <p>
-      We will let the school know whether or not your child is entitled to free
-      school meals. Your child will then be able to take up their free school meal
-      if eligible. We may also contact you if we need further information to process
-      your application.
-    </p>
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const circumstancesChange = new ContentSaC(
-  "circumstancesChange",
-  "What if my circumstances change?",
-  "",
-  `
     <p>
       If a previous application for free school meals was not successful and a
       change in your circumstances means that you think you may now be eligible
@@ -743,122 +206,154 @@ const circumstancesChange = new ContentSaC(
       start work, start to receive Working Tax Credit, or stop receiving one of the
       qualifying benefits you must notify us as soon as possible.
     </p>
- `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const claimBackDate = new ContentSaC(
-  "claimBackDate",
-  "Can my claim be backdated",
-  "",
-  `
-    <p>
-      It is important that you apply as soon as possible as we are unable to
-      backdate claims for free school meals to cover unpaid dinner money, or to
-      refund dinner money paid prior to the date of a successful application.
-    </p>
- `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const childChangesSchool = new ContentSaC(
-  "childChangesSchool",
-  "What if my child changes school",
-  "",
-  `
-    <p>
-      If your child has moved schools they do not need to re-apply unless the
-      child's new School is out of Sheffield then they would apply to that local
-      authority.
-    </p>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Frequently Asked Questions</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <details class="details-accordion">
+          <summary>Why is it important to register for Free School Meals?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Applying for free school meals is very important because the amount of
+              money that your child’s school receives from central government
+              depends on the number of children registered as entitled to free
+              school meals. The government has also stated that it is keen for
+              universities to actively recruit pupils that have previously received
+              free school meals so it is important that those eligible for free
+              school meals do register for them. Most importantly, receiving up free
+              school meals will save you around £360 per year per child and enable
+              your child to have a balanced and nutritious lunch.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>
+            What do I do if my child is at Nursery or Primary School?
+          </summary>
+          <div class="details-accordion-content">
+            <p>
+              Although Primary School Children within the year groups: Reception,
+              Year 1 and Year 2 automatically receive Free School Meals, we
+              recommend people still apply for Free School Meals as this provides
+              Funding to the Schools via Pupil Premium.
+            </p>
+            <p>
+              Children within the Year groups 3 - 6 can only receive a free school
+              meal if their parents/carers are eligible and if a Free School Meals
+              Application Form has been completed. You must therefore complete a
+              Free School Meals Application Form so that your eligibility can be
+              checked by the Free School Meals Team. If you are eligible, your child
+              will start receiving their free school meal.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>What do i do if my child is at Secondary School?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Secondary school pupils can only receive a free school meal if their
+              parent/carer is eligible and if a Free School Meals Application Form
+              has been completed. You must therefore complete a Free School Meals
+              Application Form so that your eligibility can be checked by the Free
+              School Meals Team. If you are eligible, your child can then take up
+              their free school meal.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>What do I do if my child is over 16?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Over 16s can still receive free school meals if they are staying in
+              education at a sixth form. You should complete a Free School Meals
+              Application Form. The process is the same as the process for secondary
+              school applications. All year 11 pupils applying for the 16-19 bursary
+              fund to help with their place in sixth form in the following year will
+              need to complete a free school meals application form in order to
+              apply for the bursary. The 16-19 bursary is the new fund available to
+              support students aged 16 to 19 to stay in education and is the
+              replacement for the Education Maintenance Allowance (EMA).
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>What do do if my child attends an Academy?</summary>
+          <div class="details-accordion-content">
+            <p>
+              You do not have to provide proof of benefits when completing the Free
+              School Meals Application Form as we can check for eligibility against
+              a central government database. If our checks indicate that you are not
+              entitled to free school meals and you think that you should be
+              entitled, we may have to ask for proof of the benefit you are
+              receiving so that we can double check that the details we hold are
+              correct.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>What happens after I make my application?</summary>
+          <div class="details-accordion-content">
+            <p>
+              We will let the school know whether or not your child is entitled to
+              free school meals. Your child will then be able to take up their free
+              school meal if eligible. We may also contact you if we need further
+              information to process your application.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>What happens after I make my application?</summary>
+          <div class="details-accordion-content">
+            <p>
+              We will let the school know whether or not your child is entitled to
+              free school meals. Your child will then be able to take up their free
+              school meal if eligible. We may also contact you if we need further
+              information to process your application.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>Can my claim be backdated?</summary>
+          <div class="details-accordion-content">
+            <p>
+              It is important that you apply as soon as possible as we are unable to
+              backdate claims for free school meals to cover unpaid dinner money, or
+              to refund dinner money paid prior to the date of a successful
+              application.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>What if my child changes school?</summary>
+          <div class="details-accordion-content">
+            <p>
+              If your child has moved schools they do not need to re-apply unless
+              the child's new School is out of Sheffield then they would apply to
+              that local authority.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>Do I have to renew my claim every year?</summary>
+          <div class="details-accordion-content">
+            <p>
+              You do not have apply yearly, however If your child attended a school
+              outside of Sheffield then you would need to reapply
+            </p>
+            <p>
+              You will need to reapply if you have previously not been eligible for
+              free school meals but think that you are now eligible.
+            </p>
+            <p>
+              If the child/ren is/are eligible under Universal Credit, you will not
+              need to reapply for Free School Meals until April 2023.
+            </p>
+          </div>
+        </details>
+      </div>
+    </details>
   `,
   {
     buttonLabel: "Apply for Free School Meals",
@@ -907,498 +402,10 @@ const childChangesSchool = new ContentSaC(
   { date: "18/09/2024", name: "Dinal Willaims" }
 );
 
-const renewEveryEear = new ContentSaC(
-  "renewEveryEear",
-  "Do I have to renew my claim every year",
-  "",
-  `
-    <p>
-      You do not have apply yearly, however If your child attended a school outside
-      of Sheffield then you would need to reapply
-    </p>
-        <p>
-      You will need to reapply if you have previously not been eligible for free
-      school meals but think that you are now eligible.
-    </p>
-    <p>
-      If the child/ren is/are eligible under Universal Credit, you will not need to
-      reapply for Free School Meals until April 2023.
-    </p>
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const redeemVoucher = new ContentSaC(
-  "redeemVoucher",
-  "How do I redeem a voucher and spend it",
-  "",
-  `
-    <p>Please Note: that vouchers will be awarded at £15 per child</p>
-    <p>
-      You will have received a letter from us, the letter will contain a unique 16
-      digit eCode the letter with the eCode will tell you how much money the eCode
-      is worth.
-    </p>
-    <p>
-      You need to go online to swap this code for an eGift card (an online voucher).
-    </p>
-    <p>You can redeem your eCode button on the website:</p>
-    <p>
-      <a href="https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/">Free School Meals</a>
-    </p>
-    <p>or you can visit:</p>
-    <p><b>www.selectyourcompliment.co.uk</b></p>
-    <p>Enter the code into the box on the website and click Redeem</p>
-    <ol>
-      <li>Choose your supermarket.</li>
-      <li>Choose the amount of money you want to order.</li>
-      <li>Click on "Add to basket" to confirm your choices.</li>
-      <li>Click on "Checkout" and enter your email address.</li>
-      <li>
-        The eGift card (online vouchers) will be sent to your email address within
-        24 hours.
-      </li>
-      <li>If the email does not arrive, check your junk folder.</li>
-      <li>The email will have the eGift card in it.</li>
-      <li>The eGift card has a barcode or a link to see a barcode online.</li>
-    </ol>
-    <p>
-      If you cannot see a barcode it could be because the pictures are not showing.
-      You may need to click on Download images to see the barcode. You will need the
-      barcode to use the eGift card to pay at the supermarket.
-    </p>
-    <p>
-      Take the eGift card (online voucher) into the shop and show it at the till to
-      pay. you can show the eGift card on your mobile phone screen or print it ou.t
-    </p>
-    <p>
-      After you have spent all the money on the eGift card (online voucher) it
-      cannot be used again. Please delete the email or throw away the printed eGift
-      card.
-    </p>
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const noSmartPhoneAccess = new ContentSaC(
-  "noSmartPhoneAccess",
-  "I dont have a smartphone or computer/laptop or cant access the voucher and cant print it",
-  "",
-  `
-    <p>
-      <b
-        >This may need to be removed if it is decided that the scheme will no longer
-        continue</b
-      >
-    </p>
-    <b>Options:</b>
-    <p>
-      Talk the customer through the process over the phone following the "How to
-      redeem a voucher, and spend it".
-    </p>
-    <p>
-      Advise the customer to visit their local library who can help them print the
-      voucher.
-    </p>
-    <p>
-      Take the customer's 16 digit code and redeem the voucher for them online, then
-      print the voucher and post it to their address, however this will cause a
-      delay in their receiving the voucher.
-    </p>
-    <p>
-      The customer could wait till their school has reopened and request assistance
-    </p>
- `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const voucherForAllMyChildren = new ContentSaC(
-  "voucherForAllMyChildren",
-  "I haven't got a voucher for all my children",
-  "",
-  `
-    <p>
-      Due to the protection of Free School Meals this can happen, transfer the call
-      through to the general Free School Meal line where their entitlement can be
-      checked.
-    </p>
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const childrenEntitledToFsm = new ContentSaC(
-  "childrenEntitledToFsm",
-  "I haven't received a voucher but I feel my children are entitled to Free School Meals",
-  "",
-  `
-    <p>
-      Check if they have applied for Free School Meals previously or does their
-      child already receive Free School Meal?
-    </p>
-    <p>
-      Take customers name, address ,telephone number, email address and name of
-      child and email this to <a>wintergrants@sheffield.gov.uk</a> with a short
-      explanation for the referral.
-    </p>
-    <p>
-      If not put them through to the general Free School Meals line to make an
-      application, but vouchers are only for those children already registered for
-      Free School Meals
-    </p>
-    <p>
-      If the parent is already registered for Free School Meals we will need to
-      check our information to see whether a voucher was sent out, what address it
-      was sent to, etc, before we can issue a replacement voucher, Refer this to
-      Audrey/Tracey or Sarah C or Annabel H.
-    </p>
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const noVoucherRecieved = new ContentSaC(
-  "noVoucherRecieved",
-  "I have not received a voucher for my child - they attend and Oasis Academy School (such as Don Valley, Fir Vale or Watermead",
-  "",
-  `
-    <p>
-      Unfortunately from the 1st of September Oasis Academy Schools decided to
-      manage their own Free School Meal provisions.
-    </p>
-    <p>
-      We have provided vouchers for all the children at these schools that we were
-      aware of up until the 1st of September, we will not know about the ones that
-      became eligible after the 1st of September.
-    </p>
-    <p>Parents will have to ask schools when they open.</p>
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const complexEnquiry = new ContentSaC(
-  "complexEnquiry",
-  "Complex Enquiry",
-  "",
-  `
-    <p>
-      Where possible complex enquiries should be referred to the Fulfilment Team
-      (Audrey/Tracey) who can pass this on to Sarah or Leah when needed.
-    </p>
-  `,
-  {
-    buttonLabel: "Apply for Free School Meals",
-    formName: "apply_school_meals",
-  },
-  { typeKey: "apply_school_meals_transfered_to_service" },
-  { typeKey: "apply_school_meals_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Free School Meals",
-      "Free Schhol Meals",
-      "Fre School Meals",
-      "Free Skool Meals",
-      "Free Shool Meals",
-      "Free Scool Meals",
-      "aply for free school meals",
-      "Applie for Free School Meals",
-      "Aply for Free School Meals",
-      "Apply for Fre School Meals",
-      "Apply for Free Shool Meals",
-      "Apply for Free Schol Meals",
-      "fre",
-      "frea",
-      "frre",
-      "frie",
-      "fee",
-      "scool",
-      "shcool",
-      "scholl",
-      "schol",
-      "schoool",
-      "meels",
-      "meals",
-      "mels",
-      "mealz",
-      "maelz",
-      "meel",
-      "mael",
-      "mial",
-      "mel",
-      "meall",
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "18/09/2024", name: "Dinal Willaims" }
-);
-
-const backgroundInformation = new ContentSaC(
-  "backgroundinformation",
-  "Background Information",
-  "",
+const schoolFoodVoucher = new ContentSaC(
+  "schoolFoodVoucher",
+  "School Food Voucher",
+  "How to redeem School Food Vouchers",
   `
     <p>
       22,500 letters sent to parents/carers with a unique eCode to exchange for a
@@ -1428,8 +435,176 @@ const backgroundInformation = new ContentSaC(
       both useful as references, these are available on the Edenred website:
     </p>
     <p>
-      <a>https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/</a>
+      <a
+        href="http://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/"
+        target="_blank"
+        >www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers</a
+      >
     </p>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Frequently Asked Questions</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <details class="details-accordion">
+          <summary>How do I redeem a voucher and spend it?</summary>
+          <div class="details-accordion-content">
+            <p>Please Note: that vouchers will be awarded at £15 per child</p>
+            <p>
+              You will have received a letter from us, the letter will contain a
+              unique 16 digit eCode the letter with the eCode will tell you how much
+              money the eCode is worth.
+            </p>
+            <p>
+              You need to go online to swap this code for an eGift card (an online
+              voucher).
+            </p>
+            <p>
+              You can redeem your eCode button on the website:
+              <a
+                href="https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/"
+                target="_blank"
+                >Free School Meals</a
+              >
+              <br />or you can visit:
+              <a href="http://www.selectyourcompliment.co.uk" target="_blank"
+                >www.selectyourcompliment.co.uk</a
+              >
+            </p>
+            <p>Enter the code into the box on the website and click Redeem</p>
+            <ol>
+              <li>Choose your supermarket</li>
+              <li>Choose the amount of money you want to order</li>
+              <li>Click on "Add to basket" to confirm your choices</li>
+              <li>Click on "Checkout" and enter your email address</li>
+              <li>
+                The eGift card (online vouchers) will be sent to your email address
+                within 24 hours
+              </li>
+              <li>If the email does not arrive, check your junk folder</li>
+              <li>The email will have the eGift card in it</li>
+              <li>
+                The eGift card has a barcode or a link to see a barcode online
+              </li>
+            </ol>
+            <p>
+              If you cannot see a barcode it could be because the pictures are not
+              showing. You may need to click on Download images to see the barcode.
+              You will need the barcode to use the eGift card to pay at the
+              supermarket.
+            </p>
+            <p>
+              Take the eGift card (online voucher) into the shop and show it at the
+              till to pay. you can show the eGift card on your mobile phone screen
+              or print it ou.t
+            </p>
+            <p>
+              After you have spent all the money on the eGift card (online voucher)
+              it cannot be used again. Please delete the email or throw away the
+              printed eGift card.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>
+            I dont have a smartphone or computer/laptop or cant access the voucher
+            and cant print it
+          </summary>
+          <div class="details-accordion-content">
+            <p>You can:</p>
+            <ul>
+              <li>
+                Talk the customer through the process over the phone following the
+                "How to redeem a voucher, and spend it".
+              </li>
+              <li>
+                Advise the customer to visit their local library who can help them
+                print the voucher.
+              </li>
+              <li>
+                Take the customer's 16 digit code and redeem the voucher for them
+                online, then print the voucher and post it to their address, however
+                this will cause a delay in their receiving the voucher.
+              </li>
+              <li>
+                The customer could wait till their school has reopened and request
+                assistance
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>I haven't got a voucher for all my children</summary>
+          <div class="details-accordion-content">
+            <p>
+              Due to the protection of Free School Meals this can happen, transfer
+              the call through to the general Free School Meal line where their
+              entitlement can be checked.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>
+            I haven't received a voucher but I feel my children are entitled to Free
+            School Meals
+          </summary>
+          <div class="details-accordion-content">
+            <p>
+              Check if they have applied for Free School Meals previously or does
+              their child already receive Free School Meal?
+            </p>
+            <p>
+              Take customers name, address ,telephone number, email address and name
+              of child and email this to
+              <a href="mailto:wintergrants@sheffield.gov.uk"
+                >wintergrants@sheffield.gov.uk</a
+              >
+              with a short explanation for the referral.
+            </p>
+            <p>
+              If not put them through to the general Free School Meals line to make
+              an application, but vouchers are only for those children already
+              registered for Free School Meals
+            </p>
+            <p>
+              If the parent is already registered for Free School Meals we will need
+              to check our information to see whether a voucher was sent out, what
+              address it was sent to, etc, before we can issue a replacement
+              voucher, Refer this to Audrey/Tracey or Sarah C or Annabel H.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>
+            I have not received a voucher for my child - they attend and Oasis
+            Academy School
+          </summary>
+          <div class="details-accordion-content">
+            <p>
+              Unfortunately from the 1st of September Oasis Academy Schools decided
+              to manage their own Free School Meal provisions.
+            </p>
+            <p>
+              We have provided vouchers for all the children at these schools that
+              we were aware of up until the 1st of September, we will not know about
+              the ones that became eligible after the 1st of September.
+            </p>
+            <p>Parents will have to ask schools when they open.</p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>Complex Enquiry</summary>
+          <div class="details-accordion-content">
+            <p>
+              Where possible complex enquiries should be referred to the Fulfilment
+              Team (Audrey/Tracey) who can pass this on to Sarah or Leah when
+              needed.
+            </p>
+          </div>
+        </details>
+      </div>
+    </details>
   `,
   {
     buttonLabel: "Apply for Free School Meals",
@@ -1478,44 +653,6 @@ const backgroundInformation = new ContentSaC(
   { date: "18/09/2024", name: "Dinal Willaims" }
 );
 
-const freeSchoolMeals = new MenuSaC(
-  "freeschoolmeals",
-  "Free School Meals",
-  "",
-  [eligibilityCriteriaForFreeSchoolMeals]
-);
-
-const freeSchoolMealsFaqs = new MenuSaC(
-  "freeSchoolMealsFaqs",
-  "FAQ's",
-  "Discreption",
-  [
-    changeInCircumstance,
-    childIsAtNurseryOrPrimarySchool,
-    childIsAtSecondarySchool,
-    childIsOver16,
-    afterIMakeMyApplication,
-    childAttendsAnacademy,
-    circumstancesChange,
-    childChangesSchool,
-  ]
-);
-
-const fsmVoucherInformation = new MenuSaC(
-  "fsmvoucherinformation",
-  "FSM Voucher Information",
-  "",
-  [
-    redeemVoucher,
-    noSmartPhoneAccess,
-    voucherForAllMyChildren,
-    childrenEntitledToFsm,
-    noVoucherRecieved,
-    complexEnquiry,
-    backgroundInformation,
-  ]
-);
-
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -1523,10 +660,5 @@ const schoolsAndChildcare = new ServiceSaC(
   "schoolsAndChildcare",
   "Schools and Childcare",
   `Admissions, catchment areas, find schools, school travel, attendance, childcare and nurseries, teaching jobs…`,
-  [
-    freeSchoolMeals,
-    fundedEarlyLearning,
-    fsmVoucherInformation,
-    freeSchoolMealsFaqs,
-  ]
+  [freeSchoolMeals, schoolFoodVoucher, fundedEarlyLearning]
 );
