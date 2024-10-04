@@ -82,20 +82,15 @@ const childTravelPasss = new ContentTaT(
         <details class="details-accordion">
           <summary>How is the distance from Home to School calculated?</summary>
           <div class="details-accordion-content">
-            <p>Travel South Yorkshire offer a pass for anyone aged between 16-18</p>
-            <p>Benefits include:</p>
-            <ul>
-              <li>Cheaper travel for work, school, college, or leisure.</li>
-              <li>
-                Travel anytime, anywhere in South Yorkshire for just 80p per journey
-                on bus or tram and half fare on Northern trains.
-              </li>
-              <li>
-                Valid through Summer months so you can enjoy cheaper travel in
-                August.
-              </li>
-              <li>Access money saving tickets for young people.</li>
-            </ul>
+            <p>
+              We measure the distance between the house and the school by using a mapping
+              tool. The maps will decide the most efficient route between the 2 points. It
+              may include a route that involves footpaths, bridleways, and other pathways,
+              as well as some recognised roads. A route will be viewed as ‘available’ even
+              if the child would need to be accompanied along it by his or her parent, as
+              long as such accompaniment is reasonably practicable from a road safety
+              perspective.
+            </p>
           </div>
         </details>
         <details class="details-accordion">
