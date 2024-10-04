@@ -512,7 +512,7 @@ const schoolFoodVoucher = new ContentSaC(
             and cant print it
           </summary>
           <div class="details-accordion-content">
-            <p>Options:</p>
+            <p>You can:</p>
             <ul>
               <li>
                 Talk the customer through the process over the phone following the

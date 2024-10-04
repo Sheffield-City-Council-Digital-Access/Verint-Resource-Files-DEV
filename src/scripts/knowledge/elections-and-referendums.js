@@ -91,7 +91,11 @@ const invitationToRegister = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: ["Register to vote", "Register", "Vote"],
+    categories: ["Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
