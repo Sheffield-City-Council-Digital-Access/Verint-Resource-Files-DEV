@@ -224,7 +224,12 @@ const blueBadge = new MenuP(
   "blueBadge",
   "Blue Badge",
   "Apply, replace or chance and existing application",
-  [applyBlueBadge, replacementBlueBadge, bluBadgeHolderPassedAway]
+  [
+    applyBlueBadge,
+    replacementBlueBadge,
+    bluBadgeHolderPassedAway,
+    appealBlueBadge,
+  ]
 );
 
 const businessPermit = new ContentP(
@@ -1021,8 +1026,9 @@ const visitorsPermits = new ContentP(
 const makingAPayment = new ContentP(
   "makingAPayment",
   "Making A Payment",
+  "",
   `
-<h2>Payment Enquiries</h2> 
+	<h2>Payment Enquiries</h2> 
     <h2>Making a Payment</h2> 
     <p>It is quick, safe, and secure to make a payment online or using our automated telephone payment line. To do this, you will need:</p> 
     <ul> 
@@ -1035,7 +1041,8 @@ const makingAPayment = new ContentP(
         <li>Pay at a pay point outlet by cash</li> 
         <li>Pay at a Post Office by cash, cheque, credit, or debit card</li> 
     </ul> 
-    <p>Sheffield does not accept cash, cheque, or postal orders direct.</p>`,
+    <p>Sheffield does not accept cash, cheque, or postal orders direct.</p>
+	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
