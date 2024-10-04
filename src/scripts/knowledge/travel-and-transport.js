@@ -61,11 +61,6 @@ const childTravelPasss = new ContentTaT(
   `
     <h3>Eligibility</h3>
     <p>ADD INFO</p>
-    <p>
-      From September 2025, eligible working parents of children from 9 months to
-      school age will be entitled to 30 hours of childcare a week
-    </p>
-
     <h3>Misplaced Passes</h3>
     <p>
       If your child has misplaced their pass, you can order a replacement from
