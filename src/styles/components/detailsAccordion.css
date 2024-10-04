@@ -40,9 +40,13 @@
   background: var(--color-white);
 }
 
-#dform_container .details-accordion-content > * {
+#dform_container .details-accordion-content p {
   border-left: solid 4px var(--color-grey-5);
   padding-block: 6px 10px;
   padding-inline: 19px 15px;
   margin: 0;
+}
+
+#dform_container .details-accordion-content > * {
+  border-left: solid 4px var(--color-grey-5);
 }
