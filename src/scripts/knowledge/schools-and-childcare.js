@@ -228,8 +228,6 @@ const freeSchoolMeals = new ContentSaC(
             </p>
           </div>
         </details>
-      </div>
-      <div class="accordion-content">
         <details class="details-accordion">
           <summary>
             What do I do if my child is at Nursery or Primary School?
@@ -251,8 +249,6 @@ const freeSchoolMeals = new ContentSaC(
             </p>
           </div>
         </details>
-      </div>
-      <div class="accordion-content">
         <details class="details-accordion">
           <summary>What do i do if my child is at Secondary School?</summary>
           <div class="details-accordion-content">
@@ -266,8 +262,6 @@ const freeSchoolMeals = new ContentSaC(
             </p>
           </div>
         </details>
-      </div>
-      <div class="accordion-content">
         <details class="details-accordion">
           <summary>What do I do if my child is over 16?</summary>
           <div class="details-accordion-content">
@@ -284,8 +278,6 @@ const freeSchoolMeals = new ContentSaC(
             </p>
           </div>
         </details>
-      </div>
-      <div class="accordion-content">
         <details class="details-accordion">
           <summary>What do do if my child attends an Academy?</summary>
           <div class="details-accordion-content">
@@ -300,8 +292,6 @@ const freeSchoolMeals = new ContentSaC(
             </p>
           </div>
         </details>
-      </div>
-      <div class="accordion-content">
         <details class="details-accordion">
           <summary>What happens after I make my application?</summary>
           <div class="details-accordion-content">
@@ -313,8 +303,6 @@ const freeSchoolMeals = new ContentSaC(
             </p>
           </div>
         </details>
-      </div>
-      <div class="accordion-content">
         <details class="details-accordion">
           <summary>What happens after I make my application?</summary>
           <div class="details-accordion-content">
@@ -326,8 +314,6 @@ const freeSchoolMeals = new ContentSaC(
             </p>
           </div>
         </details>
-      </div>
-      <div class="accordion-content">
         <details class="details-accordion">
           <summary>Can my claim be backdated?</summary>
           <div class="details-accordion-content">
@@ -339,8 +325,6 @@ const freeSchoolMeals = new ContentSaC(
             </p>
           </div>
         </details>
-      </div>
-      <div class="accordion-content">
         <details class="details-accordion">
           <summary>What if my child changes school?</summary>
           <div class="details-accordion-content">
@@ -351,8 +335,6 @@ const freeSchoolMeals = new ContentSaC(
             </p>
           </div>
         </details>
-      </div>
-      <div class="accordion-content">
         <details class="details-accordion">
           <summary>Do I have to renew my claim every year?</summary>
           <div class="details-accordion-content">
@@ -524,8 +506,6 @@ const schoolFoodVoucher = new ContentSaC(
             </p>
           </div>
         </details>
-      </div>
-      <div class="accordion-content">
         <details class="details-accordion">
           <summary>
             I dont have a smartphone or computer/laptop or cant access the voucher
@@ -554,8 +534,6 @@ const schoolFoodVoucher = new ContentSaC(
             </ul>
           </div>
         </details>
-      </div>
-      <div class="accordion-content">
         <details class="details-accordion">
           <summary>I haven't got a voucher for all my children</summary>
           <div class="details-accordion-content">
@@ -566,8 +544,6 @@ const schoolFoodVoucher = new ContentSaC(
             </p>
           </div>
         </details>
-      </div>
-      <div class="accordion-content">
         <details class="details-accordion">
           <summary>
             I haven't received a voucher but I feel my children are entitled to Free
@@ -599,8 +575,6 @@ const schoolFoodVoucher = new ContentSaC(
             </p>
           </div>
         </details>
-      </div>
-      <div class="accordion-content">
         <details class="details-accordion">
           <summary>
             I have not received a voucher for my child - they attend and Oasis
@@ -619,8 +593,6 @@ const schoolFoodVoucher = new ContentSaC(
             <p>Parents will have to ask schools when they open.</p>
           </div>
         </details>
-      </div>
-      <div class="accordion-content">
         <details class="details-accordion">
           <summary>Complex Enquiry</summary>
           <div class="details-accordion-content">
@@ -688,9 +660,5 @@ const schoolsAndChildcare = new ServiceSaC(
   "schoolsAndChildcare",
   "Schools and Childcare",
   `Admissions, catchment areas, find schools, school travel, attendance, childcare and nurseries, teaching jobs…`,
-  [
-    freeSchoolMeals,
-    schoolFoodVoucher,
-    fundedEarlyLearning
-  ]
+  [freeSchoolMeals, schoolFoodVoucher, fundedEarlyLearning]
 );
