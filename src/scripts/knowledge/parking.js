@@ -54,10 +54,10 @@ class FormP extends CoreP {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-const whocanApplyforaBlueBadge = new ContentP(
-  "whocanApplyforaBlueBadge",
-  "who can Apply for a Blue Badge",
-  "",
+const applyBlueBadge = new ContentP(
+  "applyBlueBadge",
+  "Apply for a Blue Badge",
+  "New and renewal badges",
   `<h3> Eligibility</h3>
 	  <p>
 		If the condition that the customer has a diagnosis for is not permanent and substantial 
@@ -97,7 +97,6 @@ const whocanApplyforaBlueBadge = new ContentP(
 		an assessment with an advisor to see if they qualify for a blue badge.
 	  </p>
 	`,
-
   { buttonLabel: "", formName: "" },
   { typeKey: "blue_badge_information_provided" },
   { typeKey: "blue_badge_tarnsferred_to_service" },
@@ -105,22 +104,22 @@ const whocanApplyforaBlueBadge = new ContentP(
   { date: "01/10/2024", name: "Shahzad Athar" }
 );
 
-const whatisHappeningwithmyBlueBadgeApplication = new ContentP(
-  "whatisHappeningwithmyBlueBadgeApplication",
-  "What is Happening with my Blue Badge Application",
+const chaseBlueBadgeApplication = new ContentP(
+  "chaseBlueBadgeApplication",
+  "Chase a Blude Badge Application",
   "",
   `<h3> Update/Chasing Application</h3>
 	  <p>
-		You may be able to provide the customer with an update to their application using the case notes 
-		or status update. All cases will be dealt with in date order, there are no exceptions to this 
-		regardless of circumstances so do not raise requests of this nature to FFT. Blue Badge applications 
-		will be assessed within 28 days calendar days from the date the application was received. 
-		The order date of the blue badge is not the despatch date from our 3rd party who produce the 
-		Blue Badge.
-	  </p>
-	  <p>
-		Once Sheffield City Council have ordered the Blue Badge the 3rd Party have 5 working days to 
-		despatch and weekends need to be taken into account.
+			You may be able to provide the customer with an update to their application using the case notes 
+			or status update. All cases will be dealt with in date order, there are no exceptions to this 
+			regardless of circumstances so do not raise requests of this nature to FFT. Blue Badge applications 
+			will be assessed within 28 days calendar days from the date the application was received. 
+			The order date of the blue badge is not the despatch date from our 3rd party who produce the 
+			Blue Badge.
+		</p>
+		<p>
+			Once Sheffield City Council have ordered the Blue Badge the 3rd Party have 5 working days to 
+			despatch and weekends need to be taken into account.
 	  </p>
 	`,
 
@@ -134,11 +133,11 @@ const whatisHappeningwithmyBlueBadgeApplication = new ContentP(
 const lostorStolenBlueBadge = new ContentP(
   "lostorStolenBlueBadge",
   "Lost or Stolen Blue Badge",
-  "",
+  "Request a replacement badge",
   `<h3>Requesting a Replacement Badge</h3>
 	  <p>
-		If a badge is lost or stolen we now require a form to be completed with a signature. 
-		The form is available online to print or alternatively a form can be sent out via 2nd post.
+			If a badge is lost or stolen we now require a form to be completed with a signature. 
+			The form is available online to print or alternatively a form can be sent out via 2nd post.
 	  </p>
 	`,
 
@@ -149,22 +148,23 @@ const lostorStolenBlueBadge = new ContentP(
   { date: "01/10/2024", name: "Shahzad Athar" }
 );
 
-const blueBadgetakenbyanEnforcementOfficer = new ContentP(
-  "blueBadgetakenbyanEnforcementOfficer",
-  "Blue Badge taken by an Enforcement Officer",
-  "",
+const seizedBlueBadge = new ContentP(
+  "seizedBlueBadge",
+  "Seized Blue Badge",
+  "Badges seized by an enforcement officer",
   `
-		<h3>Requesting a Replacement Badge</h3>
 		<p>
-			If your Blue Badge has been confiscated by an Enforcement Officer, please
-			follow these steps:
+			If your Blue Badge has been confiscated by an Enforcement Officer,
+			you will nee to:
 		</p>
 		<p>
 			Send an e-mail to
 			<a href="mailto:customerservices@sheffield.gov.uk" target="_blank"
 				>customerservices@sheffield.gov.uk</a
 			>
-			or send a letter to:
+		</p>
+		<p>
+			Or send a letter to:
 		</p>
 		<address>
 			Customer Services<br />
@@ -188,10 +188,10 @@ const blueBadgetakenbyanEnforcementOfficer = new ContentP(
   { date: "01/10/2024", name: "Shahzad Athar" }
 );
 
-const whoshouldIReportaboutaDeath = new ContentP(
-  "whoshouldIReportaboutaDeath",
-  "Who should I Report about a Death",
-  "",
+const bluBadgeHolderPassedAway = new ContentP(
+  "bluBadgeHolderPassedAway",
+  "Badge Holder Passed Away",
+  "Let us know the badge holder has passed away",
   `
 		<p>
 			If the customer has an appointment with Registrars in Sheffield to report the
@@ -216,13 +216,18 @@ const whoshouldIReportaboutaDeath = new ContentP(
   { date: "01/10/2024", name: "Shahzad Athar" }
 );
 
-const blueBadge = new MenuP("blueBadge", "Blue Badge", "", [
-  whocanApplyforaBlueBadge,
-  whatisHappeningwithmyBlueBadgeApplication,
-  lostorStolenBlueBadge,
-  blueBadgetakenbyanEnforcementOfficer,
-  whoshouldIReportaboutaDeath,
-]);
+const blueBadge = new MenuP(
+  "blueBadge",
+  "Blue Badge",
+  "Apply, replace or chance and existing application",
+  [
+    applyBlueBadge,
+    chaseBlueBadgeApplication,
+    lostorStolenBlueBadge,
+    seizedBlueBadge,
+    bluBadgeHolderPassedAway,
+  ]
+);
 
 const businessPermit = new ContentP(
   "businessPermit",
