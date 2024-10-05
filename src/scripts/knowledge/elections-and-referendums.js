@@ -1553,15 +1553,6 @@ const wards = new ContentEaR(
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
-const topEnquiries = new MenuEaR("topEnquiries", "Top Enquiries", "", [
-  annualCanvas,
-  electionResults,
-  whereICanVote,
-  councillors,
-  familyTreeorGenealogy,
-  wards,
-]);
-
 const reportHedgePlantGrass2 = new ContentEaR(
   "reportHedgePlantGrass2",
   "Hedges, plants or grassed areas",
@@ -1581,6 +1572,16 @@ const reportHedgePlantGrass2 = new ContentEaR(
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
+const topEnquiries = new MenuEaR("topEnquiries", "Top Enquiries", "", [
+  annualCanvas,
+  electionResults,
+  whereICanVote,
+  councillors,
+  familyTreeorGenealogy,
+  wards,
+  reportHedgePlantGrass2,
+]);
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -1589,11 +1590,11 @@ const electionsAndReferendums = new ServiceEaR(
   "Elections and Referendums",
   `General elections, local elections, by-election, mayoral election, police and crime commissioner, referendums and voting`,
   [
-    reportHedgePlantGrass2,
     registeringToVote,
     annualCanvasMenu,
     postalorProxyVoting,
     electionsAndVoting,
     topEnquiries,
+    wards,
   ]
 );
