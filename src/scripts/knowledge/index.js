@@ -1300,7 +1300,22 @@ function handleOnReadyKnowledge() {
     if (!results || results.length === 0) {
       const noResultsMessage = document.createElement("div");
       noResultsMessage.classList.add("no-results-message");
-      noResultsMessage.textContent = "No results found";
+
+      noResultsMessage.innerHTML = `
+        <h3>No results found</h3>
+        <p>Sorry, we couldn't find any results for "${searchQuery}". Here are a few suggestions:</p>
+        <ul>
+          <li>Check your spelling and try again</li>
+          <li>Try using more general keywords</li>
+          <li>Consider using different words or phrases</li>
+        </ul>
+        <p>
+          If you're still having trouble, 
+          <a href="https://sheffieldcc-it.uk.4me.com/self-service/requests/new/provide_description?template_id=681s">contact us</a>
+           for assistance.
+        </p>
+      `;
+
       resultsContainer.appendChild(noResultsMessage);
       return;
     }
