@@ -682,6 +682,12 @@ function handleInitialisingKnowledge() {
       // Add click event listener for navigation
       // This logs the user journey and navigates to the appropriate page
       button.addEventListener("click", () => {
+        // Clear the search input
+        const searchInput = document.getElementById("search-input");
+        if (searchInput) {
+          searchInput.value = "";
+        }
+
         logUserJourney("Navigate", `Navigated to ${item.label}`);
         KDF.gotoPage(item.page, true, true, true);
       });
@@ -1298,6 +1304,7 @@ function handleOnReadyKnowledge() {
     resultsContainer.innerHTML = "";
 
     if (!results || results.length === 0) {
+      const searchQuery = document.getElementById("search-input").value;
       const noResultsMessage = document.createElement("div");
       noResultsMessage.classList.add("no-results-message");
 
