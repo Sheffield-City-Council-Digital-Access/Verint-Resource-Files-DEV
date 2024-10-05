@@ -1214,7 +1214,7 @@ function handleOnReadyKnowledge() {
     .off("click")
     .on("click", function () {
       const formName = $(this).data("form-name");
-      
+
       if (!formName) {
         alert("Unable to launch the process. Form information is missing.");
         return;
@@ -1450,41 +1450,37 @@ function handleOnReadyKnowledge() {
             }
 
             // Handle Forms
-            if (subject.forms) {
-              subject.forms.forEach((form) => {
-                if (!addedItemIds.has(form.id)) {
-                  const card = document.createElement("div");
-                  card.classList.add("search-card");
-                  card.setAttribute("tabindex", "0");
+            if (subject.formName && !addedItemIds.has(subject.id)) {
+              const card = document.createElement("div");
+              card.classList.add("search-card");
+              card.setAttribute("tabindex", "0");
 
-                  const title = document.createElement("h3");
-                  title.textContent = form.name;
+              const title = document.createElement("h3");
+              title.textContent = subject.name;
 
-                  const description = document.createElement("div");
-                  description.innerHTML = form.description;
+              const description = document.createElement("div");
+              description.innerHTML = subject.description;
 
-                  card.appendChild(title);
-                  card.appendChild(description);
+              card.appendChild(title);
+              card.appendChild(description);
 
-                  card.dataset.option = JSON.stringify({
-                    id: form.id,
-                    name: form.name,
-                    description: form.description,
-                    formName: form.formName,
-                    meta: form.meta,
-                    lastModified: form.lastModified,
-                    serviceName: service.name,
-                    type: "form", // Explicit type
-                  });
-
-                  options.push(card);
-                  addedItemIds.add(form.id);
-
-                  if (form.name) {
-                    visibleLetters.add(form.name[0].toUpperCase());
-                  }
-                }
+              card.dataset.option = JSON.stringify({
+                id: subject.id,
+                name: subject.name,
+                description: subject.description,
+                formName: subject.formName,
+                meta: subject.meta,
+                lastModified: subject.lastModified,
+                serviceName: service.name,
+                type: "form", // Explicit type
               });
+
+              options.push(card);
+              addedItemIds.add(subject.id);
+
+              if (subject.name) {
+                visibleLetters.add(subject.name[0].toUpperCase());
+              }
             }
 
             // Handle Topics
