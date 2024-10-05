@@ -953,7 +953,13 @@ function handleOnReadyKnowledge() {
       return (
         (item.title && regex.test(item.title)) ||
         (item.description && regex.test(item.description)) ||
-        (item.content && regex.test(item.content))
+        (item.content && regex.test(item.content)) ||
+        (item.meta &&
+          ((item.meta.type && regex.test(item.meta.type)) ||
+            (Array.isArray(item.meta.keywords) &&
+              item.meta.keywords.some((keyword) => regex.test(keyword))) ||
+            (Array.isArray(item.meta.categories) &&
+              item.meta.categories.some((category) => regex.test(category)))))
       );
     });
 
@@ -989,7 +995,7 @@ function handleOnReadyKnowledge() {
       if (item.title) {
         const matches = item.title.match(regexPhrase);
         if (matches) {
-          relevance += 100 * matches.length; // Significant boost for each exact phrase match in title
+          relevance += 100 * matches.length; // Significant boost for exact phrase match in title
           console.log(
             `Exact phrase "${phrase}" found in title of "${item.title}"`
           );
@@ -1000,21 +1006,61 @@ function handleOnReadyKnowledge() {
       if (item.description) {
         const matches = item.description.match(regexPhrase);
         if (matches) {
-          relevance += 60 * matches.length; // Medium boost for each exact phrase match in description
+          relevance += 60 * matches.length; // Medium boost for exact phrase match in description
           console.log(
             `Exact phrase "${phrase}" found in description of "${item.description}"`
           );
         }
       }
 
-      // Match in Content
+      // Match in Content (only for ContentPaN)
       if (item.content) {
         const matches = item.content.match(regexPhrase);
         if (matches) {
-          relevance += 20 * matches.length; // Lower boost for each exact phrase match in content
+          relevance += 20 * matches.length; // Lower boost for exact phrase match in content
           console.log(
             `Exact phrase "${phrase}" found in content of item with ID "${item.id}"`
           );
+        }
+      }
+
+      // Match in Metadata (only for FormPaN)
+      if (item.meta) {
+        // Match in meta.type
+        if (item.meta.type) {
+          const matchesType = item.meta.type.match(regexPhrase);
+          if (matchesType) {
+            relevance += 80 * matchesType.length; // Boost for meta.type matches
+            console.log(
+              `Exact phrase "${phrase}" found in meta.type of item with ID "${item.id}"`
+            );
+          }
+        }
+
+        // Match in meta.keywords (Array)
+        if (Array.isArray(item.meta.keywords)) {
+          item.meta.keywords.forEach((keyword) => {
+            const matchesKeyword = keyword.match(regexPhrase);
+            if (matchesKeyword) {
+              relevance += 70 * matchesKeyword.length; // Boost for each keyword match
+              console.log(
+                `Exact phrase "${phrase}" found in meta.keywords of item with ID "${item.id}"`
+              );
+            }
+          });
+        }
+
+        // Match in meta.categories (Array)
+        if (Array.isArray(item.meta.categories)) {
+          item.meta.categories.forEach((category) => {
+            const matchesCategory = category.match(regexPhrase);
+            if (matchesCategory) {
+              relevance += 50 * matchesCategory.length; // Boost for each category match
+              console.log(
+                `Exact phrase "${phrase}" found in meta.categories of item with ID "${item.id}"`
+              );
+            }
+          });
         }
       }
 
@@ -1052,7 +1098,7 @@ function handleOnReadyKnowledge() {
         }
       }
 
-      // Match in Content
+      // Match in Content (only for ContentPaN)
       if (item.content) {
         const matches = item.content.match(regexTerm);
         if (matches) {
@@ -1060,6 +1106,46 @@ function handleOnReadyKnowledge() {
           console.log(
             `Term "${term}" found ${matches.length} time(s) in content of item with ID "${item.id}"`
           );
+        }
+      }
+
+      // Match in Metadata (only for FormPaN)
+      if (item.meta) {
+        // Match in meta.type
+        if (item.meta.type) {
+          const matchesType = item.meta.type.match(regexTerm);
+          if (matchesType) {
+            relevance += 8 * matchesType.length; // Boost for meta.type matches
+            console.log(
+              `Term "${term}" found in meta.type of item with ID "${item.id}"`
+            );
+          }
+        }
+
+        // Match in meta.keywords (Array)
+        if (Array.isArray(item.meta.keywords)) {
+          item.meta.keywords.forEach((keyword) => {
+            const matchesKeyword = keyword.match(regexTerm);
+            if (matchesKeyword) {
+              relevance += 7 * matchesKeyword.length; // Boost for each keyword match
+              console.log(
+                `Term "${term}" found in meta.keywords of item with ID "${item.id}"`
+              );
+            }
+          });
+        }
+
+        // Match in meta.categories (Array)
+        if (Array.isArray(item.meta.categories)) {
+          item.meta.categories.forEach((category) => {
+            const matchesCategory = category.match(regexTerm);
+            if (matchesCategory) {
+              relevance += 5 * matchesCategory.length; // Boost for each category match
+              console.log(
+                `Term "${term}" found in meta.categories of item with ID "${item.id}"`
+              );
+            }
+          });
         }
       }
     });
