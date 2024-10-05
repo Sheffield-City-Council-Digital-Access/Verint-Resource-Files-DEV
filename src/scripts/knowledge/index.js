@@ -932,32 +932,6 @@ function handleOnReadyKnowledge() {
   // --- SEARCH ------------------------------------------------------------- \\
 
   /**
-   * Renders search results to the console for debugging purposes.
-   * @param {Array} results - The array of search results.
-   */
-  function debugSearchResults(results) {
-    console.log("---- Search Results ----");
-    results.forEach((item, index) => {
-      console.log(`${index + 1}. Type: ${item.type}`);
-      console.log(`   Service Name: ${item.serviceName || "N/A"}`);
-      console.log(`   Title: ${item.title}`);
-      console.log(`   Description: ${item.description}`);
-      console.log(`   Relevance: ${item.relevance}`);
-      console.log("-------------------------");
-    });
-  }
-
-  /**
-   * Main search handler that triggers the search and displays results.
-   * @param {string} query - The user's search query.
-   */
-  function handleSearch(query) {
-    const results = searchKnowledge(knowledge, latestNews, query);
-    debugSearchResults(results);
-    renderSearchResults(results, searchTerms, searchPhrases); // Ensure searchTerms and searchPhrases are accessible
-  }
-
-  /**
    * Escapes special characters in a string for use in a regex.
    * @param {string} string - The string to escape.
    * @returns {string} - The escaped string.
@@ -1190,8 +1164,6 @@ function handleOnReadyKnowledge() {
     if (!Array.isArray(knowledge) || !Array.isArray(latestNews)) {
       return [];
     }
-
-    handleSearch(searchQuery);
 
     // Split searchQuery into terms and phrases
     const phrasePattern = /"([^"]+)"/g;
