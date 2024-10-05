@@ -1310,7 +1310,8 @@ function handleOnReadyKnowledge() {
 
       noResultsMessage.innerHTML = `
         <h3>No results found</h3>
-        <p>Sorry, we couldn't find any results for "${searchQuery}". Here are a few suggestions:</p>
+        <p>Sorry, we couldn't find any results for "${searchQuery}".</p>
+        <p>Here are a few suggestions:</p>
         <ul>
           <li>Check your spelling and try again</li>
           <li>Try using more general keywords</li>
