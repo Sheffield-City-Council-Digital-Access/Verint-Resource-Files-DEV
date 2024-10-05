@@ -179,7 +179,7 @@ const lostMyInvitationToRegister = new ContentEaR(
 const registerToVote = new ContentEaR(
   "registerToVote",
   "Register To Vote",
-  "",
+  "Register To Vote",
   `
     <p>
       Everyone is responsible for registering themselves. This is called Individual
