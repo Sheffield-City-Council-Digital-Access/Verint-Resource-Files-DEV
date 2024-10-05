@@ -959,6 +959,9 @@ function handleOnReadyKnowledge() {
 
     if (allTermsPresent) {
       relevance += 50; // Significant boost if all terms are present
+      console.log(
+        `All terms present in item with ID "${item.id}". Boosted relevance by 50.`
+      );
     }
 
     return relevance;
@@ -974,57 +977,89 @@ function handleOnReadyKnowledge() {
   const calculateRelevance = (item, searchTerms, searchPhrases) => {
     let relevance = 0;
 
-    // Handle phrases first
+    // Handle exact phrase matches first
     searchPhrases.forEach((phrase) => {
       if (phrase.length < 2) return; // Skip very short phrases
 
       const escapedPhrase = escapeRegExp(phrase);
-      // Allow optional 's' at the end of the phrase
+      // Create regex to match the exact phrase with optional 's' at the end
       const regexPhrase = new RegExp(`\\b${escapedPhrase}(s)?\\b`, "gi");
 
-      if (item.title && regexPhrase.test(item.title)) {
-        relevance += 100; // High boost for exact phrase in title
+      // Match in Title
+      if (item.title) {
+        const matches = item.title.match(regexPhrase);
+        if (matches) {
+          relevance += 100 * matches.length; // Significant boost for each exact phrase match in title
+          console.log(
+            `Exact phrase "${phrase}" found in title of "${item.title}"`
+          );
+        }
       }
 
-      if (item.description && regexPhrase.test(item.description)) {
-        relevance += 60; // Medium boost for exact phrase in description
+      // Match in Description
+      if (item.description) {
+        const matches = item.description.match(regexPhrase);
+        if (matches) {
+          relevance += 60 * matches.length; // Medium boost for each exact phrase match in description
+          console.log(
+            `Exact phrase "${phrase}" found in description of "${item.description}"`
+          );
+        }
       }
 
-      if (item.content && regexPhrase.test(item.content)) {
-        relevance += 20; // Lower boost for exact phrase in content
+      // Match in Content
+      if (item.content) {
+        const matches = item.content.match(regexPhrase);
+        if (matches) {
+          relevance += 20 * matches.length; // Lower boost for each exact phrase match in content
+          console.log(
+            `Exact phrase "${phrase}" found in content of item with ID "${item.id}"`
+          );
+        }
       }
 
-      // Enhance relevance if all terms are present
+      // Enhance relevance if all search terms are present
       relevance = enhanceRelevanceForCoOccurrence(relevance, item, searchTerms);
     });
 
-    // Handle individual terms
+    // Handle individual term matches
     searchTerms.forEach((term) => {
       if (term.length < 2) return; // Skip very short terms
 
       const escapedTerm = escapeRegExp(term);
-      // Allow optional 's' at the end of the term
+      // Create regex to match the term with optional 's' at the end
       const regexTerm = new RegExp(`\\b${escapedTerm}(s)?\\b`, "gi");
 
-      // Count occurrences in each field
+      // Match in Title
       if (item.title) {
         const matches = item.title.match(regexTerm);
         if (matches) {
           relevance += 10 * matches.length; // Higher weight for title matches
+          console.log(
+            `Term "${term}" found ${matches.length} time(s) in title of "${item.title}"`
+          );
         }
       }
 
+      // Match in Description
       if (item.description) {
         const matches = item.description.match(regexTerm);
         if (matches) {
           relevance += 6 * matches.length; // Medium weight for description matches
+          console.log(
+            `Term "${term}" found ${matches.length} time(s) in description of "${item.description}"`
+          );
         }
       }
 
+      // Match in Content
       if (item.content) {
         const matches = item.content.match(regexTerm);
         if (matches) {
           relevance += 2 * matches.length; // Lower weight for content matches
+          console.log(
+            `Term "${term}" found ${matches.length} time(s) in content of item with ID "${item.id}"`
+          );
         }
       }
     });
@@ -1059,6 +1094,15 @@ function handleOnReadyKnowledge() {
       .toLowerCase()
       .split(" ")
       .filter((term) => term.length >= 2);
+
+    // Always include the entire search query as a phrase if it's multi-word
+    const additionalPhrase = tempQuery.trim();
+    if (
+      additionalPhrase.length >= 2 &&
+      additionalPhrase.split(" ").length >= 2
+    ) {
+      searchPhrases.push(additionalPhrase);
+    }
 
     const searchableItems = knowledge.flatMap((service) =>
       service.subjects
