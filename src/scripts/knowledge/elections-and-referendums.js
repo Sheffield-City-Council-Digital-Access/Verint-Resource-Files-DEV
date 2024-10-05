@@ -1562,6 +1562,25 @@ const topEnquiries = new MenuEaR("topEnquiries", "Top Enquiries", "", [
   wards,
 ]);
 
+const reportHedgePlantGrass2 = new ContentEaR(
+  "reportHedgePlantGrass2",
+  "Hedges, plants or grassed areas",
+  "Reports problems such as overgrown, dead or diseased, and damaged vegetation",
+  `## needs information around grass cutting schedule ##`,
+  {
+    buttonLabel: "Report a hedge, plant or grass",
+    formName: "hedge_plant_grass",
+  },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Report",
+    keywords: ["Hedge", "plant", "grass"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -1570,6 +1589,7 @@ const electionsAndReferendums = new ServiceEaR(
   "Elections and Referendums",
   `General elections, local elections, by-election, mayoral election, police and crime commissioner, referendums and voting`,
   [
+    reportHedgePlantGrass2,
     registeringToVote,
     annualCanvasMenu,
     postalorProxyVoting,

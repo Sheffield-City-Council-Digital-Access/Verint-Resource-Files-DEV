@@ -226,10 +226,6 @@ function createCards(data, container, parent = null) {
     });
 }
 
-// src/scripts/knowledge/index.js
-
-// src/scripts/knowledge/index.js
-
 /**
  * Redirects the user to the content page and updates breadcrumbs based on the item's hierarchy.
  * @param {Object} item - The content item being displayed.
