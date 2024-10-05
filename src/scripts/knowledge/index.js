@@ -1211,7 +1211,14 @@ function handleOnReadyKnowledge() {
         .flatMap((subject) => {
           if (subject.constructor.name.startsWith("Menu")) {
             // Route 2: Traverse into Topics
-            return subject.items
+            if (!Array.isArray(subject.topics)) {
+              console.warn(
+                `Expected 'topics' array in MenuEaR with ID "${subject.id}", but found undefined.`
+              );
+              return [];
+            }
+
+            return subject.topics
               .filter(
                 (topic) =>
                   topic.constructor.name.startsWith("Content") ||
@@ -1285,7 +1292,7 @@ function handleOnReadyKnowledge() {
 
     return results;
   }
-  
+
   function renderSearchResults(results) {
     const resultsContainer = document.getElementById("search-results");
     resultsContainer.innerHTML = "";
