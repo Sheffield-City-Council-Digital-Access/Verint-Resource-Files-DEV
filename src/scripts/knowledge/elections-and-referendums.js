@@ -97,7 +97,7 @@ const invitationToRegister = new ContentEaR(
   { typeKey: "registering_to_vote_transferred_to_service" },
   {
     type: "Request",
-    keywords: ["Register", "Vote", "Voting"],
+    keywords: [],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "23/09/2024", name: "Shahzad Athar" }
@@ -197,7 +197,7 @@ const registerToVote = new ContentEaR(
   { typeKey: "registering_to_vote_transferred_to_service" },
   {
     type: "Request",
-    keywords: [],
+    keywords: ["Register", "Vote", "Voting"],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "23/09/2024", name: "Shahzad Athar" }
