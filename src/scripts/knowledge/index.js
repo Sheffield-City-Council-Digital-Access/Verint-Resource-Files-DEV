@@ -949,7 +949,7 @@ function handleOnReadyKnowledge() {
    */
   const enhanceRelevanceForCoOccurrence = (relevance, item, searchTerms) => {
     const allTermsPresent = searchTerms.every((term) => {
-      const regex = new RegExp(`\\b${escapeRegExp(term)}\\b`, "i");
+      const regex = new RegExp(`\\b${escapeRegExp(term)}(s)?\\b`, "i");
       return (
         (item.title && regex.test(item.title)) ||
         (item.description && regex.test(item.description)) ||
@@ -979,7 +979,8 @@ function handleOnReadyKnowledge() {
       if (phrase.length < 2) return; // Skip very short phrases
 
       const escapedPhrase = escapeRegExp(phrase);
-      const regexPhrase = new RegExp(`\\b${escapedPhrase}\\b`, "gi");
+      // Allow optional 's' at the end of the term
+      const regexPhrase = new RegExp(`\\b${escapedPhrase}(s)?\\b`, "gi");
 
       if (item.title && regexPhrase.test(item.title)) {
         relevance += 50; // High weight for exact phrase in title
@@ -1002,7 +1003,8 @@ function handleOnReadyKnowledge() {
       if (term.length < 2) return; // Skip very short terms
 
       const escapedTerm = escapeRegExp(term);
-      const regexTerm = new RegExp(`\\b${escapedTerm}\\b`, "gi");
+      // Allow optional 's' at the end of the term
+      const regexTerm = new RegExp(`\\b${escapedTerm}(s)?\\b`, "gi");
 
       // Title matches carry more weight
       if (item.title && regexTerm.test(item.title)) {
