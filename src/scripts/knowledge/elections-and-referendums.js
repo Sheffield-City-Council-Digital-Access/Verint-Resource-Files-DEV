@@ -73,7 +73,11 @@ const informationInDifferentFormats = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
@@ -93,8 +97,8 @@ const invitationToRegister = new ContentEaR(
   { typeKey: "registering_to_vote_transferred_to_service" },
   {
     type: "Request",
-    keywords: ["Register to vote", "Register", "Vote"],
-    categories: ["Electoral"],
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -116,7 +120,11 @@ const movingHomeorMovedHome = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
@@ -137,7 +145,11 @@ const includeSomeoneElseontheRegisterForm = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
@@ -156,7 +168,11 @@ const lostMyInvitationToRegister = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
@@ -179,7 +195,11 @@ const registerToVote = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: ["Register", "Vote", "Voting"],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
@@ -197,7 +217,11 @@ const requestforEvidenceLetter = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
@@ -224,7 +248,11 @@ const revisionstoTheElectoralRegister = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
@@ -243,7 +271,11 @@ const useofEmailAddressandPhoneNumber = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
@@ -261,7 +293,11 @@ const changeofNameonTheRegister = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
@@ -289,7 +325,11 @@ const creditReferencingAgencies = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
@@ -309,7 +349,11 @@ const doINeedToRegister = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
@@ -326,7 +370,11 @@ const doINeedToReRegisterEachYear = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
@@ -345,7 +393,11 @@ const successfulOnlineRegistration = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
@@ -367,7 +419,11 @@ const incorrectDetailsOnElectoralRegister = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
@@ -391,7 +447,11 @@ const optOutofTheOpenRegister = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
 
@@ -410,7 +470,11 @@ const electoralRegisterConfirmationLetter = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
 
@@ -428,7 +492,11 @@ const requestOtherElectionsReferral = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
 
@@ -455,7 +523,11 @@ const archiveCopies = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
 
@@ -474,7 +546,11 @@ const changeofAddressForm = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
 
@@ -492,7 +568,11 @@ const needToIncludeEmailAddressandPhoneNumber = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_information_provided" },
   { typeKey: "registering_to_vote_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
 
@@ -570,7 +650,11 @@ const ccaCCBForms = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "annual_canvass_information_provided" },
   { typeKey: "annual_canvass_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
 
@@ -605,7 +689,11 @@ const canvassForm = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "annual_canvass_information_provided" },
   { typeKey: "annual_canvass_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "24/09/2024", name: "Shahzad Athar" }
 );
 
@@ -640,7 +728,11 @@ const ccaCCBorCanvassForms = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "annual_canvass_information_provided" },
   { typeKey: "annual_canvass_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -666,7 +758,11 @@ const lostCCACCBorCanvassForm = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "annual_canvass_information_provided" },
   { typeKey: "annual_canvass_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -691,7 +787,11 @@ const studentVoters = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "annual_canvass_information_provided" },
   { typeKey: "annual_canvass_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -721,7 +821,11 @@ const removalFromRegister = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "annual_canvass_information_provided" },
   { typeKey: "annual_canvass_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -746,7 +850,11 @@ const informationChangeandHowToUpdateIt = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "annual_canvass_information_provided" },
   { typeKey: "annual_canvass_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -784,7 +892,11 @@ const swappingFromPostalToProxyVoting = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "postal_or_proxy_voting_information_provided" },
   { typeKey: "postal_or_proxy_voting_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -808,7 +920,11 @@ const swappingFromProxyToPostalVoting = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "postal_or_proxy_voting_information_provided" },
   { typeKey: "postal_or_proxy_voting_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -831,7 +947,11 @@ const postalVoteNotReceivedorLost = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "postal_or_proxy_voting_information_provided" },
   { typeKey: "postal_or_proxy_voting_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -856,7 +976,11 @@ const postalProxyVote = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "postal_or_proxy_voting_information_provided" },
   { typeKey: "postal_or_proxy_voting_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -888,7 +1012,11 @@ const applyingForPostalVote = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "postal_or_proxy_voting_information_provided" },
   { typeKey: "postal_or_proxy_voting_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -917,7 +1045,11 @@ const requestproxyVote = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "postal_or_proxy_voting_information_provided" },
   { typeKey: "postal_or_proxy_voting_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -936,7 +1068,11 @@ const waiverApplication = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "postal_or_proxy_voting_information_provided" },
   { typeKey: "postal_or_proxy_voting_transferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -967,7 +1103,11 @@ const whereDoIVote = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "elections_and_voting_information_provided" },
   { typeKey: "elections_and_voting_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -996,7 +1136,11 @@ const assistanceForPartiallySightedVoters = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "elections_and_voting_information_provided" },
   { typeKey: "elections_and_voting_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -1012,7 +1156,11 @@ const howToCompletePostalVote = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "elections_and_voting_information_provided" },
   { typeKey: "elections_and_voting_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -1059,7 +1207,11 @@ const postalVoteNoLongerRequired = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "elections_and_voting_information_provided" },
   { typeKey: "elections_and_voting_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -1080,7 +1232,11 @@ const postalVoteReceivedButNotRequested = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "elections_and_voting_information_provided" },
   { typeKey: "elections_and_voting_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -1100,7 +1256,11 @@ const postalVoteSendingAbroad = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "elections_and_voting_information_provided" },
   { typeKey: "elections_and_voting_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -1134,7 +1294,11 @@ const spoiltorDamagedPostalVote = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "elections_and_voting_information_provided" },
   { typeKey: "elections_and_voting_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -1157,7 +1321,11 @@ const localElections = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "elections_and_voting_information_provided" },
   { typeKey: "elections_and_voting_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -1195,7 +1363,11 @@ const parishElections = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "elections_and_voting_information_provided" },
   { typeKey: "elections_and_voting_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -1254,7 +1426,11 @@ const annualCanvas = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -1270,7 +1446,11 @@ const electionResults = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -1286,7 +1466,11 @@ const whereICanVote = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -1308,7 +1492,11 @@ const councillors = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -1330,7 +1518,11 @@ const familyTreeorGenealogy = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
@@ -1353,7 +1545,11 @@ const wards = new ContentEaR(
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Electoral"] },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 

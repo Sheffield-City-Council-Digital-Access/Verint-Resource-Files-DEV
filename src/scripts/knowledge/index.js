@@ -576,8 +576,7 @@ function redirectToFormPage(item) {
     ? `customerid=${KDF.getParams().customerid}&`
     : "";
   const interactionid = `interactionid=${KDF.getParams().interactionid}`;
-  console.log(item, formName);
-  // window.location.href = `${url}${formName}?${customerid}${interactionid}`;
+  window.location.href = `${url}${formName}?${customerid}${interactionid}`;
 }
 
 /**
@@ -950,16 +949,25 @@ function handleOnReadyKnowledge() {
    */
   const enhanceRelevanceForCoOccurrence = (relevance, item, searchTerms) => {
     const allTermsPresent = searchTerms.every((term) => {
-      const regex = new RegExp(`\\b${escapeRegExp(term)}\\b`, "i");
+      const regex = new RegExp(`\\b${escapeRegExp(term)}(s)?\\b`, "i");
       return (
         (item.title && regex.test(item.title)) ||
         (item.description && regex.test(item.description)) ||
-        (item.content && regex.test(item.content))
+        (item.content && regex.test(item.content)) ||
+        (item.meta &&
+          ((item.meta.type && regex.test(item.meta.type)) ||
+            (Array.isArray(item.meta.keywords) &&
+              item.meta.keywords.some((keyword) => regex.test(keyword))) ||
+            (Array.isArray(item.meta.categories) &&
+              item.meta.categories.some((category) => regex.test(category)))))
       );
     });
 
     if (allTermsPresent) {
-      relevance += 10; // Boost for all terms found
+      relevance += 50; // Significant boost if all terms are present
+      console.log(
+        `All terms present in item with ID "${item.id}". Boosted relevance by 50.`
+      );
     }
 
     return relevance;
@@ -975,49 +983,170 @@ function handleOnReadyKnowledge() {
   const calculateRelevance = (item, searchTerms, searchPhrases) => {
     let relevance = 0;
 
-    // Handle phrases first
+    // Handle exact phrase matches first
     searchPhrases.forEach((phrase) => {
       if (phrase.length < 2) return; // Skip very short phrases
 
       const escapedPhrase = escapeRegExp(phrase);
-      const regexPhrase = new RegExp(`\\b${escapedPhrase}\\b`, "gi");
+      // Create regex to match the exact phrase with optional 's' at the end
+      const regexPhrase = new RegExp(`\\b${escapedPhrase}(s)?\\b`, "gi");
 
-      if (item.title && regexPhrase.test(item.title)) {
-        relevance += 50; // High weight for exact phrase in title
+      // Match in Title
+      if (item.title) {
+        const matches = item.title.match(regexPhrase);
+        if (matches) {
+          relevance += 100 * matches.length; // Significant boost for exact phrase match in title
+          console.log(
+            `Exact phrase "${phrase}" found in title of "${item.title}"`
+          );
+        }
       }
 
-      if (item.description && regexPhrase.test(item.description)) {
-        relevance += 30; // Medium weight for exact phrase in description
+      // Match in Description
+      if (item.description) {
+        const matches = item.description.match(regexPhrase);
+        if (matches) {
+          relevance += 60 * matches.length; // Medium boost for exact phrase match in description
+          console.log(
+            `Exact phrase "${phrase}" found in description of "${item.description}"`
+          );
+        }
       }
 
-      if (item.content && regexPhrase.test(item.content)) {
-        relevance += 10; // Lower weight for exact phrase in content
+      // Match in Content (only for ContentPaN)
+      if (item.content) {
+        const matches = item.content.match(regexPhrase);
+        if (matches) {
+          relevance += 20 * matches.length; // Lower boost for exact phrase match in content
+          console.log(
+            `Exact phrase "${phrase}" found in content of item with ID "${item.id}"`
+          );
+        }
       }
 
-      // Enhance relevance if all terms are present
+      // Match in Metadata (only for FormPaN)
+      if (item.meta) {
+        // Match in meta.type
+        if (item.meta.type) {
+          const matchesType = item.meta.type.match(regexPhrase);
+          if (matchesType) {
+            relevance += 80 * matchesType.length; // Boost for meta.type matches
+            console.log(
+              `Exact phrase "${phrase}" found in meta.type of item with ID "${item.id}"`
+            );
+          }
+        }
+
+        // Match in meta.keywords (Array)
+        if (Array.isArray(item.meta.keywords)) {
+          item.meta.keywords.forEach((keyword) => {
+            const matchesKeyword = keyword.match(regexPhrase);
+            if (matchesKeyword) {
+              relevance += 70 * matchesKeyword.length; // Boost for each keyword match
+              console.log(
+                `Exact phrase "${phrase}" found in meta.keywords of item with ID "${item.id}"`
+              );
+            }
+          });
+        }
+
+        // Match in meta.categories (Array)
+        if (Array.isArray(item.meta.categories)) {
+          item.meta.categories.forEach((category) => {
+            const matchesCategory = category.match(regexPhrase);
+            if (matchesCategory) {
+              relevance += 50 * matchesCategory.length; // Boost for each category match
+              console.log(
+                `Exact phrase "${phrase}" found in meta.categories of item with ID "${item.id}"`
+              );
+            }
+          });
+        }
+      }
+
+      // Enhance relevance if all search terms are present
       relevance = enhanceRelevanceForCoOccurrence(relevance, item, searchTerms);
     });
 
-    // Handle individual terms
+    // Handle individual term matches
     searchTerms.forEach((term) => {
       if (term.length < 2) return; // Skip very short terms
 
       const escapedTerm = escapeRegExp(term);
-      const regexTerm = new RegExp(`\\b${escapedTerm}\\b`, "gi");
+      // Create regex to match the term with optional 's' at the end
+      const regexTerm = new RegExp(`\\b${escapedTerm}(s)?\\b`, "gi");
 
-      // Title matches carry more weight
-      if (item.title && regexTerm.test(item.title)) {
-        relevance += 5; // Weight for title matches
+      // Match in Title
+      if (item.title) {
+        const matches = item.title.match(regexTerm);
+        if (matches) {
+          relevance += 10 * matches.length; // Higher weight for title matches
+          console.log(
+            `Term "${term}" found ${matches.length} time(s) in title of "${item.title}"`
+          );
+        }
       }
 
-      // Description matches have medium weight
-      if (item.description && regexTerm.test(item.description)) {
-        relevance += 3; // Weight for description matches
+      // Match in Description
+      if (item.description) {
+        const matches = item.description.match(regexTerm);
+        if (matches) {
+          relevance += 6 * matches.length; // Medium weight for description matches
+          console.log(
+            `Term "${term}" found ${matches.length} time(s) in description of "${item.description}"`
+          );
+        }
       }
 
-      // Content matches have lower weight
-      if (item.content && regexTerm.test(item.content)) {
-        relevance += 1; // Weight for content matches
+      // Match in Content (only for ContentPaN)
+      if (item.content) {
+        const matches = item.content.match(regexTerm);
+        if (matches) {
+          relevance += 2 * matches.length; // Lower weight for content matches
+          console.log(
+            `Term "${term}" found ${matches.length} time(s) in content of item with ID "${item.id}"`
+          );
+        }
+      }
+
+      // Match in Metadata (only for FormPaN)
+      if (item.meta) {
+        // Match in meta.type
+        if (item.meta.type) {
+          const matchesType = item.meta.type.match(regexTerm);
+          if (matchesType) {
+            relevance += 8 * matchesType.length; // Boost for meta.type matches
+            console.log(
+              `Term "${term}" found in meta.type of item with ID "${item.id}"`
+            );
+          }
+        }
+
+        // Match in meta.keywords (Array)
+        if (Array.isArray(item.meta.keywords)) {
+          item.meta.keywords.forEach((keyword) => {
+            const matchesKeyword = keyword.match(regexTerm);
+            if (matchesKeyword) {
+              relevance += 7 * matchesKeyword.length; // Boost for each keyword match
+              console.log(
+                `Term "${term}" found in meta.keywords of item with ID "${item.id}"`
+              );
+            }
+          });
+        }
+
+        // Match in meta.categories (Array)
+        if (Array.isArray(item.meta.categories)) {
+          item.meta.categories.forEach((category) => {
+            const matchesCategory = category.match(regexTerm);
+            if (matchesCategory) {
+              relevance += 5 * matchesCategory.length; // Boost for each category match
+              console.log(
+                `Term "${term}" found in meta.categories of item with ID "${item.id}"`
+              );
+            }
+          });
+        }
       }
     });
 
@@ -1051,6 +1180,15 @@ function handleOnReadyKnowledge() {
       .toLowerCase()
       .split(" ")
       .filter((term) => term.length >= 2);
+
+    // Always include the entire search query as a phrase if it's multi-word
+    const additionalPhrase = tempQuery.trim();
+    if (
+      additionalPhrase.length >= 2 &&
+      additionalPhrase.split(" ").length >= 2
+    ) {
+      searchPhrases.push(additionalPhrase);
+    }
 
     const searchableItems = knowledge.flatMap((service) =>
       service.subjects
@@ -1215,7 +1353,7 @@ function handleOnReadyKnowledge() {
     .off("click")
     .on("click", function () {
       const formName = $(this).data("form-name");
-      
+
       if (!formName) {
         alert("Unable to launch the process. Form information is missing.");
         return;
@@ -1451,41 +1589,37 @@ function handleOnReadyKnowledge() {
             }
 
             // Handle Forms
-            if (subject.forms) {
-              subject.forms.forEach((form) => {
-                if (!addedItemIds.has(form.id)) {
-                  const card = document.createElement("div");
-                  card.classList.add("search-card");
-                  card.setAttribute("tabindex", "0");
+            if (subject.formName && !addedItemIds.has(subject.id)) {
+              const card = document.createElement("div");
+              card.classList.add("search-card");
+              card.setAttribute("tabindex", "0");
 
-                  const title = document.createElement("h3");
-                  title.textContent = form.name;
+              const title = document.createElement("h3");
+              title.textContent = subject.name;
 
-                  const description = document.createElement("div");
-                  description.innerHTML = form.description;
+              const description = document.createElement("div");
+              description.innerHTML = subject.description;
 
-                  card.appendChild(title);
-                  card.appendChild(description);
+              card.appendChild(title);
+              card.appendChild(description);
 
-                  card.dataset.option = JSON.stringify({
-                    id: form.id,
-                    name: form.name,
-                    description: form.description,
-                    formName: form.formName,
-                    meta: form.meta,
-                    lastModified: form.lastModified,
-                    serviceName: service.name,
-                    type: "form", // Explicit type
-                  });
-
-                  options.push(card);
-                  addedItemIds.add(form.id);
-
-                  if (form.name) {
-                    visibleLetters.add(form.name[0].toUpperCase());
-                  }
-                }
+              card.dataset.option = JSON.stringify({
+                id: subject.id,
+                name: subject.name,
+                description: subject.description,
+                formName: subject.formName,
+                meta: subject.meta,
+                lastModified: subject.lastModified,
+                serviceName: service.name,
+                type: "form", // Explicit type
               });
+
+              options.push(card);
+              addedItemIds.add(subject.id);
+
+              if (subject.name) {
+                visibleLetters.add(subject.name[0].toUpperCase());
+              }
             }
 
             // Handle Topics
