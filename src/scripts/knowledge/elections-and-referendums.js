@@ -179,7 +179,7 @@ const lostMyInvitationToRegister = new ContentEaR(
 const registerToVote = new ContentEaR(
   "registerToVote",
   "Register To Vote",
-  "",
+  "Register To Vote",
   `
     <p>
       Everyone is responsible for registering themselves. This is called Individual
@@ -1559,7 +1559,7 @@ const topEnquiries = new MenuEaR("topEnquiries", "Top Enquiries", "", [
   whereICanVote,
   councillors,
   familyTreeorGenealogy,
-  wards,
+  wards
 ]);
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\

@@ -226,10 +226,6 @@ function createCards(data, container, parent = null) {
     });
 }
 
-// src/scripts/knowledge/index.js
-
-// src/scripts/knowledge/index.js
-
 /**
  * Redirects the user to the content page and updates breadcrumbs based on the item's hierarchy.
  * @param {Object} item - The content item being displayed.
@@ -686,6 +682,12 @@ function handleInitialisingKnowledge() {
       // Add click event listener for navigation
       // This logs the user journey and navigates to the appropriate page
       button.addEventListener("click", () => {
+        // Clear the search input
+        const searchInput = document.getElementById("search-input");
+        if (searchInput) {
+          searchInput.value = "";
+        }
+
         logUserJourney("Navigate", `Navigated to ${item.label}`);
         KDF.gotoPage(item.page, true, true, true);
       });
@@ -1190,49 +1192,109 @@ function handleOnReadyKnowledge() {
       searchPhrases.push(additionalPhrase);
     }
 
-    const searchableItems = knowledge.flatMap((service) =>
-      service.subjects
-        .filter(
-          (subject) =>
-            subject.constructor &&
-            (subject.constructor.name.startsWith("Content") ||
-              subject.constructor.name.startsWith("Form")) // Include Form
-        )
-        .map((contentSubject) => {
-          const relevance = calculateRelevance(
-            contentSubject,
-            searchTerms,
-            searchPhrases
-          );
+    console.log(`Search Terms: ${searchTerms}`);
+    console.log(`Search Phrases: ${searchPhrases}`);
 
-          return {
-            ...contentSubject,
-            serviceName: service.name,
-            type: contentSubject.constructor.name.startsWith("Form")
-              ? "form" // Set type to form
-              : "knowledge",
-            relevance,
-          };
+    const searchableItems = knowledge.flatMap((service) => {
+      return service.subjects
+        .filter((subject) => {
+          const isContent = subject.constructor.name.startsWith("Content");
+          const isForm = subject.constructor.name.startsWith("Form");
+          const isTopic = subject.constructor.name.startsWith("Menu"); // Assuming topics are MenuEaR instances
+
+          if (isContent || isForm || isTopic) {
+            console.log(
+              `Included in search: ${subject.id} (${subject.constructor.name})`
+            );
+            return true;
+          } else {
+            console.log(
+              `Excluded from search: ${subject.id} (${subject.constructor.name})`
+            );
+            return false;
+          }
         })
-    );
+        .flatMap((subject) => {
+          if (subject.constructor.name.startsWith("Menu")) {
+            // Route 2: Traverse into Topics
+            if (!Array.isArray(subject.topics)) {
+              console.warn(
+                `Expected 'topics' array in MenuEaR with ID "${subject.id}", but found undefined.`
+              );
+              return [];
+            }
 
-    const newsItems = latestNews.map((news) => {
-      const relevance = calculateRelevance(news, searchTerms, searchPhrases);
-
-      return {
-        title: news.title,
-        description: news.content,
-        content: news.content,
-        type: "news",
-        relevance,
-      };
+            return subject.topics
+              .filter(
+                (topic) =>
+                  topic.constructor.name.startsWith("Content") ||
+                  topic.constructor.name.startsWith("Form")
+              )
+              .map((topic) => {
+                const relevance = calculateRelevance(
+                  topic,
+                  searchTerms,
+                  searchPhrases
+                );
+                if (relevance > 0) {
+                  return {
+                    ...topic,
+                    serviceName: service.name,
+                    type: topic.constructor.name.startsWith("Form")
+                      ? "form"
+                      : "knowledge",
+                    relevance,
+                  };
+                } else {
+                  return null;
+                }
+              })
+              .filter((item) => item !== null);
+          } else {
+            // Route 1: Direct Content/Form
+            const relevance = calculateRelevance(
+              subject,
+              searchTerms,
+              searchPhrases
+            );
+            if (relevance > 0) {
+              return {
+                ...subject,
+                serviceName: service.name,
+                type: subject.constructor.name.startsWith("Form")
+                  ? "form"
+                  : "knowledge",
+                relevance,
+              };
+            } else {
+              return null;
+            }
+          }
+        })
+        .filter((item) => item !== null); // Remove nulls
     });
+
+    const newsItems = latestNews
+      .map((news) => {
+        const relevance = calculateRelevance(news, searchTerms, searchPhrases);
+
+        console.log(`News Item: "${news.title}", Relevance: ${relevance}`);
+
+        return {
+          title: news.title,
+          description: news.content,
+          content: news.content,
+          type: "news",
+          relevance,
+        };
+      })
+      .filter((news) => news.relevance > 0); // Only include news with relevance >0
 
     const combinedItems = [...searchableItems, ...newsItems];
 
-    const results = combinedItems
-      .filter((item) => item.relevance > 0)
-      .sort((a, b) => b.relevance - a.relevance);
+    const results = combinedItems.sort((a, b) => b.relevance - a.relevance);
+
+    console.log("Search Results:", results);
 
     return results;
   }
@@ -1242,9 +1304,26 @@ function handleOnReadyKnowledge() {
     resultsContainer.innerHTML = "";
 
     if (!results || results.length === 0) {
+      const searchQuery = document.getElementById("search-input").value;
       const noResultsMessage = document.createElement("div");
       noResultsMessage.classList.add("no-results-message");
-      noResultsMessage.textContent = "No results found";
+
+      noResultsMessage.innerHTML = `
+        <h3>No results found</h3>
+        <p>Sorry, we couldn't find any results for "${searchQuery}".</p>
+        <p>Here are a few suggestions:</p>
+        <ul>
+          <li>Check your spelling and try again</li>
+          <li>Try using more general keywords</li>
+          <li>Consider using different words or phrases</li>
+        </ul>
+        <p>
+          If you're still having trouble, 
+          <a href="https://sheffieldcc-it.uk.4me.com/self-service/requests/new/provide_description?template_id=681s" target="_blank">contact us</a>
+           for assistance.
+        </p>
+      `;
+
       resultsContainer.appendChild(noResultsMessage);
       return;
     }
