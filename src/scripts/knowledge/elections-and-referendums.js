@@ -1553,33 +1553,13 @@ const wards = new ContentEaR(
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
-const reportHedgePlantGrass2 = new ContentEaR(
-  "reportHedgePlantGrass2",
-  "Hedges, plants or grassed areas",
-  "Reports problems such as overgrown, dead or diseased, and damaged vegetation",
-  `## needs information around grass cutting schedule ##`,
-  {
-    buttonLabel: "Report a hedge, plant or grass",
-    formName: "hedge_plant_grass",
-  },
-  { typeKey: "" },
-  { typeKey: "" },
-  {
-    type: "Report",
-    keywords: ["Hedge", "plant", "grass"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
-  },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
-);
-
 const topEnquiries = new MenuEaR("topEnquiries", "Top Enquiries", "", [
   annualCanvas,
   electionResults,
   whereICanVote,
   councillors,
   familyTreeorGenealogy,
-  wards,
-  reportHedgePlantGrass2,
+  wards
 ]);
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
@@ -1595,6 +1575,5 @@ const electionsAndReferendums = new ServiceEaR(
     postalorProxyVoting,
     electionsAndVoting,
     topEnquiries,
-    wards,
   ]
 );
