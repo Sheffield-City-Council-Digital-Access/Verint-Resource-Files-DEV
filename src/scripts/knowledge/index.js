@@ -958,7 +958,7 @@ function handleOnReadyKnowledge() {
     });
 
     if (allTermsPresent) {
-      relevance += 10; // Boost for all terms found
+      relevance += 50; // Significant boost if all terms are present
     }
 
     return relevance;
@@ -979,19 +979,19 @@ function handleOnReadyKnowledge() {
       if (phrase.length < 2) return; // Skip very short phrases
 
       const escapedPhrase = escapeRegExp(phrase);
-      // Allow optional 's' at the end of the term
+      // Allow optional 's' at the end of the phrase
       const regexPhrase = new RegExp(`\\b${escapedPhrase}(s)?\\b`, "gi");
 
       if (item.title && regexPhrase.test(item.title)) {
-        relevance += 50; // High weight for exact phrase in title
+        relevance += 100; // High boost for exact phrase in title
       }
 
       if (item.description && regexPhrase.test(item.description)) {
-        relevance += 30; // Medium weight for exact phrase in description
+        relevance += 60; // Medium boost for exact phrase in description
       }
 
       if (item.content && regexPhrase.test(item.content)) {
-        relevance += 10; // Lower weight for exact phrase in content
+        relevance += 20; // Lower boost for exact phrase in content
       }
 
       // Enhance relevance if all terms are present
@@ -1006,19 +1006,26 @@ function handleOnReadyKnowledge() {
       // Allow optional 's' at the end of the term
       const regexTerm = new RegExp(`\\b${escapedTerm}(s)?\\b`, "gi");
 
-      // Title matches carry more weight
-      if (item.title && regexTerm.test(item.title)) {
-        relevance += 5; // Weight for title matches
+      // Count occurrences in each field
+      if (item.title) {
+        const matches = item.title.match(regexTerm);
+        if (matches) {
+          relevance += 10 * matches.length; // Higher weight for title matches
+        }
       }
 
-      // Description matches have medium weight
-      if (item.description && regexTerm.test(item.description)) {
-        relevance += 3; // Weight for description matches
+      if (item.description) {
+        const matches = item.description.match(regexTerm);
+        if (matches) {
+          relevance += 6 * matches.length; // Medium weight for description matches
+        }
       }
 
-      // Content matches have lower weight
-      if (item.content && regexTerm.test(item.content)) {
-        relevance += 1; // Weight for content matches
+      if (item.content) {
+        const matches = item.content.match(regexTerm);
+        if (matches) {
+          relevance += 2 * matches.length; // Lower weight for content matches
+        }
       }
     });
 
