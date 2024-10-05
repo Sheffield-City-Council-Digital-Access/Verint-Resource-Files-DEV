@@ -1013,7 +1013,7 @@ function handleOnReadyKnowledge() {
         }
       }
 
-      // Match in Content (only for ContentPaN)
+      // Match in Content
       if (item.content) {
         const matches = item.content.match(regexPhrase);
         if (matches) {
@@ -1024,7 +1024,7 @@ function handleOnReadyKnowledge() {
         }
       }
 
-      // Match in Metadata (only for FormPaN)
+      // Match in Metadata (only if meta exists)
       if (item.meta) {
         // Match in meta.type
         if (item.meta.type) {
@@ -1063,9 +1063,6 @@ function handleOnReadyKnowledge() {
           });
         }
       }
-
-      // Enhance relevance if all search terms are present
-      relevance = enhanceRelevanceForCoOccurrence(relevance, item, searchTerms);
     });
 
     // Handle individual term matches
@@ -1098,7 +1095,7 @@ function handleOnReadyKnowledge() {
         }
       }
 
-      // Match in Content (only for ContentPaN)
+      // Match in Content
       if (item.content) {
         const matches = item.content.match(regexTerm);
         if (matches) {
@@ -1109,7 +1106,7 @@ function handleOnReadyKnowledge() {
         }
       }
 
-      // Match in Metadata (only for FormPaN)
+      // Match in Metadata (only if meta exists)
       if (item.meta) {
         // Match in meta.type
         if (item.meta.type) {
@@ -1190,49 +1187,56 @@ function handleOnReadyKnowledge() {
       searchPhrases.push(additionalPhrase);
     }
 
-    const searchableItems = knowledge.flatMap((service) =>
-      service.subjects
-        .filter(
-          (subject) =>
-            subject.constructor &&
-            (subject.constructor.name.startsWith("Content") ||
-              subject.constructor.name.startsWith("Form")) // Include Form
-        )
-        .map((contentSubject) => {
-          const relevance = calculateRelevance(
-            contentSubject,
-            searchTerms,
-            searchPhrases
-          );
+    const searchableItems = knowledge.flatMap(
+      (service) =>
+        service.subjects
+          .filter(
+            (subject) =>
+              subject.constructor &&
+              (subject.constructor.name.startsWith("Content") ||
+                subject.constructor.name.startsWith("Form")) // Include Form
+          )
+          .map((contentSubject) => {
+            const relevance = calculateRelevance(
+              contentSubject,
+              searchTerms,
+              searchPhrases
+            );
 
-          return {
-            ...contentSubject,
-            serviceName: service.name,
-            type: contentSubject.constructor.name.startsWith("Form")
-              ? "form" // Set type to form
-              : "knowledge",
-            relevance,
-          };
-        })
+            // Only include items with relevance > 0
+            if (relevance > 0) {
+              return {
+                ...contentSubject,
+                serviceName: service.name,
+                type: contentSubject.constructor.name.startsWith("Form")
+                  ? "form" // Set type to form
+                  : "knowledge",
+                relevance,
+              };
+            } else {
+              return null;
+            }
+          })
+          .filter((item) => item !== null) // Remove nulls
     );
 
-    const newsItems = latestNews.map((news) => {
-      const relevance = calculateRelevance(news, searchTerms, searchPhrases);
+    const newsItems = latestNews
+      .map((news) => {
+        const relevance = calculateRelevance(news, searchTerms, searchPhrases);
 
-      return {
-        title: news.title,
-        description: news.content,
-        content: news.content,
-        type: "news",
-        relevance,
-      };
-    });
+        return {
+          title: news.title,
+          description: news.content,
+          content: news.content,
+          type: "news",
+          relevance,
+        };
+      })
+      .filter((news) => news.relevance > 0); // Only include news with relevance >0
 
     const combinedItems = [...searchableItems, ...newsItems];
 
-    const results = combinedItems
-      .filter((item) => item.relevance > 0)
-      .sort((a, b) => b.relevance - a.relevance);
+    const results = combinedItems.sort((a, b) => b.relevance - a.relevance);
 
     return results;
   }
