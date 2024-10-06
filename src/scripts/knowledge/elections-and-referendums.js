@@ -1559,7 +1559,7 @@ const topEnquiries = new MenuEaR("topEnquiries", "Top Enquiries", "", [
   whereICanVote,
   councillors,
   familyTreeorGenealogy,
-  wards
+  wards,
 ]);
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
@@ -1568,7 +1568,7 @@ const topEnquiries = new MenuEaR("topEnquiries", "Top Enquiries", "", [
 const electionsAndReferendums = new ServiceEaR(
   "electionsAndReferendums",
   "Elections and Referendums",
-  `General elections, local elections, by-election, mayoral election, police and crime commissioner, referendums and voting`,
+  `General elections, local elections, by-election, mayoral election, police and crime commissioner, referendums and voting...`,
   [
     registeringToVote,
     annualCanvasMenu,

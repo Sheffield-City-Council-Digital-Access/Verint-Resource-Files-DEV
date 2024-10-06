@@ -109,121 +109,124 @@ function createCards(data, container, parent = null) {
   // Determine filter based on parent
   const filterFn = parent ? determineFilter(parent) : () => true;
 
-  data
-    .filter(filterFn) // **Apply the Dynamic Filter**
-    .forEach((item) => {
-      const card = document.createElement("div");
-      card.classList.add("card");
-      card.setAttribute("data-id", item.id);
-      card.setAttribute("tabindex", "0");
+  // Sort the data alphabetically by name
+  const sortedData = data
+    .filter(filterFn)
+    .sort((a, b) => a.name.localeCompare(b.name));
 
-      const cardBody = document.createElement("div");
-      cardBody.classList.add("card-body");
+  sortedData.forEach((item) => {
+    const card = document.createElement("div");
+    card.classList.add("card");
+    card.setAttribute("data-id", item.id);
+    card.setAttribute("tabindex", "0");
 
-      const cardTitle = document.createElement("h3");
-      cardTitle.classList.add("card-title");
-      cardTitle.textContent = item.name;
+    const cardBody = document.createElement("div");
+    cardBody.classList.add("card-body");
 
-      const cardText = document.createElement("p");
-      cardText.classList.add("card-text");
-      cardText.textContent = item.description;
+    const cardTitle = document.createElement("h3");
+    cardTitle.classList.add("card-title");
+    cardTitle.textContent = item.name;
 
-      cardBody.appendChild(cardTitle);
-      cardBody.appendChild(cardText);
-      card.appendChild(cardBody);
-      container.appendChild(card);
+    const cardText = document.createElement("p");
+    cardText.classList.add("card-text");
+    cardText.textContent = item.description;
 
-      // **Event Listeners**
-      card.addEventListener("click", () => {
-        const childType = getChildTypes(item);
+    cardBody.appendChild(cardTitle);
+    cardBody.appendChild(cardText);
+    card.appendChild(cardBody);
+    container.appendChild(card);
 
-        const hasSubjects = item.subjects && item.subjects.length > 0;
-        const hasTopics = item.topics && item.topics.length > 0;
-        let nextLevelData = null;
+    // **Event Listeners**
+    card.addEventListener("click", () => {
+      const childType = getChildTypes(item);
+
+      const hasSubjects = item.subjects && item.subjects.length > 0;
+      const hasTopics = item.topics && item.topics.length > 0;
+      let nextLevelData = null;
+
+      if (hasSubjects) {
+        nextLevelData = item.subjects;
+        currentLevel = "sub";
+      } else if (hasTopics) {
+        nextLevelData = item.topics;
+        currentLevel = "topics";
+      }
+
+      if (nextLevelData) {
+        previousData = nextLevelData;
+        const nextContainer = hasSubjects
+          ? subjectMenuContainer
+          : hasTopics
+          ? topicsMenuContainer
+          : null;
+
+        createCards(nextLevelData, nextContainer, item);
+
+        // **Update Breadcrumbs**
+        const breadcrumbElements = document.querySelectorAll(
+          hasSubjects
+            ? ".subject-menu-btn"
+            : hasTopics
+            ? ".topic-menu-btn"
+            : null
+        );
+
+        if (breadcrumbElements.length > 0) {
+          breadcrumbElements.forEach((breadcrumbElement) => {
+            breadcrumbElement.textContent = item.name;
+          });
+        }
+
+        // **Toggle Visibility of Menu Buttons**
+        const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
 
         if (hasSubjects) {
-          nextLevelData = item.subjects;
-          currentLevel = "sub";
-        } else if (hasTopics) {
-          nextLevelData = item.topics;
-          currentLevel = "topics";
+          topicMenuButtons.forEach((btn) => {
+            btn.style.display = "none";
+          });
+        }
+        if (hasTopics) {
+          topicMenuButtons.forEach((btn) => {
+            btn.style.display = "block";
+          });
         }
 
-        if (nextLevelData) {
-          previousData = nextLevelData;
-          const nextContainer = hasSubjects
-            ? subjectMenuContainer
+        // **Navigate to the Appropriate Page**
+        KDF.gotoPage(
+          hasSubjects
+            ? "page_subject_menu"
             : hasTopics
-            ? topicsMenuContainer
-            : null;
-
-          createCards(nextLevelData, nextContainer, item);
-
-          // **Update Breadcrumbs**
-          const breadcrumbElements = document.querySelectorAll(
-            hasSubjects
-              ? ".subject-menu-btn"
-              : hasTopics
-              ? ".topic-menu-btn"
-              : null
-          );
-
-          if (breadcrumbElements.length > 0) {
-            breadcrumbElements.forEach((breadcrumbElement) => {
-              breadcrumbElement.textContent = item.name;
-            });
-          }
-
-          // **Toggle Visibility of Menu Buttons**
-          const topicMenuButtons = document.querySelectorAll(".topic-menu-btn");
-
-          if (hasSubjects) {
-            topicMenuButtons.forEach((btn) => {
-              btn.style.display = "none";
-            });
-          }
-          if (hasTopics) {
-            topicMenuButtons.forEach((btn) => {
-              btn.style.display = "block";
-            });
-          }
-
-          // **Navigate to the Appropriate Page**
-          KDF.gotoPage(
-            hasSubjects
-              ? "page_subject_menu"
-              : hasTopics
-              ? "page_topic_menu"
-              : null,
-            true,
-            true,
-            true
-          );
+            ? "page_topic_menu"
+            : null,
+          true,
+          true,
+          true
+        );
+      } else {
+        // No further navigation, handle content
+        if (item.formName) {
+          redirectToFormPage(item);
         } else {
-          // No further navigation, handle content
-          if (item.formName) {
-            redirectToFormPage(item);
-          } else {
-            redirectToContentPage(item);
-          }
+          redirectToContentPage(item);
         }
-      });
-
-      card.addEventListener("keydown", (event) => {
-        if (event.key === "Enter") {
-          event.preventDefault();
-          card.click();
-        }
-      });
-
-      card.addEventListener("focus", () => {
-        card.classList.add("focus");
-      });
-
-      card.addEventListener("blur", () => {
-        card.classList.remove("focus");
-      });
+      }
     });
+
+    card.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        card.click();
+      }
+    });
+
+    card.addEventListener("focus", () => {
+      card.classList.add("focus");
+    });
+
+    card.addEventListener("blur", () => {
+      card.classList.remove("focus");
+    });
+  });
 }
 
 /**
