@@ -135,6 +135,7 @@ option {
   align-items: flex-start;
   gap: 1rem;
   margin-right: 4rem;
+  margin-bottom: .6rem;
   text-align: center;
 }
 
