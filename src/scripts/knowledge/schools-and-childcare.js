@@ -57,7 +57,7 @@ class FormSaC extends CoreSaC {
 const fundedEarlyLearning = new ContentSaC(
   "fundedEarlyLearning",
   "Funded Early Learning",
-  "",
+  "Access to childcare support for 2-year-olds",
   `
     <p>
       From April 2024, eligible working parents of 2-year-olds can access 15 hours
@@ -123,11 +123,11 @@ const fundedEarlyLearning = new ContentSaC(
       to school age will be entitled to 30 hours of childcare a week.
     </p>
   `,
-  { buttonLabel: "Funded Early Learning", formName: "" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "funded_early_learning_transfered_to_service" },
   { typeKey: "funded_early_learning_information_provided" },
   {
-    type: "Information",
+    type: "Apply",
     keywords: [
       "Funded Early Learning",
       "Funded Erly Learning",
