@@ -86,10 +86,17 @@ h4,
   font-family: var(--font-heaning);
 }
 
-
 p,
-#dform_container p {
+#dform_container p,
+#dform_container, .select2-container,
+#dform_container, .select2-container p {
+  font-family: var(--font-paragraph);
+  padding: unset;
+  background-color: var(--color-background);
   margin-block: 1.6rem;
+  font-size: var(--font-size-p1);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--font-height-p1);
 }
 
 ul, ol,
