@@ -255,21 +255,6 @@ const bedBugTreatment = new ContentPaN(
         </p>
       </div>
     </details>
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Commercial, Health Authority, Industrial and University</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <p>
-          For bed bug treatment enquiries related to Commercial, Health Authority, Industrial, and
-          University properties, please email your request to
-          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
-            >EnvironmentalServicesAdmin@sheffield.gov.uk</a
-          >. We will assess your request and provide you with a quote for the treatment.
-        </p>
-      </div>
-    </details>
     <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
         If your enquiry doesn't fall into any of the above categories, we will need to
