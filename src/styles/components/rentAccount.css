@@ -74,6 +74,12 @@
     font-weight: var(--font-weight-semibold);
 }
 
+#dform_container table tbody tr.active td {
+    color: var(--color-white) !important;
+    background: var(--color-primary) !important;
+}
+
+
 .modal-mini {
   display: none; 
   position: fixed;
