@@ -435,5 +435,6 @@ const pollutionAndNuisance = new ServicePaN(
     reportFlyPosting,
     reportFlyTipping,
     reportDogFouling,
+    pestControl,
   ]
 );
