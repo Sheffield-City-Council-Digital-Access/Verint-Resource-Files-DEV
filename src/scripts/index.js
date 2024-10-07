@@ -716,7 +716,6 @@ function handleOnReadyEvent(event, kdf) {
       navigator.geolocation.getCurrentPosition(
         function (position) {
           const { latitude, longitude } = position.coords;
-          console.log(latitude, longitude);
           KDF.customdata(
             "retrieve-location-from-coordinates",
             $button.attr("id"),
@@ -3196,7 +3195,6 @@ function mapClick(evt) {
           store_layer_attr.main_attribute = {};
           store_layer_attr.main_attribute = layerAttributes;
           store_layer_attr.main_attribute.layername = layerName;
-          console.log(streetMapView.zoom);
 
           KDF.customdata("reverse_geocode_osmap", "asset_code", true, true, {
             longitude: mapX,
@@ -3620,7 +3618,10 @@ function initializeAssetLayer(zoomLevel) {
 
   esrimap.add(groupLayer);
   asset_init = true;
-  if (KDF.kdf().access == "agent" && KDF.kdf().form.name === "zz_eg_playpen") {
+  if (
+    KDF.kdf().access == "agent" &&
+    KDF.kdf().form.name === "asset_responsibility_map"
+  ) {
     initLayerList();
   }
 }
@@ -3652,7 +3653,6 @@ function initLayerList() {
 }
 
 function addPoint(map, point, markerSymbol) {
-  console.log(map, point, markerSymbol);
   streetMapPositionLayer.removeAll();
 
   var pointGraphic;
