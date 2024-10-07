@@ -187,7 +187,7 @@ const batProtectionBritain = new ContentPaN(
 const bedBugTreatment = new ContentPaN(
   "bedBugTreatment",
   "Bed Bug Treatment",
-  "Information about Bed Bug treatment options in Sheffield",
+  "Information about Bed Bug treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -255,6 +255,21 @@ const bedBugTreatment = new ContentPaN(
         </p>
       </div>
     </details>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Commercial, Health Authority, Industrial and University</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          For bed bug treatment enquiries related to Commercial, Health Authority, Industrial, and
+          University properties, please email your request to
+          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
+            >EnvironmentalServicesAdmin@sheffield.gov.uk</a
+          >. We will assess your request and provide you with a quote for the treatment.
+        </p>
+      </div>
+    </details>
     <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
         If your enquiry doesn't fall into any of the above categories, we will need to
@@ -271,11 +286,11 @@ const bedBugTreatment = new ContentPaN(
     </section>
   `,
   {
-    buttonLabel: "",
-    formName: "",
+    buttonLabel: "Book treatment for Bed Bugs",
+    formName: "pest_control_treatment",
   },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
   {
     type: "Information",
     keywords: ["Bed Bug", "Treatment", "Pests", "Vermin"],
