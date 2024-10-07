@@ -240,18 +240,6 @@ const bedBugTreatment = new ContentPaN(
       All prices include a call-out fee of £39. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
-    <p>
-      Whether you require a sample or not, please refer to the information above for
-      sample submission details.
-    </p>
-    <h3>Bed Bugs: Health Authority, Industrial and University</h3>
-    <p>
-      For bed bug treatment enquiries related to Health Authority, Industrial, and
-      University properties, please email your request to
-      <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
-        >EnvironmentalServicesAdmin@sheffield.gov.uk</a
-      >. We will assess your request and provide you with a quote for the treatment.
-    </p>
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Commercial, Health Authority, Industrial and University</h3>
