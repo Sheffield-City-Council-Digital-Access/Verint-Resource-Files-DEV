@@ -259,10 +259,12 @@ const bedBugTreatment = new ContentPaN(
       <p>
         If your enquiry doesn't fall into any of the above categories, we will need to
         refer your report to a
-        <a
-          href="\${window.location.protocol}//\${window.location.hostname}/form/launch/pest_control_technician?customerid=\${KDF.getParams().customerid}&interactionid=\${KDF.getParams().interactionid}"
-          >technician</a
-        >
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?customerid=${
+    KDF.getParams().customerid
+  }&interactionid=${KDF.getParams().interactionid}">
+          technician</a>
         for further investigation.
       </p>
     </section>
@@ -275,13 +277,11 @@ const bedBugTreatment = new ContentPaN(
   { typeKey: "" },
   {
     type: "Information",
-    keywords: ["Bed Bug", "Treatment", "Sheffield", "Council"],
+    keywords: ["Bed Bug", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Pests",
-      "Vermin",
       "Environmental Health",
     ],
   },
