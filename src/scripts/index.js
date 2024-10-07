@@ -1253,6 +1253,7 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     main.responsibility ||
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
     main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
+    main.customer ||
     bg.sitecode
       ? "CHS"
       : "";
