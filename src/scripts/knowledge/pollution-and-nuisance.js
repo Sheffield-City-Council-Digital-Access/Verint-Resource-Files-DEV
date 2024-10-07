@@ -195,29 +195,29 @@ const bedBugTreatment = new ContentPaN(
         Before we can provide treatment for bed bugs in your domestic property, we
         will need a sample of the pest.
       </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
     </section>
-    <p>You can either bring your sample to:</p>
-    <address>
-      First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
-    </address>
-    <p>Or you can post your sample to:</p>
-    <address>
-      Environmental Services<br />
-      Block B, Staniforth Road Depot<br />
-      Staniforth Road<br />
-      Sheffield, S9 3HD
-    </address>
-    <p>
-      Please ensure your sample is in a secure, crush-proof container, alive or
-      dead. Attach information detailing:
-    </p>
-    <ul>
-      <li>Your name</li>
-      <li>Your address</li>
-      <li>Your contact number and/or email</li>
-      <li>How long the insects have been present</li>
-      <li>Where in the property the insects have been found</li>
-    </ul>
     <h3>Cost for Treatment</h3>
     <p>
       The treatment cost for Bed Bugs is £330.00. This is based on a standard size
