@@ -255,10 +255,17 @@ const bedBugTreatment = new ContentPaN(
         </p>
       </div>
     </details>
-    <p>
-      If your enquiry doesn't fall into any of the above categories, we will need to
-      refer your report to a technician for further investigation.
-    </p>
+    <section class="notice-panel" role="region" aria-label="Notice panel">
+      <p>
+        If your enquiry doesn't fall into any of the above categories, we will need to
+        refer your report to a
+        <a
+          href="\${window.location.protocol}//\${window.location.hostname}/form/launch/pest_control_technician?customerid=\${KDF.getParams().customerid}&interactionid=\${KDF.getParams().interactionid}"
+          >technician</a
+        >
+        for further investigation.
+      </p>
+    </section>
   `,
   {
     buttonLabel: "",
