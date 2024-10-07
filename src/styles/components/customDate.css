@@ -32,3 +32,7 @@
 #dform_container .dob {
   margin-bottom: 1.2rem;
 }
+
+#dform_container .date-yy {
+  max-width: 9rem !important;
+}
