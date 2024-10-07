@@ -258,13 +258,14 @@ const bedBugTreatment = new ContentPaN(
     <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
         If your enquiry doesn't fall into any of the above categories, we will need to
-        refer your report to a
+        refer your 
         <a href="${window.location.protocol}//${
     window.location.hostname
-  }/form/launch/pest_control_technician?customerid=${
+  }/form/launch/pest_control_technician?${
     KDF.getParams().customerid
-  }&interactionid=${KDF.getParams().interactionid}">
-          technician</a>
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">report to a technician</a>
         for further investigation.
       </p>
     </section>
