@@ -101,7 +101,7 @@ const fleasTreatment = new ContentPaN(
 
 const badgerProtection = new ContentPaN(
   "badgerProtectionAct1992",
-  "The Protection of Badgers Act 1992",
+  "Badgers Protection in Britain",
   "Information about protecting badgers",
   `
     <p>
