@@ -31,6 +31,8 @@
 @import url('./components/customSearch.css');
 @import url('./components/customMap.css');
 
+@import url('./components/rentAccount.css');
+
 :root {
   /* ----- COLOURS ---------------------------------------------------------- */
 
