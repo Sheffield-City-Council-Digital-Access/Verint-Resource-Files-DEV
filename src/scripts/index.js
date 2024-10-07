@@ -1253,7 +1253,6 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     main.responsibility ||
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
     main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
-    main.customer ||
     bg.sitecode
       ? "CHS"
       : "";
@@ -2683,10 +2682,13 @@ var asset_init = false;
 var selectedLocation = "";
 
 const popupContent = function (feature) {
-  const div = document.createElement("div");
-  div.innerHTML =
-    "<div class='popup' style='font-weight: bold; font-size: medium;'></br>";
-  return div;
+  if (feature) {
+    const div = document.createElement("div");
+    div.innerHTML =
+      "<div class='popup' style='font-weight: bold; font-size: medium;'></br>";
+    return div;
+  }
+  return;
 };
 
 var vmap_config = {
