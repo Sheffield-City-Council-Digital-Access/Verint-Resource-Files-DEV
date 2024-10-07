@@ -189,20 +189,6 @@ const bedBugTreatment = new ContentPaN(
   "Bed Bug Treatment",
   "Information about Bed Bug treatment options in Sheffield",
   `
-    <h3>Commercial</h3>
-    <p>
-      For commercial enquiries about bed bug treatment, you will need to email your
-      request to
-      <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
-        >EnvironmentalServicesAdmin@sheffield.gov.uk</a
-      >. We will assess your request and provide you with a quote for the treatment.
-    </p>
-    <h3>Council Housing</h3>
-    <p>
-      If you live in council housing, please transfer to the back office for
-      treatment.
-    </p>
-    <h3>Domestic</h3>
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
       <p>
@@ -215,16 +201,16 @@ const bedBugTreatment = new ContentPaN(
       First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
     </address>
     <p>Or you can post your sample to:</p>
-    <p>
-      Please ensure your sample is in a secure, crush-proof container, alive or
-      dead. Attach information detailing:
-    </p>
     <address>
       Environmental Services<br />
       Block B, Staniforth Road Depot<br />
       Staniforth Road<br />
       Sheffield, S9 3HD
     </address>
+    <p>
+      Please ensure your sample is in a secure, crush-proof container, alive or
+      dead. Attach information detailing:
+    </p>
     <ul>
       <li>Your name</li>
       <li>Your address</li>
@@ -266,7 +252,21 @@ const bedBugTreatment = new ContentPaN(
         >EnvironmentalServicesAdmin@sheffield.gov.uk</a
       >. We will assess your request and provide you with a quote for the treatment.
     </p>
-    <h3>Bed Bugs: None of the Above</h3>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Commercial, Health Authority, Industrial and University</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          For bed bug treatment enquiries related to Commercial, Health Authority, Industrial, and
+          University properties, please email your request to
+          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
+            >EnvironmentalServicesAdmin@sheffield.gov.uk</a
+          >. We will assess your request and provide you with a quote for the treatment.
+        </p>
+      </div>
+    </details>
     <p>
       If your enquiry doesn't fall into any of the above categories, we will need to
       refer your report to a technician for further investigation.
