@@ -273,15 +273,6 @@ const requestGritBin = new ContentRaP(
     ></iframe>
     <h3>Grit Bin Allocations</h3>
     <p>
-      We cannot move a grit bin from it's assigned location.
-      <br />
-      If a grit bin has been moved we can return it to its assigned location.
-      <br />
-      If a grit bin is blocking access to a property, we will arrange for the site
-      to be inspected and assessed. This does not guarantee the grit bin will be
-      re-positioned or moved.
-    </p>
-    <p>
       We do not allocate any new grit bins once the winter period has started.
       Winter runs from the 1st October through to 31st March.
     </p>
@@ -299,6 +290,18 @@ const requestGritBin = new ContentRaP(
       <li>In an isolated area</li>
       <li>Near traffic signals (within 20m)</li>
     </ul>
+    <h3>Grit Bin Relocations</h3>
+    <p>
+      We cannot move a grit bin from it's assigned location.
+    </p>
+    <p>
+      If a grit bin has been moved we can return it to its assigned location.
+    </p>
+    <p>
+      If a grit bin is blocking access to a property, we will arrange for the site
+      to be inspected and assessed. This does not guarantee the grit bin will be
+      re-positioned or moved.
+    </p>
   `,
   {
     buttonLabel: "Request a grit bin",
