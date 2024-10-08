@@ -276,7 +276,6 @@ const requestGritBin = new ContentRaP(
       criteria below:
     </p>
     <ul>
-      <li>Minimum of two</li>
       <li>On a road that has a drainage problem</li>
       <li>On a road that has a steep gradient of 1 in 10 (10%)</li>
       <li>On a bad bend that has a radius of less than 50 meters</li>
