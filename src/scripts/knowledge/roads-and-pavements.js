@@ -305,13 +305,13 @@ const requestGritBin = new ContentRaP(
     formName: "request_grit_bin",
   },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "grit_bin_information_provided" },
   {
     type: "Request",
     keywords: ["Grit", "bin"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
+  { date: "08/10/2024", name: "Elliott Griffiths" }
 );
 
 const requestGritting = new ContentRaP(
@@ -421,13 +421,13 @@ const requestGritting = new ContentRaP(
     formName: "request_gritting",
   },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "gritting_and_snow_clearance_information_provided" },
   {
     type: "Request",
     keywords: ["Gritting"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
+  { date: "08/10/2024", name: "Elliott Griffiths" }
 );
 
 const roadPavementSurface = new FormRaP(
