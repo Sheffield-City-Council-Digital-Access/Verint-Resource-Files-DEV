@@ -101,8 +101,8 @@ const fleasTreatment = new ContentPaN(
 
 const badgerProtection = new ContentPaN(
   "badgerProtectionAct1992",
-  "Badgers Protection in Britain",
-  "Information about protecting badgers",
+  "Badgers Protection",
+  "Information about protecting badgers in Britain",
   `
     <p>
       The Protection of Badgers Act 1992 makes it illegal for any person to kill, injure or take a Badger. It is also an offence to cruelly ill-treat a Badger, to dig for or to snare a Badger.
@@ -143,7 +143,7 @@ const badgerProtection = new ContentPaN(
 
 const batProtectionBritain = new ContentPaN(
   "batProtectionBritain",
-  "Bat Protection in Britain",
+  "Bat Protection",
   "Information about protecting bats in Britain",
   `
     <p>
