@@ -388,7 +388,13 @@ const pestControl = new MenuPaN(
   "pestControl",
   "Pest Control",
   "Pest control treatments, services and pricing",
-  [fleasTreatment, badgerProtection, batProtectionBritain, bedBugTreatment]
+  [
+    badgerProtection,
+    batProtectionBritain,
+    bedBugTreatment,
+    fleasTreatment,
+    ratTreatment,
+  ]
 );
 
 const reportNeedlesGlass = new FormPaN(
