@@ -289,6 +289,101 @@ const bedBugTreatment = new ContentPaN(
   { date: "07/10/2024", name: "Elliott Griffiths" }
 );
 
+const ratTreatment = new ContentPaN(
+  "ratTreatment",
+  "Rat Treatment",
+  "Information about Rat treatment and services",
+  `
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Rats is £118.00. This covers you for up to 3 visits.
+      If you require further treatments, each additional treatment will cost £39.00.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment will be free:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Communal Areas</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          If the rats are in a communal area (an area shared by multiple Chouncil
+          Housing tenenats), 
+          <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/hou_estates_enquiry?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }">raise this with the estates team</a>.
+        </p>
+      </div>
+    </details>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Commercial, Health Authority, Industrial and University</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          For bed bug treatment enquiries related to Commercial, Health Authority, Industrial, and
+          University properties, please email your request to
+          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
+            >EnvironmentalServicesAdmin@sheffield.gov.uk</a
+          >. We will assess your request and provide you with a quote for the treatment.
+        </p>
+      </div>
+    </details>
+    <section class="notice-panel" role="region" aria-label="Notice panel">
+      <p>
+        If your enquiry doesn't fall into any of the above categories, we will need to
+        refer your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">report to a technician</a>
+        for further investigation.
+      </p>
+    </section>
+  `,
+  {
+    buttonLabel: "Book treatment for Bed Bugs",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Bed Bug", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "07/10/2024", name: "Elliott Griffiths" }
+);
+
 const pestControl = new MenuPaN(
   "pestControl",
   "Pest Control",
