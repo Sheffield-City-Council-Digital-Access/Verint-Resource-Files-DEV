@@ -1459,6 +1459,11 @@ const whereICanVote = new ContentEaR(
   "Where can I vote",
   "",
   `
+    <h3>Polling Stations</h3>
+    <iframe
+      src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=2c10878d034544718d4ea5c733b03559"
+      style="height: 400px; width: 100%"
+    ></iframe>
     <p>
       SERVICE HAS NOwhereICanVoteT PROVIDED THE LINK FOR 'WHERE DO I VOTE?
     </p>
