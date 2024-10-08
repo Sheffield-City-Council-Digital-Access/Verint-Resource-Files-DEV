@@ -92,7 +92,7 @@ p,
 #dform_container, .select2-container p {
   font-family: var(--font-paragraph);
   padding: unset;
-  background-color: var(--color-background);
+  background-color: transparent;
   margin-block: 1.6rem;
   font-size: var(--font-size-p1);
   font-weight: var(--font-weight-regular);
