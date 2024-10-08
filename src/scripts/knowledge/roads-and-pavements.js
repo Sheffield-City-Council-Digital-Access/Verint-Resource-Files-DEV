@@ -285,7 +285,7 @@ const requestGritting = new ContentRaP(
   "requestGritting",
   "Gritting routes",
   "View gritting routes and request gritting or snow clearance",
-  `## needs information around gritting prioritys and gritting routes ##`,
+  `<iframe src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=796ba9a88ab04607a265d78e93d36d5c" style="height:300px;width:100%"></iframe>`,
   {
     buttonLabel: "Request gritting or snow clearance",
     formName: "request_gritting",
