@@ -267,6 +267,20 @@ const requestGritBin = new ContentRaP(
   "Grit bin locations",
   "View grit bin locations and request a grit bin",
   `
+    <iframe
+      src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=796ba9a88ab04607a265d78e93d36d5c"
+      style="height: 400px; width: 100%"
+    ></iframe>
+    <h3>Grit Bin Allocations</h3>
+    <p>
+      We cannot move a grit bin from it's assigned location.
+      <br />
+      If a grit bin has been moved we can return it to its assigned location.
+      <br />
+      If a grit bin is blocking access to a property, we will arrange for the site
+      to be inspected and assessed. This does not guarantee the grit bin will be
+      re-positioned or moved.
+    </p>
     <p>
       We do not allocate any new grit bins once the winter period has started.
       Winter runs from the 1st October through to 31st March.
@@ -285,11 +299,6 @@ const requestGritBin = new ContentRaP(
       <li>In an isolated area</li>
       <li>Near traffic signals (within 20m)</li>
     </ul>
-    <h3>Grit Bin Locations</h3>
-    <iframe
-      src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=796ba9a88ab04607a265d78e93d36d5c"
-      style="height: 400px; width: 100%"
-    ></iframe>
   `,
   {
     buttonLabel: "Request a grit bin",
@@ -310,25 +319,15 @@ const requestGritting = new ContentRaP(
   "Gritting routes",
   "View gritting routes and request gritting or snow clearance",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
-      <h3>Gritting Requests</h3>
-      <p>We will only take gritting requests in emergencies such as:</p>
-      <ul>
-        <li>A burst water main</li>
-        <li>An accident has occurred</li>
-        <li>A request from emergency services</li>
-      </ul>
-    </section>
-    <h3>Gritting Routes</h3>
+    <iframe
+    src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=07f393cef2684b47b429d4a232277bd0"
+    style="height: 400px; width: 100%"
+    ></iframe>
     <p>
       Priority one and two routes are gritted when freezing temperatures are
       forecast. The route cannot be changed.
     </p>
     <p>The priority routes are the main roads used for getting around the city.</p>
-    <iframe
-      src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=07f393cef2684b47b429d4a232277bd0"
-      style="height: 400px; width: 100%"
-    ></iframe>
     <h3>Gritting Priorities</h3>
     <ul>
       <li>
@@ -349,11 +348,10 @@ const requestGritting = new ContentRaP(
       <li><strong>Roads on the NHS list</strong></li>
       <li><strong>Veolia collection routes e.g. next days black bins</strong></li>
       <li><strong>Very special circumstances e.g. funerals</strong></li>
-      <li>
-        We will only gritting side roads once traffic is flowing on all these
-        priorities.
-      </li>
     </ul>
+    <p>
+      We will only gritting side roads once traffic is flowing on all these priorities.
+    </p>
     <details class="accordion">
       <summary class="accordion-header">
         <h3>NHS Patients</h3>
@@ -408,6 +406,15 @@ const requestGritting = new ContentRaP(
   }">Raise this with the estates team</a>.</p>
       </div>
     </details>
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Gritting Requests</h3>
+      <p>We will only take gritting requests in emergencies such as:</p>
+      <ul>
+        <li>A burst water main</li>
+        <li>An accident has occurred</li>
+        <li>A request from emergency services</li>
+      </ul>
+    </section>
   `,
   {
     buttonLabel: "Request gritting or snow clearance",
