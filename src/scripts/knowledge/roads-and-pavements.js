@@ -266,7 +266,32 @@ const requestGritBin = new ContentRaP(
   "requestGritBin",
   "Grit bin locations",
   "View grit bin locations and request a grit bin",
-  `## needs information around grit bin locations and requesting a grit bin ##`,
+  `
+    <p>
+      We do not allocate any new grit bins once the winter period has started.
+      Winter runs from the 1st October through to 31st March.
+    </p>
+    <p>
+      For a new grit bin to be considered, the location must meet two or more of the
+      criteria below:
+    </p>
+    <ul>
+      <li>Minimum of two</li>
+      <li>On a road that has a drainage problem</li>
+      <li>On a road that has a steep gradient of 1 in 10 (10%)</li>
+      <li>On a bad bend that has a radius of less than 50 meters</li>
+      <li>On a junction</li>
+      <li>On a road that has a main entrance to sheltered housing</li>
+      <li>On a road that has a main entrance to a school</li>
+      <li>In an isolated area</li>
+      <li>Near traffic signals (within 20m)</li>
+    </ul>
+    <h3>Grit Bin Locations</h3>
+    <iframe
+      src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=796ba9a88ab04607a265d78e93d36d5c"
+      style="height: 400px; width: 100%"
+    ></iframe>
+  `,
   {
     buttonLabel: "Request a grit bin",
     formName: "request_grit_bin",
@@ -285,7 +310,106 @@ const requestGritting = new ContentRaP(
   "requestGritting",
   "Gritting routes",
   "View gritting routes and request gritting or snow clearance",
-  `<iframe src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=796ba9a88ab04607a265d78e93d36d5c" style="height:300px;width:100%"></iframe>`,
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Gritting Requests</h3>
+      <p>We will only take gritting requests in emergencies such as:</p>
+      <ul>
+        <li>A burst water main</li>
+        <li>An accident has occurred</li>
+        <li>A request from emergency services</li>
+      </ul>
+    </section>
+    <h3>Gritting Routes</h3>
+    <p>
+      Priority one and two routes are gritted when freezing temperatures are
+      forecast. The route cannot be changed.
+    </p>
+    <p>The priority routes are the main roads used for getting around the city.</p>
+    <iframe
+      src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=07f393cef2684b47b429d4a232277bd0"
+      style="height: 400px; width: 100%"
+    ></iframe>
+    <h3>Gritting Priorities</h3>
+    <ul>
+      <li>
+        <strong>Priority 1 Routes</strong> – these are the main and arterial roads
+        which link Sheffield to other major cities, the motorway network and provide
+        a means of access to key emergency facilities such as hospitals and fire
+        stations.
+      </li>
+      <li>
+        <strong>Priority 2 Routes</strong> - these cover the other main roads, link
+        roads, roads where key public service facilities (such as schools, doctor’s
+        surgeries and care homes) are located, and rural routes serving less
+        populated areas.
+      </li>
+      <li>
+        <strong>Emergencies (brought to us by the emergency services)</strong>
+      </li>
+      <li><strong>Roads on the NHS list</strong></li>
+      <li><strong>Veolia collection routes e.g. next days black bins</strong></li>
+      <li><strong>Very special circumstances e.g. funerals</strong></li>
+      <li>
+        We will only gritting side roads once traffic is flowing on all these
+        priorities.
+      </li>
+    </ul>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>NHS Patients</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          The NHS have a list of patients who will need priority access to hospitals
+          during bad weather. This list is compiled by doctors and clinical staff
+          and may include patients on dialysis or receiving chemotherapy.
+        </p>
+        <p>
+          The NHS has a contract with a company who have the provision of 4x4
+          vehicles, which can be used during bad weather.
+        </p>
+        <p>
+          Customers who are concerned about whether they are on the NHS list, or
+          want further information, can contact the NHS.
+        </p>
+        <p>
+          Alternatively, customers can contact their GP or health provider/hospital
+          who will be able to assist. Please refer customers who are concerned about
+          outpatient appointments to their NHS Outpatients Department or GP.
+        </p>
+      </div>
+    </details>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Will Housing Services grit my path?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          As a guide, the area estates teams may consider gritting the following:
+        </p>
+        <ul>
+          <li>Communal drying areas and landings</li>
+          <li>
+            Pathways, steps and entrances leading to blocks - especially if there
+            are a high proportion of older people living in the blocks
+          </li>
+          <li>Around housing offices and meeting rooms</li>
+        </ul>
+        <p><a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/hou_estates_enquiry?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }">Raise this with the estates team</a>.</p>
+      </div>
+    </details>
+  `,
   {
     buttonLabel: "Request gritting or snow clearance",
     formName: "request_gritting",
