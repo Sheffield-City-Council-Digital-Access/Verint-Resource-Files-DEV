@@ -366,14 +366,14 @@ const ratTreatment = new ContentPaN(
     </section>
   `,
   {
-    buttonLabel: "Book treatment for Bed Bugs",
+    buttonLabel: "Book treatment for Rats",
     formName: "pest_control_treatment",
   },
   { typeKey: "pest_control_transfer_to_service" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Information",
-    keywords: ["Bed Bug", "Treatment", "Pests", "Vermin"],
+    keywords: ["Rats", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
