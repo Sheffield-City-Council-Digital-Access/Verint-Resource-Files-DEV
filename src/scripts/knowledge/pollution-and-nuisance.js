@@ -92,7 +92,7 @@ const fleasTreatment = new ContentPaN(
   { typeKey: "" },
   { typeKey: "" },
   {
-    type: "Booking",
+    type: "Information",
     keywords: ["Flea"],
     categories: ["Pollution and Nuisance", "Environmental", "Pest Constrol"],
   },
@@ -125,7 +125,7 @@ const badgerProtection = new ContentPaN(
     formName: "",
   },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "pest_control_information_provided" },
   {
     type: "Information",
     keywords: ["Badger", "Protection", "Act", "Illegal"],
@@ -168,7 +168,7 @@ const batProtectionBritain = new ContentPaN(
     formName: "",
   },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "pest_control_information_provided" },
   {
     type: "Information",
     keywords: ["Bat", "Protection", "Britain", "Illegal"],
@@ -277,7 +277,7 @@ const bedBugTreatment = new ContentPaN(
   { typeKey: "pest_control_transfer_to_service" },
   { typeKey: "pest_control_information_provided" },
   {
-    type: "Information",
+    type: "Book",
     keywords: ["Bed Bug", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
@@ -372,7 +372,7 @@ const ratTreatment = new ContentPaN(
   { typeKey: "pest_control_transfer_to_service" },
   { typeKey: "pest_control_information_provided" },
   {
-    type: "Information",
+    type: "Book",
     keywords: ["Rats", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
