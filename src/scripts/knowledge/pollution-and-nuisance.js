@@ -56,8 +56,8 @@ class FormPaN extends CorePaN {
 
 const fleasTreatment = new ContentPaN(
   "fleasTreatment",
-  "Flea Treatment",
-  "Information about fleas and treatment options",
+  "Fleas",
+  "Information about fleas",
   `
     <p>
       It is true to say that normally we wouldn’t ask for evidence of Fleas before a treatment is booked.
