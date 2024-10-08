@@ -135,7 +135,7 @@ const childTravelPasss = new ContentTaT(
     buttonLabel: "Apply for childrens travel pass",
     formName: "childrens_travel_pass",
   },
-  { typeKey: "childrens_travel_pass_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "childrens_travel_pass_information_provided" },
   {
     type: "Apply",
