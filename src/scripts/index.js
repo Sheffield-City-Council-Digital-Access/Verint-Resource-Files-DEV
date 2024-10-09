@@ -1334,10 +1334,6 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       KDF.showWarning(
         "This case manamgement form already exists for this case."
       );
-      const titleContainer = document.querySelectorAll(".title-container");
-      titleContainer.forEach((element) => {
-        titleContainer.remove();
-      });
       const dformHolder = document.getElementById("dform_holder");
       if (dformHolder) {
         dformHolder.remove();
