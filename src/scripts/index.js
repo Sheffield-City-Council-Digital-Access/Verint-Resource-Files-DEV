@@ -558,6 +558,16 @@ function handleOnReadyEvent(event, kdf) {
         }
       });
     }
+
+    if (kdf.form.name.startsWith("cm_") && kdf.form.caseid && !kdf.form.ref) {
+      KDF.customdata(
+        "check-for-existing-case-management-form",
+        "_KDF_ready",
+        true,
+        true,
+        {}
+      );
+    }
   }
 
   // --- UPDATE SESSION ---------------------------------------------------- \\
@@ -1319,6 +1329,16 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
 // --- HANDLE ON SUCCESSFUL ACTION EVENT ---------------------------------- \\
 
 function handleSuccessfulAction(event, kdf, response, action, actionedby) {
+  if (action === "check-for-existing-case-management-form") {
+    if (response.data.existingForm === "true") {
+      KDF.makeReadonly();
+      KDF.disableNavToLastPage();
+      KDF.showWarning(
+        "This case manamgement form already exists for this case."
+      );
+    }
+  }
+
   // Check if the action is to check the map status
   if (action === "check-map-status") {
     // Spread the data object
