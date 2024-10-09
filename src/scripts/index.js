@@ -1331,11 +1331,10 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
 function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   if (action === "check-for-existing-case-management-form") {
     if (response.data.existingForm === "true") {
-      KDF.makeReadonly();
-      KDF.disableNavToLastPage();
-      KDF.showWarning(
-        "This case manamgement form already exists for this case."
-      );
+      const dform_holder = document.getElementById("dform_holder");
+      if (dform_holder) {
+        dform_holder.remove();
+      }
     }
   }
 
