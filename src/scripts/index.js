@@ -1331,9 +1331,7 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
 function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   if (action === "check-for-existing-case-management-form") {
     if (response.data.existingForm === "true") {
-      KDF.showWarning(
-        "This case manamgement form already exists for this case."
-      );
+      KDF.showInfo("This case manamgement form already exists for this case");
       const dformHolder = document.getElementById("dform_holder");
       if (dformHolder) {
         dformHolder.remove();
