@@ -116,7 +116,7 @@ const fundedEarlyLearning = new ContentSaC(
       visit the childcare choices page, there is an assessment tool offering
       families details of childcare support they might be eligible for and a link to
       apply to HMRC.
-      <a href="https://www.childcarechoices.gov.uk">Childcare Choices</a>
+      <a href="https://www.childcarechoices.gov.uk">https://www.childcarechoices.gov.uk</a>
     </p>
     <p>
       From September 2025: <br />Eligible working parents of children from 9 months
