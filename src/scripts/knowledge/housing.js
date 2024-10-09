@@ -84,9 +84,12 @@ const gardenPledgeScheme = new ContentH(
       questions.
     </p>
     <p>
-      List of Gardening Services: G:\CEX\Corp Res\CS-Gen\Contact Centre\CRM
-      Spreadsheets\Estates\Garden\Alternative Garden Services List.xls - (This list
-      can be provided to customers (emailed, posted, etc.))
+      List of Gardening Services:
+      <a
+        href="G:\CEX\Corp Res\CS-Gen\Contact Centre\CRM\Spreadsheets\Estates\Garden\Alternative Garden Services List.xls"
+        >Alternative Garden Services List</a
+      >
+      - (This list can be provided to customers (emailed, posted, etc.))
     </p>
     <p>
       Please note, these companies are not endorsed by Sheffield City Council. The
@@ -105,7 +108,7 @@ const gardenPledgeScheme = new ContentH(
   { typeKey: "" },
   { typeKey: "" },
   { type: "Request", keywords: [], categories: ["Housing"] },
-  { date: "05/09/2024", name: "Elliott Griffiths" }
+  { date: "09/10/2024", name: "Elliott Griffiths" }
 );
 
 const fencesCouncilHousing = new ContentH(
