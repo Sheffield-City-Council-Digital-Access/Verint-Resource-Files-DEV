@@ -490,7 +490,7 @@ const abandonedVehicles = new ContentPaN(
     <p>
       Removing an abandoned vehicle is a matter for us or the police.
     </p>
-    <h4>Police responsibility</h4>
+    <h3>Police responsibility</h3>
     <p>
       The police will be responsible for removing the vehicle if:
       <ul>
@@ -503,7 +503,7 @@ const abandonedVehicles = new ContentPaN(
       If this fits the description of the vehicle you think has been abandoned
       then please call the police on 101 to report it.
     </p>
-    <h4>Our responsibility</h4>
+    <h3>Our responsibility</h3>
     <p>
       If the vehicle does not fall into any of the categories above and you
       suspect it to be abandoned, please report it to us.
