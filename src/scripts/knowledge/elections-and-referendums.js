@@ -1096,6 +1096,10 @@ const whereDoIVote = new ContentEaR(
   "Where Do I Vote",
   "",
   `
+    <iframe
+      src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=2c10878d034544718d4ea5c733b03559"
+      style="height: 400px; width: 100%"
+    ></iframe>
     <p>
       SERVICE HAS NOT PROVIDED THE LINK FOR 'WHERE DO I VOTE?
     </p>
@@ -1331,7 +1335,7 @@ const localElections = new ContentEaR(
 
 const parishElections = new ContentEaR(
   "parishElections",
-  "parish Elections",
+  "Parish Elections",
   "Parish Councils are separate local authorities to the City Council, with their own elected members. They are wholly contained within the City Council boundary. A parish councillor can stand for election to the City Council and vice versa.",
   `
     <p>
@@ -1456,7 +1460,7 @@ const electionResults = new ContentEaR(
 
 const whereICanVote = new ContentEaR(
   "whereICanVotes",
-  "Where can I vote",
+  "Where Can I Vote",
   "",
   `
     <h3>Polling Stations</h3>
@@ -1507,7 +1511,7 @@ const councillors = new ContentEaR(
 
 const familyTreeorGenealogy = new ContentEaR(
   "familyTreeorGenealogy",
-  "family Tree or Genealogy",
+  "Family Tree or Genealogy",
   "",
   `
     <p>
