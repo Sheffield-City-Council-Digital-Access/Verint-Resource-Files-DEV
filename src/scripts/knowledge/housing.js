@@ -54,12 +54,46 @@ class FormH extends CoreH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
+const fencesCouncilHousing = new ContentH(
+  "fencesCouncilHousing",
+  "Fences (Council Housing)",
+  "Desc tbc",
+  `
+    <h3>New Fence</h3>
+    <p>
+      Installation of fences is the tenants responsibility. The customer will need
+      to have permission to install a new fence.
+    </p>
+    <h3>Repair to an Existing Fence</h3>
+    <p>
+      The Council do not repair tenants' fences. It is the tenant's responsibility.
+    </p>
+    <h3>Fallen Fence to be Removed</h3>
+    <p>
+      Estate Services teams will only remove blown down fences if they are a safety
+      hazard.
+    </p>
+  `,
+  { buttonLabel: "Example 1", formName: "example_form" },
+  { typeKey: "example_transfered_to_service" },
+  { typeKey: "example_information_provided" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "05/09/2024", name: "Elliott Griffiths" }
+);
+
+const estatesAndEnvironments = new MenuH(
+  "estatesAndEnvironments",
+  "Estates and Environments",
+  "Desc tbc",
+  [fencesCouncilHousing]
+);
+
 // Example instantiation for topicExample1
 const topicExample1 = new ContentH(
   "topicexample1",
   "Topic Title Example 1",
   "Topic Description Example 1",
-  "<p>example text</p>",
+  `<p>example text</p>`,
   { buttonLabel: "Example 1", formName: "example_form" },
   { typeKey: "example_transfered_to_service" },
   { typeKey: "example_information_provided" },
@@ -80,7 +114,7 @@ const subjectExample1 = new ContentH(
   "subjectexample1",
   "Subject Title Example 1",
   "Subject Description Example 1",
-  "<p>example text</p>",
+  `<p>example text</p>`,
   { buttonLabel: "Example 1", formName: "example_form" },
   { typeKey: "example_transfered_to_service" },
   { typeKey: "example_information_provided" },
@@ -95,5 +129,5 @@ const housing = new ServiceH(
   "housing",
   "Housing",
   "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-  [subjectExample1, subjectExample2]
+  [subjectExample1, subjectExample2, estatesAndEnvironments]
 );
