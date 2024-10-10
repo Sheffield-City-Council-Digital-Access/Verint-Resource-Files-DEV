@@ -803,6 +803,695 @@ const ratTreatment = new ContentPaN(
   { date: "07/10/2024", name: "Elliott Griffiths" }
 );
 
+const clusterFilesTreatment = new ContentPaN(
+  "clusterFilesTreatment",
+  "Cluster Files Treatment",
+  "Information about Cluster Files treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Cluster Files in your domestic property, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+      If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Cluster Files is £110.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Cluster Files",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Cluster Files", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "10/10/2024", name: "Shahzad Athar" }
+);
+
+const cockroachesProtection = new ContentPaN(
+  "cockroachesProtection",
+  "Cockroaches Protection",
+  "Information about Cockroaches Protection and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Cockroaches in your domestic property, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+      If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Cockroaches is £330.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £97:00:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Cockroaches",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Cockroaches", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "10/10/2024", name: "Shahzad Athar" }
+);
+
+const cricketsTreatment = new ContentPaN(
+  "cricketsTreatment",
+  "crickets Treatment",
+  "Information about Crickets Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Crickets in your domestic property, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+      If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      The Treatment cost for Crickets is £110.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Crickets",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Crickets", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "10/10/2024", name: "Shahzad Athar" }
+);
+
+const dermestesBeetlesTreatment = new ContentPaN(
+  "dermestesBeetlesTreatment",
+  "Dermestes Beetles Treatment",
+  "Information about Dermestes Beetles Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Dermestes Beetles in your domestic property, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+      If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Dermestes Beetles is £110.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Dermestes Beetles",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Dermestes Beetles", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "10/10/2024", name: "Shahzad Athar" }
+);
+
+const filesTreatment = new ContentPaN(
+  "filesTreatment",
+  "Files Treatment",
+  "Information about Files Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Files in your domestic property, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+      If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Files is £110.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Files",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Files", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "10/10/2024", name: "Shahzad Athar" }
+);
+
+const foxesInformation = new ContentPaN(
+  "foxesInformation",
+  "Foxes Information",
+  "Information about Foxes",
+  `
+   <p>Sheffield City Council doesn't offer a service for foxes.</p>
+    <p>For advice/information on foxes, please visit 
+    <a href="http://foxproject.org.uk/" target="_blank">the Fox Project</a>.
+    </p>
+  `,
+  {
+    buttonLabel: "",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "",
+    keywords: ["Foxes", "", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "10/10/2024", name: "Shahzad Athar" }
+);
+
+const FrogsorFrogspawn = new ContentPaN(
+  "FrogsorFrogspawn",
+  "Frogs or Frogspawn",
+  "Information about Frogs or Frogspawn",
+  `
+   <p>Sheffield City Council doesn't offer a service for Frogs or Frogspawn.</p>
+    <p>For advice/information on Frogs or Frogspawn, please call DEFRA who are licenced to remove 
+    frogs or frog spawn on <strong>0113 2613333</strong> or visit 
+    <a href="https://www.gov.uk/browse/environment-countryside" target="_blank">Browse Environment and Countryside</a>.
+    </p>
+  `,
+  {
+    buttonLabel: "",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "",
+    keywords: ["Frogs or Frogspwan", "", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "10/10/2024", name: "Shahzad Athar" }
+);
+
+const furBeetlesTreatment = new ContentPaN(
+  "furBeetlesTreatment",
+  "Fur Beetles Treatment",
+  "Information about Fur Beetles Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Fur Beetles in your domestic property, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+      If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Fur Beetles is £110.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Fur Beetles",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Fur Beetles", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "10/10/2024", name: "Shahzad Athar" }
+);
+
+const gardenAntsTreatment = new ContentPaN(
+  "gardenAntsTreatment",
+  "Garden Ants Treatment",
+  "Information about Garden Ants Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Garden Ants is £75.50. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £58:00:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Garden Ants",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Garden Ants", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "10/10/2024", name: "Shahzad Athar" }
+);
+
+const ladyBirdsTreatment = new ContentPaN(
+  "ladyBirdsTreatment",
+  "Lady Birds Treatment",
+  "Information about Lady Birds Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Lady Birds is £110:00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Lady Birds",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Lady Birds", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "10/10/2024", name: "Shahzad Athar" }
+);
+
+const masonryBeesTreatment = new ContentPaN(
+  "masonryBeesTreatment",
+  "Masonry BeesTreatment",
+  "Information about Masonry Bees Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Masonry Bees is £75.50. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £58:00:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+    If there is more than one nest, a charge of £39.00 per addition nest will be applied.
+    </p>
+    <h3>Nests Up High</h3>
+    <p>
+    Officers carry equipment that enables them to treat a nest located at height.<br>
+    In most cases the officer will be able to carry out a successful treatment using such equipment.<br>
+    If any further access equipment is required to treat the nest our officer will inform you of this at the time of the visit. 
+    If further access is equipment is required, then it would possibly mean an added cost.<br>
+    If your customer is unsure about the possible additional cost, escalate pest control enquiry and an officer will contact the customer about it.
+    </p>
+    <p>
+      <strong>All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.</strong>
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Masonry Bees",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Masonry Bees", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "10/10/2024", name: "Shahzad Athar" }
+);
+
+
 const pestControl = new MenuPaN(
   "pestControl",
   "Pest Control",
@@ -817,6 +1506,17 @@ const pestControl = new MenuPaN(
     bumbleBeesTreatment,
     carpetBeetlesTreatment,
     ratTreatment,
+    clusterFilesTreatment,
+    cockroachesProtection,
+    cricketsTreatment,
+    dermestesBeetlesTreatment,
+    filesTreatment,
+    foxesInformation,
+    FrogsorFrogspawn,
+    furBeetlesTreatment,
+    gardenAntsTreatment,
+    ladyBirdsTreatment,
+    masonryBeesTreatment, 
   ]
 );
 
