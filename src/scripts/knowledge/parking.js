@@ -232,6 +232,10 @@ const blueBadge = new MenuP(
   ]
 );
 
+// --------- KEEP THIS AT THE TOP ------------------------------------------- \\
+// --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
+
+
 const businessPermit = new ContentP(
   "businessPermit",
   "Business Permit",

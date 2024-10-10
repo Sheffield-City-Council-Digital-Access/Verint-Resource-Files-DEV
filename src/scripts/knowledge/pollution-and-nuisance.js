@@ -84,6 +84,59 @@ const fleasTreatment = new ContentPaN(
       These are the cases where we may ask for a sample, or picture to be provided for ID.
       Also we could suggest that we can monitor their property to determine if there is a flea problem, then offer a treatment if fleas are found on the traps.
     </p>
+
+   <h3>Cost for Fleas Treatment</h3>
+  
+    <p>The treatment cost for Fleas is <strong>£132.00</strong>.
+    </p>
+    <p>This charge is based on a standard size of a 3 bed semi-detached property. 
+    If the property is bigger than this, please escalate the enquiry so a quote can be provided.
+    </p>
+    <p>If you are in receipt of one of the benefits listed below, the treatment cost will be reduced to <strong>£69.50</strong>.
+    </p>
+<ul>
+    <li>Housing Benefit</li>
+    <li>Income Support</li>
+    <li>Pension Credit</li>
+    <li>Income Related Job Seekers Allowance</li>
+    <li>Income related Employment Allowance</li>
+</ul>
+<p>In all cases proof should be provided to the officer who attends your property.
+</p>
+
+<h3>Call Out Charges</h3>
+<p>All prices contain a call out fee of <strong>£39</strong>.
+</p>
+<p>If we attend the property and the officer is unable to complete the treatment, the call out charge will be applied.
+</p>
+
+<h3>Sample Required</h3>
+<p>Before we can provide treatment, we will need a sample of the pest.
+</p>
+<p>You can either bring your sample into:
+</p>
+<address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+<p>You will need to provide your sample in a secure crush proof container whether alive or dead and attach information detailing:
+</p>
+<ul>
+    <li>Your name</li>
+    <li>Your address</li>
+    <li>Your contact number and/or email</li>
+    <li>How long the insects have been present</li>
+    <li>Wherein the property the insects have been found</li>
+</ul>
+
+<p>If a sample has been provided and the pests have been confirmed, you can request a treatment.
+</p>
   `,
   {
     buttonLabel: "",
@@ -289,6 +342,398 @@ const bedBugTreatment = new ContentPaN(
   { date: "07/10/2024", name: "Elliott Griffiths" }
 );
 
+const birdsandPigeonsTreatment = new ContentPaN(
+  "birdsandPigeonsTreatment",
+  "Birds and Pigeons Treatment",
+  "Information about birds and Pigeons Treatment",
+  `
+  <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Commercial, Health Authority, Industrial and University</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          For bird and pegions treatment enquiries related to Commercial, Health Authority, Industrial, and
+          University properties, please email your request to
+          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
+            >EnvironmentalServicesAdmin@sheffield.gov.uk</a
+          >. We will assess your request and provide you with a quote for the treatment.
+        </p>
+      </div>
+    </details>
+    <section class="notice-panel" role="region" aria-label="Notice panel">
+      <p>
+        If your enquiry doesn't fall into any of the above categories, we will need to
+        refer your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">report to a technician</a>
+        for further investigation.
+      </p>
+    </section>
+  `,
+  {
+    buttonLabel: "Book treatment for Birds and Pegions",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Birds and Pegions", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "09/10/2024", name: "Shahzad Athar" }
+);  
+  
+const biscuitBeetlesTreatment = new ContentPaN(
+  "biscuitBeetlesTreatment",
+  "Biscuit Beetles Treatment",
+  "Information about Biscuit Beetles treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Biscuit Beetles in your domestic property
+        such as Council House, Housing Association or Privated Rented, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Biscuit Beetle treatment is £110.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50.00:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Commercial and Multiple Occupation House,</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          For Biscuit Beetles treatment enquiries related to Commercial and House in Multiple Occuption, 
+          please email your request to
+          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
+            >EnvironmentalServicesAdmin@sheffield.gov.uk</a
+          >. We will assess your request and provide you with a quote for the treatment.
+        </p>
+      </div>
+    </details>
+    <section class="notice-panel" role="region" aria-label="Notice panel">
+      <p>
+        If your enquiry doesn't fall into any of the above categories, we will need to
+        refer your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">report to a technician</a>
+        for further investigation.
+      </p>
+    </section>
+  `,
+  {
+    buttonLabel: "Book treatment for Biscuit Beetles",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Biscuit Beetles", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "09/10/2024", name: "Shahzad Athar" }
+);
+
+const bumbleBeesTreatment = new ContentPaN(
+  "bumbleBeesTreatment",
+  "Bumble Bees Treatment",
+  "Information about Bumble Bees treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Cost for Treatment</h3>
+    <p>
+      If the pests located in a communal area (The area that is shared by multiple Council Housing properties) or 
+      required treatment for a demestic properties such as Council Housing, Housing Association, Private Owned, Private Rented,
+      then the treatment cost for Bumble Bees is £75.50.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £58:00.
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <h3>Nests Up High</h3>
+    <p>
+    Officers carry equipment that enables them to treat a nest located at height.
+    In most cases the officer will be able to carry out a successful treatment using such equipment.
+    </p>
+    <p>
+    If any further access equipment is required to treat the nest, our officer will inform you of this at the time of the visit. 
+    If further access equipment is required, then it would possibly mean an added cost.
+    </p>
+    <p>
+    If your customer is unsure about the possible additional cost, 
+    escalate pest control enquiry and an officer will contact the customer about it.
+    </p>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+    </section>
+    
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Commercial and Multiple Occupation House,</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          For Bumble Bees treatment enquiries related to Commercial and House in Multiple Occuption, 
+          please email your request to
+          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
+            >EnvironmentalServicesAdmin@sheffield.gov.uk</a
+          >. We will assess your request and provide you with a quote for the treatment.
+        </p>
+      </div>
+    </details>
+    <section class="notice-panel" role="region" aria-label="Notice panel">
+      <p>
+        If your enquiry doesn't fall into any of the above categories, we will need to
+        refer your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">report to a technician</a>
+        for further investigation.
+      </p>
+    </section>
+  `,
+  {
+    buttonLabel: "Book treatment for Bumble Bees",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Bumble Bees", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "09/10/2024", name: "Shahzad Athar" }
+);
+
+const carpetBeetlesTreatment = new ContentPaN(
+  "carpetBeetlesTreatment",
+  "carpet Beetles Treatment",
+  "Information about Carpet Beetles treatment and services",
+  `
+  <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Carpet Beetles in your domestic property
+        such as Council House, Housing Association or Privated Rented, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+      If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+    </section>
+
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Cost for Treatment</h3>
+    <p>
+      If the pests located in a communal area (The area that is shared by multiple Council Housing properties) or 
+      required treatment for a demestic properties such as Council Housing, Housing Association, Private Owned, Private Rented,
+      then the treatment cost for Carpet Beetles is £132.00.
+      This charge is based on a standard size of a 3-bed semi-detached property. 
+      If the property is bigger than this, please escalate the enquiry so a quote can be provided.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £58:00.
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+    </section>
+    
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Commercial and Multiple Occupation House,</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          For Carpet Beetles treatment enquiries related to Commercial and House in Multiple Occuption, 
+          please email your request to
+          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
+            >EnvironmentalServicesAdmin@sheffield.gov.uk</a
+          >. We will assess your request and provide you with a quote for the treatment.
+        </p>
+      </div>
+    </details>
+    <section class="notice-panel" role="region" aria-label="Notice panel">
+      <p>
+        If your enquiry doesn't fall into any of the above categories, we will need to
+        refer your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">report to a technician</a>
+        for further investigation.
+      </p>
+    </section>
+  `,
+  {
+    buttonLabel: "Book treatment for Carpet Beetles",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Carpet Beetles", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "09/10/2024", name: "Shahzad Athar" }
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const ratTreatment = new ContentPaN(
   "ratTreatment",
   "Rat Treatment",
@@ -389,13 +834,20 @@ const pestControl = new MenuPaN(
   "Pest Control",
   "Pest control treatments, services and pricing",
   [
+    fleasTreatment,
     badgerProtection,
     batProtectionBritain,
     bedBugTreatment,
-    fleasTreatment,
+    birdsandPigeonsTreatment,
+    biscuitBeetlesTreatment,
+    bumbleBeesTreatment,
+    carpetBeetlesTreatment,
     ratTreatment,
   ]
 );
+
+//........//.....//.........//........//........
+
 
 const reportNeedlesGlass = new FormPaN(
   "reportNeedlesGlass",
