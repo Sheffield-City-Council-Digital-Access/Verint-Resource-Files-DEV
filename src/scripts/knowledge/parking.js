@@ -223,7 +223,7 @@ const blueBadge = new ContentP(
 const parkingPermits = new ContentP(
   "parkingPermits",
   "Parking Permits",
-  "Parking Permits",
+  "Infomation regarding to Parking Permits",
   `
 	<h2>Parking Permits</h2>
 	<h3>About the Permit</h3>
@@ -680,10 +680,9 @@ const parkingIssues = new ContentP(
     { date: "02/10/2024", name: "Dinah WIlliams" }
 );
 
- 
- const parkingPermits = new MenuDaMH(
-    "parkingPermit",
-    "Parking Services",
+  const parkingMenu = new MenuP(
+    "parkingMenu",
+    "Parking Menu",
     "Provides a range of information on ordering, cancelling or paying for permits and the costs associated",
     [
       carerPermitAndMedical,
