@@ -56,41 +56,9 @@ class FormPaN extends CorePaN {
 
 const fleasTreatment = new ContentPaN(
   "fleasTreatment",
-  "Fleas",
+  "Flea Treatment",
   "Information about fleas",
   `
-    <p>
-      It is true to say that normally we wouldn’t ask for evidence of Fleas before a
-      treatment is booked. This is due to the fact that they are difficult to catch
-      and hard to see.
-    </p>
-    <p>
-      However sometimes people have skin conditions, or some sort of Psychological
-      problems which makes them believe that they have a biting insect infestation.
-    </p>
-    <p>
-      Usually by talking to the customer you can decide whether a treatment for
-      fleas should be booked at the point of contact for eg. If they have a cat or a
-      dog, and have bites on their legs (usually lower legs, and around the ankles)
-      They may have just moved into a property that has been vacant, and have got
-      bites and seen small dark brown/black insects “ jumping” around the place.
-    </p>
-    <h3>Complaints to Be Wary Of</h3>
-    <ul>
-      <li>Customers who phone saying they have fleas because:</li>
-      <ul>
-        <li>They feel like something is crawling on them!</li>
-        <li>They are itching!</li>
-        <li>They are covered all over their body in bites.</li>
-        <li>They have no pets.</li>
-      </ul>
-    </ul>
-    <p>
-      These are the cases where we may ask for a sample, or picture to be provided
-      for ID. Also we could suggest that we can monitor their property to determine
-      if there is a flea problem, then offer a treatment if fleas are found on the
-      traps.
-    </p>
     <h3>Cost for Fleas Treatment</h3>
     <p>The treatment cost for Fleas is <strong>£132.00</strong>.</p>
     <p>
@@ -119,34 +87,61 @@ const fleasTreatment = new ContentPaN(
       If we attend the property and the officer is unable to complete the treatment,
       the call out charge will be applied.
     </p>
-    <h3>Sample Required</h3>
-    <p>Before we can provide treatment, we will need a sample of the pest.</p>
-    <p>You can either bring your sample into:</p>
-    <address>
-      First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
-    </address>
-    <p>Or you can post your sample to:</p>
-    <address>
-      Environmental Services<br />
-      Block B, Staniforth Road Depot<br />
-      Staniforth Road<br />
-      Sheffield, S9 3HD
-    </address>
-    <p>
-      You will need to provide your sample in a secure crush proof container whether
-      alive or dead and attach information detailing:
-    </p>
-    <ul>
-      <li>Your name</li>
-      <li>Your address</li>
-      <li>Your contact number and/or email</li>
-      <li>How long the insects have been present</li>
-      <li>Wherein the property the insects have been found</li>
-    </ul>
-    <p>
-      If a sample has been provided and the pests have been confirmed, you can
-      request a treatment.
-    </p>
+    <details class="details-accordion">
+      <summary>Do I need to provide a sample?</summary>
+      <div class="details-accordion-content">
+        <p>
+          Normally, we don't require a sample of fleas before scheduling a
+          treatment, as they are small, elusive, and difficult to catch.
+        </p>
+        <p>
+          However, some individuals may mistakenly believe they have a flea
+          infestation due to skin conditions or psychological issues.
+        </p>
+        <p>
+          Find out if the customer has pets like cats or dogs, as fleas are commonly
+          associated with pets. Ask if they've noticed bites, especially on their
+          lower legs or ankles. Also, check if they’ve recently moved into a vacant
+          property, as fleas can linger in unoccupied homes, and the customer may
+          have seen small, dark insects jumping around.
+        </p>
+        <p>Sometimes people can believe they have fleas because:</p>
+        <ul>
+          <li>They feel something crawling on them</li>
+          <li>They are itching</li>
+          <li>They are covered in bites all over their body</li>
+          <li>They do not have pets</li>
+        </ul>
+        <p>
+          In these cases, we may request a sample or photo for identification.
+          Alternatively, we can monitor the property using traps and proceed with
+          treatment if fleas are confirmed.
+        </p>
+        <p>You can either bring your sample to:</p>
+        <address>
+          First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1
+          2SH
+        </address>
+        <p>Or you can post your sample to:</p>
+        <address>
+          Environmental Services<br />
+          Block B, Staniforth Road Depot<br />
+          Staniforth Road<br />
+          Sheffield, S9 3HD
+        </address>
+        <p>
+          Please ensure your sample is in a secure, crush-proof container, alive or
+          dead. Attach information detailing:
+        </p>
+        <ul>
+          <li>Your name</li>
+          <li>Your address</li>
+          <li>Your contact number and/or email</li>
+          <li>How long the insects have been present</li>
+          <li>Where in the property the insects have been found</li>
+        </ul>
+      </div>
+    </details>
   `,
   {
     buttonLabel: "",
@@ -518,43 +513,41 @@ const bumbleBeesTreatment = new ContentPaN(
   "Bumble Bees Treatment",
   "Information about Bumble Bees treatment and services",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
-      <h3>Cost for Treatment</h3>
-      <p>
-        If the pests located in a communal area (The area that is shared by multiple Council Housing properties) or 
-        required treatment for a demestic properties such as Council Housing, Housing Association, Private Owned, Private Rented,
-        then the treatment cost for Bumble Bees is £75.50.
-      </p>
-      <p>
-        If you receive one of the following benefits, the treatment cost will be
-        reduced to £58:00.
-      </p>
-      <ul>
-        <li>Pension Credits</li>
-        <li>Universal Credits</li>
-        <li>Housing Benefits</li>
-        <li>Income Support Allowance</li>
-        <li>Income Related Job Seekers Allowance</li>
-        <li>Income Related Employment Support Allowance</li>
-      </ul>
-      <h3>Nests Up High</h3>
-      <p>
-      Officers carry equipment that enables them to treat a nest located at height.
-      In most cases the officer will be able to carry out a successful treatment using such equipment.
-      </p>
-      <p>
-      If any further access equipment is required to treat the nest, our officer will inform you of this at the time of the visit. 
-      If further access equipment is required, then it would possibly mean an added cost.
-      </p>
-      <p>
-      If your customer is unsure about the possible additional cost, 
-      escalate pest control enquiry and an officer will contact the customer about it.
-      </p>
-      <p>
-        All prices include a call-out fee of £39. This fee applies if our officer
-        attends the property but is unable to complete the treatment.
-      </p>
-    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      If the pests located in a communal area (The area that is shared by multiple Council Housing properties) or 
+      required treatment for a demestic properties such as Council Housing, Housing Association, Private Owned, Private Rented,
+      then the treatment cost for Bumble Bees is £75.50.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £58:00.
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <h3>Nests Up High</h3>
+    <p>
+    Officers carry equipment that enables them to treat a nest located at height.
+    In most cases the officer will be able to carry out a successful treatment using such equipment.
+    </p>
+    <p>
+    If any further access equipment is required to treat the nest, our officer will inform you of this at the time of the visit. 
+    If further access equipment is required, then it would possibly mean an added cost.
+    </p>
+    <p>
+    If your customer is unsure about the possible additional cost, 
+    escalate pest control enquiry and an officer will contact the customer about it.
+    </p>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Commercial and Multiple Occupation House,</h3>
@@ -606,7 +599,7 @@ const bumbleBeesTreatment = new ContentPaN(
 
 const carpetBeetlesTreatment = new ContentPaN(
   "carpetBeetlesTreatment",
-  "carpet Beetles Treatment",
+  "Carpet Beetles Treatment",
   "Information about Carpet Beetles treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
@@ -642,32 +635,30 @@ const carpetBeetlesTreatment = new ContentPaN(
       If a sample has been provided and the pests have been confirmed, you can request a treatment.
       </p>
     </section>
-    <section class="info-panel" role="region" aria-label="Information panel">
-      <h3>Cost for Treatment</h3>
-      <p>
-        If the pests located in a communal area (The area that is shared by multiple Council Housing properties) or 
-        required treatment for a demestic properties such as Council Housing, Housing Association, Private Owned, Private Rented,
-        then the treatment cost for Carpet Beetles is £132.00.
-        This charge is based on a standard size of a 3-bed semi-detached property. 
-        If the property is bigger than this, please escalate the enquiry so a quote can be provided.
-      </p>
-      <p>
-        If you receive one of the following benefits, the treatment cost will be
-        reduced to £58:00.
-      </p>
-      <ul>
-        <li>Pension Credits</li>
-        <li>Universal Credits</li>
-        <li>Housing Benefits</li>
-        <li>Income Support Allowance</li>
-        <li>Income Related Job Seekers Allowance</li>
-        <li>Income Related Employment Support Allowance</li>
-      </ul>
-      <p>
-        All prices include a call-out fee of £39. This fee applies if our officer
-        attends the property but is unable to complete the treatment.
-      </p>
-    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      If the pests located in a communal area (The area that is shared by multiple Council Housing properties) or 
+      required treatment for a demestic properties such as Council Housing, Housing Association, Private Owned, Private Rented,
+      then the treatment cost for Carpet Beetles is £132.00.
+      This charge is based on a standard size of a 3-bed semi-detached property. 
+      If the property is bigger than this, please escalate the enquiry so a quote can be provided.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £58:00.
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Commercial and Multiple Occupation House,</h3>
