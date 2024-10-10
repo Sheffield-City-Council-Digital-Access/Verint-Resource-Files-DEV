@@ -19,7 +19,6 @@ let acceptGMSites = true;
 
 const defaultDateMessage = "Enter the date in the correct format";
 
-const dateMessages = {};
 const datePairs = [];
 
 let fieldsToCheckBeforeClose = [];
@@ -28,7 +27,8 @@ let fieldsToCheckBeforeClose = [];
 const formUserPath = [];
 
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
-function handleInitialisingEvent(addDateMessages) {
+
+function handleInitialisingEvent() {
   // --- ADD TAB TITLE AND ICON  ------------------------------------------- \\
 
   (() => {
@@ -444,12 +444,6 @@ function handleInitialisingEvent(addDateMessages) {
     });
   })();
 
-  // --- ADD CUSTOM DATE MASSAGES ------------------------------------------ \\
-
-  if (addDateMessages) {
-    Object.assign(dateMessages, addDateMessages);
-  }
-
   // --- HANDLE FILE UPLOAD ------------------------------------------------ \\
 
   $(document).ajaxComplete(function (event, xhr, settings) {
@@ -556,18 +550,6 @@ function handleOnReadyEvent(event, kdf) {
           KDF.setVal("txt_agent_location", event.detail.location);
         }
         if (modalId === "setReporterModal" && event.detail.reporter) {
-          console.log(event);
-          // KDF.customdata(
-          //   "retrieve-individuals-details",
-          //   `closeModal_setReporterModal`,
-          //   true,
-          //   true,
-          //   {
-          //     customerid: event.detail.reporter,
-          //   }
-          // );
-          // KDF.setVal("le_associated_obj_type", "C1");
-          // KDF.setVal("le_associated_obj_id", event.detail.reporter);
           KDF.setCustomerID(event.detail.reporter, true, "page_about_you");
         }
         const modal = document.getElementById(modalId);
@@ -577,6 +559,10 @@ function handleOnReadyEvent(event, kdf) {
       });
     }
   }
+
+  // --- UPDATE SESSION ---------------------------------------------------- \\
+
+  storeDefaultValidationMessages();
 
   // --- MAP --------------------------------------------------------------- \\
 
@@ -930,7 +916,7 @@ function handleOnReadyEvent(event, kdf) {
 
   $(`.date-mm`).on("input focusout", function (e) {
     const parentId = $(this).attr("id").replace("_num_", "_date_").slice(0, -3);
-    const dateMessage = dateMessages[parentId] || defaultDateMessage;
+    const dateMessage = getValidationMessageFromSession(parentId);
     const dd = $(`#${this.id.slice(0, -2)}dd`).val();
     const yy = $(`#${this.id.slice(0, -2)}yy`).val();
     if (e.type === "input") {
@@ -939,7 +925,6 @@ function handleOnReadyEvent(event, kdf) {
     }
     if (this.value) {
       $(this).val($(this).val().padStart(2, "0"));
-      return;
     }
     if (dd === "") $(`#${this.id.slice(0, -2)}dd`).addClass("dform_fielderror");
     if (yy === "") $(`#${this.id.slice(0, -2)}yy`).addClass("dform_fielderror");
@@ -949,23 +934,31 @@ function handleOnReadyEvent(event, kdf) {
 
   $(`.date-yy`)
     .attr("min", function () {
-      const hasFutureClass = $(this).closest(".date-field").hasClass("future");
-      return hasFutureClass
-        ? new Date().getFullYear()
-        : new Date().getFullYear() - 120;
+      const minDate = $(this)
+        .closest(".container")
+        .find("input[type='date']")
+        .data("mindate");
+
+      // Calculate the minimum year based on the minDate
+      const minYear = new Date().getFullYear() + parseInt(minDate);
+      return minYear;
     })
     .attr("max", function () {
-      const hasFutureClass = $(this).closest(".date-field").hasClass("future");
-      return hasFutureClass
-        ? new Date().getFullYear() + 5
-        : new Date().getFullYear();
+      const maxDate = $(this)
+        .closest(".container")
+        .find("input[type='date']")
+        .data("maxdate");
+
+      // Calculate the maximum year based on the maxDate
+      const maxYear = new Date().getFullYear() + parseInt(maxDate);
+      return maxYear;
     })
     .on("input focusout", function (e) {
       const parentId = $(this)
         .attr("id")
         .replace("_num_", "_date_")
         .slice(0, -3);
-      const dateMessage = dateMessages[parentId] || defaultDateMessage;
+      const dateMessage = getValidationMessageFromSession(parentId);
       const dd = $(`#${this.id.slice(0, -2)}dd`).val() !== "" ? true : false;
       const mm = $(`#${this.id.slice(0, -2)}mm`).val() !== "" ? true : false;
       $(`#${parentId}`)
@@ -973,6 +966,8 @@ function handleOnReadyEvent(event, kdf) {
         .text(dateMessage)
         .hide();
       if (e.type === "input") inputDate(this.id, null, e.which);
+      {
+      }
       handleDateValidation(parentId);
     });
 
@@ -1165,6 +1160,13 @@ function handleFieldChangeEvent(event, kdf, field) {
     field.type === "textarea"
   ) {
     $(`#${field.id}`).val(formatRemoveEccessWhiteSpace(KDF.getVal(field.name)));
+  }
+
+  if (field.name.startsWith("txt_find_address_")) {
+    const defaultMessage = getValidationMessageFromSession(field.id);
+    if (defaultMessage) {
+      updateValidationMessage(field.name, defaultMessage);
+    }
   }
 
   // keep at the bottom
@@ -2010,9 +2012,19 @@ function showVehicleFields() {
 // --- CUSTOM DATE FUNCTIONS ------------------------------------------------ \\
 
 function handleDateValidation(parentId) {
-  const dd = $(`#${parentId.replace("_date_", "_num_")}_dd`).val();
-  const mm = $(`#${parentId.replace("_date_", "_num_")}_mm`).val();
-  const yy = $(`#${parentId.replace("_date_", "_num_")}_yy`).val();
+  const dd = parseInt(
+    $(`#${parentId.replace("_date_", "_num_")}_dd`).val(),
+    10
+  );
+  const mm = parseInt(
+    $(`#${parentId.replace("_date_", "_num_")}_mm`).val(),
+    10
+  );
+  const yy = parseInt(
+    $(`#${parentId.replace("_date_", "_num_")}_yy`).val(),
+    10
+  );
+
   checkDate(parentId, dd, mm, yy);
   checkMaxDay(parentId, dd, mm, yy);
 }
@@ -2068,73 +2080,50 @@ function getMinMaxDates(dateElementId) {
 }
 
 function checkDate(id, dd, mm, yy) {
-  if (!dd) $(`#${id} .date-dd`).addClass("dform_fielderror");
-  if (!mm) $(`#${id} .date-mm`).addClass("dform_fielderror");
-  if (!yy) $(`#${id} .date-yy`).addClass("dform_fielderror");
+  const dateMessage = getValidationMessageFromSession(id);
+  let hasError = false;
 
-  const dateMessage = dateMessages[id] || defaultDateMessage;
-  $(`#${id.replace("_date_", "_txt_")}`).val("");
-  $(`#${id.replace("_date_", "_dt_")}`).val("");
+  // Clear previous errors
+  $(`#${id} .date-dd, #${id} .date-mm, #${id} .date-yy`).removeClass(
+    "dform_fielderror"
+  );
   $(`#${id}`).find(".dform_validationMessage").text(dateMessage).hide();
 
-  if (!dd && mm && yy) {
-    $(`#${id}`)
-      .find(".dform_validationMessage")
-      .text("Date must include a day")
-      .show();
+  if (!dd) {
+    $(`#${id} .date-dd`).addClass("dform_fielderror");
+    hasError = true;
   }
-  if (dd && !mm && yy) {
-    $(`#${id}`)
-      .find(".dform_validationMessage")
-      .text("Date must include a month")
-      .show();
+  if (!mm) {
+    $(`#${id} .date-mm`).addClass("dform_fielderror");
+    hasError = true;
   }
-  if (dd && mm && !yy) {
-    $(`#${id} .date-yy`).removeClass("dform_fielderror");
-  }
-  if (!dd && !mm && yy) {
-    $(`#${id}`)
-      .find(".dform_validationMessage")
-      .text("Date must include a day and month")
-      .show();
-  }
-  if (!dd && mm && !yy) {
-    $(`#${id}`)
-      .find(".dform_validationMessage")
-      .text("Date must include a day and year")
-      .show();
-  }
-  if (dd && !mm && !yy) {
-    $(`#${id} .date-mm`).removeClass("dform_fielderror");
-    $(`#${id} .date-yy`).removeClass("dform_fielderror");
-  }
-  if (!dd && !mm && !yy) {
-    $(`#${id}`).find(".dform_validationMessage").text(dateMessage).show();
+  if (!yy) {
+    $(`#${id} .date-yy`).addClass("dform_fielderror");
+    hasError = true;
   }
 
-  if (dd && mm && yy) {
-    if (validDate(id, dd, mm, yy)) {
-      const date = `${yy.substr(0, 4)}-${mm.toString().padStart(2, "0")}-${dd
-        .toString()
-        .padStart(2, "0")}`;
-      const localFormat = new Date(date).toLocaleDateString("en-GB");
-      $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
-      $(`#${id.replace("_date_", "_dt_")}`).val(date);
-    } else {
-      $(`#${id}`)
-        .parents(`#${id}`)
-        .find(".dform_validationMessage")
-        .text(defaultDateMessage)
-        .show()
-        .css({ display: "block" });
-    }
-  } else {
-    $(`#${id}`)
-      .parents(`#${id}`)
-      .find(".dform_validationMessage")
-      .text(defaultDateMessage)
-      .show()
-      .css({ display: "block" });
+  if (hasError) {
+    const errorMsg =
+      !dd && !mm && !yy
+        ? "Date must include a day, month, and year"
+        : !dd && mm && yy
+        ? "Date must include a day"
+        : !mm && dd && yy
+        ? "Date must include a month"
+        : "";
+
+    $(`#${id}`).find(".dform_validationMessage").text(errorMsg).show();
+    return; // Early return on error
+  }
+
+  // If all components are valid, proceed to validate the full date
+  if (validDate(id, dd, mm, yy)) {
+    const date = `${yy.toString().padStart(4, "0")}-${mm
+      .toString()
+      .padStart(2, "0")}-${dd.toString().padStart(2, "0")}`;
+    const localFormat = new Date(date).toLocaleDateString("en-GB");
+    $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
+    $(`#${id.replace("_date_", "_dt_")}`).val(date);
   }
 }
 
@@ -2163,37 +2152,69 @@ function checkDateRelationship(date1, date2, rule) {
   return true;
 }
 
+function getYearLabel(years) {
+  return years === 1 ? "year" : "years";
+}
+
 function validDate(id, day, month, year) {
-  const dateMessage = dateMessages[id] || defaultDateMessage;
+  const dateMessage = getValidationMessageFromSession(id);
   const validationMsg = $(`#${id}`)
     .find(".dform_validationMessage")
     .text(dateMessage)
     .hide();
-  const date = new Date(year, month - 1, day);
-  const now = new Date().setHours(0, 0, 0, 0);
 
-  const dobField = $(`#${id}`).hasClass("dob") ? true : false;
+  // Construct the date from the provided values
+  const date = new Date(year, month - 1, day); // month is zero-indexed
+  console.log(`Constructed Date: ${date}`);
+  console.log(`Input values: day=${day}, month=${month}, year=${year}`);
 
+  // Check if the constructed date is valid
   if (
-    date.getFullYear() != year ||
-    date.getMonth() + 1 != month ||
-    date.getDate() != day
+    date.getFullYear() !== year ||
+    date.getMonth() + 1 !== month ||
+    date.getDate() !== day
   ) {
-    validationMsg
-      .text(
-        `${
-          dobField ? "Date of birth must be a real date" : "Must be a real date"
-        }`
-      )
-      .show();
+    validationMsg.text(`Must be a real date`).show();
     return false;
   }
 
   const dateElementId = id.replace("_date_", "_dt_");
   const { minDate, maxDate } = getMinMaxDates(dateElementId);
 
-  const dateRange = $(`#${id}`).hasClass("future") ? "future" : "past";
+  // Validate against min and max dates
+  if (date < minDate) {
+    const yearsPast = new Date().getFullYear() - minDate.getFullYear();
+    if (yearsPast > 0) {
+      validationMsg
+        .text(
+          `Date cannot be more than ${yearsPast} ${getYearLabel(
+            yearsPast
+          )} in the past`
+        )
+        .show();
+    } else {
+      validationMsg.text(`Date can't be before today`).show();
+    }
+    return false;
+  }
 
+  if (date > maxDate) {
+    const yearsFuture = maxDate.getFullYear() - new Date().getFullYear();
+    if (yearsFuture > 0) {
+      validationMsg
+        .text(
+          `Date cannot be more than ${yearsFuture} ${getYearLabel(
+            yearsFuture
+          )} in the future`
+        )
+        .show();
+    } else {
+      validationMsg.text(`Date can't be after today`).show();
+    }
+    return false;
+  }
+
+  // Check date relationships
   if (datePairs && Array.isArray(datePairs) && datePairs.length > 0) {
     for (const pair of datePairs) {
       const [dateAId, dateBId] = pair.dateFields;
@@ -2216,43 +2237,6 @@ function validDate(id, day, month, year) {
           return false;
         }
       }
-    }
-  }
-
-  if (dateRange === "past") {
-    if (date < minDate) {
-      validationMsg
-        .text(
-          `Date cannot be more than ${minDate.getFullYear()} years in the past`
-        )
-        .show();
-      return false;
-    }
-    if (date > now) {
-      validationMsg
-        .text(
-          `${
-            dobField
-              ? "Date of birth must be today or in the past"
-              : "Date must be today or in the past"
-          }`
-        )
-        .show();
-      return false;
-    }
-  }
-
-  if (dateRange === "future") {
-    if (date > maxDate) {
-      validationMsg
-        .text(
-          `Date cannot be more than ${maxDate.getFullYear()} years in the future`
-        )
-        .show();
-      return false;
-    }
-    if (date < now) {
-      validationMsg.text("Date must be today or in the future").show();
     }
   }
 
@@ -4091,4 +4075,49 @@ function getCookie(name) {
   return foundCookie
     ? decodeURIComponent(foundCookie.substring(nameEQ.length))
     : null;
+}
+
+// --- STORE VALIDATION MESSAGES -------------------------------------------- \\
+
+function storeDefaultValidationMessages() {
+  const fieldClasses = ["address-search", "date-field"];
+
+  fieldClasses.forEach((className) => addValidationMessageToSession(className));
+}
+
+function addValidationMessageToSession(className) {
+  const dateFieldElements = document.querySelectorAll(`.${className}`);
+
+  dateFieldElements.forEach((dateFieldElement) => {
+    const inputField = dateFieldElement.querySelector(
+      'input[type="date"], input[type="text"]'
+    );
+    const validationMessageElement = dateFieldElement.querySelector(
+      ".dform_validationMessage"
+    );
+
+    const inputFieldId = inputField ? inputField.id : null;
+    const validationMessage = validationMessageElement
+      ? validationMessageElement.textContent
+      : null;
+
+    if (inputFieldId && validationMessage) {
+      let validationMessages =
+        JSON.parse(sessionStorage.getItem("validationMessages")) || {};
+      validationMessages[inputFieldId] = validationMessage;
+      sessionStorage.setItem(
+        "validationMessages",
+        JSON.stringify(validationMessages)
+      );
+    }
+  });
+}
+
+function getValidationMessageFromSession(id) {
+  const fieldElement = document.getElementById(id);
+  if (fieldElement) {
+    let validationMessages =
+      JSON.parse(sessionStorage.getItem("validationMessages")) || {};
+    return validationMessages[id] || "Validation message not found";
+  }
 }

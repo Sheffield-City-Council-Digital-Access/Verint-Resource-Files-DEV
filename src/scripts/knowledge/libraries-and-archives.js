@@ -21,7 +21,17 @@ class MenuLaA extends CoreLaA {
 }
 
 class ContentLaA extends CoreLaA {
-  constructor(id, name, description, content, process, transfer, finish, meta, lastModified) {
+  constructor(
+    id,
+    name,
+    description,
+    content,
+    process,
+    transfer,
+    finish,
+    meta,
+    lastModified
+  ) {
     super(id, name, description);
     this.content = content;
     this.process = process;
@@ -32,17 +42,24 @@ class ContentLaA extends CoreLaA {
   }
 }
 
+class FormLaA extends CoreLaA {
+  constructor(id, name, description, formName, meta, lastModified) {
+    super(id, name, description);
+    this.formName = formName;
+    this.meta = meta;
+    this.lastModified = lastModified;
+  }
+}
+
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
-
-
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const librariesAndArchives = new ServiceLaA(
-  'librariesAndArchives',
-  'Libraries and Archives',
+  "librariesAndArchives",
+  "Libraries and Archives",
   `Sheffield libraries, joining the library, using the library, eLibrary, schools library, business services events, archives…`,
   []
 );

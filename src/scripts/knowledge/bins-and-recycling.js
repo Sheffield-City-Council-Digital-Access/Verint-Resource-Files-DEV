@@ -21,7 +21,17 @@ class MenuBaR extends CoreBaR {
 }
 
 class ContentBaR extends CoreBaR {
-  constructor(id, name, description, content, process, transfer, finish, meta, lastModified) {
+  constructor(
+    id,
+    name,
+    description,
+    content,
+    process,
+    transfer,
+    finish,
+    meta,
+    lastModified
+  ) {
     super(id, name, description);
     this.content = content;
     this.process = process;
@@ -32,17 +42,24 @@ class ContentBaR extends CoreBaR {
   }
 }
 
+class FormBaR extends CoreBaR {
+  constructor(id, name, description, formName, meta, lastModified) {
+    super(id, name, description);
+    this.formName = formName;
+    this.meta = meta;
+    this.lastModified = lastModified;
+  }
+}
+
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
-
-
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const binsAndRecycling = new ServiceBaR(
-  'binsAndRecycling',
-  'Bins and Recycling',
+  "binsAndRecycling",
+  "Bins and Recycling",
   `Your bins, collection days, bulky and hazardous waste, recycling centres, replacement or extra bins…`,
   []
 );

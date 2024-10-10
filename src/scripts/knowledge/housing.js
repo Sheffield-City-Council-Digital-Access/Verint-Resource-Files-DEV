@@ -21,7 +21,17 @@ class MenuH extends CoreH {
 }
 
 class ContentH extends CoreH {
-  constructor(id, name, description, content, process, transfer, finish, meta, lastModified) {
+  constructor(
+    id,
+    name,
+    description,
+    content,
+    process,
+    transfer,
+    finish,
+    meta,
+    lastModified
+  ) {
     super(id, name, description);
     this.content = content;
     this.process = process;
@@ -32,52 +42,58 @@ class ContentH extends CoreH {
   }
 }
 
+class FormH extends CoreH {
+  constructor(id, name, description, formName, meta, lastModified) {
+    super(id, name, description);
+    this.formName = formName;
+    this.meta = meta;
+    this.lastModified = lastModified;
+  }
+}
+
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
 // Example instantiation for topicExample1
 const topicExample1 = new ContentH(
-  'topicexample1',
-  'Topic Title Example 1',
-  'Topic Description Example 1',
-  '<p>example text</p>',
-  { buttonLabel: 'Example 1', formName: 'example_form' },
-  { typeKey: 'example_transfered_to_service' },
-  { typeKey: 'example_information_provided' },
-  { type: 'Request', keywords: [], categories: ['Housing'] },
-  { date: '05/09/2024', name: 'Elliott Griffiths' }
+  "topicexample1",
+  "Topic Title Example 1",
+  "Topic Description Example 1",
+  "<p>example text</p>",
+  { buttonLabel: "Example 1", formName: "example_form" },
+  { typeKey: "example_transfered_to_service" },
+  { typeKey: "example_information_provided" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "05/09/2024", name: "Elliott Griffiths" }
 );
 
 // Example instantiation for subjectExample2 (Menu with topics)
 const subjectExample2 = new MenuH(
-  'subjectexample2',
-  'Subject Title Example 2',
-  'Subject Description Example 2',
+  "subjectexample2",
+  "Subject Title Example 2",
+  "Subject Description Example 2",
   [topicExample1]
 );
 
 // Example instantiation for subjectExample1 (Full content)
 const subjectExample1 = new ContentH(
-  'subjectexample1',
-  'Subject Title Example 1',
-  'Subject Description Example 1',
-  '<p>example text</p>',
-  { buttonLabel: 'Example 1', formName: 'example_form' },
-  { typeKey: 'example_transfered_to_service' },
-  { typeKey: 'example_information_provided' },
-  { type: 'Apply', keywords: [], categories: ['Housing'] },
-  { date: '05/09/2024', name: 'Elliott Griffiths' }
+  "subjectexample1",
+  "Subject Title Example 1",
+  "Subject Description Example 1",
+  "<p>example text</p>",
+  { buttonLabel: "Example 1", formName: "example_form" },
+  { typeKey: "example_transfered_to_service" },
+  { typeKey: "example_information_provided" },
+  { type: "Apply", keywords: [], categories: ["Housing"] },
+  { date: "05/09/2024", name: "Elliott Griffiths" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const housing = new ServiceH(
-  'housing',
-  'Housing',
-  'Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…',
-  [
-    subjectExample1,
-    subjectExample2
-  ]
+  "housing",
+  "Housing",
+  "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
+  [subjectExample1, subjectExample2]
 );

@@ -21,7 +21,17 @@ class MenuSC extends CoreSC {
 }
 
 class ContentSC extends CoreSC {
-  constructor(id, name, description, content, process, transfer, finish, meta, lastModified) {
+  constructor(
+    id,
+    name,
+    description,
+    content,
+    process,
+    transfer,
+    finish,
+    meta,
+    lastModified
+  ) {
     super(id, name, description);
     this.content = content;
     this.process = process;
@@ -32,17 +42,24 @@ class ContentSC extends CoreSC {
   }
 }
 
+class FormSC extends CoreSC {
+  constructor(id, name, description, formName, meta, lastModified) {
+    super(id, name, description);
+    this.formName = formName;
+    this.meta = meta;
+    this.lastModified = lastModified;
+  }
+}
+
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
-
-
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const socialCare = new ServiceSC(
-  'socialCare',
-  'Social Care',
+  "socialCare",
+  "Social Care",
   `Independence, help and support, travel and mobility, help at home, care and carers, fostering and adoption…`,
   []
 );
