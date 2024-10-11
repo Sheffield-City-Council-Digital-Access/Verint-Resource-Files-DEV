@@ -2,9 +2,6 @@
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
 const blueBadge = new ContentP(
-  "bluebadge",
-  "Blue Badge",
-	@@ -980,165 +185,483 @@ const blueBadge = new ContentP(
   `,
   {
     buttonLabel: "Apply for or renew a Blue Badge",
