@@ -1491,6 +1491,391 @@ const masonryBeesTreatment = new ContentPaN(
   { date: "10/10/2024", name: "Shahzad Athar" }
 );
 
+const miceTreatment = new ContentPaN(
+  "miceTreatment",
+  "Mice Treatment",
+  "Information about Mice Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    <h3>Cost for Treatment</h3>
+    <p>
+      We will only provide treatment for Mice inside the property. 
+      The cost for the treatment is £118.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £58:00:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+    This covers you for up to 3 visits. If you require further treatments, 
+    each additional treatment will cost £39.00.
+    </p>
+    <p>
+      <strong>All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.</strong>
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Mice",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Mice", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const mitesTreatment = new ContentPaN(
+  "mitesTreatment",
+  "Mites Treatment",
+  "Information about Mites Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for the Mites is £110.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      <strong>All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.</strong>
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Mites",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Mites", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const mothsTreatment = new ContentPaN(
+  "mothsTreatment",
+  "Moths Treatment",
+  "Information about Moths Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Moths in your domestic property, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+      If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Moths is £132.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Moths",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Moths", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const pharoahAntsTreatment = new ContentPaN(
+  "pharoahAntsTreatment",
+  "Pharoah Ants Treatment",
+  "Information about Pharoah Ants Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for the Pharoah Ants is £330.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £97:00:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      <strong>All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.</strong>
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Pharoah Ants",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Pharoah Ants", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const psocidsTreatment = new ContentPaN(
+  "psocidsTreatment",
+  "Psocids Treatment",
+  "Information about psocids Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Psocids in your domestic property, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+      If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Moths is £110.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Psocids",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Psocids", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const redSpiderMitesTreatment = new ContentPaN(
+  "redSpiderMitesTreatment",
+  "Red Spider Mites Treatment",
+  "Information about Red Spider Mites Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Red Spider Mites in your domestic property, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+      If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Moths is £110.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Red Spider Mites",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Red Spider Mites", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
 
 const pestControl = new MenuPaN(
   "pestControl",
@@ -1517,6 +1902,12 @@ const pestControl = new MenuPaN(
     gardenAntsTreatment,
     ladyBirdsTreatment,
     masonryBeesTreatment, 
+    miceTreatment,
+    mitesTreatment,
+    mothsTreatment,
+    pharoahAntsTreatment,
+    psocidsTreatment,
+    redSpiderMitesTreatment,
   ]
 );
 
