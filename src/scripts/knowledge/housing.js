@@ -179,6 +179,64 @@ const subjectExample1 = new ContentH(
   { date: "05/09/2024", name: "Elliott Griffiths" }
 );
 
+//Instantiation for Leaseholders
+const leaseholderInformation = new ContentH(
+  "leaseholderInformation",
+  "Leaseholder Information",
+  "Desc tbc",
+  `
+    <p>
+      If you live in an ex-Council flat or maisonette property you are a leaseholder
+      of Sheffield City Council.
+    </p>
+    <p>
+      As a landlord, the Council are responsible for calculating and issuing bills to leaseholders.
+      These may be for service charges and similar costs, as well as for major works.
+    </p>
+    <p>
+      The Council are only responsible for communal repairs; Leaseholders are responsible
+      for repairs within their own property.
+    </p>
+    <h3>What service charges cover</h3>
+    <p>
+      Service charges cover all works and services carried out to the structure of the block and communal
+      areas, including cleaning of communal areas, lighting, lift maintenance and upkeep of gardens. It also
+      covers day-to-day repairs, maintenance and improvement work.
+    </p>
+    <h3>Cost of service charges</h3>
+    <p>
+      Service charges for leaseholders are paid annually and vary depending on the cost incurred to the
+      block during the service charge year, which runs from 1st October to 30th September. Customers will
+      pay a share of the costs calculated for their block. For example; if there are 8 dwellings in a block,
+      service charges will amount to 1/8th of the total cost.
+    </p>
+    <h3>Difficulty paying service charge</h3>
+    <p>
+      Leaseholders can now pay service charges by instalments, spreading the cost over 12 months.
+    </p>
+    <p>
+      For larger items of work commanding higher costs, Leaseholders should contact the Council to discuss tailored repayment options.
+    </p>
+    <h3>Subletting a property</h3>
+    <p>
+      As a leaseholder you have the right to sublet your home. This means that you may take in lodgers or rent your home to someone else, if you want to.
+    </p>
+    <p>
+      You will also need to advise your mortgage lender if you do rent out your home.
+    </p>
+    <p>
+      You will remain responsible for ensuring that the terms of the lease are complied with and you will remain liable for any breaches,
+      regardless of whether the breaches are committed by you, your sub-tenant or other parties connected to your sub-tenant.
+      You will therefore be responsible for the behaviour of your sub-tenant(s). This would include, for example, ensuring that they do not cause a nuisance to neighbours.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "11/10/2024", name: "Abishai Devarapalli" }
+);
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
