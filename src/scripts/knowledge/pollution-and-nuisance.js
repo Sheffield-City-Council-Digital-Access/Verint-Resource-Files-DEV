@@ -1758,7 +1758,7 @@ const psocidsTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Moths is £110.00. This is based on a standard size
+      The treatment cost for Psocids is £110.00. This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
@@ -1837,7 +1837,7 @@ const redSpiderMitesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Moths is £110.00. This is based on a standard size
+      The treatment cost for Red Spider Mites is £110.00. This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
@@ -1867,6 +1867,295 @@ const redSpiderMitesTreatment = new ContentPaN(
   {
     type: "Book",
     keywords: ["Red Spider Mites", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const sewageFliesTreatment = new ContentPaN(
+  "sewageFliesTreatment",
+  "Sewage Flies Treatment",
+  "Information about Sewage Flies Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Sewage Flies in your domestic property, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+      If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Sewage Flies is £110.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Sewage Flies",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Sewage Flies", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const silverFishTreatment = new ContentPaN(
+  "silverFishTreatment",
+  "Silver Fish Treatment",
+  "Information about Silver Fish Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Silver Fish is £110.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p> 
+    </section>
+  `,
+  {
+    buttonLabel: "Book treatment for Silver Fish",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Silver Fish", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const spiderBeetlesTreatment = new ContentPaN(
+  "spiderBeetlesTreatment",
+  "Spider Beetles Treatment",
+  "Information about Spider Beetles Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    
+  `,
+  {
+    buttonLabel: "Book treatment for Spider Beetles",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Spider Beetles", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const squirrelsTreatment = new ContentPaN(
+  "squirrelsTreatment",
+  "Squirrels Treatment",
+  "Information about Squirrels Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    
+  `,
+  {
+    buttonLabel: "Book treatment for Squirrels Beetles",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Squirrels", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const waspsTreatment = new ContentPaN(
+  "waspsTreatment",
+  "Wasps Treatment",
+  "Information about Wasps Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    
+  `,
+  {
+    buttonLabel: "Book treatment for Wasps",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Wasps", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const weevilsTreatment = new ContentPaN(
+  "weevilsTreatment",
+  "Weevils Treatment",
+  "Information about Weevils Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    
+  `,
+  {
+    buttonLabel: "Book treatment for Weevils",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Weevils", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const woodliceTreatment = new ContentPaN(
+  "woodliceTreatment",
+  "Woodlice Treatment",
+  "Information about Woodlice Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    
+  `,
+  {
+    buttonLabel: "Book treatment for Woodlice",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Woodlice", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const noneoftheAbove = new ContentPaN(
+  "noneoftheAbove",
+  "None of the Above",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    
+  `,
+  {
+    buttonLabel: "",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
@@ -1908,6 +2197,51 @@ const pestControl = new MenuPaN(
     pharoahAntsTreatment,
     psocidsTreatment,
     redSpiderMitesTreatment,
+    sewageFliesTreatment,
+    silverFishTreatment,
+    spiderBeetlesTreatment,
+    squirrelsTreatment,
+    waspsTreatment,
+    weevilsTreatment,
+    woodliceTreatment,
+    noneoftheAbove,
+  ]
+);
+
+const handoverDogtoCouncil = new ContentPaN(
+  "handoverDogtoCouncil",
+  "Handover Dog to Council",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    
+  `,
+  {
+    buttonLabel: "Handover Dog to Council",
+    formName: "animal_control",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Animal Control"
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const animalControl = new MenuPaN(
+  "animalControl",
+  "Animal Control",
+  "Animal control treatments, services and pricing",
+  [
+    handoverDogtoCouncil,
+    
   ]
 );
 
