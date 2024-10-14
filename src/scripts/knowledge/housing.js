@@ -275,11 +275,10 @@ const subjectExample1 = new ContentH(
   { date: "05/09/2024", name: "Elliott Griffiths" }
 );
 
-//Instantiation for Leaseholders
 const leaseholderInformation = new ContentH(
   "leaseholderInformation",
   "Leaseholder Information",
-  "Desc tbc",
+  "This section provides information on how to handle blocked bin chutes in Council flats or maisonettes.",
   `
     <p>
       If you live in an ex-Council flat or maisonette property you are a leaseholder
@@ -329,7 +328,7 @@ const leaseholderInformation = new ContentH(
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "11/10/2024", name: "Abishai Devarapalli" }
 );
 
