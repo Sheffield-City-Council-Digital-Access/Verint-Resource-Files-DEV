@@ -71,7 +71,7 @@ const blockedBinChutes = new ContentH(
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
-  { type: "", keywords: [], categories: ["Housing"] },
+  { type: "Report", keywords: [], categories: ["Housing"] },
   { date: "14/10/2024", name: "Omily Parkin" }
 );
 
@@ -94,7 +94,7 @@ const communalCupboard = new ContentH(
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
-  { type: "", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "14/10/2024", name: "Omily Parkin" }
 );
 
@@ -141,7 +141,7 @@ const communalFireSafety = new ContentH(
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
-  { type: "", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "14/10/2024", name: "Omily Parkin" }
 );
 
