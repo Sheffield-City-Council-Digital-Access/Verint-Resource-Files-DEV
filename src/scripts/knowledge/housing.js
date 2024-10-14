@@ -54,7 +54,97 @@ class FormH extends CoreH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-// Example instantiation for topicExample1
+const blockedBinChutes = new ContentH(
+  "blockedBinChutes",
+  "Blocked Bin Chutes",
+  "Bin chutes in Council flats or maisonettes may become blocked and will be unblocked upon request.",
+  `
+    <p>
+      Bin chutes in Council flats or maisonettes may become blocked and will be
+      unblocked upon request.
+    </p>
+    <p>
+      Open the blocked chutes list from the button below, and use the search, is the
+      property on the list?
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "", keywords: [], categories: ["Housing"] },
+  { date: "14/10/2024", name: "Omily Parkin" }
+);
+
+const communalCupboard = new ContentH(
+  "communalCupboard",
+  "Communal Cupboard and Meter Box Cupboard",
+  "Information about communal cupboard and meter box cupboards.",
+  `
+    <p>
+      Meter boxes cupboard can be inside or outside of the property and the keyhole
+      will be triangular in shape. These will need to purchased from a hardware
+      store as we cannot provide one.
+    </p>
+    <p>
+      If the keyhole is not triangular then it is likely to be cupboard in the
+      communal area. These cupboards may contain more than one gas/electric meter
+      and they mostly require a T1 Key that is held in the local Area office.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "", keywords: [], categories: ["Housing"] },
+  { date: "14/10/2024", name: "Omily Parkin" }
+);
+
+const communalFireSafety = new ContentH(
+  "communalFireSafety",
+  "Communal Fire Safety",
+  "Information about communal fire safety regulations and guidelines.",
+  `
+    <p>
+      Under the Regulatory Reform Order (2005), landlords are required to ensure
+      that fire risk assessments are carried out in any shared areas of any
+      properties they manage. Landlords also need to ensure that any fire escape
+      routes and entrances/exits to properties are clear from trip hazards and items
+      which would prevent exit from the building in the event of an emergency.
+    </p>
+    <p>As such, please do not place in the communal area, items such as:</p>
+    <ul>
+      <li>Chairs and tables</li>
+      <li>Bookcases</li>
+      <li>Loose carpets</li>
+      <li>Curtains, blinds or net curtains</li>
+      <li>Plastic flower pots</li>
+      <li>Petrol containers and gas bottles</li>
+      <li>
+        Motorbikes, mopeds or any other equipment which uses petrol/diesel or gas
+      </li>
+    </ul>
+    <p>
+      If any of these items, or any other item which is felt to be a fire risk, are
+      left in your communal area we will ask residents to remove them. If they
+      remain they will be removed.
+    </p>
+    <p>
+      Bicycles, prams, pushchairs and similar items will not normally be permitted
+      to be stored or located within the internal communal parts unless there is an
+      area capable of storage without causing obstruction.
+    </p>
+    <p>
+      You can have a small doormat if it is rubber backed. Edged and trimmed natural
+      plants in ceramic, earthenware or metal pots, as long as they are not placed
+      on stairs or landings which are the means of escape from the building.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "", keywords: [], categories: ["Housing"] },
+  { date: "14/10/2024", name: "Omily Parkin" }
+);
+
 const gardenPledgeScheme = new ContentH(
   "gardenPledgeScheme",
   "Garden Pledge Scheme",
@@ -142,7 +232,13 @@ const estatesAndEnvironments = new MenuH(
   "estatesAndEnvironments",
   "Estates and Environments",
   "Desc tbc",
-  [fencesCouncilHousing, gardenPledgeScheme]
+  [
+    fencesCouncilHousing,
+    gardenPledgeScheme,
+    blockedBinChutes,
+    communalCupboard,
+    communalFireSafety,
+  ]
 );
 
 // Example instantiation for topicExample1
