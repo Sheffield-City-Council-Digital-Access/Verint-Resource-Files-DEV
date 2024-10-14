@@ -977,11 +977,12 @@ const pollutionAndNuisance = new ServicePaN(
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour…`,
   [
     abandonedVehicles,
+    pestControl,
+    reportDogFouling,
     reportLitter,
     reportGraffiti,
     reportFlyPosting,
     reportFlyTipping,
-    reportDogFouling,
-    pestControl,
+    reportNeedlesGlass,
   ]
 );
