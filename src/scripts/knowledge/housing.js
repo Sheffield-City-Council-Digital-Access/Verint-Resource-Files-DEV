@@ -344,10 +344,10 @@ const applyForRehousing = new ContentH(
       First Point before your application will be validated.
     </p>
   `,
-  { buttonLabel: "Example 1", formName: "example_form" },
-  { typeKey: "example_transfered_to_service" },
-  { typeKey: "example_information_provided" },
-  { type: "Request", keywords: [rehousing], categories: ["Housing"] },
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
   { date: "14/10/2024", name: "Omily Parkin" }
 );
 
@@ -641,5 +641,5 @@ const housing = new ServiceH(
   "housing",
   "Housing",
   "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-  [estatesAndEnvironments, leaseholderInformation]
+  [estatesAndEnvironments, leaseholderInformation, rehousing]
 );
