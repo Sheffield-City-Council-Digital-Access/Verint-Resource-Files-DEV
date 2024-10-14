@@ -173,6 +173,108 @@ const applicationChanges = new ContentH(
 </div>
 </details>
 
+<details class="accordion">
+<summary class="accordion-header">
+<h3>Disqualification/Restriction</h3>
+<div class="accordion-icon"></div>
+</summary>
+<div class="accordion-content">
+<p>The Allocations Policy advises of various circumstances where we will reduce the preference applicants are given on the Housing Register, or prevent them from joining the register. These include circumstances such as rent arrears or past/current anti-social behaviour.</p>
+<p>In the most serious debt cases, the Allocations Policy allows us to place applicants into Band E or disqualify a customer from the Housing Register for an initial period of 12 months.</p>
+<p>A customer can apply for a restriction to be removed if:</p>
+<p>they are able to evidence that their behavior has significantly improved e.g. pay off arrears in full</p>
+<p>they appeal the restriction (disqualification) within 21 days</p>
+<p>they have exceptional circumstances</p>
+<p>they need a priority</p>
+<p>An Exception Request allows us to make decisions on whether it is appropriate to waive the restrictions/disqualification in exceptional circumstances.</p>
+<p>If an applicant is allowed back on the housing register, they will have to re-register. ID and reference will be applicable; unless recently submitted. The usual checks will be carried out and the appropriate band chosen. Applicants lose their original waiting time.</p>
+</div>
+</details>
+
+<details class="accordion">
+<summary class="accordion-header">
+<h3>Disqualification/Restriction</h3>
+<div class="accordion-icon"></div>
+</summary>
+<div class="accordion-content">
+<p>The Allocations Policy advises of various circumstances where we will reduce the preference applicants are given on the Housing Register, or prevent them from joining the register. These include circumstances such as rent arrears or past/current anti-social behaviour.</p>
+<p>In the most serious debt cases, the Allocations Policy allows us to place applicants into Band E or disqualify a customer from the Housing Register for an initial period of 12 months.</p>
+<p>A customer can apply for a restriction to be removed if:</p>
+<p>they are able to evidence that their behavior has significantly improved e.g. pay off arrears in full</p>
+<p>they appeal the restriction (disqualification) within 21 days</p>
+<p>they have exceptional circumstances</p>
+<p>they need a priority</p>
+<p>An Exception Request allows us to make decisions on whether it is appropriate to waive the restrictions/disqualification in exceptional circumstances.</p>
+<p>If an applicant is allowed back on the housing register, they will have to re-register. ID and reference will be applicable; unless recently submitted. The usual checks will be carried out and the appropriate band chosen. Applicants lose their original waiting time.</p>
+</div>
+</details>
+
+<details class="accordion">
+<summary class="accordion-header">
+<h3>Assistance with Change of Circumstances</h3>
+<div class="accordion-icon"></div>
+</summary>
+<div class="accordion-content">
+<p>Log on using the details below if required.</p>
+<p>Unique Reference - 1257822 </p>
+<p>Memorable date - 25/12/2012 </p>
+<p>Password - DMrm15</p>
+<p> Advisor note: You have logged in using dummy login details. Please do not amend anything on screen. Log in if required using the log in details above and follow the below instructions:</p>
+<p>Select My Social Housing on the left hand side.</p>
+<p> Select Click here to update your details</p>
+<p> Navigate through the Social Housing Form using the Next section buttons and advise the customer as appropriate. </p>
+<p>Please do not Submit application</p>
+<p> Advisor note You have logged in using dummy login details. Please do not amend anything on screen.</p>
+</div>
+</details>
+
+<details class="accordion">
+<summary class="accordion-header">
+<h3>Exceptions</h3>
+<div class="accordion-icon"></div>
+</summary>
+<div class="accordion-content">
+<p>The Allocations Policy advises of various circumstances in which we will reduce the preference which applicants are given on the Housing Register, or prevent them from joining the register. These include circumstances such as rent arrears or past/current anti-social behaviour.</p>
+<p>An Exception Request allows us to make decisions on whether it is appropriate to waive these restrictions in exceptional circumstances. Situations where we might consider an Exception Request include where we are awarding a priority or where an applicant wishes to move to more suitable accommodation using their waiting time due to a change in their circumstances.</p>
+<p>In order for us to consider an Exception Request, the applicant will have to demonstrate that they have exceptional circumstances and have taken action to rectify the issues which led to them being given reduced preference or disqualified from the register.</p>
+<p>If an applicant is placed in Band E they may request an Exception Request to be placed in General Needs Band D in order to make better use of their waiting time. In these circumstances, an Exception Request can be completed however the applicant would still be required to evidence that they have exceptional circumstances. This is also the case where the applicant is disqualified and an Exception Request is submitted to be placed in Band E.</p>
+<p>Reviews</p>
+<p>We will write to applicants advising them of our decision at which point a review can be requested within 21 days. Following the review, we will not normally reconsider a request for six months unless there has been a change in the applicant&rsquo;s circumstances. There is no further right of review on such decisions.</p>
+<p>Hostel Leavers</p>
+<p>Referrals need to be made by the hostel.</p>
+</div>
+</details>
+
+<details class="accordion">
+<summary class="accordion-header">
+<h3>Name changes</h3>
+<div class="accordion-icon"></div>
+</summary>
+<div class="accordion-content">
+<p>You should present proof (3 documents in total) to a housing office or First Point who will copy the ID and save it to our document management store. Advisor note: Acceptable ID is listed in an accordion above.</p>
+<p>The name will then be changed in our Housing management system.</p>
+<p>Alternatively, you can put the name change in writing along with proof of the new name (originals, not photocopies) and send it to RegistrationID@sheffield.gov.uk</p>
+<p>At least one piece of proof must be primary evidence whilst the second may be either primary or secondary evidence. Proof of their current UK address is also required.</p>
+<p>Photo ID is also required to prove identity. If the customer does not have photo ID, they must provide a passport-sized photo. The same document cannot be used more than once e.g. driving licence as primary evidence and proof of address.</p>
+</div>
+</details>
+
+<details class="accordion">
+<summary class="accordion-header">
+<h3>Split Applications</h3>
+<div class="accordion-icon"></div>
+</summary>
+<div class="accordion-content">
+<h3>Main Applicant </h3>
+<p>Removing a joint applicant needs to be done online at the Property Shop website.</p>
+<h3>Joint Applicant </h3>
+<p>You will need to speak to the Registration team so that your National Insurance Number can be removed. Notes will also need to be made on your joint household.</p>
+<p>You will need to complete a new online application and confirm on that application that you want to be removed from the other application. You will not lose your original waiting time as this will be carried forward as part of the approval process.</p>
+<p>You should not log on and use a made up NI number or you may not get your waiting time back.</p>
+</div>
+</details>
+
+
 </p>`
 
   {buttonLabel}: "Example 1", formName: "example_form" },
