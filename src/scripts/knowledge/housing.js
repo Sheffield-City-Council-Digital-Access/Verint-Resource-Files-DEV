@@ -148,7 +148,7 @@ const communalFireSafety = new ContentH(
 const gardenPledgeScheme = new ContentH(
   "gardenPledgeScheme",
   "Garden Pledge Scheme",
-  "Desc tbc",
+  "Information about Garden Pledge Scheme and gardening services",
   `
     <p>
       The Garden Pledge Scheme ceased to operate in April 2023 as highlighted below
@@ -197,14 +197,14 @@ const gardenPledgeScheme = new ContentH(
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "09/10/2024", name: "Elliott Griffiths" }
 );
 
 const fencesCouncilHousing = new ContentH(
   "fencesCouncilHousing",
   "Fences (Council Housing)",
-  "Desc tbc",
+  "Installation, repair and removal of fences",
   `
     <h3>New Fence</h3>
     <p>
@@ -224,7 +224,7 @@ const fencesCouncilHousing = new ContentH(
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "09/10/2024", name: "Elliott Griffiths" }
 );
 
