@@ -437,7 +437,7 @@ const roadPavementSurface = new FormRaP(
   "roadPavementSurface",
   "Road or pavement surface",
   "Report problems such as dip or depression or vegetation in the road or pavement",
-  "report_road_pavement_surface",
+  "road_pavement_surface",
   {
     type: "Report",
     keywords: ["Road", "pavement", "surface"],
