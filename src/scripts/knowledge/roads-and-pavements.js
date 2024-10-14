@@ -479,7 +479,7 @@ const reportHedgePlantGrass = new ContentRaP(
   `## needs information around grass cutting schedule ##`,
   {
     buttonLabel: "Report a hedge, plant or grass",
-    formName: "hedge_plant_grass",
+    formName: "report_hedge_plant_grass",
   },
   { typeKey: "" },
   { typeKey: "" },
