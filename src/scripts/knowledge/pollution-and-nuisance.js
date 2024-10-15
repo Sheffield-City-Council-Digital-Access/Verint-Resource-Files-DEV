@@ -2530,6 +2530,149 @@ const handoverDogtoCouncil = new ContentPaN(
   { date: "11/10/2024", name: "Shahzad Athar" }
 );
 
+const abandonedPets = new ContentPaN(
+  "abandonedPets",
+  "Abandoned Pets",
+  "Information about Abandoned Pets",
+  `
+  <section class="info-panel" role="region" aria-label="Information panel">
+  <p>
+  Reports of this nature need to go to the RSPCA.
+  </p>
+  <p>
+  Please contact the RSPCA on 0300 1234 999.
+  </p>
+  <p> or visit their website: <a href="http://www.rspca.org.uk/home" target="_blank">http://www.rspca.org.uk/home</a>
+  </p>
+  </section>
+  `,
+  {
+    buttonLabel: "Abandoned Pets",
+    formName: "animal_control_treatment",
+  },
+  { typeKey: "animal_control_transfer_to_service" },
+  { typeKey: "animal_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Abandoned Pets", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Animal Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const dogAdoption = new ContentPaN(
+  "dogAdoption",
+  "Dog Adoption",
+  "Information about adoption a dog",
+  `
+  <section class="info-panel" role="region" aria-label="Information panel">
+  <p>
+  You can adopt a dog from Spring Street Kennels.
+  </p>
+  If you would like to make an enquiry, please call them on 0114 2726758 or 07817 497995.
+  </p>
+  <strong>Address:</strong> Bower Spring, Sheffield, S3 8PB 
+  </p>
+  <strong>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week.
+  </p>
+  </section>
+  `,
+  {
+    buttonLabel: "Dog Adoption",
+    formName: "animal_control_treatment",
+  },
+  { typeKey: "animal_control_transfer_to_service" },
+  { typeKey: "animal_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Dog Adoption", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Animal Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const dogMicroChipping = new ContentPaN(
+  "dogMicroChipping",
+  "Dog Micro Chipping",
+  "Information about Dog Micro Chipping",
+  `
+  <section class="info-panel" role="region" aria-label="Information panel">
+  <p>
+  Spring Street Kennels offers a microchipping service. 
+  </p>
+  If you would like to take up this service, please call them on 0114 2726758 or 07817 497995. 
+  </p>
+  <strong>Address:</strong> Bower Spring, Sheffield, S3 8PB 
+  </p>
+  <strong>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week.
+  </p>
+  </section>
+  `,
+  {
+    buttonLabel: "Dog Micro Chipping",
+    formName: "animal_control_treatment",
+  },
+  { typeKey: "animal_control_transfer_to_service" },
+  { typeKey: "animal_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Dog Micro Chipping", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Animal Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const deceasedPet  = new ContentPaN(
+  "deceasedPet ",
+  "Deceased Pet",
+  "Information about Deceased Pet",
+  `
+  <section class="info-panel" role="region" aria-label="Information panel">
+  <h3>Birds/Mice/Rats</h3>
+  <p>
+  We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and 
+  dispose of it with your general waste. 
+  </p>
+  </section>
+  `,
+  {
+    buttonLabel: "Deceased Pet",
+    formName: "animal_control_treatment",
+  },
+  { typeKey: "animal_control_transfer_to_service" },
+  { typeKey: "animal_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Deceased Pet", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Animal Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
 const animalControl = new MenuPaN(
   "animalControl",
   "Animal Control",
@@ -2883,13 +3026,13 @@ const pollutionAndNuisance = new ServicePaN(
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour…`,
   [
     abandonedVehicles,
-    pestControl,
-    reportDogFouling,
     reportLitter,
     reportGraffiti,
     reportFlyPosting,
     reportFlyTipping,
     reportDogFouling,
     pestControl,
+    animalControl,
+    bulkyWaste,
   ]
 );
