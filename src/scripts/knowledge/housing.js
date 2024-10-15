@@ -75,7 +75,7 @@ const applicationChanges = new ContentH(
       If the customer has made recent changes, the changes are likely to be awaiting
       approval, and no further changes can be made until they are approved.
     </p>
-
+  
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Accepted ID</h3>
@@ -91,7 +91,7 @@ const applicationChanges = new ContentH(
           of child benefit is only required where children under 16 years of age are
           being rehoused with you.
         </p>
-
+  
         <h3>Proof of ID documents</h3>
         <ul>
           <li>Marriage certificate</li>
@@ -116,7 +116,7 @@ const applicationChanges = new ContentH(
           <li>Letter from Social Worker/Probation Officer/Solicitor</li>
           <li>Driving licence</li>
         </ul>
-
+  
         <h3>Proof of Address</h3>
         <ul>
           <li>Recent utility bill paid in that person’s name (last quarter)</li>
@@ -129,7 +129,7 @@ const applicationChanges = new ContentH(
           <li>Life assurance/Insurance policies</li>
           <li>Proof of all other benefits</li>
         </ul>
-
+  
         <h3>Proof of Child Benefit</h3>
         <ul>
           <li>Child benefit award letter</li>
@@ -140,7 +140,7 @@ const applicationChanges = new ContentH(
         </ul>
       </div>
     </details>
-
+  
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Annual Renewal</h3>
@@ -159,7 +159,7 @@ const applicationChanges = new ContentH(
           Customers won’t need to submit ID for any changes they make, and this will
           continue for the time being. This will change in the future.
         </p>
-
+  
         <details class="details-accordion">
           <summary>
             Instructions for completing the renewal of your Housing Application
@@ -186,7 +186,7 @@ const applicationChanges = new ContentH(
         </details>
       </div>
     </details>
-
+  
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Disqualification/Restriction</h3>
@@ -222,7 +222,7 @@ const applicationChanges = new ContentH(
         </p>
       </div>
     </details>
-
+  
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Assistance with Change of Circumstances</h3>
@@ -246,7 +246,7 @@ const applicationChanges = new ContentH(
         <p>Please do not submit the application.</p>
       </div>
     </details>
-
+  
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Exceptions</h3>
@@ -273,7 +273,7 @@ const applicationChanges = new ContentH(
         </p>
       </div>
     </details>
-
+  
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Name Changes</h3>
@@ -290,7 +290,7 @@ const applicationChanges = new ContentH(
         </p>
       </div>
     </details>
-
+  
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Split Applications</h3>
@@ -1302,7 +1302,7 @@ const housingAssociations = new ContentH(
   `
     <h3></h3>
     <p>
-
+  
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -1313,30 +1313,243 @@ const housingAssociations = new ContentH(
 )
 
 
-// Sheltered and Supported
-const furnishedAccommodation = new ContentSaS(
+// Sheltered and Supported initialization 
+const furnishedAccommodation = new ContentH(
   "furnishedAccommodation",
   "Furnished Accommodation",
   "Desc tbc",
   `
   <p>Furnished Accommodation meets the need for good quality furnished housing for rent at affordable prices and offers an alternative for people residing in expensive bed and breakfast accommodation.</p>
-<p>Properties are furnished with goods generally selected by the customer on a choice basis to meet their needs on a 3 tiered service charge arrangement. Fully furnished properties are decorated and carpeted throughout and curtains and tracks are provided and fitted.</p>
-<p>Enquiries that are specifically regarding the information in this page can be sent to Furnished using the links at the bottom of the page. If the enquiry is related to other matters, for instance estate management, tenancy management or ASB, then the appropriate form should be used to process that enquiry.</p>   
+  <p>Properties are furnished with goods generally selected by the customer on a choice basis to meet their needs on a 3 tiered service charge arrangement. Fully furnished properties are decorated and carpeted throughout and curtains and tracks are provided and fitted.</p>
+  <p>Enquiries that are specifically regarding the information in this page can be sent to Furnished using the links at the bottom of the page. If the enquiry is related to other matters, for instance estate management, tenancy management or ASB, then the appropriate form should be used to process that enquiry.</p> <h3>Furnished Accommodation Cost</h3>
+  <p>The cost depends on the package chosen and there are 3 tiers: Gold, Silver and Bronze. These carry £10, £15 and £20 per week charge that is payable over and above the net rent charge for the property.</p>
+  <p>How it works</p>
+  <p>There are three price bands to choose   from:</p>
+<ul>
+    <li>Gold - £20 per week (20 points)</li>
+    <li>Silver - £15 per week (15 points)</li>
+    <li>Bronze - £10 per week (10 points)</li>
+</ul>
+    <p>Each piece of furniture or floor covering will have a points value and the points will add up to package you want; Gold, Silver or Bronze. A Bronze package for example costs £10 a week and you can have 10 points worth of furniture (this could include a table and chairs, a settee, a fridge freezer and washing machine all at 2 points each and an arm chair and crockery pack at 1 point each). You can mix and match, depending on what furniture you already have.</p>
+    <p>Items of furniture and colour choices now available include washing machines, fridge freezers, vacuum cleaners, pots and pans and 3 colours of carpets and vinyl.</p>
+ 
+<h3>Customer wants an item of furniture replacing</h3>
+<p>
+    The exchanging of furniture items is subject to a variety of factors including:</p>
+<ul>
+    <li>The age of the goods as they still may be under warranty</li>
+    <li>If damaged – the reason for the damage - must be fair wear and tear or manufacturing fault / defect.</li>
+    <li>Most goods are assessed at the customer’s annual visit they receive and also all relevant electrical items are PAT tested at this time. The officer carrying out the visit will arrange any replacement goods if agreed and applicable.</li>
+</ul>
+  
+<h3>Customer no longer wants their furniture</h3>
+<p>There are instances where financial hardship may be caused by the service charge and / or the customer has sourced their own goods now. The process of removing the service charge is known as Deed of Variation and it takes approximately 10 weeks to complete as there are 2 notice periods with 28 day cooling off periods legally built into them.</p>
+  
+<h3>Furnished and Local Assistance Scheme (LAS)</h3>
+<p>Furnished provide the goods and deliver them to customers who have applied for the grant / goods via Local Assistance Scheme. Furnished may provide installation at Council properties but do not perform installs at non Council properties.
+</p>
+  
+<h3>Furnished on Demand</h3>
+<p>The service is only available to new customers who are signing up for a new Council tenancy.
+</p>
+<p>Acceptance criteria:</p>
+<ol>
+    <li>Applicants moving from any Temporary Accommodation property, Bed and Breakfast or Assessment Beds. The applicant must be currently bidding on Sheffield City Council properties and have a full homeless priority (This is generally Bands A and B under the new Allocations policy).
+    </li>
+    <li>Applicants referred via a medical priority (Generally Band A).
+    </li>
+    <li>Other applicants who would not be able to access a property without the Furnished Accommodation Service will be considered on a case by case basis (Most of these will be under Band C in Allocations policy).
+    </li>
+</ol>
+<p>(Most of these will be under Band C in Allocations policy).</p>
+<p>NB: Budget constraints may impact on criteria 3 and criteria’s 1 & 2 will always take preference.</p>
+<p>If the Customer does not meet the above criteria direct them to alternative options such as St Vincent De Pauls , Local Assistance Scheme or Emmaus.
+</p>
+  
+<h3>Furnished Delivery Schedule</h3>
+<p>Open the delivery schedule spreadsheet (copy the link: <br>G:\HSG\Public\Supported Hsg\Furnished Accommodation\Furnished delivery sheets\Furnished Delivery Sheet.xlsx</br> and paste into the Windows Explorer title bar).</p>
+<p>Search for the customer's address (street) and remember that the same address may be on the spreadsheet a few times - look for the most recent entry.</p>   
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Sheltered and Supported"] },
+  { date: "15/10/2024", name: "Joe Nixon" }
+)
+
+const olderPersonsIndependentLiving = new ContentH(
+  "olderPersonsIndependentLiving",
+  "Older Persons Independent Living (OPIL)",
+  "desc tbc",
+  `
+      <p>Sheltered housing is rented accommodation that is specially designed for older people who are able to live independently.
+    </p>
+    <p>It aims to provide comfortable accommodation with added security, in an environment where customers can come and go as they please.
+    </p>
+    <p>Enquiries that are specifically regarding the information in this form can be sent to OPIL using the links at the bottom of the form. If the enquiry is related to other matters, for instance, Estate Management, Tenancy Management or ASB, then the appropriate form should be used to process that enquiry.
+    </p>
+    
+    <h3>Where are the properties?</h3>
+    <p>Schemes are scattered all over the city. A comprehensive list of properties can be found on the council website or in the Older Persons Independent Living Service leaflet.</p>
+    <h3>What does the Sheltered Neighbourhood Officer do and New Tenancy Support</h3>
+    <p> The Neighbourhood Officers will complete a support plan with the tenant when they move in. This replaces the standard 'New Tenancy Visit' that non-Sheltered tenants receive.</p>
+    <p>The plan is reviewed every six months or when there is a change in circumstances. We will agree with the customer the type and frequency of contact they require based on the customers needs. The Neighbourhood Officer will manage a Sheltered tenancy in the same way that a Neighbourhood Officer based in an area team would manage a standard tenancy, but will also include any support agreed in the support plan.</p>
+    <p>The Neighbourhood Officers will help and support the customer to access any services they may need to help them live independently. The Neighbourhood Officers wardens will also contact relatives, call a doctor or an ambulance in an emergency.</p>
+    
+    <h3>What does OPIL provide</h3>
+    <p>Convenient and comfortable accommodation with added security, in an environment where residents have their own front door and can come and go as they please. We can usually provide the following accommodation and facilities:</p>    
+    <ul>
+        <li>Self contained flats/Studio apartments/Bungalows</li>
+        <li>Communal Facilities such as:
+            <ul>
+                <li>Caretaking service for the communal areas</li>
+                <li>City Wide Care Alarm (24 hour emergency response)</li>
+                <li>Gardens</li>
+                <li>Guest room</li>
+                <li>Kitchen</li>
+                <li>Laundry</li>
+                <li>Lounge for social activities</li>
+                <li>Neighbourhood Officer Warden</li>
+                <li>Security and Safety features</li>
+               </ul>
+            </li>    
+        </ul>
+    </ul>
+  
+    <h3>Who is eligible for OPIL accommodation</h3>
+    <p>Anyone aged over 60 and is registered for rehousing. In the case of a couple, at least one person must fit the age requirement.</p>
+    <p>Before offering a property we will check to make sure it meets all your housing needs. You will also be invited to an accompanied viewing of the building without any commitment.</p>
+  
+    <h3>What are the costs of OPIL Accommodation</h3>
+    <p>The cost of living in Sheltered Housing is very competitive when compared with other social housing providers.</p>
+    <p>You pay weekly rent and a service charge (where applicable) for the heating and hot water in your property and/or towards the heating in communal areas of the scheme.</p>
+    <p>There is an added support charge to cover the Neighbourhood Officer service and City Wide Alarm. If you are already in receipt of Housing Benefit you will not have to pay this charge.</p>
+    <p>If you are on a low income you can apply to have an assessment to see if you are entitled to any assistance.</p>
+    <p>You will receive help and advice on claiming Welfare and/or Housing Benefit at the start of your tenancy.</p>
+  
+    <h3>What are the benefits of OPIL Accommodation</h3>
+    <ul>
+        <li>Good quality housing</li>
+        <li>Security</li>
+        <li>Independence</li>
+        <li>Your own front door</li>
+        <li>Peace of mind, with help on hand in emergencies</li>
+        <li>Neighbourhood Officer Warden support service and a 24 hr emergency response system connected to each flat (City Wide Care Alarms)</li>
+        <li>A support plan - agreed with the Neighbourhood Officer - to meet individual needs</li>
+        <li>Being part of the community</li>
+    </ul>
+  
+    <h3>Register for OPIL Accommodation</h3>
+    <p>Applicants should be registered for rehousing.</p>
+    <p>You can access OPIL accommodation through the Sheffield Property Shop or call in at any of the local Area Housing Offices.</p>
+    <p>You can also be referred through:</p>
+    <ul>
+        <li>Health and Housing</li>
+        <li>Social Services</li>
+        <li>Health Service</li>
+    </ul>
   
   
   
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Sheltered and Supported"] },
+  { date: "15/10/2024", name: "Joe Nixon" }
+
+)
+
+const extraCareHousing = new ContentH(
+  "extraCareHousing",
+  "Extra Care Housing",
+  "desc tbd",
+  `
+  <h3>What is Extra Care Housing?</h3>
+  <p>Extra Care Housing is based on 3 key principles:</p>
+  <ul>
+      <li>To keep people as independent as possible.</li>
+      <li>To allow someone to get services in their own home, without having to move to get them.
+      </li>
+      <li>Accommodation designed to be adaptable so that people can get the care and support they need at home.
+      </li>
+  </ul>
+  <p>The main features are:
+  </p>
+  <ul>
+      <li>Self-contained flats or bungalows, with their own front door.
+      </li>
+      <li>Choice of tenure (rent, shared ownership or buy).
+      </li>
+      <li>High standards of design, with wheelchair access throughout.
+      </li>
+      <li>High level of security & safety features with alarm call systems.
+      </li>
+      <li>Flexible packages, tailored to individual care needs.
+      </li>
+      <li>24-hour care and support (Emergencies only from 10p.m. – 6 a.m.)
+      </li>
+      <li>Range of facilities, e.g. cafe, craft/activity room, IT suite, with a number of activities taking place weekly.
+      </li>
+  </ul>
+  <p>There are currently 5 Extra Care Housing schemes in Sheffield.</p>
+  
+  <h3>Extra Care Contact Details</h3>
+  <p>Guildford Grange, Norfolk Park. Contact the scheme on 0114 203 7888<br>
+      The Meadows, Shirecliffe. Contact the scheme on 0114 243 5749<br>
+      Brunswick Gardens, Woodhouse. Contact the scheme on 0114 294 0000<br>
+      Roman Ridge, Wincobank. Contact the scheme on 0114 2800540<br>
+      White Willows, Jordanthorpe. Contact the scheme on 0114 2377960.</p>
+      <p>People need to be registered on the Council’s Housing Register but also need to complete a re-housing application form for the scheme itself.</p>
+      <p>If anyone is currently receiving care and is interested in being re-housed to Extra Care Housing, they need to make their social worker/care manager aware of this.</p>
   
   
-  
-  
-  
-  
-  
-  
+  <h3>Cost of Extra Care Housing </h3>
+  <p>The costs of Extra Care Housing vary, depending on the type of accommodation and the tenure. Generally, the costs of rental properties in Extra Care include:</p>
+  <ul>
+      <li>Net rent for the individual property
+      </li>
+      <li>A service charge for the upkeep of the communal facilities
+      </li>
+      <li>A service charge for the individual property
+      </li>
+      <li>A Supporting People charge for housing related support.
+      </li>
+      <li>Council Tax is charged for on a separate bill.
+      </li>
+  </ul>
+
+
+
+
+
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Sheltered and Supported"] },
+  { date: "15/10/2024", name: "Joe Nixon" }
+)
+
+const gypsyAndTravellers = new ContentH(
+  "gypsyAndTravellers",
+  "Gypsy and Travellers",
+  "desc tbd",
+  `
+
+
+
+
   
   `
-  
 )
+
+
+
+
+
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
