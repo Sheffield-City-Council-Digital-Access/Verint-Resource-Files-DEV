@@ -2228,7 +2228,7 @@ const handoverDogtoCouncil = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Animal Control"
+      "Animal Control",
       "Environmental Health"
     ],
   },
