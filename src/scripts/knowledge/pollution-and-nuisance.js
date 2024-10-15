@@ -2011,7 +2011,59 @@ const spiderBeetlesTreatment = new ContentPaN(
   "Information about Spider Beetles Treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
-    
+     <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Spider Beetles in your domestic property, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+      If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Spider Beetles is £110.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
   `,
   {
     buttonLabel: "Book treatment for Spider Beetles",
@@ -2038,7 +2090,31 @@ const squirrelsTreatment = new ContentPaN(
   "Information about Squirrels Treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
-    
+    <h3>Cost for Treatment</h3>
+    <p>
+      We can only provide treatment for Squirrels inside the property. 
+      The cost for the treatment is £315.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £99:00:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      This covers you for up to 5 visits. If you require further treatments, 
+      each additional treatment will cost £55. All prices include a call-out fee of £39. 
+      This fee applies if our officer attends the property but is unable to complete the treatment.
+    </p> 
+    </section>
   `,
   {
     buttonLabel: "Book treatment for Squirrels Beetles",
@@ -2065,7 +2141,45 @@ const waspsTreatment = new ContentPaN(
   "Information about Wasps Treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
-    
+     <h3>Cost for Treatment</h3>
+    <p>
+      The cost for the Wasps treatment is £75.50. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £58:00:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+    If there is more than one nest, a charge of £39.00 per addition nest will be applied.
+    </p>
+    <h3>Nests Up High</h3>
+    <p>
+    Officers carry equipment that enables them to treat a nest located at height.
+    In most cases the officer will be able to carry out a successful treatment using such equipment.
+    </p>
+    <p>
+    If any further access equipment is required to treat the nest our officer will inform you of this 
+    at the time of the visit. If further access is equipment is required, then it would possibly 
+    mean an added cost.</p>
+    <p>
+    If your customer is unsure about the possible additional cost, escalate pest control enquiry and
+    an officer will contact the customer about it.
+    </p>
+    <p>
+    All prices include a call-out fee of £39. This fee applies if our officer attends the property 
+    but is unable to complete the treatment.
+    </p> 
+    </section>
   `,
   {
     buttonLabel: "Book treatment for Wasps",
@@ -2091,8 +2205,42 @@ const weevilsTreatment = new ContentPaN(
   "Weevils Treatment",
   "Information about Weevils Treatment and services",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
-    
+  <section class="info-panel" role="region" aria-label="Information panel">
+  <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Weevils in your domestic property, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+      If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+    </section>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>  
   `,
   {
     buttonLabel: "Book treatment for Weevils",
@@ -2118,8 +2266,30 @@ const woodliceTreatment = new ContentPaN(
   "Woodlice Treatment",
   "Information about Woodlice Treatment and services",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
-    
+  <section class="info-panel" role="region" aria-label="Information panel">
+  <h3>Cost for Treatment</h3>
+    <p>
+      The cost for the Woodlice treatment is £110.50. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69:50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+    All prices include a call-out fee of £39. This fee applies if our officer attends the property 
+    but is unable to complete the treatment.
+    </p> 
+    </section>
   `,
   {
     buttonLabel: "Book treatment for Woodlice",
@@ -2143,9 +2313,51 @@ const woodliceTreatment = new ContentPaN(
 const noneoftheAbove = new ContentPaN(
   "noneoftheAbove",
   "None of the Above",
+  "Follow this procedure if your request is none of the above",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
-    
+  <section class="info-panel" role="region" aria-label="Information panel">
+  <h3>Cost of Treatment</h3>
+  <p>
+  I will need to refer this report onto a technician. 
+  They will look into this contact you to provide you with a quote for Other Pest.
+  </p>
+  <h3>Call Out Charges</h3>
+  <p>
+  All prices contain a call out fee of £39.<br>
+  If we attend the property and the officer is unable to complete the treatment, 
+  the call out charge will be applied. 
+  </p> 
+ <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Weevils in your domestic property, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+      If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+    </section>
   `,
   {
     buttonLabel: "",
@@ -2165,6 +2377,71 @@ const noneoftheAbove = new ContentPaN(
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
 );
+
+const otherPestsControltreatments = new ContentPaN(
+  "otherPestsControltreatments",
+  "Other Pests Control Treatments",
+  "Check out the information for other pests control treatments",
+  `
+  <section class="info-panel" role="region" aria-label="Information panel">
+  <h3>Reptiles</h3>
+  <p>
+  Sheffield City Council doesn't offer a service for Reptiles.
+  </p>
+  <p>
+  Please contact the <strong>R.S.P.C.A. on 0300 1234 999</strong>.
+  </p> 
+  <p> or visit their website: <a href="http://www.rspca.org.uk/home" target="_blank">http://www.rspca.org.uk/home</a>
+  </p>
+
+  <h3>Slugs</h3>
+  <p>
+  Sheffield City Council doesn't offer a service for Slugs.
+  </p>
+
+  <h3>Snakes</h3>
+  <p>
+  Sheffield City Council doesn't offer a service for Snakes.
+  </p>
+  <p>
+  Please contact the <strong>R.S.P.C.A. on 0300 1234 999</strong>.<br>
+  or visit their website: <a href="http://www.rspca.org.uk/home" target="_blank">http://www.rspca.org.uk/home</a>
+  </p>
+  <h3>Spiders</h3> 
+  <p>
+  Sheffield City Council doesn't offer a service for Spiders.
+  </p>
+  <p>
+  You can contact the Natural History Museum or the British Arachnological Society by visiting their websites.
+  </P>
+  <a href="http://www.nhm.ac.uk" target="_blank">http://www.nhm.ac.uk</a> <br>
+  <a href="http://www.britishspiders.org.uk" target="_blank">http://www.britishspiders.org.uk</a>
+
+  <h3>Woodworm</h3>
+  <p>
+  Sheffield City Council doesn't offer a service for Woodworm.
+  </p>
+    </section>
+  `,
+  {
+    buttonLabel: "Other Pests Control Treatment",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Other Pests Control Treatment", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
 
 const pestControl = new MenuPaN(
   "pestControl",
@@ -2204,23 +2481,41 @@ const pestControl = new MenuPaN(
     waspsTreatment,
     weevilsTreatment,
     woodliceTreatment,
+    otherPestsControltreatments,
     noneoftheAbove,
+    
   ]
 );
 
 const handoverDogtoCouncil = new ContentPaN(
   "handoverDogtoCouncil",
   "Handover Dog to Council",
+  "(Aggressive Dog at Property, Dog attacking another dog/animal, Dog has bitten someone)",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
-    
+  <section class="info-panel" role="region" aria-label="Information panel">
+  <p>
+  We will see if we are able to help you. However, we cannot guarantee we will be able to take the dog. 
+  This is dependent on available space in the kennel.</p>
+  <p>
+  This is a chargeable service.
+  </p>
+  <p>
+  We charge £95.00 if the dog has been vaccinated and £128.00 if the dog has not been vaccinated (per dog).
+  We only charge if we are able to take the dog. If the dog has been vaccinated, you will need to provide 
+  the vaccination certificates. If you are unable to provide the vaccination certificates, you will be 
+  charged the higher amount. 
+  </p>
+  <p>
+  Once you have taken the details and raised the report, advise the customer to report the incident 
+  to the police.
+  </p>
   `,
   {
     buttonLabel: "Handover Dog to Council",
-    formName: "animal_control",
+    formName: "animal_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
-  { typeKey: "pest_control_information_provided" },
+  { typeKey: "animal_control_transfer_to_service" },
+  { typeKey: "animal_control_information_provided" },
   {
     type: "Book",
     keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
@@ -2228,7 +2523,150 @@ const handoverDogtoCouncil = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Animal Control"
+      "Animal Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const abandonedPets = new ContentPaN(
+  "abandonedPets",
+  "Abandoned Pets",
+  "Information about Abandoned Pets",
+  `
+  <section class="info-panel" role="region" aria-label="Information panel">
+  <p>
+  Reports of this nature need to go to the RSPCA.
+  </p>
+  <p>
+  Please contact the RSPCA on 0300 1234 999.
+  </p>
+  <p> or visit their website: <a href="http://www.rspca.org.uk/home" target="_blank">http://www.rspca.org.uk/home</a>
+  </p>
+  </section>
+  `,
+  {
+    buttonLabel: "Abandoned Pets",
+    formName: "animal_control_treatment",
+  },
+  { typeKey: "animal_control_transfer_to_service" },
+  { typeKey: "animal_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Abandoned Pets", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Animal Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const dogAdoption = new ContentPaN(
+  "dogAdoption",
+  "Dog Adoption",
+  "Information about adoption a dog",
+  `
+  <section class="info-panel" role="region" aria-label="Information panel">
+  <p>
+  You can adopt a dog from Spring Street Kennels.
+  </p>
+  If you would like to make an enquiry, please call them on 0114 2726758 or 07817 497995.
+  </p>
+  <strong>Address:</strong> Bower Spring, Sheffield, S3 8PB 
+  </p>
+  <strong>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week.
+  </p>
+  </section>
+  `,
+  {
+    buttonLabel: "Dog Adoption",
+    formName: "animal_control_treatment",
+  },
+  { typeKey: "animal_control_transfer_to_service" },
+  { typeKey: "animal_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Dog Adoption", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Animal Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const dogMicroChipping = new ContentPaN(
+  "dogMicroChipping",
+  "Dog Micro Chipping",
+  "Information about Dog Micro Chipping",
+  `
+  <section class="info-panel" role="region" aria-label="Information panel">
+  <p>
+  Spring Street Kennels offers a microchipping service. 
+  </p>
+  If you would like to take up this service, please call them on 0114 2726758 or 07817 497995. 
+  </p>
+  <strong>Address:</strong> Bower Spring, Sheffield, S3 8PB 
+  </p>
+  <strong>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week.
+  </p>
+  </section>
+  `,
+  {
+    buttonLabel: "Dog Micro Chipping",
+    formName: "animal_control_treatment",
+  },
+  { typeKey: "animal_control_transfer_to_service" },
+  { typeKey: "animal_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Dog Micro Chipping", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Animal Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const deceasedPet  = new ContentPaN(
+  "deceasedPet ",
+  "Deceased Pet",
+  "Information about Deceased Pet",
+  `
+  <section class="info-panel" role="region" aria-label="Information panel">
+  <h3>Birds/Mice/Rats</h3>
+  <p>
+  We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and 
+  dispose of it with your general waste. 
+  </p>
+  </section>
+  `,
+  {
+    buttonLabel: "Deceased Pet",
+    formName: "animal_control_treatment",
+  },
+  { typeKey: "animal_control_transfer_to_service" },
+  { typeKey: "animal_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Deceased Pet", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Animal Control",
       "Environmental Health",
     ],
   },
@@ -2241,6 +2679,192 @@ const animalControl = new MenuPaN(
   "Animal control treatments, services and pricing",
   [
     handoverDogtoCouncil,
+    abandonedPets,
+    dogAdoption,
+    dogMicroChipping,
+    deceasedPet,
+    
+  ]
+);
+
+const bulkyWasteBuild  = new ContentPaN(
+  "bulkyWasteBuild",
+  "Bulky Waste Build",
+  "Information about Bulky Waste Build, ",
+  `
+  <p>
+  As a Council tenant, you can request one free bulky waste collection of household goods 
+  every twelve months. Once you have had your free collection, you will need to pay for each 
+  additional collection within this twelve-month period.
+  </p>
+  <p>
+  The Council Housing Service will not collect bulky items that are not household goods, 
+  if this is the case you would need to make your own provisions for their removal.  
+  </p>
+
+  <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Bulky Waste Renoval Costs</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          As a Council tenant your first collection is free. 
+          For each additional collection there is a collection charge, 
+          reduced if you receive income support, housing benefit, pension credit, Job Seekers, 
+          or Employment Support Allowance. Current costs are as follows: 
+
+          //// REMOVAL COST NEED TO ENTER ////// 
+
+        </p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Where should i put my bulky items for collection?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          Your bulky waste items need to be placed in an easily accessible location outside your property. 
+          The location at which you can leave your bulky waste for collection will be discussed when you 
+          contact Veolia to arrange a collection. 
+        </p>
+        <p>
+        Where possible, we ask that you put your items of bulky waste out for collection on the day before 
+        your collection is due, and no later than 7am on the day of collection. 
+        </p>
+        <p>
+        Please do not leave the items in a communal area as this may cause a hazard. 
+        </p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>When will my bulky waste be collected?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+        Your bulky waste will be collected within 7 days. You will be given a collection day by Veolia when you book your collection. 
+        </p>
+      </div>
+    </details>
+
+     <details class="accordion">
+      <summary class="accordion-header">
+        <h3>What happens to my bulky waste once collected?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+        All electrical items collect by Veolia as part of the bulky waste service, including fridges, 
+        freezers and televisions are taken for recycling. 
+        </p>
+        <p>
+        Other items of bulky waste are currently sent to landfill or taken to Sheffield's energy recovery facility for disposal. 
+        We are looking to work with local charities in future to recycle or reuse as much bulky waste as possible. 
+        </p>
+      </div>
+    </details>
+
+     <details class="accordion">
+      <summary class="accordion-header">
+        <h3>As a Council Housing Service Tenant, why am i limited to just one free collection?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+        The decision to limit the number of free bulky waste collections was taken by the Council to save money on the services it 
+        provides. If the Council doesn't reduce how much it spends on the bulky waste service, then other services may have to make
+        even more cuts. 
+        </p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>How will you know if I have already had my one free collection?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+        Before providing any free collection, checks will be carried out to make sure that a free collection hasn't already been 
+        provided in the previous twelve months. Where it is found that a free collection has already been provided, additional 
+        collections will not take place within this period until a payment has been made. 
+        </p>
+      </div>
+    </details>
+
+     <details class="accordion">
+      <summary class="accordion-header">
+        <h3>I've had my free collection, now how do i get rid of my bulky waste?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+        If you have items of bulky waste that you want to get rid of and you have already used your annual free collection, you can 
+        either take this to your local Household Waste Recycling Centre where you can dispose of them free of charge or you can 
+        contact Veolia Environmental Services to arrange a bulky waste collection from your home. 
+        </p>
+      </div>
+    </details>
+
+    
+     <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Bulky Waste in Communal Areas - Fie Safety</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+        Under the Regulatory Reform Order (2005), landlords are required to ensure that fire Risk Assessments are carried out in 
+        any shared areas of any properties they manage. Landlords also need to ensure that any fire escape routes and 
+        entrances/exits to properties are clear from trip hazards and items which would prevent exit from the building in the event 
+        of an emergency. 
+        </p>
+        <p>
+        Please do not store bulky waste in the communal area as this may cause a hazard.
+        </p>
+      </div>
+    </details>
+
+    <p>
+    Refer to Veolia and provide the customer's rent reference number. Please be aware that for certain blocks, Veolia may tell you
+    to contact the Estates and Environmental Services Team if the block is not covered by Veolia. 
+    </p>
+
+
+    `,
+  {
+    buttonLabel: "Bulky Waste Build",
+    formName: "bulky_waste_Build",
+  },
+  { typeKey: "bulky_waste_transfer_to_service" },
+  { typeKey: "bulky_waste_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Bulky Waste", "", "", ""],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Animal Control",
+      "Bulky Waste",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const bulkyWaste = new MenuPaN(
+  "bulkyWaste",
+  "Bulky Waste",
+  "Bulky waste services and pricing",
+  [
+    bulkyWasteBuild,
     
   ]
 );
@@ -2408,5 +3032,7 @@ const pollutionAndNuisance = new ServicePaN(
     reportFlyTipping,
     reportDogFouling,
     pestControl,
+    animalControl,
+    bulkyWaste,
   ]
 );
