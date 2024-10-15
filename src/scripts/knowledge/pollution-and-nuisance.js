@@ -2229,7 +2229,7 @@ const handoverDogtoCouncil = new ContentPaN(
       "Environmental",
       "Pest Control",
       "Animal Control"
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
