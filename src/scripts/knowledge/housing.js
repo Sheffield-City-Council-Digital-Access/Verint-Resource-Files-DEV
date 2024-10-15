@@ -1537,12 +1537,48 @@ const gypsyAndTravellers = new ContentH(
   "Gypsy and Travellers",
   "desc tbd",
   `
+<h3>Where are the official Gypsy and Traveller sits</h3>
+<p>Long Acre View<br>Holbrook Trading Estate<br>Holbrook<br>Sheffield S20 3FU</p>
+<p>Redmires Caravan Park <br>Redmires Lane <br>Lodge Moor <br>Sheffield S10 4JZ</p>
+            
+<h3>What manages the sites?</h3>
+<p>Both sites are managed by the Housing and Neighbourhood Service Gypsy and Traveller Site Management team based at Solpr.</p>
+            
+<h3>What are the roles of the team</h3>
+<p>The team deals with everything including:</p>
+<ul>
+    <li>Rent</li>
+    <li>Tenancy Management</li>
+    <li>ASB</li>
+    <li>Estate Management issues</li>
+    <li>Repairs - all calls for new repairs or where an inspection is required should be transferred to the Repairs Contact Centre
+    </li>
+    <li>Vacants and lettings</li>
+</ul>
+<p>Everything is recorded on OHMS the same as housing tenants although these customers are not classed as ‘tenants’, they aclassed as 'Occupiers' and are managed under 'agreements' under the Mobile Homes Act 1983.</p>
+
+<h3>Rehousing and Waiting Lists</h3>
+<p>
+Registrations are encouraged for both sites, 
+<ul>
+    <li>Long Acre View (14 plots)</li>
+    <li>Redmires Caravan Park (17 plots)</li>
+</ul>
+And is done via the Gypsy and Traveller registration form. The registration form is issued by the Gypsy and Traveller Team, who maintain a waiting list for both traveller sites.</p>
+<p>This list is separate to the main Lettings system and it cannot be viewed on Abritas.</p>
+
+<h3>Roadside and Illegal Encampments</h3>
+<p>Environmental Protection Services deal with questions or enquiries around any roadside encampments or any other kind of unauthorised encampments, on 0114 2734651.</p>
 
 
 
 
-  
-  `
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Sheltered and Supported"] },
+  { date: "15/10/2024", name: "Joe Nixon" }
 )
 
 
