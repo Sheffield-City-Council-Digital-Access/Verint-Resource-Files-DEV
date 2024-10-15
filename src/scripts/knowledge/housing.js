@@ -54,6 +54,10 @@ class FormH extends CoreH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
+
+
+//Application Changes page to be under the Rehousing menu
+
 const applicationChanges = new ContentH(
   "applicationChanges",
   "Application Changes",
@@ -274,6 +278,53 @@ const applicationChanges = new ContentH(
 </div>
 </details>
 
+<details class="accordion">
+<summary class="accordion-header">
+<h3>Suspend Application</h3>
+<div class="accordion-icon"></div>
+</summary>
+<div class="accordion-content">
+<p>You cannot suspend your own application. If you do not want to be rehoused but want to keep you application, simply don't bid.</p>
+</div>
+</details>
+
+<details class="accordion">
+<summary class="accordion-header">
+<h3>Family member has been removed</h3>
+<div class="accordion-icon"></div>
+</summary>
+<div class="accordion-content">
+<p>Search for customer through Abritas household. Look at the Abritas CRM for recent notes. If notes indicate that 16-25 year old has been removed due to activating own application, the customer will need to speak with their family member.</p>
+</div>
+</details>
+
+<details class="accordion">
+<summary class="accordion-header">
+<h3>Application for 16 to 25 year olds</h3>
+<div class="accordion-icon"></div>
+</summary>
+<div class="accordion-content">
+<h3>Customer wants to activate own Application</h3>
+<p>Applicants are only permitted to be on one application unless they are 16-25 and living with parents/guardians. In this case, they can have a restricted application of their own and also be a household member on the family application.</p>
+<p>For customers aged 16-25, search for customer through Abritas household to find suspended application.</p>
+<h3>Customer wants to go back on to parents/guardians Application</h3>
+<p>You will no longer qualify to be rehoused with their parents unless you are willing to cancel your own application (if they have one). In order to be on two applications you must be continuously on your parent&rsquo;s application without a break.</p>
+</div>
+</details>
+
+<details class="accordion">
+<summary class="accordion-header">
+<h3>Dummy Registration</h3>
+<div class="accordion-icon"></div>
+</summary>
+<div class="accordion-content">
+<p>Log on using the details below if required.</p>
+<p>Unique Reference - 1257822</p>
+<p>Memorable date - 25/12/2012</p>
+<p>Password - DMrm15</p>
+<p> Advisor note: You have logged in using dummy login details. Please do not amend anything on screen.</p>
+</div>
+</details>
 
 </p>`
 
@@ -281,7 +332,7 @@ const applicationChanges = new ContentH(
   {typeKey}: "example_transfered_to_service" },
   {typeKey}: "example_information_provided" },
   {type}: "Apply", keywords: [], categories: ["Housing"] },
-  {date}: "05/09/2024", name: "Elliott Griffiths" }
+  {date}: "15/10/2024", name: "Omily Parkin" }
   );
 
 //apply for rehousing page to be under Rehousing menu
