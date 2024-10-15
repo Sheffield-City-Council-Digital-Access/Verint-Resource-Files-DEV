@@ -333,15 +333,15 @@ const applyForRehousing = new ContentH(
       First Point before your application will be validated.
     </p>
   `,
-  { buttonLabel: "Example 1", formName: "example_form" },
-  { typeKey: "example_transfered_to_service" },
-  { typeKey: "example_information_provided" },
-  { type: "Request", keywords: ["rehousing"], categories: ["Housing"] },
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
-  { date: "14/10/2024", name: "Omily Parkin" }
+  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "registering_to_vote_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
 const rehousing = new MenuH("rehousing", "Rehousing", "TBC", [
