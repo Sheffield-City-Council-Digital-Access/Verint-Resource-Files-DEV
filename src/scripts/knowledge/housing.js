@@ -1,4 +1,4 @@
-class CoreH {
+/*class CoreH {
   constructor(id, name, description) {
     this.id = id;
     this.name = name;
@@ -637,3 +637,4 @@ const housing = new ServiceH(
   [estatesAndEnvironments, leaseholderInformation]
   [estatesAndEnvironments, leaseholderInformation, rehousing]
 );
+*/
