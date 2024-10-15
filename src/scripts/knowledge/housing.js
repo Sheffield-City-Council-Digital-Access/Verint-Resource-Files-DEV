@@ -1313,6 +1313,30 @@ const housingAssociations = new ContentH(
 )
 
 
+// Sheltered and Supported
+const furnishedAccommodation = new ContentSaS(
+  "furnishedAccommodation",
+  "Furnished Accommodation",
+  "Desc tbc",
+  `
+  <p>Furnished Accommodation meets the need for good quality furnished housing for rent at affordable prices and offers an alternative for people residing in expensive bed and breakfast accommodation.</p>
+<p>Properties are furnished with goods generally selected by the customer on a choice basis to meet their needs on a 3 tiered service charge arrangement. Fully furnished properties are decorated and carpeted throughout and curtains and tracks are provided and fitted.</p>
+<p>Enquiries that are specifically regarding the information in this page can be sent to Furnished using the links at the bottom of the page. If the enquiry is related to other matters, for instance estate management, tenancy management or ASB, then the appropriate form should be used to process that enquiry.</p>   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  `
+  
+)
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
