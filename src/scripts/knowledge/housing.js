@@ -1267,7 +1267,7 @@ const fencesCouncilHousing = new ContentH(
 const estatesAndEnvironments = new MenuH(
   "estatesAndEnvironments",
   "Estates and Environments",
-  "Bin chtues, communal cupboard, fences, firesafety and garden maintenance",
+  "Bin chutes, communal cupboard, fences, firesafety and garden maintenance",
   [
     fencesCouncilHousing,
     gardenPledgeScheme,
@@ -1280,7 +1280,7 @@ const estatesAndEnvironments = new MenuH(
 const leaseholderInformation = new ContentH(
   "leaseholderInformation",
   "Leaseholder Information",
-  "Information on how to handle blocked bin chutes in Council flats or maisonettes.",
+  "Leaseholder responsibilities, service charges, and subletting",
   `
     <p>
       If you live in an ex-Council flat or maisonette property you are a leaseholder
