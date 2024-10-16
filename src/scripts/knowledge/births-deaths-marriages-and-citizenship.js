@@ -491,6 +491,7 @@ const finalPayment = new ContentBDMaC(
 
 //--------Licensed Wedding Venues in Sheffield tile
 //-------I'm not sure if this should be a new tile
+//------------or in the tile above, so I've created a new one
 
 const licensedWeddingVenues = new ContentBDMaC(
   "licensedWeddingVenues",
@@ -530,6 +531,26 @@ const licensedWeddingVenues = new ContentBDMaC(
 );
 
 
+
+//---------Registrars Emails tile
+const registrarsEmails = new ContentBDMaC(
+  "registrarsEmails",
+  "Registrars Emails",
+  "Desc tbd",
+  `
+  <p> Takes to <a href src= "#">form </a></p>
+ 
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "",
+    keywords: [],
+    categories: ["", ""],
+  },
+  { date: "16/10/2024", name: "Joe Nixon" }
+);
 
 
 
