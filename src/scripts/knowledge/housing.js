@@ -481,7 +481,7 @@ const gypsyAndTravellers = new ContentH(
 const shelteredAndSupported = new MenuH(
   "shelteredAndSupported",
   "Sheltered and Supported",
-  "Older persons independent living, extra care housing, Furnished accommodation, and gypsy and travellers",
+  "Older persons independent living, extra care housing, furnished accommodation, and gypsy and travellers",
   [
     furnishedAccommodation,
     olderPersonsIndependentLiving,
