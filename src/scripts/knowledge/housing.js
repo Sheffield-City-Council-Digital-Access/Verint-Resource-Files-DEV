@@ -54,7 +54,117 @@ class FormH extends CoreH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
+//Tenancy enforcement page to under main Housing menu i think
 
+const tenancyEnforcementASB = new ContentH(
+  "tenancyEnforcementASB",
+  "Tenancy Enforcement (ASB)",
+  "What ASB is, who is responsible and how to report and Sanctuary scheme",
+  `<p><h3>Anti-social Behaviour</h3>
+<p>Anti-social behaviour is behaviour which is capable of causing nuisance, annoyance, harassment, alarm or distress to an individual or community. This could range from a relatively minor issue to serious criminal activity. We do not adopt a single definition of anti-social behaviour but instead consider each report based on the circumstances.</p>
+<p>Examples of behaviours we may consider to be anti-social are:</p>
+<ul>
+<li> Playing excessively loud music/television/video games</li>
+<li>Threatening or verbally abusing another person</li>
+<li> Damaging property</li>
+<li> Attacking another person</li>
+<li> Failing to control a pet / banned breed pet</li>
+<li> Misusing drugs or alcohol</li>
+<li> Incorrect disposal of rubbish</li>
+</ul>
+<p>Examples of behaviours we may not consider to be anti-social are:</p>
+<ul>
+ <li>Reasonable household noise</li>
+<li> Carrying out DIY at reasonable times</li>
+<li> Babies crying</li>
+<li> A one-off party if noise was the only issue and it is unlikely to be repeated</li>
+<li> Children playing (including ball games)</li>
+</ul>
+
+<h3>Police responsibility</h3>
+<p>South Yorkshire Police are responsible for dealing with any behaviour or activity which results in a criminal offence being committed.</p>
+<p>Where the perpetrator is an SCC tenant the Tenancy Enforcement and Sustainment Team (TEST) will work closely with SYP to ensure that any appropriate enforcement action is taken by the council.</p>
+<p>We feel, it is not appropriate to list specific incidents that Police deal with as this may result in the issue just being reported to police and not being routed to appropriate SCC teams who may also need to look at enforcement action.</p>
+
+<h3>Council Responsibility</h3>
+<p>We are responsible for incidents involving:</p>
+<ul>
+<li>abandoned vehicles</li>
+<li>dead animals</li>
+<li>dog fouling</li>
+<li>fly posting</li>
+<li> dumped, fly-tipped waste</li>
+<li>inoffensive graffiti</li>
+<li>non-hate crime graffiti</li>
+<li>littering</li>
+<li>lost, stray or barking dogs</li>
+<li>noise nuisance or DIY related noise (We cannot log anonymous complaints about noise as we rely on evidence from the complainant, and observations at the complainant&rsquo;s home, to evaluate whether the noise is a statutory nuisance).</li>
+<li>syringes or needles</li>
+<li>dumped, fly-tipped waste (nobody present)</li>
+<p>Please note that although all of the above are issues that the council will deal with, only noise nuisance and possibly barking dogs are generally dealt with by TEST (where it is a SCC tenant) A number of other teams are involved in managing these issues including Environmental services and Estates teams etc..</p>
+
+<h3>Hate Crime</h3>
+<h4>What is hate crime?</h4>
+<p>Hate Crime is any criminal offence committed against a person or property that is motivated by an offender’s hatred of someone because of their Disability, Race, Religion or Beliefs, Sexual Orientation or Transgender.</p>
+<p>Crimes committed against someone because of their disability, transgender-identity, race, religion or belief, or sexual orientation are hate crimes and should be reported to the police.</p>
+<p>Hate crimes can include:</p>
+<ul>
+<li>threatening behaviour</li>
+<li>assault</li>
+<li>robbery</li>
+<li>damage to property</li>
+<li>inciting others to commit hate crimes</li>
+<li>harassment</li>
+<li>online abuse</li>
+</ul>
+
+<h4>How to report Hate Crime</h4>
+<p>Anyone experiencing Hate Crime should report this to South Yorkshire Police, this can be done via 101 or via 999 if a crime is in progress or someone is in immediate danger. Hate Crime should also be reported to SCC, the Neighbourhood Team/ TEST who will work closely with Police and establish if any enforcement action against perpetrators is appropriate.</p>
+<li>robbery</li>
+<li>damage to property</li>
+<li>inciting others to commit hate crimes</li>
+<li>harassment</li>
+<li>online abuse</li>
+</ul>
+
+<h3>Sanctuary Scheme/Target hardening</h3>
+<p>Service Area: Action Domestic Abuse (Sanctuary Scheme)</p>
+<p>Telephone Number: Helpline No: 08088 082 241; Office No. 0114 270 6999</p>
+<p>Email Address: sanctuary.scheme@actionorg.uk</p>
+<p>South Yorkshire Fire and Rescue Service can fit blank letter boxes if there are concerns regarding harmful items being posted through the door. The Neighbourhood Officer can make a referral to SYF&amp;R for a Home Safety check.</p>
+<p>Neighbourhood Teams may have stock of target hardening equipment.</p>
+<p>Victim Support may support with target hardening.</p>
+
+  </p>`,
+  {buttonLabel: "Example 1", formName: "example_form" },
+  {typeKey: "example_transfered_to_service" },
+  {typeKey: "example_information_provided" },
+  {type: "Request", keywords: [], categories: ["Housing"] },
+  {date: "16/10/2024", name: "Omily Parkin" }
+  );
+
+//Bidding page to go under Rehousing Menu
+
+const bidding = new ContentH(
+  "bidding",
+  "Bidding",
+  "For assistance or problems with the bidding process",
+  `<p>After you have registered for housing, you express your interest in renting a property by making a bid. You only have to bid once per property. You make bids online at the Property Shop website www.sheffieldpropertyshop.org.uk You can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday to Tuesday). 
+  <h3>Why can't you bid for me</h3>
+<p>If you need assistance placing a bid, you can visit Sheffield Property Shop located in Howden House on Union Street, Sheffield, or your nearest neighbourhood housing office.</p>
+<h3>What happens after bidding</h3>
+<p>Once the bidding has finished, checks will be made on who is in first position, that the keys for the property are ready, and final checks will be completed on the person in first position when bidding closed. We will then contact the successful customer by phone, email or letter to offer the property. It is important that customers ensure their contact details on the website are up to date so that we can do this. Unsuccessful applicants will not be notified.</p>
+
+<p>However, we may not offer you a property if you owe a debt to the housing service, have a history of anti social behaviour, or have not kept your Council tenancy in a good condition. These checks can take a few days.</p>
+
+<p>If you are offered a property we will not consider your bids for any other properties until you have decided whether or not to accept the property offered.</p>
+
+  </p>`,
+  {buttonLabel: "Example 1", formName: "example_form" },
+  {typeKey: "example_transfered_to_service" },
+  {typeKey: "example_information_provided" },
+  {type: "Request", keywords: [], categories: ["Housing"] },
+  {date: "15/10/2024", name: "Omily Parkin" }
 
 //Application Changes page to be under the Rehousing menu
 
@@ -360,7 +470,7 @@ const rehousing = new MenuH(
   "rehousing",
   "Rehousing",
   "TBC",
-  [applyForRehousing,applicationChanges]
+  [applyForRehousing,applicationChanges, bidding]
   );
 // to go in estates and environment
 
