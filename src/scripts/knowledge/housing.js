@@ -498,9 +498,12 @@ const bidding = new ContentH(
     <p>
       After you have registered for housing, you express your interest in renting a
       property by making a bid. You only have to bid once per property. You make
-      bids online at the Property Shop website www.sheffieldpropertyshop.org.uk You
-      can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday to
-      Tuesday).
+      bids online at the Property Shop website
+      <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank"
+        >www.sheffieldpropertyshop.org.uk</a
+      >
+      You can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday
+      to Tuesday).
     </p>
     <h3>Why can't you bid for me</h3>
     <p>
@@ -545,32 +548,30 @@ const bidding = new ContentH(
       You get online via any device that connects to the internet. If you do not
       have access to the internet you can get access via:
     </p>
-    <p>
-      Internet cafes from a smart phone
-      <br />
-      At a friend or relative's house
-      <br />
-      Or you can contact the UK Online centre – call 0800 77 1234 to find your
-      nearest online access point
-    </p>
+    <ul>
+      <li>Internet cafes from a smart phone</li>
+      <li>At a friend or relative's house</li>
+      <li>
+        Or you can contact the UK Online centre – call
+        <a href="tel:0800771234">0800 77 1234</a> to find your nearest online access
+        point
+      </li>
+    </ul>
     <h3>Why can I not bid on the website</h3>
     <p>
       There can be various reasons why you cannot place bids on the website, such
       as:
     </p>
-    <p>
-      You may not be able to log in because your login details are not correct
-      <br />
-      Your application may not have been validated
-      <br />
-      You may be disqualified from the Housing Register
-      <br />
-      Your application may have been closed
-      <br />
-      You may be under offer for a property
-      <br />
-      You may be trying to bid for properties that you are not eligible for
-    </p>
+    <ul>
+      <li>
+        You may not be able to log in because your login details are not correct
+      </li>
+      <li>Your application may not have been validated</li>
+      <li>You may be disqualified from the Housing Register</li>
+      <li>Your application may have been closed</li>
+      <li>You may be under offer for a property</li>
+      <li>You may be trying to bid for properties that you are not eligible for</li>
+    </ul>
     <h3>What happens after bidding</h3>
     <p>
       Once the bidding has finished, checks will be made on who is in first
@@ -613,12 +614,13 @@ const bidding = new ContentH(
       for. Click on the link and choose what property you want to bid for. You then
       needs to:
     </p>
-    <p>
-      - Click the 'Apply for property' link (in green).
-      <br />
-      - If details are correct, tick the tick box, and then click 'Confirm details
-      and apply'.
-    </p>
+    <ul>
+      <li>Click the 'Apply for property' link (in green).</li>
+      <li>
+        If details are correct, tick the tick box, and then click 'Confirm details
+        and apply'.
+      </li>
+    </ul>
     <h4>Assistance with removing a bid</h4>
     <p>
       Advise the customer that they need to select:
@@ -721,7 +723,7 @@ const eligibility = new ContentH(
       submitting a further online application.
     </p>
     <h3>Eligibility Table</h3>
-    <p>A copy of the eligibility table can be found here .</p>
+    <p>A copy of the eligibility table can be found here.</p>
     <h3>Relaxed eligibility</h3>
     <p>
       Relaxed eligibility criteria is uncommon, but has sometimes been applied in
@@ -737,8 +739,8 @@ const eligibility = new ContentH(
       similar to this:
     </p>
     <p>
-      'Households eligible for 2 bed properties can bid and a financial assessment
-      will be carried out to check that the property is affordable.'
+      Households eligible for 2 bed properties can bid and a financial assessment
+      will be carried out to check that the property is affordable.
     </p>
     <p>
       If a customer then places a bid for the property and comes first, IMFIT
@@ -758,8 +760,7 @@ const housingAssociations = new ContentH(
   "Housing Associations",
   "Desc tbc",
   `
-    <h3></h3>
-    <p></p>
+    
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
