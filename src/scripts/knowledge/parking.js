@@ -1766,8 +1766,7 @@ const vehicleParkedInASuspendedBay = new ContentP(
   "vehicleParkedInASuspendedBay",
   "Vehicle Parked In A Suspended Bay",
   "Information relating to parking in a Suspended Bay",
-
-  `Should be reported to Parking Enforcement`,
+  `<p>Should be reported to Parking Enforcement</p>`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },

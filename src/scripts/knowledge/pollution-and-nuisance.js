@@ -2190,7 +2190,7 @@ const pestControl = new MenuPaN(
     furBeetlesTreatment,
     gardenAntsTreatment,
     ladyBirdsTreatment,
-    masonryBeesTreatment, 
+    masonryBeesTreatment,
     miceTreatment,
     mitesTreatment,
     mothsTreatment,
@@ -2212,7 +2212,6 @@ const handoverDogtoCouncil = new ContentPaN(
   "handoverDogtoCouncil",
   "Handover Dog to Council",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
     
   `,
   {
@@ -2229,7 +2228,7 @@ const handoverDogtoCouncil = new ContentPaN(
       "Environmental",
       "Pest Control",
       "Animal Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -2239,13 +2238,8 @@ const animalControl = new MenuPaN(
   "animalControl",
   "Animal Control",
   "Animal control treatments, services and pricing",
-  [
-    handoverDogtoCouncil,
-    
-  ]
+  [handoverDogtoCouncil]
 );
-
-//........//.....//.........//........//........
 
 const reportNeedlesGlass = new FormPaN(
   "reportNeedlesGlass",
@@ -2401,13 +2395,13 @@ const pollutionAndNuisance = new ServicePaN(
   "Pollution and Nuisance",
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour…`,
   [
-    abandonedVehicles,
-    pestControl,
-    reportDogFouling,
-    reportLitter,
-    reportGraffiti,
-    reportFlyPosting,
-    reportFlyTipping,
-    reportNeedlesGlass,
+    // abandonedVehicles,
+    // pestControl,
+    // reportDogFouling,
+    // reportLitter,
+    // reportGraffiti,
+    // reportFlyPosting,
+    // reportFlyTipping,
+    // reportNeedlesGlass,
   ]
 );
