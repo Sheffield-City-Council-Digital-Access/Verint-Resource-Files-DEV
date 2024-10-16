@@ -413,7 +413,7 @@ const gypsyAndTravellers = new ContentH(
   "Gypsy and Travellers",
   "desc tbd",
   `
-    <h3>Where are the official Gypsy and Traveller sits</h3>
+    <h3>Where are the official Gypsy and Traveller sites</h3>
     <address>
       Long Acre View Holbrook Trading Estate<br />Holbrook<br />/Sheffield<br />S20
       3FU
