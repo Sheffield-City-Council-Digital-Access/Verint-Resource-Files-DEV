@@ -146,6 +146,29 @@ const registerABirthAndDeath = new ContentBDMaC(
   },
   { date: "16/10/2024", name: "Joe Nixon" }
 );
+
+
+//-------register a stillbirth tile
+
+const registerAStillbirth = new ContentBDMaC(
+  "registerAStillbirth",
+  "Register a Stillbirth",
+  "Desc tbd",
+  `
+  <p> Takes to <a href src= "#">form </a></p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "",
+    keywords: [],
+    categories: ["", ""],
+  },
+  { date: "16/10/2024", name: "Joe Nixon" }
+);
+
+
  
 
   
