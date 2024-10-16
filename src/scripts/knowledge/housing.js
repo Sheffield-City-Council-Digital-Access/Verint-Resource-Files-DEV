@@ -481,7 +481,7 @@ const gypsyAndTravellers = new ContentH(
 const shelteredAndSupported = new MenuH(
   "shelteredAndSupported",
   "Sheltered and Supported",
-  "TBC",
+  "Older persons independent living, extra care housing, Furnished accommodation, and gypsy and travellers",
   [
     furnishedAccommodation,
     olderPersonsIndependentLiving,
@@ -1021,7 +1021,6 @@ const applicationChanges = new ContentH(
   { date: "14/10/2024", name: "Omily Parkin" }
 );
 
-//apply for rehousing page to be under Rehousing menu
 const applyForRehousing = new ContentH(
   "applyForRehousing",
   "Rehousing",
@@ -1058,18 +1057,23 @@ const applyForRehousing = new ContentH(
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
-const rehousing = new MenuH("rehousing", "Rehousing", "TBC", [
-  applyForRehousing,
-  applicationChanges,
-  housingAssociations,
-  eligibility,
-  bidding,
-]);
+const rehousing = new MenuH(
+  "rehousing",
+  "Rehousing",
+  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
+  [
+    applyForRehousing,
+    applicationChanges,
+    housingAssociations,
+    eligibility,
+    bidding,
+  ]
+);
 
 const blockedBinChutes = new ContentH(
   "blockedBinChutes",
   "Blocked Bin Chutes",
-  "Bin chutes in Council flats or maisonettes may become blocked and will be unblocked upon request.",
+  "Bin chutes in Council flats or maisonettes may become blocked and will be unblocked upon request",
   `
     <p>
       Bin chutes in Council flats or maisonettes may become blocked and will be
@@ -1263,7 +1267,7 @@ const fencesCouncilHousing = new ContentH(
 const estatesAndEnvironments = new MenuH(
   "estatesAndEnvironments",
   "Estates and Environments",
-  "Desc tbc",
+  "Bin chtues, communal cupboard, fences, firesafety and garden maintenance",
   [
     fencesCouncilHousing,
     gardenPledgeScheme,
@@ -1276,7 +1280,7 @@ const estatesAndEnvironments = new MenuH(
 const leaseholderInformation = new ContentH(
   "leaseholderInformation",
   "Leaseholder Information",
-  "This section provides information on how to handle blocked bin chutes in Council flats or maisonettes.",
+  "Information on how to handle blocked bin chutes in Council flats or maisonettes.",
   `
     <p>
       If you live in an ex-Council flat or maisonette property you are a leaseholder
