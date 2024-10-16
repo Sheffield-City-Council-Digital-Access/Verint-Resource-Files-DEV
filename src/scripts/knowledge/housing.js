@@ -1376,9 +1376,9 @@ const housing = new ServiceH(
   "Housing",
   "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
   [
-    // estatesAndEnvironments,
-    // leaseholderInformation,
-    // rehousing,
-    // shelteredAndSupported,
+    estatesAndEnvironments,
+    leaseholderInformation,
+    rehousing,
+    shelteredAndSupported,
   ]
 );
