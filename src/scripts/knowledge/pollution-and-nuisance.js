@@ -163,19 +163,30 @@ const badgerProtection = new ContentPaN(
   "Information about protecting badgers in Britain",
   `
     <p>
-      The Protection of Badgers Act 1992 makes it illegal for any person to kill, injure or take a Badger. It is also an offence to cruelly ill-treat a Badger, to dig for or to snare a Badger.
+      The Protection of Badgers Act 1992 makes it illegal for any person to kill,
+      injure or take a Badger. It is also an offence to cruelly ill-treat a Badger,
+      to dig for or to snare a Badger.
     </p>
     <p>
-      Under the 1992 Act it is now illegal to damage a badger sett or cause a dog to enter a set. It is also an offence to attempt any of these actions or recklessly allow a dog to enter a set. 
+      Under the 1992 Act it is now illegal to damage a badger sett or cause a dog to
+      enter a set. It is also an offence to attempt any of these actions or
+      recklessly allow a dog to enter a set. 
     </p>
     <p>
-      It is also an offence to possess a dead Badger, which has been acquired illegally, and to sell or try to sell or keep a live Badger.
+      It is also an offence to possess a dead Badger, which has been acquired
+      illegally, and to sell or try to sell or keep a live Badger.
     </p>
     <p>
-      A fine of up to £5000 can be imposed for each animal. The courts can also confiscate any dogs used in offences against Badgers and disqualify the offender from owning a dog.
+      A fine of up to £5000 can be imposed for each animal. The courts can also
+      confiscate any dogs used in offences against Badgers and disqualify the
+      offender from owning a dog.
     </p>
     <p>
-      For more information, please visit <a href="www.syorksbadgergroup.org.uk">www.syorksbadgergroup.org.uk</a>. 
+      For more information, please visit <a
+        href="http://www.syorksbadgergroup.org.uk"
+        target="_blank"
+      ></a
+      >. 
     </p>
   `,
   {
@@ -2010,7 +2021,6 @@ const spiderBeetlesTreatment = new ContentPaN(
   "Spider Beetles Treatment",
   "Information about Spider Beetles Treatment and services",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
     
   `,
   {
@@ -2037,7 +2047,6 @@ const squirrelsTreatment = new ContentPaN(
   "Squirrels Treatment",
   "Information about Squirrels Treatment and services",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
     
   `,
   {
@@ -2064,7 +2073,6 @@ const waspsTreatment = new ContentPaN(
   "Wasps Treatment",
   "Information about Wasps Treatment and services",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
     
   `,
   {
@@ -2091,7 +2099,6 @@ const weevilsTreatment = new ContentPaN(
   "Weevils Treatment",
   "Information about Weevils Treatment and services",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
     
   `,
   {
@@ -2118,7 +2125,6 @@ const woodliceTreatment = new ContentPaN(
   "Woodlice Treatment",
   "Information about Woodlice Treatment and services",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
     
   `,
   {
@@ -2144,7 +2150,6 @@ const noneoftheAbove = new ContentPaN(
   "noneoftheAbove",
   "None of the Above",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
     
   `,
   {
@@ -2395,13 +2400,13 @@ const pollutionAndNuisance = new ServicePaN(
   "Pollution and Nuisance",
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour…`,
   [
-    // abandonedVehicles,
-    // pestControl,
-    // reportDogFouling,
-    // reportLitter,
-    // reportGraffiti,
-    // reportFlyPosting,
-    // reportFlyTipping,
-    // reportNeedlesGlass,
+    abandonedVehicles,
+    pestControl,
+    reportDogFouling,
+    reportLitter,
+    reportGraffiti,
+    reportFlyPosting,
+    reportFlyTipping,
+    reportNeedlesGlass,
   ]
 );
