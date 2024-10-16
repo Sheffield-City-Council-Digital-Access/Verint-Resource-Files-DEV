@@ -54,6 +54,696 @@ class FormH extends CoreH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
+const bidding = new ContentH(
+  "bidding",
+  "Bidding",
+  "Desc tbc",
+  `
+    <p>
+      After you have registered for housing, you express your interest in renting a
+      property by making a bid. You only have to bid once per property. You make
+      bids online at the Property Shop website www.sheffieldpropertyshop.org.uk You
+      can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday to
+      Tuesday).
+    </p>
+    <h3>Why can't you bid for me</h3>
+    <p>
+      If you need assistance placing a bid, you can visit Sheffield Property Shop
+      located in Howden House on Union Street, Sheffield, or your nearest
+      neighbourhood housing office.
+    </p>
+    <h3>First Come First Served</h3>
+    <p>
+      The homes we offer through our First Come First Served scheme are properties
+      which have usually been advertised through the bidding system, but received no
+      eligible bids. Where this happens, we will make them available on a first come
+      first served basis. These properties are often age-banded studio and
+      one-bedroom flats however we do sometimes advertise two and three bedroom
+      properties in this way.
+    </p>
+    <p>
+      The properties are located throughout the City and can be provided by the
+      Council or Housing Associations. Properties are offered to the first person on
+      the housing register who places a bid and meets the minimum letting criteria.
+    </p>
+    <p>
+      In cases when there are no bidders for properties we may also change the
+      eligibility criteria. For example, households that would only normally qualify
+      for two bedroom properties may be allowed to bid for some three bedroom
+      maisonettes. The advert will clearly state where this is the case.
+    </p>
+    <p>
+      However, if you are of working age and you bid for a property that is larger
+      than you would normally qualify for, you may not be entitled to receive full
+      housing benefit. In these cases we may carry out a financial assessment with
+      you.
+    </p>
+    <h3>How do I get online</h3>
+    <h4>Technical issues with the website / Running slowly</h4>
+    <p>
+      Advisor note: Investigate if the issue is a technical issue with the website
+      and check if you can access the Property Shop website.
+    </p>
+    <h4>How do I get online / I do not have a PC</h4>
+    <p>
+      You get online via any device that connects to the internet. If you do not
+      have access to the internet you can get access via:
+    </p>
+    <p>
+      Internet cafes from a smart phone
+      <br />
+      At a friend or relative's house
+      <br />
+      Or you can contact the UK Online centre – call 0800 77 1234 to find your
+      nearest online access point
+    </p>
+    <h3>Why can I not bid on the website</h3>
+    <p>
+      There can be various reasons why you cannot place bids on the website, such
+      as:
+    </p>
+    <p>
+      You may not be able to log in because your login details are not correct
+      <br />
+      Your application may not have been validated
+      <br />
+      You may be disqualified from the Housing Register
+      <br />
+      Your application may have been closed
+      <br />
+      You may be under offer for a property
+      <br />
+      You may be trying to bid for properties that you are not eligible for
+    </p>
+    <h3>What happens after bidding</h3>
+    <p>
+      Once the bidding has finished, checks will be made on who is in first
+      position, that the keys for the property are ready, and final checks will be
+      completed on the person in first position when bidding closed. We will then
+      contact the successful customer by phone, email or letter to offer the
+      property. It is important that customers ensure their contact details on the
+      website are up to date so that we can do this.
+      <br />
+      Unsuccessful applicants will not be notified.
+    </p>
+    <p>
+      However, we may not offer you a property if you owe a debt to the housing
+      service, have a history of anti social behaviour, or have not kept your
+      Council tenancy in a good condition. These checks can take a few days.
+    </p>
+    <p>
+      If you are offered a property we will not consider your bids for any other
+      properties until you have decided whether or not to accept the property
+      offered.
+    </p>
+    <h3>Assistance with online bidding or login issue</h3>
+    <p>Log on using the details below if required.</p>
+    <p>
+      Unique Reference - 1257822
+      <br />
+      Memorable date - 25/12/2012
+      <br />
+      Password - DMrm15
+    </p>
+    <p>
+      Advisor note
+      <br />
+      You have logged in using dummy login details. Please do not amend anything on
+      screen.
+    </p>
+    <h4>Assistance with bidding</h4>
+    <p>
+      The 'My Account' screen has a link to the 'Eligible properties' you can bid
+      for. Click on the link and choose what property you want to bid for. You then
+      needs to:
+    </p>
+    <p>
+      - Click the 'Apply for property' link (in green).
+      <br />
+      - If details are correct, tick the tick box, and then click 'Confirm details
+      and apply'.
+    </p>
+    <h4>Assistance with removing a bid</h4>
+    <p>
+      Advise the customer that they need to select:
+      <br />
+      My Bids on the right hand side of the screen, then put a tick against the bid
+      you want to withdraw and then select Withdraw selected. It will ask you if you
+      are sure you want to withdraw the bid, select Yes or No.
+    </p>
+    <h4>Assistance with finding out how much waiting time customer has</h4>
+    <p>Give the Band effective date on the application to the customer</p>
+    <h4>Log in Issue</h4>
+    <p>
+      To apply for Social Housing you need to do so via the Property Shop website.
+      There are no paper application forms. This will be will Housing Online when
+      NEC comes in
+    </p>
+    <p>Go online and register on www.sheffieldpropertyshop.org.uk</p>
+    <p>
+      Before you can complete an application to join the Housing Register you will
+      need to register yourself as a new household on the system.
+    </p>
+    <p>
+      Once registered you will be able to complete an application form to join the
+      Housing Register.
+    </p>
+    <p>
+      You must produce proof of ID (and Child Benefit if appropriate) and a landlord
+      reference (if you are not already a Council tenant) at the same time,
+      documents can be uploaded via the website or at your local housing office or
+      First Point before your application will be validated.
+    </p>
+    <h4>URN (Unique Reference Number)</h4>
+    <p>Starts process</p>
+    <h4>Memorable Date / Password Reset</h4>
+    <p>
+      The best way for the customer to reset their memorable date is to go online.
+      You will need to have included an email address when completing the website
+      (household) registration.
+    </p>
+    <h4>Customer is an owner occupier moving to a council property</h4>
+    <p>
+      If you own your own property and are moving into a Council Housing Service
+      property, you need to have taken reasonable steps to sell or dispose of their
+      owner occupied property within 6 months. You should evidence that the house is
+      up for sale by showing us the brochure.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Rehousing"] },
+  { date: "14/10/2024", name: "Abishai Devarapalli" }
+);
+
+const eligibility = new ContentH(
+  "eligibility",
+  "Eligibility",
+  "Desc tbc",
+  `
+    <p>
+      Sheffield City Council operates an open register and therefore any person over
+      the age of 16 can apply to join the Housing Register. However, generally you
+      will not be made an offer of a property until you are at least 18 years old.
+    </p>
+    <p>
+      The Housing Act 1996 prevents Local Authorities from offering a property to
+      some people because of their immigration status. We will let you know if this
+      applies to you after you register.
+    </p>
+    <p>
+      If you are eligible to register you may do so by completing the online
+      application form. Following this, you will be provided with a login reference
+      number and required to provide a memorable date which will act as your
+      password for logging in to the website in the future.
+    </p>
+    <p>
+      There are some people who are not eligible to be included on the Housing
+      Register. These are:
+    </p>
+    <p>
+      Certain people who are subject to Immigration Control under the 1996 Asylum
+      and Immigration Act.
+      <br />
+      Certain people from abroad who are not subject to immigration control but who
+      are not habitually resident in the UK, the Channel Islands, the Isle of Man or
+      the Republic of Ireland.
+      <br />
+      People (including members of their household) who have been guilty of
+      unacceptable behaviour that makes them unsuitable to be a tenant.
+    </p>
+    <h3>After submitting your application</h3>
+    <p>
+      After submitting your application online you will be asked to provide us with
+      various documentation such as identification and a reference. You may also be
+      asked to provide evidence of your immigration status where relevant. You
+      should make sure that all of this documentation is available to you before
+      completing your online application application as you need to submit this
+      documentation immediately. Failure to provide this within the given timescales
+      will mean you will need to restart the process from the beginning by
+      submitting a further online application.
+    </p>
+    <h3>Eligibility Table</h3>
+    <p>A copy of the eligibility table can be found here .</p>
+    <h3>Relaxed eligibility</h3>
+    <p>
+      Relaxed eligibility criteria is uncommon, but has sometimes been applied in
+      the past to properties that receive no bids and/or have a known low demand.
+      The majority of these properties were maisonettes.
+    </p>
+    <p>
+      Properties where relaxed eligibility has been applied will have a message in
+      the 'Show full details>>Further information' box of the property advert.
+    </p>
+    <p>
+      For Example: A 3 bed maisonette with relaxed eligibility will have a message
+      similar to this:
+    </p>
+    <p>
+      'Households eligible for 2 bed properties can bid and a financial assessment
+      will be carried out to check that the property is affordable.'
+    </p>
+    <p>
+      If a customer then places a bid for the property and comes first, IMFIT
+      (Rents) will contact the customer prior to any offer to ensure that the
+      customer is able to afford the property.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Rehousing"] },
+  { date: "14/10/2024", name: "Abishai Devarapalli" }
+);
+
+const housingAssociations = new ContentH(
+  "housingAssociations",
+  "Housing Associations",
+  "Desc tbc",
+  `
+    <h3></h3>
+    <p></p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Rehousing"] },
+  { date: "14/10/2024", name: "Abishai Devarapalli" }
+);
+
+// Sheltered and Supported initialization
+const furnishedAccommodation = new ContentH(
+  "furnishedAccommodation",
+  "Furnished Accommodation",
+  "Desc tbc",
+  `
+    <p>
+      Furnished Accommodation meets the need for good quality furnished housing for
+      rent at affordable prices and offers an alternative for people residing in
+      expensive bed and breakfast accommodation.
+    </p>
+    <p>
+      Properties are furnished with goods generally selected by the customer on a
+      choice basis to meet their needs on a 3 tiered service charge arrangement.
+      Fully furnished properties are decorated and carpeted throughout and curtains
+      and tracks are provided and fitted.
+    </p>
+    <p>
+      Enquiries that are specifically regarding the information in this page can be
+      sent to Furnished using the links at the bottom of the page. If the enquiry is
+      related to other matters, for instance estate management, tenancy management
+      or ASB, then the appropriate form should be used to process that enquiry.
+    </p>
+    <h3>Furnished Accommodation Cost</h3>
+    <p>
+      The cost depends on the package chosen and there are 3 tiers: Gold, Silver and
+      Bronze. These carry £10, £15 and £20 per week charge that is payable over and
+      above the net rent charge for the property.
+    </p>
+    <p>How it works</p>
+    <p>There are three price bands to choose from:</p>
+    <ul>
+      <li>Gold - £20 per week (20 points)</li>
+      <li>Silver - £15 per week (15 points)</li>
+      <li>Bronze - £10 per week (10 points)</li>
+    </ul>
+    <p>
+      Each piece of furniture or floor covering will have a points value and the
+      points will add up to package you want; Gold, Silver or Bronze. A Bronze
+      package for example costs £10 a week and you can have 10 points worth of
+      furniture (this could include a table and chairs, a settee, a fridge freezer
+      and washing machine all at 2 points each and an arm chair and crockery pack at
+      1 point each). You can mix and match, depending on what furniture you already
+      have.
+    </p>
+    <p>
+      Items of furniture and colour choices now available include washing machines,
+      fridge freezers, vacuum cleaners, pots and pans and 3 colours of carpets and
+      vinyl.
+    </p>
+    <h3>Customer wants an item of furniture replacing</h3>
+    <p>
+      The exchanging of furniture items is subject to a variety of factors
+      including:
+    </p>
+    <ul>
+      <li>The age of the goods as they still may be under warranty</li>
+      <li>
+        If damaged – the reason for the damage - must be fair wear and tear or
+        manufacturing fault / defect.
+      </li>
+      <li>
+        Most goods are assessed at the customer’s annual visit they receive and also
+        all relevant electrical items are PAT tested at this time. The officer
+        carrying out the visit will arrange any replacement goods if agreed and
+        applicable.
+      </li>
+    </ul>
+    <h3>Customer no longer wants their furniture</h3>
+    <p>
+      There are instances where financial hardship may be caused by the service
+      charge and / or the customer has sourced their own goods now. The process of
+      removing the service charge is known as Deed of Variation and it takes
+      approximately 10 weeks to complete as there are 2 notice periods with 28 day
+      cooling off periods legally built into them.
+    </p>
+    <h3>Furnished and Local Assistance Scheme (LAS)</h3>
+    <p>
+      Furnished provide the goods and deliver them to customers who have applied for
+      the grant / goods via Local Assistance Scheme. Furnished may provide
+      installation at Council properties but do not perform installs at non Council
+      properties.
+    </p>
+    <h3>Furnished on Demand</h3>
+    <p>
+      The service is only available to new customers who are signing up for a new
+      Council tenancy.
+    </p>
+    <p>Acceptance criteria:</p>
+    <ol>
+      <li>
+        Applicants moving from any Temporary Accommodation property, Bed and
+        Breakfast or Assessment Beds. The applicant must be currently bidding on
+        Sheffield City Council properties and have a full homeless priority (This is
+        generally Bands A and B under the new Allocations policy).
+      </li>
+      <li>Applicants referred via a medical priority (Generally Band A).</li>
+      <li>
+        Other applicants who would not be able to access a property without the
+        Furnished Accommodation Service will be considered on a case by case basis
+        (Most of these will be under Band C in Allocations policy).
+      </li>
+    </ol>
+    <p>(Most of these will be under Band C in Allocations policy).</p>
+    <p>
+      NB: Budget constraints may impact on criteria 3 and criteria’s 1 & 2 will
+      always take preference.
+    </p>
+    <p>
+      If the Customer does not meet the above criteria direct them to alternative
+      options such as St Vincent De Pauls , Local Assistance Scheme or Emmaus.
+    </p>
+    <h3>Furnished Delivery Schedule</h3>
+    <p>
+      Open the delivery schedule spreadsheet (copy the link:
+      <br />G:\HSG\Public\Supported Hsg\Furnished Accommodation\Furnished delivery
+      sheets\Furnished Delivery Sheet.xlsx<br />
+      and paste into the Windows Explorer title bar).
+    </p>
+    <p>
+      Search for the customer's address (street) and remember that the same address
+      may be on the spreadsheet a few times - look for the most recent entry.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Sheltered and Supported"] },
+  { date: "15/10/2024", name: "Joe Nixon" }
+);
+
+const olderPersonsIndependentLiving = new ContentH(
+  "olderPersonsIndependentLiving",
+  "Older Persons Independent Living (OPIL)",
+  "desc tbc",
+  `
+    <p>
+      Sheltered housing is rented accommodation that is specially designed for older
+      people who are able to live independently.
+    </p>
+    <p>
+      It aims to provide comfortable accommodation with added security, in an
+      environment where customers can come and go as they please.
+    </p>
+    <p>
+      Enquiries that are specifically regarding the information in this form can be
+      sent to OPIL using the links at the bottom of the form. If the enquiry is
+      related to other matters, for instance, Estate Management, Tenancy Management
+      or ASB, then the appropriate form should be used to process that enquiry.
+    </p>
+    <h3>Where are the properties?</h3>
+    <p>
+      Schemes are scattered all over the city. A comprehensive list of properties
+      can be found on the council website or in the Older Persons Independent Living
+      Service leaflet.
+    </p>
+    <h3>
+      What does the Sheltered Neighbourhood Officer do and New Tenancy Support
+    </h3>
+    <p>
+      The Neighbourhood Officers will complete a support plan with the tenant when
+      they move in. This replaces the standard 'New Tenancy Visit' that
+      non-Sheltered tenants receive.
+    </p>
+    <p>
+      The plan is reviewed every six months or when there is a change in
+      circumstances. We will agree with the customer the type and frequency of
+      contact they require based on the customers needs. The Neighbourhood Officer
+      will manage a Sheltered tenancy in the same way that a Neighbourhood Officer
+      based in an area team would manage a standard tenancy, but will also include
+      any support agreed in the support plan.
+    </p>
+    <p>
+      The Neighbourhood Officers will help and support the customer to access any
+      services they may need to help them live independently. The Neighbourhood
+      Officers wardens will also contact relatives, call a doctor or an ambulance in
+      an emergency.
+    </p>
+    <h3>What does OPIL provide</h3>
+    <p>
+      Convenient and comfortable accommodation with added security, in an
+      environment where residents have their own front door and can come and go as
+      they please. We can usually provide the following accommodation and
+      facilities:
+    </p>
+    <ul>
+        <li>Self contained flats/Studio apartments/Bungalows</li>
+        <li>Communal Facilities such as:
+            <ul>
+                <li>Caretaking service for the communal areas</li>
+                <li>City Wide Care Alarm (24 hour emergency response)</li>
+                <li>Gardens</li>
+                <li>Guest room</li>
+                <li>Kitchen</li>
+                <li>Laundry</li>
+                <li>Lounge for social activities</li>
+                <li>Neighbourhood Officer Warden</li>
+                <li>Security and Safety features</li>
+                </ul>
+            </li>    
+        </ul>
+    </ul>
+    <h3>Who is eligible for OPIL accommodation</h3>
+    <p>
+      Anyone aged over 60 and is registered for rehousing. In the case of a couple,
+      at least one person must fit the age requirement.
+    </p>
+    <p>
+      Before offering a property we will check to make sure it meets all your
+      housing needs. You will also be invited to an accompanied viewing of the
+      building without any commitment.
+    </p>
+    <h3>What are the costs of OPIL Accommodation</h3>
+    <p>
+      The cost of living in Sheltered Housing is very competitive when compared with
+      other social housing providers.
+    </p>
+    <p>
+      You pay weekly rent and a service charge (where applicable) for the heating
+      and hot water in your property and/or towards the heating in communal areas of
+      the scheme.
+    </p>
+    <p>
+      There is an added support charge to cover the Neighbourhood Officer service
+      and City Wide Alarm. If you are already in receipt of Housing Benefit you will
+      not have to pay this charge.
+    </p>
+    <p>
+      If you are on a low income you can apply to have an assessment to see if you
+      are entitled to any assistance.
+    </p>
+    <p>
+      You will receive help and advice on claiming Welfare and/or Housing Benefit at
+      the start of your tenancy.
+    </p>
+    <h3>What are the benefits of OPIL Accommodation</h3>
+    <ul>
+      <li>Good quality housing</li>
+      <li>Security</li>
+      <li>Independence</li>
+      <li>Your own front door</li>
+      <li>Peace of mind, with help on hand in emergencies</li>
+      <li>
+        Neighbourhood Officer Warden support service and a 24 hr emergency response
+        system connected to each flat (City Wide Care Alarms)
+      </li>
+      <li>
+        A support plan - agreed with the Neighbourhood Officer - to meet individual
+        needs
+      </li>
+      <li>Being part of the community</li>
+    </ul>
+    <h3>Register for OPIL Accommodation</h3>
+    <p>Applicants should be registered for rehousing.</p>
+    <p>
+      You can access OPIL accommodation through the Sheffield Property Shop or call
+      in at any of the local Area Housing Offices.
+    </p>
+    <p>You can also be referred through:</p>
+    <ul>
+      <li>Health and Housing</li>
+      <li>Social Services</li>
+      <li>Health Service</li>
+    </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Sheltered and Supported"] },
+  { date: "15/10/2024", name: "Joe Nixon" }
+);
+
+const extraCareHousing = new ContentH(
+  "extraCareHousing",
+  "Extra Care Housing",
+  "desc tbd",
+  `
+    <h3>What is Extra Care Housing?</h3>
+    <p>Extra Care Housing is based on 3 key principles:</p>
+    <ul>
+      <li>To keep people as independent as possible.</li>
+      <li>
+        To allow someone to get services in their own home, without having to move
+        to get them.
+      </li>
+      <li>
+        Accommodation designed to be adaptable so that people can get the care and
+        support they need at home.
+      </li>
+    </ul>
+    <p>The main features are:</p>
+    <ul>
+      <li>Self-contained flats or bungalows, with their own front door.</li>
+      <li>Choice of tenure (rent, shared ownership or buy).</li>
+      <li>High standards of design, with wheelchair access throughout.</li>
+      <li>High level of security & safety features with alarm call systems.</li>
+      <li>Flexible packages, tailored to individual care needs.</li>
+      <li>24-hour care and support (Emergencies only from 10p.m. – 6 a.m.)</li>
+      <li>
+        Range of facilities, e.g. cafe, craft/activity room, IT suite, with a number
+        of activities taking place weekly.
+      </li>
+    </ul>
+    <p>There are currently 5 Extra Care Housing schemes in Sheffield.</p>
+
+    <h3>Extra Care Contact Details</h3>
+    <p>
+      Guildford Grange, Norfolk Park. Contact the scheme on 0114 203 7888<br />
+      The Meadows, Shirecliffe. Contact the scheme on 0114 243 5749<br />
+      Brunswick Gardens, Woodhouse. Contact the scheme on 0114 294 0000<br />
+      Roman Ridge, Wincobank. Contact the scheme on 0114 2800540<br />
+      White Willows, Jordanthorpe. Contact the scheme on 0114 2377960.
+    </p>
+    <p>
+      People need to be registered on the Council’s Housing Register but also need
+      to complete a re-housing application form for the scheme itself.
+    </p>
+    <p>
+      If anyone is currently receiving care and is interested in being re-housed to
+      Extra Care Housing, they need to make their social worker/care manager aware
+      of this.
+    </p>
+
+    <h3>Cost of Extra Care Housing</h3>
+    <p>
+      The costs of Extra Care Housing vary, depending on the type of accommodation
+      and the tenure. Generally, the costs of rental properties in Extra Care
+      include:
+    </p>
+    <ul>
+      <li>Net rent for the individual property</li>
+      <li>A service charge for the upkeep of the communal facilities</li>
+      <li>A service charge for the individual property</li>
+      <li>A Supporting People charge for housing related support.</li>
+      <li>Council Tax is charged for on a separate bill.</li>
+    </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Sheltered and Supported"] },
+  { date: "15/10/2024", name: "Joe Nixon" }
+);
+
+const gypsyAndTravellers = new ContentH(
+  "gypsyAndTravellers",
+  "Gypsy and Travellers",
+  "desc tbd",
+  `
+    <h3>Where are the official Gypsy and Traveller sits</h3>
+    <address>
+      Long Acre View Holbrook Trading Estate<br />Holbrook<br />/Sheffield<br />S20
+      3FU
+    </address>
+    <address>
+      Redmires Caravan Park Redmires Lane<br />Lodge Moor<br />Sheffield<br />S10
+      4JZ
+    </address>
+    <h3>What manages the sites?</h3>
+    <p>
+      Both sites are managed by the Housing and Neighbourhood Service Gypsy and
+      Traveller Site Management team based at Solpr.
+    </p>
+    <h3>What are the roles of the team</h3>
+    <p>The team deals with everything including:</p>
+    <ul>
+      <li>Rent</li>
+      <li>Tenancy Management</li>
+      <li>ASB</li>
+      <li>Estate Management issues</li>
+      <li>
+        Repairs - all calls for new repairs or where an inspection is required
+        should be transferred to the Repairs Contact Centre
+      </li>
+      <li>Vacants and lettings</li>
+    </ul>
+    <p>
+      Everything is recorded on OHMS the same as housing tenants although these
+      customers are not classed as ‘tenants’, they aclassed as 'Occupiers' and are
+      managed under 'agreements' under the Mobile Homes Act 1983.
+    </p>
+    <h3>Rehousing and Waiting Lists</h3>
+    <p>Registrations are encouraged for both sites:</p>
+    <ul>
+      <li>Long Acre View (14 plots)</li>
+      <li>Redmires Caravan Park (17 plots)</li>
+    </ul>
+    <p>
+      And is done via the Gypsy and Traveller registration form. The registration
+      form is issued by the Gypsy and Traveller Team, who maintain a waiting list
+      for both traveller sites.
+    </p>
+    <p>
+      This list is separate to the main Lettings system and it cannot be viewed on
+      Abritas.
+    </p>
+    <h3>Roadside and Illegal Encampments</h3>
+    <p>
+      Environmental Protection Services deal with questions or enquiries around any
+      roadside encampments or any other kind of unauthorised encampments, on
+      <a href="tel:01142734651">01142734651</a>.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Sheltered and Supported"] },
+  { date: "15/10/2024", name: "Joe Nixon" }
+);
+
+// ^ menu needed?
+
 const applicationChanges = new ContentH(
   "applicationChanges",
   "Application Changes",
@@ -634,7 +1324,7 @@ const housing = new ServiceH(
   "housing",
   "Housing",
   "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-  [estatesAndEnvironments, leaseholderInformation]
-  [estatesAndEnvironments, leaseholderInformation, rehousing]
+  [estatesAndEnvironments, leaseholderInformation][
+    (estatesAndEnvironments, leaseholderInformation, rehousing)
+  ]
 );
-
