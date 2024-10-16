@@ -392,10 +392,69 @@ const rescheduleAnAppointment = new ContentBDMaC(
   { date: "16/10/2024", name: "Joe Nixon" }
 );
 
+Book a Notice of Civil Partnership Appointment
 
+//--------- Book a Notice of Civil Partnership Appointment tile
+const bookNoticeCivilPartnership = new ContentBDMaC(
+  "bookNoticeCivilPartnership",
+  "Book a Notice of Civil Partnership Appointment",
+  "Desc tbd",
+  `
+<h3>Book a Notice of Civil Partnership</h3>
+<p>Giving notice means making a declaration that you are both free enter into a civil partnership and fulfil other requirements prescribed by law.</p>
+<p>You need to ensure that you have given notice at least 28 days before the date. </p>
+<p>If you are giving notice for a venue in the Sheffield district, please have your booking ID ready (this was provided in your email sent when booking the venue). Please contact our ceremonies team if you do not have this and they will email you the booking ID directly ceremoniesteam@sheffield.gov.uk </p>
+<p>If you are booking a notice for a venue outside the Sheffield district you do not require a booking ID.</p>
+<p>The earliest date the notice of civil partnership can be given is 12 months before the civil partnership ceremony. We recommend a notice of civil partnership should be done between 3-6 months before your ceremony.</p>
+<p>Both must be over the age of 18</p>
+<p>If both of you are British, Irish or you have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you each need to give your notice of marriage in the Borough or District you are residing in, provided you have lived there for at least 8 days.</p>
+<p>If you are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you must attend the notice of marriage appointment together either in the district you both live, or in either district (whichever is most convenient) if you live in different towns.</p>
+<p>You must know where your civil partnership will take place</p>
+<p>The date of your civil partnership formation must be between 29 calendar days and 1 year of your appointment</p>
+<p>Further information for notice of civil partnership please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice " target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice </a></p>
+<h3>Fees</h3>
+<p>There is a fee to give your notice of civil partnership</p>
+<ul>
+    <li>Monday to Friday: £42.00 each (for standard appointments)</li>
+    <li>Monday to Friday: £57.00 each (for those who are not British, Irish and do not have EUSS status (settled, pre-settled and you have applied for the status before 30 June 2021))</li>
+    <li>Saturday (limited availability): £60.00 each (for standard appointments only)</li>
+    <li>Local foreign divorce for clearance: £55.00</li>
+    <li>Referral to General Registration Office for clearance: £83.00</li>
+</ul>
+<p>Any fees are payable when you book your appointment and will be calculated on the choices you make.</p>
+<p>If you are unsure which fee applies to you, please contact ceremoniesteam@sheffield.gov.uk for clarification.</p>
+<h3>Proof of name, address, marital status and nationality</h3>
+<p>You will need to bring:</p>
+<ul>
+    <li>a valid passport for proof of your name, age and nationality</li>
+    <li>your driving licence, a utility bill dated within the last 3 months, or a bank statement dated within a month for proof of your address that includes either your full name or at least your initials</li>
+    <li>Proof that a previous marriage or civil partnership has ended:
+        <ul>
+            <li>decree absolute of divorce / dissolution</li>
+            <li>death certificate of former husband, wife or civil partner</li>
+            <li>We must be able to link the document to you. A Decree NISI of Divorce or dissolution is not acceptable. If the document is in another language, we will need a translation into English.</li>
+        </ul>
+    </li>
+</ul>
+<h3>Change of Name</h3>
+<p>If you have changed your name by deed poll or statutory declaration you will need to provide those documents.</p>
+<p>If either you or your partner need an interpreter, you must bring one with you on the day of your appointment. Partners cannot interpret for each other.</p>
 
-
-
+<h3>Appointment</h3>
+<p>If you do not attend with the correct documents or without an interpreter when one is needed, you may not be able to give your notice of civil partnership and you will need to rebook and attend another day.</p>
+<p>Please arrive 5 to 10 minutes before your appointment. If you arrive late you may need to rebook.</p>
+ 
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "",
+    keywords: [],
+    categories: ["", ""],
+  },
+  { date: "16/10/2024", name: "Joe Nixon" }
+);
 
 
 
