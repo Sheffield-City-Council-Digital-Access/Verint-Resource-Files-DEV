@@ -235,7 +235,6 @@ const blueBadge = new MenuP(
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-
 const businessPermit = new ContentP(
   "businessPermit",
   "Business Permit",
@@ -1281,60 +1280,6 @@ const howCanIAppeal = new ContentP(
 			Do not discuss any possible outcomes or give your opinions. Parking services
 			will contact the customer following the decision.</p>`,
 
-	{ buttonLabel: "Parking Permit", formName: "" },
-  	{ typeKey: "parking_permit_information_provided" },
-  	{ typeKey: "parking_permit_transferred_to_service" },
-  	{
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
-);
-
-const howLongDoIhavetoappeal = new ContentP (
-  "howLongDoIHaveToAppeal",
-  "How Long Do I Have to Appeal",
-
-	`	<h3>How long do I have to appeal</h3>
-		<p>
-			Anyone wanting to appeal should do so within 28 days after the original ticket
-			was received.
-		</p>
-		<h3>Will I get a discounted rate if I appeal</h3>
-		<p>
-			If the appeal is declined, we will usually re-offer a 14 day discount period
-			if the challenge was received whilst the case is still in the initial 14 day
-			discount period.
-		</p>
-		<p>
-			If the charge is already at the full amount and a Notice to Owner letter has
-			been received, there is a further 28 days to appeal to us online (usually the
-			discount rate would not be offered again but this will be confirmed when a
-			written reply is sent).
-		</p>
-		<p>
-			If the challenge is at charge certificate stage the call should be transferred
-			to parking services (this can be checked on gateway).</p>`,
-	
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1363,94 +1308,36 @@ const howLongDoIhavetoappeal = new ContentP (
   },
   { date: "14/10/2024", name: "Dinah WIlliams" }
 );
-		
-	const haveYouReceivedMyAppeal = new ContentP (
-  	"haveYouReceivedMyAppeal",
-  	"Have You Received My Appeal",
 
-`	<h3>Have you received my appeal</h3>
-	<p>This can be found by checking Gateway.</p>`,
+const howLongDoIhavetoappeal = new ContentP(
+  "howLongDoIHaveToAppeal",
+  "How Long Do I Have to Appeal",
 
-	{ buttonLabel: "Parking Permit", formName: "" },
-  	{ typeKey: "parking_permit_information_provided" },
-  	{ typeKey: "parking_permit_transferred_to_service" },
-  	{
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
-	);	
-	const multiplepcns = new ContentP(
-  	"multiplePcns",
-  	"Multiple PCN's",
-`
-	<h3>Multiple PCN's</h3>
-	<p>Challenges can be made online within 28 days of receiving the original ticket.(It can take up to 24 hours to appear on online portal.</p>
-	<p>Documentation can be uploaded to support the challenge, the online link also enables the motorist to use an interactive portal to guide them through their appeal and evidence can be viewed (e.g photos of the contravention)</p>
-	<p>Do not discuss any possible outcomes or give your opinions. Parking services will contact the customer following the decision.</p>`,
-	
-	{ buttonLabel: "Parking Permit", formName: "" },
-  	{ typeKey: "parking_permit_information_provided" },
-  	{ typeKey: "parking_permit_transferred_to_service" },
-  	{
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  `	<h3>How long do I have to appeal</h3>
+		<p>
+			Anyone wanting to appeal should do so within 28 days after the original ticket
+			was received.
+		</p>
+		<h3>Will I get a discounted rate if I appeal</h3>
+		<p>
+			If the appeal is declined, we will usually re-offer a 14 day discount period
+			if the challenge was received whilst the case is still in the initial 14 day
+			discount period.
+		</p>
+		<p>
+			If the charge is already at the full amount and a Notice to Owner letter has
+			been received, there is a further 28 days to appeal to us online (usually the
+			discount rate would not be offered again but this will be confirmed when a
+			written reply is sent).
+		</p>
+		<p>
+			If the challenge is at charge certificate stage the call should be transferred
+			to parking services (this can be checked on gateway).</p>`,
 
-	);
-	
-	const howLongDoIHaveToAppeal = new ContentP(
-  	"howLongDoIHaveToAppeal",
-  	"How Long Do I Have to Appeal",
-`	
-	<h3>Rejected PCN's</h3><p>
-		The correspondence to reject their challenge will explain the next steps to	take if they are unhappy with the decision.</p>
-		<p>General information relating to the PCN Enforcement is available on the <a href="http://www.patrol-uk.info">www.patrol-uk.info</a>.`,
-
-
-	{ buttonLabel: "Parking Permit", formName: "" },
-  	{ typeKey: "parking_permit_information_provided" },
- 	{ typeKey: "parking_permit_transferred_to_service" },
-  	{
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
     type: "Information",
     keywords: [
       "parking permit",
@@ -1476,11 +1363,121 @@ const howLongDoIhavetoappeal = new ContentP (
   { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
-	const enforcementbaliffenquiries = new ContentP(
-	"enforcementbaliffenquiries",
-	"Enforcement Baliff Enquiries",
-	"",
-	`   
+const haveYouReceivedMyAppeal = new ContentP(
+  "haveYouReceivedMyAppeal",
+  "Have You Received My Appeal",
+
+  `	<h3>Have you received my appeal</h3>
+	<p>This can be found by checking Gateway.</p>`,
+
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+const multiplepcns = new ContentP(
+  "multiplePcns",
+  "Multiple PCN's",
+  `
+	<h3>Multiple PCN's</h3>
+	<p>Challenges can be made online within 28 days of receiving the original ticket.(It can take up to 24 hours to appear on online portal.</p>
+	<p>Documentation can be uploaded to support the challenge, the online link also enables the motorist to use an interactive portal to guide them through their appeal and evidence can be viewed (e.g photos of the contravention)</p>
+	<p>Do not discuss any possible outcomes or give your opinions. Parking services will contact the customer following the decision.</p>`,
+
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+
+const howLongDoIHaveToAppeal = new ContentP(
+  "howLongDoIHaveToAppeal",
+  "How Long Do I Have to Appeal",
+  `	
+	<h3>Rejected PCN's</h3><p>
+		The correspondence to reject their challenge will explain the next steps to	take if they are unhappy with the decision.</p>
+		<p>General information relating to the PCN Enforcement is available on the <a href="http://www.patrol-uk.info">www.patrol-uk.info</a>.`,
+
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+
+const enforcementbaliffenquiries = new ContentP(
+  "enforcementbaliffenquiries",
+  "Enforcement Baliff Enquiries",
+  "",
+  `   
 		<h3>Enforcement (Bailiff) Enquiries</h3>
 		<p>
 			Once the debt has been referred to enforcement agents there is no further
@@ -1532,10 +1529,10 @@ const howLongDoIhavetoappeal = new ContentP (
 );
 
 const illegalParking = new ContentP(
-	"illegalParking",
-	"Ilegal Parking",
-	"",
-	`   
+  "illegalParking",
+  "Ilegal Parking",
+  "",
+  `   
   		<h3>Illegal Parking</h3>
 		<p>
 			Refers to a vehicle parked where there are parking restrictions in place, or
@@ -1551,7 +1548,7 @@ const illegalParking = new ContentP(
 			Please note: “H” and Disabled road markings are only advisory and are not
 			legally enforceable in the same way as yellow lines.</p>`,
 
-{ buttonLabel: "Parking Permit", formName: "" },
+  { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
   {
@@ -1584,7 +1581,7 @@ const vehicleObstruction = new ContentP(
   "vehicleObstruction",
   "Vehicle Obstruction",
   "Information relating to Vehicle Obstruction",
-`
+  `
 	h2>Vehicle Obstruction</h2>
 	<p>Refers to a vehicle causing an obstruction that is considered to be a hazard to other road or footpath users where there are no parking restrictions in place. For example:</p>
 	<li>Blocking the footpath</li>
@@ -1623,9 +1620,9 @@ const vehicleObstruction = new ContentP(
 );
 
 const carParkParkingMeterProblem = new ContentP(
-	"carParkParkingMeterProblem",
-	"Car Park/Parking Meter Problem",
-	"Information relating to Car Park/Parking Meter Problem",
+  "carParkParkingMeterProblem",
+  "Car Park/Parking Meter Problem",
+  "Information relating to Car Park/Parking Meter Problem",
   `
 	<h2>Car Park/Parking Meter Problem</h2>
 	<p>Escalation.</p>
@@ -1659,10 +1656,10 @@ const carParkParkingMeterProblem = new ContentP(
   { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
-	const baySuspensions = new ContentP(
-	"baySuspensions",
-	"Bay Suspensions",
-	"Information relating to Bay Suspensions",
+const baySuspensions = new ContentP(
+  "baySuspensions",
+  "Bay Suspensions",
+  "Information relating to Bay Suspensions",
   `
 	<h2>Bay Suspensions</h2>
 	<h2>Requesting a Suspension</h2>
@@ -1715,9 +1712,9 @@ const carParkParkingMeterProblem = new ContentP(
 );
 
 const yellowLineDispensations = new ContentP(
-	"yellowLineDispensations",
-	"Yellow Line Dispensations",
-	"Information relating to Yellow Line Dispensations",
+  "yellowLineDispensations",
+  "Yellow Line Dispensations",
+  "Information relating to Yellow Line Dispensations",
   `
 	<h2>Yellow Line Dispensations</h2>
     <h2>Request Yellow Line Dispensation</h2>
@@ -1766,12 +1763,11 @@ const yellowLineDispensations = new ContentP(
 );
 
 const vehicleParkedInASuspendedBay = new ContentP(
-	"vehicleParkedInASuspendedBay",
-	"Vehicle Parked In A Suspended Bay",
-	"Information relating to parking in a Suspended Bay",
+  "vehicleParkedInASuspendedBay",
+  "Vehicle Parked In A Suspended Bay",
+  "Information relating to parking in a Suspended Bay",
 
-	`Should be reported to Parking Enforcement`
-,
+  `Should be reported to Parking Enforcement`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1805,27 +1801,31 @@ const penaltyChargeNoticePcn = new MenuP(
   "penaltyChargeNoticePCN",
   "Penalty Charge Notice (PCN)",
   "Information on Penalty Charge Notice",
-  	[makingAPayment,
-	confirmationOfPayment,
+  [
+    makingAPayment,
+    confirmationOfPayment,
     customerUnableToPay,
     customerTriedToPayOnline,
     customerHasPaidTwice,
-	howCanIAppeal,
-	howLongDoIHaveToAppeal,
-	multiplepcns,
-	enforcementbaliffenquiries,]
+    howCanIAppeal,
+    howLongDoIHaveToAppeal,
+    multiplepcns,
+    enforcementbaliffenquiries,
+  ]
 );
 
 const parkingIssues = new MenuP(
-	"parkingIssues",
-	"Parking Issues",
-	"Information relating to Parking Issues",
-	[illegalParking,
-	vehicleObstruction,
-	carParkParkingMeterProblem,
-	baySuspensions,
-	yellowLineDispensations,
-	vehicleParkedInASuspendedBay]
+  "parkingIssues",
+  "Parking Issues",
+  "Information relating to Parking Issues",
+  [
+    illegalParking,
+    vehicleObstruction,
+    carParkParkingMeterProblem,
+    baySuspensions,
+    yellowLineDispensations,
+    vehicleParkedInASuspendedBay,
+  ]
 );
 const parkingPermits = new MenuP(
   "parkingPermit",
@@ -1844,7 +1844,6 @@ const parkingPermits = new MenuP(
     utilityPermit,
     visitorsPermits,
     makingAPayment,
-    
   ]
 );
 
@@ -1855,5 +1854,7 @@ const parking = new ServiceP(
   "parking",
   "Parking",
   `Car parks, on-street parking, residents' parking permits, visitors' parking, disabled parking, parking fines…`,
-  [parkingPermits, penaltyChargeNoticePcn, parkingIssues, blueBadge]
+  [
+    // parkingPermits, penaltyChargeNoticePcn, parkingIssues, blueBadge
+  ]
 );
