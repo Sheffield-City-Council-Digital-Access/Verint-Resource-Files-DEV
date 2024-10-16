@@ -371,6 +371,26 @@ const bookNoticeOfMarriageApp = new ContentBDMaC(
   { date: "16/10/2024", name: "Joe Nixon" }
 );
   
+//-------Reschedule an Appointment tile
+
+const rescheduleAnAppointment = new ContentBDMaC(
+  "rescheduleAnAppointment",
+  "Reschedule an Appointment",
+  "Desc tbd",
+  `
+  <p>Email  ceremoniesteam@sheffield.gov.uk</p>
+ 
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "",
+    keywords: [],
+    categories: ["", ""],
+  },
+  { date: "16/10/2024", name: "Joe Nixon" }
+);
 
 
 
