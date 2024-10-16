@@ -204,6 +204,108 @@ const copyCertificates = new ContentBDMaC(
 );
 
 
+
+
+//-------------Booking a Registrar, Wedding or Civil Partnership in Sheffield tile
+const bookingARegistrarWedding = new ContentBDMaC(
+  "bookingARegistrarWedding",
+  "Booking a Registrar, Wedding or Civil Partnership in Sheffield",
+  "Desc tbd",
+  `
+  <h3>Booking a Registrar, Wedding or Civil Partnership in Sheffield</h3>
+<h3>Ceremony Bookings for Weddings or Civil Partnerships</h3>
+<p>Our integrated system allows you to choose and book a ceremony within 15 minutes. Once you have entered the process below the system will give you options to choose a venue either in the Town Hall or at an external licensed venue in the Sheffield district only (please read below for terms to book a venue). The choice will be given to for a Wedding or Civil Partnership during the booking process.</p>
+<p>Once you have booked you will be sent an email with your booking ID, this is your link to all payments for your ceremony.</p>
+<p>The options will show you availability between 90 days and 2 years.</p>
+<p>Our ceremonies team can arrange marriages or civil partnerships under 90 days for special reasons, you would need to contact our team at ceremoniesteam@sheffield.gov.uk</p>
+<h3>To form a marriage or civil partnership you must be:</h3>
+<ul>
+    <li>18 years or older: <a href="https://www.legislation.gov.uk/ukpga/2022/28" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/2022/28</a></li>
+</ul>
+<h3>You must not:</h3>
+<ul>
+    <li>Already be a civil partner or married.</li>
+    <li>Be closely related (the Act gives details of prohibited relationships):
+        <ul>
+            <li><a href="https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents</a></li>
+        </ul>
+    </li>
+</ul>
+<h3>Non-Refundable Booking Fees</h3>
+<p>When you have completed your ceremony booking you will be required to make payment, this is to reserve the date and time selected, please note this is a non-refundable fee.</p>
+<ul>
+    <li>Town Hall Ceremonies- £30.00</li>
+    <li>External Sheffield Venues- £60.00 (reservation of registrars for your ceremony)</li>
+</ul>
+<h3>Weddings and Civil Partnerships in the Register Office and Ceremony Rooms</h3>
+<p>Sheffield Register Office and ceremony rooms are located in the magnificent Grade I listed Town Hall. This unique wedding venue is the perfect choice for couples looking to get married in Sheffield city centre. With reasonable rates, it is also one of the most inexpensive wedding venues in Sheffield.</p>
+<p>Our registrars will perform a ceremony that will be memorable and personal. You can add vows or readings (non-religious). Your ceremony can be formal, flamboyant, sophisticated, or even a singalong – it can be tailored to your individual wishes.</p>
+<h3>Mirror Mandela Room</h3>
+<a href="https://www.sheffield.gov.uk/births-deaths-marriages/town-hall-weddings " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/town-hall-weddings </a>
+<p>If you wish to book the room the Mirror Mandela Room, please contact Beth Pinder Beth.Pinder@sheffield.gov.uk for further details and fees. </p>
+<p>Registrar fees- non-refundable booking fee of £60.00 and £304.00 to reserve Registrars for the ceremony.</p>
+<h3>Civil Partnerships</h3>
+<p>Civil partnership enables same sex couples to obtain legal recognition of their relationship under the Civil Partnership Act 2004. As of 2nd of December 2019, opposite sex couples can also form a civil partnership.  <a href="https://www.legislation.gov.uk/ukpga/2004/33/contents" target="_blank" rel="noopener noreferrer"> https://www.legislation.gov.uk/ukpga/2004/33/contents</a></https:></p>
+<p>Registration of a civil partnership provides couples with rights and obligations which are similar to those acquired through marriage.</p>
+<p>The Civil Partnership will be registered once each of you have signed the civil partnership schedule in the presence of the registrar and two witnesses.</p>
+<p>A ceremony is not required, but we would be pleased to offer a ceremony if you so wish. Information will be emailed once a ceremony is booked.</p>
+<h3>Our Ceremony rooms and prices:</h3>
+<ul>
+    <li>
+        <h4>Loxley Room</h4>
+        <ul>
+            <li>This is a small ceremony room for up to sixteen guests and children under 2 years of age sitting on an appropriate adult's knee. It is available Monday to Friday for £198 (including registrars and one marriage or civil partnership certificate). </li>
+        </ul>
+    </li>
+    
+    <li>
+        <h4>Arundel, Norfolk, and Hallam Rooms</h4>
+        <ul>
+            <li>The Arundel and Norfolk rooms are dressed and hold up to 45 guests.</li>
+            <li>The Hallam room is dressed and holds up to fifty-six guests.</li>
+            <li>These rooms are available Monday to Saturday for £304 (including registrars and one marriage or civil partnership certificate).</li>
+            <li>The guest capacity numbers do not include the couple or registrars. They do include a photographer, and children over 2 years of age.</li>
+        </ul>
+    </li>
+    
+    <li>
+        <h4>Statutory Register Office</h4>
+        <ul>
+            <li>The ceremony will be held in our designated Register Office Ceremony Room.</li>
+            <li>The Register Office is available the third Wednesday of every month for couples who just want to attend with their two witnesses.</li>
+            <li>This costs a statutory fee of £68.50 (including registrars and one marriage or civil partnership certificate).</li>     
+        </ul>
+    </li>
+</ul>
+<p>PICTURES WITH DROP DOWN AS CURRENTLY ON WEBSITE</p>
+<h3>Booking a Registrar for a Licensed Sheffield Venue</h3>
+<p>Venues outside of the Sheffield district cannot be conducted by our registrars you should contact the district council where you wish to have the ceremony.</p>
+<p>Sheffield Venue’s must only be booked through our system once you have confirmed with the venue a time and date for your ceremony. When meeting with the venue ceremony team it is advisable to book both the venue and a registrar at the same time as they will have access to match dates and times.</p>
+<p>When booking a ceremony for a venue outside of the Town Hall only licensed venues will be shown. If the venue you choose is not on the list, they do not have a valid license to conduct a legal wedding or civil partnership. Please contact ceremoniesteam@sheffield.gov.uk for further information.</p>
+<p>If you are getting married in Sheffield or forming a civil partnership, whether in the Town Hall or elsewhere, you need to book registrars to conduct the ceremony.</p>
+<p>It isn’t necessary to have a celebrant to attend, unless you specifically wish to do so, as this will add considerably to your costs and our registrars offer a wonderful service when attending any ceremony. Celebrants are not authorised to perform legal ceremonies.</p>
+<h3>Fees</h3>
+<ul>
+    <li>Monday to Friday: £482</li>
+    <li>Saturday and Sunday: £550</li>
+    <li>Bank Holiday: £690</li>
+</ul>
+<p>(Please note these fees are to reserve registrars for your ceremony, see your venue ceremony team for their pricings)</p>
+<h3>Certificates</h3>
+<p>Marriage and civil partnership certificates cost £12.50 at the point of registration (before the ceremony). Your first certificate will be sent out within 5-10 working days of the office receiving your completed marriage or civil partnership schedule. If you require more than 1 certificate, please visit our final payment section for details.</p>
+<p>Ceremonies conducted in religious venues do not receive the first certificate free, please visit our final payment section for details.</p>
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "",
+    keywords: [],
+    categories: ["", ""],
+  },
+  { date: "16/10/2024", name: "Joe Nixon" }
+);
  
 
   
