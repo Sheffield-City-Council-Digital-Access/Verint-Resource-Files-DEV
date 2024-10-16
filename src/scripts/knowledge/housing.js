@@ -721,7 +721,7 @@ const eligibility = new ContentH(
       submitting a further online application.
     </p>
     <h3>Eligibility Table</h3>
-    <p>A copy of the eligibility table can be found here .</p>
+    <p>A copy of the eligibility table can be found here.</p>
     <h3>Relaxed eligibility</h3>
     <p>
       Relaxed eligibility criteria is uncommon, but has sometimes been applied in
@@ -737,8 +737,8 @@ const eligibility = new ContentH(
       similar to this:
     </p>
     <p>
-      'Households eligible for 2 bed properties can bid and a financial assessment
-      will be carried out to check that the property is affordable.'
+      Households eligible for 2 bed properties can bid and a financial assessment
+      will be carried out to check that the property is affordable.
     </p>
     <p>
       If a customer then places a bid for the property and comes first, IMFIT
