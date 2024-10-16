@@ -127,6 +127,30 @@ const registerADeath = new ContentBDMaC(
   { date: "16/10/2024", name: "Joe Nixon" }
 );
 
+//---------Register a Birth and Death tile
+
+const registerABirthAndDeath = new ContentBDMaC(
+  "registerABirthAndDeath",
+  "Register a Birth and Death",
+  "Desc tbd",
+  `
+  <p> Takes to <a href src= "#">form </a></p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "",
+    keywords: [],
+    categories: ["", ""],
+  },
+  { date: "16/10/2024", name: "Joe Nixon" }
+);
+ 
+
+  
+
+
 
 
 
