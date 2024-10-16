@@ -60,11 +60,12 @@ h1,
 }
 
 #dform_widget_html_ahtm_content_container > h3 {
-  margin-top: 3.5rem;
+  margin-block: 3rem;
 }
 
 #dform_container details.accordion {
   margin-block: 3rem;
+  max-width: 100%;
 }
 
 #dform_container details.accordion > div > details.details-accordion {
