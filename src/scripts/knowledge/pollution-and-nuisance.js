@@ -1384,6 +1384,64 @@ const gardenAntsTreatment = new ContentPaN(
   { date: "10/10/2024", name: "Shahzad Athar" }
 );
 
+const honeeyBeesTreatment = new ContentPaN(
+  "honeeyBeesTreatment",
+  "Honeey BeesTreatment",
+  "Information about Honeey Bees Treatment and services",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+    <h3>Honey Bees Swarming</h3>
+    <p>
+      Honey Bees will swarm when the queen lands to rest, with a lot of bees around the queen. 
+      Swarming only lasts for a couple of weeks a year and when the bees begin to swarm they will 
+      usually disperse within a few hours.
+      </p>
+      <p>
+      If the bees are swarming then we are unable to treat. A swarm would contain hundreds if not 
+      thousands of bees.
+      </p>
+      <p>
+      A beekeeper may be able to relocate the bees.
+      </p>
+      <h3>Honey Bees Not Swarming</h3>
+      <p>
+      Transfer the call through to Environmental Services on 30353. If Honey Bees not Swarming. We will
+      only treat Honey Bees as a last resort and where there is a threat to health.
+      </p>
+      <p>
+      If the bees are definitely Honey Bees and treatment is required for health reasons or the bees 
+      are trapped and there is no alternative but to have a treatment, the officer will provide you with
+      a quote for the treatment.
+      </p>
+      <p>
+      Alternatively, you can contact a Bee Keeper to see if they will collect the bees for you.
+      </p>
+      <p>
+      However, Bee keepers will only collect where they have access to the whole swarm, it is unlikely 
+      that they will remove bees, which are nesting in a cavity, chimney etc.
+      </p>
+      <p><strong>Please Note:</strong> Beekeepers are under no obligation to collect the swarm.
+      </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Honey Bees",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Honey Bees", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "10/10/2024", name: "Shahzad Athar" }
+);
+
 const ladyBirdsTreatment = new ContentPaN(
   "ladyBirdsTreatment",
   "Lady Birds Treatment",
@@ -1592,6 +1650,44 @@ const mitesTreatment = new ContentPaN(
   { date: "11/10/2024", name: "Shahzad Athar" }
 );
 
+const molesTreatment = new ContentPaN(
+  "molesTreatment",
+  "Moles Treatment",
+  "Information about Moles Treatment and services",
+  `
+     <section class="notice-panel" role="region" aria-label="Notice panel">
+      <p>
+        we will need to refer your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">report to a technician</a>
+        for further investigation.
+      </p>
+    </section>
+  `,
+  {
+    buttonLabel: "Book treatment for Moles",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Moles", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
 const mothsTreatment = new ContentPaN(
   "mothsTreatment",
   "Moths Treatment",
@@ -1788,6 +1884,44 @@ const psocidsTreatment = new ContentPaN(
   {
     type: "Book",
     keywords: ["Psocids", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "11/10/2024", name: "Shahzad Athar" }
+);
+
+const rabbits = new ContentPaN(
+  "rabbitst",
+  "Rabbits",
+  "Information about Rabbits Treatment and services",
+  `
+     <section class="notice-panel" role="region" aria-label="Notice panel">
+      <p>
+        we will need to refer your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">report to a technician</a>
+        for further investigation.
+      </p>
+    </section>
+  `,
+  {
+    buttonLabel: "Book treatment for Rabbits",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Rabbits", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
@@ -2466,13 +2600,16 @@ const pestControl = new MenuPaN(
     FrogsorFrogspawn,
     furBeetlesTreatment,
     gardenAntsTreatment,
+    honeeyBeesTreatment,
     ladyBirdsTreatment,
     masonryBeesTreatment, 
     miceTreatment,
     mitesTreatment,
+    molesTreatment,
     mothsTreatment,
     pharoahAntsTreatment,
     psocidsTreatment,
+    rabbits,
     redSpiderMitesTreatment,
     sewageFliesTreatment,
     silverFishTreatment,
@@ -2713,10 +2850,43 @@ const bulkyWasteBuild  = new ContentPaN(
           For each additional collection there is a collection charge, 
           reduced if you receive income support, housing benefit, pension credit, Job Seekers, 
           or Employment Support Allowance. Current costs are as follows: 
+          </p>
+          <style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
 
-          //// REMOVAL COST NEED TO ENTER ////// 
-
-        </p>
+<table style="width:700px">
+<tbody style="text-align:center">
+  <tr>
+    <th>Number of Bulky Items</th>
+    <th>Price (including VAT)</th>
+    <th>Price (if you receive a qualifying benefits *)</th>
+  </tr>
+  <tr>
+    <td>1-3</td>
+    <td>£28.50</td>
+    <td>£TBD</td>
+  </tr>
+  <tr>
+    <td>4-6</td>
+    <td>£48</td>
+    <td>£TBD</td>
+  </tr>
+  <tr>
+    <td>7-9</td>
+    <td>£67.50</td>
+    <td>£TBD</td>
+  </tr>
+  <tr>
+    <td>10-12</td>
+    <td>£85.30</td>
+    <td>£TBD</td>
+  </tr>
+</table>
       </div>
     </details>
 
@@ -2835,8 +3005,6 @@ const bulkyWasteBuild  = new ContentPaN(
     Refer to Veolia and provide the customer's rent reference number. Please be aware that for certain blocks, Veolia may tell you
     to contact the Estates and Environmental Services Team if the block is not covered by Veolia. 
     </p>
-
-
     `,
   {
     buttonLabel: "Bulky Waste Build",
