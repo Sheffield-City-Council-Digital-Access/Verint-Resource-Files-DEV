@@ -392,8 +392,6 @@ const rescheduleAnAppointment = new ContentBDMaC(
   { date: "16/10/2024", name: "Joe Nixon" }
 );
 
-Book a Notice of Civil Partnership Appointment
-
 //--------- Book a Notice of Civil Partnership Appointment tile
 const bookNoticeCivilPartnership = new ContentBDMaC(
   "bookNoticeCivilPartnership",
@@ -456,7 +454,39 @@ const bookNoticeCivilPartnership = new ContentBDMaC(
   { date: "16/10/2024", name: "Joe Nixon" }
 );
 
+//-------Final Payment tile
 
+const finalPayment = new ContentBDMaC(
+  "finalPayment",
+  "Final Payment",
+  "Desc tbd",
+  `
+<h3>Final Ceremony Payment</h3>
+<p>The final step to your ceremony is to make the final payment, you can make a final payment for your ceremony by using the Booking ID.  This booking ID was given when booking the ceremony after 29th of October 2024.</p>
+<p>If you booked your ceremony before 29th of October 2024 and do not have this, please contact our ceremonies team for them to email you the details, ceremoniesteam@sheffield.gov.uk </p>
+<p>A final payment reminder email will be sent to you 4 weeks before your ceremony which will include the booking ID.</p>
+<p>Final payment must be paid in full before and no later than 2 weeks before the ceremony date, if payment is not made it this may postpone the ceremony and may need to be rescheduled.</p>
+<h3>Certificates</h3>
+<p>Marriage and civil partnership certificates cost £12.50 at the point of registration (before the ceremony). Your 1st certificate will be sent out within 5-10 working days of the office receiving your completed marriage or civil partnership schedule. If you require another certificate, please follow the link below to order one. The following details must be inputted, date of ceremony, venue and names on the schedule (maiden name).</p>
+<p>Ceremonies conducted in religious venues do not receive the 1st certificate free, please use the link below to purchase another certificate if you require one.</p>
+<p><a href="https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 " target="_blank" rel="noopener noreferrer">https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 </a></p>
+<p>Copies of certificates can be purchased after the ceremony for £13.50 each please follow the link below.</p>
+<p><a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates </a></p>
+<h3>A message from our ceremonies team</h3>
+<p><i>We hope you have a wonderful day and a long and happy life together. We would love to have your feedback if you wish pass on how your ceremony was it would great to hear how we are doing. </i></p>
+<p>Please send us the details to ceremoniesteam@sheffield.gov.uk</p>
+ 
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "",
+    keywords: [],
+    categories: ["", ""],
+  },
+  { date: "16/10/2024", name: "Joe Nixon" }
+);
 
 
 
