@@ -489,6 +489,48 @@ const finalPayment = new ContentBDMaC(
 );
 
 
+//--------Licensed Wedding Venues in Sheffield tile
+//-------I'm not sure if this should be a new tile
+
+const licensedWeddingVenues = new ContentBDMaC(
+  "licensedWeddingVenues",
+  "Licensed Wedding Venues in Sheffield",
+  "Desc tbd",
+  `
+<h3>Licensed wedding venues in Sheffield</h3>
+<p>You you can find information about licensed wedding venues in Sheffield at <a href="https://www.sheffield.gov.uk" target="_blank" rel="noopener noreferrer">www.sheffield.gov.uk</a></p>
+<p>New link will be finalised soon for new intagrated payments we will need to update thisprocess when confirmed going live</p>
+<p>Sheffield has some of the best wedding venues in Yorkshire. From our own Register Office and Town Hall rooms to hotels, galleries theatres and museums and everything in between, there's a venue to suit every couple.</p>
+<p>Advisor note: Search our map of approved venues or look through our list. PRESENTS MAP AND LIST OF LICENCED VENUES</p>
+<h3>Booking a Registrar</h3>
+<p>If you're getting married in Sheffield you need to book a registrar to conduct the ceremony.</p>
+<p>You will can to booking a registrar via www.sheffield.gov.uk.</p>
+<p>You can provisionally book a registrar up to 2 years ahead of the ceremony but it's your responsibility to contact the venue to check their availability.</p>
+<h3>Fees</h3>
+<ul>
+    <li>Monday to Friday: £482.00</li>
+    <li>Saturday and Sunday: £550.00</li>
+    <li>Bank Holiday: £690.00</li>
+</ul>
+<h3>Booking fee</h3>
+<p>There will be a non-refundable booking fee of £60 to secure a date and time (this is additional to any other fees).</p>
+<h3>Certificates</h3>
+<p>Marriage and civil partnership certificates cost £12.50 on the day of the ceremony. Copies of certificates can be bought at an extra charge."</p>
+ 
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "",
+    keywords: [],
+    categories: ["", ""],
+  },
+  { date: "16/10/2024", name: "Joe Nixon" }
+);
+
+
+
 
 
 
