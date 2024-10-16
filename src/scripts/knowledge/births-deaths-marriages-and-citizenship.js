@@ -169,6 +169,41 @@ const registerAStillbirth = new ContentBDMaC(
 );
 
 
+//------ copy certificates tile
+
+const copyCertificates = new ContentBDMaC(
+  "copyCertificates",
+  "Copy Certificates ",
+  "Desc tbd",
+  `
+  <h3>Copy certificates</h3>
+<p>ⓘ We can only take request copies of certificates for registrations that took place in Sheffield.</p>
+<p>You can request copy certificates via www.sheffield.gov.uk.</p>
+<p>There is a standard fee of £13.50 for these:</p>
+<ul>
+    <li>full birth certificate</li>
+    <li>full civil partnership certificate</li>
+    <li>extract civil partnership certificate</li>
+    <li>marriage certificate</li>
+    <li>death certificate</li>
+</ul>
+<p>Your certificate will be posted to you in 15 working days, please allow 3 days for delivery.</p>
+<h3>Urgent applications</h3>
+<p>These cost £38.50 including the cost of first-class postage, dispatched within 24 hours.</p>
+ 
+`,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "",
+    keywords: [],
+    categories: ["", ""],
+  },
+  { date: "16/10/2024", name: "Joe Nixon" }
+);
+
+
  
 
   
