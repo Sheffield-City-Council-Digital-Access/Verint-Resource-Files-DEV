@@ -437,7 +437,7 @@ const roadPavementSurface = new FormRaP(
   "roadPavementSurface",
   "Road or pavement surface",
   "Report problems such as dip or depression or vegetation in the road or pavement",
-  "report_road_pavement_surface",
+  "road_pavement_surface",
   {
     type: "Report",
     keywords: ["Road", "pavement", "surface"],
@@ -479,7 +479,7 @@ const reportHedgePlantGrass = new ContentRaP(
   `## needs information around grass cutting schedule ##`,
   {
     buttonLabel: "Report a hedge, plant or grass",
-    formName: "hedge_plant_grass",
+    formName: "report_hedge_plant_grass",
   },
   { typeKey: "" },
   { typeKey: "" },

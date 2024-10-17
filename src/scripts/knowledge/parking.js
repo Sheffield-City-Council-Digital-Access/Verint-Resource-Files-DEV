@@ -235,7 +235,6 @@ const blueBadge = new MenuP(
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-
 const businessPermit = new ContentP(
   "businessPermit",
   "Business Permit",
@@ -269,7 +268,7 @@ const businessPermit = new ContentP(
 			<li>1st permit £111.80</li>
 			<li>Additional permits £223.20</li>
 		</ul>
-		<h2>Evidence Required - Vehicle Ownership</h2>
+		<h3>Evidence Required - Vehicle Ownership</h3>
 		<p>
 			You will need to provide us with an electronic copy of one of the following:
 		</p>
@@ -334,7 +333,7 @@ const businessPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
 const carerPermitAndMedical = new ContentP(
@@ -355,7 +354,7 @@ const carerPermitAndMedical = new ContentP(
 		</p>
 		<p>Permits will normally be limited to one per household.</p>
 		<p>Replacement pool permits will not be issued.</p>
-		<h2>Cost</h2>
+		<h3>Cost</h3>
 		<p>A 12 month permit is £10.00.</p>
 		<h3>Evidence Required</h3>
 		<ul>
@@ -395,7 +394,7 @@ const carerPermitAndMedical = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
 const organisationCarer = new ContentP(
@@ -472,7 +471,7 @@ const organisationCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
 const medicalProfessionalCarer = new ContentP(
@@ -480,24 +479,40 @@ const medicalProfessionalCarer = new ContentP(
   "Medical Professional Carer",
   "",
   `
-    <h3>About the Permit</h3> 
-    <p>Medical professional carer permits are available for:</p> 
-    <ul> 
-        <li>NHS qualified medical practitioners</li> 
-        <li>NHS medical practitioners carrying essential equipment or drugs to treat a patient resident</li> 
+    <h3>About the Permit</h3>
+    <p>Medical professional carer permits are available for:</p>
+    <ul>
+      <li>NHS qualified medical practitioners</li>
+      <li>
+        NHS medical practitioners carrying essential equipment or drugs to treat a
+        patient resident
+      </li>
     </ul>
-    <p>The driver can only use the permit for carrying out visits to clients or patients, not to park where they are based (their workplace).</p> 
-    <p>Carer permit holders have to display a timer disc in the vehicle to show when they started parking. The maximum time for parking is 2 hours.</p> 
-    <p>If the client/patient regularly needs longer care visits, they may be eligible to apply for a resident carer permit (see above). Clients/patients who require an occasional longer visit may provide a visitor permit.</p> 
-    <h3>Cost</h3> 
-    <p>£10 each for 12 months.</p> 
-    <h3>Evidence Required</h3> 
-    <p>The organisation should apply not for an individual and provide the following information:</p> 
-    <ul> 
-        <li>The organisations operation</li> 
-        <li>How many staff are employed</li> 
-        <li>How many permits are required</li> 
-        <li>Why the permit is required</li> 
+    <p>
+      The driver can only use the permit for carrying out visits to clients or
+      patients, not to park where they are based (their workplace).
+    </p>
+    <p>
+      Carer permit holders have to display a timer disc in the vehicle to show when
+      they started parking. The maximum time for parking is 2 hours.
+    </p>
+    <p>
+      If the client/patient regularly needs longer care visits, they may be eligible
+      to apply for a resident carer permit (see above). Clients/patients who require
+      an occasional longer visit may provide a visitor permit.
+    </p>
+    <h3>Cost</h3>
+    <p>£10 each for 12 months.</p>
+    <h3>Evidence Required</h3>
+    <p>
+      The organisation should apply not for an individual and provide the following
+      information:
+    </p>
+    <ul>
+      <li>The organisations operation</li>
+      <li>How many staff are employed</li>
+      <li>How many permits are required</li>
+      <li>Why the permit is required</li>
     </ul>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -526,7 +541,7 @@ const medicalProfessionalCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
 const greenParkingPermit = new ContentP(
@@ -694,7 +709,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
 const residentsPermit = new ContentP(
@@ -785,7 +800,7 @@ const residentsPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
 const staffPermit = new ContentP(
@@ -819,7 +834,7 @@ const staffPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
 const tradePermit = new ContentP(
@@ -895,7 +910,7 @@ const tradePermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
 const utilityPermit = new ContentP(
@@ -941,7 +956,7 @@ const utilityPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
 const visitorsPermits = new ContentP(
@@ -1024,7 +1039,7 @@ const visitorsPermits = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
 const makingAPayment = new ContentP(
@@ -1032,19 +1047,20 @@ const makingAPayment = new ContentP(
   "Making A Payment",
   "",
   `
-	<h2>Payment Enquiries</h2> 
-    <h2>Making a Payment</h2> 
-    <p>It is quick, safe, and secure to make a payment online or using our automated telephone payment line. To do this, you will need:</p> 
-    <ul> 
-        <li>Ticket reference number (can be found on Gateway)</li> 
-        <li>Credit or debit card</li> 
-        <li>Your vehicle registration number</li> 
-    </ul> 
-    <p>Alternatively, you can:</p> 
-    <ul> 
-        <li>Pay at a pay point outlet by cash</li> 
-        <li>Pay at a Post Office by cash, cheque, credit, or debit card</li> 
-    </ul> 
+    <p>
+      It is quick, safe, and secure to make a payment online or using our automated
+      telephone payment line. To do this, you will need:
+    </p>
+    <ul>
+      <li>Ticket reference number (can be found on Gateway)</li>
+      <li>Credit or debit card</li>
+      <li>Your vehicle registration number</li>
+    </ul>
+    <p>Alternatively, you can:</p>
+    <ul>
+      <li>Pay at a pay point outlet by cash</li>
+      <li>Pay at a Post Office by cash, cheque, credit, or debit card</li>
+    </ul>
     <p>Sheffield does not accept cash, cheque, or postal orders direct.</p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -1073,12 +1089,12 @@ const makingAPayment = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
 const confirmationOfPayment = new ContentP(
   "confirmationOfPayment",
-  "Confirmation of Payment",
+  "Confirmation Of Payment",
   "",
   `
 		<p>
@@ -1125,7 +1141,7 @@ const confirmationOfPayment = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
 const customerUnableToPay = new ContentP(
@@ -1177,7 +1193,7 @@ const customerUnableToPay = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
 const customerTriedToPayOnline = new ContentP(
@@ -1222,7 +1238,7 @@ const customerTriedToPayOnline = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
 const customerHasPaidTwice = new ContentP(
@@ -1258,75 +1274,226 @@ const customerHasPaidTwice = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
-const challengingAPCN = new ContentP(
-  "Challengingapcn",
-  "Challenging a PCN",
+const howCanIAppeal = new ContentP(
+  "howCanIAppeal",
+  "How Can I Appeal",
   "",
   `
-		<h3>How can I appeal</h3>
-		<p>
-			Challenges can be made online within 28 days of receiving the original ticket.
-			Please note that it may take up to 24 hours for the ticket to appear on the
-			online portal.
-		</p>
-		<p>
-			Documentation can be uploaded to support the challenge. The online link also
-			enables the motorist to use an interactive portal to guide them through their
-			appeal. Evidence such as photos of the contravention can be viewed online.
-		</p>
-		<p>
-			Do not discuss any possible outcomes or give your opinions. Parking services
-			will contact the customer following the decision.
-		</p>
-		<h3>How long do I have to appeal</h3>
-		<p>
-			Anyone wanting to appeal should do so within 28 days after the original ticket
-			was received.
-		</p>
-		<h3>Will I get a discounted rate if I appeal</h3>
-		<p>
-			If the appeal is declined, we will usually re-offer a 14 day discount period
-			if the challenge was received whilst the case is still in the initial 14 day
-			discount period.
-		</p>
-		<p>
-			If the charge is already at the full amount and a Notice to Owner letter has
-			been received, there is a further 28 days to appeal to us online (usually the
-			discount rate would not be offered again but this will be confirmed when a
-			written reply is sent).
-		</p>
-		<p>
-			If the challenge is at charge certificate stage the call should be transferred
-			to parking services (this can be checked on gateway).
-		</p>
-		<h3>Have you received my appeal</h3>
-		<p>This can be found by checking Gateway.</p>
-		<h3>Multiple PCN's</h3>
-		<p>
-			Challenges can be made online within 28 days of receiving the original ticket.
-			(It can take up to 24 hours to appear on online portal.)
-		</p>
-		<p>
-			Documentation can be uploaded to support the challenge, the online link also
-			enables the motorist to use an interactive portal to guide them through their
-			appeal and evidence can be viewed (e.g photos of the contravention)
-		</p>
-		<p>
-			Do not discuss any possible outcomes or give your opinions. Parking services
-			will contact the customer following the decision.
-		</p>
-		<h3>Rejected PCN's</h3>
-		<p>
-			The correspondence to reject their challenge will explain the next steps to
-			take if they are unhappy with the decision.
-		</p>
-		<p>
-			General information relating to the PCN Enforcement is available on the
-			<a href="http://www.patrol-uk.info">www.patrol-uk.info</a>.
-		</p>
+    <p>
+      Challenges can be made online within 28 days of receiving the original ticket.
+      Please note that it may take up to 24 hours for the ticket to appear on the
+      online portal.
+    </p>
+    <p>
+      Documentation can be uploaded to support the challenge. The online link also
+      enables the motorist to use an interactive portal to guide them through their
+      appeal. Evidence such as photos of the contravention can be viewed online.
+    </p>
+    <p>
+      Do not discuss any possible outcomes or give your opinions. Parking services
+      will contact the customer following the decision.
+    </p>
+	`,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+
+const howLongDoIhavetoappeal = new ContentP(
+  "howLongDoIHaveToAppeal",
+  "How Long Do I Have to Appeal",
+  "",
+  `
+
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+
+const haveYouReceivedMyAppeal = new ContentP(
+  "haveYouReceivedMyAppeal",
+  "Have You Received My Appeal",
+  "",
+  `
+	  <p>This can be found by checking Gateway.</p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+const multiplepcns = new ContentP(
+  "multiplePcns",
+  "Multiple PCN's",
+  "",
+  `
+    <p>
+      Challenges can be made online within 28 days of receiving the original
+      ticket. It can take up to 24 hours to appear on online portal.
+    </p>
+    <p>
+      Documentation can be uploaded to support the challenge, the online link also
+      enables the motorist to use an interactive portal to guide them through their
+      appeal and evidence can be viewed (e.g photos of the contravention)
+    </p>
+    <p>
+      Do not discuss any possible outcomes or give your opinions. Parking services
+      will contact the customer following the decision.
+    </p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+
+const howLongDoIHaveToAppeal = new ContentP(
+  "howLongDoIHaveToAppeal",
+  "How Long Do I Have to Appeal",
+  "",
+  `	
+    <h3>Rejected PCN's</h3>
+    <p>
+      The correspondence to reject their challenge will explain the next steps to
+      take if they are unhappy with the decision.
+    </p>
+    <p>
+      General information relating to the PCN Enforcement is available on the
+      <a href="http://www.patrol-uk.info">www.patrol-uk.info</a>.
+    </p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+
+const enforcementbaliffenquiries = new ContentP(
+  "enforcementbaliffenquiries",
+  "Enforcement Baliff Enquiries",
+  "",
+  `   
 		<h3>Enforcement (Bailiff) Enquiries</h3>
 		<p>
 			Once the debt has been referred to enforcement agents there is no further
@@ -1374,140 +1541,274 @@ const challengingAPCN = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
-const parkingIssues = new ContentP(
-  "parkingIssues",
-  "Parking Issues",
-  "Information relating to Parking Issues",
+const illegalParking = new ContentP(
+  "illegalParking",
+  "Ilegal Parking",
+  "",
   `
-		<h3>Illegal Parking</h3>
-		<p>
-			Refers to a vehicle parked where there are parking restrictions in place, or
-			the vehicle has travelled over parking restrictions to park.
-		</p>
-		<p>Parking restrictions include:</p>
-		<ul>
-			<li>Single/double yellow lines</li>
-			<li>Permit zones</li>
-			<li>Dropped kerb</li>
-		</ul>
-		<p>
-			Please note: “H” and Disabled road markings are only advisory and are not
-			legally enforceable in the same way as yellow lines.
-		</p>
-		<h3>Vehicle Obstruction</h3>
-		<p>
-			Refers to a vehicle causing an obstruction that is considered to be a hazard
-			to other road or footpath users where there are no parking restrictions in
-			place. For example:
-		</p>
-		<li>Blocking the footpath</li>
-		<li>Parked on a bend or at a junction creating a safety hazard other users</li>
-		<li>
-			The Police are responsible for enforcement action against vehicle obstruction
-			on the highway, advise the customer to use the 101 service to report
-		</li>
-		<h3>Other Obstructions</h3>
-		<p>
-			Any other obstruction left on the roads, such as skips, building material,
-			mud, caravans, are dealt with by Highways Enforcement
-		</p>
-		<h3>Other Obstructions</h3>
-		<p>
-			Any other obstruction left on the roads, such as skips, building material,
-			mud, caravans, are dealt with by Highways Enforcement.
-		</p>
-		<h3>Car Park/Parking Meter Problem</h3>
-		<p>Escalation.</p>
-		<h3>Bay Suspensions</h3>
-		<h3>Requesting a Suspension</h3>
-		<p>
-			A request can be made that specific parking bays, for example pay and display,
-			permit holders only, disabled and loading bays are kept clear of parked
-			vehicles in certain circumstances such as:
-		</p>
-		<ul>
-			<li>
-				Maintenance of adjacent property where highway access is required for
-				deliveries, essential vehicles, skips etc.
-			</li>
-			<li>Skips on the highway</li>
-			<li>Maintenance of trees</li>
-			<li>Police request</li>
-			<li>Security reasons</li>
-			<li>Filming - contact us about filming in the city</li>
-			<li>Any other reason accepted by ourselves</li>
-		</ul>
-		<p>
-			Parking Services will not suspend bays to provide parking for vehicles unless
-			they are essential for works in the suspended area (such as an asbestos
-			removal vehicle).
-		</p>
-		<p>
-			Other works or private vehicles should be parked legally elsewhere (for
-			example in nearby pay and display parking).
-		</p>
-		<h3>Submitting your application</h3>
-		<p>
-			Applications for parking bay suspensions should be made at least 14 days
-			before the suspension start date.
-		</p>
-		<h3>Charges and payment</h3>
-		<p>
-			If the application is accepted, Parking Services will contact the customer for
-			payment.
-		</p>
-		<p>
-			Full payment must be made at least 9 days before the suspension start date.
-			You can pay by credit card, debit card, or BACS.
-		</p>
-		<p>
-			The daily charge per 5m section of bay is £15 for City Centre controlled
-			parking zone, with a non-refundable administration fee of £25. The daily
-			charge per 5m section of bay is £5 for all other areas, with a non-refundable
-			administration fee of £25.
-		</p>
-		<h3>Request Yellow Line Dispensation</h3>
-		<p>
-			Parking Services will consider dispensations to allow vehicles which are being
-			used as a workshop vehicle (e.g. vehicle where there is equipment which needs
-			to be used directly from the vehicle as part of the work being carried out at
-			an adjacent property) to park on yellow lines, or in bays for longer than
-			restrictions allow.
-		</p>
-		<h3>Dispensations are unlikely to be granted if:</h3>
-		<ul>
-			<li>A loading ban applies</li>
-			<li>The vehicle is likely to cause an obstruction to traffic flow</li>
-			<li>The vehicle may be hazardous to other road users</li>
-		</ul>
-		<p>
-			If dispensation is granted, we will issue a signed written notice which must
-			be clearly displayed on the parked vehicle.
-		</p>
-		<p>
-			Dispensations are vehicle and location specific, if the dispensation notice
-			has been altered in any way it will be deemed invalid.
-		</p>
-		<h3>Submitting your application</h3>
-		<p>
-			Applications for dispensations should be made at least 7 days before the
-			dispensation start date.
-		</p>
-		<h3>Charges and payment</h3>
-		<p>
-			If the application is accepted, Parking Services will contact the customer for
-			payment.
-		</p>
-		<p>
-			Full payment is required before dispensation can be granted. There is a charge
-			of £15 per vehicle per day for a dispensation as well as a £25 non-refundable
-			administration fee.
-		</p>
-		<h3>Vehicle parked in a Suspended Bay</h3>
-		<p>Should be reported to Parking Enforcement</p>
+    <p>
+      Refers to a vehicle parked where there are parking restrictions in place, or
+      the vehicle has travelled over parking restrictions to park.
+    </p>
+    <p>Parking restrictions include:</p>
+    <ul>
+      <li>Single/double yellow lines</li>
+      <li>Permit zones</li>
+      <li>Dropped kerb</li>
+    </ul>
+    <p>
+      Please note: “H” and Disabled road markings are only advisory and are not
+      legally enforceable in the same way as yellow lines.
+    </p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+
+const vehicleObstruction = new ContentP(
+  "vehicleObstruction",
+  "Vehicle Obstruction",
+  "Information relating to Vehicle Obstruction",
+  `
+    <p>
+      Refers to a vehicle causing an obstruction that is considered to be a hazard
+      to other road or footpath users where there are no parking restrictions in
+      place. For example:
+    </p>
+    <ul>
+      <li>Blocking the footpath</li>
+      <li>
+        Parked on a bend or at a junction creating a safety hazard other users
+      </li>
+      <li>
+        The Police are responsible for enforcement action against vehicle
+        obstruction on the highway, advise the customer to use the 101 service to
+        report
+      </li>
+    </ul>
+    <h3>Other Obstructions</h3>
+    <p>
+      Any other obstruction left on the roads, such as skips, building material,
+      mud, caravans, are dealt with by Highways Enforcement
+    </p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+
+const carParkParkingMeterProblem = new ContentP(
+  "carParkParkingMeterProblem",
+  "Car Park/Parking Meter Problem",
+  "Information relating to Car Park/Parking Meter Problem",
+  `
+    <p>Escalation</p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+
+const baySuspensions = new ContentP(
+  "baySuspensions",
+  "Bay Suspensions",
+  "Information relating to Bay Suspensions",
+  `
+    <h3>Requesting a Suspension</h3>
+    <p>
+      A request can be made that specific parking bays, for example pay and display,
+      permit holders only, disabled and loading bays are kept clear of parked
+      vehicles in certain circumstances such as:
+    </p>
+    <ul>
+      <li>
+        Maintenance of adjacent property where highway access is required for
+        deliveries, essential vehicles, skips etc.
+      </li>
+      <li>Skips on the highway</li>
+      <li>Maintenance of trees</li>
+      <li>Police request</li>
+      <li>Security reasons</li>
+      <li>Filming - contact us about filming in the city</li>
+      <li>Any other reason accepted by ourselves</li>
+    </ul>
+    <p>
+      Parking Services will not suspend bays to provide parking for vehicles unless
+      they are essential for works in the suspended area (such as an asbestos
+      removal vehicle).
+    </p>
+    <p>
+      Other works or private vehicles should be parked legally elsewhere (for
+      example in nearby pay and display parking).
+    </p>
+    <h3>Submitting your application</h3>
+    <p>
+      Applications for parking bay suspensions should be made at least 14 days
+      before the suspension start date.
+    </p>
+    <h3>Charges and payment</h3>
+    <p>
+      If the application is accepted, Parking Services will contact the customer for
+      payment.
+    </p>
+    <p>
+      Full payment must be made at least 9 days before the suspension start date.
+      You can pay by credit card, debit card, or BACS.
+    </p>
+    <p>
+      The daily charge per 5m section of bay is £15 for City Centre controlled
+      parking zone, with a non-refundable administration fee of £25. The daily
+      charge per 5m section of bay is £5 for all other areas, with a non-refundable
+      administration fee of £25.
+    </p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+
+const yellowLineDispensations = new ContentP(
+  "yellowLineDispensations",
+  "Yellow Line Dispensations",
+  "Information relating to Yellow Line Dispensations",
+  `
+    <h3>Request Yellow Line Dispensation</h3>
+    <p>
+      Parking Services will consider dispensations to allow vehicles which are being
+      used as a workshop vehicle (e.g. vehicle where there is equipment which needs
+      to be used directly from the vehicle as part of the work being carried out at
+      an adjacent property) to park on yellow lines, or in bays for longer than
+      restrictions allow.
+    </p>
+    <h3>Dispensations are unlikely to be granted if:</h3>
+    <ul>
+      <li>A loading ban applies</li>
+      <li>The vehicle is likely to cause an obstruction to traffic flow</li>
+      <li>The vehicle may be hazardous to other road users</li>
+    </ul>
+    <p>
+      If dispensation is granted, we will issue a signed written notice which must
+      be clearly displayed on the parked vehicle.
+    </p>
+    <p>
+      Dispensations are vehicle and location specific, if the dispensation notice
+      has been altered in any way it will be deemed invalid.
+    </p>
+    <h3>Submitting your application</h3>
+    <p>
+      Applications for dispensations should be made at least 7 days before the
+      dispensation start date.
+    </p>
+    <h3>Charges and payment</h3>
+    <p>
+      If the application is accepted, Parking Services will contact the customer for
+      payment.
+    </p>
+    <p>
+      Full payment is required before dispensation can be granted. There is a charge
+      of £15 per vehicle per day for a dispensation as well as a £25 non-refundable
+      administration fee.
+    </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -1535,16 +1836,73 @@ const parkingIssues = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/10/2024", name: "Dinah WIlliams" }
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
-const penaltyChargeNotice = new MenuP(
-  "penaltyChargeNotice",
-  "Penalty Charge Notice",
+const vehicleParkedInASuspendedBay = new ContentP(
+  "vehicleParkedInASuspendedBay",
+  "Vehicle Parked In A Suspended Bay",
+  "Information relating to parking in a Suspended Bay",
+  `<p>Should be reported to Parking Enforcement</p>`,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+
+const penaltyChargeNoticePcn = new MenuP(
+  "penaltyChargeNoticePCN",
+  "Penalty Charge Notice (PCN)",
   "Information on Penalty Charge Notice",
-  [challengingAPCN]
+  [
+    makingAPayment,
+    confirmationOfPayment,
+    customerUnableToPay,
+    customerTriedToPayOnline,
+    customerHasPaidTwice,
+    howCanIAppeal,
+    howLongDoIHaveToAppeal,
+    multiplepcns,
+    enforcementbaliffenquiries,
+  ]
 );
 
+const parkingIssues = new MenuP(
+  "parkingIssues",
+  "Parking Issues",
+  "Information relating to Parking Issues",
+  [
+    illegalParking,
+    vehicleObstruction,
+    carParkParkingMeterProblem,
+    baySuspensions,
+    yellowLineDispensations,
+    vehicleParkedInASuspendedBay,
+  ]
+);
 const parkingPermits = new MenuP(
   "parkingPermit",
   "Parking Services",
@@ -1562,10 +1920,6 @@ const parkingPermits = new MenuP(
     utilityPermit,
     visitorsPermits,
     makingAPayment,
-    confirmationOfPayment,
-    customerUnableToPay,
-    customerTriedToPayOnline,
-    customerHasPaidTwice,
   ]
 );
 
@@ -1576,5 +1930,5 @@ const parking = new ServiceP(
   "parking",
   "Parking",
   `Car parks, on-street parking, residents' parking permits, visitors' parking, disabled parking, parking fines…`,
-  [parkingPermits, penaltyChargeNotice, blueBadge]
+  [parkingPermits, penaltyChargeNoticePcn, parkingIssues, blueBadge]
 );

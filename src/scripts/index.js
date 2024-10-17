@@ -3847,6 +3847,16 @@ function formatReadableTime(date) {
 
 // --- HELPER FUNCTIONS ----------------------------------------------------- \\
 
+// --- RESTORE PLACE HOLDER TEXT -------------------------------------------- \\
+
+function restorePlaceHolder(fieldName) {
+  $(`#dform_widget_${fieldName} option:first`)
+    .text("Please select...")
+    .val("")
+    .prop("selected", true)
+    .prop("disabled", true);
+}
+
 // --- SHOW / HIDE ELEMENTS ------------------------------------------------- \\
 
 function hideShowMultipleElements(fields) {
