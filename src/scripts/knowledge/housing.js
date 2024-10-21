@@ -627,6 +627,246 @@ const leaseholderInformation = new ContentH(
   { date: "11/10/2024", name: "Abishai Devarapalli" }
 );
 
+//apply for Housing Rent to be under Rent menu
+const arrearsorDebt = new ContentH(
+  "arrearsorDebt",
+  "Court Order Removal of",
+  "Removal of a Court Order from your rent account,",
+  `
+    <p>
+      If you would like the removal of a Court Order from your rent account, or to pay for the removal 
+      of the Court Order, then you can either apply direct to the court, or speak to our Court Team.  
+      You will require your court reference number.
+    </p>
+    <p>
+      If the Court Team are happy for the Order to be removed, they will send a letter to the court 
+      advising the court that that they do not oppose the removal.
+    </p>
+  `,
+  { buttonLabel: "Arrears or Debt", formName: "Rents" },
+  { typeKey: "rents_information_provided" },
+  { typeKey: "rents_transfered_to_service" },
+  { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
+  { date: "16/10/2024", name: "Shahzad Athar" }
+);
+
+const balanceEnquiry = new ContentH(
+  "balanceEnquiry",
+  "Balance Enquiry",
+  "Information about rent balance enquiry,",
+  `
+  <p>
+  You can now check your own balance and rent account online by logging onto 
+  <a href="https://www.sheffield.gov.uk/home/council-housing/check-my-rent-balance">this page</a>.
+  </p> 
+  <p>
+  There is also a link on this page to the GRO site for users who wish to use this.
+  </p>
+  <p>
+  You can also register for SMS alerts at 
+  <a href="https://www.sheffield.gov.uk/utilities/Forms/housing/register-rent-text">this link</a>.
+  </p>
+  <p>
+  You only need your rent reference and surname to use these services.
+  </p> 
+
+  <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Assist Customer to Register for SMS Balance Alerts</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+      <ol> 
+      <li><a href="https://www.sheffield.gov.uk/utilities/Forms/housing/register-rent-text">Click here to open website</a></li> 
+      <li>Ask for Rent Reference and Surname</li> 
+      <li>Ask for mobile phone number</li> 
+      <li>Inform the customer - you should receive a Text from Sheffield CC – obtain code from tenant</li> 
+      <li>Please can you state your preferences</li> 
+      <li>For verification purposes, please provide your name. We do not store this information</li> 
+      <li>Confirm customer is now registered for text alerts. Advise to TEXT RENT at any time to 0790866101 for an updated balance</li> 
+      </ol> 
+      <p>
+      Advise the Tenant the online balance may take up to 72 hours after payment to update.
+      </p> 
+      </div>
+    </details>
+  `,
+  { buttonLabel: "Balance Enquiry", formName: "Rents" },
+  { typeKey: "rents_information_provided" },
+  { typeKey: "rents_transfered_to_service" },
+  { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
+  { date: "16/10/2024", name: "Shahzad Athar" }
+);
+
+const insurance = new ContentH(
+  "insurance",
+  "Insurance",
+  "Information about offering an insurance scheme to the tenants",
+  `
+  <p>
+  The Council offers tenants an insurance scheme, covering:
+  </p>
+  <ul>
+  <li>Water damage</li>
+  <li>Fire damage</li>
+  <li>Theft</li>
+  <li>Accidental damage</li>
+  <li>Lost or damaged while in your house, domestic outbuildings, garages, sheds, greenhouses, and cellars.</li>
+  </ul>
+  <p>
+  There are no excess payments on the Insurance through this scheme.
+  </p>
+     
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Apply for Insurance / Customer received Home Contents Insurance Flyer</h3>
+       <div class="accordion-icon"></div>
+        </summary>
+          <div class="accordion-content">
+           <p>
+            You can apply for insurance online at <a href="http://www.sheffield.gov.uk/content/sheffield/home/council-housing/tenants-home-contents-insurance.html">this page</a>.
+            </p>
+            <p>
+             If you are unable to access the online application, we can start the process for you.
+            </p>
+             </div>
+              </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cancel Household Insurance</h3>
+        <div class="accordion-icon"></div>
+          </summary>
+            <div class="accordion-content">
+          <p>
+           To cancel Household Insurance with the Council Housing Service, write to:
+          </p>
+          <address>
+          Sheffield Council Housing Service<br>
+          PO Box 5967<br>
+          Sheffield<br>
+          S2 9GH
+          </address>
+          <p>
+          or can be referred to the Rent Account Maintenance team.
+          </p>
+          </div>
+          </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Chasing a Claim (Loss Adjuster)</h3>
+       <div class="accordion-icon"></div>
+        </summary>
+          <div class="accordion-content">
+        <p>
+        Once a claim has been made, the loss adjuster aims to contact the customer within 48 hours. The Loss 
+        Adjuster can be contacted on 0161 8758988.
+        </p>
+        </div>
+        </details>
+
+  <details class="accordion">
+   <summary class="accordion-header">
+    <h3>Eligibility</h3>
+     <div class="accordion-icon"></div>
+      </summary>
+       <div class="accordion-content">
+      <p>
+      Council Housing tenants with less than 4 weeks of arrears are eligible for the Council Housing Contents
+      Insurance scheme.
+      </p>
+      <p>
+      Council tenants with more than 4 weeks of arrears are not eligible, nor are Non-Council tenants or 
+      Leaseholders.
+      </p>
+      </div>
+      </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Insurance Premium Tax (Renewal) Letter</h3>
+        <div class="accordion-icon"></div>
+          </summary>
+            <div class="accordion-content">
+          <p>
+          <strong>Issue:</strong> You have renewed my cover but my policy has been cancelled.
+          </p>
+          <p>
+          The renewal letter must have crossed with us cancelling it.
+          </p>
+          <p>
+          <strong>From Notes Section on Spreadsheet:</strong> Refer to the rent account maintenance team (RAM).
+          </p>
+            </div>
+            </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Received Cheque but no Bank Account</h3>
+        <div class="accordion-icon"></div>
+          </summary>
+            <div class="accordion-content">
+          <p>
+          Customers can have a cheque reissued in the name of a friend or relative, or can join the Credit Union
+          which will allow them to cash cheques.
+          </p>
+            </div>
+              </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Information on Joining Credit Union</h3>
+        <div class="accordion-icon"></div>
+          </summary>
+            <div class="accordion-content">
+          <p>
+          Advise the customer that they can cash the cheque by becoming a member of the Credit Union 
+          (this costs £1), and a post office cheque will be issued immediately. The address for the Credit Union is:
+          </p>
+          <address>
+          Sheffield Credit Union<br>
+          16 Commercial Street<br>
+          Sheffield<br>
+          S1 2AT
+          </address>
+          <p>
+          The Credit Union's premises are open Monday to Friday, 10am to 1pm.
+          </p>
+            </div>
+              </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Weekly Cost</h3>
+        <div class="accordion-icon"></div>
+          </summary>
+            <div class="accordion-content"> 
+        <p>
+        The weekly cost depends upon how much cover is required: - Table detailed in article.
+        </p> 
+          </div>
+          </details>
+  `,
+  { buttonLabel: "Insurance", formName: "Rents" },
+  { typeKey: "rents_information_provided" },
+  { typeKey: "rents_transfered_to_service" },
+  { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
+  { date: "16/10/2024", name: "Shahzad Athar" }
+);
+
+const rents = new MenuH(
+  "rents",
+  "Rents",
+  "Information about Housing Rents",
+  [
+    arrearsorDebt,
+    balanceEnquiry,
+    insurance,
+    
+  ]
+);
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -634,7 +874,14 @@ const housing = new ServiceH(
   "housing",
   "Housing",
   "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-  [estatesAndEnvironments, leaseholderInformation]
-  [estatesAndEnvironments, leaseholderInformation, rehousing]
+  [
+    estatesAndEnvironments, 
+    leaseholderInformation,
+    estatesAndEnvironments, 
+    leaseholderInformation, 
+    rehousing,
+    rents,
+  
+  ]
 );
 
