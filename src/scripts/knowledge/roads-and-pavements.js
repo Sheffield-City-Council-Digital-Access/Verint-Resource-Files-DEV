@@ -69,7 +69,7 @@ const reportDamagedMissingKerb = new FormRaP(
 
 const requestLitterPickCollection = new FormRaP(
   "requestLitterPickCollection",
-  "Comunity litter collection",
+  "Community litter collection",
   "Collection after a community litter pick",
   "litter_pick_collection",
   {
