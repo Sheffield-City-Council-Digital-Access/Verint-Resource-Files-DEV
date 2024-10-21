@@ -2082,17 +2082,730 @@ const emergencyRepairs = new ContentH(
           <div class="details-accordion-content">
              
 
+          </div>
+        </details>
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "10/10/2024", name: "Gee Whitehouse" }
+);
 
-          
+const carbonmonoxide = new ContentH(
+  "carbonmonoxide",
+  "Carbon Monoxide/ What is CO Poisoining",
+  "Description",
+  `
+
+
+<details class="accordion">
+      <summary class="accordion-header">
+        <h3>Carbon Monoxide</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <details class="details-accordion">
+          <summary>  What is CO Poisoning?  </summary>
+          <div class="details-accordion-content">
+             
+    <p>Unsafe gas appliances can produce a highly poisonous gas called carbon monoxide (CO). 
+    It can cause death as well as serious long-term health problems such as brain damage. 
+    CO is produced by the incomplete burning of natural gas or liquefied petroleum gas (LPG). 
+    This happens when a gas appliance has been incorrectly fitted, badly repaired, or poorly maintained. 
+    It can also occur if flues, chimneys, or vents are blocked. Oil and solid fuels such as coal, wood, petrol, 
+    and oil can also produce carbon monoxide.</p> 
+
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>   Remember the Six Main Symptoms to Look Out For? </summary>
+          <div class="details-accordion-content">
+             
+ <ul> 
+
+        <li>Headaches</li> 
+
+        <li>Dizziness</li> 
+
+        <li>Nausea</li> 
+
+        <li>Breathlessness</li> 
+
+        <li>Collapse</li> 
+
+        <li>Loss of consciousness</li> 
+
+    </ul> 
+
+
 
           </div>
         </details>
 
 
+                <details class="details-accordion">
+          <summary>   What to Do if You Suspect CO Poisoning </summary>
+          <div class="details-accordion-content">
+             
 
+    <p>Get fresh air immediately. Open doors and windows, turn off gas appliances and leave the house. 
+    See your doctor immediately or go to the hospital - let them know that you suspect CO poisoning. 
+    They can do a blood or breath test to check.</p> 
+
+    <p>If you think there is an immediate danger, call the Gas Emergency Helpline on 0800 111 999.</p> 
+    
+
+          </div>
+        </details>
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "10/10/2024", name: "Gee Whitehouse" }
+);
+
+const loststolenkeys = new ContentH(
+  "lostStolenKeys",
+  "Lost Stolen Keys and Lock Repairs",
+  "Description",
+  `
+<details class="accordion">
+      <summary class="accordion-header">
+        <h3>Lost/Stolen Keys and Lock Repairs</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <details class="details-accordion">
+          <summary>  Lost Keys </summary>
+          <div class="details-accordion-content">
+             
+  <ul> 
+
+        <li>A charge of £5 for lost or stolen keys.</li> 
+
+        <li>Locks will only be replaced if the customer agrees to the charge or provides a valid crime reference number.</li> 
+
+        <li>Exceptions apply for elderly or vulnerable individuals.</li> 
+
+    </ul> 
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>   Replacement Fobs </summary>
+          <div class="details-accordion-content"> 
+ <ul>
+        <li>Costs £10 (communal keys: £5).</li> 
+
+        <li>Can be purchased at local housing offices with ID.</li> 
+    </ul> 
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>   Area Housing Offices </summary>
+          <div class="details-accordion-content"> 
+ 
+<p>Please note: Howden House only deals with Rehousing enquiries and will not be able to help with fobs or keys. 
+List of Area Offices:
+
+          </p>
+          </div>
+        </details>
+
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "10/10/2024", name: "Gee Whitehouse" }
+);
+
+const programmedWorks = new ContentH(
+  "programmedWorks",
+  "Programmed Works",
+  "Description",
+  `
+
+
+<details class="accordion">
+      <summary class="accordion-header">
+        <h3>Programmed Works</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <details class="details-accordion">
+          <summary>  Electrical Upgrade Programme  </summary>
+          <div class="details-accordion-content">
+         
+          <ul> 
+
+        <li>Aims to modernize electrical standards in council-managed housing by 2024.</li> 
+
+        <li>Will cover over 20,000 dwellings with potential investments of £40-45 million.</li> 
+
+        <li>Includes upgrades such as installation of isolation switches, replacement of consumer units, improved socket spread, smoke alarms, and carbon monoxide detectors.</li> 
+
+        <li>Work will be conducted in batches of 250-300 properties with a target of 60 completed properties per week.</li> 
+
+    </ul> 
+
+      </div>
+        </details>
+
+ 
+       <details class="details-accordion">
+          <summary>   Background </summary>
+          <div class="details-accordion-content">
+             
+<p>Installation of fences is the tenant’s responsibility.
+Over the last 12 years considerable investment has been made in the housing stock via the Decent Homes programme and 
+other programmes. This has included some elements of electrical work particularly within bathrooms and kitchens. However, 
+enhancing the overall electrical standard in homes / communal facilities was not a key requirement of the 
+Decent Homes programme or for properties to achieve the government decent homes standard. </p>
+
+<p>
+Consequently, whilst the electrical condition of the stock is fair / good, 
+there remain improvements required to provide a modern-day standard that will keep customers safe, 
+contribute to digital inclusion, meet existing and future legislative standards and contribute to reducing the carbon 
+footprint by providing energy efficient products. </p>
+
+
+
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>   What will be included within the Electrical Upgrade Programme? </summary>
+          <div class="details-accordion-content">
+            
+
+    <p>The aim of this programme is to bring all properties over time up to a modern-day electrical standard 
+    and move towards an electrical periodic test every 5 years as recommended by the National Council for 
+    Electrical Installation Contracting (NICEIC).</p>
+
+    <p>Work will be released in batch orders of approximately 250 to 300 dwellings but on a geographical basis to 
+    enable the contractor(s) and the contract administrator to work efficiently. Once fully underway, 
+    60 properties per week for each contractor will be completed. This programme will include the following:</p>
+
+    <ul>
+        <li>Install Isolation Switch (where necessary)</li>
+        <li>Carry out an initial periodic condition test and report</li>
+        <li>Replace consumer units (where necessary only) to provide improved RCD protection and safety for residents</li>
+        <li>Address Category 1, 2, and 3 issues identified by the periodic test</li>
+        <li>Ensure earth bonding is adequate (where necessary)</li>
+        <li>Install earth wiring to lighting circuits (where necessary)</li>
+        <li>Install additional sockets and/or improve the spread of sockets including 2 USB equipped sockets</li>
+        <li>Install hard-wired smoke alarms</li>
+        <li>Install carbon monoxide detectors – risk-based approach</li>
+        <li>Replace bathroom light fittings which are difficult to access to replace bulbs</li>
+        <li>Install external lighting to houses, bungalows & flats (where no communal lighting presently exists)</li>
+        <li>Carry out a final periodic test (if further work is carried out) to verify all electrics are operating correctly</li>
+        <li>Not every dwelling will require all the above work. </li>
+    </ul>
+
+    <p> The list above is a menu of activity which will be undertaken as required.</p>
+
+    <p>Isolation switches allow the dwelling to be worked upon safely by electrical engineers. During the Decent Homes programme, thousands of isolation switches were installed, but we do not have full coverage. The upgrade project will enable us over time to install an isolation switch to every property.</p>
+
+    <p>Consumer unit specifications change regularly, and in certain cases, we are not offering the most ideal protection. This project will ensure consumer units are suitable, up-to-date, and offer the best protection to our residents.</p>
+
+    <p>Category 1 & 2 issues identified from the periodic test will be rectified. Category 3 issues will be rectified based on a cost/benefit analysis.</p>
+
+    <p>Earth bonding is very often disrupted as a result of other works. This project will ensure that earth bonding is maintained and is effective.</p>
+
+    <p>Earth wiring to lighting circuits will be installed, enabling residents to use metal lighting accessories safely. At present, metal accessories have to be removed if found for Health & Safety reasons.</p>
+
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>   Meeting Modern Day Standards - Additional Sockets and/or spread of sockets </summary>
+          <div class="details-accordion-content">
+            
+          <p>Due to the age of the stock many of the dwellings do not have sufficient sockets or
+           a sufficient spread of sockets which meet customer needs and the increasing use of technology in the home
+            which leads to the overuse of trailing cables or socket extension leads. This can lead to Health and Safety 
+            issues. The Decent Homes programme did provide some improvements especially in kitchens but there is still 
+            work to do in many dwellings to improve the socket provision. There is no current programme to cover this work.
+             </p>
+
+<p>Evidence from the teams working on the ground indicates that customer DIY work to electrics is putting residents at risk.
+ For example, the erection of external lighting in response to security concerns, additional sockets not installed by a 
+ qualified installer, surface mounted sockets and trailing cables. </p>
+
+<p>Hard Wired Smoke Alarms - There is around 10,000 hard wired smoke alarms within the stock. 
+All high risk properties such as sheltered, and towers have hard wired smoke alarms with the exception of Deer Park tower 
+blocks. This block needs to be addressed ASAP in response to recommendations from South Yorkshire Fire and Rescue Service. 
+</p>
+
+<p>Additionally properties that are rewired always have hard wired alarms installed at the same time as it is part of the 
+rewire specification. Legislation does not currently insist we install hard wired to all dwellings managed by Housing 
+Services, but it may do in near future as there is national lobbying to government by the Fire Service. Hard wired alarms 
+are part of the building regulations for new build. In the meantime, we have battery smoke alarms within the remaining 
+stock which are checked annually by the gas and district heating servicing programmes. </p>
+
+<p>Carbon Monoxide Detectors - There are very few carbon monoxide detectors within the stock as a whole. Once again,
+ the legislation surrounding carbon monoxide detectors does not insist on their use but increasingly there 
+ is recommendation for their use in general housing stock. Carbon Monoxide detectors are part of the building regulations 
+ for new build. It is recommended that the housing service installs Carbon Monoxide detectors on a risk-based approach at 
+ the same time as other electrical improvement work and / or when hard wired smoke alarms are installed. 
+ There is no current programme. </p>
+
+<p>Replacing bathroom light fittings which are difficult to access – since the new requirement for bathroom light 
+fittings were introduced approx.10 to 12 years ago tenants have had difficulty removing the cover and changing the light 
+bulbs. Some of the fittings are particularly difficult to access. This programme will identify these fittings and replace
+ with a more suitable unit. The unit will be LED. </p>
+
+<p>External Lighting – A report from Birmingham University presented to the Burglary Theme Group in 2014 provided 
+evidence that external lighting can reduce the incidence of burglary and is the most effective of all the crime reduction
+ measures that can be applied to a home including burglar alarms. Including this work as part of an upgrade project will 
+ present tenants with a safer environment in which to live. </p>
+
+
+          </div>
+        </details>
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "10/10/2024", name: "Gee Whitehouse" }
+);
+
+const communalAreasFireSafety = new ContentH(
+  "communalAreasFireSafety",
+  "Communal Areas Fire Safety",
+  "Description",
+  `
+
+<h2>Fire Safety in Communal Areas</h2> 
+
+<p>Under the Regulatory Reform Order (2005), landlords are required to ensure that fire risk assessments are carried out in any shared areas of any properties they manage. Landlords also need to ensure that any fire escape routes and entrances/exits to properties are clear from trip hazards and items which would prevent exit from the building in the event of an emergency. </p>
+
+<h3>As such, please do not place in the communal area, items such as: </h3>
+<ul>
+<li>Chairs and tables</li>
+<li>Bookcases</li>
+<li>Loose carpets</li>
+<li>Curtains, blinds or net curtains</li>
+<li>Plastic flower pots</li>
+<li>Petrol containers and gas bottles</li>
+<li>Motorbikes, mopeds or any other equipment which uses petrol/diesel or gas</li>
+</ul>
+<p>If any of these items, or any other item which is felt to be a fire risk, are left in your communal area we will ask residents to remove them. If they remain they will be removed. </p>
+
+<p>Bicycles, prams, pushchairs and similar items will not normally be permitted to be stored or located within the internal communal parts unless there is an area capable of storage without causing obstruction. </p>
+
+<p>You can have a small doormat if it is rubber backed. Edged and trimmed natural plants in ceramic, earthenware or metal pots, as long as they are not placed on stairs or landings which are the means of escape from the building. </p>
 
 
   
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "10/10/2024", name: "Gee Whitehouse" }
+);
+
+const propertyAge = new ContentH(
+  "propertyAge",
+  "Property Age",
+  "Description",
+  `
+
+<p><a href="https://sccextranet.sharepoint.com/:x:/s/CustomerServiceKnowledgeCouncilHousing/ESm4Dds9S6pAq3ChaiPPEH8BNQtMLmygyOEvErvW2ISK2A?e=Qkq084">property Age</a></p>
+
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "10/10/2024", name: "Gee Whitehouse" }
+);
+
+const tenantsOwnImprovements = new ContentH(
+  "tenantsOwnImprovements",
+  "Tenants Own Improvements",
+  "Description",
+  `
+<details class="accordion">
+      <summary class="accordion-header">
+        <h3>Tenants Own Improvements</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <details class="details-accordion">
+          <summary>  What we will pay compensation for? </summary>
+          <div class="details-accordion-content">
+
+<ul>
+<li>new central heating systems and extra fires, radiators or thermostatic valves</li>
+<li>up to 5 new kitchen units and making the kitchen larger</li>
+<li>new bathroom suites, showers or moving a bathroom upstairs</li>
+<li>new windows to replace metal ones or wooden ones put in before 1946, and double glazing</li>
+<li>garages, car ports, hard standings, porches, conservatories and extensions</li>
+<li>loft insulation, cavity wall insulation and extra electrical fittings</li>
+</ul>
+
+          
+          </div>
+        </details>
+
+
+
+             <details class="details-accordion">
+          <summary>   How much you will get </summary>
+          <div class="details-accordion-content">
+            
+<p>The amount of compensation depends on how long ago you did the work, the quality of the work and its condition. 
+When you claim, someone will visit to see the improvement and we will work out your payment on a sliding scale, 
+taking account of its age and condition.</p>
+
+
+          </div>
+        </details>
+
+                     <details class="details-accordion">
+          <summary>   How to claim </summary>
+          <div class="details-accordion-content">
+            
+<p>Complete the Tenants' Compensation Scheme form and send it to us as soon as you’ve told us you are leaving. 
+If you want to claim for more than 3 improvements, please put the extra details on another form or a blank sheet 
+and attach it to the main claim form. You can also get claim forms from Neighbourhood Offices and First Points. </p>
+
+<p>When you claim, please send all the receipts for the work you have done with your form. 
+This will help us pay you easily and quickly. </p>
+
+<p>You can claim when you give notice to leave the property you have improved. 
+You can’t claim before then or more than 2 months after leaving. </p>
+
+<p>The Repairs team will only discuss the improvements claim after the form in the leaflet has been completed and 
+sent back to us.
+Customer's Email Address</p>
+
+
+
+          </div>
+        </details>
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "10/10/2024", name: "Gee Whitehouse" }
+);
+
+const districtHeating = new ContentH(
+  "districtHeating",
+  "District Heating",
+  "Description",
+  `
+<details class="accordion">
+      <summary class="accordion-header">
+        <h3>District Heating</h3>
+        <h4>Charges</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <details class="details-accordion">
+          <summary>  A Usage Charge - 3.04 pence per Kwh </summary>
+          <div class="details-accordion-content">
+
+
+<p>This is for the heat and hot water used within the property.</p>
+
+      </div>
+        </details>
+
+
+             <details class="details-accordion">
+          <summary>  A weekly Standing Charge - £4.80 per week  </summary>
+          <div class="details-accordion-content">
+            
+
+<p>T£4.80 per week from 1/4/2021 (previously £4.20 per week)</p>
+<p>Tenants pay the Standing Charge via their rent account.</p>
+
+          </div>
+        </details>
+
+                     <details class="details-accordion">
+          <summary>   District Heating (heat and hot water) </summary>
+          <div class="details-accordion-content">
+            
+
+<p>Replacing your current weekly district heating heat and hot water charge of £11.81 per week</p>
+
+
+          </div>
+        </details>
+
+        
+                     <details class="details-accordion">
+          <summary>   Unmetered Heating Surcharge: £7.00 </summary>
+          <div class="details-accordion-content">
+            
+
+<p>The current weekly Unmetered District Heating Surcharge will remain the same (£7.00 per week).</p>
+
+
+          </div>
+        </details>
+
+                             <details class="details-accordion">
+          <summary>   District Heating Unmetered Hot Water - £1.38 </summary>
+          <div class="details-accordion-content">
+            
+
+<p>Replacing your current weekly District Heating Unmetered Hot Water charge of 69p per week.</p>
+
+
+          </div>
+        </details>
+
+                                     <details class="details-accordion">
+          <summary>   Sheltered Service Charge: £11.03 </summary>
+          <div class="details-accordion-content">
+            
+
+<p>Replacing your current weekly Sheltered Service charge of £10.38 per week 
+(a 65p increase per week towards Communal Area Heating).</p>
+
+
+          </div>
+        </details>
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "10/10/2024", name: "Gee Whitehouse" }
+);
+
+const emergencyCredit = new ContentH(
+  "emergencyCredit",
+  "Emergency Credit",
+  "Description",
+  `
+
+<p>"The meter has an emergency credit facility. This allows the customer to ‘borrow’ credit up to £10.00 which will 
+reconnect the heat and hot water supply. This is simply a loan, and must be paid back in full before 
+the system can be used again. 
+The emergency credit facility becomes available when the meters credit value reaches £1.00 or less. 
+To activate, press the blue button marked Press For Em Credit.</p>
+
+<p>PLEASE NOTE: that this should only be used in emergency situations where the customer cannot top-up
+ before the remaining credit is due to expire."</p>
+
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "10/10/2024", name: "Gee Whitehouse" }
+);
+
+const homeImprovementRequests = new ContentH(
+  "homeImprovementRequests",
+  "Home Improvement Requests",
+  "Description",
+  `
+
+<p>Please Call the RPIT on 0114 2052615 for permission requests to carry out work/home 
+improvements to the District Heating Network i.e. replacing radiators. Required 
+maintenance to resolve unauthorised work to the District Hearting network will be invoiced to the tenant/homeowner.</p>
+
+
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "10/10/2024", name: "Gee Whitehouse" }
+);
+
+const homeownerDisconnection = new ContentH(
+  "homeownerDisconnection",
+  "Homeowner Disconnection",
+  "Description",
+  `
+
+<p>Please call the Home Ownership and Revenues Unit on 27 35595 for further 
+information on homeowner requests regarding disconnection from the District Heating network. 
+Disconnection charges apply as referenced in the property’s sale conveyance. 
+SCC properties will not be disconnected from the District Heating network.</p>
+
+
+  
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "10/10/2024", name: "Gee Whitehouse" }
+);
+
+const noHeatNoWater = new ContentH(
+  "noHeatNoWater",
+  "No Heat No Water",
+  "Description",
+  `
+
+<p>To access a supply of heat and hot water please follow the simple steps below: </p>
+
+<ol> 
+<li>Does the property have an electricity supply? They will not have access to heat and hot water without it. The customer will need to Dial 105 or visit www.findmysupplier.energy.co.uk to find their current supplier. </li>
+
+<li> The District Heating Meter location may vary but is usually located in the property airing cupboard. Does The Meters Home Screen say ON in the top right corner? Is your heating programmer turned on? </li>
+
+<li> To activate an emergency credit, press the blue button, marked ‘Press For Em Credit’ as instructed by the meters home screen. This will allow the tenant to ‘borrow’ credit up to £10.00 which will connect your heat and hot water supply for a short time. This is simply a loan and will need to be repaid on receipt of the prepayment information/number which will be with them shortly. </li>
+
+<li> If the Meters screen in blank or shows something similar to ‘D bug’ then the customer can reboot the G6 unit by pressing the blue and orange button together for 10 seconds. </li>
+<li>If the reboot is unsuccessful or for any other repair, please call the Repairs line on 27 35555</li>
+</ol>
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "10/10/2024", name: "Gee Whitehouse" }
+);
+
+const payment = new ContentH(
+  "noHeatNoWater",
+  "No Heat No Water",
+  "Description",
+  `
+
+<p> New tenants will initially be issued with a Pay As You Go card, however they will be supplied with a 
+Budget Plan Direct Debit mandate in their new tenancy welcome information pack
+ and in addition a copy of the Budget Plan information and Direct Debit mandate will be posted separately</p>
+
+<details class="accordion">
+      <summary class="accordion-header">
+        <h3>Payment</h3>
+        <h4>Charges</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <details class="details-accordion">
+          <summary>  Pay As You Go </summary>
+          <div class="details-accordion-content">
+
+
+<p>New tenants will initially be issued with a Pay As You Go card, however they will be supplied with a 
+Budget Plan Direct Debit mandate in their new tenancy welcome information pack and 
+in addition a copy of the Budget Plan information and Direct Debit mandate will be posted separately</p>
+
+      </div>
+        </details>
+
+
+             <details class="details-accordion">
+          <summary>  Budget Plan Scheme </summary>
+          <div class="details-accordion-content">
+            
+
+<p>This is a prepayment method which allows the customer to pay for heating by making set monthly Direct Debit instalments 
+based on anticipated usage. Monthly instalments would then be periodically adjusted to reflect the actual heat 
+and hot water used in the property. 
+Please call Home Ownership and Revenues Unit on 0114 27 35595</p>
+
+
+          </div>
+        </details>
+
+                     <details class="details-accordion">
+          <summary>  Methods of Payment </summary>
+          <div class="details-accordion-content">
+            
+
+<p>New tenants will initially be issued with Pay As You Go information/number, 
+however they will be supplied with a Budget Plan Direct Debit mandate in their new tenancy welcome information pack and 
+in addition a copy of the Budget Plan information and Direct Debit mandate will be posted separately. 
+If the customer wishes to amend the method by which they pay for the heat they use, 
+please call Home Ownership and Revenues Unit on 0114 27 35595</p>
+
+
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>  Repace Pay as you go Card </summary>
+          <div class="details-accordion-content">
+            
+
+<p>The customer must call Switch 2 on 03333212010.</p>
+
+
+          </div>
+        </details>
+
+                <details class="details-accordion">
+          <summary>  No Credit </summary>
+          <div class="details-accordion-content">
+            
+
+<p>The meter has an emergency credit facility. 
+This allows the customer to ‘borrow’ credit up to £10.00 which will reconnect the heat and hot water supply. 
+This is simply a loan and must be paid back in full before the system can be used again. 
+The emergency credit facility becomes available when the meters credit value reaches £1.00 or less. 
+To activate, press the blue button marked
+If the customer has used all the emergency credit and is still unable to afford to top-up, 
+please call the Home Ownership and Revenues Unit on 0114 27 35595.</p>
+
+
+          </div>
+        </details>
+
+                        <details class="details-accordion">
+          <summary>  Money Saving Advice </summary>
+          <div class="details-accordion-content">
+            
+
+<p>Please call Home Ownership and Revenues Unit on 0114 2735595.</p>
+
+
+          </div>
+        </details>
+
+        
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  { type: "Request", keywords: [], categories: ["Housing"] },
+  { date: "10/10/2024", name: "Gee Whitehouse" }
+);
+
+const refunds = new ContentH(
+  "refunds",
+  "Refunds",
+  "Description",
+  `
+
+<p>Pay As You Go refunds are not made unless the tenant has vacated the property.<br>
+Once their rent account has been closed, customers are entitled to a full refund as long as their remaining 
+Pay As You Go balance is £10.00 or greater please ask the tenant to call Home Ownership 
+and Revenues Unit on 0114 27 35595 once their rent account has been closed. </p>
+
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -2188,6 +2901,15 @@ const assetManagementAndRepairs = new MenuH(
     communalAreas,
     doorEntrySystems,
     emergencyRepairs,
+    loststolenkeys,
+    programmedWorks,
+    communalAreasFireSafety,
+    tenantsOwnImprovements,
+    districtHeating,
+    emergencyCredit,
+    homeImprovementRequests,
+    homeownerDisconnection,
+    payment,
   ]
 );
 
