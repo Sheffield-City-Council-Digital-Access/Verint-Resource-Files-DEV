@@ -842,11 +842,37 @@ const insurance = new ContentH(
         <div class="accordion-icon"></div>
           </summary>
             <div class="accordion-content"> 
-        <p>
-        The weekly cost depends upon how much cover is required: - Table detailed in article.
-        </p> 
-          </div>
-          </details>
+  <p> The weekly cost depends upon how much cover is required:
+</p>
+<table style="width:60%">  
+ <tr style="background-color: black; color: white;">
+<th>Cost</th><th>Cover</th> <th>Cost</th>	 <th>Cover</th>	 <th>Cost</th>	 <th>Cover</th>	 <th>Cost</th>	 <th>Cover</th>	 <th>Cost</th>	 <th>Cover</th>
+</tr>
+<tr>
+<td bgcolor="#ffccff">£6,000 (over 60's only)</td>	  <td bgcolor="#ffccff">£0.98</td>   <td bgcolor="#ffffcc">£13,000</td>	  <td bgcolor="#ffffcc">£2.11</td>	  <td bgcolor=#cce5ff>£20,000</td>	  <td bgcolor=#cce5ff>£3.25</td>	  <td bgcolor="#ffffcc">£27,000</td>	  <td bgcolor="#ffffcc">£4.39</td>	  <td bgcolor=#cce5ff>£34,000</td>	  <td bgcolor=#cce5ff>£5.53</td><td></td>
+</tr>
+<tr>
+<td bgcolor="#ffccff">£7,000 (over 60's only)</td>	  <td bgcolor="#ffccff">£1.14</td>	  <td bgcolor="#ffffcc">£14,000</td>	  <td bgcolor="#ffffcc">£2.28</td>	  <td bgcolor=#cce5ff>£21,000</td>	  <td bgcolor=#cce5ff>£3.41</td>	  <td bgcolor="#ffffcc">£28,000</td>	  <td bgcolor="#ffffcc">£4.55</td>	  <td bgcolor=#cce5ff>£35,000</td>	  <td bgcolor=#cce5ff>£5.69</td><td></td>
+</tr>
+<tr>
+<td bgcolor="#ffccff">£8,000 (over 60's only)</td>	<td bgcolor="#ffccff">£1.30</td>	 <td bgcolor="#ffffcc">£15,000</td>	 <td bgcolor="#ffffcc">£2.44</td>	 <td bgcolor=#cce5ff>£22,000</td>	 <td bgcolor=#cce5ff>£3.58</td>	 <td bgcolor="#ffffcc">£29,000</td>	 <td bgcolor="#ffffcc">£4.71</td>	 <td bgcolor=#cce5ff>£36,000</td>	 <td bgcolor=#cce5ff>£5.85</td><td></td>
+</tr>
+<tr>
+<td bgcolor=#cce5ff>£9,000</td>	<td bgcolor=#cce5ff>£1.46</td>	 <td bgcolor="#ffffcc">£16,000</td>	<td bgcolor="#ffffcc">£2.60</td>	 <td bgcolor=#cce5ff>£23,000</td>	 <td bgcolor=#cce5ff>£3.74</td>	 <td bgcolor="#ffffcc">£30,000</td>	 <td bgcolor="#ffffcc">£4.88</td>	 <td bgcolor=#cce5ff>£37,000</td>	 <td bgcolor=#cce5ff>£6.01</td>
+<td></td>     </tr>
+<tr>
+<td bgcolor=#cce5ff>£10,000</td>	 <td bgcolor=#cce5ff>£1.63</td>	 <td bgcolor="#ffffcc">£17,000</td>	 <td bgcolor="#ffffcc">£2.76</td>	 <td bgcolor=#cce5ff>£24,000</td>	 <td bgcolor=#cce5ff>£3.90</td>	 <td bgcolor="#ffffcc">£31,000</td>	<td bgcolor="#ffffcc">£5.04</td>	 <td bgcolor=#cce5ff>£38,000</td>	 <td bgcolor=#cce5ff>£6.18</td>
+<td></td>      </tr>
+<tr>
+<td bgcolor=#cce5ff>£11,000</td>	 <td bgcolor=#cce5ff>£1.79</td>	 <td bgcolor="#ffffcc">£18,000</td>	 <td bgcolor="#ffffcc">£2.93</td>	 <td bgcolor=#cce5ff>£25,000</td>	 <td bgcolor=#cce5ff>£4.06</td>	 <td bgcolor="#ffffcc">£32,000</td>	 <td bgcolor="#ffffcc">£5.20</td>	 <td bgcolor=#cce5ff>£39,000</td>	 <td bgcolor=#cce5ff>£6.34</td>
+<td></td>     </tr>
+<tr>
+<td bgcolor=#cce5ff>£12,000</td>	 <td bgcolor=#cce5ff>£1.95</td>	 <td bgcolor="#ffffcc">£19,000</td>	 <td bgcolor="#ffffcc">£3.09</td>	 <td bgcolor=#cce5ff>£26,000</td>	 <td bgcolor=#cce5ff>£4.23</td>	 <td bgcolor="#ffffcc">£33,000</td>	 <td bgcolor="#ffffcc">£5.36</td>	 <td bgcolor=#cce5ff>£40,000</td>	 <td bgcolor=#cce5ff>£6.50</td>
+<td></td>   </tr>
+</table> 
+</div>
+</details>  
+
   `,
   { buttonLabel: "Insurance", formName: "Rents" },
   { typeKey: "rents_information_provided" },
@@ -854,6 +880,149 @@ const insurance = new ContentH(
   { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
+
+const onlineServices = new ContentH(
+  "onlineServices",
+  "Online Services",
+  "Information about online Rents Services,",
+  `
+  <p>
+  You can now check your own balance and rent account online by logging onto <a href="https://www.sheffield.gov.uk/home/council-housing/check-my-rent-balance">this page</a>.
+  </p>
+  <p>
+  There is also a link on this page to the GRO site for users who wish to use this.
+  </p>
+  <p>
+  You can also register for SMS alerts at <a href="https://www.sheffield.gov.uk/utilities/Forms/housing/register-rent-text">this link</a>.
+  </p> 
+  <p>
+  You only need your rent reference and surname to use these services.
+  </p>
+  <p>
+  This will hopefully be increasing as per Customer engagement project and Web Project.
+  </p>
+
+  `,
+  { buttonLabel: "Online Services", formName: "Rents" },
+  { typeKey: "rents_information_provided" },
+  { typeKey: "rents_transfered_to_service" },
+  { type: "Online Services", keywords: ["Rent"], categories: ["Housing"] },
+  { date: "16/10/2024", name: "Shahzad Athar" }
+);
+
+const references = new ContentH(
+  "references",
+  "References",
+  "Information about Rents References,",
+  `
+  <p>IMFIT (Rents) can provide a financial reference for you. Your Neighbourhood Support Team can provide a Tenancy Reference.
+  </p>
+  <p>
+  Both of these may be subject to charges before the reference is returned.
+  </p>
+  <p>
+  If this is for a mortgage company or a private landlord, the company needs to put this request in writing. There is a charge for this of £60, which must be paid to IMFIT before the reference is returned. The fee can be paid by debit/credit card or by BACS. 
+  If they want to pay this, transfer the call to IMFIT - this is NOT paid to the rent account.
+  </p>
+  <p>
+  Reference requests should be sent to:
+  </p> 
+
+  <address> 
+  Sheffield Council Housing Service<br> 
+  PO Box 5967<br>
+  Sheffield<br>
+  S2 9GH 
+  </address> 
+  <p>
+  For Social Landlords (Housing Associations), these also need to be put in writing but there is no charge.
+  </p>
+  <p>
+  Social Landlords can also email details of their request to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> if they prefer to send an email.
+  </p> 
+
+  `,
+  { buttonLabel: "References", formName: "Rents" },
+  { typeKey: "rents_information_provided" },
+  { typeKey: "rents_transfered_to_service" },
+  { type: "References", keywords: ["Rent"], categories: ["Housing"] },
+  { date: "16/10/2024", name: "Shahzad Athar" }
+);
+
+const rentVariation = new ContentH(
+  "rentVariation",
+  "Rent Variation",
+  "",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ,",
+  `
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Is your Rent Increasing?</h3>
+        <div class="accordion-icon"></div>
+          </summary>
+            <div class="accordion-content">
+          <p> 
+          The annual changes to the rent charged are agreed by the Council Cabinet every January. 
+          The general rent increase agreed from 1st April 2024 is <strong>7.7%</strong>.
+          </p>
+          <p>
+          You can check an outline of the changes to rents and charges at Sheffield city counicl website
+          by visiting the following links: 
+          </p> 
+          <p>
+          <a href="/council-housing/how-rent-is-calculated">How we calculate your rent</a> 
+          </p>
+          <p>
+          <a href="/council-housing/paying-your-rent" data-drupal-link-system-path="node/3140">Paying your rent</a>
+          </p>
+            </div>
+              </details>
+
+   <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Direct Debit </h3>
+         <div class="accordion-icon"></div>
+          </summary>
+            <div class="accordion-content">
+          <p> 
+          Anybody applying to pay by Direct Debit should be dealt with as normal, in the same way, 
+          during this rent change period.
+          </p>
+          <p>
+          Any queries on Direct Debits need to be directed to the Income Management and Financial 
+          Inclusion Team.
+          </p>
+            </div>
+              </details>
+
+   <details class="accordion">
+    <summary class="accordion-header">
+      <h3>OHMS Rent System </h3>
+        <div class="accordion-icon"></div>
+          </summary>
+            <div class="accordion-content">
+          <p>
+          Any OHMS Rent system issues can be reported through the IT Service Desk, Tel: 0114 2734476.
+          </p>
+          <p>The rent-free weeks this year will be weeks commencing:</p>
+          <ul>
+          <li>Monday 16th December 2024</li> 
+          <li>Monday 23rd December 2024</li>
+          </ul> 
+            </div>
+              </details>          
+
+
+
+
+
+  `,
+  { buttonLabel: "Rent Varitaion", formName: "Rents" },
+  { typeKey: "rents_information_provided" },
+  { typeKey: "rents_transfered_to_service" },
+  { type: "Rent Varitaion", keywords: ["Rent"], categories: ["Housing"] },
+  { date: "16/10/2024", name: "Shahzad Athar" }
+);
+
 
 const rents = new MenuH(
   "rents",
@@ -863,6 +1032,9 @@ const rents = new MenuH(
     arrearsorDebt,
     balanceEnquiry,
     insurance,
+    onlineServices,
+    references,
+    rentVariation,
     
   ]
 );
