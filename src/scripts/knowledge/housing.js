@@ -178,8 +178,8 @@ const furnishedAccommodation = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "",
     keywords: [],
@@ -322,8 +322,8 @@ const olderPersonsIndependentLiving = new ContentH(
     </ul>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "",
     keywords: [],
@@ -398,8 +398,8 @@ const extraCareHousing = new ContentH(
     </ul>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "",
     keywords: [],
@@ -468,8 +468,8 @@ const gypsyAndTravellers = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "",
     keywords: [],
@@ -669,8 +669,8 @@ const bidding = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   { type: "Request", keywords: [], categories: ["Housing", "Rehousing"] },
   { date: "14/10/2024", name: "Abishai Devarapalli" }
 );
@@ -749,8 +749,8 @@ const eligibility = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   { type: "Request", keywords: [], categories: ["Housing", "Rehousing"] },
   { date: "14/10/2024", name: "Abishai Devarapalli" }
 );
@@ -763,8 +763,8 @@ const housingAssociations = new ContentH(
     
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   { type: "Request", keywords: [], categories: ["Housing", "Rehousing"] },
   { date: "14/10/2024", name: "Abishai Devarapalli" }
 );
@@ -1016,8 +1016,8 @@ const applicationChanges = new ContentH(
     </details>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   { type: "Apply", keywords: [], categories: ["Housing", "Rehousing"] },
   { date: "14/10/2024", name: "Omily Parkin" }
 );
@@ -1048,8 +1048,8 @@ const applyForRehousing = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Request",
     keywords: [],
@@ -1113,8 +1113,8 @@ const communalCupboard = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Information",
     keywords: [],
@@ -1164,8 +1164,8 @@ const communalFireSafety = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Information",
     keywords: [],
