@@ -181,7 +181,7 @@ const furnishedAccommodation = new ContentH(
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   {
-    type: "",
+    type: "Information",
     keywords: [],
     categories: ["Housing", "Sheltered and Supported"],
   },
@@ -1289,9 +1289,10 @@ and communal/shared repairs to the block in which they live.</p>
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -1456,9 +1457,10 @@ If we give you permission, you should carry out the work within 90 days and let 
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+   
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -1519,9 +1521,10 @@ const otherAdaptationRequest = new ContentH(
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+ 
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -1804,9 +1807,10 @@ The letter explains that Rilmac Insulation has been appointed as a contractor an
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -1841,9 +1845,9 @@ const communalAerials = new ContentH(
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -1902,9 +1906,9 @@ const communalAreas = new ContentH(
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2025,9 +2029,9 @@ const doorEntrySystems = new ContentH(
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2087,9 +2091,9 @@ const emergencyRepairs = new ContentH(
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2163,9 +2167,9 @@ const carbonmonoxide = new ContentH(
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2221,9 +2225,9 @@ List of Area Offices:
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2374,9 +2378,9 @@ evidence that external lighting can reduce the incidence of burglary and is the 
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2410,9 +2414,9 @@ const communalAreasFireSafety = new ContentH(
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2427,9 +2431,9 @@ const propertyAge = new ContentH(
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2500,9 +2504,9 @@ Customer's Email Address</p>
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2588,9 +2592,9 @@ const districtHeating = new ContentH(
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2612,9 +2616,9 @@ To activate, press the blue button marked Press For Em Credit.</p>
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2632,9 +2636,9 @@ maintenance to resolve unauthorised work to the District Hearting network will b
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2653,9 +2657,9 @@ SCC properties will not be disconnected from the District Heating network.</p>
   
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2680,9 +2684,9 @@ const noHeatNoWater = new ContentH(
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2788,9 +2792,9 @@ please call the Home Ownership and Revenues Unit on 0114 27 35595.</p>
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2808,9 +2812,9 @@ and Revenues Unit on 0114 27 35595 once their rent account has been closed. </p>
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2889,6 +2893,25 @@ const adaptations = new MenuH("adaptations", "Adaptations", "Desc tbc", [
   otherAdaptationRequest,
 ]);
 
+const generalCouncilHousing = new ContentH(
+  "generalCouncilHousing",
+  "General Council Housing",
+  "Description",
+  `
+
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [],
+    categories: ["Housing", "Estates and Environments"],
+  },
+  { date: "09/10/2024", name: "Elliott Griffiths" }
+);
+
 const assetManagementAndRepairs = new MenuH(
   "assetManagementAndRepairs",
   "Asset Management And Repairs",
@@ -2910,6 +2933,7 @@ const assetManagementAndRepairs = new MenuH(
     homeImprovementRequests,
     homeownerDisconnection,
     payment,
+    refunds,
   ]
 );
 
