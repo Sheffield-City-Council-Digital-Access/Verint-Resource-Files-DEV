@@ -1288,7 +1288,7 @@ and communal/shared repairs to the block in which they live.</p>
   
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
 
@@ -1456,7 +1456,7 @@ If we give you permission, you should carry out the work within 90 days and let 
        
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
    
@@ -1520,7 +1520,7 @@ const otherAdaptationRequest = new ContentH(
 
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
  
@@ -1806,7 +1806,7 @@ The letter explains that Rilmac Insulation has been appointed as a contractor an
 
 
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
 
@@ -1844,7 +1844,7 @@ const communalAerials = new ContentH(
 
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -1905,7 +1905,7 @@ const communalAreas = new ContentH(
 
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2028,7 +2028,7 @@ const doorEntrySystems = new ContentH(
         </details>
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2090,7 +2090,7 @@ const emergencyRepairs = new ContentH(
         </details>
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2166,7 +2166,7 @@ const carbonmonoxide = new ContentH(
         </details>
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2224,7 +2224,7 @@ List of Area Offices:
 
 
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2377,7 +2377,7 @@ evidence that external lighting can reduce the incidence of burglary and is the 
         </details>
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2413,7 +2413,7 @@ const communalAreasFireSafety = new ContentH(
 
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2430,7 +2430,7 @@ const propertyAge = new ContentH(
 
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2503,7 +2503,7 @@ Customer's Email Address</p>
         </details>
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2591,7 +2591,7 @@ const districtHeating = new ContentH(
         </details>
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2615,7 +2615,7 @@ To activate, press the blue button marked Press For Em Credit.</p>
 
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2635,7 +2635,7 @@ maintenance to resolve unauthorised work to the District Hearting network will b
 
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2656,7 +2656,7 @@ SCC properties will not be disconnected from the District Heating network.</p>
 
   
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2683,7 +2683,7 @@ const noHeatNoWater = new ContentH(
 </ol>
 
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2791,7 +2791,7 @@ please call the Home Ownership and Revenues Unit on 0114 27 35595.</p>
         
 
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
@@ -2811,12 +2811,54 @@ and Revenues Unit on 0114 27 35595 once their rent account has been closed. </p>
 
 
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: [], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
+
+
+const generalCouncilHousing = new ContentH(
+  "generalCouncilHousing",
+  "General Council Housing",
+  "Description",
+  `
+<h3>Area Office Information</h3>
+<p><a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices">Neighvourhood Offices</a></p>
+
+<h3>Bogus Callers</h3>
+<p>All Council Housing Service staff, surveyors, and contractors carry identification cards at all times. It is important that you always ask to see identification before you let anyone into your home. If you have any doubts about a caller’s identity, do not let them in.</p>
+
+<p>Council Officers NEVER ask a household for cash on the doorstep. You should always be alert to protect yourself against bogus callers. If you are suspicious about any caller’s identity, you should call the police immediately. </p>
+
+<p>Give the option to search for team contact details and to report by case (but remind to phone the police).</p>
+
+<h3>Housing Service Contact Details</h3>
+<p>You can write to us at: <br>
+Sheffield Council Housing Service <br>
+PO Box 5967 <br>
+Sheffield <br>
+S2 9GH </p>
+
+<h3>Telephone Directory</h3>
+
+<p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx">Telephone Directory</a></p>
+
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [],
+    categories: ["Housing", "Estates and Environments"],
+  },
+  { date: "09/10/2024", name: "Elliott Griffiths" }
+);
+
+
 
 const estatesAndEnvironments = new MenuH(
   "estatesAndEnvironments",
@@ -2893,24 +2935,7 @@ const adaptations = new MenuH("adaptations", "Adaptations", "Desc tbc", [
   otherAdaptationRequest,
 ]);
 
-const generalCouncilHousing = new ContentH(
-  "generalCouncilHousing",
-  "General Council Housing",
-  "Description",
-  `
 
-
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  {
-    type: "Information",
-    keywords: [],
-    categories: ["Housing", "Estates and Environments"],
-  },
-  { date: "09/10/2024", name: "Elliott Griffiths" }
-);
 
 const assetManagementAndRepairs = new MenuH(
   "assetManagementAndRepairs",
@@ -2972,5 +2997,5 @@ const housing = new ServiceH(
   "housing",
   "Housing",
   "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-  [subjectExample1, subjectExample2, estatesAndEnvironments]
+  [subjectExample1, estatesAndEnvironments, generalCouncilHousing,assetManagementAndRepairs]
 );
