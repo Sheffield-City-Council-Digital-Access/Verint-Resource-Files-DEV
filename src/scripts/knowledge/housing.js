@@ -182,7 +182,7 @@ const furnishedAccommodation = new ContentH(
   { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Information",
-    keywords: [],
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Sheltered and Supported"],
   },
   { date: "15/10/2024", name: "Joe Nixon" }
@@ -326,7 +326,7 @@ const olderPersonsIndependentLiving = new ContentH(
   { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "",
-    keywords: [],
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Sheltered and Supported"],
   },
   { date: "15/10/2024", name: "Joe Nixon" }
@@ -402,7 +402,7 @@ const extraCareHousing = new ContentH(
   { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "",
-    keywords: [],
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Sheltered and Supported"],
   },
   { date: "15/10/2024", name: "Joe Nixon" }
@@ -472,7 +472,7 @@ const gypsyAndTravellers = new ContentH(
   { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "",
-    keywords: [],
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Sheltered and Supported"],
   },
   { date: "15/10/2024", name: "Joe Nixon" }
@@ -671,7 +671,7 @@ const bidding = new ContentH(
   { buttonLabel: "", formName: "" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Request", keywords: [], categories: ["Housing", "Rehousing"] },
+  { type: "Request", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing", "Rehousing"] },
   { date: "14/10/2024", name: "Abishai Devarapalli" }
 );
 
@@ -751,7 +751,7 @@ const eligibility = new ContentH(
   { buttonLabel: "", formName: "" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Request", keywords: [], categories: ["Housing", "Rehousing"] },
+  { type: "Request", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing", "Rehousing"] },
   { date: "14/10/2024", name: "Abishai Devarapalli" }
 );
 
@@ -765,7 +765,7 @@ const housingAssociations = new ContentH(
   { buttonLabel: "", formName: "" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Request", keywords: [], categories: ["Housing", "Rehousing"] },
+  { type: "Request", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing", "Rehousing"] },
   { date: "14/10/2024", name: "Abishai Devarapalli" }
 );
 
@@ -1018,7 +1018,7 @@ const applicationChanges = new ContentH(
   { buttonLabel: "", formName: "" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Apply", keywords: [], categories: ["Housing", "Rehousing"] },
+  { type: "Apply", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing", "Rehousing"] },
   { date: "14/10/2024", name: "Omily Parkin" }
 );
 
@@ -1047,12 +1047,12 @@ const applyForRehousing = new ContentH(
       First Point before your application will be validated.
     </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Request",
-    keywords: [],
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Rehousing"],
   },
   { date: "23/09/2024", name: "Shahzad Athar" }
@@ -1090,7 +1090,7 @@ const blockedBinChutes = new ContentH(
   { typeKey: "" },
   {
     type: "Report",
-    keywords: [],
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Estates and Environments"],
   },
   { date: "14/10/2024", name: "Omily Parkin" }
@@ -1117,7 +1117,7 @@ const communalCupboard = new ContentH(
   { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Information",
-    keywords: [],
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Estates and Environments"],
   },
   { date: "14/10/2024", name: "Omily Parkin" }
@@ -1168,7 +1168,7 @@ const communalFireSafety = new ContentH(
   { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Information",
-    keywords: [],
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Estates and Environments"],
   },
   { date: "14/10/2024", name: "Omily Parkin" }
@@ -1224,11 +1224,11 @@ const gardenPledgeScheme = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Information",
-    keywords: [],
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Estates and Environments"],
   },
   { date: "09/10/2024", name: "Elliott Griffiths" }
@@ -1254,12 +1254,12 @@ const fencesCouncilHousing = new ContentH(
       hazard.
     </p>
   `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { buttonLabel: "Report Housing Fences", formName: "hou_sustainment_fence" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Information",
-    keywords: [],
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Estates and Environments"],
   },
   { date: "09/10/2024", name: "Elliott Griffiths" }
@@ -1292,7 +1292,7 @@ and communal/shared repairs to the block in which they live.</p>
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
 
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -1456,11 +1456,11 @@ If we give you permission, you should carry out the work within 90 days and let 
        
   
   `,
-  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+  { buttonLabel: "Report Housing Adaptations ", formName: "hou_adaptations" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
    
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -1524,7 +1524,7 @@ const otherAdaptationRequest = new ContentH(
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
  
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -1810,7 +1810,7 @@ The letter explains that Rilmac Insulation has been appointed as a contractor an
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
 
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -1847,7 +1847,7 @@ const communalAerials = new ContentH(
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -1908,7 +1908,7 @@ const communalAreas = new ContentH(
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2031,7 +2031,7 @@ const doorEntrySystems = new ContentH(
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2093,7 +2093,7 @@ const emergencyRepairs = new ContentH(
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2169,7 +2169,7 @@ const carbonmonoxide = new ContentH(
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2227,7 +2227,7 @@ List of Area Offices:
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2380,7 +2380,7 @@ evidence that external lighting can reduce the incidence of burglary and is the 
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2416,7 +2416,7 @@ const communalAreasFireSafety = new ContentH(
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2433,7 +2433,7 @@ const propertyAge = new ContentH(
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2506,7 +2506,7 @@ Customer's Email Address</p>
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2594,7 +2594,7 @@ const districtHeating = new ContentH(
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2618,7 +2618,7 @@ To activate, press the blue button marked Press For Em Credit.</p>
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2638,7 +2638,7 @@ maintenance to resolve unauthorised work to the District Hearting network will b
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2659,7 +2659,7 @@ SCC properties will not be disconnected from the District Heating network.</p>
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2686,7 +2686,7 @@ const noHeatNoWater = new ContentH(
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2794,7 +2794,7 @@ please call the Home Ownership and Revenues Unit on 0114 27 35595.</p>
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2811,10 +2811,10 @@ and Revenues Unit on 0114 27 35595 once their rent account has been closed. </p>
 
 
   `,
-  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+  { buttonLabel: "Report Rents Refunds ", formName: "hou_rents_refunds" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "10/10/2024", name: "Gee Whitehouse" }
 );
 
@@ -2847,30 +2847,15 @@ S2 9GH </p>
 
 
   `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Information",
-    keywords: [],
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Estates and Environments"],
   },
   { date: "09/10/2024", name: "Elliott Griffiths" }
-);
-
-
-
-const estatesAndEnvironments = new MenuH(
-  "estatesAndEnvironments",
-  "Estates and Environments",
-  "Bin chutes, communal cupboard, fences, firesafety and garden maintenance",
-  [
-    fencesCouncilHousing,
-    gardenPledgeScheme,
-    blockedBinChutes,
-    communalCupboard,
-    communalFireSafety,
-  ]
 );
 
 const leaseholderInformation = new ContentH(
@@ -2923,12 +2908,29 @@ const leaseholderInformation = new ContentH(
       You will therefore be responsible for the behaviour of your sub-tenant(s). This would include, for example, ensuring that they do not cause a nuisance to neighbours.
     </p>
   `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  { type: "Information", keywords: [], categories: ["Housing"] },
+  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
   { date: "11/10/2024", name: "Abishai Devarapalli" }
 );
+
+
+
+const estatesAndEnvironments = new MenuH(
+  "estatesAndEnvironments",
+  "Estates and Environments",
+  "Bin chutes, communal cupboard, fences, firesafety and garden maintenance",
+  [
+    fencesCouncilHousing,
+    gardenPledgeScheme,
+    blockedBinChutes,
+    communalCupboard,
+    communalFireSafety,
+  ]
+);
+
+
 
 const adaptations = new MenuH("adaptations", "Adaptations", "Desc tbc", [
   chaseProgressOfAdaptation,
