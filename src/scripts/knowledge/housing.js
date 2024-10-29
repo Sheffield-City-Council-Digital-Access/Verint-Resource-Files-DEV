@@ -1205,9 +1205,7 @@ const gardenPledgeScheme = new ContentH(
     <p>
       List of Gardening Services:
       <a
-        href="G:\CEX\Corp Res\CS-Gen\Contact Centre\CRM\Spreadsheets\Estates\Garden\Alternative Garden Services List.xls"
-        >Alternative Garden Services List</a
-      >
+        href="G:\CEX\Corp Res\CS-Gen\Contact Centre\CRM\Spreadsheets\Estates\Garden\Alternative Garden Services List.xls"target="_blank">Alternative Garden Services List</a>
       - (This list can be provided to customers (emailed, posted, etc.))
     </p>
     <p>
@@ -1827,7 +1825,7 @@ const communalAerials = new ContentH(
   </summary>
   <div class="accordion-content">
     
-<p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Communal%20Aerials.aspx">Communal Aerials List</a></p> 
+<p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Communal%20Aerials.aspx"target="_blank">Communal Aerials List</a></p> 
 
   </div>
 </details>
@@ -1863,7 +1861,7 @@ const communalAreas = new ContentH(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-      <p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx">Blocked Bin Chutes</a></p>  
+      <p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx"target="_blank">Blocked Bin Chutes</a></p>  
   </div>
 </details>
 
@@ -2426,7 +2424,7 @@ const propertyAge = new ContentH(
   "Description",
   `
 
-<p><a href="https://sccextranet.sharepoint.com/:x:/s/CustomerServiceKnowledgeCouncilHousing/ESm4Dds9S6pAq3ChaiPPEH8BNQtMLmygyOEvErvW2ISK2A?e=Qkq084">property Age</a></p>
+<p><a href="https://sccextranet.sharepoint.com/:x:/s/CustomerServiceKnowledgeCouncilHousing/ESm4Dds9S6pAq3ChaiPPEH8BNQtMLmygyOEvErvW2ISK2A?e=Qkq084"target="_blank">property Age</a></p>
 
   
   `,
@@ -2846,7 +2844,7 @@ S2 9GH
 
 <h3>Telephone Directory</h3>
 
-<p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx">Telephone Directory</a></p>
+<p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx"target="_blank">Telephone Directory</a></p>
 
 
   `,
