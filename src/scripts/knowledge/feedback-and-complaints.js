@@ -445,18 +445,6 @@ Within 5 working days of receipt of the complaint.
   { date: "25/10/2024", name: "George Whitehouse" }
 );
 
-const feedbackAndComplaintsMenu = new MenuH(
-  "feedbackAndComplaintsMenu",
-  "Feedback and Complaints",
-  "Description",
-  [
-    complaints,
-    childrensSocialCareComplaints,
-    adultsocialcarecomplaints,
-    corporateComplaintsProcedure,
-  ]
-);
-
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -464,5 +452,5 @@ const feedbackAndComplaints = new ServiceFaC(
   "feedbackAndComplaints",
   "Feedback and Complaints",
   "Description",
-    [complaints, childrensSocialCareComplaints, adultsocialcarecomplaints, corporateComplaintsProcedure, feedbackAndComplaintsMenu]
+    [complaints, childrensSocialCareComplaints, adultsocialcarecomplaints, corporateComplaintsProcedure]
 );
