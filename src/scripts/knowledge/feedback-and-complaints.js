@@ -57,7 +57,7 @@ class FormBDMaCV2 extends CoreBDMaCV2 {
 
 //-----------------Re-register a birth tile-------
 const reRegisterABirth2 = new ContentBDMaCV2(
-    "reRegisterABirth",
+    "reRegisterABirth2",
     "Re-register a Birth",
     "Desc t22222222222bc",
     `
@@ -76,7 +76,7 @@ const reRegisterABirth2 = new ContentBDMaCV2(
 
 //-------------Register a Death tile-----------
 const registerADeath2 = new ContentBDMaCV2(
-    "registerADeath",
+    "registerADeath2",
     "Register a Death",
     "Desc tbd",
     `
@@ -129,7 +129,7 @@ const registerADeath2 = new ContentBDMaCV2(
 //---------Register a Birth and Death tile
 
 const registerABirthAndDeath2 = new ContentBDMaCV2(
-    "registerABirthAndDeath",
+    "registerABirthAndDeath2",
     "Register a Birth and Death",
     "Desc tbd",
     `
@@ -150,7 +150,7 @@ const registerABirthAndDeath2 = new ContentBDMaCV2(
 //-------register a stillbirth tile
 
 const registerAStillbirth2 = new ContentBDMaCV2(
-    "registerAStillbirth",
+    "registerAStillbirth2",
     "Register a Stillbirth",
     "Desc tbd",
     `
@@ -171,7 +171,7 @@ const registerAStillbirth2 = new ContentBDMaCV2(
 //------ copy certificates tile
 
 const copyCertificates2 = new ContentBDMaCV2(
-    "copyCertificates",
+    "copyCertificates2",
     "Copy Certificates ",
     "Desc tbd",
     `
@@ -207,7 +207,7 @@ const copyCertificates2 = new ContentBDMaCV2(
 
 //-------------Booking a Registrar, Wedding or Civil Partnership in Sheffield tile
 const bookingARegistrarWedding2 = new ContentBDMaCV2(
-    "bookingARegistrarWedding",
+    "bookingARegistrarWedding2",
     "Booking a Registrar, Wedding or Civil Partnership in Sheffield",
     "Desc tbd",
     `
@@ -309,7 +309,7 @@ const bookingARegistrarWedding2 = new ContentBDMaCV2(
 //---------Book a Notice of Marriage Appointment
 
 const bookNoticeOfMarriageApp2 = new ContentBDMaCV2(
-    "bookNoticeOfMarriageApp",
+    "bookNoticeOfMarriageApp2",
     "Book a Notice of Marriage Appointment",
     "Desc tbd",
     `
@@ -373,7 +373,7 @@ const bookNoticeOfMarriageApp2 = new ContentBDMaCV2(
 //-------Reschedule an Appointment tile
 
 const rescheduleAnAppointment2 = new ContentBDMaCV2(
-    "rescheduleAnAppointment",
+    "rescheduleAnAppointment2",
     "Reschedule an Appointment",
     "Desc tbd",
     `
@@ -393,7 +393,7 @@ const rescheduleAnAppointment2 = new ContentBDMaCV2(
 
 //--------- Book a Notice of Civil Partnership Appointment tile
 const bookNoticeCivilPartnership2 = new ContentBDMaCV2(
-    "bookNoticeCivilPartnership",
+    "bookNoticeCivilPartnership2",
     "Book a Notice of Civil Partnership Appointment",
     "Desc tbd",
     `
@@ -456,7 +456,7 @@ const bookNoticeCivilPartnership2 = new ContentBDMaCV2(
 //-------Final Payment tile
 
 const finalPayment2 = new ContentBDMaCV2(
-    "finalPayment",
+    "finalPayment2",
     "Final Payment",
     "Desc tbd",
     `
@@ -493,7 +493,7 @@ const finalPayment2 = new ContentBDMaCV2(
 //------------or in the tile above, so I've created a new one
 
 const licensedWeddingVenues2 = new ContentBDMaCV2(
-    "licensedWeddingVenues",
+    "licensedWeddingVenues2",
     "Licensed Wedding Venues in Sheffield",
     "Desc tbd",
     `
@@ -533,7 +533,7 @@ const licensedWeddingVenues2 = new ContentBDMaCV2(
 
 //---------Registrars Emails tile
 const registrarsEmails2 = new ContentBDMaCV2(
-    "registrarsEmails",
+    "registrarsEmails2",
     "Registrars Emails",
     "Desc tbd",
     `
