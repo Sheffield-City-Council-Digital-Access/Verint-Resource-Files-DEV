@@ -3002,5 +3002,5 @@ const housing = new ServiceH(
   "housing",
   "Housing",
   "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-  [subjectExample1, estatesAndEnvironments, generalCouncilHousing,assetManagementAndRepairs]
+  [subjectExample1, estatesAndEnvironments, generalCouncilHousing,assetManagementAndRepairs, leaseholderInformation, rehousing, shelteredAndSupported]
 );
