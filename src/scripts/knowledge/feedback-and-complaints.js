@@ -464,5 +464,5 @@ const feedbackAndComplaints = new ServiceFaC(
   "feedbackAndComplaints",
   "Feedback and Complaints",
   "Description",
-  [feedbackAndComplaintsMenu]
+    [complaints, childrensSocialCareComplaints, adultsocialcarecomplaints, corporateComplaintsProcedure, feedbackAndComplaintsMenu]
 );
