@@ -1293,7 +1293,7 @@ and communal/shared repairs to the block in which they live.</p>
   { typeKey: "repairs_and_investment_information_requested" },
 
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const chaseProgressOfAdaptation = new ContentH(
@@ -1461,7 +1461,7 @@ If we give you permission, you should carry out the work within 90 days and let 
   { typeKey: "repairs_and_investment_information_requested" },
    
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const otherAdaptationRequest = new ContentH(
@@ -1525,7 +1525,7 @@ const otherAdaptationRequest = new ContentH(
   { typeKey: "repairs_and_investment_information_requested" },
  
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const asbestos = new ContentH(
@@ -1811,7 +1811,7 @@ The letter explains that Rilmac Insulation has been appointed as a contractor an
   { typeKey: "repairs_and_investment_information_requested" },
 
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const communalAerials = new ContentH(
@@ -1848,7 +1848,7 @@ const communalAerials = new ContentH(
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const communalAreas = new ContentH(
@@ -1909,7 +1909,7 @@ const communalAreas = new ContentH(
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const doorEntrySystems = new ContentH(
@@ -2032,7 +2032,7 @@ const doorEntrySystems = new ContentH(
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const emergencyRepairs = new ContentH(
@@ -2094,7 +2094,7 @@ const emergencyRepairs = new ContentH(
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const carbonmonoxide = new ContentH(
@@ -2170,7 +2170,7 @@ const carbonmonoxide = new ContentH(
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const loststolenkeys = new ContentH(
@@ -2228,7 +2228,7 @@ List of Area Offices:
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const programmedWorks = new ContentH(
@@ -2381,7 +2381,7 @@ evidence that external lighting can reduce the incidence of burglary and is the 
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const communalAreasFireSafety = new ContentH(
@@ -2417,7 +2417,7 @@ const communalAreasFireSafety = new ContentH(
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const propertyAge = new ContentH(
@@ -2434,7 +2434,7 @@ const propertyAge = new ContentH(
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const tenantsOwnImprovements = new ContentH(
@@ -2507,7 +2507,7 @@ Customer's Email Address</p>
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const districtHeating = new ContentH(
@@ -2595,7 +2595,7 @@ const districtHeating = new ContentH(
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const emergencyCredit = new ContentH(
@@ -2619,7 +2619,7 @@ To activate, press the blue button marked Press For Em Credit.</p>
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const homeImprovementRequests = new ContentH(
@@ -2639,7 +2639,7 @@ maintenance to resolve unauthorised work to the District Hearting network will b
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const homeownerDisconnection = new ContentH(
@@ -2660,7 +2660,7 @@ SCC properties will not be disconnected from the District Heating network.</p>
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const noHeatNoWater = new ContentH(
@@ -2687,7 +2687,7 @@ const noHeatNoWater = new ContentH(
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const payment = new ContentH(
@@ -2795,7 +2795,7 @@ please call the Home Ownership and Revenues Unit on 0114 27 35595.</p>
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 const refunds = new ContentH(
@@ -2815,7 +2815,7 @@ and Revenues Unit on 0114 27 35595 once their rent account has been closed. </p>
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "Gee Whitehouse" }
+  { date: "10/10/2024", name: "George Whitehouse" }
 );
 
 
@@ -2836,10 +2836,13 @@ const generalCouncilHousing = new ContentH(
 
 <h3>Housing Service Contact Details</h3>
 <p>You can write to us at: <br>
+<address>
 Sheffield Council Housing Service <br>
 PO Box 5967 <br>
 Sheffield <br>
-S2 9GH </p>
+S2 9GH
+</address> 
+</p>
 
 <h3>Telephone Directory</h3>
 
