@@ -2929,7 +2929,7 @@ const estatesAndEnvironments = new MenuH(
     gardenPledgeScheme,
     blockedBinChutes,
     communalCupboard,
-    communalFireSafety,
+    communalFireSafety
   ]
 );
 
@@ -2937,7 +2937,7 @@ const estatesAndEnvironments = new MenuH(
 
 const adaptations = new MenuH("adaptations", "Adaptations", "Desc tbc", [
   chaseProgressOfAdaptation,
-  otherAdaptationRequest,
+  otherAdaptationRequest
 ]);
 
 
@@ -2963,7 +2963,7 @@ const assetManagementAndRepairs = new MenuH(
     homeImprovementRequests,
     homeownerDisconnection,
     payment,
-    refunds,
+    refunds
   ]
 );
 
