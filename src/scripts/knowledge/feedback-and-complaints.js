@@ -56,12 +56,12 @@ class FormBDMaCV2 extends CoreBDMaCV2 {
 
 
 //-----------------Re-register a birth tile-------
-const reRegisterABirth = new ContentBDMaCV2(
+const reRegisterABirth2 = new ContentBDMaCV2(
     "reRegisterABirth",
     "Re-register a Birth",
-    "Desc tbc",
+    "Desc t22222222222bc",
     `
-  <p> Takes to <a href src= "#">form </a></p>
+  <p> 222222222Takes to <a href src= "#">form </a></p>
     `,
     { buttonLabel: "", formName: "" },
     { typeKey: "" },
@@ -75,7 +75,7 @@ const reRegisterABirth = new ContentBDMaCV2(
 );
 
 //-------------Register a Death tile-----------
-const registerADeath = new ContentBDMaCV2(
+const registerADeath2 = new ContentBDMaCV2(
     "registerADeath",
     "Register a Death",
     "Desc tbd",
@@ -128,7 +128,7 @@ const registerADeath = new ContentBDMaCV2(
 
 //---------Register a Birth and Death tile
 
-const registerABirthAndDeath = new ContentBDMaCV2(
+const registerABirthAndDeath2 = new ContentBDMaCV2(
     "registerABirthAndDeath",
     "Register a Birth and Death",
     "Desc tbd",
@@ -149,7 +149,7 @@ const registerABirthAndDeath = new ContentBDMaCV2(
 
 //-------register a stillbirth tile
 
-const registerAStillbirth = new ContentBDMaCV2(
+const registerAStillbirth2 = new ContentBDMaCV2(
     "registerAStillbirth",
     "Register a Stillbirth",
     "Desc tbd",
@@ -170,7 +170,7 @@ const registerAStillbirth = new ContentBDMaCV2(
 
 //------ copy certificates tile
 
-const copyCertificates = new ContentBDMaCV2(
+const copyCertificates2 = new ContentBDMaCV2(
     "copyCertificates",
     "Copy Certificates ",
     "Desc tbd",
@@ -206,7 +206,7 @@ const copyCertificates = new ContentBDMaCV2(
 
 
 //-------------Booking a Registrar, Wedding or Civil Partnership in Sheffield tile
-const bookingARegistrarWedding = new ContentBDMaCV2(
+const bookingARegistrarWedding2 = new ContentBDMaCV2(
     "bookingARegistrarWedding",
     "Booking a Registrar, Wedding or Civil Partnership in Sheffield",
     "Desc tbd",
@@ -308,7 +308,7 @@ const bookingARegistrarWedding = new ContentBDMaCV2(
 
 //---------Book a Notice of Marriage Appointment
 
-const bookNoticeOfMarriageApp = new ContentBDMaCV2(
+const bookNoticeOfMarriageApp2 = new ContentBDMaCV2(
     "bookNoticeOfMarriageApp",
     "Book a Notice of Marriage Appointment",
     "Desc tbd",
@@ -372,7 +372,7 @@ const bookNoticeOfMarriageApp = new ContentBDMaCV2(
 
 //-------Reschedule an Appointment tile
 
-const rescheduleAnAppointment = new ContentBDMaCV2(
+const rescheduleAnAppointment2 = new ContentBDMaCV2(
     "rescheduleAnAppointment",
     "Reschedule an Appointment",
     "Desc tbd",
@@ -392,7 +392,7 @@ const rescheduleAnAppointment = new ContentBDMaCV2(
 );
 
 //--------- Book a Notice of Civil Partnership Appointment tile
-const bookNoticeCivilPartnership = new ContentBDMaCV2(
+const bookNoticeCivilPartnership2 = new ContentBDMaCV2(
     "bookNoticeCivilPartnership",
     "Book a Notice of Civil Partnership Appointment",
     "Desc tbd",
@@ -455,7 +455,7 @@ const bookNoticeCivilPartnership = new ContentBDMaCV2(
 
 //-------Final Payment tile
 
-const finalPayment = new ContentBDMaCV2(
+const finalPayment2 = new ContentBDMaCV2(
     "finalPayment",
     "Final Payment",
     "Desc tbd",
@@ -492,7 +492,7 @@ const finalPayment = new ContentBDMaCV2(
 //-------I'm not sure if this should be a new tile
 //------------or in the tile above, so I've created a new one
 
-const licensedWeddingVenues = new ContentBDMaCV2(
+const licensedWeddingVenues2 = new ContentBDMaCV2(
     "licensedWeddingVenues",
     "Licensed Wedding Venues in Sheffield",
     "Desc tbd",
@@ -532,7 +532,7 @@ const licensedWeddingVenues = new ContentBDMaCV2(
 
 
 //---------Registrars Emails tile
-const registrarsEmails = new ContentBDMaCV2(
+const registrarsEmails2 = new ContentBDMaCV2(
     "registrarsEmails",
     "Registrars Emails",
     "Desc tbd",
@@ -557,9 +557,9 @@ const registrarsEmails = new ContentBDMaCV2(
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
-const birthsDeathsMarriagesAndCitizenship = new ServiceBDMaCV2(
-    "birthsDeathsMarriagesAndCitizenship",
-    "Births, Deaths, Marriages and Citizenship",
-    `Register Office, naming ceremonies, burials and memorials, civil partnerships, citizenship ceremonies, order copies of certificates…`,
-    [reRegisterABirth, registerADeath, registerABirthAndDeath, registerAStillbirth, copyCertificates, bookingARegistrarWedding, bookNoticeOfMarriageApp, rescheduleAnAppointment, bookNoticeCivilPartnership, finalPayment, licensedWeddingVenues, registrarsEmails]
+const birthsDeathsMarriagesAndCitizenship2 = new ServiceBDMaCV2(
+    "birthsDeathsMarriagesAndCitizenship2",
+    "22222222222222Births, Deaths, Marriages and Citizenship",
+    `22222222222222222Register Office, naming ceremonies, burials and memorials, civil partnerships, citizenship ceremonies, order copies of certificates…`,
+    [reRegisterABirth2, registerADeath2, registerABirthAndDeath2, registerAStillbirth2, copyCertificates2, bookingARegistrarWedding2, bookNoticeOfMarriageApp2, rescheduleAnAppointment2, bookNoticeCivilPartnership2, finalPayment2, licensedWeddingVenues2, registrarsEmails2]
 );
