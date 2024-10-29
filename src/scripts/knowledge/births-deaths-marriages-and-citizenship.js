@@ -206,7 +206,7 @@ const copyCertificates = new ContentBDMaC(
 
 
 //-------------Booking a Registrar, Wedding or Civil Partnership in Sheffield tile
-const    = new ContentBDMaC(
+const bookingARegistrarWedding = new ContentBDMaC(
     "bookingARegistrarWedding",
     "Booking a Registrar, Wedding or Civil Partnership in Sheffield",
     "Desc tbd",
