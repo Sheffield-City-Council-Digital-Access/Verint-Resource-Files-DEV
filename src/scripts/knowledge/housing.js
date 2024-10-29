@@ -1205,7 +1205,7 @@ const gardenPledgeScheme = new ContentH(
     <p>
       List of Gardening Services:
       <a
-        href="G:\CEX\Corp Res\CS-Gen\Contact Centre\CRM\Spreadsheets\Estates\Garden\Alternative Garden Services List.xls"target="_blank">Alternative Garden Services List</a>
+        href="G:\CEX\Corp Res\CS-Gen\Contact Centre\CRM Spreadsheets\Estates\Garden\Alternative Garden Services List.xls"target="_blank">Alternative Garden Services List (G:\CEX\Corp Res\CS-Gen\Contact Centre\CRM Spreadsheets\Estates\Garden\Alternative Garden Services List.xls)</a>
       - (This list can be provided to customers (emailed, posted, etc.))
     </p>
     <p>
@@ -1216,7 +1216,7 @@ const gardenPledgeScheme = new ContentH(
     <p>
       The Government also has a website which lists local, trustworthy and reliable
       tradesmen, operating to Government endorsed standards
-      <a href="http://www.trustmark.org.uk/ " target="_blank"
+      <a href="http://www.trustmark.org.uk/ "target="_blank"
         >http://www.trustmark.org.uk</a
       >.
     </p>
