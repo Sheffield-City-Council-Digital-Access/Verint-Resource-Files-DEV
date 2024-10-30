@@ -98,11 +98,21 @@ const complaints = new ContentFaC(
 
   `,
   {
-    buttonLabel: "",
-    formName: "",
+    buttonLabel: "Make a compliment",
+    formName: "make_complaint",
   },
-  { typeKey: "" },
-  { typeKey: "_information_provided" },
+  { typeKey: "make_complaint_information_provided" },
+  { typeKey: "make_complaint_information_requested" },
+  {
+    buttonLabel: "Make a compliment",
+    formName: "feedback_compliment",
+  },
+  {
+    buttonLabel: "Complaint Survey",
+    formName: "complaints_survey",
+  },
+  { buttonLabel: "feedback_suggestion" },
+  { buttonLabel: "Make a Suggestion" },
   {
     type: "Complaint",
     keywords: [
@@ -262,9 +272,20 @@ const ChildrensSocialCareComplaints = new ContentFaC(
     buttonLabel: "Make a childrens social care complaint",
     formName: "make_complaint_childrens",
   },
-  { typeKey: "" },
-  { typeKey: "" },
   {
+    buttonLabel: "Make a compliment",
+    formName: "feedback_compliment",
+  },
+  {
+    buttonLabel: "Complaint Survey",
+    formName: "complaints_survey",
+  },
+  { buttonLabel: "feedback_suggestion" },
+  { buttonLabel: "Make a Suggestion" },
+  
+    { typeKey: "make_complaint_children_information_provided" },
+    { typeKey: "make_complaint_children_information_requested" },
+    {
     type: "Complaint",
     keywords: [
       "feadback and complaints",
@@ -333,8 +354,19 @@ Effective Handling on Go Learn.</li>
     buttonLabel: "Make a adults social care complaint",
     formName: "make_complaint_adult",
   },
-  { typeKey: "" },
-  { typeKey: "" },
+  {
+    buttonLabel: "Make a compliment",
+    formName: "feedback_compliment",
+  },
+  {
+    buttonLabel: "Complaint Survey",
+    buttonLabel: "complaints_survey",
+  },
+  { buttonLabel: "feedback_suggestion" },
+  { buttonLabel: "Make a Suggestion" },
+  
+  { typeKey: "make_complaint_adult_information_provided" },
+  { typeKey: "make_complaint_adult_information_requested" },
   {
     type: "Complaint",
     keywords: [
@@ -429,8 +461,21 @@ Within 5 working days of receipt of the complaint.
     buttonLabel: "Make a complaint",
     formName: "make_complaint",
   },
-  { typeKey: "" },
-  { typeKey: "" },
+  {
+    buttonLabel: "Make a compliment",
+    formName: "feedback_compliment",
+  },
+  {
+    buttonLabel: "Complaint Survey",
+    buttonLabel: "complaints_survey",
+  },
+  { buttonLabel: "feedback_suggestion" },
+  { buttonLabel: "Make a Suggestion" },
+  
+  
+  
+  { typeKey: "make_complaint_information_provided" },
+  { typeKey: "make_complaint_information_requested" },
   {
     type: "Complaint",
     keywords: [
