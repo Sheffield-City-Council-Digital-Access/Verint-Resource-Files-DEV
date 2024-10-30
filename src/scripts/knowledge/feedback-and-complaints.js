@@ -120,15 +120,15 @@ const complaints = new ContentFaC(
       "feedback and complants",
       "feedbak and complaints",
       "feedback and complaits",
-      "fedback and complaints",
+      "fedback and complaints"
     ],
     categories: ["Feedback and Complaint"],
   },
-  { date: "25/10/2024", name: "Gee Whitehouse" }
+  { date: "25/10/2024", name: "George Whitehouse" }
 );
 
-const ChildrensSocialCareComplaints = new ContentFaC(
-  "ChildrensSocialCareComplaints",
+const childrensSocialCareComplaints = new ContentFaC(
+  "childrensSocialCareComplaints",
   "Children's social care complaints",
   "Description",
   `
@@ -292,15 +292,15 @@ const ChildrensSocialCareComplaints = new ContentFaC(
       "feedback and complants",
       "feedbak and complaints",
       "feedback and complaits",
-      "fedback and complaints",
+      "fedback and complaints"
     ],
     categories: ["Feedback and Complaint"],
   },
-  { date: "25/10/2024", name: "Gee Whitehouse" }
+  { date: "25/10/2024", name: "George Whitehouse" }
 );
 
 const adultsocialcarecomplaints = new ContentFaC(
-  "adultsocialcarecomplaints",
+  "adultSocialCareComplaints",
   "Adult social care complaints",
   "Description",
   `
@@ -374,11 +374,11 @@ Effective Handling on Go Learn.</li>
       "feedback and complants",
       "feedbak and complaints",
       "feedback and complaits",
-      "fedback and complaints",
+      "fedback and complaints"
     ],
     categories: ["Feedback and Complaint"],
   },
-  { date: "25/10/2024", name: "Gee Whitehouse" }
+  { date: "25/10/2024", name: "George Whitehouse" }
 );
 
 const corporateComplaintsProcedure = new ContentFaC(
@@ -483,11 +483,11 @@ Within 5 working days of receipt of the complaint.
       "feedback and complants",
       "feedbak and complaints",
       "feedback and complaits",
-      "fedback and complaints",
+      "fedback and complaints"
     ],
     categories: ["Feedback and Complaint"],
   },
-  { date: "25/10/2024", name: "Gee Whitehouse" }
+  { date: "25/10/2024", name: "George Whitehouse" }
 );
 
 const feedbackAndComplaintsMenu = new MenuH(
@@ -496,7 +496,7 @@ const feedbackAndComplaintsMenu = new MenuH(
   "Description",
   [
     complaints,
-    ChildrensSocialCareComplaints,
+    childrensSocialCareComplaints,
     adultsocialcarecomplaints,
     corporateComplaintsProcedure,
   ]
