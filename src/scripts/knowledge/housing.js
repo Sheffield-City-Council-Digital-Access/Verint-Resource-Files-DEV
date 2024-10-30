@@ -425,7 +425,7 @@ const gypsyAndTravellers = new ContentH(
     <h3>What manages the sites?</h3>
     <p>
       Both sites are managed by the Housing and Neighbourhood Service Gypsy and
-      Traveller Site Management team based at Solpr.
+      Traveller Site Management team based at Solpro.
     </p>
     <h3>What are the roles of the team</h3>
     <p>The team deals with everything including:</p>
@@ -442,7 +442,7 @@ const gypsyAndTravellers = new ContentH(
     </ul>
     <p>
       Everything is recorded on OHMS the same as housing tenants although these
-      customers are not classed as ‘tenants’, they aclassed as 'Occupiers' and are
+      customers are not classed as ‘tenants’, they are classed as 'Occupiers' and are
       managed under 'agreements' under the Mobile Homes Act 1983.
     </p>
     <h3>Rehousing and Waiting Lists</h3>
@@ -717,7 +717,7 @@ const eligibility = new ContentH(
       various documentation such as identification and a reference. You may also be
       asked to provide evidence of your immigration status where relevant. You
       should make sure that all of this documentation is available to you before
-      completing your online application application as you need to submit this
+      completing your online application as you need to submit this
       documentation immediately. Failure to provide this within the given timescales
       will mean you will need to restart the process from the beginning by
       submitting a further online application.
@@ -905,7 +905,7 @@ const applicationChanges = new ContentH(
           The Allocations Policy advises of various circumstances where we will
           reduce the preference given to applicants on the Housing Register or
           prevent them from joining the register. These include circumstances such
-          as rent arrears or past/current anti-social behavior.
+          as rent arrears or past/current anti-social behaviour.
         </p>
         <p>
           In the most serious debt cases, the Allocations Policy allows us to place
@@ -915,7 +915,7 @@ const applicationChanges = new ContentH(
         <p>A customer can apply for a restriction to be removed if:</p>
         <ul>
           <li>
-            They are able to evidence that their behavior has significantly improved
+            They are able to evidence that their behaviour has significantly improved
             (e.g., paying off arrears in full)
           </li>
           <li>They appeal the restriction (disqualification) within 21 days</li>
@@ -963,7 +963,7 @@ const applicationChanges = new ContentH(
           The Allocations Policy advises various circumstances in which we will
           reduce the preference given to applicants on the Housing Register or
           prevent them from joining the register. These include circumstances such
-          as rent arrears or past/current anti-social behavior.
+          as rent arrears or past/current anti-social behaviour.
         </p>
         <p>
           An Exception Request allows us to make decisions on whether it is
@@ -1205,9 +1205,7 @@ const gardenPledgeScheme = new ContentH(
     <p>
       List of Gardening Services:
       <a
-        href="G:\CEX\Corp Res\CS-Gen\Contact Centre\CRM\Spreadsheets\Estates\Garden\Alternative Garden Services List.xls"
-        >Alternative Garden Services List</a
-      >
+        href="G:\CEX\Corp Res\CS-Gen\Contact Centre\CRM Spreadsheets\Estates\Garden\Alternative Garden Services List.xls"target="_blank">Alternative Garden Services List (G:\CEX\Corp Res\CS-Gen\Contact Centre\CRM Spreadsheets\Estates\Garden\Alternative Garden Services List.xls)</a>
       - (This list can be provided to customers (emailed, posted, etc.))
     </p>
     <p>
@@ -1218,7 +1216,7 @@ const gardenPledgeScheme = new ContentH(
     <p>
       The Government also has a website which lists local, trustworthy and reliable
       tradesmen, operating to Government endorsed standards
-      <a href="http://www.trustmark.org.uk/ " target="_blank"
+      <a href="http://www.trustmark.org.uk/ "target="_blank"
         >http://www.trustmark.org.uk</a
       >.
     </p>
@@ -1607,7 +1605,7 @@ It was also used in vehicles, domestic goods, and industrial items.</p>
 
 
  <details class="details-accordion">
-          <summary>What does abestos containing material look like?</summary>
+          <summary>What does asbestos containing material look like?</summary>
           <div class="details-accordion-content">
             
 <p>It is difficult to tell if something contains asbestos just by looking at it, unless it is labelled. 
@@ -1827,7 +1825,7 @@ const communalAerials = new ContentH(
   </summary>
   <div class="accordion-content">
     
-<p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Communal%20Aerials.aspx">Communal Aerials List</a></p> 
+<p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Communal%20Aerials.aspx"target="_blank">Communal Aerials List</a></p> 
 
   </div>
 </details>
@@ -1863,7 +1861,7 @@ const communalAreas = new ContentH(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-      <p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx">Blocked Bin Chutes</a></p>  
+      <p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx"target="_blank">Blocked Bin Chutes</a></p>  
   </div>
 </details>
 
@@ -2099,7 +2097,7 @@ const emergencyRepairs = new ContentH(
 
 const carbonmonoxide = new ContentH(
   "carbonmonoxide",
-  "Carbon Monoxide/ What is CO Poisoining",
+  "Carbon Monoxide/ What is CO Poisoning",
   "Description",
   `
 
@@ -2426,7 +2424,7 @@ const propertyAge = new ContentH(
   "Description",
   `
 
-<p><a href="https://sccextranet.sharepoint.com/:x:/s/CustomerServiceKnowledgeCouncilHousing/ESm4Dds9S6pAq3ChaiPPEH8BNQtMLmygyOEvErvW2ISK2A?e=Qkq084">property Age</a></p>
+<p><a href="https://sccextranet.sharepoint.com/:x:/s/CustomerServiceKnowledgeCouncilHousing/ESm4Dds9S6pAq3ChaiPPEH8BNQtMLmygyOEvErvW2ISK2A?e=Qkq084"target="_blank">property Age</a></p>
 
   
   `,
@@ -2750,7 +2748,7 @@ please call Home Ownership and Revenues Unit on 0114 27 35595</p>
         </details>
 
         <details class="details-accordion">
-          <summary>  Repace Pay as you go Card </summary>
+          <summary>Replace Pay as you go Card</summary>
           <div class="details-accordion-content">
             
 
@@ -2825,7 +2823,7 @@ const generalCouncilHousing = new ContentH(
   "Description",
   `
 <h3>Area Office Information</h3>
-<p><a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices">Neighvourhood Offices</a></p>
+<p><a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices="target="_blank">Neighbourhood Offices</a></p>
 
 <h3>Bogus Callers</h3>
 <p>All Council Housing Service staff, surveyors, and contractors carry identification cards at all times. It is important that you always ask to see identification before you let anyone into your home. If you have any doubts about a caller’s identity, do not let them in.</p>
@@ -2846,7 +2844,7 @@ S2 9GH
 
 <h3>Telephone Directory</h3>
 
-<p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx">Telephone Directory</a></p>
+<p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx"target="_blank">Telephone Directory</a></p>
 
 
   `,
