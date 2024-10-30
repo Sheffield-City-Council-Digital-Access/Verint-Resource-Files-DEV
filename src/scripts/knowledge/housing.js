@@ -1314,6 +1314,112 @@ NB: these contact details give a summary only; if further details are needed, pl
     categories: ["Housing", "Rehousing"],
   },
   { date: "14/10/2024", name: "Gee Whitehouse" }
+
+);
+
+const idReferences = new ContentH(
+  "idReferences",
+  "ID / References",
+  "Descritption",
+  `
+  <h3>ID / References</h3>
+    <p>
+For current SCC tenants, ID is required for new rehousing applications.
+    </p>
+    <p>For non SCC tenants, ID and a Reference are required for new rehousing applications.</p>
+    <p>
+      You must provide two forms of identification (do not post original documents to us). 
+      One must be from the Proof of ID documents list 
+      (see Acceptable ID below) whilst the second must provide proof of your current UK address.  
+    </p>
+    <p>
+    Photo ID is also required to prove your identity. 
+    If you do not have photo ID, you must provide a passport-sized photo.  
+    A <strong> landlord Reference</strong>  is also required. 
+    </p>
+    <p>
+The same document cannot be used more than once e.g. 
+driving licence as primary evidence and proof of address. 
+Proof of child benefit receipt is required where children under 16 years of age are 
+being rehoused with you.
+    </p>
+
+
+    <p>
+
+    All required ID's and References must be brought to your Local Area Housing Office, 
+    or to Howden House First Point, at the same time. 
+    <strong> Alternatively, you can upload your documents via the website (including reference if appropriate) </strong> 
+    
+    </p>
+
+        <p>
+
+        Failure to submit all required ID and references at the same time, 
+        may mean that you will need to restart the application process from the beginning by 
+        submitting a further online application. 
+
+    <h3>Acceptable ID</h3>
+
+
+        <p>
+        <ul>
+        <h4>Proof of ID documents	Proof of address	Proof of Child Benefit<h4>
+
+        <li>Marriage certificate</li>
+        <li>Divorce/Annulment papers</li>
+        <li>Divorce/Annulment papers</li>
+        <li>Passport (this can be expired but if the customer is an adult an adult passport must be produced)</li>
+        <li>passport must be produced)</li>
+        <li>Deed poll documentation for change of name (to accompany details of former name if applicable)</li>
+        <li>Current bus passes with photograph</li>
+        <li>UK resident permit</li>
+        <li>ID card issued by EEA/EU countries</li>
+        <li>Home Office standard acceptance letter</li>
+        <li>Immigration status document</li>
+        <li>NASS 35</li>
+        <li>Citizenship card (with hologram and photo to prove age)</li>
+        <li>Medical card</li>
+        <li>Birth certificate/Adoption certificate</li>
+        <li>Letter from Social Worker/Probation Officer/Solicitor</li>
+        <li>Driving licence</li>
+        <li>Recent utility bill paid in that person’s name (last quarter)</li>
+        <li>Most recent council tax statement</li>
+        <li>Home Office standard acceptance letter</li>
+        <li>Letter from DWP for tax credits</li>
+        <li>Bank statement from within the last 3months</li>
+        <li>Wage slip from current employer</li>
+        <li>Life assurance/Insurance policies</li>
+        <li>Proof of all other benefits</li>
+        <li>Child benefit award letter</li>
+        <li>The last 3 consecutive months bank statements (Only where award letter is not available).</li>
+
+
+    </ul>
+    </p>
+
+    
+
+
+  `,
+  {
+    buttonLabel: " ",
+    formName: "",
+  },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "repairs and investmant",
+      "repears and investment",
+      "repairs and invesment",
+      "repair and investement",
+      "repairs and invesmant",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
 const applicationChanges = new ContentH(
@@ -1634,6 +1740,7 @@ const rehousing = new MenuH(
     housingAssociations,
     eligibility,
     bidding,
+    idReferences,
   ]
 );
 
