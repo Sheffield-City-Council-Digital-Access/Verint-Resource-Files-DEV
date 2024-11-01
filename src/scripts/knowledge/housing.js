@@ -3356,7 +3356,7 @@ class CoreH {
               When calculating monthly arrangements, these will need to be calculated over 51 weeks instead of the normal 50 weeks. 
               The rent calculator can be used to assist in calculating arrangements:
               </p>
-              <p><strong>File Path:</strong> G:\HSG\Public\Rents\001. public sharepoint digital ringbinder\1. Comms\51 week rent calculator.xlsx
+              <p><strong>File Path:</strong> G:/HSG/Public/Rents/001. public sharepoint digital ringbinder/1. Comms/51 week rent calculator.xlsx
               </p>
               <h3>Rent Calculator</h3>
               <p>
