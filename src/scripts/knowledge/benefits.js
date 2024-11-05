@@ -54,6 +54,188 @@ class FormB extends CoreB {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
+//#region Cost of Living
+
+const waysToReduceYourFuelBills = new ContentB(
+  "waysToReduceYourFuelBills",
+  "Ways to reduce your fuel bills",
+  "Description",
+  `
+  <h2>Home energy efficiency advice</h2>
+    <p>
+      If we are more efficient with our home energy use we can reduce our energy 
+      bills and do our bit to tackle the climate emergency.
+      The information contained on this page is for owner occupiers, 
+      landlords and tenants in private, Council or Housing Association properties.
+      Private landlords have legal duties and requirements around a minimum level 
+      of energy efficiency, more information on this can be found at:
+      <a href="https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance#full-publication-update-history" target="_blank">https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance#full-publication-update-history</a> 
+    </p>
+    <h3>Warm Homes Sheffield</h3>
+    <p>
+      This is a partnership between Sheffield City Council and energy experts AgilityEco.
+
+      It provides a route to access a number of energy saving programmes that can help 
+      Sheffield residents reduce energy use and stay warm and well.
+      <a href="https://www.warmhomessheffield.org.uk/" target="_blank">https://www.warmhomessheffield.org.uk/</a> 
+      More advice and local support services can be found below.
+    </p>
+    <h3>Advice on saving energy and lowering your bills</h3>
+    <p>
+      We have identified a list of resources that you can use in order reduce the costs of your energy bills:
+      <ul>
+      <li>GOV.UK: how to save energy and lower your bills this winter can be found at: <a href="https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/" target="_blank">https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/</a> </li>
+      <li>Get help if you cannot afford your energy bills can be found at: <a href="https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills" target="_blank">https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills</a> </li>
+      <li>Understanding Energy Performance Certificates (EPC) can be found at: <a href="https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/" target="_blank">https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/</a> </li>
+      <li>Quick tips to save energy can be found at: <a href="https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/" target="_blank">https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/</a> </li>
+      </ul>
+    </p>
+    <h3>Local and national support services</h3>
+    <p>
+      There are several support services available that offer further help and advice when it comes to energy saving and money advice.
+      The services set out in the list below are not provided by the Council and therefore we cannot give assurances regarding the assistance provided.
+    </p>
+    <h3>Home Energy Advice: Local Energy Advice Partnership</h3>
+    <p>
+      Provided by AgilityEco, The Local Energy Advice Partnership (LEAP) provides tailored energy advice based on your needs. 
+      It can provide advice on a range of energy related topics including:
+      <ul>
+      <li>issues with energy suppliers</li>
+      <li>use of appliances and heating controls</li>
+      <li>energy efficiency in your home</li>
+      <li>ways to use less energy</li>
+      <li>energy efficiency grant advice</li>
+      </ul>
+      LEAP can also provide information on benefits, budgeting and debt advice and energy tariff switching. 
+      You can access the service online or by calling (freephone) <strong>0800 060 7567</strong> or emailing <a href="mailto:support@applyforleap.org.uk">support@applyforleap.org.uk</a>.
+      Local Energy Advice Partnership can be found at: <a href="https://applyforleap.org.uk/" target="_blank">https://applyforleap.org.uk/</a> 
+    </p>
+    <h3>Citizens Advice Bureau Sheffield</h3>
+    <p>
+      Citizens Advice Bureau offer an extensive online guide to problems with your energy bill. 
+      They can also offer an Energy Affordability Helpline which provides advice for people who may be struggling to pay their energy bills. 
+      Contact them on freephone <strong>0800 448 0721</strong> for fuel debt advice and income maximisation.
+      Citizens Advice Sheffield: Get help can be found at: <a href="https://citizensadvicesheffield.org.uk/get-help/" target="_blank">https://citizensadvicesheffield.org.uk/get-help/</a> 
+    </p>
+    <h3>Green Doctor</h3>
+    <p>
+      Green Doctors, provide specialist advice on how households can reduce their energy bills and make their homes more energy efficient.
+      Green Doctors can provide advice on:
+      <ul>
+      <li>energy bills and fuel debt support</li>
+      <li>grants for boilers and insulation</li>
+      <li>heating systems and controls</li>
+      <li>reducing energy costs in the home</li>
+      <li>water bills and debt</li>
+      <li>damp/condensation/mould advice</li>
+      </ul>
+      Green Doctor can be found at: <a href="https://www.groundwork.org.uk/greendoctor/" target="_blank">https://www.groundwork.org.uk/greendoctor/</a> 
+    </p>
+    <h3>Improve Energy Efficiency Service</h3>
+    <p>
+      The Improve Energy Efficiency Service is a free Government endorsed service. If you own a property in England or Wales you can get recommendations 
+      for home improvements that could make your property cheaper to heat and keep warm. 
+      For each recommendation you can see an estimated cost of making the improvement, 
+      how much you could save on your bills and next steps if you want to make the improvement. 
+      GOV.UK: Improve energy efficiency can be found at: <a href="https://www.gov.uk/improve-energy-efficiency" target="_blank">https://www.gov.uk/improve-energy-efficiency</a> 
+    </p>
+    <h3>Cost of living support and advice</h3>
+    <p>
+      Here you can find out the local and national support available to help you manage the cost of living in Sheffield.
+      Cost of living support and advice can be found at: <a href="https://www.sheffield.gov.uk/cost-of-living" target="_blank">https://www.sheffield.gov.uk/cost-of-living</a> 
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "cost_of_living_scheme_transferred_to_service" },
+  { typeKey: "cost_of_living_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "05/11/2024", name: "Nathan Smith" }
+);
+
+const applyForTheHouseholdSupportFund = new ContentB(
+  "applyForTheHouseholdSupportFund",
+  "Apply for the Household Support Fund",
+  "Description",
+  `
+  <h2>Apply for the Household Support Fund</h2>
+    <p>
+      This is a non-repayable grant to help people living in Sheffield with food and energy costs. It is funded by the UK Government.
+      You can apply for help from the fund once every 3 months for help with paying for:
+      <ul>
+      <li>food</li>
+      <li>gas and electricity</li>
+      <li>telephone and broadband (phone costs, top-ups, broadband charges etc)</li>
+      <li>housekeeping (groceries, toiletries, etc)</li>
+      <li>clothing</li>
+      <li>wider essential needs not linked to energy and water, should the local authority consider this appropriate in your circumstances</li>
+      </ul>
+      It cannot be awarded for:
+      <ul>
+      <li>payment of debts</li>
+      <li>mortgage costs</li>
+      <li>statutory activities / requirements that either the Council or another public sector organisation is responsible for delivering</li>
+      <li>rent or housing arrears under normal circumstances</li>
+      <li>clothing</li>
+      <li>white goods (visit <a href="https://applyforleap.org.uk/leap-appliances/" target="_blank">https://applyforleap.org.uk/leap-appliances/</a> for support replacing broken or damaged white goods)</li>
+      </ul>
+      If you need help paying rent or housing arrears, you must apply for Universal Credit, Housing Benefit, a Discretionary Housing Payment or a Homelessness Prevention Grant.
+      If you can prove you are ineligible for these benefits, in extreme circumstances we may be able to help with rent arrears or deposits for new tenancies.
+      <section class="info-panel" role="region" aria-label="Information panel">
+        <p>
+          Please be aware that applications to the Household Support Fund can only be made once every three months. This is to ensure that support can continue to be offered throughout the year.
+        </p>
+      </section>
+    </p>
+    <h3>What to include with your application</h3>
+    <p>
+      In most circumstances, we will not require any evidence from you to process your application. If we do require information from you, we'll write to you and request this.
+      This could include a recent bank statement for every adult account holder in the household. These bank statements should:
+      <ul>
+      <li>include the application date</li>
+      <li>show at least 30 days of transactions</li>
+      <li>be for all accounts held by all adult account holders in the household</li>
+      <li>show incoming and outgoing payments and current balances</li>
+      <li>show the sort code, account number and account holder name</li>
+      <li>be saved in pdf format (not screenshots)</li>
+      </ul>
+      <section class="info-panel" role="region" aria-label="Information panel">
+        <p>
+          If you're looking for additional support with your application, we've partnered with a select group of trusted organisations, 
+          known as Trusted Assessors, who are ready to assist you. These organisations specialise in various areas, offering their expertise 
+          and tailored assistance, both to make your application process smoother and to provide support in their respective fields.
+          Our network of Trusted assessors can be found at: <a href="https://www.sheffielddirectory.org.uk/HSF" target="_blank">https://www.sheffielddirectory.org.uk/HSF</a>
+        </p>
+      </section>
+    </p>
+    <h3>What happens next</h3>
+    <p>
+      A council officer will look at all the information on your application before deciding if we can make an award. The information you provide will help us decide: 
+      <ul>
+      <li>whether you meet the eligibility criteria</li>
+      <li>the amount you may be awarded</li>
+      </ul>
+      If you have provided us with an email address, written confirmation of the decision will be sent to you by email. 
+      If you do not have an email address, the decision notice will be sent to your home address by second class post.
+      If you have no recourse to public funds, you may in some circumstances be eligible for assistance. 
+      Your immigration status will not be affected by any award made under the Household Support Fund.
+    </p>
+    <h3>If you need to appeal</h3>
+    <p>
+      If you don’t agree with our decision, you can contact the Household Support Fund team and ask us to look at your application again.
+      You must appeal in writing within one month of the date of your decision. 
+      You should provide any information you feel may help your application and we’ll review our decision and write to you with 
+      the outcome within 28 days of receiving your appeal.
+    </p>
+  `,
+  { buttonLabel: "Apply for the Household Support Fund", formName: "apply_hsf_las" },
+  { typeKey: "cost_of_living_scheme_transferred_to_service" },
+  { typeKey: "cost_of_living_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "05/11/2024", name: "Nathan Smith" }
+);
+
+//#endregion Cost of Living
+
 const whoCanApply = new ContentB(
   "whoCanApply",
   "Who Can Apply",
@@ -979,6 +1161,26 @@ const fraudulentClaimsForHouseholdSupportFund = new ContentB(
 //   [independanceGrantInformation, householdSupportFund]
 // );
 
+const costOfLiving = new MenuB(
+  "costOfLiving",
+  "Cost of Living",
+  "Description",
+  [
+    waysToReduceYourFuelBills,
+    findFoodSupportInSheffield,
+    applyForTheHouseholdSupportFund,
+    mapOfWelcomePlacesInSheffield,
+    moneySupport,
+    foodSupport,
+    energySupport,
+    howYouCanHelpYourCommunity,
+    supportForBusinesses,
+    travelSupport,
+    employmentSupport,
+    welcomePlaces
+  ]
+);
+
 const crisisGrantInformation = new MenuB(
   "crisisGrantInformation",
   "Crisis Grant Information",
@@ -1034,5 +1236,5 @@ const benefits = new ServiceB(
   "benefits",
   "Benefits",
   `Housing Benefit, Council Tax Support, budgeting, local assistance grants and loans, benefits calculator, appeals…`,
-  [crisisGrantInformation, independanceGrantInformation, householdSupportFund]
+  [costOfLiving, crisisGrantInformation, independanceGrantInformation, householdSupportFund]
 );
