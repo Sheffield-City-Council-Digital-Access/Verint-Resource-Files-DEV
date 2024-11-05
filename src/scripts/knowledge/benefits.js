@@ -91,6 +91,47 @@ const whoCanApply = new ContentB(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
+const supportFund = new ContentB(
+  "supportFund",
+  "Apply for Support Fund",
+  "Description",
+  `
+    <p>
+      You may be able to get a Local Assistance Loan if: You are a Sheffield
+      resident and are getting one of the qualifying benefits listed below or are
+      assessed to have insufficient income to meet your needs:
+      <ul>
+      <li>Universal Credit</li>
+      <li>Income Support</li>
+      <li>Income-based Jobseeker's Allowance</li>
+      </ul>
+    </p>
+    <p>
+      Income-related Employment and Support Allowance Any type of Pension Credit,
+      and You need help because of an emergency or disaster and the health and
+      safety of you or a member of your family will be at serious risk if you do not
+      get any money If you are not receiving a qualifying benefit, you will need to
+      provide bank statements for the last 3 months in order for us to consider your
+      application. These can be provided in person, by post, or via email.
+    </p>
+    <p>
+      If you do not provide these bank statements within the processing time-scale
+      of your application, it will be rejected. You haven't been awarded two
+      Sheffield Crisis Grants in any 12-month period, regardless of any change in
+      circumstances.
+    </p>
+  `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
+);
+
+
+
+
 const WhatIsItFor = new ContentB(
   "WhatIsItFor",
   "What Is It For",
@@ -978,6 +1019,7 @@ const fraudulentClaimsForHouseholdSupportFund = new ContentB(
 //   "The Local Assistance Scheme (LAS) provides Sheffield Independence Grants to support independent living and Sheffield Crisis Grants to help Sheffield residents in crisis situations who aren't receiving help",
 //   [independanceGrantInformation, householdSupportFund]
 // );
+
 
 const crisisGrantInformation = new MenuB(
   "crisisGrantInformation",

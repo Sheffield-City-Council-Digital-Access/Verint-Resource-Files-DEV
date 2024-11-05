@@ -1863,6 +1863,39 @@ The meter reading when they move out - you should contact the utility company th
   { date: "23/09/2024", name: "Gee Whitehouse" }
 );
 
+
+const policy = new ContentH(
+  "policy",
+  "Policy",
+  "Descritption",
+  `
+
+  <h3>Allocations Policy - Guidance</h3>
+ 
+  
+  
+
+  `,
+  {
+    buttonLabel: " ",
+    formName: "",
+  },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "repairs and investmant",
+      "repears and investment",
+      "repairs and invesment",
+      "repair and investement",
+      "repairs and invesmant",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "23/09/2024", name: "Gee Whitehouse" }
+);
+
 const mutualExchanges = new ContentH(
   "mutualExchanges",
   "Mutual Exchanges",
