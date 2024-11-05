@@ -61,7 +61,6 @@ const waysToReduceYourFuelBills = new ContentB(
   "Ways to reduce your fuel bills",
   "Description",
   `
-  <h2>Home energy efficiency advice</h2>
     <p>
       If we are more efficient with our home energy use we can reduce our energy 
       bills and do our bit to tackle the climate emergency.
@@ -157,7 +156,6 @@ const applyForTheHouseholdSupportFund = new ContentB(
   "Apply for the Household Support Fund",
   "Description",
   `
-  <h2>Apply for the Household Support Fund</h2>
     <p>
       This is a non-repayable grant to help people living in Sheffield with food and energy costs. It is funded by the UK Government.
       You can apply for help from the fund once every 3 months for help with paying for:
