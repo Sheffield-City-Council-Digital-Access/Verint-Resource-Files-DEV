@@ -1167,17 +1167,17 @@ const costOfLiving = new MenuB(
   "Description",
   [
     waysToReduceYourFuelBills,
-    findFoodSupportInSheffield,
+    // findFoodSupportInSheffield,
     applyForTheHouseholdSupportFund,
-    mapOfWelcomePlacesInSheffield,
-    moneySupport,
-    foodSupport,
-    energySupport,
-    howYouCanHelpYourCommunity,
-    supportForBusinesses,
-    travelSupport,
-    employmentSupport,
-    welcomePlaces
+    // mapOfWelcomePlacesInSheffield,
+    // moneySupport,
+    // foodSupport,
+    // energySupport,
+    // howYouCanHelpYourCommunity,
+    // supportForBusinesses,
+    // travelSupport,
+    // employmentSupport,
+    // welcomePlaces
   ]
 );
 
