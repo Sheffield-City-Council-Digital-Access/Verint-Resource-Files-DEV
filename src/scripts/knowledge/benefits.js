@@ -83,10 +83,10 @@ const waysToReduceYourFuelBills = new ContentB(
     <p>
       We have identified a list of resources that you can use in order reduce the costs of your energy bills:
       <ul>
-      <li>GOV.UK: how to save energy and lower your bills this winter can be found at: <a href="https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/" target="_blank">https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/</a> </li>
-      <li>Get help if you cannot afford your energy bills can be found at: <a href="https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills" target="_blank">https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills</a> </li>
-      <li>Understanding Energy Performance Certificates (EPC) can be found at: <a href="https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/" target="_blank">https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/</a> </li>
-      <li>Quick tips to save energy can be found at: <a href="https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/" target="_blank">https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/</a> </li>
+        <li>GOV.UK: how to save energy and lower your bills this winter can be found at: <a href="https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/" target="_blank">https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/</a> </li>
+        <li>Get help if you cannot afford your energy bills can be found at: <a href="https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills" target="_blank">https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills</a> </li>
+        <li>Understanding Energy Performance Certificates (EPC) can be found at: <a href="https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/" target="_blank">https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/</a> </li>
+        <li>Quick tips to save energy can be found at: <a href="https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/" target="_blank">https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/</a> </li>
       </ul>
     </p>
     <h3>Local and national support services</h3>
@@ -99,11 +99,11 @@ const waysToReduceYourFuelBills = new ContentB(
       Provided by AgilityEco, The Local Energy Advice Partnership (LEAP) provides tailored energy advice based on your needs. 
       It can provide advice on a range of energy related topics including:
       <ul>
-      <li>issues with energy suppliers</li>
-      <li>use of appliances and heating controls</li>
-      <li>energy efficiency in your home</li>
-      <li>ways to use less energy</li>
-      <li>energy efficiency grant advice</li>
+        <li>issues with energy suppliers</li>
+        <li>use of appliances and heating controls</li>
+        <li>energy efficiency in your home</li>
+        <li>ways to use less energy</li>
+        <li>energy efficiency grant advice</li>
       </ul>
     <p>
       LEAP can also provide information on benefits, budgeting and debt advice and energy tariff switching. 
@@ -116,6 +116,8 @@ const waysToReduceYourFuelBills = new ContentB(
       Citizens Advice Bureau offer an extensive online guide to problems with your energy bill. 
       They can also offer an Energy Affordability Helpline which provides advice for people who may be struggling to pay their energy bills. 
       Contact them on freephone <strong>0800 448 0721</strong> for fuel debt advice and income maximisation.
+    </p>
+    <p>
       Citizens Advice Sheffield: Get help can be found at: <a href="https://citizensadvicesheffield.org.uk/get-help/" target="_blank">https://citizensadvicesheffield.org.uk/get-help/</a> 
     </p>
     <h3>Green Doctor</h3>
@@ -124,12 +126,12 @@ const waysToReduceYourFuelBills = new ContentB(
     </p>
       Green Doctors can provide advice on:
       <ul>
-      <li>energy bills and fuel debt support</li>
-      <li>grants for boilers and insulation</li>
-      <li>heating systems and controls</li>
-      <li>reducing energy costs in the home</li>
-      <li>water bills and debt</li>
-      <li>damp/condensation/mould advice</li>
+        <li>energy bills and fuel debt support</li>
+        <li>grants for boilers and insulation</li>
+        <li>heating systems and controls</li>
+        <li>reducing energy costs in the home</li>
+        <li>water bills and debt</li>
+        <li>damp/condensation/mould advice</li>
       </ul>
     <p>
       Green Doctor can be found at: <a href="https://www.groundwork.org.uk/greendoctor/" target="_blank">https://www.groundwork.org.uk/greendoctor/</a> 
@@ -186,12 +188,12 @@ const applyForTheHouseholdSupportFund = new ContentB(
     </p>
     <p>
       <ul>
-      <li>food</li>
-      <li>gas and electricity</li>
-      <li>telephone and broadband (phone costs, top-ups, broadband charges etc)</li>
-      <li>housekeeping (groceries, toiletries, etc)</li>
-      <li>clothing</li>
-      <li>wider essential needs not linked to energy and water, should the local authority consider this appropriate in your circumstances</li>
+        <li>food</li>
+        <li>gas and electricity</li>
+        <li>telephone and broadband (phone costs, top-ups, broadband charges etc)</li>
+        <li>housekeeping (groceries, toiletries, etc)</li>
+        <li>clothing</li>
+        <li>wider essential needs not linked to energy and water, should the local authority consider this appropriate in your circumstances</li>
       </ul>
     </p>
     <p>
@@ -199,12 +201,12 @@ const applyForTheHouseholdSupportFund = new ContentB(
     </p>
     <p>
       <ul>
-      <li>payment of debts</li>
-      <li>mortgage costs</li>
-      <li>statutory activities / requirements that either the Council or another public sector organisation is responsible for delivering</li>
-      <li>rent or housing arrears under normal circumstances</li>
-      <li>clothing</li>
-      <li>white goods (visit <a href="https://applyforleap.org.uk/leap-appliances/" target="_blank">https://applyforleap.org.uk/leap-appliances/</a> for support replacing broken or damaged white goods)</li>
+        <li>payment of debts</li>
+        <li>mortgage costs</li>
+        <li>statutory activities / requirements that either the Council or another public sector organisation is responsible for delivering</li>
+        <li>rent or housing arrears under normal circumstances</li>
+        <li>clothing</li>
+        <li>white goods (visit <a href="https://applyforleap.org.uk/leap-appliances/" target="_blank">https://applyforleap.org.uk/leap-appliances/</a> for support replacing broken or damaged white goods)</li>
       </ul>
     </p>
     <p>
@@ -225,12 +227,12 @@ const applyForTheHouseholdSupportFund = new ContentB(
     </p>
     <p>
       <ul>
-      <li>include the application date</li>
-      <li>show at least 30 days of transactions</li>
-      <li>be for all accounts held by all adult account holders in the household</li>
-      <li>show incoming and outgoing payments and current balances</li>
-      <li>show the sort code, account number and account holder name</li>
-      <li>be saved in pdf format (not screenshots)</li>
+        <li>include the application date</li>
+        <li>show at least 30 days of transactions</li>
+        <li>be for all accounts held by all adult account holders in the household</li>
+        <li>show incoming and outgoing payments and current balances</li>
+        <li>show the sort code, account number and account holder name</li>
+        <li>be saved in pdf format (not screenshots)</li>
       </ul>
     </p>
     <p>
@@ -251,8 +253,8 @@ const applyForTheHouseholdSupportFund = new ContentB(
     </p>
     <p>
       <ul>
-      <li>whether you meet the eligibility criteria</li>
-      <li>the amount you may be awarded</li>
+        <li>whether you meet the eligibility criteria</li>
+        <li>the amount you may be awarded</li>
       </ul>
     </p>
     <p>
@@ -307,6 +309,7 @@ const moneySupport = new ContentB(
       The Discretionary Housing Payment (DHP) scheme can help you if you get Housing Benefit or Universal Credit, 
       but you still need help to pay your rent. If you get Council Tax Support (CTS) you can also get help to pay 
       your Council Tax under the Council Tax Hardship Scheme (CTHS).
+    </p>
       <section class="alert-panel--ineligible" role="alert" aria-label="Alert panel">
         <p>
           Changes to our IT systems may cause delays in processing changes to housing benefit claims, discretionary housing payments, 
@@ -315,30 +318,39 @@ const moneySupport = new ContentB(
         </p>
       </section>
       <h3>What DHP can't help with</h3>
-      <p>
+    <p>
       There are some charges that DHP can’t cover including:
+    </p>
+    <p>
       <ul>
-      <li>service charges like heating or hot water</li>
-      <li>charges for water rates</li>
-      <li>charges for tenants levy</li>
+        <li>service charges like heating or hot water</li>
+        <li>charges for water rates</li>
+        <li>charges for tenants levy</li>
       </ul>
+    </p>
       <h3>How much we can award and how long the award lasts</h3>
+    <p>
       The amount of DHP we can award and how long the award lasts depends on your own circumstances. You must be able to show that you need extra help to meet your housing costs.
       The amount of CTHS we can award depends upon your circumstances, and in most cases, the award you receive will be made for the current financial year.
       DHP and CTHS come from a fixed pot of money, so we try to give the extra help to people who need it most. Once we’ve spent the money in the pot, no further awards can be made.
+    </p>
       <h3>How we pay</h3>
+    <p>
       If you’re a Council tenant, we’ll pay your DHP directly to your rent account. If you’re a private tenant, we’ll pay your DHP in the same way as your Housing Benefit.
       If you’re in receipt of Universal Credit, we will make the payment directly to you, or your landlord.
       If you’re awarded CTHS, we’ll reduce your Council Tax and send you a new bill for a lower amount.
+    </p>
       <h3>The application process</h3>
+    <p>
       You need to provide as much information as you can about how much you spend each week on items like food, bills, clothes, your children and travel.
       You don’t have to provide details of your income as we get this from your Housing Benefit claim. When we receive your application form and have checked your 
       supporting information we’ll write to you with a decision.
+    </p>
       <h3>If you need to appeal</h3>
+    <p>
       If you don’t agree with our decision you can contact the Discretionary Payment Team and ask us to look at your application again.
       You must appeal within one month of the date of your decision letter. You should provide any information you feel may help your 
       application and we’ll review our decision and write to you with the outcome.
-      </p>
     </p>
   </div>
   </details>
@@ -354,66 +366,82 @@ const moneySupport = new ContentB(
       This benefit aims to provide support for people to prepare for work, find employment, or increase their earnings.
     </p>
     <section class="info-panel" role="region" aria-label="Information panel">
-        <p>
-          If you have previously been receiving any of the following six benefits, you will stop receiving these and be moved over to Universal Credit:
-          <ul>
-          <li>Housing Benefit</li>
-          <li>Income-related Employment and Support Allowance (ESA)</li>
-          <li>Income-based Jobseeker's Allowance (JSA)</li>
-          <li>Child Tax Credit</li>
-          <li>Working Tax Credit</li>
-          <li>Income Support</li>
-          </ul>
-          You can find more information on what to do if you receive a Migration Notice at: 
-          <a href="https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice" target="_blank">https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice</a>
-        </p>
+      <p>
+        If you have previously been receiving any of the following six benefits, you will stop receiving these and be moved over to Universal Credit:
+      </p>
+      <p>
+        <ul>
+        <li>Housing Benefit</li>
+        <li>Income-related Employment and Support Allowance (ESA)</li>
+        <li>Income-based Jobseeker's Allowance (JSA)</li>
+        <li>Child Tax Credit</li>
+        <li>Working Tax Credit</li>
+        <li>Income Support</li>
+        </ul>
+      </p>
+      <p>
+        You can find more information on what to do if you receive a Migration Notice at:
+        <a href="https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice" target="_blank">https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice</a>
+      </p>
     </section>
       <h3>Who is eligible</h3>
       <p>
-          You may be entitled to Universal Credit if you are:
-          <ul>
-            <li>on a low income</li>
-            <li>out of work</li>
-            <li>unable to work</li>
-            <li>not already in receipt of any benefits</li>
-            </ul>
+        You may be entitled to Universal Credit if you are:
+      </p>
+      <p>
+        <ul>
+          <li>on a low income</li>
+          <li>out of work</li>
+          <li>unable to work</li>
+          <li>not already in receipt of any benefits</li>
+        </ul>
+      </p>
+      <p>
           You can use the following calculator to check whether you would be entitled to Universal Credit: <a href="https://www.entitledto.co.uk/benefits-calculator/" target="_blank">https://www.entitledto.co.uk/benefits-calculator/</a>
       </p>
       <p>
-      If you are still unsure you should seek advice from a benefits advisor at your local DWP office or Job Centre. You can find this at:  
-      <a href="https://find-your-nearest-jobcentre.dwp.gov.uk/search.php" target="_blank">https://find-your-nearest-jobcentre.dwp.gov.uk/search.php</a>
-      You can also contact the Citizens Advice for money, debt advice and whether Universal Credit is right for you, 
-      by visiting their website or calling the Help to Claim line on <strong>0800 144 8444</strong>.
-      You can contact Citizens Advice at: 
-      <a href="https://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/Check-if-you-can-get-Universal-Credit/" target="_blank">https://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/Check-if-you-can-get-Universal-Credit/</a>
+        If you are still unsure you should seek advice from a benefits advisor at your local DWP office or Job Centre. You can find this at:  
+        <a href="https://find-your-nearest-jobcentre.dwp.gov.uk/search.php" target="_blank">https://find-your-nearest-jobcentre.dwp.gov.uk/search.php</a>
+      </p>
+      <p>
+        You can also contact the Citizens Advice for money, debt advice and whether Universal Credit is right for you, 
+        by visiting their website or calling the Help to Claim line on <strong>0800 144 8444</strong>.
+      </p>
+      <p>
+        You can contact Citizens Advice at: 
+        <a href="https://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/Check-if-you-can-get-Universal-Credit/" target="_blank">https://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/Check-if-you-can-get-Universal-Credit/</a>
       </p>
       <h3>How much you could receive</h3>
       <p>
       The amount you receive will depend on:
-      <ul>
+      </p>
+      <p>
+        <ul>
           <li>your (or your partner's) income and savings</li>
           <li>your (or your partner's) age(s)</li>
           <li>circumstances (such as children, a couple or single)</li>
           <li>if you or your partner are incapable of work or a carer</li>
           <li>if you have housing costs, like rent</li>
           <li>your entitlement to a transitional amount</li>
-      </ul>
+        </ul>
       </p>
       <h3>How Universal Credit is paid</h3>
       <p>
-      Universal Credit is paid monthly in arrears. If you think that you will struggle 
-      while you are waiting for your first payment of Universal Credit, you can ask the DWP for a short-term advance.
-      You may be able to have your Universal Credit paid more frequently than monthly, or have it paid direct to your landlord.
+        Universal Credit is paid monthly in arrears. If you think that you will struggle 
+        while you are waiting for your first payment of Universal Credit, you can ask the DWP for a short-term advance.
+        You may be able to have your Universal Credit paid more frequently than monthly, or have it paid direct to your landlord.
       </p>
       <h3>How to apply for Universal Credit</h3>
       <p>
-      You can apply for Universal Credit on the government website.
-      In order to claim Universal Credit you will need to sign a claimant commitment when you make your first claiming. 
-      This is a signed record of what you agree to do whilst in receipt of Universal Credit.
-      You can apply for Universal Credit at: 
-      <a href="https://www.gov.uk/universal-credit/how-to-claim" target="_blank">https://www.gov.uk/universal-credit/how-to-claim</a>
-      Find out how Universal Credit could help you at: 
-      <a href="https://ucmove.campaign.gov.uk/" target="_blank">https://ucmove.campaign.gov.uk/</a>
+        You can apply for Universal Credit on the government website.
+        In order to claim Universal Credit you will need to sign a claimant commitment when you make your first claiming. 
+        This is a signed record of what you agree to do whilst in receipt of Universal Credit.
+      </p>
+      <p>
+        You can apply for Universal Credit at: 
+        <a href="https://www.gov.uk/universal-credit/how-to-claim" target="_blank">https://www.gov.uk/universal-credit/how-to-claim</a>
+        Find out how Universal Credit could help you at: 
+        <a href="https://ucmove.campaign.gov.uk/" target="_blank">https://ucmove.campaign.gov.uk/</a>
       </p>
   </div>
   </details>
@@ -424,8 +452,8 @@ const moneySupport = new ContentB(
   </summary>
   <div class="accordion-content">
     <p>
-    You can find out more information about the Sheffield Credit Union at: 
-    <a href="https://sheffieldcreditunion.com/" target="_blank">https://sheffieldcreditunion.com/</a>
+      You can find out more information about the Sheffield Credit Union at: 
+      <a href="https://sheffieldcreditunion.com/" target="_blank">https://sheffieldcreditunion.com/</a>
     </p>
     </section>
   </div>
@@ -437,8 +465,8 @@ const moneySupport = new ContentB(
   </summary>
   <div class="accordion-content">
     <p>
-    You can find out more information about the Healthy Start Scheme at: 
-    <a href="https://www.healthystart.nhs.uk/" target="_blank">https://www.healthystart.nhs.uk/</a>
+      You can find out more information about the Healthy Start Scheme at: 
+      <a href="https://www.healthystart.nhs.uk/" target="_blank">https://www.healthystart.nhs.uk/</a>
     </p>
     </section>
   </div>
@@ -450,15 +478,17 @@ const moneySupport = new ContentB(
   </summary>
   <div class="accordion-content">
     <p>
-    If you have a referral to a specialist or a hospital for
-    NHS treatment or tests and you are on benefits or
-    allowances you could claim travel costs.
-    To claim, take your travel receipts, appointment
-    letter or card, plus proof that you're receiving one of
-    the qualifying benefits, to a nominated cashiers'
-    office in the hospital/clinic.
-    More information about getting help with transport if you are referred to hospital at: 
-    <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/" target="_blank">https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/</a>
+      If you have a referral to a specialist or a hospital for
+      NHS treatment or tests and you are on benefits or
+      allowances you could claim travel costs.
+      To claim, take your travel receipts, appointment
+      letter or card, plus proof that you're receiving one of
+      the qualifying benefits, to a nominated cashiers'
+      office in the hospital/clinic.
+    </p>
+    <p>
+      More information about getting help with transport if you are referred to hospital at: 
+      <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/" target="_blank">https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/</a>
     </p>
     </section>
   </div>
@@ -491,10 +521,12 @@ const moneySupport = new ContentB(
     <p>
         There’s no set amount of Housing Benefit. What you receive will be affected by:
     </p>
-    <ul>
-        <li>if you are a private tenant. What you get will depend on whether you are restricted by the Local Housing Allowance</li>
-        <li>if you rent from us. Following the under-occupancy rule (or bedroom tax), you will receive less support if you have empty bedrooms in your house or flat</li>
-    </ul>
+    <p>
+      <ul>
+          <li>if you are a private tenant. What you get will depend on whether you are restricted by the Local Housing Allowance</li>
+          <li>if you rent from us. Following the under-occupancy rule (or bedroom tax), you will receive less support if you have empty bedrooms in your house or flat</li>
+      </ul>
+    </p>
     <section class="alert-panel--ineligible" role="alert" aria-label="Alert panel">
     <h3>Urgent payment</h3>
     <p>
@@ -505,38 +537,42 @@ const moneySupport = new ContentB(
     </section>
     <h3>Receiving payment</h3>
     <p>
-    You should claim as soon as you can. We can usually pay Housing Benefit from the Monday after the day we receive your claim form. 
-    We can only backdate your benefit for up to one month from when you make your claim.
-    If you live in our Council housing, we’ll pay Housing Benefit directly into your rent account. You won’t receive the money.
-    If you’re a private tenant, we’ll usually pay Housing Benefit into your bank or building society account, 
-    although we may decide that it’s in your best interests to pay your Housing Benefit directly to your landlord.
+      You should claim as soon as you can. We can usually pay Housing Benefit from the Monday after the day we receive your claim form. 
+      We can only backdate your benefit for up to one month from when you make your claim.
+      If you live in our Council housing, we’ll pay Housing Benefit directly into your rent account. You won’t receive the money.
+      If you’re a private tenant, we’ll usually pay Housing Benefit into your bank or building society account, 
+      although we may decide that it’s in your best interests to pay your Housing Benefit directly to your landlord.
     </p>
     <h3>Applying for Housing Benefit if you’re claiming other benefits</h3>
     <p>
-    If you’re claiming Employment and Support Allowance, Income Support or Jobseeker’s Allowance, contact Jobcentre Plus to claim Housing Benefit too. 
-    Jobcentre Plus will send us details of your claim for Housing Benefit.If you’re claiming Universal Credit, you can get help paying for housing with your 
-    Universal Credit payment instead of getting Housing Benefit.
-    If you’re claiming Pension Credit, contact the Pension Service to claim Housing Benefit with your claim for Pension Credit. 
-    The Pension Service will send us details of your claim for Housing Benefit.
+      If you’re claiming Employment and Support Allowance, Income Support or Jobseeker’s Allowance, contact Jobcentre Plus to claim Housing Benefit too. 
+      Jobcentre Plus will send us details of your claim for Housing Benefit.If you’re claiming Universal Credit, you can get help paying for housing with your 
+      Universal Credit payment instead of getting Housing Benefit.
+      If you’re claiming Pension Credit, contact the Pension Service to claim Housing Benefit with your claim for Pension Credit. 
+      The Pension Service will send us details of your claim for Housing Benefit.
     </p>
     <h3>Apply for Housing Benefit if you’re not claiming other benefits</h3>
     <p>
-    If you’re not claiming other benefits, you can apply online for Housing Benefit.
-    Once you've applied, we’ll let you know what information we need from you to support your claim. 
-    This may include information like your National Insurance Number, your birth certificate or driving licence, 
-    and evidence that you pay the rent, like your rent book or tenancy agreement.
-    You should provide this information as soon as you can so we can deal with your claim as quickly as possible. 
-    When you provide evidence please bare in mind the following:
-    <ul>
-        <li>we can only accept original documents as proof. We can’t accept photocopies</li>
-        <li>you can bring the documents we need to First Point or any Area Housing Office</li>
-        <li>if you supply the proofs in person we’ll photocopy them and give you the originals back. We’ll also give you a receipt. You should ask to see the photocopies and make sure that you’re satisfied that the copies are clear and legible</li>
-        <li>if we need more evidence, we’ll write to you as soon as possible to let you know</li>
-    </ul>
+      If you’re not claiming other benefits, you can apply online for Housing Benefit.
+      Once you've applied, we’ll let you know what information we need from you to support your claim. 
+      This may include information like your National Insurance Number, your birth certificate or driving licence, 
+      and evidence that you pay the rent, like your rent book or tenancy agreement.
+      You should provide this information as soon as you can so we can deal with your claim as quickly as possible. 
+      When you provide evidence please bare in mind the following:
     </p>
     <p>
-    Check your eligibility and calculating your entitlement at:
-    <a href="https://www.entitledto.co.uk/" target="_blank">https://www.entitledto.co.uk/</a>
+      <ul>
+          <li>we can only accept original documents as proof. We can’t accept photocopies</li>
+          <li>you can bring the documents we need to First Point or any Area Housing Office</li>
+          <li>if you supply the proofs in person we’ll photocopy them and give you the originals back. We’ll also give you a receipt. You should ask to see the photocopies and make sure that you’re satisfied that the copies are clear and legible</li>
+          <li>if we need more evidence, we’ll write to you as soon as possible to let you know</li>
+      </ul>
+    </p>
+    <p>
+      Check your eligibility and calculating your entitlement at:
+      <a href="https://www.entitledto.co.uk/" target="_blank">https://www.entitledto.co.uk/</a>
+    </p>
+    <p>
     SEND EMAIL FUNCTION > (https://lwa.financialassessments.co.uk/OnlineApplication/(S(srurjaqhe0ks40tvngd1kzqi))/Introduction.aspx?form=ADECLAIM&time=638664976262485503,1730900826894)
     </p>
     </section>
@@ -549,8 +585,8 @@ const moneySupport = new ContentB(
   </summary>
   <div class="accordion-content">
     <p>
-    You can find out more information about the Sheffield Money Support Guide at: 
-    <a href="https://sheffieldmoneysupport.co.uk/" target="_blank">https://sheffieldmoneysupport.co.uk/</a>
+      You can find out more information about the Sheffield Money Support Guide at: 
+      <a href="https://sheffieldmoneysupport.co.uk/" target="_blank">https://sheffieldmoneysupport.co.uk/</a>
     </p>
     </section>
   </div>
@@ -562,8 +598,8 @@ const moneySupport = new ContentB(
   </summary>
   <div class="accordion-content">
     <p>
-    You can find out more information about Multiply at: 
-    <a href="https://linktr.ee/multiplysheffield" target="_blank">https://linktr.ee/multiplysheffield</a>
+      You can find out more information about Multiply at: 
+      <a href="https://linktr.ee/multiplysheffield" target="_blank">https://linktr.ee/multiplysheffield</a>
     </p>
     </section>
   </div>
@@ -581,6 +617,8 @@ const moneySupport = new ContentB(
       drops from the age of 4 weeks until their 4th
       birthday.
       Ask your midwife or health visitor today.
+    </p>
+    <p>
       More information on free vitamins at: 
       <a href="https://www.sheffield.gov.uk/sites/default/files/2023-05/NHS_Vitamin_Support.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-05/NHS_Vitamin_Support.pdf</a>
     </p>
@@ -605,6 +643,8 @@ const moneySupport = new ContentB(
       dental prescriptions, no matter how many you need.
       If you need 2 items a month you could save £116.30 a
       year.
+    </p>
+    <p>
       More information on prescription prepayment certificates by calling <strong>0300 330 1341</strong> or visiting: 
       <a href="https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start" target="_blank">https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start</a>
     </p>
@@ -627,35 +667,50 @@ const moneySupport = new ContentB(
       On this page you will find information to help your money go further, including benefits checkers and ways to reduce your household bills.
       Alternatively, if you would like assistance with assessing your circumstances to find out how you can make your money go further, 
       you can start a web chat with one of our team who will book an appointment for you.
-      <p>
-        <h3>Help with your Council Tax bill or arrears</h3>
-        <h4>Council Tax support</h4>
-        You could be eligible for a reduction of up to 100% in the amount of Council Tax you pay each month, 
-        if you’re on a low income or you claim benefits. You can apply if you own your home, rent, are unemployed or working.
-        What you receive will depend on:
-        <ul>
-          <li>your circumstances (for example income, number of children, benefits, residency status)</li>
-          <li>your household income - this includes savings, pensions and your partner’s income</li>
-          <li>if your children live with you</li>
-          <li>if other adults live with you</li>
-        </ul>
-        <h4>Council Tax discounts and exemptions</h4>
-        Certain people are eligible for discounts or exemptions from Council Tax, including students, people who are disabled and people who live alone.
-        <h4>Help with rent and Council Tax</h4>
-        The Discretionary Housing Payment (DHP) scheme can help you if you get Housing Benefit or Universal Credit, but you still need help to pay your rent. 
-        If you get Council Tax Support (CTS) you can also get help to pay your Council Tax under the Council Tax Hardship Scheme (CTHS).
-        <h4>Help with your water bill</h4>
-        If you are on benefits, on a low income, have debt connected to your water bill, or have a medical condition that means you need to use more water, 
-        you may be eligible for help paying your water bill. Yorkshire Water runs a number of schemes that can reduce the amount you pay for water each month.
-        <h3>Check if you could get additional income</h3>
-        Billions of pounds of benefits go unclaimed each year and many people don’t know what they are entitled to, 
-        but a simple check can assist you to make a claim. Use a benefits calculator to find out what you could receive.
-        <h3>Help with telephone and broadband costs</h3>
-        Many telephone and broadband companies have social tariffs for people claiming Universal Credit, Pension Credit and some other benefits.
-        <h3>Access crisis grants if you're in hardship</h3>
-        If you are in hardship and cannot afford food, energy and other essentials, you may be eligible for a payment under the Household Support Fund.
-        If you are in crisis following an emergency or disaster, or need help to remain in your home, you may be eligible for a payment under the Local Assistance Scheme.
-      </p>
+    </p>
+      <h3>Help with your Council Tax bill or arrears</h3>
+      <h4>Council Tax support</h4>
+    <p>
+      You could be eligible for a reduction of up to 100% in the amount of Council Tax you pay each month, 
+      if you’re on a low income or you claim benefits. You can apply if you own your home, rent, are unemployed or working.
+      What you receive will depend on:
+    </p>
+    <p>
+      <ul>
+        <li>your circumstances (for example income, number of children, benefits, residency status)</li>
+        <li>your household income - this includes savings, pensions and your partner’s income</li>
+        <li>if your children live with you</li>
+        <li>if other adults live with you</li>
+      </ul>
+    </p>
+      <h4>Council Tax discounts and exemptions</h4>
+    <p>
+      Certain people are eligible for discounts or exemptions from Council Tax, including students, people who are disabled and people who live alone.
+    </p>
+      <h4>Help with rent and Council Tax</h4>
+    <p>
+      The Discretionary Housing Payment (DHP) scheme can help you if you get Housing Benefit or Universal Credit, but you still need help to pay your rent. 
+      If you get Council Tax Support (CTS) you can also get help to pay your Council Tax under the Council Tax Hardship Scheme (CTHS).
+    </p>
+      <h4>Help with your water bill</h4>
+    <p>
+      If you are on benefits, on a low income, have debt connected to your water bill, or have a medical condition that means you need to use more water, 
+      you may be eligible for help paying your water bill. Yorkshire Water runs a number of schemes that can reduce the amount you pay for water each month.
+    </p>
+      <h3>Check if you could get additional income</h3>
+    <p>
+      Billions of pounds of benefits go unclaimed each year and many people don’t know what they are entitled to, 
+      but a simple check can assist you to make a claim. Use a benefits calculator to find out what you could receive.
+    </p>
+      <h3>Help with telephone and broadband costs</h3>
+    <p>
+      Many telephone and broadband companies have social tariffs for people claiming Universal Credit, Pension Credit and some other benefits.
+    </p>
+      <h3>Access crisis grants if you're in hardship</h3>
+    <p>
+      If you are in hardship and cannot afford food, energy and other essentials, you may be eligible for a payment under the Household Support Fund.
+      If you are in crisis following an emergency or disaster, or need help to remain in your home, you may be eligible for a payment under the Local Assistance Scheme.
+    </p>
     </section>
   </div>
   </details>
