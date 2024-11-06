@@ -306,11 +306,20 @@ const moneySupport = new ContentB(
       You need to provide as much information as you can about how much you spend each week on items like food, bills, clothes, your children and travel.
       You don’t have to provide details of your income as we get this from your Housing Benefit claim. When we receive your application form and have checked your 
       supporting information we’ll write to you with a decision.
-      <h3>If you need to appea</h3>
+      <h3>If you need to appeal</h3>
       If you don’t agree with our decision you can contact the Discretionary Payment Team and ask us to look at your application again.
       You must appeal within one month of the date of your decision letter. You should provide any information you feel may help your 
       application and we’ll review our decision and write to you with the outcome.
       </p>
+    </p>
+  </div>
+  <summary class="accordion-header">
+    <h3>Test</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+    Test
     </p>
   </div>
   </details>
