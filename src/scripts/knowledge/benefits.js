@@ -239,9 +239,9 @@ const applyForTheHouseholdSupportFund = new ContentB(
           If you're looking for additional support with your application, we've partnered with a select group of trusted organisations, 
           known as Trusted Assessors, who are ready to assist you. These organisations specialise in various areas, offering their expertise 
           and tailored assistance, both to make your application process smoother and to provide support in their respective fields.
-          <p>
-            Our network of Trusted assessors can be found at: <a href="https://www.sheffielddirectory.org.uk/HSF" target="_blank">https://www.sheffielddirectory.org.uk/HSF</a>
-          </p>
+        </p>
+        <p>
+          Our network of Trusted assessors can be found at: <a href="https://www.sheffielddirectory.org.uk/HSF" target="_blank">https://www.sheffielddirectory.org.uk/HSF</a>
         </p>
       </section>
     </p>
