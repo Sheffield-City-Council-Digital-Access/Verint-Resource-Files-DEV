@@ -316,13 +316,319 @@ const moneySupport = new ContentB(
   </details>
   <details class="accordion">
   <summary class="accordion-header">
-    <h3>Test</h3>
+    <h3>How to apply for Universal Credit</h3>
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
     <p>
-    Test
+      Universal Credit is a single benefit that has been introduced to replace the current six-benefit system. 
+      It is designed to assist working-age individuals with low incomes, or those who are unemployed. 
+      This benefit aims to provide support for people to prepare for work, find employment, or increase their earnings.
     </p>
+    <section class="info-panel" role="region" aria-label="Information panel">
+        <p>
+          If you have previously been receiving any of the following six benefits, you will stop receiving these and be moved over to Universal Credit:
+          <ul>
+          <li>Housing Benefit</li>
+          <li>Income-related Employment and Support Allowance (ESA)</li>
+          <li>Income-based Jobseeker's Allowance (JSA)</li>
+          <li>Child Tax Credit</li>
+          <li>Working Tax Credit</li>
+          <li>Income Support</li>
+          </ul>
+          You can find more information on what to do if you receive a Migration Notice at: 
+          <a href="https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice" target="_blank">https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice</a>
+        </p>
+      <h3>Who is eligible</h3>
+      <p>
+          You may be entitled to Universal Credit if you are:
+          <ul>
+            <li>on a low income</li>
+            <li>out of work</li>
+            <li>unable to work</li>
+            <li>not already in receipt of any benefits</li>
+            </ul>
+          You can use the following calculator to check whether you would be entitled to Universal Credit: <a href="https://www.entitledto.co.uk/benefits-calculator/" target="_blank">https://www.entitledto.co.uk/benefits-calculator/</a>
+      </p>
+      <p>
+      If you are still unsure you should seek advice from a benefits advisor at your local DWP office or Job Centre. You can find this at:  
+      <a href="https://find-your-nearest-jobcentre.dwp.gov.uk/search.php" target="_blank">https://find-your-nearest-jobcentre.dwp.gov.uk/search.php</a>
+      You can also contact the Citizens Advice for money, debt advice and whether Universal Credit is right for you, 
+      by visiting their website or calling the Help to Claim line on <strong>0800 144 8444</strong>.
+      You can contact Citizens Advice at: 
+      <a href="https://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/Check-if-you-can-get-Universal-Credit/" target="_blank">https://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/Check-if-you-can-get-Universal-Credit/</a>
+      </p>
+      <h3>How much you could receive</h3>
+      <p>
+      The amount you receive will depend on:
+      <ul>
+          <li>your (or your partner's) income and savings</li>
+          <li>your (or your partner's) age(s)</li>
+          <li>circumstances (such as children, a couple or single)</li>
+          <li>if you or your partner are incapable of work or a carer</li>
+          <li>if you have housing costs, like rent</li>
+          <li>your entitlement to a transitional amount</li>
+      </ul>
+      </p>
+      <h3>How Universal Credit is paid</h3>
+      <p>
+      Universal Credit is paid monthly in arrears. If you think that you will struggle 
+      while you are waiting for your first payment of Universal Credit, you can ask the DWP for a short-term advance.
+      You may be able to have your Universal Credit paid more frequently than monthly, or have it paid direct to your landlord.
+      </p>
+      <h3>How to apply for Universal Credit</h3>
+      <p>
+      You can apply for Universal Credit on the government website.
+      In order to claim Universal Credit you will need to sign a claimant commitment when you make your first claiming. 
+      This is a signed record of what you agree to do whilst in receipt of Universal Credit.
+      You can apply for Universal Credit at: 
+      <a href="https://www.gov.uk/universal-credit/how-to-claim" target="_blank">https://www.gov.uk/universal-credit/how-to-claim</a>
+      Find out how Universal Credit could help you at: 
+      <a href="https://ucmove.campaign.gov.uk/" target="_blank">https://ucmove.campaign.gov.uk/</a>
+      </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Sheffield Credit Union</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+    You can find out more information about the Sheffield Credit Union at: 
+    <a href="https://sheffieldcreditunion.com/" target="_blank">https://sheffieldcreditunion.com/</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Healthy Start Scheme: get help to buy food and milk</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+    You can find out more information about the Healthy Start Scheme at: 
+    <a href="https://www.healthystart.nhs.uk/" target="_blank">https://www.healthystart.nhs.uk/</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Get help with your transport if you are referred to hospital</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+    If you have a referral to a specialist or a hospital for
+    NHS treatment or tests and you are on benefits or
+    allowances you could claim travel costs.
+    To claim, take your travel receipts, appointment
+    letter or card, plus proof that you're receiving one of
+    the qualifying benefits, to a nominated cashiers'
+    office in the hospital/clinic.
+    More information about getting help with transport if you are referred to hospital at: 
+    <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/" target="_blank">https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Apply for Housing Benefit</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <section class="alert-panel--ineligible" role="alert" aria-label="Alert panel">
+    <p>
+        Changes to our IT systems may cause delays in processing changes to housing benefit claims, 
+        discretionary housing payments, requests for Council Tax support and council tax hardship scheme awards.
+        We apologise for any inconvenience this may cause you.
+    </p>
+    </section>
+    <p>
+    If you’re on a low income you can apply for Housing Benefit to help you pay for part or all of your rent.
+    You can apply for Housing Benefit whether you’re unemployed or working, and whether you rent from the private sector, 
+    a Housing Association or our Council housing.
+    </p>
+    <section class="alert-panel--ineligible" role="alert" aria-label="Alert panel">
+    <h3>Universal Credit</h3>
+    <p>
+        From November 2018 if you need to start a new Housing Benefit claim you may have to claim Universal Credit.
+    </p>
+    </section>
+    <h3>How much you could receive</h3>
+    <p>
+        There’s no set amount of Housing Benefit. What you receive will be affected by:
+    </p>
+    <ul>
+        <li>if you are a private tenant. What you get will depend on whether you are restricted by the Local Housing Allowance</li>
+        <li>if you rent from us. Following the under-occupancy rule (or bedroom tax), you will receive less support if you have empty bedrooms in your house or flat</li>
+    </ul>
+    <section class="alert-panel--ineligible" role="alert" aria-label="Alert panel">
+    <h3>Urgent payment</h3>
+    <p>
+        If your claim hasn’t been processed yet and you need payment urgently because you’re facing eviction you must contact us as soon as possible.
+        You will need to send or bring in a copy of any information you’ve received about eviction proceedings. Once we have the evidence we need, 
+        we’ll arrange to pay your Housing Benefit as soon as we can.
+    </p>
+    </section>
+    <h3>Receiving payment</h3>
+    <p>
+    You should claim as soon as you can. We can usually pay Housing Benefit from the Monday after the day we receive your claim form. 
+    We can only backdate your benefit for up to one month from when you make your claim.
+    If you live in our Council housing, we’ll pay Housing Benefit directly into your rent account. You won’t receive the money.
+    If you’re a private tenant, we’ll usually pay Housing Benefit into your bank or building society account, 
+    although we may decide that it’s in your best interests to pay your Housing Benefit directly to your landlord.
+    </p>
+    <h3>Applying for Housing Benefit if you’re claiming other benefits</h3>
+    <p>
+    If you’re claiming Employment and Support Allowance, Income Support or Jobseeker’s Allowance, contact Jobcentre Plus to claim Housing Benefit too. 
+    Jobcentre Plus will send us details of your claim for Housing Benefit.If you’re claiming Universal Credit, you can get help paying for housing with your 
+    Universal Credit payment instead of getting Housing Benefit.
+    If you’re claiming Pension Credit, contact the Pension Service to claim Housing Benefit with your claim for Pension Credit. 
+    The Pension Service will send us details of your claim for Housing Benefit.
+    </p>
+    <h3>Apply for Housing Benefit if you’re not claiming other benefits</h3>
+    <p>
+    If you’re not claiming other benefits, you can apply online for Housing Benefit.
+    Once you've applied, we’ll let you know what information we need from you to support your claim. 
+    This may include information like your National Insurance Number, your birth certificate or driving licence, 
+    and evidence that you pay the rent, like your rent book or tenancy agreement.
+    You should provide this information as soon as you can so we can deal with your claim as quickly as possible. 
+    When you provide evidence please bare in mind the following:
+    <ul>
+        <li>we can only accept original documents as proof. We can’t accept photocopies</li>
+        <li>you can bring the documents we need to First Point or any Area Housing Office</li>
+        <li>if you supply the proofs in person we’ll photocopy them and give you the originals back. We’ll also give you a receipt. You should ask to see the photocopies and make sure that you’re satisfied that the copies are clear and legible</li>
+        <li>if we need more evidence, we’ll write to you as soon as possible to let you know</li>
+    </ul>
+    </p>
+    <p>
+    Check your eligibility and calculating your entitlement at:
+    <a href="https://www.entitledto.co.uk/" target="_blank">https://www.entitledto.co.uk/</a>
+    SEND EMAIL FUNCTION > (https://lwa.financialassessments.co.uk/OnlineApplication/(S(srurjaqhe0ks40tvngd1kzqi))/Introduction.aspx?form=ADECLAIM&time=638664976262485503,1730900826894)
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Sheffield Money Support Guide</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+    You can find out more information about the Sheffield Money Support Guide at: 
+    <a href="https://sheffieldmoneysupport.co.uk/" target="_blank">https://sheffieldmoneysupport.co.uk/</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Multiply: imrove your numeracy skills</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+    You can find out more information about Multiply at: 
+    <a href="https://linktr.ee/multiplysheffield" target="_blank">https://linktr.ee/multiplysheffield</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Free vitamins for pregnant women, new mums and children under 4</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      If you’re pregnant you can have free Healthy Start
+      vitamins up to your baby’s 1st birthday.
+      Your children can have free Healthy Start vitamin
+      drops from the age of 4 weeks until their 4th
+      birthday.
+      Ask your midwife or health visitor today.
+      More information on free vitamins at: 
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2023-05/NHS_Vitamin_Support.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-05/NHS_Vitamin_Support.pdf</a>
+    </p>
+    <p>
+      Children who are having 500ml or more of formula a day do not need these vitamins.
+      You or your children should not take more than the recommended amount.
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Prescription support using prepayment certificate</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      If you know you'll have to pay for lots of
+      prescriptions, it may be cheaper to buy a
+      prescription prepayment certificate.
+      This covers all your NHS prescriptions, including NHS
+      dental prescriptions, no matter how many you need.
+      If you need 2 items a month you could save £116.30 a
+      year.
+      More information on prescription prepayment certificates by calling <strong>0300 330 1341</strong> or visiting: 
+      <a href="https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start" target="_blank">https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start</a>
+    </p>
+    <p>
+      Children who are having 500ml or more of formula a day do not need these vitamins.
+      You or your children should not take more than the recommended amount.
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Make your money go further</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      A large proportion of government benefits and allowances go unclaimed every year, meaning you may be entitled to benefits and support that you are not receiving. 
+      Furthermore, there are a number of ways that you can reduce your outgoings and increase your income, making your money go further.
+      On this page you will find information to help your money go further, including benefits checkers and ways to reduce your household bills.
+      Alternatively, if you would like assistance with assessing your circumstances to find out how you can make your money go further, 
+      you can start a web chat with one of our team who will book an appointment for you.
+      <p>
+        <h3>Help with your Council Tax bill or arrears</h3>
+        <h4>Council Tax support</h4>
+        You could be eligible for a reduction of up to 100% in the amount of Council Tax you pay each month, 
+        if you’re on a low income or you claim benefits. You can apply if you own your home, rent, are unemployed or working.
+        What you receive will depend on:
+        <ul>
+          <li>your circumstances (for example income, number of children, benefits, residency status)</li>
+          <li>your household income - this includes savings, pensions and your partner’s income</li>
+          <li>if your children live with you</li>
+          <li>if other adults live with you</li>
+        </ul>
+        <h4>Council Tax discounts and exemptions</h4>
+        Certain people are eligible for discounts or exemptions from Council Tax, including students, people who are disabled and people who live alone.
+        <h4>Help with rent and Council Tax</h4>
+        The Discretionary Housing Payment (DHP) scheme can help you if you get Housing Benefit or Universal Credit, but you still need help to pay your rent. 
+        If you get Council Tax Support (CTS) you can also get help to pay your Council Tax under the Council Tax Hardship Scheme (CTHS).
+        <h4>Help with your water bill</h4>
+        If you are on benefits, on a low income, have debt connected to your water bill, or have a medical condition that means you need to use more water, 
+        you may be eligible for help paying your water bill. Yorkshire Water runs a number of schemes that can reduce the amount you pay for water each month.
+        <h3>Check if you could get additional income</h3>
+        Billions of pounds of benefits go unclaimed each year and many people don’t know what they are entitled to, 
+        but a simple check can assist you to make a claim. Use a benefits calculator to find out what you could receive.
+        <h3>Help with telephone and broadband costs</h3>
+        Many telephone and broadband companies have social tariffs for people claiming Universal Credit, Pension Credit and some other benefits.
+        <h3>Access crisis grants if you're in hardship</h3>
+        If you are in hardship and cannot afford food, energy and other essentials, you may be eligible for a payment under the Household Support Fund.
+        If you are in crisis following an emergency or disaster, or need help to remain in your home, you may be eligible for a payment under the Local Assistance Scheme.
+      </p>
+    </section>
   </div>
   </details>
   `,
