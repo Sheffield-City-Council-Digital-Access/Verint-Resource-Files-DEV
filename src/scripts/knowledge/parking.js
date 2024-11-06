@@ -1930,5 +1930,5 @@ const parking = new ServiceP(
   "parking",
   "Parking",
   `Car parks, on-street parking, residents' parking permits, visitors' parking, disabled parking, parking fines…`,
-  [parkingPermits, penaltyChargeNoticePcn, parkingIssues, blueBadge, cleanAirZone]
+  [parkingPermits, penaltyChargeNoticePcn, parkingIssues, blueBadge]
 );
