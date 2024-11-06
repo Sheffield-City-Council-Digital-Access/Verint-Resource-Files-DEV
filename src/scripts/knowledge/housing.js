@@ -2287,11 +2287,7 @@ We will have also written to the other party advising them what action they need
         </details>
 
 
-        
 
-
-
-  
 
 
   `,
@@ -2314,6 +2310,330 @@ We will have also written to the other party advising them what action they need
   },
   { date: "23/09/2024", name: "Gee Whitehouse" }
 );
+
+
+const allocationsPolicyGuidance = new ContentH(
+  "allocationsPolicyGuidances",
+  "Allocations Policy Guidance",
+  "Descritption",
+  `
+ 
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>FAQ's</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                What is a band?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                  A band is where an applicant is placed based on their needs and/or circumstances. 
+                  A band is used to determine the priority of an application. Band A is the highest and Band E is the lowest.
+
+                </p>
+            </div>
+        </details>
+    </div>
+</details>
+
+<div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Which band am I in?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                  Check Housing Registration Application on Abritas – this will show the applicant’s band.
+
+                </p>
+            </div>
+        </details>
+
+        <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Why have I been placed in the band I have?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+             The bands take in to account your individual circumstances and you have been placed in to the band which is seen as the most appropriate 
+             for your needs, based on the information you have provided.
+
+                </p>
+            </div>
+        </details>
+
+   
+
+
+  `,
+  {
+    buttonLabel: " ",
+    formName: "",
+  },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "repairs and investmant",
+      "repears and investment",
+      "repairs and invesment",
+      "repair and investement",
+      "repairs and invesmant",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "23/09/2024", name: "Gee Whitehouse" }
+);
+
+const fosteringAndAdoption = new ContentH(
+  "fosteringAndAdoption",
+  "Fostering and Adoption",
+  "Descritption",
+  `
+ 
+<h3>Adoption</h3>
+
+<p> Social Services will undertake an initial visit to assess the size of the applicant’s current accommodation. 
+Bedroom eligibility in these situations will only be amended once we have received confirmation to go ahead from Social Services. Upon receipt of confirmation, the bedroom eligibility can be amended. 
+An e-mail from Social Services will be the normal route to receive confirmation. </p>
+
+   <h3>Fostering</h3>
+
+   <p>Fostering has a different process. 
+   Until an applicant is suitably housed an assessment cannot begin. 
+   Confirmation from Social Services in the form of an email stating the applicant has made an application to foster is the requirement 
+   to change bedroom eligibility. Upon receipt of confirmation, the bedroom eligibility can be amended. 
+   An e-mail from Social Services will be the normal route to receive confirmation. 
+   However staff advising potential foster carers must advise the applicant of the benefit implications of moving to a 
+   larger property if the child / children are not placed with them immediately after they move or they do not proceed with the 
+   application to foster after they are rehoused.</p>
+
+  `,
+  {
+    buttonLabel: " ",
+    formName: "",
+  },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "repairs and investmant",
+      "repears and investment",
+      "repairs and invesment",
+      "repair and investement",
+      "repairs and invesmant",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "23/09/2024", name: "Gee Whitehouse" }
+);
+
+const priorityBandingTable = new ContentH(
+  "riorityBandingTable",
+  "Priority Banding Table",
+  "Descritption",
+  `
+ 
+<h3>Priority Banding Table</h3>
+
+<p>The table below shows the list of priorities and the bands they fall in. </p>
+
+<p>Some of the priorities span multiple bands and we cannot give a definitive answer for which band they will be in e.g. demolition and health. 
+As such, these are marked in the table below as ‘None’. </p>
+
+<p>Also marked as ‘None’ are the priorities which no longer exist.  These are: </p>
+
+<ul>
+
+<li>Council Service tenant retiring or leaving employment</li>
+<li>Council service tenant who is dismissed</li>
+<li>Special Case </li>
+<li>If a priority spans the bands, the awarding officer will have already spoken with the customer.</li>
+
+</ul>
+
+<h3>Effective Dates</h3>
+
+<p>Within bands A-D there is no hierarchy, offers will be made solely on the effective date within the band. For example, 
+three different priorities within the same Band would be ordered based on the earliest effective date first.</p>
+
+<p>The only exception is Band E which has the following hierarchy: </p>
+
+<ul>
+
+<li>No Local Connection</li>
+<li>Refused Offers</li>
+<li>Unacceptable Behaviour </li>
+
+
+</ul>
+
+<p>Inside each of the above rungs, applicants are ordered based on effective date.  
+Therefore, an applicant with unacceptable behaviour in Band E will always come below an applicant in Band E due to refused offers 
+regardless of their effective date.</p>
+
+<h3>Priorities Banding Table</h3>
+
+<p>Links to banding table</p>
+
+
+  `,
+  {
+    buttonLabel: " ",
+    formName: "",
+  },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "repairs and investmant",
+      "repears and investment",
+      "repairs and invesment",
+      "repair and investement",
+      "repairs and invesmant",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "23/09/2024", name: "Gee Whitehouse" }
+);
+
+const applicantPlacedInAPriorityBand = new ContentH(
+  "applicantPlacedInAPriorityBand",
+  "Allocations Policy - Applicant placed in a priority band",
+  "Description",
+  `
+
+  <details class="accordion">
+    <summary class="accordion-header">
+        <h3>FAQ's</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Why has my priority bid not been successful?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                   If you are in Priority Band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
+                   despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
+                </p>
+            </div>
+        </details>
+    </div>
+</details>
+
+ <summary>
+                Why has my priority bid not been successful?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                   If you are in Priority Band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
+                   despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
+                </p>
+            </div>
+        </details>
+
+        <h3>Allocations Policy - Applicant placed in Band E</h3>
+
+        <details class="accordion">
+    <summary class="accordion-header">
+        <h3>FAQ's</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Why am I in Band E?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                You have been placed in Band E due to your circumstances, in accordance with the allocations policy. 
+                For example: out of town and no local connection; rent arrears etc.   
+                </p>
+            </div>
+        </details>
+    </div>
+</details>
+
+ <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Owner Occupier in Band D/E - why cant I bid?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                The new policy states that owner occupiers may register, but will have their bidding restricted until they have sold their property. 
+                Proof of sale by way of exchange of contracts will be required before an owner occupier can start bidding, 
+                unless they have been assessed and given a priority. 
+                In this case proof of sale would need to be produced as a later date.
+                </p>
+            </div>
+        </details>
+
+            <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Why am I classed as no local connection but have a Sheffield postcode?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                A local connection means within the Sheffield city boundary. 
+                Although many areas use a Sheffield postcode, they are classed as outside of Sheffield.
+                </p>
+            </div>
+        </details>
+
+                 <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Im in Band E, but have a longer waiting time than someone who was offered a property?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                You are in Band E which means you will be considered after applicants in Band D, regardless of your waiting time. 
+                This is because Band E is classed as having reduced preference. 
+                Also, certain applicants within Band E will be considered before others in Band E, regardless of waiting time. 
+                For example, if you have arrears, you will be considered after someone living outside of Sheffield.
+                </p>
+            </div>
+        </details>
+
+        
+
+
+
+
+
+
+  `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_sustainment_gen_enq",
+  },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  {
+    type: "Request",
+    keywords: [
+      "repairs and investmant",
+      "repears and investment",
+      "repairs and invesment",
+      "repair and investement",
+      "repairs and invesmant",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "23/09/2024", name: "Shahzad Athar" }
+);
+
 
 
 const applicationChanges = new ContentH(
@@ -2624,6 +2944,16 @@ const applyForRehousing = new ContentH(
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
+
+const policy = new MenuH(
+  "rehousing",
+  "Rehousing",
+  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
+  [
+    allocationsPolicyGuidance,applicantPlacedInAPriorityBand,fosteringAndAdoption,priorityBandingTable,
+  ]
+);
+
 const rehousing = new MenuH(
   "rehousing",
   "Rehousing",
@@ -2635,6 +2965,7 @@ const rehousing = new MenuH(
     eligibility,
     bidding,
     idReferencesMenu,
+    policy,
   ]
 );
 
