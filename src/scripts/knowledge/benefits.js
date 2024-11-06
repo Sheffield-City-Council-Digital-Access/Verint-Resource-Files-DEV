@@ -313,6 +313,8 @@ const moneySupport = new ContentB(
       </p>
     </p>
   </div>
+  </details>
+  <details class="accordion">
   <summary class="accordion-header">
     <h3>Test</h3>
     <div class="accordion-icon"></div>
