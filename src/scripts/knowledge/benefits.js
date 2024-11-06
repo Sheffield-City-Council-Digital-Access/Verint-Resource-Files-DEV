@@ -151,6 +151,22 @@ const waysToReduceYourFuelBills = new ContentB(
   { date: "05/11/2024", name: "Nathan Smith" }
 );
 
+const findFoodSupportInSheffield = new ContentB(
+  "findFoodSupportInSheffield",
+  "Find food support in Sheffield",
+  "Description",
+  `
+    <p>
+      Food support in Sheffield can be found at: <a href="https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield" target="_blank">https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield</a>
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "cost_of_living_scheme_transferred_to_service" },
+  { typeKey: "cost_of_living_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "06/11/2024", name: "Nathan Smith" }
+);
+
 const applyForTheHouseholdSupportFund = new ContentB(
   "applyForTheHouseholdSupportFund",
   "Apply for the Household Support Fund",
@@ -230,6 +246,80 @@ const applyForTheHouseholdSupportFund = new ContentB(
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "05/11/2024", name: "Nathan Smith" }
+);
+
+const mapOfWelcomePlacesInSheffield = new ContentB(
+  "mapOfWelcomePlacesInSheffield",
+  "Map of Welcome Places in Sheffield",
+  "Description",
+  `
+    <p>
+      A map of Welcome Places in Sheffield can be found at: <a href="https://www.vas.org.uk/sheffield-living-crisis-map-of-support/" target="_blank">https://www.vas.org.uk/sheffield-living-crisis-map-of-support/</a>
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "cost_of_living_scheme_transferred_to_service" },
+  { typeKey: "cost_of_living_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "06/11/2024", name: "Nathan Smith" }
+);
+
+const moneySupport = new ContentB(
+  "moneySupport",
+  "Money support",
+  "Description",
+  `
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Discretionary Housing Payment and Council Tax Hardship Scheme</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      The Discretionary Housing Payment (DHP) scheme can help you if you get Housing Benefit or Universal Credit, 
+      but you still need help to pay your rent. If you get Council Tax Support (CTS) you can also get help to pay 
+      your Council Tax under the Council Tax Hardship Scheme (CTHS).
+      <section class="alert-panel--ineligible" role="alert" aria-label="Alert panel">
+        <p>
+          Changes to our IT systems may cause delays in processing changes to housing benefit claims, discretionary housing payments, 
+          requests for Council Tax support and council tax hardship scheme awards.
+          We apologise for any inconvenience this may cause you.
+        </p>
+      </section>
+      <p>
+      <h3>What DHP can't help with</h3>
+      There are some charges that DHP can’t cover including:
+      <ul>
+      <li>service charges like heating or hot water</li>
+      <li>charges for water rates</li>
+      <li>charges for tenants levy</li>
+      </ul>
+      <h3>How much we can award and how long the award lasts</h3>
+      The amount of DHP we can award and how long the award lasts depends on your own circumstances. You must be able to show that you need extra help to meet your housing costs.
+      The amount of CTHS we can award depends upon your circumstances, and in most cases, the award you receive will be made for the current financial year.
+      DHP and CTHS come from a fixed pot of money, so we try to give the extra help to people who need it most. Once we’ve spent the money in the pot, no further awards can be made.
+      <h3>How we pay</h3>
+      If you’re a Council tenant, we’ll pay your DHP directly to your rent account. If you’re a private tenant, we’ll pay your DHP in the same way as your Housing Benefit.
+      If you’re in receipt of Universal Credit, we will make the payment directly to you, or your landlord.
+      If you’re awarded CTHS, we’ll reduce your Council Tax and send you a new bill for a lower amount.
+      <h3>The application process</h3>
+      You need to provide as much information as you can about how much you spend each week on items like food, bills, clothes, your children and travel.
+      You don’t have to provide details of your income as we get this from your Housing Benefit claim. When we receive your application form and have checked your 
+      supporting information we’ll write to you with a decision.
+      <h3>If you need to appea</h3>
+      If you don’t agree with our decision you can contact the Discretionary Payment Team and ask us to look at your application again.
+      You must appeal within one month of the date of your decision letter. You should provide any information you feel may help your 
+      application and we’ll review our decision and write to you with the outcome.
+      </p>
+    </p>
+  </div>
+  </details>
+  `,
+  { buttonLabel: "Apply for Discretionary Housing Payment and Council Tax Hardship Scheme", formName: "apply_dhp_cths" },
+  { typeKey: "cost_of_living_scheme_transferred_to_service" },
+  { typeKey: "cost_of_living_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "06/11/2024", name: "Nathan Smith" }
 );
 
 //#endregion Cost of Living
@@ -1165,10 +1255,10 @@ const costOfLiving = new MenuB(
   "Description",
   [
     waysToReduceYourFuelBills,
-    // findFoodSupportInSheffield,
+    findFoodSupportInSheffield,
     applyForTheHouseholdSupportFund,
-    // mapOfWelcomePlacesInSheffield,
-    // moneySupport,
+    mapOfWelcomePlacesInSheffield,
+    moneySupport,
     // foodSupport,
     // energySupport,
     // howYouCanHelpYourCommunity,
