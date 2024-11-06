@@ -105,9 +105,11 @@ const waysToReduceYourFuelBills = new ContentB(
       <li>ways to use less energy</li>
       <li>energy efficiency grant advice</li>
       </ul>
+    <p>
       LEAP can also provide information on benefits, budgeting and debt advice and energy tariff switching. 
       You can access the service online or by calling (freephone) <strong>0800 060 7567</strong> or emailing <a href="mailto:support@applyforleap.org.uk">support@applyforleap.org.uk</a>.
       Local Energy Advice Partnership can be found at: <a href="https://applyforleap.org.uk/" target="_blank">https://applyforleap.org.uk/</a> 
+    </p>
     </p>
     <h3>Citizens Advice Bureau Sheffield</h3>
     <p>
@@ -119,6 +121,7 @@ const waysToReduceYourFuelBills = new ContentB(
     <h3>Green Doctor</h3>
     <p>
       Green Doctors, provide specialist advice on how households can reduce their energy bills and make their homes more energy efficient.
+    </p>
       Green Doctors can provide advice on:
       <ul>
       <li>energy bills and fuel debt support</li>
@@ -128,6 +131,7 @@ const waysToReduceYourFuelBills = new ContentB(
       <li>water bills and debt</li>
       <li>damp/condensation/mould advice</li>
       </ul>
+    <p>
       Green Doctor can be found at: <a href="https://www.groundwork.org.uk/greendoctor/" target="_blank">https://www.groundwork.org.uk/greendoctor/</a> 
     </p>
     <h3>Improve Energy Efficiency Service</h3>
@@ -135,12 +139,16 @@ const waysToReduceYourFuelBills = new ContentB(
       The Improve Energy Efficiency Service is a free Government endorsed service. If you own a property in England or Wales you can get recommendations 
       for home improvements that could make your property cheaper to heat and keep warm. 
       For each recommendation you can see an estimated cost of making the improvement, 
-      how much you could save on your bills and next steps if you want to make the improvement. 
+      how much you could save on your bills and next steps if you want to make the improvement.
+    </p>
+    <p>
       GOV.UK: Improve energy efficiency can be found at: <a href="https://www.gov.uk/improve-energy-efficiency" target="_blank">https://www.gov.uk/improve-energy-efficiency</a> 
     </p>
     <h3>Cost of living support and advice</h3>
     <p>
       Here you can find out the local and national support available to help you manage the cost of living in Sheffield.
+    </p>
+    <p>
       Cost of living support and advice can be found at: <a href="https://www.sheffield.gov.uk/cost-of-living" target="_blank">https://www.sheffield.gov.uk/cost-of-living</a> 
     </p>
   `,
@@ -175,6 +183,8 @@ const applyForTheHouseholdSupportFund = new ContentB(
     <p>
       This is a non-repayable grant to help people living in Sheffield with food and energy costs. It is funded by the UK Government.
       You can apply for help from the fund once every 3 months for help with paying for:
+    </p>
+    <p>
       <ul>
       <li>food</li>
       <li>gas and electricity</li>
@@ -183,7 +193,11 @@ const applyForTheHouseholdSupportFund = new ContentB(
       <li>clothing</li>
       <li>wider essential needs not linked to energy and water, should the local authority consider this appropriate in your circumstances</li>
       </ul>
+    </p>
+    <p>
       It cannot be awarded for:
+    </p>
+    <p>
       <ul>
       <li>payment of debts</li>
       <li>mortgage costs</li>
@@ -192,8 +206,12 @@ const applyForTheHouseholdSupportFund = new ContentB(
       <li>clothing</li>
       <li>white goods (visit <a href="https://applyforleap.org.uk/leap-appliances/" target="_blank">https://applyforleap.org.uk/leap-appliances/</a> for support replacing broken or damaged white goods)</li>
       </ul>
+    </p>
+    <p>
       If you need help paying rent or housing arrears, you must apply for Universal Credit, Housing Benefit, a Discretionary Housing Payment or a Homelessness Prevention Grant.
       If you can prove you are ineligible for these benefits, in extreme circumstances we may be able to help with rent arrears or deposits for new tenancies.
+    </p>
+    <p>
       <section class="info-panel" role="region" aria-label="Information panel">
         <p>
           Please be aware that applications to the Household Support Fund can only be made once every three months. This is to ensure that support can continue to be offered throughout the year.
@@ -204,6 +222,8 @@ const applyForTheHouseholdSupportFund = new ContentB(
     <p>
       In most circumstances, we will not require any evidence from you to process your application. If we do require information from you, we'll write to you and request this.
       This could include a recent bank statement for every adult account holder in the household. These bank statements should:
+    </p>
+    <p>
       <ul>
       <li>include the application date</li>
       <li>show at least 30 days of transactions</li>
@@ -212,22 +232,30 @@ const applyForTheHouseholdSupportFund = new ContentB(
       <li>show the sort code, account number and account holder name</li>
       <li>be saved in pdf format (not screenshots)</li>
       </ul>
+    </p>
+    <p>
       <section class="info-panel" role="region" aria-label="Information panel">
         <p>
           If you're looking for additional support with your application, we've partnered with a select group of trusted organisations, 
           known as Trusted Assessors, who are ready to assist you. These organisations specialise in various areas, offering their expertise 
           and tailored assistance, both to make your application process smoother and to provide support in their respective fields.
-          Our network of Trusted assessors can be found at: <a href="https://www.sheffielddirectory.org.uk/HSF" target="_blank">https://www.sheffielddirectory.org.uk/HSF</a>
+          <p>
+            Our network of Trusted assessors can be found at: <a href="https://www.sheffielddirectory.org.uk/HSF" target="_blank">https://www.sheffielddirectory.org.uk/HSF</a>
+          </p>
         </p>
       </section>
     </p>
     <h3>What happens next</h3>
     <p>
       A council officer will look at all the information on your application before deciding if we can make an award. The information you provide will help us decide: 
+    </p>
+    <p>
       <ul>
       <li>whether you meet the eligibility criteria</li>
       <li>the amount you may be awarded</li>
       </ul>
+    </p>
+    <p>
       If you have provided us with an email address, written confirmation of the decision will be sent to you by email. 
       If you do not have an email address, the decision notice will be sent to your home address by second class post.
       If you have no recourse to public funds, you may in some circumstances be eligible for assistance. 
