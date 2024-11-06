@@ -286,8 +286,8 @@ const moneySupport = new ContentB(
           We apologise for any inconvenience this may cause you.
         </p>
       </section>
-      <p>
       <h3>What DHP can't help with</h3>
+      <p>
       There are some charges that DHP can’t cover including:
       <ul>
       <li>service charges like heating or hot water</li>
@@ -339,6 +339,7 @@ const moneySupport = new ContentB(
           You can find more information on what to do if you receive a Migration Notice at: 
           <a href="https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice" target="_blank">https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice</a>
         </p>
+    </section>
       <h3>Who is eligible</h3>
       <p>
           You may be entitled to Universal Credit if you are:
@@ -386,7 +387,6 @@ const moneySupport = new ContentB(
       Find out how Universal Credit could help you at: 
       <a href="https://ucmove.campaign.gov.uk/" target="_blank">https://ucmove.campaign.gov.uk/</a>
       </p>
-    </section>
   </div>
   </details>
   <details class="accordion">
