@@ -2398,11 +2398,20 @@ const cleanAirZone = new MenuPaN(
   "cleanAirZone",
   "Clean Air Zone",
   "Information about the Clean Air Zone Scheme",
-  [cleanAirZone]
+  [ whatIsACleanAirZone,
+    whyIsACleanAirZoneBeingIntroduced,
+    whatVehiclesWillBeCharged,
+    whenWillDriversBeCharged,
+    howMuchWillDriversBeCharged,
+    howWillDriversBeCharged,
+    howAreChargesPaid,
+    howLongWillTheCleanAirZoneBeInPlace,
+    whatSupportWillThereBeForThoseAffected,
+  ]
 );
 
-const Whatisacleanairzone = new ContentPaN(
-  "Whatisacleanairzone",
+const whatIsACleanAirZone = new ContentPaN(
+  "whatIsACleanAirZone",
   "What Is A Clean Air Zone",
   "Information relating to the Clean Air Zone Scheme",
 `
@@ -2431,8 +2440,8 @@ const Whatisacleanairzone = new ContentPaN(
 { date: "06/11/2024", name: "Dinah Williams" }
 );
 
-const Whyisacleanairzonebeingintroduced = new ContentPaN(
-  "Whyisacleanairzonebeingintroduced",
+const whyIsACleanAirZoneBeingIntroduced = new ContentPaN(
+  "whyIsACleanAirZoneBeingIntroduced",
   "Why Is A Clean Air Zone Being Introduced",
   "Information relating to why the Clean Air Zone is being introduced",
 
@@ -2461,8 +2470,8 @@ const Whyisacleanairzonebeingintroduced = new ContentPaN(
 { date: "06/11/2024", name: "Dinah Williams" }
 );
 
-const Whatvehicleswillbecharged = new ContentPaN(
-  "Whatvehicleswillbecharged",
+const whatVehiclesWillBeCharged = new ContentPaN(
+  "whatVehiclesWillBeCharged",
   "What vehicles will be charged",
   "Information relating to which vehicles charged",
 
@@ -2499,7 +2508,7 @@ const Whatvehicleswillbecharged = new ContentPaN(
 { date: "06/11/2024", name: "Dinah Williams" }
 );
 
-const Whenwilldriversbecharged = new ContentPaN(
+const whenWillDriversBeCharged = new ContentPaN(
   "Whenwilldriversbecharged",
   "When Will Drivers Be Charged",
   "Information relating to when drivers will be charged",
@@ -2526,8 +2535,8 @@ const Whenwilldriversbecharged = new ContentPaN(
 { date: "06/11/2024", name: "Dinah Williams" }
 );
 
-const Howmuchwilldriversbecharged = new ContentPaN(
-  "Howmuchwilldriversbecharged",
+const howMuchWillDriversBeCharged = new ContentPaN(
+  "howMuchWillDriversBeCharged",
   "How much will drivers be charged",
   "Information relating to how much drivers will be charged",
 
@@ -2559,8 +2568,8 @@ const Howmuchwilldriversbecharged = new ContentPaN(
 { date: "06/11/2024", name: "Dinah Williams" }
 );
 
-const Howwilldriversbecharged = new ContentPaN(
-  "Howwilldriversbecharged",
+const howWillDriversBeCharged = new ContentPaN(
+  "howWillDriversBeCharged",
   "How will drivers be charged",
   "Information relating to how drivers will be charged",
 `
@@ -2587,8 +2596,8 @@ const Howwilldriversbecharged = new ContentPaN(
 { date: "06/11/2024", name: "Dinah Williams" }
 );
 
-const Howarechargespaid = new ContentPaN(
-  "Howarechargespaid",
+const howAreChargesPaid = new ContentPaN(
+  "howAreChargesPaid",
   "How are charges paid",
   "Information relating to how charges are paid",
 `
@@ -2616,8 +2625,8 @@ const Howarechargespaid = new ContentPaN(
 { date: "06/11/2024", name: "Dinah Williams" }
 );
 
-const Howlongwillthecleanairzonebeinplace = new ContentPaN(
-  "Howlongwillthecleanairzonebeinplace",
+const howLongWillTheCleanAirZoneBeInPlace = new ContentPaN(
+  "howLongWillTheCleanAirZoneBeInPlace",
   "How long will the Clean Air Zone be in place",
   "Information relating to how long the Clean Air Zone will be in place",
 `
@@ -2647,8 +2656,8 @@ const Howlongwillthecleanairzonebeinplace = new ContentPaN(
 { date: "06/11/2024", name: "Dinah Williams" }
 );
 
-const Whatsupportwilltherebeforthoseaffected = new ContentPaN(
-  "Whatsupportwilltherebeforthoseaffected",
+const whatSupportWillThereBeForThoseAffected = new ContentPaN(
+  "whatSupportWillThereBeForThoseAffected",
   "What support will there be for those affected",
   "Information relating to support for those affected",
 `
