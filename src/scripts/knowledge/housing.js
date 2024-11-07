@@ -53,6 +53,814 @@ class CoreH {
   
   // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
   // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
+
+   //#region Benefits 
+
+   const contactHousingBenefits = new ContentH(
+    "contactHousingBenefits",
+    "Contact Housing Benefits",
+    "Description tbc"
+    `
+    <h3>Contact Housing Benefits</h3>
+      <p>Transfer the Customer to the Benefits Team on the number below. If the line is busy, 
+      <strong>DO NOT</strong> ask the customer to call back later today; instead, advise the customer to email either:</p>
+      <ul>
+          <li><a href="mailto:Council.tax@sheffield.gov.uk">Council.tax@sheffield.gov.uk</a></li>
+          <li><a href="mailto:Benefits@sheffield.gov.uk">Benefits@sheffield.gov.uk</a></li>
+      </ul>
+      <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html">Sheffield Council Tax</a></p>
+      <p><strong>Service Area:</strong> Sheffield Benefits Service</p>
+      <p><strong>Telephone Number:</strong> 0114 27 36777</p>
+      <p><strong>Email Address:</strong> <a href="mailto:Council.tax@sheffield.gov.uk">Council.tax@sheffield.gov.uk</a> or 
+      <a href="mailto:Benefits@sheffield.gov.uk">Benefits@sheffield.gov.uk</a></p>
+  
+      <h4>Contact Council Tax</h4>
+      <p>Transfer the Customer to the Council Tax Team on the number below. If the line is busy, <strong>DO NOT</strong> 
+      ask the customer to call back later today; instead, advise the customer to email either:</p>
+      <ul>
+          <li><a href="mailto:Council.tax@sheffield.gov.uk">Council.tax@sheffield.gov.uk</a></li>
+          <li><a href="mailto:Benefits@sheffield.gov.uk">Benefits@sheffield.gov.uk</a></li>
+      </ul>
+      <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html">Sheffield Council Tax</a></p>
+      <p><strong>Service Area:</strong> Council Tax</p>
+      <p><strong>Telephone Number:</strong> 0114 27 36633 (Public Number)</p>
+      <p><strong>Further Information:</strong> Lines open 8:30-5:30</p>
+      <p><strong>Email Address:</strong> <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></p>
+    `,
+    
+    { buttonLabel: "Contact Benefits", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+      keywords: [
+        'Housing Benefit',
+        'Housing Benfit',
+        'Housing Benifit',
+        'Housng Benefit',
+        'Housing Beneift',
+        'Housin Benefit',
+        'Housing Benefet',
+        'Housng Benfit',
+        'Housin Benifit',
+        'Housing Benifits',
+        'Contact Benefits',
+        'Contct Benefits',
+        'Contat Benefits',
+        'Contact Benifits',
+        'Cntact Benefits',
+        'Contct Benifits',
+        'Contact Benifit',
+        'Conatct Benefits'
+      ],      
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+
+  const benefitCap = new ContentH(
+    "benefitCap",
+    "Benefit Cap",
+    "Description tbc"
+    `
+      <h3>Benefit Cap</h3>
+      <p>View website for Housing Benefit Cap Information: <a href="https://www.gov.uk/benefit-cap">Benefit Cap Information</a></p>
+    `,
+      { buttonLabel: "Benefit Cap", formName: "" },
+      { typeKey: "housing_benefits_information_provided" },
+      { typeKey: "housing_benefits_information_requested" },
+      {
+        type: "Information",
+       keywords: [
+    'Housing Benefit',
+    'Housing Benfit',
+    'Housing Benifit',
+    'Housng Benefit',
+    'Housing Beneift',
+    'Housin Benefit',
+    'Housing Benefet',
+    'Housng Benfit',
+    'Housin Benifit',
+    'Housing Benifits',
+    'Benefit Cap',
+    'Benfit Cap',
+    'Beneift Cap',
+    'Benifit Cap',
+    'Benfit Cpap',
+    'Benfit Capp',
+    'Benefitt Cap'
+  ],
+        categories: ["Housing", "Benefits"],
+      },
+      { date: "05/11/2024", name: "Andy Walker" }
+    );
+
+    const benefitClaim = new ContentH(
+      "benefitClaim",
+      "Benefit Claim",
+      "Description tbc"
+      `
+        <h3>Benefit Claim</h3>
+        <h4>Customer is not a council tenant</h4>
+        <p>If the customer is not a Council Tenant, transfer them to the Benefits Team on the number below. If the line is busy, 
+        <strong>DO NOT</strong> ask the customer to call back later today; instead, advise the customer to email either:</p>
+        <ul>
+            <li><a href="mailto:Council.tax@sheffield.gov.uk">Council.tax@sheffield.gov.uk</a></li>
+            <li><a href="mailto:Benefits@sheffield.gov.uk">Benefits@sheffield.gov.uk</a></li>
+        </ul>
+        <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html">Sheffield Council Tax</a></p>
+        <p><strong>Service Area:</strong> Sheffield Benefits Service</p>
+        <p><strong>Telephone Number:</strong> 0114 27 36777</p>
+        <p><strong>Email Address:</strong> <a href="mailto:Council.tax@sheffield.gov.uk">Council.tax@sheffield.gov.uk</a> or <a href="mailto:Benefits@sheffield.gov.uk">Benefits@sheffield.gov.uk</a></p>
+      `,
+      { buttonLabel: "Benefit Claim", formName: "" },
+      { typeKey: "housing_benefits_information_provided" },
+      { typeKey: "housing_benefits_information_requested" },
+      {
+        type: "Information",
+       keywords: [
+      'Housing Benefit',
+      'Housing Benfit',
+      'Housing Benifit',
+      'Housng Benefit',
+      'Housing Beneift',
+      'Housin Benefit',
+      'Housing Benefet',
+      'Housng Benfit',
+      'Housin Benifit',
+      'Housing Benifits',
+      'Benefit Claim',
+      'Benfit Claim',
+      'Beneift Claim',
+      'Benifit Claim',
+      'Benfit Clam',
+      'Benfit Claaim',
+      'Benefitt Claim'
+    ],
+        categories: ["Housing", "Benefits"],
+      },
+      { date: "05/11/2024", name: "Andy Walker" }
+    );
+
+    const benefitsClawback = new ContentH(
+      "benefitsClawback",
+      "Benefits Clawback",
+      "Description tbc"
+      `
+      <h3>Benefits Clawback</h3>
+      <p>If you have been overpaid Housing Benefit and no longer receive it, you will receive an invoice from Sheffield Benefits Service to repay directly.
+         If you still receive Housing Benefit, the overpayment is recovered by reducing your weekly Housing Benefit. 
+         This reduction, which increases your rent payable by the same amount, is called 'Clawback'.
+         If you cannot afford the increase, you can appeal to Sheffield Benefits Service to have the amount reduced.</p>
+      `,
+      { buttonLabel: "Benefits Clawback", formName: "" },
+      { typeKey: "housing_benefits_information_provided" },
+      { typeKey: "housing_benefits_information_requested" },
+      {
+        type: "Information",
+        keywords: [
+      'Housing Benefit',
+      'Housing Benfit',
+      'Housing Benifit',
+      'Housng Benefit',
+      'Housing Beneift',
+      'Housin Benefit',
+      'Housing Benefet',
+      'Housng Benfit',
+      'Housin Benifit',
+      'Housing Benifits',
+      'Benefits Clawback',
+      'Benfits Clawback',
+      'Benifits Clawback',
+      'Beneifts Clawback',
+      'Benefits Clawbak',
+      'Benfits Clawbak',
+      'Benefits Clawbck',
+      'Benifits Clawbck'
+    ],
+        categories: ["Housing", "Benefits"],
+      },
+      { date: "05/11/2024", name: "Andy Walker" }
+    );
+
+    const benefitFraud = new ContentH(
+      "benefitFraud",
+      "Benefit Fraud",
+      "Description tbc"
+      `
+        <h3>Benefit Fraud</h3>
+        <p>The customer can report fraud anonymously online at: <a href="https://www.gov.uk/report-benefit-fraud">Report Benefit Fraud</a></p>
+      `,
+      { buttonLabel: "Benefit Fraud", formName: "" },
+      { typeKey: "housing_benefits_information_provided" },
+      { typeKey: "housing_benefits_information_requested" },
+      {
+        type: "Information",
+        keywords: [
+      'Housing Benefit',
+      'Housing Benfit',
+      'Housing Benifit',
+      'Housng Benefit',
+      'Housing Beneift',
+      'Housin Benefit',
+      'Housing Benefet',
+      'Housng Benfit',
+      'Housin Benifit',
+      'Housing Benifits',
+      'Benefit Fraud',
+      'Benfit Fraud',
+      'Benifit Fraud',
+      'Beneift Fraud',
+      'Benfit Fruad',
+      'Benfit Fraaud',
+      'Benefitt Fraud',
+      'Benifit Fraaud'
+    ],
+        categories: ["Housing", "Benefits"],
+      },
+      { date: "05/11/2024", name: "Andy Walker" }
+    );
+
+    const benefitOnTwoHomes = new ContentH(
+      "benefitOnTwoHomes",
+      "Benefit on Two Homes",
+      "Description tbc"
+      `
+    <h3>Benefit on Two Homes</h3>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h4>Unavoidable Liability</h4>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p><strong>Situation:</strong> When tenants sign for a tenancy and have moved in but have a liability on another property.</p>
+    <p>This is where a tenant has signed for a Council property but has a liability at another property. 
+       This usually occurs when they have to give four weeks' notice on the property 
+       they have left but are inclined to take the Council Housing Service property.</p>
+    <p>To make a claim for unavoidable liability, a written request needs to be made by the tenant. 
+       As it is discretionary, they will then need to satisfy the criteria 
+       as stated on the enclosed letter within the standard 28 days of the application. 
+       For housing benefit to be paid on the Council Housing Service property, 
+       the tenants will need to be physically living at the property. 
+       If not, housing benefit cannot be paid under unavoidable liability rules.</p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h4>Fleeing Violence</h4>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p><strong>Situation:</strong> Where a tenant is fleeing violence and has been put into other accommodation.</p>
+    <p>If someone is fleeing violence, and they state that they have an intention to return home if the threat of violence is lifted, 
+       then they can claim housing benefit on two homes if they have a rental liability at 
+       the property they are fleeing and the one that they are currently occupying.</p>
+    <p>They will need to complete a housing benefit claim for both homes.</p>
+    <p>To successfully claim housing benefit, they will need to confirm in writing that they have an intention 
+       to return to the property once the threat of violence is removed. 
+       They may also need to provide proof, such as a letter from the police, 
+       a crime reference number, or a letter from the Council Housing Service.</p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h4>Benefit Prior to Occupation</h4>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p><strong>Basic Principles:</strong> Benefit prior to occupation can only be paid when housing benefit is <u>not</u> being paid at any other property.</p>
+    <p><strong>Situation:</strong> Tenant(s) sign for a property but there is a delay in moving into the property.</p>
+    <p>A tenant(s) may qualify for up to four weeks of benefit prior to occupation if the delay in moving was 
+       reasonable and they were waiting for a social fund payment for a need connected with the move (e.g., removal expenses or help to set up home). 
+       This only applies if:</p>
+    <ul>
+      <li>They have a child of five or under living with them.</li>
+      <li>They are 60 or over and neither they nor their partner are receiving Income Support (IS) or income-based Jobseeker's Allowance (JSA).</li>
+      <li>They are under 60 (or they or their partner are receiving IS or JSA) and qualify for one of the pensioner premiums or 
+          a disability, severe disability, or disabled child premium.</li>
+      <li>They were waiting for adaptations to be completed to meet needs due to a disability (must be structural, not decorative).</li>
+      <li>They became liable for payments while a hospital patient or in residential accommodation.</li>
+    </ul>
+    <p>Housing benefit is not paid until the tenants move in, and they should have already informed the local authority (LA) of their intent to move. 
+       A new claim must be made within four weeks of the actual move-in date.</p>
+    <p>If the above criteria are not met, then a tenant will not be able to claim housing benefit until they move in.</p>
+    <p>You will need to inform the tenant that if they do not move in and do not meet the above criteria, 
+       they will be liable for full rent until they move into the property.</p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h4>In Hospital</h4>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>If a tenant is in hospital during the time they have signed up for the property, 
+       they will not be entitled to housing benefit until they actually move into the property.</p>
+    <p>If this is the case, it can be argued that they have moved the majority of their possessions into the 
+       property and that this is their main home (as per the basic principles). 
+       However, this does not apply if they have a property elsewhere.</p>
+  </div>
+</details>
+      `,
+      { buttonLabel: "Benefit on Two Homes", formName: "" },
+      { typeKey: "housing_benefits_information_provided" },
+      { typeKey: "housing_benefits_information_requested" },
+      {
+        type: "Information",
+       keywords: [
+      'Housing Benefit',
+      'Housing Benfit',
+      'Housing Benifit',
+      'Housng Benefit',
+      'Housing Beneift',
+      'Housin Benefit',
+      'Housing Benefet',
+      'Housng Benfit',
+      'Housin Benifit',
+      'Housing Benifits',
+      'Benefits on two homes',
+      'Benfits on two homes',
+      'Benifits on two homes',
+      'Beneifts on two homes',
+      'Benefits on 2 homes',
+      'Benfits on 2 homes',
+      'Benifits on 2 homes',
+      'Benefits on too homes',
+      'Benfits on too homes',
+      'Benfits on to homes'
+    ],
+        categories: ["Housing", "Benefits"],
+      },
+      { date: "05/11/2024", name: "Andy Walker" }
+    );
+
+    const changeOfCircumstances = new ContentH(
+      "changeOfCircumstances",
+      "Change of Circumstances",
+      "Description tbc"
+      `
+      <h3>Change of Circumstances</h3>
+        <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
+           You can access this via the <a href="https://www.sheffield.gov.uk/">Sheffield City Council website</a> and follow the links to Benefits.</p>
+      `,
+      { buttonLabel: "Change of Circumstances", formName: "" },
+      { typeKey: "housing_benefits_information_provided" },
+      { typeKey: "housing_benefits_information_requested" },
+      {
+        type: "Information",
+       keywords: [
+      'Housing Benefit',
+      'Housing Benfit',
+      'Housing Benifit',
+      'Housng Benefit',
+      'Housing Beneift',
+      'Housin Benefit',
+      'Housing Benefet',
+      'Housng Benfit',
+      'Housin Benifit',
+      'Housing Benifits',
+      'Change of Circumstances',
+      'Change of Circumstnaces',
+      'Change of Circumstnace',
+      'Chage of Circumstances',
+      'Chnge of Circumstances',
+      'Change of Circumstance',
+      'Change of Cicumstances',
+      'Change of Circumstancess'
+    ],
+        categories: ["Housing", "Benefits"],
+      },
+      { date: "05/11/2024", name: "Andy Walker" }
+    );
+
+    const localAssistanceScheme = new ContentH(
+      "localAssistanceScheme",
+      "Local Assistance Scheme",
+      "Description tbc"
+      `
+      <h3>Local Assistance Scheme</h3>
+        <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
+           You can access this via the Sheffield City Council website and follow the links to Benefits.</p>
+      `,
+      { buttonLabel: "Local Assistance Scheme", formName: "" },
+      { typeKey: "housing_benefits_information_provided" },
+      { typeKey: "housing_benefits_information_requested" },
+      {
+        type: "Information",
+        keywords: [
+      'Housing Benefit',
+      'Housing Benfit',
+      'Housing Benifit',
+      'Housng Benefit',
+      'Housing Beneift',
+      'Housin Benefit',
+      'Housing Benefet',
+      'Housng Benfit',
+      'Housin Benifit',
+      'Housing Benifits',
+      'Local Assistance Scheme',
+      'Local Assitance Scheme',
+      'Local Asistance Scheme',
+      'Local Assitance Schem',
+      'Local Assistance Schem',
+      'Local Asistance Schem',
+      'Local Assistance Sheme',
+      'Lcoal Assistance Scheme',
+      'Local Assistace Scheme'
+    ],
+        categories: ["Housing", "Benefits"],
+      },
+      { date: "05/11/2024", name: "Andy Walker" }
+    );
+
+    const pdsa = new ContentH(
+      "pdsa",
+      "PDSA",
+      "Description tbc"
+      `
+      <h3>PDSA</h3>
+        <p>The Benefits Service can fax a letter to PDSA for pet treatment if the customer is on benefits.</p>
+      `,
+      { buttonLabel: "PDSA", formName: "" },
+      { typeKey: "housing_benefits_information_provided" },
+      { typeKey: "housing_benefits_information_requested" },
+      {
+        type: "Information",
+        keywords: [
+      'Housing Benefit',
+      'Housing Benfit',
+      'Housing Benifit',
+      'Housng Benefit',
+      'Housing Beneift',
+      'Housin Benefit',
+      'Housing Benefet',
+      'Housng Benfit',
+      'Housin Benifit',
+      'Housing Benifits',
+      'PDSA',
+      'PDSA',
+      'PDSA',
+      'PDAS',
+      'PDSA ',
+      'PDA',
+      'PD SA',
+      'PDSA ',
+      'PDSA Health'
+    ],
+        categories: ["Housing", "Benefits"],
+      },
+      { date: "05/11/2024", name: "Andy Walker" }
+    );
+
+    const universalCredits = new ContentH(
+      "universalCredit",
+      "Universal Credit",
+      "Description tbc"
+      `
+ <h3>Universal Credit</h3>
+<p>If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
+   you may be directed to claim Universal Credit:</p>
+<ul>
+    <li>Housing Benefit</li>
+    <li>Income-related Employment and Support Allowance (ESA)</li>
+    <li>Income-based Jobseeker's Allowance (JSA)</li>
+    <li>Child Tax Credit</li>
+    <li>Working Tax Credit</li>
+    <li>Income Support</li>
+</ul>
+<p>At some point in the future, many people currently on the benefits above will be moved across to Universal Credit. 
+   The Government has not yet given a date for this, but the Department for Work and Pensions 
+   will contact anyone affected before there are changes to their benefits or tax credits.</p>
+
+<details class="details-accordion">
+  <summary>Applying for an Advance through Universal Credit</summary>
+  <div class="details-accordion-content">
+    <p>You can apply for an advance from your Universal Credit (UC), which is a loan and is paid back through your payments.</p>
+    <p>If you claim an advance which includes some of your Housing Costs, you should pay this amount towards your rent.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>Change of Circumstances</summary>
+  <div class="details-accordion-content">
+    <p>Any changes to your circumstances must be reported immediately using your UC journal.</p>
+    <p>If not, you may be sanctioned and your UC payment may be less than you think.</p>
+    <p>If this happens, you will still receive your payment for the Housing Cost Element, 
+      but it is important that this is paid to the rent account to make sure you meet your obligation to SCC to pay rent.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>Council Tax and Universal Credit</summary>
+  <div class="details-accordion-content">
+    <p>Universal Credit does not include help with your Council Tax, so you must claim this separately.</p>
+    <p>You can do this at <a href="https://www.sheffield.gov.uk/benefits/council-tax-support" 
+       target="_blank">https://www.sheffield.gov.uk/benefits/council-tax-support</a>.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>How will Universal Credit affect my Rent Payments</summary>
+  <div class="details-accordion-content">
+    <p>Universal Credit payments are usually paid monthly, and in arrears.</p>
+    <p>You should be absolutely clear that if you claim Universal Credit, you will need to pay your full rent yourself.</p>
+    <p>You may receive Housing Costs within your UC payment that will help towards your rent, 
+       and this may change depending on the income you receive during your monthly assessment period. 
+       But regardless of this, you need to ensure your full rent payments are made.</p>
+    <p>Your payment through UC for housing costs will most probably not cover the full rent charges, 
+       and you will need to make up the difference with any other income you receive.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>Notifying SCC when you start claiming Universal Credit</summary>
+  <div class="details-accordion-content">
+    <p>As all Sheffield City Council tenancies charge rent weekly, it is important that you advise us immediately if you start to claim Universal Credit.</p>
+    <p>This will allow us to discuss and agree with you arrangements about your rent payments.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>Delays before First Payment</summary>
+  <div class="details-accordion-content">
+    <p>When you first claim UC, you may have to wait 5 weeks for your first payment.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>Will my Universal Credit Payment Date change</summary>
+  <div class="details-accordion-content">
+    <p>Your UC payment date will be the same every month unless it is due on a weekend or Bank Holiday.</p>
+    <p>If this is the case, it will be paid on the last working day before your usual payment date.</p>
+    <p>Please check your UC journal regularly as this is the way you will know what your payments will be each month.</p>
+    <p>This will also be how you usually have contact with the DWP.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>Setting up an Email account and Bank account for Universal Credit</summary>
+  <div class="details-accordion-content">
+    <p>Claiming UC means you will need a bank account and an email account.</p>
+    <p>If you are likely to be affected and do not have these, we would recommend you setting these up.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>Difficulties with Universal Credit</summary>
+  <div class="details-accordion-content">
+    <p>Please note: Your Universal Credit claim is your responsibility.</p>
+    <p>Sheffield Council staff can advise you if you are experiencing financial difficulties but can only help if you contact us to discuss these.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>SCUBA/Jam Jar Accounts</summary>
+  <div class="details-accordion-content">
+    <details class="details-accordion">
+      <summary>Payment of Benefit - SCUBA and SCUBA Lite Accounts (formerly called Jam Jar Accounts)</summary>
+      <div class="details-accordion-content">
+        <p>By the time Universal Credit starts, the Government aims to pay all benefits into bank accounts. 
+           If the customer intends to claim benefits at any time it is important they set up a bank account or credit union SCUBA account to avoid delays.</p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Sheffield Credit Union SCUBA and SCUBA Lite Accounts, how they work</summary>
+      <div class="details-accordion-content">
+        <p>The customer lets Sheffield Credit Union know that their landlord is Sheffield City Council and how much their rent is (2 simple forms). 
+           Income Management and Financial Inclusion Team staff are able to do this on the customer's behalf if they give authority to them or 
+           the Credit Union for information to be shared.</p>
+        <p>The customer arranges for their income (this is salary or benefits) to be paid into their SCUBA Account. 
+           This can be some or all of their income as long as it covers the bills they want to pay out.</p>
+        <p>Sheffield Credit Union will then discuss with the customer which priority bills they want paying on 
+           their behalf, i.e. rent, council tax, utility bills, etc., and will then pay them for the customer.</p>
+        <p>SCUBA Lite accounts are for paying just one bill, such as Rent. SCUBA accounts are for paying up to 5 bills.</p>
+        <p>Sheffield Credit Union will forward rent and any agreed arrears payments to Sheffield City Council on the due date.</p>
+        <p>If the customer has any spare money after the agreed bills have been paid, the Credit Union can then arrange to:</p>
+        <ul>
+          <li>Pay into another account</li>
+          <li>Transfer into a savings account</li>
+          <li>Put it onto a prepaid Cred “E” Card (£5 set up and £2 per month operating charge)</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>SCUBA Account Costs</summary>
+      <div class="details-accordion-content">
+        <p>SCUBA Lite Accounts are free to Council Housing tenants, and full SCUBA Accounts will cost £5.</p>
+        <p>The normal fee is £5 for SCUBA Lite and £10 for a full SCUBA account, 
+          but Sheffield City Council will pay £5 for you as it is a member of the Credit Union.</p>
+      </div>
+    </details>
+  </div>
+</details>
+
+      `,
+  { buttonLabel: "Universal Credits", formName: "" },
+  { typeKey: "housing_benefits_information_provided" },
+  { typeKey: "housing_benefits_information_requested" },
+  {
+    type: "Information",
+   keywords: [
+  'Housing Benefit',
+  'Housing Benfit',
+  'Housing Benifit',
+  'Housng Benefit',
+  'Housing Beneift',
+  'Housin Benefit',
+  'Housing Benefet',
+  'Housng Benfit',
+  'Housin Benifit',
+  'Housing Benifits',
+  'Universal Credit',
+  'Unversal Credit',
+  'Univrsal Credit',
+  'Unversal Credi',
+  'Univeral Credit',
+  'Univeral Credi',
+  'Univerasl Credit',
+  'Univeral Creddit',
+  'Universal Credi',
+  'Universla Credit'
+],
+    categories: ["Housing", "Benefits"],
+  },
+  { date: "05/11/2024", name: "Andy Walker" }
+);
+
+const welfareReform = new ContentH(
+  "WelfareReform", 
+  "Welfare Reform", 
+  "Description tbc"
+  `
+<h3>Welfare Reform</h3>
+<p>From April 2013, the Government reduced the amount of Housing Benefit for Council / Housing Association tenants in homes that had any spare bedrooms. 
+   This is also known as under-occupation. This change only affected people of working age.</p>
+<p>Claimants of Housing Benefit and those considering a move to a new home either through:</p>
+<ul>
+  <li>a new Council or Housing Association tenancy</li>
+  <li>a mutual exchange, or</li>
+  <li>a transfer to another Council home</li>
+</ul>
+<p>Need to be aware of the impact that having a home with spare bedrooms will have on their welfare benefits.</p>
+
+<details class="details-accordion">
+  <summary>Will these changes affect me?</summary>
+  <div class="details-accordion-content">
+    <p>This only affects people of working age, so if you are old enough to receive a state pension (of a pensionable age) then these changes will not affect you. 
+       You are likely to be affected by these changes, especially if you are a single person with two or more bedrooms, 
+       a couple with two or more bedrooms, or in a household whose children have grown up and left home.</p>
+    <p>If you are of working age you therefore need to think very carefully before bidding for a property that has more bedrooms than Housing Benefit will allow for, 
+       as a reduction in this would mean that you have to pay additional money towards your rent yourself. 
+       Our eligibility table gives an indication of where there is likely to be a reduction in Housing Benefit.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>How will the Government work out if you have spare bedrooms?</summary>
+  <div class="details-accordion-content">
+    <p>The Government has told us that one bedroom will be allowed for each person, or couple with the following exceptions:</p>
+    <ul>
+      <li>Children aged 16 or under will be expected to share with another child of the same sex.</li>
+      <li>Children aged 10 and under will be expected to share with another child regardless of their sex.</li>
+    </ul>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>How much will my Housing Benefit be reduced by?</summary>
+  <div class="details-accordion-content">
+    <p>If you have one spare bedroom you are likely to lose 14% of your weekly Housing Benefit and if you have two spare bedrooms you could lose 25%. 
+       This means that you will have to pay the extra money towards the rent yourself.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>What considerations should I make when bidding for a new property?</summary>
+  <div class="details-accordion-content">
+    <p>If you are currently looking for a new home you must consider very carefully the size of the home you want to move to. 
+       Remember if you are of working age and receiving Housing Benefit, this might be reduced if you move to a home which is too big for you.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>How can I move to a smaller home?</summary>
+  <div class="details-accordion-content">
+    <p>There may be a number of options available to you:</p>
+    <ul>
+      <li>You could exchange your current home with another tenant who wants to move. This is called a mutual exchange.</li>
+      <li>You could be awarded a rehousing priority under the SMARTMOVE scheme to move to a smaller more manageable home if you are currently living in a high demand Council / Housing Association property.</li>
+      <li>You can move to another Council/Housing Association property by bidding for the available homes which we advertise each week.</li>
+    </ul>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>Are adapted properties exempt?</summary>
+  <div class="details-accordion-content">
+    <p>Adapted properties are not exempt from the welfare reform and extra bedroom charge.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>If there is a couple, one of a pensionable age and the other not, will they be affected by benefit changes next year?</summary>
+  <div class="details-accordion-content">
+    <p>Generally speaking, pensionable aged persons are exempt from the welfare reforms. However, 
+       when there is a couple & one isn’t of pensionable age it is not as straightforward, it will be dependant on what DWP benefit they are receiving.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>Furnished Properties Change</summary>
+  <div class="details-accordion-content">
+    <p>Where a property is furnished and under occupied they lose the HB granted for the furniture charge. 
+       The % reduction is applied to the net rent and the furniture charge too.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>Benefit Cap</summary>
+  <div class="details-accordion-content">
+    <p>The DWP have announced that the Benefit Cap (overall level of combined benefits and credits a workless household (with no disability benefits) 
+       can receive to around £384.62/week for lone parents/couples outside London, or £257.69/week for single people outside London) 
+        will not be introduced nationally in April but are expecting it to be in place across the country by September, 
+        we will update our information as we know more.</p>
+  </div>
+</details>
+
+<details class="details-accordion">
+  <summary>Spare Room Subsidy Exemption</summary>
+  <div class="details-accordion-content">
+    <p>For tenants to be exempt from the spare room subsidy, they must have been continuously entitled to Housing Benefit since 
+       at least 1 January 1996 and occupied the same dwelling since that date, save for any period where a 
+       fire, flood, explosion or natural catastrophe has rendered the property uninhabitable.</p>
+    <p>These provisions apply if there has been a break in entitlement of no more than 4 weeks, or if there has been a break of entitlement of 
+       no more than 52 weeks if the claimant or their partner is a welfare to work beneficiary.</p>
+    <p>Note: it may be the case that the protection has been inherited by a tenant where they have succeeded a tenancy.</p>
+    <p>The DWP are going to amend the regulations to remove this exemption. However, until the legislation is amended, 
+       customers who meet the criteria are exempt from the spare room subsidy.</p>
+    <p>An application form must be completed by the customer and returned to the Benefits Service.</p>
+  </div>
+</details>
+
+  `, 
+  { buttonLabel: "Welfare Reform", formName: "" },
+  { typeKey: "housing_benefits_information_provided" },
+  { typeKey: "housing_benefits_information_requested" },
+  {
+    type: "Information",
+    keywords: [
+      'Housing Benefit',
+      'Housing Benfit',
+      'Housing Benifit',
+      'Housng Benefit',
+      'Housing Beneift',
+      'Housin Benefit',
+      'Housing Benefet',
+      'Housng Benfit',
+      'Housin Benifit',
+      'Housing Benifits',
+      'Welfare Reform',
+      'Wlfare Reform',
+      'Welfare Refrom',
+      'Welfar Reform',
+      'Welfare Reforrm',
+      'Welfere Reform',
+      'Welfare Reformm',
+      'Welfare Reformz',
+      'Welfer Reform'
+    ],  
+    categories: ["Housing", "Benefits"],
+  },
+  { date: "05/11/2024", name: "Andy Walker" }
+);
+
+    const housingBenefits = new MenuH(
+      "housingBenefits",
+      "Housing benefits",
+      "Information about Housing Benefits"
+      [
+    contactHousingBenefits,
+    benefitCap,
+    benefitClaim ,
+    benefitsClawback,
+    benefitFraud,
+    benefitOnTwoHomes,
+    changeOfCircumstances,
+    localAssistanceScheme,
+    pdsa ,
+    universalCredits,
+    welfareReform 
+      ]
+    );
+
+  //#endregion Benefits
+
+  //#region Sheltered
   
   const furnishedAccommodation = new ContentH(
     "furnishedAccommodation",
@@ -168,8 +976,8 @@ class CoreH {
       <h3>Furnished Delivery Schedule</h3>
       <p>
         Open the delivery schedule spreadsheet (copy the link:
-        <br />G:\HSG\Public\Supported Hsg\Furnished Accommodation\Furnished delivery
-        sheets\Furnished Delivery Sheet.xlsx<br />
+        <br />G:/HSG/Public/Supported Hsg/Furnished Accommodation/Furnished delivery
+        sheets/Furnished Delivery Sheet.xlsx<br />
         and paste into the Windows Explorer title bar).
       </p>
       <p>
@@ -477,6 +1285,7 @@ class CoreH {
     },
     { date: "15/10/2024", name: "Joe Nixon" }
   );
+
   
   const shelteredAndSupported = new MenuH(
     "shelteredAndSupported",
@@ -489,6 +1298,10 @@ class CoreH {
       gypsyAndTravellers,
     ]
   );
+
+  //#endregion Sheltered
+
+  //#region Rehousing
   
   const bidding = new ContentH(
     "bidding",
@@ -1070,6 +1883,10 @@ class CoreH {
       bidding,
     ]
   );
+
+  //#endregion Rehousing
+
+  //#region Estates
   
   const blockedBinChutes = new ContentH(
     "blockedBinChutes",
@@ -1262,6 +2079,10 @@ class CoreH {
     },
     { date: "09/10/2024", name: "Elliott Griffiths" }
   );
+
+  //#endregion Estates
+
+  //#region Asset Repairs
   
   const newAndExistingRepairs = new ContentH(
     "newAndExistingRepairs",
@@ -2815,8 +3636,11 @@ class CoreH {
     { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
     { date: "10/10/2024", name: "George Whitehouse" }
   );
+
+  //#endregion Asset repairs
   
-  
+  //#region Housing
+
   const generalCouncilHousing = new ContentH(
     "generalCouncilHousing",
     "General Council Housing",
@@ -2939,7 +3763,6 @@ class CoreH {
   ]);
   
   
-  
   const assetManagementAndRepairs = new MenuH(
     "assetManagementAndRepairs",
     "Asset Management And Repairs",
@@ -2964,6 +3787,8 @@ class CoreH {
       refunds
     ]
   );
+
+  //#endregion Housing
   
   //#region Rents
   
