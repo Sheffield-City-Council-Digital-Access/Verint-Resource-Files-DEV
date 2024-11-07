@@ -700,7 +700,7 @@ const bidding = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "14/10/2024", name: "Abishai Devarapalli" }
@@ -787,7 +787,7 @@ const eligibility = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "14/10/2024", name: "Abishai Devarapalli" }
@@ -1301,7 +1301,7 @@ NB: these contact details give a summary only; if further details are needed, pl
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
@@ -1400,13 +1400,11 @@ being rehoused with you.
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
 );
-
-
 
 const acceptableId = new ContentH(
   "acceptableId",
@@ -1457,7 +1455,7 @@ const acceptableId = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
@@ -1518,7 +1516,7 @@ submit a new Application and provide the relevant ID.
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
@@ -1704,7 +1702,7 @@ If ID and a reference are not submitted within this time, the application will b
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
@@ -1815,7 +1813,7 @@ The meter reading when they move out - you should contact the utility company th
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
@@ -2255,12 +2253,11 @@ We will have also written to the other party advising them what action they need
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
 );
-
 
 const allocationsPolicyGuidance = new ContentH(
   "allocationsPolicyGuidances",
@@ -2328,7 +2325,7 @@ const allocationsPolicyGuidance = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
@@ -2366,14 +2363,14 @@ An e-mail from Social Services will be the normal route to receive confirmation.
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
 );
 
 const priorityBandingTable = new ContentH(
-  "riorityBandingTable",
+  "priorityBandingTable",
   "Priority Banding Table",
   "Descritption",
   `
@@ -2416,9 +2413,314 @@ three different priorities within the same Band would be ordered based on the ea
 Therefore, an applicant with unacceptable behaviour in Band E will always come below an applicant in Band E due to refused offers 
 regardless of their effective date.</p>
 
-<h3>Priorities Banding Table</h3>
 
-<p>Links to banding table</p>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Priorities Banding Table</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p><table border="1" cellpadding="0" cellspacing="0" style="width:100%">
+<tbody>
+<tr>
+<td style="width:300px; height:10px" bgcolor="#002040" ><strong><font color="white">Current Approval Reasons</strong></font></td>
+<td style="width:300px" bgcolor="#002040" >
+<p><strong><font color="white">New Banding Criteria</strong></font></p>
+</td>
+<td style="width:300px"  bgcolor="#002040">
+<p><strong><font color="white">Bands In Which They Appear</font></strong></p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>ASB - Rehousing Options for the Victim</p>
+</td>
+<td style="width:189px">
+<p>Welfare, Hardship and Support Needs</p>
+</td>
+<td style="width:217px">
+<p>2nd Priority Band B</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Council Service Tenant Retiring or Leaving Employment</p>
+</td>
+<td style="width:189px">
+<p>None</p>
+</td>
+<td style="width:217px">
+<p>General Needs Band D (Inactive)</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Council Service Tenant Who is Dismissed</p>
+</td>
+<td style="width:189px">
+<p>None</p>
+</td>
+<td style="width:217px">
+<p>General Needs Band D (Inactive)</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Demolition/Clearance of Council Owned Properties</p>
+</td>
+<td style="width:189px">
+<p>None</p>
+</td>
+<td style="width:217px">
+<p>General Needs Band D (Inactive)</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Demolition/Clearance of Owner Occupied and Private Rented Sectors</p>
+</td>
+<td style="width:189px">
+<p>None</p>
+</td>
+<td style="width:217px">
+<p>General Needs Band D (Inactive)</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Development Work in Council Owned Property</p>
+</td>
+<td style="width:189px">
+<p>Welfare, Hardship and Support Needs</p>
+</td>
+<td style="width:217px">
+<p>Top Priority Band A</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Domestic Abuse</p>
+</td>
+<td style="width:189px">
+<p>Welfare, Hardship and Support Needs</p>
+</td>
+<td style="width:217px">
+<p>2nd Priority Band B</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Downsizing for Under Occupiers</p>
+</td>
+<td style="width:189px">
+<p>Under occupation and/or release of an adapted property</p>
+</td>
+<td style="width:217px">
+<p>2nd Priority Band B</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Homeless - Immediate Priority</p>
+</td>
+<td style="width:189px">
+<p>Full Homelessness Duty</p>
+</td>
+<td style="width:217px">
+<p>2nd Priority Band B</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Homeless or Threatened with Homelessness - Planned Priority</p>
+</td>
+<td style="width:189px">
+<p>Other Homelessness Duties</p>
+</td>
+<td style="width:217px">
+<p>3rd Priority Band C</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Insanitary or Unsatisfactory Housing Conditions</p>
+</td>
+<td style="width:189px">
+<p>Welfare, Hardship and Support Needs</p>
+</td>
+<td style="width:217px">
+<p>2nd Priority Band B</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Mental Health, Learning Disability, Long Term Health Problems, Community Care or Other Health Problem</p>
+</td>
+<td style="width:189px">
+<p>None</p>
+</td>
+<td style="width:217px">
+<p>General Needs Band D (Inactive)</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Mobility Needs and Service Personnel</p>
+</td>
+<td style="width:189px">
+<p>Health</p>
+</td>
+<td style="width:217px">
+<p>2nd Priority Band B</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Permanent Moves for Council Tenants Who Have Moved Temporarily</p>
+</td>
+<td style="width:189px">
+<p>Welfare, Hardship and Support Needs</p>
+</td>
+<td style="width:217px">
+<p>Top Priority Band A</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Racial and Other Harassment of Council Tenants</p>
+</td>
+<td style="width:189px">
+<p>Welfare, Hardship and Support Needs</p>
+</td>
+<td style="width:217px">
+<p>2nd Priority Band B</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Re-Designation of Older Persons Property</p>
+</td>
+<td style="width:189px">
+<p>Welfare, Hardship and Support Needs</p>
+</td>
+<td style="width:217px">
+<p>3rd Priority Band C</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Release of Disabled Persons Property</p>
+</td>
+<td style="width:189px">
+<p>Under Occupation and/or Release of an Adapted Property</p>
+</td>
+<td style="width:217px">
+<p>2nd Priority Band B</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Sheffield Overcrowding</p>
+</td>
+<td style="width:189px">
+<p>None</p>
+</td>
+<td style="width:217px">
+<p>General Needs Band D (Inactive)</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Special Case</p>
+</td>
+<td style="width:189px">
+<p>None</p>
+</td>
+<td style="width:217px">
+<p>General Needs Band D (Inactive)</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Statutory Overcrowding</p>
+</td>
+<td style="width:189px">
+<p>Welfare, Hardship and Support Needs</p>
+</td>
+<td style="width:217px">
+<p>2nd Priority Band B</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Support and Hardship needs</p>
+</td>
+<td style="width:189px">
+<p>Welfare, Hardship and Support Needs</p>
+</td>
+<td style="width:217px">
+<p>2nd Priority Band B</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Supportive Hostels</p>
+</td>
+<td style="width:189px">
+<p>Welfare, Hardship and Support Needs</p>
+</td>
+<td style="width:217px">
+<p>2nd Priority Band B</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Temporary and Permanent Moves for Non-Council Households Undergoing Modernisation or Repair with Grant Aid</p>
+</td>
+<td style="width:189px">
+<p>Welfare, Hardship and Support Needs</p>
+</td>
+<td style="width:217px">
+<p>Top Priority Band A</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Vulnerable Young Person Aged 16 or 17</p>
+</td>
+<td style="width:189px">
+<p>Welfare, Hardship and Support Needs</p>
+</td>
+<td style="width:217px">
+<p>2nd Priority Band B</p>
+</td>
+</tr>
+<tr>
+<td style="width:225px">
+<p>Young People and Children&rsquo;s Act 1989</p>
+</td>
+<td style="width:189px">
+<p>Welfare, Hardship and Support Needs</p>
+</td>
+<td style="width:217px">
+<p>2nd Priority Band B</p>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+
+
+  </div>
+</details>
+
+
+
+
+
+
+
+
 
 
   `,
@@ -2430,7 +2732,7 @@ regardless of their effective date.</p>
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
@@ -2477,12 +2779,11 @@ If you fail to attend a viewing of a property offered to you within the timescal
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
 );
-
 
 const priorities = new ContentH(
   "priorities",
@@ -2513,12 +2814,11 @@ const priorities = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
 );
-
 
 const PropertyOffersAndViewings = new ContentH(
   "PropertyOffersAndViewings",
@@ -2602,7 +2902,7 @@ bids for each property are sorted automatically based on the eligibility criteri
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
@@ -2720,15 +3020,11 @@ const applicantPlacedInAPriorityBand = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
-
-
   },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
-
-
 
 const applicationChanges = new ContentH(
   "applicationChanges",
@@ -2984,7 +3280,7 @@ const applicationChanges = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "14/10/2024", name: "Omily Parkin" }
@@ -3023,19 +3319,22 @@ const applyForRehousing = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
-
 
 const policy = new MenuH(
   "rehousing",
   "Rehousing",
   "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
   [
-    allocationsPolicyGuidance,applicantPlacedInAPriorityBand,fosteringAndAdoption,priorityBandingTable,threeOffersDemotedorDisqualified
+    allocationsPolicyGuidance,
+    applicantPlacedInAPriorityBand,
+    fosteringAndAdoption,
+    priorityBandingTable,
+    threeOffersDemotedorDisqualified,
   ]
 );
 
@@ -3052,8 +3351,7 @@ const rehousing = new MenuH(
     idReferencesMenu,
     policy,
     priorities,
-    PropertyOffersAndViewings
-    
+    PropertyOffersAndViewings,
   ]
 );
 
@@ -3061,15 +3359,7 @@ const idReferencesMenu = new MenuH(
   "idReferencesMenu",
   "ID / References ",
   "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
-  [
-
-    idReferences,
-    acceptableId,
-    idFaq,
-    referencesFAQs,
-    movingIn,
-    mutualExchanges,
-  ]
+  [idReferences, acceptableId, idFaq, referencesFAQs, movingIn, mutualExchanges]
 );
 
 const blockedBinChutes = new ContentH(
