@@ -692,19 +692,16 @@ const bidding = new ContentH(
       up for sale by showing us the brochure.
     </p>
   `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
   },
   { date: "14/10/2024", name: "Abishai Devarapalli" }
 );
@@ -782,19 +779,16 @@ const eligibility = new ContentH(
       customer is able to afford the property.
     </p>
   `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
   },
   { date: "14/10/2024", name: "Abishai Devarapalli" }
 );
@@ -1299,22 +1293,18 @@ NB: these contact details give a summary only; if further details are needed, pl
 
     
   `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
   },
-  { date: "14/10/2024", name: "Gee Whitehouse" }
-
+  { date: "07/22/2024", name: "Gee Whitehouse" }
 );
 
 const idReferences = new ContentH(
@@ -1403,23 +1393,17 @@ being rehoused with you.
 
   `,
   {
-    buttonLabel: " ",
-    formName: "",
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
   },
-  { date: "23/09/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "Gee Whitehouse" }
 );
 
 
@@ -1463,28 +1447,20 @@ const acceptableId = new ContentH(
 
   </p>
 
-    
-
 
   `,
   {
-    buttonLabel: " ",
-    formName: "",
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
   },
-  { date: "23/09/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "Gee Whitehouse" }
 );
 
 const idFaq = new ContentH(
@@ -1535,23 +1511,17 @@ submit a new Application and provide the relevant ID.
 
   `,
   {
-    buttonLabel: " ",
-    formName: "",
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
   },
-  { date: "23/09/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "Gee Whitehouse" }
 );
 
 const referencesFAQs = new ContentH(
@@ -1727,23 +1697,17 @@ If ID and a reference are not submitted within this time, the application will b
 
   `,
   {
-    buttonLabel: " ",
-    formName: "",
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
   },
-  { date: "23/09/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "Gee Whitehouse" }
 );
 
 const movingIn = new ContentH(
@@ -1844,23 +1808,17 @@ The meter reading when they move out - you should contact the utility company th
 
   `,
   {
-    buttonLabel: " ",
-    formName: "",
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
   },
-  { date: "23/09/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "Gee Whitehouse" }
 );
 
 const mutualExchanges = new ContentH(
@@ -1868,8 +1826,6 @@ const mutualExchanges = new ContentH(
   "Mutual Exchanges",
   "Descritption",
   `
- 
-  
 
           <p>
           
@@ -2292,23 +2248,17 @@ We will have also written to the other party advising them what action they need
 
   `,
   {
-    buttonLabel: " ",
-    formName: "",
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
   },
-  { date: "23/09/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "Gee Whitehouse" }
 );
 
 
@@ -2371,23 +2321,17 @@ const allocationsPolicyGuidance = new ContentH(
 
   `,
   {
-    buttonLabel: " ",
-    formName: "",
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
   },
-  { date: "23/09/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "Gee Whitehouse" }
 );
 
 const fosteringAndAdoption = new ContentH(
@@ -2415,23 +2359,17 @@ An e-mail from Social Services will be the normal route to receive confirmation.
 
   `,
   {
-    buttonLabel: " ",
-    formName: "",
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
   },
-  { date: "23/09/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "Gee Whitehouse" }
 );
 
 const priorityBandingTable = new ContentH(
@@ -2485,23 +2423,189 @@ regardless of their effective date.</p>
 
   `,
   {
-    buttonLabel: " ",
-    formName: "",
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
   },
-  { date: "23/09/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "Gee Whitehouse" }
+);
+
+const threeOffersDemotedorDisqualified = new ContentH(
+  "threeOffersDemotedorDisqualified",
+  "Three Offers Demoted or Disqualified",
+  "Descritption",
+  `
+ 
+<h3>Reduced preference (demotion) following refusal of 3 reasonable offers</h3>
+
+<p>If a customer is in Band D and they have refused 3 offers in 12 months, 
+the Sheffield City Council Allocations Policy states: </p>
+
+<ul>
+
+<li>If you refuse an offer of a property, you could be moved to a lower band or your application may be cancelled. The following will also be considered as a refusal:</li>
+<li>If you fail to respond to an offer of a property made to you within the timescales specified and do not have a good reason for this failure.
+If you fail to attend a viewing of a property offered to you within the timescales specified and do not have a good reason for this failure.</li>
+<li>If you are to be Demoted, we will write to you 21 days before you are Demoted. If you do not respond, you will be Demoted to Band E on the Housing Register for 12 months. After 12 months you can request to be moved back in to Band D. </li>
+
+
+</ul>
+
+<h3>Disqualification following refusal of 3 reasonable offers</h3>
+
+<p>If a customer who is in Band E refuses 3 reasonable offers,
+ they can be disqualified from the Housing Register. 
+ The customer will be notified in writing and they have 21 days to appeal the decision. 
+ If we do not hear from the customer within 21 days, 
+ their housing application will be cancelled and they will be disqualified 
+ from the Housing Register for 12 months. After 12 months the customer is able to submit an 
+ on-line application for Social Housing to re-join the Housing Register.</p>
+
+
+  `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
+  },
+  { date: "07/22/2024", name: "Gee Whitehouse" }
+);
+
+
+const priorities = new ContentH(
+  "priorities",
+  "Priorities",
+  "Descritption",
+  `
+ 
+<h3>Priorities</h3>
+
+<p>Priority for rehousing can be awarded if there is a need to be rehoused urgently and immediately. When your circumstances have been assessed, we will look at whether we can give you priority for housing ahead of other people on the Housing Register. We will then write to you explaining our decision. If we give you priority, we will explain why it has been given, what sort of property it is for and how long you have to use it. The letter will also explain how to request a review of the decision if you are unhappy with it.</p>
+
+<p>In some cases we will make you an offer of a property that we feel meets your needs. If we are unable to contact you due to changes not notified to us, your registration may be suspended or cancelled.</p>
+
+<p>If you may be eligible for a priority you will be asked to provide us with further information. Once you have been assessed, we will write to you and explain whether you have been given priority. If you are given priority the letter will explain what sort of properties you can bid for with the priority and when the priority will be reviewed.</p>
+
+<p>We will write to you and explain why if you have not been awarded a priority. We will tell you if you can request a review of the decision and how to go about this. In many cases, if you are not given priority but need further assistance, we will work with you, your advocates and our partner agencies to provide advice and assistance.</p>
+
+<p>A priority does not affect your waiting time, you can apply for properties with both your waiting time and your priority. For most of the properties advertised we will consider people with priority first. If you have a priority, you must keep bidding for suitable properties. Even with a priority, you may have to bid for a considerable time before you are offered a property. In order for our system to be fair, a proportion of properties are also let on the basis of an applicant's waiting time on the housing register. This will be clearly shown in the property adverts.</p>
+
+
+
+  `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
+  },
+  { date: "07/22/2024", name: "Gee Whitehouse" }
+);
+
+
+const PropertyOffersAndViewings = new ContentH(
+  "PropertyOffersAndViewings",
+  "Property Offers and Viewings",
+  "Descritption",
+  `
+ 
+<h3>Property Offers and Viewings</h3>
+
+<p>Once the bidding period has closed on a Tuesday night, 
+bids for each property are sorted automatically based on the eligibility criteria.p>
+
+        <details class="accordion">
+    <summary class="accordion-header">
+        <h3>FAQ's</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                How does Sheffield City Council allocate the property?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+               Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short: 
+                </p>
+
+                <ul>
+                    <li>Properties advertised to Waiting Time – These properties will be offered to customers in Band D first in order of their effective date (oldest first). If no customers in Band D accept the property, it will be offered to the other bands in the following order: Band A, Band B, Band C, Band E.</li>
+                    <li>Properties advertised to Housing Register – These properties will be offered to customer with a priority in Band A first in order of their effective date (oldest first). If no customers in Band A accept the property, it will be offered to the other bands in the following order: Band B, Band C, Band D, Band E.</li>
+                    <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
+                    <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on the Sheffield Property Shop. You can do this by logging in to your account.</li>
+                    <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
+                    <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
+
+                </ul>
+            </div>
+        </details>
+    </div>
+</details>
+
+
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+               When can I move in once offered a property?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+               Once you have completed your viewing and accepted the property, the Sign Up process will take place with your Neighbourhood Officer. You may get the keys at this point, however sometimes delays may occur due to unforeseen work that is required to bring the property up to a standard that meets our Vacant Charter.  When the property is ready, we will contact you to arrange an appointment to view the property and then to sign for your new tenancy, should you choose to accept. 
+                </p>
+
+                <p>
+               In some circumstances we may arrange a ‘work in progress’ viewing. 
+                </p>
+               
+            </div>
+        </details>
+
+            <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+               Where can I find lettings results?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                Sheffield City Council publishes the results of each let on the Sheffield Property Shop website. This information lets you see how popular particular properties are by highlighting the waiting time held by the successful applicant. This should help you to gauge how long you may be waiting for a similar property. This will also help you to make more realistic bids in the future.
+                </p>
+
+            </div>
+        </details>
+
+
+  `,
+
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
+  },
+  { date: "07/22/2024", name: "Gee Whitehouse" }
 );
 
 const applicantPlacedInAPriorityBand = new ContentH(
@@ -2606,30 +2710,20 @@ const applicantPlacedInAPriorityBand = new ContentH(
             </div>
         </details>
 
-        
-
-
-
-
-
-
   `,
+
   {
     buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    formName: "hou_rehousing_enquiry",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
+
+
   },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -2882,19 +2976,16 @@ const applicationChanges = new ContentH(
       </div>
     </details>
   `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
   {
-    type: "Apply",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
   },
   { date: "14/10/2024", name: "Omily Parkin" }
 );
@@ -2926,20 +3017,14 @@ const applyForRehousing = new ContentH(
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    formName: "hou_rehousing_enquiry",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Rehousing"],
+    keywords: ['rehosing', 'rehausing', 'rehousingg', 'rehosuing', 'rehouzing'],
+    categories: ["Housing"],
   },
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
@@ -2950,7 +3035,7 @@ const policy = new MenuH(
   "Rehousing",
   "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
   [
-    allocationsPolicyGuidance,applicantPlacedInAPriorityBand,fosteringAndAdoption,priorityBandingTable,
+    allocationsPolicyGuidance,applicantPlacedInAPriorityBand,fosteringAndAdoption,priorityBandingTable,threeOffersDemotedorDisqualified
   ]
 );
 
@@ -2966,6 +3051,9 @@ const rehousing = new MenuH(
     bidding,
     idReferencesMenu,
     policy,
+    priorities,
+    PropertyOffersAndViewings
+    
   ]
 );
 
