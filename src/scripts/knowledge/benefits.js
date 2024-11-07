@@ -110,7 +110,6 @@ const waysToReduceYourFuelBills = new ContentB(
       You can access the service online or by calling (freephone) <strong>0800 060 7567</strong> or emailing <a href="mailto:support@applyforleap.org.uk">support@applyforleap.org.uk</a>.
       Local Energy Advice Partnership can be found at: <a href="https://applyforleap.org.uk/" target="_blank">https://applyforleap.org.uk/</a> 
     </p>
-    </p>
     <h3>Citizens Advice Bureau Sheffield</h3>
     <p>
       Citizens Advice Bureau offer an extensive online guide to problems with your energy bill. 
