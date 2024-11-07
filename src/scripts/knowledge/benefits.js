@@ -722,6 +722,84 @@ const moneySupport = new ContentB(
   { date: "06/11/2024", name: "Nathan Smith" }
 );
 
+const foodSupport = new ContentB(
+  "foodSupport",
+  "Food support",
+  "",
+  `
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Community groceries</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about community groceries can be found at: 
+      <a href="https://communitygrocery.org.uk/how-we-can-help/" target="_blank">https://communitygrocery.org.uk/how-we-can-help/</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Bags of Taste</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about Bags of Taste can be found at: 
+      <a href="https://bagsoftaste.org/" target="_blank">https://bagsoftaste.org/</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Feed your family for less resource pack</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about feeding the family for less can be found at: 
+      <a href="https://www.sheffieldissweetenough.org/res/downloads/feed-your-family-for-less-booklet.pdf" target="_blank">https://www.sheffieldissweetenough.org/res/downloads/feed-your-family-for-less-booklet.pdf</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Too Good to Go: rescue unsold food</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about Too Good to Go can be found at: 
+      <a href="https://www.toogoodtogo.com/en-gb/" target="_blank">https://www.toogoodtogo.com/en-gb/</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Money Saving Expert restaurant deals</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about Money Saving Expert restaurant deals can be found at: 
+      <a href="https://www.moneysavingexpert.com/deals/cheap-restaurant-deals/" target="_blank">https://www.moneysavingexpert.com/deals/cheap-restaurant-deals/</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "cost_of_living_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "07/11/2024", name: "Nathan Smith" }
+);
+
 //#endregion Cost of Living
 
 const whoCanApply = new ContentB(
@@ -1659,7 +1737,7 @@ const costOfLiving = new MenuB(
     applyForTheHouseholdSupportFund,
     mapOfWelcomePlacesInSheffield,
     moneySupport,
-    // foodSupport,
+    foodSupport,
     // energySupport,
     // howYouCanHelpYourCommunity,
     // supportForBusinesses,
