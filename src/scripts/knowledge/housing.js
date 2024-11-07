@@ -59,7 +59,7 @@ class CoreH {
    const contactHousingBenefits = new ContentH(
     "contactHousingBenefits",
     "Contact Housing Benefits",
-    "Description tbc"
+    "Description tbc",
     `
     <h3>Contact Housing Benefits</h3>
       <p>Transfer the Customer to the Benefits Team on the number below. If the line is busy, 
@@ -121,7 +121,7 @@ class CoreH {
   const benefitCap = new ContentH(
     "benefitCap",
     "Benefit Cap",
-    "Description tbc"
+    "Description tbc",
     `
       <h3>Benefit Cap</h3>
       <p>View website for Housing Benefit Cap Information: <a href="https://www.gov.uk/benefit-cap">Benefit Cap Information</a></p>
@@ -158,7 +158,7 @@ class CoreH {
     const benefitClaim = new ContentH(
       "benefitClaim",
       "Benefit Claim",
-      "Description tbc"
+      "Description tbc",
       `
         <h3>Benefit Claim</h3>
         <h4>Customer is not a council tenant</h4>
@@ -205,7 +205,7 @@ class CoreH {
     const benefitsClawback = new ContentH(
       "benefitsClawback",
       "Benefits Clawback",
-      "Description tbc"
+      "Description tbc",
       `
       <h3>Benefits Clawback</h3>
       <p>If you have been overpaid Housing Benefit and no longer receive it, you will receive an invoice from Sheffield Benefits Service to repay directly.
@@ -246,7 +246,7 @@ class CoreH {
     const benefitFraud = new ContentH(
       "benefitFraud",
       "Benefit Fraud",
-      "Description tbc"
+      "Description tbc",
       `
         <h3>Benefit Fraud</h3>
         <p>The customer can report fraud anonymously online at: <a href="https://www.gov.uk/report-benefit-fraud">Report Benefit Fraud</a></p>
@@ -284,7 +284,7 @@ class CoreH {
     const benefitOnTwoHomes = new ContentH(
       "benefitOnTwoHomes",
       "Benefit on Two Homes",
-      "Description tbc"
+      "Description tbc",
       `
     <h3>Benefit on Two Homes</h3>
 <details class="accordion">
@@ -400,7 +400,7 @@ class CoreH {
     const changeOfCircumstances = new ContentH(
       "changeOfCircumstances",
       "Change of Circumstances",
-      "Description tbc"
+      "Description tbc",
       `
       <h3>Change of Circumstances</h3>
         <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
@@ -439,7 +439,7 @@ class CoreH {
     const localAssistanceScheme = new ContentH(
       "localAssistanceScheme",
       "Local Assistance Scheme",
-      "Description tbc"
+      "Description tbc",
       `
       <h3>Local Assistance Scheme</h3>
         <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
@@ -479,7 +479,7 @@ class CoreH {
     const pdsa = new ContentH(
       "pdsa",
       "PDSA",
-      "Description tbc"
+      "Description tbc",
       `
       <h3>PDSA</h3>
         <p>The Benefits Service can fax a letter to PDSA for pet treatment if the customer is on benefits.</p>
@@ -518,7 +518,7 @@ class CoreH {
     const universalCredits = new ContentH(
       "universalCredit",
       "Universal Credit",
-      "Description tbc"
+      "Description tbc",
       `
  <h3>Universal Credit</h3>
 <p>If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
@@ -695,7 +695,7 @@ class CoreH {
 const welfareReform = new ContentH(
   "WelfareReform", 
   "Welfare Reform", 
-  "Description tbc"
+  "Description tbc",
   `
 <h3>Welfare Reform</h3>
 <p>From April 2013, the Government reduced the amount of Housing Benefit for Council / Housing Association tenants in homes that had any spare bedrooms. 
@@ -842,7 +842,7 @@ const welfareReform = new ContentH(
     const housingBenefits = new MenuH(
       "housingBenefits",
       "Housing benefits",
-      "Information about Housing Benefits"
+      "Information about Housing Benefits",
       [
     contactHousingBenefits,
     benefitCap,
