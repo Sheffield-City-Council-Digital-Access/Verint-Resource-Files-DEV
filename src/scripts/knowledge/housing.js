@@ -395,7 +395,246 @@ const benefitClaim = new ContentH(
     { date: "05/11/2024", name: "Andy Walker" }
   );
 
-
+  const changeOfCircumstances = new ContentH(
+    "changeOfCircumstances",
+    "Change of Circumstances",
+    "Description Tbc",
+    `
+      <h3>Change of Circumstances</h3>
+      <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
+         You can access this via the <a href="https://www.sheffield.gov.uk/">Sheffield City Council Website</a> and follow the links to Benefits.</p>
+    `,
+    { buttonLabel: "Change of Circumstances", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+      keywords: [
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Change of Circumstances',
+        'Change of Circumstances',
+        'Change of Circumstances',
+        'Change of Circumstances',
+        'Change of Circumstances',
+        'Change of Circumstances',
+        'Change of Circumstances',
+        'Change of Circumstances'
+      ],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+  
+  const localAssistanceScheme = new ContentH(
+    "localAssistanceScheme",
+    "Local Assistance Scheme",
+    "Description Tbc",
+    `
+      <h3>Local Assistance Scheme</h3>
+      <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
+         You can access this via the Sheffield City Council Website and follow the links to Benefits.</p>
+    `,
+    { buttonLabel: "Local Assistance Scheme", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+      keywords: [
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Local Assistance Scheme',
+        'Local Assistance Scheme',
+        'Local Assistance Scheme',
+        'Local Assistance Scheme',
+        'Local Assistance Scheme',
+        'Local Assistance Scheme',
+        'Local Assistance Scheme'
+      ],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+  
+  const pdsa = new ContentH(
+    "pdsa",
+    "PDSA",
+    "Description Tbc",
+    `
+      <h3>PDSA</h3>
+      <p>The Benefits Service can fax a letter to PDSA for pet treatment if the customer is on benefits.</p>
+    `,
+    { buttonLabel: "PDSA", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+      keywords: [
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'PDSA',
+        'PDSA',
+        'PDSA',
+        'PDSA',
+        'PDSA',
+        'PDSA',
+        'PDSA',
+        'PDSA'
+      ],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+  
+  const universalCredits = new ContentH(
+    "universalCredit",
+    "Universal Credit",
+    "Description Tbc",
+    `
+      <h3>Universal Credit</h3>
+      <p>If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
+         you may be directed to claim Universal Credit:</p>
+      <ul>
+          <li>Housing Benefit</li>
+          <li>Income-related Employment and Support Allowance (ESA)</li>
+          <li>Income-based Jobseeker's Allowance (JSA)</li>
+          <li>Child Tax Credit</li>
+          <li>Working Tax Credit</li>
+          <li>Income Support</li>
+      </ul>
+      <p>At some point in the future, many people currently on the benefits above will be moved across to Universal Credit. 
+         The Government has not yet given a date for this, but the Department for Work and Pensions 
+         will contact anyone affected before there are changes to their benefits or tax credits.</p>
+  
+      <details class="details-accordion">
+        <summary>Applying for an Advance through Universal Credit</summary>
+        <div class="details-accordion-content">
+          <p>You can apply for an advance from your Universal Credit (UC), which is a loan and is paid back through your payments.</p>
+          <p>If you claim an advance which includes some of your Housing Costs, you should pay this amount towards your rent.</p>
+        </div>
+      </details>
+  
+      <details class="details-accordion">
+        <summary>Change of Circumstances</summary>
+        <div class="details-accordion-content">
+          <p>Any changes to your circumstances must be reported immediately using your UC journal.</p>
+          <p>If not, you may be sanctioned and your UC payment may be less than you think.</p>
+          <p>If this happens, you will still receive your payment for the Housing Cost Element, 
+            but it is important that this is paid to the rent account to make sure you meet your obligation to SCC to pay rent.</p>
+        </div>
+      </details>
+  
+      <details class="details-accordion">
+        <summary>Council Tax and Universal Credit</summary>
+        <div class="details-accordion-content">
+          <p>Universal Credit does not include help with your Council Tax, so you must claim this separately.</p>
+          <p>You can do this at <a href="https://www.sheffield.gov.uk/benefits/council-tax-support" 
+             target="_blank">https://www.sheffield.gov.uk/benefits/council-tax-support</a>.</p>
+        </div>
+      </details>
+  
+      <details class="details-accordion">
+        <summary>How will Universal Credit affect my Rent Payments</summary>
+        <div class="details-accordion-content">
+          <p>Universal Credit payments are usually paid monthly, and in arrears.</p>
+          <p>You should be absolutely clear that if you claim Universal Credit, you will need to pay your full rent yourself.</p>
+          <p>You may receive Housing Costs within your UC payment that will help towards your rent, 
+             and this may change depending on the income you receive during your monthly assessment period. 
+             But regardless of this, you need to ensure your full rent payments are made.</p>
+        </div>
+      </details>
+  
+      <details class="details-accordion">
+        <summary>Notifying SCC when you start claiming Universal Credit</summary>
+        <div class="details-accordion-content">
+          <p>As all Sheffield City Council tenancies charge rent weekly, it is important that you advise us immediately if you start to claim Universal Credit.</p>
+          <p>This will allow us to discuss and agree with you arrangements about your rent payments.</p>
+        </div>
+      </details>
+  
+      <details class="details-accordion">
+        <summary>Delays before First Payment</summary>
+        <div class="details-accordion-content">
+          <p>When you first claim UC, you may have to wait 5 weeks for your first payment.</p>
+        </div>
+      </details>
+  
+      <details class="details-accordion">
+        <summary>Will my Universal Credit Payment Date change</summary>
+        <div class="details-accordion-content">
+          <p>Your UC payment date will be the same every month unless it is due on a weekend or Bank Holiday.</p>
+          <p>If this is the case, it will be paid on the last working day before your usual payment date.</p>
+          <p>Please check your UC journal regularly as this is the way you will know what your payments will be each month.</p>
+          <p>This will also be how you usually have contact with the DWP.</p>
+        </div>
+      </details>
+  
+      <details class="details-accordion">
+        <summary>Setting up an Email Account and Bank Account for Universal Credit</summary>
+        <div class="details-accordion-content">
+          <p>You can set up an email account and bank account to receive Universal Credit online. It will also help with automatic updates and payments.</p>
+          <p>Set up your Universal Credit account online:</p>
+          <ul>
+            <li>Visit the official Universal Credit website</li>
+            <li>Fill in the application form</li>
+            <li>Submit the form and wait for further instructions</li>
+          </ul>
+        </div>
+      </details>
+    `,
+    { buttonLabel: "Universal Credit", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+      keywords: [
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit'
+      ],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+  
   const welfareReform = new ContentH(
     "welfareReform",
     "Welfare reform",
