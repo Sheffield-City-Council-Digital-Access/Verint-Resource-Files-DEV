@@ -4849,9 +4849,9 @@ The same document cannot be used more than once (e.g., driving licence as primar
   { date: "07/11/2024", name: "Shahzad Athar" }
 );
 
-const parkingPermits = new ContentH(
-  "parkingPermits",
-  "ParkingPermits",
+const parkingPermitsHS = new ContentH(
+  "parkingPermitsHS",
+  "parkingPermitsHS",
   ",",
   ` 
 <p>
@@ -5783,12 +5783,10 @@ const tenancySustainment = new MenuH(
     fences,
     fobsandKeys,
     nameChanges,
-    parkingPermits,
+    parkingPermitsHS,
     permissions,
     tenancyAgreementRequest,
-    tenancyConditions,
-
-
+    tenancyConditions
   ]
 );
   
