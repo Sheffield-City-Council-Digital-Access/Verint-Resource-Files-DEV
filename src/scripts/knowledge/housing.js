@@ -10,12 +10,12 @@ class CoreH {
     constructor(id, name, description, subjects = []) {
       super(id, name, description);
       this.subjects = subjects;
-    }
+    }F
   }
   
   class MenuH extends CoreH {
     constructor(id, name, description, topics = []) {
-      super(id, name, description);
+      super(id, name, description);F
       this.topics = topics;
     }
   }
@@ -3073,23 +3073,6 @@ const bidding2 = new ContentH(
 );
 //Application Changes page to be under the Rehousing menu
 
-
-//apply for rehousing page to be under Rehousing menu
-const applyForRehousing = new ContentH(
-  "applyForRehousing",
-  "Apply For Rehousing",
-  "TBC",
-  `<p>To apply for Social Housing you need to do so via the Property Shop website. There are no paper application forms. This will be will Housing Online when NEC comes in</p>
-<p>Go online and register on www.sheffieldpropertyshop.org.uk</p>
-<p>Before you can complete an application to join the Housing Register you will need to register yourself as a new household on the system.</p>
-<p>Once registered you will be able to complete an application form to join the Housing Register.</p>
-<p>You must produce proof of ID (and Child Benefit if appropriate) and a landlord reference (if you are not already a Council tenant) at the same time, documents can be uploaded via the website or at your local housing office or First Point before your application will be validated.</p>`,
-  {buttonLabel: "Example 1", formName: "example_form" },
-  {typeKey: "example_transfered_to_service" },
-  {typeKey: "example_information_provided" },
-  {type: "Request", keywords: [rehousing], categories: ["Housing"] },
-  {date: "14/10/2024", name: "Omily Parkin" }
-  );
 
 const rehousing = new MenuH(
   "rehousing",
