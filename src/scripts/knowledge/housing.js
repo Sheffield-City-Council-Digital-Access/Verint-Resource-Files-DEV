@@ -3555,7 +3555,7 @@ const generalCouncilHousing = new ContentH(
   "Description",
   `
 <h3>Area Office Information</h3>
-<p><a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices="target="_blank">Neighbourhood Offices</a></p>
+<p><a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices="target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a></p>
 
 <h3>Bogus Callers</h3>
 <p>All Council Housing Service staff, surveyors, and contractors carry identification cards at all times. It is important that you always ask to see identification before you let anyone into your home. If you have any doubts about a caller’s identity, do not let them in.</p>
@@ -3574,10 +3574,220 @@ S2 9GH
 </address> 
 </p>
 
-<h3>Telephone Directory</h3>
+<h3>Accounts payable</h3>
+<p><strong>Service Area:</strong> Purchasing and Payments</p>
+<p><strong>Telephone Number:</strong> 2735082</p>
+<p><strong>Further Information:</strong> City Wide</p>
+<p><strong>Email Address:</strong></p>
 
-<p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx"target="_blank">Telephone Directory</a></p>
+<h3>Communications</h3>
+<p><strong>Advisor Note:</strong> Please do not give any information out and refer to the Communications Team.</p>
+<p><strong>Service Area:</strong> Communications</p>
+<p><strong>Telephone Number:</strong> 2735538</p>
+<p><strong>Further Information:</strong></p>
+<p><strong>Email Address:</strong> communications@sheffield.gov.uk (Public email address)</p>
 
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Contact Service Area</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <details class="details-accordion">
+            <summary>Call Centre Supervisor</summary>
+            <div class="details-accordion-content">
+                <p><strong>Service Area:</strong> Customer Services (Housing Call Centre Supervisors)</p>
+                <p><strong>Telephone Number:</strong> Tracy Harding 46 71021 || Lisa Styring 20 53297</p>
+            </div>
+        </details>
+        <details class="details-accordion">
+            <summary>Community Engagement</summary>
+            <div class="details-accordion-content">
+                <p>Advise the customer you will send their enquiry to their Neighbourhood Officer.</p>
+            </div>
+        </details>
+        <details class="details-accordion">
+            <summary>Estate Services</summary>
+            <div class="details-accordion-content">
+                <p>Advise the customer you will now transfer them to the relevant Area Estates Team.</p>
+            </div>
+        </details>
+        <details class="details-accordion">
+            <summary>Furnished</summary>
+            <div class="details-accordion-content">
+                <p><strong>Service Area:</strong> Furnished Accommodation</p>
+                <p><strong>Telephone Number:</strong> 2052600</p>
+            </div>
+        </details>
+        <details class="details-accordion">
+            <summary>IMFIT (Rents)</summary>
+            <div class="details-accordion-content">
+                <p>Advise the customer you will now transfer them to the relevant Rents team.</p>
+            </div>
+        </details>
+        <details class="details-accordion">
+            <summary>Investment</summary>
+            <div class="details-accordion-content">
+                <p><strong>Service Area:</strong> Investment - City Wide</p>
+                <p><strong>Telephone Number:</strong> 52917</p>
+                <p><strong>Further Information:</strong> Former Decent Homes Correspondence address: PO Box 10589, NG6 6DN</p>
+            </div>
+        </details>
+        <details class="details-accordion">
+            <summary>Leaseholder</summary>
+            <div class="details-accordion-content">
+                <p><strong>Service Area:</strong> Leaseholder Management</p>
+                <p><strong>Telephone Number:</strong> 34468</p>
+                <p><strong>Further Information:</strong> Leasehold Service, Floor 11, Moorfoot Building, Sheffield, S1 4PL</p>
+                <p><strong>Email Address:</strong> LeaseholdService@sheffield.gov.uk</p>
+            </div>
+        </details>
+        <details class="details-accordion">
+            <summary>Repairs Contact Centre</summary>
+            <div class="details-accordion-content">
+                <p><strong>Service Area:</strong> Council Housing Repairs Internal Numbers</p>
+                <p><strong>Telephone Number:</strong> Search for Repairs on Storm and select the appropriate queue</p>
+            </div>
+        </details>
+        <details class="details-accordion">
+            <summary>Repairs and Maintenance</summary>
+            <div class="details-accordion-content">
+                <p><strong>Service Area:</strong> Responsive Repairs, Pre Inspections, Mex, Site Instructions, Vacant Properties</p>
+                <p><strong>Telephone Number:</strong> 53710 / 37130</p>
+            </div>
+        </details>
+        <details class="details-accordion">
+            <summary>Neighbourhood Support Team</summary>
+            <div class="details-accordion-content">
+                <p>Inform the customer that you will contact the appropriate team.</p>
+            </div>
+        </details>
+        <details class="details-accordion">
+            <summary>Sheltered</summary>
+            <div class="details-accordion-content">
+                <p><strong>Service Area:</strong> Sheltered Housing</p>
+                <p><strong>Telephone Number:</strong> 2037603</p>
+                <p><strong>Email Address:</strong> HomesAreaSheltered.sheffield.gov.uk</p>
+            </div>
+        </details>
+        <details class="details-accordion">
+            <summary>Temporary</summary>
+            <div class="details-accordion-content">
+                <p><strong>Service Area:</strong> Temporary Accommodation</p>
+                <p><strong>Telephone Number:</strong> 20 53171 or 29 30832</p>
+            </div>
+        </details>
+    </div>
+</details>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Rehousing</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+        <!-- Customer Access Team -->
+        <details class="details-accordion">
+            <summary>Customer Access Team</summary>
+            <div class="details-accordion-content">
+                <p><strong>Service Area:</strong> Customer Access team (Customer Services)</p>
+                <p><strong>Telephone Number:</strong> 36872</p>
+                <p><strong>Further Information:</strong> Property Shop, Housing Register General Enquiries, Bidding. City Wide</p>
+                <p><strong>Email Address:</strong> PropertyShop@sheffield.gov.uk</p>
+            </div>
+        </details>
+
+        <!-- Lettings Team -->
+        <details class="details-accordion">
+            <summary>Lettings Team</summary>
+            <div class="details-accordion-content">
+                <p><strong>Service Area:</strong> Lettings Team</p>
+                <p><strong>Telephone Number:</strong> 2053097</p>
+                <p><strong>Further Information:</strong> Offers, refusals, matching, lettings</p>
+                <p><strong>Email Address:</strong> LettingsTeam@sheffield.gov.uk</p>
+            </div>
+        </details>
+
+        <!-- Mutual Exchanges -->
+        <details class="details-accordion">
+            <summary>Mutual Exchanges</summary>
+            <div class="details-accordion-content">
+                <p><strong>Service Area:</strong> Lettings Team</p>
+                <p><strong>Telephone Number:</strong> 2053097</p>
+                <p><strong>Further Information:</strong> Mutual Exchanges</p>
+                <p><strong>Email Address:</strong> LettingsTeam@sheffield.gov.uk</p>
+            </div>
+        </details>
+
+        <!-- Priorities Awards Team -->
+        <details class="details-accordion">
+            <summary>Priorities Awards Team</summary>
+            <div class="details-accordion-content">
+                <p><strong>Service Area:</strong> Priority Awards Team</p>
+                <p><strong>Telephone Number:</strong> 2736970 (public number)</p>
+                <p><strong>Further Information:</strong> Rehousing process for priority awards</p>
+                <p><strong>Email Address:</strong> RehousingPriorities@sheffield.gov.uk</p>
+            </div>
+        </details>
+
+        <!-- Registration (and Eligibility) Team -->
+        <details class="details-accordion">
+            <summary>Registration (and Eligibility) Team</summary>
+            <div class="details-accordion-content">
+                <p><strong>Service Area:</strong> Rehousing Registration City Wide</p>
+                <p><strong>Telephone Number:</strong> 34411</p>
+                <p><strong>Further Information:</strong> Registrations, Eligibility</p>
+                <p><strong>Email Address:</strong> HousingRegistrations@sheffield.gov.uk</p>
+            </div>
+        </details>
+
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Sheltered Wardens</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p><strong>Balfour House:</strong> 2830285, Horner Close, Stocksbridge, S36 1LQ</p>
+        <p><strong>Blackberry Hamlet:</strong> 2482678, Halfway Centre, Mosborough, S20 4TA</p>
+        <p><strong>Blackwell Court:</strong> 2701682, Blackwell Place, S2 5PW</p>
+        <p><strong>Callow Mount:</strong> 2647736, Handbank Block, Newfield Green, S14 1PJ</p>
+        <p><strong>Cambridge Court:</strong> 2586596, 120 Cambridge Road, Heeley, S8 9SN</p>
+        <p><strong>Charles Square Hamlet:</strong> 2869513, Charles Square, High Green, S35 4FS (Includes addresses at Well Croft)</p>
+        <p><strong>Cherry Tree Common:</strong> 2585634, 4 Union Road, Nether Edge, S11 9EF</p>
+        <p><strong>Crabtree Grange:</strong> 2437165, 191 Crabtree Road, Norwood, S5 7BA</p>
+        <p><strong>Elm Tree House:</strong> 2646896, Flat 37, 7 Ridgeway Road, Intake, S12 2TW</p>
+        <p><strong>Ernest Copley House:</strong> 2848573, Peckham Road, High Green, S35 3JA</p>
+        <p><strong>Ernest Fox House:</strong> 2461011, Lump Lane, Grenoside, S35 9PZ (Includes Frostings Close, Packmans Close and Packmans Way)</p>
+        <p><strong>Eva Ratcliffe House:</strong> 2400950, Yew Lane, Ecclesfield, S5 9BE</p>
+        <p><strong>Frostings Close:</strong> See Ernest Fox House</p>
+        <p><strong>Helliwell Court:</strong> 2830284, Flat 8, Helliwell Lane, Deepcar, S36 2QH</p>
+        <p><strong>Holly Bank:</strong> 2358668, Flat 23, Mansfield Drive, Intake, S12 2BF</p>
+        <p><strong>John Trickett House:</strong> 2463644, Bevan Way, Chapeltown, S35 1RL</p>
+        <p><strong>Kinsey Road:</strong> 2848613, Kinsey Road, High Green, S35 4HP</p>
+        <p><strong>Lansbury Avenue:</strong> John Trickett House, West Ecclesfield, Sheffield, S35 1RL</p>
+        <p><strong>Low Edges:</strong> 2839356, Flat 177, Low Edges Road, Low Edges, S8 7JG</p>
+        <p><strong>Lytton Court:</strong> 2839356, 37 Lytton Drive, Parson Cross, S5 8AZ</p>
+        <p><strong>Manor House:</strong> 2340218, 706 Stannington Road, Stannington, S6 6AJ</p>
+        <p><strong>Mount View Lodge:</strong> 2585327, 194 Derbyshire Lane, Norton, S8 8SE</p>
+        <p><strong>Newgate Close:</strong> 2869433, Newgate Close, High Green, S35 4PD</p>
+        <p><strong>Newton Croft:</strong> 2699927, 26 Chapel Street, Woodhouse, S13 7JN</p>
+        <p><strong>Orpen House:</strong> 2358722, Flat 5, 2 Mawfa Road, Norton, S14 1AZ</p>
+        <p><strong>Painted Fabrics:</strong> 2746790, 69 Little Norton Drive, Norton, S8 8HH</p>
+        <p><strong>Park View Lodge:</strong> 2333788, Flat 10, 44 Leader Road, Hillsborough, S6 4GH</p>
+        <p><strong>Roscoe Court:</strong> 2347619, 2 Stanwood Road, Stannington, S6 5JF</p>
+        <p><strong>Springwater House:</strong> 2488296, 44 Cotleigh Crescent, Hackenthorpe, S12 4HT</p>
+        <p><strong>St Georges Court:</strong> 2762861, Flat 35, 1 Beet Street, Netherthorpe, S3 7GP</p>
+        <p><strong>Sweeney House:</strong> 2830278, Flat 40, Oxley Close, Stocksbridge, S36 1LH</p>
+        <p><strong>Welwyn Court:</strong> 2358727, Flat 1, 71 Jaunty Lane, Gleadless, S12 4DL</p>
+        <p><strong>Westnall House:</strong> 2863231, Glossop Row, Oughtibridge, S35 0GH</p>
+    </div>
+</details>
 
   `,
   { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
