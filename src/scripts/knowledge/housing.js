@@ -3555,7 +3555,7 @@ const generalCouncilHousing = new ContentH(
   "Description",
   `
 <h3>Area Office Information</h3>
-<p><a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices="target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a></p>
+<p><a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices"target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a></p>
 
 <h3>Bogus Callers</h3>
 <p>All Council Housing Service staff, surveyors, and contractors carry identification cards at all times. It is important that you always ask to see identification before you let anyone into your home. If you have any doubts about a caller’s identity, do not let them in.</p>
