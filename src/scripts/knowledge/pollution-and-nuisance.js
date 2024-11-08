@@ -204,7 +204,7 @@ const badgerProtection = new ContentPaN(
       "Pest Control",
       "Wildlife",
       "Conservation",
-      "Law",
+      "Law"
     ],
   },
   { date: "07/10/2024", name: "Elliott Griffiths" }
@@ -247,7 +247,7 @@ const batProtectionBritain = new ContentPaN(
       "Pest Control",
       "Wildlife",
       "Conservation",
-      "Law",
+      "Law"
     ],
   },
   { date: "07/10/2024", name: "Elliott Griffiths" }
@@ -352,7 +352,7 @@ const bedBugTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "07/10/2024", name: "Elliott Griffiths" }
@@ -407,7 +407,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "09/10/2024", name: "Shahzad Athar" }
@@ -513,7 +513,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "09/10/2024", name: "Shahzad Athar" }
@@ -602,7 +602,7 @@ const bumbleBeesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "09/10/2024", name: "Shahzad Athar" }
@@ -713,7 +713,7 @@ const carpetBeetlesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "09/10/2024", name: "Shahzad Athar" }
@@ -808,7 +808,7 @@ const ratTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "07/10/2024", name: "Elliott Griffiths" }
@@ -887,7 +887,7 @@ const clusterFilesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -966,7 +966,7 @@ const cockroachesProtection = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -1045,7 +1045,7 @@ const cricketsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -1124,7 +1124,7 @@ const dermestesBeetlesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -1203,7 +1203,7 @@ const filesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -1232,7 +1232,7 @@ const foxesInformation = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -1262,7 +1262,7 @@ const FrogsorFrogspawn = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -1341,7 +1341,7 @@ const furBeetlesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -1389,7 +1389,7 @@ const gardenAntsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -1437,7 +1437,7 @@ const ladyBirdsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -1549,7 +1549,7 @@ const miceTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -1597,7 +1597,7 @@ const mitesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -1676,7 +1676,7 @@ const mothsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -1724,7 +1724,7 @@ const pharoahAntsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -1803,7 +1803,7 @@ const psocidsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -1882,7 +1882,7 @@ const redSpiderMitesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -1961,7 +1961,7 @@ const sewageFliesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -2010,7 +2010,7 @@ const silverFishTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -2036,7 +2036,7 @@ const spiderBeetlesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -2062,7 +2062,7 @@ const squirrelsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -2088,7 +2088,7 @@ const waspsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -2114,7 +2114,7 @@ const weevilsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -2210,7 +2210,7 @@ const pestControl = new MenuPaN(
     waspsTreatment,
     weevilsTreatment,
     woodliceTreatment,
-    noneoftheAbove,
+    noneoftheAbove
   ]
 );
 
@@ -2387,7 +2387,7 @@ const abandonedVehicles = new ContentPaN(
       "vechicle",
       "vehcile",
       "vehical",
-      "vehilce",
+      "vehilce"
     ],
     categories: ["Pollution and Nuisance", "Waste Management"],
   },
@@ -2406,7 +2406,7 @@ const cleanAirZone = new MenuPaN(
     howWillDriversBeCharged,
     howAreChargesPaid,
     howLongWillTheCleanAirZoneBeInPlace,
-    whatSupportWillThereBeForThoseAffected,
+    whatSupportWillThereBeForThoseAffected
   ]
 );
 
@@ -2620,7 +2620,7 @@ const howAreChargesPaid = new ContentPaN(
     "cean air zone",
     "zon",
     "cza"],
-  categories: ["Parking", "Pollution and Nuisance",],
+  categories: ["Parking", "Pollution and Nuisance"],
 },
 { date: "06/11/2024", name: "Dinah Williams" }
 );
@@ -2651,7 +2651,7 @@ const howLongWillTheCleanAirZoneBeInPlace = new ContentPaN(
     "cean air zone",
     "zon",
     "cza"],
-  categories: ["Parking", "Pollution and Nuisance",],
+  categories: ["Parking", "Pollution and Nuisance"],
 },
 { date: "06/11/2024", name: "Dinah Williams" }
 );
@@ -2679,7 +2679,7 @@ const whatSupportWillThereBeForThoseAffected = new ContentPaN(
     "cean air zone",
     "zon",
     "cza"],
-  categories: ["Parking", "Pollution and Nuisance",],
+  categories: ["Parking", "Pollution and Nuisance"],
 },
 { date: "06/11/2024", name: "Dinah Williams" }
 );
@@ -2701,6 +2701,6 @@ const pollutionAndNuisance = new ServicePaN(
     reportFlyPosting,
     reportFlyTipping,
     reportNeedlesGlass,
-    cleanAirZone,
+    cleanAirZone
   ]
 );
