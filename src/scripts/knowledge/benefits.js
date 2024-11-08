@@ -1887,8 +1887,155 @@ const supportForBusinesses = new ContentB(
   </details>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: " cost_of_living_transferred_to_service" },
+  { typeKey: "cost_of_living_transferred_to_service" },
   { typeKey: "cost_of_living_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "08/11/2024", name: "Nathan Smith" }
+);
+
+const travelSupport = new ContentB(
+  "travelSupport",
+  "Travel support",
+  "Description",
+  `
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Travel South Yorkshire journey planner</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      The South Yorkshire journey planner can be found at: 
+      <a href="https://journeyplanner.travelsouthyorkshire.com/" target="_blank">https://journeyplanner.travelsouthyorkshire.com/</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Travel South Yorkshire Senior Pass</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      Travel South Yorkshire Senior Pass information can be found at: 
+      <a href="https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/senior-pass" target="_blank">https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/senior-pass</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Sheffield Community Transport City Ride, Shopper Bus and Community Car schemes</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      City Ride, Shopper Bus and Community Car scheme information can be found at: 
+      <a href="https://sheffieldct.co.uk/community-transport-for-individuals-sheffield/#1493884261153-541c9f1a-169b" target="_blank">https://sheffieldct.co.uk/community-transport-for-individuals-sheffield/#1493884261153-541c9f1a-169b</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Transport support information</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      Transport support information can be found at: 
+      <a href="https://helpforhouseholds.campaign.gov.uk/help-with-transport-costs/" target="_blank">https://helpforhouseholds.campaign.gov.uk/help-with-transport-costs/</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Get help with transport if you are referred to hospital</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      If you have a referral to a specialist or a hospital for
+      NHS treatment or tests and you are on benefits or
+      allowances you could claim travel costs.
+      To claim, take your travel receipts, appointment
+      letter or card, plus proof that you're receiving one of
+      the qualifying benefits, to a nominated cashiers'
+      office in the hospital/clinic
+    </p>
+    <p>
+      More information can be found at:
+      <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/" target="_blank">https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Travel South Yorkshire 18-22 Travel Pass</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      Information for the Travel South Yorkshire 18-22 Travel Pass can be found at: 
+      <a href="https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/18-22-discount-card" target="_blank">https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/18-22-discount-card</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Jobcentre Plus Travel Discount Card information</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      Information about Jobcentre Plus Travel Discount Card can be found at: 
+      <a href="https://www.nationalrail.co.uk/railcards/concessionary-travel/" target="_blank">https://www.nationalrail.co.uk/railcards/concessionary-travel/</a>
+    </p>
+    </section>
+  </div>
+  </details>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "cost_of_living_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "08/11/2024", name: "Nathan Smith" }
+);
+
+const employmentSupport = new ContentB(
+  "employmentSupport",
+  "Employment support",
+  "Description",
+  `
+    <p>
+      Information about employment support from Opportunity Sheffield can be found at: 
+      <a href="https://www.sheffield.gov.uk/campaigns/opportunity-sheffield" target="_blank">https://www.sheffield.gov.uk/campaigns/opportunity-sheffield</a>
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "cost_of_living_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "08/11/2024", name: "Nathan Smith" }
+);
+
+const welcomePlaces = new ContentB(
+  "welcomePlaces",
+  "Welcome Places",
+  "Description",
+  `
+    <p>
+      Information about the Building Thriving Communities Programme can be found at: 
+      <a href="https://www.sheffield.gov.uk/thriving-communities" target="_blank">https://www.sheffield.gov.uk/thriving-communities</a>
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "cost_of_living_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "08/11/2024", name: "Nathan Smith" }
 );
@@ -2834,9 +2981,9 @@ const costOfLiving = new MenuB(
     energySupport,
     howYouCanHelpYourCommunity,
     supportForBusinesses,
-    // travelSupport,
-    // employmentSupport,
-    // welcomePlaces
+    travelSupport,
+    employmentSupport,
+    welcomePlaces
   ]
 );
 
