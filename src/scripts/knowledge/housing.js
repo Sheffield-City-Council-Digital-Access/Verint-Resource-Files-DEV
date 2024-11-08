@@ -283,7 +283,7 @@ const benefitClaim = new ContentH(
     "Benefit on two homes",
     "Description tbc",
     `
-<h4>Unavoidable Liability</h4>
+<h4>Unavoidable liability</h4>
 <p><strong>Situation:</strong> When tenants sign for a tenancy and have moved in but have a liability on another property.</p>
 <p>This is where a tenant has signed for a Council property but has a liability at another property. 
    This usually occurs when they have to give four weeks' notice on the property 
@@ -295,7 +295,7 @@ const benefitClaim = new ContentH(
    the tenants will need to be physically living at the property. 
    If not, housing benefit cannot be paid under unavoidable liability rules.</p>
 
-<h4>Fleeing Violence</h4>
+<h4>Fleeing violence</h4>
 <p><strong>Situation:</strong> Where a tenant is fleeing violence and has been put into other accommodation.</p>
 <p>If someone is fleeing violence, and they state that they have an intention to return home if the threat of violence is lifted, 
    then they can claim housing benefit on two homes if they have a rental liability at 
@@ -306,7 +306,7 @@ const benefitClaim = new ContentH(
    They may also need to provide proof, such as a letter from the police, 
    a crime reference number, or a letter from the Council Housing Service.</p>
 
-<h4>Benefit Prior to Occupation</h4>
+<h4>Benefit prior to occupation</h4>
 <p><strong>Basic principles:</strong> Benefit prior to occupation can only be paid when housing benefit is <u>not</u> being paid at any other property.</p>
 <p><strong>Situation:</strong> Tenant(s) sign for a property but there is a delay in moving into the property.</p>
 <p>A tenant(s) may qualify for up to four weeks of benefit prior to occupation if the delay in moving was 
@@ -326,7 +326,7 @@ const benefitClaim = new ContentH(
 <p>You will need to inform the tenant that if they do not move in and do not meet the above criteria, 
    they will be liable for full rent until they move into the property.</p>
 
-<h4>In Hospital</h4>
+<h4>In hospital</h4>
 <p>If a tenant is in hospital during the time they have signed up for the property, 
    they will not be entitled to housing benefit until they actually move into the property.</p>
 <p>If this is the case, it can be argued that they have moved the majority of their possessions into the 
@@ -368,13 +368,13 @@ const benefitClaim = new ContentH(
 
   const changeOfCircumstances = new ContentH(
     "changeOfCircumstances",
-    "Change of Circumstances",
+    "Change of circumstances",
     "Description Tbc",
     `
       <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
          <p>You can access this via the <a href="https://www.sheffield.gov.uk/" target="_blank">https://www.sheffield.gov.uk/</a> and follow the links to Benefits.</p>
     `,
-    { buttonLabel: "Change of Circumstances", formName: "" },
+    { buttonLabel: "Change of circumstances", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
     { typeKey: "housing_benefits_information_requested" },
     {
@@ -480,7 +480,7 @@ const benefitClaim = new ContentH(
   
   const universalCredits = new ContentH(
     "universalCredit",
-    "Universal Credit",
+    "Universal credit",
     "Description Tbc",
     `
       <p>If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
@@ -498,7 +498,7 @@ const benefitClaim = new ContentH(
          will contact anyone affected before there are changes to their benefits or tax credits.</p>
   
       <details class="details-accordion">
-        <summary>Applying for an Advance through Universal Credit</summary>
+        <summary>Applying for an advance through Universal Credit</summary>
         <div class="details-accordion-content">
           <p>You can apply for an advance from your Universal Credit (UC), which is a loan and is paid back through your payments.</p>
           <p>If you claim an advance which includes some of your Housing Costs, you should pay this amount towards your rent.</p>
@@ -506,7 +506,7 @@ const benefitClaim = new ContentH(
       </details>
   
       <details class="details-accordion">
-        <summary>Change of Circumstances</summary>
+        <summary>Change of circumstances</summary>
         <div class="details-accordion-content">
           <p>Any changes to your circumstances must be reported immediately using your UC journal.</p>
           <p>If not, you may be sanctioned and your UC payment may be less than you think.</p>
@@ -525,7 +525,7 @@ const benefitClaim = new ContentH(
       </details>
   
       <details class="details-accordion">
-        <summary>How will Universal Credit affect my Rent Payments</summary>
+        <summary>How will Universal Credit affect my rent payments</summary>
         <div class="details-accordion-content">
           <p>Universal Credit payments are usually paid monthly, and in arrears.</p>
           <p>You should be absolutely clear that if you claim Universal Credit, you will need to pay your full rent yourself.</p>
@@ -544,14 +544,14 @@ const benefitClaim = new ContentH(
       </details>
   
       <details class="details-accordion">
-        <summary>Delays before First Payment</summary>
+        <summary>Delays before first payment</summary>
         <div class="details-accordion-content">
           <p>When you first claim UC, you may have to wait 5 weeks for your first payment.</p>
         </div>
       </details>
   
       <details class="details-accordion">
-        <summary>Will my Universal Credit Payment Date change</summary>
+        <summary>Will my Universal Credit payment date change</summary>
         <div class="details-accordion-content">
           <p>Your UC payment date will be the same every month unless it is due on a weekend or Bank Holiday.</p>
           <p>If this is the case, it will be paid on the last working day before your usual payment date.</p>
@@ -561,7 +561,7 @@ const benefitClaim = new ContentH(
       </details>
   
       <details class="details-accordion">
-        <summary>Setting up an Email Account and Bank Account for Universal Credit</summary>
+        <summary>Setting up an email account and bank account for Universal Credit</summary>
         <div class="details-accordion-content">
           <p>You can set up an email account and bank account to receive Universal Credit online. It will also help with automatic updates and payments.</p>
           <p>Set up your Universal Credit account online:</p>
@@ -573,7 +573,7 @@ const benefitClaim = new ContentH(
         </div>
       </details>
     `,
-    { buttonLabel: "Universal Credit", formName: "" },
+    { buttonLabel: "Universal credit", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
     { typeKey: "housing_benefits_information_requested" },
     {
@@ -1081,7 +1081,7 @@ const extraCareHousing = new ContentH(
     </ul>
     <p>There are currently 5 Extra Care Housing schemes in Sheffield.</p>
 
-    <h3>Extra Care Contact Details</h3>
+    <h3>Extra Care contact details</h3>
     <p>
       Guildford Grange, Norfolk Park. Contact the scheme on 0114 203 7888<br />
       The Meadows, Shirecliffe. Contact the scheme on 0114 243 5749<br />
@@ -1129,7 +1129,7 @@ const gypsyAndTravellers = new ContentH(
   "Gypsy and Travellers",
   "desc tbd",
   `
-    <h3>Where are the official Gypsy and Traveller sits</h3>
+    <h3>Where are the official gypsy and traveller sites</h3>
     <address>
       Long Acre View Holbrook Trading Estate<br />Holbrook<br />/Sheffield<br />S20
       3FU
