@@ -2567,6 +2567,10 @@ function getAndSetReviewPageData() {
   }
 }
 
+function refreshReviewPage() {
+  getAndSetReviewPageData();
+}
+
 // --- CONTACT TEAM PANEL --------------------------------------------------- \\
 
 function showContactTeamPanel() {
