@@ -724,7 +724,7 @@ const moneySupport = new ContentB(
 const foodSupport = new ContentB(
   "foodSupport",
   "Food support",
-  "",
+  "Description",
   `
   <details class="accordion">
   <summary class="accordion-header">
@@ -797,6 +797,233 @@ const foodSupport = new ContentB(
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "07/11/2024", name: "Nathan Smith" }
+);
+
+const energySupport = new ContentB(
+  "energySupport",
+  "Energy support",
+  "Description",
+  `
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Warm Home Discount Scheme</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about the Warm Home Discount Scheme can be found at: 
+      <a href="https://www.gov.uk/the-warm-home-discount-scheme" target="_blank">https://www.gov.uk/the-warm-home-discount-scheme</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Winter Fuel Payment</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about the Winter Fuel Payment can be found at: 
+      <a href="https://www.gov.uk/winter-fuel-payment" target="_blank">https://www.gov.uk/winter-fuel-payment</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Energy advice from Energy Savings Trust</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information from Energy Savings Trust can be found at: 
+      <a href="https://energysavingtrust.org.uk/" target="_blank">https://energysavingtrust.org.uk/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Connected for Warmth energy grants</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about Connected for Warmth energy grants can be found at: 
+      <a href="https://www.connectedforwarmth.org.uk/" target="_blank">https://www.connectedforwarmth.org.uk/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Get independent energy advice from Green Doctors</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about independent energy advice from Green Doctors can be found at: 
+      <a href="https://www.groundwork.org.uk/greendoctor/" target="_blank">https://www.groundwork.org.uk/greendoctor/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Central heating</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      Knowing how your central heating system works will help you keep warm and save money.
+    </p>
+    <h3>Room thermostat</h3>
+    <p>
+      Usually on the living room or hall wall, it senses when the house is warm enough and 
+      turns the boiler off automatically. It should be set at between 18 to 21 degrees C 
+      (65 to 70 degrees F), slightly higher if you are an older person or have young children.
+    </p>
+    <h3>Thermostatic radiator valve</h3>
+    <p>
+      These are fitted to your radiators and allow you to set different temperatures in different 
+      rooms. The lower the number or comfort level on the valve, the less heat the radiator 
+      will give off.
+    </p>
+    <h3>How to use the system</h3>
+    <p>
+      <ul>
+        <li>try to maintain a comfortable, even temperature throughout your home</li>
+        <li>don’t keep heating or hot water on too long or at times when you don’t need it</li>
+        <li>set the controller to bring the heating/hot water on about half an hour before you get up and to go off half an hour before you go to bed</li>
+        <li>remember to keep your home well ventilated to reduce condensation</li>
+      </ul>
+    </p>
+    <h3>Gas fires</h3>
+    <p>
+      If you have one, make sure it is kept free of dust and isn’t covered up. 
+      If there is a ventilator in the window, don’t block it up otherwise harmful fumes could build up. 
+      We recommend you don’t use the fire at the same time as the central heating.
+    </p>
+    <h3>Fuel costs</h3>
+    <p>
+    If fear of high bills is stopping you heating your home, here are some tips to help:
+    </p>
+    <p>
+      <ul>
+        <li>compare fuel costs between different suppliers to get a better deal. Visit <a href="https://www.energyhelpline.com/" target="_blank">https://www.energyhelpline.com/</a> or call <strong>0800 074 0745</strong></li>
+        <li>it is often cheaper to get both gas and electricity from the same supplier and there is usually a discount for paying by Direct Debit</li>
+        <li>many suppliers offer discounted schemes for older people or people claiming benefit</li>
+        <li>some suppliers, including <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> or <a href="https://www.edfenergytrust.org.uk/" target="_blank">https://www.edfenergytrust.org.uk/</a>, offer financial grants to customers in need</li>
+        <li>pensioners or individuals with sight or hearing impairments, disability or chronic illness should ask to be put on their supplier’s ‘Priority Services Register’, so they can’t be disconnected between the 1 October and 31 March</li>
+        <li>the Winter Fuel Payment helpline is <strong>0800 731 0160</strong></li>
+      </ul>
+    </p>
+    <h3>Faults</h3>
+    <p>
+    Before you call us, please make sure:
+    </p>
+    <p>
+      <ul>
+        <li>the heating is turned on (there is normally a switch near the boiler)</li>
+        <li>the timer is set correctly – if you are unsure how to do this, call us on <strong>0114 273 5555</strong></li>
+        <li>your room thermostat is set to the required temperature and your thermostatic radiator valves are turned on</li>
+        <li>your pre-payment or token meter has credit</li>
+      </ul>
+    </p>
+    <p>
+    If the system still won’t work, report a repair at: <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> or <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a>
+    </p>
+    <p>
+    If you want someone to visit your home and explain how the central heating works, call us on <strong>0114 273 5555</strong> or visit your Neighbourhood Office.
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Help from your energy supplier: the Energy Company Obligation</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about help from your energy supplier can be found at: 
+      <a href="https://www.gov.uk/energy-company-obligation" target="_blank">https://www.gov.uk/energy-company-obligation</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>National Energy Action</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about National Energy Action can be found at: 
+      <a href="https://www.nea.org.uk/" target="_blank">https://www.nea.org.uk/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Apply for alternative funding for your energy bills</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      The government is offering two schemes which provide funding to people who do not 
+      have a direct contract with an energy supplier and are therefore not eligible for 
+      the current Energy Bill Support Scheme. 
+    </p>
+    <h3>Energy Bills Support Scheme Alternative Funding</h3>
+    <p>
+      The Energy Bills Support Scheme Alternative Funding provides eligible residences with 
+      a £400 discount on their energy bills. This includes, for example, care home residents 
+      or those living in properties with energy costs paid to a commercial landlord.
+    </p>
+    <h3>Alternative Fuel Payments Scheme</h3>
+    <p>
+      The Alternative Fuel Payments Scheme offers a discount of £200 to those using alternative 
+      fuels such as biomass or heating oil.
+    </p>
+    <h3>How to apply</h3>
+    <p>
+      If you are eligible for one of these schemes, you will need to apply through the GOV.UK website. 
+      Once you have made an application and it's been approved, your payment details will be shared 
+      with the Council in order to process your payment. A privacy notice regarding sharing personal 
+      information is available for you to read on our privacy notice page which can be found here: 
+      <a href="https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice" target="_blank">https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice</a>
+    </p>
+    <h3>Further support</h3>
+    <p>
+      If you need to speak to someone about the schemes, there is a dedicated government 
+      helpline to answer your queries. You can access the helpline details at: 
+      <a href="https://www.gov.uk/get-help-energy-bills" target="_blank">https://www.gov.uk/get-help-energy-bills</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Warm Homes Sheffield: Energy support guide</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about Warm Homes Sheffield can be found at: 
+      <a href="https://www.warmhomessheffield.org.uk/" target="_blank">https://www.warmhomessheffield.org.uk/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "cost_of_living_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "08/11/2024", name: "Nathan Smith" }
 );
 
 //#endregion Cost of Living
@@ -1737,7 +1964,7 @@ const costOfLiving = new MenuB(
     mapOfWelcomePlacesInSheffield,
     moneySupport,
     foodSupport,
-    // energySupport,
+    energySupport,
     // howYouCanHelpYourCommunity,
     // supportForBusinesses,
     // travelSupport,
