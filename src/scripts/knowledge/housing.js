@@ -205,7 +205,6 @@ const benefitClaim = new ContentH(
     "Benefits clawback",
     "Description tbc",
     `
-    <h3>Benefits clawback</h3>
     <p>If you have been overpaid housing benefit and no longer receive it, you will receive an invoice from Sheffield Benefits Service to repay directly.
        If you still receive housing benefit, the overpayment is recovered by reducing your weekly housing benefit.
        This reduction, which increases your rent payable by the same amount, is called 'clawback'.
@@ -284,84 +283,56 @@ const benefitClaim = new ContentH(
     "Benefit on two homes",
     "Description tbc",
     `
-  <h3>Benefit on two homes</h3>
-<details class="accordion">
-<summary class="accordion-header">
-  <h4>Unavoidable liability</h4>
-  <div class="accordion-icon"></div>
-</summary>
-<div class="accordion-content">
-  <p><strong>Situation:</strong> When tenants sign for a tenancy and have moved in but have a liability on another property.</p>
-  <p>This is where a tenant has signed for a Council property but has a liability at another property. 
-     This usually occurs when they have to give four weeks' notice on the property 
-     they have left but are inclined to take the Council Housing Service property.</p>
-  <p>To make a claim for unavoidable liability, a written request needs to be made by the tenant. 
-     As it is discretionary, they will then need to satisfy the criteria 
-     as stated on the enclosed letter within the standard 28 days of the application. 
-     For housing benefit to be paid on the Council Housing Service property, 
-     the tenants will need to be physically living at the property. 
-     If not, housing benefit cannot be paid under unavoidable liability rules.</p>
-</div>
-</details>
+<h4>Unavoidable Liability</h4>
+<p><strong>Situation:</strong> When tenants sign for a tenancy and have moved in but have a liability on another property.</p>
+<p>This is where a tenant has signed for a Council property but has a liability at another property. 
+   This usually occurs when they have to give four weeks' notice on the property 
+   they have left but are inclined to take the Council Housing Service property.</p>
+<p>To make a claim for unavoidable liability, a written request needs to be made by the tenant. 
+   As it is discretionary, they will then need to satisfy the criteria 
+   as stated on the enclosed letter within the standard 28 days of the application. 
+   For housing benefit to be paid on the Council Housing Service property, 
+   the tenants will need to be physically living at the property. 
+   If not, housing benefit cannot be paid under unavoidable liability rules.</p>
 
-<details class="accordion">
-<summary class="accordion-header">
-  <h4>Fleeing violence</h4>
-  <div class="accordion-icon"></div>
-</summary>
-<div class="accordion-content">
-  <p><strong>Situation:</strong> Where a tenant is fleeing violence and has been put into other accommodation.</p>
-  <p>If someone is fleeing violence, and they state that they have an intention to return home if the threat of violence is lifted, 
-     then they can claim housing benefit on two homes if they have a rental liability at 
-     the property they are fleeing and the one that they are currently occupying.</p>
-  <p>They will need to complete a housing benefit claim for both homes.</p>
-  <p>To successfully claim housing benefit, they will need to confirm in writing that they have an intention 
-     to return to the property once the threat of violence is removed. 
-     They may also need to provide proof, such as a letter from the police, 
-     a crime reference number, or a letter from the Council Housing Service.</p>
-</div>
-</details>
+<h4>Fleeing Violence</h4>
+<p><strong>Situation:</strong> Where a tenant is fleeing violence and has been put into other accommodation.</p>
+<p>If someone is fleeing violence, and they state that they have an intention to return home if the threat of violence is lifted, 
+   then they can claim housing benefit on two homes if they have a rental liability at 
+   the property they are fleeing and the one that they are currently occupying.</p>
+<p>They will need to complete a housing benefit claim for both homes.</p>
+<p>To successfully claim housing benefit, they will need to confirm in writing that they have an intention 
+   to return to the property once the threat of violence is removed. 
+   They may also need to provide proof, such as a letter from the police, 
+   a crime reference number, or a letter from the Council Housing Service.</p>
 
-<details class="accordion">
-<summary class="accordion-header">
-  <h4>Benefit prior to occupation</h4>
-  <div class="accordion-icon"></div>
-</summary>
-<div class="accordion-content">
-  <p><strong>Basic principles:</strong> Benefit prior to occupation can only be paid when housing benefit is <u>not</u> being paid at any other property.</p>
-  <p><strong>Situation:</strong> Tenant(s) sign for a property but there is a delay in moving into the property.</p>
-  <p>A tenant(s) may qualify for up to four weeks of benefit prior to occupation if the delay in moving was 
-     reasonable and they were waiting for a social fund payment for a need connected with the move (e.g., removal expenses or help to set up home). 
-     This only applies if:</p>
-  <ul>
-    <li>They have a child of five or under living with them.</li>
-    <li>They are 60 or over and neither they nor their partner are receiving Income Support (IS) or income-based Jobseeker's Allowance (JSA).</li>
-    <li>They are under 60 (or they or their partner are receiving IS or JSA) and qualify for one of the pensioner premiums or 
-        a disability, severe disability, or disabled child premium.</li>
-    <li>They were waiting for adaptations to be completed to meet needs due to a disability (must be structural, not decorative).</li>
-    <li>They became liable for payments while a hospital patient or in residential accommodation.</li>
-  </ul>
-  <p>Housing benefit is not paid until the tenants move in, and they should have already informed the local authority (LA) of their intent to move. 
-     A new claim must be made within four weeks of the actual move-in date.</p>
-  <p>If the above criteria are not met, then a tenant will not be able to claim housing benefit until they move in.</p>
-  <p>You will need to inform the tenant that if they do not move in and do not meet the above criteria, 
-     they will be liable for full rent until they move into the property.</p>
-</div>
-</details>
+<h4>Benefit Prior to Occupation</h4>
+<p><strong>Basic principles:</strong> Benefit prior to occupation can only be paid when housing benefit is <u>not</u> being paid at any other property.</p>
+<p><strong>Situation:</strong> Tenant(s) sign for a property but there is a delay in moving into the property.</p>
+<p>A tenant(s) may qualify for up to four weeks of benefit prior to occupation if the delay in moving was 
+   reasonable and they were waiting for a social fund payment for a need connected with the move (e.g., removal expenses or help to set up home). 
+   This only applies if:</p>
+<ul>
+  <li>They have a child of five or under living with them.</li>
+  <li>They are 60 or over and neither they nor their partner are receiving Income Support (IS) or income-based Jobseeker's Allowance (JSA).</li>
+  <li>They are under 60 (or they or their partner are receiving IS or JSA) and qualify for one of the pensioner premiums or 
+      a disability, severe disability, or disabled child premium.</li>
+  <li>They were waiting for adaptations to be completed to meet needs due to a disability (must be structural, not decorative).</li>
+  <li>They became liable for payments while a hospital patient or in residential accommodation.</li>
+</ul>
+<p>Housing benefit is not paid until the tenants move in, and they should have already informed the local authority (LA) of their intent to move. 
+   A new claim must be made within four weeks of the actual move-in date.</p>
+<p>If the above criteria are not met, then a tenant will not be able to claim housing benefit until they move in.</p>
+<p>You will need to inform the tenant that if they do not move in and do not meet the above criteria, 
+   they will be liable for full rent until they move into the property.</p>
 
-<details class="accordion">
-<summary class="accordion-header">
-  <h4>In hospital</h4>
-  <div class="accordion-icon"></div>
-</summary>
-<div class="accordion-content">
-  <p>If a tenant is in hospital during the time they have signed up for the property, 
-     they will not be entitled to housing benefit until they actually move into the property.</p>
-  <p>If this is the case, it can be argued that they have moved the majority of their possessions into the 
-     property and that this is their main home (as per the basic principles). 
-     However, this does not apply if they have a property elsewhere.</p>
-</div>
-</details>
+<h4>In Hospital</h4>
+<p>If a tenant is in hospital during the time they have signed up for the property, 
+   they will not be entitled to housing benefit until they actually move into the property.</p>
+<p>If this is the case, it can be argued that they have moved the majority of their possessions into the 
+   property and that this is their main home (as per the basic principles). 
+   However, this does not apply if they have a property elsewhere.</p>
+
     `,
     { buttonLabel: "Benefit on two homes", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -400,7 +371,6 @@ const benefitClaim = new ContentH(
     "Change of Circumstances",
     "Description Tbc",
     `
-      <h3>Change of Circumstances</h3>
       <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
          You can access this via the <a href="https://www.sheffield.gov.uk/">Sheffield City Council Website</a> and follow the links to Benefits.</p>
     `,
@@ -439,7 +409,6 @@ const benefitClaim = new ContentH(
     "Local Assistance Scheme",
     "Description Tbc",
     `
-      <h3>Local Assistance Scheme</h3>
       <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
          You can access this via the Sheffield City Council Website and follow the links to Benefits.</p>
     `,
@@ -477,7 +446,6 @@ const benefitClaim = new ContentH(
     "PDSA",
     "Description Tbc",
     `
-      <h3>PDSA</h3>
       <p>The Benefits Service can fax a letter to PDSA for pet treatment if the customer is on benefits.</p>
     `,
     { buttonLabel: "PDSA", formName: "" },
@@ -515,7 +483,6 @@ const benefitClaim = new ContentH(
     "Universal Credit",
     "Description Tbc",
     `
-      <h3>Universal Credit</h3>
       <p>If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
          you may be directed to claim Universal Credit:</p>
       <ul>
@@ -640,7 +607,6 @@ const benefitClaim = new ContentH(
     "Welfare reform",
     "Description tbc",
     `
-  <h3>Welfare reform</h3>
   <p>From April 2013, the government reduced the amount of housing benefit for council / housing association tenants in homes that had any spare bedrooms. 
      This is also known as under-occupation. This change only affected people of working age.</p>
   <p>Claimants of housing benefit and those considering a move to a new home either through:</p>
