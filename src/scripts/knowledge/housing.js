@@ -490,9 +490,9 @@ class CoreH {
     ]
   );
   
-  const bidding1 = new ContentH(
-    "bidding1",
-    "Bidding1",
+  const bidding = new ContentH(
+    "bidding",
+    "Bidding",
     "Desc tbc",
     `
       <p>
@@ -3051,26 +3051,7 @@ const tenancyEnforcementASB = new ContentH(
   {date: "16/10/2024", name: "Omily Parkin" }
   );
 
-//Bidding page to go under Rehousing Menu
 
-const bidding2 = new ContentH(
-  "bidding2",
-  "Bidding2",
-  "For assistance or problems with the bidding process",
-  `<p>After you have registered for housing, you express your interest in renting a property by making a bid. You only have to bid once per property. You make bids online at the Property Shop website www.sheffieldpropertyshop.org.uk You can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday to Tuesday). 
-  <h3>Why can't you bid for me</h3>
-<p>If you need assistance placing a bid, you can visit Sheffield Property Shop located in Howden House on Union Street, Sheffield, or your nearest neighbourhood housing office.</p>
-<h3>What happens after bidding</h3>
-<p>Once the bidding has finished, checks will be made on who is in first position, that the keys for the property are ready, and final checks will be completed on the person in first position when bidding closed. We will then contact the successful customer by phone, email or letter to offer the property. It is important that customers ensure their contact details on the website are up to date so that we can do this. Unsuccessful applicants will not be notified.</p>
-<p>However, we may not offer you a property if you owe a debt to the housing service, have a history of anti social behaviour, or have not kept your Council tenancy in a good condition. These checks can take a few days.</p>
-<p>If you are offered a property we will not consider your bids for any other properties until you have decided whether or not to accept the property offered.</p>
-  </p>`,
-  {buttonLabel: "Example 1", formName: "example_form" },
-  {typeKey: "example_transfered_to_service" },
-  {typeKey: "example_information_provided" },
-  {type: "Request", keywords: [], categories: ["Housing"] },
-  {date: "15/10/2024", name: "Omily Parkin" }
-);
 //Application Changes page to be under the Rehousing menu
 
 
@@ -4002,6 +3983,6 @@ const indoorCommunalAreas = new ContentH(
     "housing",
     "Housing",
     "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-    [subjectExample1, estatesAndEnvironments, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, bidding1, bidding2, applicationChanges, applyForRehousing, rehousing, indoorCommunalAreas]
+    [subjectExample1, estatesAndEnvironments, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, bidding, applicationChanges, applyForRehousing, rehousing, indoorCommunalAreas]
   );
   
