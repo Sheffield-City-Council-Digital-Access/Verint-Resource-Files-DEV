@@ -1067,7 +1067,7 @@ class CoreH {
       applicationChanges,
       housingAssociations,
       eligibility,
-      bidding,
+      bidding
     ]
   );
   
