@@ -3074,14 +3074,6 @@ const bidding2 = new ContentH(
 //Application Changes page to be under the Rehousing menu
 
 
-const rehousing = new MenuH(
-  "rehousing",
-  "Rehousing",
-  "TBC",
-  [applyForRehousing,applicationChanges, bidding]
-  );
-// to go in estates and environment
-
 const indoorCommunalAreas = new ContentH(
   "indoorCommunalAreas",
   "Indoor Communal Areas",
