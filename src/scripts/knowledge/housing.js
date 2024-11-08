@@ -15,7 +15,7 @@ class CoreH {
   
   class MenuH extends CoreH {
     constructor(id, name, description, topics = []) {
-      super(id, name, description);F
+      super(id, name, description);
       this.topics = topics;
     }
   }
