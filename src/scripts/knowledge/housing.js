@@ -490,9 +490,9 @@ class CoreH {
     ]
   );
   
-  const bidding = new ContentH(
-    "bidding",
-    "Bidding",
+  const bidding1 = new ContentH(
+    "bidding1",
+    "Bidding1",
     "Desc tbc",
     `
       <p>
@@ -3053,9 +3053,9 @@ const tenancyEnforcementASB = new ContentH(
 
 //Bidding page to go under Rehousing Menu
 
-const bidding = new ContentH(
-  "bidding",
-  "Bidding",
+const bidding2 = new ContentH(
+  "bidding2",
+  "Bidding2",
   "For assistance or problems with the bidding process",
   `<p>After you have registered for housing, you express your interest in renting a property by making a bid. You only have to bid once per property. You make bids online at the Property Shop website www.sheffieldpropertyshop.org.uk You can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday to Tuesday). 
   <h3>Why can't you bid for me</h3>
@@ -4279,6 +4279,6 @@ const indoorCommunalAreas = new ContentH(
     "housing",
     "Housing",
     "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-    [subjectExample1, estatesAndEnvironments, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, bidding, applicationChanges, applyForRehousing, rehousing, indoorCommunalAreas]
+    [subjectExample1, estatesAndEnvironments, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, bidding1, bidding2, applicationChanges, applyForRehousing, rehousing, indoorCommunalAreas]
   );
   
