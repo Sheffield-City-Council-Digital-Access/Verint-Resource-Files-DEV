@@ -1026,6 +1026,165 @@ const energySupport = new ContentB(
   { date: "08/11/2024", name: "Nathan Smith" }
 );
 
+const howYouCanHelpYourCommunity = new ContentB(
+  "howYouCanHelpYourCommunity",
+  "How you can help your community",
+  "",
+  `
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Offering help as a business</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      We know that many businesses are struggling with rising costs but there are others
+      who feel able to support the communities they are part of.
+    </p>
+    <h3>Community support</h3>
+    <p>
+      If you are a business who can help, you may want to look at our general 
+      information on donating money, food and other items and volunteering for local 
+      charities on our Cost of living page.
+    </p>
+    <h3>Sheffield Business Together</h3>
+    <p>
+      Sheffield Business Together is a business-led cross sector collaboration, which brings together 
+      businesses and charities to address some of the key challenges facing our city. 
+      The team work closely with Voluntary Action Sheffield and us to identify opportunities 
+      for businesses to support their community. To contact them, 
+      please email <a href="mailto:katie@sheffieldbusinesstogether.org.uk</a>
+    </p>
+    <h3>Business in the Community</h3>
+    <p>
+      Business in the Community are partners of Sheffield Business Together and work with businesses 
+      to continually grow their responsible business practices. They have developed guidance on the 
+      different ways that organisations can help to respond to the cost-of-living crisis which is 
+      available on their website at:
+      <a href="https://www.bitc.org.uk/cost-living-crisis-helping-businesses-respond/" target="_blank">https://www.bitc.org.uk/cost-living-crisis-helping-businesses-respond/</a>
+    </p>
+    <h3>Supporting your employees</h3>
+    <p>
+      One of the most tangible and direct ways any organisation can help alleviate the 
+      cost-of-living crisis is to provide support to their own employees. 
+      Below are some ideas that you may wish to consider as part of this:
+    </p>
+    <p>
+      <ul>
+        <li>paying the living wage</li>
+        <li>set up a cost-of-living task force to understand the needs of your employees</li>
+        <li>consider a one-off cost of living payment</li>
+        <li>signpost employees to the help available across the city</li>
+        <li>establish an emergency loan service for staff</li>
+        <li>champion equality and assess who is being impacted</li>
+        <li>run support and wellbeing sessions</li>
+        <li>encourage employees to receive help by breaking down perceptions of shame and stigma</li>
+        <li>provide free food or a breakfast</li>
+        <li>pay untaken leave</li>
+      </ul>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Donate to Citzens Advice Sheffield</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about donating to Citzens Advice Sheffield can be found at: 
+      <a href="https://citizensadvicesheffield.org.uk/support-us/" target="_blank">https://citizensadvicesheffield.org.uk/support-us/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Voluntary Action Sheffield: Voltunary and Community Support</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about Voluntary Action Sheffield can be found at: 
+      <a href="https://www.vas.org.uk/what-we-do/communitysupportforcostoflivingcrisis/" target="_blank">https://www.vas.org.uk/what-we-do/communitysupportforcostoflivingcrisis/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Donate to Community Grocery</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about donating to Community Grocery can be found at: 
+      <a href="https://communitygrocery.org.uk/donate/" target="_blank">https://communitygrocery.org.uk/donate/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Donate to South Yorkshire's Community Foundation: South Yorkshire Cost of Living Fund</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about donating to South Yorkshire's Community Foundation can be found at: 
+      <a href="https://www.sycf.org.uk/apply" target="_blank">https://www.sycf.org.uk/apply</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Sheffield Volunteer Centre</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about Sheffield Volunteer Centre can be found at: 
+      <a href="https://www.sheffieldvolunteercentre.org.uk/" target="_blank">https://www.sheffieldvolunteercentre.org.uk/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Donate to Sheffield 1000 charity</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about donating to Sheffield 1000 charity can be found at: 
+      <a href="https://thesheffield1000.org/" target="_blank">https://thesheffield1000.org/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Donate to Sheffield Foodbanks</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about donating to Sheffield Foodbanks can be found at: 
+      <a href="https://www.sheffieldfoodbank.org.uk/" target="_blank">https://www.sheffieldfoodbank.org.uk/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "cost_of_living_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "08/11/2024", name: "Nathan Smith" }
+);
+
 //#endregion Cost of Living
 
 const whoCanApply = new ContentB(
@@ -1965,7 +2124,7 @@ const costOfLiving = new MenuB(
     moneySupport,
     foodSupport,
     energySupport,
-    // howYouCanHelpYourCommunity,
+    howYouCanHelpYourCommunity,
     // supportForBusinesses,
     // travelSupport,
     // employmentSupport,
