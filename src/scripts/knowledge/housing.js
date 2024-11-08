@@ -123,7 +123,7 @@ const benefitCap = new ContentH(
   "Description tbc",
   `
     <h3>Benefit cap</h3>
-    <p>View website for housing benefit cap information: <a href="https://www.gov.uk/benefit-cap">Benefit cap information</a></p>
+    <p>View website for housing benefit cap information: <a href="https://www.gov.uk/benefit-cap">https://www.gov.uk/benefit-cap</a></p>
   `,
     { buttonLabel: "Benefit cap", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -166,7 +166,7 @@ const benefitClaim = new ContentH(
           <li><a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></li>
           <li><a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></li>
       </ul>
-      <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html">Sheffield council tax</a></p>
+      <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html">https://www.sheffield.gov.uk/council-tax.html</a></p>
       <p><strong>Service area:</strong> Sheffield Benefits Service</p>
       <p><strong>Telephone number:</strong> 0114 27 36777</p>
       <p><strong>Email address:</strong> <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a> or <a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></p>
@@ -246,7 +246,7 @@ const benefitClaim = new ContentH(
     "Description tbc",
     `
       <h3>Benefit fraud</h3>
-      <p>The customer can report fraud anonymously online at: <a href="https://www.gov.uk/report-benefit-fraud">Report benefit fraud</a></p>
+      <p>The customer can report fraud anonymously online at: <a href="https://www.gov.uk/report-benefit-fraud">https://www.gov.uk/report-benefit-fraud</a></p>
     `,
     { buttonLabel: "Benefit fraud", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -372,7 +372,7 @@ const benefitClaim = new ContentH(
     "Description Tbc",
     `
       <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
-         You can access this via the <a href="https://www.sheffield.gov.uk/">Sheffield City Council Website</a> and follow the links to Benefits.</p>
+         You can access this via the <a href="https://www.sheffield.gov.uk/">https://www.sheffield.gov.uk/</a> and follow the links to Benefits.</p>
     `,
     { buttonLabel: "Change of Circumstances", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
