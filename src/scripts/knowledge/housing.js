@@ -519,24 +519,54 @@ const bidding = new ContentH(
   "Bidding",
   "Desc tbc",
   `
+    
+
+    
+    
+
+ 
+    
+   
+
+    
+   
     <p>
       After you have registered for housing, you express your interest in renting a
       property by making a bid. You only have to bid once per property. You make
       bids online at the Property Shop website
       <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank"
-        >www.sheffieldpropertyshop.org.uk</a
-      >
+        >www.sheffieldpropertyshop.org.uk</a>
       You can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday
       to Tuesday).
     </p>
-    <h3>Why can't you bid for me</h3>
-    <p>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>FAQ’s</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Why can't you bid for me?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
       If you need assistance placing a bid, you can visit Sheffield Property Shop
       located in Howden House on Union Street, Sheffield, or your nearest
       neighbourhood housing office.
-    </p>
-    <h3>First Come First Served</h3>
-    <p>
+    </p>        
+    </div>
+        </details>
+    </div>
+</details>
+
+
+        <details class="details-accordion">
+            <summary>
+                First Come First Served
+            </summary>
+            <div class="details-accordion-content">
+<p>
       The homes we offer through our First Come First Served scheme are properties
       which have usually been advertised through the bidding system, but received no
       eligible bids. Where this happens, we will make them available on a first come
@@ -560,15 +590,29 @@ const bidding = new ContentH(
       than you would normally qualify for, you may not be entitled to receive full
       housing benefit. In these cases we may carry out a financial assessment with
       you.
-    </p>
-    <h3>How do I get online</h3>
-    <h4>Technical issues with the website / Running slowly</h4>
+    </p>    
+</div>
+        </details>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                How do I get online?</            </summary>
+            <div class="details-accordion-content">
+<h4>Technical issues with the website / Running slowly</h4>
     <p>
       Advisor note: Investigate if the issue is a technical issue with the website
       and check if you can access the Property Shop website.
-    </p>
-    <h4>How do I get online / I do not have a PC</h4>
-    <p>
+    </p>           
+ </div>
+        </details>
+
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                How do I get online / I do not have a PC?
+            </summary>
+            <div class="details-accordion-content">
+<p>
       You get online via any device that connects to the internet. If you do not
       have access to the internet you can get access via:
     </p>
@@ -581,8 +625,16 @@ const bidding = new ContentH(
         point
       </li>
     </ul>
-    <h3>Why can I not bid on the website</h3>
-    <p>
+            </div>
+        </details>
+
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Why can I not bid on the website?
+            </summary>
+            <div class="details-accordion-content">
+            <p>
       There can be various reasons why you cannot place bids on the website, such
       as:
     </p>
@@ -595,9 +647,16 @@ const bidding = new ContentH(
       <li>Your application may have been closed</li>
       <li>You may be under offer for a property</li>
       <li>You may be trying to bid for properties that you are not eligible for</li>
-    </ul>
-    <h3>What happens after bidding</h3>
-    <p>
+    </ul>           
+ </div>
+        </details>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                What happens after bidding?
+            </summary>
+            <div class="details-accordion-content">
+<p>
       Once the bidding has finished, checks will be made on who is in first
       position, that the keys for the property are ready, and final checks will be
       completed on the person in first position when bidding closed. We will then
@@ -616,9 +675,13 @@ const bidding = new ContentH(
       If you are offered a property we will not consider your bids for any other
       properties until you have decided whether or not to accept the property
       offered.
-    </p>
-    <h3>Assistance with online bidding or login issue</h3>
-    <p>Log on using the details below if required.</p>
+    </p>           
+ </div>
+       </details>
+
+<h3>Assistance with online bidding or login issue</h3>
+
+<p>Log on using the details below if required.</p>
     <p>
       Unique Reference - 1257822
       <br />
@@ -632,8 +695,15 @@ const bidding = new ContentH(
       You have logged in using dummy login details. Please do not amend anything on
       screen.
     </p>
-    <h4>Assistance with bidding</h4>
-    <p>
+
+
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Assistance with bidding
+            </summary>
+            <div class="details-accordion-content">
+<p>
       The 'My Account' screen has a link to the 'Eligible properties' you can bid
       for. Click on the link and choose what property you want to bid for. You then
       needs to:
@@ -645,18 +715,46 @@ const bidding = new ContentH(
         and apply'.
       </li>
     </ul>
-    <h4>Assistance with removing a bid</h4>
-    <p>
+
+            </div>
+        </details>
+
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Assistance with removing a bid
+            </summary>
+            <div class="details-accordion-content">
+<p>
       Advise the customer that they need to select:
       <br />
       My Bids on the right hand side of the screen, then put a tick against the bid
       you want to withdraw and then select Withdraw selected. It will ask you if you
       are sure you want to withdraw the bid, select Yes or No.
     </p>
-    <h4>Assistance with finding out how much waiting time customer has</h4>
-    <p>Give the Band effective date on the application to the customer</p>
-    <h4>Log in Issue</h4>
-    <p>
+            </div>
+        </details>
+
+
+<div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Assistance with finding out how much waiting time customer has
+            </summary>
+            <div class="details-accordion-content">
+<p>Give the Band effective date on the application to the customer</p>
+            </div>
+        </details>
+
+
+
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Log in Issue
+            </summary>
+            <div class="details-accordion-content">
+       <p>
       To apply for Social Housing you need to do so via the Property Shop website.
       There are no paper application forms. This will be will Housing Online when
       NEC comes in
@@ -676,14 +774,36 @@ const bidding = new ContentH(
       documents can be uploaded via the website or at your local housing office or
       First Point before your application will be validated.
     </p>
-    <h4>URN (Unique Reference Number)</h4>
-    <p>Starts process</p>
-    <h4>Memorable Date / Password Reset</h4>
-    <p>
+            </div>
+        </details>
+
+
+
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                URN (Unique Reference Number)
+            </summary>
+            <div class="details-accordion-content">
+        <p>Starts process</p>
+            </div>
+        </details>
+
+
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Memorable Date / Password Reset
+            </summary>
+            <div class="details-accordion-content">
+       <p>
       The best way for the customer to reset their memorable date is to go online.
       You will need to have included an email address when completing the website
       (household) registration.
     </p>
+            </div>
+        </details>
+
     <h4>Customer is an owner occupier moving to a council property</h4>
     <p>
       If you own your own property and are moving into a Council Housing Service
@@ -691,6 +811,7 @@ const bidding = new ContentH(
       owner occupied property within 6 months. You should evidence that the house is
       up for sale by showing us the brochure.
     </p>
+
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
