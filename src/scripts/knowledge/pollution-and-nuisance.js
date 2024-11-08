@@ -2394,22 +2394,6 @@ const abandonedVehicles = new ContentPaN(
   { date: "05/09/2024", name: "Elliott Griffiths" }
 );
 
-const cleanAirZone = new MenuPaN(
-  "cleanAirZone",
-  "Clean Air Zone",
-  "Information about the Clean Air Zone Scheme",
-  [ whatIsACleanAirZone,
-    whyIsACleanAirZoneBeingIntroduced,
-    whatVehiclesWillBeCharged,
-    whenWillDriversBeCharged,
-    howMuchWillDriversBeCharged,
-    howWillDriversBeCharged,
-    howAreChargesPaid,
-    howLongWillTheCleanAirZoneBeInPlace,
-    whatSupportWillThereBeForThoseAffected
-  ]
-);
-
 const whatIsACleanAirZone = new ContentPaN(
   "whatIsACleanAirZone",
   "What Is A Clean Air Zone",
@@ -2682,6 +2666,23 @@ const whatSupportWillThereBeForThoseAffected = new ContentPaN(
   categories: ["Parking", "Pollution and Nuisance"],
 },
 { date: "06/11/2024", name: "Dinah Williams" }
+);
+
+
+const cleanAirZone = new MenuPaN(
+  "cleanAirZone",
+  "Clean Air Zone",
+  "Information about the Clean Air Zone Scheme",
+  [ whatIsACleanAirZone,
+    whyIsACleanAirZoneBeingIntroduced,
+    whatVehiclesWillBeCharged,
+    whenWillDriversBeCharged,
+    howMuchWillDriversBeCharged,
+    howWillDriversBeCharged,
+    howAreChargesPaid,
+    howLongWillTheCleanAirZoneBeInPlace,
+    whatSupportWillThereBeForThoseAffected
+  ]
 );
 
 
