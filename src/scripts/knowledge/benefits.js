@@ -2833,7 +2833,7 @@ const costOfLiving = new MenuB(
     foodSupport,
     energySupport,
     howYouCanHelpYourCommunity,
-    // supportForBusinesses,
+    supportForBusinesses,
     // travelSupport,
     // employmentSupport,
     // welcomePlaces
