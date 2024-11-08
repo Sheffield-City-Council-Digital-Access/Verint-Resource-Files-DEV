@@ -2460,7 +2460,6 @@ const whatVehiclesWillBeCharged = new ContentPaN(
   "Information relating to which vehicles charged",
 
 `
-<h2>What vehicles will be charged</h2>
 <p>Only specific vehicle types with the most polluting engine standards will be charged for entering the Clean Air Zone. Private cars, motorbikes, or mopeds will not be charged for traveling in Sheffield.</p>
 <p>Charges apply to the following vehicle types that do not meet the minimum standards when entering the Clean Air Zone boundary:</p>
 
@@ -2497,7 +2496,6 @@ const whenWillDriversBeCharged = new ContentPaN(
   "When Will Drivers Be Charged",
   "Information relating to when drivers will be charged",
 `
-<h2>When will drivers be charged</h2>
 <p>The Clean Air Zone charges in Sheffield will not start until spring 2023.</p>
 `,
 {
@@ -2525,7 +2523,6 @@ const howMuchWillDriversBeCharged = new ContentPaN(
   "Information relating to how much drivers will be charged",
 
 `
-<h2>How much will drivers be charged</h2>
 <p>If your vehicle does not meet the minimum standard, you will have to pay the charge for every day you enter the zone. This would be:</p>
   <ul>
   <li>£10 per day for polluting vans/LGVs and Taxis</li>
@@ -2557,7 +2554,6 @@ const howWillDriversBeCharged = new ContentPaN(
   "How will drivers be charged",
   "Information relating to how drivers will be charged",
 `
-<h2>How will drivers be charged</h2>
 <p>Automatic Number Plate Recognition (ANPR) cameras installed across the city centre will detect non-compliant vehicles entering the Clean Air Zone boundary. Charges apply 24 hours a day, seven days a week. The Clean Air Zone charges at a daily rate, meaning drivers will only need to make one payment a day, regardless of how many times they exit and re-enter.</p>
 
 `,
@@ -2585,7 +2581,6 @@ const howAreChargesPaid = new ContentPaN(
   "How are charges paid",
   "Information relating to how charges are paid",
 `
-<h2>How are charges paid</h2>
 <p>Charges will need to be paid online via central government’s online Clean Air Zone payment portal. Payment can be made ahead of entering the zone. Charges must be paid within 7 days of entering the Clean Air Zone. If payments are not made within 7 days additional penalty charges may apply. The link to the payment portal will not be live until the Clean Air Zone is launched.</p>
 <p>It will be the responsibility of drivers to go online and make payment. No notifications are issued to drivers.</p>
 
@@ -2614,10 +2609,9 @@ const howLongWillTheCleanAirZoneBeInPlace = new ContentPaN(
   "How long will the Clean Air Zone be in place",
   "Information relating to how long the Clean Air Zone will be in place",
 `
-<h2>How long will the Clean Air Zone be in place</h2>
 <p>The Clean Air Zone will be in place in Sheffield until the city can provide evidence to the Department for Environment, Food & Rural Affairs (Defra) that it has met and can maintain for a minimum of two years the reduced legal levels of Nitrogen Dioxide (NO2) required. There will be significant monitoring and evaluation of the CAZ to determine this.</p>
 
-<h2>What support will there be for those affected</h2>
+<h3>What support will there be for those affected</h3>
 <p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">Sheffield Council - Apply for financial support</a>.</p>
 
 `,
@@ -2645,7 +2639,6 @@ const whatSupportWillThereBeForThoseAffected = new ContentPaN(
   "What support will there be for those affected",
   "Information relating to support for those affected",
 `
-<h2>What support will there be for those affected</h2>
 <p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">Sheffield Council - Apply for financial support</a>.</p>
 
 `,
