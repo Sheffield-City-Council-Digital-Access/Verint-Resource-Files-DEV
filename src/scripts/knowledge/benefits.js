@@ -1387,7 +1387,7 @@ const supportForBusinesses = new ContentB(
                   Your organisation must be charitable, religious or concerned with education, social welfare, science, literature or the fine arts, 
                   or the property must be used by a non-profit-making organisation wholly or mainly for the purpose of recreation.
               </p>
-              <h4> Apply for Discretionary Rate Relief</h4>
+              <h4>Apply for Discretionary Rate Relief</h4>
               <p>
                   Download, complete and return the 'Discretionary Relief application form.
                   You will also need to provide us with a copy of your organisation's:
