@@ -2011,19 +2011,10 @@ const employmentSupport = new ContentB(
   "Employment support",
   "Description",
   `
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Get employment support from Opportunity Sheffield</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
     <p>
       Information about employment support from Opportunity Sheffield can be found at: 
       <a href="https://www.sheffield.gov.uk/campaigns/opportunity-sheffield" target="_blank">https://www.sheffield.gov.uk/campaigns/opportunity-sheffield</a>
     </p>
-    </section>
-  </div>
-  </details>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "cost_of_living_transferred_to_service" },
@@ -2037,19 +2028,10 @@ const welcomePlaces = new ContentB(
   "Welcome Places",
   "Description",
   `
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Building Thriving Communities Programme</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
     <p>
       Information about the Building Thriving Communities Programme can be found at: 
       <a href="https://www.sheffield.gov.uk/thriving-communities" target="_blank">https://www.sheffield.gov.uk/thriving-communities</a>
     </p>
-    </section>
-  </div>
-  </details>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "cost_of_living_transferred_to_service" },
