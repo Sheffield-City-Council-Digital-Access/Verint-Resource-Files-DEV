@@ -3070,7 +3070,7 @@ const bidding2 = new ContentH(
   {typeKey: "example_information_provided" },
   {type: "Request", keywords: [], categories: ["Housing"] },
   {date: "15/10/2024", name: "Omily Parkin" }
-
+);
 //Application Changes page to be under the Rehousing menu
 
 const applicationChanges = new ContentH(
