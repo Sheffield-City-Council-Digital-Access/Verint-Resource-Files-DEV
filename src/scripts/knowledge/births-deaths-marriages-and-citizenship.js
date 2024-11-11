@@ -496,14 +496,13 @@ const licensedWeddingVenues = new ContentBDMaC(
     "Licensed Wedding Venues in Sheffield",
     "Desc tbd",
     `
-    <h3>Licensed wedding venues in Sheffield</h3>
-    <p>You you can find information about licensed wedding venues in Sheffield at <a href="https://www.sheffield.gov.uk" target="_blank" rel="noopener noreferrer">www.sheffield.gov.uk</a></p>
+    <p>You you can find information about licensed wedding venues in Sheffield at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues</a></p>
     <p>New link will be finalised soon for new intagrated payments we will need to update thisprocess when confirmed going live</p>
     <p>Sheffield has some of the best wedding venues in Yorkshire. From our own Register Office and Town Hall rooms to hotels, galleries theatres and museums and everything in between, there's a venue to suit every couple.</p>
     <p>Advisor note: Search our map of approved venues or look through our list. PRESENTS MAP AND LIST OF LICENCED VENUES</p>
     <h3>Booking a Registrar</h3>
     <p>If you're getting married in Sheffield you need to book a registrar to conduct the ceremony.</p>
-    <p>You will can to booking a registrar via www.sheffield.gov.uk.</p>
+    <p>You will can to booking a registrar via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar</a>.</p>
     <p>You can provisionally book a registrar up to 2 years ahead of the ceremony but it's your responsibility to contact the venue to check their availability.</p>
     <h3>Fees</h3>
     <ul>
