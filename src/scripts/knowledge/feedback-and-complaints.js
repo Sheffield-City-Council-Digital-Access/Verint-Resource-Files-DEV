@@ -257,7 +257,7 @@ const childrensSocialCareComplaints = new ContentFaC(
 
 `,
   {
-    buttonLabel: "Make a childrens social care complaint",
+    buttonLabel: "Make a children's social care complaint",
     formName: "make_complaint_childrens",
   },
   { typeKey: "" },
@@ -323,7 +323,7 @@ Complaints Procedure – Effective Complaint handling Guide under Documents. </p
 
   `,
   {
-    buttonLabel: "Make a adults social care complaint",
+    buttonLabel: "Make an adults social care complaint",
     formName: "make_complaint_adult",
   },
   { typeKey: "" },
