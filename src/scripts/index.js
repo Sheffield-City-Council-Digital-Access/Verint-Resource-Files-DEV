@@ -4101,6 +4101,63 @@ async function updateMinMaxDates(dateElementId, attribute, value) {
   }
 }
 
+// --- VALIDATE TIME FUNCTION ----------------------------------------------- \\
+
+function validateTime(inputDate, field, minTime, maxTime, interval) {
+  // Get the date part from the inputDate and compare it to today's date
+  const isToday = new Date(inputDate).getDate() === new Date().getDate();
+
+  // Extract hours and minutes from the input field value
+  const [inputHours, inputMinutes] = field.value.split(":").map(Number);
+
+  // Calculate the input time in minutes since midnight
+  const inputTimeInMinutes = inputHours * 60 + inputMinutes;
+
+  // Calculate the current time in minutes since midnight if it's today
+  const currentTimeInMinutes = isToday
+    ? new Date().getHours() * 60 + new Date().getMinutes()
+    : 0;
+
+  defaultMessage = getValidationMessageFromSession(field.id);
+
+  let validTime = true;
+  let errorMessage = defaultMessage;
+
+  if (isToday) {
+    if (inputMinutes % interval !== 0) {
+      validTime = false;
+      errorMessage = `Must be a ${interval} minutes interval`;
+    }
+    if (inputHours < minTime || inputHours >= maxTime) {
+      validTime = false;
+      errorMessage = `Must be between ${minTime}:00 and ${maxTime}:00`;
+    }
+    if (inputTimeInMinutes <= currentTimeInMinutes) {
+      validTime = false;
+      errorMessage = "Appointments must be in the future";
+    }
+  } else {
+    // If not today, only check for min/max time and interval
+    if (inputMinutes % interval !== 0) {
+      validTime = false;
+      errorMessage = `Must be a ${interval} minutes interval`;
+    }
+    if (inputHours < minTime || inputHours >= maxTime) {
+      validTime = false;
+      errorMessage = `Must be between ${minTime}:00 and ${maxTime}:00`;
+    }
+  }
+
+  if (!validTime) {
+    updateValidationMessage(field.name, errorMessage);
+    $(`.dform_widget_${field.name} .dform_validationMessage`).show();
+
+    checkPageProgress();
+  }
+
+  return { valid: validTime, message: errorMessage };
+}
+
 // --- COOKIE FUNCTIONS ----------------------------------------------------- \\
 
 function setCookie(name, value, minutes) {
@@ -4128,7 +4185,11 @@ function getCookie(name) {
 // --- STORE VALIDATION MESSAGES -------------------------------------------- \\
 
 function storeDefaultValidationMessages() {
-  const fieldClasses = ["address-search", "date-field"];
+  const fieldClasses = [
+    "address-search",
+    "date-field",
+    "dform_widget_type_time",
+  ];
 
   fieldClasses.forEach((className) => addValidationMessageToSession(className));
 }
