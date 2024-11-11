@@ -64,8 +64,8 @@ const reRegisterABirth = new ContentBDMaC(
   <p> Takes to <a href src= "#">form </a></p>
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: ['register', 'birth', 'rgister', 'burth'],
@@ -116,8 +116,8 @@ const registerADeath = new ContentBDMaC(
     </ul>
   `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
@@ -136,8 +136,8 @@ const registerABirthAndDeath = new ContentBDMaC(
   <p> Takes to <a href src= "#">form </a></p>
   `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
@@ -157,8 +157,8 @@ const registerAStillbirth = new ContentBDMaC(
   <p> Takes to <a href src= "#">form </a></p>
   `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
@@ -192,8 +192,8 @@ const copyCertificates = new ContentBDMaC(
  
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
@@ -296,8 +296,8 @@ const bookingARegistrarWedding = new ContentBDMaC(
 
   `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
@@ -381,8 +381,8 @@ const rescheduleAnAppointment = new ContentBDMaC(
  
   `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
@@ -442,8 +442,8 @@ const bookNoticeCivilPartnership = new ContentBDMaC(
  
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
@@ -476,8 +476,8 @@ const finalPayment = new ContentBDMaC(
  
   `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
@@ -518,8 +518,8 @@ const licensedWeddingVenues = new ContentBDMaC(
  
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
@@ -540,8 +540,8 @@ const registrarsEmails = new ContentBDMaC(
  
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
