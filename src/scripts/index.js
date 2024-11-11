@@ -702,6 +702,8 @@ function handleOnReadyEvent(event, kdf) {
   // --- HANDLE FIND CURRENT LOCATION CLICK -------------------------------- \\
 
   $(".geo-btn").on("click", function () {
+    $(`.address-search`).find(".dform_validationMessage").hide();
+
     const currentPageId = getCurrentPageId();
     const container = document.querySelector(
       `#${currentPageId} .map-container`
@@ -780,6 +782,7 @@ function handleOnReadyEvent(event, kdf) {
   // --- HANDLE FIND ON MAP CLICK ------------------------------------------ \\
 
   $(".link-btn.map-icon").on("click", function () {
+    $(`.address-search`).find(".dform_validationMessage").hide();
     if ($(".geo-btn-container").find(".dform_validationMessage").length) {
       $(".geo-btn-container")
         .find(".dform_validationMessage")
