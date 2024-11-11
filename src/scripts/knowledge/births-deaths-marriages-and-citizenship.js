@@ -319,36 +319,36 @@ const bookNoticeOfMarriageApp = new ContentBDMaC(
     <ul>
     
         <li> You need to ensure that you have given notice at least 28 days before the date.</li>
-        <li>If you are giving notice for a venue in the Sheffield district, please have your booking ID ready, this was provided in your email sent when booking the venue. Please contact our ceremonies team if you do not have this and they will email you the booking ID directly ceremoniesteam@sheffield.gov.uk</li>
+        <li>If you are giving notice for a venue in the Sheffield district, please have your booking ID ready, this was provided in your email sent when booking the venue. Please contact our ceremonies team if you do not have this and they will email you the booking ID directly <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a>.</li>
         <li>If you are booking a notice for a venue outside the Sheffield district you do not require a booking ID.</li>
     
         <li>The earliest date the notice of marriage can be given is 12 months before the marriage ceremony. We recommend a notice of marriage should be done between 3-6 months before your ceremony.</li>
-        <li>Both must be over the age of 18</li>
+        <li>Both must be over the age of 18.</li>
         <li>If both of you are British, Irish or you have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you each need to give your notice of marriage in the Borough or District you are residing in, provided you have lived there for at least 8 days.</li>
         <li>If you are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you must attend the notice of marriage appointment together either in the district you both live, or in either district (whichever is most convenient) if you live in different towns.</li>
-        <li>You must know where your marriage will take place</li>
-        <li>The date of your marriage must be between 29 calendar days and 1 year of your appointment</li>
+        <li>You must know where your marriage will take place.</li>
+        <li>The date of your marriage must be between 29 calendar days and 1 year of your appointment.</li>
     </ul>
     <p>Further information for notice of marriage please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice" target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a></p>
     <h3>Fees</h3>
     <p>There is a fee to give your notice of marriage (additional fees may be incurred dependant on your choices)</p>
     <ul>
-        <li>Monday to Friday: £42.00 each (for standard appointments)</li>
-        <li>Monday to Friday: £57.00 each (for those who are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021)</li>
-        <li>Saturday (limited availability): £60.00 each (for standard appointments only)</li>
-        <li>Local foreign divorce for clearance: £55.00</li>
-        <li>Referral to General Registration Office for clearance: £83.00</li>
+        <li>Monday to Friday: £42.00 each (for standard appointments).</li>
+        <li>Monday to Friday: £57.00 each (for those who are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021).</li>
+        <li>Saturday (limited availability): £60.00 each (for standard appointments only).</li>
+        <li>Local foreign divorce for clearance: £55.00.</li>
+        <li>Referral to General Registration Office for clearance: £83.00.</li>
     </ul>
     <p>Any fees are payable when you book your appointment and will be calculated on the choices you make.</p>
-    <p>If you are unsure which fee applies to you, please contact ceremoniesteam@sheffield.gov.uk  for clarification.</p>
+    <p>If you are unsure which fee applies to you, please contact <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a> for clarification.</p>
     <h3>Proof of name, address, marital status and nationality</h3>
     <p>You will need to bring:</p>
     <ul>
-        <li>a valid passport for proof of your name, age and nationality</li>
-        <li>your driving licence, a utility bill dated within the last 3 months, or a bank statement dated within a month for proof of your address that includes either your full name or at least your initials</li>
-        <li>Proof that a previous marriage or civil partnership has ended</li>
-        <li>decree absolute of divorce / dissolution</li>
-        <li>death certificate of former husband, wife or civil partner</li>
+        <li>a valid passport for proof of your name, age and nationalit.y</li>
+        <li>your driving licence, a utility bill dated within the last 3 months, or a bank statement dated within a month for proof of your address that includes either your full name or at least your initials.</li>
+        <li>Proof that a previous marriage or civil partnership has ended.</li>
+        <li>decree absolute of divorce / dissolution.</li>
+        <li>death certificate of former husband, wife or civil partner.</li>
     </ul>
     <p>We must be able to link the document to you. A Decree NISI of Divorce is not acceptable. If the document is in another language, we will need a translation into English.</p>
     <h3>Change of name</h3>
