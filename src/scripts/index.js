@@ -3079,6 +3079,7 @@ function do_KDF_mapReady_esriMap(map, positionLayer) {
 }
 
 function mapClick(evt) {
+  console.log("map click", evt);
   KDF.setVal("txt_site_name", "");
   KDF.setVal("txt_site_code", "");
   KDF.setVal("txt_feature_name", "");
@@ -3690,6 +3691,7 @@ function initLayerList() {
 }
 
 function addPoint(map, point, markerSymbol) {
+  console.log("addPoint", map, point, markerSymbol);
   streetMapPositionLayer.removeAll();
 
   var pointGraphic;
