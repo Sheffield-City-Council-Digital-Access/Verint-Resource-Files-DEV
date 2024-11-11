@@ -360,8 +360,8 @@ const bookNoticeOfMarriageApp = new ContentBDMaC(
     <p>Please arrive 5 to 10 minutes before your appointment. If you arrive late you may need to rebook.</p>
      `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
