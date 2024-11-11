@@ -323,7 +323,7 @@ Complaints Procedure – Effective Complaint handling Guide under Documents. </p
 
   `,
   {
-    buttonLabel: "Make an adults social care complaint",
+    buttonLabel: "Make an adult's social care complaint",
     formName: "make_complaint_adult",
   },
   { typeKey: "" },
