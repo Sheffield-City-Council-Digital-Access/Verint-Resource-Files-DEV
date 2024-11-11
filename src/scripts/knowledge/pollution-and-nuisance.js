@@ -59,7 +59,7 @@ const fleasTreatment = new ContentPaN(
   "Flea Treatment",
   "Information about fleas",
   `
-    <h3>Cost for Fleas Treatment</h3>
+    <h3>Cost for Flea Treatment</h3>
     <p>The treatment cost for Fleas is <strong>£132.00</strong>.</p>
     <p>
       This charge is based on a standard size of a 3 bed semi-detached property. If
@@ -154,7 +154,7 @@ const fleasTreatment = new ContentPaN(
     keywords: ["Flea"],
     categories: ["Pollution and Nuisance", "Environmental", "Pest Constrol"],
   },
-  { date: "10/10/2024", name: "Elliott Griffiths" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const badgerProtection = new ContentPaN(
@@ -164,8 +164,8 @@ const badgerProtection = new ContentPaN(
   `
     <p>
       The Protection of Badgers Act 1992 makes it illegal for any person to kill,
-      injure or take a Badger. It is also an offence to cruelly ill-treat a Badger,
-      to dig for or to snare a Badger.
+      injure or take a Badger. It is also an offence to cruelly ill-treat a badger,
+      to dig for or to snare a badger.
     </p>
     <p>
       Under the 1992 Act it is now illegal to damage a badger sett or cause a dog to
@@ -181,13 +181,9 @@ const badgerProtection = new ContentPaN(
       confiscate any dogs used in offences against Badgers and disqualify the
       offender from owning a dog.
     </p>
-    <p>
-      For more information, please visit <a
-        href="http://www.syorksbadgergroup.org.uk"
-        target="_blank"
-      ></a
-      >. 
-    </p>
+<p>
+  For more information, please visit <a href="http://www.syorksbadgergroup.org.uk" target="_blank">http://www.syorksbadgergroup.org.uk</a>.
+</p>
   `,
   {
     buttonLabel: "",
@@ -207,7 +203,7 @@ const badgerProtection = new ContentPaN(
       "Law",
     ],
   },
-  { date: "07/10/2024", name: "Elliott Griffiths" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const batProtectionBritain = new ContentPaN(
@@ -361,7 +357,7 @@ const bedBugTreatment = new ContentPaN(
 const birdsandPigeonsTreatment = new ContentPaN(
   "birdsandPigeonsTreatment",
   "Birds and Pigeons Treatment",
-  "Information about birds and Pigeons Treatment",
+  "Information about birds and Pigeon's Treatment",
   `
     <details class="accordion">
       <summary class="accordion-header">
@@ -370,7 +366,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
       </summary>
       <div class="accordion-content">
         <p>
-          For bird and pegions treatment enquiries related to Commercial, Health
+          For bird and pigeons treatment enquiries related to Commercial, Health
           Authority, Industrial, and University properties, please email your
           request to
           <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
@@ -410,7 +406,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "09/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const biscuitBeetlesTreatment = new ContentPaN(
@@ -422,7 +418,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
       <h3>Sample Required</h3>
       <p>
         Before we can provide treatment for Biscuit Beetles in your domestic property
-        such as Council House, Housing Association or Privated Rented, we
+        such as Council House, Housing Association or Private Rented, we
         will need a sample of the pest.
       </p>
       <p>You can either bring your sample to:</p>
@@ -450,13 +446,13 @@ const biscuitBeetlesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Biscuit Beetle treatment is £110.00. This is based on a standard size
+      The cost for Biscuit Beetle treatment is £110.00. This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50.00:
+      reduced to £69.50:
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -516,7 +512,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "09/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const bumbleBeesTreatment = new ContentPaN(
@@ -527,12 +523,12 @@ const bumbleBeesTreatment = new ContentPaN(
     <h3>Cost for Treatment</h3>
     <p>
       If the pests located in a communal area (The area that is shared by multiple Council Housing properties) or 
-      required treatment for a demestic properties such as Council Housing, Housing Association, Private Owned, Private Rented,
+      required treatment for a domestic properties such as Council Housing, Housing Association, Privately Owned, Private Rented,
       then the treatment cost for Bumble Bees is £75.50.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58:00.
+      reduced to £58.00.
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -566,7 +562,7 @@ const bumbleBeesTreatment = new ContentPaN(
       </summary>
       <div class="accordion-content">
         <p>
-          For Bumble Bees treatment enquiries related to Commercial and House in Multiple Occuption, 
+          For Bumble Bees treatment enquiries related to Commercial and Houses in Multiple Occuption, 
           please email your request to
           <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
             >EnvironmentalServicesAdmin@sheffield.gov.uk</a
@@ -605,7 +601,7 @@ const bumbleBeesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "09/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const carpetBeetlesTreatment = new ContentPaN(
@@ -617,7 +613,7 @@ const carpetBeetlesTreatment = new ContentPaN(
       <h3>Sample Required</h3>
       <p>
         Before we can provide treatment for Carpet Beetles in your domestic property
-        such as Council House, Housing Association or Privated Rented, we
+        such as Council House, Housing Association or Private Rented, we
         will need a sample of the pest.
       </p>
       <p>You can either bring your sample to:</p>
@@ -648,15 +644,15 @@ const carpetBeetlesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      If the pests located in a communal area (The area that is shared by multiple Council Housing properties) or 
-      required treatment for a demestic properties such as Council Housing, Housing Association, Private Owned, Private Rented,
+      If the pests are located in a communal area (The area that is shared by multiple Council Housing properties) or 
+      required treatment for a domestic properties such as Council Housing, Housing Association, Private Owned, Private Rented,
       then the treatment cost for Carpet Beetles is £132.00.
       This charge is based on a standard size of a 3-bed semi-detached property. 
       If the property is bigger than this, please escalate the enquiry so a quote can be provided.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58:00.
+      reduced to £58.00.
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -716,7 +712,7 @@ const carpetBeetlesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "09/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const ratTreatment = new ContentPaN(
@@ -751,8 +747,8 @@ const ratTreatment = new ContentPaN(
       </summary>
       <div class="accordion-content">
         <p>
-          If the rats are in a communal area (an area shared by multiple Chouncil
-          Housing tenenats), 
+          If the rats are in a communal area (an area shared by multiple Council
+          Housing tenants), 
           <a href="${window.location.protocol}//${
     window.location.hostname
   }/form/launch/hou_estates_enquiry?${
@@ -811,18 +807,18 @@ const ratTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "07/10/2024", name: "Elliott Griffiths" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const clusterFilesTreatment = new ContentPaN(
   "clusterFilesTreatment",
   "Cluster Files Treatment",
-  "Information about Cluster Files treatment and services",
+  "Information about Cluster Flies treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
       <p>
-        Before we can provide treatment for Cluster Files in your domestic property, we
+        Before we can provide treatment for Cluster Flies in your domestic property, we
         will need a sample of the pest.
       </p>
       <p>You can either bring your sample to:</p>
@@ -890,7 +886,7 @@ const clusterFilesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "10/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const cockroachesProtection = new ContentPaN(
@@ -938,7 +934,7 @@ const cockroachesProtection = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £97:00:
+      reduced to £97.00:
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -969,18 +965,18 @@ const cockroachesProtection = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "10/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const cricketsTreatment = new ContentPaN(
   "cricketsTreatment",
-  "crickets Treatment",
+  "Crickets Treatment",
   "Information about Crickets Treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
       <p>
-        Before we can provide treatment for Crickets in your domestic property, we
+        Before we can provide treatment for crickets in your domestic property, we
         will need a sample of the pest.
       </p>
       <p>You can either bring your sample to:</p>
@@ -1011,7 +1007,7 @@ const cricketsTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The Treatment cost for Crickets is £110.00. This is based on a standard size
+      The treatment cost for crickets is £110.00. This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
@@ -1048,7 +1044,7 @@ const cricketsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "10/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const dermestesBeetlesTreatment = new ContentPaN(
@@ -1361,7 +1357,7 @@ const gardenAntsTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58:00:
+      reduced to £58.00:
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1392,18 +1388,18 @@ const gardenAntsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "10/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const ladyBirdsTreatment = new ContentPaN(
   "ladyBirdsTreatment",
-  "Lady Birds Treatment",
-  "Information about Lady Birds Treatment and services",
+  "Ladybirds Treatment",
+  "Information about Ladybird Treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Lady Birds is £110:00. This is based on a standard size
+      The treatment cost for Ladybirds is £110.00. This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
@@ -1432,7 +1428,7 @@ const ladyBirdsTreatment = new ContentPaN(
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Lady Birds", "Treatment", "Pests", "Vermin"],
+    keywords: ["Ladybirds", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
@@ -1440,7 +1436,7 @@ const ladyBirdsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "10/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const masonryBeesTreatment = new ContentPaN(
@@ -1457,7 +1453,7 @@ const masonryBeesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58:00:
+      reduced to £58.00:
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1468,15 +1464,15 @@ const masonryBeesTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-    If there is more than one nest, a charge of £39.00 per addition nest will be applied.
+    If there is more than one nest, a charge of £39.00 per additional nest will be applied.
     </p>
     <h3>Nests Up High</h3>
     <p>
     Officers carry equipment that enables them to treat a nest located at height.<br>
     In most cases the officer will be able to carry out a successful treatment using such equipment.<br>
     If any further access equipment is required to treat the nest our officer will inform you of this at the time of the visit. 
-    If further access is equipment is required, then it would possibly mean an added cost.<br>
-    If your customer is unsure about the possible additional cost, escalate pest control enquiry and an officer will contact the customer about it.
+    If further access equipment is required, then it would possibly mean an added cost.<br>
+    If your customer is unsure about the possible additional cost, escalate the pest control enquiry and an officer will contact the customer about it.
     </p>
     <p>
       <strong>All prices include a call-out fee of £39. This fee applies if our officer
@@ -1499,7 +1495,7 @@ const masonryBeesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "10/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const miceTreatment = new ContentPaN(
@@ -1517,7 +1513,7 @@ const miceTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58:00:
+      reduced to £58.00:
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1552,7 +1548,7 @@ const miceTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "11/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const mitesTreatment = new ContentPaN(
@@ -1563,7 +1559,7 @@ const mitesTreatment = new ContentPaN(
     <section class="info-panel" role="region" aria-label="Information panel">
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for the Mites is £110.00. This is based on a standard size
+      The treatment cost for Mites is £110.00. This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
@@ -1600,7 +1596,7 @@ const mitesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "11/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const mothsTreatment = new ContentPaN(
@@ -1684,19 +1680,19 @@ const mothsTreatment = new ContentPaN(
 
 const pharoahAntsTreatment = new ContentPaN(
   "pharoahAntsTreatment",
-  "Pharoah Ants Treatment",
-  "Information about Pharoah Ants Treatment and services",
+  "Pharaoh Ants Treatment",
+  "Information about Pharaoh Ants Treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for the Pharoah Ants is £330.00. This is based on a standard size
+      The treatment cost for the Pharaoh Ants is £330.00. This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £97:00:
+      reduced to £97.00:
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1712,14 +1708,14 @@ const pharoahAntsTreatment = new ContentPaN(
     </p>
   `,
   {
-    buttonLabel: "Book treatment for Pharoah Ants",
+    buttonLabel: "Book treatment for Pharaoh Ants",
     formName: "pest_control_treatment",
   },
   { typeKey: "pest_control_transfer_to_service" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Pharoah Ants", "Treatment", "Pests", "Vermin"],
+    keywords: ["Pharaoh Ants", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
@@ -1727,7 +1723,7 @@ const pharoahAntsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "11/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const psocidsTreatment = new ContentPaN(
