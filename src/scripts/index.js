@@ -1710,6 +1710,13 @@ function checkPageProgress() {
   );
   const isAlertPanelVisible = Array.from(alertPanels).some(isVisible);
 
+  // Check if a validation message is visible
+  const validationMessages = currentPageElement.querySelectorAll(
+    ".dform_validationMessage"
+  );
+  const isValidationMessageVisible =
+    Array.from(validationMessages).some(isVisible);
+
   // Handle file inputs separately
   const fileUploads = Array.from(
     currentPageElement.querySelectorAll("input[type='file']:required")
@@ -1775,7 +1782,10 @@ function checkPageProgress() {
     hasEmptyOrInvalidOtherFields;
 
   // If any alert panel is visible, force disabling the buttons
-  const shouldDisableButton = hasEmptyRequiredElement || isAlertPanelVisible;
+  const shouldDisableButton =
+    hasEmptyRequiredElement ||
+    isAlertPanelVisible ||
+    isValidationMessageVisible;
 
   // Call the disabledButtonToggle function based on the check
   disabledButtonToggle(!shouldDisableButton);
