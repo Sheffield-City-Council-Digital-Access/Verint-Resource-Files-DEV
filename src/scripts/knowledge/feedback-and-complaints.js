@@ -114,7 +114,7 @@ const complaints = new ContentFaC(
     ],
     categories: ["Feedback and Complaint"],
   },
-  { date: "25/10/2024", name: "George Whitehouse" }
+  { date: "11/11/2024", name: "Sam Coupland" }
 );
 
 const childrensSocialCareComplaints = new ContentFaC(
@@ -122,8 +122,6 @@ const childrensSocialCareComplaints = new ContentFaC(
   "Children's social care complaints",
   "Description",
   `
-    <h3>Children's social care complaints</h3>
-
     <p> The Feedback and Complaints Team act as Case Coordinator for the Children and Families Service. </p>
 
     <p>The Children Act complaints procedure is governed by The Children Act 1989 Representations Procedure (England) 
@@ -263,7 +261,7 @@ const childrensSocialCareComplaints = new ContentFaC(
     formName: "make_complaint_childrens",
   },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "make_complaint_childrens_information_provided" },
   {
     type: "Complaint",
     keywords: [
@@ -275,7 +273,7 @@ const childrensSocialCareComplaints = new ContentFaC(
     ],
     categories: ["Feedback and Complaint"],
   },
-  { date: "25/10/2024", name: "George Whitehouse" }
+  { date: "11/11/2024", name: "Sam Coupland" }
 );
 
 const adultsocialcarecomplaints = new ContentFaC(
@@ -283,8 +281,6 @@ const adultsocialcarecomplaints = new ContentFaC(
   "Adult social care complaints",
   "Description",
   `
-    <h3>Adult social care complaints</h3>
-
     <p> The Adult Social Care Complaints Procedure differs from the Corporate Complaints Procedure. 
     This is because it is governed by the 2009 Local Authority Social Services and National Health Service Regulations.</p>
 
@@ -312,20 +308,17 @@ the outcome sought and agree a timescale for a response. </p>
 <p> More detailed information of how to investigate and respond to a complaint is provided in the Corporate 
 Complaints Procedure – Effective Complaint handling Guide under Documents. </p>
 
-<h3>Handling a complaint well<h3>
+<h3>Handling a complaint well</h3>
 
 <p>
-<ul>
-
-<li>Check for any issues around consent or safeguarding</li>
-<li>Review the key documentation around the complaint and speak to the people involved</li>
-<li>Having formed an initial view, IMs should discuss their findings with the customer before drafting their response</li>
-<li>Complaint responses should be focused on resolution and address the issues raised in a thorough way, using plain English</li>
-<li>Responses must be sent from the relevant Head of Service, after being checked by the Service Manager</li>
-<li>To help managers carry out their complaints investigation role we have developed the Customer Complaints: 
-Effective Handling on Go Learn.</li>
-
-</ul>
+  <ul>
+    <li>Check for any issues around consent or safeguarding</li>
+    <li>Review the key documentation around the complaint and speak to the people involved</li>
+    <li>Having formed an initial view, IMs should discuss their findings with the customer before drafting their response</li>
+    <li>Complaint responses should be focused on resolution and address the issues raised in a thorough way, using plain English</li>
+    <li>Responses must be sent from the relevant Head of Service, after being checked by the Service Manager</li>
+    <li>To help managers carry out their complaints investigation role we have developed the Customer Complaints: Effective Handling on Go Learn.</li>
+  </ul>
 </p>
 
   `,
@@ -334,7 +327,7 @@ Effective Handling on Go Learn.</li>
     formName: "make_complaint_adult",
   },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "make_complaint_adult_information_provided" },
   {
     type: "Complaint",
     keywords: [
@@ -346,7 +339,7 @@ Effective Handling on Go Learn.</li>
     ],
     categories: ["Feedback and Complaint"],
   },
-  { date: "25/10/2024", name: "George Whitehouse" }
+  { date: "11/11/2024", name: "Sam Coupland" }
 );
 
 const corporateComplaintsProcedure = new ContentFaC(
@@ -354,8 +347,6 @@ const corporateComplaintsProcedure = new ContentFaC(
   "Corporate complaints procedure",
   "Description",
   `
-    <h3>Corporate complaints procedure</h3>
-
     <p> Sheffield City Council's Corporate Complaint Handling Procedure has been aligned to the new Ombudsman Complaint 
     Handling Code. This is effective for Housing and Repairs Services from 1 April 2024 and for all other Corporate Council 
     Services from 1 September 2024. Our corporate complaints procedure is a two staged process, consistent across the Council,
@@ -430,7 +421,7 @@ Within 5 working days of receipt of the complaint.
     formName: "make_complaint",
   },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "make_complaint_information_provided" },
   {
     type: "Complaint",
     keywords: [
@@ -442,7 +433,7 @@ Within 5 working days of receipt of the complaint.
     ],
     categories: ["Feedback and Complaint"],
   },
-  { date: "25/10/2024", name: "George Whitehouse" }
+  { date: "11/11/2024", name: "Sam Coupland" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
