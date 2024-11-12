@@ -6610,36 +6610,6 @@ please call the Home Ownership and Revenues Unit on 0114 27 35595.</p>
   { date: "10/10/2024", name: "George Whitehouse" }
 );
 
-const refunds = new ContentH(
-  "refunds",
-  "Refunds",
-  "Description",
-  `
-
-<p>Pay As You Go refunds are not made unless the tenant has vacated the property.<br>
-Once their rent account has been closed, customers are entitled to a full refund as long as their remaining 
-Pay As You Go balance is £10.00 or greater please ask the tenant to call Home Ownership 
-and Revenues Unit on 0114 27 35595 once their rent account has been closed. </p>
-
-
-  `,
-  { buttonLabel: "Report Rents Refunds ", formName: "hou_rents_refunds" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
-  {
-    type: "Information",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing"],
-  },
-  { date: "10/10/2024", name: "George Whitehouse" }
-);
-
 const generalCouncilHousing = new ContentH(
   "generalCouncilHousing",
   "General Council Housing",
