@@ -4,7 +4,7 @@ class CoreH {
     this.name = name;
     this.description = description;
   }
-
+}
   
   class ServiceH extends CoreH {
     constructor(id, name, description, subjects = []) {
