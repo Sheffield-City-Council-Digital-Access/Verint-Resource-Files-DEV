@@ -5136,39 +5136,6 @@ const idReferencesMenu = new MenuH(
   [idReferences, acceptableId, idFaq, referencesFAQs, movingIn, mutualExchanges]
 );
 
-const communalCupboard = new ContentH(
-  "communalCupboard",
-  "Communal Cupboard and Meter Box Cupboard",
-  "Information about communal cupboard and meter box cupboards.",
-  `
-    <p>
-      Meter boxes cupboard can be inside or outside of the property and the keyhole
-      will be triangular in shape. These will need to purchased from a hardware
-      store as we cannot provide one.
-    </p>
-    <p>
-      If the keyhole is not triangular then it is likely to be cupboard in the
-      communal area. These cupboards may contain more than one gas/electric meter
-      and they mostly require a T1 Key that is held in the local Area office.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
-  {
-    type: "Information",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Estates and Environments"],
-  },
-  { date: "14/10/2024", name: "Omily Parkin" }
-);
-
 const communalFireSafety = new ContentH(
   "communalFireSafety",
   "Communal Fire Safety",
