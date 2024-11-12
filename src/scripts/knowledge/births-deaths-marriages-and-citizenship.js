@@ -64,8 +64,8 @@ const reRegisterABirth = new ContentBDMaC(
   <p> Takes to <a href src= "#">form </a></p>
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: ['register', 'birth', 'rgister', 'burth'],
@@ -80,7 +80,6 @@ const registerADeath = new ContentBDMaC(
     "Register a Death",
     "Desc tbd",
     `
-  <h3>Register a death</h3>
     <p>You are legally required to register a death within 5 days from when the Coroner or Medical Examiner has passed the relevant paperwork to the Register Office. The registration should take place in the district where the person died.
     </p>
     <h3>Changes to the death certification process</h3>
@@ -90,7 +89,7 @@ const registerADeath = new ContentBDMaC(
     </p>
     <p>During this process you may be contacted by the Medical Examiners Office. For further information regarding the deceased you should contact the hospital or GP dealing with the death.
     </p>
-    <p>For more information about the death reform certification process please visit the GOV.UK website.
+    <p>For more information about the death reform certification process please visit the <a href="Gov.Uk" target="_blank" rel="noopener noreferrer">Gov.uk</a> website.
     </p>
     <h3>Who can register a death</h3>
     <p>Usually, a relative or long-term partner (living with the deceased) of the person who has died can register death, but others can also do this. This can be:</p>
@@ -116,14 +115,14 @@ const registerADeath = new ContentBDMaC(
     </ul>
   `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
         categories: ["", ""],
     },
-    { date: "16/10/2024", name: "Joe Nixon" }
+    { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 //---------Register a Birth and Death tile
@@ -136,8 +135,8 @@ const registerABirthAndDeath = new ContentBDMaC(
   <p> Takes to <a href src= "#">form </a></p>
   `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
@@ -157,14 +156,14 @@ const registerAStillbirth = new ContentBDMaC(
   <p> Takes to <a href src= "#">form </a></p>
   `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
         categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths"],
     },
-    { date: "16/10/2024", name: "Joe Nixon" }
+    { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 
@@ -175,16 +174,15 @@ const copyCertificates = new ContentBDMaC(
     "Copy Certificates ",
     "Desc tbd",
     `
-  <h3>Copy certificates</h3>
-    <p>ⓘWe can only take request copies of certificates for registrations that took place in Sheffield.</p>
-    <p>You can request copy certificates via www.sheffield.gov.uk.</p>
+    <p>We can only take request copies of certificates for registrations that took place in Sheffield.</p>
+    <p>You can request copy certificates via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates</a>.</p>
     <p>There is a standard fee of £13.50 for these:</p>
     <ul>
-        <li>full birth certificate</li>
-        <li>full civil partnership certificate</li>
-        <li>extract civil partnership certificate</li>
-        <li>marriage certificate</li>
-        <li>death certificate</li>
+        <li>full birth certificate.</li>
+        <li>full civil partnership certificate.</li>
+        <li>extract civil partnership certificate.</li>
+        <li>marriage certificate.</li>
+        <li>death certificate.</li>
     </ul>
     <p>Your certificate will be posted to you in 15 working days, please allow 3 days for delivery.</p>
     <h3>Urgent applications</h3>
@@ -192,14 +190,14 @@ const copyCertificates = new ContentBDMaC(
  
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
         categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths", "Certificates"],
     },
-    { date: "16/10/2024", name: "Joe Nixon" }
+    { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 
@@ -211,7 +209,6 @@ const bookingARegistrarWedding = new ContentBDMaC(
     "Booking a Registrar, Wedding or Civil Partnership in Sheffield",
     "Desc tbd",
     `
-      <h3>Booking a Registrar, Wedding or Civil Partnership in Sheffield</h3>
     <h3>Ceremony Bookings for Weddings or Civil Partnerships</h3>
     <p>Our integrated system allows you to choose and book a ceremony within 15 minutes. Once you have entered the process below the system will give you options to choose a venue either in the Town Hall or at an external licensed venue in the Sheffield district only (please read below for terms to book a venue). The choice will be given to for a Wedding or Civil Partnership during the booking process.</p>
     <p>Once you have booked you will be sent an email with your booking ID, this is your link to all payments for your ceremony.</p>
@@ -224,24 +221,20 @@ const bookingARegistrarWedding = new ContentBDMaC(
     <h3>You must not:</h3>
     <ul>
         <li>Already be a civil partner or married.</li>
-        <li>Be closely related (the Act gives details of prohibited relationships):
-            <ul>
-                <li><a href="https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents</a></li>
-            </ul>
-        </li>
+        <li>Be closely related (the Act gives details of prohibited relationships) <a href="https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents</a>.</li>
     </ul>
     <h3>Non-Refundable Booking Fees</h3>
     <p>When you have completed your ceremony booking you will be required to make payment, this is to reserve the date and time selected, please note this is a non-refundable fee.</p>
     <ul>
-        <li>Town Hall Ceremonies- £30.00</li>
-        <li>External Sheffield Venues- £60.00 (reservation of registrars for your ceremony)</li>
+        <li>Town Hall Ceremonies- £30.00.</li>
+        <li>External Sheffield Venues- £60.00 (reservation of registrars for your ceremony).</li>
     </ul>
     <h3>Weddings and Civil Partnerships in the Register Office and Ceremony Rooms</h3>
     <p>Sheffield Register Office and ceremony rooms are located in the magnificent Grade I listed Town Hall. This unique wedding venue is the perfect choice for couples looking to get married in Sheffield city centre. With reasonable rates, it is also one of the most inexpensive wedding venues in Sheffield.</p>
     <p>Our registrars will perform a ceremony that will be memorable and personal. You can add vows or readings (non-religious). Your ceremony can be formal, flamboyant, sophisticated, or even a singalong – it can be tailored to your individual wishes.</p>
     <h3>Mirror Mandela Room</h3>
     <a href="https://www.sheffield.gov.uk/births-deaths-marriages/town-hall-weddings " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/town-hall-weddings </a>
-    <p>If you wish to book the room the Mirror Mandela Room, please contact Beth Pinder Beth.Pinder@sheffield.gov.uk for further details and fees. </p>
+    <p>If you wish to book the room the Mirror Mandela Room, please contact Beth Pinder <a href="mailto:Beth.Pinder@sheffield.gov.uk">Beth.Pinder@sheffield.gov.uk</a> for further details and fees. </p>
     <p>Registrar fees- non-refundable booking fee of £60.00 and £304.00 to reserve Registrars for the ceremony.</p>
     <h3>Civil Partnerships</h3>
     <p>Civil partnership enables same sex couples to obtain legal recognition of their relationship under the Civil Partnership Act 2004. As of 2nd of December 2019, opposite sex couples can also form a civil partnership.  <a href="https://www.legislation.gov.uk/ukpga/2004/33/contents" target="_blank" rel="noopener noreferrer"> https://www.legislation.gov.uk/ukpga/2004/33/contents</a></https:></p>
@@ -251,14 +244,14 @@ const bookingARegistrarWedding = new ContentBDMaC(
     <h3>Our Ceremony rooms and prices:</h3>
     <ul>
         <li>
-            <h4>Loxley Room</h4>
+            <strong>Loxley Room</strong>
             <ul>
                 <li>This is a small ceremony room for up to sixteen guests and children under 2 years of age sitting on an appropriate adult's knee. It is available Monday to Friday for £198 (including registrars and one marriage or civil partnership certificate). </li>
             </ul>
         </li>
     
         <li>
-            <h4>Arundel, Norfolk, and Hallam Rooms</h4>
+            <strong>Arundel, Norfolk, and Hallam Rooms</strong>
             <ul>
                 <li>The Arundel and Norfolk rooms are dressed and hold up to 45 guests.</li>
                 <li>The Hallam room is dressed and holds up to fifty-six guests.</li>
@@ -268,7 +261,7 @@ const bookingARegistrarWedding = new ContentBDMaC(
         </li>
     
         <li>
-            <h4>Statutory Register Office</h4>
+            <strong>Statutory Register Office</strong>
             <ul>
                 <li>The ceremony will be held in our designated Register Office Ceremony Room.</li>
                 <li>The Register Office is available the third Wednesday of every month for couples who just want to attend with their two witnesses.</li>
@@ -296,14 +289,14 @@ const bookingARegistrarWedding = new ContentBDMaC(
 
   `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
         categories: ["Registrars", "Registry Office", "Register Office", "Wedding", "Ceremony",],
     },
-    { date: "16/10/2024", name: "Joe Nixon" }
+    { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 //---------Book a Notice of Marriage Appointment
@@ -313,42 +306,41 @@ const bookNoticeOfMarriageApp = new ContentBDMaC(
     "Book a Notice of Marriage Appointment",
     "Desc tbd",
     `
-    <h3>Book a Notice of Marriage</h3>
     <p>Giving notice means making a declaration that you are both free to marry and fulfil other requirements prescribed by law.</p>
 
     <ul>
     
         <li> You need to ensure that you have given notice at least 28 days before the date.</li>
-        <li>If you are giving notice for a venue in the Sheffield district, please have your booking ID ready, this was provided in your email sent when booking the venue. Please contact our ceremonies team if you do not have this and they will email you the booking ID directly ceremoniesteam@sheffield.gov.uk</li>
+        <li>If you are giving notice for a venue in the Sheffield district, please have your booking ID ready, this was provided in your email sent when booking the venue. Please contact our ceremonies team if you do not have this and they will email you the booking ID directly <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a>.</li>
         <li>If you are booking a notice for a venue outside the Sheffield district you do not require a booking ID.</li>
     
         <li>The earliest date the notice of marriage can be given is 12 months before the marriage ceremony. We recommend a notice of marriage should be done between 3-6 months before your ceremony.</li>
-        <li>Both must be over the age of 18</li>
+        <li>Both must be over the age of 18.</li>
         <li>If both of you are British, Irish or you have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you each need to give your notice of marriage in the Borough or District you are residing in, provided you have lived there for at least 8 days.</li>
         <li>If you are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you must attend the notice of marriage appointment together either in the district you both live, or in either district (whichever is most convenient) if you live in different towns.</li>
-        <li>You must know where your marriage will take place</li>
-        <li>The date of your marriage must be between 29 calendar days and 1 year of your appointment</li>
+        <li>You must know where your marriage will take place.</li>
+        <li>The date of your marriage must be between 29 calendar days and 1 year of your appointment.</li>
     </ul>
     <p>Further information for notice of marriage please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice" target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a></p>
     <h3>Fees</h3>
     <p>There is a fee to give your notice of marriage (additional fees may be incurred dependant on your choices)</p>
     <ul>
-        <li>Monday to Friday: £42.00 each (for standard appointments)</li>
-        <li>Monday to Friday: £57.00 each (for those who are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021)</li>
-        <li>Saturday (limited availability): £60.00 each (for standard appointments only)</li>
-        <li>Local foreign divorce for clearance: £55.00</li>
-        <li>Referral to General Registration Office for clearance: £83.00</li>
+        <li>Monday to Friday: £42.00 each (for standard appointments).</li>
+        <li>Monday to Friday: £57.00 each (for those who are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021).</li>
+        <li>Saturday (limited availability): £60.00 each (for standard appointments only).</li>
+        <li>Local foreign divorce for clearance: £55.00.</li>
+        <li>Referral to General Registration Office for clearance: £83.00.</li>
     </ul>
     <p>Any fees are payable when you book your appointment and will be calculated on the choices you make.</p>
-    <p>If you are unsure which fee applies to you, please contact ceremoniesteam@sheffield.gov.uk  for clarification.</p>
+    <p>If you are unsure which fee applies to you, please contact <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a> for clarification.</p>
     <h3>Proof of name, address, marital status and nationality</h3>
     <p>You will need to bring:</p>
     <ul>
-        <li>a valid passport for proof of your name, age and nationality</li>
-        <li>your driving licence, a utility bill dated within the last 3 months, or a bank statement dated within a month for proof of your address that includes either your full name or at least your initials</li>
-        <li>Proof that a previous marriage or civil partnership has ended</li>
-        <li>decree absolute of divorce / dissolution</li>
-        <li>death certificate of former husband, wife or civil partner</li>
+        <li>a valid passport for proof of your name, age and nationalit.y</li>
+        <li>your driving licence, a utility bill dated within the last 3 months, or a bank statement dated within a month for proof of your address that includes either your full name or at least your initials.</li>
+        <li>Proof that a previous marriage or civil partnership has ended.</li>
+        <li>decree absolute of divorce / dissolution.</li>
+        <li>death certificate of former husband, wife or civil partner.</li>
     </ul>
     <p>We must be able to link the document to you. A Decree NISI of Divorce is not acceptable. If the document is in another language, we will need a translation into English.</p>
     <h3>Change of name</h3>
@@ -360,14 +352,14 @@ const bookNoticeOfMarriageApp = new ContentBDMaC(
     <p>Please arrive 5 to 10 minutes before your appointment. If you arrive late you may need to rebook.</p>
      `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
         categories: ["Registrars", "Registry Office", "Register Office", "Wedding", "Ceremony",],
     },
-    { date: "16/10/2024", name: "Joe Nixon" }
+    { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 //-------Reschedule an Appointment tile
@@ -377,18 +369,18 @@ const rescheduleAnAppointment = new ContentBDMaC(
     "Reschedule an Appointment",
     "Desc tbd",
     `
-  <p>Email  ceremoniesteam@sheffield.gov.uk</p>
+  <p>Email <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a></p>
  
   `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
         categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths", "Certificates", "Wedding", "Ceremony",],
     },
-    { date: "16/10/2024", name: "Joe Nixon" }
+    { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 //--------- Book a Notice of Civil Partnership Appointment tile
@@ -397,20 +389,19 @@ const bookNoticeCivilPartnership = new ContentBDMaC(
     "Book a Notice of Civil Partnership Appointment",
     "Desc tbd",
     `
-    <h3>Book a Notice of Civil Partnership</h3>
     <p>Giving notice means making a declaration that you are both free enter into a civil partnership and fulfil other requirements prescribed by law.</p>
     <p>You need to ensure that you have given notice at least 28 days before the date. </p>
-    <p>If you are giving notice for a venue in the Sheffield district, please have your booking ID ready (this was provided in your email sent when booking the venue). Please contact our ceremonies team if you do not have this and they will email you the booking ID directly ceremoniesteam@sheffield.gov.uk </p>
+    <p>If you are giving notice for a venue in the Sheffield district, please have your booking ID ready (this was provided in your email sent when booking the venue). Please contact our ceremonies team if you do not have this and they will email you the booking ID directly <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a>.</p>
     <p>If you are booking a notice for a venue outside the Sheffield district you do not require a booking ID.</p>
     <p>The earliest date the notice of civil partnership can be given is 12 months before the civil partnership ceremony. We recommend a notice of civil partnership should be done between 3-6 months before your ceremony.</p>
-    <p>Both must be over the age of 18</p>
+    <p>Both must be over the age of 18.</p>
     <p>If both of you are British, Irish or you have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you each need to give your notice of marriage in the Borough or District you are residing in, provided you have lived there for at least 8 days.</p>
     <p>If you are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you must attend the notice of marriage appointment together either in the district you both live, or in either district (whichever is most convenient) if you live in different towns.</p>
-    <p>You must know where your civil partnership will take place</p>
-    <p>The date of your civil partnership formation must be between 29 calendar days and 1 year of your appointment</p>
-    <p>Further information for notice of civil partnership please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice " target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice </a></p>
+    <p>You must know where your civil partnership will take place.</p>
+    <p>The date of your civil partnership formation must be between 29 calendar days and 1 year of your appointment.</p>
+    <p>Further information for notice of civil partnership please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice " target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a>.</p>
     <h3>Fees</h3>
-    <p>There is a fee to give your notice of civil partnership</p>
+    <p>There is a fee to give your notice of civil partnership:</p>
     <ul>
         <li>Monday to Friday: £42.00 each (for standard appointments)</li>
         <li>Monday to Friday: £57.00 each (for those who are not British, Irish and do not have EUSS status (settled, pre-settled and you have applied for the status before 30 June 2021))</li>
@@ -419,12 +410,12 @@ const bookNoticeCivilPartnership = new ContentBDMaC(
         <li>Referral to General Registration Office for clearance: £83.00</li>
     </ul>
     <p>Any fees are payable when you book your appointment and will be calculated on the choices you make.</p>
-    <p>If you are unsure which fee applies to you, please contact ceremoniesteam@sheffield.gov.uk for clarification.</p>
+    <p>If you are unsure which fee applies to you, please contact <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a> for clarification.</p>
     <h3>Proof of name, address, marital status and nationality</h3>
     <p>You will need to bring:</p>
     <ul>
-        <li>a valid passport for proof of your name, age and nationality</li>
-        <li>your driving licence, a utility bill dated within the last 3 months, or a bank statement dated within a month for proof of your address that includes either your full name or at least your initials</li>
+        <li>A valid passport for proof of your name, age and nationality</li>
+        <li>Your driving licence, a utility bill dated within the last 3 months, or a bank statement dated within a month for proof of your address that includes either your full name or at least your initials</li>
         <li>Proof that a previous marriage or civil partnership has ended:
             <ul>
                 <li>decree absolute of divorce / dissolution</li>
@@ -443,14 +434,14 @@ const bookNoticeCivilPartnership = new ContentBDMaC(
  
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
         categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths", "Certificates", "Wedding", "Ceremony", "Partnership", "Civil"],
     },
-    { date: "16/10/2024", name: "Joe Nixon" }
+    { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 //-------Final Payment tile
@@ -462,29 +453,28 @@ const finalPayment = new ContentBDMaC(
     `
     <h3>Final Ceremony Payment</h3>
     <p>The final step to your ceremony is to make the final payment, you can make a final payment for your ceremony by using the Booking ID.  This booking ID was given when booking the ceremony after 29th of October 2024.</p>
-    <p>If you booked your ceremony before 29th of October 2024 and do not have this, please contact our ceremonies team for them to email you the details, ceremoniesteam@sheffield.gov.uk </p>
+    <p>If you booked your ceremony before 29th of October 2024 and do not have this, please contact our ceremonies team for them to email you the details, <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a>.</p>
     <p>A final payment reminder email will be sent to you 4 weeks before your ceremony which will include the booking ID.</p>
     <p>Final payment must be paid in full before and no later than 2 weeks before the ceremony date, if payment is not made it this may postpone the ceremony and may need to be rescheduled.</p>
     <h3>Certificates</h3>
     <p>Marriage and civil partnership certificates cost £12.50 at the point of registration (before the ceremony). Your 1st certificate will be sent out within 5-10 working days of the office receiving your completed marriage or civil partnership schedule. If you require another certificate, please follow the link below to order one. The following details must be inputted, date of ceremony, venue and names on the schedule (maiden name).</p>
     <p>Ceremonies conducted in religious venues do not receive the 1st certificate free, please use the link below to purchase another certificate if you require one.</p>
     <p><a href="https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 " target="_blank" rel="noopener noreferrer">https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 </a></p>
-    <p>Copies of certificates can be purchased after the ceremony for £13.50 each please follow the link below.</p>
-    <p><a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates </a></p>
+    <p>Copies of certificates can be purchased after the ceremony for £13.50 each at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates </a></p>
     <h3>A message from our ceremonies team</h3>
     <p><i>We hope you have a wonderful day and a long and happy life together. We would love to have your feedback if you wish pass on how your ceremony was it would great to hear how we are doing. </i></p>
-    <p>Please send us the details to ceremoniesteam@sheffield.gov.uk</p>
+    <p>Please send us the details to <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a></p>
  
   `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
         categories: ["", ""],
     },
-    { date: "16/10/2024", name: "Joe Nixon" }
+    { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 
@@ -497,14 +487,13 @@ const licensedWeddingVenues = new ContentBDMaC(
     "Licensed Wedding Venues in Sheffield",
     "Desc tbd",
     `
-    <h3>Licensed wedding venues in Sheffield</h3>
-    <p>You you can find information about licensed wedding venues in Sheffield at <a href="https://www.sheffield.gov.uk" target="_blank" rel="noopener noreferrer">www.sheffield.gov.uk</a></p>
+    <p>You you can find information about licensed wedding venues in Sheffield at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues</a></p>
     <p>New link will be finalised soon for new intagrated payments we will need to update thisprocess when confirmed going live</p>
     <p>Sheffield has some of the best wedding venues in Yorkshire. From our own Register Office and Town Hall rooms to hotels, galleries theatres and museums and everything in between, there's a venue to suit every couple.</p>
     <p>Advisor note: Search our map of approved venues or look through our list. PRESENTS MAP AND LIST OF LICENCED VENUES</p>
     <h3>Booking a Registrar</h3>
     <p>If you're getting married in Sheffield you need to book a registrar to conduct the ceremony.</p>
-    <p>You will can to booking a registrar via www.sheffield.gov.uk.</p>
+    <p>You will can to booking a registrar via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar</a>.</p>
     <p>You can provisionally book a registrar up to 2 years ahead of the ceremony but it's your responsibility to contact the venue to check their availability.</p>
     <h3>Fees</h3>
     <ul>
@@ -519,14 +508,14 @@ const licensedWeddingVenues = new ContentBDMaC(
  
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
         categories: ["Registrars", "Registry Office", "Register Office", "Wedding", "Ceremony"],
     },
-    { date: "16/10/2024", name: "Joe Nixon" }
+    { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 
@@ -541,14 +530,14 @@ const registrarsEmails = new ContentBDMaC(
  
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
     {
         type: "",
         keywords: [],
         categories: ["", ""],
     },
-    { date: "16/10/2024", name: "Joe Nixon" }
+    { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 

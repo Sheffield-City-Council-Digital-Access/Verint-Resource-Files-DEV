@@ -702,6 +702,8 @@ function handleOnReadyEvent(event, kdf) {
   // --- HANDLE FIND CURRENT LOCATION CLICK -------------------------------- \\
 
   $(".geo-btn").on("click", function () {
+    $(`.address-search`).find(".dform_validationMessage").hide();
+
     const currentPageId = getCurrentPageId();
     const container = document.querySelector(
       `#${currentPageId} .map-container`
@@ -780,6 +782,7 @@ function handleOnReadyEvent(event, kdf) {
   // --- HANDLE FIND ON MAP CLICK ------------------------------------------ \\
 
   $(".link-btn.map-icon").on("click", function () {
+    $(`.address-search`).find(".dform_validationMessage").hide();
     if ($(".geo-btn-container").find(".dform_validationMessage").length) {
       $(".geo-btn-container")
         .find(".dform_validationMessage")
@@ -1710,6 +1713,13 @@ function checkPageProgress() {
   );
   const isAlertPanelVisible = Array.from(alertPanels).some(isVisible);
 
+  // Check if a validation message is visible
+  const validationMessages = currentPageElement.querySelectorAll(
+    ".dform_validationMessage"
+  );
+  const isValidationMessageVisible =
+    Array.from(validationMessages).some(isVisible);
+
   // Handle file inputs separately
   const fileUploads = Array.from(
     currentPageElement.querySelectorAll("input[type='file']:required")
@@ -1775,7 +1785,10 @@ function checkPageProgress() {
     hasEmptyOrInvalidOtherFields;
 
   // If any alert panel is visible, force disabling the buttons
-  const shouldDisableButton = hasEmptyRequiredElement || isAlertPanelVisible;
+  const shouldDisableButton =
+    hasEmptyRequiredElement ||
+    isAlertPanelVisible ||
+    isValidationMessageVisible;
 
   // Call the disabledButtonToggle function based on the check
   disabledButtonToggle(!shouldDisableButton);
@@ -2567,6 +2580,10 @@ function getAndSetReviewPageData() {
   }
 }
 
+function refreshReviewPage() {
+  getAndSetReviewPageData();
+}
+
 // --- CONTACT TEAM PANEL --------------------------------------------------- \\
 
 function showContactTeamPanel() {
@@ -3062,6 +3079,7 @@ function do_KDF_mapReady_esriMap(map, positionLayer) {
 }
 
 function mapClick(evt) {
+  console.log("map click", evt);
   KDF.setVal("txt_site_name", "");
   KDF.setVal("txt_site_code", "");
   KDF.setVal("txt_feature_name", "");
@@ -3673,6 +3691,7 @@ function initLayerList() {
 }
 
 function addPoint(map, point, markerSymbol) {
+  console.log("addPoint", map, point, markerSymbol);
   streetMapPositionLayer.removeAll();
 
   var pointGraphic;
@@ -4087,6 +4106,63 @@ async function updateMinMaxDates(dateElementId, attribute, value) {
   }
 }
 
+// --- VALIDATE TIME FUNCTION ----------------------------------------------- \\
+
+function validateTime(inputDate, field, minTime, maxTime, interval) {
+  // Get the date part from the inputDate and compare it to today's date
+  const isToday = new Date(inputDate).getDate() === new Date().getDate();
+
+  // Extract hours and minutes from the input field value
+  const [inputHours, inputMinutes] = field.value.split(":").map(Number);
+
+  // Calculate the input time in minutes since midnight
+  const inputTimeInMinutes = inputHours * 60 + inputMinutes;
+
+  // Calculate the current time in minutes since midnight if it's today
+  const currentTimeInMinutes = isToday
+    ? new Date().getHours() * 60 + new Date().getMinutes()
+    : 0;
+
+  defaultMessage = getValidationMessageFromSession(field.id);
+
+  let validTime = true;
+  let errorMessage = defaultMessage;
+
+  if (isToday) {
+    if (inputMinutes % interval !== 0) {
+      validTime = false;
+      errorMessage = `Must be a ${interval} minutes interval`;
+    }
+    if (inputHours < minTime || inputHours >= maxTime) {
+      validTime = false;
+      errorMessage = `Must be between ${minTime}:00 and ${maxTime}:00`;
+    }
+    if (inputTimeInMinutes <= currentTimeInMinutes) {
+      validTime = false;
+      errorMessage = "Appointments must be in the future";
+    }
+  } else {
+    // If not today, only check for min/max time and interval
+    if (inputMinutes % interval !== 0) {
+      validTime = false;
+      errorMessage = `Must be a ${interval} minutes interval`;
+    }
+    if (inputHours < minTime || inputHours >= maxTime) {
+      validTime = false;
+      errorMessage = `Must be between ${minTime}:00 and ${maxTime}:00`;
+    }
+  }
+
+  if (!validTime) {
+    updateValidationMessage(field.name, errorMessage);
+    $(`.dform_widget_${field.name} .dform_validationMessage`).show();
+
+    checkPageProgress();
+  }
+
+  return { valid: validTime, message: errorMessage };
+}
+
 // --- COOKIE FUNCTIONS ----------------------------------------------------- \\
 
 function setCookie(name, value, minutes) {
@@ -4114,7 +4190,11 @@ function getCookie(name) {
 // --- STORE VALIDATION MESSAGES -------------------------------------------- \\
 
 function storeDefaultValidationMessages() {
-  const fieldClasses = ["address-search", "date-field"];
+  const fieldClasses = [
+    "address-search",
+    "date-field",
+    "dform_widget_type_time",
+  ];
 
   fieldClasses.forEach((className) => addValidationMessageToSession(className));
 }

@@ -4,12 +4,13 @@ class CoreH {
     this.name = name;
     this.description = description;
   }
-}
 
-class ServiceH extends CoreH {
-  constructor(id, name, description, subjects = []) {
-    super(id, name, description);
-    this.subjects = subjects;
+  
+  class ServiceH extends CoreH {
+    constructor(id, name, description, subjects = []) {
+      super(id, name, description);
+      this.subjects = subjects;
+    }
   }
 }
 
@@ -519,17 +520,6 @@ const bidding = new ContentH(
   "Bidding",
   "Desc tbc",
   `
-    
-
-    
-    
-
- 
-    
-   
-
-    
-   
     <p>
       After you have registered for housing, you express your interest in renting a
       property by making a bid. You only have to bid once per property. You make
@@ -558,13 +548,443 @@ const bidding = new ContentH(
     </div>
         </details>
     </div>
-</details>
-
-
-        <details class="details-accordion">
+  </details>
+    <details class="details-accordion">
             <summary>
                 First Come First Served
             </summary>
+              <p>
+                Log onto our website at www.sheffieldpropertyshop.org.uk and follow
+                the links from the homepage.
+              </p>
+              <p>Click ‘Log into my account’.</p>
+              <p>
+                Enter your login details: Your unique reference number (found on the
+                enclosed letter), your memorable date, and your password. Contact us
+                if you need these.
+              </p>
+              <p>
+                Once logged in, click ‘Update my details’ under the ‘Application
+                renewal required’ heading. Check your information carefully, confirm
+                that the details are correct, and submit the form. You must submit the
+                form even if there are no changes.
+              </p>
+            </div>
+          </details>
+        </div>
+      </details>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Disqualification/Restriction</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            The Allocations Policy advises of various circumstances where we will
+            reduce the preference given to applicants on the Housing Register or
+            prevent them from joining the register. These include circumstances such
+            as rent arrears or past/current anti-social behaviour.
+          </p>
+          <p>
+            In the most serious debt cases, the Allocations Policy allows us to place
+            applicants into Band E or disqualify a customer from the Housing Register
+            for an initial period of 12 months.
+          </p>
+          <p>A customer can apply for a restriction to be removed if:</p>
+          <ul>
+            <li>
+              They are able to evidence that their behaviour has significantly improved
+              (e.g., paying off arrears in full)
+            </li>
+            <li>They appeal the restriction (disqualification) within 21 days</li>
+            <li>They have exceptional circumstances</li>
+            <li>They need a priority</li>
+          </ul>
+          <p>
+            If an applicant is allowed back on the housing register, they will have to
+            re-register. ID and references will be required unless recently submitted.
+            Usual checks will be carried out and the appropriate band chosen.
+            Applicants will lose their original waiting time.
+          </p>
+        </div>
+      </details>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Assistance with Change of Circumstances</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>Log on using the details below if required.</p>
+          <p>Unique Reference - 1257822</p>
+          <p>Memorable date - 25/12/2012</p>
+          <p>Password - DMrm15</p>
+          <p>
+            Advisor note: You have logged in using dummy login details. Please do not
+            amend anything on screen. Log in if required using the login details above
+            and follow the instructions:
+          </p>
+          <p>Select "My Social Housing" on the left-hand side.</p>
+          <p>
+            Click "Update your details" and navigate through the form using the "Next
+            section" buttons.
+          </p>
+          <p>Please do not submit the application.</p>
+        </div>
+      </details>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Exceptions</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            The Allocations Policy advises various circumstances in which we will
+            reduce the preference given to applicants on the Housing Register or
+            prevent them from joining the register. These include circumstances such
+            as rent arrears or past/current anti-social behaviour.
+          </p>
+          <p>
+            An Exception Request allows us to make decisions on whether it is
+            appropriate to waive these restrictions in exceptional circumstances, such
+            as awarding a priority or when an applicant wishes to move to more
+            suitable accommodation using their waiting time due to a change in
+            circumstances.
+          </p>
+          <p>
+            Applicants must demonstrate exceptional circumstances and prove that they
+            have taken action to rectify issues that led to reduced preference or
+            disqualification.
+          </p>
+        </div>
+      </details>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Name Changes</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            Present three proof documents to a housing office or First Point, where ID
+            will be copied and saved. The name will be updated in our system.
+          </p>
+          <p>
+            Alternatively, send the name change in writing along with proof
+            (originals, not photocopies) to RegistrationID@sheffield.gov.uk.
+          </p>
+        </div>
+      </details>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Split Applications</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <h3>Main Applicant</h3>
+          <p>
+            To remove a joint applicant, you must do this online at the Property Shop
+            website.
+          </p>
+          <h3>Joint Applicant</h3>
+          <p>
+            Speak to the Registration team to remove your National Insurance Number.
+            You will need to submit a new application and confirm the removal from the
+            previous application.
+          </p>
+        </div>
+      </details>
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "repairs_and_investment_information_provided" },
+    { typeKey: "repairs_and_investment_information_requested" },
+    { type: "Apply", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing", "Rehousing"] },
+    { date: "14/10/2024", name: "Omily Parkin" }
+  );
+  
+  const applyForRehousing = new ContentH(
+    "applyForRehousing",
+    "Rehousing",
+    "Apply for rehousing",
+    `
+      <p>
+        To apply for Social Housing you need to do so via the Property Shop website.
+        There are no paper application forms.
+      </p>
+      <p>Go online and register on www.sheffieldpropertyshop.org.uk</p>
+      <p>
+        Before you can complete an application to join the Housing Register you will
+        need to register yourself as a new household on the system.
+      </p>
+      <p>
+        Once registered you will be able to complete an application form to join the
+        Housing Register.
+      </p>
+      <p>
+        You must produce proof of ID (and Child Benefit if appropriate) and a landlord
+        reference (if you are not already a Council tenant) at the same time,
+        documents can be uploaded via the website or at your local housing office or
+        First Point before your application will be validated.
+      </p>
+    `,
+    { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+    { typeKey: "repairs_and_investment_information_provided" },
+    { typeKey: "repairs_and_investment_information_requested" },
+    {
+      type: "Request",
+      keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
+      categories: ["Housing", "Rehousing"],
+    },
+    { date: "23/09/2024", name: "Shahzad Athar" }
+  );
+  
+  const rehousing = new MenuH(
+    "rehousing",
+    "Rehousing",
+    "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
+    [
+      applyForRehousing,
+      applicationChanges,
+      housingAssociations,
+      eligibility,
+      bidding
+    ]
+  );
+  
+  const blockedBinChutes = new ContentH(
+    "blockedBinChutes",
+    "Blocked Bin Chutes",
+    "Bin chutes in Council flats or maisonettes may become blocked and will be unblocked upon request",
+    `
+      <p>
+        Bin chutes in Council flats or maisonettes may become blocked and will be
+        unblocked upon request.
+      </p>
+      <p>
+        Open the blocked chutes list from the button below, and use the search, is the
+        property on the list?
+      </p>
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "Report",
+      keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
+      categories: ["Housing", "Estates and Environments"],
+    },
+    { date: "14/10/2024", name: "Omily Parkin" }
+  );
+  
+  const communalCupboard = new ContentH(
+    "communalCupboard",
+    "Communal Cupboard and Meter Box Cupboard",
+    "Information about communal cupboard and meter box cupboards.",
+    `
+      <p>
+        Meter boxes cupboard can be inside or outside of the property and the keyhole
+        will be triangular in shape. These will need to purchased from a hardware
+        store as we cannot provide one.
+      </p>
+      <p>
+        If the keyhole is not triangular then it is likely to be cupboard in the
+        communal area. These cupboards may contain more than one gas/electric meter
+        and they mostly require a T1 Key that is held in the local Area office.
+      </p>
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "repairs_and_investment_information_provided" },
+    { typeKey: "repairs_and_investment_information_requested" },
+    {
+      type: "Information",
+      keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
+      categories: ["Housing", "Estates and Environments"],
+    },
+    { date: "14/10/2024", name: "Omily Parkin" }
+  );
+  
+  const communalFireSafety = new ContentH(
+    "communalFireSafety",
+    "Communal Fire Safety",
+    "Information about communal fire safety regulations and guidelines.",
+    `
+      <p>
+        Under the Regulatory Reform Order (2005), landlords are required to ensure
+        that fire risk assessments are carried out in any shared areas of any
+        properties they manage. Landlords also need to ensure that any fire escape
+        routes and entrances/exits to properties are clear from trip hazards and items
+        which would prevent exit from the building in the event of an emergency.
+      </p>
+      <p>As such, please do not place in the communal area, items such as:</p>
+      <ul>
+        <li>Chairs and tables</li>
+        <li>Bookcases</li>
+        <li>Loose carpets</li>
+        <li>Curtains, blinds or net curtains</li>
+        <li>Plastic flower pots</li>
+        <li>Petrol containers and gas bottles</li>
+        <li>
+          Motorbikes, mopeds or any other equipment which uses petrol/diesel or gas
+        </li>
+      </ul>
+      <p>
+        If any of these items, or any other item which is felt to be a fire risk, are
+        left in your communal area we will ask residents to remove them. If they
+        remain they will be removed.
+      </p>
+      <p>
+        Bicycles, prams, pushchairs and similar items will not normally be permitted
+        to be stored or located within the internal communal parts unless there is an
+        area capable of storage without causing obstruction.
+      </p>
+      <p>
+        You can have a small doormat if it is rubber backed. Edged and trimmed natural
+        plants in ceramic, earthenware or metal pots, as long as they are not placed
+        on stairs or landings which are the means of escape from the building.
+      </p>
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "repairs_and_investment_information_provided" },
+    { typeKey: "repairs_and_investment_information_requested" },
+    {
+      type: "Information",
+      keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
+      categories: ["Housing", "Estates and Environments"],
+    },
+    { date: "14/10/2024", name: "Omily Parkin" }
+  );
+  
+  const gardenPledgeScheme = new ContentH(
+    "gardenPledgeScheme",
+    "Garden Pledge Scheme",
+    "Information about Garden Pledge Scheme and gardening services",
+    `
+      <p>
+        The Garden Pledge Scheme ceased to operate in April 2023 as highlighted below
+      </p>
+      <p>
+        Due to substantial financial pressures within the Housing Revenue Account, we
+        have unfortunately had to consider reducing or stopping some services to
+        customers in order to invest in others. Last year the Garden Pledge Scheme was
+        put forward as a potential saving and following full Council on 20th February
+        2023 a decision was taken by Members to end this service on the 31st of March
+        2023.
+      </p>
+      <p>
+        This means that the annual garden visits that customers currently on the
+        scheme receive will not continue. If you haven’t already you will shortly
+        receive a letter with further information and containing details about third
+        party organisations who may be able to offer support with your garden, please
+        note that these organisations may charge for their services and are not linked
+        to Sheffield City Council in any way.
+      </p>
+      <p>
+        We appreciate this decision will be disappointing to you and that you may have
+        questions.
+      </p>
+      <p>
+        List of Gardening Services:
+        <a
+          href="G:\CEX\Corp Res\CS-Gen\Contact Centre\CRM Spreadsheets\Estates\Garden\Alternative Garden Services List.xls"target="_blank">Alternative Garden Services List (G:\CEX\Corp Res\CS-Gen\Contact Centre\CRM Spreadsheets\Estates\Garden\Alternative Garden Services List.xls)</a>
+        - (This list can be provided to customers (emailed, posted, etc.))
+      </p>
+      <p>
+        Please note, these companies are not endorsed by Sheffield City Council. The
+        inclusion of these companies on this list does not mean that they have been
+        recommended or vetted by Sheffield City Council.
+      </p>
+      <p>
+        The Government also has a website which lists local, trustworthy and reliable
+        tradesmen, operating to Government endorsed standards
+        <a href="http://www.trustmark.org.uk/ "target="_blank"
+          >http://www.trustmark.org.uk</a
+        >.
+      </p>
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "repairs_and_investment_information_provided" },
+    { typeKey: "repairs_and_investment_information_requested" },
+    {
+      type: "Information",
+      keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
+      categories: ["Housing", "Estates and Environments"],
+    },
+    { date: "09/10/2024", name: "Elliott Griffiths" }
+  );
+  
+  const fencesCouncilHousing = new ContentH(
+    "fencesCouncilHousing",
+    "Fences (Council Housing)",
+    "Installation, repair and removal of fences",
+    `
+      <h3>New Fence</h3>
+      <p>
+        Installation of fences is the tenants responsibility. The customer will need
+        to have permission to install a new fence.
+      </p>
+      <h3>Repair to an Existing Fence</h3>
+      <p>
+        The Council do not repair tenants' fences. It is the tenant's responsibility.
+      </p>
+      <h3>Fallen Fence to be Removed</h3>
+      <p>
+        Estate Services teams will only remove blown down fences if they are a safety
+        hazard.
+      </p>
+    `,
+    { buttonLabel: "Report Housing Fences", formName: "hou_sustainment_fence" },
+    { typeKey: "repairs_and_investment_information_provided" },
+    { typeKey: "repairs_and_investment_information_requested" },
+    {
+      type: "Information",
+      keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
+      categories: ["Housing", "Estates and Environments"],
+    },
+    { date: "09/10/2024", name: "Elliott Griffiths" }
+  );
+  
+  const newAndExistingRepairs = new ContentH(
+    "newAndExistingRepairs",
+    "New and Existing Repairs",
+    "Description",
+    `<h3>Leaseholder Repairs</h3> 
+  
+  <p>You are responsible for repairs within your own flat or home, and should make your own arrangements for these.
+   If you, or someone you have employed, are carrying out repairs inside your flat, 
+   you must make sure that no damage is done to communal areas or to the structure of the building. 
+   You are liable for any damage caused to the building as it is owned by Sheffield City Council, 
+   and you will have to pay for any such damage. This includes any damage caused by visitors or other members of your household.
+   </p> 
+  
+  <p>Sheffield City Council will continue to carry out all external fabric and communal/shared 
+  repairs to the block in which you live. You do not have the authority to carry out repairs in shared areas, 
+  and you would not be covered by Sheffield City Council insurance if you had an accident or caused any damage. 
+  Only Sheffield City Council may carry out this type of work.</p> 
+  
+  <p>Leaseholders receive a service charge bill each year for their proportion of the cost of carrying out external fabric 
+  and communal/shared repairs to the block in which they live.</p> 
+    
+    
+    `,
+    { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+    { typeKey: "repairs_and_investment_information_provided" },
+    { typeKey: "repairs_and_investment_information_requested" },
+  
+    { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
+    { date: "10/10/2024", name: "George Whitehouse" }
+  );
+  
+  const chaseProgressOfAdaptation = new ContentH(
+    "chaseProgressOfAdaptation",
+    "Chase Progress of Adaptation",
+    "Description",
+    `
+  <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Chase Progress of Adaptation</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <details class="details-accordion">
+            <summary>Different Utility supplier</summary>
             <div class="details-accordion-content">
 <p>
       The homes we offer through our First Come First Served scheme are properties
@@ -3148,10 +3568,1295 @@ const applicantPlacedInAPriorityBand = new ContentH(
 );
 
 const applicationChanges = new ContentH(
-  "applicationChanges",
-  "Application Changes",
-  "Info on updating housing applications, submitting ID/proof, annual renewals, restrictions, exceptions, and disqualification rules.",
+    "applicationChanges",
+    "Application Changes",
+    "Info on updating housing applications, submitting ID/proof, annual renewals, restrictions, exceptions, and disqualification rules.",
+    `
+      <p>
+        Change of circumstances are now online. When you are making changes, remember
+        to click 'Submit'. ID/References may also need to be submitted before any
+        changes are accepted.
+      </p>
+      <p>
+        It is very important that you notify us of any changes in your circumstances
+        so that we can amend your application. We will inform you if this results in
+        your application moving to a different band. Depending on the change you have
+        made, you may be required to resubmit your identification/reference before
+        changes are accepted. We will notify you if this is necessary.
+      </p>
+      <p>
+        If the customer has made recent changes, the changes are likely to be awaiting
+        approval, and no further changes can be made until they are approved.
+      </p>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Accepted ID</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            You must provide two forms of identification to prove changes to your
+            application. One must be from the Proof of ID documents list, while the
+            second must provide proof of your current UK address. Photo ID is also
+            required to prove your identity. If you do not have photo ID, you must
+            provide a passport-sized photo accompanied by a birth certificate. Proof
+            of child benefit is only required where children under 16 years of age are
+            being rehoused with you.
+          </p>
+          <h3>Proof of ID documents</h3>
+          <ul>
+            <li>Marriage certificate</li>
+            <li>Divorce/Annulment papers</li>
+            <li>
+              Passport (this can be expired, but if the customer is an adult, an adult
+              passport must be produced)
+            </li>
+            <li>
+              Deed poll documentation for name changes (to accompany details of former
+              name, if applicable)
+            </li>
+            <li>Current bus pass with photograph</li>
+            <li>UK resident permit</li>
+            <li>ID card issued by EEA/EU countries</li>
+            <li>Home Office standard acceptance letter</li>
+            <li>Immigration status document</li>
+            <li>NASS 35</li>
+            <li>Citizenship card (with hologram and photo to prove age)</li>
+            <li>Medical card</li>
+            <li>Birth certificate/Adoption certificate</li>
+            <li>Letter from Social Worker/Probation Officer/Solicitor</li>
+            <li>Driving licence</li>
+          </ul>
+          <h3>Proof of Address</h3>
+          <ul>
+            <li>Recent utility bill paid in that person’s name (last quarter)</li>
+            <li>Most recent council tax statement</li>
+            <li>Driving licence</li>
+            <li>Home Office standard acceptance letter</li>
+            <li>Letter from DWP for tax credits</li>
+            <li>Bank statement from within the last 3 months</li>
+            <li>Wage slip from current employer</li>
+            <li>Life assurance/Insurance policies</li>
+            <li>Proof of all other benefits</li>
+          </ul>
+          <h3>Proof of Child Benefit</h3>
+          <ul>
+            <li>Child benefit award letter</li>
+            <li>
+              The last 3 consecutive months of bank statements (Only where the award
+              letter is not available)
+            </li>
+          </ul>
+        </div>
+      </details>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Annual Renewal</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            Under the Allocation Policy, customers will be required to update their
+            application on the anniversary of the date they registered.
+          </p>
+          <p>
+            If applications are not renewed within 42 days when requested, the
+            application may be cancelled.
+          </p>
+          <p>
+            Customers won’t need to submit ID for any changes they make, and this will
+            continue for the time being. This will change in the future.
+          </p>
+          <details class="details-accordion">
+            <summary>
+              Instructions for completing the renewal of your Housing Application
+              online
+            </summary>
+            <div class="details-accordion-content">
+              <p>
+                Log onto our website at www.sheffieldpropertyshop.org.uk and follow
+                the links from the homepage.
+              </p>
+              <p>Click ‘Log into my account’.</p>
+              <p>
+                Enter your login details: Your unique reference number (found on the
+                enclosed letter), your memorable date, and your password. Contact us
+                if you need these.
+              </p>
+              <p>
+                Once logged in, click ‘Update my details’ under the ‘Application
+                renewal required’ heading. Check your information carefully, confirm
+                that the details are correct, and submit the form. You must submit the
+                form even if there are no changes.
+              </p>
+            </div>
+          </details>
+        </div>
+      </details>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Disqualification/Restriction</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            The Allocations Policy advises of various circumstances where we will
+            reduce the preference given to applicants on the Housing Register or
+            prevent them from joining the register. These include circumstances such
+            as rent arrears or past/current anti-social behaviour.
+          </p>
+          <p>
+            In the most serious debt cases, the Allocations Policy allows us to place
+            applicants into Band E or disqualify a customer from the Housing Register
+            for an initial period of 12 months.
+          </p>
+          <p>A customer can apply for a restriction to be removed if:</p>
+          <ul>
+            <li>
+              They are able to evidence that their behaviour has significantly improved
+              (e.g., paying off arrears in full)
+            </li>
+            <li>They appeal the restriction (disqualification) within 21 days</li>
+            <li>They have exceptional circumstances</li>
+            <li>They need a priority</li>
+          </ul>
+          <p>
+            If an applicant is allowed back on the housing register, they will have to
+            re-register. ID and references will be required unless recently submitted.
+            Usual checks will be carried out and the appropriate band chosen.
+            Applicants will lose their original waiting time.
+          </p>
+        </div>
+      </details>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Assistance with Change of Circumstances</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>Log on using the details below if required.</p>
+          <p>Unique Reference - 1257822</p>
+          <p>Memorable date - 25/12/2012</p>
+          <p>Password - DMrm15</p>
+          <p>
+            Advisor note: You have logged in using dummy login details. Please do not
+            amend anything on screen. Log in if required using the login details above
+            and follow the instructions:
+          </p>
+          <p>Select "My Social Housing" on the left-hand side.</p>
+          <p>
+            Click "Update your details" and navigate through the form using the "Next
+            section" buttons.
+          </p>
+          <p>Please do not submit the application.</p>
+        </div>
+      </details>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Exceptions</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            The Allocations Policy advises various circumstances in which we will
+            reduce the preference given to applicants on the Housing Register or
+            prevent them from joining the register. These include circumstances such
+            as rent arrears or past/current anti-social behaviour.
+          </p>
+          <p>
+            An Exception Request allows us to make decisions on whether it is
+            appropriate to waive these restrictions in exceptional circumstances, such
+            as awarding a priority or when an applicant wishes to move to more
+            suitable accommodation using their waiting time due to a change in
+            circumstances.
+          </p>
+          <p>
+            Applicants must demonstrate exceptional circumstances and prove that they
+            have taken action to rectify issues that led to reduced preference or
+            disqualification.
+          </p>
+        </div>
+      </details>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Name Changes</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            Present three proof documents to a housing office or First Point, where ID
+            will be copied and saved. The name will be updated in our system.
+          </p>
+          <p>
+            Alternatively, send the name change in writing along with proof
+            (originals, not photocopies) to RegistrationID@sheffield.gov.uk.
+          </p>
+        </div>
+      </details>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Split Applications</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <h3>Main Applicant</h3>
+          <p>
+            To remove a joint applicant, you must do this online at the Property Shop
+            website.
+          </p>
+          <h3>Joint Applicant</h3>
+          <p>
+            Speak to the Registration team to remove your National Insurance Number.
+            You will need to submit a new application and confirm the removal from the
+            previous application.
+          </p>
+        </div>
+      </details>
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "repairs_and_investment_information_provided" },
+    { typeKey: "repairs_and_investment_information_requested" },
+    { type: "Apply", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing", "Rehousing"] },
+    { date: "14/10/2024", name: "Omily Parkin" }
+  );
+  
+  const refunds = new ContentH(
+    "refunds",
+    "Refunds",
+    "Description",
+    `
+  
+  <p>Pay As You Go refunds are not made unless the tenant has vacated the property.<br>
+  Once their rent account has been closed, customers are entitled to a full refund as long as their remaining 
+  Pay As You Go balance is £10.00 or greater please ask the tenant to call Home Ownership 
+  and Revenues Unit on 0114 27 35595 once their rent account has been closed. </p>
+  
+  
+    `,
+    { buttonLabel: "Report Rents Refunds ", formName: "hou_rents_refunds" },
+    { typeKey: "repairs_and_investment_information_provided" },
+    { typeKey: "repairs_and_investment_information_requested" },
+    { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
+    { date: "10/10/2024", name: "George Whitehouse" }
+  );
+  
+  
+  const generalCouncilHousing = new ContentH(
+    "generalCouncilHousing",
+    "General Council Housing",
+    "Description",
+    `
+  <h3>Area Office Information</h3>
+  <p><a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices="target="_blank">Neighbourhood Offices</a></p>
+  
+  <h3>Bogus Callers</h3>
+  <p>All Council Housing Service staff, surveyors, and contractors carry identification cards at all times. It is important that you always ask to see identification before you let anyone into your home. If you have any doubts about a caller’s identity, do not let them in.</p>
+  
+  <p>Council Officers NEVER ask a household for cash on the doorstep. You should always be alert to protect yourself against bogus callers. If you are suspicious about any caller’s identity, you should call the police immediately. </p>
+  
+  <p>Give the option to search for team contact details and to report by case (but remind to phone the police).</p>
+  
+  <h3>Housing Service Contact Details</h3>
+  <p>You can write to us at: <br>
+  <address>
+  Sheffield Council Housing Service <br>
+  PO Box 5967 <br>
+  Sheffield <br>
+  S2 9GH
+  </address> 
+  </p>
+  
+  <h3>Telephone Directory</h3>
+  
+  <p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx"target="_blank">Telephone Directory</a></p>
+  
+  
+    `,
+    { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+    { typeKey: "repairs_and_investment_information_provided" },
+    { typeKey: "repairs_and_investment_information_requested" },
+    {
+      type: "Information",
+      keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
+      categories: ["Housing", "Estates and Environments"],
+    },
+    { date: "09/10/2024", name: "Elliott Griffiths" }
+  );
+  
+  const leaseholderInformation = new ContentH(
+    "leaseholderInformation",
+    "Leaseholder Information",
+    "Leaseholder responsibilities, service charges, and subletting",
+    `
+      <p>
+        If you live in an ex-Council flat or maisonette property you are a leaseholder
+        of Sheffield City Council.
+      </p>
+      <p>
+        As a landlord, the Council are responsible for calculating and issuing bills to leaseholders.
+        These may be for service charges and similar costs, as well as for major works.
+      </p>
+      <p>
+        The Council are only responsible for communal repairs; Leaseholders are responsible
+        for repairs within their own property.
+      </p>
+      <h3>What service charges cover</h3>
+      <p>
+        Service charges cover all works and services carried out to the structure of the block and communal
+        areas, including cleaning of communal areas, lighting, lift maintenance and upkeep of gardens. It also
+        covers day-to-day repairs, maintenance and improvement work.
+      </p>
+      <h3>Cost of service charges</h3>
+      <p>
+        Service charges for leaseholders are paid annually and vary depending on the cost incurred to the
+        block during the service charge year, which runs from 1st October to 30th September. Customers will
+        pay a share of the costs calculated for their block. For example; if there are 8 dwellings in a block,
+        service charges will amount to 1/8th of the total cost.
+      </p>
+      <h3>Difficulty paying service charge</h3>
+      <p>
+        Leaseholders can now pay service charges by instalments, spreading the cost over 12 months.
+      </p>
+      <p>
+        For larger items of work commanding higher costs, Leaseholders should contact the Council to discuss tailored repayment options.
+      </p>
+      <h3>Subletting a property</h3>
+      <p>
+        As a leaseholder you have the right to sublet your home. This means that you may take in lodgers or rent your home to someone else, if you want to.
+      </p>
+      <p>
+        You will also need to advise your mortgage lender if you do rent out your home.
+      </p>
+      <p>
+        You will remain responsible for ensuring that the terms of the lease are complied with and you will remain liable for any breaches,
+        regardless of whether the breaches are committed by you, your sub-tenant or other parties connected to your sub-tenant.
+        You will therefore be responsible for the behaviour of your sub-tenant(s). This would include, for example, ensuring that they do not cause a nuisance to neighbours.
+      </p>
+    `,
+    { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+    { typeKey: "repairs_and_investment_information_provided" },
+    { typeKey: "repairs_and_investment_information_requested" },
+    { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
+    { date: "11/10/2024", name: "Abishai Devarapalli" }
+  );
+  
+  
+  
+  const estatesAndEnvironments = new MenuH(
+    "estatesAndEnvironments",
+    "Estates and Environments",
+    "Bin chutes, communal cupboard, fences, firesafety and garden maintenance",
+    [
+      fencesCouncilHousing,
+      gardenPledgeScheme,
+      blockedBinChutes,
+      communalCupboard,
+      communalFireSafety
+    ]
+  );
+  
+  
+  
+  const adaptations = new MenuH("adaptations", "Adaptations", "Desc tbc", [
+    chaseProgressOfAdaptation,
+    otherAdaptationRequest
+  ]);
+  
+  
+  
+  const assetManagementAndRepairs = new MenuH(
+    "assetManagementAndRepairs",
+    "Asset Management And Repairs",
+    "Description",
+    [
+      newAndExistingRepairs,
+      adaptations,
+      asbestos,
+      communalAerials,
+      communalAreas,
+      doorEntrySystems,
+      emergencyRepairs,
+      loststolenkeys,
+      programmedWorks,
+      communalAreasFireSafety,
+      tenantsOwnImprovements,
+      districtHeating,
+      emergencyCredit,
+      homeImprovementRequests,
+      homeownerDisconnection,
+      payment,
+      refunds
+    ]
+  );
+
+
+//#region Tenancy enforcement
+
+//Tenancy enforcement page to under main Housing menu i think
+
+const tenancyEnforcementASB = new ContentH(
+  "tenancyEnforcementASB",
+  "Tenancy Enforcement (ASB)",
+  "What ASB is, who is responsible and how to report and Sanctuary scheme",
+  `<p><h3>Anti-social Behaviour</h3>
+<p>Anti-social behaviour is behaviour which is capable of causing nuisance, annoyance, harassment, alarm or distress to an individual or community. This could range from a relatively minor issue to serious criminal activity. We do not adopt a single definition of anti-social behaviour but instead consider each report based on the circumstances.</p>
+<p>Examples of behaviours we may consider to be anti-social are:</p>
+<ul>
+<li> Playing excessively loud music/television/video games</li>
+<li>Threatening or verbally abusing another person</li>
+<li> Damaging property</li>
+<li> Attacking another person</li>
+<li> Failing to control a pet / banned breed pet</li>
+<li> Misusing drugs or alcohol</li>
+<li> Incorrect disposal of rubbish</li>
+</ul>
+<p>Examples of behaviours we may not consider to be anti-social are:</p>
+<ul>
+ <li>Reasonable household noise</li>
+<li> Carrying out DIY at reasonable times</li>
+<li> Babies crying</li>
+<li> A one-off party if noise was the only issue and it is unlikely to be repeated</li>
+<li> Children playing (including ball games)</li>
+</ul>
+<h3>Police responsibility</h3>
+<p>South Yorkshire Police are responsible for dealing with any behaviour or activity which results in a criminal offence being committed.</p>
+<p>Where the perpetrator is an SCC tenant the Tenancy Enforcement and Sustainment Team (TEST) will work closely with SYP to ensure that any appropriate enforcement action is taken by the council.</p>
+<p>We feel, it is not appropriate to list specific incidents that Police deal with as this may result in the issue just being reported to police and not being routed to appropriate SCC teams who may also need to look at enforcement action.</p>
+<h3>Council Responsibility</h3>
+<p>We are responsible for incidents involving:</p>
+<ul>
+<li>abandoned vehicles</li>
+<li>dead animals</li>
+<li>dog fouling</li>
+<li>fly posting</li>
+<li> dumped, fly-tipped waste</li>
+<li>inoffensive graffiti</li>
+<li>non-hate crime graffiti</li>
+<li>littering</li>
+<li>lost, stray or barking dogs</li>
+<li>noise nuisance or DIY related noise (We cannot log anonymous complaints about noise as we rely on evidence from the complainant, and observations at the complainant&rsquo;s home, to evaluate whether the noise is a statutory nuisance).</li>
+<li>syringes or needles</li>
+<li>dumped, fly-tipped waste (nobody present)</li>
+<p>Please note that although all of the above are issues that the council will deal with, only noise nuisance and possibly barking dogs are generally dealt with by TEST (where it is a SCC tenant) A number of other teams are involved in managing these issues including Environmental services and Estates teams etc..</p>
+<h3>Hate Crime</h3>
+<h4>What is hate crime?</h4>
+<p>Hate Crime is any criminal offence committed against a person or property that is motivated by an offender’s hatred of someone because of their Disability, Race, Religion or Beliefs, Sexual Orientation or Transgender.</p>
+<p>Crimes committed against someone because of their disability, transgender-identity, race, religion or belief, or sexual orientation are hate crimes and should be reported to the police.</p>
+<p>Hate crimes can include:</p>
+<ul>
+<li>threatening behaviour</li>
+<li>assault</li>
+<li>robbery</li>
+<li>damage to property</li>
+<li>inciting others to commit hate crimes</li>
+<li>harassment</li>
+<li>online abuse</li>
+</ul>
+<h4>How to report Hate Crime</h4>
+<p>Anyone experiencing Hate Crime should report this to South Yorkshire Police, this can be done via 101 or via 999 if a crime is in progress or someone is in immediate danger. Hate Crime should also be reported to SCC, the Neighbourhood Team/ TEST who will work closely with Police and establish if any enforcement action against perpetrators is appropriate.</p>
+<li>robbery</li>
+<li>damage to property</li>
+<li>inciting others to commit hate crimes</li>
+<li>harassment</li>
+<li>online abuse</li>
+</ul>
+<h3>Sanctuary Scheme/Target hardening</h3>
+<p>Service Area: Action Domestic Abuse (Sanctuary Scheme)</p>
+<p>Telephone Number: Helpline No: 08088 082 241; Office No. 0114 270 6999</p>
+<p>Email Address: sanctuary.scheme@actionorg.uk</p>
+<p>South Yorkshire Fire and Rescue Service can fit blank letter boxes if there are concerns regarding harmful items being posted through the door. The Neighbourhood Officer can make a referral to SYF&amp;R for a Home Safety check.</p>
+<p>Neighbourhood Teams may have stock of target hardening equipment.</p>
+<p>Victim Support may support with target hardening.</p>
+  </p>`,
+  {buttonLabel: "Example 1", formName: "example_form" },
+  {typeKey: "example_transfered_to_service" },
+  {typeKey: "example_information_provided" },
+  {type: "Request", keywords: [], categories: ["Housing"] },
+  {date: "16/10/2024", name: "Omily Parkin" }
+  );
+
+
+//Application Changes page to be under the Rehousing menu
+
+
+const indoorCommunalAreas = new ContentH(
+  "indoorCommunalAreas",
+  "Indoor Communal Areas",
+  "TBC",
+  `<h3>Blocked Bin Chutes</h3>
+<p>Bin chutes in Council flats or maisonettes may become blocked and will be unblocked upon request.</p>
+  <><p>Open the blocked chutes list from the button below, and use the search, is the property on the list?<br>
+    <h3>Communal Cupboard and Meter Box Cupboard</h3>
+    ,p>Meter boxes cupboard can be inside or outside of the property and the keyhole will be triangular in shape. These will need to purchased from a hardware store as we cannot provide one.</></p><p>If the keyhole is not triangular then it is likely to be cupboard in the communal area. These cupboards may contain more than one gas/electric meter and they mostly require a T1 Key that is held in the local Area office.&quot;</p>
+    <h3>Communal Fire Safety </h3>
+    <p>Under the Regulatory Reform Order (2005), landlords are required to ensure that fire risk assessments are carried out in any shared areas of any properties they manage. Landlords also need to ensure that any fire escape routes and entrances/exits to properties are clear from trip hazards and items which would prevent exit from the building in the event of an emergency.</p><p>As such, please do not place in the communal area, items such as:</p><p>Chairs and tables<br>
+      Bookcases<br>
+        Loose carpets<br>
+          Curtains, blinds or net curtains<br>
+            Plastic flower pots<br>
+              Petrol containers and gas bottles<br>
+                Motorbikes, mopeds or any other equipment which uses petrol/diesel or gas<br>
+                  If any of these items, or any other item which is felt to be a fire risk, are left in your communal area we will ask residents to remove them. If they remain they will be removed.</p>
+                <p>Bicycles, prams, pushchairs and similar items will not normally be permitted to be stored or located within the internal communal parts unless there is an area capable of storage without causing obstruction.</p>
+                <p>You can have a small doormat if it is rubber backed. Edged and trimmed natural plants in ceramic, earthenware or metal pots, as long as they are not placed on stairs or landings which are the means of escape from the building.<br>
+                </></p>`,
+                {buttonLabel: "Example 1", formName: "example_form" },
+                {typeKey: "example_transfered_to_service" },
+                {typeKey: "example_information_provided" },
+                {type: "Apply", keywords: [], categories: ["Housing"] },
+                {date: "05/09/2024", name: "Elliott Griffiths" }
+)
+
+ //#endregion Tenancy enforcement
+
+//#region Benefits 
+
+ const contactHousingBenefits = new ContentH(
+  "contactHousingBenefits",
+  "Contact housing benefits",
+  "Description tbc",
   `
+    <p>Transfer the customer to the benefits team on the number below. If the line is busy, 
+    <strong>do not</strong> ask the customer to call back later today; instead, advise the customer to email either:</p>
+    <ul>
+        <li><a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></li>
+        <li><a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></li>
+    </ul>
+    <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html" target="_blank">https://www.sheffield.gov.uk/council-tax.html</a></p>
+    <p><strong>Service area:</strong> Sheffield Benefits Service</p>
+    <p><strong>Telephone number:</strong> 0114 27 36777</p>
+    <p><strong>Email address:</strong> <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a> or 
+    <a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></p>
+
+    <h4>Contact council tax</h4>
+    <p>Transfer the customer to the council tax team on the number below. If the line is busy, <strong>do not</strong> 
+    ask the customer to call back later today; instead, advise the customer to email either:</p>
+    <ul>
+        <li><a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></li>
+        <li><a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></li>
+    </ul>
+    <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html" target="_blank">https://www.sheffield.gov.uk/council-tax.html</a></p>
+    <p><strong>Service area:</strong> Council tax</p>
+    <p><strong>Telephone number:</strong> 0114 27 36633 (public number)</p>
+    <p><strong>Further information:</strong> Lines open 8:30-5:30</p>
+    <p><strong>Email address:</strong> <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></p>
+  `,
+
+  { buttonLabel: "Contact benefits", formName: "" },
+  { typeKey: "housing_benefits_information_provided" },
+  { typeKey: "housing_benefits_information_requested" },
+  {
+    type: "Information",
+    keywords: [
+      'Housing benefit',
+      'Housing benfit',
+      'Housing benifit',
+      'Housng benefit',
+      'Housing beneift',
+      'Housin benefit',
+      'Housing benefet',
+      'Housng benfit',
+      'Housin benifit',
+      'Housing benifits',
+      'Contact benefits',
+      'Contct benefits',
+      'Contat benefits',
+      'Contact benifits',
+      'Cntact benefits',
+      'Contct benifits',
+      'Contact benifit',
+      'Conatct benefits'
+    ],      
+    categories: ["Housing", "Benefits"],
+  },
+  { date: "05/11/2024", name: "Andy Walker" }
+);
+
+const benefitCap = new ContentH(
+  "benefitCap",
+  "Benefit cap",
+  "Description tbc",
+  `
+    <h3>Benefit cap</h3>
+    <p>View website for housing benefit cap information: <a href="https://www.gov.uk/benefit-cap" target="_blank">https://www.gov.uk/benefit-cap</a></p>
+  `,
+    { buttonLabel: "Benefit cap", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+     keywords: [
+  'Housing benefit',
+  'Housing benfit',
+  'Housing benifit',
+  'Housng benefit',
+  'Housing beneift',
+  'Housin benefit',
+  'Housing benefet',
+  'Housng benfit',
+  'Housin benifit',
+  'Housing benifits',
+  'Benefit cap',
+  'Benfit cap',
+  'Beneift cap',
+  'Benifit cap',
+  'Benfit cpap',
+  'Benfit capp',
+  'Benefitt cap'
+],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+
+const benefitClaim = new ContentH(
+    "benefitClaim",
+    "Benefit claim",
+    "Description tbc",
+    `
+      <h4>Customer is not a council tenant</h4>
+      <p>If the customer is not a council tenant, transfer them to the benefits team on the number below. If the line is busy, 
+      <strong>do not</strong> ask the customer to call back later today; instead, advise the customer to email either:</p>
+      <ul>
+          <li><a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></li>
+          <li><a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></li>
+      </ul>
+      <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html" target="_blank">https://www.sheffield.gov.uk/council-tax.html</a></p>
+      <p><strong>Service area:</strong> Sheffield Benefits Service</p>
+      <p><strong>Telephone number:</strong> 0114 27 36777</p>
+      <p><strong>Email address:</strong> <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a> or <a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></p>
+    `,
+    { buttonLabel: "Benefit claim", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+     keywords: [
+    'Housing benefit',
+    'Housing benfit',
+    'Housing benifit',
+    'Housng benefit',
+    'Housing beneift',
+    'Housin benefit',
+    'Housing benefet',
+    'Housng benfit',
+    'Housin benifit',
+    'Housing benifits',
+    'Benefit claim',
+    'Benfit claim',
+    'Beneift claim',
+    'Benifit claim',
+    'Benfit clam',
+    'Benfit claaim',
+    'Benefitt claim'
+  ],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+
+  const benefitsClawback = new ContentH(
+    "benefitsClawback",
+    "Benefits clawback",
+    "Description tbc",
+    `
+    <p>If you have been overpaid housing benefit and no longer receive it, you will receive an invoice from Sheffield Benefits Service to repay directly.
+       If you still receive housing benefit, the overpayment is recovered by reducing your weekly housing benefit.
+       This reduction, which increases your rent payable by the same amount, is called 'clawback'.
+       If you cannot afford the increase, you can appeal to Sheffield Benefits Service to have the amount reduced.</p>
+    `,
+    { buttonLabel: "Benefits clawback", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+      keywords: [
+    'Housing Benefit',
+    'Housing Benfit',
+    'Housing Benifit',
+    'Housng Benefit',
+    'Housing Beneift',
+    'Housin Benefit',
+    'Housing Benefet',
+    'Housng Benfit',
+    'Housin Benifit',
+    'Housing Benifits',
+    'Benefits clawback',
+    'Benfits clawback',
+    'Benifits clawback',
+    'Beneifts clawback',
+    'Benefits clawbak',
+    'Benfits clawbak',
+    'Benefits clawbck',
+    'Benifits clawbck'
+  ],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+
+  const benefitFraud = new ContentH(
+    "benefitFraud",
+    "Benefit fraud",
+    "Description tbc",
+    `
+      <h3>Benefit fraud</h3>
+      <p>The customer can report fraud anonymously online at: <a href="https://www.gov.uk/report-benefit-fraud" target="_blank">https://www.gov.uk/report-benefit-fraud</a></p>
+    `,
+    { buttonLabel: "Benefit fraud", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+      keywords: [
+    'Housing Benefit',
+    'Housing Benfit',
+    'Housing Benifit',
+    'Housng Benefit',
+    'Housing Beneift',
+    'Housin Benefit',
+    'Housing Benefet',
+    'Housng Benfit',
+    'Housin Benifit',
+    'Housing Benifits',
+    'Benefit fraud',
+    'Benfit fraud',
+    'Benifit fraud',
+    'Beneift fraud',
+    'Benfit fruad',
+    'Benfit fraaud',
+    'Benefitt fraud',
+    'Benifit fraaud'
+  ],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+
+  const benefitOnTwoHomes = new ContentH(
+    "benefitOnTwoHomes",
+    "Benefit on two homes",
+    "Description tbc",
+    `
+<h4>Unavoidable liability</h4>
+<p><strong>Situation:</strong> When tenants sign for a tenancy and have moved in but have a liability on another property.</p>
+<p>This is where a tenant has signed for a Council property but has a liability at another property. 
+   This usually occurs when they have to give four weeks' notice on the property 
+   they have left but are inclined to take the Council Housing Service property.</p>
+<p>To make a claim for unavoidable liability, a written request needs to be made by the tenant. 
+   As it is discretionary, they will then need to satisfy the criteria 
+   as stated on the enclosed letter within the standard 28 days of the application. 
+   For housing benefit to be paid on the Council Housing Service property, 
+   the tenants will need to be physically living at the property. 
+   If not, housing benefit cannot be paid under unavoidable liability rules.</p>
+
+<h4>Fleeing violence</h4>
+<p><strong>Situation:</strong> Where a tenant is fleeing violence and has been put into other accommodation.</p>
+<p>If someone is fleeing violence, and they state that they have an intention to return home if the threat of violence is lifted, 
+   then they can claim housing benefit on two homes if they have a rental liability at 
+   the property they are fleeing and the one that they are currently occupying.</p>
+<p>They will need to complete a housing benefit claim for both homes.</p>
+<p>To successfully claim housing benefit, they will need to confirm in writing that they have an intention 
+   to return to the property once the threat of violence is removed. 
+   They may also need to provide proof, such as a letter from the police, 
+   a crime reference number, or a letter from the Council Housing Service.</p>
+
+<h4>Benefit prior to occupation</h4>
+<p><strong>Basic principles:</strong> Benefit prior to occupation can only be paid when housing benefit is <u>not</u> being paid at any other property.</p>
+<p><strong>Situation:</strong> Tenant(s) sign for a property but there is a delay in moving into the property.</p>
+<p>A tenant(s) may qualify for up to four weeks of benefit prior to occupation if the delay in moving was 
+   reasonable and they were waiting for a social fund payment for a need connected with the move (e.g., removal expenses or help to set up home). 
+   This only applies if:</p>
+<ul>
+  <li>They have a child of five or under living with them.</li>
+  <li>They are 60 or over and neither they nor their partner are receiving Income Support (IS) or income-based Jobseeker's Allowance (JSA).</li>
+  <li>They are under 60 (or they or their partner are receiving IS or JSA) and qualify for one of the pensioner premiums or 
+      a disability, severe disability, or disabled child premium.</li>
+  <li>They were waiting for adaptations to be completed to meet needs due to a disability (must be structural, not decorative).</li>
+  <li>They became liable for payments while a hospital patient or in residential accommodation.</li>
+</ul>
+<p>Housing benefit is not paid until the tenants move in, and they should have already informed the local authority (LA) of their intent to move. 
+   A new claim must be made within four weeks of the actual move-in date.</p>
+<p>If the above criteria are not met, then a tenant will not be able to claim housing benefit until they move in.</p>
+<p>You will need to inform the tenant that if they do not move in and do not meet the above criteria, 
+   they will be liable for full rent until they move into the property.</p>
+
+<h4>In hospital</h4>
+<p>If a tenant is in hospital during the time they have signed up for the property, 
+   they will not be entitled to housing benefit until they actually move into the property.</p>
+<p>If this is the case, it can be argued that they have moved the majority of their possessions into the 
+   property and that this is their main home (as per the basic principles). 
+   However, this does not apply if they have a property elsewhere.</p>
+
+    `,
+    { buttonLabel: "Benefit on two homes", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+     keywords: [
+    'Housing Benefit',
+    'Housing Benfit',
+    'Housing Benifit',
+    'Housng Benefit',
+    'Housing Beneift',
+    'Housin Benefit',
+    'Housing Benefet',
+    'Housng Benfit',
+    'Housin Benifit',
+    'Housing Benifits',
+    'Benefits on two homes',
+    'Benfits on two homes',
+    'Benifits on two homes',
+    'Beneifts on two homes',
+    'Benefits on 2 homes',
+    'Benfits on 2 homes',
+    'Benifits on 2 homes',
+    'Benefits on too homes',
+    'Benfits on too homes',
+    'Benfits on to homes'
+  ],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+
+  const changeOfCircumstances = new ContentH(
+    "changeOfCircumstances",
+    "Change of circumstances",
+    "Description Tbc",
+    `
+      <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
+         <p>You can access this via the <a href="https://www.sheffield.gov.uk/" target="_blank">https://www.sheffield.gov.uk/</a> and follow the links to Benefits.</p>
+    `,
+    { buttonLabel: "Change of circumstances", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+      keywords: [
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Change of Circumstances',
+        'Change of Circumstances',
+        'Change of Circumstances',
+        'Change of Circumstances',
+        'Change of Circumstances',
+        'Change of Circumstances',
+        'Change of Circumstances',
+        'Change of Circumstances'
+      ],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+  
+  const localAssistanceScheme = new ContentH(
+    "localAssistanceScheme",
+    "Local Assistance Scheme",
+    "Description Tbc",
+    `
+      <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
+         You can access this via the Sheffield City Council Website and follow the links to Benefits.</p>
+    `,
+    { buttonLabel: "Local Assistance Scheme", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+      keywords: [
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Local Assistance Scheme',
+        'Local Assistance Scheme',
+        'Local Assistance Scheme',
+        'Local Assistance Scheme',
+        'Local Assistance Scheme',
+        'Local Assistance Scheme',
+        'Local Assistance Scheme'
+      ],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+  
+  const pdsa = new ContentH(
+    "pdsa",
+    "PDSA",
+    "Description Tbc",
+    `
+      <p>The Benefits Service can fax a letter to PDSA for pet treatment if the customer is on benefits.</p>
+    `,
+    { buttonLabel: "PDSA", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+      keywords: [
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'Housing Benefit',
+        'PDSA',
+        'PDSA',
+        'PDSA',
+        'PDSA',
+        'PDSA',
+        'PDSA',
+        'PDSA',
+        'PDSA'
+      ],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+  
+  const universalCredits = new ContentH(
+    "universalCredit",
+    "Universal credit",
+    "Description Tbc",
+    `
+      <p>If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
+         you may be directed to claim Universal Credit:</p>
+      <ul>
+          <li>Housing Benefit</li>
+          <li>Income-related Employment and Support Allowance (ESA)</li>
+          <li>Income-based Jobseeker's Allowance (JSA)</li>
+          <li>Child Tax Credit</li>
+          <li>Working Tax Credit</li>
+          <li>Income Support</li>
+      </ul>
+      <p>At some point in the future, many people currently on the benefits above will be moved across to Universal Credit. 
+         The Government has not yet given a date for this, but the Department for Work and Pensions 
+         will contact anyone affected before there are changes to their benefits or tax credits.</p>
+  
+      <details class="details-accordion">
+        <summary>Applying for an advance through Universal Credit</summary>
+        <div class="details-accordion-content">
+          <p>You can apply for an advance from your Universal Credit (UC), which is a loan and is paid back through your payments.</p>
+          <p>If you claim an advance which includes some of your Housing Costs, you should pay this amount towards your rent.</p>
+        </div>
+      </details>
+  
+      <details class="details-accordion">
+        <summary>Change of circumstances</summary>
+        <div class="details-accordion-content">
+          <p>Any changes to your circumstances must be reported immediately using your UC journal.</p>
+          <p>If not, you may be sanctioned and your UC payment may be less than you think.</p>
+          <p>If this happens, you will still receive your payment for the Housing Cost Element, 
+            but it is important that this is paid to the rent account to make sure you meet your obligation to SCC to pay rent.</p>
+        </div>
+      </details>
+  
+      <details class="details-accordion">
+        <summary>Council Tax and Universal Credit</summary>
+        <div class="details-accordion-content">
+          <p>Universal Credit does not include help with your Council Tax, so you must claim this separately.</p>
+          <p>You can do this at <a href="https://www.sheffield.gov.uk/benefits/council-tax-support" 
+             target="_blank">https://www.sheffield.gov.uk/benefits/council-tax-support</a>.</p>
+        </div>
+      </details>
+  
+      <details class="details-accordion">
+        <summary>How will Universal Credit affect my rent payments</summary>
+        <div class="details-accordion-content">
+          <p>Universal Credit payments are usually paid monthly, and in arrears.</p>
+          <p>You should be absolutely clear that if you claim Universal Credit, you will need to pay your full rent yourself.</p>
+          <p>You may receive Housing Costs within your UC payment that will help towards your rent, 
+             and this may change depending on the income you receive during your monthly assessment period. 
+             But regardless of this, you need to ensure your full rent payments are made.</p>
+        </div>
+      </details>
+  
+      <details class="details-accordion">
+        <summary>Notifying SCC when you start claiming Universal Credit</summary>
+        <div class="details-accordion-content">
+          <p>As all Sheffield City Council tenancies charge rent weekly, it is important that you advise us immediately if you start to claim Universal Credit.</p>
+          <p>This will allow us to discuss and agree with you arrangements about your rent payments.</p>
+        </div>
+      </details>
+  
+      <details class="details-accordion">
+        <summary>Delays before first payment</summary>
+        <div class="details-accordion-content">
+          <p>When you first claim UC, you may have to wait 5 weeks for your first payment.</p>
+        </div>
+      </details>
+  
+      <details class="details-accordion">
+        <summary>Will my Universal Credit payment date change</summary>
+        <div class="details-accordion-content">
+          <p>Your UC payment date will be the same every month unless it is due on a weekend or Bank Holiday.</p>
+          <p>If this is the case, it will be paid on the last working day before your usual payment date.</p>
+          <p>Please check your UC journal regularly as this is the way you will know what your payments will be each month.</p>
+          <p>This will also be how you usually have contact with the DWP.</p>
+        </div>
+      </details>
+  
+      <details class="details-accordion">
+        <summary>Setting up an email account and bank account for Universal Credit</summary>
+        <div class="details-accordion-content">
+          <p>You can set up an email account and bank account to receive Universal Credit online. It will also help with automatic updates and payments.</p>
+          <p>Set up your Universal Credit account online:</p>
+          <ul>
+            <li>Visit the official Universal Credit website</li>
+            <li>Fill in the application form</li>
+            <li>Submit the form and wait for further instructions</li>
+          </ul>
+        </div>
+      </details>
+    `,
+    { buttonLabel: "Universal credit", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+      keywords: [
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit',
+        'Universal Credit'
+      ],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+  
+  const welfareReform = new ContentH(
+    "welfareReform",
+    "Welfare reform",
+    "Description tbc",
+    `
+  <p>From April 2013, the government reduced the amount of housing benefit for council / housing association tenants in homes that had any spare bedrooms. 
+     This is also known as under-occupation. This change only affected people of working age.</p>
+  <p>Claimants of housing benefit and those considering a move to a new home either through:</p>
+  <ul>
+  <li>a new council or housing association tenancy</li>
+  <li>a mutual exchange, or</li>
+  <li>a transfer to another council home</li>
+  </ul>
+  <p>Need to be aware of the impact that having a home with spare bedrooms will have on their welfare benefits.</p>
+  
+  <details class="details-accordion">
+  <summary>Will these changes affect me?</summary>
+  <div class="details-accordion-content">
+    <p>This only affects people of working age, so if you are old enough to receive a state pension (of a pensionable age) then these changes will not affect you. 
+       You are likely to be affected by these changes, especially if you are a single person with two or more bedrooms, 
+       a couple with two or more bedrooms, or in a household whose children have grown up and left home.</p>
+    <p>If you are of working age you therefore need to think very carefully before bidding for a property that has more bedrooms than housing benefit will allow for, 
+       as a reduction in this would mean that you have to pay additional money towards your rent yourself. 
+       Our eligibility table gives an indication of where there is likely to be a reduction in housing benefit.</p>
+  </div>
+  </details>
+  
+  <details class="details-accordion">
+  <summary>How will the government work out if you have spare bedrooms?</summary>
+  <div class="details-accordion-content">
+    <p>The government has told us that one bedroom will be allowed for each person, or couple with the following exceptions:</p>
+    <ul>
+      <li>Children aged 16 or under will be expected to share with another child of the same sex.</li>
+      <li>Children aged 10 and under will be expected to share with another child regardless of their sex.</li>
+    </ul>
+  </div>
+  </details>
+  
+  <details class="details-accordion">
+  <summary>How much will my housing benefit be reduced by?</summary>
+  <div class="details-accordion-content">
+    <p>If you have one spare bedroom you are likely to lose 14% of your weekly housing benefit and if you have two spare bedrooms you could lose 25%. 
+       This means that you will have to pay the extra money towards the rent yourself.</p>
+  </div>
+  </details>
+  
+  <details class="details-accordion">
+  <summary>What considerations should I make when bidding for a new property?</summary>
+  <div class="details-accordion-content">
+    <p>If you are currently looking for a new home you must consider very carefully the size of the home you want to move to. 
+       Remember if you are of working age and receiving housing benefit, this might be reduced if you move to a home which is too big for you.</p>
+  </div>
+  </details>
+  
+  <details class="details-accordion">
+  <summary>How can I move to a smaller home?</summary>
+  <div class="details-accordion-content">
+    <p>There may be a number of options available to you:</p>
+    <ul>
+      <li>You could exchange your current home with another tenant who wants to move. This is called a mutual exchange.</li>
+      <li>You could be awarded a rehousing priority under the SMARTMOVE scheme to move to a smaller more manageable home if you are currently living in a high demand council / housing association property.</li>
+      <li>You can move to another council/housing association property by bidding for the available homes which we advertise each week.</li>
+    </ul>
+  </div>
+  </details>
+  
+  <details class="details-accordion">
+  <summary>Are adapted properties exempt?</summary>
+  <div class="details-accordion-content">
+    <p>Adapted properties are not exempt from the welfare reform and extra bedroom charge.</p>
+  </div>
+  </details>
+  
+  <details class="details-accordion">
+  <summary>If there is a couple, one of a pensionable age and the other not, will they be affected by benefit changes next year?</summary>
+  <div class="details-accordion-content">
+    <p>Generally speaking, pensionable aged persons are exempt from the welfare reforms. However, 
+       when there is a couple & one isn’t of pensionable age it is not as straightforward, it will be dependent on what DWP benefit they are receiving.</p>
+  </div>
+  </details>
+  
+  <details class="details-accordion">
+  <summary>Furnished properties change</summary>
+  <div class="details-accordion-content">
+    <p>Where a property is furnished and under occupied they lose the HB granted for the furniture charge. 
+       The % reduction is applied to the net rent and the furniture charge too.</p>
+  </div>
+  </details>
+  
+  <details class="details-accordion">
+  <summary>Benefit cap</summary>
+  <div class="details-accordion-content">
+    <p>The DWP have announced that the benefit cap (overall level of combined benefits and credits a workless household (with no disability benefits) 
+       can receive to around £384.62/week for lone parents/couples outside London, or £257.69/week for single people outside London) 
+        will not be introduced nationally in April but are expecting it to be in place across the country by September, 
+        we will update our information as we know more.</p>
+  </div>
+  </details>
+  
+  <details class="details-accordion">
+  <summary>Spare room subsidy exemption</summary>
+  <div class="details-accordion-content">
+    <p>For tenants to be exempt from the spare room subsidy, they must have been continuously entitled to housing benefit since 
+       at least 1 January 1996 and occupied the same dwelling since that date, save for any period where a 
+       fire, flood, explosion or natural catastrophe has rendered the property uninhabitable.</p>
+    <p>These provisions apply if there has been a break in entitlement of no more than 4 weeks, or if there has been a break of entitlement of 
+       no more than 52 weeks if the claimant or their partner is a welfare to work beneficiary.</p>
+    <p>Note: it may be the case that the protection has been inherited by a tenant where they have succeeded a tenancy.</p>
+    <p>The DWP are going to amend the regulations to remove this exemption. However, until the legislation is amended, 
+       customers who meet the criteria are exempt from the spare room subsidy.</p>
+    <p>An application form must be completed by the customer and returned to the benefits service.</p>
+  </div>
+  </details>
+  `,
+    { buttonLabel: "Welfare reform", formName: "" },
+    { typeKey: "housing_benefits_information_provided" },
+    { typeKey: "housing_benefits_information_requested" },
+    {
+      type: "Information",
+      keywords: [
+        'Housing Benefit',
+        'Housing Benfit',
+        'Housing Benifit',
+        'Housng Benefit',
+        'Housing Beneift',
+        'Housin Benefit',
+        'Housing Benefet',
+        'Housng Benfit',
+        'Housin Benifit',
+        'Housing Benifits',
+        'Welfare reform',
+        'Wlfare reform',
+        'Welfare refrom',
+        'Welfar reform',
+        'Welfare reforrm',
+        'Welfere reform',
+        'Welfare reformm',
+        'Welfare reformz',
+        'Welfer reform'
+      ],  
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "05/11/2024", name: "Andy Walker" }
+  );
+  
+  const housingBenefits = new MenuH(
+    "housingBenefits",
+    "Housing benefits",
+    "Information about housing benefits",
+    [
+      contactHousingBenefits,
+      benefitCap,
+      benefitClaim,
+      benefitsClawback,
+      benefitFraud,
+      benefitOnTwoHomes,
+      changeOfCircumstances,
+      localAssistanceScheme,
+      pdsa,
+      universalCredits,
+      welfareReform 
+    ]
+  );  
+
+//#endregion Benefits
+
+  //#region Rents
+  
+  //apply for Housing Rent to be under Rent menu
+  const arrearsorDebt = new ContentH(
+    "arrearsorDebt",
+    "Court Order Removal of",
+    "Removal of a Court Order from your rent account,",
+    `
+      <p>
+        If you would like the removal of a Court Order from your rent account, or to pay for the removal 
+        of the Court Order, then you can either apply direct to the court, or speak to our Court Team.  
+        You will require your court reference number.
+      </p>
+      <p>
+        If the Court Team are happy for the Order to be removed, they will send a letter to the court 
+        advising the court that that they do not oppose the removal.
+      </p>
+    `,
+    { buttonLabel: "Arrears or Debt", formName: "Rents" },
+    { typeKey: "rents_information_provided" },
+    { typeKey: "rents_transfered_to_service" },
+    { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
+    { date: "16/10/2024", name: "Shahzad Athar" }
+  );
+  
+  const balanceEnquiry = new ContentH(
+    "balanceEnquiry",
+    "Balance Enquiry",
+    "Information about rent balance enquiry,",
+    `
+    <p>
+    You can now check your own balance and rent account online by logging onto 
+    <a href="https://www.sheffield.gov.uk/home/council-housing/check-my-rent-balance">this page</a>.
+    </p> 
     <p>
       Change of circumstances are now online. When you are making changes, remember
       to click 'Submit'. ID/References may also need to be submitted before any
@@ -5734,3 +7439,1756 @@ const housing = new ServiceH(
     shelteredAndSupported,
   ]
 );
+    const references = new ContentH(
+    "references",
+    "References",
+    "Information about Rents References,",
+    `
+    <p>IMFIT (Rents) can provide a financial reference for you. Your Neighbourhood Support Team can provide a Tenancy Reference.
+    </p>
+    <p>
+    Both of these may be subject to charges before the reference is returned.
+    </p>
+    <p>
+    If this is for a mortgage company or a private landlord, the company needs to put this request in writing. There is a charge for this of £60, which must be paid to IMFIT before the reference is returned. The fee can be paid by debit/credit card or by BACS. 
+    If they want to pay this, transfer the call to IMFIT - this is NOT paid to the rent account.
+    </p>
+    <p>
+    Reference requests should be sent to:
+    </p> 
+    <address> 
+    Sheffield Council Housing Service<br> 
+    PO Box 5967<br>
+    Sheffield<br>
+    S2 9GH 
+    </address> 
+    <p>
+    For Social Landlords (Housing Associations), these also need to be put in writing but there is no charge.
+    </p>
+    <p>
+    Social Landlords can also email details of their request to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> if they prefer to send an email.
+    </p> 
+    `,
+    { buttonLabel: "References", formName: "Rents" },
+    { typeKey: "rents_information_provided" },
+    { typeKey: "rents_transfered_to_service" },
+    { type: "References", keywords: ["Rent"], categories: ["Housing"] },
+    { date: "16/10/2024", name: "Shahzad Athar" }
+  );
+  
+  
+  const rentVariation = new ContentH(
+    "rentVariation",
+    "Rent Variation",
+   "", 
+    `
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Is your Rent Increasing?</h3>
+          <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+            <p> 
+            The annual changes to the rent charged are agreed by the Council Cabinet every January. 
+            The general rent increase agreed from 1st April 2024 is <strong>7.7%</strong>.
+            </p>
+            <p>
+            You can check an outline of the changes to rents and charges at Sheffield city counicl website
+            by visiting the following links: 
+            </p> 
+            <p>
+            <a href="/council-housing/how-rent-is-calculated">How we calculate your rent</a> 
+            </p>
+            <p>
+            <a href="/council-housing/paying-your-rent" data-drupal-link-system-path="node/3140">Paying your rent</a>
+            </p>
+              </div>
+                </details>
+  
+     <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Direct Debit </h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+            <p> 
+            Anybody applying to pay by Direct Debit should be dealt with as normal, in the same way, 
+            during this rent change period.
+            </p>
+            <p>
+            Any queries on Direct Debits need to be directed to the Income Management and Financial 
+            Inclusion Team.
+            </p>
+              </div>
+                </details>
+  
+     <details class="accordion">
+      <summary class="accordion-header">
+        <h3>OHMS Rent System </h3>
+          <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+            <p>
+            Any OHMS Rent system issues can be reported through the IT Service Desk, Tel: 0114 2734476.
+            </p>
+            <p>The rent-free weeks this year will be weeks commencing:</p>
+            <ul>
+            <li>Monday 16th December 2024</li> 
+            <li>Monday 23rd December 2024</li>
+            </ul> 
+              </div>
+                </details>          
+                </details>      
+  
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Weekly Rent Year</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              The year 2024-2025 is a 53-week rent year, which means there are 53 Mondays in the financial year. 
+              Taking into account the rent-free weeks, rent will be charged over 51 weeks.
+              </p>
+              <p>
+              When calculating monthly arrangements, these will need to be calculated over 51 weeks instead of the normal 50 weeks. 
+              The rent calculator can be used to assist in calculating arrangements:
+              </p>
+              <p><strong>File Path:</strong> G:/HSG/Public/Rents/001. public sharepoint digital ringbinder/1. Comms/51 week rent calculator.xlsx
+              </p>
+              <h3>Rent Calculator</h3>
+              <p>
+              Anybody applying to pay by Direct Debit should be dealt with as normal, in the same way, during this rent change period. 
+              Any queries on Direct Debits need to be directed to the Income Management and Financial Inclusion Team.
+              </p>
+              <p>This is relevant to this year but can change year to year.</p> 
+              </div>
+                </details>
+                
+     <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Full List of Variations</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <ul>
+              <li>Social Council rents – 7.7% increase</li>
+              <li>Affordable Rents – 7.7% increase</li>
+              <li>Interim/High Support/Temporary Accommodation Rents – 7.7% increase</li> 
+              <li>Garage Rents – 7.7% increase</li>
+              <li>District/Community Heating – No increase</li>
+              <li>Sheltered Accommodation service charge – 6.7% increase</li>
+              <li>Furnished charges – 6.7% increase</li>
+              <li>Burglar alarm charges – 6.7% increase</li>
+              <li>Insurance charges – 10% increase. Household contents insurance charges will be fixed for two years until April 2026</li>
+              <li>South Yorkshire Housing leased managed properties – 7.7% increase</li>
+              <li>Shared Ownership Properties – 7.7% increase</li>
+              <li>Gypsy & Traveller charges – to be confirmed</li>
+              <li>Direct deductions from the DWP for rent arrears will be £4.55 per week from 1st April 2024</li>
+              </ul>
+              <p>
+              <strong>This is relevant from April 2024 to April 2025 when it will be updated with new rent increase charges</strong>.
+              </p> 
+              </div>
+                </details>
+                
+     <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Garages</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              Garage letters will be sent from 18th March 2024, so tenants will only receive one garage letter. 
+              This is because we don't have to give legal notice of the rent change for garages.
+              </p> 
+              </div>
+                </details>
+  
+        <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Rent Charged After Property is Vacant</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              <p>Please note that the rent for any properties let after being vacant will be set at the maximum 
+              rent, as agreed by the Co-op Executive. This will be applied automatically, so the rent showing in 
+              the Choice Based Letting advert will be correct. This may mean, in some instances but not all, that
+              the new tenant may pay a higher rent than the previous tenant.
+              </p>
+              <p>
+              <strong>From Notes Section on Spreadsheet:</strong> Needs changing; the wording is a bit odd! 
+              Not sure where this has come from!
+              </p> 
+              </div>
+                </details>
+                
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Tenant Levy</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+            <p>
+            The Tenants Levy is a weekly payment of 10p that is used to support community activity in our 
+            council housing areas. It is collected by the Council and will go towards funding local Tenants
+            and Residents Associations (TARAs). Where there is currently no TARA, the levy is held by the 
+            Council to support any future community activity in the local area.
+            </p> 
+            <p>
+            Tenants can decide whether to pay the levy, which is not covered by Housing Benefit or Universal Credit. 
+            For any tenant levy enquiries contact the Community Engagement Team: <a href="mailto:getinvolved@sheffield.gov.uk">getinvolved@sheffield.gov.uk</a> or call 0114 2735566.
+            </p> 
+              </div>
+                </details>
+                          
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Dealing with Detailed Rent Enquiries</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+            <p>
+            Please refer any detailed queries about rent charges or the changes to the relevant Income 
+            Management and Financial Inclusion Team.
+            </p> 
+              </div>
+                </details> 
+  
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Housing Benefit</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+            <p>
+            The Housing Benefits Year end on Academy will start week commencing 4th March 2024, so Academy
+            is possibly unavailable from Wednesday 6th March 2024 to Monday 11th March 2024.
+            </p>
+            <p>
+            The Housing Benefit letters will be posted out from 11th March 2024.
+            </p>
+            <p>
+            Apart from these dates, Academy will be available to view as normal. If this changes, an update 
+            will be issued. All housing benefit adjustments will be credited to rent accounts as normal throughout March.
+            </p>
+            <p>
+            All changes to Housing Benefit levels, either through cancellations, changes of circumstances, 
+            or creation of a new case will continue as normal throughout March.
+            </p>
+            <p>
+            The Housing Benefit Overpayment recovery rate (Clawback) amount is increasing. From 1st April 2024, 
+            it will be £13.65 a week for normal cases up to a maximum of £22.75 per week, plus 50% of any disregard 
+            included in the calculation for earnings. The minimum clawback rate is £4.55 per week.
+            </p>
+            <p>
+            All changes to weekly housing benefit for the new rent levels will be applied to the Rents system 
+            from 1st April 2024.
+            </p> 
+              </div>
+                </details>
+  
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Notice of Variation (NOV) Letters and Deliveries</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+            <p>
+            The Notice of Variation (NOV) letter will be posted from 15th February 2024, arriving with 
+            tenants in the seven days after this.
+            </p>
+            <p>
+            These letters are based on information produced on 8th February 2024, so any tenancy changes 
+            after that won’t be included. This means any successions, assignments, changes of names, etc. 
+            will be correct on the system, but the letters will be sent with the original details on them.
+            </p>
+            <p>
+            The NOV letter includes the detailed rent change letter and a letter from the Housing Cabinet Member.
+            </p>
+            <p>
+            The second letter will be posted to tenants from 18th March 2024.
+            </p>
+            <p>
+            The second letter includes the Gross amount letter and inserts. This second letter will show 
+            all the charges on the account and WILL include the housing benefit, so it shows the net amount payable.
+            </p>
+            <p>
+            The benefit details included are as of 11th March 2024, so any changes in entitlement after that 
+            date won’t be shown on these rent change letters. Tenants will be notified separately by Sheffield 
+            Benefits Service for any changes after 11th March 2024.
+            </p>
+            <p>
+            Anybody on Housing Benefit will also receive a letter directly from Sheffield Benefits Service 
+            telling them what their Housing Benefit is and how it has been worked out. These letters from the
+            Benefits Service will be posted to tenants from 11th March 2024. Any queries need to be made directly
+            to the Sheffield Benefits service.
+            </p>
+            <p>
+            The Water rates leaflet for properties covered by Yorkshire Water will be posted separately around 
+            the same time. As before, these dates change every year.
+            </p> 
+              </div>
+                </details>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Standing Orders<h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+            <p>
+            If you pay your rent by standing order, please inform your bank of the new amount as soon as possible.
+            </p> 
+              </div>
+                </details>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Standing Orders<h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+            <p>
+            Rent balances will show the correct Total Indebtedness throughout this period. 
+            The balances should be correct for all tenants, given there is no closedown.
+            </p>
+            <p>
+            <strong>Any queries regarding rent payments should be sent to Income Management and Financial Inclusion Team.</strong>
+            </p>
+              </div>
+                </details>
+  
+    `,
+    { buttonLabel: "Rent Varitaion", formName: "Rents" },
+    { typeKey: "rents_information_provided" },
+    { typeKey: "rents_transfered_to_service" },
+    { type: "Rent Varitaion", keywords: ["Rent"], categories: ["Housing"] },
+    { date: "16/10/2024", name: "Shahzad Athar" }
+  );
+  
+  const statements = new ContentH(
+    "statements",
+    "Statements",
+    "",
+    `
+  <p>
+  Statements are issued every 12 months or are available online along with rent balance enquiries at 
+  <a href="https://www.gro.sheffieldhomes.org.uk/">GRO Sheffield Homes</a>.
+  </p> 
+  <p>
+  If the customer requires a current statement, we can still provide one upon request that covers the last 3 months. 
+  If the customer is asking for more than 3 months, we need to know why they need it as there will be a charge.
+  </p> 
+  <p>
+  <strong>Tenants in arrears:</strong> We will continue to send statements every 13 weeks if the customer is repaying arrears.
+  </p> 
+    `,
+    { buttonLabel: "Statements", formName: "Rents" },
+    { typeKey: "rents_information_provided" },
+    { typeKey: "rents_transfered_to_service" },
+    { type: "Statements", keywords: ["Rent"], categories: ["Housing"] },
+    { date: "16/10/2024", name: "Shahzad Athar" }
+  );
+  const universalCredit = new ContentH(
+    "universalCredit",
+    "Universal Credit",
+    "",
+    `
+  <p>
+  Refer to the "Benefits" section for information about Universal Credit.
+  </p>
+    `,
+    { buttonLabel: "Universal Credit", formName: "Rents" },
+    { typeKey: "rents_information_provided" },
+    { typeKey: "rents_transfered_to_service" },
+    { type: "Universal Credit", keywords: ["Rent"], categories: ["Housing"] },
+    { date: "16/10/2024", name: "Shahzad Athar" }
+  );
+  const contactRentsTeam = new ContentH(
+    "contactRentsTeam",
+    "Contact Rents Team",
+    "",
+    `
+    <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Contact Benefits Team<h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+          <p>
+          If you need to contact the Benefits Team, transfer the customer to the Benefits Team on 0114 2736777. 
+          If the line is busy, DO NOT ask the customer to call back later today. 
+          Instead, advise the customer to email either: <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a> 
+          or <a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a>.
+          </p>
+          <p>
+          Alternatively, they can complete the online form at <a href="https://www.sheffield.gov.uk/benefits/housing-benefit">Sheffield Housing Benefit</a>.
+          </p> 
+              </div>
+                </details>
+    <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Contact Centre Supervisor</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              <strong>Service Area:</strong> Customer Services (Housing Call Centre Supervisors)
+              </p>
+              <p>
+              <strong>Telephone Number:</strong> Tracy Harding: 46 71021; Lisa Styring: 20 53297
+              </p> 
+              </div>
+                </details>
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Contact Court Team and Procedure Team</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              <strong>Service Area:</strong> Income Management & Financial Inclusion Team.
+              </p>
+              <p>
+              <strong>Telephone Number:</strong> 0114 20 52910
+              </p>
+              <p>
+              <strong>Email Address:</strong> <a href="mailto:homesrentcourt@sheffield.gov.uk">homesrentcourt@sheffield.gov.uk</a>
+              </p>
+              <p>
+              <strong>Referred by Phone:</strong> Customer Above NSP & Refuses to be Transferred Refer by Case.
+              </p> 
+              </div>
+                </details>  
+                
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Contact Current Arrears Team</h3> 
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              Goes into process.
+              </p>
+              <p><strong>Now only 4 current arrears teams and 1 new tenancy team</strong></p> 
+              </div>
+                </details>
+                
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Contact Debt Recovery Team</h3> 
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              Goes into process.
+              </p>
+              </div>
+                </details>    
+                
+      <details class="accordion">
+        <summary class="accordion-header">
+         <h3>Discretionary Housing Payment Team</h3> 
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+             Transfer the Customer to the Discretionary Housing Payments Team on the number below, 
+             or give the customer the number.
+             </p>
+             <p>
+             <strong>Service Area:</strong> Revenues and Benefits.
+             </p>
+             <p>
+             <strong>Telephone Number:</strong> 0114 27 36983.
+             </p>
+             <p>
+             <strong>Further Information:</strong> Revenues and Benefits Client Team, PO Box 1283, Town Hall, Sheffield S1 1UL.
+             </p>
+             <p>
+             <strong>Email Address:</strong> <a href="mailto:DHP-CTS@sheffield.gov.uk">DHP-CTS@sheffield.gov.uk</a>
+             </p> 
+              </div>
+                </details>     
+                
+                
+      <details class="accordion">
+        <summary class="accordion-header">
+         <h3>Department of Work and Pensions (DWP)</h3> 
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              Transfer the Customer to the Department of Work and Pension on the number below, 
+              or give the customer the number.
+              </p>
+              <p>
+              <strong>Service Area:</strong> DWP.
+              </p>
+              <p>
+              <strong>Telephone Number:</strong> 0345 605 7064.
+              </p> 
+              </div>
+                </details>   
+                
+      <details class="accordion">
+        <summary class="accordion-header">
+         <h3>Housing Benefits Overpayments</h3> 
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              Transfer the Customer to the Housing Benefits Overpayment Team on the number below, 
+              or give the customer the number.
+              </p>
+              <p>
+              <strong>Service Area:</strong> Housing Benefit.
+              </p>
+              <p>
+              <strong>Telephone Number:</strong> 0114 27 34199.
+              </p>
+              <p>
+              <strong>Email Address:</strong> <a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a>
+              </p>  
+              </div>
+                </details>
+                
+      <details class="accordion">
+        <summary class="accordion-header">
+         <h3>Rent Account Maintenance Team</h3> 
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              <strong>Service Area:</strong> Income Management & Financial Inclusion Team.
+              </p>
+              <p>
+              <strong>Telephone Number:</strong> 0114 20 52909.
+              </p>
+              <p>
+              <strong>Email Address:</strong> <a href="mailto:Homesrentincome@sheffield.gov.uk">Homesrentincome@sheffield.gov.uk</a>.
+              </p> 
+              </div>
+                </details>       
+                
+      <details class="accordion">
+        <summary class="accordion-header">
+         <h3>Sheltered Housing Rents</h3> 
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              Goes into process.
+              </p> 
+              </div>
+                </details>
+                
+      <details class="accordion">
+        <summary class="accordion-header">
+         <h3>Sustainment and Support Team</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              Goes into process.
+              </p> 
+              </div>
+                </details>          
+                
+    `,
+    { buttonLabel: "Contact Rents Team", formName: "Rents" },
+    { typeKey: "rents_information_provided" },
+    { typeKey: "rents_transfered_to_service" },
+    { type: "Contact Rents Team", keywords: ["Rent"], categories: ["Housing"] },
+    { date: "16/10/2024", name: "Shahzad Athar" }
+  );
+  
+  
+  const rents = new MenuH(
+    "rents",
+    "Rents",
+    "Information about Housing Rents",
+    [
+      arrearsorDebt,
+      balanceEnquiry,
+      insurance,
+      onlineServices,
+      references,
+      rentVariation,
+      statements,
+      universalCredit,
+      contactRentsTeam
+    ]
+  );
+  
+//#region Tenancy Sustainment
+  
+const fences = new ContentH(
+  "fences",
+  "Fences",
+  ",",
+  `
+  <details class="accordion">
+        <summary class="accordion-header">
+         <h3>Fences</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              Refer to Asset Mgmt and Repairs section for Fences accordion.
+              </p> 
+              </div>
+                </details> 
+  `,
+  { buttonLabel: "Fences", formName: "Tenancy Sustainment" },
+  { typeKey: "Tenancy_Sustainment_information_provided" },
+  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { type: "Fences", keywords: ["Tenancy"], categories: ["Housing"] },
+  { date: "06/11/2024", name: "Shahzad Athar" }
+);
+
+const fobsandKeys = new ContentH(
+  "fobsandKeys",
+  "Fobs and Keys",
+  ",",
+  `
+<p>
+For lost or stolen keys, there may be a recharge (£5). Locks will only be replaced if the customer agrees to a recharge
+or if they have a valid crime reference number.
+</p>
+<p>
+The only exceptions are if the person is Elderly or a Vulnerable person, in which case a Discretionary Decision would need
+to be applied for.
+</p>
+<p>
+If the customer has contents insurance through the Council Housing Service scheme, they can make a claim by completing
+an insurance form.
+</p>
+<p>
+It is only communal doors that are £5. If it's your own door, it's over £200 recharge from repairs.
+</p>
+
+  <details class="accordion">
+        <summary class="accordion-header">
+         <h3>Replacement Fobs</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              Replacement fobs cost £10 (communal keys cost £5) and they can be purchased from your local area housing office 
+              or from your Warden if you live in Sheltered Accommodation. You will need to take ID with you when purchasing a 
+              replacement fob. If you are ordering a replacement communal door key, you will need to take the number off of the
+              lock with you too.
+              </p>
+              </div>
+                </details> 
+
+  <details class="accordion">
+        <summary class="accordion-header">
+         <h3>Acceptable ID</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              Preferably, at least one piece of evidence must be from the Primary List, and at least one document should contain 
+              photographic identification. The Primary List contains the most definitive piece of documentary evidence.
+              </p>
+              <p>
+              If the evidence provided from the list does not contain a photograph (for example, birth certificate, marriage certificate, 
+              or divorce/annulment papers), then a further piece of identity should be provided with a photograph such as a photo-card driving license 
+              or valid passport.
+              </p>
+
+<table style="width:100%">  
+   <tr style="background-color: black; color: white;">
+    <tbody>
+        <tr>
+            <th>Primary ID</th>
+            <th>Secondary ID</th>
+        </tr>
+        <tr>
+            <td>Birth certificate</td>
+            <td>Wage slip from current employer</td>
+        </tr>
+        <tr>
+            <td>Current and valid passport</td>
+            <td>Letter from Social Worker/Solicitor/Probation Officer
+            </td>
+        </tr>
+        <tr>
+            <td>Driving license</td>
+            <td>Letter from DWP for Child/Work Tax Credits</td>
+        </tr>
+        <tr>
+            <td>Marriage certificate</td>
+            <td>Life assurance/insurance policies</td>
+        </tr>
+        <tr>
+            <td>Divorce/Annulment papers</td>
+            <td>Utility bill (paid in the customer's name for last quarter)</td>
+        </tr>
+        <tr>
+            <td>UK Resident Permit</td>
+            <td>Proof of all other benefits (e.g. JSA)</td>
+        </tr>
+        <tr>
+            <td>ID card issued by the following EEA/EU countries (Finland, Greece, France, Germany, Irish Republic, Italy, Bulgaria and Romania, Austria, Belgium, Denmark, Malta, Liechtenstein, Luxembourg, Spain, Norway, Sweden, Portugal, Cyprus, Iceland,
+                Netherlands, Switzerland and the UK. A8 countries, Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Slovakia and Slovenia)</td>
+            <td>3 consecutive months bank statements</td>
+        </tr>
+        <tr>
+            <td>Home Office Standard Acceptance letter</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>UK travel document</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Immigration Status Document</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>NASS 35</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Accession State Workers Registration Scheme Registration Card (Workers Registration Scheme Registration Card Medical Card</td>
+            <td></td>
+        </tr>
+        </tbody>
+          </table>
+              </div>
+                </details> 
+
+
+    <details class="accordion">
+        <summary class="accordion-header">
+         <h3>Area Housing offices</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              Please note: Howden House only deals with rehousing enquiries and will not be able to help with fobs or keys.
+              </p>
+              </div>
+                </details>
+
+  `,
+  { buttonLabel: "Fobs and Keys", formName: "Tenancy Sustainment" },
+  { typeKey: "Tenancy_Sustainment_information_provided" },
+  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { type: "Fobs and Keys", keywords: ["Tenancy"], categories: ["Housing"] },
+  { date: "06/11/2024", name: "Shahzad Athar" }
+);
+
+const nameChanges = new ContentH(
+  "nameChanges",
+  "Name Changes",
+  ",",
+  `
+<p>
+You should present proof (3 documents in total) to a housing office or First Point who will copy the ID and save it to 
+our document management store.</p>
+<p><strong>Advisor note:</strong> Acceptable ID is listed in an accordion above.</p>
+<p>
+The name will then be changed in our Housing management system. alternatively, you can put the name change in writing 
+along with proof of the new name (originals, not photocopies) and send it to 
+<a href="mailto:RegistrationID@sheffield.gov.uk">RegistrationID@sheffield.gov.uk</a>.
+</p>
+<p>
+At least one piece of proof must be primary evidence whilst the second may be either primary or secondary evidence.  
+Proof of their current UK address is also required. 
+</p>
+<p>
+Photo ID is also required to prove identity. If the customer does not have photo ID, they must provide a passport-sized photo. 
+The same document cannot be used more than once (e.g., driving licence as primary).
+</p>
+
+  `,
+  { buttonLabel: "Name Changes", formName: "Tenancy Sustainment" },
+  { typeKey: "Tenancy_Sustainment_information_provided" },
+  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { type: "Name Changes", keywords: ["Tenancy"], categories: ["Housing"] },
+  { date: "07/11/2024", name: "Shahzad Athar" }
+);
+
+const parkingPermitsHS = new ContentH(
+  "parkingPermitsHS",
+  "parkingPermitsHS",
+  ",",
+  ` 
+<p>
+<strong>Service Area:</strong> Customer Services Back Office (Fulfilment Team)<br>
+<strong>Telephone Number:</strong>0114 2734011<br>
+<strong>Further Information:</strong> Free School Meals, Blue Badge, Parking Permits, Children's Travel Pass, Disability Travel Permit, 
+Streets Ahead, Environmental Services, Local Assistance Scheme<br>
+<strong>Email Address:</strong> [insert email address here]
+</p>
+
+  `,
+  { buttonLabel: "Parking Permits", formName: "Tenancy Sustainment" },
+  { typeKey: "Tenancy_Sustainment_information_provided" },
+  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { type: "Parking Permits", keywords: ["Tenancy"], categories: ["Housing"] },
+  { date: "07/11/2024", name: "Shahzad Athar" }
+);
+
+const permissions = new ContentH(
+  "permissions",
+  "Permissions",
+  ",",
+  ` 
+<p>
+If you are over £250 (Total Indebtedness) in arrears, your permissions request is unlikely to be granted. You must have written permission 
+from the Housing Service to alter or improve your home. This includes:
+</p>
+<ul>
+<li>Putting up any form of extension or building</li>
+<li>Adding to, changing, or replacing the fixtures, fittings, and appliances provided by us</li>
+<li>Altering essential gas, electricity, and water services</li>
+<li>Putting up a radio or television aerial or satellite dish</li>
+<li>Decorating the outside of your home</li>
+<li>Removing internal walls</li>
+<li>Insulation (Walls & Lofts)</li>
+<li>Conservatories (considered on an individual basis)</li>
+</ul>
+<p>
+However, the following are highly unlikely to be granted due to extra maintenance costs and potential structural problems:
+</p>
+<ul>
+<li>Loft conversions</li>
+<li>Spiral staircases</li>
+<li>Swimming pools</li>
+<li>Extensions</li>
+<li>Stair lifts in communal areas</li>
+</ul>
+<p>
+It is the customer's responsibility to seek and get any planning or building regulation approvals. Every request for permission will be assessed 
+using criteria and conditions appropriate to the particular request. These criteria and conditions will be explained in the letter sent in reply 
+to the customer's permission request.
+</p>
+<p>
+We will take action against any installations that are in breach of Health and Safety regulations.
+</p>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+         <h3>Permission Requests</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>
+              Written permission requests should be referred in the first instance (unless the customer is a Leaseholder or the permission request
+              is for a mobility scooter) to the appropriate Area Team at:
+              </p>
+                <address>
+                  Sheffield Council Housing Service<br>
+                  PO Box 5967<br>
+                  Sheffield<br>
+                  S2 9GH
+                  </address>
+                <p>
+                If the permission request is for a mobility scooter, it should be referred to:
+                <address>
+                Maintenance Partnership Unit (Permissions)<br>
+                PO Box 5967<br>
+                SheffieldBr>
+                S2 9GH 
+                </address>
+
+                <p>
+                If the customer is a Leaseholder, permission requests should be put in writing to:
+                </p>
+                <address>
+                  Floor 11<br>
+                  Moorfoot Building<br>
+                  Sheffield<br>
+                  S1 4PL
+                  </address>
+                <p>
+                Once we have received your request, we will contact you to discuss it and, where necessary, arrange a suitable time to visit your property. 
+                We will give you a decision within 21 days of receiving your request. If we give you permission, you should carry out the work within 90 days 
+                and let us know when it is complete.
+                </p>
+                </div>
+                </details>
+
+
+      <details class="accordion">
+        <summary class="accordion-header">
+         <h3>Permission and Your Teancy Conditions</h3>
+           <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content">
+              <p>Tenancy condition 47 states that:</p>
+                <blockquote>
+                Where a tenancy condition requires you to ask for our permission, this means:<br>
+                <ul>
+                <li>You must ask for our permission, and you must not proceed until we give you our permission.</li>
+                <li>We will confirm our answer in writing.</li>
+                <li>If we refuse permission, we will explain why.</li>
+                <li>If we give permission, we may attach additional conditions.</li>
+                <li>We may withdraw our permission at any time if you do not comply with the conditions we have made.</li>
+                <li>We will take action against you and/or charge you for any costs incurred if you do not comply with parts a-e above.</li>
+                </ul>
+                </blockquote>
+                </div>
+                </details>
+
+  `,
+  { buttonLabel: "Permissions", formName: "Tenancy Sustainment" },
+  { typeKey: "Tenancy_Sustainment_information_provided" },
+  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { type: "Permissions", keywords: ["Tenancy"], categories: ["Housing"] },
+  { date: "07/11/2024", name: "Shahzad Athar" }
+);
+
+const tenancyAgreementRequest = new ContentH(
+  "tenancyAgreementRequest",
+  "Tenancy Agreement Request",
+  ",",
+  ` 
+<p>
+If the request is urgent or for a former tenancy, you will need to visit your Area Office with relevant ID to obtain a copy of your Tenancy Agreement.
+</p>
+
+<details class="accordion">
+      <summary class="accordion-header">
+        <h3>Weekly Cost</h3>
+          <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content"> 
+                <p>
+                Preferably, at least one piece of evidence must be from the Primary List, and at least one document should contain photographic identification.
+                </p>
+                <p>
+                The Primary List contains the most definitive piece of documentary evidence. If the evidence provided from the list does not contain a photograph 
+                (for example, birth certificate, marriage certificate, or divorce/annulment papers), then a further piece of identity should be provided with a 
+                photograph such as a photo-card driving license or valid passport.
+                </p>
+
+                <table>
+                        <tbody><tr><th>Proof of ID documents</th><th>Proof of address</th></tr>
+                        <tr><td valign="top">
+                        <ul>
+                        <li>Marriage certificate</li>
+                        <li>Divorce/Annulment papers</li>
+                        <li>Passport (this can be expired but if the customer is an adult an adult passport
+                        must be produced)</li>
+                        <li>Deed poll documentation for change of name (to accompany details of former name
+                        if applicable)</li>
+                        <li>Current bus passes with photograph</li>
+                        <li>UK resident permit</li>
+                        <li>ID card issued by EEA/EU countries</li>
+                        <li>Home Office standard acceptance letter</li>
+                        <li>Immigration status document</li>
+                        <li>NASS 35</li>
+                        <li>Citizenship card (with hologram and photo to prove age)</li>
+                        <li>Medical card</li>
+                        <li>Birth certificate/Adoption certificate</li>
+                        <li>Letter from Social Worker/Probation Officer/Solicitor</li>
+                        <li>Driving licence</li>
+                        <li>Proof</li>
+                        </ul>
+                        </td>
+                        <td valign="top">
+                        <ul><li>Recent utility bill paid in that person’s name (last quarter)</li>
+                        <li>Most recent council tax statement</li>
+                        <li>Driving licence</li>
+                        <li>Home Office standard acceptance letter</li>
+                        <li>Letter from DWP for tax credits</li>
+                        <li>Bank statement from within the last 3months</li>
+                        <li>Wage slip from current employer</li>
+                        <li>Life assurance/Insurance policies</li>
+                        <li>Proof of all other benefits</li>
+                        </ul>
+                        </td>
+                        </tr></tbody></table>
+                        </div>
+                        </details>  
+
+  `,
+  { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
+  { typeKey: "Tenancy_Sustainment_information_provided" },
+  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { type: "tenancyAgreementRequest", keywords: ["Tenancy"], categories: ["Housing"] },
+  { date: "08/11/2024", name: "Shahzad Athar" }
+);
+
+const tenancyConditions = new ContentH(
+  "tenancyConditions",
+  "Tenancy Conditions",
+  "",
+  `
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Conditions as a Tenant</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                What are Tenancy Conditions?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                  Tenancy Conditions are an agreement between you and us. If you break these conditions of tenancy, 
+                  you may lose your home. The basic conditions of your tenancy are:
+                  </p>
+                  <ul>
+                  <li>You must pay your rent.</li>
+                  <li>You must look after and carry out any day-to-day maintenance to the property.</li>
+                  <li>You must not cause a nuisance or danger to people nearby.</li>
+                  </ul> 
+                </p>
+            </div>
+        </details>
+<div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Keeping Animals
+            </summary>
+            <div class="details-accordion-content">
+              <p>
+              You must not keep any animal which we consider to be dangerous or which may cause a nuisance. You must not keep a dog or a cat in a flat 
+              or maisonette which has shared parts or a shared entrance. If you live in a small block of flats or maisonettes, we will give you written
+              permission to keep a dog or cat if all the tenants who use the same shared parts of the building have agreed to you keeping the dog or cat. 
+              If we give our permission, we may withdraw it if your pet causes nuisance or upset to any of your neighbours. If we gave you written permission 
+              before 3rd April 1995 to keep a dog or cat in a block of flats containing more than 12 homes, you can continue to keep that dog or cat. 
+              You must not keep any pigeons or doves in or on any part of the property unless before 3rd April 1995 we gave you written permission to do so. 
+              Parrots, budgies, etc., are allowed as long as they are not causing a nuisance.
+              </p> 
+            </div>
+        </details>
+
+<div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+              Responsible and Maintenance We Are Responsible For
+            </summary>
+            <div class="details-accordion-content">
+             <p>
+             We will repair and maintain the following:
+             </p>
+              <li>
+              The structure and outside of the building (roofs, outside walls, outside doors,
+              window sills and frames, chimneys and chimney stacks, drains, gutters and outside pipes)
+              </li>
+              <li>
+              Inside walls, skirting boards, doors, door frames, floors, ceilings and major
+              replastering work.
+              </li>
+              <li>
+              Electric wiring, sockets and light fittings and gas and water pipes.
+              </li>
+              <li>
+              Heating equipment (such as fires, radiators and storage radiators) and water heating
+              equipment (such as boilers and immersion heaters). 
+              </li>
+              <li>
+              Kitchen and bathroom fixtures (such as sinks, basins, baths, showers and toilets).
+              </li>
+              <li>
+              Pathways and steps which are the main means of getting to your home.
+              </li>
+              <li>
+              Shared TV aerial.
+              </li>
+              <li>
+              The glass in outside doors and windows.
+              </li>
+              <li>
+              Supporting or retaining walls and front walls and front metal railings to the property.
+              </li>
+              <li>
+              We will be responsible for cutting down or trimming large trees within the property,
+              but only if they are causing danger or damage to your property or a nearby property.
+              </li>
+              <li>
+              We will decorate the outside and any shared parts of the building when necessary
+              (this will be at least every five years). 
+              </li>
+              <li>
+              With your help and cooperation we will keep in good repair and look after the
+              shared parts of the building.
+              </li>
+              <li>
+              When you ask for a repair, and we agree to do it, we will give you a receipt showing when we will carry out the work:
+              </li>
+      </div>
+  </details>
+
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+              Responsible and Maintenance We Are Responsible For
+            </summary>
+            <div class="details-accordion-content">
+          <p>
+             These are offered in 2-hour time slots for most non-urgent repairs including loose fitting doors and windows, leaking guttering, 
+             loose floorboards, or a light or electric socket not working. If you’re not at home at the appointed time, the repair will be cancelled, 
+             and you will need to make a new appointment via the contact centre. Some non-urgent repairs cannot be ordered straightaway but will be looked 
+             at by an inspector within two weeks of you reporting the fault. If the inspector finds that work is needed, then it will be ordered for you.
+          </p> 
+      </div>
+  </details>
+
+  <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+              Appointable Repairs
+            </summary>
+            <div class="details-accordion-content">
+        <p>
+            These are offered in 2-hour time slots for most non-urgent repairs including loose fitting doors and windows, leaking guttering, 
+            loose floorboards, or a light or electric socket not working. If you’re not at home at the appointed time, the repair will be cancelled, 
+            and you will need to make a new appointment via the contact centre. Some non-urgent repairs cannot be ordered straightaway 
+            but will be looked at by an inspector within two weeks of you reporting the fault. If the inspector finds that work is needed, 
+            then it will be ordered for you.
+        </p> 
+    </div>
+  </details>
+
+<div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+              Emergency Repairs
+            </summary>
+            <div class="details-accordion-content">
+        <p>
+          This category has a 4-hour time limit and is used only for repairs where your health and safety could be at risk. These repairs include 
+          burst water pipes, blocked WC basin, gas leaks, and total electrical failure.
+        </p> 
+    </div>
+  </details>
+
+<div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+              Urgent Repairs
+            </summary>
+            <div class="details-accordion-content">
+        <p>
+          This is a 24-hour category for urgent jobs. Urgent repairs include heating breakdowns where you have no other way of heating your home, 
+          replacement of door locks, and blocked drains.
+          </p> 
+        </p> 
+    </div>
+  </details>
+
+<div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+              Planned Work
+            </summary>
+            <div class="details-accordion-content">
+        <p>
+          For jobs that need planning due to the nature of the work. This work includes manufactured items like external doors and windows 
+          or where there are large amounts of plastering to walls and ceilings
+          </p> 
+          <strong>We Will Not Be Responsible For:</strong>
+        <ul> 
+          <li>Decorating the inside of your home.</li>
+          <li>Repairing any damage caused by you, members of your household or guests, deliberately, or through neglect or carelessness.</li>
+          <li>Repairing any fixtures and fittings which you have added to your home unless we agreed, in writing, to maintain them before you put them in.</li>
+        </ul> 
+    </div>
+  </details>
+
+  <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+              Repairs and Maintenance You Are Responsible For
+            </summary>
+            <div class="details-accordion-content">
+       <p>
+          You are responsible for any repair not listed above. If you need a repair which we are responsible for, you must tell us about 
+          this repair as soon as possible. You must look after and maintain the property and carry out any repair you are responsible for. 
+          If you do not, we may maintain the property or carry out the repairs. We will charge you for this. If you have broken condition 23 of these conditions, 
+          we may remove any scrap from the property or do anything else which is necessary. Again we will charge you for this.
+      </p> 
+   </div>
+ </details>
+
+<div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+             Permission for Alterations 
+            </summary>
+            <div class="details-accordion-content">
+       <p>
+        You must not alter or improve the property unless you have written permission from us. This includes:
+      </p>
+    <ul>
+    <li>Putting up an extension</li>
+    <li>Adding to or changing or replacing the fixtures and fittings provided by us</li> 
+    <li>Altering essential gas, electricity, and water services</li> 
+    <li>Putting up a radio or television aerial or satellite dish</li>
+    <li>Decorating the outside of your home</li>
+    </ul>
+    <p>
+    If we refuse to give you permission for any alteration, we will always write to you and say why.
+    </p> 
+   </div>
+ </details>
+
+ <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+             Rent (Your Responsibilities)
+            </summary>
+            <div class="details-accordion-content">
+       <p>
+        You must pay your rent and all other charges for the property (including any district heating charges) when they are due. 
+        The rent and any other charges are due every Monday, except for two weeks in each financial year which we will tell you about beforehand.
+        </p>
+        <p>
+        You must not withhold the rent for any reason whatsoever. In particular, you must not set off the cost of outstanding repairs which are 
+        our responsibility against your obligation to pay rent.
+        </p> 
+   </div>
+ </details>
+
+  <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+             Rent (Our Responsibilities)
+            </summary>
+            <div class="details-accordion-content">
+       <p>
+       If we change the amount of your rent or any other charges for the property, we will give you notice in writing. 
+       The notice will give details of the new amount, when it must be paid from, and why we have made the change. 
+       Whenever we change the general levels of net rent for Council properties, we will give you four weeks' notice in writing.
+       </p> 
+   </div>
+ </details>
+
+   <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+             Use of the Property
+            </summary>
+            <div class="details-accordion-content">
+          <p> 
+              You must only use the home to live in as your only or principal home.
+          </p>
+              <li>
+                  You can ask us for permission to run a business from your property. We may give
+                  you permission if we are satisfied that the business will not cause a nuisance to
+                  neighbours and other people living in the area and you have any planning permission
+                  you need. If we give permission we may withdraw it if your business causes a nuisance
+                  to any neighbours or other people living in the area.
+              </li>
+              <li>
+                  You must not part with possession or sublet all of the property.
+              </li>
+              <li>
+                  You may part with possession or sublet part of the property if you have written
+                  permission from us. If we refuse to give you permission we will write to you and say why.
+              </li>
+              <li>
+                  You, your household and guests must respect the rights of other people and not
+                  do anything (either in or near the property or on the estate where the property is)
+                  which is illegal, immoral or would cause danger, a nuisance or annoyance, including
+                  harassment of other people. Harassment includes but is not limited to harassment because
+                  of a person's race, sex, sexuality, mental health, physical disability, learning disability,
+                  religion or because they have HIV/AIDS. Harassment is an interference with the peace
+                  and comfort of any person in relation to the enjoyment of their property or facilities
+                  on the estate. If you, your household or guests break this condition you must pay
+                  to us the cost of cleaning up, clearing or making good any damage.
+              </li>
+              <li>
+                  You, members of your household or guests must not use violent, abusive or offensive
+                  behaviour to our employees, agents or contractors doing housing work. This condition
+                  applies on or near the property or the estate on which it is situated or in any of
+                  our housing offices or elsewhere.
+              </li>
+              <li>
+                  You must not store petrol, paraffin, liquid or bottled gas or other dangerous
+                  materials in the property. In flats and maisonettes you must not use paraffin heaters
+                  or liquid or bottled gas heaters. You must take all reasonable precautions to prevent
+                  a fire.
+              </li>
+              <li>
+                  You must not keep any vehicle (including a caravan, boat or trailer) at the property,
+                  if the size or condition of the vehicle spoils the surrounding property or estate.
+              </li>
+              <li>
+                  You must not use any garden or drive to your property to store, load or unload
+                  scrap metal, or to strip down vehicles or persistently repair them.
+              </li>
+   </div>
+ </details>
+
+ <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+             Distric Heating System
+            </summary>
+            <div class="details-accordion-content">
+          <p> 
+            You must not interfere with any part of a District Heating system (including any meters, pre-payment controllers or cards), 
+            whether the system is provided by us, Sheffield Heat & Power Limited, or anyone else. If the supply of heat to your home 
+            is individually metered you must pay for all the heat which is supplied to your home. If any supply of heating and hot water 
+            which you pay for as part of your rent goes off for more than a day, we will reduce the weekly charge by one seventh for each day, 
+            (or part of a day over 8 hours), during which the heating and hot water is off.
+            </p>     
+   </div>
+ </details>
+
+ <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+             Gardens
+            </summary>
+            <div class="details-accordion-content">
+          <p> 
+          You must keep any private garden or hedges to the property tidy.
+            </p>     
+   </div>
+ </details>
+
+  <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+             Car Parking
+            </summary>
+            <div class="details-accordion-content">
+          <p> 
+          You can only park a vehicle in your garden if there is a hardstanding. If you have to cross a pavement to get to your hardstanding, 
+          the kerb to that pavement must be adapted to allow vehicles to cross it. You must get permission from us to build a hardstanding in your garden. 
+          You must have written permission from us and the Highway Authority to adapt a pavement so a vehicle may cross it. You must not regularly park 
+          a vehicle on communal areas, pavements or verges at the side of roads.
+          </p>   
+   </div>
+ </details>
+
+   <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+             Running a business from home
+            </summary>
+            <div class="details-accordion-content">
+          <p> 
+          You can ask us for permission to run a business from your property. We may give you permission if we are satisfied that the business 
+          will not cause a nuisance to neighbours and other people living in the area and you have any planning permission you need. 
+          If we give permission we may withdraw it if your business causes a nuisance to any neighbours or other people living in the area.
+          </p>   
+   </div>
+ </details>
+
+   <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+             Access to your property
+            </summary>
+            <div class="details-accordion-content">
+          <p> 
+          You must allow our employees, agents or contractors to enter the property to inspect the property, carry out repairs or improvements, 
+          service appliances or carry out any of our duties. We will give you 72 hours notice in writing if we need to enter your property and our employees, 
+          agents or contractors will show you a pass proving their identity before they may enter your property. If it is convenient you may allow our employees, 
+          agents or contractors access to your property even if they have not given you notice. If we decide that it is necessary because of an emergency 
+          which could cause personal injury or damage to Council or adjoining properties and you do not give us immediate access, we may take steps to enter 
+          your property using force if necessary without giving notice. 
+          </p>   
+   </div>
+ </details>
+
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+             Ending your Tenancy
+            </summary>
+            <div class="details-accordion-content">
+          <p> 
+          If you want to end your tenancy you must give us four weeks written notice. The four weeks’ notice must end on a Monday. You must leave the property clean, 
+          safe, tidy and ready for the next tenant to move into. You must hand all the keys into the Housing Area Office by the end of the four weeks’ notice.
+          </p>
+          
+          <p>
+          You may have to remove fixtures and fittings which you have added to the property and replace them with the kind of fixtures and fittings we use. 
+          You will not have to do this if we had agreed to maintain the fixtures and fittings which you put in. If you have altered the property, even with our permission, 
+          we may ask you to restore the property to its original condition if the alterations make the property unsuitable for future tenants. If you do not replace fittings 
+          or restore the property to its original condition when we have asked you to do so, we will do the work and charge you for it.
+          </p>
+          <p>
+          We may charge you if we have to remove rubbish or other items which you have left in the property. We may also charge you for any damage to the property. 
+          You may give or send us any Notice about your tenancy (except for Notices about legal action against us) by addressing it to:
+          </p>
+          <address>
+          Sheffield Council Housing Service<br>
+          PO Box 10589<br>
+          Nottingham<br>
+          NG6 6DN
+          </address>
+          
+          <p>
+          Send notices about legal action to:
+          </p>
+          <address>
+          Head of Legal Services<br>
+          Town Hall<br>
+          Sheffield<br>
+          S1 2HH
+          </address>
+          
+          <p>
+          In addition to any way permitted by law, we may serve any notice on you at the dwelling by putting it through the letterbox or fixing it to the dwelling 
+          or by leaving it with somebody for you at the dwelling.
+          </p> 
+   </div>
+ </details>
+</div>
+</details>
+          
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Rights as a Tenant</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <p>
+    Most Sheffield City Council tenants are 'Secure Tenants'. A secure tenant has a number of rights either by law or under our policies. These rights include the following:
+    </p>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Right to Repairs
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                  For certain types of repairs you can arrange to have the work carried out yourself if:
+                </p>
+                <ul>
+                <li>you have ordered a repair</li>
+                <li>the value of the repair is less than £250</li>
+                <li>the repair has not been completed in the time promised</li>
+                <li>you use a contractor on the Council's approved contractor list</li>
+                </ul>
+                <p>
+                The 'Repairs and Maintenance to your home' leaflet tells you how you can go about giving a notice of claim and includes a form for doing this. 
+                The Repairs and Maintenance Team will only discuss any claims for money once the form has been sent in to them.
+                </p> 
+            </div>
+        </details>
+
+  <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Right to compensation for improvements
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                At the end of your tenancy you may get compensation for certain improvements you have made to your home. The leaflet called “Tenants own improvements” explains the scheme. 
+                You cannot get compensation if you are buying your home through the ‘Right to Buy’ or ‘Rent to Mortgage’ scheme or for any improvements costing less than £50.
+                </p> 
+                Tenant's Own Improvements ↗
+            </div>
+        </details>
+
+  <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Right to take in lodgers
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                You can take in lodgers without getting the permission of the Council Housing Service as long as your home does not become overcrowded. 
+                If you get Housing Benefit you must tell the Area Housing Office and the Housing Benefits Service that you have taken in lodgers 
+                as this may affect the amount of benefit you can receive. (If you don’t tell the Area Housing Office and the Council Housing Service finds out later, 
+                your benefit may be reduced for the period you have had lodgers, and any benefit which has been overpaid may be recovered.)
+                </p> 
+            </div>
+        </details>
+
+  <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Right to Succeed
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                The following rules apply if you die and you did not take over the tenancy from a member of your family:
+                </p>
+                <ul>
+                <li>Your spouse or civil partner will have the right to succeed to the tenancy provided that they occupy the property as their only or principal home, or</li>
+                <li>Another member of your family can take over the tenancy if they lived in the property throughout the 12 months before your death and the property 
+                was their only or principal home.</li>
+                </ul>
+                <p>
+                If more than one person qualifies to take over the tenancy, your spouse or civil partner will be entitled to take it over. If you have no spouse 
+                or civil partner living with you, everyone entitled to the tenancy must agree on who will take it on. If the people involved cannot agree we will choose 
+                who to give the tenancy to.
+                </p>                
+                <p>
+                People who are not entitled to take over your tenancy may, in certain circumstances, (which are set out in the Council's Lettings Policy) be given a 
+                new secure tenancy of your property.
+                </p>  
+            </div>
+        </details>
+
+  <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Right to inspect personal files
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                Under the law and the Council Housing Service policies you have the right to see certain information which the Council Housing Service has about your 
+                housing circumstances.
+                </p> 
+            </div>
+        </details> 
+        
+  <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Right for compensation for loss of income due to broken appointments
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                If any housing staff fail to keep an appointment they arranged with you, you may claim compensation for loss of income. The appointment must have been made 
+                in writing and you must have lost wages in order to claim compensation.
+                </p> 
+             </div>
+        </details>         
+
+  <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Right to be consulted
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                The Council Housing Service will consult you before the Council makes any change to any part of the tenancy conditions. There are a number of ways 
+                of consulting tenants on issues affecting them. You can get more details in Sheffield’s City Wide Tenant and Resident Participation Compact.
+                </p>  
+             </div>
+        </details>  
+
+<div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Right to Buy
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                If you have been a council tenant for at least two years (or five years if you became a tenant after 18th January 2005) you will probably have a right to buy your home. 
+                You can get more details from the Council's home ownership team.
+                </p>  
+             </div>
+        </details> 
+
+  <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Right to Exchange
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                You may make a 'Mutual Exchange' (that is swap homes) with another Council or Housing Association tenant. As long as the size of the families involved 
+                qualify for the size and type of home and any Council tenants involved do not owe any rent, it should be possible to agree to an exchange. 
+                You can get more information from the leaflet called <strong>Mutual Exchanges - How to Apply</strong>. You must not swap homes until you have a letter 
+                from the Council Housing Service agreeing to the swap. 
+                </p>  
+             </div>
+        </details> 
+
+
+   <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+              Assignment 
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                You may ask the Council Housing Service for permission to transfer your tenancy to a member of your family living with you.
+                </p>  
+             </div>
+        </details> 
+    </div>
+</details>
+              
+<details class="accordion">
+      <summary class="accordion-header">
+        <h3>Leaflets and Information</h3>
+          <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content"> 
+                <p>
+                You can get copies of leaflets and information on housing services from any Area Housing Office.
+                </p> 
+            </div>
+          </details>  
+
+<details class="accordion">
+      <summary class="accordion-header">
+        <h3>Reasons for us evicting you</h3>
+          <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content"> 
+                <p>
+                The Council Housing Service can only evict you on behalf of the Council if the Council Housing Service gives you a “Notice Seeking Possession” 
+                and applies to the court to end your tenancy. The Council Housing Service can evict you from your home if the court thinks this is reasonable 
+                for any of the following reasons:
+                </p> 
+
+              <ul> 
+              <li>You have not paid the rent or not kept to these conditions.</li> 
+              <li>You or anybody living with you or visiting you has caused a nuisance or annoyance to other people, has been convicted for using the premises for 
+              illegal or immoral purposes, or convicted of a serious offence in or near the premises.</li>
+              <li>If you have been living with someone as their partner and your partner has left because of violence or threats of violence from you, either to them 
+              or a member of the family, and it is unlikely they will return.</li> 
+              <li>You have damaged the property or common parts.</li> 
+              <li>You or anybody living with you has damaged any furniture provided by the Council.</li> 
+              <li>You got the tenancy because you or somebody else on your behalf made false statements.</li> 
+              <li>You refuse to leave a property which we let to you temporarily while work was being carried out at your own property.</li> 
+              <li>You will usually have a chance to put things right before the Council Housing Service evicts you. The Council Housing Service will usually seek to evict you if you, 
+              your household or guests harass people (unless other legal action is more appropriate).</li> 
+              </ul> 
+
+              <p>
+              The Council Housing Service can evict you for the following reasons, if the court is satisfied that there is suitable alternative accommodation:
+              </p> 
+
+              <ul> 
+              <li>If your home is overcrowded as defined in the Housing Act 1985.</li> 
+              <li>If your home is to be altered or demolished and this cannot be done while you’re still living there.</li> 
+              </ul> 
+
+              <p>
+              The Council Housing Service will consult you if the Council Housing Service wants to evict you because of these reasons. The Council Housing Service will also offer 
+              you alternative accommodation which meets your reasonable needs.
+              </p>
+              <p>
+              The Council Housing Service can evict you for the following reasons if the court is satisfied that it is reasonable and you could get suitable alternative accommodation:
+              </p> 
+
+              <ul> 
+              <li>The home was designed or adapted for a disabled person and there is no longer a disabled person living in the home but the home is required for a disabled person.</li> 
+              <li>The home is one to which special services are provided and there is no longer anyone living in the home who needs the special services and the home is required for 
+              someone who does.</li> 
+             <li>The home is much larger than you reasonably need and you have taken over the tenancy from another member of your family. (This reason is rarely used).</li> 
+              </ul> 
+
+              <p>
+              The Council Housing Service will consult you if the Council Housing Service wants to evict you because of these reasons. The Council Housing Service will also offer 
+              you alternative accommodation which meets your reasonable needs. If the Council Housing Service has to go to court you can challenge the reasons given by the Council Housing
+              Service to evict you and/or the suitability of the alternative accommodation offered by the Council Housing Service. You should get legal advice before you do this. 
+              These reasons for ending tenancies are part of the Housing Act 1985.
+              </p> 
+              
+            </div>
+          </details>  
+
+
+ <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Abandonment and Notice to Quit</h3>
+          <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content"> 
+                <p>
+                If you abandon your property, the Council Housing Service will treat it as a surrender of your tenancy, and the Council Housing Service may re-enter the 
+                property and relet it. You will be responsible for the rent until the Council Housing Service accepts the surrender. If you do not use the property as your only 
+                or principal home, the Council Housing Service may serve you with a Notice to Quit.
+                </p> 
+            </div>
+          </details>           
+
+  <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Tenancy References</h3>
+          <div class="accordion-icon"></div>
+            </summary>
+              <div class="accordion-content"> 
+                <p>
+                IMFIT (Rents) can provide a financial reference for you. Your Neighbourhood Support Team can provide a Tenancy Reference.
+                </p>
+                <p>
+                Both of these may be subject to charges before the reference is returned.
+                </p>
+                <p>
+                If this is for a mortgage company or a private landlord, the company needs to put this request in writing. There is a charge for this of £60, which must be paid to
+                IMFIT before the reference is returned. The fee can be paid by debit/credit card or by BACS. If they want to pay this, transfer the call to IMFIT - this is NOT paid to
+                the rent account.
+                </p> 
+
+<strong>Reference requests should be sent to:</strong> <br>
+
+Sheffield Council Housing Service<br> 
+
+PO Box 5967<br> 
+
+Sheffield<br> 
+
+S2 9GH</p> 
+
+<p>
+For Social Landlords (Housing Associations), these also need to be put in writing, but there is no charge. Social Landlords can also email details of their request to 
+<a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> if they prefer to send an email.
+</p>
+</div>
+</details>   
+
+  `,
+  { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
+  { typeKey: "Tenancy_Sustainment_information_provided" },
+  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { type: "tenancyAgreementRequest", keywords: ["Tenancy"], categories: ["Housing"] },
+  { date: "08/11/2024", name: "Shahzad Athar" }
+);
+
+const tenancySustainment = new MenuH(
+  "tenancySustainment",
+  "Tenancy Sustainment",
+  "Information about Housing Tenancy Sustainment",
+  [
+    fences,
+    fobsandKeys,
+    nameChanges,
+    parkingPermitsHS,
+    permissions,
+    tenancyAgreementRequest,
+    tenancyConditions
+  ]
+);
+  
+  
+  // Example instantiation for topicExample1
+  const topicExample = new ContentH(
+    "topicexample1",
+    "Topic Title Example 1",
+    "Topic Description Example 1",
+    `<p>example text</p>`,
+    { buttonLabel: "Example 1", formName: "example_form" },
+    { typeKey: "example_transfered_to_service" },
+    { typeKey: "example_information_provided" },
+    { type: "Request", keywords: [], categories: ["Housing"] },
+    { date: "09/10/2024", name: "Elliott Griffiths" }
+  );
+  
+  // Example instantiation for subjectExample2 (Menu with topics)
+  
+  // Example instantiation for subjectExample1 (Full content)
+  const subjectExample1 = new ContentH(
+    "subjectexample1",
+    "Subject Title Example 1",
+    "Subject Description Example 1",
+    `<p>example text</p>`,
+    { buttonLabel: "Example 1", formName: "example_form" },
+    { typeKey: "example_transfered_to_service" },
+    { typeKey: "example_information_provided" },
+    { type: "Apply", keywords: [], categories: ["Housing"] },
+    { date: "05/09/2024", name: "Elliott Griffiths" }
+  );
+  
+  // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
+  // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
+  
+  const housing = new ServiceH(
+    "housing",
+    "Housing",
+    "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
+    [subjectExample1, estatesAndEnvironments, housingBenefits, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, tenancySustainment, bidding, applicationChanges, applyForRehousing, rehousing, indoorCommunalAreas]
+  );
