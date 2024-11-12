@@ -5136,43 +5136,6 @@ const idReferencesMenu = new MenuH(
   [idReferences, acceptableId, idFaq, referencesFAQs, movingIn, mutualExchanges]
 );
 
-const fencesCouncilHousing = new ContentH(
-  "fencesCouncilHousing",
-  "Fences (Council Housing)",
-  "Installation, repair and removal of fences",
-  `
-    <h3>New Fence</h3>
-    <p>
-      Installation of fences is the tenants responsibility. The customer will need
-      to have permission to install a new fence.
-    </p>
-    <h3>Repair to an Existing Fence</h3>
-    <p>
-      The Council do not repair tenants' fences. It is the tenant's responsibility.
-    </p>
-    <h3>Fallen Fence to be Removed</h3>
-    <p>
-      Estate Services teams will only remove blown down fences if they are a safety
-      hazard.
-    </p>
-  `,
-  { buttonLabel: "Report Housing Fences", formName: "hou_sustainment_fence" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
-  {
-    type: "Information",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Estates and Environments"],
-  },
-  { date: "09/10/2024", name: "Elliott Griffiths" }
-);
-
 const newAndExistingRepairs = new ContentH(
   "newAndExistingRepairs",
   "New and Existing Repairs",
