@@ -5111,44 +5111,6 @@ const benefitClaim = new ContentH(
   { date: "14/10/2024", name: "Omily Parkin" }
 );
 
-const applyForRehousing = new ContentH(
-  "applyForRehousing",
-  "Rehousing",
-  "Apply for rehousing",
-  `
-    <p>
-      To apply for Social Housing you need to do so via the Property Shop website.
-      There are no paper application forms.
-    </p>
-    <p>Go online and register on www.sheffieldpropertyshop.org.uk</p>
-    <p>
-      Before you can complete an application to join the Housing Register you will
-      need to register yourself as a new household on the system.
-    </p>
-    <p>
-      Once registered you will be able to complete an application form to join the
-      Housing Register.
-    </p>
-    <p>
-      You must produce proof of ID (and Child Benefit if appropriate) and a landlord
-      reference (if you are not already a Council tenant) at the same time,
-      documents can be uploaded via the website or at your local housing office or
-      First Point before your application will be validated.
-    </p>
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
-  },
-  { date: "23/09/2024", name: "Shahzad Athar" }
-);
 
 const policy = new MenuH(
   "rehousing",
