@@ -8370,35 +8370,6 @@ const tenancySustainment = new MenuH(
   ]
 );
   
-  
-  // Example instantiation for topicExample1
-  const topicExample = new ContentH(
-    "topicexample1",
-    "Topic Title Example 1",
-    "Topic Description Example 1",
-    `<p>example text</p>`,
-    { buttonLabel: "Example 1", formName: "example_form" },
-    { typeKey: "example_transfered_to_service" },
-    { typeKey: "example_information_provided" },
-    { type: "Request", keywords: [], categories: ["Housing"] },
-    { date: "09/10/2024", name: "Elliott Griffiths" }
-  );
-  
-  // Example instantiation for subjectExample2 (Menu with topics)
-  
-  // Example instantiation for subjectExample1 (Full content)
-  const subjectExample1 = new ContentH(
-    "subjectexample1",
-    "Subject Title Example 1",
-    "Subject Description Example 1",
-    `<p>example text</p>`,
-    { buttonLabel: "Example 1", formName: "example_form" },
-    { typeKey: "example_transfered_to_service" },
-    { typeKey: "example_information_provided" },
-    { type: "Apply", keywords: [], categories: ["Housing"] },
-    { date: "05/09/2024", name: "Elliott Griffiths" }
-  );
-  
   // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
   // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
   
