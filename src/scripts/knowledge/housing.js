@@ -5136,37 +5136,6 @@ const idReferencesMenu = new MenuH(
   [idReferences, acceptableId, idFaq, referencesFAQs, movingIn, mutualExchanges]
 );
 
-const blockedBinChutes = new ContentH(
-  "blockedBinChutes",
-  "Blocked Bin Chutes",
-  "Bin chutes in Council flats or maisonettes may become blocked and will be unblocked upon request",
-  `
-    <p>
-      Bin chutes in Council flats or maisonettes may become blocked and will be
-      unblocked upon request.
-    </p>
-    <p>
-      Open the blocked chutes list from the button below, and use the search, is the
-      property on the list?
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  {
-    type: "Report",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Estates and Environments"],
-  },
-  { date: "14/10/2024", name: "Omily Parkin" }
-);
-
 const communalCupboard = new ContentH(
   "communalCupboard",
   "Communal Cupboard and Meter Box Cupboard",
