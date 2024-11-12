@@ -6610,57 +6610,6 @@ please call the Home Ownership and Revenues Unit on 0114 27 35595.</p>
   { date: "10/10/2024", name: "George Whitehouse" }
 );
 
-const generalCouncilHousing = new ContentH(
-  "generalCouncilHousing",
-  "General Council Housing",
-  "Description",
-  `
-<h3>Area Office Information</h3>
-<p><a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices="target="_blank">Neighbourhood Offices</a></p>
-
-<h3>Bogus Callers</h3>
-<p>All Council Housing Service staff, surveyors, and contractors carry identification cards at all times. It is important that you always ask to see identification before you let anyone into your home. If you have any doubts about a caller’s identity, do not let them in.</p>
-
-<p>Council Officers NEVER ask a household for cash on the doorstep. You should always be alert to protect yourself against bogus callers. If you are suspicious about any caller’s identity, you should call the police immediately. </p>
-
-<p>Give the option to search for team contact details and to report by case (but remind to phone the police).</p>
-
-<h3>Housing Service Contact Details</h3>
-<p>You can write to us at: <br>
-<address>
-Sheffield Council Housing Service <br>
-PO Box 5967 <br>
-Sheffield <br>
-S2 9GH
-</address> 
-</p>
-
-<h3>Telephone Directory</h3>
-
-<p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx"target="_blank">Telephone Directory</a></p>
-
-
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
-  },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
-  {
-    type: "Information",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing", "Estates and Environments"],
-  },
-  { date: "09/10/2024", name: "Elliott Griffiths" }
-);
-
 const leaseholderInformation = new ContentH(
   "leaseholderInformation",
   "Leaseholder Information",
