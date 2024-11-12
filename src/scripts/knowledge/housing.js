@@ -6641,20 +6641,6 @@ const subjectExample1 = new ContentH(
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
-const housing = new ServiceH(
-  "housing",
-  "Housing",
-  "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-  [
-    subjectExample1,
-    estatesAndEnvironments,
-    generalCouncilHousing,
-    assetManagementAndRepairs,
-    leaseholderInformation,
-    rehousing,
-    shelteredAndSupported,
-  ]
-);
     const references = new ContentH(
     "references",
     "References",
