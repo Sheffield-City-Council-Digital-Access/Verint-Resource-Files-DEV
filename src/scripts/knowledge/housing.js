@@ -6610,49 +6610,6 @@ please call the Home Ownership and Revenues Unit on 0114 27 35595.</p>
   { date: "10/10/2024", name: "George Whitehouse" }
 );
 
-const estatesAndEnvironments = new MenuH(
-  "estatesAndEnvironments",
-  "Estates and Environments",
-  "Bin chutes, communal cupboard, fences, firesafety and garden maintenance",
-  [
-    fencesCouncilHousing,
-    gardenPledgeScheme,
-    blockedBinChutes,
-    communalCupboard,
-    communalFireSafety,
-  ]
-);
-
-const adaptations = new MenuH("adaptations", "Adaptations", "Desc tbc", [
-  chaseProgressOfAdaptation,
-  otherAdaptationRequest,
-]);
-
-const assetManagementAndRepairs = new MenuH(
-  "assetManagementAndRepairs",
-  "Asset Management And Repairs",
-  "Description",
-  [
-    newAndExistingRepairs,
-    adaptations,
-    asbestos,
-    communalAerials,
-    communalAreas,
-    doorEntrySystems,
-    emergencyRepairs,
-    loststolenkeys,
-    programmedWorks,
-    communalAreasFireSafety,
-    tenantsOwnImprovements,
-    districtHeating,
-    emergencyCredit,
-    homeImprovementRequests,
-    homeownerDisconnection,
-    payment,
-    refunds,
-  ]
-);
-
 // Example instantiation for topicExample1
 const topicExample = new ContentH(
   "topicexample1",
