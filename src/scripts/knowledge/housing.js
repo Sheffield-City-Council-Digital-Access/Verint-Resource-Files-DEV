@@ -12,7 +12,6 @@ class CoreH {
       this.subjects = subjects;
     }
   }
-}
 
 class MenuH extends CoreH {
   constructor(id, name, description, topics = []) {
