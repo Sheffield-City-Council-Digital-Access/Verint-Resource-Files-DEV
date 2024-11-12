@@ -8358,7 +8358,7 @@ const rehousing = new MenuH(
       arrearsorDebt,
       balanceEnquiry,
       //insurance,
-      onlineServices,
+      //onlineServices,
       references,
       rentVariation,
       statements,
