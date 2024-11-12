@@ -502,17 +502,7 @@ const gypsyAndTravellers = new ContentH(
   { date: "15/10/2024", name: "Joe Nixon" }
 );
 
-const shelteredAndSupported = new MenuH(
-  "shelteredAndSupported",
-  "Sheltered and Supported",
-  "Older persons independent living, extra care housing, furnished accommodation, and gypsy and travellers",
-  [
-    furnishedAccommodation,
-    olderPersonsIndependentLiving,
-    extraCareHousing,
-    gypsyAndTravellers,
-  ]
-);
+
 
 const bidding = new ContentH(
   "bidding",
@@ -3654,18 +3644,7 @@ const applicationChanges = new ContentH(
   
   
   
-  const estatesAndEnvironments = new MenuH(
-    "estatesAndEnvironments",
-    "Estates and Environments",
-    "Bin chutes, communal cupboard, fences, firesafety and garden maintenance",
-    [
-      fencesCouncilHousing,
-      gardenPledgeScheme,
-      blockedBinChutes,
-      communalCupboard,
-      communalFireSafety
-    ]
-  );
+  
   
   const chaseProgressOfAdaptation = new ContentH(
   "chaseProgressOfAdaptation",
@@ -3845,37 +3824,7 @@ If we give you permission, you should carry out the work within 90 days and let 
   { date: "10/10/2024", name: "George Whitehouse" }
 );
   
-  const adaptations = new MenuH("adaptations", "Adaptations", "Desc tbc", [
-    chaseProgressOfAdaptation,
-    otherAdaptationRequest
-  ]);
-  
-  
-  
-  const assetManagementAndRepairs = new MenuH(
-    "assetManagementAndRepairs",
-    "Asset Management And Repairs",
-    "Description",
-    [
-      newAndExistingRepairs,
-      adaptations,
-      asbestos,
-      communalAerials,
-      communalAreas,
-      doorEntrySystems,
-      emergencyRepairs,
-      loststolenkeys,
-      programmedWorks,
-      communalAreasFireSafety,
-      tenantsOwnImprovements,
-      districtHeating,
-      emergencyCredit,
-      homeImprovementRequests,
-      homeownerDisconnection,
-      payment,
-      refunds
-    ]
-  );
+ 
 
 
 //#region Tenancy enforcement
@@ -4690,24 +4639,7 @@ const benefitClaim = new ContentH(
     { date: "05/11/2024", name: "Andy Walker" }
   );
   
-  const housingBenefits = new MenuH(
-    "housingBenefits",
-    "Housing benefits",
-    "Information about housing benefits",
-    [
-      contactHousingBenefits,
-      benefitCap,
-      benefitClaim,
-      benefitsClawback,
-      benefitFraud,
-      benefitOnTwoHomes,
-      changeOfCircumstances,
-      localAssistanceScheme,
-      pdsa,
-      universalCredits,
-      welfareReform 
-    ]
-  );  
+  
 
 //#endregion Benefits
 
@@ -5000,43 +4932,6 @@ const benefitClaim = new ContentH(
   { date: "14/10/2024", name: "Omily Parkin" }
 );
 
-
-const policy = new MenuH(
-  "rehousing",
-  "Rehousing",
-  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
-  [
-    allocationsPolicyGuidance,
-    applicantPlacedInAPriorityBand,
-    fosteringAndAdoption,
-    priorityBandingTable,
-    threeOffersDemotedorDisqualified,
-  ]
-);
-
-const rehousing = new MenuH(
-  "rehousing",
-  "Rehousing",
-  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
-  [
-    applyForRehousing,
-    applicationChanges,
-    housingAssociations,
-    eligibility,
-    bidding,
-    idReferencesMenu,
-    policy,
-    priorities,
-    PropertyOffersAndViewings,
-  ]
-);
-
-const idReferencesMenu = new MenuH(
-  "idReferencesMenu",
-  "ID / References ",
-  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
-  [idReferences, acceptableId, idFaq, referencesFAQs, movingIn, mutualExchanges]
-);
 
 
 
@@ -7206,22 +7101,7 @@ const subjectExample1 = new ContentH(
   );
   
   
-  const rents = new MenuH(
-    "rents",
-    "Rents",
-    "Information about Housing Rents",
-    [
-      arrearsorDebt,
-      balanceEnquiry,
-      insurance,
-      onlineServices,
-      references,
-      rentVariation,
-      statements,
-      universalCredit,
-      contactRentsTeam
-    ]
-  );
+ 
   
 //#region Tenancy Sustainment
   
@@ -8355,7 +8235,136 @@ const tenancySustainment = new MenuH(
     tenancyConditions
   ]
 );
+
+ const adaptations = new MenuH("adaptations", "Adaptations", "Desc tbc", [
+    chaseProgressOfAdaptation,
+    otherAdaptationRequest
+  ]);
   
+  
+  
+  const assetManagementAndRepairs = new MenuH(
+    "assetManagementAndRepairs",
+    "Asset Management And Repairs",
+    "Description",
+    [
+      newAndExistingRepairs,
+      adaptations,
+      asbestos,
+      communalAerials,
+      communalAreas,
+      doorEntrySystems,
+      emergencyRepairs,
+      loststolenkeys,
+      programmedWorks,
+      communalAreasFireSafety,
+      tenantsOwnImprovements,
+      districtHeating,
+      emergencyCredit,
+      homeImprovementRequests,
+      homeownerDisconnection,
+      payment,
+      refunds
+    ]
+  );
+const shelteredAndSupported = new MenuH(
+  "shelteredAndSupported",
+  "Sheltered and Supported",
+  "Older persons independent living, extra care housing, furnished accommodation, and gypsy and travellers",
+  [
+    furnishedAccommodation,
+    olderPersonsIndependentLiving,
+    extraCareHousing,
+    gypsyAndTravellers,
+  ]
+);
+
+
+const estatesAndEnvironments = new MenuH(
+    "estatesAndEnvironments",
+    "Estates and Environments",
+    "Bin chutes, communal cupboard, fences, firesafety and garden maintenance",
+    [
+      fencesCouncilHousing,
+      gardenPledgeScheme,
+      blockedBinChutes,
+      communalCupboard,
+      communalFireSafety
+    ]
+  );
+const housingBenefits = new MenuH(
+    "housingBenefits",
+    "Housing benefits",
+    "Information about housing benefits",
+    [
+      contactHousingBenefits,
+      benefitCap,
+      benefitClaim,
+      benefitsClawback,
+      benefitFraud,
+      benefitOnTwoHomes,
+      changeOfCircumstances,
+      localAssistanceScheme,
+      pdsa,
+      universalCredits,
+      welfareReform 
+    ]
+  );  
+
+const policy = new MenuH(
+  "rehousing",
+  "Rehousing",
+  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
+  [
+    allocationsPolicyGuidance,
+    applicantPlacedInAPriorityBand,
+    fosteringAndAdoption,
+    priorityBandingTable,
+    threeOffersDemotedorDisqualified,
+  ]
+);
+
+const rehousing = new MenuH(
+  "rehousing",
+  "Rehousing",
+  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
+  [
+    applyForRehousing,
+    applicationChanges,
+    housingAssociations,
+    eligibility,
+    bidding,
+    idReferencesMenu,
+    policy,
+    priorities,
+    PropertyOffersAndViewings,
+  ]
+);
+
+const idReferencesMenu = new MenuH(
+  "idReferencesMenu",
+  "ID / References ",
+  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
+  [idReferences, acceptableId, idFaq, referencesFAQs, movingIn, mutualExchanges]
+);
+
+ const rents = new MenuH(
+    "rents",
+    "Rents",
+    "Information about Housing Rents",
+    [
+      arrearsorDebt,
+      balanceEnquiry,
+      insurance,
+      onlineServices,
+      references,
+      rentVariation,
+      statements,
+      universalCredit,
+      contactRentsTeam
+    ]
+  );
+
   // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
   // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
   
