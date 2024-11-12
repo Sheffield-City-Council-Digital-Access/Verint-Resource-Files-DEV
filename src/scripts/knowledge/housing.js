@@ -3667,7 +3667,183 @@ const applicationChanges = new ContentH(
     ]
   );
   
+  const chaseProgressOfAdaptation = new ContentH(
+  "chaseProgressOfAdaptation",
+  "Chase Progress of Adaptation",
+  "Description",
+  `
+<details class="accordion">
+      <summary class="accordion-header">
+        <h3>Chase Progress of Adaptation</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <details class="details-accordion">
+          <summary>Different Utility supplier</summary>
+          <div class="details-accordion-content">
+            
+<h2>Different Utility supplier</h2> 
+
+<p>If you are over £250 (Total Indebtedness) in arrears, your permission request is unlikely to be granted. 
+You must have written permission from the Housing Service to alter or improve your home. This includes:</p> 
+
+<ul> 
+
+    <li>Putting up any form of extension or building</li> 
+
+    <li>Adding to, changing, or replacing the fixtures, fittings, and appliances provided by us</li> 
+
+    <li>Altering essential gas, electricity, and water services</li> 
+
+    <li>Putting up a radio or television aerial or satellite dish</li> 
+
+    <li>Decorating the outside of your home</li> 
+
+    <li>Removing internal walls</li> 
+
+    <li>Insulation (Walls & Lofts)</li> 
+
+    <li>Conservatories (considered on an individual basis)</li> 
+
+</ul> 
+
+<p>However, the following are highly unlikely to be granted due to extra maintenance costs and 
+potential structural problems:</p> 
+
+<ul> 
+
+    <li>Loft conversions</li> 
+
+    <li>Spiral staircases</li> 
+
+    <li>Swimming pools</li> 
+
+    <li>Extensions</li> 
+
+    <li>Stair lifts in communal areas</li> 
+
+</ul> 
+
+<p>It is the customer's responsibility to seek and get any planning or building regulation approvals.</p> 
+
+<p>Every request for permission will be assessed using criteria and conditions appropriate to the particular request. 
+These criteria and conditions will be explained in the letter sent in reply to the customer's permission request.</p> 
+
+<p>We will take action against any installations that are in breach of Health and Safety regulations.</p> 
+
+
+          </div>
+        </details>
+
+
+        <details class="details-accordion">
+          <summary>
+            Permission Requests
+          </summary>
+          <div class="details-accordion-content">
+            
+<h2>Permission Requests</h2> 
+
+<p>Written permission requests should be referred in the first instance 
+(unless the customer is a Leaseholder or the permission request is for a mobility scooter) 
+to the appropriate Area Team at:</p> 
+
+<address> 
+
+    Sheffield Council Housing Service<br> 
+
+    PO Box 5967<br> 
+
+    Sheffield<br> 
+
+    S2 9GH 
+
+</address> 
+
+<p>If the permission request is for a mobility scooter, it should be referred to:</p> 
+
+<address> 
+
+    Maintenance Partnership Unit (Permissions)<br> 
+
+    PO Box 5967<br> 
+
+    Sheffield<br> 
+
+    S2 9GH 
+
+</address> 
+
+<p>If the customer is a Leaseholder, permission requests should be put in writing to:</p> 
+
+<address> 
+
+    Leaseholder Services Team<br> 
+
+    Floor 11<br> 
+
+    Moorfoot Building<br> 
+
+    Sheffield<br> 
+
+    S1 4PL 
+
+</address> 
+
+<p>Once we have received your request, we will contact you to discuss it and, where necessary, 
+arrange a suitable time to visit your property. We will give you a decision within 21 days of receiving your request. 
+If we give you permission, you should carry out the work within 90 days and let us know when it is complete. </p> 
+
+
+          </div>
+        </details>
+
+<details class="details-accordion">
+          <summary>
+            Permissions and Your Tenancy Conditions
+          </summary>
+          <div class="details-accordion-content">
+            <h3>Permissions and Your Tenancy Conditions</h3> 
+
+<p>Tenancy condition 47 states that:</p> 
+
+<ul> 
+
+    <li>You must ask for our permission, and you must not proceed until we give you our permission.</li> 
+
+    <li>We will confirm our answer in writing.</li> 
+
+    <li>If we refuse permission, we will explain why.</li> 
+
+    <li>If we give permission, we may attach additional conditions.</li> 
+
+    <li>We may withdraw our permission at any time if you do not comply with the conditions we have made.</li> 
+
+</ul> 
+
+<p>We will take action against you and/or charge you for any costs incurred if you do not comply with parts a-e above.</p> 
+          </div>
+        </details>
+       
   
+  `,
+  { buttonLabel: "Report Housing Adaptations ", formName: "hou_adaptations" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+
+  {
+    type: "Information",
+    keywords: [
+      "repairs and investmant",
+      "repears and investment",
+      "repairs and invesment",
+      "repair and investement",
+      "repairs and invesmant",
+    ],
+    categories: ["Housing"],
+  },
+  { date: "10/10/2024", name: "George Whitehouse" }
+);
   
   const adaptations = new MenuH("adaptations", "Adaptations", "Desc tbc", [
     chaseProgressOfAdaptation,
@@ -4864,183 +5040,7 @@ const idReferencesMenu = new MenuH(
 
 
 
-const chaseProgressOfAdaptation = new ContentH(
-  "chaseProgressOfAdaptation",
-  "Chase Progress of Adaptation",
-  "Description",
-  `
-<details class="accordion">
-      <summary class="accordion-header">
-        <h3>Chase Progress of Adaptation</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <details class="details-accordion">
-          <summary>Different Utility supplier</summary>
-          <div class="details-accordion-content">
-            
-<h2>Different Utility supplier</h2> 
 
-<p>If you are over £250 (Total Indebtedness) in arrears, your permission request is unlikely to be granted. 
-You must have written permission from the Housing Service to alter or improve your home. This includes:</p> 
-
-<ul> 
-
-    <li>Putting up any form of extension or building</li> 
-
-    <li>Adding to, changing, or replacing the fixtures, fittings, and appliances provided by us</li> 
-
-    <li>Altering essential gas, electricity, and water services</li> 
-
-    <li>Putting up a radio or television aerial or satellite dish</li> 
-
-    <li>Decorating the outside of your home</li> 
-
-    <li>Removing internal walls</li> 
-
-    <li>Insulation (Walls & Lofts)</li> 
-
-    <li>Conservatories (considered on an individual basis)</li> 
-
-</ul> 
-
-<p>However, the following are highly unlikely to be granted due to extra maintenance costs and 
-potential structural problems:</p> 
-
-<ul> 
-
-    <li>Loft conversions</li> 
-
-    <li>Spiral staircases</li> 
-
-    <li>Swimming pools</li> 
-
-    <li>Extensions</li> 
-
-    <li>Stair lifts in communal areas</li> 
-
-</ul> 
-
-<p>It is the customer's responsibility to seek and get any planning or building regulation approvals.</p> 
-
-<p>Every request for permission will be assessed using criteria and conditions appropriate to the particular request. 
-These criteria and conditions will be explained in the letter sent in reply to the customer's permission request.</p> 
-
-<p>We will take action against any installations that are in breach of Health and Safety regulations.</p> 
-
-
-          </div>
-        </details>
-
-
-        <details class="details-accordion">
-          <summary>
-            Permission Requests
-          </summary>
-          <div class="details-accordion-content">
-            
-<h2>Permission Requests</h2> 
-
-<p>Written permission requests should be referred in the first instance 
-(unless the customer is a Leaseholder or the permission request is for a mobility scooter) 
-to the appropriate Area Team at:</p> 
-
-<address> 
-
-    Sheffield Council Housing Service<br> 
-
-    PO Box 5967<br> 
-
-    Sheffield<br> 
-
-    S2 9GH 
-
-</address> 
-
-<p>If the permission request is for a mobility scooter, it should be referred to:</p> 
-
-<address> 
-
-    Maintenance Partnership Unit (Permissions)<br> 
-
-    PO Box 5967<br> 
-
-    Sheffield<br> 
-
-    S2 9GH 
-
-</address> 
-
-<p>If the customer is a Leaseholder, permission requests should be put in writing to:</p> 
-
-<address> 
-
-    Leaseholder Services Team<br> 
-
-    Floor 11<br> 
-
-    Moorfoot Building<br> 
-
-    Sheffield<br> 
-
-    S1 4PL 
-
-</address> 
-
-<p>Once we have received your request, we will contact you to discuss it and, where necessary, 
-arrange a suitable time to visit your property. We will give you a decision within 21 days of receiving your request. 
-If we give you permission, you should carry out the work within 90 days and let us know when it is complete. </p> 
-
-
-          </div>
-        </details>
-
-<details class="details-accordion">
-          <summary>
-            Permissions and Your Tenancy Conditions
-          </summary>
-          <div class="details-accordion-content">
-            <h3>Permissions and Your Tenancy Conditions</h3> 
-
-<p>Tenancy condition 47 states that:</p> 
-
-<ul> 
-
-    <li>You must ask for our permission, and you must not proceed until we give you our permission.</li> 
-
-    <li>We will confirm our answer in writing.</li> 
-
-    <li>If we refuse permission, we will explain why.</li> 
-
-    <li>If we give permission, we may attach additional conditions.</li> 
-
-    <li>We may withdraw our permission at any time if you do not comply with the conditions we have made.</li> 
-
-</ul> 
-
-<p>We will take action against you and/or charge you for any costs incurred if you do not comply with parts a-e above.</p> 
-          </div>
-        </details>
-       
-  
-  `,
-  { buttonLabel: "Report Housing Adaptations ", formName: "hou_adaptations" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
-
-  {
-    type: "Information",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing"],
-  },
-  { date: "10/10/2024", name: "George Whitehouse" }
-);
 
 const otherAdaptationRequest = new ContentH(
   "otherAdaptationRequest",
