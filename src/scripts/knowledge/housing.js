@@ -735,19 +735,6 @@ const bidding = new ContentH(
     { date: "23/09/2024", name: "Shahzad Athar" }
   );
   
-  const rehousing = new MenuH(
-    "rehousing",
-    "Rehousing",
-    "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
-    [
-      applyForRehousing,
-      applicationChanges,
-      housingAssociations,
-      eligibility,
-      bidding
-    ]
-  );
-  
   const blockedBinChutes = new ContentH(
     "blockedBinChutes",
     "Blocked Bin Chutes",
