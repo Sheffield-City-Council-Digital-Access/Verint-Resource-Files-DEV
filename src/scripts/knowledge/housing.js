@@ -8324,6 +8324,16 @@ const policy = new MenuH(
   ]
 );
 
+
+
+const idReferencesMenu = new MenuH(
+  "idReferencesMenu",
+  "ID / References ",
+  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
+  [idReferences, acceptableId, idFaq, referencesFAQs, movingIn, mutualExchanges]
+);
+
+
 const rehousing = new MenuH(
   "rehousing",
   "Rehousing",
@@ -8340,14 +8350,6 @@ const rehousing = new MenuH(
     PropertyOffersAndViewings,
   ]
 );
-
-const idReferencesMenu = new MenuH(
-  "idReferencesMenu",
-  "ID / References ",
-  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
-  [idReferences, acceptableId, idFaq, referencesFAQs, movingIn, mutualExchanges]
-);
-
  const rents = new MenuH(
     "rents",
     "Rents",
