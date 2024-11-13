@@ -124,7 +124,7 @@ const fundedEarlyLearning = new ContentSaC(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "funded_early_learning_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "funded_early_learning_information_provided" },
   {
     type: "Apply",
@@ -359,7 +359,7 @@ const freeSchoolMeals = new ContentSaC(
     buttonLabel: "Apply for Free School Meals",
     formName: "apply_school_meals",
   },
-  { typeKey: "apply_school_meals_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "apply_school_meals_information_provided" },
   {
     type: "Apply",
@@ -399,7 +399,7 @@ const freeSchoolMeals = new ContentSaC(
     ],
     categories: ["School and Childcare"],
   },
-  { date: "18/09/2024", name: "Dinal Willaims" }
+  { date: "18/09/2024", name: "Dinah Willaims" }
 );
 
 const schoolFoodVoucher = new ContentSaC(
@@ -650,7 +650,7 @@ const schoolFoodVoucher = new ContentSaC(
     ],
     categories: ["School and Childcare"],
   },
-  { date: "18/09/2024", name: "Dinal Willaims" }
+  { date: "18/09/2024", name: "Dinah Willaims" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
