@@ -62,8 +62,8 @@ const emergencyAccomadtion = new ContentOoH(
  
   `,
   { buttonLabel: "Apply Emergency accommodation", formName: "apply_emergency_homeless" },
-  { typeKey: "apply_emergency_homeless_transferred_to_service" },
-  { typeKey: "apply_emergency_homeless_information_provided" },
+  { typeKey: "emergency_homeless_transferred_to_service" },
+  { typeKey: "emergency_homeless_information_provided" },
   { type: "Information", keywords: ['Emergency accommodation','emergency accomodation', 'emergncy accomodation', 'emergancy accommodation', 'emergency accomodtion', 'emergncy accommodation',], categories: ["out of hours"] },
   { date: "13/10/2024", name: "Gee Whitehouse" }
 );
@@ -77,8 +77,8 @@ const emergencyChildService = new ContentOoH(
  
   `,
   { buttonLabel: "Apply children's emergency service", formName: "emergency_child_service" },
-  { typeKey: "emergency_child_service_transferred_to_service" },
-  { typeKey: "emergency_child_service_information_provided" },
+  { typeKey: "childrens_transferred_to_service" },
+  { typeKey: "chidlrens_information_provided" },
   { type: "Apply", keywords: ["children's emergency service",
     'Childrens emergncy service', "Childern's emergency service", 'Childrens emergancy service', "Childern's emergncy service", "Children's emrgency servce"], categories: ["out of hourss"] },
   { date: "13/10/2024", name: "Gee Whitehouse" }
@@ -92,8 +92,8 @@ const emergencyAdultService = new ContentOoH(
  
   `,
   { buttonLabel: "Apply Adult emergency service", formName: "emergency_adult_service" },
-  { typeKey: "emergency_adult_service_transferred_to_service" },
-  { typeKey: "emergency_adult_service_information_provided" },
+  { typeKey: "adults_transferred_to_service" },
+  { typeKey: "adults_service_information_provided" },
   { type: "Apply", keywords: ["Adult's emergency service",'adults emergancy service', "adult's emergncy service", 'adults emrgency servce', 'adults emerjency service', 'adults emergency servise'], categories: ["out of hours"] },
   { date: "13/10/2024", name: "Gee Whitehouse" }
 );
@@ -106,8 +106,8 @@ const reportAnEmergencyRepair = new ContentOoH(
  
   `,
   { buttonLabel: "Report an emergency repair", formName: "report_emergency_repair" },
-  { typeKey: "report_emergency_repair_transferred_to_service" },
-  { typeKey: "report_emergency_repair_information_provided" },
+  { typeKey: "repairs_transferred_to_service" },
+  { typeKey: "repairs_information_provided" },
   { type: "Report", keywords: ['Report an emergency repair','report an emergncy repair', 'reprot an emergency repair', 'report an emergncy repare', 'report an emrgency repair', 'report an emergancy repair'], categories: ["out of hours"] },
   { date: "13/10/2024", name: "Gee Whitehouse" }
 );
