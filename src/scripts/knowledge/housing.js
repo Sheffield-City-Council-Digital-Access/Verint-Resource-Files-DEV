@@ -57,7 +57,7 @@ class FormH extends CoreH {
 const furnishedAccommodation = new ContentH(
   "furnishedAccommodation",
   "Furnished Accommodation",
-  "Desc tbc",
+  "",
   `
     <p>
       Furnished Accommodation meets the need for good quality furnished housing for
@@ -197,7 +197,7 @@ const furnishedAccommodation = new ContentH(
 const olderPersonsIndependentLiving = new ContentH(
   "olderPersonsIndependentLiving",
   "Older Persons Independent Living (OPIL)",
-  "desc tbc",
+  "",
   `
     <p>
       Sheltered housing is rented accommodation that is specially designed for older
@@ -507,7 +507,7 @@ const gypsyAndTravellers = new ContentH(
 const bidding = new ContentH(
   "bidding",
   "Bidding",
-  "Desc tbc",
+  "",
   `
     <p>
       After you have registered for housing, you express your interest in renting a
@@ -691,8 +691,8 @@ const bidding = new ContentH(
   
   const applyForRehousing = new ContentH(
     "applyForRehousing",
-    "Rehousing",
     "Apply for rehousing",
+    "",
     `
       <p>
         To apply for Social Housing you need to do so via the Property Shop website.
@@ -728,7 +728,7 @@ const bidding = new ContentH(
   const blockedBinChutes = new ContentH(
     "blockedBinChutes",
     "Blocked Bin Chutes",
-    "Bin chutes in Council flats or maisonettes may become blocked and will be unblocked upon request",
+    "",
     `
       <p>
         Bin chutes in Council flats or maisonettes may become blocked and will be
@@ -920,7 +920,7 @@ const bidding = new ContentH(
   const newAndExistingRepairs = new ContentH(
     "newAndExistingRepairs",
     "New and Existing Repairs",
-    "Description",
+    "",
     `<h3>Leaseholder Repairs</h3> 
   
   <p>You are responsible for repairs within your own flat or home, and should make your own arrangements for these.
@@ -952,7 +952,7 @@ const bidding = new ContentH(
 const eligibility = new ContentH(
   "eligibility",
   "Eligibility",
-  "Desc tbc",
+  "",
   `
     <p>
       Sheffield City Council operates an open register and therefore any person over
@@ -1039,7 +1039,7 @@ const eligibility = new ContentH(
 const housingAssociations = new ContentH(
   "housingAssociations",
   "Housing Associations",
-  "Desc tbc",
+  "",
   `
 <p> 
 
@@ -1553,7 +1553,7 @@ NB: these contact details give a summary only; if further details are needed, pl
 const idReferences = new ContentH(
   "idReferences",
   "ID / References",
-  "Descritption",
+  "",
   `
   <h3>ID / References</h3>
     <p>
@@ -1652,7 +1652,7 @@ being rehoused with you.
 const acceptableId = new ContentH(
   "acceptableId",
   "Acceptable ID",
-  "Descritption",
+  "",
   `
   <p>
 <ul>
@@ -1707,7 +1707,7 @@ const acceptableId = new ContentH(
 const idFaq = new ContentH(
   "idFaq",
   "ID FAQ's",
-  "Descritption",
+  "",
   `
   <p>
 Customers who have submitted an online application for rehousing, 
@@ -1768,7 +1768,7 @@ submit a new Application and provide the relevant ID.
 const referencesFAQs = new ContentH(
   "referencesFAQs",
   "References FAQs",
-  "Descritption",
+  "",
   `
  
 <details class="accordion">
@@ -1954,7 +1954,7 @@ If ID and a reference are not submitted within this time, the application will b
 const movingIn = new ContentH(
   "movingIn",
   "Moving In",
-  "Descritption",
+  "",
   `
  
   <h4>When can I move in once offered a property?</h4>
@@ -2065,7 +2065,7 @@ The meter reading when they move out - you should contact the utility company th
 const mutualExchanges = new ContentH(
   "mutualExchanges",
   "Mutual Exchanges",
-  "Descritption",
+  "",
   `
 
           <p>
@@ -2505,7 +2505,7 @@ We will have also written to the other party advising them what action they need
 const allocationsPolicyGuidance = new ContentH(
   "allocationsPolicyGuidances",
   "Allocations Policy Guidance",
-  "Descritption",
+  "",
   `
  
 <details class="accordion">
@@ -2577,7 +2577,7 @@ const allocationsPolicyGuidance = new ContentH(
 const fosteringAndAdoption = new ContentH(
   "fosteringAndAdoption",
   "Fostering and Adoption",
-  "Descritption",
+  "",
   `
  
 <h3>Adoption</h3>
@@ -2615,7 +2615,7 @@ An e-mail from Social Services will be the normal route to receive confirmation.
 const priorityBandingTable = new ContentH(
   "priorityBandingTable",
   "Priority Banding Table",
-  "Descritption",
+  "",
   `
  
 <h3>Priority Banding Table</h3>
@@ -2984,7 +2984,7 @@ regardless of their effective date.</p>
 const threeOffersDemotedorDisqualified = new ContentH(
   "threeOffersDemotedorDisqualified",
   "Three Offers Demoted or Disqualified",
-  "Descritption",
+  "",
   `
  
 <h3>Reduced preference (demotion) following refusal of 3 reasonable offers</h3>
@@ -3031,7 +3031,7 @@ If you fail to attend a viewing of a property offered to you within the timescal
 const priorities = new ContentH(
   "priorities",
   "Priorities",
-  "Descritption",
+  "",
   `
  
 <h3>Priorities</h3>
@@ -3066,7 +3066,7 @@ const priorities = new ContentH(
 const PropertyOffersAndViewings = new ContentH(
   "PropertyOffersAndViewings",
   "Property Offers and Viewings",
-  "Descritption",
+  "",
   `
  
 <h3>Property Offers and Viewings</h3>
@@ -3154,7 +3154,7 @@ bids for each property are sorted automatically based on the eligibility criteri
 const applicantPlacedInAPriorityBand = new ContentH(
   "applicantPlacedInAPriorityBand",
   "Allocations Policy - Applicant placed in a priority band",
-  "Description",
+  "",
   `
 
   <details class="accordion">
@@ -3525,7 +3525,7 @@ const applicationChanges = new ContentH(
   const refunds = new ContentH(
     "refunds",
     "Refunds",
-    "Description",
+    "",
     `
   
   <p>Pay As You Go refunds are not made unless the tenant has vacated the property.<br>
@@ -3546,7 +3546,7 @@ const applicationChanges = new ContentH(
   const generalCouncilHousing = new ContentH(
     "generalCouncilHousing",
     "General Council Housing",
-    "Description",
+    "",
     `
   <h3>Area Office Information</h3>
   <p><a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices="target="_blank">Neighbourhood Offices</a></p>
@@ -3649,7 +3649,7 @@ const applicationChanges = new ContentH(
   const chaseProgressOfAdaptation = new ContentH(
   "chaseProgressOfAdaptation",
   "Chase Progress of Adaptation",
-  "Description",
+  "",
   `
 <details class="accordion">
       <summary class="accordion-header">
@@ -3914,35 +3914,6 @@ const tenancyEnforcementASB = new ContentH(
 
 
 //Application Changes page to be under the Rehousing menu
-
-
-const indoorCommunalAreas = new ContentH(
-  "indoorCommunalAreas",
-  "Indoor Communal Areas",
-  "TBC",
-  `<h3>Blocked Bin Chutes</h3>
-<p>Bin chutes in Council flats or maisonettes may become blocked and will be unblocked upon request.</p>
-  <><p>Open the blocked chutes list from the button below, and use the search, is the property on the list?<br>
-    <h3>Communal Cupboard and Meter Box Cupboard</h3>
-    ,p>Meter boxes cupboard can be inside or outside of the property and the keyhole will be triangular in shape. These will need to purchased from a hardware store as we cannot provide one.</></p><p>If the keyhole is not triangular then it is likely to be cupboard in the communal area. These cupboards may contain more than one gas/electric meter and they mostly require a T1 Key that is held in the local Area office.&quot;</p>
-    <h3>Communal Fire Safety </h3>
-    <p>Under the Regulatory Reform Order (2005), landlords are required to ensure that fire risk assessments are carried out in any shared areas of any properties they manage. Landlords also need to ensure that any fire escape routes and entrances/exits to properties are clear from trip hazards and items which would prevent exit from the building in the event of an emergency.</p><p>As such, please do not place in the communal area, items such as:</p><p>Chairs and tables<br>
-      Bookcases<br>
-        Loose carpets<br>
-          Curtains, blinds or net curtains<br>
-            Plastic flower pots<br>
-              Petrol containers and gas bottles<br>
-                Motorbikes, mopeds or any other equipment which uses petrol/diesel or gas<br>
-                  If any of these items, or any other item which is felt to be a fire risk, are left in your communal area we will ask residents to remove them. If they remain they will be removed.</p>
-                <p>Bicycles, prams, pushchairs and similar items will not normally be permitted to be stored or located within the internal communal parts unless there is an area capable of storage without causing obstruction.</p>
-                <p>You can have a small doormat if it is rubber backed. Edged and trimmed natural plants in ceramic, earthenware or metal pots, as long as they are not placed on stairs or landings which are the means of escape from the building.<br>
-                </></p>`,
-                {buttonLabel: "Example 1", formName: "example_form" },
-                {typeKey: "example_transfered_to_service" },
-                {typeKey: "example_information_provided" },
-                {type: "Apply", keywords: [], categories: ["Housing"] },
-                {date: "05/09/2024", name: "Elliott Griffiths" }
-)
 
  //#endregion Tenancy enforcement
 
@@ -4940,7 +4911,7 @@ const benefitClaim = new ContentH(
 const otherAdaptationRequest = new ContentH(
   "otherAdaptationRequest",
   "Other Adaptation Request",
-  "Description",
+  "",
   `
 
 <h3>Other Adaptation Requests</h3> 
@@ -5017,7 +4988,7 @@ const otherAdaptationRequest = new ContentH(
 const asbestos = new ContentH(
   "asbestos",
   "Asbestos",
-  "Description",
+  "",
   `
 <details class="accordion">
       <summary class="accordion-header">
@@ -5316,7 +5287,7 @@ The letter explains that Rilmac Insulation has been appointed as a contractor an
 const communalAerials = new ContentH(
   "communalAerials",
   "Communal Aerials",
-  "Description",
+  "",
   `
 
 <details class="accordion">
@@ -5366,7 +5337,7 @@ const communalAerials = new ContentH(
 const communalAreas = new ContentH(
   "communalAreas",
   "Communal Areas",
-  "Description",
+  "",
   `
 
 <details class="accordion">
@@ -5440,7 +5411,7 @@ const communalAreas = new ContentH(
 const doorEntrySystems = new ContentH(
   "doorEntrySystems",
   "Door Entry Systems",
-  "Description",
+  "",
   `
 
 <details class="accordion">
@@ -5576,7 +5547,7 @@ const doorEntrySystems = new ContentH(
 const emergencyRepairs = new ContentH(
   "emergencyRepairs",
   "Emergency Repairs",
-  "Description",
+  "",
   `
 
 <details class="accordion">
@@ -5651,7 +5622,7 @@ const emergencyRepairs = new ContentH(
 const carbonmonoxide = new ContentH(
   "carbonmonoxide",
   "Carbon Monoxide/ What is CO Poisoning",
-  "Description",
+  "",
   `
 
 
@@ -5740,7 +5711,7 @@ const carbonmonoxide = new ContentH(
 const loststolenkeys = new ContentH(
   "lostStolenKeys",
   "Lost Stolen Keys and Lock Repairs",
-  "Description",
+  "",
   `
 <details class="accordion">
       <summary class="accordion-header">
@@ -5811,7 +5782,7 @@ List of Area Offices:
 const programmedWorks = new ContentH(
   "programmedWorks",
   "Programmed Works",
-  "Description",
+  "",
   `
 
 
@@ -5977,7 +5948,7 @@ evidence that external lighting can reduce the incidence of burglary and is the 
 const communalAreasFireSafety = new ContentH(
   "communalAreasFireSafety",
   "Communal Areas Fire Safety",
-  "Description",
+  "",
   `
 
 <h2>Fire Safety in Communal Areas</h2> 
@@ -6026,7 +5997,7 @@ const communalAreasFireSafety = new ContentH(
 const propertyAge = new ContentH(
   "propertyAge",
   "Property Age",
-  "Description",
+  "",
   `
 
 <p><a href="https://sccextranet.sharepoint.com/:x:/s/CustomerServiceKnowledgeCouncilHousing/ESm4Dds9S6pAq3ChaiPPEH8BNQtMLmygyOEvErvW2ISK2A?e=Qkq084"target="_blank">property Age</a></p>
@@ -6056,7 +6027,7 @@ const propertyAge = new ContentH(
 const tenantsOwnImprovements = new ContentH(
   "tenantsOwnImprovements",
   "Tenants Own Improvements",
-  "Description",
+  "",
   `
 <details class="accordion">
       <summary class="accordion-header">
@@ -6142,12 +6113,11 @@ Customer's Email Address</p>
 const districtHeating = new ContentH(
   "districtHeating",
   "District Heating",
-  "Description",
+  "",
   `
 <details class="accordion">
       <summary class="accordion-header">
         <h3>District Heating</h3>
-        <h4>Charges</h4>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -6243,7 +6213,7 @@ const districtHeating = new ContentH(
 const emergencyCredit = new ContentH(
   "emergencyCredit",
   "Emergency Credit",
-  "Description",
+  "",
   `
 
 <p>"The meter has an emergency credit facility. This allows the customer to ‘borrow’ credit up to £10.00 which will 
@@ -6280,7 +6250,7 @@ To activate, press the blue button marked Press For Em Credit.</p>
 const homeImprovementRequests = new ContentH(
   "homeImprovementRequests",
   "Home Improvement Requests",
-  "Description",
+  "",
   `
 
 <p>Please Call the RPIT on 0114 2052615 for permission requests to carry out work/home 
@@ -6313,7 +6283,7 @@ maintenance to resolve unauthorised work to the District Hearting network will b
 const homeownerDisconnection = new ContentH(
   "homeownerDisconnection",
   "Homeowner Disconnection",
-  "Description",
+  "",
   `
 
 <p>Please call the Home Ownership and Revenues Unit on 27 35595 for further 
@@ -6347,7 +6317,7 @@ SCC properties will not be disconnected from the District Heating network.</p>
 const noHeatNoWater = new ContentH(
   "noHeatNoWater",
   "No Heat No Water",
-  "Description",
+  "",
   `
 
 <p>To access a supply of heat and hot water please follow the simple steps below: </p>
@@ -6385,9 +6355,9 @@ const noHeatNoWater = new ContentH(
 );
 
 const payment = new ContentH(
-  "noHeatNoWater",
+  "payment",
   "No Heat No Water",
-  "Description",
+  "",
   `
 
 <p> New tenants will initially be issued with a Pay As You Go card, however they will be supplied with a 
@@ -6505,33 +6475,6 @@ please call the Home Ownership and Revenues Unit on 0114 27 35595.</p>
   { date: "10/10/2024", name: "George Whitehouse" }
 );
 
-// Example instantiation for topicExample1
-const topicExample = new ContentH(
-  "topicexample1",
-  "Topic Title Example 1",
-  "Topic Description Example 1",
-  `<p>example text</p>`,
-  { buttonLabel: "Example 1", formName: "example_form" },
-  { typeKey: "example_transfered_to_service" },
-  { typeKey: "example_information_provided" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
-  { date: "09/10/2024", name: "Elliott Griffiths" }
-);
-
-// Example instantiation for subjectExample2 (Menu with topics)
-
-// Example instantiation for subjectExample1 (Full content)
-const subjectExample1 = new ContentH(
-  "subjectexample1",
-  "Subject Title Example 1",
-  "Subject Description Example 1",
-  `<p>example text</p>`,
-  { buttonLabel: "Example 1", formName: "example_form" },
-  { typeKey: "example_transfered_to_service" },
-  { typeKey: "example_information_provided" },
-  { type: "Apply", keywords: [], categories: ["Housing"] },
-  { date: "05/09/2024", name: "Elliott Griffiths" }
-);
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -7108,7 +7051,7 @@ const subjectExample1 = new ContentH(
 const fences = new ContentH(
   "fences",
   "Fences",
-  ",",
+  "",
   `
   <details class="accordion">
         <summary class="accordion-header">
@@ -7132,7 +7075,7 @@ const fences = new ContentH(
 const fobsandKeys = new ContentH(
   "fobsandKeys",
   "Fobs and Keys",
-  ",",
+  "",
   `
 <p>
 For lost or stolen keys, there may be a recharge (£5). Locks will only be replaced if the customer agrees to a recharge
@@ -7267,7 +7210,7 @@ It is only communal doors that are £5. If it's your own door, it's over £200 r
 const nameChanges = new ContentH(
   "nameChanges",
   "Name Changes",
-  ",",
+  "",
   `
 <p>
 You should present proof (3 documents in total) to a housing office or First Point who will copy the ID and save it to 
@@ -7297,15 +7240,15 @@ The same document cannot be used more than once (e.g., driving licence as primar
 
 const parkingPermitsHS = new ContentH(
   "parkingPermitsHS",
-  "parkingPermitsHS",
-  ",",
+  "Housing Service Parking Permits",
+  "",
   ` 
 <p>
 <strong>Service Area:</strong> Customer Services Back Office (Fulfilment Team)<br>
 <strong>Telephone Number:</strong>0114 2734011<br>
 <strong>Further Information:</strong> Free School Meals, Blue Badge, Parking Permits, Children's Travel Pass, Disability Travel Permit, 
 Streets Ahead, Environmental Services, Local Assistance Scheme<br>
-<strong>Email Address:</strong> [insert email address here]
+<strong>Email Address:</strong> customerservices@sheffield.gov.uk
 </p>
 
   `,
@@ -7319,7 +7262,7 @@ Streets Ahead, Environmental Services, Local Assistance Scheme<br>
 const permissions = new ContentH(
   "permissions",
   "Permissions",
-  ",",
+  "",
   ` 
 <p>
 If you are over £250 (Total Indebtedness) in arrears, your permissions request is unlikely to be granted. You must have written permission 
@@ -7429,7 +7372,7 @@ We will take action against any installations that are in breach of Health and S
 const tenancyAgreementRequest = new ContentH(
   "tenancyAgreementRequest",
   "Tenancy Agreement Request",
-  ",",
+  "",
   ` 
 <p>
 If the request is urgent or for a former tenancy, you will need to visit your Area Office with relevant ID to obtain a copy of your Tenancy Agreement.
@@ -8236,7 +8179,7 @@ const tenancySustainment = new MenuH(
   ]
 );
 
- const adaptations = new MenuH("adaptations", "Adaptations", "Desc tbc", [
+ const adaptations = new MenuH("adaptations", "Adaptations", "", [
     chaseProgressOfAdaptation,
     otherAdaptationRequest
   ]);
@@ -8246,7 +8189,7 @@ const tenancySustainment = new MenuH(
   const assetManagementAndRepairs = new MenuH(
     "assetManagementAndRepairs",
     "Asset Management And Repairs",
-    "Description",
+    "",
     [
       newAndExistingRepairs,
       adaptations,
@@ -8312,8 +8255,8 @@ const housingBenefits = new MenuH(
   );  
 
 const policy = new MenuH(
-  "rehousing",
-  "Rehousing",
+  "policy",
+  "Policy",
   "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
   [
     allocationsPolicyGuidance,
@@ -8328,7 +8271,7 @@ const policy = new MenuH(
 
 const idReferencesMenu = new MenuH(
   "idReferencesMenu",
-  "ID / References ",
+  "Rehousing ID / References ",
   "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
   [idReferences, acceptableId, idFaq, referencesFAQs, movingIn, mutualExchanges]
 );
@@ -8344,7 +8287,7 @@ const rehousing = new MenuH(
     housingAssociations,
     eligibility,
     bidding,
-    idReferencesMenu,
+    //idReferencesMenu,
     policy,
     priorities,
     PropertyOffersAndViewings,
@@ -8374,5 +8317,5 @@ const rehousing = new MenuH(
     "housing",
     "Housing",
     "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-    [subjectExample1, estatesAndEnvironments, housingBenefits, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, tenancySustainment, bidding, applicationChanges, applyForRehousing, rehousing, indoorCommunalAreas]
+    [estatesAndEnvironments, housingBenefits, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, tenancySustainment, idReferencesMenu]
   );
