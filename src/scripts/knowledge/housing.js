@@ -7051,7 +7051,7 @@ please call the Home Ownership and Revenues Unit on 0114 27 35595.</p>
 const fences = new ContentH(
   "fences",
   "Fences",
-  ",",
+  "",
   `
   <details class="accordion">
         <summary class="accordion-header">
@@ -7075,7 +7075,7 @@ const fences = new ContentH(
 const fobsandKeys = new ContentH(
   "fobsandKeys",
   "Fobs and Keys",
-  ",",
+  "",
   `
 <p>
 For lost or stolen keys, there may be a recharge (£5). Locks will only be replaced if the customer agrees to a recharge
@@ -7210,7 +7210,7 @@ It is only communal doors that are £5. If it's your own door, it's over £200 r
 const nameChanges = new ContentH(
   "nameChanges",
   "Name Changes",
-  ",",
+  "",
   `
 <p>
 You should present proof (3 documents in total) to a housing office or First Point who will copy the ID and save it to 
@@ -7240,8 +7240,8 @@ The same document cannot be used more than once (e.g., driving licence as primar
 
 const parkingPermitsHS = new ContentH(
   "parkingPermitsHS",
-  "parkingPermitsHS",
-  ",",
+  "Housing Service Parking Permits",
+  "",
   ` 
 <p>
 <strong>Service Area:</strong> Customer Services Back Office (Fulfilment Team)<br>
@@ -7262,7 +7262,7 @@ Streets Ahead, Environmental Services, Local Assistance Scheme<br>
 const permissions = new ContentH(
   "permissions",
   "Permissions",
-  ",",
+  "",
   ` 
 <p>
 If you are over £250 (Total Indebtedness) in arrears, your permissions request is unlikely to be granted. You must have written permission 
@@ -7372,7 +7372,7 @@ We will take action against any installations that are in breach of Health and S
 const tenancyAgreementRequest = new ContentH(
   "tenancyAgreementRequest",
   "Tenancy Agreement Request",
-  ",",
+  "",
   ` 
 <p>
 If the request is urgent or for a former tenancy, you will need to visit your Area Office with relevant ID to obtain a copy of your Tenancy Agreement.
