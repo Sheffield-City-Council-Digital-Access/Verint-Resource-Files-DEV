@@ -691,8 +691,8 @@ const bidding = new ContentH(
   
   const applyForRehousing = new ContentH(
     "applyForRehousing",
-    "Rehousing",
     "Apply for rehousing",
+    "description for rehousing",
     `
       <p>
         To apply for Social Housing you need to do so via the Property Shop website.
