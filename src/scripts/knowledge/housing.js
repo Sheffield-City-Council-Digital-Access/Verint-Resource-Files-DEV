@@ -6385,7 +6385,7 @@ const noHeatNoWater = new ContentH(
 );
 
 const payment = new ContentH(
-  "noHeatNoWater",
+  "payment",
   "No Heat No Water",
   "Description",
   `
@@ -6505,33 +6505,6 @@ please call the Home Ownership and Revenues Unit on 0114 27 35595.</p>
   { date: "10/10/2024", name: "George Whitehouse" }
 );
 
-// Example instantiation for topicExample1
-const topicExample = new ContentH(
-  "topicexample1",
-  "Topic Title Example 1",
-  "Topic Description Example 1",
-  `<p>example text</p>`,
-  { buttonLabel: "Example 1", formName: "example_form" },
-  { typeKey: "example_transfered_to_service" },
-  { typeKey: "example_information_provided" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
-  { date: "09/10/2024", name: "Elliott Griffiths" }
-);
-
-// Example instantiation for subjectExample2 (Menu with topics)
-
-// Example instantiation for subjectExample1 (Full content)
-const subjectExample1 = new ContentH(
-  "subjectexample1",
-  "Subject Title Example 1",
-  "Subject Description Example 1",
-  `<p>example text</p>`,
-  { buttonLabel: "Example 1", formName: "example_form" },
-  { typeKey: "example_transfered_to_service" },
-  { typeKey: "example_information_provided" },
-  { type: "Apply", keywords: [], categories: ["Housing"] },
-  { date: "05/09/2024", name: "Elliott Griffiths" }
-);
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -8344,7 +8317,7 @@ const rehousing = new MenuH(
     housingAssociations,
     eligibility,
     bidding,
-    idReferencesMenu,
+    //idReferencesMenu,
     policy,
     priorities,
     PropertyOffersAndViewings,
@@ -8374,5 +8347,5 @@ const rehousing = new MenuH(
     "housing",
     "Housing",
     "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-    [subjectExample1, estatesAndEnvironments, housingBenefits, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, tenancySustainment, bidding, applicationChanges, applyForRehousing, rehousing, indoorCommunalAreas]
+    [idReferencesMenu, estatesAndEnvironments, housingBenefits, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, tenancySustainment, bidding, applicationChanges, applyForRehousing, rehousing, indoorCommunalAreas]
   );
