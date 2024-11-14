@@ -692,7 +692,7 @@ const bidding = new ContentH(
   const applyForRehousing = new ContentH(
     "applyForRehousing",
     "Apply for rehousing",
-    "description for rehousing",
+    "",
     `
       <p>
         To apply for Social Housing you need to do so via the Property Shop website.
@@ -8272,7 +8272,7 @@ const policy = new MenuH(
 
 const idReferencesMenu = new MenuH(
   "idReferencesMenu",
-  "ID / References ",
+  "Rehousing ID / References ",
   "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
   [idReferences, acceptableId, idFaq, referencesFAQs, movingIn, mutualExchanges]
 );
@@ -8288,7 +8288,7 @@ const rehousing = new MenuH(
     housingAssociations,
     eligibility,
     bidding,
-    idReferencesMenu,
+    //idReferencesMenu,
     policy,
     priorities,
     PropertyOffersAndViewings,
@@ -8318,5 +8318,5 @@ const rehousing = new MenuH(
     "housing",
     "Housing",
     "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-    [estatesAndEnvironments, housingBenefits, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, tenancySustainment]
+    [estatesAndEnvironments, housingBenefits, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, tenancySustainment, idReferencesMenu]
   );
