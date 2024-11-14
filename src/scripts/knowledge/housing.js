@@ -1553,7 +1553,7 @@ NB: these contact details give a summary only; if further details are needed, pl
 const idReferences = new ContentH(
   "idReferences",
   "ID / References",
-  "Descritption",
+  "",
   `
   <h3>ID / References</h3>
     <p>
@@ -1652,7 +1652,7 @@ being rehoused with you.
 const acceptableId = new ContentH(
   "acceptableId",
   "Acceptable ID",
-  "Descritption",
+  "",
   `
   <p>
 <ul>
@@ -1707,7 +1707,7 @@ const acceptableId = new ContentH(
 const idFaq = new ContentH(
   "idFaq",
   "ID FAQ's",
-  "Descritption",
+  "",
   `
   <p>
 Customers who have submitted an online application for rehousing, 
@@ -1768,7 +1768,7 @@ submit a new Application and provide the relevant ID.
 const referencesFAQs = new ContentH(
   "referencesFAQs",
   "References FAQs",
-  "Descritption",
+  "",
   `
  
 <details class="accordion">
@@ -1954,7 +1954,7 @@ If ID and a reference are not submitted within this time, the application will b
 const movingIn = new ContentH(
   "movingIn",
   "Moving In",
-  "Descritption",
+  "",
   `
  
   <h4>When can I move in once offered a property?</h4>
@@ -2065,7 +2065,7 @@ The meter reading when they move out - you should contact the utility company th
 const mutualExchanges = new ContentH(
   "mutualExchanges",
   "Mutual Exchanges",
-  "Descritption",
+  "",
   `
 
           <p>
@@ -2505,7 +2505,7 @@ We will have also written to the other party advising them what action they need
 const allocationsPolicyGuidance = new ContentH(
   "allocationsPolicyGuidances",
   "Allocations Policy Guidance",
-  "Descritption",
+  "",
   `
  
 <details class="accordion">
@@ -2577,7 +2577,7 @@ const allocationsPolicyGuidance = new ContentH(
 const fosteringAndAdoption = new ContentH(
   "fosteringAndAdoption",
   "Fostering and Adoption",
-  "Descritption",
+  "",
   `
  
 <h3>Adoption</h3>
@@ -2615,7 +2615,7 @@ An e-mail from Social Services will be the normal route to receive confirmation.
 const priorityBandingTable = new ContentH(
   "priorityBandingTable",
   "Priority Banding Table",
-  "Descritption",
+  "",
   `
  
 <h3>Priority Banding Table</h3>
@@ -2984,7 +2984,7 @@ regardless of their effective date.</p>
 const threeOffersDemotedorDisqualified = new ContentH(
   "threeOffersDemotedorDisqualified",
   "Three Offers Demoted or Disqualified",
-  "Descritption",
+  "",
   `
  
 <h3>Reduced preference (demotion) following refusal of 3 reasonable offers</h3>
@@ -3031,7 +3031,7 @@ If you fail to attend a viewing of a property offered to you within the timescal
 const priorities = new ContentH(
   "priorities",
   "Priorities",
-  "Descritption",
+  "",
   `
  
 <h3>Priorities</h3>
@@ -3066,7 +3066,7 @@ const priorities = new ContentH(
 const PropertyOffersAndViewings = new ContentH(
   "PropertyOffersAndViewings",
   "Property Offers and Viewings",
-  "Descritption",
+  "",
   `
  
 <h3>Property Offers and Viewings</h3>
@@ -8288,7 +8288,7 @@ const rehousing = new MenuH(
     housingAssociations,
     eligibility,
     bidding,
-    //idReferencesMenu,
+    idReferencesMenu,
     policy,
     priorities,
     PropertyOffersAndViewings,
@@ -8318,5 +8318,5 @@ const rehousing = new MenuH(
     "housing",
     "Housing",
     "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-    [idReferencesMenu, estatesAndEnvironments, housingBenefits, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, tenancySustainment]
+    [estatesAndEnvironments, housingBenefits, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, tenancySustainment]
   );
