@@ -8286,7 +8286,7 @@ const housingBenefits = new MenuH(
 
 const policy = new MenuH(
   "policy",
-  "Rehousing",
+  "policy",
   "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
   [
     allocationsPolicyGuidance,
