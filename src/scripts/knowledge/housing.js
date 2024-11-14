@@ -6118,7 +6118,6 @@ const districtHeating = new ContentH(
 <details class="accordion">
       <summary class="accordion-header">
         <h3>District Heating</h3>
-        <h4>Charges</h4>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
