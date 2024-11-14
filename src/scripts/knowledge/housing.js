@@ -7248,7 +7248,7 @@ const parkingPermitsHS = new ContentH(
 <strong>Telephone Number:</strong>0114 2734011<br>
 <strong>Further Information:</strong> Free School Meals, Blue Badge, Parking Permits, Children's Travel Pass, Disability Travel Permit, 
 Streets Ahead, Environmental Services, Local Assistance Scheme<br>
-<strong>Email Address:</strong> [insert email address here]
+<strong>Email Address:</strong> customerservices@sheffield.gov.uk
 </p>
 
   `,
