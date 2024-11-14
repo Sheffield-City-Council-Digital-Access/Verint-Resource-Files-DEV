@@ -71,7 +71,7 @@ const complaints = new ContentFaC(
     <p> When a customer makes a complaint, their complaint will be handled through with the approach set out in this Policy. 
     We will do this irrespective of where and how they make their complaint.</p>
 
-    <h3>Service request enquiry and complaints<h3>
+    <h3>Service request enquiry and complaints</h3>
 
      <p>Our communication with the complainant will not identify individual members of staff or contractors, 
      except in exceptional circumstances, as their actions are undertaken on behalf of the Council.</p>
