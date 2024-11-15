@@ -448,7 +448,6 @@ function handleInitialisingEvent() {
 
   $(document).ajaxComplete(function (event, xhr, settings) {
     if (settings.url.startsWith(KDF.kdf().rest.attachFiles)) {
-      console.log(event, xhr, settings, KDF.kdf());
       const { field, token, filename, mimetype } = xhr.responseJSON[0];
       const deleteButton = getFileDeleteByInputId(field);
       const fileNameField = field.replace("file_", "txt_file_name_");
@@ -1550,15 +1549,15 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 // --- HANDLE ON FAILED ACTION EVENT -------------------------------------- \\
 
 function handleFailedAction(event, action, xhr, settings, thrownError) {
-  logArguments(event, action, xhr, settings, thrownError);
   KDF.hideMessages();
 
   if (action === "retrieve-vehicle-details") {
     resetVehicleSearch(false);
     showVehicleFields();
   } else {
-    // temp
-    KDF.showError(`${action} failed: ${thrownError}`);
+    if (KDF.kdf().access === "agent" && filePath) {
+      KDF.showError(`${action} failed: ${thrownError}`);
+    }
   }
 
   // keep at the bottom
@@ -1715,6 +1714,7 @@ function checkPageProgress() {
   const validationMessages = currentPageElement.querySelectorAll(
     ".dform_validationMessage"
   );
+
   const isValidationMessageVisible =
     Array.from(validationMessages).some(isVisible);
 
@@ -2108,7 +2108,6 @@ function calculateRelativeDate(relativeDate, now) {
 function getMinMaxDates(dateElementId) {
   const $dateElement = $(`#${dateElementId}`);
   if ($dateElement.length === 0) {
-    console.error(`Element with ID "${dateElementId}" not found.`);
     return null;
   }
   let minDate = $dateElement.attr("data-mindate");
@@ -2124,7 +2123,6 @@ function getMinMaxDates(dateElementId) {
 }
 
 function checkDate(id, dd, mm, yy, element) {
-  console.log(id, dd, mm, yy, element);
   const dateMessage = getValidationMessageFromSession(id);
 
   // Clear previous errors
@@ -2137,7 +2135,6 @@ function checkDate(id, dd, mm, yy, element) {
   let hasError = false;
   let errorMsg = "";
   const errorFields = [];
-  console.log(activeField);
   const dateFields = ["date-dd", "date-mm", "date-yy"];
   const errorConditions = [
     {
@@ -2187,6 +2184,8 @@ function checkDate(id, dd, mm, yy, element) {
       $(`#${id} .${field}`).addClass("dform_fielderror");
     });
     $(`#${id}`).find(".dform_validationMessage").text(errorMsg).show();
+    $(`#${id.replace("_date_", "_txt_")}`).val("");
+    $(`#${id.replace("_date_", "_dt_")}`).val("");
     return;
   }
 
@@ -2199,12 +2198,17 @@ function checkDate(id, dd, mm, yy, element) {
       const localFormat = new Date(date).toLocaleDateString("en-GB");
       $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
       $(`#${id.replace("_date_", "_dt_")}`).val(date);
+    } else {
+      $(`#${id.replace("_date_", "_txt_")}`).val("");
+      $(`#${id.replace("_date_", "_dt_")}`).val("");
+      $(`#${id} .date-dd, #${id} .date-mm, #${id} .date-yy`).addClass(
+        "dform_fielderror"
+      );
     }
   }
 }
 
 function inputDate(id, nextID, key) {
-  console.log(key);
   const ignoredKeys = [9, 16, 37, 38, 39, 40];
   if (ignoredKeys.indexOf(key) !== -1) return;
   const maxLength = $(`#${id}`).attr("maxlength");
@@ -3126,7 +3130,6 @@ function do_KDF_mapReady_esriMap(map, positionLayer) {
 }
 
 function mapClick(evt) {
-  console.log("map click", evt);
   KDF.setVal("txt_site_name", "");
   KDF.setVal("txt_site_code", "");
   KDF.setVal("txt_feature_name", "");
@@ -3738,7 +3741,6 @@ function initLayerList() {
 }
 
 function addPoint(map, point, markerSymbol) {
-  console.log("addPoint", map, point, markerSymbol);
   streetMapPositionLayer.removeAll();
 
   var pointGraphic;
