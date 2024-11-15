@@ -1776,17 +1776,17 @@ function checkPageProgress() {
     let isEmpty = el.value.trim() === "";
     let isValid = el.checkValidity();
 
-    // if (
-    //   name.startsWith("num_") &&
-    //   (name.endsWith("_dd") || name.endsWith("_mm") || name.endsWith("_yy"))
-    // ) {
-    //   console.log("date", el.name);
-    //   const dateElement = $(
-    //     `#dform_widget_${name.replace("_num_", "_dt_").slice(0, -3)}`
-    //   );
-    //   isEmpty = !dateElement.val();
-    //   isValid = dateElement.checkValidity();
-    // }
+    if (
+      name.startsWith("num_") &&
+      (name.endsWith("_dd") || name.endsWith("_mm") || name.endsWith("_yy"))
+    ) {
+      console.log("date", el.name);
+      const dateElement = $(
+        `#dform_widget_${name.replace("_num_", "_dt_").slice(0, -3)}`
+      );
+      isEmpty = !dateElement.val();
+      isValid = dateElement.checkValidity();
+    }
 
     return isEmpty || !isValid;
   });
