@@ -1452,29 +1452,29 @@ const idReferences = new ContentH(
   `
     <h3>ID / References</h3>
     <p>
-      For current SCC tenants, ID is required for new rehousing applications.
-      For non SCC tenants, ID and a Reference are required for new rehousing applications.
+      For current SCC tenants, ID is required for new rehousing applications.<br>
+      For non SCC tenants, ID and a Reference are required for new rehousing applications.<br><br>
 
-      You must provide two forms of identification (do not post original documents to us). 
-      One must be from the Proof of ID documents list 
-      (see Acceptable ID below) whilst the second must provide proof of your current UK address.
+      You must provide two forms of identification (do not post original documents to us). <br>
+      One must be from the Proof of ID documents list <br>
+      (see Acceptable ID below) whilst the second must provide proof of your current UK address.<br><br>
 
-      Photo ID is also required to prove your identity. 
-      If you do not have photo ID, you must provide a passport-sized photo.  
-      A <strong> landlord Reference</strong>  is also required. 
+      Photo ID is also required to prove your identity. <br>
+      If you do not have photo ID, you must provide a passport-sized photo.  <br>
+      A <strong> landlord Reference</strong>  is also required. <br><br>
 
-      The same document cannot be used more than once e.g. 
-      driving licence as primary evidence and proof of address. 
+      The same document cannot be used more than once e.g. <br>
+      driving licence as primary evidence and proof of address. <br>
       Proof of child benefit receipt is required where children under 16 years of age are 
-      being rehoused with you.
+      being rehoused with you.<br><br>
 
       All required ID's and References must be brought to your Local Area Housing Office, 
-      or to Howden House First Point, at the same time. 
-      <strong> Alternatively, you can upload your documents via the website (including reference if appropriate) </strong>
+      or to Howden House First Point, at the same time. <br>
+      <strong> Alternatively, you can upload your documents via the website (including reference if appropriate) </strong><br><br>
 
       Failure to submit all required ID and references at the same time, 
       may mean that you will need to restart the application process from the beginning by 
-      submitting a further online application. 
+      submitting a further online application. <br><br>
     </p>
     <h3>Acceptable ID</h3>
 
@@ -1532,22 +1532,22 @@ const idFaq = new ContentH(
       Customers who have submitted an online application for rehousing, 
       or have made a change to an existing Application, need to provide ID, 
       references and proof of Child Benefit (if appropriate) in order for their application to be accepted 
-      and validated.
+      and validated.<br><br>
 
       ID is required for all Household Members and should be submitted within 28 days of filling-in 
-      the Application.
+      the Application.<br><br>
 
       Applicants should present the relevant documents at a Housing Office or First Point where the 
       Main Applicant's and the Joint Applicant's (if appropriate) documents will be photocopied and 
-      copies sent to the Registration Team. Household Members documents must also be produced and witnessed by an officer.
+      copies sent to the Registration Team. Household Members documents must also be produced and witnessed by an officer.<br><br>
     </p>
     <h4>Customer advising ID/proofs have been posted to us</h4>
     <p> 
       Customers should not post original documents to us, but when a customer has posted their documents to us,
       they should call to advise us of this. Advisor Note: The Registrations Team need to be advised so they
-      can check DMS in the next couple of days and subsequently validate the application. 
+      can check DMS in the next couple of days and subsequently validate the application. <br>
       Remember to take a note of the names and dates of birth of all household members and include them 
-      in any email or case that you send to the Registration Team.
+      in any email or case that you send to the Registration Team.<br><br>
 
       Advise the customer that it can take up to a month for their documents to be returned.
     </p>
@@ -1587,13 +1587,13 @@ const movingIn = new ContentH(
       Before you move into your new home we will check to make sure it is safe and secure. 
       Where necessary we get qualified and skilled trades people to test electrical, gas, 
       water and waste services. Our priority is to provide you with a safe living environment. 
-      We will ensure that:
+      We will ensure that:<br><br>
 
       Sometimes delays may occur due to unforeseen work that is required to bring the property up
       to a standard that meets our Vacant Charter.  
       When the property is ready, we will contact you to arrange an appointment to view the property 
       and then to sign for your new tenancy, should you choose to accept. In some circumstances 
-      we may arrange a ‘work in progress’ viewing.
+      we may arrange a ‘work in progress’ viewing.<br><br>
 
       Generally, if repairs are left outstanding at the start of a tenancy, these would be minor ones 
       not seriously affecting the use of the property and would require a small amount of work to rectify 
@@ -1609,13 +1609,13 @@ const movingIn = new ContentH(
 
       The responsibility/contractual agreement for arranging the supply 
       (and the utility meter installation if necessary) is with the customer and 
-      the utility provider e.g. British Gas, Powergen etc.
+      the utility provider e.g. British Gas, Powergen etc.<br><br>
 
       If the supplier is not known, the customer will need to contact one of the numbers below, 
-      and then contact the utility supplier themselves:
+      and then contact the utility supplier themselves:<br><br>
 
       <strong>Gas</strong> - Call the M Number Enquiry Line on 0870 608 1524, provided by xoserve Ltd. 
-      They will tell you the supplier and give you your Meter Point Reference Number (MPRN).
+      They will tell you the supplier and give you your Meter Point Reference Number (MPRN).<br><br>
 
       <strong>Electricity</strong> - Call your local electricity distribution company and ask for their Meter 
       Point Administration Service (MPAS). Alternatively, contact 0845 0707172.
@@ -1625,7 +1625,7 @@ const movingIn = new ContentH(
     <p>
       The meter reading before they moved in - you will have been advised of this at sign up 
       and the information will have been provided in their sign up pack. (We also advise Customers 
-      to take their own meter readings and contact the utility company themselves.)
+      to take their own meter readings and contact the utility company themselves.)<br><br>
 
       The meter reading when they move out - you should contact the utility company themselves.
     </p>
@@ -1651,9 +1651,9 @@ const mutualExchanges = new ContentH(
   `
     <p>
       A Mutual Exchange is where two or more Council or Housing Association tenants can apply to swap
-      their homes. The 1985 Housing Act (part 4, section 92) gives tenants this right under certain circumstances.
+      their homes. The 1985 Housing Act (part 4, section 92) gives tenants this right under certain circumstances.<br><br>
 
-      The Mutual Exchange application form can be accessed online at the Property Shop website and sheffield.gov.uk.
+      The Mutual Exchange application form can be accessed online at the Property Shop website and sheffield.gov.uk.<br><br>
 
       Advisor Note: Check for updates on the progress of a customer's mutual exchange on Abritas.
     </p>
@@ -1694,13 +1694,13 @@ const mutualExchanges = new ContentH(
           <div class="details-accordion-content">
             <p>
               HomeSwapper is an independent nationwide service for social housing tenants who want to exchange their property. 
-              As a Sheffield City Council tenant, you can register for free and this will allow you to search for properties anywhere in the UK.
+              As a Sheffield City Council tenant, you can register for free and this will allow you to search for properties anywhere in the UK.<br><br>
  
               HomeSwapper offers a matching service and will send you details of suitable exchanges via email or text. 
-              The HomeSwapper website is at: <a href="https://www.homeswapper.co.uk" target="_blank">Home Swapper</a>.
+              The HomeSwapper website is at: <a href="https://www.homeswapper.co.uk" target="_blank">Home Swapper</a>.<br><br>
 
               Before you get full access to the website, your registration will need to be approved. 
-              New submissions are approved daily, so except for weekends, it would be a maximum of 24 hours before you can view full details.
+              New submissions are approved daily, so except for weekends, it would be a maximum of 24 hours before you can view full details.<br><br>
 
               Any registrations submitted on a Friday or over the weekend will be approved on Monday morning, and for Bank Holidays, 
               it will be the next working day.
@@ -1713,7 +1713,7 @@ const mutualExchanges = new ContentH(
           <div class="details-accordion-content">
             <p>
               Once you have found a suitable Mutual Exchange, all parties involved will need to complete a Mutual Exchange application form (this includes anyone involved who is not a Council tenant). 
-              Please see the website for further information on how to apply.
+              Please see the website for further information on how to apply.<br><br>
 
               The forms will then be processed by staff within the Mutual Exchange Team, who will contact you directly. 
               If anyone involved is not a Sheffield City Council tenant, paperwork will also need to be completed and returned to the other housing provider(s).
@@ -1763,10 +1763,10 @@ const mutualExchanges = new ContentH(
           <summary>I have rent arrears, can I move?</summary>
           <div class="details-accordion-content">
             <p>
-              It depends on the type of arrears. Only current arrears are taken into consideration. 
-              You must have a completely clear current rent account before full consent will be given (See conditional consent above). 
-              You will not be able to move with current arrears, even if you have been sticking to a repayment plan. 
-              Any other types of arrears, including former tenancy arrears, recharges, etc., will be disregarded and will not prevent an exchange from taking place.
+              It depends on the type of arrears. Only current arrears are taken into consideration. <br>
+              You must have a completely clear current rent account before full consent will be given (See conditional consent above). <br>
+              You will not be able to move with current arrears, even if you have been sticking to a repayment plan. <br>
+              Any other types of arrears, including former tenancy arrears, recharges, etc., will be disregarded and will not prevent an exchange from taking place.<br>
             </p>
           </div>
         </details>
@@ -1795,7 +1795,7 @@ const mutualExchanges = new ContentH(
           <summary>What if HomeSwapper site asks me for a fee?</summary>
           <div class="details-accordion-content">
             <p>
-              When registering, you need to ensure that you have selected Sheffield City Council as your landlord. 
+              When registering, you need to ensure that you have selected Sheffield City Council as your landlord. <br>
               This is within Section 3 of the registration. If the site asks for payment, the customer should not go any further. 
               HomeSwapper is a free site for all SCC tenants.
             </p>
@@ -1815,8 +1815,8 @@ const mutualExchanges = new ContentH(
           <summary>My property has passed the inspection, what happens next?</summary>
           <div class="details-accordion-content">
             <p>
-              Once your property has passed an inspection, a report will be sent to the Mutual Exchange Team. 
-              Subject to other tenancy checks, once the report is received, you will be contacted with an appointment to sign the paperwork.
+              Once your property has passed an inspection, a report will be sent to the Mutual Exchange Team. <br>
+              Subject to other tenancy checks, once the report is received, you will be contacted with an appointment to sign the paperwork.<br>
             </p>
           </div>
         </details>
@@ -1834,8 +1834,8 @@ const mutualExchanges = new ContentH(
           <summary>I have signed up but no longer wish to move</summary>
           <div class="details-accordion-content">
             <p>
-              Once you have signed the Deeds of Assignment, the exchange becomes legally binding and you must move by the tenancy commencement date. 
-              If you fail to do so, the Council can serve a Notice to Quit and take possession proceedings for unauthorized occupation of the property.
+              Once you have signed the Deeds of Assignment, the exchange becomes legally binding and you must move by the tenancy commencement date. <br>
+              If you fail to do so, the Council can serve a Notice to Quit and take possession proceedings for unauthorized occupation of the property.<br>
             </p>
           </div>
         </details>
@@ -1844,9 +1844,9 @@ const mutualExchanges = new ContentH(
           <summary>What is conditional consent?</summary>
           <div class="details-accordion-content">
             <p>
-              Conditional consent is when we are unable to agree to the exchange immediately but, providing the problem is resolved, we may allow the exchange to go ahead. 
-              For example, in the case of current rent arrears, we may agree that once the arrears have been cleared in full, the exchange can take place. 
-              If we give conditional consent, we will write to you explaining what the delays are and what you need to do before we arrange for the properties to be exchanged.
+              Conditional consent is when we are unable to agree to the exchange immediately but, providing the problem is resolved, we may allow the exchange to go ahead. <br>
+              For example, in the case of current rent arrears, we may agree that once the arrears have been cleared in full, the exchange can take place. <br>
+              If we give conditional consent, we will write to you explaining what the delays are and what you need to do before we arrange for the properties to be exchanged.<br>
             </p>
           </div>
         </details>
@@ -1855,9 +1855,9 @@ const mutualExchanges = new ContentH(
           <summary>There is a problem with the tenancy I want to exchange into and I have been given conditional consent, what can I do?</summary>
           <div class="details-accordion-content">
             <p>
-              As you have been advised in your Conditional Consent letter, under the Data Protection Act we are unable to give you any further information. 
-              We will have also written to the other party advising them on what action they need to take to resolve the situation. 
-              Once the problem has been resolved, we will be happy to make arrangements for both parties to come and sign the Deed of Assignment document.
+              As you have been advised in your Conditional Consent letter, under the Data Protection Act we are unable to give you any further information. <br>
+              We will have also written to the other party advising them on what action they need to take to resolve the situation. <br>
+              Once the problem has been resolved, we will be happy to make arrangements for both parties to come and sign the Deed of Assignment document.<br>
             </p>
           </div>
         </details>
@@ -1894,10 +1894,10 @@ const referencesFAQs = new ContentH(
                 <div class="details-accordion-content">
                     <p>
                         Current SCC tenants are not required to submit a reference as the Council is already aware of 
-                        their circumstances and tenancy history.
+                        their circumstances and tenancy history.<br>
                         References were introduced as part of the Allocations Policy. The purpose of this is for SCC to better 
-                        understand the people who are currently on its Housing Register. SCC often has very little knowledge of 
-                        the people on the register and therefore requesting a reference will help the Council to improve this.
+                        understand the people who are currently on its Housing Register. <br>
+			SCC often has very little knowledge of the people on the register and therefore requesting a reference will help the Council to improve this.
                     </p>
                 </div>
             </details>
@@ -1938,11 +1938,11 @@ const referencesFAQs = new ContentH(
                         Landlord references should be submitted using the SCC reference form. This can be found online on the 
                         Property Shop website. Customer should select:
                     </p>
-					<ul>
-						<li>Information header, select Identification and References</li>
-						<li>Scroll down to SCC Reference Template</li>
-						<li>Landlord reference forms are also available at local housing offices.</li>
-					</ul>
+			<ul>
+				<li>Information header, select Identification and References</li>
+				<li>Scroll down to SCC Reference Template</li>
+				<li>Landlord reference forms are also available at local housing offices.</li>
+			</ul>
                 </div>
             </details>
         </div>
@@ -7496,7 +7496,7 @@ const idReferencesMenu = new MenuH(
   "idReferencesMenu",
   "Rehousing ID / References ",
   "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
-  [acceptableId, idReferences, , idFaq, movingIn, mutualExchanges, referencesFAQs]
+  [acceptableId, idReferences, idFaq, movingIn, mutualExchanges, referencesFAQs]
 );
 
 
