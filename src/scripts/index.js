@@ -1716,8 +1716,12 @@ function checkPageProgress() {
     ".dform_validationMessage"
   );
   console.log("validationMessages", validationMessages);
-  const isValidationMessageVisible =
-    Array.from(validationMessages).some(isVisible);
+
+  const isValidationMessageVisible = Array.from(validationMessages).some(
+    (validationMessage) => {
+      return getComputedStyle(validationMessage).display === "block";
+    }
+  );
 
   // Handle file inputs separately
   const fileUploads = Array.from(
