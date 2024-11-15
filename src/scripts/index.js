@@ -2064,7 +2064,7 @@ function handleDateValidation(parentId) {
 function checkMaxDay(id, dd, mm, yy) {
   const ddMax = new Date(yy, mm, 0).getDate();
   $(`#${id} .date-dd`).attr("max", ddMax);
-  if (dd > ddMax || !dd) {
+  if (dd > ddMax) {
     $(`#${id} .date-dd`).addClass("dform_fielderror");
   } else if (dd) {
     $(`#${id} .date-dd`).removeClass("dform_fielderror");
