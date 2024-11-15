@@ -2249,7 +2249,7 @@ function validDate(id, day, month, year, activeField) {
   const { minDate, maxDate } = getMinMaxDates(dateElementId);
 
   // Validate against min and max dates
-  if (date < minDate) {
+  if (activeField !== "yy" && date < minDate) {
     const yearsPast = new Date().getFullYear() - minDate.getFullYear();
     if (yearsPast > 0) {
       validationMsg
