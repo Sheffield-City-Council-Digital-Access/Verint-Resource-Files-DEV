@@ -2071,6 +2071,16 @@ function checkMaxDay(id, dd, mm, yy) {
   } else if (dd) {
     $(`#${id} .date-dd`).removeClass("dform_fielderror");
   }
+
+  if (mm > 12) {
+    $(`#${id} .date-mm`).addClass("dform_fielderror");
+    $(`#${id}`)
+      .find(".dform_validationMessage")
+      .text(`Must be a real date`)
+      .show();
+  } else if (mm) {
+    $(`#${id} .date-mm`).removeClass("dform_fielderror");
+  }
 }
 
 function calculateRelativeDate(relativeDate, now) {
