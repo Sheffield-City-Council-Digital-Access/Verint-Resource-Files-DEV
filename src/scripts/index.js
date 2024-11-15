@@ -1761,7 +1761,6 @@ function checkPageProgress() {
   // Check if any radio or checkbox groups are unchecked
   const hasEmptyRadiosAndCheckboxes = radiosAndCheckboxes.some((el) => {
     const name = el.name;
-    console.log("name", name);
     const isUnchecked = !currentPageElement.querySelector(
       `input[name='${name}']:checked`
     );
@@ -1771,6 +1770,8 @@ function checkPageProgress() {
 
   // Check if any other required fields are empty or invalid
   const hasEmptyOrInvalidOtherFields = otherFields.some((el) => {
+    console.log("name", el.name);
+
     const isEmpty = el.value.trim() === "";
     const isValid = el.checkValidity();
 
