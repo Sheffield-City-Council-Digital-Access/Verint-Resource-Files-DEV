@@ -2171,7 +2171,7 @@ function inputDate(id, nextID, key) {
     if (nextID) {
       $(`#${nextID}`).focus();
     } else {
-      if (key) {
+      if (key || key === 0) {
         $(`#${id}`).blur();
       }
     }
