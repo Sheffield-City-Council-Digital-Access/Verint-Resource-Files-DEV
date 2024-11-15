@@ -1450,7 +1450,6 @@ const idReferences = new ContentH(
   "ID / References",
   "",
   `
-    <h3>ID / References</h3>
     <p>
       For current SCC tenants, ID is required for new rehousing applications.<br>
       For non SCC tenants, ID and a Reference are required for new rehousing applications.<br><br>
