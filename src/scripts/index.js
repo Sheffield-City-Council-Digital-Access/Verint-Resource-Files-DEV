@@ -2200,6 +2200,8 @@ function checkDate(id, dd, mm, yy, element) {
       $(`#${id} .${field}`).addClass("dform_fielderror");
     });
     $(`#${id}`).find(".dform_validationMessage").text(errorMsg).show();
+    $(`#${id.replace("_date_", "_txt_")}`).val("");
+    $(`#${id.replace("_date_", "_dt_")}`).val("");
     return;
   }
 
@@ -2212,6 +2214,9 @@ function checkDate(id, dd, mm, yy, element) {
       const localFormat = new Date(date).toLocaleDateString("en-GB");
       $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
       $(`#${id.replace("_date_", "_dt_")}`).val(date);
+    } else {
+      $(`#${id.replace("_date_", "_txt_")}`).val("");
+      $(`#${id.replace("_date_", "_dt_")}`).val("");
     }
   }
 }
