@@ -1889,6 +1889,7 @@ const referencesFAQs = new ContentH(
             <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
+
             <details class="details-accordion">
                 <summary>Why do I need to provide a reference?</summary>
                 <div class="details-accordion-content">
@@ -1897,40 +1898,36 @@ const referencesFAQs = new ContentH(
                         their circumstances and tenancy history.<br>
                         References were introduced as part of the Allocations Policy. The purpose of this is for SCC to better 
                         understand the people who are currently on its Housing Register. <br>
-			SCC often has very little knowledge of the people on the register and therefore requesting a reference will help the Council to improve this.
+                        SCC often has very little knowledge of the people on the register and therefore requesting a reference will help the Council to improve this.
                     </p>
                 </div>
             </details>
-        </div>
-    </details>
 
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>Who can provide a reference?</summary>
-            <div class="details-accordion-content">
-                <p>
-                    All customers other than current SCC tenants now need to provide a reference when joining the Housing Register. 
-                    The following customers also need to provide a reference when creating a new application:
-                </p>
-				<ul>
-					<li>Housing Association tenants (Landlord need to provide the reference)</li>
-					<li>Tenants of other Councils (Landlord needs to provide the reference)</li>
-					<li>Private rented tenants (Landlord needs to provide the reference - the landlord must not be a family member)</li>
-					<li>Owner occupiers - no need for a reference as bidding is restricted</li>
-					<li>Living with family/parents (18+ only, character reference is needed)</li>
-					<li>NFA/Living with friends (Character reference is needed)</li>
-				</ul>
-                <p>
-                    For customers who currently do or have ever lived independently, the reference should be completed by their most recent landlord.
-                    Advisor note: For customers who are unable to provide a landlord's reference, they must gain agreement from the 
-                    Registration Team for what reference will be acceptable and they will send the professional reference form out.<br>
-                    If the customer is advising that there would be a charge for the reference, the customer would be responsible for 
-                    this charge. SCC will not pay landlords to provide a reference.
-                </p>
-            </div>
-        </details>
+            <details class="details-accordion">
+                <summary>Who can provide a reference?</summary>
+                <div class="details-accordion-content">
+                    <p>
+                        All customers other than current SCC tenants now need to provide a reference when joining the Housing Register. 
+                        The following customers also need to provide a reference when creating a new application:
+                    </p>
+                    <ul>
+                        <li>Housing Association tenants (Landlord needs to provide the reference)</li>
+                        <li>Tenants of other Councils (Landlord needs to provide the reference)</li>
+                        <li>Private rented tenants (Landlord needs to provide the reference - the landlord must not be a family member)</li>
+                        <li>Owner occupiers - no need for a reference as bidding is restricted</li>
+                        <li>Living with family/parents (18+ only, character reference is needed)</li>
+                        <li>NFA/Living with friends (Character reference is needed)</li>
+                    </ul>
+                    <p>
+                        For customers who currently do or have ever lived independently, the reference should be completed by their most recent landlord.
+                        Advisor note: For customers who are unable to provide a landlord's reference, they must gain agreement from the 
+                        Registration Team for what reference will be acceptable and they will send the professional reference form out.<br>
+                        If the customer is advising that there would be a charge for the reference, the customer would be responsible for 
+                        this charge. SCC will not pay landlords to provide a reference.
+                    </p>
+                </div>
+            </details>
 
-        <div class="accordion-content">
             <details class="details-accordion">
                 <summary>How to get a Landlords reference form?</summary>
                 <div class="details-accordion-content">
@@ -1938,16 +1935,14 @@ const referencesFAQs = new ContentH(
                         Landlord references should be submitted using the SCC reference form. This can be found online on the 
                         Property Shop website. Customer should select:
                     </p>
-			<ul>
-				<li>Information header, select Identification and References</li>
-				<li>Scroll down to SCC Reference Template</li>
-				<li>Landlord reference forms are also available at local housing offices.</li>
-			</ul>
+                    <ul>
+                        <li>Information header, select Identification and References</li>
+                        <li>Scroll down to SCC Reference Template</li>
+                        <li>Landlord reference forms are also available at local housing offices.</li>
+                    </ul>
                 </div>
             </details>
-        </div>
 
-        <div class="accordion-content">
             <details class="details-accordion">
                 <summary>How long do I have to provide the reference?</summary>
                 <div class="details-accordion-content">
@@ -1959,9 +1954,7 @@ const referencesFAQs = new ContentH(
                     </p>
                 </div>
             </details>
-        </div>
 
-        <div class="accordion-content">
             <details class="details-accordion">
                 <summary>What will the reference be used for?</summary>
                 <div class="details-accordion-content">
@@ -1975,9 +1968,7 @@ const referencesFAQs = new ContentH(
                     </p>
                 </div>
             </details>
-        </div>
 
-        <div class="accordion-content">
             <details class="details-accordion">
                 <summary>Is a reference required for a change of circumstances?</summary>
                 <div class="details-accordion-content">
@@ -1989,9 +1980,7 @@ const referencesFAQs = new ContentH(
                     </p>
                 </div>
             </details>
-        </div>
 
-        <div class="accordion-content">
             <details class="details-accordion">
                 <summary>Is a reference required as part of a renewal process?</summary>
                 <div class="details-accordion-content">
@@ -2001,16 +1990,18 @@ const referencesFAQs = new ContentH(
                     </p>
                 </div>
             </details>
+
         </div>
 
         <h4>Customer cannot visit Area Office</h4>
-
         <p>
             Advisor Note: There are alternatives to visiting the area office yourself, such as asking your friends or family 
             to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
             <strong>Documents can be uploaded via the property shop website.</strong>
         </p>
-    `,
+
+    </details>
+  `,
   {
     buttonLabel: "Report Housing Enquiry ",
     formName: "hou_rehousing_enquiry",
