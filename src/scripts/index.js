@@ -2233,8 +2233,8 @@ function validDate(id, day, month, year) {
 
   // Check if the constructed date is valid
   if (
-    date.getFullYear() !== year ||
-    date.getMonth() + 1 !== month ||
+    date.getFullYear() !== year &&
+    date.getMonth() + 1 !== month &&
     date.getDate() !== day
   ) {
     validationMsg.text(`Must be a real date`).show();
