@@ -2064,6 +2064,10 @@ function checkMaxDay(id, dd, mm, yy) {
   $(`#${id} .date-dd`).attr("max", ddMax);
   if (dd > ddMax) {
     $(`#${id} .date-dd`).addClass("dform_fielderror");
+    $(`#${id}`)
+      .find(".dform_validationMessage")
+      .text(`Must be a real date`)
+      .show();
   } else if (dd) {
     $(`#${id} .date-dd`).removeClass("dform_fielderror");
   }
