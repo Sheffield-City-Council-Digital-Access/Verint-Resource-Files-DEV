@@ -2113,7 +2113,6 @@ function getMinMaxDates(dateElementId) {
 
 function checkDate(id, dd, mm, yy) {
   const dateMessage = getValidationMessageFromSession(id);
-  let hasError = false;
 
   // Clear previous errors
   $(`#${id} .date-dd, #${id} .date-mm, #${id} .date-yy`).removeClass(
@@ -2121,31 +2120,59 @@ function checkDate(id, dd, mm, yy) {
   );
   $(`#${id}`).find(".dform_validationMessage").text(dateMessage).hide();
 
-  if (!dd) {
-    $(`#${id} .date-dd`).addClass("dform_fielderror");
-    hasError = true;
-  }
-  if (!mm) {
-    $(`#${id} .date-mm`).addClass("dform_fielderror");
-    hasError = true;
-  }
-  if (!yy) {
-    $(`#${id} .date-yy`).addClass("dform_fielderror");
-    hasError = true;
-  }
+  let hasError = false;
+  let errorMsg = "";
+  const errorFields = [];
+
+  const dateFields = ["date-dd", "date-mm", "date-yy"];
+  const errorConditions = [
+    {
+      condition: !dd && !mm && !yy,
+      message: "Date must include a day, month and year",
+      fields: dateFields,
+    },
+    {
+      condition: !dd && !mm,
+      message: "Date must include a day and month",
+      fields: ["date-dd", "date-mm"],
+    },
+    {
+      condition: !dd && !yy,
+      message: "Date must include a day and year",
+      fields: ["date-dd", "date-yy"],
+    },
+    {
+      condition: !mm && !yy,
+      message: "Date must include a month and year",
+      fields: ["date-mm", "date-yy"],
+    },
+    { condition: !dd, message: "Date must include a day", fields: ["date-dd"] },
+    {
+      condition: !mm,
+      message: "Date must include a month",
+      fields: ["date-mm"],
+    },
+    {
+      condition: !yy,
+      message: "Date must include a year",
+      fields: ["date-yy"],
+    },
+  ];
+
+  errorConditions.forEach((condition) => {
+    if (condition.condition) {
+      hasError = true;
+      errorMsg = condition.message;
+      errorFields.push(...condition.fields);
+    }
+  });
 
   if (hasError) {
-    const errorMsg =
-      !dd && !mm && !yy
-        ? "Date must include a day, month, and year"
-        : !dd && mm && yy
-        ? "Date must include a day"
-        : !mm && dd && yy
-        ? "Date must include a month"
-        : "";
-
+    errorFields.forEach((field) => {
+      $(`#${id} .${field}`).addClass("dform_fielderror");
+    });
     $(`#${id}`).find(".dform_validationMessage").text(errorMsg).show();
-    return; // Early return on error
+    return;
   }
 
   // If all components are valid, proceed to validate the full date
