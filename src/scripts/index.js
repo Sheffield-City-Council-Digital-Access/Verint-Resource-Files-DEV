@@ -1773,8 +1773,8 @@ function checkPageProgress() {
     console.log("name", el.name);
     const name = el.name;
 
-    // let isEmpty = el.value.trim() === "";
-    // let isValid = el.checkValidity();
+    let isEmpty = el.value.trim() === "";
+    let isValid = el.checkValidity();
 
     // if (
     //   name.startsWith("num_") &&
