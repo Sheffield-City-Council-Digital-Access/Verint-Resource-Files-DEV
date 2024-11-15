@@ -2112,6 +2112,7 @@ function getMinMaxDates(dateElementId) {
 }
 
 function checkDate(id, dd, mm, yy) {
+  console.log(id, dd, mm, yy);
   const dateMessage = getValidationMessageFromSession(id);
 
   // Clear previous errors
