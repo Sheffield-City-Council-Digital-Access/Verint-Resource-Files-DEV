@@ -923,7 +923,7 @@ function handleOnReadyEvent(event, kdf) {
       return;
     }
     if (this.value) $(this).val($(this).val().padStart(2, "0"));
-    handleDateValidation(parentId);
+    handleDateValidation(parentId, this);
   });
 
   $(`.date-mm`).on("input focusout", function (e) {
@@ -941,7 +941,7 @@ function handleOnReadyEvent(event, kdf) {
     if (dd === "") $(`#${this.id.slice(0, -2)}dd`).addClass("dform_fielderror");
     if (yy === "") $(`#${this.id.slice(0, -2)}yy`).addClass("dform_fielderror");
     $(`#${parentId}`).find(".dform_validationMessage").text(dateMessage).show();
-    handleDateValidation(parentId);
+    handleDateValidation(parentId, this);
   });
 
   $(`.date-yy`)
@@ -978,9 +978,7 @@ function handleOnReadyEvent(event, kdf) {
         .text(dateMessage)
         .hide();
       if (e.type === "input") inputDate(this.id, null, e.which);
-      {
-      }
-      handleDateValidation(parentId);
+      if (e.type === "focusout") handleDateValidation(parentId, this);
     });
 
   // --- HANDLE KEYUP EVENTLISTENER FOR CHECK PROGRESS --------------------- \\
@@ -2043,7 +2041,7 @@ function showVehicleFields() {
 
 // --- CUSTOM DATE FUNCTIONS ------------------------------------------------ \\
 
-function handleDateValidation(parentId) {
+function handleDateValidation(parentId, element) {
   const dd = parseInt(
     $(`#${parentId.replace("_date_", "_num_")}_dd`).val(),
     10
@@ -2057,7 +2055,7 @@ function handleDateValidation(parentId) {
     10
   );
 
-  checkDate(parentId, dd, mm, yy);
+  checkDate(parentId, dd, mm, yy, element);
   checkMaxDay(parentId, dd, mm, yy);
 }
 
@@ -2066,8 +2064,22 @@ function checkMaxDay(id, dd, mm, yy) {
   $(`#${id} .date-dd`).attr("max", ddMax);
   if (dd > ddMax) {
     $(`#${id} .date-dd`).addClass("dform_fielderror");
-  } else if (dd !== "") {
+    $(`#${id}`)
+      .find(".dform_validationMessage")
+      .text(`Must be a real date`)
+      .show();
+  } else if (dd) {
     $(`#${id} .date-dd`).removeClass("dform_fielderror");
+  }
+
+  if (mm > 12) {
+    $(`#${id} .date-mm`).addClass("dform_fielderror");
+    $(`#${id}`)
+      .find(".dform_validationMessage")
+      .text(`Must be a real date`)
+      .show();
+  } else if (mm) {
+    $(`#${id} .date-mm`).removeClass("dform_fielderror");
   }
 }
 
@@ -2111,9 +2123,9 @@ function getMinMaxDates(dateElementId) {
   return { minDate, maxDate };
 }
 
-function checkDate(id, dd, mm, yy) {
+function checkDate(id, dd, mm, yy, element) {
+  console.log(id, dd, mm, yy, element);
   const dateMessage = getValidationMessageFromSession(id);
-  let hasError = false;
 
   // Clear previous errors
   $(`#${id} .date-dd, #${id} .date-mm, #${id} .date-yy`).removeClass(
@@ -2121,45 +2133,78 @@ function checkDate(id, dd, mm, yy) {
   );
   $(`#${id}`).find(".dform_validationMessage").text(dateMessage).hide();
 
-  if (!dd) {
-    $(`#${id} .date-dd`).addClass("dform_fielderror");
-    hasError = true;
-  }
-  if (!mm) {
-    $(`#${id} .date-mm`).addClass("dform_fielderror");
-    hasError = true;
-  }
-  if (!yy) {
-    $(`#${id} .date-yy`).addClass("dform_fielderror");
-    hasError = true;
+  const activeField = element.name.slice(-2);
+  let hasError = false;
+  let errorMsg = "";
+  const errorFields = [];
+  console.log(activeField);
+  const dateFields = ["date-dd", "date-mm", "date-yy"];
+  const errorConditions = [
+    {
+      condition: !dd && !mm && !yy,
+      message: "Date must include a day, month and year",
+      fields: dateFields,
+    },
+    {
+      condition: !dd && !mm,
+      message: "Date must include a day and month",
+      fields: ["date-dd", "date-mm"],
+    },
+    {
+      condition: !dd && !yy,
+      message: "Date must include a day and year",
+      fields: ["date-dd", "date-yy"],
+    },
+    {
+      condition: activeField !== "dd" && !mm && !yy,
+      message: "Date must include a month and year",
+      fields: ["date-mm", "date-yy"],
+    },
+    { condition: !dd, message: "Date must include a day", fields: ["date-dd"] },
+    {
+      condition: activeField !== "dd" && !mm,
+      message: "Date must include a month",
+      fields: ["date-mm"],
+    },
+    {
+      condition: activeField !== "dd" && activeField !== "mm" && !yy,
+      message: "Date must include a year",
+      fields: ["date-yy"],
+    },
+  ];
+
+  for (const condition of errorConditions) {
+    if (condition.condition) {
+      hasError = true;
+      errorMsg = condition.message;
+      errorFields.push(...condition.fields);
+      break; // Break out of the loop after the first match
+    }
   }
 
   if (hasError) {
-    const errorMsg =
-      !dd && !mm && !yy
-        ? "Date must include a day, month, and year"
-        : !dd && mm && yy
-        ? "Date must include a day"
-        : !mm && dd && yy
-        ? "Date must include a month"
-        : "";
-
+    errorFields.forEach((field) => {
+      $(`#${id} .${field}`).addClass("dform_fielderror");
+    });
     $(`#${id}`).find(".dform_validationMessage").text(errorMsg).show();
-    return; // Early return on error
+    return;
   }
 
   // If all components are valid, proceed to validate the full date
-  if (validDate(id, dd, mm, yy)) {
-    const date = `${yy.toString().padStart(4, "0")}-${mm
-      .toString()
-      .padStart(2, "0")}-${dd.toString().padStart(2, "0")}`;
-    const localFormat = new Date(date).toLocaleDateString("en-GB");
-    $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
-    $(`#${id.replace("_date_", "_dt_")}`).val(date);
+  if (dd && mm && yy) {
+    if (validDate(id, dd, mm, yy, activeField)) {
+      const date = `${yy.toString().padStart(4, "0")}-${mm
+        .toString()
+        .padStart(2, "0")}-${dd.toString().padStart(2, "0")}`;
+      const localFormat = new Date(date).toLocaleDateString("en-GB");
+      $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
+      $(`#${id.replace("_date_", "_dt_")}`).val(date);
+    }
   }
 }
 
 function inputDate(id, nextID, key) {
+  console.log(key);
   const ignoredKeys = [9, 16, 37, 38, 39, 40];
   if (ignoredKeys.indexOf(key) !== -1) return;
   const maxLength = $(`#${id}`).attr("maxlength");
@@ -2170,7 +2215,9 @@ function inputDate(id, nextID, key) {
     if (nextID) {
       $(`#${nextID}`).focus();
     } else {
-      $(`#${id}`).blur();
+      if (key || key === 0) {
+        $(`#${id}`).blur();
+      }
     }
   }
 }
@@ -2188,7 +2235,7 @@ function getYearLabel(years) {
   return years === 1 ? "year" : "years";
 }
 
-function validDate(id, day, month, year) {
+function validDate(id, day, month, year, activeField) {
   const dateMessage = getValidationMessageFromSession(id);
   const validationMsg = $(`#${id}`)
     .find(".dform_validationMessage")
@@ -2197,17 +2244,17 @@ function validDate(id, day, month, year) {
 
   // Construct the date from the provided values
   const date = new Date(year, month - 1, day); // month is zero-indexed
-  console.log(`Constructed Date: ${date}`);
-  console.log(`Input values: day=${day}, month=${month}, year=${year}`);
 
   // Check if the constructed date is valid
-  if (
-    date.getFullYear() !== year ||
-    date.getMonth() + 1 !== month ||
-    date.getDate() !== day
-  ) {
-    validationMsg.text(`Must be a real date`).show();
-    return false;
+  if (activeField !== "yy") {
+    if (
+      date.getFullYear() !== year ||
+      date.getMonth() + 1 !== month ||
+      date.getDate() !== day
+    ) {
+      validationMsg.text(`Must be a real date`).show();
+      return false;
+    }
   }
 
   const dateElementId = id.replace("_date_", "_dt_");
