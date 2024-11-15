@@ -1796,11 +1796,11 @@ function checkPageProgress() {
   );
 
   // Call the disabledButtonToggle function based on the check
-  disabledButtonToggle(!shouldDisableButton);
+  disabledButtonToggle(shouldDisableButton);
 }
 
 function disabledButtonToggle(enable) {
-  console.log(enable);
+  console.log("disable buttons", enable);
   const buttons = document.querySelectorAll(".primary-btn, .anonymous-btn");
 
   buttons.forEach((button) => {
