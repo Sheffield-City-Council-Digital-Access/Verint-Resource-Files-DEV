@@ -1041,514 +1041,359 @@ const housingAssociations = new ContentH(
   "Housing Associations",
   "",
   `
-<p> 
+    <p>
+      Housing Associations and Housing Trusts are non-profit making, independent organisations.
+      They vary widely in the types of people they house.
+      Some cater for all groups giving priority for those with the most urgent housing need.
+      Others specialise in helping particular groups of people, e.g. the elderly, disabled or those with other specific needs.
+      Public numbers cannot be used on freephone.
+    </p>
 
-Housing Associations and Housing Trusts are non-profit making, independent organisations. 
-They vary widely in the types of people they house. 
-Some cater for all groups giving priority for those with the most urgent housing need. 
-Others specialise in helping particular groups of people, e.g. the elderly, 
-disabled or those with other specific needs. Public numbers cannot be used on freephone.
-
-</p>
-
-<details class="accordion">
-    <summary class="accordion-header">
+    <details class="accordion">
+      <summary class="accordion-header">
         <h3>Housing Associations</h3>
         <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
+      </summary>
+      <div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Acis Group Ltd, tel 01427 678000 
-            </summary>
-            <div class="details-accordion-content">
-
- <p>
-Acis Group Ltd, tel 01427 678000<br>
-    Acis Group Limited<br>
-    Acis House<br>
-    Bridge Street<br>
-    Gainsborough<br>
-    Lincolnshire<br>
-    DN21 1GG<br>
-    <a href="http://www.acisgroup.co.uk">acisgroup</a>
-                </p>
-
-                <p>
-                    Variety of properties across Woodthorpe and Lower Manor. 
-                    Stock transfer from the Council Housing Service. To register, 
-                    a Council Housing Service rehousing registration form needs to be completed. 
-                    Properties are advertised through the Choice Based Letting System. 
-                    The only properties not advertised through the Sheffield Property Shop are those 
-                    where Acis have agreed a management transfer for current tenants or mutual exchange.
-                    </p>
-                   
-            </div>
+          <summary>Acis Group Ltd, tel 01427 678000</summary>
+          <div class="details-accordion-content">
+            <address>
+              Acis Group Ltd, tel 01427 678000<br>
+              Acis Group Limited<br>
+              Acis House<br>
+              Bridge Street<br>
+              Gainsborough<br>
+              Lincolnshire<br>
+              DN21 1GG<br>
+              <a href="http://www.acisgroup.co.uk" target="_blank">http://www.acisgroup.co.uk</a>
+            </address>
+            <p>
+              Variety of properties across Woodthorpe and Lower Manor. Stock transfer from the Council Housing Service.
+              To register, a Council Housing Service rehousing registration form needs to be completed.
+              Properties are advertised through the Choice Based Letting System.
+              The only properties not advertised through the Sheffield Property Shop are those where Acis have agreed a management transfer for current tenants or mutual exchange.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
-<div class="accordion-content">
+
         <details class="details-accordion">
-            <summary>
-                Anchor Trust, tel 03457 758595
-            </summary>
-            <div class="details-accordion-content">
-<p>
-Anchor Trust, tel 03457 758595<br>
-Customer Centre<br>
-2 Godwin Street,<br>
-Bradford,<br>
-BD1 2ST<br>
-GEN EMAIL: contact@anchor.org.uk
-                </p>
-                <p>
-     Sheltered housing for the elderly. Applicants need to be 55 yrs +. 
-     Waiting list, priority awarded to following groups; homeless, 
-     fleeing harassment and leaving hospital with nowhere else to go.
-</p>
-
-            </div>
+          <summary>Anchor Trust, tel 03457 758595</summary>
+          <div class="details-accordion-content">
+            <address>
+              Anchor Trust, tel 03457 758595<br>
+              Customer Centre<br>
+              2 Godwin Street,<br>
+              Bradford,<br>
+              BD1 2ST<br>
+              GEN EMAIL: <a href="mailto:contact@anchor.org.uk">contact@anchor.org.uk</a>
+            </address>
+            <p>
+              Sheltered housing for the elderly. Applicants need to be 55+.
+              Waiting list, priority awarded to the following groups: homeless, fleeing harassment, and leaving hospital with nowhere else to go.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
-<div class="accordion-content">
+
         <details class="details-accordion">
-            <summary>
-                Arches Housing Association tel 0114 2288100
-            </summary>
-            <div class="details-accordion-content">
-<p>
-Arches Housing Limited, tel 0114 2288100<br>
-122 Burngreave Road<br>
-Sheffield<br>
-S3 9DE<br><br>
-
-Email: info@archeshousing.org.uk<br>
-
-Website and web chat: <a href="https://www.archeshousing.org.uk" target="_blank">archeshousing</a>
-
-                </p>
-                <p>
- Mutual exchanges advertised and managed through home swapper: 
- register on https://www.homeswapper.co.uk/
- </p>
- <p>
-
-Info on lettings: Flats and houses available, including some over 60s independent living 
-accommodation (no warden on site). Must be 18+ and must be eligible for benefits if not working, 
-an affordability assessment and risk assessment will be carried out, 
-and previous landlords reference requested on all nominees. 
-We do not hold a waiting list for general public.
-</p>
-
-            </div>
+          <summary>Arches Housing Association, tel 0114 2288100</summary>
+          <div class="details-accordion-content">
+            <address>
+              Arches Housing Limited, tel 0114 2288100<br>
+              122 Burngreave Road<br>
+              Sheffield<br>
+              S3 9DE<br>
+              Email: <a href="mailto:info@archeshousing.org.uk">info@archeshousing.org.uk</a><br>
+              Website and web chat: <a href="https://www.archeshousing.org.uk" target="_blank">https://www.archeshousing.org.uk</a>
+            </address>
+            <p>
+              Mutual exchanges advertised and managed through home swapper: register on <a href="https://www.homeswapper.co.uk" target="_blank">https://www.homeswapper.co.uk</a>
+              Info on lettings: Flats and houses available, including some over 60s independent living accommodation (no warden on site). Must be 18+ and eligible for benefits if not working. 
+              An affordability and risk assessment will be carried out, and a previous landlord reference requested for all nominees.
+              We do not hold a waiting list for the general public.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Arches Housing Association tel 0114 2288100
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-
-</p>
- <p>
-
-</p>
-
-            </div>
+          <summary>Clarion Housing Group, tel 0330 500 8000</summary>
+          <div class="details-accordion-content">
+            <p>
+              Clarion Housing Group, tel 0330 500 8000<br>
+              Mix of housing types including some sheltered schemes. Need to be 18+. Points based system.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
- 
-<div class="accordion-content">
+
         <details class="details-accordion">
-            <summary>
-                Clarion Housing Group, tel 0330 500 8000
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-<p>Arches Housing Limited, tel 0114 2288100<br>
-122 Burngreave Road<br>
-Sheffield<br>
-S3 9DE<br>
-info@archeshousing.org.uk </p>
-
-<p>Website and web chat: <a href="https://www.archeshousing.org.uk" target="_blank"> archeshousing </a></p>
-<p>
-Mix of housing types including some sheltered schemes. Need to be 18+. Points based system.
-</p>
-
-            </div>
+          <summary>Together Group with Pennine, tel 0845 270 1088</summary>
+          <div class="details-accordion-content">
+            <address>
+              Together Group with Pennine, tel 0845 270 1088<br>
+              Harrison Street<br>
+              Wakefield<br>
+              WF1 1PS
+            </address>
+            <p>
+              1 & 2 bed flats. Two, three, and four bedroom houses. Points system - based on housing need. Small, scattered developments. Need to be aged 18+, but in some cases will take 16+.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
- 
-<div class="accordion-content">
+
         <details class="details-accordion">
-            <summary>
-                Together Group with Pennine), tel 0845 270 1088
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Together Group with Pennine, <br>
- tel 0845 270 1088<br>
-Harrison Street<br>
-Wakefield<br>
-WF1 1PS<br>
-</p>
- <p>
-1 & 2 bed flats. Two, three and four bedroom houses. Points system - based on housing need. Small, scattered developments. Need to be aged 18+ but in some cases will take 16+.
-</p>
-
-            </div>
+          <summary>English Churches Housing Group / The Riverside Group, tel 0345 111 0000</summary>
+          <div class="details-accordion-content">
+            <address>
+              English Churches Housing Group / The Riverside Group, tel 0345 1559002<br>
+              2 Estuary Boulevard<br>
+              Estuary Commerce Park<br>
+              Liverpool<br>
+              L24 8RF
+            </address>
+            <p>
+              Since English Churches Housing Group merged with The Riverside Group in March 2007, their waiting list has been closed.
+              Some of their properties are still being offered through the Choice Based Letting System. To register, complete a Council Housing Service rehousing registration form.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                English Churches Housing Group / The Riverside Group, 0345 111 0000            </summary>
-            <div class="details-accordion-content">
-                <p>
-English Churches Housing Group / The Riverside Group, <br>
-0845 1559002<br>
-2 Estuary Boulevard<br>
-Estuary Commerce Park<br>
-Liverpool<br>
-L24 8RF<br>
-</p>
- <p>
-Since English Churches Housing Group merged with The Riverside Group in March 2007, their waiting list has been closed. Some of their properties are still being offered through the Choice Based Letting System. To register, complete a Council Housing Service rehousing registration form.
-</p>
-            </div>
+          <summary>Great Places Housing Group, tel 0300 123 1966</summary>
+          <div class="details-accordion-content">
+            <address>
+              Great Places Housing Group, tel 0300 123 1966<br>
+              2a Derwent Avenue<br>
+              Manchester<br>
+              M21 7QP<br>
+              <a href="http://www.greatplaces.org.uk" target="_blank">http://www.greatplaces.org.uk</a>
+            </address>
+            <p>
+              Flats, houses, and bungalows in Wybourn, Richmond Park, Birklands, and Athelstan (mostly ex-Council properties). To register, a Council Housing Service rehousing registration form needs to be completed.
+              Properties are advertised through the Choice Based Letting System and a local lettings policy.
+              Some properties are advertised to existing Great Places tenants under their Local Lettings Policy.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-Great Places Housing Group, tel 0300 123 1966            </summary>
-            <div class="details-accordion-content">
-                <p>
-
-Great Places Housing Group tel 0300 123 1966<br>
-2a Derwent Avenue<br>
-Manchester<br>
-M21 7QP<br>
-<a href="www.greatplaces.org.uk" target="_blank"> great places </a>
-
-</p>
- <p>
-Flats, houses and bungalows in Wybourn, Richmond Park, Birklands and Athelstan (mostly ex-Council properties) To register, a Council Housing Service rehousing registration form needs to be completed. Including – flats, bungalows and houses.
-
-</p>
-<p>
-Properties are advertised through the Choice Based Letting System and a local lettings policy.
-</p>
-
-<p>
-Some properties are advertised to existing Great Places tenants under their Local Lettings Policy. </p>
-
-            </div>
+          <summary>Guinness Northern Counties, tel 0303 123 1890</summary>
+          <div class="details-accordion-content">
+            <address>
+              Guinness Northern Counties, tel 0303 123 1890<br>
+              St Helens Court,<br>
+              Stirling Cl,<br>
+              Elsecar,<br>
+              Barnsley<br>
+              S74 8DY<br>
+              <a href="http://www.guinnesspartnership.com" target="_blank">http://www.guinnesspartnership.com</a>
+            </address>
+            <p>
+              Available properties are either advertised through the Council’s Property Shop and Property Shop website or are allocated from Guinness Northern Counties’ own waiting list.
+              You need to join Guinness Northern Counties’ waiting list as well as the Council’s Housing Register in order to bid for properties.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Guinness Nothern Counties, tel 0303 123 1890
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Guinness Northern Counties tel 0303 123 1890<br>
-St Helens Court, <br>
-Stirling Cl, <br>
-Elsecar, <br>
-Barnsley<br>
-S74 8DY<br>
-
-<a href=" www.guinnesspartnership.com/" target="_blank"> Guinness partnership </a>
-</p>
- <p>
-Available properties are either advertised through the Council’s Property Shop and Property Shop website or are allocated from Guinness Northern Counties’ own waiting list. You need to join Guinness Northern Counties’ waiting list as well as the Council’s Housing Register in order to bid for properties.
-</p>
-
-            </div>
+          <summary>Home Group, tel 03451414663</summary>
+          <div class="details-accordion-content">
+            <address>
+              Home Group, tel 03451414663<br>
+              Home Group Ltd<br>
+              2nd Floor, 20 Westfield Terrace<br>
+              Sheffield<br>
+              S1 4GH<br>
+              <a href="mailto:contactus@homegroup.org.uk" target="_blank">contactus@homegroup.org.uk</a> 
+            </address>
+            <p>
+              2, 3, and 4 bedroomed homes for general needs rent within S12. Please note we do not hold a waiting list, and any properties becoming available will be advertised through the Choice Based Lettings system.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Home Group, tel 03451414663
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Home Group , Tel: tel: 03451414663 <br>
-Home Group Ltd <br>
-2nd Floor 20 Westfield terrace <br>
-Sheffield <br>
-S1 4GH <br>
-contactus@homegroup.org.uk <br>
-</p>
- <p>
-2, 3 and 4 bedroomed homes for general needs rent within S12. Please note we do not hold a waiting list and any properties becoming available will be advertised through the Choice Based lettings system.
-</p>
-
-            </div>
+          <summary>Housing 21, tel 0370 192 4000</summary>
+          <div class="details-accordion-content">
+            <address>
+              Housing 21, tel 0370 192 4000<br>
+              Tricorn House<br>
+              51–53 Hagley Road<br>
+              Birmingham<br>
+              B16 8TP<br>
+              <a href="mailto:enquiries@housing21.org.uk" target="_blank">enquiries@housing21.org.uk</a> 
+            </address>
+            <p>
+              Flats and bedsits for 60+. If registered disabled, 55+. Allocation system based on waiting time.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Housing 21, tel 0370 192 4000
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Housing 21, tel 0370 192 4000<br>
-Tricorn House<br>
-51–53 Hagley Road<br>
-Birmingham<br>
-B16 8TP<br>
-enquiries@housing21.org.uk<br>
-</p>
- <p>
-Flats and bedsits for 60+. If registered disabled 55+. Allocation system based on waiting time.
-</p>
-            </div>
+          <summary>Johnnie Johnson Housing Trust Ltd, tel 0345 305 5335</summary>
+          <div class="details-accordion-content">
+            <address>
+              Johnnie Johnson Housing Trust Ltd, tel 0345 305 5335<br>
+              Eden Point,<br>
+              Three Acres Lane,<br>
+              Cheadle Hulme,<br>
+              Cheadle,<br>
+              SK8 6RL<br>
+              <a href="mailto:talktous@jjhousing.co.uk" target="_blank">talktous@jjhousing.co.uk</a>  
+            </address>
+            <p>
+              Bedsits, 1 & 2 bed flats, 2 + 3 bed houses. Need to be aged 18+, but some age-banded schemes. Allocation based on waiting time.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
-<div class="accordion-content">
+
         <details class="details-accordion">
-            <summary>
-                Johnnie Johnson Hosing Trust Ltd, tel 0345 305 5335
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Johnnie Johnson Housing Trust Ltd, tel 0345 305 5335<br>
-Eden Point, <br>
-Three Acres Lane, <br>
-Cheadle Hulme, <br>
-Cheadle, <br>
-SK8 6RL<br>
-talktous@jjhousing.co.uk<br>
-
-</p>
- <p>
-Bedsits, 1 & 2 bed flats, 2 + 3 bed houses. Need to be aged 18+ but some age banded schemes. Allocation based on waiting time.
-</p>
-            </div>
+          <summary>Padley, tel 0114 2666626</summary>
+          <div class="details-accordion-content">
+            <address>
+              Padley, tel 0114 2666626<br>
+              208 Crookes<br>
+              S10 1TG<br>
+              <a href="mailto:sheffieldcrookeslettings@hunters.com" target="_blank">sheffieldcrookeslettings@hunters.com</a>
+            </address>
+            <p>
+              Sheltered accommodation and 1-bed flats mainly for the elderly. Point system based on personal circumstances.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
-<div class="accordion-content">
+
         <details class="details-accordion">
-            <summary>
-                Padley, tel 0114 2666626
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Padley –tel 0114 2666626 <br>
-208 Crookes <br>
-S10 1TG <br>
-
-sheffieldcrookeslettings@hunters.com
-</p>
- <p>
-Sheltered accommodation and 1 bed flats mainly for the elderly. Point system based on personal circumstances.
-</p>
-
-            </div>
+          <summary>Places for People, tel 01132858923</summary>
+          <div class="details-accordion-content">
+            <p>
+              Places for People, tel 01132858923<br>
+              Mix of housing types, offered generally 18+ but in some cases will take 16+. There are 3 waiting lists:
+            </p>
+            <ul>
+              <li>Economic – people not receiving Housing Benefit/LHA and paying full rent.</li>
+              <li>General waiting list</li>
+              <li>Community – people needing to move to a property in a specific area (e.g., to care for a relative)</li>
+            </ul>
+          </div>
         </details>
-    </div>
-</details>
-<div class="accordion-content">
+
         <details class="details-accordion">
-            <summary>
-Places for People, tel 01132858923
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Places for People, tel 01132858923<br>
-Mix of housing types, offered generally 18+ but in some cases will take 16+. There are 3 waiting lists:
-</p>
- <p>
-<ul>
-<li>Economic – people not receiving Housing Benefit/Lha and paying full rent.</li>
-<li>General waiting lists</li>
-<li>Community - people needing to move to a property in a specific area e.g. to care for a relative</li>
-
-</ul>
-</p>
-
-            </div>
+          <summary>Sanctuary, tel 08001313348</summary>
+          <div class="details-accordion-content">
+            <address>
+              Sanctuary, tel 0800 131 3348<br>
+              In Person:<br>
+              Sanctuary Housing Association<br>
+              36a Beck Road<br>
+              Shiregreen<br>
+              Sheffield<br>
+              S5 0GB<br>
+              By mail:<br>
+              Sanctuary Housing Association<br>
+              Marybone House<br>
+              2 Marybone<br>
+              Liverpool<br>
+              Mersey<br>
+              L3 2BY<br>
+              Email: <a href="mailto:contactus@sanctuary.co.uk">contactus@sanctuary.co.uk</a><br>
+              <a href="http://www.sanctuary-housing.co.uk" target="_blank">http://www.sanctuary-housing.co.uk</a>
+            </address>
+            <p>
+              Stock transfer from Council Housing Service. All types of properties. Current stock is in Shiregreen. To register, a Council Housing Service rehousing registration form needs to be completed.
+              Properties are advertised through the Choice Based Letting System and a local lettings policy.
+              The only properties not advertised through the Sheffield Property Shop are those where Sanctuary has agreed a management transfer for current tenants or mutual exchange.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Sanctuary, tel 08001313348
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Sanctuary, tel 0800 131 3348<br>
-In Person: <br>
-
-Sanctuary Housing Association<br>
-36a Beck Road<br>
-Shiregreen<br>
-Sheffield<br>
-S5 0GB<br>
-
-By mail: <br>
-Sanctuary Housing Association<br>
-Marybone House<br>
-2 Marybone<br>
-Liverpool<br>
-Mersey<br>
-L3 2BY<br>
-Email: contactus@sanctuary.co.uk<br>
-<a href=" www.sanctuary-housing.co.uk" target="_blank"> Sanctuary Housing </a>
-</p>
- <p>
-
-Stock transfer from Council Housing Service. All types of properties. Current stock is in Shiregreen. To register, a Council Housing Service rehousing registration form needs to be completed. Properties are advertised through the Choice Based Letting System and a local lettings policy. The only properties not advertised through the Sheffield Property Shop are those where Sanctuary have agreed a management transfer for current tenants or mutual exchange.
-</p>
-
-            </div>
+          <summary>Sheffield Jewish Housing Association, tel 01142554318</summary>
+          <div class="details-accordion-content">
+            <address>
+              Sheffield Jewish Housing Association, tel 0114 255 4318<br>
+              22 Kingfield Road<br>
+              Sheffield<br>
+              S11 9AS
+            </address>
+            <p>
+              Accommodation for over 60’s, Jewish and non-Jewish members of the community. 1-bed flats, waiting list system.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Sheffield Jewish Housing Association, tel 01142554318
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Sheffield Jewish Housing Association, tel 0114 255 4318 <br>
-22 Kingfield Road <br>
-Sheffield <br>
-S11 9AS 
-</p>
- <p>
-Accommodation for over 60’s, Jewish and non-Jewish members of the community. 1 bed flats, waiting list system. Sheffield Jewish Housing Association, <br>
-tel 0114 255 4318 <br>
-22 Kingfield Road <br>
-Sheffield <br>
-S11 9AS 
-</p>
-
-            </div>
+          <summary>South Yorkshire Housing Association, tel 01142900200 / 0800138380</summary>
+          <div class="details-accordion-content">
+            <address>
+              South Yorkshire Housing Association<br>
+              tel 01142900200 / 08001380380<br>
+              152 Rockingham Street,<br>
+              Sheffield<br>
+              S1 4EB
+            </address>
+            <p>
+              We hold separate waiting lists for our Extra Care schemes at White Willows and the Meadows. These lists are not currently suspended.
+              People can apply directly to the services if they don’t need care.
+              The PL for both these schemes is Chris Dearnley:<a href="c.dearnely@syha.co.uk" target="_blank">c.dearnely@syha.co.uk</a>  (0114 244 4978).
+              If care is needed, then they go through the link workers. The link workers for the schemes are Jean Peachey for The Meadows (<a href="jean.peachey@sheffield.gov.uk" target="_blank">jean.peachey@sheffield.gov.uk</a>) and Jacqui Bradshaw for White Willows (<a href="Jacqueline.bradshaw@sheffield.gov.uk" target="_blank">Jacqueline.bradshaw@sheffield.gov.uk</a>).
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                South Yorkshire Housing Association, tel 01142900200 / 0800138380
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-South Yorkshire Housing Association<br>
- tel 01142900200 / 08001380380<br>
-152 Rockingham Street, <br>
-Sheffield<br>
-S1 4EB
-</p>
- <p>
-We do hold separate waiting lists for our Extra Care schemes at White Willows and the Meadows. These lists are not currently suspended. People can apply directly to the services if they don’t need care. The PL for both these schemes is Chris Dearnley c.dearnely@syha.co.uk (0114 244 4978).
-</p>
-<p>
-If care is needed, then they go through the link workers. The link workers for the schemes are Jean Peachey for The Meadows jean.peachey@sheffield.gov.uk and Jacqui Bradshaw for White willows Jacqueline.bradshaw@sheffield.gov.uk
-</p>
-            </div>
+          <summary>Together Housing Group, tel 01422 284500</summary>
+          <div class="details-accordion-content">
+            <address>
+              Together Housing Group<br>
+              Tel: 01422 284500<br>
+              Bull Green House<br>
+              Bull Green<br>
+              Halifax<br>
+              HX1 2EB
+            </address>
+          </div>
         </details>
-</div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-Together Housing Group, tel 01422 284500
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Together Housing Group <br>
-Tel: 01422 284500 <br>
-Bull Green House <br>
-Bull Green <br>
-Halifax <br>
-HX1 2EB <br>
-</p>
-            </div>
+          <summary>Yorkshire Housing, tel 0345 36644040</summary>
+          <div class="details-accordion-content">
+            <address>
+              Yorkshire Housing, tel 0345 36644040<br>
+              The Place<br>
+              2 Central Place<br>
+              Leeds<br>
+              LS10 1FB<br>
+              <a href="http://www.yorkshirehousing.co.uk" target="_blank">http://www.yorkshirehousing.co.uk</a>
+            </address>
+            <p>
+              Mix of housing types including some sheltered schemes. Points system - based on housing need. Generally need to be 18+, but in some cases will take 16+.
+              NB: These contact details give a summary only; if further details are needed, please contact the Housing Association directly.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
-
-<div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Yorkshire Housing, tel 0345 36644040
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Yorkshire Housing, <br>
-Tel: 0345 36644040 <br>
-The Place <br>
-2 Central Place <br>
-Leeds <br>
-LS10 1FB <br>
-<a href=" www.yorkshirehousing.co.uk" target="_blank"> Yorkshire Housing </a>
-</p>
- <p>
-
-Mix of housing types including some sheltered schemes. Points system - based on housing need. Generally need to be 18+ but in some cases will take 16+.
-</p>
-
-<p>
-NB: these contact details give a summary only; if further details are needed, please contact the Housing Association direct.
-</p>
-
-            </div>
-        </details>
-    </div>
-</details>
-
-
-
-
-
-    
+      </div>
+    </details>
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
     formName: "hou_rehousing_enquiry",
   },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
+  {
+    typeKey: "rehousing_services_information_provided"
+  },
+  {
+    typeKey: "rehousing_services_information_requested"
+  },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
+    keywords: ["rehousing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "Gee Whitehouse" }
+  {
+    date: "15/11/2024",
+    name: "Joseph Coupland"
+  }
 );
+
 
 const idReferences = new ContentH(
   "idReferences",
@@ -7447,716 +7292,412 @@ const tenancyConditions = new ContentH(
   "",
   `
 <details class="accordion">
-    <summary class="accordion-header">
-        <h3>Conditions as a Tenant</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                What are Tenancy Conditions?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                  Tenancy Conditions are an agreement between you and us. If you break these conditions of tenancy, 
-                  you may lose your home. The basic conditions of your tenancy are:
-                  </p>
-                  <ul>
-                  <li>You must pay your rent.</li>
-                  <li>You must look after and carry out any day-to-day maintenance to the property.</li>
-                  <li>You must not cause a nuisance or danger to people nearby.</li>
-                  </ul> 
-                </p>
-            </div>
-        </details>
-<div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Keeping Animals
-            </summary>
-            <div class="details-accordion-content">
-              <p>
-              You must not keep any animal which we consider to be dangerous or which may cause a nuisance. You must not keep a dog or a cat in a flat 
-              or maisonette which has shared parts or a shared entrance. If you live in a small block of flats or maisonettes, we will give you written
-              permission to keep a dog or cat if all the tenants who use the same shared parts of the building have agreed to you keeping the dog or cat. 
-              If we give our permission, we may withdraw it if your pet causes nuisance or upset to any of your neighbours. If we gave you written permission 
-              before 3rd April 1995 to keep a dog or cat in a block of flats containing more than 12 homes, you can continue to keep that dog or cat. 
-              You must not keep any pigeons or doves in or on any part of the property unless before 3rd April 1995 we gave you written permission to do so. 
-              Parrots, budgies, etc., are allowed as long as they are not causing a nuisance.
-              </p> 
-            </div>
-        </details>
-
-<div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-              Responsible and Maintenance We Are Responsible For
-            </summary>
-            <div class="details-accordion-content">
-             <p>
-             We will repair and maintain the following:
-             </p>
-              <li>
-              The structure and outside of the building (roofs, outside walls, outside doors,
-              window sills and frames, chimneys and chimney stacks, drains, gutters and outside pipes)
-              </li>
-              <li>
-              Inside walls, skirting boards, doors, door frames, floors, ceilings and major
-              replastering work.
-              </li>
-              <li>
-              Electric wiring, sockets and light fittings and gas and water pipes.
-              </li>
-              <li>
-              Heating equipment (such as fires, radiators and storage radiators) and water heating
-              equipment (such as boilers and immersion heaters). 
-              </li>
-              <li>
-              Kitchen and bathroom fixtures (such as sinks, basins, baths, showers and toilets).
-              </li>
-              <li>
-              Pathways and steps which are the main means of getting to your home.
-              </li>
-              <li>
-              Shared TV aerial.
-              </li>
-              <li>
-              The glass in outside doors and windows.
-              </li>
-              <li>
-              Supporting or retaining walls and front walls and front metal railings to the property.
-              </li>
-              <li>
-              We will be responsible for cutting down or trimming large trees within the property,
-              but only if they are causing danger or damage to your property or a nearby property.
-              </li>
-              <li>
-              We will decorate the outside and any shared parts of the building when necessary
-              (this will be at least every five years). 
-              </li>
-              <li>
-              With your help and cooperation we will keep in good repair and look after the
-              shared parts of the building.
-              </li>
-              <li>
-              When you ask for a repair, and we agree to do it, we will give you a receipt showing when we will carry out the work:
-              </li>
-      </div>
-  </details>
-
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-              Responsible and Maintenance We Are Responsible For
-            </summary>
-            <div class="details-accordion-content">
-          <p>
-             These are offered in 2-hour time slots for most non-urgent repairs including loose fitting doors and windows, leaking guttering, 
-             loose floorboards, or a light or electric socket not working. If you’re not at home at the appointed time, the repair will be cancelled, 
-             and you will need to make a new appointment via the contact centre. Some non-urgent repairs cannot be ordered straightaway but will be looked 
-             at by an inspector within two weeks of you reporting the fault. If the inspector finds that work is needed, then it will be ordered for you.
-          </p> 
-      </div>
-  </details>
-
+  <summary class="accordion-header">
+    <h3>Conditions as a Tenant</h3>
+    <div class="accordion-icon"></div>
+  </summary>
   <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-              Appointable Repairs
-            </summary>
-            <div class="details-accordion-content">
+    <details class="details-accordion">
+      <summary>What are Tenancy Conditions?</summary>
+      <div class="details-accordion-content">
         <p>
-            These are offered in 2-hour time slots for most non-urgent repairs including loose fitting doors and windows, leaking guttering, 
-            loose floorboards, or a light or electric socket not working. If you’re not at home at the appointed time, the repair will be cancelled, 
-            and you will need to make a new appointment via the contact centre. Some non-urgent repairs cannot be ordered straightaway 
-            but will be looked at by an inspector within two weeks of you reporting the fault. If the inspector finds that work is needed, 
-            then it will be ordered for you.
-        </p> 
-    </div>
-  </details>
+          Tenancy Conditions are an agreement between you and us. If you break these conditions of tenancy, you may lose your home. The basic conditions of your tenancy are:
+        </p>
+        <ul>
+          <li>You must pay your rent.</li>
+          <li>You must look after and carry out any day-to-day maintenance to the property.</li>
+          <li>You must not cause a nuisance or danger to people nearby.</li>
+        </ul>
+      </div>
+    </details>
 
-<div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-              Emergency Repairs
-            </summary>
-            <div class="details-accordion-content">
+    <details class="details-accordion">
+      <summary>Keeping Animals</summary>
+      <div class="details-accordion-content">
         <p>
-          This category has a 4-hour time limit and is used only for repairs where your health and safety could be at risk. These repairs include 
-          burst water pipes, blocked WC basin, gas leaks, and total electrical failure.
-        </p> 
-    </div>
-  </details>
+          You must not keep any animal which we consider to be dangerous or which may cause a nuisance. You must not keep a dog or a cat in a flat or maisonette which has shared parts or a shared entrance. If you live in a small block of flats or maisonettes, we will give you written permission to keep a dog or cat if all the tenants who use the same shared parts of the building have agreed to you keeping the dog or cat. 
+          If we give our permission, we may withdraw it if your pet causes nuisance or upset to any of your neighbours. If we gave you written permission before 3rd April 1995 to keep a dog or cat in a block of flats containing more than 12 homes, you can continue to keep that dog or cat. 
+          You must not keep any pigeons or doves in or on any part of the property unless before 3rd April 1995 we gave you written permission to do so. Parrots, budgies, etc., are allowed as long as they are not causing a nuisance.
+        </p>
+      </div>
+    </details>
 
-<div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-              Urgent Repairs
-            </summary>
-            <div class="details-accordion-content">
-        <p>
-          This is a 24-hour category for urgent jobs. Urgent repairs include heating breakdowns where you have no other way of heating your home, 
-          replacement of door locks, and blocked drains.
-          </p> 
-        </p> 
-    </div>
-  </details>
+    <details class="details-accordion">
+      <summary>Responsible and Maintenance We Are Responsible For</summary>
+      <div class="details-accordion-content">
+        <p>We will repair and maintain the following:</p>
+        <ul>
+          <li>The structure and outside of the building (roofs, outside walls, outside doors, window sills and frames, chimneys and chimney stacks, drains, gutters and outside pipes)</li>
+          <li>Inside walls, skirting boards, doors, door frames, floors, ceilings and major replastering work.</li>
+          <li>Electric wiring, sockets and light fittings and gas and water pipes.</li>
+          <li>Heating equipment (such as fires, radiators and storage radiators) and water heating equipment (such as boilers and immersion heaters).</li>
+          <li>Kitchen and bathroom fixtures (such as sinks, basins, baths, showers and toilets).</li>
+          <li>Pathways and steps which are the main means of getting to your home.</li>
+          <li>Shared TV aerial.</li>
+          <li>The glass in outside doors and windows.</li>
+          <li>Supporting or retaining walls and front walls and front metal railings to the property.</li>
+          <li>We will be responsible for cutting down or trimming large trees within the property, but only if they are causing danger or damage to your property or a nearby property.</li>
+          <li>We will decorate the outside and any shared parts of the building when necessary (this will be at least every five years).</li>
+          <li>With your help and cooperation, we will keep in good repair and look after the shared parts of the building.</li>
+          <li>When you ask for a repair, and we agree to do it, we will give you a receipt showing when we will carry out the work.</li>
+        </ul>
+      </div>
+    </details>
 
-<div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-              Planned Work
-            </summary>
-            <div class="details-accordion-content">
+    <details class="details-accordion">
+      <summary>Appointable Repairs</summary>
+      <div class="details-accordion-content">
         <p>
-          For jobs that need planning due to the nature of the work. This work includes manufactured items like external doors and windows 
-          or where there are large amounts of plastering to walls and ceilings
-          </p> 
-          <strong>We Will Not Be Responsible For:</strong>
-        <ul> 
+          These are offered in 2-hour time slots for most non-urgent repairs including loose fitting doors and windows, leaking guttering, loose floorboards, or a light or electric socket not working. If you’re not at home at the appointed time, the repair will be cancelled, and you will need to make a new appointment via the contact centre. Some non-urgent repairs cannot be ordered straightaway but will be looked at by an inspector within two weeks of you reporting the fault. If the inspector finds that work is needed, then it will be ordered for you.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Emergency Repairs</summary>
+      <div class="details-accordion-content">
+        <p>
+          This category has a 4-hour time limit and is used only for repairs where your health and safety could be at risk. These repairs include burst water pipes, blocked WC basin, gas leaks, and total electrical failure.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Urgent Repairs</summary>
+      <div class="details-accordion-content">
+        <p>
+          This is a 24-hour category for urgent jobs. Urgent repairs include heating breakdowns where you have no other way of heating your home, replacement of door locks, and blocked drains.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Planned Work</summary>
+      <div class="details-accordion-content">
+        <p>
+          For jobs that need planning due to the nature of the work. This work includes manufactured items like external doors and windows or where there are large amounts of plastering to walls and ceilings.
+        </p>
+        <strong>We Will Not Be Responsible For:</strong>
+        <ul>
           <li>Decorating the inside of your home.</li>
           <li>Repairing any damage caused by you, members of your household or guests, deliberately, or through neglect or carelessness.</li>
           <li>Repairing any fixtures and fittings which you have added to your home unless we agreed, in writing, to maintain them before you put them in.</li>
-        </ul> 
-    </div>
-  </details>
+        </ul>
+      </div>
+    </details>
 
-  <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-              Repairs and Maintenance You Are Responsible For
-            </summary>
-            <div class="details-accordion-content">
-       <p>
-          You are responsible for any repair not listed above. If you need a repair which we are responsible for, you must tell us about 
-          this repair as soon as possible. You must look after and maintain the property and carry out any repair you are responsible for. 
-          If you do not, we may maintain the property or carry out the repairs. We will charge you for this. If you have broken condition 23 of these conditions, 
-          we may remove any scrap from the property or do anything else which is necessary. Again we will charge you for this.
-      </p> 
-   </div>
- </details>
+    <details class="details-accordion">
+      <summary>Repairs and Maintenance You Are Responsible For</summary>
+      <div class="details-accordion-content">
+        <p>
+          You are responsible for any repair not listed above. If you need a repair which we are responsible for, you must tell us about this repair as soon as possible. You must look after and maintain the property and carry out any repair you are responsible for. If you do not, we may maintain the property or carry out the repairs. We will charge you for this. If you have broken condition 23 of these conditions, we may remove any scrap from the property or do anything else which is necessary. Again, we will charge you for this.
+        </p>
+      </div>
+    </details>
 
-<div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-             Permission for Alterations 
-            </summary>
-            <div class="details-accordion-content">
-       <p>
-        You must not alter or improve the property unless you have written permission from us. This includes:
-      </p>
-    <ul>
-    <li>Putting up an extension</li>
-    <li>Adding to or changing or replacing the fixtures and fittings provided by us</li> 
-    <li>Altering essential gas, electricity, and water services</li> 
-    <li>Putting up a radio or television aerial or satellite dish</li>
-    <li>Decorating the outside of your home</li>
-    </ul>
-    <p>
-    If we refuse to give you permission for any alteration, we will always write to you and say why.
-    </p> 
-   </div>
- </details>
+    <details class="details-accordion">
+      <summary>Permission for Alterations</summary>
+      <div class="details-accordion-content">
+        <p>
+          You must not alter or improve the property unless you have written permission from us. This includes:
+        </p>
+        <ul>
+          <li>Putting up an extension</li>
+          <li>Adding to or changing or replacing the fixtures and fittings provided by us</li>
+          <li>Altering essential gas, electricity, and water services</li>
+          <li>Putting up a radio or television aerial or satellite dish</li>
+          <li>Decorating the outside of your home</li>
+        </ul>
+        <p>
+          If we refuse to give you permission for any alteration, we will always write to you and say why.
+        </p>
+      </div>
+    </details>
 
- <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-             Rent (Your Responsibilities)
-            </summary>
-            <div class="details-accordion-content">
-       <p>
-        You must pay your rent and all other charges for the property (including any district heating charges) when they are due. 
-        The rent and any other charges are due every Monday, except for two weeks in each financial year which we will tell you about beforehand.
+    <details class="details-accordion">
+      <summary>Rent (Your Responsibilities)</summary>
+      <div class="details-accordion-content">
+        <p>
+          You must pay your rent and all other charges for the property (including any district heating charges) when they are due. The rent and any other charges are due every Monday, except for two weeks in each financial year which we will tell you about beforehand.
         </p>
         <p>
-        You must not withhold the rent for any reason whatsoever. In particular, you must not set off the cost of outstanding repairs which are 
-        our responsibility against your obligation to pay rent.
-        </p> 
-   </div>
- </details>
+          You must not withhold the rent for any reason whatsoever. In particular, you must not set off the cost of outstanding repairs which are our responsibility against your obligation to pay rent.
+        </p>
+      </div>
+    </details>
 
-  <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-             Rent (Our Responsibilities)
-            </summary>
-            <div class="details-accordion-content">
-       <p>
-       If we change the amount of your rent or any other charges for the property, we will give you notice in writing. 
-       The notice will give details of the new amount, when it must be paid from, and why we have made the change. 
-       Whenever we change the general levels of net rent for Council properties, we will give you four weeks' notice in writing.
-       </p> 
-   </div>
- </details>
+    <details class="details-accordion">
+      <summary>Rent (Our Responsibilities)</summary>
+      <div class="details-accordion-content">
+        <p>
+          If we change the amount of your rent or any other charges for the property, we will give you notice in writing. The notice will give details of the new amount, when it must be paid from, and why we have made the change. Whenever we change the general levels of net rent for Council properties, we will give you four weeks' notice in writing.
+        </p>
+      </div>
+    </details>
 
-   <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-             Use of the Property
-            </summary>
-            <div class="details-accordion-content">
-          <p> 
-              You must only use the home to live in as your only or principal home.
-          </p>
-              <li>
-                  You can ask us for permission to run a business from your property. We may give
-                  you permission if we are satisfied that the business will not cause a nuisance to
-                  neighbours and other people living in the area and you have any planning permission
-                  you need. If we give permission we may withdraw it if your business causes a nuisance
-                  to any neighbours or other people living in the area.
-              </li>
-              <li>
-                  You must not part with possession or sublet all of the property.
-              </li>
-              <li>
-                  You may part with possession or sublet part of the property if you have written
-                  permission from us. If we refuse to give you permission we will write to you and say why.
-              </li>
-              <li>
-                  You, your household and guests must respect the rights of other people and not
-                  do anything (either in or near the property or on the estate where the property is)
-                  which is illegal, immoral or would cause danger, a nuisance or annoyance, including
-                  harassment of other people. Harassment includes but is not limited to harassment because
-                  of a person's race, sex, sexuality, mental health, physical disability, learning disability,
-                  religion or because they have HIV/AIDS. Harassment is an interference with the peace
-                  and comfort of any person in relation to the enjoyment of their property or facilities
-                  on the estate. If you, your household or guests break this condition you must pay
-                  to us the cost of cleaning up, clearing or making good any damage.
-              </li>
-              <li>
-                  You, members of your household or guests must not use violent, abusive or offensive
-                  behaviour to our employees, agents or contractors doing housing work. This condition
-                  applies on or near the property or the estate on which it is situated or in any of
-                  our housing offices or elsewhere.
-              </li>
-              <li>
-                  You must not store petrol, paraffin, liquid or bottled gas or other dangerous
-                  materials in the property. In flats and maisonettes you must not use paraffin heaters
-                  or liquid or bottled gas heaters. You must take all reasonable precautions to prevent
-                  a fire.
-              </li>
-              <li>
-                  You must not keep any vehicle (including a caravan, boat or trailer) at the property,
-                  if the size or condition of the vehicle spoils the surrounding property or estate.
-              </li>
-              <li>
-                  You must not use any garden or drive to your property to store, load or unload
-                  scrap metal, or to strip down vehicles or persistently repair them.
-              </li>
-   </div>
- </details>
+    <details class="details-accordion">
+      <summary>Use of the Property</summary>
+      <div class="details-accordion-content">
+        <p>You must only use the home to live in as your only or principal home.</p>
+        <ul>
+          <li>You can ask us for permission to run a business from your property. We may give you permission if we are satisfied that the business will not cause a nuisance to neighbours and other people living in the area and you have any planning permission you need. If we give permission we may withdraw it if your business causes a nuisance to any neighbours or other people living in the area.</li>
+          <li>You must not part with possession or sublet all of the property.</li>
+          <li>You may part with possession or sublet part of the property if you have written permission from us. If we refuse to give you permission we will write to you and say why.</li>
+          <li>You, your household and guests must respect the rights of other people and not do anything (either in or near the property or on the estate where the property is) which is illegal, immoral or would cause danger, a nuisance or annoyance, including harassment of other people.</li>
+          <li>You, members of your household or guests must not use violent, abusive or offensive behaviour to our employees, agents or contractors doing housing work.</li>
+          <li>You must not store petrol, paraffin, liquid or bottled gas or other dangerous materials in the property. In flats and maisonettes you must not use paraffin heaters or liquid or bottled gas heaters. You must take all reasonable precautions to prevent a fire.</li>
+          <li>You must not keep any vehicle (including a caravan, boat or trailer) at the property, if the size or condition of the vehicle spoils the surrounding property or estate.</li>
+          <li>You must not use any garden or drive to your property to store, load or unload scrap metal, or to strip down vehicles or persistently repair them.</li>
+        </ul>
+      </div>
+    </details>
 
- <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-             Distric Heating System
-            </summary>
-            <div class="details-accordion-content">
-          <p> 
-            You must not interfere with any part of a District Heating system (including any meters, pre-payment controllers or cards), 
-            whether the system is provided by us, Sheffield Heat & Power Limited, or anyone else. If the supply of heat to your home 
-            is individually metered you must pay for all the heat which is supplied to your home. If any supply of heating and hot water 
-            which you pay for as part of your rent goes off for more than a day, we will reduce the weekly charge by one seventh for each day, 
-            (or part of a day over 8 hours), during which the heating and hot water is off.
-            </p>     
-   </div>
- </details>
+    <details class="details-accordion">
+      <summary>District Heating System</summary>
+      <div class="details-accordion-content">
+        <p>
+          You must not interfere with any part of a District Heating system (including any meters, pre-payment controllers or cards), whether the system is provided by us, Sheffield Heat & Power Limited, or anyone else. If the supply of heat to your home is individually metered you must pay for all the heat which is supplied to your home. If any supply of heating and hot water which you pay for as part of your rent goes off for more than a day, we will reduce the weekly charge by one seventh for each day (or part of a day over 8 hours), during which the heating and hot water is off.
+        </p>
+      </div>
+    </details>
 
- <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-             Gardens
-            </summary>
-            <div class="details-accordion-content">
-          <p> 
-          You must keep any private garden or hedges to the property tidy.
-            </p>     
-   </div>
- </details>
+    <details class="details-accordion">
+      <summary>Gardens</summary>
+      <div class="details-accordion-content">
+        <p>You must keep any private garden or hedges to the property tidy.</p>
+      </div>
+    </details>
 
-  <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-             Car Parking
-            </summary>
-            <div class="details-accordion-content">
-          <p> 
-          You can only park a vehicle in your garden if there is a hardstanding. If you have to cross a pavement to get to your hardstanding, 
-          the kerb to that pavement must be adapted to allow vehicles to cross it. You must get permission from us to build a hardstanding in your garden. 
-          You must have written permission from us and the Highway Authority to adapt a pavement so a vehicle may cross it. You must not regularly park 
-          a vehicle on communal areas, pavements or verges at the side of roads.
-          </p>   
-   </div>
- </details>
+    <details class="details-accordion">
+      <summary>Car Parking</summary>
+      <div class="details-accordion-content">
+        <p>
+          You can only park a vehicle in your garden if there is a hardstanding. If you have to cross a pavement to get to your hardstanding, the kerb to that pavement must be adapted to allow vehicles to cross it. You must get permission from us to build a hardstanding in your garden. You must have written permission from us and the Highway Authority to adapt a pavement so a vehicle may cross it. You must not regularly park a vehicle on communal areas, pavements or verges at the side of roads.
+        </p>
+      </div>
+    </details>
 
-   <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-             Running a business from home
-            </summary>
-            <div class="details-accordion-content">
-          <p> 
-          You can ask us for permission to run a business from your property. We may give you permission if we are satisfied that the business 
-          will not cause a nuisance to neighbours and other people living in the area and you have any planning permission you need. 
-          If we give permission we may withdraw it if your business causes a nuisance to any neighbours or other people living in the area.
-          </p>   
-   </div>
- </details>
+    <details class="details-accordion">
+      <summary>Running a business from home</summary>
+      <div class="details-accordion-content">
+        <p>
+          You can ask us for permission to run a business from your property. We may give you permission if we are satisfied that the business will not cause a nuisance to neighbours and other people living in the area and you have any planning permission you need. If we give permission we may withdraw it if your business causes a nuisance to any neighbours or other people living in the area.
+        </p>
+      </div>
+    </details>
 
-   <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-             Access to your property
-            </summary>
-            <div class="details-accordion-content">
-          <p> 
-          You must allow our employees, agents or contractors to enter the property to inspect the property, carry out repairs or improvements, 
-          service appliances or carry out any of our duties. We will give you 72 hours notice in writing if we need to enter your property and our employees, 
-          agents or contractors will show you a pass proving their identity before they may enter your property. If it is convenient you may allow our employees, 
-          agents or contractors access to your property even if they have not given you notice. If we decide that it is necessary because of an emergency 
-          which could cause personal injury or damage to Council or adjoining properties and you do not give us immediate access, we may take steps to enter 
-          your property using force if necessary without giving notice. 
-          </p>   
-   </div>
- </details>
-
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-             Ending your Tenancy
-            </summary>
-            <div class="details-accordion-content">
-          <p> 
-          If you want to end your tenancy you must give us four weeks written notice. The four weeks’ notice must end on a Monday. You must leave the property clean, 
-          safe, tidy and ready for the next tenant to move into. You must hand all the keys into the Housing Area Office by the end of the four weeks’ notice.
-          </p>
-          
-          <p>
-          You may have to remove fixtures and fittings which you have added to the property and replace them with the kind of fixtures and fittings we use. 
-          You will not have to do this if we had agreed to maintain the fixtures and fittings which you put in. If you have altered the property, even with our permission, 
-          we may ask you to restore the property to its original condition if the alterations make the property unsuitable for future tenants. If you do not replace fittings 
-          or restore the property to its original condition when we have asked you to do so, we will do the work and charge you for it.
-          </p>
-          <p>
-          We may charge you if we have to remove rubbish or other items which you have left in the property. We may also charge you for any damage to the property. 
-          You may give or send us any Notice about your tenancy (except for Notices about legal action against us) by addressing it to:
-          </p>
-          <address>
-          Sheffield Council Housing Service<br>
-          PO Box 10589<br>
-          Nottingham<br>
-          NG6 6DN
-          </address>
-          
-          <p>
-          Send notices about legal action to:
-          </p>
-          <address>
-          Head of Legal Services<br>
-          Town Hall<br>
-          Sheffield<br>
-          S1 2HH
-          </address>
-          
-          <p>
-          In addition to any way permitted by law, we may serve any notice on you at the dwelling by putting it through the letterbox or fixing it to the dwelling 
-          or by leaving it with somebody for you at the dwelling.
-          </p> 
-   </div>
- </details>
-</div>
+    <details class="details-accordion">
+      <summary>Access to your property</summary>
+      <div class="details-accordion-content">
+        <p>
+          You must allow our employees, agents or contractors to enter the property to inspect the property, carry out repairs or improvements, service appliances or carry out any of our duties. We will give you 72 hours notice in writing if we need to enter your property and our employees, agents or contractors will show you a pass proving their identity before they may enter your property. If it is convenient you may allow our employees, agents or contractors access to your property even if they have not given you notice. If we decide that it is necessary because of an emergency which could cause personal injury or damage to Council or adjoining properties and you do not give us immediate access, we may take steps to enter your property using force if necessary without giving notice.
+        </p>
+      </div>
+    </details>
+  </div>
 </details>
-          
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Ending your Tenancy</summary>
+        <div class="details-accordion-content">
+            <p>If you want to end your tenancy you must give us four weeks written notice. The four weeks’ notice must end on a Monday. You must leave the property clean, safe, tidy, and ready for the next tenant to move into. You must hand all the keys into the Housing Area Office by the end of the four weeks’ notice.</p>
+
+            <p>You may have to remove fixtures and fittings which you have added to the property and replace them with the kind of fixtures and fittings we use. You will not have to do this if we had agreed to maintain the fixtures and fittings which you put in. If you have altered the property, even with our permission, we may ask you to restore the property to its original condition if the alterations make the property unsuitable for future tenants. If you do not replace fittings or restore the property to its original condition when we have asked you to do so, we will do the work and charge you for it.</p>
+
+            <p>We may charge you if we have to remove rubbish or other items which you have left in the property. We may also charge you for any damage to the property. You may give or send us any Notice about your tenancy (except for Notices about legal action against us) by addressing it to:</p>
+
+            <address>
+                Sheffield Council Housing Service<br>
+                PO Box 10589<br>
+                Nottingham<br>
+                NG6 6DN
+            </address>
+
+            <p>Send notices about legal action to:</p>
+
+            <address>
+                Head of Legal Services<br>
+                Town Hall<br>
+                Sheffield<br>
+                S1 2HH
+            </address>
+
+            <p>In addition to any way permitted by law, we may serve any notice on you at the dwelling by putting it through the letterbox or fixing it to the dwelling or by leaving it with somebody for you at the dwelling.</p>
+        </div>
+    </details>
+</div>
+
 <details class="accordion">
     <summary class="accordion-header">
         <h3>Rights as a Tenant</h3>
         <div class="accordion-icon"></div>
     </summary>
-    <p>
-    Most Sheffield City Council tenants are 'Secure Tenants'. A secure tenant has a number of rights either by law or under our policies. These rights include the following:
-    </p>
+    <p>Most Sheffield City Council tenants are 'Secure Tenants'. A secure tenant has a number of rights either by law or under our policies. These rights include the following:</p>
     <div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Right to Repairs
-            </summary>
+            <summary>Right to Repairs</summary>
             <div class="details-accordion-content">
-                <p>
-                  For certain types of repairs you can arrange to have the work carried out yourself if:
-                </p>
+                <p>For certain types of repairs you can arrange to have the work carried out yourself if:</p>
                 <ul>
-                <li>you have ordered a repair</li>
-                <li>the value of the repair is less than £250</li>
-                <li>the repair has not been completed in the time promised</li>
-                <li>you use a contractor on the Council's approved contractor list</li>
+                    <li>you have ordered a repair</li>
+                    <li>the value of the repair is less than £250</li>
+                    <li>the repair has not been completed in the time promised</li>
+                    <li>you use a contractor on the Council's approved contractor list</li>
                 </ul>
-                <p>
-                The 'Repairs and Maintenance to your home' leaflet tells you how you can go about giving a notice of claim and includes a form for doing this. 
-                The Repairs and Maintenance Team will only discuss any claims for money once the form has been sent in to them.
-                </p> 
+                <p>The 'Repairs and Maintenance to your home' leaflet tells you how you can go about giving a notice of claim and includes a form for doing this. The Repairs and Maintenance Team will only discuss any claims for money once the form has been sent in to them.</p>
             </div>
         </details>
 
-  <div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Right to compensation for improvements
-            </summary>
+            <summary>Right to compensation for improvements</summary>
             <div class="details-accordion-content">
-                <p>
-                At the end of your tenancy you may get compensation for certain improvements you have made to your home. The leaflet called “Tenants own improvements” explains the scheme. 
-                You cannot get compensation if you are buying your home through the ‘Right to Buy’ or ‘Rent to Mortgage’ scheme or for any improvements costing less than £50.
-                </p> 
-                Tenant's Own Improvements ↗
+                <p>At the end of your tenancy you may get compensation for certain improvements you have made to your home. The leaflet called “Tenants own improvements” explains the scheme. You cannot get compensation if you are buying your home through the ‘Right to Buy’ or ‘Rent to Mortgage’ scheme or for any improvements costing less than £50.</p>
+                <p>Tenant's Own Improvements ↗</p>
             </div>
         </details>
 
-  <div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Right to take in lodgers
-            </summary>
+            <summary>Right to take in lodgers</summary>
             <div class="details-accordion-content">
-                <p>
-                You can take in lodgers without getting the permission of the Council Housing Service as long as your home does not become overcrowded. 
-                If you get Housing Benefit you must tell the Area Housing Office and the Housing Benefits Service that you have taken in lodgers 
-                as this may affect the amount of benefit you can receive. (If you don’t tell the Area Housing Office and the Council Housing Service finds out later, 
-                your benefit may be reduced for the period you have had lodgers, and any benefit which has been overpaid may be recovered.)
-                </p> 
+                <p>You can take in lodgers without getting the permission of the Council Housing Service as long as your home does not become overcrowded. If you get Housing Benefit you must tell the Area Housing Office and the Housing Benefits Service that you have taken in lodgers as this may affect the amount of benefit you can receive. (If you don’t tell the Area Housing Office and the Council Housing Service finds out later, your benefit may be reduced for the period you have had lodgers, and any benefit which has been overpaid may be recovered.)</p>
             </div>
         </details>
 
-  <div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Right to Succeed
-            </summary>
+            <summary>Right to Succeed</summary>
             <div class="details-accordion-content">
-                <p>
-                The following rules apply if you die and you did not take over the tenancy from a member of your family:
-                </p>
+                <p>The following rules apply if you die and you did not take over the tenancy from a member of your family:</p>
                 <ul>
-                <li>Your spouse or civil partner will have the right to succeed to the tenancy provided that they occupy the property as their only or principal home, or</li>
-                <li>Another member of your family can take over the tenancy if they lived in the property throughout the 12 months before your death and the property 
-                was their only or principal home.</li>
+                    <li>Your spouse or civil partner will have the right to succeed to the tenancy provided that they occupy the property as their only or principal home, or</li>
+                    <li>Another member of your family can take over the tenancy if they lived in the property throughout the 12 months before your death and the property was their only or principal home.</li>
                 </ul>
-                <p>
-                If more than one person qualifies to take over the tenancy, your spouse or civil partner will be entitled to take it over. If you have no spouse 
-                or civil partner living with you, everyone entitled to the tenancy must agree on who will take it on. If the people involved cannot agree we will choose 
-                who to give the tenancy to.
-                </p>                
-                <p>
-                People who are not entitled to take over your tenancy may, in certain circumstances, (which are set out in the Council's Lettings Policy) be given a 
-                new secure tenancy of your property.
-                </p>  
+                <p>If more than one person qualifies to take over the tenancy, your spouse or civil partner will be entitled to take it over. If you have no spouse or civil partner living with you, everyone entitled to the tenancy must agree on who will take it on. If the people involved cannot agree we will choose who to give the tenancy to.</p>
+                <p>People who are not entitled to take over your tenancy may, in certain circumstances, (which are set out in the Council's Lettings Policy) be given a new secure tenancy of your property.</p>
             </div>
         </details>
 
-  <div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Right to inspect personal files
-            </summary>
+            <summary>Right to inspect personal files</summary>
             <div class="details-accordion-content">
-                <p>
-                Under the law and the Council Housing Service policies you have the right to see certain information which the Council Housing Service has about your 
-                housing circumstances.
-                </p> 
+                <p>Under the law and the Council Housing Service policies you have the right to see certain information which the Council Housing Service has about your housing circumstances.</p>
             </div>
-        </details> 
-        
-  <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Right for compensation for loss of income due to broken appointments
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                If any housing staff fail to keep an appointment they arranged with you, you may claim compensation for loss of income. The appointment must have been made 
-                in writing and you must have lost wages in order to claim compensation.
-                </p> 
-             </div>
-        </details>         
+        </details>
 
-  <div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Right to be consulted
-            </summary>
+            <summary>Right for compensation for loss of income due to broken appointments</summary>
             <div class="details-accordion-content">
-                <p>
-                The Council Housing Service will consult you before the Council makes any change to any part of the tenancy conditions. There are a number of ways 
-                of consulting tenants on issues affecting them. You can get more details in Sheffield’s City Wide Tenant and Resident Participation Compact.
-                </p>  
-             </div>
-        </details>  
+                <p>If any housing staff fail to keep an appointment they arranged with you, you may claim compensation for loss of income. The appointment must have been made in writing and you must have lost wages in order to claim compensation.</p>
+            </div>
+        </details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Right to Buy
-            </summary>
+            <summary>Right to be consulted</summary>
             <div class="details-accordion-content">
-                <p>
-                If you have been a council tenant for at least two years (or five years if you became a tenant after 18th January 2005) you will probably have a right to buy your home. 
-                You can get more details from the Council's home ownership team.
-                </p>  
-             </div>
-        </details> 
+                <p>The Council Housing Service will consult you before the Council makes any change to any part of the tenancy conditions. There are a number of ways of consulting tenants on issues affecting them. You can get more details in Sheffield’s City Wide Tenant and Resident Participation Compact.</p>
+            </div>
+        </details>
 
-  <div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Right to Exchange
-            </summary>
+            <summary>Right to Buy</summary>
             <div class="details-accordion-content">
-                <p>
-                You may make a 'Mutual Exchange' (that is swap homes) with another Council or Housing Association tenant. As long as the size of the families involved 
-                qualify for the size and type of home and any Council tenants involved do not owe any rent, it should be possible to agree to an exchange. 
-                You can get more information from the leaflet called <strong>Mutual Exchanges - How to Apply</strong>. You must not swap homes until you have a letter 
-                from the Council Housing Service agreeing to the swap. 
-                </p>  
-             </div>
-        </details> 
+                <p>If you have been a council tenant for at least two years (or five years if you became a tenant after 18th January 2005) you will probably have a right to buy your home. You can get more details from the Council's home ownership team.</p>
+            </div>
+        </details>
 
-
-   <div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-              Assignment 
-            </summary>
+            <summary>Right to Exchange</summary>
             <div class="details-accordion-content">
-                <p>
-                You may ask the Council Housing Service for permission to transfer your tenancy to a member of your family living with you.
-                </p>  
-             </div>
-        </details> 
+                <p>You may make a 'Mutual Exchange' (that is swap homes) with another Council or Housing Association tenant. As long as the size of the families involved qualify for the size and type of home and any Council tenants involved do not owe any rent, it should be possible to agree to an exchange. You can get more information from the leaflet called <strong>Mutual Exchanges - How to Apply</strong>. You must not swap homes until you have a letter from the Council Housing Service agreeing to the swap.</p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>Assignment</summary>
+            <div class="details-accordion-content">
+                <p>You may ask the Council Housing Service for permission to transfer your tenancy to a member of your family living with you.</p>
+            </div>
+        </details>
     </div>
 </details>
-              
+
 <details class="accordion">
-      <summary class="accordion-header">
+    <summary class="accordion-header">
         <h3>Leaflets and Information</h3>
-          <div class="accordion-icon"></div>
-            </summary>
-              <div class="accordion-content"> 
-                <p>
-                You can get copies of leaflets and information on housing services from any Area Housing Office.
-                </p> 
-            </div>
-          </details>  
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>You can get copies of leaflets and information on housing services from any Area Housing Office.</p>
+    </div>
+</details>
 
 <details class="accordion">
-      <summary class="accordion-header">
+    <summary class="accordion-header">
         <h3>Reasons for us evicting you</h3>
-          <div class="accordion-icon"></div>
-            </summary>
-              <div class="accordion-content"> 
-                <p>
-                The Council Housing Service can only evict you on behalf of the Council if the Council Housing Service gives you a “Notice Seeking Possession” 
-                and applies to the court to end your tenancy. The Council Housing Service can evict you from your home if the court thinks this is reasonable 
-                for any of the following reasons:
-                </p> 
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>The Council Housing Service can only evict you on behalf of the Council if the Council Housing Service gives you a “Notice Seeking Possession” and applies to the court to end your tenancy. The Council Housing Service can evict you from your home if the court thinks this is reasonable for any of the following reasons:</p>
+        <ul>
+            <li>You have not paid the rent or not kept to these conditions.</li>
+            <li>You or anybody living with you or visiting you has caused a nuisance or annoyance to other people, has been convicted for using the premises for illegal or immoral purposes, or convicted of a serious offence in or near the premises.</li>
+            <li>If you have been living with someone as their partner and your partner has left because of violence or threats of violence from you, either to them or a member of the family, and it is unlikely they will return.</li>
+            <li>You have damaged the property or common parts.</li>
+            <li>You or anybody living with you has damaged any furniture provided by the Council.</li>
+            <li>You got the tenancy because you or somebody else on your behalf made false statements.</li>
+            <li>You refuse to leave a property which we let to you temporarily while work was being carried out at your own property.</li>
+            <li>You will usually have a chance to put things right before the Council Housing Service evicts you. The Council Housing Service will usually seek to evict you if you, your household or guests harass people (unless other legal action is more appropriate).</li>
+        </ul>
 
-              <ul> 
-              <li>You have not paid the rent or not kept to these conditions.</li> 
-              <li>You or anybody living with you or visiting you has caused a nuisance or annoyance to other people, has been convicted for using the premises for 
-              illegal or immoral purposes, or convicted of a serious offence in or near the premises.</li>
-              <li>If you have been living with someone as their partner and your partner has left because of violence or threats of violence from you, either to them 
-              or a member of the family, and it is unlikely they will return.</li> 
-              <li>You have damaged the property or common parts.</li> 
-              <li>You or anybody living with you has damaged any furniture provided by the Council.</li> 
-              <li>You got the tenancy because you or somebody else on your behalf made false statements.</li> 
-              <li>You refuse to leave a property which we let to you temporarily while work was being carried out at your own property.</li> 
-              <li>You will usually have a chance to put things right before the Council Housing Service evicts you. The Council Housing Service will usually seek to evict you if you, 
-              your household or guests harass people (unless other legal action is more appropriate).</li> 
-              </ul> 
+        <p>The Council Housing Service can evict you for the following reasons, if the court is satisfied that there is suitable alternative accommodation:</p>
 
-              <p>
-              The Council Housing Service can evict you for the following reasons, if the court is satisfied that there is suitable alternative accommodation:
-              </p> 
+        <ul>
+            <li>If your home is overcrowded as defined in the Housing Act 1985.</li>
+            <li>If your home is to be altered or demolished and this cannot be done while you’re still living there.</li>
+        </ul>
 
-              <ul> 
-              <li>If your home is overcrowded as defined in the Housing Act 1985.</li> 
-              <li>If your home is to be altered or demolished and this cannot be done while you’re still living there.</li> 
-              </ul> 
+        <p>The Council Housing Service will consult you if the Council Housing Service wants to evict you because of these reasons. The Council Housing Service will also offer you alternative accommodation which meets your reasonable needs.</p>
+        <p>The Council Housing Service can evict you for the following reasons if the court is satisfied that it is reasonable and you could get suitable alternative accommodation:</p>
 
-              <p>
-              The Council Housing Service will consult you if the Council Housing Service wants to evict you because of these reasons. The Council Housing Service will also offer 
-              you alternative accommodation which meets your reasonable needs.
-              </p>
-              <p>
-              The Council Housing Service can evict you for the following reasons if the court is satisfied that it is reasonable and you could get suitable alternative accommodation:
-              </p> 
+        <ul>
+            <li>The home was designed or adapted for a disabled person and there is no longer a disabled person living in the home but the home is required for a disabled person.</li>
+            <li>The home is one to which special services are provided and there is no longer anyone living in the home who needs the special services and the home is required for someone who does.</li>
+            <li>The home is much larger than you reasonably need and you have taken over the tenancy from another member of your family. (This reason is rarely used).</li>
+        </ul>
 
-              <ul> 
-              <li>The home was designed or adapted for a disabled person and there is no longer a disabled person living in the home but the home is required for a disabled person.</li> 
-              <li>The home is one to which special services are provided and there is no longer anyone living in the home who needs the special services and the home is required for 
-              someone who does.</li> 
-             <li>The home is much larger than you reasonably need and you have taken over the tenancy from another member of your family. (This reason is rarely used).</li> 
-              </ul> 
+        <p>The Council Housing Service will consult you if the Council Housing Service wants to evict you because of these reasons. The Council Housing Service will also offer you alternative accommodation which meets your reasonable needs. If the Council Housing Service has to go to court you can challenge the reasons given by the Council Housing Service to evict you and/or the suitability of the alternative accommodation offered by the Council Housing Service. You should get legal advice before you do this. These reasons for ending tenancies are part of the Housing Act 1985.</p>
+    </div>
+</details>
 
-              <p>
-              The Council Housing Service will consult you if the Council Housing Service wants to evict you because of these reasons. The Council Housing Service will also offer 
-              you alternative accommodation which meets your reasonable needs. If the Council Housing Service has to go to court you can challenge the reasons given by the Council Housing
-              Service to evict you and/or the suitability of the alternative accommodation offered by the Council Housing Service. You should get legal advice before you do this. 
-              These reasons for ending tenancies are part of the Housing Act 1985.
-              </p> 
-              
-            </div>
-          </details>  
-
-
- <details class="accordion">
-      <summary class="accordion-header">
+<details class="accordion">
+    <summary class="accordion-header">
         <h3>Abandonment and Notice to Quit</h3>
-          <div class="accordion-icon"></div>
-            </summary>
-              <div class="accordion-content"> 
-                <p>
-                If you abandon your property, the Council Housing Service will treat it as a surrender of your tenancy, and the Council Housing Service may re-enter the 
-                property and relet it. You will be responsible for the rent until the Council Housing Service accepts the surrender. If you do not use the property as your only 
-                or principal home, the Council Housing Service may serve you with a Notice to Quit.
-                </p> 
-            </div>
-          </details>           
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>If you abandon your property, the Council Housing Service will treat it as a surrender of your tenancy, and the Council Housing Service may re-enter the property and relet it. You will be responsible for the rent until the Council Housing Service accepts the surrender. If you do not use the property as your only or principal home, the Council Housing Service may serve you with a Notice to Quit.</p>
+    </div>
+</details>
 
-  <details class="accordion">
-      <summary class="accordion-header">
+<details class="accordion">
+    <summary class="accordion-header">
         <h3>Tenancy References</h3>
-          <div class="accordion-icon"></div>
-            </summary>
-              <div class="accordion-content"> 
-                <p>
-                IMFIT (Rents) can provide a financial reference for you. Your Neighbourhood Support Team can provide a Tenancy Reference.
-                </p>
-                <p>
-                Both of these may be subject to charges before the reference is returned.
-                </p>
-                <p>
-                If this is for a mortgage company or a private landlord, the company needs to put this request in writing. There is a charge for this of £60, which must be paid to
-                IMFIT before the reference is returned. The fee can be paid by debit/credit card or by BACS. If they want to pay this, transfer the call to IMFIT - this is NOT paid to
-                the rent account.
-                </p> 
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>IMFIT (Rents) can provide a financial reference for you. Your Neighbourhood Support Team can provide a Tenancy Reference.</p>
+        <p>Both of these may be subject to charges before the reference is returned.</p>
+        <p>If this is for a mortgage company or a private landlord, the company needs to put this request in writing. There is a charge for this of £60, which must be paid to IMFIT before the reference is returned. The fee can be paid by debit/credit card or by BACS. If they want to pay this, transfer the call to IMFIT - this is NOT paid to the rent account.</p>
 
-<strong>Reference requests should be sent to:</strong> <br>
+        <strong>Reference requests should be sent to:</strong><br>
+        Sheffield Council Housing Service<br>
+        PO Box 5967<br>
+        Sheffield<br>
+        S2 9GH</p>
 
-Sheffield Council Housing Service<br> 
-
-PO Box 5967<br> 
-
-Sheffield<br> 
-
-S2 9GH</p> 
-
-<p>
-For Social Landlords (Housing Associations), these also need to be put in writing, but there is no charge. Social Landlords can also email details of their request to 
-<a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> if they prefer to send an email.
-</p>
-</div>
-</details>   
-
-  `,
+        <p>For Social Landlords (Housing Associations), these also need to be put in writing, but there is no charge. Social Landlords can also email details of their request to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> if they prefer to send an email.</p>
+    </div>
+</details>
+`,
   { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
   { typeKey: "Tenancy_Sustainment_information_provided" },
   { typeKey: "Tenancy_Sustainment_transfered_to_service" },
