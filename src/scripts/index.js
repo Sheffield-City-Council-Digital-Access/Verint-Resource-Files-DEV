@@ -1784,7 +1784,7 @@ function checkPageProgress() {
       const dateElement = $(
         `#dform_widget_${el.name.replace(/_num_/, "_dt_").slice(0, -3)}`
       );
-      isEmpty = dateElement.val().trim() === "";
+      isEmpty = !dateElement.val();
       isValid = dateElement.prop("validity").valid;
     }
 
