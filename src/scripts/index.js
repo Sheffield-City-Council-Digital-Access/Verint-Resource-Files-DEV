@@ -965,33 +965,22 @@ function handleOnReadyEvent(event, kdf) {
       const maxYear = new Date().getFullYear() + parseInt(maxDate);
       return maxYear;
     })
-    .on({
-      input: function (e) {
-        const parentId = $(this)
-          .attr("id")
-          .replace("_num_", "_date_")
-          .slice(0, -3);
-        const dateMessage = getValidationMessageFromSession(parentId);
-        const dd = $(`#${this.id.slice(0, -2)}dd`).val() !== "";
-        const mm = $(`#${this.id.slice(0, -2)}mm`).val() !== "";
-        $(`#${parentId}`)
-          .find(".dform_validationMessage")
-          .text(dateMessage)
-          .hide();
-        inputDate(this.id, null, e.which);
-      },
-      focusout: function (e) {
-        if (e.key === "ArrowUp" || e.key === "ArrowDown") {
-          // Ignore focusout triggered by arrow keys
-          return;
-        }
-
-        const parentId = $(this)
-          .attr("id")
-          .replace("_num_", "_date_")
-          .slice(0, -3);
-        handleDateValidation(parentId);
-      },
+    .on("input focusout", function (e) {
+      const parentId = $(this)
+        .attr("id")
+        .replace("_num_", "_date_")
+        .slice(0, -3);
+      const dateMessage = getValidationMessageFromSession(parentId);
+      const dd = $(`#${this.id.slice(0, -2)}dd`).val() !== "" ? true : false;
+      const mm = $(`#${this.id.slice(0, -2)}mm`).val() !== "" ? true : false;
+      $(`#${parentId}`)
+        .find(".dform_validationMessage")
+        .text(dateMessage)
+        .hide();
+      if (e.type === "input") inputDate(this.id, null, e.which);
+      {
+      }
+      handleDateValidation(parentId);
     });
 
   // --- HANDLE KEYUP EVENTLISTENER FOR CHECK PROGRESS --------------------- \\
@@ -2171,6 +2160,7 @@ function checkDate(id, dd, mm, yy) {
 }
 
 function inputDate(id, nextID, key) {
+  console.log(key);
   const ignoredKeys = [9, 16, 37, 38, 39, 40];
   if (ignoredKeys.indexOf(key) !== -1) return;
   const maxLength = $(`#${id}`).attr("maxlength");
