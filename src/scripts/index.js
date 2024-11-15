@@ -2150,7 +2150,7 @@ function checkDate(id, dd, mm, yy, element) {
     },
     { condition: !dd, message: "Date must include a day", fields: ["date-dd"] },
     {
-      condition: !mm,
+      condition: activeField !== "dd" && !mm,
       message: "Date must include a month",
       fields: ["date-mm"],
     },
