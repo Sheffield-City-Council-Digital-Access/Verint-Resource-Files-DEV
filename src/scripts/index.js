@@ -923,7 +923,7 @@ function handleOnReadyEvent(event, kdf) {
       return;
     }
     if (this.value) $(this).val($(this).val().padStart(2, "0"));
-    handleDateValidation(parentId);
+    handleDateValidation(parentId, this);
   });
 
   $(`.date-mm`).on("input focusout", function (e) {
@@ -941,7 +941,7 @@ function handleOnReadyEvent(event, kdf) {
     if (dd === "") $(`#${this.id.slice(0, -2)}dd`).addClass("dform_fielderror");
     if (yy === "") $(`#${this.id.slice(0, -2)}yy`).addClass("dform_fielderror");
     $(`#${parentId}`).find(".dform_validationMessage").text(dateMessage).show();
-    handleDateValidation(parentId);
+    handleDateValidation(parentId, this);
   });
 
   $(`.date-yy`)
@@ -980,7 +980,7 @@ function handleOnReadyEvent(event, kdf) {
       if (e.type === "input") inputDate(this.id, null, e.which);
       {
       }
-      handleDateValidation(parentId);
+      handleDateValidation(parentId, this);
     });
 
   // --- HANDLE KEYUP EVENTLISTENER FOR CHECK PROGRESS --------------------- \\
@@ -2043,7 +2043,7 @@ function showVehicleFields() {
 
 // --- CUSTOM DATE FUNCTIONS ------------------------------------------------ \\
 
-function handleDateValidation(parentId) {
+function handleDateValidation(parentId, this) {
   const dd = parseInt(
     $(`#${parentId.replace("_date_", "_num_")}_dd`).val(),
     10
@@ -2111,8 +2111,8 @@ function getMinMaxDates(dateElementId) {
   return { minDate, maxDate };
 }
 
-function checkDate(id, dd, mm, yy) {
-  console.log(id, dd, mm, yy);
+function checkDate(id, dd, mm, yy, this) {
+  console.log(id, dd, mm, yy, this);
   const dateMessage = getValidationMessageFromSession(id);
 
   // Clear previous errors
@@ -2121,10 +2121,11 @@ function checkDate(id, dd, mm, yy) {
   );
   $(`#${id}`).find(".dform_validationMessage").text(dateMessage).hide();
 
+  const activeField = this.name.slice(-2);
   let hasError = false;
   let errorMsg = "";
   const errorFields = [];
-
+  console.log(activeField)
   const dateFields = ["date-dd", "date-mm", "date-yy"];
   const errorConditions = [
     {
@@ -2143,7 +2144,7 @@ function checkDate(id, dd, mm, yy) {
       fields: ["date-dd", "date-yy"],
     },
     {
-      condition: !mm && !yy,
+      condition: activeField !== 'dd' && !mm && !yy,
       message: "Date must include a month and year",
       fields: ["date-mm", "date-yy"],
     },
@@ -2154,7 +2155,7 @@ function checkDate(id, dd, mm, yy) {
       fields: ["date-mm"],
     },
     {
-      condition: !yy,
+      condition: activeField !== 'mm' && !yy,
       message: "Date must include a year",
       fields: ["date-yy"],
     },
