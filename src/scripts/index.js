@@ -2159,13 +2159,14 @@ function checkDate(id, dd, mm, yy) {
     },
   ];
 
-  errorConditions.forEach((condition) => {
+  for (const condition of errorConditions) {
     if (condition.condition) {
       hasError = true;
       errorMsg = condition.message;
       errorFields.push(...condition.fields);
+      break; // Break out of the loop after the first match
     }
-  });
+  }
 
   if (hasError) {
     errorFields.forEach((field) => {
