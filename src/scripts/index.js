@@ -1715,6 +1715,7 @@ function checkPageProgress() {
   const validationMessages = currentPageElement.querySelectorAll(
     ".dform_validationMessage"
   );
+  console.log("validationMessages", validationMessages);
   const isValidationMessageVisible =
     Array.from(validationMessages).some(isVisible);
 
@@ -1796,7 +1797,7 @@ function checkPageProgress() {
   );
 
   // Call the disabledButtonToggle function based on the check
-  disabledButtonToggle(shouldDisableButton);
+  disabledButtonToggle(!shouldDisableButton);
 }
 
 function disabledButtonToggle(enable) {
