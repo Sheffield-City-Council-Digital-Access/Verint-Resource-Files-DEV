@@ -1711,12 +1711,12 @@ function checkPageProgress() {
   const isAlertPanelVisible = Array.from(alertPanels).some(isVisible);
 
   // Check if a validation message is visible
-  const validationMessages = currentPageElement.querySelectorAll(
-    ".dform_validationMessage"
-  );
+  // const validationMessages = currentPageElement.querySelectorAll(
+  //   ".dform_validationMessage"
+  // );
 
-  const isValidationMessageVisible =
-    Array.from(validationMessages).some(isVisible);
+  // const isValidationMessageVisible =
+  //   Array.from(validationMessages).some(isVisible);
 
   // Handle file inputs separately
   const fileUploads = Array.from(
@@ -1761,6 +1761,7 @@ function checkPageProgress() {
   // Check if any radio or checkbox groups are unchecked
   const hasEmptyRadiosAndCheckboxes = radiosAndCheckboxes.some((el) => {
     const name = el.name;
+    console.log("name", name);
     const isUnchecked = !currentPageElement.querySelector(
       `input[name='${name}']:checked`
     );
@@ -1783,10 +1784,9 @@ function checkPageProgress() {
     hasEmptyOrInvalidOtherFields;
 
   // If any alert panel is visible, force disabling the buttons
-  const shouldDisableButton =
-    hasEmptyRequiredElement ||
-    isAlertPanelVisible ||
-    isValidationMessageVisible;
+  const shouldDisableButton = hasEmptyRequiredElement || isAlertPanelVisible;
+  // ||
+  // isValidationMessageVisible;
 
   // Call the disabledButtonToggle function based on the check
   disabledButtonToggle(!shouldDisableButton);
