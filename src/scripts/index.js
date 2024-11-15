@@ -2133,7 +2133,7 @@ function checkDate(id, dd, mm, yy) {
     $(`#${id} .date-yy`).addClass("dform_fielderror");
     hasError = true;
   }
-  console.log(id, dd, mm, yy);
+
   if (hasError) {
     const errorMsg =
       !dd && !mm && !yy
@@ -2168,10 +2168,12 @@ function inputDate(id, nextID, key) {
   if (value.length >= maxLength) {
     $(`#${id}`).val(value.substring(0, maxLength));
     $(`#${id}`).val(value.substring(0, maxLength));
-    if (nextID && key) {
+    if (nextID) {
       $(`#${nextID}`).focus();
     } else {
-      $(`#${id}`).blur();
+      if (key) {
+        $(`#${id}`).blur();
+      }
     }
   }
 }
@@ -2198,8 +2200,6 @@ function validDate(id, day, month, year) {
 
   // Construct the date from the provided values
   const date = new Date(year, month - 1, day); // month is zero-indexed
-  console.log(`Constructed Date: ${date}`);
-  console.log(`Input values: day=${day}, month=${month}, year=${year}`);
 
   // Check if the constructed date is valid
   if (
