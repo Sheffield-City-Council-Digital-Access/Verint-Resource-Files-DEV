@@ -2155,7 +2155,7 @@ function checkDate(id, dd, mm, yy, element) {
       fields: ["date-mm"],
     },
     {
-      condition: (activeField !== "dd" || activeField !== "mm") && !yy,
+      condition: activeField !== "dd" && activeField !== "mm" && !yy,
       message: "Date must include a year",
       fields: ["date-yy"],
     },
