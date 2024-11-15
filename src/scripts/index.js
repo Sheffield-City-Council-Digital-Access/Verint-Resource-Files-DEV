@@ -2043,7 +2043,7 @@ function showVehicleFields() {
 
 // --- CUSTOM DATE FUNCTIONS ------------------------------------------------ \\
 
-function handleDateValidation(parentId, this) {
+function handleDateValidation(parentId, element) {
   const dd = parseInt(
     $(`#${parentId.replace("_date_", "_num_")}_dd`).val(),
     10
@@ -2057,7 +2057,7 @@ function handleDateValidation(parentId, this) {
     10
   );
 
-  checkDate(parentId, dd, mm, yy);
+  checkDate(parentId, dd, mm, yy, element);
   checkMaxDay(parentId, dd, mm, yy);
 }
 
@@ -2111,8 +2111,8 @@ function getMinMaxDates(dateElementId) {
   return { minDate, maxDate };
 }
 
-function checkDate(id, dd, mm, yy, this) {
-  console.log(id, dd, mm, yy, this);
+function checkDate(id, dd, mm, yy, element) {
+  console.log(id, dd, mm, yy, element);
   const dateMessage = getValidationMessageFromSession(id);
 
   // Clear previous errors
@@ -2121,11 +2121,11 @@ function checkDate(id, dd, mm, yy, this) {
   );
   $(`#${id}`).find(".dform_validationMessage").text(dateMessage).hide();
 
-  const activeField = this.name.slice(-2);
+  const activeField = element.name.slice(-2);
   let hasError = false;
   let errorMsg = "";
   const errorFields = [];
-  console.log(activeField)
+  console.log(activeField);
   const dateFields = ["date-dd", "date-mm", "date-yy"];
   const errorConditions = [
     {
@@ -2144,7 +2144,7 @@ function checkDate(id, dd, mm, yy, this) {
       fields: ["date-dd", "date-yy"],
     },
     {
-      condition: activeField !== 'dd' && !mm && !yy,
+      condition: activeField !== "dd" && !mm && !yy,
       message: "Date must include a month and year",
       fields: ["date-mm", "date-yy"],
     },
@@ -2155,7 +2155,7 @@ function checkDate(id, dd, mm, yy, this) {
       fields: ["date-mm"],
     },
     {
-      condition: activeField !== 'mm' && !yy,
+      condition: activeField !== "mm" && !yy,
       message: "Date must include a year",
       fields: ["date-yy"],
     },
