@@ -2217,6 +2217,9 @@ function checkDate(id, dd, mm, yy, element) {
     } else {
       $(`#${id.replace("_date_", "_txt_")}`).val("");
       $(`#${id.replace("_date_", "_dt_")}`).val("");
+      $(`#${id} .date-dd, #${id} .date-mm, #${id} .date-yy`).addClass(
+        "dform_fielderror"
+      );
     }
   }
 }
