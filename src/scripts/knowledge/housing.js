@@ -1041,514 +1041,359 @@ const housingAssociations = new ContentH(
   "Housing Associations",
   "",
   `
-<p> 
+    <p>
+      Housing Associations and Housing Trusts are non-profit making, independent organisations.
+      They vary widely in the types of people they house.
+      Some cater for all groups giving priority for those with the most urgent housing need.
+      Others specialise in helping particular groups of people, e.g. the elderly, disabled or those with other specific needs.
+      Public numbers cannot be used on freephone.
+    </p>
 
-Housing Associations and Housing Trusts are non-profit making, independent organisations. 
-They vary widely in the types of people they house. 
-Some cater for all groups giving priority for those with the most urgent housing need. 
-Others specialise in helping particular groups of people, e.g. the elderly, 
-disabled or those with other specific needs. Public numbers cannot be used on freephone.
-
-</p>
-
-<details class="accordion">
-    <summary class="accordion-header">
+    <details class="accordion">
+      <summary class="accordion-header">
         <h3>Housing Associations</h3>
         <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
+      </summary>
+      <div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Acis Group Ltd, tel 01427 678000 
-            </summary>
-            <div class="details-accordion-content">
-
- <p>
-Acis Group Ltd, tel 01427 678000<br>
-    Acis Group Limited<br>
-    Acis House<br>
-    Bridge Street<br>
-    Gainsborough<br>
-    Lincolnshire<br>
-    DN21 1GG<br>
-    <a href="http://www.acisgroup.co.uk">acisgroup</a>
-                </p>
-
-                <p>
-                    Variety of properties across Woodthorpe and Lower Manor. 
-                    Stock transfer from the Council Housing Service. To register, 
-                    a Council Housing Service rehousing registration form needs to be completed. 
-                    Properties are advertised through the Choice Based Letting System. 
-                    The only properties not advertised through the Sheffield Property Shop are those 
-                    where Acis have agreed a management transfer for current tenants or mutual exchange.
-                    </p>
-                   
-            </div>
+          <summary>Acis Group Ltd, tel 01427 678000</summary>
+          <div class="details-accordion-content">
+            <address>
+              Acis Group Ltd, tel 01427 678000<br>
+              Acis Group Limited<br>
+              Acis House<br>
+              Bridge Street<br>
+              Gainsborough<br>
+              Lincolnshire<br>
+              DN21 1GG<br>
+              <a href="http://www.acisgroup.co.uk" target="_blank">http://www.acisgroup.co.uk</a>
+            </address>
+            <p>
+              Variety of properties across Woodthorpe and Lower Manor. Stock transfer from the Council Housing Service.
+              To register, a Council Housing Service rehousing registration form needs to be completed.
+              Properties are advertised through the Choice Based Letting System.
+              The only properties not advertised through the Sheffield Property Shop are those where Acis have agreed a management transfer for current tenants or mutual exchange.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
-<div class="accordion-content">
+
         <details class="details-accordion">
-            <summary>
-                Anchor Trust, tel 03457 758595
-            </summary>
-            <div class="details-accordion-content">
-<p>
-Anchor Trust, tel 03457 758595<br>
-Customer Centre<br>
-2 Godwin Street,<br>
-Bradford,<br>
-BD1 2ST<br>
-GEN EMAIL: contact@anchor.org.uk
-                </p>
-                <p>
-     Sheltered housing for the elderly. Applicants need to be 55 yrs +. 
-     Waiting list, priority awarded to following groups; homeless, 
-     fleeing harassment and leaving hospital with nowhere else to go.
-</p>
-
-            </div>
+          <summary>Anchor Trust, tel 03457 758595</summary>
+          <div class="details-accordion-content">
+            <address>
+              Anchor Trust, tel 03457 758595<br>
+              Customer Centre<br>
+              2 Godwin Street,<br>
+              Bradford,<br>
+              BD1 2ST<br>
+              GEN EMAIL: <a href="mailto:contact@anchor.org.uk">contact@anchor.org.uk</a>
+            </address>
+            <p>
+              Sheltered housing for the elderly. Applicants need to be 55+.
+              Waiting list, priority awarded to the following groups: homeless, fleeing harassment, and leaving hospital with nowhere else to go.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
-<div class="accordion-content">
+
         <details class="details-accordion">
-            <summary>
-                Arches Housing Association tel 0114 2288100
-            </summary>
-            <div class="details-accordion-content">
-<p>
-Arches Housing Limited, tel 0114 2288100<br>
-122 Burngreave Road<br>
-Sheffield<br>
-S3 9DE<br><br>
-
-Email: info@archeshousing.org.uk<br>
-
-Website and web chat: <a href="https://www.archeshousing.org.uk" target="_blank">archeshousing</a>
-
-                </p>
-                <p>
- Mutual exchanges advertised and managed through home swapper: 
- register on https://www.homeswapper.co.uk/
- </p>
- <p>
-
-Info on lettings: Flats and houses available, including some over 60s independent living 
-accommodation (no warden on site). Must be 18+ and must be eligible for benefits if not working, 
-an affordability assessment and risk assessment will be carried out, 
-and previous landlords reference requested on all nominees. 
-We do not hold a waiting list for general public.
-</p>
-
-            </div>
+          <summary>Arches Housing Association, tel 0114 2288100</summary>
+          <div class="details-accordion-content">
+            <address>
+              Arches Housing Limited, tel 0114 2288100<br>
+              122 Burngreave Road<br>
+              Sheffield<br>
+              S3 9DE<br>
+              Email: <a href="mailto:info@archeshousing.org.uk">info@archeshousing.org.uk</a><br>
+              Website and web chat: <a href="https://www.archeshousing.org.uk" target="_blank">https://www.archeshousing.org.uk</a>
+            </address>
+            <p>
+              Mutual exchanges advertised and managed through home swapper: register on <a href="https://www.homeswapper.co.uk" target="_blank">https://www.homeswapper.co.uk</a>
+              Info on lettings: Flats and houses available, including some over 60s independent living accommodation (no warden on site). Must be 18+ and eligible for benefits if not working. 
+              An affordability and risk assessment will be carried out, and a previous landlord reference requested for all nominees.
+              We do not hold a waiting list for the general public.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Arches Housing Association tel 0114 2288100
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-
-</p>
- <p>
-
-</p>
-
-            </div>
+          <summary>Clarion Housing Group, tel 0330 500 8000</summary>
+          <div class="details-accordion-content">
+            <p>
+              Clarion Housing Group, tel 0330 500 8000<br>
+              Mix of housing types including some sheltered schemes. Need to be 18+. Points based system.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
- 
-<div class="accordion-content">
+
         <details class="details-accordion">
-            <summary>
-                Clarion Housing Group, tel 0330 500 8000
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-<p>Arches Housing Limited, tel 0114 2288100<br>
-122 Burngreave Road<br>
-Sheffield<br>
-S3 9DE<br>
-info@archeshousing.org.uk </p>
-
-<p>Website and web chat: <a href="https://www.archeshousing.org.uk" target="_blank"> archeshousing </a></p>
-<p>
-Mix of housing types including some sheltered schemes. Need to be 18+. Points based system.
-</p>
-
-            </div>
+          <summary>Together Group with Pennine, tel 0845 270 1088</summary>
+          <div class="details-accordion-content">
+            <address>
+              Together Group with Pennine, tel 0845 270 1088<br>
+              Harrison Street<br>
+              Wakefield<br>
+              WF1 1PS
+            </address>
+            <p>
+              1 & 2 bed flats. Two, three, and four bedroom houses. Points system - based on housing need. Small, scattered developments. Need to be aged 18+, but in some cases will take 16+.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
- 
-<div class="accordion-content">
+
         <details class="details-accordion">
-            <summary>
-                Together Group with Pennine), tel 0845 270 1088
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Together Group with Pennine, <br>
- tel 0845 270 1088<br>
-Harrison Street<br>
-Wakefield<br>
-WF1 1PS<br>
-</p>
- <p>
-1 & 2 bed flats. Two, three and four bedroom houses. Points system - based on housing need. Small, scattered developments. Need to be aged 18+ but in some cases will take 16+.
-</p>
-
-            </div>
+          <summary>English Churches Housing Group / The Riverside Group, tel 0345 111 0000</summary>
+          <div class="details-accordion-content">
+            <address>
+              English Churches Housing Group / The Riverside Group, tel 0345 1559002<br>
+              2 Estuary Boulevard<br>
+              Estuary Commerce Park<br>
+              Liverpool<br>
+              L24 8RF
+            </address>
+            <p>
+              Since English Churches Housing Group merged with The Riverside Group in March 2007, their waiting list has been closed.
+              Some of their properties are still being offered through the Choice Based Letting System. To register, complete a Council Housing Service rehousing registration form.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                English Churches Housing Group / The Riverside Group, 0345 111 0000            </summary>
-            <div class="details-accordion-content">
-                <p>
-English Churches Housing Group / The Riverside Group, <br>
-0845 1559002<br>
-2 Estuary Boulevard<br>
-Estuary Commerce Park<br>
-Liverpool<br>
-L24 8RF<br>
-</p>
- <p>
-Since English Churches Housing Group merged with The Riverside Group in March 2007, their waiting list has been closed. Some of their properties are still being offered through the Choice Based Letting System. To register, complete a Council Housing Service rehousing registration form.
-</p>
-            </div>
+          <summary>Great Places Housing Group, tel 0300 123 1966</summary>
+          <div class="details-accordion-content">
+            <address>
+              Great Places Housing Group, tel 0300 123 1966<br>
+              2a Derwent Avenue<br>
+              Manchester<br>
+              M21 7QP<br>
+              <a href="http://www.greatplaces.org.uk" target="_blank">http://www.greatplaces.org.uk</a>
+            </address>
+            <p>
+              Flats, houses, and bungalows in Wybourn, Richmond Park, Birklands, and Athelstan (mostly ex-Council properties). To register, a Council Housing Service rehousing registration form needs to be completed.
+              Properties are advertised through the Choice Based Letting System and a local lettings policy.
+              Some properties are advertised to existing Great Places tenants under their Local Lettings Policy.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-Great Places Housing Group, tel 0300 123 1966            </summary>
-            <div class="details-accordion-content">
-                <p>
-
-Great Places Housing Group tel 0300 123 1966<br>
-2a Derwent Avenue<br>
-Manchester<br>
-M21 7QP<br>
-<a href="www.greatplaces.org.uk" target="_blank"> great places </a>
-
-</p>
- <p>
-Flats, houses and bungalows in Wybourn, Richmond Park, Birklands and Athelstan (mostly ex-Council properties) To register, a Council Housing Service rehousing registration form needs to be completed. Including – flats, bungalows and houses.
-
-</p>
-<p>
-Properties are advertised through the Choice Based Letting System and a local lettings policy.
-</p>
-
-<p>
-Some properties are advertised to existing Great Places tenants under their Local Lettings Policy. </p>
-
-            </div>
+          <summary>Guinness Northern Counties, tel 0303 123 1890</summary>
+          <div class="details-accordion-content">
+            <address>
+              Guinness Northern Counties, tel 0303 123 1890<br>
+              St Helens Court,<br>
+              Stirling Cl,<br>
+              Elsecar,<br>
+              Barnsley<br>
+              S74 8DY<br>
+              <a href="http://www.guinnesspartnership.com" target="_blank">http://www.guinnesspartnership.com</a>
+            </address>
+            <p>
+              Available properties are either advertised through the Council’s Property Shop and Property Shop website or are allocated from Guinness Northern Counties’ own waiting list.
+              You need to join Guinness Northern Counties’ waiting list as well as the Council’s Housing Register in order to bid for properties.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Guinness Nothern Counties, tel 0303 123 1890
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Guinness Northern Counties tel 0303 123 1890<br>
-St Helens Court, <br>
-Stirling Cl, <br>
-Elsecar, <br>
-Barnsley<br>
-S74 8DY<br>
-
-<a href=" www.guinnesspartnership.com/" target="_blank"> Guinness partnership </a>
-</p>
- <p>
-Available properties are either advertised through the Council’s Property Shop and Property Shop website or are allocated from Guinness Northern Counties’ own waiting list. You need to join Guinness Northern Counties’ waiting list as well as the Council’s Housing Register in order to bid for properties.
-</p>
-
-            </div>
+          <summary>Home Group, tel 03451414663</summary>
+          <div class="details-accordion-content">
+            <address>
+              Home Group, tel 03451414663<br>
+              Home Group Ltd<br>
+              2nd Floor, 20 Westfield Terrace<br>
+              Sheffield<br>
+              S1 4GH<br>
+              <a href="mailto:contactus@homegroup.org.uk" target="_blank">contactus@homegroup.org.uk</a> 
+            </address>
+            <p>
+              2, 3, and 4 bedroomed homes for general needs rent within S12. Please note we do not hold a waiting list, and any properties becoming available will be advertised through the Choice Based Lettings system.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Home Group, tel 03451414663
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Home Group , Tel: tel: 03451414663 <br>
-Home Group Ltd <br>
-2nd Floor 20 Westfield terrace <br>
-Sheffield <br>
-S1 4GH <br>
-contactus@homegroup.org.uk <br>
-</p>
- <p>
-2, 3 and 4 bedroomed homes for general needs rent within S12. Please note we do not hold a waiting list and any properties becoming available will be advertised through the Choice Based lettings system.
-</p>
-
-            </div>
+          <summary>Housing 21, tel 0370 192 4000</summary>
+          <div class="details-accordion-content">
+            <address>
+              Housing 21, tel 0370 192 4000<br>
+              Tricorn House<br>
+              51–53 Hagley Road<br>
+              Birmingham<br>
+              B16 8TP<br>
+              <a href="mailto:enquiries@housing21.org.uk" target="_blank">enquiries@housing21.org.uk</a> 
+            </address>
+            <p>
+              Flats and bedsits for 60+. If registered disabled, 55+. Allocation system based on waiting time.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Housing 21, tel 0370 192 4000
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Housing 21, tel 0370 192 4000<br>
-Tricorn House<br>
-51–53 Hagley Road<br>
-Birmingham<br>
-B16 8TP<br>
-enquiries@housing21.org.uk<br>
-</p>
- <p>
-Flats and bedsits for 60+. If registered disabled 55+. Allocation system based on waiting time.
-</p>
-            </div>
+          <summary>Johnnie Johnson Housing Trust Ltd, tel 0345 305 5335</summary>
+          <div class="details-accordion-content">
+            <address>
+              Johnnie Johnson Housing Trust Ltd, tel 0345 305 5335<br>
+              Eden Point,<br>
+              Three Acres Lane,<br>
+              Cheadle Hulme,<br>
+              Cheadle,<br>
+              SK8 6RL<br>
+              <a href="mailto:talktous@jjhousing.co.uk" target="_blank">talktous@jjhousing.co.uk</a>  
+            </address>
+            <p>
+              Bedsits, 1 & 2 bed flats, 2 + 3 bed houses. Need to be aged 18+, but some age-banded schemes. Allocation based on waiting time.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
-<div class="accordion-content">
+
         <details class="details-accordion">
-            <summary>
-                Johnnie Johnson Hosing Trust Ltd, tel 0345 305 5335
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Johnnie Johnson Housing Trust Ltd, tel 0345 305 5335<br>
-Eden Point, <br>
-Three Acres Lane, <br>
-Cheadle Hulme, <br>
-Cheadle, <br>
-SK8 6RL<br>
-talktous@jjhousing.co.uk<br>
-
-</p>
- <p>
-Bedsits, 1 & 2 bed flats, 2 + 3 bed houses. Need to be aged 18+ but some age banded schemes. Allocation based on waiting time.
-</p>
-            </div>
+          <summary>Padley, tel 0114 2666626</summary>
+          <div class="details-accordion-content">
+            <address>
+              Padley, tel 0114 2666626<br>
+              208 Crookes<br>
+              S10 1TG<br>
+              <a href="mailto:sheffieldcrookeslettings@hunters.com" target="_blank">sheffieldcrookeslettings@hunters.com</a>
+            </address>
+            <p>
+              Sheltered accommodation and 1-bed flats mainly for the elderly. Point system based on personal circumstances.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
-<div class="accordion-content">
+
         <details class="details-accordion">
-            <summary>
-                Padley, tel 0114 2666626
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Padley –tel 0114 2666626 <br>
-208 Crookes <br>
-S10 1TG <br>
-
-sheffieldcrookeslettings@hunters.com
-</p>
- <p>
-Sheltered accommodation and 1 bed flats mainly for the elderly. Point system based on personal circumstances.
-</p>
-
-            </div>
+          <summary>Places for People, tel 01132858923</summary>
+          <div class="details-accordion-content">
+            <p>
+              Places for People, tel 01132858923<br>
+              Mix of housing types, offered generally 18+ but in some cases will take 16+. There are 3 waiting lists:
+            </p>
+            <ul>
+              <li>Economic – people not receiving Housing Benefit/LHA and paying full rent.</li>
+              <li>General waiting list</li>
+              <li>Community – people needing to move to a property in a specific area (e.g., to care for a relative)</li>
+            </ul>
+          </div>
         </details>
-    </div>
-</details>
-<div class="accordion-content">
+
         <details class="details-accordion">
-            <summary>
-Places for People, tel 01132858923
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Places for People, tel 01132858923<br>
-Mix of housing types, offered generally 18+ but in some cases will take 16+. There are 3 waiting lists:
-</p>
- <p>
-<ul>
-<li>Economic – people not receiving Housing Benefit/Lha and paying full rent.</li>
-<li>General waiting lists</li>
-<li>Community - people needing to move to a property in a specific area e.g. to care for a relative</li>
-
-</ul>
-</p>
-
-            </div>
+          <summary>Sanctuary, tel 08001313348</summary>
+          <div class="details-accordion-content">
+            <address>
+              Sanctuary, tel 0800 131 3348<br>
+              In Person:<br>
+              Sanctuary Housing Association<br>
+              36a Beck Road<br>
+              Shiregreen<br>
+              Sheffield<br>
+              S5 0GB<br>
+              By mail:<br>
+              Sanctuary Housing Association<br>
+              Marybone House<br>
+              2 Marybone<br>
+              Liverpool<br>
+              Mersey<br>
+              L3 2BY<br>
+              Email: <a href="mailto:contactus@sanctuary.co.uk">contactus@sanctuary.co.uk</a><br>
+              <a href="http://www.sanctuary-housing.co.uk" target="_blank">http://www.sanctuary-housing.co.uk</a>
+            </address>
+            <p>
+              Stock transfer from Council Housing Service. All types of properties. Current stock is in Shiregreen. To register, a Council Housing Service rehousing registration form needs to be completed.
+              Properties are advertised through the Choice Based Letting System and a local lettings policy.
+              The only properties not advertised through the Sheffield Property Shop are those where Sanctuary has agreed a management transfer for current tenants or mutual exchange.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Sanctuary, tel 08001313348
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Sanctuary, tel 0800 131 3348<br>
-In Person: <br>
-
-Sanctuary Housing Association<br>
-36a Beck Road<br>
-Shiregreen<br>
-Sheffield<br>
-S5 0GB<br>
-
-By mail: <br>
-Sanctuary Housing Association<br>
-Marybone House<br>
-2 Marybone<br>
-Liverpool<br>
-Mersey<br>
-L3 2BY<br>
-Email: contactus@sanctuary.co.uk<br>
-<a href=" www.sanctuary-housing.co.uk" target="_blank"> Sanctuary Housing </a>
-</p>
- <p>
-
-Stock transfer from Council Housing Service. All types of properties. Current stock is in Shiregreen. To register, a Council Housing Service rehousing registration form needs to be completed. Properties are advertised through the Choice Based Letting System and a local lettings policy. The only properties not advertised through the Sheffield Property Shop are those where Sanctuary have agreed a management transfer for current tenants or mutual exchange.
-</p>
-
-            </div>
+          <summary>Sheffield Jewish Housing Association, tel 01142554318</summary>
+          <div class="details-accordion-content">
+            <address>
+              Sheffield Jewish Housing Association, tel 0114 255 4318<br>
+              22 Kingfield Road<br>
+              Sheffield<br>
+              S11 9AS
+            </address>
+            <p>
+              Accommodation for over 60’s, Jewish and non-Jewish members of the community. 1-bed flats, waiting list system.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                Sheffield Jewish Housing Association, tel 01142554318
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Sheffield Jewish Housing Association, tel 0114 255 4318 <br>
-22 Kingfield Road <br>
-Sheffield <br>
-S11 9AS 
-</p>
- <p>
-Accommodation for over 60’s, Jewish and non-Jewish members of the community. 1 bed flats, waiting list system. Sheffield Jewish Housing Association, <br>
-tel 0114 255 4318 <br>
-22 Kingfield Road <br>
-Sheffield <br>
-S11 9AS 
-</p>
-
-            </div>
+          <summary>South Yorkshire Housing Association, tel 01142900200 / 0800138380</summary>
+          <div class="details-accordion-content">
+            <address>
+              South Yorkshire Housing Association<br>
+              tel 01142900200 / 08001380380<br>
+              152 Rockingham Street,<br>
+              Sheffield<br>
+              S1 4EB
+            </address>
+            <p>
+              We hold separate waiting lists for our Extra Care schemes at White Willows and the Meadows. These lists are not currently suspended.
+              People can apply directly to the services if they don’t need care.
+              The PL for both these schemes is Chris Dearnley:<a href="c.dearnely@syha.co.uk" target="_blank">c.dearnely@syha.co.uk</a>  (0114 244 4978).
+              If care is needed, then they go through the link workers. The link workers for the schemes are Jean Peachey for The Meadows (<a href="jean.peachey@sheffield.gov.uk" target="_blank">jean.peachey@sheffield.gov.uk</a>) and Jacqui Bradshaw for White Willows (<a href="Jacqueline.bradshaw@sheffield.gov.uk" target="_blank">Jacqueline.bradshaw@sheffield.gov.uk</a>).
+            </p>
+          </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                South Yorkshire Housing Association, tel 01142900200 / 0800138380
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-South Yorkshire Housing Association<br>
- tel 01142900200 / 08001380380<br>
-152 Rockingham Street, <br>
-Sheffield<br>
-S1 4EB
-</p>
- <p>
-We do hold separate waiting lists for our Extra Care schemes at White Willows and the Meadows. These lists are not currently suspended. People can apply directly to the services if they don’t need care. The PL for both these schemes is Chris Dearnley c.dearnely@syha.co.uk (0114 244 4978).
-</p>
-<p>
-If care is needed, then they go through the link workers. The link workers for the schemes are Jean Peachey for The Meadows jean.peachey@sheffield.gov.uk and Jacqui Bradshaw for White willows Jacqueline.bradshaw@sheffield.gov.uk
-</p>
-            </div>
+          <summary>Together Housing Group, tel 01422 284500</summary>
+          <div class="details-accordion-content">
+            <address>
+              Together Housing Group<br>
+              Tel: 01422 284500<br>
+              Bull Green House<br>
+              Bull Green<br>
+              Halifax<br>
+              HX1 2EB
+            </address>
+          </div>
         </details>
-</div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-Together Housing Group, tel 01422 284500
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Together Housing Group <br>
-Tel: 01422 284500 <br>
-Bull Green House <br>
-Bull Green <br>
-Halifax <br>
-HX1 2EB <br>
-</p>
-            </div>
+          <summary>Yorkshire Housing, tel 0345 36644040</summary>
+          <div class="details-accordion-content">
+            <address>
+              Yorkshire Housing, tel 0345 36644040<br>
+              The Place<br>
+              2 Central Place<br>
+              Leeds<br>
+              LS10 1FB<br>
+              <a href="http://www.yorkshirehousing.co.uk" target="_blank">http://www.yorkshirehousing.co.uk</a>
+            </address>
+            <p>
+              Mix of housing types including some sheltered schemes. Points system - based on housing need. Generally need to be 18+, but in some cases will take 16+.
+              NB: These contact details give a summary only; if further details are needed, please contact the Housing Association directly.
+            </p>
+          </div>
         </details>
-    </div>
-</details>
-
-<div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Yorkshire Housing, tel 0345 36644040
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-Yorkshire Housing, <br>
-Tel: 0345 36644040 <br>
-The Place <br>
-2 Central Place <br>
-Leeds <br>
-LS10 1FB <br>
-<a href=" www.yorkshirehousing.co.uk" target="_blank"> Yorkshire Housing </a>
-</p>
- <p>
-
-Mix of housing types including some sheltered schemes. Points system - based on housing need. Generally need to be 18+ but in some cases will take 16+.
-</p>
-
-<p>
-NB: these contact details give a summary only; if further details are needed, please contact the Housing Association direct.
-</p>
-
-            </div>
-        </details>
-    </div>
-</details>
-
-
-
-
-
-    
+      </div>
+    </details>
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
     formName: "hou_rehousing_enquiry",
   },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
+  {
+    typeKey: "rehousing_services_information_provided"
+  },
+  {
+    typeKey: "rehousing_services_information_requested"
+  },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
+    keywords: ["rehousing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "Gee Whitehouse" }
+  {
+    date: "15/11/2024",
+    name: "Joseph Coupland"
+  }
 );
+
 
 const idReferences = new ContentH(
   "idReferences",
