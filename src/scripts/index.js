@@ -2179,13 +2179,15 @@ function checkDate(id, dd, mm, yy, element) {
   }
 
   // If all components are valid, proceed to validate the full date
-  if (validDate(id, dd, mm, yy)) {
-    const date = `${yy.toString().padStart(4, "0")}-${mm
-      .toString()
-      .padStart(2, "0")}-${dd.toString().padStart(2, "0")}`;
-    const localFormat = new Date(date).toLocaleDateString("en-GB");
-    $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
-    $(`#${id.replace("_date_", "_dt_")}`).val(date);
+  if (dd && mm && yy) {
+    if (validDate(id, dd, mm, yy)) {
+      const date = `${yy.toString().padStart(4, "0")}-${mm
+        .toString()
+        .padStart(2, "0")}-${dd.toString().padStart(2, "0")}`;
+      const localFormat = new Date(date).toLocaleDateString("en-GB");
+      $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
+      $(`#${id.replace("_date_", "_dt_")}`).val(date);
+    }
   }
 }
 
