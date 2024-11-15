@@ -2133,7 +2133,7 @@ function checkDate(id, dd, mm, yy) {
     $(`#${id} .date-yy`).addClass("dform_fielderror");
     hasError = true;
   }
-
+  console.log(id, dd, mm, yy);
   if (hasError) {
     const errorMsg =
       !dd && !mm && !yy
@@ -2168,7 +2168,7 @@ function inputDate(id, nextID, key) {
   if (value.length >= maxLength) {
     $(`#${id}`).val(value.substring(0, maxLength));
     $(`#${id}`).val(value.substring(0, maxLength));
-    if (nextID) {
+    if (nextID && key) {
       $(`#${nextID}`).focus();
     } else {
       $(`#${id}`).blur();
