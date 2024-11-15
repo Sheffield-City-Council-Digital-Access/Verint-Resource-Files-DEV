@@ -2180,7 +2180,7 @@ function checkDate(id, dd, mm, yy, element) {
 
   // If all components are valid, proceed to validate the full date
   if (dd && mm && yy) {
-    if (validDate(id, dd, mm, yy)) {
+    if (validDate(id, dd, mm, yy, activeField)) {
       const date = `${yy.toString().padStart(4, "0")}-${mm
         .toString()
         .padStart(2, "0")}-${dd.toString().padStart(2, "0")}`;
@@ -2223,7 +2223,7 @@ function getYearLabel(years) {
   return years === 1 ? "year" : "years";
 }
 
-function validDate(id, day, month, year) {
+function validDate(id, day, month, year, activeField) {
   const dateMessage = getValidationMessageFromSession(id);
   const validationMsg = $(`#${id}`)
     .find(".dform_validationMessage")
@@ -2234,13 +2234,15 @@ function validDate(id, day, month, year) {
   const date = new Date(year, month - 1, day); // month is zero-indexed
 
   // Check if the constructed date is valid
-  if (
-    date.getFullYear() !== year ||
-    date.getMonth() + 1 !== month ||
-    date.getDate() !== day
-  ) {
-    validationMsg.text(`Must be a real date`).show();
-    return false;
+  if (activeField !== "yy") {
+    if (
+      date.getFullYear() !== year ||
+      date.getMonth() + 1 !== month ||
+      date.getDate() !== day
+    ) {
+      validationMsg.text(`Must be a real date`).show();
+      return false;
+    }
   }
 
   const dateElementId = id.replace("_date_", "_dt_");
