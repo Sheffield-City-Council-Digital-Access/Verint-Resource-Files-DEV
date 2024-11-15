@@ -74,7 +74,7 @@ const furnishedAccommodation = new ContentH(
       Enquiries that are specifically regarding the information in this page can be
       sent to Furnished using the links at the bottom of the page. If the enquiry is
       related to other matters, for instance estate management, tenancy management
-      or ASB, then the appropriate form should be used to process that enquiry.
+      or Anti-social behaviour (ASB), then the appropriate form should be used to process that enquiry.
     </p>
     <h3>Furnished Accommodation Cost</h3>
     <p>
@@ -211,7 +211,7 @@ const olderPersonsIndependentLiving = new ContentH(
       Enquiries that are specifically regarding the information in this form can be
       sent to OPIL using the links at the bottom of the form. If the enquiry is
       related to other matters, for instance, Estate Management, Tenancy Management
-      or ASB, then the appropriate form should be used to process that enquiry.
+      or Anti-social behaviour (ASB), then the appropriate form should be used to process that enquiry.
     </p>
     <h3>Where are the properties?</h3>
     <p>
@@ -450,7 +450,7 @@ const gypsyAndTravellers = new ContentH(
     <ul>
       <li>Rent</li>
       <li>Tenancy Management</li>
-      <li>ASB</li>
+      <li>Anti-social behaviour (ASB)</li>
       <li>Estate Management issues</li>
       <li>
         Repairs - all calls for new repairs or where an inspection is required
@@ -507,7 +507,7 @@ const gypsyAndTravellers = new ContentH(
 const bidding = new ContentH(
   "bidding",
   "Bidding",
-  "",
+  "Information around bidding for properties",
   `
     <p>
       After you have registered for housing, you express your interest in renting a
@@ -1108,7 +1108,7 @@ const housingAssociations = new ContentH(
             </address>
             <p>
               Mutual exchanges advertised and managed through home swapper: register on <a href="https://www.homeswapper.co.uk" target="_blank">https://www.homeswapper.co.uk</a>
-              Info on lettings: Flats and houses available, including some over 60s independent living accommodation (no warden on site). Must be 18+ and eligible for benefits if not working. 
+              Information on lettings: Flats and houses available, including some over 60s independent living accommodation (no warden on site). Must be 18+ and eligible for benefits if not working. 
               An affordability and risk assessment will be carried out, and a previous landlord reference requested for all nominees.
               We do not hold a waiting list for the general public.
             </p>
@@ -2193,7 +2193,7 @@ regardless of their effective date.</p>
 </tr>
 <tr>
 <td style="width:225px">
-<p>ASB - Rehousing Options for the Victim</p>
+<p>Anti-social behaviour (ASB) - Rehousing Options for the Victim</p>
 </td>
 <td style="width:189px">
 <p>Welfare, Hardship and Support Needs</p>
@@ -2789,7 +2789,7 @@ const applicantPlacedInAPriorityBand = new ContentH(
 const applicationChanges = new ContentH(
     "applicationChanges",
     "Application Changes",
-    "Info on updating housing applications, submitting ID/proof, annual renewals, restrictions, exceptions, and disqualification rules.",
+    "Information on updating housing applications, submitting ID/proof, annual renewals, restrictions, exceptions, and disqualification rules.",
     `
       <p>
         Change of circumstances are now online. When you are making changes, remember
@@ -3351,7 +3351,7 @@ If we give you permission, you should carry out the work within 90 days and let 
 const tenancyEnforcementASB = new ContentH(
   "tenancyEnforcementASB",
   "Tenancy Enforcement (ASB)",
-  "What ASB is, who is responsible and how to report and Sanctuary scheme",
+  "What Anti-social behaviour (ASB) is, who is responsible and how to report and Sanctuary scheme",
   `<p><h3>Anti-social Behaviour</h3>
 <p>Anti-social behaviour is behaviour which is capable of causing nuisance, annoyance, harassment, alarm or distress to an individual or community. This could range from a relatively minor issue to serious criminal activity. We do not adopt a single definition of anti-social behaviour but instead consider each report based on the circumstances.</p>
 <p>Examples of behaviours we may consider to be anti-social are:</p>
