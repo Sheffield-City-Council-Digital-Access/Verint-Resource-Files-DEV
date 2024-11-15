@@ -362,3 +362,13 @@ button .exit-btn::after,
   border: solid 0.1rem var(--color-primary);
   box-shadow: none;
 }
+
+
+
+div:focus, a:focus, li:focus, button:focus, .esri-widget--button:focus, .esriSimpleSliderIncrementButton:focus, .esriSimpleSliderDecrementButton:focus, .searchBtn.searchSubmit:focus, span.file_delete:focus {
+    outline: 0.4rem solid var(--color-warning) !important;
+    outline-offset: unset !important;
+    position: relative;
+    border-radius: 0 !important;
+    transition: none !important;
+}
