@@ -978,10 +978,7 @@ function handleOnReadyEvent(event, kdf) {
         .text(dateMessage)
         .hide();
       if (e.type === "input") inputDate(this.id, null, e.which);
-      {
-        return;
-      }
-      handleDateValidation(parentId, this);
+      if (e.type === "focusout") handleDateValidation(parentId, this);
     });
 
   // --- HANDLE KEYUP EVENTLISTENER FOR CHECK PROGRESS --------------------- \\
