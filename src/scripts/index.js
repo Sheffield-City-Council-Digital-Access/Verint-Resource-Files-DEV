@@ -1556,7 +1556,7 @@ function handleFailedAction(event, action, xhr, settings, thrownError) {
     resetVehicleSearch(false);
     showVehicleFields();
   } else {
-    if (KDF.kdf().access === "agent" && filePath) {
+    if (KDF.kdf().access === "agent") {
       KDF.showError(`${action} failed: ${thrownError}`);
     }
   }
@@ -3155,7 +3155,7 @@ function do_KDF_mapReady_esriMap(map, positionLayer) {
         centerpoint = new Point({
           x: KDF.getVal("le_gis_lon"),
           y: KDF.getVal("le_gis_lat"),
-          spatialReference: new SpatialReference({ wkid: 27700 }),
+          spatialReference: new SpatialReference({ wkid: 4326 }),
         });
 
         streetMapView.when(function () {
@@ -3306,6 +3306,10 @@ function mapClick(evt) {
           mapY = convertPointP4.y.toString();
           KDF.setVal("le_gis_lon", mapX_4326);
           KDF.setVal("le_gis_lat", mapY_4326);
+          console.log({
+            longitude: mapX,
+            latitude: mapY,
+          });
           KDF.customdata("reverse_geocode_osmap", "mapClick", true, true, {
             longitude: mapX,
             latitude: mapY,
@@ -3880,8 +3884,11 @@ function formatTitleCase(value) {
 // --- FORMATING REMOVE ECCESS WHITE SPACES --------------------------------- \\
 
 function formatRemoveEccessWhiteSpace(value) {
-  const formattedString = value.replace(/\s+/g, " ").trim();
-  return formattedString;
+  if (value) {
+    const formattedString = value.replace(/\s+/g, " ").trim();
+    return formattedString;
+  }
+  return "";
 }
 
 // --- FORMATING DATE AND TIME ---------------------------------------------- \\
