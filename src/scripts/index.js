@@ -2417,6 +2417,7 @@ function updateProgressBar(currentPageIndex) {
 
 function handleSetReporter(date, address) {
   // Set date to input fields and trigger change
+  console.log(date);
   if (date) {
     $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
     $("#dform_widget_num_date_of_birth_mm")
@@ -2425,6 +2426,7 @@ function handleSetReporter(date, address) {
     $("#dform_widget_num_date_of_birth_yy").val(date.getFullYear()).blur();
   }
 
+  // $("#myInput").prop("readonly", true);
   // Hide address lookup
   // KDF.hideSection("area_address_lookup_about_you");
 
