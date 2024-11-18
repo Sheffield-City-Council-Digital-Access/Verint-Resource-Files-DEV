@@ -42,3 +42,27 @@
 #map_container>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-manual-container>div.esri-component.esri-popup.esri-popup--aligned-top-center.esri-popup--shadow>div.esri-popup__main-container.esri-widget>div>section {
   display: none;
 }
+
+#map_container > div.esri-view-root > div.esri-ui.calcite-theme-light > div.esri-ui-inner-container.esri-ui-corner-container > div.esri-ui-top-right.esri-ui-corner > div {
+  display: none;
+}
+
+div.esri-component.esri-search.esri-widget > div {
+  margin-left: -140% !important;
+  margin-top: 20% !important;
+}
+
+.esri-search__submit-button {
+  margin: 0 !important;
+  min-width: 5rem !important;
+}
+
+.esri-search__submit-button:hover {
+  color: var(--color-white) !important;
+  background: var(--color-primary) !important;
+}
+
+.esri-search__sources-button,
+.esri-search__clear-button {
+  display: none !important;
+}
