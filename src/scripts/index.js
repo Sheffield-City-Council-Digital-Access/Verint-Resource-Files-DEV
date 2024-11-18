@@ -3004,6 +3004,8 @@ function initialize_map(map_param) {
     "esri/layers/GraphicsLayer",
     "esri/layers/FeatureLayer",
     "esri/layers/GroupLayer",
+    "esri/widgets/Search",
+    "esri/geometry/Extent",
   ], function (
     Map,
     MapView,
@@ -3015,7 +3017,9 @@ function initialize_map(map_param) {
     SpatialReference,
     GraphicsLayer,
     FeatureLayer,
-    GroupLayer
+    GroupLayer,
+    Search,
+    Extent
   ) {
     let positionLayer = new GraphicsLayer();
     $("#dform_widget_html_ahtm_map_container").append(
@@ -3047,6 +3051,44 @@ function initialize_map(map_param) {
       },
     });
 
+    // Define the extent for Sheffield, UK
+    const sheffieldExtent = new Extent({
+      xmin: -1.5311,
+      ymin: 53.321,
+      xmax: -1.3483,
+      ymax: 53.456,
+      spatialReference: { wkid: 4326 },
+    });
+
+    // Initialize the Search widget, constraining to Sheffield's extent
+    const searchWidget = new Search({
+      view: streetMapView,
+      searchAllEnabled: false,
+      popupEnabled: true,
+      popupOpenOnSelect: true,
+      sources: [
+        {
+          layer: new FeatureLayer({
+            url: "https://utility.arcgis.com/usrsvcs/servers/97cfdc3a164c48219826b907c0a5064f/rest/services/AGOL/Boundaries/MapServer/0", // Sheffield boundary layer
+          }),
+          searchFields: ["name"], // Replace with the field containing names if available
+          displayField: "name",
+          exactMatch: false,
+          outFields: ["*"],
+          name: "Sheffield Search",
+          placeholder: "Search within Sheffield",
+          filter: {
+            geometry: sheffieldExtent,
+          },
+        },
+      ],
+    });
+
+    // Add Search widget to the top-right corner of the map
+    streetMapView.ui.add(searchWidget, {
+      position: "top-right",
+    });
+
     streetMapView.on("click", mapClick);
 
     mapZoomLevel = streetMapView.zoom;
@@ -3064,7 +3106,7 @@ function initialize_map(map_param) {
     districtLayer = new FeatureLayer({
       id: "scc_boundary",
       url: "https://utility.arcgis.com/usrsvcs/servers/97cfdc3a164c48219826b907c0a5064f/rest/services/AGOL/Boundaries/MapServer/0",
-    }); //Border Layer
+    });
     districtLayer.renderer = {
       type: "simple",
       symbol: {
