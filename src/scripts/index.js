@@ -3188,7 +3188,6 @@ function do_KDF_mapReady_esriMap(map, positionLayer) {
 }
 
 function mapClick(evt) {
-  console.log("mapClick", evt);
   KDF.setVal("txt_site_name", "");
   KDF.setVal("txt_site_code", "");
   KDF.setVal("txt_feature_name", "");
@@ -3306,7 +3305,7 @@ function mapClick(evt) {
           mapY = convertPointP4.y.toString();
           KDF.setVal("le_gis_lon", mapX_4326);
           KDF.setVal("le_gis_lat", mapY_4326);
-          console.log({
+          console.log("1", {
             longitude: mapX,
             latitude: mapY,
           });
@@ -3346,7 +3345,10 @@ function mapClick(evt) {
           store_layer_attr.main_attribute = {};
           store_layer_attr.main_attribute = layerAttributes;
           store_layer_attr.main_attribute.layername = layerName;
-
+          console.log("2", {
+            longitude: mapX,
+            latitude: mapY,
+          });
           KDF.customdata("reverse_geocode_osmap", "asset_code", true, true, {
             longitude: mapX,
             latitude: mapY,
@@ -3686,7 +3688,10 @@ function do_KDF_Custom_esriMap(action, response) {
         }
       );
     }
-
+    console.log("3", {
+      longitude: response.data.easting,
+      latitude: response.data.northing,
+    });
     KDF.customdata(
       "reverse_geocode_osmap",
       "do_KDF_Custom_esriMap",
