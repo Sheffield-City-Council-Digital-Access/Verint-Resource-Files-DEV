@@ -1711,12 +1711,12 @@ function checkPageProgress() {
   const isAlertPanelVisible = Array.from(alertPanels).some(isVisible);
 
   // Check if a validation message is visible
-  // const validationMessages = currentPageElement.querySelectorAll(
-  //   ".dform_validationMessage"
-  // );
+  const validationMessages = currentPageElement.querySelectorAll(
+    ".dform_validationMessage"
+  );
 
-  // const isValidationMessageVisible =
-  //   Array.from(validationMessages).some(isVisible);
+  const isValidationMessageVisible =
+    Array.from(validationMessages).some(isVisible);
 
   // Handle file inputs separately
   const fileUploads = Array.from(
@@ -1796,9 +1796,10 @@ function checkPageProgress() {
     hasEmptyOrInvalidOtherFields;
 
   // If any alert panel is visible, force disabling the buttons
-  const shouldDisableButton = hasEmptyRequiredElement || isAlertPanelVisible;
-  // ||
-  // isValidationMessageVisible;
+  const shouldDisableButton =
+    hasEmptyRequiredElement ||
+    isAlertPanelVisible ||
+    isValidationMessageVisible;
 
   // Call the disabledButtonToggle function based on the check
   disabledButtonToggle(!shouldDisableButton);
@@ -2222,7 +2223,6 @@ function checkDate(id, dd, mm, yy, element) {
 }
 
 function inputDate(id, nextID, key) {
-  console.log("inputDate function", key);
   const ignoredKeys = [9, 16, 37, 38, 39, 40];
   if (ignoredKeys.indexOf(key) !== -1) return;
   const maxLength = $(`#${id}`).attr("maxlength");
@@ -2230,7 +2230,7 @@ function inputDate(id, nextID, key) {
   if (value.length >= maxLength) {
     $(`#${id}`).val(value.substring(0, maxLength));
     $(`#${id}`).val(value.substring(0, maxLength));
-    if (nextID) {
+    if ((nextID && key) || key === 0) {
       $(`#${nextID}`).focus();
     } else {
       if (key || key === 0) {
