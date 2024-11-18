@@ -1772,7 +1772,6 @@ function checkPageProgress() {
   const hasEmptyOrInvalidOtherFields = otherFields.some((el) => {
     let isEmpty = el.value.trim() === "";
     let isValid = el.checkValidity();
-    console.log("isEmpty", isEmpty, "isValid", isValid);
     const name = el.name;
     if (
       el.name.startsWith("num_") &&
@@ -1783,10 +1782,8 @@ function checkPageProgress() {
       const dateElement = document.getElementById(
         el.id.replace("_num_", "_dt_").slice(0, -3)
       );
-      console.log(dateElement, el.id.replace("_num_", "_dt_").slice(0, -3));
-      isEmpty = KDF.getVal(el.name.replace("num_", "dt_").slice(0, -3));
-      // isValid = true
-      console.log("isEmpty", isEmpty, "isValid", isValid);
+      isEmpty = dateElement.value.trim() === "";
+      isValid = dateElement.checkValidity();
     }
 
     return isEmpty || !isValid;
