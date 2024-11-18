@@ -3305,10 +3305,10 @@ function mapClick(evt) {
           mapY = convertPointP4.y.toString();
           KDF.setVal("le_gis_lon", mapX_4326);
           KDF.setVal("le_gis_lat", mapY_4326);
-          console.log("1", {
-            longitude: mapX,
-            latitude: mapY,
-          });
+          setValuesToInputFields([
+            { alias: "easting", value: mapX },
+            { alias: "northing", value: mapY },
+          ]);
           KDF.customdata("reverse_geocode_osmap", "mapClick", true, true, {
             longitude: mapX,
             latitude: mapY,
@@ -3345,10 +3345,10 @@ function mapClick(evt) {
           store_layer_attr.main_attribute = {};
           store_layer_attr.main_attribute = layerAttributes;
           store_layer_attr.main_attribute.layername = layerName;
-          console.log("2", {
-            longitude: mapX,
-            latitude: mapY,
-          });
+          setValuesToInputFields([
+            { alias: "easting", value: mapX },
+            { alias: "northing", value: mapY },
+          ]);
           KDF.customdata("reverse_geocode_osmap", "asset_code", true, true, {
             longitude: mapX,
             latitude: mapY,
@@ -3600,8 +3600,8 @@ function do_KDF_Custom_esriMap(action, response) {
         { alias: "usrn", value: USRN },
         { alias: "siteName", value: streetName },
         { alias: "siteCode", value: USRN },
-        { alias: "easting", value: easting },
-        { alias: "northing", value: northing },
+        // { alias: "easting", value: easting },
+        // { alias: "northing", value: northing },
       ]);
       setSelectedAddress(fullAddress, "show");
       $(".popup").text(streetName);
@@ -3688,10 +3688,7 @@ function do_KDF_Custom_esriMap(action, response) {
         }
       );
     }
-    console.log("3", {
-      longitude: response.data.easting,
-      latitude: response.data.northing,
-    });
+
     KDF.customdata(
       "reverse_geocode_osmap",
       "do_KDF_Custom_esriMap",
