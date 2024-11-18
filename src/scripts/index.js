@@ -1770,24 +1770,24 @@ function checkPageProgress() {
 
   // Check if any other required fields are empty or invalid
   const hasEmptyOrInvalidOtherFields = otherFields.some((el) => {
-    console.log("name", el.name);
-    const name = el.name;
+    // console.log("name", el.name);
+    // const name = el.name;
 
     let isEmpty = el.value.trim() === "";
     let isValid = el.checkValidity();
 
-    if (
-      name.startsWith("num_") &&
-      (name.endsWith("_dd") || name.endsWith("_mm") || name.endsWith("_yy"))
-    ) {
-      console.log("date", el.name);
-      const dateElement = $(
-        `#dform_widget_${el.name.replace(/_num_/, "_dt_").slice(0, -3)}`
-      );
-      isEmpty = !dateElement.val();
-      isValid = !dateElement.val();
-      console.log(isEmpty, isValid);
-    }
+    // if (
+    //   name.startsWith("num_") &&
+    //   (name.endsWith("_dd") || name.endsWith("_mm") || name.endsWith("_yy"))
+    // ) {
+    //   console.log("date", el.name);
+    //   const dateElement = $(
+    //     `#dform_widget_${el.name.replace(/_num_/, "_dt_").slice(0, -3)}`
+    //   );
+    //   isEmpty = !dateElement.val();
+    //   isValid = !dateElement.val();
+    //   console.log(isEmpty, isValid);
+    // }
 
     return isEmpty || !isValid;
   });
