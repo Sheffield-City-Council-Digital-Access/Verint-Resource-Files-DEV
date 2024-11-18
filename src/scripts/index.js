@@ -1556,7 +1556,7 @@ function handleFailedAction(event, action, xhr, settings, thrownError) {
     resetVehicleSearch(false);
     showVehicleFields();
   } else {
-    if (KDF.kdf().access === "agent" && filePath) {
+    if (KDF.kdf().access === "agent") {
       KDF.showError(`${action} failed: ${thrownError}`);
     }
   }
@@ -3004,6 +3004,8 @@ function initialize_map(map_param) {
     "esri/layers/GraphicsLayer",
     "esri/layers/FeatureLayer",
     "esri/layers/GroupLayer",
+    "esri/widgets/Search",
+    "esri/geometry/Extent",
   ], function (
     Map,
     MapView,
@@ -3015,7 +3017,9 @@ function initialize_map(map_param) {
     SpatialReference,
     GraphicsLayer,
     FeatureLayer,
-    GroupLayer
+    GroupLayer,
+    Search,
+    Extent
   ) {
     let positionLayer = new GraphicsLayer();
     $("#dform_widget_html_ahtm_map_container").append(
@@ -3047,6 +3051,44 @@ function initialize_map(map_param) {
       },
     });
 
+    // Define the extent for Sheffield, UK
+    const sheffieldExtent = new Extent({
+      xmin: -1.5311,
+      ymin: 53.321,
+      xmax: -1.3483,
+      ymax: 53.456,
+      spatialReference: { wkid: 27700 },
+    });
+
+    // Initialize the Search widget, constraining to Sheffield's extent
+    const searchWidget = new Search({
+      view: streetMapView,
+      searchAllEnabled: false,
+      popupEnabled: true,
+      popupOpenOnSelect: true,
+      sources: [
+        {
+          layer: new FeatureLayer({
+            url: "https://utility.arcgis.com/usrsvcs/servers/97cfdc3a164c48219826b907c0a5064f/rest/services/AGOL/Boundaries/MapServer/0", // Sheffield boundary layer
+          }),
+          // searchFields: ["name"], // Replace with the field containing names if available
+          displayField: "name",
+          exactMatch: false,
+          outFields: ["*"],
+          name: "Sheffield Search",
+          placeholder: "Search within Sheffield",
+          filter: {
+            geometry: sheffieldExtent,
+          },
+        },
+      ],
+    });
+
+    // Add Search widget to the top-right corner of the map
+    streetMapView.ui.add(searchWidget, {
+      position: "top-right",
+    });
+
     streetMapView.on("click", mapClick);
 
     mapZoomLevel = streetMapView.zoom;
@@ -3064,7 +3106,7 @@ function initialize_map(map_param) {
     districtLayer = new FeatureLayer({
       id: "scc_boundary",
       url: "https://utility.arcgis.com/usrsvcs/servers/97cfdc3a164c48219826b907c0a5064f/rest/services/AGOL/Boundaries/MapServer/0",
-    }); //Border Layer
+    });
     districtLayer.renderer = {
       type: "simple",
       symbol: {
@@ -3146,6 +3188,7 @@ function do_KDF_mapReady_esriMap(map, positionLayer) {
 }
 
 function mapClick(evt) {
+  console.log("click", evt);
   KDF.setVal("txt_site_name", "");
   KDF.setVal("txt_site_code", "");
   KDF.setVal("txt_feature_name", "");
@@ -3263,6 +3306,10 @@ function mapClick(evt) {
           mapY = convertPointP4.y.toString();
           KDF.setVal("le_gis_lon", mapX_4326);
           KDF.setVal("le_gis_lat", mapY_4326);
+          setValuesToInputFields([
+            { alias: "easting", value: mapX },
+            { alias: "northing", value: mapY },
+          ]);
           KDF.customdata("reverse_geocode_osmap", "mapClick", true, true, {
             longitude: mapX,
             latitude: mapY,
@@ -3299,7 +3346,10 @@ function mapClick(evt) {
           store_layer_attr.main_attribute = {};
           store_layer_attr.main_attribute = layerAttributes;
           store_layer_attr.main_attribute.layername = layerName;
-
+          setValuesToInputFields([
+            { alias: "easting", value: mapX },
+            { alias: "northing", value: mapY },
+          ]);
           KDF.customdata("reverse_geocode_osmap", "asset_code", true, true, {
             longitude: mapX,
             latitude: mapY,
@@ -3551,8 +3601,8 @@ function do_KDF_Custom_esriMap(action, response) {
         { alias: "usrn", value: USRN },
         { alias: "siteName", value: streetName },
         { alias: "siteCode", value: USRN },
-        { alias: "easting", value: easting },
-        { alias: "northing", value: northing },
+        // { alias: "easting", value: easting },
+        // { alias: "northing", value: northing },
       ]);
       setSelectedAddress(fullAddress, "show");
       $(".popup").text(streetName);
@@ -3837,8 +3887,11 @@ function formatTitleCase(value) {
 // --- FORMATING REMOVE ECCESS WHITE SPACES --------------------------------- \\
 
 function formatRemoveEccessWhiteSpace(value) {
-  const formattedString = value.replace(/\s+/g, " ").trim();
-  return formattedString;
+  if (value) {
+    const formattedString = value.replace(/\s+/g, " ").trim();
+    return formattedString;
+  }
+  return "";
 }
 
 // --- FORMATING DATE AND TIME ---------------------------------------------- \\
