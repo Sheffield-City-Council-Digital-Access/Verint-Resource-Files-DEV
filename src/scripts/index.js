@@ -1770,7 +1770,7 @@ function checkPageProgress() {
 
   // Check if any other required fields are empty or invalid
   const hasEmptyOrInvalidOtherFields = otherFields.some((el) => {
-    // console.log("name", el.name);
+    console.log(el);
     // const name = el.name;
 
     let isEmpty = el.value.trim() === "";
