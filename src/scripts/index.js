@@ -922,7 +922,7 @@ function handleOnReadyEvent(event, kdf) {
       return;
     }
     if (this.value) $(this).val($(this).val().padStart(2, "0"));
-    handleDateValidation(parentId, this);
+    if (e.type === "focusout") handleDateValidation(parentId, this);
   });
 
   $(`.date-mm`).on("input focusout", function (e) {
@@ -940,7 +940,7 @@ function handleOnReadyEvent(event, kdf) {
     if (dd === "") $(`#${this.id.slice(0, -2)}dd`).addClass("dform_fielderror");
     if (yy === "") $(`#${this.id.slice(0, -2)}yy`).addClass("dform_fielderror");
     $(`#${parentId}`).find(".dform_validationMessage").text(dateMessage).show();
-    handleDateValidation(parentId, this);
+    if (e.type === "focusout") handleDateValidation(parentId, this);
   });
 
   $(`.date-yy`)
@@ -2233,7 +2233,6 @@ function inputDate(id, nextID, key) {
       $(`#${nextID}`).focus();
     } else {
       if (key || key === 0) {
-        console.log("blur");
         $(`#${id}`).blur();
       }
     }
