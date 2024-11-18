@@ -1781,8 +1781,8 @@ function checkPageProgress() {
       (name.endsWith("_dd") || name.endsWith("_mm") || name.endsWith("_yy"))
     ) {
       console.log("date", el.name);
-      const dateElement = getElementById(
-        `dform_widget_${el.name.replace(/_num_/, "_dt_").slice(0, -3)}`
+      const dateElement = document.getElementById(
+        `dform_widget_${el.name.replace(/_num_/, "_dt_")}`
       );
       // isEmpty = !dateElement.val();
       // isValid = !dateElement.val();
