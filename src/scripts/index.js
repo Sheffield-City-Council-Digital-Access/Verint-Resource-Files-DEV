@@ -1312,6 +1312,7 @@ function handleObjectIdSet(event, kdf, type, id) {
 
   // keep at the bottom
   checkPageProgress();
+  console.log(logArguments);
 }
 
 function handleObjectIdLoaded(event, kdf, response, type, id) {
