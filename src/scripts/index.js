@@ -1770,8 +1770,21 @@ function checkPageProgress() {
 
   // Check if any other required fields are empty or invalid
   const hasEmptyOrInvalidOtherFields = otherFields.some((el) => {
-    const isEmpty = el.value.trim() === "";
-    const isValid = el.checkValidity();
+    let isEmpty = el.value.trim() === "";
+    let isValid = el.checkValidity();
+    const name = el.name;
+    if (
+      el.name.startsWith("num_") &&
+      (el.name.endsWith("_dd") ||
+        el.name.endsWith("_mm") ||
+        el.name.endsWith("_yy"))
+    ) {
+      const dateElement = document.getElementById(
+        el.id.replace("_num_", "_dt_").slice(0, -3)
+      );
+      isEmpty = dateElement.value.trim() === "";
+      isValid = dateElement.checkValidity();
+    }
 
     return isEmpty || !isValid;
   });
@@ -2057,6 +2070,7 @@ function handleDateValidation(parentId, element) {
 
   checkDate(parentId, dd, mm, yy, element);
   checkMaxDay(parentId, dd, mm, yy);
+  checkPageProgress();
 }
 
 function checkMaxDay(id, dd, mm, yy) {
@@ -2216,7 +2230,7 @@ function inputDate(id, nextID, key) {
   if (value.length >= maxLength) {
     $(`#${id}`).val(value.substring(0, maxLength));
     $(`#${id}`).val(value.substring(0, maxLength));
-    if (nextID) {
+    if ((nextID && key) || key === 0) {
       $(`#${nextID}`).focus();
     } else {
       if (key || key === 0) {
