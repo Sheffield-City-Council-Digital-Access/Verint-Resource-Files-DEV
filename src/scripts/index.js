@@ -1782,7 +1782,7 @@ function checkPageProgress() {
     ) {
       console.log("date", el.name);
       const dateElement = document.getElementById(
-        `dform_widget_${el.name.replace("_num_", "_dt_")}`
+        `dform_widget_${el.name.replace("num_", "dt_")}`
       );
       console.log(dateElement);
       isEmpty = dateElement.value.trim() === "";
