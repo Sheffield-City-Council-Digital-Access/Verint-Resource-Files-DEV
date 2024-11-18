@@ -1782,11 +1782,11 @@ function checkPageProgress() {
     ) {
       console.log("date", el.name);
       const dateElement = document.getElementById(
-        `dform_widget_${el.name.replace(/_num_/, "_dt_")}`
+        `dform_widget_${el.name.replace("_num_", "_dt_")}`
       );
-      // isEmpty = !dateElement.val();
-      // isValid = !dateElement.val();
       console.log(dateElement);
+      isEmpty = dateElementel.value.trim() === "";
+      isValid = dateElement.checkValidity();
     }
 
     return isEmpty || !isValid;
