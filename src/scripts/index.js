@@ -1785,7 +1785,7 @@ function checkPageProgress() {
         `dform_widget_${el.name.replace("_num_", "_dt_")}`
       );
       console.log(dateElement);
-      isEmpty = dateElementel.value.trim() === "";
+      isEmpty = dateElement.value.trim() === "";
       isValid = dateElement.checkValidity();
     }
 
