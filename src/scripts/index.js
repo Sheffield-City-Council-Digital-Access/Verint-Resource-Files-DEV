@@ -2417,8 +2417,7 @@ function updateProgressBar(currentPageIndex) {
 
 function handleSetReporter(date, address) {
   // Set date to input fields and trigger change
-  console.log(date);
-  if (date) {
+  if (!date === "Invalid Date") {
     $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
     $("#dform_widget_num_date_of_birth_mm")
       .val(date.getMonth() + 1)
