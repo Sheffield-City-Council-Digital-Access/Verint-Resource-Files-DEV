@@ -3071,7 +3071,7 @@ function initialize_map(map_param) {
           layer: new FeatureLayer({
             url: "https://utility.arcgis.com/usrsvcs/servers/97cfdc3a164c48219826b907c0a5064f/rest/services/AGOL/Boundaries/MapServer/0", // Sheffield boundary layer
           }),
-          searchFields: ["name"], // Replace with the field containing names if available
+          // searchFields: ["name"], // Replace with the field containing names if available
           displayField: "name",
           exactMatch: false,
           outFields: ["*"],
