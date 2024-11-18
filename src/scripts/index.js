@@ -1770,11 +1770,9 @@ function checkPageProgress() {
 
   // Check if any other required fields are empty or invalid
   const hasEmptyOrInvalidOtherFields = otherFields.some((el) => {
-    console.log(el);
-
     let isEmpty = el.value.trim() === "";
     let isValid = el.checkValidity();
-
+    console.log("isEmpty", isEmpty, "isValid", isValid);
     const name = el.name;
     if (
       el.name.startsWith("num_") &&
@@ -1782,13 +1780,13 @@ function checkPageProgress() {
         el.name.endsWith("_mm") ||
         el.name.endsWith("_yy"))
     ) {
-      console.log("date", el.name);
       const dateElement = document.getElementById(
         el.id.replace("_num_", "_dt_").slice(0, -3)
       );
       console.log(dateElement, el.id.replace("_num_", "_dt_").slice(0, -3));
       isEmpty = dateElement.value.trim() === "";
       isValid = dateElement.checkValidity();
+      console.log("isEmpty", isEmpty, "isValid", isValid);
     }
 
     return isEmpty || !isValid;
