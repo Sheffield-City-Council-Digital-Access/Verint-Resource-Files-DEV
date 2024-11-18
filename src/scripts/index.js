@@ -2069,6 +2069,7 @@ function handleDateValidation(parentId, element) {
 
   checkDate(parentId, dd, mm, yy, element);
   checkMaxDay(parentId, dd, mm, yy);
+  checkPageProgress();
 }
 
 function checkMaxDay(id, dd, mm, yy) {
