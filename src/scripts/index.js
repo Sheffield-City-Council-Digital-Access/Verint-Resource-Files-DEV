@@ -2417,20 +2417,19 @@ function updateProgressBar(currentPageIndex) {
 
 function handleSetReporter(date, address) {
   // Set date to input fields and trigger change
-  $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
-  $("#dform_widget_num_date_of_birth_mm")
-    .val(date.getMonth() + 1)
-    .blur();
-  $("#dform_widget_num_date_of_birth_yy").val(date.getFullYear()).blur();
+  if (date) {
+    $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
+    $("#dform_widget_num_date_of_birth_mm")
+      .val(date.getMonth() + 1)
+      .blur();
+    $("#dform_widget_num_date_of_birth_yy").val(date.getFullYear()).blur();
+  }
 
   // Hide address lookup
   // KDF.hideSection("area_address_lookup_about_you");
 
   // Set and show address
-  console.log(address);
-  if (address.includes("undefined")) {
-    setSelectedAddress("", "hide", "dform_page_page_about_you");
-  } else {
+  if (!address.includes("undefined")) {
     setSelectedAddress(address, "show", "dform_page_page_about_you");
   }
 
