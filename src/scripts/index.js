@@ -2424,10 +2424,14 @@ function handleSetReporter(date, address) {
   $("#dform_widget_num_date_of_birth_yy").val(date.getFullYear()).blur();
 
   // Hide address lookup
-  KDF.hideSection("area_address_lookup_about_you");
+  // KDF.hideSection("area_address_lookup_about_you");
 
   // Set and show address
-  setSelectedAddress(address, "show", "dform_page_page_about_you");
+  if (address) {
+    setSelectedAddress(address, "show", "dform_page_page_about_you");
+  } else {
+    setSelectedAddress("", "hide", "dform_page_page_about_you");
+  }
 
   // Hide submit anonymously option and info
   $(".anonymous").hide();
