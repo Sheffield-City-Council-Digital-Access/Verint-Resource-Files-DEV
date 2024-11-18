@@ -2427,6 +2427,7 @@ function handleSetReporter(date, address) {
   // KDF.hideSection("area_address_lookup_about_you");
 
   // Set and show address
+  console.log(address);
   if (address) {
     setSelectedAddress(address, "show", "dform_page_page_about_you");
   } else {
