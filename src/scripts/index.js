@@ -2428,10 +2428,10 @@ function handleSetReporter(date, address) {
 
   // Set and show address
   console.log(address);
-  if (address) {
-    setSelectedAddress(address, "show", "dform_page_page_about_you");
-  } else {
+  if (address.includes("undefined")) {
     setSelectedAddress("", "hide", "dform_page_page_about_you");
+  } else {
+    setSelectedAddress(address, "show", "dform_page_page_about_you");
   }
 
   // Hide submit anonymously option and info
