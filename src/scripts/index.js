@@ -8,22 +8,6 @@ function logArguments(event, kdf, ...args) {
   console.groupEnd();
 }
 
-function triggerMapClickAtCoords(lon, lat) {
-  let simulatedMapPoint = new esri.geometry.Point({
-    x: lon,
-    y: lat,
-    spatialReference: new esri.SpatialReference({ wkid: 4326 }),
-  });
-
-  let simulatedEvent = {
-    x: lon,
-    y: lat,
-    mapPoint: simulatedMapPoint,
-  };
-
-  mapClick(simulatedEvent);
-}
-
 // --- GLOBAL CONSTS AND VARIABLES ----------------------------------------- \\
 
 let customerState = false;
@@ -3073,7 +3057,7 @@ function initialize_map(map_param) {
       ymin: 53.321,
       xmax: -1.3483,
       ymax: 53.456,
-      spatialReference: { wkid: 4326 },
+      spatialReference: { wkid: 27700 },
     });
 
     // Initialize the Search widget, constraining to Sheffield's extent
@@ -3171,7 +3155,7 @@ function do_KDF_mapReady_esriMap(map, positionLayer) {
         centerpoint = new Point({
           x: KDF.getVal("le_gis_lon"),
           y: KDF.getVal("le_gis_lat"),
-          spatialReference: new SpatialReference({ wkid: 4326 }),
+          spatialReference: new SpatialReference({ wkid: 27700 }),
         });
 
         streetMapView.when(function () {
@@ -3204,6 +3188,7 @@ function do_KDF_mapReady_esriMap(map, positionLayer) {
 }
 
 function mapClick(evt) {
+  console.log("mapClick", evt);
   KDF.setVal("txt_site_name", "");
   KDF.setVal("txt_site_code", "");
   KDF.setVal("txt_feature_name", "");
