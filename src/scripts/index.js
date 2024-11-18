@@ -8,6 +8,22 @@ function logArguments(event, kdf, ...args) {
   console.groupEnd();
 }
 
+function triggerMapClickAtCoords(lon, lat) {
+  let simulatedMapPoint = new esri.geometry.Point({
+    x: lon,
+    y: lat,
+    spatialReference: new esri.SpatialReference({ wkid: 4326 }),
+  });
+
+  let simulatedEvent = {
+    x: lon,
+    y: lat,
+    mapPoint: simulatedMapPoint,
+  };
+
+  mapClick(simulatedEvent);
+}
+
 // --- GLOBAL CONSTS AND VARIABLES ----------------------------------------- \\
 
 let customerState = false;
