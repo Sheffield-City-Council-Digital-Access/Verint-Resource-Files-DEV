@@ -1777,20 +1777,18 @@ function checkPageProgress() {
 
     const name = el.name;
     if (
-      name.startsWith("num_") &&
-      (name.endsWith("_dd") || name.endsWith("_mm") || name.endsWith("_yy"))
+      el.name.startsWith("num_") &&
+      (el.name.endsWith("_dd") ||
+        el.name.endsWith("_mm") ||
+        el.name.endsWith("_yy"))
     ) {
       console.log("date", el.name);
-      // const dateElement = document.getElementById(
-      //   `dform_widget_${el.name.replace("num_", "dt_")}`
-      // );
-      console.log(
-        el.name,
-        `dform_widget_${name.replace("num_", "dt_").slice(0, -3)}`
+      const dateElement = document.getElementById(
+        el.id.replace("_num_", "_dt_").slice(0, -3)
       );
-      console.log(el.id, el.id.replace("_num_", "_dt_").slice(0, -3));
-      // isEmpty = dateElement.value.trim() === "";
-      // isValid = dateElement.checkValidity();
+      console.log(dateElement, el.id.replace("_num_", "_dt_").slice(0, -3));
+      isEmpty = dateElement.value.trim() === "";
+      isValid = dateElement.checkValidity();
     }
 
     return isEmpty || !isValid;
