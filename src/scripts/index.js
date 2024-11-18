@@ -2221,6 +2221,8 @@ function checkDate(id, dd, mm, yy, element) {
       );
     }
   }
+
+  checkPageProgress();
 }
 
 function inputDate(id, nextID, key) {
