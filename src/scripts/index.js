@@ -1322,6 +1322,22 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
   }, ${response["profile-Postcode"]}`;
   handleSetReporter(new Date(response["profile-DateOfBirth"]), fullAddress);
 
+  if (response["profile-Title"]) {
+    $("#dform_widget_sel_title").prop("readonly", true);
+  }
+  if (response["profile-Forename1"]) {
+    $("#dform_widget_txt_firstname").prop("readonly", true);
+  }
+  if (response["profile-Surname"]) {
+    $("#dform_widget_txt_surname").prop("readonly", true);
+  }
+  if (response["profile-Email"]) {
+    $("#dform_widget_eml_address").prop("readonly", true);
+  }
+  if (response["profile-Number"]) {
+    $("#dform_widget_tel_phone_number").prop("readonly", true);
+  }
+
   // keep at the bottom
   checkPageProgress();
 }
@@ -2425,13 +2441,11 @@ function handleSetReporter(date, address) {
     $("#dform_widget_num_date_of_birth_yy").val(date.getFullYear()).blur();
   }
 
-  // $("#myInput").prop("readonly", true);
-  // Hide address lookup
-  // KDF.hideSection("area_address_lookup_about_you");
-
   // Set and show address
   if (!address.includes("undefined")) {
     setSelectedAddress(address, "show", "dform_page_page_about_you");
+    // Hide address lookup
+    // KDF.hideSection("area_address_lookup_about_you");
   }
 
   // Hide submit anonymously option and info
