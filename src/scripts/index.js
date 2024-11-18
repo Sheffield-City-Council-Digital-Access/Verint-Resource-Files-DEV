@@ -2434,18 +2434,25 @@ function updateProgressBar(currentPageIndex) {
 function handleSetReporter(date, address) {
   // Set date to input fields and trigger change
   if (!date === "Invalid Date") {
-    $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
+    $("#dform_widget_num_date_of_birth_dd")
+      .val(date.getDate())
+      .blur()
+      .prop("readonly", true);
     $("#dform_widget_num_date_of_birth_mm")
       .val(date.getMonth() + 1)
-      .blur();
-    $("#dform_widget_num_date_of_birth_yy").val(date.getFullYear()).blur();
+      .blur()
+      .prop("readonly", true);
+    $("#dform_widget_num_date_of_birth_yy")
+      .val(date.getFullYear())
+      .blur()
+      .prop("readonly", true);
   }
 
   // Set and show address
   if (!address.includes("undefined")) {
     setSelectedAddress(address, "show", "dform_page_page_about_you");
     // Hide address lookup
-    // KDF.hideSection("area_address_lookup_about_you");
+    KDF.hideSection("area_address_lookup_about_you");
   }
 
   // Hide submit anonymously option and info
