@@ -1320,23 +1320,8 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
   fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${
     response["profile-AddressLine4"]
   }, ${response["profile-Postcode"]}`;
-  handleSetReporter(new Date(response["profile-DateOfBirth"]), fullAddress);
 
-  if (response["profile-Title"]) {
-    $("#dform_widget_sel_title").prop("readonly", true);
-  }
-  if (response["profile-Forename1"]) {
-    $("#dform_widget_txt_firstname").prop("readonly", true);
-  }
-  if (response["profile-Surname"]) {
-    $("#dform_widget_txt_surname").prop("readonly", true);
-  }
-  if (response["profile-Email"]) {
-    $("#dform_widget_eml_address").prop("readonly", true);
-  }
-  if (response["profile-Number"]) {
-    $("#dform_widget_tel_phone_number").prop("readonly", true);
-  }
+  handleSetReporter(new Date(response["profile-DateOfBirth"]), fullAddress);
 
   // keep at the bottom
   checkPageProgress();
@@ -2433,26 +2418,18 @@ function updateProgressBar(currentPageIndex) {
 
 function handleSetReporter(date, address) {
   // Set date to input fields and trigger change
+  console.log(date);
   if (!date === "Invalid Date") {
-    $("#dform_widget_num_date_of_birth_dd")
-      .val(date.getDate())
-      .blur()
-      .prop("readonly", true);
+    $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
     $("#dform_widget_num_date_of_birth_mm")
       .val(date.getMonth() + 1)
-      .blur()
-      .prop("readonly", true);
-    $("#dform_widget_num_date_of_birth_yy")
-      .val(date.getFullYear())
-      .blur()
-      .prop("readonly", true);
+      .blur();
+    $("#dform_widget_num_date_of_birth_yy").val(date.getFullYear()).blur();
   }
 
   // Set and show address
   if (!address.includes("undefined")) {
     setSelectedAddress(address, "show", "dform_page_page_about_you");
-    // Hide address lookup
-    KDF.hideSection("area_address_lookup_about_you");
   }
 
   // Hide submit anonymously option and info
