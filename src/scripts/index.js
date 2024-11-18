@@ -1781,12 +1781,16 @@ function checkPageProgress() {
       (name.endsWith("_dd") || name.endsWith("_mm") || name.endsWith("_yy"))
     ) {
       console.log("date", el.name);
-      const dateElement = document.getElementById(
-        `dform_widget_${el.name.replace("num_", "dt_")}`
+      // const dateElement = document.getElementById(
+      //   `dform_widget_${el.name.replace("num_", "dt_")}`
+      // );
+      console.log(
+        el.name,
+        `dform_widget_${name.replace("num_", "dt_").slice(0, -3)}`
       );
-      console.log(dateElement);
-      isEmpty = dateElement.value.trim() === "";
-      isValid = dateElement.checkValidity();
+      console.log(el.id, el.id.replace("_num_", "_dt_").slice(0, -3));
+      // isEmpty = dateElement.value.trim() === "";
+      // isValid = dateElement.checkValidity();
     }
 
     return isEmpty || !isValid;
