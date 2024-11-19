@@ -543,7 +543,8 @@ const bidding = new ContentH(
                 First Come First Served
             </summary>
               <p>
-                Log onto our website at www.sheffieldpropertyshop.org.uk and follow
+                Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank"
+        >www.sheffieldpropertyshop.org.uk</a>k and follow
                 the links from the homepage.
               </p>
               <p>Click ‘Log into my account’.</p>
@@ -658,7 +659,7 @@ const bidding = new ContentH(
           </p>
           <p>
             Alternatively, send the name change in writing along with proof
-            (originals, not photocopies) to RegistrationID@sheffield.gov.uk.
+            (originals, not photocopies) to  a href="mailto:RegistrationID@sheffield.gov.uk">RegistrationID@sheffield.gov.uk</a>R.
           </p>
         </div>
       </details>
@@ -698,7 +699,8 @@ const bidding = new ContentH(
         To apply for Social Housing you need to do so via the Property Shop website.
         There are no paper application forms.
       </p>
-      <p>Go online and register on www.sheffieldpropertyshop.org.uk</p>
+      <p>Go online and register on <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank"
+        >www.sheffieldpropertyshop.org.uk</a></p>
       <p>
         Before you can complete an application to join the Housing Register you will
         need to register yourself as a new household on the system.
@@ -2550,22 +2552,19 @@ const priorities = new ContentH(
   "Priorities",
   "",
   `
- 
-<h3>Priorities</h3>
+  <p>
+    Priority for rehousing can be awarded if there is a need to be rehoused urgently and immediately. When your circumstances have been assessed, we will look at whether we can give you priority for housing ahead of other people on the Housing Register. We will then write to you explaining our decision. If we give you priority, we will explain why it has been given, what sort of property it is for and how long you have to use it. The letter will also explain how to request a review of the decision if you are unhappy with it.<br><br>
 
-<p>Priority for rehousing can be awarded if there is a need to be rehoused urgently and immediately. When your circumstances have been assessed, we will look at whether we can give you priority for housing ahead of other people on the Housing Register. We will then write to you explaining our decision. If we give you priority, we will explain why it has been given, what sort of property it is for and how long you have to use it. The letter will also explain how to request a review of the decision if you are unhappy with it.</p>
+    In some cases we will make you an offer of a property that we feel meets your needs. If we are unable to contact you due to changes not notified to us, your registration may be suspended or cancelled.<br><br>
 
-<p>In some cases we will make you an offer of a property that we feel meets your needs. If we are unable to contact you due to changes not notified to us, your registration may be suspended or cancelled.</p>
+    If you may be eligible for a priority you will be asked to provide us with further information. Once you have been assessed, we will write to you and explain whether you have been given priority. If you are given priority the letter will explain what sort of properties you can bid for with the priority and when the priority will be reviewed.<br><br>
 
-<p>If you may be eligible for a priority you will be asked to provide us with further information. Once you have been assessed, we will write to you and explain whether you have been given priority. If you are given priority the letter will explain what sort of properties you can bid for with the priority and when the priority will be reviewed.</p>
+    We will write to you and explain why if you have not been awarded a priority. We will tell you if you can request a review of the decision and how to go about this. In many cases, if you are not given priority but need further assistance, we will work with you, your advocates and our partner agencies to provide advice and assistance.<br><br>
 
-<p>We will write to you and explain why if you have not been awarded a priority. We will tell you if you can request a review of the decision and how to go about this. In many cases, if you are not given priority but need further assistance, we will work with you, your advocates and our partner agencies to provide advice and assistance.</p>
-
-<p>A priority does not affect your waiting time, you can apply for properties with both your waiting time and your priority. For most of the properties advertised we will consider people with priority first. If you have a priority, you must keep bidding for suitable properties. Even with a priority, you may have to bid for a considerable time before you are offered a property. In order for our system to be fair, a proportion of properties are also let on the basis of an applicant's waiting time on the housing register. This will be clearly shown in the property adverts.</p>
-
-
-
-  `,
+    A priority does not affect your waiting time, you can apply for properties with both your waiting time and your priority. For most of the properties advertised we will consider people with priority first. If you have a priority, you must keep bidding for suitable properties. Even with a priority, you may have to bid for a considerable time before you are offered a property. In order for our system to be fair, a proportion of properties are also let on the basis of an applicant's waiting time on the housing register. This will be clearly shown in the property adverts.<br>
+  `
+  </p>
+  ,
   {
     buttonLabel: "Report Housing Enquiry ",
     formName: "hou_rehousing_enquiry",
@@ -2579,81 +2578,71 @@ const priorities = new ContentH(
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
 );
+
 
 const PropertyOffersAndViewings = new ContentH(
   "PropertyOffersAndViewings",
   "Property Offers and Viewings",
   "",
   `
- 
-<h3>Property Offers and Viewings</h3>
+    <p>Once the bidding period has closed on a Tuesday night, 
+    bids for each property are sorted automatically based on the eligibility criteria.</p>
 
-<p>Once the bidding period has closed on a Tuesday night, 
-bids for each property are sorted automatically based on the eligibility criteria.p>
-
-        <details class="accordion">
-    <summary class="accordion-header">
+    <details class="accordion">
+      <summary class="accordion-header">
         <h3>FAQs</h3>
         <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
+      </summary>
+      <div class="accordion-content">
         <details class="details-accordion">
-            <summary>
-                How does Sheffield City Council allocate the property?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-               Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short: 
-                </p>
+          <summary>
+            How does Sheffield City Council allocate the property?
+          </summary>
+          <div class="details-accordion-content">
+            <p>
+              Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short:
+            </p>
 
-                <ul>
-                    <li>Properties advertised to Waiting Time – These properties will be offered to customers in Band D first in order of their effective date (oldest first). If no customers in Band D accept the property, it will be offered to the other bands in the following order: Band A, Band B, Band C, Band E.</li>
-                    <li>Properties advertised to Housing Register – These properties will be offered to customer with a priority in Band A first in order of their effective date (oldest first). If no customers in Band A accept the property, it will be offered to the other bands in the following order: Band B, Band C, Band D, Band E.</li>
-                    <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
-                    <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on the Sheffield Property Shop. You can do this by logging in to your account.</li>
-                    <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
-                    <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
-
-                </ul>
-            </div>
+            <ul>
+              <li>Properties advertised to Waiting Time – These properties will be offered to customers in Band D first in order of their effective date (oldest first). If no customers in Band D accept the property, it will be offered to the other bands in the following order: Band A, Band B, Band C, Band E.</li>
+              <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in Band A first in order of their effective date (oldest first). If no customers in Band A accept the property, it will be offered to the other bands in the following order: Band B, Band C, Band D, Band E.</li>
+              <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
+              <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on the Sheffield Property Shop. You can do this by logging in to your account.</li>
+              <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
+              <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
+            </ul>
+          </div>
         </details>
+      </div>
+    </details>
+
+    <div class="accordion-content">
+      <details class="details-accordion">
+        <summary>
+          When can I move in once offered a property?
+        </summary>
+        <div class="details-accordion-content">
+          <p>
+            Once you have completed your viewing and accepted the property, the Sign Up process will take place with your Neighbourhood Officer. You may get the keys at this point, however sometimes delays may occur due to unforeseen work that is required to bring the property up to a standard that meets our Vacant Charter. When the property is ready, we will contact you to arrange an appointment to view the property and then to sign for your new tenancy, should you choose to accept.<br>
+            In some circumstances we may arrange a ‘work in progress’ viewing.
+          </p>
+        </div>
+      </details>
     </div>
-</details>
-
 
     <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-               When can I move in once offered a property?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-               Once you have completed your viewing and accepted the property, the Sign Up process will take place with your Neighbourhood Officer. You may get the keys at this point, however sometimes delays may occur due to unforeseen work that is required to bring the property up to a standard that meets our Vacant Charter.  When the property is ready, we will contact you to arrange an appointment to view the property and then to sign for your new tenancy, should you choose to accept. 
-                </p>
-
-                <p>
-               In some circumstances we may arrange a ‘work in progress’ viewing. 
-                </p>
-               
-            </div>
-        </details>
-
-            <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-               Where can I find lettings results?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                Sheffield City Council publishes the results of each let on the Sheffield Property Shop website. This information lets you see how popular particular properties are by highlighting the waiting time held by the successful applicant. This should help you to gauge how long you may be waiting for a similar property. This will also help you to make more realistic bids in the future.
-                </p>
-
-            </div>
-        </details>
-
-
+      <details class="details-accordion">
+        <summary>
+          Where can I find lettings results?
+        </summary>
+        <div class="details-accordion-content">
+          <p>
+            Sheffield City Council publishes the results of each let on the Sheffield Property Shop website. This information lets you see how popular particular properties are by highlighting the waiting time held by the successful applicant. This should help you to gauge how long you may be waiting for a similar property. This will also help you to make more realistic bids in the future.
+          </p>
+        </div>
+      </details>
+    </div>
   `,
-
   {
     buttonLabel: "Report Housing Enquiry ",
     formName: "hou_rehousing_enquiry",
@@ -2667,6 +2656,7 @@ bids for each property are sorted automatically based on the eligibility criteri
   },
   { date: "07/22/2024", name: "Gee Whitehouse" }
 );
+
 
 const applicantPlacedInAPriorityBand = new ContentH(
   "applicantPlacedInAPriorityBand",
@@ -2893,7 +2883,8 @@ const applicationChanges = new ContentH(
             </summary>
             <div class="details-accordion-content">
               <p>
-                Log onto our website at www.sheffieldpropertyshop.org.uk and follow
+                Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank"
+        >www.sheffieldpropertyshop.org.uk</a> and follow
                 the links from the homepage.
               </p>
               <p>Click ‘Log into my account’.</p>
@@ -3008,7 +2999,7 @@ const applicationChanges = new ContentH(
           </p>
           <p>
             Alternatively, send the name change in writing along with proof
-            (originals, not photocopies) to RegistrationID@sheffield.gov.uk.
+            (originals, not photocopies) to a href="mailto:RegistrationID@sheffield.gov.uk">RegistrationID@sheffield.gov.uk</a>.
           </p>
         </div>
       </details>
@@ -3066,7 +3057,7 @@ const applicationChanges = new ContentH(
     "",
     `
   <h3>Area Office Information</h3>
-  <p><a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices="target="_blank">Neighbourhood Offices</a></p>
+  <p><a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices="target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a></p>
   
   <h3>Bogus Callers</h3>
   <p>All Council Housing Service staff, surveyors, and contractors carry identification cards at all times. It is important that you always ask to see identification before you let anyone into your home. If you have any doubts about a caller’s identity, do not let them in.</p>
@@ -3406,6 +3397,7 @@ const tenancyEnforcementASB = new ContentH(
 <li>harassment</li>
 <li>online abuse</li>
 </ul>
+<br>
 <h4>How to report Hate Crime</h4>
 <p>Anyone experiencing Hate Crime should report this to South Yorkshire Police, this can be done via 101 or via 999 if a crime is in progress or someone is in immediate danger. Hate Crime should also be reported to SCC, the Neighbourhood Team/ TEST who will work closely with Police and establish if any enforcement action against perpetrators is appropriate.</p>
 <li>robbery</li>
@@ -3502,7 +3494,6 @@ const benefitCap = new ContentH(
   "Benefit cap",
   "Description tbc",
   `
-    <h3>Benefit cap</h3>
     <p>View website for housing benefit cap information: <a href="https://www.gov.uk/benefit-cap" target="_blank">https://www.gov.uk/benefit-cap</a></p>
   `,
     { buttonLabel: "Benefit cap", formName: "" },
@@ -3626,7 +3617,7 @@ const benefitClaim = new ContentH(
     "Description tbc",
     `
       <h3>Benefit fraud</h3>
-      <p>The customer can report fraud anonymously online at: <a href="https://www.gov.uk/report-benefit-fraud" target="_blank">https://www.gov.uk/report-benefit-fraud</a></p>
+      <p>You can can report fraud anonymously online at: <a href="https://www.gov.uk/report-benefit-fraud" target="_blank">https://www.gov.uk/report-benefit-fraud</a></p>
     `,
     { buttonLabel: "Benefit fraud", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -3752,7 +3743,7 @@ const benefitClaim = new ContentH(
     "Description Tbc",
     `
       <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
-         <p>You can access this via the <a href="https://www.sheffield.gov.uk/" target="_blank">https://www.sheffield.gov.uk/</a> and follow the links to Benefits.</p>
+         <p>You can access this via <a href="https://www.sheffield.gov.uk/benefits" target="_blank">https://www.sheffield.gov.uk/benefits</a></p>
     `,
     { buttonLabel: "Change of circumstances", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -4267,7 +4258,8 @@ const benefitClaim = new ContentH(
           </summary>
           <div class="details-accordion-content">
             <p>
-              Log onto our website at www.sheffieldpropertyshop.org.uk and follow
+              Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank"
+        >www.sheffieldpropertyshop.org.uk</a> and follow
               the links from the homepage.
             </p>
             <p>Click ‘Log into my account’.</p>
@@ -4382,7 +4374,7 @@ const benefitClaim = new ContentH(
         </p>
         <p>
           Alternatively, send the name change in writing along with proof
-          (originals, not photocopies) to RegistrationID@sheffield.gov.uk.
+          (originals, not photocopies) to <a href="mailto:RegistrationID@sheffield.gov.uk">RegistrationID@sheffield.gov.uk</a>.
         </p>
       </div>
     </details>
@@ -5884,7 +5876,6 @@ Budget Plan Direct Debit mandate in their new tenancy welcome information pack
 <details class="accordion">
       <summary class="accordion-header">
         <h3>Payment</h3>
-        <h4>Charges</h4>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -6765,7 +6756,7 @@ const parkingPermitsHS = new ContentH(
 <strong>Telephone Number:</strong>0114 2734011<br>
 <strong>Further Information:</strong> Free School Meals, Blue Badge, Parking Permits, Children's Travel Pass, Disability Travel Permit, 
 Streets Ahead, Environmental Services, Local Assistance Scheme<br>
-<strong>Email Address:</strong> customerservices@sheffield.gov.uk
+<strong>Email Address:</strong> <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
 </p>
 
   `,
@@ -7469,7 +7460,7 @@ const housingBenefits = new MenuH(
 
 const policy = new MenuH(
   "policy",
-  "Policy",
+  "Rehousing policy",
   "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
   [
     allocationsPolicyGuidance,
@@ -7501,7 +7492,7 @@ const rehousing = new MenuH(
     eligibility,
     bidding,
     //idReferencesMenu,
-    policy,
+    //policy,
     priorities,
     PropertyOffersAndViewings,
   ]
@@ -7530,5 +7521,5 @@ const rehousing = new MenuH(
     "housing",
     "Housing",
     "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-    [estatesAndEnvironments, housingBenefits, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, tenancySustainment, idReferencesMenu]
+    [estatesAndEnvironments, housingBenefits, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, tenancySustainment, idReferencesMenu, policy]
   );
