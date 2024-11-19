@@ -659,7 +659,7 @@ const bidding = new ContentH(
           </p>
           <p>
             Alternatively, send the name change in writing along with proof
-            (originals, not photocopies) to  a href="mailto:RegistrationID@sheffield.gov.uk">RegistrationID@sheffield.gov.uk</a>R.
+            (originals, not photocopies) to  <a href="mailto:RegistrationID@sheffield.gov.uk">RegistrationID@sheffield.gov.uk</a>.
           </p>
         </div>
       </details>
