@@ -2562,8 +2562,8 @@ const priorities = new ContentH(
     We will write to you and explain why if you have not been awarded a priority. We will tell you if you can request a review of the decision and how to go about this. In many cases, if you are not given priority but need further assistance, we will work with you, your advocates and our partner agencies to provide advice and assistance.<br><br>
 
     A priority does not affect your waiting time, you can apply for properties with both your waiting time and your priority. For most of the properties advertised we will consider people with priority first. If you have a priority, you must keep bidding for suitable properties. Even with a priority, you may have to bid for a considerable time before you are offered a property. In order for our system to be fair, a proportion of properties are also let on the basis of an applicant's waiting time on the housing register. This will be clearly shown in the property adverts.<br>
+   </p> 
   `
-  </p>
   ,
   {
     buttonLabel: "Report Housing Enquiry ",
