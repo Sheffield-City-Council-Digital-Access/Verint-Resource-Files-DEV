@@ -3056,7 +3056,7 @@ const applicationChanges = new ContentH(
     "",
     `
   <h3>Area Office Information</h3>
-  <p><a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices="target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a></p>
+  <p><a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices"target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a></p>
   
   <h3>Bogus Callers</h3>
   <p>All Council Housing Service staff, surveyors, and contractors carry identification cards at all times. It is important that you always ask to see identification before you let anyone into your home. If you have any doubts about a caller’s identity, do not let them in.</p>
@@ -3408,12 +3408,12 @@ const tenancyEnforcementASB = new ContentH(
 <h3>Sanctuary Scheme/Target hardening</h3>
 <p>Service Area: Action Domestic Abuse (Sanctuary Scheme)</p>
 <p>Telephone Number: Helpline No: 08088 082 241; Office No. 0114 270 6999</p>
-<p>Email Address: sanctuary.scheme@actionorg.uk</p>
+<p>Email Address: <a href="mailto:sanctuary.scheme@actionorg.uk">sanctuary.scheme@actionorg.uk</a></p>
 <p>South Yorkshire Fire and Rescue Service can fit blank letter boxes if there are concerns regarding harmful items being posted through the door. The Neighbourhood Officer can make a referral to SYF&amp;R for a Home Safety check.</p>
 <p>Neighbourhood Teams may have stock of target hardening equipment.</p>
 <p>Victim Support may support with target hardening.</p>
   </p>`,
-  {buttonLabel: "Example 1", formName: "example_form" },
+  {buttonLabel: "", formName: "" },
   {typeKey: "example_transfered_to_service" },
   {typeKey: "example_information_provided" },
   {type: "Request", keywords: [], categories: ["Housing"] },
@@ -3615,7 +3615,6 @@ const benefitClaim = new ContentH(
     "Benefit fraud",
     "Description tbc",
     `
-      <h3>Benefit fraud</h3>
       <p>You can can report fraud anonymously online at: <a href="https://www.gov.uk/report-benefit-fraud" target="_blank">https://www.gov.uk/report-benefit-fraud</a></p>
     `,
     { buttonLabel: "Benefit fraud", formName: "" },
@@ -3741,8 +3740,8 @@ const benefitClaim = new ContentH(
     "Change of circumstances",
     "Description Tbc",
     `
-      <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
-         <p>You can access this via <a href="https://www.sheffield.gov.uk/benefits" target="_blank">https://www.sheffield.gov.uk/benefits</a></p>
+      <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available.<br> 
+        You can access this via <a href="https://www.sheffield.gov.uk/benefits" target="_blank">https://www.sheffield.gov.uk/benefits</a></p>
     `,
     { buttonLabel: "Change of circumstances", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -3779,8 +3778,8 @@ const benefitClaim = new ContentH(
     "Local Assistance Scheme",
     "Description Tbc",
     `
-      <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. 
-         You can access this via the Sheffield City Council Website and follow the links to Benefits.</p>
+      <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. <br>
+         You can access this via <a href="https://www.sheffield.gov.uk/benefits" target="_blank">https://www.sheffield.gov.uk/benefits</a></p>
     `,
     { buttonLabel: "Local Assistance Scheme", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -7382,10 +7381,15 @@ const tenancySustainment = new MenuH(
   ]
 );
 
- const adaptations = new MenuH("adaptations", "Adaptations", "", [
+ const adaptations = new MenuH(
+   "adaptations", 
+   "Adaptations", 
+   "Adaptations Menu",
+   [
     chaseProgressOfAdaptation,
     otherAdaptationRequest
-  ]);
+  ]
+ );
   
   
   
