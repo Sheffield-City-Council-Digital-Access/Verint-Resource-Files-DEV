@@ -1373,6 +1373,12 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
       // Hide the "maps-unavailable-notice" element
       $(".maps-unavailable-notice").hide();
+
+      if (KDF.kdf().access === "agent") {
+        $(
+          "#map_container > div.esri-view-root > div.esri-ui.calcite-theme-light > div.esri-ui-inner-container.esri-ui-corner-container > div.esri-ui-top-right.esri-ui-corner > div"
+        ).css("display", "inline-flex");
+      }
     }
   }
 
