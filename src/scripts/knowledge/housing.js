@@ -7524,5 +7524,5 @@ const rehousing = new MenuH(
     "housing",
     "Housing",
     "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-    [estatesAndEnvironments, housingBenefits, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, tenancySustainment, idReferencesMenu, policy]
+    [estatesAndEnvironments, housingBenefits, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, tenancySustainment, idReferencesMenu, policy, adaptations]
   );
