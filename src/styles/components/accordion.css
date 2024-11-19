@@ -3,9 +3,14 @@
 #dform_container .accordion {
   width: 100%;
   max-width: 445px;
-  margin: 0;
+  margin: 4rem 0;
   border: none;
   background-color: var(--color-white);
+}
+
+#dform_container .accordion:focus-within {
+  box-shadow: none;
+  outline: 0.4rem solid var(--color-warning);
 }
 
 #dform_container .accordion-header {

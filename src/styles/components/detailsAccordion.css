@@ -2,6 +2,7 @@
 
 #dform_container .details-accordion {
   max-width: 57.1rem;
+  margin-block: .6rem;
 }
 
 #dform_container .details-accordion:focus-within {
