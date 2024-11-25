@@ -147,6 +147,7 @@ const childTravelPasss = new ContentTaT(
       "childrens travelp ass",
       "childrens trave pass",
       "childrens travell pass",
+      "CTP",
       "childrens",
       "childrenss",
       "childrens",
@@ -161,7 +162,7 @@ const childTravelPasss = new ContentTaT(
       "pess",
       "passs",
       "passe",
-      "pazs",
+      "pazs"
     ],
     categories: ["Travel and Transport"],
   },
@@ -258,6 +259,7 @@ const disabledTravelPermit = new ContentTaT(
       "applicaton",
       "aplicacion",
       "applucation",
+      "DTP"
     ],
 
     categories: ["Travel and Transport"],
