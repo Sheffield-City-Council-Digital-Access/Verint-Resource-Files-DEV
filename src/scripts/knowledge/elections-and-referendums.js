@@ -119,22 +119,6 @@ const howToCompletePostalVote = new ContentEaR(
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
-const electionsAndVoting = new MenuEaR(
-  "electionsAndVoting",
-  "Elections And Voting",
-  "Information about Voting in these elections can be found here",
-  [
-    assistanceForPartiallySightedVoters,
-    howToCompletePostalVote,
-    localElections,
-    parishElections,
-    postalVoteNoLongerRequired,
-    postalVoteReceivedButNotRequested,
-    postalVoteSendingAbroad,
-    spoiltorDamagedPostalVote,
-    whereDoIVote
-  ]
-);
 
 // #endregion Elections and Voting
 
@@ -1700,6 +1684,24 @@ const wards = new ContentEaR(
   },
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
+
+const electionsAndVoting = new MenuEaR(
+  "electionsAndVoting",
+  "Elections And Voting",
+  "Information about Voting in these elections can be found here",
+  [
+    assistanceForPartiallySightedVoters,
+    howToCompletePostalVote,
+    localElections,
+    parishElections,
+    postalVoteNoLongerRequired,
+    postalVoteReceivedButNotRequested,
+    postalVoteSendingAbroad,
+    spoiltorDamagedPostalVote,
+    whereDoIVote
+  ]
+);
+
 
 const topEnquiries = new MenuEaR("topEnquiries", "Top Enquiries", "", [
   annualCanvas,
