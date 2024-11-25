@@ -60,13 +60,11 @@ const informationInDifferentFormats = new ContentEaR(
   "Information in different formats",
   "Accessing information in different formats (Braille, Large Print etc)",
   `
-    <p>
-      <section class="info-panel" role="region" aria-label="Information panel">
-        <p>
-            Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here/a> to access WebEros.
-        </p>
-      </section>
-    </p>
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
     <p>
       Some information is available in alternative formats. If you are registering
       to vote, do so at
