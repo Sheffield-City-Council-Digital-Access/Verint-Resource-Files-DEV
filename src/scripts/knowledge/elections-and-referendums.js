@@ -439,9 +439,7 @@ const optOutofTheOpenRegister = new ContentEaR(
       the internet, a request can be sent through to Electoral Services for them to
       remove you from the Register. You can change your opt-out preference at any
       time by visiting
-      <a href="https://www.gov.uk/register-to-vote" target="_blank"
-        >www.gov.uk/register-to-vote</a
-      >.
+      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>.
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -452,7 +450,7 @@ const optOutofTheOpenRegister = new ContentEaR(
     keywords: [],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "24/09/2024", name: "Shahzad Athar" }
+  { date: "25/11/2024", name: "Nathan Smith" }
 );
 
 const electoralRegisterConfirmationLetter = new ContentEaR(
