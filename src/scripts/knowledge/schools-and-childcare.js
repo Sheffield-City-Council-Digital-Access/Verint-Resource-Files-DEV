@@ -136,6 +136,8 @@ const fundedEarlyLearning = new ContentSaC(
       "Funded Early Lerning",
       "Funded Eearly Learning",
       "FEL",
+      "FIS",
+      "LAS",
       "Free Early Learning",
       "Fundded",
       "Fuded",
@@ -151,7 +153,7 @@ const fundedEarlyLearning = new ContentSaC(
       "Learnning",
       "Lurning",
       "Lreaning",
-      "Leanring",
+      "Leanring"
     ],
     categories: ["School and Childcare"],
   },
@@ -399,6 +401,8 @@ const freeSchoolMeals = new ContentSaC(
       "mel",
       "meall",
       "FSM",
+      "FSV",
+      "SV"
     ],
     categories: ["School and Childcare"],
   },
@@ -650,7 +654,11 @@ const schoolFoodVoucher = new ContentSaC(
       "mial",
       "mel",
       "meall",
-      "FSM"
+      "FSM",
+      "Food",
+      "Food Voucher",
+      "School Food",
+      "School Voucher"
     ],
     categories: ["School and Childcare"],
   },
