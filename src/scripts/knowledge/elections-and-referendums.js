@@ -60,12 +60,16 @@ const informationInDifferentFormats = new ContentEaR(
   "Information in different formats",
   "Accessing information in different formats (Braille, Large Print etc)",
   `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here/a> to access WebEros.
+      </p>
+    </section>
     <p>
       Some information is available in alternative formats. If you are registering
       to vote, do so at
-      <a href="https://www.gov.uk/register-to-vote" target="_blank"
-        >www.gov.uk/register-to-vote</a
-      >, which works with assistive technologies such as screen readers, or we can
+      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>, 
+      which works with assistive technologies such as screen readers, or we can
       send you an application in your preferred format where available. For
       additional information, please call: 0114 2734093.
     </p>
@@ -78,7 +82,7 @@ const informationInDifferentFormats = new ContentEaR(
     keywords: [],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "23/09/2024", name: "Shahzad Athar" }
+  { date: "25/11/2024", name: "Nathan Smith" }
 );
 
 const invitationToRegister = new ContentEaR(
