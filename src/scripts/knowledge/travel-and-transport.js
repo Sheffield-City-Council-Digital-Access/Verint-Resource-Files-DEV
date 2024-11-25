@@ -262,7 +262,11 @@ const disabledTravelPermit = new ContentTaT(
       "DTP",
       "DPTP",
       "MTP",
-      "DP"
+      "DP",
+      "Mobility Travel Permit",
+      "Mobility Travel Pass",
+      "Mobile",
+      "Mobility"
     ],
 
     categories: ["Travel and Transport"],
