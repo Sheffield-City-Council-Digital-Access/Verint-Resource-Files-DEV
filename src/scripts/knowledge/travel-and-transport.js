@@ -259,7 +259,8 @@ const disabledTravelPermit = new ContentTaT(
       "applicaton",
       "aplicacion",
       "applucation",
-      "DTP"
+      "DTP",
+      "DPTP" 
     ],
 
     categories: ["Travel and Transport"],
