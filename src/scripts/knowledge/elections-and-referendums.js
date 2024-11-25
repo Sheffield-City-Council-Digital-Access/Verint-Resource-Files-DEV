@@ -54,6 +54,304 @@ class FormEaR extends CoreEaR {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
+// #region Annual Canvas
+
+const canvassForm = new ContentEaR(
+  "canvassForm",
+  "Canvass Form (CF)",
+  "",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      Any residential property that does not respond to the CCB form will receive a
+      <strong>Canvass Form (CF)</strong>.
+    </p>
+    <p>
+      Someone in the property should check the details on the form are correct and
+      up to date. This form <strong>requires a response</strong>, even if the
+      details on it are correct. Responses can be made online at
+      <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a>
+      or by returning the completed form in the reply envelope. If there are changes
+      or to confirm there are no changes. If everything is correct, this can be
+      confirmed by SMS or phone instead, using the details on the form.
+    </p>
+    <p>
+      <strong
+        >You need to include the name and nationality of everyone aged 16 or over
+        who is resident and eligible to register for voting.</strong
+      >
+      If there are no eligible residents, you should state why this is the case.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "annual_canvass_transferred_to_service" },
+  { typeKey: "annual_canvass_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const ccaCCBorCanvassForms = new ContentEaR(
+  "ccaCCBorCanvassForms",
+  "CCA CCB or Canvass Form",
+  "CCA CCB or Canvass Forms - People that do not live at the address",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      Any residential property that does not respond to the CCB form will receive a
+      <strong>Canvass Form (CF)</strong>.
+    </p>
+    <p>
+      Someone in the property should check the details on the form are correct and
+      up to date. This form <strong>requires a response</strong>, even if the
+      details on it are correct. Responses can be made online at: 
+      <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a>
+      or by returning the completed form in the reply envelope. If there are changes
+      or to confirm there are no changes. If everything is correct, this can be
+      confirmed by SMS or phone instead, using the details on the form.
+    </p>
+    <p>
+      <strong
+        >You need to include the name and nationality of everyone aged 16 or over
+        who is resident and eligible to register for voting.</strong
+      >
+      If there are no eligible residents, you should state why this is the case.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "annual_canvass_transferred_to_service" },
+  { typeKey: "annual_canvass_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const ccaCCBForms = new ContentEaR(
+  "ccaCCBForms",
+  "CCA/CCB Forms",
+  "",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      Each year, the <strong>Electoral Registration Officer (ERO)</strong> is
+      required to check the details held on the electoral register. Every
+      residential property will receive either a <strong>CCA</strong> or
+      <strong>CCB</strong> form.
+    </p>
+    <p>
+      <strong>Properties receiving a CCA</strong> - Someone in the property should
+      check the details on the form are correct and up to date. If they are, the
+      form can be ignored. If there are any updates to make (such as a change of
+      name, adding or removing someone), they should go online at
+      <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a>
+      and make the change using the unique security codes printed on the form, or
+      contact Electoral Services directly if they cannot go online.
+    </p>
+    <p>
+      <strong>Properties receiving a CCB</strong> - Someone in the property should
+      check the details on the form are correct and up to date. This form
+      <strong>requires a response</strong>, even if the details on it are correct.
+      Responses can be made online at
+      <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a>
+      if there are changes or to confirm there are no changes. If everything is
+      correct, this can be confirmed by SMS or phone instead, using the details on
+      the form. They can contact Electoral Services directly if they cannot go
+      online.
+    </p>
+    <p>
+      <strong
+        >You need to include the name and nationality of everyone aged 16 or over
+        who is resident and eligible to register for voting.</strong
+      >
+      If there are no eligible residents, you should state why this is the case.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "annual_canvass_transferred_to_service" },
+  { typeKey: "annual_canvass_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const informationChangeandHowToUpdateIt = new ContentEaR(
+  "informationChangeAndHowToUpdateIt",
+  "Information Change and How to Update It",
+  "What happens if I change my name, address, nationality, or anything else on the form?",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      If anyone listed on the form is not living at your address, their name should
+      be clearly crossed out. If people living at the property are not shown, the
+      name and nationality of everyone aged over 16 who is resident and eligible to
+      register for voting should be added.
+    </p>
+    <p>
+      If your nationality has changed, correct this and return the form; we might
+      need you to re-register if your eligibility changes (e.g. from EU nationality
+      to British). The form will have instructions on how to change your
+      <strong>open register choice</strong>.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "annual_canvass_transferred_to_service" },
+  { typeKey: "annual_canvass_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const lostCCACCBorCanvassForm = new ContentEaR(
+  "lostCCACCBorCanvassForm",
+  "Lost My CCA CCB or Canvass Form",
+  "",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      If you have lost your form then a duplicate can be sent, or you can wait for a
+      reminder. If there are no changes to make, I can confirm this to Electoral
+      Services for you.
+    </p>
+    <p>
+      If the reminders are lost, your home will be visited to check why forms
+      haven't been completed. If you can remember your HEF's reference you can
+      complete the form at:
+      <a href="https://www.hef-response.co.uk/" target="_blank">https://www.hef-response.co.uk/</a>
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "annual_canvass_transferred_to_service" },
+  { typeKey: "annual_canvass_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const removalFromRegister = new ContentEaR(
+  "removalFromRegister",
+  "Removal From Register",
+  "What happens if I move out of a property?",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      If you have received a CCA, CCB, or CF with a previous resident's details on,
+      cross through these details and add any new residents' names and nationalities
+      or complete the <strong>Empty Property</strong> section on the online or paper
+      form.
+    </p>
+    <p>
+      If you are reporting you have left or are leaving a property, please note this
+      on the form and the date you will be leaving.
+    </p>
+    <p>
+      We can only remove a name if we are informed a person has died, if another ERO
+      informs us they have registered in their area, or if we determine that the
+      person no longer meets the registration requirements. If you no longer want to
+      vote, we cannot remove you from the register, as it is a legal requirement to
+      be registered.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "annual_canvass_transferred_to_service" },
+  { typeKey: "annual_canvass_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const studentVoters = new ContentEaR(
+  "studentVoters",
+  "Student Voters",
+  "",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      Students can be registered in both their term-time and home address but can
+      only vote once at a national election or referendum (e.g. they can only vote
+      once in a Parliamentary Election). At local elections you can vote in both
+      places (providing they are different areas).
+    </p>
+    <p>
+      Students at Sheffield Hallam or the University of Sheffield will be asked if
+      they want their details to be shared with Sheffield's ERO as part of their
+      enrolment. If an election is taking place soon, it is faster to register
+      online.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "annual_canvass_transferred_to_service" },
+  { typeKey: "annual_canvass_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const annualCanvasMenu = new MenuEaR(
+  "annualCanvasMenu",
+  "Annual Canvas",
+  "The household canvass takes place each year to enable us to ensure the electoral register is up to date for each residential property in the city.",
+  [
+    canvassForm,
+    ccaCCBorCanvassForms,
+    ccaCCBForms,
+    informationChangeandHowToUpdateIt,
+    lostCCACCBorCanvassForm,
+    removalFromRegister,
+    studentVoters
+  ]
+);
+
+// #endregion Elections and Voting
+
 // #region Elections and Voting
 
 const assistanceForPartiallySightedVoters = new ContentEaR(
@@ -106,6 +404,264 @@ const howToCompletePostalVote = new ContentEaR(
     </section>
     <p>
       CLICK to ENHANCE IMAGE
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "elections_and_voting_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/09/2024", name: "Shahzad Athar" }
+);
+
+const localElections = new ContentEaR(
+  "localElections",
+  "Local Elections",
+  "Local elections are held on a four-year cycle. There is an election for the first three years and then no election in the fourth year. In these elections, you are voting to elect Councillors of Sheffield who will represent your views for the ward (area) in which you live. Further info on Councillors can be found using the link below:",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      Local elections are held on a four-year cycle. There is an election for the
+      first three years and then no election in the fourth year. In these elections,
+      you are voting to elect Councillors of Sheffield who will represent your views
+      for the ward (area) in which you live. Further info on Councillors can be
+      found using the link below:
+      <a href="https://www.sheffield.gov.uk/councillors" target="_blank">https://www.sheffield.gov.uk/councillors</a>
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "elections_and_voting_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const parishElections = new ContentEaR(
+  "parishElections",
+  "Parish Elections",
+  "Parish Councils are separate local authorities to the City Council, with their own elected members. They are wholly contained within the City Council boundary. A parish councillor can stand for election to the City Council and vice versa.",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      Parish Councils are separate local authorities to the City Council, with their
+      own elected members. They are wholly contained within the City Council
+      boundary. A parish councillor can stand for election to the City Council and
+      vice versa.
+    </p>
+    <p>
+      Parish elections are held once every four years and usually at the same time
+      as an election to the City Council. There are three parish councils in
+      Sheffield, which are split into smaller parish wards:
+      <ul>
+        <li>Bradfield Parish Council</li>
+        <li>Ecclesfield Parish Council</li>
+        <li>Stocksbridge Town Council</li>
+      </ul>
+    </p>
+    <p>
+      You can only vote at a Parish election if you live within the parish. 
+      More details around the Parish Elections can be found here:
+      <ahref="https://www.sheffield.gov.uk/home/your-city-council/election-types"target="_blank">https://www.sheffield.gov.uk/home/your-city-council/election-types</a>
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "elections_and_voting_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const postalVoteNoLongerRequired = new ContentEaR(
+  "postalVoteNoLongerRequired",
+  "Postal Vote No Longer Required",
+  "",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      You can cancel your application for a postal vote at any time up to the postal
+      vote application/change deadline. After this time, you can use the postal vote
+      pack and hand it in to any polling station in your ward or the Town Hall. You
+      must complete the whole pack as normal and also complete a postal vote hand
+      delivery form when dropping it off (otherwise it will be rejected).
+    </p>
+    <p>
+      In order to cancel your postal vote, you will need to send a letter to
+      Electoral Services at:
+      <address>
+        Electoral Services<br>
+        Town Hall<br>
+        Sheffield, S1 2HH
+      </address>
+    </p>
+    <p>
+      Or scan a letter and send it via email to:
+      <a href="mailto:electoralservices@sheffield.gov.uk">electoralservices@sheffield.gov.uk</a>
+    </p>
+    <p>Your letter must include:
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your signature</li>
+        <li>Statement that you wish to cancel your postal vote</li>
+      </ul>
+    </p>
+    <p>
+      We cannot do this over the phone as the request must be made in writing. This
+      is a security and fraud prevention measure.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "elections_and_voting_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const postalVoteReceivedButNotRequested = new ContentEaR(
+  "postalVoteReceivedButNotRequested",
+  "Postal Vote Received But Not Requested",
+  "What happens if I have received a postal ballot and did not request one or cannot remember requesting one?",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      If you have received a postal ballot and did not request one or cannot
+      remember requesting one, you can ask for this to be cancelled, as long as this
+      is before 5pm, 11 working days ahead of an election, or use it and hand it in
+      to any polling station in your ward or at the Town Hall. You must complete a
+      postal vote hand delivery form when you drop it off, otherwise, it will be
+      rejected.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "elections_and_voting_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const postalVoteSendingAbroad = new ContentEaR(
+  "postalVoteSendingAbroad",
+  "Postal Vote Sending Abroad",
+  "",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      Postal votes can be sent abroad, but it is at your own risk. We are unable to
+      send postal votes out until around 2 weeks before polling day. If you are
+      confident that you have enough time to receive the ballot paper and send it
+      back to us before 10pm on polling day, we will be happy to send it anywhere in
+      the world.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "elections_and_voting_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const spoiltorDamagedPostalVote = new ContentEaR(
+  "spoiltorDamagedPostalVote",
+  "Spoilt or Damaged Postal Vote",
+  "",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      We can issue replacement postal vote ballot papers in the event of the
+      original being damaged or a mistake being made on the ballot paper. You can
+      request a replacement for a spoiled/damaged pack immediately. But we will need
+      the whole pack/what is left to be returned to us before we can do this.
+    </p>
+    <p>
+      <strong>In Person:</strong> You need to take the spoilt postal vote pack to
+      the Town Hall – you will need to take ID.
+    </p>
+    <p>
+      <strong>By Post:</strong> You need to put the entire pack into a plain
+      envelope (not either of the envelopes the postal vote came with) with a
+      covering letter explaining the problem and send it to:
+      <address>
+        Electoral Services<br />
+        Town Hall<br />
+        Sheffield, S1 2HH
+      </address>
+    </p>
+    <p>We will then re-issue the ballot by post.</p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "elections_and_voting_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const whereDoIVote = new ContentEaR(
+  "whereDoIVote",
+  "Where Do I Vote",
+  "",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <iframe
+      src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=2c10878d034544718d4ea5c733b03559"
+      style="height: 400px; width: 100%"
+    ></iframe>
+    <p>
+      SERVICE HAS NOT PROVIDED THE LINK FOR 'WHERE DO I VOTE?
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -390,6 +946,38 @@ const postalorProxyVoting = new MenuEaR(
 // #endregion Postal or Proxy Voting
 
 // #region Registering to Vote
+
+const archiveCopies = new ContentEaR(
+  "archiveCopies",
+  "Archive Copies",
+  "What happens if I request a copy of the electoral register?",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      Copies of the register are supplied to the British Library. Copies of the
+      revised register from previous years are kept in the Archive and Local Studies
+      Library within the Central Library, Surrey Street, Sheffield S1. Inspection is
+      under supervision but copies cannot be made of the register if it is from
+      within 10 years of the current register, other than hand written notes.
+      Registers that are over 10 years old may be copied at a charge by Archive
+      Service staff. For more information about Register Archives visit: 
+      <a href="https://www.sheffield.gov.uk/home/libraries-archives/access-archives-local-studies-library/collections/electoral-registers-archive.html"target="_blank">https://www.sheffield.gov.uk/home/libraries-archives/access-archives-local-studies-library/collections/electoral-registers-archive.html</a>
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "registering_to_vote_information_provided" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
 
 const changeofAddressForm = new ContentEaR(
   "changeOfAddressForm",
@@ -975,6 +1563,7 @@ const registeringToVote = new MenuEaR(
   "Registering to Vote",
   "You must be registered to vote before you can vote in UK elections or referendums.",
   [
+    archiveCopies,
     changeofAddressForm,
     changeofNameonTheRegister,
     creditReferencingAgencies,
@@ -1000,542 +1589,18 @@ const registeringToVote = new MenuEaR(
 
 // #endregion Registering to Vote
 
-const archiveCopies = new ContentEaR(
-  "archiveCopies",
-  "Archive Copies",
-  "What happens if I request a copy of the electoral register?",
-  `
-    <p>
-      Copies of the register are supplied to the British Library. Copies of the
-      revised register from previosu years are kept in theArchive and Loca Studies
-      Library within the Central Library, Surrey Street, Sheffield S1. Inspection is
-      under supervision but copies cannot be made of the register if it is from
-      within 10 years of the current register, other than hand written notes.
-      Registers that are over 10 years old may be copied at a charge by Archive
-      Servciue staff. For more information about Register Archives visit
-      <a
-        href="https://www.sheffield.gov.uk/home/libraries-archives/access-archives-local-studies-library/collections/electoral-registers-archive.html"
-        target="_blank"
-        >electoral-registers-archive</a
-      >
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
-  { typeKey: "registering_to_vote_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "24/09/2024", name: "Shahzad Athar" }
-);
-
-const ccaCCBForms = new ContentEaR(
-  "ccaCCBForms",
-  "CCA/CCB Forms",
-  "",
-  `
-    <p>
-      Each year, the <strong>Electoral Registration Officer (ERO)</strong> is
-      required to check the details held on the electoral register. Every
-      residential property will receive either a <strong>CCA</strong> or
-      <strong>CCB</strong> form.
-    </p>
-    <p>
-      <strong>Properties receiving a CCA</strong> - Someone in the property should
-      check the details on the form are correct and up to date. If they are, the
-      form can be ignored. If there are any updates to make (such as a change of
-      name, adding or removing someone), they should go online at
-      <a href="http://www.elecreg.co.uk/sheffield" target="_blank"
-        >www.elecreg.co.uk/sheffield</a
-      >
-      and make the change using the unique security codes printed on the form, or
-      contact Electoral Services directly if they cannot go online.
-    </p>
-    <p>
-      <strong>Properties receiving a CCB</strong> - Someone in the property should
-      check the details on the form are correct and up to date. This form
-      <strong>requires a response</strong>, even if the details on it are correct.
-      Responses can be made online at
-      <a href="http://www.elecreg.co.uk/sheffield" target="_blank"
-        >www.elecreg.co.uk/sheffield</a
-      >
-      if there are changes or to confirm there are no changes. If everything is
-      correct, this can be confirmed by SMS or phone instead, using the details on
-      the form. They can contact Electoral Services directly if they cannot go
-      online.
-    </p>
-    <p>
-      <strong
-        >You need to include the name and nationality of everyone aged 16 or over
-        who is resident and eligible to register for voting.</strong
-      >
-      If there are no eligible residents, you should state why this is the case.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
-  { typeKey: "annual_canvass_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "24/09/2024", name: "Shahzad Athar" }
-);
-
-const canvassForm = new ContentEaR(
-  "canvassForm",
-  "Canvass Form (CF)",
-  "",
-  `
-    <p>
-      Any residential property that does not respond to the CCB form will receive a
-      <strong>Canvass Form (CF)</strong>.
-    </p>
-    <p>
-      Someone in the property should check the details on the form are correct and
-      up to date. This form <strong>requires a response</strong>, even if the
-      details on it are correct. Responses can be made online at
-      <a href="http://www.elecreg.co.uk/sheffield" target="_blank"
-        >www.elecreg.co.uk/sheffield</a
-      >
-      or by returning the completed form in the reply envelope. If there are changes
-      or to confirm there are no changes. If everything is correct, this can be
-      confirmed by SMS or phone instead, using the details on the form.
-    </p>
-    <p>
-      <strong
-        >You need to include the name and nationality of everyone aged 16 or over
-        who is resident and eligible to register for voting.</strong
-      >
-      If there are no eligible residents, you should state why this is the case.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
-  { typeKey: "annual_canvass_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "24/09/2024", name: "Shahzad Athar" }
-);
-
-const ccaCCBorCanvassForms = new ContentEaR(
-  "ccaCCBorCanvassForms",
-  "CCA CCB or Canvass Form",
-  "CCA CCB or Canvass Forms - People that do not live at the address",
-  `
-    <p>
-      Any residential property that does not respond to the CCB form will receive a
-      <strong>Canvass Form (CF)</strong>.
-    </p>
-    <p>
-      Someone in the property should check the details on the form are correct and
-      up to date. This form <strong>requires a response</strong>, even if the
-      details on it are correct. Responses can be made online at
-      <a href="http://www.elecreg.co.uk/sheffield" target="_blank"
-        >www.elecreg.co.uk/sheffield</a
-      >
-      or by returning the completed form in the reply envelope. If there are changes
-      or to confirm there are no changes. If everything is correct, this can be
-      confirmed by SMS or phone instead, using the details on the form.
-    </p>
-    <p>
-      <strong
-        >You need to include the name and nationality of everyone aged 16 or over
-        who is resident and eligible to register for voting.</strong
-      >
-      If there are no eligible residents, you should state why this is the case.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
-  { typeKey: "annual_canvass_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
-
-const lostCCACCBorCanvassForm = new ContentEaR(
-  "lostCCACCBorCanvassForm",
-  "Lost My CCA CCB or Canvass Form",
-  "",
-  `
-    <p>
-      If you have lost your form then a duplicate can be sent, or you can wait for a
-      reminder. If there are no changes to make, I can confirm this to Electoral
-      Services for you.
-    </p>
-    <p>
-      If the reminders are lost, your home will be visited to check why forms
-      haven't been completed. If you can remember your HEF's reference you can
-      complete the form at:
-      <a href="https://www.hef-response.co.uk/" target="_blank"
-        >https://www.hef-response.co.uk/</a
-      >
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
-  { typeKey: "annual_canvass_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
-
-const studentVoters = new ContentEaR(
-  "studentVoters",
-  "Student Voters",
-  "",
-  `
-    <p>
-      Students can be registered in both their term-time and home address but can
-      only vote once at a national election or referendum (e.g. they can only vote
-      once in a Parliamentary Election). At local elections you can vote in both
-      places (providing they are different areas).
-    </p>
-    <p>
-      Students at Sheffield Hallam or the University of Sheffield will be asked if
-      they want their details to be shared with Sheffield's ERO as part of their
-      enrolment. If an election is taking place soon, it is faster to register
-      online.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
-  { typeKey: "annual_canvass_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
-
-const removalFromRegister = new ContentEaR(
-  "removalFromRegister",
-  "Removal From Register",
-  "What happens if I move out of a property?",
-  `
-    <p>
-      If you have received a CCA, CCB, or CF with a previous resident's details on,
-      cross through these details and add any new residents' names and nationalities
-      or complete the <strong>Empty Property</strong> section on the online or paper
-      form.
-    </p>
-    <p>
-      If you are reporting you have left or are leaving a property, please note this
-      on the form and the date you will be leaving.
-    </p>
-    <p>
-      We can only remove a name if we are informed a person has died, if another ERO
-      informs us they have registered in their area, or if we determine that the
-      person no longer meets the registration requirements. If you no longer want to
-      vote, we cannot remove you from the register, as it is a legal requirement to
-      be registered.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
-  { typeKey: "annual_canvass_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
-
-const informationChangeandHowToUpdateIt = new ContentEaR(
-  "informationChangeAndHowToUpdateIt",
-  "Information Change and How to Update It",
-  "What happens if I change my name, address, nationality, or anything else on the form?",
-  `
-    <p>
-      If anyone listed on the form is not living at your address, their name should
-      be clearly crossed out. If people living at the property are not shown, the
-      name and nationality of everyone aged over 16 who is resident and eligible to
-      register for voting should be added.
-    </p>
-    <p>
-      If your nationality has changed, correct this and return the form; we might
-      need you to re-register if your eligibility changes (e.g. from EU nationality
-      to British). The form will have instructions on how to change your
-      <strong>open register choice</strong>.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
-  { typeKey: "annual_canvass_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
-
-const annualCanvasMenu = new MenuEaR(
-  "annualCanvasMenu",
-  "Annual Canvas",
-  "The household canvass takes place each year to enable us to ensure the electoral register is up to date for each residential property in the city.",
-  [
-    ccaCCBForms,
-    canvassForm,
-    ccaCCBorCanvassForms,
-    lostCCACCBorCanvassForm,
-    studentVoters,
-    removalFromRegister,
-    informationChangeandHowToUpdateIt,
-  ]
-);
-
-const whereDoIVote = new ContentEaR(
-  "whereDoIVote",
-  "Where Do I Vote",
-  "",
-  `
-    <iframe
-      src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=2c10878d034544718d4ea5c733b03559"
-      style="height: 400px; width: 100%"
-    ></iframe>
-    <p>
-      SERVICE HAS NOT PROVIDED THE LINK FOR 'WHERE DO I VOTE?
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
-  { typeKey: "elections_and_voting_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
-
-const postalVoteNoLongerRequired = new ContentEaR(
-  "postalVoteNoLongerRequired",
-  "Postal Vote No Longer Required",
-  "",
-  `
-    <p>
-      You can cancel your application for a postal vote at any time up to the postal
-      vote application/change deadline. After this time, you can use the postal vote
-      pack and hand it in to any polling station in your ward or the Town Hall. You
-      must complete the whole pack as normal and also complete a postal vote hand
-      delivery form when dropping it off (otherwise it will be rejected).
-    </p>
-    <p>
-      In order to cancel your postal vote, you will need to send a letter to
-      Electoral Services at:
-      <address>
-        Electoral Services<br>
-        Town Hall<br>
-        Sheffield, S1 2HH
-      </address>
-    </p>
-    <p>
-      Or scan a letter and send it via email to:
-      <a href="mailto:electoralservices@sheffield.gov.uk"
-        >electoralservices@sheffield.gov.uk</a
-      >
-    </p>
-    <p>Your letter must include:
-      <ul>
-        <li>Your name</li>
-        <li>Your address</li>
-        <li>Your signature</li>
-        <li>Statement that you wish to cancel your postal vote</li>
-      </ul>
-    </p>
-    <p>
-      We cannot do this over the phone as the request must be made in writing. This
-      is a security and fraud prevention measure.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
-  { typeKey: "elections_and_voting_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
-
-const postalVoteReceivedButNotRequested = new ContentEaR(
-  "postalVoteReceivedButNotRequested",
-  "Postal Vote Received But Not Requested",
-  "What happens if I have received a postal ballot and did not request one or cannot remember requesting one?",
-  `
-    <p>
-      If you have received a postal ballot and did not request one or cannot
-      remember requesting one, you can ask for this to be cancelled, as long as this
-      is before 5pm, 11 working days ahead of an election, or use it and hand it in
-      to any polling station in your ward or at the Town Hall. You must complete a
-      postal vote hand delivery form when you drop it off, otherwise, it will be
-      rejected.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
-  { typeKey: "elections_and_voting_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
-
-const postalVoteSendingAbroad = new ContentEaR(
-  "postalVoteSendingAbroad",
-  "Postal Vote Sending Abroad",
-  "",
-  `
-    <p>
-      Postal votes can be sent abroad, but it is at your own risk. We are unable to
-      send postal votes out until around 2 weeks before polling day. If you are
-      confident that you have enough time to receive the ballot paper and send it
-      back to us before 10pm on polling day, we will be happy to send it anywhere in
-      the world.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
-  { typeKey: "elections_and_voting_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
-
-const spoiltorDamagedPostalVote = new ContentEaR(
-  "spoiltorDamagedPostalVote",
-  "Spoilt or Damaged Postal Vote",
-  "",
-  `
-    <p>
-      We can issue replacement postal vote ballot papers in the event of the
-      original being damaged or a mistake being made on the ballot paper. You can
-      request a replacement for a spoiled/damaged pack immediately. But we will need
-      the whole pack/what is left to be returned to us before we can do this.
-    </p>
-    <p>
-      <strong>In Person:</strong> You need to take the spoilt postal vote pack to
-      the Town Hall – you will need to take ID.
-    </p>
-    <p>
-      <strong>By Post:</strong> You need to put the entire pack into a plain
-      envelope (not either of the envelopes the postal vote came with) with a
-      covering letter explaining the problem and send it to:
-      <address>
-        Electoral Services<br />
-        Town Hall<br />
-        Sheffield, S1 2HH
-      </address>
-    </p>
-    <p>We will then re-issue the ballot by post.</p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
-  { typeKey: "elections_and_voting_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
-
-const localElections = new ContentEaR(
-  "localElections",
-  "Local Elections",
-  "Local elections are held on a four-year cycle. There is an election for the first three years and then no election in the fourth year. In these elections, you are voting to elect Councillors of Sheffield who will represent your views for the ward (area) in which you live. Further info on Councillors can be found using the link below:",
-  `
-    <p>
-      Local elections are held on a four-year cycle. There is an election for the
-      first three years and then no election in the fourth year. In these elections,
-      you are voting to elect Councillors of Sheffield who will represent your views
-      for the ward (area) in which you live. Further info on Councillors can be
-      found using the link below:
-      <a href="https://www.sheffield.gov.uk/councillors" target="_blank"
-        >https://www.sheffield.gov.uk/councillors</a
-      >
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
-  { typeKey: "elections_and_voting_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
-
-const parishElections = new ContentEaR(
-  "parishElections",
-  "Parish Elections",
-  "Parish Councils are separate local authorities to the City Council, with their own elected members. They are wholly contained within the City Council boundary. A parish councillor can stand for election to the City Council and vice versa.",
-  `
-    <p>
-      Parish Councils are separate local authorities to the City Council, with their
-      own elected members. They are wholly contained within the City Council
-      boundary. A parish councillor can stand for election to the City Council and
-      vice versa.
-    </p>
-    <p>
-      Parish elections are held once every four years and usually at the same time
-      as an election to the City Council. There are three parish councils in
-      Sheffield, which are split into smaller parish wards:
-      <ul>
-        <li>Bradfield Parish Council</li>
-        <li>Ecclesfield Parish Council</li>
-        <li>Stocksbridge Town Council</li>
-      </ul>
-    </p>
-    <p>
-      You can only vote at a Parish election if you live within the parish. More
-      details around the Parish Elections can be found here:
-      <a
-        href="https://www.sheffield.gov.uk/home/your-city-council/election-types"
-        target="_blank"
-        >https://www.sheffield.gov.uk/home/your-city-council/election-types</a
-      >
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
-  { typeKey: "elections_and_voting_information_provided" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
+// #region Top Enquiries
 
 const annualCanvas = new ContentEaR(
   "annualCanvas",
   "Annual Canvas",
   "",
   `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
     <p>
       The Electoral Registration Officer (ERO) is required to send a communication 
       to all residential properties. Households are legally obliged to respond to a
@@ -1553,17 +1618,11 @@ const annualCanvas = new ContentEaR(
     </p>
     <p>
       Households can respond to CCA, CCB, or Canvass Forms via the internet at the
-      following website:<a
-        href="https://www.elecreg.co.uk/Sheffield"
-        target="_blank"
-        >www.elecreg.co.uk/Sheffield</a
-      >
+      following website: <ahref="https://www.elecreg.co.uk/Sheffield"target="_blank">www.elecreg.co.uk/Sheffield</a>
     </p>
     <p>Invitations to Register (ITRs) can be completed online at:</p>
     <p>
-      <a href="https://www.gov.uk/register-to-vote" target="_blank"
-        >www.gov.uk/register-to-vote</a
-      >
+      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -1574,7 +1633,36 @@ const annualCanvas = new ContentEaR(
     keywords: [],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/09/2024", name: "Shahzad Athar" }
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const councillors = new ContentEaR(
+  "councillors",
+  "Councillors",
+  "",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      For more information about Sheffield Councillors and their duties, you can
+      visit the official Sheffield City Council page:
+    </p>
+    <p>
+      <a href="https://www.sheffield.gov.uk/councillors" target="_blank">https://www.sheffield.gov.uk/councillors</a>
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
 );
 
 const electionResults = new ContentEaR(
@@ -1582,6 +1670,11 @@ const electionResults = new ContentEaR(
   "Election Results",
   "Where can I find the results of previous elections?",
   `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
     <p>
       SERVICE HAS TO PROVIDE PREVIOUS ELECTION RESULTS
     </p>
@@ -1597,16 +1690,79 @@ const electionResults = new ContentEaR(
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
+const familyTreeorGenealogy = new ContentEaR(
+  "familyTreeorGenealogy",
+  "Family Tree or Genealogy",
+  "",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      The electoral register is compiled for election purposes and is not intended
+      to be used as a tool for searching for lost relatives. Registers are split
+      intot he 6 parliamentary constituencies, then into the wards wihtin those
+      constituencies. Each ward is broken down into the polling district each
+      polling stations serves and then into each street within that district.
+      Properties are then sorted by address order - not by name.
+    </p>
+    <p>
+      Sheffield Archives May be able to offer more support in this area.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
+const wards = new ContentEaR(
+  "wards",
+  "Wards",
+  "",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
+    <p>
+      Sheffield has 28 electoral areas called Wards, and each Ward is represented by
+      3 City Councillors who are elected in local elections. Further information on
+      Wards can be found at the following link: 
+      <a href="https://www.sheffield.gov.uk/home/your-city-council/electoral-wards"target="_blank">https://www.sheffield.gov.uk/home/your-city-council/electoral-wards</a>
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Request",
+    keywords: [],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "25/11/2024", name: "Nathan Smith" }
+);
+
 const whereICanVote = new ContentEaR(
   "whereICanVotes",
   "Where Can I Vote",
   "",
   `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+      </p>
+    </section>
     <h3>Polling Stations</h3>
-    <iframe
-      src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=2c10878d034544718d4ea5c733b03559"
-      style="height: 400px; width: 100%"
-    ></iframe>
+    <iframesrc="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=2c10878d034544718d4ea5c733b03559"style="height: 400px; width: 100%"></iframe>
     <p>
       SERVICE HAS NOwhereICanVoteT PROVIDED THE LINK FOR 'WHERE DO I VOTE?
     </p>
@@ -1622,93 +1778,16 @@ const whereICanVote = new ContentEaR(
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
-const councillors = new ContentEaR(
-  "councillors",
-  "Councillors",
-  "",
-  `
-    <p>
-      For more information about Sheffield Councillors and their duties, you can
-      visit the official Sheffield City Council page:
-    </p>
-    <p>
-      <a href="https://www.sheffield.gov.uk/councillors" target="_blank"
-        >https://www.sheffield.gov.uk/councillors</a
-      >
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
-
-const familyTreeorGenealogy = new ContentEaR(
-  "familyTreeorGenealogy",
-  "Family Tree or Genealogy",
-  "",
-  `
-    <p>
-      The electoral register is compiled for election purposes and is not intended
-      to be used as a tool for searching for lost relatives. Registers are split
-      intot he 6 parliamentary constituencies, then into the wards wihtin those
-      constituencies. Each ward is broken down into the polling district each
-      polling stations serves and then into each street within that district.
-      Properties are then sorted by address order - not by name.
-    </p>
-    <p>Sheffield Archives May be able to offer more support in this area.</p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
-
-const wards = new ContentEaR(
-  "wards",
-  "Wards",
-  "",
-  `
-    <p>
-      Sheffield has 28 electoral areas called Wards, and each Ward is represented by
-      3 City Councillors who are elected in local elections. Further information on
-      Wards can be found at the following link:
-      <a
-        href="https://www.sheffield.gov.uk/home/your-city-council/electoral-wards"
-        target="_blank"
-        >https://www.sheffield.gov.uk/home/your-city-council/electoral-wards</a
-      >
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  {
-    type: "Request",
-    keywords: [],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
-
 const topEnquiries = new MenuEaR("topEnquiries", "Top Enquiries", "", [
   annualCanvas,
-  electionResults,
-  whereICanVote,
   councillors,
+  electionResults,
   familyTreeorGenealogy,
   wards,
+  whereICanVote
 ]);
+
+// #endregion Top Enquiries
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
