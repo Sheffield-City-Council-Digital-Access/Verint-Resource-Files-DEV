@@ -543,8 +543,7 @@ const bidding = new ContentH(
                 First Come First Served
             </summary>
               <p>
-                Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank"
-        >www.sheffieldpropertyshop.org.uk</a>k and follow
+                Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
                 the links from the homepage.
               </p>
               <p>Click ‘Log into my account’.</p>
@@ -699,8 +698,7 @@ const bidding = new ContentH(
         To apply for Social Housing you need to do so via the Property Shop website.
         There are no paper application forms.
       </p>
-      <p>Go online and register on <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank"
-        >www.sheffieldpropertyshop.org.uk</a></p>
+      <p>Go online and register on <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a></p>
       <p>
         Before you can complete an application to join the Housing Register you will
         need to register yourself as a new household on the system.
@@ -1444,7 +1442,7 @@ const acceptableId = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "George Whitehouse" }
 );
 
 const idReferences = new ContentH(
@@ -1521,7 +1519,7 @@ const idReferences = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "George Whitehouse" }
 );
 
 const idFaq = new ContentH(
@@ -1569,7 +1567,7 @@ const idFaq = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "George Whitehouse" }
 );
 
 const movingIn = new ContentH(
@@ -1642,7 +1640,7 @@ const movingIn = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "George Whitehouse" }
 );
 
 const mutualExchanges = new ContentH(
@@ -1876,7 +1874,7 @@ const mutualExchanges = new ContentH(
     keywords: ["rehousing", "rehousing", "rehousign", "rehozing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "George Whitehouse" }
 );
 
 const referencesFAQs = new ContentH(
@@ -2014,7 +2012,7 @@ const referencesFAQs = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "George Whitehouse" }
 );
 
  //#endregion Rehousing ID / References
@@ -2090,7 +2088,7 @@ const allocationsPolicyGuidance = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "George Whitehouse" }
 );
 
 const fosteringAndAdoption = new ContentH(
@@ -2128,7 +2126,7 @@ An e-mail from Social Services will be the normal route to receive confirmation.
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "George Whitehouse" }
 );
 
 const priorityBandingTable = new ContentH(
@@ -2497,7 +2495,7 @@ regardless of their effective date.</p>
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "George Whitehouse" }
 );
 
 const threeOffersDemotedorDisqualified = new ContentH(
@@ -2544,7 +2542,7 @@ If you fail to attend a viewing of a property offered to you within the timescal
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "George Whitehouse" }
 );
 
 const priorities = new ContentH(
@@ -2575,7 +2573,7 @@ const priorities = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "George Whitehouse" }
 );
 
 
@@ -2653,7 +2651,7 @@ const PropertyOffersAndViewings = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "Gee Whitehouse" }
+  { date: "07/22/2024", name: "George Whitehouse" }
 );
 
 
@@ -2882,8 +2880,7 @@ const applicationChanges = new ContentH(
             </summary>
             <div class="details-accordion-content">
               <p>
-                Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank"
-        >www.sheffieldpropertyshop.org.uk</a> and follow
+                Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
                 the links from the homepage.
               </p>
               <p>Click ‘Log into my account’.</p>
@@ -3414,8 +3411,8 @@ const tenancyEnforcementASB = new ContentH(
 <p>Victim Support may support with target hardening.</p>
   </p>`,
   {buttonLabel: "", formName: "" },
-  {typeKey: "example_transfered_to_service" },
-  {typeKey: "example_information_provided" },
+  {typeKey: "" },
+  {typeKey: "" },
   {type: "Request", keywords: [], categories: ["Housing"] },
   {date: "16/10/2024", name: "Omily Parkin" }
   );
@@ -4256,8 +4253,7 @@ const benefitClaim = new ContentH(
           </summary>
           <div class="details-accordion-content">
             <p>
-              Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank"
-        >www.sheffieldpropertyshop.org.uk</a> and follow
+              Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
               the links from the homepage.
             </p>
             <p>Click ‘Log into my account’.</p>
