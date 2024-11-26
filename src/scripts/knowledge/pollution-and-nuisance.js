@@ -2390,13 +2390,290 @@ const abandonedVehicles = new ContentPaN(
   { date: "05/09/2024", name: "Elliott Griffiths" }
 );
 
+const whatIsACleanAirZone = new ContentPaN(
+  "whatIsACleanAirZone",
+  "What Is A Clean Air Zone",
+  "Information relating to the Clean Air Zone Scheme",
+`
+<p>A Clean Air Zone is a defined area of a town or city within which certain vehicles with more polluting engine standards are charged for entering.
+<p>It is not a congestion charging zone and, unlike some other cities, privately owned cars, motorbikes, and mopeds will not be charged.
+<p>The introduction of a Clean Air Zone aims to reduce exposure to nitrogen dioxide produced by road traffic to protect public health in areas where pollution levels exceed the maximum legal level. In Sheffield, this area includes the inner ring road and everything inside it.
+<p>See the Clean Air Zone map which may help when explaining the scheme to customers:</p>
+`,
+{
+  buttonLabel: "",
+  formName: "",
+},
+{ typeKey: "caz_information_requested" },
+{ typeKey: "caz_information_provided" },
+{
+  type: "Information",
+  keywords: [
+    "Clean Air Zone",
+    "caz",
+    "cean air zone",
+    "zon",
+    "cza"],
+  categories: ["Parking", "Pollution and Nuisance",],
+},
+{ date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const whyIsACleanAirZoneBeingIntroduced = new ContentPaN(
+  "whyIsACleanAirZoneBeingIntroduced",
+  "Why Is A Clean Air Zone Being Introduced",
+  "Information relating to why the Clean Air Zone is being introduced",
+
+`
+<p>The implementation of the Category C Clean Air Zone in Sheffield is the result of a legal directive from national government requiring Nitrogen Dioxide (NO2) levels to be reduced to legal levels at locations across Sheffield and Rotherham within the shortest possible time.</p>
+<p>The primary aim of Clean Air Zones is to protect the public from exposure to Nitrogen Dioxide (NO2) emissions from road traffic. Air pollution can permanently damage children's lungs, can cause strokes, lung cancer and cardiovascular disease. Find out the health impacts from air pollution at <a href="https://www.gov.uk/government/publications/health-matters-air-pollution" target="_blank">https://www.gov.uk/government/publications/health-matters-air-pollution</a>.</p>
+<p>A number of other local authorities across the UK have also been legally directed to introduce Clean Air Zones - not only Sheffield.</p>
+<p>We have worked with DEFRA’s Joint Air Quality Unit (JAQU) to form a plan to reduce annual average concentrations of Nitrogen Dioxide (NO2) in Sheffield. The Clean Air Zone is focused around the city center where some of the most polluted locations are, but it will deliver air quality below the legal limit of 40µg/m<sup>3</sup> across the whole of the city.</p>
+`,
+{
+  buttonLabel: "",
+  formName: "",
+},
+{ typeKey: "caz_information_requested" },
+{ typeKey: "caz_information_provided" },
+{
+  type: "Information",
+  keywords: [
+    "Clean Air Zone",
+    "caz",
+    "cean air zone",
+    "zon",
+    "cza"],
+  categories: ["Parking", "Pollution and Nuisance",],
+},
+{ date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const whatVehiclesWillBeCharged = new ContentPaN(
+  "whatVehiclesWillBeCharged",
+  "What vehicles will be charged",
+  "Information relating to which vehicles charged",
+
+`
+<p>Only specific vehicle types with the most polluting engine standards will be charged for entering the Clean Air Zone. Private cars, motorbikes, or mopeds will not be charged for traveling in Sheffield.</p>
+<p>Charges apply to the following vehicle types that do not meet the minimum standards when entering the Clean Air Zone boundary:</p>
+  <ul>
+  <li>Taxis, including both hackney carriages and private hire vehicles, which are below Euro 6 Diesel or Euro 4 Petrol standards</li>
+  <li>Light goods vehicles (LGVs) such as vans, campervans, pickup trucks, and minibuses which are below Euro 6 Diesel or Euro 4 Petrol standards</li>
+  <li>Buses and coaches which are below Euro 6 Diesel standards</li>
+  <li>Heavy goods vehicles (HGVs) which are below Euro 6 Diesel standards</li>
+  </ul>
+  <p>Vehicle owners can check whether they will be charged in Sheffield, and for other Clean Air Zones elsewhere, via the government’s online vehicle checker: Clean Air Zones."</p>
+  `,
+{
+  buttonLabel: "",
+  formName: "",
+},
+{ typeKey: "caz_information_requested" },
+{ typeKey: "caz_information_provided" },
+{
+  type: "Information",
+  keywords: [
+    "Clean Air Zone",
+    "caz",
+    "cean air zone",
+    "zon",
+    "cza"],
+  categories: ["Parking", "Pollution and Nuisance",],
+},
+{ date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const whenWillDriversBeCharged = new ContentPaN(
+  "Whenwilldriversbecharged",
+  "When Will Drivers Be Charged",
+  "Information relating to when drivers will be charged",
+`
+<p>The Clean Air Zone charges in Sheffield will not start until spring 2023.</p>
+`,
+{
+  buttonLabel: "",
+  formName: "",
+},
+{ typeKey: "caz_information_requested" },
+{ typeKey: "caz_information_provided" },
+{
+  type: "Information",
+  keywords: [
+    "Clean Air Zone",
+    "caz",
+    "cean air zone",
+    "zon",
+    "cza"],
+  categories: ["Parking", "Pollution and Nuisance",],
+},
+{ date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const howMuchWillDriversBeCharged = new ContentPaN(
+  "howMuchWillDriversBeCharged",
+  "How much will drivers be charged",
+  "Information relating to how much drivers will be charged",
+
+`
+<p>If your vehicle does not meet the minimum standard, you will have to pay the charge for every day you enter the zone. This would be:</p>
+  <ul>
+  <li>£10 per day for polluting vans/LGVs and Taxis</li>
+  <li>£50 per day for coaches, buses, and lorries/HGVs</li>
+  </ul>
+  `,
+{
+  buttonLabel: "",
+  formName: "",
+},
+{ typeKey: "caz_information_requested" },
+{ typeKey: "caz_information_provided" },
+{
+  type: "Information",
+  keywords: [
+    "Clean Air Zone",
+    "caz",
+    "cean air zone",
+    "zon",
+    "cza"],
+  categories: ["Parking", "Pollution and Nuisance",],
+},
+{ date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const howWillDriversBeCharged = new ContentPaN(
+  "howWillDriversBeCharged",
+  "How will drivers be charged",
+  "Information relating to how drivers will be charged",
+`
+<p>Automatic Number Plate Recognition (ANPR) cameras installed across the city centre will detect non-compliant vehicles entering the Clean Air Zone boundary. Charges apply 24 hours a day, seven days a week. The Clean Air Zone charges at a daily rate, meaning drivers will only need to make one payment a day, regardless of how many times they exit and re-enter.</p>
+`,
+{
+  buttonLabel: "",
+  formName: "",
+},
+{ typeKey: "caz_information_requested" },
+{ typeKey: "caz_information_provided" },
+{
+  type: "Information",
+  keywords: [
+    "Clean Air Zone",
+    "caz",
+    "cean air zone",
+    "zon",
+    "cza"],
+  categories: ["Parking", "Pollution and Nuisance",],
+},
+{ date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const howAreChargesPaid = new ContentPaN(
+  "howAreChargesPaid",
+  "How are charges paid",
+  "Information relating to how charges are paid",
+`
+<p>Charges will need to be paid online via central government’s online Clean Air Zone payment portal. Payment can be made ahead of entering the zone. Charges must be paid within 7 days of entering the Clean Air Zone. If payments are not made within 7 days additional penalty charges may apply. The link to the payment portal will not be live until the Clean Air Zone is launched.</p>
+<p>It will be the responsibility of drivers to go online and make payment. No notifications are issued to drivers.</p>
+`,
+{
+  buttonLabel: "",
+  formName: "",
+},
+{ typeKey: "caz_information_requested" },
+{ typeKey: "caz_information_provided" },
+{
+  type: "Information",
+  keywords: [
+    "Clean Air Zone",
+    "caz",
+    "cean air zone",
+    "zon",
+    "cza"],
+  categories: ["Parking", "Pollution and Nuisance"],
+},
+{ date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const howLongWillTheCleanAirZoneBeInPlace = new ContentPaN(
+  "howLongWillTheCleanAirZoneBeInPlace",
+  "How long will the Clean Air Zone be in place",
+  "Information relating to how long the Clean Air Zone will be in place",
+`
+<p>The Clean Air Zone will be in place in Sheffield until the city can provide evidence to the Department for Environment, Food & Rural Affairs (Defra) that it has met and can maintain for a minimum of two years the reduced legal levels of Nitrogen Dioxide (NO2) required. There will be significant monitoring and evaluation of the CAZ to determine this.</p>
+<h3>What support will there be for those affected</h3>
+<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.</p>
+`,
+{
+  buttonLabel: "",
+  formName: "",
+},
+{ typeKey: "caz_information_requested" },
+{ typeKey: "caz_information_provided" },
+{
+  type: "Information",
+  keywords: [
+    "Clean Air Zone",
+    "caz",
+    "cean air zone",
+    "zon",
+    "cza"],
+  categories: ["Parking", "Pollution and Nuisance"],
+},
+{ date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const whatSupportWillThereBeForThoseAffected = new ContentPaN(
+  "whatSupportWillThereBeForThoseAffected",
+  "What support will there be for those affected",
+  "Information relating to support for those affected",
+`
+<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.</p>
+`,
+{
+  buttonLabel: "",
+  formName: "",
+},
+{ typeKey: "caz_information_requested" },
+{ typeKey: "caz_information_provided" },
+{
+  type: "Information",
+  keywords: [
+    "Clean Air Zone",
+    "caz",
+    "cean air zone",
+    "zon",
+    "cza"],
+  categories: ["Parking", "Pollution and Nuisance"],
+},
+{ date: "06/11/2024", name: "Dinah Williams" }
+);
+
+
+const cleanAirZone = new MenuPaN(
+  "cleanAirZone",
+  "Clean Air Zone",
+  "Information about the Clean Air Zone Scheme",
+  [ whatIsACleanAirZone,
+    whyIsACleanAirZoneBeingIntroduced,
+    whatVehiclesWillBeCharged,
+    whenWillDriversBeCharged,
+    howMuchWillDriversBeCharged,
+    howWillDriversBeCharged,
+    howAreChargesPaid,
+    howLongWillTheCleanAirZoneBeInPlace,
+    whatSupportWillThereBeForThoseAffected
+  ]
+);
+
+
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const pollutionAndNuisance = new ServicePaN(
   "pollutionAndNuisance",
   "Pollution and Nuisance",
-  `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour…`,
+  `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone`,
   [
     abandonedVehicles,
     pestControl,
@@ -2406,5 +2683,6 @@ const pollutionAndNuisance = new ServicePaN(
     reportFlyPosting,
     reportFlyTipping,
     reportNeedlesGlass,
+    cleanAirZone
   ]
 );
