@@ -157,7 +157,7 @@ const fundedEarlyLearning = new ContentSaC(
     ],
     categories: ["School and Childcare"],
   },
-  { date: "17/09/2024", name: "Gee Whitehouse" }
+  { date: "26/11/2024", name: "Nathan Smith" }
 );
 
 const freeSchoolMeals = new ContentSaC(
