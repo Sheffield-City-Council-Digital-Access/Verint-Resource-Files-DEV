@@ -66,8 +66,8 @@ const applyBlueBadge = new ContentP(
 		</p>
 		<h3>Automatically Qualify</h3>
 		<p>
-			The customer will automatically qualify for a blue badge if they meets the
-			following criteria and have the relevent evidence:
+			The customer will automatically qualify for a blue badge if they meet the
+			following criteria and have the relevant evidence:
 		</p>
 		<ul>
 			<li>
@@ -128,7 +128,7 @@ const applyBlueBadge = new ContentP(
   { typeKey: "blue_badge_information_provided" },
   { typeKey: "blue_badge_tarnsferred_to_service" },
   { type: "Request", keywords: [], categories: ["Parking"] },
-  { date: "01/10/2024", name: "Shahzad Athar" }
+  { date: "12/11/2024", name: "Andy Walker" }
 );
 
 const replacementBlueBadge = new ContentP(
@@ -144,7 +144,7 @@ const replacementBlueBadge = new ContentP(
 		<h3>Badges seized by an enforcement officer</h3>
 		<p>
 			If your Blue Badge has been confiscated by an Enforcement Officer,
-			you will nee to:
+			you will need to:
 		</p>
 		<p>
 			Send an e-mail to
@@ -175,7 +175,7 @@ const replacementBlueBadge = new ContentP(
   { typeKey: "blue_badge_information_provided" },
   { typeKey: "blue_badge_tarnsferred_to_service" },
   { type: "Request", keywords: [], categories: ["Parking"] },
-  { date: "01/10/2024", name: "Shahzad Athar" }
+  { date: "12/11/2024", name: "Andy Walker" }
 );
 
 const appealBlueBadge = new ContentP(
@@ -435,7 +435,7 @@ const organisationCarer = new ContentP(
 		<p>£10 each for 12 months.</p>
 		<h3>Evidence Required</h3>
 		<p>
-			The organisation should apply not an individual and provide the following
+			The organisation should apply and not an individual and provide the following
 			information:
 		</p>
 		<ul>
@@ -471,7 +471,7 @@ const organisationCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "12/11/2024", name: "Andy Walker" }
 );
 
 const medicalProfessionalCarer = new ContentP(
@@ -1404,12 +1404,12 @@ const multiplepcns = new ContentP(
   `
     <p>
       Challenges can be made online within 28 days of receiving the original
-      ticket. It can take up to 24 hours to appear on online portal.
+      ticket. It can take up to 24 hours to appear on the online portal.
     </p>
     <p>
       Documentation can be uploaded to support the challenge, the online link also
       enables the motorist to use an interactive portal to guide them through their
-      appeal and evidence can be viewed (e.g photos of the contravention)
+      appeal and the evidence can be viewed (e.g photos of the contravention)
     </p>
     <p>
       Do not discuss any possible outcomes or give your opinions. Parking services
@@ -1442,7 +1442,7 @@ const multiplepcns = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "12/11/2024", name: "Andy Walker" }
 );
 
 const howLongDoIHaveToAppeal = new ContentP(
@@ -1457,7 +1457,7 @@ const howLongDoIHaveToAppeal = new ContentP(
     </p>
     <p>
       General information relating to the PCN Enforcement is available on the
-      <a href="http://www.patrol-uk.info">www.patrol-uk.info</a>.
+      <a href="http://www.patrol-uk.info">http://www.patrol-uk.info</a>.
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -1486,7 +1486,7 @@ const howLongDoIHaveToAppeal = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "12/11/2024", name: "Andy Walker" }
 );
 
 const enforcementbaliffenquiries = new ContentP(
@@ -1546,7 +1546,7 @@ const enforcementbaliffenquiries = new ContentP(
 
 const illegalParking = new ContentP(
   "illegalParking",
-  "Ilegal Parking",
+  "Illegal Parking",
   "",
   `
     <p>
@@ -1590,7 +1590,7 @@ const illegalParking = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "12/11/2024", name: "Andy walker" }
 );
 
 const vehicleObstruction = new ContentP(
@@ -1606,7 +1606,7 @@ const vehicleObstruction = new ContentP(
     <ul>
       <li>Blocking the footpath</li>
       <li>
-        Parked on a bend or at a junction creating a safety hazard other users
+        Parked on a bend or at a junction creating a safety hazard for other users
       </li>
       <li>
         The Police are responsible for enforcement action against vehicle
@@ -1646,7 +1646,7 @@ const vehicleObstruction = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "12/11/2024", name: "Andy Walker" }
 );
 
 const carParkParkingMeterProblem = new ContentP(
