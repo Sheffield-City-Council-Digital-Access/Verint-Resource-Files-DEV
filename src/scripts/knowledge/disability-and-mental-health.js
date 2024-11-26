@@ -321,6 +321,24 @@ const specialistClubs = new ContentDaMH(
   { date: "27/09/2024", name: "Dinah Williams" }
 );
 
+const cityWideCareAlarms = new ContentDaMH(
+  "cityWideCareAlarms",
+  "City Wide Care Alarms",
+  "Description",
+  `
+    
+  `,
+  { buttonLabel: "Apply City Wide Care Alarms", formName: "City_Wide_Care_Alarms" },
+  { typeKey: "city_wide_care_alarm_information_to_service" },
+  { typeKey: "city_wide_care_alarm_information_provided" },
+  {
+    type: "Apply",
+    keywords: ['City Wide Care Alarms','City Wde Care Alarms', 'City Wide Car Alarms', 'Cty Wide Care Alarms', 'City Wide Care Alrms', 'City Wide Care Alarms'],
+    categories: ["Disability and Mental Health"],
+  },
+  { date: "13/11/2024", name: "Gee Whitehouse" }
+);
+
 const shortBreaks = new MenuDaMH(
   "shortBreaks",
   "Short Breaks Services",
@@ -343,5 +361,5 @@ const disabilityAndMentalHealth = new ServiceDaMH(
   "disabilityAndMentalHealth",
   "Disability and Mental Health",
   `Help and support, travel and transport, equipment, children with disabilities, care and carers, mental health services…`,
-  [shortBreaks]
+  [shortBreaks,cityWideCareAlarms]
 );
