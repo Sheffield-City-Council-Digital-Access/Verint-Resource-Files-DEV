@@ -122,9 +122,13 @@ const fundedEarlyLearning = new ContentSaC(
       From September 2025: <br />Eligible working parents of children from 9 months
       to school age will be entitled to 30 hours of childcare a week.
     </p>
+    <p>
+      If the customer would like to raise an enquiry for information that is not provided here, transfer
+      them to Family HUBs Service on: <a href="tel:0114 273 5665">0114 273 5665</a>0114 273 5665
+    </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
+  { typeKey: "funded_early_learning_transferred_to_service" },
   { typeKey: "funded_early_learning_information_provided" },
   {
     type: "Apply",
