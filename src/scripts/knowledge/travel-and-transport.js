@@ -64,6 +64,9 @@ const childTravelPass = new ContentTaT(
       <p>
         This could affect the distance your child travels to school so please 
         check your eligibility before you apply for a new Children's Travel Pass.
+        <br>
+        <br>
+        Applications should be made to the Council where you live and not where the school is
       </p>
     </section>
     <p>
