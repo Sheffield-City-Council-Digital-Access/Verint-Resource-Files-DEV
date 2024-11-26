@@ -59,7 +59,7 @@ const fleasTreatment = new ContentPaN(
   "Flea Treatment",
   "Information about fleas",
   `
-    <h3>Cost for Fleas Treatment</h3>
+    <h3>Cost for Flea Treatment</h3>
     <p>The treatment cost for Fleas is <strong>£132.00</strong>.</p>
     <p>
       This charge is based on a standard size of a 3 bed semi-detached property. If
@@ -154,7 +154,7 @@ const fleasTreatment = new ContentPaN(
     keywords: ["Flea"],
     categories: ["Pollution and Nuisance", "Environmental", "Pest Constrol"],
   },
-  { date: "10/10/2024", name: "Elliott Griffiths" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const badgerProtection = new ContentPaN(
@@ -164,8 +164,8 @@ const badgerProtection = new ContentPaN(
   `
     <p>
       The Protection of Badgers Act 1992 makes it illegal for any person to kill,
-      injure or take a Badger. It is also an offence to cruelly ill-treat a Badger,
-      to dig for or to snare a Badger.
+      injure or take a Badger. It is also an offence to cruelly ill-treat a badger,
+      to dig for or to snare a badger.
     </p>
     <p>
       Under the 1992 Act it is now illegal to damage a badger sett or cause a dog to
@@ -181,13 +181,9 @@ const badgerProtection = new ContentPaN(
       confiscate any dogs used in offences against Badgers and disqualify the
       offender from owning a dog.
     </p>
-    <p>
-      For more information, please visit <a
-        href="http://www.syorksbadgergroup.org.uk"
-        target="_blank"
-      ></a
-      >. 
-    </p>
+<p>
+  For more information, please visit <a href="http://www.syorksbadgergroup.org.uk" target="_blank">http://www.syorksbadgergroup.org.uk</a>.
+</p>
   `,
   {
     buttonLabel: "",
@@ -204,10 +200,10 @@ const badgerProtection = new ContentPaN(
       "Pest Control",
       "Wildlife",
       "Conservation",
-      "Law"
+      "Law",
     ],
   },
-  { date: "07/10/2024", name: "Elliott Griffiths" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const batProtectionBritain = new ContentPaN(
@@ -247,7 +243,7 @@ const batProtectionBritain = new ContentPaN(
       "Pest Control",
       "Wildlife",
       "Conservation",
-      "Law"
+      "Law",
     ],
   },
   { date: "07/10/2024", name: "Elliott Griffiths" }
@@ -352,7 +348,7 @@ const bedBugTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "07/10/2024", name: "Elliott Griffiths" }
@@ -361,7 +357,7 @@ const bedBugTreatment = new ContentPaN(
 const birdsandPigeonsTreatment = new ContentPaN(
   "birdsandPigeonsTreatment",
   "Birds and Pigeons Treatment",
-  "Information about birds and Pigeons Treatment",
+  "Information about birds and Pigeon's Treatment",
   `
     <details class="accordion">
       <summary class="accordion-header">
@@ -370,7 +366,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
       </summary>
       <div class="accordion-content">
         <p>
-          For bird and pegions treatment enquiries related to Commercial, Health
+          For bird and pigeons treatment enquiries related to Commercial, Health
           Authority, Industrial, and University properties, please email your
           request to
           <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
@@ -407,10 +403,10 @@ const birdsandPigeonsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
-  { date: "09/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const biscuitBeetlesTreatment = new ContentPaN(
@@ -422,7 +418,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
       <h3>Sample Required</h3>
       <p>
         Before we can provide treatment for Biscuit Beetles in your domestic property
-        such as Council House, Housing Association or Privated Rented, we
+        such as Council House, Housing Association or Private Rented, we
         will need a sample of the pest.
       </p>
       <p>You can either bring your sample to:</p>
@@ -450,13 +446,13 @@ const biscuitBeetlesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Biscuit Beetle treatment is £110.00. This is based on a standard size
+      The cost for Biscuit Beetle treatment is £110.00. This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50.00:
+      reduced to £69.50:
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -513,10 +509,10 @@ const biscuitBeetlesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
-  { date: "09/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const bumbleBeesTreatment = new ContentPaN(
@@ -527,12 +523,12 @@ const bumbleBeesTreatment = new ContentPaN(
     <h3>Cost for Treatment</h3>
     <p>
       If the pests located in a communal area (The area that is shared by multiple Council Housing properties) or 
-      required treatment for a demestic properties such as Council Housing, Housing Association, Private Owned, Private Rented,
+      required treatment for a domestic properties such as Council Housing, Housing Association, Privately Owned, Private Rented,
       then the treatment cost for Bumble Bees is £75.50.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58:00.
+      reduced to £58.00.
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -566,7 +562,7 @@ const bumbleBeesTreatment = new ContentPaN(
       </summary>
       <div class="accordion-content">
         <p>
-          For Bumble Bees treatment enquiries related to Commercial and House in Multiple Occuption, 
+          For Bumble Bees treatment enquiries related to Commercial and Houses in Multiple Occuption, 
           please email your request to
           <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
             >EnvironmentalServicesAdmin@sheffield.gov.uk</a
@@ -602,10 +598,10 @@ const bumbleBeesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
-  { date: "09/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const carpetBeetlesTreatment = new ContentPaN(
@@ -617,7 +613,7 @@ const carpetBeetlesTreatment = new ContentPaN(
       <h3>Sample Required</h3>
       <p>
         Before we can provide treatment for Carpet Beetles in your domestic property
-        such as Council House, Housing Association or Privated Rented, we
+        such as Council House, Housing Association or Private Rented, we
         will need a sample of the pest.
       </p>
       <p>You can either bring your sample to:</p>
@@ -648,15 +644,15 @@ const carpetBeetlesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      If the pests located in a communal area (The area that is shared by multiple Council Housing properties) or 
-      required treatment for a demestic properties such as Council Housing, Housing Association, Private Owned, Private Rented,
+      If the pests are located in a communal area (The area that is shared by multiple Council Housing properties) or 
+      required treatment for a domestic properties such as Council Housing, Housing Association, Private Owned, Private Rented,
       then the treatment cost for Carpet Beetles is £132.00.
       This charge is based on a standard size of a 3-bed semi-detached property. 
       If the property is bigger than this, please escalate the enquiry so a quote can be provided.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58:00.
+      reduced to £58.00.
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -713,10 +709,10 @@ const carpetBeetlesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
-  { date: "09/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const ratTreatment = new ContentPaN(
@@ -751,8 +747,8 @@ const ratTreatment = new ContentPaN(
       </summary>
       <div class="accordion-content">
         <p>
-          If the rats are in a communal area (an area shared by multiple Chouncil
-          Housing tenenats), 
+          If the rats are in a communal area (an area shared by multiple Council
+          Housing tenants), 
           <a href="${window.location.protocol}//${
     window.location.hostname
   }/form/launch/hou_estates_enquiry?${
@@ -808,21 +804,21 @@ const ratTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
-  { date: "07/10/2024", name: "Elliott Griffiths" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const clusterFilesTreatment = new ContentPaN(
   "clusterFilesTreatment",
   "Cluster Files Treatment",
-  "Information about Cluster Files treatment and services",
+  "Information about Cluster Flies treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
       <p>
-        Before we can provide treatment for Cluster Files in your domestic property, we
+        Before we can provide treatment for Cluster Flies in your domestic property, we
         will need a sample of the pest.
       </p>
       <p>You can either bring your sample to:</p>
@@ -887,10 +883,10 @@ const clusterFilesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
-  { date: "10/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const cockroachesProtection = new ContentPaN(
@@ -938,7 +934,7 @@ const cockroachesProtection = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £97:00:
+      reduced to £97.00:
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -966,21 +962,21 @@ const cockroachesProtection = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
-  { date: "10/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const cricketsTreatment = new ContentPaN(
   "cricketsTreatment",
-  "crickets Treatment",
+  "Crickets Treatment",
   "Information about Crickets Treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
       <p>
-        Before we can provide treatment for Crickets in your domestic property, we
+        Before we can provide treatment for crickets in your domestic property, we
         will need a sample of the pest.
       </p>
       <p>You can either bring your sample to:</p>
@@ -1011,7 +1007,7 @@ const cricketsTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The Treatment cost for Crickets is £110.00. This is based on a standard size
+      The treatment cost for crickets is £110.00. This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
@@ -1045,10 +1041,10 @@ const cricketsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
-  { date: "10/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const dermestesBeetlesTreatment = new ContentPaN(
@@ -1124,7 +1120,7 @@ const dermestesBeetlesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -1203,7 +1199,7 @@ const filesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -1232,7 +1228,7 @@ const foxesInformation = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -1262,7 +1258,7 @@ const FrogsorFrogspawn = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -1341,7 +1337,7 @@ const furBeetlesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "10/10/2024", name: "Shahzad Athar" }
@@ -1361,7 +1357,7 @@ const gardenAntsTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58:00:
+      reduced to £58.00:
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1389,21 +1385,21 @@ const gardenAntsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
-  { date: "10/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const ladyBirdsTreatment = new ContentPaN(
   "ladyBirdsTreatment",
-  "Lady Birds Treatment",
-  "Information about Lady Birds Treatment and services",
+  "Ladybirds Treatment",
+  "Information about Ladybird Treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Lady Birds is £110:00. This is based on a standard size
+      The treatment cost for Ladybirds is £110.00. This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
@@ -1432,15 +1428,15 @@ const ladyBirdsTreatment = new ContentPaN(
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Lady Birds", "Treatment", "Pests", "Vermin"],
+    keywords: ["Ladybirds", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
-  { date: "10/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const masonryBeesTreatment = new ContentPaN(
@@ -1457,7 +1453,7 @@ const masonryBeesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58:00:
+      reduced to £58.00:
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1468,15 +1464,15 @@ const masonryBeesTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-    If there is more than one nest, a charge of £39.00 per addition nest will be applied.
+    If there is more than one nest, a charge of £39.00 per additional nest will be applied.
     </p>
     <h3>Nests Up High</h3>
     <p>
     Officers carry equipment that enables them to treat a nest located at height.<br>
     In most cases the officer will be able to carry out a successful treatment using such equipment.<br>
     If any further access equipment is required to treat the nest our officer will inform you of this at the time of the visit. 
-    If further access is equipment is required, then it would possibly mean an added cost.<br>
-    If your customer is unsure about the possible additional cost, escalate pest control enquiry and an officer will contact the customer about it.
+    If further access equipment is required, then it would possibly mean an added cost.<br>
+    If your customer is unsure about the possible additional cost, escalate the pest control enquiry and an officer will contact the customer about it.
     </p>
     <p>
       <strong>All prices include a call-out fee of £39. This fee applies if our officer
@@ -1499,7 +1495,7 @@ const masonryBeesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "10/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const miceTreatment = new ContentPaN(
@@ -1517,7 +1513,7 @@ const miceTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58:00:
+      reduced to £58.00:
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1549,10 +1545,10 @@ const miceTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
-  { date: "11/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const mitesTreatment = new ContentPaN(
@@ -1563,7 +1559,7 @@ const mitesTreatment = new ContentPaN(
     <section class="info-panel" role="region" aria-label="Information panel">
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for the Mites is £110.00. This is based on a standard size
+      The treatment cost for Mites is £110.00. This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
@@ -1597,10 +1593,10 @@ const mitesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
-  { date: "11/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const mothsTreatment = new ContentPaN(
@@ -1676,7 +1672,7 @@ const mothsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -1684,19 +1680,19 @@ const mothsTreatment = new ContentPaN(
 
 const pharoahAntsTreatment = new ContentPaN(
   "pharoahAntsTreatment",
-  "Pharoah Ants Treatment",
-  "Information about Pharoah Ants Treatment and services",
+  "Pharaoh Ants Treatment",
+  "Information about Pharaoh Ants Treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for the Pharoah Ants is £330.00. This is based on a standard size
+      The treatment cost for the Pharaoh Ants is £330.00. This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £97:00:
+      reduced to £97.00:
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1712,22 +1708,22 @@ const pharoahAntsTreatment = new ContentPaN(
     </p>
   `,
   {
-    buttonLabel: "Book treatment for Pharoah Ants",
+    buttonLabel: "Book treatment for Pharaoh Ants",
     formName: "pest_control_treatment",
   },
   { typeKey: "pest_control_transfer_to_service" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Pharoah Ants", "Treatment", "Pests", "Vermin"],
+    keywords: ["Pharaoh Ants", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
-  { date: "11/10/2024", name: "Shahzad Athar" }
+  { date: "11/11/2024", name: "Andy Walker" }
 );
 
 const psocidsTreatment = new ContentPaN(
@@ -1803,7 +1799,7 @@ const psocidsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -1882,7 +1878,7 @@ const redSpiderMitesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -1961,7 +1957,7 @@ const sewageFliesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -2010,7 +2006,7 @@ const silverFishTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -2036,7 +2032,7 @@ const spiderBeetlesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -2062,7 +2058,7 @@ const squirrelsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -2088,7 +2084,7 @@ const waspsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -2114,7 +2110,7 @@ const weevilsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
@@ -2210,7 +2206,7 @@ const pestControl = new MenuPaN(
     waspsTreatment,
     weevilsTreatment,
     woodliceTreatment,
-    noneoftheAbove
+    noneoftheAbove,
   ]
 );
 
@@ -2387,297 +2383,12 @@ const abandonedVehicles = new ContentPaN(
       "vechicle",
       "vehcile",
       "vehical",
-      "vehilce"
+      "vehilce",
     ],
     categories: ["Pollution and Nuisance", "Waste Management"],
   },
   { date: "05/09/2024", name: "Elliott Griffiths" }
 );
-
-const whatIsACleanAirZone = new ContentPaN(
-  "whatIsACleanAirZone",
-  "What Is A Clean Air Zone",
-  "Information relating to the Clean Air Zone Scheme",
-`
-<p>A Clean Air Zone is a defined area of a town or city within which certain vehicles with more polluting engine standards are charged for entering.
-<p>It is not a congestion charging zone and, unlike some other cities, privately owned cars, motorbikes, and mopeds will not be charged.
-<p>The introduction of a Clean Air Zone aims to reduce exposure to nitrogen dioxide produced by road traffic to protect public health in areas where pollution levels exceed the maximum legal level. In Sheffield, this area includes the inner ring road and everything inside it.
-<p>See the Clean Air Zone map which may help when explaining the scheme to customers:</p>
-
-`,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance",],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const whyIsACleanAirZoneBeingIntroduced = new ContentPaN(
-  "whyIsACleanAirZoneBeingIntroduced",
-  "Why Is A Clean Air Zone Being Introduced",
-  "Information relating to why the Clean Air Zone is being introduced",
-
-`
-<p>The implementation of the Category C Clean Air Zone in Sheffield is the result of a legal directive from national government requiring Nitrogen Dioxide (NO2) levels to be reduced to legal levels at locations across Sheffield and Rotherham within the shortest possible time.</p>
-<p>The primary aim of Clean Air Zones is to protect the public from exposure to Nitrogen Dioxide (NO2) emissions from road traffic. Air pollution can permanently damage children's lungs, can cause strokes, lung cancer and cardiovascular disease. Find out the health impacts from air pollution at <a href="https://www.gov.uk/government/publications/health-matters-air-pollution" target="_blank">https://www.gov.uk/government/publications/health-matters-air-pollution</a>.</p>
-<p>A number of other local authorities across the UK have also been legally directed to introduce Clean Air Zones - not only Sheffield.</p>
-<p>We have worked with DEFRA’s Joint Air Quality Unit (JAQU) to form a plan to reduce annual average concentrations of Nitrogen Dioxide (NO2) in Sheffield. The Clean Air Zone is focused around the city center where some of the most polluted locations are, but it will deliver air quality below the legal limit of 40µg/m<sup>3</sup> across the whole of the city.</p>
-`,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance",],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const whatVehiclesWillBeCharged = new ContentPaN(
-  "whatVehiclesWillBeCharged",
-  "What vehicles will be charged",
-  "Information relating to which vehicles charged",
-
-`
-<p>Only specific vehicle types with the most polluting engine standards will be charged for entering the Clean Air Zone. Private cars, motorbikes, or mopeds will not be charged for traveling in Sheffield.</p>
-<p>Charges apply to the following vehicle types that do not meet the minimum standards when entering the Clean Air Zone boundary:</p>
-
-  <ul>
-  <li>Taxis, including both hackney carriages and private hire vehicles, which are below Euro 6 Diesel or Euro 4 Petrol standards</li>
-  <li>Light goods vehicles (LGVs) such as vans, campervans, pickup trucks, and minibuses which are below Euro 6 Diesel or Euro 4 Petrol standards</li>
-  <li>Buses and coaches which are below Euro 6 Diesel standards</li>
-  <li>Heavy goods vehicles (HGVs) which are below Euro 6 Diesel standards</li>
-  </ul>
-
-  <p>Vehicle owners can check whether they will be charged in Sheffield, and for other Clean Air Zones elsewhere, via the government’s online vehicle checker: Clean Air Zones."</p>
-  `,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance",],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const whenWillDriversBeCharged = new ContentPaN(
-  "Whenwilldriversbecharged",
-  "When Will Drivers Be Charged",
-  "Information relating to when drivers will be charged",
-`
-<p>The Clean Air Zone charges in Sheffield will not start until spring 2023.</p>
-`,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance",],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const howMuchWillDriversBeCharged = new ContentPaN(
-  "howMuchWillDriversBeCharged",
-  "How much will drivers be charged",
-  "Information relating to how much drivers will be charged",
-
-`
-<p>If your vehicle does not meet the minimum standard, you will have to pay the charge for every day you enter the zone. This would be:</p>
-  <ul>
-  <li>£10 per day for polluting vans/LGVs and Taxis</li>
-  <li>£50 per day for coaches, buses, and lorries/HGVs</li>
-  </ul>
-
-  `,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance",],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const howWillDriversBeCharged = new ContentPaN(
-  "howWillDriversBeCharged",
-  "How will drivers be charged",
-  "Information relating to how drivers will be charged",
-`
-<p>Automatic Number Plate Recognition (ANPR) cameras installed across the city centre will detect non-compliant vehicles entering the Clean Air Zone boundary. Charges apply 24 hours a day, seven days a week. The Clean Air Zone charges at a daily rate, meaning drivers will only need to make one payment a day, regardless of how many times they exit and re-enter.</p>
-
-`,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance",],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const howAreChargesPaid = new ContentPaN(
-  "howAreChargesPaid",
-  "How are charges paid",
-  "Information relating to how charges are paid",
-`
-<p>Charges will need to be paid online via central government’s online Clean Air Zone payment portal. Payment can be made ahead of entering the zone. Charges must be paid within 7 days of entering the Clean Air Zone. If payments are not made within 7 days additional penalty charges may apply. The link to the payment portal will not be live until the Clean Air Zone is launched.</p>
-<p>It will be the responsibility of drivers to go online and make payment. No notifications are issued to drivers.</p>
-
-`,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance"],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const howLongWillTheCleanAirZoneBeInPlace = new ContentPaN(
-  "howLongWillTheCleanAirZoneBeInPlace",
-  "How long will the Clean Air Zone be in place",
-  "Information relating to how long the Clean Air Zone will be in place",
-`
-<p>The Clean Air Zone will be in place in Sheffield until the city can provide evidence to the Department for Environment, Food & Rural Affairs (Defra) that it has met and can maintain for a minimum of two years the reduced legal levels of Nitrogen Dioxide (NO2) required. There will be significant monitoring and evaluation of the CAZ to determine this.</p>
-
-<h3>What support will there be for those affected</h3>
-<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.</p>
-
-`,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance"],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const whatSupportWillThereBeForThoseAffected = new ContentPaN(
-  "whatSupportWillThereBeForThoseAffected",
-  "What support will there be for those affected",
-  "Information relating to support for those affected",
-`
-<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.</p>
-
-`,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance"],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
-
-
-const cleanAirZone = new MenuPaN(
-  "cleanAirZone",
-  "Clean Air Zone",
-  "Information about the Clean Air Zone Scheme",
-  [ whatIsACleanAirZone,
-    whyIsACleanAirZoneBeingIntroduced,
-    whatVehiclesWillBeCharged,
-    whenWillDriversBeCharged,
-    howMuchWillDriversBeCharged,
-    howWillDriversBeCharged,
-    howAreChargesPaid,
-    howLongWillTheCleanAirZoneBeInPlace,
-    whatSupportWillThereBeForThoseAffected
-  ]
-);
-
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -2685,7 +2396,7 @@ const cleanAirZone = new MenuPaN(
 const pollutionAndNuisance = new ServicePaN(
   "pollutionAndNuisance",
   "Pollution and Nuisance",
-  `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone`,
+  `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour…`,
   [
     abandonedVehicles,
     pestControl,
@@ -2695,6 +2406,5 @@ const pollutionAndNuisance = new ServicePaN(
     reportFlyPosting,
     reportFlyTipping,
     reportNeedlesGlass,
-    cleanAirZone
   ]
 );
