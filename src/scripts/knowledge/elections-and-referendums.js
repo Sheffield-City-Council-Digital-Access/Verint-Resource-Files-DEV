@@ -92,7 +92,18 @@ const canvassForm = new ContentEaR(
   { typeKey: "annual_canvass_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "canvass"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -134,7 +145,20 @@ const ccaCCBorCanvassForms = new ContentEaR(
   { typeKey: "annual_canvass_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "CCA", 
+      "CCB",
+      "Canvass"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -189,7 +213,19 @@ const ccaCCBForms = new ContentEaR(
   { typeKey: "annual_canvass_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "CCB",
+      "cca"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -223,7 +259,20 @@ const informationChangeandHowToUpdateIt = new ContentEaR(
   { typeKey: "annual_canvass_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "CCA", 
+      "CCB",
+      "Canvass"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -256,7 +305,20 @@ const lostCCACCBorCanvassForm = new ContentEaR(
   { typeKey: "annual_canvass_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "CCA", 
+      "CCB",
+      "Canvass"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -295,7 +357,26 @@ const removalFromRegister = new ContentEaR(
   { typeKey: "annual_canvass_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "death",
+      "died",
+      "ded",
+      "dea",
+      "remove",
+      "removal",
+      "reg",
+      "register",
+      "dead"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -329,7 +410,18 @@ const studentVoters = new ContentEaR(
   { typeKey: "annual_canvass_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "student"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -386,7 +478,17 @@ const assistanceForPartiallySightedVoters = new ContentEaR(
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "blind",
+      "sight",
+      "vote",
+      "voters",
+      "voting",
+      "disabled"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -411,7 +513,15 @@ const howToCompletePostalVote = new ContentEaR(
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "post",
+      "vote",
+      "voting",
+      "voters"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/09/2024", name: "Shahzad Athar" }
@@ -441,7 +551,21 @@ const localElections = new ContentEaR(
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "post",
+      "postal",
+      "loc",
+      "loca"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -484,7 +608,19 @@ const parishElections = new ContentEaR(
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "paris",
+      "pari"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -568,7 +704,19 @@ const postalVoteReceivedButNotRequested = new ContentEaR(
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "post",
+      "postal"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -597,7 +745,17 @@ const postalVoteSendingAbroad = new ContentEaR(
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -640,7 +798,19 @@ const spoiltorDamagedPostalVote = new ContentEaR(
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "post",
+      "postal"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -669,7 +839,20 @@ const whereDoIVote = new ContentEaR(
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "CCA", 
+      "CCB",
+      "Canvass"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/09/2024", name: "Shahzad Athar" }
@@ -726,7 +909,16 @@ const applyingForPostalVote = new ContentEaR(
   { typeKey: "postal_or_proxy_voting_infomation_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "post",
+      "postal",
+      "vote",
+      "voting",
+      "voters"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -760,7 +952,18 @@ const postalProxyVote = new ContentEaR(
   { typeKey: "postal_or_proxy_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "post",
+      "postal",
+      "vote",
+      "voting",
+      "voters",
+      "prox",
+      "proxy"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -792,7 +995,16 @@ const postalVoteNotReceivedorLost = new ContentEaR(
   { typeKey: "postal_or_proxy_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "post",
+      "postal",
+      "vote",
+      "voting",
+      "voters",
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -829,7 +1041,16 @@ const requestproxyVote = new ContentEaR(
   { typeKey: "postal_or_proxy_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -861,7 +1082,18 @@ const swappingFromPostalToProxyVoting = new ContentEaR(
   { typeKey: "postal_or_proxy_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -894,7 +1126,18 @@ const swappingFromProxyToPostalVoting = new ContentEaR(
   { typeKey: "postal_or_proxy_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -922,7 +1165,18 @@ const waiverApplication = new ContentEaR(
   { typeKey: "postal_or_proxy_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -973,7 +1227,22 @@ const archiveCopies = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "copy",
+      "copyies",
+      "archive",
+      "archives",
+      "arch"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1001,7 +1270,18 @@ const changeofAddressForm = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1028,7 +1308,18 @@ const changeofNameonTheRegister = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1065,7 +1356,11 @@ const creditReferencingAgencies = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1091,7 +1386,20 @@ const doINeedToReRegisterEachYear = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post",
+      "regsiter",
+      "reg"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1120,7 +1428,20 @@ const doINeedToRegister = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post",
+      "regsiter",
+      "reg"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1148,7 +1469,11 @@ const electoralRegisterConfirmationLetter = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1177,7 +1502,14 @@ const includeSomeoneElseontheRegisterForm = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "electorial",
+      "elect",
+      "elec"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1206,7 +1538,21 @@ const incorrectDetailsOnElectoralRegister = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post",
+      "electorial",
+      "elect",
+      "elec"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1236,7 +1582,14 @@ const informationInDifferentFormats = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "electorial",
+      "elect",
+      "elec"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1263,7 +1616,21 @@ const invitationToRegister = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post",
+      "electorial",
+      "elect",
+      "elec"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1290,7 +1657,21 @@ const lostMyInvitationToRegister = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post",
+      "electorial",
+      "elect",
+      "elec"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1318,7 +1699,21 @@ const movingHomeorMovedHome = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post",
+      "electorial",
+      "elect",
+      "elec"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1345,7 +1740,21 @@ const needToIncludeEmailAddressandPhoneNumber = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post",
+      "electorial",
+      "elect",
+      "elec"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1376,7 +1785,21 @@ const optOutofTheOpenRegister = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post",
+      "electorial",
+      "elect",
+      "elec"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1433,7 +1856,21 @@ const requestforEvidenceLetter = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post",
+      "electorial",
+      "elect",
+      "elec"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1460,7 +1897,17 @@ const requestOtherElectionsReferral = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1496,7 +1943,17 @@ const revisionstoTheElectoralRegister = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1524,7 +1981,17 @@ const successfulOnlineRegistration = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1552,7 +2019,17 @@ const useofEmailAddressandPhoneNumber = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1630,7 +2107,22 @@ const annualCanvas = new ContentEaR(
   { typeKey: "annual_canvass_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "copy",
+      "copyies",
+      "archive",
+      "archives",
+      "arch"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1659,7 +2151,21 @@ const councillors = new ContentEaR(
   { typeKey: "" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "clr",
+      "cllr",
+      "counc",
+      "Council"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1684,7 +2190,21 @@ const electionResults = new ContentEaR(
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "resu",
+      "resul",
+      "result",
+      "results"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/09/2024", name: "Shahzad Athar" }
@@ -1717,7 +2237,17 @@ const familyTreeorGenealogy = new ContentEaR(
   { typeKey: "" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1745,7 +2275,19 @@ const wards = new ContentEaR(
   { typeKey: "" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "loca",
+      "local"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -1772,7 +2314,28 @@ const whereICanVote = new ContentEaR(
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "wher",
+      "where do",
+      "where can",
+      "wheredo",
+      "wherecan",
+      "poll",
+      "polling",
+      "poll station",
+      "polling station",
+      "poll stat",
+      "polling stat"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/09/2024", name: "Shahzad Athar" }
