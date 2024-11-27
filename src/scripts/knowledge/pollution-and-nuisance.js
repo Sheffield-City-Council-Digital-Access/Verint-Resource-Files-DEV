@@ -1363,7 +1363,7 @@ const honeyBeeTreatment = new ContentPaN(
     </p>
     <details class="accordion">
     <summary class="accordion-header">
-      <h3>Accordion title</h3>
+      <h3>Beekeepers List</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2224,7 +2224,7 @@ const silverFishTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smithr" }
+  { date: "27/11/2024", name: "Nathan Smith" }
 );
 
 const spiderBeetlesTreatment = new ContentPaN(
