@@ -1167,7 +1167,7 @@ const noHeatNoWater = new ContentH(
 
 const payment = new ContentH(
   "payment",
-  "No Heat No Water Payment",
+  "Payment",
   "",
   `
 
