@@ -1193,6 +1193,37 @@ const programmedWorks = new ContentH(
   { date: "10/10/2024", name: "George Whitehouse" }
 );
 
+
+const propertyAge = new ContentH(
+  "propertyAge",
+  "Property Age",
+  "",
+  `
+  <p>
+    <a href="https://sccextranet.sharepoint.com/:x:/s/CustomerServiceKnowledgeCouncilHousing/ESm4Dds9S6pAq3ChaiPPEH8BNQtMLmygyOEvErvW2ISK2A?e=Qkq084"target="_blank">property Age</a>
+  </p>
+  
+  `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_sustainment_gen_enq",
+  },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  {
+    type: "Information",
+    keywords: [
+      "repairs and investmant",
+      "repears and investment",
+      "repairs and invesment",
+      "repair and investement",
+      "repairs and invesmant",
+    ],
+    categories: ["Housing"],
+  },
+  { date: "10/10/2024", name: "George Whitehouse" }
+);
+
 const refunds = new ContentH(
   "refunds",
   "Refunds",
@@ -5776,66 +5807,8 @@ const tenancyEnforcementASB = new ContentH(
   { type: "Request", keywords: [], categories: ["Housing"] },
   { date: "16/10/2024", name: "Omily Parkin" }
 );
-
-// Application Changes page to be under the Rehousing menu
-
 //#endregion Tenancy enforcement
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //#region asdasd
-//#endregion asdasd
-  
-  
-
-
-
-
-  //#region Rents
-  
-  //apply for Housing Rent to be under Rent menu
  
   //#region Tenancy Sustainment
   
@@ -6653,7 +6626,7 @@ const tenancyConditions = new ContentH(
 
 
 
-
+//#endregion Tenancy Management Tenancy Sustainment
 
 
 //#region Misc idk needs lookign at
@@ -6757,35 +6730,7 @@ const carbonmonoxide = new ContentH(
 
 
 
-const propertyAge = new ContentH(
-  "propertyAge",
-  "Property Age",
-  "",
-  `
 
-<p><a href="https://sccextranet.sharepoint.com/:x:/s/CustomerServiceKnowledgeCouncilHousing/ESm4Dds9S6pAq3ChaiPPEH8BNQtMLmygyOEvErvW2ISK2A?e=Qkq084"target="_blank">property Age</a></p>
-
-  
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
-  },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
-  {
-    type: "Information",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing"],
-  },
-  { date: "10/10/2024", name: "George Whitehouse" }
-);
 
 
 
