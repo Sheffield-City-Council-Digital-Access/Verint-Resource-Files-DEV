@@ -226,11 +226,19 @@ const otherAdaptationRequest = new ContentH(
   { date: "10/10/2024", name: "George Whitehouse" }
 );
 
-
-
+const adaptations = new MenuH(
+  "adaptations", 
+  "Adaptations", 
+  "Adaptations Menu",
+  [
+   chaseProgressOfAdaptation,
+   otherAdaptationRequest
+ ]
+);
 //#endregion Adaptations
 
-//region Asset Management And Repairs
+
+//#region Asset Management And Repairs
 const asbestos = new ContentH(
   "asbestos",
   "Asbestos",
@@ -439,6 +447,81 @@ const asbestos = new ContentH(
       </div>
     </details>
   `,
+  {
+    buttonLabel: "Report Housing Enquiry",
+    formName: "hou_sustainment_gen_enq",
+  },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  {
+    type: "Information",
+    keywords: [
+      "repairs and investmant",
+      "repears and investment",
+      "repairs and invesment",
+      "repair and investement",
+      "repairs and invesmant",
+    ],
+    categories: ["Housing"],
+  },
+  { date: "10/10/2024", name: "George Whitehouse" }
+);
+
+const carbonmonoxide = new ContentH(
+  "carbonmonoxide",
+  "Carbon Monoxide/ What is CO Poisoning",
+  "",
+  `
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Carbon Monoxide</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <details class="details-accordion">
+      <summary>What is CO Poisoning?</summary>
+      <div class="details-accordion-content">
+        <p>
+          Unsafe gas appliances can produce a highly poisonous gas called carbon monoxide (CO). 
+          It can cause death as well as serious long-term health problems such as brain damage. 
+          CO is produced by the incomplete burning of natural gas or liquefied petroleum gas (LPG). 
+          This happens when a gas appliance has been incorrectly fitted, badly repaired, or poorly maintained. 
+          It can also occur if flues, chimneys, or vents are blocked. Oil and solid fuels such as coal, wood, petrol, 
+          and oil can also produce carbon monoxide.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Remember the Six Main Symptoms to Look Out For?</summary>
+      <div class="details-accordion-content">
+        <ul>
+          <li>Headaches</li>
+          <li>Dizziness</li>
+          <li>Nausea</li>
+          <li>Breathlessness</li>
+          <li>Collapse</li>
+          <li>Loss of consciousness</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>What to Do if You Suspect CO Poisoning</summary>
+      <div class="details-accordion-content">
+        <p>
+          Get fresh air immediately. Open doors and windows, turn off gas appliances and leave the house. 
+          See your doctor immediately or go to the hospital - let them know that you suspect CO poisoning. 
+          They can do a blood or breath test to check.
+        </p>
+        <p>
+          If you think there is an immediate danger, call the Gas Emergency Helpline on 0800 111 999.
+        </p>
+      </div>
+    </details>
+  </div>
+</details>
+`,
   {
     buttonLabel: "Report Housing Enquiry",
     formName: "hou_sustainment_gen_enq",
@@ -1082,6 +1165,105 @@ const noHeatNoWater = new ContentH(
   { date: "10/10/2024", name: "George Whitehouse" }
 );
 
+const payment = new ContentH(
+  "payment",
+  "No Heat No Water Payment",
+  "",
+  `
+
+<p> New tenants will initially be issued with a Pay As You Go card, however they will be supplied with a 
+Budget Plan Direct Debit mandate in their new tenancy welcome information pack
+and in addition a copy of the Budget Plan information and Direct Debit mandate will be posted separately</p>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Payment</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    
+    <details class="details-accordion">
+      <summary>  Pay As You Go </summary>
+      <div class="details-accordion-content">
+        <p>New tenants will initially be issued with a Pay As You Go card, however they will be supplied with a 
+        Budget Plan Direct Debit mandate in their new tenancy welcome information pack and 
+        in addition a copy of the Budget Plan information and Direct Debit mandate will be posted separately</p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>  Budget Plan Scheme </summary>
+      <div class="details-accordion-content">
+        <p>This is a prepayment method which allows the customer to pay for heating by making set monthly Direct Debit instalments 
+        based on anticipated usage. Monthly instalments would then be periodically adjusted to reflect the actual heat 
+        and hot water used in the property. 
+        Please call Home Ownership and Revenues Unit on 0114 27 35595</p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>  Methods of Payment </summary>
+      <div class="details-accordion-content">
+        <p>New tenants will initially be issued with Pay As You Go information/number, 
+        however they will be supplied with a Budget Plan Direct Debit mandate in their new tenancy welcome information pack and 
+        in addition a copy of the Budget Plan information and Direct Debit mandate will be posted separately. 
+        If the customer wishes to amend the method by which they pay for the heat they use, 
+        please call Home Ownership and Revenues Unit on 0114 27 35595</p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Replace Pay as you go Card</summary>
+      <div class="details-accordion-content">
+        <p>The customer must call Switch 2 on 03333212010.</p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>  No Credit </summary>
+      <div class="details-accordion-content">
+        <p>The meter has an emergency credit facility. 
+        This allows the customer to ‘borrow’ credit up to £10.00 which will reconnect the heat and hot water supply. 
+        This is simply a loan and must be paid back in full before the system can be used again. 
+        The emergency credit facility becomes available when the meters credit value reaches £1.00 or less. 
+        To activate, press the blue button marked. 
+        If the customer has used all the emergency credit and is still unable to afford to top-up, 
+        please call the Home Ownership and Revenues Unit on 0114 27 35595.</p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>  Money Saving Advice </summary>
+      <div class="details-accordion-content">
+        <p>Please call Home Ownership and Revenues Unit on 0114 2735595.</p>
+      </div>
+    </details>
+
+  </div>
+</details>
+
+`,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_sustainment_gen_enq",
+  },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  {
+    type: "Information",
+    keywords: [
+      "repairs and investmant",
+      "repears and investment",
+      "repairs and invesment",
+      "repair and investement",
+      "repairs and invesmant",
+    ],
+    categories: ["Housing"],
+  },
+  { date: "10/10/2024", name: "George Whitehouse" }
+);
+
+
 const programmedWorks = new ContentH(
   "programmedWorks",
   "Programmed Works",
@@ -1329,6 +1511,36 @@ const tenantsOwnImprovements = new ContentH(
   { date: "10/10/2024", name: "George Whitehouse" }
 );
 
+
+const assetManagementAndRepairs = new MenuH(
+  "assetManagementAndRepairs",
+  "Asset Management And Repairs",
+  "",
+  [
+    asbestos,
+    carbonmonoxide,
+	  communalAerials,
+	  communalAreas,
+    newAndExistingRepairs,
+	  communalAreasFireSafety,
+	  districtHeating,
+	  doorEntrySystems,
+	  emergencyCredit,
+	  emergencyRepairs,
+	  homeImprovementRequests,
+	  homeownerDisconnection,
+	  loststolenkeys,
+	  newAndExistingRepairs,
+	  noHeatNoWater,
+	  payment,
+	  programmedWorks,
+	  propertyAge,
+	  refunds,
+	  tenantsOwnImprovements,
+    adaptations
+  ]
+);
+
 //#endregion Asset Management And Repairs
 
 
@@ -1527,7 +1739,18 @@ const gardenPledgeScheme = new ContentH(
   { date: "09/10/2024", name: "Elliott Griffiths" }
 );
 
-
+const estatesAndEnvironments = new MenuH(
+  "estatesAndEnvironments",
+  "Estates and Environments",
+  "Bin chutes, communal cupboard, fences, firesafety and garden maintenance",
+  [
+    blockedBinChutes,
+    communalCupboard,
+    communalFireSafety,
+    fencesCouncilHousing,
+    gardenPledgeScheme
+  ]
+);
 
 //#endregion Estates and Environments
 
@@ -2270,6 +2493,27 @@ const contactHousingBenefits = new ContentH(
     { date: "05/11/2024", name: "Andy Walker" }
   );
   
+
+  const housingBenefits = new MenuH(
+    "housingBenefits",
+    "Housing benefits",
+    "Information about housing benefits",
+    [
+      benefitCap,
+      benefitClaim,
+      benefitFraud,
+      benefitOnTwoHomes,
+      benefitsClawback,
+      changeOfCircumstances,
+      contactHousingBenefits,
+      localAssistanceScheme,
+      pdsa,
+      universalCredits,
+      welfareReform
+    ]
+  );  
+
+
 //#endregion Benefits
 
 
@@ -3364,6 +3608,21 @@ const bidding = new ContentH(
     { date: "07/22/2024", name: "George Whitehouse" }
   );
 
+  const rehousing = new MenuH(
+    "rehousing",
+    "Rehousing",
+    "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
+    [
+      applyForRehousing,
+      applicationChanges,
+      bidding,
+      eligibility,
+      housingAssociations,
+      priorities,
+      PropertyOffersAndViewings,
+    ]
+  );
+
 //#endregion Rehousing
 
 //#region Rehousing ID / References
@@ -3987,6 +4246,20 @@ const referencesFAQs = new ContentH(
   { date: "07/22/2024", name: "George Whitehouse" }
 );
 
+const idReferencesMenu = new MenuH(
+  "idReferencesMenu",
+  "Rehousing ID / References ",
+  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
+  [
+    acceptableId,
+    idReferences, 
+    idFaq, 
+    movingIn, 
+    mutualExchanges, 
+    referencesFAQs
+  ]
+);
+
  //#endregion Rehousing ID / References
 
 
@@ -4422,12 +4695,46 @@ const priorityBandingTable = new ContentH(
   },
   { date: "07/22/2024", name: "George Whitehouse" }
 );
+
+const policy = new MenuH(
+  "policy",
+  "Rehousing policy",
+  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
+  [
+    applicantPlacedInAPriorityBand,
+    allocationsPolicyGuidance,
+    fosteringAndAdoption,
+    priorityBandingTable,
+    //threeOffersDemotedorDisqualified,
+  ]
+);
 //#endregion Rehousing Policy 
 
 
 
 
-//#region RentsJC
+//#region Rents
+
+const arrearsorDebt = new ContentH(
+  "arrearsorDebt",
+  "Court Order Removal of",
+  "Removal of a Court Order from your rent account,",
+  `
+    <p>
+      If you would like the removal of a Court Order from your rent account, or to pay for the removal 
+      of the Court Order, then you can either apply direct to the court, or speak to our Court Team.  
+      You will require your court reference number. <br><br>
+
+      If the Court Team are happy for the Order to be removed, they will send a letter to the court 
+      advising the court that that they do not oppose the removal.
+    </p>
+  `,
+  { buttonLabel: "Arrears or Debt", formName: "Rents" },
+  { typeKey: "rents_information_provided" },
+  { typeKey: "rents_transfered_to_service" },
+  { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
+  { date: "16/10/2024", name: "Shahzad Athar" }
+);
 
 const balanceEnquiry = new ContentH(
   "balanceEnquiry",
@@ -4884,26 +5191,7 @@ const contactRentsTeam = new ContentH(
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
 
-const arrearsorDebt = new ContentH(
-  "arrearsorDebt",
-  "Court Order Removal of",
-  "Removal of a Court Order from your rent account,",
-  `
-    <p>
-      If you would like the removal of a Court Order from your rent account, or to pay for the removal 
-      of the Court Order, then you can either apply direct to the court, or speak to our Court Team.  
-      You will require your court reference number. <br><br>
 
-      If the Court Team are happy for the Order to be removed, they will send a letter to the court 
-      advising the court that that they do not oppose the removal.
-    </p>
-  `,
-  { buttonLabel: "Arrears or Debt", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
-  { typeKey: "rents_transfered_to_service" },
-  { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
-  { date: "16/10/2024", name: "Shahzad Athar" }
-);
 
 const references = new ContentH(
   "references",
@@ -4934,8 +5222,6 @@ const references = new ContentH(
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
 
-///JCHere Needs cleaning
-
 const rentVariation = new ContentH(
   "rentVariation",
   "Rent Variation",
@@ -4943,94 +5229,92 @@ const rentVariation = new ContentH(
   `
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Is your Rent Increasing?</h3>
+        <h3>Is your Rent Increasing?</h3>
         <div class="accordion-icon"></div>
-          </summary>
-            <div class="accordion-content">
-          <p> 
-          The annual changes to the rent charged are agreed by the Council Cabinet every January. 
-          The general rent increase agreed from 1st April 2024 is <strong>7.7%</strong>.
-          </p>
-          <p>
-          You can check an outline of the changes to rents and charges at Sheffield city counicl website
-          by visiting the following links: 
-          </p> 
-          <p>
-          <a href="/council-housing/how-rent-is-calculated">How we calculate your rent</a> 
-          </p>
-          <p>
-          <a href="/council-housing/paying-your-rent" data-drupal-link-system-path="node/3140">Paying your rent</a>
-          </p>
-            </div>
-              </details>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            The annual changes to the rent charged are agreed by the Council Cabinet every January. 
+            The general rent increase agreed from 1st April 2024 is <strong>7.7%</strong>.
+        </p>
+        <p>
+            You can check an outline of the changes to rents and charges at Sheffield city council website
+            by visiting the following links:
+        </p>
+        <p>
+            <a href="/council-housing/how-rent-is-calculated">How we calculate your rent</a>
+        </p>
+        <p>
+            <a href="/council-housing/paying-your-rent" data-drupal-link-system-path="node/3140">Paying your rent</a>
+        </p>
+    </div>
+</details>
 
-   <details class="accordion">
+<details class="accordion">
     <summary class="accordion-header">
-      <h3>Direct Debit </h3>
-         <div class="accordion-icon"></div>
-          </summary>
-            <div class="accordion-content">
-          <p> 
-          Anybody applying to pay by Direct Debit should be dealt with as normal, in the same way, 
-          during this rent change period.
-          </p>
-          <p>
-          Any queries on Direct Debits need to be directed to the Income Management and Financial 
-          Inclusion Team.
-          </p>
-            </div>
-              </details>
-
-   <details class="accordion">
-    <summary class="accordion-header">
-      <h3>OHMS Rent System </h3>
+        <h3>Direct Debit</h3>
         <div class="accordion-icon"></div>
-          </summary>
-            <div class="accordion-content">
-          <p>
-          Any OHMS Rent system issues can be reported through the IT Service Desk, Tel: 0114 2734476.
-          </p>
-          <p>The rent-free weeks this year will be weeks commencing:</p>
-          <ul>
-          <li>Monday 16th December 2024</li> 
-          <li>Monday 23rd December 2024</li>
-          </ul> 
-            </div>
-              </details>          
-              </details>      
+    </summary>
+    <div class="accordion-content">
+        <p>
+            Anybody applying to pay by Direct Debit should be dealt with as normal, in the same way, 
+            during this rent change period.
+        </p>
+        <p>
+            Any queries on Direct Debits need to be directed to the Income Management and Financial 
+            Inclusion Team.
+        </p>
+    </div>
+</details>
 
-    <details class="accordion">
-      <summary class="accordion-header">
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>OHMS Rent System</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            Any OHMS Rent system issues can be reported through the IT Service Desk, Tel: 0114 2734476.
+        </p>
+        <p>The rent-free weeks this year will be weeks commencing:</p>
+        <ul>
+            <li>Monday 16th December 2024</li>
+            <li>Monday 23rd December 2024</li>
+        </ul>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
         <h3>Weekly Rent Year</h3>
-         <div class="accordion-icon"></div>
-          </summary>
-            <div class="accordion-content">
-            <p>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
             The year 2024-2025 is a 53-week rent year, which means there are 53 Mondays in the financial year. 
             Taking into account the rent-free weeks, rent will be charged over 51 weeks.
-            </p>
-            <p>
+        </p>
+        <p>
             When calculating monthly arrangements, these will need to be calculated over 51 weeks instead of the normal 50 weeks. 
             The rent calculator can be used to assist in calculating arrangements:
-            </p>
-            <p><strong>File Path:</strong> G:/HSG/Public/Rents/001. public sharepoint digital ringbinder/1. Comms/51 week rent calculator.xlsx
-            </p>
-            <h3>Rent Calculator</h3>
-            <p>
+        </p>
+        <p><strong>File Path:</strong> G:/HSG/Public/Rents/001. public sharepoint digital ringbinder/1. Comms/51 week rent calculator.xlsx</p>
+        <h3>Rent Calculator</h3>
+        <p>
             Anybody applying to pay by Direct Debit should be dealt with as normal, in the same way, during this rent change period. 
             Any queries on Direct Debits need to be directed to the Income Management and Financial Inclusion Team.
-            </p>
-            <p>This is relevant to this year but can change year to year.</p> 
-            </div>
-              </details>
-              
-   <details class="accordion">
-      <summary class="accordion-header">
+        </p>
+        <p>This is relevant to this year but can change year to year.</p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
         <h3>Full List of Variations</h3>
-         <div class="accordion-icon"></div>
-          </summary>
-            <div class="accordion-content">
-            <ul>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <ul>
             <li>Social Council rents – 7.7% increase</li>
             <li>Affordable Rents – 7.7% increase</li>
             <li>Interim/High Support/Temporary Accommodation Rents – 7.7% increase</li> 
@@ -5044,179 +5328,180 @@ const rentVariation = new ContentH(
             <li>Shared Ownership Properties – 7.7% increase</li>
             <li>Gypsy & Traveller charges – to be confirmed</li>
             <li>Direct deductions from the DWP for rent arrears will be £4.55 per week from 1st April 2024</li>
-            </ul>
-            <p>
+        </ul>
+        <p>
             <strong>This is relevant from April 2024 to April 2025 when it will be updated with new rent increase charges</strong>.
-            </p> 
-            </div>
-              </details>
-              
-   <details class="accordion">
-      <summary class="accordion-header">
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
         <h3>Garages</h3>
-         <div class="accordion-icon"></div>
-          </summary>
-            <div class="accordion-content">
-            <p>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
             Garage letters will be sent from 18th March 2024, so tenants will only receive one garage letter. 
             This is because we don't have to give legal notice of the rent change for garages.
-            </p> 
-            </div>
-              </details>
+        </p>
+    </div>
+</details>
 
-      <details class="accordion">
-      <summary class="accordion-header">
+<details class="accordion">
+    <summary class="accordion-header">
         <h3>Rent Charged After Property is Vacant</h3>
-         <div class="accordion-icon"></div>
-          </summary>
-            <div class="accordion-content">
-            <p>
-            <p>Please note that the rent for any properties let after being vacant will be set at the maximum 
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            Please note that the rent for any properties let after being vacant will be set at the maximum 
             rent, as agreed by the Co-op Executive. This will be applied automatically, so the rent showing in 
             the Choice Based Letting advert will be correct. This may mean, in some instances but not all, that
             the new tenant may pay a higher rent than the previous tenant.
-            </p>
-            <p>
+        </p>
+        <p>
             <strong>From Notes Section on Spreadsheet:</strong> Needs changing; the wording is a bit odd! 
             Not sure where this has come from!
-            </p> 
-            </div>
-              </details>
-              
-    <details class="accordion">
-      <summary class="accordion-header">
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
         <h3>Tenant Levy</h3>
-         <div class="accordion-icon"></div>
-          </summary>
-            <div class="accordion-content">
-          <p>
-          The Tenants Levy is a weekly payment of 10p that is used to support community activity in our 
-          council housing areas. It is collected by the Council and will go towards funding local Tenants
-          and Residents Associations (TARAs). Where there is currently no TARA, the levy is held by the 
-          Council to support any future community activity in the local area.
-          </p> 
-          <p>
-          Tenants can decide whether to pay the levy, which is not covered by Housing Benefit or Universal Credit. 
-          For any tenant levy enquiries contact the Community Engagement Team: <a href="mailto:getinvolved@sheffield.gov.uk">getinvolved@sheffield.gov.uk</a> or call 0114 2735566.
-          </p> 
-            </div>
-              </details>
-                        
-    <details class="accordion">
-      <summary class="accordion-header">
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            The Tenants Levy is a weekly payment of 10p that is used to support community activity in our 
+            council housing areas. It is collected by the Council and will go towards funding local Tenants
+            and Residents Associations (TARAs). Where there is currently no TARA, the levy is held by the 
+            Council to support any future community activity in the local area.
+        </p>
+        <p>
+            Tenants can decide whether to pay the levy, which is not covered by Housing Benefit or Universal Credit. 
+            For any tenant levy enquiries contact the Community Engagement Team: <a href="mailto:getinvolved@sheffield.gov.uk">getinvolved@sheffield.gov.uk</a> or call 0114 2735566.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
         <h3>Dealing with Detailed Rent Enquiries</h3>
-         <div class="accordion-icon"></div>
-          </summary>
-            <div class="accordion-content">
-          <p>
-          Please refer any detailed queries about rent charges or the changes to the relevant Income 
-          Management and Financial Inclusion Team.
-          </p> 
-            </div>
-              </details> 
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            Please refer any detailed queries about rent charges or the changes to the relevant Income 
+            Management and Financial Inclusion Team.
+        </p>
+    </div>
+</details>
 
-    <details class="accordion">
-      <summary class="accordion-header">
+<details class="accordion">
+    <summary class="accordion-header">
         <h3>Housing Benefit</h3>
-         <div class="accordion-icon"></div>
-          </summary>
-            <div class="accordion-content">
-          <p>
-          The Housing Benefits Year end on Academy will start week commencing 4th March 2024, so Academy
-          is possibly unavailable from Wednesday 6th March 2024 to Monday 11th March 2024.
-          </p>
-          <p>
-          The Housing Benefit letters will be posted out from 11th March 2024.
-          </p>
-          <p>
-          Apart from these dates, Academy will be available to view as normal. If this changes, an update 
-          will be issued. All housing benefit adjustments will be credited to rent accounts as normal throughout March.
-          </p>
-          <p>
-          All changes to Housing Benefit levels, either through cancellations, changes of circumstances, 
-          or creation of a new case will continue as normal throughout March.
-          </p>
-          <p>
-          The Housing Benefit Overpayment recovery rate (Clawback) amount is increasing. From 1st April 2024, 
-          it will be £13.65 a week for normal cases up to a maximum of £22.75 per week, plus 50% of any disregard 
-          included in the calculation for earnings. The minimum clawback rate is £4.55 per week.
-          </p>
-          <p>
-          All changes to weekly housing benefit for the new rent levels will be applied to the Rents system 
-          from 1st April 2024.
-          </p> 
-            </div>
-              </details>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            The Housing Benefits Year end on Academy will start week commencing 4th March 2024, so Academy
+            is possibly unavailable from Wednesday 6th March 2024 to Monday 11th March 2024.
+        </p>
+        <p>
+            The Housing Benefit letters will be posted out from 11th March 2024.
+        </p>
+        <p>
+            Apart from these dates, Academy will be available to view as normal. If this changes, an update 
+            will be issued. All housing benefit adjustments will be credited to rent accounts as normal throughout March.
+        </p>
+        <p>
+            All changes to Housing Benefit levels, either through cancellations, changes of circumstances, 
+            or creation of a new case will continue as normal throughout March.
+        </p>
+        <p>
+            The Housing Benefit Overpayment recovery rate (Clawback) amount is increasing. From 1st April 2024, 
+            it will be £13.65 a week for normal cases up to a maximum of £22.75 per week, plus 50% of any disregard 
+            included in the calculation for earnings. The minimum clawback rate is £4.55 per week.
+        </p>
+        <p>
+            All changes to weekly housing benefit for the new rent levels will be applied to the Rents system 
+            from 1st April 2024.
+        </p>
+    </div>
+</details>
 
-    <details class="accordion">
-      <summary class="accordion-header">
+<details class="accordion">
+    <summary class="accordion-header">
         <h3>Notice of Variation (NOV) Letters and Deliveries</h3>
-         <div class="accordion-icon"></div>
-          </summary>
-            <div class="accordion-content">
-          <p>
-          The Notice of Variation (NOV) letter will be posted from 15th February 2024, arriving with 
-          tenants in the seven days after this.
-          </p>
-          <p>
-          These letters are based on information produced on 8th February 2024, so any tenancy changes 
-          after that won’t be included. This means any successions, assignments, changes of names, etc. 
-          will be correct on the system, but the letters will be sent with the original details on them.
-          </p>
-          <p>
-          The NOV letter includes the detailed rent change letter and a letter from the Housing Cabinet Member.
-          </p>
-          <p>
-          The second letter will be posted to tenants from 18th March 2024.
-          </p>
-          <p>
-          The second letter includes the Gross amount letter and inserts. This second letter will show 
-          all the charges on the account and WILL include the housing benefit, so it shows the net amount payable.
-          </p>
-          <p>
-          The benefit details included are as of 11th March 2024, so any changes in entitlement after that 
-          date won’t be shown on these rent change letters. Tenants will be notified separately by Sheffield 
-          Benefits Service for any changes after 11th March 2024.
-          </p>
-          <p>
-          Anybody on Housing Benefit will also receive a letter directly from Sheffield Benefits Service 
-          telling them what their Housing Benefit is and how it has been worked out. These letters from the
-          Benefits Service will be posted to tenants from 11th March 2024. Any queries need to be made directly
-          to the Sheffield Benefits service.
-          </p>
-          <p>
-          The Water rates leaflet for properties covered by Yorkshire Water will be posted separately around 
-          the same time. As before, these dates change every year.
-          </p> 
-            </div>
-              </details>
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Standing Orders<h3>
-         <div class="accordion-icon"></div>
-          </summary>
-            <div class="accordion-content">
-          <p>
-          If you pay your rent by standing order, please inform your bank of the new amount as soon as possible.
-          </p> 
-            </div>
-              </details>
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Standing Orders<h3>
-         <div class="accordion-icon"></div>
-          </summary>
-            <div class="accordion-content">
-          <p>
-          Rent balances will show the correct Total Indebtedness throughout this period. 
-          The balances should be correct for all tenants, given there is no closedown.
-          </p>
-          <p>
-          <strong>Any queries regarding rent payments should be sent to Income Management and Financial Inclusion Team.</strong>
-          </p>
-            </div>
-              </details>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            The Notice of Variation (NOV) letter will be posted from 15th February 2024, arriving with 
+            tenants in the seven days after this.
+        </p>
+        <p>
+            These letters are based on information produced on 8th February 2024, so any tenancy changes 
+            after that won’t be included. This means any successions, assignments, changes of names, etc. 
+            will be correct on the system, but the letters will be sent with the original details on them.
+        </p>
+        <p>
+            The NOV letter includes the detailed rent change letter and a letter from the Housing Cabinet Member.
+        </p>
+        <p>
+            The second letter will be posted to tenants from 18th March 2024.
+        </p>
+        <p>
+            The second letter includes the Gross amount letter and inserts. This second letter will show 
+            all the charges on the account and WILL include the housing benefit, so it shows the net amount payable.
+        </p>
+        <p>
+            The benefit details included are as of 11th March 2024, so any changes in entitlement after that 
+            date won’t be shown on these rent change letters. Tenants will be notified separately by Sheffield 
+            Benefits Service for any changes after 11th March 2024.
+        </p>
+        <p>
+            Anybody on Housing Benefit will also receive a letter directly from Sheffield Benefits Service 
+            telling them what their Housing Benefit is and how it has been worked out. These letters from the
+            Benefits Service will be posted to tenants from 11th March 2024. Any queries need to be made directly
+            to the Sheffield Benefits service.
+        </p>
+        <p>
+            The Water rates leaflet for properties covered by Yorkshire Water will be posted separately around 
+            the same time. As before, these dates change every year.
+        </p>
+    </div>
+</details>
 
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Standing Orders</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            If you pay your rent by standing order, please inform your bank of the new amount as soon as possible.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Standing Orders</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            Rent balances will show the correct Total Indebtedness throughout this period. 
+            The balances should be correct for all tenants, given there is no closedown.
+        </p>
+        <p>
+            <strong>Any queries regarding rent payments should be sent to Income Management and Financial Inclusion Team.</strong>
+        </p>
+    </div>
+</details>
   `,
   { buttonLabel: "Rent Varitaion", formName: "Rents" },
   { typeKey: "rents_information_provided" },
@@ -5263,7 +5548,22 @@ Refer to the "Benefits" section for information about Universal Credit.
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
 
-//#endregion RentsJC
+const rents = new MenuH(
+  "rents",
+  "Rents",
+  "Information about Housing Rents",
+  [
+    arrearsorDebt,
+    balanceEnquiry,
+    contactRentsTeam,
+    references,
+    rentVariation,
+    statements,
+    universalCredit
+  ]
+);
+
+//#endregion Rents
 
 
 
@@ -5717,6 +6017,19 @@ const olderPersonsIndependentLiving = new ContentH(
   },
   { date: "15/10/2024", name: "Joe Nixon" }
 );
+
+const shelteredAndSupported = new MenuH(
+  "shelteredAndSupported",
+  "Sheltered and Supported",
+  "Older persons independent living, extra care housing, furnished accommodation, and gypsy and travellers",
+  [
+    extraCareHousing,
+    furnishedAccommodation,
+    gypsyAndTravellers,
+    olderPersonsIndependentLiving
+  ]
+);
+
 //#endregion Sheltered and Supported
 
 
@@ -5810,7 +6123,7 @@ const tenancyEnforcementASB = new ContentH(
 //#endregion Tenancy enforcement
 
  
-  //#region Tenancy Sustainment
+//#region Tenancy Sustainment
   
 const fences = new ContentH(
   "fences",
@@ -5828,133 +6141,130 @@ const fences = new ContentH(
   { date: "06/11/2024", name: "Shahzad Athar" }
 );
 
-//JCHere Needs Cleaning
+
 const fobsandKeys = new ContentH(
   "fobsandKeys",
   "Fobs and Keys",
   "",
   `
-<p>
-For lost or stolen keys, there may be a recharge (£5). Locks will only be replaced if the customer agrees to a recharge
-or if they have a valid crime reference number.
-</p>
-<p>
-The only exceptions are if the person is Elderly or a Vulnerable person, in which case a Discretionary Decision would need
-to be applied for.
-</p>
-<p>
-If the customer has contents insurance through the Council Housing Service scheme, they can make a claim by completing
-an insurance form.
-</p>
-<p>
-It is only communal doors that are £5. If it's your own door, it's over £200 recharge from repairs.
-</p>
+  <p>
+    For lost or stolen keys, there may be a recharge (£5). Locks will only be replaced if the customer agrees to a recharge
+    or if they have a valid crime reference number.
+  </p>
+  <p>
+    The only exceptions are if the person is Elderly or a Vulnerable person, in which case a Discretionary Decision would need
+    to be applied for.
+  </p>
+  <p>
+    If the customer has contents insurance through the Council Housing Service scheme, they can make a claim by completing
+    an insurance form.
+  </p>
+  <p>
+    It is only communal doors that are £5. If it's your own door, it's over £200 recharge from repairs.
+  </p>
 
   <details class="accordion">
-        <summary class="accordion-header">
-         <h3>Replacement Fobs</h3>
-           <div class="accordion-icon"></div>
-            </summary>
-              <div class="accordion-content">
-              <p>
-              Replacement fobs cost £10 (communal keys cost £5) and they can be purchased from your local area housing office 
-              or from your Warden if you live in Sheltered Accommodation. You will need to take ID with you when purchasing a 
-              replacement fob. If you are ordering a replacement communal door key, you will need to take the number off of the
-              lock with you too.
-              </p>
-              </div>
-                </details> 
+    <summary class="accordion-header">
+      <h3>Replacement Fobs</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Replacement fobs cost £10 (communal keys cost £5) and they can be purchased from your local area housing office
+        or from your Warden if you live in Sheltered Accommodation. You will need to take ID with you when purchasing a
+        replacement fob. If you are ordering a replacement communal door key, you will need to take the number off of the
+        lock with you too.
+      </p>
+    </div>
+  </details>
 
   <details class="accordion">
-        <summary class="accordion-header">
-         <h3>Acceptable ID</h3>
-           <div class="accordion-icon"></div>
-            </summary>
-              <div class="accordion-content">
-              <p>
-              Preferably, at least one piece of evidence must be from the Primary List, and at least one document should contain 
-              photographic identification. The Primary List contains the most definitive piece of documentary evidence.
-              </p>
-              <p>
-              If the evidence provided from the list does not contain a photograph (for example, birth certificate, marriage certificate, 
-              or divorce/annulment papers), then a further piece of identity should be provided with a photograph such as a photo-card driving license 
-              or valid passport.
-              </p>
+    <summary class="accordion-header">
+      <h3>Acceptable ID</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Preferably, at least one piece of evidence must be from the Primary List, and at least one document should contain
+        photographic identification. The Primary List contains the most definitive piece of documentary evidence.
+      </p>
+      <p>
+        If the evidence provided from the list does not contain a photograph (for example, birth certificate, marriage certificate,
+        or divorce/annulment papers), then a further piece of identity should be provided with a photograph such as a photo-card driving license
+        or valid passport.
+      </p>
 
-<table style="width:100%">  
-   <tr style="background-color: black; color: white;">
-    <tbody>
-        <tr>
-            <th>Primary ID</th>
-            <th>Secondary ID</th>
-        </tr>
-        <tr>
-            <td>Birth certificate</td>
-            <td>Wage slip from current employer</td>
-        </tr>
-        <tr>
-            <td>Current and valid passport</td>
-            <td>Letter from Social Worker/Solicitor/Probation Officer
-            </td>
-        </tr>
-        <tr>
-            <td>Driving license</td>
-            <td>Letter from DWP for Child/Work Tax Credits</td>
-        </tr>
-        <tr>
-            <td>Marriage certificate</td>
-            <td>Life assurance/insurance policies</td>
-        </tr>
-        <tr>
-            <td>Divorce/Annulment papers</td>
-            <td>Utility bill (paid in the customer's name for last quarter)</td>
-        </tr>
-        <tr>
-            <td>UK Resident Permit</td>
-            <td>Proof of all other benefits (e.g. JSA)</td>
-        </tr>
-        <tr>
-            <td>ID card issued by the following EEA/EU countries (Finland, Greece, France, Germany, Irish Republic, Italy, Bulgaria and Romania, Austria, Belgium, Denmark, Malta, Liechtenstein, Luxembourg, Spain, Norway, Sweden, Portugal, Cyprus, Iceland,
-                Netherlands, Switzerland and the UK. A8 countries, Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Slovakia and Slovenia)</td>
-            <td>3 consecutive months bank statements</td>
-        </tr>
-        <tr>
-            <td>Home Office Standard Acceptance letter</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>UK travel document</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Immigration Status Document</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>NASS 35</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Accession State Workers Registration Scheme Registration Card (Workers Registration Scheme Registration Card Medical Card</td>
-            <td></td>
-        </tr>
-        </tbody>
-          </table>
-              </div>
-                </details> 
+      <table style="width:100%">
+        <tr style="background-color: black; color: white;">
+          <tbody>
+            <tr>
+              <th>Primary ID</th>
+              <th>Secondary ID</th>
+            </tr>
+            <tr>
+              <td>Birth certificate</td>
+              <td>Wage slip from current employer</td>
+            </tr>
+            <tr>
+              <td>Current and valid passport</td>
+              <td>Letter from Social Worker/Solicitor/Probation Officer</td>
+            </tr>
+            <tr>
+              <td>Driving license</td>
+              <td>Letter from DWP for Child/Work Tax Credits</td>
+            </tr>
+            <tr>
+              <td>Marriage certificate</td>
+              <td>Life assurance/insurance policies</td>
+            </tr>
+            <tr>
+              <td>Divorce/Annulment papers</td>
+              <td>Utility bill (paid in the customer's name for last quarter)</td>
+            </tr>
+            <tr>
+              <td>UK Resident Permit</td>
+              <td>Proof of all other benefits (e.g. JSA)</td>
+            </tr>
+            <tr>
+              <td>ID card issued by the following EEA/EU countries (Finland, Greece, France, Germany, Irish Republic, Italy, Bulgaria and Romania, Austria, Belgium, Denmark, Malta, Liechtenstein, Luxembourg, Spain, Norway, Sweden, Portugal, Cyprus, Iceland, Netherlands, Switzerland and the UK. A8 countries, Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Slovakia and Slovenia)</td>
+              <td>3 consecutive months bank statements</td>
+            </tr>
+            <tr>
+              <td>Home Office Standard Acceptance letter</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>UK travel document</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Immigration Status Document</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>NASS 35</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Accession State Workers Registration Scheme Registration Card (Workers Registration Scheme Registration Card Medical Card)</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </details>
 
-
-    <details class="accordion">
-        <summary class="accordion-header">
-         <h3>Area Housing offices</h3>
-           <div class="accordion-icon"></div>
-            </summary>
-              <div class="accordion-content">
-              <p>
-              Please note: Howden House only deals with rehousing enquiries and will not be able to help with fobs or keys.
-              </p>
-              </div>
-                </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Area Housing offices</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Please note: Howden House only deals with rehousing enquiries and will not be able to help with fobs or keys.
+      </p>
+    </div>
+  </details>
 
   `,
   { buttonLabel: "Fobs and Keys", formName: "Tenancy Sustainment" },
@@ -5963,6 +6273,7 @@ It is only communal doors that are £5. If it's your own door, it's over £200 r
   { type: "Fobs and Keys", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "06/11/2024", name: "Shahzad Athar" }
 );
+
 
 
 const housingServiceParkingPermits = new ContentH(
@@ -6025,103 +6336,102 @@ const permissions = new ContentH(
   "Permissions",
   "",
   ` 
-<p>
-If you are over £250 (Total Indebtedness) in arrears, your permissions request is unlikely to be granted. You must have written permission 
-from the Housing Service to alter or improve your home. This includes:
-</p>
-<ul>
-<li>Putting up any form of extension or building</li>
-<li>Adding to, changing, or replacing the fixtures, fittings, and appliances provided by us</li>
-<li>Altering essential gas, electricity, and water services</li>
-<li>Putting up a radio or television aerial or satellite dish</li>
-<li>Decorating the outside of your home</li>
-<li>Removing internal walls</li>
-<li>Insulation (Walls & Lofts)</li>
-<li>Conservatories (considered on an individual basis)</li>
-</ul>
-<p>
-However, the following are highly unlikely to be granted due to extra maintenance costs and potential structural problems:
-</p>
-<ul>
-<li>Loft conversions</li>
-<li>Spiral staircases</li>
-<li>Swimming pools</li>
-<li>Extensions</li>
-<li>Stair lifts in communal areas</li>
-</ul>
-<p>
-It is the customer's responsibility to seek and get any planning or building regulation approvals. Every request for permission will be assessed 
-using criteria and conditions appropriate to the particular request. These criteria and conditions will be explained in the letter sent in reply 
-to the customer's permission request.
-</p>
-<p>
-We will take action against any installations that are in breach of Health and Safety regulations.
-</p>
+  <p>
+    If you are over £250 (Total Indebtedness) in arrears, your permissions request is unlikely to be granted. You must have written permission 
+    from the Housing Service to alter or improve your home. This includes:
+  </p>
+  <ul>
+    <li>Putting up any form of extension or building</li>
+    <li>Adding to, changing, or replacing the fixtures, fittings, and appliances provided by us</li>
+    <li>Altering essential gas, electricity, and water services</li>
+    <li>Putting up a radio or television aerial or satellite dish</li>
+    <li>Decorating the outside of your home</li>
+    <li>Removing internal walls</li>
+    <li>Insulation (Walls & Lofts)</li>
+    <li>Conservatories (considered on an individual basis)</li>
+  </ul>
+  <p>
+    However, the following are highly unlikely to be granted due to extra maintenance costs and potential structural problems:
+  </p>
+  <ul>
+    <li>Loft conversions</li>
+    <li>Spiral staircases</li>
+    <li>Swimming pools</li>
+    <li>Extensions</li>
+    <li>Stair lifts in communal areas</li>
+  </ul>
+  <p>
+    It is the customer's responsibility to seek and get any planning or building regulation approvals. Every request for permission will be assessed 
+    using criteria and conditions appropriate to the particular request. These criteria and conditions will be explained in the letter sent in reply 
+    to the customer's permission request.
+  </p>
+  <p>
+    We will take action against any installations that are in breach of Health and Safety regulations.
+  </p>
 
-    <details class="accordion">
-        <summary class="accordion-header">
-         <h3>Permission Requests</h3>
-           <div class="accordion-icon"></div>
-            </summary>
-              <div class="accordion-content">
-              <p>
-              Written permission requests should be referred in the first instance (unless the customer is a Leaseholder or the permission request
-              is for a mobility scooter) to the appropriate Area Team at:
-              </p>
-                <address>
-                  Sheffield Council Housing Service<br>
-                  PO Box 5967<br>
-                  Sheffield<br>
-                  S2 9GH
-                  </address>
-                <p>
-                If the permission request is for a mobility scooter, it should be referred to:
-                <address>
-                Maintenance Partnership Unit (Permissions)<br>
-                PO Box 5967<br>
-                SheffieldBr>
-                S2 9GH 
-                </address>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Permission Requests</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Written permission requests should be referred in the first instance (unless the customer is a Leaseholder or the permission request
+        is for a mobility scooter) to the appropriate Area Team at:
+      </p>
+      <address>
+        Sheffield Council Housing Service<br>
+        PO Box 5967<br>
+        Sheffield<br>
+        S2 9GH
+      </address>
+      <p>
+        If the permission request is for a mobility scooter, it should be referred to:
+      </p>
+      <address>
+        Maintenance Partnership Unit (Permissions)<br>
+        PO Box 5967<br>
+        Sheffield<br>
+        S2 9GH
+      </address>
 
-                <p>
-                If the customer is a Leaseholder, permission requests should be put in writing to:
-                </p>
-                <address>
-                  Floor 11<br>
-                  Moorfoot Building<br>
-                  Sheffield<br>
-                  S1 4PL
-                  </address>
-                <p>
-                Once we have received your request, we will contact you to discuss it and, where necessary, arrange a suitable time to visit your property. 
-                We will give you a decision within 21 days of receiving your request. If we give you permission, you should carry out the work within 90 days 
-                and let us know when it is complete.
-                </p>
-                </div>
-                </details>
+      <p>
+        If the customer is a Leaseholder, permission requests should be put in writing to:
+      </p>
+      <address>
+        Floor 11<br>
+        Moorfoot Building<br>
+        Sheffield<br>
+        S1 4PL
+      </address>
+      <p>
+        Once we have received your request, we will contact you to discuss it and, where necessary, arrange a suitable time to visit your property. 
+        We will give you a decision within 21 days of receiving your request. If we give you permission, you should carry out the work within 90 days 
+        and let us know when it is complete.
+      </p>
+    </div>
+  </details>
 
-
-      <details class="accordion">
-        <summary class="accordion-header">
-         <h3>Permission and Your Teancy Conditions</h3>
-           <div class="accordion-icon"></div>
-            </summary>
-              <div class="accordion-content">
-              <p>Tenancy condition 47 states that:</p>
-                <blockquote>
-                Where a tenancy condition requires you to ask for our permission, this means:<br>
-                <ul>
-                <li>You must ask for our permission, and you must not proceed until we give you our permission.</li>
-                <li>We will confirm our answer in writing.</li>
-                <li>If we refuse permission, we will explain why.</li>
-                <li>If we give permission, we may attach additional conditions.</li>
-                <li>We may withdraw our permission at any time if you do not comply with the conditions we have made.</li>
-                <li>We will take action against you and/or charge you for any costs incurred if you do not comply with parts a-e above.</li>
-                </ul>
-                </blockquote>
-                </div>
-                </details>
-
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Permission and Your Tenancy Conditions</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Tenancy condition 47 states that:</p>
+      <blockquote>
+        Where a tenancy condition requires you to ask for our permission, this means:<br>
+        <ul>
+          <li>You must ask for our permission, and you must not proceed until we give you our permission.</li>
+          <li>We will confirm our answer in writing.</li>
+          <li>If we refuse permission, we will explain why.</li>
+          <li>If we give permission, we may attach additional conditions.</li>
+          <li>We may withdraw our permission at any time if you do not comply with the conditions we have made.</li>
+          <li>We will take action against you and/or charge you for any costs incurred if you do not comply with parts a-e above.</li>
+        </ul>
+      </blockquote>
+    </div>
+  </details>
   `,
   { buttonLabel: "Permissions", formName: "Tenancy Sustainment" },
   { typeKey: "Tenancy_Sustainment_information_provided" },
@@ -6130,70 +6440,76 @@ We will take action against any installations that are in breach of Health and S
   { date: "07/11/2024", name: "Shahzad Athar" }
 );
 
+
 const tenancyAgreementRequest = new ContentH(
   "tenancyAgreementRequest",
   "Tenancy Agreement Request",
   "",
   ` 
-<p>
-If the request is urgent or for a former tenancy, you will need to visit your Area Office with relevant ID to obtain a copy of your Tenancy Agreement.
-</p>
+  <p>
+    If the request is urgent or for a former tenancy, you will need to visit your Area Office with relevant ID to obtain a copy of your Tenancy Agreement.
+  </p>
 
-<details class="accordion">
-      <summary class="accordion-header">
-        <h3>Weekly Cost</h3>
-          <div class="accordion-icon"></div>
-            </summary>
-              <div class="accordion-content"> 
-                <p>
-                Preferably, at least one piece of evidence must be from the Primary List, and at least one document should contain photographic identification.
-                </p>
-                <p>
-                The Primary List contains the most definitive piece of documentary evidence. If the evidence provided from the list does not contain a photograph 
-                (for example, birth certificate, marriage certificate, or divorce/annulment papers), then a further piece of identity should be provided with a 
-                photograph such as a photo-card driving license or valid passport.
-                </p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Weekly Cost</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content"> 
+      <p>
+        Preferably, at least one piece of evidence must be from the Primary List, and at least one document should contain photographic identification.
+      </p>
+      <p>
+        The Primary List contains the most definitive piece of documentary evidence. If the evidence provided from the list does not contain a photograph 
+        (for example, birth certificate, marriage certificate, or divorce/annulment papers), then a further piece of identity should be provided with a 
+        photograph such as a photo-card driving license or valid passport.
+      </p>
 
-                <table>
-                        <tbody><tr><th>Proof of ID documents</th><th>Proof of address</th></tr>
-                        <tr><td valign="top">
-                        <ul>
-                        <li>Marriage certificate</li>
-                        <li>Divorce/Annulment papers</li>
-                        <li>Passport (this can be expired but if the customer is an adult an adult passport
-                        must be produced)</li>
-                        <li>Deed poll documentation for change of name (to accompany details of former name
-                        if applicable)</li>
-                        <li>Current bus passes with photograph</li>
-                        <li>UK resident permit</li>
-                        <li>ID card issued by EEA/EU countries</li>
-                        <li>Home Office standard acceptance letter</li>
-                        <li>Immigration status document</li>
-                        <li>NASS 35</li>
-                        <li>Citizenship card (with hologram and photo to prove age)</li>
-                        <li>Medical card</li>
-                        <li>Birth certificate/Adoption certificate</li>
-                        <li>Letter from Social Worker/Probation Officer/Solicitor</li>
-                        <li>Driving licence</li>
-                        <li>Proof</li>
-                        </ul>
-                        </td>
-                        <td valign="top">
-                        <ul><li>Recent utility bill paid in that person’s name (last quarter)</li>
-                        <li>Most recent council tax statement</li>
-                        <li>Driving licence</li>
-                        <li>Home Office standard acceptance letter</li>
-                        <li>Letter from DWP for tax credits</li>
-                        <li>Bank statement from within the last 3months</li>
-                        <li>Wage slip from current employer</li>
-                        <li>Life assurance/Insurance policies</li>
-                        <li>Proof of all other benefits</li>
-                        </ul>
-                        </td>
-                        </tr></tbody></table>
-                        </div>
-                        </details>  
-
+      <table>
+        <tbody>
+          <tr>
+            <th>Proof of ID documents</th>
+            <th>Proof of address</th>
+          </tr>
+          <tr>
+            <td valign="top">
+              <ul>
+                <li>Marriage certificate</li>
+                <li>Divorce/Annulment papers</li>
+                <li>Passport (this can be expired but if the customer is an adult an adult passport must be produced)</li>
+                <li>Deed poll documentation for change of name (to accompany details of former name if applicable)</li>
+                <li>Current bus passes with photograph</li>
+                <li>UK resident permit</li>
+                <li>ID card issued by EEA/EU countries</li>
+                <li>Home Office standard acceptance letter</li>
+                <li>Immigration status document</li>
+                <li>NASS 35</li>
+                <li>Citizenship card (with hologram and photo to prove age)</li>
+                <li>Medical card</li>
+                <li>Birth certificate/Adoption certificate</li>
+                <li>Letter from Social Worker/Probation Officer/Solicitor</li>
+                <li>Driving licence</li>
+                <li>Proof</li>
+              </ul>
+            </td>
+            <td valign="top">
+              <ul>
+                <li>Recent utility bill paid in that person’s name (last quarter)</li>
+                <li>Most recent council tax statement</li>
+                <li>Driving licence</li>
+                <li>Home Office standard acceptance letter</li>
+                <li>Letter from DWP for tax credits</li>
+                <li>Bank statement from within the last 3 months</li>
+                <li>Wage slip from current employer</li>
+                <li>Life assurance/Insurance policies</li>
+                <li>Proof of all other benefits</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
   `,
   { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
   { typeKey: "Tenancy_Sustainment_information_provided" },
@@ -6201,6 +6517,7 @@ If the request is urgent or for a former tenancy, you will need to visit your Ar
   { type: "tenancyAgreementRequest", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "08/11/2024", name: "Shahzad Athar" }
 );
+
 
 const tenancyConditions = new ContentH(
   "tenancyConditions",
@@ -6620,265 +6937,6 @@ const tenancyConditions = new ContentH(
   { type: "tenancyAgreementRequest", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "08/11/2024", name: "Shahzad Athar" }
 );
- 
-
-
-
-
-
-//#endregion Tenancy Management Tenancy Sustainment
-
-
-//#region Misc idk needs lookign at
-
-
-
-
-
-const carbonmonoxide = new ContentH(
-  "carbonmonoxide",
-  "Carbon Monoxide/ What is CO Poisoning",
-  "",
-  `
-
-
-<details class="accordion">
-      <summary class="accordion-header">
-        <h3>Carbon Monoxide</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <details class="details-accordion">
-          <summary>  What is CO Poisoning?  </summary>
-          <div class="details-accordion-content">
-             
-    <p>Unsafe gas appliances can produce a highly poisonous gas called carbon monoxide (CO). 
-    It can cause death as well as serious long-term health problems such as brain damage. 
-    CO is produced by the incomplete burning of natural gas or liquefied petroleum gas (LPG). 
-    This happens when a gas appliance has been incorrectly fitted, badly repaired, or poorly maintained. 
-    It can also occur if flues, chimneys, or vents are blocked. Oil and solid fuels such as coal, wood, petrol, 
-    and oil can also produce carbon monoxide.</p> 
-
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>   Remember the Six Main Symptoms to Look Out For? </summary>
-          <div class="details-accordion-content">
-             
- <ul> 
-
-        <li>Headaches</li> 
-
-        <li>Dizziness</li> 
-
-        <li>Nausea</li> 
-
-        <li>Breathlessness</li> 
-
-        <li>Collapse</li> 
-
-        <li>Loss of consciousness</li> 
-
-    </ul> 
-
-
-
-          </div>
-        </details>
-
-
-                <details class="details-accordion">
-          <summary>   What to Do if You Suspect CO Poisoning </summary>
-          <div class="details-accordion-content">
-             
-
-    <p>Get fresh air immediately. Open doors and windows, turn off gas appliances and leave the house. 
-    See your doctor immediately or go to the hospital - let them know that you suspect CO poisoning. 
-    They can do a blood or breath test to check.</p> 
-
-    <p>If you think there is an immediate danger, call the Gas Emergency Helpline on 0800 111 999.</p> 
-    
-
-          </div>
-        </details>
-  
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
-  },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
-  {
-    type: "Information",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing"],
-  },
-  { date: "10/10/2024", name: "George Whitehouse" }
-);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const noHeatNoWaterPayment = new ContentH(
-  "noHeatNoWaterPayment",
-  "No Heat No Water Payment",
-  "",
-  `
-
-<p> New tenants will initially be issued with a Pay As You Go card, however they will be supplied with a 
-Budget Plan Direct Debit mandate in their new tenancy welcome information pack
- and in addition a copy of the Budget Plan information and Direct Debit mandate will be posted separately</p>
-
-<details class="accordion">
-      <summary class="accordion-header">
-        <h3>Payment</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <details class="details-accordion">
-          <summary>  Pay As You Go </summary>
-          <div class="details-accordion-content">
-
-
-<p>New tenants will initially be issued with a Pay As You Go card, however they will be supplied with a 
-Budget Plan Direct Debit mandate in their new tenancy welcome information pack and 
-in addition a copy of the Budget Plan information and Direct Debit mandate will be posted separately</p>
-
-      </div>
-        </details>
-
-
-             <details class="details-accordion">
-          <summary>  Budget Plan Scheme </summary>
-          <div class="details-accordion-content">
-            
-
-<p>This is a prepayment method which allows the customer to pay for heating by making set monthly Direct Debit instalments 
-based on anticipated usage. Monthly instalments would then be periodically adjusted to reflect the actual heat 
-and hot water used in the property. 
-Please call Home Ownership and Revenues Unit on 0114 27 35595</p>
-
-
-          </div>
-        </details>
-
-                     <details class="details-accordion">
-          <summary>  Methods of Payment </summary>
-          <div class="details-accordion-content">
-            
-
-<p>New tenants will initially be issued with Pay As You Go information/number, 
-however they will be supplied with a Budget Plan Direct Debit mandate in their new tenancy welcome information pack and 
-in addition a copy of the Budget Plan information and Direct Debit mandate will be posted separately. 
-If the customer wishes to amend the method by which they pay for the heat they use, 
-please call Home Ownership and Revenues Unit on 0114 27 35595</p>
-
-
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>Replace Pay as you go Card</summary>
-          <div class="details-accordion-content">
-            
-
-<p>The customer must call Switch 2 on 03333212010.</p>
-
-
-          </div>
-        </details>
-
-                <details class="details-accordion">
-          <summary>  No Credit </summary>
-          <div class="details-accordion-content">
-            
-
-<p>The meter has an emergency credit facility. 
-This allows the customer to ‘borrow’ credit up to £10.00 which will reconnect the heat and hot water supply. 
-This is simply a loan and must be paid back in full before the system can be used again. 
-The emergency credit facility becomes available when the meters credit value reaches £1.00 or less. 
-To activate, press the blue button marked
-If the customer has used all the emergency credit and is still unable to afford to top-up, 
-please call the Home Ownership and Revenues Unit on 0114 27 35595.</p>
-
-
-          </div>
-        </details>
-
-                        <details class="details-accordion">
-          <summary>  Money Saving Advice </summary>
-          <div class="details-accordion-content">
-            
-
-<p>Please call Home Ownership and Revenues Unit on 0114 2735595.</p>
-
-
-          </div>
-        </details>
-
-        
-
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
-  },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
-  {
-    type: "Information",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing"],
-  },
-  { date: "10/10/2024", name: "George Whitehouse" }
-);
-
-
-
-   
-  
-  
- 
-  
- 
-
- 
-  
-  
- 
-  
-
 
 const tenancySustainment = new MenuH(
   "tenancySustainment",
@@ -6887,149 +6945,15 @@ const tenancySustainment = new MenuH(
   [
     fences,
     fobsandKeys,
-    nameChanges,
     housingServiceParkingPermits,
+    nameChanges,
     permissions,
     tenancyAgreementRequest,
     tenancyConditions
   ]
 );
 
- const adaptations = new MenuH(
-   "adaptations", 
-   "Adaptations", 
-   "Adaptations Menu",
-   [
-    chaseProgressOfAdaptation,
-    otherAdaptationRequest
-  ]
- );
-  
-  
-  
-  const assetManagementAndRepairs = new MenuH(
-    "assetManagementAndRepairs",
-    "Asset Management And Repairs",
-    "",
-    [
-      newAndExistingRepairs,
-      adaptations,
-      asbestos,
-      communalAerials,
-      communalAreas,
-      doorEntrySystems,
-      emergencyRepairs,
-      loststolenkeys,
-      programmedWorks,
-      communalAreasFireSafety,
-      tenantsOwnImprovements,
-      districtHeating,
-      emergencyCredit,
-      homeImprovementRequests,
-      homeownerDisconnection,
-      payment,
-      refunds
-    ]
-  );
-const shelteredAndSupported = new MenuH(
-  "shelteredAndSupported",
-  "Sheltered and Supported",
-  "Older persons independent living, extra care housing, furnished accommodation, and gypsy and travellers",
-  [
-    furnishedAccommodation,
-    olderPersonsIndependentLiving,
-    extraCareHousing,
-    gypsyAndTravellers,
-  ]
-);
-
-
-const estatesAndEnvironments = new MenuH(
-    "estatesAndEnvironments",
-    "Estates and Environments",
-    "Bin chutes, communal cupboard, fences, firesafety and garden maintenance",
-    [
-      fencesCouncilHousing,
-      gardenPledgeScheme,
-      blockedBinChutes,
-      communalCupboard,
-      communalFireSafety
-    ]
-  );
-const housingBenefits = new MenuH(
-    "housingBenefits",
-    "Housing benefits",
-    "Information about housing benefits",
-    [
-      contactHousingBenefits,
-      benefitCap,
-      benefitClaim,
-      benefitsClawback,
-      benefitFraud,
-      benefitOnTwoHomes,
-      changeOfCircumstances,
-      localAssistanceScheme,
-      pdsa,
-      universalCredits,
-      welfareReform 
-    ]
-  );  
-
-const policy = new MenuH(
-  "policy",
-  "Rehousing policy",
-  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
-  [
-    allocationsPolicyGuidance,
-    applicantPlacedInAPriorityBand,
-    fosteringAndAdoption,
-    priorityBandingTable,
-    threeOffersDemotedorDisqualified,
-  ]
-);
-
-
-
-const idReferencesMenu = new MenuH(
-  "idReferencesMenu",
-  "Rehousing ID / References ",
-  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
-  [acceptableId, idReferences, idFaq, movingIn, mutualExchanges, referencesFAQs]
-);
-
-
-const rehousing = new MenuH(
-  "rehousing",
-  "Rehousing",
-  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
-  [
-    applyForRehousing,
-    applicationChanges,
-    housingAssociations,
-    eligibility,
-    bidding,
-    //idReferencesMenu,
-    //policy,
-    priorities,
-    PropertyOffersAndViewings,
-  ]
-);
- const rents = new MenuH(
-    "rents",
-    "Rents",
-    "Information about Housing Rents",
-    [
-      arrearsorDebt,
-      balanceEnquiry,
-      //insurance,
-      //onlineServices,
-      references,
-      rentVariation,
-      statements,
-      universalCredit,
-      contactRentsTeam
-    ]
-  );
+//#endregion Tenancy Management Tenancy Sustainment
 
   // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
   // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -7038,5 +6962,19 @@ const rehousing = new MenuH(
     "housing",
     "Housing",
     "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
-    [estatesAndEnvironments, housingBenefits, generalCouncilHousing, assetManagementAndRepairs, leaseholderInformation, rehousing, rents, shelteredAndSupported, tenancyEnforcementASB, tenancySustainment, idReferencesMenu, policy, adaptations]
+    [
+      adaptations,
+      assetManagementAndRepairs, 
+      estatesAndEnvironments, 
+      generalCouncilHousing, 
+      housingBenefits, 
+      leaseholderInformation, 
+      rehousing, 
+      idReferencesMenu, 
+      policy, 
+      rents, 
+      shelteredAndSupported, 
+      tenancyEnforcementASB, 
+      tenancySustainment, 
+    ]
   );
