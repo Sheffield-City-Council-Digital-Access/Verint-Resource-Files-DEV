@@ -159,16 +159,25 @@ const bedBugTreatment = new ContentPaN(
         Before we can provide treatment for bed bugs in your domestic property, we
         will need a sample of the pest.
       </p>
-      <p>You can either bring your sample to:</p>
+      <p>
+        You can either bring your sample to:
+      </p>
       <address>
-        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+        First Point,<br>
+        Howden House,<br>
+        1 Union Street,<br>
+        Sheffield,<br>
+        S1 2SH
       </address>
-      <p>Or you can post your sample to:</p>
+      <p>
+        Or you can post your sample to:
+      </p>
       <address>
-        Environmental Services<br />
-        Block B, Staniforth Road Depot<br />
-        Staniforth Road<br />
-        Sheffield, S9 3HD
+        Environmental Services<br>
+        Block B, Staniforth Road Depot<br>
+        Staniforth Road<br>
+        Sheffield,<br>
+        S9 3HD
       </address>
       <p>
         Please ensure your sample is in a secure, crush-proof container, alive or
@@ -182,7 +191,7 @@ const bedBugTreatment = new ContentPaN(
         <li>Where in the property the insects have been found</li>
       </ul>
       <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk"admin.envserv@sheffield.gov.uk</a>.
+        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
       </p>
     </section>
     <h3>Cost for Treatment</h3>
@@ -216,9 +225,8 @@ const bedBugTreatment = new ContentPaN(
         <p>
           For bed bug treatment enquiries related to Commercial, Health Authority, Industrial, and
           University properties, please email your request to
-          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
-            >EnvironmentalServicesAdmin@sheffield.gov.uk</a
-          >. We will assess your request and provide you with a quote for the treatment.
+          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">EnvironmentalServicesAdmin@sheffield.gov.uk</a>. 
+          We will assess your request and provide you with a quote for the treatment.
         </p>
       </div>
     </details>
@@ -226,13 +234,9 @@ const bedBugTreatment = new ContentPaN(
       <p>
         If your enquiry doesn't fall into any of the above categories, we will need to
         refer your 
-        <a href="${window.location.protocol}//${
-    window.location.hostname
-  }/form/launch/pest_control_technician?${
-    KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : ""
-  }interactionid=${KDF.getParams().interactionid}">report to a technician</a>
+        <a href="${window.location.protocol}//${window.location.hostname}/form/launch/pest_control_technician?${
+        KDF.getParams().customerid? `customerid=${KDF.getParams().customerid}&`: ""
+        }interactionid=${KDF.getParams().interactionid}">report to a technician</a>
         for further investigation.
       </p>
     </section>
@@ -271,9 +275,8 @@ const birdsandPigeonsTreatment = new ContentPaN(
           For bird and pigeons treatment enquiries related to Commercial, Health
           Authority, Industrial, and University properties, please email your
           request to
-          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
-            >EnvironmentalServicesAdmin@sheffield.gov.uk</a
-          >. We will assess your request and provide you with a quote for the
+          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">EnvironmentalServicesAdmin@sheffield.gov.uk</a>. 
+          We will assess your request and provide you with a quote for the
           treatment.
         </p>
       </div>
