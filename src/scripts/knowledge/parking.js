@@ -223,7 +223,7 @@ const bluBadgeHolderPassedAway = new ContentP(
 const blueBadge = new MenuP(
   "blueBadge",
   "Blue Badge",
-  "Apply, replace or chance and existing application",
+  "Apply, replace or change and existing application",
   [
     applyBlueBadge,
     replacementBlueBadge,
@@ -240,6 +240,11 @@ const businessPermit = new ContentP(
   "Business Permit",
   "About the Business Permit",
   `
+  <h3>When is a business permit required?</h3>		
+    <p>
+      You will need a permit if your business is in a parking permit zone and 
+      you want to use on street parking spaces.
+    </p>
 		<p>There are two types of business permit available:</p>
 		<ul>
 			<li>
@@ -306,6 +311,16 @@ const businessPermit = new ContentP(
 			Failure to provide proof of vehicle registration and/or proof of your address
 			will result in cancellation of the permit/s with no refund.
 		</p>
+    <p>
+      When you purchase your parking permit you need to send proof of eligibility 
+      to ppproofs@sheffield.gov.uk within 3 days 
+      (if you have not been requested to do so in the application process). 
+      At any time after this while you hold a permit we may require you to provide proof 
+      of your vehicle registration and your home or business address as part of 
+      regular audit checks. If this is requested please submit them to 
+      customerservices@sheffield.gov.uk
+    </p>
+
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -333,7 +348,7 @@ const businessPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "27/11/2024", name: "Andy walker" }
 );
 
 const carerPermitAndMedical = new ContentP(
@@ -367,6 +382,15 @@ const carerPermitAndMedical = new ContentP(
 				need care at home (dated within the last 3 months)
 			</li>
 		</ul>
+      <p>
+        When you purchase your parking permit you need to send proof of eligibility 
+        to ppproofs@sheffield.gov.uk within 3 days 
+        (if you have not been requested to do so in the application process). 
+        At any time after this while you hold a permit we may require you to provide proof 
+        of your vehicle registration and your home or business address as part of 
+        regular audit checks. If this is requested please submit them to 
+        customerservices@sheffield.gov.uk
+      </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -394,7 +418,7 @@ const carerPermitAndMedical = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "27/11/2024", name: "Andy walker" }
 );
 
 const organisationCarer = new ContentP(
@@ -444,6 +468,15 @@ const organisationCarer = new ContentP(
 			<li>How many permits are required</li>
 			<li>Why the permit is required</li>
 		</ul>
+    <p>
+      When you purchase your parking permit you need to send proof of eligibility 
+      to ppproofs@sheffield.gov.uk within 3 days 
+      (if you have not been requested to do so in the application process). 
+      At any time after this while you hold a permit we may require you to provide proof 
+      of your vehicle registration and your home or business address as part of 
+      regular audit checks. If this is requested please submit them to 
+      customerservices@sheffield.gov.uk
+    </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -471,12 +504,12 @@ const organisationCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/11/2024", name: "Andy Walker" }
+  { date: "27/11/2024", name: "Andy Walker" }
 );
 
 const medicalProfessionalCarer = new ContentP(
   "medicalProfessionalCarer",
-  "Medical Professional Carer",
+  "Medical Professional Carer (NHS)",
   "",
   `
     <h3>About the Permit</h3>
@@ -514,6 +547,15 @@ const medicalProfessionalCarer = new ContentP(
       <li>How many permits are required</li>
       <li>Why the permit is required</li>
     </ul>
+    <p>
+      When you purchase your parking permit you need to send proof of eligibility 
+      to ppproofs@sheffield.gov.uk within 3 days 
+      (if you have not been requested to do so in the application process). 
+      At any time after this while you hold a permit we may require you to provide proof 
+      of your vehicle registration and your home or business address as part of 
+      regular audit checks. If this is requested please submit them to 
+      customerservices@sheffield.gov.uk
+    </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -541,7 +583,7 @@ const medicalProfessionalCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "27/11/2024", name: "Andy Walker" }
 );
 
 const greenParkingPermit = new ContentP(
@@ -566,10 +608,6 @@ const greenParkingPermit = new ContentP(
 			receive a parking fine.
 		</p>
 		<p>Permits will not be issued for any period less than 12 months.</p>
-		<p>
-			The permit is paperless and will be activated up to 36 hours after it has been
-			paid for.
-		</p>
 		<h3>Cost</h3>
 		<p>Green permits are free.</p>
 		<h3>Time Limits</h3>
@@ -601,6 +639,32 @@ const greenParkingPermit = new ContentP(
 				are indicated by yellow signs.
 			</li>
 		</ul>
+    <h3>Changing your permit vehicle registration</h3>
+		<p>
+    You can change the vehicle that your permit is for by sending your name and address
+    and new vehicle registration details to customerservices@sheffield.gov.uk
+	  </p>
+    <h3>Eligibility</h3>
+    <p>
+      A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the 
+      following criteria to park in the city centre for free. 
+      Anyone with an eligible vehicle can apply for it.
+    </p>
+    <p>The vehicle must be:</p>
+    <ul>
+      <li>electric or hybrid fuel type</li>
+      <li>
+      emit less than 75g of carbon dioxide (CO2) per kilometre travelled, with a capability of 
+      travelling a minimum range of 10 miles with zero CO2 emissions
+      </li>
+    </ul>
+    <p>
+    You can use the DVLA checker to see if your vehicle meets these standards. 
+    It may show 0g on the CO2 emissions for some diesel vehicles as this data is not 
+    on their records. Such vehicles are not ULEVs and do not qualify for a 
+    green parking permit. You will need to provide evidence that your vehicle 
+    meets the required standard to qualify for a green permit.
+    </p>
  	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -682,6 +746,15 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
 			<li>Vehicle insurance certificate</li>
 			<li>Company car: also include a letter on company headed paper</li>
 		</ul>
+    <p>
+    When you purchase your parking permit you need to send proof of eligibility 
+    to ppproofs@sheffield.gov.uk within 3 days 
+    (if you have not been requested to do so in the application process). 
+    At any time after this while you hold a permit we may require you to provide proof 
+    of your vehicle registration and your home or business address as part of 
+    regular audit checks. If this is requested please submit them to 
+    customerservices@sheffield.gov.uk
+    </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -709,7 +782,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "27/11/2024", name: "Andy Walker" }
 );
 
 const residentsPermit = new ContentP(
@@ -773,6 +846,15 @@ const residentsPermit = new ContentP(
 			Failure to provide proof of vehicle registration and/or proof of your address
 			will result in cancellation of the permit(s) with no refund.
 		</p>
+    <p>
+      When you purchase your parking permit you need to send proof of eligibility 
+      to ppproofs@sheffield.gov.uk within 3 days 
+      (if you have not been requested to do so in the application process). 
+      At any time after this while you hold a permit we may require you to provide proof 
+      of your vehicle registration and your home or business address as part of 
+      regular audit checks. If this is requested please submit them to 
+      customerservices@sheffield.gov.uk
+    </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -800,14 +882,19 @@ const residentsPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "27/11/2024", name: "Andy Walker" }
 );
 
 const staffPermit = new ContentP(
   "staffPermit",
   "Staff Permit",
   "",
-  `<p>No Information Provided</p>`,
+  `<p>
+    Staff who need to apply for a parking permit should contact Facilities Management 
+    for assistance. Full details on how to apply for a staff parking permit can be 
+    found on the <a href="https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit" 
+    target="_blank">https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.</p>
+  `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -883,6 +970,15 @@ const tradePermit = new ContentP(
 				registered Housing Association
 			</li>
 		</ul>
+    <p>
+    When you purchase your parking permit you need to send proof of eligibility 
+    to ppproofs@sheffield.gov.uk within 3 days 
+    (if you have not been requested to do so in the application process). 
+    At any time after this while you hold a permit we may require you to provide proof 
+    of your vehicle registration and your home or business address as part of 
+    regular audit checks. If this is requested please submit them to 
+    customerservices@sheffield.gov.uk
+    </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -910,7 +1006,7 @@ const tradePermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "27/11/2024", name: "Andy Walker" }
 );
 
 const utilityPermit = new ContentP(
@@ -929,6 +1025,10 @@ const utilityPermit = new ContentP(
 		</p>
 		<h3>Costs</h3>
 		<p class="cost">£193.75 for a book of 25 half day passes.</p>
+    <p>
+      Ask customer to email customerservices@sheffield.gov.uk to ask if they can order a 
+      utility permit - service will respond with a link to order the permit.
+		</p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -956,7 +1056,7 @@ const utilityPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "27/11/2024", name: "Andy Walker" }
 );
 
 const visitorsPermits = new ContentP(
@@ -1012,6 +1112,73 @@ const visitorsPermits = new ContentP(
 				details)
 			</li>
 		</ul>
+    <p>
+      When you purchase your parking permit you need to send proof of eligibility 
+      to ppproofs@sheffield.gov.uk within 3 days 
+      (if you have not been requested to do so in the application process). 
+      At any time after this while you hold a permit we may require you to provide proof 
+      of your vehicle registration and your home or business address as part of 
+      regular audit checks. If this is requested please submit them to 
+      customerservices@sheffield.gov.uk
+    </p>
+	`,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "27/11/2024", name: "Andy Walker" }
+);
+
+const makingAPayment = new ContentP(
+  "makingAPayment",
+  "Making A Payment",
+  "",
+  `
+    <p>
+      It is quick, safe, and secure to make a payment online or using our automated
+      telephone payment line. To do this, you will need:
+    </p>
+    <ul>
+      <li>Ticket reference number (can be found on Gateway)</li>
+      <li>Credit or debit card</li>
+      <li>Your vehicle registration number</li>
+    </ul>
+    <p>The customer must  enter ** on their keypad in place of the FD letters 
+    at the start of entering their pcn number</p>
+    <p>Alternatively, you can:</p>
+    <ul>
+      <li>Pay at a pay point outlet by cash</li>
+      <li>Pay at a Post Office by cash, cheque, credit, or debit card</li>
+    </ul>
+    <p>
+      Sheffield City Council does not accept cash, cheque, or postal orders direct.
+    </p>
+    <p>
+     Payments are taken at the same time as the 
+     application is made and the permit is then active immediately.
+    </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -1042,26 +1209,15 @@ const visitorsPermits = new ContentP(
   { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
-const makingAPayment = new ContentP(
-  "makingAPayment",
-  "Making A Payment",
+const customerPaidTwice = new ContentP(
+  "customerPaidTwice",
+  "Customer Has Paid Twice ",
   "",
   `
     <p>
-      It is quick, safe, and secure to make a payment online or using our automated
-      telephone payment line. To do this, you will need:
+      The customer needs to email customerservices@sheffield.gov.uk advising 
+      the issue they experienced, customer services will then look into the issue
     </p>
-    <ul>
-      <li>Ticket reference number (can be found on Gateway)</li>
-      <li>Credit or debit card</li>
-      <li>Your vehicle registration number</li>
-    </ul>
-    <p>Alternatively, you can:</p>
-    <ul>
-      <li>Pay at a pay point outlet by cash</li>
-      <li>Pay at a Post Office by cash, cheque, credit, or debit card</li>
-    </ul>
-    <p>Sheffield does not accept cash, cheque, or postal orders direct.</p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -1089,7 +1245,7 @@ const makingAPayment = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "27/11/2024", name: "Andy Walker" }
 );
 
 const confirmationOfPayment = new ContentP(
@@ -1206,7 +1362,10 @@ const customerTriedToPayOnline = new ContentP(
 			therefore the customer may have incorrect details. The ticket details can be
 			confirmed on Gateway.
 		</p>
-		<p>The VRM should be entered without spaces along with the full PCN number.</p>
+		<p>
+      The Vehicle Registration Number (VRN) should be entered without spaces along 
+      with the full Penalty Charge Notice (PCN) number.
+    </p>
 		<p>
 			Check the person entering the details has entered the VRM without spaces and
 			entered the full PCN number.
@@ -1238,7 +1397,7 @@ const customerTriedToPayOnline = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "27/11/2024", name: "Andy Walker" }
 );
 
 const customerHasPaidTwice = new ContentP(
@@ -1246,7 +1405,10 @@ const customerHasPaidTwice = new ContentP(
   "Customer Has Paid Twice",
   "",
   `   
-    <p>Escalation</p>
+    <p>
+    The customer needs to email parkingservices@sheffield.gov.uk advising 
+    the car registration number and ticket number in the subject box of the email
+    </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -1274,7 +1436,7 @@ const customerHasPaidTwice = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "27/11/2024", name: "Andy Walker" }
 );
 
 const howCanIAppeal = new ContentP(
@@ -1295,6 +1457,11 @@ const howCanIAppeal = new ContentP(
     <p>
       Do not discuss any possible outcomes or give your opinions. Parking services
       will contact the customer following the decision.
+    </p>
+    <p>
+      Appeals should always be made online however, if you are unable to make 
+      an online appeal, you can email parkingservices@sheffield.gov.uk 
+      explaining the reason for the appeal
     </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -1504,9 +1671,10 @@ const enforcementbaliffenquiries = new ContentP(
 			the appropriate enforcement agency.
 		</p>
 		<p>
-			If the customer states they moved address before any correspondence was sent
-			out then refer them to Traffic Regulation Centre(TFC) - TFC will provide
-			information how to appeal.
+			If the customer states they moved address before any correspondence was 
+      sent out, then refer them to the Traffic Enforcement Centre (TEC) - 
+      TEC will provide information on how to appeal. The contact details for 
+      TEC are: 03001231059
 		</p>
 		<h3>Person is not living at that address</h3>
 		<p>
@@ -1562,6 +1730,12 @@ const illegalParking = new ContentP(
     <p>
       Please note: “H” and Disabled road markings are only advisory and are not
       legally enforceable in the same way as yellow lines.
+    </p>
+    <p>
+      If the vehicle is contraveing any highway restrictions i.e. parked on 
+      Double Yellow Lines then advise the customer to contact parking enforcement 
+      on 01142736255.  If a vehicle is causing an obstruction or blocking acess 
+      then advise the customer to contact the police on 101.
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -1654,7 +1828,12 @@ const carParkParkingMeterProblem = new ContentP(
   "Car Park/Parking Meter Problem",
   "Information relating to Car Park/Parking Meter Problem",
   `
-    <p>Escalation</p>
+    <p>
+    If the customer is reporting an issue with a parking meter/machine fault, 
+    they need to contact Parking Enforcement on 0114 2736255. Any issues 
+    around refunds need to be put in writing to 
+    parkingenforcement@sheffield.gov.uk
+    </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -1682,7 +1861,7 @@ const carParkParkingMeterProblem = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "27/11/2024", name: "Dinah WIlliams" }
 );
 
 const baySuspensions = new ContentP(
@@ -1732,10 +1911,10 @@ const baySuspensions = new ContentP(
       You can pay by credit card, debit card, or BACS.
     </p>
     <p>
-      The daily charge per 5m section of bay is £15 for City Centre controlled
-      parking zone, with a non-refundable administration fee of £25. The daily
+      The daily charge per 5m section of bay is £17.90 for City Centre controlled
+      parking zone, with a non-refundable administration fee of £29.85. The daily
       charge per 5m section of bay is £5 for all other areas, with a non-refundable
-      administration fee of £25.
+      administration fee of £29.85.
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -1806,7 +1985,7 @@ const yellowLineDispensations = new ContentP(
     </p>
     <p>
       Full payment is required before dispensation can be granted. There is a charge
-      of £15 per vehicle per day for a dispensation as well as a £25 non-refundable
+      of £17.90 per vehicle per day for a dispensation as well as a £29.85 non-refundable
       administration fee.
     </p>
 	`,
@@ -1905,7 +2084,7 @@ const parkingIssues = new MenuP(
 );
 const parkingPermits = new MenuP(
   "parkingPermit",
-  "Parking Services",
+  "Parking Permits",
   "Provides a range of information on ordering, cancelling or paying for permits and the costs associated",
   [
     businessPermit,
@@ -1920,6 +2099,7 @@ const parkingPermits = new MenuP(
     utilityPermit,
     visitorsPermits,
     makingAPayment,
+    customerPaidTwice,
   ]
 );
 
