@@ -381,11 +381,10 @@ const biscuitBeetlesTreatment = new ContentPaN(
       </summary>
       <div class="accordion-content">
         <p>
-          For Biscuit Beetles treatment enquiries related to Commercial and House in Multiple Occuption, 
+          For Biscuit Beetles treatment enquiries related to Commercial and House of Multiple Occuption, 
           please email your request to
-          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
-            >EnvironmentalServicesAdmin@sheffield.gov.uk</a
-          >. We will assess your request and provide you with a quote for the treatment.
+          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">EnvironmentalServicesAdmin@sheffield.gov.uk</a>. 
+          We will assess your request and provide you with a quote for the treatment.
         </p>
       </div>
     </details>
@@ -430,7 +429,7 @@ const bumbleBeesTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      If the pests located in a communal area (The area that is shared by multiple Council Housing properties) or 
+      If the pests are located in a communal area (The area that is shared by multiple Council Housing properties) or 
       required treatment for a domestic properties such as Council Housing, Housing Association, Privately Owned, Private Rented,
       then the treatment cost for Bumble Bees is £75.50.
     </p>
@@ -584,7 +583,7 @@ const carpetBeetlesTreatment = new ContentPaN(
       </summary>
       <div class="accordion-content">
         <p>
-          For Carpet Beetles treatment enquiries related to Commercial and House in Multiple Occuption, 
+          For Carpet Beetles treatment enquiries related to Commercial and House of Multiple Occuption, 
           please email your request to
           <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
             >EnvironmentalServicesAdmin@sheffield.gov.uk</a
@@ -626,9 +625,9 @@ const carpetBeetlesTreatment = new ContentPaN(
   { date: "27/11/2024", name: "Nathan Smith" }
 );
 
-const clusterFilesTreatment = new ContentPaN(
-  "clusterFilesTreatment",
-  "Cluster Files Treatment",
+const clusterFliesTreatment = new ContentPaN(
+  "clusterFliesTreatment",
+  "Cluster Flies Treatment",
   "Information about Cluster Flies treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
@@ -668,7 +667,7 @@ const clusterFilesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Cluster Files is £110.00. This is based on a standard size
+      The treatment cost for Cluster Flies is £110.00. This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
@@ -690,14 +689,14 @@ const clusterFilesTreatment = new ContentPaN(
     </p>
   `,
   {
-    buttonLabel: "Book treatment for Cluster Files",
+    buttonLabel: "Book treatment for Cluster Flies",
     formName: "pest_control_treatment",
   },
   { typeKey: "pest_control_transfer_to_service" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Cluster Files", "Treatment", "Pests", "Vermin"],
+    keywords: ["Cluster Flies", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
@@ -954,15 +953,15 @@ const dermestesBeetlesTreatment = new ContentPaN(
   { date: "27/11/2024", name: "Nathan Smith" }
 );
 
-const filesTreatment = new ContentPaN(
-  "filesTreatment",
-  "Files Treatment",
-  "Information about Files Treatment and services",
+const fliesTreatment = new ContentPaN(
+  "fliesTreatment",
+  "Flies Treatment",
+  "Information about Flies Treatment and services",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
       <p>
-        Before we can provide treatment for Files in your domestic property, we
+        Before we can provide treatment for Flies in your domestic property, we
         will need a sample of the pest.
       </p>
       <p>You can either bring your sample to:</p>
@@ -996,7 +995,7 @@ const filesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Files is £110.00. This is based on a standard size
+      The treatment cost for Flies is £110.00. This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
@@ -1018,14 +1017,14 @@ const filesTreatment = new ContentPaN(
     </p>
   `,
   {
-    buttonLabel: "Book treatment for Files",
+    buttonLabel: "Book treatment for Flies",
     formName: "pest_control_treatment",
   },
   { typeKey: "pest_control_transfer_to_service" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Files", "Treatment", "Pests", "Vermin"],
+    keywords: ["Flies", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
@@ -2541,11 +2540,11 @@ const pestControl = new MenuPaN(
     biscuitBeetlesTreatment,
     bumbleBeesTreatment,
     carpetBeetlesTreatment,
-    clusterFilesTreatment,
+    clusterFliesTreatment,
     cockroachesTreatment,
     cricketsTreatment,
     dermestesBeetlesTreatment,
-    filesTreatment,
+    fliesTreatment,
     fleasTreatment,
     foxesInformation,
     FrogsorFrogspawn,
