@@ -3164,7 +3164,7 @@ const bidding = new ContentH(
             <summary>Acis Group Ltd, tel <a href="tel:0142 7678000">0142 7678000</a></summary>
             <div class="details-accordion-content">
               <address>
-                Acis Group Ltd, tel 01427 678000<br>
+                Acis Group Ltd, tel <a href="tel:0142 7678000">0142 7678000</a><br>
                 Acis Group Limited<br>
                 Acis House<br>
                 Bridge Street<br>
