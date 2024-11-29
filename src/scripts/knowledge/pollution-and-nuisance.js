@@ -2767,10 +2767,29 @@ const whatIsACleanAirZone = new ContentPaN(
   "What Is A Clean Air Zone",
   "Information relating to the Clean Air Zone Scheme",
 `
-<p>A Clean Air Zone is a defined area of a town or city within which certain vehicles with more polluting engine standards are charged for entering.
-<p>It is not a congestion charging zone and, unlike some other cities, privately owned cars, motorbikes, and mopeds will not be charged.
-<p>The introduction of a Clean Air Zone aims to reduce exposure to nitrogen dioxide produced by road traffic to protect public health in areas where pollution levels exceed the maximum legal level. In Sheffield, this area includes the inner ring road and everything inside it.
-<p>See the Clean Air Zone map which may help when explaining the scheme to customers:</p>
+<p>
+  A Clean Air Zone is a defined area of a town or city within which certain
+  vehicles with more polluting engine standards are charged for entering.
+</p>
+<p>
+  It is not a congestion charging zone and, unlike some other cities, privately
+  owned cars, motorbikes, and mopeds will not be charged.
+</p>
+<p>
+  The introduction of a Clean Air Zone aims to reduce exposure to nitrogen
+  dioxide produced by road traffic to protect public health in areas where
+  pollution levels exceed the maximum legal level. In Sheffield, this area
+  includes the inner ring road and everything inside it.
+</p>
+<p>
+  See the Clean Air Zone map which may help when explaining the scheme to
+  customers:
+</p>
+<iframe
+  src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=209bfe53e5b34c06878e0f0d6c39ee88"
+  style="height: 400px; width: 100%"
+>
+</iframe>
 `,
 {
   buttonLabel: "",
