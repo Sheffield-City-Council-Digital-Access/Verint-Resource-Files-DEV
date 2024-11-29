@@ -2856,32 +2856,6 @@ const whatVehiclesWillBeCharged = new ContentPaN(
 { date: "06/11/2024", name: "Dinah Williams" }
 );
 
-const whenWillDriversBeCharged = new ContentPaN(
-  "Whenwilldriversbecharged",
-  "When Will Drivers Be Charged",
-  "Information relating to when drivers will be charged",
-`
-<p>The Clean Air Zone charges in Sheffield will not start until spring 2023.</p>
-`,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance",],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
-
 const howMuchWillDriversBeCharged = new ContentPaN(
   "howMuchWillDriversBeCharged",
   "How much will drivers be charged",
@@ -3028,7 +3002,6 @@ const cleanAirZone = new MenuPaN(
   [ whatIsACleanAirZone,
     whyIsACleanAirZoneBeingIntroduced,
     whatVehiclesWillBeCharged,
-    whenWillDriversBeCharged,
     howMuchWillDriversBeCharged,
     howWillDriversBeCharged,
     howAreChargesPaid,
