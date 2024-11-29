@@ -938,9 +938,9 @@ const emergencyRepairs = new ContentH(
             <p>If you have an emergency outside normal working hours, at weekends, or Bank Holidays, please phone:</p> 
 
             <ul>
-              <li>0114 273 5555 (after 8pm) for burst pipes, boarding up doors and windows, no electricity supply, and all heating breakdowns. This number will divert to Out of Hours Repairs service.</li> 
-              <li>0800 111 999 for gas leaks.</li> 
-              <li>0114 273 7693 for lift breakdowns.</li> 
+              <li><a href="tel:0114 2735555">0114 2735555</a> (after 8pm) for burst pipes, boarding up doors and windows, no electricity supply, and all heating breakdowns. This number will divert to Out of Hours Repairs service.</li> 
+              <li><a href="tel:0800 111999">0800 111999</a> for gas leaks.</li> 
+              <li><a href="tel:0114 2737693">0114 2737693</a> for lift breakdowns.</li> 
             </ul>
           </div>
         </details>
@@ -974,7 +974,7 @@ const homeImprovementRequests = new ContentH(
   "",
   `
   <p>
-    Please Call the RPIT on 0114 2052615 for permission requests to carry out work/home 
+    Please Call the RPIT on <a href="tel:0114 2052615">0114 2052615</a> for permission requests to carry out work/home 
     improvements to the District Heating Network i.e. replacing radiators. Required 
     maintenance to resolve unauthorised work to the District Hearting network will be invoiced to the tenant/homeowner.
   </p>
@@ -1006,7 +1006,7 @@ const homeownerDisconnection = new ContentH(
   "",
   `
   <p>
-    Please call the Home Ownership and Revenues Unit on 27 35595 for further 
+    Please call the Home Ownership and Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a> for further 
     information on homeowner requests regarding disconnection from the District Heating network. 
     Disconnection charges apply as referenced in the property’s sale conveyance. 
     SCC properties will not be disconnected from the District Heating network.
@@ -1141,7 +1141,7 @@ const noHeatNoWater = new ContentH(
     <li> The District Heating Meter location may vary but is usually located in the property airing cupboard. Does The Meters Home Screen say ON in the top right corner? Is your heating programmer turned on? </li>
     <li> To activate an emergency credit, press the blue button, marked ‘Press For Em Credit’ as instructed by the meters home screen. This will allow the tenant to ‘borrow’ credit up to £10.00 which will connect your heat and hot water supply for a short time. This is simply a loan and will need to be repaid on receipt of the prepayment information/number which will be with them shortly. </li>
     <li> If the Meters screen in blank or shows something similar to ‘D bug’ then the customer can reboot the G6 unit by pressing the blue and orange button together for 10 seconds. </li>
-    <li>If the reboot is unsuccessful or for any other repair, please call the Repairs line on 27 35555</li>
+    <li>If the reboot is unsuccessful or for any other repair, please call the Repairs line on <a href="tel:0114 2735555">0114 2735555</a></li>
   </ol>
 
   `,
@@ -1197,7 +1197,7 @@ and in addition a copy of the Budget Plan information and Direct Debit mandate w
         <p>This is a prepayment method which allows the customer to pay for heating by making set monthly Direct Debit instalments 
         based on anticipated usage. Monthly instalments would then be periodically adjusted to reflect the actual heat 
         and hot water used in the property. 
-        Please call Home Ownership and Revenues Unit on 0114 27 35595</p>
+        Please call Home Ownership and Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a></p>
       </div>
     </details>
 
@@ -1208,14 +1208,14 @@ and in addition a copy of the Budget Plan information and Direct Debit mandate w
         however they will be supplied with a Budget Plan Direct Debit mandate in their new tenancy welcome information pack and 
         in addition a copy of the Budget Plan information and Direct Debit mandate will be posted separately. 
         If the customer wishes to amend the method by which they pay for the heat they use, 
-        please call Home Ownership and Revenues Unit on 0114 27 35595</p>
+        please call Home Ownership and Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a></p>
       </div>
     </details>
 
     <details class="details-accordion">
       <summary>Replace Pay as you go Card</summary>
       <div class="details-accordion-content">
-        <p>The customer must call Switch 2 on 03333212010.</p>
+        <p>The customer must call Switch 2 on <a href="tel:0114 2735595">0333 3212010</a>.</p>
       </div>
     </details>
 
@@ -1228,14 +1228,14 @@ and in addition a copy of the Budget Plan information and Direct Debit mandate w
         The emergency credit facility becomes available when the meters credit value reaches £1.00 or less. 
         To activate, press the blue button marked. 
         If the customer has used all the emergency credit and is still unable to afford to top-up, 
-        please call the Home Ownership and Revenues Unit on 0114 27 35595.</p>
+        please call the Home Ownership and Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a>.</p>
       </div>
     </details>
 
     <details class="details-accordion">
       <summary>  Money Saving Advice </summary>
       <div class="details-accordion-content">
-        <p>Please call Home Ownership and Revenues Unit on 0114 2735595.</p>
+        <p>Please call Home Ownership and Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a>.</p>
       </div>
     </details>
 
@@ -1415,7 +1415,7 @@ const refunds = new ContentH(
     Pay As You Go refunds are not made unless the tenant has vacated the property.<br>
     Once their rent account has been closed, customers are entitled to a full refund as long as their remaining 
     Pay As You Go balance is £10.00 or greater please ask the tenant to call Home Ownership 
-    and Revenues Unit on 0114 27 35595 once their rent account has been closed. 
+    and Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a> once their rent account has been closed. 
   </p>
   `,
   { buttonLabel: "Report Rents Refunds ", formName: "hou_rents_refunds" },
@@ -1855,7 +1855,7 @@ const benefitCap = new ContentH(
       </ul>
       <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html" target="_blank">https://www.sheffield.gov.uk/council-tax.html</a></p>
       <p><strong>Service area:</strong> Sheffield Benefits Service</p>
-      <p><strong>Telephone number:</strong> 0114 27 36777</p>
+      <p><strong>Telephone number:</strong> <a href="tel:0114 2736777">0114 2736777</a></p>
       <p><strong>Email address:</strong> <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a> or <a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></p>
     `,
     { buttonLabel: "Benefit claim", formName: "" },
@@ -2102,7 +2102,7 @@ const contactHousingBenefits = new ContentH(
     </ul>
     <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html" target="_blank">https://www.sheffield.gov.uk/council-tax.html</a></p>
     <p><strong>Service area:</strong> Sheffield Benefits Service</p>
-    <p><strong>Telephone number:</strong> 0114 27 36777</p>
+    <p><strong>Telephone number:</strong> <a href="tel:0114 2736777">0114 2736777</a></p>
     <p><strong>Email address:</strong> <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a> or 
     <a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></p>
 
@@ -2115,7 +2115,7 @@ const contactHousingBenefits = new ContentH(
     </ul>
     <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html" target="_blank">https://www.sheffield.gov.uk/council-tax.html</a></p>
     <p><strong>Service area:</strong> Council tax</p>
-    <p><strong>Telephone number:</strong> 0114 27 36633 (public number)</p>
+    <p><strong>Telephone number:</strong> <a href="tel:0114 2736633">0114 2736633</a> (public number)</p>
     <p><strong>Further information:</strong> Lines open 8:30-5:30</p>
     <p><strong>Email address:</strong> <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></p>
   `,
@@ -3161,10 +3161,10 @@ const bidding = new ContentH(
         </summary>
         <div class="accordion-content">
           <details class="details-accordion">
-            <summary>Acis Group Ltd, tel 01427 678000</summary>
+            <summary>Acis Group Ltd, tel <a href="tel:0142 7678000">0142 7678000</a></summary>
             <div class="details-accordion-content">
               <address>
-                Acis Group Ltd, tel 01427 678000<br>
+                Acis Group Ltd, tel <a href="tel:0142 7678000">0142 7678000</a><br>
                 Acis Group Limited<br>
                 Acis House<br>
                 Bridge Street<br>
@@ -3183,10 +3183,10 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Anchor Trust, tel 03457 758595</summary>
+            <summary>Anchor Trust, tel <a href="tel:0345 7758595">0345 7758595</a></summary>
             <div class="details-accordion-content">
               <address>
-                Anchor Trust, tel 03457 758595<br>
+                Anchor Trust, tel <a href="tel:0345 7758595">0345 7758595</a><br>
                 Customer Centre<br>
                 2 Godwin Street,<br>
                 Bradford,<br>
@@ -3201,10 +3201,10 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Arches Housing Association, tel 0114 2288100</summary>
+            <summary>Arches Housing Association, tel <a href="tel:0114 2288100">0114 2288100</a></summary>
             <div class="details-accordion-content">
               <address>
-                Arches Housing Limited, tel 0114 2288100<br>
+                Arches Housing Limited, tel <a href="tel:0114 2288100">0114 2288100</a><br>
                 122 Burngreave Road<br>
                 Sheffield<br>
                 S3 9DE<br>
@@ -3221,20 +3221,20 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Clarion Housing Group, tel 0330 500 8000</summary>
+            <summary>Clarion Housing Group, tel <a href="tel:0330 5008000">0330 5008000</a></summary>
             <div class="details-accordion-content">
               <p>
-                Clarion Housing Group, tel 0330 500 8000<br>
+                Clarion Housing Group, tel <a href="tel:0330 5008000">0330 5008000</a><br>
                 Mix of housing types including some sheltered schemes. Need to be 18+. Points based system.
               </p>
             </div>
           </details>
   
           <details class="details-accordion">
-            <summary>Together Group with Pennine, tel 0845 270 1088</summary>
+            <summary>Together Group with Pennine, tel <a href="tel:0845 2701088">0845 2701088</a></summary>
             <div class="details-accordion-content">
               <address>
-                Together Group with Pennine, tel 0845 270 1088<br>
+                Together Group with Pennine, tel <a href="tel:0845 2701088">0845 2701088</a><br>
                 Harrison Street<br>
                 Wakefield<br>
                 WF1 1PS
@@ -3246,10 +3246,10 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>English Churches Housing Group / The Riverside Group, tel 0345 111 0000</summary>
+            <summary>English Churches Housing Group / The Riverside Group, tel <a href="tel:0345 1110000">0345 1110000</a></summary>
             <div class="details-accordion-content">
               <address>
-                English Churches Housing Group / The Riverside Group, tel 0345 1559002<br>
+                English Churches Housing Group / The Riverside Group, tel <a href="tel:0345 1559002">0345 1559002</a><br>
                 2 Estuary Boulevard<br>
                 Estuary Commerce Park<br>
                 Liverpool<br>
@@ -3263,10 +3263,10 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Great Places Housing Group, tel 0300 123 1966</summary>
+            <summary>Great Places Housing Group, tel <a href="tel:0300 1231966">0300 1231966</a></summary>
             <div class="details-accordion-content">
               <address>
-                Great Places Housing Group, tel 0300 123 1966<br>
+                Great Places Housing Group, tel <a href="tel:0300 1231966">0300 1231966</a><br>
                 2a Derwent Avenue<br>
                 Manchester<br>
                 M21 7QP<br>
@@ -3281,10 +3281,10 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Guinness Northern Counties, tel 0303 123 1890</summary>
+            <summary>Guinness Northern Counties, tel <a href="tel:0303 1231890">0303 1231890</a></summary>
             <div class="details-accordion-content">
               <address>
-                Guinness Northern Counties, tel 0303 123 1890<br>
+                Guinness Northern Counties, tel <a href="tel:0303 1231890">0303 1231890</a><br>
                 St Helens Court,<br>
                 Stirling Cl,<br>
                 Elsecar,<br>
@@ -3300,10 +3300,10 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Home Group, tel 03451414663</summary>
+            <summary>Home Group, tel <a href="tel:0345 1414663">0345 1414663</a></summary>
             <div class="details-accordion-content">
               <address>
-                Home Group, tel 03451414663<br>
+                Home Group, tel <a href="tel:0345 1414663">0345 1414663</a><br>
                 Home Group Ltd<br>
                 2nd Floor, 20 Westfield Terrace<br>
                 Sheffield<br>
@@ -3317,10 +3317,10 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Housing 21, tel 0370 192 4000</summary>
+            <summary>Housing 21, tel <a href="tel:0370 1924000">0370 1924000</a></summary>
             <div class="details-accordion-content">
               <address>
-                Housing 21, tel 0370 192 4000<br>
+                Housing 21, tel <a href="tel:0370 192 4000">0370 192 4000</a><br>
                 Tricorn House<br>
                 51–53 Hagley Road<br>
                 Birmingham<br>
@@ -3334,10 +3334,10 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Johnnie Johnson Housing Trust Ltd, tel 0345 305 5335</summary>
+            <summary>Johnnie Johnson Housing Trust Ltd, tel <a href="tel:0345 3055335">0345 3055335</a></summary>
             <div class="details-accordion-content">
               <address>
-                Johnnie Johnson Housing Trust Ltd, tel 0345 305 5335<br>
+                Johnnie Johnson Housing Trust Ltd, tel <a href="tel:0345 3055335">0345 3055335</a><br>
                 Eden Point,<br>
                 Three Acres Lane,<br>
                 Cheadle Hulme,<br>
@@ -3352,10 +3352,10 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Padley, tel 0114 2666626</summary>
+            <summary>Padley, tel <a href="tel:0114 2666626">0114 2666626</a></summary>
             <div class="details-accordion-content">
               <address>
-                Padley, tel 0114 2666626<br>
+                Padley, tel <a href="tel:0114 2666626">0114 2666626</a><br>
                 208 Crookes<br>
                 S10 1TG<br>
                 <a href="mailto:sheffieldcrookeslettings@hunters.com" target="_blank">sheffieldcrookeslettings@hunters.com</a>
@@ -3367,10 +3367,10 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Places for People, tel 01132858923</summary>
+            <summary>Places for People, tel <a href="tel:0113 2858923">0113 2858923</a></summary>
             <div class="details-accordion-content">
               <p>
-                Places for People, tel 01132858923<br>
+                Places for People, tel <a href="tel:0113 2858923">0113 2858923</a><br>
                 Mix of housing types, offered generally 18+ but in some cases will take 16+. There are 3 waiting lists:
               </p>
               <ul>
@@ -3382,10 +3382,10 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Sanctuary, tel 08001313348</summary>
+            <summary>Sanctuary, tel <a href="tel:0800 1313348">0800 1313348</a></summary>
             <div class="details-accordion-content">
               <address>
-                Sanctuary, tel 0800 131 3348<br>
+                Sanctuary, tel <a href="tel:0800 1313348">0800 1313348</a><br>
                 In Person:<br>
                 Sanctuary Housing Association<br>
                 36a Beck Road<br>
@@ -3411,10 +3411,10 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Sheffield Jewish Housing Association, tel 01142554318</summary>
+            <summary>Sheffield Jewish Housing Association, tel <a href="tel:0114 2554318">0114 2554318</a></summary>
             <div class="details-accordion-content">
               <address>
-                Sheffield Jewish Housing Association, tel 0114 255 4318<br>
+                Sheffield Jewish Housing Association, tel <a href="tel:0114 2554318">0114 2554318</a><br>
                 22 Kingfield Road<br>
                 Sheffield<br>
                 S11 9AS
@@ -3426,11 +3426,11 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>South Yorkshire Housing Association, tel 01142900200 / 0800138380</summary>
+            <summary>South Yorkshire Housing Association, tel <a href="tel:0114 2900200">0114 2900200</a> / <a href="tel:0800 1380380">0800 1380380</a></summary>
             <div class="details-accordion-content">
               <address>
                 South Yorkshire Housing Association<br>
-                tel 01142900200 / 08001380380<br>
+                tel <a href="tel:0114 2900200">0114 2900200</a> / <a href="tel:0800 1380380">0800 1380380</a><br>
                 152 Rockingham Street,<br>
                 Sheffield<br>
                 S1 4EB
@@ -3445,11 +3445,11 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Together Housing Group, tel 01422 284500</summary>
+            <summary>Together Housing Group, tel <a href="tel:0142 2284500">0142 2284500</a></summary>
             <div class="details-accordion-content">
               <address>
                 Together Housing Group<br>
-                Tel: 01422 284500<br>
+                Tel: <a href="tel:0142 2284500">0142 2284500</a><br>
                 Bull Green House<br>
                 Bull Green<br>
                 Halifax<br>
@@ -3459,10 +3459,10 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Yorkshire Housing, tel 0345 36644040</summary>
+            <summary>Yorkshire Housing, tel <a href="tel:0345 36644040">0345 36644040</a></summary>
             <div class="details-accordion-content">
               <address>
-                Yorkshire Housing, tel 0345 36644040<br>
+                Yorkshire Housing, tel <a href="tel:0345 36644040">0345 36644040</a><br>
                 The Place<br>
                 2 Central Place<br>
                 Leeds<br>
@@ -5048,7 +5048,7 @@ const contactRentsTeam = new ContentH(
                 <strong>Service Area:</strong> Income Management & Financial Inclusion Team.
             </p>
             <p>
-                <strong>Telephone Number:</strong> 0114 20 52910
+                <strong>Telephone Number:</strong> <a href="tel:0114 2052910">0114 2052910</a>
             </p>
             <p>
                 <strong>Email Address:</strong> <a href="mailto:homesrentcourt@sheffield.gov.uk">homesrentcourt@sheffield.gov.uk</a>
@@ -5094,7 +5094,7 @@ const contactRentsTeam = new ContentH(
                 <strong>Service Area:</strong> Revenues and Benefits.
             </p>
             <p>
-                <strong>Telephone Number:</strong> 0114 27 36983.
+                <strong>Telephone Number:</strong> <a href="tel:0114 2736983">0114 2736983</a>.
             </p>
             <p>
                 <strong>Further Information:</strong> Revenues and Benefits Client Team, PO Box 1283, Town Hall, Sheffield S1 1UL.
@@ -5119,7 +5119,7 @@ const contactRentsTeam = new ContentH(
                 <strong>Service Area:</strong> DWP.
             </p>
             <p>
-                <strong>Telephone Number:</strong> 0345 605 7064.
+                <strong>Telephone Number:</strong> <a href="tel:0345 6057064">0345 6057064</a>.
             </p> 
         </div>
     </details>
@@ -5138,7 +5138,7 @@ const contactRentsTeam = new ContentH(
                 <strong>Service Area:</strong> Housing Benefit.
             </p>
             <p>
-                <strong>Telephone Number:</strong> 0114 27 34199.
+                <strong>Telephone Number:</strong> <a href="tel:0114 2734199">0114 2734199</a>.
             </p>
             <p>
                 <strong>Email Address:</strong> <a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a>
@@ -5156,7 +5156,7 @@ const contactRentsTeam = new ContentH(
                 <strong>Service Area:</strong> Income Management & Financial Inclusion Team.
             </p>
             <p>
-                <strong>Telephone Number:</strong> 0114 20 52909.
+                <strong>Telephone Number:</strong> <a href="tel:0114 2052909">0114 2052909</a>.
             </p>
             <p>
                 <strong>Email Address:</strong> <a href="mailto:Homesrentincome@sheffield.gov.uk">Homesrentincome@sheffield.gov.uk</a>.
@@ -5274,7 +5274,7 @@ const rentVariation = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            Any OHMS Rent system issues can be reported through the IT Service Desk, Tel: 0114 2734476.
+            Any OHMS Rent system issues can be reported through the IT Service Desk, Tel: <a href="tel:0114 2734476">0114 2734476</a>.
         </p>
         <p>The rent-free weeks this year will be weeks commencing:</p>
         <ul>
@@ -5604,11 +5604,11 @@ const extraCareHousing = new ContentH(
 
     <h3>Extra Care Contact Details</h3>
     <p>
-      Guildford Grange, Norfolk Park. Contact the scheme on 0114 203 7888<br />
-      The Meadows, Shirecliffe. Contact the scheme on 0114 243 5749<br />
-      Brunswick Gardens, Woodhouse. Contact the scheme on 0114 294 0000<br />
-      Roman Ridge, Wincobank. Contact the scheme on 0114 2800540<br />
-      White Willows, Jordanthorpe. Contact the scheme on 0114 2377960.
+      Guildford Grange, Norfolk Park. Contact the scheme on <a href="tel:0114 2037888">0114 2037888</a><br>
+      The Meadows, Shirecliffe. Contact the scheme on <a href="tel:0114 2435749">0114 2435749</a><br>
+      Brunswick Gardens, Woodhouse. Contact the scheme on <a href="tel:0114 2940000">0114 2940000</a><br>
+      Roman Ridge, Wincobank. Contact the scheme on <a href="tel:0114 2800540">0114 2800540</a><br>
+      White Willows, Jordanthorpe. Contact the scheme on <a href="tel:0114 2377960">0114 2377960</a>.
     </p>
     <p>
       People need to be registered on the Council’s Housing Register but also need
@@ -5847,7 +5847,7 @@ const gypsyAndTravellers = new ContentH(
     <p>
       Environmental Protection Services deal with questions or enquiries around any
       roadside encampments or any other kind of unauthorised encampments, on
-      <a href="tel:01142734651">01142734651</a>.
+      <a href="tel:0114 2734651">0114 2734651</a>.
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -6108,7 +6108,7 @@ const tenancyEnforcementASB = new ContentH(
     </ul>
     <h3>Sanctuary Scheme/Target hardening</h3>
     <p>Service Area: Action Domestic Abuse (Sanctuary Scheme)</p>
-    <p>Telephone Number: Helpline No: 08088 082 241; Office No. 0114 270 6999</p>
+    <p>Telephone Number: Helpline No: <a href="tel:0808 8082241">0808 8082241</a>; Office No. <a href="tel:0114 2706999">0114 2706999</a></p>
     <p>Email Address: <a href="mailto:sanctuary.scheme@actionorg.uk">sanctuary.scheme@actionorg.uk</a></p>
     <p>South Yorkshire Fire and Rescue Service can fit blank letter boxes if there are concerns regarding harmful items being posted through the door. The Neighbourhood Officer can make a referral to SYF&amp;R for a Home Safety check.</p>
     <p>Neighbourhood Teams may have stock of target hardening equipment.</p>
@@ -6283,7 +6283,7 @@ const housingServiceParkingPermits = new ContentH(
   ` 
 <p>
 <strong>Service Area:</strong> Customer Services Back Office (Fulfilment Team)<br>
-<strong>Telephone Number:</strong>0114 2734011<br>
+<strong>Telephone Number:</strong> <a href="tel:0114 2734011">0114 2734011</a><br>
 <strong>Further Information:</strong> Free School Meals, Blue Badge, Parking Permits, Children's Travel Pass, Disability Travel Permit, 
 Streets Ahead, Environmental Services, Local Assistance Scheme<br>
 <strong>Email Address:</strong> <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>

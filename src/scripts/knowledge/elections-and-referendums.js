@@ -111,8 +111,8 @@ const canvassForm = new ContentEaR(
 
 const ccaCCBorCanvassForms = new ContentEaR(
   "ccaCCBorCanvassForms",
-  "CCA CCB or Canvass Form",
-  "CCA CCB or Canvass Forms - People that do not live at the address",
+  "CCB or Canvass Form",
+  "CCB or Canvass Forms - People that do not live at the address",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1456,7 +1456,7 @@ const electoralRegisterConfirmationLetter = new ContentEaR(
     </section>
     <p>
       Letters can be requested from Electoral Services for Proof of Registration.
-      This only provides evidence that osmeone is registeted at an address, not that
+      This only provides evidence that someone is registeted at an address, not that
       they are resident. We can only send this confirmaiton letter by post to the
       registered address.
     </p>
@@ -2226,7 +2226,7 @@ const familyTreeorGenealogy = new ContentEaR(
       Properties are then sorted by address order - not by name.
     </p>
     <p>
-      Sheffield Archives May be able to offer more support in this area.
+      Sheffield Archives may be able to offer more support in this area.
     </p>
   `,
   { buttonLabel: "", formName: "" },
