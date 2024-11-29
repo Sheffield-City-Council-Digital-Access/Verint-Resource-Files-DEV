@@ -80,9 +80,18 @@ const badgerProtection = new ContentPaN(
       confiscate any dogs used in offences against Badgers and disqualify the
       offender from owning a dog.
     </p>
-<p>
-  For more information, please visit <a href="http://www.syorksbadgergroup.org.uk" target="_blank">http://www.syorksbadgergroup.org.uk</a>.
-</p>
+    <p>
+      For more information, please visit: <a href="http://www.syorksbadgergroup.org.uk" target="_blank">http://www.syorksbadgergroup.org.uk</a>.
+    </p>
+    <p>
+      You can also visit the government website at: <a href="https://www.gov.uk/guidance/badgers-protection-surveys-and-licences" target="_blank">https://www.gov.uk/guidance/badgers-protection-surveys-and-licences</a>.
+      <br>
+      <br>
+      or
+      <br>
+      <br>
+      RPSCA information site at: <a href="https://www.rspca.org.uk/adviceandwelfare/wildlife/badgers/law" target="_blank">https://www.rspca.org.uk/adviceandwelfare/wildlife/badgers/law</a>.
+    </p>
   `,
   {
     buttonLabel: "",
@@ -2758,10 +2767,29 @@ const whatIsACleanAirZone = new ContentPaN(
   "What Is A Clean Air Zone",
   "Information relating to the Clean Air Zone Scheme",
 `
-<p>A Clean Air Zone is a defined area of a town or city within which certain vehicles with more polluting engine standards are charged for entering.
-<p>It is not a congestion charging zone and, unlike some other cities, privately owned cars, motorbikes, and mopeds will not be charged.
-<p>The introduction of a Clean Air Zone aims to reduce exposure to nitrogen dioxide produced by road traffic to protect public health in areas where pollution levels exceed the maximum legal level. In Sheffield, this area includes the inner ring road and everything inside it.
-<p>See the Clean Air Zone map which may help when explaining the scheme to customers:</p>
+<p>
+  A Clean Air Zone is a defined area of a town or city within which certain
+  vehicles with more polluting engine standards are charged for entering.
+</p>
+<p>
+  It is not a congestion charging zone and, unlike some other cities, privately
+  owned cars, motorbikes, and mopeds will not be charged.
+</p>
+<p>
+  The introduction of a Clean Air Zone aims to reduce exposure to nitrogen
+  dioxide produced by road traffic to protect public health in areas where
+  pollution levels exceed the maximum legal level. In Sheffield, this area
+  includes the inner ring road and everything inside it.
+</p>
+<p>
+  See the Clean Air Zone map which may help when explaining the scheme to
+  customers:
+</p>
+<iframe
+  src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=209bfe53e5b34c06878e0f0d6c39ee88"
+  style="height: 400px; width: 100%"
+>
+</iframe>
 `,
 {
   buttonLabel: "",
@@ -2828,32 +2856,6 @@ const whatVehiclesWillBeCharged = new ContentPaN(
   </ul>
   <p>Vehicle owners can check whether they will be charged in Sheffield, and for other Clean Air Zones elsewhere, via the government’s online vehicle checker: Clean Air Zones."</p>
   `,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance",],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const whenWillDriversBeCharged = new ContentPaN(
-  "Whenwilldriversbecharged",
-  "When Will Drivers Be Charged",
-  "Information relating to when drivers will be charged",
-`
-<p>The Clean Air Zone charges in Sheffield will not start until spring 2023.</p>
-`,
 {
   buttonLabel: "",
   formName: "",
@@ -3019,7 +3021,6 @@ const cleanAirZone = new MenuPaN(
   [ whatIsACleanAirZone,
     whyIsACleanAirZoneBeingIntroduced,
     whatVehiclesWillBeCharged,
-    whenWillDriversBeCharged,
     howMuchWillDriversBeCharged,
     howWillDriversBeCharged,
     howAreChargesPaid,
