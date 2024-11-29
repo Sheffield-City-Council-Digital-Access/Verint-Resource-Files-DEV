@@ -827,12 +827,9 @@ const whereDoIVote = new ContentEaR(
       </p>
     </section>
     <iframe
-      src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=2c10878d034544718d4ea5c733b03559"
+      src="https://sheffieldcc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=0247a5d9717149b1b85bfcb821e41e3a"
       style="height: 400px; width: 100%"
     ></iframe>
-    <p>
-      SERVICE HAS NOT PROVIDED THE LINK FOR 'WHERE DO I VOTE?
-    </p>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "elections_and_voting_transferred_to_service" },
@@ -855,7 +852,7 @@ const whereDoIVote = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/09/2024", name: "Shahzad Athar" }
+  { date: "29/11/2024", name: "Nathan Smith" }
 );
 
 const electionsAndVoting = new MenuEaR(
