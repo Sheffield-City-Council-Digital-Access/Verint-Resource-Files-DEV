@@ -80,9 +80,18 @@ const badgerProtection = new ContentPaN(
       confiscate any dogs used in offences against Badgers and disqualify the
       offender from owning a dog.
     </p>
-<p>
-  For more information, please visit <a href="http://www.syorksbadgergroup.org.uk" target="_blank">http://www.syorksbadgergroup.org.uk</a>.
-</p>
+    <p>
+      For more information, please visit: <a href="http://www.syorksbadgergroup.org.uk" target="_blank">http://www.syorksbadgergroup.org.uk</a>.
+    </p>
+    <p>
+      You can also visit the government website at: <a href="https://www.gov.uk/guidance/badgers-protection-surveys-and-licences" target="_blank">https://www.gov.uk/guidance/badgers-protection-surveys-and-licences</a>.
+      <br>
+      <br>
+      or
+      <br>
+      <br>
+      RPSCA information site at: <a href="https://www.rspca.org.uk/adviceandwelfare/wildlife/badgers/law" target="_blank">https://www.rspca.org.uk/adviceandwelfare/wildlife/badgers/law</a>.
+    </p>
   `,
   {
     buttonLabel: "",
