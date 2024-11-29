@@ -4113,11 +4113,7 @@ const referencesFAQs = new ContentH(
   "References FAQs",
   "",
   `
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>References FAQs</h3>
-            <div class="accordion-icon"></div>
-        </summary>
+    <h3>References FAQs</h3>
         <div class="accordion-content">
 
             <details class="details-accordion">
@@ -4229,8 +4225,6 @@ const referencesFAQs = new ContentH(
             to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
             <strong>Documents can be uploaded via the property shop website.</strong>
         </p>
-
-    </details>
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
