@@ -320,6 +320,11 @@ const businessPermit = new ContentP(
       regular audit checks. If this is requested please submit them to 
       customerservices@sheffield.gov.uk
     </p>
+    <p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+    </p>
+
 
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -348,7 +353,7 @@ const businessPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "27/11/2024", name: "Andy walker" }
+  { date: "02/12/2024", name: "Andy walker" }
 );
 
 const carerPermitAndMedical = new ContentP(
@@ -391,6 +396,10 @@ const carerPermitAndMedical = new ContentP(
         regular audit checks. If this is requested please submit them to 
         customerservices@sheffield.gov.uk
       </p>
+      <p>
+      For further information, visit 
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+      </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -418,7 +427,7 @@ const carerPermitAndMedical = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "27/11/2024", name: "Andy walker" }
+  { date: "02/12/2024", name: "Andy walker" }
 );
 
 const organisationCarer = new ContentP(
@@ -477,6 +486,10 @@ const organisationCarer = new ContentP(
       regular audit checks. If this is requested please submit them to 
       customerservices@sheffield.gov.uk
     </p>
+      <p>
+      For further information, visit 
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+      </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -504,7 +517,7 @@ const organisationCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "27/11/2024", name: "Andy Walker" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const medicalProfessionalCarer = new ContentP(
@@ -556,6 +569,10 @@ const medicalProfessionalCarer = new ContentP(
       regular audit checks. If this is requested please submit them to 
       customerservices@sheffield.gov.uk
     </p>
+    <p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+    </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -583,7 +600,7 @@ const medicalProfessionalCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "27/11/2024", name: "Andy Walker" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const greenParkingPermit = new ContentP(
@@ -665,6 +682,10 @@ const greenParkingPermit = new ContentP(
     green parking permit. You will need to provide evidence that your vehicle 
     meets the required standard to qualify for a green permit.
     </p>
+      <p>
+      For further information, visit 
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+      </p>
  	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -755,6 +776,10 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     regular audit checks. If this is requested please submit them to 
     customerservices@sheffield.gov.uk
     </p>
+    <p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+    </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -782,7 +807,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "27/11/2024", name: "Andy Walker" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const residentsPermit = new ContentP(
@@ -855,6 +880,10 @@ const residentsPermit = new ContentP(
       regular audit checks. If this is requested please submit them to 
       customerservices@sheffield.gov.uk
     </p>
+      <p>
+      For further information, visit 
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+      </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -882,7 +911,7 @@ const residentsPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "27/11/2024", name: "Andy Walker" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const staffPermit = new ContentP(
@@ -893,7 +922,12 @@ const staffPermit = new ContentP(
     Staff who need to apply for a parking permit should contact Facilities Management 
     for assistance. Full details on how to apply for a staff parking permit can be 
     found on the <a href="https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit" 
-    target="_blank">https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.</p>
+    target="_blank">https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.
+    </p>
+    <p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+    </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -921,7 +955,7 @@ const staffPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "02/12/2024", name: "Dinah WIlliams" }
 );
 
 const tradePermit = new ContentP(
@@ -979,6 +1013,10 @@ const tradePermit = new ContentP(
     regular audit checks. If this is requested please submit them to 
     customerservices@sheffield.gov.uk
     </p>
+    <p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+    </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -1006,7 +1044,7 @@ const tradePermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "27/11/2024", name: "Andy Walker" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const utilityPermit = new ContentP(
@@ -1029,6 +1067,10 @@ const utilityPermit = new ContentP(
       Ask customer to email customerservices@sheffield.gov.uk to ask if they can order a 
       utility permit - service will respond with a link to order the permit.
 		</p>
+      <p>
+      For further information, visit 
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+      </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -1056,7 +1098,7 @@ const utilityPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "27/11/2024", name: "Andy Walker" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const visitorsPermits = new ContentP(
@@ -1121,6 +1163,10 @@ const visitorsPermits = new ContentP(
       regular audit checks. If this is requested please submit them to 
       customerservices@sheffield.gov.uk
     </p>
+      <p>
+      For further information, visit 
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+      </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -1148,7 +1194,7 @@ const visitorsPermits = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "27/11/2024", name: "Andy Walker" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const makingAPayment = new ContentP(
@@ -1179,6 +1225,14 @@ const makingAPayment = new ContentP(
      Payments are taken at the same time as the 
      application is made and the permit is then active immediately.
     </p>
+    <p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+    </p>
+    <p>
+    How to make a payment, visit
+    <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank">Pay a Penalty Charge Notice</a>.
+  </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
@@ -1206,7 +1260,7 @@ const makingAPayment = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "02/12/2024", name: "Dinah WIlliams" }
 );
 
 const customerPaidTwice = new ContentP(

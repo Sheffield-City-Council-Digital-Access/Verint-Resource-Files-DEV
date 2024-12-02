@@ -122,6 +122,7 @@ const fundedEarlyLearning = new ContentSaC(
       From September 2025: <br />Eligible working parents of children from 9 months
       to school age will be entitled to 30 hours of childcare a week.
     </p>
+    <p>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
