@@ -599,7 +599,7 @@ const moneySupport = new ContentB(
   </details>
   <details class="accordion">
   <summary class="accordion-header">
-    <h3>Multiply: imrove your numeracy skills</h3>
+    <h3>Multiply: improve your numeracy skills</h3>
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">

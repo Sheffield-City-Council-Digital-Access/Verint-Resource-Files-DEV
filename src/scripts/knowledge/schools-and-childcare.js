@@ -116,15 +116,19 @@ const fundedEarlyLearning = new ContentSaC(
       visit the childcare choices page, there is an assessment tool offering
       families details of childcare support they might be eligible for and a link to
       apply to HMRC.
-      <a href="https://www.childcarechoices.gov.uk">https://www.childcarechoices.gov.uk</a>
+      <a href="https://www.childcarechoices.gov.uk" target="_blank">https://www.childcarechoices.gov.uk</a> 
     </p>
     <p>
       From September 2025: <br />Eligible working parents of children from 9 months
       to school age will be entitled to 30 hours of childcare a week.
     </p>
+    <p>
+      If the customer would like to raise an enquiry for information that is not provided here, transfer
+      them to Family HUBs Service on: <a href="tel:0114 273 5665">0114 273 5665</a>0114 273 5665
+    </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
+  { typeKey: "funded_early_learning_transferred_to_service" },
   { typeKey: "funded_early_learning_information_provided" },
   {
     type: "Apply",
@@ -135,6 +139,10 @@ const fundedEarlyLearning = new ContentSaC(
       "Fundeed Early Learning",
       "Funded Early Lerning",
       "Funded Eearly Learning",
+      "FEL",
+      "FIS",
+      "LAS",
+      "Free Early Learning",
       "Fundded",
       "Fuded",
       "Funned",
@@ -149,11 +157,11 @@ const fundedEarlyLearning = new ContentSaC(
       "Learnning",
       "Lurning",
       "Lreaning",
-      "Leanring",
+      "Leanring"
     ],
     categories: ["School and Childcare"],
   },
-  { date: "17/09/2024", name: "Gee Whitehouse" }
+  { date: "26/11/2024", name: "Nathan Smith" }
 );
 
 const freeSchoolMeals = new ContentSaC(
@@ -396,6 +404,9 @@ const freeSchoolMeals = new ContentSaC(
       "mial",
       "mel",
       "meall",
+      "FSM",
+      "FSV",
+      "SV"
     ],
     categories: ["School and Childcare"],
   },
@@ -647,6 +658,11 @@ const schoolFoodVoucher = new ContentSaC(
       "mial",
       "mel",
       "meall",
+      "FSM",
+      "Food",
+      "Food Voucher",
+      "School Food",
+      "School Voucher"
     ],
     categories: ["School and Childcare"],
   },
