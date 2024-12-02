@@ -328,7 +328,7 @@ const cityWideCareAlarms = new ContentDaMH(
   `
     
   `,
-  { buttonLabel: "Apply City Wide Care Alarms", formName: "City_Wide_Care_Alarms" },
+  { buttonLabel: "Apply City Wide Care Alarms", formName: "city_wide_care_alarm" },
   { typeKey: "city_wide_care_alarm_information_to_service" },
   { typeKey: "city_wide_care_alarm_information_provided" },
   {

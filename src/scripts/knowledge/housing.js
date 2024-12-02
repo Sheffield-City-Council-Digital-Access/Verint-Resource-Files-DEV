@@ -1561,8 +1561,8 @@ const blockedBinChutes = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Report",
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
@@ -5663,7 +5663,7 @@ const furnishedAccommodation = new ContentH(
     </p>
     <p>
       Properties are furnished with goods generally selected by the customer on a
-      choice basis to meet their needs on a 3 tiered service charge arrangement.
+      choice basis to meet their needs on a 3-tiered service charge arrangement.
       Fully furnished properties are decorated and carpeted throughout and curtains
       and tracks are provided and fitted.
     </p>
@@ -5691,7 +5691,7 @@ const furnishedAccommodation = new ContentH(
       points will add up to package you want; Gold, Silver or Bronze. A Bronze
       package for example costs £10 a week and you can have 10 points worth of
       furniture (this could include a table and chairs, a settee, a fridge freezer
-      and washing machine all at 2 points each and an arm chair and crockery pack at
+      and washing machine all at 2 points each and an armchair and crockery pack at
       1 point each). You can mix and match, depending on what furniture you already
       have.
     </p>
@@ -5706,7 +5706,7 @@ const furnishedAccommodation = new ContentH(
       including:
     </p>
     <ul>
-      <li>The age of the goods as they still may be under warranty</li>
+      <li>The age of the goods as they still may be under warranty.</li>
       <li>
         If damaged – the reason for the damage - must be fair wear and tear or
         manufacturing fault / defect.
@@ -5723,14 +5723,14 @@ const furnishedAccommodation = new ContentH(
       There are instances where financial hardship may be caused by the service
       charge and / or the customer has sourced their own goods now. The process of
       removing the service charge is known as Deed of Variation and it takes
-      approximately 10 weeks to complete as there are 2 notice periods with 28 day
+      approximately 10 weeks to complete as there are 2 notice periods with a 28 days
       cooling off periods legally built into them.
     </p>
     <h3>Furnished and Local Assistance Scheme (LAS)</h3>
     <p>
       Furnished provide the goods and deliver them to customers who have applied for
       the grant / goods via Local Assistance Scheme. Furnished may provide
-      installation at Council properties but do not perform installs at non Council
+      installation at Council properties but do not perform installs at non-Council
       properties.
     </p>
     <h3>Furnished on Demand</h3>
@@ -5749,7 +5749,7 @@ const furnishedAccommodation = new ContentH(
       <li>Applicants referred via a medical priority (Generally Band A).</li>
       <li>
         Other applicants who would not be able to access a property without the
-        Furnished Accommodation Service will be considered on a case by case basis
+        Furnished Accommodation Service will be considered on a case-by-case basis
         (Most of these will be under Band C in Allocations policy).
       </li>
     </ol>
@@ -5760,7 +5760,7 @@ const furnishedAccommodation = new ContentH(
     </p>
     <p>
       If the Customer does not meet the above criteria direct them to alternative
-      options such as St Vincent De Pauls , Local Assistance Scheme or Emmaus.
+      options such as St Vincent De Pauls, Local Assistance Scheme or Emmaus.
     </p>
     <h3>Furnished Delivery Schedule</h3>
     <p>
@@ -5796,14 +5796,19 @@ const gypsyAndTravellers = new ContentH(
   "Gypsy and Travellers",
   "desc tbd",
   `
-    <h3>Where are the official Gypsy and Traveller sits</h3>
+    <h3>Where are the official Gypsy and Traveller sites</h3>
     <address>
-      Long Acre View Holbrook Trading Estate<br />Holbrook<br />/Sheffield<br />S20
-      3FU
+      Long Acre View Holbrook Trading Estate<br>
+      Holbrook<br>
+      Sheffield<br>
+      S20 3FU
     </address>
+    <br>
     <address>
-      Redmires Caravan Park Redmires Lane<br />Lodge Moor<br />Sheffield<br />S10
-      4JZ
+      Redmires Caravan Park Redmires Lane<br>
+      Lodge Moor<br>
+      Sheffield<br>
+      S10 4JZ
     </address>
     <h3>What manages the sites?</h3>
     <p>
