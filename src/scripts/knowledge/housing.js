@@ -2365,7 +2365,10 @@ const contactHousingBenefits = new ContentH(
     
     <details class="FAQ">
       <summary class="accordion-header">
-
+      <h3>Accordion title</h3>
+        <div class="FAQ"></div>
+    </summary>
+    
       <details class="details-accordion">
       <summary>Will these changes affect me?</summary>
       <div class="details-accordion-content">
