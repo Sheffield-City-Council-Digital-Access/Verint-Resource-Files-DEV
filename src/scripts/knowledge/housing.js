@@ -6464,14 +6464,9 @@ const tenancyAgreementRequest = new ContentH(
   <p>
     If the request is urgent or for a former tenancy, you will need to visit your Area Office with relevant ID to obtain a copy of your Tenancy Agreement.
   </p>
+  <h3>Weekly Cost</h3>
 
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Weekly Cost</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content"> 
-      <p>
+  <p>
         Preferably, at least one piece of evidence must be from the Primary List, and at least one document should contain photographic identification.
       </p>
       <p>
@@ -6479,7 +6474,6 @@ const tenancyAgreementRequest = new ContentH(
         (for example, birth certificate, marriage certificate, or divorce/annulment papers), then a further piece of identity should be provided with a 
         photograph such as a photo-card driving license or valid passport.
       </p>
-
       <table>
         <tbody>
           <tr>
@@ -6523,8 +6517,6 @@ const tenancyAgreementRequest = new ContentH(
           </tr>
         </tbody>
       </table>
-    </div>
-  </details>
   `,
   { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
   { typeKey: "Tenancy_Sustainment_information_provided" },
