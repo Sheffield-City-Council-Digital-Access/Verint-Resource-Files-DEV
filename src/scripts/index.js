@@ -569,7 +569,13 @@ function handleOnReadyEvent(event, kdf) {
     }
   }
 
-  // --- UPDATE SESSION ---------------------------------------------------- \\
+  // --- SET EQUALITIES LINK ----------------------------------------------- \\
+
+  const formattedTitle = KDF.getVal("le_title").replace(/\s+/g, "-");
+  $("#equality-btn").attr(
+    "href",
+    `https://forms.sheffield.gov.uk/form/auto/equalities_monitoring?formTitle=${formattedTitle}&channel=web`
+  );
 
   storeDefaultValidationMessages();
 
