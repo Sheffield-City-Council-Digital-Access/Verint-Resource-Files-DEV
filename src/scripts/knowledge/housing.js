@@ -4113,118 +4113,134 @@ const referencesFAQs = new ContentH(
   "References FAQs",
   "",
   `
-    <h3>References FAQs</h3>
-        <div class="accordion-content">
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Why do I need to provide a reference?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Current SCC tenants are not required to submit a reference as the Council is already aware of 
+        their circumstances and tenancy history.<br>
+        References were introduced as part of the Allocations Policy. The purpose of this is for SCC to better 
+        understand the people who are currently on its Housing Register. <br>
+        SCC often has very little knowledge of the people on the register and therefore requesting a reference will help the Council to improve this.
+      </p>
+    </div>
+  </details>
 
-            <details class="details-accordion">
-                <summary>Why do I need to provide a reference?</summary>
-                <div class="details-accordion-content">
-                    <p>
-                        Current SCC tenants are not required to submit a reference as the Council is already aware of 
-                        their circumstances and tenancy history.<br>
-                        References were introduced as part of the Allocations Policy. The purpose of this is for SCC to better 
-                        understand the people who are currently on its Housing Register. <br>
-                        SCC often has very little knowledge of the people on the register and therefore requesting a reference will help the Council to improve this.
-                    </p>
-                </div>
-            </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Who can provide a reference?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        All customers other than current SCC tenants now need to provide a reference when joining the Housing Register. 
+        The following customers also need to provide a reference when creating a new application:
+    </p>
+    <ul>
+        <li>Housing Association tenants (Landlord needs to provide the reference)</li>
+        <li>Tenants of other Councils (Landlord needs to provide the reference)</li>
+        <li>Private rented tenants (Landlord needs to provide the reference - the landlord must not be a family member)</li>
+        <li>Owner occupiers - no need for a reference as bidding is restricted</li>
+        <li>Living with family/parents (18+ only, character reference is needed)</li>
+        <li>NFA/Living with friends (Character reference is needed)</li>
+    </ul>
+    <p>
+        For customers who currently do or have ever lived independently, the reference should be completed by their most recent landlord.
+        Advisor note: For customers who are unable to provide a landlord's reference, they must gain agreement from the 
+        Registration Team for what reference will be acceptable and they will send the professional reference form out.<br>
+        If the customer is advising that there would be a charge for the reference, the customer would be responsible for 
+        this charge. SCC will not pay landlords to provide a reference.
+    </p>
+    </div>
+  </details>
 
-            <details class="details-accordion">
-                <summary>Who can provide a reference?</summary>
-                <div class="details-accordion-content">
-                    <p>
-                        All customers other than current SCC tenants now need to provide a reference when joining the Housing Register. 
-                        The following customers also need to provide a reference when creating a new application:
-                    </p>
-                    <ul>
-                        <li>Housing Association tenants (Landlord needs to provide the reference)</li>
-                        <li>Tenants of other Councils (Landlord needs to provide the reference)</li>
-                        <li>Private rented tenants (Landlord needs to provide the reference - the landlord must not be a family member)</li>
-                        <li>Owner occupiers - no need for a reference as bidding is restricted</li>
-                        <li>Living with family/parents (18+ only, character reference is needed)</li>
-                        <li>NFA/Living with friends (Character reference is needed)</li>
-                    </ul>
-                    <p>
-                        For customers who currently do or have ever lived independently, the reference should be completed by their most recent landlord.
-                        Advisor note: For customers who are unable to provide a landlord's reference, they must gain agreement from the 
-                        Registration Team for what reference will be acceptable and they will send the professional reference form out.<br>
-                        If the customer is advising that there would be a charge for the reference, the customer would be responsible for 
-                        this charge. SCC will not pay landlords to provide a reference.
-                    </p>
-                </div>
-            </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to get a Landlords reference form?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Landlord references should be submitted using the SCC reference form. This can be found online on the 
+        Property Shop website. Customer should select:
+    </p>
+    <ul>
+        <li>Information header, select Identification and References</li>
+        <li>Scroll down to SCC Reference Template</li>
+        <li>Landlord reference forms are also available at local housing offices.</li>
+    </ul>
+    </div>
+  </details>
 
-            <details class="details-accordion">
-                <summary>How to get a Landlords reference form?</summary>
-                <div class="details-accordion-content">
-                    <p>
-                        Landlord references should be submitted using the SCC reference form. This can be found online on the 
-                        Property Shop website. Customer should select:
-                    </p>
-                    <ul>
-                        <li>Information header, select Identification and References</li>
-                        <li>Scroll down to SCC Reference Template</li>
-                        <li>Landlord reference forms are also available at local housing offices.</li>
-                    </ul>
-                </div>
-            </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How long do I have to provide the reference?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+  <div class="accordion-content">
+    <p>
+      You will have the same 28 days to provide the reference as they have for providing ID currently. This 
+      period starts from the day that the online application was submitted. Do not submit the application until 
+      you have all of the relevant documentation. If ID and a reference are not submitted within this time, the 
+      application will be cancelled and you will need to resubmit this online.
+    </p>
+  </div>
+  </details>
 
-            <details class="details-accordion">
-                <summary>How long do I have to provide the reference?</summary>
-                <div class="details-accordion-content">
-                    <p>
-                        You will have the same 28 days to provide the reference as they have for providing ID currently. This 
-                        period starts from the day that the online application was submitted. Do not submit the application until 
-                        you have all of the relevant documentation. If ID and a reference are not submitted within this time, the 
-                        application will be cancelled and you will need to resubmit this online.
-                    </p>
-                </div>
-            </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What will the reference be used for?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+  <div class="accordion-content">
+    <p>
+      The reference will be used along with the information supplied by the customer when completing their 
+      application online to determine which Band they should be placed in. The criteria for being placed in 
+      Band D or Band E can be found within the Allocations Policy. Customers will be notified in writing which 
+      Band they have been placed in and how to challenge this if they feel it is incorrect. Customers who have 
+      special or extenuating circumstances can request an Exception Request if they wish to do so. All such 
+      requests are assessed on their merits and the customer will be advised of the decision in writing.
+    </p>
+  </div>
+  </details>
 
-            <details class="details-accordion">
-                <summary>What will the reference be used for?</summary>
-                <div class="details-accordion-content">
-                    <p>
-                        The reference will be used along with the information supplied by the customer when completing their 
-                        application online to determine which Band they should be placed in. The criteria for being placed in 
-                        Band D or Band E can be found within the Allocations Policy. Customers will be notified in writing which 
-                        Band they have been placed in and how to challenge this if they feel it is incorrect. Customers who have 
-                        special or extenuating circumstances can request an Exception Request if they wish to do so. All such 
-                        requests are assessed on their merits and the customer will be advised of the decision in writing.
-                    </p>
-                </div>
-            </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Is a reference required for a change of circumstances?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A reference will only be required if the change being submitted is a change of address, or the Application 
+        is being changed to a Joint Application. If the customer is changing their address, a new reference would 
+        be required with the exception of current SCC tenants moving to another SCC property. In these cases, 
+        we would still not require a reference.
+      </p>
+    </div>
+  </details>
 
-            <details class="details-accordion">
-                <summary>Is a reference required for a change of circumstances?</summary>
-                <div class="details-accordion-content">
-                    <p>
-                        A reference will only be required if the change being submitted is a change of address, or the Application 
-                        is being changed to a Joint Application. If the customer is changing their address, a new reference would 
-                        be required with the exception of current SCC tenants moving to another SCC property. In these cases, 
-                        we would still not require a reference.
-                    </p>
-                </div>
-            </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Is a reference required as part of a renewal process?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers are not required to submit a reference as part of the renewals process, 
+        <strong>unless a new address is provided or</strong> the Application is being changed to a Joint Application.
+      </p>
+    </div>
+  </details>
 
-            <details class="details-accordion">
-                <summary>Is a reference required as part of a renewal process?</summary>
-                <div class="details-accordion-content">
-                    <p>
-                        No, customers are not required to submit a reference as part of the renewals process, 
-                        <strong>unless a new address is provided or</strong> the Application is being changed to a Joint Application.
-                    </p>
-                </div>
-            </details>
-
-        </div>
-
-        <h4>Customer cannot visit Area Office</h4>
-        <p>
-            Advisor Note: There are alternatives to visiting the area office yourself, such as asking your friends or family 
-            to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
-            <strong>Documents can be uploaded via the property shop website.</strong>
-        </p>
+  <h4>Customer cannot visit Area Office</h4>
+  <p>
+      Advisor Note: There are alternatives to visiting the area office yourself, such as asking your friends or family 
+      to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
+      <strong>Documents can be uploaded via the property shop website.</strong>
+  </p>
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
