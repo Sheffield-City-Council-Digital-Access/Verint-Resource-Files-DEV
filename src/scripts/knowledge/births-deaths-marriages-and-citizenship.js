@@ -373,7 +373,7 @@ const licensedWeddingVenues = new ContentBDMaC(
 
 const reRegisterABirth = new ContentBDMaC(
     "reRegisterABirth",
-    "Re-register a Birth",
+    "Make an appointment to Re-register a birth",
     "Desc tbc",
     `
   <p> Takes to <a href src= "#">form </a></p>

@@ -124,8 +124,13 @@ const fundedEarlyLearning = new ContentSaC(
     </p>
     <p>
       If the customer would like to raise an enquiry for information that is not provided here, transfer
-      them to Family HUBs Service on: <a href="tel:0114 273 5665">0114 273 5665</a>0114 273 5665
+      them to Family HUBs Service on: <a href="tel:0114 273 5665">0114 273 5665</a>
     </p>
+    <p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice" target="_blank">Childcare Funding, Support, and Advice</a>.
+    </p>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "funded_early_learning_transferred_to_service" },
@@ -161,7 +166,7 @@ const fundedEarlyLearning = new ContentSaC(
     ],
     categories: ["School and Childcare"],
   },
-  { date: "26/11/2024", name: "Nathan Smith" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const freeSchoolMeals = new ContentSaC(
@@ -197,7 +202,7 @@ const freeSchoolMeals = new ContentSaC(
     <p>
       If your child/ren is/are currently eligible for free school meals, they’ll
       remain eligible until they finish the phase of schooling (primary or
-      secondary) they’re in on 31 March 2023.
+      secondary) they’re in on 31 March 2025.
     </p>
     <h3>Change in circumstance</h3>
     <p>
@@ -213,6 +218,51 @@ const freeSchoolMeals = new ContentSaC(
       application form. If your child currently receives a free school meal and you
       start work, start to receive Working Tax Credit, or stop receiving one of the
       qualifying benefits you must notify us as soon as possible.
+    </p>
+    <h3>Free food supplement vouchers for October half-term holidays</h3>
+    <p>
+      We're pleased to inform you that the new Government will continue funding 
+      for the Household Support Fund. 
+      We will therefore provide a £15 food supplement voucher for:
+    </p>
+    <ul>
+      <li>Children who are in receipt of income-based free school meals</li>
+      <li>Families who receive income-assessed Early Years Support</li>
+      <li>Young people leaving their care setting (care leavers)</li>
+    </ul>
+    <p>
+      We will be issuing vouchers from the week beginning 21 October. 
+    </p>
+    <p>
+      You do not need to apply for the scheme. You will receive a letter 
+      automatically with details of how to access the food voucher.
+    </p>
+    <h4>How to redeem your voucher</h4>
+    <p>
+      Go to the <a href="https://www.selectyourcompliment.co.uk/" 
+      target="_blank">Edenred website</a> and follow the instructions below:
+    </p>
+    <ol>
+      <li>Enter your eCode from the letter</li>
+      <li>Choose your supermarket</li>
+      <li>Enter the amount</li>
+      <li>Go to checkout and complete your order</li>
+      <li>The voucher will arrive by email within 24 hours</li>
+      <li>Check your inbox for your voucher email and download your voucher</li>
+      <li>If you cannot find the voucher email, please check your junk/spam folder</li>
+    </ol>
+    <p>
+      Codes need to be activated within 3 months of the issue 
+      date (21 October) or they will be cancelled automatically. 
+      Once vouchers have been claimed on the Edenred website, 
+      they will be valid for 12 months.
+    </p>
+    <p>
+      If you have difficulty accessing the Edenred website, 
+      please contact your child's school for help in the first instance. 
+      You can also contact the Edenred helpline 
+      on <a href="tel:03334445932">0333 444 5932</a> 
+      or, if you live in Sheffield, contact the Free School Meals team.
     </p>
     <details class="accordion">
       <summary class="accordion-header">
@@ -312,17 +362,6 @@ const freeSchoolMeals = new ContentSaC(
           </div>
         </details>
         <details class="details-accordion">
-          <summary>What happens after I make my application?</summary>
-          <div class="details-accordion-content">
-            <p>
-              We will let the school know whether or not your child is entitled to
-              free school meals. Your child will then be able to take up their free
-              school meal if eligible. We may also contact you if we need further
-              information to process your application.
-            </p>
-          </div>
-        </details>
-        <details class="details-accordion">
           <summary>Can my claim be backdated?</summary>
           <div class="details-accordion-content">
             <p>
@@ -360,8 +399,30 @@ const freeSchoolMeals = new ContentSaC(
             </p>
           </div>
         </details>
-      </div>
-    </details>
+        <details class="details-accordion">
+          <summary>Do I need proof of my benefits?</summary>
+          <div class="details-accordion-content">
+            <p>No.</p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>Where do I apply?</summary>
+          <div class="details-accordion-content">
+            <p>Apply to the council where your school is, not where you live.</p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>When do I apply for FSM?</summary>
+          <div class="details-accordion-content">
+            <p>
+              They should apply when the child starts school, and add all children 
+              in the household aged 2 and over.
+              All school children receive universal free school meals, 
+              but not all are entitled to income-based free school meals,
+              which provide Pupil Premium/milk.
+            </p>
+          </div>
+        </details>
   `,
   {
     buttonLabel: "Apply for Free School Meals",
@@ -410,7 +471,7 @@ const freeSchoolMeals = new ContentSaC(
     ],
     categories: ["School and Childcare"],
   },
-  { date: "18/09/2024", name: "Dinah Willaims" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const schoolFoodVoucher = new ContentSaC(

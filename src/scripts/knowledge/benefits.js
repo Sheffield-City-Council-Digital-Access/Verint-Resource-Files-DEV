@@ -59,7 +59,7 @@ class FormB extends CoreB {
 const waysToReduceYourFuelBills = new ContentB(
   "waysToReduceYourFuelBills",
   "Ways to reduce your fuel bills",
-  "Description",
+  "More information on what support is available can be found here,.",
   `
     <p>
       If we are more efficient with our home energy use we can reduce our energy 
@@ -157,13 +157,13 @@ const waysToReduceYourFuelBills = new ContentB(
   { typeKey: "cost_of_living_scheme_transferred_to_service" },
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "05/11/2024", name: "Nathan Smith" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const findFoodSupportInSheffield = new ContentB(
   "findFoodSupportInSheffield",
   "Find food support in Sheffield",
-  "Description",
+  "Find information about what food support is available in Sheffield.",
   `
     <p>
       Food support in Sheffield can be found at: <a href="https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield" target="_blank">https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield</a>
@@ -173,13 +173,13 @@ const findFoodSupportInSheffield = new ContentB(
   { typeKey: "cost_of_living_scheme_transferred_to_service" },
   { typeKey: "cost_of_living_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "06/11/2024", name: "Nathan Smith" }
+  { date: "02/12/2024", name: "Andy walker" }
 );
 
 const applyForTheHouseholdSupportFund = new ContentB(
   "applyForTheHouseholdSupportFund",
   "Apply for the Household Support Fund",
-  "Description",
+  "Find more information and how to apply for the Household Support Fund.",
   `
     <p>
       This is a non-repayable grant to help people living in Sheffield with food and energy costs. It is funded by the UK Government.
@@ -274,13 +274,13 @@ const applyForTheHouseholdSupportFund = new ContentB(
   { typeKey: "cost_of_living_scheme_transferred_to_service" },
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "05/11/2024", name: "Nathan Smith" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const mapOfWelcomePlacesInSheffield = new ContentB(
   "mapOfWelcomePlacesInSheffield",
   "Map of Welcome Places in Sheffield",
-  "Description",
+  "Locations can be found here.",
   `
     <p>
       A map of Welcome Places in Sheffield can be found at: <a href="https://www.vas.org.uk/sheffield-living-crisis-map-of-support/" target="_blank">https://www.vas.org.uk/sheffield-living-crisis-map-of-support/</a>
@@ -290,13 +290,13 @@ const mapOfWelcomePlacesInSheffield = new ContentB(
   { typeKey: "cost_of_living_scheme_transferred_to_service" },
   { typeKey: "cost_of_living_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "06/11/2024", name: "Nathan Smith" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const moneySupport = new ContentB(
   "moneySupport",
   "Money support",
-  "Description",
+  "Find more information around Money Support here.",
   `
   <details class="accordion">
   <summary class="accordion-header">
@@ -725,13 +725,13 @@ const moneySupport = new ContentB(
   { typeKey: "cost_of_living_scheme_transferred_to_service" },
   { typeKey: "cost_of_living_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "06/11/2024", name: "Nathan Smith" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const foodSupport = new ContentB(
   "foodSupport",
   "Food support",
-  "Description",
+  "More information around Food Support can be found here.",
   `
   <details class="accordion">
   <summary class="accordion-header">
@@ -803,13 +803,13 @@ const foodSupport = new ContentB(
   { typeKey: "cost_of_living_transferred_to_service" },
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "07/11/2024", name: "Nathan Smith" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const energySupport = new ContentB(
   "energySupport",
   "Energy support",
-  "Description",
+  "Find more information about Energy Support here.",
   `
   <details class="accordion">
   <summary class="accordion-header">
@@ -1030,13 +1030,13 @@ const energySupport = new ContentB(
   { typeKey: "cost_of_living_transferred_to_service" },
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "08/11/2024", name: "Nathan Smith" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const howYouCanHelpYourCommunity = new ContentB(
   "howYouCanHelpYourCommunity",
   "How you can help your community",
-  "Description",
+  "Find ways you can help your community here.",
   `
   <details class="accordion">
   <summary class="accordion-header">
@@ -1189,13 +1189,13 @@ const howYouCanHelpYourCommunity = new ContentB(
   { typeKey: "cost_of_living_transferred_to_service" },
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "08/11/2024", name: "Nathan Smith" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const supportForBusinesses = new ContentB(
   "supportForBusinesses",
   "Support for businesses",
-  "Description",
+  "Find what support is available for your business here.",
   `
   <details class="accordion">
     <summary class="accordion-header">
@@ -1890,13 +1890,13 @@ const supportForBusinesses = new ContentB(
   { typeKey: "cost_of_living_transferred_to_service" },
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "08/11/2024", name: "Nathan Smith" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const travelSupport = new ContentB(
   "travelSupport",
   "Travel support",
-  "Description",
+  "Find out what support is available around Travel.",
   `
   <details class="accordion">
   <summary class="accordion-header">
@@ -2009,7 +2009,7 @@ const travelSupport = new ContentB(
 const employmentSupport = new ContentB(
   "employmentSupport",
   "Employment support",
-  "Description",
+  "Find more information about Energy Support here.",
   `
     <p>
       Information about employment support from Opportunity Sheffield can be found at: 
@@ -2026,7 +2026,7 @@ const employmentSupport = new ContentB(
 const welcomePlaces = new ContentB(
   "welcomePlaces",
   "Welcome Places",
-  "Description",
+  "Information around Welcome Places.",
   `
     <p>
       Information about the Building Thriving Communities Programme can be found at: 
@@ -2037,46 +2037,7 @@ const welcomePlaces = new ContentB(
   { typeKey: "cost_of_living_transferred_to_service" },
   { typeKey: "cost_of_living_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "08/11/2024", name: "Nathan Smith" }
-);
-
-//#endregion Cost of Living
-
-const whoCanApply = new ContentB(
-  "whoCanApply",
-  "Who Can Apply",
-  "",
-  `
-    <p>
-      You may be able to get a Local Assistance Loan if: You are a Sheffield
-      resident and are getting one of the qualifying benefits listed below or are
-      assessed to have insufficient income to meet your needs:
-      <ul>
-      <li>Universal Credit</li>
-      <li>Income Support</li>
-      <li>Income-based Jobseeker's Allowance</li>
-      </ul>
-    </p>
-    <p>
-      Income-related Employment and Support Allowance Any type of Pension Credit,
-      and You need help because of an emergency or disaster and the health and
-      safety of you or a member of your family will be at serious risk if you do not
-      get any money If you are not receiving a qualifying benefit, you will need to
-      provide bank statements for the last 3 months in order for us to consider your
-      application. These can be provided in person, by post, or via email.
-    </p>
-    <p>
-      If you do not provide these bank statements within the processing time-scale
-      of your application, it will be rejected. You haven't been awarded two
-      Sheffield Crisis Grants in any 12-month period, regardless of any change in
-      circumstances.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const supportFund = new ContentB(
@@ -2117,13 +2078,14 @@ const supportFund = new ContentB(
   { date: "25/09/2024", name: "George Whitehouse" }
 );
 
+//#endregion Cost of Living
 
-
+//#region Crisis Grant
 
 const WhatIsItFor = new ContentB(
   "WhatIsItFor",
   "What Is It For",
-  "",
+  "What circumstances Crisis Grants are issued for",
   `
     <p>
       Sheffield Crisis Grants are to help people who do not have enough money to
@@ -2151,13 +2113,13 @@ const WhatIsItFor = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const howDoesTheApplicationProcessWork = new ContentB(
   "howDoesTheApplicationProcessWork",
   "How does the application process work",
-  "",
+  "find out what is included in the application process",
   `
     <p>
       Applications for Sheffield Crisis Grants can be made by filling in our online
@@ -2199,13 +2161,13 @@ const howDoesTheApplicationProcessWork = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const WhatWillCrisisGrantsBeMadeFor = new ContentB(
   "WhatWillCrisisGrantsBeMadeFor",
   "What will Crisis Grants be made for",
-  "",
+  "Why Crisis Grants are issued",
   `
     <p>
       Sheffield Crisis Grants are generally awarded to cover day-to-day living
@@ -2229,13 +2191,13 @@ const WhatWillCrisisGrantsBeMadeFor = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const WhatWillNotCrisisGrantsBeMadeFor = new ContentB(
   "WhatWillNotCrisisGrantsBeMadeFor",
   "What will Not Crisis Grants be made for",
-  "",
+  "What circumstances Crisis Grants are not made for",
   `
     <p>
       It is not intended that a Sheffield Crisis Grant will be awarded to help with
@@ -2274,13 +2236,13 @@ const WhatWillNotCrisisGrantsBeMadeFor = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const howIsTheDecisionMade = new ContentB(
   "howIsTheDecisionMade",
   "How Is The Decision Made",
-  "",
+  "More information around the decision making",
   `
     <p>
       A council officer will look at all the information on your application before
@@ -2297,13 +2259,13 @@ const howIsTheDecisionMade = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const howWillIBeNotifiedOfTheDecision = new ContentB(
   "howWillIBeNotifiedOfTheDecision",
   "How will i be notified of the decision",
-  "",
+  "How and when will you be notified of the decision",
   `
     <p>
       A council officer will look at all the information on your application before
@@ -2320,13 +2282,13 @@ const howWillIBeNotifiedOfTheDecision = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const WhatIfIDisagreeWithTheDecision = new ContentB(
   "WhatIfIDisagreeWithTheDecision",
   "What if i disagree with the decision",
-  "",
+  "The appeals process",
   `
     <p>
       If you are unhappy with the outcome of your application, you may request a
@@ -2347,13 +2309,13 @@ const WhatIfIDisagreeWithTheDecision = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const howWillIGetMySheffieldCrisisGrant = new ContentB(
   "howWillIGetMySheffieldCrisisGrant",
-  "What if I disagree with the decision",
-  "",
+  "How are Crisis Grants paid",
+  "Information on how you receive your Crisis Grant",
   `
     <p>
       Sheffield Crisis Grants will be administered by the Cashiers service based in
@@ -2400,13 +2362,51 @@ const howWillIGetMySheffieldCrisisGrant = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
+
+const whoCanApply = new ContentB(
+  "whoCanApply",
+  "Who Can Apply",
+  "Find more information around the eligibility of a Crisis Grant",
+  `
+    <p>
+      You may be able to get a Local Assistance Loan if: You are a Sheffield
+      resident and are getting one of the qualifying benefits listed below or are
+      assessed to have insufficient income to meet your needs:
+      <ul>
+      <li>Universal Credit</li>
+      <li>Income Support</li>
+      <li>Income-based Jobseeker's Allowance</li>
+      </ul>
+    </p>
+    <p>
+      Income-related Employment and Support Allowance Any type of Pension Credit,
+      and You need help because of an emergency or disaster and the health and
+      safety of you or a member of your family will be at serious risk if you do not
+      get any money If you are not receiving a qualifying benefit, you will need to
+      provide bank statements for the last 3 months in order for us to consider your
+      application. These can be provided in person, by post, or via email.
+    </p>
+    <p>
+      If you do not provide these bank statements within the processing time-scale
+      of your application, it will be rejected. You haven't been awarded two
+      Sheffield Crisis Grants in any 12-month period, regardless of any change in
+      circumstances.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "03/12/2024", name: "Andy Walker" }
+);
+
 
 const fraudulentClaims = new ContentB(
   "fraudulentClaims",
   "Fraudulent Claims",
-  "",
+  "Find out how the council deal with fraudulent claims",
   `
     <p>
       The Council, to ensure that limited resources are most effectively used to
@@ -2421,13 +2421,17 @@ const fraudulentClaims = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
+
+//#endregion Crisis Grant
+
+//#region Indepenence Grant
 
 const whoCanApplyForIndependenceGrant = new ContentB(
   "whoCanApplyForIndependenceGrant",
   "Who Can Apply For Independence Grant",
-  "",
+  "Find more information around the eligibility of a Crisis Grant",
   `
     <p>You may be able to get a Sheffield Independence Grant if:</p>
     <p>You are a Sheffield resident, and:</p>
@@ -2466,13 +2470,13 @@ const whoCanApplyForIndependenceGrant = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const WhatIndependanceGrantInformationIsItFor = new ContentB(
-  "wWhatIndependanceGrantInformationIsItFor",
-  "What Independance Grant Information Is It For",
-  "",
+  "WhatIndependanceGrantInformationIsItFor",
+  "What is the Independence Grant for?",
+  "Why and what circumstance an Independence Grant would be issued",
   `
     <p>
       Sheffield Independence Grants are to support independent living in the
@@ -2534,8 +2538,8 @@ const WhatIndependanceGrantInformationIsItFor = new ContentB(
 const howDoesTheIndependanceGrantInformationApplicationProcessWork =
   new ContentB(
     "howDoesTheIndependanceGrantInformationApplicationProcessWork",
-    "How Does The Independance Grant Information Application Process Work",
-    "Description",
+    "How Does the Independance Grant Information Application Process Work",
+    "Find out what is included in the application process",
     `
       <p>
         Applications for Sheffield Independence Grants should be made by filling in
@@ -2579,7 +2583,7 @@ const howDoesTheIndependanceGrantInformationApplicationProcessWork =
     { typeKey: "local_assistance_scheme_transferred_to_service" },
     { typeKey: "local_assistance_scheme_information_provided" },
     { type: "Information", keywords: [], categories: ["benefits"] },
-    { date: "25/09/2024", name: "George Whitehouse" }
+    { date: "03/12/2024", name: "Andy Walker" }
   );
 
 const WhatWillIndepedenceGrantsBeMadeFor = new ContentB(
@@ -2685,7 +2689,7 @@ const WhatWillNotIndependenceGrantsBeMadeFor = new ContentB(
 const howLongDoesItTakeToGetADecision = new ContentB(
   "howLongDoesItTakeToGetADecision",
   "How long does it take to get a decision",
-  "",
+  "Find out the decision timescale for an Independence Grant",
   `
     <p>
       A decision will be made about your Sheffield Independence Grant within 15
@@ -2716,14 +2720,14 @@ const howLongDoesItTakeToGetADecision = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation =
   new ContentB(
     "howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation",
-    "How will I be notified of the decision For Indepence Grant Information",
-    "",
+    "How will I be notified of the decision For Independence Grant Information",
+    "How and when will you be notified of the decision",
     `
       <p>
         If you have provided us with an email address, written confirmation of the
@@ -2740,8 +2744,8 @@ const howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation =
 
 const whatIfIDisagreeWithTheIndependenceGrantdecision = new ContentB(
   "whatIfIDisagreeWithTheIndependenceGrantdecision",
-  "What if i disagree with the decision the Independence Grant decision",
-  "",
+  "What if I disagree with the Independence Grant decision?",
+  "Find out about the appeal process",
   `
     <p>
       If you are unhappy with the outcome of your application, you may request a
@@ -2768,7 +2772,7 @@ const whatIfIDisagreeWithTheIndependenceGrantdecision = new ContentB(
 const howWillIGetMySheffieldIndependanceGrant = new ContentB(
   "howWillIGetMySheffieldIndependanceGrant",
   "How will I get my Sheffield Independance Grant",
-  "",
+  "How are Sheffield Independence Grants paid",
   `
     <p>
       Household goods (except for ovens and washing machines for non-Council
@@ -2827,7 +2831,7 @@ const howWillIGetMySheffieldIndependanceGrant = new ContentB(
 const fraudulentClaimsForIndependanceGrants = new ContentB(
   "fraudulentClaimsForIndependanceGrants",
   "Fraudulent Claims For Independance Grants",
-  "",
+  "Find out how the council deal with fraudulent claims",
   `
     <p>
       The Council, to ensure that limited resources are most effectively used to
@@ -2842,13 +2846,17 @@ const fraudulentClaimsForIndependanceGrants = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
+
+//#endregion Independence Grant
+
+//#region Household Support Fund
 
 const generalInformation = new ContentB(
   "generalInformation",
   "General Information",
-  "",
+  "Find more information around the Household Support Fund",
   `
     <p>
       Residents facing hardship are currently able to apply for a Household Support
@@ -2860,13 +2868,13 @@ const generalInformation = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "26/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const eligibilityCriteria = new ContentB(
   "eligibilityCriteria",
   "Eligibility Criteria",
-  "",
+  "who can apply",
   `
     <p>
       Are on a qualifying means tested benefit or are able to evidence that you are
@@ -2877,13 +2885,13 @@ const eligibilityCriteria = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const howDoIApply = new ContentB(
   "howDoIApply",
   "How do I apply",
-  "",
+  "Find out how to apply for the Household Support Fund",
   `
     <p>
       Applications can be made on our website at
@@ -2896,13 +2904,13 @@ const howDoIApply = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "26/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const otherSupportAvailable = new ContentB(
   "otherSupportAvailable",
   "Other Support Available",
-  "",
+  "Find out what other support is available",
   `
     <p>
       If a caller does not meet the eligibility criteria you should consider whether
@@ -2919,7 +2927,7 @@ const otherSupportAvailable = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "26/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const howLongDoesItTakeToGetADecisionForHouseholdSupportFund = new ContentB(
@@ -2944,7 +2952,7 @@ const howLongDoesItTakeToGetADecisionForHouseholdSupportFund = new ContentB(
 const WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund = new ContentB(
   "WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund",
   "What if I disagree with the decision",
-  "",
+  "How the decision is made",
   `
     <p>
       If you disagree with a decision about your application, you can request that
@@ -2957,13 +2965,13 @@ const WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "26/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const howillIGetMyHouseholdSupportFundPayment = new ContentB(
   "howillIGetMyHouseholdSupportFundPayment",
   "How will I get my Household Support Fund payment",
-  "Description",
+  "Find out how your payment is issued/received",
   `
     <p>
       Unless requested otherwise, you will receive a text or email from PayPoint.
@@ -2977,13 +2985,13 @@ const howillIGetMyHouseholdSupportFundPayment = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "26/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const fraudulentClaimsForHouseholdSupportFund = new ContentB(
   "fraudulentClaimsForHouseholdSupportFund",
   "Fraudulent Claims For Household Support Fund",
-  "",
+  "Find out how the council deal with fraudulent claims",
   `
     <p>
       The Council, to ensure that limited resources are most effectively used to
@@ -2998,8 +3006,10 @@ const fraudulentClaimsForHouseholdSupportFund = new ContentB(
   { typeKey: "local_assistance_scheme_transferred_to_service" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "26/09/2024", name: "George Whitehouse" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
+
+//#endregion Household Support Fund
 
 // const localAssistantScheme = new MenuB(
 //   "localAssistantScheme",
@@ -3012,7 +3022,7 @@ const fraudulentClaimsForHouseholdSupportFund = new ContentB(
 const costOfLiving = new MenuB(
   "costOfLiving",
   "Cost of Living",
-  "Description",
+  "Everyone is affected by the cost-of-living crisis in some shape or form. Here you can find out the local and national support available to help you manage the cost of living in Sheffield.",
   [
     waysToReduceYourFuelBills,
     findFoodSupportInSheffield,
@@ -3033,7 +3043,7 @@ const costOfLiving = new MenuB(
 const crisisGrantInformation = new MenuB(
   "crisisGrantInformation",
   "Crisis Grant Information",
-  "Discreption",
+  "Crisis grants don't have to be repaid. They're intended to help people who don't have enough money meet their short term needs",
   [
     whoCanApply,
     WhatIsItFor,
@@ -3051,7 +3061,7 @@ const crisisGrantInformation = new MenuB(
 const independanceGrantInformation = new MenuB(
   "independanceGrantInformation",
   "Independance Grant Information",
-  "Discreption",
+  "These grants are intended to support independent living in the community and don't have to be repaid.",
   [
     WhatIndependanceGrantInformationIsItFor,
     howDoesTheIndependanceGrantInformationApplicationProcessWork,
@@ -3066,7 +3076,7 @@ const independanceGrantInformation = new MenuB(
 const householdSupportFund = new MenuB(
   "householdSupportFund",
   "Household Support Fund",
-  "Discreption",
+  "This is a non-repayable grant to help people living in Sheffield with food and energy costs. It is funded by the UK Government.",
   [
     generalInformation,
     eligibilityCriteria,

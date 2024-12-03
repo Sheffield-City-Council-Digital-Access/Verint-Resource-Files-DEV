@@ -59,7 +59,7 @@ class FormEaR extends CoreEaR {
 const canvassForm = new ContentEaR(
   "canvassForm",
   "Canvass Form (CF)",
-  "",
+  "Any residential property that does not respond to the CCB form will receive a Canvass Form (CF)",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -106,7 +106,7 @@ const canvassForm = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/11/2024", name: "Nathan Smith" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const ccaCCBorCanvassForms = new ContentEaR(
@@ -167,7 +167,7 @@ const ccaCCBorCanvassForms = new ContentEaR(
 const ccaCCBForms = new ContentEaR(
   "ccaCCBForms",
   "CCA/CCB Forms",
-  "",
+  "Each year, the Electoral Registration Officer (ERO) is required to check the details held on the electoral register. Every residential property will receive either a CCA or CCB form",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -228,7 +228,7 @@ const ccaCCBForms = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/11/2024", name: "Nathan Smith" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const informationChangeandHowToUpdateIt = new ContentEaR(
@@ -281,7 +281,7 @@ const informationChangeandHowToUpdateIt = new ContentEaR(
 const lostCCACCBorCanvassForm = new ContentEaR(
   "lostCCACCBorCanvassForm",
   "Lost My CCA CCB or Canvass Form",
-  "",
+  "If you have lost your form then a duplicate can be sent, or you can wait for a reminder",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -321,7 +321,7 @@ const lostCCACCBorCanvassForm = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/11/2024", name: "Nathan Smith" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const removalFromRegister = new ContentEaR(
@@ -385,7 +385,7 @@ const removalFromRegister = new ContentEaR(
 const studentVoters = new ContentEaR(
   "studentVoters",
   "Student Voters",
-  "",
+  "Students can be registered in both their term-time and home address ",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -424,7 +424,7 @@ const studentVoters = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/11/2024", name: "Nathan Smith" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const annualCanvasMenu = new MenuEaR(
@@ -449,7 +449,7 @@ const annualCanvasMenu = new MenuEaR(
 const assistanceForPartiallySightedVoters = new ContentEaR(
   "assistanceForPartiallySightedVoters",
   "Assistance For Partially Sighted Voters",
-  "",
+  "Large print copies of ballot papers are provided within the polling station",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -491,13 +491,13 @@ const assistanceForPartiallySightedVoters = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/11/2024", name: "Nathan Smith" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const howToCompletePostalVote = new ContentEaR(
   "howToCompletePostalVote",
   "How to Complete Postal Vote",
-  "",
+  "Click here to access Weberos for instructions on how to complete a Postal Vote",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -629,7 +629,7 @@ const parishElections = new ContentEaR(
 const postalVoteNoLongerRequired = new ContentEaR(
   "postalVoteNoLongerRequired",
   "Postal Vote No Longer Required",
-  "",
+  "You can cancel your application for a postal vote at any time",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -677,7 +677,7 @@ const postalVoteNoLongerRequired = new ContentEaR(
     keywords: [],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/11/2024", name: "Nathan Smith" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const postalVoteReceivedButNotRequested = new ContentEaR(
@@ -725,7 +725,7 @@ const postalVoteReceivedButNotRequested = new ContentEaR(
 const postalVoteSendingAbroad = new ContentEaR(
   "postalVoteSendingAbroad",
   "Postal Vote Sending Abroad",
-  "",
+  "Postal votes can be sent abroad, but it is at your own risk",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -758,13 +758,13 @@ const postalVoteSendingAbroad = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/11/2024", name: "Nathan Smith" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const spoiltorDamagedPostalVote = new ContentEaR(
   "spoiltorDamagedPostalVote",
   "Spoilt or Damaged Postal Vote",
-  "",
+  "We can issue replacement postal vote ballot papers",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -813,13 +813,13 @@ const spoiltorDamagedPostalVote = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/11/2024", name: "Nathan Smith" }
+  { date: "03/12/2024", name: "Andy Walker" }
 );
 
 const whereDoIVote = new ContentEaR(
   "whereDoIVote",
   "Where Do I Vote",
-  "",
+  "Click here to see the locations of all Polling Stations",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -852,7 +852,106 @@ const whereDoIVote = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "29/11/2024", name: "Nathan Smith" }
+  { date: "03/12/2024", name: "Andy Walker" }
+);
+
+const frequentlyAskedQuestions = new ContentEaR(
+  "frequentlyAskedQuestions",
+  "Frequently Asked Questions",
+  "",
+  `
+  <h3>Frequently Asked Questions</h3>
+    <p>
+    <strong>Can I register to vote if I’m homeless, live on a houseboat, in a 
+    caravan, in a mental hospital, or remanded in custody?</strong>
+    </p>
+    <p>
+    For individuals in these situations, please contact the Electoral Services 
+    office directly for assistance with registration.
+    </p>
+<h3>Do I need ID to vote?</h3>
+<p>
+  You will need to show one of the accepted photo ID documents
+</p>
+<details class="details-accordion">
+  <summary>
+    You must present one of the following forms of photographic 
+    identification in order to vote in person at a polling station:
+  </summary>
+  <div class="details-accordion-content">
+    <ul>
+      <li>A passport issued by the UK, any of the Channel Islands, 
+      the Isle of Man, a British Overseas Territory, 
+      an EEA state or a Commonwealth country</li>
+      <li>A driving licence issued by the UK, any of the Channel Islands, 
+      the Isle of Man or an EEA state</li>
+      <li>A biometric immigration document</li>
+      <li>An identity card bearing the Proof of Age Standards Scheme 
+      hologram (a PASS card)</li>
+      <li>Ministry of Defence Form 90 (Defence Identity Card)</li>
+      <li>A Blue Badge</li>
+      <li>A national identity card issued by an EEA state</li>
+      <li>An Older Person’s Bus Pass</li>
+      <li>A Disabled Person’s Bus Pass</li>
+      <li>An Oyster 60+ Card</li>
+      <li>A Freedom Pass</li>
+      <li>A Scottish National Entitlement Card issued in Scotland</li>
+      <li>A 60 and Over Welsh Concessionary Travel Card issued in Wales</li>
+      <li>A Disabled Person’s Welsh Concessionary Travel Card issued in Wales</li>
+      <li>A Senior SmartPass issued in Northern Ireland</li>
+      <li>A Registered Blind SmartPass or Blind Person’s SmartPass 
+      issued in Northern Ireland</li>
+      <li>A War Disablement SmartPass or War Disabled SmartPass 
+      issued in Northern Ireland</li>
+      <li>A 60+ SmartPass issued in Northern Ireland</li>
+      <li>A Half Fare SmartPass issued in Northern Ireland</li>
+      <li>An Electoral Identity Card issued in Northern Ireland</li>
+      <li>A Voter Authority Certificate or temporary Voter Authority Certificate</li>
+    </ul>
+    <p>
+      If your photographic identification document has expired, 
+      it will still be accepted so long as the photograph is still a 
+      good likeness of you, unless it is a temporary Voter Authority 
+      Certificate which is not valid for use on the date of poll.
+    </p>
+    <p>
+      You may be required to provide further proof of identity if there 
+      is any discrepancy between your name as shown on your form of photographic 
+      identification and the name of the elector that you claim to be.
+    </p>
+  </div>
+</details>
+<p>
+  or a voter authority certificate at the polling station to receive a ballot paper. 
+  If you appoint a proxy to vote for you, they must also show their own photo 
+  ID at the polling station.
+</p>
+    <p>
+    If you choose to vote by post, you do not need photographic ID.
+    </p>
+    <h3>I have no I.D.</h3>
+    <p>
+    The voter can apply for a Voter Authority Certificate. 
+    Transfer the customer to Electoral Services back office 
+    to be advised on how to apply for this.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "elections_and_voting_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "faq",
+      "fqa",
+      "frequently asked questions",
+      "frequentley asked questions",
+      "frequently askd questions",
+      "frequentley askd questions"
+    ],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const electionsAndVoting = new MenuEaR(
@@ -868,7 +967,8 @@ const electionsAndVoting = new MenuEaR(
     postalVoteReceivedButNotRequested,
     postalVoteSendingAbroad,
     spoiltorDamagedPostalVote,
-    whereDoIVote
+    whereDoIVote,
+    frequentlyAskedQuestions
   ]
 );
 
