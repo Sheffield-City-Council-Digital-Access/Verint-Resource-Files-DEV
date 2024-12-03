@@ -2363,104 +2363,108 @@ const contactHousingBenefits = new ContentH(
     </ul>
     <p>Need to be aware of the impact that having a home with spare bedrooms will have on their welfare benefits.</p>
     
-    <details class="details-accordion">
-    <summary>Will these changes affect me?</summary>
-    <div class="details-accordion-content">
-      <p>This only affects people of working age, so if you are old enough to receive a state pension (of a pensionable age) then these changes will not affect you. 
-        You are likely to be affected by these changes, especially if you are a single person with two or more bedrooms, 
-        a couple with two or more bedrooms, or in a household whose children have grown up and left home.</p>
-      <p>If you are of working age you therefore need to think very carefully before bidding for a property that has more bedrooms than housing benefit will allow for, 
-        as a reduction in this would mean that you have to pay additional money towards your rent yourself. 
-        Our eligibility table gives an indication of where there is likely to be a reduction in housing benefit.</p>
+    <details class="FAQ">
+      <summary class="accordion-header">
+
+      <details class="details-accordion">
+      <summary>Will these changes affect me?</summary>
+      <div class="details-accordion-content">
+        <p>This only affects people of working age, so if you are old enough to receive a state pension (of a pensionable age) then these changes will not affect you. 
+          You are likely to be affected by these changes, especially if you are a single person with two or more bedrooms, 
+          a couple with two or more bedrooms, or in a household whose children have grown up and left home.</p>
+        <p>If you are of working age you therefore need to think very carefully before bidding for a property that has more bedrooms than housing benefit will allow for, 
+          as a reduction in this would mean that you have to pay additional money towards your rent yourself. 
+          Our eligibility table gives an indication of where there is likely to be a reduction in housing benefit.</p>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>How will the government work out if you have spare bedrooms?</summary>
+      <div class="details-accordion-content">
+        <p>The government has told us that one bedroom will be allowed for each person, or couple with the following exceptions:</p>
+        <ul>
+          <li>Children aged 16 or under will be expected to share with another child of the same sex.</li>
+          <li>Children aged 10 and under will be expected to share with another child regardless of their sex.</li>
+        </ul>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>How much will my housing benefit be reduced by?</summary>
+      <div class="details-accordion-content">
+        <p>If you have one spare bedroom you are likely to lose 14% of your weekly housing benefit and if you have two spare bedrooms you could lose 25%. 
+          This means that you will have to pay the extra money towards the rent yourself.</p>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>What considerations should I make when bidding for a new property?</summary>
+      <div class="details-accordion-content">
+        <p>If you are currently looking for a new home you must consider very carefully the size of the home you want to move to. 
+          Remember if you are of working age and receiving housing benefit, this might be reduced if you move to a home which is too big for you.</p>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>How can I move to a smaller home?</summary>
+      <div class="details-accordion-content">
+        <p>There may be a number of options available to you:</p>
+        <ul>
+          <li>You could exchange your current home with another tenant who wants to move. This is called a mutual exchange.</li>
+          <li>You could be awarded a rehousing priority under the SMARTMOVE scheme to move to a smaller more manageable home if you are currently living in a high demand council / housing association property.</li>
+          <li>You can move to another council/housing association property by bidding for the available homes which we advertise each week.</li>
+        </ul>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>Are adapted properties exempt?</summary>
+      <div class="details-accordion-content">
+        <p>Adapted properties are not exempt from the welfare reform and extra bedroom charge.</p>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>If there is a couple, one of a pensionable age and the other not, will they be affected by benefit changes next year?</summary>
+      <div class="details-accordion-content">
+        <p>Generally speaking, pensionable aged persons are exempt from the welfare reforms. However, 
+          when there is a couple & one isn’t of pensionable age it is not as straightforward, it will be dependent on what DWP benefit they are receiving.</p>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>Furnished properties change</summary>
+      <div class="details-accordion-content">
+        <p>Where a property is furnished and under occupied they lose the HB granted for the furniture charge. 
+          The % reduction is applied to the net rent and the furniture charge too.</p>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>Benefit cap</summary>
+      <div class="details-accordion-content">
+        <p>The DWP have announced that the benefit cap (overall level of combined benefits and credits a workless household (with no disability benefits) 
+          can receive to around £384.62/week for lone parents/couples outside London, or £257.69/week for single people outside London) 
+            will not be introduced nationally in April but are expecting it to be in place across the country by September, 
+            we will update our information as we know more.</p>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>Spare room subsidy exemption</summary>
+      <div class="details-accordion-content">
+        <p>For tenants to be exempt from the spare room subsidy, they must have been continuously entitled to housing benefit since 
+          at least 1 January 1996 and occupied the same dwelling since that date, save for any period where a 
+          fire, flood, explosion or natural catastrophe has rendered the property uninhabitable.</p>
+        <p>These provisions apply if there has been a break in entitlement of no more than 4 weeks, or if there has been a break of entitlement of 
+          no more than 52 weeks if the claimant or their partner is a welfare to work beneficiary.</p>
+        <p>Note: it may be the case that the protection has been inherited by a tenant where they have succeeded a tenancy.</p>
+        <p>The DWP are going to amend the regulations to remove this exemption. However, until the legislation is amended, 
+          customers who meet the criteria are exempt from the spare room subsidy.</p>
+        <p>An application form must be completed by the customer and returned to the benefits service.</p>
     </div>
     </details>
-    
-    <details class="details-accordion">
-    <summary>How will the government work out if you have spare bedrooms?</summary>
-    <div class="details-accordion-content">
-      <p>The government has told us that one bedroom will be allowed for each person, or couple with the following exceptions:</p>
-      <ul>
-        <li>Children aged 16 or under will be expected to share with another child of the same sex.</li>
-        <li>Children aged 10 and under will be expected to share with another child regardless of their sex.</li>
-      </ul>
-    </div>
     </details>
-    
-    <details class="details-accordion">
-    <summary>How much will my housing benefit be reduced by?</summary>
-    <div class="details-accordion-content">
-      <p>If you have one spare bedroom you are likely to lose 14% of your weekly housing benefit and if you have two spare bedrooms you could lose 25%. 
-        This means that you will have to pay the extra money towards the rent yourself.</p>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>What considerations should I make when bidding for a new property?</summary>
-    <div class="details-accordion-content">
-      <p>If you are currently looking for a new home you must consider very carefully the size of the home you want to move to. 
-        Remember if you are of working age and receiving housing benefit, this might be reduced if you move to a home which is too big for you.</p>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>How can I move to a smaller home?</summary>
-    <div class="details-accordion-content">
-      <p>There may be a number of options available to you:</p>
-      <ul>
-        <li>You could exchange your current home with another tenant who wants to move. This is called a mutual exchange.</li>
-        <li>You could be awarded a rehousing priority under the SMARTMOVE scheme to move to a smaller more manageable home if you are currently living in a high demand council / housing association property.</li>
-        <li>You can move to another council/housing association property by bidding for the available homes which we advertise each week.</li>
-      </ul>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>Are adapted properties exempt?</summary>
-    <div class="details-accordion-content">
-      <p>Adapted properties are not exempt from the welfare reform and extra bedroom charge.</p>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>If there is a couple, one of a pensionable age and the other not, will they be affected by benefit changes next year?</summary>
-    <div class="details-accordion-content">
-      <p>Generally speaking, pensionable aged persons are exempt from the welfare reforms. However, 
-        when there is a couple & one isn’t of pensionable age it is not as straightforward, it will be dependent on what DWP benefit they are receiving.</p>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>Furnished properties change</summary>
-    <div class="details-accordion-content">
-      <p>Where a property is furnished and under occupied they lose the HB granted for the furniture charge. 
-        The % reduction is applied to the net rent and the furniture charge too.</p>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>Benefit cap</summary>
-    <div class="details-accordion-content">
-      <p>The DWP have announced that the benefit cap (overall level of combined benefits and credits a workless household (with no disability benefits) 
-        can receive to around £384.62/week for lone parents/couples outside London, or £257.69/week for single people outside London) 
-          will not be introduced nationally in April but are expecting it to be in place across the country by September, 
-          we will update our information as we know more.</p>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>Spare room subsidy exemption</summary>
-    <div class="details-accordion-content">
-      <p>For tenants to be exempt from the spare room subsidy, they must have been continuously entitled to housing benefit since 
-        at least 1 January 1996 and occupied the same dwelling since that date, save for any period where a 
-        fire, flood, explosion or natural catastrophe has rendered the property uninhabitable.</p>
-      <p>These provisions apply if there has been a break in entitlement of no more than 4 weeks, or if there has been a break of entitlement of 
-        no more than 52 weeks if the claimant or their partner is a welfare to work beneficiary.</p>
-      <p>Note: it may be the case that the protection has been inherited by a tenant where they have succeeded a tenancy.</p>
-      <p>The DWP are going to amend the regulations to remove this exemption. However, until the legislation is amended, 
-        customers who meet the criteria are exempt from the spare room subsidy.</p>
-      <p>An application form must be completed by the customer and returned to the benefits service.</p>
-  </div>
-  </details>
   `,
     { buttonLabel: "Welfare reform", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
