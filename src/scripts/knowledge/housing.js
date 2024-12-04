@@ -4694,6 +4694,54 @@ const priorityBandingTable = new ContentH(
   { date: "07/22/2024", name: "George Whitehouse" }
 );
 
+const threeOffersDemotedorDisqualified = new ContentH(
+  "threeOffersDemotedorDisqualified",
+  "Three Offers Demoted or Disqualified",
+  "",
+  `
+<h3>Reduced preference (demotion) following refusal of 3 reasonable offers</h3>
+<p> 
+  If a customer is in Band D and they have refused 3 offers in 12 months, the Sheffield City Council Allocations Policy states:<br>
+  <ul>
+    <li>If you refuse an offer of a property, you could be moved to a lower band or your application may be cancelled. The following will also be considered as a refusal:</li>
+    <li>If you fail to respond to an offer of a property made to you within the timescales specified and do not have a good reason for this failure.</li>
+    <li>If you fail to attend a viewing of a property offered to you within the timescales specified and do not have a good reason for this failure.</li>
+  </ul>
+  If you are to be Demoted, we will write to you 21 days before you are Demoted. If you do not respond, you will be Demoted to Band E on the Housing Register for 12 months. After 12 months you can request to be moved back in to Band D.
+</p>
+   <h3>Disqualification following refusal of 3 reasonable offers</h3>
+   <p>
+    If a customer who is in Band E refuses 3 reasonable offers, they can be disqualified from the Housing Register.<br>
+    The customer will be notified in writing and they have 21 days to appeal the decision. <br>
+    If we do not hear from the customer within 21 days, their housing application will be cancelled and they will be disqualified from the Housing Register for 12 months. <br>
+    After 12 months the customer is able to submit an on-line application for Social Housing to re-join the Housing Register.
+   </p>
+  `,
+  {
+    buttonLabel: "",
+    formName: "",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: 
+    [
+      "rehosing", 
+      "rehausing",
+      "rehousingg",
+      "rehosuing",
+      "rehouzing",
+      "three",
+      "offers",
+      "demoted",
+      "disqualified"
+    ],
+    categories: ["Housing"],
+  },
+  { date: "04/12/2024", name: "Joseph Coupland" }
+);
+
 const policy = new MenuH(
   "policy",
   "Rehousing policy",
@@ -4703,7 +4751,7 @@ const policy = new MenuH(
     allocationsPolicyGuidance,
     fosteringAndAdoption,
     priorityBandingTable,
-    //threeOffersDemotedorDisqualified,
+    threeOffersDemotedorDisqualified,
   ]
 );
 //#endregion Rehousing Policy 
