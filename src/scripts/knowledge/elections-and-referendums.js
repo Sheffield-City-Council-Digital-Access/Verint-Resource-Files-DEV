@@ -2191,17 +2191,6 @@ const wards = new ContentEaR(
   { date: "25/11/2024", name: "Nathan Smith" }
 );
 
-const zzOtherEnquiries = new MenuEaR(
-  "zzOtherEnquiries",
-  "Other Enquiries",
-  "For enquiries regarding, Councillors, Election results, Family Tree or Genealogy or Wards.",
-[
-  councillors,
-  electionResults,
-  familyTreeorGenealogy,
-  wards
-]);
-
 // #endregion Other Enquiries
 
 
@@ -2214,9 +2203,12 @@ const electionsAndReferendums = new ServiceEaR(
   `General elections, local elections, by-election, mayoral election, police and crime commissioner, referendums and voting...`,
   [
     annualCanvassMenu,
+    councillors,
+    electionResults,
     electionsAndVoting,
+    familyTreeorGenealogy,
     postalorProxyVoting,
     registeringToVote,
-    zzOtherEnquiries
+    wards
   ]
 );
