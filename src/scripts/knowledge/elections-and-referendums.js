@@ -2080,7 +2080,7 @@ const electionResults = new ContentEaR(
       </p>
     </section>
     <p>
-      SERVICE HAS TO PROVIDE PREVIOUS ELECTION RESULTS
+      You can find the previous election results via our council website: <a href="https://www.sheffield.gov.uk/your-city-council/election-results" target="_blank">Election Results</a>
     </p>
   `,
   { buttonLabel: "", formName: "" },
