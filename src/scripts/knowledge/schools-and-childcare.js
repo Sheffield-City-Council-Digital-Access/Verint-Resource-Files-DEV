@@ -108,7 +108,7 @@ const fundedEarlyLearning = new ContentSaC(
       your child could take 12 hours a week for 47½ weeks. Talk to your childcare
       provider about what options are available. For Funded Early Learning enquiries
       and more information on the Family Hubs for Families, please contact the
-      Family Hubs - 0114 273 5665.
+      Family Hubs - <a href="tel:0114 2735665">0114 2735665</a>
     </p>
     <p>
       For information about the new 2-year-old extended working entitlement (15
@@ -116,21 +116,21 @@ const fundedEarlyLearning = new ContentSaC(
       visit the childcare choices page, there is an assessment tool offering
       families details of childcare support they might be eligible for and a link to
       apply to HMRC.
-      <a href="https://www.childcarechoices.gov.uk" target="_blank">https://www.childcarechoices.gov.uk</a> 
+      <a href="https://www.childcarechoices.gov.uk" target="_blank">https://www.childcarechoices.gov.uk</a>
     </p>
     <p>
-      From September 2025: <br />Eligible working parents of children from 9 months
+      From September 2025: <br>
+      Eligible working parents of children from 9 months
       to school age will be entitled to 30 hours of childcare a week.
     </p>
     <p>
       If the customer would like to raise an enquiry for information that is not provided here, transfer
-      them to Family HUBs Service on: <a href="tel:0114 273 5665">0114 273 5665</a>
+      them to Family HUBs Service on: <a href="tel:0114 2735665">0114 2735665</a>
     </p>
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice" target="_blank">Childcare Funding, Support, and Advice</a>.
+    <a href="https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice" target="_blank">https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice</a>.
     </p>
-
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "funded_early_learning_transferred_to_service" },

@@ -54,12 +54,12 @@ class FormEaR extends CoreEaR {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-// #region Annual Canvas
+// #region Annual Canvass
 
 const canvassForm = new ContentEaR(
   "canvassForm",
   "Canvass Form (CF)",
-  "Any residential property that does not respond to the CCB form will receive a Canvass Form (CF)",
+  "How to complete the Canvass Form to confirm or update voter registration details for your household.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -166,8 +166,8 @@ const ccaCCBorCanvassForms = new ContentEaR(
 
 const ccaCCBForms = new ContentEaR(
   "ccaCCBForms",
-  "CCA/CCB Forms",
-  "Each year, the Electoral Registration Officer (ERO) is required to check the details held on the electoral register. Every residential property will receive either a CCA or CCB form",
+  "CCA/B Forms",
+  "CCA and CCB forms for annual electoral register checks, including how to respond and update details.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -223,8 +223,8 @@ const ccaCCBForms = new ContentEaR(
       "electorial",
       "elect",
       "elec",
-      "CCB",
-      "cca"
+      "CCA",
+      "CCB"
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
@@ -233,7 +233,7 @@ const ccaCCBForms = new ContentEaR(
 
 const informationChangeandHowToUpdateIt = new ContentEaR(
   "informationChangeAndHowToUpdateIt",
-  "Information Change and How to Update It",
+  "Information change and how to update it",
   "What happens if I change my name, address, nationality, or anything else on the form?",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
@@ -280,8 +280,8 @@ const informationChangeandHowToUpdateIt = new ContentEaR(
 
 const lostCCACCBorCanvassForm = new ContentEaR(
   "lostCCACCBorCanvassForm",
-  "Lost My CCA CCB or Canvass Form",
-  "If you have lost your form then a duplicate can be sent, or you can wait for a reminder",
+  "Lost my CCA/B or Canvass Form",
+  "How to request a duplicate CCA, CCB, or Canvass Form and respond if forms are lost.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -326,7 +326,7 @@ const lostCCACCBorCanvassForm = new ContentEaR(
 
 const removalFromRegister = new ContentEaR(
   "removalFromRegister",
-  "Removal From Register",
+  "Removal from Register",
   "What happens if I move out of a property?",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
@@ -385,7 +385,7 @@ const removalFromRegister = new ContentEaR(
 const studentVoters = new ContentEaR(
   "studentVoters",
   "Student Voters",
-  "Students can be registered in both their term-time and home address ",
+  "The voting rights and registration processes for students with term-time and home addresses.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -427,9 +427,9 @@ const studentVoters = new ContentEaR(
   { date: "03/12/2024", name: "Andy Walker" }
 );
 
-const annualCanvasMenu = new MenuEaR(
-  "annualCanvasMenu",
-  "Annual Canvas",
+const annualCanvassMenu = new MenuEaR(
+  "annualCanvassMenu",
+  "Annual Canvass",
   "The household canvass takes place each year to enable us to ensure the electoral register is up to date for each residential property in the city.",
   [
     canvassForm,
@@ -442,14 +442,14 @@ const annualCanvasMenu = new MenuEaR(
   ]
 );
 
-// #endregion Elections and Voting
+// #endregion Annual Canvass
 
 // #region Elections and Voting
 
 const assistanceForPartiallySightedVoters = new ContentEaR(
   "assistanceForPartiallySightedVoters",
-  "Assistance For Partially Sighted Voters",
-  "Large print copies of ballot papers are provided within the polling station",
+  "Assistance for partially sighted Voters",
+  "Voting assistance options for partially sighted voters, including tactile devices, large print ballots, and postal voting with signature waivers.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -496,8 +496,8 @@ const assistanceForPartiallySightedVoters = new ContentEaR(
 
 const howToCompletePostalVote = new ContentEaR(
   "howToCompletePostalVote",
-  "How to Complete Postal Vote",
-  "Click here to access Weberos for instructions on how to complete a Postal Vote",
+  "How to complete Postal Vote",
+  "Step-by-step guide on completing a postal vote, including marking, sealing, and returning your ballot securely.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -530,7 +530,7 @@ const howToCompletePostalVote = new ContentEaR(
 const localElections = new ContentEaR(
   "localElections",
   "Local Elections",
-  "Local elections are held on a four-year cycle. There is an election for the first three years and then no election in the fourth year. In these elections, you are voting to elect Councillors of Sheffield who will represent your views for the ward (area) in which you live. Further info on Councillors can be found using the link below:",
+  "Understanding Sheffield's four-year local election cycle and how to find information about your ward councillors.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -574,7 +574,7 @@ const localElections = new ContentEaR(
 const parishElections = new ContentEaR(
   "parishElections",
   "Parish Elections",
-  "Parish Councils are separate local authorities to the City Council, with their own elected members. They are wholly contained within the City Council boundary. A parish councillor can stand for election to the City Council and vice versa.",
+  "Parish Elections in Sheffield, including eligibility, election timing, and details about the city's three parish councils.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -600,7 +600,7 @@ const parishElections = new ContentEaR(
     <p>
       You can only vote at a Parish election if you live within the parish. 
       More details around the Parish Elections can be found here:
-      <ahref="https://www.sheffield.gov.uk/home/your-city-council/election-types"target="_blank">https://www.sheffield.gov.uk/home/your-city-council/election-types</a>
+      <a href="https://www.sheffield.gov.uk/home/your-city-council/election-types"target="_blank">https://www.sheffield.gov.uk/home/your-city-council/election-types</a>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -628,8 +628,8 @@ const parishElections = new ContentEaR(
 
 const postalVoteNoLongerRequired = new ContentEaR(
   "postalVoteNoLongerRequired",
-  "Postal Vote No Longer Required",
-  "You can cancel your application for a postal vote at any time",
+  "Postal Vote no longer required",
+  "how to cancel a postal vote application, including deadlines and required documentation.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -724,8 +724,8 @@ const postalVoteReceivedButNotRequested = new ContentEaR(
 
 const postalVoteSendingAbroad = new ContentEaR(
   "postalVoteSendingAbroad",
-  "Postal Vote Sending Abroad",
-  "Postal votes can be sent abroad, but it is at your own risk",
+  "Voting abroad with a Postal Vote",
+  "The process and risks of receiving and returning postal votes from abroad.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -764,7 +764,7 @@ const postalVoteSendingAbroad = new ContentEaR(
 const spoiltorDamagedPostalVote = new ContentEaR(
   "spoiltorDamagedPostalVote",
   "Spoilt or Damaged Postal Vote",
-  "We can issue replacement postal vote ballot papers",
+  "How to request a replacement for a spoiled or damaged postal vote, including in-person and postal options.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -818,8 +818,8 @@ const spoiltorDamagedPostalVote = new ContentEaR(
 
 const whereDoIVote = new ContentEaR(
   "whereDoIVote",
-  "Where Do I Vote",
-  "Click here to see the locations of all Polling Stations",
+  "Where do I vote?",
+  "An interactive map to find designated polling stations based on address.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -956,8 +956,8 @@ const frequentlyAskedQuestions = new ContentEaR(
 
 const electionsAndVoting = new MenuEaR(
   "electionsAndVoting",
-  "Elections And Voting",
-  "Information about Voting in these elections can be found here",
+  "Elections and Voting",
+  "Information about Voting in these elections can be found here.",
   [
     assistanceForPartiallySightedVoters,
     howToCompletePostalVote,
@@ -978,8 +978,8 @@ const electionsAndVoting = new MenuEaR(
 
 const applyingForPostalVote = new ContentEaR(
   "applyingForPostalVote",
-  "Applying For Postal Vote",
-  "",
+  "Applying for Postal Vote",
+  "How to apply for a postal vote online, via email, or in person, including requirements for a hand-written signature.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1024,7 +1024,7 @@ const applyingForPostalVote = new ContentEaR(
 const postalProxyVote = new ContentEaR(
   "postalProxyVote",
   "Postal Proxy Vote",
-  "",
+  "How to apply for a postal proxy vote, including form request details and deadlines for submission.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1068,8 +1068,8 @@ const postalProxyVote = new ContentEaR(
 
 const postalVoteNotReceivedorLost = new ContentEaR(
   "postalVoteNotReceivedorLost",
-  "Postal Vote Not Received or Lost",
-  "",
+  "Postal Vote not received or Lost",
+  "What to do if your postal vote pack is lost or not received, including how to request or collect a replacement.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1110,7 +1110,7 @@ const postalVoteNotReceivedorLost = new ContentEaR(
 const requestproxyVote = new ContentEaR(
   "requestproxyVote",
   "Request Proxy Vote",
-  "",
+  "How to request a proxy vote, including eligibility, process, and options for your proxy to vote by post.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1155,8 +1155,8 @@ const requestproxyVote = new ContentEaR(
 
 const swappingFromPostalToProxyVoting = new ContentEaR(
   "swappingFromPostalToProxyVoting",
-  "Swapping From Postal To Proxy Voting",
-  "",
+  "Swapping from Postal to Proxy Voting",
+  "How to switch from postal to proxy voting, including deadlines and reapplication requirements.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1198,8 +1198,8 @@ const swappingFromPostalToProxyVoting = new ContentEaR(
 
 const swappingFromProxyToPostalVoting = new ContentEaR(
   "swappingFromProxyToPostalVoting",
-  "Swapping From Proxy To Postal Voting",
-  "",
+  "Swapping from Proxy to Postal Voting",
+  "How to switch from proxy to postal voting, including deadlines and eligibility for long-term proxy arrangements.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1243,7 +1243,7 @@ const swappingFromProxyToPostalVoting = new ContentEaR(
 const waiverApplication = new ContentEaR(
   "waiverApplication",
   "Waiver Application",
-  "",
+  "Waiver applications for postal and proxy voting when a voter cannot provide a signature.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1347,8 +1347,8 @@ const archiveCopies = new ContentEaR(
 
 const changeofAddressForm = new ContentEaR(
   "changeOfAddressForm",
-  "Change Of Address Form",
-  "",
+  "Change of Address Form",
+  "How to update your voter registration address and re-register using the online service",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1386,8 +1386,8 @@ const changeofAddressForm = new ContentEaR(
 
 const changeofNameonTheRegister = new ContentEaR(
   "changeOfNameOnTheRegister",
-  "Change of Name on the Register",
-  "What happens if my name has changed?",
+  "Change of name on the Register",
+  "How to update your name on the electoral register, including required forms and evidence.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1425,7 +1425,7 @@ const changeofNameonTheRegister = new ContentEaR(
 const creditReferencingAgencies = new ContentEaR(
   "creditReferencingAgencies",
   "Credit Referencing Agencies",
-  "",
+  "How credit referencing agencies use the electoral register and the differences between the full and open registers.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1436,11 +1436,13 @@ const creditReferencingAgencies = new ContentEaR(
       Credit referencing agencies have access to the electoral register (previously
       called the full register), which means that everyone who has registered to
       vote appears on this register, even if they have opted out of the open
-      register (previosuly called the edited register). There are legal restrictions
-      on what the credit referencing agencies can use the electoral register for and
+      register (previously called the edited register). <br>
+      <br>
+      There are legal restrictions on what the credit referencing agencies can use the electoral register for and
       they are not allowed to sell this version, but can sell the open register.
-      They can only use the electoral register for credit referencing purposes. The
-      register is updated monthly, normally on the first working day of the month. A
+      They can only use the electoral register for credit referencing purposes.<br>
+      <br>
+      The register is updated monthly, normally on the first working day of the month. A
       data file is prepared and sent to all credit reference agencies who have
       requested and paid for updates. They will have the information to hand by the
       third working day of the week at the latest. We do not know how long it takes
@@ -1465,8 +1467,8 @@ const creditReferencingAgencies = new ContentEaR(
 
 const doINeedToReRegisterEachYear = new ContentEaR(
   "doINeedToReRegisterEachYear",
-  "Do I Need To Re-Register Each Year",
-  "What Happens If I do not?",
+  "Do I need to Re-Register each year?",
+  "When you need to re-register to vote and update your details on the electoral register.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1504,8 +1506,8 @@ const doINeedToReRegisterEachYear = new ContentEaR(
 
 const doINeedToRegister = new ContentEaR(
   "doINeedToRegister",
-  "Do I Need To Register",
-  "What Happens If I do not?",
+  "Do I need to Register?",
+  "Why responding to voter registration invitations is important and how it impacts credit applications.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1547,7 +1549,7 @@ const doINeedToRegister = new ContentEaR(
 const electoralRegisterConfirmationLetter = new ContentEaR(
   "electoralRegisterConfirmationLetter",
   "Electoral Register Confirmation Letter",
-  "",
+  "Request a confirmation letter from Electoral Services as proof of voter registration at your address.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1578,8 +1580,8 @@ const electoralRegisterConfirmationLetter = new ContentEaR(
 
 const includeSomeoneElseontheRegisterForm = new ContentEaR(
   "includeSomeoneElseontheRegisterForm",
-  "Include Someone on the Invitation to Register Form",
-  "Can I Include Someone else on the Invitation to Register (ITR) form?",
+  "Include someone on the Invitation to Register Form",
+  "Can I Include someone else on the Invitation to Register (ITR) form?",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1605,7 +1607,8 @@ const includeSomeoneElseontheRegisterForm = new ContentEaR(
       "elect",
       "electorial",
       "elect",
-      "elec"
+      "elec",
+      "ITR"
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
@@ -1614,8 +1617,8 @@ const includeSomeoneElseontheRegisterForm = new ContentEaR(
 
 const incorrectDetailsOnElectoralRegister = new ContentEaR(
   "incorrectDetailsOnElectoralRegister",
-  "Incorrect Details On Electoral Register",
-  "",
+  "Incorrect details on Electoral Register",
+  "How to report and correct errors on the electoral register through re-registration.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1726,7 +1729,8 @@ const invitationToRegister = new ContentEaR(
       "post",
       "electorial",
       "elect",
-      "elec"
+      "elec",
+      "ITR"
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
@@ -1735,7 +1739,7 @@ const invitationToRegister = new ContentEaR(
 
 const lostMyInvitationToRegister = new ContentEaR(
   "lostMyInvitationToRegister",
-  "Lost My Invitation To Register",
+  "Lost my invitation to Register",
   "What happens if I lose my Invitation To Register (ITR)?",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
@@ -1767,7 +1771,8 @@ const lostMyInvitationToRegister = new ContentEaR(
       "post",
       "electorial",
       "elect",
-      "elec"
+      "elec",
+      "ITR"
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
@@ -1816,51 +1821,10 @@ const movingHomeorMovedHome = new ContentEaR(
   { date: "25/11/2024", name: "Nathan Smith" }
 );
 
-const needToIncludeEmailAddressandPhoneNumber = new ContentEaR(
-  "needToIncludeEmailAddressandPhoneNumber",
-  "Need To Include Email Address and Phone Number",
-  "Do I Need To Include Email Address and Phone Number on the Form?",
-  `
-    <section class="info-panel" role="region" aria-label="Information panel">
-      <p>
-          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
-      </p>
-    </section>
-    <p>
-      You are invited to include them, but you do not have to. We will use this
-      information only in connection with your registration, and it helps us to
-      contact you if there is a problem.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
-  { typeKey: "registering_to_vote_information_provided" },
-  {
-    type: "Request",
-    keywords: [
-      "elections",
-      "ele",
-      "elect",
-      "proxy",
-      "prox",
-      "vote",
-      "voting",
-      "voters",
-      "postal",
-      "post",
-      "electorial",
-      "elect",
-      "elec"
-    ],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/11/2024", name: "Nathan Smith" }
-);
-
 const optOutofTheOpenRegister = new ContentEaR(
   "optOutOfTheOpenRegister",
-  "Opt Out of the Open Register",
-  "",
+  "Opt out of the Open Register",
+  "How to opt out of the open register without affecting your voting rights or credit score.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1904,8 +1868,8 @@ const optOutofTheOpenRegister = new ContentEaR(
 
 const registerToVote = new ContentEaR(
   "registerToVote",
-  "Register To Vote",
-  "Register To Vote",
+  "Register to Vote",
+  "How to register to vote, securely using your National Insurance Number and date of birth.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1934,8 +1898,8 @@ const registerToVote = new ContentEaR(
 
 const requestforEvidenceLetter = new ContentEaR(
   "requestForEvidenceLetter",
-  "Request For Evidence Letter (Registering)",
-  "",
+  "Request for Evidence Letter (Registering)",
+  "Why a Request for Evidence letter is issued and how to provide the required documents for voter registration.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1975,8 +1939,8 @@ const requestforEvidenceLetter = new ContentEaR(
 
 const requestOtherElectionsReferral = new ContentEaR(
   "requestOtherElectionsReferral",
-  "Request Other Elections Referral",
-  "",
+  "Request other Elections Referral",
+  "Requesting election assistance when internet access or required documents are unavailable.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1985,8 +1949,9 @@ const requestOtherElectionsReferral = new ContentEaR(
     </section>
     <p>
       <strong>Note to advisor</strong> - This is only to be used if the caller does not have access
-      to the internet or if a copy of the requested letter is not held on Weberos.
-      Request Other Elections Referral.
+      to the internet or if a copy of the requested letter is not held on Weberos.<br>
+      <br>
+      Transfer enquiry to Electoral Services.
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -2012,7 +1977,7 @@ const requestOtherElectionsReferral = new ContentEaR(
 
 const revisionstoTheElectoralRegister = new ContentEaR(
   "revisionsToTheElectoralRegister",
-  "Revisions to The Electoral Register (To Be Updated)",
+  "Revisions to the Electoral Register",
   "What are the revision dates for the Electoral Register?",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
@@ -2096,7 +2061,7 @@ const successfulOnlineRegistration = new ContentEaR(
 
 const useofEmailAddressandPhoneNumber = new ContentEaR(
   "useOfEmailAddressandPhoneNumber",
-  "Use Of Email Address and Phone Number",
+  "Email Address and Phone Number",
   "What happens if I provide an email address or phone number?",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
@@ -2105,10 +2070,7 @@ const useofEmailAddressandPhoneNumber = new ContentEaR(
       </p>
     </section>
     <p>
-      If you provide an email address or phone number as part of your application,
-      it will only be used to contact you about your application for registering to
-      vote. We won’t give it to anyone else or use it for any other purpose unless
-      required by law.
+      Including an email address and phone number is optional. This information will only be used to contact you regarding your registration or application and will not be shared or used for other purposes unless required by law.
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -2150,7 +2112,6 @@ const registeringToVote = new MenuEaR(
     invitationToRegister,
     lostMyInvitationToRegister,
     movingHomeorMovedHome,
-    needToIncludeEmailAddressandPhoneNumber,
     optOutofTheOpenRegister,
     registerToVote,
     requestforEvidenceLetter,
@@ -2163,72 +2124,12 @@ const registeringToVote = new MenuEaR(
 
 // #endregion Registering to Vote
 
-// #region Top Enquiries
-
-const annualCanvas = new ContentEaR(
-  "annualCanvas",
-  "Annual Canvas",
-  "",
-  `
-    <section class="info-panel" role="region" aria-label="Information panel">
-      <p>
-          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
-      </p>
-    </section>
-    <p>
-      The Electoral Registration Officer (ERO) is required to send a communication 
-      to all residential properties. Households are legally obliged to respond to a
-      CCB or CF form, and the ERO must follow up with non-respondents using
-      reminders and personal visits. Where a property is sent a CCA form, the ERO
-      believes no changes are needed, and there is no legal requirement for a
-      response.
-    </p>
-    <p>
-      It’s important to note that these forms do not register anyone to vote. The
-      ERO will use the information provided on the form to send Invitations to
-      Register (ITR) to people added, and change of name forms to individuals who
-      have indicated their name has changed. The law requires the ERO to include a
-      pre-paid reply envelope with CFs and ITRs.
-    </p>
-    <p>
-      Households can respond to CCA, CCB, or Canvass Forms via the internet at the
-      following website: <ahref="https://www.elecreg.co.uk/Sheffield"target="_blank">www.elecreg.co.uk/Sheffield</a>
-    </p>
-    <p>Invitations to Register (ITRs) can be completed online at:</p>
-    <p>
-      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
-  { typeKey: "annual_canvass_information_provided" },
-  {
-    type: "Request",
-    keywords: [
-      "elections",
-      "ele",
-      "elect",
-      "vote",
-      "voting",
-      "voters",
-      "electorial",
-      "elect",
-      "elec",
-      "copy",
-      "copyies",
-      "archive",
-      "archives",
-      "arch"
-    ],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/11/2024", name: "Nathan Smith" }
-);
+// #region Other Enquiries
 
 const councillors = new ContentEaR(
   "councillors",
   "Councillors",
-  "",
+  "Sheffield Councillors, their duties, and how to contact them",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -2279,7 +2180,7 @@ const electionResults = new ContentEaR(
       </p>
     </section>
     <p>
-      SERVICE HAS TO PROVIDE PREVIOUS ELECTION RESULTS
+      You can find the previous election results via: <a href="https://www.sheffield.gov.uk/your-city-council/election-results" target="_blank">https://www.sheffield.gov.uk/your-city-council/election-results</a>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -2300,6 +2201,7 @@ const electionResults = new ContentEaR(
       "resu",
       "resul",
       "result",
+      "elections results",
       "results"
     ],
     categories: ["Elections and Referendums", "Electoral"],
@@ -2310,7 +2212,7 @@ const electionResults = new ContentEaR(
 const familyTreeorGenealogy = new ContentEaR(
   "familyTreeorGenealogy",
   "Family Tree or Genealogy",
-  "",
+  "How electoral registers and Sheffield Archives can assist with family tree or genealogy research.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -2353,7 +2255,7 @@ const familyTreeorGenealogy = new ContentEaR(
 const wards = new ContentEaR(
   "wards",
   "Wards",
-  "",
+  "Sheffield's 28 electoral wards and their representation by City Councillors.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -2390,64 +2292,8 @@ const wards = new ContentEaR(
   { date: "25/11/2024", name: "Nathan Smith" }
 );
 
-const whereICanVote = new ContentEaR(
-  "whereICanVotes",
-  "Where Can I Vote",
-  "",
-  `
-    <section class="info-panel" role="region" aria-label="Information panel">
-      <p>
-          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
-      </p>
-    </section>
-    <h3>Polling Stations</h3>
-    <iframesrc="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=2c10878d034544718d4ea5c733b03559"style="height: 400px; width: 100%"></iframe>
-    <p>
-      SERVICE HAS NOwhereICanVoteT PROVIDED THE LINK FOR 'WHERE DO I VOTE?
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
-  { typeKey: "elections_and_voting_information_provided" },
-  {
-    type: "Request",
-    keywords: [
-      "elections",
-      "ele",
-      "elect",
-      "vote",
-      "voting",
-      "voters",
-      "electorial",
-      "elect",
-      "elec",
-      "wher",
-      "where do",
-      "where can",
-      "wheredo",
-      "wherecan",
-      "poll",
-      "polling",
-      "poll station",
-      "polling station",
-      "poll stat",
-      "polling stat"
-    ],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "25/09/2024", name: "Shahzad Athar" }
-);
+// #endregion Other Enquiries
 
-const topEnquiries = new MenuEaR("topEnquiries", "Top Enquiries", "", [
-  annualCanvas,
-  councillors,
-  electionResults,
-  familyTreeorGenealogy,
-  wards,
-  whereICanVote
-]);
-
-// #endregion Top Enquiries
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -2457,10 +2303,13 @@ const electionsAndReferendums = new ServiceEaR(
   "Elections and Referendums",
   `General elections, local elections, by-election, mayoral election, police and crime commissioner, referendums and voting...`,
   [
-    registeringToVote,
-    annualCanvasMenu,
-    postalorProxyVoting,
+    annualCanvassMenu,
+    councillors,
+    electionResults,
     electionsAndVoting,
-    topEnquiries,
+    familyTreeorGenealogy,
+    postalorProxyVoting,
+    registeringToVote,
+    wards
   ]
 );

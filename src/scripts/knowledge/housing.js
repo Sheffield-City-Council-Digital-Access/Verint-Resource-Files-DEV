@@ -598,7 +598,11 @@ const communalAreas = new ContentH(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx" target="_blank">Blocked Bin Chutes</a></p>
+    <p>
+      Bin chutes in Council flats or maisonettes may become blocked and will be unblocked upon request.<br>
+      Check the 
+      <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx" target="_blank">blocked bin chutes list</a>
+    </p>
   </div>
 </details>
 
@@ -645,6 +649,10 @@ const communalAreas = new ContentH(
       "repairs and invesment",
       "repair and investement",
       "repairs and invesmant",
+      "blocked",
+      "bin",
+      "bins",
+      "chute"
     ],
     categories: ["Housing"],
   },
@@ -1130,7 +1138,7 @@ const newAndExistingRepairs = new ContentH(
 
 const noHeatNoWater = new ContentH(
   "noHeatNoWater",
-  "No Heat No Water",
+  "Report no heat or hot Water",
   "",
   `
   <p>
@@ -1546,31 +1554,6 @@ const assetManagementAndRepairs = new MenuH(
 
 //#region Estates and Environments
 
-const blockedBinChutes = new ContentH(
-  "blockedBinChutes",
-  "Blocked Bin Chutes",
-  "",
-  `
-    <p>
-      Bin chutes in Council flats or maisonettes may become blocked and will be
-      unblocked upon request.
-    </p>
-    <p>
-      Open the blocked chutes list from the button below, and use the search, is the
-      property on the list?
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
-  {
-    type: "Report",
-    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
-    categories: ["Housing", "Estates and Environments"],
-  },
-  { date: "14/10/2024", name: "Omily Parkin" }
-);
-
 const communalCupboard = new ContentH(
   "communalCupboard",
   "Communal Cupboard and Meter Box Cupboard",
@@ -1744,7 +1727,6 @@ const estatesAndEnvironments = new MenuH(
   "Estates and Environments",
   "Bin chutes, communal cupboard, fences, firesafety and garden maintenance",
   [
-    blockedBinChutes,
     communalCupboard,
     communalFireSafety,
     fencesCouncilHousing,
@@ -2363,104 +2345,110 @@ const contactHousingBenefits = new ContentH(
     </ul>
     <p>Need to be aware of the impact that having a home with spare bedrooms will have on their welfare benefits.</p>
     
-    <details class="details-accordion">
-    <summary>Will these changes affect me?</summary>
-    <div class="details-accordion-content">
-      <p>This only affects people of working age, so if you are old enough to receive a state pension (of a pensionable age) then these changes will not affect you. 
-        You are likely to be affected by these changes, especially if you are a single person with two or more bedrooms, 
-        a couple with two or more bedrooms, or in a household whose children have grown up and left home.</p>
-      <p>If you are of working age you therefore need to think very carefully before bidding for a property that has more bedrooms than housing benefit will allow for, 
-        as a reduction in this would mean that you have to pay additional money towards your rent yourself. 
-        Our eligibility table gives an indication of where there is likely to be a reduction in housing benefit.</p>
+    <details class="FAQ">
+      <summary class="accordion-header">
+      <h3>FAQ</h3>
+        <div class="FAQ"></div>
+    </summary>
+
+      <details class="details-accordion">
+      <summary>Will these changes affect me?</summary>
+      <div class="details-accordion-content">
+        <p>This only affects people of working age, so if you are old enough to receive a state pension (of a pensionable age) then these changes will not affect you. 
+          You are likely to be affected by these changes, especially if you are a single person with two or more bedrooms, 
+          a couple with two or more bedrooms, or in a household whose children have grown up and left home.</p>
+        <p>If you are of working age you therefore need to think very carefully before bidding for a property that has more bedrooms than housing benefit will allow for, 
+          as a reduction in this would mean that you have to pay additional money towards your rent yourself. 
+          Our eligibility table gives an indication of where there is likely to be a reduction in housing benefit.</p>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>How will the government work out if you have spare bedrooms?</summary>
+      <div class="details-accordion-content">
+        <p>The government has told us that one bedroom will be allowed for each person, or couple with the following exceptions:</p>
+        <ul>
+          <li>Children aged 16 or under will be expected to share with another child of the same sex.</li>
+          <li>Children aged 10 and under will be expected to share with another child regardless of their sex.</li>
+        </ul>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>How much will my housing benefit be reduced by?</summary>
+      <div class="details-accordion-content">
+        <p>If you have one spare bedroom you are likely to lose 14% of your weekly housing benefit and if you have two spare bedrooms you could lose 25%. 
+          This means that you will have to pay the extra money towards the rent yourself.</p>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>What considerations should I make when bidding for a new property?</summary>
+      <div class="details-accordion-content">
+        <p>If you are currently looking for a new home you must consider very carefully the size of the home you want to move to. 
+          Remember if you are of working age and receiving housing benefit, this might be reduced if you move to a home which is too big for you.</p>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>How can I move to a smaller home?</summary>
+      <div class="details-accordion-content">
+        <p>There may be a number of options available to you:</p>
+        <ul>
+          <li>You could exchange your current home with another tenant who wants to move. This is called a mutual exchange.</li>
+          <li>You could be awarded a rehousing priority under the SMARTMOVE scheme to move to a smaller more manageable home if you are currently living in a high demand council / housing association property.</li>
+          <li>You can move to another council/housing association property by bidding for the available homes which we advertise each week.</li>
+        </ul>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>Are adapted properties exempt?</summary>
+      <div class="details-accordion-content">
+        <p>Adapted properties are not exempt from the welfare reform and extra bedroom charge.</p>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>If there is a couple, one of a pensionable age and the other not, will they be affected by benefit changes next year?</summary>
+      <div class="details-accordion-content">
+        <p>Generally speaking, pensionable aged persons are exempt from the welfare reforms. However, 
+          when there is a couple & one isn’t of pensionable age it is not as straightforward, it will be dependent on what DWP benefit they are receiving.</p>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>Furnished properties change</summary>
+      <div class="details-accordion-content">
+        <p>Where a property is furnished and under occupied they lose the HB granted for the furniture charge. 
+          The % reduction is applied to the net rent and the furniture charge too.</p>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>Benefit cap</summary>
+      <div class="details-accordion-content">
+        <p>The DWP have announced that the benefit cap (overall level of combined benefits and credits a workless household (with no disability benefits) 
+          can receive to around £384.62/week for lone parents/couples outside London, or £257.69/week for single people outside London) 
+            will not be introduced nationally in April but are expecting it to be in place across the country by September, 
+            we will update our information as we know more.</p>
+      </div>
+      </details>
+      
+      <details class="details-accordion">
+      <summary>Spare room subsidy exemption</summary>
+      <div class="details-accordion-content">
+        <p>For tenants to be exempt from the spare room subsidy, they must have been continuously entitled to housing benefit since 
+          at least 1 January 1996 and occupied the same dwelling since that date, save for any period where a 
+          fire, flood, explosion or natural catastrophe has rendered the property uninhabitable.</p>
+        <p>These provisions apply if there has been a break in entitlement of no more than 4 weeks, or if there has been a break of entitlement of 
+          no more than 52 weeks if the claimant or their partner is a welfare to work beneficiary.</p>
+        <p>Note: it may be the case that the protection has been inherited by a tenant where they have succeeded a tenancy.</p>
+        <p>The DWP are going to amend the regulations to remove this exemption. However, until the legislation is amended, 
+          customers who meet the criteria are exempt from the spare room subsidy.</p>
+        <p>An application form must be completed by the customer and returned to the benefits service.</p>
     </div>
     </details>
-    
-    <details class="details-accordion">
-    <summary>How will the government work out if you have spare bedrooms?</summary>
-    <div class="details-accordion-content">
-      <p>The government has told us that one bedroom will be allowed for each person, or couple with the following exceptions:</p>
-      <ul>
-        <li>Children aged 16 or under will be expected to share with another child of the same sex.</li>
-        <li>Children aged 10 and under will be expected to share with another child regardless of their sex.</li>
-      </ul>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>How much will my housing benefit be reduced by?</summary>
-    <div class="details-accordion-content">
-      <p>If you have one spare bedroom you are likely to lose 14% of your weekly housing benefit and if you have two spare bedrooms you could lose 25%. 
-        This means that you will have to pay the extra money towards the rent yourself.</p>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>What considerations should I make when bidding for a new property?</summary>
-    <div class="details-accordion-content">
-      <p>If you are currently looking for a new home you must consider very carefully the size of the home you want to move to. 
-        Remember if you are of working age and receiving housing benefit, this might be reduced if you move to a home which is too big for you.</p>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>How can I move to a smaller home?</summary>
-    <div class="details-accordion-content">
-      <p>There may be a number of options available to you:</p>
-      <ul>
-        <li>You could exchange your current home with another tenant who wants to move. This is called a mutual exchange.</li>
-        <li>You could be awarded a rehousing priority under the SMARTMOVE scheme to move to a smaller more manageable home if you are currently living in a high demand council / housing association property.</li>
-        <li>You can move to another council/housing association property by bidding for the available homes which we advertise each week.</li>
-      </ul>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>Are adapted properties exempt?</summary>
-    <div class="details-accordion-content">
-      <p>Adapted properties are not exempt from the welfare reform and extra bedroom charge.</p>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>If there is a couple, one of a pensionable age and the other not, will they be affected by benefit changes next year?</summary>
-    <div class="details-accordion-content">
-      <p>Generally speaking, pensionable aged persons are exempt from the welfare reforms. However, 
-        when there is a couple & one isn’t of pensionable age it is not as straightforward, it will be dependent on what DWP benefit they are receiving.</p>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>Furnished properties change</summary>
-    <div class="details-accordion-content">
-      <p>Where a property is furnished and under occupied they lose the HB granted for the furniture charge. 
-        The % reduction is applied to the net rent and the furniture charge too.</p>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>Benefit cap</summary>
-    <div class="details-accordion-content">
-      <p>The DWP have announced that the benefit cap (overall level of combined benefits and credits a workless household (with no disability benefits) 
-        can receive to around £384.62/week for lone parents/couples outside London, or £257.69/week for single people outside London) 
-          will not be introduced nationally in April but are expecting it to be in place across the country by September, 
-          we will update our information as we know more.</p>
-    </div>
-    </details>
-    
-    <details class="details-accordion">
-    <summary>Spare room subsidy exemption</summary>
-    <div class="details-accordion-content">
-      <p>For tenants to be exempt from the spare room subsidy, they must have been continuously entitled to housing benefit since 
-        at least 1 January 1996 and occupied the same dwelling since that date, save for any period where a 
-        fire, flood, explosion or natural catastrophe has rendered the property uninhabitable.</p>
-      <p>These provisions apply if there has been a break in entitlement of no more than 4 weeks, or if there has been a break of entitlement of 
-        no more than 52 weeks if the claimant or their partner is a welfare to work beneficiary.</p>
-      <p>Note: it may be the case that the protection has been inherited by a tenant where they have succeeded a tenancy.</p>
-      <p>The DWP are going to amend the regulations to remove this exemption. However, until the legislation is amended, 
-        customers who meet the criteria are exempt from the spare room subsidy.</p>
-      <p>An application form must be completed by the customer and returned to the benefits service.</p>
-  </div>
-  </details>
   `,
     { buttonLabel: "Welfare reform", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -4113,124 +4101,134 @@ const referencesFAQs = new ContentH(
   "References FAQs",
   "",
   `
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>References FAQs</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Why do I need to provide a reference?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Current SCC tenants are not required to submit a reference as the Council is already aware of 
+        their circumstances and tenancy history.<br>
+        References were introduced as part of the Allocations Policy. The purpose of this is for SCC to better 
+        understand the people who are currently on its Housing Register. <br>
+        SCC often has very little knowledge of the people on the register and therefore requesting a reference will help the Council to improve this.
+      </p>
+    </div>
+  </details>
 
-            <details class="details-accordion">
-                <summary>Why do I need to provide a reference?</summary>
-                <div class="details-accordion-content">
-                    <p>
-                        Current SCC tenants are not required to submit a reference as the Council is already aware of 
-                        their circumstances and tenancy history.<br>
-                        References were introduced as part of the Allocations Policy. The purpose of this is for SCC to better 
-                        understand the people who are currently on its Housing Register. <br>
-                        SCC often has very little knowledge of the people on the register and therefore requesting a reference will help the Council to improve this.
-                    </p>
-                </div>
-            </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Who can provide a reference?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        All customers other than current SCC tenants now need to provide a reference when joining the Housing Register. 
+        The following customers also need to provide a reference when creating a new application:
+    </p>
+    <ul>
+        <li>Housing Association tenants (Landlord needs to provide the reference)</li>
+        <li>Tenants of other Councils (Landlord needs to provide the reference)</li>
+        <li>Private rented tenants (Landlord needs to provide the reference - the landlord must not be a family member)</li>
+        <li>Owner occupiers - no need for a reference as bidding is restricted</li>
+        <li>Living with family/parents (18+ only, character reference is needed)</li>
+        <li>NFA/Living with friends (Character reference is needed)</li>
+    </ul>
+    <p>
+        For customers who currently do or have ever lived independently, the reference should be completed by their most recent landlord.
+        Advisor note: For customers who are unable to provide a landlord's reference, they must gain agreement from the 
+        Registration Team for what reference will be acceptable and they will send the professional reference form out.<br>
+        If the customer is advising that there would be a charge for the reference, the customer would be responsible for 
+        this charge. SCC will not pay landlords to provide a reference.
+    </p>
+    </div>
+  </details>
 
-            <details class="details-accordion">
-                <summary>Who can provide a reference?</summary>
-                <div class="details-accordion-content">
-                    <p>
-                        All customers other than current SCC tenants now need to provide a reference when joining the Housing Register. 
-                        The following customers also need to provide a reference when creating a new application:
-                    </p>
-                    <ul>
-                        <li>Housing Association tenants (Landlord needs to provide the reference)</li>
-                        <li>Tenants of other Councils (Landlord needs to provide the reference)</li>
-                        <li>Private rented tenants (Landlord needs to provide the reference - the landlord must not be a family member)</li>
-                        <li>Owner occupiers - no need for a reference as bidding is restricted</li>
-                        <li>Living with family/parents (18+ only, character reference is needed)</li>
-                        <li>NFA/Living with friends (Character reference is needed)</li>
-                    </ul>
-                    <p>
-                        For customers who currently do or have ever lived independently, the reference should be completed by their most recent landlord.
-                        Advisor note: For customers who are unable to provide a landlord's reference, they must gain agreement from the 
-                        Registration Team for what reference will be acceptable and they will send the professional reference form out.<br>
-                        If the customer is advising that there would be a charge for the reference, the customer would be responsible for 
-                        this charge. SCC will not pay landlords to provide a reference.
-                    </p>
-                </div>
-            </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to get a Landlords reference form?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Landlord references should be submitted using the SCC reference form. This can be found online on the 
+        Property Shop website. Customer should select:
+    </p>
+    <ul>
+        <li>Information header, select Identification and References</li>
+        <li>Scroll down to SCC Reference Template</li>
+        <li>Landlord reference forms are also available at local housing offices.</li>
+    </ul>
+    </div>
+  </details>
 
-            <details class="details-accordion">
-                <summary>How to get a Landlords reference form?</summary>
-                <div class="details-accordion-content">
-                    <p>
-                        Landlord references should be submitted using the SCC reference form. This can be found online on the 
-                        Property Shop website. Customer should select:
-                    </p>
-                    <ul>
-                        <li>Information header, select Identification and References</li>
-                        <li>Scroll down to SCC Reference Template</li>
-                        <li>Landlord reference forms are also available at local housing offices.</li>
-                    </ul>
-                </div>
-            </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How long do I have to provide the reference?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+  <div class="accordion-content">
+    <p>
+      You will have the same 28 days to provide the reference as they have for providing ID currently. This 
+      period starts from the day that the online application was submitted. Do not submit the application until 
+      you have all of the relevant documentation. If ID and a reference are not submitted within this time, the 
+      application will be cancelled and you will need to resubmit this online.
+    </p>
+  </div>
+  </details>
 
-            <details class="details-accordion">
-                <summary>How long do I have to provide the reference?</summary>
-                <div class="details-accordion-content">
-                    <p>
-                        You will have the same 28 days to provide the reference as they have for providing ID currently. This 
-                        period starts from the day that the online application was submitted. Do not submit the application until 
-                        you have all of the relevant documentation. If ID and a reference are not submitted within this time, the 
-                        application will be cancelled and you will need to resubmit this online.
-                    </p>
-                </div>
-            </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What will the reference be used for?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+  <div class="accordion-content">
+    <p>
+      The reference will be used along with the information supplied by the customer when completing their 
+      application online to determine which Band they should be placed in. The criteria for being placed in 
+      Band D or Band E can be found within the Allocations Policy. Customers will be notified in writing which 
+      Band they have been placed in and how to challenge this if they feel it is incorrect. Customers who have 
+      special or extenuating circumstances can request an Exception Request if they wish to do so. All such 
+      requests are assessed on their merits and the customer will be advised of the decision in writing.
+    </p>
+  </div>
+  </details>
 
-            <details class="details-accordion">
-                <summary>What will the reference be used for?</summary>
-                <div class="details-accordion-content">
-                    <p>
-                        The reference will be used along with the information supplied by the customer when completing their 
-                        application online to determine which Band they should be placed in. The criteria for being placed in 
-                        Band D or Band E can be found within the Allocations Policy. Customers will be notified in writing which 
-                        Band they have been placed in and how to challenge this if they feel it is incorrect. Customers who have 
-                        special or extenuating circumstances can request an Exception Request if they wish to do so. All such 
-                        requests are assessed on their merits and the customer will be advised of the decision in writing.
-                    </p>
-                </div>
-            </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Is a reference required for a change of circumstances?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A reference will only be required if the change being submitted is a change of address, or the Application 
+        is being changed to a Joint Application. If the customer is changing their address, a new reference would 
+        be required with the exception of current SCC tenants moving to another SCC property. In these cases, 
+        we would still not require a reference.
+      </p>
+    </div>
+  </details>
 
-            <details class="details-accordion">
-                <summary>Is a reference required for a change of circumstances?</summary>
-                <div class="details-accordion-content">
-                    <p>
-                        A reference will only be required if the change being submitted is a change of address, or the Application 
-                        is being changed to a Joint Application. If the customer is changing their address, a new reference would 
-                        be required with the exception of current SCC tenants moving to another SCC property. In these cases, 
-                        we would still not require a reference.
-                    </p>
-                </div>
-            </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Is a reference required as part of a renewal process?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers are not required to submit a reference as part of the renewals process, 
+        <strong>unless a new address is provided or</strong> the Application is being changed to a Joint Application.
+      </p>
+    </div>
+  </details>
 
-            <details class="details-accordion">
-                <summary>Is a reference required as part of a renewal process?</summary>
-                <div class="details-accordion-content">
-                    <p>
-                        No, customers are not required to submit a reference as part of the renewals process, 
-                        <strong>unless a new address is provided or</strong> the Application is being changed to a Joint Application.
-                    </p>
-                </div>
-            </details>
-
-        </div>
-
-        <h4>Customer cannot visit Area Office</h4>
-        <p>
-            Advisor Note: There are alternatives to visiting the area office yourself, such as asking your friends or family 
-            to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
-            <strong>Documents can be uploaded via the property shop website.</strong>
-        </p>
-
-    </details>
+  <h4>Customer cannot visit Area Office</h4>
+  <p>
+      Advisor Note: There are alternatives to visiting the area office yourself, such as asking your friends or family 
+      to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
+      <strong>Documents can be uploaded via the property shop website.</strong>
+  </p>
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
@@ -5663,7 +5661,7 @@ const furnishedAccommodation = new ContentH(
     </p>
     <p>
       Properties are furnished with goods generally selected by the customer on a
-      choice basis to meet their needs on a 3 tiered service charge arrangement.
+      choice basis to meet their needs on a 3-tiered service charge arrangement.
       Fully furnished properties are decorated and carpeted throughout and curtains
       and tracks are provided and fitted.
     </p>
@@ -5691,7 +5689,7 @@ const furnishedAccommodation = new ContentH(
       points will add up to package you want; Gold, Silver or Bronze. A Bronze
       package for example costs £10 a week and you can have 10 points worth of
       furniture (this could include a table and chairs, a settee, a fridge freezer
-      and washing machine all at 2 points each and an arm chair and crockery pack at
+      and washing machine all at 2 points each and an armchair and crockery pack at
       1 point each). You can mix and match, depending on what furniture you already
       have.
     </p>
@@ -5706,7 +5704,7 @@ const furnishedAccommodation = new ContentH(
       including:
     </p>
     <ul>
-      <li>The age of the goods as they still may be under warranty</li>
+      <li>The age of the goods as they still may be under warranty.</li>
       <li>
         If damaged – the reason for the damage - must be fair wear and tear or
         manufacturing fault / defect.
@@ -5723,14 +5721,14 @@ const furnishedAccommodation = new ContentH(
       There are instances where financial hardship may be caused by the service
       charge and / or the customer has sourced their own goods now. The process of
       removing the service charge is known as Deed of Variation and it takes
-      approximately 10 weeks to complete as there are 2 notice periods with 28 day
+      approximately 10 weeks to complete as there are 2 notice periods with a 28 days
       cooling off periods legally built into them.
     </p>
     <h3>Furnished and Local Assistance Scheme (LAS)</h3>
     <p>
       Furnished provide the goods and deliver them to customers who have applied for
       the grant / goods via Local Assistance Scheme. Furnished may provide
-      installation at Council properties but do not perform installs at non Council
+      installation at Council properties but do not perform installs at non-Council
       properties.
     </p>
     <h3>Furnished on Demand</h3>
@@ -5749,7 +5747,7 @@ const furnishedAccommodation = new ContentH(
       <li>Applicants referred via a medical priority (Generally Band A).</li>
       <li>
         Other applicants who would not be able to access a property without the
-        Furnished Accommodation Service will be considered on a case by case basis
+        Furnished Accommodation Service will be considered on a case-by-case basis
         (Most of these will be under Band C in Allocations policy).
       </li>
     </ol>
@@ -5760,7 +5758,7 @@ const furnishedAccommodation = new ContentH(
     </p>
     <p>
       If the Customer does not meet the above criteria direct them to alternative
-      options such as St Vincent De Pauls , Local Assistance Scheme or Emmaus.
+      options such as St Vincent De Pauls, Local Assistance Scheme or Emmaus.
     </p>
     <h3>Furnished Delivery Schedule</h3>
     <p>
@@ -5796,14 +5794,19 @@ const gypsyAndTravellers = new ContentH(
   "Gypsy and Travellers",
   "desc tbd",
   `
-    <h3>Where are the official Gypsy and Traveller sits</h3>
+    <h3>Where are the official Gypsy and Traveller sites</h3>
     <address>
-      Long Acre View Holbrook Trading Estate<br />Holbrook<br />/Sheffield<br />S20
-      3FU
+      Long Acre View Holbrook Trading Estate<br>
+      Holbrook<br>
+      Sheffield<br>
+      S20 3FU
     </address>
+    <br>
     <address>
-      Redmires Caravan Park Redmires Lane<br />Lodge Moor<br />Sheffield<br />S10
-      4JZ
+      Redmires Caravan Park Redmires Lane<br>
+      Lodge Moor<br>
+      Sheffield<br>
+      S10 4JZ
     </address>
     <h3>What manages the sites?</h3>
     <p>
@@ -6449,14 +6452,9 @@ const tenancyAgreementRequest = new ContentH(
   <p>
     If the request is urgent or for a former tenancy, you will need to visit your Area Office with relevant ID to obtain a copy of your Tenancy Agreement.
   </p>
+  <h3>Weekly Cost</h3>
 
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Weekly Cost</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content"> 
-      <p>
+  <p>
         Preferably, at least one piece of evidence must be from the Primary List, and at least one document should contain photographic identification.
       </p>
       <p>
@@ -6464,7 +6462,6 @@ const tenancyAgreementRequest = new ContentH(
         (for example, birth certificate, marriage certificate, or divorce/annulment papers), then a further piece of identity should be provided with a 
         photograph such as a photo-card driving license or valid passport.
       </p>
-
       <table>
         <tbody>
           <tr>
@@ -6508,8 +6505,6 @@ const tenancyAgreementRequest = new ContentH(
           </tr>
         </tbody>
       </table>
-    </div>
-  </details>
   `,
   { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
   { typeKey: "Tenancy_Sustainment_information_provided" },

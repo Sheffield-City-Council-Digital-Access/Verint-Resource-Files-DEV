@@ -285,6 +285,7 @@ const disabledTravelPermit = new ContentTaT(
       </ul>
     </p>
     <h3>How long does a Disabled Travel Permit last for</h3>
+   <p>Disabled Travel Permits have a 28 day process period</p>
     <p>
       If your application is successful, passes are issued between 1 and 5 years the
       timescale is dependent on your qualifying criteria, you will be made aware of
@@ -294,6 +295,7 @@ const disabledTravelPermit = new ContentTaT(
       If during the time you have the pass, you would turn 66, your pass will expire
       on your 66th birthday.
     </p>
+    <h3>How long will my application take</h3>
     <h3>How do I appeal the decision</h3>
     <p>Appeals must be made in writing to:<br />
       <address>
@@ -305,6 +307,10 @@ const disabledTravelPermit = new ContentTaT(
         S1 2SH
       </address>
     </p>
+    <p>
+      Customers can also request an appeal via email by writing to 
+      customerservices@sheffield.gov.uk
+    </p>
     <h3>When can I use my Travel Permit</h3>
     <p>
       A disabled persons pass enables free public transport on buses, trams and
@@ -314,6 +320,26 @@ const disabledTravelPermit = new ContentTaT(
       If the Pass is being used within South Yorkshire the pass can be used at all
       times of the day, however if the pass is being used beyond South Yorkshire
       (within England or Wales) your pass is only valid between 9:30am - 11pm.
+    </p>
+      <h3>What do I do with the approval letter</h3>
+    <p>
+      The purple form needs to be completed with a passport size photograph and 
+      returned to the address at the bottom of the page, 
+      Contact Centre, SYPTE, 11 Broad Street West, Sheffield S1 2BQ.
+    </p>
+      <h3>I've sent my approval letter off but not got my pass</h3>
+    <p>
+      Contact SYPTE direct 01709 51 51 51.
+    </p>
+      <h3>Where is my pass (applied with SCC) Ive had a letter/phone call</h3>
+    <p>
+      Chase/escalation email to the Team Leaders not to the CS Inbox for action.
+    </p>
+      <h3>What evidence do i need to send</h3>
+    <p>
+      Proof of address, copy of awards letter for DLA PIP within last 12 months, 
+      medical evidence from Health Care Professional, 
+      Letter from DVLA re surrendered/revoked driving licence.  
     </p>
    `,
   {
@@ -341,7 +367,14 @@ const disabledTravelPermit = new ContentTaT(
       "bluw",
       "bloue",
       "bule",
-      "applicotion",
+      "bus",
+      "buss",
+      "bsu",
+      "DTP",
+      "DPTP",
+      "PTD",
+      "TDP",
+      "PDTP",
       "aplication",
       "applcation",
       "applicaton",
@@ -359,7 +392,7 @@ const disabledTravelPermit = new ContentTaT(
 
     categories: ["Travel and Transport"],
   },
-  { date: "12/09/2024", name: "Shahzad Athar" }
+  { date: "27/11/2024", name: "Andy Walker" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
