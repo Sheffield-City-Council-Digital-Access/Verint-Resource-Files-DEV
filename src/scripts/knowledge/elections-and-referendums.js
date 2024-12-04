@@ -1336,7 +1336,7 @@ const creditReferencingAgencies = new ContentEaR(
       Credit referencing agencies have access to the electoral register (previously
       called the full register), which means that everyone who has registered to
       vote appears on this register, even if they have opted out of the open
-      register (previosuly called the edited register). <br>
+      register (previously called the edited register). <br>
       <br>
       There are legal restrictions on what the credit referencing agencies can use the electoral register for and
       they are not allowed to sell this version, but can sell the open register.
