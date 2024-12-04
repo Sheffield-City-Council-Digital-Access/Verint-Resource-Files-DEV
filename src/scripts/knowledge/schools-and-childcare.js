@@ -261,7 +261,7 @@ const freeSchoolMeals = new ContentSaC(
       If you have difficulty accessing the Edenred website, 
       please contact your child's school for help in the first instance. 
       You can also contact the Edenred helpline 
-      on <a href="tel:03334445932">0333 444 5932</a> 
+      on <a href="tel:0333 4445932">0333 4445932</a> 
       or, if you live in Sheffield, contact the Free School Meals team.
     </p>
     <details class="accordion">

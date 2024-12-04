@@ -59,7 +59,7 @@ class FormB extends CoreB {
 const waysToReduceYourFuelBills = new ContentB(
   "waysToReduceYourFuelBills",
   "Ways to reduce your fuel bills",
-  "More information on what support is available can be found here,.",
+  "More information on what support is available can be found here.",
   `
     <p>
       If we are more efficient with our home energy use we can reduce our energy 
@@ -173,7 +173,7 @@ const findFoodSupportInSheffield = new ContentB(
   { typeKey: "cost_of_living_scheme_transferred_to_service" },
   { typeKey: "cost_of_living_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "02/12/2024", name: "Andy walker" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const applyForTheHouseholdSupportFund = new ContentB(
@@ -2085,7 +2085,7 @@ const supportFund = new ContentB(
 const WhatIsItFor = new ContentB(
   "WhatIsItFor",
   "What Is It For",
-  "What circumstances Crisis Grants are issued for",
+  "What circumstances Crisis Grants are issued for.",
   `
     <p>
       Sheffield Crisis Grants are to help people who do not have enough money to
@@ -2119,7 +2119,7 @@ const WhatIsItFor = new ContentB(
 const howDoesTheApplicationProcessWork = new ContentB(
   "howDoesTheApplicationProcessWork",
   "How does the application process work",
-  "find out what is included in the application process",
+  "find out what is included in the application process.",
   `
     <p>
       Applications for Sheffield Crisis Grants can be made by filling in our online
@@ -2167,7 +2167,7 @@ const howDoesTheApplicationProcessWork = new ContentB(
 const WhatWillCrisisGrantsBeMadeFor = new ContentB(
   "WhatWillCrisisGrantsBeMadeFor",
   "What will Crisis Grants be made for",
-  "Why Crisis Grants are issued",
+  "Why Crisis Grants are issued.",
   `
     <p>
       Sheffield Crisis Grants are generally awarded to cover day-to-day living
@@ -2197,7 +2197,7 @@ const WhatWillCrisisGrantsBeMadeFor = new ContentB(
 const WhatWillNotCrisisGrantsBeMadeFor = new ContentB(
   "WhatWillNotCrisisGrantsBeMadeFor",
   "What will Not Crisis Grants be made for",
-  "What circumstances Crisis Grants are not made for",
+  "What circumstances Crisis Grants are not made for.",
   `
     <p>
       It is not intended that a Sheffield Crisis Grant will be awarded to help with
@@ -2242,7 +2242,7 @@ const WhatWillNotCrisisGrantsBeMadeFor = new ContentB(
 const howIsTheDecisionMade = new ContentB(
   "howIsTheDecisionMade",
   "How Is The Decision Made",
-  "More information around the decision making",
+  "More information around the decision making.",
   `
     <p>
       A council officer will look at all the information on your application before
@@ -2265,7 +2265,7 @@ const howIsTheDecisionMade = new ContentB(
 const howWillIBeNotifiedOfTheDecision = new ContentB(
   "howWillIBeNotifiedOfTheDecision",
   "How will i be notified of the decision",
-  "How and when will you be notified of the decision",
+  "How and when will you be notified of the decision.",
   `
     <p>
       A council officer will look at all the information on your application before
@@ -2288,7 +2288,7 @@ const howWillIBeNotifiedOfTheDecision = new ContentB(
 const WhatIfIDisagreeWithTheDecision = new ContentB(
   "WhatIfIDisagreeWithTheDecision",
   "What if i disagree with the decision",
-  "The appeals process",
+  "The appeals process.",
   `
     <p>
       If you are unhappy with the outcome of your application, you may request a
@@ -2314,8 +2314,8 @@ const WhatIfIDisagreeWithTheDecision = new ContentB(
 
 const howWillIGetMySheffieldCrisisGrant = new ContentB(
   "howWillIGetMySheffieldCrisisGrant",
-  "How are Crisis Grants paid",
-  "Information on how you receive your Crisis Grant",
+  "How Crisis Grants are paid",
+  "Information on how you receive your Crisis Grant.",
   `
     <p>
       Sheffield Crisis Grants will be administered by the Cashiers service based in
@@ -2368,7 +2368,7 @@ const howWillIGetMySheffieldCrisisGrant = new ContentB(
 const whoCanApply = new ContentB(
   "whoCanApply",
   "Who Can Apply",
-  "Find more information around the eligibility of a Crisis Grant",
+  "Find more information around the eligibility of a Crisis Grant.",
   `
     <p>
       You may be able to get a Local Assistance Loan if: You are a Sheffield
@@ -2406,7 +2406,7 @@ const whoCanApply = new ContentB(
 const fraudulentClaims = new ContentB(
   "fraudulentClaims",
   "Fraudulent Claims",
-  "Find out how the council deal with fraudulent claims",
+  "Find out how the council deal with fraudulent claims.",
   `
     <p>
       The Council, to ensure that limited resources are most effectively used to
@@ -2431,7 +2431,7 @@ const fraudulentClaims = new ContentB(
 const whoCanApplyForIndependenceGrant = new ContentB(
   "whoCanApplyForIndependenceGrant",
   "Who Can Apply For Independence Grant",
-  "Find more information around the eligibility of a Crisis Grant",
+  "Find more information around the eligibility of a Crisis Grant.",
   `
     <p>You may be able to get a Sheffield Independence Grant if:</p>
     <p>You are a Sheffield resident, and:</p>
@@ -2476,7 +2476,7 @@ const whoCanApplyForIndependenceGrant = new ContentB(
 const WhatIndependanceGrantInformationIsItFor = new ContentB(
   "WhatIndependanceGrantInformationIsItFor",
   "What is the Independence Grant for?",
-  "Why and what circumstance an Independence Grant would be issued",
+  "Why and what circumstance an Independence Grant would be issued.",
   `
     <p>
       Sheffield Independence Grants are to support independent living in the
@@ -2539,7 +2539,7 @@ const howDoesTheIndependanceGrantInformationApplicationProcessWork =
   new ContentB(
     "howDoesTheIndependanceGrantInformationApplicationProcessWork",
     "How Does the Independance Grant Information Application Process Work",
-    "Find out what is included in the application process",
+    "Find out what is included in the application process.",
     `
       <p>
         Applications for Sheffield Independence Grants should be made by filling in
@@ -2588,7 +2588,7 @@ const howDoesTheIndependanceGrantInformationApplicationProcessWork =
 
 const WhatWillIndepedenceGrantsBeMadeFor = new ContentB(
   "WhatWillIndepedenceGrantsBeMade",
-  "What will Indepedence Grants be made for",
+  "What will Indepedence Grants be made for.",
   "",
   `
     <p>
@@ -2644,8 +2644,8 @@ const WhatWillIndepedenceGrantsBeMadeFor = new ContentB(
 );
 
 const WhatWillNotIndependenceGrantsBeMadeFor = new ContentB(
-  "WhatWillIndepedenceGrantsBeMade",
-  "What will Independence Grants be made for",
+  "WhatWillNotIndepedenceGrantsBeMadeFor",
+  "What will Independence Grants not be made for.",
   "",
   `
     <p>
@@ -2689,7 +2689,7 @@ const WhatWillNotIndependenceGrantsBeMadeFor = new ContentB(
 const howLongDoesItTakeToGetADecision = new ContentB(
   "howLongDoesItTakeToGetADecision",
   "How long does it take to get a decision",
-  "Find out the decision timescale for an Independence Grant",
+  "Find out the decision timescale for an Independence Grant.",
   `
     <p>
       A decision will be made about your Sheffield Independence Grant within 15
@@ -2726,8 +2726,8 @@ const howLongDoesItTakeToGetADecision = new ContentB(
 const howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation =
   new ContentB(
     "howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation",
-    "How will I be notified of the decision For Independence Grant Information",
-    "How and when will you be notified of the decision",
+    "How will I be notified of the decision For Independence Grant Information?",
+    "How and when will you be notified of the decision.",
     `
       <p>
         If you have provided us with an email address, written confirmation of the
@@ -2745,7 +2745,7 @@ const howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation =
 const whatIfIDisagreeWithTheIndependenceGrantdecision = new ContentB(
   "whatIfIDisagreeWithTheIndependenceGrantdecision",
   "What if I disagree with the Independence Grant decision?",
-  "Find out about the appeal process",
+  "Find out about the appeal process.",
   `
     <p>
       If you are unhappy with the outcome of your application, you may request a
@@ -2772,7 +2772,7 @@ const whatIfIDisagreeWithTheIndependenceGrantdecision = new ContentB(
 const howWillIGetMySheffieldIndependanceGrant = new ContentB(
   "howWillIGetMySheffieldIndependanceGrant",
   "How will I get my Sheffield Independance Grant",
-  "How are Sheffield Independence Grants paid",
+  "How are Sheffield Independence Grants paid.",
   `
     <p>
       Household goods (except for ovens and washing machines for non-Council
@@ -2831,7 +2831,7 @@ const howWillIGetMySheffieldIndependanceGrant = new ContentB(
 const fraudulentClaimsForIndependanceGrants = new ContentB(
   "fraudulentClaimsForIndependanceGrants",
   "Fraudulent Claims For Independance Grants",
-  "Find out how the council deal with fraudulent claims",
+  "Find out how the council deal with fraudulent claims.",
   `
     <p>
       The Council, to ensure that limited resources are most effectively used to
@@ -2856,7 +2856,7 @@ const fraudulentClaimsForIndependanceGrants = new ContentB(
 const generalInformation = new ContentB(
   "generalInformation",
   "General Information",
-  "Find more information around the Household Support Fund",
+  "Find more information around the Household Support Fund.",
   `
     <p>
       Residents facing hardship are currently able to apply for a Household Support
@@ -2874,7 +2874,7 @@ const generalInformation = new ContentB(
 const eligibilityCriteria = new ContentB(
   "eligibilityCriteria",
   "Eligibility Criteria",
-  "who can apply",
+  "Who can apply?",
   `
     <p>
       Are on a qualifying means tested benefit or are able to evidence that you are
@@ -2891,7 +2891,7 @@ const eligibilityCriteria = new ContentB(
 const howDoIApply = new ContentB(
   "howDoIApply",
   "How do I apply",
-  "Find out how to apply for the Household Support Fund",
+  "Find out how to apply for the Household Support Fund.",
   `
     <p>
       Applications can be made on our website at
@@ -2910,7 +2910,7 @@ const howDoIApply = new ContentB(
 const otherSupportAvailable = new ContentB(
   "otherSupportAvailable",
   "Other Support Available",
-  "Find out what other support is available",
+  "Find out what other support is available.",
   `
     <p>
       If a caller does not meet the eligibility criteria you should consider whether
@@ -2932,7 +2932,7 @@ const otherSupportAvailable = new ContentB(
 
 const howLongDoesItTakeToGetADecisionForHouseholdSupportFund = new ContentB(
   "howLongDoesItTakeToGetADecisionForHouseholdSupportFund",
-  "What If I Disagree With The Decision For Household Support Fund",
+  "What If I Disagree With The Decision For Household Support Fund.",
   "",
   `
     <p>
@@ -2952,7 +2952,7 @@ const howLongDoesItTakeToGetADecisionForHouseholdSupportFund = new ContentB(
 const WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund = new ContentB(
   "WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund",
   "What if I disagree with the decision",
-  "How the decision is made",
+  "How the decision is made.",
   `
     <p>
       If you disagree with a decision about your application, you can request that
@@ -2971,7 +2971,7 @@ const WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund = new ContentB(
 const howillIGetMyHouseholdSupportFundPayment = new ContentB(
   "howillIGetMyHouseholdSupportFundPayment",
   "How will I get my Household Support Fund payment",
-  "Find out how your payment is issued/received",
+  "Find out how your payment is issued/received.",
   `
     <p>
       Unless requested otherwise, you will receive a text or email from PayPoint.
@@ -2991,7 +2991,7 @@ const howillIGetMyHouseholdSupportFundPayment = new ContentB(
 const fraudulentClaimsForHouseholdSupportFund = new ContentB(
   "fraudulentClaimsForHouseholdSupportFund",
   "Fraudulent Claims For Household Support Fund",
-  "Find out how the council deal with fraudulent claims",
+  "Find out how the council deal with fraudulent claims.",
   `
     <p>
       The Council, to ensure that limited resources are most effectively used to
@@ -3043,7 +3043,7 @@ const costOfLiving = new MenuB(
 const crisisGrantInformation = new MenuB(
   "crisisGrantInformation",
   "Crisis Grant Information",
-  "Crisis grants don't have to be repaid. They're intended to help people who don't have enough money meet their short term needs",
+  "Crisis grants don't have to be repaid. They're intended to help people who don't have enough money meet their short term needs.",
   [
     whoCanApply,
     WhatIsItFor,
