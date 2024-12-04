@@ -2467,6 +2467,7 @@ const contactHousingBenefits = new ContentH(
         <p>An application form must be completed by the customer and returned to the benefits service.</p>
     </div>
     </details>
+    </details>
   `,
     { buttonLabel: "Welfare reform", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
