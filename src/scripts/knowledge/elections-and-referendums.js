@@ -852,7 +852,7 @@ const whereDoIVote = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "29/11/2024", ngame: "Nathan Smith" }
+  { date: "29/11/2024", name: "Nathan Smith" }
 );
 
 const electionsAndVoting = new MenuEaR(
