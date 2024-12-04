@@ -852,7 +852,7 @@ const whereDoIVote = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "29/11/2024", name: "Nathan Smith" }
+  { date: "29/11/2024", ngame: "Nathan Smith" }
 );
 
 const electionsAndVoting = new MenuEaR(
@@ -2080,7 +2080,7 @@ const electionResults = new ContentEaR(
       </p>
     </section>
     <p>
-      You can find the previous election results via our council website: <a href="https://www.sheffield.gov.uk/your-city-council/election-results" target="_blank">https://www.sheffield.gov.uk/your-city-council/election-results</a>
+      You can find the previous election results via: <a href="https://www.sheffield.gov.uk/your-city-council/election-results" target="_blank">https://www.sheffield.gov.uk/your-city-council/election-results</a>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -2101,6 +2101,7 @@ const electionResults = new ContentEaR(
       "resu",
       "resul",
       "result",
+      "elections results",
       "results"
     ],
     categories: ["Elections and Referendums", "Electoral"],
