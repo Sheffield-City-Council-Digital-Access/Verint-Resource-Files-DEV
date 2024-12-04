@@ -129,7 +129,7 @@ const fundedEarlyLearning = new ContentSaC(
     </p> 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
+  { typeKey: "funded_early_learning_transferred_to_service" },
   { typeKey: "funded_early_learning_information_provided" },
   {
     type: "Apply",
@@ -140,6 +140,10 @@ const fundedEarlyLearning = new ContentSaC(
       "Fundeed Early Learning",
       "Funded Early Lerning",
       "Funded Eearly Learning",
+      "FEL",
+      "FIS",
+      "LAS",
+      "Free Early Learning",
       "Fundded",
       "Fuded",
       "Funned",
@@ -154,11 +158,11 @@ const fundedEarlyLearning = new ContentSaC(
       "Learnning",
       "Lurning",
       "Lreaning",
-      "Leanring",
+      "Leanring"
     ],
     categories: ["School and Childcare"],
   },
-  { date: "17/09/2024", name: "Gee Whitehouse" }
+  { date: "26/11/2024", name: "Nathan Smith" }
 );
 
 const freeSchoolMeals = new ContentSaC(
@@ -401,6 +405,9 @@ const freeSchoolMeals = new ContentSaC(
       "mial",
       "mel",
       "meall",
+      "FSM",
+      "FSV",
+      "SV"
     ],
     categories: ["School and Childcare"],
   },
@@ -652,6 +659,11 @@ const schoolFoodVoucher = new ContentSaC(
       "mial",
       "mel",
       "meall",
+      "FSM",
+      "Food",
+      "Food Voucher",
+      "School Food",
+      "School Voucher"
     ],
     categories: ["School and Childcare"],
   },

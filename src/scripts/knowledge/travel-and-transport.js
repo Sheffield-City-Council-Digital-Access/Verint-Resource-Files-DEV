@@ -54,25 +54,113 @@ class FormTaT extends CoreTaT {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-const childTravelPasss = new ContentTaT(
-  "childTravelPasss",
+const childTravelPass = new ContentTaT(
+  "childTravelPass",
   "Child Travel Pass",
   "Apply or replace a child travel pass (Zoom Zero Travel Pass)",
   `
-    <h3>Eligibility</h3>
-    <p>ADD INFO</p>
-    <h3>Misplaced Passes</h3>
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>If you've changed your address or school</h3>
+      <p>
+        This could affect the distance your child travels to school so please 
+        check your eligibility before you apply for a new Children's Travel Pass.
+        <br>
+        <br>
+        Applications should be made to the Council where you live and not where the school is
+      </p>
+    </section>
     <p>
-      If your child has misplaced their pass, you can order a replacement from
-      Travel South Yorkshire.
+      Your child may be eligible for free school travel if you meet certain conditions.
     </p>
-    <p>There will be a replacement fee of £7.</p>
+    <h3>Who can apply</h3>
     <p>
-      Information on how to replace a misplaced pass can be found at:
-      <a href="https://www.travelsouthyorkshire.com/zerofarepass" target="_blank"
-        >www.travelsouthyorkshire.com/zerofarepass</a
-      >
+      Children between the age of  5 and 16 (Reception to Y11) may qualify for free school travel 
+      support if they go to their nearest available qualifying school in Sheffield and live at least:
     </p>
+    <p>
+      <ul>
+        <li>2 miles or more, if they're 5 to 7 years old</li>
+        <li>3 miles or more if they're 8 to 16 years old</li>
+      </ul>
+    </p>
+    <p>
+      If you get the maximum Working Tax Credit or your children are entitled to Free School Meals, 
+      they'll get free school travel support if they are:
+    </p>
+    <p>
+      <ul>
+        <li>aged 8 to 11 and travel 2 miles or more to their nearest available school</li>
+        <li>aged 11 to 16 and travel between 2 and 6 miles to their school, (as long as there are not 3 or more nearer available schools)</li>
+        <li>aged 11 to 16 and travel between 2 and 15 miles to their nearest available school if the parent chose the school on the grounds of religion, belief</li>
+        <li>aged 13 to 16 and attending a Sheffield-based University Technical College (UTC), if the UTC is two miles or more from their permanent home address</li>
+      </ul>
+    </p>
+    <p>
+      or
+    </p>
+    <p>
+      <ul>
+        <li>the child has special educational needs (SEN)</li>
+        <li>the child has an Education, Healthcare and Care plan (EHC)</li>
+        <li>the child is in foster care</li>
+      </ul>
+    </p>
+    <h3>Apply for or renew a Children's Travel Pass</h3>
+    <p>
+      You can apply for a new pass or renew an existing one at: <a href="https://www.sheffield.gov.uk/utilities/form/travel-and-transport/apply-childrens-travel-pass-start" target="_blank">https://www.sheffield.gov.uk/utilities/form/travel-and-transport/apply-childrens-travel-pass-start</a> 
+      <br>
+      <br>
+      It may take up to 28 days to process your application.
+      <br>
+      <br>
+      Please do not send in photographs using filters, such as Snapchat and Instagram images.
+    </p>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Lost of stolen pass</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+      <p>
+        If your child has misplaced their pass, you can order a replacement from
+        Travel South Yorkshire.
+      </p>
+      <p>There will be a replacement fee of £7.</p>
+      <p>
+        Information on how to replace a misplaced pass can be found at:
+        <a href="https://www.travelsouthyorkshire.com/zerofarepass" target="_blank">www.travelsouthyorkshire.com/zerofarepass</a>
+      </p>
+      </div>
+    </details>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Appeal a Children's Travel Pass decision</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          If you don't meet the criteria and are refused a Children’s Travel Pass, 
+          you have the right to appeal the decision. The appeals process has 2 stages.
+        </p>
+        <h4>Stage 1</h4>
+        <p>
+          Request a Stage 1 review within 20 working days of our decision to refuse a Children’s Travel Pass. We'll send you a 
+          detailed written outcome, we aim to do this within 20 working days of receiving your written request.
+          <br>
+          <br>
+          If we agree with the original decision to refuse a pass, you have 20 working days from receiving the Stage 1 decision to 
+          challenge it in writing. This begins a Stage 2 Appeal.
+        </p>
+        <h4>Stage 2</h4>
+        <p>
+          An independent appeal panel (the Admissions Committee) will consider any case that does not fall within our Home to School 
+          Transport Policy. 
+          <br>
+          <br>
+          To begin either a Stage 1 or Stage 2, please get in touch with us.
+        </p>
+      </div>
+    </details>
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Frequently Asked Questions</h3>
@@ -147,6 +235,7 @@ const childTravelPasss = new ContentTaT(
       "childrens travelp ass",
       "childrens trave pass",
       "childrens travell pass",
+      "CTP",
       "childrens",
       "childrenss",
       "childrens",
@@ -161,11 +250,11 @@ const childTravelPasss = new ContentTaT(
       "pess",
       "passs",
       "passe",
-      "pazs",
+      "pazs"
     ],
     categories: ["Travel and Transport"],
   },
-  { date: "26/09/2024", name: "Gee Whitehouse" }
+  { date: "26/11/2024", name: "Nathan Smith" }
 );
 
 const disabledTravelPermit = new ContentTaT(
@@ -291,6 +380,14 @@ const disabledTravelPermit = new ContentTaT(
       "applicaton",
       "aplicacion",
       "applucation",
+      "DTP",
+      "DPTP",
+      "MTP",
+      "DP",
+      "Mobility Travel Permit",
+      "Mobility Travel Pass",
+      "Mobile",
+      "Mobility"
     ],
 
     categories: ["Travel and Transport"],
@@ -305,5 +402,5 @@ const travelAndTransport = new ServiceTaT(
   "travelAndTransport",
   "Travel and Transport",
   `Public transport, driving, cycling, walking, travel cards and passes, school passes, travel news and updates…`,
-  [childTravelPasss, disabledTravelPermit]
+  [childTravelPass, disabledTravelPermit]
 );

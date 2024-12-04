@@ -55,138 +55,55 @@ class FormBDMaC extends CoreBDMaC {
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
 
-//-----------------Re-register a birth tile-------
-const reRegisterABirth = new ContentBDMaC(
-    "reRegisterABirth",
-    "Re-register a Birth",
-    "Desc tbc",
-    `
-  <p> Takes to <a href src= "#">form </a></p>
-    `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: ['register', 'birth', 'rgister', 'burth'],
-        categories: ["Registrars", "Registry Office", "Register Office", "Births"],
-    },
-    { date: "16/10/2024", name: "Joe Nixon" }
-);
+// #region Births, Deaths, Marriages and Citizenship
 
-//-------------Register a Death tile-----------
-const registerADeath = new ContentBDMaC(
-    "registerADeath",
-    "Register a Death",
-    "Desc tbd",
+const bookNoticeCivilPartnership = new ContentBDMaC(
+    "bookNoticeCivilPartnership",
+    "Book a Notice of Civil Partnership Appointment",
+    "Book a notice of Civil Partnership Appointment",
     `
-    <p>You are legally required to register a death within 5 days from when the Coroner or Medical Examiner has passed the relevant paperwork to the Register Office. The registration should take place in the district where the person died.
-    </p>
-    <h3>Changes to the death certification process</h3>
-    <p>Regulations introducing changes to the death certification process were laid before Parliament on 15 April 2024 and will come into force on 9 September 2024.
-    </p>
-    <p>The reforms change the way in which the causes of deaths are scrutinised and certified in England and Wales with the introduction of a statutory medical examiner system.
-    </p>
-    <p>During this process you may be contacted by the Medical Examiners Office. For further information regarding the deceased you should contact the hospital or GP dealing with the death.
-    </p>
-    <p>For more information about the death reform certification process please visit the <a href="Gov.Uk" target="_blank" rel="noopener noreferrer">Gov.uk</a> website.
-    </p>
-    <h3>Who can register a death</h3>
-    <p>Usually, a relative or long-term partner (living with the deceased) of the person who has died can register death, but others can also do this. This can be:</p>
+    <p>Giving notice means making a declaration that you are both free enter into a civil partnership and fulfil other requirements prescribed by law.</p>
+    <p>You need to ensure that you have given notice at least 28 days before the date. </p>
+    <p>If you are giving notice for a venue in the Sheffield district, please have your booking ID ready (this was provided in your email sent when booking the venue). Please contact our ceremonies team if you do not have this and they will email you the booking ID directly <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a>.</p>
+    <p>If you are booking a notice for a venue outside the Sheffield district you do not require a booking ID.</p>
+    <p>The earliest date the notice of civil partnership can be given is 12 months before the civil partnership ceremony. We recommend a notice of civil partnership should be done between 3-6 months before your ceremony.</p>
+    <p>Both must be over the age of 18.</p>
+    <p>If both of you are British, Irish or you have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you each need to give your notice of marriage in the Borough or District you are residing in, provided you have lived there for at least 8 days.</p>
+    <p>If you are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you must attend the notice of marriage appointment together either in the district you both live, or in either district (whichever is most convenient) if you live in different towns.</p>
+    <p>You must know where your civil partnership will take place.</p>
+    <p>The date of your civil partnership formation must be between 29 calendar days and 1 year of your appointment.</p>
+    <p>Further information for notice of civil partnership please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice " target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a>.</p>
+    <h3>Fees</h3>
+    <p>There is a fee to give your notice of civil partnership:</p>
     <ul>
-        <li>Someone present at the death</li>
-        <li>A person arranging the funeral</li>
-        <li>A personal representative of the deceased (solicitor, family friend or funeral director)</li>
-        <li>An official from the hospital or the manager of where the death took place (for example a care home)</li>
+        <li>Monday to Friday: £42.00 each (for standard appointments)</li>
+        <li>Monday to Friday: £57.00 each (for those who are not British, Irish and do not have EUSS status (settled, pre-settled and you have applied for the status before 30 June 2021))</li>
+        <li>Saturday (limited availability): £60.00 each (for standard appointments only)</li>
+        <li>Local foreign divorce for clearance: £55.00</li>
+        <li>Referral to General Registration Office for clearance: £83.00</li>
     </ul>
-    <h3>How to register a death</h3>
-    <p>Select a date to speak with the registrar, who will help you to make an appointment for registering the death.</p>
-    <h3>What happens next</h3>
-    <p>On your chosen date, the registrar will call you to check the paperwork and the deceased’s details. You don't need to worry about the relevant medical paperwork, as the coroner or medical examiner will send us a copy.</p>
-    <p>The registrar will then arrange for you to attend the Register Office the following day. This is for you to check and sign the registration paperwork and complete the registration.</p>
-    <p>If required, at this appointment you will receive the relevant paperwork for the funeral director, the Tell Us Once registration code and any death certificates</p>
-    <h3>Tell us once service</h3>
-    <p>When you register a death we will notify our other services and certain Government agencies of the person’s death. This is a free voluntary service and means fewer phone calls, letters or emails for you.</p>
-    <h3>Cost</h3>
+    <p>Any fees are payable when you book your appointment and will be calculated on the choices you make.</p>
+    <p>If you are unsure which fee applies to you, please contact <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a> for clarification.</p>
+    <h3>Proof of name, address, marital status and nationality</h3>
+    <p>You will need to bring:</p>
     <ul>
-        <li>Registration is free of charge.</li>
-        <li>Certified copies are £12.50 each at the time of registration.</li>
-        <li>Copy certificates may be obtained at a later date for the standard fee of £13.50 each.</li>
+        <li>A valid passport for proof of your name, age and nationality</li>
+        <li>Your driving licence, a utility bill dated within the last 3 months, or a bank statement dated within a month for proof of your address that includes either your full name or at least your initials</li>
+        <li>Proof that a previous marriage or civil partnership has ended:
+            <ul>
+                <li>decree absolute of divorce / dissolution</li>
+                <li>death certificate of former husband, wife or civil partner</li>
+                <li>We must be able to link the document to you. A Decree NISI of Divorce or dissolution is not acceptable. If the document is in another language, we will need a translation into English.</li>
+            </ul>
+        </li>
     </ul>
-  `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["", ""],
-    },
-    { date: "11/11/2024", name: "Joseph Coupland" }
-);
+    <h3>Change of Name</h3>
+    <p>If you have changed your name by deed poll or statutory declaration you will need to provide those documents.</p>
+    <p>If either you or your partner need an interpreter, you must bring one with you on the day of your appointment. Partners cannot interpret for each other.</p>
 
-//---------Register a Birth and Death tile
-
-const registerABirthAndDeath = new ContentBDMaC(
-    "registerABirthAndDeath",
-    "Register a Birth and Death",
-    "Desc tbd",
-    `
-  <p> Takes to <a href src= "#">form </a></p>
-  `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths"],
-    },
-    { date: "16/10/2024", name: "Joe Nixon" }
-);
-
-
-//-------register a stillbirth tile
-
-const registerAStillbirth = new ContentBDMaC(
-    "registerAStillbirth",
-    "Register a Stillbirth",
-    "Desc tbd",
-    `
-  <p> Takes to <a href src= "#">form </a></p>
-  `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths"],
-    },
-    { date: "11/11/2024", name: "Joseph Coupland" }
-);
-
-
-//------ copy certificates tile
-
-const copyCertificates = new ContentBDMaC(
-    "copyCertificates",
-    "Copy Certificates ",
-    "Desc tbd",
-    `
-    <p>We can only take request copies of certificates for registrations that took place in Sheffield.</p>
-    <p>You can request copy certificates via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates</a>.</p>
-    <p>There is a standard fee of £13.50 for these:</p>
-    <ul>
-        <li>full birth certificate.</li>
-        <li>full civil partnership certificate.</li>
-        <li>extract civil partnership certificate.</li>
-        <li>marriage certificate.</li>
-        <li>death certificate.</li>
-    </ul>
-    <p>Your certificate will be posted to you in 15 working days, please allow 3 days for delivery.</p>
-    <h3>Urgent applications</h3>
-    <p>These cost £38.50 including the cost of first-class postage, dispatched within 24 hours.</p>
+    <h3>Appointment</h3>
+    <p>If you do not attend with the correct documents or without an interpreter when one is needed, you may not be able to give your notice of civil partnership and you will need to rebook and attend another day.</p>
+    <p>Please arrive 5 to 10 minutes before your appointment. If you arrive late you may need to rebook.</p>
  
     `,
     { buttonLabel: "", formName: "" },
@@ -195,19 +112,76 @@ const copyCertificates = new ContentBDMaC(
     {
         type: "",
         keywords: [],
-        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths", "Certificates"],
+        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths", "Certificates", "Wedding", "Ceremony", "Partnership", "Civil"],
     },
     { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
+const bookNoticeOfMarriageApp = new ContentBDMaC(
+    "bookNoticeOfMarriageApp",
+    "Book a Notice of Marriage Appointment",
+    "Book a Notice of Marriage Appointment",
+    `
+    <p>Giving notice means making a declaration that you are both free to marry and fulfil other requirements prescribed by law.</p>
 
+    <ul>
+    
+        <li> You need to ensure that you have given notice at least 28 days before the date.</li>
+        <li>If you are giving notice for a venue in the Sheffield district, please have your booking ID ready, this was provided in your email sent when booking the venue. Please contact our ceremonies team if you do not have this and they will email you the booking ID directly <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a>.</li>
+        <li>If you are booking a notice for a venue outside the Sheffield district you do not require a booking ID.</li>
+    
+        <li>The earliest date the notice of marriage can be given is 12 months before the marriage ceremony. We recommend a notice of marriage should be done between 3-6 months before your ceremony.</li>
+        <li>Both must be over the age of 18.</li>
+        <li>If both of you are British, Irish or you have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you each need to give your notice of marriage in the Borough or District you are residing in, provided you have lived there for at least 8 days.</li>
+        <li>If you are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you must attend the notice of marriage appointment together either in the district you both live, or in either district (whichever is most convenient) if you live in different towns.</li>
+        <li>You must know where your marriage will take place.</li>
+        <li>The date of your marriage must be between 29 calendar days and 1 year of your appointment.</li>
+    </ul>
+    <p>Further information for notice of marriage please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice" target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a></p>
+    <h3>Fees</h3>
+    <p>There is a fee to give your notice of marriage (additional fees may be incurred dependant on your choices)</p>
+    <ul>
+        <li>Monday to Friday: £42.00 each (for standard appointments).</li>
+        <li>Monday to Friday: £57.00 each (for those who are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021).</li>
+        <li>Saturday (limited availability): £60.00 each (for standard appointments only).</li>
+        <li>Local foreign divorce for clearance: £55.00.</li>
+        <li>Referral to General Registration Office for clearance: £83.00.</li>
+    </ul>
+    <p>Any fees are payable when you book your appointment and will be calculated on the choices you make.</p>
+    <p>If you are unsure which fee applies to you, please contact <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a> for clarification.</p>
+    <h3>Proof of name, address, marital status and nationality</h3>
+    <p>You will need to bring:</p>
+    <ul>
+        <li>a valid passport for proof of your name, age and nationalit.y</li>
+        <li>your driving licence, a utility bill dated within the last 3 months, or a bank statement dated within a month for proof of your address that includes either your full name or at least your initials.</li>
+        <li>Proof that a previous marriage or civil partnership has ended.</li>
+        <li>decree absolute of divorce / dissolution.</li>
+        <li>death certificate of former husband, wife or civil partner.</li>
+    </ul>
+    <p>We must be able to link the document to you. A Decree NISI of Divorce is not acceptable. If the document is in another language, we will need a translation into English.</p>
+    <h3>Change of name</h3>
+    <p>If you have changed your name by deed poll or statutory declaration you will need to provide those documents.</p>
+    <p>If either you or your partner need an interpreter, you must bring one with you on the day of your appointment. Partners cannot interpret for each other.
+    </p>
+    <h3>Appointment</h3>
+    <p>If you do not attend with the correct documents or without an interpreter when one is needed, you may not be able to give your notice of marriage and you will need to rebook and attend another day.</p>
+    <p>Please arrive 5 to 10 minutes before your appointment. If you arrive late you may need to rebook.</p>
+     `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
+    {
+        type: "",
+        keywords: [],
+        categories: ["Registrars", "Registry Office", "Register Office", "Wedding", "Ceremony",],
+    },
+    { date: "11/11/2024", name: "Joseph Coupland" }
+);
 
-
-//-------------Booking a Registrar, Wedding or Civil Partnership in Sheffield tile
 const bookingARegistrarWedding = new ContentBDMaC(
     "bookingARegistrarWedding",
     "Booking a Registrar, Wedding or Civil Partnership in Sheffield",
-    "Desc tbd",
+    "Book a registrar, wedding or Civil Partnership",
     `
     <h3>Ceremony Bookings for Weddings or Civil Partnerships</h3>
     <p>Our integrated system allows you to choose and book a ceremony within 15 minutes. Once you have entered the process below the system will give you options to choose a venue either in the Town Hall or at an external licensed venue in the Sheffield district only (please read below for terms to book a venue). The choice will be given to for a Wedding or Civil Partnership during the booking process.</p>
@@ -299,138 +273,24 @@ const bookingARegistrarWedding = new ContentBDMaC(
     { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
-//---------Book a Notice of Marriage Appointment
-
-const bookNoticeOfMarriageApp = new ContentBDMaC(
-    "bookNoticeOfMarriageApp",
-    "Book a Notice of Marriage Appointment",
-    "Desc tbd",
+const copyCertificates = new ContentBDMaC(
+    "copyCertificates",
+    "Copy Certificates ",
+    "Request copy certificates",
     `
-    <p>Giving notice means making a declaration that you are both free to marry and fulfil other requirements prescribed by law.</p>
-
+    <p>We can only take request copies of certificates for registrations that took place in Sheffield.</p>
+    <p>You can request copy certificates via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates</a>.</p>
+    <p>There is a standard fee of £13.50 for these:</p>
     <ul>
-    
-        <li> You need to ensure that you have given notice at least 28 days before the date.</li>
-        <li>If you are giving notice for a venue in the Sheffield district, please have your booking ID ready, this was provided in your email sent when booking the venue. Please contact our ceremonies team if you do not have this and they will email you the booking ID directly <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a>.</li>
-        <li>If you are booking a notice for a venue outside the Sheffield district you do not require a booking ID.</li>
-    
-        <li>The earliest date the notice of marriage can be given is 12 months before the marriage ceremony. We recommend a notice of marriage should be done between 3-6 months before your ceremony.</li>
-        <li>Both must be over the age of 18.</li>
-        <li>If both of you are British, Irish or you have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you each need to give your notice of marriage in the Borough or District you are residing in, provided you have lived there for at least 8 days.</li>
-        <li>If you are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you must attend the notice of marriage appointment together either in the district you both live, or in either district (whichever is most convenient) if you live in different towns.</li>
-        <li>You must know where your marriage will take place.</li>
-        <li>The date of your marriage must be between 29 calendar days and 1 year of your appointment.</li>
+        <li>full birth certificate.</li>
+        <li>full civil partnership certificate.</li>
+        <li>extract civil partnership certificate.</li>
+        <li>marriage certificate.</li>
+        <li>death certificate.</li>
     </ul>
-    <p>Further information for notice of marriage please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice" target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a></p>
-    <h3>Fees</h3>
-    <p>There is a fee to give your notice of marriage (additional fees may be incurred dependant on your choices)</p>
-    <ul>
-        <li>Monday to Friday: £42.00 each (for standard appointments).</li>
-        <li>Monday to Friday: £57.00 each (for those who are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021).</li>
-        <li>Saturday (limited availability): £60.00 each (for standard appointments only).</li>
-        <li>Local foreign divorce for clearance: £55.00.</li>
-        <li>Referral to General Registration Office for clearance: £83.00.</li>
-    </ul>
-    <p>Any fees are payable when you book your appointment and will be calculated on the choices you make.</p>
-    <p>If you are unsure which fee applies to you, please contact <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a> for clarification.</p>
-    <h3>Proof of name, address, marital status and nationality</h3>
-    <p>You will need to bring:</p>
-    <ul>
-        <li>a valid passport for proof of your name, age and nationalit.y</li>
-        <li>your driving licence, a utility bill dated within the last 3 months, or a bank statement dated within a month for proof of your address that includes either your full name or at least your initials.</li>
-        <li>Proof that a previous marriage or civil partnership has ended.</li>
-        <li>decree absolute of divorce / dissolution.</li>
-        <li>death certificate of former husband, wife or civil partner.</li>
-    </ul>
-    <p>We must be able to link the document to you. A Decree NISI of Divorce is not acceptable. If the document is in another language, we will need a translation into English.</p>
-    <h3>Change of name</h3>
-    <p>If you have changed your name by deed poll or statutory declaration you will need to provide those documents.</p>
-    <p>If either you or your partner need an interpreter, you must bring one with you on the day of your appointment. Partners cannot interpret for each other.
-    </p>
-    <h3>Appointment</h3>
-    <p>If you do not attend with the correct documents or without an interpreter when one is needed, you may not be able to give your notice of marriage and you will need to rebook and attend another day.</p>
-    <p>Please arrive 5 to 10 minutes before your appointment. If you arrive late you may need to rebook.</p>
-     `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["Registrars", "Registry Office", "Register Office", "Wedding", "Ceremony",],
-    },
-    { date: "11/11/2024", name: "Joseph Coupland" }
-);
-
-//-------Reschedule an Appointment tile
-
-const rescheduleAnAppointment = new ContentBDMaC(
-    "rescheduleAnAppointment",
-    "Reschedule an Appointment",
-    "Desc tbd",
-    `
-  <p>Email <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a></p>
- 
-  `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths", "Certificates", "Wedding", "Ceremony",],
-    },
-    { date: "11/11/2024", name: "Joseph Coupland" }
-);
-
-//--------- Book a Notice of Civil Partnership Appointment tile
-const bookNoticeCivilPartnership = new ContentBDMaC(
-    "bookNoticeCivilPartnership",
-    "Book a Notice of Civil Partnership Appointment",
-    "Desc tbd",
-    `
-    <p>Giving notice means making a declaration that you are both free enter into a civil partnership and fulfil other requirements prescribed by law.</p>
-    <p>You need to ensure that you have given notice at least 28 days before the date. </p>
-    <p>If you are giving notice for a venue in the Sheffield district, please have your booking ID ready (this was provided in your email sent when booking the venue). Please contact our ceremonies team if you do not have this and they will email you the booking ID directly <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a>.</p>
-    <p>If you are booking a notice for a venue outside the Sheffield district you do not require a booking ID.</p>
-    <p>The earliest date the notice of civil partnership can be given is 12 months before the civil partnership ceremony. We recommend a notice of civil partnership should be done between 3-6 months before your ceremony.</p>
-    <p>Both must be over the age of 18.</p>
-    <p>If both of you are British, Irish or you have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you each need to give your notice of marriage in the Borough or District you are residing in, provided you have lived there for at least 8 days.</p>
-    <p>If you are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you must attend the notice of marriage appointment together either in the district you both live, or in either district (whichever is most convenient) if you live in different towns.</p>
-    <p>You must know where your civil partnership will take place.</p>
-    <p>The date of your civil partnership formation must be between 29 calendar days and 1 year of your appointment.</p>
-    <p>Further information for notice of civil partnership please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice " target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a>.</p>
-    <h3>Fees</h3>
-    <p>There is a fee to give your notice of civil partnership:</p>
-    <ul>
-        <li>Monday to Friday: £42.00 each (for standard appointments)</li>
-        <li>Monday to Friday: £57.00 each (for those who are not British, Irish and do not have EUSS status (settled, pre-settled and you have applied for the status before 30 June 2021))</li>
-        <li>Saturday (limited availability): £60.00 each (for standard appointments only)</li>
-        <li>Local foreign divorce for clearance: £55.00</li>
-        <li>Referral to General Registration Office for clearance: £83.00</li>
-    </ul>
-    <p>Any fees are payable when you book your appointment and will be calculated on the choices you make.</p>
-    <p>If you are unsure which fee applies to you, please contact <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a> for clarification.</p>
-    <h3>Proof of name, address, marital status and nationality</h3>
-    <p>You will need to bring:</p>
-    <ul>
-        <li>A valid passport for proof of your name, age and nationality</li>
-        <li>Your driving licence, a utility bill dated within the last 3 months, or a bank statement dated within a month for proof of your address that includes either your full name or at least your initials</li>
-        <li>Proof that a previous marriage or civil partnership has ended:
-            <ul>
-                <li>decree absolute of divorce / dissolution</li>
-                <li>death certificate of former husband, wife or civil partner</li>
-                <li>We must be able to link the document to you. A Decree NISI of Divorce or dissolution is not acceptable. If the document is in another language, we will need a translation into English.</li>
-            </ul>
-        </li>
-    </ul>
-    <h3>Change of Name</h3>
-    <p>If you have changed your name by deed poll or statutory declaration you will need to provide those documents.</p>
-    <p>If either you or your partner need an interpreter, you must bring one with you on the day of your appointment. Partners cannot interpret for each other.</p>
-
-    <h3>Appointment</h3>
-    <p>If you do not attend with the correct documents or without an interpreter when one is needed, you may not be able to give your notice of civil partnership and you will need to rebook and attend another day.</p>
-    <p>Please arrive 5 to 10 minutes before your appointment. If you arrive late you may need to rebook.</p>
+    <p>Your certificate will be posted to you in 15 working days, please allow 3 days for delivery.</p>
+    <h3>Urgent applications</h3>
+    <p>These cost £38.50 including the cost of first-class postage, dispatched within 24 hours.</p>
  
     `,
     { buttonLabel: "", formName: "" },
@@ -439,17 +299,15 @@ const bookNoticeCivilPartnership = new ContentBDMaC(
     {
         type: "",
         keywords: [],
-        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths", "Certificates", "Wedding", "Ceremony", "Partnership", "Civil"],
+        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths", "Certificates"],
     },
     { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
-//-------Final Payment tile
-
 const finalPayment = new ContentBDMaC(
     "finalPayment",
     "Final Payment",
-    "Desc tbd",
+    "How to make your final payment for your marriage or civil partnership",
     `
     <h3>Final Ceremony Payment</h3>
     <p>The final step to your ceremony is to make the final payment, you can make a final payment for your ceremony by using the Booking ID.  This booking ID was given when booking the ceremony after 29th of October 2024.</p>
@@ -477,15 +335,10 @@ const finalPayment = new ContentBDMaC(
     { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
-
-//--------Licensed Wedding Venues in Sheffield tile
-//-------I'm not sure if this should be a new tile
-//------------or in the tile above, so I've created a new one
-
 const licensedWeddingVenues = new ContentBDMaC(
     "licensedWeddingVenues",
     "Licensed Wedding Venues in Sheffield",
-    "Desc tbd",
+    "Information on licensed wedding venues",
     `
     <p>You you can find information about licensed wedding venues in Sheffield at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues</a></p>
     <p>New link will be finalised soon for new intagrated payments we will need to update thisprocess when confirmed going live</p>
@@ -518,17 +371,81 @@ const licensedWeddingVenues = new ContentBDMaC(
     { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
-
-
-//---------Registrars Emails tile
-const registrarsEmails = new ContentBDMaC(
-    "registrarsEmails",
-    "Registrars Emails",
-    "Desc tbd",
+const reRegisterABirth = new ContentBDMaC(
+    "reRegisterABirth",
+    "Re-register a Birth",
+    "Desc tbc",
     `
   <p> Takes to <a href src= "#">form </a></p>
- 
     `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
+    {
+        type: "",
+        keywords: ['register', 'birth', 'rgister', 'burth'],
+        categories: ["Registrars", "Registry Office", "Register Office", "Births"],
+    },
+    { date: "16/10/2024", name: "Joe Nixon" }
+);
+
+const registerABirthAndDeath = new ContentBDMaC(
+    "registerABirthAndDeath",
+    "Register a Birth and Death",
+    "Register a birth and death",
+    `
+  <p> Takes to <a href src= "#">form </a></p>
+  `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
+    {
+        type: "",
+        keywords: [],
+        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths"],
+    },
+    { date: "16/10/2024", name: "Joe Nixon" }
+);
+
+const registerADeath = new ContentBDMaC(
+    "registerADeath",
+    "Register a Death",
+    "Register a death",
+    `
+    <p>You are legally required to register a death within 5 days from when the Coroner or Medical Examiner has passed the relevant paperwork to the Register Office. The registration should take place in the district where the person died.
+    </p>
+    <h3>Changes to the death certification process</h3>
+    <p>Regulations introducing changes to the death certification process were laid before Parliament on 15 April 2024 and will come into force on 9 September 2024.
+    </p>
+    <p>The reforms change the way in which the causes of deaths are scrutinised and certified in England and Wales with the introduction of a statutory medical examiner system.
+    </p>
+    <p>During this process you may be contacted by the Medical Examiners Office. For further information regarding the deceased you should contact the hospital or GP dealing with the death.
+    </p>
+    <p>For more information about the death reform certification process please visit the <a href="Gov.Uk" target="_blank" rel="noopener noreferrer">Gov.uk</a> website.
+    </p>
+    <h3>Who can register a death</h3>
+    <p>Usually, a relative or long-term partner (living with the deceased) of the person who has died can register death, but others can also do this. This can be:</p>
+    <ul>
+        <li>Someone present at the death</li>
+        <li>A person arranging the funeral</li>
+        <li>A personal representative of the deceased (solicitor, family friend or funeral director)</li>
+        <li>An official from the hospital or the manager of where the death took place (for example a care home)</li>
+    </ul>
+    <h3>How to register a death</h3>
+    <p>Select a date to speak with the registrar, who will help you to make an appointment for registering the death.</p>
+    <h3>What happens next</h3>
+    <p>On your chosen date, the registrar will call you to check the paperwork and the deceased’s details. You don't need to worry about the relevant medical paperwork, as the coroner or medical examiner will send us a copy.</p>
+    <p>The registrar will then arrange for you to attend the Register Office the following day. This is for you to check and sign the registration paperwork and complete the registration.</p>
+    <p>If required, at this appointment you will receive the relevant paperwork for the funeral director, the Tell Us Once registration code and any death certificates</p>
+    <h3>Tell us once service</h3>
+    <p>When you register a death we will notify our other services and certain Government agencies of the person’s death. This is a free voluntary service and means fewer phone calls, letters or emails for you.</p>
+    <h3>Cost</h3>
+    <ul>
+        <li>Registration is free of charge.</li>
+        <li>Certified copies are £12.50 each at the time of registration.</li>
+        <li>Copy certificates may be obtained at a later date for the standard fee of £13.50 each.</li>
+    </ul>
+  `,
     { buttonLabel: "", formName: "" },
     { typeKey: "register_office_information_requested" },
     { typeKey: "register_office_information_provided" },
@@ -540,8 +457,42 @@ const registrarsEmails = new ContentBDMaC(
     { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
+const registerAStillbirth = new ContentBDMaC(
+    "registerAStillbirth",
+    "Register a Stillbirth",
+    "Register a stillbirth",
+    `
+  <p> Takes to <a href src= "#">form </a></p>
+  `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
+    {
+        type: "",
+        keywords: [],
+        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths"],
+    },
+    { date: "11/11/2024", name: "Joseph Coupland" }
+);
 
-
+const rescheduleAnAppointment = new ContentBDMaC(
+    "rescheduleAnAppointment",
+    "Reschedule an Appointment",
+    "Reschedule an appointment",
+    `
+  <p>To reschedule an appointment email: <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a></p>
+ 
+  `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "register_office_information_requested" },
+    { typeKey: "register_office_information_provided" },
+    {
+        type: "",
+        keywords: [],
+        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths", "Certificates", "Wedding", "Ceremony",],
+    },
+    { date: "11/11/2024", name: "Joseph Coupland" }
+);
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -550,5 +501,19 @@ const birthsDeathsMarriagesAndCitizenship = new ServiceBDMaC(
     "birthsDeathsMarriagesAndCitizenship",
     "Births, Deaths, Marriages and Citizenship",
     `Register Office, naming ceremonies, burials and memorials, civil partnerships, citizenship ceremonies, order copies of certificates…`,
-    [reRegisterABirth, registerADeath, registerABirthAndDeath, registerAStillbirth, copyCertificates, bookingARegistrarWedding, bookNoticeOfMarriageApp, rescheduleAnAppointment, bookNoticeCivilPartnership, finalPayment, licensedWeddingVenues, registrarsEmails]
+    [ 
+        bookNoticeCivilPartnership,
+        bookNoticeOfMarriageApp,
+        bookingARegistrarWedding,
+        copyCertificates,
+        finalPayment,
+        licensedWeddingVenues,
+        reRegisterABirth, 
+        registerABirthAndDeath,
+        registerADeath,
+        registerAStillbirth,
+        rescheduleAnAppointment
+    ]
 );
+
+// #endregion Births, Deaths, Marriages and Citizenship
