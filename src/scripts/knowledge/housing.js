@@ -598,7 +598,11 @@ const communalAreas = new ContentH(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx" target="_blank">Blocked Bin Chutes</a></p>
+    <p>
+      Bin chutes in Council flats or maisonettes may become blocked and will be unblocked upon request.<br>
+      Check the 
+      <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx" target="_blank">blocked bin chutes list</a>
+    </p>
   </div>
 </details>
 
@@ -645,6 +649,10 @@ const communalAreas = new ContentH(
       "repairs and invesment",
       "repair and investement",
       "repairs and invesmant",
+      "blocked",
+      "bin",
+      "bins",
+      "chute"
     ],
     categories: ["Housing"],
   },
@@ -1130,7 +1138,7 @@ const newAndExistingRepairs = new ContentH(
 
 const noHeatNoWater = new ContentH(
   "noHeatNoWater",
-  "No Heat No Water",
+  "Report no heat or hot Water",
   "",
   `
   <p>
@@ -1546,31 +1554,6 @@ const assetManagementAndRepairs = new MenuH(
 
 //#region Estates and Environments
 
-const blockedBinChutes = new ContentH(
-  "blockedBinChutes",
-  "Blocked Bin Chutes",
-  "",
-  `
-    <p>
-      Bin chutes in Council flats or maisonettes may become blocked and will be
-      unblocked upon request.
-    </p>
-    <p>
-      Open the blocked chutes list from the button below, and use the search, is the
-      property on the list?
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
-  {
-    type: "Report",
-    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
-    categories: ["Housing", "Estates and Environments"],
-  },
-  { date: "14/10/2024", name: "Omily Parkin" }
-);
-
 const communalCupboard = new ContentH(
   "communalCupboard",
   "Communal Cupboard and Meter Box Cupboard",
@@ -1744,7 +1727,6 @@ const estatesAndEnvironments = new MenuH(
   "Estates and Environments",
   "Bin chutes, communal cupboard, fences, firesafety and garden maintenance",
   [
-    blockedBinChutes,
     communalCupboard,
     communalFireSafety,
     fencesCouncilHousing,
