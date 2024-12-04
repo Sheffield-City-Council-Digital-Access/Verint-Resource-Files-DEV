@@ -373,8 +373,8 @@ const licensedWeddingVenues = new ContentBDMaC(
 
 const reRegisterABirth = new ContentBDMaC(
     "reRegisterABirth",
-    "Re-register a Birth",
-    "Desc tbc",
+    "Make an appointment to re-register a birth",
+    "Make an appointment to re-register a birth.",
     `
   <p> Takes to <a href src= "#">form </a></p>
     `,
@@ -386,7 +386,7 @@ const reRegisterABirth = new ContentBDMaC(
         keywords: ['register', 'birth', 'rgister', 'burth'],
         categories: ["Registrars", "Registry Office", "Register Office", "Births"],
     },
-    { date: "16/10/2024", name: "Joe Nixon" }
+    { date: "04/12/2024", name: "Andy Walker" }
 );
 
 const registerABirthAndDeath = new ContentBDMaC(
