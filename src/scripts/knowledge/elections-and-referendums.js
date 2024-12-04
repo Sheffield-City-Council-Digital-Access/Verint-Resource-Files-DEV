@@ -54,7 +54,7 @@ class FormEaR extends CoreEaR {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-// #region Annual Canvas
+// #region Annual Canvass
 
 const canvassForm = new ContentEaR(
   "canvassForm",
@@ -442,7 +442,7 @@ const annualCanvasMenu = new MenuEaR(
   ]
 );
 
-// #endregion Elections and Voting
+// #endregion Annual Canvass
 
 // #region Elections and Voting
 
@@ -2024,7 +2024,7 @@ const registeringToVote = new MenuEaR(
 
 // #endregion Registering to Vote
 
-// #region Top Enquiries
+// #region Other Enquiries
 
 const councillors = new ContentEaR(
   "councillors",
@@ -2191,8 +2191,8 @@ const wards = new ContentEaR(
   { date: "25/11/2024", name: "Nathan Smith" }
 );
 
-const otherEnquiries = new MenuEaR(
-  "otherEnquiries",
+const zzOtherEnquiries = new MenuEaR(
+  "zzOtherEnquiries",
   "Other Enquiries",
   "For enquiries regarding, Councillors, Election results, Family Tree or Genealogy or Wards.",
 [
@@ -2202,7 +2202,7 @@ const otherEnquiries = new MenuEaR(
   wards
 ]);
 
-// #endregion Top Enquiries
+// #endregion Other Enquiries
 
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
@@ -2213,10 +2213,10 @@ const electionsAndReferendums = new ServiceEaR(
   "Elections and Referendums",
   `General elections, local elections, by-election, mayoral election, police and crime commissioner, referendums and voting...`,
   [
-    registeringToVote,
     annualCanvasMenu,
-    postalorProxyVoting,
     electionsAndVoting,
-    otherEnquiries
+    postalorProxyVoting,
+    registeringToVote,
+    zzOtherEnquiries
   ]
 );
