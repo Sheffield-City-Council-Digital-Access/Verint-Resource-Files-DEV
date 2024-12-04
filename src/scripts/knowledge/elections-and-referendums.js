@@ -857,8 +857,8 @@ const whereDoIVote = new ContentEaR(
 
 const electionsAndVoting = new MenuEaR(
   "electionsAndVoting",
-  "Elections And Voting",
-  "Information about Voting in these elections can be found here",
+  "Elections and Voting",
+  "Information about Voting in these elections can be found here.",
   [
     assistanceForPartiallySightedVoters,
     howToCompletePostalVote,
@@ -2080,7 +2080,7 @@ const electionResults = new ContentEaR(
       </p>
     </section>
     <p>
-      You can find the previous election results via our council website: <a href="https://www.sheffield.gov.uk/your-city-council/election-results" target="_blank">Election Results</a>
+      You can find the previous election results via our council website: <a href="https://www.sheffield.gov.uk/your-city-council/election-results" target="_blank">https://www.sheffield.gov.uk/your-city-council/election-results</a>
     </p>
   `,
   { buttonLabel: "", formName: "" },
