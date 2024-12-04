@@ -2216,6 +2216,7 @@ const electionsAndReferendums = new ServiceEaR(
     registeringToVote,
     annualCanvasMenu,
     postalorProxyVoting,
-    electionsAndVoting
+    electionsAndVoting,
+    otherEnquiries
   ]
 );
