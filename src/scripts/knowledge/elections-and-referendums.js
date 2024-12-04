@@ -857,8 +857,8 @@ const whereDoIVote = new ContentEaR(
 
 const electionsAndVoting = new MenuEaR(
   "electionsAndVoting",
-  "Elections And Voting",
-  "Information about Voting in these elections can be found here",
+  "Elections and Voting",
+  "Information about Voting in these elections can be found here.",
   [
     assistanceForPartiallySightedVoters,
     howToCompletePostalVote,
@@ -2080,7 +2080,7 @@ const electionResults = new ContentEaR(
       </p>
     </section>
     <p>
-      SERVICE HAS TO PROVIDE PREVIOUS ELECTION RESULTS
+      You can find the previous election results via: <a href="https://www.sheffield.gov.uk/your-city-council/election-results" target="_blank">https://www.sheffield.gov.uk/your-city-council/election-results</a>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -2101,6 +2101,7 @@ const electionResults = new ContentEaR(
       "resu",
       "resul",
       "result",
+      "elections results",
       "results"
     ],
     categories: ["Elections and Referendums", "Electoral"],
@@ -2191,17 +2192,6 @@ const wards = new ContentEaR(
   { date: "25/11/2024", name: "Nathan Smith" }
 );
 
-const zzOtherEnquiries = new MenuEaR(
-  "zzOtherEnquiries",
-  "Other Enquiries",
-  "For enquiries regarding, Councillors, Election results, Family Tree or Genealogy or Wards.",
-[
-  councillors,
-  electionResults,
-  familyTreeorGenealogy,
-  wards
-]);
-
 // #endregion Other Enquiries
 
 
@@ -2214,9 +2204,12 @@ const electionsAndReferendums = new ServiceEaR(
   `General elections, local elections, by-election, mayoral election, police and crime commissioner, referendums and voting...`,
   [
     annualCanvassMenu,
+    councillors,
+    electionResults,
     electionsAndVoting,
+    familyTreeorGenealogy,
     postalorProxyVoting,
     registeringToVote,
-    zzOtherEnquiries
+    wards
   ]
 );
