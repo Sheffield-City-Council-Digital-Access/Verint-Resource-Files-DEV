@@ -2191,7 +2191,7 @@ const wards = new ContentEaR(
   { date: "25/11/2024", name: "Nathan Smith" }
 );
 
-const topEnquiries = new MenuEaR(
+const otherEnquiries = new MenuEaR(
   "otherEnquiries",
   "Other Enquiries",
   "For enquiries regarding, Councillors, Election results, Family Tree or Genealogy or Wards.",
