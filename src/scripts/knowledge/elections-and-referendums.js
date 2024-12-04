@@ -600,7 +600,7 @@ const parishElections = new ContentEaR(
     <p>
       You can only vote at a Parish election if you live within the parish. 
       More details around the Parish Elections can be found here:
-      <a href="https://www.sheffield.gov.uk/home/your-city-council/election-types">https://www.sheffield.gov.uk/home/your-city-council/election-types</a>
+      <a href="https://www.sheffield.gov.uk/home/your-city-council/election-types"target_blank">https://www.sheffield.gov.uk/home/your-city-council/election-types</a>
     </p>
   `,
   { buttonLabel: "", formName: "" },
