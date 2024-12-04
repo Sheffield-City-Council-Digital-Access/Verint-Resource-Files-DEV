@@ -1182,12 +1182,12 @@ const FrogsorFrogspawn = new ContentPaN(
   "Information about Frogs or Frogspawn",
   `
     <p>
-    Sheffield City Council doesn't offer a service for Frogs or Frogspawn.
-    <br>
-    <br>
-    For advice/information on Frogs or Frogspawn, please call DEFRA who are licenced to remove 
+      Sheffield City Council doesn't offer a service for Frogs or Frogspawn.
+      <br>
+      <br>
+      For advice/information on Frogs or Frogspawn, please call DEFRA who are licenced to remove 
       frogs or frog spawn on <strong>0113 2613333</strong> or visit:
-      <a href="https://www.gov.uk/browse/environment-countryside" target="_blank">Browse Environment and Countryside</a>.
+      <a href="https://www.gov.uk/browse/environment-countryside" target="_blank">https://www.gov.uk/browse/environment-countryside</a>.
     </p>
   `,
   {
