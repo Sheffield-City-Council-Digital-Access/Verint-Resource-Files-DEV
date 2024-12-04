@@ -427,9 +427,9 @@ const studentVoters = new ContentEaR(
   { date: "25/11/2024", name: "Nathan Smith" }
 );
 
-const annualCanvasMenu = new MenuEaR(
-  "annualCanvasMenu",
-  "Annual Canvas",
+const annualCanvassMenu = new MenuEaR(
+  "annualCanvassMenu",
+  "Annual Canvass",
   "The household canvass takes place each year to enable us to ensure the electoral register is up to date for each residential property in the city.",
   [
     canvassForm,
@@ -2213,7 +2213,7 @@ const electionsAndReferendums = new ServiceEaR(
   "Elections and Referendums",
   `General elections, local elections, by-election, mayoral election, police and crime commissioner, referendums and voting...`,
   [
-    annualCanvasMenu,
+    annualCanvassMenu,
     electionsAndVoting,
     postalorProxyVoting,
     registeringToVote,
