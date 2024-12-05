@@ -492,6 +492,6 @@ Within 5 working days of receipt of the complaint.
 const feedbackAndComplaints = new ServiceFaC(
   "feedbackAndComplaints",
   "Feedback and Complaints",
-  "Logging and managing customer complaints, covering processes for Adult Social Care, Children's Social Care, Corporate Complaints, and our general approach to feedback and resolution.",
+  "Information and Logging processes for Adult Social Care, Children's Social Care, Corporate Complaints, and our general approach to feedback and resolution.",
     [complaints, childrensSocialCareComplaints, adultsocialcarecomplaints, corporateComplaintsProcedure]
 );
