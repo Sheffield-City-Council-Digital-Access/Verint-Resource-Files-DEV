@@ -65,13 +65,14 @@ const emergencyAccommodation = new ContentOoH(
   { typeKey: "emergency_homeless_transferred_to_service" },
   { typeKey: "emergency_homeless_information_provided" },
   { type: "Information",
-    keywords: [
+    keywords:
+    [
       'Emergency accommodation',
       'emergency accomodation',
       'emergncy accomodation',
       'emergancy accommodation',
       'emergency accomodtion',
-      'emergncy accommodation',
+      'emergncy accommodation'
     ],
     categories: ["out of hours"]
   },
@@ -88,9 +89,19 @@ const emergencyChildService = new ContentOoH(
   `,
   { buttonLabel: "Apply children's emergency service", formName: "emergency_child_service" },
   { typeKey: "childrens_transferred_to_service" },
-  { typeKey: "chidlrens_information_provided" },
-  { type: "Apply", keywords: ["children's emergency service",
-    'Childrens emergncy service', "Childern's emergency service", 'Childrens emergancy service', "Childern's emergncy service", "Children's emrgency servce"], categories: ["out of hourss"] },
+  { typeKey: "childrens_information_provided" },
+  { type: "Apply",
+    keywords:
+    [
+      "children's emergency service",
+      'Childrens emergncy service',
+      "Childern's emergency service",
+      'Childrens emergancy service',
+      "Childern's emergncy service",
+      "Children's emrgency servce"
+    ],
+    categories: ["out of hours"]
+  },
   { date: "13/10/2024", name: "George Whitehouse" }
 );
 
@@ -104,7 +115,18 @@ const emergencyAdultService = new ContentOoH(
   { buttonLabel: "Apply Adult emergency service", formName: "emergency_adult_service" },
   { typeKey: "adults_transferred_to_service" },
   { typeKey: "adults_service_information_provided" },
-  { type: "Apply", keywords: ["Adult's emergency service",'adults emergancy service', "adult's emergncy service", 'adults emrgency servce', 'adults emerjency service', 'adults emergency servise'], categories: ["out of hours"] },
+  { type: "Apply",
+    keywords:
+    [
+      "Adult's emergency service",
+      'adults emergancy service',
+      "adult's emergncy service",
+      'adults emrgency servce',
+      'adults emerjency service',
+      'adults emergency servise'
+    ],
+    categories: ["out of hours"]
+  },
   { date: "13/10/2024", name: "George Whitehouse" }
 );
 
@@ -118,7 +140,18 @@ const reportAnEmergencyRepair = new ContentOoH(
   { buttonLabel: "Report an emergency repair", formName: "report_emergency_repair" },
   { typeKey: "repairs_transferred_to_service" },
   { typeKey: "repairs_information_provided" },
-  { type: "Report", keywords: ['Report an emergency repair','report an emergncy repair', 'reprot an emergency repair', 'report an emergncy repare', 'report an emrgency repair', 'report an emergancy repair'], categories: ["out of hours"] },
+  { type: "Report",
+    keywords:
+    [
+      'Report an emergency repair',
+      'report an emergncy repair',
+      'reprot an emergency repair',
+      'report an emergncy repare',
+      'report an emrgency repair',
+      'report an emergancy repair'
+    ],
+    categories: ["out of hours"]
+  },
   { date: "13/10/2024", name: "George Whitehouse" }
 );
 
@@ -137,6 +170,5 @@ const outOfHours = new ServiceOoH(
       emergencyAdultService,
       emergencyChildService,
       reportAnEmergencyRepair
-
     ]
 );
