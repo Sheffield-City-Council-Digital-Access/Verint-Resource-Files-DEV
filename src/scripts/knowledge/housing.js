@@ -2707,7 +2707,7 @@ const applicationChanges = new ContentH(
         </p>
         <p>
           In the most serious debt cases, the Allocations Policy allows us to place
-          applicants into Band E or disqualify a customer from the Housing Register
+          applicants into band E or disqualify a customer from the Housing Register
           for an initial period of 12 months.
         </p>
         <p>A customer can apply for a restriction to be removed if:</p>
@@ -2926,7 +2926,7 @@ const bidding = new ContentH(
           <br>
           <br>
             In the most serious debt cases, the Allocations Policy allows us to place
-            applicants into Band E or disqualify a customer from the Housing Register
+            applicants into band E or disqualify a customer from the Housing Register
             for an initial period of 12 months.
           <br>
           <br>
@@ -3166,7 +3166,7 @@ const bidding = new ContentH(
         </summary>
         <div class="accordion-content">
           <details class="details-accordion">
-            <summary>Acis Group Ltd, tel <a href="tel:0142 7678000">0142 7678000</a></summary>
+            <summary>Acis Group Ltd</summary>
             <div class="details-accordion-content">
               <address>
                 Acis Group Ltd, tel <a href="tel:0142 7678000">0142 7678000</a><br>
@@ -3188,7 +3188,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Anchor Trust, tel <a href="tel:0345 7758595">0345 7758595</a></summary>
+            <summary>Anchor Trust</summary>
             <div class="details-accordion-content">
               <address>
                 Anchor Trust, tel <a href="tel:0345 7758595">0345 7758595</a><br>
@@ -3206,7 +3206,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Arches Housing Association, tel <a href="tel:0114 2288100">0114 2288100</a></summary>
+            <summary>Arches Housing Association</summary>
             <div class="details-accordion-content">
               <address>
                 Arches Housing Limited, tel <a href="tel:0114 2288100">0114 2288100</a><br>
@@ -3226,7 +3226,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Clarion Housing Group, tel <a href="tel:0330 5008000">0330 5008000</a></summary>
+            <summary>Clarion Housing Group</summary>
             <div class="details-accordion-content">
               <p>
                 Clarion Housing Group, tel <a href="tel:0330 5008000">0330 5008000</a><br>
@@ -3236,7 +3236,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Together Group with Pennine, tel <a href="tel:0845 2701088">0845 2701088</a></summary>
+            <summary>Together Group with Pennine</summary>
             <div class="details-accordion-content">
               <address>
                 Together Group with Pennine, tel <a href="tel:0845 2701088">0845 2701088</a><br>
@@ -3251,7 +3251,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>English Churches Housing Group / The Riverside Group, tel <a href="tel:0345 1110000">0345 1110000</a></summary>
+            <summary>English Churches Housing Group / The Riverside Group</summary>
             <div class="details-accordion-content">
               <address>
                 English Churches Housing Group / The Riverside Group, tel <a href="tel:0345 1559002">0345 1559002</a><br>
@@ -3268,7 +3268,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Great Places Housing Group, tel <a href="tel:0300 1231966">0300 1231966</a></summary>
+            <summary>Great Places Housing Group</summary>
             <div class="details-accordion-content">
               <address>
                 Great Places Housing Group, tel <a href="tel:0300 1231966">0300 1231966</a><br>
@@ -3286,7 +3286,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Guinness Northern Counties, tel <a href="tel:0303 1231890">0303 1231890</a></summary>
+            <summary>Guinness Northern Counties</summary>
             <div class="details-accordion-content">
               <address>
                 Guinness Northern Counties, tel <a href="tel:0303 1231890">0303 1231890</a><br>
@@ -3305,7 +3305,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Home Group, tel <a href="tel:0345 1414663">0345 1414663</a></summary>
+            <summary>Home Group</summary>
             <div class="details-accordion-content">
               <address>
                 Home Group, tel <a href="tel:0345 1414663">0345 1414663</a><br>
@@ -3322,7 +3322,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Housing 21, tel <a href="tel:0370 1924000">0370 1924000</a></summary>
+            <summary>Housing 21</summary>
             <div class="details-accordion-content">
               <address>
                 Housing 21, tel <a href="tel:0370 192 4000">0370 192 4000</a><br>
@@ -3339,7 +3339,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Johnnie Johnson Housing Trust Ltd, tel <a href="tel:0345 3055335">0345 3055335</a></summary>
+            <summary>Johnnie Johnson Housing Trust Ltd</summary>
             <div class="details-accordion-content">
               <address>
                 Johnnie Johnson Housing Trust Ltd, tel <a href="tel:0345 3055335">0345 3055335</a><br>
@@ -3357,7 +3357,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Padley, tel <a href="tel:0114 2666626">0114 2666626</a></summary>
+            <summary>Padley</summary>
             <div class="details-accordion-content">
               <address>
                 Padley, tel <a href="tel:0114 2666626">0114 2666626</a><br>
@@ -3372,7 +3372,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Places for People, tel <a href="tel:0113 2858923">0113 2858923</a></summary>
+            <summary>Places for People</summary>
             <div class="details-accordion-content">
               <p>
                 Places for People, tel <a href="tel:0113 2858923">0113 2858923</a><br>
@@ -3387,7 +3387,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Sanctuary, tel <a href="tel:0800 1313348">0800 1313348</a></summary>
+            <summary>Sanctuary</summary>
             <div class="details-accordion-content">
               <address>
                 Sanctuary, tel <a href="tel:0800 1313348">0800 1313348</a><br>
@@ -3416,7 +3416,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Sheffield Jewish Housing Association, tel <a href="tel:0114 2554318">0114 2554318</a></summary>
+            <summary>Sheffield Jewish Housing Association</summary>
             <div class="details-accordion-content">
               <address>
                 Sheffield Jewish Housing Association, tel <a href="tel:0114 2554318">0114 2554318</a><br>
@@ -3431,7 +3431,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>South Yorkshire Housing Association, tel <a href="tel:0114 2900200">0114 2900200</a> / <a href="tel:0800 1380380">0800 1380380</a></summary>
+            <summary>South Yorkshire Housing Association</summary>
             <div class="details-accordion-content">
               <address>
                 South Yorkshire Housing Association<br>
@@ -3450,7 +3450,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Together Housing Group, tel <a href="tel:0142 2284500">0142 2284500</a></summary>
+            <summary>Together Housing Group</summary>
             <div class="details-accordion-content">
               <address>
                 Together Housing Group<br>
@@ -3464,7 +3464,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Yorkshire Housing, tel <a href="tel:0345 36644040">0345 36644040</a></summary>
+            <summary>Yorkshire Housing</summary>
             <div class="details-accordion-content">
               <address>
                 Yorkshire Housing, tel <a href="tel:0345 36644040">0345 36644040</a><br>
@@ -3552,44 +3552,25 @@ const bidding = new ContentH(
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-          <p>
-            Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short:
-            <br>
-            <br>
-            <ul>
-              <li>Properties advertised to Waiting Time – These properties will be offered to customers in Band D first in order of their effective date (oldest first). If no customers in Band D accept the property, it will be offered to the other bands in the following order: Band A, Band B, Band C, Band E.</li>
-              <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in Band A first in order of their effective date (oldest first). If no customers in Band A accept the property, it will be offered to the other bands in the following order: Band B, Band C, Band D, Band E.</li>
-              <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
-              <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on the Sheffield Property Shop. You can do this by logging in to your account.</li>
-              <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
-              <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
-            </ul>
-          </p>
-        </div>
-      </details>
-
-      <details class="accordion">
-        <summary class="accordion-header">
-          <h3>When can I move in once offered a property?</h3>
-          <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-          <p>
-            Once you have completed your viewing and accepted the property, the Sign Up process will take place with your Neighbourhood Officer. You may get the keys at this point, however sometimes delays may occur due to unforeseen work that is required to bring the property up to a standard that meets our Vacant Charter. When the property is ready, we will contact you to arrange an appointment to view the property and then to sign for your new tenancy, should you choose to accept.<br>
-            In some circumstances we may arrange a ‘work in progress’ viewing.
-          </p>
-        </div>
-      </details>
-
-      <details class="accordion">
-        <summary class="accordion-header">
-          <h3>When can I move in once offered a property?</h3>
-          <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-          <p>
-            Sheffield City Council publishes the results of each let on the Sheffield Property Shop website. This information lets you see how popular particular properties are by highlighting the waiting time held by the successful applicant. This should help you to gauge how long you may be waiting for a similar property. This will also help you to make more realistic bids in the future.
-          </p>
+          <details class="details-accordion">
+            <summary>
+              How does Sheffield City Council allocate the property?
+            </summary>
+            <div class="details-accordion-content">
+              <p>
+                Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short:
+              </p>
+  
+              <ul>
+                <li>Properties advertised to Waiting Time – These properties will be offered to customers in band D first in order of their effective date (oldest first). If no customers in band D accept the property, it will be offered to the other bands in the following order: band A, band B, band C, Band E.</li>
+                <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in band A first in order of their effective date (oldest first). If no customers in band A accept the property, it will be offered to the other bands in the following order: band B, Band C, Band D, Band E.</li>
+                <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
+                <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on the Sheffield Property Shop. You can do this by logging in to your account.</li>
+                <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
+                <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
+              </ul>
+            </div>
+          </details>
         </div>
       </details>
     `,
@@ -4197,9 +4178,9 @@ const referencesFAQs = new ContentH(
   <div class="accordion-content">
     <p>
       The reference will be used along with the information supplied by the customer when completing their 
-      application online to determine which Band they should be placed in. The criteria for being placed in 
-      Band D or Band E can be found within the Allocations Policy. Customers will be notified in writing which 
-      Band they have been placed in and how to challenge this if they feel it is incorrect. Customers who have 
+      application online to determine which band they should be placed in. The criteria for being placed in 
+      band D or band E can be found within the Allocations Policy. Customers will be notified in writing which 
+      band they have been placed in and how to challenge this if they feel it is incorrect. Customers who have 
       special or extenuating circumstances can request an Exception Request if they wish to do so. All such 
       requests are assessed on their merits and the customer will be advised of the decision in writing.
     </p>
@@ -4288,177 +4269,118 @@ const applicantPlacedInAPriorityBand = new ContentH(
   "Allocations Policy - Applicant placed in a priority band",
   "",
   `
-
   <details class="accordion">
     <summary class="accordion-header">
-        <h3>FAQs</h3>
+        <h3>Why has my priority bid not been successful?</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Why has my priority bid not been successful?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                   If you are in Priority Band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
-                   despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
-                </p>
-            </div>
-        </details>
+        <p>
+            If you are in Priority band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
+            despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
+        </p>
     </div>
 </details>
 
- <summary>
-                Why has my priority bid not been successful?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                   If you are in Priority Band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
-                   despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
-                </p>
-            </div>
-        </details>
-
-        <h3>Allocations Policy - Applicant placed in Band E</h3>
-
-        <details class="accordion">
+<details class="accordion">
     <summary class="accordion-header">
-        <h3>FAQs</h3>
+        <h3>What is a band?</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            A band is where an applicant is placed based on their needs and/or circumstances. 
+            A band is used to determine the priority of an application. Band 'A' is the highest and band 'E' is the lowest.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Which band am I in?</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            Advisor Note - Check Housing Registration Application on Abritas – this will show the applicant’s band.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Why have I been placed in the band I have?</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            The bands take into account your individual circumstances, and you have been placed in the band which is seen as the most appropriate 
+            for your needs, based on the information you have provided.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Band 'E' FAQs</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
         <details class="details-accordion">
             <summary>
-                Why am I in Band E?
+                Why am I in band E?
             </summary>
             <div class="details-accordion-content">
                 <p>
-                You have been placed in Band E due to your circumstances, in accordance with the allocations policy. 
-                For example: out of town and no local connection; rent arrears etc.   
+                    You have been placed in band E due to your circumstances, in accordance with the allocations policy. 
+                    For example: out of town and no local connection; rent arrears etc.
                 </p>
             </div>
         </details>
-    </div>
-</details>
 
- <div class="accordion-content">
         <details class="details-accordion">
             <summary>
-                Owner Occupier in Band D/E - why cant I bid?
+                Owner Occupier in band D/E - why can't I bid?
             </summary>
             <div class="details-accordion-content">
                 <p>
-                The new policy states that owner occupiers may register, but will have their bidding restricted until they have sold their property. 
-                Proof of sale by way of exchange of contracts will be required before an owner occupier can start bidding, 
-                unless they have been assessed and given a priority. 
-                In this case proof of sale would need to be produced as a later date.
+                    The new policy states that owner occupiers may register, but will have their bidding restricted until they have sold their property. 
+                    Proof of sale by way of exchange of contracts will be required before an owner occupier can start bidding, 
+                    unless they have been assessed and given a priority. 
+                    In this case proof of sale would need to be produced at a later date.
                 </p>
             </div>
         </details>
 
-            <div class="accordion-content">
         <details class="details-accordion">
             <summary>
                 Why am I classed as no local connection but have a Sheffield postcode?
             </summary>
             <div class="details-accordion-content">
                 <p>
-                A local connection means within the Sheffield city boundary. 
-                Although many areas use a Sheffield postcode, they are classed as outside of Sheffield.
+                    A local connection means within the Sheffield city boundary. 
+                    Although many areas use a Sheffield postcode, they are classed as outside of Sheffield.
                 </p>
             </div>
         </details>
 
-                 <div class="accordion-content">
         <details class="details-accordion">
             <summary>
-                Im in Band E, but have a longer waiting time than someone who was offered a property?
+                I'm in band E, but have a longer waiting time than someone who was offered a property?
             </summary>
             <div class="details-accordion-content">
                 <p>
-                You are in Band E which means you will be considered after applicants in Band D, regardless of your waiting time. 
-                This is because Band E is classed as having reduced preference. 
-                Also, certain applicants within Band E will be considered before others in Band E, regardless of waiting time. 
-                For example, if you have arrears, you will be considered after someone living outside of Sheffield.
-                </p>
-            </div>
-        </details>
-
-  `,
-
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
-  },
-  { date: "23/09/2024", name: "Shahzad Athar" }
-);
-
-const allocationsPolicyGuidance = new ContentH(
-  "allocationsPolicyGuidances",
-  "Allocations Policy Guidance",
-  "",
-  `
- 
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>FAQs</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                What is a band?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                  A band is where an applicant is placed based on their needs and/or circumstances. 
-                  A band is used to determine the priority of an application. Band A is the highest and Band E is the lowest.
-
+                    You are in band E which means you will be considered after applicants in band D, regardless of your waiting time. 
+                    This is because band E is classed as having reduced preference. 
+                    Also, certain applicants within band E will be considered before others in band E, regardless of waiting time. 
+                    For example, if you have arrears, you will be considered after someone living outside of Sheffield.
                 </p>
             </div>
         </details>
     </div>
 </details>
-
-<div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Which band am I in?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                  Check Housing Registration Application on Abritas – this will show the applicant’s band.
-
-                </p>
-            </div>
-        </details>
-
-        <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Why have I been placed in the band I have?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-             The bands take in to account your individual circumstances and you have been placed in to the band which is seen as the most appropriate 
-             for your needs, based on the information you have provided.
-
-                </p>
-            </div>
-        </details>
-
-   
-
-
   `,
+
   {
     buttonLabel: "Report Housing Enquiry ",
     formName: "hou_rehousing_enquiry",
@@ -4470,9 +4392,8 @@ const allocationsPolicyGuidance = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "George Whitehouse" }
+  { date: "05/12/2024", name: "Joseph Coupland" }
 );
-
 
 const fosteringAndAdoption = new ContentH(
   "fosteringAndAdoption",
@@ -4536,9 +4457,9 @@ const priorityBandingTable = new ContentH(
     <h3>Effective Dates</h3>
 
     <p>Within bands A-D there is no hierarchy, offers will be made solely on the effective date within the band. For example, 
-    three different priorities within the same Band would be ordered based on the earliest effective date first.</p>
+    three different priorities within the same band would be ordered based on the earliest effective date first.</p>
 
-    <p>The only exception is Band E which has the following hierarchy: </p>
+    <p>The only exception is band E which has the following hierarchy: </p>
 
     <ul>
       <li>No Local Connection</li>
@@ -4547,7 +4468,7 @@ const priorityBandingTable = new ContentH(
     </ul>
 
     <p>Inside each of the above rungs, applicants are ordered based on effective date.  
-    Therefore, an applicant with unacceptable behaviour in Band E will always come below an applicant in Band E due to refused offers 
+    Therefore, an applicant with unacceptable behaviour in band E will always come below an applicant in band E due to refused offers 
     regardless of their effective date.</p>
 
     <details class="accordion">
@@ -4571,127 +4492,127 @@ const priorityBandingTable = new ContentH(
               <tr>
                 <td style="width:225px"><p>Anti-social behaviour (ASB) - Rehousing Options for the Victim</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Council Service Tenant Retiring or Leaving Employment</p></td>
                 <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs Band D (Inactive)</p></td>
+                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Council Service Tenant Who is Dismissed</p></td>
                 <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs Band D (Inactive)</p></td>
+                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Demolition/Clearance of Council Owned Properties</p></td>
                 <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs Band D (Inactive)</p></td>
+                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Demolition/Clearance of Owner Occupied and Private Rented Sectors</p></td>
                 <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs Band D (Inactive)</p></td>
+                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Development Work in Council Owned Property</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>Top Priority Band A</p></td>
+                <td style="width:217px"><p>Top Priority band A</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Domestic Abuse</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Downsizing for Under Occupiers</p></td>
                 <td style="width:189px"><p>Under occupation and/or release of an adapted property</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Homeless - Immediate Priority</p></td>
                 <td style="width:189px"><p>Full Homelessness Duty</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Homeless or Threatened with Homelessness - Planned Priority</p></td>
                 <td style="width:189px"><p>Other Homelessness Duties</p></td>
-                <td style="width:217px"><p>3rd Priority Band C</p></td>
+                <td style="width:217px"><p>3rd Priority band C</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Insanitary or Unsatisfactory Housing Conditions</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Mental Health, Learning Disability, Long Term Health Problems, Community Care or Other Health Problem</p></td>
                 <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs Band D (Inactive)</p></td>
+                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Mobility Needs and Service Personnel</p></td>
                 <td style="width:189px"><p>Health</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Permanent Moves for Council Tenants Who Have Moved Temporarily</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>Top Priority Band A</p></td>
+                <td style="width:217px"><p>Top Priority band A</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Racial and Other Harassment of Council Tenants</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Re-Designation of Older Persons Property</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>3rd Priority Band C</p></td>
+                <td style="width:217px"><p>3rd Priority band C</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Release of Disabled Persons Property</p></td>
                 <td style="width:189px"><p>Under Occupation and/or Release of an Adapted Property</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Sheffield Overcrowding</p></td>
                 <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs Band D (Inactive)</p></td>
+                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Special Case</p></td>
                 <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs Band D (Inactive)</p></td>
+                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Statutory Overcrowding</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Support and Hardship needs</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Supportive Hostels</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Temporary and Permanent Moves for Non-Council Households Undergoing Modernisation or Repair with Grant Aid</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>Top Priority Band A</p></td>
+                <td style="width:217px"><p>Top Priority band A</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Vulnerable Young Person Aged 16 or 17</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Young People and Children’s Act 1989</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
             </tbody>
           </table>
@@ -4713,16 +4634,63 @@ const priorityBandingTable = new ContentH(
   { date: "07/22/2024", name: "George Whitehouse" }
 );
 
+const threeOffersDemotedorDisqualified = new ContentH(
+  "threeOffersDemotedorDisqualified",
+  "Three Offers Demoted or Disqualified",
+  "",
+  `
+<h3>Reduced preference (demotion) following refusal of 3 reasonable offers</h3>
+<p> 
+  If a customer is in band D and they have refused 3 offers in 12 months, the Sheffield City Council Allocations Policy states:<br>
+  <ul>
+    <li>If you refuse an offer of a property, you could be moved to a lower band or your application may be cancelled. The following will also be considered as a refusal:</li>
+    <li>If you fail to respond to an offer of a property made to you within the timescales specified and do not have a good reason for this failure.</li>
+    <li>If you fail to attend a viewing of a property offered to you within the timescales specified and do not have a good reason for this failure.</li>
+  </ul>
+  If you are to be Demoted, we will write to you 21 days before you are Demoted. If you do not respond, you will be Demoted to band E on the Housing Register for 12 months. After 12 months you can request to be moved back in to band D.
+</p>
+   <h3>Disqualification following refusal of 3 reasonable offers</h3>
+   <p>
+    If a customer who is in band E refuses 3 reasonable offers, they can be disqualified from the Housing Register.<br>
+    The customer will be notified in writing and they have 21 days to appeal the decision. <br>
+    If we do not hear from the customer within 21 days, their housing application will be cancelled and they will be disqualified from the Housing Register for 12 months. <br>
+    After 12 months the customer is able to submit an on-line application for Social Housing to re-join the Housing Register.
+   </p>
+  `,
+  {
+    buttonLabel: "",
+    formName: "",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: 
+    [
+      "rehosing", 
+      "rehausing",
+      "rehousingg",
+      "rehosuing",
+      "rehouzing",
+      "three",
+      "offers",
+      "demoted",
+      "disqualified"
+    ],
+    categories: ["Housing"],
+  },
+  { date: "04/12/2024", name: "Joseph Coupland" }
+);
+
 const policy = new MenuH(
   "policy",
   "Rehousing policy",
   "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
   [
     applicantPlacedInAPriorityBand,
-    allocationsPolicyGuidance,
     fosteringAndAdoption,
     priorityBandingTable,
-    //threeOffersDemotedorDisqualified,
+    threeOffersDemotedorDisqualified,
   ]
 );
 //#endregion Rehousing Policy 
@@ -4897,7 +4865,7 @@ const balanceEnquiry = new ContentH(
       </p>
       <p>
         In the most serious debt cases, the Allocations Policy allows us to place
-        applicants into Band E or disqualify a customer from the Housing Register
+        applicants into band E or disqualify a customer from the Housing Register
         for an initial period of 12 months.
       </p>
       <p>A customer can apply for a restriction to be removed if:</p>
@@ -5761,16 +5729,16 @@ const furnishedAccommodation = new ContentH(
         Applicants moving from any Temporary Accommodation property, Bed and
         Breakfast or Assessment Beds. The applicant must be currently bidding on
         Sheffield City Council properties and have a full homeless priority (This is
-        generally Bands A and B under the new Allocations policy).
+        generally bands A and B under the new Allocations policy).
       </li>
-      <li>Applicants referred via a medical priority (Generally Band A).</li>
+      <li>Applicants referred via a medical priority (Generally band A).</li>
       <li>
         Other applicants who would not be able to access a property without the
         Furnished Accommodation Service will be considered on a case-by-case basis
-        (Most of these will be under Band C in Allocations policy).
+        (Most of these will be under band C in Allocations policy).
       </li>
     </ol>
-    <p>(Most of these will be under Band C in Allocations policy).</p>
+    <p>(Most of these will be under band C in Allocations policy).</p>
     <p>
       NB: Budget constraints may impact on criteria 3 and criteria’s 1 & 2 will
       always take preference.

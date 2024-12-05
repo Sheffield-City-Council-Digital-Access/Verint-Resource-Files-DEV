@@ -429,7 +429,7 @@ const freeSchoolMeals = new ContentSaC(
     formName: "apply_school_meals",
   },
   { typeKey: "" },
-  { typeKey: "apply_school_meals_information_provided" },
+  { typeKey: "free_school_meals_information_provided" },
   {
     type: "Apply",
     keywords: [
