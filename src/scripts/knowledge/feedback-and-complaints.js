@@ -270,9 +270,6 @@ const childrensSocialCareComplaints = new ContentFaC(
     buttonLabel: "Make a children's social care complaint",
     formName: "make_complaint_childrens",
   },
-
-  { typeKey: "" },
-  { typeKey: "make_complaint_childrens_information_provided" },
   // {
   //   buttonLabel: "Make a compliment",
   //   formName: "feedback_compliment",
