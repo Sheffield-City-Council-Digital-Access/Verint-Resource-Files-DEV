@@ -93,22 +93,26 @@ const complaints = new ContentFaC(
 
      <p>We will keep a record of complaints raised by customers.</p>
 
-      <p>We will learn from complaints so that we can improve our service. TEST 4</p>
+      <p>We will learn from complaints so that we can improve our service.</p>
 
 
   `,
   {
     buttonLabel: "Make a compliment",
     formName: "make_complaint",
-	buttonLabel: "Make a compliment",
-    formName: "feedback_compliment",
-	buttonLabel: "Complaint Survey",
-    formName: "complaints_survey",
-	buttonLabel: "Make a Suggestion",
-    formName: "feedback_suggestion" ,
   },
   { typeKey: "make_complaint_information_provided" },
   { typeKey: "make_complaint_information_requested" },
+  // {
+  //   buttonLabel: "Make a compliment",
+  //   formName: "feedback_compliment",
+  // },
+  // {
+  //   buttonLabel: "Complaint Survey",
+  //   formName: "complaints_survey",
+  // },
+  // { buttonLabel: "Make a Suggestion" },
+  // { formName: "feedback_suggestion" },
   {
     type: "Complaint",
     keywords: [
@@ -269,16 +273,16 @@ const childrensSocialCareComplaints = new ContentFaC(
 
   { typeKey: "" },
   { typeKey: "make_complaint_childrens_information_provided" },
-  {
-    buttonLabel: "Make a compliment",
-    formName: "feedback_compliment",
-  },
-  {
-    buttonLabel: "Complaint Survey",
-    formName: "complaints_survey",
-  },
-  { buttonLabel: "feedback_suggestion" },
-  { buttonLabel: "Make a Suggestion" },
+  // {
+  //   buttonLabel: "Make a compliment",
+  //   formName: "feedback_compliment",
+  // },
+  // {
+  //   buttonLabel: "Complaint Survey",
+  //   formName: "complaints_survey",
+  // },
+  // { buttonLabel: "Make a Suggestion" },
+  // { formName: "feedback_suggestion" },
   
     { typeKey: "make_complaint_children_information_provided" },
     { typeKey: "make_complaint_children_information_requested" },
@@ -346,16 +350,16 @@ Complaints Procedure – Effective Complaint handling Guide under Documents. </p
     buttonLabel: "Make an adult's social care complaint",
     formName: "make_complaint_adult",
   },
-  {
-    buttonLabel: "Make a compliment",
-    formName: "feedback_compliment",
-  },
-  {
-    buttonLabel: "Complaint Survey",
-    buttonLabel: "complaints_survey",
-  },
-  { buttonLabel: "feedback_suggestion" },
-  { buttonLabel: "Make a Suggestion" },
+  // {
+  //   buttonLabel: "Make a compliment",
+  //   formName: "feedback_compliment",
+  // },
+  // {
+  //   buttonLabel: "Complaint Survey",
+  //   formName: "complaints_survey",
+  // },
+  // { buttonLabel: "Make a Suggestion" },
+  // { formName: "feedback_suggestion" },
   
   { typeKey: "make_complaint_adult_information_provided" },
   { typeKey: "make_complaint_adult_information_requested" },
@@ -453,16 +457,16 @@ Within 5 working days of receipt of the complaint.
     formName: "make_complaint",
   },
 
-  {
-    buttonLabel: "Make a compliment",
-    formName: "feedback_compliment",
-  },
-  {
-    buttonLabel: "Complaint Survey",
-    buttonLabel: "complaints_survey",
-  },
-  { buttonLabel: "feedback_suggestion" },
-  { buttonLabel: "Make a Suggestion" },
+  // {
+  //   buttonLabel: "Make a compliment",
+  //   formName: "feedback_compliment",
+  // },
+  // {
+  //   buttonLabel: "Complaint Survey",
+  //   formName: "complaints_survey",
+  // },
+  // { buttonLabel: "Make a Suggestion" },
+  // { formName: "feedback_suggestion" },
   
   
   
