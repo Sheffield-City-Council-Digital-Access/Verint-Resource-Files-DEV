@@ -2860,60 +2860,58 @@ const bidding = new ContentH(
   "bidding",
   "Bidding",
   "Information around bidding for properties",
-  `
-    <p>
-      After you have registered for housing, you express your interest in renting a
-      property by making a bid. You only have to bid once per property. You make
-      bids online at the Property Shop website
-      <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank"
-        >www.sheffieldpropertyshop.org.uk</a>
-      You can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday
-      to Tuesday).
-    </p>
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>FAQ’s</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Why can't you bid for me?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-      If you need assistance placing a bid, you can visit Sheffield Property Shop
-      located in Howden House on Union Street, Sheffield, or your nearest
-      neighbourhood housing office.
-    </p>        
-    </div>
-        </details>
-    </div>
-  </details>
-    <details class="details-accordion">
-            <summary>
-                First Come First Served
-            </summary>
-              <p>
-                Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
-                the links from the homepage.
-              </p>
-              <p>Click ‘Log into my account’.</p>
-              <p>
-                Enter your login details: Your unique reference number (found on the
-                enclosed letter), your memorable date, and your password. Contact us
-                if you need these.
-              </p>
-              <p>
-                Once logged in, click ‘Update my details’ under the ‘Application
-                renewal required’ heading. Check your information carefully, confirm
-                that the details are correct, and submit the form. You must submit the
-                form even if there are no changes.
-              </p>
-            </div>
-          </details>
+    `
+      <p>
+        After you have registered for housing, you express your interest in renting a
+        property by making a bid. You only have to bid once per property. You make
+        bids online at the Property Shop website
+        <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank"
+          >www.sheffieldpropertyshop.org.uk</a>
+        You can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday
+        to Tuesday).
+      </p>
+
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Why can't you bid for me?</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            If you need assistance placing a bid, you can visit Sheffield Property Shop
+            located in Howden House on Union Street, Sheffield, or your nearest
+            neighbourhood housing office.
+          </p>        
         </div>
       </details>
+
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Why can't you bid for me?</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
+            the links from the homepage.
+            <br>
+            <br>
+              Click ‘Log into my account’.
+            <br>
+            <br>
+              Enter your login details: Your unique reference number (found on the
+              enclosed letter), your memorable date, and your password. Contact us
+              if you need these.
+            <br>
+            <br>
+              Once logged in, click ‘Update my details’ under the ‘Application
+              renewal required’ heading. Check your information carefully, confirm
+              that the details are correct, and submit the form. You must submit the
+              form even if there are no changes.
+          </p>
+        </div>
+      </details>
+
       <details class="accordion">
         <summary class="accordion-header">
           <h3>Disqualification/Restriction</h3>
@@ -2925,23 +2923,24 @@ const bidding = new ContentH(
             reduce the preference given to applicants on the Housing Register or
             prevent them from joining the register. These include circumstances such
             as rent arrears or past/current anti-social behaviour.
-          </p>
-          <p>
+          <br>
+          <br>
             In the most serious debt cases, the Allocations Policy allows us to place
             applicants into Band E or disqualify a customer from the Housing Register
             for an initial period of 12 months.
-          </p>
-          <p>A customer can apply for a restriction to be removed if:</p>
-          <ul>
-            <li>
-              They are able to evidence that their behaviour has significantly improved
-              (e.g., paying off arrears in full)
-            </li>
-            <li>They appeal the restriction (disqualification) within 21 days</li>
-            <li>They have exceptional circumstances</li>
-            <li>They need a priority</li>
-          </ul>
-          <p>
+          <br>
+          <br>
+            A customer can apply for a restriction to be removed if:
+          <br>
+          <br>
+            <ul>
+              <li>They are able to evidence that their behaviour has significantly improved (e.g., paying off arrears in full)</li>
+              <li>They appeal the restriction (disqualification) within 21 days</li>
+              <li>They have exceptional circumstances</li>
+              <li>They need a priority</li>
+            </ul>
+          <br>
+          <br>
             If an applicant is allowed back on the housing register, they will have to
             re-register. ID and references will be required unless recently submitted.
             Usual checks will be carried out and the appropriate band chosen.
@@ -2949,29 +2948,43 @@ const bidding = new ContentH(
           </p>
         </div>
       </details>
+
       <details class="accordion">
         <summary class="accordion-header">
           <h3>Assistance with Change of Circumstances</h3>
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-          <p>Log on using the details below if required.</p>
-          <p>Unique Reference - 1257822</p>
-          <p>Memorable date - 25/12/2012</p>
-          <p>Password - DMrm15</p>
           <p>
+            Log on using the details below if required.
+            <br>
+            <br>
+            Unique Reference - 1257822
+            <br>
+            <br>
+            Memorable date - 25/12/2012
+            <br>
+            <br>
+            Password - DMrm15
+            <br>
+            <br>
             Advisor note: You have logged in using dummy login details. Please do not
             amend anything on screen. Log in if required using the login details above
             and follow the instructions:
-          </p>
-          <p>Select "My Social Housing" on the left-hand side.</p>
-          <p>
+            <br>
+            <br>
+            Select "My Social Housing" on the left-hand side.
+            <br>
+            <br>
             Click "Update your details" and navigate through the form using the "Next
             section" buttons.
+            <br>
+            <br>
+            Please do not submit the application.
           </p>
-          <p>Please do not submit the application.</p>
         </div>
       </details>
+
       <details class="accordion">
         <summary class="accordion-header">
           <h3>Exceptions</h3>
@@ -2983,21 +2996,22 @@ const bidding = new ContentH(
             reduce the preference given to applicants on the Housing Register or
             prevent them from joining the register. These include circumstances such
             as rent arrears or past/current anti-social behaviour.
-          </p>
-          <p>
+            <br>
+            <br>
             An Exception Request allows us to make decisions on whether it is
             appropriate to waive these restrictions in exceptional circumstances, such
             as awarding a priority or when an applicant wishes to move to more
             suitable accommodation using their waiting time due to a change in
             circumstances.
-          </p>
-          <p>
+            <br>
+            <br>
             Applicants must demonstrate exceptional circumstances and prove that they
             have taken action to rectify issues that led to reduced preference or
             disqualification.
           </p>
         </div>
       </details>
+
       <details class="accordion">
         <summary class="accordion-header">
           <h3>Name Changes</h3>
@@ -3007,13 +3021,14 @@ const bidding = new ContentH(
           <p>
             Present three proof documents to a housing office or First Point, where ID
             will be copied and saved. The name will be updated in our system.
-          </p>
-          <p>
+          <br>
+          <br>
             Alternatively, send the name change in writing along with proof
-            (originals, not photocopies) to  <a href="mailto:RegistrationID@sheffield.gov.uk">RegistrationID@sheffield.gov.uk</a>.
+            (originals, not photocopies) to <a href="mailto:RegistrationID@sheffield.gov.uk">RegistrationID@sheffield.gov.uk</a>.
           </p>
         </div>
       </details>
+
       <details class="accordion">
         <summary class="accordion-header">
           <h3>Split Applications</h3>
@@ -3024,9 +3039,11 @@ const bidding = new ContentH(
           <p>
             To remove a joint applicant, you must do this online at the Property Shop
             website.
-          </p>
+          <br>
+          <br>
           <h3>Joint Applicant</h3>
-          <p>
+          <br>
+          <br>
             Speak to the Registration team to remove your National Insurance Number.
             You will need to submit a new application and confirm the removal from the
             previous application.
@@ -3524,63 +3541,57 @@ const bidding = new ContentH(
     "Property Offers and Viewings",
     "",
     `
-      <p>Once the bidding period has closed on a Tuesday night, 
-      bids for each property are sorted automatically based on the eligibility criteria.</p>
-  
+      <p>
+        Once the bidding period has closed on a Tuesday night, 
+        bids for each property are sorted automatically based on the eligibility criteria.
+      </p>
+
       <details class="accordion">
         <summary class="accordion-header">
-          <h3>FAQs</h3>
+          <h3>How does Sheffield City Council allocate the property?</h3>
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-          <details class="details-accordion">
-            <summary>
-              How does Sheffield City Council allocate the property?
-            </summary>
-            <div class="details-accordion-content">
-              <p>
-                Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short:
-              </p>
-  
-              <ul>
-                <li>Properties advertised to Waiting Time – These properties will be offered to customers in Band D first in order of their effective date (oldest first). If no customers in Band D accept the property, it will be offered to the other bands in the following order: Band A, Band B, Band C, Band E.</li>
-                <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in Band A first in order of their effective date (oldest first). If no customers in Band A accept the property, it will be offered to the other bands in the following order: Band B, Band C, Band D, Band E.</li>
-                <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
-                <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on the Sheffield Property Shop. You can do this by logging in to your account.</li>
-                <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
-                <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
-              </ul>
-            </div>
-          </details>
+          <p>
+            Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short:
+            <br>
+            <br>
+            <ul>
+              <li>Properties advertised to Waiting Time – These properties will be offered to customers in Band D first in order of their effective date (oldest first). If no customers in Band D accept the property, it will be offered to the other bands in the following order: Band A, Band B, Band C, Band E.</li>
+              <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in Band A first in order of their effective date (oldest first). If no customers in Band A accept the property, it will be offered to the other bands in the following order: Band B, Band C, Band D, Band E.</li>
+              <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
+              <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on the Sheffield Property Shop. You can do this by logging in to your account.</li>
+              <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
+              <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
+            </ul>
+          </p>
         </div>
       </details>
-  
-      <div class="accordion-content">
-        <details class="details-accordion">
-          <summary>
-            When can I move in once offered a property?
-          </summary>
-          <div class="details-accordion-content">
-            <p>
-              Once you have completed your viewing and accepted the property, the Sign Up process will take place with your Neighbourhood Officer. You may get the keys at this point, however sometimes delays may occur due to unforeseen work that is required to bring the property up to a standard that meets our Vacant Charter. When the property is ready, we will contact you to arrange an appointment to view the property and then to sign for your new tenancy, should you choose to accept.<br>
-              In some circumstances we may arrange a ‘work in progress’ viewing.
-            </p>
-          </div>
-        </details>
-      </div>
-  
-      <div class="accordion-content">
-        <details class="details-accordion">
-          <summary>
-            Where can I find lettings results?
-          </summary>
-          <div class="details-accordion-content">
-            <p>
-              Sheffield City Council publishes the results of each let on the Sheffield Property Shop website. This information lets you see how popular particular properties are by highlighting the waiting time held by the successful applicant. This should help you to gauge how long you may be waiting for a similar property. This will also help you to make more realistic bids in the future.
-            </p>
-          </div>
-        </details>
-      </div>
+
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>When can I move in once offered a property?</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            Once you have completed your viewing and accepted the property, the Sign Up process will take place with your Neighbourhood Officer. You may get the keys at this point, however sometimes delays may occur due to unforeseen work that is required to bring the property up to a standard that meets our Vacant Charter. When the property is ready, we will contact you to arrange an appointment to view the property and then to sign for your new tenancy, should you choose to accept.<br>
+            In some circumstances we may arrange a ‘work in progress’ viewing.
+          </p>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>When can I move in once offered a property?</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            Sheffield City Council publishes the results of each let on the Sheffield Property Shop website. This information lets you see how popular particular properties are by highlighting the waiting time held by the successful applicant. This should help you to gauge how long you may be waiting for a similar property. This will also help you to make more realistic bids in the future.
+          </p>
+        </div>
+      </details>
     `,
     {
       buttonLabel: "Report Housing Enquiry ",
@@ -3661,7 +3672,7 @@ const acceptableId = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "George Whitehouse" }
+  { date: "07/11/2024", name: "George Whitehouse" }
 );
 
 const idReferences = new ContentH(
@@ -3738,7 +3749,7 @@ const idReferences = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "George Whitehouse" }
+  { date: "07/11/2024", name: "George Whitehouse" }
 );
 
 const idFaq = new ContentH(
@@ -3786,7 +3797,7 @@ const idFaq = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "George Whitehouse" }
+  { date: "07/11/2024", name: "George Whitehouse" }
 );
 
 const movingIn = new ContentH(
@@ -3859,7 +3870,7 @@ const movingIn = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "George Whitehouse" }
+  { date: "07/11/2024", name: "George Whitehouse" }
 );
 
 const mutualExchanges = new ContentH(
@@ -4093,7 +4104,7 @@ const mutualExchanges = new ContentH(
     keywords: ["rehousing", "rehousing", "rehousign", "rehozing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "George Whitehouse" }
+  { date: "07/11/2024", name: "George Whitehouse" }
 );
 
 const referencesFAQs = new ContentH(
@@ -4223,12 +4234,20 @@ const referencesFAQs = new ContentH(
     </div>
   </details>
 
-  <h4>Customer cannot visit Area Office</h4>
-  <p>
-      Advisor Note: There are alternatives to visiting the area office yourself, such as asking your friends or family 
-      to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
-      <strong>Documents can be uploaded via the property shop website.</strong>
-  </p>
+ <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Is a reference required as part of a renewal process?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <h3>What if the customer can't visit an Area Office?</h3>
+      <p>
+        There are alternatives to visiting the area office yourself, such as asking your friends or family 
+        to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
+        <strong>Documents can be uploaded via the property shop website.</strong>
+      </p>
+    </div>
+  </details>
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
@@ -4241,7 +4260,7 @@ const referencesFAQs = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/22/2024", name: "George Whitehouse" }
+  { date: "07/11/2024", name: "George Whitehouse" }
 );
 
 const idReferencesMenu = new MenuH(
