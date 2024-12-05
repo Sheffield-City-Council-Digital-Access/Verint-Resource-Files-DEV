@@ -4269,123 +4269,116 @@ const applicantPlacedInAPriorityBand = new ContentH(
   "Allocations Policy - Applicant placed in a priority band",
   "",
   `
-
   <details class="accordion">
     <summary class="accordion-header">
-        <h3>FAQs</h3>
+        <h3>Why has my priority bid not been successful?</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            If you are in Priority Band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
+            despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>What is a band?</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            A band is where an applicant is placed based on their needs and/or circumstances. 
+            A band is used to determine the priority of an application. Band A is the highest and Band E is the lowest.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Which band am I in?</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            Advisor Note - Check Housing Registration Application on Abritas – this will show the applicant’s band.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Why have I been placed in the band I have?</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            The bands take into account your individual circumstances, and you have been placed in the band which is seen as the most appropriate 
+            for your needs, based on the information you have provided.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Band E FAQs</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
         <details class="details-accordion">
             <summary>
-                Why has my priority bid not been successful?
+                Why am I in band E?
             </summary>
             <div class="details-accordion-content">
                 <p>
-                    If you are in Priority Band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
-                    despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
-                </p>
-            </div>
-        </details>
-        <details class="details-accordion">
-            <summary>
-                What is a band?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    A band is where an applicant is placed based on their needs and/or circumstances. 
-                    A band is used to determine the priority of an application. Band A is the highest and Band E is the lowest.
+                    You have been placed in band E due to your circumstances, in accordance with the allocations policy. 
+                    For example: out of town and no local connection; rent arrears etc.
                 </p>
             </div>
         </details>
 
         <details class="details-accordion">
             <summary>
-                Which band am I in?
+                Owner Occupier in band D/E - why can't I bid?
             </summary>
             <div class="details-accordion-content">
                 <p>
-                    Check Housing Registration Application on Abritas – this will show the applicant’s band.
+                    The new policy states that owner occupiers may register, but will have their bidding restricted until they have sold their property. 
+                    Proof of sale by way of exchange of contracts will be required before an owner occupier can start bidding, 
+                    unless they have been assessed and given a priority. 
+                    In this case proof of sale would need to be produced at a later date.
                 </p>
             </div>
         </details>
 
         <details class="details-accordion">
             <summary>
-                Why have I been placed in the band I have?
+                Why am I classed as no local connection but have a Sheffield postcode?
             </summary>
             <div class="details-accordion-content">
                 <p>
-                    The bands take into account your individual circumstances, and you have been placed in the band which is seen as the most appropriate 
-                    for your needs, based on the information you have provided.
+                    A local connection means within the Sheffield city boundary. 
+                    Although many areas use a Sheffield postcode, they are classed as outside of Sheffield.
+                </p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>
+                I'm in band E, but have a longer waiting time than someone who was offered a property?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    You are in band E which means you will be considered after applicants in band D, regardless of your waiting time. 
+                    This is because band E is classed as having reduced preference. 
+                    Also, certain applicants within band E will be considered before others in band E, regardless of waiting time. 
+                    For example, if you have arrears, you will be considered after someone living outside of Sheffield.
                 </p>
             </div>
         </details>
     </div>
-  </details>
-
-  <h3>Allocations Policy - Applicant placed in band E</h3>
-
-  <details class="accordion">
-      <summary class="accordion-header">
-          <h3>Band E FAQs</h3>
-          <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-          <details class="details-accordion">
-              <summary>
-                  Why am I in band E?
-              </summary>
-              <div class="details-accordion-content">
-                  <p>
-                      You have been placed in band E due to your circumstances, in accordance with the allocations policy. 
-                      For example: out of town and no local connection; rent arrears etc.
-                  </p>
-              </div>
-          </details>
-
-          <details class="details-accordion">
-              <summary>
-                  Owner Occupier in band D/E - why can't I bid?
-              </summary>
-              <div class="details-accordion-content">
-                  <p>
-                      The new policy states that owner occupiers may register, but will have their bidding restricted until they have sold their property. 
-                      Proof of sale by way of exchange of contracts will be required before an owner occupier can start bidding, 
-                      unless they have been assessed and given a priority. 
-                      In this case proof of sale would need to be produced at a later date.
-                  </p>
-              </div>
-          </details>
-
-          <details class="details-accordion">
-              <summary>
-                  Why am I classed as no local connection but have a Sheffield postcode?
-              </summary>
-              <div class="details-accordion-content">
-                  <p>
-                      A local connection means within the Sheffield city boundary. 
-                      Although many areas use a Sheffield postcode, they are classed as outside of Sheffield.
-                  </p>
-              </div>
-          </details>
-
-          <details class="details-accordion">
-              <summary>
-                  I'm in band E, but have a longer waiting time than someone who was offered a property?
-              </summary>
-              <div class="details-accordion-content">
-                  <p>
-                      You are in band E which means you will be considered after applicants in band D, regardless of your waiting time. 
-                      This is because band E is classed as having reduced preference. 
-                      Also, certain applicants within band E will be considered before others in band E, regardless of waiting time. 
-                      For example, if you have arrears, you will be considered after someone living outside of Sheffield.
-                  </p>
-              </div>
-          </details>
-      </div>
-  </details>
-
+</details>
   `,
 
   {
