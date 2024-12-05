@@ -121,9 +121,12 @@ const reportAnEmergencyRepair = new ContentOoH(
 const outOfHours = new ServiceOoH(
   "outOfHours",
   "Out of Hours",
-  "Description",
+  "emergency services and reports outside of standard working hours, including adult and children's emergencies, emergency accommodation, and urgent repair needs.",
     [
-      emergencyAccomadtion,emergencyAdultService,emergencyChildService,reportAnEmergencyRepair
+      emergencyAccomadtion,
+      emergencyAdultService,
+      emergencyChildService,
+      reportAnEmergencyRepair
 
     ]
 );
