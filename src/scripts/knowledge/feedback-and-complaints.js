@@ -93,7 +93,7 @@ const complaints = new ContentFaC(
 
      <p>We will keep a record of complaints raised by customers.</p>
 
-      <p>We will learn from complaints so that we can improve our service.</p>
+      <p>We will learn from complaints so that we can improve our service. TEST</p>
 
 
   `,
@@ -103,16 +103,16 @@ const complaints = new ContentFaC(
   },
   { typeKey: "make_complaint_information_provided" },
   { typeKey: "make_complaint_information_requested" },
-  // {
-  //   buttonLabel: "Make a compliment",
-  //   formName: "feedback_compliment",
-  // },
-  // {
-  //   buttonLabel: "Complaint Survey",
-  //   formName: "complaints_survey",
-  // },
-  // { buttonLabel: "feedback_suggestion" },
-  // { buttonLabel: "Make a Suggestion" },
+  {
+    buttonLabel: "Make a compliment",
+    formName: "feedback_compliment",
+  },
+  {
+    buttonLabel: "Complaint Survey",
+    formName: "complaints_survey",
+  },
+  { buttonLabel: "Make a Suggestion" },
+  { formName: "feedback_suggestion" },
   {
     type: "Complaint",
     keywords: [
