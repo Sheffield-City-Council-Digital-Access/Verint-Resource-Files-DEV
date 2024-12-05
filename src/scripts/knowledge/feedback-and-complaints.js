@@ -57,7 +57,7 @@ class FormFaC extends CoreFaC {
 const complaints = new ContentFaC(
   "complaints",
   "Complaints",
-  "Description",
+  "How complaints are handled by Sheffield City Council, including the process, principles, and commitment to service improvement.",
   `
     <h3>Our Approach</h3>
 
@@ -130,7 +130,7 @@ const complaints = new ContentFaC(
 const childrensSocialCareComplaints = new ContentFaC(
   "childrensSocialCareComplaints",
   "Children's social care complaints",
-  "Description",
+  "Children's Social Care complaints process, including stages of resolution and eligibility criteria.",
   `
     <p> The Feedback and Complaints Team act as Case Coordinator for the Children and Families Service. </p>
 
@@ -303,7 +303,7 @@ const childrensSocialCareComplaints = new ContentFaC(
 const adultsocialcarecomplaints = new ContentFaC(
   "adultSocialCareComplaints",
   "Adult social care complaints",
-  "Description",
+  "Adult Social Care complaints, including resolution steps and investigation procedures.",
   `
     <p> The Adult Social Care Complaints Procedure differs from the Corporate Complaints Procedure. 
     This is because it is governed by the 2009 Local Authority Social Services and National Health Service Regulations.</p>
@@ -381,7 +381,7 @@ Complaints Procedure – Effective Complaint handling Guide under Documents. </p
 const corporateComplaintsProcedure = new ContentFaC(
   "corporateComplaintsProcedure",
   "Corporate complaints procedure",
-  "Description",
+  "Sheffield City Council's two-stage Corporate Complaints Procedure, including response times and escalation to the Ombudsman.",
   `
     <p> Sheffield City Council's Corporate Complaint Handling Procedure has been aligned to the new Ombudsman Complaint 
     Handling Code. This is effective for Housing and Repairs Services from 1 April 2024 and for all other Corporate Council 
@@ -492,6 +492,11 @@ Within 5 working days of receipt of the complaint.
 const feedbackAndComplaints = new ServiceFaC(
   "feedbackAndComplaints",
   "Feedback and Complaints",
-  "Description",
-    [complaints, childrensSocialCareComplaints, adultsocialcarecomplaints, corporateComplaintsProcedure]
+  "Information and Logging processes for Adult Social Care, Children's Social Care, Corporate Complaints, and our general approach to feedback and resolution.",
+    [
+      adultsocialcarecomplaints,
+      childrensSocialCareComplaints,
+      complaints,
+      corporateComplaintsProcedure
+    ]
 );
