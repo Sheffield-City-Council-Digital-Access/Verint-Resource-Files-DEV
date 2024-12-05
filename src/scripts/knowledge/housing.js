@@ -2887,7 +2887,7 @@ const bidding = new ContentH(
 
       <details class="accordion">
         <summary class="accordion-header">
-          <h3>Why can't you bid for me?</h3>
+          <h3>First Come First Served</h3>
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
