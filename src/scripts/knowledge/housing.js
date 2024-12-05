@@ -4324,21 +4324,21 @@ const applicantPlacedInAPriorityBand = new ContentH(
     </div>
   </details>
 
-  <h3>Allocations Policy - Applicant placed in Band E</h3>
+  <h3>Allocations Policy - Applicant placed in band E</h3>
 
   <details class="accordion">
       <summary class="accordion-header">
-          <h3>FAQs</h3>
+          <h3>Band E FAQs</h3>
           <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
           <details class="details-accordion">
               <summary>
-                  Why am I in Band E?
+                  Why am I in band E?
               </summary>
               <div class="details-accordion-content">
                   <p>
-                      You have been placed in Band E due to your circumstances, in accordance with the allocations policy. 
+                      You have been placed in band E due to your circumstances, in accordance with the allocations policy. 
                       For example: out of town and no local connection; rent arrears etc.
                   </p>
               </div>
@@ -4346,7 +4346,7 @@ const applicantPlacedInAPriorityBand = new ContentH(
 
           <details class="details-accordion">
               <summary>
-                  Owner Occupier in Band D/E - why can't I bid?
+                  Owner Occupier in band D/E - why can't I bid?
               </summary>
               <div class="details-accordion-content">
                   <p>
@@ -4372,13 +4372,13 @@ const applicantPlacedInAPriorityBand = new ContentH(
 
           <details class="details-accordion">
               <summary>
-                  I'm in Band E, but have a longer waiting time than someone who was offered a property?
+                  I'm in band E, but have a longer waiting time than someone who was offered a property?
               </summary>
               <div class="details-accordion-content">
                   <p>
-                      You are in Band E which means you will be considered after applicants in Band D, regardless of your waiting time. 
-                      This is because Band E is classed as having reduced preference. 
-                      Also, certain applicants within Band E will be considered before others in Band E, regardless of waiting time. 
+                      You are in band E which means you will be considered after applicants in band D, regardless of your waiting time. 
+                      This is because band E is classed as having reduced preference. 
+                      Also, certain applicants within band E will be considered before others in band E, regardless of waiting time. 
                       For example, if you have arrears, you will be considered after someone living outside of Sheffield.
                   </p>
               </div>
