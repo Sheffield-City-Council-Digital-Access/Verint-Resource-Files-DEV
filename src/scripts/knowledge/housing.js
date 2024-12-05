@@ -2707,7 +2707,7 @@ const applicationChanges = new ContentH(
         </p>
         <p>
           In the most serious debt cases, the Allocations Policy allows us to place
-          applicants into Band E or disqualify a customer from the Housing Register
+          applicants into band E or disqualify a customer from the Housing Register
           for an initial period of 12 months.
         </p>
         <p>A customer can apply for a restriction to be removed if:</p>
@@ -2928,7 +2928,7 @@ const bidding = new ContentH(
           </p>
           <p>
             In the most serious debt cases, the Allocations Policy allows us to place
-            applicants into Band E or disqualify a customer from the Housing Register
+            applicants into band E or disqualify a customer from the Housing Register
             for an initial period of 12 months.
           </p>
           <p>A customer can apply for a restriction to be removed if:</p>
@@ -3543,8 +3543,8 @@ const bidding = new ContentH(
               </p>
   
               <ul>
-                <li>Properties advertised to Waiting Time – These properties will be offered to customers in Band D first in order of their effective date (oldest first). If no customers in Band D accept the property, it will be offered to the other bands in the following order: Band A, Band B, Band C, Band E.</li>
-                <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in Band A first in order of their effective date (oldest first). If no customers in Band A accept the property, it will be offered to the other bands in the following order: Band B, Band C, Band D, Band E.</li>
+                <li>Properties advertised to Waiting Time – These properties will be offered to customers in band D first in order of their effective date (oldest first). If no customers in band D accept the property, it will be offered to the other bands in the following order: band A, band B, band C, Band E.</li>
+                <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in band A first in order of their effective date (oldest first). If no customers in band A accept the property, it will be offered to the other bands in the following order: band B, Band C, Band D, Band E.</li>
                 <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
                 <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on the Sheffield Property Shop. You can do this by logging in to your account.</li>
                 <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
@@ -4186,9 +4186,9 @@ const referencesFAQs = new ContentH(
   <div class="accordion-content">
     <p>
       The reference will be used along with the information supplied by the customer when completing their 
-      application online to determine which Band they should be placed in. The criteria for being placed in 
-      Band D or Band E can be found within the Allocations Policy. Customers will be notified in writing which 
-      Band they have been placed in and how to challenge this if they feel it is incorrect. Customers who have 
+      application online to determine which band they should be placed in. The criteria for being placed in 
+      band D or band E can be found within the Allocations Policy. Customers will be notified in writing which 
+      band they have been placed in and how to challenge this if they feel it is incorrect. Customers who have 
       special or extenuating circumstances can request an Exception Request if they wish to do so. All such 
       requests are assessed on their merits and the customer will be advised of the decision in writing.
     </p>
@@ -4276,7 +4276,7 @@ const applicantPlacedInAPriorityBand = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            If you are in Priority Band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
+            If you are in Priority band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
             despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
         </p>
     </div>
@@ -4290,7 +4290,7 @@ const applicantPlacedInAPriorityBand = new ContentH(
     <div class="accordion-content">
         <p>
             A band is where an applicant is placed based on their needs and/or circumstances. 
-            A band is used to determine the priority of an application. Band A is the highest and Band E is the lowest.
+            A band is used to determine the priority of an application. Band 'A' is the highest and band 'E' is the lowest.
         </p>
     </div>
 </details>
@@ -4322,7 +4322,7 @@ const applicantPlacedInAPriorityBand = new ContentH(
 
 <details class="accordion">
     <summary class="accordion-header">
-        <h3>Band E FAQs</h3>
+        <h3>Band 'E' FAQs</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -4457,9 +4457,9 @@ const priorityBandingTable = new ContentH(
     <h3>Effective Dates</h3>
 
     <p>Within bands A-D there is no hierarchy, offers will be made solely on the effective date within the band. For example, 
-    three different priorities within the same Band would be ordered based on the earliest effective date first.</p>
+    three different priorities within the same band would be ordered based on the earliest effective date first.</p>
 
-    <p>The only exception is Band E which has the following hierarchy: </p>
+    <p>The only exception is band E which has the following hierarchy: </p>
 
     <ul>
       <li>No Local Connection</li>
@@ -4468,7 +4468,7 @@ const priorityBandingTable = new ContentH(
     </ul>
 
     <p>Inside each of the above rungs, applicants are ordered based on effective date.  
-    Therefore, an applicant with unacceptable behaviour in Band E will always come below an applicant in Band E due to refused offers 
+    Therefore, an applicant with unacceptable behaviour in band E will always come below an applicant in band E due to refused offers 
     regardless of their effective date.</p>
 
     <details class="accordion">
@@ -4492,127 +4492,127 @@ const priorityBandingTable = new ContentH(
               <tr>
                 <td style="width:225px"><p>Anti-social behaviour (ASB) - Rehousing Options for the Victim</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Council Service Tenant Retiring or Leaving Employment</p></td>
                 <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs Band D (Inactive)</p></td>
+                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Council Service Tenant Who is Dismissed</p></td>
                 <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs Band D (Inactive)</p></td>
+                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Demolition/Clearance of Council Owned Properties</p></td>
                 <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs Band D (Inactive)</p></td>
+                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Demolition/Clearance of Owner Occupied and Private Rented Sectors</p></td>
                 <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs Band D (Inactive)</p></td>
+                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Development Work in Council Owned Property</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>Top Priority Band A</p></td>
+                <td style="width:217px"><p>Top Priority band A</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Domestic Abuse</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Downsizing for Under Occupiers</p></td>
                 <td style="width:189px"><p>Under occupation and/or release of an adapted property</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Homeless - Immediate Priority</p></td>
                 <td style="width:189px"><p>Full Homelessness Duty</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Homeless or Threatened with Homelessness - Planned Priority</p></td>
                 <td style="width:189px"><p>Other Homelessness Duties</p></td>
-                <td style="width:217px"><p>3rd Priority Band C</p></td>
+                <td style="width:217px"><p>3rd Priority band C</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Insanitary or Unsatisfactory Housing Conditions</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Mental Health, Learning Disability, Long Term Health Problems, Community Care or Other Health Problem</p></td>
                 <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs Band D (Inactive)</p></td>
+                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Mobility Needs and Service Personnel</p></td>
                 <td style="width:189px"><p>Health</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Permanent Moves for Council Tenants Who Have Moved Temporarily</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>Top Priority Band A</p></td>
+                <td style="width:217px"><p>Top Priority band A</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Racial and Other Harassment of Council Tenants</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Re-Designation of Older Persons Property</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>3rd Priority Band C</p></td>
+                <td style="width:217px"><p>3rd Priority band C</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Release of Disabled Persons Property</p></td>
                 <td style="width:189px"><p>Under Occupation and/or Release of an Adapted Property</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Sheffield Overcrowding</p></td>
                 <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs Band D (Inactive)</p></td>
+                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Special Case</p></td>
                 <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs Band D (Inactive)</p></td>
+                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Statutory Overcrowding</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Support and Hardship needs</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Supportive Hostels</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Temporary and Permanent Moves for Non-Council Households Undergoing Modernisation or Repair with Grant Aid</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>Top Priority Band A</p></td>
+                <td style="width:217px"><p>Top Priority band A</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Vulnerable Young Person Aged 16 or 17</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
               <tr>
                 <td style="width:225px"><p>Young People and Children’s Act 1989</p></td>
                 <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority Band B</p></td>
+                <td style="width:217px"><p>2nd Priority band B</p></td>
               </tr>
             </tbody>
           </table>
@@ -4641,17 +4641,17 @@ const threeOffersDemotedorDisqualified = new ContentH(
   `
 <h3>Reduced preference (demotion) following refusal of 3 reasonable offers</h3>
 <p> 
-  If a customer is in Band D and they have refused 3 offers in 12 months, the Sheffield City Council Allocations Policy states:<br>
+  If a customer is in band D and they have refused 3 offers in 12 months, the Sheffield City Council Allocations Policy states:<br>
   <ul>
     <li>If you refuse an offer of a property, you could be moved to a lower band or your application may be cancelled. The following will also be considered as a refusal:</li>
     <li>If you fail to respond to an offer of a property made to you within the timescales specified and do not have a good reason for this failure.</li>
     <li>If you fail to attend a viewing of a property offered to you within the timescales specified and do not have a good reason for this failure.</li>
   </ul>
-  If you are to be Demoted, we will write to you 21 days before you are Demoted. If you do not respond, you will be Demoted to Band E on the Housing Register for 12 months. After 12 months you can request to be moved back in to Band D.
+  If you are to be Demoted, we will write to you 21 days before you are Demoted. If you do not respond, you will be Demoted to band E on the Housing Register for 12 months. After 12 months you can request to be moved back in to band D.
 </p>
    <h3>Disqualification following refusal of 3 reasonable offers</h3>
    <p>
-    If a customer who is in Band E refuses 3 reasonable offers, they can be disqualified from the Housing Register.<br>
+    If a customer who is in band E refuses 3 reasonable offers, they can be disqualified from the Housing Register.<br>
     The customer will be notified in writing and they have 21 days to appeal the decision. <br>
     If we do not hear from the customer within 21 days, their housing application will be cancelled and they will be disqualified from the Housing Register for 12 months. <br>
     After 12 months the customer is able to submit an on-line application for Social Housing to re-join the Housing Register.
@@ -4865,7 +4865,7 @@ const balanceEnquiry = new ContentH(
       </p>
       <p>
         In the most serious debt cases, the Allocations Policy allows us to place
-        applicants into Band E or disqualify a customer from the Housing Register
+        applicants into band E or disqualify a customer from the Housing Register
         for an initial period of 12 months.
       </p>
       <p>A customer can apply for a restriction to be removed if:</p>
@@ -5729,16 +5729,16 @@ const furnishedAccommodation = new ContentH(
         Applicants moving from any Temporary Accommodation property, Bed and
         Breakfast or Assessment Beds. The applicant must be currently bidding on
         Sheffield City Council properties and have a full homeless priority (This is
-        generally Bands A and B under the new Allocations policy).
+        generally bands A and B under the new Allocations policy).
       </li>
-      <li>Applicants referred via a medical priority (Generally Band A).</li>
+      <li>Applicants referred via a medical priority (Generally band A).</li>
       <li>
         Other applicants who would not be able to access a property without the
         Furnished Accommodation Service will be considered on a case-by-case basis
-        (Most of these will be under Band C in Allocations policy).
+        (Most of these will be under band C in Allocations policy).
       </li>
     </ol>
-    <p>(Most of these will be under Band C in Allocations policy).</p>
+    <p>(Most of these will be under band C in Allocations policy).</p>
     <p>
       NB: Budget constraints may impact on criteria 3 and criteria’s 1 & 2 will
       always take preference.
