@@ -3149,7 +3149,7 @@ const bidding = new ContentH(
         </summary>
         <div class="accordion-content">
           <details class="details-accordion">
-            <summary>Acis Group Ltd, tel <a href="tel:0142 7678000">0142 7678000</a></summary>
+            <summary>Acis Group Ltd</summary>
             <div class="details-accordion-content">
               <address>
                 Acis Group Ltd, tel <a href="tel:0142 7678000">0142 7678000</a><br>
@@ -3171,7 +3171,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Anchor Trust, tel <a href="tel:0345 7758595">0345 7758595</a></summary>
+            <summary>Anchor Trust</summary>
             <div class="details-accordion-content">
               <address>
                 Anchor Trust, tel <a href="tel:0345 7758595">0345 7758595</a><br>
@@ -3189,7 +3189,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Arches Housing Association, tel <a href="tel:0114 2288100">0114 2288100</a></summary>
+            <summary>Arches Housing Association</summary>
             <div class="details-accordion-content">
               <address>
                 Arches Housing Limited, tel <a href="tel:0114 2288100">0114 2288100</a><br>
@@ -3209,7 +3209,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Clarion Housing Group, tel <a href="tel:0330 5008000">0330 5008000</a></summary>
+            <summary>Clarion Housing Group</summary>
             <div class="details-accordion-content">
               <p>
                 Clarion Housing Group, tel <a href="tel:0330 5008000">0330 5008000</a><br>
@@ -3219,7 +3219,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Together Group with Pennine, tel <a href="tel:0845 2701088">0845 2701088</a></summary>
+            <summary>Together Group with Pennine</summary>
             <div class="details-accordion-content">
               <address>
                 Together Group with Pennine, tel <a href="tel:0845 2701088">0845 2701088</a><br>
@@ -3234,7 +3234,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>English Churches Housing Group / The Riverside Group, tel <a href="tel:0345 1110000">0345 1110000</a></summary>
+            <summary>English Churches Housing Group / The Riverside Group</summary>
             <div class="details-accordion-content">
               <address>
                 English Churches Housing Group / The Riverside Group, tel <a href="tel:0345 1559002">0345 1559002</a><br>
@@ -3251,7 +3251,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Great Places Housing Group, tel <a href="tel:0300 1231966">0300 1231966</a></summary>
+            <summary>Great Places Housing Group</summary>
             <div class="details-accordion-content">
               <address>
                 Great Places Housing Group, tel <a href="tel:0300 1231966">0300 1231966</a><br>
@@ -3269,7 +3269,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Guinness Northern Counties, tel <a href="tel:0303 1231890">0303 1231890</a></summary>
+            <summary>Guinness Northern Counties</summary>
             <div class="details-accordion-content">
               <address>
                 Guinness Northern Counties, tel <a href="tel:0303 1231890">0303 1231890</a><br>
@@ -3288,7 +3288,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Home Group, tel <a href="tel:0345 1414663">0345 1414663</a></summary>
+            <summary>Home Group</summary>
             <div class="details-accordion-content">
               <address>
                 Home Group, tel <a href="tel:0345 1414663">0345 1414663</a><br>
@@ -3305,7 +3305,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Housing 21, tel <a href="tel:0370 1924000">0370 1924000</a></summary>
+            <summary>Housing 21</summary>
             <div class="details-accordion-content">
               <address>
                 Housing 21, tel <a href="tel:0370 192 4000">0370 192 4000</a><br>
@@ -3322,7 +3322,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Johnnie Johnson Housing Trust Ltd, tel <a href="tel:0345 3055335">0345 3055335</a></summary>
+            <summary>Johnnie Johnson Housing Trust Ltd</summary>
             <div class="details-accordion-content">
               <address>
                 Johnnie Johnson Housing Trust Ltd, tel <a href="tel:0345 3055335">0345 3055335</a><br>
@@ -3340,7 +3340,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Padley, tel <a href="tel:0114 2666626">0114 2666626</a></summary>
+            <summary>Padley</summary>
             <div class="details-accordion-content">
               <address>
                 Padley, tel <a href="tel:0114 2666626">0114 2666626</a><br>
@@ -3355,7 +3355,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Places for People, tel <a href="tel:0113 2858923">0113 2858923</a></summary>
+            <summary>Places for People</summary>
             <div class="details-accordion-content">
               <p>
                 Places for People, tel <a href="tel:0113 2858923">0113 2858923</a><br>
@@ -3370,7 +3370,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Sanctuary, tel <a href="tel:0800 1313348">0800 1313348</a></summary>
+            <summary>Sanctuary</summary>
             <div class="details-accordion-content">
               <address>
                 Sanctuary, tel <a href="tel:0800 1313348">0800 1313348</a><br>
@@ -3399,7 +3399,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Sheffield Jewish Housing Association, tel <a href="tel:0114 2554318">0114 2554318</a></summary>
+            <summary>Sheffield Jewish Housing Association</summary>
             <div class="details-accordion-content">
               <address>
                 Sheffield Jewish Housing Association, tel <a href="tel:0114 2554318">0114 2554318</a><br>
@@ -3414,7 +3414,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>South Yorkshire Housing Association, tel <a href="tel:0114 2900200">0114 2900200</a> / <a href="tel:0800 1380380">0800 1380380</a></summary>
+            <summary>South Yorkshire Housing Association</summary>
             <div class="details-accordion-content">
               <address>
                 South Yorkshire Housing Association<br>
@@ -3433,7 +3433,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Together Housing Group, tel <a href="tel:0142 2284500">0142 2284500</a></summary>
+            <summary>Together Housing Group</summary>
             <div class="details-accordion-content">
               <address>
                 Together Housing Group<br>
@@ -3447,7 +3447,7 @@ const bidding = new ContentH(
           </details>
   
           <details class="details-accordion">
-            <summary>Yorkshire Housing, tel <a href="tel:0345 36644040">0345 36644040</a></summary>
+            <summary>Yorkshire Housing</summary>
             <div class="details-accordion-content">
               <address>
                 Yorkshire Housing, tel <a href="tel:0345 36644040">0345 36644040</a><br>
@@ -4282,89 +4282,109 @@ const applicantPlacedInAPriorityBand = new ContentH(
             </summary>
             <div class="details-accordion-content">
                 <p>
-                   If you are in Priority Band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
-                   despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
+                    If you are in Priority Band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
+                    despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
+                </p>
+            </div>
+        </details>
+        <details class="details-accordion">
+            <summary>
+                What is a band?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    A band is where an applicant is placed based on their needs and/or circumstances. 
+                    A band is used to determine the priority of an application. Band A is the highest and Band E is the lowest.
+                </p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>
+                Which band am I in?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    Check Housing Registration Application on Abritas – this will show the applicant’s band.
+                </p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>
+                Why have I been placed in the band I have?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    The bands take into account your individual circumstances, and you have been placed in the band which is seen as the most appropriate 
+                    for your needs, based on the information you have provided.
                 </p>
             </div>
         </details>
     </div>
-</details>
+  </details>
 
- <summary>
-                Why has my priority bid not been successful?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                   If you are in Priority Band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
-                   despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
-                </p>
-            </div>
-        </details>
+  <h3>Allocations Policy - Applicant placed in Band E</h3>
 
-        <h3>Allocations Policy - Applicant placed in Band E</h3>
+  <details class="accordion">
+      <summary class="accordion-header">
+          <h3>FAQs</h3>
+          <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+          <details class="details-accordion">
+              <summary>
+                  Why am I in Band E?
+              </summary>
+              <div class="details-accordion-content">
+                  <p>
+                      You have been placed in Band E due to your circumstances, in accordance with the allocations policy. 
+                      For example: out of town and no local connection; rent arrears etc.
+                  </p>
+              </div>
+          </details>
 
-        <details class="accordion">
-    <summary class="accordion-header">
-        <h3>FAQs</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Why am I in Band E?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                You have been placed in Band E due to your circumstances, in accordance with the allocations policy. 
-                For example: out of town and no local connection; rent arrears etc.   
-                </p>
-            </div>
-        </details>
-    </div>
-</details>
+          <details class="details-accordion">
+              <summary>
+                  Owner Occupier in Band D/E - why can't I bid?
+              </summary>
+              <div class="details-accordion-content">
+                  <p>
+                      The new policy states that owner occupiers may register, but will have their bidding restricted until they have sold their property. 
+                      Proof of sale by way of exchange of contracts will be required before an owner occupier can start bidding, 
+                      unless they have been assessed and given a priority. 
+                      In this case proof of sale would need to be produced at a later date.
+                  </p>
+              </div>
+          </details>
 
- <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Owner Occupier in Band D/E - why cant I bid?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                The new policy states that owner occupiers may register, but will have their bidding restricted until they have sold their property. 
-                Proof of sale by way of exchange of contracts will be required before an owner occupier can start bidding, 
-                unless they have been assessed and given a priority. 
-                In this case proof of sale would need to be produced as a later date.
-                </p>
-            </div>
-        </details>
+          <details class="details-accordion">
+              <summary>
+                  Why am I classed as no local connection but have a Sheffield postcode?
+              </summary>
+              <div class="details-accordion-content">
+                  <p>
+                      A local connection means within the Sheffield city boundary. 
+                      Although many areas use a Sheffield postcode, they are classed as outside of Sheffield.
+                  </p>
+              </div>
+          </details>
 
-            <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Why am I classed as no local connection but have a Sheffield postcode?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                A local connection means within the Sheffield city boundary. 
-                Although many areas use a Sheffield postcode, they are classed as outside of Sheffield.
-                </p>
-            </div>
-        </details>
-
-                 <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Im in Band E, but have a longer waiting time than someone who was offered a property?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                You are in Band E which means you will be considered after applicants in Band D, regardless of your waiting time. 
-                This is because Band E is classed as having reduced preference. 
-                Also, certain applicants within Band E will be considered before others in Band E, regardless of waiting time. 
-                For example, if you have arrears, you will be considered after someone living outside of Sheffield.
-                </p>
-            </div>
-        </details>
+          <details class="details-accordion">
+              <summary>
+                  I'm in Band E, but have a longer waiting time than someone who was offered a property?
+              </summary>
+              <div class="details-accordion-content">
+                  <p>
+                      You are in Band E which means you will be considered after applicants in Band D, regardless of your waiting time. 
+                      This is because Band E is classed as having reduced preference. 
+                      Also, certain applicants within Band E will be considered before others in Band E, regardless of waiting time. 
+                      For example, if you have arrears, you will be considered after someone living outside of Sheffield.
+                  </p>
+              </div>
+          </details>
+      </div>
+  </details>
 
   `,
 
@@ -4387,7 +4407,6 @@ const allocationsPolicyGuidance = new ContentH(
   "Allocations Policy Guidance",
   "",
   `
- 
 <details class="accordion">
     <summary class="accordion-header">
         <h3>FAQs</h3>
@@ -4402,14 +4421,10 @@ const allocationsPolicyGuidance = new ContentH(
                 <p>
                   A band is where an applicant is placed based on their needs and/or circumstances. 
                   A band is used to determine the priority of an application. Band A is the highest and Band E is the lowest.
-
                 </p>
             </div>
         </details>
-    </div>
-</details>
 
-<div class="accordion-content">
         <details class="details-accordion">
             <summary>
                 Which band am I in?
@@ -4417,28 +4432,23 @@ const allocationsPolicyGuidance = new ContentH(
             <div class="details-accordion-content">
                 <p>
                   Check Housing Registration Application on Abritas – this will show the applicant’s band.
-
                 </p>
             </div>
         </details>
 
-        <div class="accordion-content">
         <details class="details-accordion">
             <summary>
                 Why have I been placed in the band I have?
             </summary>
             <div class="details-accordion-content">
                 <p>
-             The bands take in to account your individual circumstances and you have been placed in to the band which is seen as the most appropriate 
-             for your needs, based on the information you have provided.
-
+                  The bands take into account your individual circumstances, and you have been placed in the band which is seen as the most appropriate 
+                  for your needs, based on the information you have provided.
                 </p>
             </div>
         </details>
-
-   
-
-
+    </div>
+</details>
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
