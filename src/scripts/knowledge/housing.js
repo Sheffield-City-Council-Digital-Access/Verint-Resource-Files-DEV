@@ -4392,7 +4392,7 @@ const applicantPlacedInAPriorityBand = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "23/09/2024", name: "Shahzad Athar" }
+  { date: "05/12/2024", name: "Joseph Coupland" }
 );
 
 const fosteringAndAdoption = new ContentH(
