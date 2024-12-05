@@ -4402,69 +4402,6 @@ const applicantPlacedInAPriorityBand = new ContentH(
   { date: "23/09/2024", name: "Shahzad Athar" }
 );
 
-const allocationsPolicyGuidance = new ContentH(
-  "allocationsPolicyGuidances",
-  "Allocations Policy Guidance",
-  "",
-  `
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>FAQs</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                What is a band?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                  A band is where an applicant is placed based on their needs and/or circumstances. 
-                  A band is used to determine the priority of an application. Band A is the highest and Band E is the lowest.
-                </p>
-            </div>
-        </details>
-
-        <details class="details-accordion">
-            <summary>
-                Which band am I in?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                  Check Housing Registration Application on Abritas – this will show the applicant’s band.
-                </p>
-            </div>
-        </details>
-
-        <details class="details-accordion">
-            <summary>
-                Why have I been placed in the band I have?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                  The bands take into account your individual circumstances, and you have been placed in the band which is seen as the most appropriate 
-                  for your needs, based on the information you have provided.
-                </p>
-            </div>
-        </details>
-    </div>
-</details>
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
-  },
-  { date: "07/22/2024", name: "George Whitehouse" }
-);
-
-
 const fosteringAndAdoption = new ContentH(
   "fosteringAndAdoption",
   "Fostering and Adoption",
@@ -4758,7 +4695,6 @@ const policy = new MenuH(
   "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
   [
     applicantPlacedInAPriorityBand,
-    allocationsPolicyGuidance,
     fosteringAndAdoption,
     priorityBandingTable,
     threeOffersDemotedorDisqualified,
