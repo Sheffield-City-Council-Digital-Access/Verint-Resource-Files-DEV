@@ -64,7 +64,17 @@ const emergencyAccommodation = new ContentOoH(
   { buttonLabel: "Apply Emergency accommodation", formName: "apply_emergency_homeless" },
   { typeKey: "emergency_homeless_transferred_to_service" },
   { typeKey: "emergency_homeless_information_provided" },
-  { type: "Information", keywords: ['Emergency accommodation','emergency accomodation', 'emergncy accomodation', 'emergancy accommodation', 'emergency accomodtion', 'emergncy accommodation',], categories: ["out of hours"] },
+  { type: "Information",
+    keywords: [
+      'Emergency accommodation',
+      'emergency accomodation',
+      'emergncy accomodation',
+      'emergancy accommodation',
+      'emergency accomodtion',
+      'emergncy accommodation',
+    ],
+    categories: ["out of hours"]
+  },
   { date: "13/10/2024", name: "George Whitehouse" }
 );
 
