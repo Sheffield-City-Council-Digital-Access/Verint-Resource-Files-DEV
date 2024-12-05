@@ -103,16 +103,16 @@ const complaints = new ContentFaC(
   },
   { typeKey: "make_complaint_information_provided" },
   { typeKey: "make_complaint_information_requested" },
-  {
-    buttonLabel: "Make a compliment",
-    formName: "feedback_compliment",
-  },
-  {
-    buttonLabel: "Complaint Survey",
-    formName: "complaints_survey",
-  },
-  { buttonLabel: "feedback_suggestion" },
-  { buttonLabel: "Make a Suggestion" },
+  // {
+  //   buttonLabel: "Make a compliment",
+  //   formName: "feedback_compliment",
+  // },
+  // {
+  //   buttonLabel: "Complaint Survey",
+  //   formName: "complaints_survey",
+  // },
+  // { buttonLabel: "feedback_suggestion" },
+  // { buttonLabel: "Make a Suggestion" },
   {
     type: "Complaint",
     keywords: [
@@ -350,16 +350,16 @@ Complaints Procedure – Effective Complaint handling Guide under Documents. </p
     buttonLabel: "Make an adult's social care complaint",
     formName: "make_complaint_adult",
   },
-  // {
-  //   buttonLabel: "Make a compliment",
-  //   formName: "feedback_compliment",
-  // },
-  // {
-  //   buttonLabel: "Complaint Survey",
-  //   buttonLabel: "complaints_survey",
-  // },
-  // { buttonLabel: "feedback_suggestion" },
-  // { buttonLabel: "Make a Suggestion" },
+  {
+    buttonLabel: "Make a compliment",
+    formName: "feedback_compliment",
+  },
+  {
+    buttonLabel: "Complaint Survey",
+    buttonLabel: "complaints_survey",
+  },
+  { buttonLabel: "feedback_suggestion" },
+  { buttonLabel: "Make a Suggestion" },
   
   { typeKey: "make_complaint_adult_information_provided" },
   { typeKey: "make_complaint_adult_information_requested" },
