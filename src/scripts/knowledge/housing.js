@@ -1045,45 +1045,25 @@ const loststolenkeys = new ContentH(
   "Lost Stolen Keys and Lock Repairs",
   "",
   `
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Lost/Stolen Keys and Lock Repairs</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      
-      <details class="details-accordion">
-        <summary>Lost Keys</summary>
-        <div class="details-accordion-content">
-          <ul>
-            <li>A charge of £5 for lost or stolen keys.</li>
-            <li>Locks will only be replaced if the customer agrees to the charge or provides a valid crime reference number.</li>
-            <li>Exceptions apply for elderly or vulnerable individuals.</li>
-          </ul>
-        </div>
-      </details>
+   <h3>Lost Keys</h3>
+    <ul>
+      <li>A charge of £5 for lost or stolen keys.</li>
+      <li>Locks will only be replaced if the customer agrees to the charge or provides a valid crime reference number.</li>
+      <li>Exceptions apply for elderly or vulnerable individuals.</li>
+    </ul>
 
-      <details class="details-accordion">
-        <summary>Replacement Fobs</summary>
-        <div class="details-accordion-content">
-          <ul>
-            <li>Costs £10 (communal keys: £5).</li>
-            <li>Can be purchased at local housing offices with ID.</li>
-          </ul>
-        </div>
-      </details>
+    <h3>Replacement Fobs</h3>
 
-      <details class="details-accordion">
-        <summary>Area Housing Offices</summary>
-        <div class="details-accordion-content">
-          <p>Please note: Howden House only deals with Rehousing enquiries and will not be able to help with fobs or keys. 
-            List of Area Offices:
-          </p>
-        </div>
-      </details>
+    <ul>
+      <li>Costs £10 (communal keys: £5).</li>
+      <li>Can be purchased at local housing offices with ID.</li>
+    </ul>
 
-    </div>
-  </details>
+    <h3>Area Housing Offices</h3>
+    <p>
+      Please note: Howden House only deals with Rehousing enquiries and will not be able to help with fobs or keys. 
+      List of Area Offices:  <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices "target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
+    </p>
   `,
   {
     buttonLabel: "Report Housing Enquiry",
