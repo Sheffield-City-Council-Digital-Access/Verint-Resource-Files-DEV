@@ -174,7 +174,7 @@ const otherAdaptationRequest = new ContentH(
   "Other Adaptation Request",
   "",
   `
-    <h2>Tenant wants to make their own changes (takes out of script)</h2> 
+    <h2>Tenant wants to make their own changes</h2> 
 
     <p>If you are over £250 (Total Indebtedness) in arrears, your permission request is unlikely to be granted. You must have written permission from the Housing Service to alter or improve your home. This includes:</p> 
 

@@ -1205,31 +1205,39 @@ const makingAPayment = new ContentP(
     <p>
       It is quick, safe, and secure to make a payment online or using our automated
       telephone payment line. To do this, you will need:
-    </p>
+    <br>
+    <br>
     <ul>
       <li>Ticket reference number (can be found on Gateway)</li>
       <li>Credit or debit card</li>
       <li>Your vehicle registration number</li>
     </ul>
-    <p>The customer must  enter ** on their keypad in place of the FD letters 
-    at the start of entering their pcn number</p>
-    <p>Alternatively, you can:</p>
+    <br>
+    <br>
+    The customer must enter ** on their keypad in place of the FD letters 
+    at the start of entering their pcn number
+    <br>
+    <br>
+    Alternatively, you can:
+    <br>
+    <br>
     <ul>
       <li>Pay at a pay point outlet by cash</li>
       <li>Pay at a Post Office by cash, cheque, credit, or debit card</li>
     </ul>
-    <p>
-      Sheffield City Council does not accept cash, cheque, or postal orders direct.
-    </p>
-    <p>
-     Payments are taken at the same time as the 
-     application is made and the permit is then active immediately.
-    </p>
-    <p>
+    <br>
+    <br>
+    Sheffield City Council does not accept cash, cheque, or postal orders direct.
+    <br>
+    <br>
+    Payments are taken at the same time as the 
+    application is made and the permit is then active immediately.
+    <br>
+    <br>
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
-    </p>
-    <p>
+    <br>
+    <br>
     How to make a payment, visit
     <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank">Pay a Penalty Charge Notice</a>.
   </p>
@@ -1257,10 +1265,14 @@ const makingAPayment = new ContentP(
       "permitt",
       "pemit",
       "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff"
     ],
     categories: ["Parking"],
   },
-  { date: "02/12/2024", name: "Dinah WIlliams" }
+  { date: "06/12/2024", name: "Nathan Smith" }
 );
 
 const customerPaidTwice = new ContentP(
@@ -1302,287 +1314,6 @@ const customerPaidTwice = new ContentP(
   { date: "27/11/2024", name: "Andy Walker" }
 );
 
-const confirmationOfPayment = new ContentP(
-  "confirmationOfPayment",
-  "Confirmation Of Payment",
-  "",
-  `
-		<p>
-			Payments can take up to 3-4 days to show on our system regardless of the
-			payment method.
-		</p>
-		<p>
-			If the customer has received further correspondence from Parking Services
-			asking for a payment but:
-		</p>
-		<ul>
-			<li>They believe payment has already been made</li>
-			<li>Gateway is not showing case is fully paid (closed)</li>
-		</ul>
-		<p>
-			The customer should make a written appeal online or in writing (ideally online
-			as it will be processed quicker) and send proof of payment. If a card payment
-			was made, the last 4 digits of the card should be provided.
-		</p>
-	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
-);
-
-const customerUnableToPay = new ContentP(
-  "customerUnableToPay",
-  "Customer Unable To Pay",
-  "",
-  `
-		<p>
-			Payments can take up to 3-4 days to show on our system regardless of the
-			payment method.
-		</p>
-		<p>
-			If the customer has received further correspondence from Parking Services
-			asking for a payment but:
-		</p>
-		<ul>
-			<li>They believe payment has already been made</li>
-			<li>Gateway is not showing case is fully paid (closed)</li>
-		</ul>
-		<p>
-			The customer should make a written appeal online or in writing (ideally online
-			as it will be processed quicker) and send proof of payment. If a card payment
-			was made, the last 4 digits of the card should be provided.
-		</p>
-	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
-);
-
-const customerTriedToPayOnline = new ContentP(
-  "customerTriedToPayOnline",
-  "Customer Tried To Pay Online But Won't Accept Details",
-  "",
-  `
-		<p>
-			The PCN should show on Gateway/online within minutes of being issued,
-			therefore the customer may have incorrect details. The ticket details can be
-			confirmed on Gateway.
-		</p>
-		<p>
-      The Vehicle Registration Number (VRN) should be entered without spaces along 
-      with the full Penalty Charge Notice (PCN) number.
-    </p>
-		<p>
-			Check the person entering the details has entered the VRM without spaces and
-			entered the full PCN number.
-		</p>
-  `,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "27/11/2024", name: "Andy Walker" }
-);
-
-const customerHasPaidTwice = new ContentP(
-  "Customerhaspaidtwice",
-  "Customer Has Paid Twice",
-  "",
-  `   
-    <p>
-    The customer needs to email parkingservices@sheffield.gov.uk advising 
-    the car registration number and ticket number in the subject box of the email
-    </p>
-	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "27/11/2024", name: "Andy Walker" }
-);
-
-const howCanIAppeal = new ContentP(
-  "howCanIAppeal",
-  "How Can I Appeal",
-  "",
-  `
-    <p>
-      Challenges can be made online within 28 days of receiving the original ticket.
-      Please note that it may take up to 24 hours for the ticket to appear on the
-      online portal.
-    </p>
-    <p>
-      Documentation can be uploaded to support the challenge. The online link also
-      enables the motorist to use an interactive portal to guide them through their
-      appeal. Evidence such as photos of the contravention can be viewed online.
-    </p>
-    <p>
-      Do not discuss any possible outcomes or give your opinions. Parking services
-      will contact the customer following the decision.
-    </p>
-    <p>
-      Appeals should always be made online however, if you are unable to make 
-      an online appeal, you can email parkingservices@sheffield.gov.uk 
-      explaining the reason for the appeal
-    </p>
-	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
-);
-
-const howLongDoIhavetoappeal = new ContentP(
-  "howLongDoIHaveToAppeal",
-  "How Long Do I Have to Appeal",
-  "",
-  `
-
-  `,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
-);
-
 const haveYouReceivedMyAppeal = new ContentP(
   "haveYouReceivedMyAppeal",
   "Have You Received My Appeal",
@@ -1590,153 +1321,6 @@ const haveYouReceivedMyAppeal = new ContentP(
   `
 	  <p>This can be found by checking Gateway.</p>
   `,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
-);
-const multiplepcns = new ContentP(
-  "multiplePcns",
-  "Multiple PCN's",
-  "",
-  `
-    <p>
-      Challenges can be made online within 28 days of receiving the original
-      ticket. It can take up to 24 hours to appear on the online portal.
-    </p>
-    <p>
-      Documentation can be uploaded to support the challenge, the online link also
-      enables the motorist to use an interactive portal to guide them through their
-      appeal and the evidence can be viewed (e.g photos of the contravention)
-    </p>
-    <p>
-      Do not discuss any possible outcomes or give your opinions. Parking services
-      will contact the customer following the decision.
-    </p>
-  `,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "12/11/2024", name: "Andy Walker" }
-);
-
-const howLongDoIHaveToAppeal = new ContentP(
-  "howLongDoIHaveToAppeal",
-  "How Long Do I Have to Appeal",
-  "",
-  `	
-    <h3>Rejected PCN's</h3>
-    <p>
-      The correspondence to reject their challenge will explain the next steps to
-      take if they are unhappy with the decision.
-    </p>
-    <p>
-      General information relating to the PCN Enforcement is available on the
-      <a href="http://www.patrol-uk.info">http://www.patrol-uk.info</a>.
-    </p>
-  `,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "12/11/2024", name: "Andy Walker" }
-);
-
-const enforcementbaliffenquiries = new ContentP(
-  "enforcementbaliffenquiries",
-  "Enforcement Baliff Enquiries",
-  "",
-  `   
-		<h3>Enforcement (Bailiff) Enquiries</h3>
-		<p>
-			Once the debt has been referred to enforcement agents there is no further
-			investigation or challenges that can be made.
-		</p>
-		<p>
-			To make a payment or arrange an agreement to pay, the customer should contact
-			the appropriate enforcement agency.
-		</p>
-		<p>
-			If the customer states they moved address before any correspondence was 
-      sent out, then refer them to the Traffic Enforcement Centre (TEC) - 
-      TEC will provide information on how to appeal. The contact details for 
-      TEC are: 03001231059
-		</p>
-		<h3>Person is not living at that address</h3>
-		<p>
-			The envelope should be returned to sender and marked "Not known at this
-			address"
-		</p>
-		<p>Our records are taken from DVLA so the customer may wish to update them.</p>
-	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2106,22 +1690,459 @@ const vehicleParkedInASuspendedBay = new ContentP(
   { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
+//#region Penalty Charge Notice (PCN)
+
+const confirmationOfPayment = new ContentP(
+  "confirmationOfPayment",
+  "Confirmation Of Payment",
+  "",
+  `
+		<p>
+			Payments can take up to 3-4 days to show on our system regardless of the
+			payment method.
+      <br>
+      <br>
+			If the customer has received further correspondence from Parking Services
+			asking for a payment but:
+      <br>
+      <br>
+		<ul>
+			<li>They believe payment has already been made</li>
+			<li>Gateway is not showing case is fully paid (closed)</li>
+		</ul>
+      <br>
+      <br>
+			The customer should make a written appeal online or in writing (ideally online
+			as it will be processed quicker) and send proof of payment. If a card payment
+			was made, the last 4 digits of the card should be provided.
+		</p>
+	`,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff"
+    ],
+    categories: ["Parking"],
+  },
+  { date: "06/12/2024", name: "Nathan Smith" }
+);
+
+const customerHasPaidTwice = new ContentP(
+  "Customerhaspaidtwice",
+  "Customer Has Paid Twice",
+  "",
+  `   
+    <p>
+      The customer needs to email <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a> 
+      advising the car registration number and ticket number in the subject box of the email
+    </p>
+	`,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff"
+    ],
+    categories: ["Parking"],
+  },
+  { date: "06/12/2024", name: "Nathan Smith" }
+);
+
+const customerTriedToPayOnline = new ContentP(
+  "customerTriedToPayOnline",
+  "Customer Tried To Pay Online But Won't Accept Details",
+  "",
+  `
+		<p>
+			The PCN should show on Gateway/online within minutes of being issued,
+			therefore the customer may have incorrect details. The ticket details can be
+			confirmed on Gateway.
+      <br>
+      <br>
+      The Vehicle Registration Number (VRN) should be entered without spaces along 
+      with the full Penalty Charge Notice (PCN) number.
+      <br>
+      <br>
+			Check the person entering the details has entered the VRM without spaces and
+			entered the full PCN number.
+		</p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff"
+    ],
+    categories: ["Parking"],
+  },
+  { date: "06/12/2024", name: "Nathan Smith" }
+);
+
+const customerUnableToPay = new ContentP(
+  "customerUnableToPay",
+  "Customer Unable To Pay",
+  "",
+  `
+		<p>
+			Payments can take up to 3-4 days to show on our system regardless of the
+			payment method.
+      <br>
+      <br>
+			If the customer has received further correspondence from Parking Services
+			asking for a payment but:
+      <br>
+      <br>
+		<ul>
+			<li>They believe payment has already been made</li>
+			<li>Gateway is not showing case is fully paid (closed)</li>
+		</ul>
+    <br>
+    <br>
+			The customer should make a written appeal online or in writing (ideally online
+			as it will be processed quicker) and send proof of payment. If a card payment
+			was made, the last 4 digits of the card should be provided.
+		</p>
+	`,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff"
+    ],
+    categories: ["Parking"],
+  },
+  { date: "06/12/2024", name: "Nathan Smith" }
+);
+
+const enforcementbaliffenquiries = new ContentP(
+  "enforcementbaliffenquiries",
+  "Enforcement Baliff Enquiries",
+  "",
+  `   
+		<h3>Enforcement (Bailiff) Enquiries</h3>
+		<p>
+			Once the debt has been referred to enforcement agents there is no further
+			investigation or challenges that can be made.
+      <br>
+      <br>
+			To make a payment or arrange an agreement to pay, the customer should contact
+			the appropriate enforcement agency.
+      <br>
+      <br>
+			If the customer states they moved address before any correspondence was 
+      sent out, then refer them to the Traffic Enforcement Centre (TEC) - 
+      TEC will provide information on how to appeal. The contact details for 
+      TEC are: <a href="tel:0300 1231059">0300 1231059</a>
+		</p>
+		<h3>Person is not living at that address</h3>
+		<p>
+			The envelope should be returned to sender and marked "Not known at this
+			address"
+      <br>
+      <br>
+      Our records are taken from DVLA so the customer may wish to update them.
+    </p>
+	`,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff"
+    ],
+    categories: ["Parking"],
+  },
+  { date: "06/12/2024", name: "Nathan Smith" }
+);
+
+const howCanIAppeal = new ContentP(
+  "howCanIAppeal",
+  "How Can I Appeal",
+  "",
+  `
+    <p>
+      Challenges can be made online within 28 days of receiving the original ticket.
+      Please note that it may take up to 24 hours for the ticket to appear on the
+      online portal.
+      <br>
+      <br>
+      Documentation can be uploaded to support the challenge. The online link also
+      enables the motorist to use an interactive portal to guide them through their
+      appeal. Evidence such as photos of the contravention can be viewed online.
+      <br>
+      <br>
+      Do not discuss any possible outcomes or give your opinions. Parking services
+      will contact the customer following the decision.
+      <br>
+      <br>
+      Appeals should always be made online however, if you are unable to make 
+      an online appeal, you can email: <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a>
+      explaining the reason for the appeal
+    </p>
+	`,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff"
+    ],
+    categories: ["Parking"],
+  },
+  { date: "06/12/2024", name: "Nathan Smith" }
+);
+
+const howLongDoIHaveToAppeal = new ContentP(
+  "howLongDoIHaveToAppeal",
+  "How Long Do I Have to Appeal",
+  "",
+  `	
+    <h3>Rejected PCN's</h3>
+    <p>
+      The correspondence to reject their challenge will explain the next steps to
+      take if they are unhappy with the decision.
+      <br>
+      <br>
+      General information relating to the PCN Enforcement is available at: <a href="http://www.patrol-uk.info"target="_blank">http://www.patrol-uk.info</a>
+    </p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff"
+    ],
+    categories: ["Parking"],
+  },
+  { date: "06/12/2024", name: "Nathan Smith" }
+);
+
+// makingAPayment is in the parking region as it is the same information to avoid duplication
+// It also sits within the parking tile so the content is in that region
+
+const multiplepcns = new ContentP(
+  "multiplePcns",
+  "Multiple PCN's",
+  "",
+  `
+    <p>
+      Challenges can be made online within 28 days of receiving the original
+      ticket. It can take up to 24 hours to appear on the online portal.
+      <br>
+      <br>
+      Documentation can be uploaded to support the challenge, the online link also
+      enables the motorist to use an interactive portal to guide them through their
+      appeal and the evidence can be viewed (e.g photos of the contravention)
+      <br>
+      <br>
+      Do not discuss any possible outcomes or give your opinions. Parking services
+      will contact the customer following the decision.
+    </p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff"
+    ],
+    categories: ["Parking"],
+  },
+  { date: "06/12/2024", name: "Nathan Smith" }
+);
+
 const penaltyChargeNoticePcn = new MenuP(
   "penaltyChargeNoticePCN",
   "Penalty Charge Notice (PCN)",
   "Information on Penalty Charge Notice",
   [
-    makingAPayment,
     confirmationOfPayment,
-    customerUnableToPay,
-    customerTriedToPayOnline,
     customerHasPaidTwice,
+    customerTriedToPayOnline,
+    customerUnableToPay,
+    enforcementbaliffenquiries,
     howCanIAppeal,
     howLongDoIHaveToAppeal,
-    multiplepcns,
-    enforcementbaliffenquiries,
+    makingAPayment,
+    multiplepcns
   ]
 );
+
+//#endregion Penalty Charge Notice (PCN)
 
 const parkingIssues = new MenuP(
   "parkingIssues",
