@@ -788,83 +788,105 @@ const doorEntrySystems = new ContentH(
   "",
   `
     <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Frequently Asked Questions</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <details class="details-accordion">
-          <summary>What is a Door Entry System and Why is it Necessary?</summary>
-          <div class="details-accordion-content">
-            <p>We are carrying out work to improve security to the block of flats where you live. 
-            Our door entry system can help prevent unauthorized or unwanted access into the communal areas of your flats.</p> 
-          </div>
-        </details>
+  <summary class="accordion-header">
+    <h3>What is a Door Entry System and Why is it Necessary?</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      We are carrying out work to improve security to the block of flats where you live. Our door entry system can help prevent unauthorized or unwanted access into the communal areas of your flats.
+    </p>
+  </div>
+</details>
 
-        <details class="details-accordion">
-          <summary>How Does the System Work?</summary>
-          <div class="details-accordion-content">
-            <ul>
-              <li>Once the system has been installed, the entrance doors are locked, and access into the block will be controlled.</li>
-              <li>Residents can access the block through the main door using either a door key or electronic fob.</li>
-              <li>Tradespeople can access the block at certain times of the day using a push button on the door intercom panel marked as “trades.”</li>
-              <li>A visitor presses the call button for the flat they wish to visit. The handset in your flat will ring for a set period of time. When you answer the call, you can have a conversation with the visitor. If you then want to allow the person in, you can press the button on the handset to release the lock on the main entrance door.</li>
-              <li>If you do not want to let the visitor in, you can replace the handset and finish the call.</li>
-              <li>Visitors’ access to the block can only be granted by a resident pressing the door release button on the door entry handset.</li>
-            </ul>
-          </div>
-        </details>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>How Does the System Work?</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <ul>
+      <li>Once the system has been installed, the entrance doors are locked, and access into the block will be controlled.</li>
+      <li>Residents can access the block through the main door using either a door key or electronic fob.</li>
+      <li>Tradespeople can access the block at certain times of the day using a push button on the door intercom panel marked as “trades.”</li>
+      <li>A visitor presses the call button for the flat they wish to visit. The handset in your flat will ring for a set period of time. When you answer the call, you can have a conversation with the visitor. If you then want to allow the person in, you can press the button on the handset to release the lock on the main entrance door.</li>
+      <li>If you do not want to let the visitor in, you can replace the handset and finish the call.</li>
+      <li>Visitors’ access to the block can only be granted by a resident pressing the door release button on the door entry handset.</li>
+    </ul>
+  </div>
+</details>
 
-        <details class="details-accordion">
-          <summary>How Can I Stop Nuisance Calls Coming Through on My Door Entry Phone?</summary>
-          <div class="details-accordion-content">
-            <p>If this happens, you can turn off the handset using the “privacy button.” When this is used, a red light will illuminate on the phone to show that the door entry calls are switched off. 
-            The privacy facility resets itself after a fixed period of time (red light goes off) so that the handset isn’t left switched off and a genuine visitor is prevented from contacting the resident they wish to visit.</p>
-          </div>
-        </details>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>How Can I Stop Nuisance Calls Coming Through on My Door Entry Phone?</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      If this happens, you can turn off the handset using the “privacy button.” When this is used, a red light will illuminate on the phone to show that the door entry calls are switched off. The privacy facility resets itself after a fixed period of time (red light goes off) so that the handset isn’t left switched off and a genuine visitor is prevented from contacting the resident they wish to visit.
+    </p>
+  </div>
+</details>
 
-        <details class="details-accordion">
-          <summary>How do I Know That the Main Entrance Door is Secure When I Am in My Home?</summary>
-          <div class="details-accordion-content">
-            <p>The door entry system is set up to monitor the main entrance and will tell you if the door is open or closed. 
-            If the main entrance is left open, a green light will show on your door entry phone. 
-            When the main entrance door is closed, the green light goes out.</p>
-          </div>
-        </details>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>How do I Know That the Main Entrance Door is Secure When I Am in My Home?</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      The door entry system is set up to monitor the main entrance and will tell you if the door is open or closed. 
+      If the main entrance is left open, a green light will show on your door entry phone. 
+      When the main entrance door is closed, the green light goes out.
+    </p>
+  </div>
+</details>
 
-        <details class="details-accordion">
-          <summary>How do the post, milk, and newspapers delivery people gain access into the block during the day?</summary>
-          <div class="details-accordion-content">
-            <p>A “trades” button is provided on the door entrance panel next to the main entrance to your block.
-            This button is set up to work at certain times of the day (time clock controlled). 
-            When active, the button can be used by tradespeople to gain access into the block through the main door. 
-            The times are set up in consultation with residents to suit the requirements of each particular block of flats.</p>
-          </div>
-        </details>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>How do the post, milk, and newspapers delivery people gain access into the block during the day?</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      A “trades” button is provided on the door entrance panel next to the main entrance to your block.
+      This button is set up to work at certain times of the day (time clock controlled). 
+      When active, the button can be used by tradespeople to gain access into the block through the main door. 
+      The times are set up in consultation with residents to suit the requirements of each particular block of flats.
+    </p>
+  </div>
+</details>
 
-        <details class="details-accordion">
-          <summary>How do the emergency services gain access?</summary>
-          <div class="details-accordion-content">
-            <p>The system includes an emergency switch next to the main door. 
-            The emergency services can use this switch, operated by a special key, to gain access in an emergency.</p>
-          </div>
-        </details>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>How do the emergency services gain access?</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      The system includes an emergency switch next to the main door. 
+      The emergency services can use this switch, operated by a special key, to gain access in an emergency.
+    </p>
+  </div>
+</details>
 
-        <details class="details-accordion">
-          <summary>What work is involved in installing the door entry system?</summary>
-          <div class="details-accordion-content">
-            <ul>
-              <li>A door entry telephone handset will be put in your home; usually, it will be placed in your hallway or near the door.</li>
-              <li>A door entry panel will be put next to the main entrance to your block of flats. Each flat will have its own button visitors can use to ring the flat that they wish to visit.</li>
-              <li>We will put an electronic lock on the main entrance. Each resident’s door entry handset has a push button which operates the release of the door and allows visitors to enter into the block.</li>
-              <li>Most of the work will take place in the communal areas.</li>
-              <li>We will only need access to your home to fit the door entry handset and to check the system is working.</li>
-              <li>An external light will be fitted above the entrance door to each block of flats if there isn’t already one in place. A survey will be carried out before the work starts to look at lights, and in some cases, existing lights may be replaced.</li>
-            </ul>
-          </div>
-        </details>
-      </div>
-    </details>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>What work is involved in installing the door entry system?</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <ul>
+      <li>A door entry telephone handset will be put in your home; usually, it will be placed in your hallway or near the door.</li>
+      <li>A door entry panel will be put next to the main entrance to your block of flats. Each flat will have its own button visitors can use to ring the flat that they wish to visit.</li>
+      <li>We will put an electronic lock on the main entrance. Each resident’s door entry handset has a push button which operates the release of the door and allows visitors to enter into the block.</li>
+      <li>Most of the work will take place in the communal areas.</li>
+      <li>We will only need access to your home to fit the door entry handset and to check the system is working.</li>
+      <li>An external light will be fitted above the entrance door to each block of flats if there isn’t already one in place. A survey will be carried out before the work starts to look at lights, and in some cases, existing lights may be replaced.</li>
+    </ul>
+  </div>
+</details>
+
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
