@@ -60,12 +60,7 @@ const chaseProgressOfAdaptation = new ContentH(
   "Chase Progress of Adaptation",
   "",
   `
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Chase Progress of Adaptation</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <details class="accordion">
+  <details class="accordion">
   <summary class="accordion-header">
     <h3>Different Utility supplier</h3>
     <div class="accordion-icon"></div>
