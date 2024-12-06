@@ -1145,7 +1145,7 @@ const noHeatNoWater = new ContentH(
     To access a supply of heat and hot water please follow the simple steps below: 
   </p>
   <ol> 
-    <li>Does the property have an electricity supply? They will not have access to heat and hot water without it. The customer will need to Dial 105 or visit www.findmysupplier.energy.co.uk to find their current supplier. </li>
+    <li>Does the property have an electricity supply? They will not have access to heat and hot water without it. The customer will need to Dial 105 or visit <a href="www.findmysupplier.energy.co.uk "target="_blank">www.findmysupplier.energy.co.uk</a> to find their current supplier. </li>
     <li> The District Heating Meter location may vary but is usually located in the property airing cupboard. Does The Meters Home Screen say ON in the top right corner? Is your heating programmer turned on? </li>
     <li> To activate an emergency credit, press the blue button, marked ‘Press For Em Credit’ as instructed by the meters home screen. This will allow the tenant to ‘borrow’ credit up to £10.00 which will connect your heat and hot water supply for a short time. This is simply a loan and will need to be repaid on receipt of the prepayment information/number which will be with them shortly. </li>
     <li> If the Meters screen in blank or shows something similar to ‘D bug’ then the customer can reboot the G6 unit by pressing the blue and orange button together for 10 seconds. </li>
@@ -1440,64 +1440,66 @@ const tenantsOwnImprovements = new ContentH(
   "",
   `
     <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Tenants Own Improvements</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <details class="details-accordion">
-          <summary>What we will pay compensation for?</summary>
-          <div class="details-accordion-content">
-            <ul>
-              <li>new central heating systems and extra fires, radiators or thermostatic valves</li>
-              <li>up to 5 new kitchen units and making the kitchen larger</li>
-              <li>new bathroom suites, showers or moving a bathroom upstairs</li>
-              <li>new windows to replace metal ones or wooden ones put in before 1946, and double glazing</li>
-              <li>garages, car ports, hard standings, porches, conservatories and extensions</li>
-              <li>loft insulation, cavity wall insulation and extra electrical fittings</li>
-            </ul>
-          </div>
-        </details>
+  <summary class="accordion-header">
+    <h3>Tenants Own Improvements</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <ul>
+      <li>New central heating systems and extra fires, radiators or thermostatic valves</li>
+      <li>Up to 5 new kitchen units and making the kitchen larger</li>
+      <li>New bathroom suites, showers or moving a bathroom upstairs</li>
+      <li>New windows to replace metal ones or wooden ones put in before 1946, and double glazing</li>
+      <li>Garages, car ports, hard standings, porches, conservatories and extensions</li>
+      <li>Loft insulation, cavity wall insulation and extra electrical fittings</li>
+    </ul>
+  </div>
+</details>
 
-        <details class="details-accordion">
-          <summary>How much you will get</summary>
-          <div class="details-accordion-content">
-            <p>
-              The amount of compensation depends on how long ago you did the work, the quality of the work and its condition.
-              When you claim, someone will visit to see the improvement and we will work out your payment on a sliding scale,
-              taking account of its age and condition.
-            </p>
-          </div>
-        </details>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>How much you will get</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      The amount of compensation depends on how long ago you did the work, the quality of the work and its condition.
+      When you claim, someone will visit to see the improvement and we will work out your payment on a sliding scale,
+      taking account of its age and condition.
+    </p>
+  </div>
+</details>
 
-        <details class="details-accordion">
-          <summary>How to claim</summary>
-          <div class="details-accordion-content">
-            <p>
-              Complete the Tenants' Compensation Scheme form and send it to us as soon as you’ve told us you are leaving.
-              If you want to claim for more than 3 improvements, please put the extra details on another form or a blank sheet
-              and attach it to the main claim form. You can also get claim forms from Neighbourhood Offices and First Points.
-            </p>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>How to claim</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      Complete the Tenants' Compensation Scheme form and send it to us as soon as you’ve told us you are leaving.
+      If you want to claim for more than 3 improvements, please put the extra details on another form or a blank sheet
+      and attach it to the main claim form. You can also get claim forms from Neighbourhood Offices and First Points.
+    </p>
 
-            <p>
-              When you claim, please send all the receipts for the work you have done with your form.
-              This will help us pay you easily and quickly.
-            </p>
+    <p>
+      When you claim, please send all the receipts for the work you have done with your form.
+      This will help us pay you easily and quickly.
+    </p>
 
-            <p>
-              You can claim when you give notice to leave the property you have improved.
-              You can’t claim before then or more than 2 months after leaving.
-            </p>
+    <p>
+      You can claim when you give notice to leave the property you have improved.
+      You can’t claim before then or more than 2 months after leaving.
+    </p>
 
-            <p>
-              The Repairs team will only discuss the improvements claim after the form in the leaflet has been completed and
-              sent back to us.
-              Customer's Email Address
-            </p>
-          </div>
-        </details>
-      </div>
-    </details>
+    <p>
+      The Repairs team will only discuss the improvements claim after the form in the leaflet has been completed and
+      sent back to us.
+      Customer's Email Address
+    </p>
+  </div>
+</details>
+
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
@@ -1706,9 +1708,7 @@ const gardenPledgeScheme = new ContentH(
     <p>
       The Government also has a website which lists local, trustworthy and reliable
       tradesmen, operating to Government endorsed standards
-      <a href="http://www.trustmark.org.uk/ "target="_blank"
-        >http://www.trustmark.org.uk</a
-      >.
+      <a href="http://www.trustmark.org.uk/ "target="_blank">http://www.trustmark.org.uk</a>.
     </p>
   `,
   { buttonLabel: "", formName: "" },
