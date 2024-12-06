@@ -1468,7 +1468,6 @@ const assetManagementAndRepairs = new MenuH(
     carbonmonoxide,
 	  communalAerials,
 	  communalAreas,
-    newAndExistingRepairs,
 	  communalAreasFireSafety,
 	  districtHeating,
 	  doorEntrySystems,
