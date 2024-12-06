@@ -1278,90 +1278,86 @@ const programmedWorks = new ContentH(
   "",
   `
   <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Programmed Works</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <details class="details-accordion">
-        <summary>Electrical Upgrade Programme</summary>
-        <div class="details-accordion-content">
-          <ul>
-            <li>Aims to modernize electrical standards in council-managed housing by 2024.</li>
-            <li>Will cover over 20,000 dwellings with potential investments of £40-45 million.</li>
-            <li>Includes upgrades such as installation of isolation switches, replacement of consumer units, improved socket spread, smoke alarms, and carbon monoxide detectors.</li>
-            <li>Work will be conducted in batches of 250-300 properties with a target of 60 completed properties per week.</li>
-          </ul>
-        </div>
-      </details>
+  <summary class="accordion-header">
+    <h3>Electrical Upgrade</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <ul>
+      <li>Aims to modernize electrical standards in council-managed housing by 2024.</li>
+      <li>Will cover over 20,000 dwellings with potential investments of £40-45 million.</li>
+      <li>Includes upgrades such as installation of isolation switches, replacement of consumer units, improved socket spread, smoke alarms, and carbon monoxide detectors.</li>
+      <li>Work will be conducted in batches of 250-300 properties with a target of 60 completed properties per week.</li>
+    </ul>
 
-      <details class="details-accordion">
-        <summary>Background</summary>
-        <div class="details-accordion-content">
-          <p>Installation of fences is the tenant’s responsibility.
-          Over the last 12 years considerable investment has been made in the housing stock via the Decent Homes programme and other programmes. This has included some elements of electrical work particularly within bathrooms and kitchens. However, enhancing the overall electrical standard in homes / communal facilities was not a key requirement of the Decent Homes programme or for properties to achieve the government decent homes standard.</p>
+    <details class="details-accordion">
+      <summary>Background</summary>
+      <div class="details-accordion-content">
+        <p>Installation of fences is the tenant’s responsibility.
+        Over the last 12 years considerable investment has been made in the housing stock via the Decent Homes programme and other programmes. This has included some elements of electrical work particularly within bathrooms and kitchens. However, enhancing the overall electrical standard in homes / communal facilities was not a key requirement of the Decent Homes programme or for properties to achieve the government decent homes standard.</p>
 
-          <p>Consequently, whilst the electrical condition of the stock is fair / good, there remain improvements required to provide a modern-day standard that will keep customers safe, contribute to digital inclusion, meet existing and future legislative standards and contribute to reducing the carbon footprint by providing energy efficient products.</p>
-        </div>
-      </details>
+        <p>Consequently, whilst the electrical condition of the stock is fair / good, there remain improvements required to provide a modern-day standard that will keep customers safe, contribute to digital inclusion, meet existing and future legislative standards and contribute to reducing the carbon footprint by providing energy efficient products.</p>
+      </div>
+    </details>
 
-      <details class="details-accordion">
-        <summary>What will be included within the Electrical Upgrade Programme?</summary>
-        <div class="details-accordion-content">
-          <p>The aim of this programme is to bring all properties over time up to a modern-day electrical standard and move towards an electrical periodic test every 5 years as recommended by the National Council for Electrical Installation Contracting (NICEIC).</p>
+    <details class="details-accordion">
+      <summary>What will be included within the Electrical Upgrade Programme?</summary>
+      <div class="details-accordion-content">
+        <p>The aim of this programme is to bring all properties over time up to a modern-day electrical standard and move towards an electrical periodic test every 5 years as recommended by the National Council for Electrical Installation Contracting (NICEIC).</p>
 
-          <p>Work will be released in batch orders of approximately 250 to 300 dwellings but on a geographical basis to enable the contractor(s) and the contract administrator to work efficiently. Once fully underway, 60 properties per week for each contractor will be completed. This programme will include the following:</p>
+        <p>Work will be released in batch orders of approximately 250 to 300 dwellings but on a geographical basis to enable the contractor(s) and the contract administrator to work efficiently. Once fully underway, 60 properties per week for each contractor will be completed. This programme will include the following:</p>
 
-          <ul>
-            <li>Install Isolation Switch (where necessary)</li>
-            <li>Carry out an initial periodic condition test and report</li>
-            <li>Replace consumer units (where necessary only) to provide improved RCD protection and safety for residents</li>
-            <li>Address Category 1, 2, and 3 issues identified by the periodic test</li>
-            <li>Ensure earth bonding is adequate (where necessary)</li>
-            <li>Install earth wiring to lighting circuits (where necessary)</li>
-            <li>Install additional sockets and/or improve the spread of sockets including 2 USB equipped sockets</li>
-            <li>Install hard-wired smoke alarms</li>
-            <li>Install carbon monoxide detectors – risk-based approach</li>
-            <li>Replace bathroom light fittings which are difficult to access to replace bulbs</li>
-            <li>Install external lighting to houses, bungalows & flats (where no communal lighting presently exists)</li>
-            <li>Carry out a final periodic test (if further work is carried out) to verify all electrics are operating correctly</li>
-            <li>Not every dwelling will require all the above work.</li>
-          </ul>
+        <ul>
+          <li>Install Isolation Switch (where necessary)</li>
+          <li>Carry out an initial periodic condition test and report</li>
+          <li>Replace consumer units (where necessary only) to provide improved RCD protection and safety for residents</li>
+          <li>Address Category 1, 2, and 3 issues identified by the periodic test</li>
+          <li>Ensure earth bonding is adequate (where necessary)</li>
+          <li>Install earth wiring to lighting circuits (where necessary)</li>
+          <li>Install additional sockets and/or improve the spread of sockets including 2 USB equipped sockets</li>
+          <li>Install hard-wired smoke alarms</li>
+          <li>Install carbon monoxide detectors – risk-based approach</li>
+          <li>Replace bathroom light fittings which are difficult to access to replace bulbs</li>
+          <li>Install external lighting to houses, bungalows & flats (where no communal lighting presently exists)</li>
+          <li>Carry out a final periodic test (if further work is carried out) to verify all electrics are operating correctly</li>
+          <li>Not every dwelling will require all the above work.</li>
+        </ul>
 
-          <p>The list above is a menu of activity which will be undertaken as required.</p>
+        <p>The list above is a menu of activity which will be undertaken as required.</p>
 
-          <p>Isolation switches allow the dwelling to be worked upon safely by electrical engineers. During the Decent Homes programme, thousands of isolation switches were installed, but we do not have full coverage. The upgrade project will enable us over time to install an isolation switch to every property.</p>
+        <p>Isolation switches allow the dwelling to be worked upon safely by electrical engineers. During the Decent Homes programme, thousands of isolation switches were installed, but we do not have full coverage. The upgrade project will enable us over time to install an isolation switch to every property.</p>
 
-          <p>Consumer unit specifications change regularly, and in certain cases, we are not offering the most ideal protection. This project will ensure consumer units are suitable, up-to-date, and offer the best protection to our residents.</p>
+        <p>Consumer unit specifications change regularly, and in certain cases, we are not offering the most ideal protection. This project will ensure consumer units are suitable, up-to-date, and offer the best protection to our residents.</p>
 
-          <p>Category 1 & 2 issues identified from the periodic test will be rectified. Category 3 issues will be rectified based on a cost/benefit analysis.</p>
+        <p>Category 1 & 2 issues identified from the periodic test will be rectified. Category 3 issues will be rectified based on a cost/benefit analysis.</p>
 
-          <p>Earth bonding is very often disrupted as a result of other works. This project will ensure that earth bonding is maintained and is effective.</p>
+        <p>Earth bonding is very often disrupted as a result of other works. This project will ensure that earth bonding is maintained and is effective.</p>
 
-          <p>Earth wiring to lighting circuits will be installed, enabling residents to use metal lighting accessories safely. At present, metal accessories have to be removed if found for Health & Safety reasons.</p>
-        </div>
-      </details>
+        <p>Earth wiring to lighting circuits will be installed, enabling residents to use metal lighting accessories safely. At present, metal accessories have to be removed if found for Health & Safety reasons.</p>
+      </div>
+    </details>
 
-      <details class="details-accordion">
-        <summary>Meeting Modern Day Standards - Additional Sockets and/or spread of sockets</summary>
-        <div class="details-accordion-content">
-          <p>Due to the age of the stock many of the dwellings do not have sufficient sockets or a sufficient spread of sockets which meet customer needs and the increasing use of technology in the home which leads to the overuse of trailing cables or socket extension leads. This can lead to Health and Safety issues. The Decent Homes programme did provide some improvements especially in kitchens but there is still work to do in many dwellings to improve the socket provision. There is no current programme to cover this work.</p>
+    <details class="details-accordion">
+      <summary>Meeting Modern Day Standards - Additional Sockets and/or spread of sockets</summary>
+      <div class="details-accordion-content">
+        <p>Due to the age of the stock many of the dwellings do not have sufficient sockets or a sufficient spread of sockets which meet customer needs and the increasing use of technology in the home which leads to the overuse of trailing cables or socket extension leads. This can lead to Health and Safety issues. The Decent Homes programme did provide some improvements especially in kitchens but there is still work to do in many dwellings to improve the socket provision. There is no current programme to cover this work.</p>
 
-          <p>Evidence from the teams working on the ground indicates that customer DIY work to electrics is putting residents at risk. For example, the erection of external lighting in response to security concerns, additional sockets not installed by a qualified installer, surface mounted sockets and trailing cables.</p>
+        <p>Evidence from the teams working on the ground indicates that customer DIY work to electrics is putting residents at risk. For example, the erection of external lighting in response to security concerns, additional sockets not installed by a qualified installer, surface mounted sockets and trailing cables.</p>
 
-          <p>Hard Wired Smoke Alarms - There is around 10,000 hard wired smoke alarms within the stock. All high risk properties such as sheltered, and towers have hard wired smoke alarms with the exception of Deer Park tower blocks. This block needs to be addressed ASAP in response to recommendations from South Yorkshire Fire and Rescue Service.</p>
+        <p>Hard Wired Smoke Alarms - There is around 10,000 hard wired smoke alarms within the stock. All high risk properties such as sheltered, and towers have hard wired smoke alarms with the exception of Deer Park tower blocks. This block needs to be addressed ASAP in response to recommendations from South Yorkshire Fire and Rescue Service.</p>
 
-          <p>Additionally properties that are rewired always have hard wired alarms installed at the same time as it is part of the rewire specification. Legislation does not currently insist we install hard wired to all dwellings managed by Housing Services, but it may do in near future as there is national lobbying to government by the Fire Service. Hard wired alarms are part of the building regulations for new build. In the meantime, we have battery smoke alarms within the remaining stock which are checked annually by the gas and district heating servicing programmes.</p>
+        <p>Additionally properties that are rewired always have hard wired alarms installed at the same time as it is part of the rewire specification. Legislation does not currently insist we install hard wired to all dwellings managed by Housing Services, but it may do in near future as there is national lobbying to government by the Fire Service. Hard wired alarms are part of the building regulations for new build. In the meantime, we have battery smoke alarms within the remaining stock which are checked annually by the gas and district heating servicing programmes.</p>
 
-          <p>Carbon Monoxide Detectors - There are very few carbon monoxide detectors within the stock as a whole. Once again, the legislation surrounding carbon monoxide detectors does not insist on their use but increasingly there is recommendation for their use in general housing stock. Carbon Monoxide detectors are part of the building regulations for new build. It is recommended that the housing service installs Carbon Monoxide detectors on a risk-based approach at the same time as other electrical improvement work and / or when hard wired smoke alarms are installed. There is no current programme.</p>
+        <p>Carbon Monoxide Detectors - There are very few carbon monoxide detectors within the stock as a whole. Once again, the legislation surrounding carbon monoxide detectors does not insist on their use but increasingly there is recommendation for their use in general housing stock. Carbon Monoxide detectors are part of the building regulations for new build. It is recommended that the housing service installs Carbon Monoxide detectors on a risk-based approach at the same time as other electrical improvement work and / or when hard wired smoke alarms are installed. There is no current programme.</p>
 
-          <p>Replacing bathroom light fittings which are difficult to access – since the new requirement for bathroom light fittings were introduced approx.10 to 12 years ago tenants have had difficulty removing the cover and changing the light bulbs. Some of the fittings are particularly difficult to access. This programme will identify these fittings and replace with a more suitable unit. The unit will be LED.</p>
+        <p>Replacing bathroom light fittings which are difficult to access – since the new requirement for bathroom light fittings were introduced approx.10 to 12 years ago tenants have had difficulty removing the cover and changing the light bulbs. Some of the fittings are particularly difficult to access. This programme will identify these fittings and replace with a more suitable unit. The unit will be LED.</p>
 
-          <p>External Lighting – A report from Birmingham University presented to the Burglary Theme Group in 2014 provided evidence that external lighting can reduce the incidence of burglary and is the most effective of all the crime reduction measures that can be applied to a home including burglar alarms. Including this work as part of an upgrade project will present tenants with a safer environment in which to live.</p>
-        </div>
-      </details>
-    </div>
-  </details>
+        <p>External Lighting – A report from Birmingham University presented to the Burglary Theme Group in 2014 provided evidence that external lighting can reduce the incidence of burglary and is the most effective of all the crime reduction measures that can be applied to a home including burglar alarms. Including this work as part of an upgrade project will present tenants with a safer environment in which to live.</p>
+      </div>
+    </details>
+  </div>
+</details>
+
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
@@ -1441,7 +1437,7 @@ const tenantsOwnImprovements = new ContentH(
   `
     <details class="accordion">
   <summary class="accordion-header">
-    <h3>Tenants Own Improvements</h3>
+    <h3>What we will pay compensation for?</h3>
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
