@@ -928,32 +928,26 @@ const emergencyRepairs = new ContentH(
   "Emergency Repairs",
   "",
   `
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Emergency Repairs</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <details class="details-accordion">
-          <summary>Gas Leak</summary>
-          <div class="details-accordion-content">
-            <p>If you smell gas or are worried about gas safety, call National Grid on 0800 111 999 at any time, day or night.</p> 
+  <h3>Gas Leak</h3>
+  <p>
+    If you smell gas or are worried about gas safety, call National Grid on 0800 111 999 at any time, day or night.
+  </p> 
 
-            <h3>Contact Equipment and Adaptations Teams</h3> 
-            <p>Please contact the Equipment and Adaptations number.</p> 
+  <h3>Contact Equipment and Adaptations Teams</h3> 
+  <p>
+    Please contact the Equipment and Adaptations number.
+    </p> 
 
-            <h3>Out of Hours Emergency Contacts</h3> 
-            <p>If you have an emergency outside normal working hours, at weekends, or Bank Holidays, please phone:</p> 
+  <h3>Out of Hours Emergency Contacts</h3> 
+  <p>
+    If you have an emergency outside normal working hours, at weekends, or Bank Holidays, please phone:
+  </p> 
 
-            <ul>
-              <li><a href="tel:0114 2735555">0114 2735555</a> (after 8pm) for burst pipes, boarding up doors and windows, no electricity supply, and all heating breakdowns. This number will divert to Out of Hours Repairs service.</li> 
-              <li><a href="tel:0800 111999">0800 111999</a> for gas leaks.</li> 
-              <li><a href="tel:0114 2737693">0114 2737693</a> for lift breakdowns.</li> 
-            </ul>
-          </div>
-        </details>
-      </div>
-    </details>
+  <ul>
+    <li><a href="tel:0114 2735555">0114 2735555</a> (after 8pm) for burst pipes, boarding up doors and windows, no electricity supply, and all heating breakdowns. This number will divert to Out of Hours Repairs service.</li> 
+    <li><a href="tel:0800 111999">0800 111999</a> for gas leaks.</li> 
+    <li><a href="tel:0114 2737693">0114 2737693</a> for lift breakdowns.</li> 
+  </ul>
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
