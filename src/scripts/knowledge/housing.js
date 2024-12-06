@@ -890,7 +890,7 @@ const emergencyRepairs = new ContentH(
   `
   <h3>Gas Leak</h3>
   <p>
-    If you smell gas or are worried about gas safety, call National Grid on 0800 111 999 at any time, day or night.
+    If you smell gas or are worried about gas safety, call National Grid on <a href="tel:0800 111999">0800 111999</a>  at any time, day or night.
   </p> 
 
   <h3>Contact Equipment and Adaptations Teams</h3> 
