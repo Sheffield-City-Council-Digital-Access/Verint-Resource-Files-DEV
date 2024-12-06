@@ -592,48 +592,28 @@ const communalAreas = new ContentH(
   "Communal Areas",
   "",
   `
-<details class="accordion">
-  <summary class="accordion-header">
-    <h3>Blocked Bin Chutes</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
+  <h3>Blocked Bin Chutes</h3>
+  <p>
       Bin chutes in Council flats or maisonettes may become blocked and will be unblocked upon request.<br>
       Check the 
       <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx" target="_blank">blocked bin chutes list</a>
     </p>
-  </div>
-</details>
 
-<details class="accordion">
-  <summary class="accordion-header">
     <h3>Fences</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <details class="details-accordion">
-      <summary>New Fence</summary>
-      <div class="details-accordion-content">
-        <p>Installation of fences is the tenant's responsibility. The customer will need to have permission to install a new fence. See "Permissions" section.</p>
-      </div>
-    </details>
+    <h4>New Fence</h4>
+    <p>
+      Installation of fences is the tenant's responsibility. The customer will need to have permission to install a new fence. See "Permissions" section.
+    </p>
 
-    <details class="details-accordion">
-      <summary>Repair to an Existing Fence</summary>
-      <div class="details-accordion-content">
-        <p>The Council does not repair tenants' fences. It is the tenant's responsibility.</p>
-      </div>
-    </details>
+    <h4>Repair to an Existing Fence</h4>
+    <p>
+      The Council does not repair tenants' fences. It is the tenant's responsibility.
+    </p>
 
-    <details class="details-accordion">
-      <summary>Fallen Fence to be Removed</summary>
-      <div class="details-accordion-content">
-        <p>Estate Services teams will only remove blown down fences if they are a safety hazard.</p>
-      </div>
-    </details>
-  </div>
-</details>
+    <h4>Fallen Fence to be Removed</h4>
+    <p>
+      Estate Services teams will only remove blown down fences if they are a safety hazard.
+    </p>
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
