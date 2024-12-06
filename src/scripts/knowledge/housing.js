@@ -547,25 +547,15 @@ const communalAerials = new ContentH(
   "Communal Aerials",
   "",
   `
-<details class="accordion">
-  <summary class="accordion-header">
-    <h3>Communal Aerials List</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p><a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Communal%20Aerials.aspx" target="_blank">Communal Aerials List</a></p>
-  </div>
-</details>
+  <h3>Communal Aerials List</h3>
+  <p>
+    <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Communal%20Aerials.aspx" target="_blank">Communal Aerials List</a>
+  </p>
 
-<details class="accordion">
-  <summary class="accordion-header">
-    <h3>Customers Own Aerial</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>This is not a Council Housing Service aerial. We do not offer a maintenance service for customer’s own aerials.</p>
-  </div>
-</details>
+  <h3>Customers Own Aerial</h3>
+  <p>
+    This is not a Council Housing Service aerial. We do not offer a maintenance service for customer’s own aerials.
+  </p>
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
