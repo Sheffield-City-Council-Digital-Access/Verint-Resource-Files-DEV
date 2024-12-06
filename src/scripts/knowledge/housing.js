@@ -709,58 +709,36 @@ const districtHeating = new ContentH(
   "District Heating",
   "",
   `
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>District Heating</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        
-        <details class="details-accordion">
-            <summary> A Usage Charge - 3.04 pence per Kwh </summary>
-            <div class="details-accordion-content">
-                <p>This is for the heat and hot water used within the property.</p>
-            </div>
-        </details>
+  <h3>A Usage Charge - 3.04 pence per Kwh</h3>
+  <p>
+    This is for the heat and hot water used within the property.
+  </p>
 
-        <details class="details-accordion">
-            <summary> A weekly Standing Charge - £4.80 per week </summary>
-            <div class="details-accordion-content">
-                <p>£4.80 per week from 1/4/2021 (previously £4.20 per week)</p>
-                <p>Tenants pay the Standing Charge via their rent account.</p>
-            </div>
-        </details>
+  <h3>A weekly Standing Charge - £4.80 per week</h3>
+  <p>
+    £4.80 per week from 1/4/2021 (previously £4.20 per week)
+    Tenants pay the Standing Charge via their rent account.
+  </p>
 
-        <details class="details-accordion">
-            <summary> District Heating (heat and hot water) </summary>
-            <div class="details-accordion-content">
-                <p>Replacing your current weekly district heating heat and hot water charge of £11.81 per week</p>
-            </div>
-        </details>
+  <h3>District Heating (heat and hot water)</h3>
+  <p>
+    Replacing your current weekly district heating heat and hot water charge of £11.81 per week
+  </p>
 
-        <details class="details-accordion">
-            <summary> Unmetered Heating Surcharge: £7.00 </summary>
-            <div class="details-accordion-content">
-                <p>The current weekly Unmetered District Heating Surcharge will remain the same (£7.00 per week).</p>
-            </div>
-        </details>
+  <h3>Unmetered Heating Surcharge: £7.00</h3>
+  <p>
+    The current weekly Unmetered District Heating Surcharge will remain the same (£7.00 per week).
+  </p>
 
-        <details class="details-accordion">
-            <summary> District Heating Unmetered Hot Water - £1.38 </summary>
-            <div class="details-accordion-content">
-                <p>Replacing your current weekly District Heating Unmetered Hot Water charge of 69p per week.</p>
-            </div>
-        </details>
+  <h3>District Heating Unmetered Hot Water - £1.38</h3>
+  <p>
+    Replacing your current weekly District Heating Unmetered Hot Water charge of 69p per week.
+  </p>
 
-        <details class="details-accordion">
-            <summary> Sheltered Service Charge: £11.03 </summary>
-            <div class="details-accordion-content">
-                <p>Replacing your current weekly Sheltered Service charge of £10.38 per week (a 65p increase per week towards Communal Area Heating).</p>
-            </div>
-        </details>
-        
-    </div>
-</details>
+  <h3>Sheltered Service Charge: £11.03</h3>
+  <p>
+    Replacing your current weekly Sheltered Service charge of £10.38 per week (a 65p increase per week towards Communal Area Heating).
+  </p>
   `,
   {
     buttonLabel: "Report Housing Enquiry ",
