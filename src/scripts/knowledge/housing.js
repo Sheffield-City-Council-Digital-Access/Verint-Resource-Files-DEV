@@ -244,208 +244,216 @@ const asbestos = new ContentH(
   "Asbestos",
   "",
   `
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Frequently Asked Questions</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        
-        <details class="details-accordion">
-          <summary>What is asbestos?</summary>
-          <div class="details-accordion-content">
-            <p>Asbestos is the name given to a group of fibrous minerals which evolve naturally in the earth; 
-            these are found in many parts of the world.</p> 
-          </div>
-        </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>What is asbestos?</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>Asbestos is the name given to a group of fibrous minerals which evolve naturally in the earth; these are found in many parts of the world.</p>
+  </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>Why was asbestos used in the past?</summary>
-          <div class="details-accordion-content">
-            <p>Asbestos fibres are strong, durable, resistant to heat and chemicals and provide thermal insulation; 
-            these properties are what led to its widespread use in the construction industry prior to the mid-1980s. 
-            It was also used in vehicles, domestic goods, and industrial items.</p> 
-          </div>
-        </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Why was asbestos used in the past?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Asbestos fibres are strong, durable, resistant to heat and chemicals and provide thermal insulation; these properties are what led to its widespread use in the construction industry prior to the mid-1980s. It was also used in vehicles, domestic goods, and industrial items.</p>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>Where is asbestos likely to be found?</summary>
-          <div class="details-accordion-content">
-            <p>Asbestos is most likely to be found in buildings constructed before the mid-1980s. Typical places inside your home where asbestos may be found are:</p> 
-            <ul>
-              <li>Artex / textured coatings</li>
-              <li>Floor tiles and Linoleum products</li>
-              <li>Pipe boxing</li>
-              <li>Bath panels</li>
-              <li>Fire / Heater panels</li>
-              <li>Service ducting panels</li>
-              <li>Heating and Fuse board cupboards</li>
-              <li>Sink Pad (Bitumen based product)</li>
-              <li>WC Cisterns</li>
-            </ul> 
-            <p>Typical areas outside your home where asbestos may be found are:</p>
-            <ul>
-              <li>Roof tiles</li>
-              <li>Rainwater pipes and gutters</li>
-              <li>Soffits & Fascias</li>
-              <li>Garage / Outbuilding roofs</li>
-            </ul>
-            <p>Asbestos may also be found in some household goods such as oven gloves, ironing boards, fire blankets, etc.</p>
-          </div>
-        </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Where is asbestos likely to be found?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Asbestos is most likely to be found in buildings constructed before the mid-1980s. Typical places inside your home where asbestos may be found are:</p>
+      <ul>
+        <li>Artex / textured coatings</li>
+        <li>Floor tiles and Linoleum products</li>
+        <li>Pipe boxing</li>
+        <li>Bath panels</li>
+        <li>Fire / Heater panels</li>
+        <li>Service ducting panels</li>
+        <li>Heating and Fuse board cupboards</li>
+        <li>Sink Pad (Bitumen based product)</li>
+        <li>WC Cisterns</li>
+      </ul>
+      <p>Typical areas outside your home where asbestos may be found are:</p>
+      <ul>
+        <li>Roof tiles</li>
+        <li>Rainwater pipes and gutters</li>
+        <li>Soffits & Fascias</li>
+        <li>Garage / Outbuilding roofs</li>
+      </ul>
+      <p>Asbestos may also be found in some household goods such as oven gloves, ironing boards, fire blankets, etc.</p>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>What does asbestos containing material look like?</summary>
-          <div class="details-accordion-content">
-            <p>It is difficult to tell if something contains asbestos just by looking at it, unless it is labelled. 
-            If in doubt, you should assume that a material contains asbestos until it is confirmed otherwise. 
-            The only way to be absolutely sure is by getting it tested in a laboratory. 
-            However, we do not have to send samples to a laboratory; 
-            we can presume it is asbestos and then take all safety precautions when working on the material by using trained workers 
-            or licensed contractors.</p> 
-          </div>
-        </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What does asbestos containing material look like?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>It is difficult to tell if something contains asbestos just by looking at it, unless it is labelled. If in doubt, you should assume that a material contains asbestos until it is confirmed otherwise. The only way to be absolutely sure is by getting it tested in a laboratory. However, we do not have to send samples to a laboratory; we can presume it is asbestos and then take all safety precautions when working on the material by using trained workers or licensed contractors.</p>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>What should I do if I think there may be asbestos in my home?</summary>
-          <div class="details-accordion-content">
-            <p>You don’t need to do anything unless you suspect the asbestos may have been damaged, 
-            disturbed, or is in poor condition. Generally, if it is in good condition and cannot be easily damaged or disturbed, 
-            it is best to leave it alone, as removal can lead to the release of higher levels of fibres in the air for some time.</p> 
-          </div>
-        </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What should I do if I think there may be asbestos in my home?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>You don’t need to do anything unless you suspect the asbestos may have been damaged, disturbed, or is in poor condition. Generally, if it is in good condition and cannot be easily damaged or disturbed, it is best to leave it alone, as removal can lead to the release of higher levels of fibres in the air for some time.</p>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>What should I do if I accidentally damage or disturb it?</summary>
-          <div class="details-accordion-content">
-            <p>If you discover or damage asbestos-containing material (ACM), exit the room, ensuring no one else enters. 
-            Do not attempt to repair the damage or clear up any debris using a brush or domestic vacuum cleaner, 
-            as this will release fibres into the air.</p> 
-          </div>
-        </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What should I do if I accidentally damage or disturb it?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>If you discover or damage asbestos-containing material (ACM), exit the room, ensuring no one else enters. Do not attempt to repair the damage or clear up any debris using a brush or domestic vacuum cleaner, as this will release fibres into the air.</p>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>What is the Council Housing Service doing to manage asbestos?</summary>
-          <div class="details-accordion-content">
-            <p>We are carrying out asbestos surveys to all our properties and recording all the information. 
-            This includes the type of asbestos found, the location and condition, and any recommended actions (i.e., to remove the asbestos-containing material or to leave it in place and manage it). 
-            Where asbestos is identified as requiring removal, we will use specialist contractors to carry out this work. As part of this survey, 
-            we also record where no asbestos is found.</p> 
-          </div>
-        </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What is the Council Housing Service doing to manage asbestos?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>We are carrying out asbestos surveys to all our properties and recording all the information. This includes the type of asbestos found, the location and condition, and any recommended actions (i.e., to remove the asbestos-containing material or to leave it in place and manage it). Where asbestos is identified as requiring removal, we will use specialist contractors to carry out this work. As part of this survey, we also record where no asbestos is found.</p>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>Will you remove asbestos if found in my property?</summary>
-          <div class="details-accordion-content">
-            <p>We will only remove asbestos from your home if it is found to be in poor condition or damaged, 
-            as it is generally best practice to leave it in place and manage it if it is in good condition. 
-            Removal creates a greater risk of releasing fibres into the air and possible exposure.</p> 
-          </div>
-        </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Will you remove asbestos if found in my property?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>We will only remove asbestos from your home if it is found to be in poor condition or damaged, as it is generally best practice to leave it in place and manage it if it is in good condition. Removal creates a greater risk of releasing fibres into the air and possible exposure.</p>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>Why do I need an asbestos survey?</summary>
-          <div class="details-accordion-content">
-            <p>We need to carry out a survey to identify any asbestos-containing materials within your home, 
-            as we have a legal duty to provide this information to the contractors we use to carry out repairs or modernization works.
-            The survey also helps us keep accurate records of where asbestos is located in your home.</p> 
-          </div>
-        </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Why do I need an asbestos survey?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>We need to carry out a survey to identify any asbestos-containing materials within your home, as we have a legal duty to provide this information to the contractors we use to carry out repairs or modernization works. The survey also helps us keep accurate records of where asbestos is located in your home.</p>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>When will a survey be carried out on my home?</summary>
-          <div class="details-accordion-content">
-            <p>The Council Housing Service has been conducting asbestos surveys on our properties as part of a rolling program since 2004. 
-            Your home may have already been surveyed, but if not, it will be programmed in the near future.</p> 
-          </div>
-        </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>When will a survey be carried out on my home?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The Council Housing Service has been conducting asbestos surveys on our properties as part of a rolling program since 2004. Your home may have already been surveyed, but if not, it will be programmed in the near future.</p>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>Who will carry out the survey?</summary>
-          <div class="details-accordion-content">
-            <p>The Council Housing Service works with survey contractors called Tersus. 
-            For asbestos removal, we work with contractors called Rilmac and E4 Environmental.</p> 
-          </div>
-        </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Who will carry out the survey?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The Council Housing Service works with survey contractors called Tersus. For asbestos removal, we work with contractors called Rilmac and E4 Environmental.</p>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>How do I get a copy of my survey?</summary>
-          <div class="details-accordion-content">
-            <p>Where a survey has been carried out, the Council Housing Service will send copies to tenants.
-            If you need a report sooner, you may request a copy at your local Area Housing Office or First Point.
-            We are also working towards making the reports accessible on the Council Housing Service website in the near future.</p> 
-          </div>
-        </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How do I get a copy of my survey?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Where a survey has been carried out, the Council Housing Service will send copies to tenants. If you need a report sooner, you may request a copy at your local Area Housing Office or First Point. We are also working towards making the reports accessible on the Council Housing Service website in the near future.</p>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>What should I do if I want to carry out works to my property?</summary>
-          <div class="details-accordion-content">
-            <p>If you are planning home improvements (with permission) and think you may have asbestos in your home, 
-            we can check our records and tell you if any asbestos is present or arrange for a survey to be carried out.</p> 
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What should I do if I want to carry out works to my property?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>If you are planning home improvements (with permission) and think you may have asbestos in your home, we can check our records and tell you if any asbestos is present or arrange for a survey to be carried out.</p>
 
-            <h2>General things to remember before carrying out DIY:</h2>
+      <h2>General things to remember before carrying out DIY:</h2>
 
-            <ul>
-              <li>Do not drill, saw, scrub, or sand anything you think may contain asbestos.</li>
-              <li>Keep activities to a minimum in areas where material may contain asbestos.</li>
-              <li>Do not dust, sweep, or vacuum debris that may contain asbestos.</li>
-              <li>Take every precaution to avoid damaging asbestos material or asbestos-containing products.</li>
-              <li>Always wear a protective face mask if you are doing any DIY work.</li>
-              <li>Soak wallpaper before removing it; if possible, use a steam stripper and gently peel away the paper before re-decorating.</li>
-              <li>Don’t try to remove old floor tiles or linoleum. Leave them in place and lay new floor coverings over them.</li>
-            </ul>
-          </div>
-        </details>
+      <ul>
+        <li>Do not drill, saw, scrub, or sand anything you think may contain asbestos.</li>
+        <li>Keep activities to a minimum in areas where material may contain asbestos.</li>
+        <li>Do not dust, sweep, or vacuum debris that may contain asbestos.</li>
+        <li>Take every precaution to avoid damaging asbestos material or asbestos-containing products.</li>
+        <li>Always wear a protective face mask if you are doing any DIY work.</li>
+        <li>Soak wallpaper before removing it; if possible, use a steam stripper and gently peel away the paper before re-decorating.</li>
+        <li>Don’t try to remove old floor tiles or linoleum. Leave them in place and lay new floor coverings over them.</li>
+      </ul>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>Am I at risk?</summary>
-          <div class="details-accordion-content">
-            <p>Asbestos is only a risk to health if the fibres become airborne and are breathed into the lungs. 
-            The fibres breathed in could lead to asbestos-related diseases. 
-            Although the body’s natural defences can break some of these particles down, others may stay in the lungs for a long time. 
-            Asbestos-containing products in good condition do not represent a significant risk unless they are damaged or 
-            abraded and should be left undisturbed.</p> 
-          </div>
-        </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Am I at risk?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Asbestos is only a risk to health if the fibres become airborne and are breathed into the lungs. The fibres breathed in could lead to asbestos-related diseases. Although the body’s natural defences can break some of these particles down, others may stay in the lungs for a long time. Asbestos-containing products in good condition do not represent a significant risk unless they are damaged or abraded and should be left undisturbed.</p>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>What should I do if I think I have been exposed to asbestos?</summary>
-          <div class="details-accordion-content">
-            <p>If you think you may have been exposed, you may wish to discuss your concerns with your doctor.</p> 
-          </div>
-        </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What should I do if I think I have been exposed to asbestos?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>If you think you may have been exposed, you may wish to discuss your concerns with your doctor.</p>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>Asbestos Resurveying Programme</summary>
-          <div class="details-accordion-content">
-            <p>The Asbestos Resurveying Programme is ongoing and may be for any of the following reasons:</p>
-            <ul>
-              <li>Surveys carried out pre-2010 have presumed asbestos items, and we now need to know whether asbestos is present or not.</li>
-              <li>Contractors have removed asbestos as part of Decent Homes and provided feedback.</li>
-              <li>Contractors are asking for more detailed surveys to carry out more intrusive work.</li>
-              <li>There is no survey for that property.</li>
-            </ul>
-            <p>Prior to surveying, tenants will be contacted by letter, phone call, or text. 
-            The letter explains that Tersus Consultancy is our appointed contractor.</p> 
-          </div>
-        </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Asbestos Resurveying Programme</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The Asbestos Resurveying Programme is ongoing and may be for any of the following reasons:</p>
+      <ul>
+        <li>Surveys carried out pre-2010 have presumed asbestos items, and we now need to know whether asbestos is present or not.</li>
+        <li>Contractors have removed asbestos as part of Decent Homes and provided feedback.</li>
+        <li>Contractors are asking for more detailed surveys to carry out more intrusive work.</li>
+        <li>There is no survey for that property.</li>
+      </ul>
+      <p>Prior to surveying, tenants will be contacted by letter, phone call, or text. The letter explains that Tersus Consultancy is our appointed contractor.</p>
+    </div>
+  </details>
 
-        <details class="details-accordion">
-          <summary>Asbestos Removal Programme</summary>
-          <div class="details-accordion-content">
-            <p>The Asbestos Removal Programme is a 3-year programme and covers approximately 800 properties. 
-            The removal is mainly linked to district heating pipes that are not easily accessible due to asbestos panels. 
-            All affected properties will receive letters in batches of up to 20 per month.</p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Asbestos Removal Programme</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The Asbestos Removal Programme is a 3-year programme and covers approximately 800 properties. The removal is mainly linked to district heating pipes that are not easily accessible due to asbestos panels. All affected properties will receive letters in batches of up to 20 per month.</p>
+      <p>Prior to work commencing, all properties will be surveyed by the contractor to reconfirm what will be removed. Please note, work may require the tenant to vacate the property on the day of removal.</p>
+      <p>Letters will start going out to customers from August 2017, with further letters going out in the following months. The letter explains that Rilmac Insulation has been appointed as a contractor and will be contacting customers soon.</p>
+    </div>
+  </details>
 
-            <p>Prior to work commencing, all properties will be surveyed by the contractor to reconfirm what will be removed. 
-            Please note, work may require the tenant to vacate the property on the day of removal.</p> 
-
-            <p>Letters will start going out to customers from August 2017, with further letters going out in the following months. 
-            The letter explains that Rilmac Insulation has been appointed as a contractor and will be contacting customers soon.</p> 
-          </div>
-        </details>
-      </div>
-    </details>
   `,
   {
     buttonLabel: "Report Housing Enquiry",
@@ -472,55 +480,36 @@ const carbonmonoxide = new ContentH(
   "Carbon Monoxide/ What is CO Poisoning",
   "",
   `
-<details class="accordion">
-  <summary class="accordion-header">
-    <h3>Carbon Monoxide</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <details class="details-accordion">
-      <summary>What is CO Poisoning?</summary>
-      <div class="details-accordion-content">
-        <p>
-          Unsafe gas appliances can produce a highly poisonous gas called carbon monoxide (CO). 
-          It can cause death as well as serious long-term health problems such as brain damage. 
-          CO is produced by the incomplete burning of natural gas or liquefied petroleum gas (LPG). 
-          This happens when a gas appliance has been incorrectly fitted, badly repaired, or poorly maintained. 
-          It can also occur if flues, chimneys, or vents are blocked. Oil and solid fuels such as coal, wood, petrol, 
-          and oil can also produce carbon monoxide.
-        </p>
-      </div>
-    </details>
+  <h3>What is CO Poisoning?</h3>
+  <p>
+    Unsafe gas appliances can produce a highly poisonous gas called carbon monoxide (CO). 
+    It can cause death as well as serious long-term health problems such as brain damage. 
+    CO is produced by the incomplete burning of natural gas or liquefied petroleum gas (LPG). 
+    This happens when a gas appliance has been incorrectly fitted, badly repaired, or poorly maintained. 
+    It can also occur if flues, chimneys, or vents are blocked. Oil and solid fuels such as coal, wood, petrol, 
+    and oil can also produce carbon monoxide.
+  </p>
 
-    <details class="details-accordion">
-      <summary>Remember the Six Main Symptoms to Look Out For?</summary>
-      <div class="details-accordion-content">
-        <ul>
-          <li>Headaches</li>
-          <li>Dizziness</li>
-          <li>Nausea</li>
-          <li>Breathlessness</li>
-          <li>Collapse</li>
-          <li>Loss of consciousness</li>
-        </ul>
-      </div>
-    </details>
+  <h3>Remember the Six Main Symptoms to Look Out For</h3>
+  <ul>
+    <li>Headaches</li>
+    <li>Dizziness</li>
+    <li>Nausea</li>
+    <li>Breathlessness</li>
+    <li>Collapse</li>
+    <li>Loss of consciousness</li>
+  </ul>
 
-    <details class="details-accordion">
-      <summary>What to Do if You Suspect CO Poisoning</summary>
-      <div class="details-accordion-content">
-        <p>
-          Get fresh air immediately. Open doors and windows, turn off gas appliances and leave the house. 
-          See your doctor immediately or go to the hospital - let them know that you suspect CO poisoning. 
-          They can do a blood or breath test to check.
-        </p>
-        <p>
-          If you think there is an immediate danger, call the Gas Emergency Helpline on 0800 111 999.
-        </p>
-      </div>
-    </details>
-  </div>
-</details>
+  <h3>What to Do if You Suspect CO Poisoning?</h3>
+  <p>
+    Get fresh air immediately. Open doors and windows, turn off gas appliances and leave the house. 
+    See your doctor immediately or go to the hospital - let them know that you suspect CO poisoning. 
+    They can do a blood or breath test to check.
+  </p>
+  <p>
+    If you think there is an immediate danger, call the Gas Emergency Helpline on <a href="tel:0800 111999">0800 111999</a>.
+  </p>
+
 `,
   {
     buttonLabel: "Report Housing Enquiry",
