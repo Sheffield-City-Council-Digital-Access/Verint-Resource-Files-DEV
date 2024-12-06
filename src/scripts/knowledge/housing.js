@@ -1178,10 +1178,11 @@ const payment = new ContentH(
   "Payment",
   "",
   `
-
-<p> New tenants will initially be issued with a Pay As You Go card, however they will be supplied with a 
-Budget Plan Direct Debit mandate in their new tenancy welcome information pack
-and in addition a copy of the Budget Plan information and Direct Debit mandate will be posted separately</p>
+<p> 
+  New tenants will initially be issued with a Pay As You Go card, however they will be supplied with a 
+  Budget Plan Direct Debit mandate in their new tenancy welcome information pack and in addition a copy 
+  of the Budget Plan information and Direct Debit mandate will be posted separately.
+</p>
 
 <details class="accordion">
   <summary class="accordion-header">
@@ -1189,67 +1190,73 @@ and in addition a copy of the Budget Plan information and Direct Debit mandate w
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    
-    <details class="details-accordion">
-      <summary>  Pay As You Go </summary>
-      <div class="details-accordion-content">
-        <p>New tenants will initially be issued with a Pay As You Go card, however they will be supplied with a 
-        Budget Plan Direct Debit mandate in their new tenancy welcome information pack and 
-        in addition a copy of the Budget Plan information and Direct Debit mandate will be posted separately</p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>  Budget Plan Scheme </summary>
-      <div class="details-accordion-content">
-        <p>This is a prepayment method which allows the customer to pay for heating by making set monthly Direct Debit instalments 
-        based on anticipated usage. Monthly instalments would then be periodically adjusted to reflect the actual heat 
-        and hot water used in the property. 
-        Please call Home Ownership and Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a></p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>  Methods of Payment </summary>
-      <div class="details-accordion-content">
-        <p>New tenants will initially be issued with Pay As You Go information/number, 
-        however they will be supplied with a Budget Plan Direct Debit mandate in their new tenancy welcome information pack and 
-        in addition a copy of the Budget Plan information and Direct Debit mandate will be posted separately. 
-        If the customer wishes to amend the method by which they pay for the heat they use, 
-        please call Home Ownership and Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a></p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Replace Pay as you go Card</summary>
-      <div class="details-accordion-content">
-        <p>The customer must call Switch 2 on <a href="tel:0114 2735595">0333 3212010</a>.</p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>  No Credit </summary>
-      <div class="details-accordion-content">
-        <p>The meter has an emergency credit facility. 
-        This allows the customer to ‘borrow’ credit up to £10.00 which will reconnect the heat and hot water supply. 
-        This is simply a loan and must be paid back in full before the system can be used again. 
-        The emergency credit facility becomes available when the meters credit value reaches £1.00 or less. 
-        To activate, press the blue button marked. 
-        If the customer has used all the emergency credit and is still unable to afford to top-up, 
-        please call the Home Ownership and Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a>.</p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>  Money Saving Advice </summary>
-      <div class="details-accordion-content">
-        <p>Please call Home Ownership and Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a>.</p>
-      </div>
-    </details>
-
+    <p>
+      New tenants will initially be issued with a Pay As You Go card, however they will be supplied with a 
+      Budget Plan Direct Debit mandate in their new tenancy welcome information pack and in addition a copy 
+      of the Budget Plan information and Direct Debit mandate will be posted separately.
+    </p>
   </div>
 </details>
 
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Budget Plan Scheme</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      This is a prepayment method which allows the customer to pay for heating by making set monthly Direct 
+      Debit instalments based on anticipated usage. Monthly instalments would then be periodically adjusted 
+      to reflect the actual heat and hot water used in the property. Please call Home Ownership and Revenues 
+      Unit on <a href="tel:0114 2735595">0114 2735595</a>
+    </p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Methods of Payment</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      New tenants will initially be issued with Pay As You Go information/number, however they will be supplied 
+      with a Budget Plan Direct Debit mandate in their new tenancy welcome information pack and in addition a 
+      copy of the Budget Plan information and Direct Debit mandate will be posted separately. If the customer 
+      wishes to amend the method by which they pay for the heat they use, please call Home Ownership and Revenues 
+      Unit on <a href="tel:0114 2735595">0114 2735595</a>
+    </p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Replace Pay as you go Card</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      The meter has an emergency credit facility. This allows the customer to ‘borrow’ credit up to £10.00 
+      which will reconnect the heat and hot water supply. This is simply a loan and must be paid back in full 
+      before the system can be used again. The emergency credit facility becomes available when the meters 
+      credit value reaches £1.00 or less. To activate, press the blue button marked. If the customer has used 
+      all the emergency credit and is still unable to afford to top-up, please call the Home Ownership and 
+      Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a>.
+    </p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Money Saving Advice</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      Please call Home Ownership and Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a>
+    </p>
+  </div>
+</details>
 `,
   {
     buttonLabel: "Report Housing Enquiry ",
