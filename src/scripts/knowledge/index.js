@@ -1318,23 +1318,28 @@ function handleOnReadyKnowledge() {
 
       if (searchQuery) {
         noResultsMessage.innerHTML = `
-          <h3>No results found</h3>
-          <p>Sorry, we couldn't find any results for <strong>"${searchQuery}"</strong>.</p>
-          <p>Here are a few suggestions:</p>
-          <ul>
-            <li>Check your spelling and try again.</li>
-            <li>Try using more general keywords.</li>
-            <li>Consider using different words or phrases.</li>
-          </ul>
-          <p>
-            If you're still having trouble, 
-            <a href="https://sheffieldcc-it.uk.4me.com/self-service/requests/new/provide_description?template_id=681s" target="_blank">contact us</a>
-            for assistance.
-          </p>
+          <section class="info-panel" role="region" aria-label="Information panel">
+            <h3>No results found</h3>
+            <p>Sorry, we couldn't find any results for <strong>"${searchQuery}"</strong>.</p>
+            <p>Here are a few suggestions:</p>
+            <ul>
+              <li>Check your spelling and try again.</li>
+              <li>Try using more general keywords.</li>
+              <li>Consider using different words or phrases.</li>
+            </ul>
+            <p>
+              If you're still having trouble, 
+              <a href="https://sheffieldcc-it.uk.4me.com/self-service/requests/new/provide_description?template_id=681s" target="_blank">contact us</a>
+              for assistance.
+            </p>
+          </section>
         `;
       } else {
         noResultsMessage.innerHTML = `
-          <h3>No search value entered</h3>
+          <section class="alert-panel--ineligible" role="alert" aria-label="Alert panel">
+            <h3>No search value entered</h3>
+            <p>Enter the information you want to search for.</p>
+          </section>
         `;
       }
 
