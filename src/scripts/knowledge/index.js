@@ -1353,6 +1353,9 @@ function handleOnReadyKnowledge() {
       }
 
       const title = document.createElement("h3");
+      if (result.constructor.name.startsWith("Form")) {
+        title.classList.add("form-redirect-icon");
+      }
       title.textContent = result.title || result.name;
       const description = document.createElement("div");
       description.innerHTML = result.description;

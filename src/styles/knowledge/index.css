@@ -208,9 +208,6 @@ small {
   margin-left: 1rem;
 }
 
-.form-redirect-icon {
-}
-
 .form-redirect-icon:after {
   content: "\e91c";
   display: inline-block;
