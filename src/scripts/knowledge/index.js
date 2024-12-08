@@ -126,6 +126,10 @@ function createCards(data, container, parent = null) {
 
     const cardTitle = document.createElement("h3");
     cardTitle.classList.add("card-title");
+    if (item.constructor.name.startsWith("Form")) {
+      console.log("form item:", item);
+      cardTitle.classList.add("form-redirect-icon");
+    }
     cardTitle.textContent = item.name;
 
     const cardText = document.createElement("p");
