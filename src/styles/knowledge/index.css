@@ -194,7 +194,8 @@ small {
   margin-left: 1rem;
 }
 
-.search-card:hover .form-redirect-icon:after {
+.search-card:hover .form-redirect-icon:after,
+.card:hover .form-redirect-icon:after {
   color: var(--color-primary);
 }
 

@@ -115,6 +115,7 @@ function createCards(data, container, parent = null) {
     .sort((a, b) => a.name.localeCompare(b.name));
 
   sortedData.forEach((item) => {
+    console.log("item:", item);
     const card = document.createElement("div");
     card.classList.add("card");
     card.setAttribute("data-id", item.id);
