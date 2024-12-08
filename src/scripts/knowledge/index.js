@@ -1677,6 +1677,7 @@ function handleOnReadyKnowledge() {
               card.setAttribute("tabindex", "0");
 
               const title = document.createElement("h3");
+              title.classList.add("form-redirect-icon");
               title.textContent = subject.name;
 
               const description = document.createElement("div");

@@ -118,7 +118,9 @@
 .icon-instagram:before,
 .icon-instagram-after:after,
 .icon-mail:before,
-.icon-mail-after:after {
+.icon-mail-after:after,
+.icon-redirect:before,
+.icon-redirect-after:after {
   display: inline-block;
   font-family: var(--font-icon);
   speak: none;
@@ -163,6 +165,11 @@
 .icon-mail:before,
 .icon-mail-after:after {
   content: "\e919";
+}
+
+.icon-redirect:before,
+.icon-redirect-after:after {
+    content: "\e91c";
 }
 
 .info {

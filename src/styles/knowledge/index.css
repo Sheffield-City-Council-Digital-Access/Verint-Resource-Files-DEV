@@ -175,6 +175,29 @@ small {
   list-style: none;
 }
 
+.form-redirect-icon:after {
+  content: "\e91c";
+  display: inline-block;
+  font-family: var(--font-icon);
+  speak: none;
+  font-style: normal;
+  font-size: var(--font-size-p1);
+  line-height: var(--font-height-p1);
+  font-weight: var(--font-weight-regular);
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.search-card:hover .form-redirect-icon:after {
+  color: var(--color-primary);
+}
+
 /* ----- NAVIGATION MENU ---------------------------------------------------- */
 
 #main-nav {
