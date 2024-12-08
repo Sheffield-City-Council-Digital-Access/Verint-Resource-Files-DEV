@@ -1343,7 +1343,7 @@ function handleOnReadyKnowledge() {
       return;
     }
 
-    results.forEach((result, index) => {
+    results.forEach((result) => {
       const card = document.createElement("div");
       card.classList.add("search-card");
       card.setAttribute("tabindex", "0");
