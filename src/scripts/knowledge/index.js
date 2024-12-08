@@ -115,7 +115,6 @@ function createCards(data, container, parent = null) {
     .sort((a, b) => a.name.localeCompare(b.name));
 
   sortedData.forEach((item) => {
-    console.log("item:", item);
     const card = document.createElement("div");
     card.classList.add("card");
     card.setAttribute("data-id", item.id);
@@ -127,7 +126,6 @@ function createCards(data, container, parent = null) {
     const cardTitle = document.createElement("h3");
     cardTitle.classList.add("card-title");
     if (item.constructor.name.startsWith("Form")) {
-      console.log("form item:", item);
       cardTitle.classList.add("form-redirect-icon");
     }
     cardTitle.textContent = item.name;
@@ -248,7 +246,6 @@ function redirectToContentPage(item) {
   }
 
   const { service, subject, topic } = hierarchy;
-  console.log("hierarchy", hierarchy);
 
   // Select breadcrumb elements by their unique IDs
   const serviceBreadcrumbContent = document.getElementById(
@@ -818,7 +815,6 @@ function handleOnReadyKnowledge() {
       const service = knowledge.find((service) => service.name === label);
 
       if (service) {
-        console.log("subjectMenuButtons", service);
         createCards(service.subjects, subjectMenuContainer, service);
         KDF.gotoPage("page_subject_menu", true, true, true);
       }
@@ -835,7 +831,6 @@ function handleOnReadyKnowledge() {
       });
 
       if (service) {
-        console.log("topicMenuButtons", service);
         createCards(service.subjects, subjectMenuContainer, service);
         const label = button.textContent;
 
@@ -1200,9 +1195,6 @@ function handleOnReadyKnowledge() {
       searchPhrases.push(additionalPhrase);
     }
 
-    console.log(`Search Terms: ${searchTerms}`);
-    console.log(`Search Phrases: ${searchPhrases}`);
-
     const searchableItems = knowledge.flatMap((service) => {
       return service.subjects
         .filter((subject) => {
@@ -1302,8 +1294,6 @@ function handleOnReadyKnowledge() {
 
     const results = combinedItems.sort((a, b) => b.relevance - a.relevance);
 
-    console.log("Search Results:", results);
-
     return results;
   }
 
@@ -1352,6 +1342,7 @@ function handleOnReadyKnowledge() {
         card.classList.add("highlight-news");
       }
 
+      console.log(result);
       const title = document.createElement("h3");
       if (result.constructor.name.startsWith("Form")) {
         title.classList.add("form-redirect-icon");
@@ -1390,7 +1381,6 @@ function handleOnReadyKnowledge() {
    * @param {Object} result - The search result or option item.
    */
   function handleCardClick(result) {
-    console.log(result);
     switch (result.type) {
       case "knowledge":
         // Redirect to the content page for knowledge items
