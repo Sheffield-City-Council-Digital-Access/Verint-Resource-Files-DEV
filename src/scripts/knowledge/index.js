@@ -1342,9 +1342,8 @@ function handleOnReadyKnowledge() {
         card.classList.add("highlight-news");
       }
 
-      console.log(result);
       const title = document.createElement("h3");
-      if (result.constructor.name.startsWith("Form")) {
+      if ((result.type = "form")) {
         title.classList.add("form-redirect-icon");
       }
       title.textContent = result.title || result.name;
