@@ -281,7 +281,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
         request to
         <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">EnvironmentalServicesAdmin@sheffield.gov.uk</a>. 
         We will assess your request and provide you with a quote for the
-        treatment.
+        treatment.  
     </p>
    <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -2848,7 +2848,9 @@ const whatVehiclesWillBeCharged = new ContentPaN(
   <li>Buses and coaches which are below Euro 6 Diesel standards</li>
   <li>Heavy goods vehicles (HGVs) which are below Euro 6 Diesel standards</li>
   </ul>
-  <p>Vehicle owners can check whether they will be charged in Sheffield, and for other Clean Air Zones elsewhere, via the government’s online vehicle checker: Clean Air Zones."</p>
+  <p>
+    Vehicle owners can check whether they will be charged in Sheffield, and for other Clean Air Zones elsewhere, via the government’s online vehicle checker: Clean Air Zones.
+  </p>
   `,
 {
   buttonLabel: "",
