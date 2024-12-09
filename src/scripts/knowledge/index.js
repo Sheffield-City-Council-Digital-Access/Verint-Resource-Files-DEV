@@ -1343,9 +1343,9 @@ function handleOnReadyKnowledge() {
       }
 
       const title = document.createElement("h3");
-      if ((result.type = "form")) {
-        title.classList.add("form-redirect-icon");
-      }
+      // if ((result.type = "form")) {
+      //   title.classList.add("form-redirect-icon");
+      // }
       title.textContent = result.title || result.name;
       const description = document.createElement("div");
       description.innerHTML = result.description;
