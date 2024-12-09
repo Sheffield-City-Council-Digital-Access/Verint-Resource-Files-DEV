@@ -239,7 +239,7 @@ const bedBugTreatment = new ContentPaN(
         </p>
       </div>
     </details>
-    <section class="notice-panel" role="region" aria-label="Notice panel">
+    <section class="info-panel" role="region" aria-label="Information panel">
       <p>
         If your enquiry doesn't fall into any of the above categories, we will need to
         refer your 
@@ -274,23 +274,16 @@ const birdsandPigeonsTreatment = new ContentPaN(
   "Birds and Pigeons Treatment",
   "Information about birds and Pigeon's Treatment",
   `
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Commercial, Health Authority, Industrial and University</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <p>
-          For bird and pigeons treatment enquiries related to Commercial, Health
-          Authority, Industrial, and University properties, please email your
-          request to
-          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">EnvironmentalServicesAdmin@sheffield.gov.uk</a>. 
-          We will assess your request and provide you with a quote for the
-          treatment.
-        </p>
-      </div>
-    </details>
-    <section class="notice-panel" role="region" aria-label="Notice panel">
+  <h3>Commercial, Health Authority, Industrial and University</h3>
+    <p>
+        For bird and pigeons treatment enquiries related to Commercial, Health
+        Authority, Industrial, and University properties, please email your
+        request to
+        <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">EnvironmentalServicesAdmin@sheffield.gov.uk</a>. 
+        We will assess your request and provide you with a quote for the
+        treatment.
+    </p>
+   <section class="info-panel" role="region" aria-label="Information panel">
       <p>
         If your enquiry doesn't fall into any of the above categories, we will need
         to refer your         <a href="${window.location.protocol}//${
@@ -397,7 +390,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
         </p>
       </div>
     </details>
-    <section class="notice-panel" role="region" aria-label="Notice panel">
+    <section class="info-panel" role="region" aria-label="Information panel">
       <p>
         If your enquiry doesn't fall into any of the above categories, we will need to
         refer your 
@@ -486,7 +479,7 @@ const bumbleBeesTreatment = new ContentPaN(
         </p>
       </div>
     </details>
-    <section class="notice-panel" role="region" aria-label="Notice panel">
+    <section class="info-panel" role="region" aria-label="Information panel">
       <p>
         If your enquiry doesn't fall into any of the above categories, we will need to
         refer your 
@@ -600,7 +593,7 @@ const carpetBeetlesTreatment = new ContentPaN(
         </p>
       </div>
     </details>
-    <section class="notice-panel" role="region" aria-label="Notice panel">
+    <section class="info-panel" role="region" aria-label="Information panel">
       <p>
         If your enquiry doesn't fall into any of the above categories, we will need to
         refer your 
@@ -1077,61 +1070,64 @@ const fleasTreatment = new ContentPaN(
       If we attend the property and the officer is unable to complete the treatment,
       the call out charge will be applied.
     </p>
-    <details class="details-accordion">
-      <summary>Do I need to provide a sample?</summary>
-      <div class="details-accordion-content">
-        <p>
-          Normally, we don't require a sample of fleas before scheduling a
-          treatment, as they are small, elusive, and difficult to catch.
-        </p>
-        <p>
-          However, some individuals may mistakenly believe they have a flea
-          infestation due to skin conditions or psychological issues.
-        </p>
-        <p>
-          Find out if the customer has pets like cats or dogs, as fleas are commonly
-          associated with pets. Ask if they've noticed bites, especially on their
-          lower legs or ankles. Also, check if they’ve recently moved into a vacant
-          property, as fleas can linger in unoccupied homes, and the customer may
-          have seen small, dark insects jumping around.
-        </p>
-        <p>Sometimes people can believe they have fleas because:</p>
-        <ul>
-          <li>They feel something crawling on them</li>
-          <li>They are itching</li>
-          <li>They are covered in bites all over their body</li>
-          <li>They do not have pets</li>
-        </ul>
-        <p>
-          In these cases, we may request a sample or photo for identification.
-          Alternatively, we can monitor the property using traps and proceed with
-          treatment if fleas are confirmed.
-        </p>
-        <p>You can either bring your sample to:</p>
-        <address>
-          First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1
-          2SH
-        </address>
-        <p>Or you can post your sample to:</p>
-        <address>
-          Environmental Services<br />
-          Block B, Staniforth Road Depot<br />
-          Staniforth Road<br />
-          Sheffield, S9 3HD
-        </address>
-        <p>
-          Please ensure your sample is in a secure, crush-proof container, alive or
-          dead. Attach information detailing:
-        </p>
-        <ul>
-          <li>Your name</li>
-          <li>Your address</li>
-          <li>Your contact number and/or email</li>
-          <li>How long the insects have been present</li>
-          <li>Where in the property the insects have been found</li>
-        </ul>
-      </div>
-    </details>
+    <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Do I need to provide a sample?</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      Normally, we don't require a sample of fleas before scheduling a
+      treatment, as they are small, elusive, and difficult to catch. <br>
+      <br>
+      However, some individuals may mistakenly believe they have a flea
+      infestation due to skin conditions or psychological issues.<br>
+    <br>
+      Find out if the customer has pets like cats or dogs, as fleas are commonly
+      associated with pets. Ask if they've noticed bites, especially on their
+      lower legs or ankles. Also, check if they’ve recently moved into a vacant
+      property, as fleas can linger in unoccupied homes, and the customer may
+      have seen small, dark insects jumping around.
+    </p>
+    <p>
+      Sometimes people can believe they have fleas because:
+    </p>
+    <ul>
+      <li>They feel something crawling on them</li>
+      <li>They are itching</li>
+      <li>They are covered in bites all over their body</li>
+      <li>They do not have pets</li>
+    </ul>
+    <p>
+      In these cases, we may request a sample or photo for identification.
+      Alternatively, we can monitor the property using traps and proceed with
+      treatment if fleas are confirmed.
+    </p>
+    <p>You can either bring your sample to:</p>
+    <address>
+      First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1
+      2SH
+    </address>
+    <p>Or you can post your sample to:</p>
+    <address>
+      Environmental Services<br />
+      Block B, Staniforth Road Depot<br />
+      Staniforth Road<br />
+      Sheffield, S9 3HD
+    </address>
+    <p>
+      Please ensure your sample is in a secure, crush-proof container, alive or
+      dead. Attach information detailing:
+    </p>
+    <ul>
+      <li>Your name</li>
+      <li>Your address</li>
+      <li>Your contact number and/or email</li>
+      <li>How long the insects have been present</li>
+      <li>Where in the property the insects have been found</li>
+    </ul>
+  </div>
+</details>
   `,
   {
     buttonLabel: "Book treatment for Fleas",
@@ -1154,7 +1150,7 @@ const foxesInformation = new ContentPaN(
   `
    <p>Sheffield City Council doesn't offer a service for foxes.</p>
     <p>For advice/information on foxes, please visit 
-    <a href="http://foxproject.org.uk/" target="_blank">the Fox Project</a>.
+    <a href="http://foxproject.org.uk" target="_blank">http://foxproject.org.uk</a>.
     </p>
   `,
   {
@@ -1186,7 +1182,7 @@ const FrogsorFrogspawn = new ContentPaN(
       <br>
       <br>
       For advice/information on Frogs or Frogspawn, please call DEFRA who are licenced to remove 
-      frogs or frog spawn on <strong>0113 2613333</strong> or visit:
+      frogs or frog spawn on <a href="tel:0113 2613333">0113 2613333</a> or visit:
       <a href="https://www.gov.uk/browse/environment-countryside" target="_blank">https://www.gov.uk/browse/environment-countryside</a>.
     </p>
   `,
@@ -1989,7 +1985,7 @@ const ratTreatment = new ContentPaN(
         </p>
       </div>
     </details>
-    <section class="notice-panel" role="region" aria-label="Notice panel">
+    <section class="info-panel" role="region" aria-label="Information panel">
       <p>
         If your enquiry doesn't fall into any of the above categories, we will need to
         refer your 
