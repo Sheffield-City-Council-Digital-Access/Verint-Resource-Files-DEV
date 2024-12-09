@@ -133,5 +133,5 @@ const publicHealth = new ServicePH(
   "publicHealth",
   "Public Health",
   `Food safety, hygiene ratings, training, disease, health and wellbeing, immunisation, maternity care, flooding…`,
-  [fleaTreatments]
+  []
 );
