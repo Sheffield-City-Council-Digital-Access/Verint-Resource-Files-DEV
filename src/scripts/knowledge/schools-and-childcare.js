@@ -239,8 +239,8 @@ const freeSchoolMeals = new ContentSaC(
     </p>
     <h4>How to redeem your voucher</h4>
     <p>
-      Go to the <a href="https://www.selectyourcompliment.co.uk/" 
-      target="_blank">Edenred website</a> and follow the instructions below:
+      Go to the <a href="http://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/"target="_blank">www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers</a>
+      and follow the instructions below:
     </p>
     <ol>
       <li>Enter your eCode from the letter</li>
@@ -504,14 +504,8 @@ const schoolFoodVoucher = new ContentSaC(
     </p>
     <p>
       There is an Edenred User guide and an Edenred Parent FAQ document which are
-      both useful as references, these are available on the Edenred website:
-    </p>
-    <p>
-      <a
-        href="http://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/"
-        target="_blank"
-        >www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers</a
-      >
+      both useful as references, these are available on 
+      <a href="http://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/"target="_blank">www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers</a>
     </p>
     <details class="accordion">
       <summary class="accordion-header">
@@ -534,15 +528,9 @@ const schoolFoodVoucher = new ContentSaC(
             </p>
             <p>
               You can redeem your eCode button on the website:
-              <a
-                href="https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/"
-                target="_blank"
-                >Free School Meals</a
-              >
-              <br />or you can visit:
-              <a href="http://www.selectyourcompliment.co.uk" target="_blank"
-                >www.selectyourcompliment.co.uk</a
-              >
+              <a href="https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers"target="_blank">https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Voucher</a><br>
+              or you can visit:
+              <a href="http://www.selectyourcompliment.co.uk" target="_blank">www.selectyourcompliment.co.uk</a>
             </p>
             <p>Enter the code into the box on the website and click Redeem</p>
             <ol>
