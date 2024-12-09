@@ -61,7 +61,7 @@ const canvassForm = new ContentEaR(
   "Canvass Form (CF)",
   "How to complete the Canvass Form to confirm or update voter registration details for your household.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -114,7 +114,7 @@ const ccaCCBorCanvassForms = new ContentEaR(
   "CCB or Canvass Form",
   "CCB or Canvass Forms - People that do not live at the address",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -169,7 +169,7 @@ const ccaCCBForms = new ContentEaR(
   "CCA/B Forms",
   "CCA and CCB forms for annual electoral register checks, including how to respond and update details.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -236,7 +236,7 @@ const informationChangeandHowToUpdateIt = new ContentEaR(
   "Information change and how to update it",
   "What happens if I change my name, address, nationality, or anything else on the form?",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -283,7 +283,7 @@ const lostCCACCBorCanvassForm = new ContentEaR(
   "Lost my CCA/B or Canvass Form",
   "How to request a duplicate CCA, CCB, or Canvass Form and respond if forms are lost.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -329,7 +329,7 @@ const removalFromRegister = new ContentEaR(
   "Removal from Register",
   "What happens if I move out of a property?",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -387,7 +387,7 @@ const studentVoters = new ContentEaR(
   "Student Voters",
   "The voting rights and registration processes for students with term-time and home addresses.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -451,7 +451,7 @@ const assistanceForPartiallySightedVoters = new ContentEaR(
   "Assistance for partially sighted Voters",
   "Voting assistance options for partially sighted voters, including tactile devices, large print ballots, and postal voting with signature waivers.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -499,7 +499,7 @@ const howToCompletePostalVote = new ContentEaR(
   "How to complete Postal Vote",
   "Step-by-step guide on completing a postal vote, including marking, sealing, and returning your ballot securely.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -532,7 +532,7 @@ const localElections = new ContentEaR(
   "Local Elections",
   "Understanding Sheffield's four-year local election cycle and how to find information about your ward councillors.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -576,7 +576,7 @@ const parishElections = new ContentEaR(
   "Parish Elections",
   "Parish Elections in Sheffield, including eligibility, election timing, and details about the city's three parish councils.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -631,7 +631,7 @@ const postalVoteNoLongerRequired = new ContentEaR(
   "Postal Vote no longer required",
   "how to cancel a postal vote application, including deadlines and required documentation.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -685,7 +685,7 @@ const postalVoteReceivedButNotRequested = new ContentEaR(
   "Postal Vote Received But Not Requested",
   "What happens if I have received a postal ballot and did not request one or cannot remember requesting one?",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -727,7 +727,7 @@ const postalVoteSendingAbroad = new ContentEaR(
   "Voting abroad with a Postal Vote",
   "The process and risks of receiving and returning postal votes from abroad.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -766,7 +766,7 @@ const spoiltorDamagedPostalVote = new ContentEaR(
   "Spoilt or Damaged Postal Vote",
   "How to request a replacement for a spoiled or damaged postal vote, including in-person and postal options.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -821,7 +821,7 @@ const whereDoIVote = new ContentEaR(
   "Where do I vote?",
   "An interactive map to find designated polling stations based on address.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -981,7 +981,7 @@ const applyingForPostalVote = new ContentEaR(
   "Applying for Postal Vote",
   "How to apply for a postal vote online, via email, or in person, including requirements for a hand-written signature.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1026,7 +1026,7 @@ const postalProxyVote = new ContentEaR(
   "Postal Proxy Vote",
   "How to apply for a postal proxy vote, including form request details and deadlines for submission.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1071,7 +1071,7 @@ const postalVoteNotReceivedorLost = new ContentEaR(
   "Postal Vote not received or Lost",
   "What to do if your postal vote pack is lost or not received, including how to request or collect a replacement.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1112,7 +1112,7 @@ const requestproxyVote = new ContentEaR(
   "Request Proxy Vote",
   "How to request a proxy vote, including eligibility, process, and options for your proxy to vote by post.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1158,7 +1158,7 @@ const swappingFromPostalToProxyVoting = new ContentEaR(
   "Swapping from Postal to Proxy Voting",
   "How to switch from postal to proxy voting, including deadlines and reapplication requirements.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1201,7 +1201,7 @@ const swappingFromProxyToPostalVoting = new ContentEaR(
   "Swapping from Proxy to Postal Voting",
   "How to switch from proxy to postal voting, including deadlines and eligibility for long-term proxy arrangements.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1245,7 +1245,7 @@ const waiverApplication = new ContentEaR(
   "Waiver Application",
   "Waiver applications for postal and proxy voting when a voter cannot provide a signature.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1303,7 +1303,7 @@ const archiveCopies = new ContentEaR(
   "Archive Copies",
   "What happens if I request a copy of the electoral register?",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1350,7 +1350,7 @@ const changeofAddressForm = new ContentEaR(
   "Change of Address Form",
   "How to update your voter registration address and re-register using the online service",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1389,7 +1389,7 @@ const changeofNameonTheRegister = new ContentEaR(
   "Change of name on the Register",
   "How to update your name on the electoral register, including required forms and evidence.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1427,7 +1427,7 @@ const creditReferencingAgencies = new ContentEaR(
   "Credit Referencing Agencies",
   "How credit referencing agencies use the electoral register and the differences between the full and open registers.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1470,7 +1470,7 @@ const doINeedToReRegisterEachYear = new ContentEaR(
   "Do I need to Re-Register each year?",
   "When you need to re-register to vote and update your details on the electoral register.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1509,7 +1509,7 @@ const doINeedToRegister = new ContentEaR(
   "Do I need to Register?",
   "Why responding to voter registration invitations is important and how it impacts credit applications.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1551,7 +1551,7 @@ const electoralRegisterConfirmationLetter = new ContentEaR(
   "Electoral Register Confirmation Letter",
   "Request a confirmation letter from Electoral Services as proof of voter registration at your address.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1583,7 +1583,7 @@ const includeSomeoneElseontheRegisterForm = new ContentEaR(
   "Include someone on the Invitation to Register Form",
   "Can I Include someone else on the Invitation to Register (ITR) form?",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1620,7 +1620,7 @@ const incorrectDetailsOnElectoralRegister = new ContentEaR(
   "Incorrect details on Electoral Register",
   "How to report and correct errors on the electoral register through re-registration.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1663,7 +1663,7 @@ const informationInDifferentFormats = new ContentEaR(
   "Information in different formats",
   "Accessing information in different formats (Braille, Large Print etc)",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1700,7 +1700,7 @@ const invitationToRegister = new ContentEaR(
   "Invitation to Register",
   "What is an Invitation To Register (ITR)?",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1742,7 +1742,7 @@ const lostMyInvitationToRegister = new ContentEaR(
   "Lost my invitation to Register",
   "What happens if I lose my Invitation To Register (ITR)?",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1784,7 +1784,7 @@ const movingHomeorMovedHome = new ContentEaR(
   "Moving Home or Moved Home",
   "What happens if I move home?",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1826,7 +1826,7 @@ const optOutofTheOpenRegister = new ContentEaR(
   "Opt out of the Open Register",
   "How to opt out of the open register without affecting your voting rights or credit score.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1871,7 +1871,7 @@ const registerToVote = new ContentEaR(
   "Register to Vote",
   "How to register to vote, securely using your National Insurance Number and date of birth.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1901,7 +1901,7 @@ const requestforEvidenceLetter = new ContentEaR(
   "Request for Evidence Letter (Registering)",
   "Why a Request for Evidence letter is issued and how to provide the required documents for voter registration.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1942,7 +1942,7 @@ const requestOtherElectionsReferral = new ContentEaR(
   "Request other Elections Referral",
   "Requesting election assistance when internet access or required documents are unavailable.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -1980,7 +1980,7 @@ const revisionstoTheElectoralRegister = new ContentEaR(
   "Revisions to the Electoral Register",
   "What are the revision dates for the Electoral Register?",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -2026,7 +2026,7 @@ const successfulOnlineRegistration = new ContentEaR(
   "Successful Online Registration",
   "How will I know if my online Registration was Successful?",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -2064,7 +2064,7 @@ const useofEmailAddressandPhoneNumber = new ContentEaR(
   "Email Address and Phone Number",
   "What happens if I provide an email address or phone number?",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -2131,7 +2131,7 @@ const councillors = new ContentEaR(
   "Councillors",
   "Sheffield Councillors, their duties, and how to contact them",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -2174,7 +2174,7 @@ const electionResults = new ContentEaR(
   "Election Results",
   "Where can I find the results of previous elections?",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -2214,7 +2214,7 @@ const familyTreeorGenealogy = new ContentEaR(
   "Family Tree or Genealogy",
   "How electoral registers and Sheffield Archives can assist with family tree or genealogy research.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
@@ -2222,7 +2222,7 @@ const familyTreeorGenealogy = new ContentEaR(
     <p>
       The electoral register is compiled for election purposes and is not intended
       to be used as a tool for searching for lost relatives. Registers are split
-      intot he 6 parliamentary constituencies, then into the wards wihtin those
+      into the 6 parliamentary constituencies, then into the wards within those
       constituencies. Each ward is broken down into the polling district each
       polling stations serves and then into each street within that district.
       Properties are then sorted by address order - not by name.
@@ -2257,7 +2257,7 @@ const wards = new ContentEaR(
   "Wards",
   "Sheffield's 28 electoral wards and their representation by City Councillors.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
+    <section class="notice-panel" role="region" aria-label="Notice panel">
       <p>
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
