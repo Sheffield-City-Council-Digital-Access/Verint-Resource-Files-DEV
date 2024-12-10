@@ -378,7 +378,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
     </p>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Multiple Occupation House,</h3>
+        <h3>Commercial and Multiple Occupation House (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -419,6 +419,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
       "Environmental",
       "Pest Control",
       "Environmental Health",
+      "HMO"
     ],
   },
   { date: "27/11/2024", name: "Nathan Smith" }
@@ -466,7 +467,7 @@ const bumbleBeesTreatment = new ContentPaN(
     </p>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Multiple Occupation House,</h3>
+        <h3>Commercial and Multiple Occupation House (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -508,6 +509,7 @@ const bumbleBeesTreatment = new ContentPaN(
       "Environmental",
       "Pest Control",
       "Environmental Health",
+      "HMO"
     ],
   },
   { date: "27/11/2024", name: "Nathan Smith" }
@@ -580,7 +582,7 @@ const carpetBeetlesTreatment = new ContentPaN(
     </p>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Multiple Occupation House,</h3>
+        <h3>Commercial and Multiple Occupation House (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -622,6 +624,7 @@ const carpetBeetlesTreatment = new ContentPaN(
       "Environmental",
       "Pest Control",
       "Environmental Health",
+      "HMO"
     ],
   },
   { date: "27/11/2024", name: "Nathan Smith" }
