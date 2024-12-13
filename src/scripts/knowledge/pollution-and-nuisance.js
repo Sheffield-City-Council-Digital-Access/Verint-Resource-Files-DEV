@@ -474,9 +474,8 @@ const bumbleBeesTreatment = new ContentPaN(
         <p>
           For Bumble Bees treatment enquiries related to Commercial and Houses in Multiple Occuption, 
           please email your request to
-          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
-            >EnvironmentalServicesAdmin@sheffield.gov.uk</a
-          >. We will assess your request and provide you with a quote for the treatment.
+          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">EnvironmentalServicesAdmin@sheffield.gov.uk</a>. 
+          We will assess your request and provide you with a quote for the treatment.
         </p>
       </div>
     </details>
@@ -529,14 +528,19 @@ const carpetBeetlesTreatment = new ContentPaN(
       </p>
       <p>You can either bring your sample to:</p>
       <address>
-        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+        First Point,<br>
+        Howden House,<br>
+        1 Union Street,<br>
+        Sheffield,<br> 
+        S1 2SH
       </address>
       <p>Or you can post your sample to:</p>
       <address>
-        Environmental Services<br />
-        Block B, Staniforth Road Depot<br />
-        Staniforth Road<br />
-        Sheffield, S9 3HD
+        Environmental Services<br>
+        Block B, Staniforth Road Depot<br>
+        Staniforth Road<br>
+        Sheffield,<br>
+        S9 3HD
       </address>
       <p>
         Please ensure your sample is in a secure, crush-proof container, alive or
@@ -589,9 +593,8 @@ const carpetBeetlesTreatment = new ContentPaN(
         <p>
           For Carpet Beetles treatment enquiries related to Commercial and House of Multiple Occuption, 
           please email your request to
-          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
-            >EnvironmentalServicesAdmin@sheffield.gov.uk</a
-          >. We will assess your request and provide you with a quote for the treatment.
+          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">EnvironmentalServicesAdmin@sheffield.gov.uk</a>. 
+          We will assess your request and provide you with a quote for the treatment.
         </p>
       </div>
     </details>
@@ -627,7 +630,7 @@ const carpetBeetlesTreatment = new ContentPaN(
       "HMO"
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "13/12/2024", name: "Joseph Coupland" }
 );
 
 const clusterFliesTreatment = new ContentPaN(
