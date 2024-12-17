@@ -6043,26 +6043,6 @@ const tenancyEnforcementASB = new ContentH(
 );
 //#endregion Tenancy enforcement
 
- 
-//#region Tenancy Sustainment
-  
-// const fences = new ContentH(
-//   "fences",
-//   "Fences",
-//   "",
-//   `
-//   <p>
-//     Refer to Asset Mgmt and Repairs section for Fences accordion.
-//   </p> 
-//   `,
-//   { buttonLabel: "Fences", formName: "Tenancy Sustainment" },
-//   { typeKey: "Tenancy_Sustainment_information_provided" },
-//   { typeKey: "Tenancy_Sustainment_transfered_to_service" },
-//   { type: "Fences", keywords: ["Tenancy"], categories: ["Housing"] },
-//   { date: "06/11/2024", name: "Shahzad Athar" }
-// );
-
-
 const fobsandKeys = new ContentH(
   "fobsandKeys",
   "Fobs and Keys",
