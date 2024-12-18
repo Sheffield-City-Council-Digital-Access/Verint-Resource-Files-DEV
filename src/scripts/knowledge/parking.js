@@ -179,7 +179,7 @@ const applyBlueBadge = new ContentP(
 		</ul>
 		<p>
 			These applications will be fast tracked and would not be held up awaiting
-			payment or other evidence. When applying online these applications via gov.uk
+			payment or other evidence. When applying online these applications via
 			<a href="https://www.gov.uk" target="_blank">https://www.gov.uk</a> are
 			processed the same working day.
 		</p>
@@ -188,10 +188,13 @@ const applyBlueBadge = new ContentP(
 			If the customer does not meet any of the criteria above they will need to go
 			through an assessment with an advisor to see if they qualify for a blue badge.
 		</p>
-		<details class="details-accordion">
-			<summary>Whats happening with my application?</summary>
-			<div class="details-accordion-content">
-				<p>
+		<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Whats happening with my application</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
 					You may be able to provide the customer with an update to their
 					application using the case notes or status update. All cases will be dealt
 					with in date order, there are no exceptions to this regardless of
@@ -204,8 +207,8 @@ const applyBlueBadge = new ContentP(
 					Once Sheffield City Council have ordered the Blue Badge the 3rd Party have
 					5 working days to despatch and weekends need to be taken into account.
 				</p>
-			</div>
-		</details>
+  </div>
+</details>
 	`,
   { buttonLabel: "", formName: "" },
   { typeKey: "blue_badge_information_provided" },
@@ -231,19 +234,17 @@ const replacementBlueBadge = new ContentP(
 		</p>
 		<p>
 			Send an e-mail to
-			<a href="mailto:customerservices@sheffield.gov.uk" target="_blank"
-				>customerservices@sheffield.gov.uk</a
-			>
+			<a href="mailto:customerservices@sheffield.gov.uk" target="_blank">customerservices@sheffield.gov.uk</a>
 		</p>
 		<p>
 			Or send a letter to:
 		</p>
 		<address>
-			Customer Services<br />
-			Floor 2<br />
-			Howden House<br />
-			1 Union Street<br />
-			Sheffield<br />
+			Customer Services<br>
+			Floor 2<br>
+			Howden House<br>
+			1 Union Street<br>
+			Sheffield<br>
 			S1 2SH
 		</address>
 		<p>
@@ -396,16 +397,16 @@ const businessPermit = new ContentP(
 		</p>
     <p>
       When you purchase your parking permit you need to send proof of eligibility 
-      to ppproofs@sheffield.gov.uk within 3 days 
+      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
       (if you have not been requested to do so in the application process). 
       At any time after this while you hold a permit we may require you to provide proof 
       of your vehicle registration and your home or business address as part of 
       regular audit checks. If this is requested please submit them to 
-      customerservices@sheffield.gov.uk
+      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
     </p>
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
     </p>
 
 
@@ -472,16 +473,15 @@ const carerPermitAndMedical = new ContentP(
 		</ul>
       <p>
         When you purchase your parking permit you need to send proof of eligibility 
-        to ppproofs@sheffield.gov.uk within 3 days 
+        to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
         (if you have not been requested to do so in the application process). 
         At any time after this while you hold a permit we may require you to provide proof 
         of your vehicle registration and your home or business address as part of 
-        regular audit checks. If this is requested please submit them to 
-        customerservices@sheffield.gov.uk
+        regular audit checks. If this is requested please submit them to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
       </p>
       <p>
       For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank">ttps://www.sheffield.gov.uk/parking</a>.
       </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -562,16 +562,16 @@ const organisationCarer = new ContentP(
 		</ul>
     <p>
       When you purchase your parking permit you need to send proof of eligibility 
-      to ppproofs@sheffield.gov.uk within 3 days 
+      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
       (if you have not been requested to do so in the application process). 
       At any time after this while you hold a permit we may require you to provide proof 
       of your vehicle registration and your home or business address as part of 
       regular audit checks. If this is requested please submit them to 
-      customerservices@sheffield.gov.uk
+      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
     </p>
       <p>
       For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
       </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -645,16 +645,16 @@ const medicalProfessionalCarer = new ContentP(
     </ul>
     <p>
       When you purchase your parking permit you need to send proof of eligibility 
-      to ppproofs@sheffield.gov.uk within 3 days 
+      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
       (if you have not been requested to do so in the application process). 
       At any time after this while you hold a permit we may require you to provide proof 
       of your vehicle registration and your home or business address as part of 
       regular audit checks. If this is requested please submit them to 
-      customerservices@sheffield.gov.uk
+      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
     </p>
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
     </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -742,7 +742,7 @@ const greenParkingPermit = new ContentP(
     <h3>Changing your permit vehicle registration</h3>
 		<p>
     You can change the vehicle that your permit is for by sending your name and address
-    and new vehicle registration details to customerservices@sheffield.gov.uk
+    and new vehicle registration details to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
 	  </p>
     <h3>Eligibility</h3>
     <p>
@@ -767,7 +767,7 @@ const greenParkingPermit = new ContentP(
     </p>
       <p>
       For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
       </p>
  	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -851,17 +851,17 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
 			<li>Company car: also include a letter on company headed paper</li>
 		</ul>
     <p>
-    When you purchase your parking permit you need to send proof of eligibility 
-    to ppproofs@sheffield.gov.uk within 3 days 
-    (if you have not been requested to do so in the application process). 
-    At any time after this while you hold a permit we may require you to provide proof 
-    of your vehicle registration and your home or business address as part of 
-    regular audit checks. If this is requested please submit them to 
-    customerservices@sheffield.gov.uk
+      When you purchase your parking permit you need to send proof of eligibility 
+      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
+      (if you have not been requested to do so in the application process). 
+      At any time after this while you hold a permit we may require you to provide proof 
+      of your vehicle registration and your home or business address as part of 
+      regular audit checks. If this is requested please submit them to 
+      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
     </p>
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
     </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -956,16 +956,16 @@ const residentsPermit = new ContentP(
 		</p>
     <p>
       When you purchase your parking permit you need to send proof of eligibility 
-      to ppproofs@sheffield.gov.uk within 3 days 
+      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
       (if you have not been requested to do so in the application process). 
       At any time after this while you hold a permit we may require you to provide proof 
       of your vehicle registration and your home or business address as part of 
       regular audit checks. If this is requested please submit them to 
-      customerservices@sheffield.gov.uk
+      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
     </p>
       <p>
       For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
       </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -1009,7 +1009,7 @@ const staffPermit = new ContentP(
     </p>
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -1088,17 +1088,17 @@ const tradePermit = new ContentP(
 			</li>
 		</ul>
     <p>
-    When you purchase your parking permit you need to send proof of eligibility 
-    to ppproofs@sheffield.gov.uk within 3 days 
-    (if you have not been requested to do so in the application process). 
-    At any time after this while you hold a permit we may require you to provide proof 
-    of your vehicle registration and your home or business address as part of 
-    regular audit checks. If this is requested please submit them to 
-    customerservices@sheffield.gov.uk
+      When you purchase your parking permit you need to send proof of eligibility 
+      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
+      (if you have not been requested to do so in the application process). 
+      At any time after this while you hold a permit we may require you to provide proof 
+      of your vehicle registration and your home or business address as part of 
+      regular audit checks. If this is requested please submit them to 
+      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
     </p>
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
     </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -1147,12 +1147,12 @@ const utilityPermit = new ContentP(
 		<h3>Costs</h3>
 		<p class="cost">£193.75 for a book of 25 half day passes.</p>
     <p>
-      Ask customer to email customerservices@sheffield.gov.uk to ask if they can order a 
+      Ask customer to email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> to ask if they can order a 
       utility permit - service will respond with a link to order the permit.
 		</p>
       <p>
       For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
       </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -1239,16 +1239,16 @@ const visitorsPermits = new ContentP(
 		</ul>
     <p>
       When you purchase your parking permit you need to send proof of eligibility 
-      to ppproofs@sheffield.gov.uk within 3 days 
+      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
       (if you have not been requested to do so in the application process). 
       At any time after this while you hold a permit we may require you to provide proof 
       of your vehicle registration and your home or business address as part of 
       regular audit checks. If this is requested please submit them to 
-      customerservices@sheffield.gov.uk
+      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
     </p>
       <p>
       For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
       </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -1280,10 +1280,10 @@ const visitorsPermits = new ContentP(
   { date: "02/12/2024", name: "Andy Walker" }
 );
 
+
 //
 // makingAPayment is in the cross regional section at the top of the Parking.js file
 //
-
 
 const customerPaidTwice = new ContentP(
   "customerPaidTwice",
@@ -1291,7 +1291,7 @@ const customerPaidTwice = new ContentP(
   "",
   `
     <p>
-      The customer needs to email customerservices@sheffield.gov.uk advising 
+      The customer needs to email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> advising 
       the issue they experienced, customer services will then look into the issue
     </p>
 	`,
@@ -1478,9 +1478,8 @@ const carParkParkingMeterProblem = new ContentP(
   `
     <p>
     If the customer is reporting an issue with a parking meter/machine fault, 
-    they need to contact Parking Enforcement on 0114 2736255. Any issues 
-    around refunds need to be put in writing to 
-    parkingenforcement@sheffield.gov.uk
+    they need to contact Parking Enforcement on <a href="tel:0114 2736255">0114 2736255</a>. Any issues 
+    around refunds need to be put in writing to <a href="mailto:parkingenforcement@sheffield.gov.uk">parkingenforcement@sheffield.gov.uk</a>
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },

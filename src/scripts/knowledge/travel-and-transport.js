@@ -117,15 +117,16 @@ const childTravelPass = new ContentTaT(
     </p>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Lost of stolen pass</h3>
+        <h3>Lost or stolen pass</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
       <p>
-        If your child has misplaced their pass, you can order a replacement from
-        Travel South Yorkshire.
+        To replace a <strong>lost or damaged</strong> pass there is a £7 replacement fee. <br>
+        <strong>Stolen</strong> passes can be replaced free of charge if you have a Crime Reference Number from the Police.
+        You can make the payment by calling Traveline on <a href="tel:0800 9520002">0800 9520002</a>, selecting option 1, using your credit or debit card.
+        All replacements will be posted to your home address by First Class Post.
       </p>
-      <p>There will be a replacement fee of £7.</p>
       <p>
         Information on how to replace a misplaced pass can be found at:
         <a href="https://www.travelsouthyorkshire.com/zerofarepass" target="_blank">www.travelsouthyorkshire.com/zerofarepass</a>
@@ -285,31 +286,30 @@ const disabledTravelPermit = new ContentTaT(
       </ul>
     </p>
     <h3>How long does a Disabled Travel Permit last for</h3>
-   <p>Disabled Travel Permits have a 28 day process period</p>
+   <p>Disabled Travel Permits have a 28 day process period.</p>
     <p>
       If your application is successful, passes are issued between 1 and 5 years the
       timescale is dependent on your qualifying criteria, you will be made aware of
-      the timescale when your application is approved.<br />
+      the timescale when your application is approved.<br>
       If you have any supporting evidence/eligibility that has an end date, your
-      pass will be issued up to that date.<br />
+      pass will be issued up to that date.<br>
       If during the time you have the pass, you would turn 66, your pass will expire
       on your 66th birthday.
     </p>
     <h3>How long will my application take</h3>
     <h3>How do I appeal the decision</h3>
-    <p>Appeals must be made in writing to:<br />
+    <p>Appeals must be made in writing to:<br>
       <address>
-        Customer Services<br />
-        Floor 2<br />
-        Howden House<br />
-        1 Union Street<br />
-        Sheffield<br />
+        Customer Services<br>
+        Floor 2<br>
+        Howden House<br>
+        1 Union Street<br>
+        Sheffield<br>
         S1 2SH
       </address>
     </p>
     <p>
-      Customers can also request an appeal via email by writing to 
-      customerservices@sheffield.gov.uk
+      Customers can also request an appeal via email by writing to  <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
     </p>
     <h3>When can I use my Travel Permit</h3>
     <p>
@@ -324,18 +324,25 @@ const disabledTravelPermit = new ContentTaT(
       <h3>What do I do with the approval letter</h3>
     <p>
       The purple form needs to be completed with a passport size photograph and 
-      returned to the address at the bottom of the page, 
-      Contact Centre, SYPTE, 11 Broad Street West, Sheffield S1 2BQ.
+      returned to:
+      <address>
+        Contact Centre<br>
+        SYPTE<br>
+        11 Broad Street West<br>
+        1 Union Street<br>
+        Sheffield<br>
+        Sheffield S1 2BQ
+      </address>
     </p>
       <h3>I've sent my approval letter off but not got my pass</h3>
     <p>
-      Contact SYPTE direct 01709 51 51 51.
+      Contact SYPTE direct <a href="tel:0170 9515151">0170 9515151</a>.
     </p>
       <h3>Where is my pass (applied with SCC) Ive had a letter/phone call</h3>
     <p>
       Chase/escalation email to the Team Leaders not to the CS Inbox for action.
     </p>
-      <h3>What evidence do i need to send</h3>
+      <h3>What evidence do I need to send</h3>
     <p>
       Proof of address, copy of awards letter for DLA PIP within last 12 months, 
       medical evidence from Health Care Professional, 
