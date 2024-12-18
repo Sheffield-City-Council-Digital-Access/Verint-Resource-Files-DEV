@@ -128,6 +128,7 @@ const applyForTheHouseholdSupportFund = new ContentB(
         </p>
         <p>
           Our network of Trusted assessors can be found at: <a href="https://www.sheffielddirectory.org.uk/HSF" target="_blank">https://www.sheffielddirectory.org.uk/HSF</a>
+            <!-- Button --><button id="navigateButton">Send link to customer</button><!-- JavaScript --><script>// Add a click event to the buttondocument.getElementById('navigateButton').addEventListener('click', function() {             // Redirect to a new pagewindow.location.href = 'https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service="Apply for a leaflet distribution consent permit"'; }); </script>
         </p>
       </section>
     </p>
@@ -153,7 +154,11 @@ const applyForTheHouseholdSupportFund = new ContentB(
       You must appeal in writing within one month of the date of your decision. 
       You should provide any information you feel may help your application and we’ll review our decision and write to you with 
       the outcome within 28 days of receiving your appeal.
+
+      
     </p>
+
+
   `,
   { buttonLabel: "Apply for the Household Support Fund", formName: "apply_hsf_las" },
   { typeKey: "cost_of_living_scheme_transferred_to_service" },
