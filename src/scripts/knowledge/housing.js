@@ -54,6 +54,286 @@ class FormH extends CoreH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
+//#region Crossregion
+
+const universalCredits = new ContentH(
+  "universalCredit",
+  "Universal credit",
+  "Description Tbc",
+  `
+    <p>If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
+       you may be directed to claim Universal Credit:</p>
+    <ul>
+        <li>Housing Benefit</li>
+        <li>Income-related Employment and Support Allowance (ESA)</li>
+        <li>Income-based Jobseeker's Allowance (JSA)</li>
+        <li>Child Tax Credit</li>
+        <li>Working Tax Credit</li>
+        <li>Income Support</li>
+    </ul>
+    <p>At some point in the future, many people currently on the benefits above will be moved across to Universal Credit. 
+       The Government has not yet given a date for this, but the Department for Work and Pensions 
+       will contact anyone affected before there are changes to their benefits or tax credits.</p>
+
+    <details class="details-accordion">
+      <summary>Applying for an advance through Universal Credit</summary>
+      <div class="details-accordion-content">
+        <p>You can apply for an advance from your Universal Credit (UC), which is a loan and is paid back through your payments.</p>
+        <p>If you claim an advance which includes some of your Housing Costs, you should pay this amount towards your rent.</p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Change of circumstances</summary>
+      <div class="details-accordion-content">
+        <p>Any changes to your circumstances must be reported immediately using your UC journal.</p>
+        <p>If not, you may be sanctioned and your UC payment may be less than you think.</p>
+        <p>If this happens, you will still receive your payment for the Housing Cost Element, 
+          but it is important that this is paid to the rent account to make sure you meet your obligation to SCC to pay rent.</p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Council Tax and Universal Credit</summary>
+      <div class="details-accordion-content">
+        <p>Universal Credit does not include help with your Council Tax, so you must claim this separately.</p>
+        <p>You can do this at <a href="https://www.sheffield.gov.uk/benefits/council-tax-support" 
+           target="_blank">https://www.sheffield.gov.uk/benefits/council-tax-support</a>.</p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>How will Universal Credit affect my rent payments</summary>
+      <div class="details-accordion-content">
+        <p>Universal Credit payments are usually paid monthly, and in arrears.</p>
+        <p>You should be absolutely clear that if you claim Universal Credit, you will need to pay your full rent yourself.</p>
+        <p>You may receive Housing Costs within your UC payment that will help towards your rent, 
+           and this may change depending on the income you receive during your monthly assessment period. 
+           But regardless of this, you need to ensure your full rent payments are made.</p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Notifying SCC when you start claiming Universal Credit</summary>
+      <div class="details-accordion-content">
+        <p>As all Sheffield City Council tenancies charge rent weekly, it is important that you advise us immediately if you start to claim Universal Credit.</p>
+        <p>This will allow us to discuss and agree with you arrangements about your rent payments.</p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Delays before first payment</summary>
+      <div class="details-accordion-content">
+        <p>When you first claim UC, you may have to wait 5 weeks for your first payment.</p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Will my Universal Credit payment date change</summary>
+      <div class="details-accordion-content">
+        <p>Your UC payment date will be the same every month unless it is due on a weekend or Bank Holiday.</p>
+        <p>If this is the case, it will be paid on the last working day before your usual payment date.</p>
+        <p>Please check your UC journal regularly as this is the way you will know what your payments will be each month.</p>
+        <p>This will also be how you usually have contact with the DWP.</p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Setting up an email account and bank account for Universal Credit</summary>
+      <div class="details-accordion-content">
+        <p>You can set up an email account and bank account to receive Universal Credit online. It will also help with automatic updates and payments.</p>
+        <p>Set up your Universal Credit account online:</p>
+        <ul>
+          <li>Visit the official Universal Credit website</li>
+          <li>Fill in the application form</li>
+          <li>Submit the form and wait for further instructions</li>
+        </ul>
+      </div>
+    </details>
+  `,
+  { buttonLabel: "Universal credit", formName: "" },
+  { typeKey: "housing_benefits_information_provided" },
+  { typeKey: "housing_benefits_information_requested" },
+  {
+    type: "Information",
+    keywords: [
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit',
+      'Universal Credit'
+    ],
+    categories: ["Housing", "Benefits"],
+  },
+  { date: "05/11/2024", name: "Andy Walker" }
+);
+
+const welfareReform = new ContentH(
+  "welfareReform",
+  "Welfare reform",
+  "Description tbc",
+  `
+  <p>From April 2013, the government reduced the amount of housing benefit for council / housing association tenants in homes that had any spare bedrooms. 
+    This is also known as under-occupation. This change only affected people of working age.</p>
+  <p>Claimants of housing benefit and those considering a move to a new home either through:</p>
+  <ul>
+  <li>a new council or housing association tenancy</li>
+  <li>a mutual exchange, or</li>
+  <li>a transfer to another council home</li>
+  </ul>
+  <p>Need to be aware of the impact that having a home with spare bedrooms will have on their welfare benefits.</p>
+  
+  <details class="FAQ">
+    <summary class="accordion-header">
+    <h3>FAQ</h3>
+      <div class="FAQ"></div>
+  </summary>
+
+    <details class="details-accordion">
+    <summary>Will these changes affect me?</summary>
+    <div class="details-accordion-content">
+      <p>This only affects people of working age, so if you are old enough to receive a state pension (of a pensionable age) then these changes will not affect you. 
+        You are likely to be affected by these changes, especially if you are a single person with two or more bedrooms, 
+        a couple with two or more bedrooms, or in a household whose children have grown up and left home.</p>
+      <p>If you are of working age you therefore need to think very carefully before bidding for a property that has more bedrooms than housing benefit will allow for, 
+        as a reduction in this would mean that you have to pay additional money towards your rent yourself. 
+        Our eligibility table gives an indication of where there is likely to be a reduction in housing benefit.</p>
+    </div>
+    </details>
+    
+    <details class="details-accordion">
+    <summary>How will the government work out if you have spare bedrooms?</summary>
+    <div class="details-accordion-content">
+      <p>The government has told us that one bedroom will be allowed for each person, or couple with the following exceptions:</p>
+      <ul>
+        <li>Children aged 16 or under will be expected to share with another child of the same sex.</li>
+        <li>Children aged 10 and under will be expected to share with another child regardless of their sex.</li>
+      </ul>
+    </div>
+    </details>
+    
+    <details class="details-accordion">
+    <summary>How much will my housing benefit be reduced by?</summary>
+    <div class="details-accordion-content">
+      <p>If you have one spare bedroom you are likely to lose 14% of your weekly housing benefit and if you have two spare bedrooms you could lose 25%. 
+        This means that you will have to pay the extra money towards the rent yourself.</p>
+    </div>
+    </details>
+    
+    <details class="details-accordion">
+    <summary>What considerations should I make when bidding for a new property?</summary>
+    <div class="details-accordion-content">
+      <p>If you are currently looking for a new home you must consider very carefully the size of the home you want to move to. 
+        Remember if you are of working age and receiving housing benefit, this might be reduced if you move to a home which is too big for you.</p>
+    </div>
+    </details>
+    
+    <details class="details-accordion">
+    <summary>How can I move to a smaller home?</summary>
+    <div class="details-accordion-content">
+      <p>There may be a number of options available to you:</p>
+      <ul>
+        <li>You could exchange your current home with another tenant who wants to move. This is called a mutual exchange.</li>
+        <li>You could be awarded a rehousing priority under the SMARTMOVE scheme to move to a smaller more manageable home if you are currently living in a high demand council / housing association property.</li>
+        <li>You can move to another council/housing association property by bidding for the available homes which we advertise each week.</li>
+      </ul>
+    </div>
+    </details>
+    
+    <details class="details-accordion">
+    <summary>Are adapted properties exempt?</summary>
+    <div class="details-accordion-content">
+      <p>Adapted properties are not exempt from the welfare reform and extra bedroom charge.</p>
+    </div>
+    </details>
+    
+    <details class="details-accordion">
+    <summary>If there is a couple, one of a pensionable age and the other not, will they be affected by benefit changes next year?</summary>
+    <div class="details-accordion-content">
+      <p>Generally speaking, pensionable aged persons are exempt from the welfare reforms. However, 
+        when there is a couple & one isn’t of pensionable age it is not as straightforward, it will be dependent on what DWP benefit they are receiving.</p>
+    </div>
+    </details>
+    
+    <details class="details-accordion">
+    <summary>Furnished properties change</summary>
+    <div class="details-accordion-content">
+      <p>Where a property is furnished and under occupied they lose the HB granted for the furniture charge. 
+        The % reduction is applied to the net rent and the furniture charge too.</p>
+    </div>
+    </details>
+    
+    <details class="details-accordion">
+    <summary>Benefit cap</summary>
+    <div class="details-accordion-content">
+      <p>The DWP have announced that the benefit cap (overall level of combined benefits and credits a workless household (with no disability benefits) 
+        can receive to around £384.62/week for lone parents/couples outside London, or £257.69/week for single people outside London) 
+          will not be introduced nationally in April but are expecting it to be in place across the country by September, 
+          we will update our information as we know more.</p>
+    </div>
+    </details>
+    
+    <details class="details-accordion">
+    <summary>Spare room subsidy exemption</summary>
+    <div class="details-accordion-content">
+      <p>For tenants to be exempt from the spare room subsidy, they must have been continuously entitled to housing benefit since 
+        at least 1 January 1996 and occupied the same dwelling since that date, save for any period where a 
+        fire, flood, explosion or natural catastrophe has rendered the property uninhabitable.</p>
+      <p>These provisions apply if there has been a break in entitlement of no more than 4 weeks, or if there has been a break of entitlement of 
+        no more than 52 weeks if the claimant or their partner is a welfare to work beneficiary.</p>
+      <p>Note: it may be the case that the protection has been inherited by a tenant where they have succeeded a tenancy.</p>
+      <p>The DWP are going to amend the regulations to remove this exemption. However, until the legislation is amended, 
+        customers who meet the criteria are exempt from the spare room subsidy.</p>
+      <p>An application form must be completed by the customer and returned to the benefits service.</p>
+  </div>
+  </details>
+`,
+  { buttonLabel: "Welfare reform", formName: "" },
+  { typeKey: "housing_benefits_information_provided" },
+  { typeKey: "housing_benefits_information_requested" },
+  {
+    type: "Information",
+    keywords: [
+      'Housing Benefit',
+      'Housing Benfit',
+      'Housing Benifit',
+      'Housng Benefit',
+      'Housing Beneift',
+      'Housin Benefit',
+      'Housing Benefet',
+      'Housng Benfit',
+      'Housin Benifit',
+      'Housing Benifits',
+      'Welfare reform',
+      'Wlfare reform',
+      'Welfare refrom',
+      'Welfar reform',
+      'Welfare reforrm',
+      'Welfere reform',
+      'Welfare reformm',
+      'Welfare reformz',
+      'Welfer reform'
+    ],  
+    categories: ["Housing", "Benefits"],
+  },
+  { date: "05/11/2024", name: "Andy Walker" }
+);
+
+//#endregion
+
+
 //#region Adaptations
 const chaseProgressOfAdaptation = new ContentH(
   "chaseProgressOfAdaptation",
@@ -2137,280 +2417,7 @@ const contactHousingBenefits = new ContentH(
     { date: "05/11/2024", name: "Andy Walker" }
   );
   
-  const universalCredits = new ContentH(
-    "universalCredit",
-    "Universal credit",
-    "Description Tbc",
-    `
-      <p>If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
-         you may be directed to claim Universal Credit:</p>
-      <ul>
-          <li>Housing Benefit</li>
-          <li>Income-related Employment and Support Allowance (ESA)</li>
-          <li>Income-based Jobseeker's Allowance (JSA)</li>
-          <li>Child Tax Credit</li>
-          <li>Working Tax Credit</li>
-          <li>Income Support</li>
-      </ul>
-      <p>At some point in the future, many people currently on the benefits above will be moved across to Universal Credit. 
-         The Government has not yet given a date for this, but the Department for Work and Pensions 
-         will contact anyone affected before there are changes to their benefits or tax credits.</p>
-  
-      <details class="details-accordion">
-        <summary>Applying for an advance through Universal Credit</summary>
-        <div class="details-accordion-content">
-          <p>You can apply for an advance from your Universal Credit (UC), which is a loan and is paid back through your payments.</p>
-          <p>If you claim an advance which includes some of your Housing Costs, you should pay this amount towards your rent.</p>
-        </div>
-      </details>
-  
-      <details class="details-accordion">
-        <summary>Change of circumstances</summary>
-        <div class="details-accordion-content">
-          <p>Any changes to your circumstances must be reported immediately using your UC journal.</p>
-          <p>If not, you may be sanctioned and your UC payment may be less than you think.</p>
-          <p>If this happens, you will still receive your payment for the Housing Cost Element, 
-            but it is important that this is paid to the rent account to make sure you meet your obligation to SCC to pay rent.</p>
-        </div>
-      </details>
-  
-      <details class="details-accordion">
-        <summary>Council Tax and Universal Credit</summary>
-        <div class="details-accordion-content">
-          <p>Universal Credit does not include help with your Council Tax, so you must claim this separately.</p>
-          <p>You can do this at <a href="https://www.sheffield.gov.uk/benefits/council-tax-support" 
-             target="_blank">https://www.sheffield.gov.uk/benefits/council-tax-support</a>.</p>
-        </div>
-      </details>
-  
-      <details class="details-accordion">
-        <summary>How will Universal Credit affect my rent payments</summary>
-        <div class="details-accordion-content">
-          <p>Universal Credit payments are usually paid monthly, and in arrears.</p>
-          <p>You should be absolutely clear that if you claim Universal Credit, you will need to pay your full rent yourself.</p>
-          <p>You may receive Housing Costs within your UC payment that will help towards your rent, 
-             and this may change depending on the income you receive during your monthly assessment period. 
-             But regardless of this, you need to ensure your full rent payments are made.</p>
-        </div>
-      </details>
-  
-      <details class="details-accordion">
-        <summary>Notifying SCC when you start claiming Universal Credit</summary>
-        <div class="details-accordion-content">
-          <p>As all Sheffield City Council tenancies charge rent weekly, it is important that you advise us immediately if you start to claim Universal Credit.</p>
-          <p>This will allow us to discuss and agree with you arrangements about your rent payments.</p>
-        </div>
-      </details>
-  
-      <details class="details-accordion">
-        <summary>Delays before first payment</summary>
-        <div class="details-accordion-content">
-          <p>When you first claim UC, you may have to wait 5 weeks for your first payment.</p>
-        </div>
-      </details>
-  
-      <details class="details-accordion">
-        <summary>Will my Universal Credit payment date change</summary>
-        <div class="details-accordion-content">
-          <p>Your UC payment date will be the same every month unless it is due on a weekend or Bank Holiday.</p>
-          <p>If this is the case, it will be paid on the last working day before your usual payment date.</p>
-          <p>Please check your UC journal regularly as this is the way you will know what your payments will be each month.</p>
-          <p>This will also be how you usually have contact with the DWP.</p>
-        </div>
-      </details>
-  
-      <details class="details-accordion">
-        <summary>Setting up an email account and bank account for Universal Credit</summary>
-        <div class="details-accordion-content">
-          <p>You can set up an email account and bank account to receive Universal Credit online. It will also help with automatic updates and payments.</p>
-          <p>Set up your Universal Credit account online:</p>
-          <ul>
-            <li>Visit the official Universal Credit website</li>
-            <li>Fill in the application form</li>
-            <li>Submit the form and wait for further instructions</li>
-          </ul>
-        </div>
-      </details>
-    `,
-    { buttonLabel: "Universal credit", formName: "" },
-    { typeKey: "housing_benefits_information_provided" },
-    { typeKey: "housing_benefits_information_requested" },
-    {
-      type: "Information",
-      keywords: [
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit',
-        'Universal Credit'
-      ],
-      categories: ["Housing", "Benefits"],
-    },
-    { date: "05/11/2024", name: "Andy Walker" }
-  );
-  
-  const welfareReform = new ContentH(
-    "welfareReform",
-    "Welfare reform",
-    "Description tbc",
-    `
-    <p>From April 2013, the government reduced the amount of housing benefit for council / housing association tenants in homes that had any spare bedrooms. 
-      This is also known as under-occupation. This change only affected people of working age.</p>
-    <p>Claimants of housing benefit and those considering a move to a new home either through:</p>
-    <ul>
-    <li>a new council or housing association tenancy</li>
-    <li>a mutual exchange, or</li>
-    <li>a transfer to another council home</li>
-    </ul>
-    <p>Need to be aware of the impact that having a home with spare bedrooms will have on their welfare benefits.</p>
-    
-    <details class="FAQ">
-      <summary class="accordion-header">
-      <h3>FAQ</h3>
-        <div class="FAQ"></div>
-    </summary>
-
-      <details class="details-accordion">
-      <summary>Will these changes affect me?</summary>
-      <div class="details-accordion-content">
-        <p>This only affects people of working age, so if you are old enough to receive a state pension (of a pensionable age) then these changes will not affect you. 
-          You are likely to be affected by these changes, especially if you are a single person with two or more bedrooms, 
-          a couple with two or more bedrooms, or in a household whose children have grown up and left home.</p>
-        <p>If you are of working age you therefore need to think very carefully before bidding for a property that has more bedrooms than housing benefit will allow for, 
-          as a reduction in this would mean that you have to pay additional money towards your rent yourself. 
-          Our eligibility table gives an indication of where there is likely to be a reduction in housing benefit.</p>
-      </div>
-      </details>
-      
-      <details class="details-accordion">
-      <summary>How will the government work out if you have spare bedrooms?</summary>
-      <div class="details-accordion-content">
-        <p>The government has told us that one bedroom will be allowed for each person, or couple with the following exceptions:</p>
-        <ul>
-          <li>Children aged 16 or under will be expected to share with another child of the same sex.</li>
-          <li>Children aged 10 and under will be expected to share with another child regardless of their sex.</li>
-        </ul>
-      </div>
-      </details>
-      
-      <details class="details-accordion">
-      <summary>How much will my housing benefit be reduced by?</summary>
-      <div class="details-accordion-content">
-        <p>If you have one spare bedroom you are likely to lose 14% of your weekly housing benefit and if you have two spare bedrooms you could lose 25%. 
-          This means that you will have to pay the extra money towards the rent yourself.</p>
-      </div>
-      </details>
-      
-      <details class="details-accordion">
-      <summary>What considerations should I make when bidding for a new property?</summary>
-      <div class="details-accordion-content">
-        <p>If you are currently looking for a new home you must consider very carefully the size of the home you want to move to. 
-          Remember if you are of working age and receiving housing benefit, this might be reduced if you move to a home which is too big for you.</p>
-      </div>
-      </details>
-      
-      <details class="details-accordion">
-      <summary>How can I move to a smaller home?</summary>
-      <div class="details-accordion-content">
-        <p>There may be a number of options available to you:</p>
-        <ul>
-          <li>You could exchange your current home with another tenant who wants to move. This is called a mutual exchange.</li>
-          <li>You could be awarded a rehousing priority under the SMARTMOVE scheme to move to a smaller more manageable home if you are currently living in a high demand council / housing association property.</li>
-          <li>You can move to another council/housing association property by bidding for the available homes which we advertise each week.</li>
-        </ul>
-      </div>
-      </details>
-      
-      <details class="details-accordion">
-      <summary>Are adapted properties exempt?</summary>
-      <div class="details-accordion-content">
-        <p>Adapted properties are not exempt from the welfare reform and extra bedroom charge.</p>
-      </div>
-      </details>
-      
-      <details class="details-accordion">
-      <summary>If there is a couple, one of a pensionable age and the other not, will they be affected by benefit changes next year?</summary>
-      <div class="details-accordion-content">
-        <p>Generally speaking, pensionable aged persons are exempt from the welfare reforms. However, 
-          when there is a couple & one isn’t of pensionable age it is not as straightforward, it will be dependent on what DWP benefit they are receiving.</p>
-      </div>
-      </details>
-      
-      <details class="details-accordion">
-      <summary>Furnished properties change</summary>
-      <div class="details-accordion-content">
-        <p>Where a property is furnished and under occupied they lose the HB granted for the furniture charge. 
-          The % reduction is applied to the net rent and the furniture charge too.</p>
-      </div>
-      </details>
-      
-      <details class="details-accordion">
-      <summary>Benefit cap</summary>
-      <div class="details-accordion-content">
-        <p>The DWP have announced that the benefit cap (overall level of combined benefits and credits a workless household (with no disability benefits) 
-          can receive to around £384.62/week for lone parents/couples outside London, or £257.69/week for single people outside London) 
-            will not be introduced nationally in April but are expecting it to be in place across the country by September, 
-            we will update our information as we know more.</p>
-      </div>
-      </details>
-      
-      <details class="details-accordion">
-      <summary>Spare room subsidy exemption</summary>
-      <div class="details-accordion-content">
-        <p>For tenants to be exempt from the spare room subsidy, they must have been continuously entitled to housing benefit since 
-          at least 1 January 1996 and occupied the same dwelling since that date, save for any period where a 
-          fire, flood, explosion or natural catastrophe has rendered the property uninhabitable.</p>
-        <p>These provisions apply if there has been a break in entitlement of no more than 4 weeks, or if there has been a break of entitlement of 
-          no more than 52 weeks if the claimant or their partner is a welfare to work beneficiary.</p>
-        <p>Note: it may be the case that the protection has been inherited by a tenant where they have succeeded a tenancy.</p>
-        <p>The DWP are going to amend the regulations to remove this exemption. However, until the legislation is amended, 
-          customers who meet the criteria are exempt from the spare room subsidy.</p>
-        <p>An application form must be completed by the customer and returned to the benefits service.</p>
-    </div>
-    </details>
-  `,
-    { buttonLabel: "Welfare reform", formName: "" },
-    { typeKey: "housing_benefits_information_provided" },
-    { typeKey: "housing_benefits_information_requested" },
-    {
-      type: "Information",
-      keywords: [
-        'Housing Benefit',
-        'Housing Benfit',
-        'Housing Benifit',
-        'Housng Benefit',
-        'Housing Beneift',
-        'Housin Benefit',
-        'Housing Benefet',
-        'Housng Benfit',
-        'Housin Benifit',
-        'Housing Benifits',
-        'Welfare reform',
-        'Wlfare reform',
-        'Welfare refrom',
-        'Welfar reform',
-        'Welfare reforrm',
-        'Welfere reform',
-        'Welfare reformm',
-        'Welfare reformz',
-        'Welfer reform'
-      ],  
-      categories: ["Housing", "Benefits"],
-    },
-    { date: "05/11/2024", name: "Andy Walker" }
-  );
+  //Universal Credit is in Cross Region
   
 
   const housingBenefits = new MenuH(
@@ -5300,7 +5307,7 @@ const rentVariation = new ContentH(
         </p>
         <p>
             Tenants can decide whether to pay the levy, which is not covered by Housing Benefit or Universal Credit. 
-            For any tenant levy enquiries contact the Community Engagement Team: <a href="mailto:getinvolved@sheffield.gov.uk">getinvolved@sheffield.gov.uk</a> or call 0114 2735566.
+            For any tenant levy enquiries contact the Community Engagement Team: <a href="mailto:getinvolved@sheffield.gov.uk">getinvolved@sheffield.gov.uk</a> or call <a href="tel:0114 2735566">0114 2735566</a>.
         </p>
     </div>
 </details>
@@ -5451,21 +5458,7 @@ const statements = new ContentH(
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
 
-const universalCredit = new ContentH(
-  "universalCredit",
-  "Universal Credit",
-  "",
-  `
-<p>
-Refer to the "Benefits" section for information about Universal Credit.
-</p>
-  `,
-  { buttonLabel: "Universal Credit", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
-  { typeKey: "rents_transfered_to_service" },
-  { type: "Universal Credit", keywords: ["Rent"], categories: ["Housing"] },
-  { date: "16/10/2024", name: "Shahzad Athar" }
-);
+//universalCredit is in cross regions
 
 const rents = new MenuH(
   "rents",
@@ -5684,8 +5677,7 @@ const furnishedAccommodation = new ContentH(
     <h3>Furnished Delivery Schedule</h3>
     <p>
       Open the delivery schedule spreadsheet (copy the link:
-      <br />G:\HSG\Public\Supported Hsg\Furnished Accommodation\Furnished delivery
-      sheets\Furnished Delivery Sheet.xlsx<br />
+      <a href=""G:/HSG/Public/Supported Hsg/Furnished Accommodation/Furnished delivery sheets/Furnished Delivery Sheet.xlsx"" target="_blank">"G:/HSG/Public/Supported Hsg/Furnished Accommodation\Furnished delivery sheets/Furnished Delivery Sheet.xlsx"</a> 
       and paste into the Windows Explorer title bar).
     </p>
     <p>
@@ -6165,8 +6157,9 @@ const fobsandKeys = new ContentH(
     </summary>
     <div class="accordion-content">
       <p>
-        Please note: Howden House only deals with rehousing enquiries and will not be able to help with fobs or keys.
-      </p>
+      Please note: Howden House only deals with Rehousing enquiries and will not be able to help with fobs or keys. 
+      List of Area Offices:  <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices "target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
+    </p>
     </div>
   </details>
 
