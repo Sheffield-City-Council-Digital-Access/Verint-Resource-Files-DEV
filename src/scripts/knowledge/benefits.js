@@ -128,7 +128,7 @@ const applyForTheHouseholdSupportFund = new ContentB(
         </p>
         <p>
           Our network of Trusted assessors can be found at: <a href="https://www.sheffielddirectory.org.uk/HSF" target="_blank">https://www.sheffielddirectory.org.uk/HSF</a>
-            <!-- Button --><button id="navigateButton">Send link to customer</button><!-- JavaScript --><script>// Add a click event to the buttondocument.getElementById('navigateButton').addEventListener('click', function() {             // Redirect to a new pagewindow.location.href = 'https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service="Apply for a leaflet distribution consent permit"'; }); </script>
+          <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Capped%20Retail%20Discount%20Application%202023'">
         </p>
       </section>
     </p>
