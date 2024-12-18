@@ -54,6 +54,89 @@ class FormP extends CoreP {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
+  //#region Cross regional tiles
+
+  const makingAPayment = new ContentP(
+    "makingAPayment",
+    "Making A Payment",
+    "",
+    `
+      <p>
+        It is quick, safe, and secure to make a payment online or using our automated
+        telephone payment line. To do this, you will need:
+      <br>
+      <br>
+      <ul>
+        <li>Ticket reference number (can be found on Gateway)</li>
+        <li>Credit or debit card</li>
+        <li>Your vehicle registration number</li>
+      </ul>
+      <br>
+      <br>
+      The customer must enter ** on their keypad in place of the FD letters 
+      at the start of entering their pcn number
+      <br>
+      <br>
+      Alternatively, you can:
+      <br>
+      <br>
+      <ul>
+        <li>Pay at a pay point outlet by cash</li>
+        <li>Pay at a Post Office by cash, cheque, credit, or debit card</li>
+      </ul>
+      <br>
+      <br>
+      Sheffield City Council does not accept cash, cheque, or postal orders direct.
+      <br>
+      <br>
+      Payments are taken at the same time as the 
+      application is made and the permit is then active immediately.
+      <br>
+      <br>
+      For further information, visit 
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
+      <br>
+      <br>
+      How to make a payment, visit
+      <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank">Pay a Penalty Charge Notice</a>.
+    </p>
+    `,
+    { buttonLabel: "Parking Permit", formName: "" },
+    { typeKey: "parking_permit_information_provided" },
+    { typeKey: "parking_permit_transferred_to_service" },
+    {
+      type: "Information",
+      keywords: [
+        "parking permit",
+        "parking pass",
+        "parking permitt",
+        "parking permt",
+        "parking pemit",
+        "parkin permit",
+        "parking permitt",
+        "parknig",
+        "parkingg",
+        "paking",
+        "parrking",
+        "parkng",
+        "permt",
+        "permmit",
+        "permitt",
+        "pemit",
+        "premit",
+        "TEC",
+        "Fine",
+        "Taxi PCN",
+        "Bailiff"
+      ],
+      categories: ["Parking"],
+    },
+    { date: "06/12/2024", name: "Nathan Smith" }
+  );
+
+//#endregion Cross regional tiles
+
+
 const applyBlueBadge = new ContentP(
   "applyBlueBadge",
   "Apply for a Blue Badge",
@@ -1197,83 +1280,10 @@ const visitorsPermits = new ContentP(
   { date: "02/12/2024", name: "Andy Walker" }
 );
 
-const makingAPayment = new ContentP(
-  "makingAPayment",
-  "Making A Payment",
-  "",
-  `
-    <p>
-      It is quick, safe, and secure to make a payment online or using our automated
-      telephone payment line. To do this, you will need:
-    <br>
-    <br>
-    <ul>
-      <li>Ticket reference number (can be found on Gateway)</li>
-      <li>Credit or debit card</li>
-      <li>Your vehicle registration number</li>
-    </ul>
-    <br>
-    <br>
-    The customer must enter ** on their keypad in place of the FD letters 
-    at the start of entering their pcn number
-    <br>
-    <br>
-    Alternatively, you can:
-    <br>
-    <br>
-    <ul>
-      <li>Pay at a pay point outlet by cash</li>
-      <li>Pay at a Post Office by cash, cheque, credit, or debit card</li>
-    </ul>
-    <br>
-    <br>
-    Sheffield City Council does not accept cash, cheque, or postal orders direct.
-    <br>
-    <br>
-    Payments are taken at the same time as the 
-    application is made and the permit is then active immediately.
-    <br>
-    <br>
-    For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-    <br>
-    <br>
-    How to make a payment, visit
-    <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank">https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice</a>.
-  </p>
-	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-      "TEC",
-      "Fine",
-      "Taxi PCN",
-      "Bailiff"
-    ],
-    categories: ["Parking"],
-  },
-  { date: "06/12/2024", name: "Nathan Smith" }
-);
+
+//
+// makingAPayment is in the cross regional section at the top of the Parking.js file
+//
 
 const customerPaidTwice = new ContentP(
   "customerPaidTwice",
@@ -2069,8 +2079,9 @@ const howLongDoIHaveToAppeal = new ContentP(
   { date: "06/12/2024", name: "Nathan Smith" }
 );
 
-// makingAPayment is in the parking region as it is the same information to avoid duplication
-// It also sits within the parking tile so the content is in that region
+//
+// makingAPayme nt is in the cross regional section at the top of the Parking.js file
+//
 
 const multiplepcns = new ContentP(
   "multiplePcns",

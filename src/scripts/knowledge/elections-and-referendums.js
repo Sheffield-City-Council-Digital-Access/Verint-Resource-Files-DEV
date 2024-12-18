@@ -55,59 +55,58 @@ class FormEaR extends CoreEaR {
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
 // #region Annual Canvass
-
-const canvassForm = new ContentEaR(
-  "canvassForm",
-  "Canvass Form (CF)",
-  "How to complete the Canvass Form to confirm or update voter registration details for your household.",
-  `
-    <section class="info-panel" role="region" aria-label="Information panel">
+  const canvassForm = new ContentEaR(
+    "canvassForm",
+    "Canvass Form (CF)",
+    "How to complete the Canvass Form to confirm or update voter registration details for your household.",
+    `
+      <section class="info-panel" role="region" aria-label="Information panel">
+        <p>
+            Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+        </p>
+      </section>
       <p>
-          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+        Any residential property that does not respond to the CCB form will receive a
+        <strong>Canvass Form (CF)</strong>.
       </p>
-    </section>
-    <p>
-      Any residential property that does not respond to the CCB form will receive a
-      <strong>Canvass Form (CF)</strong>.
-    </p>
-    <p>
-      Someone in the property should check the details on the form are correct and
-      up to date. This form <strong>requires a response</strong>, even if the
-      details on it are correct. Responses can be made online at
-      <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a>
-      or by returning the completed form in the reply envelope. If there are changes
-      or to confirm there are no changes. If everything is correct, this can be
-      confirmed by SMS or phone instead, using the details on the form.
-    </p>
-    <p>
-      <strong
-        >You need to include the name and nationality of everyone aged 16 or over
-        who is resident and eligible to register for voting.</strong
-      >
-      If there are no eligible residents, you should state why this is the case.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
-  { typeKey: "annual_canvass_information_provided" },
-  {
-    type: "Request",
-    keywords: [
-      "elections",
-      "ele",
-      "elect",
-      "vote",
-      "voting",
-      "voters",
-      "electorial",
-      "elect",
-      "elec",
-      "canvass"
-    ],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "03/12/2024", name: "Andy Walker" }
-);
+      <p>
+        Someone in the property should check the details on the form are correct and
+        up to date. This form <strong>requires a response</strong>, even if the
+        details on it are correct. Responses can be made online at
+        <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a>
+        or by returning the completed form in the reply envelope. If there are changes
+        or to confirm there are no changes. If everything is correct, this can be
+        confirmed by SMS or phone instead, using the details on the form.
+      </p>
+      <p>
+        <strong
+          >You need to include the name and nationality of everyone aged 16 or over
+          who is resident and eligible to register for voting.</strong
+        >
+        If there are no eligible residents, you should state why this is the case.
+      </p>
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "annual_canvass_transferred_to_service" },
+    { typeKey: "annual_canvass_information_provided" },
+    {
+      type: "Request",
+      keywords: [
+        "elections",
+        "ele",
+        "elect",
+        "vote",
+        "voting",
+        "voters",
+        "electorial",
+        "elect",
+        "elec",
+        "canvass"
+      ],
+      categories: ["Elections and Referendums", "Electoral"],
+    },
+    { date: "03/12/2024", name: "Andy Walker" }
+  );
 
 const ccaCCBorCanvassForms = new ContentEaR(
   "ccaCCBorCanvassForms",
@@ -133,10 +132,8 @@ const ccaCCBorCanvassForms = new ContentEaR(
       confirmed by SMS or phone instead, using the details on the form.
     </p>
     <p>
-      <strong
-        >You need to include the name and nationality of everyone aged 16 or over
-        who is resident and eligible to register for voting.</strong
-      >
+      <strong> You need to include the name and nationality of everyone aged 16 or over
+        who is resident and eligible to register for voting.</strong>
       If there are no eligible residents, you should state why this is the case.
     </p>
   `,
