@@ -117,15 +117,16 @@ const childTravelPass = new ContentTaT(
     </p>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Lost of stolen pass</h3>
+        <h3>Lost or stolen pass</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
       <p>
-        If your child has misplaced their pass, you can order a replacement from
-        Travel South Yorkshire.
+        To replace a <strong>lost or damaged</strong> pass there is a £7 replacement fee. <br>
+        <strong>Stolen</strong> passes can be replaced free of charge if you have a Crime Reference Number from the Police.
+        You can make the payment by calling Traveline on <a href="tel:0800 9520002">0800 9520002</a>, selecting option 1, using your credit or debit card.
+        All replacements will be posted to your home address by First Class Post.
       </p>
-      <p>There will be a replacement fee of £7.</p>
       <p>
         Information on how to replace a misplaced pass can be found at:
         <a href="https://www.travelsouthyorkshire.com/zerofarepass" target="_blank">www.travelsouthyorkshire.com/zerofarepass</a>
