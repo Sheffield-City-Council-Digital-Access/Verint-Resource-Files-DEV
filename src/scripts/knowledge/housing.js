@@ -2485,7 +2485,7 @@ const contactHousingBenefits = new ContentH(
       contactHousingBenefits,
       localAssistanceScheme,
       pdsa,
-      universalCredits,
+      universalCredit,
       welfareReform
     ]
   );  
