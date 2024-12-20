@@ -56,7 +56,7 @@ class FormH extends CoreH {
 
 //#region Crossregion
 
-const universalCredits = new ContentH(
+const universalCredit = new ContentH(
   "universalCredit",
   "Universal credit",
   "Description Tbc",
