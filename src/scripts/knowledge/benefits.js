@@ -291,12 +291,12 @@ const energySupport = new ContentB(
     </p>
     <p>
       <ul>
-        <li>compare fuel costs between different suppliers to get a better deal. Visit <a href="https://www.energyhelpline.com/" target="_blank">https://www.energyhelpline.com/</a> or call <strong>0800 074 0745</strong></li>
+        <li>compare fuel costs between different suppliers to get a better deal. Visit <a href="https://www.energyhelpline.com/" target="_blank">https://www.energyhelpline.com/</a> or call <a href="tel:0800 0740745">0800 0740745</a></li>
         <li>it is often cheaper to get both gas and electricity from the same supplier and there is usually a discount for paying by Direct Debit</li>
         <li>many suppliers offer discounted schemes for older people or people claiming benefit</li>
         <li>some suppliers, including <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> or <a href="https://www.edfenergytrust.org.uk/" target="_blank">https://www.edfenergytrust.org.uk/</a>, offer financial grants to customers in need</li>
         <li>pensioners or individuals with sight or hearing impairments, disability or chronic illness should ask to be put on their supplier’s ‘Priority Services Register’, so they can’t be disconnected between the 1 October and 31 March</li>
-        <li>the Winter Fuel Payment helpline is <strong>0800 731 0160</strong></li>
+        <li>the Winter Fuel Payment helpline is <a href="tel:0800 7310160">0800 7310160</a></li>
       </ul>
     </p>
     <h3>Faults</h3>
@@ -306,7 +306,7 @@ const energySupport = new ContentB(
     <p>
       <ul>
         <li>the heating is turned on (there is normally a switch near the boiler)</li>
-        <li>the timer is set correctly – if you are unsure how to do this, call us on <strong>0114 273 5555</strong></li>
+        <li>the timer is set correctly – if you are unsure how to do this, call us on <a href="tel:0114 2735555">0114 2735555</a></li>
         <li>your room thermostat is set to the required temperature and your thermostatic radiator valves are turned on</li>
         <li>your pre-payment or token meter has credit</li>
       </ul>
@@ -315,7 +315,7 @@ const energySupport = new ContentB(
     If the system still won’t work, report a repair at: <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> or <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a>
     </p>
     <p>
-    If you want someone to visit your home and explain how the central heating works, call us on <strong>0114 273 5555</strong> or visit your Neighbourhood Office.
+    If you want someone to visit your home and explain how the central heating works, call us on <a href="tel:0114 2735555">0114 2735555</a> or visit your Neighbourhood Office.
     </p>
   </section>
   </div>
@@ -701,7 +701,7 @@ const moneySupport = new ContentB(
       </p>
       <p>
         You can also contact the Citizens Advice for money, debt advice and whether Universal Credit is right for you, 
-        by visiting their website or calling the Help to Claim line on <strong>0800 144 8444</strong>.
+        by visiting their website or calling the Help to Claim line on <a href="tel:0800 1448444">0800 1448444</a>.
       </p>
       <p>
         You can contact Citizens Advice at: 
@@ -948,7 +948,7 @@ const moneySupport = new ContentB(
       year.
     </p>
     <p>
-      More information on prescription prepayment certificates by calling <strong>0300 330 1341</strong> or visiting: 
+      More information on prescription prepayment certificates by calling <a href="tel:0300 3301341">0300 3301341</a> or visiting: 
       <a href="https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start" target="_blank">https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start</a>
     </p>
     <p>
@@ -1672,24 +1672,14 @@ const supportForBusinesses = new ContentB(
               <p>
                 Appeals should be made to:
               </p>
-              <p>
-                The Senior NNDR Administrator
-              </p>
-              <p>
-                Sheffield City Council
-              </p>
-              <p>
-                Non-Domestic Rates
-              </p>
-              <p>
-                PO Box 1310
-              </p>
-              <p>
-                Sheffield
-              </p>
-              <p>
-                S1 1UY
-              </p>
+              <address>
+                The Senior NNDR Administrator<br>
+                Sheffield City Council<br>
+                Non-Domestic Rates<br>
+                PO Box 1310<br>
+                Sheffield<br>
+                S1 1UY<br>
+              </adress>
           </div>
       </details>
     </div>
@@ -2200,7 +2190,7 @@ const howDoIApply = new ContentB(
   `
     <p>
       Applications can be made on our website at
-      <a href="www.sheffield.gov.uk/cost-of-living">Cost of Living</a>, if you need
+      <a href="www.sheffield.gov.uk/cost-of-living">www.sheffield.gov.uk/cost-of-living</a>, if you need
       assistance to apply, you can call the Community Helpline on 01142734567
       (option 0)
     </p>
@@ -2437,7 +2427,7 @@ const howDoesTheIndependanceGrantInformationApplicationProcessWork =
         <ul>
           <li>
             Self Service. You can fill in the form yourself on our website:
-            <a href="https://www.sheffield.gov.uk/localassistance">Local Assistance</a>. The
+            <a href="https://www.sheffield.gov.uk/localassistance">https://www.sheffield.gov.uk/localassistance</a>. The
             form can be filled in on a computer or mobile device.
           </li>
           <li>
