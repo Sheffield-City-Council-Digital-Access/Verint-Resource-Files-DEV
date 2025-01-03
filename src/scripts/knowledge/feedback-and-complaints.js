@@ -54,55 +54,56 @@ class FormFaC extends CoreFaC {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-const complaints = new ContentFaC(
-  "complaints",
-  "Complaints",
-  "How complaints are handled by Sheffield City Council, including the process, principles, and commitment to service improvement.",
+const adultsocialcarecomplaints = new ContentFaC(
+  "adultSocialCareComplaints",
+  "Adult social care complaints",
+  "Adult Social Care complaints, including resolution steps and investigation procedures.",
   `
-    <h3>Our Approach</h3>
+    <p> The Adult Social Care Complaints Procedure differs from the Corporate Complaints Procedure. 
+    This is because it is governed by the 2009 Local Authority Social Services and National Health Service Regulations.</p>
 
-    <p> Our definition of a complaint is ‘an expression of dissatisfaction, however made, about the standard of service, 
-    actions or lack of action by the organisation/landlord, its own staff, or those acting on its behalf, 
-    affecting an individual/resident or group of individuals/residents.</p>
+    <p>Customer Services, Feedback and Complaints Team act as Case Coordinator for Adult Social Care complaints.  </p>
 
-    <p>We value our customers’ views on the way we deliver our services. 
-    We are committed to using these views to improve our services.  </p>
+<h3>Early resolution</h3>
 
-    <p> When a customer makes a complaint, their complaint will be handled through with the approach set out in this Policy. 
-    We will do this irrespective of where and how they make their complaint.</p>
+<p> The focus of complaint handling is not about satisfying a complaints process but seeking to resolve the issues 
+our customers raise. </p>
 
-    <h3>Service request enquiry and complaints</h3>
+<p>You should only use this form for retrospective recording of a complaint resolved at the first point of contact 
+(read the Problem Solving Guide under Documents). 
+After 3 working days, if the complaint remains unresolved through problem solving and is not already recorded in the 
+Councils Feedback and Complaints case management system (CRM), 
+the complaint needs to be recorded using the Complain about Adult Social Care Services form. 
+The Customer Feedback and Complaints team will allocate the complaint to the Accountable / 
+Reviewing / Investigating Manager in the relevant service. 
+Read the Manager Guidance under Documents. </p>
 
-     <p>Our communication with the complainant will not identify individual members of staff or contractors, 
-     except in exceptional circumstances, as their actions are undertaken on behalf of the Council.</p>
+<p> The first task is to write to acknowledge receipt and to say who will be investigating the complaint. 
+If the Investigating Manager (IM) has not already spoken to the customer, 
+they should do this as soon as possible to clarify the issues raised and 
+the outcome sought and agree a timescale for a response. </p>
 
-     <p>Where a response to a complaint falls outside the timescales set out in this Policy, 
-     we will agree with the complainant suitable intervals for keeping them informed about their complaint.</p>
+<p> More detailed information of how to investigate and respond to a complaint is provided in the Corporate 
+Complaints Procedure – Effective Complaint handling Guide under Documents. </p>
 
-     <p>When responding, we will where appropriate, thank the complainant, 
-     clearly explain what happened and what we will do, and will apologise and put in place remedies.</p>
+<h3>Handling a complaint well</h3>
 
-     <p>Our tone will be open, responsive and avoid unnecessary formality. 
-     Written correspondence will use Plain English.</p>
-
-     <p>Customers who make a complaint will be treated fairly and will not be victimised or 
-     discriminated against either in the investigation or conclusion of their complaint, 
-     or in any service they receive or request.</p>
-
-     <p>Dealing with complaints is the responsibility of all Sheffield City Council employees.</p>
-
-     <p>We will keep a record of complaints raised by customers.</p>
-
-      <p>We will learn from complaints so that we can improve our service.</p>
-
+<p>
+  <ul>
+    <li>Check for any issues around consent or safeguarding</li>
+    <li>Review the key documentation around the complaint and speak to the people involved</li>
+    <li>Having formed an initial view, IMs should discuss their findings with the customer before drafting their response</li>
+    <li>Complaint responses should be focused on resolution and address the issues raised in a thorough way, using plain English</li>
+    <li>Responses must be sent from the relevant Head of Service, after being checked by the Service Manager</li>
+    <li>To help managers carry out their complaints investigation role we have developed the Customer Complaints: Effective Handling on Go Learn.</li>
+  </ul>
+</p>
 
   `,
   {
-    buttonLabel: "Make a compliment",
-    formName: "make_complaint",
+    buttonLabel: "Make an adult's social care complaint",
+    formName: "make_complaint_adult",
   },
-  { typeKey: "make_complaint_information_provided" },
-  { typeKey: "make_complaint_information_requested" },
   // {
   //   buttonLabel: "Make a compliment",
   //   formName: "feedback_compliment",
@@ -113,6 +114,10 @@ const complaints = new ContentFaC(
   // },
   // { buttonLabel: "Make a Suggestion" },
   // { formName: "feedback_suggestion" },
+  
+  { typeKey: "make_complaint_adult_information_provided" },
+  { typeKey: "make_complaint_adult_information_requested" },
+
   {
     type: "Complaint",
     keywords: [
@@ -130,7 +135,7 @@ const complaints = new ContentFaC(
 const childrensSocialCareComplaints = new ContentFaC(
   "childrensSocialCareComplaints",
   "Children's social care complaints",
-  "Children's Social Care complaints process, including stages of resolution and eligibility criteria.",
+  "Learn about the process for handling Children’s Social Care complaints, including resolution stages and statutory procedures",
   `
     <p> The Feedback and Complaints Team act as Case Coordinator for the Children and Families Service. </p>
 
@@ -297,56 +302,55 @@ const childrensSocialCareComplaints = new ContentFaC(
   { date: "11/11/2024", name: "Sam Coupland" }
 );
 
-const adultsocialcarecomplaints = new ContentFaC(
-  "adultSocialCareComplaints",
-  "Adult social care complaints",
-  "Adult Social Care complaints, including resolution steps and investigation procedures.",
+const complaints = new ContentFaC(
+  "complaints",
+  "Complaints",
+  "How complaints are handled by Sheffield City Council, including the process, principles, and commitment to service improvement.",
   `
-    <p> The Adult Social Care Complaints Procedure differs from the Corporate Complaints Procedure. 
-    This is because it is governed by the 2009 Local Authority Social Services and National Health Service Regulations.</p>
+    <h3>Our Approach</h3>
 
-    <p>Customer Services, Feedback and Complaints Team act as Case Coordinator for Adult Social Care complaints.  </p>
+    <p> Our definition of a complaint is ‘an expression of dissatisfaction, however made, about the standard of service, 
+    actions or lack of action by the organisation/landlord, its own staff, or those acting on its behalf, 
+    affecting an individual/resident or group of individuals/residents.</p>
 
-<h3>Early resolution</h3>
+    <p>We value our customers’ views on the way we deliver our services. 
+    We are committed to using these views to improve our services.  </p>
 
-<p> The focus of complaint handling is not about satisfying a complaints process but seeking to resolve the issues 
-our customers raise. </p>
+    <p> When a customer makes a complaint, their complaint will be handled through with the approach set out in this Policy. 
+    We will do this irrespective of where and how they make their complaint.</p>
 
-<p>You should only use this form for retrospective recording of a complaint resolved at the first point of contact 
-(read the Problem Solving Guide under Documents). 
-After 3 working days, if the complaint remains unresolved through problem solving and is not already recorded in the 
-Councils Feedback and Complaints case management system (CRM), 
-the complaint needs to be recorded using the Complain about Adult Social Care Services form. 
-The Customer Feedback and Complaints team will allocate the complaint to the Accountable / 
-Reviewing / Investigating Manager in the relevant service. 
-Read the Manager Guidance under Documents. </p>
+    <h3>Service request enquiry and complaints</h3>
 
-<p> The first task is to write to acknowledge receipt and to say who will be investigating the complaint. 
-If the Investigating Manager (IM) has not already spoken to the customer, 
-they should do this as soon as possible to clarify the issues raised and 
-the outcome sought and agree a timescale for a response. </p>
+     <p>Our communication with the complainant will not identify individual members of staff or contractors, 
+     except in exceptional circumstances, as their actions are undertaken on behalf of the Council.</p>
 
-<p> More detailed information of how to investigate and respond to a complaint is provided in the Corporate 
-Complaints Procedure – Effective Complaint handling Guide under Documents. </p>
+     <p>Where a response to a complaint falls outside the timescales set out in this Policy, 
+     we will agree with the complainant suitable intervals for keeping them informed about their complaint.</p>
 
-<h3>Handling a complaint well</h3>
+     <p>When responding, we will where appropriate, thank the complainant, 
+     clearly explain what happened and what we will do, and will apologise and put in place remedies.</p>
 
-<p>
-  <ul>
-    <li>Check for any issues around consent or safeguarding</li>
-    <li>Review the key documentation around the complaint and speak to the people involved</li>
-    <li>Having formed an initial view, IMs should discuss their findings with the customer before drafting their response</li>
-    <li>Complaint responses should be focused on resolution and address the issues raised in a thorough way, using plain English</li>
-    <li>Responses must be sent from the relevant Head of Service, after being checked by the Service Manager</li>
-    <li>To help managers carry out their complaints investigation role we have developed the Customer Complaints: Effective Handling on Go Learn.</li>
-  </ul>
-</p>
+     <p>Our tone will be open, responsive and avoid unnecessary formality. 
+     Written correspondence will use Plain English.</p>
+
+     <p>Customers who make a complaint will be treated fairly and will not be victimised or 
+     discriminated against either in the investigation or conclusion of their complaint, 
+     or in any service they receive or request.</p>
+
+     <p>Dealing with complaints is the responsibility of all Sheffield City Council employees.</p>
+
+     <p>We will keep a record of complaints raised by customers.</p>
+
+      <p>We will learn from complaints so that we can improve our service.</p>
+
 
   `,
   {
-    buttonLabel: "Make an adult's social care complaint",
-    formName: "make_complaint_adult",
+    buttonLabel: "Make a compliment",
+    formName: "make_complaint",
   },
+  { typeKey: "make_complaint_information_provided" },
+  { typeKey: "make_complaint_information_requested" },
   // {
   //   buttonLabel: "Make a compliment",
   //   formName: "feedback_compliment",
@@ -357,10 +361,6 @@ Complaints Procedure – Effective Complaint handling Guide under Documents. </p
   // },
   // { buttonLabel: "Make a Suggestion" },
   // { formName: "feedback_suggestion" },
-  
-  { typeKey: "make_complaint_adult_information_provided" },
-  { typeKey: "make_complaint_adult_information_requested" },
-
   {
     type: "Complaint",
     keywords: [

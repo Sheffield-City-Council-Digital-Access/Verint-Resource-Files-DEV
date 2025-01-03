@@ -59,7 +59,7 @@ class FormP extends CoreP {
   const makingAPayment = new ContentP(
     "makingAPayment",
     "Making A Payment",
-    "",
+    "Learn how to make a secure payment for parking tickets online, by phone, or at pay point outlets, including the necessary details for processing your payment.",
     `
       <p>
         It is quick, safe, and secure to make a payment online or using our automated
@@ -134,195 +134,594 @@ class FormP extends CoreP {
     { date: "06/12/2024", name: "Nathan Smith" }
   );
 
+  const customerPaidTwice = new ContentP(
+    "customerPaidTwice",
+    "Customer Has Paid Twice",
+    "Report a double payment issue by emailing Customer Services with the details of the problem for investigation",
+    `
+      <p>
+        The customer needs to email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> advising 
+        the issue they experienced, customer services will then look into the issue
+      </p>
+    `,
+    { buttonLabel: "Parking Permit", formName: "" },
+    { typeKey: "parking_permit_information_provided" },
+    { typeKey: "parking_permit_transferred_to_service" },
+    {
+      type: "Information",
+      keywords: [
+        "parking permit",
+        "parking pass",
+        "parking permitt",
+        "parking permt",
+        "parking pemit",
+        "parkin permit",
+        "parking permitt",
+        "parknig",
+        "parkingg",
+        "paking",
+        "parrking",
+        "parkng",
+        "permt",
+        "permmit",
+        "permitt",
+        "pemit",
+        "premit",
+      ],
+      categories: ["Parking"],
+    },
+    { date: "27/11/2024", name: "Andy Walker" }
+  );
+
 //#endregion Cross regional tiles
 
 
-const applyBlueBadge = new ContentP(
-  "applyBlueBadge",
-  "Apply for a Blue Badge",
-  "New and renewal badges",
+//#region Blue Badge
+
+  const appealBlueBadge = new ContentP(
+    "apealBlueBadge",
+    "Appeal a Blue Badge Decision",
+    "",
+    `
+      
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "blue_badge_information_provided" },
+    { typeKey: "blue_badge_tarnsferred_to_service" },
+    { type: "Appeal", keywords: [], categories: ["Parking"] },
+    { date: "01/10/2024", name: "Shahzad Athar" }
+  );
+
+  const applyBlueBadge = new ContentP(
+    "applyBlueBadge",
+    "Apply for a Blue Badge",
+    "Learn about the eligibility criteria and application process for a Blue Badge, including automatic qualification and discretionary assessments.",
+    `
+      <h3>Eligibility</h3>
+      <p>
+        If the condition that the customer has a diagnosis for is not permanent and
+        substantial they will not be eligible for a blue badge.
+      </p>
+      <h3>Automatically Qualify</h3>
+      <p>
+        The customer will automatically qualify for a blue badge if they meet the
+        following criteria and have the relevant evidence:
+      </p>
+      <ul>
+        <li>
+          In Receipt of Higher Rate Disability Living Allowance from the DWP
+          (Department for Works and Pensions) dated within the current financial year
+        </li>
+        <li>
+          In receipt of PIP (Personal Independence Payment) if scored 8 or above
+        </li>
+        <li>Registered as Blind (Severely Sight Impaired</li>
+        <li>War Pension Supplement</li>
+        <li>Armed Forces and Reserved Forces Compensation Scheme</li>
+        <li>
+          Terminally Ill Applicants - If the applicant is being treated by Mcmillan,
+          Weston Park or Northern General the application would require a stamp /
+          compliment slip / note from nurse or doctor and is issued for one year with
+          no charge.
+        </li>
+        <li>
+          Terminally Ill - A terminally ill applicant will have a DS1500 – A form
+          giving medical facts relating to cancer or an SR1 form used for claiming
+          benefits under the rules for people with terminal cancer. There is a charge
+          of £10 for all badges and the badge is issued for a year, should they apply
+          the following 2 years there would be no further charge.
+        </li>
+      </ul>
+      <p>
+        These applications will be fast tracked and would not be held up awaiting
+        payment or other evidence. When applying online these applications via
+        <a href="https://www.gov.uk" target="_blank">https://www.gov.uk</a> are
+        processed the same working day.
+      </p>
+      <h3>Discretionary</h3>
+      <p>
+        If the customer does not meet any of the criteria above they will need to go
+        through an assessment with an advisor to see if they qualify for a blue badge.
+      </p>
+      <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Whats happening with my application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+            You may be able to provide the customer with an update to their
+            application using the case notes or status update. All cases will be dealt
+            with in date order, there are no exceptions to this regardless of
+            circumstances so do not raise requests of this nature to FFT. Blue Badge
+            applications will be assessed within 28 days calendar days from the date
+            the application was received. The order date of the blue badge is not the
+            despatch date from our 3rd party who produce the Blue Badge.
+          </p>
+          <p>
+            Once Sheffield City Council have ordered the Blue Badge the 3rd Party have
+            5 working days to despatch and weekends need to be taken into account.
+          </p>
+    </div>
+  </details>
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "blue_badge_information_provided" },
+    { typeKey: "blue_badge_tarnsferred_to_service" },
+    { type: "Request", keywords: [], categories: ["Parking"] },
+    { date: "12/11/2024", name: "Andy Walker" }
+  );
+
+  const blueBadgeHolderPassedAway = new ContentP(
+    "blueBadgeHolderPassedAway",
+    "Badge Holder Passed Away",
+    "Learn how to report the passing of a Blue Badge holder and return the badge to Sheffield City Council.",
+    `
+      <p>
+        If the customer has an appointment with Registrars in Sheffield to report the
+        death, they can sign up to <strong>Tell Us Once</strong> meaning the customer
+        does not have to report it to each individual service. Alternatively the
+        details can be taken today and passed to our back office team who will update
+        our records, the badge should be returned to:
+      </p>
+      <address>
+        Customer Services<br />
+        Floor 2<br />
+        Howden House<br />
+        1 Union Street<br />
+        Sheffield<br />
+        S1 2SH
+      </address>
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "blue_badge_information_provided" },
+    { typeKey: "blue_badge_tarnsferred_to_service" },
+    { type: "Request", keywords: [], categories: ["Parking"] },
+    { date: "01/10/2024", name: "Shahzad Athar" }
+  );
+
+  const replacementBlueBadge = new ContentP(
+    "lostorStolenBlueBadge",
+    "Request a replacement badge",
+    "Find out how to request a replacement for a misplaced, stolen, or seized Blue Badge, including the process for submitting a form or contacting customer services.",
+    `
+      <h3>Misplaced or stolen badges</h3>
+      <p>
+        If a badge is lost or stolen we now require a form to be completed with a signature. 
+        The form is available online to print or alternatively a form can be sent out via 2nd post.
+      </p>
+      <h3>Badges seized by an enforcement officer</h3>
+      <p>
+        If your Blue Badge has been confiscated by an Enforcement Officer,
+        you will need to:
+      </p>
+      <p>
+        Send an e-mail to
+        <a href="mailto:customerservices@sheffield.gov.uk" target="_blank">customerservices@sheffield.gov.uk</a>
+      </p>
+      <p>
+        Or send a letter to:
+      </p>
+      <address>
+        Customer Services<br>
+        Floor 2<br>
+        Howden House<br>
+        1 Union Street<br>
+        Sheffield<br>
+        S1 2SH
+      </address>
+      <p>
+        In your message, please detail the circumstances that led to the Blue Badge
+        being taken. Once we receive this information, a member of our team will
+        contact you, and a decision will be made regarding the return of your Blue
+        Badge.
+      </p>
+    `,
+
+    { buttonLabel: "", formName: "" },
+    { typeKey: "blue_badge_information_provided" },
+    { typeKey: "blue_badge_tarnsferred_to_service" },
+    { type: "Request", keywords: [], categories: ["Parking"] },
+    { date: "12/11/2024", name: "Andy Walker" }
+  );
+
+  const blueBadge = new MenuP(
+    "blueBadge",
+    "Blue Badge",
+    "Information on applying for a Blue Badge, including eligibility criteria, replacement requests, and procedures for reporting the passing of a Blue Badge holder or appealing decisions.",
+    [
+      applyBlueBadge,
+      replacementBlueBadge,
+      blueBadgeHolderPassedAway,
+      appealBlueBadge,
+    ]
+  );
+
+//#endregion Blue Badge
+
+//#region Parking Issues
+
+const baySuspensions = new ContentP(
+  "baySuspensions",
+  "Bay Suspensions",
+  "Learn how to request a parking bay suspension, including the application process, charges, and payment details.",
   `
-		<h3>Eligibility</h3>
-		<p>
-			If the condition that the customer has a diagnosis for is not permanent and
-			substantial they will not be eligible for a blue badge.
-		</p>
-		<h3>Automatically Qualify</h3>
-		<p>
-			The customer will automatically qualify for a blue badge if they meet the
-			following criteria and have the relevant evidence:
-		</p>
-		<ul>
-			<li>
-				In Receipt of Higher Rate Disability Living Allowance from the DWP
-				(Department for Works and Pensions) dated within the current financial year
-			</li>
-			<li>
-				In receipt of PIP (Personal Independence Payment) if scored 8 or above
-			</li>
-			<li>Registered as Blind (Severely Sight Impaired</li>
-			<li>War Pension Supplement</li>
-			<li>Armed Forces and Reserved Forces Compensation Scheme</li>
-			<li>
-				Terminally Ill Applicants - If the applicant is being treated by Mcmillan,
-				Weston Park or Northern General the application would require a stamp /
-				compliment slip / note from nurse or doctor and is issued for one year with
-				no charge.
-			</li>
-			<li>
-				Terminally Ill - A terminally ill applicant will have a DS1500 – A form
-				giving medical facts relating to cancer or an SR1 form used for claiming
-				benefits under the rules for people with terminal cancer. There is a charge
-				of £10 for all badges and the badge is issued for a year, should they apply
-				the following 2 years there would be no further charge.
-			</li>
-		</ul>
-		<p>
-			These applications will be fast tracked and would not be held up awaiting
-			payment or other evidence. When applying online these applications via
-			<a href="https://www.gov.uk" target="_blank">https://www.gov.uk</a> are
-			processed the same working day.
-		</p>
-		<h3>Discretionary</h3>
-		<p>
-			If the customer does not meet any of the criteria above they will need to go
-			through an assessment with an advisor to see if they qualify for a blue badge.
-		</p>
-		<details class="accordion">
-  <summary class="accordion-header">
-    <h3>Whats happening with my application</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
+    <h3>Requesting a Suspension</h3>
     <p>
-					You may be able to provide the customer with an update to their
-					application using the case notes or status update. All cases will be dealt
-					with in date order, there are no exceptions to this regardless of
-					circumstances so do not raise requests of this nature to FFT. Blue Badge
-					applications will be assessed within 28 days calendar days from the date
-					the application was received. The order date of the blue badge is not the
-					despatch date from our 3rd party who produce the Blue Badge.
-				</p>
-				<p>
-					Once Sheffield City Council have ordered the Blue Badge the 3rd Party have
-					5 working days to despatch and weekends need to be taken into account.
-				</p>
-  </div>
-</details>
-	`,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_information_provided" },
-  { typeKey: "blue_badge_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Parking"] },
+      A request can be made that specific parking bays, for example pay and display,
+      permit holders only, disabled and loading bays are kept clear of parked
+      vehicles in certain circumstances such as:
+    </p>
+    <ul>
+      <li>
+        Maintenance of adjacent property where highway access is required for
+        deliveries, essential vehicles, skips etc.
+      </li>
+      <li>Skips on the highway</li>
+      <li>Maintenance of trees</li>
+      <li>Police request</li>
+      <li>Security reasons</li>
+      <li>Filming - contact us about filming in the city</li>
+      <li>Any other reason accepted by ourselves</li>
+    </ul>
+    <p>
+      Parking Services will not suspend bays to provide parking for vehicles unless
+      they are essential for works in the suspended area (such as an asbestos
+      removal vehicle).
+    </p>
+    <p>
+      Other works or private vehicles should be parked legally elsewhere (for
+      example in nearby pay and display parking).
+    </p>
+    <h3>Submitting your application</h3>
+    <p>
+      Applications for parking bay suspensions should be made at least 14 days
+      before the suspension start date.
+    </p>
+    <h3>Charges and payment</h3>
+    <p>
+      If the application is accepted, Parking Services will contact the customer for
+      payment.
+    </p>
+    <p>
+      Full payment must be made at least 9 days before the suspension start date.
+      You can pay by credit card, debit card, or BACS.
+    </p>
+    <p>
+      The daily charge per 5m section of bay is £17.90 for City Centre controlled
+      parking zone, with a non-refundable administration fee of £29.85. The daily
+      charge per 5m section of bay is £5 for all other areas, with a non-refundable
+      administration fee of £29.85.
+    </p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+
+const carParkParkingMeterProblem = new ContentP(
+  "carParkParkingMeterProblem",
+  "Car Park/Parking Meter Problem",
+  "Report parking meter issues or request a refund by contacting Parking Enforcement via phone or email.",
+  `
+    <p>
+    If the customer is reporting an issue with a parking meter/machine fault, 
+    they need to contact Parking Enforcement on <a href="tel:0114 2736255">0114 2736255</a>. Any issues 
+    around refunds need to be put in writing to <a href="mailto:parkingenforcement@sheffield.gov.uk">parkingenforcement@sheffield.gov.uk</a>
+    </p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "27/11/2024", name: "Dinah WIlliams" }
+);
+
+const illegalParking = new ContentP(
+  "illegalParking",
+  "Illegal Parking",
+  "Report illegal parking or vehicles causing obstructions by contacting Parking Enforcement or the police.",
+  `
+    <p>
+      Refers to a vehicle parked where there are parking restrictions in place, or
+      the vehicle has travelled over parking restrictions to park.
+    </p>
+    <p>Parking restrictions include:</p>
+    <ul>
+      <li>Single/double yellow lines</li>
+      <li>Permit zones</li>
+      <li>Dropped kerb</li>
+    </ul>
+    <p>
+      Please note: “H” and Disabled road markings are only advisory and are not
+      legally enforceable in the same way as yellow lines.
+    </p>
+    <p>
+      If the vehicle is contraveing any highway restrictions i.e. parked on 
+      Double Yellow Lines then advise the customer to contact parking enforcement 
+      on 01142736255.  If a vehicle is causing an obstruction or blocking acess 
+      then advise the customer to contact the police on 101.
+    </p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "12/11/2024", name: "Andy walker" }
+);
+
+const vehicleObstruction = new ContentP(
+  "vehicleObstruction",
+  "Vehicle Obstruction",
+  "Report vehicle obstructions or hazards to the police via 101, or contact Highways Enforcement for other road obstructions.",
+  `
+    <p>
+      Refers to a vehicle causing an obstruction that is considered to be a hazard
+      to other road or footpath users where there are no parking restrictions in
+      place. For example:
+    </p>
+    <ul>
+      <li>Blocking the footpath</li>
+      <li>
+        Parked on a bend or at a junction creating a safety hazard for other users
+      </li>
+      <li>
+        The Police are responsible for enforcement action against vehicle
+        obstruction on the highway, advise the customer to use the 101 service to
+        report
+      </li>
+    </ul>
+    <h3>Other Obstructions</h3>
+    <p>
+      Any other obstruction left on the roads, such as skips, building material,
+      mud, caravans, are dealt with by Highways Enforcement
+    </p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
   { date: "12/11/2024", name: "Andy Walker" }
 );
 
-const replacementBlueBadge = new ContentP(
-  "lostorStolenBlueBadge",
-  "Request a replacement badge",
-  "Misplaced, stolen or seized by an enforcement officer",
-  `
-		<h3>Misplaced or stolen badges</h3>
-	  <p>
-			If a badge is lost or stolen we now require a form to be completed with a signature. 
-			The form is available online to print or alternatively a form can be sent out via 2nd post.
-	  </p>
-		<h3>Badges seized by an enforcement officer</h3>
-		<p>
-			If your Blue Badge has been confiscated by an Enforcement Officer,
-			you will need to:
-		</p>
-		<p>
-			Send an e-mail to
-			<a href="mailto:customerservices@sheffield.gov.uk" target="_blank">customerservices@sheffield.gov.uk</a>
-		</p>
-		<p>
-			Or send a letter to:
-		</p>
-		<address>
-			Customer Services<br>
-			Floor 2<br>
-			Howden House<br>
-			1 Union Street<br>
-			Sheffield<br>
-			S1 2SH
-		</address>
-		<p>
-			In your message, please detail the circumstances that led to the Blue Badge
-			being taken. Once we receive this information, a member of our team will
-			contact you, and a decision will be made regarding the return of your Blue
-			Badge.
-		</p>
-	`,
-
-  { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_information_provided" },
-  { typeKey: "blue_badge_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Parking"] },
-  { date: "12/11/2024", name: "Andy Walker" }
+const vehicleParkedInASuspendedBay = new ContentP(
+  "vehicleParkedInASuspendedBay",
+  "Vehicle Parked In A Suspended Bay",
+  "Learn who to report vehicles parked in a suspended bay to.",
+  `<p>Should be reported to Parking Enforcement</p>`,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
-const appealBlueBadge = new ContentP(
-  "apealBlueBadge",
-  "Appeal a Blue Badge Descision",
-  "",
+const yellowLineDispensations = new ContentP(
+  "yellowLineDispensations",
+  "Yellow Line Dispensations",
+  "Learn how to apply for a Yellow Line Dispensation, including eligibility, application process, and associated charges.",
   `
-		
+    <h3>Request Yellow Line Dispensation</h3>
+    <p>
+      Parking Services will consider dispensations to allow vehicles which are being
+      used as a workshop vehicle (e.g. vehicle where there is equipment which needs
+      to be used directly from the vehicle as part of the work being carried out at
+      an adjacent property) to park on yellow lines, or in bays for longer than
+      restrictions allow.
+    </p>
+    <h3>Dispensations are unlikely to be granted if:</h3>
+    <ul>
+      <li>A loading ban applies</li>
+      <li>The vehicle is likely to cause an obstruction to traffic flow</li>
+      <li>The vehicle may be hazardous to other road users</li>
+    </ul>
+    <p>
+      If dispensation is granted, we will issue a signed written notice which must
+      be clearly displayed on the parked vehicle.
+    </p>
+    <p>
+      Dispensations are vehicle and location specific, if the dispensation notice
+      has been altered in any way it will be deemed invalid.
+    </p>
+    <h3>Submitting your application</h3>
+    <p>
+      Applications for dispensations should be made at least 7 days before the
+      dispensation start date.
+    </p>
+    <h3>Charges and payment</h3>
+    <p>
+      If the application is accepted, Parking Services will contact the customer for
+      payment.
+    </p>
+    <p>
+      Full payment is required before dispensation can be granted. There is a charge
+      of £17.90 per vehicle per day for a dispensation as well as a £29.85 non-refundable
+      administration fee.
+    </p>
 	`,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_information_provided" },
-  { typeKey: "blue_badge_tarnsferred_to_service" },
-  { type: "Appeal", keywords: [], categories: ["Parking"] },
-  { date: "01/10/2024", name: "Shahzad Athar" }
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
 );
 
-const bluBadgeHolderPassedAway = new ContentP(
-  "bluBadgeHolderPassedAway",
-  "Badge Holder Passed Away",
-  "Let us know the badge holder has passed away",
-  `
-		<p>
-			If the customer has an appointment with Registrars in Sheffield to report the
-			death, they can sign up to <strong>Tell Us Once</strong> meaning the customer
-			does not have to report it to each individual service. Alternatively the
-			details can be taken today and passed to our back office team who will update
-			our records, the badge should be returned to:
-		</p>
-		<address>
-			Customer Services<br />
-			Floor 2<br />
-			Howden House<br />
-			1 Union Street<br />
-			Sheffield<br />
-			S1 2SH
-		</address>
-	`,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_information_provided" },
-  { typeKey: "blue_badge_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Parking"] },
-  { date: "01/10/2024", name: "Shahzad Athar" }
-);
-
-const blueBadge = new MenuP(
-  "blueBadge",
-  "Blue Badge",
-  "Apply, replace or change and existing application",
+const parkingIssues = new MenuP(
+  "parkingIssues",
+  "Parking Issues",
+  "Guidance on reporting illegal parking, vehicle obstructions, and issues with parking meters. It also includes information on bay suspensions, yellow line dispensations, and vehicles parked in suspended bays.",
   [
-    applyBlueBadge,
-    replacementBlueBadge,
-    bluBadgeHolderPassedAway,
-    appealBlueBadge,
+    illegalParking,
+    vehicleObstruction,
+    carParkParkingMeterProblem,
+    baySuspensions,
+    yellowLineDispensations,
+    vehicleParkedInASuspendedBay,
   ]
 );
 
-// --------- KEEP THIS AT THE TOP ------------------------------------------- \\
-// --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
+//#endregion Parking Issues
+
+//#region Parking Permits
 
 const businessPermit = new ContentP(
   "businessPermit",
   "Business Permit",
-  "About the Business Permit",
+  "Learn about the types, costs, and application process for business permits, including required evidence for vehicle ownership and proof of address.",
   `
   <h3>When is a business permit required?</h3>		
     <p>
@@ -443,7 +842,7 @@ const businessPermit = new ContentP(
 const carerPermitAndMedical = new ContentP(
   "carerPermitAndMedical",
   "Carer Permit And Medical",
-  "",
+  "Learn about eligibility, cost, and required evidence for a carer permit, allowing carers to park in permit holder areas while providing home care.",
   `
 		<h3>About the Permit</h3>
 		<p>
@@ -513,183 +912,14 @@ const carerPermitAndMedical = new ContentP(
   { date: "02/12/2024", name: "Andy walker" }
 );
 
-const organisationCarer = new ContentP(
-  "organisationCarer",
-  "Organisation Carer",
-  "",
-  `
-		<h3>About the Permit</h3>
-		<p>
-			As an organisation you can apply for a permit to use in permit holder bays in
-			all parking zones but not in the city centre.
-		</p>
-		<p>Organisation carer permits are available for:</p>
-		<ul>
-			<li>
-				Mental health social workers visiting a patient who may need to be detained
-				under the Mental Health Act
-			</li>
-			<li>Primary care outreach nurses</li>
-			<li>TB nurses</li>
-			<li>Health Visitors</li>
-			<li>Family support workers</li>
-		</ul>
-		<p>
-			The driver can only use the permit for carrying out visits to clients or
-			patients, not to park where they are based (their workplace).
-		</p>
-		<p>
-			Carer permit holders have to display a timer disc in the vehicle to show when
-			they started parking. The maximum time for parking is 2 hours.
-		</p>
-		<p>
-			If the client/patient regularly needs longer care visits, they may be eligible
-			to apply for a resident carer permit (see above). Clients/patients who require
-			an occasional longer visit may provide a visitor permit.
-		</p>
-		<h3>Cost</h3>
-		<p>£10 each for 12 months.</p>
-		<h3>Evidence Required</h3>
-		<p>
-			The organisation should apply and not an individual and provide the following
-			information:
-		</p>
-		<ul>
-			<li>The organisations operation</li>
-			<li>How many staff are employed</li>
-			<li>How many permits are required</li>
-			<li>Why the permit is required</li>
-		</ul>
-    <p>
-      When you purchase your parking permit you need to send proof of eligibility 
-      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
-      (if you have not been requested to do so in the application process). 
-      At any time after this while you hold a permit we may require you to provide proof 
-      of your vehicle registration and your home or business address as part of 
-      regular audit checks. If this is requested please submit them to 
-      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
-    </p>
-      <p>
-      For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-      </p>
-	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "02/12/2024", name: "Andy Walker" }
-);
-
-const medicalProfessionalCarer = new ContentP(
-  "medicalProfessionalCarer",
-  "Medical Professional Carer (NHS)",
-  "",
-  `
-    <h3>About the Permit</h3>
-    <p>Medical professional carer permits are available for:</p>
-    <ul>
-      <li>NHS qualified medical practitioners</li>
-      <li>
-        NHS medical practitioners carrying essential equipment or drugs to treat a
-        patient resident
-      </li>
-    </ul>
-    <p>
-      The driver can only use the permit for carrying out visits to clients or
-      patients, not to park where they are based (their workplace).
-    </p>
-    <p>
-      Carer permit holders have to display a timer disc in the vehicle to show when
-      they started parking. The maximum time for parking is 2 hours.
-    </p>
-    <p>
-      If the client/patient regularly needs longer care visits, they may be eligible
-      to apply for a resident carer permit (see above). Clients/patients who require
-      an occasional longer visit may provide a visitor permit.
-    </p>
-    <h3>Cost</h3>
-    <p>£10 each for 12 months.</p>
-    <h3>Evidence Required</h3>
-    <p>
-      The organisation should apply not for an individual and provide the following
-      information:
-    </p>
-    <ul>
-      <li>The organisations operation</li>
-      <li>How many staff are employed</li>
-      <li>How many permits are required</li>
-      <li>Why the permit is required</li>
-    </ul>
-    <p>
-      When you purchase your parking permit you need to send proof of eligibility 
-      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
-      (if you have not been requested to do so in the application process). 
-      At any time after this while you hold a permit we may require you to provide proof 
-      of your vehicle registration and your home or business address as part of 
-      regular audit checks. If this is requested please submit them to 
-      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
-    </p>
-    <p>
-    For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-    </p>
-	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "02/12/2024", name: "Andy Walker" }
-);
+//
+//customerPaidTwice is in the cross regional section at the top of the Parking.js file
+//
 
 const greenParkingPermit = new ContentP(
   "greenParkingPermit",
   "Green Parking Permit",
-  "",
+  "Learn about the eligibility, benefits, and application process for a free Green Parking Permit for ultra low-emission vehicles (ULEVs).",
   `
 		<h3>About the Permit</h3>
 		<p>
@@ -801,7 +1031,7 @@ const greenParkingPermit = new ContentP(
 const langsettAndHillsboroughBusAndTramgate = new ContentP(
   "langsettAndHillsboroughBusAndTramGate",
   "Langsett And Hillsborough Bus And Tram Gate",
-  "",
+  "Learn about the eligibility and application process for a free permit to drive through the Langsett and Hillsborough bus and tram gate for residents of specific roads.",
   `
 		<h3>About the Permit</h3>
 		<p>
@@ -893,10 +1123,187 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
   { date: "02/12/2024", name: "Andy Walker" }
 );
 
+//
+//makingAPayment is in the cross regional section at the top of the Parking.js file
+//
+
+const medicalProfessionalCarer = new ContentP(
+  "medicalProfessionalCarer",
+  "Medical Professional Carer (NHS)",
+  "Learn about the eligibility, cost, and application process for medical professional carer permits for NHS practitioners carrying essential equipment or treating patients.",
+  `
+    <h3>About the Permit</h3>
+    <p>Medical professional carer permits are available for:</p>
+    <ul>
+      <li>NHS qualified medical practitioners</li>
+      <li>
+        NHS medical practitioners carrying essential equipment or drugs to treat a
+        patient resident
+      </li>
+    </ul>
+    <p>
+      The driver can only use the permit for carrying out visits to clients or
+      patients, not to park where they are based (their workplace).
+    </p>
+    <p>
+      Carer permit holders have to display a timer disc in the vehicle to show when
+      they started parking. The maximum time for parking is 2 hours.
+    </p>
+    <p>
+      If the client/patient regularly needs longer care visits, they may be eligible
+      to apply for a resident carer permit (see above). Clients/patients who require
+      an occasional longer visit may provide a visitor permit.
+    </p>
+    <h3>Cost</h3>
+    <p>£10 each for 12 months.</p>
+    <h3>Evidence Required</h3>
+    <p>
+      The organisation should apply not for an individual and provide the following
+      information:
+    </p>
+    <ul>
+      <li>The organisations operation</li>
+      <li>How many staff are employed</li>
+      <li>How many permits are required</li>
+      <li>Why the permit is required</li>
+    </ul>
+    <p>
+      When you purchase your parking permit you need to send proof of eligibility 
+      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
+      (if you have not been requested to do so in the application process). 
+      At any time after this while you hold a permit we may require you to provide proof 
+      of your vehicle registration and your home or business address as part of 
+      regular audit checks. If this is requested please submit them to 
+      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
+    </p>
+    <p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    </p>
+	`,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "02/12/2024", name: "Andy Walker" }
+);
+
+const organisationCarer = new ContentP(
+  "organisationCarer",
+  "Organisation Carer",
+  "Learn about the eligibility, cost, and application process for organisation carer permits, allowing access to permit holder bays for healthcare and support professionals.",
+  `
+		<h3>About the Permit</h3>
+		<p>
+			As an organisation you can apply for a permit to use in permit holder bays in
+			all parking zones but not in the city centre.
+		</p>
+		<p>Organisation carer permits are available for:</p>
+		<ul>
+			<li>
+				Mental health social workers visiting a patient who may need to be detained
+				under the Mental Health Act
+			</li>
+			<li>Primary care outreach nurses</li>
+			<li>TB nurses</li>
+			<li>Health Visitors</li>
+			<li>Family support workers</li>
+		</ul>
+		<p>
+			The driver can only use the permit for carrying out visits to clients or
+			patients, not to park where they are based (their workplace).
+		</p>
+		<p>
+			Carer permit holders have to display a timer disc in the vehicle to show when
+			they started parking. The maximum time for parking is 2 hours.
+		</p>
+		<p>
+			If the client/patient regularly needs longer care visits, they may be eligible
+			to apply for a resident carer permit (see above). Clients/patients who require
+			an occasional longer visit may provide a visitor permit.
+		</p>
+		<h3>Cost</h3>
+		<p>£10 each for 12 months.</p>
+		<h3>Evidence Required</h3>
+		<p>
+			The organisation should apply and not an individual and provide the following
+			information:
+		</p>
+		<ul>
+			<li>The organisations operation</li>
+			<li>How many staff are employed</li>
+			<li>How many permits are required</li>
+			<li>Why the permit is required</li>
+		</ul>
+    <p>
+      When you purchase your parking permit you need to send proof of eligibility 
+      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
+      (if you have not been requested to do so in the application process). 
+      At any time after this while you hold a permit we may require you to provide proof 
+      of your vehicle registration and your home or business address as part of 
+      regular audit checks. If this is requested please submit them to 
+      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
+    </p>
+      <p>
+      For further information, visit 
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+      </p>
+	`,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "02/12/2024", name: "Andy Walker" }
+);
+
 const residentsPermit = new ContentP(
   "residentsPermit",
   "Residents Permit",
-  "",
+  "Learn about the eligibility, cost, and application process for residents parking permits, including vehicle and address verification requirements.",
   `
 		<h3>About the Permit</h3>
 		<p>
@@ -1000,7 +1407,7 @@ const residentsPermit = new ContentP(
 const staffPermit = new ContentP(
   "staffPermit",
   "Staff Permit",
-  "",
+  "Find out how staff can apply for a parking permit through Facilities Management with detailed instructions on the application process.",
   `<p>
     Staff who need to apply for a parking permit should contact Facilities Management 
     for assistance. Full details on how to apply for a staff parking permit can be 
@@ -1044,7 +1451,7 @@ const staffPermit = new ContentP(
 const tradePermit = new ContentP(
   "tradePermit",
   "Trade Permit",
-  "",
+  "Learn about the application process, costs, and required evidence for obtaining trade permits for parking while working in Sheffield permit zones.",
   `
 		<h3>About the Permit</h3>
 		<p>
@@ -1133,7 +1540,7 @@ const tradePermit = new ContentP(
 const utilityPermit = new ContentP(
   "utilityPermit",
   "Utility Permit",
-  "",
+  "Learn about the utility permit application process, including costs and how utility companies can apply for permits in Sheffield's city centre.",
   `
 		<h3>About the Permit</h3>
 		<p>
@@ -1187,7 +1594,7 @@ const utilityPermit = new ContentP(
 const visitorsPermits = new ContentP(
   "visitorsPermits",
   "Visitors Permits",
-  "",
+  "Learn about the application process, costs, and required evidence for obtaining visitor parking permits for guests and contractors.",
   `
 		<h3>About the Permit</h3>
 		<p>
@@ -1280,430 +1687,35 @@ const visitorsPermits = new ContentP(
   { date: "02/12/2024", name: "Andy Walker" }
 );
 
-//
-// makingAPayment is in the cross regional section at the top of the Parking.js file
-//
-
-const customerPaidTwice = new ContentP(
-  "customerPaidTwice",
-  "Customer Has Paid Twice ",
-  "",
-  `
-    <p>
-      The customer needs to email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> advising 
-      the issue they experienced, customer services will then look into the issue
-    </p>
-	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "27/11/2024", name: "Andy Walker" }
+const parkingPermits = new MenuP(
+  "parkingPermit",
+  "Parking Permits",
+  "Comprehensive information on different types of parking permits including business, carer, medical, green, trade, staff, residents, and visitors' permits. It covers eligibility, application process, costs, and necessary evidence for each permit type.",
+  [
+    businessPermit,
+    carerPermitAndMedical,
+    organisationCarer,
+    medicalProfessionalCarer,
+    greenParkingPermit,
+    langsettAndHillsboroughBusAndTramgate,
+    residentsPermit,
+    staffPermit,
+    tradePermit,
+    utilityPermit,
+    visitorsPermits,
+    makingAPayment,
+    customerPaidTwice,
+  ]
 );
 
-const haveYouReceivedMyAppeal = new ContentP(
-  "haveYouReceivedMyAppeal",
-  "Have You Received My Appeal",
-  "",
-  `
-	  <p>This can be found by checking Gateway.</p>
-  `,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
-);
-
-const illegalParking = new ContentP(
-  "illegalParking",
-  "Illegal Parking",
-  "",
-  `
-    <p>
-      Refers to a vehicle parked where there are parking restrictions in place, or
-      the vehicle has travelled over parking restrictions to park.
-    </p>
-    <p>Parking restrictions include:</p>
-    <ul>
-      <li>Single/double yellow lines</li>
-      <li>Permit zones</li>
-      <li>Dropped kerb</li>
-    </ul>
-    <p>
-      Please note: “H” and Disabled road markings are only advisory and are not
-      legally enforceable in the same way as yellow lines.
-    </p>
-    <p>
-      If the vehicle is contraveing any highway restrictions i.e. parked on 
-      Double Yellow Lines then advise the customer to contact parking enforcement 
-      on 01142736255.  If a vehicle is causing an obstruction or blocking acess 
-      then advise the customer to contact the police on 101.
-    </p>
-  `,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "12/11/2024", name: "Andy walker" }
-);
-
-const vehicleObstruction = new ContentP(
-  "vehicleObstruction",
-  "Vehicle Obstruction",
-  "Information relating to Vehicle Obstruction",
-  `
-    <p>
-      Refers to a vehicle causing an obstruction that is considered to be a hazard
-      to other road or footpath users where there are no parking restrictions in
-      place. For example:
-    </p>
-    <ul>
-      <li>Blocking the footpath</li>
-      <li>
-        Parked on a bend or at a junction creating a safety hazard for other users
-      </li>
-      <li>
-        The Police are responsible for enforcement action against vehicle
-        obstruction on the highway, advise the customer to use the 101 service to
-        report
-      </li>
-    </ul>
-    <h3>Other Obstructions</h3>
-    <p>
-      Any other obstruction left on the roads, such as skips, building material,
-      mud, caravans, are dealt with by Highways Enforcement
-    </p>
-  `,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "12/11/2024", name: "Andy Walker" }
-);
-
-const carParkParkingMeterProblem = new ContentP(
-  "carParkParkingMeterProblem",
-  "Car Park/Parking Meter Problem",
-  "Information relating to Car Park/Parking Meter Problem",
-  `
-    <p>
-    If the customer is reporting an issue with a parking meter/machine fault, 
-    they need to contact Parking Enforcement on <a href="tel:0114 2736255">0114 2736255</a>. Any issues 
-    around refunds need to be put in writing to <a href="mailto:parkingenforcement@sheffield.gov.uk">parkingenforcement@sheffield.gov.uk</a>
-    </p>
-  `,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "27/11/2024", name: "Dinah WIlliams" }
-);
-
-const baySuspensions = new ContentP(
-  "baySuspensions",
-  "Bay Suspensions",
-  "Information relating to Bay Suspensions",
-  `
-    <h3>Requesting a Suspension</h3>
-    <p>
-      A request can be made that specific parking bays, for example pay and display,
-      permit holders only, disabled and loading bays are kept clear of parked
-      vehicles in certain circumstances such as:
-    </p>
-    <ul>
-      <li>
-        Maintenance of adjacent property where highway access is required for
-        deliveries, essential vehicles, skips etc.
-      </li>
-      <li>Skips on the highway</li>
-      <li>Maintenance of trees</li>
-      <li>Police request</li>
-      <li>Security reasons</li>
-      <li>Filming - contact us about filming in the city</li>
-      <li>Any other reason accepted by ourselves</li>
-    </ul>
-    <p>
-      Parking Services will not suspend bays to provide parking for vehicles unless
-      they are essential for works in the suspended area (such as an asbestos
-      removal vehicle).
-    </p>
-    <p>
-      Other works or private vehicles should be parked legally elsewhere (for
-      example in nearby pay and display parking).
-    </p>
-    <h3>Submitting your application</h3>
-    <p>
-      Applications for parking bay suspensions should be made at least 14 days
-      before the suspension start date.
-    </p>
-    <h3>Charges and payment</h3>
-    <p>
-      If the application is accepted, Parking Services will contact the customer for
-      payment.
-    </p>
-    <p>
-      Full payment must be made at least 9 days before the suspension start date.
-      You can pay by credit card, debit card, or BACS.
-    </p>
-    <p>
-      The daily charge per 5m section of bay is £17.90 for City Centre controlled
-      parking zone, with a non-refundable administration fee of £29.85. The daily
-      charge per 5m section of bay is £5 for all other areas, with a non-refundable
-      administration fee of £29.85.
-    </p>
-  `,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
-);
-
-const yellowLineDispensations = new ContentP(
-  "yellowLineDispensations",
-  "Yellow Line Dispensations",
-  "Information relating to Yellow Line Dispensations",
-  `
-    <h3>Request Yellow Line Dispensation</h3>
-    <p>
-      Parking Services will consider dispensations to allow vehicles which are being
-      used as a workshop vehicle (e.g. vehicle where there is equipment which needs
-      to be used directly from the vehicle as part of the work being carried out at
-      an adjacent property) to park on yellow lines, or in bays for longer than
-      restrictions allow.
-    </p>
-    <h3>Dispensations are unlikely to be granted if:</h3>
-    <ul>
-      <li>A loading ban applies</li>
-      <li>The vehicle is likely to cause an obstruction to traffic flow</li>
-      <li>The vehicle may be hazardous to other road users</li>
-    </ul>
-    <p>
-      If dispensation is granted, we will issue a signed written notice which must
-      be clearly displayed on the parked vehicle.
-    </p>
-    <p>
-      Dispensations are vehicle and location specific, if the dispensation notice
-      has been altered in any way it will be deemed invalid.
-    </p>
-    <h3>Submitting your application</h3>
-    <p>
-      Applications for dispensations should be made at least 7 days before the
-      dispensation start date.
-    </p>
-    <h3>Charges and payment</h3>
-    <p>
-      If the application is accepted, Parking Services will contact the customer for
-      payment.
-    </p>
-    <p>
-      Full payment is required before dispensation can be granted. There is a charge
-      of £17.90 per vehicle per day for a dispensation as well as a £29.85 non-refundable
-      administration fee.
-    </p>
-	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
-);
-
-const vehicleParkedInASuspendedBay = new ContentP(
-  "vehicleParkedInASuspendedBay",
-  "Vehicle Parked In A Suspended Bay",
-  "Information relating to parking in a Suspended Bay",
-  `<p>Should be reported to Parking Enforcement</p>`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-    ],
-    categories: ["Parking"],
-  },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
-);
+//#endregion Parking Permits
 
 //#region Penalty Charge Notice (PCN)
 
 const confirmationOfPayment = new ContentP(
   "confirmationOfPayment",
-  "Confirmation Of Payment",
-  "",
+  "Confirmation of payment",
+  "Report payment discrepancies by submitting a written appeal and proof of payment, including the last 4 digits of the card if applicable.",
   `
 		<p>
 			Payments can take up to 3-4 days to show on our system regardless of the
@@ -1758,53 +1770,14 @@ const confirmationOfPayment = new ContentP(
   { date: "06/12/2024", name: "Nathan Smith" }
 );
 
-const customerHasPaidTwice = new ContentP(
-  "Customerhaspaidtwice",
-  "Customer Has Paid Twice",
-  "",
-  `   
-    <p>
-      The customer needs to email <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a> 
-      advising the car registration number and ticket number in the subject box of the email
-    </p>
-	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
-  { typeKey: "parking_permit_transferred_to_service" },
-  {
-    type: "Information",
-    keywords: [
-      "parking permit",
-      "parking pass",
-      "parking permitt",
-      "parking permt",
-      "parking pemit",
-      "parkin permit",
-      "parking permitt",
-      "parknig",
-      "parkingg",
-      "paking",
-      "parrking",
-      "parkng",
-      "permt",
-      "permmit",
-      "permitt",
-      "pemit",
-      "premit",
-      "TEC",
-      "Fine",
-      "Taxi PCN",
-      "Bailiff"
-    ],
-    categories: ["Parking"],
-  },
-  { date: "06/12/2024", name: "Nathan Smith" }
-);
+//
+//customerPaidTwice is in the cross regional section at the top of the Parking.js file
+//
 
 const customerTriedToPayOnline = new ContentP(
   "customerTriedToPayOnline",
-  "Customer Tried To Pay Online But Won't Accept Details",
-  "",
+  "Customer tried to pay online but it won't accept their details",
+  "Ensure the vehicle registration number and full PCN number are entered correctly without spaces when trying to pay online.",
   `
 		<p>
 			The PCN should show on Gateway/online within minutes of being issued,
@@ -1856,7 +1829,7 @@ const customerTriedToPayOnline = new ContentP(
 const customerUnableToPay = new ContentP(
   "customerUnableToPay",
   "Customer Unable To Pay",
-  "",
+  "Find guidance on how to resolve issues with payments not appearing on the system, including how to submit proof of payment.",
   `
 		<p>
 			Payments can take up to 3-4 days to show on our system regardless of the
@@ -1914,7 +1887,7 @@ const customerUnableToPay = new ContentP(
 const enforcementbaliffenquiries = new ContentP(
   "enforcementbaliffenquiries",
   "Enforcement Baliff Enquiries",
-  "",
+  "Learn about the steps to take if your debt has been referred to enforcement, including how to make payments or challenge the process.",
   `   
 		<h3>Enforcement (Bailiff) Enquiries</h3>
 		<p>
@@ -1975,8 +1948,8 @@ const enforcementbaliffenquiries = new ContentP(
 
 const howCanIAppeal = new ContentP(
   "howCanIAppeal",
-  "How Can I Appeal",
-  "",
+  "How can I appeal?",
+  "Find out how to appeal a parking ticket online, including how to submit supporting evidence and use the interactive portal.",
   `
     <p>
       Challenges can be made online within 28 days of receiving the original ticket.
@@ -2033,8 +2006,8 @@ const howCanIAppeal = new ContentP(
 
 const howLongDoIHaveToAppeal = new ContentP(
   "howLongDoIHaveToAppeal",
-  "How Long Do I Have to Appeal",
-  "",
+  "How long do I have to appeal?",
+  "Find out the next steps if your PCN challenge is rejected, including information on how to proceed with further action.",
   `	
     <h3>Rejected PCN's</h3>
     <p>
@@ -2079,13 +2052,13 @@ const howLongDoIHaveToAppeal = new ContentP(
 );
 
 //
-// makingAPayme nt is in the cross regional section at the top of the Parking.js file
+// makingAPayment is in the cross regional section at the top of the Parking.js file
 //
 
 const multiplepcns = new ContentP(
   "multiplePcns",
   "Multiple PCN's",
-  "",
+  "Find out how to challenge multiple PCNs online, including how to submit evidence and use the interactive portal for your appeal.",
   `
     <p>
       Challenges can be made online within 28 days of receiving the original
@@ -2137,10 +2110,10 @@ const multiplepcns = new ContentP(
 const penaltyChargeNoticePcn = new MenuP(
   "penaltyChargeNoticePCN",
   "Penalty Charge Notice (PCN)",
-  "Information on Penalty Charge Notice",
+  "Guidance on resolving Penalty Charge Notice (PCN) issues, including confirming payments, troubleshooting online payment problems, and steps for customers unable to pay. Also provides information on enforcement actions and bailiff inquiries.",
   [
     confirmationOfPayment,
-    customerHasPaidTwice,
+    customerPaidTwice,
     customerTriedToPayOnline,
     customerUnableToPay,
     enforcementbaliffenquiries,
@@ -2153,41 +2126,46 @@ const penaltyChargeNoticePcn = new MenuP(
 
 //#endregion Penalty Charge Notice (PCN)
 
-const parkingIssues = new MenuP(
-  "parkingIssues",
-  "Parking Issues",
-  "Information relating to Parking Issues",
-  [
-    illegalParking,
-    vehicleObstruction,
-    carParkParkingMeterProblem,
-    baySuspensions,
-    yellowLineDispensations,
-    vehicleParkedInASuspendedBay,
-  ]
-);
-const parkingPermits = new MenuP(
-  "parkingPermit",
-  "Parking Permits",
-  "Provides a range of information on ordering, cancelling or paying for permits and the costs associated",
-  [
-    businessPermit,
-    carerPermitAndMedical,
-    organisationCarer,
-    medicalProfessionalCarer,
-    greenParkingPermit,
-    langsettAndHillsboroughBusAndTramgate,
-    residentsPermit,
-    staffPermit,
-    tradePermit,
-    utilityPermit,
-    visitorsPermits,
-    makingAPayment,
-    customerPaidTwice,
-  ]
-);
+
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
+
+const haveYouReceivedMyAppeal = new ContentP(
+  "haveYouReceivedMyAppeal",
+  "Have You Received My Appeal",
+  "",
+  `
+	  <p>This can be found by checking Gateway.</p>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "14/10/2024", name: "Dinah WIlliams" }
+);
+
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const parking = new ServiceP(

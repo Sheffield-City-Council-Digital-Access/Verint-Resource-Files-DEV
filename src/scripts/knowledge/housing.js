@@ -55,120 +55,120 @@ class FormH extends CoreH {
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
 //#region Adaptations
-const chaseProgressOfAdaptation = new ContentH(
-  "chaseProgressOfAdaptation",
-  "Chase Progress of Adaptation",
-  "",
-  `
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Different Utility supplier</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>If you are over £250 (Total Indebtedness) in arrears, your permission request is unlikely to be granted. 
-      You must have written permission from the Housing Service to alter or improve your home. This includes:</p> 
-    <ul>
-      <li>Putting up any form of extension or building</li>
-      <li>Adding to, changing, or replacing the fixtures, fittings, and appliances provided by us</li>
-      <li>Altering essential gas, electricity, and water services</li>
-      <li>Putting up a radio or television aerial or satellite dish</li>
-      <li>Decorating the outside of your home</li>
-      <li>Removing internal walls</li>
-      <li>Insulation (Walls & Lofts)</li>
-      <li>Conservatories (considered on an individual basis)</li>
-    </ul> 
-    <p>However, the following are highly unlikely to be granted due to extra maintenance costs and 
-      potential structural problems:</p> 
-    <ul>
-      <li>Loft conversions</li>
-      <li>Spiral staircases</li>
-      <li>Swimming pools</li>
-      <li>Extensions</li>
-      <li>Stair lifts in communal areas</li>
-    </ul> 
-    <p>It is the customer's responsibility to seek and get any planning or building regulation approvals.</p> 
-    <p>Every request for permission will be assessed using criteria and conditions appropriate to the particular request. 
-      These criteria and conditions will be explained in the letter sent in reply to the customer's permission request.</p> 
-    <p>We will take action against any installations that are in breach of Health and Safety regulations.</p> 
-  </div>
-  </details>
-
-  <details class="accordion">
+  const chaseProgressOfAdaptation = new ContentH(
+    "chaseProgressOfAdaptation",
+    "Chase Progress of Adaptation",
+    "Learn how to chase progress on adaptations and understand the permissions required for home improvements in Sheffield Council properties.",
+    `
+    <details class="accordion">
     <summary class="accordion-header">
-      <h3>Permission Requests</h3>
+      <h3>Different Utility supplier</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>Written permission requests should be referred in the first instance 
-        (unless the customer is a Leaseholder or the permission request is for a mobility scooter) 
-        to the appropriate Area Team at:</p> 
-      <address> 
-        Sheffield Council Housing Service<br> 
-        PO Box 5967<br> 
-        Sheffield<br> 
-        S2 9GH 
-      </address> 
-      <p>If the permission request is for a mobility scooter, it should be referred to:</p> 
-      <address> 
-        Maintenance Partnership Unit (Permissions)<br> 
-        PO Box 5967<br> 
-        Sheffield<br> 
-        S2 9GH 
-      </address> 
-      <p>If the customer is a Leaseholder, permission requests should be put in writing to:</p> 
-      <address> 
-        Leaseholder Services Team<br> 
-        Floor 11<br> 
-        Moorfoot Building<br> 
-        Sheffield<br> 
-        S1 4PL 
-      </address> 
-      <p>Once we have received your request, we will contact you to discuss it and, where necessary, 
-        arrange a suitable time to visit your property. We will give you a decision within 21 days of receiving your request. 
-        If we give you permission, you should carry out the work within 90 days and let us know when it is complete. </p> 
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Permissions and Your Tenancy Conditions</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>Tenancy condition 47 states that:</p> 
+      <p>If you are over £250 (Total Indebtedness) in arrears, your permission request is unlikely to be granted. 
+        You must have written permission from the Housing Service to alter or improve your home. This includes:</p> 
       <ul>
-        <li>You must ask for our permission, and you must not proceed until we give you our permission.</li>
-        <li>We will confirm our answer in writing.</li>
-        <li>If we refuse permission, we will explain why.</li>
-        <li>If we give permission, we may attach additional conditions.</li>
-        <li>We may withdraw our permission at any time if you do not comply with the conditions we have made.</li>
+        <li>Putting up any form of extension or building</li>
+        <li>Adding to, changing, or replacing the fixtures, fittings, and appliances provided by us</li>
+        <li>Altering essential gas, electricity, and water services</li>
+        <li>Putting up a radio or television aerial or satellite dish</li>
+        <li>Decorating the outside of your home</li>
+        <li>Removing internal walls</li>
+        <li>Insulation (Walls & Lofts)</li>
+        <li>Conservatories (considered on an individual basis)</li>
       </ul> 
-      <p>We will take action against you and/or charge you for any costs incurred if you do not comply with parts a-e above.</p> 
+      <p>However, the following are highly unlikely to be granted due to extra maintenance costs and 
+        potential structural problems:</p> 
+      <ul>
+        <li>Loft conversions</li>
+        <li>Spiral staircases</li>
+        <li>Swimming pools</li>
+        <li>Extensions</li>
+        <li>Stair lifts in communal areas</li>
+      </ul> 
+      <p>It is the customer's responsibility to seek and get any planning or building regulation approvals.</p> 
+      <p>Every request for permission will be assessed using criteria and conditions appropriate to the particular request. 
+        These criteria and conditions will be explained in the letter sent in reply to the customer's permission request.</p> 
+      <p>We will take action against any installations that are in breach of Health and Safety regulations.</p> 
     </div>
-  </details>
-  `,
-  { buttonLabel: "Report Housing Adaptations ", formName: "hou_adaptations" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
-  {
-    type: "Information",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing"],
-  },
-  { date: "10/10/2024", name: "George Whitehouse" }
-);
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Permission Requests</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>Written permission requests should be referred in the first instance 
+          (unless the customer is a Leaseholder or the permission request is for a mobility scooter) 
+          to the appropriate Area Team at:</p> 
+        <address> 
+          Sheffield Council Housing Service<br> 
+          PO Box 5967<br> 
+          Sheffield<br> 
+          S2 9GH 
+        </address> 
+        <p>If the permission request is for a mobility scooter, it should be referred to:</p> 
+        <address> 
+          Maintenance Partnership Unit (Permissions)<br> 
+          PO Box 5967<br> 
+          Sheffield<br> 
+          S2 9GH 
+        </address> 
+        <p>If the customer is a Leaseholder, permission requests should be put in writing to:</p> 
+        <address> 
+          Leaseholder Services Team<br> 
+          Floor 11<br> 
+          Moorfoot Building<br> 
+          Sheffield<br> 
+          S1 4PL 
+        </address> 
+        <p>Once we have received your request, we will contact you to discuss it and, where necessary, 
+          arrange a suitable time to visit your property. We will give you a decision within 21 days of receiving your request. 
+          If we give you permission, you should carry out the work within 90 days and let us know when it is complete. </p> 
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Permissions and Your Tenancy Conditions</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>Tenancy condition 47 states that:</p> 
+        <ul>
+          <li>You must ask for our permission, and you must not proceed until we give you our permission.</li>
+          <li>We will confirm our answer in writing.</li>
+          <li>If we refuse permission, we will explain why.</li>
+          <li>If we give permission, we may attach additional conditions.</li>
+          <li>We may withdraw our permission at any time if you do not comply with the conditions we have made.</li>
+        </ul> 
+        <p>We will take action against you and/or charge you for any costs incurred if you do not comply with parts a-e above.</p> 
+      </div>
+    </details>
+    `,
+    { buttonLabel: "Report Housing Adaptations ", formName: "hou_adaptations" },
+    { typeKey: "repairs_and_investment_information_provided" },
+    { typeKey: "repairs_and_investment_information_requested" },
+    {
+      type: "Information",
+      keywords: [
+        "repairs and investmant",
+        "repears and investment",
+        "repairs and invesment",
+        "repair and investement",
+        "repairs and invesmant",
+      ],
+      categories: ["Housing"],
+    },
+    { date: "10/10/2024", name: "George Whitehouse" }
+  );
 
 const otherAdaptationRequest = new ContentH(
   "otherAdaptationRequest",
   "Other Adaptation Request",
-  "",
+  "Understand the process for requesting permission to make adaptations to your Sheffield Council property, including restrictions and requirements.",
   `
     <h2>Tenant wants to make their own changes</h2> 
 
@@ -225,7 +225,7 @@ const otherAdaptationRequest = new ContentH(
 const adaptations = new MenuH(
   "adaptations", 
   "Adaptations", 
-  "Adaptations Menu",
+  "Guidance on requesting and tracking home adaptations, including permission processes and progress updates for Sheffield Council properties.",
   [
    chaseProgressOfAdaptation,
    otherAdaptationRequest
@@ -238,7 +238,7 @@ const adaptations = new MenuH(
 const asbestos = new ContentH(
   "asbestos",
   "Asbestos",
-  "",
+  "Asbestos guidance for Sheffield Council properties, including identification, safety, removal procedures, and tenant responsibilities.",
   `
   <details class="accordion">
   <summary class="accordion-header">
@@ -474,7 +474,7 @@ const asbestos = new ContentH(
 const carbonmonoxide = new ContentH(
   "carbonmonoxide",
   "Carbon Monoxide/ What is CO Poisoning",
-  "",
+  "Learn about carbon monoxide poisoning, its symptoms, causes, and immediate actions to take for safety and health.",
   `
   <h3>What is CO Poisoning?</h3>
   <p>
@@ -530,7 +530,7 @@ const carbonmonoxide = new ContentH(
 const communalAerials = new ContentH(
   "communalAerials",
   "Communal Aerials",
-  "",
+  "Find information on communal aerials and maintenance policies, including guidelines for privately-owned aerials.",
   `
   <h3>Communal Aerials List</h3>
   <p>
@@ -565,7 +565,7 @@ const communalAerials = new ContentH(
 const communalAreas = new ContentH(
   "communalAreas",
   "Communal Areas",
-  "",
+  "Learn about maintenance and responsibilities for communal areas, including bin chutes, fences, and safety measures.",
   `
   <h3>Blocked Bin Chutes</h3>
   <p>
@@ -617,7 +617,7 @@ const communalAreas = new ContentH(
 const communalAreasFireSafety = new ContentH(
   "communalAreasFireSafety",
   "Communal Areas Fire Safety",
-  "",
+  "Understand fire safety rules for communal areas, including prohibited items, storage guidelines, and safe practices for shared spaces.",
   `
     <h2>Fire Safety in Communal Areas</h2> 
 
@@ -662,7 +662,7 @@ const communalAreasFireSafety = new ContentH(
 const districtHeating = new ContentH(
   "districtHeating",
   "District Heating",
-  "",
+  "Learn about District Heating charges, including usage, standing, unmetered, and sheltered service costs.",
   `
   <h3>A Usage Charge - 3.04 pence per Kwh</h3>
   <p>
@@ -718,7 +718,7 @@ const districtHeating = new ContentH(
 const doorEntrySystems = new ContentH(
   "doorEntrySystems",
   "Door Entry Systems",
-  "",
+  "Learn about door entry systems for flats, how they enhance security, their functionality, and the installation process.",
   `
     <details class="accordion">
   <summary class="accordion-header">
@@ -845,7 +845,7 @@ const doorEntrySystems = new ContentH(
 const emergencyCredit = new ContentH(
   "emergencyCredit",
   "Emergency Credit",
-  "",
+  "Understand the emergency credit feature for your meter, how to activate it, and its repayment requirements for continued use.",
   `
       <p>
         The meter has an emergency credit facility. This allows the customer to ‘borrow’ credit up to £10.00 which will 
@@ -881,7 +881,7 @@ const emergencyCredit = new ContentH(
 const emergencyRepairs = new ContentH(
   "emergencyRepairs",
   "Emergency Repairs",
-  "",
+  "Learn how to handle emergency repairs, including gas leaks, equipment issues, and out-of-hours emergencies, with relevant contact numbers.",
   `
   <h3>Gas Leak</h3>
   <p>
@@ -928,7 +928,7 @@ const emergencyRepairs = new ContentH(
 const homeImprovementRequests = new ContentH(
   "homeImprovementRequests",
   "Home Improvement Requests",
-  "",
+  "Understand the process for requesting permission for home improvements to the District Heating Network and associated responsibilities.",
   `
   <p>
     Please Call the RPIT on <a href="tel:0114 2052615">0114 2052615</a> for permission requests to carry out work/home 
@@ -960,7 +960,7 @@ const homeImprovementRequests = new ContentH(
 const homeownerDisconnection = new ContentH(
   "homeownerDisconnection",
   "Homeowner Disconnection",
-  "",
+  "Learn about the disconnection process and charges for homeowners on the District Heating network.",
   `
   <p>
     Please call the Home Ownership and Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a> for further 
@@ -992,7 +992,7 @@ const homeownerDisconnection = new ContentH(
 const loststolenkeys = new ContentH(
   "lostStolenKeys",
   "Lost Stolen Keys and Lock Repairs",
-  "",
+  "Find details on lost or stolen keys, lock repairs, and replacement fob charges for council housing.",
   `
    <h3>Lost Keys</h3>
     <ul>
@@ -1037,7 +1037,7 @@ const loststolenkeys = new ContentH(
 const newAndExistingRepairs = new ContentH(
   "newAndExistingRepairs",
   "New and Existing Repairs",
-  "",
+  "Information for leaseholders on repair responsibilities within their flats and shared areas, including service charge details for communal repairs.",
   `
   <h3>Leaseholder Repairs</h3> 
   <p>
@@ -1064,48 +1064,10 @@ const newAndExistingRepairs = new ContentH(
   { date: "10/10/2024", name: "George Whitehouse" }
 );
 
-
-const noHeatNoWater = new ContentH(
-  "noHeatNoWater",
-  "Report no heat or hot Water",
-  "",
-  `
-  <p>
-    To access a supply of heat and hot water please follow the simple steps below: 
-  </p>
-  <ol> 
-    <li>Does the property have an electricity supply? They will not have access to heat and hot water without it. The customer will need to Dial 105 or visit <a href="www.findmysupplier.energy.co.uk "target="_blank">www.findmysupplier.energy.co.uk</a> to find their current supplier. </li>
-    <li> The District Heating Meter location may vary but is usually located in the property airing cupboard. Does The Meters Home Screen say ON in the top right corner? Is your heating programmer turned on? </li>
-    <li> To activate an emergency credit, press the blue button, marked ‘Press For Em Credit’ as instructed by the meters home screen. This will allow the tenant to ‘borrow’ credit up to £10.00 which will connect your heat and hot water supply for a short time. This is simply a loan and will need to be repaid on receipt of the prepayment information/number which will be with them shortly. </li>
-    <li> If the Meters screen in blank or shows something similar to ‘D bug’ then the customer can reboot the G6 unit by pressing the blue and orange button together for 10 seconds. </li>
-    <li>If the reboot is unsuccessful or for any other repair, please call the Repairs line on <a href="tel:0114 2735555">0114 2735555</a></li>
-  </ol>
-
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
-  },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
-  {
-    type: "Information",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing"],
-  },
-  { date: "10/10/2024", name: "George Whitehouse" }
-);
-
 const payment = new ContentH(
   "payment",
   "Payment",
-  "",
+  "Details about payment options, including Pay As You Go, Budget Plan Direct Debit, replacing cards, and accessing money-saving advice for heat and hot water usage.",
   `
 <p> 
   New tenants will initially be issued with a Pay As You Go card, however they will be supplied with a 
@@ -1319,7 +1281,7 @@ const programmedWorks = new ContentH(
 const propertyAge = new ContentH(
   "propertyAge",
   "Property Age",
-  "",
+  "Access detailed information about property age and related data.",
   `
   <p>
     <a href="https://sccextranet.sharepoint.com/:x:/s/CustomerServiceKnowledgeCouncilHousing/ESm4Dds9S6pAq3ChaiPPEH8BNQtMLmygyOEvErvW2ISK2A?e=Qkq084"target="_blank">property Age</a>
@@ -1349,7 +1311,7 @@ const propertyAge = new ContentH(
 const refunds = new ContentH(
   "refunds",
   "Refunds",
-  "",
+  "Learn about Pay As You Go refund eligibility for vacated properties and the process for requesting a refund.",
   `
   <p>
     Pay As You Go refunds are not made unless the tenant has vacated the property.<br>
@@ -1365,11 +1327,48 @@ const refunds = new ContentH(
   { date: "10/10/2024", name: "George Whitehouse" }
 );
 
+const noHeatNoWater = new ContentH(
+  "noHeatNoWater",
+  "Report no heat or hot water",
+  "Find out steps to restore heat and hot water, activate emergency credit, and reboot the meter if necessary, or contact Repairs for further assistance.",
+  `
+  <p>
+    To access a supply of heat and hot water please follow the simple steps below: 
+  </p>
+  <ol> 
+    <li>Does the property have an electricity supply? They will not have access to heat and hot water without it. The customer will need to Dial 105 or visit <a href="www.findmysupplier.energy.co.uk "target="_blank">www.findmysupplier.energy.co.uk</a> to find their current supplier. </li>
+    <li> The District Heating Meter location may vary but is usually located in the property airing cupboard. Does The Meters Home Screen say ON in the top right corner? Is your heating programmer turned on? </li>
+    <li> To activate an emergency credit, press the blue button, marked ‘Press For Em Credit’ as instructed by the meters home screen. This will allow the tenant to ‘borrow’ credit up to £10.00 which will connect your heat and hot water supply for a short time. This is simply a loan and will need to be repaid on receipt of the prepayment information/number which will be with them shortly. </li>
+    <li> If the Meters screen in blank or shows something similar to ‘D bug’ then the customer can reboot the G6 unit by pressing the blue and orange button together for 10 seconds. </li>
+    <li>If the reboot is unsuccessful or for any other repair, please call the Repairs line on <a href="tel:0114 2735555">0114 2735555</a></li>
+  </ol>
+
+  `,
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_sustainment_gen_enq",
+  },
+  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_information_requested" },
+  {
+    type: "Information",
+    keywords: [
+      "repairs and investmant",
+      "repears and investment",
+      "repairs and invesment",
+      "repair and investement",
+      "repairs and invesmant",
+    ],
+    categories: ["Housing"],
+  },
+  { date: "10/10/2024", name: "George Whitehouse" }
+);
+
 
 const tenantsOwnImprovements = new ContentH(
   "tenantsOwnImprovements",
-  "Tenants Own Improvements",
-  "",
+  "Tenant's own improvements",
+  "Learn about compensation for tenant-made improvements, the claims process, and how to receive reimbursement for eligible home upgrades.",
   `
     <details class="accordion">
   <summary class="accordion-header">
@@ -1457,7 +1456,7 @@ const tenantsOwnImprovements = new ContentH(
 const assetManagementAndRepairs = new MenuH(
   "assetManagementAndRepairs",
   "Asset Management And Repairs",
-  "",
+  "Information on asset management, including asbestos, carbon monoxide, communal areas, district heating, emergency repairs, and various home improvement services.",
   [
     asbestos,
     carbonmonoxide,
@@ -1490,7 +1489,7 @@ const assetManagementAndRepairs = new MenuH(
 const communalCupboard = new ContentH(
   "communalCupboard",
   "Communal Cupboard and Meter Box Cupboard",
-  "Information about communal cupboard and meter box cupboards.",
+  "Learn how to access meter boxes and communal cupboards, including key types and where to obtain them for property and communal areas.",
   `
     <p>
       Meter boxes cupboard can be inside or outside of the property and the keyhole
@@ -1517,7 +1516,7 @@ const communalCupboard = new ContentH(
 const communalFireSafety = new ContentH(
   "communalFireSafety",
   "Communal Fire Safety",
-  "Information about communal fire safety regulations and guidelines.",
+  "Learn about fire safety regulations for communal areas, prohibited items, and permitted placements to ensure clear escape routes and compliance with safety standards.",
   `
     <p>
       Under the Regulatory Reform Order (2005), landlords are required to ensure
@@ -1568,7 +1567,7 @@ const communalFireSafety = new ContentH(
 const fencesCouncilHousing = new ContentH(
   "fencesCouncilHousing",
   "Fences (Council Housing)",
-  "Installation, repair and removal of fences",
+  "Understand tenant responsibilities for fence installation, repairs, and removal, including when Council services may intervene for safety hazards.",
   `
     <h3>New Fence</h3>
     <p>
@@ -1600,7 +1599,7 @@ const fencesCouncilHousing = new ContentH(
 const gardenPledgeScheme = new ContentH(
   "gardenPledgeScheme",
   "Garden Pledge Scheme",
-  "Information about Garden Pledge Scheme and gardening services",
+  "Learn about the discontinuation of the Garden Pledge Scheme, alternative gardening services, and where to find reliable tradespeople for garden maintenance.",
   `
     <p>
       The Garden Pledge Scheme ceased to operate in April 2023 as highlighted below
@@ -1656,7 +1655,7 @@ const gardenPledgeScheme = new ContentH(
 const estatesAndEnvironments = new MenuH(
   "estatesAndEnvironments",
   "Estates and Environments",
-  "Bin chutes, communal cupboard, fences, firesafety and garden maintenance",
+  "Details on communal cupboard access, fire safety regulations, and maintaining clear escape routes and safety standards in shared housing spaces.",
   [
     communalCupboard,
     communalFireSafety,
@@ -1672,7 +1671,7 @@ const estatesAndEnvironments = new MenuH(
 const generalCouncilHousing = new ContentH(
   "generalCouncilHousing",
   "General Council Housing",
-  "",
+  "Access area office information, report concerns about bogus callers, and find contact details for Sheffield Council Housing Service.",
   `
   <h3>Area Office Information</h3>
   <p>
@@ -1721,7 +1720,7 @@ const generalCouncilHousing = new ContentH(
 const benefitCap = new ContentH(
   "benefitCap",
   "Benefit cap",
-  "Description tbc",
+  "Find information about the Housing Benefit Cap on the official government website.",
   `
     <p>View website for housing benefit cap information: <a href="https://www.gov.uk/benefit-cap" target="_blank">https://www.gov.uk/benefit-cap</a></p>
   `,
@@ -1757,7 +1756,7 @@ const benefitCap = new ContentH(
   const benefitClaim = new ContentH(
     "benefitClaim",
     "Benefit claim",
-    "Description tbc",
+    "Contact Sheffield Benefits Service for non-council tenant benefit claims, or complete the online form for support.",
     `
       <h4>Customer is not a council tenant</h4>
       <p>If the customer is not a council tenant, transfer them to the benefits team on the number below. If the line is busy, 
@@ -1803,7 +1802,7 @@ const benefitCap = new ContentH(
   const benefitFraud = new ContentH(
     "benefitFraud",
     "Benefit fraud",
-    "Description tbc",
+    "Find out about Benefit fraud and how it can be reported anonymously online.",
     `
       <p>You can can report fraud anonymously online at: <a href="https://www.gov.uk/report-benefit-fraud" target="_blank">https://www.gov.uk/report-benefit-fraud</a></p>
     `,
@@ -1840,7 +1839,7 @@ const benefitCap = new ContentH(
   const benefitOnTwoHomes = new ContentH(
     "benefitOnTwoHomes",
     "Benefit on two homes",
-    "Description tbc",
+    "Guidelines for housing benefit claims in scenarios like dual liabilities, fleeing violence, delayed occupation, or hospitalisation.",
     `
       <h4>Unavoidable liability</h4>
       <p><strong>Situation:</strong> When tenants sign for a tenancy and have moved in but have a liability on another property.</p>
@@ -1927,7 +1926,7 @@ const benefitCap = new ContentH(
   const benefitsClawback = new ContentH(
     "benefitsClawback",
     "Benefits clawback",
-    "Description tbc",
+    "Details on housing benefit overpayment recovery, including clawback reductions and how to appeal if affordability is an issue.",
     `
     <p>If you have been overpaid housing benefit and no longer receive it, you will receive an invoice from Sheffield Benefits Service to repay directly.
        If you still receive housing benefit, the overpayment is recovered by reducing your weekly housing benefit.
@@ -1967,7 +1966,7 @@ const benefitCap = new ContentH(
   const changeOfCircumstances = new ContentH(
     "changeOfCircumstances",
     "Change of circumstances",
-    "Description Tbc",
+    "Update your Housing Benefits details online quickly and easily through the Sheffield Council website.",
     `
       <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available.<br> 
         You can access this via <a href="https://www.sheffield.gov.uk/benefits" target="_blank">https://www.sheffield.gov.uk/benefits</a></p>
@@ -2005,7 +2004,7 @@ const benefitCap = new ContentH(
 const contactHousingBenefits = new ContentH(
   "contactHousingBenefits",
   "Contact housing benefits",
-  "Description tbc",
+  "Find contact details and guidance for housing benefits and council tax enquiries, including phone numbers, email addresses, and online form links",
   `
     <p>Transfer the customer to the benefits team on the number below. If the line is busy, 
     <strong>do not</strong> ask the customer to call back later today; instead, advise the customer to email either:</p>
@@ -2066,7 +2065,7 @@ const contactHousingBenefits = new ContentH(
   const localAssistanceScheme = new ContentH(
     "localAssistanceScheme",
     "Local Assistance Scheme",
-    "Description Tbc",
+    "Access the Local Assistance Scheme and submit Housing Benefit claims quickly and easily online.",
     `
       <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. <br>
          You can access this via <a href="https://www.sheffield.gov.uk/benefits" target="_blank">https://www.sheffield.gov.uk/benefits</a></p>
@@ -2103,7 +2102,7 @@ const contactHousingBenefits = new ContentH(
   const pdsa = new ContentH(
     "pdsa",
     "PDSA",
-    "Description Tbc",
+    "The Benefits Service can fax a letter to PDSA to assist with pet treatment for customers receiving benefits.",
     `
       <p>The Benefits Service can fax a letter to PDSA for pet treatment if the customer is on benefits.</p>
     `,
@@ -2140,7 +2139,7 @@ const contactHousingBenefits = new ContentH(
   const universalCredits = new ContentH(
     "universalCredit",
     "Universal credit",
-    "Description Tbc",
+    "Learn about Universal Credit, including how to apply, report changes, and manage rent and Council Tax payments.",
     `
       <p>If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
          you may be directed to claim Universal Credit:</p>
@@ -2264,7 +2263,7 @@ const contactHousingBenefits = new ContentH(
   const welfareReform = new ContentH(
     "welfareReform",
     "Welfare reform",
-    "Description tbc",
+    "Understand how welfare reforms, including the under-occupation charge and benefit cap, impact housing benefit for council and housing association tenants.",
     `
     <p>From April 2013, the government reduced the amount of housing benefit for council / housing association tenants in homes that had any spare bedrooms. 
       This is also known as under-occupation. This change only affected people of working age.</p>
@@ -2416,7 +2415,7 @@ const contactHousingBenefits = new ContentH(
   const housingBenefits = new MenuH(
     "housingBenefits",
     "Housing benefits",
-    "Information about housing benefits",
+    "Information on housing benefits, including eligibility, claims, fraud prevention, and changes in circumstances. It also covers topics like universal credit and local assistance schemes.",
     [
       benefitCap,
       benefitClaim,
@@ -2440,7 +2439,7 @@ const contactHousingBenefits = new ContentH(
 const leaseholderInformation = new ContentH(
   "leaseholderInformation",
   "Leaseholder Information",
-  "Leaseholder responsibilities, service charges, and subletting",
+  "Learn about leaseholder responsibilities, service charges, payment options, and the rules around subletting in ex-Council properties.",
   `
     <p>
       If you live in an ex-Council flat or maisonette property you are a leaseholder
@@ -2501,7 +2500,7 @@ const leaseholderInformation = new ContentH(
 const applicationChanges = new ContentH(
   "applicationChanges",
   "Application Changes",
-  "Information on updating housing applications, submitting ID/proof, annual renewals, restrictions, exceptions, and disqualification rules.",
+  "Understand the process for updating your housing application, including submitting changes, providing ID, and renewing your application annually.",
   `
     <p>
       Change of circumstances are now online. When you are making changes, remember
@@ -2754,7 +2753,7 @@ const applicationChanges = new ContentH(
 const applyForRehousing = new ContentH(
   "applyForRehousing",
   "Apply for rehousing",
-  "",
+  "Learn how to apply for rehousing in Sheffield by registering online and submitting required documents like ID and landlord references.",
   `
     <p>
       To apply for Social Housing you need to do so via the Property Shop website.
@@ -2790,7 +2789,7 @@ const applyForRehousing = new ContentH(
 const bidding = new ContentH(
   "bidding",
   "Bidding",
-  "Information around bidding for properties",
+  "Learn how to place bids for properties on the Sheffield Property Shop website, manage your application details, and handle restrictions or disqualifications.",
     `
       <p>
         After you have registered for housing, you express your interest in renting a
@@ -2992,7 +2991,7 @@ const bidding = new ContentH(
   const eligibility = new ContentH(
     "eligibility",
     "Eligibility",
-    "",
+    "Check eligibility for Sheffield's Housing Register, including age, immigration status, and documentation requirements for application.",
     `
       <p>
         Sheffield City Council operates an open register and therefore any person over
@@ -3083,7 +3082,7 @@ const bidding = new ContentH(
   const housingAssociations = new ContentH(
     "housingAssociations",
     "Housing Associations",
-    "",
+    "Explore various housing associations in Sheffield, offering a range of properties and eligibility criteria for different housing needs.",
     `
       <p>
         Housing Associations and Housing Trusts are non-profit making, independent organisations.
@@ -3095,7 +3094,7 @@ const bidding = new ContentH(
   
       <details class="accordion">
         <summary class="accordion-header">
-          <h3>Housing Associations</h3>
+          <h3> List of Housing Associations and their details</h3>
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
@@ -3441,7 +3440,7 @@ const bidding = new ContentH(
   const priorities = new ContentH(
     "priorities",
     "Priorities",
-    "",
+    "Learn about priority for rehousing, including how priority is assessed, what it means for your housing options, and how to request a review.",
     `
     <p>
       Priority for rehousing can be awarded if there is a need to be rehoused urgently and immediately. When your circumstances have been assessed, we will look at whether we can give you priority for housing ahead of other people on the Housing Register. We will then write to you explaining our decision. If we give you priority, we will explain why it has been given, what sort of property it is for and how long you have to use it. The letter will also explain how to request a review of the decision if you are unhappy with it.<br><br>
@@ -3473,7 +3472,7 @@ const bidding = new ContentH(
   const PropertyOffersAndViewings = new ContentH(
     "PropertyOffersAndViewings",
     "Property Offers and Viewings",
-    "",
+    "Understand how Sheffield City Council allocates properties, including the bidding process, property offers, and viewings based on eligibility and priority.",
     `
       <p>
         Once the bidding period has closed on a Tuesday night, 
@@ -3525,7 +3524,7 @@ const bidding = new ContentH(
   const rehousing = new MenuH(
     "rehousing",
     "Rehousing",
-    "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
+    "Guidelines on applying for rehousing, understanding the process, and checking eligibility for alternative housing.",
     [
       applyForRehousing,
       applicationChanges,
@@ -3540,60 +3539,10 @@ const bidding = new ContentH(
 //#endregion Rehousing
 
 //#region Rehousing ID / References
-const acceptableId = new ContentH(
-  "acceptableId",
-  "Acceptable ID",
-  "",
-  `
-      <ul>
-        <li>Proof of ID documents</li>
-        <li>Proof of address</li>
-        <li>Proof of Child Benefit</li>
-        <li>Marriage certificate</li>
-        <li>Divorce/Annulment papers</li>
-        <li>Passport (this can be expired but if the customer is an adult, an adult passport must be produced)</li>
-        <li>Deed poll documentation for change of name (to accompany details of former name if applicable)</li>
-        <li>Current bus passes with photograph</li>
-        <li>UK resident permit</li>
-        <li>ID card issued by EEA/EU countries</li>
-        <li>Home Office standard acceptance letter</li>
-        <li>Immigration status document</li>
-        <li>NASS 35</li>
-        <li>Citizenship card (with hologram and photo to prove age)</li>
-        <li>Medical card</li>
-        <li>Birth certificate/Adoption certificate</li>
-        <li>Letter from Social Worker/Probation Officer/Solicitor</li>
-        <li>Driving licence</li>
-        <li>Recent utility bill paid in that person’s name (last quarter)</li>
-        <li>Most recent council tax statement</li>
-        <li>Home Office standard acceptance letter</li>
-        <li>Letter from DWP for tax credits</li>
-        <li>Bank statement from within the last 3 months</li>
-        <li>Wage slip from current employer</li>
-        <li>Life assurance/Insurance policies</li>
-        <li>Proof of all other benefits</li>
-        <li>Child benefit award letter</li>
-        <li>The last 3 consecutive months bank statements (only where award letter is not available)</li>
-      </ul>
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
-  },
-  { date: "07/11/2024", name: "George Whitehouse" }
-);
-
 const idReferences = new ContentH(
   "idReferences",
   "ID / References",
-  "",
+  "Details on the required identification and references needed for the rehousing process, including verification procedures.",
   `
     <p>
       For current SCC tenants, ID is required for new rehousing applications.<br>
@@ -3670,7 +3619,7 @@ const idReferences = new ContentH(
 const idFaq = new ContentH(
   "idFaq",
   "ID FAQs",
-  "",
+  "Review frequently asked questions about ID requirements for rehousing applications, including document submission and validation processes.",
   `
     <p>
       Customers who have submitted an online application for rehousing, 
@@ -3718,7 +3667,7 @@ const idFaq = new ContentH(
 const movingIn = new ContentH(
   "movingIn",
   "Moving In",
-  "",
+  "Details about moving into a new property, including scheduling, property standards, utility setup, and meter readings.",
   `
     <h4>When can I move in once offered a property?</h4>
     <p>
@@ -3791,7 +3740,7 @@ const movingIn = new ContentH(
 const mutualExchanges = new ContentH(
   "mutualExchanges",
   "Mutual Exchanges",
-  "",
+  "Details and guidelines regarding the process, eligibility, and conditions of Mutual Exchange for housing tenants, including required documentation, restrictions, and steps to complete an exchange.",
   `
     <p>
       A Mutual Exchange is where two or more Council or Housing Association tenants can apply to swap
@@ -4025,7 +3974,7 @@ const mutualExchanges = new ContentH(
 const referencesFAQs = new ContentH(
   "referencesFAQs",
   "References FAQs",
-  "",
+  "Guidelines for providing references when applying for housing or making changes to applications, including who can provide them, how to obtain them, and the timeline for submission.",
   `
   <details class="accordion">
     <summary class="accordion-header">
@@ -4183,7 +4132,6 @@ const idReferencesMenu = new MenuH(
   "Rehousing ID / References ",
   "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
   [
-    acceptableId,
     idReferences, 
     idFaq, 
     movingIn, 
@@ -4201,7 +4149,7 @@ const idReferencesMenu = new MenuH(
 const applicantPlacedInAPriorityBand = new ContentH(
   "applicantPlacedInAPriorityBand",
   "Allocations Policy - Applicant placed in a priority band",
-  "",
+  "Explanation of priority bands for housing applications, including why certain applicants are placed in specific bands, how priority bids are assessed, and the reasoning behind the banding system based on individual circumstances.",
   `
   <details class="accordion">
     <summary class="accordion-header">
@@ -4332,7 +4280,7 @@ const applicantPlacedInAPriorityBand = new ContentH(
 const fosteringAndAdoption = new ContentH(
   "fosteringAndAdoption",
   "Fostering and Adoption",
-  "",
+  "Details on the processes for amending bedroom eligibility for foster and adoptive applicants, including the need for confirmation from Social Services and the potential benefit implications.",
   `
  
 <h3>Adoption</h3>
@@ -4370,7 +4318,7 @@ An e-mail from Social Services will be the normal route to receive confirmation.
 const priorityBandingTable = new ContentH(
   "priorityBandingTable",
   "Priority Banding Table",
-  "",
+  "Priority Banding Table details various rehousing priorities and their associated bands, along with hierarchy rules for certain categories like anti-social behaviour, homelessness, and health-related needs.",
   `
     <h3>Priority Banding Table</h3>
 
@@ -4571,7 +4519,7 @@ const priorityBandingTable = new ContentH(
 const threeOffersDemotedorDisqualified = new ContentH(
   "threeOffersDemotedorDisqualified",
   "Three Offers Demoted or Disqualified",
-  "",
+  "Understand the consequences of refusing three reasonable housing offers, including potential demotion or disqualification from the Housing Register.",
   `
 <h3>Reduced preference (demotion) following refusal of 3 reasonable offers</h3>
 <p> 
@@ -4619,7 +4567,7 @@ const threeOffersDemotedorDisqualified = new ContentH(
 const policy = new MenuH(
   "policy",
   "Rehousing policy",
-  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
+  "An overview of the rehousing policy, including exceptions to the standard policy and any specific conditions that apply.",
   [
     applicantPlacedInAPriorityBand,
     fosteringAndAdoption,
@@ -4633,32 +4581,10 @@ const policy = new MenuH(
 
 
 //#region Rents
-
-const arrearsorDebt = new ContentH(
-  "arrearsorDebt",
-  "Court Order Removal of",
-  "Removal of a Court Order from your rent account,",
-  `
-    <p>
-      If you would like the removal of a Court Order from your rent account, or to pay for the removal 
-      of the Court Order, then you can either apply direct to the court, or speak to our Court Team.  
-      You will require your court reference number. <br><br>
-
-      If the Court Team are happy for the Order to be removed, they will send a letter to the court 
-      advising the court that that they do not oppose the removal.
-    </p>
-  `,
-  { buttonLabel: "Arrears or Debt", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
-  { typeKey: "rents_transfered_to_service" },
-  { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
-  { date: "16/10/2024", name: "Shahzad Athar" }
-);
-
 const balanceEnquiry = new ContentH(
   "balanceEnquiry",
   "Balance Enquiry",
-  "Information about rent balance enquiry,",
+  "Learn how to manage your housing application, including balance checks, change of circumstances, and required identification for updates.",
   `
   <p>
   You can now check your own balance and rent account online by logging onto 
@@ -4922,7 +4848,7 @@ const balanceEnquiry = new ContentH(
 const contactRentsTeam = new ContentH(
   "contactRentsTeam",
   "Contact Rents Team",
-  "",
+  "Find contact information for various housing and benefits teams in Sheffield, including Rent, Benefits, Arrears, and Discretionary Housing Payments.",
   `
     <details class="accordion">
         <summary class="accordion-header">
@@ -5110,12 +5036,33 @@ const contactRentsTeam = new ContentH(
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
 
+const arrearsorDebt = new ContentH(
+  "arrearsorDebt",
+  "Court Order Removal of",
+  "Learn how to request the removal of a court order from your rent account, including the necessary steps and contact with the Court Team",
+  `
+    <p>
+      If you would like the removal of a Court Order from your rent account, or to pay for the removal 
+      of the Court Order, then you can either apply direct to the court, or speak to our Court Team.  
+      You will require your court reference number. <br><br>
+
+      If the Court Team are happy for the Order to be removed, they will send a letter to the court 
+      advising the court that that they do not oppose the removal.
+    </p>
+  `,
+  { buttonLabel: "Arrears or Debt", formName: "Rents" },
+  { typeKey: "rents_information_provided" },
+  { typeKey: "rents_transfered_to_service" },
+  { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
+  { date: "16/10/2024", name: "Shahzad Athar" }
+);
+
 
 
 const references = new ContentH(
   "references",
   "References",
-  "Information about Rents References,",
+  "Find out how to request financial or tenancy references, including fees for mortgage or private landlord requests.",
   `
     <p>
       IMFIT (Rents) can provide a financial reference for you. Your Neighbourhood Support Team can provide a Tenancy Reference.<br>
@@ -5144,7 +5091,7 @@ const references = new ContentH(
 const rentVariation = new ContentH(
   "rentVariation",
   "Rent Variation",
- "", 
+ "Learn about rent changes, including the annual increase, rent payment methods, and how various charges, including tenant levies and housing benefit adjustments, are handled.", 
   `
   <details class="accordion">
     <summary class="accordion-header">
@@ -5432,7 +5379,7 @@ const rentVariation = new ContentH(
 const statements = new ContentH(
   "statements",
   "Statements",
-  "",
+  "Find out how to access rent statements, request current or past statements, and understand the process for tenants in arrears.",
   `
   <p>
   Statements are issued every 12 months or are available online along with rent balance enquiries at 
@@ -5454,7 +5401,7 @@ const statements = new ContentH(
 const universalCredit = new ContentH(
   "universalCredit",
   "Universal Credit",
-  "",
+  "Learn how Universal Credit affects your benefits, rent payments, and how to apply for advances or changes in circumstances.",
   `
 <p>
 Refer to the "Benefits" section for information about Universal Credit.
@@ -5470,7 +5417,7 @@ Refer to the "Benefits" section for information about Universal Credit.
 const rents = new MenuH(
   "rents",
   "Rents",
-  "Information about Housing Rents",
+  "Information on rent payment methods, how to manage rent arrears, and the council's policy on rent increases.",
   [
     arrearsorDebt,
     balanceEnquiry,
@@ -5491,7 +5438,7 @@ const rents = new MenuH(
 const extraCareHousing = new ContentH(
   "extraCareHousing",
   "Extra Care Housing",
-  "desc tbd",
+  "Discover Extra Care Housing in Sheffield, offering independent living with tailored care, flexible packages, and a range of facilities.",
   `
     <h3>What is Extra Care Housing?</h3>
     <p>Extra Care Housing is based on 3 key principles:</p>
@@ -5573,7 +5520,7 @@ const extraCareHousing = new ContentH(
 const furnishedAccommodation = new ContentH(
   "furnishedAccommodation",
   "Furnished Accommodation",
-  "",
+  "Explore the Furnished Accommodation service, offering affordable, furnished housing with flexible packages and delivery options.",
   `
     <p>
       Furnished Accommodation meets the need for good quality furnished housing for
@@ -5713,7 +5660,7 @@ const furnishedAccommodation = new ContentH(
 const gypsyAndTravellers = new ContentH(
   "gypsyAndTravellers",
   "Gypsy and Travellers",
-  "desc tbd",
+  "Find information on Gypsy and Traveller sites in Sheffield, including management, roles, and waiting lists for accommodation.",
   `
     <h3>Where are the official Gypsy and Traveller sites</h3>
     <address>
@@ -5795,7 +5742,7 @@ const gypsyAndTravellers = new ContentH(
 const olderPersonsIndependentLiving = new ContentH(
   "olderPersonsIndependentLiving",
   "Older Persons Independent Living (OPIL)",
-  "",
+  "Explore Sheltered Housing for older people in Sheffield, offering independent living with support services, security, and communal facilities.",
   `
     <p>
       Sheltered housing is rented accommodation that is specially designed for older
@@ -5945,7 +5892,7 @@ const olderPersonsIndependentLiving = new ContentH(
 const shelteredAndSupported = new MenuH(
   "shelteredAndSupported",
   "Sheltered and Supported",
-  "Older persons independent living, extra care housing, furnished accommodation, and gypsy and travellers",
+  "Details on sheltered housing and supported living services, including eligibility and the support available for tenants.",
   [
     extraCareHousing,
     furnishedAccommodation,
@@ -5964,7 +5911,7 @@ const shelteredAndSupported = new MenuH(
 const tenancyEnforcementASB = new ContentH(
   "tenancyEnforcementASB",
   "Tenancy Enforcement (ASB)",
-  "What Anti-social behaviour (ASB) is, who is responsible and how to report and Sanctuary scheme",
+  "Learn about how Sheffield City Council handles Anti-Social Behaviour (ASB), including reporting, council responsibilities, and support for hate crime and domestic abuse victims.",
   `<p><h3>Anti-social Behaviour</h3>
     <p>Anti-social behaviour is behaviour which is capable of causing nuisance, annoyance, harassment, alarm or distress to an individual or community. This could range from a relatively minor issue to serious criminal activity. We do not adopt a single definition of anti-social behaviour but instead consider each report based on the circumstances.</p>
     <p>Examples of behaviours we may consider to be anti-social are:</p>
@@ -6049,7 +5996,7 @@ const tenancyEnforcementASB = new ContentH(
 const fobsandKeys = new ContentH(
   "fobsandKeys",
   "Fobs and Keys",
-  "",
+  "Find out how to replace lost or stolen keys and fobs, including costs, required ID, and the process for requesting replacements.",
   `
   <p>
     For lost or stolen keys, there may be a recharge (£5). Locks will only be replaced if the customer agrees to a recharge
@@ -6183,7 +6130,7 @@ const fobsandKeys = new ContentH(
 const housingServiceParkingPermits = new ContentH(
   "housingServiceParkingPermits",
   "Housing Service Parking Permits",
-  "",
+  "Learn how to apply for housing service parking permits and contact details for customer services related to permits and other assistance.",
   ` 
 <p>
 <strong>Service Area:</strong> Customer Services Back Office (Fulfilment Team)<br>
@@ -6205,7 +6152,7 @@ Streets Ahead, Environmental Services, Local Assistance Scheme<br>
 const nameChanges = new ContentH(
   "nameChanges",
   "Name Changes",
-  "",
+  "Find out the process for changing your name on your housing application, including required documents and acceptable forms of ID",
   `
 <p>
 You should present proof (3 documents in total) to a housing office or First Point who will copy the ID and save it to 
@@ -6238,7 +6185,7 @@ The same document cannot be used more than once (e.g., driving licence as primar
 const permissions = new ContentH(
   "permissions",
   "Permissions",
-  "",
+  "Understand the requirements for requesting permission for alterations or improvements to your home, including conditions, restrictions, and the approval process.",
   ` 
   <p>
     If you are over £250 (Total Indebtedness) in arrears, your permissions request is unlikely to be granted. You must have written permission 
@@ -6349,7 +6296,7 @@ const permissions = new ContentH(
 const tenancyAgreementRequest = new ContentH(
   "tenancyAgreementRequest",
   "Tenancy Agreement Request",
-  "",
+  "Request a copy of your Tenancy Agreement, ensuring you provide the required identification and address proof documents to verify your request.",
   ` 
   <p>
     If the request is urgent or for a former tenancy, you will need to visit your Area Office with relevant ID to obtain a copy of your Tenancy Agreement.
@@ -6419,7 +6366,7 @@ const tenancyAgreementRequest = new ContentH(
 const tenancyConditions = new ContentH(
   "tenancyConditions",
   "Tenancy Conditions",
-  "",
+  "Tenancy conditions outline tenant responsibilities, including rent payment, maintenance, and behavior expectations. Specific rules apply for alterations, pets, and tenancy violations. Tenants have rights like the right to repairs and compensation for certain improvements, and must follow rules for evictions and tenant references.",
   `
 <details class="accordion">
   <summary class="accordion-header">
@@ -6839,7 +6786,7 @@ const tenancyConditions = new ContentH(
 const tenancySustainment = new MenuH(
   "tenancySustainment",
   "Tenancy Sustainment",
-  "Information about Housing Tenancy Sustainment",
+  "Support for maintaining tenancies, including information on permissions, tenancy agreements, name changes, parking permits, and council housing services.",
   [
     fencesCouncilHousing,
     fobsandKeys,

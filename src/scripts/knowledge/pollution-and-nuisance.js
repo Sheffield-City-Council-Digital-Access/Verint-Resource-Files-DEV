@@ -59,7 +59,7 @@ class FormPaN extends CorePaN {
 const badgerProtection = new ContentPaN(
   "badgerProtectionAct1992",
   "Badgers Protection",
-  "Information about protecting badgers in Britain",
+  "Learn about the legal protections for badgers under the Protection of Badgers Act 1992 and the penalties for violating these laws.",
   `
     <p>
       The Protection of Badgers Act 1992 makes it illegal for any person to kill,
@@ -117,7 +117,7 @@ const badgerProtection = new ContentPaN(
 const batProtectionBritain = new ContentPaN(
   "batProtectionBritain",
   "Bat Protection",
-  "Information about protecting bats in Britain",
+  "Understand the legal protections for bats in Britain, including prohibited actions and penalties for disturbing, harming, or selling bats.",
   `
     <p>
       In Britain, all bat species and their roosts are legally protected, by both domestic and international legislation. 
@@ -160,7 +160,7 @@ const batProtectionBritain = new ContentPaN(
 const bedBugTreatment = new ContentPaN(
   "bedBugTreatment",
   "Bed Bug Treatment",
-  "Information about Bed Bug treatment and services",
+  "Find out how to report and submit a bed bug sample for treatment, including treatment costs, eligibility for reduced fees, and the process for larger properties.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -272,7 +272,7 @@ const bedBugTreatment = new ContentPaN(
 const birdsandPigeonsTreatment = new ContentPaN(
   "birdsandPigeonsTreatment",
   "Birds and Pigeons Treatment",
-  "Information about birds and Pigeon's Treatment",
+  "Learn how to request bird and pigeon treatment for commercial, health authority, industrial, and university properties, including how to receive a quote.",
   `
   <h3>Commercial, Health Authority, Industrial and University</h3>
     <p>
@@ -319,7 +319,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
 const biscuitBeetlesTreatment = new ContentPaN(
   "biscuitBeetlesTreatment",
   "Biscuit Beetles Treatment",
-  "Information about Biscuit Beetles treatment and services",
+  "Find out how to submit a sample for Biscuit Beetle treatment, including treatment costs, eligibility for reduced fees, and the process for larger properties or commercial inquiries.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -428,7 +428,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
 const bumbleBeesTreatment = new ContentPaN(
   "bumbleBeesTreatment",
   "Bumble Bees Treatment",
-  "Information about Bumble Bees treatment and services",
+  "Find out the cost for Bumble Bee treatment in domestic properties and communal areas, including reduced fees for eligible benefits and the process for commercial or HMO inquiries.",
   `
     <h3>Cost for Treatment</h3>
     <p>
@@ -517,7 +517,7 @@ const bumbleBeesTreatment = new ContentPaN(
 const carpetBeetlesTreatment = new ContentPaN(
   "carpetBeetlesTreatment",
   "Carpet Beetles Treatment",
-  "Information about Carpet Beetles treatment and services",
+  "Learn how to submit a sample for Carpet Beetles treatment, the cost of treatment for domestic properties, including reductions for eligible benefits, and how to request a quote for commercial or HMO properties.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -636,7 +636,7 @@ const carpetBeetlesTreatment = new ContentPaN(
 const clusterFliesTreatment = new ContentPaN(
   "clusterFliesTreatment",
   "Cluster Flies Treatment",
-  "Information about Cluster Flies treatment and services",
+  "Learn how to submit a sample for Cluster Flies treatment, the treatment cost for domestic properties, including discounts for eligible benefits, and the associated call-out fee for treatment.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -718,7 +718,7 @@ const clusterFliesTreatment = new ContentPaN(
 const cockroachesTreatment = new ContentPaN(
   "cockroachesTreatment",
   "Cockroaches Treatment",
-  "Information about Cockroaches Treatment and services",
+  "Find out how to submit a sample for Cockroach treatment, the treatment cost, discounted rates for eligible benefits, and the call-out fee if the treatment is not completed during the visit.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -800,7 +800,7 @@ const cockroachesTreatment = new ContentPaN(
 const cricketsTreatment = new ContentPaN(
   "cricketsTreatment",
   "Crickets Treatment",
-  "Information about Crickets Treatment and services",
+  "Learn how to submit a sample for Cricket treatment, the treatment cost, discounted rates for those on eligible benefits, and the call-out fee for incomplete treatments.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -882,7 +882,7 @@ const cricketsTreatment = new ContentPaN(
 const dermestesBeetlesTreatment = new ContentPaN(
   "dermestesBeetlesTreatment",
   "Dermestes Beetles Treatment",
-  "Information about Dermestes Beetles Treatment and services",
+  "Find out how to submit a sample for Dermestes Beetles treatment, treatment costs, discounted rates for those on eligible benefits, and the call-out fee for incomplete treatments.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -961,92 +961,10 @@ const dermestesBeetlesTreatment = new ContentPaN(
   { date: "27/11/2024", name: "Nathan Smith" }
 );
 
-const fliesTreatment = new ContentPaN(
-  "fliesTreatment",
-  "Flies Treatment",
-  "Information about Flies Treatment and services",
-  `
-    <section class="info-panel" role="region" aria-label="Information panel">
-      <h3>Sample Required</h3>
-      <p>
-        Before we can provide treatment for Flies in your domestic property, we
-        will need a sample of the pest.
-      </p>
-      <p>You can either bring your sample to:</p>
-      <address>
-        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
-      </address>
-      <p>Or you can post your sample to:</p>
-      <address>
-        Environmental Services<br />
-        Block B, Staniforth Road Depot<br />
-        Staniforth Road<br />
-        Sheffield, S9 3HD
-      </address>
-      <p>
-        Please ensure your sample is in a secure, crush-proof container, alive or
-        dead. Attach information detailing:
-      </p>
-      <ul>
-        <li>Your name</li>
-        <li>Your address</li>
-        <li>Your contact number and/or email</li>
-        <li>How long the insects have been present</li>
-        <li>Where in the property the insects have been found</li>
-      </ul>
-      <p>
-        If a sample has been provided and the pests have been confirmed, you can request a treatment.
-      </p>
-      <p>
-        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
-      </p>
-    </section>
-    <h3>Cost for Treatment</h3>
-    <p>
-      The treatment cost for Flies is £110.00. This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
-    </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Universal Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
-      attends the property but is unable to complete the treatment.
-    </p>
-  `,
-  {
-    buttonLabel: "Book treatment for Flies",
-    formName: "pest_control_treatment",
-  },
-  { typeKey: "pest_control_transfer_to_service" },
-  { typeKey: "pest_control_information_provided" },
-  {
-    type: "Book",
-    keywords: ["Flies", "Treatment", "Pests", "Vermin"],
-    categories: [
-      "Pollution and Nuisance",
-      "Environmental",
-      "Pest Control",
-      "Environmental Health",
-    ],
-  },
-  { date: "27/11/2024", name: "Nathan Smith" }
-);
-
 const fleasTreatment = new ContentPaN(
   "fleasTreatment",
   "Flea Treatment",
-  "Information about fleas",
+  "Learn about the costs, eligibility for discounted treatment for fleas, the call-out fee, and the process for submitting samples or identifying potential flea infestations.",
   `
     <h3>Cost for Flea Treatment</h3>
     <p>The treatment cost for Fleas is <strong>£132.00</strong>.</p>
@@ -1149,10 +1067,92 @@ const fleasTreatment = new ContentPaN(
   { date: "27/11/2024", name: "Nathan Smith" }
 );
 
+const fliesTreatment = new ContentPaN(
+  "fliesTreatment",
+  "Flies Treatment",
+  "Find out about the process for providing a sample of flies for treatment, the costs involved, eligibility for discounted treatment, and the call-out fee for pest control services.",
+  `
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <h3>Sample Required</h3>
+      <p>
+        Before we can provide treatment for Flies in your domestic property, we
+        will need a sample of the pest.
+      </p>
+      <p>You can either bring your sample to:</p>
+      <address>
+        First Point,<br />Howden House,<br />1 Union Street,<br />Sheffield, S1 2SH
+      </address>
+      <p>Or you can post your sample to:</p>
+      <address>
+        Environmental Services<br />
+        Block B, Staniforth Road Depot<br />
+        Staniforth Road<br />
+        Sheffield, S9 3HD
+      </address>
+      <p>
+        Please ensure your sample is in a secure, crush-proof container, alive or
+        dead. Attach information detailing:
+      </p>
+      <ul>
+        <li>Your name</li>
+        <li>Your address</li>
+        <li>Your contact number and/or email</li>
+        <li>How long the insects have been present</li>
+        <li>Where in the property the insects have been found</li>
+      </ul>
+      <p>
+        If a sample has been provided and the pests have been confirmed, you can request a treatment.
+      </p>
+      <p>
+        A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
+      </p>
+    </section>
+    <h3>Cost for Treatment</h3>
+    <p>
+      The treatment cost for Flies is £110.00. This is based on a standard size
+      of a 3-bed semi-detached property. If your property is larger, please escalate
+      your enquiry to receive a quote.
+    </p>
+    <p>
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to £69.50:
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Universal Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+      All prices include a call-out fee of £39. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+  `,
+  {
+    buttonLabel: "Book treatment for Flies",
+    formName: "pest_control_treatment",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Flies", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "27/11/2024", name: "Nathan Smith" }
+);
+
 const foxesInformation = new ContentPaN(
   "foxesInformation",
   "Foxes Information",
-  "Information about Foxes",
+  "Information on how to handle fox-related issues in Sheffield and where to get advice, including the Fox Project website.",
   `
    <p>Sheffield City Council doesn't offer a service for foxes.</p>
     <p>For advice/information on foxes, please visit 
@@ -1181,7 +1181,7 @@ const foxesInformation = new ContentPaN(
 const FrogsorFrogspawn = new ContentPaN(
   "FrogsorFrogspawn",
   "Frogs or Frogspawn",
-  "Information about Frogs or Frogspawn",
+  "Guidance on handling frog or frogspawn issues, including contact information for DEFRA for removal and additional resources.",
   `
     <p>
       Sheffield City Council doesn't offer a service for Frogs or Frogspawn.
@@ -1214,7 +1214,7 @@ const FrogsorFrogspawn = new ContentPaN(
 const furBeetlesTreatment = new ContentPaN(
   "furBeetlesTreatment",
   "Fur Beetles Treatment",
-  "Information about Fur Beetles Treatment and services",
+"Details on the treatment process for fur beetles, including how to submit a sample, associated costs, and available reductions for those receiving certain benefits.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -1296,7 +1296,7 @@ const furBeetlesTreatment = new ContentPaN(
 const gardenAntsTreatment = new ContentPaN(
   "gardenAntsTreatment",
   "Garden Ants Treatment",
-  "Information about Garden Ants Treatment and services",
+  "Information on the treatment cost for garden ants, with details on available discounts for those receiving certain benefits.",
   `
     <h3>Cost for Treatment</h3>
     <p>
@@ -1343,7 +1343,7 @@ const gardenAntsTreatment = new ContentPaN(
 const honeyBeeTreatment = new ContentPaN(
   "honeyBeeTreatment",
   "Honey Bee Treatment",
-  "Information about Honey Bee Treatment and services",
+  "Guidance on honey bee treatment, including swarm information and contact details for local beekeepers willing to collect bees for free or at a charge.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -1518,7 +1518,7 @@ const honeyBeeTreatment = new ContentPaN(
 const ladyBirdsTreatment = new ContentPaN(
   "ladyBirdsTreatment",
   "Ladybirds Treatment",
-  "Information about Ladybird Treatment and services",
+  "Details about ladybird treatment, including costs and available discounts for individuals receiving specific benefits.",
   `
     <h3>Cost for Treatment</h3>
     <p>
@@ -1564,8 +1564,8 @@ const ladyBirdsTreatment = new ContentPaN(
 
 const masonryBeesTreatment = new ContentPaN(
   "masonryBeesTreatment",
-  "Masonry BeesTreatment",
-  "Information about Masonry Bees Treatment and services",
+  "Masonry Bees Treatment",
+  "Details about masonry bee treatment, including costs, benefits-related discounts, and charges for additional nests or treatment of nests located at height.",
   `
     <h3>Cost for Treatment</h3>
     <p>
@@ -1623,7 +1623,7 @@ const masonryBeesTreatment = new ContentPaN(
 const miceTreatment = new ContentPaN(
   "miceTreatment",
   "Mice Treatment",
-  "Information about Mice Treatment and services",
+  "Information on mice treatment costs, benefit-related discounts, and details about the number of visits covered by the treatment.",
   `
     <h3>Cost for Treatment</h3>
     <p>
@@ -1675,7 +1675,7 @@ const miceTreatment = new ContentPaN(
 const mitesTreatment = new ContentPaN(
   "mitesTreatment",
   "Mites Treatment",
-  "Information about Mites Treatment and services",
+  "Details about mite treatment costs, benefit-related discounts, and the call-out fee.",
   `
     <h3>Cost for Treatment</h3>
     <p>
@@ -1722,7 +1722,7 @@ const mitesTreatment = new ContentPaN(
 const mothsTreatment = new ContentPaN(
   "mothsTreatment",
   "Moths Treatment",
-  "Information about Moths Treatment and services",
+  "Information on moth treatment, including sample submission, cost, and available benefit-related discounts.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -1804,7 +1804,7 @@ const mothsTreatment = new ContentPaN(
 const pharoahAntsTreatment = new ContentPaN(
   "pharoahAntsTreatment",
   "Pharoah Ants Treatment",
-  "Information about Pharoah Ants Treatment and services",
+  "Details on Pharoah Ant treatment costs and available discounts for benefit recipients.",
   `
     <h3>Cost for Treatment</h3>
     <p>
@@ -1851,7 +1851,7 @@ const pharoahAntsTreatment = new ContentPaN(
 const psocidsTreatment = new ContentPaN(
   "psocidsTreatment",
   "Psocids Treatment",
-  "Information about psocids Treatment and services",
+  "Information on Psocids treatment, including costs, sample requirements, and available discounts for benefit recipients.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -1933,7 +1933,7 @@ const psocidsTreatment = new ContentPaN(
 const ratTreatment = new ContentPaN(
   "ratTreatment",
   "Rat Treatment",
-  "Information about Rat treatment and services",
+  "Information on rat treatment, including costs, free treatment for certain benefits, communal area handling, and commercial property inquiries.",
   `
     <h3>Cost for Treatment</h3>
     <p>
@@ -2028,7 +2028,7 @@ const ratTreatment = new ContentPaN(
 const redSpiderMitesTreatment = new ContentPaN(
   "redSpiderMitesTreatment",
   "Red Spider Mites Treatment",
-  "Information about Red Spider Mites Treatment and services",
+  "Information about Red Spider Mites treatment, including sample requirements, treatment costs, reduced prices for benefits recipients, and call-out fees."  ,
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -2110,7 +2110,7 @@ const redSpiderMitesTreatment = new ContentPaN(
 const sewageFliesTreatment = new ContentPaN(
   "sewageFliesTreatment",
   "Sewage Flies Treatment",
-  "Information about Sewage Flies Treatment and services",
+  "Information on Sewage Flies treatment, including sample requirements, treatment costs, discounted prices for benefits recipients, and associated call-out fees.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -2192,7 +2192,7 @@ const sewageFliesTreatment = new ContentPaN(
 const silverFishTreatment = new ContentPaN(
   "silverFishTreatment",
   "Silver Fish Treatment",
-  "Information about Silver Fish Treatment and services",
+  "Information on Silver Fish treatment, including treatment costs, discounted prices for benefits recipients, and associated call-out fees.",
   `
     <h3>Cost for Treatment</h3>
     <p>
@@ -2239,7 +2239,7 @@ const silverFishTreatment = new ContentPaN(
 const spiderBeetlesTreatment = new ContentPaN(
   "spiderBeetlesTreatment",
   "Spider Beetles Treatment",
-  "Information about Spider Beetles Treatment and services",
+  "Details on Spider Beetles treatment, including sample submission instructions, treatment cost, discounted prices for benefits recipients, and call-out fees.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -2321,7 +2321,7 @@ const spiderBeetlesTreatment = new ContentPaN(
 const squirrelsTreatment = new ContentPaN(
   "squirrelsTreatment",
   "Squirrels Treatment",
-  "Information about Squirrels Treatment and services",
+  "Details on Squirrel treatment, including costs, discounted rates for benefits recipients, and the included call-out fee.",
   `
     <h3>Cost for Treatment</h3>
     <p>
@@ -2372,7 +2372,7 @@ const squirrelsTreatment = new ContentPaN(
 const waspsTreatment = new ContentPaN(
   "waspsTreatment",
   "Wasps Treatment",
-  "Information about Wasps Treatment and services",
+  "Information on Wasps treatment, including costs, discount for benefits recipients, and details on potential additional charges for high nests.",
   `
     <h3>Cost for Treatment</h3>
     <p>
@@ -2429,7 +2429,7 @@ const waspsTreatment = new ContentPaN(
 const weevilsTreatment = new ContentPaN(
   "weevilsTreatment",
   "Weevils Treatment",
-  "Information about Weevils Treatment and services",
+  "Instructions on providing a sample of Weevils for treatment, along with the contact details and required information, and information on the cost including the call-out fee.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -2494,7 +2494,7 @@ const weevilsTreatment = new ContentPaN(
 const woodliceTreatment = new ContentPaN(
   "woodliceTreatment",
   "Woodlice Treatment",
-  "Information about Woodlice Treatment and services",
+  "Information on the cost of treatment for woodlice, including benefits-related discounts, and the call-out fee.",
   `
     <h3>Cost for Treatment</h3>
     <p>
@@ -2697,7 +2697,7 @@ const reportDogFouling = new FormPaN(
 const abandonedVehicles = new ContentPaN(
   "abandonedVehicles",
   "Abandoned vehicles",
-  "Report an abandoned vehicle",
+  "Learn how to report an abandoned vehicle and understand the responsibilities of the Council and police in its removal.",
   `
     <p>
       We have a duty to remove abandoned vehicles.The decision as to whether
@@ -2762,10 +2762,125 @@ const abandonedVehicles = new ContentPaN(
   { date: "05/09/2024", name: "Elliott Griffiths" }
 );
 
+//#region Clean Air Zone
+
+const howAreChargesPaid = new ContentPaN(
+  "howAreChargesPaid",
+  "How are charges paid",
+  "Learn how to pay charges for entering the Clean Air Zone, including payment deadlines and responsibilities for drivers",
+`
+<p>Charges will need to be paid online via central government’s online Clean Air Zone payment portal. Payment can be made ahead of entering the zone. Charges must be paid within 7 days of entering the Clean Air Zone. If payments are not made within 7 days additional penalty charges may apply. The link to the payment portal will not be live until the Clean Air Zone is launched.</p>
+<p>It will be the responsibility of drivers to go online and make payment. No notifications are issued to drivers.</p>
+`,
+{
+  buttonLabel: "",
+  formName: "",
+},
+{ typeKey: "caz_information_requested" },
+{ typeKey: "caz_information_provided" },
+{
+  type: "Information",
+  keywords: [
+    "Clean Air Zone",
+    "caz",
+    "cean air zone",
+    "zon",
+    "cza"],
+  categories: ["Parking", "Pollution and Nuisance"],
+},
+{ date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const howLongWillTheCleanAirZoneBeInPlace = new ContentPaN(
+  "howLongWillTheCleanAirZoneBeInPlace",
+  "How long will the Clean Air Zone be in place",
+  "Find out how long the Clean Air Zone will be in place and the available financial support for businesses and residents to upgrade to cleaner vehicles.",
+`
+<p>The Clean Air Zone will be in place in Sheffield until the city can provide evidence to the Department for Environment, Food & Rural Affairs (Defra) that it has met and can maintain for a minimum of two years the reduced legal levels of Nitrogen Dioxide (NO2) required. There will be significant monitoring and evaluation of the CAZ to determine this.</p>
+<h3>What support will there be for those affected</h3>
+<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.</p>
+`,
+{
+  buttonLabel: "",
+  formName: "",
+},
+{ typeKey: "caz_information_requested" },
+{ typeKey: "caz_information_provided" },
+{
+  type: "Information",
+  keywords: [
+    "Clean Air Zone",
+    "caz",
+    "cean air zone",
+    "zon",
+    "cza"],
+  categories: ["Parking", "Pollution and Nuisance"],
+},
+{ date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const howMuchWillDriversBeCharged = new ContentPaN(
+  "howMuchWillDriversBeCharged",
+  "How much will drivers be charged",
+  "Learn about the daily charges for vehicles entering the Clean Air Zone that do not meet the required environmental standards.",
+
+`
+<p>If your vehicle does not meet the minimum standard, you will have to pay the charge for every day you enter the zone. This would be:</p>
+  <ul>
+  <li>£10 per day for polluting vans/LGVs and Taxis</li>
+  <li>£50 per day for coaches, buses, and lorries/HGVs</li>
+  </ul>
+  `,
+{
+  buttonLabel: "",
+  formName: "",
+},
+{ typeKey: "caz_information_requested" },
+{ typeKey: "caz_information_provided" },
+{
+  type: "Information",
+  keywords: [
+    "Clean Air Zone",
+    "caz",
+    "cean air zone",
+    "zon",
+    "cza"],
+  categories: ["Parking", "Pollution and Nuisance",],
+},
+{ date: "06/11/2024", name: "Dinah Williams" }
+);
+
+const howWillDriversBeCharged = new ContentPaN(
+  "howWillDriversBeCharged",
+  "How will drivers be charged",
+  "Find out how drivers will be charged for entering the Clean Air Zone using ANPR cameras, with charges applied once per day regardless of exits and re-entries.",
+`
+<p>Automatic Number Plate Recognition (ANPR) cameras installed across the city centre will detect non-compliant vehicles entering the Clean Air Zone boundary. Charges apply 24 hours a day, seven days a week. The Clean Air Zone charges at a daily rate, meaning drivers will only need to make one payment a day, regardless of how many times they exit and re-enter.</p>
+`,
+{
+  buttonLabel: "",
+  formName: "",
+},
+{ typeKey: "caz_information_requested" },
+{ typeKey: "caz_information_provided" },
+{
+  type: "Information",
+  keywords: [
+    "Clean Air Zone",
+    "caz",
+    "cean air zone",
+    "zon",
+    "cza"],
+  categories: ["Parking", "Pollution and Nuisance",],
+},
+{ date: "06/11/2024", name: "Dinah Williams" }
+);
+
+
 const whatIsACleanAirZone = new ContentPaN(
   "whatIsACleanAirZone",
   "What Is A Clean Air Zone",
-  "Information relating to the Clean Air Zone Scheme",
+  "Learn what a Clean Air Zone is, its purpose in reducing air pollution, and which vehicles will be charged for entry in Sheffield.",
 `
 <p>
   A Clean Air Zone is a defined area of a town or city within which certain
@@ -2810,16 +2925,12 @@ const whatIsACleanAirZone = new ContentPaN(
 { date: "06/11/2024", name: "Dinah Williams" }
 );
 
-const whyIsACleanAirZoneBeingIntroduced = new ContentPaN(
-  "whyIsACleanAirZoneBeingIntroduced",
-  "Why Is A Clean Air Zone Being Introduced",
-  "Information relating to why the Clean Air Zone is being introduced",
-
+const whatSupportWillThereBeForThoseAffected = new ContentPaN(
+  "whatSupportWillThereBeForThoseAffected",
+  "What support will there be for those affected",
+  "Discover the financial support available for businesses and residents to upgrade to cleaner vehicles, including grants and interest-subsidized loans.",
 `
-<p>The implementation of the Category C Clean Air Zone in Sheffield is the result of a legal directive from national government requiring Nitrogen Dioxide (NO2) levels to be reduced to legal levels at locations across Sheffield and Rotherham within the shortest possible time.</p>
-<p>The primary aim of Clean Air Zones is to protect the public from exposure to Nitrogen Dioxide (NO2) emissions from road traffic. Air pollution can permanently damage children's lungs, can cause strokes, lung cancer and cardiovascular disease. Find out the health impacts from air pollution at <a href="https://www.gov.uk/government/publications/health-matters-air-pollution" target="_blank">https://www.gov.uk/government/publications/health-matters-air-pollution</a>.</p>
-<p>A number of other local authorities across the UK have also been legally directed to introduce Clean Air Zones - not only Sheffield.</p>
-<p>We have worked with DEFRA’s Joint Air Quality Unit (JAQU) to form a plan to reduce annual average concentrations of Nitrogen Dioxide (NO2) in Sheffield. The Clean Air Zone is focused around the city center where some of the most polluted locations are, but it will deliver air quality below the legal limit of 40µg/m<sup>3</sup> across the whole of the city.</p>
+<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.</p>
 `,
 {
   buttonLabel: "",
@@ -2835,7 +2946,7 @@ const whyIsACleanAirZoneBeingIntroduced = new ContentPaN(
     "cean air zone",
     "zon",
     "cza"],
-  categories: ["Parking", "Pollution and Nuisance",],
+  categories: ["Parking", "Pollution and Nuisance"],
 },
 { date: "06/11/2024", name: "Dinah Williams" }
 );
@@ -2843,7 +2954,7 @@ const whyIsACleanAirZoneBeingIntroduced = new ContentPaN(
 const whatVehiclesWillBeCharged = new ContentPaN(
   "whatVehiclesWillBeCharged",
   "What vehicles will be charged",
-  "Information relating to which vehicles charged",
+  "Find out which vehicle types will be charged in Sheffield's Clean Air Zone, based on their engine standards, and how to check your vehicle’s eligibility.",
 
 `
 <p>Only specific vehicle types with the most polluting engine standards will be charged for entering the Clean Air Zone. Private cars, motorbikes, or mopeds will not be charged for traveling in Sheffield.</p>
@@ -2877,43 +2988,16 @@ const whatVehiclesWillBeCharged = new ContentPaN(
 { date: "06/11/2024", name: "Dinah Williams" }
 );
 
-const howMuchWillDriversBeCharged = new ContentPaN(
-  "howMuchWillDriversBeCharged",
-  "How much will drivers be charged",
-  "Information relating to how much drivers will be charged",
+const whyIsACleanAirZoneBeingIntroduced = new ContentPaN(
+  "whyIsACleanAirZoneBeingIntroduced",
+  "Why Is A Clean Air Zone Being Introduced",
+  "Learn about the legal directive behind Sheffield's Category C Clean Air Zone, its aim to reduce Nitrogen Dioxide levels, and the health impacts of air pollution.",
 
 `
-<p>If your vehicle does not meet the minimum standard, you will have to pay the charge for every day you enter the zone. This would be:</p>
-  <ul>
-  <li>£10 per day for polluting vans/LGVs and Taxis</li>
-  <li>£50 per day for coaches, buses, and lorries/HGVs</li>
-  </ul>
-  `,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance",],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const howWillDriversBeCharged = new ContentPaN(
-  "howWillDriversBeCharged",
-  "How will drivers be charged",
-  "Information relating to how drivers will be charged",
-`
-<p>Automatic Number Plate Recognition (ANPR) cameras installed across the city centre will detect non-compliant vehicles entering the Clean Air Zone boundary. Charges apply 24 hours a day, seven days a week. The Clean Air Zone charges at a daily rate, meaning drivers will only need to make one payment a day, regardless of how many times they exit and re-enter.</p>
+<p>The implementation of the Category C Clean Air Zone in Sheffield is the result of a legal directive from national government requiring Nitrogen Dioxide (NO2) levels to be reduced to legal levels at locations across Sheffield and Rotherham within the shortest possible time.</p>
+<p>The primary aim of Clean Air Zones is to protect the public from exposure to Nitrogen Dioxide (NO2) emissions from road traffic. Air pollution can permanently damage children's lungs, can cause strokes, lung cancer and cardiovascular disease. Find out the health impacts from air pollution at <a href="https://www.gov.uk/government/publications/health-matters-air-pollution" target="_blank">https://www.gov.uk/government/publications/health-matters-air-pollution</a>.</p>
+<p>A number of other local authorities across the UK have also been legally directed to introduce Clean Air Zones - not only Sheffield.</p>
+<p>We have worked with DEFRA’s Joint Air Quality Unit (JAQU) to form a plan to reduce annual average concentrations of Nitrogen Dioxide (NO2) in Sheffield. The Clean Air Zone is focused around the city center where some of the most polluted locations are, but it will deliver air quality below the legal limit of 40µg/m<sup>3</sup> across the whole of the city.</p>
 `,
 {
   buttonLabel: "",
@@ -2934,86 +3018,7 @@ const howWillDriversBeCharged = new ContentPaN(
 { date: "06/11/2024", name: "Dinah Williams" }
 );
 
-const howAreChargesPaid = new ContentPaN(
-  "howAreChargesPaid",
-  "How are charges paid",
-  "Information relating to how charges are paid",
-`
-<p>Charges will need to be paid online via central government’s online Clean Air Zone payment portal. Payment can be made ahead of entering the zone. Charges must be paid within 7 days of entering the Clean Air Zone. If payments are not made within 7 days additional penalty charges may apply. The link to the payment portal will not be live until the Clean Air Zone is launched.</p>
-<p>It will be the responsibility of drivers to go online and make payment. No notifications are issued to drivers.</p>
-`,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance"],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
 
-const howLongWillTheCleanAirZoneBeInPlace = new ContentPaN(
-  "howLongWillTheCleanAirZoneBeInPlace",
-  "How long will the Clean Air Zone be in place",
-  "Information relating to how long the Clean Air Zone will be in place",
-`
-<p>The Clean Air Zone will be in place in Sheffield until the city can provide evidence to the Department for Environment, Food & Rural Affairs (Defra) that it has met and can maintain for a minimum of two years the reduced legal levels of Nitrogen Dioxide (NO2) required. There will be significant monitoring and evaluation of the CAZ to determine this.</p>
-<h3>What support will there be for those affected</h3>
-<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.</p>
-`,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance"],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
-
-const whatSupportWillThereBeForThoseAffected = new ContentPaN(
-  "whatSupportWillThereBeForThoseAffected",
-  "What support will there be for those affected",
-  "Information relating to support for those affected",
-`
-<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.</p>
-`,
-{
-  buttonLabel: "",
-  formName: "",
-},
-{ typeKey: "caz_information_requested" },
-{ typeKey: "caz_information_provided" },
-{
-  type: "Information",
-  keywords: [
-    "Clean Air Zone",
-    "caz",
-    "cean air zone",
-    "zon",
-    "cza"],
-  categories: ["Parking", "Pollution and Nuisance"],
-},
-{ date: "06/11/2024", name: "Dinah Williams" }
-);
 
 
 const cleanAirZone = new MenuPaN(
@@ -3030,6 +3035,8 @@ const cleanAirZone = new MenuPaN(
     whatSupportWillThereBeForThoseAffected
   ]
 );
+
+//#endregion Clean Air Zone
 
 
 

@@ -54,125 +54,10 @@ class FormSaC extends CoreSaC {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-const fundedEarlyLearning = new ContentSaC(
-  "fundedEarlyLearning",
-  "Funded Early Learning",
-  "Access to childcare support for 2-year-olds",
-  `
-    <p>
-      From April 2024, eligible working parents of 2-year-olds can access 15 hours
-      childcare support. By September 2025, eligible working families with children
-      aged between 9 months and 5 years old will be entitled to 30 hours of
-      childcare support.
-    </p>
-    <p>
-      The changes are being introduced gradually to make sure that providers can
-      meet the needs of more families. This means that:
-    </p>
-    <p>
-      From September 2025, eligible working parents of children from 9 months to
-      school age will be entitled to 30 hours of childcare a week.
-    </p>
-    <p>
-      Like the existing offer, depending on your provider, these hours can be used
-      over 38 weeks of the year, or up to 52 weeks if you use fewer than your total
-      hours per week.
-    </p>
-    <p>
-      All eligible children are entitled to at least 570 hours of funded childcare
-      each year.
-    </p>
-    <p>
-      FEL helps children learn through play activities. Some benefits that parents
-      have seen:
-    </p>
-    <ul>
-      <li>children making friends their own age</li>
-      <li>children behaving better with grown-ups</li>
-      <li>children improving their speech and language</li>
-      <li>children settle down and concentrate for longer</li>
-      <li>
-        children are more willing to try new foods which improves their nutrition
-      </li>
-      <li>
-        younger children improving their sleeping patterns and toilet training
-      </li>
-    </ul>
-    <p>
-      The funded hours also help parents and carers access employment and training,
-      spend time with their younger children or just find time to get things done.
-    </p>
-    <p>
-      The hours must be taken over a minimum of 38 weeks (15 hours a week, or 30 if
-      entitled to additional hours) but can be taken over more weeks: for example,
-      your child could take 12 hours a week for 47½ weeks. Talk to your childcare
-      provider about what options are available. For Funded Early Learning enquiries
-      and more information on the Family Hubs for Families, please contact the
-      Family Hubs - <a href="tel:0114 2735665">0114 2735665</a>
-    </p>
-    <p>
-      For information about the new 2-year-old extended working entitlement (15
-      hours offer starts April 2024, from 9 months old from September 2024) please
-      visit the childcare choices page, there is an assessment tool offering
-      families details of childcare support they might be eligible for and a link to
-      apply to HMRC.
-      <a href="https://www.childcarechoices.gov.uk" target="_blank">https://www.childcarechoices.gov.uk</a>
-    </p>
-    <p>
-      From September 2025: <br>
-      Eligible working parents of children from 9 months
-      to school age will be entitled to 30 hours of childcare a week.
-    </p>
-    <p>
-      If the customer would like to raise an enquiry for information that is not provided here, transfer
-      them to Family HUBs Service on: <a href="tel:0114 2735665">0114 2735665</a>
-    </p>
-    <p>
-    For further information, visit 
-    <a href="https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice" target="_blank">https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice</a>.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "funded_early_learning_transferred_to_service" },
-  { typeKey: "funded_early_learning_information_provided" },
-  {
-    type: "Apply",
-    keywords: [
-      "Funded Early Learning",
-      "Funded Erly Learning",
-      "Funded Early Larning",
-      "Fundeed Early Learning",
-      "Funded Early Lerning",
-      "Funded Eearly Learning",
-      "FEL",
-      "FIS",
-      "LAS",
-      "Free Early Learning",
-      "Fundded",
-      "Fuded",
-      "Funned",
-      "Fundedd",
-      "Funnded",
-      "Early",
-      "Erly",
-      "Earley",
-      "Eraly",
-      "Eraley",
-      "Lerning",
-      "Learnning",
-      "Lurning",
-      "Lreaning",
-      "Leanring"
-    ],
-    categories: ["School and Childcare"],
-  },
-  { date: "02/12/2024", name: "Andy Walker" }
-);
-
 const freeSchoolMeals = new ContentSaC(
   "freeSchoolMeals",
   "Free School Meals",
-  "Apply for free School meals",
+  "Explore the eligibility, application process, and benefits of Free School Meals, including details on vouchers, renewals, and changes in circumstances.",
   `
     <h3>Eligibility</h3>
     <p>
@@ -474,10 +359,125 @@ const freeSchoolMeals = new ContentSaC(
   { date: "02/12/2024", name: "Andy Walker" }
 );
 
+const fundedEarlyLearning = new ContentSaC(
+  "fundedEarlyLearning",
+  "Funded Early Learning",
+  "Learn about the eligibility, benefits, and application process for Funded Early Learning, including new childcare entitlements for working parents.",
+  `
+    <p>
+      From April 2024, eligible working parents of 2-year-olds can access 15 hours
+      childcare support. By September 2025, eligible working families with children
+      aged between 9 months and 5 years old will be entitled to 30 hours of
+      childcare support.
+    </p>
+    <p>
+      The changes are being introduced gradually to make sure that providers can
+      meet the needs of more families. This means that:
+    </p>
+    <p>
+      From September 2025, eligible working parents of children from 9 months to
+      school age will be entitled to 30 hours of childcare a week.
+    </p>
+    <p>
+      Like the existing offer, depending on your provider, these hours can be used
+      over 38 weeks of the year, or up to 52 weeks if you use fewer than your total
+      hours per week.
+    </p>
+    <p>
+      All eligible children are entitled to at least 570 hours of funded childcare
+      each year.
+    </p>
+    <p>
+      FEL helps children learn through play activities. Some benefits that parents
+      have seen:
+    </p>
+    <ul>
+      <li>children making friends their own age</li>
+      <li>children behaving better with grown-ups</li>
+      <li>children improving their speech and language</li>
+      <li>children settle down and concentrate for longer</li>
+      <li>
+        children are more willing to try new foods which improves their nutrition
+      </li>
+      <li>
+        younger children improving their sleeping patterns and toilet training
+      </li>
+    </ul>
+    <p>
+      The funded hours also help parents and carers access employment and training,
+      spend time with their younger children or just find time to get things done.
+    </p>
+    <p>
+      The hours must be taken over a minimum of 38 weeks (15 hours a week, or 30 if
+      entitled to additional hours) but can be taken over more weeks: for example,
+      your child could take 12 hours a week for 47½ weeks. Talk to your childcare
+      provider about what options are available. For Funded Early Learning enquiries
+      and more information on the Family Hubs for Families, please contact the
+      Family Hubs - <a href="tel:0114 2735665">0114 2735665</a>
+    </p>
+    <p>
+      For information about the new 2-year-old extended working entitlement (15
+      hours offer starts April 2024, from 9 months old from September 2024) please
+      visit the childcare choices page, there is an assessment tool offering
+      families details of childcare support they might be eligible for and a link to
+      apply to HMRC.
+      <a href="https://www.childcarechoices.gov.uk" target="_blank">https://www.childcarechoices.gov.uk</a>
+    </p>
+    <p>
+      From September 2025: <br>
+      Eligible working parents of children from 9 months
+      to school age will be entitled to 30 hours of childcare a week.
+    </p>
+    <p>
+      If the customer would like to raise an enquiry for information that is not provided here, transfer
+      them to Family HUBs Service on: <a href="tel:0114 2735665">0114 2735665</a>
+    </p>
+    <p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice" target="_blank">https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice</a>.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "funded_early_learning_transferred_to_service" },
+  { typeKey: "funded_early_learning_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "Funded Early Learning",
+      "Funded Erly Learning",
+      "Funded Early Larning",
+      "Fundeed Early Learning",
+      "Funded Early Lerning",
+      "Funded Eearly Learning",
+      "FEL",
+      "FIS",
+      "LAS",
+      "Free Early Learning",
+      "Fundded",
+      "Fuded",
+      "Funned",
+      "Fundedd",
+      "Funnded",
+      "Early",
+      "Erly",
+      "Earley",
+      "Eraly",
+      "Eraley",
+      "Lerning",
+      "Learnning",
+      "Lurning",
+      "Lreaning",
+      "Leanring"
+    ],
+    categories: ["School and Childcare"],
+  },
+  { date: "02/12/2024", name: "Andy Walker" }
+);
+
 const schoolFoodVoucher = new ContentSaC(
   "schoolFoodVoucher",
   "School Food Voucher",
-  "How to redeem School Food Vouchers",
+  "Find information on how to redeem school food vouchers, eligibility, and troubleshooting for missing or invalid vouchers.",
   `
     <p>
       22,500 letters sent to parents/carers with a unique eCode to exchange for a
