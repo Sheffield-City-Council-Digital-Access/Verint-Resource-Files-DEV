@@ -73,7 +73,7 @@ const requestLitterPickCollection = new FormRaP(
   "Collection after a community litter pick",
   "litter_pick_collection",
   {
-    type: "Report",
+    type: "Request",
     keywords: ["litter", "pick", "collection"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
@@ -83,7 +83,7 @@ const requestLitterPickCollection = new FormRaP(
 const manholeStopcockCover = new FormRaP(
   "manholeStopcockCover",
   "Manhole or stopcock cover",
-  "Report problems such as broken, depressed, missing, raised and rocking or noosy manhole or stopcock covers",
+  "Report problems such as broken, depressed, missing, raised and rocking or noisy manhole or stopcock covers",
   "manhole_stopcock_cover",
   {
     type: "Report",
@@ -109,7 +109,7 @@ const reportDrainGulley = new FormRaP(
 const reportFenceBarrier = new FormRaP(
   "reportFenceBarrier",
   "Fences or safety barriers",
-  "Report problems with cycle barriers, fences, pedestrian barriers, temporary barrer/sbollards or vehicle barriers",
+  "Report problems with cycle barriers, fences, pedestrian barriers, temporary barriers/bollards or vehicle barriers",
   "report_fence_barrier",
   {
     type: "Report",
@@ -239,7 +239,7 @@ const reportStreetLight = new FormRaP(
 const reportTrafficSignal = new FormRaP(
   "reportTrafficSignal",
   "Traffic signal, pedestrian crossing, camera or electronic sign",
-  "Report problems such as damaged, missing or exposed wires, obscureed or not working lights, and structural and appearance issues",
+  "Report problems such as damaged, missing or exposed wires, obscured or not working lights, and structural and appearance issues",
   "report_traffic_signal",
   {
     type: "Report",
@@ -475,7 +475,7 @@ const reportFallenLeaves = new FormRaP(
 const reportHedgePlantGrass = new ContentRaP(
   "reportHedgePlantGrass",
   "Hedges, plants or grassed areas",
-  "Reports problems such as overgrown, dead or diseased, and damaged vegetation",
+  "Report problems such as overgrown, dead or diseased, and damaged vegetation",
   `## needs information around grass cutting schedule ##`,
   {
     buttonLabel: "Report a hedge, plant or grass",
@@ -494,7 +494,7 @@ const reportHedgePlantGrass = new ContentRaP(
 const reportLitterBin = new FormRaP(
   "reportLitterBin",
   "Litter bins",
-  "Report problems such as full, leaning or knocked overlitter bins",
+  "Report problems such as full, leaning or knocked over litter bins",
   "report_litter_bin",
   {
     type: "Report",
@@ -507,7 +507,7 @@ const reportLitterBin = new FormRaP(
 const reportStreetSignBollard = new FormRaP(
   "reportStreetSignBollard",
   "Street signs or bollards",
-  "Report propblems such as obstructed, missing, damaged, or fallen signs or bollards",
+  "Report problems such as obstructed, missing, damaged, or fallen signs or bollards",
   "road_street_sign_bollard",
   {
     type: "Report",

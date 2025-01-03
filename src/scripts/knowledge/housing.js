@@ -3037,7 +3037,10 @@ const bidding = new ContentH(
         submitting a further online application.
       </p>
       <h3>Eligibility Table</h3>
-      <p>A copy of the eligibility table can be found here.</p>
+      <p>
+        A copy of the eligibility table can be found 
+        <a href="https://sccextranet.sharepoint.com/:w:/s/CustomerServiceKnowledgeCouncilHousing/EbdSLAAvW9JGiy9NqU1kK10B4dnbAzvX4hi3YjglwR3TDQ?e=Nicw6D&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDEwMjAwMTMxOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank">here</a>.
+      </p>
       <h3>Relaxed eligibility</h3>
       <p>
         Relaxed eligibility criteria is uncommon, but has sometimes been applied in
@@ -6043,26 +6046,6 @@ const tenancyEnforcementASB = new ContentH(
 );
 //#endregion Tenancy enforcement
 
- 
-//#region Tenancy Sustainment
-  
-const fences = new ContentH(
-  "fences",
-  "Fences",
-  "",
-  `
-  <p>
-    Refer to Asset Mgmt and Repairs section for Fences accordion.
-  </p> 
-  `,
-  { buttonLabel: "Fences", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
-  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
-  { type: "Fences", keywords: ["Tenancy"], categories: ["Housing"] },
-  { date: "06/11/2024", name: "Shahzad Athar" }
-);
-
-
 const fobsandKeys = new ContentH(
   "fobsandKeys",
   "Fobs and Keys",
@@ -6341,6 +6324,7 @@ const permissions = new ContentH(
     <div class="accordion-content">
       <p>Tenancy condition 47 states that:</p>
       <blockquote>
+      <br>
         Where a tenancy condition requires you to ask for our permission, this means:<br>
         <ul>
           <li>You must ask for our permission, and you must not proceed until we give you our permission.</li>
@@ -6835,11 +6819,12 @@ const tenancyConditions = new ContentH(
         <p>If this is for a mortgage company or a private landlord, the company needs to put this request in writing. There is a charge for this of £60, which must be paid to IMFIT before the reference is returned. The fee can be paid by debit/credit card or by BACS. If they want to pay this, transfer the call to IMFIT - this is NOT paid to the rent account.</p>
 
         <strong>Reference requests should be sent to:</strong><br>
-        Sheffield Council Housing Service<br>
-        PO Box 5967<br>
-        Sheffield<br>
-        S2 9GH</p>
-
+        <address>
+          Sheffield Council Housing Service<br>
+          PO Box 5967<br>
+          Sheffield<br>
+          S2 9GH</p>
+        </address>
         <p>For Social Landlords (Housing Associations), these also need to be put in writing, but there is no charge. Social Landlords can also email details of their request to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> if they prefer to send an email.</p>
     </div>
 </details>
@@ -6856,7 +6841,7 @@ const tenancySustainment = new MenuH(
   "Tenancy Sustainment",
   "Information about Housing Tenancy Sustainment",
   [
-    fences,
+    fencesCouncilHousing,
     fobsandKeys,
     housingServiceParkingPermits,
     nameChanges,
