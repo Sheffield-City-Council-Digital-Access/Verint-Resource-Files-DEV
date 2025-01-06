@@ -60,7 +60,7 @@ class FormBDMaC extends CoreBDMaC {
 const bookNoticeCivilPartnership = new ContentBDMaC(
     "bookNoticeCivilPartnership",
     "Book a Notice of Civil Partnership Appointment",
-    "Book a notice of Civil Partnership Appointment",
+    "Learn how to book a Notice of Civil Partnership appointment, including requirements, fees, and necessary documentation.",
     `
     <p>Giving notice means making a declaration that you are both free enter into a civil partnership and fulfil other requirements prescribed by law.</p>
     <p>You need to ensure that you have given notice at least 28 days before the date. </p>
@@ -120,7 +120,7 @@ const bookNoticeCivilPartnership = new ContentBDMaC(
 const bookNoticeOfMarriageApp = new ContentBDMaC(
     "bookNoticeOfMarriageApp",
     "Book a Notice of Marriage Appointment",
-    "Book a Notice of Marriage Appointment",
+    "Learn how to book a Notice of Marriage appointment, including requirements, fees, and necessary documentation.",
     `
     <p>Giving notice means making a declaration that you are both free to marry and fulfil other requirements prescribed by law.</p>
 
@@ -181,7 +181,7 @@ const bookNoticeOfMarriageApp = new ContentBDMaC(
 const bookingARegistrarWedding = new ContentBDMaC(
     "bookingARegistrarWedding",
     "Booking a Registrar, Wedding or Civil Partnership in Sheffield",
-    "Book a registrar, wedding or Civil Partnership",
+    "Learn how to book a registrar, wedding, or civil partnership ceremony in Sheffield, including venues, fees, and additional services.",
     `
     <h3>Ceremony Bookings for Weddings or Civil Partnerships</h3>
     <p>Our integrated system allows you to choose and book a ceremony within 15 minutes. Once you have entered the process below the system will give you options to choose a venue either in the Town Hall or at an external licensed venue in the Sheffield district only (please read below for terms to book a venue). The choice will be given to for a Wedding or Civil Partnership during the booking process.</p>
@@ -276,7 +276,7 @@ const bookingARegistrarWedding = new ContentBDMaC(
 const copyCertificates = new ContentBDMaC(
     "copyCertificates",
     "Copy Certificates ",
-    "Request copy certificates",
+    "Request copy certificates for births, marriages, civil partnerships, or deaths registered in Sheffield, with standard or urgent processing options.",
     `
     <p>We can only take request copies of certificates for registrations that took place in Sheffield.</p>
     <p>You can request copy certificates via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates</a>.</p>
@@ -307,7 +307,7 @@ const copyCertificates = new ContentBDMaC(
 const finalPayment = new ContentBDMaC(
     "finalPayment",
     "Final Payment",
-    "How to make your final payment for your marriage or civil partnership",
+    "Complete the final payment for your Sheffield ceremony, including certificate details and deadlines, using your booking ID",
     `
     <h3>Final Ceremony Payment</h3>
     <p>The final step to your ceremony is to make the final payment, you can make a final payment for your ceremony by using the Booking ID.  This booking ID was given when booking the ceremony after 29th of October 2024.</p>
@@ -338,7 +338,7 @@ const finalPayment = new ContentBDMaC(
 const licensedWeddingVenues = new ContentBDMaC(
     "licensedWeddingVenues",
     "Licensed Wedding Venues in Sheffield",
-    "Information on licensed wedding venues",
+    "Explore licensed wedding venues in Sheffield, including booking a registrar, fees, and certificate options.",
     `
     <p>You you can find information about licensed wedding venues in Sheffield at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues</a></p>
     <p>New link will be finalised soon for new intagrated payments we will need to update thisprocess when confirmed going live</p>
@@ -410,7 +410,7 @@ const registerABirthAndDeath = new ContentBDMaC(
 const registerADeath = new ContentBDMaC(
     "registerADeath",
     "Register a Death",
-    "Register a death",
+    "Learn how to register a death in Sheffield, including requirements, process, and associated costs",
     `
     <p>You are legally required to register a death within 5 days from when the Coroner or Medical Examiner has passed the relevant paperwork to the Register Office. The registration should take place in the district where the person died.
     </p>
@@ -478,7 +478,7 @@ const registerAStillbirth = new ContentBDMaC(
 const rescheduleAnAppointment = new ContentBDMaC(
     "rescheduleAnAppointment",
     "Reschedule an Appointment",
-    "Reschedule an appointment",
+    "Find out how to reschedule your appointment.",
     `
   <p>To reschedule an appointment email: <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a></p>
  

@@ -57,7 +57,7 @@ class FormTaT extends CoreTaT {
 const childTravelPass = new ContentTaT(
   "childTravelPass",
   "Child Travel Pass",
-  "Apply or replace a child travel pass (Zoom Zero Travel Pass)",
+  "Find details on eligibility, application, appeals, and replacement options for a Children's Travel Pass in Sheffield.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>If you've changed your address or school</h3>
@@ -261,7 +261,7 @@ const childTravelPass = new ContentTaT(
 const disabledTravelPermit = new ContentTaT(
   "disabledTravelPermit",
   "Disabled Travel Permit",
-  "What is the Eligibility Criteria for a Disabled Travel Permit",
+  "Find information on eligibility, application process, usage, and appeal details for a Disabled Travel Permit in Sheffield.",
   `
     <p>
       You may qualify for a pass if you're aged between 5 and 66 and meet one of the

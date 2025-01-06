@@ -2132,8 +2132,8 @@ const fraudPrevention = new ContentB(
 
 const crisisGrantInformation = new MenuB(
   "crisisGrantInformation",
-  "Crisis grant information",
-  "Crisis grants don't have to be repaid. They're intended to help people who don't have enough money meet their short-term needs.",
+  "Crisis Grant information",
+  "Crisis Grants don't have to be repaid. They're intended to help people who don't have enough money meet their short-term needs.",
   [
     grantOverview,
     eligibilityAndApplication,
@@ -2744,7 +2744,7 @@ const fraudulentClaimsForIndependanceGrants = new ContentB(
 
 const independanceGrantInformation = new MenuB(
   "independanceGrantInformation",
-  "Independance Grant Information",
+  "Independance Grant information",
   "These grants are intended to support independent living in the community and don't have to be repaid.",
   [
     WhatIndependanceGrantInformationIsItFor,
