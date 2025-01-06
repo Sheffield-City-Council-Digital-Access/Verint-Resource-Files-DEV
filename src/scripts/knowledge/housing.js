@@ -5911,7 +5911,7 @@ const shelteredAndSupported = new MenuH(
 const tenancyEnforcementASB = new ContentH(
   "tenancyEnforcementASB",
   "Tenancy Enforcement (ASB)",
-  "Learn about how Sheffield City Council handles Anti-Social Behaviour (ASB), including reporting, council responsibilities, and support for hate crime and domestic abuse victims.",
+  "Information regarding Anti-Social Behaviour (ASB), including reporting, council responsibilities, and support for hate crime and domestic abuse victims.",
   `<p><h3>Anti-social Behaviour</h3>
     <p>Anti-social behaviour is behaviour which is capable of causing nuisance, annoyance, harassment, alarm or distress to an individual or community. This could range from a relatively minor issue to serious criminal activity. We do not adopt a single definition of anti-social behaviour but instead consider each report based on the circumstances.</p>
     <p>Examples of behaviours we may consider to be anti-social are:</p>
