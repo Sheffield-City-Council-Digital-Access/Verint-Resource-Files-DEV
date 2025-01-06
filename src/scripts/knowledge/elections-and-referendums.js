@@ -870,12 +870,14 @@ const frequentlyAskedQuestions = new ContentEaR(
 <p>
   You will need to show one of the accepted photo ID documents
 </p>
-<details class="details-accordion">
-  <summary>
-    You must present one of the following forms of photographic 
-    identification in order to vote in person at a polling station:
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>You must present one of the following forms of photographic 
+    identification in order to vote in person at a polling station:</h3>
+    <div class="accordion-icon"></div>
   </summary>
-  <div class="details-accordion-content">
+  <div class="accordion-content">
     <ul>
       <li>A passport issued by the UK, any of the Channel Islands, 
       the Isle of Man, a British Overseas Territory, 
@@ -918,6 +920,7 @@ const frequentlyAskedQuestions = new ContentEaR(
     </p>
   </div>
 </details>
+
 <p>
   or a voter authority certificate at the polling station to receive a ballot paper. 
   If you appoint a proxy to vote for you, they must also show their own photo 
@@ -1671,7 +1674,7 @@ const informationInDifferentFormats = new ContentEaR(
       <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>, 
       which works with assistive technologies such as screen readers, or we can
       send you an application in your preferred format where available. For
-      additional information, please call: 0114 2734093.
+      additional information, please call: <a href="tel:0114 2734093">0114 2734093</a>.
     </p>
   `,
   { buttonLabel: "", formName: "" },

@@ -137,138 +137,114 @@ const childrensSocialCareComplaints = new ContentFaC(
   "Children's social care complaints",
   "Learn about the process for handling Children’s Social Care complaints, including resolution stages and statutory procedures",
   `
-    <p> The Feedback and Complaints Team act as Case Coordinator for the Children and Families Service. </p>
+   <p>The Feedback and Complaints Team act as Case Coordinator for the Children and Families Service.</p>
 
-    <p>The Children Act complaints procedure is governed by The Children Act 1989 Representations Procedure (England) 
-    Regulations 2006, 
-    and the accompanying guidance “Getting the Best from Complaints”. </p>
+  <p>The Children Act complaints procedure is governed by The Children Act 1989 Representations Procedure (England) 
+  Regulations 2006, 
+  and the accompanying guidance “Getting the Best from Complaints.”</p>
 
-    <p> A complaint is eligible for consideration under the Children Act procedure 
-    if it is made by an eligible individual as defined by Section 26(3) and section 24D of the Children Act 1989 and section
-     3(1) of the Adoption and Children Act 2002, and the complaint is about a statutory function provided to a child or young person under Part 3, 4 or 5 of the Children Act 1989. 
-    Also included are adoption support services and specialist guardian support services.</p>
+  <p>A complaint is eligible for consideration under the Children Act procedure 
+  if it is made by an eligible individual as defined by Section 26(3) and section 24D of the Children Act 1989 and section
+  3(1) of the Adoption and Children Act 2002, and the complaint is about a statutory function provided to a child or young person under Part 3, 4 or 5 of the Children Act 1989. 
+  Also included are adoption support services and specialist guardian support services.</p>
 
+  <p>If a complaint does not meet the eligibility criteria it will be considered under the Corporate Complaint Procedure.</p>
 
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Stage 1: early resolution / service response (local resolution)</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Our initial focus should be on resolving customer's complaints as quickly and as simply as possible 
+      through early resolution. For Children Act complaints, 
+      early resolution will be viewed and attempted as part of Stage 1 of the Children Act complaint procedure.</p>
 
-     <p>If a complaint does not meet the eligibility criteria it will be considered under the Corporate Complaint Procedure.</p>
+      <p>On receipt of a complaint, 
+      if you feel there is scope for early resolution you should aim to make contact quickly with the customer.</p>
 
-     <details class="details-accordion">
-  <summary>
-    Stage 1: early resolution / service response (local resolution)
-  </summary>
-  <div class="details-accordion-content">
+      <p>Complaints dealt with through early resolution should be resolved 
+      (or have an agreed way forward) within 5 working days of being received using the Early Resolution form.</p>
 
+      <p>This form should only be used for retrospective recording of a complaint resolved at the first point of contact.</p>
+    </div>
+  </details>
 
-    <p>Our initial focus should be on resolving customer's complaints as quickly and as simply as possible 
-    through early resolution. For Children Act complaints, 
-    early resolution will be viewed and attempted as part of Stage 1 of the Children Act complaint procedure.</p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Early resolution for Children Act related complaints means:</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <ul>
+          <li>Talking to the customer</li>
+          <li>Listening to what they have to say</li>
+          <li>Seeking a solution to their problem</li>
+          <li>Explaining what will happen</li>
+          <li>Confirming in writing to the Customer the agreed resolution</li>
+          <li>Recording details on the feedback and complaints case management system</li>
+          <li>After 5 working days, if the complaint remains unresolved, 
+          you must complete an investigation and record using the form below.</li>
+          <li>This will update the Council’s Complaints case management system (CRM). On receipt, 
+          the Customer Feedback and Complaints team will allocate the complaint to the 
+          Accountable / Reviewing  / Investigating Manager within the relevant service.</li>
+          <li>Read the Manager Guidance under Documents.</li>
+        </ul>
+      </p>
 
-    <p>On receipt of a complaint, 
-    if you feel there is scope for early resolution you should aim to make contact quickly with the customer.   </p>
+      <p>You should speak to the customer to clarify the issues being raised and the outcomes being sought and 
+      respond in writing to the customer within 20 working days of the complaint being received.</p>
 
-    <p>Complaints dealt with through early resolution should be resolved 
-    (or have an agreed way forward) within 5 working days of being received using the Early Resolution form. </p>
+      <p>Service Managers will sometimes arrange (with the agreement of the customer) 
+      to meet with customer following receipt of the Stage 1 response to provide further explanation and / 
+      or remedy to resolve the complaint.</p>
+    </div>
+  </details>
 
-    <p> This form should only be used for retrospective recording of a complaint resolved at the first point of contact.  </p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Stage 2: formal investigation</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Our initial focus should be on resolving customer's complaints as quickly and as simply as possible 
+      through early resolution. For Children Act complaints, 
+      early resolution will be viewed and attempted as part of Stage 1 of the Children Act complaint procedure.</p>
 
-    
+      <p>On receipt of a complaint, 
+      if you feel there is scope for early resolution you should aim to make contact quickly with the customer.</p>
 
-  </div>
-</details>
+      <p>Complaints dealt with through early resolution should be resolved 
+      (or have an agreed way forward) within 5 working days of being received using the Early Resolution form.</p>
 
+      <p>This form should only be used for retrospective recording of a complaint resolved at the first point of contact.</p>
+    </div>
+  </details>
 
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Stage 3: review panel</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>This is the final stage of the statutory complaints procedure. 
+      A Review Panel is arranged within 30 working days of the request being made and comprises three independent panellists. 
+      Following the review hearing the Panel makes recommendations to the Director, who then issues a decision to the customer.</p>
+    </div>
+  </details>
 
-<details class="details-accordion">
-<summary>
-  Early resolution for Children Act related complaints means:
-</summary>
-<div class="details-accordion-content">
-
-<p> 
-
-    <ul>
-
-    <li> Talking to the customer</li>
-    <li> Listening to what they have to say</li>
-    <li> Seeking a solution to their problem </li>
-    <li> Explaining what will happen </li>
-    <li> Confirming in writing to the Customer the agreed resolution </li>
-    <li> Recording details on the feedback and complaints case management system </li>
-    <li> After 5 working days, if the complaint remains unresolved, 
-    you must complete an investigation and record using the form below.  </li>
-    <li> This will update the Council’s Complaints case management system (CRM). On receipt, 
-    the Customer Feedback and Complaints team will allocate the complaint to the 
-    Accountable / Reviewing  / Investigating Manager within the relevant service. </li>
-    <li> Read the Manager Guidance under Documents.</li>
-
-    </ul>
-    </p>
-
-    <p> You should speak to the customer to clarify the issues being raised and the outcomes being sought and 
-    respond in writing to the customer within 20 working days of the complaint being received.  </p>
-
-    <p> Service Managers will sometimes arrange (with the agreement of the customer) 
-    to meet with customer following receipt of the Stage 1 response to provide further explanation and / 
-    or remedy to resolve the complaint. </p>
-
-
-  
-</div>
-</details>
-
-
-<details class="details-accordion">
-<summary>
-  Stage 2: formal investigation
-</summary>
-<div class="details-accordion-content">
-
-
-  <p>Our initial focus should be on resolving customer's complaints as quickly and as simply as possible 
-  through early resolution. For Children Act complaints, 
-  early resolution will be viewed and attempted as part of Stage 1 of the Children Act complaint procedure.</p>
-
-  <p>On receipt of a complaint, 
-  if you feel there is scope for early resolution you should aim to make contact quickly with the customer.   </p>
-
-  <p>Complaints dealt with through early resolution should be resolved 
-  (or have an agreed way forward) within 5 working days of being received using the Early Resolution form. </p>
-
-  <p> This form should only be used for retrospective recording of a complaint resolved at the first point of contact.  </p>
-
-  
-</div>
-</details>
-
- <details class="details-accordion">
-  <summary>
-    Stage 3: review panel
-  </summary>
-  <div class="details-accordion-content">
-
-
-    <p>This is the final stage of the statutory complaints procedure. 
-    A Review Panel is arranged within 30 working days of the request being made and comprises three independent panellists. 
-    Following the review hearing the Panel makes recommendations to the Director, who then issues a decision to the customer.</p>
-   
-    
-  </div>
-</details>
-
- <details class="details-accordion">
-  <summary>
-    Local Government and Social Care Ombudsman
-  </summary>
-  <div class="details-accordion-content">
-
-    <p>This is the final stage of the statutory complaints procedure. 
-    A Review Panel is arranged within 30 working days of the request being made and comprises three independent panellists. 
-    Following the review hearing the Panel makes recommendations to the Director, who then issues a decision to the customer.</p>
-
-  </div>
-</details>
-
-
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Local Government and Social Care Ombudsman</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>This is the final stage of the statutory complaints procedure. 
+      A Review Panel is arranged within 30 working days of the request being made and comprises three independent panellists. 
+      Following the review hearing the Panel makes recommendations to the Director, who then issues a decision to the customer.</p>
+    </div>
+  </details>
 
 `,
   {
@@ -406,47 +382,52 @@ then you must ensure that a full investigation is completed and the complainant 
 Within 5 working days of receipt of the complaint.
 </p>
 
-<details class="details-accordion">
-  <summary>
-    Stage 1 – Early resolution/Investigation
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Stage 1 – Early resolution/Investigation</h3>
+    <div class="accordion-icon"></div>
   </summary>
-  <div class="details-accordion-content">
-
-    <p>Response is within 10 working days of the complaint being acknowledged. However,
-     any extension will be no more than 10 working days without good reason, 
-    and the reason(s) will be clearly explained to the complainant.</p>
-
+  <div class="accordion-content">
+    <p>
+      Response is within 10 working days of the complaint being acknowledged. However,
+      any extension will be no more than 10 working days without good reason, 
+      and the reason(s) will be clearly explained to the complainant.
+    </p>
   </div>
 </details>
 
-<details class="details-accordion">
-  <summary>
-    Stage 2 – Investigation Review
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Stage 2 – Investigation Review</h3>
+    <div class="accordion-icon"></div>
   </summary>
-  <div class="details-accordion-content">
-
-    <p>An investigation review occurs if a customer remains dissatisfied within 20 working days of the 
-    complaint being acknowledged. Any extension of these timescales must be no longer than an additional 20 working days, 
-    with good reason and agreement with the complainant.</p>
-
+  <div class="accordion-content">
+    <p>
+      An investigation review occurs if a customer remains dissatisfied within 20 working days of the 
+      complaint being acknowledged. Any extension of these timescales must be no longer than an additional 20 working days, 
+      with good reason and agreement with the complainant.
+    </p>
   </div>
 </details>
 
-<details class="details-accordion">
-  <summary>
-    Ombudsman and customer dissatisfaction
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Ombudsman and customer dissatisfaction</h3>
+    <div class="accordion-icon"></div>
   </summary>
-  <div class="details-accordion-content">
-
-    <p>If the complainant is dissatisfied with the response after the Investigation Review, 
-    they may be referred to the relevant Ombudsman.</p>
-
-       <p>If we are unable to respond within the above timescales, 
-       we will contact the customer to explain why and will agree a date for a response.</p>
-
+  <div class="accordion-content">
+    <p>
+      If the complainant is dissatisfied with the response after the Investigation Review, 
+      they may be referred to the relevant Ombudsman.
+    </p>
+    <p>
+      If we are unable to respond within the above timescales, 
+      we will contact the customer to explain why and will agree a date for a response.
+    </p>
   </div>
 </details>
-
 
   `,
   {
