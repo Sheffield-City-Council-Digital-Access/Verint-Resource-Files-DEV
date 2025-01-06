@@ -54,132 +54,17 @@ class FormB extends CoreB {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
+//#region Cross regional tiles
+
+
+//#endregion Cross regional tiles
+
 //#region Cost of Living
-
-const waysToReduceYourFuelBills = new ContentB(
-  "waysToReduceYourFuelBills",
-  "Ways to reduce your fuel bills",
-  "More information on what support is available can be found here.",
-  `
-    <p>
-      If we are more efficient with our home energy use we can reduce our energy 
-      bills and do our bit to tackle the climate emergency.
-      The information contained on this page is for owner occupiers, 
-      landlords and tenants in private, Council or Housing Association properties.
-      Private landlords have legal duties and requirements around a minimum level 
-      of energy efficiency, more information on this can be found at:
-      <a href="https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance#full-publication-update-history" target="_blank">https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance#full-publication-update-history</a> 
-    </p>
-    <h3>Warm Homes Sheffield</h3>
-    <p>
-      This is a partnership between Sheffield City Council and energy experts AgilityEco.
-
-      It provides a route to access a number of energy saving programmes that can help 
-      Sheffield residents reduce energy use and stay warm and well.
-      <a href="https://www.warmhomessheffield.org.uk/" target="_blank">https://www.warmhomessheffield.org.uk/</a> 
-      More advice and local support services can be found below.
-    </p>
-    <h3>Advice on saving energy and lowering your bills</h3>
-    <p>
-      We have identified a list of resources that you can use in order reduce the costs of your energy bills:
-      <ul>
-        <li>GOV.UK: how to save energy and lower your bills this winter can be found at: <a href="https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/" target="_blank">https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/</a> </li>
-        <li>Get help if you cannot afford your energy bills can be found at: <a href="https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills" target="_blank">https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills</a> </li>
-        <li>Understanding Energy Performance Certificates (EPC) can be found at: <a href="https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/" target="_blank">https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/</a> </li>
-        <li>Quick tips to save energy can be found at: <a href="https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/" target="_blank">https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/</a> </li>
-      </ul>
-    </p>
-    <h3>Local and national support services</h3>
-    <p>
-      There are several support services available that offer further help and advice when it comes to energy saving and money advice.
-      The services set out in the list below are not provided by the Council and therefore we cannot give assurances regarding the assistance provided.
-    </p>
-    <h3>Home Energy Advice: Local Energy Advice Partnership</h3>
-    <p>
-      Provided by AgilityEco, The Local Energy Advice Partnership (LEAP) provides tailored energy advice based on your needs. 
-      It can provide advice on a range of energy related topics including:
-      <ul>
-        <li>issues with energy suppliers</li>
-        <li>use of appliances and heating controls</li>
-        <li>energy efficiency in your home</li>
-        <li>ways to use less energy</li>
-        <li>energy efficiency grant advice</li>
-      </ul>
-    <p>
-      LEAP can also provide information on benefits, budgeting and debt advice and energy tariff switching. 
-      You can access the service online or by calling (freephone) <strong>0800 060 7567</strong> or emailing <a href="mailto:support@applyforleap.org.uk">support@applyforleap.org.uk</a>.
-      Local Energy Advice Partnership can be found at: <a href="https://applyforleap.org.uk/" target="_blank">https://applyforleap.org.uk/</a> 
-    </p>
-    <h3>Citizens Advice Bureau Sheffield</h3>
-    <p>
-      Citizens Advice Bureau offer an extensive online guide to problems with your energy bill. 
-      They can also offer an Energy Affordability Helpline which provides advice for people who may be struggling to pay their energy bills. 
-      Contact them on freephone <strong>0800 448 0721</strong> for fuel debt advice and income maximisation.
-    </p>
-    <p>
-      Citizens Advice Sheffield: Get help can be found at: <a href="https://citizensadvicesheffield.org.uk/get-help/" target="_blank">https://citizensadvicesheffield.org.uk/get-help/</a> 
-    </p>
-    <h3>Green Doctor</h3>
-    <p>
-      Green Doctors, provide specialist advice on how households can reduce their energy bills and make their homes more energy efficient.
-    </p>
-      Green Doctors can provide advice on:
-      <ul>
-        <li>energy bills and fuel debt support</li>
-        <li>grants for boilers and insulation</li>
-        <li>heating systems and controls</li>
-        <li>reducing energy costs in the home</li>
-        <li>water bills and debt</li>
-        <li>damp/condensation/mould advice</li>
-      </ul>
-    <p>
-      Green Doctor can be found at: <a href="https://www.groundwork.org.uk/greendoctor/" target="_blank">https://www.groundwork.org.uk/greendoctor/</a> 
-    </p>
-    <h3>Improve Energy Efficiency Service</h3>
-    <p>
-      The Improve Energy Efficiency Service is a free Government endorsed service. If you own a property in England or Wales you can get recommendations 
-      for home improvements that could make your property cheaper to heat and keep warm. 
-      For each recommendation you can see an estimated cost of making the improvement, 
-      how much you could save on your bills and next steps if you want to make the improvement.
-    </p>
-    <p>
-      GOV.UK: Improve energy efficiency can be found at: <a href="https://www.gov.uk/improve-energy-efficiency" target="_blank">https://www.gov.uk/improve-energy-efficiency</a> 
-    </p>
-    <h3>Cost of living support and advice</h3>
-    <p>
-      Here you can find out the local and national support available to help you manage the cost of living in Sheffield.
-    </p>
-    <p>
-      Cost of living support and advice can be found at: <a href="https://www.sheffield.gov.uk/cost-of-living" target="_blank">https://www.sheffield.gov.uk/cost-of-living</a> 
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "cost_of_living_scheme_transferred_to_service" },
-  { typeKey: "cost_of_living_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "02/12/2024", name: "Andy Walker" }
-);
-
-const findFoodSupportInSheffield = new ContentB(
-  "findFoodSupportInSheffield",
-  "Find food support in Sheffield",
-  "Find information about what food support is available in Sheffield.",
-  `
-    <p>
-      Food support in Sheffield can be found at: <a href="https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield" target="_blank">https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield</a>
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "cost_of_living_scheme_transferred_to_service" },
-  { typeKey: "cost_of_living_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "02/12/2024", name: "Andy Walker" }
-);
 
 const applyForTheHouseholdSupportFund = new ContentB(
   "applyForTheHouseholdSupportFund",
   "Apply for the Household Support Fund",
-  "Find more information and how to apply for the Household Support Fund.",
+  "Apply for the Household Support Fund to receive non-repayable grants for essential costs like food, energy, and more.",
   `
     <p>
       This is a non-repayable grant to help people living in Sheffield with food and energy costs. It is funded by the UK Government.
@@ -277,18 +162,430 @@ const applyForTheHouseholdSupportFund = new ContentB(
   { date: "02/12/2024", name: "Andy Walker" }
 );
 
-const mapOfWelcomePlacesInSheffield = new ContentB(
-  "mapOfWelcomePlacesInSheffield",
-  "Map of Welcome Places in Sheffield",
-  "Locations can be found here.",
+const employmentSupport = new ContentB(
+  "employmentSupport",
+  "Employment support",
+  "employment support services and opportunities provided by Opportunity Sheffield.",
   `
     <p>
-      A map of Welcome Places in Sheffield can be found at: <a href="https://www.vas.org.uk/sheffield-living-crisis-map-of-support/" target="_blank">https://www.vas.org.uk/sheffield-living-crisis-map-of-support/</a>
+      Information about employment support from Opportunity Sheffield can be found at: 
+      <a href="https://www.sheffield.gov.uk/campaigns/opportunity-sheffield" target="_blank">https://www.sheffield.gov.uk/campaigns/opportunity-sheffield</a>
     </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "cost_of_living_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "08/11/2024", name: "Nathan Smith" }
+);
+
+const energySupport = new ContentB(
+  "energySupport",
+  "Energy support",
+  "energy support resources, including grants, discounts, advice, and guidance for managing heating and fuel costs.",
+  `
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Warm Home Discount Scheme</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about the Warm Home Discount Scheme can be found at: 
+      <a href="https://www.gov.uk/the-warm-home-discount-scheme" target="_blank">https://www.gov.uk/the-warm-home-discount-scheme</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Winter Fuel Payment</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about the Winter Fuel Payment can be found at: 
+      <a href="https://www.gov.uk/winter-fuel-payment" target="_blank">https://www.gov.uk/winter-fuel-payment</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Energy advice from Energy Savings Trust</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information from Energy Savings Trust can be found at: 
+      <a href="https://energysavingtrust.org.uk/" target="_blank">https://energysavingtrust.org.uk/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Connected for Warmth energy grants</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about Connected for Warmth energy grants can be found at: 
+      <a href="https://www.connectedforwarmth.org.uk/" target="_blank">https://www.connectedforwarmth.org.uk/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Get independent energy advice from Green Doctors</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about independent energy advice from Green Doctors can be found at: 
+      <a href="https://www.groundwork.org.uk/greendoctor/" target="_blank">https://www.groundwork.org.uk/greendoctor/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Central heating</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      Knowing how your central heating system works will help you keep warm and save money.
+    </p>
+    <h3>Room thermostat</h3>
+    <p>
+      Usually on the living room or hall wall, it senses when the house is warm enough and 
+      turns the boiler off automatically. It should be set at between 18 to 21 degrees C 
+      (65 to 70 degrees F), slightly higher if you are an older person or have young children.
+    </p>
+    <h3>Thermostatic radiator valve</h3>
+    <p>
+      These are fitted to your radiators and allow you to set different temperatures in different 
+      rooms. The lower the number or comfort level on the valve, the less heat the radiator 
+      will give off.
+    </p>
+    <h3>How to use the system</h3>
+    <p>
+      <ul>
+        <li>try to maintain a comfortable, even temperature throughout your home</li>
+        <li>don’t keep heating or hot water on too long or at times when you don’t need it</li>
+        <li>set the controller to bring the heating/hot water on about half an hour before you get up and to go off half an hour before you go to bed</li>
+        <li>remember to keep your home well ventilated to reduce condensation</li>
+      </ul>
+    </p>
+    <h3>Gas fires</h3>
+    <p>
+      If you have one, make sure it is kept free of dust and isn’t covered up. 
+      If there is a ventilator in the window, don’t block it up otherwise harmful fumes could build up. 
+      We recommend you don’t use the fire at the same time as the central heating.
+    </p>
+    <h3>Fuel costs</h3>
+    <p>
+    If fear of high bills is stopping you heating your home, here are some tips to help:
+    </p>
+    <p>
+      <ul>
+        <li>compare fuel costs between different suppliers to get a better deal. Visit <a href="https://www.energyhelpline.com/" target="_blank">https://www.energyhelpline.com/</a> or call <a href="tel:0800 0740745">0800 0740745</a></li>
+        <li>it is often cheaper to get both gas and electricity from the same supplier and there is usually a discount for paying by Direct Debit</li>
+        <li>many suppliers offer discounted schemes for older people or people claiming benefit</li>
+        <li>some suppliers, including <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> or <a href="https://www.edfenergytrust.org.uk/" target="_blank">https://www.edfenergytrust.org.uk/</a>, offer financial grants to customers in need</li>
+        <li>pensioners or individuals with sight or hearing impairments, disability or chronic illness should ask to be put on their supplier’s ‘Priority Services Register’, so they can’t be disconnected between the 1 October and 31 March</li>
+        <li>the Winter Fuel Payment helpline is <a href="tel:0800 7310160">0800 7310160</a></li>
+      </ul>
+    </p>
+    <h3>Faults</h3>
+    <p>
+    Before you call us, please make sure:
+    </p>
+    <p>
+      <ul>
+        <li>the heating is turned on (there is normally a switch near the boiler)</li>
+        <li>the timer is set correctly – if you are unsure how to do this, call us on <a href="tel:0114 2735555">0114 2735555</a></li>
+        <li>your room thermostat is set to the required temperature and your thermostatic radiator valves are turned on</li>
+        <li>your pre-payment or token meter has credit</li>
+      </ul>
+    </p>
+    <p>
+    If the system still won’t work, report a repair at: <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> or <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a>
+    </p>
+    <p>
+    If you want someone to visit your home and explain how the central heating works, call us on <a href="tel:0114 2735555">0114 2735555</a> or visit your Neighbourhood Office.
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Help from your energy supplier: the Energy Company Obligation</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about help from your energy supplier can be found at: 
+      <a href="https://www.gov.uk/energy-company-obligation" target="_blank">https://www.gov.uk/energy-company-obligation</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>National Energy Action</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about National Energy Action can be found at: 
+      <a href="https://www.nea.org.uk/" target="_blank">https://www.nea.org.uk/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Apply for alternative funding for your energy bills</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      The government is offering two schemes which provide funding to people who do not 
+      have a direct contract with an energy supplier and are therefore not eligible for 
+      the current Energy Bill Support Scheme. 
+    </p>
+    <h3>Energy Bills Support Scheme Alternative Funding</h3>
+    <p>
+      The Energy Bills Support Scheme Alternative Funding provides eligible residences with 
+      a £400 discount on their energy bills. This includes, for example, care home residents 
+      or those living in properties with energy costs paid to a commercial landlord.
+    </p>
+    <h3>Alternative Fuel Payments Scheme</h3>
+    <p>
+      The Alternative Fuel Payments Scheme offers a discount of £200 to those using alternative 
+      fuels such as biomass or heating oil.
+    </p>
+    <h3>How to apply</h3>
+    <p>
+      If you are eligible for one of these schemes, you will need to apply through the GOV.UK website. 
+      Once you have made an application and it's been approved, your payment details will be shared 
+      with the Council in order to process your payment. A privacy notice regarding sharing personal 
+      information is available for you to read on our privacy notice page which can be found here: 
+      <a href="https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice" target="_blank">https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice</a>
+    </p>
+    <h3>Further support</h3>
+    <p>
+      If you need to speak to someone about the schemes, there is a dedicated government 
+      helpline to answer your queries. You can access the helpline details at: 
+      <a href="https://www.gov.uk/get-help-energy-bills" target="_blank">https://www.gov.uk/get-help-energy-bills</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Warm Homes Sheffield: Energy support guide</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about Warm Homes Sheffield can be found at: 
+      <a href="https://www.warmhomessheffield.org.uk/" target="_blank">https://www.warmhomessheffield.org.uk/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "cost_of_living_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "02/12/2024", name: "Andy Walker" }
+);
+
+const findFoodSupportAndResourcesInSheffield = new ContentB(
+  "findFoodSupportAndResourcesInSheffield",
+  "Food Support and Resources in Sheffield",
+  "Access food support and resources in Sheffield, including affordable groceries, meal programs, and cost-saving guides.",
+  `
+    <p>
+      Accessible support for saving money and reducing food waste, here a few websites to offer customers.
+    </p>
+    <ul>
+      <li>Directory of food support services available across Sheffield: <a href="https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield" target="_blank">https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield</a></li>
+      <li>Affordable groceries for members with surplus food from supermarkets and wholesalers: <a href="https://communitygrocery.org.uk/how-we-can-help" target="_blank">https://communitygrocery.org.uk/how-we-can-help</a></li>
+      <li>Resources to cook healthy, low-cost meals through mentoring and recipe support: <a href="https://bagsoftaste.org/" target="_blank">https://bagsoftaste.org/</a></li>
+      <li>Guide to budgeting and meal planning to reduce food costs: <a href="https://www.sheffieldissweetenough.org/res/downloads/feed-your-family-for-less-booklet.pdf" target="_blank">https://www.sheffieldissweetenough.org/res/downloads/feed-your-family-for-less-booklet.pdf</a></li>
+      <li>Deals and discounts for dining out or ordering food: <a href="https://www.moneysavingexpert.com/deals/cheap-restaurant-deals/" target="_blank">https://www.moneysavingexpert.com/deals/cheap-restaurant-deals/</a></li>
+    </ul>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "cost_of_living_scheme_transferred_to_service" },
   { typeKey: "cost_of_living_scheme_information_provided" },
+  { type: "Information",
+    keywords: [],
+    categories: ["benefits"] },
+  { date: "02/12/2024", name: "Andy Walker" }
+);
+
+const howYouCanHelpYourCommunity = new ContentB(
+  "howYouCanHelpYourCommunity",
+  "How you can help your community",
+  "Discover ways businesses and individuals can support Sheffield communities, including donations, volunteering, and employee assistance programs.",
+  `
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Offering help as a business</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      We know that many businesses are struggling with rising costs but there are others
+      who feel able to support the communities they are part of.
+    </p>
+    <h3>Community support</h3>
+    <p>
+      If you are a business who can help, you may want to look at our general 
+      information on donating money, food and other items and volunteering for local 
+      charities on our Cost of living page.
+    </p>
+    <h3>Sheffield Business Together</h3>
+    <p>
+      Sheffield Business Together is a business-led cross sector collaboration, which brings together 
+      businesses and charities to address some of the key challenges facing our city. 
+      The team work closely with Voluntary Action Sheffield and us to identify opportunities 
+      for businesses to support their community. To contact them, 
+      please email <a href="mailto:katie@sheffieldbusinesstogether.org.uk</a>
+    </p>
+    <h3>Business in the Community</h3>
+    <p>
+      Business in the Community are partners of Sheffield Business Together and work with businesses 
+      to continually grow their responsible business practices. They have developed guidance on the 
+      different ways that organisations can help to respond to the cost-of-living crisis which is 
+      available on their website at:
+      <a href="https://www.bitc.org.uk/cost-living-crisis-helping-businesses-respond/" target="_blank">https://www.bitc.org.uk/cost-living-crisis-helping-businesses-respond/</a>
+    </p>
+    <h3>Supporting your employees</h3>
+    <p>
+      One of the most tangible and direct ways any organisation can help alleviate the 
+      cost-of-living crisis is to provide support to their own employees. 
+      Below are some ideas that you may wish to consider as part of this:
+    </p>
+    <p>
+      <ul>
+        <li>paying the living wage</li>
+        <li>set up a cost-of-living task force to understand the needs of your employees</li>
+        <li>consider a one-off cost of living payment</li>
+        <li>signpost employees to the help available across the city</li>
+        <li>establish an emergency loan service for staff</li>
+        <li>champion equality and assess who is being impacted</li>
+        <li>run support and wellbeing sessions</li>
+        <li>encourage employees to receive help by breaking down perceptions of shame and stigma</li>
+        <li>provide free food or a breakfast</li>
+        <li>pay untaken leave</li>
+      </ul>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Donate to Citzens Advice Sheffield</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about donating to Citzens Advice Sheffield can be found at: 
+      <a href="https://citizensadvicesheffield.org.uk/support-us/" target="_blank">https://citizensadvicesheffield.org.uk/support-us/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Voluntary Action Sheffield: Voltunary and Community Support</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about Voluntary Action Sheffield can be found at: 
+      <a href="https://www.vas.org.uk/what-we-do/communitysupportforcostoflivingcrisis/" target="_blank">https://www.vas.org.uk/what-we-do/communitysupportforcostoflivingcrisis/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Donate to Community Grocery</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about donating to Community Grocery can be found at: 
+      <a href="https://communitygrocery.org.uk/donate/" target="_blank">https://communitygrocery.org.uk/donate/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Donate to South Yorkshire's Community Foundation: South Yorkshire Cost of Living Fund</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about donating to South Yorkshire's Community Foundation can be found at: 
+      <a href="https://www.sycf.org.uk/apply" target="_blank">https://www.sycf.org.uk/apply</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Sheffield Volunteer Centre</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about Sheffield Volunteer Centre can be found at: 
+      <a href="https://www.sheffieldvolunteercentre.org.uk/" target="_blank">https://www.sheffieldvolunteercentre.org.uk/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Donate to Sheffield 1000 charity</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about donating to Sheffield 1000 charity can be found at: 
+      <a href="https://thesheffield1000.org/" target="_blank">https://thesheffield1000.org/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Donate to Sheffield Foodbanks</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      More information about donating to Sheffield Foodbanks can be found at: 
+      <a href="https://www.sheffieldfoodbank.org.uk/" target="_blank">https://www.sheffieldfoodbank.org.uk/</a>
+    </p>
+  </section>
+  </div>
+  </details>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "02/12/2024", name: "Andy Walker" }
 );
@@ -296,7 +593,7 @@ const mapOfWelcomePlacesInSheffield = new ContentB(
 const moneySupport = new ContentB(
   "moneySupport",
   "Money support",
-  "Find more information around Money Support here.",
+  "Discover support options for managing housing, bills, benefits, and financial hardships in Sheffield.",
   `
   <details class="accordion">
   <summary class="accordion-header">
@@ -404,7 +701,7 @@ const moneySupport = new ContentB(
       </p>
       <p>
         You can also contact the Citizens Advice for money, debt advice and whether Universal Credit is right for you, 
-        by visiting their website or calling the Help to Claim line on <strong>0800 144 8444</strong>.
+        by visiting their website or calling the Help to Claim line on <a href="tel:0800 1448444">0800 1448444</a>.
       </p>
       <p>
         You can contact Citizens Advice at: 
@@ -651,7 +948,7 @@ const moneySupport = new ContentB(
       year.
     </p>
     <p>
-      More information on prescription prepayment certificates by calling <strong>0300 330 1341</strong> or visiting: 
+      More information on prescription prepayment certificates by calling <a href="tel:0300 3301341">0300 3301341</a> or visiting: 
       <a href="https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start" target="_blank">https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start</a>
     </p>
     <p>
@@ -728,474 +1025,10 @@ const moneySupport = new ContentB(
   { date: "02/12/2024", name: "Andy Walker" }
 );
 
-const foodSupport = new ContentB(
-  "foodSupport",
-  "Food support",
-  "More information around Food Support can be found here.",
-  `
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Community groceries</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about community groceries can be found at: 
-      <a href="https://communitygrocery.org.uk/how-we-can-help/" target="_blank">https://communitygrocery.org.uk/how-we-can-help/</a>
-    </p>
-    </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Bags of Taste</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about Bags of Taste can be found at: 
-      <a href="https://bagsoftaste.org/" target="_blank">https://bagsoftaste.org/</a>
-    </p>
-    </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Feed your family for less resource pack</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about feeding the family for less can be found at: 
-      <a href="https://www.sheffieldissweetenough.org/res/downloads/feed-your-family-for-less-booklet.pdf" target="_blank">https://www.sheffieldissweetenough.org/res/downloads/feed-your-family-for-less-booklet.pdf</a>
-    </p>
-    </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Too Good to Go: rescue unsold food</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about Too Good to Go can be found at: 
-      <a href="https://www.toogoodtogo.com/en-gb/" target="_blank">https://www.toogoodtogo.com/en-gb/</a>
-    </p>
-    </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Money Saving Expert restaurant deals</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about Money Saving Expert restaurant deals can be found at: 
-      <a href="https://www.moneysavingexpert.com/deals/cheap-restaurant-deals/" target="_blank">https://www.moneysavingexpert.com/deals/cheap-restaurant-deals/</a>
-    </p>
-    </section>
-  </div>
-  </details>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "cost_of_living_transferred_to_service" },
-  { typeKey: "cost_of_living_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "02/12/2024", name: "Andy Walker" }
-);
-
-const energySupport = new ContentB(
-  "energySupport",
-  "Energy support",
-  "Find more information about Energy Support here.",
-  `
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Warm Home Discount Scheme</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about the Warm Home Discount Scheme can be found at: 
-      <a href="https://www.gov.uk/the-warm-home-discount-scheme" target="_blank">https://www.gov.uk/the-warm-home-discount-scheme</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Winter Fuel Payment</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about the Winter Fuel Payment can be found at: 
-      <a href="https://www.gov.uk/winter-fuel-payment" target="_blank">https://www.gov.uk/winter-fuel-payment</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Energy advice from Energy Savings Trust</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information from Energy Savings Trust can be found at: 
-      <a href="https://energysavingtrust.org.uk/" target="_blank">https://energysavingtrust.org.uk/</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Connected for Warmth energy grants</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about Connected for Warmth energy grants can be found at: 
-      <a href="https://www.connectedforwarmth.org.uk/" target="_blank">https://www.connectedforwarmth.org.uk/</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Get independent energy advice from Green Doctors</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about independent energy advice from Green Doctors can be found at: 
-      <a href="https://www.groundwork.org.uk/greendoctor/" target="_blank">https://www.groundwork.org.uk/greendoctor/</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Central heating</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      Knowing how your central heating system works will help you keep warm and save money.
-    </p>
-    <h3>Room thermostat</h3>
-    <p>
-      Usually on the living room or hall wall, it senses when the house is warm enough and 
-      turns the boiler off automatically. It should be set at between 18 to 21 degrees C 
-      (65 to 70 degrees F), slightly higher if you are an older person or have young children.
-    </p>
-    <h3>Thermostatic radiator valve</h3>
-    <p>
-      These are fitted to your radiators and allow you to set different temperatures in different 
-      rooms. The lower the number or comfort level on the valve, the less heat the radiator 
-      will give off.
-    </p>
-    <h3>How to use the system</h3>
-    <p>
-      <ul>
-        <li>try to maintain a comfortable, even temperature throughout your home</li>
-        <li>don’t keep heating or hot water on too long or at times when you don’t need it</li>
-        <li>set the controller to bring the heating/hot water on about half an hour before you get up and to go off half an hour before you go to bed</li>
-        <li>remember to keep your home well ventilated to reduce condensation</li>
-      </ul>
-    </p>
-    <h3>Gas fires</h3>
-    <p>
-      If you have one, make sure it is kept free of dust and isn’t covered up. 
-      If there is a ventilator in the window, don’t block it up otherwise harmful fumes could build up. 
-      We recommend you don’t use the fire at the same time as the central heating.
-    </p>
-    <h3>Fuel costs</h3>
-    <p>
-    If fear of high bills is stopping you heating your home, here are some tips to help:
-    </p>
-    <p>
-      <ul>
-        <li>compare fuel costs between different suppliers to get a better deal. Visit <a href="https://www.energyhelpline.com/" target="_blank">https://www.energyhelpline.com/</a> or call <strong>0800 074 0745</strong></li>
-        <li>it is often cheaper to get both gas and electricity from the same supplier and there is usually a discount for paying by Direct Debit</li>
-        <li>many suppliers offer discounted schemes for older people or people claiming benefit</li>
-        <li>some suppliers, including <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> or <a href="https://www.edfenergytrust.org.uk/" target="_blank">https://www.edfenergytrust.org.uk/</a>, offer financial grants to customers in need</li>
-        <li>pensioners or individuals with sight or hearing impairments, disability or chronic illness should ask to be put on their supplier’s ‘Priority Services Register’, so they can’t be disconnected between the 1 October and 31 March</li>
-        <li>the Winter Fuel Payment helpline is <strong>0800 731 0160</strong></li>
-      </ul>
-    </p>
-    <h3>Faults</h3>
-    <p>
-    Before you call us, please make sure:
-    </p>
-    <p>
-      <ul>
-        <li>the heating is turned on (there is normally a switch near the boiler)</li>
-        <li>the timer is set correctly – if you are unsure how to do this, call us on <strong>0114 273 5555</strong></li>
-        <li>your room thermostat is set to the required temperature and your thermostatic radiator valves are turned on</li>
-        <li>your pre-payment or token meter has credit</li>
-      </ul>
-    </p>
-    <p>
-    If the system still won’t work, report a repair at: <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> or <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a>
-    </p>
-    <p>
-    If you want someone to visit your home and explain how the central heating works, call us on <strong>0114 273 5555</strong> or visit your Neighbourhood Office.
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Help from your energy supplier: the Energy Company Obligation</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about help from your energy supplier can be found at: 
-      <a href="https://www.gov.uk/energy-company-obligation" target="_blank">https://www.gov.uk/energy-company-obligation</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>National Energy Action</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about National Energy Action can be found at: 
-      <a href="https://www.nea.org.uk/" target="_blank">https://www.nea.org.uk/</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Apply for alternative funding for your energy bills</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      The government is offering two schemes which provide funding to people who do not 
-      have a direct contract with an energy supplier and are therefore not eligible for 
-      the current Energy Bill Support Scheme. 
-    </p>
-    <h3>Energy Bills Support Scheme Alternative Funding</h3>
-    <p>
-      The Energy Bills Support Scheme Alternative Funding provides eligible residences with 
-      a £400 discount on their energy bills. This includes, for example, care home residents 
-      or those living in properties with energy costs paid to a commercial landlord.
-    </p>
-    <h3>Alternative Fuel Payments Scheme</h3>
-    <p>
-      The Alternative Fuel Payments Scheme offers a discount of £200 to those using alternative 
-      fuels such as biomass or heating oil.
-    </p>
-    <h3>How to apply</h3>
-    <p>
-      If you are eligible for one of these schemes, you will need to apply through the GOV.UK website. 
-      Once you have made an application and it's been approved, your payment details will be shared 
-      with the Council in order to process your payment. A privacy notice regarding sharing personal 
-      information is available for you to read on our privacy notice page which can be found here: 
-      <a href="https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice" target="_blank">https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice</a>
-    </p>
-    <h3>Further support</h3>
-    <p>
-      If you need to speak to someone about the schemes, there is a dedicated government 
-      helpline to answer your queries. You can access the helpline details at: 
-      <a href="https://www.gov.uk/get-help-energy-bills" target="_blank">https://www.gov.uk/get-help-energy-bills</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Warm Homes Sheffield: Energy support guide</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about Warm Homes Sheffield can be found at: 
-      <a href="https://www.warmhomessheffield.org.uk/" target="_blank">https://www.warmhomessheffield.org.uk/</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "cost_of_living_transferred_to_service" },
-  { typeKey: "cost_of_living_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "02/12/2024", name: "Andy Walker" }
-);
-
-const howYouCanHelpYourCommunity = new ContentB(
-  "howYouCanHelpYourCommunity",
-  "How you can help your community",
-  "Find ways you can help your community here.",
-  `
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Offering help as a business</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      We know that many businesses are struggling with rising costs but there are others
-      who feel able to support the communities they are part of.
-    </p>
-    <h3>Community support</h3>
-    <p>
-      If you are a business who can help, you may want to look at our general 
-      information on donating money, food and other items and volunteering for local 
-      charities on our Cost of living page.
-    </p>
-    <h3>Sheffield Business Together</h3>
-    <p>
-      Sheffield Business Together is a business-led cross sector collaboration, which brings together 
-      businesses and charities to address some of the key challenges facing our city. 
-      The team work closely with Voluntary Action Sheffield and us to identify opportunities 
-      for businesses to support their community. To contact them, 
-      please email <a href="mailto:katie@sheffieldbusinesstogether.org.uk</a>
-    </p>
-    <h3>Business in the Community</h3>
-    <p>
-      Business in the Community are partners of Sheffield Business Together and work with businesses 
-      to continually grow their responsible business practices. They have developed guidance on the 
-      different ways that organisations can help to respond to the cost-of-living crisis which is 
-      available on their website at:
-      <a href="https://www.bitc.org.uk/cost-living-crisis-helping-businesses-respond/" target="_blank">https://www.bitc.org.uk/cost-living-crisis-helping-businesses-respond/</a>
-    </p>
-    <h3>Supporting your employees</h3>
-    <p>
-      One of the most tangible and direct ways any organisation can help alleviate the 
-      cost-of-living crisis is to provide support to their own employees. 
-      Below are some ideas that you may wish to consider as part of this:
-    </p>
-    <p>
-      <ul>
-        <li>paying the living wage</li>
-        <li>set up a cost-of-living task force to understand the needs of your employees</li>
-        <li>consider a one-off cost of living payment</li>
-        <li>signpost employees to the help available across the city</li>
-        <li>establish an emergency loan service for staff</li>
-        <li>champion equality and assess who is being impacted</li>
-        <li>run support and wellbeing sessions</li>
-        <li>encourage employees to receive help by breaking down perceptions of shame and stigma</li>
-        <li>provide free food or a breakfast</li>
-        <li>pay untaken leave</li>
-      </ul>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Donate to Citzens Advice Sheffield</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about donating to Citzens Advice Sheffield can be found at: 
-      <a href="https://citizensadvicesheffield.org.uk/support-us/" target="_blank">https://citizensadvicesheffield.org.uk/support-us/</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Voluntary Action Sheffield: Voltunary and Community Support</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about Voluntary Action Sheffield can be found at: 
-      <a href="https://www.vas.org.uk/what-we-do/communitysupportforcostoflivingcrisis/" target="_blank">https://www.vas.org.uk/what-we-do/communitysupportforcostoflivingcrisis/</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Donate to Community Grocery</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about donating to Community Grocery can be found at: 
-      <a href="https://communitygrocery.org.uk/donate/" target="_blank">https://communitygrocery.org.uk/donate/</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Donate to South Yorkshire's Community Foundation: South Yorkshire Cost of Living Fund</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about donating to South Yorkshire's Community Foundation can be found at: 
-      <a href="https://www.sycf.org.uk/apply" target="_blank">https://www.sycf.org.uk/apply</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Sheffield Volunteer Centre</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about Sheffield Volunteer Centre can be found at: 
-      <a href="https://www.sheffieldvolunteercentre.org.uk/" target="_blank">https://www.sheffieldvolunteercentre.org.uk/</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Donate to Sheffield 1000 charity</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about donating to Sheffield 1000 charity can be found at: 
-      <a href="https://thesheffield1000.org/" target="_blank">https://thesheffield1000.org/</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Donate to Sheffield Foodbanks</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
-    <p>
-      More information about donating to Sheffield Foodbanks can be found at: 
-      <a href="https://www.sheffieldfoodbank.org.uk/" target="_blank">https://www.sheffieldfoodbank.org.uk/</a>
-    </p>
-  </section>
-  </div>
-  </details>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "cost_of_living_transferred_to_service" },
-  { typeKey: "cost_of_living_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "02/12/2024", name: "Andy Walker" }
-);
-
 const supportForBusinesses = new ContentB(
   "supportForBusinesses",
   "Support for businesses",
-  "Find what support is available for your business here.",
+  "Explore support for Sheffield businesses, including financial relief, energy savings, and expert advice for navigating challenges.",
   `
   <details class="accordion">
     <summary class="accordion-header">
@@ -1839,24 +1672,14 @@ const supportForBusinesses = new ContentB(
               <p>
                 Appeals should be made to:
               </p>
-              <p>
-                The Senior NNDR Administrator
-              </p>
-              <p>
-                Sheffield City Council
-              </p>
-              <p>
-                Non-Domestic Rates
-              </p>
-              <p>
-                PO Box 1310
-              </p>
-              <p>
-                Sheffield
-              </p>
-              <p>
-                S1 1UY
-              </p>
+              <address>
+                The Senior NNDR Administrator<br>
+                Sheffield City Council<br>
+                Non-Domestic Rates<br>
+                PO Box 1310<br>
+                Sheffield<br>
+                S1 1UY<br>
+              </adress>
           </div>
       </details>
     </div>
@@ -1893,10 +1716,48 @@ const supportForBusinesses = new ContentB(
   { date: "02/12/2024", name: "Andy Walker" }
 );
 
+const supportFund = new ContentB(
+  "supportFund",
+  "Apply for Support Fund",
+  "Learn how to apply for the Support Fund, including eligibility criteria and required documentation.",
+  `
+    <p>
+      You may be able to get a Local Assistance Loan if: You are a Sheffield
+      resident and are getting one of the qualifying benefits listed below or are
+      assessed to have insufficient income to meet your needs:
+      <ul>
+      <li>Universal Credit</li>
+      <li>Income Support</li>
+      <li>Income-based Jobseeker's Allowance</li>
+      </ul>
+    </p>
+    <p>
+      Income-related Employment and Support Allowance Any type of Pension Credit,
+      and You need help because of an emergency or disaster and the health and
+      safety of you or a member of your family will be at serious risk if you do not
+      get any money If you are not receiving a qualifying benefit, you will need to
+      provide bank statements for the last 3 months in order for us to consider your
+      application. These can be provided in person, by post, or via email.
+    </p>
+    <p>
+      If you do not provide these bank statements within the processing time-scale
+      of your application, it will be rejected. You haven't been awarded two
+      Sheffield Crisis Grants in any 12-month period, regardless of any change in
+      circumstances.
+    </p>
+  `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "25/09/2024", name: "George Whitehouse" }
+);
+
 const travelSupport = new ContentB(
   "travelSupport",
   "Travel support",
-  "Find out what support is available around Travel.",
+  "Discover travel support options in South Yorkshire, including journey planning, passes, and help with transport costs.",
   `
   <details class="accordion">
   <summary class="accordion-header">
@@ -2006,31 +1867,122 @@ const travelSupport = new ContentB(
   { date: "08/11/2024", name: "Nathan Smith" }
 );
 
-const employmentSupport = new ContentB(
-  "employmentSupport",
-  "Employment support",
-  "Find more information about Energy Support here.",
+const waysToReduceYourFuelBills = new ContentB(
+  "waysToReduceYourFuelBills",
+  "Ways to reduce your fuel bills",
+  "Learn practical ways to reduce your fuel bills with energy-saving tips, grants, and efficiency advice.",
   `
     <p>
-      Information about employment support from Opportunity Sheffield can be found at: 
-      <a href="https://www.sheffield.gov.uk/campaigns/opportunity-sheffield" target="_blank">https://www.sheffield.gov.uk/campaigns/opportunity-sheffield</a>
+      If we are more efficient with our home energy use we can reduce our energy 
+      bills and do our bit to tackle the climate emergency.
+      The information contained on this page is for owner occupiers, 
+      landlords and tenants in private, Council or Housing Association properties.
+      Private landlords have legal duties and requirements around a minimum level 
+      of energy efficiency, more information on this can be found at:
+      <a href="https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance#full-publication-update-history" target="_blank">https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance#full-publication-update-history</a> 
+    </p>
+    <h3>Warm Homes Sheffield</h3>
+    <p>
+      This is a partnership between Sheffield City Council and energy experts AgilityEco.
+
+      It provides a route to access a number of energy saving programmes that can help 
+      Sheffield residents reduce energy use and stay warm and well.
+      <a href="https://www.warmhomessheffield.org.uk/" target="_blank">https://www.warmhomessheffield.org.uk/</a> 
+      More advice and local support services can be found below.
+    </p>
+    <h3>Advice on saving energy and lowering your bills</h3>
+    <p>
+      We have identified a list of resources that you can use in order reduce the costs of your energy bills:
+      <ul>
+        <li>GOV.UK: how to save energy and lower your bills this winter can be found at: <a href="https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/" target="_blank">https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/</a> </li>
+        <li>Get help if you cannot afford your energy bills can be found at: <a href="https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills" target="_blank">https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills</a> </li>
+        <li>Understanding Energy Performance Certificates (EPC) can be found at: <a href="https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/" target="_blank">https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/</a> </li>
+        <li>Quick tips to save energy can be found at: <a href="https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/" target="_blank">https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/</a> </li>
+      </ul>
+    </p>
+    <h3>Local and national support services</h3>
+    <p>
+      There are several support services available that offer further help and advice when it comes to energy saving and money advice.
+      The services set out in the list below are not provided by the Council and therefore we cannot give assurances regarding the assistance provided.
+    </p>
+    <h3>Home Energy Advice: Local Energy Advice Partnership</h3>
+    <p>
+      Provided by AgilityEco, The Local Energy Advice Partnership (LEAP) provides tailored energy advice based on your needs. 
+      It can provide advice on a range of energy related topics including:
+      <ul>
+        <li>issues with energy suppliers</li>
+        <li>use of appliances and heating controls</li>
+        <li>energy efficiency in your home</li>
+        <li>ways to use less energy</li>
+        <li>energy efficiency grant advice</li>
+      </ul>
+    <p>
+      LEAP can also provide information on benefits, budgeting and debt advice and energy tariff switching. 
+      You can access the service online or by calling (freephone) <strong>0800 060 7567</strong> or emailing <a href="mailto:support@applyforleap.org.uk">support@applyforleap.org.uk</a>.
+      Local Energy Advice Partnership can be found at: <a href="https://applyforleap.org.uk/" target="_blank">https://applyforleap.org.uk/</a> 
+    </p>
+    <h3>Citizens Advice Bureau Sheffield</h3>
+    <p>
+      Citizens Advice Bureau offer an extensive online guide to problems with your energy bill. 
+      They can also offer an Energy Affordability Helpline which provides advice for people who may be struggling to pay their energy bills. 
+      Contact them on freephone <strong>0800 448 0721</strong> for fuel debt advice and income maximisation.
+    </p>
+    <p>
+      Citizens Advice Sheffield: Get help can be found at: <a href="https://citizensadvicesheffield.org.uk/get-help/" target="_blank">https://citizensadvicesheffield.org.uk/get-help/</a> 
+    </p>
+    <h3>Green Doctor</h3>
+    <p>
+      Green Doctors, provide specialist advice on how households can reduce their energy bills and make their homes more energy efficient.
+    </p>
+      Green Doctors can provide advice on:
+      <ul>
+        <li>energy bills and fuel debt support</li>
+        <li>grants for boilers and insulation</li>
+        <li>heating systems and controls</li>
+        <li>reducing energy costs in the home</li>
+        <li>water bills and debt</li>
+        <li>damp/condensation/mould advice</li>
+      </ul>
+    <p>
+      Green Doctor can be found at: <a href="https://www.groundwork.org.uk/greendoctor/" target="_blank">https://www.groundwork.org.uk/greendoctor/</a> 
+    </p>
+    <h3>Improve Energy Efficiency Service</h3>
+    <p>
+      The Improve Energy Efficiency Service is a free Government endorsed service. If you own a property in England or Wales you can get recommendations 
+      for home improvements that could make your property cheaper to heat and keep warm. 
+      For each recommendation you can see an estimated cost of making the improvement, 
+      how much you could save on your bills and next steps if you want to make the improvement.
+    </p>
+    <p>
+      GOV.UK: Improve energy efficiency can be found at: <a href="https://www.gov.uk/improve-energy-efficiency" target="_blank">https://www.gov.uk/improve-energy-efficiency</a> 
+    </p>
+    <h3>Cost of living support and advice</h3>
+    <p>
+      Here you can find out the local and national support available to help you manage the cost of living in Sheffield.
+    </p>
+    <p>
+      Cost of living support and advice can be found at: <a href="https://www.sheffield.gov.uk/cost-of-living" target="_blank">https://www.sheffield.gov.uk/cost-of-living</a> 
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "cost_of_living_transferred_to_service" },
-  { typeKey: "cost_of_living_scheme_information_provided" },
+  { typeKey: "cost_of_living_scheme_transferred_to_service" },
+  { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "08/11/2024", name: "Nathan Smith" }
+  { date: "02/12/2024", name: "Andy Walker" }
 );
 
 const welcomePlaces = new ContentB(
   "welcomePlaces",
-  "Welcome Places",
-  "Information around Welcome Places.",
+  "Welcome Places and Community Support in Sheffield",
+  "Find warm spaces and community resources during the cost-of-living crisis.",
   `
     <p>
-      Information about the Building Thriving Communities Programme can be found at: 
-      <a href="https://www.sheffield.gov.uk/thriving-communities" target="_blank">https://www.sheffield.gov.uk/thriving-communities</a>
+      Explore a map of Welcome Places in Sheffield, offering warm spaces and support. View the map here: <a href="https://www.vas.org.uk/sheffield-living-crisis-map-of-support/"
+      target="_blank">https://www.vas.org.uk/sheffield-living-crisis-map-of-support/</a><br>
+      <br>
+
+      Learn about the Building Thriving Communities Programme, which provides local support and resources to strengthen communities. More information is available here: <a href="https://www.sheffield.gov.uk/thriving-communities"
+      target="_blank">https://www.sheffield.gov.uk/thriving-communities/</a>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -2040,219 +1992,64 @@ const welcomePlaces = new ContentB(
   { date: "02/12/2024", name: "Andy Walker" }
 );
 
-const supportFund = new ContentB(
-  "supportFund",
-  "Apply for Support Fund",
-  "Description",
-  `
-    <p>
-      You may be able to get a Local Assistance Loan if: You are a Sheffield
-      resident and are getting one of the qualifying benefits listed below or are
-      assessed to have insufficient income to meet your needs:
-      <ul>
-      <li>Universal Credit</li>
-      <li>Income Support</li>
-      <li>Income-based Jobseeker's Allowance</li>
-      </ul>
-    </p>
-    <p>
-      Income-related Employment and Support Allowance Any type of Pension Credit,
-      and You need help because of an emergency or disaster and the health and
-      safety of you or a member of your family will be at serious risk if you do not
-      get any money If you are not receiving a qualifying benefit, you will need to
-      provide bank statements for the last 3 months in order for us to consider your
-      application. These can be provided in person, by post, or via email.
-    </p>
-    <p>
-      If you do not provide these bank statements within the processing time-scale
-      of your application, it will be rejected. You haven't been awarded two
-      Sheffield Crisis Grants in any 12-month period, regardless of any change in
-      circumstances.
-    </p>
-  `,
-
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "25/09/2024", name: "George Whitehouse" }
+const costOfLiving = new MenuB(
+  "costOfLiving",
+  "Cost of Living",
+  "Everyone is affected by the cost-of-living crisis in some shape or form. Here you can find out the local and national support available to help you manage the cost of living in Sheffield.",
+  [
+    applyForTheHouseholdSupportFund,
+    employmentSupport,
+    energySupport,
+    findFoodSupportAndResourcesInSheffield,
+    howYouCanHelpYourCommunity,
+    moneySupport,
+    supportForBusinesses,
+    supportFund,
+    travelSupport,
+    waysToReduceYourFuelBills,
+    welcomePlaces
+  ]
 );
 
 //#endregion Cost of Living
 
 //#region Crisis Grant
 
-const WhatIsItFor = new ContentB(
-  "WhatIsItFor",
-  "What Is It For",
-  "What circumstances Crisis Grants are issued for.",
+const grantOverview = new ContentB(
+  "grantOverview",
+  "Overview of crisis grants",
+  "Learn what crisis grants are, who they are for, what they cover, and what they do not cover.",
   `
     <p>
-      Sheffield Crisis Grants are to help people who do not have enough money to
-      meet their short-term needs because of an emergency or disaster. They are used
-      to prevent serious risk to the health and safety of an individual or a family
-      member residing with them.
+      Sheffield crisis grants are intended to help people who do not have enough money to meet short-term needs caused by emergencies or disasters. They are used to prevent serious risk to health and safety. Grants do not need to be repaid.
     </p>
     <p>
-      An emergency means an unforeseen event or situation resulting in needs that
-      must be met urgently (for example, theft).
+      An emergency is an unforeseen event requiring urgent action (e.g., theft). A disaster involves sudden and significant misfortune (e.g., major fire, flood).
     </p>
     <p>
-      A disaster is an event of sudden and great misfortune (for example, a major
-      fire, flood or, gas explosion). Less serious situations such as a small fire
-      in one room or a leak from a washing machine do not qualify as a disaster.
-    </p>
-    <p>
-      Sheffield Crisis Grants cannot be used to help with financial hardship which
-      is not the direct result of an emergency or disaster (for example a reduction
-      in benefits).
-    </p>
-    <p>Sheffield Crisis Grant awards do not need to be paid back.</p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "03/12/2024", name: "Andy Walker" }
-);
-
-const howDoesTheApplicationProcessWork = new ContentB(
-  "howDoesTheApplicationProcessWork",
-  "How does the application process work",
-  "find out what is included in the application process.",
-  `
-    <p>
-      Applications for Sheffield Crisis Grants can be made by filling in our online
-      form
-      <a
-        href="
-    www.sheffield.gov.uk/localassistance"
-      >
-        Local Assistance.</a
-      >
-      The form can be filled in on a computer or mobile device. If you apply online
-      you will be able to save your application and return to it later if you are
-      missing any information.
-    </p>
-    <p>
-      If you do not have internet access at home, you can use the internet for free
-      at your local library or at any First Point sites.
-    </p>
-    <p>The online form comes with guidance and examples to help you complete it.</p>
-    <p>
-      You will need to have certain information to hand to complete the application.
-    </p>
-    <p>
-      You will be asked to explain what has happened to cause your emergency or
-      disaster and to provide details of your financial situation.
-    </p>
-    <p>
-      Some of the information you provide (for example, the benefits you receive)
-      will be checked before a decision can be made.
-    </p>
-    <p>
-      If you are applying by telephone you will need to make sure you have this
-      information ready before you make the call. If you apply online you will be
-      able to save your application and return to it later if you are missing any
-      information.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "03/12/2024", name: "Andy Walker" }
-);
-
-const WhatWillCrisisGrantsBeMadeFor = new ContentB(
-  "WhatWillCrisisGrantsBeMadeFor",
-  "What will Crisis Grants be made for",
-  "Why Crisis Grants are issued.",
-  `
-    <p>
-      Sheffield Crisis Grants are generally awarded to cover day-to-day living
-      expenses (food, groceries, nappies, money for pay-as-you go fuel meters).
-    </p>
-    <p>
-      In some situations, a Sheffield Crisis Grant could also be used to help with
-      accommodation costs (rent in advance for privately rented properties, board
-      and lodging or hostel charges) or travel expenses (access to hospital) if
-      there is no other way to prevent a serious health and safety risk to you or
-      your family.
-    </p>
-    <p>
-      In the event of a disaster a Sheffield Crisis Grant could be used to help with
-      items or services other than day-to-day living expenses (for example clothing,
-      household items, or travel expenses to enable you to return home if you are
-      stranded outside Sheffield as the result of a disaster).
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "03/12/2024", name: "Andy Walker" }
-);
-
-const WhatWillNotCrisisGrantsBeMadeFor = new ContentB(
-  "WhatWillNotCrisisGrantsBeMadeFor",
-  "What will Not Crisis Grants be made for",
-  "What circumstances Crisis Grants are not made for.",
-  `
-    <p>
-      It is not intended that a Sheffield Crisis Grant will be awarded to help with
-      any of the following expenses:
+      Crisis grants cover:
       <ul>
-        <li>Any need which occurs outside the United Kingdom</li>
-        <li>An educational or training need including clothing and tools</li>
-        <li>
-          Distinctive school uniform or sports clothes or equipment of any description
-          to be used at school
-        </li>
-        <li>Travel expenses to or from school</li>
-        <li>School meals</li>
-        <li>
-          Expenses in connection with court (legal) proceedings such as legal fees,
-          fines, court fees, costs, damages, subsistence, or travelling expenses
-        </li>
-        <li>Removal or storage charges</li>
-        <li>Domestic assistance and respite care</li>
-        <li>Repair to property</li>
-        <li>A medical, surgical, optical, aural, or dental item or service</li>
+        <li>Day-to-day living expenses (e.g., food, groceries, nappies, pay-as-you-go fuel meters)</li>
+        <li>Accommodation costs (e.g., rent in advance for private properties, board, and lodging)</li>
+        <li>Travel expenses (e.g., access to hospital or returning home after a disaster)</li>
+        <li>Disaster recovery needs (e.g., clothing, household items)</li>
+      </ul>
+    </p>
+    <p>
+      Crisis grants do not cover:
+      <ul>
+        <li>Needs outside the UK</li>
+        <li>Education or training expenses</li>
+        <li>School uniforms or equipment</li>
+        <li>Legal fees</li>
+        <li>Medical, surgical, or dental items</li>
         <li>Work-related expenses</li>
-        <li>Debts</li>
-        <li>Investments</li>
-        <li>Maternity and Funeral Expenses</li>
+        <li>Debts or investments</li>
+        <li>Maternity and funeral expenses</li>
       </ul>
     </p>
     <p>
-      Accommodation charges including meals and services. If an application is made
-      for payment in advance to secure accommodation and the accommodation charge
-      includes meals and / or services, then the award will be made to cover the
-      accommodation charge only.
-    </p>
-    `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "03/12/2024", name: "Andy Walker" }
-);
-
-const howIsTheDecisionMade = new ContentB(
-  "howIsTheDecisionMade",
-  "How Is The Decision Made",
-  "More information around the decision making.",
-  `
-    <p>
-      A council officer will look at all the information on your application before
-      deciding if we can make a payment. You may be awarded less than the amount you
-      have asked for.
-    </p>
-    <p>
-      There is only a limited amount of money available for Sheffield Crisis Grants
-      so we cannot make a payment in every case. The decision maker has to meet
-      priority needs first.
+      Accommodation charges covering meals and services will be limited to the accommodation charge only.
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -2262,20 +2059,22 @@ const howIsTheDecisionMade = new ContentB(
   { date: "03/12/2024", name: "Andy Walker" }
 );
 
-const howWillIBeNotifiedOfTheDecision = new ContentB(
-  "howWillIBeNotifiedOfTheDecision",
-  "How will i be notified of the decision",
-  "How and when will you be notified of the decision.",
+const eligibilityAndApplication = new ContentB(
+  "eligibilityAndApplication",
+  "Eligibility and application process",
+  "Find out who can apply for crisis grants and how to submit an application.",
   `
     <p>
-      A council officer will look at all the information on your application before
-      deciding if we can make a payment. You may be awarded less than the amount you
-      have asked for.
+      To apply for a crisis grant, you must be a Sheffield resident receiving a qualifying benefit (e.g., Universal Credit, Income Support) or demonstrate insufficient income to meet urgent needs. Bank statements for the last 3 months are required if you do not receive a qualifying benefit.
     </p>
     <p>
-      There is only a limited amount of money available for Sheffield Crisis Grants,
-      so we cannot make a payment in every case. The decision maker has to meet
-      priority needs first.
+      Applications can be submitted online using the <a href="www.sheffield.gov.uk/localassistance" target="_blank">www.sheffield.gov.uk/localassistance</a> or via telephone. Online applications allow you to save progress and return later if needed.
+    </p>
+    <p>
+      Ensure you have details about your financial situation, emergency, or disaster ready when applying. If applying by telephone, have this information prepared before the call.
+    </p>
+    <p>
+      If you face difficulties accessing the internet, free access is available at libraries and First Point sites.
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -2285,77 +2084,27 @@ const howWillIBeNotifiedOfTheDecision = new ContentB(
   { date: "03/12/2024", name: "Andy Walker" }
 );
 
-const WhatIfIDisagreeWithTheDecision = new ContentB(
-  "WhatIfIDisagreeWithTheDecision",
-  "What if i disagree with the decision",
-  "The appeals process.",
+const paymentAndDecisions = new ContentB(
+  "paymentAndDecisions",
+  "Payments and decision process",
+  "Understand how crisis grants are paid, how decisions are made, and what to do if you disagree.",
   `
     <p>
-      If you are unhappy with the outcome of your application, you may request a
-      review of the decision. Review requests should be submitted in writing by post
-      or email, within one calendar month of the date on the decision notice:
-    </p>
-    <address>
-      FAO Local Assistance Scheme<br />
-      3rd Floor<br />
-      Howden House<br />
-      1 Union Street<br />
-      Sheffield<br />
-      S1 2SH<br />
-    </address>
-   `,
-
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "03/12/2024", name: "Andy Walker" }
-);
-
-const howWillIGetMySheffieldCrisisGrant = new ContentB(
-  "howWillIGetMySheffieldCrisisGrant",
-  "How Crisis Grants are paid",
-  "Information on how you receive your Crisis Grant.",
-  `
-    <p>
-      Sheffield Crisis Grants will be administered by the Cashiers service based in
-      Howden House. You will be advised of the payment process and required
-      identification documents by the adviser or officer who has processed your
-      application.
+      Payments are administered by the Cashiers service at Howden House. Rent in Advance awards are paid directly to landlords or letting agents via BACS transfer. Household goods for disasters are delivered through the Council's Furnished Accommodation team.
     </p>
     <p>
-      The first exception to this is for Rent in Advance awards, which will be made
-      directly to the landlord or letting agent via BACS transfer.
+      Decisions are made by a council officer who reviews all application details. Priority is given to meeting urgent needs, and awards are subject to funding limitations.
     </p>
     <p>
-      The second exception to this is for Household Goods (except for ovens and
-      washing machines for non-Council tenants) awarded in Disaster situations,
-      which will be delivered through the Furnished Accommodation team within the
-      Council. If an award is made for a Washing Machine or either a Gas or Electric
-      Oven and you do not live in a Council tenancy, a payment will be made via
-      Cashiers instead.
-      <ul>
-        <li>I.D. for Cashiers</li>
-        <li>
-          One of the following or one of the following plus one of the following
-        </li>
-        <li>
-          Passport Paper Driving Licence Council Tax Letter (dated within last 3
-          months)
-        </li>
-        <li>
-          Driving Licence Card Benefit letter (dated within last 3 months) Bank or
-          Credit Card Statement (dated within last 3 months, not from internet)
-        </li>
-        <li>
-          National Identity Card EU Member State Card Utility Bill (dated within last
-          3 months, not from internet)
-        </li>
-        <li>
-          ID Card (Northern Ireland Electoral Office) Inland Revenue Tax Notification
-        </li>
-        <li>Residence Permit</li>
-      </ul>
+      Notification of the decision will be provided after the review. If you disagree with the decision, you may request a review within one month by submitting a written appeal to:
+      <address>
+        FAO Local Assistance Scheme<br>
+        3rd Floor<br>
+        Howden House<br>
+        1 Union Street<br>
+        Sheffield<br>
+        S1 2SH<br>
+      </address>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -2365,34 +2114,13 @@ const howWillIGetMySheffieldCrisisGrant = new ContentB(
   { date: "03/12/2024", name: "Andy Walker" }
 );
 
-const whoCanApply = new ContentB(
-  "whoCanApply",
-  "Who Can Apply",
-  "Find more information around the eligibility of a Crisis Grant.",
+const fraudPrevention = new ContentB(
+  "fraudPrevention",
+  "Fraud prevention",
+  "Understand the Council's commitment to preventing and addressing fraudulent claims.",
   `
     <p>
-      You may be able to get a Local Assistance Loan if: You are a Sheffield
-      resident and are getting one of the qualifying benefits listed below or are
-      assessed to have insufficient income to meet your needs:
-      <ul>
-      <li>Universal Credit</li>
-      <li>Income Support</li>
-      <li>Income-based Jobseeker's Allowance</li>
-      </ul>
-    </p>
-    <p>
-      Income-related Employment and Support Allowance Any type of Pension Credit,
-      and You need help because of an emergency or disaster and the health and
-      safety of you or a member of your family will be at serious risk if you do not
-      get any money If you are not receiving a qualifying benefit, you will need to
-      provide bank statements for the last 3 months in order for us to consider your
-      application. These can be provided in person, by post, or via email.
-    </p>
-    <p>
-      If you do not provide these bank statements within the processing time-scale
-      of your application, it will be rejected. You haven't been awarded two
-      Sheffield Crisis Grants in any 12-month period, regardless of any change in
-      circumstances.
+      The Council is committed to ensuring that resources are used effectively to meet genuine needs. Fraudulent claims, such as providing false information or evidence, will be addressed with appropriate action, including prosecution.
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -2402,17 +2130,169 @@ const whoCanApply = new ContentB(
   { date: "03/12/2024", name: "Andy Walker" }
 );
 
+const crisisGrantInformation = new MenuB(
+  "crisisGrantInformation",
+  "Crisis grant information",
+  "Crisis grants don't have to be repaid. They're intended to help people who don't have enough money meet their short-term needs.",
+  [
+    grantOverview,
+    eligibilityAndApplication,
+    paymentAndDecisions,
+    fraudPrevention
+  ]
+);
 
-const fraudulentClaims = new ContentB(
-  "fraudulentClaims",
-  "Fraudulent Claims",
+
+
+//#endregion Crisis Grant
+
+//#region Household Support Fund
+
+const generalInformation = new ContentB(
+  "generalInformation",
+  "General Information",
+  "Find more information around the Household Support Fund.",
+  `
+    <p>
+      Residents facing hardship are currently able to apply for a Household Support
+      fund nonerepayable grant if they are unable to meet the costs of food, energy
+      or wider essentials.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "03/12/2024", name: "Andy Walker" }
+);
+
+const eligibilityCriteria = new ContentB(
+  "eligibilityCriteria",
+  "Eligibility Criteria",
+  "Who can apply?",
+  `
+    <p>
+      Are on a qualifying means tested benefit or are able to evidence that you are
+      unable to meet essential costs.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "03/12/2024", name: "Andy Walker" }
+);
+
+const howDoIApply = new ContentB(
+  "howDoIApply",
+  "How do I apply",
+  "Find out how to apply for the Household Support Fund.",
+  `
+    <p>
+      Applications can be made on our website at
+      <a href="www.sheffield.gov.uk/cost-of-living">www.sheffield.gov.uk/cost-of-living</a>, if you need
+      assistance to apply, you can call the Community Helpline on 01142734567
+      (option 0)
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "03/12/2024", name: "Andy Walker" }
+);
+
+const otherSupportAvailable = new ContentB(
+  "otherSupportAvailable",
+  "Other Support Available",
+  "Find out what other support is available.",
+  `
+    <p>
+      If a caller does not meet the eligibility criteria you should consider whether
+      there are other hardship payments or support available to them (for example, a
+      discretionary housing payment), or whether other support can be offered with
+      regards to income maximisation food or utility support via the Community
+      Support Helpline. br> You should also consider signposting the caller to other
+      services such as the Council Tax helpline and Council Housing if they are a
+      Council tenant, to discuss whether any support can be given with regards to
+      repayment of Rent or Council Tax.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "03/12/2024", name: "Andy Walker" }
+);
+
+const howLongDoesItTakeToGetADecisionForHouseholdSupportFund = new ContentB(
+  "howLongDoesItTakeToGetADecisionForHouseholdSupportFund",
+  "What If I Disagree With The Decision For Household Support Fund.",
+  "",
+  `
+    <p>
+      On average, a decision will be made about your Household Support Fund
+      application within 3 working days of us receiving a fully completed
+      application, it will be decided whether your financial circumstances merit the
+      provision of assistance.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "26/09/2024", name: "George Whitehouse" }
+);
+
+const WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund = new ContentB(
+  "WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund",
+  "What if I disagree with the decision",
+  "How the decision is made.",
+  `
+    <p>
+      If you disagree with a decision about your application, you can request that
+      the decision is reviewed by emailing
+      <a href="HSF@sheffield.gov.uk">HSF@sheffield.gov.uk</a>, or by calling the
+      Community Helpline on 0114 2734567 (option 0)
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "03/12/2024", name: "Andy Walker" }
+);
+
+const howillIGetMyHouseholdSupportFundPayment = new ContentB(
+  "howillIGetMyHouseholdSupportFundPayment",
+  "How will I get my Household Support Fund payment",
+  "Find out how your payment is issued/received.",
+  `
+    <p>
+      Unless requested otherwise, you will receive a text or email from PayPoint.
+      This email or text will contain a link and instructions to allow you to add
+      the funds to your bank account or obtain cash at any PayPoint shop. You can
+      request that funds are paid to your bank account by BACS if you would prefer
+      this.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "local_assistance_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "03/12/2024", name: "Andy Walker" }
+);
+
+const fraudulentClaimsForHouseholdSupportFund = new ContentB(
+  "fraudulentClaimsForHouseholdSupportFund",
+  "Fraudulent Claims For Household Support Fund",
   "Find out how the council deal with fraudulent claims.",
   `
     <p>
       The Council, to ensure that limited resources are most effectively used to
       meet need, is committed to taking action against fraudulent claims for
       assistance. Where the Council is satisfied that the Applicant has made a
-      fraudulent claim, for example, by falsely declaring their circumstances,
+      fraudulent claim, for example by falsely declaring their circumstances,
       providing a false statement or evidence in support of their application, it
       will take appropriate action, including prosecution.
     </p>
@@ -2424,7 +2304,7 @@ const fraudulentClaims = new ContentB(
   { date: "03/12/2024", name: "Andy Walker" }
 );
 
-//#endregion Crisis Grant
+//#endregion Household Support Fund
 
 //#region Indepenence Grant
 
@@ -2547,7 +2427,7 @@ const howDoesTheIndependanceGrantInformationApplicationProcessWork =
         <ul>
           <li>
             Self Service. You can fill in the form yourself on our website:
-            <a href="https://www.sheffield.gov.uk/localassistance">Local Assistance</a>. The
+            <a href="https://www.sheffield.gov.uk/localassistance">https://www.sheffield.gov.uk/localassistance</a>. The
             form can be filled in on a computer or mobile device.
           </li>
           <li>
@@ -2803,7 +2683,10 @@ const howWillIGetMySheffieldIndependanceGrant = new ContentB(
     <p>One of the Following Or one of the following Plus one of the following:
       <ul>
         <li>
-          Passport Paper Driving Licence Council Tax Letter (dated within last 3
+          Passport
+        </li>
+
+          Paper Driving Licence Council Tax Letter (dated within last 3
           months)
         </li>
         <li>
@@ -2851,165 +2734,6 @@ const fraudulentClaimsForIndependanceGrants = new ContentB(
 
 //#endregion Independence Grant
 
-//#region Household Support Fund
-
-const generalInformation = new ContentB(
-  "generalInformation",
-  "General Information",
-  "Find more information around the Household Support Fund.",
-  `
-    <p>
-      Residents facing hardship are currently able to apply for a Household Support
-      fund nonerepayable grant if they are unable to meet the costs of food, energy
-      or wider essentials.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "03/12/2024", name: "Andy Walker" }
-);
-
-const eligibilityCriteria = new ContentB(
-  "eligibilityCriteria",
-  "Eligibility Criteria",
-  "Who can apply?",
-  `
-    <p>
-      Are on a qualifying means tested benefit or are able to evidence that you are
-      unable to meet essential costs.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "03/12/2024", name: "Andy Walker" }
-);
-
-const howDoIApply = new ContentB(
-  "howDoIApply",
-  "How do I apply",
-  "Find out how to apply for the Household Support Fund.",
-  `
-    <p>
-      Applications can be made on our website at
-      <a href="www.sheffield.gov.uk/cost-of-living">Cost of Living</a>, if you need
-      assistance to apply, you can call the Community Helpline on 01142734567
-      (option 0)
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "03/12/2024", name: "Andy Walker" }
-);
-
-const otherSupportAvailable = new ContentB(
-  "otherSupportAvailable",
-  "Other Support Available",
-  "Find out what other support is available.",
-  `
-    <p>
-      If a caller does not meet the eligibility criteria you should consider whether
-      there are other hardship payments or support available to them (for example, a
-      discretionary housing payment), or whether other support can be offered with
-      regards to income maximisation food or utility support via the Community
-      Support Helpline. br> You should also consider signposting the caller to other
-      services such as the Council Tax helpline and Council Housing if they are a
-      Council tenant, to discuss whether any support can be given with regards to
-      repayment of Rent or Council Tax.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "03/12/2024", name: "Andy Walker" }
-);
-
-const howLongDoesItTakeToGetADecisionForHouseholdSupportFund = new ContentB(
-  "howLongDoesItTakeToGetADecisionForHouseholdSupportFund",
-  "What If I Disagree With The Decision For Household Support Fund.",
-  "",
-  `
-    <p>
-      On average, a decision will be made about your Household Support Fund
-      application within 3 working days of us receiving a fully completed
-      application, it will be decided whether your financial circumstances merit the
-      provision of assistance.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "26/09/2024", name: "George Whitehouse" }
-);
-
-const WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund = new ContentB(
-  "WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund",
-  "What if I disagree with the decision",
-  "How the decision is made.",
-  `
-    <p>
-      If you disagree with a decision about your application, you can request that
-      the decision is reviewed by emailing
-      <a href="HSF@sheffield.gov.uk">HSF@sheffield.gov.uk</a>, or by calling the
-      Community Helpline on 0114 2734567 (option 0)
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "03/12/2024", name: "Andy Walker" }
-);
-
-const howillIGetMyHouseholdSupportFundPayment = new ContentB(
-  "howillIGetMyHouseholdSupportFundPayment",
-  "How will I get my Household Support Fund payment",
-  "Find out how your payment is issued/received.",
-  `
-    <p>
-      Unless requested otherwise, you will receive a text or email from PayPoint.
-      This email or text will contain a link and instructions to allow you to add
-      the funds to your bank account or obtain cash at any PayPoint shop. You can
-      request that funds are paid to your bank account by BACS if you would prefer
-      this.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "03/12/2024", name: "Andy Walker" }
-);
-
-const fraudulentClaimsForHouseholdSupportFund = new ContentB(
-  "fraudulentClaimsForHouseholdSupportFund",
-  "Fraudulent Claims For Household Support Fund",
-  "Find out how the council deal with fraudulent claims.",
-  `
-    <p>
-      The Council, to ensure that limited resources are most effectively used to
-      meet need, is committed to taking action against fraudulent claims for
-      assistance. Where the Council is satisfied that the Applicant has made a
-      fraudulent claim, for example by falsely declaring their circumstances,
-      providing a false statement or evidence in support of their application, it
-      will take appropriate action, including prosecution.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
-  { typeKey: "local_assistance_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
-  { date: "03/12/2024", name: "Andy Walker" }
-);
-
-//#endregion Household Support Fund
 
 // const localAssistantScheme = new MenuB(
 //   "localAssistantScheme",
@@ -3017,46 +2741,6 @@ const fraudulentClaimsForHouseholdSupportFund = new ContentB(
 //   "The Local Assistance Scheme (LAS) provides Sheffield Independence Grants to support independent living and Sheffield Crisis Grants to help Sheffield residents in crisis situations who aren't receiving help",
 //   [independanceGrantInformation, householdSupportFund]
 // );
-
-
-const costOfLiving = new MenuB(
-  "costOfLiving",
-  "Cost of Living",
-  "Everyone is affected by the cost-of-living crisis in some shape or form. Here you can find out the local and national support available to help you manage the cost of living in Sheffield.",
-  [
-    waysToReduceYourFuelBills,
-    findFoodSupportInSheffield,
-    applyForTheHouseholdSupportFund,
-    mapOfWelcomePlacesInSheffield,
-    moneySupport,
-    foodSupport,
-    energySupport,
-    howYouCanHelpYourCommunity,
-    supportForBusinesses,
-    travelSupport,
-    employmentSupport,
-    welcomePlaces
-  ]
-);
-
-
-const crisisGrantInformation = new MenuB(
-  "crisisGrantInformation",
-  "Crisis Grant Information",
-  "Crisis grants don't have to be repaid. They're intended to help people who don't have enough money meet their short term needs.",
-  [
-    whoCanApply,
-    WhatIsItFor,
-    howDoesTheApplicationProcessWork,
-    WhatWillCrisisGrantsBeMadeFor,
-    WhatWillNotCrisisGrantsBeMadeFor,
-    howIsTheDecisionMade,
-    howWillIBeNotifiedOfTheDecision,
-    WhatIfIDisagreeWithTheDecision,
-    howWillIGetMySheffieldCrisisGrant,
-    fraudulentClaims,
-  ]
-);
 
 const independanceGrantInformation = new MenuB(
   "independanceGrantInformation",

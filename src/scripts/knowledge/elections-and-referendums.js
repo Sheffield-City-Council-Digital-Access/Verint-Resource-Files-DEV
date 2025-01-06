@@ -55,59 +55,58 @@ class FormEaR extends CoreEaR {
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
 // #region Annual Canvass
-
-const canvassForm = new ContentEaR(
-  "canvassForm",
-  "Canvass Form (CF)",
-  "How to complete the Canvass Form to confirm or update voter registration details for your household.",
-  `
-    <section class="info-panel" role="region" aria-label="Information panel">
+  const canvassForm = new ContentEaR(
+    "canvassForm",
+    "Canvass Form (CF)",
+    "How to complete the Canvass Form to confirm or update voter registration details for your household.",
+    `
+      <section class="info-panel" role="region" aria-label="Information panel">
+        <p>
+            Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+        </p>
+      </section>
       <p>
-          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+        Any residential property that does not respond to the CCB form will receive a
+        <strong>Canvass Form (CF)</strong>.
       </p>
-    </section>
-    <p>
-      Any residential property that does not respond to the CCB form will receive a
-      <strong>Canvass Form (CF)</strong>.
-    </p>
-    <p>
-      Someone in the property should check the details on the form are correct and
-      up to date. This form <strong>requires a response</strong>, even if the
-      details on it are correct. Responses can be made online at
-      <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a>
-      or by returning the completed form in the reply envelope. If there are changes
-      or to confirm there are no changes. If everything is correct, this can be
-      confirmed by SMS or phone instead, using the details on the form.
-    </p>
-    <p>
-      <strong
-        >You need to include the name and nationality of everyone aged 16 or over
-        who is resident and eligible to register for voting.</strong
-      >
-      If there are no eligible residents, you should state why this is the case.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
-  { typeKey: "annual_canvass_information_provided" },
-  {
-    type: "Request",
-    keywords: [
-      "elections",
-      "ele",
-      "elect",
-      "vote",
-      "voting",
-      "voters",
-      "electorial",
-      "elect",
-      "elec",
-      "canvass"
-    ],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "03/12/2024", name: "Andy Walker" }
-);
+      <p>
+        Someone in the property should check the details on the form are correct and
+        up to date. This form <strong>requires a response</strong>, even if the
+        details on it are correct. Responses can be made online at
+        <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a>
+        or by returning the completed form in the reply envelope. If there are changes
+        or to confirm there are no changes. If everything is correct, this can be
+        confirmed by SMS or phone instead, using the details on the form.
+      </p>
+      <p>
+        <strong
+          >You need to include the name and nationality of everyone aged 16 or over
+          who is resident and eligible to register for voting.</strong
+        >
+        If there are no eligible residents, you should state why this is the case.
+      </p>
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "annual_canvass_transferred_to_service" },
+    { typeKey: "annual_canvass_information_provided" },
+    {
+      type: "Request",
+      keywords: [
+        "elections",
+        "ele",
+        "elect",
+        "vote",
+        "voting",
+        "voters",
+        "electorial",
+        "elect",
+        "elec",
+        "canvass"
+      ],
+      categories: ["Elections and Referendums", "Electoral"],
+    },
+    { date: "03/12/2024", name: "Andy Walker" }
+  );
 
 const ccaCCBorCanvassForms = new ContentEaR(
   "ccaCCBorCanvassForms",
@@ -133,10 +132,8 @@ const ccaCCBorCanvassForms = new ContentEaR(
       confirmed by SMS or phone instead, using the details on the form.
     </p>
     <p>
-      <strong
-        >You need to include the name and nationality of everyone aged 16 or over
-        who is resident and eligible to register for voting.</strong
-      >
+      <strong> You need to include the name and nationality of everyone aged 16 or over
+        who is resident and eligible to register for voting.</strong>
       If there are no eligible residents, you should state why this is the case.
     </p>
   `,
@@ -873,12 +870,14 @@ const frequentlyAskedQuestions = new ContentEaR(
 <p>
   You will need to show one of the accepted photo ID documents
 </p>
-<details class="details-accordion">
-  <summary>
-    You must present one of the following forms of photographic 
-    identification in order to vote in person at a polling station:
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>You must present one of the following forms of photographic 
+    identification in order to vote in person at a polling station:</h3>
+    <div class="accordion-icon"></div>
   </summary>
-  <div class="details-accordion-content">
+  <div class="accordion-content">
     <ul>
       <li>A passport issued by the UK, any of the Channel Islands, 
       the Isle of Man, a British Overseas Territory, 
@@ -921,6 +920,7 @@ const frequentlyAskedQuestions = new ContentEaR(
     </p>
   </div>
 </details>
+
 <p>
   or a voter authority certificate at the polling station to receive a ballot paper. 
   If you appoint a proxy to vote for you, they must also show their own photo 
@@ -1674,7 +1674,7 @@ const informationInDifferentFormats = new ContentEaR(
       <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>, 
       which works with assistive technologies such as screen readers, or we can
       send you an application in your preferred format where available. For
-      additional information, please call: 0114 2734093.
+      additional information, please call: <a href="tel:0114 2734093">0114 2734093</a>.
     </p>
   `,
   { buttonLabel: "", formName: "" },
