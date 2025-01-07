@@ -91,9 +91,9 @@ const applyForTheHouseholdSupportFund = new ContentB(
         <li>rent or housing arrears under normal circumstances</li>
         <li>clothing</li>
         <li>white goods (visit <a href="https://applyforleap.org.uk/leap-appliances/" target="_blank">https://applyforleap.org.uk/leap-appliances/</a> 
-        for support replacing broken or damaged white goods)</li>
+        for support replacing broken or damaged white goods)<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Leap%20Appliances'"> Send Link </button></li>
         
-        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Leap%20Appliances'"> Send Link </button>
+        
       </ul>
     </p>
     <p>
@@ -303,10 +303,10 @@ const energySupport = new ContentB(
     </p>
     <p>
       <ul>
-        <li>compare fuel costs between different suppliers to get a better deal. Visit <a href="https://www.energyhelpline.com/" target="_blank">https://www.energyhelpline.com/</a> or call <a href="tel:0800 0740745">0800 0740745</a></li>
+        <li>compare fuel costs between different suppliers to get a better deal. Visit <a href="https://www.energyhelpline.com/" target="_blank">https://www.energyhelpline.com/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Energy%20Help%20Line'"> Send Link </button>or call <a href="tel:0800 0740745">0800 0740745</a></li>
         <li>it is often cheaper to get both gas and electricity from the same supplier and there is usually a discount for paying by Direct Debit</li>
         <li>many suppliers offer discounted schemes for older people or people claiming benefit</li>
-        <li>some suppliers, including <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> or <a href="https://www.edfenergytrust.org.uk/" target="_blank">https://www.edfenergytrust.org.uk/</a>, offer financial grants to customers in need</li>
+        <li>some suppliers, including <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=British%20Gas%20Energy%20Trust'"> Send Link </button> or <a href="https://www.edfenergytrust.org.uk/" target="_blank">https://www.edfenergytrust.org.uk/</a>, offer financial grants to customers in need</li> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=EDF%20Energy%20Trust'"> Send Link </button>
         <li>pensioners or individuals with sight or hearing impairments, disability or chronic illness should ask to be put on their supplier’s ‘Priority Services Register’, so they can’t be disconnected between the 1 October and 31 March</li>
         <li>the Winter Fuel Payment helpline is <a href="tel:0800 7310160">0800 7310160</a></li>
       </ul>
@@ -324,7 +324,7 @@ const energySupport = new ContentB(
       </ul>
     </p>
     <p>
-    If the system still won’t work, report a repair at: <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> or <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a>
+    If the system still won’t work, report a repair at: <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=British%20Gas%20Energy%20Trust'"> Send Link </button> or <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a>
     </p>
     <p>
     If you want someone to visit your home and explain how the central heating works, call us on <a href="tel:0114 2735555">0114 2735555</a> or visit your Neighbourhood Office.
@@ -340,7 +340,7 @@ const energySupport = new ContentB(
   <div class="accordion-content">
     <p>
       More information about help from your energy supplier can be found at: 
-      <a href="https://www.gov.uk/energy-company-obligation" target="_blank">https://www.gov.uk/energy-company-obligation</a>
+      <a href="https://www.gov.uk/energy-company-obligation" target="_blank">https://www.gov.uk/energy-company-obligation</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Help%20from%20Your%20Energy%20Supplier'"> Send Link </button>
     </p>
   </section>
   </div>
@@ -353,7 +353,7 @@ const energySupport = new ContentB(
   <div class="accordion-content">
     <p>
       More information about National Energy Action can be found at: 
-      <a href="https://www.nea.org.uk/" target="_blank">https://www.nea.org.uk/</a>
+      <a href="https://www.nea.org.uk/" target="_blank">https://www.nea.org.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=National%20Energy%20Action'"> Send Link </button>
     </p>
   </section>
   </div>
@@ -386,13 +386,14 @@ const energySupport = new ContentB(
       Once you have made an application and it's been approved, your payment details will be shared 
       with the Council in order to process your payment. A privacy notice regarding sharing personal 
       information is available for you to read on our privacy notice page which can be found here: 
-      <a href="https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice" target="_blank">https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice</a>
+      <a href="https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice" target="_blank">https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Privacy%20notice'"> Send Link </button>
     </p>
     <h3>Further support</h3>
     <p>
       If you need to speak to someone about the schemes, there is a dedicated government 
       helpline to answer your queries. You can access the helpline details at: 
       <a href="https://www.gov.uk/get-help-energy-bills" target="_blank">https://www.gov.uk/get-help-energy-bills</a>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Help%20with%20Your%20Energy%20Bills'"> Send Link </button>
     </p>
   </section>
   </div>
@@ -406,6 +407,7 @@ const energySupport = new ContentB(
     <p>
       More information about Warm Homes Sheffield can be found at: 
       <a href="https://www.warmhomessheffield.org.uk/" target="_blank">https://www.warmhomessheffield.org.uk/</a>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Warm%20Homes%20Sheffield'"> Send Link </button>
     </p>
   </section>
   </div>
@@ -427,11 +429,11 @@ const findFoodSupportAndResourcesInSheffield = new ContentB(
       Accessible support for saving money and reducing food waste, here a few websites to offer customers.
     </p>
     <ul>
-      <li>Directory of food support services available across Sheffield: <a href="https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield" target="_blank">https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield</a></li>
-      <li>Affordable groceries for members with surplus food from supermarkets and wholesalers: <a href="https://communitygrocery.org.uk/how-we-can-help" target="_blank">https://communitygrocery.org.uk/how-we-can-help</a></li>
-      <li>Resources to cook healthy, low-cost meals through mentoring and recipe support: <a href="https://bagsoftaste.org/" target="_blank">https://bagsoftaste.org/</a></li>
-      <li>Guide to budgeting and meal planning to reduce food costs: <a href="https://www.sheffieldissweetenough.org/res/downloads/feed-your-family-for-less-booklet.pdf" target="_blank">https://www.sheffieldissweetenough.org/res/downloads/feed-your-family-for-less-booklet.pdf</a></li>
-      <li>Deals and discounts for dining out or ordering food: <a href="https://www.moneysavingexpert.com/deals/cheap-restaurant-deals/" target="_blank">https://www.moneysavingexpert.com/deals/cheap-restaurant-deals/</a></li>
+      <li>Directory of food support services available across Sheffield: <a href="https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield" target="_blank">https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Find%20food%20support%20in%20Sheffield'"> Send Link </button></li>
+      <li>Affordable groceries for members with surplus food from supermarkets and wholesalers: <a href="https://communitygrocery.org.uk/how-we-can-help" target="_blank">https://communitygrocery.org.uk/how-we-can-help</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Community%20Grocery'"> Send Link </button></li>
+      <li>Resources to cook healthy, low-cost meals through mentoring and recipe support: <a href="https://bagsoftaste.org/" target="_blank">https://bagsoftaste.org/</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Bags%20of%20Taste'"> Send Link </button></li>
+      <li>Guide to budgeting and meal planning to reduce food costs: <a href="https://www.sheffieldissweetenough.org/res/downloads/feed-your-family-for-less-booklet.pdf" target="_blank">https://www.sheffieldissweetenough.org/res/downloads/feed-your-family-for-less-booklet.pdf</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Feed%20your%20family%20for%20less'"> Send Link </button></li>
+      <li>Deals and discounts for dining out or ordering food: <a href="https://www.moneysavingexpert.com/deals/cheap-restaurant-deals/" target="_blank">https://www.moneysavingexpert.com/deals/cheap-restaurant-deals/</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Restaurant%20Deals%20and%20Vouchers'"> Send Link </button></li>
     </ul>
   `,
   { buttonLabel: "", formName: "" },
