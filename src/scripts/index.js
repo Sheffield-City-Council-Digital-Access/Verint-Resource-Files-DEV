@@ -455,7 +455,7 @@ function handleInitialisingEvent() {
       $(`#${field}`).prop("disabled", true).css({
         color: "var(--color-background)",
       });
-      $(`#${fileNameField}`).val(filename);
+      $(`#${fileNameField}`).val(filename).trigger("change");
 
       if (deleteButton) {
         deleteButton.addEventListener("click", () => {
@@ -464,7 +464,7 @@ function handleInitialisingEvent() {
               $(`#${field}`).prop("disabled", false).css({
                 color: "var(--color-black)",
               });
-              $(`#${fileNameField}`).val("");
+              $(`#${fileNameField}`).val("").trigger("change");
             }
           }, 0);
         });
@@ -473,7 +473,7 @@ function handleInitialisingEvent() {
     }
   });
 
-  // Function to find file_delete element by input ID (defined previously)
+  // Function to find file_delete element by input ID
   function getFileDeleteByInputId(fileUploadId) {
     const fileUploadElement = document.getElementById(fileUploadId);
     if (fileUploadElement) {

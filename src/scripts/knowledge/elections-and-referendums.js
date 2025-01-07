@@ -502,7 +502,7 @@ const howToCompletePostalVote = new ContentEaR(
       </p>
     </section>
     <p>
-      CLICK to ENHANCE IMAGE
+      Advisor Note: You can access instructions on how to complete a postal vote via weberos.
     </p>
   `,
   { buttonLabel: "", formName: "" },
