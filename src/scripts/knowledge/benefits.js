@@ -256,6 +256,7 @@ const energySupport = new ContentB(
     <p>
       More information about independent energy advice from Green Doctors can be found at: 
       <a href="https://www.groundwork.org.uk/greendoctor/" target="_blank">https://www.groundwork.org.uk/greendoctor/</a>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Green%20Doctor'"> Send Link </button>
     </p>
   </section>
   </div>
