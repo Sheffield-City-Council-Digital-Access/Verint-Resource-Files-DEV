@@ -90,7 +90,10 @@ const applyForTheHouseholdSupportFund = new ContentB(
         <li>statutory activities / requirements that either the Council or another public sector organisation is responsible for delivering</li>
         <li>rent or housing arrears under normal circumstances</li>
         <li>clothing</li>
-        <li>white goods (visit <a href="https://applyforleap.org.uk/leap-appliances/" target="_blank">https://applyforleap.org.uk/leap-appliances/</a> for support replacing broken or damaged white goods)</li>
+        <li>white goods (visit <a href="https://applyforleap.org.uk/leap-appliances/" target="_blank">https://applyforleap.org.uk/leap-appliances/</a> 
+        for support replacing broken or damaged white goods)</li>
+        
+        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Leap%20Appliances'"> Send Link </button>
       </ul>
     </p>
     <p>
@@ -128,6 +131,8 @@ const applyForTheHouseholdSupportFund = new ContentB(
         </p>
         <p>
           Our network of Trusted assessors can be found at: <a href="https://www.sheffielddirectory.org.uk/HSF" target="_blank">https://www.sheffielddirectory.org.uk/HSF</a>
+          
+          <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffields%20Household%20Support%20Fund'"> Send Link </button>
         </p>
       </section>
     </p>
@@ -170,6 +175,7 @@ const employmentSupport = new ContentB(
     <p>
       Information about employment support from Opportunity Sheffield can be found at: 
       <a href="https://www.sheffield.gov.uk/campaigns/opportunity-sheffield" target="_blank">https://www.sheffield.gov.uk/campaigns/opportunity-sheffield</a>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Opportunity%20Sheffield'"> Send Link </button>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -193,6 +199,8 @@ const energySupport = new ContentB(
     <p>
       More information about the Warm Home Discount Scheme can be found at: 
       <a href="https://www.gov.uk/the-warm-home-discount-scheme" target="_blank">https://www.gov.uk/the-warm-home-discount-scheme</a>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Warm%20Home%20Discount%20Scheme'"> Send Link </button>
+
     </p>
   </section>
   </div>
@@ -206,6 +214,7 @@ const energySupport = new ContentB(
     <p>
       More information about the Winter Fuel Payment can be found at: 
       <a href="https://www.gov.uk/winter-fuel-payment" target="_blank">https://www.gov.uk/winter-fuel-payment</a>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Winter%20Fuel%20Payment'"> Send Link </button>
     </p>
   </section>
   </div>
@@ -219,6 +228,7 @@ const energySupport = new ContentB(
     <p>
       More information from Energy Savings Trust can be found at: 
       <a href="https://energysavingtrust.org.uk/" target="_blank">https://energysavingtrust.org.uk/</a>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Energy%20Saving%20Trust'"> Send Link </button>
     </p>
   </section>
   </div>
@@ -232,6 +242,7 @@ const energySupport = new ContentB(
     <p>
       More information about Connected for Warmth energy grants can be found at: 
       <a href="https://www.connectedforwarmth.org.uk/" target="_blank">https://www.connectedforwarmth.org.uk/</a>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Connected%20for%20Warmth'"> Send Link </button>
     </p>
   </section>
   </div>
