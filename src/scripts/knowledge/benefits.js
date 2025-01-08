@@ -480,7 +480,7 @@ const howYouCanHelpYourCommunity = new ContentB(
       to continually grow their responsible business practices. They have developed guidance on the 
       different ways that organisations can help to respond to the cost-of-living crisis which is 
       available on their website at:
-      <a href="https://www.bitc.org.uk/cost-living-crisis-helping-businesses-respond/" target="_blank">https://www.bitc.org.uk/cost-living-crisis-helping-businesses-respond/</a>
+      <a href="https://www.bitc.org.uk/cost-living-crisis-helping-businesses-respond/" target="_blank">https://www.bitc.org.uk/cost-living-crisis-helping-businesses-respond/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20crisis%20helping%20businesses%20respond'"> Send Link </button>
     </p>
     <h3>Supporting your employees</h3>
     <p>
@@ -513,7 +513,7 @@ const howYouCanHelpYourCommunity = new ContentB(
   <div class="accordion-content">
     <p>
       More information about donating to Citzens Advice Sheffield can be found at: 
-      <a href="https://citizensadvicesheffield.org.uk/support-us/" target="_blank">https://citizensadvicesheffield.org.uk/support-us/</a>
+      <a href="https://citizensadvicesheffield.org.uk/support-us/" target="_blank">https://citizensadvicesheffield.org.uk/support-us/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Citizens%20Advice%20Sheffield%20support%20us'"> Send Link </button>
     </p>
   </section>
   </div>
@@ -526,7 +526,7 @@ const howYouCanHelpYourCommunity = new ContentB(
   <div class="accordion-content">
     <p>
       More information about Voluntary Action Sheffield can be found at: 
-      <a href="https://www.vas.org.uk/what-we-do/communitysupportforcostoflivingcrisis/" target="_blank">https://www.vas.org.uk/what-we-do/communitysupportforcostoflivingcrisis/</a>
+      <a href="https://www.vas.org.uk/what-we-do/communitysupportforcostoflivingcrisis/" target="_blank">https://www.vas.org.uk/what-we-do/communitysupportforcostoflivingcrisis/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Voluntary%20and%20Community%20Support'"> Send Link </button>
     </p>
   </section>
   </div>
@@ -539,7 +539,7 @@ const howYouCanHelpYourCommunity = new ContentB(
   <div class="accordion-content">
     <p>
       More information about donating to Community Grocery can be found at: 
-      <a href="https://communitygrocery.org.uk/donate/" target="_blank">https://communitygrocery.org.uk/donate/</a>
+      <a href="https://communitygrocery.org.uk/donate/" target="_blank">https://communitygrocery.org.uk/donate/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Community%20Grocery'"> Send Link </button>
     </p>
   </section>
   </div>
