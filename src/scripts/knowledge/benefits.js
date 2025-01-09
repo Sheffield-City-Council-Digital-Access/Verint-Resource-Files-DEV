@@ -552,7 +552,7 @@ const howYouCanHelpYourCommunity = new ContentB(
   <div class="accordion-content">
     <p>
       More information about donating to South Yorkshire's Community Foundation can be found at: 
-      <a href="https://www.sycf.org.uk/apply" target="_blank">https://www.sycf.org.uk/apply</a>
+      <a href="https://www.sycf.org.uk/apply" target="_blank">https://www.sycf.org.uk/apply</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=South%20Yorkshires%20Community%20Foundation'"> Send Link </button>
     </p>
   </section>
   </div>
@@ -565,7 +565,7 @@ const howYouCanHelpYourCommunity = new ContentB(
   <div class="accordion-content">
     <p>
       More information about Sheffield Volunteer Centre can be found at: 
-      <a href="https://www.sheffieldvolunteercentre.org.uk/" target="_blank">https://www.sheffieldvolunteercentre.org.uk/</a>
+      <a href="https://www.sheffieldvolunteercentre.org.uk/" target="_blank">https://www.sheffieldvolunteercentre.org.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Volunteer%20Centre'"> Send Link </button>
     </p>
   </section>
   </div>
@@ -578,7 +578,7 @@ const howYouCanHelpYourCommunity = new ContentB(
   <div class="accordion-content">
     <p>
       More information about donating to Sheffield 1000 charity can be found at: 
-      <a href="https://thesheffield1000.org/" target="_blank">https://thesheffield1000.org/</a>
+      <a href="https://thesheffield1000.org/" target="_blank">https://thesheffield1000.org/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%201000%20charity'"> Send Link </button>
     </p>
   </section>
   </div>
@@ -591,7 +591,7 @@ const howYouCanHelpYourCommunity = new ContentB(
   <div class="accordion-content">
     <p>
       More information about donating to Sheffield Foodbanks can be found at: 
-      <a href="https://www.sheffieldfoodbank.org.uk/" target="_blank">https://www.sheffieldfoodbank.org.uk/</a>
+      <a href="https://www.sheffieldfoodbank.org.uk/" target="_blank">https://www.sheffieldfoodbank.org.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=sheffield%20food%20bank'"> Send Link </button>
     </p>
   </section>
   </div>
@@ -691,7 +691,7 @@ const moneySupport = new ContentB(
       </p>
       <p>
         You can find more information on what to do if you receive a Migration Notice at:
-        <a href="https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice" target="_blank">https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice</a>
+        <a href="https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice" target="_blank">https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Migration%20Notice'"> Send Link </button>
       </p>
     </section>
       <h3>Who is eligible</h3>
@@ -707,11 +707,11 @@ const moneySupport = new ContentB(
         </ul>
       </p>
       <p>
-          You can use the following calculator to check whether you would be entitled to Universal Credit: <a href="https://www.entitledto.co.uk/benefits-calculator/" target="_blank">https://www.entitledto.co.uk/benefits-calculator/</a>
+          You can use the following calculator to check whether you would be entitled to Universal Credit: <a href="https://www.entitledto.co.uk/benefits-calculator/" target="_blank">https://www.entitledto.co.uk/benefits-calculator/</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Benefits%20Calculator'"> Send Link </button>
       </p>
       <p>
         If you are still unsure you should seek advice from a benefits advisor at your local DWP office or Job Centre. You can find this at:  
-        <a href="https://find-your-nearest-jobcentre.dwp.gov.uk/search.php" target="_blank">https://find-your-nearest-jobcentre.dwp.gov.uk/search.php</a>
+        <a href="https://find-your-nearest-jobcentre.dwp.gov.uk/search.php" target="_blank">https://find-your-nearest-jobcentre.dwp.gov.uk/search.php</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Nearest%20Jobcentre'"> Send Link </button>
       </p>
       <p>
         You can also contact the Citizens Advice for money, debt advice and whether Universal Credit is right for you, 
@@ -719,7 +719,7 @@ const moneySupport = new ContentB(
       </p>
       <p>
         You can contact Citizens Advice at: 
-        <a href="https://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/Check-if-you-can-get-Universal-Credit/" target="_blank">https://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/Check-if-you-can-get-Universal-Credit/</a>
+        <a href="https://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/Check-if-you-can-get-Universal-Credit/" target="_blank">https://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/Check-if-you-can-get-Universal-Credit/</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Check%20if%20you%20can%20get%20Universal%20Credit'"> Send Link </button>
       </p>
       <h3>How much you could receive</h3>
       <p>
@@ -749,7 +749,7 @@ const moneySupport = new ContentB(
       </p>
       <p>
         You can apply for Universal Credit at: 
-        <a href="https://www.gov.uk/universal-credit/how-to-claim" target="_blank">https://www.gov.uk/universal-credit/how-to-claim</a>
+        <a href="https://www.gov.uk/universal-credit/how-to-claim" target="_blank">https://www.gov.uk/universal-credit/how-to-claim</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Universal%20Credit'"> Send Link </button>
         Find out how Universal Credit could help you at: 
         <a href="https://ucmove.campaign.gov.uk/" target="_blank">https://ucmove.campaign.gov.uk/</a>
       </p>
@@ -763,7 +763,7 @@ const moneySupport = new ContentB(
   <div class="accordion-content">
     <p>
       You can find out more information about the Sheffield Credit Union at: 
-      <a href="https://sheffieldcreditunion.com/" target="_blank">https://sheffieldcreditunion.com/</a>
+      <a href="https://sheffieldcreditunion.com/" target="_blank">https://sheffieldcreditunion.com/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Credit%20Union'"> Send Link </button>
     </p>
     </section>
   </div>
@@ -776,7 +776,7 @@ const moneySupport = new ContentB(
   <div class="accordion-content">
     <p>
       You can find out more information about the Healthy Start Scheme at: 
-      <a href="https://www.healthystart.nhs.uk/" target="_blank">https://www.healthystart.nhs.uk/</a>
+      <a href="https://www.healthystart.nhs.uk/" target="_blank">https://www.healthystart.nhs.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Healthy%20Start'"> Send Link </button>
     </p>
     </section>
   </div>
@@ -798,7 +798,7 @@ const moneySupport = new ContentB(
     </p>
     <p>
       More information about getting help with transport if you are referred to hospital at: 
-      <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/" target="_blank">https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/</a>
+      <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/" target="_blank">https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Healthcare%20Travel%20Costs%20Scheme'"> Send Link </button>
     </p>
     </section>
   </div>
@@ -880,7 +880,7 @@ const moneySupport = new ContentB(
     </p>
     <p>
       Check your eligibility and calculating your entitlement at:
-      <a href="https://www.entitledto.co.uk/" target="_blank">https://www.entitledto.co.uk/</a>
+      <a href="https://www.entitledto.co.uk/" target="_blank">https://www.entitledto.co.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Entitled%20To'"> Send Link </button>
     </p>
     <p>
         Email a link so a customer can start or continue an application: 
@@ -903,7 +903,7 @@ const moneySupport = new ContentB(
   <div class="accordion-content">
     <p>
       You can find out more information about the Sheffield Money Support Guide at: 
-      <a href="https://sheffieldmoneysupport.co.uk/" target="_blank">https://sheffieldmoneysupport.co.uk/</a>
+      <a href="https://sheffieldmoneysupport.co.uk/" target="_blank">https://sheffieldmoneysupport.co.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Money%20Support'"> Send Link </button>
     </p>
     </section>
   </div>
@@ -916,7 +916,7 @@ const moneySupport = new ContentB(
   <div class="accordion-content">
     <p>
       You can find out more information about Multiply at: 
-      <a href="https://linktr.ee/multiplysheffield" target="_blank">https://linktr.ee/multiplysheffield</a>
+      <a href="https://linktr.ee/multiplysheffield" target="_blank">https://linktr.ee/multiplysheffield</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Multiply%20Sheffield'"> Send Link </button>
     </p>
     </section>
   </div>
@@ -937,7 +937,7 @@ const moneySupport = new ContentB(
     </p>
     <p>
       More information on free vitamins at: 
-      <a href="https://www.sheffield.gov.uk/sites/default/files/2023-05/NHS_Vitamin_Support.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-05/NHS_Vitamin_Support.pdf</a>
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2023-05/NHS_Vitamin_Support.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-05/NHS_Vitamin_Support.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=NHS%20Vitamin%20Support'"> Send Link </button>
     </p>
     <p>
       Children who are having 500ml or more of formula a day do not need these vitamins.
