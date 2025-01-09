@@ -2068,7 +2068,7 @@ const eligibilityAndApplication = new ContentB(
       To apply for a crisis grant, you must be a Sheffield resident receiving a qualifying benefit (e.g., Universal Credit, Income Support) or demonstrate insufficient income to meet urgent needs. Bank statements for the last 3 months are required if you do not receive a qualifying benefit.
     </p>
     <p>
-      Applications can be submitted online using the <a href="www.sheffield.gov.uk/localassistance" target="_blank">www.sheffield.gov.uk/localassistance</a> or via telephone. Online applications allow you to save progress and return later if needed.
+      Applications can be submitted online using the <a href="www.sheffield.gov.uk/localassistance" target="_blank">www.sheffield.gov.uk/localassistance</a> or telephone via <a href="tel:0114 2734567">0114 2734567</a>. Online applications allow you to save progress and return later if needed.
     </p>
     <p>
       Ensure you have details about your financial situation, emergency, or disaster ready when applying. If applying by telephone, have this information prepared before the call.
@@ -2132,8 +2132,8 @@ const fraudPrevention = new ContentB(
 
 const crisisGrantInformation = new MenuB(
   "crisisGrantInformation",
-  "Crisis grant information",
-  "Crisis grants don't have to be repaid. They're intended to help people who don't have enough money meet their short-term needs.",
+  "Crisis Grant information",
+  "Crisis Grants don't have to be repaid. They're intended to help people who don't have enough money meet their short-term needs.",
   [
     grantOverview,
     eligibilityAndApplication,
@@ -2744,7 +2744,7 @@ const fraudulentClaimsForIndependanceGrants = new ContentB(
 
 const independanceGrantInformation = new MenuB(
   "independanceGrantInformation",
-  "Independance Grant Information",
+  "Independance Grant information",
   "These grants are intended to support independent living in the community and don't have to be repaid.",
   [
     WhatIndependanceGrantInformationIsItFor,

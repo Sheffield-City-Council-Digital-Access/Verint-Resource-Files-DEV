@@ -265,7 +265,7 @@ const requestClaimsPack = new FormRaP(
 const requestGritBin = new ContentRaP(
   "requestGritBin",
   "Grit bin locations",
-  "View grit bin locations and request a grit bin",
+  "Find information about grit bin locations, criteria for new allocations, and the process for grit bin relocations.",
   `
     <iframe
       src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=796ba9a88ab04607a265d78e93d36d5c"
@@ -320,7 +320,7 @@ const requestGritBin = new ContentRaP(
 const requestGritting = new ContentRaP(
   "requestGritting",
   "Gritting routes",
-  "View gritting routes and request gritting or snow clearance",
+  "Find information about Sheffield's gritting routes, prioritisation criteria, and how emergency requests are handled for gritting services.",
   `
     <iframe
     src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=07f393cef2684b47b429d4a232277bd0"
