@@ -2624,10 +2624,11 @@ function getAndSetReviewPageData() {
               fieldLabel = "Address";
               fieldValue = getValueFromAlias(pageId, "fullAddress");
             } else if (
-              fieldClass.indexOf("property") !== -1 ||
-              fieldClass.indexOf("street-name") !== -1 ||
-              fieldClass.indexOf("city") !== -1 ||
-              fieldClass.indexOf("postcode") !== -1
+              // fieldClass.indexOf("property") !== -1 ||
+              // fieldClass.indexOf("street-name") !== -1 ||
+              // fieldClass.indexOf("city") !== -1 ||
+              // fieldClass.indexOf("postcode") !== -1
+              /\b(property|street-name|city|postcode)\b/.test(fieldClass)
             ) {
               console.log(
                 $(`#dform_widget_label_${fieldName}`).text(),
