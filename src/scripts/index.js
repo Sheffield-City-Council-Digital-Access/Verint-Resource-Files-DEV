@@ -2551,7 +2551,7 @@ function getAndSetReviewPageData() {
         );
 
         // Create a button to allow editing of the page
-        const buttonHtml = `<button class="review-page-edit-button">Edit</button>`;
+        const buttonHtml = `<button type="button" id="edit_button_${pageName}" class="review-page-edit-button">Edit</button>`;
         const contentDiv = $("#" + contentDivId);
         contentDiv.append(buttonHtml);
 
@@ -2629,6 +2629,10 @@ function getAndSetReviewPageData() {
               fieldClass.indexOf("city") !== -1 ||
               fieldClass.indexOf("postcode") !== -1
             ) {
+              console.log(
+                $(`#dform_widget_label_${fieldName}`).text(),
+                fieldClass
+              );
               fieldLabel = false;
               fieldValue = "";
             } else {
