@@ -2558,12 +2558,12 @@ function getAndSetReviewPageData() {
         // Attach a click event handler to the button
         const button = contentDiv.find(".review-page-edit-button");
         button.on("click", function () {
-          const buttonSet = $(
-            '.dform_section_box_review div[data-type="buttonset"]'
-          );
-          if (buttonSet.is(":hidden")) {
-            buttonSet.show();
-          }
+          // const buttonSet = $(
+          //   '.dform_section_box_review div[data-type="buttonset"]'
+          // );
+          // if (buttonSet.is(":hidden")) {
+          //   buttonSet.show();
+          // }
           KDF.gotoPage(pageName, true, true, true);
         });
 
