@@ -2629,6 +2629,10 @@ function getAndSetReviewPageData() {
               fieldClass.indexOf("city") !== -1 ||
               fieldClass.indexOf("postcode") !== -1
             ) {
+              console.log(
+                $(`#dform_widget_label_${fieldName}`).text(),
+                fieldClass
+              );
               fieldLabel = false;
               fieldValue = "";
             } else {
