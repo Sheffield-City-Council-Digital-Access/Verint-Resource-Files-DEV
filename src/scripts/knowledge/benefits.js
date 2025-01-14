@@ -963,7 +963,8 @@ const moneySupport = new ContentB(
     </p>
     <p>
       More information on prescription prepayment certificates by calling <a href="tel:0300 3301341">0300 3301341</a> or visiting: 
-      <a href="https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start" target="_blank">https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start</a>
+      <a href="https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start" target="_blank">https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Prescription%20Prepayment%20Certificate'"> Send Link </button>
+
     </p>
     <p>
       Children who are having 500ml or more of formula a day do not need these vitamins.
@@ -1088,7 +1089,7 @@ const supportForBusinesses = new ContentB(
     <p>
     You can read about our team on the Business Sheffield website. 
     If you’d like support, contact the Business Sheffield team at: 
-    <a href="https://www.welcometosheffield.co.uk/business/" target="_blank">https://www.welcometosheffield.co.uk/business/</a>
+    <a href="https://www.welcometosheffield.co.uk/business/" target="_blank">https://www.welcometosheffield.co.uk/business/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Welcome%20to%20Sheffield'"> Send Link </button>
     </p>
     <h4>Resources for managing the cost of living in your business</h4>
     <p>
@@ -1105,7 +1106,7 @@ const supportForBusinesses = new ContentB(
                     A resource sheet to help you navigate the process of switching energy contracts; 
                     know what to do during energy sales calls; and look out for extra money you could 
                     be paying on your bill.
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/energy-suppliers-contracts-and-bills-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/energy-suppliers-contracts-and-bills-1.pdf</a>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/energy-suppliers-contracts-and-bills-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/energy-suppliers-contracts-and-bills-1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Energy%20Suppliers%20Contracts%20and%20Bills'"> Send Link </button>
                 </p>
             </div>
         </details>
@@ -1119,11 +1120,11 @@ const supportForBusinesses = new ContentB(
                     and ensure you avoid them.
                     <p>
                     Guide for saving energy in your business:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-in-your-business.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-in-your-business.pdf</a>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-in-your-business.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-in-your-business.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Saving%20energy%20in%20your%20business'"> Send Link </button>
                     </p>
                     <p>
                     Guide for saving energy in your food business:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf</a>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Saving%20energy%20for%20your%20food%20business'"> Send Link </button>
                     </p>
                 </p>
             </div>
@@ -1137,7 +1138,7 @@ const supportForBusinesses = new ContentB(
                     A guide to help you get to grips with your cashflow; understand what each 
                     product costs and brings in; and think about whether the concept behind your 
                     business still serves you in the current climate.
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf</a>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf" target="_blank>https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Taking%20control%20of%20costs%20and%20bills'"> Send Link </button>
                 </p>
             </div>
         </details>
@@ -1151,43 +1152,44 @@ const supportForBusinesses = new ContentB(
                     businesses to help them manage their cost of living. 
                     <p>
                     Arabic:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf</a>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Arabic'"> Send Link </button>
                     </p>
                     <p>
                     Bengali:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources-_bengali_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources-_bengali_0.pdf</a>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources-_bengali_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources-_bengali_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Bengali'"> Send Link </button>
                     </p>
                     <p>
                     Chinese:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_chinese_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_chinese_0.pdf</a>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_chinese_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_chinese_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Chinese'"> Send Link </button>
                     </p>
                     <p>
                     Italian:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf</a>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Italian'"> Send Link </button>
+
                     </p>
                     <p>
                     Kurdish:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_kurdish_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_kurdish_0.pdf</a>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_kurdish_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_kurdish_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Kurdish'"> Send Link </button>
                     </p>
                     <p>
                     Pakistani:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf</a>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Pakistani'"> Send Link </button>
                     </p>
                     <p>
                     Polish:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_polish_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_polish_0.pdf</a>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_polish_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_polish_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Polish'"> Send Link </button>
                     </p>
                     <p>
                     Slovak:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf</a>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Slovak'"> Send Link </button>
                     </p>
                     <p>
                     Somali:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_somali.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_somali.pdf</a>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_somali.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_somali.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Somali'"> Send Link </button>
                     </p>
                     <p>
                     Urdu:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf</a>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Slovak'"> Send Link </button>
                     </p>
                 </p>
             </div>
@@ -1221,7 +1223,8 @@ const supportForBusinesses = new ContentB(
       </p>
       <p>
         Find out more about rateable value at: 
-        <a href="https://www.gov.uk/government/publications/autumn-statement-2022-business-rates-factsheet/autumn-statement-2022-business-rates-factsheet" target="_blank">https://www.gov.uk/government/publications/autumn-statement-2022-business-rates-factsheet/autumn-statement-2022-business-rates-factsheet</a>
+        <a href="https://www.gov.uk/government/publications/autumn-statement-2022-business-rates-factsheet/autumn-statement-2022-business-rates-factsheet" target="_blank">https://www.gov.uk/government/publications/autumn-statement-2022-business-rates-factsheet/autumn-statement-2022-business-rates-factsheet</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Rateable%20Value'"> Send Link </button>
+
       </p>
     </section>
       <details class="details-accordion">
@@ -1611,30 +1614,6 @@ const supportForBusinesses = new ContentB(
                 <li>have an occupied rates charge for the year (properties receiving 100% Small Business Rate Relief, for example, do not qualify)</li>
                 <li>be wholly, or mainly, used for retail purposes for visiting members of the public</li>
               </ul>
-              <p>
-                Please refer to the Government guidance for qualifying businesses at: 
-                <a href="https://www.gov.uk/government/publications/business-rates-retail-discount-guidance/expanded-retail-discount-2020-to-2021-coronavirus-response-local-authority-guidance" target="_blank">https://www.gov.uk/government/publications/business-rates-retail-discount-guidance/expanded-retail-discount-2020-to-2021-coronavirus-response-local-authority-guidance</a>
-              </p>
-              <p>
-                If you're not sure whether your business will qualify for this discount, please contact: 
-                <a href="mailto:business.rates@sheffield.gov.uk.">business.rates@sheffield.gov.uk</a>
-              </p>
-              <h4>Eligible businesses</h4>
-              <p>
-                Please note that the total amount of discount your business may receive under the Expanded (Capped) Retail, Accommodation, Hospitality and Leisure Discount is £110,000. If your business has already reached this cap, you may not be entitled to a discount in this period. 
-                The cap is per business, not per property. If your business owns multiple properties in England, the total amount of discount received by all of them must add up to £110,000 or less. 
-                If one or more ratepayers have a qualifying connection to one another (for instance, if one is a subsidiary of the other, or if they are both subsidiaries of the same company), then the amount of discount they receive between them must add up to £110,000 or less. 
-                Where only one ratepayer is a company, and another ratepayer has such an interest in that company as would, if it were a company, result in its being the holding company of the other, this counts as a qualifying connection. 
-                For more advice on what counts as a qualifying connection, please contact:
-                <a href="mailto:businesssheffield@sheffield.gov.uk.">businesssheffield@sheffield.gov.uk</a>
-              </p>
-              <h4>Subsidy control obligations</h4>
-              <p>
-                Relief provided under this scheme must comply with the UK’s domestic and international subsidy control obligations of the UK-EU Trade and Cooperation Agreement (TCA), World Trade Organisation rules on subsidies, 
-                and other international subsidy control commitments. The UK-EU Trade and Cooperation Agreement allows an economic actor (eg a holding company and its subsidiaries) to receive up to 343,000 Special Drawing Rights 
-                (circa £370k) in a three-year period (consisting of the 2022/23 year and the two previous financial years). Expanded Retail Discount granted in either 2020/21 or 2021/22 does not count towards the £343,000 allowance 
-                but BEIS business grants (throughout the 3 years) and any other subsidies claimed under the Small Amounts of Financial Assistance limit should be counted.
-              </p>
         </div>
       </details>
       <details class="details-accordion">
@@ -1706,7 +1685,7 @@ const supportForBusinesses = new ContentB(
     <div class="accordion-content">
     <p>
       More information about paying your business rates can be found at: 
-      <a href="https://www.sheffield.gov.uk/business/pay-business-rates" target="_blank">https://www.sheffield.gov.uk/business/pay-business-rates</a>
+      <a href="https://www.sheffield.gov.uk/business/pay-business-rates" target="_blank">https://www.sheffield.gov.uk/business/pay-business-rates</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Pay%20your%20business%20rates'"> Send Link </button>
     </p>
     </div>
   </details>
@@ -1718,7 +1697,7 @@ const supportForBusinesses = new ContentB(
     <div class="accordion-content">
     <p>
       More information about the Energy Bills Discount Scheme can be found at: 
-      <a href="https://www.gov.uk/guidance/energy-bills-discount-scheme" target="_blank">https://www.gov.uk/guidance/energy-bills-discount-scheme</a>
+      <a href="https://www.gov.uk/guidance/energy-bills-discount-scheme" target="_blank">https://www.gov.uk/guidance/energy-bills-discount-scheme</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Energy%20Bills%20Discount%20Scheme'"> Send Link </button>
     </p>
     </div>
   </details>
@@ -1781,7 +1760,8 @@ const travelSupport = new ContentB(
   <div class="accordion-content">
     <p>
       The South Yorkshire journey planner can be found at: 
-      <a href="https://journeyplanner.travelsouthyorkshire.com/" target="_blank">https://journeyplanner.travelsouthyorkshire.com/</a>
+      <a href="https://journeyplanner.travelsouthyorkshire.com/" target="_blank">https://journeyplanner.travelsouthyorkshire.com/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Travel%20South%20Yorkshire'"> Send Link </button>
+
     </p>
     </section>
   </div>
@@ -1794,7 +1774,7 @@ const travelSupport = new ContentB(
   <div class="accordion-content">
     <p>
       Travel South Yorkshire Senior Pass information can be found at: 
-      <a href="https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/senior-pass" target="_blank">https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/senior-pass</a>
+      <a href="https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/senior-pass" target="_blank">https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/senior-pass</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Travel%20South%20Yorkshire%20Senior%20Pass'"> Send Link </button>
     </p>
     </section>
   </div>
@@ -1807,7 +1787,7 @@ const travelSupport = new ContentB(
   <div class="accordion-content">
     <p>
       City Ride, Shopper Bus and Community Car scheme information can be found at: 
-      <a href="https://sheffieldct.co.uk/community-transport-for-individuals-sheffield/#1493884261153-541c9f1a-169b" target="_blank">https://sheffieldct.co.uk/community-transport-for-individuals-sheffield/#1493884261153-541c9f1a-169b</a>
+      <a href="https://sheffieldct.co.uk/community-transport-for-individuals-sheffield/#1493884261153-541c9f1a-169b" target="_blank">https://sheffieldct.co.uk/community-transport-for-individuals-sheffield/#1493884261153-541c9f1a-169b</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Transport%20for%20Individuals'"> Send Link </button>
     </p>
     </section>
   </div>
@@ -1820,7 +1800,7 @@ const travelSupport = new ContentB(
   <div class="accordion-content">
     <p>
       Transport support information can be found at: 
-      <a href="https://helpforhouseholds.campaign.gov.uk/help-with-transport-costs/" target="_blank">https://helpforhouseholds.campaign.gov.uk/help-with-transport-costs/</a>
+      <a href="https://helpforhouseholds.campaign.gov.uk/help-with-transport-costs/" target="_blank">https://helpforhouseholds.campaign.gov.uk/help-with-transport-costs/</a> 
     </p>
     </section>
   </div>
