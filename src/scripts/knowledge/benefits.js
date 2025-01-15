@@ -1800,7 +1800,7 @@ const travelSupport = new ContentB(
   <div class="accordion-content">
     <p>
       Transport support information can be found at: 
-      <a href="https://helpforhouseholds.campaign.gov.uk/help-with-transport-costs/" target="_blank">https://helpforhouseholds.campaign.gov.uk/help-with-transport-costs/</a> 
+      <a href="https://helpforhouseholds.campaign.gov.uk/help-with-transport-costs/" target="_blank">https://helpforhouseholds.campaign.gov.uk/help-with-transport-costs/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Transport%20support%20Information'"> Send Link </button>
     </p>
     </section>
   </div>
@@ -1822,7 +1822,7 @@ const travelSupport = new ContentB(
     </p>
     <p>
       More information can be found at:
-      <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/" target="_blank">https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/</a>
+      <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/" target="_blank">https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Healthcare%20Travel%20Costs%20Scheme'"> Send Link </button>
     </p>
     </section>
   </div>
@@ -1835,7 +1835,8 @@ const travelSupport = new ContentB(
   <div class="accordion-content">
     <p>
       Information for the Travel South Yorkshire 18-22 Travel Pass can be found at: 
-      <a href="https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/18-22-discount-card" target="_blank">https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/18-22-discount-card</a>
+      <a href="https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/18-22-discount-card" target="_blank">https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/18-22-discount-card</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Travel%20South%20Yorkshire%2018%20to%2022%20Travel%20Pass'"> Send Link </button>
+
     </p>
     </section>
   </div>
@@ -1848,7 +1849,7 @@ const travelSupport = new ContentB(
   <div class="accordion-content">
     <p>
       Information about Jobcentre Plus Travel Discount Card can be found at: 
-      <a href="https://www.nationalrail.co.uk/railcards/concessionary-travel/" target="_blank">https://www.nationalrail.co.uk/railcards/concessionary-travel/</a>
+      <a href="https://www.nationalrail.co.uk/railcards/concessionary-travel/" target="_blank">https://www.nationalrail.co.uk/railcards/concessionary-travel/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Jobcentre%20Plus%20Travel%20Discount%20Card'"> Send Link </button>
     </p>
     </section>
   </div>
@@ -1873,7 +1874,8 @@ const waysToReduceYourFuelBills = new ContentB(
       landlords and tenants in private, Council or Housing Association properties.
       Private landlords have legal duties and requirements around a minimum level 
       of energy efficiency, more information on this can be found at:
-      <a href="https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance#full-publication-update-history" target="_blank">https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance#full-publication-update-history</a> 
+      <a href="https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance#full-publication-update-history" target="_blank">https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance#full-publication-update-history</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Domestic%20private%20rented%20property%20energy%20efficiency%20standard'"> Send Link </button>
+
     </p>
     <h3>Warm Homes Sheffield</h3>
     <p>
@@ -1881,17 +1883,18 @@ const waysToReduceYourFuelBills = new ContentB(
 
       It provides a route to access a number of energy saving programmes that can help 
       Sheffield residents reduce energy use and stay warm and well.
-      <a href="https://www.warmhomessheffield.org.uk/" target="_blank">https://www.warmhomessheffield.org.uk/</a> 
+      <a href="https://www.warmhomessheffield.org.uk/" target="_blank">https://www.warmhomessheffield.org.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Warm%20Homes%20Sheffield'"> Send Link </button>
       More advice and local support services can be found below.
     </p>
     <h3>Advice on saving energy and lowering your bills</h3>
     <p>
       We have identified a list of resources that you can use in order reduce the costs of your energy bills:
       <ul>
-        <li>GOV.UK: how to save energy and lower your bills this winter can be found at: <a href="https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/" target="_blank">https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/</a> </li>
-        <li>Get help if you cannot afford your energy bills can be found at: <a href="https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills" target="_blank">https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills</a> </li>
-        <li>Understanding Energy Performance Certificates (EPC) can be found at: <a href="https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/" target="_blank">https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/</a> </li>
-        <li>Quick tips to save energy can be found at: <a href="https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/" target="_blank">https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/</a> </li>
+        <li>GOV.UK: how to save energy and lower your bills this winter can be found at: <a href="https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/" target="_blank">https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Energy%20Saving%20Advice'"> Send Link </button></li> 
+        <li>Get help if you cannot afford your energy bills can be found at: <a href="https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills" target="_blank">https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Ofgem'"> Send Link </button></li>
+        <li>Understanding Energy Performance Certificates (EPC) can be found at: <a href="https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/" target="_blank">https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Energy%20performance%20certificates%20explained'"> Send Link </button>
+ </li> 
+        <li>Quick tips to save energy can be found at: <a href="https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/" target="_blank">https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Quick%20tips%20to%20save%20energy'"> Send Link </button> </li>
       </ul>
     </p>
     <h3>Local and national support services</h3>
@@ -1914,6 +1917,7 @@ const waysToReduceYourFuelBills = new ContentB(
       LEAP can also provide information on benefits, budgeting and debt advice and energy tariff switching. 
       You can access the service online or by calling (freephone) <strong>0800 060 7567</strong> or emailing <a href="mailto:support@applyforleap.org.uk">support@applyforleap.org.uk</a>.
       Local Energy Advice Partnership can be found at: <a href="https://applyforleap.org.uk/" target="_blank">https://applyforleap.org.uk/</a> 
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Leap%20Appliances'"> Send Link </button>
     </p>
     <h3>Citizens Advice Bureau Sheffield</h3>
     <p>
@@ -1922,7 +1926,7 @@ const waysToReduceYourFuelBills = new ContentB(
       Contact them on freephone <strong>0800 448 0721</strong> for fuel debt advice and income maximisation.
     </p>
     <p>
-      Citizens Advice Sheffield: Get help can be found at: <a href="https://citizensadvicesheffield.org.uk/get-help/" target="_blank">https://citizensadvicesheffield.org.uk/get-help/</a> 
+      Citizens Advice Sheffield: Get help can be found at: <a href="https://citizensadvicesheffield.org.uk/get-help/" target="_blank">https://citizensadvicesheffield.org.uk/get-help/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Citizens%20Advice%20Get%20Help'"> Send Link </button>
     </p>
     <h3>Green Doctor</h3>
     <p>
@@ -1939,6 +1943,7 @@ const waysToReduceYourFuelBills = new ContentB(
       </ul>
     <p>
       Green Doctor can be found at: <a href="https://www.groundwork.org.uk/greendoctor/" target="_blank">https://www.groundwork.org.uk/greendoctor/</a> 
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Green%20Doctor'"> Send Link </button>
     </p>
     <h3>Improve Energy Efficiency Service</h3>
     <p>
@@ -1948,14 +1953,15 @@ const waysToReduceYourFuelBills = new ContentB(
       how much you could save on your bills and next steps if you want to make the improvement.
     </p>
     <p>
-      GOV.UK: Improve energy efficiency can be found at: <a href="https://www.gov.uk/improve-energy-efficiency" target="_blank">https://www.gov.uk/improve-energy-efficiency</a> 
+      GOV.UK: Improve energy efficiency can be found at: <a href="https://www.gov.uk/improve-energy-efficiency" target="_blank">https://www.gov.uk/improve-energy-efficiency</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Find%20ways%20to%20save%20energy%20in%20your%20home'"> Send Link </button>
+
     </p>
     <h3>Cost of living support and advice</h3>
     <p>
       Here you can find out the local and national support available to help you manage the cost of living in Sheffield.
     </p>
     <p>
-      Cost of living support and advice can be found at: <a href="https://www.sheffield.gov.uk/cost-of-living" target="_blank">https://www.sheffield.gov.uk/cost-of-living</a> 
+      Cost of living support and advice can be found at: <a href="https://www.sheffield.gov.uk/cost-of-living" target="_blank">https://www.sheffield.gov.uk/cost-of-living</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20support'"> Send Link </button>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -1972,11 +1978,12 @@ const welcomePlaces = new ContentB(
   `
     <p>
       Explore a map of Welcome Places in Sheffield, offering warm spaces and support. View the map here: <a href="https://www.vas.org.uk/sheffield-living-crisis-map-of-support/"
-      target="_blank">https://www.vas.org.uk/sheffield-living-crisis-map-of-support/</a><br>
+      target="_blank">https://www.vas.org.uk/sheffield-living-crisis-map-of-support/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20living%20crisis%20map%20of%20support'"> Send Link </button>
+<br>
       <br>
 
       Learn about the Building Thriving Communities Programme, which provides local support and resources to strengthen communities. More information is available here: <a href="https://www.sheffield.gov.uk/thriving-communities"
-      target="_blank">https://www.sheffield.gov.uk/thriving-communities/</a>
+      target="_blank">https://www.sheffield.gov.uk/thriving-communities/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Building%20Thriving%20Communities%20Programme'"> Send Link </button>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -2062,7 +2069,8 @@ const eligibilityAndApplication = new ContentB(
       To apply for a crisis grant, you must be a Sheffield resident receiving a qualifying benefit (e.g., Universal Credit, Income Support) or demonstrate insufficient income to meet urgent needs. Bank statements for the last 3 months are required if you do not receive a qualifying benefit.
     </p>
     <p>
-      Applications can be submitted online using the <a href="www.sheffield.gov.uk/localassistance" target="_blank">www.sheffield.gov.uk/localassistance</a> or telephone via <a href="tel:0114 2734567">0114 2734567</a>. Online applications allow you to save progress and return later if needed.
+      Applications can be submitted online using the <a href="www.sheffield.gov.uk/localassistance" target="_blank">www.sheffield.gov.uk/localassistance</a> or telephone via <a href="tel:0114 2734567">0114 2734567</a>. Online applications allow you to save progress and return later if needed. 
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20the%20Local%20Assistance%20Scheme'"> Send Link </button>
     </p>
     <p>
       Ensure you have details about your financial situation, emergency, or disaster ready when applying. If applying by telephone, have this information prepared before the call.
@@ -2187,6 +2195,8 @@ const howDoIApply = new ContentB(
       <a href="www.sheffield.gov.uk/cost-of-living">www.sheffield.gov.uk/cost-of-living</a>, if you need
       assistance to apply, you can call the Community Helpline on 01142734567
       (option 0)
+        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20Living'"> Send Link </button>
+
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -2421,8 +2431,9 @@ const howDoesTheIndependanceGrantInformationApplicationProcessWork =
         <ul>
           <li>
             Self Service. You can fill in the form yourself on our website:
-            <a href="https://www.sheffield.gov.uk/localassistance">https://www.sheffield.gov.uk/localassistance</a>. The
-            form can be filled in on a computer or mobile device.
+            <a href="https://www.sheffield.gov.uk/localassistance">https://www.sheffield.gov.uk/localassistance</a>. 
+            The form can be filled in on a computer or mobile device.
+            <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20the%20Local%20Assistance%20Scheme'"> Send Link </button>
           </li>
           <li>
             If you do not have internet access at home, you can use the internet for
