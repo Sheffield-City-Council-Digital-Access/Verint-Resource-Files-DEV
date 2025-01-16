@@ -4,6 +4,10 @@
   background: var(--color-grey-6);
 }
 
+.header a {
+  line-height: 0 !important;
+}
+
 .logo-container {
   width: clamp(0rem, 100vw, 155rem);
   margin: 0 auto;

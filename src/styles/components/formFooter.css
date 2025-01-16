@@ -9,7 +9,7 @@
 .az-links-container {
   flex: 1;
   background: var(--color-primary);
-  border-bottom: 0.3rem solid var(--color-white);
+  border-bottom: 0.2rem solid var(--color-white);
 }
 
 .az-links {
@@ -169,7 +169,7 @@
 
 .icon-redirect:before,
 .icon-redirect-after:after {
-    content: "\e91c";
+  content: "\e91c";
 }
 
 .info {
@@ -217,7 +217,7 @@
 }
 
 #jump-to-top::after {
-  content: '';
+  content: "";
   position: absolute;
   transform: translatey(-111%);
   border-width: 1rem;

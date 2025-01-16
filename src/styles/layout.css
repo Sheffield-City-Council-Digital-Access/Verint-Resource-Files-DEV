@@ -1,7 +1,7 @@
 #dform_container #dform_controls {
   margin-bottom: 0;
   padding-bottom: 0;
-  height: 6.5rem;
+  height: 5.5rem;
   border-bottom: none;
 }
 
@@ -16,7 +16,7 @@ form.dform {
   padding: 5rem clamp(0rem, 10vw, 10rem);
   background: var(--color-background);
   display: grid;
-  min-height: 77.6vh;
+  /* min-height: 77.6vh; */
 }
 
 #dform_container {
@@ -25,11 +25,11 @@ form.dform {
   padding: 0;
 }
 
-#dform_controls>div.container {
+#dform_controls > div.container {
   display: none;
 }
 
-#dform_container .container>.twelve {
+#dform_container .container > .twelve {
   float: unset;
 }
 
@@ -59,7 +59,7 @@ form.dform {
 }
 
 .dform_widget {
-  margin-block: 4rem;
+  margin-block: 3rem;
 }
 
 #dform_page_page_core_confirm_fields {
@@ -71,14 +71,13 @@ form.dform {
   margin: 0;
 }
 
-
 #dform_container .no-margin fieldset legend {
   margin: 3rem 0 0 !important;
 }
 
-#dform_container fieldset.area>legend,
-#dform_container fieldset.box>legend,
-#dform_container fieldset.searchwidget>legend {
+#dform_container fieldset.area > legend,
+#dform_container fieldset.box > legend,
+#dform_container fieldset.searchwidget > legend {
   margin: 3rem 0 0;
   padding: 0;
   font-size: var(--font-size-h2);
