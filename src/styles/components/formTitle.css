@@ -1,13 +1,15 @@
 /* --- FORM TITLE ----------------------------------------------------------- */
 
 .title-container {
+  border-top: 0.4rem solid var(--color-white);
   padding-block: 2.5rem 0;
   background: var(--color-background);
 }
 
 .form-title {
   margin: 0 auto !important;
-  padding-inline: 2.5rem !important;
+  padding-block: 0.5rem 1rem !important;
+  padding-inline: 1.6rem !important;
   width: clamp(0rem, 100vw, 155rem);
   font-family: var(--font-heaning);
   font-size: var(--font-height-h2);
