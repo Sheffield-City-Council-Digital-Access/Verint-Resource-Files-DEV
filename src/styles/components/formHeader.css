@@ -5,7 +5,7 @@
 }
 
 .header a {
-  line-height: 0 !important;
+  display: flex;
 }
 
 .logo-container {
@@ -16,5 +16,6 @@
 
 .header-logo {
   height: 100%;
+  max-height: 11rem;
   width: auto;
 }

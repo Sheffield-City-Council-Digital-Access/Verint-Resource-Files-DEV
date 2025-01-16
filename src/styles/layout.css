@@ -1,7 +1,7 @@
 #dform_container #dform_controls {
   margin-bottom: 0;
   padding-bottom: 0;
-  height: 5.5rem;
+  height: 5rem;
   border-bottom: none;
 }
 
@@ -12,11 +12,10 @@
 form.dform {
   position: relative;
   width: clamp(0rem, 95vw, 155rem);
-  margin: 2.25rem auto 6.5rem;
+  margin: 0 auto 2.9rem;
   padding: 5rem clamp(0rem, 10vw, 10rem);
   background: var(--color-background);
   display: grid;
-  /* min-height: 77.6vh; */
 }
 
 #dform_container {
