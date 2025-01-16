@@ -11,7 +11,7 @@
 .logo-container {
   width: clamp(0rem, 100vw, 155rem);
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 2.4rem 1.6rem;
 }
 
 .header-logo {
