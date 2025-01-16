@@ -72,7 +72,8 @@ const bookNoticeCivilPartnership = new ContentBDMaC(
     <p>If you are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you must attend the notice of marriage appointment together either in the district you both live, or in either district (whichever is most convenient) if you live in different towns.</p>
     <p>You must know where your civil partnership will take place.</p>
     <p>The date of your civil partnership formation must be between 29 calendar days and 1 year of your appointment.</p>
-    <p>Further information for notice of civil partnership please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice " target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a>.</p>
+    <p>Further information for notice of civil partnership please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice" target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a>. <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Book%20a%20Notice%20of%20Civil%20Partnership%20Appointment'"> Send Link </button>
+</p>
     <h3>Fees</h3>
     <p>There is a fee to give your notice of civil partnership:</p>
     <ul>
@@ -137,7 +138,8 @@ const bookNoticeOfMarriageApp = new ContentBDMaC(
         <li>You must know where your marriage will take place.</li>
         <li>The date of your marriage must be between 29 calendar days and 1 year of your appointment.</li>
     </ul>
-    <p>Further information for notice of marriage please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice" target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a></p>
+    <p>Further information for notice of marriage please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice" target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Marriages%20and%20civil%20partnerships'"> Send Link </button>
+ </p>
     <h3>Fees</h3>
     <p>There is a fee to give your notice of marriage (additional fees may be incurred dependant on your choices)</p>
     <ul>
@@ -190,12 +192,13 @@ const bookingARegistrarWedding = new ContentBDMaC(
     <p>Our ceremonies team can arrange marriages or civil partnerships under 90 days for special reasons, you would need to contact our team at ceremoniesteam@sheffield.gov.uk</p>
     <h3>To form a marriage or civil partnership you must be:</h3>
     <ul>
-        <li>18 years or older: <a href="https://www.legislation.gov.uk/ukpga/2022/28" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/2022/28</a></li>
+        <li>18 years or older: <a href="https://www.legislation.gov.uk/ukpga/2022/28" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/2022/28</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Legislation'"> Send Link </button>
+</li>
     </ul>
     <h3>You must not:</h3>
     <ul>
         <li>Already be a civil partner or married.</li>
-        <li>Be closely related (the Act gives details of prohibited relationships) <a href="https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents</a>.</li>
+        <li>Be closely related (the Act gives details of prohibited relationships) <a href="https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents</a>.<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Legislation%20Contents'"> Send Link </button> </li>
     </ul>
     <h3>Non-Refundable Booking Fees</h3>
     <p>When you have completed your ceremony booking you will be required to make payment, this is to reserve the date and time selected, please note this is a non-refundable fee.</p>
@@ -207,7 +210,7 @@ const bookingARegistrarWedding = new ContentBDMaC(
     <p>Sheffield Register Office and ceremony rooms are located in the magnificent Grade I listed Town Hall. This unique wedding venue is the perfect choice for couples looking to get married in Sheffield city centre. With reasonable rates, it is also one of the most inexpensive wedding venues in Sheffield.</p>
     <p>Our registrars will perform a ceremony that will be memorable and personal. You can add vows or readings (non-religious). Your ceremony can be formal, flamboyant, sophisticated, or even a singalong – it can be tailored to your individual wishes.</p>
     <h3>Mirror Mandela Room</h3>
-    <a href="https://www.sheffield.gov.uk/births-deaths-marriages/town-hall-weddings " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/town-hall-weddings </a>
+    <a href="https://www.sheffield.gov.uk/births-deaths-marriages/town-hall-weddings " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/town-hall-weddings </a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Weddings%20in%20the%20Town%20Hall%20Mandela%20Mirror%20Room'"> Send Link </button>
     <p>If you wish to book the room the Mirror Mandela Room, please contact Beth Pinder <a href="mailto:Beth.Pinder@sheffield.gov.uk">Beth.Pinder@sheffield.gov.uk</a> for further details and fees. </p>
     <p>Registrar fees- non-refundable booking fee of £60.00 and £304.00 to reserve Registrars for the ceremony.</p>
     <h3>Civil Partnerships</h3>
@@ -279,7 +282,8 @@ const copyCertificates = new ContentBDMaC(
     "Request copy certificates for births, marriages, civil partnerships, or deaths registered in Sheffield, with standard or urgent processing options.",
     `
     <p>We can only take request copies of certificates for registrations that took place in Sheffield.</p>
-    <p>You can request copy certificates via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates</a>.</p>
+    <p>You can request copy certificates via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates</a>.<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Birth%20death%20marriage%20and%20civil%20partnership%20certificates'"> Send Link </button>
+</p>
     <p>There is a standard fee of £13.50 for these:</p>
     <ul>
         <li>full birth certificate.</li>
