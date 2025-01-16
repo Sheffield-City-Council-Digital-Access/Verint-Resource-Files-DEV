@@ -200,6 +200,10 @@
   width: auto;
 }
 
+.copyright {
+  font-size: var(--font-size-p2) !important;
+}
+
 .jump-container {
   display: flex;
   justify-content: flex-end;
