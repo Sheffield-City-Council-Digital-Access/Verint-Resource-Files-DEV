@@ -48,7 +48,6 @@
 .az-links a:hover,
 .az-menu li a:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  text-decoration: underline;
 }
 
 .az-menu li a span {
@@ -92,12 +91,12 @@
 
 .footer-links-container ul li a:hover {
   color: var(--color-white);
-  /* text-decoration: underline var(--color-secondary); */
+  text-decoration: underline var(--color-secondary);
 }
 
-/* .footer-links-container ul li a:hover::after {
+.footer-links-container ul li a:hover::after {
   color: var(--color-secondary);
-} */
+}
 
 #social-links {
   grid-row: 1 / 2;
