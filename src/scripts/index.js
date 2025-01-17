@@ -539,7 +539,6 @@ function handleOnReadyEvent(event, kdf) {
 
     // --- APPLY INTERNAL SYLE CHANGES ------------------------------------- \\
 
-    root.style.setProperty("--color-background", "#eeeeee");
     root.style.setProperty("--color-empty-pb", "#e0e0e0");
     root.style.setProperty("--color-primary", "#007aff");
 
@@ -599,7 +598,9 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- MAP --------------------------------------------------------------- \\
 
-  do_KDF_Ready_esriMap();
+  if (document.getElementById("map_container")) {
+    do_KDF_Ready_esriMap();
+  }
 
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
 
