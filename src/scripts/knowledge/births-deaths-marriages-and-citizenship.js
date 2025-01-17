@@ -321,8 +321,9 @@ const finalPayment = new ContentBDMaC(
     <h3>Certificates</h3>
     <p>Marriage and civil partnership certificates cost £12.50 at the point of registration (before the ceremony). Your 1st certificate will be sent out within 5-10 working days of the office receiving your completed marriage or civil partnership schedule. If you require another certificate, please follow the link below to order one. The following details must be inputted, date of ceremony, venue and names on the schedule (maiden name).</p>
     <p>Ceremonies conducted in religious venues do not receive the 1st certificate free, please use the link below to purchase another certificate if you require one.</p>
-    <p><a href="https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 " target="_blank" rel="noopener noreferrer">https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 </a></p>
-    <p>Copies of certificates can be purchased after the ceremony for £13.50 each at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates </a></p>
+    <p><a href="https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 " target="_blank" rel="noopener noreferrer">https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 </a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Marriage%20certificate%20at%20point%20of%20registration'"> Send Link </button></p>
+    <p>Copies of certificates can be purchased after the ceremony for £13.50 each at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates </a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Birth%20death%20marriage%20and%20civil%20partnership%20certificates'"> Send Link </button>
+</p>
     <h3>A message from our ceremonies team</h3>
     <p><i>We hope you have a wonderful day and a long and happy life together. We would love to have your feedback if you wish pass on how your ceremony was it would great to hear how we are doing. </i></p>
     <p>Please send us the details to <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a></p>
@@ -344,12 +345,12 @@ const licensedWeddingVenues = new ContentBDMaC(
     "Licensed Wedding Venues in Sheffield",
     "Explore licensed wedding venues in Sheffield, including booking a registrar, fees, and certificate options.",
     `
-    <p>You you can find information about licensed wedding venues in Sheffield at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues</a></p>
+    <p>You you can find information about licensed wedding venues in Sheffield at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Licensed%20wedding%20venues%20in%20Sheffield'"> Send Link </button></p>
     <p>New link will be finalised soon for new intagrated payments we will need to update thisprocess when confirmed going live</p>
     <p>Sheffield has some of the best wedding venues in Yorkshire. From our own Register Office and Town Hall rooms to hotels, galleries theatres and museums and everything in between, there's a venue to suit every couple.</p>
     <h3>Booking a Registrar</h3>
     <p>If you're getting married in Sheffield you need to book a registrar to conduct the ceremony.</p>
-    <p>You will can to booking a registrar via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar</a>.</p>
+    <p>You will can to booking a registrar via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar</a>.<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Final%20ceremony%20payment'"> Send Link </button> </p>
     <p>You can provisionally book a registrar up to 2 years ahead of the ceremony but it's your responsibility to contact the venue to check their availability.</p>
     <h3>Fees</h3>
     <ul>
