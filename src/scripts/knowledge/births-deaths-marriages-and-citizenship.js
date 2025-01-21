@@ -192,7 +192,7 @@ const bookingARegistrarWedding = new ContentBDMaC(
     <p>Our ceremonies team can arrange marriages or civil partnerships under 90 days for special reasons, you would need to contact our team at ceremoniesteam@sheffield.gov.uk</p>
     <h3>To form a marriage or civil partnership you must be:</h3>
     <ul>
-        <li>18 years or older: <a href="https://www.legislation.gov.uk/ukpga/2022/28" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/2022/28</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Legislation'"> Send Link </button>
+        <li>18 years or older: <a href="https://www.legislation.gov.uk/ukpga/2022/28" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/2022/28</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Legislation'"> Send Link </button>
 </li>
     </ul>
     <h3>You must not:</h3>
@@ -214,7 +214,7 @@ const bookingARegistrarWedding = new ContentBDMaC(
     <p>If you wish to book the room the Mirror Mandela Room, please contact Beth Pinder <a href="mailto:Beth.Pinder@sheffield.gov.uk">Beth.Pinder@sheffield.gov.uk</a> for further details and fees. </p>
     <p>Registrar fees- non-refundable booking fee of £60.00 and £304.00 to reserve Registrars for the ceremony.</p>
     <h3>Civil Partnerships</h3>
-    <p>Civil partnership enables same sex couples to obtain legal recognition of their relationship under the Civil Partnership Act 2004. As of 2nd of December 2019, opposite sex couples can also form a civil partnership.  <a href="https://www.legislation.gov.uk/ukpga/2004/33/contents" target="_blank" rel="noopener noreferrer"> https://www.legislation.gov.uk/ukpga/2004/33/contents</a></https:></p>
+    <p>Civil partnership enables same sex couples to obtain legal recognition of their relationship under the Civil Partnership Act 2004. As of 2nd of December 2019, opposite sex couples can also form a civil partnership.  <a href="https://www.legislation.gov.uk/ukpga/2004/33/contents" target="_blank" rel="noopener noreferrer"> https://www.legislation.gov.uk/ukpga/2004/33/contents</a></https:> <br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Civil%20Partnership%20Act%202004'"> Send Link </button></p>
     <p>Registration of a civil partnership provides couples with rights and obligations which are similar to those acquired through marriage.</p>
     <p>The Civil Partnership will be registered once each of you have signed the civil partnership schedule in the presence of the registrar and two witnesses.</p>
     <p>A ceremony is not required, but we would be pleased to offer a ceremony if you so wish. Information will be emailed once a ceremony is booked.</p>
@@ -380,7 +380,7 @@ const reRegisterABirth = new ContentBDMaC(
     "Make an appointment to re-register a birth",
     "Make an appointment to re-register a birth.",
     `
-  <p> Takes to <a href src= "#">form </a></p>
+  <p> Takes to <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-birth">https://www.sheffield.gov.uk/births-deaths-marriages/register-birth </a></p>
     `,
     { buttonLabel: "", formName: "" },
     { typeKey: "register_office_information_requested" },
@@ -398,7 +398,10 @@ const registerABirthAndDeath = new ContentBDMaC(
     "Register a Birth and Death",
     "Register a birth and death",
     `
-  <p> Takes to <a href src= "#">form </a></p>
+    <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p> 	<br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20or%20reregister%20a%20birth'"> Send Link </button>
+
+  <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p> <br>	<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20a%20death'"> Send Link </button>
+
   `,
     { buttonLabel: "", formName: "" },
     { typeKey: "register_office_information_requested" },
@@ -466,7 +469,8 @@ const registerAStillbirth = new ContentBDMaC(
     "Register a Stillbirth",
     "Register a stillbirth",
     `
-  <p> Takes to <a href src= "#">form </a></p>
+  <p> Takes to <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-stillbirth">https://www.sheffield.gov.uk/births-deaths-marriages/register-stillbirth</a> <br>	<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register a stillbirth'"> Send Link </button>
+</p> 
   `,
     { buttonLabel: "", formName: "" },
     { typeKey: "register_office_information_requested" },
