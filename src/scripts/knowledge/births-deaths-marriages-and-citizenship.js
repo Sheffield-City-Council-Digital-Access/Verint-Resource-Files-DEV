@@ -322,7 +322,7 @@ const finalPayment = new ContentBDMaC(
     <p>Marriage and civil partnership certificates cost £12.50 at the point of registration (before the ceremony). Your 1st certificate will be sent out within 5-10 working days of the office receiving your completed marriage or civil partnership schedule. If you require another certificate, please follow the link below to order one. The following details must be inputted, date of ceremony, venue and names on the schedule (maiden name).</p>
     <p>Ceremonies conducted in religious venues do not receive the 1st certificate free, please use the link below to purchase another certificate if you require one.</p>
     <p><a href="https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 " target="_blank" rel="noopener noreferrer">https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 </a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Marriage%20certificate%20at%20point%20of%20registration'"> Send Link </button></p>
-    <p>Copies of certificates can be purchased after the ceremony for £13.50 each at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates </a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Birth%20death%20marriage%20and%20civil%20partnership%20certificates'"> Send Link </button>
+    <p>Copies of certificates can be purchased after the ceremony for £13.50 each at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates </a> <br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Birth%20death%20marriage%20and%20civil%20partnership%20certificates'"> Send Link </button>
 </p>
     <h3>A message from our ceremonies team</h3>
     <p><i>We hope you have a wonderful day and a long and happy life together. We would love to have your feedback if you wish pass on how your ceremony was it would great to hear how we are doing. </i></p>
@@ -359,7 +359,7 @@ const licensedWeddingVenues = new ContentBDMaC(
         <li>Bank Holiday: £690.00</li>
     </ul>
     <h3>Booking fee</h3>
-    <p>There will be a non-refundable booking fee of £60 to secure a date and time (this is additional to any other fees).</p>
+    <p>There will be a non-refundable booking fee of £60 to secure a date and time (this is additional to any other fees). </p>
     <h3>Certificates</h3>
     <p>Marriage and civil partnership certificates cost £12.50 on the day of the ceremony. Copies of certificates can be bought at an extra charge."</p>
  
