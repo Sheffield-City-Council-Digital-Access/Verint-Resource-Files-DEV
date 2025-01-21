@@ -428,7 +428,9 @@ const registerADeath = new ContentBDMaC(
     </p>
     <p>During this process you may be contacted by the Medical Examiners Office. For further information regarding the deceased you should contact the hospital or GP dealing with the death.
     </p>
-    <p>For more information about the death reform certification process please visit the <a href="Gov.Uk" target="_blank" rel="noopener noreferrer">Gov.uk</a> website.
+    <p>For more information about the death reform certification process please visit the <a href="https://www.gov.uk/" target="_blank" rel="noopener noreferrer">https://www.gov.uk/</a> website.
+    <br>	<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Gov%20UK'"> Send Link </button>
+
     </p>
     <h3>Who can register a death</h3>
     <p>Usually, a relative or long-term partner (living with the deceased) of the person who has died can register death, but others can also do this. This can be:</p>
