@@ -1671,7 +1671,7 @@ function createOptions(formsToDisplay = forms) {
 }
 
 // Function to create and display the modal
-function createModal(modalId, form) {
+function createModal(modalId, form, ...args) {
   // Create modal elements
   const modal = document.createElement("div");
   modal.id = modalId;
@@ -1682,7 +1682,7 @@ function createModal(modalId, form) {
 
   const iframe = document.createElement("iframe");
   const { protocol, hostname } = window.location;
-  iframe.src = `${protocol}//${hostname}/form/launch/${form}?channel=voice_in`;
+  iframe.src = `${protocol}//${hostname}/form/launch/${form}?params=${args}`;
   iframe.frameBorder = "0";
   iframe.style.width = "100%";
   iframe.style.height = "100%";
