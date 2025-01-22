@@ -54,18 +54,14 @@ class FormOoH extends CoreOoH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-const emergencyAccommodation = new ContentOoH(
+const emergencyAccommodation = new FormOoH(
   "emergencyAccommodation",
   "Out of hours emergency accommodation",
-  "Description",
-  `
- 
-  `,
-  { buttonLabel: "Apply Emergency accommodation", formName: "apply_emergency_homeless" },
-  { typeKey: "emergency_homeless_transferred_to_service" },
-  { typeKey: "emergency_homeless_information_provided" },
-  { type: "Information",
-    keywords:
+  "Apply for emergency accommodation.",
+  "apply_emergency_homeless",
+  {
+    type: "Apply",
+    keywords: 
     [
       'Emergency accommodation',
       'emergency accomodation',
@@ -74,24 +70,19 @@ const emergencyAccommodation = new ContentOoH(
       'emergency accomodtion',
       'emergncy accommodation'
     ],
-    categories: ["out of hours"]
+    categories: ["out of hours"],
   },
-  { date: "13/10/2024", name: "George Whitehouse" }
+  { date: "22/01/2025", name: "Nathan Smith" }
 );
 
-
-const emergencyChildService = new ContentOoH(
+const emergencyChildService = new FormOoH(
   "emergencyChildService",
   "Children's emergency service",
-  "Description",
-  `
- 
-  `,
-  { buttonLabel: "Apply children's emergency service", formName: "emergency_child_service" },
-  { typeKey: "childrens_transferred_to_service" },
-  { typeKey: "childrens_information_provided" },
-  { type: "Apply",
-    keywords:
+  "Request for emergency child needs.",
+  "emergency_child_service",
+  {
+    type: "Request",
+    keywords: 
     [
       "children's emergency service",
       'Childrens emergncy service',
@@ -100,23 +91,19 @@ const emergencyChildService = new ContentOoH(
       "Childern's emergncy service",
       "Children's emrgency servce"
     ],
-    categories: ["out of hours"]
+    categories: ["out of hours"],
   },
-  { date: "13/10/2024", name: "George Whitehouse" }
+  { date: "22/01/2025", name: "Nathan Smith" }
 );
 
-const emergencyAdultService = new ContentOoH(
+const emergencyAdultService = new FormOoH(
   "emergencyAdultService",
   "Adult's emergency service",
-  "Description",
-  `
- 
-  `,
-  { buttonLabel: "Apply Adult emergency service", formName: "emergency_adult_service" },
-  { typeKey: "adults_transferred_to_service" },
-  { typeKey: "adults_service_information_provided" },
-  { type: "Apply",
-    keywords:
+  "Request for emergency adult needs.",
+  "emergency_adult_service",
+  {
+    type: "Request",
+    keywords: 
     [
       "Adult's emergency service",
       'adults emergancy service',
@@ -125,23 +112,19 @@ const emergencyAdultService = new ContentOoH(
       'adults emerjency service',
       'adults emergency servise'
     ],
-    categories: ["out of hours"]
+    categories: ["out of hours"],
   },
-  { date: "13/10/2024", name: "George Whitehouse" }
+  { date: "22/01/2025", name: "Nathan Smith" }
 );
 
-const reportAnEmergencyRepair = new ContentOoH(
+const reportAnEmergencyRepair = new FormOoH(
   "reportAnEmergencyRepair",
   "Report an emergency repair",
-  "Description",
-  `
- 
-  `,
-  { buttonLabel: "Report an emergency repair", formName: "report_emergency_repair" },
-  { typeKey: "repairs_transferred_to_service" },
-  { typeKey: "repairs_information_provided" },
-  { type: "Report",
-    keywords:
+  "Report any urgent Housing repair needs.",
+  "report_emergency_repair",
+  {
+    type: "Report",
+    keywords: 
     [
       'Report an emergency repair',
       'report an emergncy repair',
@@ -150,9 +133,9 @@ const reportAnEmergencyRepair = new ContentOoH(
       'report an emrgency repair',
       'report an emergancy repair'
     ],
-    categories: ["out of hours"]
+    categories: ["out of hours"],
   },
-  { date: "13/10/2024", name: "George Whitehouse" }
+  { date: "22/01/2025", name: "Nathan Smith" }
 );
 
 
