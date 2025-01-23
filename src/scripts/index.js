@@ -26,6 +26,8 @@ let fieldsToCheckBeforeClose = [];
 // Initialize an array to store the user's form page history
 const formUserPath = [];
 
+let customerId = kdf.params.customerid ?? customerId;
+
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
 
 function handleInitialisingEvent() {
@@ -1129,7 +1131,7 @@ function handleOnReadyEvent(event, kdf) {
 
   $("#dform_widget_button_but_view_rent_account").on("click", function () {
     if (kdf.params.customerid) {
-      createModal("hubScreenRentSummary", "hub_rent_summary");
+      createModal("hubScreenRentSummary", "hub_rent_summary", customerId);
     }
   });
 }
@@ -1354,6 +1356,11 @@ function handleObjectIdSet(event, kdf, type, id) {
 }
 
 function handleObjectIdLoaded(event, kdf, response, type, id) {
+  customerId = id;
+  KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
+    customerid: id,
+  });
+
   property = formatTitleCase(response["profile-AddressNumber"]);
   streetName = formatTitleCase(response["profile-AddressLine1"]);
   fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${
