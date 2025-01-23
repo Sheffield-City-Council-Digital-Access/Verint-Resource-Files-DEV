@@ -26,11 +26,13 @@ let fieldsToCheckBeforeClose = [];
 // Initialize an array to store the user's form page history
 const formUserPath = [];
 
-let customerId = KDF.kdf().params.customerid;
+let customerId;
 
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
 
 function handleInitialisingEvent() {
+  customerId = KDF.kdf().params.customerid;
+
   // --- GOOGLE ANALITICS  ------------------------------------------------- \\
 
   if (KDF.kdf().access === "citizen") {
