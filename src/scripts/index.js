@@ -1608,7 +1608,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       container.appendChild(iframe);
 
       hideShowMultipleElements([
-        { name: "ahtm_hub_screen_person_details", display: "show" },
+        { name: "ahtm_hub_screen", display: "show" },
         { name: "area_about_you", display: "hide" },
         { name: "area_address_lookup_about_you", display: "hide" },
         { name: "area_address_details_about_you", display: "hide" },
