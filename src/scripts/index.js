@@ -1118,6 +1118,20 @@ function handleOnReadyEvent(event, kdf) {
       KDF.showError("Please ensure all fields have been completed.");
     }
   });
+
+  // --- OHMS -------------------------------------------------------------- \\
+
+  if (kdf.params.customerid) {
+    KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
+      customerid: kdf.params.customerid,
+    });
+  }
+
+  $("#dform_widget_button_but_view_rent_account").on("click", function () {
+    if (kdf.params.customerid) {
+      createModal("hubScreenRentSummary", "hub_rent_summary");
+    }
+  });
 }
 
 // --- HANDLE ON PAGE CHANGE EVENT ----------------------------------------- \\
@@ -1567,6 +1581,38 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     const { caseStatus, formStatus } = response.data;
     if (formStatus === "Y") {
       $(".review-page-edit-button").remove();
+    }
+  }
+
+  // --- OHMS -------------------------------------------------------------- \\
+
+  if (
+    action === "retrieve-social-ids" &&
+    response.data["profile-socialId-ohms"]
+  ) {
+    const screen =
+      kdf.form.name === "hub_rent_summary" ? "RNT1" : "personDetails";
+    const agentId = response.data.agendId;
+    const ohmsId = response.data["profile-socialId-ohms"];
+
+    const url = `https://sccvmtholi01.sheffield.gov.uk/CRMHousing/default.asp?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
+    const iframe = document.createElement("iframe");
+    iframe.id = "ifrm1";
+    iframe.width = "100%";
+    iframe.height = screen === "personDetails" ? "725" : "521";
+    iframe.src = url;
+
+    const container = document.getElementById("hub-screen-container");
+    if (container) {
+      container.innerHTML = "";
+      container.appendChild(iframe);
+
+      hideShowMultipleElements([
+        { name: "ahtm_hub_screen_person_details", display: "show" },
+        { name: "area_about_you", display: "hide" },
+        { name: "area_address_lookup_about_you", display: "hide" },
+        { name: "area_address_details_about_you", display: "hide" },
+      ]);
     }
   }
 
