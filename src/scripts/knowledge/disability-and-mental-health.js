@@ -56,23 +56,17 @@ class FormDaMH extends CoreDaMH {
 
 
 //#region City Wide Care Alarms
-
-  const cityWideCareAlarms = new ContentDaMH(
+  const cityWideCareAlarms = new FormDaMH(
     "cityWideCareAlarms",
     "City Wide Care Alarms",
-    "Description",
-    `
-      
-    `,
-    { buttonLabel: "Apply City Wide Care Alarms", formName: "city_wide_care_alarm" },
-    { typeKey: "city_wide_care_alarm_information_to_service" },
-    { typeKey: "city_wide_care_alarm_information_provided" },
+    "Our emergency care alarm service allows people to get help when they are in difficulty. It helps people to remain safe, secure and independent in and around their homes.",
+    "city_wide_care_alarm",
     {
       type: "Apply",
       keywords: ['City Wide Care Alarms','City Wde Care Alarms', 'City Wide Car Alarms', 'Cty Wide Care Alarms', 'City Wide Care Alrms', 'City Wide Care Alarms'],
       categories: ["Disability and Mental Health"],
     },
-    { date: "13/11/2024", name: "Gee Whitehouse" }
+    { date: "22/01/2025", name: "Nathan Smith" }
   );
 //#endregion City Wide Care Alarms
 
