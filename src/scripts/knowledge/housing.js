@@ -2884,7 +2884,7 @@ const bidding = new ContentH(
         bids online at the Property Shop website
         <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> <br> 
         <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Property%20Shop'"> Send Link </button>
-        You can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday
+        <br>You can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday
         to Tuesday).
       </p>
 
