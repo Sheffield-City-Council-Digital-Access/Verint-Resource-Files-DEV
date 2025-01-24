@@ -1589,7 +1589,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   }
 
   // --- OHMS -------------------------------------------------------------- \\
-
+  console.log(response.data);
   if (
     action === "retrieve-social-ids" &&
     response.data["profile-socialId-ohms"]
@@ -1598,6 +1598,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       kdf.form.name === "hub_rent_summary" ? "RNT1" : "personDetails";
     const agentId = response.data.agendId;
     const ohmsId = response.data["profile-socialId-ohms"];
+    console.log(screen, agentId, ohmsId);
 
     const url = `https://sccvmtholi01.sheffield.gov.uk/CRMHousing/default.asp?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
     const iframe = document.createElement("iframe");
@@ -1607,6 +1608,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     iframe.src = url;
 
     const container = document.getElementById("hub-screen-container");
+    console.log(container);
     if (container) {
       container.innerHTML = "";
       container.appendChild(iframe);
