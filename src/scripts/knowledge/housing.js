@@ -4962,6 +4962,9 @@ const contactRentsTeam = new ContentH(
             </p>
             <p>
                 Alternatively, they can complete the online form at <a href="https://www.sheffield.gov.uk/benefits/housing-benefit">https://www.sheffield.gov.uk/benefits/housing-benefit</a>.
+              <br>
+                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20Housing%20Benefit'"> Send Link </button>
+
             </p> 
         </div>
     </details>
@@ -5481,7 +5484,11 @@ const statements = new ContentH(
   `
   <p>
   Statements are issued every 12 months or are available online along with rent balance enquiries at 
-  <a href="https://www.gro.sheffieldhomes.org.uk">https://www.gro.sheffieldhomes.org.uk</a>. <br><br>
+  <a href="https://www.gro.sheffieldhomes.org.uk">https://www.gro.sheffieldhomes.org.uk</a>. 
+  <br>
+  <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Homes'"> Send Link </button>
+  <br>
+  <br>
 
   If the customer requires a current statement, we can still provide one upon request that covers the last 3 months. 
   If the customer is asking for more than 3 months, we need to know why they need it as there will be a charge. <br><br>
@@ -6197,6 +6204,8 @@ const fobsandKeys = new ContentH(
       <p>
       Please note: Howden House only deals with Rehousing enquiries and will not be able to help with fobs or keys. 
       List of Area Offices:  <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices "target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
+      <br>
+        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Neighbourhood%20offices'"> Send Link </button>
     </p>
     </div>
   </details>
