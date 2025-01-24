@@ -73,10 +73,11 @@ class FormEaR extends CoreEaR {
         Someone in the property should check the details on the form are correct and
         up to date. This form <strong>requires a response</strong>, even if the
         details on it are correct. Responses can be made online at
-        <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
+        <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a> 
         or by returning the completed form in the reply envelope. If there are changes
         or to confirm there are no changes. If everything is correct, this can be
         confirmed by SMS or phone instead, using the details on the form.
+        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
       </p>
       <p>
         <strong
@@ -126,10 +127,11 @@ const ccaCCBorCanvassForms = new ContentEaR(
       Someone in the property should check the details on the form are correct and
       up to date. This form <strong>requires a response</strong>, even if the
       details on it are correct. Responses can be made online at: 
-      <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
+      <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a> 
       or by returning the completed form in the reply envelope. If there are changes
       or to confirm there are no changes. If everything is correct, this can be
       confirmed by SMS or phone instead, using the details on the form.
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
     </p>
     <p>
       <strong> You need to include the name and nationality of everyone aged 16 or over
@@ -185,17 +187,19 @@ const ccaCCBForms = new ContentEaR(
       <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
       and make the change using the unique security codes printed on the form, or
       contact Electoral Services directly if they cannot go online.
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
     </p>
     <p>
       <strong>Properties receiving a CCB</strong> - Someone in the property should
       check the details on the form are correct and up to date. This form
       <strong>requires a response</strong>, even if the details on it are correct.
       Responses can be made online at
-      <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
+      <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a> 
       if there are changes or to confirm there are no changes. If everything is
       correct, this can be confirmed by SMS or phone instead, using the details on
       the form. They can contact Electoral Services directly if they cannot go
       online.
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
     </p>
     <p>
       <strong
@@ -989,16 +993,18 @@ const applyingForPostalVote = new ContentEaR(
     <p>
       You can choose to vote using a postal vote in all elections that you are
       eligible to vote in. You can apply for a postal vote online at
-      <a href="https://www.gov.uk/apply-postal-vote" target="_blank">www.gov.uk/apply-postal-vote</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20a%20postal%20vote'"> Send Link </button>
+      <a href="https://www.gov.uk/apply-postal-vote" target="_blank">www.gov.uk/apply-postal-vote</a>
       or by completing a paper form. You must provide a hand-written signature
       however you apply. You can obtain the appropriate form by the following means:
       <ul>
         <li>
-          Online at <a href="https://www.gov.uk/apply-postal-vote" target="_blank">www.gov.uk/apply-postal-vote</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20a%20postal%20vote'"> Send Link </button>
+          Online at <a href="https://www.gov.uk/apply-postal-vote" target="_blank">www.gov.uk/apply-postal-vote</a> 
         </li>
         <li>Email Link to Customer</li>
         <li>From Porters Lodge at the Town Hall or First Point at Howden House</li>
       </ul>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20a%20postal%20vote'"> Send Link </button>
+      
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -1120,8 +1126,9 @@ const requestproxyVote = new ContentEaR(
     <p>
       You can request to vote by proxy to have another person vote on your behalf at
       your Polling Station. This can be done online at
-      <a href="https://www.gov.uk/apply-proxy-vote" target="_blank">www.gov.uk/apply-proxy-vote</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20a%20proxy%20vote'"> Send Link </button>
+      <a href="https://www.gov.uk/apply-proxy-vote" target="_blank">www.gov.uk/apply-proxy-vote</a> 
       or using a paper form.
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20a%20proxy%20vote'"> Send Link </button>
     </p>
     <p>
       The Proxy Voter cannot vote at their own Polling Station for your vote, unless
@@ -1591,9 +1598,10 @@ const includeSomeoneElseontheRegisterForm = new ContentEaR(
     <p>
       No, this is an individual registration form. If you know someone who wants to
       vote, they must register. They can do so by visiting
-      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>, <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
+      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>, 
       or we can send them a paper registration form if they do not have internet
       access.
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -1629,6 +1637,7 @@ const incorrectDetailsOnElectoralRegister = new ContentEaR(
       If an error is found on the electoral register, please let us know so it can
       be corrected. The quickest way to do this is by re-registering at
       <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
+      <br>
       We cannot correct an error in an already published electoral register, but the
       correct would show in the next monthly update or revised register.
     </p>
@@ -1671,10 +1680,11 @@ const informationInDifferentFormats = new ContentEaR(
     <p>
       Some information is available in alternative formats. If you are registering
       to vote, do so at
-      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>, <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
+      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>, 
       which works with assistive technologies such as screen readers, or we can
       send you an application in your preferred format where available. For
       additional information, please call: <a href="tel:0114 2734093">0114 2734093</a>.
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -1749,8 +1759,9 @@ const lostMyInvitationToRegister = new ContentEaR(
     </section>
     <p>
       If you have lost your form, you can apply to register online at
-      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>, <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
+      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>, 
       or we can send a replacement form.
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -1792,8 +1803,9 @@ const movingHomeorMovedHome = new ContentEaR(
     <p>
       If you have moved, you need to re-register for voting at your new address. You
       can do this by registering online at:
-      <a href="https://www.gov.uk/register-to-vote" target="_blank">https://www.gov.uk/register-to-vote</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
+      <a href="https://www.gov.uk/register-to-vote" target="_blank">https://www.gov.uk/register-to-vote</a> 
       or by asking us for a form.
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -1881,8 +1893,9 @@ const registerToVote = new ContentEaR(
       Electoral Registration (IER). To register, you will need your National
       Insurance Number and date of birth, which ensures the process is more secure.
       To register or change your details, please visit:
-      <a href="https://www.gov.uk/register-to-vote" target="_blank">https://www.gov.uk/register-to-vote</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
+      <a href="https://www.gov.uk/register-to-vote" target="_blank">https://www.gov.uk/register-to-vote</a>
       or we can send you a paper form in the post.
+       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
   `,
   { buttonLabel: "", formName: "" },
