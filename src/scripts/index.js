@@ -26,6 +26,8 @@ let fieldsToCheckBeforeClose = [];
 // Initialize an array to store the user's form page history
 const formUserPath = [];
 
+let customerId = KDF.kdf().params.customerid;
+
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
 
 function handleInitialisingEvent() {
@@ -1128,8 +1130,10 @@ function handleOnReadyEvent(event, kdf) {
   }
 
   $("#dform_widget_button_but_view_rent_account").on("click", function () {
-    if (kdf.params.customerid) {
+    if (customerId) {
       createModal("hubScreenRentSummary", "hub_rent_summary", customerId);
+    } else {
+      KDF.showWarning("A customer has not been set.");
     }
   });
 }
@@ -1342,6 +1346,7 @@ function handleClearMapFieldsEvent() {
 function handleObjectIdSet(event, kdf, type, id) {
   KDF.setVal("txt_reporter_obj_type", type);
   KDF.setVal("num_reporter_obj_id", id);
+  customerId = id;
 
   // Update customer set state
   customerState = "agent_true";
@@ -1589,7 +1594,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   }
 
   // --- OHMS -------------------------------------------------------------- \\
-  console.log(`-- RD --: ${response.data}`);
+
   if (
     action === "retrieve-social-ids" &&
     response.data["profile-socialId-ohms"]
@@ -1598,7 +1603,6 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       kdf.form.name === "hub_rent_summary" ? "RNT1" : "personDetails";
     const agentId = response.data.agendId;
     const ohmsId = response.data["profile-socialId-ohms"];
-    console.log(`-- Hub Screen `, screen, agentId, ohmsId);
 
     const url = `https://sccvmtholi01.sheffield.gov.uk/CRMHousing/default.asp?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
     const iframe = document.createElement("iframe");
@@ -1609,7 +1613,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     iframe.src = url;
 
     const container = document.getElementById("hub-screen-container");
-    console.log(`-- Container --: ${container}`);
+
     if (container) {
       container.innerHTML = "";
       container.appendChild(iframe);
