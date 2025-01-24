@@ -26,13 +26,9 @@ let fieldsToCheckBeforeClose = [];
 // Initialize an array to store the user's form page history
 const formUserPath = [];
 
-let customerId;
-
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
 
 function handleInitialisingEvent() {
-  customerId = KDF.kdf().params.customerid;
-
   // --- GOOGLE ANALITICS  ------------------------------------------------- \\
 
   if (KDF.kdf().access === "citizen") {
@@ -1358,7 +1354,6 @@ function handleObjectIdSet(event, kdf, type, id) {
 }
 
 function handleObjectIdLoaded(event, kdf, response, type, id) {
-  customerId = id;
   KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
     customerid: id,
   });
