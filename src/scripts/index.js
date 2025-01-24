@@ -1128,12 +1128,10 @@ function handleOnReadyEvent(event, kdf) {
   }
 
   $("#dform_widget_button_but_view_rent_account").on("click", function () {
-    if (KDF.getVal("num_reporter_obj_id")) {
-      createModal(
-        "hubScreenRentSummary",
-        "hub_rent_summary",
-        KDF.getVal("num_reporter_obj_id")
-      );
+    const customerid =
+      kdf.params.customerid ?? KDF.getVal("num_reporter_obj_id");
+    if (customerid) {
+      createModal("hubScreenRentSummary", "hub_rent_summary", customerid);
     } else {
       KDF.showWarning("A customer has not been set.");
     }
