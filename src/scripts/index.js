@@ -26,8 +26,6 @@ let fieldsToCheckBeforeClose = [];
 // Initialize an array to store the user's form page history
 const formUserPath = [];
 
-let customerId = KDF.kdf().params.customerid;
-
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
 
 function handleInitialisingEvent() {
@@ -1130,8 +1128,10 @@ function handleOnReadyEvent(event, kdf) {
   }
 
   $("#dform_widget_button_but_view_rent_account").on("click", function () {
-    if (customerId) {
-      createModal("hubScreenRentSummary", "hub_rent_summary", customerId);
+    const customerid =
+      kdf.params.customerid ?? KDF.getVal("num_reporter_obj_id");
+    if (customerid) {
+      createModal("hubScreenRentSummary", "hub_rent_summary", customerid);
     } else {
       KDF.showWarning("A customer has not been set.");
     }
@@ -1346,7 +1346,6 @@ function handleClearMapFieldsEvent() {
 function handleObjectIdSet(event, kdf, type, id) {
   KDF.setVal("txt_reporter_obj_type", type);
   KDF.setVal("num_reporter_obj_id", id);
-  customerId = id;
 
   // Update customer set state
   customerState = "agent_true";
@@ -1623,6 +1622,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
         { name: "area_about_you", display: "hide" },
         { name: "area_address_lookup_about_you", display: "hide" },
         { name: "area_address_details_about_you", display: "hide" },
+        { name: "but_view_rent_account", display: ohmsId ? "show" : "hide" },
       ]);
     }
   }
