@@ -3023,7 +3023,11 @@ const whyIsACleanAirZoneBeingIntroduced = new ContentPaN(
 
 `
 <p>The implementation of the Category C Clean Air Zone in Sheffield is the result of a legal directive from national government requiring Nitrogen Dioxide (NO2) levels to be reduced to legal levels at locations across Sheffield and Rotherham within the shortest possible time.</p>
-<p>The primary aim of Clean Air Zones is to protect the public from exposure to Nitrogen Dioxide (NO2) emissions from road traffic. Air pollution can permanently damage children's lungs, can cause strokes, lung cancer and cardiovascular disease. Find out the health impacts from air pollution at <a href="https://www.gov.uk/government/publications/health-matters-air-pollution" target="_blank">https://www.gov.uk/government/publications/health-matters-air-pollution</a>.</p>
+<p>The primary aim of Clean Air Zones is to protect the public from exposure to Nitrogen Dioxide (NO2) emissions from road traffic. Air pollution can permanently damage children's lungs, can cause strokes, lung cancer and cardiovascular disease. Find out the health impacts from air pollution at <a href="https://www.gov.uk/government/publications/health-matters-air-pollution" target="_blank">https://www.gov.uk/government/publications/health-matters-air-pollution</a>.
+<br>
+<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Health%20matters%20air%20pollution'"> Send Link </button>
+
+</p>
 <p>A number of other local authorities across the UK have also been legally directed to introduce Clean Air Zones - not only Sheffield.</p>
 <p>We have worked with DEFRA’s Joint Air Quality Unit (JAQU) to form a plan to reduce annual average concentrations of Nitrogen Dioxide (NO2) in Sheffield. The Clean Air Zone is focused around the city center where some of the most polluted locations are, but it will deliver air quality below the legal limit of 40µg/m<sup>3</sup> across the whole of the city.</p>
 `,
