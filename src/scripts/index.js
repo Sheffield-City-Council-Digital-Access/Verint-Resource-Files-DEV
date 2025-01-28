@@ -1121,11 +1121,11 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- OHMS -------------------------------------------------------------- \\
 
-  // if (kdf.params.customerid) {
-  //   KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
-  //     customerid: kdf.params.customerid,
-  //   });
-  // }
+  if (kdf.params.customerid) {
+    KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
+      customerid: kdf.params.customerid,
+    });
+  }
 
   $("#dform_widget_button_but_view_rent_account").on("click", function () {
     const customerid =
