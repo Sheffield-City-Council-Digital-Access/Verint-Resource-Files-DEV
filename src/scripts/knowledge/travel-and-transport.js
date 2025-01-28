@@ -109,6 +109,8 @@ const childTravelPass = new ContentTaT(
     <p>
       You can apply for a new pass or renew an existing one at: <a href="https://www.sheffield.gov.uk/utilities/form/travel-and-transport/apply-childrens-travel-pass-start" target="_blank">https://www.sheffield.gov.uk/utilities/form/travel-and-transport/apply-childrens-travel-pass-start</a> 
       <br>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20a%20Childrens%20Travel%20Pass'"> Send Link </button>
+      <br>
       <br>
       It may take up to 28 days to process your application.
       <br>
@@ -130,6 +132,8 @@ const childTravelPass = new ContentTaT(
       <p>
         Information on how to replace a misplaced pass can be found at:
         <a href="https://www.travelsouthyorkshire.com/zerofarepass" target="_blank">www.travelsouthyorkshire.com/zerofarepass</a>
+        <br>
+        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Zoom%20Zero%20Travel%20Pass'"> Send Link </button>
       </p>
       </div>
     </details>
