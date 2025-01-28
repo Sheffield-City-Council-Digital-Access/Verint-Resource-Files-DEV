@@ -82,15 +82,24 @@ const badgerProtection = new ContentPaN(
     </p>
     <p>
       For more information, please visit: <a href="http://www.syorksbadgergroup.org.uk" target="_blank">http://www.syorksbadgergroup.org.uk</a>.
+      <br>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=South%20Yorkshire%20Badger%20Group'"> Send Link </button>
+
     </p>
     <p>
       You can also visit the government website at: <a href="https://www.gov.uk/guidance/badgers-protection-surveys-and-licences" target="_blank">https://www.gov.uk/guidance/badgers-protection-surveys-and-licences</a>.
+      <br>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Badgers%20Protection%20Surveys%20and%20Licences'"> Send Link </button>
+
       <br>
       <br>
       or
       <br>
       <br>
       RPSCA information site at: <a href="https://www.rspca.org.uk/adviceandwelfare/wildlife/badgers/law" target="_blank">https://www.rspca.org.uk/adviceandwelfare/wildlife/badgers/law</a>.
+      <br>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Badgers%20and%20the%20law'"> Send Link </button>
+
     </p>
   `,
   {
@@ -134,6 +143,9 @@ const batProtectionBritain = new ContentPaN(
     </ul>
     <p>
       For more information, please visit <a href="http://www.bats.org.uk">http://www.bats.org.uk</a>. 
+      <br>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Bats'"> Send Link </button>
+
     </p>
   `,
   {
@@ -1157,6 +1169,9 @@ const foxesInformation = new ContentPaN(
    <p>Sheffield City Council doesn't offer a service for foxes.</p>
     <p>For advice/information on foxes, please visit 
     <a href="http://foxproject.org.uk" target="_blank">http://foxproject.org.uk</a>.
+    <br>
+    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=The%20Fox%20Project'"> Send Link </button>
+
     </p>
   `,
   {
@@ -1190,6 +1205,9 @@ const FrogsorFrogspawn = new ContentPaN(
       For advice/information on Frogs or Frogspawn, please call DEFRA who are licenced to remove 
       frogs or frog spawn on <a href="tel:0113 2613333">0113 2613333</a> or visit:
       <a href="https://www.gov.uk/browse/environment-countryside" target="_blank">https://www.gov.uk/browse/environment-countryside</a>.
+      <br>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Environment%20and%20countryside'"> Send Link </button>
+
     </p>
   `,
   {
@@ -1349,6 +1367,8 @@ const honeyBeeTreatment = new ContentPaN(
       <p>
         Bee keepers may be able to collect Honey Bees, although they are under no obligation to collect the swarm
         You can access information on the Sheffield Beekeepers Association at: <a href="https://sheffieldbeekeepers.org.uk/swarm-of-bees-in-your-garden-or-house/" target="_blank">https://sheffieldbeekeepers.org.uk/swarm-of-bees-in-your-garden-or-house/</a>
+        <br>
+        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Environment%20and%20Countryside'"> Send Link </button>
       </p>
     </section>
     <p>
@@ -2798,7 +2818,11 @@ const howLongWillTheCleanAirZoneBeInPlace = new ContentPaN(
 `
 <p>The Clean Air Zone will be in place in Sheffield until the city can provide evidence to the Department for Environment, Food & Rural Affairs (Defra) that it has met and can maintain for a minimum of two years the reduced legal levels of Nitrogen Dioxide (NO2) required. There will be significant monitoring and evaluation of the CAZ to determine this.</p>
 <h3>What support will there be for those affected</h3>
-<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.</p>
+<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.
+<br>
+<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20financial%20support%20to%20upgrade%20or%20replace%20a%20polluting%20vehicle'"> Send Link </button>
+
+</p>
 `,
 {
   buttonLabel: "",
@@ -2930,7 +2954,11 @@ const whatSupportWillThereBeForThoseAffected = new ContentPaN(
   "What support will there be for those affected",
   "Discover the financial support available for businesses and residents to upgrade to cleaner vehicles, including grants and interest-subsidized loans.",
 `
-<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.</p>
+<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.
+<br>
+<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20financial%20support%20to%20upgrade%20or%20replace%20a%20polluting%20vehicle'"> Send Link </button>
+
+</p>
 `,
 {
   buttonLabel: "",
