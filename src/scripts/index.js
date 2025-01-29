@@ -844,7 +844,7 @@ function handleOnReadyEvent(event, kdf) {
     const fullAddress = document.querySelector(
       `#${currentPageId} input[data-customalias="fullAddress"]`
     );
-    const fullAddressHasValue = KDF.getVal(fullAddress) ? true : false;
+    const fullAddressHasValue = KDF.getVal(fullAddress.name) ? true : false;
     const siteName = document.querySelector(
       `#${currentPageId} input[data-customalias="siteName"]`
     );
@@ -853,8 +853,8 @@ function handleOnReadyEvent(event, kdf) {
     );
     if (fullAddressHasValue) {
       if (siteName && siteCode) {
-        const siteNameHasValue = KDF.getVal(siteName) ? true : false;
-        const siteCodeHasValue = KDF.getVal(siteCode) ? true : false;
+        const siteNameHasValue = KDF.getVal(siteName.name) ? true : false;
+        const siteCodeHasValue = KDF.getVal(siteCode.name) ? true : false;
         const validSiteCode = acceptGMSites
           ? true
           : KDF.getVal(siteCode.name).startsWith("344")
