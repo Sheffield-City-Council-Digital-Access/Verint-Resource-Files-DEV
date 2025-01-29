@@ -476,7 +476,69 @@ const reportHedgePlantGrass = new ContentRaP(
   "reportHedgePlantGrass",
   "Hedges, plants or grassed areas",
   "Report problems such as overgrown, dead or diseased, and damaged vegetation",
-  `## needs information around grass cutting schedule ##`,
+  `
+    <section>
+      <h3>Grassed areas</h3>
+      <p>
+        Grass cutting seasons are Spring and Summer. The frequecney in which they
+        are cut varies from every 2-4 weeks or every year.
+      </p>
+      <ul>
+        <li>
+          Areas with daffodils or other bulbs are left uncut until early June.
+        </li>
+        <li>
+          Areas containing wildflowers area, it is cut once per year, typically in
+          late August.
+        </li>
+        <li>
+          Areas that impact sight lines around junctions, signs, bollards and street
+          name plates are attended more frequently as required.
+        </li>
+      </ul>
+
+      <details class="details-accordion">
+        <summary>Verge hardening</summary>
+        <div class="details-accordion-content">
+          <p>
+            Grass verges play an important role in urban drainage as they absorb
+            rainfall which would otherwise find its way into the drainage system
+            thereby increasing the risk of flooding. <br />In view of this, we will
+            not consider individual requests for verge hardening.
+          </p>
+          <p>
+            Similarly, individual requests for verge protection measures (such as
+            bollards) will not be considered.
+          </p>
+        </div>
+      </details>
+    </section>
+
+    <section>
+      <h3>Planted areas</h3>
+      <p>
+        Shrub and rose areas are inspected twice per year at which time any
+        necessary pruning and maintenance is carried out.
+      </p>
+    </section>
+
+    <section>
+      <h3>Hedges</h3>
+      <p>
+        We plan our routine hedge and tree cutting around bird nesting times and
+        other conservation issues (e.g. insect habitats), so they do not cut hedges
+        in the spring and early summer unless for reasons of public safety.
+      </p>
+      <p>
+        If a hedge or tree is encroaching on to the highway from private property or
+        land, you will need to transfer the call to the Highway Enforcement team.
+        The Highway Enforcement team can serve hedge cutting/tree pruning notices to
+        private landowners where trees/hedges are encroaching on to the highway not
+        considered to be causing hazard or danger. If a tree is causing a hazard or
+        danger to the highway, raise a report.
+      </p>
+    </section>
+  `,
   {
     buttonLabel: "Report a hedge, plant or grass",
     formName: "report_hedge_plant_grass",
@@ -521,32 +583,73 @@ const reportTree = new FormRaP(
   "reportTree",
   "Trees and tree grills",
   "Report problems such as fallen, leaning, diseased, dead trees, or damaged tree grills",
-  "report_tree",
+  `
+    <section>
+      <h3>Maintanence</h3>
+      <p>
+        We plan our routine hedge and tree cutting around bird nesting times and
+        other conservation issues (e.g. insect habitats), so they do not cut hedges
+        in the spring and early summer unless for reasons of public safety.
+      </p>
+      <p>
+        If a hedge or tree is encroaching on to the highway from private property or
+        land, you will need to transfer the call to the Highway Enforcement team.
+        The Highway Enforcement team can serve hedge cutting/tree pruning notices to
+        private landowners where trees/hedges are encroaching on to the highway not
+        considered to be causing hazard or danger. If a tree is causing a hazard or
+        danger to the highway, raise a report.
+      </p>
+      <p>
+        Initially, the tree will be inspected and where it is considered hazardous
+        remedial works will be carried out to make the area safe.
+      </p>
+      <p>
+        Tree removal is always the very last option undertaken after all other
+        solutions have been explored. As a result of any removal, we will always aim
+        to plant a new tree in a nearby location.
+      </p>
+    </section>
+    <details class="details-accordion">
+      <summary>Damage caused by trees</summary>
+      <div class="details-accordion-content">
+        <p>
+          Residents who believe that branches or roots from a highway tree have
+          caused damage to their vehicle, boundary wall or driveway are at liberty
+          to request a claim form.
+          <br /><br />
+          Residents who believe that branches or roots from a highway tree have
+          caused damage to their house should always contact their own house
+          insurers in the first instance, who will arrange for the relevant surveys
+          to be carried out.
+        </p>
+      </div>
+    </details>
+  `,
+  {
+    buttonLabel: "Report a problem with a tree",
+    formName: "report_tree",
+  },
+  { typeKey: "" },
+  { typeKey: "" },
   {
     type: "Report",
     keywords: ["Tree"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
+  { date: "29/01/2025", name: "Elliott Griffiths" }
 );
 
-const requestHighwayInfo = new ContentRaP(
+const requestHighwayInfo = new FormRaP(
   "requestHighwayInfo",
   "Highway information",
   "Request information about service, works, policy or legislation",
-  ``,
-  {
-    buttonLabel: "Request highway information",
-    formName: "request_highway_info",
-  },
-  { typeKey: "" },
-  { typeKey: "" },
+  `request_highway_info`,
   {
     type: "Request",
     keywords: ["Grit", "bin"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
+  { date: "29/01/2025", name: "Elliott Griffiths" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\

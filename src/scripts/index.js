@@ -2242,7 +2242,7 @@ function checkDate(id, dd, mm, yy, element) {
   const errorConditions = [
     {
       condition: !dd && !mm && !yy,
-      message: "Date must include a day, month and year",
+      message: dateMessage,
       fields: dateFields,
     },
     {
