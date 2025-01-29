@@ -76,7 +76,8 @@ class FormEaR extends CoreEaR {
         <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a> 
         or by returning the completed form in the reply envelope. If there are changes
         or to confirm there are no changes. If everything is correct, this can be
-        confirmed by SMS or phone instead, using the details on the form.
+        confirmed by SMS or phone instead, using the details on the form. 
+        <br>
         <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
       </p>
       <p>
@@ -131,6 +132,7 @@ const ccaCCBorCanvassForms = new ContentEaR(
       or by returning the completed form in the reply envelope. If there are changes
       or to confirm there are no changes. If everything is correct, this can be
       confirmed by SMS or phone instead, using the details on the form.
+      <br>
       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
     </p>
     <p>
@@ -198,7 +200,7 @@ const ccaCCBForms = new ContentEaR(
       if there are changes or to confirm there are no changes. If everything is
       correct, this can be confirmed by SMS or phone instead, using the details on
       the form. They can contact Electoral Services directly if they cannot go
-      online.
+      online.<br>
       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
     </p>
     <p>
@@ -1128,6 +1130,7 @@ const requestproxyVote = new ContentEaR(
       your Polling Station. This can be done online at
       <a href="https://www.gov.uk/apply-proxy-vote" target="_blank">www.gov.uk/apply-proxy-vote</a> 
       or using a paper form.
+      <br>
       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20a%20proxy%20vote'"> Send Link </button>
     </p>
     <p>
@@ -1600,7 +1603,7 @@ const includeSomeoneElseontheRegisterForm = new ContentEaR(
       vote, they must register. They can do so by visiting
       <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>, 
       or we can send them a paper registration form if they do not have internet
-      access.
+      access. <br>
       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
   `,
@@ -1683,7 +1686,7 @@ const informationInDifferentFormats = new ContentEaR(
       <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>, 
       which works with assistive technologies such as screen readers, or we can
       send you an application in your preferred format where available. For
-      additional information, please call: <a href="tel:0114 2734093">0114 2734093</a>.
+      additional information, please call: <a href="tel:0114 2734093">0114 2734093</a>. <br>
       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
   `,
@@ -1760,7 +1763,7 @@ const lostMyInvitationToRegister = new ContentEaR(
     <p>
       If you have lost your form, you can apply to register online at
       <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>, 
-      or we can send a replacement form.
+      or we can send a replacement form. <br>
       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
   `,
@@ -1849,8 +1852,8 @@ const optOutofTheOpenRegister = new ContentEaR(
       affect your right to vote or your credit score. If you do not have access to
       the internet, a request can be sent through to Electoral Services for them to
       remove you from the Register. You can change your opt-out preference at any
-      time by visiting
-      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>. <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
+      time by visiting: 
+      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>.<br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -1894,7 +1897,7 @@ const registerToVote = new ContentEaR(
       Insurance Number and date of birth, which ensures the process is more secure.
       To register or change your details, please visit:
       <a href="https://www.gov.uk/register-to-vote" target="_blank">https://www.gov.uk/register-to-vote</a>
-      or we can send you a paper form in the post.
+      or we can send you a paper form in the post.<br>
        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
   `,
@@ -2193,7 +2196,9 @@ const electionResults = new ContentEaR(
       </p>
     </section>
     <p>
-      You can find the previous election results via: <a href="https://www.sheffield.gov.uk/your-city-council/election-results" target="_blank">https://www.sheffield.gov.uk/your-city-council/election-results</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Election%20Results'"> Send Link </button>
+      You can find the previous election results via: <a href="https://www.sheffield.gov.uk/your-city-council/election-results" target="_blank">https://www.sheffield.gov.uk/your-city-council/election-results</a>
+      <br>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Election%20Results'"> Send Link </button>
     </p>
   `,
   { buttonLabel: "", formName: "" },

@@ -381,6 +381,9 @@ const reRegisterABirth = new ContentBDMaC(
     "Make an appointment to re-register a birth.",
     `
   <p> Takes to <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-birth">https://www.sheffield.gov.uk/births-deaths-marriages/register-birth </a></p>
+  <br> 
+  <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20or%20reregister%20a%20birth'"> Send Link </button>
+    
     `,
     { buttonLabel: "", formName: "" },
     { typeKey: "register_office_information_requested" },
