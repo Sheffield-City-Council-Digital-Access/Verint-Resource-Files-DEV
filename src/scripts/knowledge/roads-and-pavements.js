@@ -579,7 +579,7 @@ const reportStreetSignBollard = new FormRaP(
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
-const reportTree = new FormRaP(
+const reportTree = new ContentRaP(
   "reportTree",
   "Trees and tree grills",
   "Report problems such as fallen, leaning, diseased, dead trees, or damaged tree grills",
