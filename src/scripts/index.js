@@ -2671,8 +2671,12 @@ function getAndSetReviewPageData() {
               return parentElement.find(`.${classSelector} legend`).text();
             }
           }
-          console.log(fieldType);
-          if (fieldType === "radio") {
+          if (fieldType === "select") {
+            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+            fieldValue =
+              KDF.kdf()?.form?.data?.[fieldName] ?? KDF.getVal(fieldName);
+            console.log(fieldType, fieldLabel, fieldValue);
+          } else if (fieldType === "radio") {
             fieldLabel = getLegendText("radiogroup");
             fieldValue = KDF.getVal(fieldName);
           } else if (fieldType === "multicheckbox") {
