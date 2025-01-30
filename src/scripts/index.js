@@ -2671,7 +2671,7 @@ function getAndSetReviewPageData() {
               return parentElement.find(`.${classSelector} legend`).text();
             }
           }
-
+          console.log(fieldType);
           if (fieldType === "radio") {
             fieldLabel = getLegendText("radiogroup");
             fieldValue = KDF.getVal(fieldName);
