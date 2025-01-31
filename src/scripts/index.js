@@ -2563,6 +2563,7 @@ function getAndSetReviewPageData() {
     formPages.each(function (i) {
       // Get the page number of the current form page
       const pageNumber = $(this).attr("data-pos");
+      const relevantPages = KDF.getVal("txt_pages").split(",");
 
       // Check if the page is relevant and should be added to the review page
       if (relevantPages.indexOf(pageNumber) > -1) {
