@@ -2554,6 +2554,7 @@ function getAndSetReviewPageData() {
 
   // Check if the review page is currently visible
   let reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
+  console.log(reviewPageIsVisible);
 
   // Reverse the user's path to look back at the visited pages
   const formUserPathReversed = [...formUserPath].reverse();
@@ -2578,6 +2579,7 @@ function getAndSetReviewPageData() {
     // use stored page array when complete
     relevantPages = KDF.getVal("txt_pages").split(",");
     reviewPageIsVisible = KDF.getVal("txt_pages").split(",").length;
+    console.log(reviewPageIsVisible);
   } else {
     if (
       KDF.kdf().form.name.startsWith("cm_") ||
