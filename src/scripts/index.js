@@ -2577,7 +2577,6 @@ function getAndSetReviewPageData() {
   if (KDF.kdf().form.complete === "Y") {
     // use stored page array when complete
     relevantPages = KDF.getVal("txt_pages").split(",");
-    console.log(reviewPageIsVisible);
   } else {
     if (
       KDF.kdf().form.name.startsWith("cm_") ||
@@ -2610,10 +2609,10 @@ function getAndSetReviewPageData() {
     let formPages = $('.dform_page[data-active="true"]').not(
       "#dform_page_page_review"
     );
+    // Picking up all pages encase form rules rehide them on reload
     if (KDF.kdf().form.complete === "Y") {
       formPages = $(".dform_page").not("#dform_page_page_review");
     }
-    console.log(formPages);
 
     formPages.each(function (i) {
       // Get the page number of the current form page
