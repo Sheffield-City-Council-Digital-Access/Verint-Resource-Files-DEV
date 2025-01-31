@@ -2546,10 +2546,8 @@ function getValueFromAlias(pageId, alias) {
 function getAndSetReviewPageData() {
   // Find the currently active form page
   const activeFormPage = $('.dform_page[data-active="true"]:visible');
-  console.log(activeFormPage, $('.dform_page[data-active="true"]'));
   // Get the page number of the current form page
   const thisPageNumber = activeFormPage.attr("data-pos");
-  console.log("thisPageNumber", thisPageNumber);
 
   // Add the current page number to the user's history
   formUserPath.push(thisPageNumber);
@@ -2609,9 +2607,13 @@ function getAndSetReviewPageData() {
     $("#review-page-content-container").html("");
 
     // Find all form pages except the review page
-    const formPages = $('.dform_page[data-active="true"]').not(
+    let formPages = $('.dform_page[data-active="true"]').not(
       "#dform_page_page_review"
     );
+    if (KDF.kdf().form.complete === "Y") {
+      formPages = $(".dform_page").not("#dform_page_page_review");
+    }
+    console.log(formPages);
 
     formPages.each(function (i) {
       // Get the page number of the current form page
