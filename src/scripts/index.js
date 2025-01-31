@@ -2709,16 +2709,8 @@ function getAndSetReviewPageData() {
               fieldLabel = "Address";
               fieldValue = getValueFromAlias(pageId, "fullAddress");
             } else if (
-              // fieldClass.indexOf("property") !== -1 ||
-              // fieldClass.indexOf("street-name") !== -1 ||
-              // fieldClass.indexOf("city") !== -1 ||
-              // fieldClass.indexOf("postcode") !== -1
               /\b(property|street-name|city|postcode)\b/.test(fieldClass)
             ) {
-              console.log(
-                $(`#dform_widget_label_${fieldName}`).text(),
-                fieldClass
-              );
               fieldLabel = false;
               fieldValue = "";
             } else {
@@ -2730,7 +2722,11 @@ function getAndSetReviewPageData() {
           // Check if the field has a label
           if (fieldLabel) {
             // Set a default value for optional fields that are visible but not answered
-            if (fieldValue === "") {
+            if (
+              fieldValue === "" ||
+              fieldValue === null ||
+              fieldValue === undefined
+            ) {
               if (fieldType === "file") {
                 fieldValue = "Not uploaded";
               } else {
