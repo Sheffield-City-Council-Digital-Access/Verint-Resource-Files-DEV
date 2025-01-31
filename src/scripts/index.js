@@ -2619,6 +2619,8 @@ function getAndSetReviewPageData() {
         // Extract the page name from the element's ID
         const pageId = $(formPages[i]).attr("id");
         const pageName = pageId.split("dform_page_")[1];
+        console.log(pageName);
+        KDF.showPage(pageName);
         const contentDivId = "review-page-content--" + pageName;
 
         // Create a container for the review page content
