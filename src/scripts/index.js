@@ -2577,7 +2577,7 @@ function getAndSetReviewPageData() {
   if (KDF.kdf().form.complete === "Y") {
     // use stored page array when complete
     relevantPages = KDF.getVal("txt_pages").split(",");
-    reviewPageIsVisible = KDF.getVal("txt_pages").split(",").length();
+    reviewPageIsVisible = KDF.getVal("txt_pages").split(",").length;
   } else {
     if (
       KDF.kdf().form.name.startsWith("cm_") ||
