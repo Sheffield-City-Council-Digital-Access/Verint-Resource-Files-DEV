@@ -2552,34 +2552,8 @@ function getAndSetReviewPageData() {
   // Add the current page number to the user's history
   formUserPath.push(thisPageNumber);
 
-  // ---
-
-  if (KDF.kdf().form.complete === "Y") {
-    // Find all form pages except the review page
-    const formPages = $('.dform_page[data-active="true"]').not(
-      "#dform_page_page_review"
-    );
-
-    formPages.each(function (i) {
-      // Get the page number of the current form page
-      const pageNumber = $(this).attr("data-pos");
-      const relevantPages = KDF.getVal("txt_pages").split(",");
-
-      // Check if the page is relevant and should be added to the review page
-      if (relevantPages.indexOf(pageNumber) > -1) {
-        // Extract the page name from the element's ID
-        const pageId = $(formPages[i]).attr("id");
-        const pageName = pageId.split("dform_page_")[1];
-        console.log(pageName);
-        KDF.showPage(pageName);
-      }
-    });
-  }
-
-  // ---
-
   // Check if the review page is currently visible
-  const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
+  let reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
 
   // Reverse the user's path to look back at the visited pages
   const formUserPathReversed = [...formUserPath].reverse();
@@ -2603,6 +2577,7 @@ function getAndSetReviewPageData() {
   if (KDF.kdf().form.complete === "Y") {
     // use stored page array when complete
     relevantPages = KDF.getVal("txt_pages").split(",");
+    reviewPageIsVisible = KDF.getVal("txt_pages").split(",").length();
   } else {
     if (
       KDF.kdf().form.name.startsWith("cm_") ||
