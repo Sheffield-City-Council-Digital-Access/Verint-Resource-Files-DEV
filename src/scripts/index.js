@@ -2552,6 +2552,31 @@ function getAndSetReviewPageData() {
   // Add the current page number to the user's history
   formUserPath.push(thisPageNumber);
 
+  // ---
+
+  if (KDF.kdf().form.complete === "Y") {
+    // Find all form pages except the review page
+    const formPages = $('.dform_page[data-active="true"]').not(
+      "#dform_page_page_review"
+    );
+
+    formPages.each(function (i) {
+      // Get the page number of the current form page
+      const pageNumber = $(this).attr("data-pos");
+
+      // Check if the page is relevant and should be added to the review page
+      if (relevantPages.indexOf(pageNumber) > -1) {
+        // Extract the page name from the element's ID
+        const pageId = $(formPages[i]).attr("id");
+        const pageName = pageId.split("dform_page_")[1];
+        console.log(pageName);
+        KDF.showPage(pageName);
+      }
+    });
+  }
+
+  // ---
+
   // Check if the review page is currently visible
   const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
 
@@ -2621,7 +2646,7 @@ function getAndSetReviewPageData() {
         const pageName = pageId.split("dform_page_")[1];
         console.log(pageName);
         KDF.showPage(pageName);
-        const contentDivId = "review-page-content--" + pageName;
+        const contentDivId = `review-page-content--${pageName}`;
 
         // Create a container for the review page content
         $("#review-page-content-container").append(
