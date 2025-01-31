@@ -2546,15 +2546,16 @@ function getValueFromAlias(pageId, alias) {
 function getAndSetReviewPageData() {
   // Find the currently active form page
   const activeFormPage = $('.dform_page[data-active="true"]:visible');
+  console.log(activeFormPage, $('.dform_page[data-active="true"]'));
   // Get the page number of the current form page
   const thisPageNumber = activeFormPage.attr("data-pos");
+  console.log("thisPageNumber", thisPageNumber);
 
   // Add the current page number to the user's history
   formUserPath.push(thisPageNumber);
 
   // Check if the review page is currently visible
-  let reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
-  console.log(reviewPageIsVisible);
+  const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
 
   // Reverse the user's path to look back at the visited pages
   const formUserPathReversed = [...formUserPath].reverse();
@@ -2578,7 +2579,6 @@ function getAndSetReviewPageData() {
   if (KDF.kdf().form.complete === "Y") {
     // use stored page array when complete
     relevantPages = KDF.getVal("txt_pages").split(",");
-    reviewPageIsVisible = KDF.getVal("txt_pages").split(",").length;
     console.log(reviewPageIsVisible);
   } else {
     if (
