@@ -54,13 +54,13 @@ class FormP extends CoreP {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-  //#region Cross regional tiles
+//#region Cross regional tiles
 
-  const makingAPayment = new ContentP(
-    "makingAPayment",
-    "Making A Payment",
-    "Learn how to make a secure payment for parking tickets online, by phone, or at pay point outlets, including the necessary details for processing your payment.",
-    `
+const makingAPayment = new ContentP(
+  "makingAPayment",
+  "Making A Payment",
+  "Learn how to make a secure payment for parking tickets online, by phone, or at pay point outlets, including the necessary details for processing your payment.",
+  `
       <p>
         It is quick, safe, and secure to make a payment online or using our automated
         telephone payment line. To do this, you will need:
@@ -106,102 +106,101 @@ class FormP extends CoreP {
 
     </p>
     `,
-    { buttonLabel: "Parking Permit", formName: "" },
-    { typeKey: "parking_permit_information_provided" },
-    { typeKey: "parking_permit_transferred_to_service" },
-    {
-      type: "Information",
-      keywords: [
-        "parking permit",
-        "parking pass",
-        "parking permitt",
-        "parking permt",
-        "parking pemit",
-        "parkin permit",
-        "parking permitt",
-        "parknig",
-        "parkingg",
-        "paking",
-        "parrking",
-        "parkng",
-        "permt",
-        "permmit",
-        "permitt",
-        "pemit",
-        "premit",
-        "TEC",
-        "Fine",
-        "Taxi PCN",
-        "Bailiff"
-      ],
-      categories: ["Parking"],
-    },
-    { date: "06/12/2024", name: "Nathan Smith" }
-  );
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "06/12/2024", name: "Nathan Smith" }
+);
 
-  const customerPaidTwice = new ContentP(
-    "customerPaidTwice",
-    "Customer Has Paid Twice",
-    "Report a double payment issue by emailing Customer Services with the details of the problem for investigation",
-    `
+const customerPaidTwice = new ContentP(
+  "customerPaidTwice",
+  "Customer Has Paid Twice",
+  "Report a double payment issue by emailing Customer Services with the details of the problem for investigation",
+  `
       <p>
         The customer needs to email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> advising 
         the issue they experienced, customer services will then look into the issue
       </p>
     `,
-    { buttonLabel: "Parking Permit", formName: "" },
-    { typeKey: "parking_permit_information_provided" },
-    { typeKey: "parking_permit_transferred_to_service" },
-    {
-      type: "Information",
-      keywords: [
-        "parking permit",
-        "parking pass",
-        "parking permitt",
-        "parking permt",
-        "parking pemit",
-        "parkin permit",
-        "parking permitt",
-        "parknig",
-        "parkingg",
-        "paking",
-        "parrking",
-        "parkng",
-        "permt",
-        "permmit",
-        "permitt",
-        "pemit",
-        "premit",
-      ],
-      categories: ["Parking"],
-    },
-    { date: "27/11/2024", name: "Andy Walker" }
-  );
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "parking_permit_transferred_to_service" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "27/11/2024", name: "Andy Walker" }
+);
 
 //#endregion Cross regional tiles
 
-
 //#region Blue Badge
 
-  const appealBlueBadge = new ContentP(
-    "apealBlueBadge",
-    "Appeal a Blue Badge Decision",
-    "",
-    `
+const appealBlueBadge = new ContentP(
+  "apealBlueBadge",
+  "Appeal a Blue Badge Decision",
+  "",
+  `
       
     `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "blue_badge_information_provided" },
-    { typeKey: "blue_badge_tarnsferred_to_service" },
-    { type: "Appeal", keywords: [], categories: ["Parking"] },
-    { date: "01/10/2024", name: "Shahzad Athar" }
-  );
+  { buttonLabel: "", formName: "" },
+  { typeKey: "blue_badge_information_provided" },
+  { typeKey: "blue_badge_tarnsferred_to_service" },
+  { type: "Appeal", keywords: [], categories: ["Parking"] },
+  { date: "01/10/2024", name: "Shahzad Athar" }
+);
 
-  const applyBlueBadge = new ContentP(
-    "applyBlueBadge",
-    "Apply for a Blue Badge",
-    "Learn about the eligibility criteria and application process for a Blue Badge, including automatic qualification and discretionary assessments.",
-    `
+const applyBlueBadge = new ContentP(
+  "applyBlueBadge",
+  "Apply for a Blue Badge",
+  "Learn about the eligibility criteria and application process for a Blue Badge, including automatic qualification and discretionary assessments.",
+  `
       <h3>Eligibility</h3>
       <p>
         If the condition that the customer has a diagnosis for is not permanent and
@@ -272,18 +271,21 @@ class FormP extends CoreP {
     </div>
   </details>
     `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "blue_badge_information_provided" },
-    { typeKey: "blue_badge_tarnsferred_to_service" },
-    { type: "Request", keywords: [], categories: ["Parking"] },
-    { date: "12/11/2024", name: "Andy Walker" }
-  );
+  {
+    buttonLabel: "Apply for a blue badge",
+    formName: "blue_badge_application",
+  },
+  { typeKey: "blue_badge_information_provided" },
+  { typeKey: "blue_badge_tarnsferred_to_service" },
+  { type: "Request", keywords: [], categories: ["Parking"] },
+  { date: "12/11/2024", name: "Andy Walker" }
+);
 
-  const blueBadgeHolderPassedAway = new ContentP(
-    "blueBadgeHolderPassedAway",
-    "Badge Holder Passed Away",
-    "Learn how to report the passing of a Blue Badge holder and return the badge to Sheffield City Council.",
-    `
+const blueBadgeHolderPassedAway = new ContentP(
+  "blueBadgeHolderPassedAway",
+  "Badge Holder Passed Away",
+  "Learn how to report the passing of a Blue Badge holder and return the badge to Sheffield City Council.",
+  `
       <p>
         If the customer has an appointment with Registrars in Sheffield to report the
         death, they can sign up to <strong>Tell Us Once</strong> meaning the customer
@@ -300,18 +302,18 @@ class FormP extends CoreP {
         S1 2SH
       </address>
     `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "blue_badge_information_provided" },
-    { typeKey: "blue_badge_tarnsferred_to_service" },
-    { type: "Request", keywords: [], categories: ["Parking"] },
-    { date: "01/10/2024", name: "Shahzad Athar" }
-  );
+  { buttonLabel: "", formName: "" },
+  { typeKey: "blue_badge_information_provided" },
+  { typeKey: "blue_badge_tarnsferred_to_service" },
+  { type: "Request", keywords: [], categories: ["Parking"] },
+  { date: "01/10/2024", name: "Shahzad Athar" }
+);
 
-  const replacementBlueBadge = new ContentP(
-    "lostorStolenBlueBadge",
-    "Request a replacement badge",
-    "Find out how to request a replacement for a misplaced, stolen, or seized Blue Badge, including the process for submitting a form or contacting customer services.",
-    `
+const replacementBlueBadge = new ContentP(
+  "lostorStolenBlueBadge",
+  "Request a replacement badge",
+  "Find out how to request a replacement for a misplaced, stolen, or seized Blue Badge, including the process for submitting a form or contacting customer services.",
+  `
       <h3>Misplaced or stolen badges</h3>
       <p>
         If a badge is lost or stolen we now require a form to be completed with a signature. 
@@ -345,24 +347,24 @@ class FormP extends CoreP {
       </p>
     `,
 
-    { buttonLabel: "", formName: "" },
-    { typeKey: "blue_badge_information_provided" },
-    { typeKey: "blue_badge_tarnsferred_to_service" },
-    { type: "Request", keywords: [], categories: ["Parking"] },
-    { date: "12/11/2024", name: "Andy Walker" }
-  );
+  { buttonLabel: "", formName: "" },
+  { typeKey: "blue_badge_information_provided" },
+  { typeKey: "blue_badge_tarnsferred_to_service" },
+  { type: "Request", keywords: [], categories: ["Parking"] },
+  { date: "12/11/2024", name: "Andy Walker" }
+);
 
-  const blueBadge = new MenuP(
-    "blueBadge",
-    "Blue Badge",
-    "Information on applying for a Blue Badge, including eligibility criteria, replacement requests, and procedures for reporting the passing of a Blue Badge holder or appealing decisions.",
-    [
-      applyBlueBadge,
-      replacementBlueBadge,
-      blueBadgeHolderPassedAway,
-      appealBlueBadge,
-    ]
-  );
+const blueBadge = new MenuP(
+  "blueBadge",
+  "Blue Badge",
+  "Information on applying for a Blue Badge, including eligibility criteria, replacement requests, and procedures for reporting the passing of a Blue Badge holder or appealing decisions.",
+  [
+    applyBlueBadge,
+    replacementBlueBadge,
+    blueBadgeHolderPassedAway,
+    appealBlueBadge,
+  ]
+);
 
 //#endregion Blue Badge
 
@@ -1803,7 +1805,7 @@ const confirmationOfPayment = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -1859,7 +1861,7 @@ const customerTriedToPayOnline = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -1917,7 +1919,7 @@ const customerUnableToPay = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -1979,7 +1981,7 @@ const enforcementbaliffenquiries = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -2037,7 +2039,7 @@ const howCanIAppeal = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -2088,7 +2090,7 @@ const howLongDoIHaveToAppeal = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -2144,7 +2146,7 @@ const multiplepcns = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -2164,13 +2166,11 @@ const penaltyChargeNoticePcn = new MenuP(
     howCanIAppeal,
     howLongDoIHaveToAppeal,
     makingAPayment,
-    multiplepcns
+    multiplepcns,
   ]
 );
 
 //#endregion Penalty Charge Notice (PCN)
-
-
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 
