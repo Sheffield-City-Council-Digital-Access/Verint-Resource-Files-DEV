@@ -1649,18 +1649,20 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     }
 
     if (kdf.access === "agent") {
-      KDF.customdata(
-        "retrieve-council-housing-property-details",
-        "_KDF_custom",
-        true,
-        true,
-        {
-          propertId: KDF.getVal("txt_uprn_about_you"),
-          buildingNumber: KDF.getVal("txt_property_about_you"),
-          subBuildingNumber: KDF.getVal(""),
-          postcode: KDF.getVal("txt_postcode_about_you"),
-        }
-      );
+      setTimeout(() => {
+        KDF.customdata(
+          "retrieve-council-housing-property-details",
+          "_KDF_custom",
+          true,
+          true,
+          {
+            propertId: KDF.getVal("txt_uprn_about_you"),
+            buildingNumber: KDF.getVal("txt_property_about_you"),
+            subBuildingNumber: KDF.getVal(""),
+            postcode: KDF.getVal("txt_postcode_about_you"),
+          }
+        );
+      }, 500);
     }
   }
 
