@@ -1496,10 +1496,20 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       fullAddress,
       propertyId,
       uprn,
+      easting,
+      northing,
       streetId,
       usrn,
       status,
       message,
+      ohmsUprn,
+      propertyClass,
+      managementCode,
+      area,
+      ward,
+      officer,
+      areaContact,
+      officerContact,
     } = response.data;
     if (status == 400 && action === "retrieve-location-from-coordinates") {
       const $button = $(".geo-btn");
@@ -1535,6 +1545,18 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       { alias: "usrn", value: usrn },
       { alias: "siteName", value: streetName },
       { alias: "siteCode", value: usrn },
+      { alias: "propertyId", value: propertyId },
+      { alias: "streetId", value: streetId },
+      { alias: "easting", value: easting },
+      { alias: "northing", value: northing },
+      { alias: "ohmsUprn", value: ohmsUprn },
+      { alias: "propertyClass", value: propertyClass },
+      { alias: "managementCode", value: managementCode },
+      { alias: "area", value: area },
+      { alias: "ward", value: ward },
+      { alias: "officer", value: officer },
+      { alias: "areaContact", value: areaContact },
+      { alias: "officerContact", value: officerContact },
     ]);
     setSelectedAddress(fullAddress, "show");
   }
@@ -1624,6 +1646,21 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
         { name: "area_address_details_about_you", display: "hide" },
         { name: "but_view_rent_account", display: ohmsId ? "show" : "hide" },
       ]);
+    }
+
+    if (kdf.access === "agent") {
+      KDF.customdata(
+        "retrieve-council-housing-property-details",
+        "_KDF_custom",
+        true,
+        true,
+        {
+          propertId: KDF.getVal("txt_uprn_about_you"),
+          buildingNumber: KDF.getVal("txt_property_about_you"),
+          subBuildingNumber: KDF.getVal(""),
+          postcode: KDF.getVal("txt_postcode_about_you"),
+        }
+      );
     }
   }
 
