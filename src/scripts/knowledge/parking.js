@@ -95,7 +95,7 @@ const makingAPayment = new ContentP(
       <br>
       For further information, visit 
       <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
-<br>
+      <br>
       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
       <br>
       <br>
@@ -188,17 +188,17 @@ const appealBlueBadge = new ContentP(
   "",
   `
       
-    `,
+  `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_information_provided" },
   { typeKey: "blue_badge_tarnsferred_to_service" },
+  { typeKey: "blue_badge_information_provided" },
   { type: "Appeal", keywords: [], categories: ["Parking"] },
   { date: "01/10/2024", name: "Shahzad Athar" }
 );
 
 const applyBlueBadge = new ContentP(
   "applyBlueBadge",
-  "Apply for a Blue Badge",
+  "Blue Badge",
   "Learn about the eligibility criteria and application process for a Blue Badge, including automatic qualification and discretionary assessments.",
   `
       <h3>Eligibility</h3>
@@ -270,14 +270,14 @@ const applyBlueBadge = new ContentP(
           </p>
     </div>
   </details>
-    `,
+  `,
   {
     buttonLabel: "Apply for a blue badge",
     formName: "blue_badge_application",
   },
-  { typeKey: "blue_badge_information_provided" },
   { typeKey: "blue_badge_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Parking"] },
+  { typeKey: "blue_badge_information_provided" },
+  { type: "Apply", keywords: ["Blue Badge"], categories: ["Parking"] },
   { date: "12/11/2024", name: "Andy Walker" }
 );
 
@@ -286,26 +286,26 @@ const blueBadgeHolderPassedAway = new ContentP(
   "Badge Holder Passed Away",
   "Learn how to report the passing of a Blue Badge holder and return the badge to Sheffield City Council.",
   `
-      <p>
-        If the customer has an appointment with Registrars in Sheffield to report the
-        death, they can sign up to <strong>Tell Us Once</strong> meaning the customer
-        does not have to report it to each individual service. Alternatively the
-        details can be taken today and passed to our back office team who will update
-        our records, the badge should be returned to:
-      </p>
-      <address>
-        Customer Services<br />
-        Floor 2<br />
-        Howden House<br />
-        1 Union Street<br />
-        Sheffield<br />
-        S1 2SH
-      </address>
-    `,
+    <p>
+      If the customer has an appointment with Registrars in Sheffield to report the
+      death, they can sign up to <strong>Tell Us Once</strong> meaning the customer
+      does not have to report it to each individual service. Alternatively the
+      details can be taken today and passed to our back office team who will update
+      our records, the badge should be returned to:
+    </p>
+    <address>
+      Customer Services<br />
+      Floor 2<br />
+      Howden House<br />
+      1 Union Street<br />
+      Sheffield<br />
+      S1 2SH
+    </address>
+  `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_information_provided" },
   { typeKey: "blue_badge_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Parking"] },
+  { typeKey: "blue_badge_information_provided" },
+  { type: "Request", keywords: ["Blue Badge"], categories: ["Parking"] },
   { date: "01/10/2024", name: "Shahzad Athar" }
 );
 
@@ -348,9 +348,9 @@ const replacementBlueBadge = new ContentP(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_information_provided" },
   { typeKey: "blue_badge_tarnsferred_to_service" },
-  { type: "Request", keywords: [], categories: ["Parking"] },
+  { typeKey: "blue_badge_information_provided" },
+  { type: "Request", keywords: ["Blue Badge"], categories: ["Parking"] },
   { date: "12/11/2024", name: "Andy Walker" }
 );
 
@@ -424,8 +424,8 @@ const baySuspensions = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -519,8 +519,8 @@ const illegalParking = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -575,8 +575,8 @@ const vehicleObstruction = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -609,8 +609,8 @@ const vehicleParkedInASuspendedBay = new ContentP(
   "Learn who to report vehicles parked in a suspended bay to.",
   `<p>Should be reported to Parking Enforcement</p>`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -681,8 +681,8 @@ const yellowLineDispensations = new ContentP(
     </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -823,8 +823,8 @@ const businessPermit = new ContentP(
 
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -899,8 +899,8 @@ const carerPermitAndMedical = new ContentP(
       </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1018,8 +1018,8 @@ const greenParkingPermit = new ContentP(
       </p>
  	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1115,8 +1115,8 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1205,8 +1205,8 @@ const medicalProfessionalCarer = new ContentP(
     </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1298,8 +1298,8 @@ const organisationCarer = new ContentP(
       </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1405,8 +1405,8 @@ const residentsPermit = new ContentP(
       </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1452,8 +1452,8 @@ const staffPermit = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1544,8 +1544,8 @@ const tradePermit = new ContentP(
     </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1601,8 +1601,8 @@ const utilityPermit = new ContentP(
       </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Apply",
     keywords: [
@@ -1701,8 +1701,8 @@ const visitorsPermits = new ContentP(
       </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1780,8 +1780,8 @@ const confirmationOfPayment = new ContentP(
 		</p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1836,8 +1836,8 @@ const customerTriedToPayOnline = new ContentP(
 		</p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1894,8 +1894,8 @@ const customerUnableToPay = new ContentP(
 		</p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1956,8 +1956,8 @@ const enforcementbaliffenquiries = new ContentP(
     </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2014,8 +2014,8 @@ const howCanIAppeal = new ContentP(
     </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2065,8 +2065,8 @@ const howLongDoIHaveToAppeal = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2121,8 +2121,8 @@ const multiplepcns = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2182,8 +2182,8 @@ const haveYouReceivedMyAppeal = new ContentP(
 	  <p>This can be found by checking Gateway.</p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
