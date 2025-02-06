@@ -543,7 +543,7 @@ function handleOnReadyEvent(event, kdf) {
     root.style.setProperty("--color-primary", "#007aff");
 
     $("form.dform").css({
-      margin: "0 auto",
+      margin: "1.7rem auto 0",
       "min-height": "88vh",
     });
 
