@@ -2623,7 +2623,11 @@ function getAndSetReviewPageData() {
     ) {
       // use stored page array when case management
       relevantPages = KDF.getVal("txt_pages").split(",");
-    } else if (KDF.kdf().form.ref && KDF.getVal("txt_resume_form") === "true") {
+    } else if (
+      KDF.kdf().form.ref &&
+      (KDF.getVal("txt_resume_form") === "true" ||
+        KDF.getVal("txt_resume_form") === "false")
+    ) {
       // use stored page array when resumed
       relevantPages = KDF.getVal("txt_pages").split(",");
       if (reviewPageIsVisible) {
