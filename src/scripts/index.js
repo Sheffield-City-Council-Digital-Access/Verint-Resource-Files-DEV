@@ -2631,16 +2631,9 @@ function getAndSetReviewPageData() {
         KDF.setVal("txt_resume_form", "false"); // to prevent coming back down the resume path and construct page array
       }
     } else {
-      if (
-        KDF.kdf().form.ref &&
-        KDF.kdf().form.name === "blue_badge_application"
-      ) {
-        buildPageRoute();
-      } else {
-        // construct page array
-        relevantPages = [...relevantPagesReversed].reverse();
-        KDF.setVal("txt_pages", relevantPages.join(","));
-      }
+      // construct page array
+      relevantPages = [...relevantPagesReversed].reverse();
+      KDF.setVal("txt_pages", relevantPages.join(","));
     }
   }
 
