@@ -1122,12 +1122,14 @@ function handleOnReadyEvent(event, kdf) {
   // --- OHMS -------------------------------------------------------------- \\
 
   if (kdf.params.customerid) {
+    console.log("--- call retrieve-social-ids ---");
     KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
       customerid: kdf.params.customerid,
     });
   }
 
   $("#dform_widget_button_but_view_rent_account").on("click", function () {
+    console.log("--- create modal hubScreenRentSummary ---");
     const customerid =
       kdf.params.customerid ?? KDF.getVal("num_reporter_obj_id");
     if (customerid) {
@@ -4192,7 +4194,7 @@ function updateWidgetText(name, label, helpMessage, validation) {
   }
 }
 
-// --- UPDATE LABEL TEXT ---------------------------------------------------- \\
+// --- UPDATE LABEL TEXT ---------------------------------------------------- \\update labe
 
 function updateMultipleLabels(fields) {
   fields.map((field) => {
