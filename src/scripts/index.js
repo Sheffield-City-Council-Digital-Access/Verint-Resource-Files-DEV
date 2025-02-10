@@ -1122,14 +1122,12 @@ function handleOnReadyEvent(event, kdf) {
   // --- OHMS -------------------------------------------------------------- \\
 
   if (kdf.params.customerid) {
-    console.log("--- call retrieve-social-ids ---");
     KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
       customerid: kdf.params.customerid,
     });
   }
 
   $("#dform_widget_button_but_view_rent_account").on("click", function () {
-    console.log("--- create modal hubScreenRentSummary ---");
     const customerid =
       kdf.params.customerid ?? KDF.getVal("num_reporter_obj_id");
     if (customerid) {
@@ -1659,8 +1657,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
           true,
           {
             propertId: KDF.getVal("txt_uprn_about_you"),
-            buildingNumber: KDF.getVal("txt_property_about_you"),
-            subBuildingNumber: KDF.getVal(""),
+            property: KDF.getVal("txt_property_about_you"),
             postcode: KDF.getVal("txt_postcode_about_you"),
           }
         );
