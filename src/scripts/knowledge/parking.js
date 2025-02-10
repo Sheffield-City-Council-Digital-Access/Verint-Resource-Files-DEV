@@ -239,9 +239,9 @@ const applyBlueBadge = new ContentP(
       <p>
         These applications will be fast tracked and would not be held up awaiting
         payment or other evidence. When applying online these applications via
-        <a href="https://www.gov.uk" target="_blank">https://www.gov.uk</a> are
+        <a href="https://www.gov.uk/apply-blue-badge" target="_blank">https://www.gov.uk/apply-blue-badge</a> are
         processed the same working day.
-        <button type="button" class="dform_widget link-btn email-icon dform_widget_type_button"
+        <button type="button" class="dform_widget email-btn dform_widget_type_button"
           aria-label="Send quick link to South Yorkshire Badger Group"
           onclick="window.location.href='"
             ${window.location.protocol}//${
@@ -253,10 +253,10 @@ const applyBlueBadge = new ContentP(
                 : ""
             }
             interactionid=${KDF.getParams().interactionid}&
-            sel_service=South%20Yorkshire%20Badger%20Group
+            sel_service=Gov%20UK
           '"
         >
-          Send Link
+          Send link to apply online
         </button>
       </p>
       <h3>Discretionary</h3>
