@@ -241,7 +241,7 @@ const applyBlueBadge = new ContentP(
         payment or other evidence. When applying online these applications via
         <a href="https://www.gov.uk" target="_blank">https://www.gov.uk</a> are
         processed the same working day.
-        <button type="button" class="dform_widget link-btn send-icon dform_widget_type_button"
+        <button type="button" class="dform_widget link-btn email-icon dform_widget_type_button"
           aria-label="Send quick link to South Yorkshire Badger Group"
           onclick="window.location.href='"
             ${window.location.protocol}//${
