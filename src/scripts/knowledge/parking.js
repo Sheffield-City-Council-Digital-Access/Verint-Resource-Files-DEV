@@ -243,19 +243,11 @@ const applyBlueBadge = new ContentP(
         processed the same working day.
         <button type="button" class="dform_widget email-btn dform_widget_type_button"
           aria-label="Send quick link to South Yorkshire Badger Group"
-          onclick="window.location.href='"
-            ${window.location.protocol}//${
-    window.location.hostname
-  }/form/launch/send_link_to_service?
-            ${
-              KDF.getParams().customerid
-                ? `customerid=${KDF.getParams().customerid}&`
-                : ""
-            }
-            interactionid=${KDF.getParams().interactionid}&
-            sel_service=Gov%20UK
-          '"
-        >
+          onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Gov%20UK\`
+          ">
           Send link to apply online
         </button>
       </p>
