@@ -198,7 +198,7 @@ const appealBlueBadge = new ContentP(
 
 const applyBlueBadge = new ContentP(
   "applyBlueBadge",
-  "Blue Badge",
+  "Apply for a Blue Badge",
   "Learn about the eligibility criteria and application process for a Blue Badge, including automatic qualification and discretionary assessments.",
   `
       <h3>Eligibility</h3>
@@ -241,8 +241,23 @@ const applyBlueBadge = new ContentP(
         payment or other evidence. When applying online these applications via
         <a href="https://www.gov.uk" target="_blank">https://www.gov.uk</a> are
         processed the same working day.
-      <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Gov%20UK'"> Send Link </button>
+        <button type="button" class="dform_widget link-btn send-icon dform_widget_type_button"
+          aria-label="Send quick link to South Yorkshire Badger Group"
+          onclick="window.location.href='"
+            ${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/send_link_to_service?
+            ${
+              KDF.getParams().customerid
+                ? `customerid=${KDF.getParams().customerid}&`
+                : ""
+            }
+            interactionid=${KDF.getParams().interactionid}&
+            sel_service=South%20Yorkshire%20Badger%20Group
+          '"
+        >
+          Send Link
+        </button>
       </p>
       <h3>Discretionary</h3>
       <p>
