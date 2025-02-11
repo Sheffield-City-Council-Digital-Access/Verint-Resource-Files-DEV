@@ -61,51 +61,70 @@ const makingAPayment = new ContentP(
   "Making A Payment",
   "Learn how to make a secure payment for parking tickets online, by phone, or at pay point outlets, including the necessary details for processing your payment.",
   `
-      <p>
-        It is quick, safe, and secure to make a payment online or using our automated
-        telephone payment line. To do this, you will need:
-      <br>
-      <br>
-      <ul>
-        <li>Ticket reference number (can be found on Gateway)</li>
-        <li>Credit or debit card</li>
-        <li>Your vehicle registration number</li>
-      </ul>
-      <br>
-      <br>
-      The customer must enter ** on their keypad in place of the FD letters 
-      at the start of entering their pcn number
-      <br>
-      <br>
-      Alternatively, you can:
-      <br>
-      <br>
-      <ul>
-        <li>Pay at a pay point outlet by cash</li>
-        <li>Pay at a Post Office by cash, cheque, credit, or debit card</li>
-      </ul>
-      <br>
-      <br>
-      Sheffield City Council does not accept cash, cheque, or postal orders direct.
-      <br>
-      <br>
-      Payments are taken at the same time as the 
-      application is made and the permit is then active immediately.
-      <br>
-      <br>
-      For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">Sheffield Parking</a>.
-      <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
-      <br>
-      <br>
-      How to make a payment, visit
-      <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank">Pay a Penalty Charge Notice</a>.
-      <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Pay%20Penalty%20Charge%20Notice'"> Send Link </button>
-
+    <p>
+      It is quick, safe, and secure to make a payment online or using our automated
+      telephone payment line. To do this, you will need:
     </p>
-    `,
+    <ul>
+      <li>Ticket reference number (can be found on Gateway)</li>
+      <li>Credit or debit card</li>
+      <li>Your vehicle registration number</li>
+    </ul>
+    <p>
+      The customer must enter ** on their keypad in place of the FD letters at the
+      start of entering their pcn number
+    </p>
+    <p>Alternatively, you can:</p>
+    <ul>
+      <li>Pay at a pay point outlet by cash</li>
+      <li>Pay at a Post Office by cash, cheque, credit, or debit card</li>
+    </ul>
+    <p>
+      Sheffield City Council does not accept cash, cheque, or postal orders direct.
+    </p>
+    <p>
+      Payments are taken at the same time as the application is made and the permit
+      is then active immediately.
+    </p>
+    <p>
+      For further information, visit
+      <a href="https://www.sheffield.gov.uk/parking" target="_blank"
+        >Sheffield Parking</a
+      >.
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information payment link"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+            "
+      >
+        Send link to review further information
+      </button>
+    </p>
+    <p>
+      How to make a payment, visit
+      <a
+        href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice"
+        target="_blank"
+        >Pay a Penalty Charge Notice</a
+      >.
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to to pay for a parking fine"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+            "
+      >
+        Send link to to pay a parking fine
+      </button>
+    </p>
+  `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -242,7 +261,7 @@ const applyBlueBadge = new ContentP(
         <a href="https://www.gov.uk/apply-blue-badge" target="_blank">https://www.gov.uk/apply-blue-badge</a> are
         processed the same working day.
         <button type="button" class="dform_widget email-btn dform_widget_type_button"
-          aria-label="Send quick link to South Yorkshire Badger Group"
+          aria-label="Send link to apply for a blue badge"
           onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
               KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''

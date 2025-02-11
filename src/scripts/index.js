@@ -1684,6 +1684,7 @@ function handleFailedAction(event, action, xhr, settings, thrownError) {
   } else {
     if (KDF.kdf().access === "agent") {
       KDF.showError(`${action} failed: ${thrownError}`);
+      window.scrollTo(0, 0);
     }
   }
 
