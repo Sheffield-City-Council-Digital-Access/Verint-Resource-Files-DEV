@@ -2690,7 +2690,6 @@ const applicationChanges = new ContentH(
               Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
               the links from the homepage.<br> 
               <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Property%20Shop'"> Send Link </button>
-
             </p>
             <p>Click ‘Log into my account’.</p>
             <p>
@@ -2828,11 +2827,11 @@ const applicationChanges = new ContentH(
       </div>
     </details>
   `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
   { type: "Apply", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing", "Rehousing"] },
-  { date: "14/10/2024", name: "Omily Parkin" }
+  { date: "12/02/2025", name: "Nathan Smith" }
 );
 
 const applyForRehousing = new ContentH(
@@ -2845,7 +2844,15 @@ const applyForRehousing = new ContentH(
       There are no paper application forms.
     </p>
     <p>Go online and register on <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a><br> 
-    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Property%20Shop'"> Send Link </button>
+    <button type="button" class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to property shop website"
+      onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+      KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`"
+    >
+      Send link to register online
+    </button>
     </p>
     <p>
       Before you can complete an application to join the Housing Register you will
@@ -2862,15 +2869,15 @@ const applyForRehousing = new ContentH(
       First Point before your application will be validated.
     </p>
   `,
-  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "23/09/2024", name: "Shahzad Athar" }
+  { date: "12/02/2025", name: "Nathan Smith" }
 );
 
 const bidding = new ContentH(
@@ -3558,17 +3565,17 @@ const bidding = new ContentH(
      </p> 
     `,
     {
-      buttonLabel: "Report Housing Enquiry ",
+      buttonLabel: "Raise Enquiry ",
       formName: "hou_rehousing_enquiry",
     },
+    { typeKey: "rehousing_services_transferred_to_service" },
     { typeKey: "rehousing_services_information_provided" },
-    { typeKey: "rehousing_services_information_requested" },
     {
       type: "Request",
       keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
       categories: ["Housing"],
     },
-    { date: "07/22/2024", name: "George Whitehouse" }
+    { date: "12/02/2025", name: "Nathan Smith" }
   );
 
 
@@ -3595,17 +3602,17 @@ const bidding = new ContentH(
       </ul>
     `,
     {
-      buttonLabel: "Report Housing Enquiry ",
+      buttonLabel: "Raise Enquiry",
       formName: "hou_rehousing_enquiry",
     },
+    { typeKey: "rehousing_services_transferred_to_service" },
     { typeKey: "rehousing_services_information_provided" },
-    { typeKey: "rehousing_services_information_requested" },
     {
       type: "Request",
       keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
       categories: ["Housing"],
     },
-    { date: "07/22/2024", name: "George Whitehouse" }
+    { date: "12/02/2025", name: "Nathan Smith" }
   );
 
   const rehousing = new MenuH(
@@ -3836,7 +3843,16 @@ const mutualExchanges = new ContentH(
 
       The Mutual Exchange application form can be accessed online at the Property Shop website and <a href="https://www.sheffield.gov.uk/council-housing/mutual-exchanges" target="_blank">https://www.sheffield.gov.uk/council-housing/mutual-exchanges</a>.
       <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Mutual%20exchanges'"> Send Link </button>
+      <button type="button" class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to mutual exchanges page"
+        onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Mutual%20exchanges\`"
+      >
+      Send link to register online
+      </button>
+      
       <br>
       <br>
 
@@ -4054,17 +4070,17 @@ const mutualExchanges = new ContentH(
     </details>
   `,
   {
-    buttonLabel: "Report Housing Enquiry",
+    buttonLabel: "Raise Enquiry",
     formName: "hou_rehousing_enquiry",
   },
+  { typeKey: "rehousing_services_transferred_to_service" },
   { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
     keywords: ["rehousing", "rehousing", "rehousign", "rehozing"],
     categories: ["Housing"],
   },
-  { date: "07/11/2024", name: "George Whitehouse" }
+  { date: "12/02/2025", name: "Nathan Smith" }
 );
 
 const referencesFAQs = new ContentH(
