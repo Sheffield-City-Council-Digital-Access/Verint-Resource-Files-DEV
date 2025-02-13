@@ -789,7 +789,7 @@ const businessPermit = new ContentP(
 		<h3>Cost</h3>
 		<ul>
 			<li>The first permit costs £111.60</li>
-			<li>A second permit costs £223.20/li>
+			<li>A second permit costs £223.20</li>
 		</ul>
 		<h3>Evidence Required - Vehicle Ownership</h3>
 		<p>
