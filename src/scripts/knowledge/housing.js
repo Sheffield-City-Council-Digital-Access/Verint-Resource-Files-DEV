@@ -6897,8 +6897,6 @@ const tenancySustainment = new MenuH(
       housingBenefits, 
       leaseholderInformation, 
       rehousing, 
-      idReferencesMenu, 
-      policy, 
       rents, 
       shelteredAndSupported, 
       tenancyEnforcementASB, 
