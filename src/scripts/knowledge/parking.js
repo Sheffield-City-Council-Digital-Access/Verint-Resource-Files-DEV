@@ -475,7 +475,7 @@ const baySuspensions = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "12/02/2025", name: "Dinah Williams" }
 );
 
 const carParkParkingMeterProblem = new ContentP(
@@ -660,7 +660,7 @@ const vehicleParkedInASuspendedBay = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/10/2024", name: "Dinah WIlliams" }
+  { date: "12/02/2025", name: "Dinah WIlliams" }
 );
 
 const yellowLineDispensations = new ContentP(
@@ -788,8 +788,8 @@ const businessPermit = new ContentP(
 		</p>
 		<h3>Cost</h3>
 		<ul>
-			<li>1st permit £111.80</li>
-			<li>Additional permits £223.20</li>
+			<li>The first permit costs £111.60</li>
+			<li>A second permit costs £223.20/li>
 		</ul>
 		<h3>Evidence Required - Vehicle Ownership</h3>
 		<p>
@@ -874,7 +874,7 @@ const businessPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/12/2024", name: "Andy walker" }
+  { date: "12/02/2025", name: "Dinah Williams" }
 );
 
 const carerPermitAndMedical = new ContentP(
@@ -950,7 +950,7 @@ const carerPermitAndMedical = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/12/2024", name: "Andy walker" }
+  { date: "12/02/2025", name: "Dinah Williams" }
 );
 
 //
@@ -1166,7 +1166,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/12/2024", name: "Andy Walker" }
+  { date: "12/02/2025", name: "Dinah Williams" }
 );
 
 //
@@ -1256,7 +1256,7 @@ const medicalProfessionalCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/12/2024", name: "Andy Walker" }
+  { date: "12/02/2025", name: "Dinah Williams" }
 );
 
 const organisationCarer = new ContentP(
@@ -1349,7 +1349,7 @@ const organisationCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/12/2024", name: "Andy Walker" }
+  { date: "12/02/2025", name: "Dinah Williams" }
 );
 
 const residentsPermit = new ContentP(
@@ -1370,10 +1370,13 @@ const residentsPermit = new ContentP(
 		<p>You must apply for, renew, cancel, or change a residents permit online.</p>
 		<h3>Cost</h3>
 		<ul>
-			<li>City Centre inner zone: £310.00</li>
-			<li>City Centre outer zone: £155.00</li>
-			<li>Other zones - 1st permit: £55.80</li>
-			<li>Other zones - additional permit: £111.60</li>
+			<li>standard first permit £55.80</li>
+      <li>standard second permit £111.60</li>
+      <li>city centre inner residents permit £310.00</li>
+      <li>city centre outer residents permit £155.00</li>
+      <li>Hawley Street Car Park residents permit £55.80</li>
+      <li>Kelham Island and Neepsend Parking Scheme - first permit £111.60</li>
+      <li>Kelham Island and Neepsend Parking Scheme - second permit £223.20</li>
 		</ul>
 		<h3>Evidence Required - Vehicle Ownership</h3>
 		<p>
@@ -1456,7 +1459,7 @@ const residentsPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/12/2024", name: "Andy Walker" }
+  { date: "12/02/2025", name: "Dinah Williams" }
 );
 
 const staffPermit = new ContentP(
@@ -1503,7 +1506,7 @@ const staffPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/12/2024", name: "Dinah WIlliams" }
+  { date: "12/02/2025", name: "Dinah WIlliams" }
 );
 
 const tradePermit = new ContentP(
@@ -1522,7 +1525,7 @@ const tradePermit = new ContentP(
 		</p>
 		<p>There is no limit to the number of trade permits you can buy.</p>
 		<h3>Cost</h3>
-		<p>Batch of 25 daily permits: £96.85</p>
+		<p>Trade permits costs £96.85 for a batch of 25 daily permits. They cannot be refunded or exchanged.</p>
 		<p>
 			Permits should be validated and displayed in the vehicle promptly after
 			parking. They are valid until midnight on the day of use.
@@ -1595,7 +1598,7 @@ const tradePermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/12/2024", name: "Andy Walker" }
+  { date: "12/02/2025", name: "Dinah Williams" }
 );
 
 const utilityPermit = new ContentP(
@@ -1605,9 +1608,14 @@ const utilityPermit = new ContentP(
   `
 		<h3>About the Permit</h3>
 		<p>
-			Utility permits are for bigger utility companies i.e. British Gas, NPower or
-			BT - for use in the Inner/Outer City Centre.
+			<li>Issued for city centre works taking place by utility companies. E.g. Yorkshire Water, BT, British Gas etc.</li>
+      <li>25 half day cards per book</li>
+      <li>Maximum of 10 books per application</li>
 		</p>
+    <p>Utility Permits are only for major utility companies who need to complete work within the city centre.
+    <p>Valid for am/pm slots (not full days).
+    <p>Customer to email customerservices@sheffield.gov.uk directly or we can send them a link to apply.
+    </p>
 		<p>
 			If a company is working outside the City Centre then they would need a Trade
 			Permit.
@@ -1652,7 +1660,7 @@ const utilityPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/12/2024", name: "Andy Walker" }
+  { date: "12/02/2025", name: "Dinah Williams" }
 );
 
 const visitorsPermits = new ContentP(
@@ -1681,8 +1689,8 @@ const visitorsPermits = new ContentP(
 		</p>
 		<h3>Charge for Permit</h3>
 		<p>
-			It costs £19.35 for a batch of 25 daily permits. These are valid on the day of
-			use until 10am the following day.
+			One book of 25 permits costs £19.35. 
+      These are valid on the day of use until 10am the following day.
 		</p>
 		<section class="info-panel" role="region" aria-label="Information panel">
 			<p>These permits cannot be refunded or exchanged.</p>
@@ -1722,7 +1730,7 @@ const visitorsPermits = new ContentP(
       <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
       <br>
       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
-
+=-p0;
 
       </p>
 	`,
