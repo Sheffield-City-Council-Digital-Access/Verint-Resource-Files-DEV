@@ -6064,11 +6064,11 @@ const tenancyEnforcementASB = new ContentH(
     <p>Neighbourhood Teams may have stock of target hardening equipment.</p>
     <p>Victim Support may support with target hardening.</p>
   </p>`,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { buttonLabel: "Raise report", formName: "hou_enforcement_asb" },
+  { typeKey: "tenancy_enforcement_transferred_to_service" },
+  { typeKey: "tenancy_enforcement_information_provided" },
   { type: "Request", keywords: [], categories: ["Housing"] },
-  { date: "16/10/2024", name: "Omily Parkin" }
+  { date: "14/02/2025", name: "Nathan Smith" }
 );
 //#endregion Tenancy enforcement
 
