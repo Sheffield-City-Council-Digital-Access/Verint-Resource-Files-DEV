@@ -54,8 +54,8 @@ class CoreR {
   // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
   // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
   
-  const multiplepcns = new ContentR(
-    "multiplePcns",
+  const multiplepcns2 = new ContentR(
+    "multiplePcns2",
     "Multiple PCN's",
     "Find out how to challenge multiple PCNs online, including how to submit evidence and use the interactive portal for your appeal.",
     `
@@ -106,8 +106,8 @@ class CoreR {
     { date: "06/12/2024", name: "Nathan Smith" }
   );
   
-  const universalClubs = new ContentR(
-    "universalClubs",
+  const universalClubs2 = new ContentR(
+    "universalClubs2",
     "Universal Clubs",
     "Learn about Universal Clubs for children, including affordability, payment options, and support availability.",
     `
@@ -157,7 +157,7 @@ class CoreR {
     "Repairs",
     "TBD.",
       [
-        multiplepcns,
-        universalClubs
+        multiplepcns2,
+        universalClubs2
       ]
   );
