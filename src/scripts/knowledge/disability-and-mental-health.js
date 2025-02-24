@@ -134,7 +134,7 @@ class FormDaMH extends CoreDaMH {
         income in these proposals.
       </p>
     `,
-    { buttonLabel: "Short Breaks", formName: "" },
+    { buttonLabel: "Short Breaks", formName: "apply_short_break_grant" },
     { typeKey: "short_breaks_transfered_to_service" },
     { typeKey: "short_breaks_information_provided" },
     {
@@ -151,29 +151,47 @@ class FormDaMH extends CoreDaMH {
         "shor",
         "shourt",
         "shorot",
+        "sbg",
         "breks",
         "braks",
         "breacks",
         "bracks",
         "breacks",
-      ],
+        "disability",
+        "services",
+        "direct",
+        "payments",
+        "children",
+        "families",
+        "grants",
+        "disabled",
+        "mobility",
+    ], 
       categories: ["disability and mental health"],
     },
-    { date: "27/09/2024", name: "Dinah WIlliams" }
+    { date: "24/02/2025", name: "Andy Walker" }
   );
   const directPayments = new ContentDaMH(
     "directPayments",
     "Direct Payments",
     "Learn about direct payments and how they can be used to support your care plan.",
     `
-      <p>
-        A direct payment is a cash payment made to you, or someone on your behalf,
-        which you use to pay for things outlined in your support plan.
-      </p>
-      <p>
-        Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the
-        call is not answered raise a case.
-      </p>
+    <p>
+      A direct payment is a cash payment made to you, or someone on your behalf,
+      which you use to pay for things outlined in your support plan.
+    </p>
+    <p>
+      The Direct Payment Support Service is open Monday to Friday, 9am to 5pm.  
+      You can contact the service by phone, email, or post using the information below.
+    </p>
+    <p>
+      Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>.
+      If the call is not answered, raise a case.
+    </p>
+    <p>
+      Email: <a href="mailto:directpaymentsupportservice@sheffield.gov.uk">directpaymentsupportservice@sheffield.gov.uk</a>
+    </p>
+
     `,
     { buttonLabel: "", formName: "" },
     { typeKey: "short_breaks_transfered_to_service" },
