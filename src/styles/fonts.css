@@ -115,7 +115,11 @@ h4,
 
 p,
 #dform_container p,
-.select2-container p {
+.select2-container p,
+ul,
+ol,
+#dform_container ul,
+#dform_container ol {
   font-family: var(--font-paragraph);
   padding: unset;
   background-color: transparent;
