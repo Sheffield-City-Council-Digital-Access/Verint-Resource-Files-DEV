@@ -54,19 +54,25 @@ class FormTaT extends CoreTaT {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-const childTravelPass = new ContentTaT(
-  "childTravelPass",
-  "Child Travel Pass",
+const childrensTravelPass = new ContentTaT(
+  "childrensTravelPass",
+  "Childrens Travel Pass",
   "Find details on eligibility, application, appeals, and replacement options for a Children's Travel Pass in Sheffield.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
-      <h3>If you've changed your address or school</h3>
+      <h3>If You've Changed Your Address or School</h3>
       <p>
-        This could affect the distance your child travels to school so please 
-        check your eligibility before you apply for a new Children's Travel Pass.
-        <br>
-        <br>
-        Applications should be made to the Council where you live and not where the school is
+        This could affect the distance your child travels to school, so please check your eligibility before you apply for a new Children's Travel Pass.
+        <br><br>
+        Applications should be made to the Council where you live and not where the school is.
+        <br><br>
+        If you chose not to apply for your catchment school or the three nearest qualifying secondary 
+        schools for low-income families, you are unlikely to qualify for a Children’s Travel Pass.
+        <br><br>
+        Please be aware that if the catchment school or nearest school(s) has a 
+        place available in your child's year group, you are unlikely to qualify for 
+        a Children’s Travel Pass. There may also be exceptional circumstances 
+        that could qualify your child for a Children's Travel Pass.
       </p>
     </section>
     <p>
@@ -162,7 +168,9 @@ const childTravelPass = new ContentTaT(
           Transport Policy. 
           <br>
           <br>
-          To begin either a Stage 1 or Stage 2, please get in touch with us.
+          To begin either a Stage 1 or Stage 2, 
+          please get in touch with us by emailing 
+          <a href="mailto:CTP@sheffield.gov.uk">CTP@sheffield.gov.uk</a>.
         </p>
       </div>
     </details>
@@ -242,8 +250,10 @@ const childTravelPass = new ContentTaT(
       "childrens travell pass",
       "CTP",
       "childrens",
+      "child",
+      "child's",
       "childrenss",
-      "childrens",
+      "children's",
       "childrenss",
       "childerns",
       "travil",
@@ -259,12 +269,12 @@ const childTravelPass = new ContentTaT(
     ],
     categories: ["Travel and Transport"],
   },
-  { date: "26/11/2024", name: "Nathan Smith" }
+  { date: "20/02/2025", name: "Andy Walker" }
 );
 
-const disabledTravelPermit = new ContentTaT(
-  "disabledTravelPermit",
-  "Disabled Travel Permit",
+const disabledPersonsTravelPermit = new ContentTaT(
+  "disabledPersonsTravelPermit",
+  "Disabled Person's Travel Permit",
   "Find information on eligibility, application process, usage, and appeal details for a Disabled Travel Permit in Sheffield.",
   `
     <p>
@@ -352,6 +362,20 @@ const disabledTravelPermit = new ContentTaT(
       medical evidence from Health Care Professional, 
       Letter from DVLA re surrendered/revoked driving licence.  
     </p>
+    <h3>Lost or stolen pass</h3>
+    <p>
+      You can replace your lost, damaged, or stolen Disabled Person's Pass online by visiting:  
+      <a href="https://www.travelsouthyorkshire.com/Disabledreplace/" target="_blank">
+      https://www.travelsouthyorkshire.com/Disabledreplace/
+    </a>. There is a £7 charge for lost or damaged passes. You must provide 
+      Proof of Identity that includes your address, such as an official letter, 
+      NHS medical card, or utility bill.
+    </p>
+    <p>
+    There is no charge for stolen passes if you obtain a Crime Reference 
+    Number from the police. Your replacement pass will be posted to your home 
+    address within 7 working days.
+    </p>
    `,
   {
     buttonLabel: "Apply for disabled travel permit",
@@ -413,5 +437,5 @@ const travelAndTransport = new ServiceTaT(
   "travelAndTransport",
   "Travel and Transport",
   `Public transport, driving, cycling, walking, travel cards and passes, school passes, travel news and updates…`,
-  [childTravelPass, disabledTravelPermit]
+  [childrensTravelPass, disabledPersonsTravelPermit]
 );

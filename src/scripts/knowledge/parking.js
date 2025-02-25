@@ -209,11 +209,30 @@ const appealBlueBadge = new ContentP(
       
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_tarnsferred_to_service" },
+  { typeKey: "blue_badge_transferred_to_service" },
   { typeKey: "blue_badge_information_provided" },
-  { type: "Appeal", keywords: [], categories: ["Parking"] },
-  { date: "01/10/2024", name: "Shahzad Athar" }
-);
+  { 
+    type: "Appeal", 
+    keywords: [
+      "Car",
+      "blu",
+      "bb",
+      "blue bad",
+      "bdge",
+      "appeel",
+      "serivce",
+      "parkng",
+      "prking info",
+      "Blue Badge",
+      "blue badge",
+      "parking"
+    ], 
+    categories: [
+      "Parking"
+    ] 
+  },
+  { date: "19/02/2025", name: "Andy Walker" }
+  );
 
 const applyBlueBadge = new ContentP(
   "applyBlueBadge",
@@ -301,11 +320,30 @@ const applyBlueBadge = new ContentP(
     buttonLabel: "Apply for a blue badge",
     formName: "blue_badge_application",
   },
-  { typeKey: "blue_badge_tarnsferred_to_service" },
+  { typeKey: "blue_badge_transferred_to_service" },
   { typeKey: "blue_badge_information_provided" },
-  { type: "Apply", keywords: ["Blue Badge"], categories: ["Parking"] },
-  { date: "12/11/2024", name: "Andy Walker" }
-);
+  { 
+    type: "Apply", 
+    keywords: [
+      "Car",
+      "Blu Badg",
+      "bbadge",
+      "blue bdge",
+      "bb",
+      "badg",
+      "appely",
+      "parkin",
+      "prking",
+      "Blue Badge",
+      "blue badge",
+      "parking"
+    ], 
+    categories: [
+      "Parking"
+    ] 
+  },
+  { date: "19/02/2025", name: "Andy Walker" }
+  );
 
 const blueBadgeHolderPassedAway = new ContentP(
   "blueBadgeHolderPassedAway",
@@ -329,11 +367,35 @@ const blueBadgeHolderPassedAway = new ContentP(
     </address>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_tarnsferred_to_service" },
+  { typeKey: "blue_badge_transferred_to_service" },
   { typeKey: "blue_badge_information_provided" },
-  { type: "Request", keywords: ["Blue Badge"], categories: ["Parking"] },
-  { date: "01/10/2024", name: "Shahzad Athar" }
-);
+  { 
+    type: "Request", 
+    keywords: [
+      "Car",
+      "Car Badge",
+      "Blu Badg",
+      "bbadge",
+      "blue bdge",
+      "badg",
+      "appely",
+      "parkin",
+      "prking",
+      "bb",
+      "blu",
+      "Blue Badge",
+      "blue badge",
+      "blue badge holder passed away",
+      "badge holder deceased",
+      "passed away",
+      "deceased badge holder"
+    ], 
+    categories: [
+      "Parking"
+    ] 
+  },
+  { date: "19/02/2025", name: "Andy Walker" }
+  );
 
 const replacementBlueBadge = new ContentP(
   "lostorStolenBlueBadge",
@@ -373,12 +435,35 @@ const replacementBlueBadge = new ContentP(
       </p>
     `,
 
-  { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_tarnsferred_to_service" },
-  { typeKey: "blue_badge_information_provided" },
-  { type: "Request", keywords: ["Blue Badge"], categories: ["Parking"] },
-  { date: "12/11/2024", name: "Andy Walker" }
-);
+    { buttonLabel: "", formName: "" },
+    { typeKey: "blue_badge_transferred_to_service" },
+    { typeKey: "blue_badge_information_provided" },
+    { 
+      type: "Request", 
+      keywords: [
+        "Car",
+        "Blu Badg",
+        "bbadge",
+        "blue bdge",
+        "badg",
+        "parkin",
+        "prking",
+        "bb",
+        "Blue Badge",
+        "blue badge",
+        "replacement",
+        "replacment",
+        "replc",
+        "replacmnt",
+        "badge replacement",
+        "blue badge replacemnt"
+      ], 
+      categories: [
+        "Parking"
+      ] 
+    },
+    { date: "19/02/2025", name: "Andy Walker" }
+    );
 
 const blueBadge = new MenuP(
   "blueBadge",
@@ -788,7 +873,7 @@ const businessPermit = new ContentP(
 		</p>
 		<h3>Cost</h3>
 		<ul>
-			<li>The first permit costs £111.60</li>
+			<li>The first permit costs £111.80</li>
 			<li>A second permit costs £223.20</li>
 		</ul>
 		<h3>Evidence Required - Vehicle Ownership</h3>
@@ -874,12 +959,12 @@ const businessPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "20/02/2025", name: "Andy Walker" }
 );
 
-const carerPermitAndMedical = new ContentP(
-  "carerPermitAndMedical",
-  "Carer Permit And Medical",
+const residentsCarer = new ContentP(
+  "residentsCarer",
+  "Resident's Carer",
   "Learn about eligibility, cost, and required evidence for a carer permit, allowing carers to park in permit holder areas while providing home care.",
   `
 		<h3>About the Permit</h3>
@@ -950,7 +1035,7 @@ const carerPermitAndMedical = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "20/02/2025", name: "Andy Walker" }
 );
 
 //
@@ -1769,7 +1854,7 @@ const parkingPermits = new MenuP(
   "Comprehensive information on different types of parking permits including business, carer, medical, green, trade, staff, residents, and visitors' permits. It covers eligibility, application process, costs, and necessary evidence for each permit type.",
   [
     businessPermit,
-    carerPermitAndMedical,
+    residentsCarer,
     organisationCarer,
     medicalProfessionalCarer,
     greenParkingPermit,
