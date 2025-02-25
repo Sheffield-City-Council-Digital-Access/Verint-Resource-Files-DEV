@@ -75,7 +75,6 @@ const childrensTravelPass = new ContentTaT(
         that could qualify your child for a Children's Travel Pass.
       </p>
     </section>
-    </section>
     <p>
       Your child may be eligible for free school travel if you meet certain conditions.
     </p>
@@ -169,7 +168,9 @@ const childrensTravelPass = new ContentTaT(
           Transport Policy. 
           <br>
           <br>
-          To begin either a Stage 1 or Stage 2, please get in touch with us by emailing CTP@sheffield.gov.uk.
+          To begin either a Stage 1 or Stage 2, 
+          please get in touch with us by emailing 
+          <a href="mailto:CTP@sheffield.gov.uk">CTP@sheffield.gov.uk</a>.
         </p>
       </div>
     </details>

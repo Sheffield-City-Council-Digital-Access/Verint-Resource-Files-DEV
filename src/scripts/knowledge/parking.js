@@ -382,6 +382,7 @@ const blueBadgeHolderPassedAway = new ContentP(
       "parkin",
       "prking",
       "bb",
+      "blu",
       "Blue Badge",
       "blue badge",
       "blue badge holder passed away",
