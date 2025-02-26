@@ -1844,7 +1844,7 @@ const visitorsPermits = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/12/2024", name: "Andy Walker" }
+  { date: "26/02/2025", name: "Dinah Williams" }
 );
 
 const parkingPermits = new MenuP(
