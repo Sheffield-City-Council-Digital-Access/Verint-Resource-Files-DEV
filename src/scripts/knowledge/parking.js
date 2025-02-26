@@ -1782,9 +1782,8 @@ const visitorsPermits = new ContentP(
 		</section>
 		<h3>Evidence Required</h3>
 		<p>
-			We will check our Council Tax or electoral records or we will ask you to
-			provide an electronic copy of one of the following items that show your name
-			and address:
+		You will need to provide an electronic copy of one of the following items
+    that show your name and address:
 		</p>
 		<ul>
 			<li>Most recent utility bill</li>
