@@ -54,101 +54,85 @@ class CoreR {
   // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
   // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
   
-  const multiplepcns2 = new ContentR(
-    "multiplePcns2",
-    "Multiple PCN's",
-    "Find out how to challenge multiple PCNs online, including how to submit evidence and use the interactive portal for your appeal.",
+  const adaptation = new ContentR(
+    "adaptation",
+    "Adaptation",
+    "",
     `
-      <p>
-        Challenges can be made online within 28 days of receiving the original
-        ticket. It can take up to 24 hours to appear on the online portal.
-        <br>
-        <br>
-        Documentation can be uploaded to support the challenge, the online link also
-        enables the motorist to use an interactive portal to guide them through their
-        appeal and the evidence can be viewed (e.g photos of the contravention)
-        <br>
-        <br>
-        Do not discuss any possible outcomes or give your opinions. Parking services
-        will contact the customer following the decision.
-      </p>
-    `,
-    { buttonLabel: "Parking Permit", formName: "" },
-    { typeKey: "parking_permit_transferred_to_service" },
-    { typeKey: "parking_permit_information_provided" },
-    {
-      type: "Information",
-      keywords: [
-        "parking permit",
-        "parking pass",
-        "parking permitt",
-        "parking permt",
-        "parking pemit",
-        "parkin permit",
-        "parking permitt",
-        "parknig",
-        "parkingg",
-        "paking",
-        "parrking",
-        "parkng",
-        "permt",
-        "permmit",
-        "permitt",
-        "pemit",
-        "premit",
-        "TEC",
-        "Fine",
-        "Taxi PCN",
-        "Bailiff",
-      ],
-      categories: ["Parking"],
-    },
-    { date: "06/12/2024", name: "Nathan Smith" }
-  );
-  
-  const universalClubs2 = new ContentR(
-    "universalClubs2",
-    "Universal Clubs",
-    "Learn about Universal Clubs for children, including affordability, payment options, and support availability.",
-    `
-      <p>
-        Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the
-        call is not answered raise a case.
-      </p>
-      <h3>Affordability</h3>
-      <p>
-        If you are in receipt of means tested benefits or your household income is
-        below £21,000.00 you will not have to pay for the activity cost. Please
-        complete the household income assessment.
-      </p>
-      <p>
-        If families receive other financial support, some of these might be able to be
-        used to help with these costs.
-      </p>
-      <p>
-        If your child attends a club that you find too expensive to pay on an ongoing
-        basis you may be able to find a lower cost alternative.
-      </p>
-      <h3>If your child cannot attend a session</h3>
-      <p>
-        You will still need to pay because the staff are employed for each session to
-        support your child, and so the club still has to pay these costs.
-      </p>
-      <h3>Ways of Paying</h3>
-      <p>You will pay the club directly.</p>
+    <h2>Handrails</h2>
+      <p>For Council Housing properties, refer the customer to <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
+    
+    <h2>Grab Rails</h2>
+    <p>For internal or external access to sole occupancy, refer the customer to <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
+    
+    <h2>Mobility Scooter Ramps</h2>
+    <p>If the customer is requesting a communal ramp for their mobility scooter, advise them that if the scooter was not supplied through Equipment and Adaptations, we are <strong>unlikely to supply a ramp</strong>.</p>
+    <p>If the customer has acquired their own mobility scooter, then it is their own responsibility to install a ramp. They will also need permission from the Housing Service to install their own ramp.</p>
+    <p>For further advice about ramps to an individual's property or communal entrances, refer the customer to <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
+    
+    <h2>For Disabled Customers, Including Wet Rooms</h2>
+    <p>For walk-in shower rooms (wet rooms), refer the customer to <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
+
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "short_breaks_information_to_service" },
-    { typeKey: "short_breaks_information_provided" },
+    { typeKey: "" },
+    { typeKey: "" },
     {
-      type: "Request",
+      type: "",
       keywords: [],
-      categories: ["Disability and Mental Health"],
+      categories: [],
     },
-    { date: "27/09/2024", name: "Dinah Williams" }
+    { date: "24/02/2025", name: "Shahzad Athar" }
   );
   
+  const electricalandheating = new ContentR(
+    "electricalandheating",
+    "Electrical and Heating",
+    "",
+    `
+      <h2>Electrical Items</h2>
+    <p>For electrical fittings, additional sockets, etc., email <a href="mailto:ElectricalSheffield@Sheffield.go.uk" class="email">ElectricalSheffield@Sheffield.go.uk</a>.</p>
+    
+    <h2>Heating Items</h2>
+    <p>For extra radiators, email <a href="mailto:GasSheffield@sheffield.gov.uk" class="email">GasSheffield@sheffield.gov.uk</a>.</p>
+
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "24/02/2025", name: "Shahzad Athar" }
+  );
   
+  const electricalandheating = new ContentR(
+    "electricalandheating",
+    "Electrical and Heating",
+    "",
+    `
+      <h2>Electrical Items</h2>
+    <p>For electrical fittings, additional sockets, etc., email <a href="mailto:ElectricalSheffield@Sheffield.go.uk" class="email">ElectricalSheffield@Sheffield.go.uk</a>.</p>
+    
+    <h2>Heating Items</h2>
+    <p>For extra radiators, email <a href="mailto:GasSheffield@sheffield.gov.uk" class="email">GasSheffield@sheffield.gov.uk</a>.</p>
+
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "24/02/2025", name: "Shahzad Athar" }
+  );
+
+
+
   // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
   // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
   
@@ -157,7 +141,8 @@ class CoreR {
     "Repairs",
     "TBD.",
       [
-        multiplepcns2,
-        universalClubs2
+        adaptation,
+        electricalandheating,
+      
       ]
   );
