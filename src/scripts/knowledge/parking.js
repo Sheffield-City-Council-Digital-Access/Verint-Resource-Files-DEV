@@ -211,8 +211,8 @@ const appealBlueBadge = new ContentP(
   { buttonLabel: "", formName: "" },
   { typeKey: "blue_badge_transferred_to_service" },
   { typeKey: "blue_badge_information_provided" },
-  { 
-    type: "Appeal", 
+  {
+    type: "Appeal",
     keywords: [
       "Car",
       "blu",
@@ -225,14 +225,12 @@ const appealBlueBadge = new ContentP(
       "prking info",
       "Blue Badge",
       "blue badge",
-      "parking"
-    ], 
-    categories: [
-      "Parking"
-    ] 
+      "parking",
+    ],
+    categories: ["Parking"],
   },
   { date: "19/02/2025", name: "Andy Walker" }
-  );
+);
 
 const applyBlueBadge = new ContentP(
   "applyBlueBadge",
@@ -267,7 +265,7 @@ const applyBlueBadge = new ContentP(
           no charge.
         </li>
         <li>
-          Terminally Ill - A terminally ill applicant will have a DS1500 – A form
+          Terminally ill - A terminally ill applicant will have a DS1500 – A form
           giving medical facts relating to cancer or an SR1 form used for claiming
           benefits under the rules for people with terminal cancer. There is a charge
           of £10 for all badges and the badge is issued for a year, should they apply
@@ -284,7 +282,7 @@ const applyBlueBadge = new ContentP(
           onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
               KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Gov%20UK\`
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=apply%20for%20a%20Blue%20Badge\`
           ">
           Send link to apply online
         </button>
@@ -301,13 +299,13 @@ const applyBlueBadge = new ContentP(
     </summary>
     <div class="accordion-content">
       <p>
-            You may be able to provide the customer with an update to their
-            application using the case notes or status update. All cases will be dealt
-            with in date order, there are no exceptions to this regardless of
-            circumstances so do not raise requests of this nature to FFT. Blue Badge
-            applications will be assessed within 28 days calendar days from the date
-            the application was received. The order date of the blue badge is not the
-            despatch date from our 3rd party who produce the Blue Badge.
+  <ul>
+    <li>Provide the customer with an update to their application using case notes or status update.</li>
+    <li>All cases will be dealt with in date order, with no exceptions regardless of circumstances.</li>
+    <li>Do not raise requests of this nature to FFT.</li>
+    <li>Blue Badge applications will be assessed within 28 calendar days from the date the application was received.</li>
+    <li>The order date of the Blue Badge is not the despatch date from the 3rd party who produces the Blue Badge.</li>
+  </ul>
           </p>
           <p>
             Once Sheffield City Council have ordered the Blue Badge the 3rd Party have
@@ -322,8 +320,8 @@ const applyBlueBadge = new ContentP(
   },
   { typeKey: "blue_badge_transferred_to_service" },
   { typeKey: "blue_badge_information_provided" },
-  { 
-    type: "Apply", 
+  {
+    type: "Apply",
     keywords: [
       "Car",
       "Blu Badg",
@@ -336,14 +334,12 @@ const applyBlueBadge = new ContentP(
       "prking",
       "Blue Badge",
       "blue badge",
-      "parking"
-    ], 
-    categories: [
-      "Parking"
-    ] 
+      "parking",
+    ],
+    categories: ["Parking"],
   },
-  { date: "19/02/2025", name: "Andy Walker" }
-  );
+  { date: "26/02/2025", name: "Dinah Williams" }
+);
 
 const blueBadgeHolderPassedAway = new ContentP(
   "blueBadgeHolderPassedAway",
@@ -369,8 +365,8 @@ const blueBadgeHolderPassedAway = new ContentP(
   { buttonLabel: "", formName: "" },
   { typeKey: "blue_badge_transferred_to_service" },
   { typeKey: "blue_badge_information_provided" },
-  { 
-    type: "Request", 
+  {
+    type: "Request",
     keywords: [
       "Car",
       "Car Badge",
@@ -388,14 +384,12 @@ const blueBadgeHolderPassedAway = new ContentP(
       "blue badge holder passed away",
       "badge holder deceased",
       "passed away",
-      "deceased badge holder"
-    ], 
-    categories: [
-      "Parking"
-    ] 
+      "deceased badge holder",
+    ],
+    categories: ["Parking"],
   },
   { date: "19/02/2025", name: "Andy Walker" }
-  );
+);
 
 const replacementBlueBadge = new ContentP(
   "lostorStolenBlueBadge",
@@ -435,35 +429,33 @@ const replacementBlueBadge = new ContentP(
       </p>
     `,
 
-    { buttonLabel: "", formName: "" },
-    { typeKey: "blue_badge_transferred_to_service" },
-    { typeKey: "blue_badge_information_provided" },
-    { 
-      type: "Request", 
-      keywords: [
-        "Car",
-        "Blu Badg",
-        "bbadge",
-        "blue bdge",
-        "badg",
-        "parkin",
-        "prking",
-        "bb",
-        "Blue Badge",
-        "blue badge",
-        "replacement",
-        "replacment",
-        "replc",
-        "replacmnt",
-        "badge replacement",
-        "blue badge replacemnt"
-      ], 
-      categories: [
-        "Parking"
-      ] 
-    },
-    { date: "19/02/2025", name: "Andy Walker" }
-    );
+  { buttonLabel: "", formName: "" },
+  { typeKey: "blue_badge_transferred_to_service" },
+  { typeKey: "blue_badge_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "Car",
+      "Blu Badg",
+      "bbadge",
+      "blue bdge",
+      "badg",
+      "parkin",
+      "prking",
+      "bb",
+      "Blue Badge",
+      "blue badge",
+      "replacement",
+      "replacment",
+      "replc",
+      "replacmnt",
+      "badge replacement",
+      "blue badge replacemnt",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "19/02/2025", name: "Andy Walker" }
+);
 
 const blueBadge = new MenuP(
   "blueBadge",
