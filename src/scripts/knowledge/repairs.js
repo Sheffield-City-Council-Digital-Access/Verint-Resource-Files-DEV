@@ -168,7 +168,7 @@ class CoreR {
 
   const chimneyStack = new ContentR(
     "chimneyStack",
-    "chimney Stack",
+    "Chimney Stack",
     "",
     `
     <p>All chimney-related repairs get sent to Contractors to survey before carrying out the repair.</p>
@@ -316,7 +316,7 @@ class CoreR {
 
   const concrete = new ContentR(
     "concrete",
-    "concrete",
+    "Concrete",
     "",
     `
     <h3>Category Fault</h3>
