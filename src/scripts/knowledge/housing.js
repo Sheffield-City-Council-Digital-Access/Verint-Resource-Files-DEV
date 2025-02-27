@@ -388,7 +388,7 @@ const welfareReform = new ContentH(
 
 const adaptationChase = new ContentH(
   "adaptationChase",
-  "Chase Progress of Adaptation",
+  "Adaptation Chases",
   "Learn how to chase progress on adaptations and understand the permissions required for home improvements in Sheffield Council properties.",
   `
   <details class="accordion">
@@ -498,7 +498,7 @@ const adaptationChase = new ContentH(
 
 const adaptationOther = new ContentH(
   "adaptationOther",
-  "Other Adaptation Request",
+  "Adaptation Other Request",
   "Understand the process for requesting permission to make adaptations to your Sheffield Council property, including restrictions and requirements.",
   `
     <h2>Tenant wants to make their own changes</h2> 
