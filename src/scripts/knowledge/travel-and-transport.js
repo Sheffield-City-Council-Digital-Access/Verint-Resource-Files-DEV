@@ -300,8 +300,7 @@ const disabledPersonsTravelPermit = new ContentTaT(
       </ul>
     </p>
     <h3>How long does a Disabled Travel Permit last for</h3>
-   <p>Disabled Travel Permits have a 28 day process period.</p>
-    <p>
+       <p>
       If your application is successful, passes are issued between 1 and 5 years the
       timescale is dependent on your qualifying criteria, you will be made aware of
       the timescale when your application is approved.<br>
@@ -311,6 +310,7 @@ const disabledPersonsTravelPermit = new ContentTaT(
       on your 66th birthday.
     </p>
     <h3>How long will my application take</h3>
+    <p>Disabled Travel Permits have a 28 day process period.</p>
     <h3>How do I appeal the decision</h3>
     <p>Appeals must be made in writing to:<br>
       <address>
@@ -350,7 +350,7 @@ const disabledPersonsTravelPermit = new ContentTaT(
     </p>
       <h3>I've sent my approval letter off but not got my pass</h3>
     <p>
-      Contact SYPTE direct <a href="tel:0170 9515151">0170 9515151</a>.
+      Contact SYPTE direct <a href="tel:01709 515151">01709 515151</a>.
     </p>
       <h3>Where is my pass (applied with SCC) Ive had a letter/phone call</h3>
     <p>
