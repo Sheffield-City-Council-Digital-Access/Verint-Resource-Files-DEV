@@ -380,6 +380,108 @@ class CoreR {
     { date: "24/02/2025", name: "Shahzad Athar" }
   );
 
+
+  const districtHeatingSwitch2Setup = new ContentR(
+    "districtHeatingSwitch2Setup",
+    "District Heating Switch2 Setup",
+    "",
+    `
+
+    
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "27/02/2025", name: "Shahzad Athar" }
+  );
+
+  const doorFurniture  = new ContentR(
+    "doorFurniture ",
+    "Door Furniture ",
+    "",
+    `
+
+    
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "27/02/2025", name: "Shahzad Athar" }
+  );
+
+  const drainage  = new ContentR(
+    "drainage",
+    "Drainage",
+    "",
+    `
+
+    
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "27/02/2025", name: "Shahzad Athar" }
+  );
+
+  const electricalTesting  = new ContentR(
+    "electricalTesting",
+    "Electric Testing",
+    "",
+    `
+
+    
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "27/02/2025", name: "Shahzad Athar" }
+  );
+
+  const externalContractors   = new ContentR(
+    "externalContractors",
+    "External Contractors",
+    "",
+    `
+
+    
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "27/02/2025", name: "Shahzad Athar" }
+  );
+
+
   // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
   // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
   
@@ -389,7 +491,9 @@ class CoreR {
     "",
       [
         adaptation, electricalandHeating, blacksmith, brickwork, chimneyStack, claimforDamage, 
-        clothesPost, communalArea, concrete, dampandMould,
+        clothesPost, communalArea, concrete, dampandMould, districtHeatingSwitch2Setup, 
+        doorFurniture, drainage, electricalTesting
+
       
       ]
   );
