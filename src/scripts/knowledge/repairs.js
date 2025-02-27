@@ -173,10 +173,10 @@ class CoreR {
     `
     <p>All chimney-related repairs get sent to Contractors to survey before carrying out the repair.</p>
     <p>Repairs won't be carried out on the appointment date due to health and safety procedures 
-    involving gas safety checks to ensure gas fires in the property and/or neighboring properties 
+    involving gas safety checks to ensure gas fires in the property and/or neighbouring properties 
     are isolated.</p>
 
-    <p>A letter from Repairs and Maintenance is sent to the tenanted property and neighbors for 
+    <p>A letter from Repairs and Maintenance is sent to the tenanted property and neighbours for 
     shared stacks, outlining access requirements. Typically, a two-week notice is given.</p>
     <p>Regardless of tenant claims about gas fires, checks must be conducted by Repairs 
     and Maintenance's gas section and Hi-point before scheduling and carrying out the repair.</p>
@@ -490,9 +490,9 @@ class CoreR {
     "Repairs",
     "",
       [
-        adaptation, electricalandHeating, blacksmith, brickwork, chimneyStack, claimforDamage, 
+        adaptation, blacksmith, brickwork, chimneyStack, claimforDamage, 
         clothesPost, communalArea, concrete, dampandMould, districtHeatingSwitch2Setup, 
-        doorFurniture, drainage, electricalTesting
+        doorFurniture, drainage, electricalandHeating, electricalTesting, externalContractors, 
 
       
       ]
