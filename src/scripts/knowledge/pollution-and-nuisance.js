@@ -2071,7 +2071,7 @@ const ratTreatment = new ContentPaN(
       </summary>
       <div class="accordion-content">
         <p>
-          For bed bug treatment enquiries related to Commercial, Health Authority, Industrial, and
+          For rat treatment enquiries related to Commercial, Health Authority, Industrial, and
           University properties, please email your request to
           <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">
            EnvironmentalServicesAdmin@sheffield.gov.uk</a>.
