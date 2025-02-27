@@ -126,8 +126,8 @@ const makingAPayment = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -169,8 +169,8 @@ const customerPaidTwice = new ContentP(
       </p>
     `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -567,8 +567,8 @@ const carParkParkingMeterProblem = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [

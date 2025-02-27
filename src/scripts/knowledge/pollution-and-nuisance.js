@@ -1711,7 +1711,7 @@ const masonryBeesTreatment = new ContentPaN(
 const miceTreatment = new ContentPaN(
   "miceTreatment",
   "Mice Treatment",
-  "Information on mice treatment costs, benefit-related discounts, and details about the number of visits covered by the treatment.",
+  "Information on mice treatment, including costs, free treatment for certain benefits, communal area handling, and commercial property inquiries.",
   `
     <h3>Cost for Treatment</h3>
     <p>
@@ -2071,7 +2071,7 @@ const ratTreatment = new ContentPaN(
       </summary>
       <div class="accordion-content">
         <p>
-          For bed bug treatment enquiries related to Commercial, Health Authority, Industrial, and
+          For rat treatment enquiries related to Commercial, Health Authority, Industrial, and
           University properties, please email your request to
           <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">
            EnvironmentalServicesAdmin@sheffield.gov.uk</a>.
@@ -3198,7 +3198,7 @@ const cleanAirZone = new MenuPaN(
 const pollutionAndNuisance = new ServicePaN(
   "pollutionAndNuisance",
   "Pollution and Nuisance",
-  `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone`,
+  `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone, Enviro, Eps, Env`,
   [
     abandonedVehicles,
     pestControl,

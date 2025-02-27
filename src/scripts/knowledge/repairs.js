@@ -54,110 +54,446 @@ class CoreR {
   // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
   // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
   
-  const multiplepcns2 = new ContentR(
-    "multiplePcns2",
-    "Multiple PCN's",
-    "Find out how to challenge multiple PCNs online, including how to submit evidence and use the interactive portal for your appeal.",
+  const adaptation = new ContentR(
+    "adaptation",
+    "Adaptation",
+    "",
     `
-      <p>
-        Challenges can be made online within 28 days of receiving the original
-        ticket. It can take up to 24 hours to appear on the online portal.
-        <br>
-        <br>
-        Documentation can be uploaded to support the challenge, the online link also
-        enables the motorist to use an interactive portal to guide them through their
-        appeal and the evidence can be viewed (e.g photos of the contravention)
-        <br>
-        <br>
-        Do not discuss any possible outcomes or give your opinions. Parking services
-        will contact the customer following the decision.
-      </p>
-    `,
-    { buttonLabel: "Parking Permit", formName: "" },
-    { typeKey: "parking_permit_transferred_to_service" },
-    { typeKey: "parking_permit_information_provided" },
-    {
-      type: "Information",
-      keywords: [
-        "parking permit",
-        "parking pass",
-        "parking permitt",
-        "parking permt",
-        "parking pemit",
-        "parkin permit",
-        "parking permitt",
-        "parknig",
-        "parkingg",
-        "paking",
-        "parrking",
-        "parkng",
-        "permt",
-        "permmit",
-        "permitt",
-        "pemit",
-        "premit",
-        "TEC",
-        "Fine",
-        "Taxi PCN",
-        "Bailiff",
-      ],
-      categories: ["Parking"],
-    },
-    { date: "06/12/2024", name: "Nathan Smith" }
-  );
-  
-  const universalClubs2 = new ContentR(
-    "universalClubs2",
-    "Universal Clubs",
-    "Learn about Universal Clubs for children, including affordability, payment options, and support availability.",
-    `
-      <p>
-        Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the
-        call is not answered raise a case.
-      </p>
-      <h3>Affordability</h3>
-      <p>
-        If you are in receipt of means tested benefits or your household income is
-        below £21,000.00 you will not have to pay for the activity cost. Please
-        complete the household income assessment.
-      </p>
-      <p>
-        If families receive other financial support, some of these might be able to be
-        used to help with these costs.
-      </p>
-      <p>
-        If your child attends a club that you find too expensive to pay on an ongoing
-        basis you may be able to find a lower cost alternative.
-      </p>
-      <h3>If your child cannot attend a session</h3>
-      <p>
-        You will still need to pay because the staff are employed for each session to
-        support your child, and so the club still has to pay these costs.
-      </p>
-      <h3>Ways of Paying</h3>
-      <p>You will pay the club directly.</p>
+    <h2>Handrails</h2>
+      <p>For Council Housing properties, refer the customer to 
+      <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
+    
+    <h2>Grab Rails</h2>
+    <p>For internal or external access to sole occupancy, refer the customer to 
+    <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
+    
+    <h2>Mobility Scooter Ramps</h2>
+    <p>If the customer is requesting a communal ramp for their mobility scooter, 
+    advise them that if the scooter was not supplied through Equipment and Adaptations, 
+    we are <strong>unlikely to supply a ramp</strong>.</p>
+    <p>If the customer has acquired their own mobility scooter, then it is their own responsibility to install a ramp. 
+    They will also need permission from the Housing Service to install their own ramp.</p>
+    <p>For further advice about ramps to an individual's property or communal entrances, refer the customer to 
+    <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
+    
+    <h2>For Disabled Customers, Including Wet Rooms</h2>
+    <p>For walk-in shower rooms (wet rooms), refer the customer to 
+    <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
+
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "short_breaks_information_to_service" },
-    { typeKey: "short_breaks_information_provided" },
+    { typeKey: "" },
+    { typeKey: "" },
     {
-      type: "Request",
+      type: "",
       keywords: [],
-      categories: ["Disability and Mental Health"],
+      categories: [],
     },
-    { date: "27/09/2024", name: "Dinah Williams" }
+    { date: "24/02/2025", name: "Shahzad Athar" }
   );
   
-  
+  const blacksmith = new ContentR(
+    "blacksmith",
+    "Blacksmith",
+    "",
+    `
+      <p><strong>Category Fault:</strong> Blacksmiths Repairs</p>
+      <p><strong>Contract:</strong> Responsive</p>
+      <p><strong>Warranty:</strong> N/A</p>
+      <p><strong>Key Information:</strong> Gas No Access: HF, NA or CI code, 
+      No Repair: NR code, or ALMO, continue to order a repair and contact the RPIT Gas Team.</p>
+      <p><strong>Outcome:</strong> Log job on T-Mobile</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "24/02/2025", name: "Shahzad Athar" }
+  );
+
+  const brickwork = new ContentR(
+    "brickwork",
+    "Brickwork",
+    "",
+    `
+      <p><strong>Category Fault:</strong> Brickwork Repairs</p>
+      <p><strong>Contract:</strong> Responsive</p>
+      <p><strong>Warranty:</strong> Identified from the Ohms system. 
+      If within a warranty period, invoke the warranty repair process.</p>
+      <p><strong>Outcome:</strong> Appoint job on T-Mobile.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "24/02/2025", name: "Shahzad Athar" }
+  );
+
+  const chimneyStack = new ContentR(
+    "chimneyStack",
+    "Chimney Stack",
+    "",
+    `
+    <p>All chimney-related repairs get sent to Contractors to survey before carrying out the repair.</p>
+    <p>Repairs won't be carried out on the appointment date due to health and safety procedures 
+    involving gas safety checks to ensure gas fires in the property and/or neighbouring properties 
+    are isolated.</p>
+
+    <p>A letter from Repairs and Maintenance is sent to the tenanted property and neighbours for 
+    shared stacks, outlining access requirements. Typically, a two-week notice is given.</p>
+    <p>Regardless of tenant claims about gas fires, checks must be conducted by Repairs 
+    and Maintenance's gas section and Hi-point before scheduling and carrying out the repair.</p>
+
+    <p><strong>No check = No repair</strong></p>
+
+    <p>Appointments are arranged directly with the tenant via Hi-point where possible and 
+    coordinated with the gas section.</p>
+    <p>If Contractors fail to gain access, they will attempt to reschedule following the same 
+    procedure.</p>
+
+    <p>Notes will be placed in T-Mobile explaining access issues.</p>
+    <p>Once access is gained and the repair is completed, Contractors will notify us, and Gas 
+    will be notified via WAH to reinstate the gas appliance.</p>
+
+    <p><strong>Category Fault:</strong> Chimney Stack</p>
+
+    <p><strong>Contract:</strong> Responsive</p>
+
+    <p><strong>Codes:</strong> No code</p>
+
+    <p><strong>Warranty:</strong> Identified from the Ohms system. If within a warranty period, 
+    invoke the repair process.</p>
+
+    <p><strong>Key Information:</strong> If a pop-up appears (e.g., Gas No Access: HF, NA, 
+    or CI code, No Repair: NR code, or ALMO), continue to order a repair and contact the RPIT Gas Team.</p>
+
+    <p><strong>Outcome:</strong> Log job on T-Mobile.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "24/02/2025", name: "Shahzad Athar" }
+  );
+
+  const claimforDamage = new ContentR(
+    "claimforDamage",
+    "Claim for Damage",
+    "",
+    `
+    <p>Tenants must ensure the contents of their home are adequately insured as the Council will 
+    not compensate for unexpected damage caused to fittings or personal possessions when the Council is not at fault.</p>
+    
+    <p>When the Housing Service carries out major work which spoils decorations (for example, 
+    modernisation or extensive re-plastering), customers may be able to claim money to help redecorate. 
+    This is called a discretionary payment, and the team responsible for carrying out the work should be contacted.</p>
+
+    <p>If a worker causes damage to possessions when carrying out a standard repair, 
+    please contact a Senior or Team Leader for advice.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "24/02/2025", name: "Shahzad Athar" }
+  );
+
+  const clothesPost = new ContentR(
+    "clothesPost",
+    "Clothes Post",
+    "",
+    `
+        <h3>Category Fault</h3>
+        <p>Clothes Posts</p>
+        
+        <h3>Contract</h3>
+        <p>Responsive</p>
+        
+        <h3>Codes</h3>
+        <p>N/A</p>
+        
+        <h3>Warranty</h3>
+        <p>Identified from the Ohms system. If repair is identified as within a warranty period, 
+        invoke the warranty repair process.</p>
+        
+        <h3>Key Questions and Information</h3>
+        <p>Place orders for communal areas only.</p>
+        <p>If there is a pop-up i.e. for Gas No Access: HF, NA or CI code, No Repair: NR code, or 
+        ALMO, continue to order a repair (if applicable) then immediately contact the RPIT Gas Team.</p>
+        
+        <h3>Recharge</h3>
+        <p>N/A</p>
+        
+        <h3>Outcome</h3>
+        <p>Only log a job if in comm drying area (we do not do individual properties) and book 
+        non-appointed job on T-Mobile.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "24/02/2025", name: "Shahzad Athar" }
+  );
+
+  const communalArea = new ContentR(
+    "communalArea",
+    "Communal Area",
+    "",
+    `
+   <h3>Category Fault</h3>
+      <p>N/A</p>
+        
+    <h3>Contract</h3>
+       <p>Responsive</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "24/02/2025", name: "Shahzad Athar" }
+  );
+
+  const concrete = new ContentR(
+    "concrete",
+    "Concrete",
+    "",
+    `
+    <h3>Category Fault</h3>
+       <p>Concrete Repairs</p>
+        
+    <h3>Contract</h3>
+      <p>Responsive</p>
+        
+    <h3>Warranty</h3>
+      <p>Identified from the OHMS system. If repair is identified as within a warranty period, 
+      invoke the warranty repair process.</p>
+        
+    <h3>Key Questions and Information</h3>
+      <p>Examples of Concrete Repairs: Lintels, Sills, Coping Stones, Canopies, Marionette 
+      Walkways/Private Balconies, Columns, and Beams.</p>
+      <p>If there is a pop-up i.e. for Gas No Access: HF, NA or CI code, No Repair: NR code, or 
+      ALMO, continue to order a repair (if applicable) then immediately contact the RPIT Gas Team.</p>
+        
+    <h3>Recharge</h3>
+      <p>N/A</p>
+        
+    <h3>Outcome</h3>
+      <p>Order Remedy Repair on T-Mobile.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "24/02/2025", name: "Shahzad Athar" }
+  );
+
+  const dampandMould = new ContentR(
+    "dampandMould",
+    "Damp and Mould",
+    "",
+    `
+    <p>Apply Halophane Treatment (go to P2P Damp) put the job under the following:</p>
+        <ul>
+            <li>Workstream - Painting Programme</li>
+            <li>Job Code - work cat - Damp</li>
+        </ul>
+
+    <p>Back out of job (green arrow) and someone will be in contact to book an appointment.</p>
+    <p>Any jobs that need chasing please log a chase call on T-Mobile.</p>
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "24/02/2025", name: "Shahzad Athar" }
+  );
+
+
+  const districtHeatingSwitch2Setup = new ContentR(
+    "districtHeatingSwitch2Setup",
+    "District Heating Switch2 Setup",
+    "",
+    `
+
+    
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "27/02/2025", name: "Shahzad Athar" }
+  );
+
+  const doorFurniture  = new ContentR(
+    "doorFurniture ",
+    "Door Furniture ",
+    "",
+    `
+
+    
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "27/02/2025", name: "Shahzad Athar" }
+  );
+
+  const drainage  = new ContentR(
+    "drainage",
+    "Drainage",
+    "",
+    `
+
+    
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "27/02/2025", name: "Shahzad Athar" }
+  );
+
+  const electricalandHeating = new ContentR(
+    "electricalandheating",
+    "Electrical and Heating",
+    "",
+    `
+    <h2>Electrical Items</h2>
+    <p>For electrical fittings, additional sockets, etc., email 
+    <a href="mailto:ElectricalSheffield@Sheffield.go.uk" class="email">ElectricalSheffield@Sheffield.go.uk</a>.</p>
+    
+    <h2>Heating Items</h2>
+    <p>For extra radiators, email 
+    <a href="mailto:GasSheffield@sheffield.gov.uk" class="email">GasSheffield@sheffield.gov.uk</a>.</p>
+
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "24/02/2025", name: "Shahzad Athar" }
+  );
+
+  const electricalTesting  = new ContentR(
+    "electricalTesting",
+    "Electric Testing",
+    "",
+    `
+
+    
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "27/02/2025", name: "Shahzad Athar" }
+  );
+
+  const externalContractors   = new ContentR(
+    "externalContractors",
+    "External Contractors",
+    "",
+    `
+
+    
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "27/02/2025", name: "Shahzad Athar" }
+  );
+
+
   // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
   // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
   
   const repairs = new ServiceR(
     "repairs",
     "Repairs",
-    "TBD.",
+    "",
       [
-        multiplepcns2,
-        universalClubs2
+        adaptation, blacksmith, brickwork, chimneyStack, claimforDamage, 
+        clothesPost, communalArea, concrete, dampandMould, districtHeatingSwitch2Setup, 
+        doorFurniture, drainage, electricalandHeating, electricalTesting, externalContractors, 
+
+      
       ]
   );
