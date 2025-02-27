@@ -1335,7 +1335,7 @@ const homeownerDisconnection = new ContentH(
 
 const inspectionRequest = new FormH(
   "inspectionRequest",
-  "Untidy gardens and communal areas",
+  "Request inspection",
   "Request inspection of tenants own aids and adaptations or a general repair.",
   "hou_inspection_request",
   {
