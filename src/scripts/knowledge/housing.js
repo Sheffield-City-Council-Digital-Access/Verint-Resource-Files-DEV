@@ -2025,6 +2025,7 @@ const estatesAndEnvironments = new MenuH(
     communalCupboard,
     communalFireSafety,
     fencesCouncilHousing,
+    garageRequest,
     gardenPledgeScheme
   ]
 );
