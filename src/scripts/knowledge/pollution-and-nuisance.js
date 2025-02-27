@@ -173,7 +173,7 @@ const batProtectionBritain = new ContentPaN(
       <li>Intentionally or recklessly obstruct access to a bat roost </li>
     </ul>
     <p>
-      For more information, please visit <a href="http://www.bats.org.uk">http://www.bats.org.uk</a>. 
+      For more information, please visit <a href="https://www.bats.org.uk">https://www.bats.org.uk</a>. 
       <br>
 
        <button

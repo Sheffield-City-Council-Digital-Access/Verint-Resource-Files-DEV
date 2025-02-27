@@ -297,6 +297,9 @@ const disabledPersonsTravelPermit = new ContentTaT(
           suffering from a substantial and long-term disabilities or injuries which
           severely impacts your ability to walk
         </li>
+        <li>
+          mental health
+        </li>
       </ul>
     </p>
     <h3>How long does a Disabled Travel Permit last for</h3>
@@ -376,6 +379,52 @@ const disabledPersonsTravelPermit = new ContentTaT(
     Number from the police. Your replacement pass will be posted to your home 
     address within 7 working days.
     </p>
+    <h3>Travelling with a Carer</h3>
+
+  <h4>Qualifying Conditions:</h4>
+<ul>
+  <li>Higher rate care component of Disability Living Allowance with some mobility</li>
+  <li>PIP Enhanced daily living</li>
+  <li>Higher rate Attendance Allowance</li>
+</ul>
+  <p>Your Travel pass will allow one carer to travel with you for free.</p>
+
+  <h3>Replacement Disabled Travel Permit</h3>
+
+  
+
+  <p>
+    You can replace your lost, damaged, or stolen Disabled Person's Pass online by visiting: 
+    <a href="https://www.travelsouthyorkshire.com/Disabledreplace/" target="_blank">https://www.travelsouthyorkshire.com/Disabledreplace/</a>
+  </p>
+  <p>
+    Charge: £7 for lost or damaged passes. Proof of identity including your address is required.
+  </p>
+  <p>
+    No Charge for Stolen Passes: With a Crime Reference Number from the police.
+  </p>
+  <p>
+    Processing Time: Replacement pass will be posted to your home address within 7 working days.
+  </p>
+  
+   <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link for disabled travel pass replacement"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Disabled%20Replace\`
+            "
+      >
+        Send link to review further information
+      </button>
+
+
+
+
+
+
    `,
   {
     buttonLabel: "Apply for disabled travel permit",
