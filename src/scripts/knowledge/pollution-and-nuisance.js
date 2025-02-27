@@ -489,7 +489,7 @@ const bumbleBeesTreatment = new ContentPaN(
     <p>
       If the pests are located in a communal area (The area that is shared by multiple Council Housing properties) or 
       required treatment for a domestic properties such as Council Housing, Housing Association, Privately Owned, Private Rented,
-      then the treatment cost for Bumble Bees is <strong>£75.50.</stronge>
+      then the treatment cost for Bumble Bees is <strong>£75.50.</strong>
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
