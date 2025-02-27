@@ -270,6 +270,7 @@ class FormDaMH extends CoreDaMH {
         to the general public.
       </p>
       <p>If you are unsure please ask the club or contact your SNIPS mentor.</p>
+      <p><a href="mailto:SNIPSBusinessSupport@sheffield.gov.uk">SNIPSBusinessSupport@sheffield.gov.uk</a></p>     
     `,
     { buttonLabel: "", formName: "" },
     { typeKey: "short_breaks_information_to_service" },
