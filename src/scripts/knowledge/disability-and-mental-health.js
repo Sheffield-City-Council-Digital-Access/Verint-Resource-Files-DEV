@@ -269,7 +269,7 @@ class FormDaMH extends CoreDaMH {
         “specialist” clubs are delivered for disabled children only and are not open
         to the general public.
       </p>
-      <p>If you are unsure please ask the club or contact your SNIPS mentor.</p>
+      <p>If you are unsure please ask the club or contact your SNIPS mentor via: <a href="mailto:SNIPSBusinessSupport@sheffield.gov.uk">SNIPSBusinessSupport@sheffield.gov.uk</a></p>   
     `,
     { buttonLabel: "", formName: "" },
     { typeKey: "short_breaks_information_to_service" },
