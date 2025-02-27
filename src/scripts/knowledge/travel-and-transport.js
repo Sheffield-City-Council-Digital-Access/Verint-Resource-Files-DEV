@@ -427,7 +427,7 @@ const disabledPersonsTravelPermit = new ContentTaT(
 
     categories: ["Travel and Transport"],
   },
-  { date: "27/11/2024", name: "Andy Walker" }
+  { date: "27/02/2025", name: "Dinah Williams" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
