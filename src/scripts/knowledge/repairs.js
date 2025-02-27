@@ -92,31 +92,6 @@ class CoreR {
     { date: "24/02/2025", name: "Shahzad Athar" }
   );
   
-  const electricalandHeating = new ContentR(
-    "electricalandheating",
-    "Electrical and Heating",
-    "",
-    `
-    <h2>Electrical Items</h2>
-    <p>For electrical fittings, additional sockets, etc., email 
-    <a href="mailto:ElectricalSheffield@Sheffield.go.uk" class="email">ElectricalSheffield@Sheffield.go.uk</a>.</p>
-    
-    <h2>Heating Items</h2>
-    <p>For extra radiators, email 
-    <a href="mailto:GasSheffield@sheffield.gov.uk" class="email">GasSheffield@sheffield.gov.uk</a>.</p>
-
-    `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "" },
-    { typeKey: "" },
-    {
-      type: "",
-      keywords: [],
-      categories: [],
-    },
-    { date: "24/02/2025", name: "Shahzad Athar" }
-  );
-  
   const blacksmith = new ContentR(
     "blacksmith",
     "Blacksmith",
@@ -439,6 +414,31 @@ class CoreR {
       categories: [],
     },
     { date: "27/02/2025", name: "Shahzad Athar" }
+  );
+
+  const electricalandHeating = new ContentR(
+    "electricalandheating",
+    "Electrical and Heating",
+    "",
+    `
+    <h2>Electrical Items</h2>
+    <p>For electrical fittings, additional sockets, etc., email 
+    <a href="mailto:ElectricalSheffield@Sheffield.go.uk" class="email">ElectricalSheffield@Sheffield.go.uk</a>.</p>
+    
+    <h2>Heating Items</h2>
+    <p>For extra radiators, email 
+    <a href="mailto:GasSheffield@sheffield.gov.uk" class="email">GasSheffield@sheffield.gov.uk</a>.</p>
+
+    `,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "24/02/2025", name: "Shahzad Athar" }
   );
 
   const electricalTesting  = new ContentR(
