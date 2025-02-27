@@ -175,8 +175,8 @@ const bedBugTreatment = new ContentPaN(
   "Find out how to report and submit a bed bug sample for treatment, including treatment costs, eligibility for reduced fees, and the process for larger properties.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
-      <h3>Sample Required</h3>
-      <p>
+`      <h3>Sample Required</h3>
+`      <p>
         Before we can provide treatment for bed bugs in your domestic property, we
         will need a sample of the pest.
       </p>
@@ -3078,7 +3078,7 @@ const cleanAirZone = new MenuPaN(
 const pollutionAndNuisance = new ServicePaN(
   "pollutionAndNuisance",
   "Pollution and Nuisance",
-  `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone`,
+  `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone, enviro, eps, env`,
   [
     abandonedVehicles,
     pestControl,
