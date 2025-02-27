@@ -1810,7 +1810,6 @@ const assetManagementAndRepairs = new MenuH(
     adaptationOther,
     asbestos,
     carbonmonoxide,
-    chaseProgressOfAdaptation,
 	  communalAerials,
 	  communalAreas,
 	  communalAreasFireSafety,
