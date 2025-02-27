@@ -479,9 +479,9 @@ const welfareReform = new ContentH(
       </div>
     </details>
     `,
-    { buttonLabel: "Report Housing Adaptations ", formName: "hou_adaptations" },
+    { buttonLabel: "Housing Adaptations Request", formName: "hou_adaptations" },
+    { typeKey: "repairs_and_investment_transferred_to_service" },
     { typeKey: "repairs_and_investment_information_provided" },
-    { typeKey: "repairs_and_investment_information_requested" },
     {
       type: "Information",
       keywords: [
@@ -493,7 +493,7 @@ const welfareReform = new ContentH(
       ],
       categories: ["Housing"],
     },
-    { date: "10/10/2024", name: "George Whitehouse" }
+    { date: "27/02/2025", name: "Nathan Smith" }
   );
 
 const otherAdaptationRequest = new ContentH(
@@ -533,11 +533,11 @@ const otherAdaptationRequest = new ContentH(
     <p>We will take action against any installations that are in breach of Health and Safety regulations.</p> 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "Housing Adaptations Request",
+    formName: "hou_adaptations",
   },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
   { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
 
   {
     type: "Information",
@@ -783,11 +783,11 @@ const asbestos = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "Raise Housing Decant Enquiry",
+    formName: "hou_sustainment_decants",
   },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
   { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Information",
     keywords: [
@@ -799,7 +799,7 @@ const asbestos = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "10/10/2024", name: "George Whitehouse" }
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const carbonmonoxide = new ContentH(
@@ -839,8 +839,8 @@ const carbonmonoxide = new ContentH(
 
 `,
   {
-    buttonLabel: "Report Housing Enquiry",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -874,8 +874,8 @@ const communalAerials = new ContentH(
   </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -922,11 +922,11 @@ const communalAreas = new ContentH(
     </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "Raise Housing Enquiry ",
+    formName: "hou_estates_enquiry",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -942,7 +942,7 @@ const communalAreas = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "10/10/2024", name: "George Whitehouse" }
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const communalAreasFireSafety = new ContentH(
@@ -971,8 +971,8 @@ const communalAreasFireSafety = new ContentH(
     <p>You can have a small doormat if it is rubber backed. Edged and trimmed natural plants in ceramic, earthenware or metal pots, as long as they are not placed on stairs or landings which are the means of escape from the building.</p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -988,6 +988,19 @@ const communalAreasFireSafety = new ContentH(
     categories: ["Housing"],
   },
   { date: "10/10/2024", name: "George Whitehouse" }
+);
+
+const decants = new FormH(
+  "decants",
+  "Decants",
+  "Request a decant due to asbestos, infestation or linked to a previously reported repair.",
+  "hou_sustainment_decants",
+  {
+    type: "Enquiry",
+    keywords: ["Decant", "Housing", "Asbestos", "Repair", "Infestation"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const districtHeating = new ContentH(
@@ -1027,8 +1040,8 @@ const districtHeating = new ContentH(
   </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1153,8 +1166,8 @@ const doorEntrySystems = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1190,8 +1203,8 @@ const emergencyCredit = new ContentH(
       </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1236,8 +1249,8 @@ const emergencyRepairs = new ContentH(
   </ul>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1268,8 +1281,8 @@ const homeImprovementRequests = new ContentH(
   </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1301,8 +1314,8 @@ const homeownerDisconnection = new ContentH(
   </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1318,6 +1331,19 @@ const homeownerDisconnection = new ContentH(
     categories: ["Housing"],
   },
   { date: "10/10/2024", name: "George Whitehouse" }
+);
+
+const inspectionRequest = new FormH(
+  "inspectionRequest",
+  "Untidy gardens and communal areas",
+  "Request inspection of tenants own aids and adaptations or a general repair.",
+  "hou_inspection_request",
+  {
+    type: "Request",
+    keywords: ["Inspection", "Adaptation", "Repair", "Alteration", "Aid"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const loststolenkeys = new ContentH(
@@ -1347,8 +1373,8 @@ const loststolenkeys = new ContentH(
       </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1388,12 +1414,12 @@ const newAndExistingRepairs = new ContentH(
     and communal/shared repairs to the block in which they live.
   </p> 
   `,
-  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+  { buttonLabel: "Raise Housing Decant Enquiry", formName: "hou_sustainment_decants" },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
   { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
 
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "George Whitehouse" }
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const payment = new ContentH(
@@ -1482,8 +1508,8 @@ const payment = new ContentH(
 </details>
 `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1590,8 +1616,8 @@ const programmedWorks = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1621,8 +1647,8 @@ const propertyAge = new ContentH(
   
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1680,8 +1706,8 @@ const noHeatNoWater = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1768,8 +1794,8 @@ const tenantsOwnImprovements = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1793,17 +1819,20 @@ const assetManagementAndRepairs = new MenuH(
   "Asset Management And Repairs",
   "Information on asset management, including asbestos, carbon monoxide, communal areas, district heating, emergency repairs, and various home improvement services.",
   [
+    adaptations,
     asbestos,
     carbonmonoxide,
 	  communalAerials,
 	  communalAreas,
 	  communalAreasFireSafety,
+    decants,
 	  districtHeating,
 	  doorEntrySystems,
 	  emergencyCredit,
 	  emergencyRepairs,
 	  homeImprovementRequests,
 	  homeownerDisconnection,
+    inspectionRequest,
 	  loststolenkeys,
 	  newAndExistingRepairs,
 	  noHeatNoWater,
@@ -1812,7 +1841,6 @@ const assetManagementAndRepairs = new MenuH(
 	  propertyAge,
 	  refunds,
 	  tenantsOwnImprovements,
-    adaptations
   ]
 );
 
@@ -1930,6 +1958,18 @@ const fencesCouncilHousing = new ContentH(
   { date: "09/10/2024", name: "Elliott Griffiths" }
 );
 
+const garageRequest = new FormH(
+  "garageRequest",
+  "Garages",
+  "Use this section to accept an offer, decant, request a plot application form, purchase or quit a garage.",
+  "hou_sustainment_garage",
+  {
+    type: "Request",
+    keywords: ["Garage"],
+    categories: ["Housing", "Estate"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
+);
 
 const gardenPledgeScheme = new ContentH(
   "gardenPledgeScheme",
@@ -2041,7 +2081,7 @@ const generalCouncilHousing = new ContentH(
     <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx"target="_blank">Telephone Directory</a>
   </p>
   `,
-  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   {
@@ -2350,6 +2390,19 @@ const benefitCap = new ContentH(
     },
     { date: "05/11/2024", name: "Andy Walker" }
   );
+
+  const claimsForMoney = new FormH(
+    "claimsForMoney",
+    "Claims for money",
+    "Use this section for claims for; benefits, decoration grants or discretionary payments, following repair or programmed works, local assistance scheme, loss of earnings, personal injury, SCC home insurance or tenants own improvements",
+    "hou_sustainment_claims",
+    {
+      type: "Report",
+      keywords: ["Claim", "Money"],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "27/02/2025", name: "Nathan Smith" }
+  );
   
 const contactHousingBenefits = new ContentH(
   "contactHousingBenefits",
@@ -2505,6 +2558,7 @@ const contactHousingBenefits = new ContentH(
       benefitFraud,
       benefitOnTwoHomes,
       benefitsClawback,
+      claimsForMoney,
       changeOfCircumstances,
       contactHousingBenefits,
       localAssistanceScheme,
@@ -2569,7 +2623,7 @@ const leaseholderInformation = new ContentH(
       You will therefore be responsible for the behaviour of your sub-tenant(s). This would include, for example, ensuring that they do not cause a nuisance to neighbours.
     </p>
   `,
-  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
@@ -6072,6 +6126,34 @@ const tenancyEnforcementASB = new ContentH(
 );
 //#endregion Tenancy enforcement
 
+//#region Tenancy sustainment
+
+const boundaries = new FormH(
+  "boundaries",
+  "Council housing and private land boundaries",
+  "Report boundary issues with Council housing land, private land and other Council owned land.",
+  "hou_sustainment_boundary",
+  {
+    type: "Report",
+    keywords: ["Boundaries", "Boundary"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
+);
+
+const burglarAlarmRequest = new FormH(
+  "burglarAlarmRequest",
+  "Burglar alarms",
+  "Request new or chase installation, missing or damaged alarm, alarm removal, a repair or alarm code.",
+  "hou_sustainment_bur_alarm",
+  {
+    type: "Request",
+    keywords: ["Burlgar", "Alarm"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
+);
+
 const fobsandKeys = new ContentH(
   "fobsandKeys",
   "Fobs and Keys",
@@ -6207,7 +6289,18 @@ const fobsandKeys = new ContentH(
   { date: "06/11/2024", name: "Shahzad Athar" }
 );
 
-
+const untidyGardensCommunalAreas = new FormH(
+  "untidyGardensCommunalAreas",
+  "Untidy gardens and communal areas",
+  "Report untidy Council gardens and untidy Council communal areas",
+  "hou_sustainment_garden",
+  {
+    type: "Report",
+    keywords: ["Garden", "Untidy", "Communal"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
+);
 
 const housingServiceParkingPermits = new ContentH(
   "housingServiceParkingPermits",
@@ -6870,8 +6963,11 @@ const tenancySustainment = new MenuH(
   "Tenancy Sustainment",
   "Support for maintaining tenancies, including information on permissions, tenancy agreements, name changes, parking permits, and council housing services.",
   [
+    boundaries,
+    burglarAlarmRequest,
     fencesCouncilHousing,
     fobsandKeys,
+    untidyGardensCommunalAreas,
     housingServiceParkingPermits,
     nameChanges,
     permissions,
@@ -6890,7 +6986,6 @@ const tenancySustainment = new MenuH(
     "Housing",
     "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
     [
-      adaptations,
       assetManagementAndRepairs, 
       estatesAndEnvironments, 
       generalCouncilHousing, 
