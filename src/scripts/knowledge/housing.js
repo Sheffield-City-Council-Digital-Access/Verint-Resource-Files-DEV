@@ -6145,7 +6145,7 @@ const burglarAlarmRequest = new FormH(
   "burglarAlarmRequest",
   "Burglar alarms",
   "Request new or chase installation, missing or damaged alarm, alarm removal, a repair or alarm code.",
-  "hou_sustainment_bur_alarm",
+  "hou_sustainment_bur_alar",
   {
     type: "Request",
     keywords: ["Burlgar", "Alarm"],
