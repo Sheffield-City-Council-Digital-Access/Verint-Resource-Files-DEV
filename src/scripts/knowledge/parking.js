@@ -1070,6 +1070,7 @@ const greenParkingPermit = new ContentP(
 			car parks are restricted to a maximum stay period of 6 hours for green permit
 			holders:
 		</p>
+
 		<ul>
 			<li>Wellington Street car park (old fire station site)</li>
 			<li>Carver Lane car park</li>
@@ -1434,6 +1435,140 @@ const residentsPermit = new ContentP(
   "Residents Permit",
   "Learn about the eligibility, cost, and application process for residents parking permits, including vehicle and address verification requirements.",
   `
+
+  <h3>New and previous tenancies, including students, or newly purchased properties</h3>
+
+<p>
+If you are moving into a new property and the Resident parking permit application shows the price being offered is not correct, this is likely to be because the previous tenants/owners have permits that are still valid.
+</p>
+<p>
+Email your signed tenancy agreement or proof of property purchase to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>. Add the subject “Please check the address and cancel existing permits".
+</p>
+<p>
+We can then identify the new residents. This should allow the cancellation of the existing permits. Once this is done, and an email confirming this has been received, the correct pricing should then be in place for applications to go ahead.
+</p>
+<p>
+If you have moved or are moving from an address where you hold a parking permit, email us with the subject “Please cancel my permit” and specify the date that this can be completed. We'll act on your instructions to allow the new tenants to buy their permits at the correct price.
+</p>
+<p>
+Get in touch with us for any other problems regarding parking permit applications or pricing.</p>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>New and previous tenancies, including students, or newly purchased properties</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Exceptions
+            </summary>
+            <div class="details-accordion-content">
+                 <p>
+                    You cannot apply for a permit if you live in a car free development. You should check with your landlord, letting agent or solicitor if your property is car free.
+                </p>
+                <p>
+                You can only apply for one permit per household if you're a resident of Holme Lane and Loxley New Road schemes.
+                </p>
+                <p>
+                You can only apply for one permit per household if you're a resident of the Hawley Street Car Park scheme. In addition, a maximum of 24 permits will be issued for this scheme at any one time.
+                </p>
+            </div>
+        </details>
+<details class="details-accordion">
+            <summary>
+                Number of permits
+            </summary>
+            <div class="details-accordion-content">
+         <p>You can apply for 2 permits per household. We sometimes consider applications for a third permit, 
+         but we may ask for additional information to support your request.</p>
+
+<p>We would not issue more than two resident permits to households in the following zones:</p>
+<ul>
+  <li>City Centre Inner</li>
+  <li>City Centre Outer</li>
+  <li>Botanical</li>
+  <li>Porterbrook</li>
+  <li>Stalker Lees</li>
+  <li>Sharrow Vale</li>
+  <li>Broomhill</li>
+  <li>Beaufort Road and Severn</li>
+  <li>Chandos Street</li>
+  <li>College Street</li>
+  <li>Endcliffe</li>
+  </ul>
+
+            </div>
+        </details>
+    </div>
+</details>
+<div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Hawley Street
+            </summary>
+            <div class="details-accordion-content">
+                 <p>
+                 Residents of the Hawley Street Flats Car Park scheme can only apply for 1 permit per household.
+                </p>
+                <p>
+                We only allow 30 permits in total for the scheme due to the size of the car park.
+                </p>
+            </div>
+        </details>
+        <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Kelham Island and Neepsend Parking Scheme
+            </summary>
+            <div class="details-accordion-content">
+                 <p>
+You can apply for one permit per household. We may consider applications for a second permit for properties in Neepsend,
+ but we may ask for additional information to support your request.                
+  </p>
+                <p>
+                We would not issue more than one permit to properties in Kelham Island.
+                </p>
+         
+            </div>
+        </details>
+                <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                How long a permit lasts
+            </summary>
+            <div class="details-accordion-content">
+                 <p>
+                Permits are issued for one year. It's your responsibility to ensure your permits are renewed.              
+                </p>
+            </div>
+        </details>
+
+                        <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Apply for a permit
+            </summary>
+            <div class="details-accordion-content">
+             <p>
+             You can apply for a parking permit through our parking portal.
+             </p>
+<p>
+Enter your address to see if you're eligible for a permit and complete the application form.
+</p>
+<p>
+Permits may be issued on the day of application, but if we need to review your application further we'll respond within 5 working days.
+</p>
+<p>
+Some applications may require further investigation. If your permit requires this, we will contact you further within 28 working days.
+</p>
+
+            </div>
+        </details>
+
+
+
 		<h3>About the Permit</h3>
 		<p>
 			Residents parking permits are for residents living within a parking permit
