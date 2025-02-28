@@ -353,14 +353,14 @@ const birdsandPigeonsTreatment = new ContentPaN(
     </section>
   `,
   {
-    buttonLabel: "Book treatment for Birds and Pegions",
+    buttonLabel: "Book treatment for Birds and Pigeons",
     formName: "pest_control_treatment",
   },
   { typeKey: "pest_control_transfer_to_service" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Birds and Pegions", "Treatment", "Pests", "Vermin"],
+    keywords: ["Birds and Pigeons", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
@@ -368,7 +368,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const biscuitBeetlesTreatment = new ContentPaN(
