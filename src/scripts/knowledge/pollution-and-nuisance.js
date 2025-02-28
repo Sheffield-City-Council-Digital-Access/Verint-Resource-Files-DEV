@@ -68,8 +68,8 @@ const badgerProtection = new ContentPaN(
     </p>
     <p>
       Under the 1992 Act it is now illegal to damage a badger sett or cause a dog to
-      enter a set. It is also an offence to attempt any of these actions or
-      recklessly allow a dog to enter a set. 
+      enter a sett. It is also an offence to attempt any of these actions or
+      recklessly allow a dog to enter a sett. 
     </p>
     <p>
       It is also an offence to possess a dead Badger, which has been acquired
@@ -1113,14 +1113,14 @@ const fleasTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Fleas",
     formName: "pest_control_treatment",
   },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
   {
-    type: "Information",
+    type: "Book",
     keywords: ["Flea"],
     categories: ["Pollution and Nuisance", "Environmental", "Pest Constrol"],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const fliesTreatment = new ContentPaN(
@@ -2502,7 +2502,7 @@ const waspsTreatment = new ContentPaN(
       Officers carry equipment that enables them to treat a nest located at height.
       In most cases the officer will be able to carry out a successful treatment using such equipment. 
       If any further access equipment is required to treat the nest our officer will inform you of this 
-      at the time of the visit. If further access is equipment is required, then it would possibly mean 
+      at the time of the visit. If further access to equipment is required, then it would possibly mean 
       an added cost. If your customer is unsure about the possible additional cost, escalate pest control 
       enquiry and an officer will contact the customer about it.
       <br>
@@ -2526,7 +2526,7 @@ const waspsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const weevilsTreatment = new ContentPaN(
