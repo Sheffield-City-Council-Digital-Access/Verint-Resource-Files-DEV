@@ -374,7 +374,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
 const biscuitBeetlesTreatment = new ContentPaN(
   "biscuitBeetlesTreatment",
   "Biscuit Beetles Treatment",
-  "Find out how to submit a sample for Biscuit Beetle treatment, including treatment costs, eligibility for reduced fees, and the process for larger properties or commercial inquiries.",
+  "Find out how to submit a sample for Biscuit Beetle treatment, including treatment costs, eligibility for reduced fees, and the process for larger properties or commercial enquiries.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -433,7 +433,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
     </p>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Multiple Occupation House (HMO)</h3>
+        <h3>Commercial and Houses in multiple occupation (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -477,7 +477,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
       "HMO"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const bumbleBeesTreatment = new ContentPaN(
@@ -523,7 +523,7 @@ const bumbleBeesTreatment = new ContentPaN(
     
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Multiple Occupation House (HMO)</h3>
+        <h3>Commercial and Houses in multiple occupation (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -567,7 +567,7 @@ const bumbleBeesTreatment = new ContentPaN(
       "HMO"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const carpetBeetlesTreatment = new ContentPaN(
@@ -642,7 +642,7 @@ const carpetBeetlesTreatment = new ContentPaN(
     </p>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Multiple Occupation House (HMO)</h3>
+        <h3>Commercial and Houses in multiple occupation (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -686,7 +686,7 @@ const carpetBeetlesTreatment = new ContentPaN(
       "HMO"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const clusterFliesTreatment = new ContentPaN(
