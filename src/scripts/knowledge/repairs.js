@@ -361,7 +361,54 @@ class CoreR {
     "District Heating Switch2 Setup",
     "",
     `
+     <p>New tenants do not have to register with Switch2 when they move into their new property; 
+     it is done automatically on the first Wednesday after the property is let.</p>
 
+     <p>If a tenant gets the keys early, then there will probably be a delay with their card. 
+     If this is the case, they will have to call us and we will have to set up the account 
+     earlier, but we must stress: <span class="important">if there is no power on, then there 
+     will be no heating, so always check this first with the customer.</span></p>
+
+    <h3>Freehold - District Heating</h3>
+
+    <p>If a customer has bought their property but we still maintain the district heating, 
+    when logging a job on T-Mobile, start the order comments with <strong>SOLD</strong>, 
+    then the description of the repair.</p>
+
+    <h3>Advice for New Tenants Who Have Had a Heat Meter Installed</h3>
+
+    <ul>
+        <li>The heating, hot water, or the heat meter will not work until there is power on at 
+        the property. So, a new tenant will have to organize this first.</li>
+        <li>When the power is sorted out, the meter will be reset back to zero by the previous 
+        tenant.</li>
+        <li>Tenants can then press the emergency credit button, and this will give them 
+        <strong>£10 emergency credit</strong> (this will have to be paid back). This will last 
+        them until the account is set up and the card ordered (see below).</li>
+    </ul>
+
+    <h3>Automatic Account Setup</h3>
+
+    <ul>
+      <li>When properties are let, an account will automatically be set up with Switch2 for the 
+      new tenant, and a barcode will be sent by first-class post in a letter. Tenants can use 
+      this barcode to top up their meter until the new payment card arrives (this usually takes 5 
+      working days). This can be used at any shop with a PayPoint or Post Office.</li>
+      <li>If they wish to receive the package (if it's not left in the property), they can call 
+      <strong>27 35595</strong> direct and we will send one out. This package has information 
+      about the heat meter and the payment options, including an application for Direct Debit.</li>
+
+    <h3>Lost or Missing Cards</h3>
+
+    <ul>
+        <li><strong>Lost cards:</strong> Ask customers to call <strong>0333 321 2010.</strong></li>
+        <li><strong>Chase their meter card:</strong> Ask customers to contact Switch2 at <strong>0333 321 2010.</strong></li>
+    </ul>
+
+    <h3>Payment and Suppliers</h3>
+
+    <p>Tenants pay the council and will not be able to look for alternate suppliers.</p>
+    <p>Switch2 handles our billing and accounts, and fits and maintains the meters.</p>
     
     `
     ,
@@ -373,7 +420,7 @@ class CoreR {
       keywords: [],
       categories: [],
     },
-    { date: "27/02/2025", name: "Shahzad Athar" }
+    { date: "03/03/2025", name: "Shahzad Athar" }
   );
 
   const doorFurniture  = new ContentR(
@@ -381,8 +428,33 @@ class CoreR {
     "Door Furniture ",
     "",
     `
+    <h3>Category Fault</h3>
+    <p>Door Furniture Repairs</p>
 
+    <h3>Contract</h3>
+    <p>Responsive</p>
     
+    <h3>Warranty</h3>
+    <p>Identified from the OHMS system. If repair is identified as within a warranty period, 
+    invoke the warranty repair process.</p>
+
+    <h3>Key questions and information</h3>
+    <ul>
+        <li>Ask the tenant for details of door type (i.e., PVCu, Wood, Other) for entry into T-Mobile.</li>
+        <li>How was the damage caused? If caused by tenant, inform the tenant this will be logged
+        as a recharge.</li>
+    </ul>
+
+    <h3>Recharge</h3>
+    <p>N/A</p>
+
+  <h3>Outcome</h3>
+    <ul>
+        <li>Order Remedy Repair on T-Mobile.</li>
+        <li>If due to deliberate damage and not agreed to recharge, do not raise a repair unless 
+        it's a health & safety (H&S) issue.</li>
+    </ul>
+
     `
     ,
     { buttonLabel: "", formName: "" },
@@ -393,7 +465,7 @@ class CoreR {
       keywords: [],
       categories: [],
     },
-    { date: "27/02/2025", name: "Shahzad Athar" }
+    { date: "03/03/2025", name: "Shahzad Athar" }
   );
 
   const drainage  = new ContentR(
@@ -401,6 +473,37 @@ class CoreR {
     "Drainage",
     "",
     `
+    <h3>Category Fault</h3>
+    <p>N/A</p>
+  
+    <h3>Repairs</h3>
+    <ul>
+        <li>Repairs to Drainage System.</li>
+        <li>Remedy Blocked or Leaking Foul Drain.</li>
+        <li>Remedy Blocked or leaking soil stack.</li>
+    </ul> 
+
+    <h3>Contract</h3>
+    <p>Responsive</p>
+
+    <h3>Warranty</h3>
+    <p>Identified from the OHMS system. If repair is identified as within a warranty period, 
+    invoke the warranty repair process.</p>
+
+    <h3>Key Questions and Information</h3>
+    <ul>
+        <li>See Yorkshire Water Procedure. If unsure and for further information concerning Communal Drainage Repairs.</li>
+        <li>If there is a pop-up (i.e., for Gas No Access: HF, NA or CI code, No Repair: NR code, or ALMO), 
+        continue to order a repair (if applicable) then immediately contact the RPIT Gas Team.</li>
+    </ul>
+
+    <h3>Recharge</h3>
+    <p>N/A</p>
+
+    <h3>Outcome</h3>
+    <ul>
+        <li>Log job on T-Mobile.</li>
+    </ul>
 
     
     `
@@ -413,7 +516,7 @@ class CoreR {
       keywords: [],
       categories: [],
     },
-    { date: "27/02/2025", name: "Shahzad Athar" }
+    { date: "03/03/2025", name: "Shahzad Athar" }
   );
 
   const electricalandHeating = new ContentR(
@@ -446,7 +549,43 @@ class CoreR {
     "Electric Testing",
     "",
     `
+    <p>If the system states <strong>"Live Electrical Test",</strong> this is ordered by RPIT. 
+    Any enquiries relating to this should be directed to the relevant hub.</p>
 
+    <p><strong>If there has been a Mutual Exchange,</strong> these are dealt with by 
+    <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>.</p>
+
+    <p><strong>Domestic Electrical Tests</strong> are carried out every 5 years.</p>
+
+    <h3>Key Questions and Information</h3>
+
+    <p><strong>If there is a pop-up status for "VT",</strong> this indicates an electrical testing 
+    no access issue. Contact <a href="mailto:ElectricalSheffield@sheffield.gov.uk">ElectricalSheffield@sheffield.gov.uk</a> 
+    for an appointment to be made with the tenant.</p>
+
+    <h3>Can You Please Advise All Officers Involved with the Following:</h3>
+    <ul>
+        <li>New Tenancy</li>
+        <li>Electric & Gas Reinstate</li>
+        <li>Boiler Installation</li>
+        <li>Decant/Disrepair</li>
+        <li>Cap off make safe</li>
+        <li>Disconnect/Reconnect Electric or Gas Cooker</li>
+        <li>Electric & Gas Reinstate</li>
+        <li>Mutual Exchange</li>
+        <li>Electric & Gas Service Check</li>
+        <li>Dispersed Properties</li>
+        <li>Electric & Gas Reinstate</li>
+    </ul>
+
+    <p>Email all relevant information above to 
+    <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>.</p>
+
+    <h3>Contact Information for Specific Enquiries:</h3>
+    <ul>
+        <li>Gas Service enquiries: <a href="mailto:GasSheffield@sheffield.gov.uk">GasSheffield@sheffield.gov.uk</a></li>
+        <li>Electric enquiries: <a href="mailto:ElectricalSheffield@sheffield.gov.uk">ElectricalSheffield@sheffield.gov.uk</a></li>
+    </ul>
     
     `
     ,
@@ -458,7 +597,7 @@ class CoreR {
       keywords: [],
       categories: [],
     },
-    { date: "27/02/2025", name: "Shahzad Athar" }
+    { date: "03/03/2025", name: "Shahzad Athar" }
   );
 
   const externalContractors   = new ContentR(
@@ -466,7 +605,8 @@ class CoreR {
     "External Contractors",
     "",
     `
-
+    <p>If a tenant calls and the job is with a contractor, 
+    please call the relevant team in the back office if needing to chase.</p>
     
     `
     ,
