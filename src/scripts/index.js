@@ -1162,6 +1162,21 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     }
   }
 
+  if (
+    pageName === "page_review" ||
+    pageName === "page_declaration" ||
+    pageName === "save" ||
+    pageName === "complete"
+  ) {
+    if ($("#dform_progressbar_sheffield").length) {
+      $("#dform_progressbar_sheffield, #dform_ref_display").hide();
+    }
+  } else {
+    if ($("#dform_progressbar_sheffield").length) {
+      $("#dform_progressbar_sheffield, #dform_ref_display").show();
+    }
+  }
+
   if (pageName === "save") {
     KDF.setVal("txt_resume_form", "true");
     $("#dform_page_complete").css({
@@ -2338,8 +2353,12 @@ function checkDate(id, dd, mm, yy, element) {
         .toString()
         .padStart(2, "0")}-${dd.toString().padStart(2, "0")}`;
       const localFormat = new Date(date).toLocaleDateString("en-GB");
-      $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
-      $(`#${id.replace("_date_", "_dt_")}`).val(date);
+      $(`#${id.replace("_date_", "_txt_")}`)
+        .val(localFormat)
+        .change();
+      $(`#${id.replace("_date_", "_dt_")}`)
+        .val(date)
+        .change();
     } else {
       $(`#${id.replace("_date_", "_txt_")}`).val("");
       $(`#${id.replace("_date_", "_dt_")}`).val("");
