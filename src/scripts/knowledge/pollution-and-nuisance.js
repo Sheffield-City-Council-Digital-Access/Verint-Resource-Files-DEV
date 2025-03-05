@@ -2602,15 +2602,6 @@ const pestControl = new MenuPaN(
 
 //#endregion Pest Control
 
-
-
-const animalControl = new MenuPaN(
-  "animalControl",
-  "Animal Control",
-  "Animal control treatments, services and pricing",
-  [handoverDogtoCouncil]
-);
-
 const reportNeedlesGlass = new FormPaN(
   "reportNeedlesGlass",
   "Needles or broken glass",
@@ -2675,7 +2666,7 @@ const reportFlyTipping = new FormPaN(
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
-
+ 
 
 const handoverDogtoCouncil = new FormPaN(
   "handoverDogtoCouncil",
@@ -2685,13 +2676,7 @@ const handoverDogtoCouncil = new FormPaN(
   {
     type: "Report",
     keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
-    categories: [
-      "Pollution and Nuisance",
-      "Environmental",
-      "Pest Control",
-      "Animal Control",
-      "Environmental Health",
-    ],
+    categories: ["Pollution and Nuisance", "Environmental", "Pest Control", "Animal Control", "Environmental Health"],
   },
   { date: "05/03/2025", name: "Sam Coupland" }
 );
@@ -3136,6 +3121,13 @@ const cleanAirZone = new MenuPaN(
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
+
+const animalControl = new MenuPaN(
+  "animalControl",
+  "Animal Control",
+  "Animal control treatments, services and pricing",
+  [handoverDogtoCouncil]
+);
 
 const pollutionAndNuisance = new ServicePaN(
   "pollutionAndNuisance",
