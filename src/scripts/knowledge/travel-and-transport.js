@@ -56,7 +56,7 @@ class FormTaT extends CoreTaT {
 
 const zoomZeroFare = new ContentTaT(
   "zoomZeroFare",
-  "Zoom Zero travel pass",
+  "Zoom Zero Travel Pass",
   "(Previously known as a Children's Travel Pass) Find details on eligibility, application, appeals, and replacement options for a Zoom Zero travel pass in Sheffield.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
