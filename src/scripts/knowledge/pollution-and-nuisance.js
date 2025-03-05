@@ -2602,32 +2602,7 @@ const pestControl = new MenuPaN(
 
 //#endregion Pest Control
 
-const handoverDogtoCouncil = new ContentPaN(
-  "handoverDogtoCouncil",
-  "Handover Dog to Council",
-  "",
-  `
-    
-  `,
-  {
-    buttonLabel: "Handover Dog to Council",
-    formName: "animal_control",
-  },
-  { typeKey: "pest_control_transfer_to_service" },
-  { typeKey: "pest_control_information_provided" },
-  {
-    type: "Book",
-    keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
-    categories: [
-      "Pollution and Nuisance",
-      "Environmental",
-      "Pest Control",
-      "Animal Control",
-      "Environmental Health",
-    ],
-  },
-  { date: "11/10/2024", name: "Shahzad Athar" }
-);
+
 
 const animalControl = new MenuPaN(
   "animalControl",
@@ -2699,6 +2674,26 @@ const reportFlyTipping = new FormPaN(
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
+
+const handoverDogtoCouncil = new FormPaN(
+  "handoverDogtoCouncil",
+  "Handover Dog to Council",
+  "Hand over a dog to the council",
+  "report_dangerous_dog",
+  {
+    type: "Report",
+    keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Pest Control",
+      "Animal Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
 );
 
 const reportDangerousDog = new FormPaN(
