@@ -2742,8 +2742,8 @@ const reportStrayingDog = new FormPaN(
 
 const reportDogAsLost = new FormPaN(
   "reportDogAsLost",
-  "Missing dog",
-  "Report a missing dog",
+  "Lost dog",
+  "Report a lost dog",
   "report_dog_as_lost",
   {
     type: "Report",
