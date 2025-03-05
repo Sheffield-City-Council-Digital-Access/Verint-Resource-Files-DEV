@@ -126,8 +126,8 @@ const makingAPayment = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -169,8 +169,8 @@ const customerPaidTwice = new ContentP(
       </p>
     `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -209,10 +209,27 @@ const appealBlueBadge = new ContentP(
       
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_tarnsferred_to_service" },
+  { typeKey: "blue_badge_transferred_to_service" },
   { typeKey: "blue_badge_information_provided" },
-  { type: "Appeal", keywords: [], categories: ["Parking"] },
-  { date: "01/10/2024", name: "Shahzad Athar" }
+  {
+    type: "Appeal",
+    keywords: [
+      "Car",
+      "blu",
+      "bb",
+      "blue bad",
+      "bdge",
+      "appeel",
+      "serivce",
+      "parkng",
+      "prking info",
+      "Blue Badge",
+      "blue badge",
+      "parking",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "19/02/2025", name: "Andy Walker" }
 );
 
 const applyBlueBadge = new ContentP(
@@ -248,7 +265,7 @@ const applyBlueBadge = new ContentP(
           no charge.
         </li>
         <li>
-          Terminally Ill - A terminally ill applicant will have a DS1500 – A form
+          Terminally ill - A terminally ill applicant will have a DS1500 – A form
           giving medical facts relating to cancer or an SR1 form used for claiming
           benefits under the rules for people with terminal cancer. There is a charge
           of £10 for all badges and the badge is issued for a year, should they apply
@@ -265,7 +282,7 @@ const applyBlueBadge = new ContentP(
           onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
               KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Gov%20UK\`
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=apply%20for%20a%20Blue%20Badge\`
           ">
           Send link to apply online
         </button>
@@ -282,13 +299,13 @@ const applyBlueBadge = new ContentP(
     </summary>
     <div class="accordion-content">
       <p>
-            You may be able to provide the customer with an update to their
-            application using the case notes or status update. All cases will be dealt
-            with in date order, there are no exceptions to this regardless of
-            circumstances so do not raise requests of this nature to FFT. Blue Badge
-            applications will be assessed within 28 days calendar days from the date
-            the application was received. The order date of the blue badge is not the
-            despatch date from our 3rd party who produce the Blue Badge.
+  <ul>
+    <li>Provide the customer with an update to their application using case notes or status update.</li>
+    <li>All cases will be dealt with in date order, with no exceptions regardless of circumstances.</li>
+    <li>Do not raise requests of this nature to FFT.</li>
+    <li>Blue Badge applications will be assessed within 28 calendar days from the date the application was received.</li>
+    <li>The order date of the Blue Badge is not the despatch date from the 3rd party who produces the Blue Badge.</li>
+  </ul>
           </p>
           <p>
             Once Sheffield City Council have ordered the Blue Badge the 3rd Party have
@@ -301,10 +318,27 @@ const applyBlueBadge = new ContentP(
     buttonLabel: "Apply for a blue badge",
     formName: "blue_badge_application",
   },
-  { typeKey: "blue_badge_tarnsferred_to_service" },
+  { typeKey: "blue_badge_transferred_to_service" },
   { typeKey: "blue_badge_information_provided" },
-  { type: "Apply", keywords: ["Blue Badge"], categories: ["Parking"] },
-  { date: "12/11/2024", name: "Andy Walker" }
+  {
+    type: "Apply",
+    keywords: [
+      "Car",
+      "Blu Badg",
+      "bbadge",
+      "blue bdge",
+      "bb",
+      "badg",
+      "appely",
+      "parkin",
+      "prking",
+      "Blue Badge",
+      "blue badge",
+      "parking",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "26/02/2025", name: "Dinah Williams" }
 );
 
 const blueBadgeHolderPassedAway = new ContentP(
@@ -329,10 +363,32 @@ const blueBadgeHolderPassedAway = new ContentP(
     </address>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_tarnsferred_to_service" },
+  { typeKey: "blue_badge_transferred_to_service" },
   { typeKey: "blue_badge_information_provided" },
-  { type: "Request", keywords: ["Blue Badge"], categories: ["Parking"] },
-  { date: "01/10/2024", name: "Shahzad Athar" }
+  {
+    type: "Request",
+    keywords: [
+      "Car",
+      "Car Badge",
+      "Blu Badg",
+      "bbadge",
+      "blue bdge",
+      "badg",
+      "appely",
+      "parkin",
+      "prking",
+      "bb",
+      "blu",
+      "Blue Badge",
+      "blue badge",
+      "blue badge holder passed away",
+      "badge holder deceased",
+      "passed away",
+      "deceased badge holder",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "19/02/2025", name: "Andy Walker" }
 );
 
 const replacementBlueBadge = new ContentP(
@@ -374,10 +430,31 @@ const replacementBlueBadge = new ContentP(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_tarnsferred_to_service" },
+  { typeKey: "blue_badge_transferred_to_service" },
   { typeKey: "blue_badge_information_provided" },
-  { type: "Request", keywords: ["Blue Badge"], categories: ["Parking"] },
-  { date: "12/11/2024", name: "Andy Walker" }
+  {
+    type: "Request",
+    keywords: [
+      "Car",
+      "Blu Badg",
+      "bbadge",
+      "blue bdge",
+      "badg",
+      "parkin",
+      "prking",
+      "bb",
+      "Blue Badge",
+      "blue badge",
+      "replacement",
+      "replacment",
+      "replc",
+      "replacmnt",
+      "badge replacement",
+      "blue badge replacemnt",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "19/02/2025", name: "Andy Walker" }
 );
 
 const blueBadge = new MenuP(
@@ -490,8 +567,8 @@ const carParkParkingMeterProblem = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_information_provided" },
   { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -788,7 +865,7 @@ const businessPermit = new ContentP(
 		</p>
 		<h3>Cost</h3>
 		<ul>
-			<li>The first permit costs £111.60</li>
+			<li>The first permit costs £111.80</li>
 			<li>A second permit costs £223.20</li>
 		</ul>
 		<h3>Evidence Required - Vehicle Ownership</h3>
@@ -874,12 +951,12 @@ const businessPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "20/02/2025", name: "Andy Walker" }
 );
 
-const carerPermitAndMedical = new ContentP(
-  "carerPermitAndMedical",
-  "Carer Permit And Medical",
+const residentsCarer = new ContentP(
+  "residentsCarer",
+  "Resident's Carer",
   "Learn about eligibility, cost, and required evidence for a carer permit, allowing carers to park in permit holder areas while providing home care.",
   `
 		<h3>About the Permit</h3>
@@ -950,7 +1027,7 @@ const carerPermitAndMedical = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "20/02/2025", name: "Andy Walker" }
 );
 
 //
@@ -993,6 +1070,7 @@ const greenParkingPermit = new ContentP(
 			car parks are restricted to a maximum stay period of 6 hours for green permit
 			holders:
 		</p>
+
 		<ul>
 			<li>Wellington Street car park (old fire station site)</li>
 			<li>Carver Lane car park</li>
@@ -1357,81 +1435,198 @@ const residentsPermit = new ContentP(
   "Residents Permit",
   "Learn about the eligibility, cost, and application process for residents parking permits, including vehicle and address verification requirements.",
   `
-		<h3>About the Permit</h3>
-		<p>
-			Residents parking permits are for residents living within a parking permit
-			zone. There are exceptions if the planning consent states that an address is a
-			car-free property.
-		</p>
-		<p>
-			Residents parking permits are now paperless, virtual permits (similar to tax
-			discs).
-		</p>
-		<p>You must apply for, renew, cancel, or change a residents permit online.</p>
-		<h3>Cost</h3>
-		<ul>
-			<li>standard first permit £55.80</li>
-      <li>standard second permit £111.60</li>
-      <li>city centre inner residents permit £310.00</li>
-      <li>city centre outer residents permit £155.00</li>
-      <li>Hawley Street Car Park residents permit £55.80</li>
-      <li>Kelham Island and Neepsend Parking Scheme - first permit £111.60</li>
-      <li>Kelham Island and Neepsend Parking Scheme - second permit £223.20</li>
-		</ul>
-		<h3>Evidence Required - Vehicle Ownership</h3>
-		<p>
-			You will need to provide us with an electronic copy of one of the following:
-		</p>
-		<ul>
-			<li>Registration document (V5)</li>
-			<li>Vehicle insurance certificate</li>
-			<li>Lease agreement in your name</li>
-			<li>
-				Letter on company headed paper verifying that you work for them with the V5
-				or the vehicle lease document (if you use a company car)
-			</li>
-		</ul>
-		<h3>Evidence Required - Proof of Address</h3>
-		<p>
-			We will check our Council Tax or electoral records or we will ask you to
-			provide an electronic copy of one of the following items that show your name
-			and address:
-		</p>
-		<ul>
-			<li>Most recent utility bill</li>
-			<li>Tenancy agreement (witnessed and signed)</li>
-			<li>Current household contents insurance policy</li>
-			<li>Current vehicle insurance certificate or schedule</li>
-			<li>
-				Bank statement or credit card bill dated or showing transactions from the
-				last 2 months (block out your account details)
-			</li>
-			<li>
-				Payslip, pension slip, benefits notification letter or Inland Revenue notice
-				of bill coding dated within the last 2 months (block out any personal
-				details)
-			</li>
-		</ul>
-		<p>
-			Failure to provide proof of vehicle registration and/or proof of your address
-			will result in cancellation of the permit(s) with no refund.
-		</p>
-    <p>
-      When you purchase your parking permit you need to send proof of eligibility 
-      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
-      (if you have not been requested to do so in the application process). 
-      At any time after this while you hold a permit we may require you to provide proof 
-      of your vehicle registration and your home or business address as part of 
-      regular audit checks. If this is requested please submit them to 
-      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
-    </p>
-      <p>
-      For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-      <br>
-       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
 
-      </p>
+<h3>New and previous tenancies, including students, or newly purchased properties</h3>
+
+<p>
+If you are moving into a new property and the Resident parking permit application shows the price being offered is not correct, this is likely to be because the previous tenants/owners have permits that are still valid.
+</p>
+<p>
+Email your signed tenancy agreement or proof of property purchase to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>. Add the subject “Please check the address and cancel existing permits".
+</p>
+<p>
+We can then identify the new residents. This should allow the cancellation of the existing permits. Once this is done, and an email confirming this has been received, the correct pricing should then be in place for applications to go ahead.
+</p>
+<p>
+If you have moved or are moving from an address where you hold a parking permit, email us with the subject “Please cancel my permit” and specify the date that this can be completed. We'll act on your instructions to allow the new tenants to buy their permits at the correct price.
+</p>
+<p>
+Get in touch with us for any other problems regarding parking permit applications or pricing.
+</p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>New and previous tenancies, including students, or newly purchased properties</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Exceptions
+            </summary>
+            <div class="details-accordion-content">
+                 <p>
+                    You cannot apply for a permit if you live in a car free development. You should check with your landlord, letting agent or solicitor if your property is car free.
+                </p>
+                <p>
+                    You can only apply for one permit per household if you're a resident of Holme Lane and Loxley New Road schemes.
+                </p>
+                <p>
+                    You can only apply for one permit per household if you're a resident of the Hawley Street Car Park scheme. In addition, a maximum of 24 permits will be issued for this scheme at any one time.
+                </p>
+            </div>
+        </details>
+        <details class="details-accordion">
+            <summary>
+                Number of permits
+            </summary>
+            <div class="details-accordion-content">
+                 <p>
+                     You can apply for 2 permits per household. We sometimes consider applications for a third permit, but we may ask for additional information to support your request.
+                 </p>
+                 <p>
+                     We would not issue more than two resident permits to households in the following zones:
+                 </p>
+                 <ul>
+                     <li>City Centre Inner</li>
+                     <li>City Centre Outer</li>
+                     <li>Botanical</li>
+                     <li>Porterbrook</li>
+                     <li>Stalker Lees</li>
+                     <li>Sharrow Vale</li>
+                     <li>Broomhill</li>
+                     <li>Beaufort Road and Severn</li>
+                     <li>Chandos Street</li>
+                     <li>College Street</li>
+                     <li>Endcliffe</li>
+                 </ul>
+            </div>
+        </details>
+    </div>
+</details>
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>
+            Hawley Street
+        </summary>
+        <div class="details-accordion-content">
+             <p>
+                 Residents of the Hawley Street Flats Car Park scheme can only apply for 1 permit per household.
+             </p>
+             <p>
+                 We only allow 30 permits in total for the scheme due to the size of the car park.
+             </p>
+        </div>
+    </details>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Kelham Island and Neepsend Parking Scheme
+            </summary>
+            <div class="details-accordion-content">
+                 <p>
+                    You can apply for one permit per household. We may consider applications for a second permit for properties in Neepsend, but we may ask for additional information to support your request.
+                 </p>
+                 <p>
+                    We would not issue more than one permit to properties in Kelham Island.
+                 </p>
+            </div>
+        </details>
+        <div class="accordion-content">
+            <details class="details-accordion">
+                <summary>
+                    How long a permit lasts
+                </summary>
+                <div class="details-accordion-content">
+                     <p>
+                         Permits are issued for one year. It's your responsibility to ensure your permits are renewed.
+                     </p>
+                </div>
+            </details>
+            <div class="accordion-content">
+                <details class="details-accordion">
+                    <summary>
+                        Apply for a permit
+                    </summary>
+                    <div class="details-accordion-content">
+                         <p>
+                             You can apply for a parking permit through our parking portal.
+                         </p>
+                         <p>
+                             Enter your address to see if you're eligible for a permit and complete the application form.
+                         </p>
+                         <p>
+                             Permits may be issued on the day of application, but if we need to review your application further we'll respond within 5 working days.
+                         </p>
+                         <p>
+                             Some applications may require further investigation. If your permit requires this, we'll contact you further within 28 working days.
+                         </p>
+                    </div>
+                </details>
+                <h3>About the Permit</h3>
+                <p>
+                    Residents parking permits are for residents living within a parking permit zone. There are exceptions if the planning consent states that an address is a car-free property.
+                </p>
+                <p>
+                    Residents parking permits are now paperless, virtual permits (similar to tax discs).
+                </p>
+                <p>
+                    You must apply for, renew, cancel, or change a residents permit online.
+                </p>
+                <h3>Cost</h3>
+                <ul>
+                    <li>standard first permit £55.80</li>
+                    <li>standard second permit £111.60</li>
+                    <li>city centre inner residents permit £310.00</li>
+                    <li>city centre outer residents permit £155.00</li>
+                    <li>Hawley Street Car Park residents permit £55.80</li>
+                    <li>Kelham Island and Neepsend Parking Scheme - first permit £111.60</li>
+                    <li>Kelham Island and Neepsend Parking Scheme - second permit £223.20</li>
+                </ul>
+                <h3>Evidence Required - Vehicle Ownership</h3>
+                <p>
+                    You will need to provide us with an electronic copy of one of the following:
+                </p>
+                <ul>
+                    <li>Registration document (V5)</li>
+                    <li>Vehicle insurance certificate</li>
+                    <li>Lease agreement in your name</li>
+                    <li>
+                        Letter on company headed paper verifying that you work for them with the V5 or the vehicle lease document (if you use a company car)
+                    </li>
+                </ul>
+                <h3>Evidence Required - Proof of Address</h3>
+                <p>
+                    We will check our Council Tax or electoral records or we will ask you to provide an electronic copy of one of the following items that show your name and address:
+                </p>
+                <ul>
+                    <li>Most recent utility bill</li>
+                    <li>Tenancy agreement (witnessed and signed)</li>
+                    <li>Current household contents insurance policy</li>
+                    <li>Current vehicle insurance certificate or schedule</li>
+                    <li>
+                        Bank statement or credit card bill dated or showing transactions from the last 2 months (block out your account details)
+                    </li>
+                    <li>
+                        Payslip, pension slip, benefits notification letter or Inland Revenue notice of bill coding dated within the last 2 months (block out any personal details)
+                    </li>
+                </ul>
+                <p>
+                    Failure to provide proof of vehicle registration and/or proof of your address will result in cancellation of the permit(s) with no refund.
+                </p>
+                <p>
+                    When you purchase your parking permit you need to send proof of eligibility to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days (if you have not been requested to do so in the application process). At any time after this while you hold a permit we may require you to provide proof of your vehicle registration and your home or business address as part of regular audit checks. If this is requested please submit them to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>.
+                </p>
+                <p>
+                    For further information, visit <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+                    <br>
+                    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'">Send Link</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1697,9 +1892,8 @@ const visitorsPermits = new ContentP(
 		</section>
 		<h3>Evidence Required</h3>
 		<p>
-			We will check our Council Tax or electoral records or we will ask you to
-			provide an electronic copy of one of the following items that show your name
-			and address:
+		You will need to provide an electronic copy of one of the following items
+    that show your name and address:
 		</p>
 		<ul>
 			<li>Most recent utility bill</li>
@@ -1760,7 +1954,7 @@ const visitorsPermits = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "02/12/2024", name: "Andy Walker" }
+  { date: "26/02/2025", name: "Dinah Williams" }
 );
 
 const parkingPermits = new MenuP(
@@ -1769,7 +1963,7 @@ const parkingPermits = new MenuP(
   "Comprehensive information on different types of parking permits including business, carer, medical, green, trade, staff, residents, and visitors' permits. It covers eligibility, application process, costs, and necessary evidence for each permit type.",
   [
     businessPermit,
-    carerPermitAndMedical,
+    residentsCarer,
     organisationCarer,
     medicalProfessionalCarer,
     greenParkingPermit,

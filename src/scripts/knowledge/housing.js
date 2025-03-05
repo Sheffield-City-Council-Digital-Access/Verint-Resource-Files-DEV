@@ -384,121 +384,121 @@ const welfareReform = new ContentH(
 
 //#endregion CrossRegion
 
+//#region Asset Management And Repairs
 
-//#region Adaptations
-  const chaseProgressOfAdaptation = new ContentH(
-    "chaseProgressOfAdaptation",
-    "Chase Progress of Adaptation",
-    "Learn how to chase progress on adaptations and understand the permissions required for home improvements in Sheffield Council properties.",
-    `
-    <details class="accordion">
+const adaptationChase = new ContentH(
+  "adaptationChase",
+  "Adaptation Chases",
+  "Learn how to chase progress on adaptations and understand the permissions required for home improvements in Sheffield Council properties.",
+  `
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Different Utility supplier</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>If you are over £250 (Total Indebtedness) in arrears, your permission request is unlikely to be granted. 
+      You must have written permission from the Housing Service to alter or improve your home. This includes:</p> 
+    <ul>
+      <li>Putting up any form of extension or building</li>
+      <li>Adding to, changing, or replacing the fixtures, fittings, and appliances provided by us</li>
+      <li>Altering essential gas, electricity, and water services</li>
+      <li>Putting up a radio or television aerial or satellite dish</li>
+      <li>Decorating the outside of your home</li>
+      <li>Removing internal walls</li>
+      <li>Insulation (Walls & Lofts)</li>
+      <li>Conservatories (considered on an individual basis)</li>
+    </ul> 
+    <p>However, the following are highly unlikely to be granted due to extra maintenance costs and 
+      potential structural problems:</p> 
+    <ul>
+      <li>Loft conversions</li>
+      <li>Spiral staircases</li>
+      <li>Swimming pools</li>
+      <li>Extensions</li>
+      <li>Stair lifts in communal areas</li>
+    </ul> 
+    <p>It is the customer's responsibility to seek and get any planning or building regulation approvals.</p> 
+    <p>Every request for permission will be assessed using criteria and conditions appropriate to the particular request. 
+      These criteria and conditions will be explained in the letter sent in reply to the customer's permission request.</p> 
+    <p>We will take action against any installations that are in breach of Health and Safety regulations.</p> 
+  </div>
+  </details>
+
+  <details class="accordion">
     <summary class="accordion-header">
-      <h3>Different Utility supplier</h3>
+      <h3>Permission Requests</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>If you are over £250 (Total Indebtedness) in arrears, your permission request is unlikely to be granted. 
-        You must have written permission from the Housing Service to alter or improve your home. This includes:</p> 
-      <ul>
-        <li>Putting up any form of extension or building</li>
-        <li>Adding to, changing, or replacing the fixtures, fittings, and appliances provided by us</li>
-        <li>Altering essential gas, electricity, and water services</li>
-        <li>Putting up a radio or television aerial or satellite dish</li>
-        <li>Decorating the outside of your home</li>
-        <li>Removing internal walls</li>
-        <li>Insulation (Walls & Lofts)</li>
-        <li>Conservatories (considered on an individual basis)</li>
-      </ul> 
-      <p>However, the following are highly unlikely to be granted due to extra maintenance costs and 
-        potential structural problems:</p> 
-      <ul>
-        <li>Loft conversions</li>
-        <li>Spiral staircases</li>
-        <li>Swimming pools</li>
-        <li>Extensions</li>
-        <li>Stair lifts in communal areas</li>
-      </ul> 
-      <p>It is the customer's responsibility to seek and get any planning or building regulation approvals.</p> 
-      <p>Every request for permission will be assessed using criteria and conditions appropriate to the particular request. 
-        These criteria and conditions will be explained in the letter sent in reply to the customer's permission request.</p> 
-      <p>We will take action against any installations that are in breach of Health and Safety regulations.</p> 
+      <p>Written permission requests should be referred in the first instance 
+        (unless the customer is a Leaseholder or the permission request is for a mobility scooter) 
+        to the appropriate Area Team at:</p> 
+      <address> 
+        Sheffield Council Housing Service<br> 
+        PO Box 5967<br> 
+        Sheffield<br> 
+        S2 9GH 
+      </address> 
+      <p>If the permission request is for a mobility scooter, it should be referred to:</p> 
+      <address> 
+        Maintenance Partnership Unit (Permissions)<br> 
+        PO Box 5967<br> 
+        Sheffield<br> 
+        S2 9GH 
+      </address> 
+      <p>If the customer is a Leaseholder, permission requests should be put in writing to:</p> 
+      <address> 
+        Leaseholder Services Team<br> 
+        Floor 11<br> 
+        Moorfoot Building<br> 
+        Sheffield<br> 
+        S1 4PL 
+      </address> 
+      <p>Once we have received your request, we will contact you to discuss it and, where necessary, 
+        arrange a suitable time to visit your property. We will give you a decision within 21 days of receiving your request. 
+        If we give you permission, you should carry out the work within 90 days and let us know when it is complete. </p> 
     </div>
-    </details>
+  </details>
 
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Permission Requests</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <p>Written permission requests should be referred in the first instance 
-          (unless the customer is a Leaseholder or the permission request is for a mobility scooter) 
-          to the appropriate Area Team at:</p> 
-        <address> 
-          Sheffield Council Housing Service<br> 
-          PO Box 5967<br> 
-          Sheffield<br> 
-          S2 9GH 
-        </address> 
-        <p>If the permission request is for a mobility scooter, it should be referred to:</p> 
-        <address> 
-          Maintenance Partnership Unit (Permissions)<br> 
-          PO Box 5967<br> 
-          Sheffield<br> 
-          S2 9GH 
-        </address> 
-        <p>If the customer is a Leaseholder, permission requests should be put in writing to:</p> 
-        <address> 
-          Leaseholder Services Team<br> 
-          Floor 11<br> 
-          Moorfoot Building<br> 
-          Sheffield<br> 
-          S1 4PL 
-        </address> 
-        <p>Once we have received your request, we will contact you to discuss it and, where necessary, 
-          arrange a suitable time to visit your property. We will give you a decision within 21 days of receiving your request. 
-          If we give you permission, you should carry out the work within 90 days and let us know when it is complete. </p> 
-      </div>
-    </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Permissions and Your Tenancy Conditions</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Tenancy condition 47 states that:</p> 
+      <ul>
+        <li>You must ask for our permission, and you must not proceed until we give you our permission.</li>
+        <li>We will confirm our answer in writing.</li>
+        <li>If we refuse permission, we will explain why.</li>
+        <li>If we give permission, we may attach additional conditions.</li>
+        <li>We may withdraw our permission at any time if you do not comply with the conditions we have made.</li>
+      </ul> 
+      <p>We will take action against you and/or charge you for any costs incurred if you do not comply with parts a-e above.</p> 
+    </div>
+  </details>
+  `,
+  { buttonLabel: "Housing Adaptations Request", formName: "hou_adaptations" },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "repairs and investmant",
+      "repears and investment",
+      "repairs and invesment",
+      "repair and investement",
+      "repairs and invesmant",
+    ],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
+);
 
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Permissions and Your Tenancy Conditions</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <p>Tenancy condition 47 states that:</p> 
-        <ul>
-          <li>You must ask for our permission, and you must not proceed until we give you our permission.</li>
-          <li>We will confirm our answer in writing.</li>
-          <li>If we refuse permission, we will explain why.</li>
-          <li>If we give permission, we may attach additional conditions.</li>
-          <li>We may withdraw our permission at any time if you do not comply with the conditions we have made.</li>
-        </ul> 
-        <p>We will take action against you and/or charge you for any costs incurred if you do not comply with parts a-e above.</p> 
-      </div>
-    </details>
-    `,
-    { buttonLabel: "Report Housing Adaptations ", formName: "hou_adaptations" },
-    { typeKey: "repairs_and_investment_information_provided" },
-    { typeKey: "repairs_and_investment_information_requested" },
-    {
-      type: "Information",
-      keywords: [
-        "repairs and investmant",
-        "repears and investment",
-        "repairs and invesment",
-        "repair and investement",
-        "repairs and invesmant",
-      ],
-      categories: ["Housing"],
-    },
-    { date: "10/10/2024", name: "George Whitehouse" }
-  );
-
-const otherAdaptationRequest = new ContentH(
-  "otherAdaptationRequest",
-  "Other Adaptation Request",
+const adaptationOther = new ContentH(
+  "adaptationOther",
+  "Adaptation Other Request",
   "Understand the process for requesting permission to make adaptations to your Sheffield Council property, including restrictions and requirements.",
   `
     <h2>Tenant wants to make their own changes</h2> 
@@ -533,11 +533,11 @@ const otherAdaptationRequest = new ContentH(
     <p>We will take action against any installations that are in breach of Health and Safety regulations.</p> 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "Housing Adaptations Request",
+    formName: "hou_adaptations",
   },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
   { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
 
   {
     type: "Information",
@@ -553,19 +553,6 @@ const otherAdaptationRequest = new ContentH(
   { date: "10/10/2024", name: "George Whitehouse" }
 );
 
-const adaptations = new MenuH(
-  "adaptations", 
-  "Adaptations", 
-  "Guidance on requesting and tracking home adaptations, including permission processes and progress updates for Sheffield Council properties.",
-  [
-   chaseProgressOfAdaptation,
-   otherAdaptationRequest
- ]
-);
-//#endregion Adaptations
-
-
-//#region Asset Management And Repairs
 const asbestos = new ContentH(
   "asbestos",
   "Asbestos",
@@ -783,11 +770,11 @@ const asbestos = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "Raise Housing Decant Enquiry",
+    formName: "hou_sustainment_decants",
   },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
   { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Information",
     keywords: [
@@ -799,7 +786,7 @@ const asbestos = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "10/10/2024", name: "George Whitehouse" }
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const carbonmonoxide = new ContentH(
@@ -839,8 +826,8 @@ const carbonmonoxide = new ContentH(
 
 `,
   {
-    buttonLabel: "Report Housing Enquiry",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -874,8 +861,8 @@ const communalAerials = new ContentH(
   </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -922,11 +909,11 @@ const communalAreas = new ContentH(
     </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "Raise Housing Enquiry ",
+    formName: "hou_estates_enquiry",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -942,7 +929,7 @@ const communalAreas = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "10/10/2024", name: "George Whitehouse" }
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const communalAreasFireSafety = new ContentH(
@@ -971,8 +958,8 @@ const communalAreasFireSafety = new ContentH(
     <p>You can have a small doormat if it is rubber backed. Edged and trimmed natural plants in ceramic, earthenware or metal pots, as long as they are not placed on stairs or landings which are the means of escape from the building.</p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -988,6 +975,19 @@ const communalAreasFireSafety = new ContentH(
     categories: ["Housing"],
   },
   { date: "10/10/2024", name: "George Whitehouse" }
+);
+
+const decants = new FormH(
+  "decants",
+  "Decants",
+  "Request a decant due to asbestos, infestation or linked to a previously reported repair.",
+  "hou_sustainment_decants",
+  {
+    type: "Enquiry",
+    keywords: ["Decant", "Housing", "Asbestos", "Repair", "Infestation"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const districtHeating = new ContentH(
@@ -1027,8 +1027,8 @@ const districtHeating = new ContentH(
   </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1153,8 +1153,8 @@ const doorEntrySystems = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1190,8 +1190,8 @@ const emergencyCredit = new ContentH(
       </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1236,8 +1236,8 @@ const emergencyRepairs = new ContentH(
   </ul>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1268,8 +1268,8 @@ const homeImprovementRequests = new ContentH(
   </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1301,8 +1301,8 @@ const homeownerDisconnection = new ContentH(
   </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1318,6 +1318,19 @@ const homeownerDisconnection = new ContentH(
     categories: ["Housing"],
   },
   { date: "10/10/2024", name: "George Whitehouse" }
+);
+
+const inspectionRequest = new FormH(
+  "inspectionRequest",
+  "Request inspection",
+  "Request inspection of tenants own aids and adaptations or a general repair.",
+  "hou_inspection_request",
+  {
+    type: "Request",
+    keywords: ["Inspection", "Adaptation", "Repair", "Alteration", "Aid"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const loststolenkeys = new ContentH(
@@ -1347,8 +1360,8 @@ const loststolenkeys = new ContentH(
       </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1388,12 +1401,12 @@ const newAndExistingRepairs = new ContentH(
     and communal/shared repairs to the block in which they live.
   </p> 
   `,
-  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+  { buttonLabel: "Raise Housing Decant Enquiry", formName: "hou_sustainment_decants" },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
   { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
 
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "George Whitehouse" }
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const payment = new ContentH(
@@ -1482,8 +1495,8 @@ const payment = new ContentH(
 </details>
 `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1590,8 +1603,8 @@ const programmedWorks = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1621,8 +1634,8 @@ const propertyAge = new ContentH(
   
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1680,8 +1693,8 @@ const noHeatNoWater = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1768,8 +1781,8 @@ const tenantsOwnImprovements = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1793,17 +1806,21 @@ const assetManagementAndRepairs = new MenuH(
   "Asset Management And Repairs",
   "Information on asset management, including asbestos, carbon monoxide, communal areas, district heating, emergency repairs, and various home improvement services.",
   [
+    adaptationChase,
+    adaptationOther,
     asbestos,
     carbonmonoxide,
 	  communalAerials,
 	  communalAreas,
 	  communalAreasFireSafety,
+    decants,
 	  districtHeating,
 	  doorEntrySystems,
 	  emergencyCredit,
 	  emergencyRepairs,
 	  homeImprovementRequests,
 	  homeownerDisconnection,
+    inspectionRequest,
 	  loststolenkeys,
 	  newAndExistingRepairs,
 	  noHeatNoWater,
@@ -1812,7 +1829,6 @@ const assetManagementAndRepairs = new MenuH(
 	  propertyAge,
 	  refunds,
 	  tenantsOwnImprovements,
-    adaptations
   ]
 );
 
@@ -1930,6 +1946,18 @@ const fencesCouncilHousing = new ContentH(
   { date: "09/10/2024", name: "Elliott Griffiths" }
 );
 
+const garageRequest = new FormH(
+  "garageRequest",
+  "Garages",
+  "Use this section to accept an offer, decant, request a plot application form, purchase or quit a garage.",
+  "hou_sustainment_garage",
+  {
+    type: "Request",
+    keywords: ["Garage"],
+    categories: ["Housing", "Estate"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
+);
 
 const gardenPledgeScheme = new ContentH(
   "gardenPledgeScheme",
@@ -1997,6 +2025,7 @@ const estatesAndEnvironments = new MenuH(
     communalCupboard,
     communalFireSafety,
     fencesCouncilHousing,
+    garageRequest,
     gardenPledgeScheme
   ]
 );
@@ -2041,7 +2070,7 @@ const generalCouncilHousing = new ContentH(
     <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx"target="_blank">Telephone Directory</a>
   </p>
   `,
-  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   {
@@ -2350,6 +2379,19 @@ const benefitCap = new ContentH(
     },
     { date: "05/11/2024", name: "Andy Walker" }
   );
+
+  const claimsForMoney = new FormH(
+    "claimsForMoney",
+    "Claims for money",
+    "Use this section for claims for; benefits, decoration grants or discretionary payments, following repair or programmed works, local assistance scheme, loss of earnings, personal injury, SCC home insurance or tenants own improvements",
+    "hou_sustainment_claims",
+    {
+      type: "Report",
+      keywords: ["Claim", "Money"],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "27/02/2025", name: "Nathan Smith" }
+  );
   
 const contactHousingBenefits = new ContentH(
   "contactHousingBenefits",
@@ -2505,6 +2547,7 @@ const contactHousingBenefits = new ContentH(
       benefitFraud,
       benefitOnTwoHomes,
       benefitsClawback,
+      claimsForMoney,
       changeOfCircumstances,
       contactHousingBenefits,
       localAssistanceScheme,
@@ -2569,7 +2612,7 @@ const leaseholderInformation = new ContentH(
       You will therefore be responsible for the behaviour of your sub-tenant(s). This would include, for example, ensuring that they do not cause a nuisance to neighbours.
     </p>
   `,
-  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
@@ -6072,6 +6115,34 @@ const tenancyEnforcementASB = new ContentH(
 );
 //#endregion Tenancy enforcement
 
+//#region Tenancy sustainment
+
+const boundaries = new FormH(
+  "boundaries",
+  "Council housing and private land boundaries",
+  "Report boundary issues with Council housing land, private land and other Council owned land.",
+  "hou_sustainment_boundary",
+  {
+    type: "Report",
+    keywords: ["Boundaries", "Boundary"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
+);
+
+const burglarAlarmRequest = new FormH(
+  "burglarAlarmRequest",
+  "Burglar alarms",
+  "Request new or chase installation, missing or damaged alarm, alarm removal, a repair or alarm code.",
+  "hou_sustainment_bur_alar",
+  {
+    type: "Request",
+    keywords: ["Burlgar", "Alarm"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
+);
+
 const fobsandKeys = new ContentH(
   "fobsandKeys",
   "Fobs and Keys",
@@ -6207,7 +6278,18 @@ const fobsandKeys = new ContentH(
   { date: "06/11/2024", name: "Shahzad Athar" }
 );
 
-
+const untidyGardensCommunalAreas = new FormH(
+  "untidyGardensCommunalAreas",
+  "Untidy gardens and communal areas",
+  "Report untidy Council gardens and untidy Council communal areas",
+  "hou_sustainment_garden",
+  {
+    type: "Report",
+    keywords: ["Garden", "Untidy", "Communal"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
+);
 
 const housingServiceParkingPermits = new ContentH(
   "housingServiceParkingPermits",
@@ -6870,8 +6952,11 @@ const tenancySustainment = new MenuH(
   "Tenancy Sustainment",
   "Support for maintaining tenancies, including information on permissions, tenancy agreements, name changes, parking permits, and council housing services.",
   [
+    boundaries,
+    burglarAlarmRequest,
     fencesCouncilHousing,
     fobsandKeys,
+    untidyGardensCommunalAreas,
     housingServiceParkingPermits,
     nameChanges,
     permissions,
@@ -6890,7 +6975,6 @@ const tenancySustainment = new MenuH(
     "Housing",
     "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
     [
-      adaptations,
       assetManagementAndRepairs, 
       estatesAndEnvironments, 
       generalCouncilHousing, 
