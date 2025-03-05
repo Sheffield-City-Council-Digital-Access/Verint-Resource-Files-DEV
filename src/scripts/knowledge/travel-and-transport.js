@@ -60,7 +60,7 @@ const zoomZeroFare = new ContentTaT(
   "(Previously known as a Children's Travel Pass) Find details on eligibility, application, appeals, and replacement options for a Zoom Zero travel pass in Sheffield.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
-      <h3>If You've Changed Your Address or School</h3>
+      <h3>If you have changed your address or school</h3>
       <p>
         This could affect the distance your child travels to school, so please check your eligibility before you apply for a new Zoom Zero travel pass.
         <br><br>
