@@ -2701,6 +2701,19 @@ const reportFlyTipping = new FormPaN(
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
+const reportDangerousDog = new FormPaN(
+  "reportDangerousDog",
+  "Dangerous dog",
+  "Report a dog as dangerous",
+  "report_dangerous_dog",
+  {
+    type: "Report",
+    keywords: ["Dog", "dangerous","dangerous dog  ","dog as dangerous"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
 const reportDogFouling = new FormPaN(
   "reportDogFouling",
   "Dog fouling",
@@ -2712,6 +2725,60 @@ const reportDogFouling = new FormPaN(
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
+const reportStrayingDog = new FormPaN(
+  "reportStrayingDog",
+  "Straying dog",
+  "Report straying dog on the highway",
+  "report_straying_dog",
+  {
+    type: "Report",
+    keywords: ["Dog", "straying","stray","stray dog"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+const reportDogAsLost = new FormPaN(
+  "reportDogAsLost",
+  "Missing dog",
+  "Report a missing dog",
+  "report_dog_as_lost",
+  {
+    type: "Report",
+    keywords: ["Dog", "missing","lost","missing dog","lost dog","dog as missing","dog as lost"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+
+
+const reportSmoke = new FormPaN(
+  "reportSmoke",
+  "Smoke",
+  "Report smoke",
+  "report_smoke",
+  {
+    type: "Report",
+    keywords: ["Report", "smoke"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+const reportNoise = new FormPaN(
+  "reportNoise",
+  "Noise",
+  "Report noise",
+  "report_noise",
+  {
+    type: "Report",
+    keywords: ["Report", "noise"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
 );
 
 const abandonedVehicles = new ContentPaN(
@@ -3081,13 +3148,19 @@ const pollutionAndNuisance = new ServicePaN(
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone`,
   [
     abandonedVehicles,
+    animalControl,
     pestControl,
+    reportDangerousDog, 
     reportDogFouling,
+    reportStrayingDog,
+    reportDogAsLost,
     reportLitter,
     reportGraffiti,
     reportFlyPosting,
     reportFlyTipping,
     reportNeedlesGlass,
+    reportSmoke,
+    reportNoise,
     cleanAirZone
   ]
 );
