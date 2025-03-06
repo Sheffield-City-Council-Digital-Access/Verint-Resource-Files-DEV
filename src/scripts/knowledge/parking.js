@@ -969,46 +969,31 @@ const businessPermit = new ContentP(
 </div>
 
 <h4> Vehicle Ownership</h4>
-		<p>
-			You will need to provide us with an electronic copy of one of the following:
-		</p>
-		<ul>
-			<li>Registration document (V5)</li>
-			<li>Vehicle insurance certificate</li>
-			<li>Lease agreement in your name</li>
-			<li>
-				Letter on company headed paper verifying that you work for them with the V5
-				or the vehicle lease document (if you use a company car)
-			</li>
-		</ul>
-
-    <h4>Proof of Address</h4>
-		<p>
-			We will check our Council Tax or electoral records or we will ask you to
-			provide an electronic copy of one of the following items that show your name
-			and address:
-		</p>
-		<ul>
-			<li>Most recent utility bill</li>
-			<li>Tenancy agreement (witnessed and signed)</li>
-			<li>Current household contents insurance policy</li>
-			<li>Current vehicle insurance certificate or schedule</li>
-			<li>
-				Bank statement or credit card bill dates or showing transactions from the
-				last 2 months (block out your account details)
-			</li>
-			<li>
-				Payslip, pension slip, benefits notification letter or Inland Revenue notice
-				of bill coding dated within the last 2 months (block out any personal
-				details)
-			</li>
-		</ul>
-
-    		<p>
-			Failure to provide proof of vehicle registration and/or proof of your address
-			will result in cancellation of the permit/s with no refund.
-		</p>
-    <p>
+<p>
+	You will need to provide us with an electronic copy of one of the following:
+</p>
+<ul>
+	<li>Registration document (V5)</li>
+	<li>Vehicle insurance certificate</li>
+	<li>Lease agreement in your name</li>
+	<li>Letter on company headed paper verifying that you work for them with the V5 or the vehicle lease document (if you use a company car)</li>
+</ul>
+<h4>Proof of Address</h4>
+<p>
+	We will check our Council Tax or electoral records or we will ask you to provide an electronic copy of one of the following items that show your name and address:
+ </p>
+<ul>
+	<li>Most recent utility bill</li>
+	<li>Tenancy agreement (witnessed and signed)</li>
+	<li>Current household contents insurance policy</li>
+	<li>Current vehicle insurance certificate or schedule</li>
+	<li>Bank statement or credit card bill dates or showing transactions from the last 2 months (block out your account details)</li>
+	<li>Payslip, pension slip, benefits notification letter or Inland Revenue notice of bill coding dated within the last 2 months (block out any personal details)</li>
+</ul>
+<p>
+	Failure to provide proof of vehicle registration and/or proof of your address will result in cancellation of the permit/s with no refund.
+</p>
+<p>
       When you purchase your parking permit you need to send proof of eligibility 
       to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
       (if you have not been requested to do so in the application process). 
@@ -1016,16 +1001,12 @@ const businessPermit = new ContentP(
       of your vehicle registration and your home or business address as part of 
       regular audit checks. If this is requested please submit them to 
       <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
-    </p>
-           
-              </div>
-                </details>
-    <p>
-    For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-   
-
-    </p>
+</p>         
+</div>
+</details>
+<p>
+	For further information, visit <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+</p>
 
      <button
         type="button"
