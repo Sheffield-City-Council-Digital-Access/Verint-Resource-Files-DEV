@@ -256,10 +256,10 @@ const requestClaimsPack = new FormRaP(
   "request_claims_pack",
   {
     type: "Request",
-    keywords: ["Claims", "pack"],
+    keywords: ["Claims", "pack", "Highways", "Compensation"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
+  { date: "06/03/2025", name: "Sam Coupland" }
 );
 
 const requestGritBin = new ContentRaP(
