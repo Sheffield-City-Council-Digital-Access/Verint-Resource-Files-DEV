@@ -1580,7 +1580,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "06/03/2025", name: "Gee Whitehouse" }
 );
 
 //
@@ -1592,57 +1592,118 @@ const medicalProfessionalCarer = new ContentP(
   "Medical Professional Carer (NHS)",
   "Learn about the eligibility, cost, and application process for medical professional carer permits for NHS practitioners carrying essential equipment or treating patients.",
   `
-    <h3>About the Permit</h3>
-    <p>Medical professional carer permits are available for:</p>
-    <ul>
-      <li>NHS qualified medical practitioners</li>
-      <li>
-        NHS medical practitioners carrying essential equipment or drugs to treat a
-        patient resident
-      </li>
-    </ul>
-    <p>
-      The driver can only use the permit for carrying out visits to clients or
-      patients, not to park where they are based (their workplace).
-    </p>
-    <p>
-      Carer permit holders have to display a timer disc in the vehicle to show when
-      they started parking. The maximum time for parking is 2 hours.
-    </p>
-    <p>
-      If the client/patient regularly needs longer care visits, they may be eligible
-      to apply for a resident carer permit (see above). Clients/patients who require
-      an occasional longer visit may provide a visitor permit.
-    </p>
-    <h3>Cost</h3>
-    <p>£10 each for 12 months.</p>
-    <h3>Evidence Required</h3>
-    <p>
-      The organisation should apply not for an individual and provide the following
-      information:
-    </p>
-    <ul>
-      <li>The organisations operation</li>
-      <li>How many staff are employed</li>
-      <li>How many permits are required</li>
-      <li>Why the permit is required</li>
-    </ul>
-    <p>
-      When you purchase your parking permit you need to send proof of eligibility 
-      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
-      (if you have not been requested to do so in the application process). 
-      At any time after this while you hold a permit we may require you to provide proof 
-      of your vehicle registration and your home or business address as part of 
-      regular audit checks. If this is requested please submit them to 
-      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
-    </p>
-    <p>
+
+
+<h3>Medical Professional Carer (NHS) </h3>
+
+<h4>About the Permit</h4>
+<p>Medical professional carer permits are available for:</p>
+<ul>
+  <li>NHS qualified medical practitioners</li>
+  <li>
+    NHS medical practitioners carrying essential equipment or drugs to treat a
+    patient resident
+  </li>
+</ul>
+<p>
+  The driver can only use the permit for carrying out visits to clients or
+  patients, not to park where they are based (their workplace).
+</p>
+<p>
+  Carer permit holders have to display a timer disc in the vehicle to show when
+  they started parking. The maximum time for parking is 2 hours.
+</p>
+<p>
+  If the client/patient regularly needs longer care visits, they may be eligible
+  to apply for a resident carer permit (see above). Clients/patients who require
+  an occasional longer visit may provide a visitor permit.
+</p>
+
+<p>NHS organisations can apply for an All area medical/carer permit which can be used by their staff to park in Sheffield’s 
+parking zones while treating patients.</p>
+<p>If the client/patient regularly needs longer care visits, they may be eligible to apply for a resident carer permit (see above). 
+Clients/patients who require an occasional longer visit may provide a visitor permit.</p>
+
+<section class="info-panel" role="region" aria-label="Information panel">
+  <p>
+    There is a system issue that will prevent the renewal of paper version of the All Area Medical/Carer Permits. 
+    You will need to allow your permit to expire, then as early as possible within the 14 day grace period, buy a new permit.
+  </p>
+</section>
+
+<h3>Cost</h3>
+<p>£10 each for 12 months.</p>
+
+<div class="accordion-content">
+  <details class="details-accordion">
+    <summary>Exceptions</summary>
+    <div class="details-accordion-content">
+      <p>You can’t use the permit to park in the city centre or Falding Street, 
+      Hawley Street Flats Car Park, Holme Lane, Loxley New Road and Vaughton Hill parking zones</p>
+    </div>
+  </details>
+
+  <details class="details-accordion">
+    <summary>How long a permit will last</summary>
+    <div class="details-accordion-content">
+      <p>Permits are issued for up to 12 months. It is your responsibility to ensure your permit is renewed.</p>
+    </div>
+  </details>
+
+  <details class="details-accordion">
+    <summary>Where you can use the permit</summary>
+    <div class="details-accordion-content">
+      <p>Carers can only use the permit for carrying out visits to clients or patients, not to park at their workplace or home.</p>
+      <p>You can park in any designated permit bay in a parking zone for 2 hours at a time. A permit does not guarantee you parking directly at an address.</p>
+      <p>You should make sure both the permit and timer disc are clearly displayed, that the vehicle is not parked in the same space for more than 2 hours and that the arrival time is set accurately.</p>
+      <p>If the client or patient regularly needs longer care visits, they may be eligible to apply for a resident carer permit. Clients or patients who require an occasional longer visit may provide a visitor permit.</p>
+    </div>
+  </details>
+
+  <details class="details-accordion">
+    <summary>Evidence Required</summary>
+    <div class="details-accordion-content">
+      <p>The organisation should apply not for an individual and provide the following information:</p>
+      <ul>
+        <li>The organisations operation</li>
+        <li>How many staff are employed</li>
+        <li>How many permits are required</li>
+        <li>Why the permit is required</li>
+      </ul>
+      <p>
+        When you purchase your parking permit you need to send proof of eligibility 
+        to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
+        (if you have not been requested to do so in the application process). 
+        At any time after this while you hold a permit we may require you to provide proof 
+        of your vehicle registration and your home or business address as part of 
+        regular audit checks. If this is requested please submit them to 
+        <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
+      </p>
+    </div>
+  </details>
+
+  <p>
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-    <br>
-    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
+  </p>
+</div>
 
-    </p>
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information and to apply send link to apply online"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+    "
+>
+    Send link to review further information
+</button>
+
+
+
+
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1670,7 +1731,7 @@ const medicalProfessionalCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "06/03/2025", name: "Gee Whitehouse" }
 );
 
 const organisationCarer = new ContentP(
