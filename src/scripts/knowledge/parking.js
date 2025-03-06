@@ -1739,64 +1739,95 @@ const organisationCarer = new ContentP(
   "Organisation Carer",
   "Learn about the eligibility, cost, and application process for organisation carer permits, allowing access to permit holder bays for healthcare and support professionals.",
   `
-		<h3>About the Permit</h3>
-		<p>
-			As an organisation you can apply for a permit to use in permit holder bays in
-			all parking zones but not in the city centre.
-		</p>
-		<p>Organisation carer permits are available for:</p>
-		<ul>
-			<li>
-				Mental health social workers visiting a patient who may need to be detained
-				under the Mental Health Act
-			</li>
-			<li>Primary care outreach nurses</li>
-			<li>TB nurses</li>
-			<li>Health Visitors</li>
-			<li>Family support workers</li>
-		</ul>
-		<p>
-			The driver can only use the permit for carrying out visits to clients or
-			patients, not to park where they are based (their workplace).
-		</p>
-		<p>
-			Carer permit holders have to display a timer disc in the vehicle to show when
-			they started parking. The maximum time for parking is 2 hours.
-		</p>
-		<p>
-			If the client/patient regularly needs longer care visits, they may be eligible
-			to apply for a resident carer permit (see above). Clients/patients who require
-			an occasional longer visit may provide a visitor permit.
-		</p>
-		<h3>Cost</h3>
-		<p>£10 each for 12 months.</p>
-		<h3>Evidence Required</h3>
-		<p>
-			The organisation should apply and not an individual and provide the following
-			information:
-		</p>
-		<ul>
-			<li>The organisations operation</li>
-			<li>How many staff are employed</li>
-			<li>How many permits are required</li>
-			<li>Why the permit is required</li>
-		</ul>
-    <p>
-      When you purchase your parking permit you need to send proof of eligibility 
-      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
-      (if you have not been requested to do so in the application process). 
-      At any time after this while you hold a permit we may require you to provide proof 
-      of your vehicle registration and your home or business address as part of 
-      regular audit checks. If this is requested please submit them to 
-      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
-    </p>
-      <p>
-      For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-      <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
+	<h3>Organisation Carer</h3>
 
+<p>Mental health and healthcare organisations can apply for an All area medical/carer permit which can be used by their staff to park in Sheffield’s 
+parking zones. 
+The permit is a paper disc with a timer which will allow staff to park in any permit zone outside the city centre for a limited time.</p>
+
+<h4>If you work for the NHS</h4>
+
+<p>If you are an NHS practitioner or carer you should apply for a separate parking permit.</p>
+
+<h4>If you work for the Council</h4>
+
+<p>These parking permits are for:</p>
+
+<ul>
+  <li>
+    Mental health social workers visiting a patient who may need to be detained
+    under the Mental Health Act
+  </li>
+  <li>Primary care outreach nurses</li>
+  <li>TB nurses</li>
+  <li>Health Visitors</li>
+  <li>Family support workers</li>
+</ul>
+
+<section class="info-panel" role="region" aria-label="Information panel">
+  <p>
+    There is a system issue that will prevent the renewal of paper version of the All Area Medical/Carer Permits. 
+    You will need to allow your permit to expire,
+    then as early as possible within the 14 day grace period, buy a new permit.
+  </p>
+</section>
+
+<h3>Cost</h3>
+<p>£10 each for 12 months.</p>
+
+<div class="accordion-content">
+  <details class="details-accordion">
+    <summary>Evidence Required</summary>
+    <div class="details-accordion-content">
+      <p>
+        The organisation should apply and not an individual and provide the following
+        information:
       </p>
+      <ul>
+        <li>The organisations operation</li>
+        <li>How many staff are employed</li>
+        <li>How many permits are required</li>
+        <li>Why the permit is required</li>
+      </ul>
+      <p>
+        When you purchase your parking permit you need to send proof of eligibility 
+        to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
+        (if you have not been requested to do so in the application process). 
+        At any time after this while you hold a permit we may require you to provide proof 
+        of your vehicle registration and your home or business address as part of 
+        regular audit checks. If this is requested please submit them to 
+        <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
+      </p>
+    </div>
+  </details>
+
+  <p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+  </p>
+</div>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information and to apply send link to apply online"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+    "
+>
+    Send link to review further information
+</button>
+
+
+
+
+
+
+
+
+	
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
