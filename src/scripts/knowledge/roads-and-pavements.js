@@ -480,7 +480,7 @@ const reportHedgePlantGrass = new ContentRaP(
     <section>
       <h3>Grassed areas</h3>
       <p>
-        Grass cutting seasons are Spring and Summer. The frequecney in which they
+        Grass cutting seasons are Spring and Summer. The frequency in which they
         are cut varies from every 2-4 weeks or every year.
       </p>
       <ul>
@@ -488,7 +488,7 @@ const reportHedgePlantGrass = new ContentRaP(
           Areas with daffodils or other bulbs are left uncut until early June.
         </li>
         <li>
-          Areas containing wildflowers area, it is cut once per year, typically in
+          Areas containing wildflowers, it is cut once per year, typically in
           late August.
         </li>
         <li>
@@ -526,7 +526,7 @@ const reportHedgePlantGrass = new ContentRaP(
       <h3>Hedges</h3>
       <p>
         We plan our routine hedge and tree cutting around bird nesting times and
-        other conservation issues (e.g. insect habitats), so they do not cut hedges
+        other conservation issues (e.g. insect habitats), so we do not cut hedges
         in the spring and early summer unless for reasons of public safety.
       </p>
       <p>
@@ -550,7 +550,7 @@ const reportHedgePlantGrass = new ContentRaP(
     keywords: ["Hedge", "plant", "grass"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const reportLitterBin = new FormRaP(
@@ -588,7 +588,7 @@ const reportTree = new ContentRaP(
       <h3>Maintanence</h3>
       <p>
         We plan our routine hedge and tree cutting around bird nesting times and
-        other conservation issues (e.g. insect habitats), so they do not cut hedges
+        other conservation issues (e.g. insect habitats), so we do not cut hedges
         in the spring and early summer unless for reasons of public safety.
       </p>
       <p>
