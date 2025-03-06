@@ -1458,6 +1458,9 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
 </section>
 
 <h4>Cost</h4>
+
+<p>There is no charge for this permit </p>
+
 <p>Who can't apply for the permit</p>
 
 <div class="accordion-content">
@@ -1855,7 +1858,7 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "06/03/2025", name: "Gee Whitehouse" }
 );
 
 const residentsPermit = new ContentP(
@@ -1886,7 +1889,7 @@ Once your licence plate is registered as holding a permit you can use on street 
 </section>
 
 
-  <h3>Cost</h3>
+  <h4>Cost</h4>
   <p>The costs to apply for a permit are: </p>
      <ul>
           <li>standard first permit £55.80</li>
@@ -1946,7 +1949,7 @@ Get in touch with us for any other problems regarding parking permit application
             </summary>
             <div class="details-accordion-content">
 
-        <h3>  Vehicle Ownership</h3>
+        <h4>  Vehicle Ownership</h4>
                 <p>
                     You will need to provide us with an electronic copy of one of the following:
                 </p>
@@ -1957,7 +1960,7 @@ Get in touch with us for any other problems regarding parking permit application
                     <li>Letter on company headed paper verifying that you work for them with the V5 or the vehicle lease document (if you use a company car)</li>
                 </ul>
 
-                <h3>Proof of Address</h3>
+                <h4>Proof of Address</h4>
                 <p>
                     We will check our Council Tax or electoral records or we will ask you to provide an electronic copy of one of the following items that show your name and address:
                 </p>
@@ -1990,7 +1993,7 @@ Get in touch with us for any other problems regarding parking permit application
          <button
         type="button"
         class="dform_widget email-btn dform_widget_type_button"
-        aria-label="Send link to further information about parking"
+        aria-label="For further information and to apply send link to apply online"
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
@@ -2036,19 +2039,30 @@ const staffPermit = new ContentP(
   "staffPermit",
   "Staff Permit",
   "Find out how staff can apply for a parking permit through Facilities Management with detailed instructions on the application process.",
+  
   `<p>
-    Staff who need to apply for a parking permit should contact Facilities Management 
-    for assistance. Full details on how to apply for a staff parking permit can be 
-    found on the <a href="https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit" 
-    target="_blank">https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.
-    </p>
-    <p>
-    For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-    <br>
-    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
+  Staff who need to apply for a parking permit should contact Facilities Management 
+  for assistance. Full details on how to apply for a staff parking permit can be 
+  found on the <a href="https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit" 
+  target="_blank">https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.
+</p>
+<p>
+  Please can you reformat the following code to have correct indentations and presentation, please do not alter any wording or spelling as these have been agreed with the service and cannot be changed. For further information, visit 
+  <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+</p>
 
-    </p>
+             <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information and to apply send link to apply online"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+            "
+      >
+        Send link to review further information
+      </button>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2084,23 +2098,76 @@ const tradePermit = new ContentP(
   "Trade Permit",
   "Learn about the application process, costs, and required evidence for obtaining trade permits for parking while working in Sheffield permit zones.",
   `
-		<h3>About the Permit</h3>
-		<p>
-			These allow trades persons to park whilst they are working in Sheffield permit
-			zones. These permits are for voucher books so please order in advance.
-		</p>
-		<p>
-			They are not valid in the city centre, Falding Street, Holme Lane, Loxley New
-			Road and Vaughton Hill parking zones.
-		</p>
-		<p>There is no limit to the number of trade permits you can buy.</p>
-		<h3>Cost</h3>
+
+<h3>Trade permit </h3>
+
+<p>A trade parking permit allows you to park your vehicle in on street parking bays while you work in a parking permit zone. </p>
+<p>They do not entitle you to park at a specific address, but they allow you to park in any on street parking space signposted for permit users in any eligible zone. </p>
+
+<h4>Cost</h4>
 		<p>Trade permits costs £96.85 for a batch of 25 daily permits. They cannot be refunded or exchanged.</p>
 		<p>
 			Permits should be validated and displayed in the vehicle promptly after
 			parking. They are valid until midnight on the day of use.
 		</p>
-		<h3>Evidence Required</h3>
+
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Exceptions </summary>
+        <div class="details-accordion-content">
+          <p>Trade permits are not valid for use in these parking zones:  </p>
+
+          <ul>
+			<li>city centre </li>
+			<li>Falding Street </li>
+			<li>Hawley Street Car Park </li>
+			<li>Holme Lane </li>
+			<li>Loxley New Road </li>
+      <li>Vaughton Hill </li>
+		</ul>
+        
+        </div>
+    </details>
+
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Number of permits </summary>
+        <div class="details-accordion-content">
+          
+<p>There is no limit to the number of trade permits you can buy. </p>
+        
+        </div>
+    </details>
+
+    <div class="accordion-content">
+    <details class="details-accordion">
+        <summary>How long each permit lasts  </summary>
+        <div class="details-accordion-content">
+          
+<p>They are valid until midnight on the day of use.  </p>
+        
+        </div>
+    </details>
+
+
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Where you can use the permit  </summary>
+        <div class="details-accordion-content">
+          
+<p>You can park your vehicle up until midnight in any bay signed for the use of permit holders in the parking zone your permit is valid for.
+ If you want to park it overnight you will need to ensure you also display a permit for the following day. </p>
+        
+ <p>You must display your permit in the windscreen of your vehicle so that all the details are visible from the outside or you may be fined. </p>
+        </div>
+    </details>
+
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Evidence Required </summary>
+        <div class="details-accordion-content">
+          
+
 		<p>
 			You would need to provide us with an electronic copy of one of the following:
 		</p>
@@ -2134,13 +2201,32 @@ const tradePermit = new ContentP(
       regular audit checks. If this is requested please submit them to 
       <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
     </p>
+        
+        </div>
+    </details>
+
     <p>
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-    <br>
-    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
 
     </p>
+
+
+             <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information and to apply send link to apply online"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+            "
+      >
+        Send link to review further information
+      </button>
+
+
+    
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2168,7 +2254,7 @@ const tradePermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "06/03/2025", name: "Gee Whitehouse" }
 );
 
 const utilityPermit = new ContentP(
@@ -2176,26 +2262,33 @@ const utilityPermit = new ContentP(
   "Utility Permit",
   "Learn about the utility permit application process, including costs and how utility companies can apply for permits in Sheffield's city centre.",
   `
-		<h3>About the Permit</h3>
-		<p>
-			<li>Issued for city centre works taking place by utility companies. E.g. Yorkshire Water, BT, British Gas etc.</li>
-      <li>25 half day cards per book</li>
-      <li>Maximum of 10 books per application</li>
-		</p>
-    <p>Utility Permits are only for major utility companies who need to complete work within the city centre.
-    <p>Valid for am/pm slots (not full days).
-    <p>Customer to email customerservices@sheffield.gov.uk directly or we can send them a link to apply.
-    </p>
-		<p>
-			If a company is working outside the City Centre then they would need a Trade
-			Permit.
-		</p>
-		<h3>Costs</h3>
-		<p class="cost">£193.75 for a book of 25 half day passes.</p>
-    <p>
-      Ask customer to email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> to ask if they can order a 
-      utility permit - service will respond with a link to order the permit.
-		</p>
+
+		<h3>Utility Permit</h3>
+
+<p>
+  <li>Issued for city centre works taking place by utility companies. E.g. Yorkshire Water, BT, British Gas etc.</li>
+  <li>25 half day cards per book</li>
+  <li>Maximum of 10 books per application</li>
+</p>
+
+<p>Utility Permits are only for major utility companies who need to complete work within the city centre.</p>
+<p>Valid for am/pm slots (not full days).</p>
+
+<p>
+  If a company is working outside the City Centre then they would need a Trade
+  Permit.
+</p>
+
+<h4>Costs</h4>
+
+<p class="cost">£193.75 for a book of 25 half day passes.</p>
+
+<p>
+  Ask customer to email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> to ask if they can order a 
+  utility permit or we can send them a link to apply.
+</p>
+  
+
       <p>
       For further information, visit 
       <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
@@ -2203,6 +2296,18 @@ const utilityPermit = new ContentP(
       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
 
       </p>
+
+
+                   <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information and to apply send link to apply online"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+            "
+      >
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2230,7 +2335,7 @@ const utilityPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "06/03/2025", name: "Gee Whitehouse" }
 );
 
 const visitorsPermits = new ContentP(
@@ -2238,70 +2343,113 @@ const visitorsPermits = new ContentP(
   "Visitors Permits",
   "Learn about the application process, costs, and required evidence for obtaining visitor parking permits for guests and contractors.",
   `
-		<h3>About the Permit</h3>
-		<p>
-			You can apply for paper visitor parking permit books online. These are for
-			people visiting you at home.
-		</p>
-		<p>
-			The permit should be validated and displayed in the vehicle promptly after
-			your visitor has arrived.
-		</p>
-		<p>
-			Instead of using visitor parking permits, visitors can use nearby pay and
-			display or unrestricted parking to leave more parking for regular permit
-			holders.
-		</p>
-		<p>
-			You can also use visitor parking permits for contractors working on your
-			house. If the contractor needs parking for more than 2 weeks, they should
-			apply for a trade permit.
-		</p>
-		<h3>Charge for Permit</h3>
-		<p>
-			One book of 25 permits costs £19.35. 
-      These are valid on the day of use until 10am the following day.
-		</p>
-		<section class="info-panel" role="region" aria-label="Information panel">
-			<p>These permits cannot be refunded or exchanged.</p>
-		</section>
-		<h3>Evidence Required</h3>
-		<p>
-		You will need to provide an electronic copy of one of the following items
-    that show your name and address:
-		</p>
-		<ul>
-			<li>Most recent utility bill</li>
-			<li>Tenancy agreement (witnessed and signed)</li>
-			<li>Current household contents insurance policy</li>
-			<li>Current vehicle insurance certificate or schedule</li>
-			<li>
-				Bank statement or credit card bill dated or showing transactions from the
-				last 2 months (block out your account details)
-			</li>
-			<li>
-				Payslip, pension slip, benefits notification letter or Inland Revenue notice
-				of bill coding dated within the last 2 months (block out any personal
-				details)
-			</li>
-		</ul>
-    <p>
-      When you purchase your parking permit you need to send proof of eligibility 
-      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
-      (if you have not been requested to do so in the application process). 
-      At any time after this while you hold a permit we may require you to provide proof 
-      of your vehicle registration and your home or business address as part of 
-      regular audit checks. If this is requested please submit them to 
-      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
-    </p>
+	<h3>Visitors Permit</h3>
+
+<p>If you live in a parking permit zone and would like visitors to be able to park nearby, 
+you can buy a book of single use parking permits. You can give this to your visitors.</p>
+
+<p>A permit does not guarantee parking directly at your address, but it will allow your visitors to park in on street parking bays within your permit zone. You can also give permits to contractors who are carrying out work on your home for up to two weeks. Likewise, you could provide a visitors permit to your landlord if they need to visit your property to do work. 
+Contractors needing more time to work at a property will need to apply for trade permits. Landlords can apply for trade permits too.</p>
+
+<p>You can only apply for visitor permits for the parking zone you live in.</p>
+
+<h4>Cost</h4>
+
+<p>One book of 25 permits costs £19.35.</p>
+
+<div class="accordion-content">
+  <details class="details-accordion">
+    <summary>Exceptions</summary>
+    <div class="details-accordion-content">
+      <p>One book of 25 permits costs £19.35.</p>
+      <ul>
+        <li>city centre</li>
+        <li>Falding Street</li>
+        <li>Hawley Street Car Park</li>
+        <li>Holme Lane</li>
+        <li>Loxley New Road</li>
+        <li>Vaughton Hill parking zones</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="details-accordion">
+    <summary>Number of permits</summary>
+    <div class="details-accordion-content">
+      <p>You can buy up to 150 visitor permits per year (we may consider discretionary applications for more permits).</p>
+    </div>
+  </details>
+
+  <details class="details-accordion">
+    <summary>How long each permit lasts</summary>
+    <div class="details-accordion-content">
+      <p>Permits are valid on the day of use until 10am the following day.</p>
+    </div>
+  </details>
+
+  <details class="details-accordion">
+    <summary>Where you can use the permit</summary>
+    <div class="details-accordion-content">
+      <p>Your visitors can park their vehicle without time limit in any bay which is signed as being for the use of permit holders. 
+      They must display their permit in the windscreen so that all the details are visible from outside the vehicle as soon as possible after parking.</p>
+      <p>If your visitors display an invalid permit (for example one that has expired or one that has been issued for a different zone) they will be fined.</p>
+    </div>
+  </details>
+
+  <details class="details-accordion">
+    <summary>Evidence Required</summary>
+    <div class="details-accordion-content">
       <p>
-      For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-      <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
-
-
+        You will need to provide an electronic copy of one of the following items
+        that show your name and address:
       </p>
+      <ul>
+        <li>Most recent utility bill</li>
+        <li>Tenancy agreement (witnessed and signed)</li>
+        <li>Current household contents insurance policy</li>
+        <li>Current vehicle insurance certificate or schedule</li>
+        <li>
+          Bank statement or credit card bill dated or showing transactions from the
+          last 2 months (block out your account details)
+        </li>
+        <li>
+          Payslip, pension slip, benefits notification letter or Inland Revenue notice
+          of bill coding dated within the last 2 months (block out any personal
+          details)
+        </li>
+      </ul>
+      <p>
+        When you purchase your parking permit you need to send proof of eligibility 
+        to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
+        (if you have not been requested to do so in the application process). 
+        At any time after this while you hold a permit we may require you to provide proof 
+        of your vehicle registration and your home or business address as part of 
+        regular audit checks. If this is requested please submit them to 
+        <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
+      </p>
+    </div>
+  </details>
+
+  <p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    <br>
+    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'">Send Link</button>
+  </p>
+</div>
+
+             <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information and to apply send link to apply online"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+            "
+      >
+        Send link to review further information
+      </button>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2329,7 +2477,7 @@ const visitorsPermits = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "26/02/2025", name: "Dinah Williams" }
+  { date: "06/03/2025", name: "Gee Whitehouse" }
 );
 
 const parkingPermits = new MenuP(
