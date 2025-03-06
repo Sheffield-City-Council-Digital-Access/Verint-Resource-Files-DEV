@@ -1030,7 +1030,7 @@ const businessPermit = new ContentP(
      <button
         type="button"
         class="dform_widget email-btn dform_widget_type_button"
-        aria-label="Send link to further information about parking"
+        aria-label="For further information and to apply send link to apply online"
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
@@ -1199,7 +1199,7 @@ const residentsCarer = new ContentP(
 <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
-    aria-label="Send link to further information about Parking"
+    aria-label="For further information and to apply send link to apply online"
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
@@ -1387,7 +1387,7 @@ const greenParkingPermit = new ContentP(
 <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
-    aria-label="Send link to further information about Parking"
+    aria-label="For further information and to apply send link to apply online"
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
@@ -1431,116 +1431,118 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
   "Langsett And Hillsborough Bus And Tram Gate",
   "Learn about the eligibility and application process for a free permit to drive through the Langsett and Hillsborough bus and tram gate for residents of specific roads.",
   `
-<h3>Hillsborough Langsett Road bus and tram gate </h3>
+<h3>Hillsborough Langsett Road bus and tram gate</h3>
 
-<p>The bus or tram gate on Langsett Road is just beyond Ripley Street and is usually limited to public transport and taxis.</p>
+<p>
+    The bus or tram gate on Langsett Road is just beyond Ripley Street and is usually limited to public transport and taxis.
+</p>
 
-<p>A permit to drive through the bus or tram gate at Langsett Road (outbound only) is available for residents of the following roads:</p>
+<p>
+    A permit to drive through the bus or tram gate at Langsett Road (outbound only) is available for residents of the following roads:
+</p>
 
-		<ul>
-			<li>Rudyard Road</li>
-			<li>Rudyard Mews</li>
-			<li>Treswell Crescent</li>
-			<li>Rider Road</li>
-			<li>Haggard Road</li>
-			<li>Kipling Road</li>
-		</ul>
-
+<ul>
+    <li>Rudyard Road</li>
+    <li>Rudyard Mews</li>
+    <li>Treswell Crescent</li>
+    <li>Rider Road</li>
+    <li>Haggard Road</li>
+    <li>Kipling Road</li>
+</ul>
 
 <section class="info-panel" role="region" aria-label="Information panel">
     <p>
-       Each permit is valid for 12 months. Without a permit, residents can't use the bus or tram gate. The permit is issued virtually so you don’t need to display it in your vehicle.
+        Each permit is valid for 12 months. Without a permit, residents can't use the bus or tram gate.
+        The permit is issued virtually so you don’t need to display it in your vehicle.
     </p>
 </section>
 
 <h4>Cost</h4>
-		<p>Who can't apply for the permit </p>
+<p>Who can't apply for the permit</p>
 
 <div class="accordion-content">
     <details class="details-accordion">
         <summary>Where you can use the permit</summary>
         <div class="details-accordion-content">
-          
-We can't provide permits for visitors to properties, delivery vehicles,
- or short term hire or lease cars (unless registered at an address on one of the eligible roads).
-        
+            <p>
+                We can't provide permits for visitors to properties, delivery vehicles,
+                or short-term hire or lease cars (unless registered at an address on one of the eligible roads).
+            </p>
         </div>
     </details>
-
-    <div class="accordion-content">
-    <details class="details-accordion">
-        <summary>Where you can't use the permit </summary>
-        <div class="details-accordion-content">
-          
-<p>The permit doesn't allow the holder to use other bus or tram gates in Hillsborough or elsewhere in Sheffield. 
-This includes the inbound bus or tram gates on Holme Lane or Middlewood Road. </p>
-<p>If holders do use these gates (when signs say they shouldn't) we may consider withdrawing their permit completely. </p>
-
-        </div>
-    </details>
+</div>
 
 <div class="accordion-content">
     <details class="details-accordion">
-        <summary> Withdrawing permits </summary>
+        <summary>Where you can't use the permit</summary>
         <div class="details-accordion-content">
-          <p>Your permit will be invalid if:</p>
-<ul>
-	<li>you are not a resident of one of the above roads </li>
-  <li>you are not a resident of one of the above roads </li>
-  <li>you are not a resident of one of the above roads </li>
-</ul>
+            <p>
+                The permit doesn't allow the holder to use other bus or tram gates in Hillsborough or elsewhere in Sheffield. 
+                This includes the inbound bus or tram gates on Holme Lane or Middlewood Road.
+            </p>
+            <p>
+                If holders do use these gates (when signs say they shouldn't) we may consider withdrawing their permit completely.
+            </p>
         </div>
     </details>
+</div>
 
-<p>If any of this takes place we may cancel your permit and you will not be allowed to use Langsett Road bus gate. 
-You could be issued a bus lane fine if you drive through without a valid permit. 
- </p>
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Withdrawing permits</summary>
+        <div class="details-accordion-content">
+            <p>Your permit will be invalid if:</p>
+            <ul>
+                <li>you are not a resident of one of the above roads</li>
+                <li>you are not a resident of one of the above roads</li>
+                <li>you are not a resident of one of the above roads</li>
+            </ul>
+        </div>
+    </details>
+</div>
 
+<p>
+    If any of this takes place we may cancel your permit and you will not be allowed to use Langsett Road bus gate. 
+    You could be issued a bus lane fine if you drive through without a valid permit.
+</p>
 
 <div class="accordion-content">
     <details class="details-accordion">
         <summary>Evidence Required</summary>
         <div class="details-accordion-content">
+            <h4>Proof of vehicle ownership</h4>
+            <p>You would need to provide us with an electronic copy of one of the following:</p>
+            <ul>
+                <li>registration document (V5)</li>
+                <li>vehicle insurance certificate</li>
+                <li>lease agreement in your name</li>
+                <li>letter on company headed paper verifying that you work for them with the V5 or the vehicle lease document (if you use a company car)</li>
+            </ul>
 
-        <h4>Proof of vehicle ownership </h4>
-          <p>You would need to provide us with an electronic copy of one of the following: </p>
-<ul>
-<li>registration document (V5) </li>
-<li>vehicle insurance certificate </li>
-<li>lease agreement in your name </li>
-<li>letter on company headed paper verifying that you work for them with the V5 or the vehicle lease document  (if you use a company car) </li>
-
-
-</ul>
-
-<h4>Proof of address </h4>
-         <p>We also need one proof of address: </p>
-
-        
-<ul>
-			<li>most recent utility bill </li>
-			<li>tenancy agreement (witnessed and signed) </li>
-			<li>current household contents insurance policy </li>
-			<li>current vehicle insurance certificate or schedule </li>
-			<li>bank statement or credit card bill dated or showing transactions from the last 2 months (block out your account details) </li>
-			<li>payslip, pension slip, benefits notification letter or Inland Revenue notice of bill coding dated within the last 2 months 
-      (block out any personal details) </li>
-		</ul>
-        
+            <h4>Proof of address</h4>
+            <p>We also need one proof of address:</p>
+            <ul>
+                <li>most recent utility bill</li>
+                <li>tenancy agreement (witnessed and signed)</li>
+                <li>current household contents insurance policy</li>
+                <li>current vehicle insurance certificate or schedule</li>
+                <li>bank statement or credit card bill dated or showing transactions from the last 2 months (block out your account details)</li>
+                <li>payslip, pension slip, benefits notification letter or Inland Revenue notice of bill coding dated within the last 2 months 
+                    (block out any personal details)</li>
+            </ul>
         </div>
     </details>
+</div>
 
-
-    <p>
+<p>
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+</p>
 
-    </p>
-
-    <button
+<button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
-    aria-label="Send link to further information about Parking"
+    aria-label="For further information and to apply send link to apply online"
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
