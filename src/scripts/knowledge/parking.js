@@ -983,7 +983,7 @@ const businessPermit = new ContentP(
 			</li>
 		</ul>
 
-    <h4>Evidence Required - Proof of Address</h4>
+    <h4>Proof of Address</h4>
 		<p>
 			We will check our Council Tax or electoral records or we will ask you to
 			provide an electronic copy of one of the following items that show your name
@@ -1034,11 +1034,11 @@ const businessPermit = new ContentP(
      <button
         type="button"
         class="dform_widget email-btn dform_widget_type_button"
-        aria-label="Send link to further information about penalty charge notice"
+        aria-label="Send link to further information about parking"
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Pay%20Penalty%20Charge%20Notice\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
             "
       >
         Send link to review further information
@@ -1081,23 +1081,133 @@ const residentsCarer = new ContentP(
   "Learn about eligibility, cost, and required evidence for a carer permit, allowing carers to park in permit holder areas while providing home care.",
   `
 
-		<h3>About the Permit</h3>
+  <section class="info-panel" role="region" aria-label="Information panel">
+    <p>
+    There is a system issue that will prevent the renewal of paper resident's carer parking permits. You will need to allow your permit to expire, 
+    then as early as possible within the 14 day grace period, buy a new permit. We apologise for the inconvenience.
+    </p>
+</section>
+
+
+
+		<h3>Resident's carer parking permit</h3>
+
 		<p>
-			If you need essential care at home provided by a carer or carers, you may be
-			eligible for a resident’s carer permit. It entitles the vehicle to park
-			without time limit in a 'permit holders only' bay while the driver provides
-			care for the permit holder in their home.
+	If your essential care at home is provided by a carer or carers, you may be eligible for a resident’s carer permit. 
+  You can apply for a paper permit which they will need to display a permit when they visit you.
+  It allows your carer to use on street parking pays in your parking permit zones, without a time limit, while they provide you with care.
 		</p>
-		<p>
-			They are not available for residents of the inner or outer city centre or
-			Holme Lane, Loxley New Road and Vaughton Hill schemes.
-		</p>
-		<p>Permits will normally be limited to one per household.</p>
-		<p>Replacement pool permits will not be issued.</p>
-		<h3>Cost</h3>
-		<p>A 12 month permit is £10.00.</p>
-		<h3>Evidence Required</h3>
-		<ul>
+<p>
+Ths permit can only be used by your carer or carers.
+</p>
+
+		<h4>Cost</h4>
+		<p>This permit is free.</p>
+
+
+
+ <div class="accordion-content">
+                <details class="details-accordion">
+                    <summary>
+                      Exceptions 
+                    </summary>
+                    <div class="details-accordion-content">
+    
+     
+
+     <p>These permits are not available for: </p>
+
+<ul>
+  <li>city centre</li> 
+
+  <li>Hawley Street Car Park </li> 
+
+  <li>Holme Lane </li> 
+
+  <li>Loxley New Road </li> 
+
+  <li>Vaughton Hill schemes </li> 
+
+  <li>developments within parking permit zones that are car free. You should check with your landlord, letting agent or solicitor if your property is car free </li> 
+</ul>
+      
+              </div>
+                </details>
+
+                
+ <div class="accordion-content">
+                <details class="details-accordion">
+                    <summary>
+                      Number of permits 
+                    </summary>
+                    <div class="details-accordion-content">
+     <h4>Exceptions </h4>
+     
+
+     <p>These permits are not available for: </p>
+
+<ul>
+  <li>city centre</li> 
+
+  <li>Hawley Street Car Park </li> 
+
+  <li>Holme Lane </li> 
+
+  <li>Loxley New Road </li> 
+
+  <li>Vaughton Hill schemes </li> 
+
+  <li>developments within parking permit zones that are car free. You should check with your landlord, letting agent or solicitor if your property is car free </li> 
+</ul>
+      
+              </div>
+                </details>
+
+
+
+ <div class="accordion-content">
+                <details class="details-accordion">
+                    <summary>
+                      How long a permit lasts 
+                    </summary>
+                    <div class="details-accordion-content">
+   
+     
+
+     <p>Permits are issued for one year. It is your responsibility to ensure your permit is renewed.
+      Once we have all your supporting evidence, we will respond to your application within 10 working days.
+      If your application requires further investigation we will contact you within 28 working days.  </p>
+
+
+      <p>Should you lose your permit, replacement permits will not be issued and you will need to apply for a new permit. </p>
+      
+              </div>
+                </details>
+
+       <div class="accordion-content">
+                <details class="details-accordion">
+                    <summary>
+                      Where your carer can use the permit
+                    </summary>
+                    <div class="details-accordion-content">
+     
+     
+
+     <p>Your carer can park in any designated on street parking space in the zone the permit is for.
+      A permit does not guarantee parking directly at an address.  </p>
+
+
+      
+              </div>
+                </details>
+
+                       <div class="accordion-content">
+                <details class="details-accordion">
+                    <summary>
+                      Evidence Required 
+                    </summary>
+                    <div class="details-accordion-content">     
+<ul>
 			<li>Carer's Allowance statement for the person who helps look after you</li>
 			<li>Higher rate of Disability Living Allowance for personal care</li>
 			<li>Enhanced rate of Personal Independence Payment</li>
@@ -1115,9 +1225,31 @@ const residentsCarer = new ContentP(
         of your vehicle registration and your home or business address as part of 
         regular audit checks. If this is requested please submit them to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
       </p>
+
+              </div>
+                </details>
+
+		
       <p>
       For further information, visit 
       <a href="https://www.sheffield.gov.uk/parking" target="_blank">ttps://www.sheffield.gov.uk/parking</a>.
+
+          <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information about Parking"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+            "
+      >
+        Send link to review further information
+      </button>
+
+
+
+
       <br>
       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
 
