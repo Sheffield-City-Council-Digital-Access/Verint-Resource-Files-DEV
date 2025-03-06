@@ -835,40 +835,141 @@ const businessPermit = new ContentP(
   "Business Permit",
   "Learn about the types, costs, and application process for business permits, including required evidence for vehicle ownership and proof of address.",
   `
-  <h3>When is a business permit required?</h3>		
+
+<h3>Business parking permit</h3>	
+
     <p>
       You will need a permit if your business is in a parking permit zone and 
       you want to use on street parking spaces.
     </p>
 		<p>There are two types of business permit available:</p>
 		<ul>
+    <h4>Single vehicle permit</h4>
 			<li>
-				Vehicle specific - Vehicle specific business permits are now paperless,
-				virtual permits (similar to tax discs).
+				This is a paperless permit for a specific car that cannot be used in any other vehicle.
 			</li>
+      <h4>Pool Permit</h4>
 			<li>
-				Pool permit - Pool business permits allow staff at a business to share the
+				Pool business permits allow staff at a business to share the
 				use of the permit to park near the business.
 			</li>
 		</ul>
-		<p>
-			A physical permit will be issued by post. The permit can only be used in one
-			vehicle at a time. Replacement pool permits will not be issued.
-		</p>
-		<p>
-			You may have up to 2 annual permits per business. Any requests for additional
-			permits will be assessed when the application is received.
-		</p>
-		<p>
-			Business permits are not valid for the city centre, Falding Street, Holme
-			Lane, Loxley New Road, and Vaughton Hill parking zones.
-		</p>
-		<h3>Cost</h3>
+
+<h3>Cost</h3>
 		<ul>
-			<li>The first permit costs £111.80</li>
+			<li>The first permit costs £111.60</li>
 			<li>A second permit costs £223.20</li>
 		</ul>
-		<h3>Evidence Required - Vehicle Ownership</h3>
+
+
+<div class="accordion-content">
+                <details class="details-accordion">
+                    <summary>
+                       Exceptions 
+                    </summary>
+                    <div class="details-accordion-content">
+      <p> Business permits are not issued for: </p>
+      <ul>
+        <li>City centre Inner/Outer zones </li>
+        <li>Falding Street </li>
+        <li>Holme Lane </li>
+        <li>Edward Street Flats Car Park </li>
+        <li>Loxley New Road </li>
+        <li>Vaughton Hill </li>
+
+      </ul>
+                    </div>
+                </details>
+
+                <div class="accordion-content">
+                <details class="details-accordion">
+                    <summary>
+                       Number of permits 
+                    </summary>
+                    <div class="details-accordion-content">
+      <h4> You can have 2 permits per business. </h4>
+
+      <p>Businesses in Neepsend have the option to apply for additional permits. If you’d like to apply for additional permits, 
+      please log in to your account, 
+      select the ‘Business Discretionary’ permit type and complete your application. </p>
+
+             </div>
+                </details>
+                
+                <div class="accordion-content">
+                <details class="details-accordion">
+                    <summary>
+                      How long a permit lasts 
+                    </summary>
+                    <div class="details-accordion-content">
+     
+      <p>Permits are issued for one year. It is your responsibility to ensure your permit is renewed. 
+      We do not issue replacement pool permits, if you lose them you will need to apply again.  </p>
+
+      
+              </div>
+                </details>
+
+                                <div class="accordion-content">
+                <details class="details-accordion">
+                    <summary>
+                      Where you can use the permit 
+                    </summary>
+                    <div class="details-accordion-content">
+     
+      <p>A permit does not entitle you to park directly at your business address, 
+      but it allows you to park in any designated on street parking space within the zone your permit is for.   </p>
+
+      <p>You can park your vehicle without time limits in any on street bay in the parking zone that is signed for the use of permit holders. </p>
+
+      <p>Botanical zone permits are also valid for parking in the Sharrow Vale centre, Endcliffe and Stalker Lees zones. </p>
+
+      <p>Broomhall and The Groves permit holders can also park in Broomspring Lane car park. </p>
+
+      <p>Chandos Street, College Street, Beaufort Road and Severn Road permits are also valid in the Broomhill zone. However, 
+      if you have a Broomhill permit you cannot park on Beaufort Road, Severn Road, Chandos Street or College Street. </p>
+
+      <p>Business permits are not valid for use in any of the permit bays on: </p>
+
+      <ul>
+<li>Hickmott Road </li>
+<li>Rosedale Gardens </li>
+<li>Sharrow Vale Road (between Junction Road and Lynton Road) </li>
+<li>Bennett Street </li>
+<li>Randall Place </li>
+<li>Harwood Close </li>
+<li>Thorp Close </li>
+<li>the residential parking areas off Dover Street, Ellison Street or Netherthorpe Place </li>
+      </ul>
+
+      <p>Business permits are not valid for use in any of the shared use permit bays on these roads: </p>
+
+      <li>Fulwood Road </li>
+      <li>Glossop Road </li>
+      <li>Westbourne Road (from Glossop Road to Southbourne Road) </li>
+      <li>Ashdell Road (from Glossop Road to Ashdell) </li>
+      <li>Peel Street </li>
+      <li>Newbould Lane (Whitham Road to Nile Street) </li>
+      <li>2 hour maximum stay bays on Beech Hill Road </li>
+      <li>Watson Road </li>
+      <li>Ashgate Road </li>
+      <li>Whitham Road </li>
+      <li>Spooner Road (from Crookes Road to car park ramp)  </li>
+
+
+              </div>
+                </details>
+
+
+ <div class="accordion-content">
+                <details class="details-accordion">
+                    <summary>
+                      Evidence Required
+                    </summary>
+                    <div class="details-accordion-content">
+     
+     
+<h4> Vehicle Ownership</h4>
 		<p>
 			You will need to provide us with an electronic copy of one of the following:
 		</p>
@@ -881,7 +982,8 @@ const businessPermit = new ContentP(
 				or the vehicle lease document (if you use a company car)
 			</li>
 		</ul>
-		<h3>Evidence Required - Proof of Address</h3>
+
+    <h4>Evidence Required - Proof of Address</h4>
 		<p>
 			We will check our Council Tax or electoral records or we will ask you to
 			provide an electronic copy of one of the following items that show your name
@@ -902,7 +1004,8 @@ const businessPermit = new ContentP(
 				details)
 			</li>
 		</ul>
-		<p>
+
+    		<p>
 			Failure to provide proof of vehicle registration and/or proof of your address
 			will result in cancellation of the permit/s with no refund.
 		</p>
@@ -915,13 +1018,31 @@ const businessPermit = new ContentP(
       regular audit checks. If this is requested please submit them to 
       <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
     </p>
+     
+
+      
+              </div>
+                </details>
+
     <p>
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-    <br>
-     <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Pay%20Penalty%20Charge%20Notice'"> Send Link </button>
+   
 
     </p>
+
+     <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information about penalty charge notice"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Pay%20Penalty%20Charge%20Notice\`
+            "
+      >
+        Send link to review further information
+      </button>
 
 
 	`,
@@ -951,7 +1072,7 @@ const businessPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "20/02/2025", name: "Andy Walker" }
+  { date: "05/03/2025", name: "Gee Whitehouse" }
 );
 
 const residentsCarer = new ContentP(
@@ -959,6 +1080,12 @@ const residentsCarer = new ContentP(
   "Resident's Carer",
   "Learn about eligibility, cost, and required evidence for a carer permit, allowing carers to park in permit holder areas while providing home care.",
   `
+
+
+
+
+
+  
 		<h3>About the Permit</h3>
 		<p>
 			If you need essential care at home provided by a carer or carers, you may be
@@ -1436,9 +1563,48 @@ const residentsPermit = new ContentP(
   "Learn about the eligibility, cost, and application process for residents parking permits, including vehicle and address verification requirements.",
   `
 
-<h3>New and previous tenancies, including students, or newly purchased properties</h3>
+<h3>Residents Parking Permit</h3>
 
-<p>
+
+<p>If you live in a parking zone you will need a permit to park your vehicle on the street in this zone.</p>
+
+<p>Permits do not entitle you to park at directly at your address, but they allow you to park in any designated on street parking space within the zone
+your permit is for.</p>
+
+<p>The permit is issued virtually so you don’t need to display it in your window. 
+Once your licence plate is registered as holding a permit you can use on street parking.</p>
+
+<p>Whether or not you can apply will depend on your home address, which will need to be within a parking zone to be eligible for a permit.</p>
+
+<section class="info-panel" role="region" aria-label="Information panel">
+    <p>
+       There's a system issue that will prevent the renewal of paper residents parking permits for Holme Lane, 
+       Vaughton Hill and Loxley New Road. You will need to allow your permit to expire, 
+       then as early as possible within the 14 day grace period, buy a new permit. We apologise for the inconvenience.  
+    </p>
+</section>
+
+
+  <h3>Cost</h3>
+  <p>The costs to apply for a permit are: </p>
+     <ul>
+          <li>standard first permit £55.80</li>
+          <li>standard second permit £111.60</li>
+          <li>city centre inner residents permit £310.00</li>
+          <li>city centre outer residents permit £155.00</li>
+          <li>Hawley Street Car Park residents permit £55.80</li>
+          <li>Kelham Island and Neepsend Parking Scheme - first permit £111.60</li>
+          <li>Kelham Island and Neepsend Parking Scheme - second permit £223.20</li>
+    </ul>
+
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>New and previous tenancies</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+  <p>
 If you are moving into a new property and the Resident parking permit application shows the price being offered is not correct, this is likely to be because the previous tenants/owners have permits that are still valid.
 </p>
 <p>
@@ -1453,57 +1619,9 @@ If you have moved or are moving from an address where you hold a parking permit,
 <p>
 Get in touch with us for any other problems regarding parking permit applications or pricing.
 </p>
-
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>New and previous tenancies, including students, or newly purchased properties</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Exceptions
-            </summary>
-            <div class="details-accordion-content">
-                 <p>
-                    You cannot apply for a permit if you live in a car free development. You should check with your landlord, letting agent or solicitor if your property is car free.
-                </p>
-                <p>
-                    You can only apply for one permit per household if you're a resident of Holme Lane and Loxley New Road schemes.
-                </p>
-                <p>
-                    You can only apply for one permit per household if you're a resident of the Hawley Street Car Park scheme. In addition, a maximum of 24 permits will be issued for this scheme at any one time.
-                </p>
-            </div>
-        </details>
-        <details class="details-accordion">
-            <summary>
-                Number of permits
-            </summary>
-            <div class="details-accordion-content">
-                 <p>
-                     You can apply for 2 permits per household. We sometimes consider applications for a third permit, but we may ask for additional information to support your request.
-                 </p>
-                 <p>
-                     We would not issue more than two resident permits to households in the following zones:
-                 </p>
-                 <ul>
-                     <li>City Centre Inner</li>
-                     <li>City Centre Outer</li>
-                     <li>Botanical</li>
-                     <li>Porterbrook</li>
-                     <li>Stalker Lees</li>
-                     <li>Sharrow Vale</li>
-                     <li>Broomhill</li>
-                     <li>Beaufort Road and Severn</li>
-                     <li>Chandos Street</li>
-                     <li>College Street</li>
-                     <li>Endcliffe</li>
-                 </ul>
-            </div>
-        </details>
-    </div>
+  </div>
 </details>
+
 <div class="accordion-content">
     <details class="details-accordion">
         <summary>
@@ -1518,72 +1636,16 @@ Get in touch with us for any other problems regarding parking permit application
              </p>
         </div>
     </details>
-    <div class="accordion-content">
+
+
+ <div class="accordion-content">
         <details class="details-accordion">
             <summary>
-                Kelham Island and Neepsend Parking Scheme
+                Evidence Required
             </summary>
             <div class="details-accordion-content">
-                 <p>
-                    You can apply for one permit per household. We may consider applications for a second permit for properties in Neepsend, but we may ask for additional information to support your request.
-                 </p>
-                 <p>
-                    We would not issue more than one permit to properties in Kelham Island.
-                 </p>
-            </div>
-        </details>
-        <div class="accordion-content">
-            <details class="details-accordion">
-                <summary>
-                    How long a permit lasts
-                </summary>
-                <div class="details-accordion-content">
-                     <p>
-                         Permits are issued for one year. It's your responsibility to ensure your permits are renewed.
-                     </p>
-                </div>
-            </details>
-            <div class="accordion-content">
-                <details class="details-accordion">
-                    <summary>
-                        Apply for a permit
-                    </summary>
-                    <div class="details-accordion-content">
-                         <p>
-                             You can apply for a parking permit through our parking portal.
-                         </p>
-                         <p>
-                             Enter your address to see if you're eligible for a permit and complete the application form.
-                         </p>
-                         <p>
-                             Permits may be issued on the day of application, but if we need to review your application further we'll respond within 5 working days.
-                         </p>
-                         <p>
-                             Some applications may require further investigation. If your permit requires this, we'll contact you further within 28 working days.
-                         </p>
-                    </div>
-                </details>
-                <h3>About the Permit</h3>
-                <p>
-                    Residents parking permits are for residents living within a parking permit zone. There are exceptions if the planning consent states that an address is a car-free property.
-                </p>
-                <p>
-                    Residents parking permits are now paperless, virtual permits (similar to tax discs).
-                </p>
-                <p>
-                    You must apply for, renew, cancel, or change a residents permit online.
-                </p>
-                <h3>Cost</h3>
-                <ul>
-                    <li>standard first permit £55.80</li>
-                    <li>standard second permit £111.60</li>
-                    <li>city centre inner residents permit £310.00</li>
-                    <li>city centre outer residents permit £155.00</li>
-                    <li>Hawley Street Car Park residents permit £55.80</li>
-                    <li>Kelham Island and Neepsend Parking Scheme - first permit £111.60</li>
-                    <li>Kelham Island and Neepsend Parking Scheme - second permit £223.20</li>
-                </ul>
-                <h3>Evidence Required - Vehicle Ownership</h3>
+
+        <h3>  Vehicle Ownership</h3>
                 <p>
                     You will need to provide us with an electronic copy of one of the following:
                 </p>
@@ -1591,11 +1653,10 @@ Get in touch with us for any other problems regarding parking permit application
                     <li>Registration document (V5)</li>
                     <li>Vehicle insurance certificate</li>
                     <li>Lease agreement in your name</li>
-                    <li>
-                        Letter on company headed paper verifying that you work for them with the V5 or the vehicle lease document (if you use a company car)
-                    </li>
+                    <li>Letter on company headed paper verifying that you work for them with the V5 or the vehicle lease document (if you use a company car)</li>
                 </ul>
-                <h3>Evidence Required - Proof of Address</h3>
+
+                <h3>Proof of Address</h3>
                 <p>
                     We will check our Council Tax or electoral records or we will ask you to provide an electronic copy of one of the following items that show your name and address:
                 </p>
@@ -1617,15 +1678,28 @@ Get in touch with us for any other problems regarding parking permit application
                 <p>
                     When you purchase your parking permit you need to send proof of eligibility to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days (if you have not been requested to do so in the application process). At any time after this while you hold a permit we may require you to provide proof of your vehicle registration and your home or business address as part of regular audit checks. If this is requested please submit them to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>.
                 </p>
-                <p>
-                    For further information, visit <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-                    <br>
-                    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'">Send Link</button>
-                </p>
             </div>
-        </div>
-    </div>
-</div>
+        </details>
+
+
+                        <p>
+                    For further information, visit <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+                    
+                </p>
+         <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information about parking"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+            "
+      >
+        Send link to review further information
+      </button>
+
+
 
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -1654,7 +1728,7 @@ Get in touch with us for any other problems regarding parking permit application
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "05/03/2025", name: "Gee Whitehouse" }
 );
 
 const staffPermit = new ContentP(
