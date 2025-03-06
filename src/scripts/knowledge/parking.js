@@ -1249,87 +1249,154 @@ const greenParkingPermit = new ContentP(
   "Green Parking Permit",
   "Learn about the eligibility, benefits, and application process for a free Green Parking Permit for ultra low-emission vehicles (ULEVs).",
   `
-		<h3>About the Permit</h3>
-		<p>
-			A green parking permit is for ultra low-emission vehicles (ULEV). A ULEV is
-			any electric or hybrid vehicle that emits less than 75g of carbon dioxide
-			(CO2) per kilometre travelled, with a capability of travelling a minimum range
-			of 10 miles with zero CO2 emissions.
-		</p>
-		<p>
-			A green permit allows you to park in pay and display on-street bays in the
-			city centre or in Council city car parks.
-		</p>
-		<p>
-			The scheme is for anyone with an eligible vehicle, irrespective of home
-			address but If you do not comply with the conditions of the scheme you may
-			receive a parking fine.
-		</p>
-		<p>Permits will not be issued for any period less than 12 months.</p>
-		<h3>Cost</h3>
-		<p>Green permits are free.</p>
-		<h3>Time Limits</h3>
-		<p>
-			The time clock provided under the previous Green permit scheme is no longer
-			required to be displayed.
-		</p>
-		<p>
-			There are no time limits for parking in pay and display bays on street with a
-			green permit. Car parks tend not to have special time limits for green
-			permits, but there are some where you can only stay for 6 hours. The following
-			car parks are restricted to a maximum stay period of 6 hours for green permit
-			holders:
-		</p>
+<h3>Green Parking Permit</h3>
+<p>
+    A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the following criteria to park in the city centre for free. 
+    Anyone with an eligible vehicle can apply for it.
+</p>
 
-		<ul>
-			<li>Wellington Street car park (old fire station site)</li>
-			<li>Carver Lane car park</li>
-			<li>Stanley Lane car park</li>
-		</ul>
-		<h3>Green permits cannot be used:</h3>
-		<ul>
-			<li>
-				In non-council car parks or in other parking permit zones like Broomhill and
-				Hillsborough.
-			</li>
-			<li>In the Science Car Park A car park, Monday to Friday from 8am to 4pm.</li>
-			<li>
-				At all Sheffield Hallam University "Permit Holders only" car parks - these
-				are indicated by yellow signs.
-			</li>
-		</ul>
-    <h3>Changing your permit vehicle registration</h3>
-		<p>
-    You can change the vehicle that your permit is for by sending your name and address
-    and new vehicle registration details to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
-	  </p>
-    <h3>Eligibility</h3>
-    <p>
-      A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the 
-      following criteria to park in the city centre for free. 
-      Anyone with an eligible vehicle can apply for it.
-    </p>
-    <p>The vehicle must be:</p>
-    <ul>
-      <li>electric or hybrid fuel type</li>
-      <li>
-      emit less than 75g of carbon dioxide (CO2) per kilometre travelled, with a capability of 
-      travelling a minimum range of 10 miles with zero CO2 emissions
-      </li>
-    </ul>
-    <p>
+<p>The vehicle must be:</p>
+<ul>
+    <li>electric or hybrid fuel type</li>
+    <li>emit less then 75g of carbon dioxide (CO2) per kilometre travelled, with a capability of travelling a minimum range of 10 miles with zero CO2 emissions</li>
+</ul>
+
+<p>
     You can use the DVLA checker to see if your vehicle meets these standards. 
-    It may show 0g on the CO2 emissions for some diesel vehicles as this data is not 
-    on their records. Such vehicles are not ULEVs and do not qualify for a 
-    green parking permit. You will need to provide evidence that your vehicle 
-    meets the required standard to qualify for a green permit.
-    </p>
-      <p>
-      For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-      <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
-      </p>
+    It may show 0g on the CO2 emissions for some diesel vehicles as this data is not on their records. 
+    Such vehicles are not ULEVs and do not qualify for a green parking permit.
+</p>
+
+<h3>Cost</h3>
+<p>Green permits are free.</p>
+
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Exceptions</summary>
+        <div class="details-accordion-content">
+            <p>Business permits are not issued for:</p>
+            <ul>
+                <li>City centre Inner/Outer zones</li>
+                <li>Falding Street</li>
+                <li>Holme Lane</li>
+                <li>Edward Street Flats Car Park</li>
+                <li>Loxley New Road</li>
+                <li>Vaughton Hill</li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Number of permits</summary>
+        <div class="details-accordion-content">
+            <h4>You can have 2 permits per business.</h4>
+            <p>
+                Businesses in Neepsend have the option to apply for additional permits. If you’d like to apply for 
+                additional permits, please log in to your account, select the ‘Business Discretionary’ permit type 
+                and complete your application.
+            </p>
+        </div>
+    </details>
+</div>
+
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>How long a permit lasts</summary>
+        <div class="details-accordion-content">
+            <p>
+                Permits are issued for one year. It is your responsibility to ensure your permit is renewed. 
+                We do not issue replacement pool permits; if you lose them, you will need to apply again. 
+            </p>
+        </div>
+    </details>
+</div>
+
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Where you can use the permit</summary>
+        <div class="details-accordion-content">
+            <p>
+                A green permit only allows you to park in pay and display bays located in the city centre (inner and outer zones) either:
+            </p>
+            <ul>
+                <li>on street</li>
+                <li>in most car parks that we run (subject to time limits)</li>
+            </ul>
+
+            <p>It cannot be used in:</p>
+            <ul>
+                <li>other types of parking bay (such as disabled bays, permit holder parking bays)</li>
+                <li>Hawley Street Car Park</li>
+                <li>in other parking permit zones</li>
+                <li>car parks we don’t run eg university permit holder car parks</li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Parking time limits</summary>
+        <div class="details-accordion-content">
+            <p>
+                There are no time limits for parking with a green permit in most of the pay and display bays in the city centre inner and outer zones.  
+            </p>
+
+            <p>However, the following car parks are restricted to a maximum stay period of 6 hours for green permit holders:</p>
+            <ul>
+                <li>Devonshire Green car park</li>
+                <li>Milton Street car park </li>
+                <li>Carver Lane car park</li>
+                <li>West Street Lane car park</li>
+            </ul>
+
+            <p>
+                If you intend to use any of these car parks please send an email to
+                <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
+                and we'll send you a clock for you to display in your windscreen.
+            </p>
+        </div>
+    </details>
+</div>
+
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Number of permits</summary>
+        <div class="details-accordion-content">
+            <p>You can apply for one permit per vehicle. There is no limit to how many permits a household can have.</p>
+        </div>
+    </details>
+</div>
+
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>How long a permit lasts</summary>
+        <div class="details-accordion-content">
+            <p>Permits last for one year. It is your responsibility to ensure your permit is renewed.</p>
+        </div>
+    </details>
+</div>
+
+<p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+</p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="Send link to further information about Parking"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+    "
+>
+    Send link to review further information
+</button>
+     
  	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1364,11 +1431,12 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
   "Langsett And Hillsborough Bus And Tram Gate",
   "Learn about the eligibility and application process for a free permit to drive through the Langsett and Hillsborough bus and tram gate for residents of specific roads.",
   `
-		<h3>About the Permit</h3>
-		<p>
-			A permit to drive through the bus or tram gate at Langsett Road (outbound
-			only) is available for residents of the following roads:
-		</p>
+<h3>Hillsborough Langsett Road bus and tram gate </h3>
+
+<p>The bus or tram gate on Langsett Road is just beyond Ripley Street and is usually limited to public transport and taxis.</p>
+
+<p>A permit to drive through the bus or tram gate at Langsett Road (outbound only) is available for residents of the following roads:</p>
+
 		<ul>
 			<li>Rudyard Road</li>
 			<li>Rudyard Mews</li>
@@ -1377,56 +1445,112 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
 			<li>Haggard Road</li>
 			<li>Kipling Road</li>
 		</ul>
-		<p>
-			Each 'permit of exemption' is valid for 12 months. Without a permit, residents
-			can't use the bus or tram gate. The bus or tram gate on Langsett Road is just
-			beyond Ripley Street.
-		</p>
-		<p>
-			The permit doesn't allow the holder to use other bus/tram gates in
-			Hillsborough or elsewhere in Sheffield. This includes the ‘inbound’ bus or
-			tram gates on Holme Lane or Middlewood Road. If holders do (when signs say
-			they shouldn't), we may consider withdrawing the exemption completely.
-		</p>
-		<p>
-			We can provide exemptions for additional vehicles registered at individual
-			properties (subject to appropriate evidence). However, we are not able to
-			provide exemptions for visitors to properties, delivery vehicles, or
-			short-term hire or ‘lease’ cars (unless registered at an address on one of the
-			above roads).
-		</p>
-		<h3>Cost</h3>
-		<p>There is no charge for this permit.</p>
-		<h3>Evidence Required - Proof of Address</h3>
-		<p>
-			We will check your Sheffield Council Tax or electoral records. If we do not
-			have these, provide an electronic copy of one of the following:
-		</p>
-		<ul>
-			<li>Last utility bill</li>
-			<li>Tenancy agreement</li>
-			<li>Council Tax statement</li>
-			<li>Proof of vehicle ownership</li>
-			<li>Registration document (V5)</li>
-			<li>Vehicle insurance certificate</li>
-			<li>Company car: also include a letter on company headed paper</li>
-		</ul>
+
+
+<section class="info-panel" role="region" aria-label="Information panel">
     <p>
-      When you purchase your parking permit you need to send proof of eligibility 
-      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
-      (if you have not been requested to do so in the application process). 
-      At any time after this while you hold a permit we may require you to provide proof 
-      of your vehicle registration and your home or business address as part of 
-      regular audit checks. If this is requested please submit them to 
-      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
+       Each permit is valid for 12 months. Without a permit, residents can't use the bus or tram gate. The permit is issued virtually so you don’t need to display it in your vehicle.
     </p>
+</section>
+
+<h4>Cost</h4>
+		<p>Who can't apply for the permit </p>
+
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Where you can use the permit</summary>
+        <div class="details-accordion-content">
+          
+We can't provide permits for visitors to properties, delivery vehicles,
+ or short term hire or lease cars (unless registered at an address on one of the eligible roads).
+        
+        </div>
+    </details>
+
+    <div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Where you can't use the permit </summary>
+        <div class="details-accordion-content">
+          
+<p>The permit doesn't allow the holder to use other bus or tram gates in Hillsborough or elsewhere in Sheffield. 
+This includes the inbound bus or tram gates on Holme Lane or Middlewood Road. </p>
+<p>If holders do use these gates (when signs say they shouldn't) we may consider withdrawing their permit completely. </p>
+
+        </div>
+    </details>
+
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary> Withdrawing permits </summary>
+        <div class="details-accordion-content">
+          <p>Your permit will be invalid if:</p>
+<ul>
+	<li>you are not a resident of one of the above roads </li>
+  <li>you are not a resident of one of the above roads </li>
+  <li>you are not a resident of one of the above roads </li>
+</ul>
+        </div>
+    </details>
+
+<p>If any of this takes place we may cancel your permit and you will not be allowed to use Langsett Road bus gate. 
+You could be issued a bus lane fine if you drive through without a valid permit. 
+ </p>
+
+
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Evidence Required</summary>
+        <div class="details-accordion-content">
+
+        <h4>Proof of vehicle ownership </h4>
+          <p>You would need to provide us with an electronic copy of one of the following: </p>
+<ul>
+<li>registration document (V5) </li>
+<li>vehicle insurance certificate </li>
+<li>lease agreement in your name </li>
+<li>letter on company headed paper verifying that you work for them with the V5 or the vehicle lease document  (if you use a company car) </li>
+
+
+</ul>
+
+<h4>Proof of address </h4>
+         <p>We also need one proof of address: </p>
+
+        
+<ul>
+			<li>most recent utility bill </li>
+			<li>tenancy agreement (witnessed and signed) </li>
+			<li>current household contents insurance policy </li>
+			<li>current vehicle insurance certificate or schedule </li>
+			<li>bank statement or credit card bill dated or showing transactions from the last 2 months (block out your account details) </li>
+			<li>payslip, pension slip, benefits notification letter or Inland Revenue notice of bill coding dated within the last 2 months 
+      (block out any personal details) </li>
+		</ul>
+        
+        </div>
+    </details>
+
+
     <p>
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-  <br>
-        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
 
     </p>
+
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="Send link to further information about Parking"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+    "
+>
+    Send link to review further information
+</button>
+
+
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
