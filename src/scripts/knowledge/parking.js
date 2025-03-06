@@ -835,140 +835,139 @@ const businessPermit = new ContentP(
   "Business Permit",
   "Learn about the types, costs, and application process for business permits, including required evidence for vehicle ownership and proof of address.",
   `
+<h3>Business parking permit</h3>
 
-<h3>Business parking permit</h3>	
+<p>
+  You will need a permit if your business is in a parking permit zone and 
+  you want to use on-street parking spaces.
+</p>
 
-    <p>
-      You will need a permit if your business is in a parking permit zone and 
-      you want to use on street parking spaces.
-    </p>
-		<p>There are two types of business permit available:</p>
-		<ul>
-    <h4>Single vehicle permit</h4>
-			<li>
-				This is a paperless permit for a specific car that cannot be used in any other vehicle.
-			</li>
-      <h4>Pool Permit</h4>
-			<li>
-				Pool business permits allow staff at a business to share the
-				use of the permit to park near the business.
-			</li>
-		</ul>
+<p>There are two types of business permits available:</p>
+
+<h4>Single vehicle permit</h4>
+<ul>
+  <li>
+    This is a paperless permit for a specific car that cannot be used in any other vehicle.
+  </li>
+</ul>
+
+<h4>Pool Permit</h4>
+<ul>
+  <li>
+    Pool business permits allow staff at a business to share the use of the permit to park near the business.
+  </li>
+</ul>
 
 <h3>Cost</h3>
-		<ul>
-			<li>The first permit costs £111.60</li>
-			<li>A second permit costs £223.20</li>
-		</ul>
+<ul>
+  <li>The first permit costs £111.60</li>
+  <li>A second permit costs £223.20</li>
+</ul>
+
 
 
 <div class="accordion-content">
-                <details class="details-accordion">
-                    <summary>
-                       Exceptions 
-                    </summary>
-                    <div class="details-accordion-content">
-      <p> Business permits are not issued for: </p>
-      <ul>
-        <li>City centre Inner/Outer zones </li>
-        <li>Falding Street </li>
-        <li>Holme Lane </li>
-        <li>Edward Street Flats Car Park </li>
-        <li>Loxley New Road </li>
-        <li>Vaughton Hill </li>
+    <details class="details-accordion">
+        <summary>Exceptions</summary>
+        <div class="details-accordion-content">
+            <p>Business permits are not issued for:</p>
+            <ul>
+                <li>City centre Inner/Outer zones</li>
+                <li>Falding Street</li>
+                <li>Holme Lane</li>
+                <li>Edward Street Flats Car Park</li>
+                <li>Loxley New Road</li>
+                <li>Vaughton Hill</li>
+            </ul>
+        </div>
+    </details>
+</div>
 
-      </ul>
-                    </div>
-                </details>
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Number of permits</summary>
+        <div class="details-accordion-content">
+            <h4>You can have 2 permits per business.</h4>
+            <p>
+                Businesses in Neepsend have the option to apply for additional permits. If you’d like to apply for 
+                additional permits, please log in to your account, select the ‘Business Discretionary’ permit type 
+                and complete your application.
+            </p>
+        </div>
+    </details>
+</div>
 
-                <div class="accordion-content">
-                <details class="details-accordion">
-                    <summary>
-                       Number of permits 
-                    </summary>
-                    <div class="details-accordion-content">
-      <h4> You can have 2 permits per business. </h4>
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>How long a permit lasts</summary>
+        <div class="details-accordion-content">
+            <p>
+                Permits are issued for one year. It is your responsibility to ensure your permit is renewed. 
+                We do not issue replacement pool permits; if you lose them, you will need to apply again. 
+            </p>
+        </div>
+    </details>
+</div>
 
-      <p>Businesses in Neepsend have the option to apply for additional permits. If you’d like to apply for additional permits, 
-      please log in to your account, 
-      select the ‘Business Discretionary’ permit type and complete your application. </p>
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Where you can use the permit</summary>
+        <div class="details-accordion-content">
+            <p>
+                A permit does not entitle you to park directly at your business address, but it allows you to park in 
+                any designated on-street parking space within the zone your permit is for. 
+            </p>
+            <p>
+                You can park your vehicle without time limits in any on-street bay in the parking zone that is signed 
+                for the use of permit holders.
+            </p>
+            <p>
+                Botanical zone permits are also valid for parking in the Sharrow Vale centre, Endcliffe, and Stalker Lees zones.
+            </p>
+            <p>
+                Broomhall and The Groves permit holders can also park in Broomspring Lane car park.
+            </p>
+            <p>
+                Chandos Street, College Street, Beaufort Road, and Severn Road permits are also valid in the Broomhill zone. 
+                However, if you have a Broomhill permit, you cannot park on Beaufort Road, Severn Road, Chandos Street, or College Street.
+            </p>
+            <p>Business permits are not valid for use in any of the permit bays on:</p>
+            <ul>
+                <li>Hickmott Road</li>
+                <li>Rosedale Gardens</li>
+                <li>Sharrow Vale Road (between Junction Road and Lynton Road)</li>
+                <li>Bennett Street</li>
+                <li>Randall Place</li>
+                <li>Harwood Close</li>
+                <li>Thorp Close</li>
+                <li>The residential parking areas off Dover Street, Ellison Street, or Netherthorpe Place</li>
+            </ul>
+            <p>Business permits are not valid for use in any of the shared-use permit bays on these roads:</p>
+            <ul>
+                <li>Fulwood Road</li>
+                <li>Glossop Road</li>
+                <li>Westbourne Road (from Glossop Road to Southbourne Road)</li>
+                <li>Ashdell Road (from Glossop Road to Ashdell)</li>
+                <li>Peel Street</li>
+                <li>Newbould Lane (Whitham Road to Nile Street)</li>
+                <li>2-hour maximum stay bays on Beech Hill Road</li>
+                <li>Watson Road</li>
+                <li>Ashgate Road</li>
+                <li>Whitham Road</li>
+                <li>Spooner Road (from Crookes Road to car park ramp) </li>
+            </ul>
+        </div>
+    </details>
+</div>
 
-             </div>
-                </details>
-                
-                <div class="accordion-content">
-                <details class="details-accordion">
-                    <summary>
-                      How long a permit lasts 
-                    </summary>
-                    <div class="details-accordion-content">
-     
-      <p>Permits are issued for one year. It is your responsibility to ensure your permit is renewed. 
-      We do not issue replacement pool permits, if you lose them you will need to apply again.  </p>
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Evidence Required</summary>
+        <div class="details-accordion-content">
+        </div>
+    </details>
+</div>
 
-      
-              </div>
-                </details>
-
-                                <div class="accordion-content">
-                <details class="details-accordion">
-                    <summary>
-                      Where you can use the permit 
-                    </summary>
-                    <div class="details-accordion-content">
-     
-      <p>A permit does not entitle you to park directly at your business address, 
-      but it allows you to park in any designated on street parking space within the zone your permit is for.   </p>
-
-      <p>You can park your vehicle without time limits in any on street bay in the parking zone that is signed for the use of permit holders. </p>
-
-      <p>Botanical zone permits are also valid for parking in the Sharrow Vale centre, Endcliffe and Stalker Lees zones. </p>
-
-      <p>Broomhall and The Groves permit holders can also park in Broomspring Lane car park. </p>
-
-      <p>Chandos Street, College Street, Beaufort Road and Severn Road permits are also valid in the Broomhill zone. However, 
-      if you have a Broomhill permit you cannot park on Beaufort Road, Severn Road, Chandos Street or College Street. </p>
-
-      <p>Business permits are not valid for use in any of the permit bays on: </p>
-
-      <ul>
-<li>Hickmott Road </li>
-<li>Rosedale Gardens </li>
-<li>Sharrow Vale Road (between Junction Road and Lynton Road) </li>
-<li>Bennett Street </li>
-<li>Randall Place </li>
-<li>Harwood Close </li>
-<li>Thorp Close </li>
-<li>the residential parking areas off Dover Street, Ellison Street or Netherthorpe Place </li>
-      </ul>
-
-      <p>Business permits are not valid for use in any of the shared use permit bays on these roads: </p>
-
-      <li>Fulwood Road </li>
-      <li>Glossop Road </li>
-      <li>Westbourne Road (from Glossop Road to Southbourne Road) </li>
-      <li>Ashdell Road (from Glossop Road to Ashdell) </li>
-      <li>Peel Street </li>
-      <li>Newbould Lane (Whitham Road to Nile Street) </li>
-      <li>2 hour maximum stay bays on Beech Hill Road </li>
-      <li>Watson Road </li>
-      <li>Ashgate Road </li>
-      <li>Whitham Road </li>
-      <li>Spooner Road (from Crookes Road to car park ramp)  </li>
-
-
-              </div>
-                </details>
-
-
- <div class="accordion-content">
-                <details class="details-accordion">
-                    <summary>
-                      Evidence Required
-                    </summary>
-                    <div class="details-accordion-content">
-     
-     
 <h4> Vehicle Ownership</h4>
 		<p>
 			You will need to provide us with an electronic copy of one of the following:
@@ -1018,12 +1017,9 @@ const businessPermit = new ContentP(
       regular audit checks. If this is requested please submit them to 
       <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
     </p>
-     
-
-      
+           
               </div>
                 </details>
-
     <p>
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
