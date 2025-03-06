@@ -1081,11 +1081,6 @@ const residentsCarer = new ContentP(
   "Learn about eligibility, cost, and required evidence for a carer permit, allowing carers to park in permit holder areas while providing home care.",
   `
 
-
-
-
-
-  
 		<h3>About the Permit</h3>
 		<p>
 			If you need essential care at home provided by a carer or carers, you may be
