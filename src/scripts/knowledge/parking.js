@@ -1802,16 +1802,7 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
     "
 >
     Send link to review further information
-</button>
-
-
-
-
-
-
-
-
-	
+</button>	
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
