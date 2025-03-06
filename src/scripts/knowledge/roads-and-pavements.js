@@ -466,7 +466,7 @@ const reportFallenLeaves = new FormRaP(
   "report_fallen_leaves",
   {
     type: "Report",
-    keywords: ["Fallen", "leaves"],
+    keywords: ["fallen", "leaves","highway", "fallen leaves", "fallen leaves on", "fallen leaves on the", "fallen leaves on the highway"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
@@ -480,7 +480,7 @@ const reportHedgePlantGrass = new ContentRaP(
     <section>
       <h3>Grassed areas</h3>
       <p>
-        Grass cutting seasons are Spring and Summer. The frequecney in which they
+        Grass cutting seasons are Spring and Summer. The frequency in which they
         are cut varies from every 2-4 weeks or every year.
       </p>
       <ul>
@@ -534,8 +534,10 @@ const reportHedgePlantGrass = new ContentRaP(
         land, you will need to transfer the call to the Highway Enforcement team.
         The Highway Enforcement team can serve hedge cutting/tree pruning notices to
         private landowners where trees/hedges are encroaching on to the highway not
-        considered to be causing hazard or danger. If a tree is causing a hazard or
-        danger to the highway, raise a report.
+        considered to be causing hazard or danger. 
+        Amey will issue Section 154 notices to the property in the 1st instance
+        then it will be passed to Highways Enforcement if the issue isn’t resolved within 14 days 
+        If a tree is causing a hazard or danger to the highway, raise a report.
       </p>
     </section>
   `,
@@ -581,8 +583,8 @@ const reportStreetSignBollard = new FormRaP(
 
 const reportTree = new ContentRaP(
   "reportTree",
-  "Trees and tree grills",
-  "Report problems such as fallen, leaning, diseased, dead trees, or damaged tree grills",
+  "Trees and tree grilles",
+  "Report problems such as fallen, leaning, diseased, dead trees, or damaged tree grilles",
   `
     <section>
       <h3>Maintanence</h3>
