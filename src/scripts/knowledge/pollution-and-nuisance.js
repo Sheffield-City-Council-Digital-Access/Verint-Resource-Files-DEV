@@ -2687,40 +2687,6 @@ const pestControl = new MenuPaN(
 
 //#endregion Pest Control
 
-const handoverDogtoCouncil = new ContentPaN(
-  "handoverDogtoCouncil",
-  "Handover Dog to Council",
-  "",
-  `
-    
-  `,
-  {
-    buttonLabel: "Handover Dog to Council",
-    formName: "animal_control",
-  },
-  { typeKey: "pest_control_transfer_to_service" },
-  { typeKey: "pest_control_information_provided" },
-  {
-    type: "Book",
-    keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
-    categories: [
-      "Pollution and Nuisance",
-      "Environmental",
-      "Pest Control",
-      "Animal Control",
-      "Environmental Health",
-    ],
-  },
-  { date: "11/10/2024", name: "Shahzad Athar" }
-);
-
-const animalControl = new MenuPaN(
-  "animalControl",
-  "Animal Control",
-  "Animal control treatments, services and pricing",
-  [handoverDogtoCouncil]
-);
-
 const reportNeedlesGlass = new FormPaN(
   "reportNeedlesGlass",
   "Needles or broken glass",
@@ -2785,6 +2751,33 @@ const reportFlyTipping = new FormPaN(
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
+ 
+
+const handoverDogtoCouncil = new FormPaN(
+  "handoverDogtoCouncil",
+  "Handover Dog to Council",
+  "Hand over a dog to the council",
+  "report_dangerous_dog",
+  {
+    type: "Report",
+    keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
+    categories: ["Pollution and Nuisance", "Environmental", "Pest Control", "Animal Control", "Environmental Health"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+const reportDangerousDog = new FormPaN(
+  "reportDangerousDog",
+  "Dangerous dog",
+  "Report a dog as dangerous",
+  "report_dangerous_dog",
+  {
+    type: "Report",
+    keywords: ["Dog", "dangerous","dangerous dog  ","dog as dangerous"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
 
 const reportDogFouling = new FormPaN(
   "reportDogFouling",
@@ -2797,6 +2790,60 @@ const reportDogFouling = new FormPaN(
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
+const reportStrayingDog = new FormPaN(
+  "reportStrayingDog",
+  "Straying dog",
+  "Report straying dog on the highway",
+  "report_straying_dog",
+  {
+    type: "Report",
+    keywords: ["Dog", "straying","stray","stray dog"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+const reportDogAsLost = new FormPaN(
+  "reportDogAsLost",
+  "Lost dog",
+  "Report a lost dog",
+  "report_dog_as_lost",
+  {
+    type: "Report",
+    keywords: ["Dog", "missing","lost","missing dog","lost dog","dog as missing","dog as lost"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+
+
+const reportSmoke = new FormPaN(
+  "reportSmoke",
+  "Smoke",
+  "Report smoke",
+  "report_smoke",
+  {
+    type: "Report",
+    keywords: ["Report", "smoke"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+const reportNoise = new FormPaN(
+  "reportNoise",
+  "Noise",
+  "Report noise",
+  "report_noise",
+  {
+    type: "Report",
+    keywords: ["Report", "noise"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
 );
 
 const abandonedVehicles = new ContentPaN(
@@ -3195,19 +3242,32 @@ const cleanAirZone = new MenuPaN(
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
+const animalControl = new MenuPaN(
+  "animalControl",
+  "Animal Control",
+  "Animal control treatments, services and pricing",
+  [handoverDogtoCouncil]
+);
+
 const pollutionAndNuisance = new ServicePaN(
   "pollutionAndNuisance",
   "Pollution and Nuisance",
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone, Enviro, Eps, Env`,
   [
     abandonedVehicles,
+    animalControl,
     pestControl,
+    reportDangerousDog, 
     reportDogFouling,
+    reportStrayingDog,
+    reportDogAsLost,
     reportLitter,
     reportGraffiti,
     reportFlyPosting,
     reportFlyTipping,
     reportNeedlesGlass,
+    reportSmoke,
+    reportNoise,
     cleanAirZone
   ]
 );

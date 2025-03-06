@@ -152,7 +152,7 @@ const reportHighwayDamage = new FormRaP(
   "report_highway_damage",
   {
     type: "Report",
-    keywords: ["Highway", "damage"],
+    keywords: ["Highway", "damage", "damage to", "damage to the", "damage to the highway"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }

@@ -54,25 +54,26 @@ class FormTaT extends CoreTaT {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-const childrensTravelPass = new ContentTaT(
-  "childrensTravelPass",
-  "Childrens Travel Pass",
-  "Find details on eligibility, application, appeals, and replacement options for a Children's Travel Pass in Sheffield.",
+const zoomZeroFare = new ContentTaT(
+  "zoomZeroFare",
+  "Zoom Zero Travel Pass",
+  "(Previously known as a Children's Travel Pass) Find details on eligibility, application, appeals, and replacement options for a Zoom Zero travel pass in Sheffield.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
-      <h3>If You've Changed Your Address or School</h3>
+      <h3>If you have changed your address or school</h3>
       <p>
-        This could affect the distance your child travels to school, so please check your eligibility before you apply for a new Children's Travel Pass.
+        This could affect the distance your child travels to school, so please check your eligibility before you apply for a new Zoom Zero travel pass.
         <br><br>
         Applications should be made to the Council where you live and not where the school is.
         <br><br>
         If you chose not to apply for your catchment school or the three nearest qualifying secondary 
-        schools for low-income families, you are unlikely to qualify for a Children’s Travel Pass.
+        schools for low-income families, you are unlikely to qualify for a Zoom Zero travel pass.
         <br><br>
         Please be aware that if the catchment school or nearest school(s) has a 
         place available in your child's year group, you are unlikely to qualify for 
-        a Children’s Travel Pass. There may also be exceptional circumstances 
-        that could qualify your child for a Children's Travel Pass.
+        a Zoom Zero travel pass. There may also be exceptional circumstances 
+        that could qualify your child for a Zoom Zero travel pass.
+
       </p>
     </section>
     <p>
@@ -111,7 +112,7 @@ const childrensTravelPass = new ContentTaT(
         <li>the child is in foster care</li>
       </ul>
     </p>
-    <h3>Apply for or renew a Children's Travel Pass</h3>
+    <h3>Apply for or renew a Zoom Zero travel pass</h3>
     <p>
       You can apply for a new pass or renew an existing one at: <a href="https://www.sheffield.gov.uk/utilities/form/travel-and-transport/apply-childrens-travel-pass-start" target="_blank">https://www.sheffield.gov.uk/utilities/form/travel-and-transport/apply-childrens-travel-pass-start</a> 
       <br>
@@ -145,17 +146,17 @@ const childrensTravelPass = new ContentTaT(
     </details>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Appeal a Children's Travel Pass decision</h3>
+        <h3>Appeal a Zoom Zero travel pass decision</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
         <p>
-          If you don't meet the criteria and are refused a Children’s Travel Pass, 
+          If you don't meet the criteria and are refused a Zoom Zero travel pass, 
           you have the right to appeal the decision. The appeals process has 2 stages.
         </p>
         <h4>Stage 1</h4>
         <p>
-          Request a Stage 1 review within 20 working days of our decision to refuse a Children’s Travel Pass. We'll send you a 
+          Request a Stage 1 review within 20 working days of our decision to refuse a Zoom Zero travel pass. We'll send you a
           detailed written outcome, we aim to do this within 20 working days of receiving your written request.
           <br>
           <br>
@@ -233,7 +234,7 @@ const childrensTravelPass = new ContentTaT(
     </details>
   `,
   {
-    buttonLabel: "Apply for childrens travel pass",
+    buttonLabel: "Apply for a Zoom Zero travel pass",
     formName: "childrens_travel_pass",
   },
   { typeKey: "" },
@@ -242,12 +243,17 @@ const childrensTravelPass = new ContentTaT(
     type: "Apply",
     keywords: [
       "Zoom Zero Travel Pass",
+      "Zoom Zero Fare",
+      "zz",
+      "zztp",
+      "zzf",
       "childrens travel pass",
       "childrens travel pas",
       "childrens travle pass",
       "childrens travelp ass",
       "childrens trave pass",
       "childrens travell pass",
+      "children's travel pass",
       "CTP",
       "childrens",
       "child",
@@ -269,7 +275,7 @@ const childrensTravelPass = new ContentTaT(
     ],
     categories: ["Travel and Transport"],
   },
-  { date: "20/02/2025", name: "Andy Walker" }
+  { date: "05/03/2025", name: "Sam Coupland" }
 );
 
 const disabledPersonsTravelPermit = new ContentTaT(
@@ -486,5 +492,5 @@ const travelAndTransport = new ServiceTaT(
   "travelAndTransport",
   "Travel and Transport",
   `Public transport, driving, cycling, walking, travel cards and passes, school passes, travel news and updates…`,
-  [childrensTravelPass, disabledPersonsTravelPermit]
+  [zoomZeroFare, disabledPersonsTravelPermit]
 );
