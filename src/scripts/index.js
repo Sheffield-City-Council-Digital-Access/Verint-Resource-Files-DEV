@@ -2648,8 +2648,7 @@ function getAndSetReviewPageData() {
         KDF.getVal("txt_resume_form") === "false")
     ) {
       // use stored page array when resumed
-      relevantPages = [...relevantPagesReversed].reverse();
-      KDF.setVal("txt_pages", relevantPages.join(","));
+      relevantPages = KDF.getVal("txt_pages").split(",");
       if (reviewPageIsVisible) {
         // check for review page due to page changes
         KDF.setVal("txt_resume_form", "false"); // to prevent coming back down the resume path and construct page array
