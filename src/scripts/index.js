@@ -1164,7 +1164,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   updateProgressBar(targetpageid);
 
   if (pageName === "page_about_you") {
-    if (kdf.access === "agent" && !kdf.form.data.num_reporter_obj_id) {
+    if (kdf.access === "agent") {
       KDF.sendDesktopAction("raised_by");
     }
   }
