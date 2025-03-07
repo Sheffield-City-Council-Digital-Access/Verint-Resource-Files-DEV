@@ -2524,8 +2524,6 @@ Contractors needing more time to work at a property will need to apply for trade
   <p>
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-    <br>
-    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'">Send Link</button>
   </p>
 </div>
 
