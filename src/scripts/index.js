@@ -508,7 +508,7 @@ function handleInitialisingEvent() {
 
 // --- HANDLE ON READY EVENT ----------------------------------------------- \\
 
-function handleOnReadyEvent(event, kdf) {
+function handleOnReadyEvent(_, kdf) {
   customerState = kdf.customerset;
 
   // --- ADD CONTENT TO WHY WE NEED DATE OF BIRTH --------------------------- \\
@@ -952,7 +952,11 @@ function handleOnReadyEvent(event, kdf) {
 
   $(`.date-mm`).on("input focusout", function (e) {
     const parentId = $(this).attr("id").replace("_num_", "_date_").slice(0, -3);
-    const dateMessage = getValidationMessageFromSession(parentId);
+    const txtFieldId = $(this)
+      .attr("id")
+      .replace("_num_", "_txt_")
+      .slice(0, -3);
+    const dateMessage = getValidationMessageFromSession(txtFieldId);
     const dd = $(`#${this.id.slice(0, -2)}dd`).val();
     const yy = $(`#${this.id.slice(0, -2)}yy`).val();
     if (e.type === "input") {
@@ -994,7 +998,11 @@ function handleOnReadyEvent(event, kdf) {
         .attr("id")
         .replace("_num_", "_date_")
         .slice(0, -3);
-      const dateMessage = getValidationMessageFromSession(parentId);
+      const txtFieldId = $(this)
+        .attr("id")
+        .replace("_num_", "_txt_")
+        .slice(0, -3);
+      const dateMessage = getValidationMessageFromSession(txtFieldId);
       const dd = $(`#${this.id.slice(0, -2)}dd`).val() !== "" ? true : false;
       const mm = $(`#${this.id.slice(0, -2)}mm`).val() !== "" ? true : false;
       $(`#${parentId}`)
@@ -1156,9 +1164,8 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   updateProgressBar(targetpageid);
 
   if (pageName === "page_about_you") {
-    if (kdf.access === "agent" && kdf.customerset === "agent_false") {
+    if (kdf.access === "agent") {
       KDF.sendDesktopAction("raised_by");
-      // createModal("setReporterModal", "system_search_record");
     }
   }
 
@@ -1490,7 +1497,8 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
         );
 
         if (validationMessageElement) {
-          validationMessageElement.textContent = "Enter a valid postcode";
+          validationMessageElement.textContent =
+            getValidationMessageFromSession(postcodeInput.id);
           validationMessageElement.style.display = "block";
         }
       }
@@ -2280,7 +2288,8 @@ function getMinMaxDates(dateElementId) {
 }
 
 function checkDate(id, dd, mm, yy, element) {
-  const dateMessage = getValidationMessageFromSession(id);
+  const txtFieldId = id.replace("_num_", "_txt_").slice(0, -3);
+  const dateMessage = getValidationMessageFromSession(txtFieldId);
 
   // Clear previous errors
   $(`#${id} .date-dd, #${id} .date-mm, #${id} .date-yy`).removeClass(
@@ -2643,9 +2652,8 @@ function getAndSetReviewPageData() {
       // use stored page array when case management
       relevantPages = KDF.getVal("txt_pages").split(",");
     } else if (
-      KDF.kdf().form.ref &&
-      (KDF.getVal("txt_resume_form") === "true" ||
-        KDF.getVal("txt_resume_form") === "false")
+      KDF.kdf().form.caseid &&
+      KDF.getVal("txt_resume_form") === "true"
     ) {
       // use stored page array when resumed
       relevantPages = KDF.getVal("txt_pages").split(",");
@@ -2682,7 +2690,7 @@ function getAndSetReviewPageData() {
         // Extract the page name from the element's ID
         const pageId = $(formPages[i]).attr("id");
         const pageName = pageId.split("dform_page_")[1];
-        console.log(pageName);
+
         KDF.showPage(pageName);
         const contentDivId = `review-page-content--${pageName}`;
 
