@@ -1495,7 +1495,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
         const validationMessageElement = document.querySelector(
           `div[data-name="${postcodeInput.name}"] .dform_validationMessage`
         );
-        console.log(validationMessageElement);
+        console.log(postcodeInput);
         if (validationMessageElement) {
           validationMessageElement.textContent = "Enter a valid postcode";
           validationMessageElement.style.display = "block";
