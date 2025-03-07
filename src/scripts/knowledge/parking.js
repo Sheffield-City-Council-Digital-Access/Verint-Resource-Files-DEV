@@ -866,7 +866,29 @@ const businessPermit = new ContentP(
 
 
 
-<div class="accordion-content">
+
+
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Exceptions</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+ <p>Business permits are not issued for:</p>
+            <ul>
+                <li>City centre Inner/Outer zones</li>
+                <li>Falding Street</li>
+                <li>Holme Lane</li>
+                <li>Edward Street Flats Car Park</li>
+                <li>Loxley New Road</li>
+                <li>Vaughton Hill</li>
+            </ul>
+             </div>
+</details>
+
+
+
     <details class="details-accordion">
         <summary>Exceptions</summary>
         <div class="details-accordion-content">
