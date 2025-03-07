@@ -4505,6 +4505,7 @@ function addValidationMessageToSession(className) {
 }
 
 function getValidationMessageFromSession(id) {
+  console.log(id);
   const fieldElement = document.getElementById(id);
   if (fieldElement) {
     let validationMessages =
