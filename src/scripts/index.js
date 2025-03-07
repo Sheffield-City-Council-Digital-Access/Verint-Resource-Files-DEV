@@ -952,8 +952,11 @@ function handleOnReadyEvent(_, kdf) {
 
   $(`.date-mm`).on("input focusout", function (e) {
     const parentId = $(this).attr("id").replace("_num_", "_date_").slice(0, -3);
-    const dateMessage = getValidationMessageFromSession(parentId);
-    console.log("parentId", parentId, "dateMessage", dateMessage);
+    const txtFieldId = $(this)
+      .attr("id")
+      .replace("_num_", "_txt_")
+      .slice(0, -3);
+    const dateMessage = getValidationMessageFromSession(txtFieldId);
     const dd = $(`#${this.id.slice(0, -2)}dd`).val();
     const yy = $(`#${this.id.slice(0, -2)}yy`).val();
     if (e.type === "input") {
@@ -4502,7 +4505,6 @@ function addValidationMessageToSession(className) {
 }
 
 function getValidationMessageFromSession(id) {
-  console.log("getValidationMessageFromSession", id);
   const fieldElement = document.getElementById(id);
   if (fieldElement) {
     let validationMessages =
