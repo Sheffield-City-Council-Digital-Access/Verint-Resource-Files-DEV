@@ -2642,14 +2642,15 @@ function getAndSetReviewPageData() {
     ) {
       // use stored page array when case management
       relevantPages = KDF.getVal("txt_pages").split(",");
-    } else if (KDF.kdf().form.ref) {
+    } else if (
+      KDF.kdf().form.caseid &&
+      KDF.getVal("txt_resume_form") === "true"
+    ) {
       // use stored page array when resumed
       relevantPages = KDF.getVal("txt_pages").split(",");
       if (reviewPageIsVisible) {
         // check for review page due to page changes
         KDF.setVal("txt_resume_form", "false"); // to prevent coming back down the resume path and construct page array
-        relevantPages = [...relevantPagesReversed].reverse();
-        KDF.setVal("txt_pages", relevantPages.join(","));
       }
     } else {
       // construct page array
