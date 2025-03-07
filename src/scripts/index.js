@@ -998,7 +998,11 @@ function handleOnReadyEvent(_, kdf) {
         .attr("id")
         .replace("_num_", "_date_")
         .slice(0, -3);
-      const dateMessage = getValidationMessageFromSession(parentId);
+      const txtFieldId = $(this)
+        .attr("id")
+        .replace("_num_", "_txt_")
+        .slice(0, -3);
+      const dateMessage = getValidationMessageFromSession(txtFieldId);
       const dd = $(`#${this.id.slice(0, -2)}dd`).val() !== "" ? true : false;
       const mm = $(`#${this.id.slice(0, -2)}mm`).val() !== "" ? true : false;
       $(`#${parentId}`)
@@ -2283,7 +2287,8 @@ function getMinMaxDates(dateElementId) {
 }
 
 function checkDate(id, dd, mm, yy, element) {
-  const dateMessage = getValidationMessageFromSession(id);
+  const txtFieldId = id.replace("_num_", "_txt_").slice(0, -3);
+  const dateMessage = getValidationMessageFromSession(txtFieldId);
 
   // Clear previous errors
   $(`#${id} .date-dd, #${id} .date-mm, #${id} .date-yy`).removeClass(
