@@ -2648,7 +2648,8 @@ function getAndSetReviewPageData() {
         KDF.getVal("txt_resume_form") === "false")
     ) {
       // use stored page array when resumed
-      relevantPages = KDF.getVal("txt_pages").split(",");
+      relevantPages = [...relevantPagesReversed].reverse();
+      KDF.setVal("txt_pages", relevantPages.join(","));
       if (reviewPageIsVisible) {
         // check for review page due to page changes
         KDF.setVal("txt_resume_form", "false"); // to prevent coming back down the resume path and construct page array
@@ -2682,7 +2683,7 @@ function getAndSetReviewPageData() {
         // Extract the page name from the element's ID
         const pageId = $(formPages[i]).attr("id");
         const pageName = pageId.split("dform_page_")[1];
-        console.log(pageName);
+
         KDF.showPage(pageName);
         const contentDivId = `review-page-content--${pageName}`;
 
