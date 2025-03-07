@@ -6117,6 +6117,19 @@ const tenancyEnforcementASB = new ContentH(
 
 //#region Tenancy sustainment
 
+const abandonment = new FormH(
+  "abandonment",
+  "Abandonment",
+  "Report the abandonment of an item, pet or property.",
+  "hou_sustainment_abandon",
+  {
+    type: "Report",
+    keywords: ["Housing", "Abandon", "Pet"],
+    categories: ["Housing"],
+  },
+  { date: "07/03/2025", name: "Nathan Smith" }
+);
+
 const boundaries = new FormH(
   "boundaries",
   "Council housing and private land boundaries",
@@ -6449,11 +6462,11 @@ const permissions = new ContentH(
     </div>
   </details>
   `,
-  { buttonLabel: "Permissions", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
+  { buttonLabel: "Permissions", formName: "hou_sustainment_perm" },
   { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { typeKey: "Tenancy_Sustainment_information_provided" },
   { type: "Permissions", keywords: ["Tenancy"], categories: ["Housing"] },
-  { date: "07/11/2024", name: "Shahzad Athar" }
+  { date: "07/03/2025", name: "Nathan Smith" }
 );
 
 
@@ -6526,6 +6539,18 @@ const tenancyAgreementRequest = new ContentH(
   { date: "08/11/2024", name: "Shahzad Athar" }
 );
 
+const tenancyChange = new FormH(
+  "tenancyChange",
+  "Tenancy Change",
+  "Request for adding, removing or enquiring about occupants, changes to tenancy both sole and joint, reporting a deceased tenant, ending a tenancy, passing on a tenancy or enquiring about tenancy start and end dates.",
+  "hou_sustainment_ten_chan",
+  {
+    type: "Request",
+    keywords: ["Housing", "Tenancy", "Tenant"],
+    categories: ["Housing"],
+  },
+  { date: "07/03/2025", name: "Nathan Smith" }
+);
 
 const tenancyConditions = new ContentH(
   "tenancyConditions",
@@ -6952,6 +6977,7 @@ const tenancySustainment = new MenuH(
   "Tenancy Sustainment",
   "Support for maintaining tenancies, including information on permissions, tenancy agreements, name changes, parking permits, and council housing services.",
   [
+    abandonment,
     boundaries,
     burglarAlarmRequest,
     fencesCouncilHousing,
@@ -6961,6 +6987,7 @@ const tenancySustainment = new MenuH(
     nameChanges,
     permissions,
     tenancyAgreementRequest,
+    tenancyChange,
     tenancyConditions
   ]
 );
