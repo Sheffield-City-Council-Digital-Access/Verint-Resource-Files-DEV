@@ -508,7 +508,7 @@ function handleInitialisingEvent() {
 
 // --- HANDLE ON READY EVENT ----------------------------------------------- \\
 
-function handleOnReadyEvent(event, kdf) {
+function handleOnReadyEvent(_, kdf) {
   customerState = kdf.customerset;
 
   // --- ADD CONTENT TO WHY WE NEED DATE OF BIRTH --------------------------- \\
@@ -4463,6 +4463,7 @@ function getCookie(name) {
 // --- STORE VALIDATION MESSAGES -------------------------------------------- \\
 
 function storeDefaultValidationMessages() {
+  console.log("storeDefaultValidationMessages");
   const fieldClasses = [
     "address-search",
     "date-field",
@@ -4473,6 +4474,7 @@ function storeDefaultValidationMessages() {
 }
 
 function addValidationMessageToSession(className) {
+  console.log("addValidationMessageToSession", className);
   const dateFieldElements = document.querySelectorAll(`.${className}`);
 
   dateFieldElements.forEach((dateFieldElement) => {
