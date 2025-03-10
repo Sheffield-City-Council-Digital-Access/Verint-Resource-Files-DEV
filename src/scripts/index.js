@@ -1241,8 +1241,6 @@ function handleOnReadyEvent(_, kdf) {
     if (checkIsFormComplete(fieldsToCheckBeforeClose)) {
       KDF.markComplete();
       KDF.gotoPage("complete", false, false, false);
-    } else {
-      KDF.showError("Please ensure all fields have been completed.");
     }
   });
 
