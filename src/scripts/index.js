@@ -1143,8 +1143,10 @@ function handleOnReadyEvent(_, kdf) {
     const button = document.getElementById(`go-to-${pageId}`);
     if (button) {
       button.addEventListener("click", function () {
+        const modal = document.getElementById("case-review-modal");
+        modal.close();
+        modal.remove();
         KDF.gotoPage(pageId, true, true, true);
-        document.getElementById("case-review-modal").close().remove();
       });
     }
   }
@@ -1164,19 +1166,19 @@ function handleOnReadyEvent(_, kdf) {
 
     if (!isComplete) {
       let modalHtml = `
-            <dialog id="case-review-modal">
-                <div class="modal-header">
-                    <h1>Incomplete process</h1>
-                </div>
-                <div class="modal-main">
-                    <p>The following fields need completing before the case can be closed.</p>
-                    <div id="review-case-content-container"></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="close-modal-btn" id="closeModal">Close</button>
-                </div>
-            </dialog>
-        `;
+        <dialog id="case-review-modal">
+          <div class="modal-header">
+            <h1>Incomplete process</h1>
+          </div>
+          <div class="modal-main">
+            <p>The following fields need completing before the case can be closed.</p>
+            <div id="review-case-content-container"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="close-modal-btn" id="closeModal">Close</button>
+          </div>
+        </dialog>
+      `;
 
       document.body.innerHTML += modalHtml;
       const modal = document.getElementById("case-review-modal");
