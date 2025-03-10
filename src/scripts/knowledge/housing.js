@@ -5544,10 +5544,10 @@ const yorkshireWater = new ContentH(
   `
   <p>
     If a customer is querying their water charges:<br>
-    These are set by Yorkshire Water, and we collect these charges as part of the rent.  Any complaints about the charges need to be directed to Yorkshire Water – 03451242424 or visit <a href="yorkshirewater.com/help" target="_blank">yorkshirewater.com/help</a>.
+    These are set by Yorkshire Water, and we collect these charges as part of the rent.  Any complaints about the charges need to be directed to Yorkshire Water – 03451242424 or visit <a href="https://www.yorkshirewater.com/help" target="_blank">https://www.yorkshirewater.com/help</a>.
   </p>
   <p>
-    There are various schemes available, including Yorkshire Water Support, where we maybe able to reduce the charge depending on household make-up and income.
+    There are various schemes available, including Yorkshire Water Support, where we may be able to reduce the charge depending on household make-up and income.
     Please direct any queries to the Income Plus Specialist for that property.<br>
     The income thresholds for support are as follows:
   </p>
