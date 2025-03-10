@@ -27,8 +27,8 @@
 #case-review-modal .modal-header {
   background-color: var(--color-information);
   color: var(--color-white);
-  padding: 15px;
-  font-size: 18px;
+  padding: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
   height: 11.5rem;
@@ -39,9 +39,9 @@
 }
 
 #case-review-modal .modal-main {
-  padding: 20px;
+  padding: 2rem 4rem;
   background: var(--color-white);
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 #case-review-modal .modal-footer {
@@ -98,7 +98,7 @@
 }
 
 #review-case-content-container .review-section {
-  padding: 21px 0;
+  padding: 2.1rem 0;
   border-bottom: 1px solid #707070;
 }
 
