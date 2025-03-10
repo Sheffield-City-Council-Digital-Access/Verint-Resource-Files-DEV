@@ -2125,7 +2125,7 @@ const lostKeyorFob  = new ContentR(
         gateorFence, glazingincludingfailedDoubleGlazedUnits, gutteringandRainwaterPipes, handyperson, 
         internalDoor, kitchenUnit, liftorHoist, lostKeyorFob, newBuildPropertyDefectorEmergencyCallOut,
         paintingCommunalArea, pitchedRoof, plastering, plumbingandDomesticHotorColdWater, refuseChute,
-        reroofingProgrammeWarranty,  
+        reroofingProgrammeWarranty,
 
 
       
