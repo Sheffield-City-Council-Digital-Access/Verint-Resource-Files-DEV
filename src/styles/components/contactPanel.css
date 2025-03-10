@@ -34,7 +34,7 @@ aside.contact-information main {
   padding-inline: 2.7rem;
   display: grid;
   grid-template-columns: max-content 1fr;
-  gap: 1.5rem .75rem;
+  gap: 1.5rem 0.75rem;
   align-items: center;
   font-size: 1.6rem;
 }
@@ -81,11 +81,11 @@ aside.contact-information main a:hover {
 }
 
 aside.contact-information main p {
-  margin-top: 0;
-  padding-top: .5rem;
+  margin-block: 0.6rem;
+  padding-top: 0.5rem;
 }
 
 aside.contact-information footer img {
   width: 100%;
-  transform: translateY(.7rem);
+  transform: translateY(0.7rem);
 }
