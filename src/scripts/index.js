@@ -1120,25 +1120,26 @@ function handleOnReadyEvent(_, kdf) {
 
   function createReviewSection(pageId, pageTitle, fields) {
     let statusCardHtml = `
-        <div class="review-section">
-            <div class="review-content">
-                <div class="review-content-header">
-                    <h3>${pageTitle}</h3>
-                    <button type="button" class="go-to-page-btn" id="go-to-${pageId}">Edit</button>
-                </div>
-                ${fields
-                  .map(
-                    (field) => `
+      <div class="review-section">
+          <div class="review-content">
+              <div class="review-content-header">
+                  <h3>${pageTitle}</h3>
+                  <button type="button" class="go-to-page-btn" id="go-to-${pageId}">Edit</button>
+              </div>
+              ${fields
+                .map(
+                  (field) => `
                     <p>${field.fieldlabel}: ${field.fieldValue}</p>
-                `
-                  )
-                  .join("")}
-            </div>
-        </div>
-    `;
+                  `
+                )
+                .join("")}
+          </div>
+      </div>
+  `;
 
-    document.getElementById("review-case-content-container").innerHTML +=
-      statusCardHtml;
+    document
+      .getElementById("review-case-content-container")
+      .insertAdjacentHTML("beforeend", statusCardHtml);
 
     const button = document.getElementById(`go-to-${pageId}`);
     if (button) {
@@ -1146,7 +1147,7 @@ function handleOnReadyEvent(_, kdf) {
         const modal = document.getElementById("case-review-modal");
         modal.close();
         modal.remove();
-        KDF.gotoPage(pageId, true, true, true);
+        KDF.gotoPage(pageId, false, false, true);
       });
     }
   }
@@ -1165,23 +1166,22 @@ function handleOnReadyEvent(_, kdf) {
     });
 
     if (!isComplete) {
-      let modalHtml = `
-        <dialog id="case-review-modal">
-          <div class="modal-header">
-            <h1>Incomplete process</h1>
-          </div>
-          <div class="modal-main">
-            <p>The following fields need completing before the case can be closed.</p>
-            <div id="review-case-content-container"></div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="close-modal-btn" id="closeModal">Close</button>
-          </div>
-        </dialog>
-      `;
+      const modal = document.createElement("dialog");
+      modal.id = "case-review-modal";
+      modal.innerHTML = `
+      <div class="modal-header">
+        <h1>Incomplete process</h1>
+      </div>
+      <div class="modal-main">
+        <p>The following fields need completing before the case can be closed.</p>
+        <div id="review-case-content-container"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close-modal-btn" id="closeModal">Close</button>
+      </div>
+    `;
 
-      document.body.innerHTML += modalHtml;
-      const modal = document.getElementById("case-review-modal");
+      document.body.appendChild(modal);
       modal.showModal();
 
       incompleteFields.forEach((field) => {
@@ -1192,7 +1192,6 @@ function handleOnReadyEvent(_, kdf) {
         let fieldValue = KDF.getVal(field) || "Not Answered";
 
         let element = document.getElementById(id);
-
         if (element) {
           let page = element.closest('[data-type="page"]');
           if (page) {
@@ -1200,22 +1199,14 @@ function handleOnReadyEvent(_, kdf) {
             pageTitleText = pageTitle
               ? pageTitle.textContent
               : "Unknown Section";
-
             let pageId = page.id
               ? page.id.replace(/^dform_page_/, "")
               : `page-${Math.random().toString(36).substr(2, 9)}`;
-
             let pageData = pages.find((page) => page.pageId === pageId);
-
             if (!pageData) {
-              pageData = {
-                pageId: pageId,
-                pageTitle: pageTitleText,
-                fields: [],
-              };
+              pageData = { pageId, pageTitle: pageTitleText, fields: [] };
               pages.push(pageData);
             }
-
             pageData.fields.push({
               fieldlabel: labelText,
               fieldValue: fieldValue,
@@ -1235,7 +1226,6 @@ function handleOnReadyEvent(_, kdf) {
           modal.remove();
         });
     }
-
     return isComplete;
   }
 
