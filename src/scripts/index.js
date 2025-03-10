@@ -1165,10 +1165,13 @@ function handleOnReadyEvent(_, kdf) {
       }
     });
 
-    if (!isComplete) {
-      const modal = document.createElement("dialog");
-      modal.id = "case-review-modal";
-      modal.innerHTML = `
+    if (isComplete) {
+      return true;
+    }
+
+    const modal = document.createElement("dialog");
+    modal.id = "case-review-modal";
+    modal.innerHTML = `
       <div class="modal-header">
         <h1>Incomplete process</h1>
       </div>
@@ -1181,52 +1184,48 @@ function handleOnReadyEvent(_, kdf) {
       </div>
     `;
 
-      document.body.appendChild(modal);
-      modal.showModal();
+    document.body.appendChild(modal);
+    modal.showModal();
 
-      incompleteFields.forEach((field) => {
-        let id = `dform_widget_${field}`;
-        let label = document.querySelector(`label[for='${id}']`);
-        let labelText = label ? label.textContent : field;
-        let pageTitleText = "Unknown Section";
-        let fieldValue = KDF.getVal(field) || "Not Answered";
+    incompleteFields.forEach((field) => {
+      let id = `dform_widget_${field}`;
+      let label = document.querySelector(`label[for='${id}']`);
+      let labelText = label ? label.textContent : field;
+      let pageTitleText = "Unknown Section";
+      let fieldValue = KDF.getVal(field) || "Not Answered";
 
-        let element = document.getElementById(id);
-        if (element) {
-          let page = element.closest('[data-type="page"]');
-          if (page) {
-            let pageTitle = page.querySelector(".page-title");
-            pageTitleText = pageTitle
-              ? pageTitle.textContent
-              : "Unknown Section";
-            let pageId = page.id
-              ? page.id.replace(/^dform_page_/, "")
-              : `page-${Math.random().toString(36).substr(2, 9)}`;
-            let pageData = pages.find((page) => page.pageId === pageId);
-            if (!pageData) {
-              pageData = { pageId, pageTitle: pageTitleText, fields: [] };
-              pages.push(pageData);
-            }
-            pageData.fields.push({
-              fieldlabel: labelText,
-              fieldValue: fieldValue,
-            });
+      let element = document.getElementById(id);
+      if (element) {
+        let page = element.closest('[data-type="page"]');
+        if (page) {
+          let pageTitle = page.querySelector(".page-title");
+          pageTitleText = pageTitle ? pageTitle.textContent : "Unknown Section";
+          let pageId = page.id
+            ? page.id.replace(/^dform_page_/, "")
+            : `page-${Math.random().toString(36).substr(2, 9)}`;
+          let pageData = pages.find((page) => page.pageId === pageId);
+          if (!pageData) {
+            pageData = { pageId, pageTitle: pageTitleText, fields: [] };
+            pages.push(pageData);
           }
+          pageData.fields.push({
+            fieldlabel: labelText,
+            fieldValue: fieldValue,
+          });
         }
-      });
+      }
+    });
 
-      pages.forEach((page) => {
-        createReviewSection(page.pageId, page.pageTitle, page.fields);
-      });
+    pages.forEach((page) => {
+      createReviewSection(page.pageId, page.pageTitle, page.fields);
+    });
 
-      document
-        .getElementById("closeModal")
-        .addEventListener("click", function () {
-          modal.close();
-          modal.remove();
-        });
-    }
-    return isComplete;
+    document
+      .getElementById("closeModal")
+      .addEventListener("click", function () {
+        modal.close();
+        modal.remove();
+      });
   }
 
   $(".close-case-btn").on("click", () => {
