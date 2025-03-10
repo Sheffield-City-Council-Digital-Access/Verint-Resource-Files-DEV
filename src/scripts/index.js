@@ -29,6 +29,24 @@ const formUserPath = [];
 // --- HANDLE INITIALISING EVENT ------------------------------------------- \\
 
 function handleInitialisingEvent() {
+  // --- GOOGLE ANALITICS  ------------------------------------------------- \\
+
+  if (KDF.kdf().access === "citizen") {
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js",
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-PBGBFQVW");
+  }
+
   // --- ADD TAB TITLE AND ICON  ------------------------------------------- \\
 
   (() => {
@@ -448,7 +466,6 @@ function handleInitialisingEvent() {
 
   $(document).ajaxComplete(function (event, xhr, settings) {
     if (settings.url.startsWith(KDF.kdf().rest.attachFiles)) {
-      console.log(event, xhr, settings, KDF.kdf());
       const { field, token, filename, mimetype } = xhr.responseJSON[0];
       const deleteButton = getFileDeleteByInputId(field);
       const fileNameField = field.replace("file_", "txt_file_name_");
@@ -456,7 +473,7 @@ function handleInitialisingEvent() {
       $(`#${field}`).prop("disabled", true).css({
         color: "var(--color-background)",
       });
-      $(`#${fileNameField}`).val(filename);
+      $(`#${fileNameField}`).val(filename).trigger("change");
 
       if (deleteButton) {
         deleteButton.addEventListener("click", () => {
@@ -465,7 +482,7 @@ function handleInitialisingEvent() {
               $(`#${field}`).prop("disabled", false).css({
                 color: "var(--color-black)",
               });
-              $(`#${fileNameField}`).val("");
+              $(`#${fileNameField}`).val("").trigger("change");
             }
           }, 0);
         });
@@ -474,7 +491,7 @@ function handleInitialisingEvent() {
     }
   });
 
-  // Function to find file_delete element by input ID (defined previously)
+  // Function to find file_delete element by input ID
   function getFileDeleteByInputId(fileUploadId) {
     const fileUploadElement = document.getElementById(fileUploadId);
     if (fileUploadElement) {
@@ -522,12 +539,11 @@ function handleOnReadyEvent(event, kdf) {
 
     // --- APPLY INTERNAL SYLE CHANGES ------------------------------------- \\
 
-    root.style.setProperty("--color-background", "#eeeeee");
     root.style.setProperty("--color-empty-pb", "#e0e0e0");
     root.style.setProperty("--color-primary", "#007aff");
 
     $("form.dform").css({
-      margin: "0 auto",
+      margin: "1.7rem auto 0",
       "min-height": "88vh",
     });
 
@@ -570,13 +586,21 @@ function handleOnReadyEvent(event, kdf) {
     }
   }
 
-  // --- UPDATE SESSION ---------------------------------------------------- \\
+  // --- SET EQUALITIES LINK ----------------------------------------------- \\
+
+  const formattedTitle = KDF.getVal("le_title").replace(/\s+/g, "-");
+  $("#equality-btn").attr(
+    "href",
+    `https://forms.sheffield.gov.uk/form/auto/equalities_monitoring?formTitle=${formattedTitle}&channel=web`
+  );
 
   storeDefaultValidationMessages();
 
   // --- MAP --------------------------------------------------------------- \\
 
-  do_KDF_Ready_esriMap();
+  if (document.getElementById("map_container")) {
+    do_KDF_Ready_esriMap();
+  }
 
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
 
@@ -702,6 +726,8 @@ function handleOnReadyEvent(event, kdf) {
   // --- HANDLE FIND CURRENT LOCATION CLICK -------------------------------- \\
 
   $(".geo-btn").on("click", function () {
+    $(`.address-search`).find(".dform_validationMessage").hide();
+
     const currentPageId = getCurrentPageId();
     const container = document.querySelector(
       `#${currentPageId} .map-container`
@@ -780,6 +806,7 @@ function handleOnReadyEvent(event, kdf) {
   // --- HANDLE FIND ON MAP CLICK ------------------------------------------ \\
 
   $(".link-btn.map-icon").on("click", function () {
+    $(`.address-search`).find(".dform_validationMessage").hide();
     if ($(".geo-btn-container").find(".dform_validationMessage").length) {
       $(".geo-btn-container")
         .find(".dform_validationMessage")
@@ -920,7 +947,7 @@ function handleOnReadyEvent(event, kdf) {
       return;
     }
     if (this.value) $(this).val($(this).val().padStart(2, "0"));
-    handleDateValidation(parentId);
+    handleDateValidation(parentId, this);
   });
 
   $(`.date-mm`).on("input focusout", function (e) {
@@ -938,7 +965,7 @@ function handleOnReadyEvent(event, kdf) {
     if (dd === "") $(`#${this.id.slice(0, -2)}dd`).addClass("dform_fielderror");
     if (yy === "") $(`#${this.id.slice(0, -2)}yy`).addClass("dform_fielderror");
     $(`#${parentId}`).find(".dform_validationMessage").text(dateMessage).show();
-    handleDateValidation(parentId);
+    handleDateValidation(parentId, this);
   });
 
   $(`.date-yy`)
@@ -975,9 +1002,7 @@ function handleOnReadyEvent(event, kdf) {
         .text(dateMessage)
         .hide();
       if (e.type === "input") inputDate(this.id, null, e.which);
-      {
-      }
-      handleDateValidation(parentId);
+      if (e.type === "focusout") handleDateValidation(parentId, this);
     });
 
   // --- HANDLE KEYUP EVENTLISTENER FOR CHECK PROGRESS --------------------- \\
@@ -1093,6 +1118,24 @@ function handleOnReadyEvent(event, kdf) {
       KDF.showError("Please ensure all fields have been completed.");
     }
   });
+
+  // --- OHMS -------------------------------------------------------------- \\
+
+  if (kdf.params.customerid) {
+    KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
+      customerid: kdf.params.customerid,
+    });
+  }
+
+  $("#dform_widget_button_but_view_rent_account").on("click", function () {
+    const customerid =
+      kdf.params.customerid ?? KDF.getVal("num_reporter_obj_id");
+    if (customerid) {
+      createModal("hubScreenRentSummary", "hub_rent_summary", customerid);
+    } else {
+      KDF.showWarning("A customer has not been set.");
+    }
+  });
 }
 
 // --- HANDLE ON PAGE CHANGE EVENT ----------------------------------------- \\
@@ -1116,6 +1159,21 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     if (kdf.access === "agent" && kdf.customerset === "agent_false") {
       KDF.sendDesktopAction("raised_by");
       // createModal("setReporterModal", "system_search_record");
+    }
+  }
+
+  if (
+    pageName === "page_review" ||
+    pageName === "page_declaration" ||
+    pageName === "save" ||
+    pageName === "complete"
+  ) {
+    if ($("#dform_progressbar_sheffield").length) {
+      $("#dform_progressbar_sheffield, #dform_ref_display").hide();
+    }
+  } else {
+    if ($("#dform_progressbar_sheffield").length) {
+      $("#dform_progressbar_sheffield, #dform_ref_display").show();
     }
   }
 
@@ -1315,11 +1373,16 @@ function handleObjectIdSet(event, kdf, type, id) {
 }
 
 function handleObjectIdLoaded(event, kdf, response, type, id) {
+  KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
+    customerid: id,
+  });
+
   property = formatTitleCase(response["profile-AddressNumber"]);
   streetName = formatTitleCase(response["profile-AddressLine1"]);
   fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${
     response["profile-AddressLine4"]
   }, ${response["profile-Postcode"]}`;
+
   handleSetReporter(new Date(response["profile-DateOfBirth"]), fullAddress);
 
   // keep at the bottom
@@ -1372,6 +1435,12 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
       // Hide the "maps-unavailable-notice" element
       $(".maps-unavailable-notice").hide();
+
+      if (KDF.kdf().access === "agent") {
+        $(
+          "#map_container > div.esri-view-root > div.esri-ui.calcite-theme-light > div.esri-ui-inner-container.esri-ui-corner-container > div.esri-ui-top-right.esri-ui-corner > div"
+        ).css("display", "inline-flex");
+      }
     }
   }
 
@@ -1442,10 +1511,20 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       fullAddress,
       propertyId,
       uprn,
+      easting,
+      northing,
       streetId,
       usrn,
       status,
       message,
+      ohmsUprn,
+      propertyClass,
+      managementCode,
+      area,
+      ward,
+      officer,
+      areaContact,
+      officerContact,
     } = response.data;
     if (status == 400 && action === "retrieve-location-from-coordinates") {
       const $button = $(".geo-btn");
@@ -1481,6 +1560,18 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       { alias: "usrn", value: usrn },
       { alias: "siteName", value: streetName },
       { alias: "siteCode", value: usrn },
+      { alias: "propertyId", value: propertyId },
+      { alias: "streetId", value: streetId },
+      { alias: "easting", value: easting },
+      { alias: "northing", value: northing },
+      { alias: "ohmsUprn", value: ohmsUprn },
+      { alias: "propertyClass", value: propertyClass },
+      { alias: "managementCode", value: managementCode },
+      { alias: "area", value: area },
+      { alias: "ward", value: ward },
+      { alias: "officer", value: officer },
+      { alias: "areaContact", value: areaContact },
+      { alias: "officerContact", value: officerContact },
     ]);
     setSelectedAddress(fullAddress, "show");
   }
@@ -1538,6 +1629,57 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     }
   }
 
+  // --- OHMS -------------------------------------------------------------- \\
+
+  if (
+    action === "retrieve-social-ids" &&
+    response.data["profile-socialId-ohms"]
+  ) {
+    const screen =
+      kdf.form.name === "hub_rent_summary" ? "RNT1" : "personDetails";
+    const agentId = response.data.agendId;
+    const ohmsId = response.data["profile-socialId-ohms"];
+
+    const url = `https://sccvmtholi01.sheffield.gov.uk/CRMHousing/default.asp?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
+    const iframe = document.createElement("iframe");
+
+    iframe.id = "ifrm1";
+    iframe.width = "100%";
+    iframe.height = screen === "RNT1" ? "521" : "725";
+    iframe.src = url;
+
+    const container = document.getElementById("hub-screen-container");
+
+    if (container) {
+      container.innerHTML = "";
+      container.appendChild(iframe);
+
+      hideShowMultipleElements([
+        { name: "ahtm_hub_screen", display: "show" },
+        { name: "area_about_you", display: "hide" },
+        { name: "area_address_lookup_about_you", display: "hide" },
+        { name: "area_address_details_about_you", display: "hide" },
+        { name: "but_view_rent_account", display: ohmsId ? "show" : "hide" },
+      ]);
+    }
+
+    if (kdf.access === "agent") {
+      setTimeout(() => {
+        KDF.customdata(
+          "retrieve-council-housing-property-details",
+          "_KDF_custom",
+          true,
+          true,
+          {
+            propertId: KDF.getVal("txt_uprn_about_you"),
+            property: KDF.getVal("txt_property_about_you"),
+            postcode: KDF.getVal("txt_postcode_about_you"),
+          }
+        );
+      }, 500);
+    }
+  }
+
   // --- MAP --------------------------------------------------------------- \\
 
   do_KDF_Custom_esriMap(action, response);
@@ -1549,15 +1691,16 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 // --- HANDLE ON FAILED ACTION EVENT -------------------------------------- \\
 
 function handleFailedAction(event, action, xhr, settings, thrownError) {
-  logArguments(event, action, xhr, settings, thrownError);
   KDF.hideMessages();
 
   if (action === "retrieve-vehicle-details") {
     resetVehicleSearch(false);
     showVehicleFields();
   } else {
-    // temp
-    KDF.showError(`${action} failed: ${thrownError}`);
+    if (KDF.kdf().access === "agent") {
+      KDF.showError(`${action} failed: ${thrownError}`);
+      window.scrollTo(0, 0);
+    }
   }
 
   // keep at the bottom
@@ -1639,7 +1782,7 @@ function createOptions(formsToDisplay = forms) {
 }
 
 // Function to create and display the modal
-function createModal(modalId, form) {
+function createModal(modalId, form, ...args) {
   // Create modal elements
   const modal = document.createElement("div");
   modal.id = modalId;
@@ -1650,7 +1793,7 @@ function createModal(modalId, form) {
 
   const iframe = document.createElement("iframe");
   const { protocol, hostname } = window.location;
-  iframe.src = `${protocol}//${hostname}/form/launch/${form}?channel=voice_in`;
+  iframe.src = `${protocol}//${hostname}/form/launch/${form}?params=${args}`;
   iframe.frameBorder = "0";
   iframe.style.width = "100%";
   iframe.style.height = "100%";
@@ -1710,6 +1853,14 @@ function checkPageProgress() {
   );
   const isAlertPanelVisible = Array.from(alertPanels).some(isVisible);
 
+  // Check if a validation message is visible
+  const validationMessages = currentPageElement.querySelectorAll(
+    ".dform_validationMessage"
+  );
+
+  const isValidationMessageVisible =
+    Array.from(validationMessages).some(isVisible);
+
   // Handle file inputs separately
   const fileUploads = Array.from(
     currentPageElement.querySelectorAll("input[type='file']:required")
@@ -1762,8 +1913,21 @@ function checkPageProgress() {
 
   // Check if any other required fields are empty or invalid
   const hasEmptyOrInvalidOtherFields = otherFields.some((el) => {
-    const isEmpty = el.value.trim() === "";
-    const isValid = el.checkValidity();
+    let isEmpty = el.value.trim() === "";
+    let isValid = el.checkValidity();
+    const name = el.name;
+    if (
+      el.name.startsWith("num_") &&
+      (el.name.endsWith("_dd") ||
+        el.name.endsWith("_mm") ||
+        el.name.endsWith("_yy"))
+    ) {
+      const dateElement = document.getElementById(
+        el.id.replace("_num_", "_dt_").slice(0, -3)
+      );
+      isEmpty = dateElement.value.trim() === "";
+      isValid = dateElement.checkValidity();
+    }
 
     return isEmpty || !isValid;
   });
@@ -1775,7 +1939,10 @@ function checkPageProgress() {
     hasEmptyOrInvalidOtherFields;
 
   // If any alert panel is visible, force disabling the buttons
-  const shouldDisableButton = hasEmptyRequiredElement || isAlertPanelVisible;
+  const shouldDisableButton =
+    hasEmptyRequiredElement ||
+    isAlertPanelVisible ||
+    isValidationMessageVisible;
 
   // Call the disabledButtonToggle function based on the check
   disabledButtonToggle(!shouldDisableButton);
@@ -2030,7 +2197,7 @@ function showVehicleFields() {
 
 // --- CUSTOM DATE FUNCTIONS ------------------------------------------------ \\
 
-function handleDateValidation(parentId) {
+function handleDateValidation(parentId, element) {
   const dd = parseInt(
     $(`#${parentId.replace("_date_", "_num_")}_dd`).val(),
     10
@@ -2044,8 +2211,9 @@ function handleDateValidation(parentId) {
     10
   );
 
-  checkDate(parentId, dd, mm, yy);
+  checkDate(parentId, dd, mm, yy, element);
   checkMaxDay(parentId, dd, mm, yy);
+  checkPageProgress();
 }
 
 function checkMaxDay(id, dd, mm, yy) {
@@ -2053,8 +2221,22 @@ function checkMaxDay(id, dd, mm, yy) {
   $(`#${id} .date-dd`).attr("max", ddMax);
   if (dd > ddMax) {
     $(`#${id} .date-dd`).addClass("dform_fielderror");
-  } else if (dd !== "") {
+    $(`#${id}`)
+      .find(".dform_validationMessage")
+      .text(`Must be a real date`)
+      .show();
+  } else if (dd) {
     $(`#${id} .date-dd`).removeClass("dform_fielderror");
+  }
+
+  if (mm > 12) {
+    $(`#${id} .date-mm`).addClass("dform_fielderror");
+    $(`#${id}`)
+      .find(".dform_validationMessage")
+      .text(`Must be a real date`)
+      .show();
+  } else if (mm) {
+    $(`#${id} .date-mm`).removeClass("dform_fielderror");
   }
 }
 
@@ -2083,7 +2265,6 @@ function calculateRelativeDate(relativeDate, now) {
 function getMinMaxDates(dateElementId) {
   const $dateElement = $(`#${dateElementId}`);
   if ($dateElement.length === 0) {
-    console.error(`Element with ID "${dateElementId}" not found.`);
     return null;
   }
   let minDate = $dateElement.attr("data-mindate");
@@ -2098,9 +2279,8 @@ function getMinMaxDates(dateElementId) {
   return { minDate, maxDate };
 }
 
-function checkDate(id, dd, mm, yy) {
+function checkDate(id, dd, mm, yy, element) {
   const dateMessage = getValidationMessageFromSession(id);
-  let hasError = false;
 
   // Clear previous errors
   $(`#${id} .date-dd, #${id} .date-mm, #${id} .date-yy`).removeClass(
@@ -2108,41 +2288,84 @@ function checkDate(id, dd, mm, yy) {
   );
   $(`#${id}`).find(".dform_validationMessage").text(dateMessage).hide();
 
-  if (!dd) {
-    $(`#${id} .date-dd`).addClass("dform_fielderror");
-    hasError = true;
-  }
-  if (!mm) {
-    $(`#${id} .date-mm`).addClass("dform_fielderror");
-    hasError = true;
-  }
-  if (!yy) {
-    $(`#${id} .date-yy`).addClass("dform_fielderror");
-    hasError = true;
+  const activeField = element.name.slice(-2);
+  let hasError = false;
+  let errorMsg = "";
+  const errorFields = [];
+  const dateFields = ["date-dd", "date-mm", "date-yy"];
+  const errorConditions = [
+    {
+      condition: !dd && !mm && !yy,
+      message: dateMessage,
+      fields: dateFields,
+    },
+    {
+      condition: !dd && !mm,
+      message: "Date must include a day and month",
+      fields: ["date-dd", "date-mm"],
+    },
+    {
+      condition: !dd && !yy,
+      message: "Date must include a day and year",
+      fields: ["date-dd", "date-yy"],
+    },
+    {
+      condition: activeField !== "dd" && !mm && !yy,
+      message: "Date must include a month and year",
+      fields: ["date-mm", "date-yy"],
+    },
+    { condition: !dd, message: "Date must include a day", fields: ["date-dd"] },
+    {
+      condition: activeField !== "dd" && !mm,
+      message: "Date must include a month",
+      fields: ["date-mm"],
+    },
+    {
+      condition: activeField !== "dd" && activeField !== "mm" && !yy,
+      message: "Date must include a year",
+      fields: ["date-yy"],
+    },
+  ];
+
+  for (const condition of errorConditions) {
+    if (condition.condition) {
+      hasError = true;
+      errorMsg = condition.message;
+      errorFields.push(...condition.fields);
+      break; // Break out of the loop after the first match
+    }
   }
 
   if (hasError) {
-    const errorMsg =
-      !dd && !mm && !yy
-        ? "Date must include a day, month, and year"
-        : !dd && mm && yy
-        ? "Date must include a day"
-        : !mm && dd && yy
-        ? "Date must include a month"
-        : "";
-
+    errorFields.forEach((field) => {
+      $(`#${id} .${field}`).addClass("dform_fielderror");
+    });
     $(`#${id}`).find(".dform_validationMessage").text(errorMsg).show();
-    return; // Early return on error
+    $(`#${id.replace("_date_", "_txt_")}`).val("");
+    $(`#${id.replace("_date_", "_dt_")}`).val("");
+    return;
   }
 
   // If all components are valid, proceed to validate the full date
-  if (validDate(id, dd, mm, yy)) {
-    const date = `${yy.toString().padStart(4, "0")}-${mm
-      .toString()
-      .padStart(2, "0")}-${dd.toString().padStart(2, "0")}`;
-    const localFormat = new Date(date).toLocaleDateString("en-GB");
-    $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
-    $(`#${id.replace("_date_", "_dt_")}`).val(date);
+  if (dd && mm && yy) {
+    if (validDate(id, dd, mm, yy, activeField)) {
+      const date = `${yy.toString().padStart(4, "0")}-${mm
+        .toString()
+        .padStart(2, "0")}-${dd.toString().padStart(2, "0")}`;
+      const localFormat = new Date(date).toLocaleDateString("en-GB");
+      $(`#${id.replace("_date_", "_txt_")}`)
+        .val(localFormat)
+        .change();
+      $(`#${id.replace("_date_", "_dt_")}`)
+        .val(date)
+        .change();
+    } else {
+      $(`#${id.replace("_date_", "_txt_")}`).val("");
+      $(`#${id.replace("_date_", "_dt_")}`).val("");
+      $(`#${id} .date-dd, #${id} .date-mm, #${id} .date-yy`).addClass(
+        "dform_fielderror"
+      );
+    }
   }
 }
 
@@ -2154,10 +2377,12 @@ function inputDate(id, nextID, key) {
   if (value.length >= maxLength) {
     $(`#${id}`).val(value.substring(0, maxLength));
     $(`#${id}`).val(value.substring(0, maxLength));
-    if (nextID) {
+    if ((nextID && key) || key === 0) {
       $(`#${nextID}`).focus();
     } else {
-      $(`#${id}`).blur();
+      if (key || key === 0) {
+        $(`#${id}`).blur();
+      }
     }
   }
 }
@@ -2175,7 +2400,7 @@ function getYearLabel(years) {
   return years === 1 ? "year" : "years";
 }
 
-function validDate(id, day, month, year) {
+function validDate(id, day, month, year, activeField) {
   const dateMessage = getValidationMessageFromSession(id);
   const validationMsg = $(`#${id}`)
     .find(".dform_validationMessage")
@@ -2184,17 +2409,17 @@ function validDate(id, day, month, year) {
 
   // Construct the date from the provided values
   const date = new Date(year, month - 1, day); // month is zero-indexed
-  console.log(`Constructed Date: ${date}`);
-  console.log(`Input values: day=${day}, month=${month}, year=${year}`);
 
   // Check if the constructed date is valid
-  if (
-    date.getFullYear() !== year ||
-    date.getMonth() + 1 !== month ||
-    date.getDate() !== day
-  ) {
-    validationMsg.text(`Must be a real date`).show();
-    return false;
+  if (activeField !== "yy") {
+    if (
+      date.getFullYear() !== year ||
+      date.getMonth() + 1 !== month ||
+      date.getDate() !== day
+    ) {
+      validationMsg.text(`Must be a real date`).show();
+      return false;
+    }
   }
 
   const dateElementId = id.replace("_date_", "_dt_");
@@ -2339,17 +2564,18 @@ function updateProgressBar(currentPageIndex) {
 
 function handleSetReporter(date, address) {
   // Set date to input fields and trigger change
-  $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
-  $("#dform_widget_num_date_of_birth_mm")
-    .val(date.getMonth() + 1)
-    .blur();
-  $("#dform_widget_num_date_of_birth_yy").val(date.getFullYear()).blur();
-
-  // Hide address lookup
-  KDF.hideSection("area_address_lookup_about_you");
+  if (date !== "Invalid Date") {
+    $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
+    $("#dform_widget_num_date_of_birth_mm")
+      .val(date.getMonth() + 1)
+      .blur();
+    $("#dform_widget_num_date_of_birth_yy").val(date.getFullYear()).blur();
+  }
 
   // Set and show address
-  setSelectedAddress(address, "show", "dform_page_page_about_you");
+  if (!address.includes("undefined")) {
+    setSelectedAddress(address, "show", "dform_page_page_about_you");
+  }
 
   // Hide submit anonymously option and info
   $(".anonymous").hide();
@@ -2417,8 +2643,9 @@ function getAndSetReviewPageData() {
       // use stored page array when case management
       relevantPages = KDF.getVal("txt_pages").split(",");
     } else if (
-      KDF.kdf().form.caseid &&
-      KDF.getVal("txt_resume_form") === "true"
+      KDF.kdf().form.ref &&
+      (KDF.getVal("txt_resume_form") === "true" ||
+        KDF.getVal("txt_resume_form") === "false")
     ) {
       // use stored page array when resumed
       relevantPages = KDF.getVal("txt_pages").split(",");
@@ -2438,9 +2665,13 @@ function getAndSetReviewPageData() {
     $("#review-page-content-container").html("");
 
     // Find all form pages except the review page
-    const formPages = $('.dform_page[data-active="true"]').not(
+    let formPages = $('.dform_page[data-active="true"]').not(
       "#dform_page_page_review"
     );
+    // Picking up all pages encase form rules rehide them on reload
+    if (KDF.kdf().form.complete === "Y") {
+      formPages = $(".dform_page").not("#dform_page_page_review");
+    }
 
     formPages.each(function (i) {
       // Get the page number of the current form page
@@ -2451,7 +2682,9 @@ function getAndSetReviewPageData() {
         // Extract the page name from the element's ID
         const pageId = $(formPages[i]).attr("id");
         const pageName = pageId.split("dform_page_")[1];
-        const contentDivId = "review-page-content--" + pageName;
+        console.log(pageName);
+        KDF.showPage(pageName);
+        const contentDivId = `review-page-content--${pageName}`;
 
         // Create a container for the review page content
         $("#review-page-content-container").append(
@@ -2459,7 +2692,7 @@ function getAndSetReviewPageData() {
         );
 
         // Create a button to allow editing of the page
-        const buttonHtml = `<button class="review-page-edit-button">Edit</button>`;
+        const buttonHtml = `<button type="button" id="edit_button_${pageName}" class="review-page-edit-button">Edit</button>`;
         const contentDiv = $("#" + contentDivId);
         contentDiv.append(buttonHtml);
 
@@ -2503,8 +2736,11 @@ function getAndSetReviewPageData() {
               return parentElement.find(`.${classSelector} legend`).text();
             }
           }
-
-          if (fieldType === "radio") {
+          if (fieldType === "select") {
+            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+            fieldValue =
+              KDF.kdf()?.form?.data?.[fieldName] ?? KDF.getVal(fieldName);
+          } else if (fieldType === "radio") {
             fieldLabel = getLegendText("radiogroup");
             fieldValue = KDF.getVal(fieldName);
           } else if (fieldType === "multicheckbox") {
@@ -2532,10 +2768,7 @@ function getAndSetReviewPageData() {
               fieldLabel = "Address";
               fieldValue = getValueFromAlias(pageId, "fullAddress");
             } else if (
-              fieldClass.indexOf("property") !== -1 ||
-              fieldClass.indexOf("street-name") !== -1 ||
-              fieldClass.indexOf("city") !== -1 ||
-              fieldClass.indexOf("postcode") !== -1
+              /\b(property|street-name|city|postcode)\b/.test(fieldClass)
             ) {
               fieldLabel = false;
               fieldValue = "";
@@ -2548,7 +2781,11 @@ function getAndSetReviewPageData() {
           // Check if the field has a label
           if (fieldLabel) {
             // Set a default value for optional fields that are visible but not answered
-            if (fieldValue === "") {
+            if (
+              fieldValue === "" ||
+              fieldValue === null ||
+              fieldValue === undefined
+            ) {
               if (fieldType === "file") {
                 fieldValue = "Not uploaded";
               } else {
@@ -2565,6 +2802,10 @@ function getAndSetReviewPageData() {
       }
     });
   }
+}
+
+function refreshReviewPage() {
+  getAndSetReviewPageData();
 }
 
 // --- CONTACT TEAM PANEL --------------------------------------------------- \\
@@ -2920,6 +3161,8 @@ function initialize_map(map_param) {
     "esri/layers/GraphicsLayer",
     "esri/layers/FeatureLayer",
     "esri/layers/GroupLayer",
+    "esri/widgets/Search",
+    "esri/geometry/Extent",
   ], function (
     Map,
     MapView,
@@ -2931,7 +3174,9 @@ function initialize_map(map_param) {
     SpatialReference,
     GraphicsLayer,
     FeatureLayer,
-    GroupLayer
+    GroupLayer,
+    Search,
+    Extent
   ) {
     let positionLayer = new GraphicsLayer();
     $("#dform_widget_html_ahtm_map_container").append(
@@ -2963,6 +3208,44 @@ function initialize_map(map_param) {
       },
     });
 
+    // Define the extent for Sheffield, UK
+    const sheffieldExtent = new Extent({
+      xmin: -1.5311,
+      ymin: 53.321,
+      xmax: -1.3483,
+      ymax: 53.456,
+      spatialReference: { wkid: 27700 },
+    });
+
+    // Initialize the Search widget, constraining to Sheffield's extent
+    const searchWidget = new Search({
+      view: streetMapView,
+      searchAllEnabled: false,
+      popupEnabled: true,
+      popupOpenOnSelect: true,
+      sources: [
+        {
+          layer: new FeatureLayer({
+            url: "https://utility.arcgis.com/usrsvcs/servers/97cfdc3a164c48219826b907c0a5064f/rest/services/AGOL/Boundaries/MapServer/0", // Sheffield boundary layer
+          }),
+          // searchFields: ["name"], // Replace with the field containing names if available
+          displayField: "name",
+          exactMatch: false,
+          outFields: ["*"],
+          name: "Sheffield Search",
+          placeholder: "Search within Sheffield",
+          filter: {
+            geometry: sheffieldExtent,
+          },
+        },
+      ],
+    });
+
+    // Add Search widget to the top-right corner of the map
+    streetMapView.ui.add(searchWidget, {
+      position: "top-right",
+    });
+
     streetMapView.on("click", mapClick);
 
     mapZoomLevel = streetMapView.zoom;
@@ -2980,7 +3263,7 @@ function initialize_map(map_param) {
     districtLayer = new FeatureLayer({
       id: "scc_boundary",
       url: "https://utility.arcgis.com/usrsvcs/servers/97cfdc3a164c48219826b907c0a5064f/rest/services/AGOL/Boundaries/MapServer/0",
-    }); //Border Layer
+    });
     districtLayer.renderer = {
       type: "simple",
       symbol: {
@@ -3062,6 +3345,7 @@ function do_KDF_mapReady_esriMap(map, positionLayer) {
 }
 
 function mapClick(evt) {
+  console.log("click", evt);
   KDF.setVal("txt_site_name", "");
   KDF.setVal("txt_site_code", "");
   KDF.setVal("txt_feature_name", "");
@@ -3179,6 +3463,10 @@ function mapClick(evt) {
           mapY = convertPointP4.y.toString();
           KDF.setVal("le_gis_lon", mapX_4326);
           KDF.setVal("le_gis_lat", mapY_4326);
+          setValuesToInputFields([
+            { alias: "easting", value: mapX },
+            { alias: "northing", value: mapY },
+          ]);
           KDF.customdata("reverse_geocode_osmap", "mapClick", true, true, {
             longitude: mapX,
             latitude: mapY,
@@ -3215,7 +3503,10 @@ function mapClick(evt) {
           store_layer_attr.main_attribute = {};
           store_layer_attr.main_attribute = layerAttributes;
           store_layer_attr.main_attribute.layername = layerName;
-
+          setValuesToInputFields([
+            { alias: "easting", value: mapX },
+            { alias: "northing", value: mapY },
+          ]);
           KDF.customdata("reverse_geocode_osmap", "asset_code", true, true, {
             longitude: mapX,
             latitude: mapY,
@@ -3467,8 +3758,8 @@ function do_KDF_Custom_esriMap(action, response) {
         { alias: "usrn", value: USRN },
         { alias: "siteName", value: streetName },
         { alias: "siteCode", value: USRN },
-        { alias: "easting", value: easting },
-        { alias: "northing", value: northing },
+        // { alias: "easting", value: easting },
+        // { alias: "northing", value: northing },
       ]);
       setSelectedAddress(fullAddress, "show");
       $(".popup").text(streetName);
@@ -3753,8 +4044,11 @@ function formatTitleCase(value) {
 // --- FORMATING REMOVE ECCESS WHITE SPACES --------------------------------- \\
 
 function formatRemoveEccessWhiteSpace(value) {
-  const formattedString = value.replace(/\s+/g, " ").trim();
-  return formattedString;
+  if (value) {
+    const formattedString = value.replace(/\s+/g, " ").trim();
+    return formattedString;
+  }
+  return "";
 }
 
 // --- FORMATING DATE AND TIME ---------------------------------------------- \\
@@ -3917,7 +4211,7 @@ function updateWidgetText(name, label, helpMessage, validation) {
   }
 }
 
-// --- UPDATE LABEL TEXT ---------------------------------------------------- \\
+// --- UPDATE LABEL TEXT ---------------------------------------------------- \\update labe
 
 function updateMultipleLabels(fields) {
   fields.map((field) => {
@@ -4087,6 +4381,63 @@ async function updateMinMaxDates(dateElementId, attribute, value) {
   }
 }
 
+// --- VALIDATE TIME FUNCTION ----------------------------------------------- \\
+
+function validateTime(inputDate, field, minTime, maxTime, interval) {
+  // Get the date part from the inputDate and compare it to today's date
+  const isToday = new Date(inputDate).getDate() === new Date().getDate();
+
+  // Extract hours and minutes from the input field value
+  const [inputHours, inputMinutes] = field.value.split(":").map(Number);
+
+  // Calculate the input time in minutes since midnight
+  const inputTimeInMinutes = inputHours * 60 + inputMinutes;
+
+  // Calculate the current time in minutes since midnight if it's today
+  const currentTimeInMinutes = isToday
+    ? new Date().getHours() * 60 + new Date().getMinutes()
+    : 0;
+
+  defaultMessage = getValidationMessageFromSession(field.id);
+
+  let validTime = true;
+  let errorMessage = defaultMessage;
+
+  if (isToday) {
+    if (inputMinutes % interval !== 0) {
+      validTime = false;
+      errorMessage = `Must be a ${interval} minutes interval`;
+    }
+    if (inputHours < minTime || inputHours >= maxTime) {
+      validTime = false;
+      errorMessage = `Must be between ${minTime}:00 and ${maxTime}:00`;
+    }
+    if (inputTimeInMinutes <= currentTimeInMinutes) {
+      validTime = false;
+      errorMessage = "Appointments must be in the future";
+    }
+  } else {
+    // If not today, only check for min/max time and interval
+    if (inputMinutes % interval !== 0) {
+      validTime = false;
+      errorMessage = `Must be a ${interval} minutes interval`;
+    }
+    if (inputHours < minTime || inputHours >= maxTime) {
+      validTime = false;
+      errorMessage = `Must be between ${minTime}:00 and ${maxTime}:00`;
+    }
+  }
+
+  if (!validTime) {
+    updateValidationMessage(field.name, errorMessage);
+    $(`.dform_widget_${field.name} .dform_validationMessage`).show();
+
+    checkPageProgress();
+  }
+
+  return { valid: validTime, message: errorMessage };
+}
+
 // --- COOKIE FUNCTIONS ----------------------------------------------------- \\
 
 function setCookie(name, value, minutes) {
@@ -4114,7 +4465,11 @@ function getCookie(name) {
 // --- STORE VALIDATION MESSAGES -------------------------------------------- \\
 
 function storeDefaultValidationMessages() {
-  const fieldClasses = ["address-search", "date-field"];
+  const fieldClasses = [
+    "address-search",
+    "date-field",
+    "dform_widget_type_time",
+  ];
 
   fieldClasses.forEach((className) => addValidationMessageToSession(className));
 }

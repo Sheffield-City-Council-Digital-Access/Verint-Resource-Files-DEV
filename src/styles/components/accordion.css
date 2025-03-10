@@ -3,9 +3,14 @@
 #dform_container .accordion {
   width: 100%;
   max-width: 445px;
-  margin: 0;
+  margin: 4rem 0;
   border: none;
   background-color: var(--color-white);
+}
+
+#dform_container .accordion:focus-within {
+  box-shadow: none;
+  outline: 0.4rem solid var(--color-warning);
 }
 
 #dform_container .accordion-header {
@@ -19,7 +24,7 @@
   cursor: pointer;
 }
 
-#dform_container .accordion-header>h3 {
+#dform_container .accordion-header > h3 {
   display: inline;
   margin: 0;
 }
@@ -46,8 +51,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
 
   background: var(--color-primary);
 }
@@ -55,7 +60,7 @@
 #dform_container .accordion-icon::after {
   content: "\e909";
   font-family: "icomoon";
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   color: var(--color-white);
   transition: transform 0.2s ease-in-out;
 }

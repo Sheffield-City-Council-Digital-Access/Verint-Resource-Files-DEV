@@ -125,6 +125,9 @@ function createCards(data, container, parent = null) {
 
     const cardTitle = document.createElement("h3");
     cardTitle.classList.add("card-title");
+    if (item.constructor.name.startsWith("Form")) {
+      cardTitle.classList.add("form-redirect-icon");
+    }
     cardTitle.textContent = item.name;
 
     const cardText = document.createElement("p");
@@ -243,7 +246,6 @@ function redirectToContentPage(item) {
   }
 
   const { service, subject, topic } = hierarchy;
-  console.log("hierarchy", hierarchy);
 
   // Select breadcrumb elements by their unique IDs
   const serviceBreadcrumbContent = document.getElementById(
@@ -813,7 +815,6 @@ function handleOnReadyKnowledge() {
       const service = knowledge.find((service) => service.name === label);
 
       if (service) {
-        console.log("subjectMenuButtons", service);
         createCards(service.subjects, subjectMenuContainer, service);
         KDF.gotoPage("page_subject_menu", true, true, true);
       }
@@ -830,7 +831,6 @@ function handleOnReadyKnowledge() {
       });
 
       if (service) {
-        console.log("topicMenuButtons", service);
         createCards(service.subjects, subjectMenuContainer, service);
         const label = button.textContent;
 
@@ -1195,9 +1195,6 @@ function handleOnReadyKnowledge() {
       searchPhrases.push(additionalPhrase);
     }
 
-    console.log(`Search Terms: ${searchTerms}`);
-    console.log(`Search Phrases: ${searchPhrases}`);
-
     const searchableItems = knowledge.flatMap((service) => {
       return service.subjects
         .filter((subject) => {
@@ -1297,8 +1294,6 @@ function handleOnReadyKnowledge() {
 
     const results = combinedItems.sort((a, b) => b.relevance - a.relevance);
 
-    console.log("Search Results:", results);
-
     return results;
   }
 
@@ -1311,27 +1306,34 @@ function handleOnReadyKnowledge() {
       const noResultsMessage = document.createElement("div");
       noResultsMessage.classList.add("no-results-message");
 
-      noResultsMessage.innerHTML = `
-        <h3>No results found</h3>
-        <p>Sorry, we couldn't find any results for "${searchQuery}".</p>
-        <p>Here are a few suggestions:</p>
-        <ul>
-          <li>Check your spelling and try again</li>
-          <li>Try using more general keywords</li>
-          <li>Consider using different words or phrases</li>
-        </ul>
-        <p>
-          If you're still having trouble, 
-          <a href="https://sheffieldcc-it.uk.4me.com/self-service/requests/new/provide_description?template_id=681s" target="_blank">contact us</a>
-           for assistance.
-        </p>
-      `;
+      if (searchQuery) {
+        noResultsMessage.innerHTML = `
+          <h3>No results found</h3>
+          <p>Sorry, we couldn't find any results for <strong>"${searchQuery}"</strong>.</p>
+          <p>Here are a few suggestions:</p>
+          <ul>
+            <li>Check your spelling and try again.</li>
+            <li>Try using more general keywords.</li>
+            <li>Consider using different words or phrases.</li>
+          </ul>
+          <p>
+            If you're still having trouble, 
+            <a href="https://sheffieldcc-it.uk.4me.com/self-service/requests/new/provide_description?template_id=681s" target="_blank">contact us</a>
+            for assistance.
+          </p>
+        `;
+      } else {
+        noResultsMessage.innerHTML = `
+          <h3>No search value entered</h3>
+          <p>Enter the information you want to search for.</p>
+        `;
+      }
 
       resultsContainer.appendChild(noResultsMessage);
       return;
     }
 
-    results.forEach((result, index) => {
+    results.forEach((result) => {
       const card = document.createElement("div");
       card.classList.add("search-card");
       card.setAttribute("tabindex", "0");
@@ -1341,6 +1343,9 @@ function handleOnReadyKnowledge() {
       }
 
       const title = document.createElement("h3");
+      // if ((result.type = "form")) {
+      //   title.classList.add("form-redirect-icon");
+      // }
       title.textContent = result.title || result.name;
       const description = document.createElement("div");
       description.innerHTML = result.description;
@@ -1375,7 +1380,6 @@ function handleOnReadyKnowledge() {
    * @param {Object} result - The search result or option item.
    */
   function handleCardClick(result) {
-    console.log(result);
     switch (result.type) {
       case "knowledge":
         // Redirect to the content page for knowledge items
@@ -1677,6 +1681,7 @@ function handleOnReadyKnowledge() {
               card.setAttribute("tabindex", "0");
 
               const title = document.createElement("h3");
+              title.classList.add("form-redirect-icon");
               title.textContent = subject.name;
 
               const description = document.createElement("div");

@@ -1,37 +1,37 @@
 @charset "UTF-8";
-@import url('./layout.css');
-@import url('./fonts.css');
+@import url("./layout.css");
+@import url("./fonts.css");
 
-@import url('./components/loadingSpinner.css');
+@import url("./components/loadingSpinner.css");
 
-@import url('./components/formHeader.css');
-@import url('./components/formTitle.css');
-@import url('./components/formFooter.css');
+@import url("./components/formHeader.css");
+@import url("./components/formTitle.css");
+@import url("./components/formFooter.css");
 
-@import url('./components/reviewPage.css');
+@import url("./components/reviewPage.css");
 
-@import url('./components/modal.css');
+@import url("./components/modal.css");
 
-@import url('./components/noticeBanners.css');
-@import url('./components/noticePanels.css');
+@import url("./components/noticeBanners.css");
+@import url("./components/noticePanels.css");
 
-@import url('./components/progressBar.css');
+@import url("./components/progressBar.css");
 
-@import url('./components/coreElements.css');
-@import url('./components/buttons.css');
+@import url("./components/coreElements.css");
+@import url("./components/buttons.css");
 
-@import url('./components/customMultiCheck.css');
+@import url("./components/customMultiCheck.css");
 
-@import url('./components/accordion.css');
-@import url('./components/detailsAccordion.css');
+@import url("./components/accordion.css");
+@import url("./components/detailsAccordion.css");
 
-@import url('./components/contactPanel.css');
+@import url("./components/contactPanel.css");
 
-@import url('./components/customDate.css');
-@import url('./components/customSearch.css');
-@import url('./components/customMap.css');
+@import url("./components/customDate.css");
+@import url("./components/customSearch.css");
+@import url("./components/customMap.css");
 
-@import url('./components/rentAccount.css');
+@import url("./components/rentAccount.css");
 
 :root {
   /* ----- COLOURS ---------------------------------------------------------- */
@@ -41,7 +41,7 @@
   /* <-- pink ------- */
   --color-secondary: #cc3399;
   /* <-- grey ------- */
-  --color-background: #e0e0e0;
+  --color-background: #eeeeee;
   --color-empty-pb: #cccccc;
 
   /* <-- green ------ */

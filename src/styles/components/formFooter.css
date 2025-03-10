@@ -9,7 +9,8 @@
 .az-links-container {
   flex: 1;
   background: var(--color-primary);
-  border-bottom: 0.3rem solid var(--color-white);
+  border-bottom: 0.2rem solid var(--color-white);
+  margin-bottom: 2rem;
 }
 
 .az-links {
@@ -66,14 +67,14 @@
 
 .footer-links-container ul {
   list-style: none;
-  width: clamp(0rem, 95vw, 155rem);
+  width: clamp(0rem, 100%, 155rem);
   margin-inline: auto;
-  padding-block: 2.5rem;
-  border-bottom: 1px solid white;
+  padding: 2.5rem 0;
+  border-bottom: 1rem solid var(--color-white);
 }
 
 .footer-links-container ul li {
-  padding-block: 0.3rem;
+  margin-bottom: 0.8rem;
 }
 
 .footer-links-container ul li a {
@@ -90,11 +91,11 @@
 
 .footer-links-container ul li a:hover {
   color: var(--color-white);
-  /* text-decoration: underline var(--color-secondary); */
+  text-decoration: underline var(--color-white);
 }
 
 /* .footer-links-container ul li a:hover::after {
-  color: var(--color-secondary);
+  color: var(--color-white);
 } */
 
 #social-links {
@@ -118,7 +119,9 @@
 .icon-instagram:before,
 .icon-instagram-after:after,
 .icon-mail:before,
-.icon-mail-after:after {
+.icon-mail-after:after,
+.icon-redirect:before,
+.icon-redirect-after:after {
   display: inline-block;
   font-family: var(--font-icon);
   speak: none;
@@ -165,6 +168,11 @@
   content: "\e919";
 }
 
+.icon-redirect:before,
+.icon-redirect-after:after {
+  content: "\e91c";
+}
+
 .info {
   display: flex;
   justify-content: space-between;
@@ -173,6 +181,7 @@
   padding: 3rem;
   width: clamp(0rem, 95vw, 155rem);
   margin-inline: auto;
+  margin-top: 4rem;
   color: var(--color-white);
   font-size: var(--font-size-p3);
   line-height: var(--font-height-p3);
@@ -189,6 +198,10 @@
 .footer-logo {
   height: 8rem;
   width: auto;
+}
+
+.copyright {
+  font-size: var(--font-size-p2) !important;
 }
 
 .jump-container {
@@ -210,7 +223,7 @@
 }
 
 #jump-to-top::after {
-  content: '';
+  content: "";
   position: absolute;
   transform: translatey(-111%);
   border-width: 1rem;
@@ -223,13 +236,15 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding-bottom: 1rem;
   }
 
   .footer-links-container {
     display: flex;
-    padding-inline: 3rem;
+    padding-inline: 2rem;
     flex-direction: unset;
-    width: clamp(0rem, 95vw, 155rem);
+    width: clamp(0rem, 100%, 155rem);
+    margin-inline: auto;
   }
 
   .footer-links-container ul {

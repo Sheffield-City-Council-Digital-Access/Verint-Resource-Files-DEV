@@ -1,7 +1,8 @@
 /* --- DETAILS ACCORDION ---------------------------------------------------- */
 
 #dform_container .details-accordion {
-  max-width: 571px;
+  max-width: 57.1rem;
+  margin-block: .6rem;
 }
 
 #dform_container .details-accordion:focus-within {
@@ -13,12 +14,12 @@
 }
 
 #dform_container .details-accordion summary {
-  padding-right: 16px;
+  padding-right: 1.6rem;
   font-size: var(--font-size-p1);
   line-height: var(--font-height-p1);
   font-weight: var(--font-weight-semibold);
   color: var(--color-primary);
-  border-bottom: 4px solid transparent;
+  border-bottom: .4rem solid transparent;
 }
 
 #dform_container .details-accordion:hover summary {
@@ -32,7 +33,7 @@
   width: max-content;
   background: var(--color-warning);
   color: var(--color-black);
-  border-bottom: 4px solid var(--color-black);
+  border-bottom: .4rem solid var(--color-black);
   outline: none;
 }
 
@@ -41,12 +42,12 @@
 }
 
 #dform_container .details-accordion-content p {
-  border-left: solid 4px var(--color-grey-5);
-  padding-block: 6px 10px;
-  padding-inline: 19px 15px;
+  border-left: solid .4rem var(--color-grey-5);
+  padding-block: .6rem 1rem;
+  padding-inline: 1.9rem 1.5rem;
   margin: 0;
 }
 
 #dform_container .details-accordion-content > * {
-  border-left: solid 4px var(--color-grey-5);
+  border-left: solid .4rem var(--color-grey-5);
 }

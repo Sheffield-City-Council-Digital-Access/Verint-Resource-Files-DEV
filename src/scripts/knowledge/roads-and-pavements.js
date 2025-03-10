@@ -69,11 +69,11 @@ const reportDamagedMissingKerb = new FormRaP(
 
 const requestLitterPickCollection = new FormRaP(
   "requestLitterPickCollection",
-  "Comunity litter collection",
+  "Community litter collection",
   "Collection after a community litter pick",
   "litter_pick_collection",
   {
-    type: "Report",
+    type: "Request",
     keywords: ["litter", "pick", "collection"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
@@ -83,7 +83,7 @@ const requestLitterPickCollection = new FormRaP(
 const manholeStopcockCover = new FormRaP(
   "manholeStopcockCover",
   "Manhole or stopcock cover",
-  "Report problems such as broken, depressed, missing, raised and rocking or noosy manhole or stopcock covers",
+  "Report problems such as broken, depressed, missing, raised and rocking or noisy manhole or stopcock covers",
   "manhole_stopcock_cover",
   {
     type: "Report",
@@ -109,7 +109,7 @@ const reportDrainGulley = new FormRaP(
 const reportFenceBarrier = new FormRaP(
   "reportFenceBarrier",
   "Fences or safety barriers",
-  "Report problems with cycle barriers, fences, pedestrian barriers, temporary barrer/sbollards or vehicle barriers",
+  "Report problems with cycle barriers, fences, pedestrian barriers, temporary barriers/bollards or vehicle barriers",
   "report_fence_barrier",
   {
     type: "Report",
@@ -152,7 +152,7 @@ const reportHighwayDamage = new FormRaP(
   "report_highway_damage",
   {
     type: "Report",
-    keywords: ["Highway", "damage"],
+    keywords: ["Highway", "damage", "damage to", "damage to the", "damage to the highway"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
@@ -239,7 +239,7 @@ const reportStreetLight = new FormRaP(
 const reportTrafficSignal = new FormRaP(
   "reportTrafficSignal",
   "Traffic signal, pedestrian crossing, camera or electronic sign",
-  "Report problems such as damaged, missing or exposed wires, obscureed or not working lights, and structural and appearance issues",
+  "Report problems such as damaged, missing or exposed wires, obscured or not working lights, and structural and appearance issues",
   "report_traffic_signal",
   {
     type: "Report",
@@ -265,7 +265,7 @@ const requestClaimsPack = new FormRaP(
 const requestGritBin = new ContentRaP(
   "requestGritBin",
   "Grit bin locations",
-  "View grit bin locations and request a grit bin",
+  "Find information about grit bin locations, criteria for new allocations, and the process for grit bin relocations.",
   `
     <iframe
       src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=796ba9a88ab04607a265d78e93d36d5c"
@@ -320,7 +320,7 @@ const requestGritBin = new ContentRaP(
 const requestGritting = new ContentRaP(
   "requestGritting",
   "Gritting routes",
-  "View gritting routes and request gritting or snow clearance",
+  "Find information about Sheffield's gritting routes, prioritisation criteria, and how emergency requests are handled for gritting services.",
   `
     <iframe
     src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=07f393cef2684b47b429d4a232277bd0"
@@ -475,8 +475,70 @@ const reportFallenLeaves = new FormRaP(
 const reportHedgePlantGrass = new ContentRaP(
   "reportHedgePlantGrass",
   "Hedges, plants or grassed areas",
-  "Reports problems such as overgrown, dead or diseased, and damaged vegetation",
-  `## needs information around grass cutting schedule ##`,
+  "Report problems such as overgrown, dead or diseased, and damaged vegetation",
+  `
+    <section>
+      <h3>Grassed areas</h3>
+      <p>
+        Grass cutting seasons are Spring and Summer. The frequecney in which they
+        are cut varies from every 2-4 weeks or every year.
+      </p>
+      <ul>
+        <li>
+          Areas with daffodils or other bulbs are left uncut until early June.
+        </li>
+        <li>
+          Areas containing wildflowers area, it is cut once per year, typically in
+          late August.
+        </li>
+        <li>
+          Areas that impact sight lines around junctions, signs, bollards and street
+          name plates are attended more frequently as required.
+        </li>
+      </ul>
+
+      <details class="details-accordion">
+        <summary>Verge hardening</summary>
+        <div class="details-accordion-content">
+          <p>
+            Grass verges play an important role in urban drainage as they absorb
+            rainfall which would otherwise find its way into the drainage system
+            thereby increasing the risk of flooding. <br />In view of this, we will
+            not consider individual requests for verge hardening.
+          </p>
+          <p>
+            Similarly, individual requests for verge protection measures (such as
+            bollards) will not be considered.
+          </p>
+        </div>
+      </details>
+    </section>
+
+    <section>
+      <h3>Planted areas</h3>
+      <p>
+        Shrub and rose areas are inspected twice per year at which time any
+        necessary pruning and maintenance is carried out.
+      </p>
+    </section>
+
+    <section>
+      <h3>Hedges</h3>
+      <p>
+        We plan our routine hedge and tree cutting around bird nesting times and
+        other conservation issues (e.g. insect habitats), so they do not cut hedges
+        in the spring and early summer unless for reasons of public safety.
+      </p>
+      <p>
+        If a hedge or tree is encroaching on to the highway from private property or
+        land, you will need to transfer the call to the Highway Enforcement team.
+        The Highway Enforcement team can serve hedge cutting/tree pruning notices to
+        private landowners where trees/hedges are encroaching on to the highway not
+        considered to be causing hazard or danger. If a tree is causing a hazard or
+        danger to the highway, raise a report.
+      </p>
+    </section>
+  `,
   {
     buttonLabel: "Report a hedge, plant or grass",
     formName: "report_hedge_plant_grass",
@@ -494,7 +556,7 @@ const reportHedgePlantGrass = new ContentRaP(
 const reportLitterBin = new FormRaP(
   "reportLitterBin",
   "Litter bins",
-  "Report problems such as full, leaning or knocked overlitter bins",
+  "Report problems such as full, leaning or knocked over litter bins",
   "report_litter_bin",
   {
     type: "Report",
@@ -507,7 +569,7 @@ const reportLitterBin = new FormRaP(
 const reportStreetSignBollard = new FormRaP(
   "reportStreetSignBollard",
   "Street signs or bollards",
-  "Report propblems such as obstructed, missing, damaged, or fallen signs or bollards",
+  "Report problems such as obstructed, missing, damaged, or fallen signs or bollards",
   "road_street_sign_bollard",
   {
     type: "Report",
@@ -517,36 +579,77 @@ const reportStreetSignBollard = new FormRaP(
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
-const reportTree = new FormRaP(
+const reportTree = new ContentRaP(
   "reportTree",
   "Trees and tree grills",
   "Report problems such as fallen, leaning, diseased, dead trees, or damaged tree grills",
-  "report_tree",
+  `
+    <section>
+      <h3>Maintanence</h3>
+      <p>
+        We plan our routine hedge and tree cutting around bird nesting times and
+        other conservation issues (e.g. insect habitats), so they do not cut hedges
+        in the spring and early summer unless for reasons of public safety.
+      </p>
+      <p>
+        If a hedge or tree is encroaching on to the highway from private property or
+        land, you will need to transfer the call to the Highway Enforcement team.
+        The Highway Enforcement team can serve hedge cutting/tree pruning notices to
+        private landowners where trees/hedges are encroaching on to the highway not
+        considered to be causing hazard or danger. If a tree is causing a hazard or
+        danger to the highway, raise a report.
+      </p>
+      <p>
+        Initially, the tree will be inspected and where it is considered hazardous
+        remedial works will be carried out to make the area safe.
+      </p>
+      <p>
+        Tree removal is always the very last option undertaken after all other
+        solutions have been explored. As a result of any removal, we will always aim
+        to plant a new tree in a nearby location.
+      </p>
+    </section>
+    <details class="details-accordion">
+      <summary>Damage caused by trees</summary>
+      <div class="details-accordion-content">
+        <p>
+          Residents who believe that branches or roots from a highway tree have
+          caused damage to their vehicle, boundary wall or driveway are at liberty
+          to request a claim form.
+          <br /><br />
+          Residents who believe that branches or roots from a highway tree have
+          caused damage to their house should always contact their own house
+          insurers in the first instance, who will arrange for the relevant surveys
+          to be carried out.
+        </p>
+      </div>
+    </details>
+  `,
+  {
+    buttonLabel: "Report a problem with a tree",
+    formName: "report_tree",
+  },
+  { typeKey: "" },
+  { typeKey: "" },
   {
     type: "Report",
     keywords: ["Tree"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
+  { date: "29/01/2025", name: "Elliott Griffiths" }
 );
 
-const requestHighwayInfo = new ContentRaP(
+const requestHighwayInfo = new FormRaP(
   "requestHighwayInfo",
   "Highway information",
   "Request information about service, works, policy or legislation",
-  ``,
-  {
-    buttonLabel: "Request highway information",
-    formName: "request_highway_info",
-  },
-  { typeKey: "" },
-  { typeKey: "" },
+  `request_highway_info`,
   {
     type: "Request",
     keywords: ["Grit", "bin"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
+  { date: "29/01/2025", name: "Elliott Griffiths" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
