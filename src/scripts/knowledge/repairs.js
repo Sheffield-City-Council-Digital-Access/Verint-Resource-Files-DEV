@@ -519,16 +519,50 @@ class CoreR {
     { date: "03/03/2025", name: "Shahzad Athar" }
   );
 
+  const disrepair  = new ContentR(
+    "disrepair",
+    "Disrepair",
+    "",
+    `
+  <p>The team's main responsibilities are:</p>
+
+    <ul>
+        <li>Dealing with Right to Repair</li>
+        <li>Disrepair inspections</li>
+        <li>Inputting work schedules</li>
+        <li>Producing reports for Legal</li>
+        <li>Liaison with Legal</li>
+        <li>Liaison with Repairs and Maintenance</li>
+        <li>Monitoring timescales</li>
+    </ul>
+
+    <p>Please check in <strong>"warning section"</strong> to see if a disrepair is in process and if a 
+    non-urgent job wants logging, please call the number in warning box first before logging a job on 
+    T-Mobile.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
   const electricalandHeating = new ContentR(
     "electricalandheating",
     "Electrical and Heating",
     "",
     `
-    <h2>Electrical Items</h2>
+    <h3>Electrical Items</h3>
     <p>For electrical fittings, additional sockets, etc., email 
     <a href="mailto:ElectricalSheffield@Sheffield.go.uk" class="email">ElectricalSheffield@Sheffield.go.uk</a>.</p>
     
-    <h2>Heating Items</h2>
+    <h3>Heating Items</h3>
     <p>For extra radiators, email 
     <a href="mailto:GasSheffield@sheffield.gov.uk" class="email">GasSheffield@sheffield.gov.uk</a>.</p>
 
@@ -621,6 +655,1459 @@ class CoreR {
     { date: "27/02/2025", name: "Shahzad Athar" }
   );
 
+  const externalDoorLock   = new ContentR(
+    "externalDoorLock",
+    "External Door Lock",
+    "",
+    `
+    <h3>Category Fault</h3>
+        <p>External Door Locks Repairs</p>
+    <h3>Contract</h3>
+        <p>Responsive</p>
+    <h3>Warranty</h3>
+        <p>Identified from the T-Mobile system.If repair is within a warranty period, 
+        invoke the warranty repair process.</p>
+    
+    <h3>Key questions and information</h3>
+
+        <p>If a member of staff from an Area Housing Office requests a lock change to a property, 
+        order remedy repair.</p>
+        <p>If there is a pop-up (e.g., Gas No Access: HF, NA or CI code, No Repair: NR code, or ALMO), 
+        continue to order a repair if applicable and immediately contact the RPIT Gas Team.</p>
+
+    <h3>Recharge</h3>
+
+        <p>N/A</p>
+
+    <h3>Outcome</h3>
+
+        <p>Log a repair on T-Mobile.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const externalDoor   = new ContentR(
+    "externalDoor",
+    "External Door",
+    "",
+    `
+    <h3>Category Fault</h3>
+        <p>External Door Repairs</p>
+    <h3>Contract</h3>
+        <p>Responsive</p>
+    <h3>Warranty</h3>
+        <p>Identified from the T-Mobile system.If repair is within a warranty period, 
+        invoke the warranty repair process.</p>
+    
+    <h3>Key questions and information</h3>
+
+        <p>Ask tenant for details of door type (PVCu, Wood, Metal, or Other).</p>
+        <p>Check programme details (e.g., Prior to Painting). If work is due, 
+        defer the repair to programme works.</p>
+        <p>If a result of Burglary/Vandalism, then check if the customer has a Police crime 
+        reference number.</p>
+       
+    <h3>Recharge</h3>
+
+        <p>If there is no Crime Reference Number, advise the tenant that a job will be raised 
+        as a <strong>RECHARGE</strong>. </p>
+
+    <h3>Outcome</h3>
+
+        <p>If a result of Burglary / Vandalism, then a Police crime reference number is required 
+        if repair is because of Burglary / Vandalism. Where there is no Crime Reference Number, 
+        board up/make safe only..</p>
+        <p>Order Remedy Repair</p>.
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const flatRoof   = new ContentR(
+    "flatRoof",
+    "Flat Roof",
+    "",
+    `
+    <h3>Category Fault</h3>
+        <p>Flat Roofing Repairs</p>
+    <h3>Contract</h3>
+        <p>Responsive</p>
+    <h3>Warranty</h3>
+        <p>Identified from the T-Mobile system.If repair is within a warranty period, 
+        invoke the warranty repair process.</p>
+    
+    <h3>Key questions and information</h3>
+
+        <p>If there is a pop-up (Gas No Access: HF, NA or CI code, No Repair: NR code, or ALMO), 
+        continue to order a repair if applicable and immediately contact the RPIT Gas Team.</p>
+        <p>Order Remedy Repair. Start order comments with "Storm Damage" if required.</p>
+        <p>If leaking into property, order as Urgent Leak.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const floororStaircase   = new ContentR(
+    "floororStaircase",
+    "Floor or Staircase",
+    "",
+    `
+    <h3>Category Fault</h3>
+        <p>Floors or Staircase Repairs</p>
+    <h3>Contract</h3>
+        <p>Responsive</p>
+    <h3>Warranty</h3>
+        <p>Identified from the T-Mobile system.If repair is within a warranty period, 
+        invoke the warranty repair process.</p>
+    
+    <h3>Key questions and information</h3>
+
+        <p>Not available</p>
+
+    <h3>Recharge</h3>
+
+        <p>If there is a pop-up (Gas No Access: HF, NA or CI code, No Repair: NR code, or ALMO), 
+        continue to order a repair if applicable and immediately contact the RPIT Gas Team.</p>
+
+    <h3>Outcome</h3>
+
+        <p>Order Remedy Repair.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const footpathandSteps   = new ContentR(
+    "footpathandSteps",
+    "Footpath and Steps",
+    "",
+    `
+   <h3>Category Fault</h3>
+        <p>Footpath and Steps Repairs</p>
+   <h3>Contract</h3>
+        <p>Responsive</p>
+   <h3>Warranty</h3>
+        <p>Identified from the T-Mobile system.If repair is within a warranty period, 
+        invoke the warranty repair process.</p>
+    
+    <h3>Key questions and information</h3>
+
+        <p>Order Repairs only to Main Footpath to Property and to Entrance doors.  Need to 
+        identify the type of Material i.e., Concrete, Tarmac.</p>
+
+        <p>If there is a pop-up i.e. for Gas No Access: HF, NA or CI code, No Repair: NR code, 
+        or ALMO, continue to order a repair (if applicable) then immediately contact the 
+        RPIT Gas Team.</p>
+
+    <h3>Outcome</h3>
+
+        <p>Log a repair on T-Mobile and book a non-appointed visit.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const fireJobs  = new ContentR(
+    "fireJobs",
+    "Fire Jobs",
+    "",
+    `
+  <p>If there is a fire at property, please email the contacts below.</p>
+
+    <ul>
+        <li>Steve Willis Operations Manager <a href="mailto:steve.willis@sheffield.gov.uk">steve.willis@sheffield.gov.uk</a></li>
+        <li>Steve Pitts Team Leader <a href="mailto:steve.pitts1@sheffield.gov.uk">steve.pitts1@sheffield.gov.uk</a></li>
+        <li>Gordon Hampshire Team Leader <a href="mailto:gordon.hampshire@sheffield.gov.uk">gordon.hampshire@sheffield.gov.uk</a></li>
+    </ul>
+
+    <p>Inspection following Fires. Fire Job orders. Post Inspections. Method Statements.</p>
+
+    <h3>Sheltered</h3>
+
+    <ul>
+        <li>Sheltered Repairs</li>
+        <li>Interim Repairs</li>
+        <li>High Support</li>
+        <li>Inputting work schedules</li>
+    </ul>
+
+    <h3>Permissions</h3>
+
+    <p><strong>All requests must be put in writing to:</strong></p>
+    <p>Sheffield Council Housing Service<br>PO Box 5967<br>S2 9GH</p>
+    <p>Inform the customer that if they are over £250 (Total Indebtedness) in arrears their Permissions 
+    request is unlikely to be granted.</p>
+    <p>You must have written permission from the Housing Service to alter or improve your home. 
+    This includes:</p>
+
+    <ul>
+        <li>Putting up any form of extension or building</li>
+        <li>Adding to, changing, or replacing the fixtures, fittings and appliances provided by us.</li>
+        <li>Altering essential gas, electricity, and water services</li>
+        <li>Putting up a radio or television aerial or satellite dish</li>
+        <li>Decorating the outside of your home</li>
+        <li>Removing internal walls</li>
+        <li>Insulation (Walls & Lofts)</li>
+    </ul>
+
+    <p>It is your responsibility to seek and get any planning or building regulation approvals.</p>
+    <p>Permissions for loft conversions, conservatories, spiral staircases, swimming pools and extensions 
+    are highly unlikely to be granted due to extra maintenance costs and potential structural problems.</p>
+    <p>It is also unlikely that we will give permissions for stairlifts in communal areas, as it is more 
+    appropriate for tenants that require this to be rehoused.</p>
+    <p>Every request for permission will be assessed using criteria and conditions appropriate to the request. 
+    These criteria and conditions will be explained in the letter sent in reply to the customer's permission 
+    request.</p>
+
+    <h3>Team's main responsibilities</h3>
+
+    <ul>
+        <li>Permission visits</li>
+        <li>Sign off visit once permission completed.</li>
+        <li>Joint visits with Area Teams</li>
+        <li>Joint visits with Leaseholder Team</li>
+        <li>Process Management of Permissions</li>
+    </ul>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+
+  const garageorDetachedOutbuilding   = new ContentR(
+    "garageorDetachedOutbuilding",
+    "Garage or Detached Outbuilding",
+    "",
+    `
+    <h3>Category Fault</h3>
+        <p>Garages and Detached Outbuildings</p>
+    <h3>Contract</h3>
+        <p>Responsive</p>
+    <h3>Warranty</h3>
+        <p>Identified from the T-Mobile system.If repair is within a warranty period, 
+        invoke the warranty repair process.</p>
+    
+    <h3>Key questions and information</h3>
+
+        <p>Do not place orders for Sheds.</p>
+
+    <h3>Outcome</h3>
+
+        <p>Log a job on T-Mobile.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const gasandDomesticSystems   = new ContentR(
+    "gasandDomesticSystems",
+    "Gas and Domestic Systems",
+    "",
+    `
+    <h3>Category Fault</h3>
+
+        <p>Domestic Gas system</p>
+
+    <h3>Codes</h3>
+    <ul>
+        <li>Remedy Blocked Flue to Boiler</li>
+        <li>Remedy TOTAL Loss of Heating & Hot Water (Gas Heating)</li>
+        <li>Repair Gas Fired Central Heating (where other heating available)</li>
+        <li>Repair Gas Fire/Wall Heater/Gas Boiler (where there is NO other form of heating available)</li>
+        <li>Repair leaking Heating Pipe, Tank, Cistern, Radiator etc.</li>
+        <li>Remedy no Hot Water (where other heat is available)</li>
+        <li>Repair Warm Air Central Heating system</li>
+        <li>Remedy Total/Partial loss of Gas Supply</li>
+        <li>Recall non chargeable repair</li>
+    </ul>
+
+    <h3>Warranty</h3>
+
+    <p>Identified from the T-MOBILE system. If repair is identified as within a warranty period, 
+    invoke the warranty repair process for new boilers (Mark as <strong>'WARRANTY RECALL</strong>
+     - Repair to faulty boiler, still in warranty or call obsolete on 01142736978.</p>
+
+    <h3>Key questions and information</h3>
+
+    <p>Check if the repair is regarding no water flowing out of the taps, or whether there is 
+    water flowing, and it is cold. If there is no water flowing this should be a 
+    <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx"> 
+    plumbing repair</a>.</p>
+    <p>If a customer has a pre-pay meter but has no gas heating at all, either from a boiler 
+    or gas fire (if present), ask the customer to check that the meter has credit and that the 
+    heating room stat is turned up high enough.</p>
+    <p>Where arranging a gas service inform the Customer that if they have a gas fire it should 
+    be switched off and not used on the day of service.</p>
+
+    <h3>Boiler Warning Codes</h3>
+
+    <p>If a customer call stating their heating isn't working, and they give the fault code of 
+    <strong>F28</strong> or <strong>F29</strong>, this means that there is <strong>no gas going 
+    to the boiler</strong>. Please go through the check list below with tenant.</p>
+
+     <table border="1" cellpadding="5">
+        <tr>
+            <th></th>
+            <th>Heating Issue</th>
+            <th>Low Pressure</th>
+            <th>No Gas</th>
+            <th>No Power</th>
+        </tr>
+        <tr>
+            <td>Vaillant Ecotec Pro/Sustain</td>
+            <td>Thermostat, Programmer or Low Pressure</td>
+            <td>F22, 0.0bar</td>
+            <td>F28, F29</td>
+            <td>Boiler display blank</td>
+        </tr>
+        <tr>
+            <td>Vaillant Ecomax</td>
+            <td>Thermostat, Programmer or Low Pressure</td>
+            <td>F22, F25</td>
+            <td>F28, F29</td>
+            <td>Boiler display blank</td>
+        </tr>
+        <tr>
+            <td>Baxi Duo Tec</td>
+            <td>Thermostat, Programmer or Low Pressure</td>
+            <td>E119</td>
+            <td>E133</td>
+            <td>Boiler display blank</td>
+        </tr>
+    </table>
+    
+
+    IMAGE 
+
+    <p>The fault code has been missing a lot lately from the job notes as asked for in the prompt 
+    text box for central heating repairs.</p>
+    <p>This has meant we have had an increase of <strong>F28 / F29 faults codes</strong> (avoidable jobs).</p>
+    <p>92% of the time this is a meter fault which is more common now with a smart meter i.e., 
+    it's not switched on / not been reset after the tenant has run out of credit.</p>
+    <p>If the customer describes this fault, please ask them to:</p>
+
+    <ul>
+        <li>Check they have credit on their meter.</li>
+        <li>The meter display is working.</li>
+        <li>The meter is on / not shut down due to safety lock out.</li>
+    </ul>
+
+    <p>If the customer answers <strong>no</strong> to any of these questions they will need to 
+    add credit or contact their supplier to rectify the meter fault or they will be told how to 
+    switch on/reset the meter.</p>
+    <p>If the customer answers <strong>yes</strong> to all 3 questions, they simply must press 
+    and hold the reset button on the boiler for 3 seconds, this button is a flame with an X 
+    through it see pic below.</p>
+
+    IMAGE
+
+    <p>If this fails and it still goes to F28 (not F29), then it is a genuine heating repair:</p>
+
+    <ul>
+        <li>The gas meter has run out of gas.</li>
+        <li>This is a new tenant that hasn't had the gas reinstated.</li>
+    </ul>
+
+    <p>The above will apply to Vaillant boilers only. However, for the new Duo Tecs we are 
+    installing in certain areas, the code <strong>E133</strong> will appear.</p>
+
+    <p>Other than these boilers, none of the older ones will have digital displays. 
+    However, you should still:</p>
+
+    <ul>
+        <li>Ask the customer to check the gas meter.</li>
+        <li>Check T-MOBILE to find out if the property has been recently vacant, and whether 
+        a gas reinstatement was ordered.</li>
+    </ul>
+
+  <h3>Central Heating Replacement Programme</h3>
+
+    <p>On some occasions, there is an overlap with the installation of new systems and the 
+    annual gas service. Therefore, if a tenant rings to organise their gas service, but states 
+    that they have just had a new boiler / central heating system installed, please contact 
+    <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">HM&E</a> 
+    and they will advise on what steps you need to take with the gas service. This will 
+    generally consist of confirming to the tenant that we will not need to service the gas 
+    appliances this year, and delaying the service on the system, to allow HM&E to get the 
+    paperwork scanned.</p>
+
+  <h3>Cowls</h3>
+
+    <p>If the tenant has a gas fire and cowl has blown off, please put a gas job on using the 
+    <strong>"INSTALL GC1 TERMINAL"</strong> code on OHMS and change to <strong>PL FAO After 
+    trades</strong>. If there is <strong>no</strong> gas fire, then raise job for WAH to replace 
+    cowl on chimney.</p>
+
+  <h3>Gas Meters</h3>
+
+    <p>Anything related to the Gas Meter should be directed to the supplier not us. If unsure, 
+    please ask.</p>
+
+  <h3>Heating repairs during warm weather</h3>
+
+    <p>New boilers will show a "Fault Code" on the boiler display "F??" if there is a problem 
+    with the boiler / heating system.</p>
+    <p>Most older systems are thermostatically controlled but may not have fault code.</p>
+    <p> If the weather is warm, the heating may not come on because it is too hot for it to 
+    activate.</p>
+    <p> Please ask callers what the room-stat is set at before ordering a job that may be 
+    unnecessary. If the customer says there is a fault code on the boiler display, a job will 
+    need to be ordered. If there isn't a fault code, this would suggest the boiler is fine, 
+    just too hot to be activated.</p>
+
+  <h3>Leaking Pipe</h3>
+
+    <p>Before registering a repair for leaking pipes, you need to establish if it is heating or 
+    plumbing. If it is heating, then it will mean pressure has dropped on boiler and may show 
+    error code F22 or drop on pressure gauge. If not, then it will be a leak on the domestic 
+    plumbing so not for gas section.</p>
+
+  <h3>Outcome</h3>
+
+    <p>Order Remedy Repair</p>
+
+  <h3>Pre-inspection</h3>
+
+    <p>If a customer requests an inspection for a gas heating appliance in their property, 
+    please refer to <strong>HM&E</strong>.</p>
+
+    <h3>Stolen Boiler</h3>
+
+    <p>If a boiler has been stolen, contact <strong>RPIT</strong>. Do not contact HM&E. Please 
+    raise an <strong>EM</strong> job and advise the tenant we need a crime ref number so then 
+    they can be referred to <strong>RPIT</strong>.</p>
+    <p>If a stolen boiler is reported, a 'make safe gas and water' job should be raised by the 
+    service center agent or anyone that takes a stolen boiler call. This should be raised on 
+    the "gas escape / fumes" code. If a joiner is required to board, then a repair will need to 
+    be put on for that to meet the gas fitter.</p>
+
+  <h3>Gas after trades</h3>
+
+    <p>If gas after trades are required following work, please contact the 
+    <a href="mailto:ElectricalSheffield@sheffield.gov.uk?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=108&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Gas Team</a> 
+    to ask for work to be done.</p>
+    <p><strong>Do not put a job on.</strong></p>
+
+    <h3>Trunking</h3>
+
+    <p>To order trunking to heating pipes:</p>
+
+    <ul>
+        <li>Type in "Gas" into diagnosis search on T_MOBILE</li>
+        <li>Select the "Gas after trades" option</li>
+        <li>Type into your description what is required and where.</li>
+        <li>Save changes and green arrow back out of the job to leave in "New" status.</li>
+    </ul>
+
+    <p>This will then get picked up with the relevant section to contact the tenant to arrange 
+    when they have the resources to carry this out. Please refrain from giving any specific 
+    timescales.</p>
+
+  <h3>Urgent Gas Repair</h3>
+
+    <p><strong>Monday to Thursday.</strong> You can put urgent repairs on the system until close 
+    of play and will be visited within 24 hours. Please stress to tenants that it may not be the 
+    same day but will be next. Obviously, if the tenant is not going to be in at any point during 
+    the 24hrs please put this info in the description.</p>
+    <p><strong>Friday.</strong> You can put urgent repairs on up until 5.30pm. Again, advise the 
+    tenant that it will be a 24-hour call out, and if not visited on Friday, it will be Monday. 
+    Inform customer to call out of hours if becomes worse over the weekend.</p>
+
+  <h3>Smoke Alarm</h3>
+    <p>There are 2 types of smoke alarms battery and mains powered. Please ask relevant questions
+    to establish which type is in the property.</p>
+
+    <ul>
+        <li>Mains powered will be logged as an electrician.</li>
+        <li>Battery will be logged as a joiner.</li>
+    </ul>
+
+  <h3>Carbon Monoxide Alarm</h3>
+
+    <p>RPIT have a program to fit around 17000 mains wiring alarm which will take about 6 to 7 
+    years.</p>
+    <p>R&M - HM&E are fitting a battery CO alarm on the gas service if a main's one is not 
+    currently fitted in the property / correct place.</p>
+    <p>We will fit a battery CO alarm if requested. (If the customer does not have one already 
+    fitted or it's gone faulty)</p>
+    <p> We must fit it within 28 days of the request as well, but we only have to fit them near 
+    gas fires and gas boilers, not near gas cookers or gas hobs. </p>
+    <p>The easy way to tell if its battery or mains wired alarm in the property is the battery 
+    alarm's we are fitting are a AICO EI208, so if they can't see this model number it's most 
+    likely a mains power one.</p>
+
+IMAGE
+
+    <p>As for fitting the battery alarm any trade can do them, but if the operative is not from 
+    the gas section, they need to confirm with the gas section were to locate the alarm or speak 
+    to <strong>AICO </strong>technical for location advice.</p>
+    <p> Replacing Mains alarms is still down for electricians. </p>  
+
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const gasReinstateandUncapServicesorAppointments  = new ContentR(
+    "gasReinstateandUncapServicesorAppointments",
+    "Gas Reinstate /Gas Uncap Services / Appointments",
+    "",
+    `
+  <h3>Cancel an Appointment</h3>
+
+    <p>If a tenant rings to cancel an appointment as they have no gas, <strong>do not</strong> 
+    cancel the appointment. We will still visit, and if there is no gas, we cap off. 
+    This ensures that the tenant will ring back to have the appliances uncapped and serviced. 
+    If we just cancel, then there is no guarantee that the tenant will ring back.</p>
+
+  <h3>New Tenant</h3>
+
+    <p>If a new tenant makes contact regarding a gas reinstate, then these need to be passed 
+    through to <strong>HM&E</strong> if no answer please email 
+    <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>.</p>
+    <p>If a new tenant makes contact and reports that they have no heat or hot water, please 
+    first check that their gas has been reinstated <strong>before</strong> ordering a repair.</p>
+
+
+  <h3>Existing Tenant</h3>
+
+    <p>As part of the annual gas service, if we arrive and the tenant has no gas on the meter, 
+    we cap off the supply. We then wait for the tenant to contact us and arrange an "uncap and 
+    service".</p>
+    <p>If the tenant makes contact within two weeks of the original cap off, then this can be 
+    put through to <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Documents/Emails/Roof%20Enquiry.msg?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=258&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Gas Team</a> direct on <a href="mailto:steve.pitts1@sheffield.gov.uk">GasSheffield@sheffield.gov.uk</a>.</p>
+    <p>If job and it is more than two weeks, then these need to be put through to 
+    <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">HM&E Gas</a> 
+    to order a new job, and book the appointment.</p>
+    <p>There are occasions where a tenant may have a <strong>gas meter changed</strong>. When 
+    the meter is changed, the supplier generally asks the tenant for a copy of the most 
+    up-to-date service certificate.</p>
+    <p>If they cannot provide this, then the supplier will cap them off. In cases like this, 
+    you just need to raise a repair, on an <strong>URGENT</strong>, to "Reconnect and safety 
+    check after meter change", using the "No heat / hot water code".</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const gateorFence  = new ContentR(
+    "gateorFence",
+    "Gate or Fence",
+    "",
+    `
+  <h3>Category Fault</h3>
+
+    <p>Gates and Fences</p>
+
+  <h3>Contract</h3>
+
+    <p>Responsive</p>
+
+  <h3>Codes</h3>
+
+    <p>N/A</p>
+
+  <h3>Warranty</h3>
+
+    <p>N/A</p>
+
+  <h3>Key questions and information</h3>
+
+    <p>Is the repair a communal repair? If not, these repairs are generally not our 
+    responsibility. However, if there is a Health & Safety issue, we will do the repair/ make 
+    safe. If not sure speak with a team leader or senior.</p>
+    <p>If there is a pop-up i.e. for Gas No Access: HF, NA or CI code, No Repair: NR code, 
+    or ALMO, continue to order a repair (if applicable) then immediately contact the 
+    <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">RPIT Gas Team</a>.</p>
+
+  <h3>Recharge</h3>
+    <p>N/A</p>
+
+  <h3>Outcome</h3>
+    <p>Order <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Lists/Communal%20Repair/AllItems.aspx">Communal Repairs</a> (if communal repair or if it's a health and safety issue)</p>
+    
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const glazingincludingfailedDoubleGlazedUnits = new ContentR(
+    "glazingincludingfailedDoubleGlazedUnits",
+    "Glazing Including Failed Double Glazed Units",
+    "",
+    `
+  <h3>Category Fault</h3>
+
+    <p>Glazing Repairs Including Failed Double-Glazed Units</p>
+
+  <h3>Warranty</h3>
+
+    <p>Identified from the T-Mobile system. If repair is identified as within a warranty period, 
+    invoke the warranty repair process.</p>
+
+  <h3>Key questions and information</h3>
+
+    <p>If there is a <strong>Police Crime Reference Number</strong>, Order Remedy Repair.</p>
+    <p>If the glass in the window/door has gone through completely, put a board-up on straight 
+    away for H&S. If only a crack or chip, tenant needs to get a crime reference number 
+    1st before we put any job on.</p>
+    <p>If the customer has a Crime Reference Number, you must also order a follow up re-glazing 
+    job and appoint it accordingly.</p>
+    <p>Please note it is not the responsibility of the joiner carrying out the board up to do it.</p>
+    <p>If there is no Crime reference Number advise tenant that it would be a recharge.</p>
+    <p>When ordering <strong>all</strong> double-glazing repairs, the tenant must be informed 
+    that the first appointment will be to measure the unit only - it is not to carry out the 
+    repair.</p>
+    <p>As all double-glazed units are individually sized, they will need to be manufactured 
+    hence the first visit is purely to measure the window.</p>
+    <p>If there is a pop-up i.e., for Gas No Access: <strong>HF</strong>, <strong>NA</strong> 
+    or <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, 
+    continue to order a repair (if applicable) then immediately contact the 
+    <strong>RPIT Gas Team</strong>.</p>
+
+  <h3>Recharge</h3>
+    <p>If the tenant admits breaking glass, an order should only be placed if the tenant agrees 
+    to be recharged. (Unless gone through both panes and is a security issue) then raise a job 
+    for board up only.</p>
+
+  <h3>Outcome</h3>
+    <p>If caused by tenant (<strong>no Police Crime Reference Number</strong>) advise tenant, 
+    it will be a recharge and order job accordingly.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const gutteringandRainwaterPipes  = new ContentR(
+    "gutteringandRainwaterPipes",
+    "Guttering and Rainwater Pipes",
+    "",
+    `
+  <h3>Category Fault</h3>
+
+    <p>Guttering and Rainwater Pipe Repairs</p>
+
+  <h3>Warranty</h3>
+
+    <p>Identified from the T-Mobile system. If repair is identified as within a warranty period, 
+    invoke the warranty repair process.</p>
+
+  <h3>Key questions and information</h3>
+
+    <p>You need to identify the type of material i.e., Plastic, Timber, or Metal.</p>
+    <p>If there is a pop-up i.e. for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
+    <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, 
+    continue to order a repair (if applicable) then immediately contact the 
+    <strong>RPIT Gas Team</strong>.</p>
+
+    <h3>Appointments</h3>
+
+    <p>Ensure when ordering repairs to gutters that you always enter WAH, not PB. This will 
+    ensure that the correct WAH diary comes up.</p>
+
+    <h3>Recharge</h3>
+
+    <p>N/A</p>
+
+    <h3>Outcome</h3>
+
+    <p>Order Remedy Repair and remember to start with Storm Damage if caused by strong winds.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const handyperson  = new ContentR(
+    "handyperson",
+    "Handyperson",
+    "",
+    `
+    <p>The handyperson scheme is available for vulnerable Council tenants to do certain smaller
+    jobs in the home.</p>
+
+  <h3>Criteria of the work</h3>
+
+    <p>Work could be carried out by an able-bodied person and doesn't require any specialist 
+    equipment or training.</p>
+
+    <h3>Definition of service users</h3>
+
+    <h4>Individual tenant</h4>
+    <ul>
+        <li>In and around the tenant's home</li>
+        <li>Specific criteria: over 60; or those with a disability or severe health problem; 
+        or showing an H or E code.</li>
+    </ul>
+
+    <h4>Community Work</h4>
+    <ul>
+        <li>In either communal area around council owned properties or land</li>
+        <li>Ordered by an officer.</li>
+        <li>Work that fits the scope and intention of the service</li>
+    </ul>
+
+    <h3>Clarification points for types of work</h3>
+
+    <h4>Electrical Work</h4>
+    <p>No HM&E work to be carried out by Handyperson service, including electrical light 
+    fittings.</p>
+
+
+    <h4>Specialist equipment or chemicals</h4>
+    <p>Handyperson cannot use any heavy-duty equipment or chemicals that require specialist 
+    training, i.e., graffiti removal or tenants own garden equipment.</p>
+
+    <h4>Ordering Materials</h4>
+    <p>Handyperson does not have the facility to order materials, i.e., fence panels, etc. 
+    these need to be provided by the tenant or by the officer ordering the job should already 
+    have these available.</p>
+
+    <h3>Type of work carried out</h3>
+
+    <h4>Odd jobs</h4>
+    <ul>
+        <li>Hang mirror / pictures</li>
+        <li>Put up / take down shelves</li>
+        <li>Put up a cabinet</li>
+        <li>Put up / take down curtains</li>
+        <li>Fit curtain / shower rails / Blind</li>
+    </ul>
+
+    <h4>Decoration</h4>
+    <ul>
+        <li>Painting a small area (after leak or plastering)</li>
+        <li>Fit reflective foil behind a radiator</li>
+        <li>Grout small area of tiles</li>
+        <li>Apply small area of sealant</li>
+    </ul>
+
+    <h4>Furniture</h4>
+    <ul>
+        <li>Erect flat pack furniture including garden furniture (only small items such as 
+        bookcases or units measuring approx. 1 meter x 1 meter or smaller).</li>
+        <li>Move furniture around the home.</li>
+        <li>Repair broken furniture</li>
+    </ul>
+
+    <h4>Bathroom or Kitchen accessories</h4>
+    <ul>
+        <li>Replace the toilet seat with a new one purchased by the tenant</li>
+        <li>Fix plug to sink.</li>
+        <li>Fit soap dispenser</li>
+        <li>Fit new 2D bulbs in bathroom*</li>
+        <li>Fit splash back to cooker</li>
+        <li>Fit new battery in oven.</li>
+        <li>Connect / disconnect dishwasher / washer machine.</li>
+        <li>Secure appliance.</li>
+        <li>Replace fridge seal.</li>
+        <li>Replace fuse to appliance</li>
+        <li>Adjust worktop to fit appliance: Refer to permissions procedure, RPIT</li>
+    </ul>
+    <p>*Replacing kitchen / bathroom light, the tenant to provide light bulb, Handyperson can 
+    advise which bulb to purchase and will also fit the bulb.</p>
+
+    <h4>Lighting or cables</h4>
+    <ul>
+        <li>Replace light bulbs (but will not supply bulbs)</li>
+        <li>Fit light shades.</li>
+        <li>Fit external solar security lights.</li>
+        <li>Fit / Secure extension cables.</li>
+        <li>Fit cable ties</li>
+        <li>Secure trailing wires</li>
+        <li>Fit screw covers</li>
+    </ul>
+
+    <h4>Flooring or carpet</h4>
+    <ul>
+        <li>Adjust door after new carpets fitted.</li>
+        <li>Fix / Secure threshold</li>
+        <li>Secure carpet</li>
+        <li>Fit small area of flooring / carpet tiles</li>
+    </ul>
+
+    <h4>Door, window or lock</h4>
+    <ul>
+        <li>Fix / fit door chain</li>
+        <li>Fix / replace door handles.</li>
+        <li>Fit / replace doorbell.</li>
+        <li>Fit digi door locks*</li>
+        <li>Fit dead lock*</li>
+        <li>Fit key safe / letterbox / milk box</li>
+        <li>Fit bin locks</li>
+        <li>Fit external cigarette box.</li>
+        <li>Fit cat flap</li>
+        <li>Fit window lock</li>
+        <li>Clean the downstairs outside window.</li>
+        <li>Apply frost film</li>
+    </ul>
+
+    <h4>Fence, shed or gate</h4>
+    <ul>
+        <li>Fix or repair fence panel</li>
+        <li>Fix or repair gate</li>
+        <li>Board shed window.</li>
+        <li>Fit shed alarm.</li>
+        <li>Fit lock to shed.</li>
+    </ul>
+
+    <h4>Outside or garden</h4>
+    <ul>
+        <li>Put up washing line / hook.</li>
+        <li>Fit hose pipe to wall</li>
+        <li>Put up hanging basket.</li>
+        <li>Move or fill plant pots.</li>
+        <li>Tidy part of garden / remove leaves.</li>
+        <li>Trim hedge to clear access</li>
+        <li>Fit / remove / secure sign to wall.</li>
+        <li>Fit Recycle bin posts: Refer to Estates and Environmental Services Team</li>
+        <li>Fit Posts: Not covered by the Handyperson Service as this requires a 'permit to dig'
+        and the handypersons are not trained to carry out this.</li>
+        <li>Gardening work: Handyperson cannot use any of the tenant's electrical equipment as 
+        this will not have been PAT tested.</li>
+    </ul>
+
+    <h4>Grab rail</h4>
+    <ul>
+        <li>Fit / remove grab rail.</li>
+    </ul>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const internalDoor  = new ContentR(
+    "internalDoor",
+    "Internal Door",
+    "",
+    `
+  <h3>Category Fault</h3>
+
+    <p>Internal Door Repairs</p>
+
+    <h3>Warranty</h3>#
+
+    <p>Identified from the Ohms system. If repair is identified as within a warranty period, 
+    invoke the warranty repair process.</p>
+
+    <h3>Key questions and information</h3>
+
+    <p>Generally, need to be skeptical when interviewing tenants reporting repair - potential 
+    tenant recharge issue.</p>
+
+    <h3>Recharge</h3>
+
+    <p>Potential recharge</p>
+
+    <h3>Outcome</h3>
+
+    <ul>
+        <li>If recharge advise tenant</li>
+        <li>If ordering 3 doors or less - Order Remedy Repair</li>
+        <li>If ordering more than 3 doors -- log more than 1 job on T-Mobile.</li>
+    </ul>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const kitchenUnit  = new ContentR(
+    "kitchenUnit",
+    "Kitchen Unit",
+    "",
+    `
+  <h3>Category Fault</h3>
+
+    <p>Kitchen Unit Repairs</p>
+
+  <h3>Warranty</h3>
+
+    <p>Identified from the T-Mobile system. If repair is identified as within a warranty period,
+    invoke the warranty repair process.</p>
+
+  <h3>Key questions and information</h3>
+
+    <p>There may also be a tenant Recharge issue if units have been damaged by tenants.</p>
+    <p>If there is a pop-up i.e. for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
+    <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, 
+    continue to order a repair (if applicable) then immediately contact the 
+    <strong>RPIT Gas Team</strong>.</p>
+    <p>Please note that any customer enquiries concerning outstanding Decent Homes (Investment) 
+    work, or work to 'upgrade' kitchens should be directed to the 
+    <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=277&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Asset Management Team</a>.</p>
+
+  <h3>Recharge</h3>
+
+    <p>Possible recharge</p>
+
+  <h3>Outcome</h3>
+
+    <p>If Repair to unit - Order Remedy Repair</p>
+    <p>If Recharge -- I.E damaged by tenant, please advise tenant and log recharge job 
+    accordingly.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const liftorHoist  = new ContentR(
+    "liftorHoist",
+    "Lift or Hoist",
+    "",
+    `
+      <ul>
+        <li>Log a job on T-Mobile</li>
+        <li>Back out of job green arrow</li>
+        <li>Phone through to lift section on 0114 2734410 to make aware.</li>
+        <li>If passenger lift adds location of lift and any further information.</li>
+    </ul>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  
+const lostKeyorFob  = new ContentR(
+    "lostKeyorFob",
+    "Lost Key or Fob",
+    "",
+    `
+  <h3>Category Fault</h3>
+    <p>Lost keys</p>
+
+  <h3>Codes</h3>
+    <p>N/A</p>
+
+  <h3>Key questions and information</h3>
+    <p>Check if the customer is elderly or vulnerable</p>
+
+  <h3>Recharge</h3>
+    <p>Yes</p>
+
+  <h3>Outcome</h3>
+    <p>Log recharge job on T-Mobile</p>
+
+  <h3>Lost Fob</h3>
+    <p>If the tenant calls and has lost the fob (communal door) please refer to the local area housing office.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+
+  const newBuildPropertyDefectorEmergencyCallOut  = new ContentR(
+    "newBuildPropertyDefectorEmergencyCallOut",
+    "New Build Property Defect or Emergency Call Out",
+    "",
+    `
+    <h3>Property Repairs</h3>
+
+    <p>If a tenant calls to report a repair to new build property's, provide them with the contact details 
+    of Equans:</p>
+    <p>Telephone: 0800 019 0919 or 01709 766017</p>
+    <p>Opening hours: Monday to Friday 8:30am to 4pm</p>
+    <p>Email: <a href="mailto:yhm.customercare.uk-kmr@equans.com">yhm.customercare.uk-kmr@equans.com</a></p>
+    <p>For emergency OOH repairs including bank holidays, please call 0800 019 0919 or 01709 766017. 
+    No emails will be monitored OOH, so any emergency repairs will need to be called through.</p>
+
+    <h3>Escalation using T-Mobile</h3>
+
+    <p>There are 2 <strong>categories</strong> of notes:</p>
+
+    <ul>
+        <li>Chase Calls</li>
+        <li>Important Must-Read Notes (you need someone to read them and act on them)</li>
+    </ul>
+
+    <p>Note: normal/general notes -- not important can be added normally without picking a category, 
+    the notes will stay on the job as normal.</p>
+
+    <h3>Business Continuity</h3>
+
+    <p><a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">OHMS Business Continuity Plan Form</a> 
+    <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">Logging an emergency 
+    job when OHMS is down</a>.</p>
+    <p>Systems are down -- T-Mobile -- apologise and request the tenant to call back.</p>
+    <p>A Storm message will be played forewarning new callers.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const paintingCommunalArea  = new ContentR(
+    "paintingCommunalArea",
+    "Painting Communal Area",
+    "",
+    `
+  <h3>Painting Communal Area Service</h3>
+
+    <ul>
+        <li>An hour's work of minor painting i.e., small areas or tidy up work, in either communal areas 
+        or around council owned properties or land.</li>
+        <li>The work should fit within the scope and intention of the Handyperson Painting service.</li>
+        <li>The work is ordered by a housing officer, warden or caretaker.</li>
+    </ul>
+
+  <h3>Type of Painting Work</h3>
+
+    <ul>
+        <li>Internal Communal Areas including bin chutes and bin stores</li>
+        <li>Small areas of painting including tidy up work.</li>
+    </ul>
+
+  <h3>Community Centres</h3>
+
+    <ul>
+        <li>Small areas of painting including tidy up work</li>
+    </ul>
+
+  <h3>Graffiti</h3>
+
+    <ul>
+        <li>Painting over removed graffiti or non-offensive graffiti.</li>
+    </ul>
+    <p>Offensive Graffiti is removed by the Estates Team but may require painting over the area after blast 
+    washing.</p>
+
+  <h3>Communal Handrails</h3>
+
+    <ul>
+        <li>Painting communal handrails and tidying up.</li>
+    </ul>
+    <p>Handrails on footpaths are a repair job and this work is carried out under the Painting Programme.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const pitchedRoof  = new ContentR(
+    "pitchedRoof",
+    "Pitched Roof",
+    "",
+    `
+  <h3>Category Fault</h3>
+
+    <p>Pitched Roofing Repairs</p>
+
+  <h3>Codes</h3>
+
+    <ul>
+        <li>Repairs to Pitched Roof</li>
+        <li>Remedy leaking Pitched Roof to Dwelling (leaking into property)</li>
+    </ul>
+
+  <h3>Warranty</h3>
+
+    <p>Identified from the T-Mobile. If repair is identified as within a warranty period, invoke the warranty 
+    repair process.</p>
+
+  <h3>Key questions and information</h3>
+
+    <p>If there is a pop-up i.e. for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
+    <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, continue to 
+    order a repair (if applicable) then immediately contact the 
+    <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">RPIT Gas Team</a>.</p>
+    <p>If the property has a <strong>RO</strong> (Roof Ordered) code, you should decide if the enquiry is 
+    in relation to the ongoing Reroofing Programme or if it is a genuine repair requiring a repair to be 
+    ordered.</p>
+    <p>If the enquiry is in relation to the Re-roofing Programme, transfer to 
+    <strong>Asset Management</strong> or email <a href="mailto:AMT-GeneralEnq@sheffield.gov.uk">AMT-GeneralEnq@sheffield.gov.uk</a>.</p>
+
+  <h3>Recharge</h3>
+
+    <p>N/A</p>
+
+  <h3>Outcomes</h3>
+
+    <p>Log a job on T-Mobile *Remember to put in order comments <strong>Storm Damage</strong> if required.</p>
+    <p>If leaking into property, order as <strong>Urgent Leak</strong></p>
+
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const plastering  = new ContentR(
+    "plastering",
+    "Plastering",
+    "",
+    `
+  <h3>Category Fault</h3>
+
+    <p>Plastering Repairs</p>
+
+  <h3>Warranty</h3>
+
+    <p>Identified from the T-Mobile system. If repair is identified as within a warranty period, invoke the 
+    warranty repair process.</p>
+
+  <h3>Key questions and information</h3>
+
+    <p>If there is a pop-up i.e. for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
+    <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, continue to 
+    order a repair (if applicable) then immediately contact the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">RPIT Gas Team</a>.</p>
+    <p><strong>Sealant jobs around a bath</strong> are done by Plasterers (not plumbers)</p>
+
+  <h3>Recharge</h3>
+
+    <p>N/A</p>
+
+  <h3>Outcome</h3>
+
+    <p>Log job on T-Mobile</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const plumbingandDomesticHotorColdWater  = new ContentR(
+    "plumbingandDomesticHotorColdWater",
+    "Plumbing and Domestic Hot or Cold Water",
+    "",
+    `
+  <h3>Category Fault</h3>
+
+    <p>Plumbing Repairs - Domestic Hot / Cold Water Services</p>
+
+  <h3>Warranty</h3>
+
+    <p>Identified from the T-Mobile system. If repair is identified as within a warranty period, invoke the 
+    warranty repair process.</p>
+
+  <h3>Key questions and information</h3>
+
+    <p>Check if the repair is regarding no water flowing out of the taps, or whether there is water flowing, ,
+    and it is cold. If it's around no hot water then this should be a <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">domestic heating repair</a>.</p>
+    <p>External bursts should be ordered as an appointable job.</p>
+    <p>If there is a pop-up i.e. for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
+    <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, continue to order
+    a repair (if applicable) then immediately contact the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">RPIT Gas Team</a>.</p>
+    <p><strong>Sealant jobs around a bath</strong> are done by Plasterers (not plumbers)</p>
+
+  <h3>Recharge</h3>
+
+    <p>N/A</p>
+
+  <h3>Outcome</h3>
+
+    <p>Log a job on T-Mobile.</p>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const refuseChute  = new ContentR(
+    "refuseChute",
+    "Refuse Chute",
+    "",
+    `
+  <h3>Category Fault</h3>
+
+    <p>Refuse Chute Repairs</p>
+
+    <ul>
+        <li>Bin Chute -- Stuck OPEN -- FIRE HAZARD will go to the Fire Stopping Team</li>
+        <li>Bin Store/chute will go to the Responsive Repair Team (joiner)</li>
+    </ul>
+
+  <h3>Warranty</h3>
+
+    <p>Identified from the T-Mobile system. If repair is identified as within a warranty period, invoke the warranty repair process.</p>
+
+  <h3>Key questions and information</h3>
+
+    <p>N/A</p>
+
+  <h3>Recharge</h3>
+
+    <p>N/A</p>
+
+  <h3>Outcome</h3>
+
+    <p>For blocked refuse chutes, contact the <a href="mailto:ElectricalSheffield@Sheffield.go.uk?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=83&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Council Housing Service Call Centre</a></p>
+
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
+  const reroofingProgrammeWarranty  = new ContentR(
+    "reroofingProgrammeWarranty",
+    "Re-roofing Programme Warranty",
+    "",
+    `
+    <p>If a repair is needed and the re-roofing work is <strong>under warranty</strong> (within 6 months), 
+    please email the details to the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">Asset Management Team</a>.</p>
+    <p>If a repair is needed and the re-roofing work is <strong>not under warranty</strong> (12 months), 
+    the repair should be dealt with as a new repair.</p>
+    <p>If a customer is <strong>unhappy with the quality of work</strong>, the workers, or the programme 
+    in general, please email the details to the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">Asset Management Team</a>.</p>
+    <p>If a customer is <strong>reporting an emergency on site</strong>, the relevant contractor should be
+    notified. There is a <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk">spreadsheet</a> that lists 
+    all addresses that are to be included in the Re-roofing Programme along with the emergency contact numbers.</p>
+    <p>In OHMS, the Re-roofing work is indicated by the <strong>RW</strong> code. The Property Notes will show 
+    the warranty dates and numbers to contact.</p>
+
+    IMAGE
+
+    <p>Over the next 5 years from 2025 to 2030, the Asset Management Team will manage a citywide re-roofing 
+    programme.</p>
+
+    <p>Three Types of Letters Sent to Council Tenants and Owner Occupiers</p>
+
+    <ul>
+        <li>
+            <h4>In Programme Letter</h4>
+            <p>Sent to council properties that will have roofing work done.</p>
+        </li>
+        <li>
+            <h4>Party Wall Notice</h4>
+            <p>Sent to owner occupiers or freehold properties that are adjoined to council properties. 
+            This notice includes an acknowledgement (returnable) letter that owner occupiers or freeholders 
+            must send back to the council.</p>
+        </li>
+        <li>
+            <h4>Access Letter</h4>
+            <p>Sent to council tenants or owner occupiers/freehold properties if the council is having access 
+            issues regarding roofing work.</p>
+        </li>
+    </ul>
+
+    <p>Customers also receive another letter from the contractor prior to work starting at their property or 
+    block.</p>
+    <p>The proposed works could include but are not limited to any of the following:</p>
+
+    <ul>
+        <li>Replacing the existing flat roof covering</li>
+        <li>Insulating the existing roof</li>
+        <li>Where required, installing fire stopping over the party wall</li>
+        <li>Installing a secret gutter between your roof and the roof covering of an owner occupier</li>
+        <li>New flashings, etc.</li>
+        <li>Possible repairs to the shared service stacks or flues</li>
+        <li>New soffits and fascia’s</li>
+        <li>New rainwater goods</li>
+        <li>Structural works where identified</li>
+        <li>Removal of identified asbestos</li>
+    </ul>
+
+    `
+    ,
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
+    {
+      type: "",
+      keywords: [],
+      categories: [],
+    },
+    { date: "05/03/2025", name: "Shahzad Athar" }
+  );
+
 
   // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
   // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -632,7 +2119,14 @@ class CoreR {
       [
         adaptation, blacksmith, brickwork, chimneyStack, claimforDamage, 
         clothesPost, communalArea, concrete, dampandMould, districtHeatingSwitch2Setup, 
-        doorFurniture, drainage, electricalandHeating, electricalTesting, externalContractors, 
+        doorFurniture, drainage, disrepair, electricalandHeating, electricalTesting, externalContractors,
+        externalDoorLock, externalDoor, flatRoof, floororStaircase, footpathandSteps, fireJobs,
+        garageorDetachedOutbuilding, gasandDomesticSystems, gasReinstateandUncapServicesorAppointments,
+        gateorFence, glazingincludingfailedDoubleGlazedUnits, gutteringandRainwaterPipes, handyperson, 
+        internalDoor, kitchenUnit, liftorHoist, lostKeyorFob, newBuildPropertyDefectorEmergencyCallOut,
+        paintingCommunalArea, pitchedRoof, plastering, plumbingandDomesticHotorColdWater, refuseChute,
+        reroofingProgrammeWarranty,  
+
 
       
       ]
