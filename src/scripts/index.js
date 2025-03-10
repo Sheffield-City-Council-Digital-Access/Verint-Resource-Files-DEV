@@ -1166,7 +1166,7 @@ function handleOnReadyEvent(_, kdf) {
     });
 
     if (isComplete) {
-      return true;
+      return isComplete;
     }
 
     const modal = document.createElement("dialog");
@@ -1226,6 +1226,8 @@ function handleOnReadyEvent(_, kdf) {
         modal.close();
         modal.remove();
       });
+
+    return isComplete;
   }
 
   $(".close-case-btn").on("click", () => {
