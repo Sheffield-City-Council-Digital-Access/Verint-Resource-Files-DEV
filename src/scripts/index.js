@@ -1118,35 +1118,6 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE CLOSE CASE CLICK ------------------------------------------- \\
 
-  $(".close-case-btn").on("click", () => {
-    if (checkIsFormComplete(fieldsToCheckBeforeClose)) {
-      KDF.markComplete();
-      KDF.gotoPage("complete", false, false, false);
-    } else {
-      KDF.showError("Please ensure all fields have been completed.");
-    }
-  });
-
-  // --- OHMS -------------------------------------------------------------- \\
-
-  if (kdf.params.customerid) {
-    KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
-      customerid: kdf.params.customerid,
-    });
-  }
-
-  $("#dform_widget_button_but_view_rent_account").on("click", function () {
-    const customerid =
-      kdf.params.customerid ?? KDF.getVal("num_reporter_obj_id");
-    if (customerid) {
-      createModal("hubScreenRentSummary", "hub_rent_summary", customerid);
-    } else {
-      KDF.showWarning("A customer has not been set.");
-    }
-  });
-
-  // --- CASE REVIEW MODAL ------------------------------------------------- \\
-
   function createReviewSection(pageId, pageTitle, fields) {
     let statusCardHtml = `
         <div class="review-section">
@@ -1265,6 +1236,33 @@ function handleOnReadyEvent(_, kdf) {
 
     return isComplete;
   }
+
+  $(".close-case-btn").on("click", () => {
+    if (checkIsFormComplete(fieldsToCheckBeforeClose)) {
+      KDF.markComplete();
+      KDF.gotoPage("complete", false, false, false);
+    } else {
+      KDF.showError("Please ensure all fields have been completed.");
+    }
+  });
+
+  // --- OHMS -------------------------------------------------------------- \\
+
+  if (kdf.params.customerid) {
+    KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
+      customerid: kdf.params.customerid,
+    });
+  }
+
+  $("#dform_widget_button_but_view_rent_account").on("click", function () {
+    const customerid =
+      kdf.params.customerid ?? KDF.getVal("num_reporter_obj_id");
+    if (customerid) {
+      createModal("hubScreenRentSummary", "hub_rent_summary", customerid);
+    } else {
+      KDF.showWarning("A customer has not been set.");
+    }
+  });
 }
 
 // --- HANDLE ON PAGE CHANGE EVENT ----------------------------------------- \\
