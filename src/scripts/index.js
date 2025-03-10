@@ -1124,7 +1124,7 @@ function handleOnReadyEvent(_, kdf) {
             <div class="review-content">
                 <div class="review-content-header">
                     <h3>${pageTitle}</h3>
-                    <button class="go-to-page-btn" id="go-to-${pageId}">Edit</button>
+                    <button type="button" class="go-to-page-btn" id="go-to-${pageId}">Edit</button>
                 </div>
                 ${fields
                   .map(
