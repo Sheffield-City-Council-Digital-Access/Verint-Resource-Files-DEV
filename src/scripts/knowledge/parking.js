@@ -905,7 +905,7 @@ const businessPermit = new ContentP(
  <div class="accordion-content">
   <p>
       Permits are issued for one year. It is your responsibility to ensure your permit is renewed. 
-        We do not issue replacement pool permits; if you lose them, you will need to apply again. 
+      We do not issue replacement pool permits; if you lose them, you will need to apply again. 
   </p>
       </div>
 </details>
@@ -958,7 +958,8 @@ const businessPermit = new ContentP(
                 <li>Ashgate Road</li>
                 <li>Whitham Road</li>
                 <li>Spooner Road (from Crookes Road to car park ramp) </li>
-            </ul> </div>
+            </ul>        
+    </div>
 </details>
 
 <details class="accordion">
@@ -979,7 +980,7 @@ const businessPermit = new ContentP(
 </ul>
 <h4>Proof of Address</h4>
 <p>
-	We will check our Council Tax or electoral records or we will ask you to provide an electronic copy of one of the following items that show your name and address:
+	  We will check our Council Tax or electoral records or we will ask you to provide an electronic copy of one of the following items that show your name and address:
  </p>
 <ul>
 	<li>Most recent utility bill</li>
@@ -1151,7 +1152,8 @@ const residentsCarer = new ContentP(
                 <li>Vaughton Hill schemes</li>
                 <li>Developments within parking permit zones that are car-free. 
                     You should check with your landlord, letting agent, or solicitor if your property is car-free.</li>
-            </ul> </div>
+            </ul> 
+    </div>
 </details>
 
 <details class="accordion">
@@ -1165,7 +1167,8 @@ const residentsCarer = new ContentP(
                 Once we have all your supporting evidence, we will respond to your application within 10 working days.
                 If your application requires further investigation, we will contact you within 28 working days.
             </p>
-            <p>Should you lose your permit, replacement permits will not be issued, and you will need to apply for a new permit.</p> </div>
+            <p>Should you lose your permit, replacement permits will not be issued, and you will need to apply for a new permit.</p> 
+    </div>
 </details>
 
 <details class="accordion">
@@ -1177,7 +1180,8 @@ const residentsCarer = new ContentP(
        <p>
                 Your carer can park in any designated on-street parking space in the zone the permit is for.  
                 A permit does not guarantee parking directly at an address.
-            </p> </div>
+            </p> 
+    </div>
 </details>
 
 <details class="accordion">
@@ -2190,25 +2194,6 @@ const tradePermit = new ContentP(
 
 <details class="accordion">
  <summary class="accordion-header">
-   <h3>Exceptions</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-      <p>Trade permits are not valid for use in these parking zones:  </p>
-
-          <ul>
-			<li>city centre </li>
-			<li>Falding Street </li>
-			<li>Hawley Street Car Park </li>
-			<li>Holme Lane </li>
-			<li>Loxley New Road </li>
-      <li>Vaughton Hill </li>
-		</ul>
- </div>
-</details>
-
-<details class="accordion">
- <summary class="accordion-header">
    <h3>Number of permits </h3>
    <div class="accordion-icon"></div>
  </summary>
@@ -2359,20 +2344,6 @@ const utilityPermit = new ContentP(
       <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
 
       </p>
-
-                   <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information and to apply send link to apply online"
-        onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
-            "
-      >
-        Send link to review further information
-      </button>
-
 
                    <button
         type="button"
