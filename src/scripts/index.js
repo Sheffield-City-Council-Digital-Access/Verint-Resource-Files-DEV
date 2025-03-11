@@ -596,18 +596,6 @@ function handleOnReadyEvent(_, kdf) {
 
   storeDefaultValidationMessages();
 
-  // --- HANDLE TOGGLE NI NASS --------------------------------------------- \\
-
-  if (field === "chk_no_national_insurance_number") {
-    const showNass = $("#dform_widget_chk_no_national_insurance_number").is(
-      ":checked"
-    );
-    hideShowMultipleElements([
-      { name: "txt_national_asylum_support", display: showNass },
-      { name: "txt_national_insurance", display: !showNass },
-    ]);
-  }
-
   // --- MAP --------------------------------------------------------------- \\
 
   if (document.getElementById("map_container")) {
@@ -1379,6 +1367,18 @@ function handleOptionSelectedEvent(event, kdf, field, label, val) {
     const textField = mchkField.replace("mchk_", "txt_");
     const stringValue = KDF.getVal(mchkField).toString().replace(/,/gi, ", ");
     KDF.setVal(textField, stringValue);
+  }
+
+  // --- HANDLE TOGGLE NI NASS --------------------------------------------- \\
+
+  if (field === "chk_no_national_insurance_number") {
+    const showNass = $("#dform_widget_chk_no_national_insurance_number").is(
+      ":checked"
+    );
+    hideShowMultipleElements([
+      { name: "txt_national_asylum_support", display: showNass },
+      { name: "txt_national_insurance", display: !showNass },
+    ]);
   }
 
   // --- MAP --------------------------------------------------------------- \\
