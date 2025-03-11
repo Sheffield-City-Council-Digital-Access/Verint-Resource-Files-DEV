@@ -272,7 +272,7 @@ const applyBlueBadge = new ContentP(
         more information will be provided when the application is reviewed.
       </p> 
       <p>
-      <a href="https://www.gov.uk/apply-blue-badge" target="_blank">https://www.gov.uk/apply-blue-badge</a> are
+      <a href="https://www.gov.uk/apply-blue-badge" target="_blank">https://www.gov.uk/apply-blue-badge</a>
       <button type="button" class="dform_widget email-btn dform_widget_type_button"
           aria-label="Send link to apply for a blue badge"
           onclick="
@@ -285,7 +285,7 @@ const applyBlueBadge = new ContentP(
     
   <details class="accordion">
     <summary class="accordion-header">
-    Cost
+    <h3>Cost</h3>
     <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -295,7 +295,7 @@ const applyBlueBadge = new ContentP(
 
   <details class="accordion">
     <summary class="accordion-header">
-     Evidence 
+    <h3>Evidence</h3> 
     <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -310,7 +310,7 @@ const applyBlueBadge = new ContentP(
 
   <details class="accordion">
     <summary class="accordion-header">
-    What’s happening with my application  
+    <h3>What’s happening with my application</h3>
     <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
