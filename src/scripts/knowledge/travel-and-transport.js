@@ -334,25 +334,18 @@ const disabledPersonsTravelPermit = new ContentTaT(
     <p>
       Customers can also request an appeal via email by writing to  <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
     </p>
-
-     <h3>When can I use my Travel Permit3</h3>
-    <p>
-      A disabled persons pass enables free public transport on buses, trams 33333333
-      trains.
-    </p>
-    
     <h3>When can I use my Travel Permit</h3>
     <p>
       A disabled persons pass enables free public transport on buses, trams and
       trains.
     </p>
-    <h3>When can I use my Travel Permit2</h3>
+    <h3>Where can I use my pass</h3>
     <p>
-      A disabled persons pass enables free public transport on buses, trams and22222
-      trains.
+      If the Pass is being used within South Yorkshire the pass can be used at all
+      times of the day.
+      The pass can be used outside of South Yorkshire (within England or Wales)
+      between 9:30am and 11pm weekdays, all day at weekends and on Bank Holidays.
     </p>
-    
-      
     <h3>What do I do with the approval letter</h3>
     <p>
       The purple form needs to be completed with a passport size and style photograph
