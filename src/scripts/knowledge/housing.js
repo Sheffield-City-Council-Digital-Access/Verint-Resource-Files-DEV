@@ -5537,6 +5537,66 @@ const statements = new ContentH(
 
 //universalCredit is in cross regions
 
+const yorkshireWater = new ContentH(
+  "yorkshireWater",
+  "Yorkshire Water",
+  "Find out how to access rent statements, request current or past statements, and understand the process for tenants in arrears.",
+  `
+  <p>
+    If a customer is querying their water charges:<br>
+    These are set by Yorkshire Water, and we collect these charges as part of the rent.  Any complaints about the charges need to be directed to Yorkshire Water – 03451242424 or visit <a href="https://www.yorkshirewater.com/help" target="_blank">https://www.yorkshirewater.com/help</a>.
+  </p>
+  <p>
+    There are various schemes available, including Yorkshire Water Support, where we may be able to reduce the charge depending on household make-up and income.
+    Please direct any queries to the Income Plus Specialist for that property.<br>
+    The income thresholds for support are as follows:
+  </p>
+
+  <table border="1">
+  <thead>
+    <tr>
+      <th>Household Make Up</th>
+      <th>Band 1 – Reduce to £5.40 per week</th>
+      <th>Band 2 – Reduce to £7.08 per week</th>
+      <th>Band 3 – Reduce to £8.18 per week</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Single Adult</td>
+      <td>&lt; £12,000</td>
+      <td>&lt; £15,000</td>
+      <td>&lt; £20,000</td>
+    </tr>
+    <tr>
+      <td>2 + Adults</td>
+      <td>&lt; £15,600</td>
+      <td>&lt; £19,500</td>
+      <td>&lt; £26,000</td>
+    </tr>
+    <tr>
+      <td>1 Dependant</td>
+      <td>&lt; £15,600</td>
+      <td>&lt; £19,500</td>
+      <td>&lt; £26,000</td>
+    </tr>
+    <tr>
+      <td>2 + Dependents</td>
+      <td>&lt; £16,800</td>
+      <td>&lt; £21,000</td>
+      <td>&lt; £28,000</td>
+    </tr>
+  </tbody>
+</table>
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
+  { type: "Yorkshire Water", keywords: ["Rent", "Water", "Yorkshire"], categories: ["Housing"] },
+  { date: "10/03/2025", name: "Nathan Smith" }
+);
+
 const rents = new MenuH(
   "rents",
   "Rents",
@@ -5548,7 +5608,8 @@ const rents = new MenuH(
     references,
     rentVariation,
     statements,
-    universalCredit
+    universalCredit,
+    yorkshireWater
   ]
 );
 
@@ -6117,6 +6178,19 @@ const tenancyEnforcementASB = new ContentH(
 
 //#region Tenancy sustainment
 
+const abandonment = new FormH(
+  "abandonment",
+  "Abandonment",
+  "Report the abandonment of an item, pet or property.",
+  "hou_sustainment_abandon",
+  {
+    type: "Report",
+    keywords: ["Housing", "Abandon", "Pet"],
+    categories: ["Housing"],
+  },
+  { date: "07/03/2025", name: "Nathan Smith" }
+);
+
 const boundaries = new FormH(
   "boundaries",
   "Council housing and private land boundaries",
@@ -6449,11 +6523,11 @@ const permissions = new ContentH(
     </div>
   </details>
   `,
-  { buttonLabel: "Permissions", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
+  { buttonLabel: "Permissions", formName: "hou_sustainment_perm" },
   { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { typeKey: "Tenancy_Sustainment_information_provided" },
   { type: "Permissions", keywords: ["Tenancy"], categories: ["Housing"] },
-  { date: "07/11/2024", name: "Shahzad Athar" }
+  { date: "07/03/2025", name: "Nathan Smith" }
 );
 
 
@@ -6526,6 +6600,18 @@ const tenancyAgreementRequest = new ContentH(
   { date: "08/11/2024", name: "Shahzad Athar" }
 );
 
+const tenancyChange = new FormH(
+  "tenancyChange",
+  "Tenancy Change",
+  "Request for adding, removing or enquiring about occupants, changes to tenancy both sole and joint, reporting a deceased tenant, ending a tenancy, passing on a tenancy or enquiring about tenancy start and end dates.",
+  "hou_sustainment_ten_chan",
+  {
+    type: "Request",
+    keywords: ["Housing", "Tenancy", "Tenant"],
+    categories: ["Housing"],
+  },
+  { date: "07/03/2025", name: "Nathan Smith" }
+);
 
 const tenancyConditions = new ContentH(
   "tenancyConditions",
@@ -6952,6 +7038,7 @@ const tenancySustainment = new MenuH(
   "Tenancy Sustainment",
   "Support for maintaining tenancies, including information on permissions, tenancy agreements, name changes, parking permits, and council housing services.",
   [
+    abandonment,
     boundaries,
     burglarAlarmRequest,
     fencesCouncilHousing,
@@ -6961,6 +7048,7 @@ const tenancySustainment = new MenuH(
     nameChanges,
     permissions,
     tenancyAgreementRequest,
+    tenancyChange,
     tenancyConditions
   ]
 );
