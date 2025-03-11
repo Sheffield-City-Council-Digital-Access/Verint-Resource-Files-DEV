@@ -2493,7 +2493,7 @@ const parkingPermits = new MenuP(
     businessPermit,
     residentsCarer,
     organisationCarer,
-    medicalProfessionalCarer,
+    nhsPractitionerOrCarerParkingPermit,
     greenParkingPermit,
     langsettAndHillsboroughBusAndTramgate,
     residentsPermit,
