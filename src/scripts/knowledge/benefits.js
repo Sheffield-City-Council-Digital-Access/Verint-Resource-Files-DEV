@@ -265,8 +265,22 @@ const energySupport = new ContentB(
     <p>
       More information about the Winter Fuel Payment can be found at: 
       <a href="https://www.gov.uk/winter-fuel-payment" target="_blank">https://www.gov.uk/winter-fuel-payment</a>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Winter%20Fuel%20Payment'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Winter%20Fuel%20Payment\`
+    "
+>
+    Send link to review further information
+</button>
+
+
   </section>
   </div>
   </details>
