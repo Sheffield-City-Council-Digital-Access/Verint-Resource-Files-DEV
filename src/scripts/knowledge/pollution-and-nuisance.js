@@ -3242,25 +3242,18 @@ const cleanAirZone = new MenuPaN(
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
-const animalControl = new MenuPaN(
-  "animalControl",
-  "Animal Control",
-  "Animal control treatments, services and pricing",
-  [handoverDogtoCouncil]
-);
-
 const pollutionAndNuisance = new ServicePaN(
   "pollutionAndNuisance",
   "Pollution and Nuisance",
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone, Enviro, Eps, Env`,
   [
-    abandonedVehicles,
-    animalControl,
+    abandonedVehicles,  
     pestControl,
     reportDangerousDog, 
     reportDogFouling,
     reportStrayingDog,
     reportDogAsLost,
+    handoverDogtoCouncil,
     reportLitter,
     reportGraffiti,
     reportFlyPosting,

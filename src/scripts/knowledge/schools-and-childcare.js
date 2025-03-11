@@ -318,7 +318,7 @@ const freeSchoolMeals = new ContentSaC(
     buttonLabel: "Apply for Free School Meals",
     formName: "apply_school_meals",
   },
-  { typeKey: "" },
+  { typeKey: "free_school_meals_transferred_to_service" },
   { typeKey: "free_school_meals_information_provided" },
   {
     type: "Apply",

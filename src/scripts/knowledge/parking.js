@@ -845,78 +845,165 @@ const businessPermit = new ContentP(
   "Business Permit",
   "Learn about the types, costs, and application process for business permits, including required evidence for vehicle ownership and proof of address.",
   `
-  <h3>When is a business permit required?</h3>		
-    <p>
-      You will need a permit if your business is in a parking permit zone and 
-      you want to use on street parking spaces.
-    </p>
-		<p>There are two types of business permit available:</p>
-		<ul>
-			<li>
-				Vehicle specific - Vehicle specific business permits are now paperless,
-				virtual permits (similar to tax discs).
-			</li>
-			<li>
-				Pool permit - Pool business permits allow staff at a business to share the
-				use of the permit to park near the business.
-			</li>
-		</ul>
-		<p>
-			A physical permit will be issued by post. The permit can only be used in one
-			vehicle at a time. Replacement pool permits will not be issued.
-		</p>
-		<p>
-			You may have up to 2 annual permits per business. Any requests for additional
-			permits will be assessed when the application is received.
-		</p>
-		<p>
-			Business permits are not valid for the city centre, Falding Street, Holme
-			Lane, Loxley New Road, and Vaughton Hill parking zones.
-		</p>
-		<h3>Cost</h3>
-		<ul>
-			<li>The first permit costs £111.80</li>
-			<li>A second permit costs £223.20</li>
-		</ul>
-		<h3>Evidence Required - Vehicle Ownership</h3>
-		<p>
-			You will need to provide us with an electronic copy of one of the following:
-		</p>
-		<ul>
-			<li>Registration document (V5)</li>
-			<li>Vehicle insurance certificate</li>
-			<li>Lease agreement in your name</li>
-			<li>
-				Letter on company headed paper verifying that you work for them with the V5
-				or the vehicle lease document (if you use a company car)
-			</li>
-		</ul>
-		<h3>Evidence Required - Proof of Address</h3>
-		<p>
-			We will check our Council Tax or electoral records or we will ask you to
-			provide an electronic copy of one of the following items that show your name
-			and address:
-		</p>
-		<ul>
-			<li>Most recent utility bill</li>
-			<li>Tenancy agreement (witnessed and signed)</li>
-			<li>Current household contents insurance policy</li>
-			<li>Current vehicle insurance certificate or schedule</li>
-			<li>
-				Bank statement or credit card bill dates or showing transactions from the
-				last 2 months (block out your account details)
-			</li>
-			<li>
-				Payslip, pension slip, benefits notification letter or Inland Revenue notice
-				of bill coding dated within the last 2 months (block out any personal
-				details)
-			</li>
-		</ul>
-		<p>
-			Failure to provide proof of vehicle registration and/or proof of your address
-			will result in cancellation of the permit/s with no refund.
-		</p>
-    <p>
+<h3>Business parking permit</h3>
+
+<p>
+  You will need a permit if your business is in a parking permit zone and 
+  you want to use on-street parking spaces.
+</p>
+
+<p>There are two types of business permits available:</p>
+
+<h4>Single vehicle permit</h4>
+<ul>
+  <li>
+    This is a paperless permit for a specific car that cannot be used in any other vehicle.
+  </li>
+</ul>
+
+<h4>Pool Permit</h4>
+<ul>
+  <li>
+    Pool business permits allow staff at a business to share the use of the permit to park near the business.
+  </li>
+</ul>
+
+<h3>Cost</h3>
+<ul>
+  <li>The first permit costs £111.60</li>
+  <li>A second permit costs £223.20</li>
+</ul>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Exceptions</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+ <p>Business permits are not issued for:</p>
+            <ul>
+                <li>City centre Inner/Outer zones</li>
+                <li>Falding Street</li>
+                <li>Holme Lane</li>
+                <li>Edward Street Flats Car Park</li>
+                <li>Loxley New Road</li>
+                <li>Vaughton Hill</li>
+            </ul>
+             </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Number of permits</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+     <h4>You can have 2 permits per business.</h4>
+            <p>
+                Businesses in Neepsend have the option to apply for additional permits. If you’d like to apply for 
+                additional permits, please log in to your account, select the ‘Business Discretionary’ permit type 
+                and complete your application.
+            </p> 
+        </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>How long a permit lasts</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+  <p>
+      Permits are issued for one year. It is your responsibility to ensure your permit is renewed. 
+      We do not issue replacement pool permits; if you lose them, you will need to apply again. 
+  </p>
+      </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Where you can use the permit</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+  <p>
+      A permit does not entitle you to park directly at your business address, but it allows you to park in 
+      any designated on-street parking space within the zone your permit is for. 
+  </p>
+            <p>
+                You can park your vehicle without time limits in any on-street bay in the parking zone that is signed 
+                for the use of permit holders.
+            </p>
+            <p>
+                Botanical zone permits are also valid for parking in the Sharrow Vale centre, Endcliffe, and Stalker Lees zones.
+            </p>
+            <p>
+                Broomhall and The Groves permit holders can also park in Broomspring Lane car park.
+            </p>
+            <p>
+                Chandos Street, College Street, Beaufort Road, and Severn Road permits are also valid in the Broomhill zone. 
+                However, if you have a Broomhill permit, you cannot park on Beaufort Road, Severn Road, Chandos Street, or College Street.
+            </p>
+            <p>Business permits are not valid for use in any of the permit bays on:</p>
+            <ul>
+                <li>Hickmott Road</li>
+                <li>Rosedale Gardens</li>
+                <li>Sharrow Vale Road (between Junction Road and Lynton Road)</li>
+                <li>Bennett Street</li>
+                <li>Randall Place</li>
+                <li>Harwood Close</li>
+                <li>Thorp Close</li>
+                <li>The residential parking areas off Dover Street, Ellison Street, or Netherthorpe Place</li>
+            </ul>
+            <p>Business permits are not valid for use in any of the shared-use permit bays on these roads:</p>
+            <ul>
+                <li>Fulwood Road</li>
+                <li>Glossop Road</li>
+                <li>Westbourne Road (from Glossop Road to Southbourne Road)</li>
+                <li>Ashdell Road (from Glossop Road to Ashdell)</li>
+                <li>Peel Street</li>
+                <li>Newbould Lane (Whitham Road to Nile Street)</li>
+                <li>2-hour maximum stay bays on Beech Hill Road</li>
+                <li>Watson Road</li>
+                <li>Ashgate Road</li>
+                <li>Whitham Road</li>
+                <li>Spooner Road (from Crookes Road to car park ramp) </li>
+            </ul>        
+    </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Evidence Required</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+<h4> Vehicle Ownership</h4>
+<p>
+	You will need to provide us with an electronic copy of one of the following:
+</p>
+<ul>
+	<li>Registration document (V5)</li>
+	<li>Vehicle insurance certificate</li>
+	<li>Lease agreement in your name</li>
+	<li>Letter on company headed paper verifying that you work for them with the V5 or the vehicle lease document (if you use a company car)</li>
+</ul>
+<h4>Proof of Address</h4>
+<p>
+	  We will check our Council Tax or electoral records or we will ask you to provide an electronic copy of one of the following items that show your name and address:
+ </p>
+<ul>
+	<li>Most recent utility bill</li>
+	<li>Tenancy agreement (witnessed and signed)</li>
+	<li>Current household contents insurance policy</li>
+	<li>Current vehicle insurance certificate or schedule</li>
+	<li>Bank statement or credit card bill dates or showing transactions from the last 2 months (block out your account details)</li>
+	<li>Payslip, pension slip, benefits notification letter or Inland Revenue notice of bill coding dated within the last 2 months (block out any personal details)</li>
+</ul>
+<p>
+	Failure to provide proof of vehicle registration and/or proof of your address will result in cancellation of the permit/s with no refund.
+</p>
+<p>
       When you purchase your parking permit you need to send proof of eligibility 
       to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
       (if you have not been requested to do so in the application process). 
@@ -924,14 +1011,63 @@ const businessPermit = new ContentP(
       of your vehicle registration and your home or business address as part of 
       regular audit checks. If this is requested please submit them to 
       <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
-    </p>
-    <p>
-    For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-    <br>
-     <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Pay%20Penalty%20Charge%20Notice'"> Send Link </button>
+</p>          
+    </div>
+</details>
 
-    </p>
+<h4> Vehicle Ownership</h4>
+<p>
+	You will need to provide us with an electronic copy of one of the following:
+</p>
+<ul>
+	<li>Registration document (V5)</li>
+	<li>Vehicle insurance certificate</li>
+	<li>Lease agreement in your name</li>
+	<li>Letter on company headed paper verifying that you work for them with the V5 or the vehicle lease document (if you use a company car)</li>
+</ul>
+<h4>Proof of Address</h4>
+<p>
+	We will check our Council Tax or electoral records or we will ask you to provide an electronic copy of one of the following items that show your name and address:
+ </p>
+<ul>
+	<li>Most recent utility bill</li>
+	<li>Tenancy agreement (witnessed and signed)</li>
+	<li>Current household contents insurance policy</li>
+	<li>Current vehicle insurance certificate or schedule</li>
+	<li>Bank statement or credit card bill dates or showing transactions from the last 2 months (block out your account details)</li>
+	<li>Payslip, pension slip, benefits notification letter or Inland Revenue notice of bill coding dated within the last 2 months (block out any personal details)</li>
+</ul>
+<p>
+	Failure to provide proof of vehicle registration and/or proof of your address will result in cancellation of the permit/s with no refund.
+</p>
+<p>
+      When you purchase your parking permit you need to send proof of eligibility 
+      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
+      (if you have not been requested to do so in the application process). 
+      At any time after this while you hold a permit we may require you to provide proof 
+      of your vehicle registration and your home or business address as part of 
+      regular audit checks. If this is requested please submit them to 
+      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
+</p>         
+</div>
+</details>
+
+<p>
+	For further information, visit <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+</p>
+
+     <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information and to apply send link to apply online"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+            "
+      >
+        Send link to review further information
+      </button>
 
 
 	`,
@@ -961,7 +1097,7 @@ const businessPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "20/02/2025", name: "Andy Walker" }
+  { date: "05/03/2025", name: "Gee Whitehouse" }
 );
 
 const residentsCarer = new ContentP(
@@ -969,47 +1105,144 @@ const residentsCarer = new ContentP(
   "Resident's Carer",
   "Learn about eligibility, cost, and required evidence for a carer permit, allowing carers to park in permit holder areas while providing home care.",
   `
-		<h3>About the Permit</h3>
-		<p>
-			If you need essential care at home provided by a carer or carers, you may be
-			eligible for a resident’s carer permit. It entitles the vehicle to park
-			without time limit in a 'permit holders only' bay while the driver provides
-			care for the permit holder in their home.
-		</p>
-		<p>
-			They are not available for residents of the inner or outer city centre or
-			Holme Lane, Loxley New Road and Vaughton Hill schemes.
-		</p>
-		<p>Permits will normally be limited to one per household.</p>
-		<p>Replacement pool permits will not be issued.</p>
-		<h3>Cost</h3>
-		<p>A 12 month permit is £10.00.</p>
-		<h3>Evidence Required</h3>
-		<ul>
-			<li>Carer's Allowance statement for the person who helps look after you</li>
-			<li>Higher rate of Disability Living Allowance for personal care</li>
-			<li>Enhanced rate of Personal Independence Payment</li>
-			<li>Constant Attendance Allowance</li>
-			<li>
-				A letter from your doctor (GP) or healthcare specialist confirming that you
-				need care at home (dated within the last 3 months)
-			</li>
-		</ul>
-      <p>
-        When you purchase your parking permit you need to send proof of eligibility 
-        to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
-        (if you have not been requested to do so in the application process). 
-        At any time after this while you hold a permit we may require you to provide proof 
-        of your vehicle registration and your home or business address as part of 
-        regular audit checks. If this is requested please submit them to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
-      </p>
-      <p>
-      For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">ttps://www.sheffield.gov.uk/parking</a>.
-      <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
 
-      </p>
+  <section class="info-panel" role="region" aria-label="Information panel">
+    <p>
+        There is a system issue that will prevent the renewal of paper resident's carer parking permits. 
+        You will need to allow your permit to expire, then as early as possible within the 14-day grace period, 
+        buy a new permit. We apologise for the inconvenience.
+    </p>
+</section>
+
+<h3>Resident's carer parking permit</h3>
+
+<p>
+    If your essential care at home is provided by a carer or carers, you may be eligible for a resident’s carer permit. 
+    You can apply for a paper permit which they will need to display when they visit you.  
+    It allows your carer to use on-street parking bays in your parking permit zones, without a time limit, 
+    while they provide you with care.
+</p>
+
+<p>This permit can only be used by your carer or carers.</p>
+
+<h4>Cost</h4>
+<p>This permit is free.</p>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Exceptions</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+<p>These permits are not available for:</p>
+            <ul>
+                <li>City centre</li>
+                <li>Hawley Street Car Park</li>
+                <li>Holme Lane</li>
+                <li>Loxley New Road</li>
+                <li>Vaughton Hill schemes</li>
+                <li>Developments within parking permit zones that are car-free. 
+                    You should check with your landlord, letting agent, or solicitor if your property is car-free.</li>
+            </ul> 
+            </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Number of permits</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+<p>These permits are not available for:</p>
+            <ul>
+                <li>City centre</li>
+                <li>Hawley Street Car Park</li>
+                <li>Holme Lane</li>
+                <li>Loxley New Road</li>
+                <li>Vaughton Hill schemes</li>
+                <li>Developments within parking permit zones that are car-free. 
+                    You should check with your landlord, letting agent, or solicitor if your property is car-free.</li>
+            </ul> 
+    </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>How long a permit lasts</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+<p>
+                Permits are issued for one year. It is your responsibility to ensure your permit is renewed. 
+                Once we have all your supporting evidence, we will respond to your application within 10 working days.
+                If your application requires further investigation, we will contact you within 28 working days.
+            </p>
+            <p>Should you lose your permit, replacement permits will not be issued, and you will need to apply for a new permit.</p> 
+    </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Where your carer can use the permit</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+       <p>
+                Your carer can park in any designated on-street parking space in the zone the permit is for.  
+                A permit does not guarantee parking directly at an address.
+            </p> 
+    </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Evidence Required</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+ <ul>
+                <li>Carer's Allowance statement for the person who helps look after you</li>
+                <li>Higher rate of Disability Living Allowance for personal care</li>
+                <li>Enhanced rate of Personal Independence Payment</li>
+                <li>Constant Attendance Allowance</li>
+                <li>
+                    A letter from your doctor (GP) or healthcare specialist confirming that you 
+                    need care at home (dated within the last 3 months)
+                </li>
+            </ul>
+            <p>
+                When you purchase your parking permit, you need to send proof of eligibility 
+                to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
+                (if you have not been requested to do so in the application process).  
+                At any time after this, while you hold a permit, we may require you to provide proof 
+                of your vehicle registration and your home or business address as part of 
+                regular audit checks. If this is requested, please submit them to  
+                <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>.
+            </p> 
+            </div>
+</details>
+
+<p>
+    For further information, visit  
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">
+        https://www.sheffield.gov.uk/parking
+    </a>.
+</p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information and to apply send link to apply online"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+    "
+>
+    Send link to review further information
+</button>
+
+     
   `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1037,7 +1270,7 @@ const residentsCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "20/02/2025", name: "Andy Walker" }
+  { date: "06/03/2025", name: "Gee Whitehouse" }
 );
 
 //
@@ -1049,87 +1282,163 @@ const greenParkingPermit = new ContentP(
   "Green Parking Permit",
   "Learn about the eligibility, benefits, and application process for a free Green Parking Permit for ultra low-emission vehicles (ULEVs).",
   `
-		<h3>About the Permit</h3>
-		<p>
-			A green parking permit is for ultra low-emission vehicles (ULEV). A ULEV is
-			any electric or hybrid vehicle that emits less than 75g of carbon dioxide
-			(CO2) per kilometre travelled, with a capability of travelling a minimum range
-			of 10 miles with zero CO2 emissions.
-		</p>
-		<p>
-			A green permit allows you to park in pay and display on-street bays in the
-			city centre or in Council city car parks.
-		</p>
-		<p>
-			The scheme is for anyone with an eligible vehicle, irrespective of home
-			address but If you do not comply with the conditions of the scheme you may
-			receive a parking fine.
-		</p>
-		<p>Permits will not be issued for any period less than 12 months.</p>
-		<h3>Cost</h3>
-		<p>Green permits are free.</p>
-		<h3>Time Limits</h3>
-		<p>
-			The time clock provided under the previous Green permit scheme is no longer
-			required to be displayed.
-		</p>
-		<p>
-			There are no time limits for parking in pay and display bays on street with a
-			green permit. Car parks tend not to have special time limits for green
-			permits, but there are some where you can only stay for 6 hours. The following
-			car parks are restricted to a maximum stay period of 6 hours for green permit
-			holders:
-		</p>
+<h3>Green Parking Permit</h3>
+<p>
+    A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the following criteria to park in the city centre for free. 
+    Anyone with an eligible vehicle can apply for it.
+</p>
 
-		<ul>
-			<li>Wellington Street car park (old fire station site)</li>
-			<li>Carver Lane car park</li>
-			<li>Stanley Lane car park</li>
-		</ul>
-		<h3>Green permits cannot be used:</h3>
-		<ul>
-			<li>
-				In non-council car parks or in other parking permit zones like Broomhill and
-				Hillsborough.
-			</li>
-			<li>In the Science Car Park A car park, Monday to Friday from 8am to 4pm.</li>
-			<li>
-				At all Sheffield Hallam University "Permit Holders only" car parks - these
-				are indicated by yellow signs.
-			</li>
-		</ul>
-    <h3>Changing your permit vehicle registration</h3>
-		<p>
-    You can change the vehicle that your permit is for by sending your name and address
-    and new vehicle registration details to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
-	  </p>
-    <h3>Eligibility</h3>
-    <p>
-      A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the 
-      following criteria to park in the city centre for free. 
-      Anyone with an eligible vehicle can apply for it.
-    </p>
-    <p>The vehicle must be:</p>
-    <ul>
-      <li>electric or hybrid fuel type</li>
-      <li>
-      emit less than 75g of carbon dioxide (CO2) per kilometre travelled, with a capability of 
-      travelling a minimum range of 10 miles with zero CO2 emissions
-      </li>
-    </ul>
-    <p>
+<p>The vehicle must be:</p>
+<ul>
+    <li>electric or hybrid fuel type</li>
+    <li>emit less then 75g of carbon dioxide (CO2) per kilometre travelled, with a capability of travelling a minimum range of 10 miles with zero CO2 emissions</li>
+</ul>
+
+<p>
     You can use the DVLA checker to see if your vehicle meets these standards. 
-    It may show 0g on the CO2 emissions for some diesel vehicles as this data is not 
-    on their records. Such vehicles are not ULEVs and do not qualify for a 
-    green parking permit. You will need to provide evidence that your vehicle 
-    meets the required standard to qualify for a green permit.
-    </p>
+    It may show 0g on the CO2 emissions for some diesel vehicles as this data is not on their records. 
+    Such vehicles are not ULEVs and do not qualify for a green parking permit.
+</p>
+
+<h3>Cost</h3>
+<p>Green permits are free.</p>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Exceptions</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+ <p>Business permits are not issued for:</p>
+            <ul>
+                <li>City centre Inner/Outer zones</li>
+                <li>Falding Street</li>
+                <li>Holme Lane</li>
+                <li>Edward Street Flats Car Park</li>
+                <li>Loxley New Road</li>
+                <li>Vaughton Hill</li>
+            </ul> 
+            </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Number of permits</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+         <h4>You can have 2 permits per business.</h4>
+            <p>
+                Businesses in Neepsend have the option to apply for additional permits. If you’d like to apply for 
+                additional permits, please log in to your account, select the ‘Business Discretionary’ permit type 
+                and complete your application.
+            </p>
+  </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>How long a permit lasts</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
       <p>
-      For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-      <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
-      </p>
+                Permits are issued for one year. It is your responsibility to ensure your permit is renewed. 
+                We do not issue replacement pool permits; if you lose them, you will need to apply again. 
+            </p>
+  </div>
+</details>
+
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Where you can use the permit</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+ <p>
+                A green permit only allows you to park in pay and display bays located in the city centre (inner and outer zones) either:
+            </p>
+            <ul>
+                <li>on street</li>
+                <li>in most car parks that we run (subject to time limits)</li>
+            </ul>
+
+            <p>It cannot be used in:</p>
+            <ul>
+                <li>other types of parking bay (such as disabled bays, permit holder parking bays)</li>
+                <li>Hawley Street Car Park</li>
+                <li>in other parking permit zones</li>
+                <li>car parks we don’t run eg university permit holder car parks</li>
+            </ul>
+  </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Parking time limits</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+  <p>
+                There are no time limits for parking with a green permit in most of the pay and display bays in the city centre inner and outer zones.  
+            </p>
+
+            <p>However, the following car parks are restricted to a maximum stay period of 6 hours for green permit holders:</p>
+            <ul>
+                <li>Devonshire Green car park</li>
+                <li>Milton Street car park </li>
+                <li>Carver Lane car park</li>
+                <li>West Street Lane car park</li>
+            </ul>
+
+            <p>
+                If you intend to use any of these car parks please send an email to
+                <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
+                and we'll send you a clock for you to display in your windscreen.
+            </p> </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Number of permits</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+            <p>You can apply for one permit per vehicle. There is no limit to how many permits a household can have.</p>
+ </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>How long a permit lasts</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+            <p>Permits last for one year. It is your responsibility to ensure your permit is renewed.</p>
+ </div>
+</details>
+
+
+
+<p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+</p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information and to apply send link to apply online"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+    "
+>
+    Send link to review further information
+</button>
+     
  	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1164,69 +1473,136 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
   "Langsett And Hillsborough Bus And Tram Gate",
   "Learn about the eligibility and application process for a free permit to drive through the Langsett and Hillsborough bus and tram gate for residents of specific roads.",
   `
-		<h3>About the Permit</h3>
-		<p>
-			A permit to drive through the bus or tram gate at Langsett Road (outbound
-			only) is available for residents of the following roads:
-		</p>
-		<ul>
-			<li>Rudyard Road</li>
-			<li>Rudyard Mews</li>
-			<li>Treswell Crescent</li>
-			<li>Rider Road</li>
-			<li>Haggard Road</li>
-			<li>Kipling Road</li>
-		</ul>
-		<p>
-			Each 'permit of exemption' is valid for 12 months. Without a permit, residents
-			can't use the bus or tram gate. The bus or tram gate on Langsett Road is just
-			beyond Ripley Street.
-		</p>
-		<p>
-			The permit doesn't allow the holder to use other bus/tram gates in
-			Hillsborough or elsewhere in Sheffield. This includes the ‘inbound’ bus or
-			tram gates on Holme Lane or Middlewood Road. If holders do (when signs say
-			they shouldn't), we may consider withdrawing the exemption completely.
-		</p>
-		<p>
-			We can provide exemptions for additional vehicles registered at individual
-			properties (subject to appropriate evidence). However, we are not able to
-			provide exemptions for visitors to properties, delivery vehicles, or
-			short-term hire or ‘lease’ cars (unless registered at an address on one of the
-			above roads).
-		</p>
-		<h3>Cost</h3>
-		<p>There is no charge for this permit.</p>
-		<h3>Evidence Required - Proof of Address</h3>
-		<p>
-			We will check your Sheffield Council Tax or electoral records. If we do not
-			have these, provide an electronic copy of one of the following:
-		</p>
-		<ul>
-			<li>Last utility bill</li>
-			<li>Tenancy agreement</li>
-			<li>Council Tax statement</li>
-			<li>Proof of vehicle ownership</li>
-			<li>Registration document (V5)</li>
-			<li>Vehicle insurance certificate</li>
-			<li>Company car: also include a letter on company headed paper</li>
-		</ul>
+<h3>Hillsborough Langsett Road bus and tram gate</h3>
+
+<p>
+    The bus or tram gate on Langsett Road is just beyond Ripley Street and is usually limited to public transport and taxis.
+</p>
+
+<p>
+    A permit to drive through the bus or tram gate at Langsett Road (outbound only) is available for residents of the following roads:
+</p>
+
+<ul>
+    <li>Rudyard Road</li>
+    <li>Rudyard Mews</li>
+    <li>Treswell Crescent</li>
+    <li>Rider Road</li>
+    <li>Haggard Road</li>
+    <li>Kipling Road</li>
+</ul>
+
+<section class="info-panel" role="region" aria-label="Information panel">
     <p>
-      When you purchase your parking permit you need to send proof of eligibility 
-      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
-      (if you have not been requested to do so in the application process). 
-      At any time after this while you hold a permit we may require you to provide proof 
-      of your vehicle registration and your home or business address as part of 
-      regular audit checks. If this is requested please submit them to 
-      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
+        Each permit is valid for 12 months. Without a permit, residents can't use the bus or tram gate.
+        The permit is issued virtually so you don’t need to display it in your vehicle.
     </p>
-    <p>
+</section>
+
+<h4>Cost</h4>
+
+<p>There is no charge for this permit </p>
+
+<p>Who can't apply for the permit</p>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Where you can use the permit</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+                <p>
+                We can't provide permits for visitors to properties, delivery vehicles,
+                or short-term hire or lease cars (unless registered at an address on one of the eligible roads).
+            </p>
+ </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Where you can't use the permit</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+                   <p>
+                The permit doesn't allow the holder to use other bus or tram gates in Hillsborough or elsewhere in Sheffield. 
+                This includes the inbound bus or tram gates on Holme Lane or Middlewood Road.
+            </p>
+            <p>
+                If holders do use these gates (when signs say they shouldn't) we may consider withdrawing their permit completely.
+            </p>
+ </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Withdrawing permits</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+                 <p>Your permit will be invalid if:</p>
+            <ul>
+                <li>you are not a resident of one of the above roads </li>
+                <li>you cause or allow the letter of exemption to be used for reward </li>
+                <li>in our opinion the use of the exemption has been abused </li>
+            </ul>
+
+  <p>
+    If any of this takes place we may cancel your permit and you will not be allowed to use Langsett Road bus gate. 
+    You could be issued a bus lane fine if you drive through without a valid permit.
+</p>       
+ </div>
+</details>
+
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Evidence Required</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+             <h4>Proof of vehicle ownership</h4>
+            <p>You would need to provide us with an electronic copy of one of the following:</p>
+            <ul>
+                <li>registration document (V5)</li>
+                <li>vehicle insurance certificate</li>
+                <li>lease agreement in your name</li>
+                <li>letter on company headed paper verifying that you work for them with the V5 or the vehicle lease document (if you use a company car)</li>
+            </ul>
+
+            <h4>Proof of address</h4>
+            <p>We also need one proof of address:</p>
+            <ul>
+                <li>most recent utility bill</li>
+                <li>tenancy agreement (witnessed and signed)</li>
+                <li>current household contents insurance policy</li>
+                <li>current vehicle insurance certificate or schedule</li>
+                <li>bank statement or credit card bill dated or showing transactions from the last 2 months (block out your account details)</li>
+                <li>payslip, pension slip, benefits notification letter or Inland Revenue notice of bill coding dated within the last 2 months 
+                    (block out any personal details)</li>
+            </ul>
+ </div>
+</details>
+
+<p>
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-  <br>
-        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
+</p>
 
-    </p>
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information and to apply send link to apply online"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+    "
+>
+    Send link to review further information
+</button>
+
+
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1254,7 +1630,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "06/03/2025", name: "Gee Whitehouse" }
 );
 
 //
@@ -1267,11 +1643,11 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
   "Learn about the eligibility, cost, and application process for NHS practitioner or carer parking permits carrying essential equipment or treating patients.",
   `
     <h3>About the Permit</h3>
-    <p>NHS practitioner or carer parking permits (Medical Professional Carer) are available for:</p>
+    <p>Medical professional carer permits are available for:</p>
     <ul>
-      <li>NHS practitioner or carers (Medical Professional Carer)</li>
+      <li>NHS qualified medical practitioners</li>
       <li>
-        NHS practitioner or carers (Medical Professional Carer) carrying essential equipment or drugs to treat a
+        NHS medical practitioners carrying essential equipment or drugs to treat a
         patient resident
       </li>
     </ul>
@@ -1313,10 +1689,30 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
     <p>
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-    <br>
-    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
+  </p>
+ </div>
+</details>
 
-    </p>
+
+  <p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+  </p>
+</div>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information and to apply send link to apply online"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+    "
+>
+    Send link to review further information
+</button>
+
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1344,7 +1740,7 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "06/03/2025", name: "Gee Whitehouse" }
 );
 
 const organisationCarer = new ContentP(
@@ -1352,64 +1748,98 @@ const organisationCarer = new ContentP(
   "Organisation Carer",
   "Learn about the eligibility, cost, and application process for organisation carer permits, allowing access to permit holder bays for healthcare and support professionals.",
   `
-		<h3>About the Permit</h3>
-		<p>
-			As an organisation you can apply for a permit to use in permit holder bays in
-			all parking zones but not in the city centre.
-		</p>
-		<p>Organisation carer permits are available for:</p>
-		<ul>
-			<li>
-				Mental health social workers visiting a patient who may need to be detained
-				under the Mental Health Act
-			</li>
-			<li>Primary care outreach nurses</li>
-			<li>TB nurses</li>
-			<li>Health Visitors</li>
-			<li>Family support workers</li>
-		</ul>
-		<p>
-			The driver can only use the permit for carrying out visits to clients or
-			patients, not to park where they are based (their workplace).
-		</p>
-		<p>
-			Carer permit holders have to display a timer disc in the vehicle to show when
-			they started parking. The maximum time for parking is 2 hours.
-		</p>
-		<p>
-			If the client/patient regularly needs longer care visits, they may be eligible
-			to apply for a resident carer permit (see above). Clients/patients who require
-			an occasional longer visit may provide a visitor permit.
-		</p>
-		<h3>Cost</h3>
-		<p>£10 each for 12 months.</p>
-		<h3>Evidence Required</h3>
-		<p>
-			The organisation should apply and not an individual and provide the following
-			information:
-		</p>
-		<ul>
-			<li>The organisations operation</li>
-			<li>How many staff are employed</li>
-			<li>How many permits are required</li>
-			<li>Why the permit is required</li>
-		</ul>
-    <p>
-      When you purchase your parking permit you need to send proof of eligibility 
-      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
-      (if you have not been requested to do so in the application process). 
-      At any time after this while you hold a permit we may require you to provide proof 
-      of your vehicle registration and your home or business address as part of 
-      regular audit checks. If this is requested please submit them to 
-      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
-    </p>
-      <p>
-      For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-      <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
+	<h3>Organisation Carer</h3>
 
+<p>Mental health and healthcare organisations can apply for an All area medical/carer permit which can be used by their staff to park in Sheffield’s 
+parking zones. 
+The permit is a paper disc with a timer which will allow staff to park in any permit zone outside the city centre for a limited time.</p>
+
+<h4>If you work for the NHS</h4>
+
+<p>If you are an NHS practitioner or carer you should apply for a separate parking permit.</p>
+
+<h4>If you work for the Council</h4>
+
+<p>These parking permits are for:</p>
+
+<ul>
+  <li>
+    Mental health social workers visiting a patient who may need to be detained
+    under the Mental Health Act
+  </li>
+  <li>Primary care outreach nurses</li>
+  <li>TB nurses</li>
+  <li>Health Visitors</li>
+  <li>Family support workers</li>
+</ul>
+
+<section class="info-panel" role="region" aria-label="Information panel">
+  <p>
+    There is a system issue that will prevent the renewal of paper version of the All Area Medical/Carer Permits. 
+    You will need to allow your permit to expire,
+    then as early as possible within the 14 day grace period, buy a new permit.
+  </p>
+</section>
+
+<h3>Cost</h3>
+<p>£10 each for 12 months.</p>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>How long a permit lasts</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+            <p>Permits last for one year. It is your responsibility to ensure your permit is renewed.</p>
+ </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Evidence Required</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+ <p>
+        The organisation should apply and not an individual and provide the following
+        information:
       </p>
+      <ul>
+        <li>The organisations operation</li>
+        <li>How many staff are employed</li>
+        <li>How many permits are required</li>
+        <li>Why the permit is required</li>
+      </ul>
+      <p>
+        When you purchase your parking permit you need to send proof of eligibility 
+        to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
+        (if you have not been requested to do so in the application process). 
+        At any time after this while you hold a permit we may require you to provide proof 
+        of your vehicle registration and your home or business address as part of 
+        regular audit checks. If this is requested please submit them to 
+        <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
+      </p>
+       </div>
+</details>
+
+  <p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+  </p>
+</div>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information and to apply send link to apply online"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+    "
+>
+    Send link to review further information
+</button>	
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1437,7 +1867,7 @@ const organisationCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "06/03/2025", name: "Gee Whitehouse" }
 );
 
 const residentsPermit = new ContentP(
@@ -1446,8 +1876,46 @@ const residentsPermit = new ContentP(
   "Learn about the eligibility, cost, and application process for residents parking permits, including vehicle and address verification requirements.",
   `
 
-<h3>New and previous tenancies, including students, or newly purchased properties</h3>
+<h3>Residents Parking Permit</h3>
 
+
+<p>If you live in a parking zone you will need a permit to park your vehicle on the street in this zone.</p>
+
+<p>Permits do not entitle you to park at directly at your address, but they allow you to park in any designated on street parking space within the zone
+your permit is for.</p>
+
+<p>The permit is issued virtually so you don’t need to display it in your window. 
+Once your licence plate is registered as holding a permit you can use on street parking.</p>
+
+<p>Whether or not you can apply will depend on your home address, which will need to be within a parking zone to be eligible for a permit.</p>
+
+<section class="info-panel" role="region" aria-label="Information panel">
+    <p>
+       There's a system issue that will prevent the renewal of paper residents parking permits for Holme Lane, 
+       Vaughton Hill and Loxley New Road. You will need to allow your permit to expire, 
+       then as early as possible within the 14 day grace period, buy a new permit. We apologise for the inconvenience.  
+    </p>
+</section>
+
+
+  <h4>Cost</h4>
+  <p>The costs to apply for a permit are: </p>
+     <ul>
+          <li>standard first permit £55.80</li>
+          <li>standard second permit £111.60</li>
+          <li>city centre inner residents permit £310.00</li>
+          <li>city centre outer residents permit £155.00</li>
+          <li>Hawley Street Car Park residents permit £55.80</li>
+          <li>Kelham Island and Neepsend Parking Scheme - first permit £111.60</li>
+          <li>Kelham Island and Neepsend Parking Scheme - second permit £223.20</li>
+    </ul>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>New and previous tenancies</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
 <p>
 If you are moving into a new property and the Resident parking permit application shows the price being offered is not correct, this is likely to be because the previous tenants/owners have permits that are still valid.
 </p>
@@ -1463,137 +1931,31 @@ If you have moved or are moving from an address where you hold a parking permit,
 <p>
 Get in touch with us for any other problems regarding parking permit applications or pricing.
 </p>
+ </div>
+</details>
 
 <details class="accordion">
-    <summary class="accordion-header">
-        <h3>New and previous tenancies, including students, or newly purchased properties</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Exceptions
-            </summary>
-            <div class="details-accordion-content">
-                 <p>
-                    You cannot apply for a permit if you live in a car free development. You should check with your landlord, letting agent or solicitor if your property is car free.
-                </p>
-                <p>
-                    You can only apply for one permit per household if you're a resident of Holme Lane and Loxley New Road schemes.
-                </p>
-                <p>
-                    You can only apply for one permit per household if you're a resident of the Hawley Street Car Park scheme. In addition, a maximum of 24 permits will be issued for this scheme at any one time.
-                </p>
-            </div>
-        </details>
-        <details class="details-accordion">
-            <summary>
-                Number of permits
-            </summary>
-            <div class="details-accordion-content">
-                 <p>
-                     You can apply for 2 permits per household. We sometimes consider applications for a third permit, but we may ask for additional information to support your request.
-                 </p>
-                 <p>
-                     We would not issue more than two resident permits to households in the following zones:
-                 </p>
-                 <ul>
-                     <li>City Centre Inner</li>
-                     <li>City Centre Outer</li>
-                     <li>Botanical</li>
-                     <li>Porterbrook</li>
-                     <li>Stalker Lees</li>
-                     <li>Sharrow Vale</li>
-                     <li>Broomhill</li>
-                     <li>Beaufort Road and Severn</li>
-                     <li>Chandos Street</li>
-                     <li>College Street</li>
-                     <li>Endcliffe</li>
-                 </ul>
-            </div>
-        </details>
-    </div>
-</details>
-<div class="accordion-content">
-    <details class="details-accordion">
-        <summary>
-            Hawley Street
-        </summary>
-        <div class="details-accordion-content">
-             <p>
+ <summary class="accordion-header">
+   <h3>Hawley Street</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+        <p>
                  Residents of the Hawley Street Flats Car Park scheme can only apply for 1 permit per household.
              </p>
              <p>
                  We only allow 30 permits in total for the scheme due to the size of the car park.
              </p>
-        </div>
-    </details>
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Kelham Island and Neepsend Parking Scheme
-            </summary>
-            <div class="details-accordion-content">
-                 <p>
-                    You can apply for one permit per household. We may consider applications for a second permit for properties in Neepsend, but we may ask for additional information to support your request.
-                 </p>
-                 <p>
-                    We would not issue more than one permit to properties in Kelham Island.
-                 </p>
-            </div>
-        </details>
-        <div class="accordion-content">
-            <details class="details-accordion">
-                <summary>
-                    How long a permit lasts
-                </summary>
-                <div class="details-accordion-content">
-                     <p>
-                         Permits are issued for one year. It's your responsibility to ensure your permits are renewed.
-                     </p>
-                </div>
-            </details>
-            <div class="accordion-content">
-                <details class="details-accordion">
-                    <summary>
-                        Apply for a permit
-                    </summary>
-                    <div class="details-accordion-content">
-                         <p>
-                             You can apply for a parking permit through our parking portal.
-                         </p>
-                         <p>
-                             Enter your address to see if you're eligible for a permit and complete the application form.
-                         </p>
-                         <p>
-                             Permits may be issued on the day of application, but if we need to review your application further we'll respond within 5 working days.
-                         </p>
-                         <p>
-                             Some applications may require further investigation. If your permit requires this, we'll contact you further within 28 working days.
-                         </p>
-                    </div>
-                </details>
-                <h3>About the Permit</h3>
-                <p>
-                    Residents parking permits are for residents living within a parking permit zone. There are exceptions if the planning consent states that an address is a car-free property.
-                </p>
-                <p>
-                    Residents parking permits are now paperless, virtual permits (similar to tax discs).
-                </p>
-                <p>
-                    You must apply for, renew, cancel, or change a residents permit online.
-                </p>
-                <h3>Cost</h3>
-                <ul>
-                    <li>standard first permit £55.80</li>
-                    <li>standard second permit £111.60</li>
-                    <li>city centre inner residents permit £310.00</li>
-                    <li>city centre outer residents permit £155.00</li>
-                    <li>Hawley Street Car Park residents permit £55.80</li>
-                    <li>Kelham Island and Neepsend Parking Scheme - first permit £111.60</li>
-                    <li>Kelham Island and Neepsend Parking Scheme - second permit £223.20</li>
-                </ul>
-                <h3>Evidence Required - Vehicle Ownership</h3>
+              </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Evidence Required</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+<h4>Vehicle Ownership</h4>
                 <p>
                     You will need to provide us with an electronic copy of one of the following:
                 </p>
@@ -1601,11 +1963,10 @@ Get in touch with us for any other problems regarding parking permit application
                     <li>Registration document (V5)</li>
                     <li>Vehicle insurance certificate</li>
                     <li>Lease agreement in your name</li>
-                    <li>
-                        Letter on company headed paper verifying that you work for them with the V5 or the vehicle lease document (if you use a company car)
-                    </li>
+                    <li>Letter on company headed paper verifying that you work for them with the V5 or the vehicle lease document (if you use a company car)</li>
                 </ul>
-                <h3>Evidence Required - Proof of Address</h3>
+
+                <h4>Proof of Address</h4>
                 <p>
                     We will check our Council Tax or electoral records or we will ask you to provide an electronic copy of one of the following items that show your name and address:
                 </p>
@@ -1627,15 +1988,29 @@ Get in touch with us for any other problems regarding parking permit application
                 <p>
                     When you purchase your parking permit you need to send proof of eligibility to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days (if you have not been requested to do so in the application process). At any time after this while you hold a permit we may require you to provide proof of your vehicle registration and your home or business address as part of regular audit checks. If this is requested please submit them to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>.
                 </p>
-                <p>
+   </div>
+</details>
+
+
+
+                        <p>
                     For further information, visit <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-                    <br>
-                    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'">Send Link</button>
+                    
                 </p>
-            </div>
-        </div>
-    </div>
-</div>
+         <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information and to apply send link to apply online"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+            "
+      >
+        Send link to review further information
+      </button>
+
+
 
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -1664,26 +2039,37 @@ Get in touch with us for any other problems regarding parking permit application
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "05/03/2025", name: "Gee Whitehouse" }
 );
 
 const staffPermit = new ContentP(
   "staffPermit",
   "Staff Permit",
   "Find out how staff can apply for a parking permit through Facilities Management with detailed instructions on the application process.",
-  `<p>
-    Staff who need to apply for a parking permit should contact Facilities Management 
-    for assistance. Full details on how to apply for a staff parking permit can be 
-    found on the <a href="https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit" 
-    target="_blank">https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.
-    </p>
-    <p>
-    For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-    <br>
-    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
 
-    </p>
+  `<p>
+  Staff who need to apply for a parking permit should contact Facilities Management 
+  for assistance. Full details on how to apply for a staff parking permit can be 
+  found on the <a href="https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit" 
+  target="_blank">https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.
+</p>
+<p>
+  Please can you reformat the following code to have correct indentations and presentation, please do not alter any wording or spelling as these have been agreed with the service and cannot be changed. For further information, visit 
+  <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+</p>
+
+          <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information and to apply send link to apply online"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+            "
+      >
+        Send link to review further information
+      </button>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1719,24 +2105,67 @@ const tradePermit = new ContentP(
   "Trade Permit",
   "Learn about the application process, costs, and required evidence for obtaining trade permits for parking while working in Sheffield permit zones.",
   `
-		<h3>About the Permit</h3>
-		<p>
-			These allow trades persons to park whilst they are working in Sheffield permit
-			zones. These permits are for voucher books so please order in advance.
-		</p>
-		<p>
-			They are not valid in the city centre, Falding Street, Holme Lane, Loxley New
-			Road and Vaughton Hill parking zones.
-		</p>
-		<p>There is no limit to the number of trade permits you can buy.</p>
-		<h3>Cost</h3>
+
+<h3>Trade permit </h3>
+
+<p>A trade parking permit allows you to park your vehicle in on street parking bays while you work in a parking permit zone. </p>
+<p>They do not entitle you to park at a specific address, but they allow you to park in any on street parking space signposted for permit users in any eligible zone. </p>
+
+<h4>Cost</h4>
 		<p>Trade permits costs £96.85 for a batch of 25 daily permits. They cannot be refunded or exchanged.</p>
 		<p>
 			Permits should be validated and displayed in the vehicle promptly after
 			parking. They are valid until midnight on the day of use.
 		</p>
-		<h3>Evidence Required</h3>
-		<p>
+
+    <details class="accordion">
+ <summary class="accordion-header">
+   <h3>Exceptions</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+<p>Trade permits are not valid for use in these parking zones:  </p>
+
+          <ul>
+			<li>city centre </li>
+			<li>Falding Street </li>
+			<li>Hawley Street Car Park </li>
+			<li>Holme Lane </li>
+			<li>Loxley New Road </li>
+      <li>Vaughton Hill </li>
+		</ul>
+         </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Number of permits </h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+    <p>There is no limit to the number of trade permits you can buy. </p>
+ </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Where you can use the permit</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+        <p>You can park your vehicle up until midnight in any bay signed for the use of permit holders in the parking zone your permit is valid for.
+        If you want to park it overnight you will need to ensure you also display a permit for the following day. </p>
+        
+        <p>You must display your permit in the windscreen of your vehicle so that all the details are visible from the outside or you may be fined. </p>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Evidence Required</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+            		<p>
 			You would need to provide us with an electronic copy of one of the following:
 		</p>
 		<ul>
@@ -1769,13 +2198,30 @@ const tradePermit = new ContentP(
       regular audit checks. If this is requested please submit them to 
       <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
     </p>
+ </div>
+</details>
+
+
     <p>
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-    <br>
-    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
 
     </p>
+
+
+             <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information and to apply send link to apply online"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+            "
+      >
+        Send link to review further information
+      </button>
+
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1803,7 +2249,7 @@ const tradePermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "06/03/2025", name: "Gee Whitehouse" }
 );
 
 const utilityPermit = new ContentP(
@@ -1811,33 +2257,49 @@ const utilityPermit = new ContentP(
   "Utility Permit",
   "Learn about the utility permit application process, including costs and how utility companies can apply for permits in Sheffield's city centre.",
   `
-		<h3>About the Permit</h3>
-		<p>
-			<li>Issued for city centre works taking place by utility companies. E.g. Yorkshire Water, BT, British Gas etc.</li>
-      <li>25 half day cards per book</li>
-      <li>Maximum of 10 books per application</li>
-		</p>
-    <p>Utility Permits are only for major utility companies who need to complete work within the city centre.
-    <p>Valid for am/pm slots (not full days).
-    <p>Customer to email customerservices@sheffield.gov.uk directly or we can send them a link to apply.
-    </p>
-		<p>
-			If a company is working outside the City Centre then they would need a Trade
-			Permit.
-		</p>
-		<h3>Costs</h3>
-		<p class="cost">£193.75 for a book of 25 half day passes.</p>
-    <p>
-      Ask customer to email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> to ask if they can order a 
-      utility permit - service will respond with a link to order the permit.
-		</p>
+
+		<h3>Utility Permit</h3>
+
+<p>
+  <li>Issued for city centre works taking place by utility companies. E.g. Yorkshire Water, BT, British Gas etc.</li>
+  <li>25 half day cards per book</li>
+  <li>Maximum of 10 books per application</li>
+</p>
+
+<p>Utility Permits are only for major utility companies who need to complete work within the city centre.</p>
+<p>Valid for am/pm slots (not full days).</p>
+
+<p>
+  If a company is working outside the City Centre then they would need a Trade
+  Permit.
+</p>
+
+<h4>Costs</h4>
+
+<p class="cost">£193.75 for a book of 25 half day passes.</p>
+
+<p>
+  Ask customer to email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> to ask if they can order a 
+  utility permit or we can send them a link to apply.
+</p>
+  
+
       <p>
       For further information, visit 
       <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-      <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
 
       </p>
+
+                   <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information and to apply send link to apply online"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+            "
+      >
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1865,7 +2327,7 @@ const utilityPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah Williams" }
+  { date: "06/03/2025", name: "Gee Whitehouse" }
 );
 
 const visitorsPermits = new ContentP(
@@ -1873,70 +2335,126 @@ const visitorsPermits = new ContentP(
   "Visitors Permits",
   "Learn about the application process, costs, and required evidence for obtaining visitor parking permits for guests and contractors.",
   `
-		<h3>About the Permit</h3>
-		<p>
-			You can apply for paper visitor parking permit books online. These are for
-			people visiting you at home.
-		</p>
-		<p>
-			The permit should be validated and displayed in the vehicle promptly after
-			your visitor has arrived.
-		</p>
-		<p>
-			Instead of using visitor parking permits, visitors can use nearby pay and
-			display or unrestricted parking to leave more parking for regular permit
-			holders.
-		</p>
-		<p>
-			You can also use visitor parking permits for contractors working on your
-			house. If the contractor needs parking for more than 2 weeks, they should
-			apply for a trade permit.
-		</p>
-		<h3>Charge for Permit</h3>
-		<p>
-			One book of 25 permits costs £19.35. 
-      These are valid on the day of use until 10am the following day.
-		</p>
-		<section class="info-panel" role="region" aria-label="Information panel">
-			<p>These permits cannot be refunded or exchanged.</p>
-		</section>
-		<h3>Evidence Required</h3>
-		<p>
-		You will need to provide an electronic copy of one of the following items
-    that show your name and address:
-		</p>
-		<ul>
-			<li>Most recent utility bill</li>
-			<li>Tenancy agreement (witnessed and signed)</li>
-			<li>Current household contents insurance policy</li>
-			<li>Current vehicle insurance certificate or schedule</li>
-			<li>
-				Bank statement or credit card bill dated or showing transactions from the
-				last 2 months (block out your account details)
-			</li>
-			<li>
-				Payslip, pension slip, benefits notification letter or Inland Revenue notice
-				of bill coding dated within the last 2 months (block out any personal
-				details)
-			</li>
-		</ul>
-    <p>
-      When you purchase your parking permit you need to send proof of eligibility 
-      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
-      (if you have not been requested to do so in the application process). 
-      At any time after this while you hold a permit we may require you to provide proof 
-      of your vehicle registration and your home or business address as part of 
-      regular audit checks. If this is requested please submit them to 
-      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
-    </p>
-      <p>
-      For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-      <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Parking'"> Send Link </button>
+	<h3>Visitors Permit</h3>
+
+<p>If you live in a parking permit zone and would like visitors to be able to park nearby, 
+you can buy a book of single use parking permits. You can give this to your visitors.</p>
+
+<p>A permit does not guarantee parking directly at your address, but it will allow your visitors to park in on street parking bays within your permit zone. You can also give permits to contractors who are carrying out work on your home for up to two weeks. Likewise, you could provide a visitors permit to your landlord if they need to visit your property to do work. 
+Contractors needing more time to work at a property will need to apply for trade permits. Landlords can apply for trade permits too.</p>
+
+<p>You can only apply for visitor permits for the parking zone you live in.</p>
+
+<h4>Cost</h4>
+
+<p>One book of 25 permits costs £19.35.</p>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Exceptions</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+    <p>One book of 25 permits costs £19.35.</p>
+      <ul>
+        <li>city centre</li>
+        <li>Falding Street</li>
+        <li>Hawley Street Car Park</li>
+        <li>Holme Lane</li>
+        <li>Loxley New Road</li>
+        <li>Vaughton Hill parking zones</li>
+      </ul> </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>Number of permits</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+        <p>You can buy up to 150 visitor permits per year (we may consider discretionary applications for more permits).</p>
+ </div>
+</details>
 
 
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3>How long each permit lasts</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+    <p>Permits are valid on the day of use until 10am the following day.</p>
+ </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3> Where you can use the permit</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+      <p>Your visitors can park their vehicle without time limit in any bay which is signed as being for the use of permit holders. 
+      They must display their permit in the windscreen so that all the details are visible from outside the vehicle as soon as possible after parking.</p>
+      <p>If your visitors display an invalid permit (for example one that has expired or one that has been issued for a different zone) they will be fined.</p>
+
+ </div>
+</details>
+
+<details class="accordion">
+ <summary class="accordion-header">
+   <h3> Evidence Required</h3>
+   <div class="accordion-icon"></div>
+ </summary>
+ <div class="accordion-content">
+     <p>
+        You will need to provide an electronic copy of one of the following items
+        that show your name and address:
       </p>
+      <ul>
+        <li>Most recent utility bill</li>
+        <li>Tenancy agreement (witnessed and signed)</li>
+        <li>Current household contents insurance policy</li>
+        <li>Current vehicle insurance certificate or schedule</li>
+        <li>
+          Bank statement or credit card bill dated or showing transactions from the
+          last 2 months (block out your account details)
+        </li>
+        <li>
+          Payslip, pension slip, benefits notification letter or Inland Revenue notice
+          of bill coding dated within the last 2 months (block out any personal
+          details)
+        </li>
+      </ul>
+      <p>
+        When you purchase your parking permit you need to send proof of eligibility 
+        to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
+        (if you have not been requested to do so in the application process). 
+        At any time after this while you hold a permit we may require you to provide proof 
+        of your vehicle registration and your home or business address as part of 
+        regular audit checks. If this is requested please submit them to 
+        <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
+      </p>
+ </div>
+</details>
+
+  <p>
+    For further information, visit 
+    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+  </p>
+</div>
+
+             <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information and to apply send link to apply online"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+            "
+      >
+        Send link to review further information
+      </button>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1964,7 +2482,7 @@ const visitorsPermits = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "26/02/2025", name: "Dinah Williams" }
+  { date: "06/03/2025", name: "Gee Whitehouse" }
 );
 
 const parkingPermits = new MenuP(
