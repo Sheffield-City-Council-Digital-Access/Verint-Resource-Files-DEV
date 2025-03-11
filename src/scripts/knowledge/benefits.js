@@ -91,11 +91,23 @@ const applyForTheHouseholdSupportFund = new ContentB(
         <li>rent or housing arrears under normal circumstances</li>
         <li>clothing</li>
         <li>white goods (visit <a href="https://applyforleap.org.uk/leap-appliances/" target="_blank">https://applyforleap.org.uk/leap-appliances/</a> 
-        for support replacing broken or damaged white goods)<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Leap%20Appliances'"> Send Link </button></li>
-        
-        
+        for support replacing broken or damaged white goods)</li>
       </ul>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Leap%20Appliances\`
+    "
+>
+    Send link to review further information
+</button>
+
     <p>
       If you need help paying rent or housing arrears, you must apply for Universal Credit, Housing Benefit, a Discretionary Housing Payment or a Homelessness Prevention Grant.
       If you can prove you are ineligible for these benefits, in extreme circumstances we may be able to help with rent arrears or deposits for new tenancies.
@@ -130,10 +142,21 @@ const applyForTheHouseholdSupportFund = new ContentB(
           and tailored assistance, both to make your application process smoother and to provide support in their respective fields.
         </p>
         <p>
-          Our network of Trusted assessors can be found at: <a href="https://www.sheffielddirectory.org.uk/HSF" target="_blank">https://www.sheffielddirectory.org.uk/HSF</a>
-          
-          <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffields%20Household%20Support%20Fund'"> Send Link </button>
+          Our network of Trusted assessors can be found at: <a href="https://www.sheffielddirectory.org.uk/HSF" target="_blank">https://www.sheffielddirectory.org.uk/HSF</a>          
         </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send "
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffields%20Household%20Support%20Fund\`
+    "
+>
+    Send link to review further information
+</button>
       </section>
     </p>
     <h3>What happens next</h3>
@@ -175,8 +198,22 @@ const employmentSupport = new ContentB(
     <p>
       Information about employment support from Opportunity Sheffield can be found at: 
       <a href="https://www.sheffield.gov.uk/campaigns/opportunity-sheffield" target="_blank">https://www.sheffield.gov.uk/campaigns/opportunity-sheffield</a>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Opportunity%20Sheffield'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Opportunity%20Sheffield\`
+    "
+>
+    Send link to review further information
+</button>
+
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "cost_of_living_transferred_to_service" },
@@ -199,9 +236,23 @@ const energySupport = new ContentB(
     <p>
       More information about the Warm Home Discount Scheme can be found at: 
       <a href="https://www.gov.uk/the-warm-home-discount-scheme" target="_blank">https://www.gov.uk/the-warm-home-discount-scheme</a>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Warm%20Home%20Discount%20Scheme'"> Send Link </button>
 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Warm%20Home%20Discount%20Scheme\`
+    "
+>
+    Send link to review further information
+</button>
+
+
   </section>
   </div>
   </details>
