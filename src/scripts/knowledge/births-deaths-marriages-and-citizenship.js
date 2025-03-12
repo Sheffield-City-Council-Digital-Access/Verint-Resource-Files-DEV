@@ -72,8 +72,22 @@ const bookNoticeCivilPartnership = new ContentBDMaC(
     <p>If you are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you must attend the notice of marriage appointment together either in the district you both live, or in either district (whichever is most convenient) if you live in different towns.</p>
     <p>You must know where your civil partnership will take place.</p>
     <p>The date of your civil partnership formation must be between 29 calendar days and 1 year of your appointment.</p>
-    <p>Further information for notice of civil partnership please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice" target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a>. <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Book%20a%20Notice%20of%20Civil%20Partnership%20Appointment'"> Send Link </button>
+    <p>Further information for notice of civil partnership please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice" target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a>. 
 </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20Notice%20of%20Civil%20Partnership%20Appointment\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Fees</h3>
     <p>There is a fee to give your notice of civil partnership:</p>
     <ul>
