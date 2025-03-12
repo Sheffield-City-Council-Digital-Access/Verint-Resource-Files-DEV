@@ -113,7 +113,7 @@ class FormEaR extends CoreEaR {
 const ccaCCBorCanvassForms = new ContentEaR(
   "ccaCCBorCanvassForms",
   "CCB or Canvass Form",
-  "CCB or Canvass Forms - People that do not live at the address",
+  "CCB or Canvass Forms - Completion of CCB or Canvass Forms",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -210,6 +210,15 @@ const ccaCCBForms = new ContentEaR(
       >
       If there are no eligible residents, you should state why this is the case.
     </p>
+    <p>
+      If you do not want to appear on the electoral register in Sheffield you can write to us
+      stating that the address you are living at is a second home and send it to: 
+      <address>
+        Electoral Services<br/>
+        Town Hall<br/>
+        Sheffield, S1 2HH
+      </address>
+    </p>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "annual_canvass_transferred_to_service" },
@@ -231,7 +240,7 @@ const ccaCCBForms = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "03/12/2024", name: "Andy Walker" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const informationChangeandHowToUpdateIt = new ContentEaR(
@@ -1568,8 +1577,8 @@ const electoralRegisterConfirmationLetter = new ContentEaR(
     </section>
     <p>
       Letters can be requested from Electoral Services for Proof of Registration.
-      This only provides evidence that someone is registeted at an address, not that
-      they are resident. We can only send this confirmaiton letter by post to the
+      This only provides evidence that someone is registered at an address, not that
+      they are resident. We can only send this confirmation letter by post to the
       registered address.
     </p>
   `,
@@ -2240,9 +2249,9 @@ const familyTreeorGenealogy = new ContentEaR(
     <p>
       The electoral register is compiled for election purposes and is not intended
       to be used as a tool for searching for lost relatives. Registers are split
-      intot he 6 parliamentary constituencies, then into the wards wihtin those
+      into the 6 parliamentary constituencies, then into the wards wihtin those
       constituencies. Each ward is broken down into the polling district each
-      polling stations serves and then into each street within that district.
+      polling station serves and then into each street within that district.
       Properties are then sorted by address order - not by name.
     </p>
     <p>
@@ -2267,7 +2276,7 @@ const familyTreeorGenealogy = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/11/2024", name: "Nathan Smith" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const wards = new ContentEaR(

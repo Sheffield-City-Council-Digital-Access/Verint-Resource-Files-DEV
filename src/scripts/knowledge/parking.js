@@ -237,47 +237,43 @@ const applyBlueBadge = new ContentP(
   "Apply for a Blue Badge",
   "Learn about the eligibility criteria and application process for a Blue Badge, including automatic qualification and discretionary assessments.",
   `
-      <h3>Eligibility</h3>
+  <h3>Eligibility</h3> 
       <p>
         If the condition that the customer has a diagnosis for is not permanent and
         substantial they will not be eligible for a blue badge.
-      </p>
-      <h3>Automatically Qualify</h3>
+      </p> 
+ 
+    <h3>Automatically Qualify</h3> 
       <p>
-        The customer will automatically qualify for a blue badge if they meet the
-        following criteria and have the relevant evidence:
-      </p>
-      <ul>
-        <li>
-          In Receipt of Higher Rate Disability Living Allowance from the DWP
-          (Department for Works and Pensions) dated within the current financial year
-        </li>
-        <li>
-          In receipt of PIP (Personal Independence Payment) if scored 8 or above
-        </li>
-        <li>Registered as Blind (Severely Sight Impaired</li>
-        <li>War Pension Supplement</li>
-        <li>Armed Forces and Reserved Forces Compensation Scheme</li>
-        <li>
-          Terminally Ill Applicants - If the applicant is being treated by Mcmillan,
-          Weston Park or Northern General the application would require a stamp /
-          compliment slip / note from nurse or doctor and is issued for one year with
-          no charge.
-        </li>
-        <li>
-          Terminally ill - A terminally ill applicant will have a DS1500 – A form
-          giving medical facts relating to cancer or an SR1 form used for claiming
-          benefits under the rules for people with terminal cancer. There is a charge
-          of £10 for all badges and the badge is issued for a year, should they apply
-          the following 2 years there would be no further charge.
-        </li>
-      </ul>
+        The customer will automatically qualify for a blue badge if they meet
+        the following criteria and have the relevant evidence:
+      </p> 
+      <ul> 
+        <li>In Receipt of Higher Rate Disability Living Allowance from the DWP (Department for Works and Pensions) dated within the current financial year</li> 
+        <li>In receipt of PIP (Personal Independence Payment) if scored 8 or above</li> 
+        <li>Registered as Blind (Severely Sight Impaired)</li> 
+        <li>War Pension Supplement</li> 
+        <li>Armed Forces and Reserved Forces Compensation Scheme</li> 
+        <li>Terminally Ill Applicants - If the applicant is being treated by Mcmillan, Weston Park or Northern General the application would require a stamp / compliment slip / note from nurse or doctor and is issued for one year with no charge.</li> 
+        <li>Terminally ill - A terminally ill applicant will have a DS1500 – A form giving medical facts relating to cancer or an SR1 form used for claiming benefits under the rules for people with terminal cancer. There is a charge of £10 for all badges and the badge is issued for a year, should they apply the following 2 years there would be no further charge.</li> 
+      </ul> 
       <p>
-        These applications will be fast tracked and would not be held up awaiting
-        payment or other evidence. When applying online these applications via
-        <a href="https://www.gov.uk/apply-blue-badge" target="_blank">https://www.gov.uk/apply-blue-badge</a> are
-        processed the same working day.
-        <button type="button" class="dform_widget email-btn dform_widget_type_button"
+      These applications will be fast tracked and would not be held up awaiting payment or other evidence. When applying online
+      these applications will be processed the same working day.
+      </p> 
+      <p>
+      Alternatively a terminally ill application can be taken over the phone, 
+      using the option below.
+      </p> 
+ 
+    <h3>Discretionary</h3> 
+      <p>
+        If the customer does not meet the criteria above, they may require a further assessment,
+        more information will be provided when the application is reviewed.
+      </p> 
+      <p>
+      <a href="https://www.gov.uk/apply-blue-badge" target="_blank">https://www.gov.uk/apply-blue-badge</a>
+      <button type="button" class="dform_widget email-btn dform_widget_type_button"
           aria-label="Send link to apply for a blue badge"
           onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
@@ -286,31 +282,42 @@ const applyBlueBadge = new ContentP(
           ">
           Send link to apply online
         </button>
-      </p>
-      <h3>Discretionary</h3>
-      <p>
-        If the customer does not meet any of the criteria above they will need to go
-        through an assessment with an advisor to see if they qualify for a blue badge.
-      </p>
-      <details class="accordion">
+    
+  <details class="accordion">
     <summary class="accordion-header">
-      <h3>Whats happening with my application</h3>
-      <div class="accordion-icon"></div>
+    <h3>Cost</h3>
+    <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>
-  <ul>
-    <li>Provide the customer with an update to their application using case notes or status update.</li>
-    <li>All cases will be dealt with in date order, with no exceptions regardless of circumstances.</li>
-    <li>Do not raise requests of this nature to FFT.</li>
-    <li>Blue Badge applications will be assessed within 28 calendar days from the date the application was received.</li>
-    <li>The order date of the Blue Badge is not the despatch date from the 3rd party who produces the Blue Badge.</li>
-  </ul>
-          </p>
-          <p>
-            Once Sheffield City Council have ordered the Blue Badge the 3rd Party have
-            5 working days to despatch and weekends need to be taken into account.
-          </p>
+    <p>If your application is successful, there is a cost of £10 for the badge.</p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+    <h3>Evidence</h3> 
+    <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+    <ul> 
+    <li>Proof of address, which could be a Council Tax bill, utility bill or bank statement dated within the last 3 months.</li> 
+    <li>Proof of your identity, which could be a copy of your passport, drivers licence, birth or marriage certificates.</li> 
+    <li>Proof of any benefits you receive.</li> 
+    <li>If you are not using a passport or driving licence for proof you will need to send us a passport standard photograph.</li> 
+    </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+    <h3>What’s happening with my application</h3>
+    <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+    <p>Provide the customer with an update to their application using case notes or status update.</p> 
+    <p>All cases will be dealt with in date order, with no exceptions regardless of circumstances.</p> 
+    <p>Blue Badge applications will be assessed within 28 calendar days from the date the application was received.</p> 
+    <p>Once Sheffield City Council have ordered the Blue Badge it can take up to 2 weeks to receive.</p>
     </div>
   </details>
   `,
@@ -318,7 +325,7 @@ const applyBlueBadge = new ContentP(
     buttonLabel: "Apply for a blue badge",
     formName: "blue_badge_application",
   },
-  { typeKey: "blue_badge_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "blue_badge_information_provided" },
   {
     type: "Apply",
@@ -338,7 +345,7 @@ const applyBlueBadge = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "26/02/2025", name: "Dinah Williams" }
+  { date: "06/03/2025", name: "Dinah Williams" }
 );
 
 const blueBadgeHolderPassedAway = new ContentP(
@@ -398,8 +405,11 @@ const replacementBlueBadge = new ContentP(
   `
       <h3>Misplaced or stolen badges</h3>
       <p>
+        If your badge is lost, damaged, stolen, or if you need to amend details on it, there is a £10 charge.
+      </p>
+      <p>
         If a badge is lost or stolen we now require a form to be completed with a signature. 
-        The form is available online to print or alternatively a form can be sent out via 2nd post.
+        The form is available online to print or alternatively a form can be sent out via 2nd post.  You may also request a large print option.
       </p>
       <h3>Badges seized by an enforcement officer</h3>
       <p>
@@ -454,7 +464,7 @@ const replacementBlueBadge = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "19/02/2025", name: "Andy Walker" }
+  { date: "06/03/2025", name: "Dinah Williams" }
 );
 
 const blueBadge = new MenuP(
@@ -1627,121 +1637,56 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
 //makingAPayment is in the cross regional section at the top of the Parking.js file
 //
 
-const medicalProfessionalCarer = new ContentP(
-  "medicalProfessionalCarer",
-  "Medical Professional Carer (NHS)",
-  "Learn about the eligibility, cost, and application process for medical professional carer permits for NHS practitioners carrying essential equipment or treating patients.",
+const nhsPractitionerOrCarerParkingPermit = new ContentP(
+  "nhsPractitionerOrCarerParkingPermit",
+  "NHS practitioner or carer parking permit (Medical Professional Carer)",
+  "Learn about the eligibility, cost, and application process for NHS practitioner or carer parking permits carrying essential equipment or treating patients.",
   `
-
-
-<h3>Medical Professional Carer (NHS) </h3>
-
-<h4>About the Permit</h4>
-<p>Medical professional carer permits are available for:</p>
-<ul>
-  <li>NHS qualified medical practitioners</li>
-  <li>
-    NHS medical practitioners carrying essential equipment or drugs to treat a
-    patient resident
-  </li>
-</ul>
-<p>
-  The driver can only use the permit for carrying out visits to clients or
-  patients, not to park where they are based (their workplace).
-</p>
-<p>
-  Carer permit holders have to display a timer disc in the vehicle to show when
-  they started parking. The maximum time for parking is 2 hours.
-</p>
-<p>
-  If the client/patient regularly needs longer care visits, they may be eligible
-  to apply for a resident carer permit (see above). Clients/patients who require
-  an occasional longer visit may provide a visitor permit.
-</p>
-
-<p>NHS organisations can apply for an All area medical/carer permit which can be used by their staff to park in Sheffield’s 
-parking zones while treating patients.</p>
-<p>If the client/patient regularly needs longer care visits, they may be eligible to apply for a resident carer permit (see above). 
-Clients/patients who require an occasional longer visit may provide a visitor permit.</p>
-
-<section class="info-panel" role="region" aria-label="Information panel">
-  <p>
-    There is a system issue that will prevent the renewal of paper version of the All Area Medical/Carer Permits. 
-    You will need to allow your permit to expire, then as early as possible within the 14 day grace period, buy a new permit.
-  </p>
-</section>
-
-<h3>Cost</h3>
-<p>£10 each for 12 months.</p>
-
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>Exceptions</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-      <p>You can’t use the permit to park in the city centre or Falding Street, 
-      Hawley Street Flats Car Park, Holme Lane, Loxley New Road and Vaughton Hill parking zones</p>
-       </div>
-</details>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>How long a permit will last</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-            <p>Permits are issued for up to 12 months. It is your responsibility to ensure your permit is renewed.</p>
- </div>
-</details>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>Where you can use the permit</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-      <p>Carers can only use the permit for carrying out visits to clients or patients, not to park at their workplace or home.</p>
-      <p>You can park in any designated permit bay in a parking zone for 2 hours at a time. A permit does not guarantee you parking directly at an address.</p>
-      <p>You should make sure both the permit and timer disc are clearly displayed, that the vehicle is not parked in the same space for more than 2 hours and that the arrival time is set accurately.</p>
-      <p>If the client or patient regularly needs longer care visits, they may be eligible to apply for a resident carer permit. Clients or patients who require an occasional longer visit may provide a visitor permit.</p>
- </div>
-</details>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>Evidence Required</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-      <p>The organisation should apply not for an individual and provide the following information:</p>
-      <ul>
-        <li>The organisations operation</li>
-        <li>How many staff are employed</li>
-        <li>How many permits are required</li>
-        <li>Why the permit is required</li>
-      </ul>
-      <p>
-        When you purchase your parking permit you need to send proof of eligibility 
-        to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
-        (if you have not been requested to do so in the application process). 
-        At any time after this while you hold a permit we may require you to provide proof 
-        of your vehicle registration and your home or business address as part of 
-        regular audit checks. If this is requested please submit them to 
-        <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
-      </p>
- </div>
-</details>
-
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>Evidence Required</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-  <p>
+    <h3>About the Permit</h3>
+    <p>Medical professional carer permits are available for:</p>
+    <ul>
+      <li>NHS qualified medical practitioners</li>
+      <li>
+        NHS medical practitioners carrying essential equipment or drugs to treat a
+        patient resident
+      </li>
+    </ul>
+    <p>
+      The driver can only use the permit for carrying out visits to clients or
+      patients, not to park where they are based (their workplace).
+    </p>
+    <p>
+      Carer permit holders have to display a timer disc in the vehicle to show when
+      they started parking. The maximum time for parking is 2 hours.
+    </p>
+    <p>
+      If the client/patient regularly needs longer care visits, they may be eligible
+      to apply for a resident carer permit (see above). Clients/patients who require
+      an occasional longer visit may provide a visitor permit.
+    </p>
+    <h3>Cost</h3>
+    <p>£10 each for 12 months.</p>
+    <h3>Evidence Required</h3>
+    <p>
+      The organisation should apply not for an individual and provide the following
+      information:
+    </p>
+    <ul>
+      <li>The organisations operation</li>
+      <li>How many staff are employed</li>
+      <li>How many permits are required</li>
+      <li>Why the permit is required</li>
+    </ul>
+    <p>
+      When you purchase your parking permit you need to send proof of eligibility 
+      to <a href="mailto:ppproofs@sheffield.gov.uk">ppproofs@sheffield.gov.uk</a> within 3 days 
+      (if you have not been requested to do so in the application process). 
+      At any time after this while you hold a permit we may require you to provide proof 
+      of your vehicle registration and your home or business address as part of 
+      regular audit checks. If this is requested please submit them to 
+      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> 
+    </p>
+    <p>
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
   </p>
@@ -2548,7 +2493,7 @@ const parkingPermits = new MenuP(
     businessPermit,
     residentsCarer,
     organisationCarer,
-    medicalProfessionalCarer,
+    nhsPractitionerOrCarerParkingPermit,
     greenParkingPermit,
     langsettAndHillsboroughBusAndTramgate,
     residentsPermit,

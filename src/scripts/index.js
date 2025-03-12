@@ -1369,6 +1369,18 @@ function handleOptionSelectedEvent(event, kdf, field, label, val) {
     KDF.setVal(textField, stringValue);
   }
 
+  // --- HANDLE TOGGLE NI NASS --------------------------------------------- \\
+
+  if (field === "chk_no_national_insurance_number") {
+    const showNass = $("#dform_widget_chk_no_national_insurance_number").is(
+      ":checked"
+    );
+    hideShowMultipleElements([
+      { name: "txt_national_asylum_support", display: showNass },
+      { name: "txt_national_insurance", display: !showNass },
+    ]);
+  }
+
   // --- MAP --------------------------------------------------------------- \\
 
   do_KDF_optionSelected_esriMap(field, label, val);

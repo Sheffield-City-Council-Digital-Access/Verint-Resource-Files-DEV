@@ -4962,11 +4962,11 @@ const balanceEnquiry = new ContentH(
   </details>
 `,
 {
-  buttonLabel: "Report Housing Enquiry ",
-  formName: "hou_rehousing_enquiry",
+  buttonLabel: "",
+  formName: "",
 },
-{ typeKey: "rehousing_services_information_provided" },
-{ typeKey: "rehousing_services_information_requested" },
+{ typeKey: "rents_transfered_to_service" },
+{ typeKey: "rents_information_provided" },
 {
   type: "Request",
   keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
@@ -5162,9 +5162,9 @@ const contactRentsTeam = new ContentH(
         </div>
     </details>
   `,
-  { buttonLabel: "Contact Rents Team", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "Contact Rents Team", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
@@ -5183,13 +5183,25 @@ const arrearsorDebt = new ContentH(
       advising the court that that they do not oppose the removal.
     </p>
   `,
-  { buttonLabel: "Arrears or Debt", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
 
+const debtRecovery = new FormH(
+  "debtRecovery",
+  "Debt Recovery",
+  "Use this form to enquire about Debt recovery or any correspondence you have received regarding Debt Recovery.",
+  "hou_rents_debt_recovery",
+  {
+    type: "Request",
+    keywords: ["Debt", "Housing", "Rent", "Recovery"],
+    categories: ["Housing"],
+  },
+  { date: "12/03/2025", name: "Nathan Smith" }
+);
 
 
 const references = new ContentH(
@@ -5214,11 +5226,37 @@ const references = new ContentH(
       Social Landlords can also email details of their request to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> if they prefer to send an email.
     </p>
   `,
-  { buttonLabel: "References", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "References", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
+);
+
+const rentArrangements = new FormH(
+  "rentArrangements",
+  "Rent Arrangements",
+  "Use this form to set up, amend or enquire about a Rent Arrangement.",
+  "hou_rents_arrangements",
+  {
+    type: "Request",
+    keywords: ["Arrangement", "Housing", "Rent"],
+    categories: ["Housing"],
+  },
+  { date: "12/03/2025", name: "Nathan Smith" }
+);
+
+const rentRefunds = new FormH(
+  "rentRefunds",
+  "Rent Refunds",
+  "Use this form to chase or request a Rent refund.",
+  "hou_rents_refunds",
+  {
+    type: "Request",
+    keywords: ["Refund", "Housing", "Rent"],
+    categories: ["Housing"],
+  },
+  { date: "12/03/2025", name: "Nathan Smith" }
 );
 
 const rentVariation = new ContentH(
@@ -5502,9 +5540,9 @@ const rentVariation = new ContentH(
     </div>
 </details>
   `,
-  { buttonLabel: "Rent Varitaion", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "Rent Varitaion", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
@@ -5528,9 +5566,9 @@ const statements = new ContentH(
   <strong>Tenants in arrears:</strong> We will continue to send statements every 13 weeks if the customer is repaying arrears.
   </p> 
   `,
-  { buttonLabel: "Statements", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "Statements", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
@@ -5540,7 +5578,7 @@ const statements = new ContentH(
 const yorkshireWater = new ContentH(
   "yorkshireWater",
   "Yorkshire Water",
-  "Find out how to access rent statements, request current or past statements, and understand the process for tenants in arrears.",
+  "Find out how to query water charges, access support schemes, and check eligibility for reduced water charges based on household income.",
   `
   <p>
     If a customer is querying their water charges:<br>
@@ -5605,7 +5643,10 @@ const rents = new MenuH(
     arrearsorDebt,
     balanceEnquiry,
     contactRentsTeam,
+    debtRecovery,
     references,
+    rentArrangements,
+    rentRefunds,
     rentVariation,
     statements,
     universalCredit,
