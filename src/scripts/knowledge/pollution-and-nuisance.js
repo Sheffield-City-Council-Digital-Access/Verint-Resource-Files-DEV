@@ -353,8 +353,8 @@ const birdsandPigeonsTreatment = new ContentPaN(
     </section>
   `,
   {
-    buttonLabel: "Book treatment for Birds and Pigeons",
-    formName: "pest_control_treatment",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "pest_control_transfer_to_service" },
   { typeKey: "pest_control_information_provided" },
@@ -368,7 +368,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "28/02/2025", name: "Dinah Williams" }
+  { date: "12/03/2025", name: "Dinah Williams" }
 );
 
 const biscuitBeetlesTreatment = new ContentPaN(
@@ -493,7 +493,7 @@ const bumbleBeesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£58.00.</strong>
+      reduced to <strong>£69.50.</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -626,7 +626,7 @@ const carpetBeetlesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£58.00.</strong>
+      reduced to <strong>£69.50.</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1391,7 +1391,7 @@ const gardenAntsTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£58.00:</strong>
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1662,7 +1662,7 @@ const masonryBeesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£58.00:</strong>
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1675,7 +1675,7 @@ const masonryBeesTreatment = new ContentPaN(
     <p>
     If there is more than one nest, a charge of <strong>£39.00</strong> per additional nest will be applied.
     </p>
-       <p>
+    <p>
       All prices include a call-out fee of £39.00 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
@@ -1722,7 +1722,7 @@ const miceTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£58.00:</strong>
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -2029,6 +2029,10 @@ const ratTreatment = new ContentPaN(
       If you require further treatments, each additional treatment will cost <strong>£39.00.</strong>
     </p>
     <p>
+      All prices include a call-out fee of <strong>£39.00.</strong> This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+    <p>
       If you receive one of the following benefits, the treatment will be free:
     </p>
     <ul>
@@ -2040,9 +2044,9 @@ const ratTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
-      attends the property but is unable to complete the treatment.
+      Free treatments, there is no call out charge if the Technician is unable to gain access.
     </p>
+        
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Communal Areas</h3>
@@ -2420,39 +2424,14 @@ const squirrelsTreatment = new ContentPaN(
   "Squirrels Treatment",
   "Details on Squirrel treatment, including costs, discounted rates for benefits recipients, and the included call-out fee.",
   `
-    <h3>Cost for Treatment</h3>
     <p>
-      We will only provide treatment for Squirrels inside the property.
-      The treatment cost is <strong>£315.00.</strong> This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
+    For advice on squirrel treatments, please contact the pest control back office at:
+    <a href="tel:01142930356">0114 293 0356</a> 
+    or email: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>
     </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£99.00:</strong> <br>
-           All prices include a call-out fee of £39.00. This fee applies if our officer
-      attends the property but is unable to complete the treatment.
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Universal Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-      This covers you for up to 5 visits. If you require further treatments, each additional
-      treatment will cost £55.00.
-      
-      <p>
-      All prices include a call-out fee of £39.00. This fee applies if our officer
-      attends the property but is unable to complete the treatment.
-    </p>
-
   `,
   {
-    buttonLabel: "Book treatment for Squirrels",
+    buttonLabel: "",
     formName: "pest_control_treatment",
   },
   { typeKey: "pest_control_transfer_to_service" },
