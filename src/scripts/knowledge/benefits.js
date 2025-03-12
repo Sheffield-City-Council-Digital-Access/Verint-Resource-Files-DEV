@@ -56,7 +56,6 @@ class FormB extends CoreB {
 
 //#region Cross regional tiles
 
-
 //#endregion Cross regional tiles
 
 //#region Cost of Living
@@ -183,7 +182,10 @@ const applyForTheHouseholdSupportFund = new ContentB(
       the outcome within 28 days of receiving your appeal.
     </p>
   `,
-  { buttonLabel: "Apply for the Household Support Fund", formName: "apply_hsf_las" },
+  {
+    buttonLabel: "Apply for the Household Support Fund",
+    formName: "apply_hsf_las",
+  },
   { typeKey: "cost_of_living_scheme_transferred_to_service" },
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
@@ -280,7 +282,6 @@ const energySupport = new ContentB(
     Send link to review further information
 </button>
 
-
   </section>
   </div>
   </details>
@@ -293,8 +294,21 @@ const energySupport = new ContentB(
     <p>
       More information from Energy Savings Trust can be found at: 
       <a href="https://energysavingtrust.org.uk/" target="_blank">https://energysavingtrust.org.uk/</a>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Energy%20Saving%20Trust'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Energy%20Saving%20Trust\`
+    "
+>
+    Send link to review further information
+</button>
+    
   </section>
   </div>
   </details>
@@ -307,8 +321,21 @@ const energySupport = new ContentB(
     <p>
       More information about Connected for Warmth energy grants can be found at: 
       <a href="https://www.connectedforwarmth.org.uk/" target="_blank">https://www.connectedforwarmth.org.uk/</a>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Connected%20for%20Warmth'"> Send Link </button>
     </p>
+
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Connected%20for%20Warmth\`
+    "
+>
+    Send link to review further information
+</button>
+
   </section>
   </div>
   </details>
@@ -321,8 +348,21 @@ const energySupport = new ContentB(
     <p>
       More information about independent energy advice from Green Doctors can be found at: 
       <a href="https://www.groundwork.org.uk/greendoctor/" target="_blank">https://www.groundwork.org.uk/greendoctor/</a>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Green%20Doctor'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Green%20Doctor\`
+    "
+>
+    Send link to review further information
+</button>
+
   </section>
   </div>
   </details>
@@ -368,10 +408,51 @@ const energySupport = new ContentB(
     </p>
     <p>
       <ul>
-        <li>compare fuel costs between different suppliers to get a better deal. Visit <a href="https://www.energyhelpline.com/" target="_blank">https://www.energyhelpline.com/</a> or call <a href="tel:0800 0740745">0800 0740745</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Energy%20Help%20Line'"> Send Link </button></li>
+        <li>compare fuel costs between different suppliers to get a better deal. Visit <a href="https://www.energyhelpline.com/" target="_blank">https://www.energyhelpline.com/</a> or call <a href="tel:0800 0740745">0800 0740745</a> </li>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Energy%20Help%20Line\`
+    "
+>
+    Send link to review further information
+</button>
+
         <li>it is often cheaper to get both gas and electricity from the same supplier and there is usually a discount for paying by Direct Debit</li>
         <li>many suppliers offer discounted schemes for older people or people claiming benefit</li>
-        <li>some suppliers, including <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=British%20Gas%20Energy%20Trust'"> Send Link </button> or <a href="https://www.edfenergytrust.org.uk/" target="_blank">https://www.edfenergytrust.org.uk/</a>, offer financial grants to customers in need</li> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=EDF%20Energy%20Trust'"> Send Link </button>
+        <li>some suppliers, including <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a>  or <a href="https://www.edfenergytrust.org.uk/" target="_blank">https://www.edfenergytrust.org.uk/</a>, offer financial grants to customers in need</li> 
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=EDF%20Energy%20Trust\`
+    "
+>
+    Send link to review further information
+</button>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=EDF%20Energy%20Trust\`
+    "
+>
+    Send link to review further information
+</button>
+
         <li>pensioners or individuals with sight or hearing impairments, disability or chronic illness should ask to be put on their supplier’s ‘Priority Services Register’, so they can’t be disconnected between the 1 October and 31 March</li>
         <li>the Winter Fuel Payment helpline is <a href="tel:0800 7310160">0800 7310160</a></li>
       </ul>
@@ -389,7 +470,7 @@ const energySupport = new ContentB(
       </ul>
     </p>
     <p>
-    If the system still won’t work, report a repair at: <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=British%20Gas%20Energy%20Trust'"> Send Link </button> or <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Request%20a%20repair%20to%20a%20council%20property'"> Send Link </button>
+    If the system still won’t work, report a repair at: <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> 
     </p>
     <p>
     If you want someone to visit your home and explain how the central heating works, call us on <a href="tel:0114 2735555">0114 2735555</a> or visit your Neighbourhood Office.
@@ -405,8 +486,22 @@ const energySupport = new ContentB(
   <div class="accordion-content">
     <p>
       More information about help from your energy supplier can be found at: 
-      <a href="https://www.gov.uk/energy-company-obligation" target="_blank">https://www.gov.uk/energy-company-obligation</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Help%20from%20Your%20Energy%20Supplier'"> Send Link </button>
+      <a href="https://www.gov.uk/energy-company-obligation" target="_blank">https://www.gov.uk/energy-company-obligation</a>
     </p>
+
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information and to apply send link to apply online"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Help%20from%20Your%20Energy%20Supplier\`
+    "
+>
+    Send link to review further information
+</button>
+
   </section>
   </div>
   </details>
@@ -418,8 +513,22 @@ const energySupport = new ContentB(
   <div class="accordion-content">
     <p>
       More information about National Energy Action can be found at: 
-      <a href="https://www.nea.org.uk/" target="_blank">https://www.nea.org.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=National%20Energy%20Action'"> Send Link </button>
+      <a href="https://www.nea.org.uk/" target="_blank">https://www.nea.org.uk/</a>
     </p>
+
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=National%20Energy%20Action\`
+    "
+>
+    Send link to review further information
+</button>
+
   </section>
   </div>
   </details>
@@ -451,15 +560,43 @@ const energySupport = new ContentB(
       Once you have made an application and it's been approved, your payment details will be shared 
       with the Council in order to process your payment. A privacy notice regarding sharing personal 
       information is available for you to read on our privacy notice page which can be found here: 
-      <a href="https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice" target="_blank">https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Privacy%20notice'"> Send Link </button>
+      <a href="https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice" target="_blank">https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice</a> 
     </p>
+
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Privacy%20notice\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Further support</h3>
     <p>
       If you need to speak to someone about the schemes, there is a dedicated government 
       helpline to answer your queries. You can access the helpline details at: 
       <a href="https://www.gov.uk/get-help-energy-bills" target="_blank">https://www.gov.uk/get-help-energy-bills</a>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Help%20with%20Your%20Energy%20Bills'"> Send Link </button>
+      
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Help%20with%20Your%20Energy%20Bills\`
+    "
+>
+    Send link to review further information
+</button>
+
   </section>
   </div>
   </details>
@@ -472,8 +609,21 @@ const energySupport = new ContentB(
     <p>
       More information about Warm Homes Sheffield can be found at: 
       <a href="https://www.warmhomessheffield.org.uk/" target="_blank">https://www.warmhomessheffield.org.uk/</a>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Warm%20Homes%20Sheffield'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Warm%20Homes%20Sheffield\`
+    "
+>
+    Send link to review further information
+</button>
+    
   </section>
   </div>
   </details>
@@ -494,19 +644,91 @@ const findFoodSupportAndResourcesInSheffield = new ContentB(
       Accessible support for saving money and reducing food waste, here a few websites to offer customers.
     </p>
     <ul>
-      <li>Directory of food support services available across Sheffield: <a href="https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield" target="_blank">https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Find%20food%20support%20in%20Sheffield'"> Send Link </button></li>
-      <li>Affordable groceries for members with surplus food from supermarkets and wholesalers: <a href="https://communitygrocery.org.uk/how-we-can-help" target="_blank">https://communitygrocery.org.uk/how-we-can-help</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Community%20Grocery'"> Send Link </button></li>
-      <li>Resources to cook healthy, low-cost meals through mentoring and recipe support: <a href="https://bagsoftaste.org/" target="_blank">https://bagsoftaste.org/</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Bags%20of%20Taste'"> Send Link </button></li>
-      <li>Guide to budgeting and meal planning to reduce food costs: <a href="https://www.sheffieldissweetenough.org/res/downloads/feed-your-family-for-less-booklet.pdf" target="_blank">https://www.sheffieldissweetenough.org/res/downloads/feed-your-family-for-less-booklet.pdf</a><br><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Feed%20your%20family%20for%20less'"> Send Link </button></li>
-      <li>Deals and discounts for dining out or ordering food: <a href="https://www.moneysavingexpert.com/deals/cheap-restaurant-deals/" target="_blank">https://www.moneysavingexpert.com/deals/cheap-restaurant-deals/</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Restaurant%20Deals%20and%20Vouchers'"> Send Link </button></li>
+      <li>Directory of food support services available across Sheffield: <a href="https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield" target="_blank">https://www.sheffield.gov.uk/cost-of-living/find-food-support-sheffield</a></li>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information and to apply send link to apply online"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Find%20food%20support%20in%20Sheffield\`
+    "
+>
+    Send link to review further information
+</button>
+
+
+      <li>Affordable groceries for members with surplus food from supermarkets and wholesalers: <a href="https://communitygrocery.org.uk/how-we-can-help" target="_blank">https://communitygrocery.org.uk/how-we-can-help</a></li>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Community%20Grocery\`
+    "
+>
+    Send link to review further information
+</button>
+
+
+      <li>Resources to cook healthy, low-cost meals through mentoring and recipe support: <a href="https://bagsoftaste.org/" target="_blank">https://bagsoftaste.org/</a></li>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Bags%20of%20Taste\`
+    "
+>
+    Send link to review further information
+</button>
+
+      
+      <li>Guide to budgeting and meal planning to reduce food costs: <a href="https://www.sheffieldissweetenough.org/res/downloads/feed-your-family-for-less-booklet.pdf" target="_blank">https://www.sheffieldissweetenough.org/res/downloads/feed-your-family-for-less-booklet.pdf</a></li>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Feed%20your%20family%20for%20less\`
+    "
+>
+    Send link to review further information
+</button>
+
+
+      <li>Deals and discounts for dining out or ordering food: <a href="https://www.moneysavingexpert.com/deals/cheap-restaurant-deals/" target="_blank">https://www.moneysavingexpert.com/deals/cheap-restaurant-deals/</a></li>
+
+      <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Restaurant%20Deals%20and%20Vouchers\`
+    "
+>
+    Send link to review further information
+</button>
+
     </ul>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "cost_of_living_scheme_transferred_to_service" },
   { typeKey: "cost_of_living_scheme_information_provided" },
-  { type: "Information",
-    keywords: [],
-    categories: ["benefits"] },
+  { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "02/12/2024", name: "Andy Walker" }
 );
 
@@ -545,8 +767,22 @@ const howYouCanHelpYourCommunity = new ContentB(
       to continually grow their responsible business practices. They have developed guidance on the 
       different ways that organisations can help to respond to the cost-of-living crisis which is 
       available on their website at:
-      <a href="https://www.bitc.org.uk/cost-living-crisis-helping-businesses-respond/" target="_blank">https://www.bitc.org.uk/cost-living-crisis-helping-businesses-respond/</a> <br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20crisis%20helping%20businesses%20respond'"> Send Link </button>
+      <a href="https://www.bitc.org.uk/cost-living-crisis-helping-businesses-respond/" target="_blank">https://www.bitc.org.uk/cost-living-crisis-helping-businesses-respond/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20crisis%20helping%20businesses%20respond\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Supporting your employees</h3>
     <p>
       One of the most tangible and direct ways any organisation can help alleviate the 
@@ -578,8 +814,22 @@ const howYouCanHelpYourCommunity = new ContentB(
   <div class="accordion-content">
     <p>
       More information about donating to Citzens Advice Sheffield can be found at: 
-      <a href="https://citizensadvicesheffield.org.uk/support-us/" target="_blank">https://citizensadvicesheffield.org.uk/support-us/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Citizens%20Advice%20Sheffield%20support%20us'"> Send Link </button>
+      <a href="https://citizensadvicesheffield.org.uk/support-us/" target="_blank">https://citizensadvicesheffield.org.uk/support-us/</a> 
     </p>
+
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information and to apply send link to apply online"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Citizens%20Advice%20Sheffield%20support%20us\`
+    "
+>
+    Send link to review further information
+</button>
+
   </section>
   </div>
   </details>
@@ -591,8 +841,23 @@ const howYouCanHelpYourCommunity = new ContentB(
   <div class="accordion-content">
     <p>
       More information about Voluntary Action Sheffield can be found at: 
-      <a href="https://www.vas.org.uk/what-we-do/communitysupportforcostoflivingcrisis/" target="_blank">https://www.vas.org.uk/what-we-do/communitysupportforcostoflivingcrisis/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Voluntary%20and%20Community%20Support'"> Send Link </button>
+      <a href="https://www.vas.org.uk/what-we-do/communitysupportforcostoflivingcrisis/" target="_blank">https://www.vas.org.uk/what-we-do/communitysupportforcostoflivingcrisis/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Voluntary%20and%20Community%20Support\`
+    "
+>
+    Send link to review further information
+</button>
+
+
   </section>
   </div>
   </details>
@@ -604,8 +869,23 @@ const howYouCanHelpYourCommunity = new ContentB(
   <div class="accordion-content">
     <p>
       More information about donating to Community Grocery can be found at: 
-      <a href="https://communitygrocery.org.uk/donate/" target="_blank">https://communitygrocery.org.uk/donate/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Community%20Grocery'"> Send Link </button>
+      <a href="https://communitygrocery.org.uk/donate/" target="_blank">https://communitygrocery.org.uk/donate/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Community%20Grocery\`
+    "
+>
+    Send link to review further information
+</button>
+
+
   </section>
   </div>
   </details>
@@ -617,8 +897,22 @@ const howYouCanHelpYourCommunity = new ContentB(
   <div class="accordion-content">
     <p>
       More information about donating to South Yorkshire's Community Foundation can be found at: 
-      <a href="https://www.sycf.org.uk/apply" target="_blank">https://www.sycf.org.uk/apply</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=South%20Yorkshires%20Community%20Foundation'"> Send Link </button>
+      <a href="https://www.sycf.org.uk/apply" target="_blank">https://www.sycf.org.uk/apply</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=South%20Yorkshires%20Community%20Foundation\`
+    "
+>
+    Send link to review further information
+</button>
+
   </section>
   </div>
   </details>
@@ -630,8 +924,22 @@ const howYouCanHelpYourCommunity = new ContentB(
   <div class="accordion-content">
     <p>
       More information about Sheffield Volunteer Centre can be found at: 
-      <a href="https://www.sheffieldvolunteercentre.org.uk/" target="_blank">https://www.sheffieldvolunteercentre.org.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Volunteer%20Centre'"> Send Link </button>
+      <a href="https://www.sheffieldvolunteercentre.org.uk/" target="_blank">https://www.sheffieldvolunteercentre.org.uk/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Volunteer%20Centre\`
+    "
+>
+    Send link to review further information
+</button>
+
   </section>
   </div>
   </details>
@@ -643,8 +951,22 @@ const howYouCanHelpYourCommunity = new ContentB(
   <div class="accordion-content">
     <p>
       More information about donating to Sheffield 1000 charity can be found at: 
-      <a href="https://thesheffield1000.org/" target="_blank">https://thesheffield1000.org/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%201000%20charity'"> Send Link </button>
+      <a href="https://thesheffield1000.org/" target="_blank">https://thesheffield1000.org/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%201000%20charity\`
+    "
+>
+    Send link to review further information
+</button>
+
   </section>
   </div>
   </details>
@@ -656,8 +978,22 @@ const howYouCanHelpYourCommunity = new ContentB(
   <div class="accordion-content">
     <p>
       More information about donating to Sheffield Foodbanks can be found at: 
-      <a href="https://www.sheffieldfoodbank.org.uk/" target="_blank">https://www.sheffieldfoodbank.org.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=sheffield%20food%20bank'"> Send Link </button>
+      <a href="https://www.sheffieldfoodbank.org.uk/" target="_blank">https://www.sheffieldfoodbank.org.uk/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=sheffield%20food%20bank\`
+    "
+>
+    Send link to review further information
+</button>
+
   </section>
   </div>
   </details>
@@ -756,8 +1092,22 @@ const moneySupport = new ContentB(
       </p>
       <p>
         You can find more information on what to do if you receive a Migration Notice at:
-        <a href="https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice" target="_blank">https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Migration%20Notice'"> Send Link </button>
+        <a href="https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice" target="_blank">https://www.sheffield.gov.uk/benefits/what-do-if-you-receive-migration-notice</a>
       </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Migration%20Notice\`
+    "
+>
+    Send link to review further information
+</button>
+
     </section>
       <h3>Who is eligible</h3>
       <p>
@@ -772,20 +1122,61 @@ const moneySupport = new ContentB(
         </ul>
       </p>
       <p>
-          You can use the following calculator to check whether you would be entitled to Universal Credit: <a href="https://www.entitledto.co.uk/benefits-calculator/" target="_blank">https://www.entitledto.co.uk/benefits-calculator/</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Benefits%20Calculator'"> Send Link </button>
+          You can use the following calculator to check whether you would be entitled to Universal Credit: <a href="https://www.entitledto.co.uk/benefits-calculator/" target="_blank">https://www.entitledto.co.uk/benefits-calculator/</a>
       </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Benefits%20Calculatory\`
+    "
+>
+    Send link to review further information
+</button>
+
       <p>
         If you are still unsure you should seek advice from a benefits advisor at your local DWP office or Job Centre. You can find this at:  
-        <a href="https://find-your-nearest-jobcentre.dwp.gov.uk/search.php" target="_blank">https://find-your-nearest-jobcentre.dwp.gov.uk/search.php</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Nearest%20Jobcentre'"> Send Link </button>
+        <a href="https://find-your-nearest-jobcentre.dwp.gov.uk/search.php" target="_blank">https://find-your-nearest-jobcentre.dwp.gov.uk/search.php</a> 
       </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Nearest%20Jobcentre\`
+    "
+>
+    Send link to review further information
+</button>
+
       <p>
         You can also contact the Citizens Advice for money, debt advice and whether Universal Credit is right for you, 
         by visiting their website or calling the Help to Claim line on <a href="tel:0800 1448444">0800 1448444</a>.
       </p>
       <p>
         You can contact Citizens Advice at: 
-        <a href="https://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/Check-if-you-can-get-Universal-Credit/" target="_blank">https://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/Check-if-you-can-get-Universal-Credit/</a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Check%20if%20you%20can%20get%20Universal%20Credit'"> Send Link </button>
+        <a href="https://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/Check-if-you-can-get-Universal-Credit/" target="_blank">https://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/Check-if-you-can-get-Universal-Credit/</a>
       </p>
+
+      <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Check%20if%20you%20can%20get%20Universal%20Credit\`
+    "
+>
+    Send link to review further information
+</button>
       <h3>How much you could receive</h3>
       <p>
       The amount you receive will depend on:
@@ -814,11 +1205,25 @@ const moneySupport = new ContentB(
       </p>
       <p>
         You can apply for Universal Credit at: 
-        <a href="https://www.gov.uk/universal-credit/how-to-claim" target="_blank">https://www.gov.uk/universal-credit/how-to-claim</a> <br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Universal%20Credit'"> Send Link </button>
+        <a href="https://www.gov.uk/universal-credit/how-to-claim" target="_blank">https://www.gov.uk/universal-credit/how-to-claim</a> 
         Find out how Universal Credit could help you at: 
-        <a href="https://ucmove.campaign.gov.uk/" target="_blank">https://ucmove.campaign.gov.uk/</a> <br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=How%20Universal%20Credit%20could%20help%20you'"> Send Link </button>
+        <a href="https://ucmove.campaign.gov.uk/" target="_blank">https://ucmove.campaign.gov.uk/</a> 
 
       </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=How%20Universal%20Credit%20could%20help%20you\`
+    "
+>
+    Send link to review further information
+</button>
+
   </div>
   </details>
   <details class="accordion">
@@ -829,8 +1234,21 @@ const moneySupport = new ContentB(
   <div class="accordion-content">
     <p>
       You can find out more information about the Sheffield Credit Union at: 
-      <a href="https://sheffieldcreditunion.com/" target="_blank">https://sheffieldcreditunion.com/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Credit%20Union'"> Send Link </button>
+      <a href="https://sheffieldcreditunion.com/" target="_blank">https://sheffieldcreditunion.com/</a> 
     </p>
+
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Credit%20Union\`
+    "
+>
+    Send link to review further information
+</button>
     </section>
   </div>
   </details>
@@ -842,8 +1260,22 @@ const moneySupport = new ContentB(
   <div class="accordion-content">
     <p>
       You can find out more information about the Healthy Start Scheme at: 
-      <a href="https://www.healthystart.nhs.uk/" target="_blank">https://www.healthystart.nhs.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Healthy%20Start'"> Send Link </button>
+      <a href="https://www.healthystart.nhs.uk/" target="_blank">https://www.healthystart.nhs.uk/</a>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Healthy%20Start\`
+    "
+>
+    Send link to review further information
+</button>
+
     </section>
   </div>
   </details>
@@ -864,8 +1296,22 @@ const moneySupport = new ContentB(
     </p>
     <p>
       More information about getting help with transport if you are referred to hospital at: 
-      <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/" target="_blank">https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Healthcare%20Travel%20Costs%20Scheme'"> Send Link </button>
+      <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/" target="_blank">https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Healthcare%20Travel%20Costs%20Scheme\`
+    "
+>
+    Send link to review further information
+</button>
+
     </section>
   </div>
   </details>
@@ -946,8 +1392,21 @@ const moneySupport = new ContentB(
     </p>
     <p>
       Check your eligibility and calculating your entitlement at:
-      <a href="https://www.entitledto.co.uk/" target="_blank">https://www.entitledto.co.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Entitled%20To'"> Send Link </button>
+      <a href="https://www.entitledto.co.uk/" target="_blank">https://www.entitledto.co.uk/</a>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Entitled%20To\`
+    "
+>
+    Send link to review further information
+</button>
 
     </section>
   </div>
@@ -960,8 +1419,22 @@ const moneySupport = new ContentB(
   <div class="accordion-content">
     <p>
       You can find out more information about the Sheffield Money Support Guide at: 
-      <a href="https://sheffieldmoneysupport.co.uk/" target="_blank">https://sheffieldmoneysupport.co.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Money%20Support'"> Send Link </button>
+      <a href="https://sheffieldmoneysupport.co.uk/" target="_blank">https://sheffieldmoneysupport.co.uk/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Money%20Support\`
+    "
+>
+    Send link to review further information
+</button>
+
     </section>
   </div>
   </details>
@@ -973,8 +1446,22 @@ const moneySupport = new ContentB(
   <div class="accordion-content">
     <p>
       You can find out more information about Multiply at: 
-      <a href="https://linktr.ee/multiplysheffield" target="_blank">https://linktr.ee/multiplysheffield</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Multiply%20Sheffield'"> Send Link </button>
+      <a href="https://linktr.ee/multiplysheffield" target="_blank">https://linktr.ee/multiplysheffield</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Multiply%20Sheffield\`
+    "
+>
+    Send link to review further information
+</button>
+
     </section>
   </div>
   </details>
@@ -994,8 +1481,22 @@ const moneySupport = new ContentB(
     </p>
     <p>
       More information on free vitamins at: 
-      <a href="https://www.sheffield.gov.uk/sites/default/files/2023-05/NHS_Vitamin_Support.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-05/NHS_Vitamin_Support.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=NHS%20Vitamin%20Support'"> Send Link </button>
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2023-05/NHS_Vitamin_Support.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-05/NHS_Vitamin_Support.pdf</a>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=NHS%20Vitamin%20Support\`
+    "
+>
+    Send link to review further information
+</button>
+
     <p>
       Children who are having 500ml or more of formula a day do not need these vitamins.
       You or your children should not take more than the recommended amount.
@@ -1020,9 +1521,23 @@ const moneySupport = new ContentB(
     </p>
     <p>
       More information on prescription prepayment certificates by calling <a href="tel:0300 3301341">0300 3301341</a> or visiting: 
-      <a href="https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start" target="_blank">https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Prescription%20Prepayment%20Certificate'"> Send Link </button>
+      <a href="https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start" target="_blank">https://services.nhsbsa.nhs.uk/buy-prescription-prepayment-certificate/start</a> 
 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Prescription%20Prepayment%20Certificate\`
+    "
+>
+    Send link to review further information
+</button>
+
     <p>
       Children who are having 500ml or more of formula a day do not need these vitamins.
       You or your children should not take more than the recommended amount.
@@ -1090,7 +1605,11 @@ const moneySupport = new ContentB(
   </div>
   </details>
   `,
-  { buttonLabel: "Apply for Discretionary Housing Payment and Council Tax Hardship Scheme", formName: "apply_dhp_cths" },
+  {
+    buttonLabel:
+      "Apply for Discretionary Housing Payment and Council Tax Hardship Scheme",
+    formName: "apply_dhp_cths",
+  },
   { typeKey: "cost_of_living_scheme_transferred_to_service" },
   { typeKey: "cost_of_living_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
@@ -1146,8 +1665,22 @@ const supportForBusinesses = new ContentB(
     <p>
     You can read about our team on the Business Sheffield website. 
     If you’d like support, contact the Business Sheffield team at: 
-    <a href="https://www.welcometosheffield.co.uk/business/" target="_blank">https://www.welcometosheffield.co.uk/business/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Welcome%20to%20Sheffield'"> Send Link </button>
+    <a href="https://www.welcometosheffield.co.uk/business/" target="_blank">https://www.welcometosheffield.co.uk/business/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Welcome%20to%20Sheffield\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h4>Resources for managing the cost of living in your business</h4>
     <p>
       We know lots of businesses are making changes at the moment to manage the impact of the rising 
@@ -1163,8 +1696,22 @@ const supportForBusinesses = new ContentB(
                     A resource sheet to help you navigate the process of switching energy contracts; 
                     know what to do during energy sales calls; and look out for extra money you could 
                     be paying on your bill.
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/energy-suppliers-contracts-and-bills-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/energy-suppliers-contracts-and-bills-1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Energy%20Suppliers%20Contracts%20and%20Bills'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/energy-suppliers-contracts-and-bills-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/energy-suppliers-contracts-and-bills-1.pdf</a> 
                 </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Energy%20Suppliers%20Contracts%20and%20Bills\`
+    "
+>
+    Send link to review further information
+</button>
+
             </div>
         </details>
         <details class="details-accordion">
@@ -1177,13 +1724,41 @@ const supportForBusinesses = new ContentB(
                     and ensure you avoid them.
                     <p>
                     Guide for saving energy in your business:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-in-your-business.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-in-your-business.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Saving%20energy%20in%20your%20business'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-in-your-business.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-in-your-business.pdf</a> 
                     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Saving%20energy%20in%20your%20business\`
+    "
+>
+    Send link to review further information
+</button>
+
                     <p>
                     Guide for saving energy in your food business:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Saving%20energy%20for%20your%20food%20business'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf</a>
                     </p>
                 </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Saving%20energy%20for%20your%20food%20business\`
+    "
+>
+    Send link to review further information
+</button>
+
             </div>
         </details>
         <details class="details-accordion">
@@ -1195,8 +1770,22 @@ const supportForBusinesses = new ContentB(
                     A guide to help you get to grips with your cashflow; understand what each 
                     product costs and brings in; and think about whether the concept behind your 
                     business still serves you in the current climate.
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf" target="_blank>https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Taking%20control%20of%20costs%20and%20bills'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf" target="_blank>https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf</a> 
                 </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Taking%20control%20of%20costs%20and%20bills\`
+    "
+>
+    Send link to review further information
+</button>
+
             </div>
         </details>
         <details class="details-accordion">
@@ -1209,46 +1798,184 @@ const supportForBusinesses = new ContentB(
                     businesses to help them manage their cost of living. 
                     <p>
                     Arabic:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Arabic'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf</a> 
                     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Arabic\`
+    "
+>
+    Send link to review further information
+</button>
+
                     <p>
                     Bengali:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources-_bengali_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources-_bengali_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Bengali'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources-_bengali_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources-_bengali_0.pdf</a> 
                     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Bengali\`
+    "
+>
+    Send link to review further information
+</button>
+
                     <p>
                     Chinese:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_chinese_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_chinese_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Chinese'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_chinese_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_chinese_0.pdf</a> 
                     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Chinese\`
+    "
+>
+    Send link to review further information
+</button>
+
                     <p>
                     Italian:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Italian'"> Send Link </button>
-
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf</a> 
                     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Italian\`
+    "
+>
+    Send link to review further information
+</button>
+
                     <p>
                     Kurdish:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_kurdish_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_kurdish_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Kurdish'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_kurdish_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_kurdish_0.pdf</a> 
                     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Kurdish\`
+    "
+>
+    Send link to review further information
+</button>
+
                     <p>
                     Pakistani:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Pakistani'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf</a> 
                     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Pakistani\`
+    "
+>
+    Send link to review further information
+</button>
+
                     <p>
                     Polish:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_polish_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_polish_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Polish'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_polish_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_polish_0.pdf</a> 
                     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Polish\`
+    "
+>
+    Send link to review further information
+</button>
+
                     <p>
                     Slovak:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Slovak'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf</a> 
                     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Slovak\`
+    "
+>
+    Send link to review further information
+</button>
+
                     <p>
                     Somali:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_somali.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_somali.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Somali'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_somali.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_somali.pdf</a> 
                     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Somali\`
+    "
+>
+    Send link to review further information
+</button>
+
                     <p>
                     Urdu:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Slovak'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf</a> 
                     </p>
-                </p>
+                
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Slovak\`
+    "
+>
+    Send link to review further information
+</button>
+
             </div>
         </details>
     </div>
@@ -1280,9 +2007,22 @@ const supportForBusinesses = new ContentB(
       </p>
       <p>
         Find out more about rateable value at: 
-        <a href="https://www.gov.uk/government/publications/autumn-statement-2022-business-rates-factsheet/autumn-statement-2022-business-rates-factsheet" target="_blank">https://www.gov.uk/government/publications/autumn-statement-2022-business-rates-factsheet/autumn-statement-2022-business-rates-factsheet</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Rateable%20Value'"> Send Link </button>
-
+        <a href="https://www.gov.uk/government/publications/autumn-statement-2022-business-rates-factsheet/autumn-statement-2022-business-rates-factsheet" target="_blank">https://www.gov.uk/government/publications/autumn-statement-2022-business-rates-factsheet/autumn-statement-2022-business-rates-factsheet</a> 
       </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Rateable%20Value\`
+    "
+>
+    Send link to review further information
+</button>
+
     </section>
       <details class="details-accordion">
           <summary>
@@ -1315,10 +2055,23 @@ const supportForBusinesses = new ContentB(
               <p>
               Please note that you must pay as billed while your application is being considered. If you are unable to pay, please contact us. 
               If you have received any notices from us regarding non-payment, please contact us immediately so that we can come to some form of payment arrangement.<br>
-              <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Discretionary%20Relief%20application%20form'"> Send Link </button>
+              
 
               </p>
       
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Discretionary%20Relief%20application%20form\`
+    "
+>
+    Send link to review further information
+</button>
+
           </div>
       </details>
       <details class="details-accordion">
@@ -1354,8 +2107,20 @@ const supportForBusinesses = new ContentB(
               <p>
               We may also ask you to provide any additional information that supports your claim. We will write to you and ask you to provide this if we need it. 
               Please remember to provide as much proof as possible with your application. Your application will only be considered when we receive a fully completed application, 
-              and you have provided any proof we ask for. Please contact us if you want to know more about this relief.<br>
-              <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Hardship%20Relief%20application%20form'"> Send Link </button>
+              and you have provided any proof we ask for. Please contact us if you want to know more about this relief.
+
+ <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Hardship%20Relief%20application%20form\`
+    "
+>
+    Send link to review further information
+</button>             
 
               </p>
       
@@ -1370,9 +2135,20 @@ const supportForBusinesses = new ContentB(
                   80% Mandatory rate relief is available to registered charities or charities exempted from registration as a charity. 
                   Registered Community Amateur Sports Clubs are also entitled if the use of the club is wholly or mainly for charitable purposes. 
                   Apply using the 'Charity Relief application form'.<br>
-                  <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Charity%20Relief%20application%20form'"> Send Link </button>
-
               </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Charity%20Relief%20application%20form\`
+    "
+>
+    Send link to review further information
+</button>              
         
           </div>
       </details>
@@ -1535,10 +2311,21 @@ const supportForBusinesses = new ContentB(
                 <li>you take up occupation of any property which is not mentioned in your application for relief – these changes will have to be notified through a fresh application</li>
               </ul>
               <p>
-                If you believe your business may qualify for relief please complete the 'Small Business Rates Relief application form'.<br>
-                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Business%20Rates%20Support%20for%20Small%20Business%20application%20form'"> Send Link </button>
-
+                If you believe your business may qualify for relief please complete the 'Small Business Rates Relief application form'.
               </p>
+
+ <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Business%20Rates%20Support%20for%20Small%20Business%20application%20form\`
+    "
+>
+    Send link to review further information
+</button>             
        
           </div>
       </details>
@@ -1617,22 +2404,22 @@ const supportForBusinesses = new ContentB(
               <p>
                 Capped Retail Discount application 2024: 
                 <a href="${window.location.protocol}//${
-                window.location.hostname
-                }/form/launch/send_link_to_service?${
-                KDF.getParams().customerid
-                ? `customerid=${KDF.getParams().customerid}&`
-                : ""
-                }interactionid=${KDF.getParams().interactionid}">Send link</a>
+    window.location.hostname
+  }/form/launch/send_link_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">Send link</a>
               </p>
               <p>
                 Capped Retail Discount application 2023: 
                 <a href="${window.location.protocol}//${
-                window.location.hostname
-                }/form/launch/send_link_to_service?${
-                KDF.getParams().customerid
-                ? `customerid=${KDF.getParams().customerid}&`
-                : ""
-                }interactionid=${KDF.getParams().interactionid}">Send link</a>
+    window.location.hostname
+  }/form/launch/send_link_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">Send link</a>
               </p>
               <h4>Eligible businesses</h4>
               <p>
@@ -1671,12 +2458,12 @@ const supportForBusinesses = new ContentB(
               <p>
                 Partly Empty Properties Relief application form: 
                 <a href="${window.location.protocol}//${
-                window.location.hostname
-                }/form/launch/send_link_to_service?${
-                KDF.getParams().customerid
-                ? `customerid=${KDF.getParams().customerid}&`
-                : ""
-                }interactionid=${KDF.getParams().interactionid}">Send link</a>
+    window.location.hostname
+  }/form/launch/send_link_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">Send link</a>
               </p>
           </div>
       </details>
@@ -1714,8 +2501,21 @@ const supportForBusinesses = new ContentB(
     <div class="accordion-content">
     <p>
       More information about paying your business rates can be found at: 
-      <a href="https://www.sheffield.gov.uk/business/pay-business-rates" target="_blank">https://www.sheffield.gov.uk/business/pay-business-rates</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Pay%20your%20business%20rates'"> Send Link </button>
     </p>
+
+ <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Pay%20your%20business%20rates\`
+    "
+>
+    Send link to review further information
+</button>
+
     </div>
   </details>
   <details class="accordion">
@@ -1726,8 +2526,22 @@ const supportForBusinesses = new ContentB(
     <div class="accordion-content">
     <p>
       More information about the Energy Bills Discount Scheme can be found at: 
-      <a href="https://www.gov.uk/guidance/energy-bills-discount-scheme" target="_blank">https://www.gov.uk/guidance/energy-bills-discount-scheme</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Energy%20Bills%20Discount%20Scheme'"> Send Link </button>
+      <a href="https://www.gov.uk/guidance/energy-bills-discount-scheme" target="_blank">https://www.gov.uk/guidance/energy-bills-discount-scheme</a>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Taking%20control%20of%20costs%20and%20bills\`
+    "
+>
+    Send link to review further information
+</button>
+
     </div>
   </details>
   `,
@@ -1789,9 +2603,23 @@ const travelSupport = new ContentB(
   <div class="accordion-content">
     <p>
       The South Yorkshire journey planner can be found at: 
-      <a href="https://journeyplanner.travelsouthyorkshire.com/" target="_blank">https://journeyplanner.travelsouthyorkshire.com/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Travel%20South%20Yorkshire'"> Send Link </button>
+      <a href="https://journeyplanner.travelsouthyorkshire.com/" target="_blank">https://journeyplanner.travelsouthyorkshire.com/</a>
 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Travel%20South%20Yorkshire\`
+    "
+>
+    Send link to review further information
+</button>
+
     </section>
   </div>
   </details>
@@ -1803,8 +2631,22 @@ const travelSupport = new ContentB(
   <div class="accordion-content">
     <p>
       Travel South Yorkshire Senior Pass information can be found at: 
-      <a href="https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/senior-pass" target="_blank">https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/senior-pass</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Travel%20South%20Yorkshire%20Senior%20Pass'"> Send Link </button>
+      <a href="https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/senior-pass" target="_blank">https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/senior-pass</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Travel%20South%20Yorkshire%20Senior%20Pass\`
+    "
+>
+    Send link to review further information
+</button>
+
     </section>
   </div>
   </details>
@@ -1816,8 +2658,22 @@ const travelSupport = new ContentB(
   <div class="accordion-content">
     <p>
       City Ride, Shopper Bus and Community Car scheme information can be found at: 
-      <a href="https://sheffieldct.co.uk/community-transport-for-individuals-sheffield/#1493884261153-541c9f1a-169b" target="_blank">https://sheffieldct.co.uk/community-transport-for-individuals-sheffield/#1493884261153-541c9f1a-169b</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Transport%20for%20Individuals'"> Send Link </button>
+      <a href="https://sheffieldct.co.uk/community-transport-for-individuals-sheffield/#1493884261153-541c9f1a-169b" target="_blank">https://sheffieldct.co.uk/community-transport-for-individuals-sheffield/#1493884261153-541c9f1a-169b</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Transport%20for%20Individuals\`
+    "
+>
+    Send link to review further information
+</button>
+
     </section>
   </div>
   </details>
@@ -1829,8 +2685,22 @@ const travelSupport = new ContentB(
   <div class="accordion-content">
     <p>
       Transport support information can be found at: 
-      <a href="https://helpforhouseholds.campaign.gov.uk/help-with-transport-costs/" target="_blank">https://helpforhouseholds.campaign.gov.uk/help-with-transport-costs/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Transport%20support%20Information'"> Send Link </button>
+      <a href="https://helpforhouseholds.campaign.gov.uk/help-with-transport-costs/" target="_blank">https://helpforhouseholds.campaign.gov.uk/help-with-transport-costs/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Transport%20support%20Information\`
+    "
+>
+    Send link to review further information
+</button>
+
     </section>
   </div>
   </details>
@@ -1851,8 +2721,22 @@ const travelSupport = new ContentB(
     </p>
     <p>
       More information can be found at:
-      <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/" target="_blank">https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Healthcare%20Travel%20Costs%20Scheme'"> Send Link </button>
+      <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/" target="_blank">https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Healthcare%20Travel%20Costs%20Scheme\`
+    "
+>
+    Send link to review further information
+</button>
+
     </section>
   </div>
   </details>
@@ -1864,9 +2748,21 @@ const travelSupport = new ContentB(
   <div class="accordion-content">
     <p>
       Information for the Travel South Yorkshire 18-22 Travel Pass can be found at: 
-      <a href="https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/18-22-discount-card" target="_blank">https://www.travelsouthyorkshire.com/en-gb/ticketsandpasses/18-22-discount-card</a> <br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Travel%20South%20Yorkshire%2018%20to%2022%20Travel%20Pass'"> Send Link </button>
-
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Travel%20South%20Yorkshire%2018%20to%2022%20Travel%20Pass\`
+    "
+>
+    Send link to review further information
+</button>
+
     </section>
   </div>
   </details>
@@ -1878,8 +2774,22 @@ const travelSupport = new ContentB(
   <div class="accordion-content">
     <p>
       Information about Jobcentre Plus Travel Discount Card can be found at: 
-      <a href="https://www.nationalrail.co.uk/railcards/concessionary-travel/" target="_blank">https://www.nationalrail.co.uk/railcards/concessionary-travel/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Jobcentre%20Plus%20Travel%20Discount%20Card'"> Send Link </button>
+      <a href="https://www.nationalrail.co.uk/railcards/concessionary-travel/" target="_blank">https://www.nationalrail.co.uk/railcards/concessionary-travel/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Jobcentre%20Plus%20Travel%20Discount%20Card\`
+    "
+>
+    Send link to review further information
+</button>
+
     </section>
   </div>
   </details>
@@ -1903,27 +2813,111 @@ const waysToReduceYourFuelBills = new ContentB(
       landlords and tenants in private, Council or Housing Association properties.
       Private landlords have legal duties and requirements around a minimum level 
       of energy efficiency, more information on this can be found at:
-      <a href="https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance#full-publication-update-history" target="_blank">https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance#full-publication-update-history</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Domestic%20private%20rented%20property%20energy%20efficiency%20standard'"> Send Link </button>
+      <a href="https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance#full-publication-update-history" target="_blank">https://www.gov.uk/guidance/domestic-private-rented-property-minimum-energy-efficiency-standard-landlord-guidance#full-publication-update-history</a>
 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Domestic%20private%20rented%20property%20energy%20efficiency%20standard\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Warm Homes Sheffield</h3>
     <p>
       This is a partnership between Sheffield City Council and energy experts AgilityEco.
 
       It provides a route to access a number of energy saving programmes that can help 
       Sheffield residents reduce energy use and stay warm and well.
-      <a href="https://www.warmhomessheffield.org.uk/" target="_blank">https://www.warmhomessheffield.org.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Warm%20Homes%20Sheffield'"> Send Link </button> <br>
+      <a href="https://www.warmhomessheffield.org.uk/" target="_blank">https://www.warmhomessheffield.org.uk/</a> 
       More advice and local support services can be found below.
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Warm%20Homes%20Sheffield\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Advice on saving energy and lowering your bills</h3>
     <p>
       We have identified a list of resources that you can use in order reduce the costs of your energy bills:
       <ul>
-        <li>GOV.UK: how to save energy and lower your bills this winter can be found at: <a href="https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/" target="_blank">https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Energy%20Saving%20Advice'"> Send Link </button></li> 
-        <li>Get help if you cannot afford your energy bills can be found at: <a href="https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills" target="_blank">https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Ofgem'"> Send Link </button></li>
-        <li>Understanding Energy Performance Certificates (EPC) can be found at: <a href="https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/" target="_blank">https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/</a> <br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Energy%20performance%20certificates%20explained'"> Send Link </button>
- </li> 
-        <li>Quick tips to save energy can be found at: <a href="https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/" target="_blank">https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Quick%20tips%20to%20save%20energy'"> Send Link </button> </li>
+        <li>GOV.UK: how to save energy and lower your bills this winter can be found at: <a href="https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/" target="_blank">https://helpforhouseholds.campaign.gov.uk/energy-saving-advice/</a> </li> 
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Energy%20Saving%20Advice\`
+    "
+>
+    Send link to review further information
+</button>
+
+        <li>Get help if you cannot afford your energy bills can be found at: <a href="https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills" target="_blank">https://www.ofgem.gov.uk/information-consumers/energy-advice-households/getting-help-if-you-cant-afford-your-energy-bills</a> </li>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Ofgem\`
+    "
+>
+    Send link to review further information
+</button>
+
+        <li>Understanding Energy Performance Certificates (EPC) can be found at: <a href="https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/" target="_blank">https://energysavingtrust.org.uk/advice/guide-to-energy-performance-certificates-epcs/</a> 
+ </li>
+ 
+ <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Energy%20performance%20certificates%20explained\`
+    "
+>
+    Send link to review further information
+</button>
+
+        <li>Quick tips to save energy can be found at: <a href="https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/" target="_blank">https://energysavingtrust.org.uk/hub/quick-tips-to-save-energy/</a>  </li>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Quick%20tips%20to%20save%20energy\`
+    "
+>
+    Send link to review further information
+</button>
+
       </ul>
     </p>
     <h3>Local and national support services</h3>
@@ -1946,8 +2940,22 @@ const waysToReduceYourFuelBills = new ContentB(
       LEAP can also provide information on benefits, budgeting and debt advice and energy tariff switching. 
       You can access the service online or by calling (freephone) <strong>0800 060 7567</strong> or emailing <a href="mailto:support@applyforleap.org.uk">support@applyforleap.org.uk</a>.
       Local Energy Advice Partnership can be found at: <a href="https://applyforleap.org.uk/" target="_blank">https://applyforleap.org.uk/</a> 
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Leap%20Appliances'"> Send Link </button>
+      
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Leap%20Appliances\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Citizens Advice Bureau Sheffield</h3>
     <p>
       Citizens Advice Bureau offer an extensive online guide to problems with your energy bill. 
@@ -1955,8 +2963,22 @@ const waysToReduceYourFuelBills = new ContentB(
       Contact them on freephone <strong>0800 448 0721</strong> for fuel debt advice and income maximisation.
     </p>
     <p>
-      Citizens Advice Sheffield: Get help can be found at: <a href="https://citizensadvicesheffield.org.uk/get-help/" target="_blank">https://citizensadvicesheffield.org.uk/get-help/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Citizens%20Advice%20Get%20Help'"> Send Link </button>
+      Citizens Advice Sheffield: Get help can be found at: <a href="https://citizensadvicesheffield.org.uk/get-help/" target="_blank">https://citizensadvicesheffield.org.uk/get-help/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Citizens%20Advice%20Get%20Help\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Green Doctor</h3>
     <p>
       Green Doctors, provide specialist advice on how households can reduce their energy bills and make their homes more energy efficient.
@@ -1972,8 +2994,21 @@ const waysToReduceYourFuelBills = new ContentB(
       </ul>
     <p>
       Green Doctor can be found at: <a href="https://www.groundwork.org.uk/greendoctor/" target="_blank">https://www.groundwork.org.uk/greendoctor/</a> 
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Green%20Doctor'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Green%20Doctor\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Improve Energy Efficiency Service</h3>
     <p>
       The Improve Energy Efficiency Service is a free Government endorsed service. If you own a property in England or Wales you can get recommendations 
@@ -1982,16 +3017,43 @@ const waysToReduceYourFuelBills = new ContentB(
       how much you could save on your bills and next steps if you want to make the improvement.
     </p>
     <p>
-      GOV.UK: Improve energy efficiency can be found at: <a href="https://www.gov.uk/improve-energy-efficiency" target="_blank">https://www.gov.uk/improve-energy-efficiency</a> <br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Find%20ways%20to%20save%20energy%20in%20your%20home'"> Send Link </button>
-
+      GOV.UK: Improve energy efficiency can be found at: <a href="https://www.gov.uk/improve-energy-efficiency" target="_blank">https://www.gov.uk/improve-energy-efficiency</a>  
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Find%20ways%20to%20save%20energy%20in%20your%20home\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Cost of living support and advice</h3>
     <p>
       Here you can find out the local and national support available to help you manage the cost of living in Sheffield.
     </p>
     <p>
-      Cost of living support and advice can be found at: <a href="https://www.sheffield.gov.uk/cost-of-living" target="_blank">https://www.sheffield.gov.uk/cost-of-living</a> <br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20support'"> Send Link </button>
+      Cost of living support and advice can be found at: <a href="https://www.sheffield.gov.uk/cost-of-living" target="_blank">https://www.sheffield.gov.uk/cost-of-living</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20support\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "cost_of_living_scheme_transferred_to_service" },
@@ -2007,13 +3069,38 @@ const welcomePlaces = new ContentB(
   `
     <p>
       Explore a map of Welcome Places in Sheffield, offering warm spaces and support. View the map here: <a href="https://www.vas.org.uk/sheffield-living-crisis-map-of-support/"
-      target="_blank">https://www.vas.org.uk/sheffield-living-crisis-map-of-support/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20living%20crisis%20map%20of%20support'"> Send Link </button>
-<br>
-      <br>
+      target="_blank">https://www.vas.org.uk/sheffield-living-crisis-map-of-support/</a> 
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20living%20crisis%20map%20of%20support\`
+    "
+>
+    Send link to review further information
+</button>      
 
       Learn about the Building Thriving Communities Programme, which provides local support and resources to strengthen communities. More information is available here: <a href="https://www.sheffield.gov.uk/thriving-communities"
-      target="_blank">https://www.sheffield.gov.uk/thriving-communities/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Building%20Thriving%20Communities%20Programme'"> Send Link </button>
+      target="_blank">https://www.sheffield.gov.uk/thriving-communities/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Building%20Thriving%20Communities%20Programme\`
+    "
+>
+    Send link to review further information
+</button>      
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "cost_of_living_transferred_to_service" },
@@ -2037,7 +3124,7 @@ const costOfLiving = new MenuB(
     supportFund,
     travelSupport,
     waysToReduceYourFuelBills,
-    welcomePlaces
+    welcomePlaces,
   ]
 );
 
@@ -2099,8 +3186,21 @@ const eligibilityAndApplication = new ContentB(
     </p>
     <p>
       Applications can be submitted online using the <a href="www.sheffield.gov.uk/localassistance" target="_blank">www.sheffield.gov.uk/localassistance</a> or telephone via <a href="tel:0114 2734567">0114 2734567</a>. Online applications allow you to save progress and return later if needed. <br> 
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20the%20Local%20Assistance%20Scheme'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20the%20Local%20Assistance%20Scheme\`
+    "
+>
+    Send link to review further information
+</button>      
+
     <p>
       Ensure you have details about your financial situation, emergency, or disaster ready when applying. If applying by telephone, have this information prepared before the call.
     </p>
@@ -2169,11 +3269,9 @@ const crisisGrantInformation = new MenuB(
     grantOverview,
     eligibilityAndApplication,
     paymentAndDecisions,
-    fraudPrevention
+    fraudPrevention,
   ]
 );
-
-
 
 //#endregion Crisis Grant
 
@@ -2224,7 +3322,19 @@ const howDoIApply = new ContentB(
       <a href="www.sheffield.gov.uk/cost-of-living">www.sheffield.gov.uk/cost-of-living</a>, if you need
       assistance to apply, you can call the Community Helpline on 01142734567
       (option 0) <br>
-        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20Living'"> Send Link </button>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20Living\`
+    "
+>
+    Send link to review further information
+</button>      
 
     </p>
   `,
@@ -2462,8 +3572,21 @@ const howDoesTheIndependanceGrantInformationApplicationProcessWork =
             Self Service. You can fill in the form yourself on our website:
             <a href="https://www.sheffield.gov.uk/localassistance">https://www.sheffield.gov.uk/localassistance</a>. 
             The form can be filled in on a computer or mobile device.
-            <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20the%20Local%20Assistance%20Scheme'"> Send Link </button>
           </li>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20the%20Local%20Assistance%20Scheme\`
+    "
+>
+    Send link to review further information
+</button>      
+
           <li>
             If you do not have internet access at home, you can use the internet for
             free at your local library or at any First Points.
@@ -2768,7 +3891,6 @@ const fraudulentClaimsForIndependanceGrants = new ContentB(
 
 //#endregion Independence Grant
 
-
 // const localAssistantScheme = new MenuB(
 //   "localAssistantScheme",
 //   "Local Assistant Scheme",
@@ -2813,5 +3935,10 @@ const benefits = new ServiceB(
   "benefits",
   "Benefits",
   `Housing Benefit, Council Tax Support, budgeting, local assistance grants and loans, benefits calculator, appeals…`,
-  [costOfLiving, crisisGrantInformation, independanceGrantInformation, householdSupportFund]
+  [
+    costOfLiving,
+    crisisGrantInformation,
+    independanceGrantInformation,
+    householdSupportFund,
+  ]
 );
