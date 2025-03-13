@@ -635,12 +635,19 @@ const energySupport = new ContentB(
   { date: "02/12/2024", name: "Andy Walker" }
 );
 
-const findFoodSupportAndResourcesInSheffield = new ContentB(
-  "findFoodSupportAndResourcesInSheffield",
-  "Food Support and Resources in Sheffield",
+const findFoodSupportAndResources = new ContentB(
+  "findFoodSupportAndResources",
+  "Food Support and Resources",
   "Access food support and resources in Sheffield, including affordable groceries, meal programs, and cost-saving guides.",
   `
-    <p>
+
+ <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Accessible support for saving money and reducing food waste, here a few websites to offer customers.</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+   <p>
       Accessible support for saving money and reducing food waste, here a few websites to offer customers.
     </p>
     <ul>
@@ -724,6 +731,16 @@ const findFoodSupportAndResourcesInSheffield = new ContentB(
 </button>
 
     </ul>
+
+
+  </section>
+  </div>
+  </details>
+
+
+
+
+ 
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "cost_of_living_scheme_transferred_to_service" },
@@ -1254,7 +1271,7 @@ const moneySupport = new ContentB(
   </details>
   <details class="accordion">
   <summary class="accordion-header">
-    <h3>Healthy Start Scheme: get help to buy food and milk</h3>
+    <h3>Healthy Start Scheme: Get help to buy food and milk</h3>
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
@@ -1788,6 +1805,8 @@ const supportForBusinesses = new ContentB(
 
             </div>
         </details>
+
+        
         <details class="details-accordion">
             <summary>
                 Resources in translation
@@ -3117,7 +3136,7 @@ const costOfLiving = new MenuB(
     applyForTheHouseholdSupportFund,
     employmentSupport,
     energySupport,
-    findFoodSupportAndResourcesInSheffield,
+    findFoodSupportAndResources,
     howYouCanHelpYourCommunity,
     moneySupport,
     supportForBusinesses,
