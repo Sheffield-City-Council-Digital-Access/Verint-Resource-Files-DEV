@@ -1811,35 +1811,7 @@ const supportForBusinesses = new ContentB(
             </summary>
             <div class="details-accordion-content">
          
- <p>
-                    These documents explain in various languages the support we have for 
-                    businesses to help them manage their cost of living. 
-                    <p>
-                    Arabic:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf</a> 
-                    </p>
-
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Arabic\`
-
-
-            </div>
-        </details>
-
-
-
-        <details class="details-accordion">
-            <summary>
-                Resources in translation
-            </summary>
-            <div class="details-accordion-content">
-                <p>
+<p>
                     These documents explain in various languages the support we have for 
                     businesses to help them manage their cost of living. 
                     <p>
@@ -2024,9 +1996,9 @@ const supportForBusinesses = new ContentB(
 
             </div>
         </details>
-    </div>
-  </details>
-  <details class="accordion">
+
+
+ <details class="accordion">
     <summary class="accordion-header">
         <h3>Business rate relief</h3>
         <div class="accordion-icon"></div>
