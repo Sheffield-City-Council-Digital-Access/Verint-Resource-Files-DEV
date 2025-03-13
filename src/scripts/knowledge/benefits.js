@@ -1778,17 +1778,21 @@ const supportForBusinesses = new ContentB(
 
             </div>
         </details>
+
         <details class="details-accordion">
             <summary>
-                Taking control of costs and income
+                Resources in translation
             </summary>
             <div class="details-accordion-content">
-                <p>
-                    A guide to help you get to grips with your cashflow; understand what each 
-                    product costs and brings in; and think about whether the concept behind your 
-                    business still serves you in the current climate.
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf" target="_blank>https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf</a> 
-                </p>
+               
+
+            <p>
+                    These documents explain in various languages the support we have for 
+                    businesses to help them manage their cost of living. 
+                    <p>
+                    Arabic:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf</a> 
+                    </p>
 
 <button
     type="button"
@@ -1797,7 +1801,169 @@ const supportForBusinesses = new ContentB(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Taking%20control%20of%20costs%20and%20bills\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Arabic\`
+    "
+>
+    Send link to review further information
+</button>
+
+                    <p>
+                    Bengali:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources-_bengali_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources-_bengali_0.pdf</a> 
+                    </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Bengali\`
+    "
+>
+    Send link to review further information
+</button>
+
+                    <p>
+                    Chinese:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_chinese_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_chinese_0.pdf</a> 
+                    </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Chinese\`
+    "
+>
+    Send link to review further information
+</button>
+
+                    <p>
+                    Italian:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf</a> 
+                    </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Italian\`
+    "
+>
+    Send link to review further information
+</button>
+
+                    <p>
+                    Kurdish:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_kurdish_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_kurdish_0.pdf</a> 
+                    </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Kurdish\`
+    "
+>
+    Send link to review further information
+</button>
+
+                    <p>
+                    Pakistani:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf</a> 
+                    </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Pakistani\`
+    "
+>
+    Send link to review further information
+</button>
+
+                    <p>
+                    Polish:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_polish_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_polish_0.pdf</a> 
+                    </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Polish\`
+    "
+>
+    Send link to review further information
+</button>
+
+                    <p>
+                    Slovak:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf</a> 
+                    </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Slovak\`
+    "
+>
+    Send link to review further information
+</button>
+
+                    <p>
+                    Somali:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_somali.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_somali.pdf</a> 
+                    </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Somali\`
+    "
+>
+    Send link to review further information
+</button>
+
+                    <p>
+                    Urdu:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf</a> 
+                    </p>
+                
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Cost%20of%20living%20Slovak\`
     "
 >
     Send link to review further information
