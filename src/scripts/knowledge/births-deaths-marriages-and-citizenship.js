@@ -257,6 +257,20 @@ const bookingARegistrarWedding = new ContentBDMaC(
 </button>
 
     </ul>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Legislation%20Contents\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Non-Refundable Booking Fees</h3>
     <p>When you have completed your ceremony booking you will be required to make payment, this is to reserve the date and time selected, please note this is a non-refundable fee.</p>
     <ul>
@@ -507,6 +521,20 @@ const licensedWeddingVenues = new ContentBDMaC(
 </button>
 
     <p>You can provisionally book a registrar up to 2 years ahead of the ceremony but it's your responsibility to contact the venue to check their availability.</p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Final%20ceremony%20payment\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Fees</h3>
     <ul>
         <li>Monday to Friday: £482.00</li>
