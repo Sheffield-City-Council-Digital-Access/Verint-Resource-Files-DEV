@@ -354,14 +354,13 @@ const disabledPersonsTravelPermit = new ContentTaT(
         Contact Centre<br>
         SYPTE<br>
         11 Broad Street West<br>
-        1 Union Street<br>
         Sheffield<br>
         Sheffield S1 2BQ
       </address>
     </p>
       <h3>I've sent my approval letter off but not got my pass</h3>
     <p>
-      Contact SYPTE direct <a href="tel:01709 515151">01709 515151</a>.
+      Contact SYPTE direct <a href="tel:0800 9520002">0800 9520002</a>.
     </p>
       <h3>Where is my pass (applied with SCC) Ive had a letter/phone call</h3>
     <p>
