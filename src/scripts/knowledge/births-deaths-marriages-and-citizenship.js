@@ -154,7 +154,7 @@ const bookNoticeOfMarriageApp = new ContentBDMaC(
     <h3>Proof of name, address, marital status and nationality</h3>
     <p>You will need to bring:</p>
     <ul>
-        <li>a valid passport for proof of your name, age and nationalit.y</li>
+        <li>a valid passport for proof of your name, age and nationality.</li>
         <li>your driving licence, a utility bill dated within the last 3 months, or a bank statement dated within a month for proof of your address that includes either your full name or at least your initials.</li>
         <li>Proof that a previous marriage or civil partnership has ended.</li>
         <li>decree absolute of divorce / dissolution.</li>

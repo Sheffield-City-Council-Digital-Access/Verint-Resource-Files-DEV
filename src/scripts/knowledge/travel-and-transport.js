@@ -339,15 +339,17 @@ const disabledPersonsTravelPermit = new ContentTaT(
       A disabled persons pass enables free public transport on buses, trams and
       trains.
     </p>
+    <h3>Where can I use my pass</h3>
     <p>
       If the Pass is being used within South Yorkshire the pass can be used at all
-      times of the day, however if the pass is being used beyond South Yorkshire
-      (within England or Wales) your pass is only valid between 9:30am - 11pm.
+      times of the day.
+      The pass can be used outside of South Yorkshire (within England or Wales)
+      between 9:30am and 11pm weekdays, all day at weekends and on Bank Holidays.
     </p>
-      <h3>What do I do with the approval letter</h3>
+    <h3>What do I do with the approval letter</h3>
     <p>
-      The purple form needs to be completed with a passport size photograph and 
-      returned to:
+      The purple form needs to be completed with a passport size and style photograph
+      (eg white background, looking forward etc) and returned to:
       <address>
         Contact Centre<br>
         SYPTE<br>
@@ -386,7 +388,9 @@ const disabledPersonsTravelPermit = new ContentTaT(
     address within 7 working days.
     </p>
     <h3>Travelling with a Carer</h3>
-
+    <p>
+    There are no age retrictions in place when applying to travel with a carer.
+    </p>
   <h4>Qualifying Conditions:</h4>
 <ul>
   <li>Higher rate care component of Disability Living Allowance with some mobility</li>
@@ -396,9 +400,6 @@ const disabledPersonsTravelPermit = new ContentTaT(
   <p>Your Travel pass will allow one carer to travel with you for free.</p>
 
   <h3>Replacement Disabled Travel Permit</h3>
-
-  
-
   <p>
     You can replace your lost, damaged, or stolen Disabled Person's Pass online by visiting: 
     <a href="https://www.travelsouthyorkshire.com/Disabledreplace/" target="_blank">https://www.travelsouthyorkshire.com/Disabledreplace/</a>
@@ -425,11 +426,6 @@ const disabledPersonsTravelPermit = new ContentTaT(
       >
         Send link to review further information
       </button>
-
-
-
-
-
 
    `,
   {
@@ -482,7 +478,7 @@ const disabledPersonsTravelPermit = new ContentTaT(
 
     categories: ["Travel and Transport"],
   },
-  { date: "27/02/2025", name: "Dinah Williams" }
+  { date: "11/03/2025", name: "Dinah Williams" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\

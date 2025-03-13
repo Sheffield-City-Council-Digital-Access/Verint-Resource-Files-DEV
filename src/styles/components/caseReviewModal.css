@@ -1,0 +1,115 @@
+#case-review-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(15px);
+  z-index: 1000;
+}
+#case-review-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 70rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  z-index: 1001;
+}
+
+#case-review-modal .modal-header {
+  background-color: var(--color-information);
+  color: var(--color-white);
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  height: 11.5rem;
+}
+
+#case-review-modal .modal-header h1 {
+  color: var(--color-white);
+}
+
+#case-review-modal .modal-main {
+  padding: 2rem 4rem;
+  background: var(--color-white);
+  font-size: 1.6rem;
+}
+
+#case-review-modal .modal-footer {
+  padding: 1rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+#case-review-modal .close-modal-btn,
+#review-case-content-container .go-to-page-btn {
+  color: var(--color-primary);
+  font-size: var(--font-height-p2);
+  font-weight: var(--font-weight-semibold);
+  padding: 0.6rem 1.2rem;
+  border: solid 0.1rem var(--color-primary);
+  cursor: pointer;
+  background: var(--color-white);
+  transition: 0.2s ease all;
+  width: 100%;
+  max-width: 44.5rem;
+  min-height: 5rem;
+  text-align: center;
+}
+
+#review-case-content-container .go-to-page-btn {
+  width: 8.5rem;
+  min-height: 4rem;
+  height: 5rem;
+}
+
+#review-case-content-container .go-to-page-btn:hover,
+#case-review-modal .close-modal-btn:hover {
+  color: var(--color-white);
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+#review-case-content-container
+  .go-to-page-btn:focus
+  #case-review-modal
+  .close-modal-btn:focus {
+  color: var(--color-white);
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  outline: 0.4rem solid var(--color-warning);
+  box-shadow: none;
+}
+
+#review-case-content-container {
+  border-top: 1px solid #707070;
+}
+
+#review-case-content-container .review-section {
+  padding: 2.1rem 0;
+  border-bottom: 1px solid #707070;
+}
+
+#review-case-content-container .review-content-header {
+  display: flex;
+}
+
+#review-case-content-container .review-content-header h3 {
+  margin-right: auto;
+}
+
+#review-case-content-container .review-content p {
+  margin: 0;
+}

@@ -1118,12 +1118,122 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE CLOSE CASE CLICK ------------------------------------------- \\
 
+  function createReviewSection(pageId, pageTitle, fields) {
+    let statusCardHtml = `
+      <div class="review-section">
+          <div class="review-content">
+              <div class="review-content-header">
+                  <h3>${pageTitle}</h3>
+                  <button type="button" class="go-to-page-btn" id="go-to-${pageId}">Edit</button>
+              </div>
+              ${fields
+                .map(
+                  (field) => `
+                    <p>${field.fieldlabel}: ${field.fieldValue}</p>
+                  `
+                )
+                .join("")}
+          </div>
+      </div>
+  `;
+
+    document
+      .getElementById("review-case-content-container")
+      .insertAdjacentHTML("beforeend", statusCardHtml);
+
+    const button = document.getElementById(`go-to-${pageId}`);
+    if (button) {
+      button.addEventListener("click", function () {
+        const modal = document.getElementById("case-review-modal");
+        modal.close();
+        modal.remove();
+        KDF.gotoPage(pageId, false, false, true);
+      });
+    }
+  }
+
+  function checkIsFormComplete(fields) {
+    let isComplete = true;
+    let incompleteFields = [];
+    let pages = [];
+
+    fields.forEach((field) => {
+      let value = KDF.getVal(field);
+      if (!value || value === "Pending" || value === "In progress") {
+        isComplete = false;
+        incompleteFields.push(field);
+      }
+    });
+
+    if (isComplete) {
+      return isComplete;
+    }
+
+    const modal = document.createElement("dialog");
+    modal.id = "case-review-modal";
+    modal.innerHTML = `
+      <div class="modal-header">
+        <h1>Incomplete process</h1>
+      </div>
+      <div class="modal-main">
+        <p>The following fields need completing before the case can be closed.</p>
+        <div id="review-case-content-container"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close-modal-btn" id="closeModal">Close</button>
+      </div>
+    `;
+
+    document.body.appendChild(modal);
+    modal.showModal();
+
+    incompleteFields.forEach((field) => {
+      let id = `dform_widget_${field}`;
+      let label = document.querySelector(`label[for='${id}']`);
+      let labelText = label ? label.textContent : field;
+      let pageTitleText = "Unknown Section";
+      let fieldValue = KDF.getVal(field) || "Not Answered";
+
+      let element = document.getElementById(id);
+      if (element) {
+        let page = element.closest('[data-type="page"]');
+        if (page) {
+          let pageTitle = page.querySelector(".page-title");
+          pageTitleText = pageTitle ? pageTitle.textContent : "Unknown Section";
+          let pageId = page.id
+            ? page.id.replace(/^dform_page_/, "")
+            : `page-${Math.random().toString(36).substr(2, 9)}`;
+          let pageData = pages.find((page) => page.pageId === pageId);
+          if (!pageData) {
+            pageData = { pageId, pageTitle: pageTitleText, fields: [] };
+            pages.push(pageData);
+          }
+          pageData.fields.push({
+            fieldlabel: labelText,
+            fieldValue: fieldValue,
+          });
+        }
+      }
+    });
+
+    pages.forEach((page) => {
+      createReviewSection(page.pageId, page.pageTitle, page.fields);
+    });
+
+    document
+      .getElementById("closeModal")
+      .addEventListener("click", function () {
+        modal.close();
+        modal.remove();
+      });
+
+    return isComplete;
+  }
+
   $(".close-case-btn").on("click", () => {
     if (checkIsFormComplete(fieldsToCheckBeforeClose)) {
       KDF.markComplete();
       KDF.gotoPage("complete", false, false, false);
-    } else {
-      KDF.showError("Please ensure all fields have been completed.");
     }
   });
 
@@ -1164,7 +1274,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   updateProgressBar(targetpageid);
 
   if (pageName === "page_about_you") {
-    if (kdf.access === "agent") {
+    if (kdf.access === "agent" && !kdf.form.data?.num_reporter_obj_id) {
       KDF.sendDesktopAction("raised_by");
     }
   }
@@ -1257,6 +1367,18 @@ function handleOptionSelectedEvent(event, kdf, field, label, val) {
     const textField = mchkField.replace("mchk_", "txt_");
     const stringValue = KDF.getVal(mchkField).toString().replace(/,/gi, ", ");
     KDF.setVal(textField, stringValue);
+  }
+
+  // --- HANDLE TOGGLE NI NASS --------------------------------------------- \\
+
+  if (field === "chk_no_national_insurance_number") {
+    const showNass = $("#dform_widget_chk_no_national_insurance_number").is(
+      ":checked"
+    );
+    hideShowMultipleElements([
+      { name: "txt_national_asylum_support", display: showNass },
+      { name: "txt_national_insurance", display: !showNass },
+    ]);
   }
 
   // --- MAP --------------------------------------------------------------- \\
@@ -2900,22 +3022,6 @@ function showContactTeamPanel() {
 }
 
 // --- CHECK CASE PROGRESS -------------------------------------------------- \\
-
-function checkIsFormComplete(fields) {
-  let isComplete = true;
-  fields.map((field) => {
-    if (
-      KDF.getVal(field) === "" ||
-      KDF.getVal(field) === null ||
-      KDF.getVal(field) === undefined ||
-      KDF.getVal(field) === "Pending" ||
-      KDF.getVal(field) === "In progress"
-    ) {
-      isComplete = false;
-    }
-  });
-  return isComplete;
-}
 
 function closeCase() {
   const noteDetails = KDF.getVal("txta_closure_details")
