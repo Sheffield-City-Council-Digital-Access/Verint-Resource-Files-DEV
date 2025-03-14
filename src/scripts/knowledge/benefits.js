@@ -1690,9 +1690,6 @@ const supportForBusinesses = new ContentB(
       cost of living. We’ve put together some resource sheets to help you think through some of the 
       options, decide what’s right for you, and manage any change safely.
     </p>
-        </div>
-        </details>
-
  <details class="details-accordion">
             <summary>
                 Energy suppliers and billing
@@ -1705,7 +1702,87 @@ const supportForBusinesses = new ContentB(
                     <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/energy-suppliers-contracts-and-bills-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/energy-suppliers-contracts-and-bills-1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Energy%20Suppliers%20Contracts%20and%20Bills'"> Send Link </button>
                 </p>
             </div>
-        </details>       
+        </details>  
+        <details class="details-accordion">
+            <summary>
+                Saving energy
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    Guides to help you think through ways to save energy, identify any risks 
+                    and ensure you avoid them.
+                    <p>
+                    Guide for saving energy in your business:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-in-your-business.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-in-your-business.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Saving%20energy%20in%20your%20business'"> Send Link </button>
+                    </p>
+                    <p>
+                    Guide for saving energy in your food business:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Saving%20energy%20for%20your%20food%20business'"> Send Link </button>
+                    </p>   
+                     <details class="details-accordion">
+            <summary>
+                Taking control of costs and income
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    A guide to help you get to grips with your cashflow; understand what each 
+                    product costs and brings in; and think about whether the concept behind your 
+                    business still serves you in the current climate.
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf" target="_blank>https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Taking%20control%20of%20costs%20and%20bills'"> Send Link </button>
+                </p>
+                   <details class="details-accordion">
+            <summary>
+                Resources in translation
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    These documents explain in various languages the support we have for 
+                    businesses to help them manage their cost of living. 
+                    <p>
+                    Arabic:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Arabic'"> Send Link </button>
+                    </p>
+                    <p>
+                    Bengali:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources-_bengali_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources-_bengali_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Bengali'"> Send Link </button>
+                    </p>
+                    <p>
+                    Chinese:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_chinese_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_chinese_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Chinese'"> Send Link </button>
+                    </p>
+                    <p>
+                    Italian:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Italian'"> Send Link </button>
+
+                    </p>
+                    <p>
+                    Kurdish:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_kurdish_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_kurdish_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Kurdish'"> Send Link </button>
+                    </p>
+                    <p>
+                    Pakistani:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Pakistani'"> Send Link </button>
+                    </p>
+                    <p>
+                    Polish:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_polish_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_polish_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Polish'"> Send Link </button>
+                    </p>
+                    <p>
+                    Slovak:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Slovak'"> Send Link </button>
+                    </p>
+                    <p>
+                    Somali:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_somali.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_somali.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Somali'"> Send Link </button>
+                    </p>
+                    <p>
+                    Urdu:
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20'"> Send Link </button>
+                    </p>
+                
+            </div>
+        </details>
+        
 
         
 
