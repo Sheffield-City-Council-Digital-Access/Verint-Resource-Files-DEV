@@ -1703,7 +1703,6 @@ const supportForBusinesses = new ContentB(
                 </p>
             </div>
         </details>
-
         <details class="details-accordion">
             <summary>
                 Saving energy
@@ -1723,7 +1722,7 @@ const supportForBusinesses = new ContentB(
                 </p>
             </div>
         </details>
-
+        
         <details class="details-accordion">
             <summary>
                 Taking control of costs and income
@@ -1824,8 +1823,6 @@ const supportForBusinesses = new ContentB(
 
       </p>
     </section>
-      </div>
-  </details>
       <details class="details-accordion">
           <summary>
               Discretionary Rate Relief
