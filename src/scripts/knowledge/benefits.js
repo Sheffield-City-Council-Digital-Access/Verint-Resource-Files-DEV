@@ -1786,7 +1786,7 @@ const supportForBusinesses = new ContentB(
                     </p>
                     <p>
                     Urdu:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Slovak'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Urdu'"> Send Link </button>
                     </p>
                 
             </div>
@@ -1906,7 +1906,7 @@ const supportForBusinesses = new ContentB(
       
           </div>
       </details>
-      
+
       <details class="details-accordion">
           <summary>
               Mandatory (charitable) rate relief
