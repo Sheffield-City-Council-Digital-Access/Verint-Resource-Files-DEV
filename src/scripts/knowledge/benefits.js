@@ -1789,7 +1789,7 @@ const supportForBusinesses = new ContentB(
 
  <details class="details-accordion">
           <summary>
-              Resources in translation
+              Living Wage Relief
           </summary>
           <div class="details-accordion-content">
           
