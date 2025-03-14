@@ -1721,7 +1721,7 @@ const supportForBusinesses = new ContentB(
                     Guide for saving energy in your food business:
                     <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Saving%20energy%20for%20your%20food%20business'"> Send Link </button>
                     </p>
-                </p>
+               
             </div>
         </details>
         
@@ -1786,7 +1786,7 @@ const supportForBusinesses = new ContentB(
                     </p>
                     <p>
                     Urdu:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Urdu'"> Send Link </button>
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20'"> Send Link </button>
                     </p>
                 
             </div>
@@ -2250,8 +2250,7 @@ const supportForBusinesses = new ContentB(
               </adress>
           </div>
       </details>
-    </div>
-  </details>
+
   <details class="accordion">
     <summary class="accordion-header">
         <h3>Paying your business rates</h3>
