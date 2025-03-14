@@ -1690,6 +1690,9 @@ const supportForBusinesses = new ContentB(
       cost of living. We’ve put together some resource sheets to help you think through some of the 
       options, decide what’s right for you, and manage any change safely.
     </p>
+        </div>
+        </details>
+
         <details class="details-accordion">
             <summary>
                 Energy suppliers and billing
