@@ -1734,10 +1734,9 @@ const supportForBusinesses = new ContentB(
                 </p>
              </div>
           </details> 
-          </div>
-          </details>   
           
-   <details class="accordion">
+          
+          <details class="accordion">
     <summary class="accordion-header">
         <h3>Business rate relief</h3>
         <div class="accordion-icon"></div>
