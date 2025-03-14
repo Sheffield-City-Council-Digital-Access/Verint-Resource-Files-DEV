@@ -1703,6 +1703,8 @@ const supportForBusinesses = new ContentB(
                 </p>
             </div>
         </details>
+
+
         <details class="details-accordion">
             <summary>
                 Saving energy
@@ -1822,7 +1824,12 @@ const supportForBusinesses = new ContentB(
         <a href="https://www.gov.uk/government/publications/autumn-statement-2022-business-rates-factsheet/autumn-statement-2022-business-rates-factsheet" target="_blank">https://www.gov.uk/government/publications/autumn-statement-2022-business-rates-factsheet/autumn-statement-2022-business-rates-factsheet</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Rateable%20Value'"> Send Link </button>
 
       </p>
+
+      
     </section>
+
+        </div>
+  </details>
       <details class="details-accordion">
           <summary>
               Discretionary Rate Relief
