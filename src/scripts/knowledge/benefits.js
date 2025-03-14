@@ -1779,29 +1779,22 @@ const supportForBusinesses = new ContentB(
             </div>
         </details>
 
-      <!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+        <details class="details-accordion">
+            <summary>
+                Resources in translation
+            </summary>
+            <div class="details-accordion-content">
+               
 
-
- <details class="details-accordion">
-          <summary>
-              Living Wage Relief
-          </summary>
-          <div class="details-accordion-content">
-          
-             <p>
+            <p>
                     These documents explain in various languages the support we have for 
                     businesses to help them manage their cost of living. 
                     <p>
                     Arabic:
                     <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf</a> 
                     </p>
-                    
-                    <button
+
+<button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
     aria-label="For further information send link"
@@ -1850,7 +1843,7 @@ const supportForBusinesses = new ContentB(
     Send link to review further information
 </button>
 
-  <p>
+                    <p>
                     Italian:
                     <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf</a> 
                     </p>
@@ -1890,8 +1883,8 @@ const supportForBusinesses = new ContentB(
                     Pakistani:
                     <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf</a> 
                     </p>
-                    
-                    <button
+
+<button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
     aria-label="For further information send link"
@@ -1926,8 +1919,8 @@ const supportForBusinesses = new ContentB(
                     Slovak:
                     <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf</a> 
                     </p>
-                    
-                    <button
+
+<button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
     aria-label="For further information send link"
@@ -1962,8 +1955,7 @@ const supportForBusinesses = new ContentB(
                     Urdu:
                     <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf</a> 
                     </p>
-                    
-                                  
+                
 <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -1977,30 +1969,8 @@ const supportForBusinesses = new ContentB(
     Send link to review further information
 </button>
 
-                    
-                    
-                    
-                    
-                    
-                    
-
-
-             
-              
-              
-          </div>
-      </details>
-        
-       
-
-
-
-
-
-
-</body>
-</html>
-
+            </div>
+        </details>
 
          
 
