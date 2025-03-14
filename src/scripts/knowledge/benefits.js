@@ -1693,8 +1693,22 @@ const supportForBusinesses = new ContentB(
         </div>
         </details>
 
+ <details class="details-accordion">
+            <summary>
+                Energy suppliers and billing
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    A resource sheet to help you navigate the process of switching energy contracts; 
+                    know what to do during energy sales calls; and look out for extra money you could 
+                    be paying on your bill.
+                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/energy-suppliers-contracts-and-bills-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/energy-suppliers-contracts-and-bills-1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Energy%20Suppliers%20Contracts%20and%20Bills'"> Send Link </button>
+                </p>
+            </div>
+        </details>       
+
         
-        
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "cost_of_living_transferred_to_service" },
