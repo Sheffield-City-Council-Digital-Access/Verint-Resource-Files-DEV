@@ -1733,76 +1733,474 @@ const supportForBusinesses = new ContentB(
                     <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf" target="_blank>https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Taking%20control%20of%20costs%20and%20bills'"> Send Link </button>
                 </p>
              </div>
-          </details>  
+          </details> 
+          </div>
+          </details>   
+          
+   <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Business rate relief</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+    <p>
+      There are different types of business rate relief. 
+    </p>
+    <section class="alert-panel--ineligible" role="alert" aria-label="Alert panel">
+      <p>
+          Whilst your application is in progress, you must pay as billed. 
+          If you are unable to pay, please contact us immediately to discuss this further. 
+          We may be able to help you by making a more suitable payment arrangement.
+      </p>
+    </section>
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+          The Valuation Office Agency (VOA) has updated the rateable values of all business, 
+          and other non-domestic, property in England and Wales. These future rateable values 
+          will be reflected in the Business Rates you pay from 1 April 2023. The government 
+          has announced a package of rates relief for businesses as part of the Autumn Statement 2022, 
+          to help businesses adjust to the new rates. We are awaiting full details of this scheme 
+          from Government and will update the information here as soon as with have these details.
+      </p>
+      <p>
+        Find out more about rateable value at: 
+        <a href="https://www.gov.uk/government/publications/autumn-statement-2022-business-rates-factsheet/autumn-statement-2022-business-rates-factsheet" target="_blank">https://www.gov.uk/government/publications/autumn-statement-2022-business-rates-factsheet/autumn-statement-2022-business-rates-factsheet</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Rateable%20Value'"> Send Link </button>
+
+      </p>
+
+      
+    </section>
+
+        </div>
+  </details>
+      <details class="details-accordion">
+          <summary>
+              Discretionary Rate Relief
+          </summary>
+          <div class="details-accordion-content">
+              <p>
+                  Non-profit making organisations have no automatic entitlement to rate relief but we may decide to give discretionary relief. 
+                  Your organisation must be charitable, religious or concerned with education, social welfare, science, literature or the fine arts, 
+                  or the property must be used by a non-profit-making organisation wholly or mainly for the purpose of recreation.
+              </p>
+              <h4>Apply for Discretionary Rate Relief</h4>
+              <p>
+                  Download, complete and return the 'Discretionary Relief application form.
+                  You will also need to provide us with a copy of your organisation's:
+              </p>
+              <ul>
+                <li>Objects and Articles to show what you do</li>
+                <li>audited accounts for the last 2 years</li>
+              </ul>
+              <p>
+              This will allow us to confirm what, if any, profits have been made and what happens to them.
+              </p>
+              <h4>Decision</h4>
+              <p>
+              Your application is considered against a set of policy guidelines and criteria, and decisions are made on an individual basis. 
+              You will be notified of all decisions in writing. We can only consider backdating Discretionary Relief to a certain date.
+              </p>
+              <h4>Payment while your application is considered</h4>
+              <p>
+              Please note that you must pay as billed while your application is being considered. If you are unable to pay, please contact us. 
+              If you have received any notices from us regarding non-payment, please contact us immediately so that we can come to some form of payment arrangement.<br>
+              <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Discretionary%20Relief%20application%20form'"> Send Link </button>
+
+              </p>
+      
+          </div>
+      </details>
+      <details class="details-accordion">
+          <summary>
+              Hardship rate relief
+          </summary>
+          <div class="details-accordion-content">
+              <p>
+                  We have discretion to award rate relief where a business is experiencing hardship. 
+                  Hardship will only be awarded if it is believed to be in the 
+                  interest of our taxpayers. We can choose to write off some or all of your debt.
+              </p>
+              <p>
+                When making this decision, we must consider:
+              </p>
+                <ul>
+                  <li>is your business experiencing hardship</li>
+                  <li>is it is reasonable to award relief</li>
+                </ul>
+              <p>
+                If you want to apply, you will need to complete a 'Hardship Relief application form'.
+              </p>
+              <h4>Document proof</h4>
+              <p>
+                As you are asking us to write off your Rates debt at the expense of other taxpayers, 
+                we will ask you to provide a substantial amount of supporting information, proof of:
+              </p>
+                <ul>
+                  <li>wages</li>
+                  <li>benefits received</li>
+                  <li>outgoings, for example, copies of your other bills</li>
+                </ul>
+              <p>
+              We may also ask you to provide any additional information that supports your claim. We will write to you and ask you to provide this if we need it. 
+              Please remember to provide as much proof as possible with your application. Your application will only be considered when we receive a fully completed application, 
+              and you have provided any proof we ask for. Please contact us if you want to know more about this relief.<br>
+              <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Hardship%20Relief%20application%20form'"> Send Link </button>
+
+              </p>
+      
+          </div>
+      </details>
+
+      <details class="details-accordion">
+          <summary>
+              Mandatory (charitable) rate relief
+          </summary>
+          <div class="details-accordion-content">
+              <p>
+                  80% Mandatory rate relief is available to registered charities or charities exempted from registration as a charity. 
+                  Registered Community Amateur Sports Clubs are also entitled if the use of the club is wholly or mainly for charitable purposes. 
+                  Apply using the 'Charity Relief application form'.<br>
+                  <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Charity%20Relief%20application%20form'"> Send Link </button>
+
+              </p>
+        
+          </div>
+      </details>
+      <details class="details-accordion">
+          <summary>
+              Rural rate relief
+          </summary>
+          <div class="details-accordion-content">
+              <p>
+                This applies to village shops and Post Offices, pubs and petrol filling stations. To qualify for relief, your shop must be within 
+                a defined settlement in a designated rural area and this settlement must have a population of less than 3,000 people. For Sheffield, 
+                the settlements are currently;
+              </p>
+              <ul>
+                <li>Bolsterstone</li>
+                <li>Bradfield</li>
+                <li>Dungworth</li>
+                <li>Loxley</li>
+                <li>Wharncliffe Side</li>
+                <li>Worrall</li>
+              </ul>
+              <p>
+                Plans showing the boundaries of the defined settlements are available for inspection. 
+                Where there is only one village general store, food shop or post office in a defined settlement with a rateable value 
+                of up to £8,500 it will be eligible for 100% relief. Sole village pubs or petrol filling stations with a rateable value of up to £12,500 also qualify for 100% relief. 
+                Any other businesses in the qualifying rural areas, which have a rateable value of up to £16,500 can apply for relief. However, we have the sole discretion whether to award the relief or not. 
+                If you think that you may qualify, please contact us.
+              </p>
+          </div>
+      </details>
+
+      <details class="details-accordion">
+          <summary>
+              Small business rate relief
+          </summary>
+          <div class="details-accordion-content">
+              <p>
+                Small business rate relief is designed to help small businesses reduce their business rate bill.
+              </p>
+              <h4>Eligible businesses</h4>
+              <p>
+                Eligible businesses with a rateable value of below £12,000 will receive 100% relief commencing on 1st April 2023. 
+                This relief will decrease on a sliding scale of 1% for every £30 of rateable value over £12,000 up to £14,999. 
+                The relief is available to ratepayers occupying:
+              </p>
+              <ul>
+                <li>one property with a rateable value of less than £15,000</li>
+                <li>more than one property where the combined rateable value of all your occupied properties is less than £20,000: 
+                relief will be available only on the property with the highest rateable value (your main property). 
+                each of the properties you occupy in addition to your main property must have a rateable value of less than £2,900</li>
+              </ul>
+              <style> 
+                table { 
+                width: 50%; 
+                border-collapse: collapse; 
+                margin: 20px 0; 
+                font-size: 16px; 
+                text-align: center; 
+                } 
+                th, td { 
+                padding: 12px; 
+                border: 1px solid #ddd; 
+                } 
+                th { 
+                background-color: #d3d3d3; /* Light grey */ 
+                color: black; 
+                } 
+                tr:nth-child(even) { 
+                background-color: #f2f2f2; 
+                } 
+                tr:hover { 
+                background-color: #ddd; 
+                } 
+              </style>
+              <table>
+                <thead>
+                    <tr>
+                      <th>Rateable Value</th>
+                      <th>% Relief Given</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>12,000</td>
+                      <td>100.00</td>
+                    </tr>
+                    <tr>
+                      <td>12,250</td>
+                      <td>91.67</td>
+                    </tr>
+                    <tr>
+                      <td>12,500</td>
+                      <td>83.34</td>
+                    </tr>
+                    <tr>
+                      <td>12,750</td>
+                      <td>75.01</td>
+                    </tr>
+                    <tr>
+                      <td>13,000</td>
+                      <td>66.68</td>
+                    </tr>
+                    <tr>
+                      <td>13,250</td>
+                      <td>58.35</td>
+                    </tr>
+                    <tr>
+                      <td>13,500</td>
+                      <td>50.00</td>
+                    </tr>
+                    <tr>
+                      <td>13,750</td>
+                      <td>41.67</td>
+                    </tr>
+                    <tr>
+                      <td>14,000</td>
+                      <td>33.34</td>
+                    </tr>
+                    <tr>
+                      <td>14,250</td>
+                      <td>25.01</td>
+                    </tr>
+                    <tr>
+                      <td>14,500</td>
+                      <td>16.68</td>
+                    </tr>
+                    <tr>
+                      <td>14,750</td>
+                      <td>8.35</td>
+                    </tr>
+                    <tr>
+                      <td>15,000</td>
+                      <td>0</td>
+                    </tr>
+                </tbody>
+              </table>
+              <h4>Reductions on main properties</h4>
+              <p>
+                You may be entitled to a reduction in the business rates bill on your main property 
+                if you occupy more than one non-domestic property in England if:
+              </p>
+              <ul>
+                <li>the total rateable value of your main property plus all the other properties you occupy is less than £20,000 and</li>
+                <li>each of your other properties has a Rateable Value (RV) of less than £2,900</li>
+              </ul>
+              <p>
+                In calculating relief, your main property will be classed as the property with the higher RV.
+              </p>
+              <h4>Small business rate relief - extension regulations</h4>
+              <p>
+                Since 1 April 2014, those businesses that have taken on an additional property which would normally have meant the loss of small business rate relief are allowed 
+                to keep that relief on the first occupied property for a period of 12 months. You will still be able to receive the relief on your existing qualifying 
+                property even if the total RV of your properties is higher than the £20,000 limit which normally applies.
+              </p>
+              <h4>Change in your circumstances</h4>
+              <p>
+                Small business rate relief will continue until there is a relevant change in your circumstances. Relevant changes are:
+              </p>
+              <ul>
+                <li>an increase in the rateable value of a property you occupy which is not in our billing area – these changes will have to be notified in writing</li>
+                <li>you take up occupation of any property which is not mentioned in your application for relief – these changes will have to be notified through a fresh application</li>
+              </ul>
+              <p>
+                If you believe your business may qualify for relief please complete the 'Small Business Rates Relief application form'.<br>
+                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Business%20Rates%20Support%20for%20Small%20Business%20application%20form'"> Send Link </button>
+
+              </p>
+       
+          </div>
+      </details>
+      <details class="details-accordion">
+          <summary>
+              Transitional rate relief
+          </summary>
+          <div class="details-accordion-content">
+              <p>
+                Transitional arrangements soften the impact of revaluation by phasing in the changes to the rates bill over a period of time. 
+                Different transitional arrangements will apply depending on whether your business premises are classed as small or large. 
+                Transition can also affect your bill if you obtain a reduction in your Rateable Value (RV) from a date other than 1 April 2017. 
+                The Valuation Officer may certify that it should have taken effect from the beginning of the Rating List, but that the list cannot be updated due to backdating restrictions. 
+                If your bill receives a Transitional Adjustment, the amount you pay is calculated by increasing the previous year's net rate (that is, the amount you actually paid) by up 
+                to the maximum amount permitted by the government for each year.
+              </p>
+              <h4>Level of transitional relief</h4>
+              <p>
+                If a property has a RV of more than £100,000 and is facing an increase in its bill, it is classed as a <strong>higher tier loser.</strong> 
+                If a property has a RV of between £20,001 and £100,000 and is facing an increase in its bill, it is classed as a <strong>middle tier loser. </strong>
+                If a property has a RV of up to £20,000 and is facing an increase in its bill, it is classed as a <strong>lower tier loser.</strong>
+              </p>
+              <h4>Percentage of the bill that increases or decreases</h4>
+              <p>
+                Once we have found out what level of relief should apply, we then take the annual figure for 2022/23 and increase or decrease it by the appropriate percentage 
+                that is determined by the Government.
+              </p>
+              <h4>Apply an inflation adjustment</h4>
+              <p>
+                Once the percentage increase is applied to last years charge, we have to add an adjustment for inflation. This is the level of 
+                inflation as at the previous September.
+              </p>
+              <h4>Rateable Value changes</h4>
+              <p>
+                If your RV is changed, we will have to recalculate your entitlement to transitional relief. It is quite possible that a reduction in 
+                your RV may not result in an immediate reduction in your bill.
+              </p>
+              <h4>Check your relief</h4>
+              <p>
+                If you would like us to check that your calculation is correct, please contact us. There is no right of appeal against transitional relief. 
+                It is part of business rates legislation and we have no powers to change or waver it.
+              </p>
+          </div>
+      </details>
+      <details class="details-accordion">
+          <summary>
+              Living Wage Relief
+          </summary>
+          <div class="details-accordion-content">
+              <p>
+                We may award Living Wage Relief for a non-domestic property where:
+              </p>
+              <ul>
+                <li>the ratepayer of that property is an employer who is accredited with the Living Wage Foundation</li>
+                <li>and where the property has a rateable value of £50,000 or below</li>
+              </ul>
+              <p>
+                Where an organisation is liable for more than one property and those properties have a combined rateable value of over £50,000 no relief will be awarded for any of those properties. 
+                This relief is available in respect of the financial year 2016/17, and the level of relief will be up to £5,000. We may only make an award where we are satisfied that the organisation is accredited with the Living Wage Foundation. 
+                We must also be satisfied that the organisation's application for accreditation with the Living Wage Foundation was made on or after 1 April 2016, and had not paid its employees a wage above the Living Wage Foundation rate prior to 1 April 2016. 
+                Accreditation must be in respect of employees working at the property in Sheffield.
+                The Living Wage Foundation monitors its accredited organisations, and should any business break the agreement within 2 years of signing it any relief awarded may be reclaimed.
+              </p>
+          </div>
+      </details>
+      <details class="details-accordion">
+          <summary>
+              Expanded (Capped) Retail, Accommodation, Hospitality and Leisure Discount
+          </summary>
+          <div class="details-accordion-content">
+              <p>
+                  For the period 1 April 2023 to 31 March 2024, the amount of relief under Expanded (Capped) Retail, Accommodation, Hospitality and Leisure Discount is set at 75%. 
+                  Please note that this discount will not be applied automatically. To apply, please read the details below, fill in the form provided, and return it by post or 
+                  email to the addresses on the form.
+              </p>
+              <p>
+                Capped Retail Discount application 2024: 
+                <a href="${window.location.protocol}//${
+                window.location.hostname
+                }/form/launch/send_link_to_service?${
+                KDF.getParams().customerid
+                ? `customerid=${KDF.getParams().customerid}&`
+                : ""
+                }interactionid=${KDF.getParams().interactionid}">Send link</a>
+              </p>
+              <p>
+                Capped Retail Discount application 2023: 
+                <a href="${window.location.protocol}//${
+                window.location.hostname
+                }/form/launch/send_link_to_service?${
+                KDF.getParams().customerid
+                ? `customerid=${KDF.getParams().customerid}&`
+                : ""
+                }interactionid=${KDF.getParams().interactionid}">Send link</a>
+              </p>
+              <h4>Eligible businesses</h4>
+              <p>
+                The Government guidelines state that to be eligible for the discount the premises must be:
+              </p>
+              <ul>
+                <li>occupied (empty premises do not qualify)</li>
+                <li>have an occupied rates charge for the year (properties receiving 100% Small Business Rate Relief, for example, do not qualify)</li>
+                <li>be wholly, or mainly, used for retail purposes for visiting members of the public</li>
+              </ul>
+        </div>
+      </details>
+      <details class="details-accordion">
+          <summary>
+              Partly empty properties
+          </summary>
+          <div class="details-accordion-content">
+              <p>
+                If part of your property is empty for a short period, you may apply to have your business rates bill reduced.
+              </p>
+              <h4>Apply</h4>
+              <p>
+                To apply for the reduction, complete the 'Partly Empty Properties Relief application form', and provide a plan of your property, 
+                clearly indicating which proportion of your premises is occupied and which is unoccupied. Once we have received your information, 
+                we will visit your premises to inspect them and verify your claim.
+              </p>
+              <h4>Our decision</h4>
+              <p>
+                If we think you should qualify for the relief, we will ask the Valuation Office to issue a certificate to confirm the rateable value of the empty part. 
+                Once we receive this, we will apply the appropriate relief or exemption to the empty part and send you a revised bill. 
+                The period of relief will normally be for a maximum of 3 months, or 6  months in the case of industrial premises. 
+                If you have received any notices from us regarding non-payment, please see payment problems. 
+                Any properties where we have granted the relief will be subject to periodic visits from our property inspector. 
+                If any parts of the area you have previously claimed to be empty are found to be occupied, your relief may be cancelled.
+              </p>
+              <p>
+                Partly Empty Properties Relief application form: 
+                <a href="${window.location.protocol}//${
+                window.location.hostname
+                }/form/launch/send_link_to_service?${
+                KDF.getParams().customerid
+                ? `customerid=${KDF.getParams().customerid}&`
+                : ""
+                }interactionid=${KDF.getParams().interactionid}">Send link</a>
+              </p>
+          </div>
+      </details>
+      <details class="details-accordion">
+          <summary>
+              Appeals
+          </summary>
+          <div class="details-accordion-content">
+              <p>
+                In circumstances where an application for Business Rate relief has been declined, the applicant may appeal for the decision to be reconsidered.
+              </p>
+              <p>
+                Appeals should be made to us in writing no later than 3 months after the date of determination. 
+              </p>
+              <p>
+                Appeals should be made to:
+              </p>
+              <address>
+                The Senior NNDR Administrator<br>
+                Sheffield City Council<br>
+                Non-Domestic Rates<br>
+                PO Box 1310<br>
+                Sheffield<br>
+                S1 1UY<br>
+              </adress>
+          </div>
+      </details>
+             </div>
+      </details>
   
-<details class="details-accordion">
-            <summary>
-                Taking control of costs and income
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    A guide to help you get to grips with your cashflow; understand what each 
-                    product costs and brings in; and think about whether the concept behind your 
-                    business still serves you in the current climate.
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf" target="_blank>https://www.sheffield.gov.uk/sites/default/files/2022-11/taking-control-of-costs-and-bills-1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Taking%20control%20of%20costs%20and%20bills'"> Send Link </button>
-                </p>
-            </div>
-        </details>
+  
 
-        <details class="details-accordion">
-            <summary>
-                Resources in translation
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    These documents explain in various languages the support we have for 
-                    businesses to help them manage their cost of living. 
-                    <p>
-                    Arabic:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Arabic'"> Send Link </button>
-                    </p>
-                    <p>
-                    Bengali:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources-_bengali_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources-_bengali_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Bengali'"> Send Link </button>
-                    </p>
-                    <p>
-                    Chinese:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_chinese_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_chinese_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Chinese'"> Send Link </button>
-                    </p>
-                    <p>
-                    Italian:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_italian_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Italian'"> Send Link </button>
-
-                    </p>
-                    <p>
-                    Kurdish:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_kurdish_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_kurdish_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Kurdish'"> Send Link </button>
-                    </p>
-                    <p>
-                    Pakistani:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_pakistani_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Pakistani'"> Send Link </button>
-                    </p>
-                    <p>
-                    Polish:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_polish_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_polish_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Polish'"> Send Link </button>
-                    </p>
-                    <p>
-                    Slovak:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_slovak_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Slovak'"> Send Link </button>
-                    </p>
-                    <p>
-                    Somali:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_somali.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_somali.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20Somali'"> Send Link </button>
-                    </p>
-                    <p>
-                    Urdu:
-                    <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_urdu_0.pdf</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Cost%20of%20living%20'"> Send Link </button>
-                    </p>
-                
-            </div>
-        </details>
-        
-        
+           
 
   `,
   { buttonLabel: "", formName: "" },
