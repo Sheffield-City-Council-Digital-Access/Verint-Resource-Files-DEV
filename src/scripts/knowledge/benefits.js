@@ -1972,7 +1972,7 @@ const supportForBusinesses = new ContentB(
             </div>
         </details>
 
-           
+</details>           
 
 
  <details class="accordion">
