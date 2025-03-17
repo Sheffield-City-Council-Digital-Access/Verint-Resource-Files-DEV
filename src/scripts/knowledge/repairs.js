@@ -2186,7 +2186,7 @@ const rightToBuy  = new ContentR(
   {
     type: "",
     keywords: [],
-    categories: [repairs],
+    categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
 );
@@ -2219,7 +2219,7 @@ const rightToRepair  = new ContentR(
   {
     type: "",
     keywords: [],
-    categories: [repairs],
+    categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
 );
@@ -2271,7 +2271,7 @@ const scaffolding  = new ContentR(
   {
     type: "",
     keywords: [],
-    categories: [repairs],
+    categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
 );
@@ -2298,7 +2298,7 @@ const surveyors = new ContentR(
   {
     type: "",
     keywords: [],
-    categories: [repairs],
+    categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
 );
@@ -2318,7 +2318,7 @@ const tarmac = new ContentR(
   {
     type: "",
     keywords: [],
-    categories: [repairs],
+    categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
 );
@@ -2364,7 +2364,7 @@ const wallRepair = new ContentR(
   {
     type: "",
     keywords: [],
-    categories: [repairs],
+    categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
 );
@@ -2433,7 +2433,7 @@ const wcBathorShowerorSinkUnit = new ContentR(
   {
     type: "",
     keywords: [],
-    categories: [repairs],
+    categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
 );
@@ -2468,7 +2468,7 @@ const windowSillorCill = new ContentR(
   {
     type: "",
     keywords: [],
-    categories: [repairs],
+    categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
 );
@@ -2511,7 +2511,7 @@ const windowFrame = new ContentR(
   {
     type: "",
     keywords: [],
-    categories: [repairs],
+    categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
 );
@@ -2536,7 +2536,7 @@ const workingatHeight = new ContentR(
   {
     type: "",
     keywords: [],
-    categories: [repairs],
+    categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
 );
