@@ -2833,6 +2833,9 @@ const applicationChanges = new ContentH(
             The last 3 consecutive months of bank statements (Only where the award
             letter is not available)
           </li>
+          <li>
+            Universal Credit is also accepted if it includes the child's name on the claim.
+          </li>
         </ul>
       </div>
     </details>
@@ -2973,7 +2976,8 @@ const applicationChanges = new ContentH(
       <div class="accordion-content">
         <p>
           Present three proof documents to a housing office or First Point, where ID
-          will be copied and saved. The name will be updated in our system.
+          will be copied and saved. The name will be updated in our system. See above within the "Accepted ID" section
+          for valid options of ID that can be used.
         </p>
         <p>
           Alternatively, send the name change in writing along with proof
@@ -4736,18 +4740,56 @@ const balanceEnquiry = new ContentH(
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Accepted ID</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        You must provide two forms of identification to prove changes to your
-        application. One must be from the Proof of ID documents list, while the
-        second must provide proof of your current UK address. Photo ID is also
-        required to prove your identity. If you do not have photo ID, you must
-        provide a passport-sized photo accompanied by a birth certificate. Proof
-        of child benefit is only required where children under 16 years of age are
-        being rehoused with you.
-      </p>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <h3>Proof of ID documents</h3>
+        <ul>
+          <li>Marriage certificate</li>
+          <li>Divorce/Annulment papers</li>
+          <li>
+            Passport (this can be expired, but if the customer is an adult, an adult
+            passport must be produced)
+          </li>
+          <li>
+            Deed poll documentation for name changes (to accompany details of former
+            name, if applicable)
+          </li>
+          <li>Current bus pass with photograph</li>
+          <li>UK resident permit</li>
+          <li>ID card issued by EEA/EU countries</li>
+          <li>Home Office standard acceptance letter</li>
+          <li>Immigration status document</li>
+          <li>NASS 35</li>
+          <li>Citizenship card (with hologram and photo to prove age)</li>
+          <li>Medical card</li>
+          <li>Birth certificate/Adoption certificate</li>
+          <li>Letter from Social Worker/Probation Officer/Solicitor</li>
+          <li>Driving licence</li>
+        </ul>
+        <h3>Proof of Address</h3>
+        <ul>
+          <li>Recent utility bill paid in that person’s name (last quarter)</li>
+          <li>Most recent council tax statement</li>
+          <li>Driving licence</li>
+          <li>Home Office standard acceptance letter</li>
+          <li>Letter from DWP for tax credits</li>
+          <li>Bank statement from within the last 3 months</li>
+          <li>Wage slip from current employer</li>
+          <li>Life assurance/Insurance policies</li>
+          <li>Proof of all other benefits</li>
+        </ul>
+        <h3>Proof of Child Benefit</h3>
+        <ul>
+          <li>Child benefit award letter</li>
+          <li>
+            The last 3 consecutive months of bank statements (Only where the award
+            letter is not available)
+          </li>
+          <li>
+            Universal Credit is also accepted if it includes the child's name on the claim.
+          </li>
+        </ul>
     </div>
   </details>
 `,
