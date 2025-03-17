@@ -1784,8 +1784,6 @@ const supportForBusinesses = new ContentB(
                 Resources in translation
             </summary>
             <div class="details-accordion-content">
-               
-
                 <p>
                     These documents explain in various languages the support we have for 
                     businesses to help them manage their cost of living. 
@@ -1972,8 +1970,8 @@ const supportForBusinesses = new ContentB(
 
             </div>
         </details>
-
-</details>           
+    </div>
+  </details>          
 
 
  <details class="accordion">
