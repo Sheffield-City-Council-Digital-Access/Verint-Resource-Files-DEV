@@ -1082,11 +1082,8 @@ const gasandDomesticSystems   = new ContentR(
       </tr>
   </table>
   
-<img class="knowledge-img" src="https://github.com/Sheffield-City-Council-Digital-Access/Verint-Resource-Files-DEV/blob/ae6f87b1a73e06eda7191262d6a99bad6542c1b7/src/images/Knowledge%20Image%201.jpg" alt="A concise and descriptive description of the image" loading="lazy" referrerpolicy="no-referrer" />
- 
+<img class="knowledge-img" src="https://sheffield-city-council-digital-access.github.io/Verint-Resource-Files-DEV/src/images/Repairs/meter-and-credit.jpg" alt="A concise and descriptive description of the image" loading="lazy" referrerpolicy="no-referrer" />
 
- 
-  IMAGE 
 
   <p>The fault code has been missing a lot lately from the job notes as asked for in the prompt 
   text box for central heating repairs.</p>
