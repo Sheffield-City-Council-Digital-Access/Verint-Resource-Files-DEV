@@ -1681,7 +1681,7 @@ const noHeatNoWater = new ContentH(
     To access a supply of heat and hot water please follow the simple steps below: 
   </p>
   <ol> 
-    <li>Does the property have an electricity supply? They will not have access to heat and hot water without it. The customer will need to Dial 105 or visit <a href="www.findmysupplier.energy.co.uk "target="_blank">www.findmysupplier.energy.co.uk</a> to find their current supplier. 
+    <li>Does the property have an electricity supply? They will not have access to heat and hot water without it. The customer will need to Dial 105 or visit <a href="https://www.findmysupplier.energy "target="_blank">https://www.findmysupplier.energy</a> to find their current supplier. 
     <br><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Find%20My%20Supplier'"> Send Link </button>
  </li>
     <li>
