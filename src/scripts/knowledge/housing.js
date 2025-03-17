@@ -1684,11 +1684,22 @@ const noHeatNoWater = new ContentH(
     <li>Does the property have an electricity supply? They will not have access to heat and hot water without it. The customer will need to Dial 105 or visit <a href="www.findmysupplier.energy.co.uk "target="_blank">www.findmysupplier.energy.co.uk</a> to find their current supplier. 
     <br><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Find%20My%20Supplier'"> Send Link </button>
  </li>
-
-    <li> The District Heating Meter location may vary but is usually located in the property airing cupboard. Does The Meters Home Screen say ON in the top right corner? Is your heating programmer turned on? </li>
-    <li> To activate an emergency credit, press the blue button, marked ‘Press For Em Credit’ as instructed by the meters home screen. This will allow the tenant to ‘borrow’ credit up to £10.00 which will connect your heat and hot water supply for a short time. This is simply a loan and will need to be repaid on receipt of the prepayment information/number which will be with them shortly. </li>
-    <li> If the Meters screen in blank or shows something similar to ‘D bug’ then the customer can reboot the G6 unit by pressing the blue and orange button together for 10 seconds. </li>
-    <li>If the reboot is unsuccessful or for any other repair, please call the Repairs line on <a href="tel:0114 2735555">0114 2735555</a></li>
+    <li>
+      The District Heating Meter location may vary but is usually located in the property airing cupboard. Does The Meters Home Screen say ON in the top right corner? Is your heating programmer turned on?
+    </li>
+    <li>  
+      To activate an emergency credit, press the blue button, marked ‘Press For Em Credit’ as instructed by the meters home screen. 
+      This will allow the tenant to ‘borrow’ credit up to £10.00 which will connect your heat and hot water supply for a short time. 
+      This is simply a loan and will need to be repaid on receipt of the prepayment information/number which will be with them shortly.<br>
+      <strong>Advisor note</strong>: If the tenant has already reached the £10.00 limit and needs additional funds they can contact the Home Ownership and Revenues Team on: <a href="tel:0114 2735595">0114 2735595</a>.
+      This is a public number and has voicemail if the team is unavailable. They can also be contact by email at: <a href="mailto:RDH@Sheffield.gov.uk">RDH@Sheffield.gov.uk</a>
+    </li>
+    <li>
+      If the Meters screen in blank or shows something similar to ‘D bug’ then the customer can reboot the G6 unit by pressing the blue and orange button together for 10 seconds.
+    </li>
+    <li>  
+      If the reboot is unsuccessful or for any other repair, please call the Repairs line on <a href="tel:0114 2735555">0114 2735555</a>
+    </li>
   </ol>
 
   `,
@@ -1696,8 +1707,8 @@ const noHeatNoWater = new ContentH(
     buttonLabel: "",
     formName: "",
   },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
   { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Information",
     keywords: [
@@ -1709,7 +1720,7 @@ const noHeatNoWater = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "10/10/2024", name: "George Whitehouse" }
+  { date: "17/03/2025", name: "Nathan Smith" }
 );
 
 
