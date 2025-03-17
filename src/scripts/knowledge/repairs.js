@@ -1082,7 +1082,8 @@ const gasandDomesticSystems   = new ContentR(
       </tr>
   </table>
   
-<img class="knowledge-img" src="src/images/Knowledge Image 1.jpg" alt="A concise and descriptive description of the image" loading="lazy" referrerpolicy="no-referrer" />
+https://github.com/Sheffield-City-Council-Digital-Access/Verint-Resource-Files-DEV/blob/ae6f87b1a73e06eda7191262d6a99bad6542c1b7/src/images/Knowledge%20Image%201.jpg
+
  
 
   IMAGE 
