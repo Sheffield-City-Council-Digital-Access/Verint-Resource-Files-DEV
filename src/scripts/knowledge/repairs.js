@@ -1082,8 +1082,7 @@ const gasandDomesticSystems   = new ContentR(
       </tr>
   </table>
   
-<img class="knowledge-img" src="./images/Repairs/meter-and-credit.jpg" alt="test45" loading="lazy" referrerpolicy="no-referrer" />
-
+<img class="knowledge-img" src="" alt="A concise and descriptive description of the image" loading="lazy" referrerpolicy="no-referrer" />
 
 
   <p>The fault code has been missing a lot lately from the job notes as asked for in the prompt 
