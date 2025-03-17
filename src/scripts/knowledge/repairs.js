@@ -965,12 +965,23 @@ const gasandDomesticSystems   = new ContentR(
   "Gas and Domestic Systems",
   "",
   `
-  <h3>Category Fault</h3>
-
-      <p>Domestic Gas system</p>
-
-  <h3>Codes</h3>
-  <ul>
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Category Fault</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>Domestic Gas system</p>
+  </div>
+  </details>
+  
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Codes</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <ul>
       <li>Remedy Blocked Flue to Boiler</li>
       <li>Remedy TOTAL Loss of Heating & Hot Water (Gas Heating)</li>
       <li>Repair Gas Fired Central Heating (where other heating available)</li>
@@ -981,24 +992,58 @@ const gasandDomesticSystems   = new ContentR(
       <li>Remedy Total/Partial loss of Gas Supply</li>
       <li>Recall non chargeable repair</li>
   </ul>
+  </div>
+  </details>
+  
+  <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Warranty</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                <p>
+                    Identified from the T-MOBILE system. If repair is identified as within a warranty period, 
+                    invoke the warranty repair process for new boilers 
+                    (Mark as <strong>'WARRANTY RECALL</strong> - Repair to faulty boiler, still in warranty 
+                    or call obsolete on 01142736978.
+                </p>
+            </summary>
+            <div class="details-accordion-content">
+            </div>
+        </details>
+<details class="details-accordion">
+            <summary>
+                <h3>Key questions and information</h3>
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    Check if the repair is regarding no water flowing out of the taps, or whether there is 
+                    water flowing, and it is cold. If there is no water flowing this should be a 
+                    <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx"> 
+                    plumbing repair</a>.</p>
+                <p>
+                  If a customer has a pre-pay meter but has no gas heating at all, either from a boiler 
+                  or gas fire (if present), ask the customer to check that the meter has credit and that the 
+                  heating room stat is turned up high enough.</p>
+                <p>
+                  Where arranging a gas service inform the Customer that if they have a gas fire it should 
+                  be switched off and not used on the day of service.</p>
+            </div>
+        </details>
+    </div>
+</details>
 
-  <h3>Warranty</h3>
 
-  <p>Identified from the T-MOBILE system. If repair is identified as within a warranty period, 
-  invoke the warranty repair process for new boilers (Mark as <strong>'WARRANTY RECALL</strong>
-   - Repair to faulty boiler, still in warranty or call obsolete on 01142736978.</p>
 
-  <h3>Key questions and information</h3>
+      
+  
+  
 
-  <p>Check if the repair is regarding no water flowing out of the taps, or whether there is 
-  water flowing, and it is cold. If there is no water flowing this should be a 
-  <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx"> 
-  plumbing repair</a>.</p>
-  <p>If a customer has a pre-pay meter but has no gas heating at all, either from a boiler 
-  or gas fire (if present), ask the customer to check that the meter has credit and that the 
-  heating room stat is turned up high enough.</p>
-  <p>Where arranging a gas service inform the Customer that if they have a gas fire it should 
-  be switched off and not used on the day of service.</p>
+  
+
+  
 
   <h3>Boiler Warning Codes</h3>
 
@@ -1037,6 +1082,8 @@ const gasandDomesticSystems   = new ContentR(
       </tr>
   </table>
   
+<img class="knowledge-img" src="src/images/Knowledge Image 1.jpg" alt="A concise and descriptive description of the image" loading="lazy" referrerpolicy="no-referrer" />
+ 
 
   IMAGE 
 
