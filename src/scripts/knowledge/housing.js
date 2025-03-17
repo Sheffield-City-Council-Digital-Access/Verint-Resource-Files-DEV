@@ -852,7 +852,7 @@ const communalAerials = new ContentH(
   `
   <h3>Communal Aerials List</h3>
   <p>
-    <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Communal%20Aerials.aspx" target="_blank">Communal azerials list</a>
+    <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Communal%20Aerials.aspx" target="_blank">Communal aerials list</a>
   </p>
 
   <h3>Customers Own Aerial</h3>
@@ -1853,15 +1853,15 @@ const communalCupboard = new ContentH(
       and they mostly require a T1 Key that is held in the local Area office.
     </p>
   `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { buttonLabel: "Raise enquiry", formName: "hou_estates_enquiry" },
+  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "estates_and_environmental_information_provided" },
   {
-    type: "Information",
+    type: "Housing",
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Estates and Environments"],
   },
-  { date: "14/10/2024", name: "Omily Parkin" }
+  { date: "17/03/2025", name: "Nathan Smith" }
 );
 
 const communalFireSafety = new ContentH(
