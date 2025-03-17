@@ -270,7 +270,6 @@ const bedBugTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -421,7 +420,6 @@ const biscuitBeetlesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -497,7 +495,6 @@ const bumbleBeesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -630,7 +627,6 @@ const carpetBeetlesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -741,7 +737,6 @@ const clusterFliesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -823,7 +818,6 @@ const cockroachesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -905,7 +899,6 @@ const cricketsTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -987,7 +980,6 @@ const dermestesBeetlesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1175,7 +1167,6 @@ const fliesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1348,7 +1339,6 @@ const furBeetlesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1395,7 +1385,6 @@ const gardenAntsTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1619,7 +1608,6 @@ const ladyBirdsTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1666,7 +1654,6 @@ const masonryBeesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1726,7 +1713,6 @@ const miceTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1777,7 +1763,6 @@ const mitesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1859,7 +1844,6 @@ const mothsTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1906,7 +1890,6 @@ const pharoahAntsTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1988,7 +1971,6 @@ const psocidsTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2037,7 +2019,6 @@ const ratTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2169,7 +2150,6 @@ const redSpiderMitesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2251,7 +2231,6 @@ const sewageFliesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2300,7 +2279,6 @@ const silverFishTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2386,7 +2364,6 @@ const spiderBeetlesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2464,7 +2441,6 @@ const waspsTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2591,7 +2567,6 @@ const woodliceTreatment = new ContentPaN(
 
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
