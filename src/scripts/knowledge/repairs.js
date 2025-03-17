@@ -424,8 +424,8 @@ const districtHeatingSwitch2Setup = new ContentR(
 );
 
 const doorFurniture  = new ContentR(
-  "doorFurniture ",
-  "Door Furniture ",
+  "doorFurniture",
+  "Door Furniture",
   "",
   `
   <h3>Category Fault</h3>
@@ -605,11 +605,9 @@ const electricalTesting  = new ContentR(
       <li>Decant/Disrepair</li>
       <li>Cap off make safe</li>
       <li>Disconnect/Reconnect Electric or Gas Cooker</li>
-      <li>Electric & Gas Reinstate</li>
       <li>Mutual Exchange</li>
       <li>Electric & Gas Service Check</li>
       <li>Dispersed Properties</li>
-      <li>Electric & Gas Reinstate</li>
   </ul>
 
   <p>Email all relevant information above to 
@@ -668,7 +666,7 @@ const externalDoorLock   = new ContentR(
       <p>Identified from the T-Mobile system.If repair is within a warranty period, 
       invoke the warranty repair process.</p>
   
-  <h3>Key questions and information</h3>
+  <h3>Key Questions and Information</h3>
 
       <p>If a member of staff from an Area Housing Office requests a lock change to a property, 
       order remedy repair.</p>
@@ -714,7 +712,7 @@ const externalDoor   = new ContentR(
       <p>Ask tenant for details of door type (PVCu, Wood, Metal, or Other).</p>
       <p>Check programme details (e.g., Prior to Painting). If work is due, 
       defer the repair to programme works.</p>
-      <p>If a result of Burglary/Vandalism, then check if the customer has a Police crime 
+      <p>If a result of Burglary / Vandalism, then check if the customer has a Police crime 
       reference number.</p>
      
   <h3>Recharge</h3>
@@ -726,7 +724,7 @@ const externalDoor   = new ContentR(
 
       <p>If a result of Burglary / Vandalism, then a Police crime reference number is required 
       if repair is because of Burglary / Vandalism. Where there is no Crime Reference Number, 
-      board up/make safe only..</p>
+      board up/make safe only.</p>
       <p>Order Remedy Repair</p>.
   `
   ,
@@ -752,7 +750,7 @@ const flatRoof   = new ContentR(
       <p>Responsive</p>
   <h3>Warranty</h3>
       <p>Identified from the T-Mobile system.If repair is within a warranty period, 
-      invoke the warranty repair process.</p>
+      invoke the warranty repair process. </p>
   
   <h3>Key questions and information</h3>
 
@@ -785,7 +783,7 @@ const floororStaircase   = new ContentR(
       <p>Responsive</p>
   <h3>Warranty</h3>
       <p>Identified from the T-Mobile system.If repair is within a warranty period, 
-      invoke the warranty repair process.</p>
+      invoke the warranty repair process. </p>
   
   <h3>Key questions and information</h3>
 
@@ -928,7 +926,7 @@ const fireJobs  = new ContentR(
 );
 
 
-const garageorDetachedOutbuilding   = new ContentR(
+const garageorDetachedOutbuilding = new ContentR(
   "garageorDetachedOutbuilding",
   "Garage or Detached Outbuilding",
   "",
@@ -1462,7 +1460,7 @@ const handyperson  = new ContentR(
 
   <h4>Specialist equipment or chemicals</h4>
   <p>Handyperson cannot use any heavy-duty equipment or chemicals that require specialist 
-  training, i.e., graffiti removal or tenants own garden equipment.</p>
+  training, i.e., graffiti removal or tenant's own garden equipment.</p>
 
   <h4>Ordering Materials</h4>
   <p>Handyperson does not have the facility to order materials, i.e., fence panels, etc. 
@@ -1607,7 +1605,7 @@ const internalDoor  = new ContentR(
 
   <h3>Key questions and information</h3>
 
-  <p>Generally, need to be skeptical when interviewing tenants reporting repair - potential 
+  <p>Generally, need to be sceptical when interviewing tenants that are reporting a repair - potential 
   tenant recharge issue.</p>
 
   <h3>Recharge</h3>
@@ -1646,7 +1644,7 @@ const kitchenUnit  = new ContentR(
 
 <h3>Warranty</h3>
 
-  <p>Identified from the T-Mobile system. If repair is identified as within a warranty period,
+  <p>Identified from the T-Mobile system. If the repair is identified as being within the warranty period,
   invoke the warranty repair process.</p>
 
 <h3>Key questions and information</h3>
@@ -1667,7 +1665,7 @@ const kitchenUnit  = new ContentR(
 <h3>Outcome</h3>
 
   <p>If Repair to unit - Order Remedy Repair</p>
-  <p>If Recharge -- I.E damaged by tenant, please advise tenant and log recharge job 
+  <p>If Recharge -- i.e damaged by tenant, please advise tenant and log recharge job 
   accordingly.</p>
 
   `
@@ -1691,7 +1689,7 @@ const liftorHoist  = new ContentR(
     <ul>
       <li>Log a job on T-Mobile</li>
       <li>Back out of job green arrow</li>
-      <li>Phone through to lift section on 0114 2734410 to make aware.</li>
+      <li>Phone through to lift section on <a href="tel:0114 2734410">0114 2734410</a> to make aware.</li>
       <li>If passenger lift adds location of lift and any further information.</li>
   </ul>
 
@@ -1753,7 +1751,7 @@ const newBuildPropertyDefectorEmergencyCallOut  = new ContentR(
   `
   <h3>Property Repairs</h3>
 
-  <p>If a tenant calls to report a repair to new build property's, provide them with the contact details 
+  <p>If a tenant calls to report a repair to new build properties, provide them with the contact details 
   of Equans:</p>
   <p>Telephone: 0800 019 0919 or 01709 766017</p>
   <p>Opening hours: Monday to Friday 8:30am to 4pm</p>
@@ -1963,7 +1961,7 @@ const plumbingandDomesticHotorColdWater  = new ContentR(
 
 <h3>Key questions and information</h3>
 
-  <p>Check if the repair is regarding no water flowing out of the taps, or whether there is water flowing, ,
+  <p>Check if the repair is regarding no water flowing out of the taps, or whether there is water flowing, 
   and it is cold. If it's around no hot water then this should be a <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">domestic heating repair</a>.</p>
   <p>External bursts should be ordered as an appointable job.</p>
   <p>If there is a pop-up i.e. for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
@@ -2518,3 +2516,4 @@ const repairs = new ServiceR(
       reroofingProgrammeWarranty, rightToBuy, rightToRepair, scaffolding, surveyors, tarmac, wallRepair, 
       wcBathorShowerorSinkUnit, windowSillorCill, windowFrame, workingatHeight ]
 );
+
