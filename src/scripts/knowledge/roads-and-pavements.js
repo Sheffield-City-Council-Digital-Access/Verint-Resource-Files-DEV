@@ -152,7 +152,7 @@ const reportHighwayDamage = new FormRaP(
   "report_highway_damage",
   {
     type: "Report",
-    keywords: ["Highway", "damage"],
+    keywords: ["Highway", "damage", "damage to", "damage to the", "damage to the highway"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
@@ -251,15 +251,15 @@ const reportTrafficSignal = new FormRaP(
 
 const requestClaimsPack = new FormRaP(
   "requestClaimsPack",
-  "Highways claims pack",
-  "Damaged to vehicle or personal property or personal injury due to a problem on the highway",
+  "Highways compensation claims pack",
+  "Request a claims pack due to damaged to a vehicle or personal property or personal injury due to a problem on the highway, upon receiving the pack provide information such as: if the issue has already been reported/repaired, date/time of incident, where the incident happened ect.",
   "request_claims_pack",
   {
     type: "Request",
-    keywords: ["Claims", "pack"],
+    keywords: ["Claims", "pack", "Highways", "Compensation"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
+  { date: "06/03/2025", name: "Sam Coupland" }
 );
 
 const requestGritBin = new ContentRaP(
@@ -466,7 +466,7 @@ const reportFallenLeaves = new FormRaP(
   "report_fallen_leaves",
   {
     type: "Report",
-    keywords: ["Fallen", "leaves"],
+    keywords: ["fallen", "leaves","highway", "fallen leaves", "fallen leaves on", "fallen leaves on the", "fallen leaves on the highway"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
@@ -480,7 +480,7 @@ const reportHedgePlantGrass = new ContentRaP(
     <section>
       <h3>Grassed areas</h3>
       <p>
-        Grass cutting seasons are Spring and Summer. The frequecney in which they
+        Grass cutting seasons are Spring and Summer. The frequency in which they
         are cut varies from every 2-4 weeks or every year.
       </p>
       <ul>
@@ -488,7 +488,7 @@ const reportHedgePlantGrass = new ContentRaP(
           Areas with daffodils or other bulbs are left uncut until early June.
         </li>
         <li>
-          Areas containing wildflowers area, it is cut once per year, typically in
+          Areas containing wildflowers, it is cut once per year, typically in
           late August.
         </li>
         <li>
@@ -526,7 +526,7 @@ const reportHedgePlantGrass = new ContentRaP(
       <h3>Hedges</h3>
       <p>
         We plan our routine hedge and tree cutting around bird nesting times and
-        other conservation issues (e.g. insect habitats), so they do not cut hedges
+        other conservation issues (e.g. insect habitats), so we do not cut hedges
         in the spring and early summer unless for reasons of public safety.
       </p>
       <p>
@@ -534,8 +534,10 @@ const reportHedgePlantGrass = new ContentRaP(
         land, you will need to transfer the call to the Highway Enforcement team.
         The Highway Enforcement team can serve hedge cutting/tree pruning notices to
         private landowners where trees/hedges are encroaching on to the highway not
-        considered to be causing hazard or danger. If a tree is causing a hazard or
-        danger to the highway, raise a report.
+        considered to be causing hazard or danger. 
+        Amey will issue Section 154 notices to the property in the 1st instance
+        then it will be passed to Highways Enforcement if the issue isn’t resolved within 14 days 
+        If a tree is causing a hazard or danger to the highway, raise a report.
       </p>
     </section>
   `,
@@ -550,7 +552,7 @@ const reportHedgePlantGrass = new ContentRaP(
     keywords: ["Hedge", "plant", "grass"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const reportLitterBin = new FormRaP(
@@ -581,14 +583,14 @@ const reportStreetSignBollard = new FormRaP(
 
 const reportTree = new ContentRaP(
   "reportTree",
-  "Trees and tree grills",
-  "Report problems such as fallen, leaning, diseased, dead trees, or damaged tree grills",
+  "Trees and tree grilles",
+  "Report problems such as fallen, leaning, diseased, dead trees, or damaged tree grilles",
   `
     <section>
       <h3>Maintanence</h3>
       <p>
         We plan our routine hedge and tree cutting around bird nesting times and
-        other conservation issues (e.g. insect habitats), so they do not cut hedges
+        other conservation issues (e.g. insect habitats), so we do not cut hedges
         in the spring and early summer unless for reasons of public safety.
       </p>
       <p>

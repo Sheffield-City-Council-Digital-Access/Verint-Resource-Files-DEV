@@ -113,7 +113,7 @@ class FormEaR extends CoreEaR {
 const ccaCCBorCanvassForms = new ContentEaR(
   "ccaCCBorCanvassForms",
   "CCB or Canvass Form",
-  "CCB or Canvass Forms - People that do not live at the address",
+  "CCB or Canvass Forms - Completion of CCB or Canvass Forms",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <p>
@@ -210,6 +210,15 @@ const ccaCCBForms = new ContentEaR(
       >
       If there are no eligible residents, you should state why this is the case.
     </p>
+    <p>
+      If you do not want to appear on the electoral register in Sheffield you can write to us
+      stating that the address you are living at is a second home and send it to: 
+      <address>
+        Electoral Services<br/>
+        Town Hall<br/>
+        Sheffield, S1 2HH
+      </address>
+    </p>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "annual_canvass_transferred_to_service" },
@@ -231,7 +240,7 @@ const ccaCCBForms = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "03/12/2024", name: "Andy Walker" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const informationChangeandHowToUpdateIt = new ContentEaR(
@@ -497,6 +506,7 @@ const assistanceForPartiallySightedVoters = new ContentEaR(
   { date: "03/12/2024", name: "Andy Walker" }
 );
 
+
 const howToCompletePostalVote = new ContentEaR(
   "howToCompletePostalVote",
   "How to complete Postal Vote",
@@ -677,7 +687,19 @@ const postalVoteNoLongerRequired = new ContentEaR(
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
-    keywords: [],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "vote",
+      "voting",
+      "voters",
+      "electorial",
+      "elect",
+      "elec",
+      "paris",
+      "pari"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "03/12/2024", name: "Andy Walker" }
@@ -1005,8 +1027,9 @@ const applyingForPostalVote = new ContentEaR(
         <li>Email Link to Customer</li>
         <li>From Porters Lodge at the Town Hall or First Point at Howden House</li>
       </ul>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20a%20postal%20vote'"> Send Link </button>
-      
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20a%20postal%20vote'"> Send Link </button><br/>
+      <br/>
+      If the customer cannot apply online, please send an email to<a href="mailto:elections@sheffield.gov.uk">electoral services</a> and select transferred to service.
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -1568,8 +1591,8 @@ const electoralRegisterConfirmationLetter = new ContentEaR(
     </section>
     <p>
       Letters can be requested from Electoral Services for Proof of Registration.
-      This only provides evidence that someone is registeted at an address, not that
-      they are resident. We can only send this confirmaiton letter by post to the
+      This only provides evidence that someone is registered at an address, not that
+      they are resident. We can only send this confirmation letter by post to the
       registered address.
     </p>
   `,
@@ -1906,7 +1929,21 @@ const registerToVote = new ContentEaR(
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
-    keywords: ["Register", "Vote", "Voting"],
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "proxy",
+      "prox",
+      "vote",
+      "voting",
+      "voters",
+      "postal",
+      "post",
+      "electorial",
+      "elect",
+      "elec"
+    ],
     categories: ["Elections and Referendums", "Electoral"],
   },
   { date: "25/11/2024", name: "Nathan Smith" }
@@ -2227,6 +2264,41 @@ const electionResults = new ContentEaR(
   { date: "25/09/2024", name: "Shahzad Athar" }
 );
 
+const overSeasVoters = new ContentEaR(
+  "overSeasVoters",
+  "Overseas Voters",
+  "Learn about eligibility and registration for Overseas Voters, including which elections you can vote in and the registration period.",
+  `
+    <p>
+      Only British citizens may register as Overseas Voters (other Commonwealth citizens and citizens of the Irish Republic may not) – allowing them to vote at UK Parliamentary and European Parliamentary elections.<br/>
+      <br/>
+      Registration is allowed for 15 years from the date an elector was last registered as a UK resident. If you were too young to register when you left the UK, your parent or guardian must have been registered.<br/>
+      <br/>
+      As an overseas voter, you are eligible to vote in elections for the UK Parliament and the European Parliament. You cannot vote in UK local or mayoral elections, or elections to the Scottish Parliament, the National Assembly for Wales or the London Assembly.<br/>
+      <br/>
+      If you live in a country which is a member of the European Union, you can vote in that country's own local and European parliamentary elections. But, you cannot vote in European elections in more than one country.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "elections_and_voting_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "oversea",
+      "seas",
+      "vote",
+      "voting",
+      "voters"
+    ],
+    categories: ["Elections and Referendums", "Electoral","Overseas"],
+  },
+  { date: "07/03/2024", name: "Sam Coupland" }
+);
+
 const familyTreeorGenealogy = new ContentEaR(
   "familyTreeorGenealogy",
   "Family Tree or Genealogy",
@@ -2240,9 +2312,9 @@ const familyTreeorGenealogy = new ContentEaR(
     <p>
       The electoral register is compiled for election purposes and is not intended
       to be used as a tool for searching for lost relatives. Registers are split
-      intot he 6 parliamentary constituencies, then into the wards wihtin those
+      into the 6 parliamentary constituencies, then into the wards wihtin those
       constituencies. Each ward is broken down into the polling district each
-      polling stations serves and then into each street within that district.
+      polling station serves and then into each street within that district.
       Properties are then sorted by address order - not by name.
     </p>
     <p>
@@ -2267,7 +2339,7 @@ const familyTreeorGenealogy = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/11/2024", name: "Nathan Smith" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const wards = new ContentEaR(
@@ -2327,6 +2399,7 @@ const electionsAndReferendums = new ServiceEaR(
     electionsAndVoting,
     familyTreeorGenealogy,
     postalorProxyVoting,
+    overSeasVoters,
     registeringToVote,
     wards
   ]

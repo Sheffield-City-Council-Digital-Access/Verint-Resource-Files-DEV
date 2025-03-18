@@ -68,8 +68,8 @@ const badgerProtection = new ContentPaN(
     </p>
     <p>
       Under the 1992 Act it is now illegal to damage a badger sett or cause a dog to
-      enter a set. It is also an offence to attempt any of these actions or
-      recklessly allow a dog to enter a set. 
+      enter a sett. It is also an offence to attempt any of these actions or
+      recklessly allow a dog to enter a sett. 
     </p>
     <p>
       It is also an offence to possess a dead Badger, which has been acquired
@@ -173,7 +173,7 @@ const batProtectionBritain = new ContentPaN(
       <li>Intentionally or recklessly obstruct access to a bat roost </li>
     </ul>
     <p>
-      For more information, please visit <a href="http://www.bats.org.uk">http://www.bats.org.uk</a>. 
+      For more information, please visit <a href="https://www.bats.org.uk">https://www.bats.org.uk</a>. 
       <br>
 
        <button
@@ -270,7 +270,6 @@ const bedBugTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -353,14 +352,14 @@ const birdsandPigeonsTreatment = new ContentPaN(
     </section>
   `,
   {
-    buttonLabel: "Book treatment for Birds and Pegions",
-    formName: "pest_control_treatment",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "pest_control_transfer_to_service" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Birds and Pegions", "Treatment", "Pests", "Vermin"],
+    keywords: ["Birds and Pigeons", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
@@ -368,13 +367,13 @@ const birdsandPigeonsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "12/03/2025", name: "Dinah Williams" }
 );
 
 const biscuitBeetlesTreatment = new ContentPaN(
   "biscuitBeetlesTreatment",
   "Biscuit Beetles Treatment",
-  "Find out how to submit a sample for Biscuit Beetle treatment, including treatment costs, eligibility for reduced fees, and the process for larger properties or commercial inquiries.",
+  "Find out how to submit a sample for Biscuit Beetle treatment, including treatment costs, eligibility for reduced fees, and the process for larger properties or commercial enquiries.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -421,7 +420,6 @@ const biscuitBeetlesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -433,7 +431,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
     </p>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Multiple Occupation House (HMO)</h3>
+        <h3>Commercial and Houses in multiple occupation (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -477,7 +475,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
       "HMO"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const bumbleBeesTreatment = new ContentPaN(
@@ -493,11 +491,10 @@ const bumbleBeesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£58.00.</strong>
+      reduced to <strong>£69.50.</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -523,7 +520,7 @@ const bumbleBeesTreatment = new ContentPaN(
     
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Multiple Occupation House (HMO)</h3>
+        <h3>Commercial and Houses in multiple occupation (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -567,7 +564,7 @@ const bumbleBeesTreatment = new ContentPaN(
       "HMO"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const carpetBeetlesTreatment = new ContentPaN(
@@ -626,11 +623,10 @@ const carpetBeetlesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£58.00.</strong>
+      reduced to <strong>£69.50.</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -642,7 +638,7 @@ const carpetBeetlesTreatment = new ContentPaN(
     </p>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Multiple Occupation House (HMO)</h3>
+        <h3>Commercial and Houses in multiple occupation (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -686,7 +682,7 @@ const carpetBeetlesTreatment = new ContentPaN(
       "HMO"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const clusterFliesTreatment = new ContentPaN(
@@ -741,7 +737,6 @@ const clusterFliesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -823,7 +818,6 @@ const cockroachesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -905,7 +899,6 @@ const cricketsTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -987,7 +980,6 @@ const dermestesBeetlesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1113,14 +1105,14 @@ const fleasTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Fleas",
     formName: "pest_control_treatment",
   },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
   {
-    type: "Information",
+    type: "Book",
     keywords: ["Flea"],
     categories: ["Pollution and Nuisance", "Environmental", "Pest Constrol"],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const fliesTreatment = new ContentPaN(
@@ -1175,7 +1167,6 @@ const fliesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1348,7 +1339,6 @@ const furBeetlesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1391,11 +1381,10 @@ const gardenAntsTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£58.00:</strong>
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1619,7 +1608,6 @@ const ladyBirdsTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1662,11 +1650,10 @@ const masonryBeesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£58.00:</strong>
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1675,7 +1662,7 @@ const masonryBeesTreatment = new ContentPaN(
     <p>
     If there is more than one nest, a charge of <strong>£39.00</strong> per additional nest will be applied.
     </p>
-       <p>
+    <p>
       All prices include a call-out fee of £39.00 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
@@ -1722,11 +1709,10 @@ const miceTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£58.00:</strong>
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1777,7 +1763,6 @@ const mitesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1859,7 +1844,6 @@ const mothsTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1906,7 +1890,6 @@ const pharoahAntsTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1988,7 +1971,6 @@ const psocidsTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2029,20 +2011,23 @@ const ratTreatment = new ContentPaN(
       If you require further treatments, each additional treatment will cost <strong>£39.00.</strong>
     </p>
     <p>
+      All prices include a call-out fee of <strong>£39.00.</strong> This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
+    <p>
       If you receive one of the following benefits, the treatment will be free:
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
-      attends the property but is unable to complete the treatment.
+      Free treatments, there is no call out charge if the Technician is unable to gain access.
     </p>
+        
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Communal Areas</h3>
@@ -2165,7 +2150,6 @@ const redSpiderMitesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2247,7 +2231,6 @@ const sewageFliesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2296,7 +2279,6 @@ const silverFishTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2382,7 +2364,6 @@ const spiderBeetlesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2420,39 +2401,14 @@ const squirrelsTreatment = new ContentPaN(
   "Squirrels Treatment",
   "Details on Squirrel treatment, including costs, discounted rates for benefits recipients, and the included call-out fee.",
   `
-    <h3>Cost for Treatment</h3>
     <p>
-      We will only provide treatment for Squirrels inside the property.
-      The treatment cost is <strong>£315.00.</strong> This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
+    For advice on squirrel treatments, please contact the pest control back office at:
+    <a href="tel:01142930356">0114 293 0356</a> 
+    or email: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>
     </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£99.00:</strong> <br>
-           All prices include a call-out fee of £39.00. This fee applies if our officer
-      attends the property but is unable to complete the treatment.
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Universal Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-      This covers you for up to 5 visits. If you require further treatments, each additional
-      treatment will cost £55.00.
-      
-      <p>
-      All prices include a call-out fee of £39.00. This fee applies if our officer
-      attends the property but is unable to complete the treatment.
-    </p>
-
   `,
   {
-    buttonLabel: "Book treatment for Squirrels",
+    buttonLabel: "",
     formName: "pest_control_treatment",
   },
   { typeKey: "pest_control_transfer_to_service" },
@@ -2485,7 +2441,6 @@ const waspsTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2502,7 +2457,7 @@ const waspsTreatment = new ContentPaN(
       Officers carry equipment that enables them to treat a nest located at height.
       In most cases the officer will be able to carry out a successful treatment using such equipment. 
       If any further access equipment is required to treat the nest our officer will inform you of this 
-      at the time of the visit. If further access is equipment is required, then it would possibly mean 
+      at the time of the visit. If further access to equipment is required, then it would possibly mean 
       an added cost. If your customer is unsure about the possible additional cost, escalate pest control 
       enquiry and an officer will contact the customer about it.
       <br>
@@ -2526,7 +2481,7 @@ const waspsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const weevilsTreatment = new ContentPaN(
@@ -2612,7 +2567,6 @@ const woodliceTreatment = new ContentPaN(
 
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2687,40 +2641,6 @@ const pestControl = new MenuPaN(
 
 //#endregion Pest Control
 
-const handoverDogtoCouncil = new ContentPaN(
-  "handoverDogtoCouncil",
-  "Handover Dog to Council",
-  "",
-  `
-    
-  `,
-  {
-    buttonLabel: "Handover Dog to Council",
-    formName: "animal_control",
-  },
-  { typeKey: "pest_control_transfer_to_service" },
-  { typeKey: "pest_control_information_provided" },
-  {
-    type: "Book",
-    keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
-    categories: [
-      "Pollution and Nuisance",
-      "Environmental",
-      "Pest Control",
-      "Animal Control",
-      "Environmental Health",
-    ],
-  },
-  { date: "11/10/2024", name: "Shahzad Athar" }
-);
-
-const animalControl = new MenuPaN(
-  "animalControl",
-  "Animal Control",
-  "Animal control treatments, services and pricing",
-  [handoverDogtoCouncil]
-);
-
 const reportNeedlesGlass = new FormPaN(
   "reportNeedlesGlass",
   "Needles or broken glass",
@@ -2785,6 +2705,33 @@ const reportFlyTipping = new FormPaN(
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
+ 
+
+const handoverDogtoCouncil = new FormPaN(
+  "handoverDogtoCouncil",
+  "Handover Dog to Council",
+  "Hand over a dog to the council",
+  "report_dangerous_dog",
+  {
+    type: "Report",
+    keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
+    categories: ["Pollution and Nuisance", "Environmental", "Pest Control", "Animal Control", "Environmental Health"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+const reportDangerousDog = new FormPaN(
+  "reportDangerousDog",
+  "Dangerous dog",
+  "Report a dog as dangerous",
+  "report_dangerous_dog",
+  {
+    type: "Report",
+    keywords: ["Dog", "dangerous","dangerous dog  ","dog as dangerous"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
 
 const reportDogFouling = new FormPaN(
   "reportDogFouling",
@@ -2797,6 +2744,60 @@ const reportDogFouling = new FormPaN(
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
+const reportStrayingDog = new FormPaN(
+  "reportStrayingDog",
+  "Straying dog",
+  "Report straying dog on the highway",
+  "report_straying_dog",
+  {
+    type: "Report",
+    keywords: ["Dog", "straying","stray","stray dog"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+const reportDogAsLost = new FormPaN(
+  "reportDogAsLost",
+  "Lost dog",
+  "Report a lost dog",
+  "report_dog_as_lost",
+  {
+    type: "Report",
+    keywords: ["Dog", "missing","lost","missing dog","lost dog","dog as missing","dog as lost"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+
+
+const reportSmoke = new FormPaN(
+  "reportSmoke",
+  "Smoke",
+  "Report smoke",
+  "report_smoke",
+  {
+    type: "Report",
+    keywords: ["Report", "smoke"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+const reportNoise = new FormPaN(
+  "reportNoise",
+  "Noise",
+  "Report noise",
+  "report_noise",
+  {
+    type: "Report",
+    keywords: ["Report", "noise"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
 );
 
 const abandonedVehicles = new ContentPaN(
@@ -3200,14 +3201,20 @@ const pollutionAndNuisance = new ServicePaN(
   "Pollution and Nuisance",
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone, Enviro, Eps, Env`,
   [
-    abandonedVehicles,
+    abandonedVehicles,  
     pestControl,
+    reportDangerousDog, 
     reportDogFouling,
+    reportStrayingDog,
+    reportDogAsLost,
+    handoverDogtoCouncil,
     reportLitter,
     reportGraffiti,
     reportFlyPosting,
     reportFlyTipping,
     reportNeedlesGlass,
+    reportSmoke,
+    reportNoise,
     cleanAirZone
   ]
 );

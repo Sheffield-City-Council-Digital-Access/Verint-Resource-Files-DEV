@@ -4962,11 +4962,11 @@ const balanceEnquiry = new ContentH(
   </details>
 `,
 {
-  buttonLabel: "Report Housing Enquiry ",
-  formName: "hou_rehousing_enquiry",
+  buttonLabel: "",
+  formName: "",
 },
-{ typeKey: "rehousing_services_information_provided" },
-{ typeKey: "rehousing_services_information_requested" },
+{ typeKey: "rents_transfered_to_service" },
+{ typeKey: "rents_information_provided" },
 {
   type: "Request",
   keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
@@ -5162,9 +5162,9 @@ const contactRentsTeam = new ContentH(
         </div>
     </details>
   `,
-  { buttonLabel: "Contact Rents Team", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "Contact Rents Team", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
@@ -5183,13 +5183,25 @@ const arrearsorDebt = new ContentH(
       advising the court that that they do not oppose the removal.
     </p>
   `,
-  { buttonLabel: "Arrears or Debt", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
 
+const debtRecovery = new FormH(
+  "debtRecovery",
+  "Debt Recovery",
+  "Use this form to enquire about Debt recovery or any correspondence you have received regarding Debt Recovery.",
+  "hou_rents_debt_recovery",
+  {
+    type: "Request",
+    keywords: ["Debt", "Housing", "Rent", "Recovery"],
+    categories: ["Housing"],
+  },
+  { date: "12/03/2025", name: "Nathan Smith" }
+);
 
 
 const references = new ContentH(
@@ -5214,11 +5226,37 @@ const references = new ContentH(
       Social Landlords can also email details of their request to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> if they prefer to send an email.
     </p>
   `,
-  { buttonLabel: "References", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "References", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
+);
+
+const rentArrangements = new FormH(
+  "rentArrangements",
+  "Rent Arrangements",
+  "Use this form to set up, amend or enquire about a Rent Arrangement.",
+  "hou_rents_arrangements",
+  {
+    type: "Request",
+    keywords: ["Arrangement", "Housing", "Rent"],
+    categories: ["Housing"],
+  },
+  { date: "12/03/2025", name: "Nathan Smith" }
+);
+
+const rentRefunds = new FormH(
+  "rentRefunds",
+  "Rent Refunds",
+  "Use this form to chase or request a Rent refund.",
+  "hou_rents_refunds",
+  {
+    type: "Request",
+    keywords: ["Refund", "Housing", "Rent"],
+    categories: ["Housing"],
+  },
+  { date: "12/03/2025", name: "Nathan Smith" }
 );
 
 const rentVariation = new ContentH(
@@ -5502,9 +5540,9 @@ const rentVariation = new ContentH(
     </div>
 </details>
   `,
-  { buttonLabel: "Rent Varitaion", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "Rent Varitaion", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
@@ -5528,14 +5566,74 @@ const statements = new ContentH(
   <strong>Tenants in arrears:</strong> We will continue to send statements every 13 weeks if the customer is repaying arrears.
   </p> 
   `,
-  { buttonLabel: "Statements", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "Statements", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
 
 //universalCredit is in cross regions
+
+const yorkshireWater = new ContentH(
+  "yorkshireWater",
+  "Yorkshire Water",
+  "Find out how to query water charges, access support schemes, and check eligibility for reduced water charges based on household income.",
+  `
+  <p>
+    If a customer is querying their water charges:<br>
+    These are set by Yorkshire Water, and we collect these charges as part of the rent.  Any complaints about the charges need to be directed to Yorkshire Water – 03451242424 or visit <a href="https://www.yorkshirewater.com/help" target="_blank">https://www.yorkshirewater.com/help</a>.
+  </p>
+  <p>
+    There are various schemes available, including Yorkshire Water Support, where we may be able to reduce the charge depending on household make-up and income.
+    Please direct any queries to the Income Plus Specialist for that property.<br>
+    The income thresholds for support are as follows:
+  </p>
+
+  <table border="1">
+  <thead>
+    <tr>
+      <th>Household Make Up</th>
+      <th>Band 1 – Reduce to £5.40 per week</th>
+      <th>Band 2 – Reduce to £7.08 per week</th>
+      <th>Band 3 – Reduce to £8.18 per week</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Single Adult</td>
+      <td>&lt; £12,000</td>
+      <td>&lt; £15,000</td>
+      <td>&lt; £20,000</td>
+    </tr>
+    <tr>
+      <td>2 + Adults</td>
+      <td>&lt; £15,600</td>
+      <td>&lt; £19,500</td>
+      <td>&lt; £26,000</td>
+    </tr>
+    <tr>
+      <td>1 Dependant</td>
+      <td>&lt; £15,600</td>
+      <td>&lt; £19,500</td>
+      <td>&lt; £26,000</td>
+    </tr>
+    <tr>
+      <td>2 + Dependents</td>
+      <td>&lt; £16,800</td>
+      <td>&lt; £21,000</td>
+      <td>&lt; £28,000</td>
+    </tr>
+  </tbody>
+</table>
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
+  { type: "Yorkshire Water", keywords: ["Rent", "Water", "Yorkshire"], categories: ["Housing"] },
+  { date: "10/03/2025", name: "Nathan Smith" }
+);
 
 const rents = new MenuH(
   "rents",
@@ -5545,10 +5643,14 @@ const rents = new MenuH(
     arrearsorDebt,
     balanceEnquiry,
     contactRentsTeam,
+    debtRecovery,
     references,
+    rentArrangements,
+    rentRefunds,
     rentVariation,
     statements,
-    universalCredit
+    universalCredit,
+    yorkshireWater
   ]
 );
 
@@ -6117,6 +6219,19 @@ const tenancyEnforcementASB = new ContentH(
 
 //#region Tenancy sustainment
 
+const abandonment = new FormH(
+  "abandonment",
+  "Abandonment",
+  "Report the abandonment of an item, pet or property.",
+  "hou_sustainment_abandon",
+  {
+    type: "Report",
+    keywords: ["Housing", "Abandon", "Pet"],
+    categories: ["Housing"],
+  },
+  { date: "07/03/2025", name: "Nathan Smith" }
+);
+
 const boundaries = new FormH(
   "boundaries",
   "Council housing and private land boundaries",
@@ -6449,11 +6564,11 @@ const permissions = new ContentH(
     </div>
   </details>
   `,
-  { buttonLabel: "Permissions", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
+  { buttonLabel: "Permissions", formName: "hou_sustainment_perm" },
   { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { typeKey: "Tenancy_Sustainment_information_provided" },
   { type: "Permissions", keywords: ["Tenancy"], categories: ["Housing"] },
-  { date: "07/11/2024", name: "Shahzad Athar" }
+  { date: "07/03/2025", name: "Nathan Smith" }
 );
 
 
@@ -6526,6 +6641,18 @@ const tenancyAgreementRequest = new ContentH(
   { date: "08/11/2024", name: "Shahzad Athar" }
 );
 
+const tenancyChange = new FormH(
+  "tenancyChange",
+  "Tenancy Change",
+  "Request for adding, removing or enquiring about occupants, changes to tenancy both sole and joint, reporting a deceased tenant, ending a tenancy, passing on a tenancy or enquiring about tenancy start and end dates.",
+  "hou_sustainment_ten_chan",
+  {
+    type: "Request",
+    keywords: ["Housing", "Tenancy", "Tenant"],
+    categories: ["Housing"],
+  },
+  { date: "07/03/2025", name: "Nathan Smith" }
+);
 
 const tenancyConditions = new ContentH(
   "tenancyConditions",
@@ -6952,6 +7079,7 @@ const tenancySustainment = new MenuH(
   "Tenancy Sustainment",
   "Support for maintaining tenancies, including information on permissions, tenancy agreements, name changes, parking permits, and council housing services.",
   [
+    abandonment,
     boundaries,
     burglarAlarmRequest,
     fencesCouncilHousing,
@@ -6961,6 +7089,7 @@ const tenancySustainment = new MenuH(
     nameChanges,
     permissions,
     tenancyAgreementRequest,
+    tenancyChange,
     tenancyConditions
   ]
 );

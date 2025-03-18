@@ -89,6 +89,9 @@ const freeSchoolMeals = new ContentSaC(
       remain eligible until they finish the phase of schooling (primary or
       secondary) they’re in on 31 March 2025.
     </p>
+    <p>
+      If your child/ren is/are currently attending an Oasis school, they need to apply for Free School Meals with that school directly.
+    </p>
     <h3>Change in circumstance</h3>
     <p>
       If your circumstances change, such as if you no longer receive benefits, have
@@ -315,7 +318,7 @@ const freeSchoolMeals = new ContentSaC(
     buttonLabel: "Apply for Free School Meals",
     formName: "apply_school_meals",
   },
-  { typeKey: "" },
+  { typeKey: "free_school_meals_transferred_to_service" },
   { typeKey: "free_school_meals_information_provided" },
   {
     type: "Apply",
