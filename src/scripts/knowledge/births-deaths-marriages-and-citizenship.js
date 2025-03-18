@@ -72,8 +72,22 @@ const bookNoticeCivilPartnership = new ContentBDMaC(
     <p>If you are not British, Irish and do not have European Union Settlement Scheme status (settled, pre-settled and you have applied for the status before 30 June 2021) you must attend the notice of marriage appointment together either in the district you both live, or in either district (whichever is most convenient) if you live in different towns.</p>
     <p>You must know where your civil partnership will take place.</p>
     <p>The date of your civil partnership formation must be between 29 calendar days and 1 year of your appointment.</p>
-    <p>Further information for notice of civil partnership please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice" target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a>. <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Book%20a%20Notice%20of%20Civil%20Partnership%20Appointment'"> Send Link </button>
+    <p>Further information for notice of civil partnership please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice" target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a>. 
 </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20Notice%20of%20Civil%20Partnership%20Appointment\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Fees</h3>
     <p>There is a fee to give your notice of civil partnership:</p>
     <ul>
@@ -138,8 +152,22 @@ const bookNoticeOfMarriageApp = new ContentBDMaC(
         <li>You must know where your marriage will take place.</li>
         <li>The date of your marriage must be between 29 calendar days and 1 year of your appointment.</li>
     </ul>
-    <p>Further information for notice of marriage please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice" target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Marriages%20and%20civil%20partnerships'"> Send Link </button>
+    <p>Further information for notice of marriage please visit <a href="https://www.gov.uk/marriages-civil-partnerships/give-notice" target="_blank" rel="noopener noreferrer">https://www.gov.uk/marriages-civil-partnerships/give-notice</a> 
  </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Marriages%20and%20civil%20partnerships\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Fees</h3>
     <p>There is a fee to give your notice of marriage (additional fees may be incurred dependant on your choices)</p>
     <ul>
@@ -154,7 +182,7 @@ const bookNoticeOfMarriageApp = new ContentBDMaC(
     <h3>Proof of name, address, marital status and nationality</h3>
     <p>You will need to bring:</p>
     <ul>
-        <li>a valid passport for proof of your name, age and nationalit.y</li>
+        <li>a valid passport for proof of your name, age and nationality.</li>
         <li>your driving licence, a utility bill dated within the last 3 months, or a bank statement dated within a month for proof of your address that includes either your full name or at least your initials.</li>
         <li>Proof that a previous marriage or civil partnership has ended.</li>
         <li>decree absolute of divorce / dissolution.</li>
@@ -192,14 +220,57 @@ const bookingARegistrarWedding = new ContentBDMaC(
     <p>Our ceremonies team can arrange marriages or civil partnerships under 90 days for special reasons, you would need to contact our team at ceremoniesteam@sheffield.gov.uk</p>
     <h3>To form a marriage or civil partnership you must be:</h3>
     <ul>
-        <li>18 years or older: <a href="https://www.legislation.gov.uk/ukpga/2022/28" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/2022/28</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Legislation'"> Send Link </button>
+        <li>18 years or older: <a href="https://www.legislation.gov.uk/ukpga/2022/28" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/2022/28</a> 
 </li>
+
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Legislation\`
+    "
+>
+    Send link to review further information
+</button>
+
     </ul>
     <h3>You must not:</h3>
     <ul>
         <li>Already be a civil partner or married.</li>
         <li>Be closely related (the Act gives details of prohibited relationships) <a href="https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents</a>.<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Legislation%20Contents'"> Send Link </button> </li>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Legislation%20Contents\`
+    "
+>
+    Send link to review further information
+</button>
+
     </ul>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Legislation%20Contents\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Non-Refundable Booking Fees</h3>
     <p>When you have completed your ceremony booking you will be required to make payment, this is to reserve the date and time selected, please note this is a non-refundable fee.</p>
     <ul>
@@ -210,11 +281,39 @@ const bookingARegistrarWedding = new ContentBDMaC(
     <p>Sheffield Register Office and ceremony rooms are located in the magnificent Grade I listed Town Hall. This unique wedding venue is the perfect choice for couples looking to get married in Sheffield city centre. With reasonable rates, it is also one of the most inexpensive wedding venues in Sheffield.</p>
     <p>Our registrars will perform a ceremony that will be memorable and personal. You can add vows or readings (non-religious). Your ceremony can be formal, flamboyant, sophisticated, or even a singalong – it can be tailored to your individual wishes.</p>
     <h3>Mirror Mandela Room</h3>
-    <a href="https://www.sheffield.gov.uk/births-deaths-marriages/town-hall-weddings " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/town-hall-weddings </a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Weddings%20in%20the%20Town%20Hall%20Mandela%20Mirror%20Room'"> Send Link </button>
+    <a href="https://www.sheffield.gov.uk/births-deaths-marriages/town-hall-weddings " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/town-hall-weddings </a> 
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Weddings%20in%20the%20Town%20Hall%20Mandela%20Mirror%20Room\`
+    "
+>
+    Send link to review further information
+</button>
+
     <p>If you wish to book the room the Mirror Mandela Room, please contact Beth Pinder <a href="mailto:Beth.Pinder@sheffield.gov.uk">Beth.Pinder@sheffield.gov.uk</a> for further details and fees. </p>
     <p>Registrar fees- non-refundable booking fee of £60.00 and £304.00 to reserve Registrars for the ceremony.</p>
     <h3>Civil Partnerships</h3>
-    <p>Civil partnership enables same sex couples to obtain legal recognition of their relationship under the Civil Partnership Act 2004. As of 2nd of December 2019, opposite sex couples can also form a civil partnership.  <a href="https://www.legislation.gov.uk/ukpga/2004/33/contents" target="_blank" rel="noopener noreferrer"> https://www.legislation.gov.uk/ukpga/2004/33/contents</a></https:> <br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Civil%20Partnership%20Act%202004'"> Send Link </button></p>
+    <p>Civil partnership enables same sex couples to obtain legal recognition of their relationship under the Civil Partnership Act 2004. As of 2nd of December 2019, opposite sex couples can also form a civil partnership.  <a href="https://www.legislation.gov.uk/ukpga/2004/33/contents" target="_blank" rel="noopener noreferrer"> https://www.legislation.gov.uk/ukpga/2004/33/contents</a> </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Civil%20Partnership%20Act%202004\`
+    "
+>
+    Send link to review further information
+</button>
+
     <p>Registration of a civil partnership provides couples with rights and obligations which are similar to those acquired through marriage.</p>
     <p>The Civil Partnership will be registered once each of you have signed the civil partnership schedule in the presence of the registrar and two witnesses.</p>
     <p>A ceremony is not required, but we would be pleased to offer a ceremony if you so wish. Information will be emailed once a ceremony is booked.</p>
@@ -282,8 +381,22 @@ const copyCertificates = new ContentBDMaC(
     "Request copy certificates for births, marriages, civil partnerships, or deaths registered in Sheffield, with standard or urgent processing options.",
     `
     <p>We can only take request copies of certificates for registrations that took place in Sheffield.</p>
-    <p>You can request copy certificates via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates</a>.<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Birth%20death%20marriage%20and%20civil%20partnership%20certificates'"> Send Link </button>
+    <p>You can request copy certificates via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates</a>.
 </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Birth%20death%20marriage%20and%20civil%20partnership%20certificates\`
+    "
+>
+    Send link to review further information
+</button>
+
     <p>There is a standard fee of £13.50 for these:</p>
     <ul>
         <li>full birth certificate.</li>
@@ -321,9 +434,37 @@ const finalPayment = new ContentBDMaC(
     <h3>Certificates</h3>
     <p>Marriage and civil partnership certificates cost £12.50 at the point of registration (before the ceremony). Your 1st certificate will be sent out within 5-10 working days of the office receiving your completed marriage or civil partnership schedule. If you require another certificate, please follow the link below to order one. The following details must be inputted, date of ceremony, venue and names on the schedule (maiden name).</p>
     <p>Ceremonies conducted in religious venues do not receive the 1st certificate free, please use the link below to purchase another certificate if you require one.</p>
-    <p><a href="https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 " target="_blank" rel="noopener noreferrer">https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 </a><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Marriage%20certificate%20at%20point%20of%20registration'"> Send Link </button></p>
-    <p>Copies of certificates can be purchased after the ceremony for £13.50 each at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates </a> <br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Birth%20death%20marriage%20and%20civil%20partnership%20certificates'"> Send Link </button>
+    <p><a href="https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 " target="_blank" rel="noopener noreferrer">https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 </a></p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Marriage%20certificate%20at%20point%20of%20registration\`
+    "
+>
+    Send link to review further information
+</button>
+
+    <p>Copies of certificates can be purchased after the ceremony for £13.50 each at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates </a> 
 </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Birth%20death%20marriage%20and%20civil%20partnership%20certificates\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>A message from our ceremonies team</h3>
     <p><i>We hope you have a wonderful day and a long and happy life together. We would love to have your feedback if you wish pass on how your ceremony was it would great to hear how we are doing. </i></p>
     <p>Please send us the details to <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a></p>
@@ -345,13 +486,55 @@ const licensedWeddingVenues = new ContentBDMaC(
     "Licensed Wedding Venues in Sheffield",
     "Explore licensed wedding venues in Sheffield, including booking a registrar, fees, and certificate options.",
     `
-    <p>You you can find information about licensed wedding venues in Sheffield at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Licensed%20wedding%20venues%20in%20Sheffield'"> Send Link </button></p>
+    <p>You you can find information about licensed wedding venues in Sheffield at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues</a> </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Licensed%20wedding%20venues%20in%20Sheffield\`
+    "
+>
+    Send link to review further information
+</button>
+
     <p>New link will be finalised soon for new intagrated payments we will need to update thisprocess when confirmed going live</p>
     <p>Sheffield has some of the best wedding venues in Yorkshire. From our own Register Office and Town Hall rooms to hotels, galleries theatres and museums and everything in between, there's a venue to suit every couple.</p>
     <h3>Booking a Registrar</h3>
     <p>If you're getting married in Sheffield you need to book a registrar to conduct the ceremony.</p>
-    <p>You will can to booking a registrar via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar</a>.<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Final%20ceremony%20payment'"> Send Link </button> </p>
+    <p>You will can to booking a registrar via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar</a>. </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Final%20ceremony%20payment\`
+    "
+>
+    Send link to review further information
+</button>
+
     <p>You can provisionally book a registrar up to 2 years ahead of the ceremony but it's your responsibility to contact the venue to check their availability.</p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Final%20ceremony%20payment\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Fees</h3>
     <ul>
         <li>Monday to Friday: £482.00</li>
@@ -381,6 +564,21 @@ const reRegisterABirth = new ContentBDMaC(
     "Make an appointment to re-register a birth.",
     `
   <p> Takes to <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-birth">https://www.sheffield.gov.uk/births-deaths-marriages/register-birth </a></p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20or%20reregister%20a%20birth\`
+    "
+>
+    Send link to review further information
+</button>
+
+    
     `,
     { buttonLabel: "", formName: "" },
     { typeKey: "register_office_information_requested" },
@@ -400,7 +598,34 @@ const registerABirthAndDeath = new ContentBDMaC(
     `
     <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p> 	<br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20or%20reregister%20a%20birth'"> Send Link </button>
 
-  <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p> <br>	<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20a%20death'"> Send Link </button>
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20or%20reregister%20a%20birth\`
+    "
+>
+    Send link to review further information
+</button>    
+
+  <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p>
+
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20a%20death\`
+    "
+>
+    Send link to review further information
+</button>
 
   `,
     { buttonLabel: "", formName: "" },
@@ -429,9 +654,21 @@ const registerADeath = new ContentBDMaC(
     <p>During this process you may be contacted by the Medical Examiners Office. For further information regarding the deceased you should contact the hospital or GP dealing with the death.
     </p>
     <p>For more information about the death reform certification process please visit the <a href="https://www.gov.uk/" target="_blank" rel="noopener noreferrer">https://www.gov.uk/</a> website.
-    <br>	<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Gov%20UK'"> Send Link </button>
-
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Gov%20UK\`
+    "
+>
+    Send link to review further information
+</button>
+
     <h3>Who can register a death</h3>
     <p>Usually, a relative or long-term partner (living with the deceased) of the person who has died can register death, but others can also do this. This can be:</p>
     <ul>
@@ -471,8 +708,22 @@ const registerAStillbirth = new ContentBDMaC(
     "Register a Stillbirth",
     "Register a stillbirth",
     `
-  <p> Takes to <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-stillbirth">https://www.sheffield.gov.uk/births-deaths-marriages/register-stillbirth</a> <br>	<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register a stillbirth'"> Send Link </button>
+  <p> Takes to <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-stillbirth">https://www.sheffield.gov.uk/births-deaths-marriages/register-stillbirth</a> 	
 </p> 
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20a%20stillbirth\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
     { buttonLabel: "", formName: "" },
     { typeKey: "register_office_information_requested" },
