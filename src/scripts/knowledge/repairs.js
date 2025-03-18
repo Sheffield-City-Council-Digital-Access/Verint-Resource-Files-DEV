@@ -1417,7 +1417,6 @@ const gasandDomesticSystems   = new ContentR(
           </p>  
         </div>
     </details>
-
   `
   ,
   { buttonLabel: "", formName: "" },
