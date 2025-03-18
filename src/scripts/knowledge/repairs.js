@@ -1063,54 +1063,48 @@ const gasandDomesticSystems   = new ContentR(
 </details>
 
 
+ <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Boiler Warning Codes</h3>
+         <div class="accordion-icon"></div>
+          </summary>
+             <div class="accordion-content">
+          <p>If a customer call stating their heating isn't working, and they give the fault code of 
+          <strong>F28</strong> or <strong>F29</strong>, this means that there is <strong>no gas going 
+          to the boiler</strong>. Please go through the check list below with tenant.</p>
 
-      
-  
-  
-
-  
-
-  
-
-  <h3>Boiler Warning Codes</h3>
-
-  <p>If a customer call stating their heating isn't working, and they give the fault code of 
-  <strong>F28</strong> or <strong>F29</strong>, this means that there is <strong>no gas going 
-  to the boiler</strong>. Please go through the check list below with tenant.</p>
-
-   <table border="1" cellpadding="5">
-      <tr>
-          <th></th>
-          <th>Heating Issue</th>
-          <th>Low Pressure</th>
-          <th>No Gas</th>
-          <th>No Power</th>
-      </tr>
-      <tr>
-          <td>Vaillant Ecotec Pro/Sustain</td>
-          <td>Thermostat, Programmer or Low Pressure</td>
-          <td>F22, 0.0bar</td>
-          <td>F28, F29</td>
-          <td>Boiler display blank</td>
-      </tr>
-      <tr>
-          <td>Vaillant Ecomax</td>
-          <td>Thermostat, Programmer or Low Pressure</td>
-          <td>F22, F25</td>
-          <td>F28, F29</td>
-          <td>Boiler display blank</td>
-      </tr>
-      <tr>
-          <td>Baxi Duo Tec</td>
-          <td>Thermostat, Programmer or Low Pressure</td>
-          <td>E119</td>
-          <td>E133</td>
-          <td>Boiler display blank</td>
-      </tr>
-  </table>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th></th>
+            <th>Heating Issue</th>
+            <th>Low Pressure</th>
+            <th>No Gas</th>
+            <th>No Power</th>
+        </tr>
+        <tr>
+            <td>Vaillant Ecotec Pro/Sustain</td>
+            <td>Thermostat, Programmer or Low Pressure</td>
+            <td>F22, 0.0bar</td>
+            <td>F28, F29</td>
+            <td>Boiler display blank</td>
+        </tr>
+        <tr>
+            <td>Vaillant Ecomax</td>
+            <td>Thermostat, Programmer or Low Pressure</td>
+            <td>F22, F25</td>
+            <td>F28, F29</td>
+            <td>Boiler display blank</td>
+        </tr>
+        <tr>
+            <td>Baxi Duo Tec</td>
+            <td>Thermostat, Programmer or Low Pressure</td>
+            <td>E119</td>
+            <td>E133</td>
+            <td>Boiler display blank</td>
+        </tr>
+    </table>
   
 <img class="knowledge-img" src="https://sheffield-city-council-digital-access.github.io/Verint-Resource-Files-DEV/src/images/Repairs/meter-and-credit.jpg" alt="Check the meter is switched on and ensure there is a credit on the meter" loading="lazy" referrerpolicy="no-referrer" />
-
 
   <p>The fault code has been missing a lot lately from the job notes as asked for in the prompt 
   text box for central heating repairs.</p>
@@ -1132,12 +1126,8 @@ const gasandDomesticSystems   = new ContentR(
   and hold the reset button on the boiler for 3 seconds, this button is a flame with an X 
   through it see pic below.</p>
 
-  <img class="knowledge-img" src="https://sheffield-city-council-digital-access.github.io/Verint-Resource-Files-DEV/src/images/Repairs/heating-repair.png" alt="If this fails and it still goes to F28 (not F29) then it is a genuine heating repair:" loading="lazy" referrerpolicy="no-referrer" />
+  <img class="knowledge-img" src="https://sheffield-city-council-digital-access.github.io/Verint-Resource-Files-DEV/src/images/Repairs/heating-repair.png" alt="If this fails and it still goes to F28 (not F29) then it is a genuine heating repair" loading="lazy" referrerpolicy="no-referrer" />
   
-  
-
-
-
   <p>If this fails and it still goes to F28 (not F29), then it is a genuine heating repair:</p>
 
   <ul>
@@ -1157,129 +1147,276 @@ const gasandDomesticSystems   = new ContentR(
       a gas reinstatement was ordered.</li>
   </ul>
 
-<h3>Central Heating Replacement Programme</h3>
+      </div>
+  </details>
+      
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Central Heating Replacement Programme</h3>
+        <div class="accordion-icon"></div>
+        </summary>
+          <div class="accordion-content">
+      <p>
+      On some occasions, there is an overlap with the installation of new systems and the 
+      annual gas service. Therefore, if a tenant rings to organise their gas service, but states 
+      that they have just had a new boiler / central heating system installed, please contact 
+      <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">HM&E</a> 
+      and they will advise on what steps you need to take with the gas service. This will 
+      generally consist of confirming to the tenant that we will not need to service the gas 
+      appliances this year, and delaying the service on the system, to allow HM&E to get the 
+      paperwork scanned.
+      </p>
 
-  <p>On some occasions, there is an overlap with the installation of new systems and the 
-  annual gas service. Therefore, if a tenant rings to organise their gas service, but states 
-  that they have just had a new boiler / central heating system installed, please contact 
-  <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">HM&E</a> 
-  and they will advise on what steps you need to take with the gas service. This will 
-  generally consist of confirming to the tenant that we will not need to service the gas 
-  appliances this year, and delaying the service on the system, to allow HM&E to get the 
-  paperwork scanned.</p>
+      </div>
+  </details>
+  
 
-<h3>Cowls</h3>
+  <details class="accordion">
+      <summary class="accordion-header">
+          <h3>Cowls</h3>
+              <div class="accordion-icon"></div>
+                </summary>
+                    <div class="accordion-content">
+      <p>
+          If the tenant has a gas fire and cowl has blown off, please put a gas job on using the 
+          <strong>"INSTALL GC1 TERMINAL"</strong> code on OHMS and change to <strong>PL FAO After 
+          trades</strong>. If there is <strong>no</strong> gas fire, then raise job for WAH to replace 
+          cowl on chimney.
+      </p>
 
-  <p>If the tenant has a gas fire and cowl has blown off, please put a gas job on using the 
-  <strong>"INSTALL GC1 TERMINAL"</strong> code on OHMS and change to <strong>PL FAO After 
-  trades</strong>. If there is <strong>no</strong> gas fire, then raise job for WAH to replace 
-  cowl on chimney.</p>
+        </div>
+  </details>
 
-<h3>Gas Meters</h3>
+  
+  <details class="accordion">
+      <summary class="accordion-header">
+          <h3>Gas Meters</h3>
+              <div class="accordion-icon"></div>
+                </summary>
+                    <div class="accordion-content">
+      <p>
+          Anything related to the Gas Meter should be directed to the supplier not us. If unsure, 
+          please ask.</p>
+      </p>
 
-  <p>Anything related to the Gas Meter should be directed to the supplier not us. If unsure, 
-  please ask.</p>
+        </div>
+  </details>
+  
+ <details class="accordion">
+      <summary class="accordion-header">
+          <h3>Heating repairs during warm weather</h3>
+              <div class="accordion-icon"></div>
+                </summary>
+                    <div class="accordion-content">
+      <p>
+            <p
+            New boilers will show a "Fault Code" on the boiler display "F??" if there is a problem 
+            with the boiler / heating system.
+            </p>
+            <p>
+            Most older systems are thermostatically controlled but may not have fault code.
+            </p>
+            <p>
+            If the weather is warm, the heating may not come on because it is too hot for it to 
+            activate.
+            </p>
+            <p>
+            Please ask callers what the room-stat is set at before ordering a job that may be 
+            unnecessary. If the customer says there is a fault code on the boiler display, a job will 
+            need to be ordered. If there isn't a fault code, this would suggest the boiler is fine, 
+            just too hot to be activated.
+      </p>
 
-<h3>Heating repairs during warm weather</h3>
+        </div>
+  </details>
+  
+<details class="accordion">
+      <summary class="accordion-header">
+          <h3>Leaking Pipe</h3>
+              <div class="accordion-icon"></div>
+                </summary>
+                    <div class="accordion-content">
+      <p>
+            <p>
+            Before registering a repair for leaking pipes, you need to establish if it is heating or 
+            plumbing. If it is heating, then it will mean pressure has dropped on boiler and may show 
+            error code F22 or drop on pressure gauge. If not, then it will be a leak on the domestic 
+            plumbing so not for gas section.
+      </p>
 
-  <p>New boilers will show a "Fault Code" on the boiler display "F??" if there is a problem 
-  with the boiler / heating system.</p>
-  <p>Most older systems are thermostatically controlled but may not have fault code.</p>
-  <p> If the weather is warm, the heating may not come on because it is too hot for it to 
-  activate.</p>
-  <p> Please ask callers what the room-stat is set at before ordering a job that may be 
-  unnecessary. If the customer says there is a fault code on the boiler display, a job will 
-  need to be ordered. If there isn't a fault code, this would suggest the boiler is fine, 
-  just too hot to be activated.</p>
+        </div>
+  </details>
 
-<h3>Leaking Pipe</h3>
+  
+  <details class="accordion">
+      <summary class="accordion-header">
+          <h3>Outcome</h3>
+              <div class="accordion-icon"></div>
+                </summary>
+                    <div class="accordion-content">
+      
+            <p>Order Remedy Repair</p>
+      
+        </div>
+  </details>
 
-  <p>Before registering a repair for leaking pipes, you need to establish if it is heating or 
-  plumbing. If it is heating, then it will mean pressure has dropped on boiler and may show 
-  error code F22 or drop on pressure gauge. If not, then it will be a leak on the domestic 
-  plumbing so not for gas section.</p>
+<details class="accordion">
+      <summary class="accordion-header">
+          <h3>Pre-inspection</h3>
+              <div class="accordion-icon"></div>
+                </summary>
+                    <div class="accordion-content">
+      
+            <p>
+            If a customer requests an inspection for a gas heating appliance in their property, 
+            please refer to <strong>HM&E</strong>.
+            </p>
+      
+        </div>
+  </details>
+  
+<details class="accordion">
+      <summary class="accordion-header">
+          <h3>Stolen Boiler</h3>
+              <div class="accordion-icon"></div>
+                </summary>
+                    <div class="accordion-content">
+      
+              <p>
+              If a boiler has been stolen, contact <strong>RPIT</strong>. Do not contact HM&E. Please 
+              raise an <strong>EM</strong> job and advise the tenant we need a crime ref number so then 
+              they can be referred to <strong>RPIT</strong>.
+              </p>
+              <p>
+              If a stolen boiler is reported, a 'make safe gas and water' job should be raised by the 
+              service center agent or anyone that takes a stolen boiler call. This should be raised on 
+              the "gas escape / fumes" code. If a joiner is required to board, then a repair will need to 
+              be put on for that to meet the gas fitter.
+              </p>
+      
+        </div>
+  </details>
 
-<h3>Outcome</h3>
+  <details class="accordion">
+      <summary class="accordion-header">
+          <h3>Gas after trades</h3>
+              <div class="accordion-icon"></div>
+                </summary>
+                    <div class="accordion-content">
+      
+                <p>If gas after trades are required following work, please contact the 
+                <a href="mailto:ElectricalSheffield@sheffield.gov.uk?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=108&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Gas Team</a> 
+                to ask for work to be done.</p>
+                <p><strong>Do not put a job on.</strong></p>
+      
+        </div>
+  </details>
 
-  <p>Order Remedy Repair</p>
+  <details class="accordion">
+      <summary class="accordion-header">
+          <h3>Trunking</h3>
+              <div class="accordion-icon"></div>
+                </summary>
+                    <div class="accordion-content">
+      
+              <p>To order trunking to heating pipes:</p>
 
-<h3>Pre-inspection</h3>
+                <ul>
+                    <li>Type in "Gas" into diagnosis search on T_MOBILE</li>
+                    <li>Select the "Gas after trades" option</li>
+                    <li>Type into your description what is required and where.</li>
+                    <li>Save changes and green arrow back out of the job to leave in "New" status.</li>
+                </ul>
 
-  <p>If a customer requests an inspection for a gas heating appliance in their property, 
-  please refer to <strong>HM&E</strong>.</p>
+              <p>This will then get picked up with the relevant section to contact the tenant to arrange 
+              when they have the resources to carry this out. Please refrain from giving any specific 
+              timescales.</p>
+      
+        </div>
+  </details>
 
-  <h3>Stolen Boiler</h3>
 
-  <p>If a boiler has been stolen, contact <strong>RPIT</strong>. Do not contact HM&E. Please 
-  raise an <strong>EM</strong> job and advise the tenant we need a crime ref number so then 
-  they can be referred to <strong>RPIT</strong>.</p>
-  <p>If a stolen boiler is reported, a 'make safe gas and water' job should be raised by the 
-  service center agent or anyone that takes a stolen boiler call. This should be raised on 
-  the "gas escape / fumes" code. If a joiner is required to board, then a repair will need to 
-  be put on for that to meet the gas fitter.</p>
+  <details class="accordion">
+      <summary class="accordion-header">
+          <h3>Urgent Gas Repair</h3>
+              <div class="accordion-icon"></div>
+                </summary>
+                    <div class="accordion-content">
+      
+            <p>
+            <strong>Monday to Thursday.</strong> You can put urgent repairs on the system until close 
+            of play and will be visited within 24 hours. Please stress to tenants that it may not be the 
+            same day but will be next. Obviously, if the tenant is not going to be in at any point during 
+            the 24hrs please put this info in the description.
+            </p>
+            <p>
+            <strong>Friday.</strong> You can put urgent repairs on up until 5.30pm. Again, advise the 
+            tenant that it will be a 24-hour call out, and if not visited on Friday, it will be Monday. 
+            Inform customer to call out of hours if becomes worse over the weekend.
+            </p>
+      
+        </div>
+  </details>
 
-<h3>Gas after trades</h3>
+  <details class="accordion">
+      <summary class="accordion-header">
+          <h3>Smoke Alarm</h3>
+              <div class="accordion-icon"></div>
+                </summary>
+                    <div class="accordion-content">
+      
+            <p>There are 2 types of smoke alarms battery and mains powered. Please ask relevant questions
+            to establish which type is in the property.</p>
 
-  <p>If gas after trades are required following work, please contact the 
-  <a href="mailto:ElectricalSheffield@sheffield.gov.uk?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=108&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Gas Team</a> 
-  to ask for work to be done.</p>
-  <p><strong>Do not put a job on.</strong></p>
+            <ul>
+                <li>Mains powered will be logged as an electrician.</li>
+                <li>Battery will be logged as a joiner.</li>
+            </ul>
+        </div>
+    </details>
+  
 
-  <h3>Trunking</h3>
+  <details class="accordion">
+      <summary class="accordion-header">
+          <h3>Carbon Monoxide Alarm</h3>
+              <div class="accordion-icon"></div>
+                </summary>
+                    <div class="accordion-content">
+      
+          <p>
+          RPIT have a program to fit around 17000 mains wiring alarm which will take about 6 to 7 
+          years.
+          </p>
+          <p>
+          R&M - HM&E are fitting a battery CO alarm on the gas service if a main's one is not 
+          currently fitted in the property / correct place.
+          </p>
+          <p>
+          We will fit a battery CO alarm if requested. (If the customer does not have one already 
+          fitted or it's gone faulty)
+          </p>
+          <p>
+          We must fit it within 28 days of the request as well, but we only have to fit them near 
+          gas fires and gas boilers, not near gas cookers or gas hobs.
+          </p>
+          <p>
+          The easy way to tell if its battery or mains wired alarm in the property is the battery 
+          alarm's we are fitting are a AICO EI208, so if they can't see this model number it's most 
+          likely a mains power one.
+          </p>
 
-  <p>To order trunking to heating pipes:</p>
+        <img class="knowledge-img" src="https://sheffield-city-council-digital-access.github.io/Verint-Resource-Files-DEV/src/images/Repairs/carbon-monoxide-alarm.png" alt="Standard alarm fitted by us" loading="lazy" referrerpolicy="no-referrer" />
 
-  <ul>
-      <li>Type in "Gas" into diagnosis search on T_MOBILE</li>
-      <li>Select the "Gas after trades" option</li>
-      <li>Type into your description what is required and where.</li>
-      <li>Save changes and green arrow back out of the job to leave in "New" status.</li>
-  </ul>
-
-  <p>This will then get picked up with the relevant section to contact the tenant to arrange 
-  when they have the resources to carry this out. Please refrain from giving any specific 
-  timescales.</p>
-
-<h3>Urgent Gas Repair</h3>
-
-  <p><strong>Monday to Thursday.</strong> You can put urgent repairs on the system until close 
-  of play and will be visited within 24 hours. Please stress to tenants that it may not be the 
-  same day but will be next. Obviously, if the tenant is not going to be in at any point during 
-  the 24hrs please put this info in the description.</p>
-  <p><strong>Friday.</strong> You can put urgent repairs on up until 5.30pm. Again, advise the 
-  tenant that it will be a 24-hour call out, and if not visited on Friday, it will be Monday. 
-  Inform customer to call out of hours if becomes worse over the weekend.</p>
-
-<h3>Smoke Alarm</h3>
-  <p>There are 2 types of smoke alarms battery and mains powered. Please ask relevant questions
-  to establish which type is in the property.</p>
-
-  <ul>
-      <li>Mains powered will be logged as an electrician.</li>
-      <li>Battery will be logged as a joiner.</li>
-  </ul>
-
-<h3>Carbon Monoxide Alarm</h3>
-
-  <p>RPIT have a program to fit around 17000 mains wiring alarm which will take about 6 to 7 
-  years.</p>
-  <p>R&M - HM&E are fitting a battery CO alarm on the gas service if a main's one is not 
-  currently fitted in the property / correct place.</p>
-  <p>We will fit a battery CO alarm if requested. (If the customer does not have one already 
-  fitted or it's gone faulty)</p>
-  <p> We must fit it within 28 days of the request as well, but we only have to fit them near 
-  gas fires and gas boilers, not near gas cookers or gas hobs. </p>
-  <p>The easy way to tell if its battery or mains wired alarm in the property is the battery 
-  alarm's we are fitting are a AICO EI208, so if they can't see this model number it's most 
-  likely a mains power one.</p>
-
-IMAGE
-
-  <p>As for fitting the battery alarm any trade can do them, but if the operative is not from 
-  the gas section, they need to confirm with the gas section were to locate the alarm or speak 
-  to <strong>AICO </strong>technical for location advice.</p>
-  <p> Replacing Mains alarms is still down for electricians. </p>  
-
+          <p>
+          As for fitting the battery alarm any trade can do them, but if the operative is not from 
+          the gas section, they need to confirm with the gas section were to locate the alarm or speak 
+          to <strong>AICO </strong>technical for location advice.
+          </p>
+          <p>
+          Replacing Mains alarms is still down for electricians.
+          </p>  
+        </div>
+    </details>
 
   `
   ,
