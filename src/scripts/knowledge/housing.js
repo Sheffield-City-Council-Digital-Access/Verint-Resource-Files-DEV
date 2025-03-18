@@ -109,7 +109,7 @@ const universalCredit = new ContentH(
     <div class="accordion-content">
         <p>Universal Credit does not include help with your Council Tax, so you must claim this separately.</p>
         <p>You can do this at <a href="https://www.sheffield.gov.uk/benefits/council-tax-support" 
-           target="_blank">https://www.sheffield.gov.uk/benefits/council-tax-support</a>.</p>
+           target="_blank">https://www.sheffield.gov.uk/benefits/council-tax-support</a>.<br><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20Council%20Tax%20support'"> Send Link </button> </p>
     </div>
 </details>
 
@@ -384,121 +384,121 @@ const welfareReform = new ContentH(
 
 //#endregion CrossRegion
 
+//#region Asset Management And Repairs
 
-//#region Adaptations
-  const chaseProgressOfAdaptation = new ContentH(
-    "chaseProgressOfAdaptation",
-    "Chase Progress of Adaptation",
-    "Learn how to chase progress on adaptations and understand the permissions required for home improvements in Sheffield Council properties.",
-    `
-    <details class="accordion">
+const adaptationChase = new ContentH(
+  "adaptationChase",
+  "Adaptation Chases",
+  "Learn how to chase progress on adaptations and understand the permissions required for home improvements in Sheffield Council properties.",
+  `
+  <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Different Utility supplier</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>If you are over £250 (Total Indebtedness) in arrears, your permission request is unlikely to be granted. 
+      You must have written permission from the Housing Service to alter or improve your home. This includes:</p> 
+    <ul>
+      <li>Putting up any form of extension or building</li>
+      <li>Adding to, changing, or replacing the fixtures, fittings, and appliances provided by us</li>
+      <li>Altering essential gas, electricity, and water services</li>
+      <li>Putting up a radio or television aerial or satellite dish</li>
+      <li>Decorating the outside of your home</li>
+      <li>Removing internal walls</li>
+      <li>Insulation (Walls & Lofts)</li>
+      <li>Conservatories (considered on an individual basis)</li>
+    </ul> 
+    <p>However, the following are highly unlikely to be granted due to extra maintenance costs and 
+      potential structural problems:</p> 
+    <ul>
+      <li>Loft conversions</li>
+      <li>Spiral staircases</li>
+      <li>Swimming pools</li>
+      <li>Extensions</li>
+      <li>Stair lifts in communal areas</li>
+    </ul> 
+    <p>It is the customer's responsibility to seek and get any planning or building regulation approvals.</p> 
+    <p>Every request for permission will be assessed using criteria and conditions appropriate to the particular request. 
+      These criteria and conditions will be explained in the letter sent in reply to the customer's permission request.</p> 
+    <p>We will take action against any installations that are in breach of Health and Safety regulations.</p> 
+  </div>
+  </details>
+
+  <details class="accordion">
     <summary class="accordion-header">
-      <h3>Different Utility supplier</h3>
+      <h3>Permission Requests</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>If you are over £250 (Total Indebtedness) in arrears, your permission request is unlikely to be granted. 
-        You must have written permission from the Housing Service to alter or improve your home. This includes:</p> 
-      <ul>
-        <li>Putting up any form of extension or building</li>
-        <li>Adding to, changing, or replacing the fixtures, fittings, and appliances provided by us</li>
-        <li>Altering essential gas, electricity, and water services</li>
-        <li>Putting up a radio or television aerial or satellite dish</li>
-        <li>Decorating the outside of your home</li>
-        <li>Removing internal walls</li>
-        <li>Insulation (Walls & Lofts)</li>
-        <li>Conservatories (considered on an individual basis)</li>
-      </ul> 
-      <p>However, the following are highly unlikely to be granted due to extra maintenance costs and 
-        potential structural problems:</p> 
-      <ul>
-        <li>Loft conversions</li>
-        <li>Spiral staircases</li>
-        <li>Swimming pools</li>
-        <li>Extensions</li>
-        <li>Stair lifts in communal areas</li>
-      </ul> 
-      <p>It is the customer's responsibility to seek and get any planning or building regulation approvals.</p> 
-      <p>Every request for permission will be assessed using criteria and conditions appropriate to the particular request. 
-        These criteria and conditions will be explained in the letter sent in reply to the customer's permission request.</p> 
-      <p>We will take action against any installations that are in breach of Health and Safety regulations.</p> 
+      <p>Written permission requests should be referred in the first instance 
+        (unless the customer is a Leaseholder or the permission request is for a mobility scooter) 
+        to the appropriate Area Team at:</p> 
+      <address> 
+        Sheffield Council Housing Service<br> 
+        PO Box 5967<br> 
+        Sheffield<br> 
+        S2 9GH 
+      </address> 
+      <p>If the permission request is for a mobility scooter, it should be referred to:</p> 
+      <address> 
+        Maintenance Partnership Unit (Permissions)<br> 
+        PO Box 5967<br> 
+        Sheffield<br> 
+        S2 9GH 
+      </address> 
+      <p>If the customer is a Leaseholder, permission requests should be put in writing to:</p> 
+      <address> 
+        Leaseholder Services Team<br> 
+        Floor 11<br> 
+        Moorfoot Building<br> 
+        Sheffield<br> 
+        S1 4PL 
+      </address> 
+      <p>Once we have received your request, we will contact you to discuss it and, where necessary, 
+        arrange a suitable time to visit your property. We will give you a decision within 21 days of receiving your request. 
+        If we give you permission, you should carry out the work within 90 days and let us know when it is complete. </p> 
     </div>
-    </details>
+  </details>
 
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Permission Requests</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <p>Written permission requests should be referred in the first instance 
-          (unless the customer is a Leaseholder or the permission request is for a mobility scooter) 
-          to the appropriate Area Team at:</p> 
-        <address> 
-          Sheffield Council Housing Service<br> 
-          PO Box 5967<br> 
-          Sheffield<br> 
-          S2 9GH 
-        </address> 
-        <p>If the permission request is for a mobility scooter, it should be referred to:</p> 
-        <address> 
-          Maintenance Partnership Unit (Permissions)<br> 
-          PO Box 5967<br> 
-          Sheffield<br> 
-          S2 9GH 
-        </address> 
-        <p>If the customer is a Leaseholder, permission requests should be put in writing to:</p> 
-        <address> 
-          Leaseholder Services Team<br> 
-          Floor 11<br> 
-          Moorfoot Building<br> 
-          Sheffield<br> 
-          S1 4PL 
-        </address> 
-        <p>Once we have received your request, we will contact you to discuss it and, where necessary, 
-          arrange a suitable time to visit your property. We will give you a decision within 21 days of receiving your request. 
-          If we give you permission, you should carry out the work within 90 days and let us know when it is complete. </p> 
-      </div>
-    </details>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Permissions and Your Tenancy Conditions</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Tenancy condition 47 states that:</p> 
+      <ul>
+        <li>You must ask for our permission, and you must not proceed until we give you our permission.</li>
+        <li>We will confirm our answer in writing.</li>
+        <li>If we refuse permission, we will explain why.</li>
+        <li>If we give permission, we may attach additional conditions.</li>
+        <li>We may withdraw our permission at any time if you do not comply with the conditions we have made.</li>
+      </ul> 
+      <p>We will take action against you and/or charge you for any costs incurred if you do not comply with parts a-e above.</p> 
+    </div>
+  </details>
+  `,
+  { buttonLabel: "Housing Adaptations Request", formName: "hou_adaptations" },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "repairs and investmant",
+      "repears and investment",
+      "repairs and invesment",
+      "repair and investement",
+      "repairs and invesmant",
+    ],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
+);
 
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Permissions and Your Tenancy Conditions</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <p>Tenancy condition 47 states that:</p> 
-        <ul>
-          <li>You must ask for our permission, and you must not proceed until we give you our permission.</li>
-          <li>We will confirm our answer in writing.</li>
-          <li>If we refuse permission, we will explain why.</li>
-          <li>If we give permission, we may attach additional conditions.</li>
-          <li>We may withdraw our permission at any time if you do not comply with the conditions we have made.</li>
-        </ul> 
-        <p>We will take action against you and/or charge you for any costs incurred if you do not comply with parts a-e above.</p> 
-      </div>
-    </details>
-    `,
-    { buttonLabel: "Report Housing Adaptations ", formName: "hou_adaptations" },
-    { typeKey: "repairs_and_investment_information_provided" },
-    { typeKey: "repairs_and_investment_information_requested" },
-    {
-      type: "Information",
-      keywords: [
-        "repairs and investmant",
-        "repears and investment",
-        "repairs and invesment",
-        "repair and investement",
-        "repairs and invesmant",
-      ],
-      categories: ["Housing"],
-    },
-    { date: "10/10/2024", name: "George Whitehouse" }
-  );
-
-const otherAdaptationRequest = new ContentH(
-  "otherAdaptationRequest",
-  "Other Adaptation Request",
+const adaptationOther = new ContentH(
+  "adaptationOther",
+  "Adaptation Other Request",
   "Understand the process for requesting permission to make adaptations to your Sheffield Council property, including restrictions and requirements.",
   `
     <h2>Tenant wants to make their own changes</h2> 
@@ -533,11 +533,11 @@ const otherAdaptationRequest = new ContentH(
     <p>We will take action against any installations that are in breach of Health and Safety regulations.</p> 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "Housing Adaptations Request",
+    formName: "hou_adaptations",
   },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
   { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
 
   {
     type: "Information",
@@ -553,19 +553,6 @@ const otherAdaptationRequest = new ContentH(
   { date: "10/10/2024", name: "George Whitehouse" }
 );
 
-const adaptations = new MenuH(
-  "adaptations", 
-  "Adaptations", 
-  "Guidance on requesting and tracking home adaptations, including permission processes and progress updates for Sheffield Council properties.",
-  [
-   chaseProgressOfAdaptation,
-   otherAdaptationRequest
- ]
-);
-//#endregion Adaptations
-
-
-//#region Asset Management And Repairs
 const asbestos = new ContentH(
   "asbestos",
   "Asbestos",
@@ -783,11 +770,11 @@ const asbestos = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "Raise Housing Decant Enquiry",
+    formName: "hou_sustainment_decants",
   },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
   { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Information",
     keywords: [
@@ -799,7 +786,7 @@ const asbestos = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "10/10/2024", name: "George Whitehouse" }
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const carbonmonoxide = new ContentH(
@@ -839,8 +826,8 @@ const carbonmonoxide = new ContentH(
 
 `,
   {
-    buttonLabel: "Report Housing Enquiry",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -865,7 +852,7 @@ const communalAerials = new ContentH(
   `
   <h3>Communal Aerials List</h3>
   <p>
-    <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Communal%20Aerials.aspx" target="_blank">Communal Aerials List</a>
+    <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Communal%20Aerials.aspx" target="_blank">Communal azerials list</a>
   </p>
 
   <h3>Customers Own Aerial</h3>
@@ -874,8 +861,8 @@ const communalAerials = new ContentH(
   </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -902,7 +889,7 @@ const communalAreas = new ContentH(
   <p>
       Bin chutes in Council flats or maisonettes may become blocked and will be unblocked upon request.<br>
       Check the 
-      <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx" target="_blank">blocked bin chutes list</a>
+      <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx" target="_blank">Blocked bin chutes list</a>
     </p>
 
     <h3>Fences</h3>
@@ -922,11 +909,11 @@ const communalAreas = new ContentH(
     </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "Raise Housing Enquiry ",
+    formName: "hou_estates_enquiry",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -942,7 +929,7 @@ const communalAreas = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "10/10/2024", name: "George Whitehouse" }
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const communalAreasFireSafety = new ContentH(
@@ -971,8 +958,8 @@ const communalAreasFireSafety = new ContentH(
     <p>You can have a small doormat if it is rubber backed. Edged and trimmed natural plants in ceramic, earthenware or metal pots, as long as they are not placed on stairs or landings which are the means of escape from the building.</p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -988,6 +975,19 @@ const communalAreasFireSafety = new ContentH(
     categories: ["Housing"],
   },
   { date: "10/10/2024", name: "George Whitehouse" }
+);
+
+const decants = new FormH(
+  "decants",
+  "Decants",
+  "Request a decant due to asbestos, infestation or linked to a previously reported repair.",
+  "hou_sustainment_decants",
+  {
+    type: "Enquiry",
+    keywords: ["Decant", "Housing", "Asbestos", "Repair", "Infestation"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const districtHeating = new ContentH(
@@ -1027,8 +1027,8 @@ const districtHeating = new ContentH(
   </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1153,8 +1153,8 @@ const doorEntrySystems = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1190,8 +1190,8 @@ const emergencyCredit = new ContentH(
       </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1236,8 +1236,8 @@ const emergencyRepairs = new ContentH(
   </ul>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1268,8 +1268,8 @@ const homeImprovementRequests = new ContentH(
   </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1301,8 +1301,8 @@ const homeownerDisconnection = new ContentH(
   </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1318,6 +1318,19 @@ const homeownerDisconnection = new ContentH(
     categories: ["Housing"],
   },
   { date: "10/10/2024", name: "George Whitehouse" }
+);
+
+const inspectionRequest = new FormH(
+  "inspectionRequest",
+  "Request inspection",
+  "Request inspection of tenants own aids and adaptations or a general repair.",
+  "hou_inspection_request",
+  {
+    type: "Request",
+    keywords: ["Inspection", "Adaptation", "Repair", "Alteration", "Aid"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const loststolenkeys = new ContentH(
@@ -1343,11 +1356,12 @@ const loststolenkeys = new ContentH(
     <p>
       Please note: Howden House only deals with Rehousing enquiries and will not be able to help with fobs or keys. 
       List of Area Offices:  <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices "target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
-    </p>
+    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Neighbourhood%20offices'"> Send Link </button>
+      </p>
   `,
   {
-    buttonLabel: "Report Housing Enquiry",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1387,12 +1401,12 @@ const newAndExistingRepairs = new ContentH(
     and communal/shared repairs to the block in which they live.
   </p> 
   `,
-  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+  { buttonLabel: "Raise Housing Decant Enquiry", formName: "hou_sustainment_decants" },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
   { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
 
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
-  { date: "10/10/2024", name: "George Whitehouse" }
+  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const payment = new ContentH(
@@ -1481,8 +1495,8 @@ const payment = new ContentH(
 </details>
 `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1589,8 +1603,8 @@ const programmedWorks = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1615,13 +1629,13 @@ const propertyAge = new ContentH(
   "Access detailed information about property age and related data.",
   `
   <p>
-    <a href="https://sccextranet.sharepoint.com/:x:/s/CustomerServiceKnowledgeCouncilHousing/ESm4Dds9S6pAq3ChaiPPEH8BNQtMLmygyOEvErvW2ISK2A?e=Qkq084"target="_blank">property Age</a>
+    <a href="https://sccextranet.sharepoint.com/:x:/s/CustomerServiceKnowledgeCouncilHousing/ESm4Dds9S6pAq3ChaiPPEH8BNQtMLmygyOEvErvW2ISK2A?e=Qkq084"target="_blank">Property Age</a>
   </p>
   
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1667,7 +1681,10 @@ const noHeatNoWater = new ContentH(
     To access a supply of heat and hot water please follow the simple steps below: 
   </p>
   <ol> 
-    <li>Does the property have an electricity supply? They will not have access to heat and hot water without it. The customer will need to Dial 105 or visit <a href="www.findmysupplier.energy.co.uk "target="_blank">www.findmysupplier.energy.co.uk</a> to find their current supplier. </li>
+    <li>Does the property have an electricity supply? They will not have access to heat and hot water without it. The customer will need to Dial 105 or visit <a href="www.findmysupplier.energy.co.uk "target="_blank">www.findmysupplier.energy.co.uk</a> to find their current supplier. 
+    <br><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Find%20My%20Supplier'"> Send Link </button>
+ </li>
+
     <li> The District Heating Meter location may vary but is usually located in the property airing cupboard. Does The Meters Home Screen say ON in the top right corner? Is your heating programmer turned on? </li>
     <li> To activate an emergency credit, press the blue button, marked ‘Press For Em Credit’ as instructed by the meters home screen. This will allow the tenant to ‘borrow’ credit up to £10.00 which will connect your heat and hot water supply for a short time. This is simply a loan and will need to be repaid on receipt of the prepayment information/number which will be with them shortly. </li>
     <li> If the Meters screen in blank or shows something similar to ‘D bug’ then the customer can reboot the G6 unit by pressing the blue and orange button together for 10 seconds. </li>
@@ -1676,8 +1693,8 @@ const noHeatNoWater = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1764,8 +1781,8 @@ const tenantsOwnImprovements = new ContentH(
 
   `,
   {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_sustainment_gen_enq",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1789,17 +1806,21 @@ const assetManagementAndRepairs = new MenuH(
   "Asset Management And Repairs",
   "Information on asset management, including asbestos, carbon monoxide, communal areas, district heating, emergency repairs, and various home improvement services.",
   [
+    adaptationChase,
+    adaptationOther,
     asbestos,
     carbonmonoxide,
 	  communalAerials,
 	  communalAreas,
 	  communalAreasFireSafety,
+    decants,
 	  districtHeating,
 	  doorEntrySystems,
 	  emergencyCredit,
 	  emergencyRepairs,
 	  homeImprovementRequests,
 	  homeownerDisconnection,
+    inspectionRequest,
 	  loststolenkeys,
 	  newAndExistingRepairs,
 	  noHeatNoWater,
@@ -1808,7 +1829,6 @@ const assetManagementAndRepairs = new MenuH(
 	  propertyAge,
 	  refunds,
 	  tenantsOwnImprovements,
-    adaptations
   ]
 );
 
@@ -1926,6 +1946,18 @@ const fencesCouncilHousing = new ContentH(
   { date: "09/10/2024", name: "Elliott Griffiths" }
 );
 
+const garageRequest = new FormH(
+  "garageRequest",
+  "Garages",
+  "Use this section to accept an offer, decant, request a plot application form, purchase or quit a garage.",
+  "hou_sustainment_garage",
+  {
+    type: "Request",
+    keywords: ["Garage"],
+    categories: ["Housing", "Estate"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
+);
 
 const gardenPledgeScheme = new ContentH(
   "gardenPledgeScheme",
@@ -1969,8 +2001,10 @@ const gardenPledgeScheme = new ContentH(
     <p>
       The Government also has a website which lists local, trustworthy and reliable
       tradesmen, operating to Government endorsed standards
-      <a href="http://www.trustmark.org.uk/ "target="_blank">http://www.trustmark.org.uk</a>.
-    </p>
+      <a href="http://www.trustmark.org.uk/ "target="_blank">http://www.trustmark.org.uk</a>.<br>
+    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Trust%20Mark'"> Send Link </button>
+
+      </p>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "repairs_and_investment_information_provided" },
@@ -1991,6 +2025,7 @@ const estatesAndEnvironments = new MenuH(
     communalCupboard,
     communalFireSafety,
     fencesCouncilHousing,
+    garageRequest,
     gardenPledgeScheme
   ]
 );
@@ -2006,7 +2041,9 @@ const generalCouncilHousing = new ContentH(
   `
   <h3>Area Office Information</h3>
   <p>
-    <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices"target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
+    <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices"target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a> <br>
+        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Neighbourhood%20offices'"> Send Link </button>
+
   </p>
 
   <h3>Bogus Callers</h3>
@@ -2033,7 +2070,7 @@ const generalCouncilHousing = new ContentH(
     <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx"target="_blank">Telephone Directory</a>
   </p>
   `,
-  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   {
@@ -2053,7 +2090,10 @@ const benefitCap = new ContentH(
   "Benefit cap",
   "Find information about the Housing Benefit Cap on the official government website.",
   `
-    <p>View website for housing benefit cap information: <a href="https://www.gov.uk/benefit-cap" target="_blank">https://www.gov.uk/benefit-cap</a></p>
+    <p>View website for housing benefit cap information: <a href="https://www.gov.uk/benefit-cap" target="_blank">https://www.gov.uk/benefit-cap</a> <br>
+    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Benefit%20cap'"> Send Link </button>
+
+    </p>
   `,
     { buttonLabel: "Benefit cap", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -2096,7 +2136,9 @@ const benefitCap = new ContentH(
           <li><a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></li>
           <li><a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></li>
       </ul>
-      <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html" target="_blank">https://www.sheffield.gov.uk/council-tax.html</a></p>
+      <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax" target="_blank">https://www.sheffield.gov.uk/council-tax</a><br>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Council%20Tax'"> Send Link </button>
+</p>
       <p><strong>Service area:</strong> Sheffield Benefits Service</p>
       <p><strong>Telephone number:</strong> <a href="tel:0114 2736777">0114 2736777</a></p>
       <p><strong>Email address:</strong> <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a> or <a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></p>
@@ -2135,7 +2177,11 @@ const benefitCap = new ContentH(
     "Benefit fraud",
     "Find out about Benefit fraud and how it can be reported anonymously online.",
     `
-      <p>You can can report fraud anonymously online at: <a href="https://www.gov.uk/report-benefit-fraud" target="_blank">https://www.gov.uk/report-benefit-fraud</a></p>
+      <p>You can can report fraud anonymously online at: <a href="https://www.gov.uk/report-benefit-fraud" target="_blank">https://www.gov.uk/report-benefit-fraud</a><br>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Report%20benefit%20fraud'"> Send Link </button>
+ 
+      
+      </p>
     `,
     { buttonLabel: "Benefit fraud", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -2300,7 +2346,9 @@ const benefitCap = new ContentH(
     "Update your Housing Benefits details online quickly and easily through the Sheffield Council website.",
     `
       <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available.<br> 
-        You can access this via <a href="https://www.sheffield.gov.uk/benefits" target="_blank">https://www.sheffield.gov.uk/benefits</a></p>
+        You can access this via <a href="https://www.sheffield.gov.uk/benefits" target="_blank">https://www.sheffield.gov.uk/benefits</a><br> 
+        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20Council%20Tax%20support'"> Send Link </button> 
+        </p>
     `,
     { buttonLabel: "Change of circumstances", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -2331,6 +2379,19 @@ const benefitCap = new ContentH(
     },
     { date: "05/11/2024", name: "Andy Walker" }
   );
+
+  const claimsForMoney = new FormH(
+    "claimsForMoney",
+    "Claims for money",
+    "Use this section for claims for; benefits, decoration grants or discretionary payments, following repair or programmed works, local assistance scheme, loss of earnings, personal injury, SCC home insurance or tenants own improvements",
+    "hou_sustainment_claims",
+    {
+      type: "Report",
+      keywords: ["Claim", "Money"],
+      categories: ["Housing", "Benefits"],
+    },
+    { date: "27/02/2025", name: "Nathan Smith" }
+  );
   
 const contactHousingBenefits = new ContentH(
   "contactHousingBenefits",
@@ -2343,7 +2404,9 @@ const contactHousingBenefits = new ContentH(
         <li><a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></li>
         <li><a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></li>
     </ul>
-    <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html" target="_blank">https://www.sheffield.gov.uk/council-tax.html</a></p>
+    <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax" target="_blank">https://www.sheffield.gov.uk/council-tax</a> <br> 
+          <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Council%20Tax'"> Send Link </button>
+    </p>
     <p><strong>Service area:</strong> Sheffield Benefits Service</p>
     <p><strong>Telephone number:</strong> <a href="tel:0114 2736777">0114 2736777</a></p>
     <p><strong>Email address:</strong> <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a> or 
@@ -2356,7 +2419,10 @@ const contactHousingBenefits = new ContentH(
         <li><a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></li>
         <li><a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></li>
     </ul>
-    <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html" target="_blank">https://www.sheffield.gov.uk/council-tax.html</a></p>
+    <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html" target="_blank">https://www.sheffield.gov.uk/council-tax</a><br> 
+              <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Council%20Tax'"> Send Link </button>
+
+    </p>
     <p><strong>Service area:</strong> Council tax</p>
     <p><strong>Telephone number:</strong> <a href="tel:0114 2736633">0114 2736633</a> (public number)</p>
     <p><strong>Further information:</strong> Lines open 8:30-5:30</p>
@@ -2399,7 +2465,9 @@ const contactHousingBenefits = new ContentH(
     "Access the Local Assistance Scheme and submit Housing Benefit claims quickly and easily online.",
     `
       <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. <br>
-         You can access this via <a href="https://www.sheffield.gov.uk/benefits" target="_blank">https://www.sheffield.gov.uk/benefits</a></p>
+         You can access this via <a href="https://www.sheffield.gov.uk/benefits" target="_blank">https://www.sheffield.gov.uk/benefits</a> <br> 
+                 <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20Council%20Tax%20support'"> Send Link </button> 
+         </p>
     `,
     { buttonLabel: "Local Assistance Scheme", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -2479,6 +2547,7 @@ const contactHousingBenefits = new ContentH(
       benefitFraud,
       benefitOnTwoHomes,
       benefitsClawback,
+      claimsForMoney,
       changeOfCircumstances,
       contactHousingBenefits,
       localAssistanceScheme,
@@ -2543,7 +2612,7 @@ const leaseholderInformation = new ContentH(
       You will therefore be responsible for the behaviour of your sub-tenant(s). This would include, for example, ensuring that they do not cause a nuisance to neighbours.
     </p>
   `,
-  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
@@ -2552,8 +2621,139 @@ const leaseholderInformation = new ContentH(
 
 //#endregion Leaseholders
 
-
 //#region Rehousing
+
+const allocationsPolicy = new ContentH(
+  "applicantPlacedInAPriorityBand",
+  "Allocations Policy - Applicant placed in a priority band",
+  "Explanation of priority bands for housing applications, including why certain applicants are placed in specific bands, how priority bids are assessed, and the reasoning behind the banding system based on individual circumstances.",
+  `
+  <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Why has my priority bid not been successful?</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            If you are in Priority band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
+            despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>What is a band?</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            A band is where an applicant is placed based on their needs and/or circumstances. 
+            A band is used to determine the priority of an application. Band 'A' is the highest and band 'E' is the lowest.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Which band am I in?</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            Advisor Note - Check Housing Registration Application on Abritas – this will show the applicant’s band.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Why have I been placed in the band I have?</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            The bands take into account your individual circumstances, and you have been placed in the band which is seen as the most appropriate 
+            for your needs, based on the information you have provided.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Band 'E' FAQs</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Why am I in band E?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    You have been placed in band E due to your circumstances, in accordance with the allocations policy. 
+                    For example: out of town and no local connection; rent arrears etc.
+                </p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>
+                Owner Occupier in band D/E - why can't I bid?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    The new policy states that owner occupiers may register, but will have their bidding restricted until they have sold their property. 
+                    Proof of sale by way of exchange of contracts will be required before an owner occupier can start bidding, 
+                    unless they have been assessed and given a priority. 
+                    In this case proof of sale would need to be produced at a later date.
+                </p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>
+                Why am I classed as no local connection but have a Sheffield postcode?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    A local connection means within the Sheffield city boundary. 
+                    Although many areas use a Sheffield postcode, they are classed as outside of Sheffield.
+                </p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>
+                I'm in band E, but have a longer waiting time than someone who was offered a property?
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    You are in band E which means you will be considered after applicants in band D, regardless of your waiting time. 
+                    This is because band E is classed as having reduced preference. 
+                    Also, certain applicants within band E will be considered before others in band E, regardless of waiting time. 
+                    For example, if you have arrears, you will be considered after someone living outside of Sheffield.
+                </p>
+            </div>
+        </details>
+    </div>
+</details>
+  `,
+
+  {
+    buttonLabel: "Report Housing Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_information_provided" },
+  { typeKey: "rehousing_services_information_requested" },
+  {
+    type: "Request",
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
+    categories: ["Housing"],
+  },
+  { date: "05/12/2024", name: "Joseph Coupland" }
+);
+
 const applicationChanges = new ContentH(
   "applicationChanges",
   "Application Changes",
@@ -2662,7 +2862,8 @@ const applicationChanges = new ContentH(
           <div class="details-accordion-content">
             <p>
               Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
-              the links from the homepage.
+              the links from the homepage.<br> 
+              <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Property%20Shop'"> Send Link </button>
             </p>
             <p>Click ‘Log into my account’.</p>
             <p>
@@ -2800,11 +3001,11 @@ const applicationChanges = new ContentH(
       </div>
     </details>
   `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
   { type: "Apply", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing", "Rehousing"] },
-  { date: "14/10/2024", name: "Omily Parkin" }
+  { date: "12/02/2025", name: "Nathan Smith" }
 );
 
 const applyForRehousing = new ContentH(
@@ -2816,7 +3017,17 @@ const applyForRehousing = new ContentH(
       To apply for Social Housing you need to do so via the Property Shop website.
       There are no paper application forms.
     </p>
-    <p>Go online and register on <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a></p>
+    <p>Go online and register on <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a><br> 
+    <button type="button" class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to property shop website"
+      onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+      KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`"
+    >
+      Send link to register online
+    </button>
+    </p>
     <p>
       Before you can complete an application to join the Housing Register you will
       need to register yourself as a new household on the system.
@@ -2832,15 +3043,15 @@ const applyForRehousing = new ContentH(
       First Point before your application will be validated.
     </p>
   `,
-  { buttonLabel: "Report Housing Enquiry ", formName: "hou_sustainment_gen_enq" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "23/09/2024", name: "Shahzad Athar" }
+  { date: "12/02/2025", name: "Nathan Smith" }
 );
 
 const bidding = new ContentH(
@@ -2852,9 +3063,9 @@ const bidding = new ContentH(
         After you have registered for housing, you express your interest in renting a
         property by making a bid. You only have to bid once per property. You make
         bids online at the Property Shop website
-        <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank"
-          >www.sheffieldpropertyshop.org.uk</a>
-        You can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday
+        <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> <br> 
+        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Property%20Shop'"> Send Link </button>
+        <br>You can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday
         to Tuesday).
       </p>
 
@@ -2881,6 +3092,8 @@ const bidding = new ContentH(
           <p>
             Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
             the links from the homepage.
+            <br>
+            <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Property%20Shop'"> Send Link </button>
             <br>
             <br>
               Click ‘Log into my account’.
@@ -3135,6 +3348,43 @@ const bidding = new ContentH(
     { date: "14/10/2024", name: "Abishai Devarapalli" }
   );
 
+  const fosteringAndAdoption = new ContentH(
+    "fosteringAndAdoption",
+    "Fostering and Adoption",
+    "Details on the processes for amending bedroom eligibility for foster and adoptive applicants, including the need for confirmation from Social Services and the potential benefit implications.",
+    `
+   
+  <h3>Adoption</h3>
+  
+  <p> Social Services will undertake an initial visit to assess the size of the applicant’s current accommodation. 
+  Bedroom eligibility in these situations will only be amended once we have received confirmation to go ahead from Social Services. Upon receipt of confirmation, the bedroom eligibility can be amended. 
+  An e-mail from Social Services will be the normal route to receive confirmation. </p>
+  
+     <h3>Fostering</h3>
+  
+     <p>Fostering has a different process. 
+     Until an applicant is suitably housed an assessment cannot begin. 
+     Confirmation from Social Services in the form of an email stating the applicant has made an application to foster is the requirement 
+     to change bedroom eligibility. Upon receipt of confirmation, the bedroom eligibility can be amended. 
+     An e-mail from Social Services will be the normal route to receive confirmation. 
+     However staff advising potential foster carers must advise the applicant of the benefit implications of moving to a 
+     larger property if the child / children are not placed with them immediately after they move or they do not proceed with the 
+     application to foster after they are rehoused.</p>
+  
+    `,
+    {
+      buttonLabel: "Report Housing Enquiry ",
+      formName: "hou_rehousing_enquiry",
+    },
+    { typeKey: "rehousing_services_information_provided" },
+    { typeKey: "rehousing_services_information_requested" },
+    {
+      type: "Request",
+      keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
+      categories: ["Housing"],
+    },
+    { date: "07/22/2024", name: "George Whitehouse" }
+  );
 
   const housingAssociations = new ContentH(
     "housingAssociations",
@@ -3166,7 +3416,8 @@ const bidding = new ContentH(
                 Gainsborough<br>
                 Lincolnshire<br>
                 DN21 1GG<br>
-                <a href="http://www.acisgroup.co.uk" target="_blank">http://www.acisgroup.co.uk</a>
+                <a href="http://www.acisgroup.co.uk" target="_blank">http://www.acisgroup.co.uk</a> <br>
+                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=ACIS%20Group'"> Send Link </button>
               </address>
               <p>
                 Variety of properties across Woodthorpe and Lower Manor. Stock transfer from the Council Housing Service.
@@ -3205,9 +3456,14 @@ const bidding = new ContentH(
                 S3 9DE<br>
                 Email: <a href="mailto:info@archeshousing.org.uk">info@archeshousing.org.uk</a><br>
                 Website and web chat: <a href="https://www.archeshousing.org.uk" target="_blank">https://www.archeshousing.org.uk</a>
+                <br>
+                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Arches%20Housing'"> Send Link </button>
+
               </address>
               <p>
-                Mutual exchanges advertised and managed through home swapper: register on <a href="https://www.homeswapper.co.uk" target="_blank">https://www.homeswapper.co.uk</a>
+                Mutual exchanges advertised and managed through home swapper: register on <a href="https://www.homeswapper.co.uk" target="_blank">https://www.homeswapper.co.uk</a> 
+                <br>
+                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Home%20Swapper'"> Send Link </button>
                 Information on lettings: Flats and houses available, including some over 60s independent living accommodation (no warden on site). Must be 18+ and eligible for benefits if not working. 
                 An affordability and risk assessment will be carried out, and a previous landlord reference requested for all nominees.
                 We do not hold a waiting list for the general public.
@@ -3265,7 +3521,9 @@ const bidding = new ContentH(
                 2a Derwent Avenue<br>
                 Manchester<br>
                 M21 7QP<br>
-                <a href="http://www.greatplaces.org.uk" target="_blank">http://www.greatplaces.org.uk</a>
+                <a href="http://www.greatplaces.org.uk" target="_blank">http://www.greatplaces.org.uk</a> 
+                <br>
+                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Great%20Places'"> Send Link </button>
               </address>
               <p>
                 Flats, houses, and bungalows in Wybourn, Richmond Park, Birklands, and Athelstan (mostly ex-Council properties). To register, a Council Housing Service rehousing registration form needs to be completed.
@@ -3286,6 +3544,8 @@ const bidding = new ContentH(
                 Barnsley<br>
                 S74 8DY<br>
                 <a href="http://www.guinnesspartnership.com" target="_blank">http://www.guinnesspartnership.com</a>
+                <br>
+                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Guinness%20Partnership'"> Send Link </button>
               </address>
               <p>
                 Available properties are either advertised through the Council’s Property Shop and Property Shop website or are allocated from Guinness Northern Counties’ own waiting list.
@@ -3396,6 +3656,8 @@ const bidding = new ContentH(
                 L3 2BY<br>
                 Email: <a href="mailto:contactus@sanctuary.co.uk">contactus@sanctuary.co.uk</a><br>
                 <a href="http://www.sanctuary-housing.co.uk" target="_blank">http://www.sanctuary-housing.co.uk</a>
+                <br>
+                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sanctuary%20Housing'"> Send Link </button>
               </address>
               <p>
                 Stock transfer from Council Housing Service. All types of properties. Current stock is in Shiregreen. To register, a Council Housing Service rehousing registration form needs to be completed.
@@ -3463,6 +3725,8 @@ const bidding = new ContentH(
                 Leeds<br>
                 LS10 1FB<br>
                 <a href="http://www.yorkshirehousing.co.uk" target="_blank">http://www.yorkshirehousing.co.uk</a>
+                <br>
+                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Yorkshire%20Housing'"> Send Link </button>
               </address>
               <p>
                 Mix of housing types including some sheltered schemes. Points system - based on housing need. Generally need to be 18+, but in some cases will take 16+.
@@ -3494,6 +3758,455 @@ const bidding = new ContentH(
     }
   );
 
+  const idReferences = new ContentH(
+    "idReferences",
+    "ID / References",
+    "Details on the required identification and references needed for the rehousing process, including verification procedures.",
+    `
+      <p>
+        For current SCC tenants, ID is required for new rehousing applications.<br>
+        For non SCC tenants, ID and a Reference are required for new rehousing applications.<br><br>
+  
+        You must provide two forms of identification (do not post original documents to us). <br>
+        One must be from the Proof of ID documents list <br>
+        (see Acceptable ID below) whilst the second must provide proof of your current UK address.<br><br>
+  
+        Photo ID is also required to prove your identity. <br>
+        If you do not have photo ID, you must provide a passport-sized photo.  <br>
+        A <strong> landlord Reference</strong>  is also required. <br><br>
+  
+        The same document cannot be used more than once e.g. <br>
+        driving licence as primary evidence and proof of address. <br>
+        Proof of child benefit receipt is required where children under 16 years of age are 
+        being rehoused with you.<br><br>
+  
+        All required ID's and References must be brought to your Local Area Housing Office, 
+        or to Howden House First Point, at the same time. <br>
+        <strong> Alternatively, you can upload your documents via the website (including reference if appropriate) </strong><br><br>
+  
+        Failure to submit all required ID and references at the same time, 
+        may mean that you will need to restart the application process from the beginning by 
+        submitting a further online application. <br><br>
+      </p>
+      <h3>Acceptable ID</h3>
+  
+        <ul>
+          <li>Proof of ID documents	Proof of address	Proof of Child Benefit</li>
+          <li>Marriage certificate</li>
+          <li>Divorce/Annulment papers</li>
+          <li>Divorce/Annulment papers</li>
+          <li>Passport (this can be expired but if the customer is an adult an adult passport must be produced)</li>
+          <li>passport must be produced)</li>
+          <li>Deed poll documentation for change of name (to accompany details of former name if applicable)</li>
+          <li>Current bus passes with photograph</li>
+          <li>UK resident permit</li>
+          <li>ID card issued by EEA/EU countries</li>
+          <li>Home Office standard acceptance letter</li>
+          <li>Immigration status document</li>
+          <li>NASS 35</li>
+          <li>Citizenship card (with hologram and photo to prove age)</li>
+          <li>Medical card</li>
+          <li>Birth certificate/Adoption certificate</li>
+          <li>Letter from Social Worker/Probation Officer/Solicitor</li>
+          <li>Driving licence</li>
+          <li>Recent utility bill paid in that person’s name (last quarter)</li>
+          <li>Most recent council tax statement</li>
+          <li>Home Office standard acceptance letter</li>
+          <li>Letter from DWP for tax credits</li>
+          <li>Bank statement from within the last 3 months</li>
+          <li>Wage slip from current employer</li>
+          <li>Life assurance/Insurance policies</li>
+          <li>Proof of all other benefits</li>
+          <li>Child benefit award letter</li>
+          <li>The last 3 consecutive months bank statements (Only where award letter is not available).</li>
+        </ul>
+    `,
+    {
+      buttonLabel: "Report Housing Enquiry ",
+      formName: "hou_rehousing_enquiry",
+    },
+    { typeKey: "rehousing_services_information_provided" },
+    { typeKey: "rehousing_services_information_requested" },
+    {
+      type: "Request",
+      keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
+      categories: ["Housing"],
+    },
+    { date: "07/11/2024", name: "George Whitehouse" }
+  );
+
+  const idFaq = new ContentH(
+    "idFaq",
+    "ID FAQs",
+    "Review frequently asked questions about ID requirements for rehousing applications, including document submission and validation processes.",
+    `
+      <p>
+        Customers who have submitted an online application for rehousing, 
+        or have made a change to an existing Application, need to provide ID, 
+        references and proof of Child Benefit (if appropriate) in order for their application to be accepted 
+        and validated.<br><br>
+  
+        ID is required for all Household Members and should be submitted within 28 days of filling-in 
+        the Application.<br><br>
+  
+        Applicants should present the relevant documents at a Housing Office or First Point where the 
+        Main Applicant's and the Joint Applicant's (if appropriate) documents will be photocopied and 
+        copies sent to the Registration Team. Household Members documents must also be produced and witnessed by an officer.<br><br>
+      </p>
+      <h4>Customer advising ID/proofs have been posted to us</h4>
+      <p> 
+        Customers should not post original documents to us, but when a customer has posted their documents to us,
+        they should call to advise us of this. Advisor Note: The Registrations Team need to be advised so they
+        can check DMS in the next couple of days and subsequently validate the application. <br>
+        Remember to take a note of the names and dates of birth of all household members and include them 
+        in any email or case that you send to the Registration Team.<br><br>
+  
+        Advise the customer that it can take up to a month for their documents to be returned.
+      </p>
+      <h4>Customer submitted application but did not provide ID within 28 days</h4>
+      <p> 
+        We will not re-instate your Application and you should 
+        submit a new Application and provide the relevant ID.
+      </p>
+    `,
+    {
+      buttonLabel: "Report Housing Enquiry ",
+      formName: "hou_rehousing_enquiry",
+    },
+    { typeKey: "rehousing_services_information_provided" },
+    { typeKey: "rehousing_services_information_requested" },
+    {
+      type: "Request",
+      keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
+      categories: ["Housing"],
+    },
+    { date: "07/11/2024", name: "George Whitehouse" }
+  );
+
+  const movingIn = new ContentH(
+    "movingIn",
+    "Moving In",
+    "Details about moving into a new property, including scheduling, property standards, utility setup, and meter readings.",
+    `
+      <h4>When can I move in once offered a property?</h4>
+      <p>
+        You can arrange your moving in date as part of the viewing and Sign Up process 
+        with the <strong>Voids</strong> Officer.
+      </p>
+  
+      <h4>Standard of property when moving in</h4>
+      <p>
+        Before you move into your new home we will check to make sure it is safe and secure. 
+        Where necessary we get qualified and skilled trades people to test electrical, gas, 
+        water and waste services. Our priority is to provide you with a safe living environment. 
+        We will ensure that:<br><br>
+  
+        Sometimes delays may occur due to unforeseen work that is required to bring the property up
+        to a standard that meets our Vacant Charter.  
+        When the property is ready, we will contact you to arrange an appointment to view the property 
+        and then to sign for your new tenancy, should you choose to accept. In some circumstances 
+        we may arrange a ‘work in progress’ viewing.<br><br>
+  
+        Generally, if repairs are left outstanding at the start of a tenancy, these would be minor ones 
+        not seriously affecting the use of the property and would require a small amount of work to rectify 
+        the given problems. To have completed these within the prior repairs programme/work schedule 
+        would have unnecessarily held up the letting, leaving a property standing ‘idle’ whilst there were 
+        people needing re-housing. The ‘on-tenancy’ repairs can be completed once you have moved in 
+        and will cause very little in the way of disruption, mess or upheaval.
+      </p>
+  
+      <h4>Gas / Electricity supplier</h4>
+      <p>
+        Any known utilities suppliers information will be provided in the Sign-up pack.
+  
+        The responsibility/contractual agreement for arranging the supply 
+        (and the utility meter installation if necessary) is with the customer and 
+        the utility provider e.g. British Gas, Powergen etc.<br><br>
+  
+        If the supplier is not known, the customer will need to contact one of the numbers below, 
+        and then contact the utility supplier themselves:<br><br>
+  
+        <strong>Gas</strong> - Call the M Number Enquiry Line on <a href="tel:0870 6081524">0870 6081524</a>, provided by xoserve Ltd. 
+        They will tell you the supplier and give you your Meter Point Reference Number (MPRN).<br><br>
+  
+        <strong>Electricity</strong> - Call your local electricity distribution company and ask for their Meter 
+        Point Administration Service (MPAS). Alternatively, contact <a href="tel:00845 0707172">0845 0707172</a>.
+      </p>
+  
+      <h4>Meter Readings</h4>
+      <p>
+        The meter reading before they moved in - you will have been advised of this at sign up 
+        and the information will have been provided in their sign up pack. (We also advise Customers 
+        to take their own meter readings and contact the utility company themselves.)<br><br>
+  
+        The meter reading when they move out - you should contact the utility company themselves.
+      </p>
+    `,
+    {
+      buttonLabel: "Report Housing Enquiry ",
+      formName: "hou_rehousing_enquiry",
+    },
+    { typeKey: "rehousing_services_information_provided" },
+    { typeKey: "rehousing_services_information_requested" },
+    {
+      type: "Request",
+      keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
+      categories: ["Housing"],
+    },
+    { date: "07/11/2024", name: "George Whitehouse" }
+  );
+
+  const mutualExchanges = new ContentH(
+    "mutualExchanges",
+    "Mutual Exchanges",
+    "Details and guidelines regarding the process, eligibility, and conditions of Mutual Exchange for housing tenants, including required documentation, restrictions, and steps to complete an exchange.",
+    `
+      <p>
+        A Mutual Exchange is where two or more Council or Housing Association tenants can apply to swap
+        their homes. The 1985 Housing Act (part 4, section 92) gives tenants this right under certain circumstances.<br><br>
+  
+        The Mutual Exchange application form can be accessed online at the Property Shop website and <a href="https://www.sheffield.gov.uk/council-housing/mutual-exchanges" target="_blank">https://www.sheffield.gov.uk/council-housing/mutual-exchanges</a>.
+        <br>
+        <button type="button" class="dform_widget email-btn dform_widget_type_button"
+          aria-label="Send link to mutual exchanges page"
+          onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Mutual%20exchanges\`"
+        >
+        Send link to register online
+        </button>
+        
+        <br>
+        <br>
+  
+        Advisor Note: Check for updates on the progress of a customer's mutual exchange on Abritas.
+      </p>
+  
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>FAQs</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <details class="details-accordion">
+            <summary>How long do I have to live in a Council tenancy before I can have an exchange?</summary>
+            <div class="details-accordion-content">
+              <p>
+                You can Mutually Exchange as soon as you have a <strong>secure</strong> Council Tenancy except if you have one 
+                of the criteria set out below.
+              </p>
+              <p>
+                Mutual Exchanges are normally allowed, however, we can refuse for the following reasons only as set out in legislation:
+              </p>
+              <ul>
+                <li>You have an introductory tenancy or another type of tenancy that is not Secure or Assured.</li>
+                <li>The tenancy is subject to a court order for possession.</li>
+                <li>The tenancy is subject to a notice seeking possession or possession proceedings are pending.</li>
+                <li>The tenant or a household member is subject to any court order or any proceedings are pending in respect of antisocial behaviour.</li>
+                <li>The property is substantially larger than you and your family need.</li>
+                <li>The property is too small for you and your family and would result in overcrowding or would break the normal letting criteria in relation to the size of the property and the number of occupants.</li>
+                <li>The property has been let as a service tenancy.</li>
+                <li>The property has been adapted for a person with a physical disability and is very different from other properties and if the exchange were to go ahead, a disabled person would no longer live in the property.</li>
+                <li>The property is one of a group let to people with special needs near to Social Services or a special facility and if the exchange was to go ahead someone needing those services or facilities would no longer be living in the property. This includes sheltered or supported housing schemes and properties normally offered to people with mobility needs.</li>
+                <li>The property is the subject of a management agreement with a housing association and at least half the tenants of the properties within the agreement are members and the tenant is not willing to become a member.</li>
+              </ul>
+            </div>
+          </details>
+  
+          <details class="details-accordion">
+            <summary>How do I find someone to exchange with? (Homeswapper)</summary>
+            <div class="details-accordion-content">
+              <p>
+                HomeSwapper is an independent nationwide service for social housing tenants who want to exchange their property. 
+                As a Sheffield City Council tenant, you can register for free and this will allow you to search for properties anywhere in the UK.<br><br>
+   
+                HomeSwapper offers a matching service and will send you details of suitable exchanges via email or text. 
+                The HomeSwapper website is <a href="https://www.homeswapper.co.uk" target="_blank">https://www.homeswapper.co.uk</a>.
+                <br>
+                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Home%20Swapper'"> Send Link </button>
+                <br>
+                <br>
+  
+                Before you get full access to the website, your registration will need to be approved. 
+                New submissions are approved daily, so except for weekends, it would be a maximum of 24 hours before you can view full details.<br><br>
+  
+                Any registrations submitted on a Friday or over the weekend will be approved on Monday morning, and for Bank Holidays, 
+                it will be the next working day.
+              </p>
+            </div>
+          </details>
+  
+          <details class="details-accordion">
+            <summary>What happens when I have someone to exchange with?</summary>
+            <div class="details-accordion-content">
+              <p>
+                Once you have found a suitable Mutual Exchange, all parties involved will need to complete a Mutual Exchange application form (this includes anyone involved who is not a Council tenant). 
+                Please see the website for further information on how to apply.<br><br>
+  
+                The forms will then be processed by staff within the Mutual Exchange Team, who will contact you directly. 
+                If anyone involved is not a Sheffield City Council tenant, paperwork will also need to be completed and returned to the other housing provider(s).
+              </p>
+            </div>
+          </details>
+  
+          <details class="details-accordion">
+            <summary>Do I need permission to do a Mutual Exchange?</summary>
+            <div class="details-accordion-content">
+              <p>
+                Yes. The landlord of everyone involved in the exchange must agree to it. Before we can agree, we will check that:
+              </p>
+              <ul>
+                <li>You have a clear current rent account</li>
+                <li>There is no possession order on your home</li>
+                <li>Your home is in satisfactory condition</li>
+              </ul>
+              <p>
+                There are also rules that apply in terms of eligibility for different sizes and types of property. 
+                Remember that you should not move until you have written permission from us and a move date has been agreed.
+              </p>
+            </div>
+          </details>
+  
+          <details class="details-accordion">
+            <summary>Can a Mutual Exchange be refused?</summary>
+            <div class="details-accordion-content">
+              <p>
+                Mutual Exchanges are normally allowed, however, we can refuse for the following reasons only as set out in legislation:
+              </p>
+              <ul>
+                <li>The tenancy is subject to a court order for possession.</li>
+                <li>The tenancy is subject to a notice seeking possession or possession proceedings are pending.</li>
+                <li>The tenant or a household member is subject to any court order or any proceedings are pending in respect of antisocial behaviour.</li>
+                <li>The property is substantially larger than you and your family need.</li>
+                <li>The property is too small for you and your family and would result in overcrowding or would break the normal letting criteria in relation to the size of the property and the number of occupants.</li>
+                <li>The property has been let as a service tenancy.</li>
+                <li>The property has been adapted for a person with a physical disability and is very different from other properties and if the exchange were to go ahead, a disabled person would no longer live in the property.</li>
+                <li>The property is one of a group let to people with special needs near to Social Services or a special facility and if the exchange was to go ahead someone needing those services or facilities would no longer be living in the property. This includes sheltered or supported housing schemes and properties normally offered to people with mobility needs.</li>
+                <li>The property is the subject of a management agreement with a housing association and at least half the tenants of the properties within the agreement are members and the tenant is not willing to become a member.</li>
+              </ul>
+            </div>
+          </details>
+  
+          <details class="details-accordion">
+            <summary>I have rent arrears, can I move?</summary>
+            <div class="details-accordion-content">
+              <p>
+                It depends on the type of arrears. Only current arrears are taken into consideration. <br>
+                You must have a completely clear current rent account before full consent will be given (See conditional consent above). <br>
+                You will not be able to move with current arrears, even if you have been sticking to a repayment plan. <br>
+                Any other types of arrears, including former tenancy arrears, recharges, etc., will be disregarded and will not prevent an exchange from taking place.<br>
+              </p>
+            </div>
+          </details>
+  
+          <details class="details-accordion">
+            <summary>If I Mutually Exchange, will I keep my waiting time?</summary>
+            <div class="details-accordion-content">
+              <p>
+                Yes. A Mutual Exchange is not linked to your rehousing application and will not affect your waiting time.
+              </p>
+            </div>
+          </details>
+  
+          <details class="details-accordion">
+            <summary>Is it illegal to pay someone to do a Mutual Exchange?</summary>
+            <div class="details-accordion-content">
+              <p>
+                It may be illegal in some circumstances. We would advise that you should never offer or receive money to carry out a Mutual Exchange, 
+                including paying off rent arrears. There is no guarantee that the Mutual Exchange will take place and Sheffield City Council will not get involved 
+                in any disputes related to such matters.
+              </p>
+            </div>
+          </details>
+  
+          <details class="details-accordion">
+            <summary>What if HomeSwapper site asks me for a fee?</summary>
+            <div class="details-accordion-content">
+              <p>
+                When registering, you need to ensure that you have selected Sheffield City Council as your landlord. <br>
+                This is within Section 3 of the registration. If the site asks for payment, the customer should not go any further. 
+                HomeSwapper is a free site for all SCC tenants.
+              </p>
+            </div>
+          </details>
+  
+          <details class="details-accordion">
+            <summary>Will I be able to monitor my progress online?</summary>
+            <div class="details-accordion-content">
+              <p>
+                This will be possible soon via HomeSwapper.
+              </p>
+            </div>
+          </details>
+  
+          <details class="details-accordion">
+            <summary>My property has passed the inspection, what happens next?</summary>
+            <div class="details-accordion-content">
+              <p>
+                Once your property has passed an inspection, a report will be sent to the Mutual Exchange Team. <br>
+                Subject to other tenancy checks, once the report is received, you will be contacted with an appointment to sign the paperwork.<br>
+              </p>
+            </div>
+          </details>
+  
+          <details class="details-accordion">
+            <summary>Who needs to attend the sign up for my Mutual Exchange?</summary>
+            <div class="details-accordion-content">
+              <p>
+                All tenants involved in the sign-up, including any joint tenants, must attend.
+              </p>
+            </div>
+          </details>
+  
+          <details class="details-accordion">
+            <summary>I have signed up but no longer wish to move</summary>
+            <div class="details-accordion-content">
+              <p>
+                Once you have signed the Deeds of Assignment, the exchange becomes legally binding and you must move by the tenancy commencement date. <br>
+                If you fail to do so, the Council can serve a Notice to Quit and take possession proceedings for unauthorized occupation of the property.<br>
+              </p>
+            </div>
+          </details>
+  
+          <details class="details-accordion">
+            <summary>What is conditional consent?</summary>
+            <div class="details-accordion-content">
+              <p>
+                Conditional consent is when we are unable to agree to the exchange immediately but, providing the problem is resolved, we may allow the exchange to go ahead. <br>
+                For example, in the case of current rent arrears, we may agree that once the arrears have been cleared in full, the exchange can take place. <br>
+                If we give conditional consent, we will write to you explaining what the delays are and what you need to do before we arrange for the properties to be exchanged.<br>
+              </p>
+            </div>
+          </details>
+  
+          <details class="details-accordion">
+            <summary>There is a problem with the tenancy I want to exchange into and I have been given conditional consent, what can I do?</summary>
+            <div class="details-accordion-content">
+              <p>
+                As you have been advised in your Conditional Consent letter, under the Data Protection Act we are unable to give you any further information. <br>
+                We will have also written to the other party advising them on what action they need to take to resolve the situation. <br>
+                Once the problem has been resolved, we will be happy to make arrangements for both parties to come and sign the Deed of Assignment document.<br>
+              </p>
+            </div>
+          </details>
+        </div>
+      </details>
+    `,
+    {
+      buttonLabel: "Raise Enquiry",
+      formName: "hou_rehousing_enquiry",
+    },
+    { typeKey: "rehousing_services_transferred_to_service" },
+    { typeKey: "rehousing_services_information_provided" },
+    {
+      type: "Request",
+      keywords: ["rehousing", "rehousing", "rehousign", "rehozing"],
+      categories: ["Housing"],
+    },
+    { date: "12/02/2025", name: "Nathan Smith" }
+  );
+
   const priorities = new ContentH(
     "priorities",
     "Priorities",
@@ -3512,6 +4225,207 @@ const bidding = new ContentH(
      </p> 
     `,
     {
+      buttonLabel: "Raise Enquiry ",
+      formName: "hou_rehousing_enquiry",
+    },
+    { typeKey: "rehousing_services_transferred_to_service" },
+    { typeKey: "rehousing_services_information_provided" },
+    {
+      type: "Request",
+      keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
+      categories: ["Housing"],
+    },
+    { date: "12/02/2025", name: "Nathan Smith" }
+  );
+
+  const priorityBandingTable = new ContentH(
+    "priorityBandingTable",
+    "Priority Banding Table",
+    "Priority Banding Table details various rehousing priorities and their associated bands, along with hierarchy rules for certain categories like anti-social behaviour, homelessness, and health-related needs.",
+    `
+      <h3>Priority Banding Table</h3>
+  
+      <p>The table below shows the list of priorities and the bands they fall in. </p>
+  
+      <p>Some of the priorities span multiple bands and we cannot give a definitive answer for which band they will be in e.g. demolition and health. 
+      As such, these are marked in the table below as ‘None’. </p>
+  
+      <p>Also marked as ‘None’ are the priorities which no longer exist. These are: </p>
+  
+      <ul>
+        <li>Council Service tenant retiring or leaving employment</li>
+        <li>Council service tenant who is dismissed</li>
+        <li>Special Case</li>
+        <li>If a priority spans the bands, the awarding officer will have already spoken with the customer.</li>
+      </ul>
+  
+      <h3>Effective Dates</h3>
+  
+      <p>Within bands A-D there is no hierarchy, offers will be made solely on the effective date within the band. For example, 
+      three different priorities within the same band would be ordered based on the earliest effective date first.</p>
+  
+      <p>The only exception is band E which has the following hierarchy: </p>
+  
+      <ul>
+        <li>No Local Connection</li>
+        <li>Refused Offers</li>
+        <li>Unacceptable Behaviour </li>
+      </ul>
+  
+      <p>Inside each of the above rungs, applicants are ordered based on effective date.  
+      Therefore, an applicant with unacceptable behaviour in band E will always come below an applicant in band E due to refused offers 
+      regardless of their effective date.</p>
+  
+      <details class="accordion">
+        <summary class="accordion-header">
+          <h3>Priorities Banding Table</h3>
+          <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            <table border="1" cellpadding="0" cellspacing="0" style="width:100%">
+              <tbody>
+                <tr>
+                  <td style="width:300px; height:10px" bgcolor="#002040"><strong><font color="black">Current Approval Reasons</font></strong></td>
+                  <td style="width:300px" bgcolor="#002040">
+                    <p><strong><font color="black">New Banding Criteria</font></strong></p>
+                  </td>
+                  <td style="width:300px" bgcolor="#002040">
+                    <p><strong><font color="black">Bands In Which They Appear</font></strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Anti-social behaviour (ASB) - Rehousing Options for the Victim</p></td>
+                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
+                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Council Service Tenant Retiring or Leaving Employment</p></td>
+                  <td style="width:189px"><p>None</p></td>
+                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Council Service Tenant Who is Dismissed</p></td>
+                  <td style="width:189px"><p>None</p></td>
+                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Demolition/Clearance of Council Owned Properties</p></td>
+                  <td style="width:189px"><p>None</p></td>
+                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Demolition/Clearance of Owner Occupied and Private Rented Sectors</p></td>
+                  <td style="width:189px"><p>None</p></td>
+                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Development Work in Council Owned Property</p></td>
+                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
+                  <td style="width:217px"><p>Top Priority band A</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Domestic Abuse</p></td>
+                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
+                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Downsizing for Under Occupiers</p></td>
+                  <td style="width:189px"><p>Under occupation and/or release of an adapted property</p></td>
+                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Homeless - Immediate Priority</p></td>
+                  <td style="width:189px"><p>Full Homelessness Duty</p></td>
+                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Homeless or Threatened with Homelessness - Planned Priority</p></td>
+                  <td style="width:189px"><p>Other Homelessness Duties</p></td>
+                  <td style="width:217px"><p>3rd Priority band C</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Insanitary or Unsatisfactory Housing Conditions</p></td>
+                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
+                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Mental Health, Learning Disability, Long Term Health Problems, Community Care or Other Health Problem</p></td>
+                  <td style="width:189px"><p>None</p></td>
+                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Mobility Needs and Service Personnel</p></td>
+                  <td style="width:189px"><p>Health</p></td>
+                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Permanent Moves for Council Tenants Who Have Moved Temporarily</p></td>
+                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
+                  <td style="width:217px"><p>Top Priority band A</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Racial and Other Harassment of Council Tenants</p></td>
+                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
+                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Re-Designation of Older Persons Property</p></td>
+                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
+                  <td style="width:217px"><p>3rd Priority band C</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Release of Disabled Persons Property</p></td>
+                  <td style="width:189px"><p>Under Occupation and/or Release of an Adapted Property</p></td>
+                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Sheffield Overcrowding</p></td>
+                  <td style="width:189px"><p>None</p></td>
+                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Special Case</p></td>
+                  <td style="width:189px"><p>None</p></td>
+                  <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Statutory Overcrowding</p></td>
+                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
+                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Support and Hardship needs</p></td>
+                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
+                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Supportive Hostels</p></td>
+                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
+                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Temporary and Permanent Moves for Non-Council Households Undergoing Modernisation or Repair with Grant Aid</p></td>
+                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
+                  <td style="width:217px"><p>Top Priority band A</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Vulnerable Young Person Aged 16 or 17</p></td>
+                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
+                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                </tr>
+                <tr>
+                  <td style="width:225px"><p>Young People and Children’s Act 1989</p></td>
+                  <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
+                  <td style="width:217px"><p>2nd Priority band B</p></td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+        </div>
+      </details>
+    `,
+    {
       buttonLabel: "Report Housing Enquiry ",
       formName: "hou_rehousing_enquiry",
     },
@@ -3524,7 +4438,6 @@ const bidding = new ContentH(
     },
     { date: "07/22/2024", name: "George Whitehouse" }
   );
-
 
   const PropertyOffersAndViewings = new ContentH(
     "PropertyOffersAndViewings",
@@ -3549,6 +4462,162 @@ const bidding = new ContentH(
       </ul>
     `,
     {
+      buttonLabel: "Raise Enquiry",
+      formName: "hou_rehousing_enquiry",
+    },
+    { typeKey: "rehousing_services_transferred_to_service" },
+    { typeKey: "rehousing_services_information_provided" },
+    {
+      type: "Request",
+      keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
+      categories: ["Housing"],
+    },
+    { date: "12/02/2025", name: "Nathan Smith" }
+  );
+
+  const referencesFAQs = new ContentH(
+    "referencesFAQs",
+    "References FAQs",
+    "Guidelines for providing references when applying for housing or making changes to applications, including who can provide them, how to obtain them, and the timeline for submission.",
+    `
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Why do I need to provide a reference?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          Current SCC tenants are not required to submit a reference as the Council is already aware of 
+          their circumstances and tenancy history.<br>
+          References were introduced as part of the Allocations Policy. The purpose of this is for SCC to better 
+          understand the people who are currently on its Housing Register. <br>
+          SCC often has very little knowledge of the people on the register and therefore requesting a reference will help the Council to improve this.
+        </p>
+      </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Who can provide a reference?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          All customers other than current SCC tenants now need to provide a reference when joining the Housing Register. 
+          The following customers also need to provide a reference when creating a new application:
+      </p>
+      <ul>
+          <li>Housing Association tenants (Landlord needs to provide the reference)</li>
+          <li>Tenants of other Councils (Landlord needs to provide the reference)</li>
+          <li>Private rented tenants (Landlord needs to provide the reference - the landlord must not be a family member)</li>
+          <li>Owner occupiers - no need for a reference as bidding is restricted</li>
+          <li>Living with family/parents (18+ only, character reference is needed)</li>
+          <li>NFA/Living with friends (Character reference is needed)</li>
+      </ul>
+      <p>
+          For customers who currently do or have ever lived independently, the reference should be completed by their most recent landlord.
+          Advisor note: For customers who are unable to provide a landlord's reference, they must gain agreement from the 
+          Registration Team for what reference will be acceptable and they will send the professional reference form out.<br>
+          If the customer is advising that there would be a charge for the reference, the customer would be responsible for 
+          this charge. SCC will not pay landlords to provide a reference.
+      </p>
+      </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>How to get a Landlords reference form?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          Landlord references should be submitted using the SCC reference form. This can be found online on the 
+          Property Shop website. Customer should select:
+      </p>
+      <ul>
+          <li>Information header, select Identification and References</li>
+          <li>Scroll down to SCC Reference Template</li>
+          <li>Landlord reference forms are also available at local housing offices.</li>
+      </ul>
+      </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>How long do I have to provide the reference?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+    <div class="accordion-content">
+      <p>
+        You will have the same 28 days to provide the reference as they have for providing ID currently. This 
+        period starts from the day that the online application was submitted. Do not submit the application until 
+        you have all of the relevant documentation. If ID and a reference are not submitted within this time, the 
+        application will be cancelled and you will need to resubmit this online.
+      </p>
+    </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>What will the reference be used for?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+    <div class="accordion-content">
+      <p>
+        The reference will be used along with the information supplied by the customer when completing their 
+        application online to determine which band they should be placed in. The criteria for being placed in 
+        band D or band E can be found within the Allocations Policy. Customers will be notified in writing which 
+        band they have been placed in and how to challenge this if they feel it is incorrect. Customers who have 
+        special or extenuating circumstances can request an Exception Request if they wish to do so. All such 
+        requests are assessed on their merits and the customer will be advised of the decision in writing.
+      </p>
+    </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Is a reference required for a change of circumstances?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          A reference will only be required if the change being submitted is a change of address, or the Application 
+          is being changed to a Joint Application. If the customer is changing their address, a new reference would 
+          be required with the exception of current SCC tenants moving to another SCC property. In these cases, 
+          we would still not require a reference.
+        </p>
+      </div>
+    </details>
+  
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Is a reference required as part of a renewal process?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          Customers are not required to submit a reference as part of the renewals process, 
+          <strong>unless a new address is provided or</strong> the Application is being changed to a Joint Application.
+        </p>
+      </div>
+    </details>
+  
+   <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Is a reference required as part of a renewal process?</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <h3>What if the customer can't visit an Area Office?</h3>
+        <p>
+          There are alternatives to visiting the area office yourself, such as asking your friends or family 
+          to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
+          <strong>Documents can be uploaded via the property shop website.</strong>
+        </p>
+      </div>
+    </details>
+    `,
+    {
       buttonLabel: "Report Housing Enquiry ",
       formName: "hou_rehousing_enquiry",
     },
@@ -3559,7 +4628,55 @@ const bidding = new ContentH(
       keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
       categories: ["Housing"],
     },
-    { date: "07/22/2024", name: "George Whitehouse" }
+    { date: "07/11/2024", name: "George Whitehouse" }
+  );
+
+  const threeOffersDemotedorDisqualified = new ContentH(
+    "threeOffersDemotedorDisqualified",
+    "Three Offers Demoted or Disqualified",
+    "Understand the consequences of refusing three reasonable housing offers, including potential demotion or disqualification from the Housing Register.",
+    `
+  <h3>Reduced preference (demotion) following refusal of 3 reasonable offers</h3>
+  <p> 
+    If a customer is in band D and they have refused 3 offers in 12 months, the Sheffield City Council Allocations Policy states:<br>
+    <ul>
+      <li>If you refuse an offer of a property, you could be moved to a lower band or your application may be cancelled. The following will also be considered as a refusal:</li>
+      <li>If you fail to respond to an offer of a property made to you within the timescales specified and do not have a good reason for this failure.</li>
+      <li>If you fail to attend a viewing of a property offered to you within the timescales specified and do not have a good reason for this failure.</li>
+    </ul>
+    If you are to be Demoted, we will write to you 21 days before you are Demoted. If you do not respond, you will be Demoted to band E on the Housing Register for 12 months. After 12 months you can request to be moved back in to band D.
+  </p>
+     <h3>Disqualification following refusal of 3 reasonable offers</h3>
+     <p>
+      If a customer who is in band E refuses 3 reasonable offers, they can be disqualified from the Housing Register.<br>
+      The customer will be notified in writing and they have 21 days to appeal the decision. <br>
+      If we do not hear from the customer within 21 days, their housing application will be cancelled and they will be disqualified from the Housing Register for 12 months. <br>
+      After 12 months the customer is able to submit an on-line application for Social Housing to re-join the Housing Register.
+     </p>
+    `,
+    {
+      buttonLabel: "",
+      formName: "",
+    },
+    { typeKey: "rehousing_services_information_provided" },
+    { typeKey: "rehousing_services_information_requested" },
+    {
+      type: "Request",
+      keywords: 
+      [
+        "rehosing", 
+        "rehausing",
+        "rehousingg",
+        "rehosuing",
+        "rehouzing",
+        "three",
+        "offers",
+        "demoted",
+        "disqualified"
+      ],
+      categories: ["Housing"],
+    },
+    { date: "04/12/2024", name: "Joseph Coupland" }
   );
 
   const rehousing = new MenuH(
@@ -3567,1060 +4684,26 @@ const bidding = new ContentH(
     "Rehousing",
     "Guidelines on applying for rehousing, understanding the process, and checking eligibility for alternative housing.",
     [
-      applyForRehousing,
+      allocationsPolicy,
       applicationChanges,
+      applyForRehousing,
       bidding,
       eligibility,
+      fosteringAndAdoption,
       housingAssociations,
+      idReferences,
+      idFaq,
+      movingIn,
+      mutualExchanges,
       priorities,
+      priorityBandingTable,
       PropertyOffersAndViewings,
+      referencesFAQs,
+      threeOffersDemotedorDisqualified
     ]
   );
 
 //#endregion Rehousing
-
-//#region Rehousing ID / References
-
-const idReferences = new ContentH(
-  "idReferences",
-  "ID / References",
-  "Details on the required identification and references needed for the rehousing process, including verification procedures.",
-  `
-    <p>
-      For current SCC tenants, ID is required for new rehousing applications.<br>
-      For non SCC tenants, ID and a Reference are required for new rehousing applications.<br><br>
-
-      You must provide two forms of identification (do not post original documents to us). <br>
-      One must be from the Proof of ID documents list <br>
-      (see Acceptable ID below) whilst the second must provide proof of your current UK address.<br><br>
-
-      Photo ID is also required to prove your identity. <br>
-      If you do not have photo ID, you must provide a passport-sized photo.  <br>
-      A <strong> landlord Reference</strong>  is also required. <br><br>
-
-      The same document cannot be used more than once e.g. <br>
-      driving licence as primary evidence and proof of address. <br>
-      Proof of child benefit receipt is required where children under 16 years of age are 
-      being rehoused with you.<br><br>
-
-      All required ID's and References must be brought to your Local Area Housing Office, 
-      or to Howden House First Point, at the same time. <br>
-      <strong> Alternatively, you can upload your documents via the website (including reference if appropriate) </strong><br><br>
-
-      Failure to submit all required ID and references at the same time, 
-      may mean that you will need to restart the application process from the beginning by 
-      submitting a further online application. <br><br>
-    </p>
-    <h3>Acceptable ID</h3>
-
-      <ul>
-        <li>Proof of ID documents	Proof of address	Proof of Child Benefit</li>
-        <li>Marriage certificate</li>
-        <li>Divorce/Annulment papers</li>
-        <li>Divorce/Annulment papers</li>
-        <li>Passport (this can be expired but if the customer is an adult an adult passport must be produced)</li>
-        <li>passport must be produced)</li>
-        <li>Deed poll documentation for change of name (to accompany details of former name if applicable)</li>
-        <li>Current bus passes with photograph</li>
-        <li>UK resident permit</li>
-        <li>ID card issued by EEA/EU countries</li>
-        <li>Home Office standard acceptance letter</li>
-        <li>Immigration status document</li>
-        <li>NASS 35</li>
-        <li>Citizenship card (with hologram and photo to prove age)</li>
-        <li>Medical card</li>
-        <li>Birth certificate/Adoption certificate</li>
-        <li>Letter from Social Worker/Probation Officer/Solicitor</li>
-        <li>Driving licence</li>
-        <li>Recent utility bill paid in that person’s name (last quarter)</li>
-        <li>Most recent council tax statement</li>
-        <li>Home Office standard acceptance letter</li>
-        <li>Letter from DWP for tax credits</li>
-        <li>Bank statement from within the last 3 months</li>
-        <li>Wage slip from current employer</li>
-        <li>Life assurance/Insurance policies</li>
-        <li>Proof of all other benefits</li>
-        <li>Child benefit award letter</li>
-        <li>The last 3 consecutive months bank statements (Only where award letter is not available).</li>
-      </ul>
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
-  },
-  { date: "07/11/2024", name: "George Whitehouse" }
-);
-
-const idFaq = new ContentH(
-  "idFaq",
-  "ID FAQs",
-  "Review frequently asked questions about ID requirements for rehousing applications, including document submission and validation processes.",
-  `
-    <p>
-      Customers who have submitted an online application for rehousing, 
-      or have made a change to an existing Application, need to provide ID, 
-      references and proof of Child Benefit (if appropriate) in order for their application to be accepted 
-      and validated.<br><br>
-
-      ID is required for all Household Members and should be submitted within 28 days of filling-in 
-      the Application.<br><br>
-
-      Applicants should present the relevant documents at a Housing Office or First Point where the 
-      Main Applicant's and the Joint Applicant's (if appropriate) documents will be photocopied and 
-      copies sent to the Registration Team. Household Members documents must also be produced and witnessed by an officer.<br><br>
-    </p>
-    <h4>Customer advising ID/proofs have been posted to us</h4>
-    <p> 
-      Customers should not post original documents to us, but when a customer has posted their documents to us,
-      they should call to advise us of this. Advisor Note: The Registrations Team need to be advised so they
-      can check DMS in the next couple of days and subsequently validate the application. <br>
-      Remember to take a note of the names and dates of birth of all household members and include them 
-      in any email or case that you send to the Registration Team.<br><br>
-
-      Advise the customer that it can take up to a month for their documents to be returned.
-    </p>
-    <h4>Customer submitted application but did not provide ID within 28 days</h4>
-    <p> 
-      We will not re-instate your Application and you should 
-      submit a new Application and provide the relevant ID.
-    </p>
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
-  },
-  { date: "07/11/2024", name: "George Whitehouse" }
-);
-
-const movingIn = new ContentH(
-  "movingIn",
-  "Moving In",
-  "Details about moving into a new property, including scheduling, property standards, utility setup, and meter readings.",
-  `
-    <h4>When can I move in once offered a property?</h4>
-    <p>
-      You can arrange your moving in date as part of the viewing and Sign Up process 
-      with the <strong>Voids</strong> Officer.
-    </p>
-
-    <h4>Standard of property when moving in</h4>
-    <p>
-      Before you move into your new home we will check to make sure it is safe and secure. 
-      Where necessary we get qualified and skilled trades people to test electrical, gas, 
-      water and waste services. Our priority is to provide you with a safe living environment. 
-      We will ensure that:<br><br>
-
-      Sometimes delays may occur due to unforeseen work that is required to bring the property up
-      to a standard that meets our Vacant Charter.  
-      When the property is ready, we will contact you to arrange an appointment to view the property 
-      and then to sign for your new tenancy, should you choose to accept. In some circumstances 
-      we may arrange a ‘work in progress’ viewing.<br><br>
-
-      Generally, if repairs are left outstanding at the start of a tenancy, these would be minor ones 
-      not seriously affecting the use of the property and would require a small amount of work to rectify 
-      the given problems. To have completed these within the prior repairs programme/work schedule 
-      would have unnecessarily held up the letting, leaving a property standing ‘idle’ whilst there were 
-      people needing re-housing. The ‘on-tenancy’ repairs can be completed once you have moved in 
-      and will cause very little in the way of disruption, mess or upheaval.
-    </p>
-
-    <h4>Gas / Electricity supplier</h4>
-    <p>
-      Any known utilities suppliers information will be provided in the Sign-up pack.
-
-      The responsibility/contractual agreement for arranging the supply 
-      (and the utility meter installation if necessary) is with the customer and 
-      the utility provider e.g. British Gas, Powergen etc.<br><br>
-
-      If the supplier is not known, the customer will need to contact one of the numbers below, 
-      and then contact the utility supplier themselves:<br><br>
-
-      <strong>Gas</strong> - Call the M Number Enquiry Line on <a href="tel:0870 6081524">0870 6081524</a>, provided by xoserve Ltd. 
-      They will tell you the supplier and give you your Meter Point Reference Number (MPRN).<br><br>
-
-      <strong>Electricity</strong> - Call your local electricity distribution company and ask for their Meter 
-      Point Administration Service (MPAS). Alternatively, contact <a href="tel:00845 0707172">0845 0707172</a>.
-    </p>
-
-    <h4>Meter Readings</h4>
-    <p>
-      The meter reading before they moved in - you will have been advised of this at sign up 
-      and the information will have been provided in their sign up pack. (We also advise Customers 
-      to take their own meter readings and contact the utility company themselves.)<br><br>
-
-      The meter reading when they move out - you should contact the utility company themselves.
-    </p>
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
-  },
-  { date: "07/11/2024", name: "George Whitehouse" }
-);
-
-const mutualExchanges = new ContentH(
-  "mutualExchanges",
-  "Mutual Exchanges",
-  "Details and guidelines regarding the process, eligibility, and conditions of Mutual Exchange for housing tenants, including required documentation, restrictions, and steps to complete an exchange.",
-  `
-    <p>
-      A Mutual Exchange is where two or more Council or Housing Association tenants can apply to swap
-      their homes. The 1985 Housing Act (part 4, section 92) gives tenants this right under certain circumstances.<br><br>
-
-      The Mutual Exchange application form can be accessed online at the Property Shop website and <a href="https://www.sheffield.gov.uk/council-housing/mutual-exchanges" target="_blank">https://www.sheffield.gov.uk/council-housing/mutual-exchanges</a>.<br><br>
-
-      Advisor Note: Check for updates on the progress of a customer's mutual exchange on Abritas.
-    </p>
-
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>FAQs</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <details class="details-accordion">
-          <summary>How long do I have to live in a Council tenancy before I can have an exchange?</summary>
-          <div class="details-accordion-content">
-            <p>
-              You can Mutually Exchange as soon as you have a <strong>secure</strong> Council Tenancy except if you have one 
-              of the criteria set out below.
-            </p>
-            <p>
-              Mutual Exchanges are normally allowed, however, we can refuse for the following reasons only as set out in legislation:
-            </p>
-            <ul>
-              <li>You have an introductory tenancy or another type of tenancy that is not Secure or Assured.</li>
-              <li>The tenancy is subject to a court order for possession.</li>
-              <li>The tenancy is subject to a notice seeking possession or possession proceedings are pending.</li>
-              <li>The tenant or a household member is subject to any court order or any proceedings are pending in respect of antisocial behaviour.</li>
-              <li>The property is substantially larger than you and your family need.</li>
-              <li>The property is too small for you and your family and would result in overcrowding or would break the normal letting criteria in relation to the size of the property and the number of occupants.</li>
-              <li>The property has been let as a service tenancy.</li>
-              <li>The property has been adapted for a person with a physical disability and is very different from other properties and if the exchange were to go ahead, a disabled person would no longer live in the property.</li>
-              <li>The property is one of a group let to people with special needs near to Social Services or a special facility and if the exchange was to go ahead someone needing those services or facilities would no longer be living in the property. This includes sheltered or supported housing schemes and properties normally offered to people with mobility needs.</li>
-              <li>The property is the subject of a management agreement with a housing association and at least half the tenants of the properties within the agreement are members and the tenant is not willing to become a member.</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>How do I find someone to exchange with? (Homeswapper)</summary>
-          <div class="details-accordion-content">
-            <p>
-              HomeSwapper is an independent nationwide service for social housing tenants who want to exchange their property. 
-              As a Sheffield City Council tenant, you can register for free and this will allow you to search for properties anywhere in the UK.<br><br>
- 
-              HomeSwapper offers a matching service and will send you details of suitable exchanges via email or text. 
-              The HomeSwapper website is <a href="https://www.homeswapper.co.uk" target="_blank">https://www.homeswapper.co.uk</a>.<br><br>
-
-              Before you get full access to the website, your registration will need to be approved. 
-              New submissions are approved daily, so except for weekends, it would be a maximum of 24 hours before you can view full details.<br><br>
-
-              Any registrations submitted on a Friday or over the weekend will be approved on Monday morning, and for Bank Holidays, 
-              it will be the next working day.
-            </p>
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>What happens when I have someone to exchange with?</summary>
-          <div class="details-accordion-content">
-            <p>
-              Once you have found a suitable Mutual Exchange, all parties involved will need to complete a Mutual Exchange application form (this includes anyone involved who is not a Council tenant). 
-              Please see the website for further information on how to apply.<br><br>
-
-              The forms will then be processed by staff within the Mutual Exchange Team, who will contact you directly. 
-              If anyone involved is not a Sheffield City Council tenant, paperwork will also need to be completed and returned to the other housing provider(s).
-            </p>
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>Do I need permission to do a Mutual Exchange?</summary>
-          <div class="details-accordion-content">
-            <p>
-              Yes. The landlord of everyone involved in the exchange must agree to it. Before we can agree, we will check that:
-            </p>
-            <ul>
-              <li>You have a clear current rent account</li>
-              <li>There is no possession order on your home</li>
-              <li>Your home is in satisfactory condition</li>
-            </ul>
-            <p>
-              There are also rules that apply in terms of eligibility for different sizes and types of property. 
-              Remember that you should not move until you have written permission from us and a move date has been agreed.
-            </p>
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>Can a Mutual Exchange be refused?</summary>
-          <div class="details-accordion-content">
-            <p>
-              Mutual Exchanges are normally allowed, however, we can refuse for the following reasons only as set out in legislation:
-            </p>
-            <ul>
-              <li>The tenancy is subject to a court order for possession.</li>
-              <li>The tenancy is subject to a notice seeking possession or possession proceedings are pending.</li>
-              <li>The tenant or a household member is subject to any court order or any proceedings are pending in respect of antisocial behaviour.</li>
-              <li>The property is substantially larger than you and your family need.</li>
-              <li>The property is too small for you and your family and would result in overcrowding or would break the normal letting criteria in relation to the size of the property and the number of occupants.</li>
-              <li>The property has been let as a service tenancy.</li>
-              <li>The property has been adapted for a person with a physical disability and is very different from other properties and if the exchange were to go ahead, a disabled person would no longer live in the property.</li>
-              <li>The property is one of a group let to people with special needs near to Social Services or a special facility and if the exchange was to go ahead someone needing those services or facilities would no longer be living in the property. This includes sheltered or supported housing schemes and properties normally offered to people with mobility needs.</li>
-              <li>The property is the subject of a management agreement with a housing association and at least half the tenants of the properties within the agreement are members and the tenant is not willing to become a member.</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>I have rent arrears, can I move?</summary>
-          <div class="details-accordion-content">
-            <p>
-              It depends on the type of arrears. Only current arrears are taken into consideration. <br>
-              You must have a completely clear current rent account before full consent will be given (See conditional consent above). <br>
-              You will not be able to move with current arrears, even if you have been sticking to a repayment plan. <br>
-              Any other types of arrears, including former tenancy arrears, recharges, etc., will be disregarded and will not prevent an exchange from taking place.<br>
-            </p>
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>If I Mutually Exchange, will I keep my waiting time?</summary>
-          <div class="details-accordion-content">
-            <p>
-              Yes. A Mutual Exchange is not linked to your rehousing application and will not affect your waiting time.
-            </p>
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>Is it illegal to pay someone to do a Mutual Exchange?</summary>
-          <div class="details-accordion-content">
-            <p>
-              It may be illegal in some circumstances. We would advise that you should never offer or receive money to carry out a Mutual Exchange, 
-              including paying off rent arrears. There is no guarantee that the Mutual Exchange will take place and Sheffield City Council will not get involved 
-              in any disputes related to such matters.
-            </p>
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>What if HomeSwapper site asks me for a fee?</summary>
-          <div class="details-accordion-content">
-            <p>
-              When registering, you need to ensure that you have selected Sheffield City Council as your landlord. <br>
-              This is within Section 3 of the registration. If the site asks for payment, the customer should not go any further. 
-              HomeSwapper is a free site for all SCC tenants.
-            </p>
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>Will I be able to monitor my progress online?</summary>
-          <div class="details-accordion-content">
-            <p>
-              This will be possible soon via HomeSwapper.
-            </p>
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>My property has passed the inspection, what happens next?</summary>
-          <div class="details-accordion-content">
-            <p>
-              Once your property has passed an inspection, a report will be sent to the Mutual Exchange Team. <br>
-              Subject to other tenancy checks, once the report is received, you will be contacted with an appointment to sign the paperwork.<br>
-            </p>
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>Who needs to attend the sign up for my Mutual Exchange?</summary>
-          <div class="details-accordion-content">
-            <p>
-              All tenants involved in the sign-up, including any joint tenants, must attend.
-            </p>
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>I have signed up but no longer wish to move</summary>
-          <div class="details-accordion-content">
-            <p>
-              Once you have signed the Deeds of Assignment, the exchange becomes legally binding and you must move by the tenancy commencement date. <br>
-              If you fail to do so, the Council can serve a Notice to Quit and take possession proceedings for unauthorized occupation of the property.<br>
-            </p>
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>What is conditional consent?</summary>
-          <div class="details-accordion-content">
-            <p>
-              Conditional consent is when we are unable to agree to the exchange immediately but, providing the problem is resolved, we may allow the exchange to go ahead. <br>
-              For example, in the case of current rent arrears, we may agree that once the arrears have been cleared in full, the exchange can take place. <br>
-              If we give conditional consent, we will write to you explaining what the delays are and what you need to do before we arrange for the properties to be exchanged.<br>
-            </p>
-          </div>
-        </details>
-
-        <details class="details-accordion">
-          <summary>There is a problem with the tenancy I want to exchange into and I have been given conditional consent, what can I do?</summary>
-          <div class="details-accordion-content">
-            <p>
-              As you have been advised in your Conditional Consent letter, under the Data Protection Act we are unable to give you any further information. <br>
-              We will have also written to the other party advising them on what action they need to take to resolve the situation. <br>
-              Once the problem has been resolved, we will be happy to make arrangements for both parties to come and sign the Deed of Assignment document.<br>
-            </p>
-          </div>
-        </details>
-      </div>
-    </details>
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: ["rehousing", "rehousing", "rehousign", "rehozing"],
-    categories: ["Housing"],
-  },
-  { date: "07/11/2024", name: "George Whitehouse" }
-);
-
-const referencesFAQs = new ContentH(
-  "referencesFAQs",
-  "References FAQs",
-  "Guidelines for providing references when applying for housing or making changes to applications, including who can provide them, how to obtain them, and the timeline for submission.",
-  `
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Why do I need to provide a reference?</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Current SCC tenants are not required to submit a reference as the Council is already aware of 
-        their circumstances and tenancy history.<br>
-        References were introduced as part of the Allocations Policy. The purpose of this is for SCC to better 
-        understand the people who are currently on its Housing Register. <br>
-        SCC often has very little knowledge of the people on the register and therefore requesting a reference will help the Council to improve this.
-      </p>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Who can provide a reference?</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        All customers other than current SCC tenants now need to provide a reference when joining the Housing Register. 
-        The following customers also need to provide a reference when creating a new application:
-    </p>
-    <ul>
-        <li>Housing Association tenants (Landlord needs to provide the reference)</li>
-        <li>Tenants of other Councils (Landlord needs to provide the reference)</li>
-        <li>Private rented tenants (Landlord needs to provide the reference - the landlord must not be a family member)</li>
-        <li>Owner occupiers - no need for a reference as bidding is restricted</li>
-        <li>Living with family/parents (18+ only, character reference is needed)</li>
-        <li>NFA/Living with friends (Character reference is needed)</li>
-    </ul>
-    <p>
-        For customers who currently do or have ever lived independently, the reference should be completed by their most recent landlord.
-        Advisor note: For customers who are unable to provide a landlord's reference, they must gain agreement from the 
-        Registration Team for what reference will be acceptable and they will send the professional reference form out.<br>
-        If the customer is advising that there would be a charge for the reference, the customer would be responsible for 
-        this charge. SCC will not pay landlords to provide a reference.
-    </p>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>How to get a Landlords reference form?</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Landlord references should be submitted using the SCC reference form. This can be found online on the 
-        Property Shop website. Customer should select:
-    </p>
-    <ul>
-        <li>Information header, select Identification and References</li>
-        <li>Scroll down to SCC Reference Template</li>
-        <li>Landlord reference forms are also available at local housing offices.</li>
-    </ul>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>How long do I have to provide the reference?</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-  <div class="accordion-content">
-    <p>
-      You will have the same 28 days to provide the reference as they have for providing ID currently. This 
-      period starts from the day that the online application was submitted. Do not submit the application until 
-      you have all of the relevant documentation. If ID and a reference are not submitted within this time, the 
-      application will be cancelled and you will need to resubmit this online.
-    </p>
-  </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>What will the reference be used for?</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-  <div class="accordion-content">
-    <p>
-      The reference will be used along with the information supplied by the customer when completing their 
-      application online to determine which band they should be placed in. The criteria for being placed in 
-      band D or band E can be found within the Allocations Policy. Customers will be notified in writing which 
-      band they have been placed in and how to challenge this if they feel it is incorrect. Customers who have 
-      special or extenuating circumstances can request an Exception Request if they wish to do so. All such 
-      requests are assessed on their merits and the customer will be advised of the decision in writing.
-    </p>
-  </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Is a reference required for a change of circumstances?</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        A reference will only be required if the change being submitted is a change of address, or the Application 
-        is being changed to a Joint Application. If the customer is changing their address, a new reference would 
-        be required with the exception of current SCC tenants moving to another SCC property. In these cases, 
-        we would still not require a reference.
-      </p>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Is a reference required as part of a renewal process?</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Customers are not required to submit a reference as part of the renewals process, 
-        <strong>unless a new address is provided or</strong> the Application is being changed to a Joint Application.
-      </p>
-    </div>
-  </details>
-
- <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Is a reference required as part of a renewal process?</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <h3>What if the customer can't visit an Area Office?</h3>
-      <p>
-        There are alternatives to visiting the area office yourself, such as asking your friends or family 
-        to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
-        <strong>Documents can be uploaded via the property shop website.</strong>
-      </p>
-    </div>
-  </details>
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
-  },
-  { date: "07/11/2024", name: "George Whitehouse" }
-);
-
-const idReferencesMenu = new MenuH(
-  "idReferencesMenu",
-  "Rehousing ID / References ",
-  "Applying for rehousing, eligibility, bidding, changes to applications and housing associations",
-  [
-    idReferences, 
-    idFaq, 
-    movingIn, 
-    mutualExchanges, 
-    referencesFAQs
-  ]
-);
-
- //#endregion Rehousing ID / References
-
-
-
-//#region Rehousing Policy 
-
-const applicantPlacedInAPriorityBand = new ContentH(
-  "applicantPlacedInAPriorityBand",
-  "Allocations Policy - Applicant placed in a priority band",
-  "Explanation of priority bands for housing applications, including why certain applicants are placed in specific bands, how priority bids are assessed, and the reasoning behind the banding system based on individual circumstances.",
-  `
-  <details class="accordion">
-    <summary class="accordion-header">
-        <h3>Why has my priority bid not been successful?</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <p>
-            If you are in Priority band B or C, it is likely that the property was offered to an applicant in a higher priority band, 
-            despite your priority effective date. Your effective date will only be considered alongside other applicants in the same band as you.
-        </p>
-    </div>
-</details>
-
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>What is a band?</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <p>
-            A band is where an applicant is placed based on their needs and/or circumstances. 
-            A band is used to determine the priority of an application. Band 'A' is the highest and band 'E' is the lowest.
-        </p>
-    </div>
-</details>
-
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Which band am I in?</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <p>
-            Advisor Note - Check Housing Registration Application on Abritas – this will show the applicant’s band.
-        </p>
-    </div>
-</details>
-
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Why have I been placed in the band I have?</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <p>
-            The bands take into account your individual circumstances, and you have been placed in the band which is seen as the most appropriate 
-            for your needs, based on the information you have provided.
-        </p>
-    </div>
-</details>
-
-<details class="accordion">
-    <summary class="accordion-header">
-        <h3>Band 'E' FAQs</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Why am I in band E?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    You have been placed in band E due to your circumstances, in accordance with the allocations policy. 
-                    For example: out of town and no local connection; rent arrears etc.
-                </p>
-            </div>
-        </details>
-
-        <details class="details-accordion">
-            <summary>
-                Owner Occupier in band D/E - why can't I bid?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    The new policy states that owner occupiers may register, but will have their bidding restricted until they have sold their property. 
-                    Proof of sale by way of exchange of contracts will be required before an owner occupier can start bidding, 
-                    unless they have been assessed and given a priority. 
-                    In this case proof of sale would need to be produced at a later date.
-                </p>
-            </div>
-        </details>
-
-        <details class="details-accordion">
-            <summary>
-                Why am I classed as no local connection but have a Sheffield postcode?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    A local connection means within the Sheffield city boundary. 
-                    Although many areas use a Sheffield postcode, they are classed as outside of Sheffield.
-                </p>
-            </div>
-        </details>
-
-        <details class="details-accordion">
-            <summary>
-                I'm in band E, but have a longer waiting time than someone who was offered a property?
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    You are in band E which means you will be considered after applicants in band D, regardless of your waiting time. 
-                    This is because band E is classed as having reduced preference. 
-                    Also, certain applicants within band E will be considered before others in band E, regardless of waiting time. 
-                    For example, if you have arrears, you will be considered after someone living outside of Sheffield.
-                </p>
-            </div>
-        </details>
-    </div>
-</details>
-  `,
-
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
-  },
-  { date: "05/12/2024", name: "Joseph Coupland" }
-);
-
-const fosteringAndAdoption = new ContentH(
-  "fosteringAndAdoption",
-  "Fostering and Adoption",
-  "Details on the processes for amending bedroom eligibility for foster and adoptive applicants, including the need for confirmation from Social Services and the potential benefit implications.",
-  `
- 
-<h3>Adoption</h3>
-
-<p> Social Services will undertake an initial visit to assess the size of the applicant’s current accommodation. 
-Bedroom eligibility in these situations will only be amended once we have received confirmation to go ahead from Social Services. Upon receipt of confirmation, the bedroom eligibility can be amended. 
-An e-mail from Social Services will be the normal route to receive confirmation. </p>
-
-   <h3>Fostering</h3>
-
-   <p>Fostering has a different process. 
-   Until an applicant is suitably housed an assessment cannot begin. 
-   Confirmation from Social Services in the form of an email stating the applicant has made an application to foster is the requirement 
-   to change bedroom eligibility. Upon receipt of confirmation, the bedroom eligibility can be amended. 
-   An e-mail from Social Services will be the normal route to receive confirmation. 
-   However staff advising potential foster carers must advise the applicant of the benefit implications of moving to a 
-   larger property if the child / children are not placed with them immediately after they move or they do not proceed with the 
-   application to foster after they are rehoused.</p>
-
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
-  },
-  { date: "07/22/2024", name: "George Whitehouse" }
-);
-
-const priorityBandingTable = new ContentH(
-  "priorityBandingTable",
-  "Priority Banding Table",
-  "Priority Banding Table details various rehousing priorities and their associated bands, along with hierarchy rules for certain categories like anti-social behaviour, homelessness, and health-related needs.",
-  `
-    <h3>Priority Banding Table</h3>
-
-    <p>The table below shows the list of priorities and the bands they fall in. </p>
-
-    <p>Some of the priorities span multiple bands and we cannot give a definitive answer for which band they will be in e.g. demolition and health. 
-    As such, these are marked in the table below as ‘None’. </p>
-
-    <p>Also marked as ‘None’ are the priorities which no longer exist. These are: </p>
-
-    <ul>
-      <li>Council Service tenant retiring or leaving employment</li>
-      <li>Council service tenant who is dismissed</li>
-      <li>Special Case</li>
-      <li>If a priority spans the bands, the awarding officer will have already spoken with the customer.</li>
-    </ul>
-
-    <h3>Effective Dates</h3>
-
-    <p>Within bands A-D there is no hierarchy, offers will be made solely on the effective date within the band. For example, 
-    three different priorities within the same band would be ordered based on the earliest effective date first.</p>
-
-    <p>The only exception is band E which has the following hierarchy: </p>
-
-    <ul>
-      <li>No Local Connection</li>
-      <li>Refused Offers</li>
-      <li>Unacceptable Behaviour </li>
-    </ul>
-
-    <p>Inside each of the above rungs, applicants are ordered based on effective date.  
-    Therefore, an applicant with unacceptable behaviour in band E will always come below an applicant in band E due to refused offers 
-    regardless of their effective date.</p>
-
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Priorities Banding Table</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <p>
-          <table border="1" cellpadding="0" cellspacing="0" style="width:100%">
-            <tbody>
-              <tr>
-                <td style="width:300px; height:10px" bgcolor="#002040"><strong><font color="black">Current Approval Reasons</font></strong></td>
-                <td style="width:300px" bgcolor="#002040">
-                  <p><strong><font color="black">New Banding Criteria</font></strong></p>
-                </td>
-                <td style="width:300px" bgcolor="#002040">
-                  <p><strong><font color="black">Bands In Which They Appear</font></strong></p>
-                </td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Anti-social behaviour (ASB) - Rehousing Options for the Victim</p></td>
-                <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority band B</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Council Service Tenant Retiring or Leaving Employment</p></td>
-                <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Council Service Tenant Who is Dismissed</p></td>
-                <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Demolition/Clearance of Council Owned Properties</p></td>
-                <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Demolition/Clearance of Owner Occupied and Private Rented Sectors</p></td>
-                <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Development Work in Council Owned Property</p></td>
-                <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>Top Priority band A</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Domestic Abuse</p></td>
-                <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority band B</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Downsizing for Under Occupiers</p></td>
-                <td style="width:189px"><p>Under occupation and/or release of an adapted property</p></td>
-                <td style="width:217px"><p>2nd Priority band B</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Homeless - Immediate Priority</p></td>
-                <td style="width:189px"><p>Full Homelessness Duty</p></td>
-                <td style="width:217px"><p>2nd Priority band B</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Homeless or Threatened with Homelessness - Planned Priority</p></td>
-                <td style="width:189px"><p>Other Homelessness Duties</p></td>
-                <td style="width:217px"><p>3rd Priority band C</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Insanitary or Unsatisfactory Housing Conditions</p></td>
-                <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority band B</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Mental Health, Learning Disability, Long Term Health Problems, Community Care or Other Health Problem</p></td>
-                <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Mobility Needs and Service Personnel</p></td>
-                <td style="width:189px"><p>Health</p></td>
-                <td style="width:217px"><p>2nd Priority band B</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Permanent Moves for Council Tenants Who Have Moved Temporarily</p></td>
-                <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>Top Priority band A</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Racial and Other Harassment of Council Tenants</p></td>
-                <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority band B</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Re-Designation of Older Persons Property</p></td>
-                <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>3rd Priority band C</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Release of Disabled Persons Property</p></td>
-                <td style="width:189px"><p>Under Occupation and/or Release of an Adapted Property</p></td>
-                <td style="width:217px"><p>2nd Priority band B</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Sheffield Overcrowding</p></td>
-                <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Special Case</p></td>
-                <td style="width:189px"><p>None</p></td>
-                <td style="width:217px"><p>General Needs band D (Inactive)</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Statutory Overcrowding</p></td>
-                <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority band B</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Support and Hardship needs</p></td>
-                <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority band B</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Supportive Hostels</p></td>
-                <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority band B</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Temporary and Permanent Moves for Non-Council Households Undergoing Modernisation or Repair with Grant Aid</p></td>
-                <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>Top Priority band A</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Vulnerable Young Person Aged 16 or 17</p></td>
-                <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority band B</p></td>
-              </tr>
-              <tr>
-                <td style="width:225px"><p>Young People and Children’s Act 1989</p></td>
-                <td style="width:189px"><p>Welfare, Hardship and Support Needs</p></td>
-                <td style="width:217px"><p>2nd Priority band B</p></td>
-              </tr>
-            </tbody>
-          </table>
-        </p>
-      </div>
-    </details>
-  `,
-  {
-    buttonLabel: "Report Housing Enquiry ",
-    formName: "hou_rehousing_enquiry",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
-  },
-  { date: "07/22/2024", name: "George Whitehouse" }
-);
-
-const threeOffersDemotedorDisqualified = new ContentH(
-  "threeOffersDemotedorDisqualified",
-  "Three Offers Demoted or Disqualified",
-  "Understand the consequences of refusing three reasonable housing offers, including potential demotion or disqualification from the Housing Register.",
-  `
-<h3>Reduced preference (demotion) following refusal of 3 reasonable offers</h3>
-<p> 
-  If a customer is in band D and they have refused 3 offers in 12 months, the Sheffield City Council Allocations Policy states:<br>
-  <ul>
-    <li>If you refuse an offer of a property, you could be moved to a lower band or your application may be cancelled. The following will also be considered as a refusal:</li>
-    <li>If you fail to respond to an offer of a property made to you within the timescales specified and do not have a good reason for this failure.</li>
-    <li>If you fail to attend a viewing of a property offered to you within the timescales specified and do not have a good reason for this failure.</li>
-  </ul>
-  If you are to be Demoted, we will write to you 21 days before you are Demoted. If you do not respond, you will be Demoted to band E on the Housing Register for 12 months. After 12 months you can request to be moved back in to band D.
-</p>
-   <h3>Disqualification following refusal of 3 reasonable offers</h3>
-   <p>
-    If a customer who is in band E refuses 3 reasonable offers, they can be disqualified from the Housing Register.<br>
-    The customer will be notified in writing and they have 21 days to appeal the decision. <br>
-    If we do not hear from the customer within 21 days, their housing application will be cancelled and they will be disqualified from the Housing Register for 12 months. <br>
-    After 12 months the customer is able to submit an on-line application for Social Housing to re-join the Housing Register.
-   </p>
-  `,
-  {
-    buttonLabel: "",
-    formName: "",
-  },
-  { typeKey: "rehousing_services_information_provided" },
-  { typeKey: "rehousing_services_information_requested" },
-  {
-    type: "Request",
-    keywords: 
-    [
-      "rehosing", 
-      "rehausing",
-      "rehousingg",
-      "rehosuing",
-      "rehouzing",
-      "three",
-      "offers",
-      "demoted",
-      "disqualified"
-    ],
-    categories: ["Housing"],
-  },
-  { date: "04/12/2024", name: "Joseph Coupland" }
-);
-
-const policy = new MenuH(
-  "policy",
-  "Rehousing policy",
-  "An overview of the rehousing policy, including exceptions to the standard policy and any specific conditions that apply.",
-  [
-    applicantPlacedInAPriorityBand,
-    fosteringAndAdoption,
-    priorityBandingTable,
-    threeOffersDemotedorDisqualified,
-  ]
-);
-//#endregion Rehousing Policy 
-
-
-
 
 //#region Rents
 const balanceEnquiry = new ContentH(
@@ -4631,6 +4714,8 @@ const balanceEnquiry = new ContentH(
   <p>
   You can now check your own balance and rent account online by logging onto 
   <a href="https://www.sheffield.gov.uk/home/council-housing/check-my-rent-balance">https://www.sheffield.gov.uk/home/council-housing/check-my-rent-balance</a>.
+<br>
+  <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Check%20rent%20balance'"> Send Link </button>
   </p> 
   <p>
     Change of circumstances are now online. When you are making changes, remember
@@ -4736,6 +4821,9 @@ const balanceEnquiry = new ContentH(
           <p>
             Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
             the links from the homepage.
+            <br>
+            <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Property%20Shop'"> Send Link </button>
+            
           </p>
           <p>Click ‘Log into my account’.</p>
           <p>
@@ -4874,11 +4962,11 @@ const balanceEnquiry = new ContentH(
   </details>
 `,
 {
-  buttonLabel: "Report Housing Enquiry ",
-  formName: "hou_rehousing_enquiry",
+  buttonLabel: "",
+  formName: "",
 },
-{ typeKey: "rehousing_services_information_provided" },
-{ typeKey: "rehousing_services_information_requested" },
+{ typeKey: "rents_transfered_to_service" },
+{ typeKey: "rents_information_provided" },
 {
   type: "Request",
   keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
@@ -4906,6 +4994,9 @@ const contactRentsTeam = new ContentH(
             </p>
             <p>
                 Alternatively, they can complete the online form at <a href="https://www.sheffield.gov.uk/benefits/housing-benefit">https://www.sheffield.gov.uk/benefits/housing-benefit</a>.
+              <br>
+                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20Housing%20Benefit'"> Send Link </button>
+
             </p> 
         </div>
     </details>
@@ -5071,9 +5162,9 @@ const contactRentsTeam = new ContentH(
         </div>
     </details>
   `,
-  { buttonLabel: "Contact Rents Team", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "Contact Rents Team", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
@@ -5092,13 +5183,25 @@ const arrearsorDebt = new ContentH(
       advising the court that that they do not oppose the removal.
     </p>
   `,
-  { buttonLabel: "Arrears or Debt", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
 
+const debtRecovery = new FormH(
+  "debtRecovery",
+  "Debt Recovery",
+  "Use this form to enquire about Debt recovery or any correspondence you have received regarding Debt Recovery.",
+  "hou_rents_debt_recovery",
+  {
+    type: "Request",
+    keywords: ["Debt", "Housing", "Rent", "Recovery"],
+    categories: ["Housing"],
+  },
+  { date: "12/03/2025", name: "Nathan Smith" }
+);
 
 
 const references = new ContentH(
@@ -5123,11 +5226,37 @@ const references = new ContentH(
       Social Landlords can also email details of their request to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> if they prefer to send an email.
     </p>
   `,
-  { buttonLabel: "References", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "References", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
+);
+
+const rentArrangements = new FormH(
+  "rentArrangements",
+  "Rent Arrangements",
+  "Use this form to set up, amend or enquire about a Rent Arrangement.",
+  "hou_rents_arrangements",
+  {
+    type: "Request",
+    keywords: ["Arrangement", "Housing", "Rent"],
+    categories: ["Housing"],
+  },
+  { date: "12/03/2025", name: "Nathan Smith" }
+);
+
+const rentRefunds = new FormH(
+  "rentRefunds",
+  "Rent Refunds",
+  "Use this form to chase or request a Rent refund.",
+  "hou_rents_refunds",
+  {
+    type: "Request",
+    keywords: ["Refund", "Housing", "Rent"],
+    categories: ["Housing"],
+  },
+  { date: "12/03/2025", name: "Nathan Smith" }
 );
 
 const rentVariation = new ContentH(
@@ -5411,9 +5540,9 @@ const rentVariation = new ContentH(
     </div>
 </details>
   `,
-  { buttonLabel: "Rent Varitaion", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "Rent Varitaion", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
@@ -5425,7 +5554,11 @@ const statements = new ContentH(
   `
   <p>
   Statements are issued every 12 months or are available online along with rent balance enquiries at 
-  <a href="https://www.gro.sheffieldhomes.org.uk">https://www.gro.sheffieldhomes.org.uk</a>. <br><br>
+  <a href="https://www.gro.sheffieldhomes.org.uk">https://www.gro.sheffieldhomes.org.uk</a>. 
+  <br>
+  <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Homes'"> Send Link </button>
+  <br>
+  <br>
 
   If the customer requires a current statement, we can still provide one upon request that covers the last 3 months. 
   If the customer is asking for more than 3 months, we need to know why they need it as there will be a charge. <br><br>
@@ -5433,14 +5566,74 @@ const statements = new ContentH(
   <strong>Tenants in arrears:</strong> We will continue to send statements every 13 weeks if the customer is repaying arrears.
   </p> 
   `,
-  { buttonLabel: "Statements", formName: "Rents" },
-  { typeKey: "rents_information_provided" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
   { type: "Statements", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
 );
 
 //universalCredit is in cross regions
+
+const yorkshireWater = new ContentH(
+  "yorkshireWater",
+  "Yorkshire Water",
+  "Find out how to query water charges, access support schemes, and check eligibility for reduced water charges based on household income.",
+  `
+  <p>
+    If a customer is querying their water charges:<br>
+    These are set by Yorkshire Water, and we collect these charges as part of the rent.  Any complaints about the charges need to be directed to Yorkshire Water – 03451242424 or visit <a href="https://www.yorkshirewater.com/help" target="_blank">https://www.yorkshirewater.com/help</a>.
+  </p>
+  <p>
+    There are various schemes available, including Yorkshire Water Support, where we may be able to reduce the charge depending on household make-up and income.
+    Please direct any queries to the Income Plus Specialist for that property.<br>
+    The income thresholds for support are as follows:
+  </p>
+
+  <table border="1">
+  <thead>
+    <tr>
+      <th>Household Make Up</th>
+      <th>Band 1 – Reduce to £5.40 per week</th>
+      <th>Band 2 – Reduce to £7.08 per week</th>
+      <th>Band 3 – Reduce to £8.18 per week</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Single Adult</td>
+      <td>&lt; £12,000</td>
+      <td>&lt; £15,000</td>
+      <td>&lt; £20,000</td>
+    </tr>
+    <tr>
+      <td>2 + Adults</td>
+      <td>&lt; £15,600</td>
+      <td>&lt; £19,500</td>
+      <td>&lt; £26,000</td>
+    </tr>
+    <tr>
+      <td>1 Dependant</td>
+      <td>&lt; £15,600</td>
+      <td>&lt; £19,500</td>
+      <td>&lt; £26,000</td>
+    </tr>
+    <tr>
+      <td>2 + Dependents</td>
+      <td>&lt; £16,800</td>
+      <td>&lt; £21,000</td>
+      <td>&lt; £28,000</td>
+    </tr>
+  </tbody>
+</table>
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "rents_information_provided" },
+  { type: "Yorkshire Water", keywords: ["Rent", "Water", "Yorkshire"], categories: ["Housing"] },
+  { date: "10/03/2025", name: "Nathan Smith" }
+);
 
 const rents = new MenuH(
   "rents",
@@ -5450,10 +5643,14 @@ const rents = new MenuH(
     arrearsorDebt,
     balanceEnquiry,
     contactRentsTeam,
+    debtRecovery,
     references,
+    rentArrangements,
+    rentRefunds,
     rentVariation,
     statements,
-    universalCredit
+    universalCredit,
+    yorkshireWater
   ]
 );
 
@@ -6012,13 +6209,54 @@ const tenancyEnforcementASB = new ContentH(
     <p>Neighbourhood Teams may have stock of target hardening equipment.</p>
     <p>Victim Support may support with target hardening.</p>
   </p>`,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { buttonLabel: "Raise report", formName: "hou_enforcement_asb" },
+  { typeKey: "tenancy_enforcement_transferred_to_service" },
+  { typeKey: "tenancy_enforcement_information_provided" },
   { type: "Request", keywords: [], categories: ["Housing"] },
-  { date: "16/10/2024", name: "Omily Parkin" }
+  { date: "14/02/2025", name: "Nathan Smith" }
 );
 //#endregion Tenancy enforcement
+
+//#region Tenancy sustainment
+
+const abandonment = new FormH(
+  "abandonment",
+  "Abandonment",
+  "Report the abandonment of an item, pet or property.",
+  "hou_sustainment_abandon",
+  {
+    type: "Report",
+    keywords: ["Housing", "Abandon", "Pet"],
+    categories: ["Housing"],
+  },
+  { date: "07/03/2025", name: "Nathan Smith" }
+);
+
+const boundaries = new FormH(
+  "boundaries",
+  "Council housing and private land boundaries",
+  "Report boundary issues with Council housing land, private land and other Council owned land.",
+  "hou_sustainment_boundary",
+  {
+    type: "Report",
+    keywords: ["Boundaries", "Boundary"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
+);
+
+const burglarAlarmRequest = new FormH(
+  "burglarAlarmRequest",
+  "Burglar alarms",
+  "Request new or chase installation, missing or damaged alarm, alarm removal, a repair or alarm code.",
+  "hou_sustainment_bur_alar",
+  {
+    type: "Request",
+    keywords: ["Burlgar", "Alarm"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
+);
 
 const fobsandKeys = new ContentH(
   "fobsandKeys",
@@ -6141,6 +6379,8 @@ const fobsandKeys = new ContentH(
       <p>
       Please note: Howden House only deals with Rehousing enquiries and will not be able to help with fobs or keys. 
       List of Area Offices:  <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices "target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
+      <br>
+        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Neighbourhood%20offices'"> Send Link </button>
     </p>
     </div>
   </details>
@@ -6153,7 +6393,18 @@ const fobsandKeys = new ContentH(
   { date: "06/11/2024", name: "Shahzad Athar" }
 );
 
-
+const untidyGardensCommunalAreas = new FormH(
+  "untidyGardensCommunalAreas",
+  "Untidy gardens and communal areas",
+  "Report untidy Council gardens and untidy Council communal areas",
+  "hou_sustainment_garden",
+  {
+    type: "Report",
+    keywords: ["Garden", "Untidy", "Communal"],
+    categories: ["Housing"],
+  },
+  { date: "27/02/2025", name: "Nathan Smith" }
+);
 
 const housingServiceParkingPermits = new ContentH(
   "housingServiceParkingPermits",
@@ -6313,11 +6564,11 @@ const permissions = new ContentH(
     </div>
   </details>
   `,
-  { buttonLabel: "Permissions", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
+  { buttonLabel: "Permissions", formName: "hou_sustainment_perm" },
   { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { typeKey: "Tenancy_Sustainment_information_provided" },
   { type: "Permissions", keywords: ["Tenancy"], categories: ["Housing"] },
-  { date: "07/11/2024", name: "Shahzad Athar" }
+  { date: "07/03/2025", name: "Nathan Smith" }
 );
 
 
@@ -6390,6 +6641,18 @@ const tenancyAgreementRequest = new ContentH(
   { date: "08/11/2024", name: "Shahzad Athar" }
 );
 
+const tenancyChange = new FormH(
+  "tenancyChange",
+  "Tenancy Change",
+  "Request for adding, removing or enquiring about occupants, changes to tenancy both sole and joint, reporting a deceased tenant, ending a tenancy, passing on a tenancy or enquiring about tenancy start and end dates.",
+  "hou_sustainment_ten_chan",
+  {
+    type: "Request",
+    keywords: ["Housing", "Tenancy", "Tenant"],
+    categories: ["Housing"],
+  },
+  { date: "07/03/2025", name: "Nathan Smith" }
+);
 
 const tenancyConditions = new ContentH(
   "tenancyConditions",
@@ -6816,12 +7079,17 @@ const tenancySustainment = new MenuH(
   "Tenancy Sustainment",
   "Support for maintaining tenancies, including information on permissions, tenancy agreements, name changes, parking permits, and council housing services.",
   [
+    abandonment,
+    boundaries,
+    burglarAlarmRequest,
     fencesCouncilHousing,
     fobsandKeys,
+    untidyGardensCommunalAreas,
     housingServiceParkingPermits,
     nameChanges,
     permissions,
     tenancyAgreementRequest,
+    tenancyChange,
     tenancyConditions
   ]
 );
@@ -6836,15 +7104,12 @@ const tenancySustainment = new MenuH(
     "Housing",
     "Council and private housing, landlords and tenants, assisted living and care homes, heating your home, homelessness…",
     [
-      adaptations,
       assetManagementAndRepairs, 
       estatesAndEnvironments, 
       generalCouncilHousing, 
       housingBenefits, 
       leaseholderInformation, 
       rehousing, 
-      idReferencesMenu, 
-      policy, 
       rents, 
       shelteredAndSupported, 
       tenancyEnforcementASB, 

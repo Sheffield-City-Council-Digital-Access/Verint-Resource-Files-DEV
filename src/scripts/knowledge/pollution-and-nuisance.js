@@ -68,8 +68,8 @@ const badgerProtection = new ContentPaN(
     </p>
     <p>
       Under the 1992 Act it is now illegal to damage a badger sett or cause a dog to
-      enter a set. It is also an offence to attempt any of these actions or
-      recklessly allow a dog to enter a set. 
+      enter a sett. It is also an offence to attempt any of these actions or
+      recklessly allow a dog to enter a sett. 
     </p>
     <p>
       It is also an offence to possess a dead Badger, which has been acquired
@@ -82,15 +82,55 @@ const badgerProtection = new ContentPaN(
     </p>
     <p>
       For more information, please visit: <a href="http://www.syorksbadgergroup.org.uk" target="_blank">http://www.syorksbadgergroup.org.uk</a>.
+      <br>
+ <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information about South Yorkshire badger group"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=South%20Yorkshire%20Badger%20Group\`
+            "
+      >
+        Send link to review further information
+      </button>
     </p>
     <p>
       You can also visit the government website at: <a href="https://www.gov.uk/guidance/badgers-protection-surveys-and-licences" target="_blank">https://www.gov.uk/guidance/badgers-protection-surveys-and-licences</a>.
+      <br>
+ <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information about badgers protection and licences"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Badgers%20Protection%20Surveys%20and%20Licences\`
+            "
+      >
+        Send link to review further information
+      </button>
       <br>
       <br>
       or
       <br>
       <br>
       RPSCA information site at: <a href="https://www.rspca.org.uk/adviceandwelfare/wildlife/badgers/law" target="_blank">https://www.rspca.org.uk/adviceandwelfare/wildlife/badgers/law</a>.
+      <br>
+ <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information about Badgers and the law"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Badgers%20and%20the%20law\`
+            "
+      >
+        Send link to review further information
+      </button>
+
     </p>
   `,
   {
@@ -133,7 +173,22 @@ const batProtectionBritain = new ContentPaN(
       <li>Intentionally or recklessly obstruct access to a bat roost </li>
     </ul>
     <p>
-      For more information, please visit <a href="http://www.bats.org.uk">http://www.bats.org.uk</a>. 
+      For more information, please visit <a href="https://www.bats.org.uk">https://www.bats.org.uk</a>. 
+      <br>
+
+       <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information bats"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Bats\`
+            "
+      >
+        Send link to review further information
+      </button>
+
     </p>
   `,
   {
@@ -205,24 +260,23 @@ const bedBugTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Bed Bugs is £330.00. This is based on a standard size
+      The treatment cost for Bed Bugs is <strong>£330.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £97.00:
+      reduced to <strong>£97.00:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <details class="accordion">
@@ -298,14 +352,14 @@ const birdsandPigeonsTreatment = new ContentPaN(
     </section>
   `,
   {
-    buttonLabel: "Book treatment for Birds and Pegions",
-    formName: "pest_control_treatment",
+    buttonLabel: "",
+    formName: "",
   },
   { typeKey: "pest_control_transfer_to_service" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Birds and Pegions", "Treatment", "Pests", "Vermin"],
+    keywords: ["Birds and Pigeons", "Treatment", "Pests", "Vermin"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
@@ -313,13 +367,13 @@ const birdsandPigeonsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "12/03/2025", name: "Dinah Williams" }
 );
 
 const biscuitBeetlesTreatment = new ContentPaN(
   "biscuitBeetlesTreatment",
   "Biscuit Beetles Treatment",
-  "Find out how to submit a sample for Biscuit Beetle treatment, including treatment costs, eligibility for reduced fees, and the process for larger properties or commercial inquiries.",
+  "Find out how to submit a sample for Biscuit Beetle treatment, including treatment costs, eligibility for reduced fees, and the process for larger properties or commercial enquiries.",
   `
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
@@ -356,29 +410,28 @@ const biscuitBeetlesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The cost for Biscuit Beetle treatment is £110.00. This is based on a standard size
+      The cost for Biscuit Beetle treatment is <strong>£110.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Multiple Occupation House (HMO)</h3>
+        <h3>Commercial and Houses in multiple occupation (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -422,7 +475,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
       "HMO"
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const bumbleBeesTreatment = new ContentPaN(
@@ -434,20 +487,23 @@ const bumbleBeesTreatment = new ContentPaN(
     <p>
       If the pests are located in a communal area (The area that is shared by multiple Council Housing properties) or 
       required treatment for a domestic properties such as Council Housing, Housing Association, Privately Owned, Private Rented,
-      then the treatment cost for Bumble Bees is £75.50.
+      then the treatment cost for Bumble Bees is <strong>£75.50.</strong>
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58.00.
+      reduced to <strong>£69.50.</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
+        <p>
+      All prices include a call-out fee of £39.00 This fee applies if our officer
+      attends the property but is unable to complete the treatment.
+    </p>
     <h3>Nests Up High</h3>
     <p>
     Officers carry equipment that enables them to treat a nest located at height.
@@ -461,13 +517,10 @@ const bumbleBeesTreatment = new ContentPaN(
     If your customer is unsure about the possible additional cost, 
     escalate pest control enquiry and an officer will contact the customer about it.
     </p>
-    <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
-      attends the property but is unable to complete the treatment.
-    </p>
+    
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Multiple Occupation House (HMO)</h3>
+        <h3>Commercial and Houses in multiple occupation (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -511,7 +564,7 @@ const bumbleBeesTreatment = new ContentPaN(
       "HMO"
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const carpetBeetlesTreatment = new ContentPaN(
@@ -564,29 +617,28 @@ const carpetBeetlesTreatment = new ContentPaN(
     <p>
       If the pests are located in a communal area (The area that is shared by multiple Council Housing properties) or 
       required treatment for a domestic properties such as Council Housing, Housing Association, Private Owned, Private Rented,
-      then the treatment cost for Carpet Beetles is £132.00.
+      then the treatment cost for Carpet Beetles is <strong>£132.00.</strong>
       This charge is based on a standard size of a 3-bed semi-detached property. 
       If the property is bigger than this, please escalate the enquiry so a quote can be provided.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58.00.
+      reduced to <strong>£69.50.</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <details class="accordion">
       <summary class="accordion-header">
-        <h3>Commercial and Multiple Occupation House (HMO)</h3>
+        <h3>Commercial and Houses in multiple occupation (HMO)</h3>
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
@@ -630,7 +682,7 @@ const carpetBeetlesTreatment = new ContentPaN(
       "HMO"
     ],
   },
-  { date: "13/12/2024", name: "Joseph Coupland" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const clusterFliesTreatment = new ContentPaN(
@@ -675,7 +727,7 @@ const clusterFliesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Cluster Flies is £110.00. This is based on a standard size
+      The treatment cost for Cluster Flies is <strong>£110.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
@@ -685,14 +737,13 @@ const clusterFliesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -712,7 +763,7 @@ const clusterFliesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const cockroachesTreatment = new ContentPaN(
@@ -757,17 +808,16 @@ const cockroachesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Cockroaches is £330.00. This is based on a standard size
+      The treatment cost for Cockroaches is <strong>£330.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £97.00:
+      reduced to <strong>£97.00:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -794,7 +844,7 @@ const cockroachesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const cricketsTreatment = new ContentPaN(
@@ -839,24 +889,23 @@ const cricketsTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for crickets is £110.00. This is based on a standard size
+      The treatment cost for crickets is <strong>£110.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -876,7 +925,7 @@ const cricketsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const dermestesBeetlesTreatment = new ContentPaN(
@@ -931,14 +980,13 @@ const dermestesBeetlesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -989,7 +1037,7 @@ const fleasTreatment = new ContentPaN(
       property.
     </p>
     <h3>Call Out Charges</h3>
-    <p>All prices contain a call out fee of <strong>£39</strong>.</p>
+    <p>All prices contain a call out fee of £39.00.</p>
     <p>
       If we attend the property and the officer is unable to complete the treatment,
       the call out charge will be applied.
@@ -1057,14 +1105,14 @@ const fleasTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Fleas",
     formName: "pest_control_treatment",
   },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
   {
-    type: "Information",
+    type: "Book",
     keywords: ["Flea"],
     categories: ["Pollution and Nuisance", "Environmental", "Pest Constrol"],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const fliesTreatment = new ContentPaN(
@@ -1109,24 +1157,23 @@ const fliesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Flies is £110.00. This is based on a standard size
+      The treatment cost for Flies is <strong>£110.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1146,7 +1193,7 @@ const fliesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const foxesInformation = new ContentPaN(
@@ -1157,6 +1204,20 @@ const foxesInformation = new ContentPaN(
    <p>Sheffield City Council doesn't offer a service for foxes.</p>
     <p>For advice/information on foxes, please visit 
     <a href="http://foxproject.org.uk" target="_blank">http://foxproject.org.uk</a>.
+    <br>
+ <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information about the fox project"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=The%20Fox%20Project\`
+            "
+      >
+        Send link to review further information
+      </button>
+
     </p>
   `,
   {
@@ -1190,6 +1251,21 @@ const FrogsorFrogspawn = new ContentPaN(
       For advice/information on Frogs or Frogspawn, please call DEFRA who are licenced to remove 
       frogs or frog spawn on <a href="tel:0113 2613333">0113 2613333</a> or visit:
       <a href="https://www.gov.uk/browse/environment-countryside" target="_blank">https://www.gov.uk/browse/environment-countryside</a>.
+      <br>
+
+ <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information environment and countryside"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Environment%20and%20countryside\`
+            "
+      >
+        Send link to review further information
+      </button>
+
     </p>
   `,
   {
@@ -1253,24 +1329,23 @@ const furBeetlesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Fur Beetles is £110.00. This is based on a standard size
+      The treatment cost for Fur Beetles is <strong>£110.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1290,7 +1365,7 @@ const furBeetlesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const gardenAntsTreatment = new ContentPaN(
@@ -1300,24 +1375,23 @@ const gardenAntsTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Garden Ants is £75.50. This is based on a standard size
+      The treatment cost for Garden Ants is <strong>£75.50.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58.00:
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1337,7 +1411,7 @@ const gardenAntsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const honeyBeeTreatment = new ContentPaN(
@@ -1349,6 +1423,8 @@ const honeyBeeTreatment = new ContentPaN(
       <p>
         Bee keepers may be able to collect Honey Bees, although they are under no obligation to collect the swarm
         You can access information on the Sheffield Beekeepers Association at: <a href="https://sheffieldbeekeepers.org.uk/swarm-of-bees-in-your-garden-or-house/" target="_blank">https://sheffieldbeekeepers.org.uk/swarm-of-bees-in-your-garden-or-house/</a>
+        <br>
+        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Environment%20and%20Countryside'"> Send Link </button>
       </p>
     </section>
     <p>
@@ -1522,24 +1598,23 @@ const ladyBirdsTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Ladybirds is £110.00. This is based on a standard size
+      The treatment cost for Ladybirds is <strong>£110.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1559,7 +1634,7 @@ const ladyBirdsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const masonryBeesTreatment = new ContentPaN(
@@ -1569,24 +1644,27 @@ const masonryBeesTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Masonry Bees is £75.50. This is based on a standard size
+      The treatment cost for Masonry Bees is <strong>£75.50.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58.00:
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-    If there is more than one nest, a charge of £39.00 per additional nest will be applied.
+    If there is more than one nest, a charge of <strong>£39.00</strong> per additional nest will be applied.
+    </p>
+    <p>
+      All prices include a call-out fee of £39.00 This fee applies if our officer
+      attends the property but is unable to complete the treatment.
     </p>
     <h3>Nests Up High</h3>
     <p>
@@ -1596,10 +1674,7 @@ const masonryBeesTreatment = new ContentPaN(
     If further access equipment is required, then it would possibly mean an added cost.<br>
     If your customer is unsure about the possible additional cost, escalate the pest control enquiry and an officer will contact the customer about it.
     </p>
-    <p>
-      <strong>All prices include a call-out fee of £39. This fee applies if our officer
-      attends the property but is unable to complete the treatment.</strong>
-    </p>
+ 
   `,
   {
     buttonLabel: "Book treatment for Masonry Bees",
@@ -1617,28 +1692,27 @@ const masonryBeesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const miceTreatment = new ContentPaN(
   "miceTreatment",
   "Mice Treatment",
-  "Information on mice treatment costs, benefit-related discounts, and details about the number of visits covered by the treatment.",
+  "Information on mice treatment, including costs, free treatment for certain benefits, communal area handling, and commercial property inquiries.",
   `
     <h3>Cost for Treatment</h3>
     <p>
       We will only provide treatment for Mice inside the property. 
-      The cost for the treatment is £118.00. This is based on a standard size
+      The cost for the treatment is <strong>£118.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £58.00:
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -1646,11 +1720,11 @@ const miceTreatment = new ContentPaN(
     </ul>
     <p>
     This covers you for up to 3 visits. If you require further treatments, 
-    each additional treatment will cost £39.00.
+    each additional treatment will cost <strong>£39.00.</strong>
     </p>
     <p>
-      <strong>All prices include a call-out fee of £39. This fee applies if our officer
-      attends the property but is unable to complete the treatment.</strong>
+      All prices include a call-out fee of £39.00 This fee applies if our officer
+      attends the property but is unable to complete the treatment.
     </p>
   `,
   {
@@ -1669,7 +1743,7 @@ const miceTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const mitesTreatment = new ContentPaN(
@@ -1679,25 +1753,24 @@ const mitesTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Mites is £110.00. This is based on a standard size
+      The treatment cost for Mites is <strong>£110.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      <strong>All prices include a call-out fee of £39. This fee applies if our officer
-      attends the property but is unable to complete the treatment.</strong>
+      All prices include a call-out fee of £39.00 This fee applies if our officer
+      attends the property but is unable to complete the treatment.
     </p>
   `,
   {
@@ -1716,7 +1789,7 @@ const mitesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const mothsTreatment = new ContentPaN(
@@ -1761,24 +1834,23 @@ const mothsTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Moths is £132.00. This is based on a standard size
+      The treatment cost for Moths is <strong>£132.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1798,7 +1870,7 @@ const mothsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const pharoahAntsTreatment = new ContentPaN(
@@ -1808,25 +1880,24 @@ const pharoahAntsTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for the Pharoah Ants is £330.00. This is based on a standard size
+      The treatment cost for the Pharoah Ants is <strong>£330.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £97.00:
+      reduced to <strong>£97.00:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      <strong>All prices include a call-out fee of £39. This fee applies if our officer
-      attends the property but is unable to complete the treatment.</strong>
+      All prices include a call-out fee of £39.00 This fee applies if our officer
+      attends the property but is unable to complete the treatment.
     </p>
   `,
   {
@@ -1845,7 +1916,7 @@ const pharoahAntsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const psocidsTreatment = new ContentPaN(
@@ -1890,24 +1961,23 @@ const psocidsTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Psocids is £110.00. This is based on a standard size
+      The treatment cost for Psocids is <strong>£110.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1927,7 +1997,7 @@ const psocidsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const ratTreatment = new ContentPaN(
@@ -1937,24 +2007,27 @@ const ratTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Rats is £118.00. This covers you for up to 3 visits.
-      If you require further treatments, each additional treatment will cost £39.00.
+      The treatment cost for Rats is <strong>£118.00.</strong> This covers you for up to 3 visits.
+      If you require further treatments, each additional treatment will cost <strong>£39.00.</strong>
+    </p>
+    <p>
+      All prices include a call-out fee of <strong>£39.00.</strong> This fee applies if our officer
+      attends the property but is unable to complete the treatment.
     </p>
     <p>
       If you receive one of the following benefits, the treatment will be free:
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
-      attends the property but is unable to complete the treatment.
+      Free treatments, there is no call out charge if the Technician is unable to gain access.
     </p>
+        
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Communal Areas</h3>
@@ -1983,11 +2056,11 @@ const ratTreatment = new ContentPaN(
       </summary>
       <div class="accordion-content">
         <p>
-          For bed bug treatment enquiries related to Commercial, Health Authority, Industrial, and
+          For rat treatment enquiries related to Commercial, Health Authority, Industrial, and
           University properties, please email your request to
-          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk"
-            >EnvironmentalServicesAdmin@sheffield.gov.uk</a
-          >. We will assess your request and provide you with a quote for the treatment.
+          <a href="mailto:EnvironmentalServicesAdmin@sheffield.gov.uk">
+           EnvironmentalServicesAdmin@sheffield.gov.uk</a>.
+            We will assess your request and provide you with a quote for the treatment.
         </p>
       </div>
     </details>
@@ -2022,7 +2095,7 @@ const ratTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const redSpiderMitesTreatment = new ContentPaN(
@@ -2067,24 +2140,23 @@ const redSpiderMitesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Red Spider Mites is £110.00. This is based on a standard size
+      The treatment cost for Red Spider Mites is <strong>£110.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
+      reduced to <strong>£69.50:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -2104,7 +2176,7 @@ const redSpiderMitesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const sewageFliesTreatment = new ContentPaN(
@@ -2149,7 +2221,7 @@ const sewageFliesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Sewage Flies is £110.00. This is based on a standard size
+      The treatment cost for Sewage Flies is <strong>£110.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
@@ -2159,14 +2231,13 @@ const sewageFliesTreatment = new ContentPaN(
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -2186,7 +2257,7 @@ const sewageFliesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const silverFishTreatment = new ContentPaN(
@@ -2196,26 +2267,30 @@ const silverFishTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Silver Fish is £110.00. This is based on a standard size
+      The treatment cost for Silver Fish is <strong>£110.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
+      reduced to <strong>£69.50:</strong>
+      <br>
+      
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
+      <br>
+      
     </ul>
-    <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+        <p>
+      All prices include a call-out fee of £39.00. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
+
   `,
   {
     buttonLabel: "Book treatment for Silver Fish",
@@ -2233,7 +2308,7 @@ const silverFishTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const spiderBeetlesTreatment = new ContentPaN(
@@ -2278,26 +2353,29 @@ const spiderBeetlesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Spider Beetles is £110.00. This is based on a standard size
+      The treatment cost for Spider Beetles is <strong>£110.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
+      reduced to <strong>£69.50:</strong>
+    
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
+        <br>
+   
     </ul>
-    <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+        <p>
+      All prices include a call-out fee of £39.00. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
+
   `,
   {
     buttonLabel: "Book treatment for Spider Beetles",
@@ -2315,7 +2393,7 @@ const spiderBeetlesTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const squirrelsTreatment = new ContentPaN(
@@ -2323,35 +2401,14 @@ const squirrelsTreatment = new ContentPaN(
   "Squirrels Treatment",
   "Details on Squirrel treatment, including costs, discounted rates for benefits recipients, and the included call-out fee.",
   `
-    <h3>Cost for Treatment</h3>
     <p>
-      We will only provide treatment for Squirrels inside the property.
-      The treatment cost is £315.00. This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
-    </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to £99.00:
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Universal Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-      This covers you for up to 5 visits. If you require further treatments, each additional
-      treatment will cost £55.
-    <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
-      attends the property but is unable to complete the treatment.
+    For advice on squirrel treatments, please contact the pest control back office at:
+    <a href="tel:01142930356">0114 293 0356</a> 
+    or email: <a href="mailto:environmentalservicesadmin@sheffield.gov.uk">environmentalservicesadmin@sheffield.gov.uk</a>
     </p>
   `,
   {
-    buttonLabel: "Book treatment for Squirrels",
+    buttonLabel: "",
     formName: "pest_control_treatment",
   },
   { typeKey: "pest_control_transfer_to_service" },
@@ -2366,7 +2423,7 @@ const squirrelsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const waspsTreatment = new ContentPaN(
@@ -2376,15 +2433,14 @@ const waspsTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Wasps is £75.50.
+      The treatment cost for Wasps is <strong>£75.50.</strong>
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £39.00:
+      reduced to <strong>£39.00:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
@@ -2392,19 +2448,21 @@ const waspsTreatment = new ContentPaN(
     </ul>
     <p>
       This covers you for up to 5 visits. If you require further treatments, each additional
-      treatment will cost £55.
+      treatment will cost <strong>£55.00.</strong>
+      <br>
+       All prices include a call-out fee of £39.00. This fee applies if our officer
+      attends the property but is unable to complete the treatment.
       <br>
       <br>
       Officers carry equipment that enables them to treat a nest located at height.
       In most cases the officer will be able to carry out a successful treatment using such equipment. 
       If any further access equipment is required to treat the nest our officer will inform you of this 
-      at the time of the visit. If further access is equipment is required, then it would possibly mean 
+      at the time of the visit. If further access to equipment is required, then it would possibly mean 
       an added cost. If your customer is unsure about the possible additional cost, escalate pest control 
       enquiry and an officer will contact the customer about it.
       <br>
       <br>
-      All prices include a call-out fee of £39. This fee applies if our officer
-      attends the property but is unable to complete the treatment.
+     
     </p>
   `,
   {
@@ -2423,7 +2481,7 @@ const waspsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "28/02/2025", name: "Dinah Williams" }
 );
 
 const weevilsTreatment = new ContentPaN(
@@ -2465,12 +2523,13 @@ const weevilsTreatment = new ContentPaN(
       <p>
         A photo sample can be emailed in to: <a href="mailto:admin.envserv@sheffield.gov.uk">admin.envserv@sheffield.gov.uk</a>.
       </p>
-    </section>
-    <h3>Cost for Treatment</h3>
+          <h3>Cost for Treatment</h3>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+            All prices include a call-out fee of £39.00. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
+    </section>
+
   `,
   {
     buttonLabel: "Book treatment for Weevils",
@@ -2488,7 +2547,7 @@ const weevilsTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const woodliceTreatment = new ContentPaN(
@@ -2498,26 +2557,26 @@ const woodliceTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Woodlice is £110.00. This is based on a standard size
+      The treatment cost for Woodlice is <strong>£110.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
-    </p>
+      reduced to <strong>£69.50:</strong> 
+
     <ul>
       <li>Pension Credits</li>
-      <li>Universal Credits</li>
       <li>Housing Benefits</li>
       <li>Income Support Allowance</li>
       <li>Income Related Job Seekers Allowance</li>
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £39.00. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
+
   `,
   {
     buttonLabel: "Book treatment for Woodlice",
@@ -2535,7 +2594,7 @@ const woodliceTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "26/02/2025", name: "Gee Whitehouse" }
 );
 
 const pestControl = new MenuPaN(
@@ -2581,40 +2640,6 @@ const pestControl = new MenuPaN(
 );
 
 //#endregion Pest Control
-
-const handoverDogtoCouncil = new ContentPaN(
-  "handoverDogtoCouncil",
-  "Handover Dog to Council",
-  "",
-  `
-    
-  `,
-  {
-    buttonLabel: "Handover Dog to Council",
-    formName: "animal_control",
-  },
-  { typeKey: "pest_control_transfer_to_service" },
-  { typeKey: "pest_control_information_provided" },
-  {
-    type: "Book",
-    keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
-    categories: [
-      "Pollution and Nuisance",
-      "Environmental",
-      "Pest Control",
-      "Animal Control",
-      "Environmental Health",
-    ],
-  },
-  { date: "11/10/2024", name: "Shahzad Athar" }
-);
-
-const animalControl = new MenuPaN(
-  "animalControl",
-  "Animal Control",
-  "Animal control treatments, services and pricing",
-  [handoverDogtoCouncil]
-);
 
 const reportNeedlesGlass = new FormPaN(
   "reportNeedlesGlass",
@@ -2680,6 +2705,33 @@ const reportFlyTipping = new FormPaN(
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
+ 
+
+const handoverDogtoCouncil = new FormPaN(
+  "handoverDogtoCouncil",
+  "Handover Dog to Council",
+  "Hand over a dog to the council",
+  "report_dangerous_dog",
+  {
+    type: "Report",
+    keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
+    categories: ["Pollution and Nuisance", "Environmental", "Pest Control", "Animal Control", "Environmental Health"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+const reportDangerousDog = new FormPaN(
+  "reportDangerousDog",
+  "Dangerous dog",
+  "Report a dog as dangerous",
+  "report_dangerous_dog",
+  {
+    type: "Report",
+    keywords: ["Dog", "dangerous","dangerous dog  ","dog as dangerous"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
 
 const reportDogFouling = new FormPaN(
   "reportDogFouling",
@@ -2692,6 +2744,60 @@ const reportDogFouling = new FormPaN(
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
+const reportStrayingDog = new FormPaN(
+  "reportStrayingDog",
+  "Straying dog",
+  "Report straying dog on the highway",
+  "report_straying_dog",
+  {
+    type: "Report",
+    keywords: ["Dog", "straying","stray","stray dog"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+const reportDogAsLost = new FormPaN(
+  "reportDogAsLost",
+  "Lost dog",
+  "Report a lost dog",
+  "report_dog_as_lost",
+  {
+    type: "Report",
+    keywords: ["Dog", "missing","lost","missing dog","lost dog","dog as missing","dog as lost"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+
+
+const reportSmoke = new FormPaN(
+  "reportSmoke",
+  "Smoke",
+  "Report smoke",
+  "report_smoke",
+  {
+    type: "Report",
+    keywords: ["Report", "smoke"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+const reportNoise = new FormPaN(
+  "reportNoise",
+  "Noise",
+  "Report noise",
+  "report_noise",
+  {
+    type: "Report",
+    keywords: ["Report", "noise"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "05/03/2025", name: "Sam Coupland" }
 );
 
 const abandonedVehicles = new ContentPaN(
@@ -2798,7 +2904,22 @@ const howLongWillTheCleanAirZoneBeInPlace = new ContentPaN(
 `
 <p>The Clean Air Zone will be in place in Sheffield until the city can provide evidence to the Department for Environment, Food & Rural Affairs (Defra) that it has met and can maintain for a minimum of two years the reduced legal levels of Nitrogen Dioxide (NO2) required. There will be significant monitoring and evaluation of the CAZ to determine this.</p>
 <h3>What support will there be for those affected</h3>
-<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.</p>
+<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.
+<br>
+ <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information environment and countryside"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Environment%20and%20countryside\`
+            "
+      >
+        Send link to review further information
+      </button>
+
+</p>
 `,
 {
   buttonLabel: "",
@@ -2930,7 +3051,22 @@ const whatSupportWillThereBeForThoseAffected = new ContentPaN(
   "What support will there be for those affected",
   "Discover the financial support available for businesses and residents to upgrade to cleaner vehicles, including grants and interest-subsidized loans.",
 `
-<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.</p>
+<p>Eligible businesses and residents may be able to apply for financial support to upgrade to cleaner vehicles. Financial support will be paid in the form of a grant, an interest-subsidized loan, or a mix of the two. You can apply for financial support to upgrade your non-compliant vehicle at <a href="https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle" target="_blank">https://www.sheffield.gov.uk/your-city-council/apply-for-financial-support-upgrade-replace-polluting-vehicle</a>.
+<br>
+ <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to Apply for financial support to upgrade or replace a polluting vehicle"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20financial%20support%20to%20upgrade%20or%20replace%20a%20polluting%20vehicle\`
+            "
+      >
+        Send link to review further information
+      </button>
+
+</p>
 `,
 {
   buttonLabel: "",
@@ -2995,7 +3131,24 @@ const whyIsACleanAirZoneBeingIntroduced = new ContentPaN(
 
 `
 <p>The implementation of the Category C Clean Air Zone in Sheffield is the result of a legal directive from national government requiring Nitrogen Dioxide (NO2) levels to be reduced to legal levels at locations across Sheffield and Rotherham within the shortest possible time.</p>
-<p>The primary aim of Clean Air Zones is to protect the public from exposure to Nitrogen Dioxide (NO2) emissions from road traffic. Air pollution can permanently damage children's lungs, can cause strokes, lung cancer and cardiovascular disease. Find out the health impacts from air pollution at <a href="https://www.gov.uk/government/publications/health-matters-air-pollution" target="_blank">https://www.gov.uk/government/publications/health-matters-air-pollution</a>.</p>
+<p>The primary aim of Clean Air Zones is to protect the public from exposure to Nitrogen Dioxide (NO2) emissions from road traffic. Air pollution can permanently damage children's lungs, can cause strokes, lung cancer and cardiovascular disease. Find out the health impacts from air pollution at <a href="https://www.gov.uk/government/publications/health-matters-air-pollution" target="_blank">https://www.gov.uk/government/publications/health-matters-air-pollution</a>.
+<br>
+
+ <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to further information about Health matters: air pollution"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Health%20matters%20air%20pollution\`
+            "
+      >
+        Send link to review further information
+      </button>
+
+
+</p>
 <p>A number of other local authorities across the UK have also been legally directed to introduce Clean Air Zones - not only Sheffield.</p>
 <p>We have worked with DEFRA’s Joint Air Quality Unit (JAQU) to form a plan to reduce annual average concentrations of Nitrogen Dioxide (NO2) in Sheffield. The Clean Air Zone is focused around the city center where some of the most polluted locations are, but it will deliver air quality below the legal limit of 40µg/m<sup>3</sup> across the whole of the city.</p>
 `,
@@ -3046,16 +3199,22 @@ const cleanAirZone = new MenuPaN(
 const pollutionAndNuisance = new ServicePaN(
   "pollutionAndNuisance",
   "Pollution and Nuisance",
-  `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone`,
+  `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone, Enviro, Eps, Env`,
   [
-    abandonedVehicles,
+    abandonedVehicles,  
     pestControl,
+    reportDangerousDog, 
     reportDogFouling,
+    reportStrayingDog,
+    reportDogAsLost,
+    handoverDogtoCouncil,
     reportLitter,
     reportGraffiti,
     reportFlyPosting,
     reportFlyTipping,
     reportNeedlesGlass,
+    reportSmoke,
+    reportNoise,
     cleanAirZone
   ]
 );

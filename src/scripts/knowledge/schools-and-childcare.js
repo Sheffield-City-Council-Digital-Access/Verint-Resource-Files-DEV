@@ -89,6 +89,9 @@ const freeSchoolMeals = new ContentSaC(
       remain eligible until they finish the phase of schooling (primary or
       secondary) they’re in on 31 March 2025.
     </p>
+    <p>
+      If your child/ren is/are currently attending an Oasis school, they need to apply for Free School Meals with that school directly.
+    </p>
     <h3>Change in circumstance</h3>
     <p>
       If your circumstances change, such as if you no longer receive benefits, have
@@ -126,6 +129,8 @@ const freeSchoolMeals = new ContentSaC(
     <p>
       Go to the <a href="http://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/"target="_blank">www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers</a>
       and follow the instructions below:
+      <br>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Edenred'"> Send Link </button>
     </p>
     <ol>
       <li>Enter your eCode from the letter</li>
@@ -313,7 +318,7 @@ const freeSchoolMeals = new ContentSaC(
     buttonLabel: "Apply for Free School Meals",
     formName: "apply_school_meals",
   },
-  { typeKey: "" },
+  { typeKey: "free_school_meals_transferred_to_service" },
   { typeKey: "free_school_meals_information_provided" },
   {
     type: "Apply",
@@ -422,6 +427,9 @@ const fundedEarlyLearning = new ContentSaC(
       families details of childcare support they might be eligible for and a link to
       apply to HMRC.
       <a href="https://www.childcarechoices.gov.uk" target="_blank">https://www.childcarechoices.gov.uk</a>
+      <br>
+      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Childcare%20Choicess'"> Send Link </button>
+
     </p>
     <p>
       From September 2025: <br>
@@ -435,6 +443,9 @@ const fundedEarlyLearning = new ContentSaC(
     <p>
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice" target="_blank">https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice</a>.
+    <br>
+    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Childcare%20funding%20support%20and%20advice'"> Send Link </button>
+
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -506,6 +517,9 @@ const schoolFoodVoucher = new ContentSaC(
       There is an Edenred User guide and an Edenred Parent FAQ document which are
       both useful as references, these are available on 
       <a href="http://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/"target="_blank">www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers</a>
+      <br>
+       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Edenred'"> Send Link </button>
+
     </p>
     <details class="accordion">
       <summary class="accordion-header">
@@ -529,8 +543,12 @@ const schoolFoodVoucher = new ContentSaC(
             <p>
               You can redeem your eCode button on the website:
               <a href="https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers"target="_blank">https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Voucher</a><br>
+               <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Edenred'"> Send Link </button>
+              <br>
               or you can visit:
               <a href="http://www.selectyourcompliment.co.uk" target="_blank">www.selectyourcompliment.co.uk</a>
+              <br>
+              <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Childcare%20funding%20support%20and%20advice'"> Send Link </button>
             </p>
             <p>Enter the code into the box on the website and click Redeem</p>
             <ol>

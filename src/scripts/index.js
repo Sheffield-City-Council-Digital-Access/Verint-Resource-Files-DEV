@@ -508,7 +508,7 @@ function handleInitialisingEvent() {
 
 // --- HANDLE ON READY EVENT ----------------------------------------------- \\
 
-function handleOnReadyEvent(event, kdf) {
+function handleOnReadyEvent(_, kdf) {
   customerState = kdf.customerset;
 
   // --- ADD CONTENT TO WHY WE NEED DATE OF BIRTH --------------------------- \\
@@ -543,7 +543,7 @@ function handleOnReadyEvent(event, kdf) {
     root.style.setProperty("--color-primary", "#007aff");
 
     $("form.dform").css({
-      margin: "0 auto",
+      margin: "1.7rem auto 0",
       "min-height": "88vh",
     });
 
@@ -952,7 +952,11 @@ function handleOnReadyEvent(event, kdf) {
 
   $(`.date-mm`).on("input focusout", function (e) {
     const parentId = $(this).attr("id").replace("_num_", "_date_").slice(0, -3);
-    const dateMessage = getValidationMessageFromSession(parentId);
+    const txtFieldId = $(this)
+      .attr("id")
+      .replace("_num_", "_txt_")
+      .slice(0, -3);
+    const dateMessage = getValidationMessageFromSession(txtFieldId);
     const dd = $(`#${this.id.slice(0, -2)}dd`).val();
     const yy = $(`#${this.id.slice(0, -2)}yy`).val();
     if (e.type === "input") {
@@ -994,7 +998,11 @@ function handleOnReadyEvent(event, kdf) {
         .attr("id")
         .replace("_num_", "_date_")
         .slice(0, -3);
-      const dateMessage = getValidationMessageFromSession(parentId);
+      const txtFieldId = $(this)
+        .attr("id")
+        .replace("_num_", "_txt_")
+        .slice(0, -3);
+      const dateMessage = getValidationMessageFromSession(txtFieldId);
       const dd = $(`#${this.id.slice(0, -2)}dd`).val() !== "" ? true : false;
       const mm = $(`#${this.id.slice(0, -2)}mm`).val() !== "" ? true : false;
       $(`#${parentId}`)
@@ -1110,12 +1118,140 @@ function handleOnReadyEvent(event, kdf) {
 
   // --- HANDLE CLOSE CASE CLICK ------------------------------------------- \\
 
+  function createReviewSection(pageId, pageTitle, fields) {
+    let statusCardHtml = `
+      <div class="review-section">
+          <div class="review-content">
+              <div class="review-content-header">
+                  <h3>${pageTitle}</h3>
+                  <button type="button" class="go-to-page-btn" id="go-to-${pageId}">Edit</button>
+              </div>
+              ${fields
+                .map(
+                  (field) => `
+                    <p>${field.fieldlabel}: ${field.fieldValue}</p>
+                  `
+                )
+                .join("")}
+          </div>
+      </div>
+  `;
+
+    document
+      .getElementById("review-case-content-container")
+      .insertAdjacentHTML("beforeend", statusCardHtml);
+
+    const button = document.getElementById(`go-to-${pageId}`);
+    if (button) {
+      button.addEventListener("click", function () {
+        const modal = document.getElementById("case-review-modal");
+        modal.close();
+        modal.remove();
+        KDF.gotoPage(pageId, false, false, true);
+      });
+    }
+  }
+
+  function checkIsFormComplete(fields) {
+    let isComplete = true;
+    let incompleteFields = [];
+    let pages = [];
+
+    fields.forEach((field) => {
+      let value = KDF.getVal(field);
+      if (!value || value === "Pending" || value === "In progress") {
+        isComplete = false;
+        incompleteFields.push(field);
+      }
+    });
+
+    if (isComplete) {
+      return isComplete;
+    }
+
+    const modal = document.createElement("dialog");
+    modal.id = "case-review-modal";
+    modal.innerHTML = `
+      <div class="modal-header">
+        <h1>Incomplete process</h1>
+      </div>
+      <div class="modal-main">
+        <p>The following fields need completing before the case can be closed.</p>
+        <div id="review-case-content-container"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close-modal-btn" id="closeModal">Close</button>
+      </div>
+    `;
+
+    document.body.appendChild(modal);
+    modal.showModal();
+
+    incompleteFields.forEach((field) => {
+      let id = `dform_widget_${field}`;
+      let label = document.querySelector(`label[for='${id}']`);
+      let labelText = label ? label.textContent : field;
+      let pageTitleText = "Unknown Section";
+      let fieldValue = KDF.getVal(field) || "Not Answered";
+
+      let element = document.getElementById(id);
+      if (element) {
+        let page = element.closest('[data-type="page"]');
+        if (page) {
+          let pageTitle = page.querySelector(".page-title");
+          pageTitleText = pageTitle ? pageTitle.textContent : "Unknown Section";
+          let pageId = page.id
+            ? page.id.replace(/^dform_page_/, "")
+            : `page-${Math.random().toString(36).substr(2, 9)}`;
+          let pageData = pages.find((page) => page.pageId === pageId);
+          if (!pageData) {
+            pageData = { pageId, pageTitle: pageTitleText, fields: [] };
+            pages.push(pageData);
+          }
+          pageData.fields.push({
+            fieldlabel: labelText,
+            fieldValue: fieldValue,
+          });
+        }
+      }
+    });
+
+    pages.forEach((page) => {
+      createReviewSection(page.pageId, page.pageTitle, page.fields);
+    });
+
+    document
+      .getElementById("closeModal")
+      .addEventListener("click", function () {
+        modal.close();
+        modal.remove();
+      });
+
+    return isComplete;
+  }
+
   $(".close-case-btn").on("click", () => {
     if (checkIsFormComplete(fieldsToCheckBeforeClose)) {
       KDF.markComplete();
       KDF.gotoPage("complete", false, false, false);
+    }
+  });
+
+  // --- OHMS -------------------------------------------------------------- \\
+
+  if (kdf.params.customerid) {
+    KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
+      customerid: kdf.params.customerid,
+    });
+  }
+
+  $("#dform_widget_button_but_view_rent_account").on("click", function () {
+    const customerid =
+      kdf.params.customerid ?? KDF.getVal("num_reporter_obj_id");
+    if (customerid) {
+      createModal("hubScreenRentSummary", "hub_rent_summary", customerid);
     } else {
-      KDF.showError("Please ensure all fields have been completed.");
+      KDF.showWarning("A customer has not been set.");
     }
   });
 }
@@ -1138,9 +1274,23 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   updateProgressBar(targetpageid);
 
   if (pageName === "page_about_you") {
-    if (kdf.access === "agent" && kdf.customerset === "agent_false") {
+    if (kdf.access === "agent" && !kdf.form.data?.num_reporter_obj_id) {
       KDF.sendDesktopAction("raised_by");
-      // createModal("setReporterModal", "system_search_record");
+    }
+  }
+
+  if (
+    pageName === "page_review" ||
+    pageName === "page_declaration" ||
+    pageName === "save" ||
+    pageName === "complete"
+  ) {
+    if ($("#dform_progressbar_sheffield").length) {
+      $("#dform_progressbar_sheffield, #dform_ref_display").hide();
+    }
+  } else {
+    if ($("#dform_progressbar_sheffield").length) {
+      $("#dform_progressbar_sheffield, #dform_ref_display").show();
     }
   }
 
@@ -1217,6 +1367,18 @@ function handleOptionSelectedEvent(event, kdf, field, label, val) {
     const textField = mchkField.replace("mchk_", "txt_");
     const stringValue = KDF.getVal(mchkField).toString().replace(/,/gi, ", ");
     KDF.setVal(textField, stringValue);
+  }
+
+  // --- HANDLE TOGGLE NI NASS --------------------------------------------- \\
+
+  if (field === "chk_no_national_insurance_number") {
+    const showNass = $("#dform_widget_chk_no_national_insurance_number").is(
+      ":checked"
+    );
+    hideShowMultipleElements([
+      { name: "txt_national_asylum_support", display: showNass },
+      { name: "txt_national_insurance", display: !showNass },
+    ]);
   }
 
   // --- MAP --------------------------------------------------------------- \\
@@ -1340,6 +1502,10 @@ function handleObjectIdSet(event, kdf, type, id) {
 }
 
 function handleObjectIdLoaded(event, kdf, response, type, id) {
+  KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
+    customerid: id,
+  });
+
   property = formatTitleCase(response["profile-AddressNumber"]);
   streetName = formatTitleCase(response["profile-AddressLine1"]);
   fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${
@@ -1453,7 +1619,8 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
         );
 
         if (validationMessageElement) {
-          validationMessageElement.textContent = "Enter a valid postcode";
+          validationMessageElement.textContent =
+            getValidationMessageFromSession(postcodeInput.id);
           validationMessageElement.style.display = "block";
         }
       }
@@ -1474,10 +1641,20 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       fullAddress,
       propertyId,
       uprn,
+      easting,
+      northing,
       streetId,
       usrn,
       status,
       message,
+      ohmsUprn,
+      propertyClass,
+      managementCode,
+      area,
+      ward,
+      officer,
+      areaContact,
+      officerContact,
     } = response.data;
     if (status == 400 && action === "retrieve-location-from-coordinates") {
       const $button = $(".geo-btn");
@@ -1513,6 +1690,18 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       { alias: "usrn", value: usrn },
       { alias: "siteName", value: streetName },
       { alias: "siteCode", value: usrn },
+      { alias: "propertyId", value: propertyId },
+      { alias: "streetId", value: streetId },
+      { alias: "easting", value: easting },
+      { alias: "northing", value: northing },
+      { alias: "ohmsUprn", value: ohmsUprn },
+      { alias: "propertyClass", value: propertyClass },
+      { alias: "managementCode", value: managementCode },
+      { alias: "area", value: area },
+      { alias: "ward", value: ward },
+      { alias: "officer", value: officer },
+      { alias: "areaContact", value: areaContact },
+      { alias: "officerContact", value: officerContact },
     ]);
     setSelectedAddress(fullAddress, "show");
   }
@@ -1570,6 +1759,57 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     }
   }
 
+  // --- OHMS -------------------------------------------------------------- \\
+
+  if (
+    action === "retrieve-social-ids" &&
+    response.data["profile-socialId-ohms"]
+  ) {
+    const screen =
+      kdf.form.name === "hub_rent_summary" ? "RNT1" : "personDetails";
+    const agentId = response.data.agendId;
+    const ohmsId = response.data["profile-socialId-ohms"];
+
+    const url = `https://sccvmtholi01.sheffield.gov.uk/CRMHousing/default.asp?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
+    const iframe = document.createElement("iframe");
+
+    iframe.id = "ifrm1";
+    iframe.width = "100%";
+    iframe.height = screen === "RNT1" ? "521" : "725";
+    iframe.src = url;
+
+    const container = document.getElementById("hub-screen-container");
+
+    if (container) {
+      container.innerHTML = "";
+      container.appendChild(iframe);
+
+      hideShowMultipleElements([
+        { name: "ahtm_hub_screen", display: "show" },
+        { name: "area_about_you", display: "hide" },
+        { name: "area_address_lookup_about_you", display: "hide" },
+        { name: "area_address_details_about_you", display: "hide" },
+        { name: "but_view_rent_account", display: ohmsId ? "show" : "hide" },
+      ]);
+    }
+
+    if (kdf.access === "agent") {
+      setTimeout(() => {
+        KDF.customdata(
+          "retrieve-council-housing-property-details",
+          "_KDF_custom",
+          true,
+          true,
+          {
+            propertId: KDF.getVal("txt_uprn_about_you"),
+            property: KDF.getVal("txt_property_about_you"),
+            postcode: KDF.getVal("txt_postcode_about_you"),
+          }
+        );
+      }, 500);
+    }
+  }
+
   // --- MAP --------------------------------------------------------------- \\
 
   do_KDF_Custom_esriMap(action, response);
@@ -1589,6 +1829,7 @@ function handleFailedAction(event, action, xhr, settings, thrownError) {
   } else {
     if (KDF.kdf().access === "agent") {
       KDF.showError(`${action} failed: ${thrownError}`);
+      window.scrollTo(0, 0);
     }
   }
 
@@ -2169,7 +2410,8 @@ function getMinMaxDates(dateElementId) {
 }
 
 function checkDate(id, dd, mm, yy, element) {
-  const dateMessage = getValidationMessageFromSession(id);
+  const txtFieldId = id.replace("_num_", "_txt_").slice(0, -3);
+  const dateMessage = getValidationMessageFromSession(txtFieldId);
 
   // Clear previous errors
   $(`#${id} .date-dd, #${id} .date-mm, #${id} .date-yy`).removeClass(
@@ -2185,7 +2427,7 @@ function checkDate(id, dd, mm, yy, element) {
   const errorConditions = [
     {
       condition: !dd && !mm && !yy,
-      message: "Date must include a day, month and year",
+      message: dateMessage,
       fields: dateFields,
     },
     {
@@ -2242,8 +2484,12 @@ function checkDate(id, dd, mm, yy, element) {
         .toString()
         .padStart(2, "0")}-${dd.toString().padStart(2, "0")}`;
       const localFormat = new Date(date).toLocaleDateString("en-GB");
-      $(`#${id.replace("_date_", "_txt_")}`).val(localFormat);
-      $(`#${id.replace("_date_", "_dt_")}`).val(date);
+      $(`#${id.replace("_date_", "_txt_")}`)
+        .val(localFormat)
+        .change();
+      $(`#${id.replace("_date_", "_dt_")}`)
+        .val(date)
+        .change();
     } else {
       $(`#${id.replace("_date_", "_txt_")}`).val("");
       $(`#${id.replace("_date_", "_dt_")}`).val("");
@@ -2549,9 +2795,13 @@ function getAndSetReviewPageData() {
     $("#review-page-content-container").html("");
 
     // Find all form pages except the review page
-    const formPages = $('.dform_page[data-active="true"]').not(
+    let formPages = $('.dform_page[data-active="true"]').not(
       "#dform_page_page_review"
     );
+    // Picking up all pages encase form rules rehide them on reload
+    if (KDF.kdf().form.complete === "Y") {
+      formPages = $(".dform_page").not("#dform_page_page_review");
+    }
 
     formPages.each(function (i) {
       // Get the page number of the current form page
@@ -2562,7 +2812,9 @@ function getAndSetReviewPageData() {
         // Extract the page name from the element's ID
         const pageId = $(formPages[i]).attr("id");
         const pageName = pageId.split("dform_page_")[1];
-        const contentDivId = "review-page-content--" + pageName;
+
+        KDF.showPage(pageName);
+        const contentDivId = `review-page-content--${pageName}`;
 
         // Create a container for the review page content
         $("#review-page-content-container").append(
@@ -2614,8 +2866,11 @@ function getAndSetReviewPageData() {
               return parentElement.find(`.${classSelector} legend`).text();
             }
           }
-
-          if (fieldType === "radio") {
+          if (fieldType === "select") {
+            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+            fieldValue =
+              KDF.kdf()?.form?.data?.[fieldName] ?? KDF.getVal(fieldName);
+          } else if (fieldType === "radio") {
             fieldLabel = getLegendText("radiogroup");
             fieldValue = KDF.getVal(fieldName);
           } else if (fieldType === "multicheckbox") {
@@ -2643,16 +2898,8 @@ function getAndSetReviewPageData() {
               fieldLabel = "Address";
               fieldValue = getValueFromAlias(pageId, "fullAddress");
             } else if (
-              // fieldClass.indexOf("property") !== -1 ||
-              // fieldClass.indexOf("street-name") !== -1 ||
-              // fieldClass.indexOf("city") !== -1 ||
-              // fieldClass.indexOf("postcode") !== -1
               /\b(property|street-name|city|postcode)\b/.test(fieldClass)
             ) {
-              console.log(
-                $(`#dform_widget_label_${fieldName}`).text(),
-                fieldClass
-              );
               fieldLabel = false;
               fieldValue = "";
             } else {
@@ -2664,7 +2911,11 @@ function getAndSetReviewPageData() {
           // Check if the field has a label
           if (fieldLabel) {
             // Set a default value for optional fields that are visible but not answered
-            if (fieldValue === "") {
+            if (
+              fieldValue === "" ||
+              fieldValue === null ||
+              fieldValue === undefined
+            ) {
               if (fieldType === "file") {
                 fieldValue = "Not uploaded";
               } else {
@@ -2771,22 +3022,6 @@ function showContactTeamPanel() {
 }
 
 // --- CHECK CASE PROGRESS -------------------------------------------------- \\
-
-function checkIsFormComplete(fields) {
-  let isComplete = true;
-  fields.map((field) => {
-    if (
-      KDF.getVal(field) === "" ||
-      KDF.getVal(field) === null ||
-      KDF.getVal(field) === undefined ||
-      KDF.getVal(field) === "Pending" ||
-      KDF.getVal(field) === "In progress"
-    ) {
-      isComplete = false;
-    }
-  });
-  return isComplete;
-}
 
 function closeCase() {
   const noteDetails = KDF.getVal("txta_closure_details")
@@ -4090,7 +4325,7 @@ function updateWidgetText(name, label, helpMessage, validation) {
   }
 }
 
-// --- UPDATE LABEL TEXT ---------------------------------------------------- \\
+// --- UPDATE LABEL TEXT ---------------------------------------------------- \\update labe
 
 function updateMultipleLabels(fields) {
   fields.map((field) => {
