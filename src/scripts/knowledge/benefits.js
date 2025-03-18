@@ -425,8 +425,8 @@ const energySupport = new ContentB(
 
         <li>it is often cheaper to get both gas and electricity from the same supplier and there is usually a discount for paying by Direct Debit</li>
         <li>many suppliers offer discounted schemes for older people or people claiming benefit</li>
-        <li>some suppliers, including <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a>  or <a href="https://www.edfenergytrust.org.uk/" target="_blank">https://www.edfenergytrust.org.uk/</a>, offer financial grants to customers in need</li> 
-
+        <li>some suppliers, including <a href="https://britishgasenergytrust.org.uk/" target="_blank">https://britishgasenergytrust.org.uk/</a> 
+        
 <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -439,6 +439,11 @@ const energySupport = new ContentB(
 >
     Send link to review further information
 </button>
+
+
+        or <a href="https://www.edfenergytrust.org.uk/" target="_blank">https://www.edfenergytrust.org.uk/</a>, offer financial grants to customers in need</li> 
+
+
 
 <button
     type="button"
@@ -641,12 +646,10 @@ const findFoodSupportAndResources = new ContentB(
   "Access food support and resources in Sheffield, including affordable groceries, meal programs, and cost-saving guides.",
   `
 
- <details class="accordion">
-  <summary class="accordion-header">
+
     <h3>Accessible support for saving money and reducing food waste, here a few websites to offer customers.</h3>
-    <div class="accordion-icon"></div>
-  </summary>
-  <div class="accordion-content">
+    
+
    <p>
       Accessible support for saving money and reducing food waste, here a few websites to offer customers.
     </p>
@@ -731,15 +734,6 @@ const findFoodSupportAndResources = new ContentB(
 </button>
 
     </ul>
-
-
-  </section>
-  </div>
-  </details>
-
-
-
-
  
   `,
   { buttonLabel: "", formName: "" },
