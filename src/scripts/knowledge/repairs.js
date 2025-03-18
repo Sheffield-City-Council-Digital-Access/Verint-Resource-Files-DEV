@@ -562,9 +562,36 @@ const electricalandHeating = new ContentR(
   <p>For electrical fittings, additional sockets, etc., email 
   <a href="mailto:ElectricalSheffield@Sheffield.go.uk" class="email">ElectricalSheffield@Sheffield.go.uk</a>.</p>
   
+<button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Refer customer to the service"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/refer_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&txt_emailservice=ElectricalSheffield@Sheffield.go.uk\`
+            "
+      >
+        Refer customer to the service
+      </button>
+
+
   <h3>Heating Items</h3>
   <p>For extra radiators, email 
   <a href="mailto:GasSheffield@sheffield.gov.uk" class="email">GasSheffield@sheffield.gov.uk</a>.</p>
+
+  <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Refer customer to the service"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/refer_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&txt_emailservice=GasSheffield@sheffield.gov.uk\`
+            "
+      >
+        Refer customer to the service
+      </button>
 
   `,
   { buttonLabel: "", formName: "" },
@@ -1082,7 +1109,7 @@ const gasandDomesticSystems   = new ContentR(
       </tr>
   </table>
   
-<img class="knowledge-img" src="https://sheffield-city-council-digital-access.github.io/Verint-Resource-Files-DEV/src/images/Repairs/meter-and-credit.jpg" alt="A concise and descriptive description of the image" loading="lazy" referrerpolicy="no-referrer" />
+<img class="knowledge-img" src="https://sheffield-city-council-digital-access.github.io/Verint-Resource-Files-DEV/src/images/Repairs/meter-and-credit.jpg" alt="Check the meter is switched on and ensure there is a credit on the meter" loading="lazy" referrerpolicy="no-referrer" />
 
 
   <p>The fault code has been missing a lot lately from the job notes as asked for in the prompt 
@@ -1105,7 +1132,11 @@ const gasandDomesticSystems   = new ContentR(
   and hold the reset button on the boiler for 3 seconds, this button is a flame with an X 
   through it see pic below.</p>
 
-  IMAGE
+  <img class="knowledge-img" src="https://sheffield-city-council-digital-access.github.io/Verint-Resource-Files-DEV/src/images/Repairs/heating-repair.png" alt="If this fails and it still goes to F28 (not F29) then it is a genuine heating repair:" loading="lazy" referrerpolicy="no-referrer" />
+  
+  
+
+
 
   <p>If this fails and it still goes to F28 (not F29), then it is a genuine heating repair:</p>
 
