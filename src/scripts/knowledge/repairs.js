@@ -2263,7 +2263,8 @@ const reroofingProgrammeWarranty  = new ContentR(
   <p>In OHMS, the Re-roofing work is indicated by the <strong>RW</strong> code. The Property Notes will show 
   the warranty dates and numbers to contact.</p>
 
-  IMAGE
+  <img class="knowledge-img" src="https://sheffield-city-council-digital-access.github.io/Verint-Resource-Files-DEV/src/images/Repairs/re-roofing-programme-warranty.jpg" alt="OHMS code and job history can be seen on Ohms" loading="lazy" referrerpolicy="no-referrer" />
+
 
   <p>Over the next 5 years from 2025 to 2030, the Asset Management Team will manage a citywide re-roofing 
   programme.</p>
