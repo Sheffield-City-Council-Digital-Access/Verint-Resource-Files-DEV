@@ -257,7 +257,7 @@ const bookingARegistrarWedding = new ContentBDMaC(
     <h3>You must not:</h3>
     <ul>
         <li>Already be a civil partner or married.</li>
-        <li>Be closely related (the Act gives details of prohibited relationships) <a href="https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents</a>.<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Legislation%20Contents'"> Send Link </button> </li>
+        <li>Be closely related (the Act gives details of prohibited relationships) <a href="https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents</a>. </li>
 
 <button
     type="button"
@@ -274,18 +274,6 @@ const bookingARegistrarWedding = new ContentBDMaC(
 
     </ul>
 
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Legislation%20Contents\`
-    "
->
-    Send link to review further information
-</button>
 
     <h3>Non-Refundable Booking Fees</h3>
     <p>When you have completed your ceremony booking you will be required to make payment, this is to reserve the date and time selected, please note this is a non-refundable fee.</p>
@@ -551,19 +539,6 @@ const licensedWeddingVenues = new ContentBDMaC(
 
     <p>You can provisionally book a registrar up to 2 years ahead of the ceremony but it's your responsibility to contact the venue to check their availability.</p>
 
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Final%20ceremony%20payment\`
-    "
->
-    Send link to review further information
-</button>
-
     <h3>Fees</h3>
     <ul>
         <li>Monday to Friday: £482.00</li>
@@ -599,6 +574,19 @@ const reRegisterABirth = new ContentBDMaC(
   "Make an appointment to re-register a birth.",
   `
   <p> Takes to <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-birth">https://www.sheffield.gov.uk/births-deaths-marriages/register-birth </a></p>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Make%20an%20appointment%20to%20re-register%20a%20birth\`
+    "
+>
+    Send link to review further information
+</button>
     `,
   { buttonLabel: "", formName: "" },
   { typeKey: "register_office_information_requested" },
@@ -616,7 +604,7 @@ const registerABirthAndDeath = new ContentBDMaC(
   "Register a Birth and Death",
   "Register a birth and death",
   `
-    <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p> 	<br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20or%20reregister%20a%20birth'"> Send Link </button>
+    <p> <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-birth </a></p>
 
 <button
     type="button"
@@ -631,7 +619,7 @@ const registerABirthAndDeath = new ContentBDMaC(
     Send link to review further information
 </button>    
 
-  <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p>
+  <p>  <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">https://www.sheffield.gov.uk/births-deaths-marriages/register-death </a></p>
 
 
 <button
@@ -744,7 +732,7 @@ const registerAStillbirth = new ContentBDMaC(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20a%20stillbirth\`
+        }interactionid=\${KDF.getParams().interactaionid}&sel_service=Register%20a%20stillbirth\`
     "
 >
     Send link to review further information
