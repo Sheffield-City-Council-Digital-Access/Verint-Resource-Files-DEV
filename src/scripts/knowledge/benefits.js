@@ -1733,6 +1733,7 @@ const supportForBusinesses = new ContentB(
                 <p>
                     Guides to help you think through ways to save energy, identify any risks 
                     and ensure you avoid them.
+                </p>    
                     <p>
                     Guide for saving energy in your business:
                     <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-in-your-business.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-in-your-business.pdf</a> 
@@ -1751,10 +1752,10 @@ const supportForBusinesses = new ContentB(
     Send link to review further information
 </button>
 
-                    <p>
+                <p>
                     Guide for saving energy in your food business:
                     <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf</a>
-                    </p>
+
                 </p>
 
 <button
@@ -1783,6 +1784,7 @@ const supportForBusinesses = new ContentB(
             <p>
                     These documents explain in various languages the support we have for 
                     businesses to help them manage their cost of living. 
+                </p>
                     <p>
                     Arabic:
                     <a href="https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2023-03/cost_of_living_business_resources_-_arabic_1.pdf</a> 
@@ -1965,9 +1967,8 @@ const supportForBusinesses = new ContentB(
 
             </div>
         </details>
-
-</details>           
-
+    </div>
+  </details>          
 
  <details class="accordion">
     <summary class="accordion-header">
@@ -2044,10 +2045,7 @@ const supportForBusinesses = new ContentB(
               <p>
               Please note that you must pay as billed while your application is being considered. If you are unable to pay, please contact us. 
               If you have received any notices from us regarding non-payment, please contact us immediately so that we can come to some form of payment arrangement.<br>
-              
-
-              </p>
-      
+              </p>   
 <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -2097,6 +2095,7 @@ const supportForBusinesses = new ContentB(
               We may also ask you to provide any additional information that supports your claim. We will write to you and ask you to provide this if we need it. 
               Please remember to provide as much proof as possible with your application. Your application will only be considered when we receive a fully completed application, 
               and you have provided any proof we ask for. Please contact us if you want to know more about this relief.
+              </p>
 
  <button
     type="button"
@@ -2410,6 +2409,7 @@ const supportForBusinesses = new ContentB(
       : ""
   }interactionid=${KDF.getParams().interactionid}">Send link</a>
               </p>
+              
               <h4>Eligible businesses</h4>
               <p>
                 The Government guidelines state that to be eligible for the discount the premises must be:

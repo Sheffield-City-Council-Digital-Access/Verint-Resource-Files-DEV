@@ -1,67 +1,66 @@
 class CoreBDMaC {
-    constructor(id, name, description) {
-        this.id = id;
-        this.name = name;
-        this.description = description;
-    }
+  constructor(id, name, description) {
+    this.id = id;
+    this.name = name;
+    this.description = description;
+  }
 }
 
 class ServiceBDMaC extends CoreBDMaC {
-    constructor(id, name, description, subjects = []) {
-        super(id, name, description);
-        this.subjects = subjects;
-    }
+  constructor(id, name, description, subjects = []) {
+    super(id, name, description);
+    this.subjects = subjects;
+  }
 }
 
 class MenuBDMaC extends CoreBDMaC {
-    constructor(id, name, description, topics = []) {
-        super(id, name, description);
-        this.topics = topics;
-    }
+  constructor(id, name, description, topics = []) {
+    super(id, name, description);
+    this.topics = topics;
+  }
 }
 
 class ContentBDMaC extends CoreBDMaC {
-    constructor(
-        id,
-        name,
-        description,
-        content,
-        process,
-        transfer,
-        finish,
-        meta,
-        lastModified
-    ) {
-        super(id, name, description);
-        this.content = content;
-        this.process = process;
-        this.transfer = transfer;
-        this.finish = finish;
-        this.meta = meta;
-        this.lastModified = lastModified;
-    }
+  constructor(
+    id,
+    name,
+    description,
+    content,
+    process,
+    transfer,
+    finish,
+    meta,
+    lastModified
+  ) {
+    super(id, name, description);
+    this.content = content;
+    this.process = process;
+    this.transfer = transfer;
+    this.finish = finish;
+    this.meta = meta;
+    this.lastModified = lastModified;
+  }
 }
 
 class FormBDMaC extends CoreBDMaC {
-    constructor(id, name, description, formName, meta, lastModified) {
-        super(id, name, description);
-        this.formName = formName;
-        this.meta = meta;
-        this.lastModified = lastModified;
-    }
+  constructor(id, name, description, formName, meta, lastModified) {
+    super(id, name, description);
+    this.formName = formName;
+    this.meta = meta;
+    this.lastModified = lastModified;
+  }
 }
 
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-
 // #region Births, Deaths, Marriages and Citizenship
 
 const bookNoticeCivilPartnership = new ContentBDMaC(
-    "bookNoticeCivilPartnership",
-    "Book a Notice of Civil Partnership Appointment",
-    "Learn how to book a Notice of Civil Partnership appointment, including requirements, fees, and necessary documentation.",
-    `
+  "bookNoticeCivilPartnership",
+  "Book a Notice of Civil Partnership Appointment",
+  "Learn how to book a Notice of Civil Partnership appointment, including requirements, fees, and necessary documentation.",
+  `
     <p>Giving notice means making a declaration that you are both free enter into a civil partnership and fulfil other requirements prescribed by law.</p>
     <p>You need to ensure that you have given notice at least 28 days before the date. </p>
     <p>If you are giving notice for a venue in the Sheffield district, please have your booking ID ready (this was provided in your email sent when booking the venue). Please contact our ceremonies team if you do not have this and they will email you the booking ID directly <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a>.</p>
@@ -121,22 +120,33 @@ const bookNoticeCivilPartnership = new ContentBDMaC(
     <p>Please arrive 5 to 10 minutes before your appointment. If you arrive late you may need to rebook.</p>
  
     `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths", "Certificates", "Wedding", "Ceremony", "Partnership", "Civil"],
-    },
-    { date: "11/11/2024", name: "Joseph Coupland" }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "register_office_information_requested" },
+  { typeKey: "register_office_information_provided" },
+  {
+    type: "",
+    keywords: [],
+    categories: [
+      "Registrars",
+      "Registry Office",
+      "Register Office",
+      "Births",
+      "Deaths",
+      "Certificates",
+      "Wedding",
+      "Ceremony",
+      "Partnership",
+      "Civil",
+    ],
+  },
+  { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 const bookNoticeOfMarriageApp = new ContentBDMaC(
-    "bookNoticeOfMarriageApp",
-    "Book a Notice of Marriage Appointment",
-    "Learn how to book a Notice of Marriage appointment, including requirements, fees, and necessary documentation.",
-    `
+  "bookNoticeOfMarriageApp",
+  "Book a Notice of Marriage Appointment",
+  "Learn how to book a Notice of Marriage appointment, including requirements, fees, and necessary documentation.",
+  `
     <p>Giving notice means making a declaration that you are both free to marry and fulfil other requirements prescribed by law.</p>
 
     <ul>
@@ -197,22 +207,28 @@ const bookNoticeOfMarriageApp = new ContentBDMaC(
     <p>If you do not attend with the correct documents or without an interpreter when one is needed, you may not be able to give your notice of marriage and you will need to rebook and attend another day.</p>
     <p>Please arrive 5 to 10 minutes before your appointment. If you arrive late you may need to rebook.</p>
      `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["Registrars", "Registry Office", "Register Office", "Wedding", "Ceremony",],
-    },
-    { date: "11/11/2024", name: "Joseph Coupland" }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "register_office_information_requested" },
+  { typeKey: "register_office_information_provided" },
+  {
+    type: "",
+    keywords: [],
+    categories: [
+      "Registrars",
+      "Registry Office",
+      "Register Office",
+      "Wedding",
+      "Ceremony",
+    ],
+  },
+  { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 const bookingARegistrarWedding = new ContentBDMaC(
-    "bookingARegistrarWedding",
-    "Booking a Registrar, Wedding or Civil Partnership in Sheffield",
-    "Learn how to book a registrar, wedding, or civil partnership ceremony in Sheffield, including venues, fees, and additional services.",
-    `
+  "bookingARegistrarWedding",
+  "Booking a Registrar, Wedding or Civil Partnership in Sheffield",
+  "Learn how to book a registrar, wedding, or civil partnership ceremony in Sheffield, including venues, fees, and additional services.",
+  `
     <h3>Ceremony Bookings for Weddings or Civil Partnerships</h3>
     <p>Our integrated system allows you to choose and book a ceremony within 15 minutes. Once you have entered the process below the system will give you options to choose a venue either in the Town Hall or at an external licensed venue in the Sheffield district only (please read below for terms to book a venue). The choice will be given to for a Wedding or Civil Partnership during the booking process.</p>
     <p>Once you have booked you will be sent an email with your booking ID, this is your link to all payments for your ceremony.</p>
@@ -241,8 +257,7 @@ const bookingARegistrarWedding = new ContentBDMaC(
     <h3>You must not:</h3>
     <ul>
         <li>Already be a civil partner or married.</li>
-        <li>Be closely related (the Act gives details of prohibited relationships) <a href="https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents</a>.<button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Legislation%20Contents'"> Send Link </button> </li>
-
+        <li>Be closely related (the Act gives details of prohibited relationships) <a href="https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents" target="_blank" rel="noopener noreferrer">https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/76/contents</a>. </li>
 <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -257,6 +272,19 @@ const bookingARegistrarWedding = new ContentBDMaC(
 </button>
 
     </ul>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Legislation%20Contents\`
+    "
+>
+    Send link to review further information
+</button>
 
     <h3>Non-Refundable Booking Fees</h3>
     <p>When you have completed your ceremony booking you will be required to make payment, this is to reserve the date and time selected, please note this is a non-refundable fee.</p>
@@ -351,22 +379,28 @@ const bookingARegistrarWedding = new ContentBDMaC(
     <p>Ceremonies conducted in religious venues do not receive the first certificate free, please visit our final payment section for details.</p>
 
   `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["Registrars", "Registry Office", "Register Office", "Wedding", "Ceremony",],
-    },
-    { date: "11/11/2024", name: "Joseph Coupland" }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "register_office_information_requested" },
+  { typeKey: "register_office_information_provided" },
+  {
+    type: "",
+    keywords: [],
+    categories: [
+      "Registrars",
+      "Registry Office",
+      "Register Office",
+      "Wedding",
+      "Ceremony",
+    ],
+  },
+  { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 const copyCertificates = new ContentBDMaC(
-    "copyCertificates",
-    "Copy Certificates ",
-    "Request copy certificates for births, marriages, civil partnerships, or deaths registered in Sheffield, with standard or urgent processing options.",
-    `
+  "copyCertificates",
+  "Copy Certificates ",
+  "Request copy certificates for births, marriages, civil partnerships, or deaths registered in Sheffield, with standard or urgent processing options.",
+  `
     <p>We can only take request copies of certificates for registrations that took place in Sheffield.</p>
     <p>You can request copy certificates via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates</a>.
 </p>
@@ -397,22 +431,29 @@ const copyCertificates = new ContentBDMaC(
     <p>These cost £38.50 including the cost of first-class postage, dispatched within 24 hours.</p>
  
     `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths", "Certificates"],
-    },
-    { date: "11/11/2024", name: "Joseph Coupland" }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "register_office_information_requested" },
+  { typeKey: "register_office_information_provided" },
+  {
+    type: "",
+    keywords: [],
+    categories: [
+      "Registrars",
+      "Registry Office",
+      "Register Office",
+      "Births",
+      "Deaths",
+      "Certificates",
+    ],
+  },
+  { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 const finalPayment = new ContentBDMaC(
-    "finalPayment",
-    "Final Payment",
-    "Complete the final payment for your Sheffield ceremony, including certificate details and deadlines, using your booking ID",
-    `
+  "finalPayment",
+  "Final Payment",
+  "Complete the final payment for your Sheffield ceremony, including certificate details and deadlines, using your booking ID",
+  `
     <h3>Final Ceremony Payment</h3>
     <p>The final step to your ceremony is to make the final payment, you can make a final payment for your ceremony by using the Booking ID.  This booking ID was given when booking the ceremony after 29th of October 2024.</p>
     <p>If you booked your ceremony before 29th of October 2024 and do not have this, please contact our ceremonies team for them to email you the details, <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a>.</p>
@@ -457,22 +498,22 @@ const finalPayment = new ContentBDMaC(
     <p>Please send us the details to <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a></p>
  
   `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["", ""],
-    },
-    { date: "11/11/2024", name: "Joseph Coupland" }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "register_office_information_requested" },
+  { typeKey: "register_office_information_provided" },
+  {
+    type: "",
+    keywords: [],
+    categories: ["", ""],
+  },
+  { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 const licensedWeddingVenues = new ContentBDMaC(
-    "licensedWeddingVenues",
-    "Licensed Wedding Venues in Sheffield",
-    "Explore licensed wedding venues in Sheffield, including booking a registrar, fees, and certificate options.",
-    `
+  "licensedWeddingVenues",
+  "Licensed Wedding Venues in Sheffield",
+  "Explore licensed wedding venues in Sheffield, including booking a registrar, fees, and certificate options.",
+  `
     <p>You you can find information about licensed wedding venues in Sheffield at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/licensed-wedding-venues</a> </p>
 
 <button
@@ -508,7 +549,6 @@ const licensedWeddingVenues = new ContentBDMaC(
 </button>
 
     <p>You can provisionally book a registrar up to 2 years ahead of the ceremony but it's your responsibility to contact the venue to check their availability.</p>
-
 <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -521,7 +561,6 @@ const licensedWeddingVenues = new ContentBDMaC(
 >
     Send link to review further information
 </button>
-
     <h3>Fees</h3>
     <ul>
         <li>Monday to Friday: £482.00</li>
@@ -534,48 +573,51 @@ const licensedWeddingVenues = new ContentBDMaC(
     <p>Marriage and civil partnership certificates cost £12.50 on the day of the ceremony. Copies of certificates can be bought at an extra charge."</p>
  
     `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["Registrars", "Registry Office", "Register Office", "Wedding", "Ceremony"],
-    },
-    { date: "11/11/2024", name: "Joseph Coupland" }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "register_office_information_requested" },
+  { typeKey: "register_office_information_provided" },
+  {
+    type: "",
+    keywords: [],
+    categories: [
+      "Registrars",
+      "Registry Office",
+      "Register Office",
+      "Wedding",
+      "Ceremony",
+    ],
+  },
+  { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 const reRegisterABirth = new ContentBDMaC(
-    "reRegisterABirth",
-    "Make an appointment to re-register a birth",
-    "Make an appointment to re-register a birth.",
-    `
+  "reRegisterABirth",
+  "Make an appointment to re-register a birth",
+  "Make an appointment to re-register a birth.",
+  `
   <p> Takes to <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-birth">https://www.sheffield.gov.uk/births-deaths-marriages/register-birth </a></p>
-
-<button
+  <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
     aria-label="For further information send link"
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20or%20reregister%20a%20birth\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Make%20an%20appointment%20to%20re-register%20a%20birth\`
     "
 >
     Send link to review further information
 </button>
-
-    
     `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: ['register', 'birth', 'rgister', 'burth'],
-        categories: ["Registrars", "Registry Office", "Register Office", "Births"],
-    },
-    { date: "04/12/2024", name: "Andy Walker" }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "register_office_information_requested" },
+  { typeKey: "register_office_information_provided" },
+  {
+    type: "",
+    keywords: ["register", "birth", "rgister", "burth"],
+    categories: ["Registrars", "Registry Office", "Register Office", "Births"],
+  },
+  { date: "04/12/2024", name: "Andy Walker" }
 );
 
 const registerABirthAndDeath = new ContentBDMaC(
@@ -583,7 +625,7 @@ const registerABirthAndDeath = new ContentBDMaC(
     "Register a Birth and Death",
     "Register a birth and death",
     `
-    <p>  <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">https://www.sheffield.gov.uk/births-deaths-marriages/register-death </a></p> 	<br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20or%20reregister%20a%20birth'"> Send Link </button>
+    <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p> 	<br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20or%20reregister%20a%20birth'"> Send Link </button>
 
 <button
     type="button"
@@ -600,7 +642,6 @@ const registerABirthAndDeath = new ContentBDMaC(
 
   <p>  <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">https://www.sheffield.gov.uk/births-deaths-marriages/register-death </a></p>
 
-
 <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -615,22 +656,28 @@ const registerABirthAndDeath = new ContentBDMaC(
 </button>
 
   `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths"],
-    },
-    { date: "16/10/2024", name: "Joe Nixon" }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "register_office_information_requested" },
+  { typeKey: "register_office_information_provided" },
+  {
+    type: "",
+    keywords: [],
+    categories: [
+      "Registrars",
+      "Registry Office",
+      "Register Office",
+      "Births",
+      "Deaths",
+    ],
+  },
+  { date: "16/10/2024", name: "Joe Nixon" }
 );
 
 const registerADeath = new ContentBDMaC(
-    "registerADeath",
-    "Register a Death",
-    "Learn how to register a death in Sheffield, including requirements, process, and associated costs",
-    `
+  "registerADeath",
+  "Register a Death",
+  "Learn how to register a death in Sheffield, including requirements, process, and associated costs",
+  `
     <p>You are legally required to register a death within 5 days from when the Coroner or Medical Examiner has passed the relevant paperwork to the Register Office. The registration should take place in the district where the person died.
     </p>
     <h3>Changes to the death certification process</h3>
@@ -679,22 +726,22 @@ const registerADeath = new ContentBDMaC(
         <li>Copy certificates may be obtained at a later date for the standard fee of £13.50 each.</li>
     </ul>
   `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["", ""],
-    },
-    { date: "11/11/2024", name: "Joseph Coupland" }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "register_office_information_requested" },
+  { typeKey: "register_office_information_provided" },
+  {
+    type: "",
+    keywords: [],
+    categories: ["", ""],
+  },
+  { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 const registerAStillbirth = new ContentBDMaC(
-    "registerAStillbirth",
-    "Register a Stillbirth",
-    "Register a stillbirth",
-    `
+  "registerAStillbirth",
+  "Register a Stillbirth",
+  "Register a stillbirth",
+  `
   <p> Takes to <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-stillbirth">https://www.sheffield.gov.uk/births-deaths-marriages/register-stillbirth</a> 	
 </p> 
 
@@ -712,56 +759,71 @@ const registerAStillbirth = new ContentBDMaC(
 </button>
 
   `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths"],
-    },
-    { date: "11/11/2024", name: "Joseph Coupland" }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "register_office_information_requested" },
+  { typeKey: "register_office_information_provided" },
+  {
+    type: "",
+    keywords: [],
+    categories: [
+      "Registrars",
+      "Registry Office",
+      "Register Office",
+      "Births",
+      "Deaths",
+    ],
+  },
+  { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 const rescheduleAnAppointment = new ContentBDMaC(
-    "rescheduleAnAppointment",
-    "Reschedule an Appointment",
-    "Find out how to reschedule your appointment.",
-    `
+  "rescheduleAnAppointment",
+  "Reschedule an Appointment",
+  "Find out how to reschedule your appointment.",
+  `
   <p>To reschedule an appointment email: <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a></p>
  
   `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "register_office_information_requested" },
-    { typeKey: "register_office_information_provided" },
-    {
-        type: "",
-        keywords: [],
-        categories: ["Registrars", "Registry Office", "Register Office", "Births", "Deaths", "Certificates", "Wedding", "Ceremony",],
-    },
-    { date: "11/11/2024", name: "Joseph Coupland" }
+  { buttonLabel: "", formName: "" },
+  { typeKey: "register_office_information_requested" },
+  { typeKey: "register_office_information_provided" },
+  {
+    type: "",
+    keywords: [],
+    categories: [
+      "Registrars",
+      "Registry Office",
+      "Register Office",
+      "Births",
+      "Deaths",
+      "Certificates",
+      "Wedding",
+      "Ceremony",
+    ],
+  },
+  { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const birthsDeathsMarriagesAndCitizenship = new ServiceBDMaC(
-    "birthsDeathsMarriagesAndCitizenship",
-    "Births, Deaths, Marriages and Citizenship",
-    `Register Office, naming ceremonies, burials and memorials, civil partnerships, citizenship ceremonies, order copies of certificates…`,
-    [ 
-        bookNoticeCivilPartnership,
-        bookNoticeOfMarriageApp,
-        bookingARegistrarWedding,
-        copyCertificates,
-        finalPayment,
-        licensedWeddingVenues,
-        reRegisterABirth, 
-        registerABirthAndDeath,
-        registerADeath,
-        registerAStillbirth,
-        rescheduleAnAppointment
-    ]
+  "birthsDeathsMarriagesAndCitizenship",
+  "Births, Deaths, Marriages and Citizenship",
+  `Register Office, naming ceremonies, burials and memorials, civil partnerships, citizenship ceremonies, order copies of certificates…`,
+  [
+    bookNoticeCivilPartnership,
+    bookNoticeOfMarriageApp,
+    bookingARegistrarWedding,
+    copyCertificates,
+    finalPayment,
+    licensedWeddingVenues,
+    reRegisterABirth,
+    registerABirthAndDeath,
+    registerADeath,
+    registerAStillbirth,
+    rescheduleAnAppointment,
+  ]
 );
 
 // #endregion Births, Deaths, Marriages and Citizenship
