@@ -1761,6 +1761,7 @@ const supportForBusinesses = new ContentB(
                 <p>
                     Guide for saving energy in your food business:
                     <a href="https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf" target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-11/saving-energy-for-food-businesses-1.pdf</a>
+
                 </p>
 
 <button
@@ -1784,7 +1785,9 @@ const supportForBusinesses = new ContentB(
                 Resources in translation
             </summary>
             <div class="details-accordion-content">
-                <p>
+               
+
+            <p>
                     These documents explain in various languages the support we have for 
                     businesses to help them manage their cost of living. 
                 </p>
@@ -1973,7 +1976,6 @@ const supportForBusinesses = new ContentB(
     </div>
   </details>          
 
-
  <details class="accordion">
     <summary class="accordion-header">
         <h3>Business rate relief</h3>
@@ -2049,8 +2051,7 @@ const supportForBusinesses = new ContentB(
               <p>
               Please note that you must pay as billed while your application is being considered. If you are unable to pay, please contact us. 
               If you have received any notices from us regarding non-payment, please contact us immediately so that we can come to some form of payment arrangement.<br>
-              </p>
-      
+              </p>   
 <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
