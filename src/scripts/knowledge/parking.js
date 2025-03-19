@@ -1248,7 +1248,11 @@ const residentsCarer = new ContentP(
 
      
   `,
-  { buttonLabel: "Parking Permit Enquiry", formName: "parking_permit_enquiry" },
+  { 
+    buttonLabel: "Parking Permit Enquiry", 
+    formName: "parking_permit_enquiry",
+
+   },
   { typeKey: "parking_permit_transferred_to_service" },
   { typeKey: "parking_permit_information_provided" },
   {
@@ -1444,7 +1448,10 @@ const greenParkingPermit = new ContentP(
 </button>
      
  	`,
-  { buttonLabel: "Parking Permit Enquiry", formName: "parking_permit_enquiry" },
+  { 
+    buttonLabel: "Parking Permit Enquiry", 
+    formName: "parking_permit_enquiry",
+   },
   { typeKey: "parking_permit_transferred_to_service" },
   { typeKey: "parking_permit_information_provided" },
   {
@@ -1608,7 +1615,10 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
 
 
 	`,
-  { buttonLabel: "Parking Permit Enquiry", formName: "parking_permit_enquiry" },
+  { 
+    buttonLabel: "Parking Permit Enquiry", 
+    formName: "parking_permit_enquiry",
+   },
   { typeKey: "parking_permit_transferred_to_service" },
   { typeKey: "parking_permit_information_provided" },
   {
@@ -1718,7 +1728,10 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
 </button>
 
 	`,
-  { buttonLabel: "Parking Permit Enquiry", formName: "parking_permit_enquiry" },
+  { 
+    buttonLabel: "Parking Permit Enquiry", 
+    formName: "parking_permit_enquiry",
+   },
   { typeKey: "parking_permit_transferred_to_service" },
   { typeKey: "parking_permit_information_provided" },
   {
@@ -1845,7 +1858,10 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
     Send link to review further information
 </button>	
 	`,
-  { buttonLabel: "Parking Permit Enquiry", formName: "parking_permit_enquiry" },
+  { 
+    buttonLabel: "Parking Permit Enquiry", 
+    formName: "parking_permit_enquiry",
+   },
   { typeKey: "parking_permit_transferred_to_service" },
   { typeKey: "parking_permit_information_provided" },
   {
@@ -2017,7 +2033,10 @@ Get in touch with us for any other problems regarding parking permit application
 
 
 	`,
-  { buttonLabel: "Parking Permit Enquiry", formName: "parking_permit_enquiry" },
+  { 
+    buttonLabel: "Parking Permit Enquiry", 
+    formName: "parking_permit_enquiry",
+   },
   { typeKey: "parking_permit_transferred_to_service" },
   { typeKey: "parking_permit_information_provided" },
   {
@@ -2075,7 +2094,10 @@ const staffPermit = new ContentP(
         Send link to review further information
       </button>
   `,
-  { buttonLabel: "Parking Permit Enquiry", formName: "parking_permit_enquiry" },
+  {
+     buttonLabel: "Parking Permit Enquiry", 
+     formName: "parking_permit_enquiry",
+     },
   { typeKey: "parking_permit_transferred_to_service" },
   { typeKey: "parking_permit_information_provided" },
   {
@@ -2227,7 +2249,10 @@ const tradePermit = new ContentP(
       </button>
 
 	`,
-  { buttonLabel: "Parking Permit Enquiry", formName: "parking_permit_enquiry" },
+  { 
+    buttonLabel: "Parking Permit Enquiry", 
+    formName: "parking_permit_enquiry",
+   },
   { typeKey: "parking_permit_transferred_to_service" },
   { typeKey: "parking_permit_information_provided" },
   {
@@ -2305,7 +2330,10 @@ const utilityPermit = new ContentP(
             "
       >
 	`,
-  { buttonLabel: "Parking Permit Enquiry", formName: "parking_permit_enquiry" },
+  { 
+    buttonLabel: "Parking Permit Enquiry", 
+    formName: "parking_permit_enquiry",
+   },
   { typeKey: "parking_permit_transferred_to_service" },
   { typeKey: "parking_permit_information_provided" },
   {
@@ -2460,7 +2488,10 @@ Contractors needing more time to work at a property will need to apply for trade
         Send link to review further information
       </button>
 	`,
-  { buttonLabel: "Parking Permit Enquiry", formName: "parking_permit_enquiry" },
+  {
+     buttonLabel: "Parking Permit Enquiry", 
+     formName: "parking_permit_enquiry",
+     },
   { typeKey: "parking_permit_transferred_to_service" },
   { typeKey: "parking_permit_information_provided" },
   {
