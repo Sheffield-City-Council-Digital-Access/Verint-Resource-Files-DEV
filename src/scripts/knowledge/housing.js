@@ -6321,6 +6321,10 @@ const permissions = new ContentH(
     <li>Removing internal walls</li>
     <li>Insulation (Walls & Lofts)</li>
     <li>Conservatories (considered on an individual basis)</li>
+    <li>Driveways</li>
+    <li>Hardstandings</li>
+    <li>CCTV</li>
+    <li>Laminate flooring</li>
   </ul>
   <p>
     However, the following are highly unlikely to be granted due to extra maintenance costs and potential structural problems:
