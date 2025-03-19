@@ -6811,7 +6811,7 @@ const tenancyConditions = new ContentH(
         <details class="details-accordion">
             <summary>Right to Buy</summary>
             <div class="details-accordion-content">
-                <p>If you have been a council tenant for at least two years (or five years if you became a tenant after 18th January 2005) you will probably have a right to buy your home. You can get more details from the Council's home ownership team.</p>
+                <p>If you have been a council or housing association tenant for at least three years (or five years if you became a tenant after 18th January 2005) you will probably have a right to buy your home. You can get more details from the Council's home ownership team.</p>
             </div>
         </details>
 
