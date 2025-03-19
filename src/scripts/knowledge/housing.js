@@ -6219,7 +6219,7 @@ const fobsandKeys = new ContentH(
     </summary>
     <div class="accordion-content">
       <p>
-      Please note: Howden House only deals with Rehousing enquiries and will not be able to help with fobs or keys. 
+      Please note: Howden House will email the relevant area with the fob token code so they can put it into the system.
       List of Area Offices:  <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices "target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
       <br>
         <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Neighbourhood%20offices'"> Send Link </button>
@@ -6228,11 +6228,11 @@ const fobsandKeys = new ContentH(
   </details>
 
   `,
-  { buttonLabel: "Fobs and Keys", formName: "Tenancy Sustainment" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "tenancy_sustainment_transferred_to_service" },
   { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Fobs and Keys", keywords: ["Tenancy"], categories: ["Housing"] },
-  { date: "06/11/2024", name: "Shahzad Athar" }
+  { date: "19/03/2025", name: "Nathan Smith" }
 );
 
 const untidyGardensCommunalAreas = new FormH(
