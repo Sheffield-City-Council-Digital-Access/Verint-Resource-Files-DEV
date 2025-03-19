@@ -287,27 +287,37 @@ const disabledPersonsTravelPermit = new ContentTaT(
       You may qualify for a pass if you're aged between 5 and 66 and meet one of the
       following criteria:
       <ul>
-        <li>a current blue badge holder</li>
-        <li>registered blind, partially sighted or deaf</li>
-        <li>registered with Social Services as having a learning disability</li>
-        <li>unable to use both of your arms</li>
+        <li>are blind or partially sighted</li>
+        <li>are deaf or without speech</li>
+        <li>have a disability which has a substantial and long-term adverse effect on your ability to walk</li>
+        <li>do not have arms or have long-term loss of the use of your arms</li>
         <li>
           unable to drive because of a health problem, such as autism or epilepsy
         </li>
         <li>
-          currently suffering from, a psychiatric disorder, or have an enhanced level
-          care programme approach
-        </li>
-        <li>unable to speak</li>
-        <li>
-          suffering from a substantial and long-term disabilities or injuries which
-          severely impacts your ability to walk
+          have a learning disability
         </li>
         <li>
-          mental health
+          have been or would be refused a driver’s licence on medical grounds 
+          (other than on the grounds of persistent misuse of drugs and alcohol)</li>
+        <li>
+            PIP standard rate mobility (at least 8 points awarded for planning and following a journey)
+        </li>
+        <li>
+          PIP enhanced rate mobility (points awarded for planning and following a journey)
+        </li>
+        <li>
+          PIP enhanced rate of Daily Living.  If in receipt of minimum 4 points for mobility, eligible for with carer pass.
+        </li>
+        <li>
+          DLA high-rate care. If in receipt of low-rate mobility, eligible for with carer pass, regardless of age.
         </li>
       </ul>
     </p>
+    <p>
+    If you have any supporting evidence/eligibility that has an end date, your pass will be issued up to that date.  Maximum of 5 years.
+    </p>
+
     <h3>How long does a Disabled Travel Permit last for</h3>
        <p>
       If your application is successful, passes are issued between 1 and 5 years the
@@ -315,8 +325,6 @@ const disabledPersonsTravelPermit = new ContentTaT(
       the timescale when your application is approved.<br>
       If you have any supporting evidence/eligibility that has an end date, your
       pass will be issued up to that date.<br>
-      If during the time you have the pass, you would turn 66, your pass will expire
-      on your 66th birthday.
     </p>
     <h3>How long will my application take</h3>
     <p>Disabled Travel Permits have a 28 day process period.</p>
@@ -332,7 +340,7 @@ const disabledPersonsTravelPermit = new ContentTaT(
       </address>
     </p>
     <p>
-      Customers can also request an appeal via email by writing to  <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
+      Customers can also request an appeal via email by writing to  <a href="mailto:disabledtravelpass@sheffield.gov.uk">disabledtravelpass@sheffield.gov.uk</a>
     </p>
     <h3>When can I use my Travel Permit</h3>
     <p>
@@ -354,14 +362,13 @@ const disabledPersonsTravelPermit = new ContentTaT(
         Contact Centre<br>
         SYPTE<br>
         11 Broad Street West<br>
-        1 Union Street<br>
         Sheffield<br>
         Sheffield S1 2BQ
       </address>
     </p>
       <h3>I've sent my approval letter off but not got my pass</h3>
     <p>
-      Contact SYPTE direct <a href="tel:01709 515151">01709 515151</a>.
+      Contact SYPTE direct <a href="tel:0800 9520002">0800 9520002</a>.
     </p>
       <h3>Where is my pass (applied with SCC) Ive had a letter/phone call</h3>
     <p>
@@ -372,6 +379,10 @@ const disabledPersonsTravelPermit = new ContentTaT(
       Proof of address, copy of awards letter for DLA PIP within last 12 months, 
       medical evidence from Health Care Professional, 
       Letter from DVLA re surrendered/revoked driving licence.  
+    </p>
+    <p>
+      Evidence can be uploaded on when completing the online form, if the evidence is not uploaded it
+      needs to be sent to <a href="mailto:disabledtravelpass@sheffield.gov.uk">disabledtravelpass@sheffield.gov.uk</a> 
     </p>
     <h3>Lost or stolen pass</h3>
     <p>
@@ -478,7 +489,7 @@ const disabledPersonsTravelPermit = new ContentTaT(
 
     categories: ["Travel and Transport"],
   },
-  { date: "11/03/2025", name: "Dinah Williams" }
+  { date: "17/03/2025", name: "Andy Walker" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
