@@ -6230,8 +6230,8 @@ const fobsandKeys = new ContentH(
 
   `,
   { buttonLabel: "Fobs and Keys", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
-  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { typeKey: "tenancy_sustainment_transferred_to_service" },
+  { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Fobs and Keys", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "06/11/2024", name: "Shahzad Athar" }
 );
