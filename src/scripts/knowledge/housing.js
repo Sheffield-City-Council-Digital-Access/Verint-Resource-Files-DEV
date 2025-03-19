@@ -6399,12 +6399,12 @@ const permissions = new ContentH(
       <br>
         Where a tenancy condition requires you to ask for our permission, this means:<br>
         <ul>
-          <li>You must ask for our permission, and you must not proceed until we give you our permission.</li>
-          <li>We will confirm our answer in writing.</li>
-          <li>If we refuse permission, we will explain why.</li>
-          <li>If we give permission, we may attach additional conditions.</li>
-          <li>We may withdraw our permission at any time if you do not comply with the conditions we have made.</li>
-          <li>We will take action against you and/or charge you for any costs incurred if you do not comply with parts a-e above.</li>
+          <li>A. You must ask for our permission, and you must not proceed until we give you our permission.</li>
+          <li>B. We will confirm our answer in writing.</li>
+          <li>C. If we refuse permission, we will explain why.</li>
+          <li>D. If we give permission, we may attach additional conditions.</li>
+          <li>E. We may withdraw our permission at any time if you do not comply with the conditions we have made.</li>
+          <li>We will take action against you and/or charge you for any costs incurred if you do not comply with parts A-E above.</li>
         </ul>
       </blockquote>
     </div>
