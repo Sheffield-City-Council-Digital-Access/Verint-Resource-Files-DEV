@@ -6264,8 +6264,8 @@ Streets Ahead, Environmental Services, Local Assistance Scheme<br>
 
   `,
   { buttonLabel: "Parking Permits", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
-  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { typeKey: "tenancy_sustainment_transferred_to_service" },
+  { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Parking Permits", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "07/11/2024", name: "Shahzad Athar" }
 );
@@ -6296,8 +6296,8 @@ The same document cannot be used more than once (e.g., driving licence as primar
 
   `,
   { buttonLabel: "Name Changes", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
-  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { typeKey: "tenancy_sustainment_transferred_to_service" },
+  { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Name Changes", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "07/11/2024", name: "Shahzad Athar" }
 );
@@ -6408,8 +6408,8 @@ const permissions = new ContentH(
   </details>
   `,
   { buttonLabel: "Permissions", formName: "hou_sustainment_perm" },
-  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
+  { typeKey: "tenancy_sustainment_transferred_to_service" },
+  { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Permissions", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "07/03/2025", name: "Nathan Smith" }
 );
@@ -6478,8 +6478,8 @@ const tenancyAgreementRequest = new ContentH(
       </table>
   `,
   { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
-  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { typeKey: "tenancy_sustainment_transferred_to_service" },
+  { typeKey: "tenancy_sustainment_information_provided" },
   { type: "tenancyAgreementRequest", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "08/11/2024", name: "Shahzad Athar" }
 );
@@ -6911,8 +6911,8 @@ const tenancyConditions = new ContentH(
 </details>
 `,
   { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
-  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { typeKey: "tenancy_sustainment_transferred_to_service" },
+  { typeKey: "tenancy_sustainment_information_provided" },
   { type: "tenancyAgreementRequest", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "08/11/2024", name: "Shahzad Athar" }
 );
