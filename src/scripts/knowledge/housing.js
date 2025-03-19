@@ -6107,8 +6107,7 @@ const fobsandKeys = new ContentH(
   "Find out how to replace lost or stolen keys and fobs, including costs, required ID, and the process for requesting replacements.",
   `
   <p>
-    For lost or stolen keys, there may be a recharge (£5). Locks will only be replaced if the customer agrees to a recharge
-    or if they have a valid crime reference number.
+    Locks will only be replaced if the customer agrees to a recharge or if they have a valid crime reference number.
   </p>
   <p>
     The only exceptions are if the person is Elderly or a Vulnerable person, in which case a Discretionary Decision would need
@@ -6119,7 +6118,7 @@ const fobsandKeys = new ContentH(
     an insurance form.
   </p>
   <p>
-    It is only communal doors that are £5. If it's your own door, it's over £200 recharge from repairs.
+    Lost or stolen keys, there may be a recharge (£5), communal doors are £5. If it's your own door, it's over £200 recharge from repairs.
   </p>
 
   <details class="accordion">
