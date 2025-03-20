@@ -5616,9 +5616,17 @@ const furnishedAccommodation = new ContentH(
     <p>How it works</p>
     <p>There are three price bands to choose from:</p>
     <ul>
-      <li>Gold - £20 per week (20 points)</li>
-      <li>Silver - £15 per week (15 points)</li>
-      <li>Bronze - £10 per week (10 points)</li>
+      <li>Gold - £23.94 per week (20 points)</li>
+      <li>Silver - £17.96 per week (15 points)</li>
+      <li>Bronze - £11.97 per week (10 points)</li>
+    </ul>
+    <p>Legacy Charging Model (No longer used for New Furnished)</p>
+    <ul>
+      <li>Bedsit - £23.05</li>
+      <li>1 Bed - £26.05</li>
+      <li>2 Bed - £30.05</li>
+      <li>3 Bed - £34.04</li>
+      <li>4 Bed - £43.02</li>
     </ul>
     <p>
       Each piece of furniture or floor covering will have a points value and the
