@@ -5743,7 +5743,7 @@ const gypsyAndTravellers = new ContentH(
       Sheffield<br>
       S10 4JZ
     </address>
-    <h3>What manages the sites?</h3>
+    <h3>Who manages the sites?</h3>
     <p>
       Both sites are managed by the Housing and Neighbourhood Service Gypsy and
       Traveller Site Management team based at Solpro.
