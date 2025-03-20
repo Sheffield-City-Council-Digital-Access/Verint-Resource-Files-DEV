@@ -126,7 +126,7 @@ const makingAPayment = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -169,7 +169,7 @@ const customerPaidTwice = new ContentP(
       </p>
     `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -209,7 +209,7 @@ const appealBlueBadge = new ContentP(
       
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "blue_badge_information_provided" },
   {
     type: "Appeal",
@@ -370,7 +370,7 @@ const blueBadgeHolderPassedAway = new ContentP(
     </address>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "blue_badge_information_provided" },
   {
     type: "Request",
@@ -440,7 +440,7 @@ const replacementBlueBadge = new ContentP(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "blue_badge_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "blue_badge_information_provided" },
   {
     type: "Request",
@@ -537,7 +537,7 @@ const baySuspensions = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -577,7 +577,7 @@ const carParkParkingMeterProblem = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -632,7 +632,7 @@ const illegalParking = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -688,7 +688,7 @@ const vehicleObstruction = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -722,7 +722,7 @@ const vehicleParkedInASuspendedBay = new ContentP(
   "Learn who to report vehicles parked in a suspended bay to.",
   `<p>Should be reported to Parking Enforcement</p>`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -794,7 +794,7 @@ const yellowLineDispensations = new ContentP(
     </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -1072,7 +1072,7 @@ const businessPermit = new ContentP(
 
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -1245,7 +1245,7 @@ const residentsCarer = new ContentP(
      
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -1441,7 +1441,7 @@ const greenParkingPermit = new ContentP(
      
  	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -1605,7 +1605,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
 
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -1715,7 +1715,7 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
 
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -1842,7 +1842,7 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
 </button>	
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -2014,7 +2014,7 @@ Get in touch with us for any other problems regarding parking permit application
 
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -2072,7 +2072,7 @@ const staffPermit = new ContentP(
       </button>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -2224,7 +2224,7 @@ const tradePermit = new ContentP(
 
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -2302,7 +2302,7 @@ const utilityPermit = new ContentP(
       >
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Apply",
@@ -2457,7 +2457,7 @@ Contractors needing more time to work at a property will need to apply for trade
       </button>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -2536,7 +2536,7 @@ const confirmationOfPayment = new ContentP(
 		</p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -2592,7 +2592,7 @@ const customerTriedToPayOnline = new ContentP(
 		</p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -2650,7 +2650,7 @@ const customerUnableToPay = new ContentP(
 		</p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -2712,7 +2712,7 @@ const enforcementbaliffenquiries = new ContentP(
     </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -2770,7 +2770,7 @@ const howCanIAppeal = new ContentP(
     </p>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -2821,7 +2821,7 @@ const howLongDoIHaveToAppeal = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -2877,7 +2877,7 @@ const multiplepcns = new ContentP(
     </p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
@@ -2938,7 +2938,7 @@ const haveYouReceivedMyAppeal = new ContentP(
 	  <p>This can be found by checking Gateway.</p>
   `,
   { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "parking_permit_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "parking_permit_information_provided" },
   {
     type: "Information",
