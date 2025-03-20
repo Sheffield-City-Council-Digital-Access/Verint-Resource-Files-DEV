@@ -3253,7 +3253,7 @@ const bidding = new ContentH(
           <h3>Main Applicant</h3>
           <p>
             To remove a joint applicant, you must do this online at the Property Shop
-            website.
+            website at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a>
           <br>
           <br>
           <h3>Joint Applicant</h3>
@@ -3980,7 +3980,7 @@ const bidding = new ContentH(
         A Mutual Exchange is where two or more Council or Housing Association tenants can apply to swap
         their homes. The 1985 Housing Act (part 4, section 92) gives tenants this right under certain circumstances.<br><br>
   
-        The Mutual Exchange application form can be accessed online at the Property Shop website and <a href="https://www.sheffield.gov.uk/council-housing/mutual-exchanges" target="_blank">https://www.sheffield.gov.uk/council-housing/mutual-exchanges</a>.
+        The Mutual Exchange application form can be accessed online at the Property Shop website at: <a href="https://www.sheffieldpropertyshop.org.uk/" target="_blank">https://www.sheffieldpropertyshop.org.uk/</a> and the Sheffield City Council website at: <a href="https://www.sheffield.gov.uk/council-housing/mutual-exchanges" target="_blank">https://www.sheffield.gov.uk/council-housing/mutual-exchanges</a>.
         <br>
         <button type="button" class="dform_widget email-btn dform_widget_type_button"
           aria-label="Send link to mutual exchanges page"
@@ -4547,7 +4547,7 @@ const bidding = new ContentH(
       <div class="accordion-content">
         <p>
           Landlord references should be submitted using the SCC reference form. This can be found online on the 
-          Property Shop website. Customer should select:
+          Property Shop website at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a>. Customer should select:
       </p>
       <ul>
           <li>Information header, select Identification and References</li>
@@ -5929,7 +5929,7 @@ const olderPersonsIndependentLiving = new ContentH(
     <h3>Register for OPIL Accommodation</h3>
     <p>Applicants should be registered for rehousing.</p>
     <p>
-      You can access OPIL accommodation through the Sheffield Property Shop or call
+      You can access OPIL accommodation through the Sheffield Property Shop at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> or call
       in at any of the local Area Housing Offices.
     </p>
     <p>You can also be referred through:</p>
