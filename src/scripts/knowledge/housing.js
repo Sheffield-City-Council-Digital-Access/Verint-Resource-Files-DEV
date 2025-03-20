@@ -2082,8 +2082,8 @@ const generalCouncilHousing = new ContentH(
   </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "housing_general_transferred_to_service" },
+  { typeKey: "housing_general_information_provided" },
   {
     type: "Information",
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
