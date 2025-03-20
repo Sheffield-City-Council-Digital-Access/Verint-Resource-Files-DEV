@@ -82,7 +82,7 @@ class FormDaMH extends CoreDaMH {
         Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the
         call is not answered raise a case.
       </p>
-      <h3>Eligibility</h3>
+      <h2>Eligibility</h2>
       <h1>Who can apply</h1>
       <p>
         You can apply if you are the parent or carer of a child with a diagnosed disability and:</p>
@@ -94,7 +94,8 @@ class FormDaMH extends CoreDaMH {
         <li>you do not already receive another short break or respite service or a Direct Payment for that individual child (or you can agree to stop using the other service if you want to use this one)</li>
         </ul>
        <p>
-        Or you can apply if a relevant professional who knows your child and your family completes and signs an ‘Impact Information Form’ which explains your child’s disability and how this impacts on your whole family.     
+        Or you can apply if a relevant professional who knows your child and your family completes and signs an ‘Impact Information Form’ which explains your child’s disability and how this impacts on your whole family.
+       </p)    
       <p>
        Household income is the total income of all people sharing a household.
       </p>
@@ -139,8 +140,8 @@ class FormDaMH extends CoreDaMH {
         means-tested benefits. DLA and PIP does not count as part of your household
         income in these proposals.
       </p>
-       </p>
-       <h2>If you receive other short break services</h2>
+      <p>
+      <h2>If you receive other short break services</h2>
        <p>You are not eligible to apply for this grant if you already receive:</p>
         <ul>
         <li>SNIPS activity including mainstream leisure clubs such as:
@@ -155,8 +156,10 @@ class FormDaMH extends CoreDaMH {
             you can still apply for a grant for your other child if they are eligible.</li>
         <li>overnight respite</li>
         </ul>        
-      <p>You can choose to change to a Short Break Grant from your current service (if you are eligible). Discuss it with your social worker or a member of the SNIPS team. Remember that the Short Break Grant is a single payment per year. Most other short break services provide for your family all year round.</p>
+      </p>
       <p>
+      You can choose to change to a Short Break Grant from your current service (if you are eligible). Discuss it with your social worker or a member of the SNIPS team. Remember that the Short Break Grant is a single payment per year. Most other short break services provide for your family all year round.</p>
+      </p>
 
     `,
     { buttonLabel: "Short Breaks", formName: "apply_short_break_grant" },
@@ -297,7 +300,7 @@ class FormDaMH extends CoreDaMH {
       <p>If you are unsure please ask the club or contact your SNIPS mentor via: <a href="mailto:SNIPSBusinessSupport@sheffield.gov.uk">SNIPSBusinessSupport@sheffield.gov.uk</a></p>   
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "short_breaks_information_to_service" },
+    { typeKey: "" },
     { typeKey: "short_breaks_information_provided" },
     {
       type: "Request",
