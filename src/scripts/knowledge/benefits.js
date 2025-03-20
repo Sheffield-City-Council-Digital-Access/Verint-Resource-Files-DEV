@@ -186,7 +186,7 @@ const applyForTheHouseholdSupportFund = new ContentB(
     buttonLabel: "Apply for the Household Support Fund",
     formName: "apply_hsf_las",
   },
-  { typeKey: "cost_of_living_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "02/12/2024", name: "Andy Walker" }
@@ -218,7 +218,7 @@ const employmentSupport = new ContentB(
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "cost_of_living_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "08/11/2024", name: "Nathan Smith" }
@@ -634,7 +634,7 @@ const energySupport = new ContentB(
   </details>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "02/12/2024", name: "Andy Walker" }
@@ -737,7 +737,7 @@ const findFoodSupportAndResources = new ContentB(
  
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "cost_of_living_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "cost_of_living_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "02/12/2024", name: "Andy Walker" }
@@ -1010,7 +1010,7 @@ const howYouCanHelpYourCommunity = new ContentB(
   </details>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "02/12/2024", name: "Andy Walker" }
@@ -1621,7 +1621,7 @@ const moneySupport = new ContentB(
       "Apply for Discretionary Housing Payment and Council Tax Hardship Scheme",
     formName: "apply_dhp_cths",
   },
-  { typeKey: "cost_of_living_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "cost_of_living_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "02/12/2024", name: "Andy Walker" }
@@ -2535,7 +2535,7 @@ const supportForBusinesses = new ContentB(
   </details>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "02/12/2024", name: "Andy Walker" }
@@ -2573,7 +2573,7 @@ const supportFund = new ContentB(
   `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
@@ -2784,7 +2784,7 @@ const travelSupport = new ContentB(
   </details>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "08/11/2024", name: "Nathan Smith" }
@@ -3045,7 +3045,7 @@ const waysToReduceYourFuelBills = new ContentB(
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "cost_of_living_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "cost_of_living_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "02/12/2024", name: "Andy Walker" }
@@ -3092,7 +3092,7 @@ const welcomePlaces = new ContentB(
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "cost_of_living_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "cost_of_living_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "02/12/2024", name: "Andy Walker" }
@@ -3159,7 +3159,7 @@ const grantOverview = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "03/12/2024", name: "Andy Walker" }
@@ -3198,7 +3198,7 @@ const eligibilityAndApplication = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "03/12/2024", name: "Andy Walker" }
@@ -3228,7 +3228,7 @@ const paymentAndDecisions = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "03/12/2024", name: "Andy Walker" }
@@ -3244,7 +3244,7 @@ const fraudPrevention = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "03/12/2024", name: "Andy Walker" }
@@ -3278,7 +3278,7 @@ const generalInformation = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "03/12/2024", name: "Andy Walker" }
@@ -3295,7 +3295,7 @@ const eligibilityCriteria = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "03/12/2024", name: "Andy Walker" }
@@ -3328,7 +3328,7 @@ const howDoIApply = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "03/12/2024", name: "Andy Walker" }
@@ -3351,7 +3351,7 @@ const otherSupportAvailable = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "03/12/2024", name: "Andy Walker" }
@@ -3370,7 +3370,7 @@ const howLongDoesItTakeToGetADecisionForHouseholdSupportFund = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "26/09/2024", name: "George Whitehouse" }
@@ -3389,7 +3389,7 @@ const WhatIfIDisagreeWithTheDecisionForHouseholdSupportFund = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "03/12/2024", name: "Andy Walker" }
@@ -3409,7 +3409,7 @@ const howillIGetMyHouseholdSupportFundPayment = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "03/12/2024", name: "Andy Walker" }
@@ -3430,7 +3430,7 @@ const fraudulentClaimsForHouseholdSupportFund = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "03/12/2024", name: "Andy Walker" }
@@ -3479,7 +3479,7 @@ const whoCanApplyForIndependenceGrant = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "03/12/2024", name: "Andy Walker" }
@@ -3541,7 +3541,7 @@ const WhatIndependanceGrantInformationIsItFor = new ContentB(
   `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
@@ -3606,7 +3606,7 @@ const howDoesTheIndependanceGrantInformationApplicationProcessWork =
     `,
 
     { buttonLabel: "", formName: "" },
-    { typeKey: "local_assistance_scheme_transferred_to_service" },
+    { typeKey: "" },
     { typeKey: "local_assistance_scheme_information_provided" },
     { type: "Information", keywords: [], categories: ["benefits"] },
     { date: "03/12/2024", name: "Andy Walker" }
@@ -3663,7 +3663,7 @@ const WhatWillIndepedenceGrantsBeMadeFor = new ContentB(
     </p>
    `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
@@ -3706,7 +3706,7 @@ const WhatWillNotIndependenceGrantsBeMadeFor = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
@@ -3743,7 +3743,7 @@ const howLongDoesItTakeToGetADecision = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "03/12/2024", name: "Andy Walker" }
@@ -3762,7 +3762,7 @@ const howWillIBeNotifiedOfTheDecisionForIndepenceGrantInformation =
       </p>
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "local_assistance_scheme_transferred_to_service" },
+    { typeKey: "" },
     { typeKey: "local_assistance_scheme_information_provided" },
     { type: "Information", keywords: [], categories: ["benefits"] },
     { date: "25/09/2024", name: "George Whitehouse" }
@@ -3789,7 +3789,7 @@ const whatIfIDisagreeWithTheIndependenceGrantdecision = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
@@ -3851,7 +3851,7 @@ const howWillIGetMySheffieldIndependanceGrant = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "25/09/2024", name: "George Whitehouse" }
@@ -3872,7 +3872,7 @@ const fraudulentClaimsForIndependanceGrants = new ContentB(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "local_assistance_scheme_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "local_assistance_scheme_information_provided" },
   { type: "Information", keywords: [], categories: ["benefits"] },
   { date: "03/12/2024", name: "Andy Walker" }

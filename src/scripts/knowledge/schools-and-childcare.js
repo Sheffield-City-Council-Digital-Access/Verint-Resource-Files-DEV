@@ -317,7 +317,7 @@ const freeSchoolMeals = new ContentSaC(
     buttonLabel: "Apply for Free School Meals",
     formName: "apply_school_meals",
   },
-  { typeKey: "free_school_meals_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "free_school_meals_information_provided" },
   {
     type: "Apply",
@@ -448,7 +448,7 @@ const fundedEarlyLearning = new ContentSaC(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "funded_early_learning_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "funded_early_learning_information_provided" },
   {
     type: "Apply",
