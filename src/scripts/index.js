@@ -1159,16 +1159,6 @@ function handleOnReadyEvent(_, kdf) {
 
     fields.forEach((field) => {
       let value = KDF.getVal(field);
-      console.log(
-        "field",
-        field,
-        "value",
-        value,
-        !value ||
-          value.length < 1 ||
-          value === "Pending" ||
-          value === "In progress"
-      );
       if (
         !value ||
         value.length < 1 ||
