@@ -1165,13 +1165,13 @@ function handleOnReadyEvent(_, kdf) {
         "value",
         value,
         !value ||
-          value.length() < 1 ||
+          value.length < 1 ||
           value === "Pending" ||
           value === "In progress"
       );
       if (
         !value ||
-        value.length() < 1 ||
+        value.length < 1 ||
         value === "Pending" ||
         value === "In progress"
       ) {
