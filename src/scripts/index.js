@@ -1159,10 +1159,26 @@ function handleOnReadyEvent(_, kdf) {
 
     fields.forEach((field) => {
       let value = KDF.getVal(field);
-      if (!value || value === "Pending" || value === "In progress") {
+      console.log(
+        "field",
+        field,
+        "value",
+        value,
+        !value ||
+          value.length < 1 ||
+          value === "Pending" ||
+          value === "In progress"
+      );
+      if (
+        !value ||
+        value.length < 1 ||
+        value === "Pending" ||
+        value === "In progress"
+      ) {
         isComplete = false;
         incompleteFields.push(field);
       }
+      console.log("incompleteFields", incompleteFields);
     });
 
     if (isComplete) {
