@@ -222,6 +222,8 @@ const appealBlueBadge = new ContentP(
       "appeel",
       "serivce",
       "parkng",
+      "park",
+      "parkng",
       "prking info",
       "Blue Badge",
       "blue badge",
@@ -229,7 +231,7 @@ const appealBlueBadge = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "19/02/2025", name: "Andy Walker" }
+  { date: "24/03/2025", name: "Andy Walker" }
 );
 
 const applyBlueBadge = new ContentP(
@@ -340,6 +342,7 @@ const applyBlueBadge = new ContentP(
       "appely",
       "parkin",
       "prking",
+      "perking",
       "Blue Badge",
       "blue badge",
       "parking",
