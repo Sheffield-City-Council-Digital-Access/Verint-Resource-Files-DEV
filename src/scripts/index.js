@@ -1159,6 +1159,13 @@ function handleOnReadyEvent(_, kdf) {
 
     fields.forEach((field) => {
       let value = KDF.getVal(field);
+      console.log(
+        "field",
+        field,
+        "value",
+        value,
+        !value || value === "Pending" || value === "In progress"
+      );
       if (!value || value === "Pending" || value === "In progress") {
         isComplete = false;
         incompleteFields.push(field);
