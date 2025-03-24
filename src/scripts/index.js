@@ -1164,12 +1164,21 @@ function handleOnReadyEvent(_, kdf) {
         field,
         "value",
         value,
-        !value || value === "Pending" || value === "In progress"
+        !value ||
+          value.length() < 1 ||
+          value === "Pending" ||
+          value === "In progress"
       );
-      if (!value || value === "Pending" || value === "In progress") {
+      if (
+        !value ||
+        value.length() < 1 ||
+        value === "Pending" ||
+        value === "In progress"
+      ) {
         isComplete = false;
         incompleteFields.push(field);
       }
+      console.log("incompleteFields", incompleteFields);
     });
 
     if (isComplete) {
