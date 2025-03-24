@@ -1205,12 +1205,49 @@ function handleOnReadyEvent(_, kdf) {
 
     incompleteFields.forEach((field) => {
       let id = `dform_widget_${field}`;
-      let label = document.querySelector(`label[for='${id}']`);
-      let labelText = label ? label.textContent : field;
-      let pageTitleText = "Unknown Section";
-      let fieldValue = KDF.getVal(field) || "Not Answered";
-
       let element = document.getElementById(id);
+      let label, labelText, fieldValue;
+
+      if (!element) {
+        let radioContainer = document.querySelector(
+          `[data-name="${field}"][data-type="radio"]`
+        );
+        let checkboxContainer = document.querySelector(
+          `[data-name="${field}"][data-type="multicheckbox"]`
+        );
+
+        if (radioContainer) {
+          let selectedRadio = radioContainer.querySelector(
+            "input[type='radio']:checked"
+          );
+          fieldValue = selectedRadio ? selectedRadio.value : "Not Answered";
+          labelText =
+            radioContainer.querySelector("legend")?.textContent || field;
+          element = radioContainer;
+        } else if (checkboxContainer) {
+          let selectedCheckboxes = [
+            ...checkboxContainer.querySelectorAll(
+              "input[type='checkbox']:checked"
+            ),
+          ];
+          fieldValue = selectedCheckboxes.length
+            ? selectedCheckboxes.map((cb) => cb.value).join(", ")
+            : "Not Answered";
+          labelText =
+            checkboxContainer.querySelector("legend")?.textContent || field;
+          element = checkboxContainer;
+        } else {
+          fieldValue = KDF.getVal(field) || "Not Answered";
+          label = document.querySelector(`label[for='${id}']`);
+          labelText = label ? label.textContent : field;
+        }
+      } else {
+        label = document.querySelector(`label[for='${id}']`);
+        labelText = label ? label.textContent : field;
+        fieldValue = KDF.getVal(field) || "Not Answered";
+      }
+
+      let pageTitleText = "Unknown Section";
       if (element) {
         let page = element.closest('[data-type="page"]');
         if (page) {
