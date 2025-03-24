@@ -237,40 +237,42 @@ const applyBlueBadge = new ContentP(
   "Apply for a Blue Badge",
   "Learn about the eligibility criteria and application process for a Blue Badge, including automatic qualification and discretionary assessments.",
   `
-  <h3>Eligibility</h3> 
+      <h3>Eligible Without Further Assessment</h3>
+      <p>(Previously known as 'automatic')</p>
       <p>
-        If the condition that the customer has a diagnosis for is not permanent and
-        substantial they will not be eligible for a blue badge.
-      </p> 
- 
-    <h3>Automatically Qualify</h3> 
+        The customer will automatically qualify for a blue badge if they are more 
+        than three years old and fall within one or more of the following descriptions:
+      </p>
+      <ul>
+        <li>Receives the higher rate of the mobility component of the Disability Living Allowance.</li>
+        <li>Receives the mobility component of Personal Independence Payment (PIP) and has obtained 8 points or more under the "moving around" activity.</li>
+        <li>Receives the mobility component of Personal Independence Payment (PIP) and has obtained 10 points specifically for descriptor E under the "planning and following journeys" activity, on the grounds that they are unable to undertake any journey because it would cause them overwhelming psychological distress.</li>
+        <li>Is registered blind (severely sight impaired).</li>
+        <li>Receives a War Pensioner's Mobility Supplement (WPMS).</li>
+        <li>Has been both awarded a lump sum benefit at tariffs 1-8 of the Armed Forces Compensation Scheme and certified as having a permanent and substantial disability which causes inability to walk or very considerable difficulty in walking.</li>
+        <li>Has a life-limiting illness and may have been issued with an SR1 form.</li>
+      </ul>
+
+      <h3>Eligible Subject to Further Assessment</h3>
+      <p>(Previously known as 'discretionary')</p>
       <p>
-        The customer will automatically qualify for a blue badge if they meet
-        the following criteria and have the relevant evidence:
-      </p> 
-      <ul> 
-        <li>In Receipt of Higher Rate Disability Living Allowance from the DWP (Department for Works and Pensions) dated within the current financial year</li> 
-        <li>In receipt of PIP (Personal Independence Payment) if scored 8 or above</li> 
-        <li>Registered as Blind (Severely Sight Impaired)</li> 
-        <li>War Pension Supplement</li> 
-        <li>Armed Forces and Reserved Forces Compensation Scheme</li> 
-        <li>Terminally Ill Applicants - If the applicant is being treated by Mcmillan, Weston Park or Northern General the application would require a stamp / compliment slip / note from nurse or doctor and is issued for one year with no charge.</li> 
-        <li>Terminally ill - A terminally ill applicant will have a DS1500 – A form giving medical facts relating to cancer or an SR1 form used for claiming benefits under the rules for people with terminal cancer. There is a charge of £10 for all badges and the badge is issued for a year, should they apply the following 2 years there would be no further charge.</li> 
-      </ul> 
-      <p>
-      These applications will be fast tracked and would not be held up awaiting payment or other evidence. When applying online
-      these applications will be processed the same working day.
-      </p> 
-      <p>
-      Alternatively a terminally ill application can be taken over the phone, 
-      using the option below.
-      </p> 
- 
-    <h3>Discretionary</h3> 
-      <p>
-        If the customer does not meet the criteria above, they may require a further assessment,
-        more information will be provided when the application is reviewed.
-      </p> 
+        If the customer does not meet any of the criteria above, they will need to 
+        complete an application form giving details of their disability to be 
+        assessed under the 'eligible subject to further assessment' criteria.
+      </p>
+
+      <h3>Appeal a Blue Badge Decision</h3>
+    <ul>
+      <li>The customer can request a review of the decision.</li>
+      <li>Add a note on the case outlining any information given by the customer.</li>
+      <li>If the customer wishes to provide any further supporting documents, advise them that they can send them to <a href="mailto:bluebadge@sheffield.gov.uk">bluebadge@sheffield.gov.uk</a>.</li>
+      <li>Give the customer the Verint reference number for their application and ask them to quote it if sending any further information.</li>
+      <li>Note on the case the advice given to the customer.</li>
+      <li>Advise the customer that the review request has been made.</li>
+      <li>Reallocate the case to Appeals.</li>
+    </ul>
+
+      
       <p>
       <a href="https://www.gov.uk/apply-blue-badge" target="_blank">https://www.gov.uk/apply-blue-badge</a>
       <button type="button" class="dform_widget email-btn dform_widget_type_button"
@@ -345,7 +347,7 @@ const applyBlueBadge = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/03/2025", name: "Dinah Williams" }
+  { date: "19/03/2025", name: "Andy Walker" }
 );
 
 const blueBadgeHolderPassedAway = new ContentP(
