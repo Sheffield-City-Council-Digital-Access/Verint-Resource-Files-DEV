@@ -266,12 +266,11 @@ const applyBlueBadge = new ContentP(
       <li>The customer can request a review of the decision.</li>
       <li>Add a note on the case outlining any information given by the customer.</li>
       <li>If the customer wishes to provide any further supporting documents, advise them that they can send them to <a href="mailto:bluebadge@sheffield.gov.uk">bluebadge@sheffield.gov.uk</a>.</li>
-      <li>Give the customer the Verint reference number for their application and ask them to quote it if sending any further information.</li>
+      <li>Give the customer the case reference number for their application and ask them to quote it if sending any further information.</li>
       <li>Note on the case the advice given to the customer.</li>
       <li>Advise the customer that the review request has been made.</li>
       <li>Reallocate the case to Appeals.</li>
     </ul>
-
       
       <p>
       <a href="https://www.gov.uk/apply-blue-badge" target="_blank">https://www.gov.uk/apply-blue-badge</a>
