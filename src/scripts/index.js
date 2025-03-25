@@ -1813,7 +1813,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     const agentId = response.data.agendId;
     const ohmsId = response.data["profile-socialId-ohms"];
 
-    const url = `https://sccvmtholi01.sheffield.gov.uk/CRMHousing/default.asp?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
+    const url = `${response.data.url}?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
     const iframe = document.createElement("iframe");
 
     iframe.id = "ifrm1";
