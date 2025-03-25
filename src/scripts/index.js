@@ -1159,10 +1159,16 @@ function handleOnReadyEvent(_, kdf) {
 
     fields.forEach((field) => {
       let value = KDF.getVal(field);
-      if (!value || value === "Pending" || value === "In progress") {
+      if (
+        !value ||
+        value.length < 1 ||
+        value === "Pending" ||
+        value === "In progress"
+      ) {
         isComplete = false;
         incompleteFields.push(field);
       }
+      console.log("incompleteFields", incompleteFields);
     });
 
     if (isComplete) {
@@ -1189,12 +1195,49 @@ function handleOnReadyEvent(_, kdf) {
 
     incompleteFields.forEach((field) => {
       let id = `dform_widget_${field}`;
-      let label = document.querySelector(`label[for='${id}']`);
-      let labelText = label ? label.textContent : field;
-      let pageTitleText = "Unknown Section";
-      let fieldValue = KDF.getVal(field) || "Not Answered";
-
       let element = document.getElementById(id);
+      let label, labelText, fieldValue;
+
+      if (!element) {
+        let radioContainer = document.querySelector(
+          `[data-name="${field}"][data-type="radio"]`
+        );
+        let checkboxContainer = document.querySelector(
+          `[data-name="${field}"][data-type="multicheckbox"]`
+        );
+
+        if (radioContainer) {
+          let selectedRadio = radioContainer.querySelector(
+            "input[type='radio']:checked"
+          );
+          fieldValue = selectedRadio ? selectedRadio.value : "Not Answered";
+          labelText =
+            radioContainer.querySelector("legend")?.textContent || field;
+          element = radioContainer;
+        } else if (checkboxContainer) {
+          let selectedCheckboxes = [
+            ...checkboxContainer.querySelectorAll(
+              "input[type='checkbox']:checked"
+            ),
+          ];
+          fieldValue = selectedCheckboxes.length
+            ? selectedCheckboxes.map((cb) => cb.value).join(", ")
+            : "Not Answered";
+          labelText =
+            checkboxContainer.querySelector("legend")?.textContent || field;
+          element = checkboxContainer;
+        } else {
+          fieldValue = KDF.getVal(field) || "Not Answered";
+          label = document.querySelector(`label[for='${id}']`);
+          labelText = label ? label.textContent : field;
+        }
+      } else {
+        label = document.querySelector(`label[for='${id}']`);
+        labelText = label ? label.textContent : field;
+        fieldValue = KDF.getVal(field) || "Not Answered";
+      }
+
+      let pageTitleText = "Unknown Section";
       if (element) {
         let page = element.closest('[data-type="page"]');
         if (page) {
@@ -1770,7 +1813,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     const agentId = response.data.agendId;
     const ohmsId = response.data["profile-socialId-ohms"];
 
-    const url = `https://sccvmtholi01.sheffield.gov.uk/CRMHousing/default.asp?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
+    const url = `${response.data.url}?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
     const iframe = document.createElement("iframe");
 
     iframe.id = "ifrm1";
