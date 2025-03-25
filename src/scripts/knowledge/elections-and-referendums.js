@@ -2346,7 +2346,7 @@ const familyTreeorGenealogy = new ContentEaR(
       Sheffield Archives may be able to offer more support in this area.
     </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "familyTreeorGenealogy", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
   {
