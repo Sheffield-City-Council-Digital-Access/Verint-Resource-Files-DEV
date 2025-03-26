@@ -2086,7 +2086,7 @@ function checkPageProgress() {
 
   // Check if any other required fields are empty or invalid
   const hasEmptyOrInvalidOtherFields = otherFields.some((el) => {
-    let isEmpty = el.value.trim() === "";
+    let isEmpty = el.value.trim() === "" || el.value === "Please select...";
     let isValid = el.checkValidity();
     const name = el.name;
     if (
