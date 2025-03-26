@@ -1343,7 +1343,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
       "margin-inline": "0 40%",
     });
     $("form.dform").css({
-      margin: "8px",
+      margin: "8px, auto",
       padding: "16px",
       background: "var(--color-white)",
     });
