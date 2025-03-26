@@ -2101,7 +2101,7 @@ function checkPageProgress() {
       isEmpty = dateElement.value.trim() === "";
       isValid = dateElement.checkValidity();
     }
-
+    console.log(isEmpty || !isValid, el.value);
     return isEmpty || !isValid;
   });
 
