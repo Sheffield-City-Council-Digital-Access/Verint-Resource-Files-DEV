@@ -2017,7 +2017,6 @@ function checkAndDisplayModal() {
 // --- DISABLE BUTTONS ------------------------------------------------------ \\
 
 function checkPageProgress() {
-  console.log("## checkPageProgress ##");
   const currentPageId = getCurrentPageId();
   const currentPageElement = document.getElementById(currentPageId);
 
@@ -2102,7 +2101,7 @@ function checkPageProgress() {
       isEmpty = dateElement.value.trim() === "";
       isValid = dateElement.checkValidity();
     }
-    console.log(isEmpty || !isValid, el.value);
+
     return isEmpty || !isValid;
   });
 
