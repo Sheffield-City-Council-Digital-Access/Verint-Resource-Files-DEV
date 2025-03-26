@@ -2017,6 +2017,7 @@ function checkAndDisplayModal() {
 // --- DISABLE BUTTONS ------------------------------------------------------ \\
 
 function checkPageProgress() {
+  console.log("## checkPageProgress ##");
   const currentPageId = getCurrentPageId();
   const currentPageElement = document.getElementById(currentPageId);
 
