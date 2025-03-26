@@ -72,9 +72,9 @@ const newsArticles = [
         <p>tbc...</p>
     `,
     "Elliott Griffiths",
-    "2024-08-15",
-    "2024-08-15",
-    "2024-12-31"
+    "2025-03-26",
+    "2025-06-01",
+    "2025-08-01"
   ),
   new NewsArticle(
     "New Housing system Coming Soon!",
@@ -93,7 +93,7 @@ const newsArticles = [
         <p><strong>Stay tuned for more updates!</strong></p>
     `,
     "Elliott Griffiths",
-    "2024-08-15",
+    "2025-03-26",
     "2025-09-01",
     "2025-10-01"
   ),
