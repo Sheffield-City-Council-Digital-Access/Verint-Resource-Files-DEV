@@ -259,21 +259,6 @@ small {
   transition: color 0.3s ease, background 0.3s ease;
 }
 
-#main-nav .link-button.new-badge::after {
-  content: "New";
-  position: absolute;
-  top: 0.4rem;
-  right: -1.7rem;
-  background-color: var(--color-primary);
-  color: var(--color-grey-white);
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 0.9rem 0.5rem;
-  border-radius: 50%;
-  height: 1.8rem;
-  transform: rotate(27deg);
-}
-
 #main-nav .link-button:hover,
 #main-nav .link-button:focus {
   text-decoration: none;
@@ -281,6 +266,21 @@ small {
   text-decoration: underline;
   background: var(--color-grey-2) !important;
   box-shadow: none;
+}
+
+#main-nav .link-button .new-badge::after {
+  content: "New";
+  position: absolute;
+  top: 0.4rem;
+  right: -1.7rem;
+  background-color: var(--color-primary) !important;
+  color: var(--color-grey-white) !important;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.9rem 0.5rem;
+  border-radius: 50%;
+  height: 1.8rem;
+  transform: rotate(27deg);
 }
 
 #main-nav .link-button:active {

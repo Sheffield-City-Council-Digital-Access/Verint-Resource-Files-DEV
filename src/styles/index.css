@@ -147,3 +147,7 @@ body {
   left: 13%;
   transform: translateX(-50%);
 }
+
+*:disabled {
+  cursor: not-allowed !important;
+}
