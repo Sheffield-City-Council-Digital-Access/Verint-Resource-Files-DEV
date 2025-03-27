@@ -667,8 +667,8 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE ADDRESS LOOKUP --------------------------------------------- \\
 
-  $(".search-results").on("focusout", (event) => {
-    if (event.target.value) {
+  $(".search-results").on("change", (event) => {
+    if (event.target.value && !$(event.target).data("keyboardSelection")) {
       const action =
         addressSearchType[getCurrentPageId()] === "local"
           ? "retrieve-local-address"
@@ -676,6 +676,22 @@ function handleOnReadyEvent(_, kdf) {
       KDF.customdata(action, event.target.id, true, true, {
         propertyId: event.target.value,
       });
+    }
+    $(event.target).removeData("keyboardSelection");
+  });
+
+  $(".search-results").on("keydown", (event) => {
+    if (event.key === "Enter" || event.key === "Tab") {
+      if (event.target.value) {
+        const action =
+          addressSearchType[getCurrentPageId()] === "local"
+            ? "retrieve-local-address"
+            : "retrieve-national-address";
+        KDF.customdata(action, event.target.id, true, true, {
+          propertyId: event.target.value,
+        });
+        $(event.target).data("keyboardSelection", true);
+      }
     }
   });
 
