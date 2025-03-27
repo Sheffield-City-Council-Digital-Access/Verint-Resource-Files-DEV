@@ -2027,7 +2027,10 @@ Get in touch with us for any other problems regarding parking permit application
 
 
 	`,
-  { buttonLabel: "Parking Permit", formName: "" },
+  { 
+    buttonLabel: "Parking Permit Enquiry", 
+    formName: "parking_permit_enquiry",
+  },
   { typeKey: "parking_permit_transferred_to_service" },
   { typeKey: "parking_permit_information_provided" },
   {
