@@ -667,20 +667,17 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE ADDRESS LOOKUP --------------------------------------------- \\
 
-  $(".search-results").on(
-    "change",
-    adaptiveDebounce((event) => {
-      if (event.target.value) {
-        const action =
-          addressSearchType[getCurrentPageId()] === "local"
-            ? "retrieve-local-address"
-            : "retrieve-national-address";
-        KDF.customdata(action, event.target.id, true, true, {
-          propertyId: event.target.value,
-        });
-      }
-    }, 300)
-  );
+  $(".search-results").on("blur", (event) => {
+    if (event.target.value) {
+      const action =
+        addressSearchType[getCurrentPageId()] === "local"
+          ? "retrieve-local-address"
+          : "retrieve-national-address";
+      KDF.customdata(action, event.target.id, true, true, {
+        propertyId: event.target.value,
+      });
+    }
+  });
 
   $(".address-details").on("click", (event) => {
     resetAddressSearch(false);
@@ -4669,24 +4666,4 @@ function getValidationMessageFromSession(id) {
       JSON.parse(sessionStorage.getItem("validationMessages")) || {};
     return validationMessages[id] || "Validation message not found";
   }
-}
-
-function adaptiveDebounce(func, delay) {
-  let timeoutId;
-  let isChanging = false;
-
-  return function (...args) {
-    const context = this;
-
-    if (!isChanging) {
-      isChanging = true;
-    }
-
-    clearTimeout(timeoutId);
-
-    timeoutId = setTimeout(() => {
-      isChanging = false;
-      func.apply(context, args);
-    }, delay);
-  };
 }
