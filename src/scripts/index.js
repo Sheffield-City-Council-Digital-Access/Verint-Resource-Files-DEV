@@ -668,6 +668,7 @@ function handleOnReadyEvent(_, kdf) {
   // --- HANDLE ADDRESS LOOKUP --------------------------------------------- \\
 
   $(".search-results").on("change", (event) => {
+    console.log("change event fired");
     if (event.target.value && !$(event.target).data("keyboardSelection")) {
       const action =
         addressSearchType[getCurrentPageId()] === "local"
@@ -681,6 +682,7 @@ function handleOnReadyEvent(_, kdf) {
   });
 
   $(".search-results").on("keydown", (event) => {
+    console.log("keydown event fired, key:", event.key);
     if (event.key === "Enter" || event.key === "Tab") {
       if (event.target.value) {
         const action =
