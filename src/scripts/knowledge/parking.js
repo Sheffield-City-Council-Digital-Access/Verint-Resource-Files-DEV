@@ -2482,7 +2482,10 @@ Contractors needing more time to work at a property will need to apply for trade
         Send link to review further information
       </button>
 	`,
-  { buttonLabel: "Parking Permit", formName: "" },
+  { 
+    buttonLabel: "Parking Permit Enquiry", 
+    formName: "parking_permit_enquiry",
+  },
   { typeKey: "parking_permit_transferred_to_service" },
   { typeKey: "parking_permit_information_provided" },
   {
