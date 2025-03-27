@@ -631,7 +631,7 @@ const reportTree = new ContentRaP(
     buttonLabel: "Report a problem with a tree",
     formName: "report_tree",
   },
-  { typeKey: "" },
+  { typeKey: "report_tree_transferred_to_service" },
   { typeKey: "" },
   {
     type: "Report",
