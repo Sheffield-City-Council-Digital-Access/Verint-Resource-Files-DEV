@@ -1725,7 +1725,10 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
 </button>
 
 	`,
-  { buttonLabel: "Parking Permit", formName: "" },
+  { 
+    buttonLabel: "Parking Permit Enquiry", 
+    formName: "parking_permit_enquiry",
+  },
   { typeKey: "parking_permit_transferred_to_service" },
   { typeKey: "parking_permit_information_provided" },
   {
