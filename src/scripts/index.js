@@ -667,7 +667,7 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE ADDRESS LOOKUP --------------------------------------------- \\
 
-  $(".search-results").on("blur", (event) => {
+  $(".search-results").on("focusout", (event) => {
     if (event.target.value) {
       const action =
         addressSearchType[getCurrentPageId()] === "local"
