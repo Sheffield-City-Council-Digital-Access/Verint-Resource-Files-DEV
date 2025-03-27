@@ -667,17 +667,20 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE ADDRESS LOOKUP --------------------------------------------- \\
 
-  $(".search-results").on("change", (event) => {
-    if (event.target.value) {
-      const action =
-        addressSearchType[getCurrentPageId()] === "local"
-          ? "retrieve-local-address"
-          : "retrieve-national-address";
-      KDF.customdata(action, event.target.id, true, true, {
-        propertyId: event.target.value,
-      });
-    }
-  });
+  $(".search-results").on(
+    "change",
+    debounce((event) => {
+      if (event.target.value) {
+        const action =
+          addressSearchType[getCurrentPageId()] === "local"
+            ? "retrieve-local-address"
+            : "retrieve-national-address";
+        KDF.customdata(action, event.target.id, true, true, {
+          propertyId: event.target.value,
+        });
+      }
+    }, 300)
+  );
 
   $(".address-details").on("click", (event) => {
     resetAddressSearch(false);
@@ -4666,4 +4669,14 @@ function getValidationMessageFromSession(id) {
       JSON.parse(sessionStorage.getItem("validationMessages")) || {};
     return validationMessages[id] || "Validation message not found";
   }
+}
+
+function debounce(func, delay) {
+  let timeoutId;
+  return function (...args) {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      func.apply(this, args);
+    }, delay);
+  };
 }
