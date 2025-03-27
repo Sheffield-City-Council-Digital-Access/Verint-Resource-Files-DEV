@@ -669,7 +669,7 @@ function handleOnReadyEvent(_, kdf) {
 
   $(".search-results").on(
     "change",
-    debounce((event) => {
+    adaptiveDebounce((event) => {
       if (event.target.value) {
         const action =
           addressSearchType[getCurrentPageId()] === "local"
@@ -4671,12 +4671,22 @@ function getValidationMessageFromSession(id) {
   }
 }
 
-function debounce(func, delay) {
+function adaptiveDebounce(func, delay) {
   let timeoutId;
+  let isChanging = false;
+
   return function (...args) {
+    const context = this;
+
+    if (!isChanging) {
+      isChanging = true;
+    }
+
     clearTimeout(timeoutId);
+
     timeoutId = setTimeout(() => {
-      func.apply(this, args);
+      isChanging = false;
+      func.apply(context, args);
     }, delay);
   };
 }
