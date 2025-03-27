@@ -480,7 +480,7 @@ const adaptationChase = new ContentH(
   </details>
   `,
   { buttonLabel: "Housing Adaptations Request", formName: "hou_adaptations" },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
@@ -536,7 +536,7 @@ const adaptationOther = new ContentH(
     buttonLabel: "Housing Adaptations Request",
     formName: "hou_adaptations",
   },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "repairs_and_investment_information_provided" },
 
   {
@@ -773,7 +773,7 @@ const asbestos = new ContentH(
     buttonLabel: "Raise Housing Decant Enquiry",
     formName: "hou_sustainment_decants",
   },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
@@ -912,7 +912,7 @@ const communalAreas = new ContentH(
     buttonLabel: "Raise Housing Enquiry ",
     formName: "hou_estates_enquiry",
   },
-  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Information",
@@ -1402,7 +1402,7 @@ const newAndExistingRepairs = new ContentH(
   </p> 
   `,
   { buttonLabel: "Raise Housing Decant Enquiry", formName: "hou_sustainment_decants" },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "repairs_and_investment_information_provided" },
 
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
@@ -3017,7 +3017,7 @@ const applicationChanges = new ContentH(
     </details>
   `,
   { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
-  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "rehousing_services_information_provided" },
   { type: "Apply", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing", "Rehousing"] },
   { date: "12/02/2025", name: "Nathan Smith" }
@@ -3059,7 +3059,7 @@ const applyForRehousing = new ContentH(
     </p>
   `,
   { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
-  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
@@ -4212,7 +4212,7 @@ const bidding = new ContentH(
       buttonLabel: "Raise Enquiry",
       formName: "hou_rehousing_enquiry",
     },
-    { typeKey: "rehousing_services_transferred_to_service" },
+    { typeKey: "" },
     { typeKey: "rehousing_services_information_provided" },
     {
       type: "Request",
@@ -4243,7 +4243,7 @@ const bidding = new ContentH(
       buttonLabel: "Raise Enquiry ",
       formName: "hou_rehousing_enquiry",
     },
-    { typeKey: "rehousing_services_transferred_to_service" },
+    { typeKey: "" },
     { typeKey: "rehousing_services_information_provided" },
     {
       type: "Request",
@@ -4480,7 +4480,7 @@ const bidding = new ContentH(
       buttonLabel: "Raise Enquiry",
       formName: "hou_rehousing_enquiry",
     },
-    { typeKey: "rehousing_services_transferred_to_service" },
+    { typeKey: "" },
     { typeKey: "rehousing_services_information_provided" },
     {
       type: "Request",
@@ -4808,7 +4808,7 @@ const balanceEnquiry = new ContentH(
   buttonLabel: "",
   formName: "",
 },
-{ typeKey: "rents_transfered_to_service" },
+{ typeKey: "" },
 { typeKey: "rents_information_provided" },
 {
   type: "Request",
@@ -5006,7 +5006,7 @@ const contactRentsTeam = new ContentH(
     </details>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "Contact Rents Team", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
@@ -5027,7 +5027,7 @@ const arrearsorDebt = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
@@ -5070,7 +5070,7 @@ const references = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "References", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
@@ -5384,7 +5384,7 @@ const rentVariation = new ContentH(
 </details>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "Rent Varitaion", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
@@ -5410,7 +5410,7 @@ const statements = new ContentH(
   </p> 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "Statements", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
@@ -5472,7 +5472,7 @@ const yorkshireWater = new ContentH(
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "Yorkshire Water", keywords: ["Rent", "Water", "Yorkshire"], categories: ["Housing"] },
   { date: "10/03/2025", name: "Nathan Smith" }
@@ -6061,7 +6061,7 @@ const tenancyEnforcementASB = new ContentH(
     <p>Victim Support may support with target hardening.</p>
   </p>`,
   { buttonLabel: "Raise report", formName: "hou_enforcement_asb" },
-  { typeKey: "tenancy_enforcement_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "tenancy_enforcement_information_provided" },
   { type: "Request", keywords: [], categories: ["Housing"] },
   { date: "14/02/2025", name: "Nathan Smith" }
@@ -6237,7 +6237,7 @@ const fobsandKeys = new ContentH(
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "tenancy_sustainment_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Fobs and Keys", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "19/03/2025", name: "Nathan Smith" }
@@ -6271,7 +6271,7 @@ Streets Ahead, Environmental Services, Local Assistance Scheme<br>
 
   `,
   { buttonLabel: "Parking Permits", formName: "Tenancy Sustainment" },
-  { typeKey: "tenancy_sustainment_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Parking Permits", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "07/11/2024", name: "Shahzad Athar" }
@@ -6303,7 +6303,7 @@ The same document cannot be used more than once (e.g., driving licence as primar
 
   `,
   { buttonLabel: "Name Changes", formName: "Tenancy Sustainment" },
-  { typeKey: "tenancy_sustainment_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Name Changes", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "07/11/2024", name: "Shahzad Athar" }
@@ -6419,7 +6419,7 @@ const permissions = new ContentH(
   </details>
   `,
   { buttonLabel: "Permissions", formName: "hou_sustainment_perm" },
-  { typeKey: "tenancy_sustainment_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Permissions", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "07/03/2025", name: "Nathan Smith" }
@@ -6489,7 +6489,7 @@ const tenancyAgreementRequest = new ContentH(
       </table>
   `,
   { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
-  { typeKey: "tenancy_sustainment_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   { type: "tenancyAgreementRequest", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "08/11/2024", name: "Shahzad Athar" }
@@ -6922,7 +6922,7 @@ const tenancyConditions = new ContentH(
 </details>
 `,
   { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
-  { typeKey: "tenancy_sustainment_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   { type: "tenancyAgreementRequest", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "08/11/2024", name: "Shahzad Athar" }

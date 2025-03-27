@@ -1343,7 +1343,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
       "margin-inline": "0 40%",
     });
     $("form.dform").css({
-      margin: "8px",
+      margin: "8px, auto",
       padding: "16px",
       background: "var(--color-white)",
     });
@@ -1813,7 +1813,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     const agentId = response.data.agendId;
     const ohmsId = response.data["profile-socialId-ohms"];
 
-    const url = `https://sccvmtholi01.sheffield.gov.uk/CRMHousing/default.asp?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
+    const url = `${response.data.url}?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
     const iframe = document.createElement("iframe");
 
     iframe.id = "ifrm1";
@@ -2086,7 +2086,7 @@ function checkPageProgress() {
 
   // Check if any other required fields are empty or invalid
   const hasEmptyOrInvalidOtherFields = otherFields.some((el) => {
-    let isEmpty = el.value.trim() === "";
+    let isEmpty = el.value.trim() === "" || el.value === "Please select...";
     let isValid = el.checkValidity();
     const name = el.name;
     if (
