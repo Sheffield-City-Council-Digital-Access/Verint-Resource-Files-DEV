@@ -86,7 +86,8 @@ const adaptation = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [adaptaion, adaptasion, adaptetion, adptation, adapttion, adaptiation, adptasion, 
+              addaptation, adabtation, adapation],
     categories: [],
   },
   { date: "24/02/2025", name: "Shahzad Athar" }
@@ -111,7 +112,8 @@ const blacksmith = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [blaksmith, blacksmth, blacksmitt, blaksmitt, blaksmeth, blaksmit, blacksmthh, 
+              blacksmitth, blacsmith, blacksmiht],
     categories: [],
   },
   { date: "24/02/2025", name: "Shahzad Athar" }
@@ -135,7 +137,8 @@ const brickwork = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [brikwork, bricwork, brickwok, brickworrk, brrickwork, brikworck, brikwerck, brickwrok, 
+              brickworck, brickwoork],
     categories: [],
   },
   { date: "24/02/2025", name: "Shahzad Athar" }
@@ -188,7 +191,8 @@ const chimneyStack = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [chimnyStack, chimeneyStack, chimeyStack, chimnayStack, chimneyStak, chimneyStck, chimenyStack, chimmneyStack, 
+              chimneyStach, chimnyStak],
     categories: [],
   },
   { date: "24/02/2025", name: "Shahzad Athar" }
@@ -216,7 +220,8 @@ const claimforDamage = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [clameforDamage, cliamforDamage, claimforDamge, claimeforDamage, clamforDamage, claimforDmage, claimfoprDamage, claimforDamagg, 
+              claimforDamgae, calimforDamage],
     categories: [],
   },
   { date: "24/02/2025", name: "Shahzad Athar" }
@@ -259,7 +264,8 @@ const clothesPost = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [clothsPost, clothePost, clothesPst, clothesPsot, clothesPot, clotesPost, clohtesPost, 
+              clothessPost, clothesPosst, clothesPoost],
     categories: [],
   },
   { date: "24/02/2025", name: "Shahzad Athar" }
@@ -283,7 +289,8 @@ const communalArea = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [comunalArea, communalAre, comunalAreaa, commmnalArea, comunelArea, commuanlArea, communalAria, 
+              commnalArea, comunnalArea, comunnalAria],
     categories: [],
   },
   { date: "24/02/2025", name: "Shahzad Athar" }
@@ -323,7 +330,8 @@ const concrete = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [concret, concrte, concete, concreate, conkreet, konkreet, concrait, 
+              conkret, concrt, conkrite],
     categories: [],
   },
   { date: "24/02/2025", name: "Shahzad Athar" }
@@ -349,7 +357,8 @@ const dampandMould = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [dampanMould, dampandMold, dampamdMould, dammpandMould, dampadMould, dampandMouuld, dampandMuold, 
+              dampndMould, dampandMoukd, dampandMouod],
     categories: [],
   },
   { date: "24/02/2025", name: "Shahzad Athar" }
@@ -417,7 +426,10 @@ const districtHeatingSwitch2Setup = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [districtHeatingSwich2Setup, districHeatingSwitch2Setup, districHeatingSwtich2Setup, 
+               districtHeaatingSwitch2Setup, districtHeatingSwitch2Setp, districtHeatingSwitch2Setuo, 
+               districtHeatingSwitch2Setpu, distrctHeatingSwitch2Setup, distrcitHeatingSwitch2Setup, 
+                districtHeatngSwitch2Setup],
     categories: [],
   },
   { date: "03/03/2025", name: "Shahzad Athar" }
@@ -462,7 +474,8 @@ const doorFurniture  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [dorFurniture, doorFurnture, doorFrniture, dooorFurniture, doorFurnituer, doorFurniure, 
+              doorFurinture, doorFuniture, doorFurnitture, doorFurniature],
     categories: [],
   },
   { date: "03/03/2025", name: "Shahzad Athar" }
@@ -513,7 +526,8 @@ const drainage  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [drainag, dranage, drainige, draniage, drainaje, drainiage, dranige, 
+              dranije, drainaeg, drianage],
     categories: [],
   },
   { date: "03/03/2025", name: "Shahzad Athar" }
@@ -547,7 +561,8 @@ const disrepair  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [disrepar, disrepir, disrepair, disrepier, disprepair, disrepaire, desrepair, 
+              disrpair, disrpare, disrrepaiir],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -561,37 +576,11 @@ const electricalandHeating = new ContentR(
   <h3>Electrical Items</h3>
   <p>For electrical fittings, additional sockets, etc., email 
   <a href="mailto:ElectricalSheffield@Sheffield.go.uk" class="email">ElectricalSheffield@Sheffield.go.uk</a>.</p>
-  
-<button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="Refer customer to the service"
-        onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/refer_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&txt_emailservice=ElectricalSheffield@Sheffield.go.uk\`
-            "
-      >
-        Refer customer to the service
-      </button>
-
 
   <h3>Heating Items</h3>
   <p>For extra radiators, email 
   <a href="mailto:GasSheffield@sheffield.gov.uk" class="email">GasSheffield@sheffield.gov.uk</a>.</p>
 
-  <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="Refer customer to the service"
-        onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/refer_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&txt_emailservice=GasSheffield@sheffield.gov.uk\`
-            "
-      >
-        Refer customer to the service
-      </button>
 
   `,
   { buttonLabel: "", formName: "" },
@@ -599,7 +588,9 @@ const electricalandHeating = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [electricalandHeting, electricalandHeting, eletricalandHeating, elctricalandHeating, 
+              electricalndHeating, electricalandHeatng, electricalandHeeting, 
+               electricalandHeatiing, electiricalandHeating, electriclandHeating],
     categories: [],
   },
   { date: "24/02/2025", name: "Shahzad Athar" }
@@ -653,7 +644,8 @@ const electricalTesting  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [electricalTesing, electricalTestng, electricalTetsing, electricalTsting, electricalTessting, 
+              electircalTesting, electricalTseting, electricalTsting, electricalTestin, electrialTesting],
     categories: [],
   },
   { date: "03/03/2025", name: "Shahzad Athar" }
@@ -674,7 +666,9 @@ const externalContractors   = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [externalContractrs, extenalContractors, externalContarctors, externalContrctors, 
+              externalConttractors, extarnalContractors, extternalContractors, externalContracors, 
+              externalConractors, externalContrators],
     categories: [],
   },
   { date: "27/02/2025", name: "Shahzad Athar" }
@@ -715,7 +709,8 @@ const externalDoorLock   = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [externalDorLock, externalDorrLock, externalDoorLok, externalDoorLck, externalDoorLocck, 
+              externnalDoorLock, externalDoorrLock, externalDooorLock, externalDoorLk, externalDoorLoc],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -760,7 +755,8 @@ const externalDoor   = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [externalDor, externalDorr, extenalDoor, externalDooor, externalDoorr, 
+              externalDour, extarnalDoor, externnalDoor, extrenalDoor, externalDoer],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -793,7 +789,8 @@ const flatRoof   = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [flatRooff, faltRoof, flatRoofff, flattRoof, fllatRoof, flatRof, 
+              flatRoofff, flatRoff, fltRoof, flatRofe],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -832,7 +829,8 @@ const floororStaircase   = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [floororStaircae, floororStaiircase, floororStaircsse, floororStaircasse, floororStaircsae, 
+              flororStaircase, floororStaircaase, flooororStaircase, floororStaaircase, floororStaircse],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -871,7 +869,8 @@ const footpathandSteps   = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [footpathandStepps, footpathanSteps, footpathandStpes, footpathandStps, footpathandSteep, 
+              footpathndSteps, footpatandSteps, footpathaandSteps, footpathandStepes, fotpathandSteps],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -946,7 +945,8 @@ const fireJobs  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [fireJbos, fireJbso, fireJbso, fireJbss, fireJsbos, fireJbss, fireJobbs, 
+              firJobs, ffireJobs, fireJops],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -981,7 +981,10 @@ const garageorDetachedOutbuilding = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [garageorDetachedOutbulding, garageorDetachedOuutbuilding, garageorDetachdOutbuilding, 
+              garagerDetachedOutbuilding, garageorDettachedOutbuilding, garageorDetachedOtbuilding, 
+              garagorDetachedOutbuilding, garageorDetachedOutbuliding, garageorDetachedOutbuildig, 
+              garageorDetahcedOutbuilding],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -1424,7 +1427,9 @@ const gasandDomesticSystems   = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [gasandDomesticSystms, gasandDomesticSytems, gasandDometicSystems, gasandDomsticSystems, 
+              gasandDometicSytems, gasandDomesticSystesm, gasandDomesticSystm, gasandDomesticSytem, 
+              gasandDomesticSysstems, gasndDomesticSystems],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -1475,7 +1480,11 @@ const gasReinstateandUncapServicesorAppointments  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [gasReinstateandUncapServcesorAppointments, gasReinstateandUncapServiceorAppointments, 
+              gasReinstateandUncapServicessorAppointments, gasReinstateandUncapServiceorApoinments, 
+              gasReinstateandUncapServicseorAppointments, gasReinstateandUncapServiesorAppointments, 
+              gasReinstateandUncapServicesorAppoinments, gasReinstateandUncapSericesorAppointments, 
+              gasReinstateandUncapSerivesorAppointments, gasReinstateandUncapServicsorAppointments],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -1524,7 +1533,8 @@ const gateorFence  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [gatorFence, gateorFance, gateorFnce, gateorFenec, gateorFense, 
+              gateorFencc, gaateorFence, gateorFencce, gatteorFence, gateorFenxe],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -1580,7 +1590,11 @@ const glazingincludingfailedDoubleGlazedUnits = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [glazingincludingfailedDoubleGlazdUnits, glazzingincludingfailedDoubleGlazedUnits, 
+              glazingincludingfaieldDoubleGlazedUnits, glazingincludingfailedDubleGlazedUnits, 
+              glazingincludingfailedDoubleGlasedUnits, glazingincludingfailedDoubleGlazzedUnits, 
+              glazingincludingfailedDoubleGlazedUnitts, glazingincludingfaileddDoubleGlazedUnits, 
+              glazngincludingfailedDoubleGlazedUnits, glazingincludingfailedDoubleGlazedUnts],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -1628,7 +1642,10 @@ const gutteringandRainwaterPipes  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [gutteringandRainwatrPipes, gutteringandRainwaterPpes, gutteringandRainwaterPipe, 
+              gutteringandRaiinwaterPipes, gutterinandRainwaterPipes, gutteringndRainwaterPipes, 
+              gutteringandRainwaterrPipes, gutteringandRainwterPipes, gutteringandRainwaterPipees, 
+              gutterringandRainwaterPipes],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -1795,7 +1812,8 @@ const handyperson  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [handipersn, handypersson, handypersn, handyprson, handyperon, handypersoon, 
+              hndyperson, handipersone, handyperrson, handperson],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -1839,7 +1857,8 @@ const internalDoor  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [internlDoor, internalDor, internalDorr, intarnalDoor, internalDooor, 
+              internalDoorr, intrnalDoor, iternalDoor, internallDoor, internalDoer],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -1887,7 +1906,8 @@ const kitchenUnit  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [kitchennUnit, kitcenUnit, kitchenUnitt, kicthenUnit, kithchenUnit, 
+              kitchenUunit, kitchenUnitt, kitchunUnit, kitchenUnite, kitchenUnnit],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -1912,7 +1932,8 @@ const liftorHoist  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [lifttorHoist, liftorHoit, liforHoist, liftorHoits, liftorHois, liftorHoistt, 
+              lftorHoist, liftorHoisst, lifftrHoist, liftorHoost],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -1949,12 +1970,12 @@ const lostKeyorFob  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [lostKeyorFb, lostKeyorFo, lostKyorFob, lostKeyrFob, lostKeyorrFob, losstKeyorFob, 
+              lostKeyorFoob, lostKeyoFob, lostKyeorFob, lostKeyrFobb],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
 );
-
 
 const newBuildPropertyDefectorEmergencyCallOut  = new ContentR(
   "newBuildPropertyDefectorEmergencyCallOut",
@@ -1998,7 +2019,11 @@ const newBuildPropertyDefectorEmergencyCallOut  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [newBuildPropertyDefectorEmergencCallOut, newBuidPropertyDefectorEmergencyCallOut, 
+              newBuildPropertyDefctorEmergencyCallOut, newBuildPropertyDefectorEmergencCalOut, 
+              newBuildPropertyDefectorEmergencyCallOuut, newBuildPropertyDefectorEmergencCallOout, 
+              newBuildPropertyDefectorEmergncyCallOut, newBuildPropertDefectorEmergencyCallOut, 
+              newBuildProperyDefectorEmergencyCallOut, newBuildPropertyDefectorEmrgencyCallOut],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -2053,7 +2078,9 @@ const paintingCommunalArea  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [paintigCommunalArea, paintingComunalArea, painntingCommunalArea, paintingCommunalAre, 
+              paintingCommunalAree, paintingComunallArea, pantingCommunalArea, paintingCommunaArea, 
+              paintingComunalAreaa, paintingCommunallArea],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -2109,7 +2136,8 @@ const pitchedRoof  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [pithedRoof, pitcheddRoof, pitchedRooff, pithcedRoof, pitchedRoofff, 
+              pitchedRooffff, pitchdRoof, pitchdRooff, pitchedRoofff, pithchedRoof],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -2151,7 +2179,8 @@ const plastering  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [plasterin, plasttering, plasterinng, plasteriing, plastaring, 
+              plaastering, plasteering, plastteringg, plasterring, plaasterinng],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -2196,7 +2225,11 @@ const plumbingandDomesticHotorColdWater  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [plumbingandDomesticHotorColdWter, plumbingandDomesticHotrColdWater, 
+              plumbingandDomesticHotorColddWater, plumbingandDometicHotorColdWater, 
+              plumbingndDomesticHotorColdWater, plumbingandDomesticHotorrColdWater, 
+              plumbingandDomsticHotorColdWater, plumingandDomesticHotorColdWater, 
+              plumbingandDomesticHotorColdWaterr, plumbingandDomesticHotorColdWaater],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -2240,7 +2273,8 @@ const refuseChute  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [refusseChute, refuzeChute, refusChute, refuseChut, refuzeChut, refusseeChute, 
+              refusChutte, refuseeChute, refseChute, refuseChutte],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -2313,7 +2347,10 @@ const reroofingProgrammeWarranty  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [reroofingProgrameWarranty, reroofingProgrammeWarrnty, reroofingProgrammeeWarranty, 
+              reroofingProgrmmeWarranty, reroofingProgrammeWarranety, reroofngProgrammeWarranty, 
+              reroofingProgrammWarranty, reroofingProgrammeWarrantyy, reroofingProgrameWarrantyy, 
+              reroofingProgrammeWaranty],
     categories: [],
   },
   { date: "05/03/2025", name: "Shahzad Athar" }
@@ -2351,7 +2388,8 @@ const rightToBuy  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [rigthToBuy, rightTBuy, rightToBuyy, rigtToBuy, rightToBy, rightTooBuy, 
+              righToBuy, rightToBu, rightToBuuy, rightTtoBuy],
     categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
@@ -2384,7 +2422,8 @@ const rightToRepair  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [rigthToRepair, rightTRepair, rightToRepaair, righToRepair, rightToRepai, rightTooRepair, 
+              righToRepir, rightToReapir, rightToRrepair, rightToReepair],
     categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
@@ -2436,7 +2475,8 @@ const scaffolding  = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [scafolding, scafflding, scafoldng, scaffoling, scaffoldin, scaffoldingg, 
+              scafollding, scaffolling, scaffoelding, scaffoldinng],
     categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
@@ -2463,7 +2503,8 @@ const surveyors = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [survayors, servayors, surveryors, surveyers, sureyors, surveeyors, 
+              survyyors, survyors, suveyors, surveryor],
     categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
@@ -2483,7 +2524,7 @@ const tarmac = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [tarmak, tarmaac, tarmacc, tarmoc, taramc, tarmoc, tarmaek, tarmaak, tarmak, tarrmac],
     categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
@@ -2529,7 +2570,8 @@ const wallRepair = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [wallRepir, walRepair, wallRpair, wallRepaiir, wallRepaar, walRepaiir, 
+              wallRepairr, wwallRepair, wallReapir, wallRepirr],
     categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
@@ -2598,7 +2640,10 @@ const wcBathorShowerorSinkUnit = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [wcBathorShowerrSinkUnit, wcBathorShowerorSinkUnt, wcBathorShoweroSinkUnit, 
+              wcBathorShowerorSinkUnitt, wcBathorShowerorSInkUnit, wcBathorShowerrorSinkUnit, 
+              wcBathorShowerorSinkUunit, wcBathorShwerorSinkUnit, wcBathorShowerrorSInkUnit, 
+              wcBathorShowrorSinkUnit],
     categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
@@ -2633,7 +2678,9 @@ const windowSillorCill = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [windowSilorCill, windowSillorCil, windowSillorCell, windowSillorCiill, 
+              windowSilorCil, windoSillorCill, windowSilorrCill, windowSillorCilll, windowSilrCill, 
+              windowSillorCillll],
     categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
@@ -2676,7 +2723,8 @@ const windowFrame = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [windwFrame, windoFrame, windowFrme, windowFrrame, windowFraame, windowFame, 
+              windowFramme, windowFrime, windoFram, windowFramee],
     categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
@@ -2701,7 +2749,8 @@ const workingatHeight = new ContentR(
   { typeKey: "" },
   {
     type: "",
-    keywords: [],
+    keywords: [workingatHeigh, workingattHeight, workngatHeight, workingatHeigt, workingatHeigght, 
+              workingatHeighht, workingatHeigtt, workingaHeight, workingatHeigth, workingaHeightt],
     categories: [],
   },
   { date: "13/03/2025", name: "Shahzad Athar" }
