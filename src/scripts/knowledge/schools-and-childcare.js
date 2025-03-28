@@ -109,9 +109,8 @@ const freeSchoolMeals = new ContentSaC(
     </p>
     <h3>Free food supplement vouchers for October half-term holidays</h3>
     <p>
-      We're pleased to inform you that the new Government will continue funding 
-      for the Household Support Fund. 
-      We will therefore provide a £15 food supplement voucher for:
+      We are pleased to inform you that, as part of the Household Support Fund, 
+      we will be providing a £30 food supplement voucher for:
     </p>
     <ul>
       <li>Children who are in receipt of income-based free school meals</li>
@@ -119,7 +118,7 @@ const freeSchoolMeals = new ContentSaC(
       <li>Young people leaving their care setting (care leavers)</li>
     </ul>
     <p>
-      We will be issuing vouchers from the week beginning 21 October. 
+      We will be issuing vouchers from the week beginning 24 March. 
     </p>
     <p>
       You do not need to apply for the scheme. You will receive a letter 
@@ -143,7 +142,7 @@ const freeSchoolMeals = new ContentSaC(
     </ol>
     <p>
       Codes need to be activated within 3 months of the issue 
-      date (21 October) or they will be cancelled automatically. 
+      date (24 March) or they will be cancelled automatically. 
       Once vouchers have been claimed on the Edenred website, 
       they will be valid for 12 months.
     </p>
@@ -318,7 +317,7 @@ const freeSchoolMeals = new ContentSaC(
     buttonLabel: "Apply for Free School Meals",
     formName: "apply_school_meals",
   },
-  { typeKey: "free_school_meals_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "free_school_meals_information_provided" },
   {
     type: "Apply",
@@ -449,7 +448,7 @@ const fundedEarlyLearning = new ContentSaC(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "funded_early_learning_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "funded_early_learning_information_provided" },
   {
     type: "Apply",

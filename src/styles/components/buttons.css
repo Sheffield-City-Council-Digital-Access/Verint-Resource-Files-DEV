@@ -54,16 +54,16 @@
 
 #dform_container button.disabled,
 #dform_container button[disabled] {
-  color: var(--color-grey-4);
+  color: var(--color-grey-6);
   background: var(--color-white);
-  border: solid 0.1rem var(--color-grey-4);
+  border: solid 0.1rem var(--color-grey-6);
   cursor: not-allowed;
 }
 
 #dform_container button.primary-btn.dform_widget_type_button.disabled {
   color: var(--color-white) !important;
-  background: var(--color-grey-4) !important;
-  border: solid 0.1rem var(--color-grey-4) !important;
+  background: var(--color-grey-6) !important;
+  border: solid 0.1rem var(--color-grey-6) !important;
   cursor: not-allowed !important;
 }
 
@@ -93,9 +93,9 @@
 }
 
 #dform_container button.disabled:focus {
-  color: var(--color-grey-4);
+  color: var(--color-grey-6);
   background: var(--color-white);
-  border: solid 0.1rem var(--color-grey-4);
+  border: solid 0.1rem var(--color-grey-6);
   cursor: not-allowed;
   outline: none;
 }
@@ -110,8 +110,8 @@
 
 #dform_container button.primary-btn.dform_widget_type_button.disabled:focus {
   color: var(--color-white);
-  background: var(--color-grey-4);
-  border: solid 0.1rem var(--color-grey-4);
+  background: var(--color-grey-6);
+  border: solid 0.1rem var(--color-grey-6);
   cursor: not-allowed;
   outline: none;
 }
@@ -212,15 +212,15 @@
   button.link-btn.map-icon.disabled.dform_widget_type_button::before {
   content: "\e921";
   color: var(--color-white);
-  background: var(--color-grey-4);
-  border: solid 0.1rem var(--color-grey-4);
+  background: var(--color-grey-6);
+  border: solid 0.1rem var(--color-grey-6);
   cursor: not-allowed;
   outline: none;
 }
 
 #dform_container
   button.link-btn.map-icon.disabled.dform_widget_type_button:hover {
-  color: var(--color-grey-4);
+  color: var(--color-grey-6);
 }
 
 /* --- GEO LOCATION --------------------------------------------------------- */
@@ -284,16 +284,17 @@
 #dform_container
   button.link-btn.map-icon.disabled.dform_widget_type_button:hover::before {
   color: var(--color-white);
-  background: var(--color-grey-4);
+  background: var(--color-grey-6);
   text-decoration: underline;
-  text-decoration-color: var(--color-grey-4);
-  border: solid 0.1rem var(--color-grey-4);
+  text-decoration-color: var(--color-grey-6);
+  border: solid 0.1rem var(--color-grey-6);
   cursor: not-allowed;
 }
 
 /* --- LOCATOR -------------------------------------------------------------- */
 
-#dform_container .locator-or-label {
+#dform_container .locator-or-label,
+#dform_container .locator-container .dform_widget_type_buttonset {
   margin: 0;
 }
 

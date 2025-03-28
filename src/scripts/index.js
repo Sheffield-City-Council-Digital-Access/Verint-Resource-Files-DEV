@@ -668,7 +668,7 @@ function handleOnReadyEvent(_, kdf) {
   // --- HANDLE ADDRESS LOOKUP --------------------------------------------- \\
 
   $(".search-results").on("change", (event) => {
-    if (event.target.value) {
+    if (event.target.value && !$(event.target).data("keyboardSelection")) {
       const action =
         addressSearchType[getCurrentPageId()] === "local"
           ? "retrieve-local-address"
@@ -676,6 +676,22 @@ function handleOnReadyEvent(_, kdf) {
       KDF.customdata(action, event.target.id, true, true, {
         propertyId: event.target.value,
       });
+    }
+    $(event.target).removeData("keyboardSelection");
+  });
+
+  $(".search-results").on("keydown", (event) => {
+    if (event.key === "Enter" || event.key === "Tab") {
+      if (event.target.value) {
+        const action =
+          addressSearchType[getCurrentPageId()] === "local"
+            ? "retrieve-local-address"
+            : "retrieve-national-address";
+        KDF.customdata(action, event.target.id, true, true, {
+          propertyId: event.target.value,
+        });
+        $(event.target).data("keyboardSelection", true);
+      }
     }
   });
 
@@ -1159,10 +1175,16 @@ function handleOnReadyEvent(_, kdf) {
 
     fields.forEach((field) => {
       let value = KDF.getVal(field);
-      if (!value || value === "Pending" || value === "In progress") {
+      if (
+        !value ||
+        value.length < 1 ||
+        value === "Pending" ||
+        value === "In progress"
+      ) {
         isComplete = false;
         incompleteFields.push(field);
       }
+      console.log("incompleteFields", incompleteFields);
     });
 
     if (isComplete) {
@@ -1189,12 +1211,49 @@ function handleOnReadyEvent(_, kdf) {
 
     incompleteFields.forEach((field) => {
       let id = `dform_widget_${field}`;
-      let label = document.querySelector(`label[for='${id}']`);
-      let labelText = label ? label.textContent : field;
-      let pageTitleText = "Unknown Section";
-      let fieldValue = KDF.getVal(field) || "Not Answered";
-
       let element = document.getElementById(id);
+      let label, labelText, fieldValue;
+
+      if (!element) {
+        let radioContainer = document.querySelector(
+          `[data-name="${field}"][data-type="radio"]`
+        );
+        let checkboxContainer = document.querySelector(
+          `[data-name="${field}"][data-type="multicheckbox"]`
+        );
+
+        if (radioContainer) {
+          let selectedRadio = radioContainer.querySelector(
+            "input[type='radio']:checked"
+          );
+          fieldValue = selectedRadio ? selectedRadio.value : "Not Answered";
+          labelText =
+            radioContainer.querySelector("legend")?.textContent || field;
+          element = radioContainer;
+        } else if (checkboxContainer) {
+          let selectedCheckboxes = [
+            ...checkboxContainer.querySelectorAll(
+              "input[type='checkbox']:checked"
+            ),
+          ];
+          fieldValue = selectedCheckboxes.length
+            ? selectedCheckboxes.map((cb) => cb.value).join(", ")
+            : "Not Answered";
+          labelText =
+            checkboxContainer.querySelector("legend")?.textContent || field;
+          element = checkboxContainer;
+        } else {
+          fieldValue = KDF.getVal(field) || "Not Answered";
+          label = document.querySelector(`label[for='${id}']`);
+          labelText = label ? label.textContent : field;
+        }
+      } else {
+        label = document.querySelector(`label[for='${id}']`);
+        labelText = label ? label.textContent : field;
+        fieldValue = KDF.getVal(field) || "Not Answered";
+      }
+
+      let pageTitleText = "Unknown Section";
       if (element) {
         let page = element.closest('[data-type="page"]');
         if (page) {
@@ -1300,7 +1359,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
       "margin-inline": "0 40%",
     });
     $("form.dform").css({
-      margin: "8px",
+      margin: "8px, auto",
       padding: "16px",
       background: "var(--color-white)",
     });
@@ -1340,8 +1399,8 @@ function handleFieldChangeEvent(event, kdf, field) {
     field.type === "text" ||
     field.type === "number" ||
     field.type === "email" ||
-    field.type === "tel" ||
-    field.type === "textarea"
+    field.type === "tel"
+    // || field.type === "textarea"
   ) {
     $(`#${field.id}`).val(formatRemoveEccessWhiteSpace(KDF.getVal(field.name)));
   }
@@ -1770,7 +1829,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     const agentId = response.data.agendId;
     const ohmsId = response.data["profile-socialId-ohms"];
 
-    const url = `https://sccvmtholi01.sheffield.gov.uk/CRMHousing/default.asp?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
+    const url = `${response.data.url}?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
     const iframe = document.createElement("iframe");
 
     iframe.id = "ifrm1";
@@ -2043,7 +2102,7 @@ function checkPageProgress() {
 
   // Check if any other required fields are empty or invalid
   const hasEmptyOrInvalidOtherFields = otherFields.some((el) => {
-    let isEmpty = el.value.trim() === "";
+    let isEmpty = el.value.trim() === "" || el.value === "Please select...";
     let isValid = el.checkValidity();
     const name = el.name;
     if (
@@ -2941,83 +3000,89 @@ function refreshReviewPage() {
 // --- CONTACT TEAM PANEL --------------------------------------------------- \\
 
 function showContactTeamPanel() {
-  const contactInfo = document.createElement("aside");
-  contactInfo.classList.add("contact-information");
+  if (KDF.getVal("txt_contact_title")) {
+    const contactInfo = document.createElement("aside");
+    contactInfo.classList.add("contact-information");
 
-  const header = document.createElement("header");
-  const headerTitle = document.createElement("h2");
-  headerTitle.textContent = KDF.getVal("txt_contact_title");
-  header.appendChild(headerTitle);
+    const header = document.createElement("header");
+    const headerTitle = document.createElement("h2");
+    headerTitle.textContent = KDF.getVal("txt_contact_title");
+    header.appendChild(headerTitle);
 
-  const main = document.createElement("main");
-  main.classList.add("contact-details");
+    const main = document.createElement("main");
+    main.classList.add("contact-details");
 
-  const emailIcon = document.createElement("i");
-  emailIcon.classList.add("icon");
-  const emailIconSpan = document.createElement("span");
-  emailIconSpan.classList.add("icon-email");
-  emailIcon.appendChild(emailIconSpan);
+    if (KDF.getVal("txt_contact_link")) {
+      const emailIcon = document.createElement("i");
+      emailIcon.classList.add("icon");
+      const emailIconSpan = document.createElement("span");
+      emailIconSpan.classList.add("icon-email");
+      emailIcon.appendChild(emailIconSpan);
 
-  const emailLink = document.createElement("a");
-  emailLink.href = KDF.getVal("txt_contact_link");
-  emailLink.textContent = "Ask us a question";
+      const emailLink = document.createElement("a");
+      emailLink.href = KDF.getVal("txt_contact_link");
+      emailLink.textContent = "Ask us a question";
 
-  main.appendChild(emailIcon);
-  main.appendChild(emailLink);
+      main.appendChild(emailIcon);
+      main.appendChild(emailLink);
+    }
 
-  const phoneIcon = document.createElement("i");
-  phoneIcon.classList.add("icon");
-  const phoneIconSpan = document.createElement("span");
-  phoneIconSpan.classList.add("icon-phone");
-  phoneIcon.appendChild(phoneIconSpan);
+    if (KDF.getVal("tel_contact_number")) {
+      const phoneIcon = document.createElement("i");
+      phoneIcon.classList.add("icon");
+      const phoneIconSpan = document.createElement("span");
+      phoneIconSpan.classList.add("icon-phone");
+      phoneIcon.appendChild(phoneIconSpan);
 
-  const phoneLink = document.createElement("a");
-  phoneLink.href = `tel:${KDF.getVal("tel_contact_number")}`;
-  phoneLink.textContent = `${KDF.getVal("tel_contact_number").slice(
-    0,
-    4
-  )} ${KDF.getVal("tel_contact_number").slice(4, 7)} ${KDF.getVal(
-    "tel_contact_number"
-  ).slice(7, 11)}`;
-  main.appendChild(phoneIcon);
-  main.appendChild(phoneLink);
+      const phoneLink = document.createElement("a");
+      phoneLink.href = `tel:${KDF.getVal("tel_contact_number")}`;
+      phoneLink.textContent = `${KDF.getVal("tel_contact_number").slice(
+        0,
+        4
+      )} ${KDF.getVal("tel_contact_number").slice(4, 7)} ${KDF.getVal(
+        "tel_contact_number"
+      ).slice(7, 11)}`;
+      main.appendChild(phoneIcon);
+      main.appendChild(phoneLink);
+    }
 
-  if (KDF.getVal("txt_contact_address")) {
-    const locationIcon = document.createElement("i");
-    locationIcon.classList.add("icon");
-    locationIcon.classList.add("align-self");
-    const locationIconSpan = document.createElement("span");
-    locationIconSpan.classList.add("icon-location");
-    locationIcon.appendChild(locationIconSpan);
+    if (KDF.getVal("txt_contact_address")) {
+      const locationIcon = document.createElement("i");
+      locationIcon.classList.add("icon");
+      locationIcon.classList.add("align-self");
+      const locationIconSpan = document.createElement("span");
+      locationIconSpan.classList.add("icon-location");
+      locationIcon.appendChild(locationIconSpan);
 
-    const address = document.createElement("p");
-    const addressString = KDF.getVal("txt_contact_address").replace(
-      /, /g,
-      "<br/>"
-    );
-    address.innerHTML = addressString;
-    main.appendChild(address);
-    main.appendChild(locationIcon);
-    main.appendChild(address);
-  }
+      const address = document.createElement("p");
+      const addressString = KDF.getVal("txt_contact_address").replace(
+        /, /g,
+        "<br/>"
+      );
+      address.innerHTML = addressString;
+      main.appendChild(address);
+      main.appendChild(locationIcon);
+      main.appendChild(address);
+    }
 
-  const footer = document.createElement("footer");
-  const footerImg = document.createElement("img");
-  footerImg.src =
-    "https://www.sheffield.gov.uk/themes/custom/bbd_localgov/images/council-tax.jpeg";
-  footerImg.alt = "Footer Image";
+    const footer = document.createElement("footer");
+    const footerImg = document.createElement("img");
+    footerImg.src =
+      "https://www.sheffield.gov.uk/themes/custom/bbd_localgov/images/council-tax.jpeg";
+    footerImg.alt = "Footer Image";
 
-  footer.appendChild(footerImg);
+    footer.appendChild(footerImg);
 
-  contactInfo.appendChild(header);
-  contactInfo.appendChild(main);
-  contactInfo.appendChild(footer);
+    contactInfo.appendChild(header);
+    contactInfo.appendChild(main);
+    contactInfo.appendChild(footer);
 
-  const target = document.querySelector(".title-container");
-  if (target) {
-    target.after(contactInfo);
-  } else {
-    console.error("Element with class title-container not found");
+    const target = document.querySelector(".title-container");
+    if (target) {
+      target.after(contactInfo);
+    } else {
+      console.error("Element with class title-container not found");
+    }
   }
 }
 

@@ -82,8 +82,23 @@ class FormDaMH extends CoreDaMH {
         Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the
         call is not answered raise a case.
       </p>
-      <h3>Eligibility</h3>
-      <p>Household income is the total income of all people sharing a household.</p>
+      <h2>Eligibility</h2>
+      <h1>Who can apply</h1>
+      <p>
+        You can apply if you are the parent or carer of a child with a diagnosed disability and:</p>
+        <ul>
+        <li>they are under 18 years old</li>
+        <li>you are on means-tested benefits or your Household income is less than £21,000 per year</li>
+        <li>your child or young person receives High Rate Disability Living Allowance in either care or mobility components (0 to 16 years)</li>
+        <li>your child or young person receives Enhanced Rate Personal Independence Payment for either daily living or mobility components (16 to 18 years)</li>
+        <li>you do not already receive another short break or respite service or a Direct Payment for that individual child (or you can agree to stop using the other service if you want to use this one)</li>
+        </ul>
+       <p>
+        Or you can apply if a relevant professional who knows your child and your family completes and signs an ‘Impact Information Form’ which explains your child’s disability and how this impacts on your whole family.
+       </p)    
+      <p>
+       Household income is the total income of all people sharing a household.
+      </p>
       <p>
         The easiest way for us to tell if you are eligible to apply is to look if you
         are entitled to free school meals. This does not show us your income, but if a
@@ -91,8 +106,7 @@ class FormDaMH extends CoreDaMH {
         receipt of certain benefits.
       </p>
       <p>
-        If you are not eligible for free school meals, we will ask for evidence of
-        other means-tested benefits (listed below):
+       If you are not eligible for free school meals, we will ask for evidence of other means-tested benefits (listed below):
       </p>
       <ul>
         <li>Income-based Free School Meals</li>
@@ -104,9 +118,7 @@ class FormDaMH extends CoreDaMH {
         <li>Housing Benefit</li>
         <li>Council Tax Support</li>
         <li>Universal Credit</li>
-        <li>
-          Social Fund (Sure Start Maternity Grant, Funeral Payment, Cold Weather
-          Payment)
+        <li>Social Fund (Sure Start Maternity Grant, Funeral Payment, Cold Weather Payment)
         </li>
       </ul>
       <p>
@@ -115,16 +127,11 @@ class FormDaMH extends CoreDaMH {
       </p>
       <ul>
         <li>PAYE-including commission, bonuses, overtime</li>
-        <li>
-          Self-employed income (taxable profit for financial year ending between 6
-          April 2015 and 5 April 2016)
-        </li>
+        <li>Self-employed income (taxable profit for financial year ending between 6 April 2015 and 5 April 2016)</li>
         <li>Income from property</li>
         <li>Pension income</li>
         <li>Other benefits and other income including maintenance payments</li>
-        <li>
-          Interest from bonds, trusts, bank/building society and any investments
-        </li>
+        <li>Interest from bonds, trusts, bank/building society and any investments</li>
         <li>Dividends</li>
       </ul>
       <p>
@@ -133,6 +140,27 @@ class FormDaMH extends CoreDaMH {
         means-tested benefits. DLA and PIP does not count as part of your household
         income in these proposals.
       </p>
+      <p>
+      <h2>If you receive other short break services</h2>
+       <p>You are not eligible to apply for this grant if you already receive:</p>
+        <ul>
+        <li>SNIPS activity including mainstream leisure clubs such as:
+            <li>guides</li>
+            <li>scouts<li>
+            <li>sports club (tennis, football, swimming, karate etc)</li>
+            <li>where children without additional needs or disabilities also attend short break clubs
+             for disabled children only</li>
+        <li>direct payment</li>
+        <li>befriending through SNIPS (open access activities funded by us however, 
+            if you have more than one disabled child, and one child attends a short breaks service,
+            you can still apply for a grant for your other child if they are eligible.</li>
+        <li>overnight respite</li>
+        </ul>        
+      </p>
+      <p>
+      You can choose to change to a Short Break Grant from your current service (if you are eligible). Discuss it with your social worker or a member of the SNIPS team. Remember that the Short Break Grant is a single payment per year. Most other short break services provide for your family all year round.</p>
+      </p>
+
     `,
     { buttonLabel: "Short Breaks", formName: "apply_short_break_grant" },
     { typeKey: "short_breaks_transfered_to_service" },
@@ -169,7 +197,7 @@ class FormDaMH extends CoreDaMH {
     ], 
       categories: ["disability and mental health"],
     },
-    { date: "24/02/2025", name: "Andy Walker" }
+    { date: "20/03/2025", name: "Dinah Williams" }
   );
   const directPayments = new ContentDaMH(
     "directPayments",
@@ -272,7 +300,7 @@ class FormDaMH extends CoreDaMH {
       <p>If you are unsure please ask the club or contact your SNIPS mentor via: <a href="mailto:SNIPSBusinessSupport@sheffield.gov.uk">SNIPSBusinessSupport@sheffield.gov.uk</a></p>   
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "short_breaks_information_to_service" },
+    { typeKey: "" },
     { typeKey: "short_breaks_information_provided" },
     {
       type: "Request",
