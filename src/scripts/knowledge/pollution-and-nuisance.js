@@ -483,6 +483,16 @@ const bumbleBeesTreatment = new ContentPaN(
   "Bumble Bees Treatment",
   "Find out the cost for Bumble Bee treatment in domestic properties and communal areas, including reduced fees for eligible benefits and the process for commercial or HMO inquiries.",
   `
+    <h3>About Bees</h3>
+    <p>
+     Bees are the main pollinators of many of our wildflowers, crops and vegetables.
+    </p>
+    <p>Many plants would struggle to reproduce if it were not for the bees.
+       Bees are on the decline, since the 1950’s many have had their populations halved.
+    </p>
+    <p>
+    Sheffield City Council will only undertake a treatment if the bees are a danger to human health.
+    </p>
     <h3>Cost for Treatment</h3>
     <p>
       If the pests are located in a communal area (The area that is shared by multiple Council Housing properties) or 
@@ -564,7 +574,7 @@ const bumbleBeesTreatment = new ContentPaN(
       "HMO"
     ],
   },
-  { date: "28/02/2025", name: "Dinah Williams" }
+  { date: "28/03/2025", name: "Dinah Williams" }
 );
 
 const carpetBeetlesTreatment = new ContentPaN(
