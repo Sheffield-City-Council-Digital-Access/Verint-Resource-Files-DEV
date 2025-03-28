@@ -1399,8 +1399,8 @@ function handleFieldChangeEvent(event, kdf, field) {
     field.type === "text" ||
     field.type === "number" ||
     field.type === "email" ||
-    field.type === "tel" ||
-    field.type === "textarea"
+    field.type === "tel"
+    // || field.type === "textarea"
   ) {
     $(`#${field.id}`).val(formatRemoveEccessWhiteSpace(KDF.getVal(field.name)));
   }
