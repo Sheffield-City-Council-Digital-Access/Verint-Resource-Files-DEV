@@ -57,7 +57,7 @@ class FormR extends CoreR {
 const adaptation = new ContentR(
   "adaptation",
   "Adaptation",
-  "",
+  "Property modifications for accessibility or efficiency",
   `
   <h2>Handrails</h2>
     <p>For Council Housing properties, refer the customer to 
@@ -96,7 +96,7 @@ const adaptation = new ContentR(
 const blacksmith = new ContentR(
   "blacksmith",
   "Blacksmith",
-  "",
+  "Crafts metal items like gates and railings",
   `
     <p><strong>Category Fault:</strong> Blacksmiths Repairs</p>
     <p><strong>Contract:</strong> Responsive</p>
@@ -122,7 +122,7 @@ const blacksmith = new ContentR(
 const brickwork = new ContentR(
   "brickwork",
   "Brickwork",
-  "",
+  "Construction or repair of brick structures",
   `
     <p><strong>Category Fault:</strong> Brickwork Repairs</p>
     <p><strong>Contract:</strong> Responsive</p>
@@ -147,7 +147,7 @@ const brickwork = new ContentR(
 const chimneyStack = new ContentR(
   "chimneyStack",
   "Chimney Stack",
-  "",
+  "Upper chimney section needing maintenance",
   `
   <p>All chimney-related repairs get sent to Contractors to survey before carrying out the repair.</p>
   <p>Repairs won't be carried out on the appointment date due to health and safety procedures 
