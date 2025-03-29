@@ -201,7 +201,7 @@ const chimneyStack = new ContentR(
 const claimforDamage = new ContentR(
   "claimforDamage",
   "Claim for Damage",
-  "",
+  "Request for property damage repair",
   `
   <p>Tenants must ensure the contents of their home are adequately insured as the Council will 
   not compensate for unexpected damage caused to fittings or personal possessions when the Council is not at fault.</p>
@@ -230,7 +230,7 @@ const claimforDamage = new ContentR(
 const clothesPost = new ContentR(
   "clothesPost",
   "Clothes Post",
-  "",
+  "Outdoor post for drying laundry",
   `
       <h3>Category Fault</h3>
       <p>Clothes Posts</p>
@@ -274,7 +274,7 @@ const clothesPost = new ContentR(
 const communalArea = new ContentR(
   "communalArea",
   "Communal Area",
-  "",
+  "Shared spaces like hallways and gardens",
   `
  <h3>Category Fault</h3>
     <p>N/A</p>
@@ -299,7 +299,7 @@ const communalArea = new ContentR(
 const concrete = new ContentR(
   "concrete",
   "Concrete",
-  "",
+  "Repairs for concrete structures",
   `
   <h3>Category Fault</h3>
      <p>Concrete Repairs</p>
@@ -340,7 +340,7 @@ const concrete = new ContentR(
 const dampandMould = new ContentR(
   "dampandMould",
   "Damp and Mould",
-  "",
+  "Issues from moisture, causing mold",
   `
   <p>Apply Halophane Treatment (go to P2P Damp) put the job under the following:</p>
       <ul>
@@ -368,7 +368,7 @@ const dampandMould = new ContentR(
 const districtHeatingSwitch2Setup = new ContentR(
   "districtHeatingSwitch2Setup",
   "District Heating Switch2 Setup",
-  "",
+  "Setup of central heating systems",
   `
    <p>New tenants do not have to register with Switch2 when they move into their new property; 
    it is done automatically on the first Wednesday after the property is let.</p>
@@ -438,7 +438,7 @@ const districtHeatingSwitch2Setup = new ContentR(
 const doorFurniture  = new ContentR(
   "doorFurniture",
   "Door Furniture",
-  "",
+  "Handles, locks, and hinges for doors",
   `
   <h3>Category Fault</h3>
   <p>Door Furniture Repairs</p>
@@ -484,7 +484,7 @@ const doorFurniture  = new ContentR(
 const drainage  = new ContentR(
   "drainage",
   "Drainage",
-  "",
+  "Water drainage system maintenance",
   `
   <h3>Category Fault</h3>
   <p>N/A</p>
@@ -536,7 +536,7 @@ const drainage  = new ContentR(
 const disrepair  = new ContentR(
   "disrepair",
   "Disrepair",
-  "",
+  "Property damage needing repair",
   `
 <p>The team's main responsibilities are:</p>
 
@@ -571,7 +571,7 @@ const disrepair  = new ContentR(
 const electricalandHeating = new ContentR(
   "electricalandheating",
   "Electrical and Heating",
-  "",
+  "Electrical and heating system maintenance",
   `
   <h3>Electrical Items</h3>
   <p>For electrical fittings, additional sockets, etc., email 
@@ -599,7 +599,7 @@ const electricalandHeating = new ContentR(
 const electricalTesting  = new ContentR(
   "electricalTesting",
   "Electric Testing",
-  "",
+  "Safety checks for electrical systems",
   `
   <p>If the system states <strong>"Live Electrical Test",</strong> this is ordered by RPIT. 
   Any enquiries relating to this should be directed to the relevant hub.</p>
@@ -654,7 +654,7 @@ const electricalTesting  = new ContentR(
 const externalContractors   = new ContentR(
   "externalContractors",
   "External Contractors",
-  "",
+  "Hired professionals for property work",
   `
   <p>If a tenant calls and the job is with a contractor, 
   please call the relevant team in the back office if needing to chase.</p>
@@ -677,7 +677,7 @@ const externalContractors   = new ContentR(
 const externalDoorLock   = new ContentR(
   "externalDoorLock",
   "External Door Lock",
-  "",
+  "Security locks for external doors",
   `
   <h3>Category Fault</h3>
       <p>External Door Locks Repairs</p>
@@ -719,7 +719,7 @@ const externalDoorLock   = new ContentR(
 const externalDoor   = new ContentR(
   "externalDoor",
   "External Door",
-  "",
+  "Main or back entry doors",
   `
   <h3>Category Fault</h3>
       <p>External Door Repairs</p>
@@ -765,7 +765,7 @@ const externalDoor   = new ContentR(
 const flatRoof   = new ContentR(
   "flatRoof",
   "Flat Roof",
-  "",
+  "Maintenance of horizontal roofs",
   `
   <h3>Category Fault</h3>
       <p>Flat Roofing Repairs</p>
@@ -799,7 +799,7 @@ const flatRoof   = new ContentR(
 const floororStaircase   = new ContentR(
   "floororStaircase",
   "Floor or Staircase",
-  "",
+  "Repairs for floors and stairs",
   `
   <h3>Category Fault</h3>
       <p>Floors or Staircase Repairs</p>
@@ -839,7 +839,7 @@ const floororStaircase   = new ContentR(
 const footpathandSteps   = new ContentR(
   "footpathandSteps",
   "Footpath and Steps",
-  "",
+  "Maintenance of walkways and steps",
   `
  <h3>Category Fault</h3>
       <p>Footpath and Steps Repairs</p>
@@ -879,7 +879,7 @@ const footpathandSteps   = new ContentR(
 const fireJobs  = new ContentR(
   "fireJobs",
   "Fire Jobs",
-  "",
+  "Fire safety-related maintenance",
   `
 <p>If there is a fire at property, please email the contacts below.</p>
 
@@ -956,7 +956,7 @@ const fireJobs  = new ContentR(
 const garageorDetachedOutbuilding = new ContentR(
   "garageorDetachedOutbuilding",
   "Garage or Detached Outbuilding",
-  "",
+  "Repairs for garages and sheds",
   `
   <h3>Category Fault</h3>
       <p>Garages and Detached Outbuildings</p>
@@ -993,7 +993,7 @@ const garageorDetachedOutbuilding = new ContentR(
 const gasandDomesticSystems   = new ContentR(
   "gasandDomesticSystems",
   "Gas and Domestic Systems",
-  "",
+  "Gas system maintenance and repairs",
   `
   <details class="accordion">
   <summary class="accordion-header">
@@ -1438,7 +1438,7 @@ const gasandDomesticSystems   = new ContentR(
 const gasReinstateandUncapServicesorAppointments  = new ContentR(
   "gasReinstateandUncapServicesorAppointments",
   "Gas Reinstate /Gas Uncap Services / Appointments",
-  "",
+  "Restoring gas supply services",
   `
 <h3>Cancel an Appointment</h3>
 
@@ -1493,7 +1493,7 @@ const gasReinstateandUncapServicesorAppointments  = new ContentR(
 const gateorFence  = new ContentR(
   "gateorFence",
   "Gate or Fence",
-  "",
+  "Repairs for gates and fences",
   `
 <h3>Category Fault</h3>
 
@@ -1543,7 +1543,7 @@ const gateorFence  = new ContentR(
 const glazingincludingfailedDoubleGlazedUnits = new ContentR(
   "glazingincludingfailedDoubleGlazedUnits",
   "Glazing Including Failed Double Glazed Units",
-  "",
+  "Window glass repairs and replacements",
   `
 <h3>Category Fault</h3>
 
@@ -1603,7 +1603,7 @@ const glazingincludingfailedDoubleGlazedUnits = new ContentR(
 const gutteringandRainwaterPipes  = new ContentR(
   "gutteringandRainwaterPipes",
   "Guttering and Rainwater Pipes",
-  "",
+  "Maintenance of roof drainage",
   `
 <h3>Category Fault</h3>
 
@@ -1654,7 +1654,7 @@ const gutteringandRainwaterPipes  = new ContentR(
 const handyperson  = new ContentR(
   "handyperson",
   "Handyperson",
-  "",
+  "General minor repairs and maintenance",
   `
   <p>The handyperson scheme is available for vulnerable Council tenants to do certain smaller
   jobs in the home.</p>
@@ -1822,7 +1822,7 @@ const handyperson  = new ContentR(
 const internalDoor  = new ContentR(
   "internalDoor",
   "Internal Door",
-  "",
+  "Repairs or replacements for inside doors",
   `
 <h3>Category Fault</h3>
 
@@ -1867,7 +1867,7 @@ const internalDoor  = new ContentR(
 const kitchenUnit  = new ContentR(
   "kitchenUnit",
   "Kitchen Unit",
-  "",
+  "Maintenance of cupboards and countertops",
   `
 <h3>Category Fault</h3>
 
@@ -1916,7 +1916,7 @@ const kitchenUnit  = new ContentR(
 const liftorHoist  = new ContentR(
   "liftorHoist",
   "Lift or Hoist",
-  "",
+  "Servicing of lifts and hoists",
   `
     <ul>
       <li>Log a job on T-Mobile</li>
@@ -1943,7 +1943,7 @@ const liftorHoist  = new ContentR(
 const lostKeyorFob  = new ContentR(
   "lostKeyorFob",
   "Lost Key or Fob",
-  "",
+  "Replacement of lost keys or fobs",
   `
 <h3>Category Fault</h3>
   <p>Lost keys</p>
@@ -1980,7 +1980,7 @@ const lostKeyorFob  = new ContentR(
 const newBuildPropertyDefectorEmergencyCallOut  = new ContentR(
   "newBuildPropertyDefectorEmergencyCallOut",
   "New Build Property Defect or Emergency Call Out",
-  "",
+  "Urgent fixes for new-build defects",
   `
   <h3>Property Repairs</h3>
 
@@ -2032,7 +2032,7 @@ const newBuildPropertyDefectorEmergencyCallOut  = new ContentR(
 const paintingCommunalArea  = new ContentR(
   "paintingCommunalArea",
   "Painting Communal Area",
-  "",
+  "Repainting shared spaces",
   `
 <h3>Painting Communal Area Service</h3>
 
@@ -2089,7 +2089,7 @@ const paintingCommunalArea  = new ContentR(
 const pitchedRoof  = new ContentR(
   "pitchedRoof",
   "Pitched Roof",
-  "",
+  "Maintenance of sloped roofs",
   `
 <h3>Category Fault</h3>
 
@@ -2146,7 +2146,7 @@ const pitchedRoof  = new ContentR(
 const plastering  = new ContentR(
   "plastering",
   "Plastering",
-  "",
+  "Repairs for walls and ceilings",
   `
 <h3>Category Fault</h3>
 
@@ -2189,7 +2189,7 @@ const plastering  = new ContentR(
 const plumbingandDomesticHotorColdWater  = new ContentR(
   "plumbingandDomesticHotorColdWater",
   "Plumbing and Domestic Hot or Cold Water",
-  "",
+  "Fixing water pipes and systems",
   `
 <h3>Category Fault</h3>
 
@@ -2238,7 +2238,7 @@ const plumbingandDomesticHotorColdWater  = new ContentR(
 const refuseChute  = new ContentR(
   "refuseChute",
   "Refuse Chute",
-  "",
+  "Cleaning and maintenance of waste chutes",
   `
 <h3>Category Fault</h3>
 
@@ -2283,7 +2283,7 @@ const refuseChute  = new ContentR(
 const reroofingProgrammeWarranty  = new ContentR(
   "reroofingProgrammeWarranty",
   "Re-roofing Programme Warranty",
-  "",
+  "Roof replacement warranty repairs",
   `
   <p>If a repair is needed and the re-roofing work is <strong>under warranty</strong> (within 6 months), 
   please email the details to the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">Asset Management Team</a>.</p>
@@ -2359,7 +2359,7 @@ const reroofingProgrammeWarranty  = new ContentR(
 const rightToBuy  = new ContentR(
   "rightToBuy",
   "Right To Buy",
-  "",
+  "Tenant purchase scheme for homes",
   `
   <p>If an address is shown as Right to Buy, we can only put repairs on to make the property "wind and 
   watertight". For example, doors, windows, and roof repairs that are related to Health and Safety, also 
@@ -2398,7 +2398,7 @@ const rightToBuy  = new ContentR(
 const rightToRepair  = new ContentR(
   "rightToRepair",
   "Right To Repair",
-  "",
+  "Tenant rights for essential repairs",
   `
   <h3>About the Right to Repair scheme</h3>
 
@@ -2432,7 +2432,7 @@ const rightToRepair  = new ContentR(
 const scaffolding  = new ContentR(
   "scaffolding",
   "Scaffolding",
-  "",
+  "Temporary structures for high work",
   `
   <h3>Blocking Access</h3>
 
@@ -2485,7 +2485,7 @@ const scaffolding  = new ContentR(
 const surveyors = new ContentR(
   "surveyors",
   "Surveyors",
-  "",
+  "Professionals who assess buildings for structural integrity, repairs, or property valuation",
   `
     <p><strong>Do not log surveyors' jobs</strong>.</p>
     <p>These are logged when an operative has attended the property and has established that it is a lot 
@@ -2513,7 +2513,7 @@ const surveyors = new ContentR(
 const tarmac = new ContentR(
   "tarmac",
   "Tarmac",
-  "",
+  "A road surfacing material used for driveways and pathways that may need repair due to wear and tear",
   `
     <p>Please log a job on T-Mobile with the description, location, and approximate size, then 
     <strong>book a Non appointed</strong> appointment.</p>
@@ -2533,7 +2533,7 @@ const tarmac = new ContentR(
 const wallRepair = new ContentR(
   "wallRepair",
   "Wall Repair",
-  "",
+  "Fixing structural damage or cosmetic issues on internal or external walls",
   `
   <h3>Category Fault</h3>
 
@@ -2580,7 +2580,7 @@ const wallRepair = new ContentR(
 const wcBathorShowerorSinkUnit = new ContentR(
   "wcBathorShowerorSinkUnit",
   "WC, Bath, Shower or Sink Unit",
-  "WC/Bath/Shower/Sink Unit Repairs",
+  "Plumbing fixtures such as toilets, baths, showers, and sinks that may need maintenance or replacement",
   `
   <h3>Category Fault</h3>
     <p>WC/Bath/Shower/Sink Unit Repairs</p>
@@ -2653,7 +2653,7 @@ const wcBathorShowerorSinkUnit = new ContentR(
 const windowSillorCill = new ContentR(
   "windowSillorCill",
   "Window Sill or Cill",
-  "Window Sill or (Cill)",
+  "The horizontal ledge at the bottom of a window, which may require repairs due to weather damage",
   `
   <p>Question the customer sufficiently to ensure you are going to select the correct tradesperson 
   for the job.</p>
@@ -2734,7 +2734,7 @@ const windowFrame = new ContentR(
 const workingatHeight = new ContentR(
   "workingatHeight",
   "Working at Height (WAH)",
-  "",
+  "Tasks performed above ground level that require safety measures such as harnesses and scaffolding",
   `
     <p>There is often some confusion as to what constitutes a 'Working at Height' job with some orders 
     being passed to Working at Height when they should be picked up by the responsive team on the Hub. 
