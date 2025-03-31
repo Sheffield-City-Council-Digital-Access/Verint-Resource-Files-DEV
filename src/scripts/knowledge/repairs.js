@@ -54,270 +54,339 @@ class FormR extends CoreR {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-// const adaptation = new ContentR(
-//   "adaptation",
-//   "Adaptation",
-//   "Property modifications for accessibility or efficiency",
-//   `
-//   <h2>Handrails</h2>
-//     <p>For Council Housing properties, refer the customer to
-//     <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
+const adaptation = new ContentR(
+  "adaptation",
+  "Adaptation",
+  "Property modifications for accessibility or efficiency",
+  `
+    <h2>Handrails</h2>
+    <p>
+      For Council Housing properties, refer the customer to
+      <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email"
+        >CommunitiesEquip&Adaptations@sheffield.gov.uk</a
+      >.
+    </p>
 
-//   <h2>Grab Rails</h2>
-//   <p>For internal or external access to sole occupancy, refer the customer to
-//   <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
+    <h2>Grab Rails</h2>
+    <p>
+      For internal or external access to sole occupancy, refer the customer to
+      <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email"
+        >CommunitiesEquip&Adaptations@sheffield.gov.uk</a
+      >.
+    </p>
 
-//   <h2>Mobility Scooter Ramps</h2>
-//   <p>If the customer is requesting a communal ramp for their mobility scooter,
-//   advise them that if the scooter was not supplied through Equipment and Adaptations,
-//   we are <strong>unlikely to supply a ramp</strong>.</p>
-//   <p>If the customer has acquired their own mobility scooter, then it is their own responsibility to install a ramp.
-//   They will also need permission from the Housing Service to install their own ramp.</p>
-//   <p>For further advice about ramps to an individual's property or communal entrances, refer the customer to
-//   <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
+    <h2>Mobility Scooter Ramps</h2>
+    <p>
+      If the customer is requesting a communal ramp for their mobility scooter,
+      advise them that if the scooter was not supplied through Equipment and
+      Adaptations, we are <strong>unlikely to supply a ramp</strong>.
+    </p>
+    <p>
+      If the customer has acquired their own mobility scooter, then it is their own
+      responsibility to install a ramp. They will also need permission from the
+      Housing Service to install their own ramp.
+    </p>
+    <p>
+      For further advice about ramps to an individual's property or communal
+      entrances, refer the customer to
+      <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email"
+        >CommunitiesEquip&Adaptations@sheffield.gov.uk</a
+      >.
+    </p>
 
-//   <h2>For Disabled Customers, Including Wet Rooms</h2>
-//   <p>For walk-in shower rooms (wet rooms), refer the customer to
-//   <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
+    <h2>For Disabled Customers, Including Wet Rooms</h2>
+    <p>
+      For walk-in shower rooms (wet rooms), refer the customer to
+      <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email"
+        >CommunitiesEquip&Adaptations@sheffield.gov.uk</a
+      >.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "request",
+    keywords: [
+      "adaptation",
+      "Adoptation",
+      "Adaption",
+      "adaptasion",
+      "Adoptasion",
+      "Adapsion",
+    ],
+    categories: ["repairs"],
+  },
+  { date: "24/02/2025", name: "Shahzad Athar" }
+);
 
-//   `,
-//   { buttonLabel: "", formName: "" },
-//   { typeKey: "" },
-//   { typeKey: "" },
-//   {
-//     type: "",
-//     keywords: [
-//       adaptaion,
-//       adaptasion,
-//       adaptetion,
-//       adptation,
-//       adapttion,
-//       adaptiation,
-//       adptasion,
-//       addaptation,
-//       adabtation,
-//       adapation,
-//     ],
-//     categories: ["repairs"],
-//   },
-//   { date: "24/02/2025", name: "Shahzad Athar" }
-// );
+const blacksmith = new ContentR(
+  "blacksmith",
+  "Blacksmith",
+  "Crafts metal items like gates and railings",
+  `
+    <p><strong>Category Fault:</strong> Blacksmiths Repairs</p>
+    <p><strong>Contract:</strong> Responsive</p>
+    <p><strong>Warranty:</strong> N/A</p>
+    <p>
+      <strong>Key Information:</strong> Gas No Access: HF, NA or CI code, No Repair:
+      NR code, or ALMO, continue to order a repair and contact the RPIT Gas Team.
+    </p>
+    <p><strong>Outcome:</strong> Log job on T-Mobile</p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "report",
+    keywords: [
+      "blacksmith",
+      "blacsmith",
+      "blaksmith",
+      "blacksmidth",
+      "blacsmidth",
+      "blaksmidth",
+      "blacksimth",
+      "blacsimth",
+      "blaksimth",
+      "blacksmyth",
+      "blacsmyth",
+      "blaksmyth",
+      "black",
+      "blac",
+      "blak",
+      "smith",
+      "Smidth",
+      "Simth",
+      "smyth",
+    ],
+    categories: ["repairs"],
+  },
+  { date: "24/02/2025", name: "Shahzad Athar" }
+);
 
-// const blacksmith = new ContentR(
-//   "blacksmith",
-//   "Blacksmith",
-//   "Crafts metal items like gates and railings",
-//   `
-//     <p><strong>Category Fault:</strong> Blacksmiths Repairs</p>
-//     <p><strong>Contract:</strong> Responsive</p>
-//     <p><strong>Warranty:</strong> N/A</p>
-//     <p><strong>Key Information:</strong> Gas No Access: HF, NA or CI code,
-//     No Repair: NR code, or ALMO, continue to order a repair and contact the RPIT Gas Team.</p>
-//     <p><strong>Outcome:</strong> Log job on T-Mobile</p>
+const brickwork = new ContentR(
+  "brickwork",
+  "Brickwork",
+  "Construction or repair of brick structures",
+  `
+    <p><strong>Category Fault:</strong> Brickwork Repairs</p>
+    <p><strong>Contract:</strong> Responsive</p>
+    <p>
+      <strong>Warranty:</strong> Identified from the Ohms system. If within a
+      warranty period, invoke the warranty repair process.
+    </p>
+    <p><strong>Outcome:</strong> Appoint job on T-Mobile.</p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "report",
+    keywords: [
+      "brikwork",
+      "brickworke",
+      "brickwok",
+      "brick work",
+      "brrickwork",
+      "brikworck",
+      "brikwerck",
+      "brickwrok",
+      "brickworck",
+      "brickwoork",
+    ],
+    categories: ["repairs"],
+  },
+  { date: "24/02/2025", name: "Shahzad Athar" }
+);
 
-//   `,
-//   { buttonLabel: "", formName: "" },
-//   { typeKey: "" },
-//   { typeKey: "" },
-//   {
-//     type: "",
-//     keywords: [
-//       "blaksmith",
-//       "blacksmth",
-//       "blacksmitt",
-//       "blaksmitt",
-//       "blaksmeth",
-//       "blaksmit",
-//       "blacksmthh",
-//       "blacksmitth",
-//       "blacsmith",
-//       "blacksmiht",
-//     ],
-//     categories: ["repairs"],
-//   },
-//   { date: "24/02/2025", name: "Shahzad Athar" }
-// );
+const chimneyStack = new ContentR(
+  "chimneyStack",
+  "Chimney Stack",
+  "Upper chimney section needing maintenance",
+  `
+    <p>
+      All chimney-related repairs get sent to Contractors to survey before carrying
+      out the repair.
+    </p>
+    <p>
+      Repairs won't be carried out on the appointment date due to health and safety
+      procedures involving gas safety checks to ensure gas fires in the property
+      and/or neighbouring properties are isolated.
+    </p>
+    <p>
+      A letter from Repairs and Maintenance is sent to the tenanted property and
+      neighbours for shared stacks, outlining access requirements. Typically, a
+      two-week notice is given.
+    </p>
+    <p>
+      Regardless of tenant claims about gas fires, checks must be conducted by
+      Repairs and Maintenance's gas section and Hi-point before scheduling and
+      carrying out the repair.
+    </p>
+    <p><strong>No check = No repair</strong></p>
+    <p>
+      Appointments are arranged directly with the tenant via Hi-point where possible
+      and coordinated with the gas section.
+    </p>
+    <p>
+      If Contractors fail to gain access, they will attempt to reschedule following
+      the same procedure.
+    </p>
+    <p>Notes will be placed in T-Mobile explaining access issues.</p>
+    <p>
+      Once access is gained and the repair is completed, Contractors will notify us,
+      and Gas will be notified via WAH to reinstate the gas appliance.
+    </p>
+    <p><strong>Category Fault:</strong> Chimney Stack</p>
+    <p><strong>Contract:</strong> Responsive</p>
+    <p><strong>Codes:</strong> No code</p>
+    <p>
+      <strong>Warranty:</strong> Identified from the Ohms system. If within a
+      warranty period, invoke the repair process.
+    </p>
+    <p>
+      <strong>Key Information:</strong> If a pop-up appears (e.g., Gas No Access:
+      HF, NA, or CI code, No Repair: NR code, or ALMO), continue to order a repair
+      and contact the RPIT Gas Team.
+    </p>
+    <p><strong>Outcome:</strong> Log job on T-Mobile.</p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "report",
+    keywords: [
+      "chimeney",
+      "chimeny",
+      "chimmney",
+      "chimny",
+      "chiminey",
+      "chimley",
+      "chimnay",
+      "chymney",
+      "chimnney",
+      "chimmey",
+      "stak",
+      "stacc",
+      "stakck",
+      "stackk",
+      "stcak",
+      "stakc",
+    ],
+    categories: ["repairs"],
+  },
+  { date: "24/02/2025", name: "Shahzad Athar" }
+);
 
-// const brickwork = new ContentR(
-//   "brickwork",
-//   "Brickwork",
-//   "Construction or repair of brick structures",
-//   `
-//     <p><strong>Category Fault:</strong> Brickwork Repairs</p>
-//     <p><strong>Contract:</strong> Responsive</p>
-//     <p><strong>Warranty:</strong> Identified from the Ohms system.
-//     If within a warranty period, invoke the warranty repair process.</p>
-//     <p><strong>Outcome:</strong> Appoint job on T-Mobile.</p>
+const claimforDamage = new ContentR(
+  "claimforDamage",
+  "Claim for Damage",
+  "Request for property damage repair",
+  `
+    <p>
+      Tenants must ensure the contents of their home are adequately insured as the
+      Council will not compensate for unexpected damage caused to fittings or
+      personal possessions when the Council is not at fault.
+    </p>
+    <p>
+      When the Housing Service carries out major work which spoils decorations (for
+      example, modernisation or extensive re-plastering), customers may be able to
+      claim money to help redecorate. This is called a discretionary payment, and
+      the team responsible for carrying out the work should be contacted.
+    </p>
+    <p>
+      If a worker causes damage to possessions when carrying out a standard repair,
+      please contact a Senior or Team Leader for advice.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "",
+    keywords: [
+      "cliam",
+      "calim",
+      "clam",
+      "claime",
+      "cleim",
+      "clame",
+      "claem",
+      "dammage",
+      "demage",
+      "damge",
+      "dammagee",
+      "dimage",
+      "daamage",
+      "damaj",
+    ],
+    categories: ["repairs"],
+  },
+  { date: "24/02/2025", name: "Shahzad Athar" }
+);
 
-//   `,
-//   { buttonLabel: "", formName: "" },
-//   { typeKey: "" },
-//   { typeKey: "" },
-//   {
-//     type: "",
-//     keywords: [
-//       "brikwork",
-//       "bricwork",
-//       "brickwok",
-//       "brickworrk",
-//       "brrickwork",
-//       "brikworck",
-//       "brikwerck",
-//       "brickwrok",
-//       "brickworck",
-//       "brickwoork",
-//     ],
-//     categories: ["repairs"],
-//   },
-//   { date: "24/02/2025", name: "Shahzad Athar" }
-// );
+const clothesPost = new ContentR(
+  "clothesPost",
+  "Clothes Post",
+  "Outdoor post for drying laundry",
+  `
+    <h3>Category Fault</h3>
+    <p>Clothes Posts</p>
 
-// const chimneyStack = new ContentR(
-//   "chimneyStack",
-//   "Chimney Stack",
-//   "Upper chimney section needing maintenance",
-//   `
-//   <p>All chimney-related repairs get sent to Contractors to survey before carrying out the repair.</p>
-//   <p>Repairs won't be carried out on the appointment date due to health and safety procedures
-//   involving gas safety checks to ensure gas fires in the property and/or neighbouring properties
-//   are isolated.</p>
+    <h3>Contract</h3>
+    <p>Responsive</p>
+    <h3>Codes</h3>
+    <p>N/A</p>
 
-//   <p>A letter from Repairs and Maintenance is sent to the tenanted property and neighbours for
-//   shared stacks, outlining access requirements. Typically, a two-week notice is given.</p>
-//   <p>Regardless of tenant claims about gas fires, checks must be conducted by Repairs
-//   and Maintenance's gas section and Hi-point before scheduling and carrying out the repair.</p>
+    <h3>Warranty</h3>
+    <p>
+      Identified from the Ohms system. If repair is identified as within a warranty
+      period, invoke the warranty repair process.
+    </p>
+    <h3>Key Questions and Information</h3>
+    <p>Place orders for communal areas only.</p>
+    <p>
+      If there is a pop-up i.e. for Gas No Access: HF, NA or CI code, No Repair: NR
+      code, or ALMO, continue to order a repair (if applicable) then immediately
+      contact the RPIT Gas Team.
+    </p>
+    <h3>Recharge</h3>
+    <p>N/A</p>
 
-//   <p><strong>No check = No repair</strong></p>
-
-//   <p>Appointments are arranged directly with the tenant via Hi-point where possible and
-//   coordinated with the gas section.</p>
-//   <p>If Contractors fail to gain access, they will attempt to reschedule following the same
-//   procedure.</p>
-
-//   <p>Notes will be placed in T-Mobile explaining access issues.</p>
-//   <p>Once access is gained and the repair is completed, Contractors will notify us, and Gas
-//   will be notified via WAH to reinstate the gas appliance.</p>
-
-//   <p><strong>Category Fault:</strong> Chimney Stack</p>
-
-//   <p><strong>Contract:</strong> Responsive</p>
-
-//   <p><strong>Codes:</strong> No code</p>
-
-//   <p><strong>Warranty:</strong> Identified from the Ohms system. If within a warranty period,
-//   invoke the repair process.</p>
-
-//   <p><strong>Key Information:</strong> If a pop-up appears (e.g., Gas No Access: HF, NA,
-//   or CI code, No Repair: NR code, or ALMO), continue to order a repair and contact the RPIT Gas Team.</p>
-
-//   <p><strong>Outcome:</strong> Log job on T-Mobile.</p>
-
-//   `,
-//   { buttonLabel: "", formName: "" },
-//   { typeKey: "" },
-//   { typeKey: "" },
-//   {
-//     type: "",
-//     keywords: [
-//       "chimnyStack",
-//       "chimeneyStack",
-//       "chimeyStack",
-//       "chimnayStack",
-//       "chimneyStak",
-//       "chimneyStck",
-//       "chimenyStack",
-//       "chimmneyStack",
-//       "chimneyStach",
-//       "chimnyStak",
-//     ],
-//     categories: ["repairs"],
-//   },
-//   { date: "24/02/2025", name: "Shahzad Athar" }
-// );
-
-// const claimforDamage = new ContentR(
-//   "claimforDamage",
-//   "Claim for Damage",
-//   "Request for property damage repair",
-//   `
-//   <p>Tenants must ensure the contents of their home are adequately insured as the Council will
-//   not compensate for unexpected damage caused to fittings or personal possessions when the Council is not at fault.</p>
-
-//   <p>When the Housing Service carries out major work which spoils decorations (for example,
-//   modernisation or extensive re-plastering), customers may be able to claim money to help redecorate.
-//   This is called a discretionary payment, and the team responsible for carrying out the work should be contacted.</p>
-
-//   <p>If a worker causes damage to possessions when carrying out a standard repair,
-//   please contact a Senior or Team Leader for advice.</p>
-
-//   `,
-//   { buttonLabel: "", formName: "" },
-//   { typeKey: "" },
-//   { typeKey: "" },
-//   {
-//     type: "",
-//     keywords: [
-//       "clameforDamage",
-//       "cliamforDamage",
-//       "claimforDamge",
-//       "claimeforDamage",
-//       "clamforDamage",
-//       "claimforDmage",
-//       "claimfoprDamage",
-//       "claimforDamagg",
-//       "claimforDamgae",
-//       "calimforDamage",
-//     ],
-//     categories: ["repairs"],
-//   },
-//   { date: "24/02/2025", name: "Shahzad Athar" }
-// );
-
-// const clothesPost = new ContentR(
-//   "clothesPost",
-//   "Clothes Post",
-//   "Outdoor post for drying laundry",
-//   `
-//     <h3>Category Fault</h3>
-//     <p>Clothes Posts</p>
-//     <h3>Contract</h3>
-//     <p>Responsive</p>
-//     <h3>Codes</h3>
-//     <p>N/A</p>
-//     <h3>Warranty</h3>
-//     <p>Identified from the Ohms system. If repair is identified as within a warranty period,
-//     invoke the warranty repair process.</p>
-//     <h3>Key Questions and Information</h3>
-//     <p>Place orders for communal areas only.</p>
-//     <p>If there is a pop-up i.e. for Gas No Access: HF, NA or CI code, No Repair: NR code, or
-//     ALMO, continue to order a repair (if applicable) then immediately contact the RPIT Gas Team.</p>
-//     <h3>Recharge</h3>
-//     <p>N/A</p>
-//     <h3>Outcome</h3>
-//     <p>Only log a job if in comm drying area (we do not do individual properties) and book
-//     non-appointed job on T-Mobile.</p>
-//   `,
-//   { buttonLabel: "", formName: "" },
-//   { typeKey: "" },
-//   { typeKey: "" },
-//   {
-//     type: "",
-//     keywords: [
-//       "clothsPost",
-//       "clothePost",
-//       "clothesPst",
-//       "clothesPsot",
-//       "clothesPot",
-//       "clotesPost",
-//       "clohtesPost",
-//       "clothessPost",
-//       "clothesPosst",
-//       "clothesPoost",
-//     ],
-//     categories: ["repairs"],
-//   },
-//   { date: "24/02/2025", name: "Shahzad Athar" }
-// );
+    <h3>Outcome</h3>
+    <p>
+      Only log a job if in comm drying area (we do not do individual properties) and
+      book non-appointed job on T-Mobile.
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "report",
+    keywords: [
+      "cloths",
+      "clothe",
+      "clotes",
+      "cloathes",
+      "clouthes",
+      "clohes",
+      "clotths",
+      "clothess",
+      "psot",
+      "pot",
+      "poist",
+      "poast",
+      "postop",
+      "pst",
+      "clothesPost",
+    ],
+    categories: ["repairs"],
+  },
+  { date: "24/02/2025", name: "Shahzad Athar" }
+);
 
 // const communalArea = new ContentR(
 //   "communalArea",
@@ -337,16 +406,16 @@ class FormR extends CoreR {
 //   {
 //     type: "",
 //     keywords: [
-//       "comunalArea",
-//       "communalAre",
-//       "comunalAreaa",
-//       "commmnalArea",
-//       "comunelArea",
-//       "commuanlArea",
-//       "communalAria",
-//       "commnalArea",
-//       "comunnalArea",
-//       "comunnalAria",
+//       comunalArea,
+//       communalAre,
+//       comunalAreaa,
+//       commmnalArea,
+//       comunelArea,
+//       commuanlArea,
+//       communalAria,
+//       commnalArea,
+//       comunnalArea,
+//       comunnalAria,
 //     ],
 //     categories: ["repairs"],
 //   },
@@ -387,16 +456,16 @@ class FormR extends CoreR {
 //   {
 //     type: "",
 //     keywords: [
-//       "concret",
-//       "concrte",
-//       "concete",
-//       "concreate",
-//       "conkreet",
-//       "konkreet",
-//       "concrait",
-//       "conkret",
-//       "concrt",
-//       "conkrite",
+//       concret,
+//       concrte,
+//       concete,
+//       concreate,
+//       conkreet,
+//       konkreet,
+//       concrait,
+//       conkret,
+//       concrt,
+//       conkrite,
 //     ],
 //     categories: ["repairs"],
 //   },
@@ -423,16 +492,16 @@ class FormR extends CoreR {
 //   {
 //     type: "",
 //     keywords: [
-//       "dampanMould",
-//       "dampandMold",
-//       "dampamdMould",
-//       "dammpandMould",
-//       "dampadMould",
-//       "dampandMouuld",
-//       "dampandMuold",
-//       "dampndMould",
-//       "dampandMoukd",
-//       "dampandMouod",
+//       dampanMould,
+//       dampandMold,
+//       dampamdMould,
+//       dammpandMould,
+//       dampadMould,
+//       dampandMouuld,
+//       dampandMuold,
+//       dampndMould,
+//       dampandMoukd,
+//       dampandMouod,
 //     ],
 //     categories: ["repairs"],
 //   },
@@ -500,16 +569,16 @@ class FormR extends CoreR {
 //   {
 //     type: "",
 //     keywords: [
-//       "districtHeatingSwich2Setup",
-//       "districHeatingSwitch2Setup",
-//       "districHeatingSwtich2Setup",
-//       "districtHeaatingSwitch2Setup",
-//       "districtHeatingSwitch2Setp",
-//       "districtHeatingSwitch2Setuo",
-//       "districtHeatingSwitch2Setpu",
-//       "distrctHeatingSwitch2Setup",
-//       "distrcitHeatingSwitch2Setup",
-//       "districtHeatngSwitch2Setup",
+//       districtHeatingSwich2Setup,
+//       districHeatingSwitch2Setup,
+//       districHeatingSwtich2Setup,
+//       districtHeaatingSwitch2Setup,
+//       districtHeatingSwitch2Setp,
+//       districtHeatingSwitch2Setuo,
+//       districtHeatingSwitch2Setpu,
+//       distrctHeatingSwitch2Setup,
+//       distrcitHeatingSwitch2Setup,
+//       districtHeatngSwitch2Setup,
 //     ],
 //     categories: ["repairs"],
 //   },
@@ -555,16 +624,16 @@ class FormR extends CoreR {
 //   {
 //     type: "",
 //     keywords: [
-//       "dor Furniture",
-//       "door Furnture",
-//       "door Frniture",
-//       "dooorFurniture",
-//       "door Furnituer",
-//       "door Furniure",
-//       "door Furinture",
-//       "door Funiture",
-//       "door Furnitture",
-//       "door Furniature",
+//       dorFurniture,
+//       doorFurnture,
+//       doorFrniture,
+//       dooorFurniture,
+//       doorFurnituer,
+//       doorFurniure,
+//       doorFurinture,
+//       doorFuniture,
+//       doorFurnitture,
+//       doorFurniature,
 //     ],
 //     categories: ["repairs"],
 //   },
@@ -615,16 +684,16 @@ class FormR extends CoreR {
 //   {
 //     type: "",
 //     keywords: [
-//       "drainag",
-//       "dranage",
-//       "drainige",
-//       "draniage",
-//       "drainaje",
-//       "drainiage",
-//       "dranige",
-//       "dranije",
-//       "drainaeg",
-//       "drianage",
+//       drainag,
+//       dranage,
+//       drainige,
+//       draniage,
+//       drainaje,
+//       drainiage,
+//       dranige,
+//       dranije,
+//       drainaeg,
+//       drianage,
 //     ],
 //     categories: ["repairs"],
 //   },
@@ -3159,12 +3228,12 @@ class FormR extends CoreR {
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
 const repairs = new ServiceR("repairs", "Repairs", "", [
-  // adaptation,
-  // blacksmith,
-  // brickwork,
-  // chimneyStack,
-  // claimforDamage,
-  // clothesPost,
+  adaptation,
+  blacksmith,
+  brickwork,
+  chimneyStack,
+  claimforDamage,
+  clothesPost,
   // communalArea,
   // concrete,
   // dampandMould,
