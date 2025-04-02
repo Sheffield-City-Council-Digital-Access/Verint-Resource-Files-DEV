@@ -2222,9 +2222,9 @@ const councillors = new ContentEaR(
       <a href="https://www.sheffield.gov.uk/councillors" target="_blank">https://www.sheffield.gov.uk/councillors</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Councillors'"> Send Link </button>
     </p>
   `,
-  { buttonLabel: "councillors", formName: "" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
     keywords: [
