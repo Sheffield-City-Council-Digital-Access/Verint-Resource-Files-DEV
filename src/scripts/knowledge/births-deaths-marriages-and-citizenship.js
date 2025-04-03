@@ -625,7 +625,7 @@ const registerABirthAndDeath = new ContentBDMaC(
     "Register a Birth and Death",
     "Register a birth and death",
     `
-    <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p> 	<br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20or%20reregister%20a%20birth'"> Send Link </button>
+    <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p> 	
 
 <button
     type="button"

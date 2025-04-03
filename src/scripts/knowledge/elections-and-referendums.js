@@ -77,9 +77,22 @@ class FormEaR extends CoreEaR {
         or by returning the completed form in the reply envelope. If there are changes
         or to confirm there are no changes. If everything is correct, this can be
         confirmed by SMS or phone instead, using the details on the form. 
-        <br>
-        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
+
       </p>
+
+      <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=elecreg\`
+    "
+>
+    Send link to review further information
+</button>
+
       <p>
         <strong
           >You need to include the name and nationality of everyone aged 16 or over
@@ -132,9 +145,21 @@ const ccaCCBorCanvassForms = new ContentEaR(
       or by returning the completed form in the reply envelope. If there are changes
       or to confirm there are no changes. If everything is correct, this can be
       confirmed by SMS or phone instead, using the details on the form.
-      <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=elecreg\`
+    "
+>
+    Send link to review further information
+</button>
+    
     <p>
       <strong> You need to include the name and nationality of everyone aged 16 or over
         who is resident and eligible to register for voting.</strong>
@@ -186,11 +211,24 @@ const ccaCCBForms = new ContentEaR(
       check the details on the form are correct and up to date. If they are, the
       form can be ignored. If there are any updates to make (such as a change of
       name, adding or removing someone), they should go online at
-      <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
+      <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a> 
       and make the change using the unique security codes printed on the form, or
       contact Electoral Services directly if they cannot go online.
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
     </p>
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=elecreg\`
+    "
+>
+    Send link to review further information
+</button>
+
+
     <p>
       <strong>Properties receiving a CCB</strong> - Someone in the property should
       check the details on the form are correct and up to date. This form
@@ -201,8 +239,21 @@ const ccaCCBForms = new ContentEaR(
       correct, this can be confirmed by SMS or phone instead, using the details on
       the form. They can contact Electoral Services directly if they cannot go
       online.<br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=elecreg\`
+    "
+>
+    Send link to review further information
+</button>
+
     <p>
       <strong
         >You need to include the name and nationality of everyone aged 16 or over
@@ -309,8 +360,22 @@ const lostCCACCBorCanvassForm = new ContentEaR(
       If the reminders are lost, your home will be visited to check why forms
       haven't been completed. If you can remember your HEF's reference you can
       complete the form at:
-      <a href="https://www.hef-response.co.uk/" target="_blank">https://www.hef-response.co.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=HEF%20Response'"> Send Link </button>
+      <a href="https://www.hef-response.co.uk/" target="_blank">https://www.hef-response.co.uk/</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=HEF%20Response\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "annual_canvass_transferred_to_service" },
@@ -556,8 +621,22 @@ const localElections = new ContentEaR(
       you are voting to elect Councillors of Sheffield who will represent your views
       for the ward (area) in which you live. Further info on Councillors can be
       found using the link below:
-      <a href="https://www.sheffield.gov.uk/councillors" target="_blank">https://www.sheffield.gov.uk/councillors</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Councillors'"> Send Link </button>
+      <a href="https://www.sheffield.gov.uk/councillors" target="_blank">https://www.sheffield.gov.uk/councillors</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Councillors\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "elections_and_voting_transferred_to_service" },
@@ -613,8 +692,22 @@ const parishElections = new ContentEaR(
     <p>
       You can only vote at a Parish election if you live within the parish. 
       More details around the Parish Elections can be found here:
-      <a href="https://www.sheffield.gov.uk/home/your-city-council/election-types"target="_blank">https://www.sheffield.gov.uk/home/your-city-council/election-types</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Types%20of%20elections'"> Send Link </button>
+      <a href="https://www.sheffield.gov.uk/home/your-city-council/election-types"target="_blank">https://www.sheffield.gov.uk/home/your-city-council/election-types</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Types%20of%20elections\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "elections_and_voting_transferred_to_service" },
@@ -1027,10 +1120,23 @@ const applyingForPostalVote = new ContentEaR(
         <li>Email Link to Customer</li>
         <li>From Porters Lodge at the Town Hall or First Point at Howden House</li>
       </ul>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20a%20postal%20vote'"> Send Link </button><br/>
       <br/>
       If the customer cannot apply online, please send an email to<a href="mailto:elections@sheffield.gov.uk">electoral services</a> and select transferred to service.
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20postal%20vote\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "postal_or_proxy_voting_transferred_to_service" },
@@ -1154,8 +1260,21 @@ const requestproxyVote = new ContentEaR(
       <a href="https://www.gov.uk/apply-proxy-vote" target="_blank">www.gov.uk/apply-proxy-vote</a> 
       or using a paper form.
       <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20a%20proxy%20vote'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20proxy%20vote\`
+    "
+>
+    Send link to review further information
+</button>
+    
     <p>
       The Proxy Voter cannot vote at their own Polling Station for your vote, unless
       both voters share the same polling station. The proxy must be registered and
@@ -1349,8 +1468,22 @@ const archiveCopies = new ContentEaR(
       within 10 years of the current register, other than hand written notes.
       Registers that are over 10 years old may be copied at a charge by Archive
       Service staff. For more information about Register Archives visit: 
-      <a href="https://www.sheffield.gov.uk/home/libraries-archives/access-archives-local-studies-library/collections/electoral-registers-archive.html"target="_blank">https://www.sheffield.gov.uk/home/libraries-archives/access-archives-local-studies-library/collections/electoral-registers-archive.html</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Electoral%20Registers%20archive'"> Send Link </button>
+      <a href="https://www.sheffield.gov.uk/home/libraries-archives/access-archives-local-studies-library/collections/electoral-registers-archive.html"target="_blank">https://www.sheffield.gov.uk/home/libraries-archives/access-archives-local-studies-library/collections/electoral-registers-archive.html</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Electoral%20Registers%20archive\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_transferred_to_service" },
@@ -1627,8 +1760,21 @@ const includeSomeoneElseontheRegisterForm = new ContentEaR(
       <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>, 
       or we can send them a paper registration form if they do not have internet
       access. <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20to%20vote\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_transferred_to_service" },
@@ -1662,11 +1808,25 @@ const incorrectDetailsOnElectoralRegister = new ContentEaR(
     <p>
       If an error is found on the electoral register, please let us know so it can
       be corrected. The quickest way to do this is by re-registering at
-      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
+      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a> 
       <br>
       We cannot correct an error in an already published electoral register, but the
       correct would show in the next monthly update or revised register.
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20to%20vote\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_transferred_to_service" },
@@ -1710,8 +1870,21 @@ const informationInDifferentFormats = new ContentEaR(
       which works with assistive technologies such as screen readers, or we can
       send you an application in your preferred format where available. For
       additional information, please call: <a href="tel:0114 2734093">0114 2734093</a>. <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20to%20vote\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_transferred_to_service" },
@@ -1787,8 +1960,21 @@ const lostMyInvitationToRegister = new ContentEaR(
       If you have lost your form, you can apply to register online at
       <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>, 
       or we can send a replacement form. <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20to%20vote\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_transferred_to_service" },
@@ -1831,8 +2017,21 @@ const movingHomeorMovedHome = new ContentEaR(
       can do this by registering online at:
       <a href="https://www.gov.uk/register-to-vote" target="_blank">https://www.gov.uk/register-to-vote</a> 
       or by asking us for a form.
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20to%20vote\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_transferred_to_service" },
@@ -1876,8 +2075,22 @@ const optOutofTheOpenRegister = new ContentEaR(
       the internet, a request can be sent through to Electoral Services for them to
       remove you from the Register. You can change your opt-out preference at any
       time by visiting: 
-      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>.<br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
+      <a href="https://www.gov.uk/register-to-vote" target="_blank">www.gov.uk/register-to-vote</a>.
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20to%20vote\`
+    "
+>
+    Send link to review further information
+</button>
+    
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_transferred_to_service" },
@@ -1921,9 +2134,23 @@ const registerToVote = new ContentEaR(
       To register or change your details, please visit:
       <a href="https://www.gov.uk/register-to-vote" target="_blank">https://www.gov.uk/register-to-vote</a>
       or we can send you a paper form in the post.<br>
-       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20to%20vote\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
+
   { buttonLabel: "", formName: "" },
   { typeKey: "registering_to_vote_transferred_to_service" },
   { typeKey: "registering_to_vote_information_provided" },
@@ -2194,8 +2421,22 @@ const councillors = new ContentEaR(
       visit the official Sheffield City Council page:
     </p>
     <p>
-      <a href="https://www.sheffield.gov.uk/councillors" target="_blank">https://www.sheffield.gov.uk/councillors</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Councillors'"> Send Link </button>
+      <a href="https://www.sheffield.gov.uk/councillors" target="_blank">https://www.sheffield.gov.uk/councillors</a> 
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Councillors\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -2234,9 +2475,21 @@ const electionResults = new ContentEaR(
     </section>
     <p>
       You can find the previous election results via: <a href="https://www.sheffield.gov.uk/your-city-council/election-results" target="_blank">https://www.sheffield.gov.uk/your-city-council/election-results</a>
-      <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Election%20Results'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Election%20Results\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "elections_and_voting_transferred_to_service" },
@@ -2358,6 +2611,20 @@ const wards = new ContentEaR(
       Wards can be found at the following link: 
       <a href="https://www.sheffield.gov.uk/home/your-city-council/electoral-wards"target="_blank">https://www.sheffield.gov.uk/home/your-city-council/electoral-wards</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Election%20Wards'"> Send Link </button>
     </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Election%20Wards\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
