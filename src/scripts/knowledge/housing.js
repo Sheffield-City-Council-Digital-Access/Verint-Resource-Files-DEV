@@ -955,7 +955,7 @@ const communalAreasFireSafety = new ContentH(
 
     <p>Bicycles, prams, pushchairs and similar items will not normally be permitted to be stored or located within the internal communal parts unless there is an area capable of storage without causing obstruction.</p>
 
-    <p>You can have a small doormat if it is rubber backed. Edged and trimmed natural plants in ceramic, earthenware or metal pots, as long as they are not placed on stairs or landings which are the means of escape from the building.</p>
+    <p>You can have a small doormat if it is rubber backed. Edged and trimmed natural plants that are maintained in ceramic, earthenware or metal pots, as long as they are not placed on stairs or landings which are the means of escape from the building.</p>
   `,
   {
     buttonLabel: "",
