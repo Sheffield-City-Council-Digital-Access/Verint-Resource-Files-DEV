@@ -1933,12 +1933,13 @@ const fencesCouncilHousing = new ContentH(
   `
     <h3>New Fence</h3>
     <p>
-      Installation of fences is the tenants responsibility. The customer will need
-      to have permission to install a new fence.
+      Installation of fences to a house is the tenants responsibility. The customer will need
+      to have permission to install a new fence. However, if it is on communal land or a pathway it will need to go through the estates team by completing the form below.
     </p>
     <h3>Repair to an Existing Fence</h3>
     <p>
-      The Council do not repair tenants' fences. It is the tenant's responsibility.
+      The Council do not repair tenants' fences. It is the tenant's responsibility. However, if it is on communal land or a pathway it 
+      will need to go through the estates team by completing the form below.
     </p>
     <h3>Fallen Fence to be Removed</h3>
     <p>
