@@ -1855,7 +1855,7 @@ const communalCupboard = new ContentH(
   `
     <p>
       Meter boxes cupboard can be inside or outside of the property and the keyhole
-      will be triangular in shape. These will need to purchased from a hardware
+      will be triangular in shape. These will need to be purchased from a hardware
       store as we cannot provide one.
     </p>
     <p>
