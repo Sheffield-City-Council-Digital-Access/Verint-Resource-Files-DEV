@@ -5107,6 +5107,21 @@ const rentVariation = new ContentH(
   "Rent Variation",
  "Learn about rent changes, including the annual increase, rent payment methods, and how various charges, including tenant levies and housing benefit adjustments, are handled.", 
   `
+
+  <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Rent Free Weeks</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>The rent-free weeks this year will be weeks commencing:</p>
+        <ul>
+            <li>Monday 16th December 2024</li>
+            <li>Monday 23rd December 2024</li>
+        </ul>
+    </div>
+  </details>
+
   <details class="accordion">
     <summary class="accordion-header">
         <h3>Is your Rent Increasing?</h3>
@@ -5149,18 +5164,13 @@ const rentVariation = new ContentH(
 
 <details class="accordion">
     <summary class="accordion-header">
-        <h3>OHMS Rent System</h3>
+        <h3>OHMS System Issues</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
         <p>
             Any OHMS Rent system issues can be reported through the IT Service Desk, Tel: <a href="tel:0114 2734476">0114 2734476</a>.
         </p>
-        <p>The rent-free weeks this year will be weeks commencing:</p>
-        <ul>
-            <li>Monday 16th December 2024</li>
-            <li>Monday 23rd December 2024</li>
-        </ul>
     </div>
 </details>
 
