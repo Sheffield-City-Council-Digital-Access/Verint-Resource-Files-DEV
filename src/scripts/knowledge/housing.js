@@ -1851,10 +1851,10 @@ const assetManagementAndRepairs = new MenuH(
 const communalCupboard = new ContentH(
   "communalCupboard",
   "Communal Cupboard and Meter Box Cupboard",
-  "Learn how to access meter boxes and communal cupboards, including key types and where to obtain them for property and communal areas.",
+  "Learn how to access meter box and communal cupboards, including key types and where to obtain them for property and communal areas.",
   `
     <p>
-      Meter boxes cupboard can be inside or outside of the property and the keyhole
+      Meter box cupboard can be inside or outside of the property and the keyhole
       will be triangular in shape. These will need to be purchased from a hardware
       store as we cannot provide one.
     </p>
