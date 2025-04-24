@@ -1963,42 +1963,6 @@ const fencesCouncilHousing = new ContentH(
   { date: "09/10/2024", name: "Elliott Griffiths" }
 );
 
-const garageRequest = new ContentH(
-  "garageRequest",
-  "Garages",
-  "Use this section to accept an offer, decant, request a plot application form, purchase or quit a garage.",
-  `
-    <p>
-      <strong>Advisor note:</strong> For accepting an offer, decanting a garage, purchasing or quitting a garage use the form at the bottom of this page.
-    </p>
-    <h3>Garage and garage plot application form</h3>
-    <p>
-      You will need to complete a Garage Registration form in your local Housing office or post the application to:
-    </p>
-    <address>
-      Sheffield Council Housing Service,<br>
-      PO Box 5967,<br>
-      Sheffield,<br>
-      S2 9GH
-    </address>
-    <p>
-      You can find your nearest local Housing office at: <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices"target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
-    </p>
-    <p>
-      <a href="https://sccextranet.sharepoint.com/:u:/s/CustomerServiceKnowledgeCouncilHousing/ES04xrxIc7VKqUQ33LQjnF8Bx3FDF1Inm-mzsYUJRYii6Q?e=Sw7Yzn"target="_blank">Email garage application template</a>
-    </p>
-  `,
-  { buttonLabel: "Raise Garage Request", formName: "hou_sustainment_garage" },
-  { typeKey: "estates_and_environmental_transferred_to_service" },
-  { typeKey: "estates_and_environmental_information_provided" },
-  {
-    type: "Request",
-    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
-    categories: ["Housing", "Estates and Environments"],
-  },
-  { date: "24/04/2025", name: "Nathan Smith" }
-);
-
 const gardenPledgeScheme = new ContentH(
   "gardenPledgeScheme",
   "Garden Pledge Scheme",
@@ -2065,7 +2029,6 @@ const estatesAndEnvironments = new MenuH(
     communalCupboard,
     communalFireSafety,
     fencesCouncilHousing,
-    garageRequest,
     gardenPledgeScheme
   ]
 );
@@ -6282,9 +6245,45 @@ const fobsandKeys = new ContentH(
   { date: "19/03/2025", name: "Nathan Smith" }
 );
 
-const untidyGardensCommunalAreas = new FormH(
-  "untidyGardensCommunalAreas",
-  "Untidy gardens and communal areas",
+const garageRequest = new ContentH(
+  "garageRequest",
+  "Garages",
+  "Use this section to accept an offer, decant, request a plot application form, purchase or quit a garage.",
+  `
+    <p>
+      <strong>Advisor note:</strong> For accepting an offer, decanting a garage, purchasing or quitting a garage use the form at the bottom of this page.
+    </p>
+    <h3>Garage and garage plot application form</h3>
+    <p>
+      You will need to complete a Garage Registration form in your local Housing office or post the application to:
+    </p>
+    <address>
+      Sheffield Council Housing Service,<br>
+      PO Box 5967,<br>
+      Sheffield,<br>
+      S2 9GH
+    </address>
+    <p>
+      You can find your nearest local Housing office at: <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices"target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
+    </p>
+    <p>
+      <a href="https://sccextranet.sharepoint.com/:u:/s/CustomerServiceKnowledgeCouncilHousing/ES04xrxIc7VKqUQ33LQjnF8Bx3FDF1Inm-mzsYUJRYii6Q?e=Sw7Yzn"target="_blank">Email garage application template</a>
+    </p>
+  `,
+  { buttonLabel: "Raise Garage Request", formName: "hou_sustainment_garage" },
+  { typeKey: "" },
+  { typeKey: "tenancy_sustainment_information_provided" },
+  {
+    type: "Request",
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
+    categories: ["Housing", "Estates and Environments"],
+  },
+  { date: "24/04/2025", name: "Nathan Smith" }
+);
+
+const gardensUntidyCommunalAreas = new FormH(
+  "gardensUntidyCommunalAreas",
+  "Gardens (Untidy) and communal areas",
   "Report untidy Council gardens and untidy Council communal areas",
   "hou_sustainment_garden",
   {
@@ -6977,7 +6976,8 @@ const tenancySustainment = new MenuH(
     burglarAlarmRequest,
     fencesCouncilHousing,
     fobsandKeys,
-    untidyGardensCommunalAreas,
+    garageRequest,
+    gardensUntidyCommunalAreas,
     housingServiceParkingPermits,
     nameChanges,
     permissions,
