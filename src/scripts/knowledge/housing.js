@@ -1861,7 +1861,9 @@ const communalCupboard = new ContentH(
     <p>
       If the keyhole is not triangular then it is likely to be cupboard in the
       communal area. These cupboards may contain more than one gas/electric meter
-      and they mostly require a T1 Key that is held in the local Area office.
+      and they mostly require a T1 or an L Key that is held in the local Area office. 
+      You can check the barrel of the lock for the code to provide to the Area office which can
+      speed up the process as they will know which key is required.
     </p>
     <p>
       Use the form below to request a communal cupboard key if required.
