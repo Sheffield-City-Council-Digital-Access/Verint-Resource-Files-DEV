@@ -1379,16 +1379,18 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
       background: "var(--color-white)",
     });
   } else {
-    $("form.dform").css({
-      padding: "5rem clamp(0rem, 10vw, 10rem)",
-      background: "var(--color-background)",
-    });
-
-    if (KDF.kdf().access === "agent") {
+    if (KDF.kdf().form.name !== "system_information_hub") {
       $("form.dform").css({
-        margin: "1.7rem auto 0",
-        "min-height": "88vh",
+        padding: "5rem clamp(0rem, 10vw, 10rem)",
+        background: "var(--color-background)",
       });
+
+      if (KDF.kdf().access === "agent") {
+        $("form.dform").css({
+          margin: "1.7rem auto 0",
+          "min-height": "88vh",
+        });
+      }
     }
   }
 
