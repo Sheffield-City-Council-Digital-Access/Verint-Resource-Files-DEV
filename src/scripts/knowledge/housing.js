@@ -1958,17 +1958,40 @@ const fencesCouncilHousing = new ContentH(
   { date: "09/10/2024", name: "Elliott Griffiths" }
 );
 
-const garageRequest = new FormH(
+const garageRequest = new ContentH(
   "garageRequest",
   "Garages",
   "Use this section to accept an offer, decant, request a plot application form, purchase or quit a garage.",
-  "hou_sustainment_garage",
+  `
+    <p>
+      <strong>Advisor note:</strong> For accepting an offer, decanting a garage, purchasing or quitting a garage use the form at the bottom of this page.
+    </p>
+    <h3>Garage and garage plot application form</h3>
+    <p>
+      You will need to complete a Garage Registration form in your local Housing office or post the application to:
+    </p>
+    <address>
+    Sheffield Council Housing Service,<br>
+    PO Box 5967,<br>
+    Sheffield,<br>
+    S2 9GH
+    </address>
+    <p>
+      You can find your nearest local Housing office at: <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices"target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
+    </p>
+    <p>
+      <a href="https://sccextranet.sharepoint.com/:u:/s/CustomerServiceKnowledgeCouncilHousing/ES04xrxIc7VKqUQ33LQjnF8Bx3FDF1Inm-mzsYUJRYii6Q?e=Sw7Yzn"target="_blank">Email garage application template</a>
+    </p>
+  `,
+  { buttonLabel: "Raise garage request", formName: "hou_sustainment_garage" },
+  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Request",
-    keywords: ["Garage"],
-    categories: ["Housing", "Estate"],
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
+    categories: ["Housing", "Estates and Environments"],
   },
-  { date: "27/02/2025", name: "Nathan Smith" }
+  { date: "24/04/2025", name: "Nathan Smith" }
 );
 
 const gardenPledgeScheme = new ContentH(
