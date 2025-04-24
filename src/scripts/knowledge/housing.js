@@ -955,7 +955,7 @@ const communalAreasFireSafety = new ContentH(
 
     <p>Bicycles, prams, pushchairs and similar items will not normally be permitted to be stored or located within the internal communal parts unless there is an area capable of storage without causing obstruction.</p>
 
-    <p>You can have a small doormat if it is rubber backed. Edged and trimmed natural plants in ceramic, earthenware or metal pots, as long as they are not placed on stairs or landings which are the means of escape from the building.</p>
+    <p>You can have a small doormat if it is rubber backed. Edged and trimmed natural plants that are maintained in ceramic, earthenware or metal pots, as long as they are not placed on stairs or landings which are the means of escape from the building.</p>
   `,
   {
     buttonLabel: "",
@@ -1855,7 +1855,7 @@ const communalCupboard = new ContentH(
   `
     <p>
       Meter boxes cupboard can be inside or outside of the property and the keyhole
-      will be triangular in shape. These will need to purchased from a hardware
+      will be triangular in shape. These will need to be purchased from a hardware
       store as we cannot provide one.
     </p>
     <p>
@@ -1933,12 +1933,13 @@ const fencesCouncilHousing = new ContentH(
   `
     <h3>New Fence</h3>
     <p>
-      Installation of fences is the tenants responsibility. The customer will need
-      to have permission to install a new fence.
+      Installation of fences to a house is the tenants responsibility. The customer will need
+      to have permission to install a new fence. However, if it is on communal land or a pathway it will need to go through the estates team by completing the form below.
     </p>
     <h3>Repair to an Existing Fence</h3>
     <p>
-      The Council do not repair tenants' fences. It is the tenant's responsibility.
+      The Council do not repair tenants' fences. It is the tenant's responsibility. However, if it is on communal land or a pathway it 
+      will need to go through the estates team by completing the form below.
     </p>
     <h3>Fallen Fence to be Removed</h3>
     <p>
@@ -5107,6 +5108,21 @@ const rentVariation = new ContentH(
   "Rent Variation",
  "Learn about rent changes, including the annual increase, rent payment methods, and how various charges, including tenant levies and housing benefit adjustments, are handled.", 
   `
+
+  <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Rent Free Weeks</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>The rent-free weeks this year will be weeks commencing:</p>
+        <ul>
+            <li>Monday 16th December 2024</li>
+            <li>Monday 23rd December 2024</li>
+        </ul>
+    </div>
+  </details>
+
   <details class="accordion">
     <summary class="accordion-header">
         <h3>Is your Rent Increasing?</h3>
@@ -5149,18 +5165,13 @@ const rentVariation = new ContentH(
 
 <details class="accordion">
     <summary class="accordion-header">
-        <h3>OHMS Rent System</h3>
+        <h3>OHMS System Issues</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
         <p>
             Any OHMS Rent system issues can be reported through the IT Service Desk, Tel: <a href="tel:0114 2734476">0114 2734476</a>.
         </p>
-        <p>The rent-free weeks this year will be weeks commencing:</p>
-        <ul>
-            <li>Monday 16th December 2024</li>
-            <li>Monday 23rd December 2024</li>
-        </ul>
     </div>
 </details>
 
