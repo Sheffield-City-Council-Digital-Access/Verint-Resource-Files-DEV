@@ -1868,7 +1868,7 @@ const communalCupboard = new ContentH(
       speed up the process as they will know which key is required.
     </p>
     <p>
-      Use the form below to request a communal cupboard key if required.
+      <strong>Advisor Note:</strong> Use the form below to request a communal cupboard key if required.
     </p>
   `,
   { buttonLabel: "Raise enquiry", formName: "hou_estates_enquiry" },
