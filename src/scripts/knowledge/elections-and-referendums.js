@@ -1057,7 +1057,7 @@ const applyingForPostalVote = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "applying_for_postal_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "applying_for_postal_vote_infomation_provided" },
   {
     type: "Request",
@@ -2224,7 +2224,7 @@ const councillors = new ContentEaR(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
     keywords: [
@@ -2343,12 +2343,20 @@ const familyTreeorGenealogy = new ContentEaR(
       Properties are then sorted by address order - not by name.
     </p>
     <p>
-      Sheffield Archives may be able to offer more support in this area.
+      Sheffield Archives may be able to offer more support in this area.Contact details below: 
+     <p>Tel: 0114 203 9395 (Sat, Mon, Tues)</p>
+     <p>Tel: 0114 273 4753 (Wed, Thur, Fri, Sat)</p>
+     <address>
+     <p>First Floor, Central Library</p>
+     <p>Surrey Street</p>
+     <p>Sheffield</p>
+     <p>S1 1XZ
     </p>
+    </address>
   `,
   { buttonLabel: "familyTreeorGenealogy", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "familytreeorGenealogy_transfer_to_service" },
+  { typeKey: "familytreeorGenealogy_information_provided" },
   {
     type: "Request",
     keywords: [
@@ -2364,7 +2372,7 @@ const familyTreeorGenealogy = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "28/02/2025", name: "Dinah Williams" }
+  { date: "25/03/2025", name: "Dinah Williams" }
 );
 
 const wards = new ContentEaR(
@@ -2384,7 +2392,7 @@ const wards = new ContentEaR(
       <a href="https://www.sheffield.gov.uk/home/your-city-council/electoral-wards"target="_blank">https://www.sheffield.gov.uk/home/your-city-council/electoral-wards</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Election%20Wards'"> Send Link </button>
     </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Wards", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
   {
