@@ -5116,7 +5116,7 @@ const rentArrangements = new FormH(
 const rentRefunds = new FormH(
   "rentRefunds",
   "Rent Refunds",
-  "Use this form to chase or request a Rent refund.",
+  "Use this form to chase or request a Rent refund. You must more than 4 weeks in credit to request a refund and the refund will leave the account 4 weeks in credit.",
   "hou_rents_refunds",
   {
     type: "Request",
