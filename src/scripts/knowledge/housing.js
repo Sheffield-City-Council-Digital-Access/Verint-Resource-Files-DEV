@@ -1851,17 +1851,24 @@ const assetManagementAndRepairs = new MenuH(
 const communalCupboard = new ContentH(
   "communalCupboard",
   "Communal Cupboard and Meter Box Cupboard",
-  "Learn how to access meter boxes and communal cupboards, including key types and where to obtain them for property and communal areas.",
+  "Learn how to access meter box and communal cupboards, including key types and where to obtain them for property and communal areas.",
   `
     <p>
-      Meter boxes cupboard can be inside or outside of the property and the keyhole
+      Meter box cupboard can be inside or outside of the property and the keyhole
       will be triangular in shape. These will need to be purchased from a hardware
       store as we cannot provide one.
     </p>
     <p>
       If the keyhole is not triangular then it is likely to be cupboard in the
       communal area. These cupboards may contain more than one gas/electric meter
-      and they mostly require a T1 Key that is held in the local Area office.
+      and they mostly require a T1 or an L Key that is held in the local Area office.
+    </p>
+    <p>
+      You can check the barrel of the lock for the code to provide to the Area office which can
+      speed up the process as they will know which key is required.
+    </p>
+    <p>
+      <strong>Advisor Note:</strong> Use the form below to request a communal cupboard key if required.
     </p>
   `,
   { buttonLabel: "Raise enquiry", formName: "hou_estates_enquiry" },
@@ -1916,8 +1923,8 @@ const communalFireSafety = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Information",
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
@@ -1948,27 +1955,14 @@ const fencesCouncilHousing = new ContentH(
     </p>
   `,
   { buttonLabel: "Report Housing Fences", formName: "hou_sustainment_fence" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Information",
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Estates and Environments"],
   },
   { date: "09/10/2024", name: "Elliott Griffiths" }
-);
-
-const garageRequest = new FormH(
-  "garageRequest",
-  "Garages",
-  "Use this section to accept an offer, decant, request a plot application form, purchase or quit a garage.",
-  "hou_sustainment_garage",
-  {
-    type: "Request",
-    keywords: ["Garage"],
-    categories: ["Housing", "Estate"],
-  },
-  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const gardenPledgeScheme = new ContentH(
@@ -2019,8 +2013,8 @@ const gardenPledgeScheme = new ContentH(
       </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Information",
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
@@ -2037,7 +2031,6 @@ const estatesAndEnvironments = new MenuH(
     communalCupboard,
     communalFireSafety,
     fencesCouncilHousing,
-    garageRequest,
     gardenPledgeScheme
   ]
 );
@@ -5093,7 +5086,7 @@ const rentArrangements = new FormH(
 const rentRefunds = new FormH(
   "rentRefunds",
   "Rent Refunds",
-  "Use this form to chase or request a Rent refund.",
+  "Use this form to chase or request a Rent refund. You must more than 4 weeks in credit to request a refund and the refund will leave the account 4 weeks in credit.",
   "hou_rents_refunds",
   {
     type: "Request",
@@ -5380,7 +5373,7 @@ const rentVariation = new ContentH(
 
 <details class="accordion">
     <summary class="accordion-header">
-        <h3>Standing Orders</h3>
+        <h3>Total Indebtedness</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -6254,9 +6247,45 @@ const fobsandKeys = new ContentH(
   { date: "19/03/2025", name: "Nathan Smith" }
 );
 
-const untidyGardensCommunalAreas = new FormH(
-  "untidyGardensCommunalAreas",
-  "Untidy gardens and communal areas",
+const garageRequest = new ContentH(
+  "garageRequest",
+  "Garages",
+  "Use this section to accept an offer, decant, request a plot application form, purchase or quit a garage.",
+  `
+    <p>
+      <strong>Advisor note:</strong> For accepting an offer, decanting a garage, purchasing or quitting a garage use the form at the bottom of this page.
+    </p>
+    <h3>Garage and garage plot application form</h3>
+    <p>
+      You will need to complete a Garage Registration form in your local Housing office or post the application to:
+    </p>
+    <address>
+      Sheffield Council Housing Service,<br>
+      PO Box 5967,<br>
+      Sheffield,<br>
+      S2 9GH
+    </address>
+    <p>
+      You can find your nearest local Housing office at: <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices"target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
+    </p>
+    <p>
+      <a href="https://sccextranet.sharepoint.com/:u:/s/CustomerServiceKnowledgeCouncilHousing/ES04xrxIc7VKqUQ33LQjnF8Bx3FDF1Inm-mzsYUJRYii6Q?e=Sw7Yzn"target="_blank">Email garage application template</a>
+    </p>
+  `,
+  { buttonLabel: "Raise Garage Request", formName: "hou_sustainment_garage" },
+  { typeKey: "" },
+  { typeKey: "tenancy_sustainment_information_provided" },
+  {
+    type: "Request",
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
+    categories: ["Housing", "Estates and Environments"],
+  },
+  { date: "24/04/2025", name: "Nathan Smith" }
+);
+
+const gardensUntidyCommunalAreas = new FormH(
+  "gardensUntidyCommunalAreas",
+  "Gardens (Untidy) and communal areas",
   "Report untidy Council gardens and untidy Council communal areas",
   "hou_sustainment_garden",
   {
@@ -6949,7 +6978,8 @@ const tenancySustainment = new MenuH(
     burglarAlarmRequest,
     fencesCouncilHousing,
     fobsandKeys,
-    untidyGardensCommunalAreas,
+    garageRequest,
+    gardensUntidyCommunalAreas,
     housingServiceParkingPermits,
     nameChanges,
     permissions,
