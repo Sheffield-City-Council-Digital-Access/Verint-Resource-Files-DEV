@@ -742,7 +742,6 @@ const registerAStillbirth = new ContentBDMaC(
   "Register a Stillbirth",
   "Register a stillbirth",
   `
-   <h2>Register a Stillbirth</h2>
     <p>
      When a child is stillborn, the midwife or doctor will issue a medical certificate of stillbirth which is required for registration.
     </p>
