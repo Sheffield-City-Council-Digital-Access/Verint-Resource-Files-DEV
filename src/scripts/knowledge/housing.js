@@ -1983,7 +1983,7 @@ const garageRequest = new ContentH(
       <a href="https://sccextranet.sharepoint.com/:u:/s/CustomerServiceKnowledgeCouncilHousing/ES04xrxIc7VKqUQ33LQjnF8Bx3FDF1Inm-mzsYUJRYii6Q?e=Sw7Yzn"target="_blank">Email garage application template</a>
     </p>
   `,
-  { buttonLabel: "Raise garage request", formName: "hou_sustainment_garage" },
+  { buttonLabel: "Raise Garage Request", formName: "hou_sustainment_garage" },
   { typeKey: "estates_and_environmental_transferred_to_service" },
   { typeKey: "estates_and_environmental_information_provided" },
   {
