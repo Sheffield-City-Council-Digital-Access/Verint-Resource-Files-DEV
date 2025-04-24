@@ -152,7 +152,13 @@ const reportHighwayDamage = new FormRaP(
   "report_highway_damage",
   {
     type: "Report",
-    keywords: ["Highway", "damage", "damage to", "damage to the", "damage to the highway"],
+    keywords: [
+      "Highway",
+      "damage",
+      "damage to",
+      "damage to the",
+      "damage to the highway",
+    ],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
@@ -353,7 +359,7 @@ const requestGritting = new ContentRaP(
       <li><strong>Very special circumstances e.g. funerals</strong></li>
     </ul>
     <p>
-      We will only gritting side roads once traffic is flowing on all these priorities.
+      We will only grit side roads once traffic is flowing for all these priorities.
     </p>
     <details class="accordion">
       <summary class="accordion-header">
@@ -474,7 +480,15 @@ const reportFallenLeaves = new FormRaP(
  `,
   {
     type: "Report",
-    keywords: ["fallen", "leaves","highway", "fallen leaves", "fallen leaves on", "fallen leaves on the", "fallen leaves on the highway"],
+    keywords: [
+      "fallen",
+      "leaves",
+      "highway",
+      "fallen leaves",
+      "fallen leaves on",
+      "fallen leaves on the",
+      "fallen leaves on the highway",
+    ],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "28/03/2025", name: "Dinah Williams" }
