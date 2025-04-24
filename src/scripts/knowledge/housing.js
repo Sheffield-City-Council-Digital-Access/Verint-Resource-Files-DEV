@@ -1863,6 +1863,9 @@ const communalCupboard = new ContentH(
       communal area. These cupboards may contain more than one gas/electric meter
       and they mostly require a T1 Key that is held in the local Area office.
     </p>
+    <p>
+      Use the form below to request a communal cupboard key if required.
+    </p>
   `,
   { buttonLabel: "Raise enquiry", formName: "hou_estates_enquiry" },
   { typeKey: "estates_and_environmental_transferred_to_service" },
