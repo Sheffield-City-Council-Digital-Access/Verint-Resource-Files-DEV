@@ -1971,10 +1971,10 @@ const garageRequest = new ContentH(
       You will need to complete a Garage Registration form in your local Housing office or post the application to:
     </p>
     <address>
-    Sheffield Council Housing Service,<br>
-    PO Box 5967,<br>
-    Sheffield,<br>
-    S2 9GH
+      Sheffield Council Housing Service,<br>
+      PO Box 5967,<br>
+      Sheffield,<br>
+      S2 9GH
     </address>
     <p>
       You can find your nearest local Housing office at: <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices"target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
