@@ -401,3 +401,18 @@ option {
 #dform_container .dform_fileupload_progressbar {
   display: none;
 }
+
+/* --- AHTM --------------------------------------------------------------------- */
+
+.dform_widget_type_html {
+  width: min(100%, 70rem);
+}
+
+.dform_widget_type_html:has(.message-panel),
+.dform_widget_type_html:has(.notice-panel),
+.dform_widget_type_html:has(.info-panel),
+.dform_widget_type_html:has(.alert-panel),
+.dform_widget_type_html:has(.alert-panel--ineligible)
+  .dform_widget_type_html:has(.accordion) {
+  width: min(100%, 44.5rem);
+}
