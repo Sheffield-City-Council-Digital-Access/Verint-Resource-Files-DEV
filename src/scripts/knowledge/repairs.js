@@ -615,8 +615,6 @@ const electricalandHeating = new ContentR(
       </button>
 
 
-
-
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
