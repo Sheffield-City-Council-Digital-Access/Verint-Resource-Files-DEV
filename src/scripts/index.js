@@ -547,10 +547,6 @@ function handleOnReadyEvent(_, kdf) {
       "min-height": "88vh",
     });
 
-    $("#dform_page_complete").css({
-      "margin-inline": "0 40%",
-    });
-
     // --- CHECK AGENT LOCATION -------------------------------------------- \\
 
     if (
@@ -1355,14 +1351,6 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
 
   if (pageName === "save") {
     KDF.setVal("txt_resume_form", "true");
-    $("#dform_page_complete").css({
-      "margin-inline": "0 40%",
-    });
-    $("form.dform").css({
-      margin: "8px, auto",
-      padding: "16px",
-      background: "var(--color-white)",
-    });
     getAndSetReviewPageData();
     showContactTeamPanel();
     KDF.save();
@@ -1374,14 +1362,36 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     } else {
       KDF.showWidget("ahtm_confirmation_email_send");
     }
-
-    $("form.dform").css({
-      margin: "8px",
-      padding: "16px",
-      background: "var(--color-white)",
-    });
     showContactTeamPanel();
     KDF.setVal("txt_finish_date_and_time", formatDateTime().utc);
+  }
+
+  if (pageName === "save" || pageName === "complete") {
+    if (KDF.kdf().access === "agent") {
+      $("form.dform").css({
+        margin: "1.7rem auto 0",
+        "min-height": "88vh",
+      });
+    }
+
+    $("form.dform").css({
+      padding: "1.6rem",
+      background: "var(--color-white)",
+    });
+  } else {
+    if (KDF.kdf().form.name !== "system_information_hub") {
+      $("form.dform").css({
+        padding: "5rem clamp(0rem, 10vw, 10rem)",
+        background: "var(--color-background)",
+      });
+
+      if (KDF.kdf().access === "agent") {
+        $("form.dform").css({
+          margin: "1.7rem auto 0",
+          "min-height": "88vh",
+        });
+      }
+    }
   }
 
   getAndSetReviewPageData();

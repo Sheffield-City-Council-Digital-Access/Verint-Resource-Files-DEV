@@ -6,7 +6,7 @@
 #dform_container .checkboxgroup label,
 #dform_container .dform_widget_type_checkbox label {
   display: inline-block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   font-size: var(--font-size-p1);
   line-height: var(--font-height-p1);
   font-weight: var(--font-weight-semibold);
@@ -21,9 +21,9 @@
   margin-bottom: 0;
 }
 
-#dform_container fieldset.area>legend,
-#dform_container fieldset.box>legend,
-#dform_container fieldset.searchwidget>legend {
+#dform_container fieldset.area > legend,
+#dform_container fieldset.box > legend,
+#dform_container fieldset.searchwidget > legend {
   margin: 0 0 3rem;
   padding: 0;
   font-size: var(--font-size-h2);
@@ -35,6 +35,7 @@
 
 #dform_container .helptext {
   padding: 0;
+  margin-bottom: 0.2rem;
   color: var(--color-grey-5);
   font-size: var(--font-size-p1);
   font-style: unset;
@@ -63,7 +64,7 @@
   font-size: var(--font-size-p1);
   font-family: inherit;
   background: var(--color-white);
-  border: .1rem solid var(--color-grey-5);
+  border: 0.1rem solid var(--color-grey-5);
   box-sizing: border-box;
 }
 
@@ -135,7 +136,7 @@ option {
   align-items: flex-start;
   gap: 1rem;
   margin-right: 4rem;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
   text-align: center;
 }
 
@@ -153,7 +154,7 @@ option {
   -webkit-appearance: none;
   -moz-appearance: none;
   background-color: var(--color-white);
-  border: .1rem solid var(--color-grey-5);
+  border: 0.1rem solid var(--color-grey-5);
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
@@ -170,7 +171,7 @@ option {
 }
 
 #dform_container input[type="radio"]:checked::before {
-  content: '';
+  content: "";
   display: block;
   width: 60%;
   height: 60%;
@@ -203,19 +204,19 @@ option {
   transition: all 0.2s ease;
 }
 
-#dform_container .checkboxgroup>span,
-#dform_container .dform_widget_type_checkbox>div {
+#dform_container .checkboxgroup > span,
+#dform_container .dform_widget_type_checkbox > div {
   display: grid;
   grid-template-columns: max-content 1fr;
   align-items: center;
   gap: 1rem;
 }
 
-#dform_container .checkboxgroup>span {
+#dform_container .checkboxgroup > span {
   align-items: start;
 }
 
-#dform_container .checkboxgroup>span>label {
+#dform_container .checkboxgroup > span > label {
   align-self: flex-start;
   text-align: left;
   max-width: 100%;
@@ -224,7 +225,7 @@ option {
   transform: translateY(1.6rem);
 }
 
-#dform_container .dform_widget_type_checkbox>div .dform_validationMessage {
+#dform_container .dform_widget_type_checkbox > div .dform_validationMessage {
   width: 100%;
 }
 
@@ -243,17 +244,27 @@ option {
   transform: translateX(-50%) translateY(-50%);
   align-items: center;
   justify-content: center;
-  border: .1rem solid var(--color-grey-5);
+  border: 0.1rem solid var(--color-grey-5);
 }
 
-#dform_page_page_primary_input_fields>div>div>div>div.currency>div:nth-child(2) {
+#dform_page_page_primary_input_fields
+  > div
+  > div
+  > div
+  > div.currency
+  > div:nth-child(2) {
   display: grid;
   align-items: baseline;
   width: 100%;
 }
 
-#dform_page_page_primary_input_fields>div>div>div>div.currency>div:nth-child(2)::after {
-  content: '£';
+#dform_page_page_primary_input_fields
+  > div
+  > div
+  > div
+  > div.currency
+  > div:nth-child(2)::after {
+  content: "£";
   grid-row: 3 / 4;
   grid-column: 1 / -1;
   padding-left: 1.2rem;
@@ -291,14 +302,16 @@ option {
 #dform_container input[type="radio"]:focus {
   border: none;
   outline: none;
-  box-shadow: inset 0 0 0 0.4rem var(--color-grey-5), 0 0 0 0.4rem var(--color-warning);
+  box-shadow: inset 0 0 0 0.4rem var(--color-grey-5),
+    0 0 0 0.4rem var(--color-warning);
 }
 
 #dform_container input[type="checkbox"]:focus,
 #dform_container input[type="checkbox"]:checked:focus::after {
   border: none;
   outline: none;
-  box-shadow: inset 0 0 0 0.4rem var(--color-grey-5), 0 0 0 0.4rem var(--color-warning);
+  box-shadow: inset 0 0 0 0.4rem var(--color-grey-5),
+    0 0 0 0.4rem var(--color-warning);
 }
 
 /* --- CHATACTER COUNT ---------------------------------------------------------- */
@@ -310,14 +323,14 @@ option {
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-p1);
   line-height: var(--font-height-p1);
-  margin: .6rem 0 .8rem 0;
+  margin: 0.6rem 0 0.8rem 0;
   padding-inline-start: 0;
   padding-inline-end: 0;
 }
 
 /* --- FILE UPLOAD -------------------------------------------------------------- */
 
-#dform_container div[data-type="file"]>div:nth-child(2) {
+#dform_container div[data-type="file"] > div:nth-child(2) {
   display: grid;
   grid-template-columns: 11.5rem minmax(11rem, 32rem);
   align-items: baseline;
@@ -329,13 +342,14 @@ option {
   grid-row: 1 / 2;
   z-index: 0;
   background: var(--color-background);
-  border: .4rem transparent var(--color-grey-5);
+  border: 0.4rem transparent var(--color-grey-5);
 }
 
-#dform_container input[type=file]:focus,
+#dform_container input[type="file"]:focus,
 #dform_container input[type="file"]:focus-within {
   background: var(--color-white);
-  box-shadow: inset 0 0 0 0.4rem var(--color-grey-5), 0 0 0 0.4rem var(--color-warning);
+  box-shadow: inset 0 0 0 0.4rem var(--color-grey-5),
+    0 0 0 0.4rem var(--color-warning);
 }
 
 #dform_container .dform_filenames {
@@ -349,38 +363,56 @@ option {
 
 #dform_container .dform_filenames:focus,
 #dform_container .dform_filenames:focus-within,
-#dform_container input[type="file"]:focus~.dform_filenames,
-#dform_container input[type="file"]:focus-within~.dform_filenames {
+#dform_container input[type="file"]:focus ~ .dform_filenames,
+#dform_container input[type="file"]:focus-within ~ .dform_filenames {
   background: var(--color-white);
 }
 
-#dform_container :has(.dform_filenames:focus, .dform_filenames:focus-within) input[type="file"] {
+#dform_container
+  :has(.dform_filenames:focus, .dform_filenames:focus-within)
+  input[type="file"] {
   background: var(--color-white);
-  box-shadow: inset 0 0 0 0.4rem var(--color-grey-5), 0 0 0 0.4rem var(--color-warning);
+  box-shadow: inset 0 0 0 0.4rem var(--color-grey-5),
+    0 0 0 0.4rem var(--color-warning);
 }
 
-#dform_container .dform_filenames>span {
+#dform_container .dform_filenames > span {
   display: inline-block;
   cursor: pointer;
   margin-right: 1rem;
-  padding: .6rem;
+  padding: 0.6rem;
   border: none;
 }
 
-#dform_container .dform_filenames>span a:hover {
+#dform_container .dform_filenames > span a:hover {
   color: #000000;
 }
 
 #dform_container .file_delete {
-  padding: .6rem;
-  outline: .4rem solid transparent;
+  padding: 0.6rem;
+  outline: 0.4rem solid transparent;
 }
 
 #dform_container .file_delete:focus {
-  outline: .4rem solid #ffcc02;
+  outline: 0.4rem solid #ffcc02;
 }
 
-#dform_container div[data-type="file"]>div:nth-child(2) br,
+#dform_container div[data-type="file"] > div:nth-child(2) br,
 #dform_container .dform_fileupload_progressbar {
   display: none;
+}
+
+/* --- AHTM --------------------------------------------------------------------- */
+
+.dform_widget_type_html {
+  width: min(100%, 70rem);
+}
+
+.dform_widget_type_html:has(.message-panel),
+.dform_widget_type_html:has(.notice-panel),
+.dform_widget_type_html:has(.info-panel),
+.dform_widget_type_html:has(.alert-panel),
+.dform_widget_type_html:has(.alert-panel--ineligible)
+  .dform_widget_type_html:has(.accordion) {
+  width: min(100%, 44.5rem);
 }

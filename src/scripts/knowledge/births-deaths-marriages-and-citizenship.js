@@ -742,8 +742,34 @@ const registerAStillbirth = new ContentBDMaC(
   "Register a Stillbirth",
   "Register a stillbirth",
   `
-  <p> Takes to <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-stillbirth">https://www.sheffield.gov.uk/births-deaths-marriages/register-stillbirth</a> 	
-</p> 
+    <p>
+     When a child is stillborn, the midwife or doctor will issue a medical certificate of stillbirth which is required for registration.
+    </p>
+    <p>
+     If the baby was born in Sheffield, please contact us to make an appointment. 
+     If the baby was not born in Sheffield, you need to contact the Register Office for the district where the birth took place.
+     </p>
+    <h2>Information needed</h2>
+    <p>
+    In addition to the medical certificate issued by the midwife or doctor, you will need to provide the following information:</p>
+    <ul>
+        <li>the date and place of the stillbirth</li>
+        <li>any names the parent(s) wish to give the baby</li>
+        <li>mother’s (and father’s if applicable) full name, place of birth, occupation and usual address</li>
+        <li>mother’s maiden name (if applicable)</li>
+    </ul>
+    <h2>Costs</h2>
+    <p>
+     Registration is free of charge.
+     </p>
+     <p>
+     We will give you a certificate of registration of a stillbirth which shows the child’s full name (if given) and date of birth.
+     A stillbirth certificate, which is a certified copy of all the details held in the register, is also available for £11 per copy at the time of registration.
+     </p>
+     <p>If you need certified copies at a later date, please contact us. A certificate for burial or cremation is required by the funeral director.</p>
+    <p> 
+   Takes to <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-stillbirth">https://www.sheffield.gov.uk/births-deaths-marriages/register-stillbirth</a> 	
+   </p> 
 
 <button
     type="button"
@@ -773,7 +799,7 @@ const registerAStillbirth = new ContentBDMaC(
       "Deaths",
     ],
   },
-  { date: "11/11/2024", name: "Joseph Coupland" }
+  { date: "28/03/2025", name: "Dinah Williams" }
 );
 
 const rescheduleAnAppointment = new ContentBDMaC(
