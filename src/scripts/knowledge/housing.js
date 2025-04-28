@@ -823,6 +823,8 @@ const carbonmonoxide = new ContentH(
   <p>
     If you think there is an immediate danger, call the Gas Emergency Helpline on <a href="tel:0800 111999">0800 111999</a>.
   </p>
+  <p>
+    Alternatively, if there is no immediate danger you can call the repairs team on <a href="tel:0114 2735555">0114 2735555</a>
 
 `,
   {
