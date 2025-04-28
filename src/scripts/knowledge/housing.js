@@ -789,7 +789,7 @@ const asbestos = new ContentH(
   { date: "27/02/2025", name: "Nathan Smith" }
 );
 
-const carbonmonoxide = new ContentH(
+const carbonMonoxide = new ContentH(
   "carbonmonoxide",
   "Carbon Monoxide/ What is CO Poisoning",
   "Learn about carbon monoxide poisoning, its symptoms, causes, and immediate actions to take for safety and health.",
@@ -823,6 +823,8 @@ const carbonmonoxide = new ContentH(
   <p>
     If you think there is an immediate danger, call the Gas Emergency Helpline on <a href="tel:0800 111999">0800 111999</a>.
   </p>
+  <p>
+    Alternatively, if there is no immediate danger you can call the repairs team on <a href="tel:0114 2735555">0114 2735555</a>
 
 `,
   {
@@ -854,7 +856,9 @@ const communalAerials = new ContentH(
   <p>
     <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Communal%20Aerials.aspx" target="_blank">Communal aerials list</a>
   </p>
-
+  <p>
+    You can contact the repairs service for communal aeriels on: <a href="tel:0114 2735555">0114 2735555</a>
+  </p>
   <h3>Customers Own Aerial</h3>
   <p>
     This is not a Council Housing Service aerial. We do not offer a maintenance service for customer’s own aerials.
@@ -1820,7 +1824,7 @@ const assetManagementAndRepairs = new MenuH(
     adaptationChase,
     adaptationOther,
     asbestos,
-    carbonmonoxide,
+    carbonMonoxide,
 	  communalAerials,
 	  communalAreas,
 	  communalAreasFireSafety,
