@@ -429,9 +429,140 @@ const copyCertificates = new ContentBDMaC(
     <p>Your certificate will be posted to you in 15 working days, please allow 3 days for delivery.</p>
     <h3>Urgent applications</h3>
     <p>These cost £38.50 including the cost of first-class postage, dispatched within 24 hours.</p>
+
+    <p>
+    To order a copy of a certificate, please use the 
+    <a href="https://sheffield.sishost.co.uk/Agenda/Admin/login.aspx?ReturnUrl=%2fAgenda%2fAdmin%2f" target="_blank">
+        Sheffield Registry Office certificate ordering system
+    </a>.  
+    To make a payment, please use 
+    <a href="https://ncs-sc.e-paycapita.com/LivePay360Payments266/client/incomemanagement/#/login" target="_blank">
+        Pay 360
+    </a>.
+    </p>
+
+    <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Original Certified Copies explained</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      <ul>
+        <li>All certificates that we produce are original copies of the original entry and can be used for all legal purposes. They will never get the original register page.</li>
+        <li>They are printed on watermarked paper and signed with registrar ink by a registrar.</li>
+        <li>We only supply the full A4 versions of birth certificates that have the parents’ names on.</li>
+        <li>We do not provide free certificates at the point of registration.</li>
+        <li>Certified copies of the birth certificate are £12.50 each at the time of registration. Copy birth certificates may be obtained at a later date for £13.50 each.</li>
+        <li>If a customer is chasing a certificate, and it has been over 15 working days since ordering from us, follow CRM scripting for registrar emails. Include:
+          <ul>
+            <li>Name of applicant</li>
+            <li>Name on the certificate</li>
+            <li>Type of certificate</li>
+            <li>Date of event</li>
+            <li>Phone number</li>
+            <li>Email address</li>
+            <li>Postage address</li>
+            <li>How much they have paid (may not have ordered from us if amounts differ from our charges)</li>
+          </ul>
+        </li>
+      </ul>
+    </p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Process for ordering copy certificates</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      <ul>
+        <li>Follow CRM scripting for copy certificates</li>
+        <li>Set customer & resolve enquiry</li>
+        <li>Log into Stopford and select copy certificates</li>
+        <li>Select create new copy certificate request</li>
+        <li>Complete details of person applying for certificate, changing delivery method as required (use copy address details to auto fill delivery and billing addresses)</li>
+        <li>Select new order under certificate orders</li>
+        <li>Select certificate type</li>
+        <li>Complete certificate details (leave other certificate details blank)</li>
+        <li>Complete certificate price and add</li>
+        <li>Complete order quantity and cost, changing delivery method as required, and save – note if the customer is collecting the certificate</li>
+        <li>Take payment (Pay.Net)</li>
+        <li>Copy Certificates cost £13.50 (this includes postage costs). Certificates are posted out in 15 working days. Please allow 3 days for delivery.</li>
+        <li>Priority Certificates are £38.50 each (this includes postage costs within the United Kingdom only). They are produced in 24 working hours. £13.50 for any additional copies of the same certificate. Please allow 3 days for delivery.</li>
+        <li>If the customer wishes to collect the certificate, please advise it will be ready 24 hours after the time they are produced.</li>
+      </ul>
+    </p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Corrections to a Certificate</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      If someone has spotted a mistake on their certificate after the official registration, they can apply for a formal correction.<br>
+      There is usually a consideration fee to apply for the correction. (We will inform them how much once we know what type of correction they require)
+    </p>
+    <p><strong>Process:</strong></p>
+    <ul>
+      <li>Follow the CRM scripting for registrar emails and send to copy certificates. The registry office will contact the customer to let them know how to proceed. Include:</li>
+      <ul>
+        <li>Contact information</li>
+        <li>What type of certificate are they correcting (Birth/Death/Marriage or CP)</li>
+        <li>Name on the certificate</li>
+        <li>Date of event (DOM/DOB or DOD)</li>
+        <li>What the mistake is and what it should be</li>
+      </ul>
+    </ul>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Adoption Certificates</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      <ul>
+        <li>We do not hold adoption certificates. These can only be requested from the head office (03300 123 1837).</li>
+      </ul>
+    </p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Space 17’s</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      <ul>
+        <li>A Space 17 is where a child’s first or middle names can be changed within a year of the registration.</li>
+        <li>The new name will appear in space 17 on the birth certificate.</li>
+        <li>The cost for this is £44.00 and £13.50 for any new certificates.</li>
+      </ul>
+    </p>
+    <p><strong>Process:</strong></p>
+    <ul>
+      <li>Follow the CRM scripting for registrar emails and send to copy certificates. Include:</li>
+      <ul>
+        <li>Contact information</li>
+        <li>Child’s name & DOB</li>
+        <li>Changes</li>
+      </ul>
+    </ul>
+  </div>
+</details>
  
     `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "", formName: "registrars_process" },
   { typeKey: "register_office_information_requested" },
   { typeKey: "register_office_information_provided" },
   {
@@ -446,7 +577,7 @@ const copyCertificates = new ContentBDMaC(
       "Certificates",
     ],
   },
-  { date: "11/11/2024", name: "Joseph Coupland" }
+  { date: "30/04/2025", name: "Joseph Coupland" }
 );
 
 const finalPayment = new ContentBDMaC(
@@ -609,7 +740,7 @@ const reRegisterABirth = new ContentBDMaC(
     Send link to review further information
 </button>
     `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "", formName: "registrars_process" },
   { typeKey: "register_office_information_requested" },
   { typeKey: "register_office_information_provided" },
   {
@@ -620,43 +751,198 @@ const reRegisterABirth = new ContentBDMaC(
   { date: "04/12/2024", name: "Andy Walker" }
 );
 
-const registerABirthAndDeath = new ContentBDMaC(
-    "registerABirthAndDeath",
-    "Register a Birth and Death",
-    "Register a birth and death",
+const registerABirth = new ContentBDMaC(
+    "registerABirth",
+    "Register a Birth",
+    "Register a birth",
     `
-    <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p> 	<br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20or%20reregister%20a%20birth'"> Send Link </button>
+    <p>
+    All births in England, Wales and Northern Ireland must be registered within 42 days of the 
+    child being born.<br>
+    You should do this at the local register office for the area where the baby was born.<br>
+    If you cannot register the birth in the area where the baby was born, you can go to 
+    another register office, and they will send your details to the correct office.
+    </p>
 
-<button
+    <p>
+    To book an appointment with the Registry Office, visit the 
+    <a href="https://sheffield.sishost.co.uk/Agenda/Admin/login.aspx?ReturnUrl=%2fAgenda%2fAdmin%2f" target="_blank">
+    Sheffield Registry Office Appointment Booking System
+    </a>.
+    </p>
+
+    <p>
+    <button onclick="window.open('https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20or%20reregister%20a%20birth', '_blank')">Send Link</button>
+    </p>
+    <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
     aria-label="For further information send link"
     onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        window.open(\`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20or%20reregister%20a%20birth\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20or%20reregister%20a%20birth\`, '_blank')
     "
->
+    >
     Send link to review further information
-</button>    
+    </button>
+    <p>
+    <strong>Visit the registration page:</strong> <a href="https://www.sheffield.gov.uk/births-deaths-marriages/register-birth" target="_blank">https://www.sheffield.gov.uk/births-deaths-marriages/register-birth</a>
+    </p>
 
-  <p>  <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">https://www.sheffield.gov.uk/births-deaths-marriages/register-death </a></p>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Process of registering a birth:</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      A birth appointment can be made online or over the phone; they run back-to-back every 15 minutes.
+    </p>
+    <ul>
+      <li>The parent(s) need to book an in-person appointment online or over the phone.</li>
+      <li>There is no telephone appointment — only one in-person appointment is available.</li>
+      <li>The appointments must be booked in the birth diary.</li>
+      <li>They can use the link in the email confirmation to pay for the certificates, or pay by cash at the appointment.</li>
+      <li>They will receive the birth certificates on the day of the appointment.</li>
+    </ul>
 
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20a%20death\`
-    "
->
-    Send link to review further information
-</button>
+    <p><strong>Extra Information:</strong></p>
+    <ul>
+      <li>If the mother and father of a child are not married and the father is to be recorded on the certificate, both parents must attend the appointment.</li>
+      <li>If the child’s father does not attend and the parents are NOT married, he can be added later through re-registration.</li>
+      <li>If the parents are married to each other, only one parent needs to attend.</li>
+      <li>The baby does not need to be present at the appointment.</li>
+      <li>No ID is legally required to register a birth, but bringing something that confirms the spelling of names is recommended. The baby’s red book should be brought.</li>
+      <li>Parents must check the certificate carefully before signing. Mistakes can cost up to £90.00 to correct and may take weeks or months to process.</li>
+      <li>You can only add a child’s natural birth father to the entry.</li>
+    </ul>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Registering by declaration:</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      <strong>Explanation:</strong> A baby can be registered in a district where it was not born. 
+      This is called registering by declaration.<br>
+      The child’s information will be captured by one office and sent to the office in the district 
+      where the baby was born. That office will then officially register the child and issue the birth 
+      certificate.<br>
+      The registration will be held in the district where the baby was born, not where it was captured.
+    </p>      
+
+    <p><strong>Booking Instructions:</strong></p>
+    <ul>
+      <li>Book a Birth Declaration appointment like a normal birth registration.</li>
+      <li>Tick the box on Stopford to show the appointment is a declaration out.</li>
+    </ul>
+
+    <p><strong>Declaration Out:</strong> The baby was born outside of Sheffield, but the information is being captured in Sheffield and sent to the relevant district.</p>
+
+    <p><strong>Please advise customers:</strong></p>
+    <ul>
+      <li>If the baby was born in Rotherham, Barnsley, or Chesterfield, it's recommended to register 
+          in that district directly, as using a declaration can delay the certificate by weeks.</li>
+      <li>The declaration process is intended for cases where parents cannot return to the district of birth.</li>
+    </ul>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Re-registration (To add Dad – not Married):</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p><strong>Explanation:</strong> If a non-married couple registers a child and the father is not present, 
+      he cannot be added to the certificate at that time. However, he can be added later 
+      through re-registration.<br>
+      Example: The father is in prison, abroad, or in the armed forces.
+    </p>      
+
+    <p><strong>Steps:</strong></p>
+    <ul>
+      <li>Complete a re-registration form, available by request or online.</li>
+      <li>Return the form along with the child’s birth certificate.</li>
+      <li>Both parents must attend an appointment to sign the updated entry.</li>
+      <li>If the child is over 16, they must include a letter agreeing to the re-registration.</li>
+    </ul>
+
+    <p><strong>Costs:</strong></p>
+    <ul>
+      <li>Re-registration is free.</li>
+      <li>New certificates cost £12.50 each.</li>
+    </ul>
+
+    <p><strong>Process of re-registering a birth:</strong></p>
+    <ul>
+      <li>Follow CRM scripting and submit a callback request to the registry office 
+      (send to Copy Certificates).</li>
+      <li>They will receive a call back within 2 days and a form will be posted.</li>
+    </ul>
+
+    <p><strong>Include in request:</strong></p>
+    <ul>
+      <li>Name of Parent</li>
+      <li>How many children are being re-registered</li>
+      <li>Name(s) and place(s) of birth of child(ren)</li>
+      <li>Address</li>
+      <li>Phone Number</li>
+    </ul>
+
+    <p><strong>Alternative:</strong> The form can be downloaded from the GOV.UK website.</p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Re-registration after marriage:</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p><strong>Explanation:</strong> If two people have a child together before marriage and later 
+      marry each other, they are required to re-register the child(ren) after marriage.
+    </p>
+
+    <p><strong>Requirements:</strong></p>
+    <ul>
+      <li>You must both be the natural parents of the child.</li>
+      <li>You must complete a re-registration form for each child.</li>
+      <li>Bring the child’s birth certificate and your marriage certificate.</li>
+    </ul>
+
+    <p><strong>Costs:</strong></p>
+    <ul>
+      <li>Re-registration is free.</li>
+      <li>New certificates cost £12.50 each.</li>
+    </ul>
+
+    <p><strong>Process:</strong></p>
+    <ul>
+      <li>Follow CRM scripting and send the customer’s details to the registry office 
+        (send to Copy Certificates) for a call back.</li>
+      <li>They will receive a call back within 2 days and a form will be posted.</li>
+    </ul>
+
+    <p><strong>Include in request:</strong></p>
+    <ul>
+      <li>Name of Parent</li>
+      <li>How many children are being re-registered</li>
+      <li>Name(s) and place(s) of birth of child(ren)</li>
+      <li>Address</li>
+      <li>Phone Number</li>
+    </ul>
+
+    <p><strong>Alternative:</strong> The form can be downloaded from the GOV.UK website.</p>
+  </div>
+</details>
 
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "", formName: "registrars_process" },
   { typeKey: "register_office_information_requested" },
   { typeKey: "register_office_information_provided" },
   {
@@ -670,7 +956,7 @@ const registerABirthAndDeath = new ContentBDMaC(
       "Deaths",
     ],
   },
-  { date: "16/10/2024", name: "Joe Nixon" }
+  { date: "30/04/2025", name: "Andy Walker" }
 );
 
 const registerADeath = new ContentBDMaC(
@@ -678,16 +964,13 @@ const registerADeath = new ContentBDMaC(
   "Register a Death",
   "Learn how to register a death in Sheffield, including requirements, process, and associated costs",
   `
-    <p>You are legally required to register a death within 5 days from when the Coroner or Medical Examiner has passed the relevant paperwork to the Register Office. The registration should take place in the district where the person died.
-    </p>
-    <h3>Changes to the death certification process</h3>
-    <p>Regulations introducing changes to the death certification process were laid before Parliament on 15 April 2024 and will come into force on 9 September 2024.
-    </p>
-    <p>The reforms change the way in which the causes of deaths are scrutinised and certified in England and Wales with the introduction of a statutory medical examiner system.
-    </p>
-    <p>During this process you may be contacted by the Medical Examiners Office. For further information regarding the deceased you should contact the hospital or GP dealing with the death.
-    </p>
-    <p>For more information about the death reform certification process please visit the <a href="https://www.gov.uk/" target="_blank" rel="noopener noreferrer">https://www.gov.uk/</a> website.
+    <p>
+        You are legally required to register a death within 5 days from when the Coroner or Medical Examiner has passed the relevant paperwork to the Register Office. The registration should take place in the district where the person died.<br><br>
+        <strong>Changes to the death certification process</strong><br><br>
+        Regulations introducing changes to the death certification process were laid before Parliament on 15 April 2024 and will come into force on 9 September 2024.<br><br>
+        The reforms change the way in which the causes of deaths are scrutinised and certified in England and Wales with the introduction of a statutory medical examiner system.<br><br>
+        During this process, you may be contacted by the Medical Examiners Office. For further information regarding the deceased you should contact the hospital or GP dealing with the death.<br><br>
+        For more information about the death reform certification process, please visit the <a href="https://www.gov.uk/government/publications/changes-to-the-death-certification-process/an-overview-of-the-death-certification-reforms" target="_blank" rel="noopener noreferrer">https://www.gov.uk/government/publications/changes-to-the-death-certification-process/an-overview-of-the-death-certification-reforms</a> website.
     </p>
 
 <button
@@ -711,22 +994,38 @@ const registerADeath = new ContentBDMaC(
         <li>A personal representative of the deceased (solicitor, family friend or funeral director)</li>
         <li>An official from the hospital or the manager of where the death took place (for example a care home)</li>
     </ul>
+
     <h3>How to register a death</h3>
-    <p>Select a date to speak with the registrar, who will help you to make an appointment for registering the death.</p>
+    <p>
+    Select a date to speak with the registrar, who will help you to make an appointment for registering 
+    the death.
+    </p>
     <h3>What happens next</h3>
-    <p>On your chosen date, the registrar will call you to check the paperwork and the deceased’s details. You don't need to worry about the relevant medical paperwork, as the coroner or medical examiner will send us a copy.</p>
-    <p>The registrar will then arrange for you to attend the Register Office the following day. This is for you to check and sign the registration paperwork and complete the registration.</p>
-    <p>If required, at this appointment you will receive the relevant paperwork for the funeral director, the Tell Us Once registration code and any death certificates</p>
+    <p>
+        On your chosen date, the registrar will call you to check the paperwork and the deceased’s details. You don't need to worry about the relevant medical paperwork, as the coroner or medical examiner will send us a copy.<br><br>
+        The registrar will then arrange for you to attend the Register Office the following day. This is for you to check and sign the registration paperwork and complete the registration.<br><br>
+        If required, at this appointment you will receive the relevant paperwork for the funeral director, the Tell Us Once registration code, and any death certificates.
+    </p>
+
     <h3>Tell us once service</h3>
-    <p>When you register a death we will notify our other services and certain Government agencies of the person’s death. This is a free voluntary service and means fewer phone calls, letters or emails for you.</p>
+    <p>
+    When you register a death we will notify our other services and certain Government 
+    agencies of the person’s death. This is a free voluntary service and means fewer phone calls, letters, or 
+    emails for you.
+    </p>
     <h3>Cost</h3>
     <ul>
         <li>Registration is free of charge.</li>
         <li>Certified copies are £12.50 each at the time of registration.</li>
         <li>Copy certificates may be obtained at a later date for the standard fee of £13.50 each.</li>
     </ul>
+
+    <h3>Register a death online</h3>
+    <p>If you wish to register a death, you can also complete the process online by making an 
+    registering the death through the following link: <a href="https://sheffield.sishost.co.uk/Agenda/TelephoneRegistration/Appointment.html?pg=f2eb039d-64e9-4c63-8ba3-b942989b07d6" target="_blank" rel="noopener noreferrer">Register a death online</a>.</p>
+
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "", formName: "registrars_process" },
   { typeKey: "register_office_information_requested" },
   { typeKey: "register_office_information_provided" },
   {
@@ -734,7 +1033,7 @@ const registerADeath = new ContentBDMaC(
     keywords: [],
     categories: ["", ""],
   },
-  { date: "11/11/2024", name: "Joseph Coupland" }
+  { date: "30/04/2025", name: "Andy Walker" }
 );
 
 const registerAStillbirth = new ContentBDMaC(
@@ -742,50 +1041,14 @@ const registerAStillbirth = new ContentBDMaC(
   "Register a Stillbirth",
   "Register a stillbirth",
   `
-    <p>
-     When a child is stillborn, the midwife or doctor will issue a medical certificate of stillbirth which is required for registration.
-    </p>
-    <p>
-     If the baby was born in Sheffield, please contact us to make an appointment. 
-     If the baby was not born in Sheffield, you need to contact the Register Office for the district where the birth took place.
-     </p>
-    <h2>Information needed</h2>
-    <p>
-    In addition to the medical certificate issued by the midwife or doctor, you will need to provide the following information:</p>
+    <p>Please transfer using the following contact details:</p>
     <ul>
-        <li>the date and place of the stillbirth</li>
-        <li>any names the parent(s) wish to give the baby</li>
-        <li>mother’s (and father’s if applicable) full name, place of birth, occupation and usual address</li>
-        <li>mother’s maiden name (if applicable)</li>
+    <li>Email: <a href="mailto:copycertificates@sheffield.gov.uk">copycertificates@sheffield.gov.uk</a></li>
+    <li>Mobile (Warm Transfer): <a href="tel:07786126904">07786 126904</a></li>
     </ul>
-    <h2>Costs</h2>
-    <p>
-     Registration is free of charge.
-     </p>
-     <p>
-     We will give you a certificate of registration of a stillbirth which shows the child’s full name (if given) and date of birth.
-     A stillbirth certificate, which is a certified copy of all the details held in the register, is also available for £11 per copy at the time of registration.
-     </p>
-     <p>If you need certified copies at a later date, please contact us. A certificate for burial or cremation is required by the funeral director.</p>
-    <p> 
-   Takes to <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-stillbirth">https://www.sheffield.gov.uk/births-deaths-marriages/register-stillbirth</a> 	
-   </p> 
-
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20a%20stillbirth\`
-    "
->
-    Send link to review further information
-</button>
 
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "", formName: "registrars_process" },
   { typeKey: "register_office_information_requested" },
   { typeKey: "register_office_information_provided" },
   {
@@ -799,7 +1062,7 @@ const registerAStillbirth = new ContentBDMaC(
       "Deaths",
     ],
   },
-  { date: "28/03/2025", name: "Dinah Williams" }
+  { date: "30/04/2025", name: "Andy Walker" }
 );
 
 const rescheduleAnAppointment = new ContentBDMaC(
@@ -845,7 +1108,7 @@ const birthsDeathsMarriagesAndCitizenship = new ServiceBDMaC(
     finalPayment,
     licensedWeddingVenues,
     reRegisterABirth,
-    registerABirthAndDeath,
+    registerABirth,
     registerADeath,
     registerAStillbirth,
     rescheduleAnAppointment,
