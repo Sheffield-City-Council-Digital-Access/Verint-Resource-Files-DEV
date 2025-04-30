@@ -2580,8 +2580,8 @@ const scaffolding  = new ContentR(
   { typeKey: "menu_repairs_service " },
   {
     type: "Request",
-    keywords: [scafolding, scafflding, scafoldng, scaffoling, scaffoldin, scaffoldingg, 
-              scafollding, scaffolling, scaffoelding, scaffoldinng],
+    keywords: ["scafolding", "scafflding", "scafoldng", "scaffoling", "scaffoldin", "scaffoldingg", 
+              "scafollding", "scaffolling", "scaffoelding", "scaffoldinng"],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
