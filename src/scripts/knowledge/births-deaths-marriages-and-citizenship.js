@@ -562,7 +562,7 @@ const copyCertificates = new ContentBDMaC(
 </details>
  
     `,
-  { buttonLabel: "", formName: "registrars_process" },
+  { buttonLabel: "Registrars enquiry", formName: "registrars_process" },
   { typeKey: "register_office_information_requested" },
   { typeKey: "register_office_information_provided" },
   {
@@ -740,7 +740,7 @@ const reRegisterABirth = new ContentBDMaC(
     Send link to review further information
 </button>
     `,
-  { buttonLabel: "", formName: "registrars_process" },
+  { buttonLabel: "Registrars enquiry", formName: "registrars_process" },
   { typeKey: "register_office_information_requested" },
   { typeKey: "register_office_information_provided" },
   {
@@ -942,7 +942,7 @@ const registerABirth = new ContentBDMaC(
 </details>
 
   `,
-  { buttonLabel: "", formName: "registrars_process" },
+  { buttonLabel: "Registrars enquiry", formName: "registrars_process" },
   { typeKey: "register_office_information_requested" },
   { typeKey: "register_office_information_provided" },
   {
@@ -1025,7 +1025,7 @@ const registerADeath = new ContentBDMaC(
     registering the death through the following link: <a href="https://sheffield.sishost.co.uk/Agenda/TelephoneRegistration/Appointment.html?pg=f2eb039d-64e9-4c63-8ba3-b942989b07d6" target="_blank" rel="noopener noreferrer">Register a death online</a>.</p>
 
   `,
-  { buttonLabel: "", formName: "registrars_process" },
+  { buttonLabel: "Registrars enquiry", formName: "registrars_process" },
   { typeKey: "register_office_information_requested" },
   { typeKey: "register_office_information_provided" },
   {
@@ -1043,12 +1043,12 @@ const registerAStillbirth = new ContentBDMaC(
   `
     <p>Please transfer using the following contact details:</p>
     <ul>
-    <li>Email: <a href="mailto:copycertificates@sheffield.gov.uk">copycertificates@sheffield.gov.uk</a></li>
+    <li>Email: Log the call using the registrars enquiry link below.</li>
     <li>Mobile (Warm Transfer): <a href="tel:07786126904">07786 126904</a></li>
     </ul>
 
   `,
-  { buttonLabel: "", formName: "registrars_process" },
+  { buttonLabel: "Registrars enquiry", formName: "registrars_process" },
   { typeKey: "register_office_information_requested" },
   { typeKey: "register_office_information_provided" },
   {
