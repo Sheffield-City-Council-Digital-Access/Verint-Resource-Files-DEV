@@ -63,37 +63,33 @@ const adaptation = new ContentR(
     <p>For Council Housing properties, refer the customer to 
     <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
   
-<button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information and to apply send link to apply online"
-        onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk\`
-            "
-      >
-        Send link to review further information
-      </button>
+<a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   <h2>Grab Rails</h2>
+
   <p>For internal or external access to sole occupancy, refer the customer to 
   <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
   
-<button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information and to apply send link to apply online"
-        onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk\`
-            "
-      >
-        Send link to review further information
-      </button>
+<a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   <h2>Mobility Scooter Ramps</h2>
+
   <p>If the customer is requesting a communal ramp for their mobility scooter, 
   advise them that if the scooter was not supplied through Equipment and Adaptations, 
   we are <strong>unlikely to supply a ramp</strong>.</p>
@@ -102,35 +98,30 @@ const adaptation = new ContentR(
   <p>For further advice about ramps to an individual's property or communal entrances, refer the customer to 
   <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
   
-  <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information and to apply send link to apply online"
-        onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk\`
-            "
-      >
-        Send link to review further information
-      </button>
+ <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   <h2>For Disabled Customers, Including Wet Rooms</h2>
+
   <p>For walk-in shower rooms (wet rooms), refer the customer to 
   <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
 
-  <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information and to apply send link to apply online"
-        onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk\`
-            "
-      >
-        Send link to review further information
-      </button>
+<a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   `,
   { buttonLabel: "", formName: "" },
