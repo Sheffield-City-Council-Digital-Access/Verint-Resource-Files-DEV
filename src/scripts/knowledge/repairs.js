@@ -577,7 +577,6 @@ const drainage  = new ContentR(
       <li>Log job on T-Mobile.</li>
   </ul>
 
-  
   `
   ,
   { buttonLabel: "", formName: "" },
