@@ -418,6 +418,13 @@ const copyCertificates = new ContentBDMaC(
     Send link to review further information
 </button>
 
+
+    <p>Please transfer using the following contact details:</p>
+    <ul>
+    <li>Email: Log the case using the registrars enquiry link below.</li>
+    <li>Mobile (Warm Transfer): <a href="tel:07786126904">07786 126904</a></li>
+    </ul>
+
     <p>There is a standard fee of £13.50 for these:</p>
     <ul>
         <li>full birth certificate.</li>
@@ -790,6 +797,12 @@ const registerABirth = new ContentBDMaC(
     <strong>Visit the registration page:</strong> <a href="https://www.sheffield.gov.uk/births-deaths-marriages/register-birth" target="_blank">https://www.sheffield.gov.uk/births-deaths-marriages/register-birth</a>
     </p>
 
+    <p>Please transfer using the following contact details:</p>
+    <ul>
+    <li>Email: Log the case using the registrars enquiry link below.</li>
+    <li>Mobile (Warm Transfer): <a href="tel:07786126904">07786 126904</a></li>
+    </ul>
+
 <details class="accordion">
   <summary class="accordion-header">
     <h3>Process of registering a birth:</h3>
@@ -986,6 +999,13 @@ const registerADeath = new ContentBDMaC(
     Send link to review further information
 </button>
 
+
+<p>Please transfer using the following contact details:</p>
+<ul>
+<li>Email: Log the case using the registrars enquiry link below.</li>
+<li>Mobile (Warm Transfer): <a href="tel:07786126904">07786 126904</a></li>
+</ul>
+
     <h3>Who can register a death</h3>
     <p>Usually, a relative or long-term partner (living with the deceased) of the person who has died can register death, but others can also do this. This can be:</p>
     <ul>
@@ -1043,7 +1063,7 @@ const registerAStillbirth = new ContentBDMaC(
   `
     <p>Please transfer using the following contact details:</p>
     <ul>
-    <li>Email: Log the call using the registrars enquiry link below.</li>
+    <li>Email: Log the case using the registrars enquiry link below.</li>
     <li>Mobile (Warm Transfer): <a href="tel:07786126904">07786 126904</a></li>
     </ul>
 
@@ -1070,10 +1090,43 @@ const rescheduleAnAppointment = new ContentBDMaC(
   "Reschedule an Appointment",
   "Find out how to reschedule your appointment.",
   `
-  <p>To reschedule an appointment email: <a href="mailto:ceremoniesteam@sheffield.gov.uk">ceremoniesteam@sheffield.gov.uk</a></p>
+<p>Rescheduling an appointment on Stopford</p>
+
+<ul>
+  <li>Confirm with the customer that the appointment they want to reschedule is one they have made.</li>
+  <li>Confirm with the customer the date and time of their current appointment and make a note of this. (Check in Stopford that the caller is the person who made the appointment.)</li>
+  <li>Launch Stopford and find the next available appointment by using the “jump to” tabs on the left-hand column (select relevant service: D for Deaths, B for Births).</li>
+  <li>Make a note of the next available appointment date to refer back to.</li>
+  <li>Search for the customer's current appointment.</li>
+  <li>Use the “search appointment” option on the left-hand side to find it by the name it’s booked under.</li>
+  <li>Alternatively, use the calendar to select the date the customer has provided, and find the appointment by matching the time and name.</li>
+  <li>When you find the appointment, go through the booking details. Ask the customer to confirm all details (e.g., DoB, mobile number, and email).</li>
+  <li>Once confirmed, return to the appointment on the calendar and select the reschedule tab.</li>
+  <li>A new calendar page will appear. Select the previously noted available date—it will auto-fill the next available time slot.</li>
+  <li>Inform the customer of the available time slots and select the one that suits them.</li>
+  <li>Add comments to the "reasons" box explaining why the customer can’t attend the original appointment.</li>
+  <li>Confirm the new date and time with the customer and click submit to complete the rescheduling.</li>
+  <li>An automatic email confirmation should be sent to the customer.</li>
+  <li>Locate the new appointment using the search or calendar to confirm the changes were successful. Confirm the new details with the customer.</li>
+  <li>Check the calendar to confirm the old appointment has been cancelled. It will show as cancelled at the bottom of the time slots.</li>
+  <li>This process applies to both birth registrations and telephone appointments for registering a death. If it's about a check-and-sign death registration appointment, contact the Register Office directly.</li>
+</ul>
+
+<p>
+To re-schedule an appointment, please use the 
+<a href="https://sheffield.sishost.co.uk/Agenda/Admin/login.aspx?ReturnUrl=%2fAgenda%2fAdmin%2f" target="_blank">
+    Sheffield Registry Office book appointment
+</a>.
+</p>
+
+<p>Please transfer using the following contact details:</p>
+<ul>
+  <li>Email: Log the case using the registrars enquiry link below.</li>
+  <li>Mobile (Warm Transfer): <a href="tel:07786126904">07786 126904</a></li>
+</ul>
  
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Registrar enquiry", formName: "registrars_process" },
   { typeKey: "register_office_information_requested" },
   { typeKey: "register_office_information_provided" },
   {
@@ -1090,7 +1143,7 @@ const rescheduleAnAppointment = new ContentBDMaC(
       "Ceremony",
     ],
   },
-  { date: "11/11/2024", name: "Joseph Coupland" }
+  { date: "01/05/2025", name: "Andy Walker" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
