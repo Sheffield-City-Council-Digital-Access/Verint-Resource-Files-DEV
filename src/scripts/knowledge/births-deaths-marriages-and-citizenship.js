@@ -1043,7 +1043,7 @@ const registerAStillbirth = new ContentBDMaC(
   `
     <p>Please transfer using the following contact details:</p>
     <ul>
-    <li>Email: Log the call using the registrars enquiry link below.</li>
+    <li>Email: Log the case using the registrars enquiry link below.</li>
     <li>Mobile (Warm Transfer): <a href="tel:07786126904">07786 126904</a></li>
     </ul>
 
