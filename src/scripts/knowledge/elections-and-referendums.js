@@ -2287,6 +2287,8 @@ const electionResults = new ContentEaR(
     </section>
     <p>
       You can find the previous election results via:
+      <a href="https://www.sheffield.gov.uk/your-city-council/election-results" target="_blank">
+         Sheffield City Council Election Results</a> 
       <br>
     </p>
 
