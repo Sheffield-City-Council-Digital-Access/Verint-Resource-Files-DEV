@@ -1948,6 +1948,24 @@ const registerToVote = new ContentEaR(
       or we can send you a paper form in the post.<br>
        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
     </p>
+
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20to%20vote\`
+    "
+>
+    Send link to review further information
+</button>
+
+   <p>
+     or we can send you a paper form in the post.
+   </p>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -2219,8 +2237,21 @@ const councillors = new ContentEaR(
       visit the official Sheffield City Council page:
     </p>
     <p>
-      <a href="https://www.sheffield.gov.uk/councillors" target="_blank">https://www.sheffield.gov.uk/councillors</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Councillors'"> Send Link </button>
     </p>
+
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Councillors\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -2244,7 +2275,7 @@ const councillors = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/11/2024", name: "Nathan Smith" }
+  { date: "01/05/2025", name: "Dinah Williams" }
 );
 
 const electionResults = new ContentEaR(
@@ -2260,8 +2291,21 @@ const electionResults = new ContentEaR(
     <p>
       You can find the previous election results via: <a href="https://www.sheffield.gov.uk/your-city-council/election-results" target="_blank">https://www.sheffield.gov.uk/your-city-council/election-results</a>
       <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Election%20Results'"> Send Link </button>
     </p>
+
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Election%20Results\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -2286,7 +2330,7 @@ const electionResults = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/09/2024", name: "Shahzad Athar" }
+  { date: "01/05/2025", name: "Dinah Williams" }
 );
 
 const overSeasVoters = new ContentEaR(
@@ -2389,8 +2433,20 @@ const wards = new ContentEaR(
       Sheffield has 28 electoral areas called Wards, and each Ward is represented by
       3 City Councillors who are elected in local elections. Further information on
       Wards can be found at the following link: 
-      <a href="https://www.sheffield.gov.uk/home/your-city-council/electoral-wards"target="_blank">https://www.sheffield.gov.uk/home/your-city-council/electoral-wards</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Election%20Wards'"> Send Link </button>
     </p>
+
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Election%20Wards\`
+    "
+>
+    Send link to review further information
+</button>
   `,
   { buttonLabel: "Wards", formName: "" },
   { typeKey: "" },
