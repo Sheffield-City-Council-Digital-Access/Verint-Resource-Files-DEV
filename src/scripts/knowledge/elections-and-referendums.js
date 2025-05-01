@@ -1939,15 +1939,12 @@ const registerToVote = new ContentEaR(
           Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
       </p>
     </section>
-    <p>
+     <p>
       Everyone is responsible for registering themselves. This is called Individual
       Electoral Registration (IER). To register, you will need your National
       Insurance Number and date of birth, which ensures the process is more secure.
       To register or change your details, please visit:
-      <a href="https://www.gov.uk/register-to-vote" target="_blank">https://www.gov.uk/register-to-vote</a>
-      or we can send you a paper form in the post.<br>
-       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20to%20vote'"> Send Link </button>
-    </p>
+     </p>
 
     <button
     type="button"
@@ -1989,7 +1986,7 @@ const registerToVote = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/11/2024", name: "Nathan Smith" }
+  { date: "01/05/2025", name: "Dinah Williams" }
 );
 
 const requestforEvidenceLetter = new ContentEaR(
