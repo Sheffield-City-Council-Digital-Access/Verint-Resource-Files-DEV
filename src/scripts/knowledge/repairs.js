@@ -1725,8 +1725,8 @@ const gutteringandRainwaterPipes  = new ContentR(
 
   <h3>Outcome</h3>
 
-  <p>Order Remedy Repair and remember to start with Storm Damage if caused by strong winds.</p>
-
+  <p>Order Remedy Repair and remember to start with Storm Damage if caused by strong winds.</p> 
+  
   `
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
