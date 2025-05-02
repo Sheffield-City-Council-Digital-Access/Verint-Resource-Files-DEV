@@ -148,7 +148,7 @@ const blacksmith = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["black","smth", "blak", "smiht", "blck","smth", "black","smitt", "blaksmitt", 
@@ -173,7 +173,7 @@ const brickwork = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["brickwork", "brikwork", "bricwork", "brickwok", "brickworrk", "brrickwork", "brikworck", 
@@ -227,7 +227,7 @@ const chimneyStack = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["chimny", "stack", "chimeney", "stack", "chimey", "stack", "chimnay", "stack", 
@@ -257,7 +257,7 @@ const claimforDamage = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["clamefor", "damage", "cliamfor", "damage", "claimfor", "damge", "claimefor", "damage", 
@@ -300,7 +300,7 @@ const clothesPost = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["cloths", "post", "clothe", "post", "clothes", "pst", "clothes", "psot", "clothes", "pot",
@@ -326,7 +326,7 @@ const communalArea = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["comunal", "area", "communal", "are", "comunal", "areaa", "commmnal", "area", 
@@ -366,7 +366,7 @@ const concrete = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["concret", "concrte", "concete", "concreate", "conkreet", "konkreet", "concrait", 
@@ -393,7 +393,7 @@ const dampandMould = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["dampan", "mould", "dampand", "mold", "dampamd", "mould", "dammpand", "mould",
@@ -463,7 +463,7 @@ const districtHeatingSwitch2Setup = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["district", "heating", "swich2", "setup", "distric", "heating", "switch2", "setup", 
@@ -512,7 +512,7 @@ const doorFurniture  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["dor", "furniture", "door", "furnture", "door", "frniture", "dooor", "furniture",
@@ -564,7 +564,7 @@ const drainage  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "drainag", "dranage", "drainige", "draniage", "drainaje", "drainiage",
@@ -598,8 +598,8 @@ const disrepair  = new ContentR(
   `
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
-  { typeKey: " " },
-  { typeKey: " " },
+  { typeKey: "" },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["disrepar", "disrepir", "disrepair", "disrepier", "disprepair", "disrepaire",
@@ -646,7 +646,7 @@ const electricalandHeating = new ContentR(
   `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["electrical", "heting", "electrical", "heting", "eletrical", "heating", "elctrical", "heating", 
@@ -727,7 +727,7 @@ const electricalTesting  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["electrical", "tesing", "electrical", "testng", "electrical", "tetsing", 
@@ -751,7 +751,7 @@ const externalContractors   = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["external", "contractrs", "extenal", "contractors", "external", "contarctors",
@@ -795,7 +795,7 @@ const externalDoorLock   = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["external", "dorlock", "external", "dorrlock", "external", "doorlok",
@@ -843,7 +843,7 @@ const externalDoor   = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["external", "dor", "external", "dorr", "extenal", "door", "external", "dooor",
@@ -878,7 +878,7 @@ const flatRoof   = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["flat", "rooff", "falt", "roof", "flat", "roofff", "flatt", "roof",
@@ -919,7 +919,7 @@ const floororStaircase   = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "flooror", "staircae", "flooror", "staiircase", "flooror", "staircsse",
@@ -958,7 +958,7 @@ const footpathandSteps   = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "footpathand", "stepps", "footpathan", "steps", "footpathand", "stpes",
@@ -1036,7 +1036,7 @@ const fireJobs  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "fire", "jbos", "fire", "jbso", "fire", "jbso", "fire", "jbss",
@@ -1073,7 +1073,7 @@ const garageorDetachedOutbuilding = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["garageor", "detached","outbulding", "garageor", "detached","ouutbuilding",
@@ -1521,7 +1521,7 @@ const gasandDomesticSystems   = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["gasand", "domesticsystms", "gasand", "domesticsytems", "gasand", "dometicsystems",
@@ -1575,7 +1575,7 @@ const gasReinstateandUncapServicesorAppointments  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["gasreinstateanduncap", "servcesorappointments", "gasreinstateanduncap", "serviceorappointments", 
@@ -1625,7 +1625,7 @@ const gateorFence  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "gator", "fence", "gateor", "fance", "gateor", "fnce", "gateor", "fenec", 
@@ -1683,7 +1683,7 @@ const glazingincludingfailedDoubleGlazedUnits = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["glazingincludingfailed", "doubleglazdunits", "glazzingincludingfailed", "doubleglazedunits",
@@ -1726,12 +1726,12 @@ const gutteringandRainwaterPipes  = new ContentR(
   <h3>Outcome</h3>
 
   <p>Order Remedy Repair and remember to start with Storm Damage if caused by strong winds.</p> 
-  
+
   `
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["gutteringand", "rainwatrpipes", "gutteringand", "rainwaterppes", "gutteringand", "rainwaterpipe",
@@ -1901,7 +1901,7 @@ const handyperson  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["handi","persn", "handy","persson", "handy","persn", "handy","prson", "handy","peron", 
@@ -1946,7 +1946,7 @@ const internalDoor  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["internldoor", "internaldor", "internaldorr", "intarnaldoor", "internaldooor",
@@ -1992,7 +1992,7 @@ const kitchenUnit  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["kitchennunit", "kitcenunit", "kitchenunitt", "kicthenunit", "kithchenunit",
@@ -2018,7 +2018,7 @@ const liftorHoist  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["lifttorhoist", "liftorhoit", "liforhoist", "liftorhoits", "liftorhois",
@@ -2056,7 +2056,7 @@ const lostKeyorFob  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "lostkeyorfb", "lostkeyorfo", "lostkyorfob", "lostkeyrfob", "lostkeyorrfob",
@@ -2105,7 +2105,7 @@ const newBuildPropertyDefectorEmergencyCallOut  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["newbuildpropertydefector", "emergenccallout", "newbuidpropertydefector", "emergencycallout",
@@ -2164,7 +2164,7 @@ const paintingCommunalArea  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["paintig", "communalarea", "painting", "comunalarea", "painnting", "communalarea",
@@ -2219,7 +2219,7 @@ const pitchedRoof  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["pithedroof", "pitcheddroof", "pitchedrooff", "pithcedroof", "pitchedroofff",
@@ -2259,7 +2259,7 @@ const plastering  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["plasterin", "plasttering", "plasterinng", "plasteriing", "plastaring",
@@ -2303,7 +2303,7 @@ const plumbingandDomesticHotorColdWater  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["plumbinganddomestic", "hotorcoldwter", "plumbinganddomestic", "hotrcoldwater",
@@ -2351,7 +2351,7 @@ const refuseChute  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["refussechute", "refuzechute", "refuschute", "refusechut", "refuzechut",
@@ -2425,7 +2425,7 @@ const reroofingProgrammeWarranty  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["reroofing", "programe", "warranty", "reroofing", "programme", "warrnty",
@@ -2466,7 +2466,7 @@ const rightToBuy  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "rigth", "tobuy", "right", "tbuy", "right", "tobuyy", "rigt", "tobuy",
@@ -2501,7 +2501,7 @@ const rightToRepair  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["rigth", "torepair", "right", "trepair", "right", "repaair", "righ", "torepair",
@@ -2555,7 +2555,7 @@ const scaffolding  = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["scafolding", "scafflding", "scafoldng", "scaffoling", "scaffoldin", "scaffoldingg", 
@@ -2583,7 +2583,7 @@ const surveyors = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "survayors", "servayors", "surveryors", "surveyers", "sureyors",
@@ -2604,7 +2604,7 @@ const tarmac = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["tarmak", "tarmaac", "tarmacc", "tarmoc", "taramc", "tarmoc",
@@ -2651,7 +2651,7 @@ const wallRepair = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["wallrepir", "walrepair", "wallrpair", "wallrepaiir", "wallrepaar",
@@ -2721,7 +2721,7 @@ const wcBathorShowerorSinkUnit = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["wc bath or showerr sink unit", "wc bath or shower or sink unt", "wc bath or shower o sink unit",   
@@ -2758,7 +2758,7 @@ const windowSillorCill = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["windowsilorcill", "windowsillorcil", "windowsillorcell", "windowsillorciill",
@@ -2803,7 +2803,7 @@ const windowFrame = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "windwframe", "windoframe", "windowfrme", "windowfrrame", "windowfraame",
@@ -2829,7 +2829,7 @@ const workingatHeight = new ContentR(
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: " " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "workingatheigh", "workingattheight", "workngatheight", "workingatheigt",
