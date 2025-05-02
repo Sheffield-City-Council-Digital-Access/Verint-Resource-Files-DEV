@@ -419,11 +419,11 @@ const copyCertificates = new ContentBDMaC(
 </button>
 
 
-    <p>Please transfer using the following contact details:</p>
-    <ul>
-    <li>Email: Log the case using the registrars enquiry link below.</li>
-    <li>Mobile (Warm Transfer): <a href="tel:07786126904">07786 126904</a></li>
-    </ul>
+  <p>Please transfer using the following contact details:</p>
+  <ul>
+  <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
+    <li>Form: Log the case using the registrars enquiry link below.</li>
+  </ul>
 
     <p>There is a standard fee of £13.50 for these:</p>
     <ul>
@@ -461,7 +461,7 @@ const copyCertificates = new ContentBDMaC(
         <li>We only supply the full A4 versions of birth certificates that have the parents’ names on.</li>
         <li>We do not provide free certificates at the point of registration.</li>
         <li>Certified copies of the birth certificate are £12.50 each at the time of registration. Copy birth certificates may be obtained at a later date for £13.50 each.</li>
-        <li>If a customer is chasing a certificate, and it has been over 15 working days since ordering from us, follow CRM scripting for registrar emails. Include:
+        <li>If a customer is chasing a certificate, and it has been over 15 working days since ordering from us, log the case using the registrars enquiry link below and include:
           <ul>
             <li>Name of applicant</li>
             <li>Name on the certificate</li>
@@ -486,8 +486,6 @@ const copyCertificates = new ContentBDMaC(
   <div class="accordion-content">
     <p>
       <ul>
-        <li>Follow CRM scripting for copy certificates</li>
-        <li>Set customer & resolve enquiry</li>
         <li>Log into Stopford and select copy certificates</li>
         <li>Select create new copy certificate request</li>
         <li>Complete details of person applying for certificate, changing delivery method as required (use copy address details to auto fill delivery and billing addresses)</li>
@@ -500,6 +498,8 @@ const copyCertificates = new ContentBDMaC(
         <li>Copy Certificates cost £13.50 (this includes postage costs). Certificates are posted out in 15 working days. Please allow 3 days for delivery.</li>
         <li>Priority Certificates are £38.50 each (this includes postage costs within the United Kingdom only). They are produced in 24 working hours. £13.50 for any additional copies of the same certificate. Please allow 3 days for delivery.</li>
         <li>If the customer wishes to collect the certificate, please advise it will be ready 24 hours after the time they are produced.</li>
+        <li>log the case using the registrars enquiry link below</li>
+        <li>Set customer & resolve enquiry</li>
       </ul>
     </p>
   </div>
@@ -517,7 +517,9 @@ const copyCertificates = new ContentBDMaC(
     </p>
     <p><strong>Process:</strong></p>
     <ul>
-      <li>Follow the CRM scripting for registrar emails and send to copy certificates. The registry office will contact the customer to let them know how to proceed. Include:</li>
+      <li>Log the case using the registrar's enquiry link below, which will be sent 
+      to copy certificates. The registry office will contact the customer 
+      with next steps. Make sure to include:</li>
       <ul>
         <li>Contact information</li>
         <li>What type of certificate are they correcting (Birth/Death/Marriage or CP)</li>
@@ -558,7 +560,7 @@ const copyCertificates = new ContentBDMaC(
     </p>
     <p><strong>Process:</strong></p>
     <ul>
-      <li>Follow the CRM scripting for registrar emails and send to copy certificates. Include:</li>
+      <li>Log the case using the registrar's enquiry link below, which will be sent to copy certificates. Make sure to include:</li>
       <ul>
         <li>Contact information</li>
         <li>Child’s name & DOB</li>
@@ -584,7 +586,7 @@ const copyCertificates = new ContentBDMaC(
       "Certificates",
     ],
   },
-  { date: "30/04/2025", name: "Joseph Coupland" }
+  { date: "02/05/2025", name: "Andy Walker" }
 );
 
 const finalPayment = new ContentBDMaC(
@@ -791,17 +793,18 @@ const registerABirth = new ContentBDMaC(
         }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20or%20reregister%20a%20birth\`, '_blank')
     "
     >
+
     Send link to review further information
     </button>
     <p>
     <strong>Visit the registration page:</strong> <a href="https://www.sheffield.gov.uk/births-deaths-marriages/register-birth" target="_blank">https://www.sheffield.gov.uk/births-deaths-marriages/register-birth</a>
     </p>
 
-    <p>Please transfer using the following contact details:</p>
-    <ul>
-    <li>Email: Log the case using the registrars enquiry link below.</li>
-    <li>Mobile (Warm Transfer): <a href="tel:07786126904">07786 126904</a></li>
-    </ul>
+  <p>Please transfer using the following contact details:</p>
+  <ul>
+  <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
+    <li>Form: Log the case using the registrars enquiry link below.</li>
+  </ul>
 
 <details class="accordion">
   <summary class="accordion-header">
@@ -893,7 +896,7 @@ const registerABirth = new ContentBDMaC(
 
     <p><strong>Process of re-registering a birth:</strong></p>
     <ul>
-      <li>Follow CRM scripting and submit a callback request to the registry office 
+      <li>log the case using the registrars enquiry link below and submit a callback request to the registry office 
       (send to Copy Certificates).</li>
       <li>They will receive a call back within 2 days and a form will be posted.</li>
     </ul>
@@ -907,7 +910,7 @@ const registerABirth = new ContentBDMaC(
       <li>Phone Number</li>
     </ul>
 
-    <p><strong>Alternative:</strong> The form can be downloaded from the GOV.UK website.</p>
+    <p><strong>Alternative:</strong> The form can be downloaded from the <a href="https://www.gov.uk/register-birth" target="_blank" rel="noopener noreferrer">GOV.UK website</a>.</p>
   </div>
 </details>
 
@@ -936,7 +939,7 @@ const registerABirth = new ContentBDMaC(
 
     <p><strong>Process:</strong></p>
     <ul>
-      <li>Follow CRM scripting and send the customer’s details to the registry office 
+      <li>log the case using the registrars enquiry link below and send the customer’s details to the registry office 
         (send to Copy Certificates) for a call back.</li>
       <li>They will receive a call back within 2 days and a form will be posted.</li>
     </ul>
@@ -950,7 +953,7 @@ const registerABirth = new ContentBDMaC(
       <li>Phone Number</li>
     </ul>
 
-    <p><strong>Alternative:</strong> The form can be downloaded from the GOV.UK website.</p>
+    <p><strong>Alternative:</strong> The form can be downloaded from the <a href="https://www.gov.uk/register-birth" target="_blank" rel="noopener noreferrer">GOV.UK website</a>.</p>
   </div>
 </details>
 
@@ -1000,11 +1003,11 @@ const registerADeath = new ContentBDMaC(
 </button>
 
 
-<p>Please transfer using the following contact details:</p>
-<ul>
-<li>Email: Log the case using the registrars enquiry link below.</li>
-<li>Mobile (Warm Transfer): <a href="tel:07786126904">07786 126904</a></li>
-</ul>
+  <p>Please transfer using the following contact details:</p>
+  <ul>
+  <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
+    <li>Form: Log the case using the registrars enquiry link below.</li>
+  </ul>
 
     <h3>Who can register a death</h3>
     <p>Usually, a relative or long-term partner (living with the deceased) of the person who has died can register death, but others can also do this. This can be:</p>
@@ -1042,7 +1045,7 @@ const registerADeath = new ContentBDMaC(
 
     <h3>Register a death online</h3>
     <p>If you wish to register a death, you can also complete the process online by making an 
-    registering the death through the following link: <a href="https://sheffield.sishost.co.uk/Agenda/TelephoneRegistration/Appointment.html?pg=f2eb039d-64e9-4c63-8ba3-b942989b07d6" target="_blank" rel="noopener noreferrer">Register a death online</a>.</p>
+    registering the death through the following link: <a href="https://sheffield.sishost.co.uk/Agenda/TelephoneRegistration/Appointment.html?pg=f2eb039d-64e9-4c63-8ba3-b942989b07d6" target="_blank" rel="noopener noreferrer">online by making an registering the death</a>.</p>
 
   `,
   { buttonLabel: "Registrars enquiry", formName: "registrars_process" },
@@ -1061,11 +1064,11 @@ const registerAStillbirth = new ContentBDMaC(
   "Register a Stillbirth",
   "Register a stillbirth",
   `
-    <p>Please transfer using the following contact details:</p>
-    <ul>
-    <li>Email: Log the case using the registrars enquiry link below.</li>
-    <li>Mobile (Warm Transfer): <a href="tel:07786126904">07786 126904</a></li>
-    </ul>
+  <p>Please transfer using the following contact details:</p>
+  <ul>
+  <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
+    <li>Form: Log the case using the registrars enquiry link below.</li>
+  </ul>
 
   `,
   { buttonLabel: "Registrars enquiry", formName: "registrars_process" },
@@ -1100,8 +1103,8 @@ To re-schedule an appointment, please use the
 
 <p>Please transfer using the following contact details:</p>
 <ul>
-  <li>Email: Log the case using the registrars enquiry link below.</li>
-  <li>Mobile (Warm Transfer): <a href="tel:07786126904">07786 126904</a></li>
+ <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
+  <li>Form: Log the case using the registrars enquiry link below.</li>
 </ul>
 
 <details class="accordion">
@@ -1110,25 +1113,25 @@ To re-schedule an appointment, please use the
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <ul>
-      <li>Confirm with the customer that the appointment they want to reschedule is one they have made.</li>
-      <li>Confirm with the customer the date and time of their current appointment and make a note of this. (Check in Stopford that the caller is the person who made the appointment.)</li>
-      <li>Launch Stopford and find the next available appointment by using the “jump to” tabs on the left-hand column (select relevant service: D for Deaths, B for Births).</li>
-      <li>Make a note of the next available appointment date to refer back to.</li>
-      <li>Search for the customer's current appointment.</li>
-      <li>Use the “search appointment” option on the left-hand side to find it by the name it’s booked under.</li>
-      <li>Alternatively, use the calendar to select the date the customer has provided, and find the appointment by matching the time and name.</li>
-      <li>When you find the appointment, go through the booking details. Ask the customer to confirm all details (e.g., DoB, mobile number, and email).</li>
-      <li>Once confirmed, return to the appointment on the calendar and select the reschedule tab.</li>
-      <li>A new calendar page will appear. Select the previously noted available date—it will auto-fill the next available time slot.</li>
-      <li>Inform the customer of the available time slots and select the one that suits them.</li>
-      <li>Add comments to the "reasons" box explaining why the customer can’t attend the original appointment.</li>
-      <li>Confirm the new date and time with the customer and click submit to complete the rescheduling.</li>
-      <li>An automatic email confirmation should be sent to the customer.</li>
-      <li>Locate the new appointment using the search or calendar to confirm the changes were successful. Confirm the new details with the customer.</li>
-      <li>Check the calendar to confirm the old appointment has been cancelled. It will show as cancelled at the bottom of the time slots.</li>
-      <li>This process applies to both birth registrations and telephone appointments for registering a death. If it's about a check-and-sign death registration appointment, contact the Register Office directly.</li>
-    </ul>
+  <p>
+  Confirm with the customer that the appointment they want to reschedule is one they have made.<br>
+  Confirm with the customer the date and time of their current appointment and make a note of this. (Check in Stopford that the caller is the person who made the appointment.)<br>
+  Launch Stopford and find the next available appointment by using the “jump to” tabs on the left-hand column (select relevant service: D for Deaths, B for Births).<br>
+  Make a note of the next available appointment date to refer back to.<br>
+  Search for the customer's current appointment.<br>
+  Use the “search appointment” option on the left-hand side to find it by the name it’s booked under.<br>
+  Alternatively, use the calendar to select the date the customer has provided, and find the appointment by matching the time and name.<br>
+  When you find the appointment, go through the booking details. Ask the customer to confirm all details (e.g., DoB, mobile number, and email).<br>
+  Once confirmed, return to the appointment on the calendar and select the reschedule tab.<br>
+  A new calendar page will appear. Select the previously noted available date—it will auto-fill the next available time slot.<br>
+  Inform the customer of the available time slots and select the one that suits them.<br>
+  Add comments to the "reasons" box explaining why the customer can’t attend the original appointment.<br>
+  Confirm the new date and time with the customer and click submit to complete the rescheduling.<br>
+  An automatic email confirmation should be sent to the customer.<br>
+  Locate the new appointment using the search or calendar to confirm the changes were successful. Confirm the new details with the customer.<br>
+  Check the calendar to confirm the old appointment has been cancelled. It will show as cancelled at the bottom of the time slots.<br>
+  This process applies to both birth registrations and telephone appointments for registering a death. If it's about a check-and-sign death registration appointment, contact the Register Office directly.
+  </p>
   </div>
 </details>
  

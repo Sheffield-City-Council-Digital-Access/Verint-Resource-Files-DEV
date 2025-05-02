@@ -142,7 +142,7 @@ const freeSchoolMeals = new ContentSaC(
     </ol>
     <p>
       Codes need to be activated within 3 months of the issue 
-      date or they will be expire automatically. 
+      date or they will expire automatically. 
       Once vouchers have been claimed on the Edenred website, 
       they will be valid for 12 months.
     </p>
