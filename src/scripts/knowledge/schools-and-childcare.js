@@ -87,7 +87,7 @@ const freeSchoolMeals = new ContentSaC(
     <p>
       If your child/ren is/are currently eligible for free school meals, they’ll
       remain eligible until they finish the phase of schooling (primary or
-      secondary) they’re in on 31 March 2025.
+      secondary) they’re in.
     </p>
     <p>
       If your child/ren is/are currently attending an Oasis school, they need to apply for Free School Meals with that school directly.
