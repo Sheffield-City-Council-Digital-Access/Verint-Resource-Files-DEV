@@ -730,6 +730,59 @@ const licensedWeddingVenues = new ContentBDMaC(
   { date: "11/11/2024", name: "Joseph Coupland" }
 );
 
+const registerABirthAndDeath = new ContentBDMaC(
+  "registerABirthAndDeath",
+  "Register a Birth and Death",
+  "Register a birth and death",
+  `
+  <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p> 	<br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20or%20reregister%20a%20birth'"> Send Link </button>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="For further information send link"
+  onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20or%20reregister%20a%20birth\`
+  "
+>
+  Send link to review further information
+</button>    
+
+<p>  <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">https://www.sheffield.gov.uk/births-deaths-marriages/register-death </a></p>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="For further information send link"
+  onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20a%20death\`
+  "
+>
+  Send link to review further information
+</button>
+
+`,
+{ buttonLabel: "", formName: "" },
+{ typeKey: "register_office_information_requested" },
+{ typeKey: "register_office_information_provided" },
+{
+  type: "",
+  keywords: [],
+  categories: [
+    "Registrars",
+    "Registry Office",
+    "Register Office",
+    "Births",
+    "Deaths",
+  ],
+},
+{ date: "16/10/2024", name: "Joe Nixon" }
+);
+
 const reRegisterABirth = new ContentBDMaC(
   "reRegisterABirth",
   "Make an appointment to re-register a birth",
@@ -803,7 +856,7 @@ const registerABirth = new ContentBDMaC(
   <p>Please transfer using the following contact details:</p>
   <ul>
   <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
-    <li>Form: Log the case using the registrars enquiry link below.</li>
+    <li>Form: Log the case using the registrars enquiry button below.</li>
   </ul>
 
 <details class="accordion">
@@ -1009,43 +1062,90 @@ const registerADeath = new ContentBDMaC(
     <li>Form: Log the case using the registrars enquiry link below.</li>
   </ul>
 
+<details class="accordion">
+  <summary class="accordion-header">
     <h3>Who can register a death</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
     <p>Usually, a relative or long-term partner (living with the deceased) of the person who has died can register death, but others can also do this. This can be:</p>
     <ul>
-        <li>Someone present at the death</li>
-        <li>A person arranging the funeral</li>
-        <li>A personal representative of the deceased (solicitor, family friend or funeral director)</li>
-        <li>An official from the hospital or the manager of where the death took place (for example a care home)</li>
+      <li>Someone present at the death</li>
+      <li>A person arranging the funeral</li>
+      <li>A personal representative of the deceased (solicitor, family friend or funeral director)</li>
+      <li>An official from the hospital or the manager of where the death took place (for example a care home)</li>
     </ul>
+  </div>
+</details>
 
+<details class="accordion">
+  <summary class="accordion-header">
     <h3>How to register a death</h3>
-    <p>
-    Select a date to speak with the registrar, who will help you to make an appointment for registering 
-    the death.
-    </p>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>Select a date to speak with the registrar, who will help you to make an appointment for registering the death.</p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
     <h3>What happens next</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
     <p>
-        On your chosen date, the registrar will call you to check the paperwork and the deceased’s details. You don't need to worry about the relevant medical paperwork, as the coroner or medical examiner will send us a copy.<br><br>
-        The registrar will then arrange for you to attend the Register Office the following day. This is for you to check and sign the registration paperwork and complete the registration.<br><br>
-        If required, at this appointment you will receive the relevant paperwork for the funeral director, the Tell Us Once registration code, and any death certificates.
+      On your chosen date, the registrar will call you to check the paperwork and the deceased’s details. You don't need to worry about the relevant medical paperwork, as the coroner or medical examiner will send us a copy.
     </p>
+    <p>
+      The registrar will then arrange for you to attend the Register Office the following day. This is for you to check and sign the registration paperwork and complete the registration.
+    </p>
+    <p>
+      If required, at this appointment you will receive the relevant paperwork for the funeral director, the Tell Us Once registration code, and any death certificates.
+    </p>
+  </div>
+</details>
 
+<details class="accordion">
+  <summary class="accordion-header">
     <h3>Tell us once service</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
     <p>
-    When you register a death we will notify our other services and certain Government 
-    agencies of the person’s death. This is a free voluntary service and means fewer phone calls, letters, or 
-    emails for you.
+      When you register a death we will notify our other services and certain Government 
+      agencies of the person’s death. This is a free voluntary service and means fewer phone calls, letters, or 
+      emails for you.
     </p>
-    <h3>Cost</h3>
-    <ul>
-        <li>Registration is free of charge.</li>
-        <li>Certified copies are £12.50 each at the time of registration.</li>
-        <li>Copy certificates may be obtained at a later date for the standard fee of £13.50 each.</li>
-    </ul>
+  </div>
+</details>
 
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Cost</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <ul>
+      <li>Registration is free of charge.</li>
+      <li>Certified copies are £12.50 each at the time of registration.</li>
+      <li>Copy certificates may be obtained at a later date for the standard fee of £13.50 each.</li>
+    </ul>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
     <h3>Register a death online</h3>
-    <p>If you wish to register a death, you can also complete the process online by making an 
-    registering the death through the following link: <a href="https://sheffield.sishost.co.uk/Agenda/TelephoneRegistration/Appointment.html?pg=f2eb039d-64e9-4c63-8ba3-b942989b07d6" target="_blank" rel="noopener noreferrer">online by making an registering the death</a>.</p>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      If you wish to register a death, you can also complete the process online by registering the death through the following link: 
+      <a href="https://sheffield.sishost.co.uk/Agenda/TelephoneRegistration/Appointment.html?pg=f2eb039d-64e9-4c63-8ba3-b942989b07d6" target="_blank" rel="noopener noreferrer">online registration link</a>.
+    </p>
+  </div>
+</details>
 
   `,
   { buttonLabel: "Registrars enquiry", formName: "registrars_process" },
@@ -1113,25 +1213,26 @@ To re-schedule an appointment, please use the
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-  <p>
-  Confirm with the customer that the appointment they want to reschedule is one they have made.<br>
-  Confirm with the customer the date and time of their current appointment and make a note of this. (Check in Stopford that the caller is the person who made the appointment.)<br>
-  Launch Stopford and find the next available appointment by using the “jump to” tabs on the left-hand column (select relevant service: D for Deaths, B for Births).<br>
-  Make a note of the next available appointment date to refer back to.<br>
-  Search for the customer's current appointment.<br>
-  Use the “search appointment” option on the left-hand side to find it by the name it’s booked under.<br>
-  Alternatively, use the calendar to select the date the customer has provided, and find the appointment by matching the time and name.<br>
-  When you find the appointment, go through the booking details. Ask the customer to confirm all details (e.g., DoB, mobile number, and email).<br>
-  Once confirmed, return to the appointment on the calendar and select the reschedule tab.<br>
-  A new calendar page will appear. Select the previously noted available date—it will auto-fill the next available time slot.<br>
-  Inform the customer of the available time slots and select the one that suits them.<br>
-  Add comments to the "reasons" box explaining why the customer can’t attend the original appointment.<br>
-  Confirm the new date and time with the customer and click submit to complete the rescheduling.<br>
-  An automatic email confirmation should be sent to the customer.<br>
-  Locate the new appointment using the search or calendar to confirm the changes were successful. Confirm the new details with the customer.<br>
-  Check the calendar to confirm the old appointment has been cancelled. It will show as cancelled at the bottom of the time slots.<br>
-  This process applies to both birth registrations and telephone appointments for registering a death. If it's about a check-and-sign death registration appointment, contact the Register Office directly.
-  </p>
+<p>
+  Confirm with the customer that the appointment they want to reschedule is one they have made.<br><br>
+  Confirm with the customer the date and time of their current appointment and make a note of this. (Check in Stopford that the caller is the person who made the appointment.)<br><br>
+  Launch Stopford and find the next available appointment by using the “jump to” tabs on the left-hand column (select relevant service: D for Deaths, B for Births).<br><br>
+  Make a note of the next available appointment date to refer back to.<br><br>
+  Search for the customer's current appointment.<br><br>
+  Use the “search appointment” option on the left-hand side to find it by the name it’s booked under.<br><br>
+  Alternatively, use the calendar to select the date the customer has provided, and find the appointment by matching the time and name.<br><br>
+  When you find the appointment, go through the booking details. Ask the customer to confirm all details (e.g., DoB, mobile number, and email).<br><br>
+  Once confirmed, return to the appointment on the calendar and select the reschedule tab.<br><br>
+  A new calendar page will appear. Select the previously noted available date—it will auto-fill the next available time slot.<br><br>
+  Inform the customer of the available time slots and select the one that suits them.<br><br>
+  Add comments to the "reasons" box explaining why the customer can’t attend the original appointment.<br><br>
+  Confirm the new date and time with the customer and click submit to complete the rescheduling.<br><br>
+  An automatic email confirmation should be sent to the customer.<br><br>
+  Locate the new appointment using the search or calendar to confirm the changes were successful. Confirm the new details with the customer.<br><br>
+  Check the calendar to confirm the old appointment has been cancelled. It will show as cancelled at the bottom of the time slots.<br><br>
+  This process applies to both birth registrations and telephone appointments for registering a death.<br><br>
+  If it's about a check-and-sign death registration appointment, contact the Register Office directly.
+</p>
   </div>
 </details>
  
@@ -1170,6 +1271,7 @@ const birthsDeathsMarriagesAndCitizenship = new ServiceBDMaC(
     copyCertificates,
     finalPayment,
     licensedWeddingVenues,
+    registerABirthAndDeath,
     reRegisterABirth,
     registerABirth,
     registerADeath,
