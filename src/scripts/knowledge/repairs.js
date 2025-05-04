@@ -1257,20 +1257,16 @@ const gasandDomesticSystems   = new ContentR(
         </summary>
           <div class="accordion-content">
       <p>
-      On some occasions, there is an overlap with the installation of new systems and the 
-      annual gas service. Therefore, if a tenant rings to organise their gas service, but states 
-      that they have just had a new boiler / central heating system installed, please contact 
-      HME_GandE_Reinstates@sheffield.gov.uk
-      and they will advise on what steps you need to take with the gas service. This will 
-      generally consist of confirming to the tenant that we will not need to service the gas 
-      appliances this year, and delaying the service on the system, to allow HM&E to get the 
-      paperwork scanned.
+        On some occasions, there is an overlap with the installation of new systems and the 
+        annual gas service. Therefore, if a tenant rings to organise their gas service, but states 
+        that they have just had a new boiler / central heating system installed, please contact <p><a href="mailto: HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a></p> 
+        and they will advise on what steps you need to take with the gas service. This will 
+        generally consist of confirming to the tenant that we will not need to service the gas 
+        appliances this year, and delaying the service on the system, to allow HM&E to get the 
+        paperwork scanned.
       </p>
-
       </div>
   </details>
-  
-
   <details class="accordion">
       <summary class="accordion-header">
           <h3>Cowls</h3>
