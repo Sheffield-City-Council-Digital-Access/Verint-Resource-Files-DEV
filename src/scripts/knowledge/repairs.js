@@ -631,7 +631,6 @@ const electricalandHeating = new ContentR(
   <h3>Heating Items</h3>
   <p>For extra radiators, email to
   
-
   <a href="${window.location.protocol}//${
     window.location.hostname
   }/form/launch/refer_to_service?${
@@ -1147,9 +1146,7 @@ const gasandDomesticSystems   = new ContentR(
             <div class="details-accordion-content">
                 <p>
                     Check if the repair is regarding no water flowing out of the taps, or whether there is 
-                    water flowing, and it is cold. If there is no water flowing this should be a 
-                    <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx"> 
-                    plumbing repair</a>.</p>
+                    water flowing, and it is cold. If there is no water flowing this should be a plumbing repair.</p>
                 <p>
                   If a customer has a pre-pay meter but has no gas heating at all, either from a boiler 
                   or gas fire (if present), ask the customer to check that the meter has credit and that the 
@@ -1365,8 +1362,17 @@ const gasandDomesticSystems   = new ContentR(
       
             <p>
             If a customer requests an inspection for a gas heating appliance in their property, 
-            please refer to <strong>HM&E</strong>.
-            </p>
+            please refer to </p>
+
+            <a href="${window.location.protocol}//${
+            window.location.hostname
+            }/form/launch/refer_to_service?${
+            KDF.getParams().customerid
+            ? `customerid=${KDF.getParams().customerid}&`
+            : ""
+            }interactionid=${
+            KDF.getParams().interactionid
+            }&txt_emailservice=GasSheffield@sheffield.gov.uk">GasSheffield@sheffield.gov.uk</a>
       
         </div>
   </details>
@@ -1379,10 +1385,20 @@ const gasandDomesticSystems   = new ContentR(
                     <div class="accordion-content">
       
               <p>
-              If a boiler has been stolen, contact <strong>RPIT</strong>. Do not contact HM&E. Please 
+              If a boiler has been stolen, contact <strong>Repairs Policy & Improvement Team</strong>. Do not contact HM&E. Please 
               raise an <strong>EM</strong> job and advise the tenant we need a crime ref number so then 
-              they can be referred to <strong>RPIT</strong>.
-              </p>
+              they can be referred to </p>
+
+            <a href="${window.location.protocol}//${
+            window.location.hostname
+            }/form/launch/refer_to_service?${
+            KDF.getParams().customerid
+            ? `customerid=${KDF.getParams().customerid}&`
+            : ""
+            }interactionid=${
+            KDF.getParams().interactionid
+            }&txt_emailservice=RepairsPolicy&ImprovementsTeam@sheffield.gov.uk">RepairsPolicy&ImprovementsTeam@sheffield.gov.uk</a>
+
               <p>
               If a stolen boiler is reported, a 'make safe gas and water' job should be raised by the 
               service center agent or anyone that takes a stolen boiler call. This should be raised on 
@@ -1401,8 +1417,7 @@ const gasandDomesticSystems   = new ContentR(
                     <div class="accordion-content">
       
                 <p>If gas after trades are required following work, please contact the 
-                <a href="mailto:ElectricalSheffield@sheffield.gov.uk?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=108&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Gas Team</a> 
-                to ask for work to be done.</p>
+                <a href="mailto:Gas@sheffield.gov.uk">Gas</a> to ask for work to be done.</p>
                 <p><strong>Do not put a job on.</strong></p>
       
         </div>
@@ -1544,7 +1559,19 @@ const gasReinstateandUncapServicesorAppointments  = new ContentR(
 <h3>New Tenant</h3>
 
   <p>If a new tenant makes contact regarding a gas reinstate, then these need to be passed 
-  through to <strong>HM&E</strong> if no answer please email 
+  through to </p>
+
+  <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=GasSheffield@sheffield.gov.uk">GasSheffield@sheffield.gov.uk</a>
+  
+  <p>if no answer please email 
   <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>.</p>
   <p>If a new tenant makes contact and reports that they have no heat or hot water, please 
   first check that their gas has been reinstated <strong>before</strong> ordering a repair.</p>
@@ -1556,10 +1583,9 @@ const gasReinstateandUncapServicesorAppointments  = new ContentR(
   we cap off the supply. We then wait for the tenant to contact us and arrange an "uncap and 
   service".</p>
   <p>If the tenant makes contact within two weeks of the original cap off, then this can be 
-  put through to <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Documents/Emails/Roof%20Enquiry.msg?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=258&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Gas Team</a> direct on <a href="mailto:steve.pitts1@sheffield.gov.uk">GasSheffield@sheffield.gov.uk</a>.</p>
+  put through to Gas team  direct on <a href="mailto:Gas@sheffield.gov.uk">Gas</a>.</p>
   <p>If job and it is more than two weeks, then these need to be put through to 
-  <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">HM&E Gas</a> 
-  to order a new job, and book the appointment.</p>
+ <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk">HME GandE Reinstates</a> to order a new job, and book the appointment.</p>
   <p>There are occasions where a tenant may have a <strong>gas meter changed</strong>. When 
   the meter is changed, the supplier generally asks the tenant for a copy of the most 
   up-to-date service certificate.</p>
@@ -1615,7 +1641,7 @@ const gateorFence  = new ContentR(
   <p>N/A</p>
 
 <h3>Outcome</h3>
-  <p>Order <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Lists/Communal%20Repair/AllItems.aspx">Communal Repairs</a> (if communal repair or if it's a health and safety issue)</p>
+  <p>Order Communal Repairs (if communal repair or if it's a health and safety issue)</p>
   
   `
   ,
