@@ -422,7 +422,7 @@ const copyCertificates = new ContentBDMaC(
   <p>Please transfer using the following contact details:</p>
   <ul>
   <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
-    <li>Form: Log the case using the registrars enquiry link below.</li>
+    <li>Form: Log the case using the registrars enquiry button below.</li>
   </ul>
 
     <p>There is a standard fee of £13.50 for these:</p>
@@ -461,7 +461,7 @@ const copyCertificates = new ContentBDMaC(
         <li>We only supply the full A4 versions of birth certificates that have the parents’ names on.</li>
         <li>We do not provide free certificates at the point of registration.</li>
         <li>Certified copies of the birth certificate are £12.50 each at the time of registration. Copy birth certificates may be obtained at a later date for £13.50 each.</li>
-        <li>If a customer is chasing a certificate, and it has been over 15 working days since ordering from us, log the case using the registrars enquiry link below and include:
+        <li>If a customer is chasing a certificate, and it has been over 15 working days since ordering from us, log the case using the registrars enquiry button below and include:
           <ul>
             <li>Name of applicant</li>
             <li>Name on the certificate</li>
@@ -498,7 +498,7 @@ const copyCertificates = new ContentBDMaC(
         <li>Copy Certificates cost £13.50 (this includes postage costs). Certificates are posted out in 15 working days. Please allow 3 days for delivery.</li>
         <li>Priority Certificates are £38.50 each (this includes postage costs within the United Kingdom only). They are produced in 24 working hours. £13.50 for any additional copies of the same certificate. Please allow 3 days for delivery.</li>
         <li>If the customer wishes to collect the certificate, please advise it will be ready 24 hours after the time they are produced.</li>
-        <li>log the case using the registrars enquiry link below</li>
+        <li>log the case using the registrars enquiry button below</li>
         <li>Set customer & resolve enquiry</li>
       </ul>
     </p>
@@ -517,7 +517,7 @@ const copyCertificates = new ContentBDMaC(
     </p>
     <p><strong>Process:</strong></p>
     <ul>
-      <li>Log the case using the registrar's enquiry link below, which will be sent 
+      <li>Log the case using the registrar's enquiry button below, which will be sent 
       to copy certificates. The registry office will contact the customer 
       with next steps. Make sure to include:</li>
       <ul>
@@ -560,7 +560,7 @@ const copyCertificates = new ContentBDMaC(
     </p>
     <p><strong>Process:</strong></p>
     <ul>
-      <li>Log the case using the registrar's enquiry link below, which will be sent to copy certificates. Make sure to include:</li>
+      <li>Log the case using the registrar's enquiry button below, which will be sent to copy certificates. Make sure to include:</li>
       <ul>
         <li>Contact information</li>
         <li>Child’s name & DOB</li>
@@ -603,19 +603,6 @@ const finalPayment = new ContentBDMaC(
     <p>Marriage and civil partnership certificates cost £12.50 at the point of registration (before the ceremony). Your 1st certificate will be sent out within 5-10 working days of the office receiving your completed marriage or civil partnership schedule. If you require another certificate, please follow the link below to order one. The following details must be inputted, date of ceremony, venue and names on the schedule (maiden name).</p>
     <p>Ceremonies conducted in religious venues do not receive the 1st certificate free, please use the link below to purchase another certificate if you require one.</p>
     <p><a href="https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 " target="_blank" rel="noopener noreferrer">https://ip.e-paycapita.com/AIP/itemSelectionPage.do?link=showItemSelectionPage&siteId=266&languageCode=EN&source=AIP&fc=30&sc=Reg&ic=Cert11 </a></p>
-
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Marriage%20certificate%20at%20point%20of%20registration\`
-    "
->
-    Send link to review further information
-</button>
 
     <p>Copies of certificates can be purchased after the ceremony for £13.50 each at <a href="https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates " target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/copy-certificates </a> 
 </p>
