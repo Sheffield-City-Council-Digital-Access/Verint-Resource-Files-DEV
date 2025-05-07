@@ -108,8 +108,22 @@ const universalCredit = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>Universal Credit does not include help with your Council Tax, so you must claim this separately.</p>
-        <p>You can do this at <a href="https://www.sheffield.gov.uk/benefits/council-tax-support" 
-           target="_blank">https://www.sheffield.gov.uk/benefits/council-tax-support</a>.<br><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20Council%20Tax%20support'"> Send Link </button> </p>
+        <p>You can do this at:
+        <a href="https://www.sheffield.gov.uk/benefits/council-tax-support" 
+      </p>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20Council%20Tax%20support\`
+    "
+>
+    Send link to review further information
+</button>
     </div>
 </details>
 
@@ -204,7 +218,7 @@ const universalCredit = new ContentH(
     ],
     categories: ["Housing", "Benefits"],
   },
-  { date: "05/11/2024", name: "Andy Walker" }
+  { date: "07/05/2025", name: "Dinah Williams" }
 );
 
 const welfareReform = new ContentH(
@@ -1360,8 +1374,21 @@ const loststolenkeys = new ContentH(
     <p>
       Please note: Howden House only deals with Rehousing enquiries and will not be able to help with fobs or keys. 
       List of Area Offices:  <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices "target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
-    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Neighbourhood%20offices'"> Send Link </button>
-      </p>
+    </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Neighbourhood%20offices\`
+    "
+>
+    Send link to review further information
+</button>
+
   `,
   {
     buttonLabel: "",
@@ -1380,7 +1407,7 @@ const loststolenkeys = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "10/10/2024", name: "George Whitehouse" }
+  { date: "07/05/2025", name: "Dinah Williams" }
 );
 
 const newAndExistingRepairs = new ContentH(
@@ -1686,7 +1713,21 @@ const noHeatNoWater = new ContentH(
   </p>
   <ol> 
     <li>Does the property have an electricity supply? They will not have access to heat and hot water without it. The customer will need to Dial 105 or visit <a href="https://www.findmysupplier.energy "target="_blank">https://www.findmysupplier.energy</a> to find their current supplier. 
-    <br><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Find%20My%20Supplier'"> Send Link </button>
+    <br>
+   
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Find%20My%20Supplier\`
+    "
+>
+    Send link to review further information
+</button>
+
  </li>
     <li>
       The District Heating Meter location may vary but is usually located in the property airing cupboard. Does The Meters Home Screen say ON in the top right corner? Is your heating programmer turned on?
@@ -2012,7 +2053,20 @@ const gardenPledgeScheme = new ContentH(
       The Government also has a website which lists local, trustworthy and reliable
       tradesmen, operating to Government endorsed standards
       <a href="http://www.trustmark.org.uk/ "target="_blank">http://www.trustmark.org.uk</a>.<br>
-    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Trust%20Mark'"> Send Link </button>
+    
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Trust%20Mark\`
+    "
+>
+    Send link to review further information
+</button>
+
 
       </p>
   `,
@@ -2051,8 +2105,19 @@ const generalCouncilHousing = new ContentH(
   <h3>Area Office Information</h3>
   <p>
     <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices"target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a> <br>
-        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Neighbourhood%20offices'"> Send Link </button>
-
+        
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Neighbourhood%20offices\`
+    "
+>
+    Send link to review further information
+</button>
   </p>
 
   <h3>Bogus Callers</h3>
@@ -2087,7 +2152,7 @@ const generalCouncilHousing = new ContentH(
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Estates and Environments"],
   },
-  { date: "09/10/2024", name: "Elliott Griffiths" }
+  { date: "07/05/2025", name: "Dinah Williams" }
 );
 //#endregion General Council Housing
 
@@ -2099,8 +2164,21 @@ const benefitCap = new ContentH(
   "Benefit cap",
   "Find information about the Housing Benefit Cap on the official government website.",
   `
-    <p>View website for housing benefit cap information: <a href="https://www.gov.uk/benefit-cap" target="_blank">https://www.gov.uk/benefit-cap</a> <br>
-    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Benefit%20cap'"> Send Link </button>
+    <p>View website for housing benefit cap information: <a href="https://www.gov.uk/benefit-cap" target="_blank">https://www.gov.uk/benefit-cap</a>
+    <br>
+    
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Benefit%20cap\`
+    "
+>
+    Send link to review further information
+</button>
 
     </p>
   `,
@@ -2130,7 +2208,7 @@ const benefitCap = new ContentH(
     ],
       categories: ["Housing", "Benefits"],
     },
-    { date: "05/11/2024", name: "Andy Walker" }
+    { date: "07/05/2025", name: "Dinah Williams" }
   );
 
   const benefitClaim = new ContentH(
@@ -2145,8 +2223,21 @@ const benefitCap = new ContentH(
           <li><a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></li>
           <li><a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></li>
       </ul>
-      <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax" target="_blank">https://www.sheffield.gov.uk/council-tax</a><br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Council%20Tax'"> Send Link </button>
+      <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax" target="_blank">https://www.sheffield.gov.uk/council-tax</a> <br>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Council%20Tax\`
+    "
+>
+    Send link to review further information
+</button>
+
 </p>
       <p><strong>Service area:</strong> Sheffield Benefits Service</p>
       <p><strong>Telephone number:</strong> <a href="tel:0114 2736777">0114 2736777</a></p>
@@ -2178,7 +2269,7 @@ const benefitCap = new ContentH(
     ],
       categories: ["Housing", "Benefits"],
     },
-    { date: "05/11/2024", name: "Andy Walker" }
+    { date: "07/05/2025", name: "Dinah Williams" }
   );
 
   const benefitFraud = new ContentH(
@@ -2187,10 +2278,20 @@ const benefitCap = new ContentH(
     "Find out about Benefit fraud and how it can be reported anonymously online.",
     `
       <p>You can can report fraud anonymously online at: <a href="https://www.gov.uk/report-benefit-fraud" target="_blank">https://www.gov.uk/report-benefit-fraud</a><br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Report%20benefit%20fraud'"> Send Link </button>
- 
-      
-      </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20benefit%20fraud\`
+    "
+>
+    Send link to review further information
+</button>
+    </p>
     `,
     { buttonLabel: "Benefit fraud", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -2219,7 +2320,7 @@ const benefitCap = new ContentH(
     ],
       categories: ["Housing", "Benefits"],
     },
-    { date: "05/11/2024", name: "Andy Walker" }
+    { date: "07/05/2025", name: "Dinah Williams" }
   );
 
   const benefitOnTwoHomes = new ContentH(
@@ -2356,8 +2457,20 @@ const benefitCap = new ContentH(
     `
       <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available.<br> 
         You can access this via <a href="https://www.sheffield.gov.uk/benefits" target="_blank">https://www.sheffield.gov.uk/benefits</a><br> 
-        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20Council%20Tax%20support'"> Send Link </button> 
-        </p>
+      </p>
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20Council%20Tax%20support\`
+    "
+>
+    Send link to review further information
+</button>
+
     `,
     { buttonLabel: "Change of circumstances", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -2386,7 +2499,7 @@ const benefitCap = new ContentH(
       ],
       categories: ["Housing", "Benefits"],
     },
-    { date: "05/11/2024", name: "Andy Walker" }
+    { date: "07/05/2025", name: "Dinah Williams" }
   );
 
   const claimsForMoney = new FormH(
@@ -2414,9 +2527,22 @@ const contactHousingBenefits = new ContentH(
         <li><a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></li>
     </ul>
     <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax" target="_blank">https://www.sheffield.gov.uk/council-tax</a> <br> 
-          <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Council%20Tax'"> Send Link </button>
     </p>
-    <p><strong>Service area:</strong> Sheffield Benefits Service</p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Council%20Tax\`
+    "
+>
+    Send link to review further information
+</button>
+
+<p><strong>Service area:</strong> Sheffield Benefits Service</p>
     <p><strong>Telephone number:</strong> <a href="tel:0114 2736777">0114 2736777</a></p>
     <p><strong>Email address:</strong> <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a> or 
     <a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></p>
@@ -2429,8 +2555,19 @@ const contactHousingBenefits = new ContentH(
         <li><a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></li>
     </ul>
     <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html" target="_blank">https://www.sheffield.gov.uk/council-tax</a><br> 
-              <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Council%20Tax'"> Send Link </button>
-
+    
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Council%20Tax\`
+    "
+>
+    Send link to review further information
+</button>
     </p>
     <p><strong>Service area:</strong> Council tax</p>
     <p><strong>Telephone number:</strong> <a href="tel:0114 2736633">0114 2736633</a> (public number)</p>
@@ -2465,7 +2602,7 @@ const contactHousingBenefits = new ContentH(
     ],      
     categories: ["Housing", "Benefits"],
   },
-  { date: "05/11/2024", name: "Andy Walker" }
+  { date: "07/05/2025", name: "Dinah Williams" }
 );
 
   const localAssistanceScheme = new ContentH(
@@ -2475,8 +2612,20 @@ const contactHousingBenefits = new ContentH(
     `
       <p>Housing Benefits can now be claimed online. Claiming online is the quickest and easiest way to claim, and paper forms are no longer available. <br>
          You can access this via <a href="https://www.sheffield.gov.uk/benefits" target="_blank">https://www.sheffield.gov.uk/benefits</a> <br> 
-                 <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20Council%20Tax%20support'"> Send Link </button> 
-         </p>
+         
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20Council%20Tax%20support\`
+    "
+>
+    Send link to review further information
+</button>
+    </p>
     `,
     { buttonLabel: "Local Assistance Scheme", formName: "" },
     { typeKey: "housing_benefits_information_provided" },
@@ -2504,7 +2653,7 @@ const contactHousingBenefits = new ContentH(
       ],
       categories: ["Housing", "Benefits"],
     },
-    { date: "05/11/2024", name: "Andy Walker" }
+    { date: "07/05/2025", name: "Dinah Williams" }
   );
   
   const pdsa = new ContentH(
@@ -3031,6 +3180,7 @@ const applyForRehousing = new ContentH(
       There are no paper application forms.
     </p>
     <p>Go online and register on <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a><br> 
+    
     <button type="button" class="dform_widget email-btn dform_widget_type_button"
       aria-label="Send link to property shop website"
       onclick="
@@ -3040,6 +3190,7 @@ const applyForRehousing = new ContentH(
     >
       Send link to register online
     </button>
+
     </p>
     <p>
       Before you can complete an application to join the Housing Register you will
@@ -4036,11 +4187,20 @@ const bidding = new ContentH(
    
                 HomeSwapper offers a matching service and will send you details of suitable exchanges via email or text. 
                 The HomeSwapper website is <a href="https://www.homeswapper.co.uk" target="_blank">https://www.homeswapper.co.uk</a>.
+                <br>          
+                <button type="button"
+                class="dform_widget email-btn dform_widget_type_button"
+                aria-label="For further information send link"
+                onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Home%20Swapper\`
+    "
+>
+    Send link to review further information
+ </button>
                 <br>
-                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Home%20Swapper'"> Send Link </button>
                 <br>
-                <br>
-  
                 Before you get full access to the website, your registration will need to be approved. 
                 New submissions are approved daily, so except for weekends, it would be a maximum of 24 hours before you can view full details.<br><br>
   
@@ -4728,7 +4888,20 @@ const balanceEnquiry = new ContentH(
   You can now check your own balance and rent account online by logging onto 
   <a href="https://www.sheffield.gov.uk/home/council-housing/check-my-rent-balance">https://www.sheffield.gov.uk/home/council-housing/check-my-rent-balance</a>.
 <br>
-  <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Check%20rent%20balance'"> Send Link </button>
+  
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Check%20rent%20balance\`
+    "
+>
+    Send link to review further information
+</button>
+
   </p> 
   <p>
     Change of circumstances are now online. When you are making changes, remember
@@ -4813,7 +4986,7 @@ const balanceEnquiry = new ContentH(
   keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
   categories: ["Housing"],
 },
-{ date: "17/03/2025", name: "Nathan Smith" }
+{ date: "07/05/2025", name: "Dinah Williams" }
 );
 
 const contactRentsTeam = new ContentH(
@@ -5407,7 +5580,20 @@ const statements = new ContentH(
   Statements are issued every 12 months or are available online along with rent balance enquiries at 
   <a href="https://www.gro.sheffieldhomes.org.uk">https://www.gro.sheffieldhomes.org.uk</a>. 
   <br>
-  <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Homes'"> Send Link </button>
+  
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Homes\`
+    "
+>
+    Send link to review further information
+</button>
+  
   <br>
   <br>
 
@@ -5421,7 +5607,7 @@ const statements = new ContentH(
   { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "Statements", keywords: ["Rent"], categories: ["Housing"] },
-  { date: "16/10/2024", name: "Shahzad Athar" }
+  { date: "07/05/2025", name: "Dinah Williams" }
 );
 
 //universalCredit is in cross regions
@@ -6238,7 +6424,20 @@ const fobsandKeys = new ContentH(
       Please note: Howden House will email the relevant area with the fob token code so they can put it into the system.
       List of Area Offices:  <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices "target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
       <br>
-        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Neighbourhood%20offices'"> Send Link </button>
+        
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Neighbourhood%20offices\`
+    "
+>
+    Send link to review further information
+</button>
+
     </p>
     </div>
   </details>
@@ -6248,7 +6447,7 @@ const fobsandKeys = new ContentH(
   { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Fobs and Keys", keywords: ["Tenancy"], categories: ["Housing"] },
-  { date: "19/03/2025", name: "Nathan Smith" }
+  { date: "07/05/2025", name: "Dinah Williams" }
 );
 
 const garageRequest = new ContentH(
