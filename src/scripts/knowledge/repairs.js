@@ -61,7 +61,6 @@ const adaptation = new ContentR(
   `
   <h2>Handrails</h2>
     <p>For Council Housing properties, refer the customer to 
-    <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
   
 <a href="${window.location.protocol}//${
     window.location.hostname
@@ -76,7 +75,6 @@ const adaptation = new ContentR(
   <h2>Grab Rails</h2>
 
   <p>For internal or external access to sole occupancy, refer the customer to 
-  <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
   
 <a href="${window.location.protocol}//${
     window.location.hostname
@@ -96,7 +94,6 @@ const adaptation = new ContentR(
   <p>If the customer has acquired their own mobility scooter, then it is their own responsibility to install a ramp. 
   They will also need permission from the Housing Service to install their own ramp.</p>
   <p>For further advice about ramps to an individual's property or communal entrances, refer the customer to 
-  <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
   
  <a href="${window.location.protocol}//${
     window.location.hostname
@@ -111,7 +108,6 @@ const adaptation = new ContentR(
   <h2>For Disabled Customers, Including Wet Rooms</h2>
 
   <p>For walk-in shower rooms (wet rooms), refer the customer to 
-  <a href="mailto:CommunitiesEquip&Adaptations@sheffield.gov.uk" class="email">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>.</p>
 
 <a href="${window.location.protocol}//${
     window.location.hostname
@@ -124,9 +120,9 @@ const adaptation = new ContentR(
   }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["adaptaion","adaptasion","adaptetion","adptation","adapttion","adaptiation","adptasion",
@@ -150,9 +146,9 @@ const blacksmith = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["black","smth", "blak", "smiht", "blck","smth", "black","smitt", "blaksmitt", 
@@ -175,9 +171,9 @@ const brickwork = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["brickwork", "brikwork", "bricwork", "brickwok", "brickworrk", "brrickwork", "brikworck", 
@@ -229,9 +225,9 @@ const chimneyStack = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["chimny", "stack", "chimeney", "stack", "chimey", "stack", "chimnay", "stack", 
@@ -259,9 +255,9 @@ const claimforDamage = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["clamefor", "damage", "cliamfor", "damage", "claimfor", "damge", "claimefor", "damage", 
@@ -292,8 +288,6 @@ const clothesPost = new ContentR(
       
       <h3>Key Questions and Information</h3>
       <p>Place orders for communal areas only.</p>
-      <p>If there is a pop-up i.e. for Gas No Access: HF, NA or CI code, No Repair: NR code, or 
-      ALMO, continue to order a repair (if applicable) then immediately contact the RPIT Gas Team.</p>
       
       <h3>Recharge</h3>
       <p>N/A</p>
@@ -304,9 +298,9 @@ const clothesPost = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["cloths", "post", "clothe", "post", "clothes", "pst", "clothes", "psot", "clothes", "pot",
@@ -330,9 +324,9 @@ const communalArea = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["comunal", "area", "communal", "are", "comunal", "areaa", "commmnal", "area", 
@@ -361,8 +355,6 @@ const concrete = new ContentR(
   <h3>Key Questions and Information</h3>
     <p>Examples of Concrete Repairs: Lintels, Sills, Coping Stones, Canopies, Marionette 
     Walkways/Private Balconies, Columns, and Beams.</p>
-    <p>If there is a pop-up i.e. for Gas No Access: HF, NA or CI code, No Repair: NR code, or 
-    ALMO, continue to order a repair (if applicable) then immediately contact the RPIT Gas Team.</p>
       
   <h3>Recharge</h3>
     <p>N/A</p>
@@ -372,9 +364,9 @@ const concrete = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["concret", "concrte", "concete", "concreate", "conkreet", "konkreet", "concrait", 
@@ -399,9 +391,9 @@ const dampandMould = new ContentR(
   <p>Any jobs that need chasing please log a chase call on T-Mobile.</p>
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["dampan", "mould", "dampand", "mold", "dampamd", "mould", "dammpand", "mould",
@@ -469,9 +461,9 @@ const districtHeatingSwitch2Setup = new ContentR(
   
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["district", "heating", "swich2", "setup", "distric", "heating", "switch2", "setup", 
@@ -518,9 +510,9 @@ const doorFurniture  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["dor", "furniture", "door", "furnture", "door", "frniture", "dooor", "furniture",
@@ -570,9 +562,9 @@ const drainage  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "drainag", "dranage", "drainige", "draniage", "drainaje", "drainiage",
@@ -605,9 +597,9 @@ const disrepair  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "menu_repairs_service " },
-  { typeKey: " " },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
+  { typeKey: "" },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["disrepar", "disrepir", "disrepair", "disrepier", "disprepair", "disrepaire",
@@ -623,44 +615,38 @@ const electricalandHeating = new ContentR(
   "Electrical and heating system maintenance",
   `
   <h3>Electrical Items</h3>
-  <p>For electrical fittings, additional sockets, etc., email 
-  <a href="mailto:ElectricalSheffield@Sheffield.go.uk" class="email">ElectricalSheffield@Sheffield.go.uk</a>.</p>
+  <p>For electrical fittings, additional sockets, etc., email to 
 
-<button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information and to apply send link to apply online"
-        onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&txt_emailservice=ElectricalSheffield@Sheffield.go.uk\`
-            "
-      >
-        Send link to review further information
-      </button>
+  <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=ElectricalSheffield@Sheffield.go.uk">ElectricalSheffield@Sheffield.go.uk</a>
+ 
 
   <h3>Heating Items</h3>
-  <p>For extra radiators, email 
-  <a href="mailto:GasSheffield@sheffield.gov.uk" class="email">GasSheffield@sheffield.gov.uk</a>.</p>
+  <p>For extra radiators, email to
+  
 
-<button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information and to apply send link to apply online"
-        onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&txt_emailservice=GasSheffield@sheffield.gov.uk\`
-            "
-      >
-        Send link to review further information
-      </button>
+  <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=GasSheffield@sheffield.gov.uk">GasSheffield@sheffield.gov.uk</a>
 
 
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["electrical", "heting", "electrical", "heting", "eletrical", "heating", "elctrical", "heating", 
@@ -679,16 +665,36 @@ const electricalTesting  = new ContentR(
   <p>If the system states <strong>"Live Electrical Test",</strong> this is ordered by RPIT. 
   Any enquiries relating to this should be directed to the relevant hub.</p>
 
-  <p><strong>If there has been a Mutual Exchange,</strong> these are dealt with by 
-  <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>.</p>
+  <p><strong>If there has been a Mutual Exchange,</strong> these are dealt with by HME Gas and Electric Reinstates team.
+  Email all relevant information above to:</p>
+
+  <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>
 
   <p><strong>Domestic Electrical Tests</strong> are carried out every 5 years.</p>
 
   <h3>Key Questions and Information</h3>
 
   <p><strong>If there is a pop-up status for "VT",</strong> this indicates an electrical testing 
-  no access issue. Contact <a href="mailto:ElectricalSheffield@sheffield.gov.uk">ElectricalSheffield@sheffield.gov.uk</a> 
-  for an appointment to be made with the tenant.</p>
+  no access issue. Contact the team om the following email for an appointment to be made with the tenant.
+  
+  </p><a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=ElectricalSheffield@Sheffield.go.uk">ElectricalSheffield@Sheffield.go.uk</a>
+  
 
   <h3>Can You Please Advise All Officers Involved with the Following:</h3>
   <ul>
@@ -703,20 +709,25 @@ const electricalTesting  = new ContentR(
       <li>Dispersed Properties</li>
   </ul>
 
-  <p>Email all relevant information above to 
-  <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>.</p>
-
   <h3>Contact Information for Specific Enquiries:</h3>
-  <ul>
-      <li>Gas Service enquiries: <a href="mailto:GasSheffield@sheffield.gov.uk">GasSheffield@sheffield.gov.uk</a></li>
-      <li>Electric enquiries: <a href="mailto:ElectricalSheffield@sheffield.gov.uk">ElectricalSheffield@sheffield.gov.uk</a></li>
-  </ul>
+  
+  <p>Contact Gas Service team for information or specific enquiries on:</p>
+
+   </p><a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=GasSheffield@Sheffield.go.uk">GasSheffield@Sheffield.go.uk</a>
   
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["electrical", "tesing", "electrical", "testng", "electrical", "tetsing", 
@@ -738,9 +749,9 @@ const externalContractors   = new ContentR(
   
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["external", "contractrs", "extenal", "contractors", "external", "contarctors",
@@ -782,9 +793,9 @@ const externalDoorLock   = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["external", "dorlock", "external", "dorrlock", "external", "doorlok",
@@ -830,9 +841,9 @@ const externalDoor   = new ContentR(
       <p>Order Remedy Repair</p>.
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["external", "dor", "external", "dorr", "extenal", "door", "external", "dooor",
@@ -865,9 +876,9 @@ const flatRoof   = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["flat", "rooff", "falt", "roof", "flat", "roofff", "flatt", "roof",
@@ -906,9 +917,9 @@ const floororStaircase   = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "flooror", "staircae", "flooror", "staiircase", "flooror", "staircsse",
@@ -939,19 +950,15 @@ const footpathandSteps   = new ContentR(
       <p>Order Repairs only to Main Footpath to Property and to Entrance doors.  Need to 
       identify the type of Material i.e., Concrete, Tarmac.</p>
 
-      <p>If there is a pop-up i.e. for Gas No Access: HF, NA or CI code, No Repair: NR code, 
-      or ALMO, continue to order a repair (if applicable) then immediately contact the 
-      RPIT Gas Team.</p>
-
   <h3>Outcome</h3>
 
       <p>Log a repair on T-Mobile and book a non-appointed visit.</p>
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "footpathand", "stepps", "footpathan", "steps", "footpathand", "stpes",
@@ -1027,9 +1034,9 @@ const fireJobs  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "fire", "jbos", "fire", "jbso", "fire", "jbso", "fire", "jbss",
@@ -1064,9 +1071,9 @@ const garageorDetachedOutbuilding = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["garageor", "detached","outbulding", "garageor", "detached","ouutbuilding",
@@ -1250,20 +1257,16 @@ const gasandDomesticSystems   = new ContentR(
         </summary>
           <div class="accordion-content">
       <p>
-      On some occasions, there is an overlap with the installation of new systems and the 
-      annual gas service. Therefore, if a tenant rings to organise their gas service, but states 
-      that they have just had a new boiler / central heating system installed, please contact 
-      <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">HM&E</a> 
-      and they will advise on what steps you need to take with the gas service. This will 
-      generally consist of confirming to the tenant that we will not need to service the gas 
-      appliances this year, and delaying the service on the system, to allow HM&E to get the 
-      paperwork scanned.
+        On some occasions, there is an overlap with the installation of new systems and the 
+        annual gas service. Therefore, if a tenant rings to organise their gas service, but states 
+        that they have just had a new boiler / central heating system installed, please contact <p><a href="mailto: HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a></p> 
+        and they will advise on what steps you need to take with the gas service. This will 
+        generally consist of confirming to the tenant that we will not need to service the gas 
+        appliances this year, and delaying the service on the system, to allow HM&E to get the 
+        paperwork scanned.
       </p>
-
       </div>
   </details>
-  
-
   <details class="accordion">
       <summary class="accordion-header">
           <h3>Cowls</h3>
@@ -1512,9 +1515,9 @@ const gasandDomesticSystems   = new ContentR(
     </details>
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["gasand", "domesticsystms", "gasand", "domesticsytems", "gasand", "dometicsystems",
@@ -1566,9 +1569,9 @@ const gasReinstateandUncapServicesorAppointments  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["gasreinstateanduncap", "servcesorappointments", "gasreinstateanduncap", "serviceorappointments", 
@@ -1607,9 +1610,6 @@ const gateorFence  = new ContentR(
   <p>Is the repair a communal repair? If not, these repairs are generally not our 
   responsibility. However, if there is a Health & Safety issue, we will do the repair/ make 
   safe. If not sure speak with a team leader or senior.</p>
-  <p>If there is a pop-up i.e. for Gas No Access: HF, NA or CI code, No Repair: NR code, 
-  or ALMO, continue to order a repair (if applicable) then immediately contact the 
-  <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">RPIT Gas Team</a>.</p>
 
 <h3>Recharge</h3>
   <p>N/A</p>
@@ -1619,9 +1619,9 @@ const gateorFence  = new ContentR(
   
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "gator", "fence", "gateor", "fance", "gateor", "fnce", "gateor", "fenec", 
@@ -1677,9 +1677,9 @@ const glazingincludingfailedDoubleGlazedUnits = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["glazingincludingfailed", "doubleglazdunits", "glazzingincludingfailed", "doubleglazedunits",
@@ -1709,12 +1709,8 @@ const gutteringandRainwaterPipes  = new ContentR(
 <h3>Key questions and information</h3>
 
   <p>You need to identify the type of material i.e., Plastic, Timber, or Metal.</p>
-  <p>If there is a pop-up i.e. for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
-  <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, 
-  continue to order a repair (if applicable) then immediately contact the 
-  <strong>RPIT Gas Team</strong>.</p>
 
-  <h3>Appointments</h3>
+<h3>Appointments</h3>
 
   <p>Ensure when ordering repairs to gutters that you always enter WAH, not PB. This will 
   ensure that the correct WAH diary comes up.</p>
@@ -1725,13 +1721,13 @@ const gutteringandRainwaterPipes  = new ContentR(
 
   <h3>Outcome</h3>
 
-  <p>Order Remedy Repair and remember to start with Storm Damage if caused by strong winds.</p>
+  <p>Order Remedy Repair and remember to start with Storm Damage if caused by strong winds.</p> 
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["gutteringand", "rainwatrpipes", "gutteringand", "rainwaterppes", "gutteringand", "rainwaterpipe",
@@ -1899,9 +1895,9 @@ const handyperson  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["handi","persn", "handy","persson", "handy","persn", "handy","prson", "handy","peron", 
@@ -1944,9 +1940,9 @@ const internalDoor  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["internldoor", "internaldor", "internaldorr", "intarnaldoor", "internaldooor",
@@ -1973,10 +1969,7 @@ const kitchenUnit  = new ContentR(
 <h3>Key questions and information</h3>
 
   <p>There may also be a tenant Recharge issue if units have been damaged by tenants.</p>
-  <p>If there is a pop-up i.e. for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
-  <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, 
-  continue to order a repair (if applicable) then immediately contact the 
-  <strong>RPIT Gas Team</strong>.</p>
+
   <p>Please note that any customer enquiries concerning outstanding Decent Homes (Investment) 
   work, or work to 'upgrade' kitchens should be directed to the 
   <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=277&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Asset Management Team</a>.</p>
@@ -1993,9 +1986,9 @@ const kitchenUnit  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["kitchennunit", "kitcenunit", "kitchenunitt", "kicthenunit", "kithchenunit",
@@ -2019,9 +2012,9 @@ const liftorHoist  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["lifttorhoist", "liftorhoit", "liforhoist", "liftorhoits", "liftorhois",
@@ -2057,9 +2050,9 @@ const lostKeyorFob  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "lostkeyorfb", "lostkeyorfo", "lostkyorfob", "lostkeyrfob", "lostkeyorrfob",
@@ -2106,9 +2099,9 @@ const newBuildPropertyDefectorEmergencyCallOut  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["newbuildpropertydefector", "emergenccallout", "newbuidpropertydefector", "emergencycallout",
@@ -2165,9 +2158,9 @@ const paintingCommunalArea  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["paintig", "communalarea", "painting", "comunalarea", "painnting", "communalarea",
@@ -2202,10 +2195,6 @@ const pitchedRoof  = new ContentR(
 
 <h3>Key questions and information</h3>
 
-  <p>If there is a pop-up i.e. for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
-  <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, continue to 
-  order a repair (if applicable) then immediately contact the 
-  <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">RPIT Gas Team</a>.</p>
   <p>If the property has a <strong>RO</strong> (Roof Ordered) code, you should decide if the enquiry is 
   in relation to the ongoing Reroofing Programme or if it is a genuine repair requiring a repair to be 
   ordered.</p>
@@ -2224,9 +2213,9 @@ const pitchedRoof  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["pithedroof", "pitcheddroof", "pitchedrooff", "pithcedroof", "pitchedroofff",
@@ -2252,9 +2241,6 @@ const plastering  = new ContentR(
 
 <h3>Key questions and information</h3>
 
-  <p>If there is a pop-up i.e. for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
-  <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, continue to 
-  order a repair (if applicable) then immediately contact the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">RPIT Gas Team</a>.</p>
   <p><strong>Sealant jobs around a bath</strong> are done by Plasterers (not plumbers)</p>
 
 <h3>Recharge</h3>
@@ -2267,9 +2253,9 @@ const plastering  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["plasterin", "plasttering", "plasterinng", "plasteriing", "plastaring",
@@ -2298,9 +2284,7 @@ const plumbingandDomesticHotorColdWater  = new ContentR(
   <p>Check if the repair is regarding no water flowing out of the taps, or whether there is water flowing, 
   and it is cold. If it's around no hot water then this should be a <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">domestic heating repair</a>.</p>
   <p>External bursts should be ordered as an appointable job.</p>
-  <p>If there is a pop-up i.e. for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
-  <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, continue to order
-  a repair (if applicable) then immediately contact the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">RPIT Gas Team</a>.</p>
+
   <p><strong>Sealant jobs around a bath</strong> are done by Plasterers (not plumbers)</p>
 
 <h3>Recharge</h3>
@@ -2313,9 +2297,9 @@ const plumbingandDomesticHotorColdWater  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["plumbinganddomestic", "hotorcoldwter", "plumbinganddomestic", "hotrcoldwater",
@@ -2361,9 +2345,9 @@ const refuseChute  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["refussechute", "refuzechute", "refuschute", "refusechut", "refuzechut",
@@ -2435,9 +2419,9 @@ const reroofingProgrammeWarranty  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["reroofing", "programe", "warranty", "reroofing", "programme", "warrnty",
@@ -2476,9 +2460,9 @@ const rightToBuy  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "rigth", "tobuy", "right", "tbuy", "right", "tobuyy", "rigt", "tobuy",
@@ -2511,9 +2495,9 @@ const rightToRepair  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["rigth", "torepair", "right", "trepair", "right", "repaair", "righ", "torepair",
@@ -2565,9 +2549,9 @@ const scaffolding  = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["scafolding", "scafflding", "scafoldng", "scaffoling", "scaffoldin", "scaffoldingg", 
@@ -2593,9 +2577,9 @@ const surveyors = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "survayors", "servayors", "surveryors", "surveyers", "sureyors",
@@ -2614,9 +2598,9 @@ const tarmac = new ContentR(
     <strong>book a Non appointed</strong> appointment.</p>
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["tarmak", "tarmaac", "tarmacc", "tarmoc", "taramc", "tarmoc",
@@ -2661,9 +2645,9 @@ const wallRepair = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["wallrepir", "walrepair", "wallrpair", "wallrepaiir", "wallrepaar",
@@ -2731,9 +2715,9 @@ const wcBathorShowerorSinkUnit = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["wc bath or showerr sink unit", "wc bath or shower or sink unt", "wc bath or shower o sink unit",   
@@ -2768,9 +2752,9 @@ const windowSillorCill = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: ["windowsilorcill", "windowsillorcil", "windowsillorcell", "windowsillorciill",
@@ -2813,9 +2797,9 @@ const windowFrame = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "windwframe", "windoframe", "windowfrme", "windowfrrame", "windowfraame",
@@ -2839,9 +2823,9 @@ const workingatHeight = new ContentR(
 
   `
   ,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
-  { typeKey: "menu_repairs_service " },
+  { typeKey: "" },
   {
     type: "Request",
     keywords: [ "workingatheigh", "workingattheight", "workngatheight", "workingatheigt",
