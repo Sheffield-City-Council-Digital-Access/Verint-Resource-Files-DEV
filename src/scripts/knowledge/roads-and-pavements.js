@@ -100,7 +100,7 @@ const reportDrainGulley = new FormRaP(
   "report_drain_gulley",
   {
     type: "Report",
-    keywords: ["Drain", "gulley"],
+    keywords: ["Drain", "gulley", "Sandbag"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
@@ -126,20 +126,7 @@ const reportFloodedArea = new FormRaP(
   "report_flooded_area",
   {
     type: "Report",
-    keywords: ["Flooded", "area"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
-  },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
-);
-
-const reportGritBin = new FormRaP(
-  "reportGritBin",
-  "Grit bins",
-  "Report problems such as empty, damaged, missing displaced or knocked over grit bins",
-  "report_grit_bin",
-  {
-    type: "Report",
-    keywords: ["Grit", "bin"],
+    keywords: ["Flooded", "area", "Sandbag"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
@@ -152,7 +139,13 @@ const reportHighwayDamage = new FormRaP(
   "report_highway_damage",
   {
     type: "Report",
-    keywords: ["Highway", "damage", "damage to", "damage to the", "damage to the highway"],
+    keywords: [
+      "Highway",
+      "damage",
+      "damage to",
+      "damage to the",
+      "damage to the highway",
+    ],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
@@ -262,10 +255,10 @@ const requestClaimsPack = new FormRaP(
   { date: "06/03/2025", name: "Sam Coupland" }
 );
 
-const requestGritBin = new ContentRaP(
+const reportGritBin = new ContentRaP(
   "requestGritBin",
-  "Grit bin locations",
-  "Find information about grit bin locations, criteria for new allocations, and the process for grit bin relocations.",
+  "Grit bins",
+  "Find information about grit bin locations, criteria for new allocations, or report a problem with a grit bin.",
   `
     <iframe
       src="https://sheffieldcc.maps.arcgis.com/apps/webappviewer/index.html?id=796ba9a88ab04607a265d78e93d36d5c"
@@ -290,6 +283,17 @@ const requestGritBin = new ContentRaP(
       <li>In an isolated area</li>
       <li>Near traffic signals (within 20m)</li>
     </ul>
+    <p>
+      <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/request_grit_bin?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">
+        Request a grit bin
+      </a>
+    </p>
     <h3>Grit Bin Relocations</h3>
     <p>
       We cannot move a grit bin from it's assigned location.
@@ -304,17 +308,23 @@ const requestGritBin = new ContentRaP(
     </p>
   `,
   {
-    buttonLabel: "Request a grit bin",
-    formName: "request_grit_bin",
+    buttonLabel: "Report a problem with a grit bin",
+    formName: "report_grit_bin",
   },
   { typeKey: "" },
   { typeKey: "grit_bin_information_provided" },
   {
-    type: "Request",
+    type: "Report",
     keywords: ["Grit", "bin"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+    categories: [
+      "Roads and pavements",
+      "Highways",
+      "Streets Ahead",
+      "Amey",
+      "Winter",
+    ],
   },
-  { date: "08/10/2024", name: "Elliott Griffiths" }
+  { date: "25/04/2025", name: "Elliott Griffiths" }
 );
 
 const requestGritting = new ContentRaP(
@@ -353,7 +363,7 @@ const requestGritting = new ContentRaP(
       <li><strong>Very special circumstances e.g. funerals</strong></li>
     </ul>
     <p>
-      We will only gritting side roads once traffic is flowing on all these priorities.
+      We will only grit side roads once traffic is flowing for all these priorities.
     </p>
     <details class="accordion">
       <summary class="accordion-header">
@@ -428,7 +438,13 @@ const requestGritting = new ContentRaP(
   {
     type: "Request",
     keywords: ["Gritting"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+    categories: [
+      "Roads and pavements",
+      "Highways",
+      "Streets Ahead",
+      "Amey",
+      "Winter",
+    ],
   },
   { date: "08/10/2024", name: "Elliott Griffiths" }
 );
@@ -466,7 +482,15 @@ const reportFallenLeaves = new FormRaP(
   "report_fallen_leaves",
   {
     type: "Report",
-    keywords: ["fallen", "leaves","highway", "fallen leaves", "fallen leaves on", "fallen leaves on the", "fallen leaves on the highway"],
+    keywords: [
+      "fallen",
+      "leaves",
+      "highway",
+      "fallen leaves",
+      "fallen leaves on",
+      "fallen leaves on the",
+      "fallen leaves on the highway",
+    ],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
@@ -546,7 +570,7 @@ const reportHedgePlantGrass = new ContentRaP(
     formName: "report_hedge_plant_grass",
   },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "hedge_plant_grass_information_provided" },
   {
     type: "Report",
     keywords: ["Hedge", "plant", "grass"],
@@ -555,11 +579,32 @@ const reportHedgePlantGrass = new ContentRaP(
   { date: "28/02/2025", name: "Dinah Williams" }
 );
 
-const reportLitterBin = new FormRaP(
+const reportLitterBin = new ContentRaP(
   "reportLitterBin",
   "Litter bins",
   "Report problems such as full, leaning or knocked over litter bins",
-  "report_litter_bin",
+  `
+    <section>
+      <h3>Requests for new litter bins</h3>
+      <p>
+        We are unable to provide any additional litter bins on the highway network
+        at this time.<br />
+        We currently have 2,551 street litter bins across the city.<br />
+        We have tried to provide a good spread of bins across the city for members
+        of the public to use, particularly in those areas that receive high levels
+        of passing footfall.<br />
+        Unless we identify underuse, we can confirm that we will not be relocating
+        any litter bins at this stage as we consider the current locations to be
+        suitable and necessary.
+      </p>
+    </section>
+  `,
+  {
+    buttonLabel: "Report a problem with a litter bin",
+    formName: "report_litter_bin",
+  },
+  { typeKey: "" },
+  { typeKey: "litter_bin_information_provided" },
   {
     type: "Report",
     keywords: ["Litter", "bin"],
@@ -632,7 +677,7 @@ const reportTree = new ContentRaP(
     formName: "report_tree",
   },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "report_tree_information_provided" },
   {
     type: "Report",
     keywords: ["Tree"],
@@ -678,7 +723,6 @@ const roadsAndPavements = new ServiceRaP(
     reportStreetLight,
     reportTrafficSignal,
     requestClaimsPack,
-    requestGritBin,
     requestGritting,
     roadPavementSurface,
     reportDeadAnimal,

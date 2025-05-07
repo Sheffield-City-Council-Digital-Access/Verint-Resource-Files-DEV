@@ -308,7 +308,7 @@ const bedBugTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Bed Bugs",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -355,7 +355,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -462,7 +462,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Biscuit Beetles",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -483,6 +483,16 @@ const bumbleBeesTreatment = new ContentPaN(
   "Bumble Bees Treatment",
   "Find out the cost for Bumble Bee treatment in domestic properties and communal areas, including reduced fees for eligible benefits and the process for commercial or HMO inquiries.",
   `
+    <h3>About Bees</h3>
+    <p>
+     Bees are the main pollinators of many of our wildflowers, crops and vegetables.
+    </p>
+    <p>Many plants would struggle to reproduce if it were not for the bees.
+       Bees are on the decline, since the 1950’s many have had their populations halved.
+    </p>
+    <p>
+    Sheffield City Council will only undertake a treatment if the bees are a danger to human health.
+    </p>
     <h3>Cost for Treatment</h3>
     <p>
       If the pests are located in a communal area (The area that is shared by multiple Council Housing properties) or 
@@ -551,7 +561,7 @@ const bumbleBeesTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Bumble Bees",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -564,7 +574,7 @@ const bumbleBeesTreatment = new ContentPaN(
       "HMO"
     ],
   },
-  { date: "28/02/2025", name: "Dinah Williams" }
+  { date: "28/03/2025", name: "Dinah Williams" }
 );
 
 const carpetBeetlesTreatment = new ContentPaN(
@@ -669,7 +679,7 @@ const carpetBeetlesTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Carpet Beetles",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -751,7 +761,7 @@ const clusterFliesTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Cluster Flies",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -832,7 +842,7 @@ const cockroachesTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Cockroaches",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -913,7 +923,7 @@ const cricketsTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Crickets",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -994,7 +1004,7 @@ const dermestesBeetlesTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Dermestes Beetles",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -1105,7 +1115,7 @@ const fleasTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Fleas",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -1181,7 +1191,7 @@ const fliesTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Flies",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -1224,7 +1234,7 @@ const foxesInformation = new ContentPaN(
     buttonLabel: "",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "",
@@ -1272,7 +1282,7 @@ const FrogsorFrogspawn = new ContentPaN(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "",
@@ -1353,7 +1363,7 @@ const furBeetlesTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Fur Beetles",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -1399,7 +1409,7 @@ const gardenAntsTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Garden Ants",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -1576,7 +1586,7 @@ const honeyBeeTreatment = new ContentPaN(
     buttonLabel: "Request technician for Honey Bees",
     formName: "pest_control_technician",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Request",
@@ -1622,7 +1632,7 @@ const ladyBirdsTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Lady Birds",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -1680,7 +1690,7 @@ const masonryBeesTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Masonry Bees",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -1731,7 +1741,7 @@ const miceTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Mice",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -1777,7 +1787,7 @@ const mitesTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Mites",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -1858,7 +1868,7 @@ const mothsTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Moths",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -1904,7 +1914,7 @@ const pharoahAntsTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Pharoah Ants",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -1985,7 +1995,7 @@ const psocidsTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Psocids",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -2083,7 +2093,7 @@ const ratTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Rats",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -2164,7 +2174,7 @@ const redSpiderMitesTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Red Spider Mites",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -2245,7 +2255,7 @@ const sewageFliesTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Sewage Flies",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -2296,7 +2306,7 @@ const silverFishTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Silver Fish",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -2381,7 +2391,7 @@ const spiderBeetlesTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Spider Beetles",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -2411,7 +2421,7 @@ const squirrelsTreatment = new ContentPaN(
     buttonLabel: "",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -2469,7 +2479,7 @@ const waspsTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Wasps",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -2535,7 +2545,7 @@ const weevilsTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Weevils",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -2582,7 +2592,7 @@ const woodliceTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Woodlice",
     formName: "pest_control_treatment",
   },
-  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -2848,7 +2858,7 @@ const abandonedVehicles = new ContentPaN(
     buttonLabel: "Report an abandoned vehicle",
     formName: "report_abandoned_vehicle",
   },
-  { typeKey: "abandoned_vehicle_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "abandoned_vehicle_information_provided" },
   {
     type: "Report",
