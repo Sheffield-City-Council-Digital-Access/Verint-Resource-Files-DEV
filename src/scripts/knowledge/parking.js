@@ -2491,7 +2491,7 @@ Contractors needing more time to work at a property will need to apply for trade
     ],
     categories: ["Parking"],
   },
-  { date: "06/03/2025", name: "Gee Whitehouse" }
+  { date: "07/05/2025", name: "Gee Whitehouse" }
 );
 
 const parkingPermits = new MenuP(
