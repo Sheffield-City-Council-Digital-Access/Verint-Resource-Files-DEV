@@ -2455,6 +2455,15 @@ Contractors needing more time to work at a property will need to apply for trade
       >
         Send link to review further information
       </button>
+
+<p>
+
+<h3>If the customer is unable to apply online click the link to order on their behalf.</h3>
+  <a href="${window.location.protocol}//${window.location.hostname}/form/launch/visitor_permit_process">
+    Launch Visitor Permit Form
+  </a>
+</p>
+
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "parking_permit_transferred_to_service" },
