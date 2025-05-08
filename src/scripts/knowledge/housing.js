@@ -3024,7 +3024,19 @@ const applicationChanges = new ContentH(
             <p>
               Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
               the links from the homepage.<br> 
-              <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Property%20Shop'"> Send Link </button>
+              
+      <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`
+    "
+>
+            Send link to review further information
+    </button>
+            
             </p>
             <p>Click ‘Log into my account’.</p>
             <p>
@@ -3228,7 +3240,19 @@ const bidding = new ContentH(
         property by making a bid. You only have to bid once per property. You make
         bids online at the Property Shop website
         <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> <br> 
-        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Property%20Shop'"> Send Link </button>
+        
+        <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`
+    "
+>
+            Send link to review further information
+    </button>
+
         <br>You can bid 3 times (plus 1 FCFS) within each weekly bidding cycle (Thursday
         to Tuesday).
       </p>
@@ -3257,7 +3281,18 @@ const bidding = new ContentH(
             Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
             the links from the homepage.
             <br>
-            <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Property%20Shop'"> Send Link </button>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`
+    "
+>
+            Send link to review further information
+    </button>
             <br>
             <br>
               Click ‘Log into my account’.
@@ -3581,7 +3616,18 @@ const bidding = new ContentH(
                 Lincolnshire<br>
                 DN21 1GG<br>
                 <a href="http://www.acisgroup.co.uk" target="_blank">http://www.acisgroup.co.uk</a> <br>
-                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=ACIS%20Group'"> Send Link </button>
+                
+     <button type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Book%20a%20Notice%20of%20Civil%20Partnership%20Appointment\`
+    "
+>
+        Send link to review further information
+     </button>
               </address>
               <p>
                 Variety of properties across Woodthorpe and Lower Manor. Stock transfer from the Council Housing Service.
@@ -3627,7 +3673,19 @@ const bidding = new ContentH(
               <p>
                 Mutual exchanges advertised and managed through home swapper: register on <a href="https://www.homeswapper.co.uk" target="_blank">https://www.homeswapper.co.uk</a> 
                 <br>
-                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Home%20Swapper'"> Send Link </button>
+                
+       <button type="button"
+                class="dform_widget email-btn dform_widget_type_button"
+                aria-label="For further information send link"
+                onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Home%20Swapper\`
+    "
+>
+                Send link to review further information
+       </button>
+
                 Information on lettings: Flats and houses available, including some over 60s independent living accommodation (no warden on site). Must be 18+ and eligible for benefits if not working. 
                 An affordability and risk assessment will be carried out, and a previous landlord reference requested for all nominees.
                 We do not hold a waiting list for the general public.
@@ -3687,7 +3745,19 @@ const bidding = new ContentH(
                 M21 7QP<br>
                 <a href="http://www.greatplaces.org.uk" target="_blank">http://www.greatplaces.org.uk</a> 
                 <br>
-                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Great%20Places'"> Send Link </button>
+                
+       <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Great%20Places\`
+    "
+>
+            Send link to review further information
+       </button>
+
               </address>
               <p>
                 Flats, houses, and bungalows in Wybourn, Richmond Park, Birklands, and Athelstan (mostly ex-Council properties). To register, a Council Housing Service rehousing registration form needs to be completed.
@@ -3708,8 +3778,19 @@ const bidding = new ContentH(
                 Barnsley<br>
                 S74 8DY<br>
                 <a href="http://www.guinnesspartnership.com" target="_blank">http://www.guinnesspartnership.com</a>
-                <br>
-                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Guinness%20Partnership'"> Send Link </button>
+                <br> 
+
+      <button type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Guinness%20Partnership\`
+    "
+>
+    Send link to review further information
+     </button>
               </address>
               <p>
                 Available properties are either advertised through the Council’s Property Shop and Property Shop website or are allocated from Guinness Northern Counties’ own waiting list.
@@ -3821,7 +3902,19 @@ const bidding = new ContentH(
                 Email: <a href="mailto:contactus@sanctuary.co.uk">contactus@sanctuary.co.uk</a><br>
                 <a href="http://www.sanctuary-housing.co.uk" target="_blank">http://www.sanctuary-housing.co.uk</a>
                 <br>
-                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sanctuary%20Housing'"> Send Link </button>
+        <button
+              type="button"
+              class="dform_widget email-btn dform_widget_type_button"
+              aria-label="For further information send link"
+              onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Sanctuary%20Housing\`
+    "
+>
+               Send link to review further information
+        </button>
+     
               </address>
               <p>
                 Stock transfer from Council Housing Service. All types of properties. Current stock is in Shiregreen. To register, a Council Housing Service rehousing registration form needs to be completed.
@@ -3890,7 +3983,19 @@ const bidding = new ContentH(
                 LS10 1FB<br>
                 <a href="http://www.yorkshirehousing.co.uk" target="_blank">http://www.yorkshirehousing.co.uk</a>
                 <br>
-                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Yorkshire%20Housing'"> Send Link </button>
+                
+      <button type="button"
+                 class="dform_widget email-btn dform_widget_type_button"
+                 aria-label="For further information send link"
+                 onclick="
+                 window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Yorkshire%20Housing\`
+    "
+>
+                 Send link to review further information
+      </button>
+
               </address>
               <p>
                 Mix of housing types including some sheltered schemes. Points system - based on housing need. Generally need to be 18+, but in some cases will take 16+.
@@ -3917,8 +4022,8 @@ const bidding = new ContentH(
       categories: ["Housing"],
     },
     {
-      date: "15/11/2024",
-      name: "Joseph Coupland"
+      date: "08/05/2025",
+      name: "Dinah Williams"
     }
   );
 
@@ -3996,7 +4101,7 @@ const bidding = new ContentH(
       keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
       categories: ["Housing"],
     },
-    { date: "07/11/2024", name: "George Whitehouse" }
+    { date: "08/05/2025", name: "Dinah Williams" }
   );
 
   const idFaq = new ContentH(

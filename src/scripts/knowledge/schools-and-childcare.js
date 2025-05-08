@@ -129,7 +129,20 @@ const freeSchoolMeals = new ContentSaC(
       Go to the <a href="http://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/"target="_blank">www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers</a>
       and follow the instructions below:
       <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Edenred'"> Send Link </button>
+      
+  <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+      KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Edenred\`
+    "
+>
+      Send link to review further information
+   </button>
+
     </p>
     <ol>
       <li>Enter your eCode from the letter</li>
@@ -360,7 +373,7 @@ const freeSchoolMeals = new ContentSaC(
     ],
     categories: ["School and Childcare"],
   },
-  { date: "02/12/2024", name: "Andy Walker" }
+  { date: "08/05/2025", name: "Dinah Williams" }
 );
 
 const fundedEarlyLearning = new ContentSaC(
@@ -427,8 +440,20 @@ const fundedEarlyLearning = new ContentSaC(
       apply to HMRC.
       <a href="https://www.childcarechoices.gov.uk" target="_blank">https://www.childcarechoices.gov.uk</a>
       <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Childcare%20Choicess'"> Send Link </button>
-
+  
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Childcare%20Choices\`
+    "
+>
+    Send link to review further information
+   </button>
+ 
     </p>
     <p>
       From September 2025: <br>
@@ -443,7 +468,20 @@ const fundedEarlyLearning = new ContentSaC(
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice" target="_blank">https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice</a>.
     <br>
-    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Childcare%20funding%20support%20and%20advice'"> Send Link </button>
+    
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Childcare%20funding%20support%20and%20advice\`
+    "
+>
+    Send link to review further information
+ </button>
+
 
     </p>
   `,
@@ -481,7 +519,7 @@ const fundedEarlyLearning = new ContentSaC(
     ],
     categories: ["School and Childcare"],
   },
-  { date: "02/12/2024", name: "Andy Walker" }
+  { date: "08/05/2025", name: "Dinah Williams" }
 );
 
 const schoolFoodVoucher = new ContentSaC(
@@ -517,7 +555,19 @@ const schoolFoodVoucher = new ContentSaC(
       both useful as references, these are available on 
       <a href="http://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/"target="_blank">www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers</a>
       <br>
-       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Edenred'"> Send Link </button>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Edenred\`
+    "
+>
+    Send link to review further information
+  </button>
 
     </p>
     <details class="accordion">
@@ -547,7 +597,19 @@ const schoolFoodVoucher = new ContentSaC(
               or you can visit:
               <a href="http://www.selectyourcompliment.co.uk" target="_blank">www.selectyourcompliment.co.uk</a>
               <br>
-              <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Childcare%20funding%20support%20and%20advice'"> Send Link </button>
+      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Childcare%20funding%20support%20and%20advice\`
+    "
+>
+           Send link to review further information
+      </button>
+              
             </p>
             <p>Enter the code into the box on the website and click Redeem</p>
             <ol>
@@ -732,7 +794,7 @@ const schoolFoodVoucher = new ContentSaC(
     ],
     categories: ["School and Childcare"],
   },
-  { date: "18/09/2024", name: "Dinah Willaims" }
+  { date: "08/05/2025", name: "Dinah Williams" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\

@@ -2233,8 +2233,6 @@ const tradePermit = new ContentP(
     <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
 
     </p>
-
-
              <button
         type="button"
         class="dform_widget email-btn dform_widget_type_button"
