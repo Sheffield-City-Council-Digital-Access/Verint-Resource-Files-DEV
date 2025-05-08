@@ -1580,8 +1580,18 @@ const gasReinstateandUncapServicesorAppointments  = new ContentR(
   service".</p>
   <p>If the tenant makes contact within two weeks of the original cap off, then this can be 
   put through to Gas team  direct on <a href="mailto:Gas@sheffield.gov.uk">Gas</a>.</p>
-  <p>If job and it is more than two weeks, then these need to be put through to 
- <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk">HME GandE Reinstates</a> to order a new job, and book the appointment.</p>
+  <p>If job and it is more than two weeks, then these need to be put through to: </p>
+
+  <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>
+
   <p>There are occasions where a tenant may have a <strong>gas meter changed</strong>. When 
   the meter is changed, the supplier generally asks the tenant for a copy of the most 
   up-to-date service certificate.</p>
@@ -2229,7 +2239,17 @@ const pitchedRoof  = new ContentR(
   in relation to the ongoing Reroofing Programme or if it is a genuine repair requiring a repair to be 
   ordered.</p>
   <p>If the enquiry is in relation to the Re-roofing Programme, transfer to 
-  <strong>Asset Management</strong> or email <a href="mailto:AMT-GeneralEnq@sheffield.gov.uk">AMT-GeneralEnq@sheffield.gov.uk</a>.</p>
+  <strong>Asset Management team </strong> </p>
+
+    <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=AMT-GeneralEnq@sheffield.gov.uk">AMT-GeneralEnq@sheffield.gov.uk</a>
 
 <h3>Recharge</h3>
 
@@ -2369,9 +2389,18 @@ const refuseChute  = new ContentR(
 
 <h3>Outcome</h3>
 
-  <p>For blocked refuse chutes, contact the <a href="mailto:ElectricalSheffield@Sheffield.go.uk?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=83&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Council Housing Service Call Centre</a></p>
-
-
+  <p>For blocked refuse chutes, refer the customer to Council Housing Service call center through </p>
+  
+    <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=ElectricalSheffield@Sheffield.gov.uk">ElectricalSheffield@Sheffield.gov.uk</a>
+  
   `
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
@@ -2755,7 +2784,7 @@ const wcBathorShowerorSinkUnit = new ContentR(
       : ""
   }interactionid=${
     KDF.getParams().interactionid
-  }&txt_emailservice=AMT-GeneralEnq@sheffield.gov.uk">Asset Management Team</a>
+  }&txt_emailservice=AMT-GeneralEnq@sheffield.gov.uk">AMT-GeneralEnq@sheffield.gov.uk</a>
 
   <h3>Systems and Processes</h3>
     <p>Only white soft closed seats can be fitted.</p>
