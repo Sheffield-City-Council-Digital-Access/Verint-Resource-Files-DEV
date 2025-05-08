@@ -421,7 +421,7 @@ const copyCertificates = new ContentBDMaC(
 
   <p>Please transfer using the following contact details:</p>
   <ul>
-  <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
+  <li>Mobile (Warm Transfer): <a href="tel:07786 126904"> 07786 126904</a></li>
     <li>Form: Log the case using the registrars enquiry button below.</li>
   </ul>
 
@@ -842,7 +842,7 @@ const registerABirth = new ContentBDMaC(
 
   <p>Please transfer using the following contact details:</p>
   <ul>
-  <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
+  <li>Mobile (Warm Transfer): <a href="tel:07786 126904"> 07786 126904</a></li>
     <li>Form: Log the case using the registrars enquiry button below.</li>
   </ul>
 
@@ -1045,7 +1045,7 @@ const registerADeath = new ContentBDMaC(
 
   <p>Please transfer using the following contact details:</p>
   <ul>
-  <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
+  <li>Mobile (Warm Transfer): <a href="tel:07786 126904"> 07786 126904</a></li>
     <li>Form: Log the case using the registrars enquiry button below.</li>
   </ul>
 
@@ -1153,7 +1153,7 @@ const registerAStillbirth = new ContentBDMaC(
   `
   <p>Please transfer using the following contact details:</p>
   <ul>
-  <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
+  <li>Mobile (Warm Transfer): <a href="tel:07786 126904"> 07786 126904</a></li>
     <li>Form: Log the case using the registrars enquiry button below.</li>
   </ul>
 
@@ -1190,7 +1190,7 @@ To re-schedule an appointment, please use the
 
 <p>Please transfer using the following contact details:</p>
 <ul>
- <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
+ <li>Mobile (Warm Transfer): <a href="tel:07786 126904"> 07786 126904</a></li>
   <li>Form: Log the case using the registrars enquiry button below.</li>
 </ul>
 
