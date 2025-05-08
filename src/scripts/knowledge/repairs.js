@@ -84,7 +84,7 @@ const adaptation = new ContentR(
       : ""
   }interactionid=${
     KDF.getParams().interactionid
-  }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
+  }&txt_emailservice=CommunitiesEquip%26Adaptations@sheffield.gov.uk">CommunitiesEquip%26Adaptations@sheffield.gov.uk</a>
 
   <h2>Mobility Scooter Ramps</h2>
 
@@ -1240,8 +1240,20 @@ const gasandDomesticSystems   = new ContentR(
       <p>
         On some occasions, there is an overlap with the installation of new systems and the 
         annual gas service. Therefore, if a tenant rings to organise their gas service, but states 
-        that they have just had a new boiler / central heating system installed, please contact <p><a href="mailto: HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a></p> 
-        and they will advise on what steps you need to take with the gas service. This will 
+        that they have just had a new boiler / central heating system installed, please refer the customer to Gas and Electric 
+        Reinstates team on: </P>
+        
+        <a href="${window.location.protocol}//${
+        window.location.hostname
+        }/form/launch/refer_to_service?${
+        KDF.getParams().customerid
+        ? `customerid=${KDF.getParams().customerid}&`
+        : ""
+        }interactionid=${
+        KDF.getParams().interactionid
+        }&txt_emailservice=HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>
+        
+        <p> and they will advise on what steps the customer need to take with the gas service. This will 
         generally consist of confirming to the tenant that we will not need to service the gas 
         appliances this year, and delaying the service on the system, to allow HM&E to get the 
         paperwork scanned.
@@ -1926,7 +1938,7 @@ const internalDoor  = new ContentR(
 
   <p>Internal Door Repairs</p>
 
-  <h3>Warranty</h3>#
+  <h3>Warranty</h3>
 
   <p>Identified from the Ohms system. If repair is identified as within a warranty period, 
   invoke the warranty repair process.</p>
