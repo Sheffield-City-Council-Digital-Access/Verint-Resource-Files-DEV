@@ -936,7 +936,7 @@ const registerABirth = new ContentBDMaC(
 
     <p><strong>Process of re-registering a birth:</strong></p>
     <ul>
-      <li>log the case using the registrars enquiry link below and submit a callback request to the registry office 
+      <li>log the case using the registrars enquiry button below and submit a callback request to the registry office 
       (send to Copy Certificates).</li>
       <li>They will receive a call back within 2 days and a form will be posted.</li>
     </ul>
@@ -979,7 +979,7 @@ const registerABirth = new ContentBDMaC(
 
     <p><strong>Process:</strong></p>
     <ul>
-      <li>log the case using the registrars enquiry link below and send the customer’s details to the registry office 
+      <li>log the case using the registrars enquiry button below and send the customer’s details to the registry office 
         (send to Copy Certificates) for a call back.</li>
       <li>They will receive a call back within 2 days and a form will be posted.</li>
     </ul>
@@ -1046,7 +1046,7 @@ const registerADeath = new ContentBDMaC(
   <p>Please transfer using the following contact details:</p>
   <ul>
   <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
-    <li>Form: Log the case using the registrars enquiry link below.</li>
+    <li>Form: Log the case using the registrars enquiry button below.</li>
   </ul>
 
 <details class="accordion">
@@ -1154,7 +1154,7 @@ const registerAStillbirth = new ContentBDMaC(
   <p>Please transfer using the following contact details:</p>
   <ul>
   <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
-    <li>Form: Log the case using the registrars enquiry link below.</li>
+    <li>Form: Log the case using the registrars enquiry button below.</li>
   </ul>
 
   `,
@@ -1191,7 +1191,7 @@ To re-schedule an appointment, please use the
 <p>Please transfer using the following contact details:</p>
 <ul>
  <li>Mobile (Warm Transfer): <a href="tel:07786 126904">07786 126904</a></li>
-  <li>Form: Log the case using the registrars enquiry link below.</li>
+  <li>Form: Log the case using the registrars enquiry button below.</li>
 </ul>
 
 <details class="accordion">
