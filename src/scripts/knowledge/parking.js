@@ -1075,8 +1075,8 @@ const businessPermit = new ContentP(
 
 
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1251,8 +1251,8 @@ const residentsCarer = new ContentP(
 
      
   `,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1450,8 +1450,8 @@ const greenParkingPermit = new ContentP(
 </button>
      
  	`,
-   { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1617,8 +1617,8 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
 
 
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1730,8 +1730,8 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
 </button>
 
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1860,8 +1860,8 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
     Send link to review further information
 </button>	
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2035,8 +2035,8 @@ Get in touch with us for any other problems regarding parking permit application
 
 
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2096,8 +2096,8 @@ const staffPermit = new ContentP(
         Send link to review further information
       </button>
   `,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2251,8 +2251,8 @@ const tradePermit = new ContentP(
       </button>
 
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2332,8 +2332,8 @@ const utilityPermit = new ContentP(
             "
       >
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2499,8 +2499,8 @@ Contractors needing more time to work at a property will need to apply for trade
 </p>
 
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2583,7 +2583,7 @@ const confirmationOfPayment = new ContentP(
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
-  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2639,7 +2639,7 @@ const customerTriedToPayOnline = new ContentP(
   `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
-  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2697,7 +2697,7 @@ const customerUnableToPay = new ContentP(
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
-  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2759,7 +2759,7 @@ const enforcementbaliffenquiries = new ContentP(
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
-  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2817,7 +2817,7 @@ const howCanIAppeal = new ContentP(
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
-  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2868,7 +2868,7 @@ const howLongDoIHaveToAppeal = new ContentP(
   `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
-  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
     keywords: [
