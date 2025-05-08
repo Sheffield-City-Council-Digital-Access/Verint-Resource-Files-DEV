@@ -84,7 +84,7 @@ const adaptation = new ContentR(
       : ""
   }interactionid=${
     KDF.getParams().interactionid
-  }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
+  }&txt_emailservice=CommunitiesEquip%26Adaptations@sheffield.gov.uk">CommunitiesEquip%26Adaptations@sheffield.gov.uk</a>
 
   <h2>Mobility Scooter Ramps</h2>
 
@@ -140,8 +140,6 @@ const blacksmith = new ContentR(
     <p><strong>Category Fault:</strong> Blacksmiths Repairs</p>
     <p><strong>Contract:</strong> Responsive</p>
     <p><strong>Warranty:</strong> N/A</p>
-    <p><strong>Key Information:</strong> Gas No Access: HF, NA or CI code, 
-    No Repair: NR code, or ALMO, continue to order a repair and contact the RPIT Gas Team.</p>
     <p><strong>Outcome:</strong> Log job on T-Mobile</p>
 
   `
@@ -217,9 +215,6 @@ const chimneyStack = new ContentR(
 
   <p><strong>Warranty:</strong> Identified from the Ohms system. If within a warranty period, 
   invoke the repair process.</p>
-
-  <p><strong>Key Information:</strong> If a pop-up appears (e.g., Gas No Access: HF, NA, 
-  or CI code, No Repair: NR code, or ALMO), continue to order a repair and contact the RPIT Gas Team.</p>
 
   <p><strong>Outcome:</strong> Log job on T-Mobile.</p>
 
@@ -548,8 +543,6 @@ const drainage  = new ContentR(
   <h3>Key Questions and Information</h3>
   <ul>
       <li>See Yorkshire Water Procedure. If unsure and for further information concerning Communal Drainage Repairs.</li>
-      <li>If there is a pop-up (i.e., for Gas No Access: HF, NA or CI code, No Repair: NR code, or ALMO), 
-      continue to order a repair (if applicable) then immediately contact the RPIT Gas Team.</li>
   </ul>
 
   <h3>Recharge</h3>
@@ -631,7 +624,6 @@ const electricalandHeating = new ContentR(
   <h3>Heating Items</h3>
   <p>For extra radiators, email to
   
-
   <a href="${window.location.protocol}//${
     window.location.hostname
   }/form/launch/refer_to_service?${
@@ -780,8 +772,6 @@ const externalDoorLock   = new ContentR(
 
       <p>If a member of staff from an Area Housing Office requests a lock change to a property, 
       order remedy repair.</p>
-      <p>If there is a pop-up (e.g., Gas No Access: HF, NA or CI code, No Repair: NR code, or ALMO), 
-      continue to order a repair if applicable and immediately contact the RPIT Gas Team.</p>
 
   <h3>Recharge</h3>
 
@@ -869,8 +859,6 @@ const flatRoof   = new ContentR(
   
   <h3>Key questions and information</h3>
 
-      <p>If there is a pop-up (Gas No Access: HF, NA or CI code, No Repair: NR code, or ALMO), 
-      continue to order a repair if applicable and immediately contact the RPIT Gas Team.</p>
       <p>Order Remedy Repair. Start order comments with "Storm Damage" if required.</p>
       <p>If leaking into property, order as Urgent Leak.</p>
 
@@ -905,11 +893,6 @@ const floororStaircase   = new ContentR(
   <h3>Key questions and information</h3>
 
       <p>Not available</p>
-
-  <h3>Recharge</h3>
-
-      <p>If there is a pop-up (Gas No Access: HF, NA or CI code, No Repair: NR code, or ALMO), 
-      continue to order a repair if applicable and immediately contact the RPIT Gas Team.</p>
 
   <h3>Outcome</h3>
 
@@ -1147,9 +1130,7 @@ const gasandDomesticSystems   = new ContentR(
             <div class="details-accordion-content">
                 <p>
                     Check if the repair is regarding no water flowing out of the taps, or whether there is 
-                    water flowing, and it is cold. If there is no water flowing this should be a 
-                    <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx"> 
-                    plumbing repair</a>.</p>
+                    water flowing, and it is cold. If there is no water flowing this should be a plumbing repair.</p>
                 <p>
                   If a customer has a pre-pay meter but has no gas heating at all, either from a boiler 
                   or gas fire (if present), ask the customer to check that the meter has credit and that the 
@@ -1259,8 +1240,20 @@ const gasandDomesticSystems   = new ContentR(
       <p>
         On some occasions, there is an overlap with the installation of new systems and the 
         annual gas service. Therefore, if a tenant rings to organise their gas service, but states 
-        that they have just had a new boiler / central heating system installed, please contact <p><a href="mailto: HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a></p> 
-        and they will advise on what steps you need to take with the gas service. This will 
+        that they have just had a new boiler / central heating system installed, please refer the customer to Gas and Electric 
+        Reinstates team on: </P>
+        
+        <a href="${window.location.protocol}//${
+        window.location.hostname
+        }/form/launch/refer_to_service?${
+        KDF.getParams().customerid
+        ? `customerid=${KDF.getParams().customerid}&`
+        : ""
+        }interactionid=${
+        KDF.getParams().interactionid
+        }&txt_emailservice=HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>
+        
+        <p> and they will advise on what steps the customer need to take with the gas service. This will 
         generally consist of confirming to the tenant that we will not need to service the gas 
         appliances this year, and delaying the service on the system, to allow HM&E to get the 
         paperwork scanned.
@@ -1365,8 +1358,17 @@ const gasandDomesticSystems   = new ContentR(
       
             <p>
             If a customer requests an inspection for a gas heating appliance in their property, 
-            please refer to <strong>HM&E</strong>.
-            </p>
+            please refer to </p>
+
+            <a href="${window.location.protocol}//${
+            window.location.hostname
+            }/form/launch/refer_to_service?${
+            KDF.getParams().customerid
+            ? `customerid=${KDF.getParams().customerid}&`
+            : ""
+            }interactionid=${
+            KDF.getParams().interactionid
+            }&txt_emailservice=GasSheffield@sheffield.gov.uk">GasSheffield@sheffield.gov.uk</a>
       
         </div>
   </details>
@@ -1379,10 +1381,20 @@ const gasandDomesticSystems   = new ContentR(
                     <div class="accordion-content">
       
               <p>
-              If a boiler has been stolen, contact <strong>RPIT</strong>. Do not contact HM&E. Please 
+              If a boiler has been stolen, contact <strong>Repairs Policy & Improvement Team</strong>. Do not contact HM&E. Please 
               raise an <strong>EM</strong> job and advise the tenant we need a crime ref number so then 
-              they can be referred to <strong>RPIT</strong>.
-              </p>
+              they can be referred to </p>
+
+            <a href="${window.location.protocol}//${
+            window.location.hostname
+            }/form/launch/refer_to_service?${
+            KDF.getParams().customerid
+            ? `customerid=${KDF.getParams().customerid}&`
+            : ""
+            }interactionid=${
+            KDF.getParams().interactionid
+            }&txt_emailservice=RepairsPolicy&ImprovementsTeam@sheffield.gov.uk">RepairsPolicy&ImprovementsTeam@sheffield.gov.uk</a>
+
               <p>
               If a stolen boiler is reported, a 'make safe gas and water' job should be raised by the 
               service center agent or anyone that takes a stolen boiler call. This should be raised on 
@@ -1401,8 +1413,7 @@ const gasandDomesticSystems   = new ContentR(
                     <div class="accordion-content">
       
                 <p>If gas after trades are required following work, please contact the 
-                <a href="mailto:ElectricalSheffield@sheffield.gov.uk?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=108&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Gas Team</a> 
-                to ask for work to be done.</p>
+                <a href="mailto:Gas@sheffield.gov.uk">Gas</a> to ask for work to be done.</p>
                 <p><strong>Do not put a job on.</strong></p>
       
         </div>
@@ -1544,7 +1555,19 @@ const gasReinstateandUncapServicesorAppointments  = new ContentR(
 <h3>New Tenant</h3>
 
   <p>If a new tenant makes contact regarding a gas reinstate, then these need to be passed 
-  through to <strong>HM&E</strong> if no answer please email 
+  through to </p>
+
+  <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=GasSheffield@sheffield.gov.uk">GasSheffield@sheffield.gov.uk</a>
+  
+  <p>if no answer please email 
   <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>.</p>
   <p>If a new tenant makes contact and reports that they have no heat or hot water, please 
   first check that their gas has been reinstated <strong>before</strong> ordering a repair.</p>
@@ -1556,10 +1579,19 @@ const gasReinstateandUncapServicesorAppointments  = new ContentR(
   we cap off the supply. We then wait for the tenant to contact us and arrange an "uncap and 
   service".</p>
   <p>If the tenant makes contact within two weeks of the original cap off, then this can be 
-  put through to <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Documents/Emails/Roof%20Enquiry.msg?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=258&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Gas Team</a> direct on <a href="mailto:steve.pitts1@sheffield.gov.uk">GasSheffield@sheffield.gov.uk</a>.</p>
-  <p>If job and it is more than two weeks, then these need to be put through to 
-  <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">HM&E Gas</a> 
-  to order a new job, and book the appointment.</p>
+  put through to Gas team  direct on <a href="mailto:Gas@sheffield.gov.uk">Gas</a>.</p>
+  <p>If job and it is more than two weeks, then these need to be put through to: </p>
+
+  <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>
+
   <p>There are occasions where a tenant may have a <strong>gas meter changed</strong>. When 
   the meter is changed, the supplier generally asks the tenant for a copy of the most 
   up-to-date service certificate.</p>
@@ -1615,7 +1647,7 @@ const gateorFence  = new ContentR(
   <p>N/A</p>
 
 <h3>Outcome</h3>
-  <p>Order <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Lists/Communal%20Repair/AllItems.aspx">Communal Repairs</a> (if communal repair or if it's a health and safety issue)</p>
+  <p>Order Communal Repairs (if communal repair or if it's a health and safety issue)</p>
   
   `
   ,
@@ -1916,7 +1948,7 @@ const internalDoor  = new ContentR(
 
   <p>Internal Door Repairs</p>
 
-  <h3>Warranty</h3>#
+  <h3>Warranty</h3>
 
   <p>Identified from the Ohms system. If repair is identified as within a warranty period, 
   invoke the warranty repair process.</p>
@@ -1971,8 +2003,18 @@ const kitchenUnit  = new ContentR(
   <p>There may also be a tenant Recharge issue if units have been damaged by tenants.</p>
 
   <p>Please note that any customer enquiries concerning outstanding Decent Homes (Investment) 
-  work, or work to 'upgrade' kitchens should be directed to the 
-  <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=277&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Asset Management Team</a>.</p>
+  work, or work to 'upgrade' kitchens should be directed to the Asset Management Team on </p>
+
+  <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=AMT-GeneralEnq@sheffield.gov.uk">AMT-GeneralEnq@sheffield.gov.uk</a>
+  
 
 <h3>Recharge</h3>
 
@@ -2091,9 +2133,7 @@ const newBuildPropertyDefectorEmergencyCallOut  = new ContentR(
 
   <h3>Business Continuity</h3>
 
-  <p><a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">OHMS Business Continuity Plan Form</a> 
-  <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">Logging an emergency 
-  job when OHMS is down</a>.</p>
+  <p>OHMS Business Continuity Plan Form Logging an emergency job when OHMS is down.</p>
   <p>Systems are down -- T-Mobile -- apologise and request the tenant to call back.</p>
   <p>A Storm message will be played forewarning new callers.</p>
 
@@ -2199,7 +2239,17 @@ const pitchedRoof  = new ContentR(
   in relation to the ongoing Reroofing Programme or if it is a genuine repair requiring a repair to be 
   ordered.</p>
   <p>If the enquiry is in relation to the Re-roofing Programme, transfer to 
-  <strong>Asset Management</strong> or email <a href="mailto:AMT-GeneralEnq@sheffield.gov.uk">AMT-GeneralEnq@sheffield.gov.uk</a>.</p>
+  <strong>Asset Management team </strong> </p>
+
+    <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=AMT-GeneralEnq@sheffield.gov.uk">AMT-GeneralEnq@sheffield.gov.uk</a>
 
 <h3>Recharge</h3>
 
@@ -2209,7 +2259,6 @@ const pitchedRoof  = new ContentR(
 
   <p>Log a job on T-Mobile *Remember to put in order comments <strong>Storm Damage</strong> if required.</p>
   <p>If leaking into property, order as <strong>Urgent Leak</strong></p>
-
 
   `
   ,
@@ -2282,7 +2331,7 @@ const plumbingandDomesticHotorColdWater  = new ContentR(
 <h3>Key questions and information</h3>
 
   <p>Check if the repair is regarding no water flowing out of the taps, or whether there is water flowing, 
-  and it is cold. If it's around no hot water then this should be a <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">domestic heating repair</a>.</p>
+  and it is cold. If it's around no hot water then this should be a domestic heating repair.</p>
   <p>External bursts should be ordered as an appointable job.</p>
 
   <p><strong>Sealant jobs around a bath</strong> are done by Plasterers (not plumbers)</p>
@@ -2340,9 +2389,18 @@ const refuseChute  = new ContentR(
 
 <h3>Outcome</h3>
 
-  <p>For blocked refuse chutes, contact the <a href="mailto:ElectricalSheffield@Sheffield.go.uk?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=83&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Council Housing Service Call Centre</a></p>
-
-
+  <p>For blocked refuse chutes, refer the customer to Council Housing Service call center through </p>
+  
+    <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=ElectricalSheffield@Sheffield.gov.uk">ElectricalSheffield@Sheffield.gov.uk</a>
+  
   `
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
@@ -2363,11 +2421,11 @@ const reroofingProgrammeWarranty  = new ContentR(
   "Roof replacement warranty repairs",
   `
   <p>If a repair is needed and the re-roofing work is <strong>under warranty</strong> (within 6 months), 
-  please email the details to the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">Asset Management Team</a>.</p>
+  please email the details to the Asset Management Team on <a href="mailto:AMT-GeneralEnq@sheffield.gov.uk"></a></p>
   <p>If a repair is needed and the re-roofing work is <strong>not under warranty</strong> (12 months), 
   the repair should be dealt with as a new repair.</p>
   <p>If a customer is <strong>unhappy with the quality of work</strong>, the workers, or the programme 
-  in general, please email the details to the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">Asset Management Team</a>.</p>
+  in general, please email the details to the Asset Management Team on <a href="mailto:AMT-GeneralEnq@sheffield.gov.uk"></a></p>
   <p>If a customer is <strong>reporting an emergency on site</strong>, the relevant contractor should be
   notified. There is a <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk">spreadsheet</a> that lists 
   all addresses that are to be included in the Re-roofing Programme along with the emergency contact numbers.</p>
@@ -2451,11 +2509,21 @@ const rightToBuy  = new ContentR(
     application.</p>
     <p>If the tenant contacts us prior to the expiration date to state, they are not going to appeal we will 
     close the application and change the repairs status back to tenanted. Any queries about this, please 
-    contact the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=278&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Home Ownership Team</a>.</p>
+    contact the contact the Home Ownership Team on </p>
+
+    <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=rdh@sheffield.gov.uk">rdh@sheffield.gov.uk</a>
 
   <h3>Right to Buy inspection requests</h3>
 
-    <p>For Right to Buy inspections, please contact the <a href="mailto:steve.willis@sheffield.gov.uk?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=278&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Home Ownership Team</a>.</p>
+    <p>For Right to Buy inspections, please contact the Home Ownership team on <a href="mailto:rdh@sheffield.gov.uk"></a></p>
     <p>Any tenant that is in a Right to Buy stage is not eligible for the Handyperson service.</p>
 
   `
@@ -2488,11 +2556,8 @@ const rightToRepair  = new ContentR(
 
   <h3>Repairs covered</h3>
 
-    <p>It only covers certain repairs, known as 'qualifying repairs', which cost less than £250 to carry out. 
-    See <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Documents/Emails/Roof%20Enquiry.msg">list 
-    of qualifying repairs</a> and the response time (times are set by law - not by the council).</p>
-
-
+    <p>It only covers certain repairs, known as 'qualifying repairs', which cost less than £250 to carry out. </p>
+    
   `
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
@@ -2517,7 +2582,20 @@ const scaffolding  = new ContentR(
 
     <p>If a new tenant states that they cannot move into their new property due to scaffolding obstructing 
     access and blocking doors or windows; contact the Roofing team on internal number 0114 2735921 and also 
-    inform the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Lists/Keir%20Contacts2/DispForm.aspx?ID=102&Source=https%3a//knowledge.sheffield.gov.uk/HousingRepairs/Pages/Telephone-Directory.aspx&ContentTypeId=0x01008B0EE4E0E1BA644197584AD04A25C474&IsDlg=1">Vacants Team</a>. It will then be arranged for the scaffolding to be moved to allow access. This will prevent any discretionary payments to rent accounts via Vacants due to the tenant being unable to move into the property.</p>
+    inform the Vacants Team on </p>
+
+    <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=voids@sheffield.gov.uk">voids@sheffield.gov.uk</a>
+    
+  <p> It will then be arranged for the scaffolding to be moved to allow access. This will prevent any 
+  discretionary payments to rent accounts via Vacants due to the tenant being unable to move into the property.</p>
 
   <h3>Scaffolding Process</h3>
 
@@ -2624,11 +2702,6 @@ const wallRepair = new ContentR(
     <p>Identified from the T-Mobile system. If repair is identified as within a warranty period, invoke the 
     warranty repair process.</p>
 
-  <h3>Key questions and information</h3>
-
-    <p>If there is a pop-up i.e., for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
-    <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, continue to order a repair (if applicable) then immediately contact the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">RPIT Gas Team</a>.</p>
-
   <h3>Rendering</h3>
 
     <p>We only make it safe.</p>
@@ -2701,8 +2774,17 @@ const wcBathorShowerorSinkUnit = new ContentR(
     can be ordered. If unsure, please ask your supervisor.</p>
     <p><strong>Shower Rails and rise rails</strong> are fitted by Plumbers not Joiners.</p>
     <p>Any customer enquiries concerning outstanding <strong>Decent Homes</strong> (Investment) work, 
-    or work to '<strong>upgrade' kitchens</strong> should be directed to the 
-    <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Documents/Business%20Continuity%20-%20OHMS%20BCP%20Form.docx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=277&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Asset Management Team</a>.</p>
+    or work to '<strong>upgrade' kitchens</strong> should be directed to the: </p>
+    
+    <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=AMT-GeneralEnq@sheffield.gov.uk">AMT-GeneralEnq@sheffield.gov.uk</a>
 
   <h3>Systems and Processes</h3>
     <p>Only white soft closed seats can be fitted.</p>
@@ -2784,10 +2866,7 @@ const windowFrame = new ContentR(
     <p>Ask tenant for details of window type i.e., UPVC, Wood or Metal</p>
     <p>Police incident number is required if repair is because of Burglary/Vandalism amend category of work. 
     Where there is no Crime Reference Number, board up/make safe.</p>
-    <p>If there is a pop-up i.e., for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
-    <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, continue to order
-    a repair (if applicable) then immediately contact the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Pages/KnowledgePages/Domestic-Gas-Systems.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">RPIT Gas Team</a>.</p>
-
+    
   <h3>Recharge</h3>
 
     <p>Yes where there is no <strong>Police Crime Reference Number</strong>, board up/make safe only.</p>
