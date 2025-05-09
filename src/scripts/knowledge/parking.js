@@ -3273,11 +3273,11 @@ const debtGuidanceRelatedToPCNs = new ContentP(
           <li><strong><a href="https://www.moneyhelper.org.uk/en?source=mas" target="_blank">Money Advice Service</a></strong></li>
           <li><strong><a href="https://www.stepchange.org/" target="_blank">StepChange Debt Charity</a></strong><br>Tel: <a href="tel:08001381111">0800 138 1111</a> (Monday to Friday 8am–8pm, Saturday 8am–4pm)</li>
           <li><strong><a href="https://www.gov.uk/pay-off-debts" target="_blank">GOV.UK – Pay Off Your Debts</a></strong></li>
-          <li><strong><a href="https://nationaldebtline.org/" target="_blank">National Debtline</a></strong><br>Tel: <a href="tel:08088084000">0808 808 4000</a> (Monday to Friday 9am–8pm)</li>
+          <li><strong><a href="https://nationaldebtline.org/" target="_blank">National Debtline</a></strong><br>Tel: <a href="tel:08088084000">0808 8084000</a> (Monday to Friday 9am–8pm)</li>
           <li><strong><a href="https://www.citizensadvice.org.uk/" target="_blank">Citizens Advice</a></strong><br>
-            <span>Adviceline (England): <a href="tel:03444111444">03444 111 444</a></span><br>
-            <span>Advicelink (Wales): <a href="tel:03444772020">03444 77 20 20</a></span><br>
-            <span>Textphone: <a href="tel:1800103444111445">18001 03444 111 445</a></span>
+            <span>Adviceline (England): <a href="tel:03444111444">03444 111444</a></span><br>
+            <span>Advicelink (Wales): <a href="tel:03444772020">03444 772020</a></span><br>
+            <span>Textphone: <a href="tel:1800103444111445">18001 03444111445</a></span>
           </li>
         </ul>
         <p>If you are struggling to pay, debt advisors may be able to offer you support with Breathing Space through the 
@@ -3288,7 +3288,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
         </ul>
         <p>Debt advisors can also assist with applying for a Debt Relief Order (DRO) to help manage 
         debts you cannot pay. More information about DROs is available here:</p>
-        <p><a href="https://www.gov.uk/government/publications/debt-relief-order-guide" target="_blank">How to Get a Debt Relief Order (DRO) – GOV.UK</a></p>
+        <p><a href="https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers" target="_blank">How to Get a Debt Relief Order (DRO) – GOV.UK</a></p>
       </div>
     </details>
 
@@ -3300,7 +3300,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       <div class="accordion-content">
         <ul>
           <li><a href="https://www.rethink.org/advice-and-information" target="_blank">Rethink Mental Health Breathing Space</a></li>
-          <li><a href="https://www.gov.uk/government/publications/breathing-space-guidance-for-creditors" target="_blank">Breathing Space Guidance for Creditors – GOV.UK</a></li>
+          <li><a href="https://www.gov.uk/government/publications/debt-respite-scheme-breathing-space-guidance/debt-respite-scheme-breathing-space-guidance-for-money-advisers" target="_blank">Breathing Space Guidance for Creditors – GOV.UK</a></li>
         </ul>
       </div>
     </details>
@@ -3313,7 +3313,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       <div class="accordion-content">
         <p>If a customer needs to suspend parking bays or requests a yellow line dispensation, information can be found here:</p>
         <ul>
-          <li><a href="https://www.sheffield.gov.uk/parking/request-bay-suspension" target="_blank">Request a Parking Bay Suspension | Sheffield City Council</a></li>
+          <li><a href="https://www.sheffield.gov.uk/parking/request-parking-bay-suspension" target="_blank">Request a Parking Bay Suspension | Sheffield City Council</a></li>
           <li><a href="https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation" target="_blank">Request Yellow Line Dispensation | Sheffield City Council</a></li>
         </ul>
         <p>For questions, customers can contact: <a href="mailto:suspensions@sheffield.gov.uk">suspensions@sheffield.gov.uk</a></p>
@@ -3334,7 +3334,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
 
         <h4>Driver has received a Bus Lane PCN but has a valid PHV licence</h4>
         <ul>
-          <li>They can make representations via the website (preferred): <a href="https://www.sheffield.gov.uk/parking/pay-pcn" target="_blank">Pay a parking, bus lane or Clean Air Zone PCN | Sheffield City Council</a></li>
+          <li>They can make representations via the website (preferred): <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank">Pay a parking, bus lane or Clean Air Zone PCN | Sheffield City Council</a></li>
           <li>Alternatively, email the PHV licence and PCN reference to: <a href="mailto:PHV@sheffield.gov.uk">PHV@sheffield.gov.uk</a></li>
           <li>Important: The licence must cover the date of the contravention to cancel the PCN.</li>
         </ul>
