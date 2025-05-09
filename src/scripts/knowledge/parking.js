@@ -3504,6 +3504,106 @@ const postReceivedForSomeoneNotLivingAtAddress  = new ContentP(
   { date: "08/05/2025", name: "Andy Walker" }
 );
 
+const unableToResolvePcn = new ContentP(
+  "unableToResolvePcn",
+  "Unable To Resolve a PCN",
+  "Find out what happens when you are unable to resolve the PCN.",
+  `
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Customer has a parking or bus lane PCN</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>If you are still unable to resolve the PCN, you can warm transfer to (Storm) <a href="tel:87061">87061</a> (Internal Number).</p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Customer has a Clean Air Zone (CAZ) PCN</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>If you are still unable to resolve the PCN, you can warm transfer to (Storm) <a href="tel:87062">87062</a> (Internal Number).</p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>We have offered a certain amount on a recent letter, however, when they go to pay it states a different amount</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          You can warm transfer to (Storm) <a href="tel:87061">87061</a> (Internal Number), dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
+        </p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Enforcement Agents are at a Customer’s Property</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          If a customer calls and states enforcement agents are at their property to recover funds, then you can contact us via warm transfer on: 
+          (Internal): <a href="tel:87061">87061</a> (Storm line), dependent on PCN type. 
+          If you can, try to get as much information from the customer such as the PCN reference and any background information.
+        </p>
+        <p>
+          If they have grounds to file a Late Witness Statement, then we can request enforcement is placed on hold temporarily to allow them time to do so.
+        </p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>A PCN has been issued using an incorrect Vehicle Registration Mark (VRM)</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
+          If the VRM is clearly incorrect, then you can warm transfer to <a href="tel:87061"> 87061</a> (Storm line – internal use only) depending on PCN type so we can investigate it further.
+        </p>
+      </div>
+    </details>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "" },
+  { typeKey: "parking_permit_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "09/05/2025", name: "Andy Walker" }
+);
+
 const penaltyChargeNoticePcn = new MenuP(
   "penaltyChargeNoticePCN",
   "Penalty Charge Notice (PCN)",
@@ -3521,6 +3621,7 @@ const penaltyChargeNoticePcn = new MenuP(
     debtRegistrationAndWarrantCases,
     debtGuidanceRelatedToPCNs,
     postReceivedForSomeoneNotLivingAtAddress,
+    unableToResolvePcn,
   ]
 );
 
