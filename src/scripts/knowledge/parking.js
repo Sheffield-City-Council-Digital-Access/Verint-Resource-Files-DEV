@@ -2718,11 +2718,37 @@ const customerUnableToPay = new ContentP(
     <h3>Customer needs more time to pay the PCN</h3>
     <p>Advise the customer to make an appeal as normal.</p>
 
-    <h3>We have offered a certain amount on a recent letter, however, when they go to pay it states a different amount</h3>
-    <p>
-    You can warm transfer to (Storm) <a href="tel:87061"> 87061</a>: (Internal Number) dependent on 
-    PCN type to let us check the correct amount is showing and amend it on the call if it is wrong.
-    </p>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>We have offered a certain amount on a recent letter, however, when they go to pay it states a different amount</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          You can warm transfer to (Storm) <a href="tel:87061">87061</a> (Internal Number), dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
+        </p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Customer has a parking or bus lane PCN</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>If you are still unable to resolve the PCN, you can warm transfer to (Storm) <a href="tel:87061">87061</a> (Internal Number).</p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Customer has a Clean Air Zone (CAZ) PCN</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>If you are still unable to resolve the PCN, you can warm transfer to (Storm) <a href="tel:87062">87062</a> (Internal Number).</p>
+      </div>
+    </details>
 
     <details class="accordion">
       <summary class="accordion-header">
@@ -3016,6 +3042,27 @@ const howCanIAppeal = new ContentP(
     </p>
   </div>
 </details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Customer has a parking or bus lane PCN</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>If you are still unable to resolve the PCN, you can warm transfer to (Storm) <a href="tel:87061">87061</a> (Internal Number).</p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Customer has a Clean Air Zone (CAZ) PCN</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>If you are still unable to resolve the PCN, you can warm transfer to (Storm) <a href="tel:87062">87062</a> (Internal Number).</p>
+  </div>
+</details>
+
 
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
