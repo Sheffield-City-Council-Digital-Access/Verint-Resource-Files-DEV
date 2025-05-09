@@ -2793,8 +2793,8 @@ const customerUnableToPay = new ContentP(
   { date: "09/08/2025", name: "Andy Walker" }
 );
 
-const enforcementbaliffenquiries = new ContentP(
-  "enforcementbaliffenquiries",
+const enforcementBaliffEnquiries = new ContentP(
+  "enforcementBaliffEnquiries",
   "Enforcement Baliff Enquiries",
   "Learn about the steps to take if your debt has been referred to enforcement, including how to make payments or challenge the process.",
   `   
@@ -2831,34 +2831,41 @@ const enforcementbaliffenquiries = new ContentP(
     If they have grounds to file a Late Witness Statement, then we can request enforcement is placed on hold temporarily to allow them time to do so.
     </p>
 
-    <h3>Contact Details for Enforcement Agents for Customers</h3>
-    <p><strong>Bristow &amp; Sutor</strong><br>
-    Phone: <a href="tel:03003902010">0300 390 2010</a><br>
-    Text: <a href="tel:07781488270">07781 488270</a>
-    </p>
-    <p><strong>Dukes</strong><br>
-    Phone: <a href="tel:01785825500">01785 825 500</a><br>
-    Email: <a href="mailto:info@dukeslimited.co.uk">info@dukeslimited.co.uk</a>
-    </p>
-    <p><strong>Equita</strong><br>
-    Phone: <a href="tel:01604628360">01604 628 360</a>
-    </p>
-    <p><strong>Excel</strong><br>
-    Phone: <a href="tel:03303639988">0330 363 9988</a><br>
-    Email: <a href="mailto:info@excelenforcement.co.uk">info@excelenforcement.co.uk</a>
-    </p>
-    <p><strong>Marston</strong><br>
-    Phone: <a href="tel:03333201822">0333 320 1822</a><br>
-    Email: <a href="mailto:generalenquiries@marstongroup.co.uk">generalenquiries@marstongroup.co.uk</a>
-    </p>
-    <p><strong>Newlyn</strong><br>
-    Phone: <a href="tel:01604633001">01604 633001</a><br>
-    Email: <a href="mailto:enquiries@newlynplc.co.uk">enquiries@newlynplc.co.uk</a>
-    </p>
-    <p><strong>Phoenix/CDER</strong><br>
-    Phone: <a href="tel:03004605295">0300 460 5295</a><br>
-    Email: <a href="mailto:info@contactcder.co.uk">info@contactcder.co.uk</a>
-    </p>
+        <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Contact Details for Enforcement Agents for Customers</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p><strong>Bristow &amp; Sutor</strong><br>
+        Phone: <a href="tel:03003902010">0300 390 2010</a><br>
+        Text: <a href="tel:07781488270">07781 488270</a>
+        </p>
+        <p><strong>Dukes</strong><br>
+        Phone: <a href="tel:01785825500">01785 825 500</a><br>
+        Email: <a href="mailto:info@dukeslimited.co.uk">info@dukeslimited.co.uk</a>
+        </p>
+        <p><strong>Equita</strong><br>
+        Phone: <a href="tel:01604628360">01604 628 360</a>
+        </p>
+        <p><strong>Excel</strong><br>
+        Phone: <a href="tel:03303639988">0330 363 9988</a><br>
+        Email: <a href="mailto:info@excelenforcement.co.uk">info@excelenforcement.co.uk</a>
+        </p>
+        <p><strong>Marston</strong><br>
+        Phone: <a href="tel:03333201822">0333 320 1822</a><br>
+        Email: <a href="mailto:generalenquiries@marstongroup.co.uk">generalenquiries@marstongroup.co.uk</a>
+        </p>
+        <p><strong>Newlyn</strong><br>
+        Phone: <a href="tel:01604633001">01604 633001</a><br>
+        Email: <a href="mailto:enquiries@newlynplc.co.uk">enquiries@newlynplc.co.uk</a>
+        </p>
+        <p><strong>Phoenix/CDER</strong><br>
+        Phone: <a href="tel:03004605295">0300 460 5295</a><br>
+        Email: <a href="mailto:info@contactcder.co.uk">info@contactcder.co.uk</a>
+        </p>
+      </div>
+    </details>
 
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
@@ -3426,7 +3433,7 @@ const penaltyChargeNoticePcn = new MenuP(
     customerPaidTwice,
     customerTriedToPayOnline,
     customerUnableToPay,
-    enforcementbaliffenquiries,
+    enforcementBaliffEnquiries,
     howCanIAppeal,
     howLongDoIHaveToAppeal,
     makingAPayment,
