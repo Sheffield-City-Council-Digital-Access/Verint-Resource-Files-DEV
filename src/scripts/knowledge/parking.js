@@ -3261,87 +3261,120 @@ const debtGuidanceRelatedToPCNs = new ContentP(
   "Debt Guidance Related To PCN's",
   "Find out where to get debt advice related to PCNs, including support for Breathing Space, Debt Relief Orders, and mental health crisis assistance.",
   `
-    <h3>Here are some resources to help with debt guidance related to PCN's</h3>
-    <p>
-      <ul>
-        <li><strong><a href="https://www.moneyhelper.org.uk/en?source=mas" target="_blank">Money Advice Service</a></strong></li>
-        <li><strong><a href="https://www.stepchange.org/" target="_blank">StepChange Debt Charity</a></strong><br>Tel: <a href="tel:08001381111">0800 138 1111</a> (Monday to Friday 8am–8pm, Saturday 8am–4pm)</li>
-        <li><strong><a href="https://www.gov.uk/pay-off-debts" target="_blank">GOV.UK – Pay Off Your Debts</a></strong></li>
-        <li><strong><a href="https://nationaldebtline.org/" target="_blank">National Debtline</a></strong><br>Tel: <a href="tel:08088084000">0808 808 4000</a> (Monday to Friday 9am–8pm)</li>
-        <li><strong><a href="https://www.citizensadvice.org.uk/" target="_blank">Citizens Advice</a></strong><br>
-          <span>Adviceline (England): <a href="tel:03444111444">03444 111 444</a></span><br>
-          <span>Advicelink (Wales): <a href="tel:03444772020">03444 77 20 20</a></span><br>
-          <span>Textphone: <a href="tel:1800103444111445">18001 03444 111 445</a></span>
-        </li>
-      </ul>
-    </p>
-    <p>If you are struggling to pay, debt advisors may be able to offer you support with Breathing Space through the 
-      Debt Respite Scheme, which offers two types of breathing space:</p>
-    <ul>
-      <li>Standard Breathing Space</li>
-      <li>Mental Health Crisis Breathing Space</li>
-    </ul>
-    <p>Debt advisors can also assist with applying for a Debt Relief Order (DRO) to help manage 
-    debts you cannot pay. More information about DROs is available here:</p>
-    <p><a href="https://www.gov.uk/government/publications/debt-relief-order-guide" target="_blank">How to Get a Debt Relief Order (DRO) – GOV.UK</a></p>
+    <p>This page provides detailed information and resources related to debt guidance, PCN support, and parking-related services in Sheffield.</p>
 
-    <h3>Mental Health Support</h3>
-    <ul>
-      <li><a href="https://www.rethink.org/advice-and-information" target="_blank">Rethink Mental Health Breathing Space</a></li>
-      <li><a href="https://www.gov.uk/government/publications/breathing-space-guidance-for-creditors" target="_blank">Breathing Space Guidance for Creditors – GOV.UK</a></li>
-    </ul>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Here are some resources to help with debt guidance related to PCN's</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <ul>
+          <li><strong><a href="https://www.moneyhelper.org.uk/en?source=mas" target="_blank">Money Advice Service</a></strong></li>
+          <li><strong><a href="https://www.stepchange.org/" target="_blank">StepChange Debt Charity</a></strong><br>Tel: <a href="tel:08001381111">0800 138 1111</a> (Monday to Friday 8am–8pm, Saturday 8am–4pm)</li>
+          <li><strong><a href="https://www.gov.uk/pay-off-debts" target="_blank">GOV.UK – Pay Off Your Debts</a></strong></li>
+          <li><strong><a href="https://nationaldebtline.org/" target="_blank">National Debtline</a></strong><br>Tel: <a href="tel:08088084000">0808 808 4000</a> (Monday to Friday 9am–8pm)</li>
+          <li><strong><a href="https://www.citizensadvice.org.uk/" target="_blank">Citizens Advice</a></strong><br>
+            <span>Adviceline (England): <a href="tel:03444111444">03444 111 444</a></span><br>
+            <span>Advicelink (Wales): <a href="tel:03444772020">03444 77 20 20</a></span><br>
+            <span>Textphone: <a href="tel:1800103444111445">18001 03444 111 445</a></span>
+          </li>
+        </ul>
+        <p>If you are struggling to pay, debt advisors may be able to offer you support with Breathing Space through the 
+        Debt Respite Scheme, which offers two types of breathing space:</p>
+        <ul>
+          <li>Standard Breathing Space</li>
+          <li>Mental Health Crisis Breathing Space</li>
+        </ul>
+        <p>Debt advisors can also assist with applying for a Debt Relief Order (DRO) to help manage 
+        debts you cannot pay. More information about DROs is available here:</p>
+        <p><a href="https://www.gov.uk/government/publications/debt-relief-order-guide" target="_blank">How to Get a Debt Relief Order (DRO) – GOV.UK</a></p>
+      </div>
+    </details>
 
-    <h3>Suspension / Dispensation Requests</h3>
-    <p>If a customer needs to suspend parking bays or requests a yellow line dispensation, information can be found here:</p>
-    <ul>
-      <li><a href="https://www.sheffield.gov.uk/parking/request-bay-suspension" target="_blank">Request a Parking Bay Suspension | Sheffield City Council</a></li>
-      <li><a href="https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation" target="_blank">Request Yellow Line Dispensation | Sheffield City Council</a></li>
-    </ul>
-    <p>For questions, customers can contact: <a href="mailto:suspensions@sheffield.gov.uk">suspensions@sheffield.gov.uk</a></p>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Mental Health Support</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <ul>
+          <li><a href="https://www.rethink.org/advice-and-information" target="_blank">Rethink Mental Health Breathing Space</a></li>
+          <li><a href="https://www.gov.uk/government/publications/breathing-space-guidance-for-creditors" target="_blank">Breathing Space Guidance for Creditors – GOV.UK</a></li>
+        </ul>
+      </div>
+    </details>
 
-<h3>Taxi/PHV Drivers</h3>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Suspension / Dispensation Requests</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>If a customer needs to suspend parking bays or requests a yellow line dispensation, information can be found here:</p>
+        <ul>
+          <li><a href="https://www.sheffield.gov.uk/parking/request-bay-suspension" target="_blank">Request a Parking Bay Suspension | Sheffield City Council</a></li>
+          <li><a href="https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation" target="_blank">Request Yellow Line Dispensation | Sheffield City Council</a></li>
+        </ul>
+        <p>For questions, customers can contact: <a href="mailto:suspensions@sheffield.gov.uk">suspensions@sheffield.gov.uk</a></p>
+      </div>
+    </details>
 
-<p><strong>Driver wants to be added to the exemption list:</strong></p>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Taxi/PHV Drivers</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p><strong>Driver wants to be added to the exemption list:</strong></p>
+        <ul>
+          <li>Send a copy of the PHV vehicle licence (showing vehicle registration number, start and end date) to: <a href="mailto:PHV@sheffield.gov.uk">PHV@sheffield.gov.uk</a></li>
+          <li>Note: It must be the vehicle licence, not the driver's licence.</li>
+        </ul>
 
-<ul>
-  <li>Send a copy of the PHV vehicle licence (showing vehicle registration number, start and end date) to: <a href="mailto:PHV@sheffield.gov.uk">PHV@sheffield.gov.uk</a></li>
-  <li>Note: It must be the vehicle licence, not the driver's licence.</li>
-</ul>
+        <h4>Driver has received a Bus Lane PCN but has a valid PHV licence</h4>
+        <ul>
+          <li>They can make representations via the website (preferred): <a href="https://www.sheffield.gov.uk/parking/pay-pcn" target="_blank">Pay a parking, bus lane or Clean Air Zone PCN | Sheffield City Council</a></li>
+          <li>Alternatively, email the PHV licence and PCN reference to: <a href="mailto:PHV@sheffield.gov.uk">PHV@sheffield.gov.uk</a></li>
+          <li>Important: The licence must cover the date of the contravention to cancel the PCN.</li>
+        </ul>
 
-<h3>Driver has received a Bus Lane PCN but has a valid PHV licence<h3>
+        <h4>Sheffield City Council PHV driver received a Bus Lane PCN</h4>
+        <ul>
+          <li>Contact Parking Services immediately to check the exemption list (as SCC PHV drivers should automatically be exempt).</li>
+          <li>Alternatively, drivers can appeal online or via email to: <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a></li>
+        </ul>
+      </div>
+    </details>
 
-<ul>
-  <li>They can make representations via the website (preferred): <a href="https://www.sheffield.gov.uk/parking/pay-pcn" target="_blank">Pay a parking, bus lane or Clean Air Zone PCN | Sheffield City Council</a></li>
-  <li>Alternatively, email the PHV licence and PCN reference to: <a href="mailto:PHV@sheffield.gov.uk">PHV@sheffield.gov.uk</a></li>
-  <li>Important: The licence must cover the date of the contravention to cancel the PCN.</li>
-</ul>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Reporting Incorrectly Parked Vehicles</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>Customers can report incorrectly parked vehicles online:</p>
+        <p><a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank">Report an Incorrectly Parked Vehicle | Sheffield City Council</a></p>
+      </div>
+    </details>
 
-<h3>Sheffield City Council PHV driver received a Bus Lane PCN<h3>
-
-<ul>
-  <li>Contact Parking Services immediately to check the exemption list (as SCC PHV drivers should automatically be exempt).</li>
-  <li>Alternatively, drivers can appeal online or via email to: <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a></li>
-</ul>
-
-<h3>Reporting Incorrectly Parked Vehicles</h3>
-
-<p>Customers can report incorrectly parked vehicles online:</p>
-
-<p><a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank">Report an Incorrectly Parked Vehicle | Sheffield City Council</a></p>
-
-<h3>Other Parking Enquiries</h3>
-
-<p>For issues related to:</p>
-
-<ul>
-  <li>Machine faults/complaints</li>
-  <li>Car park complaints</li>
-  <li>Refunds (pay and display)</li>
-  <li>Car park suspensions</li>
-  <li>Signage faults</li>
-</ul>
-
-<p>Please send these enquiries to: <a href="mailto:TSOcarparkmaintenance@sheffield.gov.uk">TSOcarparkmaintenance@sheffield.gov.uk</a></p>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Other Parking Enquiries</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>For issues related to:</p>
+        <ul>
+          <li>Machine faults/complaints</li>
+          <li>Car park complaints</li>
+          <li>Refunds (pay and display)</li>
+          <li>Car park suspensions</li>
+          <li>Signage faults</li>
+        </ul>
+        <p>Please send these enquiries to: <a href="mailto:TSOcarparkmaintenance@sheffield.gov.uk">TSOcarparkmaintenance@sheffield.gov.uk</a></p>
+      </div>
+    </details>
 
   `,
   { buttonLabel: "Parking Permit", formName: "" },
