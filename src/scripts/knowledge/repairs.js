@@ -107,7 +107,7 @@ const adaptation = new ContentR(
 
   <h2>For Disabled Customers, Including Wet Rooms</h2>
 
-  <p>For walk-in shower rooms (wet rooms), refer the customer to 
+  <p>For walk-in shower rooms (wet rooms), refer the customer to  
 
 <a href="${window.location.protocol}//${
     window.location.hostname
