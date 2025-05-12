@@ -222,6 +222,8 @@ const appealBlueBadge = new ContentP(
       "appeel",
       "serivce",
       "parkng",
+      "park",
+      "parkng",
       "prking info",
       "Blue Badge",
       "blue badge",
@@ -229,7 +231,7 @@ const appealBlueBadge = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "19/02/2025", name: "Andy Walker" }
+  { date: "24/03/2025", name: "Andy Walker" }
 );
 
 const applyBlueBadge = new ContentP(
@@ -271,7 +273,6 @@ const applyBlueBadge = new ContentP(
       <li>Advise the customer that the review request has been made.</li>
       <li>Reallocate the case to Appeals.</li>
     </ul>
-
       
       <p>
       <a href="https://www.gov.uk/apply-blue-badge" target="_blank">https://www.gov.uk/apply-blue-badge</a>
@@ -341,6 +342,7 @@ const applyBlueBadge = new ContentP(
       "appely",
       "parkin",
       "prking",
+      "perking",
       "Blue Badge",
       "blue badge",
       "parking",
@@ -1073,8 +1075,8 @@ const businessPermit = new ContentP(
 
 
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1249,8 +1251,8 @@ const residentsCarer = new ContentP(
 
      
   `,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1448,8 +1450,8 @@ const greenParkingPermit = new ContentP(
 </button>
      
  	`,
-   { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1615,8 +1617,8 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
 
 
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1728,8 +1730,8 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
 </button>
 
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -1858,8 +1860,8 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
     Send link to review further information
 </button>	
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2033,8 +2035,8 @@ Get in touch with us for any other problems regarding parking permit application
 
 
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2094,8 +2096,8 @@ const staffPermit = new ContentP(
         Send link to review further information
       </button>
   `,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2249,8 +2251,8 @@ const tradePermit = new ContentP(
       </button>
 
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2330,8 +2332,8 @@ const utilityPermit = new ContentP(
             "
       >
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2487,9 +2489,18 @@ Contractors needing more time to work at a property will need to apply for trade
       >
         Send link to review further information
       </button>
+
+<p>
+
+<h3>If the customer is unable to apply online click the link to order on their behalf.</h3>
+  <a href="${window.location.protocol}//${window.location.hostname}/form/launch/visitor_permit_process">
+    Launch Visitor Permit Form
+  </a>
+</p>
+
 	`,
-  { 
-    buttonLabel: "Parking Permit Enquiry", 
+  {
+    buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
   },
   { typeKey: "parking_permit_transferred_to_service" },
@@ -2517,7 +2528,7 @@ Contractors needing more time to work at a property will need to apply for trade
     ],
     categories: ["Parking"],
   },
-  { date: "06/03/2025", name: "Gee Whitehouse" }
+  { date: "07/05/2025", name: "Gee Whitehouse" }
 );
 
 const parkingPermits = new MenuP(
@@ -2572,7 +2583,7 @@ const confirmationOfPayment = new ContentP(
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
-  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2628,7 +2639,7 @@ const customerTriedToPayOnline = new ContentP(
   `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
-  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2686,7 +2697,7 @@ const customerUnableToPay = new ContentP(
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
-  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2748,7 +2759,7 @@ const enforcementbaliffenquiries = new ContentP(
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
-  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2806,7 +2817,7 @@ const howCanIAppeal = new ContentP(
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
-  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2857,7 +2868,7 @@ const howLongDoIHaveToAppeal = new ContentP(
   `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
-  { typeKey: "parking_permit_information_provided" },
+  { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
     keywords: [
