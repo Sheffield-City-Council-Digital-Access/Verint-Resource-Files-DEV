@@ -2922,7 +2922,7 @@ const workingatHeight = new ContentR(
 const repairs = new ServiceR(
   "repairs",
   "Repairs",
-  "",
+  "Report home repairs, safety checks, accessibility adaptations, and maintenance for internal, external, and communal property features.",
     [
       adaptation, blacksmith, brickwork, chimneyStack, claimforDamage, 
       clothesPost, communalArea, concrete, dampandMould, districtHeatingSwitch2Setup, 
