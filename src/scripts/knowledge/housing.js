@@ -963,7 +963,7 @@ const communalAreasFireSafety = new ContentH(
   `,
   {
     buttonLabel: "",
-    formName: "",
+    formName: "hou_estates_enquiry",
   },
   { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_information_requested" },
@@ -1926,8 +1926,8 @@ const communalFireSafety = new ContentH(
       on stairs or landings which are the means of escape from the building.
     </p>
   `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { buttonLabel: "Raise enquiry", formName: "hou_estates_enquiry" },
+  { typeKey: "" },
   { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Information",
