@@ -1914,6 +1914,19 @@ const fencesCouncilHousing = new ContentH(
       Estate Services teams will only remove blown down fences if they are a safety
       hazard.
     </p>
+    <h3>Requesting permission for a fence</h3>
+
+  <p>To request permission to erect a fence please use the form below:
+
+<a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/hou_sustainment_perm?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&sel_permission_about=New permission request&sel_permission_type=Erect a fence">Request permission to erect a fence</a>
   `,
   { buttonLabel: "Report Housing Fences", formName: "hou_sustainment_fence" },
   { typeKey: "" },
