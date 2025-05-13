@@ -936,50 +936,7 @@ const communalAreas = new ContentH(
   { date: "27/02/2025", name: "Nathan Smith" }
 );
 
-const communalAreasFireSafety = new ContentH(
-  "communalAreasFireSafety",
-  "Communal Areas Fire Safety",
-  "Understand fire safety rules for communal areas, including prohibited items, storage guidelines, and safe practices for shared spaces.",
-  `
-    <h2>Fire Safety in Communal Areas</h2> 
-
-    <p>Under the Regulatory Reform Order (2005), landlords are required to ensure that fire risk assessments are carried out in any shared areas of any properties they manage. Landlords also need to ensure that any fire escape routes and entrances/exits to properties are clear from trip hazards and items which would prevent exit from the building in the event of an emergency.</p>
-
-    <h3>As such, please do not place in the communal area, items such as: </h3>
-    <ul>
-      <li>Chairs and tables</li>
-      <li>Bookcases</li>
-      <li>Loose carpets</li>
-      <li>Curtains, blinds or net curtains</li>
-      <li>Plastic flower pots</li>
-      <li>Petrol containers and gas bottles</li>
-      <li>Motorbikes, mopeds or any other equipment which uses petrol/diesel or gas</li>
-    </ul>
-    <p>If any of these items, or any other item which is felt to be a fire risk, are left in your communal area we will ask residents to remove them. If they remain they will be removed.</p>
-
-    <p>Bicycles, prams, pushchairs and similar items will not normally be permitted to be stored or located within the internal communal parts unless there is an area capable of storage without causing obstruction.</p>
-
-    <p>You can have a small doormat if it is rubber backed. Edged and trimmed natural plants that are maintained in ceramic, earthenware or metal pots, as long as they are not placed on stairs or landings which are the means of escape from the building.</p>
-  `,
-  {
-    buttonLabel: "",
-    formName: "hou_estates_enquiry",
-  },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
-  {
-    type: "Information",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing"],
-  },
-  { date: "10/10/2024", name: "George Whitehouse" }
-);
+// Communal Fire Safety is under "Estates and Environments" please make changes there.
 
 const decants = new FormH(
   "decants",
@@ -1827,7 +1784,7 @@ const assetManagementAndRepairs = new MenuH(
     carbonMonoxide,
 	  communalAerials,
 	  communalAreas,
-	  communalAreasFireSafety,
+	  communalFireSafety,
     decants,
 	  districtHeating,
 	  doorEntrySystems,
