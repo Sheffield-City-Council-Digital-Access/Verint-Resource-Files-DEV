@@ -1916,7 +1916,7 @@ const fencesCouncilHousing = new ContentH(
     </p>
   `,
   { buttonLabel: "Report Housing Fences", formName: "hou_sustainment_fence" },
-  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Information",
