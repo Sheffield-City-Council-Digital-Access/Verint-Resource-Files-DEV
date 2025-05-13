@@ -73,7 +73,7 @@ class FormEaR extends CoreEaR {
         Someone in the property should check the details on the form are correct and
         up to date. This form <strong>requires a response</strong>, even if the
         details on it are correct. Responses can be made online at
-        <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a> 
+        <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a>  
         or by returning the completed form in the reply envelope. If there are changes
         or to confirm there are no changes. If everything is correct, this can be
         confirmed by SMS or phone instead, using the details on the form. 
@@ -118,7 +118,7 @@ class FormEaR extends CoreEaR {
       ],
       categories: ["Elections and Referendums", "Electoral"],
     },
-    { date: "07/05/2025", name: "Dinah Williams" }
+    { date: "13/05/2025", name: "Dinah Williams" }
   );
 
 const ccaCCBorCanvassForms = new ContentEaR(
@@ -144,6 +144,7 @@ const ccaCCBorCanvassForms = new ContentEaR(
       or to confirm there are no changes. If everything is correct, this can be
       confirmed by SMS or phone instead, using the details on the form.
       <br>
+  
   <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
@@ -184,7 +185,7 @@ const ccaCCBorCanvassForms = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "07/05/2025", name: "Dinah Williams" }
+  { date: "13/05/2025", name: "Dinah Williams" }
 );
 
 const ccaCCBForms = new ContentEaR(
@@ -207,11 +208,24 @@ const ccaCCBForms = new ContentEaR(
       <strong>Properties receiving a CCA</strong> - Someone in the property should
       check the details on the form are correct and up to date. If they are, the
       form can be ignored. If there are any updates to make (such as a change of
-      name, adding or removing someone), they should go online at
-      <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
+      name, adding or removing someone), they should go online at:
+      <a href="http://www.elecreg.co.uk/sheffield" target="_blank">www.elecreg.co.uk/sheffield</a> 
       and make the change using the unique security codes printed on the form, or
       contact Electoral Services directly if they cannot go online.
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=elecreg'"> Send Link </button>
+  
+      <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=elecreg\`
+    "
+>
+    Send link to review further information
+</button>
+       
     </p>
     <p>
       <strong>Properties receiving a CCB</strong> - Someone in the property should
@@ -274,7 +288,7 @@ const ccaCCBForms = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "07/05/2025", name: "Dinah Williams" }
+  { date: "13/05/2025", name: "Dinah Williams" }
 );
 
 const informationChangeandHowToUpdateIt = new ContentEaR(

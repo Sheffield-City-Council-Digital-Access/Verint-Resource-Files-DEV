@@ -3453,6 +3453,20 @@ const bidding = new ContentH(
             To remove a joint applicant, you must do this online at the Property Shop
             website at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a>
           <br>
+
+     <button 
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`
+    "
+>
+            Send link to review further information
+     </button>
+
           <br>
           <h3>Joint Applicant</h3>
           <br>
@@ -3681,8 +3695,18 @@ const bidding = new ContentH(
                 Email: <a href="mailto:info@archeshousing.org.uk">info@archeshousing.org.uk</a><br>
                 Website and web chat: <a href="https://www.archeshousing.org.uk" target="_blank">https://www.archeshousing.org.uk</a>
                 <br>
-                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Arches%20Housing'"> Send Link </button>
-
+      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Arches%20Housing\`
+    "
+>
+            Send link to review further information
+       </button>
               </address>
               <p>
                 Mutual exchanges advertised and managed through home swapper: register on <a href="https://www.homeswapper.co.uk" target="_blank">https://www.homeswapper.co.uk</a> 
@@ -4036,7 +4060,7 @@ const bidding = new ContentH(
       categories: ["Housing"],
     },
     {
-      date: "08/05/2025",
+      date: "13/05/2025",
       name: "Dinah Williams"
     }
   );

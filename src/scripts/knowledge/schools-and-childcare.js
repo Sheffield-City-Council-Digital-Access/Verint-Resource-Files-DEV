@@ -588,8 +588,21 @@ const schoolFoodVoucher = new ContentSaC(
             <p>
               You can redeem your eCode button on the website:
               <a href="https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers"target="_blank">https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Voucher</a><br>
-               <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Edenred'"> Send Link </button>
-              <br>
+                           
+        <button
+              type="button"
+              class="dform_widget email-btn dform_widget_type_button"
+              aria-label="For further information send link"
+              onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Edenred\`
+        "
+        >
+              Send link to review further information
+        </button>
+            
+               <br>
               or you can visit:
               <a href="http://www.selectyourcompliment.co.uk" target="_blank">www.selectyourcompliment.co.uk</a>
               <br>
@@ -790,7 +803,7 @@ const schoolFoodVoucher = new ContentSaC(
     ],
     categories: ["School and Childcare"],
   },
-  { date: "08/05/2025", name: "Dinah Williams" }
+  { date: "13/05/2025", name: "Dinah Williams" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
