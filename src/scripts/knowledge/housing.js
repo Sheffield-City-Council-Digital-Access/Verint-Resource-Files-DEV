@@ -56,6 +56,57 @@ class FormH extends CoreH {
 
 //#region Crossregion
 
+const communalFireSafety = new ContentH(
+  "communalFireSafety",
+  "Communal Fire Safety",
+  "Learn about fire safety regulations for communal areas, prohibited items, and permitted placements to ensure clear escape routes and compliance with safety standards.",
+  `
+    <p>
+      Under the Regulatory Reform Order (2005), landlords are required to ensure
+      that fire risk assessments are carried out in any shared areas of any
+      properties they manage. Landlords also need to ensure that any fire escape
+      routes and entrances/exits to properties are clear from trip hazards and items
+      which would prevent exit from the building in the event of an emergency.
+    </p>
+    <p>As such, please do not place in the communal area, items such as:</p>
+    <ul>
+      <li>Chairs and tables</li>
+      <li>Bookcases</li>
+      <li>Loose carpets</li>
+      <li>Curtains, blinds or net curtains</li>
+      <li>Plastic flower pots</li>
+      <li>Petrol containers and gas bottles</li>
+      <li>
+        Motorbikes, mopeds or any other equipment which uses petrol/diesel or gas
+      </li>
+    </ul>
+    <p>
+      If any of these items, or any other item which is felt to be a fire risk, are
+      left in your communal area we will ask residents to remove them. If they
+      remain they will be removed.
+    </p>
+    <p>
+      Bicycles, prams, pushchairs and similar items will not normally be permitted
+      to be stored or located within the internal communal parts unless there is an
+      area capable of storage without causing obstruction.
+    </p>
+    <p>
+      You can have a small doormat if it is rubber backed. Edged and trimmed natural
+      plants in ceramic, earthenware or metal pots, as long as they are not placed
+      on stairs or landings which are the means of escape from the building.
+    </p>
+  `,
+  { buttonLabel: "Raise enquiry", formName: "hou_estates_enquiry" },
+  { typeKey: "" },
+  { typeKey: "estates_and_environmental_information_provided" },
+  {
+    type: "Information",
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
+    categories: ["Housing", "Estates and Environments"],
+  },
+  { date: "13/05/2025", name: "Nathan Smith" }
+);
+
 const universalCredit = new ContentH(
   "universalCredit",
   "Universal credit",
@@ -936,7 +987,7 @@ const communalAreas = new ContentH(
   { date: "27/02/2025", name: "Nathan Smith" }
 );
 
-// Communal Fire Safety is under "Estates and Environments" please make changes there.
+// Communal fire safety is in the cross region section at the top of the area
 
 const decants = new FormH(
   "decants",
@@ -1843,56 +1894,7 @@ const communalCupboard = new ContentH(
   { date: "17/03/2025", name: "Nathan Smith" }
 );
 
-const communalFireSafety = new ContentH(
-  "communalFireSafety",
-  "Communal Fire Safety",
-  "Learn about fire safety regulations for communal areas, prohibited items, and permitted placements to ensure clear escape routes and compliance with safety standards.",
-  `
-    <p>
-      Under the Regulatory Reform Order (2005), landlords are required to ensure
-      that fire risk assessments are carried out in any shared areas of any
-      properties they manage. Landlords also need to ensure that any fire escape
-      routes and entrances/exits to properties are clear from trip hazards and items
-      which would prevent exit from the building in the event of an emergency.
-    </p>
-    <p>As such, please do not place in the communal area, items such as:</p>
-    <ul>
-      <li>Chairs and tables</li>
-      <li>Bookcases</li>
-      <li>Loose carpets</li>
-      <li>Curtains, blinds or net curtains</li>
-      <li>Plastic flower pots</li>
-      <li>Petrol containers and gas bottles</li>
-      <li>
-        Motorbikes, mopeds or any other equipment which uses petrol/diesel or gas
-      </li>
-    </ul>
-    <p>
-      If any of these items, or any other item which is felt to be a fire risk, are
-      left in your communal area we will ask residents to remove them. If they
-      remain they will be removed.
-    </p>
-    <p>
-      Bicycles, prams, pushchairs and similar items will not normally be permitted
-      to be stored or located within the internal communal parts unless there is an
-      area capable of storage without causing obstruction.
-    </p>
-    <p>
-      You can have a small doormat if it is rubber backed. Edged and trimmed natural
-      plants in ceramic, earthenware or metal pots, as long as they are not placed
-      on stairs or landings which are the means of escape from the building.
-    </p>
-  `,
-  { buttonLabel: "Raise enquiry", formName: "hou_estates_enquiry" },
-  { typeKey: "" },
-  { typeKey: "estates_and_environmental_information_provided" },
-  {
-    type: "Information",
-    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
-    categories: ["Housing", "Estates and Environments"],
-  },
-  { date: "14/10/2024", name: "Omily Parkin" }
-);
+// Communal fire safety is in the cross region section at the top of the area
 
 const fencesCouncilHousing = new ContentH(
   "fencesCouncilHousing",
