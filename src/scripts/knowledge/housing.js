@@ -1918,8 +1918,6 @@ const fencesCouncilHousing = new ContentH(
     </p>
     <h3>Requesting permission for a fence</h3>
 
-  <p>To request permission to erect a fence please use the form below:
-
 <a href="${window.location.protocol}//${
     window.location.hostname
   }/form/launch/hou_sustainment_perm?${
