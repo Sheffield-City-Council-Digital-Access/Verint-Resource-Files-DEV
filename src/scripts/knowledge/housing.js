@@ -52,7 +52,7 @@ class FormH extends CoreH {
 }
 
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
-// --- v - ADD SCRIPT BELOW THIS LINE - v 3test ----------------------------------- \\
+// --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
 //#region Crossregion
 
@@ -2120,6 +2120,15 @@ const generalCouncilHousing = new ContentH(
 </button>
   </p>
 
+  <h3>Accounts Payable</h3>
+  <p>
+    Purchasing and Payments can be contacted at <a href="tel:0114 2735082">0114 2735082</a>
+  </p>
+<h3>Communications (Journalist / Media enquiries)</h3>
+  <p>
+    Please do not give any information out and refer to the Communications Team <a href="tel:0114 2735538">0114 2735538</a> and <a href="mailto:communications@sheffield.gov.uk">communications@sheffield.gov.uk</a> (Public email address).
+  </p>
+
   <h3>Bogus Callers</h3>
   <p>
     All Council Housing Service staff, surveyors, and contractors carry identification cards at all times. It is important that you always ask to see identification before you let anyone into your home. If you have any doubts about a caller’s identity, do not let them in.
@@ -2768,6 +2777,11 @@ const leaseholderInformation = new ContentH(
       You will remain responsible for ensuring that the terms of the lease are complied with and you will remain liable for any breaches,
       regardless of whether the breaches are committed by you, your sub-tenant or other parties connected to your sub-tenant.
       You will therefore be responsible for the behaviour of your sub-tenant(s). This would include, for example, ensuring that they do not cause a nuisance to neighbours.
+    </p>
+
+    <h3>Contact Details</h3>
+    <p>
+      The leaseholder team can be contacted via <a href="tel:0114 2734468">0114 2734468</a> and <a href="mailto:leaseholdservice@sheffield.gov.uk">leaseholdservice@sheffield.gov.uk</a>.
     </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -5868,8 +5882,8 @@ const extraCareHousing = new ContentH(
     </ul>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "sheltered_and_supported_transferred_to_service" },
+  { typeKey: "sheltered_and_supported_information_provided" },
   {
     type: "",
     keywords: [
@@ -6013,10 +6027,15 @@ const furnishedAccommodation = new ContentH(
       Search for the customer's address (street) and remember that the same address
       may be on the spreadsheet a few times - look for the most recent entry.
     </p>
+    <h3>Furnished Team</h3>
+    <p>
+      <strong> advisor note: </strong> The Furnished team can be contacted on
+      <a href="tel:0114 2052600">0114 2052600</a>.
+    </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "sheltered_and_supported_transferred_to_service" },
+  { typeKey: "sheltered_and_supported_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -6094,10 +6113,15 @@ const gypsyAndTravellers = new ContentH(
       roadside encampments or any other kind of unauthorised encampments, on
       <a href="tel:0114 2734651">0114 2734651</a>.
     </p>
+    <h3>Supported Housing</h3>
+    <p>
+        Gypsy Traveller Site Support Officer can be contacted on
+      <a href="tel:0771 1153441">0771 1153441</a>.
+    </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "sheltered_and_supported_transferred_to_service" },
+  { typeKey: "sheltered_and_supported_information_provided" },
   {
     type: "",
     keywords: [
@@ -6118,7 +6142,10 @@ const olderPersonsIndependentLiving = new ContentH(
   "Older Persons Independent Living (OPIL)",
   "Explore Sheltered Housing for older people in Sheffield, offering independent living with support services, security, and communal facilities.",
   `
-    <p>
+  <p>
+      A list of our Our sheltered housing schemes can be found at <a href="https://www.sheffield.gov.uk/housing/our-sheltered-housing-schemes" target="_blank">https://www.sheffield.gov.uk/housing/our-sheltered-housing-schemes</a>
+  </p>
+  <p>
       Sheltered housing is rented accommodation that is specially designed for older
       people who are able to live independently.
     </p>
@@ -6245,10 +6272,19 @@ const olderPersonsIndependentLiving = new ContentH(
       <li>Social Services</li>
       <li>Health Service</li>
     </ul>
+
+    <h3>Contact Details</h3>
+    <p>
+      Sheltered Housing can be contact on <a href="tel:0114 2037030">0114 2037030</a> <a href="mailto:HomesAreaSheltered@sheffield.gov.uk">HomesAreaSheltered@sheffield.gov.uk</a> 
+    </p>
+    <p>
+      Temporary Accommodation can be contact on <a href="tel:0114 2053171">0114 2053171</a> or <a href="tel:0114 2930832">0114 2930832</a> 
+    </p>
+
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "sheltered_and_supported_transferred_to_service" },
+  { typeKey: "sheltered_and_supported_information_provided" },
   {
     type: "",
     keywords: [
@@ -6263,6 +6299,568 @@ const olderPersonsIndependentLiving = new ContentH(
   { date: "15/10/2024", name: "Joe Nixon" }
 );
 
+//It might be worth updating the below to instead be a function that populates to use less code, this would add some complexity however.
+const shelteredWardens = new ContentH(
+  "shelteredWardens",
+  "Sheltered Wardens",
+  "Contact details for Sheltered Wardens.",
+  `
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Balfour House</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          <address>
+            Horner Close,<br>
+            Stocksbridge,<br>
+            S36 1LQ,<br>  
+          </address>
+          <a href="tel:0114 2830285">0114 2830285</a> (Public number, cannot use on the freephone)
+        </p>        
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Blackberry Hamlet</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          <address>
+            Halfway Centre,<br>
+            Mosborough,<br>
+            S20 4TA,<br>  
+          </address>
+          <a href="tel:0114 2482678">0114 2482678</a> (Public number, cannot use on the freephone)
+        </p>        
+      </div>
+    </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Blackwell Court</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Blackwell Place,<br>
+          S2 5PW,<br>
+        </address>
+        <a href="tel:0114 2701682">0114 2701682</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Callow Mount</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Handbank Block,<br>
+          Newfield Green,<br>
+          S14 1PJ,<br>
+        </address>
+        <a href="tel:0114 2647736">0114 2647736</a> (Public number, cannot use on the freephone) <br>
+        Fax: <a href="tel:0114 2358667">0114 2358667</a>
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cambridge Court</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          120 Cambridge Road,<br>
+          Heeley,<br>
+          S8 9SN,<br>  
+        </address>
+        <a href="tel:0114 2586596">0114 2586596</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Charles Square Hamlet including Well Croft</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Charles Square,<br>
+          High Green,<br>
+          S35 4FS,<br>  
+        </address>
+        <a href="tel:0114 2869513">0114 2869513</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cherry Tree Common</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          4 Union Road,<br>
+          Nether Edge,<br>
+          S11 9EF,<br>  
+        </address>
+        <a href="tel:0114 2585634">0114 2585634</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Crabtree Grange</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          191 Crabtree Road,<br>
+          Norwood,<br>
+          S5 7BA,<br>  
+        </address>
+        <a href="tel:0114 2437165">0114 2437165</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Elm Tree House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 37,<br>
+          7 Ridgeway Road,<br>
+          Intake,<br>  
+          S12 2TW,<br> 
+        </address>
+        <a href="tel:0114 2646896">0114 2646896</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Ernest Copley House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Peckham Road,<br>
+          High Green,<br>
+          S35 3JA,<br>  
+        </address>
+        <a href="tel:0114 2848573 ">0114 2848573 </a> (Public number, cannot use on the freephone)
+        Fax: <a href="tel:0114 2869910">0114 2869910</a>
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Ernest Fox House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Lump Lane,<br>
+          Grenoside,<br>
+          S35 9PZ,<br>  
+        </address>
+        <a href="tel:0114 2461011">0114 2461011</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eva Ratcliffe House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Yew Lane,<br>
+          Ecclesfield,<br>
+          S5 9BE,<br>  
+        </address>
+        <a href="tel:0114 2400950">0114 2400950</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Helliwell Court</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 8,<br>
+          Helliwell Lane,<br>
+          Deepcar,<br>
+          S36 2QH,<br>  
+        </address>
+        <a href="tel:0114 2830284">0114 2830284</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Holly Bank</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 23,<br>
+          Mansfield Drive,<br>
+          Intake,<br>
+          S12 2BF,<br>  
+        </address>
+        <a href="tel:0114 2358668">0114 2358668</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>John Trickett House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Bevan Way,<br>
+          Chapeltown,<br>
+          S35 1RL,<br>  
+        </address>
+        <a href="tel:0114 2463644">0114 2463644</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Kinsey Road</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Kinsey Road,<br>
+          High Green,<br>
+          S35 4HP,<br>  
+        </address>
+        <a href="tel:0114 2848613">0114 2848613</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Low Edges</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 177,<br>
+          Low Edges Road,<br>
+          S8 7JG,<br>  
+        </address>
+        <a href="tel:0114 2839356">0114 2839356</a> (Public number, cannot use on the freephone). <br>
+          Alternatively, dial the wardens on their mobiles, <a href="tel:0776 4229571">0776 4229571</a> or <a href="tel:0777 6462885">0777 6462885</a> 
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Lytton Court</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          37 Lytton Drive,<br>
+          Parson Cross,<br>
+          S5 8AZ,<br>  
+        </address>
+        <a href="tel:0114 2315752">0114 2315752</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Manor House </h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          706 Stannington Road, <br>
+          Stannington, <br>
+          S6 6AJ, <br>  
+        </address>
+        <a href="tel:0114 2340218">0114 2340218</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Mount View Lodge</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          194 Derbyshire Lane,<br>
+          Norton,<br>
+          S8 8SE,<br>  
+        </address>
+        <a href="tel:0114 2585327">0114 2585327</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Newgate Close</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Newgate Close,<br>
+          High Green,<br>
+          S35 4PD,<br>  
+        </address>
+        <a href="tel:0114 2869433">0114 2869433</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Newton Croft</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          26 Chapel Street,<br>
+          Woodhouse,<br>
+          S13 7JN,<br>  
+        </address>
+        <a href="tel:0114 2699927">0114 2699927</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Orpen House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 5, <br>
+          2 Mawfa Road, <br>
+          Norton, <br>
+          S14 1AZ, <br>  
+        </address>
+        <a href="tel:0114 2358722">0114 2358722</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Painted Fabrics</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          69 Little Norton Drive,<br>
+          Norton,<br>
+          S8 8HH,<br>  
+        </address>
+        <a href="tel:0114 2746790">0114 2746790</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Park View Lodge</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 10,<br>
+          44 Leader Road,<br>
+          Hillsborough,<br>
+          S6 4GH,<br>
+        </address>
+        <a href="tel:0114 2333788">0114 2333788</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Roscoe Court</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          2 Stanwood Road,<br>
+          Stannington,<br>
+          S6 5JF,<br>  
+        </address>
+        <a href="tel:0114 2347619">0114 2347619</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Springwater House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          44 Cotleigh Crescent,<br>
+          Hackenthorpe,<br>
+          S12 4HT,<br>  
+        </address>
+        <a href="tel:0114 2488296">0114 2488296</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>St Georges Court</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 35,<br>
+          1 Beet Street,<br>
+          Netherthorpe,<br>
+          S3 7GP,<br>  
+        </address>
+        <a href="tel:0114 2762861">0114 2762861</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Sweeney House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 40,<br>
+          Oxley Close,<br>
+          Stocksbridge,<br>
+          S36 1LH,<br>  
+        </address>
+        <a href="tel:0114 2830278">0114 2830278</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Welwyn Court</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 1,<br>
+          71 Jaunty Lane,<br>
+          Gleadless,<br>
+          S12 4DL,<br>  
+        </address>
+        <a href="tel:0114 2358727">0114 2358727</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Westnall House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Glossop Row,<br>
+          Oughtibridge,<br>
+          S35 0GH,<br>  
+        </address>
+        <a href="tel:0114 2863231">0114 2863231</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "sheltered_and_supported_transferred_to_service" },
+  { typeKey: "sheltered_and_supported_information_provided" },
+  {
+    type: "",
+    keywords: [
+      "Sheltered",
+      "Supported",
+      "Sheltered & Supported",
+      "Sheltered and Supported",
+      "Warden",
+    ],
+    categories: ["Housing", "Sheltered and Supported"],
+  },
+  { date: "12/05/2025", name: "Joseph Coupland" }
+);
+
+
 const shelteredAndSupported = new MenuH(
   "shelteredAndSupported",
   "Sheltered and Supported",
@@ -6271,7 +6869,8 @@ const shelteredAndSupported = new MenuH(
     extraCareHousing,
     furnishedAccommodation,
     gypsyAndTravellers,
-    olderPersonsIndependentLiving
+    olderPersonsIndependentLiving,
+    shelteredWardens
   ]
 );
 
