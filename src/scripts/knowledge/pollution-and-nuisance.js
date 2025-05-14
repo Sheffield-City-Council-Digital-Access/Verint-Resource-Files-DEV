@@ -81,7 +81,7 @@ const badgerProtection = new ContentPaN(
       offender from owning a dog.
     </p>
     <p>
-      For more information, please visit: <a href="http://www.syorksbadgergroup.org.uk" target="_blank">http://www.syorksbadgergroup.org.uk</a>.
+      For more information, please visit: <a href="https://www.badgertrust.org.uk/" target="_blank">http://https://www.badgertrust.org.uk/</a>.
       <br>
  <button
         type="button"
@@ -90,7 +90,7 @@ const badgerProtection = new ContentPaN(
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=South%20Yorkshire%20Badger%20Group\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Badger%20Trust\`
             "
       >
         Send link to review further information
