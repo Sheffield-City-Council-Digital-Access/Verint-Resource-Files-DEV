@@ -640,7 +640,7 @@ const illegalParking = new ContentP(
     <ul>
       <li>The Mansfield Group</li>
       <li>Parkway Drive, Sheffield</li>
-      <li>Tel: <a href="tel:08706003444"> 0870 6003444</a></li>
+      <li>Tel: <a href="tel: 08706003444"> 0870 6003444</a></li>
     </ul>
     <p>
     The customer will need to contact Mansfield to retrieve their vehicle. They will need to pay the PCN amount to release their vehicle, and then 
@@ -651,6 +651,8 @@ const illegalParking = new ContentP(
     <p>
     Customers can report an incorrectly parked vehicle via our website:<br>
     <a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank">
+             https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle
+    </a>
     Report an incorrectly parked vehicle
     </a>
     </p>
@@ -2725,7 +2727,9 @@ const customerUnableToPay = new ContentP(
       </summary>
       <div class="accordion-content">
         <p>
-          You can warm transfer to (Storm) <a href="tel:87061">87061</a> (Internal Number), dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
+          You can warm transfer to:
+          <strong>Advisor Note: (Internal number Storm line):</strong>
+          <a href="tel: 87061">87061</a>dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
         </p>
       </div>
     </details>
@@ -2736,7 +2740,10 @@ const customerUnableToPay = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>If you are still unable to resolve the PCN, you can warm transfer to (Storm) <a href="tel:87061">87061</a> (Internal Number).</p>
+        <p>If you are still unable to resolve the PCN, you can warm transfer to:
+         <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87061">87061</a>
+        </p>
       </div>
     </details>
 
@@ -2746,7 +2753,10 @@ const customerUnableToPay = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>If you are still unable to resolve the PCN, you can warm transfer to (Storm) <a href="tel:87062">87062</a> (Internal Number).</p>
+        <p>If you are still unable to resolve the PCN, you can warm transfer to:
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87062">87062</a>
+        </p>
       </div>
     </details>
 
@@ -2757,8 +2767,8 @@ const customerUnableToPay = new ContentP(
       </summary>
       <div class="accordion-content">
         <p><strong>Bristow &amp; Sutor</strong><br>
-        Phone: <a href="tel:03003902010">0300 390 2010</a><br>
-        Text: <a href="tel:07781488270">07781 488270</a>
+        Phone: <a href="tel: 03003902010">0300 390 2010</a><br>
+        Text: <a href="tel: 07781488270">07781 488270</a>
         </p>
         <p><strong>Dukes</strong><br>
         Phone: <a href="tel:01785825500">01785 825 500</a><br>
@@ -2816,7 +2826,7 @@ const customerUnableToPay = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "09/08/2025", name: "Andy Walker" }
+  { date: "14/05/2025", name: "Andy Walker" }
 );
 
 const enforcementBaliffEnquiries = new ContentP(
@@ -2850,7 +2860,8 @@ const enforcementBaliffEnquiries = new ContentP(
     <h3>Enforcement Agents are at a Customer’s Property</h3>
     <p>
     If a customer calls and states enforcement agents are at their property to recover funds, then you can contact us via warm transfer on: 
-    (Internal): <a href="tel:87061">87061</a> (Storm line), dependent on PCN type. 
+    <strong>Advisor Note: (Internal number):</strong>
+    <a href="tel: 87061">87061</a> (Storm line), dependent on PCN type. 
     If you can, try to get as much information from the customer such as the PCN reference and any background information.
     </p>
     <p>
@@ -3006,7 +3017,9 @@ const howCanIAppeal = new ContentP(
   <div class="accordion-content">
     <p>
       The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
-      If the VRM is clearly incorrect, then you can warm transfer to <a href="tel:87061"> 87061</a> (Storm line – internal use only) depending on PCN type so we can investigate it further.
+      If the VRM is clearly incorrect, then you can warm transfer to:
+      <strong>Advisor Note: (Internal number Storm line):</strong>
+      <a href="tel: 87061">87061</a>dependent on PCN type, so we can investigate it further.
     </p>
   </div>
 </details>
@@ -3049,9 +3062,11 @@ const howCanIAppeal = new ContentP(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <p>If you are still unable to resolve the PCN, you can warm transfer to (Storm) <a href="tel:87061">87061</a> (Internal Number).</p>
+    <p>If you are still unable to resolve the PCN, you can warm transfer to:
+    <strong>Advisor Note: (Internal number Storm line):</strong> 
+    <a href="tel: 87061">87061</a> 
   </div>
-</details>
+  </details>
 
 <details class="accordion">
   <summary class="accordion-header">
@@ -3059,7 +3074,9 @@ const howCanIAppeal = new ContentP(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <p>If you are still unable to resolve the PCN, you can warm transfer to (Storm) <a href="tel:87062">87062</a> (Internal Number).</p>
+    <p>If you are still unable to resolve the PCN, you can warm transfer to:
+     <strong>Advisor Note: (Internal number Storm line):</strong>
+    <a href="tel: 87062">87062</a> (Internal Number).</p>
   </div>
 </details>
 
@@ -3515,7 +3532,9 @@ const unableToResolvePcn = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>If you are still unable to resolve the PCN, you can warm transfer to (Storm) <a href="tel:87061">87061</a> (Internal Number).</p>
+        <p>If you are still unable to resolve the PCN, you can warm transfer to:
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87061">87061</a> (Internal Number).</p>
       </div>
     </details>
 
@@ -3525,7 +3544,9 @@ const unableToResolvePcn = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>If you are still unable to resolve the PCN, you can warm transfer to (Storm) <a href="tel:87062">87062</a> (Internal Number).</p>
+        <p>If you are still unable to resolve the PCN, you can warm transfer to:
+         <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87062">87062</a> (Internal Number).</p>
       </div>
     </details>
 
@@ -3536,7 +3557,9 @@ const unableToResolvePcn = new ContentP(
       </summary>
       <div class="accordion-content">
         <p>
-          You can warm transfer to (Storm) <a href="tel:87061">87061</a> (Internal Number), dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
+          You can warm transfer to:
+           <strong>Advisor Note: (Internal number Storm line):</strong>
+          <a href="tel: 87061">87061</a>dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
         </p>
       </div>
     </details>
@@ -3549,7 +3572,8 @@ const unableToResolvePcn = new ContentP(
       <div class="accordion-content">
         <p>
           If a customer calls and states enforcement agents are at their property to recover funds, then you can contact us via warm transfer on: 
-          (Internal): <a href="tel:87061">87061</a> (Storm line), dependent on PCN type. 
+           <strong>Advisor Note: (Internal number Storm line):</strong>
+          <a href="tel: 87061">87061</a>dependent on PCN type. 
           If you can, try to get as much information from the customer such as the PCN reference and any background information.
         </p>
         <p>
@@ -3566,7 +3590,9 @@ const unableToResolvePcn = new ContentP(
       <div class="accordion-content">
         <p>
           The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
-          If the VRM is clearly incorrect, then you can warm transfer to <a href="tel:87061"> 87061</a> (Storm line – internal use only) depending on PCN type so we can investigate it further.
+          If the VRM is clearly incorrect, then you can warm transfer to:
+          <strong>Advisor Note: (Internal number Storm line):</strong>
+          <a href="tel: 87061"> 87061</a>depending on PCN type so we can investigate it further.
         </p>
       </div>
     </details>
