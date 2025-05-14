@@ -813,5 +813,5 @@ const schoolsAndChildcare = new ServiceSaC(
   "schoolsAndChildcare",
   "Schools and Childcare",
   `Admissions, catchment areas, find schools, school travel, attendance, childcare and nurseries, teaching jobs…`,
-  [freeSchoolMeals, fundedEarlyLearning]
+  [freeSchoolMeals, fundedEarlyLearning, schoolFoodVoucher]
 );
