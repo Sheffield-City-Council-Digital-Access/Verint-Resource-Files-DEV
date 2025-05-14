@@ -4797,8 +4797,13 @@ const contactRentsTeam = new ContentH(
             <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-            <p>Goes into process.</p>
-            <p><strong>Now only 4 current arrears teams and 1 new tenancy team</strong></p> 
+            <p>
+              Current Arrears North 1: 0114 2057221<br>
+              Current Arrears South 2: 0114 2052923<br><br>
+              Current Arrears North 1: 0114 2052906<br>
+              Current Arrears South 2: 0114 2057222<br><br>
+              Introductory Tenancy Team: 0114 2052911
+            </p>
         </div>
     </details>
 
