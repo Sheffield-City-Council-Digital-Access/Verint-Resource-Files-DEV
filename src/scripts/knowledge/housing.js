@@ -4761,12 +4761,15 @@ const contactRentsTeam = new ContentH(
             <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-            <p>
-                <strong>Service Area:</strong> Customer Services (Housing Call Centre Supervisors)
-            </p>
-            <p>
-                <strong>Telephone Number:</strong> Tracy Harding: 46 71021; Lisa Styring: 20 53297
-            </p> 
+          <p>
+            <strong>Advisor note: Do not give these numbers out to the public</strong>
+          </p>
+          <p>
+              <strong>Service Area:</strong> Customer Services (Housing Call Centre Supervisors)
+          </p>
+          <p>
+              <strong>Telephone Number:</strong> Tracy Harding: 0114 2053091; Lisa Styring: 0114 2053091
+          </p> 
         </div>
     </details>
 
@@ -4917,11 +4920,13 @@ const contactRentsTeam = new ContentH(
 
     <details class="accordion">
         <summary class="accordion-header">
-            <h3>Sustainment and Support Team</h3>
+            <h3>Rents Support Team</h3>
             <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-            <p>Goes into process.</p> 
+            <p>
+              Rents Support Team: 
+            </p> 
         </div>
     </details>
   `,
