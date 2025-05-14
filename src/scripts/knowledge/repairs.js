@@ -3480,7 +3480,7 @@ const wcBathorShowerorSinkUnit = new ContentR(
   <h3>Recharge</h3>
     <p>Possible Tenant recharge for damaged items.</p>
 
-  h3>Outcome</h3>
+  <h3>Outcome</h3>
     <p>Log job on T-Mobile</p>
 
   `,
