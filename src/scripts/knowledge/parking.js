@@ -206,7 +206,16 @@ const appealBlueBadge = new ContentP(
   "Appeal a Blue Badge Decision",
   "",
   `
-      
+    <h3>Appeal a Blue Badge Decision</h3>
+    <ul>
+      <li>The customer can request a review of the decision.</li>
+      <li>Add a note on the case outlining any information given by the customer.</li>
+      <li>If the customer wishes to provide any further supporting documents, advise them that they can send them to <a href="mailto:bluebadge@sheffield.gov.uk">bluebadge@sheffield.gov.uk</a>.</li>
+      <li>Give the customer the case reference number for their application and ask them to quote it if sending any further information.</li>
+      <li>Note on the case the advice given to the customer.</li>
+      <li>Advise the customer that the review request has been made.</li>
+      <li>Reallocate the case to Appeals.</li>
+    </ul>  
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -231,7 +240,7 @@ const appealBlueBadge = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "24/03/2025", name: "Andy Walker" }
+  { date: "14/05/2025", name: "Dinah Williams" }
 );
 
 const applyBlueBadge = new ContentP(
@@ -262,18 +271,7 @@ const applyBlueBadge = new ContentP(
         complete an application form giving details of their disability to be 
         assessed under the 'eligible subject to further assessment' criteria.
       </p>
-
-      <h3>Appeal a Blue Badge Decision</h3>
-    <ul>
-      <li>The customer can request a review of the decision.</li>
-      <li>Add a note on the case outlining any information given by the customer.</li>
-      <li>If the customer wishes to provide any further supporting documents, advise them that they can send them to <a href="mailto:bluebadge@sheffield.gov.uk">bluebadge@sheffield.gov.uk</a>.</li>
-      <li>Give the customer the case reference number for their application and ask them to quote it if sending any further information.</li>
-      <li>Note on the case the advice given to the customer.</li>
-      <li>Advise the customer that the review request has been made.</li>
-      <li>Reallocate the case to Appeals.</li>
-    </ul>
-      
+     
       <p>
       <a href="https://www.gov.uk/apply-blue-badge" target="_blank">https://www.gov.uk/apply-blue-badge</a>
       <button type="button" class="dform_widget email-btn dform_widget_type_button"
@@ -305,7 +303,6 @@ const applyBlueBadge = new ContentP(
     <ul> 
     <li>Proof of address, which could be a Council Tax bill, utility bill or bank statement dated within the last 3 months.</li> 
     <li>Proof of your identity, which could be a copy of your passport, drivers licence, birth or marriage certificates.</li> 
-    <li>Proof of any benefits you receive.</li> 
     <li>If you are not using a passport or driving licence for proof you will need to send us a passport standard photograph.</li> 
     </ul>
     </div>
@@ -2102,7 +2099,7 @@ const staffPermit = new ContentP(
   target="_blank">https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.
 </p>
 <p>
-  Please can you reformat the following code to have correct indentations and presentation, please do not alter any wording or spelling as these have been agreed with the service and cannot be changed. For further information, visit 
+  For further information, visit:
   <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
 </p>
 
@@ -2258,8 +2255,6 @@ const tradePermit = new ContentP(
     <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
 
     </p>
-
-
              <button
         type="button"
         class="dform_widget email-btn dform_widget_type_button"
