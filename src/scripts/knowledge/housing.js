@@ -4714,81 +4714,10 @@ const balanceEnquiry = new ContentH(
 <br>
   <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Check%20rent%20balance'"> Send Link </button>
   </p> 
-  <p>
-    Change of circumstances are now online. When you are making changes, remember
-    to click 'Submit'. ID/References may also need to be submitted before any
-    changes are accepted.
-  </p>
-  <p>
-    It is very important that you notify us of any changes in your circumstances
-    so that we can amend your application. We will inform you if this results in
-    your application moving to a different band. Depending on the change you have
-    made, you may be required to resubmit your identification/reference before
-    changes are accepted. We will notify you if this is necessary.
-  </p>
-  <p>
-    If the customer has made recent changes, the changes are likely to be awaiting
-    approval, and no further changes can be made until they are approved.
-  </p>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Accepted ID</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <h3>Proof of ID documents</h3>
-        <ul>
-          <li>Marriage certificate</li>
-          <li>Divorce/Annulment papers</li>
-          <li>
-            Passport (this can be expired, but if the customer is an adult, an adult
-            passport must be produced)
-          </li>
-          <li>
-            Deed poll documentation for name changes (to accompany details of former
-            name, if applicable)
-          </li>
-          <li>Current bus pass with photograph</li>
-          <li>UK resident permit</li>
-          <li>ID card issued by EEA/EU countries</li>
-          <li>Home Office standard acceptance letter</li>
-          <li>Immigration status document</li>
-          <li>NASS 35</li>
-          <li>Citizenship card (with hologram and photo to prove age)</li>
-          <li>Medical card</li>
-          <li>Birth certificate/Adoption certificate</li>
-          <li>Letter from Social Worker/Probation Officer/Solicitor</li>
-          <li>Driving licence</li>
-        </ul>
-        <h3>Proof of Address</h3>
-        <ul>
-          <li>Recent utility bill paid in that person’s name (last quarter)</li>
-          <li>Most recent council tax statement</li>
-          <li>Driving licence</li>
-          <li>Home Office standard acceptance letter</li>
-          <li>Letter from DWP for tax credits</li>
-          <li>Bank statement from within the last 3 months</li>
-          <li>Wage slip from current employer</li>
-          <li>Life assurance/Insurance policies</li>
-          <li>Proof of all other benefits</li>
-        </ul>
-        <h3>Proof of Child Benefit</h3>
-        <ul>
-          <li>Child benefit award letter</li>
-          <li>
-            The last 3 consecutive months of bank statements (Only where the award
-            letter is not available)
-          </li>
-          <li>
-            Universal Credit is also accepted if it includes the child's name on the claim.
-          </li>
-        </ul>
-    </div>
-  </details>
 `,
 {
-  buttonLabel: "",
-  formName: "",
+  buttonLabel: "Check balance",
+  formName: "hou_check_balance",
 },
 { typeKey: "" },
 { typeKey: "rents_information_provided" },
