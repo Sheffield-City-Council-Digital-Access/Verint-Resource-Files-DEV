@@ -2729,7 +2729,7 @@ const customerUnableToPay = new ContentP(
         <p>
           You can warm transfer to:
           <strong>Advisor Note: (Internal number Storm line):</strong>
-          <a href="tel: 87061">87061</a>dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
+          <a href="tel: 87061">87061</a> dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
         </p>
       </div>
     </details>
@@ -3019,7 +3019,7 @@ const howCanIAppeal = new ContentP(
       The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
       If the VRM is clearly incorrect, then you can warm transfer to:<br><br>
       <strong>Advisor Note: (Internal number Storm line):</strong>
-      <a href="tel: 87061">87061</a>dependent on PCN type, so we can investigate it further.
+      <a href="tel: 87061">87061</a> dependent on PCN type, so we can investigate it further.
     </p>
   </div>
 </details>
@@ -3559,7 +3559,8 @@ const unableToResolvePcn = new ContentP(
         <p>
           You can warm transfer to:
            <strong>Advisor Note: (Internal number Storm line):</strong>
-          <a href="tel: 87061">87061</a>dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
+          <a href="tel: 87061">87061</a><br><br>
+          dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
         </p>
       </div>
     </details>
@@ -3573,7 +3574,7 @@ const unableToResolvePcn = new ContentP(
         <p>
           If a customer calls and states enforcement agents are at their property to recover funds, then you can contact us via warm transfer on: 
            <strong>Advisor Note: (Internal number Storm line):</strong>
-          <a href="tel: 87061">87061</a>dependent on PCN type.<br><br>
+          <a href="tel: 87061">87061</a> dependent on PCN type.<br><br>
           If you can, try to get as much information from the customer such as the PCN reference and any background information.
         </p>
         <p>
