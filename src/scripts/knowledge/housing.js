@@ -4909,7 +4909,9 @@ const contactRentsTeam = new ContentH(
             <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-            <p>Goes into process.</p> 
+            <p>
+              Sheltered Housing: 0114 2037603
+            </p> 
         </div>
     </details>
 
