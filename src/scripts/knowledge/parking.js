@@ -3017,7 +3017,7 @@ const howCanIAppeal = new ContentP(
   <div class="accordion-content">
     <p>
       The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
-      If the VRM is clearly incorrect, then you can warm transfer to:
+      If the VRM is clearly incorrect, then you can warm transfer to:<br><br>
       <strong>Advisor Note: (Internal number Storm line):</strong>
       <a href="tel: 87061">87061</a>dependent on PCN type, so we can investigate it further.
     </p>
