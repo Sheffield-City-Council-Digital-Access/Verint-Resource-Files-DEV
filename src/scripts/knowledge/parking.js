@@ -634,6 +634,29 @@ const illegalParking = new ContentP(
       on 01142736255.  If a vehicle is causing an obstruction or blocking acess 
       then advise the customer to contact the police on 101.
     </p>
+
+    <h3>A Customer’s Vehicle Has Been Towed by Us</h3>
+    <p>All vehicles are impounded by:</p>
+    <ul>
+      <li>The Mansfield Group</li>
+      <li>Parkway Drive, Sheffield</li>
+      <li>Tel: <a href="tel: 08706003444"> 0870 6003444</a></li>
+    </ul>
+    <p>
+    The customer will need to contact Mansfield to retrieve their vehicle. They will need to pay the PCN amount to release their vehicle, and then 
+    they can make representations against the PCN if they wish to do so.
+    </p>
+
+    <h3>Incorrectly Parked Vehicles (in Contravention)</h3>
+    <p>
+    Customers can report an incorrectly parked vehicle via our website:<br>
+    <a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank">
+             https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle
+    </a>
+    Report an incorrectly parked vehicle
+    </a>
+    </p>
+
   `,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
@@ -2694,6 +2717,84 @@ const customerUnableToPay = new ContentP(
 			as it will be processed quicker) and send proof of payment. If a card payment
 			was made, the last 4 digits of the card should be provided.
 		</p>
+    <h3>Customer needs more time to pay the PCN</h3>
+    <p>Advise the customer to make an appeal as normal.</p>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>We have offered a certain amount on a recent letter, however, when they go to pay it states a different amount</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          You can warm transfer to:
+          <strong>Advisor Note: (Internal number Storm line):</strong>
+          <a href="tel: 87061">87061</a> dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
+        </p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Customer has a parking or bus lane PCN</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>If you are still unable to resolve the PCN, you can warm transfer to:
+         <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87061">87061</a>
+        </p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Customer has a Clean Air Zone (CAZ) PCN</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>If you are still unable to resolve the PCN, you can warm transfer to:
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87062">87062</a>
+        </p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Contact Details for Enforcement Agents for Customers</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p><strong>Bristow &amp; Sutor</strong><br>
+        Phone: <a href="tel: 03003902010">0300 390 2010</a><br>
+        Text: <a href="tel: 07781488270">07781 488270</a>
+        </p>
+        <p><strong>Dukes</strong><br>
+        Phone: <a href="tel:01785825500">01785 825 500</a><br>
+        Email: <a href="mailto:info@dukeslimited.co.uk">info@dukeslimited.co.uk</a>
+        </p>
+        <p><strong>Equita</strong><br>
+        Phone: <a href="tel:01604628360">01604 628 360</a>
+        </p>
+        <p><strong>Excel</strong><br>
+        Phone: <a href="tel:03303639988">0330 363 9988</a><br>
+        Email: <a href="mailto:info@excelenforcement.co.uk">info@excelenforcement.co.uk</a>
+        </p>
+        <p><strong>Marston</strong><br>
+        Phone: <a href="tel:03333201822">0333 320 1822</a><br>
+        Email: <a href="mailto:generalenquiries@marstongroup.co.uk">generalenquiries@marstongroup.co.uk</a>
+        </p>
+        <p><strong>Newlyn</strong><br>
+        Phone: <a href="tel:01604633001">01604 633001</a><br>
+        Email: <a href="mailto:enquiries@newlynplc.co.uk">enquiries@newlynplc.co.uk</a>
+        </p>
+        <p><strong>Phoenix/CDER</strong><br>
+        Phone: <a href="tel:03004605295">0300 460 5295</a><br>
+        Email: <a href="mailto:info@contactcder.co.uk">info@contactcder.co.uk</a>
+        </p>
+      </div>
+    </details>
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
@@ -2725,11 +2826,11 @@ const customerUnableToPay = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/12/2024", name: "Nathan Smith" }
+  { date: "14/05/2025", name: "Andy Walker" }
 );
 
-const enforcementbaliffenquiries = new ContentP(
-  "enforcementbaliffenquiries",
+const enforcementBaliffEnquiries = new ContentP(
+  "enforcementBaliffEnquiries",
   "Enforcement Baliff Enquiries",
   "Learn about the steps to take if your debt has been referred to enforcement, including how to make payments or challenge the process.",
   `   
@@ -2756,6 +2857,53 @@ const enforcementbaliffenquiries = new ContentP(
       <br>
       Our records are taken from DVLA so the customer may wish to update them.
     </p>
+    <h3>Enforcement Agents are at a Customer’s Property</h3>
+    <p>
+    If a customer calls and states enforcement agents are at their property to recover funds, then you can contact us via warm transfer on: 
+    <strong>Advisor Note: (Internal number):</strong>
+    <a href="tel: 87061">87061</a> (Storm line), dependent on PCN type.<br><br> 
+    If you can, try to get as much information from the customer such as the PCN reference and any background information.
+    </p>
+    <p>
+    If they have grounds to file a Late Witness Statement, then we can request enforcement is placed on hold temporarily to allow them time to do so.
+    </p>
+
+        <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Contact Details for Enforcement Agents for Customers</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p><strong>Bristow &amp; Sutor</strong><br>
+        Phone: <a href="tel:03003902010">0300 390 2010</a><br>
+        Text: <a href="tel:07781488270">07781 488270</a>
+        </p>
+        <p><strong>Dukes</strong><br>
+        Phone: <a href="tel:01785825500">01785 825 500</a><br>
+        Email: <a href="mailto:info@dukeslimited.co.uk">info@dukeslimited.co.uk</a>
+        </p>
+        <p><strong>Equita</strong><br>
+        Phone: <a href="tel:01604628360">01604 628 360</a>
+        </p>
+        <p><strong>Excel</strong><br>
+        Phone: <a href="tel:03303639988">0330 363 9988</a><br>
+        Email: <a href="mailto:info@excelenforcement.co.uk">info@excelenforcement.co.uk</a>
+        </p>
+        <p><strong>Marston</strong><br>
+        Phone: <a href="tel:03333201822">0333 320 1822</a><br>
+        Email: <a href="mailto:generalenquiries@marstongroup.co.uk">generalenquiries@marstongroup.co.uk</a>
+        </p>
+        <p><strong>Newlyn</strong><br>
+        Phone: <a href="tel:01604633001">01604 633001</a><br>
+        Email: <a href="mailto:enquiries@newlynplc.co.uk">enquiries@newlynplc.co.uk</a>
+        </p>
+        <p><strong>Phoenix/CDER</strong><br>
+        Phone: <a href="tel:03004605295">0300 460 5295</a><br>
+        Email: <a href="mailto:info@contactcder.co.uk">info@contactcder.co.uk</a>
+        </p>
+      </div>
+    </details>
+
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
@@ -2787,7 +2935,7 @@ const enforcementbaliffenquiries = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/12/2024", name: "Nathan Smith" }
+  { date: "14/05/2025", name: "Andy Walker" }
 );
 
 const howCanIAppeal = new ContentP(
@@ -2814,6 +2962,130 @@ const howCanIAppeal = new ContentP(
       an online appeal, you can email: <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a>
       explaining the reason for the appeal
     </p>
+
+    <details class="accordion">
+  <summary class="accordion-header">
+    <h3>Customer has received a PCN and wants to challenge / make representations</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      If the case is at the following stages:
+      <ul>
+        <li>PCN issued (parking or camera – bus lane/CAZ)</li>
+        <li>Notice to Owner (NTO)</li>
+        <li>Charge Certificate (CC)</li>
+      </ul>
+      Then they need to do this via <br>
+      <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank"https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice"</a><br><br>
+      If they are unable to do this via the website, then they can appeal via email to:<br>
+      <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a><br>
+      Or via post to:<br>
+      <address>
+      Parking Services,<br>
+      PO Box 3830,<br>
+      Sheffield,<br>
+      S1 9AQ
+      </address><br><br>
+      We are unable to listen to / accept representations over the phone and we are not allowed to accept emails from yourselves as representations.<br><br>
+      If the customer states they are unable to make representations online or via 
+      email then please direct them to family/friends in the first instance or 
+      Citizens Advice (opening times 10am – 4pm): <a href="tel:0808 2787820"> 0808 2787820</a>.<br><br>
+      They also have the option to come to First Point and fill in a form there that will be sent to us and attached to the case.
+    </p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Call back referrals</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      Any call back referrals which are emailed need to please include the following:
+      <ul>
+        <li>Customer's name</li>
+        <li>Contact phone number</li>
+        <li>PCN numbers/VRM</li>
+      </ul>
+      Call back referrals should only be made if the call handler has been unable to contact NPT on the phone.
+    </p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>A PCN has been issued using an incorrect Vehicle Registration Mark (VRM)</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
+      If the VRM is clearly incorrect, then you can warm transfer to:<br><br>
+      <strong>Advisor Note: (Internal number Storm line):</strong>
+      <a href="tel: 87061">87061</a> dependent on PCN type, so we can investigate it further.
+    </p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>What evidence can a driver provide to help them with their PCN?</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <ul>
+      <li>Name is on a PCN for a vehicle they have NEVER owned: Provide a police report for fraud and appeal the PCN.</li>
+      <li>State vehicle has been cloned: Provide photographs of the vehicle and a crime reference number.</li>
+      <li>State vehicle was stolen: Provide police evidence such as a crime reference/incident number.</li>
+      <li>State they were involved in an emergency: Provide proof such as hospital admission or other relevant documentation.</li>
+      <li>State their vehicle broke down: Provide evidence such as mechanic receipts or towing documentation.</li>
+      <li>The registered keeper is now deceased: Provide a copy of the death certificate.</li>
+    </ul>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Customer rented a car and has been told by the hire company they have a PCN but it is not in their name</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      The registered keeper is the only person liable to pay the PCN. When a driver signs a hire agreement, there should be a section in the terms and conditions that states they take liability for PCNs.<br><br>
+      The PCN will be issued to the hire company, and they are liable for the PCN until they have provided a copy of the hire agreement.<br><br>
+      Once the hirer details have been provided and everything is in order, we will transfer liability to the hirer, and the PCN will be re-issued to them so they can pay/appeal as normal.<br><br>
+      If the hire company has already paid the PCN and requested the money from the hirer, the hire company would have to request a refund for us to re-open the case.
+    </p>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Customer has a parking or bus lane PCN</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>If you are still unable to resolve the PCN, you can warm transfer to:
+    <strong>Advisor Note: (Internal number Storm line):</strong> 
+    <a href="tel: 87061">87061</a> 
+  </div>
+  </details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Customer has a Clean Air Zone (CAZ) PCN</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>If you are still unable to resolve the PCN, you can warm transfer to:
+     <strong>Advisor Note: (Internal number Storm line):</strong>
+    <a href="tel: 87062">87062</a> (Internal Number).</p>
+  </div>
+</details>
+
+
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
@@ -2845,7 +3117,7 @@ const howCanIAppeal = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/12/2024", name: "Nathan Smith" }
+  { date: "08/05/2025", name: "Andy Walker" }
 );
 
 const howLongDoIHaveToAppeal = new ContentP(
@@ -2908,6 +3180,104 @@ const multiplepcns = new ContentP(
   "Multiple PCN's",
   "Find out how to challenge multiple PCNs online, including how to submit evidence and use the interactive portal for your appeal.",
   `
+<h4>Case is at Debt Registration – What Are the Customer’s Options?</h4>
+
+<p>If the case is currently at debt registration, this means that we are unable to accept representations from the customer.</p>
+
+<p>Their options moving forward are to either pay the PCN or file a Witness Statement with the Traffic Enforcement Centre.</p>
+
+<p>The reasons for filing a Witness Statement are:</p>
+<ul>
+  <li>Grounds 1: Did not get a ‘notice to owner’ telling you how to make a formal challenge</li>
+  <li>Grounds 2: Made a formal challenge on time but did not get a ‘notice of rejection’</li>
+  <li>Grounds 3: Appealed to an independent tribunal on time but did not get a response</li>
+  <li>Grounds 4: Have proof you’ve paid the penalty charge, such as a credit card statement</li>
+</ul>
+
+<p>To file a Witness Statement, they will need to complete Form TE9.<br>
+Form TE9 can be found at: 
+<a href="https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge">https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge</a></p>
+
+<p>The form must be returned to:<br>
+Traffic Enforcement Centre<br>
+County Court Business Centre<br>
+St Katharine’s House, 21-27 St Katharine’s Street, Northampton, NN1 2LH<br>
+Or email: <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a></p>
+
+<p>If they have any queries, they can contact the Traffic Enforcement Centre:<br>
+<a href="tel:03001231059"> 0300 1231059</a> or <a href="tel: 0300619450"> 0300 619450</a> (9am–5pm)</p>
+
+<hr>
+
+<h4>Case is at Warrant – What Are the Customer’s Options?</h4>
+
+<p>If the case is currently at warrant/enforcement agents, this means that we are unable to accept representations from the customer.</p>
+
+<p>Their options moving forward are to either pay the PCN with the enforcement agents or file a Late Witness Statement with the Traffic Enforcement Centre.</p>
+
+<p>The reasons for filing a Late Witness Statement are:</p>
+<ul>
+  <li>Grounds 1: Did not get a ‘notice to owner’ telling you how to make a formal challenge</li>
+  <li>Grounds 2: Made a formal challenge on time but did not get a ‘notice of rejection’</li>
+  <li>Grounds 3: Appealed to an independent tribunal on time but did not get a response</li>
+  <li>Grounds 4: Have proof you’ve paid the penalty charge, such as a credit card statement</li>
+</ul>
+
+<p>To do this, they will need to complete Forms TE7 and TE9.<br>
+Forms can be found at:<br>
+<a href="https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge">https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge</a><br>
+<a href="https://www.gov.uk/government/publications/form-te7-application-to-file-a-statement-out-of-time">https://www.gov.uk/government/publications/form-te7-application-to-file-a-statement-out-of-time</a></p>
+
+<p>The forms must be returned to:<br>
+Traffic Enforcement Centre<br>
+County Court Business Centre<br>
+St Katharine’s House, 21-27 St Katharine’s Street, Northampton, NN1 2LH<br>
+Or email: <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a></p>
+
+<p>If they have any queries about submitting the application, they can contact the Traffic Enforcement Centre:<br>
+<a href="tel:03001231059">0300 123 1059</a> or <a href="tel: 0300619450">0300 619 450</a> (9am–5pm)</p>
+
+<p>Once they have filed a Late Witness Statement with the Traffic Enforcement Centre, we will write to the enforcement agents and ask them to place enforcement on hold while we wait for TEC to send a revoking order.</p>
+
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "" },
+  { typeKey: "parking_permit_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "06/12/2024", name: "Nathan Smith" }
+);
+
+const debtRegistrationAndWarrantCases = new ContentP(
+  "debtRegistrationAndWarrantCases",
+  "Debt Registration and Warrant Cases",
+  "Find out what happens when a PCN reaches the debt registration or warrant stage, including how to respond and what support is available.",
+  `
     <p>
       Challenges can be made online within 28 days of receiving the original
       ticket. It can take up to 24 hours to appear on the online portal.
@@ -2952,7 +3322,318 @@ const multiplepcns = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/12/2024", name: "Nathan Smith" }
+  { date: "08/05/2025", name: "Andy Walker" }
+);
+
+const debtGuidanceRelatedToPCNs = new ContentP(
+  "debtGuidanceRelatedToPCNs",
+  "Debt Guidance Related To PCN's",
+  "Find out where to get debt advice related to PCNs, including support for Breathing Space, Debt Relief Orders, and mental health crisis assistance.",
+  `
+    <p>This page provides detailed information and resources related to debt guidance, PCN support, and parking-related services in Sheffield.</p>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Here are some resources to help with debt guidance related to PCN's</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <ul>
+          <li><strong><a href="https://www.moneyhelper.org.uk/en?source=mas" target="_blank">Money Advice Service</a></strong></li>
+          <li><strong><a href="https://www.stepchange.org/" target="_blank">StepChange Debt Charity</a></strong><br>Tel: <a href="tel:08001381111">0800 138 1111</a> (Monday to Friday 8am–8pm, Saturday 8am–4pm)</li>
+          <li><strong><a href="https://www.gov.uk/pay-off-debts" target="_blank">GOV.UK – Pay Off Your Debts</a></strong></li>
+          <li><strong><a href="https://nationaldebtline.org/" target="_blank">National Debtline</a></strong><br>Tel: <a href="tel:08088084000">0808 8084000</a> (Monday to Friday 9am–8pm)</li>
+          <li><strong><a href="https://www.citizensadvice.org.uk/" target="_blank">Citizens Advice</a></strong><br>
+            <span>Adviceline (England): <a href="tel:03444111444">03444 111444</a></span><br>
+            <span>Advicelink (Wales): <a href="tel:03444772020">03444 772020</a></span><br>
+            <span>Textphone: <a href="tel:1800103444111445">18001 03444111445</a></span>
+          </li>
+        </ul>
+        <p>If you are struggling to pay, debt advisors may be able to offer you support with Breathing Space through the 
+        Debt Respite Scheme, which offers two types of breathing space:</p>
+        <ul>
+          <li>Standard Breathing Space</li>
+          <li>Mental Health Crisis Breathing Space</li>
+        </ul>
+        <p>Debt advisors can also assist with applying for a Debt Relief Order (DRO) to help manage 
+        debts you cannot pay. More information about DROs is available here:</p>
+        <p><a href="https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers" target="_blank">https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers</a></p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Mental Health Support</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <ul>
+          <li><a href="https://www.rethink.org/advice-and-information" target="_blank">https://www.rethink.org/advice-and-information</a></li>
+          <li><a href="https://www.gov.uk/government/publications/debt-respite-scheme-breathing-space-guidance/debt-respite-scheme-breathing-space-guidance-for-money-advisers" target="_blank">Breathing Space Guidance for Creditors – GOV.UK</a></li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Suspension / Dispensation Requests</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>If a customer needs to suspend parking bays or requests a yellow line dispensation, information can be found here:</p>
+        <ul>
+          <li><a href="https://www.sheffield.gov.uk/parking/request-parking-bay-suspension" target="_blank">https://www.sheffield.gov.uk/parking/request-parking-bay-suspension</a></li>
+          <li><a href="https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation" target="_blank">https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation</a></li>
+        </ul>
+        <p>For questions, customers can contact: <a href="mailto:suspensions@sheffield.gov.uk">suspensions@sheffield.gov.uk</a></p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Taxi/PHV Drivers</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p><strong>Driver wants to be added to the exemption list:</strong></p>
+        <ul>
+          <li>Send a copy of the PHV vehicle licence (showing vehicle registration number, start and end date) to: <a href="mailto:PHV@sheffield.gov.uk">PHV@sheffield.gov.uk</a></li>
+          <li>Note: It must be the vehicle licence, not the driver's licence.</li>
+        </ul>
+
+        <h4>Driver has received a Bus Lane PCN but has a valid PHV licence</h4>
+        <ul>
+          <li>They can make representations via the website (preferred): <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank">https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice</a></li>
+          <li>Alternatively, email the PHV licence and PCN reference to: <a href="mailto:PHV@sheffield.gov.uk">PHV@sheffield.gov.uk</a></li>
+          <li>Important: The licence must cover the date of the contravention to cancel the PCN.</li>
+        </ul>
+
+        <h4>Sheffield City Council PHV driver received a Bus Lane PCN</h4>
+        <ul>
+          <li>Contact Parking Services immediately to check the exemption list (as SCC PHV drivers should automatically be exempt).</li>
+          <li>Alternatively, drivers can appeal online or via email to: <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a></li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Reporting Incorrectly Parked Vehicles</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>Customers can report incorrectly parked vehicles online:</p>
+        <p><a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank">https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle</a></p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Other Parking Enquiries</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>For issues related to:</p>
+        <ul>
+          <li>Machine faults/complaints</li>
+          <li>Car park complaints</li>
+          <li>Refunds (pay and display)</li>
+          <li>Car park suspensions</li>
+          <li>Signage faults</li>
+        </ul>
+        <p>Please send these enquiries to: <a href="mailto:TSOcarparkmaintenance@sheffield.gov.uk">TSOcarparkmaintenance@sheffield.gov.uk</a></p>
+      </div>
+    </details>
+
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "" },
+  { typeKey: "parking_permit_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "08/05/2025", name: "Andy Walker" }
+);
+
+const postReceivedForSomeoneNotLivingAtAddress  = new ContentP(
+  "postReceivedForSomeoneNotLivingAtAddress",
+  "Post Received For Someone Not Living At The Address",
+  "Find out what happens when a PCN is sent to your address but the person does not live at the address.",
+  `
+    <h3>PCN Received For Someone Not Living At The Address</h3>
+    <p>
+    They can write on the envelope ‘not at this address’ and return it to the sender.<br>
+    They can email <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a> with the PCN reference and explain the person does 
+    not live at the address (including any forwarding address, if known).<br>
+    Let them know they are not liable for the PCN and can disregard it.
+    </p>
+
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "" },
+  { typeKey: "parking_permit_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "08/05/2025", name: "Andy Walker" }
+);
+
+const unableToResolvePcn = new ContentP(
+  "unableToResolvePcn",
+  "Unable To Resolve a PCN",
+  "Find out what happens when you are unable to resolve the PCN.",
+  `
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Customer has a parking or bus lane PCN</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>If you are still unable to resolve the PCN, you can warm transfer to:
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87061">87061</a> (Internal Number).</p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Customer has a Clean Air Zone (CAZ) PCN</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>If you are still unable to resolve the PCN, you can warm transfer to:
+         <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87062">87062</a> (Internal Number).</p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>We have offered a certain amount on a recent letter, however, when they go to pay it states a different amount</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          You can warm transfer to:
+           <strong>Advisor Note: (Internal number Storm line):</strong>
+          <a href="tel: 87061">87061</a><br><br>
+          dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
+        </p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Enforcement Agents are at a Customer’s Property</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          If a customer calls and states enforcement agents are at their property to recover funds, then you can contact us via warm transfer on: 
+           <strong>Advisor Note: (Internal number Storm line):</strong>
+          <a href="tel: 87061">87061</a> dependent on PCN type.<br><br>
+          If you can, try to get as much information from the customer such as the PCN reference and any background information.
+        </p>
+        <p>
+          If they have grounds to file a Late Witness Statement, then we can request enforcement is placed on hold temporarily to allow them time to do so.
+        </p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>A PCN has been issued using an incorrect Vehicle Registration Mark (VRM)</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
+          If the VRM is clearly incorrect, then you can warm transfer to:
+          <strong>Advisor Note: (Internal number Storm line):</strong>
+          <a href="tel: 87061"> 87061</a>depending on PCN type so we can investigate it further.
+        </p>
+      </div>
+    </details>
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "" },
+  { typeKey: "parking_permit_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "parking permit",
+      "parking pass",
+      "parking permitt",
+      "parking permt",
+      "parking pemit",
+      "parkin permit",
+      "parking permitt",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "permt",
+      "permmit",
+      "permitt",
+      "pemit",
+      "premit",
+      "TEC",
+      "Fine",
+      "Taxi PCN",
+      "Bailiff",
+    ],
+    categories: ["Parking"],
+  },
+  { date: "09/05/2025", name: "Andy Walker" }
 );
 
 const penaltyChargeNoticePcn = new MenuP(
@@ -2964,11 +3645,15 @@ const penaltyChargeNoticePcn = new MenuP(
     customerPaidTwice,
     customerTriedToPayOnline,
     customerUnableToPay,
-    enforcementbaliffenquiries,
+    enforcementBaliffEnquiries,
     howCanIAppeal,
     howLongDoIHaveToAppeal,
     makingAPayment,
     multiplepcns,
+    debtRegistrationAndWarrantCases,
+    debtGuidanceRelatedToPCNs,
+    postReceivedForSomeoneNotLivingAtAddress,
+    unableToResolvePcn,
   ]
 );
 
