@@ -836,6 +836,7 @@ const registerABirth = new ContentBDMaC(
   <p>Please transfer using the following contact details:</p>
   <ul>
     <li>Mobile (Warm Transfer): <a href="#" class="telephoneNumber" onclick="copyToClipboard('07786 126904')">07786 126904 test3</a></li>
+    <li>Mobile (Warm Transfer): <a href="#" class="telephoneNumber" onclick="copyToClipboard('test2')">0othertest</a></li>
     <li>Form: Log the case using the registrars enquiry button below.</li>
   </ul>
 
