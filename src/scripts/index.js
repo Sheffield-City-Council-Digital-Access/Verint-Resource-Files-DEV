@@ -4707,7 +4707,7 @@ function copyToClipboard(text)
 {
   navigator.clipboard.writeText(text).then(() => 
     {
-      showPopup("Copied to clipboard! " + text);
+      showPopup("Copied " + text);
     }).catch(err => {
       console.error("Failed to copy:", err);
     });
