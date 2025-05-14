@@ -793,7 +793,7 @@ const registerABirth = new ContentBDMaC(
     "registerABirth",
     "Register a Birth",
     "Register a birth",
-
+`
   
     <p> <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death"> https://www.sheffield.gov.uk/births-deaths-marriages/register-death </a></p> 
     
