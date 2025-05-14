@@ -2976,12 +2976,17 @@ const howCanIAppeal = new ContentP(
         <li>Notice to Owner (NTO)</li>
         <li>Charge Certificate (CC)</li>
       </ul>
-      Then they need to do this via the website:<br>
-      <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank">Pay a parking, bus lane or Clean Air Zone Penalty Charge Notice | Sheffield City Council</a><br><br>
+      Then they need to do this via <br>
+      <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank"https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice"</a><br><br>
       If they are unable to do this via the website, then they can appeal via email to:<br>
       <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a><br>
       Or via post to:<br>
-      Parking Services, PO Box 3830, Sheffield, S1 9AQ<br><br>
+      <address>
+      Parking Services,<br>
+      PO Box 3830,<br>
+      Sheffield,<br>
+      S1 9AQ
+      </address><br><br>
       We are unable to listen to / accept representations over the phone and we are not allowed to accept emails from yourselves as representations.<br><br>
       If the customer states they are unable to make representations online or via 
       email then please direct them to family/friends in the first instance or 
@@ -3191,7 +3196,7 @@ const multiplepcns = new ContentP(
 
 <p>To file a Witness Statement, they will need to complete Form TE9.<br>
 Form TE9 can be found at: 
-<a href="https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge">TE9 - Witness statement - unpaid penalty charge</a></p>
+<a href="https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge">https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge</a></p>
 
 <p>The form must be returned to:<br>
 Traffic Enforcement Centre<br>
@@ -3200,7 +3205,7 @@ St Katharine’s House, 21-27 St Katharine’s Street, Northampton, NN1 2LH<br>
 Or email: <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a></p>
 
 <p>If they have any queries, they can contact the Traffic Enforcement Centre:<br>
-<a href="tel:03001231059"> 0300 1231059</a> or <a href="tel:0300619450"> 0300 619450</a> (9am–5pm)</p>
+<a href="tel:03001231059"> 0300 1231059</a> or <a href="tel: 0300619450"> 0300 619450</a> (9am–5pm)</p>
 
 <hr>
 
@@ -3220,8 +3225,8 @@ Or email: <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a></p>
 
 <p>To do this, they will need to complete Forms TE7 and TE9.<br>
 Forms can be found at:<br>
-<a href="https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge">TE9 - Witness statement</a><br>
-<a href="https://www.gov.uk/government/publications/form-te7-application-to-file-a-statement-out-of-time">Form TE7 - Application to file a statement out of time</a></p>
+<a href="https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge">https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge</a><br>
+<a href="https://www.gov.uk/government/publications/form-te7-application-to-file-a-statement-out-of-time">https://www.gov.uk/government/publications/form-te7-application-to-file-a-statement-out-of-time</a></p>
 
 <p>The forms must be returned to:<br>
 Traffic Enforcement Centre<br>
@@ -3230,7 +3235,7 @@ St Katharine’s House, 21-27 St Katharine’s Street, Northampton, NN1 2LH<br>
 Or email: <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a></p>
 
 <p>If they have any queries about submitting the application, they can contact the Traffic Enforcement Centre:<br>
-<a href="tel:03001231059">0300 123 1059</a> or <a href="tel:0300619450">0300 619 450</a> (9am–5pm)</p>
+<a href="tel:03001231059">0300 123 1059</a> or <a href="tel: 0300619450">0300 619 450</a> (9am–5pm)</p>
 
 <p>Once they have filed a Late Witness Statement with the Traffic Enforcement Centre, we will write to the enforcement agents and ask them to place enforcement on hold while we wait for TEC to send a revoking order.</p>
 
@@ -3352,7 +3357,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
         </ul>
         <p>Debt advisors can also assist with applying for a Debt Relief Order (DRO) to help manage 
         debts you cannot pay. More information about DROs is available here:</p>
-        <p><a href="https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers" target="_blank">How to Get a Debt Relief Order (DRO) – GOV.UK</a></p>
+        <p><a href="https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers" target="_blank">https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers</a></p>
       </div>
     </details>
 
@@ -3363,7 +3368,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       </summary>
       <div class="accordion-content">
         <ul>
-          <li><a href="https://www.rethink.org/advice-and-information" target="_blank">Rethink Mental Health Breathing Space</a></li>
+          <li><a href="https://www.rethink.org/advice-and-information" target="_blank">https://www.rethink.org/advice-and-information</a></li>
           <li><a href="https://www.gov.uk/government/publications/debt-respite-scheme-breathing-space-guidance/debt-respite-scheme-breathing-space-guidance-for-money-advisers" target="_blank">Breathing Space Guidance for Creditors – GOV.UK</a></li>
         </ul>
       </div>
@@ -3377,8 +3382,8 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       <div class="accordion-content">
         <p>If a customer needs to suspend parking bays or requests a yellow line dispensation, information can be found here:</p>
         <ul>
-          <li><a href="https://www.sheffield.gov.uk/parking/request-parking-bay-suspension" target="_blank">Request a Parking Bay Suspension | Sheffield City Council</a></li>
-          <li><a href="https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation" target="_blank">Request Yellow Line Dispensation | Sheffield City Council</a></li>
+          <li><a href="https://www.sheffield.gov.uk/parking/request-parking-bay-suspension" target="_blank">https://www.sheffield.gov.uk/parking/request-parking-bay-suspension</a></li>
+          <li><a href="https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation" target="_blank">https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation</a></li>
         </ul>
         <p>For questions, customers can contact: <a href="mailto:suspensions@sheffield.gov.uk">suspensions@sheffield.gov.uk</a></p>
       </div>
@@ -3398,7 +3403,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
 
         <h4>Driver has received a Bus Lane PCN but has a valid PHV licence</h4>
         <ul>
-          <li>They can make representations via the website (preferred): <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank">Pay a parking, bus lane or Clean Air Zone PCN | Sheffield City Council</a></li>
+          <li>They can make representations via the website (preferred): <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank">https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice</a></li>
           <li>Alternatively, email the PHV licence and PCN reference to: <a href="mailto:PHV@sheffield.gov.uk">PHV@sheffield.gov.uk</a></li>
           <li>Important: The licence must cover the date of the contravention to cancel the PCN.</li>
         </ul>
@@ -3418,7 +3423,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       </summary>
       <div class="accordion-content">
         <p>Customers can report incorrectly parked vehicles online:</p>
-        <p><a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank">Report an Incorrectly Parked Vehicle | Sheffield City Council</a></p>
+        <p><a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank">https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle</a></p>
       </div>
     </details>
 
