@@ -393,7 +393,7 @@ const adaptationChase = new ContentH(
   `
   <details class="accordion">
   <summary class="accordion-header">
-    <h3>Different Utility supplier</h3>
+    <h3>Eligibility</h3>
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
@@ -468,7 +468,7 @@ const adaptationChase = new ContentH(
     </summary>
     <div class="accordion-content">
       <p>Tenancy condition 47 states that:</p> 
-      <ul>
+      <ul>//jctest
         <li>You must ask for our permission, and you must not proceed until we give you our permission.</li>
         <li>We will confirm our answer in writing.</li>
         <li>If we refuse permission, we will explain why.</li>
@@ -480,7 +480,7 @@ const adaptationChase = new ContentH(
   </details>
   `,
   { buttonLabel: "Housing Adaptations Request", formName: "hou_adaptations" },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
@@ -536,7 +536,7 @@ const adaptationOther = new ContentH(
     buttonLabel: "Housing Adaptations Request",
     formName: "hou_adaptations",
   },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "repairs_and_investment_information_provided" },
 
   {
@@ -773,7 +773,7 @@ const asbestos = new ContentH(
     buttonLabel: "Raise Housing Decant Enquiry",
     formName: "hou_sustainment_decants",
   },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
@@ -789,7 +789,7 @@ const asbestos = new ContentH(
   { date: "27/02/2025", name: "Nathan Smith" }
 );
 
-const carbonmonoxide = new ContentH(
+const carbonMonoxide = new ContentH(
   "carbonmonoxide",
   "Carbon Monoxide/ What is CO Poisoning",
   "Learn about carbon monoxide poisoning, its symptoms, causes, and immediate actions to take for safety and health.",
@@ -823,6 +823,8 @@ const carbonmonoxide = new ContentH(
   <p>
     If you think there is an immediate danger, call the Gas Emergency Helpline on <a href="tel:0800 111999">0800 111999</a>.
   </p>
+  <p>
+    Alternatively, if there is no immediate danger you can call the repairs team on <a href="tel:0114 2735555">0114 2735555</a>
 
 `,
   {
@@ -852,9 +854,11 @@ const communalAerials = new ContentH(
   `
   <h3>Communal Aerials List</h3>
   <p>
-    <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Communal%20Aerials.aspx" target="_blank">Communal azerials list</a>
+    <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Communal%20Aerials.aspx" target="_blank">Communal aerials list</a>
   </p>
-
+  <p>
+    You can contact the repairs service for communal aeriels on: <a href="tel:0114 2735555">0114 2735555</a>
+  </p>
   <h3>Customers Own Aerial</h3>
   <p>
     This is not a Council Housing Service aerial. We do not offer a maintenance service for customer’s own aerials.
@@ -912,7 +916,7 @@ const communalAreas = new ContentH(
     buttonLabel: "Raise Housing Enquiry ",
     formName: "hou_estates_enquiry",
   },
-  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Information",
@@ -955,7 +959,7 @@ const communalAreasFireSafety = new ContentH(
 
     <p>Bicycles, prams, pushchairs and similar items will not normally be permitted to be stored or located within the internal communal parts unless there is an area capable of storage without causing obstruction.</p>
 
-    <p>You can have a small doormat if it is rubber backed. Edged and trimmed natural plants in ceramic, earthenware or metal pots, as long as they are not placed on stairs or landings which are the means of escape from the building.</p>
+    <p>You can have a small doormat if it is rubber backed. Edged and trimmed natural plants that are maintained in ceramic, earthenware or metal pots, as long as they are not placed on stairs or landings which are the means of escape from the building.</p>
   `,
   {
     buttonLabel: "",
@@ -1402,7 +1406,7 @@ const newAndExistingRepairs = new ContentH(
   </p> 
   `,
   { buttonLabel: "Raise Housing Decant Enquiry", formName: "hou_sustainment_decants" },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "repairs_and_investment_information_provided" },
 
   { type: "Information", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing"] },
@@ -1681,14 +1685,25 @@ const noHeatNoWater = new ContentH(
     To access a supply of heat and hot water please follow the simple steps below: 
   </p>
   <ol> 
-    <li>Does the property have an electricity supply? They will not have access to heat and hot water without it. The customer will need to Dial 105 or visit <a href="www.findmysupplier.energy.co.uk "target="_blank">www.findmysupplier.energy.co.uk</a> to find their current supplier. 
+    <li>Does the property have an electricity supply? They will not have access to heat and hot water without it. The customer will need to Dial 105 or visit <a href="https://www.findmysupplier.energy "target="_blank">https://www.findmysupplier.energy</a> to find their current supplier. 
     <br><button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Find%20My%20Supplier'"> Send Link </button>
  </li>
-
-    <li> The District Heating Meter location may vary but is usually located in the property airing cupboard. Does The Meters Home Screen say ON in the top right corner? Is your heating programmer turned on? </li>
-    <li> To activate an emergency credit, press the blue button, marked ‘Press For Em Credit’ as instructed by the meters home screen. This will allow the tenant to ‘borrow’ credit up to £10.00 which will connect your heat and hot water supply for a short time. This is simply a loan and will need to be repaid on receipt of the prepayment information/number which will be with them shortly. </li>
-    <li> If the Meters screen in blank or shows something similar to ‘D bug’ then the customer can reboot the G6 unit by pressing the blue and orange button together for 10 seconds. </li>
-    <li>If the reboot is unsuccessful or for any other repair, please call the Repairs line on <a href="tel:0114 2735555">0114 2735555</a></li>
+    <li>
+      The District Heating Meter location may vary but is usually located in the property airing cupboard. Does The Meters Home Screen say ON in the top right corner? Is your heating programmer turned on?
+    </li>
+    <li>  
+      To activate an emergency credit, press the blue button, marked ‘Press For Em Credit’ as instructed by the meters home screen. 
+      This will allow the tenant to ‘borrow’ credit up to £10.00 which will connect your heat and hot water supply for a short time. 
+      This is simply a loan and will need to be repaid on receipt of the prepayment information/number which will be with them shortly.<br>
+      <strong>Advisor note</strong>: If the tenant has already reached the £10.00 limit and needs additional funds they can contact the Home Ownership and Revenues Team on: <a href="tel:0114 2735595">0114 2735595</a>.
+      This is a public number and has voicemail if the team is unavailable. They can also be contact by email at: <a href="mailto:RDH@Sheffield.gov.uk">RDH@Sheffield.gov.uk</a>
+    </li>
+    <li>
+      If the Meters screen in blank or shows something similar to ‘D bug’ then the customer can reboot the G6 unit by pressing the blue and orange button together for 10 seconds.
+    </li>
+    <li>  
+      If the reboot is unsuccessful or for any other repair, please call the Repairs line on <a href="tel:0114 2735555">0114 2735555</a>
+    </li>
   </ol>
 
   `,
@@ -1696,8 +1711,8 @@ const noHeatNoWater = new ContentH(
     buttonLabel: "",
     formName: "",
   },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
   { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
   {
     type: "Information",
     keywords: [
@@ -1709,7 +1724,7 @@ const noHeatNoWater = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "10/10/2024", name: "George Whitehouse" }
+  { date: "17/03/2025", name: "Nathan Smith" }
 );
 
 
@@ -1809,7 +1824,7 @@ const assetManagementAndRepairs = new MenuH(
     adaptationChase,
     adaptationOther,
     asbestos,
-    carbonmonoxide,
+    carbonMonoxide,
 	  communalAerials,
 	  communalAreas,
 	  communalAreasFireSafety,
@@ -1840,28 +1855,35 @@ const assetManagementAndRepairs = new MenuH(
 const communalCupboard = new ContentH(
   "communalCupboard",
   "Communal Cupboard and Meter Box Cupboard",
-  "Learn how to access meter boxes and communal cupboards, including key types and where to obtain them for property and communal areas.",
+  "Learn how to access meter box and communal cupboards, including key types and where to obtain them for property and communal areas.",
   `
     <p>
-      Meter boxes cupboard can be inside or outside of the property and the keyhole
-      will be triangular in shape. These will need to purchased from a hardware
+      Meter box cupboard can be inside or outside of the property and the keyhole
+      will be triangular in shape. These will need to be purchased from a hardware
       store as we cannot provide one.
     </p>
     <p>
       If the keyhole is not triangular then it is likely to be cupboard in the
       communal area. These cupboards may contain more than one gas/electric meter
-      and they mostly require a T1 Key that is held in the local Area office.
+      and they mostly require a T1 or an L Key that is held in the local Area office.
+    </p>
+    <p>
+      You can check the barrel of the lock for the code to provide to the Area office which can
+      speed up the process as they will know which key is required.
+    </p>
+    <p>
+      <strong>Advisor Note:</strong> Use the form below to request a communal cupboard key if required.
     </p>
   `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { buttonLabel: "Raise enquiry", formName: "hou_estates_enquiry" },
+  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "estates_and_environmental_information_provided" },
   {
-    type: "Information",
+    type: "Housing",
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Estates and Environments"],
   },
-  { date: "14/10/2024", name: "Omily Parkin" }
+  { date: "17/03/2025", name: "Nathan Smith" }
 );
 
 const communalFireSafety = new ContentH(
@@ -1905,8 +1927,8 @@ const communalFireSafety = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Information",
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
@@ -1922,12 +1944,13 @@ const fencesCouncilHousing = new ContentH(
   `
     <h3>New Fence</h3>
     <p>
-      Installation of fences is the tenants responsibility. The customer will need
-      to have permission to install a new fence.
+      Installation of fences to a house is the tenants responsibility. The customer will need
+      to have permission to install a new fence. However, if it is on communal land or a pathway it will need to go through the estates team by completing the form below.
     </p>
     <h3>Repair to an Existing Fence</h3>
     <p>
-      The Council do not repair tenants' fences. It is the tenant's responsibility.
+      The Council do not repair tenants' fences. It is the tenant's responsibility. However, if it is on communal land or a pathway it 
+      will need to go through the estates team by completing the form below.
     </p>
     <h3>Fallen Fence to be Removed</h3>
     <p>
@@ -1936,27 +1959,14 @@ const fencesCouncilHousing = new ContentH(
     </p>
   `,
   { buttonLabel: "Report Housing Fences", formName: "hou_sustainment_fence" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Information",
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Estates and Environments"],
   },
   { date: "09/10/2024", name: "Elliott Griffiths" }
-);
-
-const garageRequest = new FormH(
-  "garageRequest",
-  "Garages",
-  "Use this section to accept an offer, decant, request a plot application form, purchase or quit a garage.",
-  "hou_sustainment_garage",
-  {
-    type: "Request",
-    keywords: ["Garage"],
-    categories: ["Housing", "Estate"],
-  },
-  { date: "27/02/2025", name: "Nathan Smith" }
 );
 
 const gardenPledgeScheme = new ContentH(
@@ -2007,8 +2017,8 @@ const gardenPledgeScheme = new ContentH(
       </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Information",
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
@@ -2025,7 +2035,6 @@ const estatesAndEnvironments = new MenuH(
     communalCupboard,
     communalFireSafety,
     fencesCouncilHousing,
-    garageRequest,
     gardenPledgeScheme
   ]
 );
@@ -2044,6 +2053,15 @@ const generalCouncilHousing = new ContentH(
     <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices"target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a> <br>
         <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Neighbourhood%20offices'"> Send Link </button>
 
+  </p>
+
+  <h3>Accounts Payable</h3>
+  <p>
+    Purchasing and Payments can be contacted at <a href="tel:0114 2735082">0114 2735082</a>
+  </p>
+<h3>Communications (Journalist / Media enquiries)</h3>
+  <p>
+    Please do not give any information out and refer to the Communications Team <a href="tel:0114 2735538">0114 2735538</a> and <a href="mailto:communications@sheffield.gov.uk">communications@sheffield.gov.uk</a> (Public email address).
   </p>
 
   <h3>Bogus Callers</h3>
@@ -2071,8 +2089,8 @@ const generalCouncilHousing = new ContentH(
   </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "housing_general_transferred_to_service" },
+  { typeKey: "housing_general_information_provided" },
   {
     type: "Information",
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
@@ -2611,6 +2629,11 @@ const leaseholderInformation = new ContentH(
       regardless of whether the breaches are committed by you, your sub-tenant or other parties connected to your sub-tenant.
       You will therefore be responsible for the behaviour of your sub-tenant(s). This would include, for example, ensuring that they do not cause a nuisance to neighbours.
     </p>
+
+    <h3>Contact Details</h3>
+    <p>
+      The leaseholder team can be contacted via <a href="tel:0114 2734468">0114 2734468</a> and <a href="mailto:leaseholdservice@sheffield.gov.uk">leaseholdservice@sheffield.gov.uk</a>.
+    </p>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "repairs_and_investment_information_provided" },
@@ -2833,6 +2856,9 @@ const applicationChanges = new ContentH(
             The last 3 consecutive months of bank statements (Only where the award
             letter is not available)
           </li>
+          <li>
+            Universal Credit is also accepted if it includes the child's name on the claim.
+          </li>
         </ul>
       </div>
     </details>
@@ -2973,7 +2999,8 @@ const applicationChanges = new ContentH(
       <div class="accordion-content">
         <p>
           Present three proof documents to a housing office or First Point, where ID
-          will be copied and saved. The name will be updated in our system.
+          will be copied and saved. The name will be updated in our system. See above within the "Accepted ID" section
+          for valid options of ID that can be used.
         </p>
         <p>
           Alternatively, send the name change in writing along with proof
@@ -3002,7 +3029,7 @@ const applicationChanges = new ContentH(
     </details>
   `,
   { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
-  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "rehousing_services_information_provided" },
   { type: "Apply", keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'], categories: ["Housing", "Rehousing"] },
   { date: "12/02/2025", name: "Nathan Smith" }
@@ -3044,7 +3071,7 @@ const applyForRehousing = new ContentH(
     </p>
   `,
   { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
-  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
@@ -3238,7 +3265,7 @@ const bidding = new ContentH(
           <h3>Main Applicant</h3>
           <p>
             To remove a joint applicant, you must do this online at the Property Shop
-            website.
+            website at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a>
           <br>
           <br>
           <h3>Joint Applicant</h3>
@@ -3965,7 +3992,7 @@ const bidding = new ContentH(
         A Mutual Exchange is where two or more Council or Housing Association tenants can apply to swap
         their homes. The 1985 Housing Act (part 4, section 92) gives tenants this right under certain circumstances.<br><br>
   
-        The Mutual Exchange application form can be accessed online at the Property Shop website and <a href="https://www.sheffield.gov.uk/council-housing/mutual-exchanges" target="_blank">https://www.sheffield.gov.uk/council-housing/mutual-exchanges</a>.
+        The Mutual Exchange application form can be accessed online at the Property Shop website at: <a href="https://www.sheffieldpropertyshop.org.uk/" target="_blank">https://www.sheffieldpropertyshop.org.uk/</a> and the Sheffield City Council website at: <a href="https://www.sheffield.gov.uk/council-housing/mutual-exchanges" target="_blank">https://www.sheffield.gov.uk/council-housing/mutual-exchanges</a>.
         <br>
         <button type="button" class="dform_widget email-btn dform_widget_type_button"
           aria-label="Send link to mutual exchanges page"
@@ -4197,7 +4224,7 @@ const bidding = new ContentH(
       buttonLabel: "Raise Enquiry",
       formName: "hou_rehousing_enquiry",
     },
-    { typeKey: "rehousing_services_transferred_to_service" },
+    { typeKey: "" },
     { typeKey: "rehousing_services_information_provided" },
     {
       type: "Request",
@@ -4228,7 +4255,7 @@ const bidding = new ContentH(
       buttonLabel: "Raise Enquiry ",
       formName: "hou_rehousing_enquiry",
     },
-    { typeKey: "rehousing_services_transferred_to_service" },
+    { typeKey: "" },
     { typeKey: "rehousing_services_information_provided" },
     {
       type: "Request",
@@ -4465,7 +4492,7 @@ const bidding = new ContentH(
       buttonLabel: "Raise Enquiry",
       formName: "hou_rehousing_enquiry",
     },
-    { typeKey: "rehousing_services_transferred_to_service" },
+    { typeKey: "" },
     { typeKey: "rehousing_services_information_provided" },
     {
       type: "Request",
@@ -4532,7 +4559,7 @@ const bidding = new ContentH(
       <div class="accordion-content">
         <p>
           Landlord references should be submitted using the SCC reference form. This can be found online on the 
-          Property Shop website. Customer should select:
+          Property Shop website at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a>. Customer should select:
       </p>
       <ul>
           <li>Information header, select Identification and References</li>
@@ -4736,228 +4763,56 @@ const balanceEnquiry = new ContentH(
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Accepted ID</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        You must provide two forms of identification to prove changes to your
-        application. One must be from the Proof of ID documents list, while the
-        second must provide proof of your current UK address. Photo ID is also
-        required to prove your identity. If you do not have photo ID, you must
-        provide a passport-sized photo accompanied by a birth certificate. Proof
-        of child benefit is only required where children under 16 years of age are
-        being rehoused with you.
-      </p>
-      <h3>Proof of ID documents</h3>
-      <ul>
-        <li>Marriage certificate</li>
-        <li>Divorce/Annulment papers</li>
-        <li>
-          Passport (this can be expired, but if the customer is an adult, an adult
-          passport must be produced)
-        </li>
-        <li>
-          Deed poll documentation for name changes (to accompany details of former
-          name, if applicable)
-        </li>
-        <li>Current bus pass with photograph</li>
-        <li>UK resident permit</li>
-        <li>ID card issued by EEA/EU countries</li>
-        <li>Home Office standard acceptance letter</li>
-        <li>Immigration status document</li>
-        <li>NASS 35</li>
-        <li>Citizenship card (with hologram and photo to prove age)</li>
-        <li>Medical card</li>
-        <li>Birth certificate/Adoption certificate</li>
-        <li>Letter from Social Worker/Probation Officer/Solicitor</li>
-        <li>Driving licence</li>
-      </ul>
-      <h3>Proof of Address</h3>
-      <ul>
-        <li>Recent utility bill paid in that person’s name (last quarter)</li>
-        <li>Most recent council tax statement</li>
-        <li>Driving licence</li>
-        <li>Home Office standard acceptance letter</li>
-        <li>Letter from DWP for tax credits</li>
-        <li>Bank statement from within the last 3 months</li>
-        <li>Wage slip from current employer</li>
-        <li>Life assurance/Insurance policies</li>
-        <li>Proof of all other benefits</li>
-      </ul>
-      <h3>Proof of Child Benefit</h3>
-      <ul>
-        <li>Child benefit award letter</li>
-        <li>
-          The last 3 consecutive months of bank statements (Only where the award
-          letter is not available)
-        </li>
-      </ul>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Annual Renewal</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Under the Allocation Policy, customers will be required to update their
-        application on the anniversary of the date they registered.
-      </p>
-      <p>
-        If applications are not renewed within 42 days when requested, the
-        application may be cancelled.
-      </p>
-      <p>
-        Customers won’t need to submit ID for any changes they make, and this will
-        continue for the time being. This will change in the future.
-      </p>
-      <details class="details-accordion">
-        <summary>
-          Instructions for completing the renewal of your Housing Application
-          online
-        </summary>
-        <div class="details-accordion-content">
-          <p>
-            Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
-            the links from the homepage.
-            <br>
-            <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Sheffield%20Property%20Shop'"> Send Link </button>
-            
-          </p>
-          <p>Click ‘Log into my account’.</p>
-          <p>
-            Enter your login details: Your unique reference number (found on the
-            enclosed letter), your memorable date, and your password. Contact us
-            if you need these.
-          </p>
-          <p>
-            Once logged in, click ‘Update my details’ under the ‘Application
-            renewal required’ heading. Check your information carefully, confirm
-            that the details are correct, and submit the form. You must submit the
-            form even if there are no changes.
-          </p>
-        </div>
-      </details>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Disqualification/Restriction</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The Allocations Policy advises of various circumstances where we will
-        reduce the preference given to applicants on the Housing Register or
-        prevent them from joining the register. These include circumstances such
-        as rent arrears or past/current anti-social behaviour.
-      </p>
-      <p>
-        In the most serious debt cases, the Allocations Policy allows us to place
-        applicants into band E or disqualify a customer from the Housing Register
-        for an initial period of 12 months.
-      </p>
-      <p>A customer can apply for a restriction to be removed if:</p>
-      <ul>
-        <li>
-          They are able to evidence that their behaviour has significantly improved
-          (e.g., paying off arrears in full)
-        </li>
-        <li>They appeal the restriction (disqualification) within 21 days</li>
-        <li>They have exceptional circumstances</li>
-        <li>They need a priority</li>
-      </ul>
-      <p>
-        If an applicant is allowed back on the housing register, they will have to
-        re-register. ID and references will be required unless recently submitted.
-        Usual checks will be carried out and the appropriate band chosen.
-        Applicants will lose their original waiting time.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Assistance with Change of Circumstances</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>Log on using the details below if required.</p>
-      <p>Unique Reference - 1257822</p>
-      <p>Memorable date - 25/12/2012</p>
-      <p>Password - DMrm15</p>
-      <p>
-        Advisor note: You have logged in using dummy login details. Please do not
-        amend anything on screen. Log in if required using the login details above
-        and follow the instructions:
-      </p>
-      <p>Select "My Social Housing" on the left-hand side.</p>
-      <p>
-        Click "Update your details" and navigate through the form using the "Next
-        section" buttons.
-      </p>
-      <p>Please do not submit the application.</p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Exceptions</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        The Allocations Policy advises various circumstances in which we will
-        reduce the preference given to applicants on the Housing Register or
-        prevent them from joining the register. These include circumstances such
-        as rent arrears or past/current anti-social behaviour.
-      </p>
-      <p>
-        An Exception Request allows us to make decisions on whether it is
-        appropriate to waive these restrictions in exceptional circumstances, such
-        as awarding a priority or when an applicant wishes to move to more
-        suitable accommodation using their waiting time due to a change in
-        circumstances.
-      </p>
-      <p>
-        Applicants must demonstrate exceptional circumstances and prove that they
-        have taken action to rectify issues that led to reduced preference or
-        disqualification.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Name Changes</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        Present three proof documents to a housing office or First Point, where ID
-        will be copied and saved. The name will be updated in our system.
-      </p>
-      <p>
-        Alternatively, send the name change in writing along with proof
-        (originals, not photocopies) to <a href="mailto:RegistrationID@sheffield.gov.uk">RegistrationID@sheffield.gov.uk</a>.
-      </p>
-    </div>
-  </details>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Split Applications</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <h3>Main Applicant</h3>
-      <p>
-        To remove a joint applicant, you must do this online at the Property Shop
-        website.
-      </p>
-      <h3>Joint Applicant</h3>
-      <p>
-        Speak to the Registration team to remove your National Insurance Number.
-        You will need to submit a new application and confirm the removal from the
-        previous application.
-      </p>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <h3>Proof of ID documents</h3>
+        <ul>
+          <li>Marriage certificate</li>
+          <li>Divorce/Annulment papers</li>
+          <li>
+            Passport (this can be expired, but if the customer is an adult, an adult
+            passport must be produced)
+          </li>
+          <li>
+            Deed poll documentation for name changes (to accompany details of former
+            name, if applicable)
+          </li>
+          <li>Current bus pass with photograph</li>
+          <li>UK resident permit</li>
+          <li>ID card issued by EEA/EU countries</li>
+          <li>Home Office standard acceptance letter</li>
+          <li>Immigration status document</li>
+          <li>NASS 35</li>
+          <li>Citizenship card (with hologram and photo to prove age)</li>
+          <li>Medical card</li>
+          <li>Birth certificate/Adoption certificate</li>
+          <li>Letter from Social Worker/Probation Officer/Solicitor</li>
+          <li>Driving licence</li>
+        </ul>
+        <h3>Proof of Address</h3>
+        <ul>
+          <li>Recent utility bill paid in that person’s name (last quarter)</li>
+          <li>Most recent council tax statement</li>
+          <li>Driving licence</li>
+          <li>Home Office standard acceptance letter</li>
+          <li>Letter from DWP for tax credits</li>
+          <li>Bank statement from within the last 3 months</li>
+          <li>Wage slip from current employer</li>
+          <li>Life assurance/Insurance policies</li>
+          <li>Proof of all other benefits</li>
+        </ul>
+        <h3>Proof of Child Benefit</h3>
+        <ul>
+          <li>Child benefit award letter</li>
+          <li>
+            The last 3 consecutive months of bank statements (Only where the award
+            letter is not available)
+          </li>
+          <li>
+            Universal Credit is also accepted if it includes the child's name on the claim.
+          </li>
+        </ul>
     </div>
   </details>
 `,
@@ -4965,14 +4820,14 @@ const balanceEnquiry = new ContentH(
   buttonLabel: "",
   formName: "",
 },
-{ typeKey: "rents_transfered_to_service" },
+{ typeKey: "" },
 { typeKey: "rents_information_provided" },
 {
   type: "Request",
   keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
   categories: ["Housing"],
 },
-{ date: "14/10/2024", name: "Omily Parkin" }
+{ date: "17/03/2025", name: "Nathan Smith" }
 );
 
 const contactRentsTeam = new ContentH(
@@ -5163,7 +5018,7 @@ const contactRentsTeam = new ContentH(
     </details>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "Contact Rents Team", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
@@ -5184,7 +5039,7 @@ const arrearsorDebt = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
@@ -5227,7 +5082,7 @@ const references = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "References", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
@@ -5249,7 +5104,7 @@ const rentArrangements = new FormH(
 const rentRefunds = new FormH(
   "rentRefunds",
   "Rent Refunds",
-  "Use this form to chase or request a Rent refund.",
+  "Use this form to chase or request a Rent refund. You must more than 4 weeks in credit to request a refund and the refund will leave the account 4 weeks in credit.",
   "hou_rents_refunds",
   {
     type: "Request",
@@ -5264,6 +5119,21 @@ const rentVariation = new ContentH(
   "Rent Variation",
  "Learn about rent changes, including the annual increase, rent payment methods, and how various charges, including tenant levies and housing benefit adjustments, are handled.", 
   `
+
+  <details class="accordion">
+    <summary class="accordion-header">
+        <h3>Rent Free Weeks</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>The rent-free weeks this year will be weeks commencing:</p>
+        <ul>
+            <li>Monday 16th December 2024</li>
+            <li>Monday 23rd December 2024</li>
+        </ul>
+    </div>
+  </details>
+
   <details class="accordion">
     <summary class="accordion-header">
         <h3>Is your Rent Increasing?</h3>
@@ -5306,18 +5176,13 @@ const rentVariation = new ContentH(
 
 <details class="accordion">
     <summary class="accordion-header">
-        <h3>OHMS Rent System</h3>
+        <h3>OHMS System Issues</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
         <p>
             Any OHMS Rent system issues can be reported through the IT Service Desk, Tel: <a href="tel:0114 2734476">0114 2734476</a>.
         </p>
-        <p>The rent-free weeks this year will be weeks commencing:</p>
-        <ul>
-            <li>Monday 16th December 2024</li>
-            <li>Monday 23rd December 2024</li>
-        </ul>
     </div>
 </details>
 
@@ -5526,7 +5391,7 @@ const rentVariation = new ContentH(
 
 <details class="accordion">
     <summary class="accordion-header">
-        <h3>Standing Orders</h3>
+        <h3>Total Indebtedness</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -5541,7 +5406,7 @@ const rentVariation = new ContentH(
 </details>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "Rent Varitaion", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
@@ -5567,7 +5432,7 @@ const statements = new ContentH(
   </p> 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "Statements", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
@@ -5629,7 +5494,7 @@ const yorkshireWater = new ContentH(
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "rents_transfered_to_service" },
+  { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "Yorkshire Water", keywords: ["Rent", "Water", "Yorkshire"], categories: ["Housing"] },
   { date: "10/03/2025", name: "Nathan Smith" }
@@ -5726,8 +5591,8 @@ const extraCareHousing = new ContentH(
     </ul>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "sheltered_and_supported_transferred_to_service" },
+  { typeKey: "sheltered_and_supported_information_provided" },
   {
     type: "",
     keywords: [
@@ -5773,9 +5638,17 @@ const furnishedAccommodation = new ContentH(
     <p>How it works</p>
     <p>There are three price bands to choose from:</p>
     <ul>
-      <li>Gold - £20 per week (20 points)</li>
-      <li>Silver - £15 per week (15 points)</li>
-      <li>Bronze - £10 per week (10 points)</li>
+      <li>Gold - £23.94 per week (20 points)</li>
+      <li>Silver - £17.96 per week (15 points)</li>
+      <li>Bronze - £11.97 per week (10 points)</li>
+    </ul>
+    <p>Legacy Charging Model (No longer used for New Furnished)</p>
+    <ul>
+      <li>Bedsit - £23.05</li>
+      <li>1 Bed - £26.05</li>
+      <li>2 Bed - £30.05</li>
+      <li>3 Bed - £34.04</li>
+      <li>4 Bed - £43.02</li>
     </ul>
     <p>
       Each piece of furniture or floor covering will have a points value and the
@@ -5863,10 +5736,15 @@ const furnishedAccommodation = new ContentH(
       Search for the customer's address (street) and remember that the same address
       may be on the spreadsheet a few times - look for the most recent entry.
     </p>
+    <h3>Furnished Team</h3>
+    <p>
+      <strong> advisor note: </strong> The Furnished team can be contacted on
+      <a href="tel:0114 2052600">0114 2052600</a>.
+    </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "sheltered_and_supported_transferred_to_service" },
+  { typeKey: "sheltered_and_supported_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -5900,7 +5778,7 @@ const gypsyAndTravellers = new ContentH(
       Sheffield<br>
       S10 4JZ
     </address>
-    <h3>What manages the sites?</h3>
+    <h3>Who manages the sites?</h3>
     <p>
       Both sites are managed by the Housing and Neighbourhood Service Gypsy and
       Traveller Site Management team based at Solpro.
@@ -5944,10 +5822,15 @@ const gypsyAndTravellers = new ContentH(
       roadside encampments or any other kind of unauthorised encampments, on
       <a href="tel:0114 2734651">0114 2734651</a>.
     </p>
+    <h3>Supported Housing</h3>
+    <p>
+        Gypsy Traveller Site Support Officer can be contacted on
+      <a href="tel:0771 1153441">0771 1153441</a>.
+    </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "sheltered_and_supported_transferred_to_service" },
+  { typeKey: "sheltered_and_supported_information_provided" },
   {
     type: "",
     keywords: [
@@ -5968,7 +5851,10 @@ const olderPersonsIndependentLiving = new ContentH(
   "Older Persons Independent Living (OPIL)",
   "Explore Sheltered Housing for older people in Sheffield, offering independent living with support services, security, and communal facilities.",
   `
-    <p>
+  <p>
+      A list of our Our sheltered housing schemes can be found at <a href="https://www.sheffield.gov.uk/housing/our-sheltered-housing-schemes" target="_blank">https://www.sheffield.gov.uk/housing/our-sheltered-housing-schemes</a>
+  </p>
+  <p>
       Sheltered housing is rented accommodation that is specially designed for older
       people who are able to live independently.
     </p>
@@ -6086,7 +5972,7 @@ const olderPersonsIndependentLiving = new ContentH(
     <h3>Register for OPIL Accommodation</h3>
     <p>Applicants should be registered for rehousing.</p>
     <p>
-      You can access OPIL accommodation through the Sheffield Property Shop or call
+      You can access OPIL accommodation through the Sheffield Property Shop at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> or call
       in at any of the local Area Housing Offices.
     </p>
     <p>You can also be referred through:</p>
@@ -6095,10 +5981,19 @@ const olderPersonsIndependentLiving = new ContentH(
       <li>Social Services</li>
       <li>Health Service</li>
     </ul>
+
+    <h3>Contact Details</h3>
+    <p>
+      Sheltered Housing can be contact on <a href="tel:0114 2037030">0114 2037030</a> <a href="mailto:HomesAreaSheltered@sheffield.gov.uk">HomesAreaSheltered@sheffield.gov.uk</a> 
+    </p>
+    <p>
+      Temporary Accommodation can be contact on <a href="tel:0114 2053171">0114 2053171</a> or <a href="tel:0114 2930832">0114 2930832</a> 
+    </p>
+
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
+  { typeKey: "sheltered_and_supported_transferred_to_service" },
+  { typeKey: "sheltered_and_supported_information_provided" },
   {
     type: "",
     keywords: [
@@ -6113,6 +6008,568 @@ const olderPersonsIndependentLiving = new ContentH(
   { date: "15/10/2024", name: "Joe Nixon" }
 );
 
+//It might be worth updating the below to instead be a function that populates to use less code, this would add some complexity however.
+const shelteredWardens = new ContentH(
+  "shelteredWardens",
+  "Sheltered Wardens",
+  "Contact details for Sheltered Wardens.",
+  `
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Balfour House</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          <address>
+            Horner Close,<br>
+            Stocksbridge,<br>
+            S36 1LQ,<br>  
+          </address>
+          <a href="tel:0114 2830285">0114 2830285</a> (Public number, cannot use on the freephone)
+        </p>        
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Blackberry Hamlet</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          <address>
+            Halfway Centre,<br>
+            Mosborough,<br>
+            S20 4TA,<br>  
+          </address>
+          <a href="tel:0114 2482678">0114 2482678</a> (Public number, cannot use on the freephone)
+        </p>        
+      </div>
+    </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Blackwell Court</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Blackwell Place,<br>
+          S2 5PW,<br>
+        </address>
+        <a href="tel:0114 2701682">0114 2701682</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Callow Mount</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Handbank Block,<br>
+          Newfield Green,<br>
+          S14 1PJ,<br>
+        </address>
+        <a href="tel:0114 2647736">0114 2647736</a> (Public number, cannot use on the freephone) <br>
+        Fax: <a href="tel:0114 2358667">0114 2358667</a>
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cambridge Court</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          120 Cambridge Road,<br>
+          Heeley,<br>
+          S8 9SN,<br>  
+        </address>
+        <a href="tel:0114 2586596">0114 2586596</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Charles Square Hamlet including Well Croft</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Charles Square,<br>
+          High Green,<br>
+          S35 4FS,<br>  
+        </address>
+        <a href="tel:0114 2869513">0114 2869513</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cherry Tree Common</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          4 Union Road,<br>
+          Nether Edge,<br>
+          S11 9EF,<br>  
+        </address>
+        <a href="tel:0114 2585634">0114 2585634</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Crabtree Grange</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          191 Crabtree Road,<br>
+          Norwood,<br>
+          S5 7BA,<br>  
+        </address>
+        <a href="tel:0114 2437165">0114 2437165</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Elm Tree House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 37,<br>
+          7 Ridgeway Road,<br>
+          Intake,<br>  
+          S12 2TW,<br> 
+        </address>
+        <a href="tel:0114 2646896">0114 2646896</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Ernest Copley House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Peckham Road,<br>
+          High Green,<br>
+          S35 3JA,<br>  
+        </address>
+        <a href="tel:0114 2848573 ">0114 2848573 </a> (Public number, cannot use on the freephone)
+        Fax: <a href="tel:0114 2869910">0114 2869910</a>
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Ernest Fox House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Lump Lane,<br>
+          Grenoside,<br>
+          S35 9PZ,<br>  
+        </address>
+        <a href="tel:0114 2461011">0114 2461011</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eva Ratcliffe House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Yew Lane,<br>
+          Ecclesfield,<br>
+          S5 9BE,<br>  
+        </address>
+        <a href="tel:0114 2400950">0114 2400950</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Helliwell Court</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 8,<br>
+          Helliwell Lane,<br>
+          Deepcar,<br>
+          S36 2QH,<br>  
+        </address>
+        <a href="tel:0114 2830284">0114 2830284</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Holly Bank</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 23,<br>
+          Mansfield Drive,<br>
+          Intake,<br>
+          S12 2BF,<br>  
+        </address>
+        <a href="tel:0114 2358668">0114 2358668</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>John Trickett House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Bevan Way,<br>
+          Chapeltown,<br>
+          S35 1RL,<br>  
+        </address>
+        <a href="tel:0114 2463644">0114 2463644</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Kinsey Road</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Kinsey Road,<br>
+          High Green,<br>
+          S35 4HP,<br>  
+        </address>
+        <a href="tel:0114 2848613">0114 2848613</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Low Edges</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 177,<br>
+          Low Edges Road,<br>
+          S8 7JG,<br>  
+        </address>
+        <a href="tel:0114 2839356">0114 2839356</a> (Public number, cannot use on the freephone). <br>
+          Alternatively, dial the wardens on their mobiles, <a href="tel:0776 4229571">0776 4229571</a> or <a href="tel:0777 6462885">0777 6462885</a> 
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Lytton Court</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          37 Lytton Drive,<br>
+          Parson Cross,<br>
+          S5 8AZ,<br>  
+        </address>
+        <a href="tel:0114 2315752">0114 2315752</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Manor House </h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          706 Stannington Road, <br>
+          Stannington, <br>
+          S6 6AJ, <br>  
+        </address>
+        <a href="tel:0114 2340218">0114 2340218</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Mount View Lodge</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          194 Derbyshire Lane,<br>
+          Norton,<br>
+          S8 8SE,<br>  
+        </address>
+        <a href="tel:0114 2585327">0114 2585327</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Newgate Close</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Newgate Close,<br>
+          High Green,<br>
+          S35 4PD,<br>  
+        </address>
+        <a href="tel:0114 2869433">0114 2869433</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Newton Croft</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          26 Chapel Street,<br>
+          Woodhouse,<br>
+          S13 7JN,<br>  
+        </address>
+        <a href="tel:0114 2699927">0114 2699927</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Orpen House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 5, <br>
+          2 Mawfa Road, <br>
+          Norton, <br>
+          S14 1AZ, <br>  
+        </address>
+        <a href="tel:0114 2358722">0114 2358722</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Painted Fabrics</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          69 Little Norton Drive,<br>
+          Norton,<br>
+          S8 8HH,<br>  
+        </address>
+        <a href="tel:0114 2746790">0114 2746790</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Park View Lodge</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 10,<br>
+          44 Leader Road,<br>
+          Hillsborough,<br>
+          S6 4GH,<br>
+        </address>
+        <a href="tel:0114 2333788">0114 2333788</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Roscoe Court</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          2 Stanwood Road,<br>
+          Stannington,<br>
+          S6 5JF,<br>  
+        </address>
+        <a href="tel:0114 2347619">0114 2347619</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Springwater House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          44 Cotleigh Crescent,<br>
+          Hackenthorpe,<br>
+          S12 4HT,<br>  
+        </address>
+        <a href="tel:0114 2488296">0114 2488296</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>St Georges Court</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 35,<br>
+          1 Beet Street,<br>
+          Netherthorpe,<br>
+          S3 7GP,<br>  
+        </address>
+        <a href="tel:0114 2762861">0114 2762861</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Sweeney House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 40,<br>
+          Oxley Close,<br>
+          Stocksbridge,<br>
+          S36 1LH,<br>  
+        </address>
+        <a href="tel:0114 2830278">0114 2830278</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Welwyn Court</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Flat 1,<br>
+          71 Jaunty Lane,<br>
+          Gleadless,<br>
+          S12 4DL,<br>  
+        </address>
+        <a href="tel:0114 2358727">0114 2358727</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Westnall House</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <address>
+          Glossop Row,<br>
+          Oughtibridge,<br>
+          S35 0GH,<br>  
+        </address>
+        <a href="tel:0114 2863231">0114 2863231</a> (Public number, cannot use on the freephone)
+      </p>        
+    </div>
+  </details>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "sheltered_and_supported_transferred_to_service" },
+  { typeKey: "sheltered_and_supported_information_provided" },
+  {
+    type: "",
+    keywords: [
+      "Sheltered",
+      "Supported",
+      "Sheltered & Supported",
+      "Sheltered and Supported",
+      "Warden",
+    ],
+    categories: ["Housing", "Sheltered and Supported"],
+  },
+  { date: "12/05/2025", name: "Joseph Coupland" }
+);
+
+
 const shelteredAndSupported = new MenuH(
   "shelteredAndSupported",
   "Sheltered and Supported",
@@ -6121,7 +6578,8 @@ const shelteredAndSupported = new MenuH(
     extraCareHousing,
     furnishedAccommodation,
     gypsyAndTravellers,
-    olderPersonsIndependentLiving
+    olderPersonsIndependentLiving,
+    shelteredWardens
   ]
 );
 
@@ -6210,7 +6668,7 @@ const tenancyEnforcementASB = new ContentH(
     <p>Victim Support may support with target hardening.</p>
   </p>`,
   { buttonLabel: "Raise report", formName: "hou_enforcement_asb" },
-  { typeKey: "tenancy_enforcement_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "tenancy_enforcement_information_provided" },
   { type: "Request", keywords: [], categories: ["Housing"] },
   { date: "14/02/2025", name: "Nathan Smith" }
@@ -6264,8 +6722,7 @@ const fobsandKeys = new ContentH(
   "Find out how to replace lost or stolen keys and fobs, including costs, required ID, and the process for requesting replacements.",
   `
   <p>
-    For lost or stolen keys, there may be a recharge (£5). Locks will only be replaced if the customer agrees to a recharge
-    or if they have a valid crime reference number.
+    Locks will only be replaced if the customer agrees to a recharge or if they have a valid crime reference number.
   </p>
   <p>
     The only exceptions are if the person is Elderly or a Vulnerable person, in which case a Discretionary Decision would need
@@ -6276,7 +6733,7 @@ const fobsandKeys = new ContentH(
     an insurance form.
   </p>
   <p>
-    It is only communal doors that are £5. If it's your own door, it's over £200 recharge from repairs.
+    Lost or stolen keys, there may be a recharge (£5), communal doors are £5. If it's your own door, it's over £200 recharge from repairs.
   </p>
 
   <details class="accordion">
@@ -6377,7 +6834,7 @@ const fobsandKeys = new ContentH(
     </summary>
     <div class="accordion-content">
       <p>
-      Please note: Howden House only deals with Rehousing enquiries and will not be able to help with fobs or keys. 
+      Please note: Howden House will email the relevant area with the fob token code so they can put it into the system.
       List of Area Offices:  <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices "target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
       <br>
         <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Neighbourhood%20offices'"> Send Link </button>
@@ -6386,16 +6843,52 @@ const fobsandKeys = new ContentH(
   </details>
 
   `,
-  { buttonLabel: "Fobs and Keys", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
-  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Fobs and Keys", keywords: ["Tenancy"], categories: ["Housing"] },
-  { date: "06/11/2024", name: "Shahzad Athar" }
+  { date: "19/03/2025", name: "Nathan Smith" }
 );
 
-const untidyGardensCommunalAreas = new FormH(
-  "untidyGardensCommunalAreas",
-  "Untidy gardens and communal areas",
+const garageRequest = new ContentH(
+  "garageRequest",
+  "Garages",
+  "Use this section to accept an offer, decant, request a plot application form, purchase or quit a garage.",
+  `
+    <p>
+      <strong>Advisor note:</strong> For accepting an offer, decanting a garage, purchasing or quitting a garage use the form at the bottom of this page.
+    </p>
+    <h3>Garage and garage plot application form</h3>
+    <p>
+      You will need to complete a Garage Registration form in your local Housing office or post the application to:
+    </p>
+    <address>
+      Sheffield Council Housing Service,<br>
+      PO Box 5967,<br>
+      Sheffield,<br>
+      S2 9GH
+    </address>
+    <p>
+      You can find your nearest local Housing office at: <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices"target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
+    </p>
+    <p>
+      <a href="https://sccextranet.sharepoint.com/:u:/s/CustomerServiceKnowledgeCouncilHousing/ES04xrxIc7VKqUQ33LQjnF8Bx3FDF1Inm-mzsYUJRYii6Q?e=Sw7Yzn"target="_blank">Email garage application template</a>
+    </p>
+  `,
+  { buttonLabel: "Raise Garage Request", formName: "hou_sustainment_garage" },
+  { typeKey: "" },
+  { typeKey: "tenancy_sustainment_information_provided" },
+  {
+    type: "Request",
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
+    categories: ["Housing", "Estates and Environments"],
+  },
+  { date: "24/04/2025", name: "Nathan Smith" }
+);
+
+const gardensUntidyCommunalAreas = new FormH(
+  "gardensUntidyCommunalAreas",
+  "Gardens (Untidy) and communal areas",
   "Report untidy Council gardens and untidy Council communal areas",
   "hou_sustainment_garden",
   {
@@ -6421,8 +6914,8 @@ Streets Ahead, Environmental Services, Local Assistance Scheme<br>
 
   `,
   { buttonLabel: "Parking Permits", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
-  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { typeKey: "" },
+  { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Parking Permits", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "07/11/2024", name: "Shahzad Athar" }
 );
@@ -6453,8 +6946,8 @@ The same document cannot be used more than once (e.g., driving licence as primar
 
   `,
   { buttonLabel: "Name Changes", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
-  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { typeKey: "" },
+  { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Name Changes", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "07/11/2024", name: "Shahzad Athar" }
 );
@@ -6479,6 +6972,10 @@ const permissions = new ContentH(
     <li>Removing internal walls</li>
     <li>Insulation (Walls & Lofts)</li>
     <li>Conservatories (considered on an individual basis)</li>
+    <li>Driveways</li>
+    <li>Hardstandings</li>
+    <li>CCTV</li>
+    <li>Laminate flooring</li>
   </ul>
   <p>
     However, the following are highly unlikely to be granted due to extra maintenance costs and potential structural problems:
@@ -6553,20 +7050,20 @@ const permissions = new ContentH(
       <br>
         Where a tenancy condition requires you to ask for our permission, this means:<br>
         <ul>
-          <li>You must ask for our permission, and you must not proceed until we give you our permission.</li>
-          <li>We will confirm our answer in writing.</li>
-          <li>If we refuse permission, we will explain why.</li>
-          <li>If we give permission, we may attach additional conditions.</li>
-          <li>We may withdraw our permission at any time if you do not comply with the conditions we have made.</li>
-          <li>We will take action against you and/or charge you for any costs incurred if you do not comply with parts a-e above.</li>
+          <li>A. You must ask for our permission, and you must not proceed until we give you our permission.</li>
+          <li>B. We will confirm our answer in writing.</li>
+          <li>C. If we refuse permission, we will explain why.</li>
+          <li>D. If we give permission, we may attach additional conditions.</li>
+          <li>E. We may withdraw our permission at any time if you do not comply with the conditions we have made.</li>
+          <li>We will take action against you and/or charge you for any costs incurred if you do not comply with parts A-E above.</li>
         </ul>
       </blockquote>
     </div>
   </details>
   `,
   { buttonLabel: "Permissions", formName: "hou_sustainment_perm" },
-  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
+  { typeKey: "" },
+  { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Permissions", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "07/03/2025", name: "Nathan Smith" }
 );
@@ -6635,8 +7132,8 @@ const tenancyAgreementRequest = new ContentH(
       </table>
   `,
   { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
-  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { typeKey: "" },
+  { typeKey: "tenancy_sustainment_information_provided" },
   { type: "tenancyAgreementRequest", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "08/11/2024", name: "Shahzad Athar" }
 );
@@ -6968,7 +7465,7 @@ const tenancyConditions = new ContentH(
         <details class="details-accordion">
             <summary>Right to Buy</summary>
             <div class="details-accordion-content">
-                <p>If you have been a council tenant for at least two years (or five years if you became a tenant after 18th January 2005) you will probably have a right to buy your home. You can get more details from the Council's home ownership team.</p>
+                <p>If you have been a council or housing association tenant for at least three years (or five years if you became a tenant after 18th January 2005) you will probably have a right to buy your home. You can get more details from the Council's home ownership team.</p>
             </div>
         </details>
 
@@ -7068,8 +7565,8 @@ const tenancyConditions = new ContentH(
 </details>
 `,
   { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
-  { typeKey: "Tenancy_Sustainment_information_provided" },
-  { typeKey: "Tenancy_Sustainment_transfered_to_service" },
+  { typeKey: "" },
+  { typeKey: "tenancy_sustainment_information_provided" },
   { type: "tenancyAgreementRequest", keywords: ["Tenancy"], categories: ["Housing"] },
   { date: "08/11/2024", name: "Shahzad Athar" }
 );
@@ -7084,7 +7581,8 @@ const tenancySustainment = new MenuH(
     burglarAlarmRequest,
     fencesCouncilHousing,
     fobsandKeys,
-    untidyGardensCommunalAreas,
+    garageRequest,
+    gardensUntidyCommunalAreas,
     housingServiceParkingPermits,
     nameChanges,
     permissions,

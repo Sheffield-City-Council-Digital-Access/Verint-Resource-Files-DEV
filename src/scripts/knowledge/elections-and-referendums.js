@@ -89,7 +89,7 @@ class FormEaR extends CoreEaR {
       </p>
     `,
     { buttonLabel: "", formName: "" },
-    { typeKey: "annual_canvass_transferred_to_service" },
+    { typeKey: "" },
     { typeKey: "annual_canvass_information_provided" },
     {
       type: "Request",
@@ -142,7 +142,7 @@ const ccaCCBorCanvassForms = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
+  { typeKey: "e" },
   { typeKey: "annual_canvass_information_provided" },
   {
     type: "Request",
@@ -221,7 +221,7 @@ const ccaCCBForms = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "annual_canvass_information_provided" },
   {
     type: "Request",
@@ -267,7 +267,7 @@ const informationChangeandHowToUpdateIt = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "annual_canvass_information_provided" },
   {
     type: "Request",
@@ -313,7 +313,7 @@ const lostCCACCBorCanvassForm = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "annual_canvass_information_provided" },
   {
     type: "Request",
@@ -365,7 +365,7 @@ const removalFromRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "annual_canvass_information_provided" },
   {
     type: "Request",
@@ -418,7 +418,7 @@ const studentVoters = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "annual_canvass_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "annual_canvass_information_provided" },
   {
     type: "Request",
@@ -486,7 +486,7 @@ const assistanceForPartiallySightedVoters = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
@@ -512,17 +512,42 @@ const howToCompletePostalVote = new ContentEaR(
   "How to complete Postal Vote",
   "Step-by-step guide on completing a postal vote, including marking, sealing, and returning your ballot securely.",
   `
-    <section class="info-panel" role="region" aria-label="Information panel">
-      <p>
-          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
-      </p>
-    </section>
-    <p>
-      Advisor Note: You can access instructions on how to complete a postal vote via weberos.
+  <p>
+     If you would prefer to return your ballot paper by post rather than going to the polling station you must apply for a postal vote.
+     If you vote by post, your poll card will confirm the address where you have asked us to send your postal vote pack,
+     what to do if you have lost or spoilt all or part of your pack, or if you haven’t received it.
+  </p>
+  <p>It is now possible to apply to vote by post using the government’s online service or by using a paper form requested from us.
+     However, you must now provide your national insurance number as part of the application. Signatures must still be handwritten, not typed in.
+  </p>
+  <p>
+  <a href="https://www.gov.uk/apply-for-a-postal-vote">GOV.UK: Apply for a postal vote</a>
+  </p>
+  <p>
+    You can send a scanned copy of a paper form by email to: 
+    <a href="mailto:electoralservices@sheffield.gov.uk">electoralservices@sheffield.gov.uk</a> 
+    or post the completed form to:
     </p>
+       <address>
+        Electoral Services<br>
+        Town Hall<br>
+        Pinstone Street<br>
+        Sheffield<br>
+        S1 2HH
+      </address>      
+    <p>
+    You can get a replacement for a lost or spoiled ballot paper up to 5pm on polling day from the Town Hall.</p>
+     <section class="info-panel" role="region" aria-label="Information panel">
+    <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+    </p>
+      </section>
+    <p>
+      <Strong>Advisor Note:</Strong> You can also access instructions on how to complete a postal vote via weberos.
+     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
@@ -537,7 +562,7 @@ const howToCompletePostalVote = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/09/2024", name: "Shahzad Athar" }
+  { date: "17/03/2025", name: "Dinah Williams" }
 );
 
 const localElections = new ContentEaR(
@@ -560,7 +585,7 @@ const localElections = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
@@ -617,7 +642,7 @@ const parishElections = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
@@ -683,7 +708,7 @@ const postalVoteNoLongerRequired = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
@@ -725,7 +750,7 @@ const postalVoteReceivedButNotRequested = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
@@ -766,7 +791,7 @@ const postalVoteSendingAbroad = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
@@ -819,7 +844,7 @@ const spoiltorDamagedPostalVote = new ContentEaR(
     <p>We will then re-issue the ballot by post.</p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
@@ -857,7 +882,7 @@ const whereDoIVote = new ContentEaR(
     ></iframe>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
@@ -965,7 +990,7 @@ const frequentlyAskedQuestions = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
@@ -988,7 +1013,6 @@ const electionsAndVoting = new MenuEaR(
   "Information about Voting in these elections can be found here.",
   [
     assistanceForPartiallySightedVoters,
-    howToCompletePostalVote,
     localElections,
     parishElections,
     postalVoteNoLongerRequired,
@@ -1033,8 +1057,8 @@ const applyingForPostalVote = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "postal_or_proxy_voting_transferred_to_service" },
-  { typeKey: "postal_or_proxy_voting_infomation_provided" },
+  { typeKey: "" },
+  { typeKey: "applying_for_postal_vote_infomation_provided" },
   {
     type: "Request",
     keywords: [
@@ -1076,7 +1100,7 @@ const postalProxyVote = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "postal_or_proxy_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "postal_or_proxy_voting_information_provided" },
   {
     type: "Request",
@@ -1119,7 +1143,7 @@ const postalVoteNotReceivedorLost = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "postal_or_proxy_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "postal_or_proxy_voting_information_provided" },
   {
     type: "Request",
@@ -1167,7 +1191,7 @@ const requestproxyVote = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "postal_or_proxy_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "postal_or_proxy_voting_information_provided" },
   {
     type: "Request",
@@ -1208,7 +1232,7 @@ const swappingFromPostalToProxyVoting = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "postal_or_proxy_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "postal_or_proxy_voting_information_provided" },
   {
     type: "Request",
@@ -1252,7 +1276,7 @@ const swappingFromProxyToPostalVoting = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "postal_or_proxy_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "postal_or_proxy_voting_information_provided" },
   {
     type: "Request",
@@ -1291,7 +1315,7 @@ const waiverApplication = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "postal_or_proxy_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "postal_or_proxy_voting_information_provided" },
   {
     type: "Request",
@@ -1318,6 +1342,7 @@ const postalorProxyVoting = new MenuEaR(
   "If you want someone to vote on your behalf, you can choose to vote by proxy.",
   [
     applyingForPostalVote,
+    howToCompletePostalVote,
     postalProxyVote,
     postalVoteNotReceivedorLost,
     requestproxyVote,
@@ -1353,7 +1378,7 @@ const archiveCopies = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1396,7 +1421,7 @@ const changeofAddressForm = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1434,7 +1459,7 @@ const changeofNameonTheRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1484,7 +1509,7 @@ const creditReferencingAgencies = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1514,7 +1539,7 @@ const doINeedToReRegisterEachYear = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1556,7 +1581,7 @@ const doINeedToRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1597,7 +1622,7 @@ const electoralRegisterConfirmationLetter = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1631,7 +1656,7 @@ const includeSomeoneElseontheRegisterForm = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1669,7 +1694,7 @@ const incorrectDetailsOnElectoralRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1714,7 +1739,7 @@ const informationInDifferentFormats = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1748,7 +1773,7 @@ const invitationToRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1791,7 +1816,7 @@ const lostMyInvitationToRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1835,7 +1860,7 @@ const movingHomeorMovedHome = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1880,7 +1905,7 @@ const optOutofTheOpenRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1925,7 +1950,7 @@ const registerToVote = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -1966,7 +1991,7 @@ const requestforEvidenceLetter = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -2008,7 +2033,7 @@ const requestOtherElectionsReferral = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -2054,7 +2079,7 @@ const revisionstoTheElectoralRegister = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -2092,7 +2117,7 @@ const successfulOnlineRegistration = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -2127,7 +2152,7 @@ const useofEmailAddressandPhoneNumber = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "registering_to_vote_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "registering_to_vote_information_provided" },
   {
     type: "Request",
@@ -2199,7 +2224,7 @@ const councillors = new ContentEaR(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
     keywords: [
@@ -2239,7 +2264,7 @@ const electionResults = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
@@ -2280,7 +2305,7 @@ const overSeasVoters = new ContentEaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "elections_and_voting_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "elections_and_voting_information_provided" },
   {
     type: "Request",
@@ -2318,12 +2343,20 @@ const familyTreeorGenealogy = new ContentEaR(
       Properties are then sorted by address order - not by name.
     </p>
     <p>
-      Sheffield Archives may be able to offer more support in this area.
+      Sheffield Archives may be able to offer more support in this area.Contact details below: 
+     <p>Tel: 0114 203 9395 (Sat, Mon, Tues)</p>
+     <p>Tel: 0114 273 4753 (Wed, Thur, Fri, Sat)</p>
+     <address>
+     <p>First Floor, Central Library</p>
+     <p>Surrey Street</p>
+     <p>Sheffield</p>
+     <p>S1 1XZ
     </p>
+    </address>
   `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "" },
+  { buttonLabel: "familyTreeorGenealogy", formName: "" },
+  { typeKey: "familytreeorGenealogy_transfer_to_service" },
+  { typeKey: "familytreeorGenealogy_information_provided" },
   {
     type: "Request",
     keywords: [
@@ -2339,7 +2372,7 @@ const familyTreeorGenealogy = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "28/02/2025", name: "Dinah Williams" }
+  { date: "25/03/2025", name: "Dinah Williams" }
 );
 
 const wards = new ContentEaR(
@@ -2359,7 +2392,7 @@ const wards = new ContentEaR(
       <a href="https://www.sheffield.gov.uk/home/your-city-council/electoral-wards"target="_blank">https://www.sheffield.gov.uk/home/your-city-council/electoral-wards</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Election%20Wards'"> Send Link </button>
     </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Wards", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
   {

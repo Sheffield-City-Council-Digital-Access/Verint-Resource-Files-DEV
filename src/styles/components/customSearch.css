@@ -1,16 +1,16 @@
 #dform_container div.area.find-area-container,
-#dform_container div.area.find-area-container>fieldset>legend {
+#dform_container div.area.find-area-container > fieldset > legend {
   margin: 0 0 3rem;
 }
 
-#dform_container .find-container>div {
+#dform_container .find-container > div {
   display: grid;
   grid-template-columns: minmax(0, 44.5rem) max-content;
   align-items: flex-end;
   justify-content: flex-start;
 }
 
-#dform_container .find-container.small>div {
+#dform_container .find-container.small > div {
   grid-template-columns: minmax(0, 21rem) max-content;
 }
 
@@ -19,9 +19,8 @@
 }
 
 @media screen and (min-width: 800px) {
-  #dform_container .find-container.small>div {
+  #dform_container .find-container.small > div {
     grid-template-columns: minmax(0, 21rem) max-content max-content;
-    ;
   }
 }
 
@@ -50,6 +49,7 @@
 }
 
 #dform_container .dform_widget.find-input.small input,
+#dform_container .helptext,
 #dform_container .dform_widget.find-input .dform_validationMessage {
   width: min(100%, 21rem);
   overflow: visible;
@@ -107,6 +107,6 @@
 
 #dform_container .selected-address-container output,
 #dform_container .locator-selected-address output {
-  margin-left: .6rem;
+  margin-left: 0.6rem;
   font-size: 1.6rem;
 }
