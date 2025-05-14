@@ -2253,6 +2253,3 @@ setInterval(() => {
     const commentary = getRandomCommentary();
     commentaryElement.textContent = commentary;
 }, 3000);
-
-
-
