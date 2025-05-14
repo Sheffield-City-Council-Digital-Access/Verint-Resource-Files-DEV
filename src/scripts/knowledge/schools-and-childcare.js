@@ -703,7 +703,7 @@ const schoolFoodVoucher = new ContentSaC(
               their child already receive Free School Meal?
             </p>
             <p>
-              Take customers name, address ,telephone number, email address and name
+              Take customers name, address, telephone number, email address and name
               of child and email this to
               <a href="mailto:wintergrants@sheffield.gov.uk"
                 >wintergrants@sheffield.gov.uk</a
