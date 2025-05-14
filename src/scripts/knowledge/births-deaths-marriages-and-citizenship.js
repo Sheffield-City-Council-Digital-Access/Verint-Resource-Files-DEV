@@ -273,18 +273,7 @@ const bookingARegistrarWedding = new ContentBDMaC(
 
     </ul>
 
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Legislation%20Contents\`
-    "
->
-    Send link to review further information
-</button>
+
 
     <h3>Non-Refundable Booking Fees</h3>
     <p>When you have completed your ceremony booking you will be required to make payment, this is to reserve the date and time selected, please note this is a non-refundable fee.</p>
@@ -660,7 +649,7 @@ const licensedWeddingVenues = new ContentBDMaC(
     <p>Sheffield has some of the best wedding venues in Yorkshire. From our own Register Office and Town Hall rooms to hotels, galleries theatres and museums and everything in between, there's a venue to suit every couple.</p>
     <h3>Booking a Registrar</h3>
     <p>If you're getting married in Sheffield you need to book a registrar to conduct the ceremony.</p>
-    <p>You will can to booking a registrar via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar</a>. </p>
+    <p>You can book a registrar via <a href="https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar" target="_blank" rel="noopener noreferrer">https://www.sheffield.gov.uk/births-deaths-marriages/book-registrar</a>. </p>
 
 <button
     type="button"
@@ -783,7 +772,7 @@ const reRegisterABirth = new ContentBDMaC(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Make%20an%20appointment%20to%20re-register%20a%20birth\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Make%20an%20appointment%20to%20reregister%20a%20birth\`
     "
 >
     Send link to review further information
@@ -804,7 +793,10 @@ const registerABirth = new ContentBDMaC(
     "registerABirth",
     "Register a Birth",
     "Register a birth",
-    `
+
+  
+    <p> <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death"> https://www.sheffield.gov.uk/births-deaths-marriages/register-death </a></p> 
+    
     <p>
     All births in England, Wales and Northern Ireland must be registered within 42 days of the 
     child being born.<br>
@@ -812,6 +804,7 @@ const registerABirth = new ContentBDMaC(
     If you cannot register the birth in the area where the baby was born, you can go to 
     another register office, and they will send your details to the correct office.
     </p>
+
 
     <p>
     To book an appointment with the Registry Office, visit the 
