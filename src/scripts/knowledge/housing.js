@@ -4808,8 +4808,8 @@ const contactRentsTeam = new ContentH(
         <div class="accordion-content">
             <p>
               Current Arrears North 1: 0114 2057221<br>
-              Current Arrears South 2: 0114 2052923<br><br>
-              Current Arrears North 1: 0114 2052906<br>
+              Current Arrears North 2: 0114 2052923<br><br>
+              Current Arrears South 1: 0114 2052906<br>
               Current Arrears South 2: 0114 2057222<br><br>
               Introductory Tenancy Team: 0114 2052911
             </p>
