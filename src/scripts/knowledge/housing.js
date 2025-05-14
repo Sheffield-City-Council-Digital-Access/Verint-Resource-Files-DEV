@@ -5149,10 +5149,10 @@ const rentVariation = new ContentH(
             by visiting the following links:
         </p>
         <p>
-            <a href="/council-housing/how-rent-is-calculated">How we calculate your rent</a>
+            <a href="https://www.sheffield.gov.uk/council-housing/rents/learn-about-rents/how-we-calculate-rent">How we calculate your rent</a>
         </p>
         <p>
-            <a href="/council-housing/paying-your-rent" data-drupal-link-system-path="node/3140">Paying your rent</a>
+            <a href="https://www.sheffield.gov.uk/council-housing/rents/pay-my-rent">Paying your rent</a>
         </p>
     </div>
 </details>
