@@ -152,7 +152,7 @@ const ccaCCBorCanvassForms = new ContentEaR(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=elecreg\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Elecreg\`
     "
 >
     Send link to review further information
@@ -220,7 +220,7 @@ const ccaCCBForms = new ContentEaR(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=elecreg\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Elecreg\`
     "
 >
     Send link to review further information
@@ -245,7 +245,7 @@ const ccaCCBForms = new ContentEaR(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=elecreg\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Elecreg\`
     "
 >
     Send link to review further information
@@ -357,8 +357,21 @@ const lostCCACCBorCanvassForm = new ContentEaR(
       If the reminders are lost, your home will be visited to check why forms
       haven't been completed. If you can remember your HEF's reference you can
       complete the form at:
-      <a href="https://www.hef-response.co.uk/" target="_blank">https://www.hef-response.co.uk/</a> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=HEF%20Response'"> Send Link </button>
-    </p>
+      
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=HEF%20Response\`
+    "
+>
+    Send link to review further information
+  </button>
+
+   </p>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
