@@ -4768,7 +4768,13 @@ const contactRentsTeam = new ContentH(
               <strong>Service Area:</strong> Customer Services (Housing Call Centre Supervisors)
           </p>
           <p>
-              <strong>Telephone Number:</strong> Tracy Harding: 0114 2053091; Lisa Styring: 0114 2053091
+              <strong>Telephone Number:</strong><br><br>
+              Tracy Harding:<br>
+              Teams: 0114 2053091 or Storm: 71021;<br><br>
+              Lisa Styring:<br>
+              Teams: 0114 2053091 or Storm: 71015;<br><br>
+              Sarah Barry:<br>
+              Storm: 22657
           </p> 
         </div>
     </details>
@@ -4925,13 +4931,13 @@ const contactRentsTeam = new ContentH(
         </summary>
         <div class="accordion-content">
             <p>
-              Rents Support Team: 
+              Rents Support Team: 0114 2052903
             </p> 
         </div>
     </details>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
+  { typeKey: "rents_transferred_to_service" },
   { typeKey: "rents_information_provided" },
   { type: "Contact Rents Team", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
