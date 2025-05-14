@@ -162,8 +162,7 @@ const universalCredit = new ContentH(
         <p>You can do this at:
         <a href="https://www.sheffield.gov.uk/benefits/council-tax-support" 
       </p>
-
-  <button
+<button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
     aria-label="For further information send link"
@@ -175,6 +174,8 @@ const universalCredit = new ContentH(
 >
     Send link to review further information
 </button>
+
+  
     </div>
 </details>
 
