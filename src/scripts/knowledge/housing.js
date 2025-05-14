@@ -56,6 +56,57 @@ class FormH extends CoreH {
 
 //#region Crossregion
 
+const communalFireSafety = new ContentH(
+  "communalFireSafety",
+  "Communal Fire Safety",
+  "Learn about fire safety regulations for communal areas, prohibited items, and permitted placements to ensure clear escape routes and compliance with safety standards.",
+  `
+    <p>
+      Under the Regulatory Reform Order (2005), landlords are required to ensure
+      that fire risk assessments are carried out in any shared areas of any
+      properties they manage. Landlords also need to ensure that any fire escape
+      routes and entrances/exits to properties are clear from trip hazards and items
+      which would prevent exit from the building in the event of an emergency.
+    </p>
+    <p>As such, please do not place in the communal area, items such as:</p>
+    <ul>
+      <li>Chairs and tables</li>
+      <li>Bookcases</li>
+      <li>Loose carpets</li>
+      <li>Curtains, blinds or net curtains</li>
+      <li>Plastic flower pots</li>
+      <li>Petrol containers and gas bottles</li>
+      <li>
+        Motorbikes, mopeds or any other equipment which uses petrol/diesel or gas
+      </li>
+    </ul>
+    <p>
+      If any of these items, or any other item which is felt to be a fire risk, are
+      left in your communal area we will ask residents to remove them. If they
+      remain they will be removed.
+    </p>
+    <p>
+      Bicycles, prams, pushchairs and similar items will not normally be permitted
+      to be stored or located within the internal communal parts unless there is an
+      area capable of storage without causing obstruction.
+    </p>
+    <p>
+      You can have a small doormat if it is rubber backed. Edged and trimmed natural
+      plants in ceramic, earthenware or metal pots, as long as they are not placed
+      on stairs or landings which are the means of escape from the building.
+    </p>
+  `,
+  { buttonLabel: "Raise enquiry", formName: "hou_estates_enquiry" },
+  { typeKey: "" },
+  { typeKey: "estates_and_environmental_information_provided" },
+  {
+    type: "Information",
+    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
+    categories: ["Housing", "Estates and Environments"],
+  },
+  { date: "13/05/2025", name: "Nathan Smith" }
+);
+
 const universalCredit = new ContentH(
   "universalCredit",
   "Universal credit",
@@ -950,50 +1001,7 @@ const communalAreas = new ContentH(
   { date: "27/02/2025", name: "Nathan Smith" }
 );
 
-const communalAreasFireSafety = new ContentH(
-  "communalAreasFireSafety",
-  "Communal Areas Fire Safety",
-  "Understand fire safety rules for communal areas, including prohibited items, storage guidelines, and safe practices for shared spaces.",
-  `
-    <h2>Fire Safety in Communal Areas</h2> 
-
-    <p>Under the Regulatory Reform Order (2005), landlords are required to ensure that fire risk assessments are carried out in any shared areas of any properties they manage. Landlords also need to ensure that any fire escape routes and entrances/exits to properties are clear from trip hazards and items which would prevent exit from the building in the event of an emergency.</p>
-
-    <h3>As such, please do not place in the communal area, items such as: </h3>
-    <ul>
-      <li>Chairs and tables</li>
-      <li>Bookcases</li>
-      <li>Loose carpets</li>
-      <li>Curtains, blinds or net curtains</li>
-      <li>Plastic flower pots</li>
-      <li>Petrol containers and gas bottles</li>
-      <li>Motorbikes, mopeds or any other equipment which uses petrol/diesel or gas</li>
-    </ul>
-    <p>If any of these items, or any other item which is felt to be a fire risk, are left in your communal area we will ask residents to remove them. If they remain they will be removed.</p>
-
-    <p>Bicycles, prams, pushchairs and similar items will not normally be permitted to be stored or located within the internal communal parts unless there is an area capable of storage without causing obstruction.</p>
-
-    <p>You can have a small doormat if it is rubber backed. Edged and trimmed natural plants that are maintained in ceramic, earthenware or metal pots, as long as they are not placed on stairs or landings which are the means of escape from the building.</p>
-  `,
-  {
-    buttonLabel: "",
-    formName: "",
-  },
-  { typeKey: "repairs_and_investment_information_provided" },
-  { typeKey: "repairs_and_investment_information_requested" },
-  {
-    type: "Information",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing"],
-  },
-  { date: "10/10/2024", name: "George Whitehouse" }
-);
+// Communal fire safety is in the cross region section at the top of the area
 
 const decants = new FormH(
   "decants",
@@ -1868,7 +1876,7 @@ const assetManagementAndRepairs = new MenuH(
     carbonMonoxide,
 	  communalAerials,
 	  communalAreas,
-	  communalAreasFireSafety,
+	  communalFireSafety,
     decants,
 	  districtHeating,
 	  doorEntrySystems,
@@ -1927,56 +1935,7 @@ const communalCupboard = new ContentH(
   { date: "17/03/2025", name: "Nathan Smith" }
 );
 
-const communalFireSafety = new ContentH(
-  "communalFireSafety",
-  "Communal Fire Safety",
-  "Learn about fire safety regulations for communal areas, prohibited items, and permitted placements to ensure clear escape routes and compliance with safety standards.",
-  `
-    <p>
-      Under the Regulatory Reform Order (2005), landlords are required to ensure
-      that fire risk assessments are carried out in any shared areas of any
-      properties they manage. Landlords also need to ensure that any fire escape
-      routes and entrances/exits to properties are clear from trip hazards and items
-      which would prevent exit from the building in the event of an emergency.
-    </p>
-    <p>As such, please do not place in the communal area, items such as:</p>
-    <ul>
-      <li>Chairs and tables</li>
-      <li>Bookcases</li>
-      <li>Loose carpets</li>
-      <li>Curtains, blinds or net curtains</li>
-      <li>Plastic flower pots</li>
-      <li>Petrol containers and gas bottles</li>
-      <li>
-        Motorbikes, mopeds or any other equipment which uses petrol/diesel or gas
-      </li>
-    </ul>
-    <p>
-      If any of these items, or any other item which is felt to be a fire risk, are
-      left in your communal area we will ask residents to remove them. If they
-      remain they will be removed.
-    </p>
-    <p>
-      Bicycles, prams, pushchairs and similar items will not normally be permitted
-      to be stored or located within the internal communal parts unless there is an
-      area capable of storage without causing obstruction.
-    </p>
-    <p>
-      You can have a small doormat if it is rubber backed. Edged and trimmed natural
-      plants in ceramic, earthenware or metal pots, as long as they are not placed
-      on stairs or landings which are the means of escape from the building.
-    </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "estates_and_environmental_transferred_to_service" },
-  { typeKey: "estates_and_environmental_information_provided" },
-  {
-    type: "Information",
-    keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
-    categories: ["Housing", "Estates and Environments"],
-  },
-  { date: "14/10/2024", name: "Omily Parkin" }
-);
+// Communal fire safety is in the cross region section at the top of the area
 
 const fencesCouncilHousing = new ContentH(
   "fencesCouncilHousing",
@@ -1998,9 +1957,20 @@ const fencesCouncilHousing = new ContentH(
       Estate Services teams will only remove blown down fences if they are a safety
       hazard.
     </p>
+    <h3>Requesting permission for a fence</h3>
+
+<a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/hou_sustainment_perm?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&sel_permission_about=New permission request&sel_permission_type=Erect a fence">Request permission to erect a fence</a>
   `,
   { buttonLabel: "Report Housing Fences", formName: "hou_sustainment_fence" },
-  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { typeKey: "" },
   { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Information",
@@ -5046,81 +5016,10 @@ const balanceEnquiry = new ContentH(
 </button>
 
   </p> 
-  <p>
-    Change of circumstances are now online. When you are making changes, remember
-    to click 'Submit'. ID/References may also need to be submitted before any
-    changes are accepted.
-  </p>
-  <p>
-    It is very important that you notify us of any changes in your circumstances
-    so that we can amend your application. We will inform you if this results in
-    your application moving to a different band. Depending on the change you have
-    made, you may be required to resubmit your identification/reference before
-    changes are accepted. We will notify you if this is necessary.
-  </p>
-  <p>
-    If the customer has made recent changes, the changes are likely to be awaiting
-    approval, and no further changes can be made until they are approved.
-  </p>
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Accepted ID</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <h3>Proof of ID documents</h3>
-        <ul>
-          <li>Marriage certificate</li>
-          <li>Divorce/Annulment papers</li>
-          <li>
-            Passport (this can be expired, but if the customer is an adult, an adult
-            passport must be produced)
-          </li>
-          <li>
-            Deed poll documentation for name changes (to accompany details of former
-            name, if applicable)
-          </li>
-          <li>Current bus pass with photograph</li>
-          <li>UK resident permit</li>
-          <li>ID card issued by EEA/EU countries</li>
-          <li>Home Office standard acceptance letter</li>
-          <li>Immigration status document</li>
-          <li>NASS 35</li>
-          <li>Citizenship card (with hologram and photo to prove age)</li>
-          <li>Medical card</li>
-          <li>Birth certificate/Adoption certificate</li>
-          <li>Letter from Social Worker/Probation Officer/Solicitor</li>
-          <li>Driving licence</li>
-        </ul>
-        <h3>Proof of Address</h3>
-        <ul>
-          <li>Recent utility bill paid in that person’s name (last quarter)</li>
-          <li>Most recent council tax statement</li>
-          <li>Driving licence</li>
-          <li>Home Office standard acceptance letter</li>
-          <li>Letter from DWP for tax credits</li>
-          <li>Bank statement from within the last 3 months</li>
-          <li>Wage slip from current employer</li>
-          <li>Life assurance/Insurance policies</li>
-          <li>Proof of all other benefits</li>
-        </ul>
-        <h3>Proof of Child Benefit</h3>
-        <ul>
-          <li>Child benefit award letter</li>
-          <li>
-            The last 3 consecutive months of bank statements (Only where the award
-            letter is not available)
-          </li>
-          <li>
-            Universal Credit is also accepted if it includes the child's name on the claim.
-          </li>
-        </ul>
-    </div>
-  </details>
 `,
 {
-  buttonLabel: "",
-  formName: "",
+  buttonLabel: "Check balance",
+  formName: "hou_check_balance",
 },
 { typeKey: "" },
 { typeKey: "rents_information_provided" },
@@ -5164,12 +5063,21 @@ const contactRentsTeam = new ContentH(
             <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-            <p>
-                <strong>Service Area:</strong> Customer Services (Housing Call Centre Supervisors)
-            </p>
-            <p>
-                <strong>Telephone Number:</strong> Tracy Harding: 46 71021; Lisa Styring: 20 53297
-            </p> 
+          <p>
+            <strong>Advisor note: Do not give these numbers out to the public</strong>
+          </p>
+          <p>
+              <strong>Service Area:</strong> Customer Services (Housing Call Centre Supervisors)
+          </p>
+          <p>
+              <strong>Telephone Number:</strong><br><br>
+              Tracy Harding:<br>
+              Teams: 0114 2053091 or Storm: 71021;<br><br>
+              Lisa Styring:<br>
+              Teams: 0114 2053091 or Storm: 71015;<br><br>
+              Sarah Barry:<br>
+              Storm: 22657
+          </p> 
         </div>
     </details>
 
@@ -5200,8 +5108,13 @@ const contactRentsTeam = new ContentH(
             <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-            <p>Goes into process.</p>
-            <p><strong>Now only 4 current arrears teams and 1 new tenancy team</strong></p> 
+            <p>
+              Current Arrears North 1: 0114 2057221<br>
+              Current Arrears North 2: 0114 2052923<br><br>
+              Current Arrears South 1: 0114 2052906<br>
+              Current Arrears South 2: 0114 2057222<br><br>
+              Introductory Tenancy Team: 0114 2052911
+            </p>
         </div>
     </details>
 
@@ -5211,7 +5124,9 @@ const contactRentsTeam = new ContentH(
             <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-            <p>Goes into process.</p>
+          <p>
+            Debt Recovert Team: 0114 2052904
+          </p>
         </div>
     </details>
 
@@ -5305,22 +5220,26 @@ const contactRentsTeam = new ContentH(
             <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-            <p>Goes into process.</p> 
+            <p>
+              Sheltered Housing: 0114 2037603
+            </p> 
         </div>
     </details>
 
     <details class="accordion">
         <summary class="accordion-header">
-            <h3>Sustainment and Support Team</h3>
+            <h3>Rents Support Team</h3>
             <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-            <p>Goes into process.</p> 
+            <p>
+              Rents Support Team: 0114 2052903
+            </p> 
         </div>
     </details>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
+  { typeKey: "rents_transferred_to_service" },
   { typeKey: "rents_information_provided" },
   { type: "Contact Rents Team", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
@@ -5333,7 +5252,7 @@ const arrearsorDebt = new ContentH(
   `
     <p>
       If you would like the removal of a Court Order from your rent account, or to pay for the removal 
-      of the Court Order, then you can either apply direct to the court, or speak to our Court Team.  
+      of the Court Order, then you can either apply direct to the court, or speak to our Court Team on: 0114 2052910.<br>br>
       You will require your court reference number. <br><br>
 
       If the Court Team are happy for the Order to be removed, they will send a letter to the court 
@@ -5341,7 +5260,7 @@ const arrearsorDebt = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
+  { typeKey: "rents_transferred_to_service" },
   { typeKey: "rents_information_provided" },
   { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
