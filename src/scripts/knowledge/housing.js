@@ -4950,7 +4950,7 @@ const arrearsorDebt = new ContentH(
   `
     <p>
       If you would like the removal of a Court Order from your rent account, or to pay for the removal 
-      of the Court Order, then you can either apply direct to the court, or speak to our Court Team.  
+      of the Court Order, then you can either apply direct to the court, or speak to our Court Team on: 0114 2052910.<br>br>
       You will require your court reference number. <br><br>
 
       If the Court Team are happy for the Order to be removed, they will send a letter to the court 
@@ -4958,7 +4958,7 @@ const arrearsorDebt = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "" },
+  { typeKey: "rents_transferred_to_service" },
   { typeKey: "rents_information_provided" },
   { type: "Information", keywords: ["Rent"], categories: ["Housing"] },
   { date: "16/10/2024", name: "Shahzad Athar" }
