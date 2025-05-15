@@ -1317,15 +1317,15 @@ function handleOnReadyKnowledge() {
             <li>Consider using different words or phrases.</li>
           </ul>
           <p>
-            If you're still having trouble, 
             <a href="https://sheffieldcc-it.uk.4me.com/self-service/requests/new/provide_description?template_id=681s" target="_blank">contact us</a>
-            for assistance.
+            for assistance or to recommend abbreviations or acronyms.
           </p>
         `;
       } else {
         noResultsMessage.innerHTML = `
           <h3>No search value entered</h3>
           <p>Enter the information you want to search for.</p>
+          <p>Or click "Main menu" to return back to knowledge.</p>
         `;
       }
 

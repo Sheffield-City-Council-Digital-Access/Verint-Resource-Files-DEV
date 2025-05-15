@@ -184,7 +184,7 @@ const reportPotholeCrack = new FormRaP(
   "report_pothole_crack",
   {
     type: "Report",
-    keywords: ["Pothole", "crack"],
+    keywords: ["Pothole", "crack", "Pot Hole", "Hole", "Pot"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
@@ -579,6 +579,20 @@ const reportHedgePlantGrass = new ContentRaP(
   { date: "28/02/2025", name: "Dinah Williams" }
 );
 
+const reportInvasiveWeeds = new FormRaP(
+  "reportInvasiveWeeds",
+  "Invasive Weeds",
+  "Report problems with invasive weeds such as Japanese Knotweed or Giant Hogweed",
+  "report_invasive_weeds",
+  {
+    type: "Report",
+    keywords: ["Intrusive","Invasive","Weeds", "Japanese","Knotweed", "Giant","Hogweed","Japanese Knotweed", "Giant Hogweed"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "13/05/2025", name: "Sam Coupland" }
+);
+
+
 const reportLitterBin = new ContentRaP(
   "reportLitterBin",
   "Litter bins",
@@ -728,6 +742,7 @@ const roadsAndPavements = new ServiceRaP(
     reportDeadAnimal,
     reportFallenLeaves,
     reportHedgePlantGrass,
+    reportIntrusiveWeeds,
     reportLitterBin,
     reportStreetSignBollard,
     reportTree,
