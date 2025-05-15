@@ -1306,8 +1306,7 @@ const requestproxyVote = new ContentEaR(
 
       or using a paper form.
       <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20a%20proxy%20vote'"> Send Link </button>
-
+      
   <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
