@@ -226,6 +226,7 @@ const appealBlueBadge = new ContentP(
       "Car",
       "blu",
       "bb",
+      "bbadge",
       "blue bad",
       "bdge",
       "appeel",
