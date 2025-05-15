@@ -652,6 +652,20 @@ const illegalParking = new ContentP(
     </a>
     Report an incorrectly parked vehicle
     </a>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20an%20incorrectly%20parked%20vehicle\`
+    "
+>
+    Send link to review further information
+</button>
+
     </p>
 
   `,
@@ -681,7 +695,7 @@ const illegalParking = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/11/2024", name: "Andy walker" }
+  { date: "15/05/2025", name: "Dinah Williams" }
 );
 
 const vehicleObstruction = new ContentP(
@@ -1728,13 +1742,6 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
   </p>
  </div>
 </details>
-
-
-  <p>
-    For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-  </p>
-</div>
 
 <button
     type="button"
@@ -2973,6 +2980,20 @@ const howCanIAppeal = new ContentP(
       </ul>
       Then they need to do this via <br>
       <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank"https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice"</a><br><br>
+
+      <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Pay%20Penalty%20Charge%20Notice\`
+    "
+>
+    Send link to review further information
+</button>
+
       If they are unable to do this via the website, then they can appeal via email to:<br>
       <a href="mailto:parkingservices@sheffield.gov.uk">parkingservices@sheffield.gov.uk</a><br>
       Or via post to:<br>
@@ -3128,8 +3149,19 @@ const howLongDoIHaveToAppeal = new ContentP(
       <br>
       General information relating to the PCN Enforcement is available at: <a href="http://www.patrol-uk.info"target="_blank">http://www.patrol-uk.info</a>
       <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=PCN%20Enforcement'"> Send Link </button>
-
+      
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=PCN%20Enforcement\`
+  "
+  >
+    Send link to review further information
+</button>
 
     </p>
   `,
@@ -3163,7 +3195,7 @@ const howLongDoIHaveToAppeal = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/12/2024", name: "Nathan Smith" }
+  { date: "15/05/2025", name: "Dinah Williams" }
 );
 
 //
@@ -3191,7 +3223,21 @@ const multiplepcns = new ContentP(
 
 <p>To file a Witness Statement, they will need to complete Form TE9.<br>
 Form TE9 can be found at: 
-<a href="https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge">https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge</a></p>
+<a href="https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf">https://assets.publishing.service.gov.uk/media/62e14db38fa8f5649f912647/TE9.pdf</a></p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Unpaid%20Penalty%20Charge\`
+    "
+>
+    Send link to review further information
+</button>
+
 
 <p>The form must be returned to:<br>
 Traffic Enforcement Centre<br>
@@ -3221,7 +3267,34 @@ Or email: <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a></p>
 <p>To do this, they will need to complete Forms TE7 and TE9.<br>
 Forms can be found at:<br>
 <a href="https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge">https://www.gov.uk/government/publications/form-te9-witness-statement-unpaid-penalty-charge</a><br>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Unpaid%20Penalty%20Charge\`
+    "
+>
+    Send link to review further information
+</button>
+
 <a href="https://www.gov.uk/government/publications/form-te7-application-to-file-a-statement-out-of-time">https://www.gov.uk/government/publications/form-te7-application-to-file-a-statement-out-of-time</a></p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Application%20to%20file%20a%20statement%20out%20of%20time\`
+    "
+>
+    Send link to review further information
+</button>
 
 <p>The forms must be returned to:<br>
 Traffic Enforcement Centre<br>
@@ -3335,10 +3408,76 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       <div class="accordion-content">
         <ul>
           <li><strong><a href="https://www.moneyhelper.org.uk/en?source=mas" target="_blank">Money Advice Service</a></strong></li>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Money%20Helper\`
+    "
+>
+    Send link to review further information
+</button>
+
           <li><strong><a href="https://www.stepchange.org/" target="_blank">StepChange Debt Charity</a></strong><br>Tel: <a href="tel:08001381111">0800 138 1111</a> (Monday to Friday 8am–8pm, Saturday 8am–4pm)</li>
+          <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Step%20Change\`
+    "
+>
+    Send link to review further information
+</button>
+
           <li><strong><a href="https://www.gov.uk/pay-off-debts" target="_blank">GOV.UK – Pay Off Your Debts</a></strong></li>
+          <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Pay%20off%20debts\`
+    "
+>
+    Send link to review further information
+</button>
+
           <li><strong><a href="https://nationaldebtline.org/" target="_blank">National Debtline</a></strong><br>Tel: <a href="tel:08088084000">0808 8084000</a> (Monday to Friday 9am–8pm)</li>
+          <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=National%20Debt%20Line\`
+    "
+>
+    Send link to review further information
+</button>
+
           <li><strong><a href="https://www.citizensadvice.org.uk/" target="_blank">Citizens Advice</a></strong><br>
+
+          <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Citizens%20Advice\`
+    "
+>
+    Send link to review further information
+</button>
+
             <span>Adviceline (England): <a href="tel:03444111444">03444 111444</a></span><br>
             <span>Advicelink (Wales): <a href="tel:03444772020">03444 772020</a></span><br>
             <span>Textphone: <a href="tel:1800103444111445">18001 03444111445</a></span>
@@ -3353,6 +3492,18 @@ const debtGuidanceRelatedToPCNs = new ContentP(
         <p>Debt advisors can also assist with applying for a Debt Relief Order (DRO) to help manage 
         debts you cannot pay. More information about DROs is available here:</p>
         <p><a href="https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers" target="_blank">https://www.gov.uk/guidance/debt-relief-orders-guidance-for-debt-advisers</a></p>
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Debt%20relief%20orders\`
+    "
+>
+    Send link to review further information
+</button>
       </div>
     </details>
 
@@ -3364,7 +3515,33 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       <div class="accordion-content">
         <ul>
           <li><a href="https://www.rethink.org/advice-and-information" target="_blank">https://www.rethink.org/advice-and-information</a></li>
+          <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Rethink\`
+    "
+>
+    Send link to review further information
+</button>
+
           <li><a href="https://www.gov.uk/government/publications/debt-respite-scheme-breathing-space-guidance/debt-respite-scheme-breathing-space-guidance-for-money-advisers" target="_blank">Breathing Space Guidance for Creditors – GOV.UK</a></li>
+          <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Debt%20Respite%20Scheme\`
+    "
+>
+    Send link to review further information
+</button>
+
         </ul>
       </div>
     </details>
@@ -3378,7 +3555,33 @@ const debtGuidanceRelatedToPCNs = new ContentP(
         <p>If a customer needs to suspend parking bays or requests a yellow line dispensation, information can be found here:</p>
         <ul>
           <li><a href="https://www.sheffield.gov.uk/parking/request-parking-bay-suspension" target="_blank">https://www.sheffield.gov.uk/parking/request-parking-bay-suspension</a></li>
+          <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Request%20a%20parking%20bay%20suspension\`
+    "
+>
+    Send link to review further information
+</button>
+
           <li><a href="https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation" target="_blank">https://www.sheffield.gov.uk/parking/request-yellow-line-dispensation</a></li>
+          <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Request%20yellow%20line%20dispensation\`
+    "
+>
+    Send link to review further information
+</button>
+
         </ul>
         <p>For questions, customers can contact: <a href="mailto:suspensions@sheffield.gov.uk">suspensions@sheffield.gov.uk</a></p>
       </div>
@@ -3399,6 +3602,19 @@ const debtGuidanceRelatedToPCNs = new ContentP(
         <h4>Driver has received a Bus Lane PCN but has a valid PHV licence</h4>
         <ul>
           <li>They can make representations via the website (preferred): <a href="https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice" target="_blank">https://www.sheffield.gov.uk/parking/pay-penalty-charge-notice</a></li>
+          <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Pay%20Penalty%20Charge%20Notice\`
+    "
+>
+    Send link to review further information
+</button>
+
           <li>Alternatively, email the PHV licence and PCN reference to: <a href="mailto:PHV@sheffield.gov.uk">PHV@sheffield.gov.uk</a></li>
           <li>Important: The licence must cover the date of the contravention to cancel the PCN.</li>
         </ul>
@@ -3419,6 +3635,20 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       <div class="accordion-content">
         <p>Customers can report incorrectly parked vehicles online:</p>
         <p><a href="https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle" target="_blank">https://www.sheffield.gov.uk/parking/report-incorrectly-parked-vehicle</a></p>
+        
+        <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20an%20incorrectly%20parked%20vehicle\`
+    "
+>
+    Send link to review further information
+</button>
+
       </div>
     </details>
 

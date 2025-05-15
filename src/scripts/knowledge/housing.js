@@ -4820,6 +4820,20 @@ const bidding = new ContentH(
         <p>
           Landlord references should be submitted using the SCC reference form. This can be found online on the 
           Property Shop website at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a>. Customer should select:
+
+ <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`
+    "
+>
+    Send link to review further information
+  </button>
+   
       </p>
       <ul>
           <li>Information header, select Identification and References</li>
@@ -4915,7 +4929,7 @@ const bidding = new ContentH(
       keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
       categories: ["Housing"],
     },
-    { date: "07/11/2024", name: "George Whitehouse" }
+    { date: "15/05/2025", name: "Dinah Williams" }
   );
 
   const threeOffersDemotedorDisqualified = new ContentH(
@@ -5052,7 +5066,19 @@ const contactRentsTeam = new ContentH(
             <p>
                 Alternatively, they can complete the online form at <a href="https://www.sheffield.gov.uk/benefits/housing-benefit">https://www.sheffield.gov.uk/benefits/housing-benefit</a>.
               <br>
-                <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20Housing%20Benefit'"> Send Link </button>
+                
+    <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20Housing%20Benefit\`
+    "
+    >
+        Send link to review further information
+   </button>
 
             </p> 
         </div>
@@ -5243,7 +5269,7 @@ const contactRentsTeam = new ContentH(
   { typeKey: "rents_transferred_to_service" },
   { typeKey: "rents_information_provided" },
   { type: "Contact Rents Team", keywords: ["Rent"], categories: ["Housing"] },
-  { date: "16/10/2024", name: "Shahzad Athar" }
+  { date: "15/05/2025", name: "Dinah Williams" }
 );
 
 const arrearsorDebt = new ContentH(
@@ -6088,6 +6114,20 @@ const olderPersonsIndependentLiving = new ContentH(
   `
   <p>
       A list of our Our sheltered housing schemes can be found at <a href="https://www.sheffield.gov.uk/housing/our-sheltered-housing-schemes" target="_blank">https://www.sheffield.gov.uk/housing/our-sheltered-housing-schemes</a>
+
+      <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheltered%20Housing%20Schemes\`
+    "
+>
+    Send link to review further information
+</button>
+
   </p>
   <p>
       Sheltered housing is rented accommodation that is specially designed for older
@@ -6209,6 +6249,20 @@ const olderPersonsIndependentLiving = new ContentH(
     <p>
       You can access OPIL accommodation through the Sheffield Property Shop at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> or call
       in at any of the local Area Housing Offices.
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`
+    "
+>
+    Send link to review further information
+ </button>
+
     </p>
     <p>You can also be referred through:</p>
     <ul>
@@ -7118,6 +7172,20 @@ const garageRequest = new ContentH(
     </address>
     <p>
       You can find your nearest local Housing office at: <a href="https://www.sheffield.gov.uk/council-housing/neighbourhood-offices"target="_blank">https://www.sheffield.gov.uk/council-housing/neighbourhood-offices</a>
+    
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Neighbourhood%20offices\`
+    "
+>
+    Send link to review further information
+</button>
+    
     </p>
     <p>
       <a href="https://sccextranet.sharepoint.com/:u:/s/CustomerServiceKnowledgeCouncilHousing/ES04xrxIc7VKqUQ33LQjnF8Bx3FDF1Inm-mzsYUJRYii6Q?e=Sw7Yzn"target="_blank">Email garage application template</a>
@@ -7131,7 +7199,7 @@ const garageRequest = new ContentH(
     keywords: ['repairs and investmant', 'repears and investment', 'repairs and invesment', 'repair and investement', 'repairs and invesmant'],
     categories: ["Housing", "Estates and Environments"],
   },
-  { date: "24/04/2025", name: "Nathan Smith" }
+  { date: "15/05/2025", name: "Dinah Williams" }
 );
 
 const gardensUntidyCommunalAreas = new FormH(

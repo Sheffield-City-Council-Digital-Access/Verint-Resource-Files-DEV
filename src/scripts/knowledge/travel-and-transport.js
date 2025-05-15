@@ -415,6 +415,20 @@ const disabledPersonsTravelPermit = new ContentTaT(
       You can replace your lost, damaged, or stolen Disabled Person's Pass online by visiting:  
       <a href="https://www.travelsouthyorkshire.com/Disabledreplace/" target="_blank">
       https://www.travelsouthyorkshire.com/Disabledreplace/
+
+   <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Disabled%20Persons%20Travel%20Pass\`
+    "
+>
+    Send link to review further information
+</button>
+   
     </a>. There is a £7 charge for lost or damaged passes. You must provide 
       Proof of Identity that includes your address, such as an official letter, 
       NHS medical card, or utility bill.
