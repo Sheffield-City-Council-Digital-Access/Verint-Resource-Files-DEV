@@ -63,7 +63,11 @@ const emergencyAccommodation = new FormOoH(
     type: "Apply",
     keywords: 
     [
+      'Homeless',
+      'ooh',
+      'accommodation',
       'Emergency accommodation',
+      'accomodation',
       'emergency accomodation',
       'emergncy accomodation',
       'emergancy accommodation',
@@ -84,6 +88,7 @@ const emergencyChildService = new FormOoH(
     type: "Request",
     keywords: 
     [
+      "ooh",
       "children's emergency service",
       'Childrens emergncy service',
       "Childern's emergency service",
@@ -105,6 +110,7 @@ const emergencyAdultService = new FormOoH(
     type: "Request",
     keywords: 
     [
+      "ooh",
       "Adult's emergency service",
       'adults emergancy service',
       "adult's emergncy service",
@@ -126,6 +132,7 @@ const reportAnEmergencyRepair = new FormOoH(
     type: "Report",
     keywords: 
     [
+      "ooh",
       'Report an emergency repair',
       'report an emergncy repair',
       'reprot an emergency repair',

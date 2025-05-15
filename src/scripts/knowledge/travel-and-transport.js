@@ -116,7 +116,20 @@ const zoomZeroFare = new ContentTaT(
     <p>
       You can apply for a new pass or renew an existing one at: <a href="https://www.sheffield.gov.uk/utilities/form/travel-and-transport/apply-childrens-travel-pass-start" target="_blank">https://www.sheffield.gov.uk/utilities/form/travel-and-transport/apply-childrens-travel-pass-start</a> 
       <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Apply%20for%20a%20Childrens%20Travel%20Pass'"> Send Link </button>
+      
+<button
+     type="button"
+     class="dform_widget email-btn dform_widget_type_button"
+     aria-label="For further information send link"
+     onclick="
+     window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+     KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+     }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Childrens%20Travel%20Pass\`
+     "
+ >
+     Send link to review further information
+</button>
+
       <br>
       <br>
       It may take up to 28 days to process your application.
@@ -140,7 +153,20 @@ const zoomZeroFare = new ContentTaT(
         Information on how to replace a misplaced pass can be found at:
         <a href="https://www.travelsouthyorkshire.com/zerofarepass" target="_blank">www.travelsouthyorkshire.com/zerofarepass</a>
         <br>
-        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Zoom%20Zero%20Travel%20Pass'"> Send Link </button>
+
+    <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Zoom%20Zero%20Travel%20Pass\`
+    "
+>
+        Send link to review further information
+    </button>
+
       </p>
       </div>
     </details>
@@ -245,8 +271,12 @@ const zoomZeroFare = new ContentTaT(
       "Zoom Zero Travel Pass",
       "Zoom Zero Fare",
       "zz",
+      "zzt",
+      "zzp",
+      "ztp",
       "zztp",
       "zzf",
+      "tp",
       "childrens travel pass",
       "childrens travel pas",
       "childrens travle pass",
@@ -275,7 +305,7 @@ const zoomZeroFare = new ContentTaT(
     ],
     categories: ["Travel and Transport"],
   },
-  { date: "05/03/2025", name: "Sam Coupland" }
+  { date: "08/05/2025", name: "Dinah Williams" }
 );
 
 const disabledPersonsTravelPermit = new ContentTaT(
@@ -389,6 +419,20 @@ const disabledPersonsTravelPermit = new ContentTaT(
       You can replace your lost, damaged, or stolen Disabled Person's Pass online by visiting:  
       <a href="https://www.travelsouthyorkshire.com/Disabledreplace/" target="_blank">
       https://www.travelsouthyorkshire.com/Disabledreplace/
+
+   <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Disabled%20Persons%20Travel%20Pass\`
+    "
+>
+    Send link to review further information
+</button>
+   
     </a>. There is a £7 charge for lost or damaged passes. You must provide 
       Proof of Identity that includes your address, such as an official letter, 
       NHS medical card, or utility bill.
@@ -448,39 +492,27 @@ const disabledPersonsTravelPermit = new ContentTaT(
   {
     type: "Apply",
     keywords: [
-      "Blue badge application",
-      "bluebadg",
-      "bleu badge",
-      "blue bage",
-      "bluebadje",
-      "blu badge",
-      "badg",
-      "bagde",
-      "badeg",
-      "badje",
-      "badgge",
-      "blu",
-      "bleu",
-      "bluw",
-      "bloue",
-      "bule",
-      "bus",
-      "buss",
-      "bsu",
       "DTP",
+      "DP",
       "DPTP",
       "PTD",
       "TDP",
+      "TP",
       "PDTP",
+      "DTP",
+      "DPT",
+      "DPTP",
+      "MTP",
+      "DP",
+      "DPP",
       "aplication",
       "applcation",
       "applicaton",
       "aplicacion",
       "applucation",
-      "DTP",
-      "DPTP",
-      "MTP",
-      "DP",
+      "bus",
+      "buss",
+      "bsu",
       "Mobility Travel Permit",
       "Mobility Travel Pass",
       "Mobile",

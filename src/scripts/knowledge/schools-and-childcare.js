@@ -129,7 +129,20 @@ const freeSchoolMeals = new ContentSaC(
       Go to the <a href="https://www.selectyourcompliment.co.uk/grocery/" target="_blank">www.selectyourcompliment.co.uk/grocery/</a>
       and follow the instructions below:
       <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Edenred'"> Send Link </button>
+      
+  <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+      KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Edenred\`
+    "
+>
+      Send link to review further information
+   </button>
+
     </p>
     <ol>
       <li>Enter your eCode from the letter</li>
@@ -356,7 +369,7 @@ const freeSchoolMeals = new ContentSaC(
     ],
     categories: ["School and Childcare"],
   },
-  { date: "28/04/2024", name: "Andy Walker" }
+  { date: "08/05/2025", name: "Dinah Williams" }
 );
 
 const fundedEarlyLearning = new ContentSaC(
@@ -423,8 +436,20 @@ const fundedEarlyLearning = new ContentSaC(
       apply to HMRC.
       <a href="https://www.childcarechoices.gov.uk" target="_blank">https://www.childcarechoices.gov.uk</a>
       <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Childcare%20Choicess'"> Send Link </button>
-
+  
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Childcare%20Choices\`
+    "
+>
+    Send link to review further information
+   </button>
+ 
     </p>
     <p>
       From September 2025: <br>
@@ -439,7 +464,20 @@ const fundedEarlyLearning = new ContentSaC(
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice" target="_blank">https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice</a>.
     <br>
-    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Childcare%20funding%20support%20and%20advice'"> Send Link </button>
+    
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Childcare%20funding%20support%20and%20advice\`
+    "
+>
+    Send link to review further information
+ </button>
+
 
     </p>
   `,
@@ -477,7 +515,295 @@ const fundedEarlyLearning = new ContentSaC(
     ],
     categories: ["School and Childcare"],
   },
-  { date: "02/12/2024", name: "Andy Walker" }
+  { date: "08/05/2025", name: "Dinah Williams" }
+);
+
+const schoolFoodVoucher = new ContentSaC(
+  "schoolFoodVoucher",
+  "School Food Voucher",
+  "Find information on how to redeem school food vouchers, eligibility, and troubleshooting for missing or invalid vouchers.",
+  `
+    <p>
+      22,500 letters sent to parents/carers with a unique eCode to exchange for a
+      £15 food voucher to cover them over the half term break (see copy of the
+      letter below under "Draft Letter"
+    </p>
+    <p>
+      The vouchers are provided by a company called Edenred. The same company that
+      provided FSM vouchers over the summer holidays.
+    </p>
+    <p>
+      Parents who receive the letter should go onto the website and redeem their
+      voucher by inputting their 16 digit eCode number. They will be asked which
+      supermarket they want to use the voucher in.
+    </p>
+    <p>
+      Edenred will turn the eCode into an eGift card/voucher with a bar code which
+      will then be emailed to the parent.
+    </p>
+    <p>
+      The parent should download the eGift card/voucher onto their smartphone and
+      this should be presented to the cashier at the supermarket till. Alternatively
+      the voucher can be printed off and a paper copy taken to the supermarket.
+    </p>
+    <p>
+      There is an Edenred User guide and an Edenred Parent FAQ document which are
+      both useful as references, these are available on 
+      <a href="http://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/"target="_blank">www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers</a>
+      <br>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Edenred\`
+    "
+>
+    Send link to review further information
+  </button>
+
+    </p>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Frequently Asked Questions</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <details class="details-accordion">
+          <summary>How do I redeem a voucher and spend it?</summary>
+          <div class="details-accordion-content">
+            <p>Please Note: that vouchers will be awarded at £15 per child</p>
+            <p>
+              You will have received a letter from us, the letter will contain a
+              unique 16 digit eCode the letter with the eCode will tell you how much
+              money the eCode is worth.
+            </p>
+            <p>
+              You need to go online to swap this code for an eGift card (an online
+              voucher).
+            </p>
+            <p>
+              You can redeem your eCode button on the website:
+              <a href="https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers"target="_blank">https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Voucher</a><br>
+                           
+        <button
+              type="button"
+              class="dform_widget email-btn dform_widget_type_button"
+              aria-label="For further information send link"
+              onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Edenred\`
+        "
+        >
+              Send link to review further information
+        </button>
+            
+               <br>
+              or you can visit:
+              <a href="http://www.selectyourcompliment.co.uk" target="_blank">www.selectyourcompliment.co.uk</a>
+              <br>
+      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Childcare%20funding%20support%20and%20advice\`
+    "
+>
+           Send link to review further information
+      </button>
+              
+            </p>
+            <p>Enter the code into the box on the website and click Redeem</p>
+            <ol>
+              <li>Choose your supermarket</li>
+              <li>Choose the amount of money you want to order</li>
+              <li>Click on "Add to basket" to confirm your choices</li>
+              <li>Click on "Checkout" and enter your email address</li>
+              <li>
+                The eGift card (online vouchers) will be sent to your email address
+                within 24 hours
+              </li>
+              <li>If the email does not arrive, check your junk folder</li>
+              <li>The email will have the eGift card in it</li>
+              <li>
+                The eGift card has a barcode or a link to see a barcode online
+              </li>
+            </ol>
+            <p>
+              If you cannot see a barcode it could be because the pictures are not
+              showing. You may need to click on Download images to see the barcode.
+              You will need the barcode to use the eGift card to pay at the
+              supermarket.
+            </p>
+            <p>
+              Take the eGift card (online voucher) into the shop and show it at the
+              till to pay. you can show the eGift card on your mobile phone screen
+              or print it ou.t
+            </p>
+            <p>
+              After you have spent all the money on the eGift card (online voucher)
+              it cannot be used again. Please delete the email or throw away the
+              printed eGift card.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>
+            I dont have a smartphone or computer/laptop or cant access the voucher
+            and cant print it
+          </summary>
+          <div class="details-accordion-content">
+            <p>You can:</p>
+            <ul>
+              <li>
+                Talk the customer through the process over the phone following the
+                "How to redeem a voucher, and spend it".
+              </li>
+              <li>
+                Advise the customer to visit their local library who can help them
+                print the voucher.
+              </li>
+              <li>
+                Take the customer's 16 digit code and redeem the voucher for them
+                online, then print the voucher and post it to their address, however
+                this will cause a delay in their receiving the voucher.
+              </li>
+              <li>
+                The customer could wait till their school has reopened and request
+                assistance
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>I haven't got a voucher for all my children</summary>
+          <div class="details-accordion-content">
+            <p>
+              Due to the protection of Free School Meals this can happen, transfer
+              the call through to the general Free School Meal line where their
+              entitlement can be checked.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>
+            I haven't received a voucher but I feel my children are entitled to Free
+            School Meals
+          </summary>
+          <div class="details-accordion-content">
+            <p>
+              Check if they have applied for Free School Meals previously or does
+              their child already receive Free School Meal?
+            </p>
+            <p>
+              Take customers name, address, telephone number, email address and name
+              of child and email this to
+              <a href="mailto:wintergrants@sheffield.gov.uk"
+                >wintergrants@sheffield.gov.uk</a
+              >
+              with a short explanation for the referral.
+            </p>
+            <p>
+              If not put them through to the general Free School Meals line to make
+              an application, but vouchers are only for those children already
+              registered for Free School Meals
+            </p>
+            <p>
+              If the parent is already registered for Free School Meals we will need
+              to check our information to see whether a voucher was sent out, what
+              address it was sent to, etc, before we can issue a replacement
+              voucher, Refer this to Audrey/Tracey or Sarah C or Annabel H.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>
+            I have not received a voucher for my child - they attend and Oasis
+            Academy School
+          </summary>
+          <div class="details-accordion-content">
+            <p>
+              Unfortunately from the 1st of September Oasis Academy Schools decided
+              to manage their own Free School Meal provisions.
+            </p>
+            <p>
+              We have provided vouchers for all the children at these schools that
+              we were aware of up until the 1st of September, we will not know about
+              the ones that became eligible after the 1st of September.
+            </p>
+            <p>Parents will have to ask schools when they open.</p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>Complex Enquiry</summary>
+          <div class="details-accordion-content">
+            <p>
+              Where possible complex enquiries should be referred to the Fulfilment
+              Team (Audrey/Tracey) who can pass this on to Sarah or Leah when
+              needed.
+            </p>
+          </div>
+        </details>
+      </div>
+    </details>
+  `,
+  {
+    buttonLabel: "Apply for Free School Meals",
+    formName: "apply_school_meals",
+  },
+  { typeKey: "" },
+  { typeKey: "free_school_meals_information_provided" },
+  {
+    type: "Apply",
+    keywords: [
+      "Free School Meals",
+      "Free Schhol Meals",
+      "Fre School Meals",
+      "Free Skool Meals",
+      "Free Shool Meals",
+      "Free Scool Meals",
+      "aply for free school meals",
+      "Applie for Free School Meals",
+      "Aply for Free School Meals",
+      "Apply for Fre School Meals",
+      "Apply for Free Shool Meals",
+      "Apply for Free Schol Meals",
+      "fre",
+      "frea",
+      "frre",
+      "frie",
+      "fee",
+      "scool",
+      "shcool",
+      "scholl",
+      "schol",
+      "schoool",
+      "meels",
+      "meals",
+      "mels",
+      "mealz",
+      "maelz",
+      "meel",
+      "mael",
+      "mial",
+      "mel",
+      "meall",
+      "FSM",
+      "Food",
+      "Food Voucher",
+      "School Food",
+      "School Voucher"
+    ],
+    categories: ["School and Childcare"],
+  },
+  { date: "13/05/2025", name: "Dinah Williams" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
@@ -487,5 +813,5 @@ const schoolsAndChildcare = new ServiceSaC(
   "schoolsAndChildcare",
   "Schools and Childcare",
   `Admissions, catchment areas, find schools, school travel, attendance, childcare and nurseries, teaching jobs…`,
-  [freeSchoolMeals, fundedEarlyLearning]
+  [freeSchoolMeals, fundedEarlyLearning, schoolFoodVoucher]
 );

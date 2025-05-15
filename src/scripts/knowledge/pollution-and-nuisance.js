@@ -81,7 +81,7 @@ const badgerProtection = new ContentPaN(
       offender from owning a dog.
     </p>
     <p>
-      For more information, please visit: <a href="http://www.syorksbadgergroup.org.uk" target="_blank">http://www.syorksbadgergroup.org.uk</a>.
+      For more information, please visit: <a href="https://www.badgertrust.org.uk/" target="_blank">http://https://www.badgertrust.org.uk/</a>.
       <br>
  <button
         type="button"
@@ -90,7 +90,7 @@ const badgerProtection = new ContentPaN(
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=South%20Yorkshire%20Badger%20Group\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Badger%20Trust\`
             "
       >
         Send link to review further information
@@ -1430,7 +1430,20 @@ const honeyBeeTreatment = new ContentPaN(
         Bee keepers may be able to collect Honey Bees, although they are under no obligation to collect the swarm
         You can access information on the Sheffield Beekeepers Association at: <a href="https://sheffieldbeekeepers.org.uk/swarm-of-bees-in-your-garden-or-house/" target="_blank">https://sheffieldbeekeepers.org.uk/swarm-of-bees-in-your-garden-or-house/</a>
         <br>
-        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Environment%20and%20Countryside'"> Send Link </button>
+        
+    <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Environment%20and%20Countryside\`
+    "
+>
+        Send link to review further information
+    </button>
+ 
       </p>
     </section>
     <p>
@@ -1594,7 +1607,7 @@ const honeyBeeTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "08/05/2025", name: "Dinah Williams" }
 );
 
 const ladyBirdsTreatment = new ContentPaN(
