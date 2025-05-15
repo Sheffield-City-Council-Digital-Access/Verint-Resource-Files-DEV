@@ -81,7 +81,7 @@ const badgerProtection = new ContentPaN(
       offender from owning a dog.
     </p>
     <p>
-      For more information, please visit: <a href="http://www.syorksbadgergroup.org.uk" target="_blank">http://www.syorksbadgergroup.org.uk</a>.
+      For more information, please visit: <a href="https://www.badgertrust.org.uk/" target="_blank">http://https://www.badgertrust.org.uk/</a>.
       <br>
  <button
         type="button"
@@ -90,7 +90,7 @@ const badgerProtection = new ContentPaN(
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=South%20Yorkshire%20Badger%20Group\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Badger%20Trust\`
             "
       >
         Send link to review further information
@@ -260,13 +260,13 @@ const bedBugTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Bed Bugs is <strong>£330.00.</strong> This is based on a standard size
+      The treatment cost for Bed Bugs is <strong>£348.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£97.00:</strong>
+      reduced to <strong>£102:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -276,7 +276,7 @@ const bedBugTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <details class="accordion">
@@ -416,7 +416,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong>
+      reduced to <strong>£70:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -426,7 +426,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.800 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <details class="accordion">
@@ -497,11 +497,11 @@ const bumbleBeesTreatment = new ContentPaN(
     <p>
       If the pests are located in a communal area (The area that is shared by multiple Council Housing properties) or 
       required treatment for a domestic properties such as Council Housing, Housing Association, Privately Owned, Private Rented,
-      then the treatment cost for Bumble Bees is <strong>£75.50.</strong>
+      then the treatment cost for Bumble Bees is <strong>£79.20.</strong>
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50.</strong>
+      reduced to <strong>£61.20.</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -511,7 +511,7 @@ const bumbleBeesTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
         <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <h3>Nests Up High</h3>
@@ -633,7 +633,7 @@ const carpetBeetlesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50.</strong>
+      reduced to <strong>£70.00.</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -643,7 +643,7 @@ const carpetBeetlesTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <details class="accordion">
@@ -743,7 +743,7 @@ const clusterFliesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
+      reduced to £70:
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -753,7 +753,7 @@ const clusterFliesTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -818,13 +818,13 @@ const cockroachesTreatment = new ContentPaN(
     </section>
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Cockroaches is <strong>£330.00.</strong> This is based on a standard size
+      The treatment cost for Cockroaches is <strong>£348.00.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£97.00:</strong>
+      reduced to <strong>£102:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -834,7 +834,7 @@ const cockroachesTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39. This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -898,24 +898,23 @@ const cricketsTreatment = new ContentPaN(
       </p>
     </section>
     <h3>Cost for Treatment</h3>
+
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+       The treatment cost for crickets will be on request. We will send your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survery and provide a quote. 
+      </p>
+    </section>
+
     <p>
-      The treatment cost for crickets is <strong>£110.00.</strong> This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
-    </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong>
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -979,24 +978,23 @@ const dermestesBeetlesTreatment = new ContentPaN(
       </p>
     </section>
     <h3>Cost for Treatment</h3>
+    
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+       The treatment cost will be on request. We will send your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survey and provide a quote. 
+      </p>
+    </section>
+
     <p>
-      The treatment cost for Dermestes Beetles is £110.00. This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
-    </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1033,7 +1031,7 @@ const fleasTreatment = new ContentPaN(
     </p>
     <p>
       If you are in receipt of one of the benefits listed below, the treatment cost
-      will be reduced to <strong>£69.50</strong>.
+      will be reduced to <strong>£70:00</strong>.
     </p>
     <ul>
       <li>Housing Benefit</li>
@@ -1047,7 +1045,7 @@ const fleasTreatment = new ContentPaN(
       property.
     </p>
     <h3>Call Out Charges</h3>
-    <p>All prices contain a call out fee of £39.00.</p>
+    <p>All prices contain a call out fee of £40.80.</p>
     <p>
       If we attend the property and the officer is unable to complete the treatment,
       the call out charge will be applied.
@@ -1173,7 +1171,7 @@ const fliesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong>
+      reduced to <strong>£70.00:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1183,7 +1181,7 @@ const fliesTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39.00. This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1338,24 +1336,22 @@ const furBeetlesTreatment = new ContentPaN(
       </p>
     </section>
     <h3>Cost for Treatment</h3>
+
+     <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+       The treatment cost will be on request. We will send your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survey and provide a quote. 
+      </p>
+    </section>
     <p>
-      The treatment cost for Fur Beetles is <strong>£110.00.</strong> This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
-    </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong>
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1385,13 +1381,13 @@ const gardenAntsTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Garden Ants is <strong>£75.50.</strong> This is based on a standard size
+      The treatment cost for Garden Ants is <strong>£79.20.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong>
+      reduced to <strong>£61.20:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1401,7 +1397,7 @@ const gardenAntsTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1434,7 +1430,20 @@ const honeyBeeTreatment = new ContentPaN(
         Bee keepers may be able to collect Honey Bees, although they are under no obligation to collect the swarm
         You can access information on the Sheffield Beekeepers Association at: <a href="https://sheffieldbeekeepers.org.uk/swarm-of-bees-in-your-garden-or-house/" target="_blank">https://sheffieldbeekeepers.org.uk/swarm-of-bees-in-your-garden-or-house/</a>
         <br>
-        <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Environment%20and%20Countryside'"> Send Link </button>
+        
+    <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Environment%20and%20Countryside\`
+    "
+>
+        Send link to review further information
+    </button>
+ 
       </p>
     </section>
     <p>
@@ -1598,7 +1607,7 @@ const honeyBeeTreatment = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "27/11/2024", name: "Nathan Smith" }
+  { date: "08/05/2025", name: "Dinah Williams" }
 );
 
 const ladyBirdsTreatment = new ContentPaN(
@@ -1607,24 +1616,23 @@ const ladyBirdsTreatment = new ContentPaN(
   "Details about ladybird treatment, including costs and available discounts for individuals receiving specific benefits.",
   `
     <h3>Cost for Treatment</h3>
+    
+     <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+       The treatment cost will be on request. We will send your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survey and provide a quote. 
+      </p>
+    </section>
+
     <p>
-      The treatment cost for Ladybirds is <strong>£110.00.</strong> This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
-    </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong>
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1653,27 +1661,23 @@ const masonryBeesTreatment = new ContentPaN(
   "Details about masonry bee treatment, including costs, benefits-related discounts, and charges for additional nests or treatment of nests located at height.",
   `
     <h3>Cost for Treatment</h3>
+    
+     <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+       The treatment cost will be on request. We will send your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survey and provide a quote. 
+      </p>
+    </section>
+
     <p>
-      The treatment cost for Masonry Bees is <strong>£75.50.</strong> This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
-    </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong>
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-    If there is more than one nest, a charge of <strong>£39.00</strong> per additional nest will be applied.
-    </p>
-    <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <h3>Nests Up High</h3>
@@ -1713,13 +1717,13 @@ const miceTreatment = new ContentPaN(
     <h3>Cost for Treatment</h3>
     <p>
       We will only provide treatment for Mice inside the property. 
-      The cost for the treatment is <strong>£118.00.</strong> This is based on a standard size
+      The cost for the treatment is <strong>£124.80.</strong> This is based on a standard size
       of a 3-bed semi-detached property. If your property is larger, please escalate
       your enquiry to receive a quote.
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong>
+      reduced to <strong>£61.20:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1730,10 +1734,10 @@ const miceTreatment = new ContentPaN(
     </ul>
     <p>
     This covers you for up to 3 visits. If you require further treatments, 
-    each additional treatment will cost <strong>£39.00.</strong>
+    each additional treatment will cost <strong>£58.00.</strong>
     </p>
     <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1762,24 +1766,23 @@ const mitesTreatment = new ContentPaN(
   "Details about mite treatment costs, benefit-related discounts, and the call-out fee.",
   `
     <h3>Cost for Treatment</h3>
+    
+     <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+       The treatment cost will be on request. We will send your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survey and provide a quote. 
+      </p>
+    </section>
+    
     <p>
-      The treatment cost for Mites is <strong>£110.00.</strong> This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
-    </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong>
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1850,7 +1853,7 @@ const mothsTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong>
+      reduced to <strong>£70.00:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -1860,7 +1863,7 @@ const mothsTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1889,24 +1892,23 @@ const pharoahAntsTreatment = new ContentPaN(
   "Details on Pharoah Ant treatment costs and available discounts for benefit recipients.",
   `
     <h3>Cost for Treatment</h3>
+    
+     <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+       The treatment cost will be on request. We will send your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survey and provide a quote. 
+      </p>
+    </section>
+
     <p>
-      The treatment cost for the Pharoah Ants is <strong>£330.00.</strong> This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
-    </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£97.00:</strong>
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -1970,24 +1972,23 @@ const psocidsTreatment = new ContentPaN(
       </p>
     </section>
     <h3>Cost for Treatment</h3>
+    
+     <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+       The treatment cost will be on request. We will send your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survey and provide a quote. 
+      </p>
+    </section>
+
     <p>
-      The treatment cost for Psocids is <strong>£110.00.</strong> This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
-    </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong>
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-      All prices include a call-out fee of £39.00 This fee applies if our officer
+      All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -2017,7 +2018,7 @@ const ratTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Rats is <strong>£118.00.</strong> This covers you for up to 3 visits.
+      The treatment cost for Rats is <strong>£124.00.</strong> This covers you for up to 3 visits.
       If you require further treatments, each additional treatment will cost <strong>£39.00.</strong>
     </p>
     <p>
@@ -2149,24 +2150,23 @@ const redSpiderMitesTreatment = new ContentPaN(
       </p>
     </section>
     <h3>Cost for Treatment</h3>
+   
+     <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+       The treatment cost will be on request. We will send your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survey and provide a quote. 
+      </p>
+    </section>
+
     <p>
-      The treatment cost for Red Spider Mites is <strong>£110.00.</strong> This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
-    </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong>
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-      All prices include a call-out fee of £39.00. This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -2230,24 +2230,23 @@ const sewageFliesTreatment = new ContentPaN(
       </p>
     </section>
     <h3>Cost for Treatment</h3>
+
+     <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+       The treatment cost will be on request. We will send your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survey and provide a quote. 
+      </p>
+    </section>
+
     <p>
-      The treatment cost for Sewage Flies is <strong>£110.00.</strong> This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
-    </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to £69.50:
-    </p>
-    <ul>
-      <li>Pension Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
-    <p>
-      All prices include a call-out fee of £39.00. This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
   `,
@@ -2283,7 +2282,7 @@ const silverFishTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong>
+      reduced to <strong>£70.00:</strong>
       <br>
       
     </p>
@@ -2297,7 +2296,7 @@ const silverFishTreatment = new ContentPaN(
       
     </ul>
         <p>
-      All prices include a call-out fee of £39.00. This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
 
@@ -2369,7 +2368,7 @@ const spiderBeetlesTreatment = new ContentPaN(
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong>
+      reduced to <strong>£70.00:</strong>
     
     </p>
     <ul>
@@ -2382,7 +2381,7 @@ const spiderBeetlesTreatment = new ContentPaN(
    
     </ul>
         <p>
-      All prices include a call-out fee of £39.00. This fee applies if our officer
+      All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
 
@@ -2443,11 +2442,11 @@ const waspsTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Wasps is <strong>£75.50.</strong>
+      The treatment cost for Wasps is <strong>£79.20.</strong>
     </p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£39.00:</strong>
+      reduced to <strong>£61.20:</strong>
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -2458,9 +2457,9 @@ const waspsTreatment = new ContentPaN(
     </ul>
     <p>
       This covers you for up to 5 visits. If you require further treatments, each additional
-      treatment will cost <strong>£55.00.</strong>
+      treatment will cost <strong>£58.00.</strong>
       <br>
-       All prices include a call-out fee of £39.00. This fee applies if our officer
+       All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
       <br>
       <br>
@@ -2502,7 +2501,7 @@ const weevilsTreatment = new ContentPaN(
     <section class="info-panel" role="region" aria-label="Information panel">
       <h3>Sample Required</h3>
       <p>
-        Before we can provide treatment for Cluster Flies in your domestic property, we
+        Before we can provide treatment for Weevils in your domestic property, we
         will need a sample of the pest.
       </p>
       <p>You can either bring your sample to:</p>
@@ -2535,7 +2534,7 @@ const weevilsTreatment = new ContentPaN(
       </p>
           <h3>Cost for Treatment</h3>
     <p>
-            All prices include a call-out fee of £39.00. This fee applies if our officer
+            All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     </section>
@@ -2566,22 +2565,21 @@ const woodliceTreatment = new ContentPaN(
   "Information on the cost of treatment for woodlice, including benefits-related discounts, and the call-out fee.",
   `
     <h3>Cost for Treatment</h3>
-    <p>
-      The treatment cost for Woodlice is <strong>£110.00.</strong> This is based on a standard size
-      of a 3-bed semi-detached property. If your property is larger, please escalate
-      your enquiry to receive a quote.
-    </p>
-    <p>
-      If you receive one of the following benefits, the treatment cost will be
-      reduced to <strong>£69.50:</strong> 
+    
+     <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+       The treatment cost will be on request. We will send your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
+        for survey and provide a quote. 
+      </p>
+    </section>
 
-    <ul>
-      <li>Pension Credits</li>
-      <li>Housing Benefits</li>
-      <li>Income Support Allowance</li>
-      <li>Income Related Job Seekers Allowance</li>
-      <li>Income Related Employment Support Allowance</li>
-    </ul>
     <p>
       All prices include a call-out fee of £39.00. This fee applies if our officer
       attends the property but is unable to complete the treatment.

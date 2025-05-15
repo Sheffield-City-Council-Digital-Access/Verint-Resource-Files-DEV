@@ -63,13 +63,13 @@ const adaptation = new ContentR(
     <p>For Council Housing properties, refer the customer to 
   
 <a href="${window.location.protocol}//${
-    window.location.hostname
+    window.location.hostname
   }/form/launch/refer_to_service?${
-    KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : ""
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
   }interactionid=${
-    KDF.getParams().interactionid
+    KDF.getParams().interactionid
   }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   <h2>Grab Rails</h2>
@@ -77,14 +77,14 @@ const adaptation = new ContentR(
   <p>For internal or external access to sole occupancy, refer the customer to 
   
 <a href="${window.location.protocol}//${
-    window.location.hostname
+    window.location.hostname
   }/form/launch/refer_to_service?${
-    KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : ""
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
   }interactionid=${
     KDF.getParams().interactionid
-  }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
+  }&txt_emailservice=CommunitiesEquip%26Adaptations@sheffield.gov.uk">CommunitiesEquip%26Adaptations@sheffield.gov.uk</a>
 
   <h2>Mobility Scooter Ramps</h2>
 
@@ -96,27 +96,27 @@ const adaptation = new ContentR(
   <p>For further advice about ramps to an individual's property or communal entrances, refer the customer to 
   
  <a href="${window.location.protocol}//${
-    window.location.hostname
+    window.location.hostname
   }/form/launch/refer_to_service?${
-    KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : ""
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
   }interactionid=${
-    KDF.getParams().interactionid
+    KDF.getParams().interactionid
   }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   <h2>For Disabled Customers, Including Wet Rooms</h2>
 
-  <p>For walk-in shower rooms (wet rooms), refer the customer to 
+  <p>For walk-in shower rooms (wet rooms), refer the customer to  
 
 <a href="${window.location.protocol}//${
-    window.location.hostname
+    window.location.hostname
   }/form/launch/refer_to_service?${
-    KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : ""
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
   }interactionid=${
-    KDF.getParams().interactionid
+    KDF.getParams().interactionid
   }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   `,
@@ -125,9 +125,19 @@ const adaptation = new ContentR(
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["adaptaion","adaptasion","adaptetion","adptation","adapttion","adaptiation","adptasion",
-               "addaptation","adabtation","adapation",],
-    "categories": ["Repairs"]
+    keywords: [
+      "adaptaion",
+      "adaptasion",
+      "adaptetion",
+      "adptation",
+      "adapttion",
+      "adaptiation",
+      "adptasion",
+      "addaptation",
+      "adabtation",
+      "adapation",
+    ],
+    categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
@@ -140,20 +150,33 @@ const blacksmith = new ContentR(
     <p><strong>Category Fault:</strong> Blacksmiths Repairs</p>
     <p><strong>Contract:</strong> Responsive</p>
     <p><strong>Warranty:</strong> N/A</p>
-    <p><strong>Key Information:</strong> Gas No Access: HF, NA or CI code, 
-    No Repair: NR code, or ALMO, continue to order a repair and contact the RPIT Gas Team.</p>
     <p><strong>Outcome:</strong> Log job on T-Mobile</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["black","smth", "blak", "smiht", "blck","smth", "black","smitt", "blaksmitt", 
-                "blacksmthh", "bllack","smitth", "blac","smith", "blackK","smiht"],
-    categories: ["Repairs"]
+    keywords: [
+      "black",
+      "smth",
+      "blak",
+      "smiht",
+      "blck",
+      "smth",
+      "black",
+      "smitt",
+      "blaksmitt",
+      "blacksmthh",
+      "bllack",
+      "smitth",
+      "blac",
+      "smith",
+      "blackK",
+      "smiht",
+    ],
+    categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
@@ -169,15 +192,25 @@ const brickwork = new ContentR(
     If within a warranty period, invoke the warranty repair process.</p>
     <p><strong>Outcome:</strong> Appoint job on T-Mobile.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["brickwork", "brikwork", "bricwork", "brickwok", "brickworrk", "brrickwork", "brikworck", 
-               "brikwerck", "brickwrok", "brickworck", "brickwoork"],
+    keywords: [
+      "brickwork",
+      "brikwork",
+      "bricwork",
+      "brickwok",
+      "brickworrk",
+      "brrickwork",
+      "brikworck",
+      "brikwerck",
+      "brickwrok",
+      "brickworck",
+      "brickwoork",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
@@ -218,21 +251,36 @@ const chimneyStack = new ContentR(
   <p><strong>Warranty:</strong> Identified from the Ohms system. If within a warranty period, 
   invoke the repair process.</p>
 
-  <p><strong>Key Information:</strong> If a pop-up appears (e.g., Gas No Access: HF, NA, 
-  or CI code, No Repair: NR code, or ALMO), continue to order a repair and contact the RPIT Gas Team.</p>
-
   <p><strong>Outcome:</strong> Log job on T-Mobile.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["chimny", "stack", "chimeney", "stack", "chimey", "stack", "chimnay", "stack", 
-    "chimney", "stak", "chimney", "stck", "chimeny", "stack", "chimmney", "stack",
-    "chimney", "stach", "chimny", "stak"],
+    keywords: [
+      "chimny",
+      "stack",
+      "chimeney",
+      "stack",
+      "chimey",
+      "stack",
+      "chimnay",
+      "stack",
+      "chimney",
+      "stak",
+      "chimney",
+      "stck",
+      "chimeny",
+      "stack",
+      "chimmney",
+      "stack",
+      "chimney",
+      "stach",
+      "chimny",
+      "stak",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
@@ -253,16 +301,34 @@ const claimforDamage = new ContentR(
   <p>If a worker causes damage to possessions when carrying out a standard repair, 
   please contact a Senior or Team Leader for advice.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["clamefor", "damage", "cliamfor", "damage", "claimfor", "damge", "claimefor", "damage", 
-    "clamfor", "damage", "claimfor", "dmage", "claimfopr", "damage", "claimfor", "damagg",
-    "claimfor", "damgae", "calimfor", "damage",],
+    keywords: [
+      "clamefor",
+      "damage",
+      "cliamfor",
+      "damage",
+      "claimfor",
+      "damge",
+      "claimefor",
+      "damage",
+      "clamfor",
+      "damage",
+      "claimfor",
+      "dmage",
+      "claimfopr",
+      "damage",
+      "claimfor",
+      "damagg",
+      "claimfor",
+      "damgae",
+      "calimfor",
+      "damage",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
@@ -296,16 +362,34 @@ const clothesPost = new ContentR(
       <p>Only log a job if in comm drying area (we do not do individual properties) and book 
       non-appointed job on T-Mobile.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["cloths", "post", "clothe", "post", "clothes", "pst", "clothes", "psot", "clothes", "pot",
-    "clotes", "post", "clohtes", "post", "clothess", "post", "clothes", "posst", "clothes", "poost",
-],
+    keywords: [
+      "cloths",
+      "post",
+      "clothe",
+      "post",
+      "clothes",
+      "pst",
+      "clothes",
+      "psot",
+      "clothes",
+      "pot",
+      "clotes",
+      "post",
+      "clohtes",
+      "post",
+      "clothess",
+      "post",
+      "clothes",
+      "posst",
+      "clothes",
+      "poost",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
@@ -322,16 +406,34 @@ const communalArea = new ContentR(
   <h3>Contract</h3>
      <p>Responsive</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["comunal", "area", "communal", "are", "comunal", "areaa", "commmnal", "area", 
-    "comunel", "area", "commuanl", "area", "communal", "aria", "commnal", "area",
-    "comunnal", "area", "comunnal", "aria"],
+    keywords: [
+      "comunal",
+      "area",
+      "communal",
+      "are",
+      "comunal",
+      "areaa",
+      "commmnal",
+      "area",
+      "comunel",
+      "area",
+      "commuanl",
+      "area",
+      "communal",
+      "aria",
+      "commnal",
+      "area",
+      "comunnal",
+      "area",
+      "comunnal",
+      "aria",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
@@ -362,15 +464,24 @@ const concrete = new ContentR(
   <h3>Outcome</h3>
     <p>Order Remedy Repair on T-Mobile.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["concret", "concrte", "concete", "concreate", "conkreet", "konkreet", "concrait", 
-      "conkret", "concrt", "conkrite"],
+    keywords: [
+      "concret",
+      "concrte",
+      "concete",
+      "concreate",
+      "conkreet",
+      "konkreet",
+      "concrait",
+      "conkret",
+      "concrt",
+      "conkrite",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
@@ -389,21 +500,38 @@ const dampandMould = new ContentR(
 
   <p>Back out of job (green arrow) and someone will be in contact to book an appointment.</p>
   <p>Any jobs that need chasing please log a chase call on T-Mobile.</p>
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["dampan", "mould", "dampand", "mold", "dampamd", "mould", "dammpand", "mould",
-    "dampad", "mould", "dampand", "mouuld", "dampand", "muold", "dampnd", "mould",
-    "dampand", "moukd", "dampand", "mouod"],
+    keywords: [
+      "dampan",
+      "mould",
+      "dampand",
+      "mold",
+      "dampamd",
+      "mould",
+      "dammpand",
+      "mould",
+      "dampad",
+      "mould",
+      "dampand",
+      "mouuld",
+      "dampand",
+      "muold",
+      "dampnd",
+      "mould",
+      "dampand",
+      "moukd",
+      "dampand",
+      "mouod",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
-
 
 const districtHeatingSwitch2Setup = new ContentR(
   "districtHeatingSwitch2Setup",
@@ -459,24 +587,60 @@ const districtHeatingSwitch2Setup = new ContentR(
   <p>Tenants pay the council and will not be able to look for alternate suppliers.</p>
   <p>Switch2 handles our billing and accounts, and fits and maintains the meters.</p>
   
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["district", "heating", "swich2", "setup", "distric", "heating", "switch2", "setup", 
-    "distric", "heating", "swtich2", "setup", "district", "heaating", "switch2", "setup",
-    "district", "heating", "switch2", "setp", "district", "heating", "switch2", "setuo",
-    "district", "heating", "switch2", "setpu", "distrct", "heating", "switch2", "setup",
-    "distrcit", "heating", "switch2", "setup", "district", "heatng", "switch2", "setup",],
+    keywords: [
+      "district",
+      "heating",
+      "swich2",
+      "setup",
+      "distric",
+      "heating",
+      "switch2",
+      "setup",
+      "distric",
+      "heating",
+      "swtich2",
+      "setup",
+      "district",
+      "heaating",
+      "switch2",
+      "setup",
+      "district",
+      "heating",
+      "switch2",
+      "setp",
+      "district",
+      "heating",
+      "switch2",
+      "setuo",
+      "district",
+      "heating",
+      "switch2",
+      "setpu",
+      "distrct",
+      "heating",
+      "switch2",
+      "setup",
+      "distrcit",
+      "heating",
+      "switch2",
+      "setup",
+      "district",
+      "heatng",
+      "switch2",
+      "setup",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const doorFurniture  = new ContentR(
+const doorFurniture = new ContentR(
   "doorFurniture",
   "Door Furniture",
   "Handles, locks, and hinges for doors",
@@ -508,22 +672,40 @@ const doorFurniture  = new ContentR(
       it's a health & safety (H&S) issue.</li>
   </ul>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["dor", "furniture", "door", "furnture", "door", "frniture", "dooor", "furniture",
-    "door", "furnituer", "door", "furniure", "door", "furinture", "door", "funiture",
-    "door", "furnitture", "door", "furniature"],
+    keywords: [
+      "dor",
+      "furniture",
+      "door",
+      "furnture",
+      "door",
+      "frniture",
+      "dooor",
+      "furniture",
+      "door",
+      "furnituer",
+      "door",
+      "furniure",
+      "door",
+      "furinture",
+      "door",
+      "funiture",
+      "door",
+      "furnitture",
+      "door",
+      "furniature",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const drainage  = new ContentR(
+const drainage = new ContentR(
   "drainage",
   "Drainage",
   "Water drainage system maintenance",
@@ -548,8 +730,6 @@ const drainage  = new ContentR(
   <h3>Key Questions and Information</h3>
   <ul>
       <li>See Yorkshire Water Procedure. If unsure and for further information concerning Communal Drainage Repairs.</li>
-      <li>If there is a pop-up (i.e., for Gas No Access: HF, NA or CI code, No Repair: NR code, or ALMO), 
-      continue to order a repair (if applicable) then immediately contact the RPIT Gas Team.</li>
   </ul>
 
   <h3>Recharge</h3>
@@ -560,21 +740,30 @@ const drainage  = new ContentR(
       <li>Log job on T-Mobile.</li>
   </ul>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: [ "drainag", "dranage", "drainige", "draniage", "drainaje", "drainiage",
-      "dranige", "dranije", "drainaeg", "drianage"],
+    keywords: [
+      "drainag",
+      "dranage",
+      "drainige",
+      "draniage",
+      "drainaje",
+      "drainiage",
+      "dranige",
+      "dranije",
+      "drainaeg",
+      "drianage",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const disrepair  = new ContentR(
+const disrepair = new ContentR(
   "disrepair",
   "Disrepair",
   "Property damage needing repair",
@@ -595,15 +784,24 @@ const disrepair  = new ContentR(
   non-urgent job wants logging, please call the number in warning box first before logging a job on 
   T-Mobile.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["disrepar", "disrepir", "disrepair", "disrepier", "disprepair", "disrepaire",
-    "desrepair", "disrpair", "disrpare", "disrrepaiir"],
+    keywords: [
+      "disrepar",
+      "disrepir",
+      "disrepair",
+      "disrepier",
+      "disprepair",
+      "disrepaire",
+      "desrepair",
+      "disrpair",
+      "disrpare",
+      "disrrepaiir",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
@@ -631,7 +829,6 @@ const electricalandHeating = new ContentR(
   <h3>Heating Items</h3>
   <p>For extra radiators, email to
   
-
   <a href="${window.location.protocol}//${
     window.location.hostname
   }/form/launch/refer_to_service?${
@@ -649,15 +846,34 @@ const electricalandHeating = new ContentR(
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["electrical", "heting", "electrical", "heting", "eletrical", "heating", "elctrical", "heating", 
-    "electricalnd", "heating", "electrical", "heatng", "electrical", "heeting", 
-    "electrical", "heatiing", "electirical", "heating", "electricland", "heating"],
+    keywords: [
+      "electrical",
+      "heting",
+      "electrical",
+      "heting",
+      "eletrical",
+      "heating",
+      "elctrical",
+      "heating",
+      "electricalnd",
+      "heating",
+      "electrical",
+      "heatng",
+      "electrical",
+      "heeting",
+      "electrical",
+      "heatiing",
+      "electirical",
+      "heating",
+      "electricland",
+      "heating",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const electricalTesting  = new ContentR(
+const electricalTesting = new ContentR(
   "electricalTesting",
   "Electric Testing",
   "Safety checks for electrical systems",
@@ -723,23 +939,40 @@ const electricalTesting  = new ContentR(
     KDF.getParams().interactionid
   }&txt_emailservice=GasSheffield@Sheffield.go.uk">GasSheffield@Sheffield.go.uk</a>
   
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["electrical", "tesing", "electrical", "testng", "electrical", "tetsing", 
-    "electrical", "tsting", "electrical", "tessting", "electircal", "testing",
-    "electrical", "tseting", "electrical", "tsting", "electrical", "testin", 
-    "electrial", "testing"],
+    keywords: [
+      "electrical",
+      "tesing",
+      "electrical",
+      "testng",
+      "electrical",
+      "tetsing",
+      "electrical",
+      "tsting",
+      "electrical",
+      "tessting",
+      "electircal",
+      "testing",
+      "electrical",
+      "tseting",
+      "electrical",
+      "tsting",
+      "electrical",
+      "testin",
+      "electrial",
+      "testing",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const externalContractors   = new ContentR(
+const externalContractors = new ContentR(
   "externalContractors",
   "External Contractors",
   "Hired professionals for property work",
@@ -747,23 +980,40 @@ const externalContractors   = new ContentR(
   <p>If a tenant calls and the job is with a contractor, 
   please call the relevant team in the back office if needing to chase.</p>
   
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["external", "contractrs", "extenal", "contractors", "external", "contarctors",
-    "external", "contrctors", "external", "conttractors", "extarnal", "contractors",
-    "extternal", "contractors", "external", "contracors", "external", "conractors",
-    "external", "contrators"],
+    keywords: [
+      "external",
+      "contractrs",
+      "extenal",
+      "contractors",
+      "external",
+      "contarctors",
+      "external",
+      "contrctors",
+      "external",
+      "conttractors",
+      "extarnal",
+      "contractors",
+      "extternal",
+      "contractors",
+      "external",
+      "contracors",
+      "external",
+      "conractors",
+      "external",
+      "contrators",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const externalDoorLock   = new ContentR(
+const externalDoorLock = new ContentR(
   "externalDoorLock",
   "External Door Lock",
   "Security locks for external doors",
@@ -780,8 +1030,6 @@ const externalDoorLock   = new ContentR(
 
       <p>If a member of staff from an Area Housing Office requests a lock change to a property, 
       order remedy repair.</p>
-      <p>If there is a pop-up (e.g., Gas No Access: HF, NA or CI code, No Repair: NR code, or ALMO), 
-      continue to order a repair if applicable and immediately contact the RPIT Gas Team.</p>
 
   <h3>Recharge</h3>
 
@@ -791,23 +1039,40 @@ const externalDoorLock   = new ContentR(
 
       <p>Log a repair on T-Mobile.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["external", "dorlock", "external", "dorrlock", "external", "doorlok",
-    "external", "doorlck", "external", "doorlocck", "externnal", "doorlock",
-    "external", "doorrlock", "external", "dooorlock", "external", "doorlk",
-    "external", "doorloc"],
+    keywords: [
+      "external",
+      "dorlock",
+      "external",
+      "dorrlock",
+      "external",
+      "doorlok",
+      "external",
+      "doorlck",
+      "external",
+      "doorlocck",
+      "externnal",
+      "doorlock",
+      "external",
+      "doorrlock",
+      "external",
+      "dooorlock",
+      "external",
+      "doorlk",
+      "external",
+      "doorloc",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const externalDoor   = new ContentR(
+const externalDoor = new ContentR(
   "externalDoor",
   "External Door",
   "Main or back entry doors",
@@ -839,22 +1104,40 @@ const externalDoor   = new ContentR(
       if repair is because of Burglary / Vandalism. Where there is no Crime Reference Number, 
       board up/make safe only.</p>
       <p>Order Remedy Repair</p>.
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["external", "dor", "external", "dorr", "extenal", "door", "external", "dooor",
-    "external", "doorr", "external", "dour", "extarnal", "door", "externnal", "door",
-    "extrenal", "door", "external", "doer",],
+    keywords: [
+      "external",
+      "dor",
+      "external",
+      "dorr",
+      "extenal",
+      "door",
+      "external",
+      "dooor",
+      "external",
+      "doorr",
+      "external",
+      "dour",
+      "extarnal",
+      "door",
+      "externnal",
+      "door",
+      "extrenal",
+      "door",
+      "external",
+      "doer",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const flatRoof   = new ContentR(
+const flatRoof = new ContentR(
   "flatRoof",
   "Flat Roof",
   "Maintenance of horizontal roofs",
@@ -869,27 +1152,43 @@ const flatRoof   = new ContentR(
   
   <h3>Key questions and information</h3>
 
-      <p>If there is a pop-up (Gas No Access: HF, NA or CI code, No Repair: NR code, or ALMO), 
-      continue to order a repair if applicable and immediately contact the RPIT Gas Team.</p>
       <p>Order Remedy Repair. Start order comments with "Storm Damage" if required.</p>
       <p>If leaking into property, order as Urgent Leak.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["flat", "rooff", "falt", "roof", "flat", "roofff", "flatt", "roof",
-    "fllat", "roof", "flat", "rof", "flat", "roofff", "flat", "roff", 
-    "flt", "roof", "flat", "rofe",],
+    keywords: [
+      "flat",
+      "rooff",
+      "falt",
+      "roof",
+      "flat",
+      "roofff",
+      "flatt",
+      "roof",
+      "fllat",
+      "roof",
+      "flat",
+      "rof",
+      "flat",
+      "roofff",
+      "flat",
+      "roff",
+      "flt",
+      "roof",
+      "flat",
+      "rofe",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const floororStaircase   = new ContentR(
+const floororStaircase = new ContentR(
   "floororStaircase",
   "Floor or Staircase",
   "Repairs for floors and stairs",
@@ -906,33 +1205,44 @@ const floororStaircase   = new ContentR(
 
       <p>Not available</p>
 
-  <h3>Recharge</h3>
-
-      <p>If there is a pop-up (Gas No Access: HF, NA or CI code, No Repair: NR code, or ALMO), 
-      continue to order a repair if applicable and immediately contact the RPIT Gas Team.</p>
-
   <h3>Outcome</h3>
 
       <p>Order Remedy Repair.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: [ "flooror", "staircae", "flooror", "staiircase", "flooror", "staircsse",
-      "flooror", "staircasse", "flooror", "staircsae", "floror", "staircase",
-      "flooror", "staircaase", "floooror", "staircase", "flooror", "staaircase",
-      "flooror", "staircse",
-  ],
+    keywords: [
+      "flooror",
+      "staircae",
+      "flooror",
+      "staiircase",
+      "flooror",
+      "staircsse",
+      "flooror",
+      "staircasse",
+      "flooror",
+      "staircsae",
+      "floror",
+      "staircase",
+      "flooror",
+      "staircaase",
+      "floooror",
+      "staircase",
+      "flooror",
+      "staaircase",
+      "flooror",
+      "staircse",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const footpathandSteps   = new ContentR(
+const footpathandSteps = new ContentR(
   "footpathandSteps",
   "Footpath and Steps",
   "Maintenance of walkways and steps",
@@ -954,23 +1264,40 @@ const footpathandSteps   = new ContentR(
 
       <p>Log a repair on T-Mobile and book a non-appointed visit.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: [ "footpathand", "stepps", "footpathan", "steps", "footpathand", "stpes",
-      "footpathand", "stps", "footpathand", "steep", "footpathnd", "steps",
-      "footpatand", "steps", "footpathaand", "steps", "footpathand", "stepes",
-      "fotpathand", "steps",],
+    keywords: [
+      "footpathand",
+      "stepps",
+      "footpathan",
+      "steps",
+      "footpathand",
+      "stpes",
+      "footpathand",
+      "stps",
+      "footpathand",
+      "steep",
+      "footpathnd",
+      "steps",
+      "footpatand",
+      "steps",
+      "footpathaand",
+      "steps",
+      "footpathand",
+      "stepes",
+      "fotpathand",
+      "steps",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const fireJobs  = new ContentR(
+const fireJobs = new ContentR(
   "fireJobs",
   "Fire Jobs",
   "Fire safety-related maintenance",
@@ -1032,21 +1359,38 @@ const fireJobs  = new ContentR(
       <li>Process Management of Permissions</li>
   </ul>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: [ "fire", "jbos", "fire", "jbso", "fire", "jbso", "fire", "jbss",
-      "fire", "jsbos", "fire", "jbss", "fire", "jobbs", "fir", "jobs",
-      "ffire", "jobs", "fire", "jops"],
+    keywords: [
+      "fire",
+      "jbos",
+      "fire",
+      "jbso",
+      "fire",
+      "jbso",
+      "fire",
+      "jbss",
+      "fire",
+      "jsbos",
+      "fire",
+      "jbss",
+      "fire",
+      "jobbs",
+      "fir",
+      "jobs",
+      "ffire",
+      "jobs",
+      "fire",
+      "jops",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
-
 
 const garageorDetachedOutbuilding = new ContentR(
   "garageorDetachedOutbuilding",
@@ -1069,25 +1413,42 @@ const garageorDetachedOutbuilding = new ContentR(
 
       <p>Log a job on T-Mobile.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["garageor", "detached","outbulding", "garageor", "detached","ouutbuilding",
-    "garageor", "detachdoutbuilding", "garager", "detachedoutbuilding",
-    "garageor", "dettachedoutbuilding", "garageor", "detachedotbuilding",
-    "garagor", "detachedoutbuilding", "garageor", "detachedoutbuliding",
-    "garageor", "detachedoutbuildig", "garageor", "detahcedoutbuildi",
-],
+    keywords: [
+      "garageor",
+      "detached",
+      "outbulding",
+      "garageor",
+      "detached",
+      "ouutbuilding",
+      "garageor",
+      "detachdoutbuilding",
+      "garager",
+      "detachedoutbuilding",
+      "garageor",
+      "dettachedoutbuilding",
+      "garageor",
+      "detachedotbuilding",
+      "garagor",
+      "detachedoutbuilding",
+      "garageor",
+      "detachedoutbuliding",
+      "garageor",
+      "detachedoutbuildig",
+      "garageor",
+      "detahcedoutbuildi",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const gasandDomesticSystems   = new ContentR(
+const gasandDomesticSystems = new ContentR(
   "gasandDomesticSystems",
   "Gas and Domestic Systems",
   "Gas system maintenance and repairs",
@@ -1147,9 +1508,7 @@ const gasandDomesticSystems   = new ContentR(
             <div class="details-accordion-content">
                 <p>
                     Check if the repair is regarding no water flowing out of the taps, or whether there is 
-                    water flowing, and it is cold. If there is no water flowing this should be a 
-                    <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx"> 
-                    plumbing repair</a>.</p>
+                    water flowing, and it is cold. If there is no water flowing this should be a plumbing repair.</p>
                 <p>
                   If a customer has a pre-pay meter but has no gas heating at all, either from a boiler 
                   or gas fire (if present), ask the customer to check that the meter has credit and that the 
@@ -1204,7 +1563,7 @@ const gasandDomesticSystems   = new ContentR(
         </tr>
     </table>
   
-<img class="knowledge-img" src="https://sheffield-city-council-digital-access.github.io/Verint-Resource-Files-DEV/src/images/Repairs/meter-and-credit.jpg" alt="Check the meter is switched on and ensure there is a credit on the meter" loading="lazy" referrerpolicy="no-referrer" />
+<img class="knowledge-img" src="https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield/Images/meter-and-credit.jpg" alt="Check the meter is switched on and ensure there is a credit on the meter" loading="lazy" referrerpolicy="no-referrer" />
 
   <p>The fault code has been missing a lot lately from the job notes as asked for in the prompt 
   text box for central heating repairs.</p>
@@ -1226,7 +1585,7 @@ const gasandDomesticSystems   = new ContentR(
   and hold the reset button on the boiler for 3 seconds, this button is a flame with an X 
   through it see pic below.</p>
 
-  <img class="knowledge-img" src="https://sheffield-city-council-digital-access.github.io/Verint-Resource-Files-DEV/src/images/Repairs/heating-repair.png" alt="If this fails and it still goes to F28 (not F29) then it is a genuine heating repair" loading="lazy" referrerpolicy="no-referrer" />
+  <img class="knowledge-img" src="https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield/Images/heating-repair.png" alt="If this fails and it still goes to F28 (not F29) then it is a genuine heating repair" loading="lazy" referrerpolicy="no-referrer" />
   
   <p>If this fails and it still goes to F28 (not F29), then it is a genuine heating repair:</p>
 
@@ -1259,8 +1618,20 @@ const gasandDomesticSystems   = new ContentR(
       <p>
         On some occasions, there is an overlap with the installation of new systems and the 
         annual gas service. Therefore, if a tenant rings to organise their gas service, but states 
-        that they have just had a new boiler / central heating system installed, please contact <p><a href="mailto: HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a></p> 
-        and they will advise on what steps you need to take with the gas service. This will 
+        that they have just had a new boiler / central heating system installed, please refer the customer to Gas and Electric 
+        Reinstates team on: </P>
+        
+        <a href="${window.location.protocol}//${
+        window.location.hostname
+        }/form/launch/refer_to_service?${
+        KDF.getParams().customerid
+        ? `customerid=${KDF.getParams().customerid}&`
+        : ""
+        }interactionid=${
+        KDF.getParams().interactionid
+        }&txt_emailservice=HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>
+        
+        <p> and they will advise on what steps the customer need to take with the gas service. This will 
         generally consist of confirming to the tenant that we will not need to service the gas 
         appliances this year, and delaying the service on the system, to allow HM&E to get the 
         paperwork scanned.
@@ -1365,8 +1736,17 @@ const gasandDomesticSystems   = new ContentR(
       
             <p>
             If a customer requests an inspection for a gas heating appliance in their property, 
-            please refer to <strong>HM&E</strong>.
-            </p>
+            please refer to </p>
+
+            <a href="${window.location.protocol}//${
+            window.location.hostname
+            }/form/launch/refer_to_service?${
+            KDF.getParams().customerid
+            ? `customerid=${KDF.getParams().customerid}&`
+            : ""
+            }interactionid=${
+            KDF.getParams().interactionid
+            }&txt_emailservice=GasSheffield@sheffield.gov.uk">GasSheffield@sheffield.gov.uk</a>
       
         </div>
   </details>
@@ -1379,10 +1759,20 @@ const gasandDomesticSystems   = new ContentR(
                     <div class="accordion-content">
       
               <p>
-              If a boiler has been stolen, contact <strong>RPIT</strong>. Do not contact HM&E. Please 
+              If a boiler has been stolen, contact <strong>Repairs Policy & Improvement Team</strong>. Do not contact HM&E. Please 
               raise an <strong>EM</strong> job and advise the tenant we need a crime ref number so then 
-              they can be referred to <strong>RPIT</strong>.
-              </p>
+              they can be referred to </p>
+
+            <a href="${window.location.protocol}//${
+            window.location.hostname
+            }/form/launch/refer_to_service?${
+            KDF.getParams().customerid
+            ? `customerid=${KDF.getParams().customerid}&`
+            : ""
+            }interactionid=${
+            KDF.getParams().interactionid
+            }&txt_emailservice=RepairsPolicy&ImprovementsTeam@sheffield.gov.uk">RepairsPolicy&ImprovementsTeam@sheffield.gov.uk</a>
+
               <p>
               If a stolen boiler is reported, a 'make safe gas and water' job should be raised by the 
               service center agent or anyone that takes a stolen boiler call. This should be raised on 
@@ -1401,8 +1791,7 @@ const gasandDomesticSystems   = new ContentR(
                     <div class="accordion-content">
       
                 <p>If gas after trades are required following work, please contact the 
-                <a href="mailto:ElectricalSheffield@sheffield.gov.uk?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=108&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Gas Team</a> 
-                to ask for work to be done.</p>
+                <a href="mailto:Gas@sheffield.gov.uk">Gas</a> to ask for work to be done.</p>
                 <p><strong>Do not put a job on.</strong></p>
       
         </div>
@@ -1501,7 +1890,7 @@ const gasandDomesticSystems   = new ContentR(
           likely a mains power one.
           </p>
 
-        <img class="knowledge-img" src="https://sheffield-city-council-digital-access.github.io/Verint-Resource-Files-DEV/src/images/Repairs/carbon-monoxide-alarm.png" alt="Standard alarm fitted by us" loading="lazy" referrerpolicy="no-referrer" />
+        <img class="knowledge-img" src="https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield/Images/carbon-monoxide-alarm.png" alt="Standard alarm fitted by us" loading="lazy" referrerpolicy="no-referrer" />
 
           <p>
           As for fitting the battery alarm any trade can do them, but if the operative is not from 
@@ -1513,23 +1902,40 @@ const gasandDomesticSystems   = new ContentR(
           </p>  
         </div>
     </details>
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["gasand", "domesticsystms", "gasand", "domesticsytems", "gasand", "dometicsystems",
-    "gasand", "domsticsystems", "gasand", "dometicsytems", "gasand", "domesticsystesm",
-    "gasand", "domesticsystm", "gasand", "domesticsytem", "gasand", "domesticsysstems",
-    "gasnd", "domesticsystems"],
+    keywords: [
+      "gasand",
+      "domesticsystms",
+      "gasand",
+      "domesticsytems",
+      "gasand",
+      "dometicsystems",
+      "gasand",
+      "domsticsystems",
+      "gasand",
+      "dometicsytems",
+      "gasand",
+      "domesticsystesm",
+      "gasand",
+      "domesticsystm",
+      "gasand",
+      "domesticsytem",
+      "gasand",
+      "domesticsysstems",
+      "gasnd",
+      "domesticsystems",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const gasReinstateandUncapServicesorAppointments  = new ContentR(
+const gasReinstateandUncapServicesorAppointments = new ContentR(
   "gasReinstateandUncapServicesorAppointments",
   "Gas Reinstate /Gas Uncap Services / Appointments",
   "Restoring gas supply services",
@@ -1544,7 +1950,19 @@ const gasReinstateandUncapServicesorAppointments  = new ContentR(
 <h3>New Tenant</h3>
 
   <p>If a new tenant makes contact regarding a gas reinstate, then these need to be passed 
-  through to <strong>HM&E</strong> if no answer please email 
+  through to </p>
+
+  <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=GasSheffield@sheffield.gov.uk">GasSheffield@sheffield.gov.uk</a>
+  
+  <p>if no answer please email 
   <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>.</p>
   <p>If a new tenant makes contact and reports that they have no heat or hot water, please 
   first check that their gas has been reinstated <strong>before</strong> ordering a repair.</p>
@@ -1556,10 +1974,19 @@ const gasReinstateandUncapServicesorAppointments  = new ContentR(
   we cap off the supply. We then wait for the tenant to contact us and arrange an "uncap and 
   service".</p>
   <p>If the tenant makes contact within two weeks of the original cap off, then this can be 
-  put through to <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Documents/Emails/Roof%20Enquiry.msg?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=258&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Gas Team</a> direct on <a href="mailto:steve.pitts1@sheffield.gov.uk">GasSheffield@sheffield.gov.uk</a>.</p>
-  <p>If job and it is more than two weeks, then these need to be put through to 
-  <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">HM&E Gas</a> 
-  to order a new job, and book the appointment.</p>
+  put through to Gas team  direct on <a href="mailto:Gas@sheffield.gov.uk">Gas</a>.</p>
+  <p>If job and it is more than two weeks, then these need to be put through to: </p>
+
+  <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=HME_GandE_Reinstates@sheffield.gov.uk">HME_GandE_Reinstates@sheffield.gov.uk</a>
+
   <p>There are occasions where a tenant may have a <strong>gas meter changed</strong>. When 
   the meter is changed, the supplier generally asks the tenant for a copy of the most 
   up-to-date service certificate.</p>
@@ -1567,24 +1994,40 @@ const gasReinstateandUncapServicesorAppointments  = new ContentR(
   you just need to raise a repair, on an <strong>URGENT</strong>, to "Reconnect and safety 
   check after meter change", using the "No heat / hot water code".</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["gasreinstateanduncap", "servcesorappointments", "gasreinstateanduncap", "serviceorappointments", 
-    "gasreinstateanduncap", "servicssorappointments", "gasreinstateanduncap", "serviceorapoinments", 
-    "gasreinstateanduncap", "servicseorappointments", "gasreinstateanduncap", "serviesorappointments",
-    "gasreinstateanduncap", "servicesorappoinments", "gasreinstateanduncap", "sericesorappointments", 
-    "gasreinstateanduncap", "serivesorappointments", "gasreinstateanduncap", "servicsorappointments"],
+    keywords: [
+      "gasreinstateanduncap",
+      "servcesorappointments",
+      "gasreinstateanduncap",
+      "serviceorappointments",
+      "gasreinstateanduncap",
+      "servicssorappointments",
+      "gasreinstateanduncap",
+      "serviceorapoinments",
+      "gasreinstateanduncap",
+      "servicseorappointments",
+      "gasreinstateanduncap",
+      "serviesorappointments",
+      "gasreinstateanduncap",
+      "servicesorappoinments",
+      "gasreinstateanduncap",
+      "sericesorappointments",
+      "gasreinstateanduncap",
+      "serivesorappointments",
+      "gasreinstateanduncap",
+      "servicsorappointments",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const gateorFence  = new ContentR(
+const gateorFence = new ContentR(
   "gateorFence",
   "Gate or Fence",
   "Repairs for gates and fences",
@@ -1615,18 +2058,36 @@ const gateorFence  = new ContentR(
   <p>N/A</p>
 
 <h3>Outcome</h3>
-  <p>Order <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Lists/Communal%20Repair/AllItems.aspx">Communal Repairs</a> (if communal repair or if it's a health and safety issue)</p>
+  <p>Order Communal Repairs (if communal repair or if it's a health and safety issue)</p>
   
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: [ "gator", "fence", "gateor", "fance", "gateor", "fnce", "gateor", "fenec", 
-      "gateor", "fense", "gateor", "fencc", "gaateor", "fence", "gateor", "fencce",
-      "gatteor", "fence", "gateor", "fenxe",],
+    keywords: [
+      "gator",
+      "fence",
+      "gateor",
+      "fance",
+      "gateor",
+      "fnce",
+      "gateor",
+      "fenec",
+      "gateor",
+      "fense",
+      "gateor",
+      "fencc",
+      "gaateor",
+      "fence",
+      "gateor",
+      "fencce",
+      "gatteor",
+      "fence",
+      "gateor",
+      "fenxe",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
@@ -1675,24 +2136,40 @@ const glazingincludingfailedDoubleGlazedUnits = new ContentR(
   <p>If caused by tenant (<strong>no Police Crime Reference Number</strong>) advise tenant, 
   it will be a recharge and order job accordingly.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["glazingincludingfailed", "doubleglazdunits", "glazzingincludingfailed", "doubleglazedunits",
-    "glazingincludingfaield", "doubleglazedunits", "glazingincludingfailed", "dubleglazedunits",
-    "glazingincludingfailed", "doubleglasedunits", "glazingincludingfailed", "doubleglazzedunits",
-    "glazingincludingfailed", "doubleglazedunittts", "glazingincludingfailedd", "doubleglazedunits",
-    "glazngincludingfailed", "doubleglazedunits", "glazingincludingfailed", "doubleglazedunts"],
+    keywords: [
+      "glazingincludingfailed",
+      "doubleglazdunits",
+      "glazzingincludingfailed",
+      "doubleglazedunits",
+      "glazingincludingfaield",
+      "doubleglazedunits",
+      "glazingincludingfailed",
+      "dubleglazedunits",
+      "glazingincludingfailed",
+      "doubleglasedunits",
+      "glazingincludingfailed",
+      "doubleglazzedunits",
+      "glazingincludingfailed",
+      "doubleglazedunittts",
+      "glazingincludingfailedd",
+      "doubleglazedunits",
+      "glazngincludingfailed",
+      "doubleglazedunits",
+      "glazingincludingfailed",
+      "doubleglazedunts",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const gutteringandRainwaterPipes  = new ContentR(
+const gutteringandRainwaterPipes = new ContentR(
   "gutteringandRainwaterPipes",
   "Guttering and Rainwater Pipes",
   "Maintenance of roof drainage",
@@ -1723,23 +2200,40 @@ const gutteringandRainwaterPipes  = new ContentR(
 
   <p>Order Remedy Repair and remember to start with Storm Damage if caused by strong winds.</p> 
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["gutteringand", "rainwatrpipes", "gutteringand", "rainwaterppes", "gutteringand", "rainwaterpipe",
-    "gutteringand", "raiinwaterpipes", "gutterinand", "rainwaterpipes", "gutteringnd", "rainwaterpipes",
-    "gutteringand", "rainwaterrpipes", "gutteringand", "rainwterpipes", "gutteringand", "rainwaterpipees",
-    "gutterringand", "rainwaterpipes"],
+    keywords: [
+      "gutteringand",
+      "rainwatrpipes",
+      "gutteringand",
+      "rainwaterppes",
+      "gutteringand",
+      "rainwaterpipe",
+      "gutteringand",
+      "raiinwaterpipes",
+      "gutterinand",
+      "rainwaterpipes",
+      "gutteringnd",
+      "rainwaterpipes",
+      "gutteringand",
+      "rainwaterrpipes",
+      "gutteringand",
+      "rainwterpipes",
+      "gutteringand",
+      "rainwaterpipees",
+      "gutterringand",
+      "rainwaterpipes",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const handyperson  = new ContentR(
+const handyperson = new ContentR(
   "handyperson",
   "Handyperson",
   "General minor repairs and maintenance",
@@ -1893,21 +2387,40 @@ const handyperson  = new ContentR(
       <li>Fit / remove grab rail.</li>
   </ul>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["handi","persn", "handy","persson", "handy","persn", "handy","prson", "handy","peron", 
-               "hany","persoon","hndy","person", "handi","persone", "handy","perrson", "hand","person"],
+    keywords: [
+      "handi",
+      "persn",
+      "handy",
+      "persson",
+      "handy",
+      "persn",
+      "handy",
+      "prson",
+      "handy",
+      "peron",
+      "hany",
+      "persoon",
+      "hndy",
+      "person",
+      "handi",
+      "persone",
+      "handy",
+      "perrson",
+      "hand",
+      "person",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const internalDoor  = new ContentR(
+const internalDoor = new ContentR(
   "internalDoor",
   "Internal Door",
   "Repairs or replacements for inside doors",
@@ -1916,7 +2429,7 @@ const internalDoor  = new ContentR(
 
   <p>Internal Door Repairs</p>
 
-  <h3>Warranty</h3>#
+  <h3>Warranty</h3>
 
   <p>Identified from the Ohms system. If repair is identified as within a warranty period, 
   invoke the warranty repair process.</p>
@@ -1938,21 +2451,30 @@ const internalDoor  = new ContentR(
       <li>If ordering more than 3 doors -- log more than 1 job on T-Mobile.</li>
   </ul>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["internldoor", "internaldor", "internaldorr", "intarnaldoor", "internaldooor",
-    "internaldoorr", "intrnaldoor", "iternaldoor", "internalldoor", "internaldoer"],
+    keywords: [
+      "internldoor",
+      "internaldor",
+      "internaldorr",
+      "intarnaldoor",
+      "internaldooor",
+      "internaldoorr",
+      "intrnaldoor",
+      "iternaldoor",
+      "internalldoor",
+      "internaldoer",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const kitchenUnit  = new ContentR(
+const kitchenUnit = new ContentR(
   "kitchenUnit",
   "Kitchen Unit",
   "Maintenance of cupboards and countertops",
@@ -1971,8 +2493,18 @@ const kitchenUnit  = new ContentR(
   <p>There may also be a tenant Recharge issue if units have been damaged by tenants.</p>
 
   <p>Please note that any customer enquiries concerning outstanding Decent Homes (Investment) 
-  work, or work to 'upgrade' kitchens should be directed to the 
-  <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=277&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Asset Management Team</a>.</p>
+  work, or work to 'upgrade' kitchens should be directed to the Asset Management Team on </p>
+
+  <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=AMT-GeneralEnq@sheffield.gov.uk">AMT-GeneralEnq@sheffield.gov.uk</a>
+  
 
 <h3>Recharge</h3>
 
@@ -1984,21 +2516,30 @@ const kitchenUnit  = new ContentR(
   <p>If Recharge -- i.e damaged by tenant, please advise tenant and log recharge job 
   accordingly.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["kitchennunit", "kitcenunit", "kitchenunitt", "kicthenunit", "kithchenunit",
-    "kitchenuunit", "kitchenunitt", "kitchununitt", "kitchenunite", "kitchennunit"],
+    keywords: [
+      "kitchennunit",
+      "kitcenunit",
+      "kitchenunitt",
+      "kicthenunit",
+      "kithchenunit",
+      "kitchenuunit",
+      "kitchenunitt",
+      "kitchununitt",
+      "kitchenunite",
+      "kitchennunit",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const liftorHoist  = new ContentR(
+const liftorHoist = new ContentR(
   "liftorHoist",
   "Lift or Hoist",
   "Servicing of lifts and hoists",
@@ -2010,22 +2551,30 @@ const liftorHoist  = new ContentR(
       <li>If passenger lift adds location of lift and any further information.</li>
   </ul>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["lifttorhoist", "liftorhoit", "liforhoist", "liftorhoits", "liftorhois",
-    "liftorhoistt", "lftorhoist", "liftorhoisst", "lifftrhoist", "liftorhoost"],
+    keywords: [
+      "lifttorhoist",
+      "liftorhoit",
+      "liforhoist",
+      "liftorhoits",
+      "liftorhois",
+      "liftorhoistt",
+      "lftorhoist",
+      "liftorhoisst",
+      "lifftrhoist",
+      "liftorhoost",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-
-const lostKeyorFob  = new ContentR(
+const lostKeyorFob = new ContentR(
   "lostKeyorFob",
   "Lost Key or Fob",
   "Replacement of lost keys or fobs",
@@ -2048,21 +2597,30 @@ const lostKeyorFob  = new ContentR(
 <h3>Lost Fob</h3>
   <p>If the tenant calls and has lost the fob (communal door) please refer to the local area housing office.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: [ "lostkeyorfb", "lostkeyorfo", "lostkyorfob", "lostkeyrfob", "lostkeyorrfob",
-      "losstkeyorfob", "lostkeyorfoob", "lostkeyofob", "lostkyeorfob", "lostkeyrfobb"],
+    keywords: [
+      "lostkeyorfb",
+      "lostkeyorfo",
+      "lostkyorfob",
+      "lostkeyrfob",
+      "lostkeyorrfob",
+      "losstkeyorfob",
+      "lostkeyorfoob",
+      "lostkeyofob",
+      "lostkyeorfob",
+      "lostkeyrfobb",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const newBuildPropertyDefectorEmergencyCallOut  = new ContentR(
+const newBuildPropertyDefectorEmergencyCallOut = new ContentR(
   "newBuildPropertyDefectorEmergencyCallOut",
   "New Build Property Defect or Emergency Call Out",
   "Urgent fixes for new-build defects",
@@ -2091,30 +2649,44 @@ const newBuildPropertyDefectorEmergencyCallOut  = new ContentR(
 
   <h3>Business Continuity</h3>
 
-  <p><a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">OHMS Business Continuity Plan Form</a> 
-  <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">Logging an emergency 
-  job when OHMS is down</a>.</p>
+  <p>OHMS Business Continuity Plan Form Logging an emergency job when OHMS is down.</p>
   <p>Systems are down -- T-Mobile -- apologise and request the tenant to call back.</p>
   <p>A Storm message will be played forewarning new callers.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["newbuildpropertydefector", "emergenccallout", "newbuidpropertydefector", "emergencycallout",
-    "newbuildpropertydefctor", "emergencycallout", "newbuildpropertydefector", "emergencalout",
-    "newbuildpropertydefector", "emergencycallouut", "newbuildpropertydefector", "emergenccalloout",
-    "newbuildpropertydefector", "emrgncycallout", "newbuildpropertdefector", "emergencycallout",
-    "newbuildproperydefector", "emergencycallout", "newbuildpropertydefector", "emrgencycallout",],
+    keywords: [
+      "newbuildpropertydefector",
+      "emergenccallout",
+      "newbuidpropertydefector",
+      "emergencycallout",
+      "newbuildpropertydefctor",
+      "emergencycallout",
+      "newbuildpropertydefector",
+      "emergencalout",
+      "newbuildpropertydefector",
+      "emergencycallouut",
+      "newbuildpropertydefector",
+      "emergenccalloout",
+      "newbuildpropertydefector",
+      "emrgncycallout",
+      "newbuildpropertdefector",
+      "emergencycallout",
+      "newbuildproperydefector",
+      "emergencycallout",
+      "newbuildpropertydefector",
+      "emrgencycallout",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const paintingCommunalArea  = new ContentR(
+const paintingCommunalArea = new ContentR(
   "paintingCommunalArea",
   "Painting Communal Area",
   "Repainting shared spaces",
@@ -2156,23 +2728,40 @@ const paintingCommunalArea  = new ContentR(
   </ul>
   <p>Handrails on footpaths are a repair job and this work is carried out under the Painting Programme.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["paintig", "communalarea", "painting", "comunalarea", "painnting", "communalarea",
-    "painting", "communalare", "painting", "communalaree", "painting", "comunallarea",
-    "panting", "communalarea", "painting", "communaarea", "painting", "comunalareaa",
-    "painting", "communallarea",],
+    keywords: [
+      "paintig",
+      "communalarea",
+      "painting",
+      "comunalarea",
+      "painnting",
+      "communalarea",
+      "painting",
+      "communalare",
+      "painting",
+      "communalaree",
+      "painting",
+      "comunallarea",
+      "panting",
+      "communalarea",
+      "painting",
+      "communaarea",
+      "painting",
+      "comunalareaa",
+      "painting",
+      "communallarea",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const pitchedRoof  = new ContentR(
+const pitchedRoof = new ContentR(
   "pitchedRoof",
   "Pitched Roof",
   "Maintenance of sloped roofs",
@@ -2199,7 +2788,17 @@ const pitchedRoof  = new ContentR(
   in relation to the ongoing Reroofing Programme or if it is a genuine repair requiring a repair to be 
   ordered.</p>
   <p>If the enquiry is in relation to the Re-roofing Programme, transfer to 
-  <strong>Asset Management</strong> or email <a href="mailto:AMT-GeneralEnq@sheffield.gov.uk">AMT-GeneralEnq@sheffield.gov.uk</a>.</p>
+  <strong>Asset Management team </strong> </p>
+
+    <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=AMT-GeneralEnq@sheffield.gov.uk">AMT-GeneralEnq@sheffield.gov.uk</a>
 
 <h3>Recharge</h3>
 
@@ -2210,7 +2809,6 @@ const pitchedRoof  = new ContentR(
   <p>Log a job on T-Mobile *Remember to put in order comments <strong>Storm Damage</strong> if required.</p>
   <p>If leaking into property, order as <strong>Urgent Leak</strong></p>
 
-
   `
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
@@ -2218,14 +2816,24 @@ const pitchedRoof  = new ContentR(
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["pithedroof", "pitcheddroof", "pitchedrooff", "pithcedroof", "pitchedroofff",
-    "pitchedrooffff", "pitchdroof", "pitchdrooff", "pitchedroofff", "pithchedroof"],
+    keywords: [
+      "pithedroof",
+      "pitcheddroof",
+      "pitchedrooff",
+      "pithcedroof",
+      "pitchedroofff",
+      "pitchedrooffff",
+      "pitchdroof",
+      "pitchdrooff",
+      "pitchedroofff",
+      "pithchedroof",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const plastering  = new ContentR(
+const plastering = new ContentR(
   "plastering",
   "Plastering",
   "Repairs for walls and ceilings",
@@ -2251,21 +2859,30 @@ const plastering  = new ContentR(
 
   <p>Log job on T-Mobile</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["plasterin", "plasttering", "plasterinng", "plasteriing", "plastaring",
-    "plaastering", "plasteering", "plastteringg", "plasterring", "plaasterinng"],
+    keywords: [
+      "plasterin",
+      "plasttering",
+      "plasterinng",
+      "plasteriing",
+      "plastaring",
+      "plaastering",
+      "plasteering",
+      "plastteringg",
+      "plasterring",
+      "plaasterinng",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const plumbingandDomesticHotorColdWater  = new ContentR(
+const plumbingandDomesticHotorColdWater = new ContentR(
   "plumbingandDomesticHotorColdWater",
   "Plumbing and Domestic Hot or Cold Water",
   "Fixing water pipes and systems",
@@ -2282,7 +2899,7 @@ const plumbingandDomesticHotorColdWater  = new ContentR(
 <h3>Key questions and information</h3>
 
   <p>Check if the repair is regarding no water flowing out of the taps, or whether there is water flowing, 
-  and it is cold. If it's around no hot water then this should be a <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">domestic heating repair</a>.</p>
+  and it is cold. If it's around no hot water then this should be a domestic heating repair.</p>
   <p>External bursts should be ordered as an appointable job.</p>
 
   <p><strong>Sealant jobs around a bath</strong> are done by Plasterers (not plumbers)</p>
@@ -2295,24 +2912,40 @@ const plumbingandDomesticHotorColdWater  = new ContentR(
 
   <p>Log a job on T-Mobile.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["plumbinganddomestic", "hotorcoldwter", "plumbinganddomestic", "hotrcoldwater",
-    "plumbinganddomestic", "hotorcolddwater", "plumbinganddometic", "hotorcoldwater",
-    "plumbingnddomestic", "hotorcoldwater", "plumbinganddomestic", "hotorrcoldwater",
-    "plumbinganddomstic", "hotorcoldwater", "pluminganddomestic", "hotorcoldwater",
-    "plumbinganddomestic", "hotorcoldwaterr", "plumbinganddomestic", "hotorcoldwaater"],
+    keywords: [
+      "plumbinganddomestic",
+      "hotorcoldwter",
+      "plumbinganddomestic",
+      "hotrcoldwater",
+      "plumbinganddomestic",
+      "hotorcolddwater",
+      "plumbinganddometic",
+      "hotorcoldwater",
+      "plumbingnddomestic",
+      "hotorcoldwater",
+      "plumbinganddomestic",
+      "hotorrcoldwater",
+      "plumbinganddomstic",
+      "hotorcoldwater",
+      "pluminganddomestic",
+      "hotorcoldwater",
+      "plumbinganddomestic",
+      "hotorcoldwaterr",
+      "plumbinganddomestic",
+      "hotorcoldwaater",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const refuseChute  = new ContentR(
+const refuseChute = new ContentR(
   "refuseChute",
   "Refuse Chute",
   "Cleaning and maintenance of waste chutes",
@@ -2340,9 +2973,18 @@ const refuseChute  = new ContentR(
 
 <h3>Outcome</h3>
 
-  <p>For blocked refuse chutes, contact the <a href="mailto:ElectricalSheffield@Sheffield.go.uk?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=83&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Council Housing Service Call Centre</a></p>
-
-
+  <p>For blocked refuse chutes, refer the customer to Council Housing Service call center through </p>
+  
+    <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=ElectricalSheffield@Sheffield.gov.uk">ElectricalSheffield@Sheffield.gov.uk</a>
+  
   `
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
@@ -2350,31 +2992,41 @@ const refuseChute  = new ContentR(
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["refussechute", "refuzechute", "refuschute", "refusechut", "refuzechut",
-    "refussechute", "refuschutte", "refuseechute", "refsechute", "refusechutte"],
+    keywords: [
+      "refussechute",
+      "refuzechute",
+      "refuschute",
+      "refusechut",
+      "refuzechut",
+      "refussechute",
+      "refuschutte",
+      "refuseechute",
+      "refsechute",
+      "refusechutte",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const reroofingProgrammeWarranty  = new ContentR(
+const reroofingProgrammeWarranty = new ContentR(
   "reroofingProgrammeWarranty",
   "Re-roofing Programme Warranty",
   "Roof replacement warranty repairs",
   `
   <p>If a repair is needed and the re-roofing work is <strong>under warranty</strong> (within 6 months), 
-  please email the details to the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">Asset Management Team</a>.</p>
+  please email the details to the Asset Management Team on <a href="mailto:AMT-GeneralEnq@sheffield.gov.uk"></a></p>
   <p>If a repair is needed and the re-roofing work is <strong>not under warranty</strong> (12 months), 
   the repair should be dealt with as a new repair.</p>
   <p>If a customer is <strong>unhappy with the quality of work</strong>, the workers, or the programme 
-  in general, please email the details to the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx">Asset Management Team</a>.</p>
+  in general, please email the details to the Asset Management Team on <a href="mailto:AMT-GeneralEnq@sheffield.gov.uk"></a></p>
   <p>If a customer is <strong>reporting an emergency on site</strong>, the relevant contractor should be
   notified. There is a <a href="mailto:HME_GandE_Reinstates@sheffield.gov.uk">spreadsheet</a> that lists 
   all addresses that are to be included in the Re-roofing Programme along with the emergency contact numbers.</p>
   <p>In OHMS, the Re-roofing work is indicated by the <strong>RW</strong> code. The Property Notes will show 
   the warranty dates and numbers to contact.</p>
 
-  <img class="knowledge-img" src="https://sheffield-city-council-digital-access.github.io/Verint-Resource-Files-DEV/src/images/Repairs/re-roofing-programme-warranty.jpg" alt="OHMS code and job history can be seen on Ohms" loading="lazy" referrerpolicy="no-referrer" />
+  <img class="knowledge-img" src="https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield/Images/re-roofing-programme-warranty.jpg" alt="OHMS code and job history can be seen on Ohms" loading="lazy" referrerpolicy="no-referrer" />
 
 
   <p>Over the next 5 years from 2025 to 2030, the Asset Management Team will manage a citywide re-roofing 
@@ -2417,23 +3069,44 @@ const reroofingProgrammeWarranty  = new ContentR(
       <li>Removal of identified asbestos</li>
   </ul>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["reroofing", "programe", "warranty", "reroofing", "programme", "warrnty",
-    "reroofing", "programmee", "warranty", "reroofing", "progrmme", "warranty",
-    "reroofing", "programm", "warranty", "reroofing", "programme", "warrantyy",
-    "reroofing", "programe", "warrantyy", "reroofing", "programme", "waranty"],
+    keywords: [
+      "reroofing",
+      "programe",
+      "warranty",
+      "reroofing",
+      "programme",
+      "warrnty",
+      "reroofing",
+      "programmee",
+      "warranty",
+      "reroofing",
+      "progrmme",
+      "warranty",
+      "reroofing",
+      "programm",
+      "warranty",
+      "reroofing",
+      "programme",
+      "warrantyy",
+      "reroofing",
+      "programe",
+      "warrantyy",
+      "reroofing",
+      "programme",
+      "waranty",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const rightToBuy  = new ContentR(
+const rightToBuy = new ContentR(
   "rightToBuy",
   "Right To Buy",
   "Tenant purchase scheme for homes",
@@ -2451,29 +3124,57 @@ const rightToBuy  = new ContentR(
     application.</p>
     <p>If the tenant contacts us prior to the expiration date to state, they are not going to appeal we will 
     close the application and change the repairs status back to tenanted. Any queries about this, please 
-    contact the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=278&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Home Ownership Team</a>.</p>
+    contact the contact the Home Ownership Team on </p>
+
+    <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=rdh@sheffield.gov.uk">rdh@sheffield.gov.uk</a>
 
   <h3>Right to Buy inspection requests</h3>
 
-    <p>For Right to Buy inspections, please contact the <a href="mailto:steve.willis@sheffield.gov.uk?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=278&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Home Ownership Team</a>.</p>
+    <p>For Right to Buy inspections, please contact the Home Ownership team on <a href="mailto:rdh@sheffield.gov.uk"></a></p>
     <p>Any tenant that is in a Right to Buy stage is not eligible for the Handyperson service.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: [ "rigth", "tobuy", "right", "tbuy", "right", "tobuyy", "rigt", "tobuy",
-      "right", "toby", "right", "toobuy", "righ", "tobuy", "right", "tobu",
-      "right", "tobuuy", "right", "ttobuy",],
+    keywords: [
+      "rigth",
+      "tobuy",
+      "right",
+      "tbuy",
+      "right",
+      "tobuyy",
+      "rigt",
+      "tobuy",
+      "right",
+      "toby",
+      "right",
+      "toobuy",
+      "righ",
+      "tobuy",
+      "right",
+      "tobu",
+      "right",
+      "tobuuy",
+      "right",
+      "ttobuy",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const rightToRepair  = new ContentR(
+const rightToRepair = new ContentR(
   "rightToRepair",
   "Right To Repair",
   "Tenant rights for essential repairs",
@@ -2488,11 +3189,8 @@ const rightToRepair  = new ContentR(
 
   <h3>Repairs covered</h3>
 
-    <p>It only covers certain repairs, known as 'qualifying repairs', which cost less than £250 to carry out. 
-    See <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Documents/Emails/Roof%20Enquiry.msg">list 
-    of qualifying repairs</a> and the response time (times are set by law - not by the council).</p>
-
-
+    <p>It only covers certain repairs, known as 'qualifying repairs', which cost less than £250 to carry out. </p>
+    
   `
   ,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
@@ -2500,15 +3198,34 @@ const rightToRepair  = new ContentR(
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["rigth", "torepair", "right", "trepair", "right", "repaair", "righ", "torepair",
-    "right", "repai", "right", "toorepair", "righ", "trepir", "right", "reapir",
-    "right", "rrepair", "right", "reepair",],
+    keywords: [
+      "rigth",
+      "torepair",
+      "right",
+      "trepair",
+      "right",
+      "repaair",
+      "righ",
+      "torepair",
+      "right",
+      "repai",
+      "right",
+      "toorepair",
+      "righ",
+      "trepir",
+      "right",
+      "reapir",
+      "right",
+      "rrepair",
+      "right",
+      "reepair",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
-const scaffolding  = new ContentR(
+const scaffolding = new ContentR(
   "scaffolding",
   "Scaffolding",
   "Temporary structures for high work",
@@ -2517,7 +3234,20 @@ const scaffolding  = new ContentR(
 
     <p>If a new tenant states that they cannot move into their new property due to scaffolding obstructing 
     access and blocking doors or windows; contact the Roofing team on internal number 0114 2735921 and also 
-    inform the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Lists/Keir%20Contacts2/DispForm.aspx?ID=102&Source=https%3a//knowledge.sheffield.gov.uk/HousingRepairs/Pages/Telephone-Directory.aspx&ContentTypeId=0x01008B0EE4E0E1BA644197584AD04A25C474&IsDlg=1">Vacants Team</a>. It will then be arranged for the scaffolding to be moved to allow access. This will prevent any discretionary payments to rent accounts via Vacants due to the tenant being unable to move into the property.</p>
+    inform the Vacants Team on </p>
+
+    <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=voids@sheffield.gov.uk">voids@sheffield.gov.uk</a>
+    
+  <p> It will then be arranged for the scaffolding to be moved to allow access. This will prevent any 
+  discretionary payments to rent accounts via Vacants due to the tenant being unable to move into the property.</p>
 
   <h3>Scaffolding Process</h3>
 
@@ -2547,15 +3277,24 @@ const scaffolding  = new ContentR(
     operative absence, van breakdowns or emergency / urgent jobs taking priority, so please also bear these 
     possibilities in mind.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["scafolding", "scafflding", "scafoldng", "scaffoling", "scaffoldin", "scaffoldingg", 
-              "scafollding", "scaffolling", "scaffoelding", "scaffoldinng"],
+    keywords: [
+      "scafolding",
+      "scafflding",
+      "scafoldng",
+      "scaffoling",
+      "scaffoldin",
+      "scaffoldingg",
+      "scafollding",
+      "scaffolling",
+      "scaffoelding",
+      "scaffoldinng",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
@@ -2575,15 +3314,24 @@ const surveyors = new ContentR(
     Any job that has not been allocated or needs chasing up please email your senior, who will pass on the 
     information.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: [ "survayors", "servayors", "surveryors", "surveyers", "sureyors",
-      "surveeyors", "survyyors", "survyors", "suveyors", "surveryor"],
+    keywords: [
+      "survayors",
+      "servayors",
+      "surveryors",
+      "surveyers",
+      "sureyors",
+      "surveeyors",
+      "survyyors",
+      "survyors",
+      "suveyors",
+      "surveryor",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
@@ -2596,15 +3344,24 @@ const tarmac = new ContentR(
   `
     <p>Please log a job on T-Mobile with the description, location, and approximate size, then 
     <strong>book a Non appointed</strong> appointment.</p>
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["tarmak", "tarmaac", "tarmacc", "tarmoc", "taramc", "tarmoc",
-    "tarmaek", "tarmaak", "tarmak", "tarrmac"],
+    keywords: [
+      "tarmak",
+      "tarmaac",
+      "tarmacc",
+      "tarmoc",
+      "taramc",
+      "tarmoc",
+      "tarmaek",
+      "tarmaak",
+      "tarmak",
+      "tarrmac",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
@@ -2624,11 +3381,6 @@ const wallRepair = new ContentR(
     <p>Identified from the T-Mobile system. If repair is identified as within a warranty period, invoke the 
     warranty repair process.</p>
 
-  <h3>Key questions and information</h3>
-
-    <p>If there is a pop-up i.e., for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
-    <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, continue to order a repair (if applicable) then immediately contact the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/_layouts/listform.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">RPIT Gas Team</a>.</p>
-
   <h3>Rendering</h3>
 
     <p>We only make it safe.</p>
@@ -2643,15 +3395,24 @@ const wallRepair = new ContentR(
     <p>Examples of Concrete Repairs - Lintels, Cills, Coping Stones, Canopy's, Marionette Walkways/Private 
     Balcony's, Columns and Beams.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["wallrepir", "walrepair", "wallrpair", "wallrepaiir", "wallrepaar",
-    "walrepaiir", "wallrepairr", "wwallrepair", "wallreapir", "wallrepirr"],
+    keywords: [
+      "wallrepir",
+      "walrepair",
+      "wallrpair",
+      "wallrepaiir",
+      "wallrepaar",
+      "walrepaiir",
+      "wallrepairr",
+      "wwallrepair",
+      "wallreapir",
+      "wallrepirr",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
@@ -2701,8 +3462,17 @@ const wcBathorShowerorSinkUnit = new ContentR(
     can be ordered. If unsure, please ask your supervisor.</p>
     <p><strong>Shower Rails and rise rails</strong> are fitted by Plumbers not Joiners.</p>
     <p>Any customer enquiries concerning outstanding <strong>Decent Homes</strong> (Investment) work, 
-    or work to '<strong>upgrade' kitchens</strong> should be directed to the 
-    <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Documents/Business%20Continuity%20-%20OHMS%20BCP%20Form.docx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=277&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">Asset Management Team</a>.</p>
+    or work to '<strong>upgrade' kitchens</strong> should be directed to the: </p>
+    
+    <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/refer_to_service?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&txt_emailservice=AMT-GeneralEnq@sheffield.gov.uk">AMT-GeneralEnq@sheffield.gov.uk</a>
 
   <h3>Systems and Processes</h3>
     <p>Only white soft closed seats can be fitted.</p>
@@ -2710,24 +3480,29 @@ const wcBathorShowerorSinkUnit = new ContentR(
   <h3>Recharge</h3>
     <p>Possible Tenant recharge for damaged items.</p>
 
-  h3>Outcome</h3>
+  <h3>Outcome</h3>
     <p>Log job on T-Mobile</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["wc bath or showerr sink unit", "wc bath or shower or sink unt", "wc bath or shower o sink unit",   
-               "wc bath or shower or sink unitt","wc bath or showerr or sink unit","wc bath or shower or sink uunit",
-               "wc bath or shwer or sink unit", "wc bath or showr or sink unit"],
+    keywords: [
+      "wc bath or showerr sink unit",
+      "wc bath or shower or sink unt",
+      "wc bath or shower o sink unit",
+      "wc bath or shower or sink unitt",
+      "wc bath or showerr or sink unit",
+      "wc bath or shower or sink uunit",
+      "wc bath or shwer or sink unit",
+      "wc bath or showr or sink unit",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
-
 
 const windowSillorCill = new ContentR(
   "windowSillorCill",
@@ -2750,16 +3525,24 @@ const windowSillorCill = new ContentR(
 
     <p>As always if unsure, please ask your supervisor / team leader.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: ["windowsilorcill", "windowsillorcil", "windowsillorcell", "windowsillorciill",
-    "windowsilorcil", "windosillorcill", "windowsilorrCill", "windowsillorcilll",
-    "windowsilrcill", "windowsillorcillll"],
+    keywords: [
+      "windowsilorcill",
+      "windowsillorcil",
+      "windowsillorcell",
+      "windowsillorciill",
+      "windowsilorcil",
+      "windosillorcill",
+      "windowsilorrCill",
+      "windowsillorcilll",
+      "windowsilrcill",
+      "windowsillorcillll",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
@@ -2784,10 +3567,7 @@ const windowFrame = new ContentR(
     <p>Ask tenant for details of window type i.e., UPVC, Wood or Metal</p>
     <p>Police incident number is required if repair is because of Burglary/Vandalism amend category of work. 
     Where there is no Crime Reference Number, board up/make safe.</p>
-    <p>If there is a pop-up i.e., for Gas No Access: <strong>HF</strong>, <strong>NA</strong> or 
-    <strong>CI</strong> code, No Repair: <strong>NR</strong> code, or <strong>ALMO</strong>, continue to order
-    a repair (if applicable) then immediately contact the <a href="https://knowledge.sheffield.gov.uk/HousingRepairs/Pages/KnowledgePages/Domestic-Gas-Systems.aspx?PageType=4&ListId=%7bD189B7FE-EDB5-45AD-9391-ECFB467A8DC6%7d&ID=88&ContentTypeID=0x01008B0EE4E0E1BA644197584AD04A25C474">RPIT Gas Team</a>.</p>
-
+    
   <h3>Recharge</h3>
 
     <p>Yes where there is no <strong>Police Crime Reference Number</strong>, board up/make safe only.</p>
@@ -2795,20 +3575,28 @@ const windowFrame = new ContentR(
     <h3>Order Remedy Repair</h3>
 
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: [ "windwframe", "windoframe", "windowfrme", "windowfrrame", "windowfraame",
-      "windowfame", "windowframme", "windowfrime", "windofram", "windowframee"],
+    keywords: [
+      "windwframe",
+      "windoframe",
+      "windowfrme",
+      "windowfrrame",
+      "windowfraame",
+      "windowfame",
+      "windowframme",
+      "windowfrime",
+      "windofram",
+      "windowframee",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
-
 
 const workingatHeight = new ContentR(
   "workingatHeight",
@@ -2821,21 +3609,28 @@ const workingatHeight = new ContentR(
     the problem is</strong> in the property, i.e., an overflow that is running can often be low down and 
     needn't be passed to Working at Height.</p>
 
-  `
-  ,
+  `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Request",
-    keywords: [ "workingatheigh", "workingattheight", "workngatheight", "workingatheigt",
-      "workingatheigght", "workingatheighht", "workingatheigtt", "workingaheight",
-      "workingatheigth", "workingaheightt"],
+    keywords: [
+      "workingatheigh",
+      "workingattheight",
+      "workngatheight",
+      "workingatheigt",
+      "workingatheigght",
+      "workingatheighht",
+      "workingatheigtt",
+      "workingaheight",
+      "workingatheigth",
+      "workingaheightt",
+    ],
     categories: ["Repairs"],
   },
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
-
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -2843,7 +3638,7 @@ const workingatHeight = new ContentR(
 const repairs = new ServiceR(
   "repairs",
   "Repairs",
-  "",
+  "Report home repairs, safety checks, accessibility adaptations, and maintenance for internal, external, and communal property features.",
     [
       adaptation, blacksmith, brickwork, chimneyStack, claimforDamage, 
       clothesPost, communalArea, concrete, dampandMould, districtHeatingSwitch2Setup, 

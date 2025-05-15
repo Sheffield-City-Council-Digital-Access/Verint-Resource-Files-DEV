@@ -65,13 +65,13 @@ function handleInitialisingEvent() {
     const favicon = document.querySelector("link[rel~='icon']");
     if (favicon) {
       favicon.href =
-        "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
+        "https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield/Images/favicon.png";
     } else {
       // If favicon element doesn't exist, create it and append to head
       const newFavicon = document.createElement("link");
       newFavicon.rel = "icon";
       newFavicon.href =
-        "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
+        "https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield/Images/favicon.png";
       document.head.appendChild(newFavicon);
     }
   })();
@@ -142,7 +142,8 @@ function handleInitialisingEvent() {
       // Create the logo image
       const logoImg = document.createElement("img");
       logoImg.classList.add("header-logo");
-      logoImg.src = "https://www.sheffield.gov.uk/verint-files/logo.png";
+      logoImg.src =
+        "https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield/Images/logo.png";
       logoImg.alt = "Sheffield City Council Logo";
 
       // Append the logo image to the logo link
@@ -409,7 +410,7 @@ function handleInitialisingEvent() {
                   </div>
                   <div class="logo-container">
                       <a href="https://www.sheffield.gov.uk" title="Back to homepage" class="footer-logo-link">
-                          <img class="footer-logo" src="https://www.sheffield.gov.uk/verint-files/logo.png" alt="Sheffield City Council Logo">
+                          <img class="footer-logo" src="https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield/Images/logo.png" alt="Sheffield City Council Logo">
                       </a>
                   </div>
                   <div class="jump-container">

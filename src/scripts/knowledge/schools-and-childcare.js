@@ -87,7 +87,7 @@ const freeSchoolMeals = new ContentSaC(
     <p>
       If your child/ren is/are currently eligible for free school meals, they’ll
       remain eligible until they finish the phase of schooling (primary or
-      secondary) they’re in on 31 March 2025.
+      secondary) they’re in.
     </p>
     <p>
       If your child/ren is/are currently attending an Oasis school, they need to apply for Free School Meals with that school directly.
@@ -107,10 +107,10 @@ const freeSchoolMeals = new ContentSaC(
       start work, start to receive Working Tax Credit, or stop receiving one of the
       qualifying benefits you must notify us as soon as possible.
     </p>
-    <h3>Free food supplement vouchers for October half-term holidays</h3>
+    <h3>Free food supplement vouchers for school holidays</h3>
     <p>
       We are pleased to inform you that, as part of the Household Support Fund, 
-      we will be providing a £30 food supplement voucher for:
+      we will be providing food supplement vouchers for:
     </p>
     <ul>
       <li>Children who are in receipt of income-based free school meals</li>
@@ -118,7 +118,7 @@ const freeSchoolMeals = new ContentSaC(
       <li>Young people leaving their care setting (care leavers)</li>
     </ul>
     <p>
-      We will be issuing vouchers from the week beginning 24 March. 
+      We will be issuing vouchers a week prior to school holidays.
     </p>
     <p>
       You do not need to apply for the scheme. You will receive a letter 
@@ -126,10 +126,23 @@ const freeSchoolMeals = new ContentSaC(
     </p>
     <h4>How to redeem your voucher</h4>
     <p>
-      Go to the <a href="http://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/"target="_blank">www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers</a>
+      Go to the <a href="https://www.selectyourcompliment.co.uk/grocery/" target="_blank">www.selectyourcompliment.co.uk/grocery/</a>
       and follow the instructions below:
       <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Edenred'"> Send Link </button>
+      
+  <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+      KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Edenred\`
+    "
+>
+      Send link to review further information
+   </button>
+
     </p>
     <ol>
       <li>Enter your eCode from the letter</li>
@@ -142,7 +155,7 @@ const freeSchoolMeals = new ContentSaC(
     </ol>
     <p>
       Codes need to be activated within 3 months of the issue 
-      date (24 March) or they will be cancelled automatically. 
+      date or they will expire automatically. 
       Once vouchers have been claimed on the Edenred website, 
       they will be valid for 12 months.
     </p>
@@ -151,7 +164,7 @@ const freeSchoolMeals = new ContentSaC(
       please contact your child's school for help in the first instance. 
       You can also contact the Edenred helpline 
       on <a href="tel:0333 4445932">0333 4445932</a> 
-      or, if you live in Sheffield, contact the Free School Meals team.
+      or contact the Free School Meals team.
     </p>
     <details class="accordion">
       <summary class="accordion-header">
@@ -282,10 +295,6 @@ const freeSchoolMeals = new ContentSaC(
               You will need to reapply if you have previously not been eligible for
               free school meals but think that you are now eligible.
             </p>
-            <p>
-              If the child/ren is/are eligible under Universal Credit, you will not
-              need to reapply for Free School Meals until April 2023.
-            </p>
           </div>
         </details>
         <details class="details-accordion">
@@ -360,7 +369,7 @@ const freeSchoolMeals = new ContentSaC(
     ],
     categories: ["School and Childcare"],
   },
-  { date: "02/12/2024", name: "Andy Walker" }
+  { date: "08/05/2025", name: "Dinah Williams" }
 );
 
 const fundedEarlyLearning = new ContentSaC(
@@ -427,8 +436,20 @@ const fundedEarlyLearning = new ContentSaC(
       apply to HMRC.
       <a href="https://www.childcarechoices.gov.uk" target="_blank">https://www.childcarechoices.gov.uk</a>
       <br>
-      <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Childcare%20Choicess'"> Send Link </button>
-
+  
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Childcare%20Choices\`
+    "
+>
+    Send link to review further information
+   </button>
+ 
     </p>
     <p>
       From September 2025: <br>
@@ -443,7 +464,20 @@ const fundedEarlyLearning = new ContentSaC(
     For further information, visit 
     <a href="https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice" target="_blank">https://www.sheffield.gov.uk/schools-childcare/childcare-funding-support-and-advice</a>.
     <br>
-    <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Childcare%20funding%20support%20and%20advice'"> Send Link </button>
+    
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Childcare%20funding%20support%20and%20advice\`
+    "
+>
+    Send link to review further information
+ </button>
+
 
     </p>
   `,
@@ -481,7 +515,7 @@ const fundedEarlyLearning = new ContentSaC(
     ],
     categories: ["School and Childcare"],
   },
-  { date: "02/12/2024", name: "Andy Walker" }
+  { date: "08/05/2025", name: "Dinah Williams" }
 );
 
 const schoolFoodVoucher = new ContentSaC(
@@ -517,7 +551,19 @@ const schoolFoodVoucher = new ContentSaC(
       both useful as references, these are available on 
       <a href="http://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers/"target="_blank">www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers</a>
       <br>
-       <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Edenred'"> Send Link </button>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Edenred\`
+    "
+>
+    Send link to review further information
+  </button>
 
     </p>
     <details class="accordion">
@@ -542,12 +588,37 @@ const schoolFoodVoucher = new ContentSaC(
             <p>
               You can redeem your eCode button on the website:
               <a href="https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Vouchers"target="_blank">https://www.edenred.co.uk/reward-recipients/Free-School-Meal-Voucher</a><br>
-               <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Edenred'"> Send Link </button>
-              <br>
+                           
+        <button
+              type="button"
+              class="dform_widget email-btn dform_widget_type_button"
+              aria-label="For further information send link"
+              onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Edenred\`
+        "
+        >
+              Send link to review further information
+        </button>
+            
+               <br>
               or you can visit:
               <a href="http://www.selectyourcompliment.co.uk" target="_blank">www.selectyourcompliment.co.uk</a>
               <br>
-              <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Childcare%20funding%20support%20and%20advice'"> Send Link </button>
+      <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Childcare%20funding%20support%20and%20advice\`
+    "
+>
+           Send link to review further information
+      </button>
+              
             </p>
             <p>Enter the code into the box on the website and click Redeem</p>
             <ol>
@@ -632,7 +703,7 @@ const schoolFoodVoucher = new ContentSaC(
               their child already receive Free School Meal?
             </p>
             <p>
-              Take customers name, address ,telephone number, email address and name
+              Take customers name, address, telephone number, email address and name
               of child and email this to
               <a href="mailto:wintergrants@sheffield.gov.uk"
                 >wintergrants@sheffield.gov.uk</a
@@ -732,7 +803,7 @@ const schoolFoodVoucher = new ContentSaC(
     ],
     categories: ["School and Childcare"],
   },
-  { date: "18/09/2024", name: "Dinah Willaims" }
+  { date: "13/05/2025", name: "Dinah Williams" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
@@ -742,5 +813,5 @@ const schoolsAndChildcare = new ServiceSaC(
   "schoolsAndChildcare",
   "Schools and Childcare",
   `Admissions, catchment areas, find schools, school travel, attendance, childcare and nurseries, teaching jobs…`,
-  [freeSchoolMeals, schoolFoodVoucher, fundedEarlyLearning]
+  [freeSchoolMeals, fundedEarlyLearning, schoolFoodVoucher]
 );
