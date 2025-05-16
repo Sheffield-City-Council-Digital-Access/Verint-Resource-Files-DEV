@@ -11655,6 +11655,7 @@ const housing = new ServiceH(
     leaseholderInformation,
     rehousing,
     rents,
+    repairs,
     shelteredAndSupported,
     tenancyEnforcementASB,
     tenancySustainment,
