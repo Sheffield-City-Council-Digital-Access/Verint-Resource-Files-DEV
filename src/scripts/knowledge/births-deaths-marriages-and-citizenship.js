@@ -795,6 +795,20 @@ const registerABirth = new ContentBDMaC(
   "Register a birth",
 ` 
     <p> <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death"> https://www.sheffield.gov.uk/births-deaths-marriages/register-death </a></p> 
+
+        <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.open(\`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20a%20death\`, '_blank')
+    "
+    >
+
+    Send link to review further information
+    </button>
     
     <p>
     All births in England, Wales and Northern Ireland must be registered within 42 days of the 
