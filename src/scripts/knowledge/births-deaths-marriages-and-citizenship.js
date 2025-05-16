@@ -711,7 +711,7 @@ const registerABirthAndDeath = new ContentBDMaC(
   "Register a Birth and Death",
   "Register a birth and death",
   `
-  <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p> 	<br> <button onclick="window.location.href='https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20or%20reregister%20a%20birth'"> Send Link </button>
+  <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p> 	
 
 <button
   type="button"
@@ -795,6 +795,20 @@ const registerABirth = new ContentBDMaC(
   "Register a birth",
 ` 
     <p> <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death"> https://www.sheffield.gov.uk/births-deaths-marriages/register-death </a></p> 
+
+        <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.open(\`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Register%20a%20death\`, '_blank')
+    "
+    >
+
+    Send link to review further information
+    </button>
     
     <p>
     All births in England, Wales and Northern Ireland must be registered within 42 days of the 
@@ -812,9 +826,6 @@ const registerABirth = new ContentBDMaC(
     </a>.
     </p>
 
-    <p>
-    <button onclick="window.open('https://sheffielddev.form.ukpreview.empro.verintcloudservices.com/form/launch/send_link_to_service?sel_service=Register%20or%20reregister%20a%20birth', '_blank')">Send Link</button>
-    </p>
     <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
