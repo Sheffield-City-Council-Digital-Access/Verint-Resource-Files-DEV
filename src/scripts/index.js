@@ -1519,9 +1519,7 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     main.responsibility ||
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
     main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
-    bg.sitecode
-      ? "CHS"
-      : "";
+    (bg.sitecode ? "CHS" : "");
   const prestige =
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category"] ||
     main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category"] ||
@@ -4701,38 +4699,37 @@ function getValidationMessageFromSession(id) {
   }
 }
 
-
 //#region CopyToClipboard
-function copyToClipboard(text) 
-{
-  navigator.clipboard.writeText(text).then(() => 
-    {
+function copyToClipboard(text) {
+  navigator.clipboard
+    .writeText(text)
+    .then(() => {
       showPopup("Copied " + text);
-    }).catch(err => {
+    })
+    .catch((err) => {
       console.error("Failed to copy:", err);
     });
 }
 
-function showPopup(message) 
-{
-  const popup = document.createElement('div');
+function showPopup(message) {
+  const popup = document.createElement("div");
   popup.textContent = message;
-  popup.style.position = 'fixed';
-  popup.style.bottom = '20px';
-  popup.style.right = '20px';
-  popup.style.background = '#333';
-  popup.style.color = '#fff';
-  popup.style.padding = '10px 15px';
-  popup.style.borderRadius = '8px';
-  popup.style.fontSize = '14px';
-  popup.style.zIndex = '9999';
-  popup.style.boxShadow = '0 0 10px rgba(0,0,0,0.3)';
-  popup.style.opacity = '1';
-  popup.style.transition = 'opacity 0.5s ease';
+  popup.style.position = "fixed";
+  popup.style.bottom = "20px";
+  popup.style.right = "20px";
+  popup.style.background = "#333";
+  popup.style.color = "#fff";
+  popup.style.padding = "10px 15px";
+  popup.style.borderRadius = "8px";
+  popup.style.fontSize = "14px";
+  popup.style.zIndex = "9999";
+  popup.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
+  popup.style.opacity = "1";
+  popup.style.transition = "opacity 0.5s ease";
   document.body.appendChild(popup);
 
   setTimeout(() => {
-    popup.style.opacity = '0';
+    popup.style.opacity = "0";
   }, 1500);
 
   setTimeout(() => {
