@@ -581,6 +581,8 @@ function handleOnReadyEvent(_, kdf) {
         {}
       );
     }
+
+    KDF.setWidgetNotRequired("eml_address");
   }
 
   // --- SET EQUALITIES LINK ----------------------------------------------- \\
