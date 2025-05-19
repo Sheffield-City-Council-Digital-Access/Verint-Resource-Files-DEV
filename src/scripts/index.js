@@ -2627,8 +2627,25 @@ function validDate(id, day, month, year, activeField) {
   const { minDate, maxDate } = getMinMaxDates(dateElementId);
 
   // Validate against min and max dates
+  // if (date < minDate) {
+  //   const yearsPast = new Date().getFullYear() - minDate.getFullYear();
+  //   if (yearsPast > 0) {
+  //     validationMsg
+  //       .text(
+  //         `Date cannot be more than ${yearsPast} ${getYearLabel(
+  //           yearsPast
+  //         )} in the past`
+  //       )
+  //       .show();
+  //   } else {
+  //     validationMsg.text(`Date can't be before today`).show();
+  //   }
+  //   return false;
+  // }
+
   if (date < minDate) {
     const yearsPast = new Date().getFullYear() - minDate.getFullYear();
+
     if (yearsPast > 0) {
       validationMsg
         .text(
@@ -2638,7 +2655,21 @@ function validDate(id, day, month, year, activeField) {
         )
         .show();
     } else {
-      validationMsg.text(`Date can't be before today`).show();
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+
+      if (minDate <= today) {
+        validationMsg.text(`Date can't be before today`).show();
+      } else {
+        const formattedMinDate = `${String(minDate.getDate()).padStart(
+          2,
+          "0"
+        )} ${String(minDate.getMonth() + 1).padStart(
+          2,
+          "0"
+        )} ${minDate.getFullYear()}`;
+        validationMsg.text(`Date can't be before ${formattedMinDate}`).show();
+      }
     }
     return false;
   }
