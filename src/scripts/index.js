@@ -2661,9 +2661,13 @@ function validDate(id, day, month, year, activeField) {
       if (minDate <= today) {
         validationMsg.text(`Date can't be before today`).show();
       } else {
-        const formattedMinDate = `${minDate.getDate()} ${
-          minDate.getMonth() + 1
-        } ${minDate.getFullYear()}`;
+        const formattedMinDate = `${String(minDate.getDate()).padStart(
+          2,
+          "0"
+        )} ${String(minDate.getMonth() + 1).padStart(
+          2,
+          "0"
+        )} ${minDate.getFullYear()}`;
         validationMsg.text(`Date can't be before ${formattedMinDate}`).show();
       }
     }
