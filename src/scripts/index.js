@@ -2627,8 +2627,25 @@ function validDate(id, day, month, year, activeField) {
   const { minDate, maxDate } = getMinMaxDates(dateElementId);
 
   // Validate against min and max dates
+  // if (date < minDate) {
+  //   const yearsPast = new Date().getFullYear() - minDate.getFullYear();
+  //   if (yearsPast > 0) {
+  //     validationMsg
+  //       .text(
+  //         `Date cannot be more than ${yearsPast} ${getYearLabel(
+  //           yearsPast
+  //         )} in the past`
+  //       )
+  //       .show();
+  //   } else {
+  //     validationMsg.text(`Date can't be before today`).show();
+  //   }
+  //   return false;
+  // }
+
   if (date < minDate) {
     const yearsPast = new Date().getFullYear() - minDate.getFullYear();
+
     if (yearsPast > 0) {
       validationMsg
         .text(
@@ -2638,7 +2655,21 @@ function validDate(id, day, month, year, activeField) {
         )
         .show();
     } else {
-      validationMsg.text(`Date can't be before today`).show();
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+
+      if (minDate <= today) {
+        validationMsg.text(`Date can't be before today`).show();
+      } else {
+        const formattedMinDate = `${String(minDate.getDate()).padStart(
+          2,
+          "0"
+        )}-${String(minDate.getMonth() + 1).padStart(
+          2,
+          "0"
+        )}-${minDate.getFullYear()}`;
+        validationMsg.text(`Date can't be before ${formattedMinDate}`).show();
+      }
     }
     return false;
   }
@@ -4701,38 +4732,37 @@ function getValidationMessageFromSession(id) {
   }
 }
 
-
 //#region CopyToClipboard
-function copyToClipboard(text) 
-{
-  navigator.clipboard.writeText(text).then(() => 
-    {
+function copyToClipboard(text) {
+  navigator.clipboard
+    .writeText(text)
+    .then(() => {
       showPopup("Copied " + text);
-    }).catch(err => {
+    })
+    .catch((err) => {
       console.error("Failed to copy:", err);
     });
 }
 
-function showPopup(message) 
-{
-  const popup = document.createElement('div');
+function showPopup(message) {
+  const popup = document.createElement("div");
   popup.textContent = message;
-  popup.style.position = 'fixed';
-  popup.style.bottom = '20px';
-  popup.style.right = '20px';
-  popup.style.background = '#333';
-  popup.style.color = '#fff';
-  popup.style.padding = '10px 15px';
-  popup.style.borderRadius = '8px';
-  popup.style.fontSize = '14px';
-  popup.style.zIndex = '9999';
-  popup.style.boxShadow = '0 0 10px rgba(0,0,0,0.3)';
-  popup.style.opacity = '1';
-  popup.style.transition = 'opacity 0.5s ease';
+  popup.style.position = "fixed";
+  popup.style.bottom = "20px";
+  popup.style.right = "20px";
+  popup.style.background = "#333";
+  popup.style.color = "#fff";
+  popup.style.padding = "10px 15px";
+  popup.style.borderRadius = "8px";
+  popup.style.fontSize = "14px";
+  popup.style.zIndex = "9999";
+  popup.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
+  popup.style.opacity = "1";
+  popup.style.transition = "opacity 0.5s ease";
   document.body.appendChild(popup);
 
   setTimeout(() => {
-    popup.style.opacity = '0';
+    popup.style.opacity = "0";
   }, 1500);
 
   setTimeout(() => {
