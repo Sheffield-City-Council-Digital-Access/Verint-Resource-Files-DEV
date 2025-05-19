@@ -2626,23 +2626,6 @@ function validDate(id, day, month, year, activeField) {
   const dateElementId = id.replace("_date_", "_dt_");
   const { minDate, maxDate } = getMinMaxDates(dateElementId);
 
-  // Validate against min and max dates
-  // if (date < minDate) {
-  //   const yearsPast = new Date().getFullYear() - minDate.getFullYear();
-  //   if (yearsPast > 0) {
-  //     validationMsg
-  //       .text(
-  //         `Date cannot be more than ${yearsPast} ${getYearLabel(
-  //           yearsPast
-  //         )} in the past`
-  //       )
-  //       .show();
-  //   } else {
-  //     validationMsg.text(`Date can't be before today`).show();
-  //   }
-  //   return false;
-  // }
-
   if (date < minDate) {
     const yearsPast = new Date().getFullYear() - minDate.getFullYear();
 
@@ -2717,6 +2700,20 @@ function validDate(id, day, month, year, activeField) {
   }
 
   return true; // If all validations pass
+}
+
+function updateMinDate(startDateValue, endDateElement, offsetDays) {
+  const startDate = new Date(startDateValue);
+  if (!isNaN(startDate)) {
+    const minDate = new Date(startDate);
+    minDate.setDate(startDate.getDate() + offsetDays);
+
+    const formattedMinDate = minDate.toISOString().split("T")[0];
+    $(`#dform_widget_${endDateElement}`)
+      .attr("min", formattedMinDate)
+      .attr("data-mindate", "2025-06-13")
+      .attr("data-maxdate", "2030-05-19");
+  }
 }
 
 // --- PROGRESS BAR --------------------------------------------------------- \\
