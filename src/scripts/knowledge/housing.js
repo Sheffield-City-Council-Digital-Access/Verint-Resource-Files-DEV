@@ -1293,7 +1293,7 @@ const homeImprovementRequests = new ContentH(
   "Understand the process for requesting permission for home improvements to the District Heating Network and associated responsibilities.",
   `
   <p>
-    Please Call the RPIT on <a href="tel:0114 2052615">0114 2052615</a> for permission requests to carry out work/home 
+    Please Call the Repairs Policy and Improvement Team (RPIT) on <a href="tel:0114 2052615">0114 2052615</a> for permission requests to carry out work/home 
     improvements to the District Heating Network i.e. replacing radiators. Required 
     maintenance to resolve unauthorised work to the District Hearting network will be invoiced to the tenant/homeowner.
   </p>
