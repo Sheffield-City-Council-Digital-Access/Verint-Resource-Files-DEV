@@ -553,7 +553,7 @@ const adaptationChase = new ContentH(
   `,
   { buttonLabel: "Housing Adaptations Request", formName: "hou_adaptations" },
   { typeKey: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
   {
     type: "Information",
     keywords: [
@@ -609,7 +609,7 @@ const adaptationOther = new ContentH(
     formName: "hou_adaptations",
   },
   { typeKey: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
 
   {
     type: "Information",
@@ -846,7 +846,7 @@ const asbestos = new ContentH(
     formName: "hou_sustainment_decants",
   },
   { typeKey: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
   {
     type: "Information",
     keywords: [
@@ -903,8 +903,8 @@ const carbonMonoxide = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -940,8 +940,8 @@ const communalAerials = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1063,8 +1063,8 @@ const districtHeating = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1189,8 +1189,8 @@ const doorEntrySystems = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1225,8 +1225,8 @@ const emergencyCredit = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1271,8 +1271,8 @@ const emergencyRepairs = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1302,8 +1302,8 @@ const homeImprovementRequests = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1334,8 +1334,8 @@ const homeownerDisconnection = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1406,8 +1406,8 @@ const loststolenkeys = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1449,7 +1449,7 @@ const newAndExistingRepairs = new ContentH(
     formName: "hou_sustainment_decants",
   },
   { typeKey: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
 
   {
     type: "Information",
@@ -1554,8 +1554,8 @@ const payment = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1661,8 +1661,8 @@ const programmedWorks = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1691,8 +1691,8 @@ const propertyAge = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1720,8 +1720,8 @@ const refunds = new ContentH(
   </p>
   `,
   { buttonLabel: "Report Rents Refunds ", formName: "hou_rents_refunds" },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1785,8 +1785,8 @@ const noHeatNoWater = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
   { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "repairs_and_investment_transferred_to_service" },
   {
     type: "Information",
     keywords: [
@@ -1872,8 +1872,8 @@ const tenantsOwnImprovements = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -2797,8 +2797,8 @@ const leaseholderInformation = new ContentH(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3517,8 +3517,8 @@ const bidding = new ContentH(
       </details>
     `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_information_provided" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Apply",
     keywords: [
