@@ -553,7 +553,7 @@ const adaptationChase = new ContentH(
   `,
   { buttonLabel: "Housing Adaptations Request", formName: "hou_adaptations" },
   { typeKey: "" },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -609,7 +609,7 @@ const adaptationOther = new ContentH(
     formName: "hou_adaptations",
   },
   { typeKey: "" },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
 
   {
     type: "Information",
@@ -846,7 +846,7 @@ const asbestos = new ContentH(
     formName: "hou_sustainment_decants",
   },
   { typeKey: "" },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1449,7 +1449,7 @@ const newAndExistingRepairs = new ContentH(
     formName: "hou_sustainment_decants",
   },
   { typeKey: "" },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
+  { typeKey: "repairs_and_investment_information_provided" },
 
   {
     type: "Information",
