@@ -115,8 +115,8 @@ Complaints Procedure – Effective Complaint handling Guide under Documents. </p
   // { buttonLabel: "Make a Suggestion" },
   // { formName: "feedback_suggestion" },
   
+  { typeKey: "" },
   { typeKey: "feedback_services_adult_information_provided" },
-  { typeKey: "feedback_services_adult_information_requested" },
 
   {
     type: "Complaint",
@@ -262,8 +262,8 @@ const childrensSocialCareComplaints = new ContentFaC(
   // { buttonLabel: "Make a Suggestion" },
   // { formName: "feedback_suggestion" },
   
+    { typeKey: "" },
     { typeKey: "feedback_services_child_information_provided" },
-    { typeKey: "feedback_services_child_information_requested" },
     {
     type: "Complaint",
     keywords: [
@@ -325,8 +325,8 @@ const complaints = new ContentFaC(
     buttonLabel: "Make a compliment",
     formName: "make_complaint",
   },
+  { typeKey: "" },
   { typeKey: "feedback_services_complaint_information_provided" },
-  { typeKey: "feedback_services_complaint_information_requested" },
   // {
   //   buttonLabel: "Make a compliment",
   //   formName: "feedback_compliment",
@@ -448,8 +448,8 @@ Within 5 working days of receipt of the complaint.
   
   
   
+  { typeKey: "" },
   { typeKey: "feedback_services_complaint_information_provided" },
-  { typeKey: "feedback_services_complaint_information_requested" },
   {
     type: "Complaint",
     keywords: [
