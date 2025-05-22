@@ -322,7 +322,7 @@ const complaints = new ContentFaC(
 
   `,
   {
-    buttonLabel: "Make a compliment",
+    buttonLabel: "Make a complaint",
     formName: "make_complaint",
   },
   { typeKey: "" },
