@@ -351,6 +351,31 @@ const complaints = new ContentFaC(
   { date: "11/11/2024", name: "Sam Coupland" }
 );
 
+
+const compliment = new FormFaC(
+  "compliment",
+  "Compliments",
+  "Log a compliment about our service.",
+  "feedback_compliment",
+  {
+    type: "Make",
+    keywords: 
+    [
+      "complaints",
+      "compliments",
+      "compliment",
+      "complament",
+      "feadback and complaints",
+      "feedback and complants",
+      "feedbak and complaints",
+      "feedback and complaits",
+      "fedback and complaints"
+    ],
+    categories: ["feedback and complaints"],
+  },
+  { date: "22/05/2025", name: "Sam Coupland" }
+);
+
 const corporateComplaintsProcedure = new ContentFaC(
   "corporateComplaintsProcedure",
   "Corporate complaints procedure",
@@ -475,6 +500,7 @@ const feedbackAndComplaints = new ServiceFaC(
       adultsocialcarecomplaints,
       childrensSocialCareComplaints,
       complaints,
+      compliment,
       corporateComplaintsProcedure
     ]
 );
