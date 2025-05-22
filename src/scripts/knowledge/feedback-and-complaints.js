@@ -352,7 +352,7 @@ const complaints = new ContentFaC(
 );
 
 
-const compliment = new FormOoH(
+const compliment = new FormFaC(
   "compliment",
   "Compliments",
   "Log a compliment about our service.",
