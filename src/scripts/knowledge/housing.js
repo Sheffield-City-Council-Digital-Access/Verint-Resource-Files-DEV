@@ -9444,6 +9444,31 @@ const workingatHeight = new ContentH(
   { date: "28/04/2025", name: "Shahzad Athar" }
 );
 
+const newHousingPin = new FormH(
+  "newHousingPin",
+  "New Housing Pin",
+  "Send a customer an email of their new housing pin",
+  "send_housing_pin",
+  {
+    type: "Request",
+    keywords: 
+    [
+      "Housing Pin",
+      "Repair Pin",
+      "Repairs Pin",
+      "Housing Password",
+      "Repair Password",
+      "Repairs Password",
+      "Housing Repair Pin",
+      "Housing Repairs Pin",
+      "Repair Housing Pin",
+      "Repairs Housing Pin"
+    ],
+    categories: ["Repair"],
+  },
+  { date: "22/05/2025", name: "Sam Coupland" }
+);
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -9502,6 +9527,7 @@ const repairs = new MenuH(
     windowSillorCill,
     windowFrame,
     workingatHeight,
+    newHousingPin
   ]
 );
 
