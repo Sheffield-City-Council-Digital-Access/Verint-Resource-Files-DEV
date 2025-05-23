@@ -9527,7 +9527,7 @@ const repairs = new MenuH(
     windowSillorCill,
     windowFrame,
     workingatHeight,
-    newHousingPin,
+    newHousingPin
   ]
 );
 
