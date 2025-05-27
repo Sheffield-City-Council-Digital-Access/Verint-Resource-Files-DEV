@@ -146,7 +146,7 @@ class FormDaMH extends CoreDaMH {
         <ul>
         <li>SNIPS activity including mainstream leisure clubs such as:
             <li>guides</li>
-            <li>scouts<li>
+            <li>scouts</li>
             <li>sports club (tennis, football, swimming, karate etc)</li>
             <li>where children without additional needs or disabilities also attend short break clubs
              for disabled children only</li>
