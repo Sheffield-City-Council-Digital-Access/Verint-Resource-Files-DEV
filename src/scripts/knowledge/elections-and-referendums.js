@@ -1188,7 +1188,7 @@ const applyingForPostalVote = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/11/2024", name: "Nathan Smith" }
+  { date: "28/05/2025", name: "Joseph Coupland" }
 );
 
 const postalProxyVote = new ContentEaR(
