@@ -1173,7 +1173,7 @@ const applyingForPostalVote = new ContentEaR(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "applying_for_postal_vote_infomation_provided" },
+  { typeKey: "postal_or_proxy_voting_information_provided" },
   {
     type: "Request",
     keywords: [
