@@ -102,7 +102,7 @@ Complaints Procedure – Effective Complaint handling Guide under Documents. </p
   `,
   {
     buttonLabel: "Make an adult's social care complaint",
-    formName: "make_complaint_adult",
+    formName: "complain_adult_social",
   },
   // {
   //   buttonLabel: "Make a compliment",
@@ -115,8 +115,8 @@ Complaints Procedure – Effective Complaint handling Guide under Documents. </p
   // { buttonLabel: "Make a Suggestion" },
   // { formName: "feedback_suggestion" },
   
-  { typeKey: "make_complaint_adult_information_provided" },
-  { typeKey: "make_complaint_adult_information_requested" },
+  { typeKey: "" },
+  { typeKey: "feedback_services_adult_information_provided" },
 
   {
     type: "Complaint",
@@ -249,7 +249,7 @@ const childrensSocialCareComplaints = new ContentFaC(
 `,
   {
     buttonLabel: "Make a children's social care complaint",
-    formName: "make_complaint_childrens",
+    formName: "complain_child_social",
   },
   // {
   //   buttonLabel: "Make a compliment",
@@ -262,8 +262,8 @@ const childrensSocialCareComplaints = new ContentFaC(
   // { buttonLabel: "Make a Suggestion" },
   // { formName: "feedback_suggestion" },
   
-    { typeKey: "make_complaint_children_information_provided" },
-    { typeKey: "make_complaint_children_information_requested" },
+    { typeKey: "" },
+    { typeKey: "feedback_services_child_information_provided" },
     {
     type: "Complaint",
     keywords: [
@@ -322,11 +322,11 @@ const complaints = new ContentFaC(
 
   `,
   {
-    buttonLabel: "Make a compliment",
+    buttonLabel: "Make a complaint",
     formName: "make_complaint",
   },
-  { typeKey: "make_complaint_information_provided" },
-  { typeKey: "make_complaint_information_requested" },
+  { typeKey: "" },
+  { typeKey: "feedback_services_complaint_information_provided" },
   // {
   //   buttonLabel: "Make a compliment",
   //   formName: "feedback_compliment",
@@ -349,6 +349,31 @@ const complaints = new ContentFaC(
     categories: ["Feedback and Complaint"],
   },
   { date: "11/11/2024", name: "Sam Coupland" }
+);
+
+
+const compliment = new FormFaC(
+  "compliment",
+  "Compliments",
+  "Log a compliment about our service.",
+  "feedback_compliment",
+  {
+    type: "Make",
+    keywords: 
+    [
+      "complaints",
+      "compliments",
+      "compliment",
+      "complament",
+      "feadback and complaints",
+      "feedback and complants",
+      "feedbak and complaints",
+      "feedback and complaits",
+      "fedback and complaints"
+    ],
+    categories: ["feedback and complaints"],
+  },
+  { date: "22/05/2025", name: "Sam Coupland" }
 );
 
 const corporateComplaintsProcedure = new ContentFaC(
@@ -448,8 +473,8 @@ Within 5 working days of receipt of the complaint.
   
   
   
-  { typeKey: "make_complaint_information_provided" },
-  { typeKey: "make_complaint_information_requested" },
+  { typeKey: "" },
+  { typeKey: "feedback_services_complaint_information_provided" },
   {
     type: "Complaint",
     keywords: [
@@ -475,6 +500,7 @@ const feedbackAndComplaints = new ServiceFaC(
       adultsocialcarecomplaints,
       childrensSocialCareComplaints,
       complaints,
+      compliment,
       corporateComplaintsProcedure
     ]
 );
