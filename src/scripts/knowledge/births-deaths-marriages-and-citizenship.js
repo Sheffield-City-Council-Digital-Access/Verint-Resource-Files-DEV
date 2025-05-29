@@ -711,7 +711,16 @@ const registerABirthAndDeath = new ContentBDMaC(
   "Register a Birth and Death",
   "Register a birth and death",
   `
-  <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p> 	
+<p>For appointment bookings, please escalate the call to the Register Office by contacting them directly on:.
+
+  <a href="#" class="telephoneNumber" onclick="copyToClipboard('07786126904')">07786126904</a>
+
+<p/>
+
+  <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a>
+  
+  
+  </p> 	
 
 <button
   type="button"
