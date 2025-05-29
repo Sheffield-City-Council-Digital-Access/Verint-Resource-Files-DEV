@@ -452,21 +452,24 @@ const replacementBlueBadge = new ContentP(
       "bbadge",
       "blue bdge",
       "badg",
-      "parkin",
-      "prking",
       "bb",
       "Blue Badge",
       "blue badge",
+      "lost",
+      "lost and stolen",
       "replacement",
       "replacment",
       "replc",
       "replacmnt",
+      "stolen",
       "badge replacement",
       "blue badge replacemnt",
+      "parkin",
+      "prking",
     ],
     categories: ["Parking"],
   },
-  { date: "06/03/2025", name: "Dinah Williams" }
+  { date: "28/05/2025", name: "Dinah Williams" }
 );
 
 const blueBadge = new MenuP(
