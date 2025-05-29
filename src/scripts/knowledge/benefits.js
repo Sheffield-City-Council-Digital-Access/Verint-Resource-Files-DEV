@@ -194,8 +194,8 @@ const applyForTheHouseholdSupportFund = new ContentB(
 
 const CabReferral = new FormB(
   "CabReferral",
-  "New Housing Pin",
   "Citizens Advice Bureau (CAB) Referral",
+  "Make a Referral to Citizens Advice Bureau (CAB) for a food bank.",
   "food_bank_referral",
   {
     type: "Request",
