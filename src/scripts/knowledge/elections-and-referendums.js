@@ -567,79 +567,6 @@ const assistanceForPartiallySightedVoters = new ContentEaR(
   { date: "03/12/2024", name: "Andy Walker" }
 );
 
-
-const howToCompletePostalVote = new ContentEaR(
-  "howToCompletePostalVote",
-  "How to complete Postal Vote",
-  "Step-by-step guide on completing a postal vote, including marking, sealing, and returning your ballot securely.",
-  `
-  <p>
-     If you would prefer to return your ballot paper by post rather than going to the polling station you must apply for a postal vote.
-     If you vote by post, your poll card will confirm the address where you have asked us to send your postal vote pack,
-     what to do if you have lost or spoilt all or part of your pack, or if you haven’t received it.
-  </p>
-  <p>It is now possible to apply to vote by post using the government’s online service or by using a paper form requested from us.
-     However, you must now provide your national insurance number as part of the application. Signatures must still be handwritten, not typed in.
-  </p>
-  <p>
-  <a href="https://www.gov.uk/apply-for-a-postal-vote">GOV.UK: Apply for a postal vote</a>
-
-  <button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=How%20to%20apply%20for%20a%20postal%20vote\`
-    "
->
-    Send link to review further information
-</button>
-
-  </p>
-  <p>
-    You can send a scanned copy of a paper form by email to: 
-    <a href="mailto:electoralservices@sheffield.gov.uk">electoralservices@sheffield.gov.uk</a> 
-    or post the completed form to:
-    </p>
-       <address>
-        Electoral Services<br>
-        Town Hall<br>
-        Pinstone Street<br>
-        Sheffield<br>
-        S1 2HH
-      </address>      
-    <p>
-    You can get a replacement for a lost or spoiled ballot paper up to 5pm on polling day from the Town Hall.</p>
-     <section class="info-panel" role="region" aria-label="Information panel">
-    <p>
-          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
-    </p>
-      </section>
-    <p>
-      <Strong>Advisor Note:</Strong> You can also access instructions on how to complete a postal vote via weberos.
-     </p>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "elections_and_voting_information_provided" },
-  {
-    type: "Request",
-    keywords: [
-      "elections",
-      "ele",
-      "elect",
-      "post",
-      "vote",
-      "voting",
-      "voters"
-    ],
-    categories: ["Elections and Referendums", "Electoral"],
-  },
-  { date: "17/03/2025", name: "Dinah Williams" }
-);
-
 const localElections = new ContentEaR(
   "localElections",
   "Local Elections",
@@ -1173,7 +1100,7 @@ const applyingForPostalVote = new ContentEaR(
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "applying_for_postal_vote_infomation_provided" },
+  { typeKey: "postal_or_proxy_voting_information_provided" },
   {
     type: "Request",
     keywords: [
@@ -1188,8 +1115,82 @@ const applyingForPostalVote = new ContentEaR(
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "25/11/2024", name: "Nathan Smith" }
+  { date: "28/05/2025", name: "Joseph Coupland" }
 );
+
+
+const howToCompletePostalVote = new ContentEaR(
+  "howToCompletePostalVote",
+  "How to complete Postal Vote",
+  "Step-by-step guide on completing a postal vote, including marking, sealing, and returning your ballot securely.",
+  `
+  <p>
+     If you would prefer to return your ballot paper by post rather than going to the polling station you must apply for a postal vote.
+     If you vote by post, your poll card will confirm the address where you have asked us to send your postal vote pack,
+     what to do if you have lost or spoilt all or part of your pack, or if you haven’t received it.
+  </p>
+  <p>It is now possible to apply to vote by post using the government’s online service or by using a paper form requested from us.
+     However, you must now provide your national insurance number as part of the application. Signatures must still be handwritten, not typed in.
+  </p>
+  <p>
+  <a href="https://www.gov.uk/apply-for-a-postal-vote">GOV.UK: Apply for a postal vote</a>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=How%20to%20apply%20for%20a%20postal%20vote\`
+    "
+>
+    Send link to review further information
+</button>
+
+  </p>
+  <p>
+    You can send a scanned copy of a paper form by email to: 
+    <a href="mailto:electoralservices@sheffield.gov.uk">electoralservices@sheffield.gov.uk</a> 
+    or post the completed form to:
+    </p>
+       <address>
+        Electoral Services<br>
+        Town Hall<br>
+        Pinstone Street<br>
+        Sheffield<br>
+        S1 2HH
+      </address>      
+    <p>
+    You can get a replacement for a lost or spoiled ballot paper up to 5pm on polling day from the Town Hall.</p>
+     <section class="info-panel" role="region" aria-label="Information panel">
+    <p>
+          Click <a href="http://sccvmazelt02/WebEros/" target="_blank">here</a> to access WebEros.
+    </p>
+      </section>
+    <p>
+      <Strong>Advisor Note:</Strong> You can also access instructions on how to complete a postal vote via weberos.
+     </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "elections_and_voting_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "elections",
+      "ele",
+      "elect",
+      "post",
+      "vote",
+      "voting",
+      "voters"
+    ],
+    categories: ["Elections and Referendums", "Electoral"],
+  },
+  { date: "17/03/2025", name: "Dinah Williams" }
+);
+
 
 const postalProxyVote = new ContentEaR(
   "postalProxyVote",

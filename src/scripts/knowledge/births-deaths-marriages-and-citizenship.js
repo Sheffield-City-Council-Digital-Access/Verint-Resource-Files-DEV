@@ -424,7 +424,7 @@ const copyCertificates = new ContentBDMaC(
     </ul>
     <p>Your certificate will be posted to you in 15 working days, please allow 3 days for delivery.</p>
     <h3>Urgent applications</h3>
-    <p>These cost £38.50 including the cost of first-class postage, dispatched within 24 hours.</p>
+    <p>These cost £38.50 including the cost of first-class postage, dispatched within 24 hours.  Please allow 3 working days for delivery.</p>
 
     <p>
     To order a copy of a certificate, please use the 
@@ -711,7 +711,16 @@ const registerABirthAndDeath = new ContentBDMaC(
   "Register a Birth and Death",
   "Register a birth and death",
   `
-  <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a></p> 	
+<p>For appointment bookings, please escalate the call to the Register Office by contacting them directly on:.
+
+  <a href="#" class="telephoneNumber" onclick="copyToClipboard('07786126904')">07786126904</a>
+
+<p/>
+
+  <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a>
+  
+  
+  </p> 	
 
 <button
   type="button"
