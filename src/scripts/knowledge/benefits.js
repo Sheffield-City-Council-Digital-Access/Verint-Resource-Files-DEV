@@ -194,14 +194,25 @@ const applyForTheHouseholdSupportFund = new ContentB(
 
 const CabReferral = new FormB(
   "CabReferral",
+  "New Housing Pin",
   "Citizens Advice Bureau (CAB) Referral",
-  "Send a Referral to the Citizens Advice Bureau on behalf of the customer.",
-  `
-  `,
-  { buttonLabel: "CAB Referral", formName: "food_bank_referral" },
-  { typeKey: "" },
-  { typeKey: "cost_of_living_scheme_information_provided" },
-  { type: "Information", keywords: [], categories: ["benefits"] },
+  "food_bank_referral",
+  {
+    type: "Request",
+    keywords: 
+    [
+      "CAB Referral",
+      "CAB",
+      "Foodbank",
+      "Food Bank",
+      "Food",
+      "Food Referral",
+      "Foodbank Referral",
+      "Bank Referral",
+      "Referral Foodbank"
+    ],
+    categories: ["Cost of Living"],
+  },
   { date: "29/05/2025", name: "Sam Coupland" }
 );
 
