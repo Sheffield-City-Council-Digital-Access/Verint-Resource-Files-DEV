@@ -321,6 +321,29 @@ const applyBlueBadge = new ContentP(
     <p>Once Sheffield City Council have ordered the Blue Badge it can take up to 2 weeks to receive.</p>
     </div>
   </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+    <h3>Request Paper Application</h3>
+    <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+<p>To request a Blue Badge paper application, follow this link:</p>
+
+<a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/blue_badge_enquiry?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${
+    KDF.getParams().interactionid
+  }">Blue Badge enquiry</a>
+
+    </div>
+  </details>
+
+
   `,
   {
     buttonLabel: "Apply for a blue badge",
