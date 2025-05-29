@@ -192,6 +192,19 @@ const applyForTheHouseholdSupportFund = new ContentB(
   { date: "02/12/2024", name: "Andy Walker" }
 );
 
+const CabReferral = new FormB(
+  "CabReferral",
+  "Citizens Advice Bureau (CAB) Referral",
+  "Send a Referral to the Citizens Advice Bureau on behalf of the customer.",
+  `
+  `,
+  { buttonLabel: "CAB Referral", formName: "food_bank_referral" },
+  { typeKey: "" },
+  { typeKey: "cost_of_living_scheme_information_provided" },
+  { type: "Information", keywords: [], categories: ["benefits"] },
+  { date: "29/05/2025", name: "Sam Coupland" }
+);
+
 const employmentSupport = new ContentB(
   "employmentSupport",
   "Employment support",
@@ -3104,6 +3117,7 @@ const costOfLiving = new MenuB(
   "Everyone is affected by the cost-of-living crisis in some shape or form. Here you can find out the local and national support available to help you manage the cost of living in Sheffield.",
   [
     applyForTheHouseholdSupportFund,
+    CabReferral,
     employmentSupport,
     energySupport,
     findFoodSupportAndResources,
@@ -3113,7 +3127,7 @@ const costOfLiving = new MenuB(
     supportFund,
     travelSupport,
     waysToReduceYourFuelBills,
-    welcomePlaces,
+    welcomePlaces
   ]
 );
 
