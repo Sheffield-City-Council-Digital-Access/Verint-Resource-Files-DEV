@@ -1950,12 +1950,12 @@ const communalCupboard = new ContentH(
     </p>
 <ul>
   <li>North – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142037018')">0114 203 7018</a></li>
-  <li>North East – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142037445')">0114 203 7445</a></li>
+  <li>North East – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142037445')">0114 2037445</a></li>
   <li>Central – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142037022')">0114 203 7022</a></li>
-  <li>South West – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142037120')">0114 203 7120</a></li>
-  <li>South East – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142039339')">0114 203 9339</a></li>
-  <li>East – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142039148')">0114 203 9148</a></li>
-  <li>Sheltered – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142037022')">0114 203 7022</a></li>
+  <li>South West – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142037120')">0114 2037120</a></li>
+  <li>South East – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142039339')">0114 2039339</a></li>
+  <li>East – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142039148')">0114 2039148</a></li>
+  <li>Sheltered – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142037022')">0114 2037022</a></li>
 </ul>
 
   `,
