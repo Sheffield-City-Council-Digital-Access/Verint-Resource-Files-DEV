@@ -2649,6 +2649,19 @@ const pestControl = new MenuPaN(
 
 //#endregion Pest Control
 
+const reportFilthyPremises = new FormPaN(
+  "reportFilthyPremises",
+  "Report Filthy Premises",
+  "Hand over a dog to the council",
+  "report_filthy_premises",
+  {
+    type: "Report",
+    keywords: ["Filthy Premises", "Filthy Premise","Filthy","Premise"],
+    categories: ["Pollution and Nuisance", "Environmental", "Environmental Health"],
+  },
+  { date: "30/05/2025", name: "Gee Whitehouse" }
+);
+
 const reportNeedlesGlass = new FormPaN(
   "reportNeedlesGlass",
   "Needles or broken glass",
@@ -3213,6 +3226,7 @@ const pollutionAndNuisance = new ServicePaN(
     pestControl,
     reportDangerousDog, 
     reportDogFouling,
+    reportFilthyPremises,
     reportStrayingDog,
     reportDogAsLost,
     handoverDogtoCouncil,
