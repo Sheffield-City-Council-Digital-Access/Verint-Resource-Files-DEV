@@ -1880,8 +1880,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
         { name: "but_view_rent_account", display: ohmsId ? "show" : "hide" },
       ]);
 
-      // Removing validation of hidden fields
-      // Causes the process to loop
+      // Field/Server validation causing form to loop
       const $phoneNumber = $("#dform_widget_tel_phone_number");
       let val = $phoneNumber.val().replace(/\s+/g, "");
       if (val.startsWith("+44") && !val.startsWith("+440")) {
@@ -1896,12 +1895,15 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       $phoneNumber.removeAttr("pattern").val(val).change();
 
       $("#dform_widget_eml_address").removeAttr("pattern");
+
       $("#dform_widget_dt_date_of_birth")
         .removeAttr("min")
         .removeAttr("data-mindate");
+
       $(
         "#dform_widget_html_ahtm_date_of_birth_about_you .dform_validationMessage"
       ).css("display", "none");
+
       checkPageProgress();
     }
 
