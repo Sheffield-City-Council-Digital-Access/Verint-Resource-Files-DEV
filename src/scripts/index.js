@@ -591,6 +591,7 @@ function handleOnReadyEvent(_, kdf) {
       );
     }
 
+    KDF.setWidgetNotRequired("tel_phone_number");
     KDF.setWidgetNotRequired("eml_address");
     KDF.setWidgetNotRequired("num_date_of_birth_dd");
     KDF.setWidgetNotRequired("num_date_of_birth_mm");
@@ -1879,16 +1880,13 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
         { name: "but_view_rent_account", display: ohmsId ? "show" : "hide" },
       ]);
 
+      // Removing validation of hidden fields
+      // Causes the process to loop
       $("#dform_widget_tel_phone_number").removeAttr("pattern");
       $("#dform_widget_eml_address").removeAttr("pattern");
       $("#dform_widget_dt_date_of_birth")
         .removeAttr("min")
         .removeAttr("data-mindate");
-      // $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
-      // $("#dform_widget_num_date_of_birth_mm")
-      //   .val(date.getMonth() + 1)
-      //   .blur();
-      // $("#dform_widget_num_date_of_birth_yy").val(date.getFullYear()).blur();
       $(
         "#dform_widget_html_ahtm_date_of_birth_about_you .dform_validationMessage"
       ).css("display", "none");
