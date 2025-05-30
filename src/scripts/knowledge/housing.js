@@ -5483,7 +5483,7 @@ const rentVariation = new ContentH(
         <p>
             <a href="https://www.sheffield.gov.uk/council-housing/rents/pay-my-rent">Paying your rent</a>
         </p>
-    </div>
+    </div> 
 </details>
 
 <details class="accordion">
