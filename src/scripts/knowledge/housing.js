@@ -1945,6 +1945,19 @@ const communalCupboard = new ContentH(
     <p>
       <strong>Advisor Note:</strong> Use the form below to request a communal cupboard key if required.
     </p>
+    <p>
+      <Strong>Alternatively, contact: </strong>
+    </p>
+    <ul>
+      <li>North – <a href="tel:01142037018">0114 203 7018</a></li>
+      <li>North East – <a href="tel:01142037445">0114 203 7445</a></li>
+      <li>Central – <a href="tel:01142037022">0114 203 7022</a></li>
+      <li>South West – <a href="tel:01142037120">0114 203 7120</a></li>
+      <li>South East – <a href="tel:01142039339">0114 203 9339</a></li>
+      <li>East – <a href="tel:01142039148">0114 203 9148</a></li>
+      <li>Sheltered – <a href="tel:01142037022">0114 203 7022</a></li>
+    </ul>
+
   `,
   { buttonLabel: "Raise enquiry", formName: "hou_estates_enquiry" },
   { typeKey: "estates_and_environmental_transferred_to_service" },
