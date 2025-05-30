@@ -1884,11 +1884,15 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       $("#dform_widget_dt_date_of_birth")
         .removeAttr("min")
         .removeAttr("data-mindate");
-      $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
-      $("#dform_widget_num_date_of_birth_mm")
-        .val(date.getMonth() + 1)
-        .blur();
-      $("#dform_widget_num_date_of_birth_yy").val(date.getFullYear()).blur();
+      // $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
+      // $("#dform_widget_num_date_of_birth_mm")
+      //   .val(date.getMonth() + 1)
+      //   .blur();
+      // $("#dform_widget_num_date_of_birth_yy").val(date.getFullYear()).blur();
+      $(
+        "#dform_widget_html_ahtm_date_of_birth_about_you .dform_validationMessage"
+      ).css("display", "none");
+      checkPageProgress();
     }
 
     if (kdf.access === "agent") {
