@@ -5489,14 +5489,14 @@ const rentVariation = new ContentH(
         <p>
             You can check an outline of the changes to rents and charges at Sheffield city council website
             by visiting the following links:
+        </p> 
+        <p>
+            <a href="https://www.sheffield.gov.uk/council-housing/rents/learn-about-rents/how-we-calculate-rent" target="_blank"> How we calculate your rent</a>
         </p>
         <p>
-            <a href="/council-housing/how-rent-is-calculated">How we calculate your rent</a>
+            <a href="https://www.sheffield.gov.uk/council-housing/rents/pay-my-rent" target="_blank"> Paying your rent</a>
         </p>
-        <p>
-            <a href="/council-housing/paying-your-rent" data-drupal-link-system-path="node/3140">Paying your rent</a>
-        </p>
-    </div>
+    </div> 
 </details>
 
 <details class="accordion">
