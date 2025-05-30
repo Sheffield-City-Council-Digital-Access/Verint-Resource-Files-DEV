@@ -1882,9 +1882,19 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
       // Removing validation of hidden fields
       // Causes the process to loop
-      $("#dform_widget_tel_phone_number")
-        .removeAttr("pattern")
-        .attr("type", "number");
+      const $phoneNumber = $("#dform_widget_tel_phone_number");
+      let val = $phoneNumber.val().replace(/\s+/g, "");
+      if (val.startsWith("+44") && !val.startsWith("+440")) {
+        val = val.replace(/^\+44/, "0");
+      }
+      if (/^[17]\d{9}$/.test(val)) {
+        val = "0" + val;
+      }
+      if (/^[234]\d{6}$/.test(val)) {
+        val = "0114" + val;
+      }
+      $phoneNumber.removeAttr("pattern").val(val).change();
+
       $("#dform_widget_eml_address").removeAttr("pattern");
       $("#dform_widget_dt_date_of_birth")
         .removeAttr("min")
