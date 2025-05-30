@@ -1882,7 +1882,9 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
       // Removing validation of hidden fields
       // Causes the process to loop
-      $("#dform_widget_tel_phone_number").removeAttr("pattern");
+      $("#dform_widget_tel_phone_number")
+        .removeAttr("pattern")
+        .attr("type", "number");
       $("#dform_widget_eml_address").removeAttr("pattern");
       $("#dform_widget_dt_date_of_birth")
         .removeAttr("min")
