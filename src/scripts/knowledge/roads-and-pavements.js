@@ -771,6 +771,7 @@ const roadsAndPavements = new ServiceRaP(
     reportFallenLeaves,
     reportHedgePlantGrass,
     reportLitterBin,
+    reportRoadStructure,
     reportStreetSignBollard,
     reportTree,
     requestClaimsPack,
