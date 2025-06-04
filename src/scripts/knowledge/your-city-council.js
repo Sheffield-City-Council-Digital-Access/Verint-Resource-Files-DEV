@@ -54,95 +54,76 @@ class CoreYCC {
   // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
   // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
   
-  const emergencyAccommodation1 = new FormYCC(
-    "emergencyAccommodation",
-    "Out of hours emergency accommodation",
-    "Apply for emergency accommodation.",
-    "apply_emergency_homeless",
-    {
-      type: "Apply",
-      keywords: 
-      [
-        'Homeless',
-        'YCC',
-        'accommodation',
-        'Emergency accommodation',
-        'accomodation',
-        'emergency accomodation',
-        'emergncy accomodation',
-        'emergancy accommodation',
-        'emergency accomodtion',
-        'emergncy accommodation'
-      ],
-      categories: ["out of hours"],
-    },
-    { date: "22/01/2025", name: "Nathan Smith" }
-  );
+  const switchboard = new ContentP(
+    "switchboard",
+    "Transferred to Switchboard",
+    "Find out how to request a replacement for a misplaced, stolen, or seized Blue Badge, including the process for submitting a form or contacting customer services.",
+    `
+        <h3>Misplaced or stolen badges</h3>
+        <p>
+          If your badge is lost, damaged, stolen, or if you need to amend details on it, there is a £10 charge.
+        </p>
+        <p>
+          If a badge is lost or stolen we now require a form to be completed with a signature. 
+          The form is available online to print or alternatively a form can be sent out via 2nd post.  You may also request a large print option.
+        </p>
+        <h3>Badges seized by an enforcement officer</h3>
+        <p>
+          If your Blue Badge has been confiscated by an Enforcement Officer,
+          you will need to:
+        </p>
+        <p>
+          Send an e-mail to
+          <a href="mailto:customerservices@sheffield.gov.uk" target="_blank">customerservices@sheffield.gov.uk</a>
+        </p>
+        <p>
+          Or send a letter to:
+        </p>
+        <address>
+          Customer Services<br>
+          Floor 2<br>
+          Howden House<br>
+          1 Union Street<br>
+          Sheffield<br>
+          S1 2SH
+        </address>
+        <p>
+          In your message, please detail the circumstances that led to the Blue Badge
+          being taken. Once we receive this information, a member of our team will
+          contact you, and a decision will be made regarding the return of your Blue
+          Badge.
+        </p>
+      `,
   
-  const emergencyChildService1 = new FormYCC(
-    "emergencyChildService",
-    "Children's emergency service",
-    "Request for emergency child needs.",
-    "emergency_child_service",
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "" },
     {
       type: "Request",
-      keywords: 
-      [
-        "YCC",
-        "children's emergency service",
-        'Childrens emergncy service',
-        "Childern's emergency service",
-        'Childrens emergancy service',
-        "Childern's emergncy service",
-        "Children's emrgency servce"
+      keywords: [
+        "Car",
+        "Blu Badg",
+        "bbadge",
+        "blue bdge",
+        "badg",
+        "bb",
+        "Blue Badge",
+        "blue badge",
+        "lost",
+        "lost and stolen",
+        "replacement",
+        "replacment",
+        "replc",
+        "replacmnt",
+        "stolen",
+        "badge replacement",
+        "blue badge replacemnt",
+        "parkin",
+        "prking",
       ],
-      categories: ["out of hours"],
+      categories: ["Parking"],
     },
-    { date: "22/01/2025", name: "Nathan Smith" }
-  );
-  
-  const emergencyAdultService1 = new FormYCC(
-    "emergencyAdultService",
-    "Adult's emergency service",
-    "Request for emergency adult needs.",
-    "emergency_adult_service",
-    {
-      type: "Request",
-      keywords: 
-      [
-        "YCC",
-        "Adult's emergency service",
-        'adults emergancy service',
-        "adult's emergncy service",
-        'adults emrgency servce',
-        'adults emerjency service',
-        'adults emergency servise'
-      ],
-      categories: ["out of hours"],
-    },
-    { date: "22/01/2025", name: "Nathan Smith" }
-  );
-  
-  const reportAnEmergencyRepair1 = new FormYCC(
-    "reportAnEmergencyRepair",
-    "Report an emergency repair",
-    "Report any urgent Housing repair needs.",
-    "report_emergency_repair",
-    {
-      type: "Report",
-      keywords: 
-      [
-        "YCC",
-        'Report an emergency repair',
-        'report an emergncy repair',
-        'reprot an emergency repair',
-        'report an emergncy repare',
-        'report an emrgency repair',
-        'report an emergancy repair'
-      ],
-      categories: ["out of hours"],
-    },
-    { date: "22/01/2025", name: "Nathan Smith" }
+    { date: "28/05/2025", name: "Dinah Williams" }
   );
   
   
@@ -156,9 +137,6 @@ class CoreYCC {
     "Your City Council",
     "Emergency council services and reports outside of standard working hours, including Adult and Children's emergencies, Emergency Accommodation, and Urgent Repair needs.",
       [
-        emergencyAccommodation1,
-        emergencyAdultService1,
-        emergencyChildService1,
-        reportAnEmergencyRepair1
+        switchboard
       ]
   );
