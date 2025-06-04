@@ -743,7 +743,6 @@ function handleOnReadyEvent(_, kdf) {
         validationMessageElement.style.display = "none";
       }
     }
-  });
 
     const fieldsArray = getValuesOfInputFields([
       { alias: "property" },
