@@ -378,7 +378,7 @@ const compliment = new FormFaC(
 
 const suggestion = new FormFaC(
   "suggestion",
-  "suggestion",
+  "Give Feedback or a Suggestion",
   "Log a suggestion for our service.",
   "give_feedback_suggestion",
   {
