@@ -54,7 +54,7 @@ class CoreYCC {
   // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
   // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
   
-  const emergencyAccommodation = new FormYCC(
+  const emergencyAccommodation1 = new FormYCC(
     "emergencyAccommodation",
     "Out of hours emergency accommodation",
     "Apply for emergency accommodation.",
@@ -79,7 +79,7 @@ class CoreYCC {
     { date: "22/01/2025", name: "Nathan Smith" }
   );
   
-  const emergencyChildService = new FormYCC(
+  const emergencyChildService1 = new FormYCC(
     "emergencyChildService",
     "Children's emergency service",
     "Request for emergency child needs.",
@@ -101,7 +101,7 @@ class CoreYCC {
     { date: "22/01/2025", name: "Nathan Smith" }
   );
   
-  const emergencyAdultService = new FormYCC(
+  const emergencyAdultService1 = new FormYCC(
     "emergencyAdultService",
     "Adult's emergency service",
     "Request for emergency adult needs.",
@@ -123,7 +123,7 @@ class CoreYCC {
     { date: "22/01/2025", name: "Nathan Smith" }
   );
   
-  const reportAnEmergencyRepair = new FormYCC(
+  const reportAnEmergencyRepair1 = new FormYCC(
     "reportAnEmergencyRepair",
     "Report an emergency repair",
     "Report any urgent Housing repair needs.",
@@ -156,9 +156,9 @@ class CoreYCC {
     "Your City Council",
     "Emergency council services and reports outside of standard working hours, including Adult and Children's emergencies, Emergency Accommodation, and Urgent Repair needs.",
       [
-        emergencyAccommodation,
-        emergencyAdultService,
-        emergencyChildService,
-        reportAnEmergencyRepair
+        emergencyAccommodation1,
+        emergencyAdultService1,
+        emergencyChildService1,
+        reportAnEmergencyRepair1
       ]
   );
