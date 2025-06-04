@@ -62,8 +62,8 @@ class CoreYCC {
       `,
   
     { buttonLabel: "", formName: "" },
-    { typeKey: "switch_board_transferred_to_service" },
     { typeKey: "" },
+    { typeKey: "switch_board_information_provided" },
     {
       type: "Request",
       keywords: [
