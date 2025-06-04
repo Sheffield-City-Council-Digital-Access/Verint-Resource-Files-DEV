@@ -57,73 +57,25 @@ class CoreYCC {
   const switchboard = new ContentP(
     "switchboard",
     "Transferred to Switchboard",
-    "Find out how to request a replacement for a misplaced, stolen, or seized Blue Badge, including the process for submitting a form or contacting customer services.",
+    "Record the call transfer to Switchboard.",
     `
-        <h3>Misplaced or stolen badges</h3>
-        <p>
-          If your badge is lost, damaged, stolen, or if you need to amend details on it, there is a £10 charge.
-        </p>
-        <p>
-          If a badge is lost or stolen we now require a form to be completed with a signature. 
-          The form is available online to print or alternatively a form can be sent out via 2nd post.  You may also request a large print option.
-        </p>
-        <h3>Badges seized by an enforcement officer</h3>
-        <p>
-          If your Blue Badge has been confiscated by an Enforcement Officer,
-          you will need to:
-        </p>
-        <p>
-          Send an e-mail to
-          <a href="mailto:customerservices@sheffield.gov.uk" target="_blank">customerservices@sheffield.gov.uk</a>
-        </p>
-        <p>
-          Or send a letter to:
-        </p>
-        <address>
-          Customer Services<br>
-          Floor 2<br>
-          Howden House<br>
-          1 Union Street<br>
-          Sheffield<br>
-          S1 2SH
-        </address>
-        <p>
-          In your message, please detail the circumstances that led to the Blue Badge
-          being taken. Once we receive this information, a member of our team will
-          contact you, and a decision will be made regarding the return of your Blue
-          Badge.
-        </p>
       `,
   
     { buttonLabel: "", formName: "" },
-    { typeKey: "" },
+    { typeKey: "switch_board_transferred_to_service" },
     { typeKey: "" },
     {
       type: "Request",
       keywords: [
-        "Car",
-        "Blu Badg",
-        "bbadge",
-        "blue bdge",
-        "badg",
-        "bb",
-        "Blue Badge",
-        "blue badge",
-        "lost",
-        "lost and stolen",
-        "replacement",
-        "replacment",
-        "replc",
-        "replacmnt",
-        "stolen",
-        "badge replacement",
-        "blue badge replacemnt",
-        "parkin",
-        "prking",
+        "Switchboard",
+        "Switch board",
+        "transfer call",
+        "call",
+     
       ],
-      categories: ["Parking"],
+      categories: ["Your City Council"],
     },
-    { date: "28/05/2025", name: "Dinah Williams" }
+    { date: "04/06/2025", name: "Gee Whitehouse" }
   );
   
   
