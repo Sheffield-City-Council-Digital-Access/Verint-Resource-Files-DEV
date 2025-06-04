@@ -736,7 +736,7 @@ const requestHighwayInfo = new FormRaP(
   `request_highway_info`,
   {
     type: "Request",
-    keywords: ["Grit", "bin"],
+    keywords: ["Highways", "Info","information","Missing","Missing Cat", "Dead","Dead Cat", "Cat", "Lost", "Lost Cat", "Cat on Highway"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "29/01/2025", name: "Elliott Griffiths" }
