@@ -87,7 +87,7 @@ class CoreYCC {
   const yourCityCouncil = new ServiceYCC(
     "yourCityCouncil",
     "Your City Council",
-    "Emergency council services and reports outside of standard working hours, including Adult and Children's emergencies, Emergency Accommodation, and Urgent Repair needs.",
+    "Your City Council.",
       [
         switchboard
       ]
