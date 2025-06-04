@@ -59,23 +59,26 @@ class CoreYCC {
     "Transferred to Switchboard",
     "Record the call transfer to Switchboard.",
     `
-      `,
+    `,
   
-    { buttonLabel: "", formName: "" },
+    { buttonLabel: "", formName: ""},
     { typeKey: "switchboard_transferred_to_service" },
-    { typeKey: "" },
+    { typeKey: ""},
     {
       type: "Request",
       keywords: [
         "Switchboard",
         "Switch board",
         "transfer call",
-        "call",
-     
+        "call"
       ],
       categories: ["Your City Council"],
     },
-    { date: "04/06/2025", name: "Gee Whitehouse" }
+    { date: "04/06/2025", name: "George Whitehouse"}
+
+
+
+    
   );
   
   
