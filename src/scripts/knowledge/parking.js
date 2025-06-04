@@ -205,8 +205,12 @@ const appealBlueBadge = new ContentP(
   "apealBlueBadge",
   "Appeal a Blue Badge Decision",
   "",
-  `
-    <h3>Appeal a Blue Badge Decision</h3>
+  ` 
+   <h3>You can check for a persons eligibilty using the Searchlight link below:
+      </h3>
+      <a href="https://cis.dwp.gsi.gov.uk/cis/" target="_blank">https://cis.dwp.gsi.gov.uk/cis/</a>
+    
+   <h3>Appeal a Blue Badge Decision</h3>
     <ul>
       <li>The customer can request a review of the decision.</li>
       <li>Add a note on the case outlining any information given by the customer.</li>
@@ -241,7 +245,7 @@ const appealBlueBadge = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/05/2025", name: "Dinah Williams" }
+  { date: "04/06/2025", name: "Dinah Williams" }
 );
 
 const applyBlueBadge = new ContentP(
@@ -249,7 +253,11 @@ const applyBlueBadge = new ContentP(
   "Apply for a Blue Badge",
   "Learn about the eligibility criteria and application process for a Blue Badge, including automatic qualification and discretionary assessments.",
   `
-      <h3>Eligible Without Further Assessment</h3>
+   <h3>You can check for a persons eligibilty using the Searchlight link below:
+   </h3>
+      <a href="https://cis.dwp.gsi.gov.uk/cis/" target="_blank">https://cis.dwp.gsi.gov.uk/cis/</a>
+      
+    <h3>Eligible Without Further Assessment</h3>
       <p>(Previously known as 'automatic')</p>
       <p>
         The customer will automatically qualify for a blue badge if they are more 
@@ -370,7 +378,7 @@ const applyBlueBadge = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "19/03/2025", name: "Andy Walker" }
+  { date: "04/06/2025", name: "Dinah Williams" }
 );
 
 const blueBadgeHolderPassedAway = new ContentP(
@@ -428,7 +436,11 @@ const replacementBlueBadge = new ContentP(
   "Request a replacement badge",
   "Find out how to request a replacement for a misplaced, stolen, or seized Blue Badge, including the process for submitting a form or contacting customer services.",
   `
-      <h3>Misplaced or stolen badges</h3>
+   <h3>You can check for a persons eligibilty using the Searchlight link below:
+   </h3>
+      <a href="https://cis.dwp.gsi.gov.uk/cis/" target="_blank">https://cis.dwp.gsi.gov.uk/cis/</a>
+  
+   <h3>Misplaced or stolen badges</h3>
       <p>
         If your badge is lost, damaged, stolen, or if you need to amend details on it, there is a £10 charge.
       </p>
@@ -462,6 +474,7 @@ const replacementBlueBadge = new ContentP(
         contact you, and a decision will be made regarding the return of your Blue
         Badge.
       </p>
+     
     `,
 
   { buttonLabel: "", formName: "" },
@@ -492,7 +505,7 @@ const replacementBlueBadge = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "28/05/2025", name: "Dinah Williams" }
+  { date: "04/06/2025", name: "Dinah Williams" }
 );
 
 const blueBadge = new MenuP(
