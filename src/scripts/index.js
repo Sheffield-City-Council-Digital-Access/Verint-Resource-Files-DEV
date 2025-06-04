@@ -722,7 +722,7 @@ function handleOnReadyEvent(_, kdf) {
 
   $(`.property, .street-name, .city, .postcode`).on("change", function () {
 
-    //const currentPageId = getCurrentPageId();
+    const currentPageId = getCurrentPageId();
 
     const element = document.querySelector(
       `#${currentPageId} input[data-customalias="postcode"]`
