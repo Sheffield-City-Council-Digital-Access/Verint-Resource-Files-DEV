@@ -57,7 +57,7 @@ class CoreYCC {
   const switchboard = new ContentP(
     "switchboard",
     "Transferred to Switchboard",
-    "Record the call transfer to Switchboard.",
+    "Records calls that are transferred to Switchboard.",
     `
     `,
   
@@ -74,15 +74,8 @@ class CoreYCC {
       ],
       categories: ["Your City Council"],
     },
-    { date: "04/06/2025", name: "George Whitehouse"}
-
-
-
-    
+    { date: "04/06/2025", name: "George Whitehouse"} 
   );
-  
-  
-  
   
   // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
   // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
