@@ -56,19 +56,25 @@ class CoreYCC {
   
   const switchboard = new ContentP(
     "switchboard",
-    "Transferred to Switchboard",
-    "Records calls that are transferred to Switchboard.",
+    "Switchboard",
+    "Records calls that are transferred via Switchboard.",
     `
+    <p>
+      Using Storm find the appropriate number for the service you wish to transfer the customer to.
+    </p>
     `,
   
     { buttonLabel: "", formName: ""},
     { typeKey: "switchboard_transferred_to_service" },
-    { typeKey: ""},
+    { typeKey: "switchboard_information_provided"},
     {
       type: "Request",
       keywords: [
         "Switchboard",
         "Switch board",
+        "Switch",
+        "transfer",
+        "redirect",
         "transfer call",
         "call"
       ],
