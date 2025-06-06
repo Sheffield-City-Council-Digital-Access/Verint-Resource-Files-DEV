@@ -721,6 +721,29 @@ function handleOnReadyEvent(_, kdf) {
   // --- HANDLE MANUAL ADDRESS ENTRY --------------------------------------- \\
 
   $(`.property, .street-name, .city, .postcode`).on("change", function () {
+
+    const currentPageId = getCurrentPageId();
+
+    const element = document.querySelector(
+      `#${currentPageId} input[data-customalias="postcode"]`
+    );
+
+    if (element)
+    {
+      // Remove validation error styling
+      element.classList.remove("dform_fielderror");
+  
+      // Find and hide the associated validation message
+      const validationMessageElement = document.querySelector(
+        `#${currentPageId} div[data-name="${element.name}"] .dform_validationMessage`
+      );
+  
+      if (validationMessageElement)
+      {
+        validationMessageElement.style.display = "none";
+      }
+    }
+
     const fieldsArray = getValuesOfInputFields([
       { alias: "property" },
       { alias: "streetName" },
