@@ -2026,7 +2026,7 @@ const ratTreatment = new ContentPaN(
       attends the property but is unable to complete the treatment.
     </p>
     <p>
-      If you receive one of the following benefits, the treatment will be free:
+      If you receive one of the following benefits, the treatment will be free: 
     </p>
     <ul>
       <li>Pension Credits</li>
