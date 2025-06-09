@@ -2018,11 +2018,11 @@ const ratTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Rats is <strong>£124.00.</strong> This covers you for up to 3 visits.
-      If you require further treatments, each additional treatment will cost <strong>£58.00.</strong>
+      The treatment cost for Rats is <strong>£124.80.</strong> This covers you for up to 3 visits.
+      If you require further treatments, each additional treatment will be <strong>Free.</strong>
     </p>
     <p>
-      All prices include a call-out fee of <strong>£41.00.</strong> This fee applies if our officer
+      All prices include a call-out fee of <strong>£40.00.</strong> This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <p>
