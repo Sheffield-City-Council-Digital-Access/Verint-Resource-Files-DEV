@@ -586,12 +586,21 @@ const reportInvasiveWeeds = new FormRaP(
   "report_invasive_weeds",
   {
     type: "Report",
-    keywords: ["Intrusive","Invasive","Weeds", "Japanese","Knotweed", "Giant","Hogweed","Japanese Knotweed", "Giant Hogweed"],
+    keywords: [
+      "Intrusive",
+      "Invasive",
+      "Weeds",
+      "Japanese",
+      "Knotweed",
+      "Giant",
+      "Hogweed",
+      "Japanese Knotweed",
+      "Giant Hogweed",
+    ],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "13/05/2025", name: "Sam Coupland" }
 );
-
 
 const reportLitterBin = new ContentRaP(
   "reportLitterBin",
@@ -625,6 +634,26 @@ const reportLitterBin = new ContentRaP(
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
+const reportRoadStructure = new FormRaP(
+  "reportRoadStructure",
+  "Road structure",
+  "Report a problem with a bridge, retaining wall or other road structure",
+  "report_wall_bridge",
+  {
+    type: "Report",
+    keywords: [
+      "Bridge",
+      "Wall",
+      "Retaining Wall",
+      "Subway",
+      "Culvert",
+      "Structure",
+    ],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "02/06/2025", name: "Elliott Griffiths" }
 );
 
 const reportStreetSignBollard = new FormRaP(
@@ -707,7 +736,7 @@ const requestHighwayInfo = new FormRaP(
   `request_highway_info`,
   {
     type: "Request",
-    keywords: ["Grit", "bin"],
+    keywords: ["Highways", "Info","information","Missing","Missing Cat", "Dead","Dead Cat", "Cat", "Lost", "Lost Cat", "Cat on Highway"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "29/01/2025", name: "Elliott Griffiths" }
@@ -742,6 +771,7 @@ const roadsAndPavements = new ServiceRaP(
     reportFallenLeaves,
     reportHedgePlantGrass,
     reportLitterBin,
+    reportRoadStructure,
     reportStreetSignBollard,
     reportTree,
     requestClaimsPack,
