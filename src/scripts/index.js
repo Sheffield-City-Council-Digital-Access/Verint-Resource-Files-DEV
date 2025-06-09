@@ -1911,6 +1911,9 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       if (val.startsWith("+44") && !val.startsWith("+440")) {
         val = val.replace(/^\+44/, "0");
       }
+      if (val.startsWith("44") && !val.startsWith("440")) {
+        val = val.replace(/^\44/, "0");
+      }
       if (/^[17]\d{9}$/.test(val)) {
         val = "0" + val;
       }
