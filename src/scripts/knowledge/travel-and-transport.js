@@ -229,7 +229,7 @@ const zoomZeroFare = new ContentTaT(
             <ul>
               <li>Cheaper travel for work, school, college, or leisure.</li>
               <li>
-                Travel anytime, anywhere in South Yorkshire for just 80p per journey
+                Travel anytime, anywhere in South Yorkshire for just £1 per journey
                 on bus or tram and half fare on Northern trains.
               </li>
               <li>
