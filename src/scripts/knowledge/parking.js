@@ -1374,7 +1374,6 @@ const greenParkingPermit = new ContentP(
 
 <details class="accordion">
  <summary class="accordion-header">
-   
 <details class="accordion">
  <summary class="accordion-header">
    <h3>How long a permit lasts</h3>
@@ -1387,7 +1386,6 @@ const greenParkingPermit = new ContentP(
             </p>
   </div>
 </details>
-
 
 <details class="accordion">
  <summary class="accordion-header">
