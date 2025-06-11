@@ -301,7 +301,7 @@ const zoomZeroFare = new ContentTaT(
       "pess",
       "passs",
       "passe",
-      "pazs",
+      "pazs"
     ],
     categories: ["Travel and Transport"],
   },
@@ -531,7 +531,7 @@ const disabledPersonsTravelPermit = new ContentTaT(
       "Mobility Travel Permit",
       "Mobility Travel Pass",
       "Mobile",
-      "Mobility",
+      "Mobility"
     ],
 
     categories: ["Travel and Transport"],
