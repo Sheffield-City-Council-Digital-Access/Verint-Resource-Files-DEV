@@ -376,6 +376,30 @@ const compliment = new FormFaC(
   { date: "22/05/2025", name: "Sam Coupland" }
 );
 
+const suggestion = new FormFaC(
+  "suggestion",
+  "Give Feedback or a Suggestion",
+  "Log a suggestion for our service.",
+  "give_feedback_suggestion",
+  {
+    type: "Make",
+    keywords: 
+    [
+      "fedback",
+      "feedback",
+      "sugestion",
+      "suggestion",
+      "feadback and complaints",
+      "feedback and complants",
+      "feedbak and complaints",
+      "feedback and complaits",
+      "fedback and complaints"
+    ],
+    categories: ["feedback and complaints"],
+  },
+  { date: "04/06/2025", name: "Sam Coupland" }
+);
+
 const corporateComplaintsProcedure = new ContentFaC(
   "corporateComplaintsProcedure",
   "Corporate complaints procedure",
@@ -501,6 +525,7 @@ const feedbackAndComplaints = new ServiceFaC(
       childrensSocialCareComplaints,
       complaints,
       compliment,
-      corporateComplaintsProcedure
+      corporateComplaintsProcedure,
+      suggestion
     ]
 );

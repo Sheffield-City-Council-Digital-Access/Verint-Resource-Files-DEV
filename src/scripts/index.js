@@ -721,6 +721,26 @@ function handleOnReadyEvent(_, kdf) {
   // --- HANDLE MANUAL ADDRESS ENTRY --------------------------------------- \\
 
   $(`.property, .street-name, .city, .postcode`).on("change", function () {
+    const currentPageId = getCurrentPageId();
+
+    const element = document.querySelector(
+      `#${currentPageId} input[data-customalias="postcode"]`
+    );
+
+    if (element) {
+      // Remove validation error styling
+      element.classList.remove("dform_fielderror");
+
+      // Find and hide the associated validation message
+      const validationMessageElement = document.querySelector(
+        `#${currentPageId} div[data-name="${element.name}"] .dform_validationMessage`
+      );
+
+      if (validationMessageElement) {
+        validationMessageElement.style.display = "none";
+      }
+    }
+
     const fieldsArray = getValuesOfInputFields([
       { alias: "property" },
       { alias: "streetName" },
@@ -1602,6 +1622,11 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
 
   handleSetReporter(new Date(response["profile-DateOfBirth"]), fullAddress);
 
+  // clear email field
+  KDF.setVal("eml_address", "");
+  // repopulate meial field
+  KDF.setVal("eml_address", response["profile-Email"]);
+
   // keep at the bottom
   checkPageProgress();
 }
@@ -1885,6 +1910,9 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       let val = $phoneNumber.val().replace(/\s+/g, "");
       if (val.startsWith("+44") && !val.startsWith("+440")) {
         val = val.replace(/^\+44/, "0");
+      }
+      if (val.startsWith("44") && !val.startsWith("440")) {
+        val = val.replace(/^\44/, "0");
       }
       if (/^[17]\d{9}$/.test(val)) {
         val = "0" + val;
