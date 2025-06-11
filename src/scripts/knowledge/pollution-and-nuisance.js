@@ -2732,7 +2732,7 @@ const handoverDogtoCouncil = new FormPaN(
   "handoverDogtoCouncil",
   "Handover Dog to Council",
   "Hand over a dog to the council",
-  "report_dangerous_dog",
+  "report_dog_handover",
   {
     type: "Report",
     keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
