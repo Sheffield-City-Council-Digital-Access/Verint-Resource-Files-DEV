@@ -96,7 +96,7 @@ const communalFireSafety = new ContentH(
       on stairs or landings which are the means of escape from the building.
     </p>
   `,
-  { buttonLabel: "Raise enquiry", formName: "hou_estates_enquiry" },
+  { buttonLabel: "Raise enquiry", formName: "hou_routing_enquiry" },
   { typeKey: "" },
   { typeKey: "estates_and_environmental_information_provided" },
   {
@@ -986,7 +986,7 @@ const communalAreas = new ContentH(
   `,
   {
     buttonLabel: "Raise Housing Enquiry ",
-    formName: "hou_estates_enquiry",
+    formName: "hou_routing_enquiry",
   },
   { typeKey: "" },
   { typeKey: "estates_and_environmental_information_provided" },
@@ -1946,7 +1946,7 @@ const communalCupboard = new ContentH(
       <strong>Advisor Note:</strong> Use the form below to request a communal cupboard key if required.
     </p>
   `,
-  { buttonLabel: "Raise enquiry", formName: "hou_estates_enquiry" },
+  { buttonLabel: "Raise enquiry", formName: "hou_routing_enquiry" },
   { typeKey: "" },
   { typeKey: "estates_and_environmental_information_provided" },
   {
