@@ -205,11 +205,7 @@ const appealBlueBadge = new ContentP(
   "apealBlueBadge",
   "Appeal a Blue Badge Decision",
   "",
-  ` 
-   <h3>You can check for a persons eligibilty using the Searchlight link below:
-      </h3>
-      <a href="https://cis.dwp.gsi.gov.uk/cis/" target="_blank">https://cis.dwp.gsi.gov.uk/cis/</a>
-    
+  `   
    <h3>Appeal a Blue Badge Decision</h3>
     <ul>
       <li>The customer can request a review of the decision.</li>
@@ -253,10 +249,6 @@ const applyBlueBadge = new ContentP(
   "Apply for a Blue Badge",
   "Learn about the eligibility criteria and application process for a Blue Badge, including automatic qualification and discretionary assessments.",
   `
-   <h3>You can check for a persons eligibilty using the Searchlight link below:
-   </h3>
-      <a href="https://cis.dwp.gsi.gov.uk/cis/" target="_blank">https://cis.dwp.gsi.gov.uk/cis/</a>
-      
     <h3>Eligible Without Further Assessment</h3>
       <p>(Previously known as 'automatic')</p>
       <p>
@@ -435,11 +427,7 @@ const replacementBlueBadge = new ContentP(
   "lostorStolenBlueBadge",
   "Request a replacement badge",
   "Find out how to request a replacement for a misplaced, stolen, or seized Blue Badge, including the process for submitting a form or contacting customer services.",
-  `
-   <h3>You can check for a persons eligibilty using the Searchlight link below:
-   </h3>
-      <a href="https://cis.dwp.gsi.gov.uk/cis/" target="_blank">https://cis.dwp.gsi.gov.uk/cis/</a>
-  
+  `   
    <h3>Misplaced or stolen badges</h3>
       <p>
         If your badge is lost, damaged, stolen, or if you need to amend details on it, there is a £10 charge.

@@ -751,7 +751,7 @@ const registerABirthAndDeath = new ContentBDMaC(
 </button>
 
 `,
-{ buttonLabel: "", formName: "" },
+{ buttonLabel: "Registrars enquiry", formName: "registrars_process" },
 { typeKey: "register_office_information_requested" },
 { typeKey: "register_office_information_provided" },
 {
@@ -765,7 +765,7 @@ const registerABirthAndDeath = new ContentBDMaC(
     "Deaths",
   ],
 },
-{ date: "16/10/2024", name: "Joe Nixon" }
+{ date: "11/06/2025", name: "Dinah Williams" }
 );
 
 const reRegisterABirth = new ContentBDMaC(
