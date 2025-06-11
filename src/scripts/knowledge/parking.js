@@ -336,9 +336,7 @@ const applyBlueBadge = new ContentP(
     KDF.getParams().customerid
       ? `customerid=${KDF.getParams().customerid}&`
       : ""
-  }interactionid=${
-    KDF.getParams().interactionid
-  }">Blue Badge enquiry</a>
+  }interactionid=${KDF.getParams().interactionid}">Blue Badge enquiry</a>
 
     </div>
   </details>
@@ -1377,9 +1375,6 @@ const greenParkingPermit = new ContentP(
 <details class="accordion">
  <summary class="accordion-header">
    
-
-
-
 <details class="accordion">
  <summary class="accordion-header">
    <h3>How long a permit lasts</h3>
@@ -2937,7 +2932,7 @@ const enforcementBaliffEnquiries = new ContentP(
       "Baliff",
       "baliff",
       "Enforcement and Baliff Enquiries",
-      "Enforcement Baliff Enquiries"
+      "Enforcement Baliff Enquiries",
     ],
     categories: ["Parking"],
   },
@@ -3708,7 +3703,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
   { date: "08/05/2025", name: "Andy Walker" }
 );
 
-const postReceivedForSomeoneNotLivingAtAddress  = new ContentP(
+const postReceivedForSomeoneNotLivingAtAddress = new ContentP(
   "postReceivedForSomeoneNotLivingAtAddress",
   "Post Received For Someone Not Living At The Address",
   "Find out what happens when a PCN is sent to your address but the person does not live at the address.",
