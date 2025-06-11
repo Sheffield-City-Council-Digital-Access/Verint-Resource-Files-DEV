@@ -1573,7 +1573,7 @@ const payment = new ContentH(
 const programmedWorks = new ContentH(
   "programmedWorks",
   "Programmed Works",
-  "",
+  "The Electrical Upgrade Programme, aimed at modernizing electrical standards in council-managed housing, including upgrades like additional sockets, smoke alarms, and energy-efficient solutions.",
   `
   <details class="accordion">
   <summary class="accordion-header">
