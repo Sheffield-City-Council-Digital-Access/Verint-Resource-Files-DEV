@@ -1573,7 +1573,7 @@ const payment = new ContentH(
 const programmedWorks = new ContentH(
   "programmedWorks",
   "Programmed Works",
-  "",
+  "Information regarding programmed works",
   `
   <details class="accordion">
   <summary class="accordion-header">
