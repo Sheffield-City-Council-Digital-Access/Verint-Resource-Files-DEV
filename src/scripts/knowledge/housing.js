@@ -1573,7 +1573,7 @@ const payment = new ContentH(
 const programmedWorks = new ContentH(
   "programmedWorks",
   "Programmed Works",
-  "Electrical Upgrade program to modernize electrical systems in 20,000+ council homes, focused on safety and functionality improvements.",
+  "",
   `
   <details class="accordion">
   <summary class="accordion-header">
