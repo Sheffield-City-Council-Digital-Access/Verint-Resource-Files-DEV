@@ -2964,8 +2964,7 @@ const enforcementBaliffEnquiries = new ContentP(
       "Baliff",
       "baliff",
       "Enforcement and Baliff Enquiries",
-      "Enforcement Baliff Enquiries",
-
+      "Enforcement Baliff Enquiries"
     ],
     categories: ["Parking"],
   },
