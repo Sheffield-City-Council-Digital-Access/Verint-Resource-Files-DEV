@@ -432,7 +432,7 @@ const disabledPersonsTravelPermit = new ContentTaT(
     <p>
       You can replace your lost, damaged, or stolen Disabled Person's Pass online by visiting:  
       <a href="https://www.travelsouthyorkshire.com/Disabledreplace/" target="_blank">
-      https://www.travelsouthyorkshire.com/Disabledreplace/
+      https://www.travelsouthyorkshire.com/Disabledreplace/ </a>
 
          <button
         type="button"
