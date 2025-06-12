@@ -280,7 +280,7 @@ const applyBlueBadge = new ContentP(
           onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
               KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=apply%20for%20a%20Blue%20Badge\`
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Blue%20Badge\`
           ">
           Send link to apply online
         </button>
@@ -336,9 +336,7 @@ const applyBlueBadge = new ContentP(
     KDF.getParams().customerid
       ? `customerid=${KDF.getParams().customerid}&`
       : ""
-  }interactionid=${
-    KDF.getParams().interactionid
-  }">Blue Badge enquiry</a>
+  }interactionid=${KDF.getParams().interactionid}">Blue Badge enquiry</a>
 
     </div>
   </details>
@@ -1354,164 +1352,128 @@ const greenParkingPermit = new ContentP(
   "Green Parking Permit",
   "Learn about the eligibility, benefits, and application process for a free Green Parking Permit for ultra low-emission vehicles (ULEVs).",
   `
-<h3>Green Parking Permit</h3>
-<p>
-    A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the following criteria to park in the city centre for free. 
-    Anyone with an eligible vehicle can apply for it.
-</p>
-
-<p>The vehicle must be:</p>
-<ul>
-    <li>electric or hybrid fuel type</li>
-    <li>emit less then 75g of carbon dioxide (CO2) per kilometre travelled, with a capability of travelling a minimum range of 10 miles with zero CO2 emissions</li>
-</ul>
-
-<p>
-    You can use the DVLA checker to see if your vehicle meets these standards. 
-    It may show 0g on the CO2 emissions for some diesel vehicles as this data is not on their records. 
-    Such vehicles are not ULEVs and do not qualify for a green parking permit.
-</p>
-
-<h3>Cost</h3>
-<p>Green permits are free.</p>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>Exceptions</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
- <p>Business permits are not issued for:</p>
-            <ul>
-                <li>City centre Inner/Outer zones</li>
-                <li>Falding Street</li>
-                <li>Holme Lane</li>
-                <li>Edward Street Flats Car Park</li>
-                <li>Loxley New Road</li>
-                <li>Vaughton Hill</li>
-            </ul> 
-            </div>
-</details>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>Number of permits</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-         <h4>You can have 2 permits per business.</h4>
-            <p>
-                Businesses in Neepsend have the option to apply for additional permits. If you’d like to apply for 
-                additional permits, please log in to your account, select the ‘Business Discretionary’ permit type 
-                and complete your application.
-            </p>
-  </div>
-</details>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>How long a permit lasts</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-      <p>
-                Permits are issued for one year. It is your responsibility to ensure your permit is renewed. 
-                We do not issue replacement pool permits; if you lose them, you will need to apply again. 
-            </p>
-  </div>
-</details>
-
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>Where you can use the permit</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
- <p>
-                A green permit only allows you to park in pay and display bays located in the city centre (inner and outer zones) either:
-            </p>
-            <ul>
-                <li>on street</li>
-                <li>in most car parks that we run (subject to time limits)</li>
-            </ul>
-
-            <p>It cannot be used in:</p>
-            <ul>
-                <li>other types of parking bay (such as disabled bays, permit holder parking bays)</li>
-                <li>Hawley Street Car Park</li>
-                <li>in other parking permit zones</li>
-                <li>car parks we don’t run eg university permit holder car parks</li>
-            </ul>
-  </div>
-</details>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>Parking time limits</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-  <p>
-                There are no time limits for parking with a green permit in most of the pay and display bays in the city centre inner and outer zones.  
-            </p>
-
-            <p>However, the following car parks are restricted to a maximum stay period of 6 hours for green permit holders:</p>
-            <ul>
-                <li>Devonshire Green car park</li>
-                <li>Milton Street car park </li>
-                <li>Carver Lane car park</li>
-                <li>West Street Lane car park</li>
-            </ul>
-
-            <p>
-                If you intend to use any of these car parks please send an email to
-                <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
-                and we'll send you a clock for you to display in your windscreen.
-            </p> </div>
-</details>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>Number of permits</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-            <p>You can apply for one permit per vehicle. There is no limit to how many permits a household can have.</p>
- </div>
-</details>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>How long a permit lasts</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-            <p>Permits last for one year. It is your responsibility to ensure your permit is renewed.</p>
- </div>
-</details>
-
-
-
-<p>
-    For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-</p>
-
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information and to apply send link to apply online"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
-    "
->
-    Send link to review further information
-</button>
-     
- 	`,
+	<h3>Green Parking Permit</h3>
+	<p>
+	    A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the following criteria to park in the city centre for free. 
+	    Anyone with an eligible vehicle can apply for it.
+	</p>
+	
+	<p>The vehicle must be:</p>
+	<ul>
+	    <li>electric or hybrid fuel type</li>
+	    <li>emit less then 75g of carbon dioxide (CO2) per kilometre travelled, with a capability of travelling a minimum range of 10 miles with zero CO2 emissions</li>
+	</ul>
+	
+	<p>
+	    You can use the DVLA checker to see if your vehicle meets these standards. 
+	    It may show 0g on the CO2 emissions for some diesel vehicles as this data is not on their records. 
+	    Such vehicles are not ULEVs and do not qualify for a green parking permit.
+	</p>
+	
+	<h3>Cost</h3>
+	<p>Green permits are free.</p>
+	
+	<details class="accordion">
+	  <summary class="accordion-header">
+	    <h3>How long a permit lasts</h3>
+	    <div class="accordion-icon"></div>
+	  </summary>
+	  <div class="accordion-content">
+	    <p>
+	      Permits are issued for one year. It is your responsibility to ensure your permit is renewed. 
+	      We do not issue replacement pool permits; if you lose them, you will need to apply again. 
+	    </p>
+	  </div>
+	</details>
+	
+	<details class="accordion">
+	  <summary class="accordion-header">
+	    <h3>Where you can use the permit</h3>
+	    <div class="accordion-icon"></div>
+	  </summary>
+	  <div class="accordion-content">
+	    <p>
+	      A green permit only allows you to park in pay and display bays located in the city centre (inner and outer zones) either:
+	    </p>
+	    <ul>
+	      <li>on street</li>
+	      <li>in most car parks that we run (subject to time limits)</li>
+	    </ul>
+	
+	    <p>It cannot be used in:</p>
+	    <ul>
+	      <li>other types of parking bay (such as disabled bays, permit holder parking bays)</li>
+	      <li>Hawley Street Car Park</li>
+	      <li>in other parking permit zones</li>
+	      <li>car parks we don’t run eg university permit holder car parks</li>
+	    </ul>
+	  </div>
+	</details>
+	
+	<details class="accordion">
+	  <summary class="accordion-header">
+	    <h3>Parking time limits</h3>
+	    <div class="accordion-icon"></div>
+	  </summary>
+	  <div class="accordion-content">
+	    <p>
+	      There are no time limits for parking with a green permit in most of the pay and display bays in the city centre inner and outer zones.  
+	    </p>
+	
+	    <p>However, the following car parks are restricted to a maximum stay period of 6 hours for green permit holders:</p>
+	    <ul>
+	      <li>Devonshire Green car park</li>
+	      <li>Milton Street car park </li>
+	      <li>Carver Lane car park</li>
+	      <li>West Street Lane car park</li>
+	    </ul>
+	
+	    <p>
+	      If you intend to use any of these car parks please send an email to
+	      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
+	      and we'll send you a clock for you to display in your windscreen.
+	    </p>
+	  </div>
+	</details>
+	
+	<details class="accordion">
+	  <summary class="accordion-header">
+	    <h3>Number of permits</h3>
+	    <div class="accordion-icon"></div>
+	  </summary>
+	  <div class="accordion-content">
+	    <p>You can apply for one permit per vehicle. There is no limit to how many permits a household can have.</p>
+	  </div>
+	</details>
+	
+	<details class="accordion">
+	  <summary class="accordion-header">
+	    <h3>How long a permit lasts</h3>
+	    <div class="accordion-icon"></div>
+	  </summary>
+	  <div class="accordion-content">
+	    <p>Permits last for one year. It is your responsibility to ensure your permit is renewed.</p>
+	  </div>
+	</details>
+	
+	<p>
+	  For further information, visit 
+	  <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+	</p>
+	
+	<button
+	  type="button"
+	  class="dform_widget email-btn dform_widget_type_button"
+	  aria-label="For further information and to apply send link to apply online"
+	  onclick="
+	    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+	      KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+	    }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+	  "
+	>
+	  Send link to review further information
+	</button>
+`,
   {
     buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
@@ -1539,8 +1501,9 @@ const greenParkingPermit = new ContentP(
       "pemit",
       "premit",
     ],
-    categories: ["Parking"],
-  }
+     categories: ["Parking"],
+  },
+  { date: "11/03/2025", name: "Gee Whitehouse" }
 );
 
 const langsettAndHillsboroughBusAndTramgate = new ContentP(
@@ -2965,7 +2928,7 @@ const enforcementBaliffEnquiries = new ContentP(
       "Baliff",
       "baliff",
       "Enforcement and Baliff Enquiries",
-      "Enforcement Baliff Enquiries"
+      "Enforcement Baliff Enquiries",
     ],
     categories: ["Parking"],
   },
@@ -3736,7 +3699,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
   { date: "08/05/2025", name: "Andy Walker" }
 );
 
-const postReceivedForSomeoneNotLivingAtAddress  = new ContentP(
+const postReceivedForSomeoneNotLivingAtAddress = new ContentP(
   "postReceivedForSomeoneNotLivingAtAddress",
   "Post Received For Someone Not Living At The Address",
   "Find out what happens when a PCN is sent to your address but the person does not live at the address.",
