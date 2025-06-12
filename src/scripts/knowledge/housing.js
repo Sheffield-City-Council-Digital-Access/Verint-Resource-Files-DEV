@@ -2162,7 +2162,7 @@ const generalCouncilHousing = new ContentH(
     <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx"target="_blank">Telephone Directory</a>
   </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Raise enquiry", formName: "hou_routing_enquiry" },
   { typeKey: "housing_general_transferred_to_service" },
   { typeKey: "housing_general_information_provided" },
   {
