@@ -1352,7 +1352,6 @@ const greenParkingPermit = new ContentP(
   "Green Parking Permit",
   "Learn about the eligibility, benefits, and application process for a free Green Parking Permit for ultra low-emission vehicles (ULEVs).",
   `
-	<h3>Green Parking Permit</h3>
 	<p>
 	    A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the following criteria to park in the city centre for free. 
 	    Anyone with an eligible vehicle can apply for it.
