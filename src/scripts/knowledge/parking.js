@@ -280,7 +280,7 @@ const applyBlueBadge = new ContentP(
           onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
               KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=apply%20for%20a%20Blue%20Badge\`
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Blue%20Badge\`
           ">
           Send link to apply online
         </button>
