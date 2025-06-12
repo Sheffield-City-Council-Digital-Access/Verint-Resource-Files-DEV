@@ -1622,10 +1622,12 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
 
   handleSetReporter(new Date(response["profile-DateOfBirth"]), fullAddress);
 
-  // clear email field
-  KDF.setVal("eml_address", "");
-  // repopulate meial field
-  KDF.setVal("eml_address", response["profile-Email"]);
+  setTimeout(() => {
+    // clear email field
+    KDF.setVal("eml_address", "");
+    // repopulate email field
+    KDF.setVal("eml_address", response["profile-Email"]);
+  }, 0);
 
   // keep at the bottom
   checkPageProgress();
