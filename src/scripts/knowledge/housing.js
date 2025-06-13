@@ -1707,35 +1707,6 @@ const propertyAge = new ContentH(
   { date: "10/10/2024", name: "George Whitehouse" }
 );
 
-const refunds = new ContentH(
-  "refunds",
-  "Refunds",
-  "Learn about Pay As You Go refund eligibility for vacated properties and the process for requesting a refund.",
-  `
-  <p>
-    Pay As You Go refunds are not made unless the tenant has vacated the property.<br>
-    Once their rent account has been closed, customers are entitled to a full refund as long as their remaining 
-    Pay As You Go balance is £10.00 or greater please ask the tenant to call Home Ownership 
-    and Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a> once their rent account has been closed. 
-  </p>
-  `,
-  { buttonLabel: "Report Rents Refunds ", formName: "hou_rents_refunds" },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing"],
-  },
-  { date: "10/10/2024", name: "George Whitehouse" }
-);
-
 const noHeatNoWater = new ContentH(
   "noHeatNoWater",
   "Report no heat or hot water",
@@ -1914,8 +1885,7 @@ const assetManagementAndRepairs = new MenuH(
     payment,
     programmedWorks,
     propertyAge,
-    refunds,
-    tenantsOwnImprovements,
+    tenantsOwnImprovements
   ]
 );
 
@@ -5433,7 +5403,7 @@ const rentArrangements = new FormH(
 const rentRefunds = new FormH(
   "rentRefunds",
   "Rent Refunds",
-  "Use this form to chase or request a Rent refund. You must more than 4 weeks in credit to request a refund and the refund will leave the account 4 weeks in credit.",
+  "Use this form to chase or request a Rent refund. You must be more than 4 weeks in credit to request a refund and the refund will leave the account 4 weeks in credit.",
   "hou_rents_enquiry",
   {
     type: "Request",
