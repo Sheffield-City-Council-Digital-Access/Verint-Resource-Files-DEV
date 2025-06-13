@@ -252,7 +252,7 @@ const requestClaimsPack = new ContentRaP(
     <h3>Highways Compensation Claims Pack</h3>
 <p>
     So your claim can be thoroughly reviewed, you will need to have and provide all of the following information. <br>
-  Without providing full and complete information about your claim you may nave a reduced chance ot success. 
+  Without providing full and complete information about your claim you may have a reduced chance of success. 
 </p>
 
     <ul>
