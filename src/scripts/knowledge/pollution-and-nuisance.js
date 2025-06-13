@@ -2865,8 +2865,8 @@ More information can be found at  <a href="https://www.gov.uk/garden-bonfires-ru
     buttonLabel: "Report Smoke",
     formName: "report_smoke",
   },
-  { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "smoke_nuisance_information_requested" },
+  { typeKey: "smoke_nuisance_information_provided" },
   {
     type: "Report",
     keywords: [
