@@ -2795,7 +2795,7 @@ const reportDogAsLost = new FormPaN(
 
 
 
-const reportSmoke = new FormPaN(
+const reportSmokeold = new FormPaN(
   "reportSmoke",
   "Smoke",
   "Report smoke",
@@ -2819,6 +2819,62 @@ const reportNoise = new FormPaN(
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+const reportSmoke = new ContentPaN(
+  "reportSmoke",
+  "Report Smoke",
+  "Report Smoke",
+  `
+  <h3>Commercial</h3>
+    <p>
+      As this is regarding a commercial premises, I will need to transfer you through to one of my colleagues in Environmental 
+      protection services.
+      <br>
+      <br>
+      Telephone:<a href="tel:0114 273 4651">0114 273 465</a>
+      Email: <a href="mailto:epsadmin@sheffield.gov.uk">epsadmin@sheffield.gov.uk</a>
+    </p>
+    
+
+  <h3>Domestic</h3>
+    <p>
+      Bonfires can be lit at any time of day. <br>
+      Bonfires are only considered a nuisance if they are being constantly lit, depending on what is being burned and the way it is burned.
+      <br>The thicker and darker the smoke, the more toxic it is.
+      <br>
+      <br>
+More information can be found at  <a href="https://www.gov.uk/garden-bonfires-rules" target="_blank">https://www.gov.uk/garden-bonfires-rules</a>
+    </p>
+
+        <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Garden%20bonfire%20rules\`
+    "
+>
+        Send link to review further information
+    </button>
+   
+  `,
+  {
+    buttonLabel: "Report Smoke",
+    formName: "report_smoke",
+  },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Report",
+    keywords: [
+"Report", "noise"
+    ],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "13/06/2025", name: "Gee Whitehouse" }
 );
 
 const abandonedVehicles = new ContentPaN(
