@@ -10619,6 +10619,11 @@ const tenancyEnforcementASB = new ContentH(
       <li> A one-off party if noise was the only issue and it is unlikely to be repeated</li>
       <li> Children playing (including ball games)</li>
     </ul>
+
+    <h3>Reporting anti-social behaviour</h3>
+    <p>If the ASB involves a Council tenant, use the form at the bottom of this page to raise a report to 
+    the appropriate team. If it does not involve a Council tenant advise the customer to contact 101</p>
+    
     <h3>Police responsibility</h3>
     <p>South Yorkshire Police are responsible for dealing with any behaviour or activity which results in a criminal offence being committed.</p>
     <p>Where the perpetrator is an SCC tenant the Tenancy Enforcement and Sustainment Team (TEST) will work closely with SYP to ensure that any appropriate enforcement action is taken by the council.</p>
@@ -10671,7 +10676,8 @@ const tenancyEnforcementASB = new ContentH(
     <p>South Yorkshire Fire and Rescue Service can fit blank letter boxes if there are concerns regarding harmful items being posted through the door. The Neighbourhood Officer can make a referral to SYF&amp;R for a Home Safety check.</p>
     <p>Neighbourhood Teams may have stock of target hardening equipment.</p>
     <p>Victim Support may support with target hardening.</p>
-  </p>`,
+  `,
+
   { buttonLabel: "Raise report", formName: "hou_enforcement_asb" },
   { typeKey: "" },
   { typeKey: "tenancy_enforcement_information_provided" },
