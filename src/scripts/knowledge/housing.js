@@ -10621,7 +10621,7 @@ const tenancyEnforcementASB = new ContentH(
     </ul>
 
     <h3>Reporting anti-social behaviour</h3>
-    <p>"If the ASB involves a Council tenant, use the form at the bottom of this page to raise a report to 
+    <p>If the ASB involves a Council tenant, use the form at the bottom of this page to raise a report to 
     the appropriate team. If it does not involve a Council tenant advise the customer to contact 101</p>
     
     <h3>Police responsibility</h3>
