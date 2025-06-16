@@ -10620,12 +10620,9 @@ const tenancyEnforcementASB = new ContentH(
       <li> Children playing (including ball games)</li>
     </ul>
 
-    <h3>Report ASB as a Council Tenant</h3>
-    <p>If the ASB involve a council tenant then either the caller or the ASB to use the below form to submit 
-    enquiry to the NST (Neighbourhood Support Team)</p>
-    
-    <h3>Report ASB as a Private Tenant</h3>
-    <p>If the ASB case doesn't involve a council housing tenant, then contact 101 for assistance.</p>
+    <h3>Reporting anti-social behaviour</h3>
+    <p>"If the ASB involves a Council tenant, use the form at the bottom of this page to raise a report to 
+    the appropriate team. If it does not involve a Council tenant advise the customer to contact 101</p>
     
     <h3>Police responsibility</h3>
     <p>South Yorkshire Police are responsible for dealing with any behaviour or activity which results in a criminal offence being committed.</p>
