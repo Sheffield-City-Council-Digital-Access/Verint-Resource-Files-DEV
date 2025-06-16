@@ -78,8 +78,11 @@ class FormDaMH extends CoreDaMH {
     "Short Breaks Grants",
     "Apply for a short break grant",
     `
-      <h2>Eligibility</h2>
-      <h1>Who can apply</h1>
+      <p>
+        A Short Break Grant is a one-off payment, up to a maximum of £400 per family, which can be used to arrange 
+        activities for your child's short break. If your child is disabled you may be able to apply for this grant.
+      </p>
+      <h3>Who can apply</h3>
       <p>
         You can apply if you are the parent or carer of a child with a diagnosed disability and:</p>
         <ul>
@@ -137,7 +140,7 @@ class FormDaMH extends CoreDaMH {
         income in these proposals.
       </p>
       <p>
-      <h2>If you receive other short break services</h2>
+      <h3>If you receive other short break services</h3>
        <p>You are not eligible to apply for this grant if you already receive:</p>
         <ul>
         <li>SNIPS activity including mainstream leisure clubs such as:
@@ -193,7 +196,7 @@ class FormDaMH extends CoreDaMH {
     ], 
       categories: ["disability and mental health"],
     },
-    { date: "20/03/2025", name: "Dinah Williams" }
+    { date: "10/06/2025", name: "Joseph Coupland" }
   );
   const directPayments = new ContentDaMH(
     "directPayments",
