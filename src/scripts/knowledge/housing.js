@@ -10669,7 +10669,7 @@ const tenancyEnforcementASB = new ContentH(
     
     <h3>Report ASB as a Private Tenant</h3>
     <p>If the ASB case doesn't involve a council housing tenant, then contact 101 for assistance.</p>
-
+    
     <h3>Police responsibility</h3>
     <p>South Yorkshire Police are responsible for dealing with any behaviour or activity which results in a criminal offence being committed.</p>
     <p>Where the perpetrator is an SCC tenant the Tenancy Enforcement and Sustainment Team (TEST) will work closely with SYP to ensure that any appropriate enforcement action is taken by the council.</p>
