@@ -9736,7 +9736,7 @@ const furnishedAccommodation = new ContentH(
     ],
     categories: ["Housing", "Sheltered and Supported"],
   },
-  { date: "15/10/2024", name: "Joe Nixon" }
+  { date: "17/06/2025", name: "Nathan Smith" }
 );
 
 const gypsyAndTravellers = new ContentH(
