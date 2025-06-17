@@ -1007,7 +1007,6 @@ const communalAreas = new ContentH(
       "bins",
       "skim",
       "skimming",
-      "bins",
       "chute"
     ],
     categories: ["Housing"],
