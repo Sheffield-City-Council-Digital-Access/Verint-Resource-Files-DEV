@@ -151,7 +151,7 @@ const makingAPayment = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff",
+      "Bailiff"
     ],
     categories: ["Parking"],
   },
@@ -190,7 +190,7 @@ const customerPaidTwice = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -205,8 +205,8 @@ const appealBlueBadge = new ContentP(
   "apealBlueBadge",
   "Appeal a Blue Badge Decision",
   "",
-  `
-    <h3>Appeal a Blue Badge Decision</h3>
+  `   
+   <h3>Appeal a Blue Badge Decision</h3>
     <ul>
       <li>The customer can request a review of the decision.</li>
       <li>Add a note on the case outlining any information given by the customer.</li>
@@ -237,11 +237,11 @@ const appealBlueBadge = new ContentP(
       "prking info",
       "Blue Badge",
       "blue badge",
-      "parking",
+      "parking"
     ],
     categories: ["Parking"],
   },
-  { date: "14/05/2025", name: "Dinah Williams" }
+  { date: "04/06/2025", name: "Dinah Williams" }
 );
 
 const applyBlueBadge = new ContentP(
@@ -249,7 +249,7 @@ const applyBlueBadge = new ContentP(
   "Apply for a Blue Badge",
   "Learn about the eligibility criteria and application process for a Blue Badge, including automatic qualification and discretionary assessments.",
   `
-      <h3>Eligible Without Further Assessment</h3>
+    <h3>Eligible Without Further Assessment</h3>
       <p>(Previously known as 'automatic')</p>
       <p>
         The customer will automatically qualify for a blue badge if they are more 
@@ -280,7 +280,7 @@ const applyBlueBadge = new ContentP(
           onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
               KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=apply%20for%20a%20Blue%20Badge\`
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Blue%20Badge\`
           ">
           Send link to apply online
         </button>
@@ -336,9 +336,7 @@ const applyBlueBadge = new ContentP(
     KDF.getParams().customerid
       ? `customerid=${KDF.getParams().customerid}&`
       : ""
-  }interactionid=${
-    KDF.getParams().interactionid
-  }">Blue Badge enquiry</a>
+  }interactionid=${KDF.getParams().interactionid}">Blue Badge enquiry</a>
 
     </div>
   </details>
@@ -366,11 +364,11 @@ const applyBlueBadge = new ContentP(
       "perking",
       "Blue Badge",
       "blue badge",
-      "parking",
+      "parking"
     ],
     categories: ["Parking"],
   },
-  { date: "19/03/2025", name: "Andy Walker" }
+  { date: "04/06/2025", name: "Dinah Williams" }
 );
 
 const blueBadgeHolderPassedAway = new ContentP(
@@ -416,7 +414,7 @@ const blueBadgeHolderPassedAway = new ContentP(
       "blue badge holder passed away",
       "badge holder deceased",
       "passed away",
-      "deceased badge holder",
+      "deceased badge holder"
     ],
     categories: ["Parking"],
   },
@@ -427,8 +425,8 @@ const replacementBlueBadge = new ContentP(
   "lostorStolenBlueBadge",
   "Request a replacement badge",
   "Find out how to request a replacement for a misplaced, stolen, or seized Blue Badge, including the process for submitting a form or contacting customer services.",
-  `
-      <h3>Misplaced or stolen badges</h3>
+  `   
+   <h3>Misplaced or stolen badges</h3>
       <p>
         If your badge is lost, damaged, stolen, or if you need to amend details on it, there is a £10 charge.
       </p>
@@ -462,6 +460,7 @@ const replacementBlueBadge = new ContentP(
         contact you, and a decision will be made regarding the return of your Blue
         Badge.
       </p>
+     
     `,
 
   { buttonLabel: "", formName: "" },
@@ -488,11 +487,11 @@ const replacementBlueBadge = new ContentP(
       "badge replacement",
       "blue badge replacemnt",
       "parkin",
-      "prking",
+      "prking"
     ],
     categories: ["Parking"],
   },
-  { date: "28/05/2025", name: "Dinah Williams" }
+  { date: "04/06/2025", name: "Dinah Williams" }
 );
 
 const blueBadge = new MenuP(
@@ -503,7 +502,7 @@ const blueBadge = new MenuP(
     applyBlueBadge,
     replacementBlueBadge,
     blueBadgeHolderPassedAway,
-    appealBlueBadge,
+    appealBlueBadge
   ]
 );
 
@@ -586,7 +585,7 @@ const baySuspensions = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -626,7 +625,7 @@ const carParkParkingMeterProblem = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -718,7 +717,7 @@ const illegalParking = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -774,7 +773,7 @@ const vehicleObstruction = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -808,7 +807,7 @@ const vehicleParkedInASuspendedBay = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -880,7 +879,7 @@ const yellowLineDispensations = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -897,7 +896,7 @@ const parkingIssues = new MenuP(
     carParkParkingMeterProblem,
     baySuspensions,
     yellowLineDispensations,
-    vehicleParkedInASuspendedBay,
+    vehicleParkedInASuspendedBay
   ]
 );
 
@@ -1161,7 +1160,7 @@ const businessPermit = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -1337,7 +1336,7 @@ const residentsCarer = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -1353,164 +1352,127 @@ const greenParkingPermit = new ContentP(
   "Green Parking Permit",
   "Learn about the eligibility, benefits, and application process for a free Green Parking Permit for ultra low-emission vehicles (ULEVs).",
   `
-<h3>Green Parking Permit</h3>
-<p>
-    A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the following criteria to park in the city centre for free. 
-    Anyone with an eligible vehicle can apply for it.
-</p>
-
-<p>The vehicle must be:</p>
-<ul>
-    <li>electric or hybrid fuel type</li>
-    <li>emit less then 75g of carbon dioxide (CO2) per kilometre travelled, with a capability of travelling a minimum range of 10 miles with zero CO2 emissions</li>
-</ul>
-
-<p>
-    You can use the DVLA checker to see if your vehicle meets these standards. 
-    It may show 0g on the CO2 emissions for some diesel vehicles as this data is not on their records. 
-    Such vehicles are not ULEVs and do not qualify for a green parking permit.
-</p>
-
-<h3>Cost</h3>
-<p>Green permits are free.</p>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>Exceptions</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
- <p>Business permits are not issued for:</p>
-            <ul>
-                <li>City centre Inner/Outer zones</li>
-                <li>Falding Street</li>
-                <li>Holme Lane</li>
-                <li>Edward Street Flats Car Park</li>
-                <li>Loxley New Road</li>
-                <li>Vaughton Hill</li>
-            </ul> 
-            </div>
-</details>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>Number of permits</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-         <h4>You can have 2 permits per business.</h4>
-            <p>
-                Businesses in Neepsend have the option to apply for additional permits. If you’d like to apply for 
-                additional permits, please log in to your account, select the ‘Business Discretionary’ permit type 
-                and complete your application.
-            </p>
-  </div>
-</details>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>How long a permit lasts</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-      <p>
-                Permits are issued for one year. It is your responsibility to ensure your permit is renewed. 
-                We do not issue replacement pool permits; if you lose them, you will need to apply again. 
-            </p>
-  </div>
-</details>
-
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>Where you can use the permit</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
- <p>
-                A green permit only allows you to park in pay and display bays located in the city centre (inner and outer zones) either:
-            </p>
-            <ul>
-                <li>on street</li>
-                <li>in most car parks that we run (subject to time limits)</li>
-            </ul>
-
-            <p>It cannot be used in:</p>
-            <ul>
-                <li>other types of parking bay (such as disabled bays, permit holder parking bays)</li>
-                <li>Hawley Street Car Park</li>
-                <li>in other parking permit zones</li>
-                <li>car parks we don’t run eg university permit holder car parks</li>
-            </ul>
-  </div>
-</details>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>Parking time limits</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-  <p>
-                There are no time limits for parking with a green permit in most of the pay and display bays in the city centre inner and outer zones.  
-            </p>
-
-            <p>However, the following car parks are restricted to a maximum stay period of 6 hours for green permit holders:</p>
-            <ul>
-                <li>Devonshire Green car park</li>
-                <li>Milton Street car park </li>
-                <li>Carver Lane car park</li>
-                <li>West Street Lane car park</li>
-            </ul>
-
-            <p>
-                If you intend to use any of these car parks please send an email to
-                <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
-                and we'll send you a clock for you to display in your windscreen.
-            </p> </div>
-</details>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>Number of permits</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-            <p>You can apply for one permit per vehicle. There is no limit to how many permits a household can have.</p>
- </div>
-</details>
-
-<details class="accordion">
- <summary class="accordion-header">
-   <h3>How long a permit lasts</h3>
-   <div class="accordion-icon"></div>
- </summary>
- <div class="accordion-content">
-            <p>Permits last for one year. It is your responsibility to ensure your permit is renewed.</p>
- </div>
-</details>
-
-
-
-<p>
-    For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-</p>
-
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information and to apply send link to apply online"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
-    "
->
-    Send link to review further information
-</button>
-     
- 	`,
+	<p>
+	    A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the following criteria to park in the city centre for free. 
+	    Anyone with an eligible vehicle can apply for it.
+	</p>
+	
+	<p>The vehicle must be:</p>
+	<ul>
+	    <li>electric or hybrid fuel type</li>
+	    <li>emit less then 75g of carbon dioxide (CO2) per kilometre travelled, with a capability of travelling a minimum range of 10 miles with zero CO2 emissions</li>
+	</ul>
+	
+	<p>
+	    You can use the DVLA checker to see if your vehicle meets these standards. 
+	    It may show 0g on the CO2 emissions for some diesel vehicles as this data is not on their records. 
+	    Such vehicles are not ULEVs and do not qualify for a green parking permit.
+	</p>
+	
+	<h3>Cost</h3>
+	<p>Green permits are free.</p>
+	
+	<details class="accordion">
+	  <summary class="accordion-header">
+	    <h3>How long a permit lasts</h3>
+	    <div class="accordion-icon"></div>
+	  </summary>
+	  <div class="accordion-content">
+	    <p>
+	      Permits are issued for one year. It is your responsibility to ensure your permit is renewed. 
+	      We do not issue replacement pool permits; if you lose them, you will need to apply again. 
+	    </p>
+	  </div>
+	</details>
+	
+	<details class="accordion">
+	  <summary class="accordion-header">
+	    <h3>Where you can use the permit</h3>
+	    <div class="accordion-icon"></div>
+	  </summary>
+	  <div class="accordion-content">
+	    <p>
+	      A green permit only allows you to park in pay and display bays located in the city centre (inner and outer zones) either:
+	    </p>
+	    <ul>
+	      <li>on street</li>
+	      <li>in most car parks that we run (subject to time limits)</li>
+	    </ul>
+	
+	    <p>It cannot be used in:</p>
+	    <ul>
+	      <li>other types of parking bay (such as disabled bays, permit holder parking bays)</li>
+	      <li>Hawley Street Car Park</li>
+	      <li>in other parking permit zones</li>
+	      <li>car parks we don’t run eg university permit holder car parks</li>
+	    </ul>
+	  </div>
+	</details>
+	
+	<details class="accordion">
+	  <summary class="accordion-header">
+	    <h3>Parking time limits</h3>
+	    <div class="accordion-icon"></div>
+	  </summary>
+	  <div class="accordion-content">
+	    <p>
+	      There are no time limits for parking with a green permit in most of the pay and display bays in the city centre inner and outer zones.  
+	    </p>
+	
+	    <p>However, the following car parks are restricted to a maximum stay period of 6 hours for green permit holders:</p>
+	    <ul>
+	      <li>Devonshire Green car park</li>
+	      <li>Milton Street car park </li>
+	      <li>Carver Lane car park</li>
+	      <li>West Street Lane car park</li>
+	    </ul>
+	
+	    <p>
+	      If you intend to use any of these car parks please send an email to
+	      <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a>
+	      and we'll send you a clock for you to display in your windscreen.
+	    </p>
+	  </div>
+	</details>
+	
+	<details class="accordion">
+	  <summary class="accordion-header">
+	    <h3>Number of permits</h3>
+	    <div class="accordion-icon"></div>
+	  </summary>
+	  <div class="accordion-content">
+	    <p>You can apply for one permit per vehicle. There is no limit to how many permits a household can have.</p>
+	  </div>
+	</details>
+	
+	<details class="accordion">
+	  <summary class="accordion-header">
+	    <h3>How long a permit lasts</h3>
+	    <div class="accordion-icon"></div>
+	  </summary>
+	  <div class="accordion-content">
+	    <p>Permits last for one year. It is your responsibility to ensure your permit is renewed.</p>
+	  </div>
+	</details>
+	
+	<p>
+	  For further information, visit 
+	  <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+	</p>
+	
+	<button
+	  type="button"
+	  class="dform_widget email-btn dform_widget_type_button"
+	  aria-label="For further information and to apply send link to apply online"
+	  onclick="
+	    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+	      KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+	    }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+	  "
+	>
+	  Send link to review further information
+	</button>
+`,
   {
     buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
@@ -1536,10 +1498,11 @@ const greenParkingPermit = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
-    categories: ["Parking"],
-  }
+     categories: ["Parking"],
+  },
+  { date: "11/03/2025", name: "Gee Whitehouse" }
 );
 
 const langsettAndHillsboroughBusAndTramgate = new ContentP(
@@ -1703,7 +1666,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -1809,7 +1772,7 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -1939,7 +1902,7 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -2114,7 +2077,7 @@ Get in touch with us for any other problems regarding parking permit application
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -2175,7 +2138,7 @@ const staffPermit = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -2328,7 +2291,7 @@ const tradePermit = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -2409,7 +2372,7 @@ const utilityPermit = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -2576,7 +2539,7 @@ Contractors needing more time to work at a property will need to apply for trade
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -2600,7 +2563,7 @@ const parkingPermits = new MenuP(
     utilityPermit,
     visitorsPermits,
     makingAPayment,
-    customerPaidTwice,
+    customerPaidTwice
   ]
 );
 
@@ -2659,7 +2622,7 @@ const confirmationOfPayment = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff",
+      "Bailiff"
     ],
     categories: ["Parking"],
   },
@@ -2715,7 +2678,7 @@ const customerTriedToPayOnline = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff",
+      "Bailiff"
     ],
     categories: ["Parking"],
   },
@@ -2851,7 +2814,7 @@ const customerUnableToPay = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff",
+      "Bailiff"
     ],
     categories: ["Parking"],
   },
@@ -2961,6 +2924,10 @@ const enforcementBaliffEnquiries = new ContentP(
       "Fine",
       "Taxi PCN",
       "Bailiff",
+      "Baliff",
+      "baliff",
+      "Enforcement and Baliff Enquiries",
+      "Enforcement Baliff Enquiries"
     ],
     categories: ["Parking"],
   },
@@ -3156,7 +3123,7 @@ const howCanIAppeal = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff",
+      "Bailiff"
     ],
     categories: ["Parking"],
   },
@@ -3218,7 +3185,7 @@ const howLongDoIHaveToAppeal = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff",
+      "Bailiff"
     ],
     categories: ["Parking"],
   },
@@ -3361,7 +3328,7 @@ Or email: <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a></p>
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff",
+      "Bailiff"
     ],
     categories: ["Parking"],
   },
@@ -3413,7 +3380,7 @@ const debtRegistrationAndWarrantCases = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff",
+      "Bailiff"
     ],
     categories: ["Parking"],
   },
@@ -3724,14 +3691,14 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff",
+      "Bailiff"
     ],
     categories: ["Parking"],
   },
   { date: "08/05/2025", name: "Andy Walker" }
 );
 
-const postReceivedForSomeoneNotLivingAtAddress  = new ContentP(
+const postReceivedForSomeoneNotLivingAtAddress = new ContentP(
   "postReceivedForSomeoneNotLivingAtAddress",
   "Post Received For Someone Not Living At The Address",
   "Find out what happens when a PCN is sent to your address but the person does not live at the address.",
@@ -3771,7 +3738,7 @@ const postReceivedForSomeoneNotLivingAtAddress  = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff",
+      "Bailiff"
     ],
     categories: ["Parking"],
   },
@@ -3881,7 +3848,7 @@ const unableToResolvePcn = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff",
+      "Bailiff"
     ],
     categories: ["Parking"],
   },
@@ -3905,7 +3872,7 @@ const penaltyChargeNoticePcn = new MenuP(
     debtRegistrationAndWarrantCases,
     debtGuidanceRelatedToPCNs,
     postReceivedForSomeoneNotLivingAtAddress,
-    unableToResolvePcn,
+    unableToResolvePcn
   ]
 );
 
@@ -3942,7 +3909,7 @@ const haveYouReceivedMyAppeal = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },

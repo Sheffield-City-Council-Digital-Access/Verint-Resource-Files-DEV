@@ -1171,161 +1171,6 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE CLOSE CASE CLICK ------------------------------------------- \\
 
-  function createReviewSection(pageId, pageTitle, fields) {
-    let statusCardHtml = `
-      <div class="review-section">
-          <div class="review-content">
-              <div class="review-content-header">
-                  <h3>${pageTitle}</h3>
-                  <button type="button" class="go-to-page-btn" id="go-to-${pageId}">Edit</button>
-              </div>
-              ${fields
-                .map(
-                  (field) => `
-                    <p>${field.fieldlabel}: ${field.fieldValue}</p>
-                  `
-                )
-                .join("")}
-          </div>
-      </div>
-  `;
-
-    document
-      .getElementById("review-case-content-container")
-      .insertAdjacentHTML("beforeend", statusCardHtml);
-
-    const button = document.getElementById(`go-to-${pageId}`);
-    if (button) {
-      button.addEventListener("click", function () {
-        const modal = document.getElementById("case-review-modal");
-        modal.close();
-        modal.remove();
-        KDF.gotoPage(pageId, false, false, true);
-      });
-    }
-  }
-
-  function checkIsFormComplete(fields) {
-    let isComplete = true;
-    let incompleteFields = [];
-    let pages = [];
-
-    fields.forEach((field) => {
-      let value = KDF.getVal(field);
-      if (
-        !value ||
-        value.length < 1 ||
-        value === "Pending" ||
-        value === "In progress"
-      ) {
-        isComplete = false;
-        incompleteFields.push(field);
-      }
-      console.log("incompleteFields", incompleteFields);
-    });
-
-    if (isComplete) {
-      return isComplete;
-    }
-
-    const modal = document.createElement("dialog");
-    modal.id = "case-review-modal";
-    modal.innerHTML = `
-      <div class="modal-header">
-        <h1>Incomplete process</h1>
-      </div>
-      <div class="modal-main">
-        <p>The following fields need completing before the case can be closed.</p>
-        <div id="review-case-content-container"></div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="close-modal-btn" id="closeModal">Close</button>
-      </div>
-    `;
-
-    document.body.appendChild(modal);
-    modal.showModal();
-
-    incompleteFields.forEach((field) => {
-      let id = `dform_widget_${field}`;
-      let element = document.getElementById(id);
-      let label, labelText, fieldValue;
-
-      if (!element) {
-        let radioContainer = document.querySelector(
-          `[data-name="${field}"][data-type="radio"]`
-        );
-        let checkboxContainer = document.querySelector(
-          `[data-name="${field}"][data-type="multicheckbox"]`
-        );
-
-        if (radioContainer) {
-          let selectedRadio = radioContainer.querySelector(
-            "input[type='radio']:checked"
-          );
-          fieldValue = selectedRadio ? selectedRadio.value : "Not Answered";
-          labelText =
-            radioContainer.querySelector("legend")?.textContent || field;
-          element = radioContainer;
-        } else if (checkboxContainer) {
-          let selectedCheckboxes = [
-            ...checkboxContainer.querySelectorAll(
-              "input[type='checkbox']:checked"
-            ),
-          ];
-          fieldValue = selectedCheckboxes.length
-            ? selectedCheckboxes.map((cb) => cb.value).join(", ")
-            : "Not Answered";
-          labelText =
-            checkboxContainer.querySelector("legend")?.textContent || field;
-          element = checkboxContainer;
-        } else {
-          fieldValue = KDF.getVal(field) || "Not Answered";
-          label = document.querySelector(`label[for='${id}']`);
-          labelText = label ? label.textContent : field;
-        }
-      } else {
-        label = document.querySelector(`label[for='${id}']`);
-        labelText = label ? label.textContent : field;
-        fieldValue = KDF.getVal(field) || "Not Answered";
-      }
-
-      let pageTitleText = "Unknown Section";
-      if (element) {
-        let page = element.closest('[data-type="page"]');
-        if (page) {
-          let pageTitle = page.querySelector(".page-title");
-          pageTitleText = pageTitle ? pageTitle.textContent : "Unknown Section";
-          let pageId = page.id
-            ? page.id.replace(/^dform_page_/, "")
-            : `page-${Math.random().toString(36).substr(2, 9)}`;
-          let pageData = pages.find((page) => page.pageId === pageId);
-          if (!pageData) {
-            pageData = { pageId, pageTitle: pageTitleText, fields: [] };
-            pages.push(pageData);
-          }
-          pageData.fields.push({
-            fieldlabel: labelText,
-            fieldValue: fieldValue,
-          });
-        }
-      }
-    });
-
-    pages.forEach((page) => {
-      createReviewSection(page.pageId, page.pageTitle, page.fields);
-    });
-
-    document
-      .getElementById("closeModal")
-      .addEventListener("click", function () {
-        modal.close();
-        modal.remove();
-      });
-
-    return isComplete;
-  }
-
   $(".close-case-btn").on("click", () => {
     if (checkIsFormComplete(fieldsToCheckBeforeClose)) {
       KDF.markComplete();
@@ -3210,6 +3055,161 @@ function closeCase() {
   KDF.customdata("close-case", "_KDF_complete", true, true, {
     caseNote: `${KDF.getVal("sel_closure_reason")}: ${noteDetails}`,
   });
+}
+
+// --- CHECK CASE STATUS ---------------------------------------------------- \\
+
+function createReviewSection(pageId, pageTitle, fields) {
+  let statusCardHtml = `
+      <div class="review-section">
+          <div class="review-content">
+              <div class="review-content-header">
+                  <h3>${pageTitle}</h3>
+                  <button type="button" class="go-to-page-btn" id="go-to-${pageId}">Edit</button>
+              </div>
+              ${fields
+                .map(
+                  (field) => `
+                    <p>${field.fieldlabel}: ${field.fieldValue}</p>
+                  `
+                )
+                .join("")}
+          </div>
+      </div>
+   `;
+
+  document
+    .getElementById("review-case-content-container")
+    .insertAdjacentHTML("beforeend", statusCardHtml);
+
+  const button = document.getElementById(`go-to-${pageId}`);
+  if (button) {
+    button.addEventListener("click", function () {
+      const modal = document.getElementById("case-review-modal");
+      modal.close();
+      modal.remove();
+      KDF.gotoPage(pageId, false, false, true);
+    });
+  }
+}
+
+function checkIsFormComplete(fields) {
+  let isComplete = true;
+  let incompleteFields = [];
+  let pages = [];
+
+  fields.forEach((field) => {
+    let value = KDF.getVal(field);
+    if (
+      !value ||
+      value.length < 1 ||
+      value === "Pending" ||
+      value === "In progress"
+    ) {
+      isComplete = false;
+      incompleteFields.push(field);
+    }
+    console.log("incompleteFields", incompleteFields);
+  });
+
+  if (isComplete) {
+    return isComplete;
+  }
+
+  const modal = document.createElement("dialog");
+  modal.id = "case-review-modal";
+  modal.innerHTML = `
+      <div class="modal-header">
+        <h1>Incomplete process</h1>
+      </div>
+      <div class="modal-main">
+        <p>The following fields need completing before the case can be closed.</p>
+        <div id="review-case-content-container"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close-modal-btn" id="closeModal">Close</button>
+      </div>
+    `;
+
+  document.body.appendChild(modal);
+  modal.showModal();
+
+  incompleteFields.forEach((field) => {
+    let id = `dform_widget_${field}`;
+    let element = document.getElementById(id);
+    let label, labelText, fieldValue;
+
+    if (!element) {
+      let radioContainer = document.querySelector(
+        `[data-name="${field}"][data-type="radio"]`
+      );
+      let checkboxContainer = document.querySelector(
+        `[data-name="${field}"][data-type="multicheckbox"]`
+      );
+
+      if (radioContainer) {
+        let selectedRadio = radioContainer.querySelector(
+          "input[type='radio']:checked"
+        );
+        fieldValue = selectedRadio ? selectedRadio.value : "Not Answered";
+        labelText =
+          radioContainer.querySelector("legend")?.textContent || field;
+        element = radioContainer;
+      } else if (checkboxContainer) {
+        let selectedCheckboxes = [
+          ...checkboxContainer.querySelectorAll(
+            "input[type='checkbox']:checked"
+          ),
+        ];
+        fieldValue = selectedCheckboxes.length
+          ? selectedCheckboxes.map((cb) => cb.value).join(", ")
+          : "Not Answered";
+        labelText =
+          checkboxContainer.querySelector("legend")?.textContent || field;
+        element = checkboxContainer;
+      } else {
+        fieldValue = KDF.getVal(field) || "Not Answered";
+        label = document.querySelector(`label[for='${id}']`);
+        labelText = label ? label.textContent : field;
+      }
+    } else {
+      label = document.querySelector(`label[for='${id}']`);
+      labelText = label ? label.textContent : field;
+      fieldValue = KDF.getVal(field) || "Not Answered";
+    }
+
+    let pageTitleText = "Unknown Section";
+    if (element) {
+      let page = element.closest('[data-type="page"]');
+      if (page) {
+        let pageTitle = page.querySelector(".page-title");
+        pageTitleText = pageTitle ? pageTitle.textContent : "Unknown Section";
+        let pageId = page.id
+          ? page.id.replace(/^dform_page_/, "")
+          : `page-${Math.random().toString(36).substr(2, 9)}`;
+        let pageData = pages.find((page) => page.pageId === pageId);
+        if (!pageData) {
+          pageData = { pageId, pageTitle: pageTitleText, fields: [] };
+          pages.push(pageData);
+        }
+        pageData.fields.push({
+          fieldlabel: labelText,
+          fieldValue: fieldValue,
+        });
+      }
+    }
+  });
+
+  pages.forEach((page) => {
+    createReviewSection(page.pageId, page.pageTitle, page.fields);
+  });
+
+  document.getElementById("closeModal").addEventListener("click", function () {
+    modal.close();
+    modal.remove();
+  });
+
+  return isComplete;
 }
 
 // --- MAP FUNCTIONS -------------------------------------------------------- \\

@@ -96,7 +96,7 @@ const communalFireSafety = new ContentH(
       on stairs or landings which are the means of escape from the building.
     </p>
   `,
-  { buttonLabel: "Raise enquiry", formName: "hou_estates_enquiry" },
+  { buttonLabel: "Raise enquiry", formName: "hou_routing_enquiry" },
   { typeKey: "" },
   { typeKey: "estates_and_environmental_information_provided" },
   {
@@ -990,7 +990,7 @@ const communalAreas = new ContentH(
   `,
   {
     buttonLabel: "Raise Housing Enquiry ",
-    formName: "hou_estates_enquiry",
+    formName: "hou_routing_enquiry",
   },
   { typeKey: "" },
   { typeKey: "estates_and_environmental_information_provided" },
@@ -1579,7 +1579,7 @@ const payment = new ContentH(
 const programmedWorks = new ContentH(
   "programmedWorks",
   "Programmed Works",
-  "",
+  "Information regarding programmed works",
   `
   <details class="accordion">
   <summary class="accordion-header">
@@ -1697,35 +1697,6 @@ const propertyAge = new ContentH(
     buttonLabel: "",
     formName: "",
   },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
-  { typeKey: "repairs_and_investment_information_provided" },
-  {
-    type: "Information",
-    keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
-    ],
-    categories: ["Housing"],
-  },
-  { date: "10/10/2024", name: "George Whitehouse" }
-);
-
-const refunds = new ContentH(
-  "refunds",
-  "Refunds",
-  "Learn about Pay As You Go refund eligibility for vacated properties and the process for requesting a refund.",
-  `
-  <p>
-    Pay As You Go refunds are not made unless the tenant has vacated the property.<br>
-    Once their rent account has been closed, customers are entitled to a full refund as long as their remaining 
-    Pay As You Go balance is £10.00 or greater please ask the tenant to call Home Ownership 
-    and Revenues Unit on <a href="tel:0114 2735595">0114 2735595</a> once their rent account has been closed. 
-  </p>
-  `,
-  { buttonLabel: "Report Rents Refunds ", formName: "hou_rents_refunds" },
   { typeKey: "repairs_and_investment_transferred_to_service" },
   { typeKey: "repairs_and_investment_information_provided" },
   {
@@ -1920,8 +1891,7 @@ const assetManagementAndRepairs = new MenuH(
     payment,
     programmedWorks,
     propertyAge,
-    refunds,
-    tenantsOwnImprovements,
+    tenantsOwnImprovements
   ]
 );
 
@@ -1951,22 +1921,9 @@ const communalCupboard = new ContentH(
     <p>
       <strong>Advisor Note:</strong> Use the form below to request a communal cupboard key if required.
     </p>
-    <p>
-      <Strong>Alternatively, contact: </strong>
-    </p>
-<ul>
-  <li>North – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142037018')">0114 2037018</a></li>
-  <li>North East – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142037445')">0114 2037445</a></li>
-  <li>Central – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142037022')">0114 2037022</a></li>
-  <li>South West – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142037120')">0114 2037120</a></li>
-  <li>South East – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142039339')">0114 2039339</a></li>
-  <li>East – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142039148')">0114 2039148</a></li>
-  <li>Sheltered – <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142037022')">0114 2037022</a></li>
-</ul>
-
   `,
-  { buttonLabel: "Raise enquiry", formName: "hou_estates_enquiry" },
-  { typeKey: "estates_and_environmental_transferred_to_service" },
+  { buttonLabel: "Raise enquiry", formName: "hou_routing_enquiry" },
+  { typeKey: "" },
   { typeKey: "estates_and_environmental_information_provided" },
   {
     type: "Housing",
@@ -2181,7 +2138,7 @@ const generalCouncilHousing = new ContentH(
     <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx"target="_blank">Telephone Directory</a>
   </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Raise enquiry", formName: "hou_routing_enquiry" },
   { typeKey: "housing_general_transferred_to_service" },
   { typeKey: "housing_general_information_provided" },
   {
@@ -5135,7 +5092,7 @@ const balanceEnquiry = new ContentH(
 `,
   {
     buttonLabel: "Check balance",
-    formName: "hou_check_balance",
+    formName: "hou_rents_enquiry",
   },
   { typeKey: "" },
   { typeKey: "rents_information_provided" },
@@ -5398,7 +5355,7 @@ const debtRecovery = new FormH(
   "debtRecovery",
   "Debt Recovery",
   "Use this form to enquire about Debt recovery or any correspondence you have received regarding Debt Recovery.",
-  "hou_rents_debt_recovery",
+  "hou_rents_enquiry",
   {
     type: "Request",
     keywords: ["Debt", "Housing", "Rent", "Recovery"],
@@ -5440,7 +5397,7 @@ const rentArrangements = new FormH(
   "rentArrangements",
   "Rent Arrangements",
   "Use this form to set up, amend or enquire about a Rent Arrangement.",
-  "hou_rents_arrangements",
+  "hou_rents_enquiry",
   {
     type: "Request",
     keywords: ["Arrangement", "Housing", "Rent"],
@@ -5452,8 +5409,8 @@ const rentArrangements = new FormH(
 const rentRefunds = new FormH(
   "rentRefunds",
   "Rent Refunds",
-  "Use this form to chase or request a Rent refund. You must more than 4 weeks in credit to request a refund and the refund will leave the account 4 weeks in credit.",
-  "hou_rents_refunds",
+  "Use this form to chase or request a Rent refund. You must be more than 4 weeks in credit to request a refund and the refund will leave the account 4 weeks in credit.",
+  "hou_rents_enquiry",
   {
     type: "Request",
     keywords: ["Refund", "Housing", "Rent"],
@@ -10668,6 +10625,11 @@ const tenancyEnforcementASB = new ContentH(
       <li> A one-off party if noise was the only issue and it is unlikely to be repeated</li>
       <li> Children playing (including ball games)</li>
     </ul>
+
+    <h3>Reporting anti-social behaviour</h3>
+    <p>If the ASB involves a Council tenant, use the form at the bottom of this page to raise a report to 
+    the appropriate team. If it does not involve a Council tenant advise the customer to contact 101</p>
+    
     <h3>Police responsibility</h3>
     <p>South Yorkshire Police are responsible for dealing with any behaviour or activity which results in a criminal offence being committed.</p>
     <p>Where the perpetrator is an SCC tenant the Tenancy Enforcement and Sustainment Team (TEST) will work closely with SYP to ensure that any appropriate enforcement action is taken by the council.</p>
@@ -10720,7 +10682,8 @@ const tenancyEnforcementASB = new ContentH(
     <p>South Yorkshire Fire and Rescue Service can fit blank letter boxes if there are concerns regarding harmful items being posted through the door. The Neighbourhood Officer can make a referral to SYF&amp;R for a Home Safety check.</p>
     <p>Neighbourhood Teams may have stock of target hardening equipment.</p>
     <p>Victim Support may support with target hardening.</p>
-  </p>`,
+  `,
+
   { buttonLabel: "Raise report", formName: "hou_enforcement_asb" },
   { typeKey: "" },
   { typeKey: "tenancy_enforcement_information_provided" },

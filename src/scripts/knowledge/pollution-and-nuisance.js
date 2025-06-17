@@ -2018,15 +2018,15 @@ const ratTreatment = new ContentPaN(
   `
     <h3>Cost for Treatment</h3>
     <p>
-      The treatment cost for Rats is <strong>£124.00.</strong> This covers you for up to 3 visits.
-      If you require further treatments, each additional treatment will cost <strong>£58.00.</strong>
+      The treatment cost for Rats is <strong>£124.80.</strong> This covers you for up to 3 visits.
+      If you require further treatments, each additional treatment is <strong>Free.</strong>
     </p>
     <p>
-      All prices include a call-out fee of <strong>£41.00.</strong> This fee applies if our officer
+      All prices include a call-out fee of <strong>£40.00.</strong> This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
     <p>
-      If you receive one of the following benefits, the treatment will be free:
+      If you receive one of the following benefits, the treatment will be free: 
     </p>
     <ul>
       <li>Pension Credits</li>
@@ -2732,7 +2732,7 @@ const handoverDogtoCouncil = new FormPaN(
   "handoverDogtoCouncil",
   "Handover Dog to Council",
   "Hand over a dog to the council",
-  "report_dangerous_dog",
+  "report_dog_handover",
   {
     type: "Report",
     keywords: ["Handover Dog to Council", "Treatment", "Pests", "Vermin"],
