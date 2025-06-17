@@ -970,7 +970,7 @@ const communalAreas = new ContentH(
 
   <h3>Bin Skimming</h3>
   <p>
-    If a communal bin in a flat becomes overloaded, a request must be made to the Estates team to skim the bin in order to enable Veolia to empty the binds.
+    If a communal bin in a flat becomes overloaded, a request must be made to the Estates team to skim the bin in order to enable Veolia to empty the bins.
   </p>
     <h3>Fences</h3>
     <h4>New Fence</h4>
