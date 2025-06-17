@@ -11636,7 +11636,7 @@ const vulnerability = new FormH(
     keywords: ["Vulnera", "Vuln", "vunerability", "vulnerabilty", "vulnurability", "vulnerability", "vulnerable"],
     categories: ["Housing"],
   },
-  { date: "27/02/2025", name: "Nathan Smith" }
+  { date: "17/06/2025", name: "Joseph Coupland" }
 );
 
 const tenancySustainment = new MenuH(
