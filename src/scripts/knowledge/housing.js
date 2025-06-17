@@ -842,8 +842,7 @@ const asbestos = new ContentH(
 
   <p>
     Asbestos: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736315')">0114 2736315</a><br>
-    Nextteam:
-  </p>
+    </p>
   `,
   {
     buttonLabel: "Raise Housing Decant Enquiry",
@@ -862,7 +861,7 @@ const asbestos = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "27/02/2025", name: "Nathan Smith" }
+  { date: "17/06/2025", name: "Shahzad Athar" }
 );
 
 const carbonMonoxide = new ContentH(
@@ -1668,27 +1667,21 @@ const programmedWorks = new ContentH(
 
 <p>
     Programme Support / Re-Roofing: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2052706')">0114 2052706</a><br>
-    Nextteam:
-</p>
+    </p>
  <p>
     Surveyors: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2735715')">0114 2735715</a><br>
-    Nextteam:
-  </p>
+</p>
   <p>
     Asbestos: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736315')">0114 2736315</a><br>
-    Nextteam:
-  </p>
+</p>
   <p>
     Adaptations: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736275')">0114 2736275</a><br>
-    Nextteam: 
 </p>
   <p>
     Acquisitions: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734617')">0114 2734617</a><br>
-    Nextteam: 
 </p>
 <p>
     Asset Management: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736315, 2736275')">0114 2736315, 2736275</a><br>
-    Nextteam: 
 </p>
 
   `,
@@ -1709,7 +1702,7 @@ const programmedWorks = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "10/10/2024", name: "George Whitehouse" }
+  { date: "17/06/2025", name: "Shahzad Athar" }
 );
 
 const propertyAge = new ContentH(
@@ -5941,7 +5934,6 @@ const adaptation = new ContentH(
 
   <p>
 		Adaptations: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736275')">0114 2736275</a><br>
-    Nextteam: 
 </p>
 
 
@@ -5965,7 +5957,7 @@ const adaptation = new ContentH(
     ],
     categories: ["Repairs"],
   },
-  { date: "28/04/2025", name: "Shahzad Athar" }
+  { date: "17/06/2025", name: "Shahzad Athar" }
 );
 
 const blacksmith = new ContentH(
@@ -8628,8 +8620,7 @@ const pitchedRoof = new ContentH(
 
   <p>
     Programme Support / Re-Roofing: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2052706')">0114 2052706</a><br>
-    Nextteam:
-   </p>
+    </p>
 
 <h3>Recharge</h3>
 
@@ -8660,7 +8651,7 @@ const pitchedRoof = new ContentH(
     ],
     categories: ["Repairs"],
   },
-  { date: "28/04/2025", name: "Shahzad Athar" }
+  { date: "17/06/2025", name: "Shahzad Athar" }
 );
 
 const plastering = new ContentH(
@@ -9144,7 +9135,6 @@ const surveyors = new ContentH(
 
     <p>
     Surveyors: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2735715')">0114 2735715</a><br>
-    Nextteam:
     </p>
 
   `,
@@ -9167,7 +9157,7 @@ const surveyors = new ContentH(
     ],
     categories: ["Repairs"],
   },
-  { date: "28/04/2025", name: "Shahzad Athar" }
+  { date: "17/06/2025", name: "Shahzad Athar" }
 );
 
 const tarmac = new ContentH(
