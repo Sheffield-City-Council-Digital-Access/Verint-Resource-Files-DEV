@@ -5897,7 +5897,7 @@ const adaptation = new ContentH(
       : ""
   }interactionid=${
     KDF.getParams().interactionid
-  }&txt_emailservice=CommunitiesEquip%26Adaptations@sheffield.gov.uk">CommunitiesEquip&26Adaptations@sheffield.gov.uk</a>
+  }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   <h2>Mobility Scooter Ramps</h2>
 
