@@ -9766,7 +9766,7 @@ const furnishedAccommodation = new ContentH(
       <a href="tel:0114 2052600">0114 2052600</a>.
     </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Raise enquiry", formName: "hou_furnished" },
   { typeKey: "sheltered_and_supported_transferred_to_service" },
   { typeKey: "sheltered_and_supported_information_provided" },
   {
@@ -9780,7 +9780,7 @@ const furnishedAccommodation = new ContentH(
     ],
     categories: ["Housing", "Sheltered and Supported"],
   },
-  { date: "15/10/2024", name: "Joe Nixon" }
+  { date: "17/06/2025", name: "Nathan Smith" }
 );
 
 const gypsyAndTravellers = new ContentH(
@@ -11663,6 +11663,20 @@ const tenancyConditions = new ContentH(
   { date: "08/11/2024", name: "Shahzad Athar" }
 );
 
+
+const vulnerability = new FormH(
+  "vulnerability",
+  "Vulnerability",
+  "Escalate vulnerability housing enquires to Neighbourhood Support Teams.",
+  "hou_routing_enquiry",
+  {
+    type: "Enquiry",
+    keywords: ["Vulnera", "Vuln", "vunerability", "vulnerabilty", "vulnurability", "vulnerability", "vulnerable"],
+    categories: ["Housing"],
+  },
+  { date: "17/06/2025", name: "Joseph Coupland" }
+);
+
 const tenancySustainment = new MenuH(
   "tenancySustainment",
   "Tenancy Sustainment",
@@ -11681,6 +11695,7 @@ const tenancySustainment = new MenuH(
     tenancyAgreementRequest,
     tenancyChange,
     tenancyConditions,
+    vulnerability
   ]
 );
 
