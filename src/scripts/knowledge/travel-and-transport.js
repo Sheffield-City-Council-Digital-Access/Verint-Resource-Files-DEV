@@ -229,7 +229,7 @@ const zoomZeroFare = new ContentTaT(
             <ul>
               <li>Cheaper travel for work, school, college, or leisure.</li>
               <li>
-                Travel anytime, anywhere in South Yorkshire for just £1 per journey
+                Travel anytime, anywhere in South Yorkshire for just 80p per journey
                 on bus or tram and half fare on Northern trains.
               </li>
               <li>
@@ -348,20 +348,6 @@ const disabledPersonsTravelPermit = new ContentTaT(
     If you have any supporting evidence/eligibility that has an end date, your pass will be issued up to that date.  Maximum of 5 years.
     </p>
 
-    
-   <button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Disabled%20Persons%20Travel%20Pass\`
-    "
->
-    Send link to review further information
-</button>
-
     <h3>How long does a Disabled Travel Permit last for</h3>
        <p>
       If your application is successful, passes are issued between 1 and 5 years the
@@ -432,21 +418,20 @@ const disabledPersonsTravelPermit = new ContentTaT(
     <p>
       You can replace your lost, damaged, or stolen Disabled Person's Pass online by visiting:  
       <a href="https://www.travelsouthyorkshire.com/Disabledreplace/" target="_blank">
-      https://www.travelsouthyorkshire.com/Disabledreplace/ </a>
+      https://www.travelsouthyorkshire.com/Disabledreplace/
 
-         <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="Send link for disabled travel pass replacement"
-        onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Disabled%20Replace\`
-            "
-      >
-        Send link to review further information
-      </button>
-
+   <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20a%20Disabled%20Persons%20Travel%20Pass\`
+    "
+>
+    Send link to review further information
+</button>
    
     </a>. There is a £7 charge for lost or damaged passes. You must provide 
       Proof of Identity that includes your address, such as an official letter, 
@@ -494,10 +479,19 @@ const disabledPersonsTravelPermit = new ContentTaT(
               }interactionid=\${KDF.getParams().interactionid}&sel_service=Disabled%20Replace\`
             "
       >
-        Send link to review further information
+      Send link to review further information
       </button>
-
+      
+      <a href="${window.location.protocol}//${
+       window.location.hostname
+     }/form/launch/dtp_enquiry?${
+       KDF.getParams().customerid
+         ? `customerid=${KDF.getParams().customerid}&`
+         : ""
+     }interactionid=${KDF.getParams().interactionid}">Disabled Travel Pass enquiry</a>
    `,
+
+  
   {
     buttonLabel: "Apply for disabled travel permit",
     formName: "disabled_travel_pass",
@@ -520,6 +514,8 @@ const disabledPersonsTravelPermit = new ContentTaT(
       "MTP",
       "DP",
       "DPP",
+      "disabled travel pass enquiry",
+      "dtp enquiry",
       "aplication",
       "applcation",
       "applicaton",
@@ -536,7 +532,7 @@ const disabledPersonsTravelPermit = new ContentTaT(
 
     categories: ["Travel and Transport"],
   },
-  { date: "17/03/2025", name: "Andy Walker" }
+  { date: "18/06/2025", name: "Dinah Williams" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
