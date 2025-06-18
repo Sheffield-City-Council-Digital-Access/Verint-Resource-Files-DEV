@@ -496,7 +496,13 @@ const disabledPersonsTravelPermit = new ContentTaT(
       >
         Send link to review further information
       </button>
-
+<a href="${window.location.protocol}//${
+       window.location.hostname
+     }/form/launch/dtp_enquiry?${
+       KDF.getParams().customerid
+         ? `customerid=${KDF.getParams().customerid}&`
+         : ""
+     }interactionid=${KDF.getParams().interactionid}">Disabled Travel Pass enquiry</a>
    `,
   {
     buttonLabel: "Apply for disabled travel permit",
