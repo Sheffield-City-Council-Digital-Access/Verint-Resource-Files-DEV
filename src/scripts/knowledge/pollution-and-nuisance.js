@@ -575,7 +575,7 @@ const bumbleBeesTreatment = new ContentPaN(
       "Environmental",
       "Pest Control",
       "Environmental Health",
-      "HMO",
+      "HMO"
     ],
   },
   { date: "28/03/2025", name: "Dinah Williams" }
