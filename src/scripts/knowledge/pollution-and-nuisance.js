@@ -476,7 +476,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
       "Environmental",
       "Pest Control",
       "Environmental Health",
-      "HMO",
+      "HMO"
     ],
   },
   { date: "16/06/2025", name: "Gee Whitehouse" }
@@ -575,7 +575,7 @@ const bumbleBeesTreatment = new ContentPaN(
       "Environmental",
       "Pest Control",
       "Environmental Health",
-      "HMO",
+      "HMO"
     ],
   },
   { date: "28/03/2025", name: "Dinah Williams" }
@@ -693,7 +693,7 @@ const carpetBeetlesTreatment = new ContentPaN(
       "Environmental",
       "Pest Control",
       "Environmental Health",
-      "HMO",
+      "HMO"
     ],
   },
   { date: "28/02/2025", name: "Dinah Williams" }
@@ -855,7 +855,7 @@ const cockroachesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -935,7 +935,7 @@ const cricketsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -1015,7 +1015,7 @@ const dermestesBeetlesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "27/11/2024", name: "Nathan Smith" }
@@ -1202,7 +1202,7 @@ const fliesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2946,7 +2946,7 @@ const abandonedVehicles = new ContentPaN(
       "vechicle",
       "vehcile",
       "vehical",
-      "vehilce",
+      "vehilce"
     ],
     categories: ["Pollution and Nuisance", "Waste Management"],
   },
