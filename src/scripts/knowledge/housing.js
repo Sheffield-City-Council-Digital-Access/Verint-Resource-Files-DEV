@@ -5883,7 +5883,7 @@ const adaptation = new ContentH(
       : ""
   }interactionid=${
     KDF.getParams().interactionid
-  }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
+  }&txt_emailservice=CommunitiesEquip%26Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   <h2>Grab Rails</h2>
 
@@ -5897,7 +5897,7 @@ const adaptation = new ContentH(
       : ""
   }interactionid=${
     KDF.getParams().interactionid
-  }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
+  }&txt_emailservice=CommunitiesEquip%26Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   <h2>Mobility Scooter Ramps</h2>
 
@@ -5916,7 +5916,7 @@ const adaptation = new ContentH(
       : ""
   }interactionid=${
     KDF.getParams().interactionid
-  }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
+  }&txt_emailservice=CommunitiesEquip%26Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   <h2>For Disabled Customers, Including Wet Rooms</h2>
 
@@ -5930,7 +5930,7 @@ const adaptation = new ContentH(
       : ""
   }interactionid=${
     KDF.getParams().interactionid
-  }&txt_emailservice=CommunitiesEquip&Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
+  }&txt_emailservice=CommunitiesEquip%26Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   <p>
 		Adaptations: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736275')">0114 2736275</a><br>
