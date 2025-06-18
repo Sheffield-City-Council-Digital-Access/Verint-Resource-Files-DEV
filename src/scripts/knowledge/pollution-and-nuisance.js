@@ -476,10 +476,10 @@ const biscuitBeetlesTreatment = new ContentPaN(
       "Environmental",
       "Pest Control",
       "Environmental Health",
-      "HMO",
+      "HMO"
     ],
   },
-  { date: "28/02/2025", name: "Dinah Williams" }
+  { date: "16/06/2025", name: "Gee Whitehouse" }
 );
 
 const bumbleBeesTreatment = new ContentPaN(
@@ -2647,7 +2647,7 @@ const pestControl = new MenuPaN(
     squirrelsTreatment,
     waspsTreatment,
     weevilsTreatment,
-    woodliceTreatment,
+    woodliceTreatment
   ]
 );
 
@@ -2807,7 +2807,7 @@ const reportDogAsLost = new FormPaN(
       "missing dog",
       "lost dog",
       "dog as missing",
-      "dog as lost",
+      "dog as lost"
     ],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
@@ -2838,8 +2838,12 @@ const reportSmoke = new ContentPaN(
       protection services.
       <br>
       <br>
-      Telephone:<a href="tel: 0114 273 4651">0114 273 465</a> <br>
-      Email: <a href="mailto:epsadmin@sheffield.gov.uk">epsadmin@sheffield.gov.uk</a>
+
+
+      Telephone:<a> href="tel: 0114 273 4651">0114 273 465</a>
+       <a> href="#" class="telephoneNumber" onclick="copyToClipboard('0114 273 4651')">0114 273 465</a>
+      <br>
+      Email: <a> href="mailto:epsadmin@sheffield.gov.uk">epsadmin@sheffield.gov.uk</a>
     </p>
     
 
@@ -3223,7 +3227,7 @@ const cleanAirZone = new MenuPaN(
     howWillDriversBeCharged,
     howAreChargesPaid,
     howLongWillTheCleanAirZoneBeInPlace,
-    whatSupportWillThereBeForThoseAffected,
+    whatSupportWillThereBeForThoseAffected
   ]
 );
 
@@ -3252,6 +3256,6 @@ const pollutionAndNuisance = new ServicePaN(
     reportNeedlesGlass,
     reportSmoke,
     reportNoise,
-    cleanAirZone,
+    cleanAirZone
   ]
 );
