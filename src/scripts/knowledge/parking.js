@@ -909,28 +909,19 @@ const businessPermit = new ContentP(
   "Business Permit",
   "Learn about the types, costs, and application process for business permits, including required evidence for vehicle ownership and proof of address.",
   `
-<h3>Business parking permit</h3>
-
 <p>
   You will need a permit if your business is in a parking permit zone and 
   you want to use on-street parking spaces.
 </p>
-
 <p>There are two types of business permits available:</p>
-
 <h4>Single vehicle permit</h4>
-<ul>
-  <li>
+<p>
     This is a paperless permit for a specific car that cannot be used in any other vehicle.
-  </li>
-</ul>
-
+</p>
 <h4>Pool Permit</h4>
-<ul>
-  <li>
+<p>
     Pool business permits allow staff at a business to share the use of the permit to park near the business.
-  </li>
-</ul>
+</p>
 
 <h3>Cost</h3>
 <ul>
