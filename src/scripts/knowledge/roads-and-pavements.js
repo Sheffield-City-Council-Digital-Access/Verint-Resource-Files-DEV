@@ -245,7 +245,7 @@ const reportTrafficSignal = new FormRaP(
 
 const requestClaimsPack = new ContentRaP(
   "requestClaimsPack",
-  "Request Highways compensation Claims Pack",
+  "Request Highways compensation claims pack",
   "Request a claims pack due to damaged to a vehicle or personal property or personal injury due to a problem on the highway, upon receiving the pack provide information such as: if the issue has already been reported/repaired, date/time of incident, where the incident happened ect.",
   `
     
