@@ -9722,7 +9722,7 @@ const furnishedAccommodation = new ContentH(
       <a href="tel:0114 2052600">0114 2052600</a>.
     </p>
   `,
-  { buttonLabel: "Submit enquiry", formName: "hou_furnished" },
+  { buttonLabel: "Raise enquiry", formName: "hou_furnished" },
   { typeKey: "sheltered_and_supported_transferred_to_service" },
   { typeKey: "sheltered_and_supported_information_provided" },
   {
