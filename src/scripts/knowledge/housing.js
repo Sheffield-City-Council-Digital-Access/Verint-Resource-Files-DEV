@@ -968,6 +968,10 @@ const communalAreas = new ContentH(
       <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx" target="_blank">Blocked bin chutes list</a>
     </p>
 
+  <h3>Bin Skimming</h3>
+  <p>
+    If a communal bin in a flat becomes overloaded, a request must be made to the Estates team to skim the bin in order to enable Veolia to empty the bins.
+  </p>
     <h3>Fences</h3>
     <h4>New Fence</h4>
     <p>
@@ -993,15 +997,17 @@ const communalAreas = new ContentH(
   {
     type: "Information",
     keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
+      "communal",
+      "areas",
+      "area",
+      "fence",
+      "fences",
       "blocked",
       "bin",
       "bins",
-      "chute",
+      "skim",
+      "skimming",
+      "chute"
     ],
     categories: ["Housing"],
   },
@@ -11619,6 +11625,20 @@ const tenancyConditions = new ContentH(
   { date: "08/11/2024", name: "Shahzad Athar" }
 );
 
+
+const vulnerability = new FormH(
+  "vulnerability",
+  "Vulnerability",
+  "Escalate vulnerability housing enquires to Neighbourhood Support Teams.",
+  "hou_routing_enquiry",
+  {
+    type: "Enquiry",
+    keywords: ["Vulnera", "Vuln", "vunerability", "vulnerabilty", "vulnurability", "vulnerability", "vulnerable"],
+    categories: ["Housing"],
+  },
+  { date: "17/06/2025", name: "Joseph Coupland" }
+);
+
 const tenancySustainment = new MenuH(
   "tenancySustainment",
   "Tenancy Sustainment",
@@ -11637,6 +11657,7 @@ const tenancySustainment = new MenuH(
     tenancyAgreementRequest,
     tenancyChange,
     tenancyConditions,
+    vulnerability
   ]
 );
 
