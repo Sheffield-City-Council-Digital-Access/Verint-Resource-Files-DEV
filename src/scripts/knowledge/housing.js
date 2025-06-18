@@ -9728,7 +9728,7 @@ const furnishedAccommodation = new ContentH(
       <a href="tel:0114 2052600">0114 2052600</a>.
     </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Raise enquiry", formName: "hou_furnished" },
   { typeKey: "sheltered_and_supported_transferred_to_service" },
   { typeKey: "sheltered_and_supported_information_provided" },
   {
@@ -9742,7 +9742,7 @@ const furnishedAccommodation = new ContentH(
     ],
     categories: ["Housing", "Sheltered and Supported"],
   },
-  { date: "15/10/2024", name: "Joe Nixon" }
+  { date: "17/06/2025", name: "Nathan Smith" }
 );
 
 const gypsyAndTravellers = new ContentH(
