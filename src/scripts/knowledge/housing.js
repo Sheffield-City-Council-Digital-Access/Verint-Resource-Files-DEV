@@ -1681,7 +1681,10 @@ const programmedWorks = new ContentH(
     Acquisitions: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734617')">0114 2734617</a><br>
 </p>
 <p>
-    Asset Management: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736315, 2736275')">0114 2736315, 2736275</a><br>
+    Asset Management: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736315')">0114 2736315</a><br>
+</p>
+<p>
+    Asset Management: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736275')">0114 2736275</a><br>
 </p>
 
   `,
