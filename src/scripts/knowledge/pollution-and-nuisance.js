@@ -3227,7 +3227,7 @@ const cleanAirZone = new MenuPaN(
     howWillDriversBeCharged,
     howAreChargesPaid,
     howLongWillTheCleanAirZoneBeInPlace,
-    whatSupportWillThereBeForThoseAffected,
+    whatSupportWillThereBeForThoseAffected
   ]
 );
 
@@ -3256,6 +3256,6 @@ const pollutionAndNuisance = new ServicePaN(
     reportNeedlesGlass,
     reportSmoke,
     reportNoise,
-    cleanAirZone,
+    cleanAirZone
   ]
 );
