@@ -526,6 +526,8 @@ const disabledPersonsTravelPermit = new ContentTaT(
       "MTP",
       "DP",
       "DPP",
+      "disabled travel pass enquiry",
+      "dtp enquiry",
       "aplication",
       "applcation",
       "applicaton",
