@@ -261,7 +261,7 @@ const requestClaimsPack = new ContentRaP(
       <li>The direction of travel by foot or vehicle </li>
       <li>Full details of any damage or injury suffered </li>
       <li>The exact location of the incident </li>
-      <li>Be willing to provide your NI Number to support your claim</li>
+      <li>Be willing to provide your National Insurance Number to support your claim</li>
     </ul>
 
   `,
