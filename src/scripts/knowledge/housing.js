@@ -968,6 +968,10 @@ const communalAreas = new ContentH(
       <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Blocked%20Chutes.aspx" target="_blank">Blocked bin chutes list</a>
     </p>
 
+  <h3>Bin Skimming</h3>
+  <p>
+    If a communal bin in a flat becomes overloaded, a request must be made to the Estates team to skim the bin in order to enable Veolia to empty the bins.
+  </p>
     <h3>Fences</h3>
     <h4>New Fence</h4>
     <p>
@@ -993,15 +997,17 @@ const communalAreas = new ContentH(
   {
     type: "Information",
     keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
+      "communal",
+      "areas",
+      "area",
+      "fence",
+      "fences",
       "blocked",
       "bin",
       "bins",
-      "chute",
+      "skim",
+      "skimming",
+      "chute"
     ],
     categories: ["Housing"],
   },
@@ -9722,7 +9728,7 @@ const furnishedAccommodation = new ContentH(
       <a href="tel:0114 2052600">0114 2052600</a>.
     </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Raise enquiry", formName: "hou_furnished" },
   { typeKey: "sheltered_and_supported_transferred_to_service" },
   { typeKey: "sheltered_and_supported_information_provided" },
   {
@@ -9736,7 +9742,7 @@ const furnishedAccommodation = new ContentH(
     ],
     categories: ["Housing", "Sheltered and Supported"],
   },
-  { date: "15/10/2024", name: "Joe Nixon" }
+  { date: "17/06/2025", name: "Nathan Smith" }
 );
 
 const gypsyAndTravellers = new ContentH(
@@ -10619,6 +10625,11 @@ const tenancyEnforcementASB = new ContentH(
       <li> A one-off party if noise was the only issue and it is unlikely to be repeated</li>
       <li> Children playing (including ball games)</li>
     </ul>
+
+    <h3>Reporting anti-social behaviour</h3>
+    <p>If the ASB involves a Council tenant, use the form at the bottom of this page to raise a report to 
+    the appropriate team. If it does not involve a Council tenant advise the customer to contact 101</p>
+    
     <h3>Police responsibility</h3>
     <p>South Yorkshire Police are responsible for dealing with any behaviour or activity which results in a criminal offence being committed.</p>
     <p>Where the perpetrator is an SCC tenant the Tenancy Enforcement and Sustainment Team (TEST) will work closely with SYP to ensure that any appropriate enforcement action is taken by the council.</p>
@@ -10671,7 +10682,8 @@ const tenancyEnforcementASB = new ContentH(
     <p>South Yorkshire Fire and Rescue Service can fit blank letter boxes if there are concerns regarding harmful items being posted through the door. The Neighbourhood Officer can make a referral to SYF&amp;R for a Home Safety check.</p>
     <p>Neighbourhood Teams may have stock of target hardening equipment.</p>
     <p>Victim Support may support with target hardening.</p>
-  </p>`,
+  `,
+
   { buttonLabel: "Raise report", formName: "hou_enforcement_asb" },
   { typeKey: "" },
   { typeKey: "tenancy_enforcement_information_provided" },
@@ -11613,6 +11625,20 @@ const tenancyConditions = new ContentH(
   { date: "08/11/2024", name: "Shahzad Athar" }
 );
 
+
+const vulnerability = new FormH(
+  "vulnerability",
+  "Vulnerability",
+  "Escalate vulnerability housing enquires to Neighbourhood Support Teams.",
+  "hou_routing_enquiry",
+  {
+    type: "Enquiry",
+    keywords: ["Vulnera", "Vuln", "vunerability", "vulnerabilty", "vulnurability", "vulnerability", "vulnerable"],
+    categories: ["Housing"],
+  },
+  { date: "17/06/2025", name: "Joseph Coupland" }
+);
+
 const tenancySustainment = new MenuH(
   "tenancySustainment",
   "Tenancy Sustainment",
@@ -11631,6 +11657,7 @@ const tenancySustainment = new MenuH(
     tenancyAgreementRequest,
     tenancyChange,
     tenancyConditions,
+    vulnerability
   ]
 );
 

@@ -321,7 +321,7 @@ const bedBugTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "27/11/2024", name: "Nathan Smith" }
@@ -368,7 +368,7 @@ const birdsandPigeonsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "12/03/2025", name: "Dinah Williams" }
@@ -479,7 +479,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
       "HMO",
     ],
   },
-  { date: "28/02/2025", name: "Dinah Williams" }
+  { date: "16/06/2025", name: "Gee Whitehouse" }
 );
 
 const bumbleBeesTreatment = new ContentPaN(
@@ -774,7 +774,7 @@ const clusterFliesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -1293,7 +1293,7 @@ const FrogsorFrogspawn = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "27/11/2024", name: "Nathan Smith" }
@@ -1372,7 +1372,7 @@ const furBeetlesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -1418,7 +1418,7 @@ const gardenAntsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -1608,7 +1608,7 @@ const honeyBeeTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "08/05/2025", name: "Dinah Williams" }
@@ -1653,7 +1653,7 @@ const ladyBirdsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -1707,7 +1707,7 @@ const masonryBeesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -1758,7 +1758,7 @@ const miceTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -1803,7 +1803,7 @@ const mitesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -1884,7 +1884,7 @@ const mothsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -1929,7 +1929,7 @@ const pharoahAntsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2009,7 +2009,7 @@ const psocidsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2107,7 +2107,7 @@ const ratTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2187,7 +2187,7 @@ const redSpiderMitesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2267,7 +2267,7 @@ const sewageFliesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2318,7 +2318,7 @@ const silverFishTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2403,7 +2403,7 @@ const spiderBeetlesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2433,7 +2433,7 @@ const squirrelsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2491,7 +2491,7 @@ const waspsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "28/02/2025", name: "Dinah Williams" }
@@ -2557,7 +2557,7 @@ const weevilsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2603,7 +2603,7 @@ const woodliceTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2647,7 +2647,7 @@ const pestControl = new MenuPaN(
     squirrelsTreatment,
     waspsTreatment,
     weevilsTreatment,
-    woodliceTreatment,
+    woodliceTreatment
   ]
 );
 
@@ -2664,7 +2664,7 @@ const reportFilthyPremises = new FormPaN(
     categories: [
       "Pollution and Nuisance",
       "Environmental",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "30/05/2025", name: "Gee Whitehouse" }
@@ -2748,7 +2748,7 @@ const handoverDogtoCouncil = new FormPaN(
       "Environmental",
       "Pest Control",
       "Animal Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "05/03/2025", name: "Sam Coupland" }
@@ -2761,7 +2761,7 @@ const reportDangerousDog = new FormPaN(
   "report_dangerous_dog",
   {
     type: "Report",
-    keywords: ["Dog", "dangerous", "dangerous dog  ", "dog as dangerous"],
+    keywords: ["Dog", "dangerous", "dangerous dog", "dog as dangerous"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "05/03/2025", name: "Sam Coupland" }
@@ -2807,21 +2807,8 @@ const reportDogAsLost = new FormPaN(
       "missing dog",
       "lost dog",
       "dog as missing",
-      "dog as lost",
+      "dog as lost"
     ],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
-  },
-  { date: "05/03/2025", name: "Sam Coupland" }
-);
-
-const reportSmoke = new FormPaN(
-  "reportSmoke",
-  "Smoke",
-  "Report smoke",
-  "report_smoke",
-  {
-    type: "Report",
-    keywords: ["Report", "smoke"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "05/03/2025", name: "Sam Coupland" }
@@ -2838,6 +2825,64 @@ const reportNoise = new FormPaN(
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "05/03/2025", name: "Sam Coupland" }
+);
+
+const reportSmoke = new ContentPaN(
+  "reportSmoke",
+  "Report Smoke",
+  "Report Smoke",
+  `
+  <h3>Commercial</h3>
+    <p>
+      As this is regarding a commercial premises, I will need to transfer you through to one of my colleagues in Environmental 
+      protection services.
+      <br>
+      <br>
+
+
+      Telephone:<a> href="tel: 0114 273 4651">0114 273 465</a>
+       <a> href="#" class="telephoneNumber" onclick="copyToClipboard('0114 273 4651')">0114 273 465</a>
+      <br>
+      Email: <a> href="mailto:epsadmin@sheffield.gov.uk">epsadmin@sheffield.gov.uk</a>
+    </p>
+    
+
+  <h3>Domestic</h3>
+    <p>
+      Bonfires can be lit at any time of day. <br>
+      Bonfires are only considered a nuisance if they are being constantly lit, depending on what is being burned and the way it is burned.
+      <br>The thicker and darker the smoke, the more toxic it is.
+      <br>
+      <br>
+More information can be found at  <a href="https://www.gov.uk/garden-bonfires-rules" target="_blank">https://www.gov.uk/garden-bonfires-rules</a>
+    </p>
+
+        <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Garden%20bonfire%20rules\`
+    "
+>
+        Send link to review further information
+    </button>
+   
+  `,
+  {
+    buttonLabel: "Report Smoke",
+    formName: "report_smoke",
+  },
+  { typeKey: "smoke_nuisance_information_requested" },
+  { typeKey: "smoke_nuisance_information_provided" },
+  {
+    type: "Report",
+    keywords: ["Report", "noise"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "13/06/2025", name: "Gee Whitehouse" }
 );
 
 const abandonedVehicles = new ContentPaN(
