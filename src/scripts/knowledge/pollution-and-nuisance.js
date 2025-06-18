@@ -476,7 +476,7 @@ const biscuitBeetlesTreatment = new ContentPaN(
       "Environmental",
       "Pest Control",
       "Environmental Health",
-      "HMO"
+      "HMO",
     ],
   },
   { date: "16/06/2025", name: "Gee Whitehouse" }
@@ -575,7 +575,7 @@ const bumbleBeesTreatment = new ContentPaN(
       "Environmental",
       "Pest Control",
       "Environmental Health",
-      "HMO"
+      "HMO",
     ],
   },
   { date: "28/03/2025", name: "Dinah Williams" }
@@ -693,7 +693,7 @@ const carpetBeetlesTreatment = new ContentPaN(
       "Environmental",
       "Pest Control",
       "Environmental Health",
-      "HMO"
+      "HMO",
     ],
   },
   { date: "28/02/2025", name: "Dinah Williams" }
@@ -2749,7 +2749,6 @@ const handoverDogtoCouncil = new FormPaN(
       "Pest Control",
       "Animal Control",
       "Environmental Health"
-
     ],
   },
   { date: "05/03/2025", name: "Sam Coupland" }
@@ -3228,7 +3227,7 @@ const cleanAirZone = new MenuPaN(
     howWillDriversBeCharged,
     howAreChargesPaid,
     howLongWillTheCleanAirZoneBeInPlace,
-    whatSupportWillThereBeForThoseAffected
+    whatSupportWillThereBeForThoseAffected,
   ]
 );
 
@@ -3257,6 +3256,6 @@ const pollutionAndNuisance = new ServicePaN(
     reportNeedlesGlass,
     reportSmoke,
     reportNoise,
-    cleanAirZone
+    cleanAirZone,
   ]
 );
