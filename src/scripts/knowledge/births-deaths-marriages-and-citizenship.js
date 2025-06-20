@@ -715,11 +715,19 @@ const registerABirthAndDeath = new ContentBDMaC(
 
   <a href="#" class="telephoneNumber" onclick="copyToClipboard('07786126904')">07786126904</a>
 
-<p/>
+</p>
 
-  <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a>
-  
-  
+<p>
+
+
+For a Birth/Death Declaration, please email the Register Office with all the customer's details to:
+<a href="mailto:Registrars@Sheffield.gov.uk">Registrars@Sheffield.gov.uk</a>
+as the paperwork needs to be checked by a Registrar.
+
+
+</p>
+  <p> 
+  https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a>
   </p> 	
 
 <button
@@ -751,21 +759,21 @@ const registerABirthAndDeath = new ContentBDMaC(
 </button>
 
 `,
-{ buttonLabel: "Registrars enquiry", formName: "registrars_process" },
-{ typeKey: "register_office_information_requested" },
-{ typeKey: "register_office_information_provided" },
-{
-  type: "",
-  keywords: [],
-  categories: [
-    "Registrars",
-    "Registry Office",
-    "Register Office",
-    "Births",
-    "Deaths",
-  ],
-},
-{ date: "11/06/2025", name: "Dinah Williams" }
+  { buttonLabel: "Registrars enquiry", formName: "registrars_process" },
+  { typeKey: "register_office_information_requested" },
+  { typeKey: "register_office_information_provided" },
+  {
+    type: "",
+    keywords: [],
+    categories: [
+      "Registrars",
+      "Registry Office",
+      "Register Office",
+      "Births",
+      "Deaths",
+    ],
+  },
+  { date: "11/06/2025", name: "Dinah Williams" }
 );
 
 const reRegisterABirth = new ContentBDMaC(
@@ -802,7 +810,7 @@ const registerABirth = new ContentBDMaC(
   "registerABirth",
   "Register a Birth",
   "Register a birth",
-` 
+  ` 
     <p> <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death"> https://www.sheffield.gov.uk/births-deaths-marriages/register-death </a></p> 
 
         <button
