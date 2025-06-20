@@ -770,7 +770,7 @@ as the paperwork needs to be checked by a Registrar.
       "Registry Office",
       "Register Office",
       "Births",
-      "Deaths",
+      "Deaths"
     ],
   },
   { date: "20/06/2025", name: "Gee Whitehouse" }
