@@ -773,7 +773,7 @@ as the paperwork needs to be checked by a Registrar.
       "Deaths",
     ],
   },
-  { date: "11/06/2025", name: "Dinah Williams" }
+  { date: "20/06/2025", name: "Gee Whitehouse" }
 );
 
 const reRegisterABirth = new ContentBDMaC(
