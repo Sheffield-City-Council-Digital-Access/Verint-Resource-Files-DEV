@@ -148,7 +148,7 @@ const badgerProtection = new ContentPaN(
       "Pest Control",
       "Wildlife",
       "Conservation",
-      "Law",
+      "Law"
     ],
   },
   { date: "27/11/2024", name: "Nathan Smith" }
@@ -206,7 +206,7 @@ const batProtectionBritain = new ContentPaN(
       "Pest Control",
       "Wildlife",
       "Conservation",
-      "Law",
+      "Law"
     ],
   },
   { date: "27/11/2024", name: "Nathan Smith" }
@@ -1245,7 +1245,7 @@ const foxesInformation = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health",
+      "Environmental Health"
     ],
   },
   { date: "27/11/2024", name: "Nathan Smith" }
@@ -1372,7 +1372,7 @@ const furBeetlesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -1803,7 +1803,7 @@ const mitesTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2009,7 +2009,7 @@ const psocidsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2318,7 +2318,7 @@ const silverFishTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2433,7 +2433,7 @@ const squirrelsTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2603,7 +2603,7 @@ const woodliceTreatment = new ContentPaN(
       "Pollution and Nuisance",
       "Environmental",
       "Pest Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "26/02/2025", name: "Gee Whitehouse" }
@@ -2664,7 +2664,7 @@ const reportFilthyPremises = new FormPaN(
     categories: [
       "Pollution and Nuisance",
       "Environmental",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "30/05/2025", name: "Gee Whitehouse" }
@@ -2748,7 +2748,7 @@ const handoverDogtoCouncil = new FormPaN(
       "Environmental",
       "Pest Control",
       "Animal Control",
-      "Environmental Health"
+      "Environmental Health",
     ],
   },
   { date: "05/03/2025", name: "Sam Coupland" }
