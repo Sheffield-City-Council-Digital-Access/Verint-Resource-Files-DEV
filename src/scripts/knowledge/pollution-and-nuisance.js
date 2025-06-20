@@ -2854,7 +2854,11 @@ const reportSmoke = new ContentPaN(
       <br>The thicker and darker the smoke, the more toxic it is.
       <br>
       <br>
-More information can be found at  <a href="https://www.gov.uk/garden-bonfires-rules" target="_blank">https://www.gov.uk/garden-bonfires-rules</a>
+More information can be found at:
+
+<a href="https://www.gov.uk/garden-bonfires-rules" target="_blank" rel="noopener noreferrer">
+  https://www.gov.uk/garden-bonfires-rules
+</a>
     </p>
 
         <button
