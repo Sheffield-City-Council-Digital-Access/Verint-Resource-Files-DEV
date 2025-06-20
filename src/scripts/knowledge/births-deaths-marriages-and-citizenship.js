@@ -136,7 +136,7 @@ const bookNoticeCivilPartnership = new ContentBDMaC(
       "Wedding",
       "Ceremony",
       "Partnership",
-      "Civil",
+      "Civil"
     ],
   },
   { date: "11/11/2024", name: "Joseph Coupland" }
@@ -218,7 +218,7 @@ const bookNoticeOfMarriageApp = new ContentBDMaC(
       "Registry Office",
       "Register Office",
       "Wedding",
-      "Ceremony",
+      "Ceremony"
     ],
   },
   { date: "11/11/2024", name: "Joseph Coupland" }
@@ -379,7 +379,7 @@ const bookingARegistrarWedding = new ContentBDMaC(
       "Registry Office",
       "Register Office",
       "Wedding",
-      "Ceremony",
+      "Ceremony"
     ],
   },
   { date: "11/11/2024", name: "Joseph Coupland" }
@@ -572,7 +572,7 @@ const copyCertificates = new ContentBDMaC(
       "Register Office",
       "Births",
       "Deaths",
-      "Certificates",
+      "Certificates"
     ],
   },
   { date: "02/05/2025", name: "Andy Walker" }
@@ -700,7 +700,7 @@ const licensedWeddingVenues = new ContentBDMaC(
       "Registry Office",
       "Register Office",
       "Wedding",
-      "Ceremony",
+      "Ceremony"
     ],
   },
   { date: "11/11/2024", name: "Joseph Coupland" }
@@ -1029,7 +1029,7 @@ const registerABirth = new ContentBDMaC(
       "Registry Office",
       "Register Office",
       "Births",
-      "Deaths",
+      "Deaths"
     ],
   },
   { date: "30/04/2025", name: "Andy Walker" }
@@ -1189,7 +1189,7 @@ const registerAStillbirth = new ContentBDMaC(
       "Registry Office",
       "Register Office",
       "Births",
-      "Deaths",
+      "Deaths"
     ],
   },
   { date: "30/04/2025", name: "Andy Walker" }
@@ -1258,7 +1258,7 @@ To re-schedule an appointment, please use the
       "Deaths",
       "Certificates",
       "Wedding",
-      "Ceremony",
+      "Ceremony"
     ],
   },
   { date: "01/05/2025", name: "Andy Walker" }
@@ -1283,7 +1283,7 @@ const birthsDeathsMarriagesAndCitizenship = new ServiceBDMaC(
     registerABirth,
     registerADeath,
     registerAStillbirth,
-    rescheduleAnAppointment,
+    rescheduleAnAppointment
   ]
 );
 
