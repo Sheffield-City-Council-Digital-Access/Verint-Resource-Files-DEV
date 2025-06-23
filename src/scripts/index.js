@@ -1724,7 +1724,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     //response.data["profile-socialId-ohms"]
   ) 
   {
-    switch (kdf.form.page.name) 
+    switch (kdf.page.name) 
     {
       case "page_rent_account":
         screen = "RNT1";
