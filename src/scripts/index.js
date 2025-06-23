@@ -1726,18 +1726,25 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   {
     console.log("form " + kdf.form.name);
     console.log("page " + pageName);
-    switch (pageName) 
+    const containerPersonDetails = document.getElementById("hub-screen-container");
+    const containerTenancy = document.getElementById("hub-screen-container-tenancy");
+    const containerRents = document.getElementById("hub-screen-container-rent-account");
+    
+    if(containerPersonDetails)
     {
-      case "page_rent_account":
-        screen = "RNT1";
-        break;
-      case "page_about_enquiry":
-        screen = "PMCE";
-        break;
-      default:
-        screen = "personDetails";
+      screen = "personDetails";
+      console.log(containerPersonDetails + " persondetails");
     }
-
+    else if (containerTenancy)
+    {
+      screen = "PMCE";
+      console.log(containerTenancy + " PMCE");
+    }
+    else if (containerRents)
+    {
+      screen = "RNT1";
+      console.log(containerRents + " RNT1");
+    }
     console.log(screen + " screen ");
     const agentId = response.data.agendId;
     const ohmsId = response.data["profile-socialId-ohms"];
@@ -1749,7 +1756,31 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     iframe.height = screen === "personDetails" ? "725" : "521";
     iframe.src = url;
 
-    const container = document.getElementById("hub-screen-container");
+
+    // switch (pageName) 
+    // {
+    //   case "page_rent_account":
+    //     screen = "RNT1";
+    //     break;
+    //   case "page_about_enquiry":
+    //     screen = "PMCE";
+    //     break;
+    //   default:
+    //     screen = "personDetails";
+    // }
+
+    // console.log(screen + " screen ");
+    // const agentId = response.data.agendId;
+    // const ohmsId = response.data["profile-socialId-ohms"];
+    // const url = `${response.data.url}?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
+    // const iframe = document.createElement("iframe");
+
+    // iframe.id = "ifrm1";
+    // iframe.width = "100%";
+    // iframe.height = screen === "personDetails" ? "725" : "521";
+    // iframe.src = url;
+
+    // const container = document.getElementById("hub-screen-container");
 
     if (container) {
       container.innerHTML = "";
