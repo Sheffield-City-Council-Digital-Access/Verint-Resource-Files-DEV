@@ -434,6 +434,19 @@ const replacementBlueBadge = new ContentP(
         If a badge is lost or stolen we now require a form to be completed with a signature. 
         The form is available online to print or alternatively a form can be sent out via 2nd post.  You may also request a large print option.
       </p>
+<button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link for Blue Badge replacement"
+        onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Request%20Blue%20Badge%20Replacement\`
+            "
+      >
+        Send link to review further information
+      </button>
+
       <h3>Badges seized by an enforcement officer</h3>
       <p>
         If your Blue Badge has been confiscated by an Enforcement Officer,
