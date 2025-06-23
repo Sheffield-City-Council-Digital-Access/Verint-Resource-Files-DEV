@@ -1724,12 +1724,12 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     //response.data["profile-socialId-ohms"]
   ) 
   {
-    switch (kdf.form.name) 
+    switch (kdf.form.page.name) 
     {
-      case "hou_rents_enquiry":
+      case "page_rent_account":
         screen = "RNT1";
         break;
-      case "hou_routing_enquiry":
+      case "page_about_enquiry":
         screen = "PMCE";
         break;
       default:
