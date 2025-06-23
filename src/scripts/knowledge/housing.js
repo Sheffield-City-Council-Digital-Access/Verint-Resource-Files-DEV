@@ -11660,6 +11660,18 @@ const tenancyConditions = new ContentH(
   { date: "08/11/2024", name: "Shahzad Athar" }
 );
 
+const tenancyVisits = new FormH(
+  "tenancyVisits",
+  "Tenancy Visits",
+  "Check when a tenancy visit is or arrange a new date with Neighbourhood Support Teams.",
+  "hou_routing_enquiry",
+  {
+    type: "Enquiry",
+    keywords: ["Tenancy", "visits", "Visit", "NST visit", "Tenancyvisit"],
+    categories: ["Housing"],
+  },
+  { date: "23/06/2025", name: "Joseph Coupland" }
+);
 
 const vulnerability = new FormH(
   "vulnerability",
