@@ -1725,8 +1725,8 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   ) 
   {
     console.log("form " + kdf.form.name);
-    console.log("page " + kdf.page.name);
-    switch (kdf.page.name) 
+    console.log("page " + pageName);
+    switch (pageName) 
     {
       case "page_rent_account":
         screen = "RNT1";
