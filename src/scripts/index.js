@@ -1755,7 +1755,17 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     iframe.width = "100%";
     iframe.height = screen === "personDetails" ? "725" : "521";
     iframe.src = url;
+    if (containerTenancy) 
+    {
+      container.innerHTML = "";
+      container.appendChild(iframe);
+    }
 
+    if (containerRents) 
+    {
+      container.innerHTML = "";
+      container.appendChild(iframe);
+    }
 
     // switch (pageName) 
     // {
@@ -1782,7 +1792,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
     // const container = document.getElementById("hub-screen-container");
 
-    if (container) {
+    if (containerPersonDetails) {
       container.innerHTML = "";
       container.appendChild(iframe);
 
