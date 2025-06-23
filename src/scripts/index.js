@@ -1736,7 +1736,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
         screen = "personDetails";
     }
 
-
+    console.log(screen + " screen ");
     const agentId = response.data.agendId;
     const ohmsId = response.data["profile-socialId-ohms"];
     const url = `${response.data.url}?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
