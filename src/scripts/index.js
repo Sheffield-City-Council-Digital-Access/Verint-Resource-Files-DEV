@@ -1747,7 +1747,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     iframe.height = screen === "personDetails" ? "725" : "521";
     iframe.src = url;
 
-    const container = document.getElementById("hub-screen-container");
+    const container = document.getElementById("hub-screen-container-enquiry");
 
     if (container) {
       container.innerHTML = "";
