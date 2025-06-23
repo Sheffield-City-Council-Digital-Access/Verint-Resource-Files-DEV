@@ -1722,18 +1722,29 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   if (
     action === "retrieve-social-ids" &&
     response.data["profile-socialId-ohms"]
-  ) {
-    const screen =
-      kdf.form.name === "hub_rent_summary" ? "RNT1" : "personDetails";
+  ) 
+  {
+    switch (kdf.form.name) 
+    {
+      case "hou_rents_enquiry":
+        screen = "RNT1";
+        break;
+      case "hou_routing_enquiry":
+        screen = "PMCE";
+        break;
+      default:
+        screen = "personDetails";
+    }
+
+
     const agentId = response.data.agendId;
     const ohmsId = response.data["profile-socialId-ohms"];
-
     const url = `${response.data.url}?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
     const iframe = document.createElement("iframe");
 
     iframe.id = "ifrm1";
     iframe.width = "100%";
-    iframe.height = screen === "RNT1" ? "521" : "725";
+    iframe.height = screen === "personDetails" ? "725" : "521";
     iframe.src = url;
 
     const container = document.getElementById("hub-screen-container");
