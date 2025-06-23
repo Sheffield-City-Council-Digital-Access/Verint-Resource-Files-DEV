@@ -11704,6 +11704,7 @@ const tenancySustainment = new MenuH(
     tenancyAgreementRequest,
     tenancyChange,
     tenancyConditions,
+    tenancyVisits,
     vulnerability
   ]
 );
