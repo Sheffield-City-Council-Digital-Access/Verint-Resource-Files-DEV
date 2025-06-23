@@ -1724,6 +1724,8 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     //response.data["profile-socialId-ohms"]
   ) 
   {
+    console.log("form " + kdf.form.name);
+    console.log("page " + kdf.page.name);
     switch (kdf.page.name) 
     {
       case "page_rent_account":
