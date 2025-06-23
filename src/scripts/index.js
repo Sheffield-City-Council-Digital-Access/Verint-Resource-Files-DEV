@@ -1720,8 +1720,8 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   // --- OHMS -------------------------------------------------------------- \\
 
   if (
-    action === "retrieve-social-ids" &&
-    response.data["profile-socialId-ohms"]
+    action === "retrieve-social-ids" //&&
+    //response.data["profile-socialId-ohms"]
   ) 
   {
     switch (kdf.form.name) 
