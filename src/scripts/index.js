@@ -1757,14 +1757,14 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     iframe.src = url;
     if (containerTenancy) 
     {
-      container.innerHTML = "";
-      container.appendChild(iframe);
+      containerTenancy.innerHTML = "";
+      containerTenancy.appendChild(iframe);
     }
 
     if (containerRents) 
     {
-      container.innerHTML = "";
-      container.appendChild(iframe);
+      containerRents.innerHTML = "";
+      containerRents.appendChild(iframe);
     }
 
     // switch (pageName) 
@@ -1793,8 +1793,8 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     // const container = document.getElementById("hub-screen-container");
 
     if (containerPersonDetails) {
-      container.innerHTML = "";
-      container.appendChild(iframe);
+      containerPersonDetails.innerHTML = "";
+      containerPersonDetails.appendChild(iframe);
 
       hideShowMultipleElements([
         { name: "ahtm_hub_screen", display: "show" },
