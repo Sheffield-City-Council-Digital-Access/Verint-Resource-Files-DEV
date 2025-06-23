@@ -1755,6 +1755,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
       hideShowMultipleElements([
         { name: "ahtm_hub_screen", display: "show" },
+        { name: "ahtm_hub_screen_enquiry", display: "show" },
         { name: "area_about_you", display: "hide" },
         { name: "area_address_lookup_about_you", display: "hide" },
         { name: "area_address_details_about_you", display: "hide" },
