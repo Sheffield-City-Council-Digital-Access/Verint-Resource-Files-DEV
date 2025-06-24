@@ -727,7 +727,7 @@ as the paperwork needs to be checked by a Registrar.
 
 </p>
   <p> 
-  https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a>
+    <a href="https://www.sheffield.gov.uk/births-deaths-marriages/register-death "target="_blank">https://www.sheffield.gov.uk/births-deaths-marriages/register-death</a>
   </p> 	
 
 <button
