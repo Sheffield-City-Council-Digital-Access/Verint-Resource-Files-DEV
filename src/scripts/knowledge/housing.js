@@ -11680,7 +11680,7 @@ const vulnerability = new FormH(
   "hou_routing_enquiry",
   {
     type: "Enquiry",
-    keywords: ["Vulnera", "Vuln", "vunerability", "vulnerabilty", "vulnurability", "vulnerability", "vulnerable"],
+    keywords: ["Vulnera", "Vuln", "vunerability", "vulnerabilty", "vulnurability", "vulnerability", "vulnerable", 'vul'],
     categories: ["Housing"],
   },
   { date: "17/06/2025", name: "Joseph Coupland" }
