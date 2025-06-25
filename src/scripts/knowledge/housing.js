@@ -2096,8 +2096,8 @@ const housingPestControl = new FormH(
   "hou_routing_enquiry",
   {
     type: "Report",
-    keywords: ["Claim", "Money"],
-    categories: ["Housing", "Benefits"],
+    keywords: ["Pest", "Pest Control", "Pest Con", "Pestcon", "Pest contro"],
+    categories: ["Housing", "Estates and Environments"],
   },
   { date: "25/06/2025", name: "Joseph Coupland" }
 );
@@ -2111,6 +2111,7 @@ const estatesAndEnvironments = new MenuH(
     communalFireSafety,
     fencesCouncilHousing,
     gardenPledgeScheme,
+    housingPestControl
   ]
 );
 
