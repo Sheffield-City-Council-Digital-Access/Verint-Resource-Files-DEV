@@ -2089,6 +2089,19 @@ const gardenPledgeScheme = new ContentH(
   { date: "09/10/2024", name: "Elliott Griffiths" }
 );
 
+const housingPestControl = new FormH(
+  "housingPestControl",
+  "Pest Control (Housing shared spaces)",
+  "Use this form to report pest issues outside of a customer's property in shared areas to refer to the relevant Estates team.",
+  "hou_routing_enquiry",
+  {
+    type: "Report",
+    keywords: ["Claim", "Money"],
+    categories: ["Housing", "Benefits"],
+  },
+  { date: "25/06/2025", name: "Joseph Coupland" }
+);
+
 const estatesAndEnvironments = new MenuH(
   "estatesAndEnvironments",
   "Estates and Environments",
