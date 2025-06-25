@@ -1744,6 +1744,102 @@ const miceTreatment = new ContentPaN(
       All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Frequently Asked Questions</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+
+      <div class="accordion-content">
+        <details class="details-accordion">
+          <summary>Should bookings should be made 2 weeks apart?</summary>
+          <div class="details-accordion-content">
+            <p>
+              As close after 2 weeks as possible – fine if 3 weeks, we will look to allocate slots for these specific appointments on SharePoint.
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>Do Contact Centre complete SharePoint, or fulfilment Team?</summary>
+          <div class="details-accordion-content">
+            <p>
+                   Contact Centre should update SharePoint, and complete the 1st app & 2nd App field on the CRM form.  Fulfilment Team will transfer the same dates into the Confirm record attributes.
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>What if the 1st booking was made prior to us changing the process?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team to book the follow up appointment at XXXXXXXXX
+            </p>
+          </div>
+        </details>
+
+
+        <details class="details-accordion">
+          <summary>What if no appointments showing on SharePoint for the advisors to book?</summary>
+          <div class="details-accordion-content">
+            <p>
+              We will endeavour to allocate a set amount of appointments per day for these bookings but if none are available, please contact the Hub Team.
+            </p>
+          </div>
+        </details>
+
+
+        <details class="details-accordion">
+          <summary>What do we do if a customer calls to rearrange an appointment?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team at XXXXXXXXX
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>What if a customer can only set a date for the 1st appointment and has to call us back once they can check their availability for a 2nd appointment? </summary>
+          <div class="details-accordion-content">
+            <p>
+              The 2nd appointment field is not mandatory; the booking can be made and the customer advised to contact the Hub to make the follow up appointment.
+            </p>
+          </div>
+        </details>
+
+
+        <details class="details-accordion">
+          <summary>Is there a set amount of time between calling us back to book that 2nd appointment so example they booked the 1st treatment with us said they would have to call us back to book the 2nd appointment and then we get a call 2 months later? </summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team at XXXXXXXX, this process should only be used when booking the initial visit and making the first 2 appointment.
+            </p>
+          </div>
+        </details>
+
+
+        <details class="details-accordion">
+          <summary>What do we do if a customer was told to call us to book a 3rd appointment?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team at XXXXXXXX.
+            </p>
+          </div>
+        </details>
+
+
+        <details class="details-accordion">
+          <summary>What do we do if a customer was told to call us to book a 3rd appointment?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please email the query to XXXXXXX and they will call the customer back
+            </p>
+          </div>
+        </details>
+
+      </div>
+    </details>
   `,
   {
     buttonLabel: "Book treatment for Mice",
@@ -2093,6 +2189,100 @@ const ratTreatment = new ContentPaN(
         for further investigation.
       </p>
     </section>
+
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Frequently Asked Questions</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <details class="details-accordion">
+          <summary>Should bookings should be made 2 weeks apart?</summary>
+          <div class="details-accordion-content">
+            <p>
+              As close after 2 weeks as possible – fine if 3 weeks, we will look to allocate slots for these specific appointments on SharePoint.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>Do Contact Centre complete SharePoint, or fulfilment Team?</summary>
+          <div class="details-accordion-content">
+            <p>
+                   Contact Centre should update SharePoint, and complete the 1st app & 2nd App field on the CRM form.  Fulfilment Team will transfer the same dates into the Confirm record attributes.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>What if the 1st booking was made prior to us changing the process?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team to book the follow up appointment at XXXXXXXXX
+            </p>
+          </div>
+        </details>
+
+
+        <details class="details-accordion">
+          <summary>What if no appointments showing on SharePoint for the advisors to book?</summary>
+          <div class="details-accordion-content">
+            <p>
+              We will endeavour to allocate a set amount of appointments per day for these bookings but if none are available, please contact the Hub Team.
+            </p>
+          </div>
+        </details>
+
+
+        <details class="details-accordion">
+          <summary>What do we do if a customer calls to rearrange an appointment?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team at XXXXXXXXX
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>What if a customer can only set a date for the 1st appointment and has to call us back once they can check their availability for a 2nd appointment? </summary>
+          <div class="details-accordion-content">
+            <p>
+              The 2nd appointment field is not mandatory; the booking can be made and the customer advised to contact the Hub to make the follow up appointment.
+            </p>
+          </div>
+        </details>
+
+
+        <details class="details-accordion">
+          <summary>Is there a set amount of time between calling us back to book that 2nd appointment so example they booked the 1st treatment with us said they would have to call us back to book the 2nd appointment and then we get a call 2 months later? </summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team at XXXXXXXX, this process should only be used when booking the initial visit and making the first 2 appointment.
+            </p>
+          </div>
+        </details>
+
+
+        <details class="details-accordion">
+          <summary>What do we do if a customer was told to call us to book a 3rd appointment?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team at XXXXXXXX.
+            </p>
+          </div>
+        </details>
+
+
+        <details class="details-accordion">
+          <summary>What do we do if a customer was told to call us to book a 3rd appointment?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please email the query to XXXXXXX and they will call the customer back
+            </p>
+          </div>
+        </details>
+
+      </div>
+    </details>
   `,
   {
     buttonLabel: "Book treatment for Rats",
