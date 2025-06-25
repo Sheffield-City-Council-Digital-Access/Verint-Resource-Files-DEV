@@ -242,17 +242,43 @@ const reportTrafficSignal = new FormRaP(
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
-const requestClaimsPack = new FormRaP(
+
+const requestClaimsPack = new ContentRaP(
   "requestClaimsPack",
-  "Highways compensation claims pack",
+  "Request Highways compensation claims pack",
   "Request a claims pack due to damaged to a vehicle or personal property or personal injury due to a problem on the highway, upon receiving the pack provide information such as: if the issue has already been reported/repaired, date/time of incident, where the incident happened ect.",
-  "request_claims_pack",
+  `
+    
+    <h3>Highways Compensation Claims Pack</h3>
+<p>
+    So your claim can be thoroughly reviewed, you will need to have and provide all of the following information. <br>
+  Without providing full and complete information about your claim you may have a reduced chance of success. 
+</p>
+
+    <ul>
+      <li>Date and time of Incident </li>
+      <li>The weather on the date of the incident</li>
+      <li>The direction of travel by foot or vehicle </li>
+      <li>Full details of any damage or injury suffered </li>
+      <li>The exact location of the incident </li>
+      <li>Be willing to provide your National Insurance Number to support your claim</li>
+    </ul>
+
+  `,
   {
-    type: "Request",
-    keywords: ["Claims", "pack", "Highways", "Compensation"],
-    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+    buttonLabel: "Request Compensation Claims Pack",
+    formName: "request_claims_pack",
   },
-  { date: "06/03/2025", name: "Sam Coupland" }
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Report",
+    keywords: ["Claims", "pack", "Highways", "Compensation"],
+    categories: [
+     "Roads and pavements", "Highways", "Streets Ahead", "Amey"
+    ],
+  },
+  { date: "13/06/2025", name: "Gee Whitehouse" }
 );
 
 const reportGritBin = new ContentRaP(

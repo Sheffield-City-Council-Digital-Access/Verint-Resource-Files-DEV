@@ -136,7 +136,7 @@ const bookNoticeCivilPartnership = new ContentBDMaC(
       "Wedding",
       "Ceremony",
       "Partnership",
-      "Civil",
+      "Civil"
     ],
   },
   { date: "11/11/2024", name: "Joseph Coupland" }
@@ -218,7 +218,7 @@ const bookNoticeOfMarriageApp = new ContentBDMaC(
       "Registry Office",
       "Register Office",
       "Wedding",
-      "Ceremony",
+      "Ceremony"
     ],
   },
   { date: "11/11/2024", name: "Joseph Coupland" }
@@ -379,7 +379,7 @@ const bookingARegistrarWedding = new ContentBDMaC(
       "Registry Office",
       "Register Office",
       "Wedding",
-      "Ceremony",
+      "Ceremony"
     ],
   },
   { date: "11/11/2024", name: "Joseph Coupland" }
@@ -572,7 +572,7 @@ const copyCertificates = new ContentBDMaC(
       "Register Office",
       "Births",
       "Deaths",
-      "Certificates",
+      "Certificates"
     ],
   },
   { date: "02/05/2025", name: "Andy Walker" }
@@ -700,7 +700,7 @@ const licensedWeddingVenues = new ContentBDMaC(
       "Registry Office",
       "Register Office",
       "Wedding",
-      "Ceremony",
+      "Ceremony"
     ],
   },
   { date: "11/11/2024", name: "Joseph Coupland" }
@@ -715,11 +715,19 @@ const registerABirthAndDeath = new ContentBDMaC(
 
   <a href="#" class="telephoneNumber" onclick="copyToClipboard('07786126904')">07786126904</a>
 
-<p/>
+</p>
 
-  <p> https://www.sheffield.gov.uk/births-deaths-marriages/register-death <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death">form </a>
-  
-  
+<p>
+
+
+For a Birth/Death Declaration, please email the Register Office with all the customer's details to:
+<a href="mailto:Registrars@Sheffield.gov.uk">Registrars@Sheffield.gov.uk</a>
+as the paperwork needs to be checked by a Registrar.
+
+
+</p>
+  <p> 
+    <a href="https://www.sheffield.gov.uk/births-deaths-marriages/register-death "target="_blank">https://www.sheffield.gov.uk/births-deaths-marriages/register-death</a>
   </p> 	
 
 <button
@@ -751,21 +759,21 @@ const registerABirthAndDeath = new ContentBDMaC(
 </button>
 
 `,
-{ buttonLabel: "Registrars enquiry", formName: "registrars_process" },
-{ typeKey: "register_office_information_requested" },
-{ typeKey: "register_office_information_provided" },
-{
-  type: "",
-  keywords: [],
-  categories: [
-    "Registrars",
-    "Registry Office",
-    "Register Office",
-    "Births",
-    "Deaths",
-  ],
-},
-{ date: "11/06/2025", name: "Dinah Williams" }
+  { buttonLabel: "Registrars enquiry", formName: "registrars_process" },
+  { typeKey: "register_office_information_requested" },
+  { typeKey: "register_office_information_provided" },
+  {
+    type: "",
+    keywords: [],
+    categories: [
+      "Registrars",
+      "Registry Office",
+      "Register Office",
+      "Births",
+      "Deaths"
+    ],
+  },
+  { date: "20/06/2025", name: "Gee Whitehouse" }
 );
 
 const reRegisterABirth = new ContentBDMaC(
@@ -802,7 +810,7 @@ const registerABirth = new ContentBDMaC(
   "registerABirth",
   "Register a Birth",
   "Register a birth",
-` 
+  ` 
     <p> <a href src= "https://www.sheffield.gov.uk/births-deaths-marriages/register-death"> https://www.sheffield.gov.uk/births-deaths-marriages/register-death </a></p> 
 
         <button
@@ -1021,7 +1029,7 @@ const registerABirth = new ContentBDMaC(
       "Registry Office",
       "Register Office",
       "Births",
-      "Deaths",
+      "Deaths"
     ],
   },
   { date: "30/04/2025", name: "Andy Walker" }
@@ -1181,7 +1189,7 @@ const registerAStillbirth = new ContentBDMaC(
       "Registry Office",
       "Register Office",
       "Births",
-      "Deaths",
+      "Deaths"
     ],
   },
   { date: "30/04/2025", name: "Andy Walker" }
@@ -1250,7 +1258,7 @@ To re-schedule an appointment, please use the
       "Deaths",
       "Certificates",
       "Wedding",
-      "Ceremony",
+      "Ceremony"
     ],
   },
   { date: "01/05/2025", name: "Andy Walker" }
@@ -1275,7 +1283,7 @@ const birthsDeathsMarriagesAndCitizenship = new ServiceBDMaC(
     registerABirth,
     registerADeath,
     registerAStillbirth,
-    rescheduleAnAppointment,
+    rescheduleAnAppointment
   ]
 );
 
