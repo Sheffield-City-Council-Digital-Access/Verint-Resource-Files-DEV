@@ -1753,10 +1753,10 @@ const miceTreatment = new ContentPaN(
 
       <div class="accordion-content">
         <details class="details-accordion">
-          <summary>Should bookings should be made 2 weeks apart?</summary>
+          <summary>Should bookings be made 2 weeks apart?</summary>
           <div class="details-accordion-content">
             <p>
-              As close after 2 weeks as possible – fine if 3 weeks, we will look to allocate slots for these specific appointments on SharePoint.
+              As close after 2 weeks as possible 3 weeks is fine, we will look to allocate slots for these specific appointments on SharePoint.
             </p>
           </div>
         </details>
@@ -1765,7 +1765,8 @@ const miceTreatment = new ContentPaN(
           <summary>Do Contact Centre complete SharePoint, or fulfilment Team?</summary>
           <div class="details-accordion-content">
             <p>
-                   Contact Centre should update SharePoint, and complete the 1st app & 2nd App field on the CRM form.  Fulfilment Team will transfer the same dates into the Confirm record attributes.
+                   Contact Centre should update SharePoint, and complete the 1st appointment & 2nd appointment field on the CRM form.<br>  
+                   Fulfilment Team will transfer the same dates into the Confirm record attributes.
             </p>
           </div>
         </details>
@@ -1774,7 +1775,7 @@ const miceTreatment = new ContentPaN(
           <summary>What if the 1st booking was made prior to us changing the process?</summary>
           <div class="details-accordion-content">
             <p>
-              Please transfer to Hub Team to book the follow up appointment at XXXXXXXXX
+              Please transfer to Hub Team to book the follow up appointment at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>
             </p>
           </div>
         </details>
@@ -1794,7 +1795,7 @@ const miceTreatment = new ContentPaN(
           <summary>What do we do if a customer calls to rearrange an appointment?</summary>
           <div class="details-accordion-content">
             <p>
-              Please transfer to Hub Team at XXXXXXXXX
+              Please transfer to Hub Team at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
             </p>
           </div>
         </details>
@@ -1813,7 +1814,7 @@ const miceTreatment = new ContentPaN(
           <summary>Is there a set amount of time between calling us back to book that 2nd appointment so example they booked the 1st treatment with us said they would have to call us back to book the 2nd appointment and then we get a call 2 months later? </summary>
           <div class="details-accordion-content">
             <p>
-              Please transfer to Hub Team at XXXXXXXX, this process should only be used when booking the initial visit and making the first 2 appointment.
+              Please transfer to Hub Team at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>, this process should only be used when booking the initial visit and making the first 2 appointment.
             </p>
           </div>
         </details>
@@ -1823,7 +1824,7 @@ const miceTreatment = new ContentPaN(
           <summary>What do we do if a customer was told to call us to book a 3rd appointment?</summary>
           <div class="details-accordion-content">
             <p>
-              Please transfer to Hub Team at XXXXXXXX.
+              Please transfer to Hub Team at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
             </p>
           </div>
         </details>
@@ -1833,7 +1834,7 @@ const miceTreatment = new ContentPaN(
           <summary>What do we do if a customer was told to call us to book a 3rd appointment?</summary>
           <div class="details-accordion-content">
             <p>
-              Please email the query to XXXXXXX and they will call the customer back
+              Please email the query to <a href="mailto:environmentalservicessadmin@sheffield.gov.uk ">environmentalservicessadmin@sheffield.gov.uk</a> and they will call the customer back
             </p>
           </div>
         </details>
@@ -1845,7 +1846,7 @@ const miceTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Mice",
     formName: "pest_control_treatment",
   },
-  { typeKey: "" },
+  { typeKey: "pest_control_transferred_to_service" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -2217,7 +2218,7 @@ const ratTreatment = new ContentPaN(
           <summary>What if the 1st booking was made prior to us changing the process?</summary>
           <div class="details-accordion-content">
             <p>
-              Please transfer to Hub Team to book the follow up appointment at XXXXXXXXX
+              Please transfer to Hub Team to book the follow up appointment at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
             </p>
           </div>
         </details>
@@ -2237,7 +2238,7 @@ const ratTreatment = new ContentPaN(
           <summary>What do we do if a customer calls to rearrange an appointment?</summary>
           <div class="details-accordion-content">
             <p>
-              Please transfer to Hub Team at XXXXXXXXX
+              Please transfer to Hub Team at <a href="mailto:environmentalservicessadmin@sheffield.gov.uk ">environmentalservicessadmin@sheffield.gov.uk</a>
             </p>
           </div>
         </details>
@@ -2256,7 +2257,7 @@ const ratTreatment = new ContentPaN(
           <summary>Is there a set amount of time between calling us back to book that 2nd appointment so example they booked the 1st treatment with us said they would have to call us back to book the 2nd appointment and then we get a call 2 months later? </summary>
           <div class="details-accordion-content">
             <p>
-              Please transfer to Hub Team at XXXXXXXX, this process should only be used when booking the initial visit and making the first 2 appointment.
+              Please transfer to Hub Team at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>, this process should only be used when booking the initial visit and making the first 2 appointment.
             </p>
           </div>
         </details>
@@ -2266,7 +2267,7 @@ const ratTreatment = new ContentPaN(
           <summary>What do we do if a customer was told to call us to book a 3rd appointment?</summary>
           <div class="details-accordion-content">
             <p>
-              Please transfer to Hub Team at XXXXXXXX.
+              Please transfer to Hub Team at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
             </p>
           </div>
         </details>
@@ -2276,7 +2277,7 @@ const ratTreatment = new ContentPaN(
           <summary>What do we do if a customer was told to call us to book a 3rd appointment?</summary>
           <div class="details-accordion-content">
             <p>
-              Please email the query to XXXXXXX and they will call the customer back
+              Please email the query to <a href="mailto:environmentalservicessadmin@sheffield.gov.uk ">environmentalservicessadmin@sheffield.gov.uk</a> and they will call the customer back
             </p>
           </div>
         </details>
@@ -2288,7 +2289,7 @@ const ratTreatment = new ContentPaN(
     buttonLabel: "Book treatment for Rats",
     formName: "pest_control_treatment",
   },
-  { typeKey: "" },
+  { typeKey: "pest_control_transferred_to_service" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
