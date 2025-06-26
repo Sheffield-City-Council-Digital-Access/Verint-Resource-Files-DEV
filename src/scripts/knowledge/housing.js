@@ -5779,17 +5779,17 @@ const statements = new ContentH(
   <br>
   <br>
 
-  If the customer requires a current statement, we can still provide one upon request that covers the last 3 months. 
-  If the customer is asking for more than 3 months, we need to know why they need it as there will be a charge. <br><br>
+  If the customer requires a statement, we can provide one upon request. 
+  If the customer is requires a statement for a mortgage there will be a £60 charge. <br><br>
 
   <strong>Tenants in arrears:</strong> We will continue to send statements every 13 weeks if the customer is repaying arrears.
   </p> 
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Raise rents enquiry", formName: "hou_rents_enquiry" },
   { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "Statements", keywords: ["Rent"], categories: ["Housing"] },
-  { date: "07/05/2025", name: "Dinah Williams" }
+  { date: "25/06/2025", name: "Nathan Smith" }
 );
 
 //universalCredit is in cross regions
