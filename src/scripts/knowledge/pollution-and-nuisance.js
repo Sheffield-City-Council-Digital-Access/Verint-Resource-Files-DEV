@@ -2460,7 +2460,7 @@ const waspsTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-      If you require further treatments, each additional treatment will cost <strong>£58.00.</strong>
+      If you require further treatments, each additional treatment will cost <strong>£58.00</strong>.
       <br>
        All prices include a call-out fee of £40.80. This fee applies if our officer
       attends the property but is unable to complete the treatment.
