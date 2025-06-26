@@ -2838,7 +2838,6 @@ const reportSmoke = new ContentPaN(
       <br>
       <br>
 
-
       Telephone:<a> href="tel: 0114 273 4651">0114 273 465</a>
        <a> href="#" class="telephoneNumber" onclick="copyToClipboard('0114 273 4651')">0114 273 465</a>
       <br>
