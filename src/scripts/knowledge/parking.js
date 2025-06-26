@@ -476,7 +476,7 @@ const replacementBlueBadge = new ContentP(
      
     `,
 
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Request a paper application for a Blue Badge Replacement", formName: "blue_badge_enquiry" },
   { typeKey: "" },
   { typeKey: "blue_badge_information_provided" },
   {
