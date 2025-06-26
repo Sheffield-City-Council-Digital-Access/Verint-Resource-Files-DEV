@@ -1780,7 +1780,6 @@ const miceTreatment = new ContentPaN(
           </div>
         </details>
 
-
         <details class="details-accordion">
           <summary>What if no appointments showing on SharePoint for the advisors to book?</summary>
           <div class="details-accordion-content">
@@ -1789,7 +1788,6 @@ const miceTreatment = new ContentPaN(
             </p>
           </div>
         </details>
-
 
         <details class="details-accordion">
           <summary>What do we do if a customer calls to rearrange an appointment?</summary>
@@ -1809,7 +1807,6 @@ const miceTreatment = new ContentPaN(
           </div>
         </details>
 
-
         <details class="details-accordion">
           <summary>Is there a set amount of time between calling us back to book that 2nd appointment so example they booked the 1st treatment with us said they would have to call us back to book the 2nd appointment and then we get a call 2 months later? </summary>
           <div class="details-accordion-content">
@@ -1819,7 +1816,6 @@ const miceTreatment = new ContentPaN(
           </div>
         </details>
 
-
         <details class="details-accordion">
           <summary>What do we do if a customer was told to call us to book a 3rd appointment?</summary>
           <div class="details-accordion-content">
@@ -1828,7 +1824,6 @@ const miceTreatment = new ContentPaN(
             </p>
           </div>
         </details>
-
 
         <details class="details-accordion">
           <summary>What if Environmental Services are unavailable when we call?</summary>
@@ -2191,7 +2186,6 @@ const ratTreatment = new ContentPaN(
       </p>
     </section>
 
-
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Frequently Asked Questions</h3>
@@ -2224,7 +2218,6 @@ const ratTreatment = new ContentPaN(
           </div>
         </details>
 
-
         <details class="details-accordion">
           <summary>What if no appointments showing on SharePoint for the advisors to book?</summary>
           <div class="details-accordion-content">
@@ -2233,7 +2226,6 @@ const ratTreatment = new ContentPaN(
             </p>
           </div>
         </details>
-
 
         <details class="details-accordion">
           <summary>What do we do if a customer calls to rearrange an appointment?</summary>
@@ -2253,7 +2245,6 @@ const ratTreatment = new ContentPaN(
           </div>
         </details>
 
-
         <details class="details-accordion">
           <summary>Is there a set amount of time between calling us back to book that 2nd appointment so example they booked the 1st treatment with us said they would have to call us back to book the 2nd appointment and then we get a call 2 months later? </summary>
           <div class="details-accordion-content">
@@ -2263,7 +2254,6 @@ const ratTreatment = new ContentPaN(
           </div>
         </details>
 
-
         <details class="details-accordion">
           <summary>What do we do if a customer was told to call us to book a 3rd appointment?</summary>
           <div class="details-accordion-content">
@@ -2272,7 +2262,6 @@ const ratTreatment = new ContentPaN(
             </p>
           </div>
         </details>
-
 
         <details class="details-accordion">
           <summary>What if Environmental Services are unavailable when we call?</summary>
