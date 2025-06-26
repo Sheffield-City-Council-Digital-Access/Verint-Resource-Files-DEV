@@ -328,7 +328,7 @@ const applyBlueBadge = new ContentP(
     <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-<p>To request a Blue Badge paper application, follow this link:</p>
+<p>Use the form to request a Blue Badge paper application</p>
 
 <a href="${window.location.protocol}//${
     window.location.hostname
@@ -336,7 +336,7 @@ const applyBlueBadge = new ContentP(
     KDF.getParams().customerid
       ? `customerid=${KDF.getParams().customerid}&`
       : ""
-  }interactionid=${KDF.getParams().interactionid}">Blue Badge enquiry</a>
+  }interactionid=${KDF.getParams().interactionid}&sel_list_blue_badge_enquiry_about=Request%20a%20paper%20application">Request Paper application</a>
 
     </div>
   </details>
@@ -392,7 +392,7 @@ const blueBadgeHolderPassedAway = new ContentP(
       S1 2SH
     </address>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report the death of a Blue Badge holder", formName: "blue_badge_enquiry" },
   { typeKey: "" },
   { typeKey: "blue_badge_information_provided" },
   {
@@ -418,7 +418,7 @@ const blueBadgeHolderPassedAway = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "19/02/2025", name: "Andy Walker" }
+  { date: "26/06/2025", name: "Sam Coupland" }
 );
 
 const replacementBlueBadge = new ContentP(
@@ -476,7 +476,7 @@ const replacementBlueBadge = new ContentP(
      
     `,
 
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Request a paper application for a Blue Badge Replacement", formName: "blue_badge_enquiry" },
   { typeKey: "" },
   { typeKey: "blue_badge_information_provided" },
   {
