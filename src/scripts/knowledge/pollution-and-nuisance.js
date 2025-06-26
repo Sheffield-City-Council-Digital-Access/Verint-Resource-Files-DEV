@@ -1785,7 +1785,7 @@ const miceTreatment = new ContentPaN(
           <summary>What if no appointments showing on SharePoint for the advisors to book?</summary>
           <div class="details-accordion-content">
             <p>
-              We will endeavour to allocate a set amount of appointments per day for these bookings but if none are available, please contact the Hub Team.
+              We will endeavour to allocate a set amount of appointments per day for these bookings but if none are available, please contact the Hub Team via <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
             </p>
           </div>
         </details>
@@ -1831,7 +1831,7 @@ const miceTreatment = new ContentPaN(
 
 
         <details class="details-accordion">
-          <summary>What do we do if a customer was told to call us to book a 3rd appointment?</summary>
+          <summary>What if Environmental Services are unavailable when we call?</summary>
           <div class="details-accordion-content">
             <p>
               Please email the query to <a href="mailto:environmentalservicessadmin@sheffield.gov.uk ">environmentalservicessadmin@sheffield.gov.uk</a> and they will call the customer back
@@ -2199,7 +2199,7 @@ const ratTreatment = new ContentPaN(
       </summary>
       <div class="accordion-content">
         <details class="details-accordion">
-          <summary>Should bookings should be made 2 weeks apart?</summary>
+          <summary>Should bookings be made 2 weeks apart?</summary>
           <div class="details-accordion-content">
             <p>
               As close after 2 weeks as possible – fine if 3 weeks, we will look to allocate slots for these specific appointments on SharePoint.
@@ -2210,7 +2210,8 @@ const ratTreatment = new ContentPaN(
           <summary>Do Contact Centre complete SharePoint, or fulfilment Team?</summary>
           <div class="details-accordion-content">
             <p>
-                   Contact Centre should update SharePoint, and complete the 1st app & 2nd App field on the CRM form.  Fulfilment Team will transfer the same dates into the Confirm record attributes.
+                   Contact Centre should update SharePoint, and complete the 1st appointment & 2nd appointment field on the CRM form.<br>
+                   Fulfilment Team will transfer the same dates into the Confirm record attributes.
             </p>
           </div>
         </details>
@@ -2228,7 +2229,7 @@ const ratTreatment = new ContentPaN(
           <summary>What if no appointments showing on SharePoint for the advisors to book?</summary>
           <div class="details-accordion-content">
             <p>
-              We will endeavour to allocate a set amount of appointments per day for these bookings but if none are available, please contact the Hub Team.
+              We will endeavour to allocate a set amount of appointments per day for these bookings but if none are available, please contact the Hub Team via <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
             </p>
           </div>
         </details>
@@ -2274,7 +2275,7 @@ const ratTreatment = new ContentPaN(
 
 
         <details class="details-accordion">
-          <summary>What do we do if a customer was told to call us to book a 3rd appointment?</summary>
+          <summary>What if Environmental Services are unavailable when we call?</summary>
           <div class="details-accordion-content">
             <p>
               Please email the query to <a href="mailto:environmentalservicessadmin@sheffield.gov.uk ">environmentalservicessadmin@sheffield.gov.uk</a> and they will call the customer back
