@@ -2238,7 +2238,7 @@ const ratTreatment = new ContentPaN(
           <summary>What do we do if a customer calls to rearrange an appointment?</summary>
           <div class="details-accordion-content">
             <p>
-              Please transfer to Hub Team at <a href="mailto:environmentalservicessadmin@sheffield.gov.uk ">environmentalservicessadmin@sheffield.gov.uk</a>
+              Please transfer to Hub Team at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
             </p>
           </div>
         </details>
