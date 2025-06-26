@@ -1845,7 +1845,7 @@ const miceTreatment = new ContentPaN(
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Mice", "Treatment", "Pests", "Vermin"],
+    keywords: ["Mice", "Treatment", "Pests", "Vermin", "mouse", "mouses", "mouce", "mouies"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
