@@ -365,6 +365,7 @@ const disabledPersonsTravelPermit = new ContentTaT(
     <h3>I want to fill out a paper application</h3>
     <p>
       Use the form to request a paper application.
+      <br>
       <a href="${window.location.protocol}//${
     window.location.hostname
   }/form/launch/dtp_enquiry?${
@@ -406,11 +407,8 @@ const disabledPersonsTravelPermit = new ContentTaT(
     </p>
     <h3>The pass holder has passed away</h3>
     <p>
-      A disabled persons pass enables free public transport on buses, trams and
-      trains.
-
-      <br>
       Use the form to report the death of the Disabled Persons Pass holder.
+      <br>
       <a href="${window.location.protocol}//${
     window.location.hostname
   }/form/launch/dtp_enquiry?${
@@ -525,13 +523,6 @@ const disabledPersonsTravelPermit = new ContentTaT(
       >
         Send link to review further information
       </button>
-<a href="${window.location.protocol}//${
-       window.location.hostname
-     }/form/launch/dtp_enquiry?${
-       KDF.getParams().customerid
-         ? `customerid=${KDF.getParams().customerid}&`
-         : ""
-     }interactionid=${KDF.getParams().interactionid}">Disabled Travel Pass enquiry</a>
    `,
   {
     buttonLabel: "Apply for disabled travel permit",
