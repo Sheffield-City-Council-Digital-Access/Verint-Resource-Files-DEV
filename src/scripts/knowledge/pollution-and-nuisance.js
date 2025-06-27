@@ -1765,7 +1765,7 @@ const miceTreatment = new ContentPaN(
           <summary>Do Contact Centre complete SharePoint, or fulfilment Team?</summary>
           <div class="details-accordion-content">
             <p>
-                   Contact Centre should update SharePoint, and complete the 1st appointment & 2nd appointment field on the CRM form.<br>  
+                   Contact Centre should update SharePoint, and complete the 1st appointment & 2nd appointment fields on the CRM form.<br>  
                    Fulfilment Team will transfer the same dates into the Confirm record attributes.
             </p>
           </div>
@@ -1808,7 +1808,7 @@ const miceTreatment = new ContentPaN(
         </details>
 
         <details class="details-accordion">
-          <summary>Is there a set amount of time between calling us back to book that 2nd appointment so example they booked the 1st treatment with us said they would have to call us back to book the 2nd appointment and then we get a call 2 months later? </summary>
+          <summary>Is there a set amount of time between calling us back to book that 2nd appointment so for example they booked the 1st treatment with us and said they would have to call us back to book the 2nd appointment and then we get a call 2 months later? </summary>
           <div class="details-accordion-content">
             <p>
               Please transfer to Hub Team at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>, this process should only be used when booking the initial visit and making the first 2 appointment.
@@ -2201,10 +2201,10 @@ const ratTreatment = new ContentPaN(
           </div>
         </details>
         <details class="details-accordion">
-          <summary>Do Contact Centre complete SharePoint, or fulfilment Team?</summary>
+          <summary>Do the Contact Centre complete SharePoint, or the fulfilment Team?</summary>
           <div class="details-accordion-content">
             <p>
-                   Contact Centre should update SharePoint, and complete the 1st appointment & 2nd appointment field on the CRM form.<br>
+                   Contact Centre should update SharePoint, and complete the 1st appointment & 2nd appointment fields on the CRM form.<br>
                    Fulfilment Team will transfer the same dates into the Confirm record attributes.
             </p>
           </div>
@@ -2246,7 +2246,7 @@ const ratTreatment = new ContentPaN(
         </details>
 
         <details class="details-accordion">
-          <summary>Is there a set amount of time between calling us back to book that 2nd appointment so example they booked the 1st treatment with us said they would have to call us back to book the 2nd appointment and then we get a call 2 months later? </summary>
+          <summary>Is there a set amount of time between calling us back to book that 2nd appointment so for example they booked the 1st treatment with us and said they would have to call us back to book the 2nd appointment and then we get a call 2 months later? </summary>
           <div class="details-accordion-content">
             <p>
               Please transfer to Hub Team at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>, this process should only be used when booking the initial visit and making the first 2 appointment.
