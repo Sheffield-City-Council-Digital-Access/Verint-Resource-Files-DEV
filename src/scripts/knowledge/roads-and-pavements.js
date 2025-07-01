@@ -67,6 +67,19 @@ const reportDamagedMissingKerb = new FormRaP(
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
+const reportTemporaryBarrierSign = new FormRaP(
+  "reportTemporaryBarrierSign",
+  "Temporary barrier or sign",
+  "Report a problem with a temporary road barrier or sign",
+  "temporary_barrier_sign",
+  {
+    type: "Report",
+    keywords: ["Temporary", "Barrier", "Sign", "Board", "Exposed", "Hole"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "01/07/2025", name: "Andy Walker" }
+);
+
 const requestLitterPickCollection = new FormRaP(
   "requestLitterPickCollection",
   "Community litter collection",
@@ -774,9 +787,10 @@ const requestHighwayInfo = new FormRaP(
 const roadsAndPavements = new ServiceRaP(
   "roadsAndPavements",
   "Roads and Pavements",
-  `Roadworks, Streets Ahead, maintenance, street lighting, traffic lights, road signs, traffic cameras, bus lanes, cycling…`,
+  `Roadworks, Streets Ahead, barriers, maintenance, street lighting, traffic lights, road signs, traffic cameras, bus lanes, cycling…`,
   [
     requestLitterPickCollection,
+    reportTemporaryBarrierSign,
     reportDamagedMissingKerb,
     reportDeadAnimal,
     reportDrainGulley,
