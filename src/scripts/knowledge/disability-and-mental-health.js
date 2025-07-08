@@ -162,8 +162,8 @@ class FormDaMH extends CoreDaMH {
 
     `,
     { buttonLabel: "Short Breaks", formName: "apply_short_break_grant" },
-    { typeKey: "short_breaks_transfered_to_service" },
-    { typeKey: "short_breaks_information_provided" },
+    { typeKey: "short_break_services_transferred_to_service" },
+    { typeKey: "short_break_services_information_provided" },
     {
       type: "Information",
       keywords: [
@@ -196,7 +196,7 @@ class FormDaMH extends CoreDaMH {
     ], 
       categories: ["disability and mental health"],
     },
-    { date: "10/06/2025", name: "Joseph Coupland" }
+    { date: "08/07/2025", name: "Andy Walker" }
   );
   const directPayments = new ContentDaMH(
     "directPayments",
