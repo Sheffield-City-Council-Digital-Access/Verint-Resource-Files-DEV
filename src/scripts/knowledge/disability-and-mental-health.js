@@ -162,8 +162,8 @@ class FormDaMH extends CoreDaMH {
 
     `,
     { buttonLabel: "Short Breaks", formName: "apply_short_break_grant" },
-    { typeKey: "short_breaks_transfered_to_service" },
-    { typeKey: "short_breaks_information_provided" },
+    { typeKey: "short_break_services_transferred_to_service" },
+    { typeKey: "short_break_services_information_provided" },
     {
       type: "Information",
       keywords: [
