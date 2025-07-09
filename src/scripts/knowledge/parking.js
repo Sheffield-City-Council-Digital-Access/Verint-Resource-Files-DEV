@@ -1079,6 +1079,10 @@ const businessPermit = new ContentP(
         Send link to review further information
       </button>
 
+      <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      </p>
+
 
 	`,
   {
@@ -1255,6 +1259,9 @@ const residentsCarer = new ContentP(
     Send link to review further information
 </button>
 
+      <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+      </p>
      
   `,
   {
@@ -1418,6 +1425,10 @@ const greenParkingPermit = new ContentP(
 	>
 	  Send link to review further information
 	</button>
+
+  <p>
+    <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+   </p>
 `,
   {
     buttonLabel: "Parking Permit Enquiry",
@@ -1494,7 +1505,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
    <div class="accordion-icon"></div>
  </summary>
  <div class="accordion-content">
-                <p>
+              <p>
                 We can't provide permits for visitors to properties, delivery vehicles,
                 or short-term hire or lease cars (unless registered at an address on one of the eligible roads).
             </p>
@@ -1585,6 +1596,9 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     Send link to review further information
 </button>
 
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 
 	`,
   {
@@ -1691,6 +1705,10 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
 >
     Send link to review further information
 </button>
+
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 
 	`,
   {
@@ -1822,6 +1840,11 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
 >
     Send link to review further information
 </button>	
+
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
+
 	`,
   {
     buttonLabel: "Parking Permit Enquiry",
@@ -1995,7 +2018,9 @@ Get in touch with us for any other problems regarding parking permit application
         Send link to review further information
       </button>
 
-
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 
 	`,
   {
@@ -2058,6 +2083,11 @@ const staffPermit = new ContentP(
       >
         Send link to review further information
       </button>
+
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
+
   `,
   {
     buttonLabel: "Parking Permit Enquiry",
@@ -2211,6 +2241,10 @@ const tradePermit = new ContentP(
         Send link to review further information
       </button>
 
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
+
 	`,
   {
     buttonLabel: "Parking Permit Enquiry",
@@ -2292,6 +2326,13 @@ const utilityPermit = new ContentP(
               }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
             "
       >
+
+
+
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
+
 	`,
   {
     buttonLabel: "Parking Permit Enquiry",
@@ -2458,6 +2499,11 @@ Contractors needing more time to work at a property will need to apply for trade
     Launch Visitor Permit Form
   </a>
 </p>
+
+
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 
 	`,
   {
