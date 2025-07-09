@@ -1196,7 +1196,7 @@ function handleOnReadyEvent(_, kdf) {
     }
   });
 
-  if kdf.form.name === "cm_blue_badge" {
+  if (kdf.form.name === "cm_blue_badge") {
     updateMultipleRequiredStates([
       { name: "tel_badge_contact_number", isRequired: false },
       { name: "eml_badge_contact_address", isRequired: false },
