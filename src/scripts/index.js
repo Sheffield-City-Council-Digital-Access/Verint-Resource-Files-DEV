@@ -4564,7 +4564,9 @@ function updateMultipleRequiredStates(fields) {
 }
 
 function updateRequiredState(name, isRequired) {
-  isRequired = isRequired.toLowerCase();
+  if (typeof isRequired === "string") {
+    isRequired = isRequired.toLowerCase();
+  }
   if (
     isRequired === true ||
     isRequired === "true" ||
