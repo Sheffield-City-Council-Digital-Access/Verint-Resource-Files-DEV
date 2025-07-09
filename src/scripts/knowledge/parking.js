@@ -2292,8 +2292,6 @@ const utilityPermit = new ContentP(
   "Learn about the utility permit application process, including costs and how utility companies can apply for permits in Sheffield's city centre.",
   `
 
-		<h3>Utility Permit</h3>
-
 <p>
   <li>Issued for city centre works taking place by utility companies. E.g. Yorkshire Water, BT, British Gas etc.</li>
   <li>25 half day cards per book</li>
@@ -2312,18 +2310,6 @@ const utilityPermit = new ContentP(
 
 <p class="cost">£193.75 for a book of 25 half day passes.</p>
 
-<p>
-  Ask customer to email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> to ask if they can order a 
-  utility permit or we can send them a link to apply.
-</p>
-  
-
-      <p>
-      For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-
-      </p>
-
                    <button
         type="button"
         class="dform_widget email-btn dform_widget_type_button"
@@ -2334,9 +2320,6 @@ const utilityPermit = new ContentP(
               }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
             "
       >
-
-
-
     <p>
       <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
@@ -2371,7 +2354,7 @@ const utilityPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/03/2025", name: "Gee Whitehouse" }
+  { date: "09/07/2025", name: "Gee Whitehouse" }
 );
 
 const visitorsPermits = new ContentP(
@@ -2419,7 +2402,6 @@ Contractors needing more time to work at a property will need to apply for trade
         <p>You can buy up to 150 visitor permits per year (we may consider discretionary applications for more permits).</p>
  </div>
 </details>
-
 
 <details class="accordion">
  <summary class="accordion-header">
@@ -2499,7 +2481,6 @@ Contractors needing more time to work at a property will need to apply for trade
       >
         Send link to review further information
       </button>
-
 <p>
 
 <h3>If the customer is unable to apply online click the link to order on their behalf.</h3>
@@ -2507,8 +2488,6 @@ Contractors needing more time to work at a property will need to apply for trade
     Launch Visitor Permit Form
   </a>
 </p>
-
-
     <p>
       <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
     </p>
