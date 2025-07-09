@@ -151,7 +151,7 @@ const makingAPayment = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -190,7 +190,7 @@ const customerPaidTwice = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -237,7 +237,7 @@ const appealBlueBadge = new ContentP(
       "prking info",
       "Blue Badge",
       "blue badge",
-      "parking"
+      "parking",
     ],
     categories: ["Parking"],
   },
@@ -336,7 +336,9 @@ const applyBlueBadge = new ContentP(
     KDF.getParams().customerid
       ? `customerid=${KDF.getParams().customerid}&`
       : ""
-  }interactionid=${KDF.getParams().interactionid}&sel_list_blue_badge_enquiry_about=Request%20a%20paper%20application">Request Paper application</a>
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&sel_list_blue_badge_enquiry_about=Request%20a%20paper%20application">Request Paper application</a>
 
     </div>
   </details>
@@ -364,7 +366,7 @@ const applyBlueBadge = new ContentP(
       "perking",
       "Blue Badge",
       "blue badge",
-      "parking"
+      "parking",
     ],
     categories: ["Parking"],
   },
@@ -392,7 +394,10 @@ const blueBadgeHolderPassedAway = new ContentP(
       S1 2SH
     </address>
   `,
-  { buttonLabel: "Report the death of a Blue Badge holder", formName: "blue_badge_enquiry" },
+  {
+    buttonLabel: "Report the death of a Blue Badge holder",
+    formName: "blue_badge_enquiry",
+  },
   { typeKey: "" },
   { typeKey: "blue_badge_information_provided" },
   {
@@ -414,7 +419,7 @@ const blueBadgeHolderPassedAway = new ContentP(
       "blue badge holder passed away",
       "badge holder deceased",
       "passed away",
-      "deceased badge holder"
+      "deceased badge holder",
     ],
     categories: ["Parking"],
   },
@@ -476,7 +481,10 @@ const replacementBlueBadge = new ContentP(
      
     `,
 
-  { buttonLabel: "Request a paper application for a Blue Badge Replacement", formName: "blue_badge_enquiry" },
+  {
+    buttonLabel: "Request a paper application for a Blue Badge Replacement",
+    formName: "blue_badge_enquiry",
+  },
   { typeKey: "" },
   { typeKey: "blue_badge_information_provided" },
   {
@@ -500,7 +508,7 @@ const replacementBlueBadge = new ContentP(
       "badge replacement",
       "blue badge replacemnt",
       "parkin",
-      "prking"
+      "prking",
     ],
     categories: ["Parking"],
   },
@@ -515,7 +523,7 @@ const blueBadge = new MenuP(
     applyBlueBadge,
     replacementBlueBadge,
     blueBadgeHolderPassedAway,
-    appealBlueBadge
+    appealBlueBadge,
   ]
 );
 
@@ -598,7 +606,7 @@ const baySuspensions = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -638,7 +646,7 @@ const carParkParkingMeterProblem = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -730,7 +738,7 @@ const illegalParking = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -786,7 +794,7 @@ const vehicleObstruction = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -820,7 +828,7 @@ const vehicleParkedInASuspendedBay = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -892,7 +900,7 @@ const yellowLineDispensations = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -909,7 +917,7 @@ const parkingIssues = new MenuP(
     carParkParkingMeterProblem,
     baySuspensions,
     yellowLineDispensations,
-    vehicleParkedInASuspendedBay
+    vehicleParkedInASuspendedBay,
   ]
 );
 
@@ -1110,7 +1118,7 @@ const businessPermit = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -1289,7 +1297,7 @@ const residentsCarer = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -1455,9 +1463,9 @@ const greenParkingPermit = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
-     categories: ["Parking"],
+    categories: ["Parking"],
   },
   { date: "11/03/2025", name: "Gee Whitehouse" }
 );
@@ -1626,7 +1634,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -1736,7 +1744,7 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -1871,7 +1879,7 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -2048,7 +2056,7 @@ Get in touch with us for any other problems regarding parking permit application
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -2114,7 +2122,7 @@ const staffPermit = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -2271,7 +2279,7 @@ const tradePermit = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -2359,7 +2367,7 @@ const utilityPermit = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -2531,7 +2539,7 @@ Contractors needing more time to work at a property will need to apply for trade
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
@@ -2555,7 +2563,7 @@ const parkingPermits = new MenuP(
     utilityPermit,
     visitorsPermits,
     makingAPayment,
-    customerPaidTwice
+    customerPaidTwice,
   ]
 );
 
@@ -2614,7 +2622,7 @@ const confirmationOfPayment = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -2670,7 +2678,7 @@ const customerTriedToPayOnline = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -2806,7 +2814,7 @@ const customerUnableToPay = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -2919,7 +2927,7 @@ const enforcementBaliffEnquiries = new ContentP(
       "Baliff",
       "baliff",
       "Enforcement and Baliff Enquiries",
-      "Enforcement Baliff Enquiries"
+      "Enforcement Baliff Enquiries",
     ],
     categories: ["Parking"],
   },
@@ -3115,7 +3123,7 @@ const howCanIAppeal = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -3177,7 +3185,7 @@ const howLongDoIHaveToAppeal = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -3320,7 +3328,7 @@ Or email: <a href="mailto:tec@justice.gov.uk">tec@justice.gov.uk</a></p>
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -3372,7 +3380,7 @@ const debtRegistrationAndWarrantCases = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -3683,7 +3691,7 @@ const debtGuidanceRelatedToPCNs = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -3730,7 +3738,7 @@ const postReceivedForSomeoneNotLivingAtAddress = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -3840,7 +3848,7 @@ const unableToResolvePcn = new ContentP(
       "TEC",
       "Fine",
       "Taxi PCN",
-      "Bailiff"
+      "Bailiff",
     ],
     categories: ["Parking"],
   },
@@ -3864,7 +3872,7 @@ const penaltyChargeNoticePcn = new MenuP(
     debtRegistrationAndWarrantCases,
     debtGuidanceRelatedToPCNs,
     postReceivedForSomeoneNotLivingAtAddress,
-    unableToResolvePcn
+    unableToResolvePcn,
   ]
 );
 
@@ -3901,7 +3909,7 @@ const haveYouReceivedMyAppeal = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
     ],
     categories: ["Parking"],
   },
