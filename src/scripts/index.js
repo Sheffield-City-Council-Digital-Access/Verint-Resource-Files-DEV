@@ -1195,6 +1195,13 @@ function handleOnReadyEvent(_, kdf) {
       KDF.showWarning("A customer has not been set.");
     }
   });
+
+  if (kdf.form.name === "cm_blue_badge") {
+    updateMultipleRequiredStates([
+      { name: "tel_badge_contact_number", isRequired: false },
+      { name: "eml_badge_contact_address", isRequired: false },
+    ]);
+  }
 }
 
 // --- HANDLE ON PAGE CHANGE EVENT ----------------------------------------- \\
@@ -4557,7 +4564,9 @@ function updateMultipleRequiredStates(fields) {
 }
 
 function updateRequiredState(name, isRequired) {
-  isRequired = isRequired.toLowerCase();
+  if (typeof isRequired === "string") {
+    isRequired = isRequired.toLowerCase();
+  }
   if (
     isRequired === true ||
     isRequired === "true" ||
