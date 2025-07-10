@@ -265,6 +265,18 @@ const applyBlueBadge = new ContentP(
         <li>Has a life-limiting illness and may have been issued with an SR1 form.</li>
       </ul>
 
+      <h3>Terminally Ill</h3>
+      <p>
+        A terminally ill applicant will have a DS1500 – A form giving medical facts relating to cancer or an SR1 form used for claiming benefits under the rules for people with terminal cancer.  There is a charge of £10.00 for all badges and the badge is issued for a year, should they apply the following 2 years there would be no further charge.
+      </p>
+      <p>
+        These applications will be fast tracked and would not be held up awaiting payment or other evidence.  When applying online these applications via gov.uk are processed the same working day.
+      </p>
+
+      <p>
+      An applicant would need to send their documentation and details to the following email address:<a href="mailto:bluebadge@sheffield.gov.uk">bluebadge@sheffield.gov.uk</a>
+      </p>
+      
       <h3>Eligible Subject to Further Assessment</h3>
       <p>(Previously known as 'discretionary')</p>
       <p>
@@ -368,7 +380,7 @@ const applyBlueBadge = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "04/06/2025", name: "Dinah Williams" }
+  { date: "10/07/2025", name: "Dinah Williams" }
 );
 
 const blueBadgeHolderPassedAway = new ContentP(
