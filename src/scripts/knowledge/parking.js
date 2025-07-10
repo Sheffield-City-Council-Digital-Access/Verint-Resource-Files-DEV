@@ -274,7 +274,7 @@ const applyBlueBadge = new ContentP(
       </p>
 
       <p>
-      An applicant would need to send their documentation and details to the following email address: <a href="mailto:bluebadge@sheffield.gov.uk">bluebadge@sheffield.gov.uk</a>
+      An applicant would need to send their documentation and details to the following email address:<a href="mailto:bluebadge@sheffield.gov.uk">bluebadge@sheffield.gov.uk</a>
       </p>
       
       <h3>Eligible Subject to Further Assessment</h3>
@@ -380,7 +380,7 @@ const applyBlueBadge = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "04/06/2025", name: "Dinah Williams" }
+  { date: "10/07/2025", name: "Dinah Williams" }
 );
 
 const blueBadgeHolderPassedAway = new ContentP(

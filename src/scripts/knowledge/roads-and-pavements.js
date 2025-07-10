@@ -259,13 +259,12 @@ const reportTrafficSignal = new FormRaP(
 const requestClaimsPack = new ContentRaP(
   "requestClaimsPack",
   "Request Highways compensation claims pack",
-  "Request a claims pack due to damaged to a vehicle or personal property or personal injury due to a problem on the highway, upon receiving the pack provide information such as: if the issue has already been reported/repaired, date/time of incident, where the incident happened ect.",
+  "Request a claims pack due to damaged to a vehicle or personal property or personal injury due to a problem on the highway, upon receiving the pack provide information such as: if the issue has already been reported/repaired, date/time of incident, where the incident happened etc.",
   `
-  <h3>Highways Compensation Claims Pack</h3>
-  <h1>Information Required for Your Claim Review</h1>
+    <h3>Information Required for Your Claim Review</h3>
     <p>To ensure your claim can be thoroughly and efficiently reviewed, please provide all the information detailed below. Supplying complete and accurate details significantly increases the likelihood of a successful outcome.</p>
     
-  <h2>For Personal Injury Claims</h2>
+  <h3>For Personal Injury Claims</h3>
     <p>When submitting a personal injury claim, please provide the following:</p>
       <ul>
       <li><strong>Date and Time of Incident:</strong> The precise date and time when the incident occurred.</li>
@@ -278,7 +277,7 @@ const requestClaimsPack = new ContentRaP(
       <li><strong>Access to Medical Records:</strong> Your consent for us to access your relevant medical records pertaining to the injury.</li>
       </ul>
 
-  <h2>For Vehicle Damage Claims</h2>
+  <h3>For Vehicle Damage Claims</h3>
     <p>For claims involving vehicle damage, please prepare the following information:</p>
       <ul>
       <li><strong>Date and Time of Incident:</strong> The precise date and time when the incident occurred.</li>
@@ -292,7 +291,7 @@ const requestClaimsPack = new ContentRaP(
       <li><strong>Insurance Certificate:</strong> A copy of your current vehicle insurance certificate.</li>
       </ul>
   
-  <h2>For Personal Property Damage Claims</h2>
+  <h3>For Personal Property Damage Claims</h3>
     <p>For claims concerning damage to personal property, please provide:</p>
       <ul>
       <li><strong>Date and Time of Incident:</strong> The precise date and time when the incident occurred.</li>
@@ -319,7 +318,7 @@ const requestClaimsPack = new ContentRaP(
      "Roads and pavements", "Highways", "Streets Ahead", "Amey"
     ],
   },
-  { date: "09/072025", name: "Dinah Williams" }
+  { date: "10/07/2025", name: "Dinah Williams" }
 );
 
 const reportGritBin = new ContentRaP(
