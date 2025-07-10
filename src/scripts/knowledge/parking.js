@@ -265,7 +265,7 @@ const applyBlueBadge = new ContentP(
         <li>Has a life-limiting illness and may have been issued with an SR1 form.</li>
       </ul>
 
-      <h2>Terminally Ill</h2>
+      <h3>Terminally Ill</h3>
       <p>
         A terminally ill applicant will have a DS1500 – A form giving medical facts relating to cancer or an SR1 form used for claiming benefits under the rules for people with terminal cancer.  There is a charge of £10.00 for all badges and the badge is issued for a year, should they apply the following 2 years there would be no further charge.
       </p>
