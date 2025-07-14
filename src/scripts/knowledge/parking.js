@@ -1700,7 +1700,7 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=NHS practitioner carer permit\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=NHS%20practitioner%20carer%20permit\`
     "
 >
     Send link to review further information
