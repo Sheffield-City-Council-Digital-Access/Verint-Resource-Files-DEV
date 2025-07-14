@@ -2445,7 +2445,7 @@ Contractors needing more time to work at a property will need to apply for trade
 
   <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/visitor-parking-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/visitor-parking-permit</a>.
   </p>
 </div>
 
@@ -2456,7 +2456,7 @@ Contractors needing more time to work at a property will need to apply for trade
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Visitors%20Permits\`
             "
       >
         Send link to review further information
