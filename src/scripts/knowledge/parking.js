@@ -1310,6 +1310,8 @@ const greenParkingPermit = new ContentP(
   "Green Parking Permit",
   "Learn about the eligibility, benefits, and application process for a free Green Parking Permit for ultra low-emission vehicles (ULEVs).",
   `
+
+
 	<p>
 	    A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the following criteria to park in the city centre for free. 
 	    Anyone with an eligible vehicle can apply for it.
@@ -1425,7 +1427,7 @@ const greenParkingPermit = new ContentP(
 	  onclick="
 	    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
 	      KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-	    }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+	    }interactionid=\${KDF.getParams().interactionid}&sel_service=Green%20Parking%20Permit\`
 	  "
 	>
 	  Send link to review further information
