@@ -2051,7 +2051,7 @@ const staffPermit = new ContentP(
 
   `<p>
   Staff who need to apply for a parking permit should contact Facilities Management 
-  for assistance. Full details on how to apply for a staff parking permit can be 
+  for assistance. Full details on how to apply for a staff parking permit can be (Internal Only)
   found on the <a href="https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit" 
   target="_blank">https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.
 </p>
@@ -2060,7 +2060,7 @@ const staffPermit = new ContentP(
         <button
         type="button"
         class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information and to apply send link to apply online"
+        aria-label="For further information and to apply send link to apply online (Internal Only)"
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
@@ -2206,7 +2206,7 @@ const tradePermit = new ContentP(
 
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/trade-parking-permits" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/trade-parking-permits</a>.
 
     </p>
              <button
@@ -2216,7 +2216,7 @@ const tradePermit = new ContentP(
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Trade%20Permit\`
             "
       >
         Send link to review further information
