@@ -1249,8 +1249,8 @@ const residentsCarer = new ContentP(
 
 <p>
     For further information, visit  
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">
-        https://www.sheffield.gov.uk/parking
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/residential-carers-parking-permit" target="_blank">
+        https://www.sheffield.gov.uk/parking/apply-parking-permit/residential-carers-parking-permit
     </a>.
 </p>
 
@@ -1261,7 +1261,7 @@ const residentsCarer = new ContentP(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Residents%20Carer\`
     "
 >
     Send link to review further information
