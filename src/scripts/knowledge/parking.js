@@ -1417,7 +1417,7 @@ const greenParkingPermit = new ContentP(
 	
 	<p>
 	  For further information, visit 
-	  <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+	  <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/green-parking-permits" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/green-parking-permits</a>.
 	</p>
 	
 	<button
@@ -1583,7 +1583,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
 
 <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    <a href="https://www.sheffield.gov.uk/travel-transport/hillsborough-bus-tram-gates" target="_blank">https://www.sheffield.gov.uk/travel-transport/hillsborough-bus-tram-gates</a>.
 </p>
 
 <button
@@ -1593,7 +1593,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Langsett%20And%20Hillsborough%20Permit\`
     "
 >
     Send link to review further information
