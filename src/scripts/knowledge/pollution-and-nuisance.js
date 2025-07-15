@@ -1750,32 +1750,29 @@ const miceTreatment = new ContentPaN(
         <h3>Frequently Asked Questions</h3>
         <div class="accordion-icon"></div>
       </summary>
-
       <div class="accordion-content">
         <details class="details-accordion">
           <summary>Should bookings be made 2 weeks apart?</summary>
           <div class="details-accordion-content">
             <p>
-              As close after 2 weeks as possible 3 weeks is fine, we will look to allocate slots for these specific appointments on SharePoint.
+              After the first appointment, book the second as close to after two weeks later as possible. If no ideal dates are available after two weeks, you may book before, but booking after two weeks is preferred.
             </p>
           </div>
         </details>
-
         <details class="details-accordion">
-          <summary>Do Contact Centre complete SharePoint, or fulfilment Team?</summary>
+          <summary>Do the Contact Centre complete SharePoint, or the fulfilment Team?</summary>
           <div class="details-accordion-content">
             <p>
-                   Contact Centre should update SharePoint, and complete the 1st appointment & 2nd appointment fields on the CRM form.<br>  
+                   Contact Centre should update SharePoint, and complete the 1st appointment & 2nd appointment fields on the CRM form.<br>
                    Fulfilment Team will transfer the same dates into the Confirm record attributes.
             </p>
           </div>
         </details>
-
         <details class="details-accordion">
           <summary>What if the 1st booking was made prior to us changing the process?</summary>
           <div class="details-accordion-content">
             <p>
-              Please transfer to Hub Team to book the follow up appointment at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>
+              Please transfer to Hub Team to book the follow up appointment at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
             </p>
           </div>
         </details>
@@ -1853,7 +1850,7 @@ const miceTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "25/06/2025", name: "Joseph Coupland" }
+  { date: "11/07/2025", name: "Joseph Coupland" }
 );
 
 const mitesTreatment = new ContentPaN(
@@ -2171,20 +2168,6 @@ const ratTreatment = new ContentPaN(
         </p>
       </div>
     </details>
-    <section class="info-panel" role="region" aria-label="Information panel">
-      <p>
-        If your enquiry doesn't fall into any of the above categories, we will need to
-        refer your 
-        <a href="${window.location.protocol}//${
-    window.location.hostname
-  }/form/launch/pest_control_technician?${
-    KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : ""
-  }interactionid=${KDF.getParams().interactionid}">report to a technician</a>
-        for further investigation.
-      </p>
-    </section>
 
     <details class="accordion">
       <summary class="accordion-header">
@@ -2196,7 +2179,7 @@ const ratTreatment = new ContentPaN(
           <summary>Should bookings be made 2 weeks apart?</summary>
           <div class="details-accordion-content">
             <p>
-              As close after 2 weeks as possible – fine if 3 weeks, we will look to allocate slots for these specific appointments on SharePoint.
+              After the first appointment, book the second as close to after two weeks later as possible. If no ideal dates are available after two weeks, you may book before, but booking after two weeks is preferred.
             </p>
           </div>
         </details>
@@ -2274,6 +2257,22 @@ const ratTreatment = new ContentPaN(
 
       </div>
     </details>
+
+  <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+        If your enquiry doesn't fall into any of the above categories, we will need to
+        refer your 
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/pest_control_technician?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">report to a technician</a>
+        for further investigation.
+      </p>
+    </section>
+
   `,
   {
     buttonLabel: "Book treatment for Rats",
@@ -2291,7 +2290,7 @@ const ratTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "25/06/2025", name: "Joseph Coupland" }
+  { date: "11/07/2025", name: "Joseph Coupland" }
 );
 
 const redSpiderMitesTreatment = new ContentPaN(
