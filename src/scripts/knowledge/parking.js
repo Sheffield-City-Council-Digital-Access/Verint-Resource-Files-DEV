@@ -204,9 +204,8 @@ const customerPaidTwice = new ContentP(
 const appealBlueBadge = new ContentP(
   "apealBlueBadge",
   "Appeal a Blue Badge Decision",
-  "",
-  `   
-   <h3>Appeal a Blue Badge Decision</h3>
+  "Information on how to appeal a decision, what steps the customer can take and how the case shoud be updated",
+  `
     <ul>
       <li>The customer can request a review of the decision.</li>
       <li>Add a note on the case outlining any information given by the customer.</li>
@@ -348,7 +347,9 @@ const applyBlueBadge = new ContentP(
     KDF.getParams().customerid
       ? `customerid=${KDF.getParams().customerid}&`
       : ""
-  }interactionid=${KDF.getParams().interactionid}&sel_list_blue_badge_enquiry_about=Request%20a%20paper%20application">Request Paper application</a>
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&sel_list_blue_badge_enquiry_about=Request%20a%20paper%20application">Request Paper application</a>
 
     </div>
   </details>
@@ -404,7 +405,10 @@ const blueBadgeHolderPassedAway = new ContentP(
       S1 2SH
     </address>
   `,
-  { buttonLabel: "Report the death of a Blue Badge holder", formName: "blue_badge_enquiry" },
+  {
+    buttonLabel: "Report the death of a Blue Badge holder",
+    formName: "blue_badge_enquiry",
+  },
   { typeKey: "" },
   { typeKey: "blue_badge_information_provided" },
   {
@@ -488,7 +492,10 @@ const replacementBlueBadge = new ContentP(
      
     `,
 
-  { buttonLabel: "Request a paper application for a Blue Badge Replacement", formName: "blue_badge_enquiry" },
+  {
+    buttonLabel: "Request a paper application for a Blue Badge Replacement",
+    formName: "blue_badge_enquiry",
+  },
   { typeKey: "" },
   { typeKey: "blue_badge_information_provided" },
   {
@@ -1091,6 +1098,12 @@ const businessPermit = new ContentP(
         Send link to review further information
       </button>
 
+    <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
+
 
 	`,
   {
@@ -1265,6 +1278,11 @@ const residentsCarer = new ContentP(
     Send link to review further information
 </button>
 
+    <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
      
   `,
   {
@@ -1430,6 +1448,12 @@ const greenParkingPermit = new ContentP(
 	>
 	  Send link to review further information
 	</button>
+
+    <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 `,
   {
     buttonLabel: "Parking Permit Enquiry",
@@ -1458,7 +1482,7 @@ const greenParkingPermit = new ContentP(
       "pemit",
       "premit"
     ],
-     categories: ["Parking"],
+    categories: ["Parking"],
   },
   { date: "16/07/2025", name: "Gee Whitehouse" }
 );
@@ -1504,7 +1528,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
    <div class="accordion-icon"></div>
  </summary>
  <div class="accordion-content">
-                <p>
+              <p>
                 We can't provide permits for visitors to properties, delivery vehicles,
                 or short-term hire or lease cars (unless registered at an address on one of the eligible roads).
             </p>
@@ -1595,6 +1619,11 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     Send link to review further information
 </button>
 
+    <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 
 	`,
   {
@@ -1701,6 +1730,12 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
 >
     Send link to review further information
 </button>
+
+      <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 
 	`,
   {
@@ -1830,6 +1865,13 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
 >
     Send link to review further information
 </button>	
+
+     <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
+
 	`,
   {
     buttonLabel: "Parking Permit Enquiry",
@@ -1999,7 +2041,11 @@ Get in touch with us for any other problems regarding parking permit application
         Send link to review further information
       </button>
 
-
+    <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 
 	`,
   {
@@ -2059,6 +2105,13 @@ const staffPermit = new ContentP(
       >
         Send link to review further information
       </button>
+
+    <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
+
   `,
   {
     buttonLabel: "Parking Permit Enquiry",
@@ -2209,6 +2262,12 @@ const tradePermit = new ContentP(
         Send link to review further information
       </button>
 
+    <h4>Taranto</h4>
+
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
+
 	`,
   {
     buttonLabel: "Parking Permit Enquiry",
@@ -2265,18 +2324,6 @@ const utilityPermit = new ContentP(
 
 <p class="cost">£193.75 for a book of 25 half day passes.</p>
 
-<p>
-  Ask customer to email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> to ask if they can order a 
-  utility permit or we can send them a link to apply.
-</p>
-  
-
-      <p>
-      For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-
-      </p>
-
                    <button
         type="button"
         class="dform_widget email-btn dform_widget_type_button"
@@ -2287,6 +2334,12 @@ const utilityPermit = new ContentP(
               }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
             "
       >
+
+      <h4>Taranto</h4>
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
+
 	`,
   {
     buttonLabel: "Parking Permit Enquiry",
@@ -2363,7 +2416,6 @@ Contractors needing more time to work at a property will need to apply for trade
         <p>You can buy up to 150 visitor permits per year (we may consider discretionary applications for more permits).</p>
  </div>
 </details>
-
 
 <details class="accordion">
  <summary class="accordion-header">
@@ -2443,7 +2495,6 @@ Contractors needing more time to work at a property will need to apply for trade
       >
         Send link to review further information
       </button>
-
 <p>
 
 <h3>If the customer is unable to apply online click the link to order on their behalf.</h3>
@@ -2451,6 +2502,11 @@ Contractors needing more time to work at a property will need to apply for trade
     Launch Visitor Permit Form
   </a>
 </p>
+       <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 
 	`,
   {
