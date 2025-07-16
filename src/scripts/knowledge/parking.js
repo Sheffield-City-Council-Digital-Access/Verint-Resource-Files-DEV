@@ -190,7 +190,7 @@ const customerPaidTwice = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -237,7 +237,7 @@ const appealBlueBadge = new ContentP(
       "prking info",
       "Blue Badge",
       "blue badge",
-      "parking",
+      "parking"
     ],
     categories: ["Parking"],
   },
@@ -378,7 +378,7 @@ const applyBlueBadge = new ContentP(
       "perking",
       "Blue Badge",
       "blue badge",
-      "parking",
+      "parking"
     ],
     categories: ["Parking"],
   },
@@ -431,7 +431,7 @@ const blueBadgeHolderPassedAway = new ContentP(
       "blue badge holder passed away",
       "badge holder deceased",
       "passed away",
-      "deceased badge holder",
+      "deceased badge holder"
     ],
     categories: ["Parking"],
   },
@@ -520,7 +520,7 @@ const replacementBlueBadge = new ContentP(
       "badge replacement",
       "blue badge replacemnt",
       "parkin",
-      "prking",
+      "prking"
     ],
     categories: ["Parking"],
   },
@@ -535,7 +535,7 @@ const blueBadge = new MenuP(
     applyBlueBadge,
     replacementBlueBadge,
     blueBadgeHolderPassedAway,
-    appealBlueBadge,
+    appealBlueBadge
   ]
 );
 
@@ -618,7 +618,7 @@ const baySuspensions = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -658,7 +658,7 @@ const carParkParkingMeterProblem = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -750,7 +750,7 @@ const illegalParking = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -806,7 +806,7 @@ const vehicleObstruction = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -840,7 +840,7 @@ const vehicleParkedInASuspendedBay = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -912,7 +912,7 @@ const yellowLineDispensations = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
@@ -929,7 +929,7 @@ const parkingIssues = new MenuP(
     carParkParkingMeterProblem,
     baySuspensions,
     yellowLineDispensations,
-    vehicleParkedInASuspendedBay,
+    vehicleParkedInASuspendedBay
   ]
 );
 
@@ -3885,7 +3885,7 @@ const penaltyChargeNoticePcn = new MenuP(
     debtRegistrationAndWarrantCases,
     debtGuidanceRelatedToPCNs,
     postReceivedForSomeoneNotLivingAtAddress,
-    unableToResolvePcn,
+    unableToResolvePcn
   ]
 );
 
@@ -3922,7 +3922,7 @@ const haveYouReceivedMyAppeal = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit",
+      "premit"
     ],
     categories: ["Parking"],
   },
