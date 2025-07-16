@@ -204,9 +204,8 @@ const customerPaidTwice = new ContentP(
 const appealBlueBadge = new ContentP(
   "apealBlueBadge",
   "Appeal a Blue Badge Decision",
-  "",
-  `   
-   <h3>Appeal a Blue Badge Decision</h3>
+  "Information on how to reopen a decision, what steps the customer can take and how the case shoud be updated",
+  `
     <ul>
       <li>The customer can request a review of the decision.</li>
       <li>Add a note on the case outlining any information given by the customer.</li>
