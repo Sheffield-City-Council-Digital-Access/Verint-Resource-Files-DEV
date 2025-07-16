@@ -1083,7 +1083,7 @@ const businessPermit = new ContentP(
 </details>
 
 <p>
-	For further information, visit <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+	For further information, visit <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/business-parking-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/business-parking-permit</a>.
 </p>
 
      <button
@@ -1093,7 +1093,7 @@ const businessPermit = new ContentP(
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Business%20Permit\`
             "
       >
         Send link to review further information
@@ -1263,9 +1263,7 @@ const residentsCarer = new ContentP(
 
 <p>
     For further information, visit  
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">
-        https://www.sheffield.gov.uk/parking
-    </a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/residential-carers-parking-permit" target="_blank"> https://www.sheffield.gov.uk/parking/apply-parking-permit/residential-carers-parking-permit</a>
 </p>
 
 <button
@@ -1275,7 +1273,7 @@ const residentsCarer = new ContentP(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Residents%20Carer\`
     "
 >
     Send link to review further information
@@ -1329,6 +1327,8 @@ const greenParkingPermit = new ContentP(
   "Green Parking Permit",
   "Learn about the eligibility, benefits, and application process for a free Green Parking Permit for ultra low-emission vehicles (ULEVs).",
   `
+
+
 	<p>
 	    A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the following criteria to park in the city centre for free. 
 	    Anyone with an eligible vehicle can apply for it.
@@ -1434,7 +1434,7 @@ const greenParkingPermit = new ContentP(
 	
 	<p>
 	  For further information, visit 
-	  <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+	  <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/green-parking-permits" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/green-parking-permits</a>.
 	</p>
 	
 	<button
@@ -1444,7 +1444,7 @@ const greenParkingPermit = new ContentP(
 	  onclick="
 	    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
 	      KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-	    }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+	    }interactionid=\${KDF.getParams().interactionid}&sel_service=Green%20Parking%20Permit\`
 	  "
 	>
 	  Send link to review further information
@@ -1493,8 +1493,6 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
   "Langsett And Hillsborough Bus And Tram Gate",
   "Learn about the eligibility and application process for a free permit to drive through the Langsett and Hillsborough bus and tram gate for residents of specific roads.",
   `
-<h3>Hillsborough Langsett Road bus and tram gate</h3>
-
 <p>
     The bus or tram gate on Langsett Road is just beyond Ripley Street and is usually limited to public transport and taxis.
 </p>
@@ -1606,7 +1604,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
 
 <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    <a href="https://www.sheffield.gov.uk/travel-transport/hillsborough-bus-tram-gates" target="_blank">https://www.sheffield.gov.uk/travel-transport/hillsborough-bus-tram-gates</a>.
 </p>
 
 <button
@@ -1616,7 +1614,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Langsett%20And%20Hillsborough%20Permit\`
     "
 >
     Send link to review further information
@@ -1716,7 +1714,7 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
     </p>
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/nhs-medical-practitioner-carer-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/nhs-medical-practitioner-carer-permit</a>.
   </p>
  </div>
 </details>
@@ -1728,7 +1726,7 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=NHS%20practitioner%20carer%20permit\`
     "
 >
     Send link to review further information
@@ -1778,8 +1776,6 @@ const organisationCarer = new ContentP(
   "Organisation Carer",
   "Learn about the eligibility, cost, and application process for organisation carer permits, allowing access to permit holder bays for healthcare and support professionals.",
   `
-	<h3>Organisation Carer</h3>
-
 <p>Mental health and healthcare organisations can apply for an All area medical/carer permit which can be used by their staff to park in Sheffield’s 
 parking zones. 
 The permit is a paper disc with a timer which will allow staff to park in any permit zone outside the city centre for a limited time.</p>
@@ -1854,7 +1850,7 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
 
   <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/organisation-carers-parking-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/organisation-carers-parking-permit</a>.
   </p>
 </div>
 
@@ -1865,7 +1861,7 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Organisation%20Carer%20Permit\`
     "
 >
     Send link to review further information
@@ -1915,10 +1911,6 @@ const residentsPermit = new ContentP(
   "Residents Permit",
   "Learn about the eligibility, cost, and application process for residents parking permits, including vehicle and address verification requirements.",
   `
-
-<h3>Residents Parking Permit</h3>
-
-
 <p>If you live in a parking zone you will need a permit to park your vehicle on the street in this zone.</p>
 
 <p>Permits do not entitle you to park at directly at your address, but they allow you to park in any designated on street parking space within the zone
@@ -2034,7 +2026,7 @@ Get in touch with us for any other problems regarding parking permit application
 
 
                         <p>
-                    For further information, visit <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+                    For further information, visit <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/resident-parking-permits" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/resident-parking-permits</a>.
                     
                 </p>
          <button
@@ -2044,7 +2036,7 @@ Get in touch with us for any other problems regarding parking permit application
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Residents%20parking%20permit\`
             "
       >
         Send link to review further information
@@ -2096,23 +2088,20 @@ const staffPermit = new ContentP(
 
   `<p>
   Staff who need to apply for a parking permit should contact Facilities Management 
-  for assistance. Full details on how to apply for a staff parking permit can be 
+  for assistance. Full details on how to apply for a staff parking permit can be (Internal Only)
   found on the <a href="https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit" 
   target="_blank">https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.
 </p>
-<p>
-  For further information, visit:
-  <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-</p>
 
-          <button
+
+        <button
         type="button"
         class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information and to apply send link to apply online"
+        aria-label="For further information and to apply send link to apply online (Internal Only)"
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Staff%20Permit\`
             "
       >
         Send link to review further information
@@ -2154,7 +2143,7 @@ const staffPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "16/07/2025", name: "Dinah WIlliams" }
+  { date: "16/07/2025", name: "Gee Whitehouse" }
 );
 
 const tradePermit = new ContentP(
@@ -2162,9 +2151,6 @@ const tradePermit = new ContentP(
   "Trade Permit",
   "Learn about the application process, costs, and required evidence for obtaining trade permits for parking while working in Sheffield permit zones.",
   `
-
-<h3>Trade permit </h3>
-
 <p>A trade parking permit allows you to park your vehicle in on street parking bays while you work in a parking permit zone. </p>
 <p>They do not entitle you to park at a specific address, but they allow you to park in any on street parking space signposted for permit users in any eligible zone. </p>
 
@@ -2261,7 +2247,7 @@ const tradePermit = new ContentP(
 
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/trade-parking-permits" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/trade-parking-permits</a>.
 
     </p>
              <button
@@ -2271,7 +2257,7 @@ const tradePermit = new ContentP(
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Trade%20Permit\`
             "
       >
         Send link to review further information
@@ -2321,7 +2307,6 @@ const utilityPermit = new ContentP(
   "Utility Permit",
   "Learn about the utility permit application process, including costs and how utility companies can apply for permits in Sheffield's city centre.",
   `
-
 <p>
   <li>Issued for city centre works taking place by utility companies. E.g. Yorkshire Water, BT, British Gas etc.</li>
   <li>25 half day cards per book</li>
@@ -2394,8 +2379,6 @@ const visitorsPermits = new ContentP(
   "Visitors Permits",
   "Learn about the application process, costs, and required evidence for obtaining visitor parking permits for guests and contractors.",
   `
-	<h3>Visitors Permit</h3>
-
 <p>If you live in a parking permit zone and would like visitors to be able to park nearby, 
 you can buy a book of single use parking permits. You can give this to your visitors.</p>
 
@@ -2497,7 +2480,7 @@ Contractors needing more time to work at a property will need to apply for trade
 
   <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/visitor-parking-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/visitor-parking-permit</a>.
   </p>
 </div>
 
@@ -2508,7 +2491,7 @@ Contractors needing more time to work at a property will need to apply for trade
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Visitors%20Permits\`
             "
       >
         Send link to review further information
