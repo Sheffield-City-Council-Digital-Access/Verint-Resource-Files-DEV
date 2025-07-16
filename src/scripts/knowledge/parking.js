@@ -1468,8 +1468,6 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
   "Langsett And Hillsborough Bus And Tram Gate",
   "Learn about the eligibility and application process for a free permit to drive through the Langsett and Hillsborough bus and tram gate for residents of specific roads.",
   `
-<h3>Hillsborough Langsett Road bus and tram gate</h3>
-
 <p>
     The bus or tram gate on Langsett Road is just beyond Ripley Street and is usually limited to public transport and taxis.
 </p>
@@ -1742,8 +1740,6 @@ const organisationCarer = new ContentP(
   "Organisation Carer",
   "Learn about the eligibility, cost, and application process for organisation carer permits, allowing access to permit holder bays for healthcare and support professionals.",
   `
-	<h3>Organisation Carer</h3>
-
 <p>Mental health and healthcare organisations can apply for an All area medical/carer permit which can be used by their staff to park in Sheffield’s 
 parking zones. 
 The permit is a paper disc with a timer which will allow staff to park in any permit zone outside the city centre for a limited time.</p>
@@ -1872,10 +1868,6 @@ const residentsPermit = new ContentP(
   "Residents Permit",
   "Learn about the eligibility, cost, and application process for residents parking permits, including vehicle and address verification requirements.",
   `
-
-<h3>Residents Parking Permit</h3>
-
-
 <p>If you live in a parking zone you will need a permit to park your vehicle on the street in this zone.</p>
 
 <p>Permits do not entitle you to park at directly at your address, but they allow you to park in any designated on street parking space within the zone
@@ -2105,9 +2097,6 @@ const tradePermit = new ContentP(
   "Trade Permit",
   "Learn about the application process, costs, and required evidence for obtaining trade permits for parking while working in Sheffield permit zones.",
   `
-
-<h3>Trade permit </h3>
-
 <p>A trade parking permit allows you to park your vehicle in on street parking bays while you work in a parking permit zone. </p>
 <p>They do not entitle you to park at a specific address, but they allow you to park in any on street parking space signposted for permit users in any eligible zone. </p>
 
@@ -2258,9 +2247,6 @@ const utilityPermit = new ContentP(
   "Utility Permit",
   "Learn about the utility permit application process, including costs and how utility companies can apply for permits in Sheffield's city centre.",
   `
-
-		<h3>Utility Permit</h3>
-
 <p>
   <li>Issued for city centre works taking place by utility companies. E.g. Yorkshire Water, BT, British Gas etc.</li>
   <li>25 half day cards per book</li>
@@ -2339,8 +2325,6 @@ const visitorsPermits = new ContentP(
   "Visitors Permits",
   "Learn about the application process, costs, and required evidence for obtaining visitor parking permits for guests and contractors.",
   `
-	<h3>Visitors Permit</h3>
-
 <p>If you live in a parking permit zone and would like visitors to be able to park nearby, 
 you can buy a book of single use parking permits. You can give this to your visitors.</p>
 
