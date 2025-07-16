@@ -69,15 +69,15 @@ const reportDamagedMissingKerb = new FormRaP(
 
 const reportTemporaryBarrierSign = new FormRaP(
   "reportTemporaryBarrierSign",
-  "Temporary barrier or sign",
-  "Report a problem with a temporary road barrier or sign",
+  "Temporary road barrier, sign, exposed hole, items left on site",
+  "Report a problem with a temporary road barrier, sign, exposed hole or items left on site",
   "temporary_barrier_sign",
   {
     type: "Report",
-    keywords: ["Temporary", "Barrier", "Sign", "Board", "Exposed", "Hole"],
+    keywords: ["Temporary", "Barrier", "Sign", "Board", "Exposed", "Hole", "Items", "Left", "Site"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "01/07/2025", name: "Andy Walker" }
+  { date: "16/07/2025", name: "Dinah Williams" }
 );
 
 const requestLitterPickCollection = new FormRaP(
