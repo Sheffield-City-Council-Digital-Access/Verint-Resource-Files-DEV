@@ -69,7 +69,7 @@ const reportDamagedMissingKerb = new FormRaP(
 
 const reportTemporaryBarrierSign = new FormRaP(
   "reportTemporaryBarrierSign",
-  "Temporary barrier or sign",
+  "Temporary road barrier, sign, exposed hole, items left on site",
   "Report a problem with a temporary road barrier, sign, exposed hole or items left on site",
   "temporary_barrier_sign",
   {
