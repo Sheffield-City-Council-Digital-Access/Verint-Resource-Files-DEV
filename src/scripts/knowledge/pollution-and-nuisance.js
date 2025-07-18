@@ -1744,16 +1744,105 @@ const miceTreatment = new ContentPaN(
       All prices include a call-out fee of £40.80 This fee applies if our officer
       attends the property but is unable to complete the treatment.
     </p>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Frequently Asked Questions</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <details class="details-accordion">
+          <summary>Should bookings be made 2 weeks apart?</summary>
+          <div class="details-accordion-content">
+            <p>
+              After the first appointment, book the second as close to after two weeks later as possible. If no ideal dates are available after two weeks, you may book before, but booking after two weeks is preferred.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>Do the Contact Centre complete SharePoint, or the fulfilment Team?</summary>
+          <div class="details-accordion-content">
+            <p>
+                   Contact Centre should update SharePoint, and complete the 1st appointment & 2nd appointment fields on the CRM form.<br>
+                   Fulfilment Team will transfer the same dates into the Confirm record attributes.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>What if the 1st booking was made prior to us changing the process?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team to book the follow up appointment at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>What if no appointments showing on SharePoint for the advisors to book?</summary>
+          <div class="details-accordion-content">
+            <p>
+              We will endeavour to allocate a set amount of appointments per day for these bookings but if none are available, please contact the Hub Team via <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>What do we do if a customer calls to rearrange an appointment?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>What if a customer can only set a date for the 1st appointment and has to call us back once they can check their availability for a 2nd appointment? </summary>
+          <div class="details-accordion-content">
+            <p>
+              The 2nd appointment field is not mandatory; the booking can be made and the customer advised to contact the Hub to make the follow up appointment.
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>Is there a set amount of time between calling us back to book that 2nd appointment so for example they booked the 1st treatment with us and said they would have to call us back to book the 2nd appointment and then we get a call 2 months later? </summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>, this process should only be used when booking the initial visit and making the first 2 appointment.
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>What do we do if a customer was told to call us to book a 3rd appointment?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>What if Environmental Services are unavailable when we call?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please email the query to <a href="mailto:environmentalservicessadmin@sheffield.gov.uk ">environmentalservicessadmin@sheffield.gov.uk</a> and they will call the customer back
+            </p>
+          </div>
+        </details>
+
+      </div>
+    </details>
   `,
   {
     buttonLabel: "Book treatment for Mice",
     formName: "pest_control_treatment",
   },
-  { typeKey: "" },
+  { typeKey: "pest_control_transferred_to_service" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
-    keywords: ["Mice", "Treatment", "Pests", "Vermin"],
+    keywords: ["Mice", "Treatment", "Pests", "Vermin", "mouse", "mouses", "mouce", "mouies"],
     categories: [
       "Pollution and Nuisance",
       "Environmental",
@@ -1761,7 +1850,7 @@ const miceTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "11/07/2025", name: "Joseph Coupland" }
 );
 
 const mitesTreatment = new ContentPaN(
@@ -2079,7 +2168,97 @@ const ratTreatment = new ContentPaN(
         </p>
       </div>
     </details>
-    <section class="info-panel" role="region" aria-label="Information panel">
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Frequently Asked Questions</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <details class="details-accordion">
+          <summary>Should bookings be made 2 weeks apart?</summary>
+          <div class="details-accordion-content">
+            <p>
+              After the first appointment, book the second as close to after two weeks later as possible. If no ideal dates are available after two weeks, you may book before, but booking after two weeks is preferred.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>Do the Contact Centre complete SharePoint, or the fulfilment Team?</summary>
+          <div class="details-accordion-content">
+            <p>
+                   Contact Centre should update SharePoint, and complete the 1st appointment & 2nd appointment fields on the CRM form.<br>
+                   Fulfilment Team will transfer the same dates into the Confirm record attributes.
+            </p>
+          </div>
+        </details>
+        <details class="details-accordion">
+          <summary>What if the 1st booking was made prior to us changing the process?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team to book the follow up appointment at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>What if no appointments showing on SharePoint for the advisors to book?</summary>
+          <div class="details-accordion-content">
+            <p>
+              We will endeavour to allocate a set amount of appointments per day for these bookings but if none are available, please contact the Hub Team via <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>What do we do if a customer calls to rearrange an appointment?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>What if a customer can only set a date for the 1st appointment and has to call us back once they can check their availability for a 2nd appointment? </summary>
+          <div class="details-accordion-content">
+            <p>
+              The 2nd appointment field is not mandatory; the booking can be made and the customer advised to contact the Hub to make the follow up appointment.
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>Is there a set amount of time between calling us back to book that 2nd appointment so for example they booked the 1st treatment with us and said they would have to call us back to book the 2nd appointment and then we get a call 2 months later? </summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>, this process should only be used when booking the initial visit and making the first 2 appointment.
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>What do we do if a customer was told to call us to book a 3rd appointment?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please transfer to Hub Team at <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930356')">0114 2930356</a> or <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930353')">0114 2930353</a>.
+            </p>
+          </div>
+        </details>
+
+        <details class="details-accordion">
+          <summary>What if Environmental Services are unavailable when we call?</summary>
+          <div class="details-accordion-content">
+            <p>
+              Please email the query to <a href="mailto:environmentalservicessadmin@sheffield.gov.uk ">environmentalservicessadmin@sheffield.gov.uk</a> and they will call the customer back
+            </p>
+          </div>
+        </details>
+
+      </div>
+    </details>
+
+  <section class="info-panel" role="region" aria-label="Information panel">
       <p>
         If your enquiry doesn't fall into any of the above categories, we will need to
         refer your 
@@ -2093,12 +2272,13 @@ const ratTreatment = new ContentPaN(
         for further investigation.
       </p>
     </section>
+
   `,
   {
     buttonLabel: "Book treatment for Rats",
     formName: "pest_control_treatment",
   },
-  { typeKey: "" },
+  { typeKey: "pest_control_transferred_to_service" },
   { typeKey: "pest_control_information_provided" },
   {
     type: "Book",
@@ -2110,7 +2290,7 @@ const ratTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "11/07/2025", name: "Joseph Coupland" }
 );
 
 const redSpiderMitesTreatment = new ContentPaN(
