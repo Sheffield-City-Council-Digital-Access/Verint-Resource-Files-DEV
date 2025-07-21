@@ -1223,7 +1223,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     pageName = this.id.slice(11);
   });
 
-  console.log("pageName = " + pagename);
+  //console.log("pageName = " + pagename);
   updateProgressBar(targetpageid);
 
   if (pageName === "page_about_you") {
