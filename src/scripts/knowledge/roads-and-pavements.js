@@ -748,6 +748,24 @@ const reportTree = new ContentRaP(
         in the spring and early summer unless for reasons of public safety.
       </p>
       <p>
+        We have looked into this for you and we can see that the tree(s) in question is(are) on private property. 
+        Because of this, the maintenance responsibility of the tree(s) falls to the property owner.
+        Sheffield City Council’s Streets Ahead/Highways services may be able to assist and/or enforce any maintenance on the tree,
+        if it is obstructing the footpath and/or road.
+      </p>
+      <p>
+        To address this issue, you will need to take it up with the property owner as a civil dispute. 
+        If you need to find out who owns this property, you can contact the Land Registry at <strong>0300 006 0008</strong>.
+        Please note that charges may apply.
+      </p>
+      <p>
+        If you believe the tree to be dangerous, our colleagues in Building Control may be able to assist. You can contact them via:
+      </p>
+       <ul>
+       <li>Email: <a href="mailto:buildingcontrol@sheffield.gov.uk">buildingcontrol@sheffield.gov.uk</a></li>
+       <li>Telephone: <strong>0114 2734168</strong></li>
+       </ul>
+      <p>
         If a hedge or tree is encroaching on to the highway from private property or
         land, you will need to transfer the call to the Highway Enforcement team.
         The Highway Enforcement team can serve hedge cutting/tree pruning notices to
@@ -757,7 +775,7 @@ const reportTree = new ContentRaP(
       </p>
       <p>
         Initially, the tree will be inspected and where it is considered hazardous
-        remedial works will be carried out to make the area safe.
+        remedial works will be carried out to make the area safe.   
       </p>
       <p>
         Tree removal is always the very last option undertaken after all other
@@ -792,7 +810,7 @@ const reportTree = new ContentRaP(
     keywords: ["Tree"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "29/01/2025", name: "Elliott Griffiths" }
+  { date: "21/07/2025", name: "Dinah Williams" }
 );
 
 const requestHighwayInfo = new FormRaP(
