@@ -1223,12 +1223,20 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     pageName = this.id.slice(11);
   });
 
+  console.log("pageName = " + pagename);
   updateProgressBar(targetpageid);
 
   if (pageName === "page_about_you") {
     if (kdf.access === "agent" && !kdf.form.data?.num_reporter_obj_id) {
       KDF.sendDesktopAction("raised_by");
     }
+    //below for leaving page.  targetpageid
+      console.log(KDF.getVal("eml_address"));
+      //Worth adding a catch here for empty or invalid etc.
+      const emailToLower = KDF.getVal("eml_address").toLowerCase;
+      console.log("emailToLower = " + emailToLower);
+      KDF.setVal("eml_address", emailToLower);
+      console.log("eml_address = " + eml_address);
   }
 
   if (
