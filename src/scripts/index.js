@@ -1,4 +1,4 @@
-console.log("Version 11:18:");
+console.log("Version 11:24:");
 
 function logArguments(event, kdf, ...args) {
   console.group(event.type ? event.type : "event");
@@ -1233,8 +1233,9 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     //below for leaving page.  targetpageid
       console.log(KDF.getVal("eml_address"));
       //Worth adding a catch here for empty or invalid etc.
-      const emailToLower = KDF.getVal("eml_address").toLowerCase;
+      const emailToLower = KDF.getVal("eml_address").toLowerCase();
       console.log("emailToLower = " + emailToLower);
+      //emailToLower = emailToLower.to
       KDF.setVal("eml_address", emailToLower);
       console.log("eml_address = " + KDF.getVal("eml_address"));
   }
@@ -1490,13 +1491,13 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
   // clear email field
   KDF.setVal("eml_address", "");
   // repopulate meial field
-  console.log("response" + response);
-  console.log("response" + response["profile-Email"]);
-  console.log("response" + response["profile-Email"].toLowerCase());
+  console.log("response " + response);
+  console.log("response " + response["profile-Email"]);
+  console.log("response " + response["profile-Email"].toLowerCase());
   KDF.setVal("eml_address", response["profile-Email"].toLowerCase());
-  console.log("response" + response);
-  console.log("response" + response["profile-Email"]);
-  console.log("response" + response["profile-Email"].toLowerCase());
+  console.log("response " + response);
+  console.log("response " + response["profile-Email"]);
+  console.log("response " + response["profile-Email"].toLowerCase());
 
   // setTimeout(() => 
   //   {
