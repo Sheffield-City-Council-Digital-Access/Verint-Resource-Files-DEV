@@ -608,7 +608,7 @@ function handleOnReadyEvent(_, kdf) {
   const formattedTitle = KDF.getVal("le_title").replace(/\s+/g, "-");
   $("#equality-btn").attr(
     "href",
-    `https://forms.sheffield.gov.uk/form/auto/equalities_monitoring?formTitle=${formattedTitle}&channel=web`
+    `https://forms.sheffield.gov.uk/site/form/auto/equalities_monitoring?formTitle=${formattedTitle}&channel=web`
   );
 
   storeDefaultValidationMessages();
