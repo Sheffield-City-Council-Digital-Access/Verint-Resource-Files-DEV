@@ -470,9 +470,9 @@ function handleInitialisingEvent() {
   (() => {
     $('input[type="email"]').attr(
       "pattern",
-     // "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
-    //testing if enabling A-Z helps if form itself does the to lower.
-     "(?:[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
+      // "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
+      //testing if enabling A-Z helps if form itself does the to lower.
+      "(?:[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
     );
   })();
 
@@ -612,7 +612,7 @@ function handleOnReadyEvent(_, kdf) {
   const formattedTitle = KDF.getVal("le_title").replace(/\s+/g, "-");
   $("#equality-btn").attr(
     "href",
-    `https://forms.sheffield.gov.uk/form/auto/equalities_monitoring?formTitle=${formattedTitle}&channel=web`
+    `https://forms.sheffield.gov.uk/site/form/auto/equalities_monitoring?formTitle=${formattedTitle}&channel=web`
   );
 
   storeDefaultValidationMessages();
@@ -1231,13 +1231,13 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
       KDF.sendDesktopAction("raised_by");
     }
     //below for leaving page.  targetpageid
-      console.log(KDF.getVal("eml_address"));
-      //Worth adding a catch here for empty or invalid etc.
-      const emailToLower = KDF.getVal("eml_address").toLowerCase();
-      console.log("emailToLower = " + emailToLower);
-      //emailToLower = emailToLower.to
-      KDF.setVal("eml_address", emailToLower);
-      console.log("eml_address = " + KDF.getVal("eml_address"));
+    console.log(KDF.getVal("eml_address"));
+    //Worth adding a catch here for empty or invalid etc.
+    const emailToLower = KDF.getVal("eml_address").toLowerCase();
+    console.log("emailToLower = " + emailToLower);
+    //emailToLower = emailToLower.to
+    KDF.setVal("eml_address", emailToLower);
+    console.log("eml_address = " + KDF.getVal("eml_address"));
   }
 
   if (
@@ -1499,7 +1499,7 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
   console.log("response " + response["profile-Email"]);
   console.log("response " + response["profile-Email"].toLowerCase());
 
-  // setTimeout(() => 
+  // setTimeout(() =>
   //   {
   //     // repopulate meial field
   //     KDF.setVal("eml_address", response["profile-Email"].toLowerCase());
