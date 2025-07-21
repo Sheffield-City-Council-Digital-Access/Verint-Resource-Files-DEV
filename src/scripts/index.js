@@ -1,4 +1,4 @@
-console.log("Version 11:00:");
+console.log("Version 11:18:");
 
 function logArguments(event, kdf, ...args) {
   console.group(event.type ? event.type : "event");
@@ -1236,7 +1236,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
       const emailToLower = KDF.getVal("eml_address").toLowerCase;
       console.log("emailToLower = " + emailToLower);
       KDF.setVal("eml_address", emailToLower);
-      console.log("eml_address = " + eml_address);
+      console.log("eml_address = " + KDF.getVal("eml_address"));
   }
 
   if (
