@@ -1,3 +1,5 @@
+console.log("Version 25.07:11.37");
+
 function logArguments(event, kdf, ...args) {
   console.group(event.type ? event.type : "event");
   console.log("event", event);
@@ -468,7 +470,9 @@ function handleInitialisingEvent() {
   (() => {
     $('input[type="email"]').attr(
       "pattern",
-      "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
+      // "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
+      //testing if enabling A-Z helps if form itself does the to lower.
+      "(?:[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
     );
   })();
 
@@ -1225,6 +1229,8 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     if (kdf.access === "agent" && !kdf.form.data?.num_reporter_obj_id) {
       KDF.sendDesktopAction("raised_by");
     }
+    const emailToLower = KDF.getVal("eml_address").toLowerCase();
+    KDF.setVal("eml_address", emailToLower);
   }
 
   if (
@@ -1474,11 +1480,8 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
 
   handleSetReporter(new Date(response["profile-DateOfBirth"]), fullAddress);
 
-  // clear email field
   KDF.setVal("eml_address", "");
-  // repopulate meial field
-  KDF.setVal("eml_address", response["profile-Email"]);
-
+  KDF.setVal("eml_address", response["profile-Email"].toLowerCase());
   // keep at the bottom
   checkPageProgress();
 }
@@ -1488,7 +1491,7 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
 function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   if (action === "check-for-existing-case-management-form") {
     if (response.data.existingForm === "true") {
-      KDF.showInfo("This case manamgement form already exists");
+      KDF.showInfo("This case management form already exists");
       const dformHolder = document.getElementById("dform_holder");
       if (dformHolder) {
         dformHolder.remove();
