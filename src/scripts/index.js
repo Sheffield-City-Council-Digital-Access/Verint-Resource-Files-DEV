@@ -1471,7 +1471,6 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
   KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
     customerid: id,
   });
-  console.log("Here called - handleObjectIdLoaded");
 
   property = formatTitleCase(response["profile-AddressNumber"]);
   streetName = formatTitleCase(response["profile-AddressLine1"]);
