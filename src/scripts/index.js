@@ -1,4 +1,4 @@
-console.log("Version 11:24:");
+console.log("Version 25.07:11.37");
 
 function logArguments(event, kdf, ...args) {
   console.group(event.type ? event.type : "event");
@@ -1229,12 +1229,8 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     if (kdf.access === "agent" && !kdf.form.data?.num_reporter_obj_id) {
       KDF.sendDesktopAction("raised_by");
     }
-    console.log(KDF.getVal("eml_address"));
-    //Worth adding a catch here for empty or invalid etc.
     const emailToLower = KDF.getVal("eml_address").toLowerCase();
-    console.log("emailToLower = " + emailToLower);
     KDF.setVal("eml_address", emailToLower);
-    console.log("eml_address = " + KDF.getVal("eml_address"));
   }
 
   if (
@@ -1485,24 +1481,8 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
 
   handleSetReporter(new Date(response["profile-DateOfBirth"]), fullAddress);
 
-  // clear email field
   KDF.setVal("eml_address", "");
-  // repopulate meial field
-  console.log("response " + response);
-  console.log("response " + response["profile-Email"]);
-  console.log("response " + response["profile-Email"].toLowerCase());
   KDF.setVal("eml_address", response["profile-Email"].toLowerCase());
-  console.log("response " + response);
-  console.log("response " + response["profile-Email"]);
-  console.log("response " + response["profile-Email"].toLowerCase());
-
-  // setTimeout(() =>
-  //   {
-  //     // repopulate meial field
-  //     KDF.setVal("eml_address", response["profile-Email"].toLowerCase());
-  //     console.log("test time out");
-  //   }, 10000);
-
   // keep at the bottom
   checkPageProgress();
 }
