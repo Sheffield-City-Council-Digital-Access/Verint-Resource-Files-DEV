@@ -2571,25 +2571,24 @@ const confirmationOfPayment = new ContentP(
   "Confirmation of payment",
   "Report payment discrepancies by submitting a written appeal and proof of payment, including the last 4 digits of the card if applicable.",
   `
-		<p>
-			Payments can take up to 3-4 days to show on our system regardless of the
-			payment method.
-      <br>
-      <br>
-			If the customer has received further correspondence from Parking Services
-			asking for a payment but:
-      <br>
-      <br>
-		<ul>
-			<li>They believe payment has already been made</li>
-			<li>Gateway is not showing case is fully paid (closed)</li>
-		</ul>
-      <br>
-      <br>
-			The customer should make a written appeal online or in writing (ideally online
-			as it will be processed quicker) and send proof of payment. If a card payment
-			was made, the last 4 digits of the card should be provided.
-		</p>
+  <p>
+    Payments can take up to 3–4 days to show on our system regardless of the
+    payment method.
+  </p>
+  <p>
+    If the customer has received further correspondence from Parking Services
+    asking for a payment but:
+  </p>
+  <ul>
+    <li>They believe payment has already been made</li>
+    <li>Gateway is not showing case is fully paid (closed)</li>
+  </ul>
+  <p>
+    The customer should make a written appeal online or in writing (ideally online
+    as it will be processed quicker) and send proof of payment. If a card payment
+    was made, the last 4 digits of the card should be provided.
+  </p>
+
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
@@ -2685,25 +2684,23 @@ const customerUnableToPay = new ContentP(
   "Customer Unable To Pay",
   "Find guidance on how to resolve issues with payments not appearing on the system, including how to submit proof of payment.",
   `
-		<p>
-			Payments can take up to 3-4 days to show on our system regardless of the
-			payment method.
-      <br>
-      <br>
-			If the customer has received further correspondence from Parking Services
-			asking for a payment but:
-      <br>
-      <br>
-		<ul>
-			<li>They believe payment has already been made</li>
-			<li>Gateway is not showing case is fully paid (closed)</li>
-		</ul>
-    <br>
-    <br>
-			The customer should make a written appeal online or in writing (ideally online
-			as it will be processed quicker) and send proof of payment. If a card payment
-			was made, the last 4 digits of the card should be provided.
-		</p>
+    <p>
+      Payments can take up to 3-4 days to show on our system regardless of the
+      payment method.
+    </p>
+    <p>
+      If the customer has received further correspondence from Parking Services
+      asking for a payment but:
+    </p>
+    <ul>
+      <li>They believe payment has already been made</li>
+      <li>Gateway is not showing case is fully paid (closed)</li>
+    </ul>
+    <p>
+      The customer should make a written appeal online or in writing (ideally online
+      as it will be processed quicker) and send proof of payment. If a card payment
+      was made, the last 4 digits of the card should be provided.
+    </p>
     <h3>Customer needs more time to pay the PCN</h3>
     <p>Advise the customer to make an appeal as normal.</p>
 
