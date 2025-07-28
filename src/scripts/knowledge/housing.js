@@ -1584,6 +1584,16 @@ const programmedWorks = new ContentH(
   "Programmed Works",
   "Information regarding programmed works",
   `
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Carwood Breifing</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <a href="https://sccextranet.sharepoint.com/:w:/r/sites/CustomerServices/Shared%20Documents/CRM/Housing/Planned%20Works/Carwood%20briefing%20note%2024th%20June%202025/Carwood%20briefing%20note%2024th%20June%202025.docx?d=we34bcb652e924945a8535cbe09ae634d&csf=1&web=1&e=hbF4BP"target="_blank">Carwood briefing note - 24th June 2025</a>
+  </div>
+</details>
+
   <details class="accordion">
   <summary class="accordion-header">
     <h3>Electrical Upgrade</h3>
