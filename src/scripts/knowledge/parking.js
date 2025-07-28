@@ -2571,25 +2571,24 @@ const confirmationOfPayment = new ContentP(
   "Confirmation of payment",
   "Report payment discrepancies by submitting a written appeal and proof of payment, including the last 4 digits of the card if applicable.",
   `
-		<p>
-			Payments can take up to 3-4 days to show on our system regardless of the
-			payment method.
-      <br>
-      <br>
-			If the customer has received further correspondence from Parking Services
-			asking for a payment but:
-      <br>
-      <br>
-		<ul>
-			<li>They believe payment has already been made</li>
-			<li>Gateway is not showing case is fully paid (closed)</li>
-		</ul>
-      <br>
-      <br>
-			The customer should make a written appeal online or in writing (ideally online
-			as it will be processed quicker) and send proof of payment. If a card payment
-			was made, the last 4 digits of the card should be provided.
-		</p>
+  <p>
+    Payments can take up to 3–4 days to show on our system regardless of the
+    payment method.
+  </p>
+  <p>
+    If the customer has received further correspondence from Parking Services
+    asking for a payment but:
+  </p>
+  <ul>
+    <li>They believe payment has already been made</li>
+    <li>Gateway is not showing case is fully paid (closed)</li>
+  </ul>
+  <p>
+    The customer should make a written appeal online or in writing (ideally online
+    as it will be processed quicker) and send proof of payment. If a card payment
+    was made, the last 4 digits of the card should be provided.
+  </p>
+
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
@@ -2685,25 +2684,23 @@ const customerUnableToPay = new ContentP(
   "Customer Unable To Pay",
   "Find guidance on how to resolve issues with payments not appearing on the system, including how to submit proof of payment.",
   `
-		<p>
-			Payments can take up to 3-4 days to show on our system regardless of the
-			payment method.
-      <br>
-      <br>
-			If the customer has received further correspondence from Parking Services
-			asking for a payment but:
-      <br>
-      <br>
-		<ul>
-			<li>They believe payment has already been made</li>
-			<li>Gateway is not showing case is fully paid (closed)</li>
-		</ul>
-    <br>
-    <br>
-			The customer should make a written appeal online or in writing (ideally online
-			as it will be processed quicker) and send proof of payment. If a card payment
-			was made, the last 4 digits of the card should be provided.
-		</p>
+    <p>
+      Payments can take up to 3-4 days to show on our system regardless of the
+      payment method.
+    </p>
+    <p>
+      If the customer has received further correspondence from Parking Services
+      asking for a payment but:
+    </p>
+    <ul>
+      <li>They believe payment has already been made</li>
+      <li>Gateway is not showing case is fully paid (closed)</li>
+    </ul>
+    <p>
+      The customer should make a written appeal online or in writing (ideally online
+      as it will be processed quicker) and send proof of payment. If a card payment
+      was made, the last 4 digits of the card should be provided.
+    </p>
     <h3>Customer needs more time to pay the PCN</h3>
     <p>Advise the customer to make an appeal as normal.</p>
 
@@ -2713,11 +2710,11 @@ const customerUnableToPay = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>
-          You can warm transfer to:
-          <strong>Advisor Note: (Internal number Storm line):</strong>
-          <a href="tel: 87061">87061</a> dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
-        </p>
+      <p>
+        You can warm transfer to:
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87061">87061</a> dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong. If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
       </div>
     </details>
 
@@ -2727,10 +2724,11 @@ const customerUnableToPay = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>If you are still unable to resolve the PCN, you can warm transfer to:
-         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87061">87061</a>
-        </p>
+      <p>
+        If you are still unable to resolve the PCN, you can warm transfer to:
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
       </div>
     </details>
 
@@ -2740,10 +2738,11 @@ const customerUnableToPay = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>If you are still unable to resolve the PCN, you can warm transfer to:
+      <p>
+        If you are still unable to resolve the PCN, you can warm transfer to:
         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87062">87062</a>
-        </p>
+        <a href="tel: 87062">87062</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
       </div>
     </details>
 
@@ -2783,8 +2782,8 @@ const customerUnableToPay = new ContentP(
       </div>
     </details>
 	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "" },
+  { buttonLabel: "PCN Enquiry", formName: "pcn_enquiry" },
+  { typeKey: "penalty_charge_notice_transferred_to_service" },
   { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
@@ -2813,7 +2812,7 @@ const customerUnableToPay = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/05/2025", name: "Andy Walker" }
+  { date: "28/07/2025", name: "Andy Walker" }
 );
 
 const enforcementBaliffEnquiries = new ContentP(
@@ -2846,10 +2845,10 @@ const enforcementBaliffEnquiries = new ContentP(
     </p>
     <h3>Enforcement Agents are at a Customer’s Property</h3>
     <p>
-    If a customer calls and states enforcement agents are at their property to recover funds, then you can contact us via warm transfer on: 
-    <strong>Advisor Note: (Internal number):</strong>
-    <a href="tel: 87061">87061</a> (Storm line), dependent on PCN type.<br><br> 
-    If you can, try to get as much information from the customer such as the PCN reference and any background information.
+      If a customer calls and states enforcement agents are at their property to recover funds, then you can contact us via warm transfer on: 
+      <strong>Advisor Note: (Internal number):</strong>
+      <a href="tel: 87061">87061</a> (Storm line), dependent on PCN type.<br><br> 
+      If you can, try to get as much information from the customer such as the PCN reference and any background information. If there is no answer, raise an enquiry using the form PCN enquiry below.
     </p>
     <p>
     If they have grounds to file a Late Witness Statement, then we can request enforcement is placed on hold temporarily to allow them time to do so.
@@ -2892,8 +2891,8 @@ const enforcementBaliffEnquiries = new ContentP(
     </details>
 
 	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "" },
+  { buttonLabel: "PCN Enquiry", formName: "pcn_enquiry" },
+  { typeKey: "penalty_charge_notice_transferred_to_service" },
   { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
@@ -2926,7 +2925,7 @@ const enforcementBaliffEnquiries = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/05/2025", name: "Andy Walker" }
+  { date: "28/07/2025", name: "Andy Walker" }
 );
 
 const howCanIAppeal = new ContentP(
@@ -3025,12 +3024,12 @@ const howCanIAppeal = new ContentP(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <p>
-      The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
-      If the VRM is clearly incorrect, then you can warm transfer to:<br><br>
-      <strong>Advisor Note: (Internal number Storm line):</strong>
-      <a href="tel: 87061">87061</a> dependent on PCN type, so we can investigate it further.
-    </p>
+  <p>
+    The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
+    If the VRM is clearly incorrect, then you can warm transfer to:<br><br>
+    <strong>Advisor Note: (Internal number Storm line):</strong>
+    <a href="tel: 87061">87061</a> dependent on PCN type, so we can investigate it further. If there is no answer, raise an enquiry using the form PCN enquiry below.
+  </p>
   </div>
 </details>
 
@@ -3072,11 +3071,13 @@ const howCanIAppeal = new ContentP(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <p>If you are still unable to resolve the PCN, you can warm transfer to:
-    <strong>Advisor Note: (Internal number Storm line):</strong> 
-    <a href="tel: 87061">87061</a> 
+    <p>
+      If you are still unable to resolve the PCN, you can warm transfer to:
+      <strong>Advisor Note: (Internal number Storm line):</strong> 
+      <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
+    </p>
   </div>
-  </details>
+</details>
 
 <details class="accordion">
   <summary class="accordion-header">
@@ -3084,16 +3085,18 @@ const howCanIAppeal = new ContentP(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <p>If you are still unable to resolve the PCN, you can warm transfer to:
-     <strong>Advisor Note: (Internal number Storm line):</strong>
-    <a href="tel: 87062">87062</a> (Internal Number).</p>
+<p>
+  If you are still unable to resolve the PCN, you can warm transfer to:
+  <strong>Advisor Note: (Internal number Storm line):</strong>
+  <a href="tel: 87062">87062</a> (Internal Number). If there is no answer, raise an enquiry using the form PCN enquiry below.
+</p>
   </div>
 </details>
 
 
 	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "" },
+  { buttonLabel: "PCN Enquiry", formName: "pcn_enquiry" },
+  { typeKey: "penalty_charge_notice_transferred_to_service" },
   { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
@@ -3122,7 +3125,7 @@ const howCanIAppeal = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "08/05/2025", name: "Andy Walker" }
+  { date: "28/07/2025", name: "Andy Walker" }
 );
 
 const howLongDoIHaveToAppeal = new ContentP(
@@ -3745,17 +3748,19 @@ const unableToResolvePcn = new ContentP(
   "Unable To Resolve a PCN",
   "Find out what happens when you are unable to resolve the PCN.",
   `
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Customer has a parking or bus lane PCN</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <p>If you are still unable to resolve the PCN, you can warm transfer to:
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Customer has a parking or bus lane PCN</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you are still unable to resolve the PCN, you can warm transfer to:
         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87061">87061</a> (Internal Number).</p>
-      </div>
-    </details>
+        <a href="tel: 87061">87061</a> (Internal Number). If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
+    </div>
+  </details>
 
     <details class="accordion">
       <summary class="accordion-header">
@@ -3763,9 +3768,11 @@ const unableToResolvePcn = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>If you are still unable to resolve the PCN, you can warm transfer to:
-         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87062">87062</a> (Internal Number).</p>
+      <p>
+        If you are still unable to resolve the PCN, you can warm transfer to:
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87062">87062</a> (Internal Number). If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
       </div>
     </details>
 
@@ -3777,9 +3784,9 @@ const unableToResolvePcn = new ContentP(
       <div class="accordion-content">
         <p>
           You can warm transfer to:
-           <strong>Advisor Note: (Internal number Storm line):</strong>
+          <strong>Advisor Note: (Internal number Storm line):</strong>
           <a href="tel: 87061">87061</a><br><br>
-          dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
+          dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong. If there is no answer, raise an enquiry using the form PCN enquiry below.
         </p>
       </div>
     </details>
@@ -3790,12 +3797,12 @@ const unableToResolvePcn = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>
-          If a customer calls and states enforcement agents are at their property to recover funds, then you can contact us via warm transfer on: 
-           <strong>Advisor Note: (Internal number Storm line):</strong>
-          <a href="tel: 87061">87061</a> dependent on PCN type.<br><br>
-          If you can, try to get as much information from the customer such as the PCN reference and any background information.
-        </p>
+      <p>
+        If a customer calls and states enforcement agents are at their property to recover funds, then you can contact us via warm transfer on: 
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87061">87061</a> dependent on PCN type.<br><br>
+        If you can, try to get as much information from the customer such as the PCN reference and any background information. If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
         <p>
           If they have grounds to file a Late Witness Statement, then we can request enforcement is placed on hold temporarily to allow them time to do so.
         </p>
@@ -3808,18 +3815,18 @@ const unableToResolvePcn = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>
-          The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
-          If the VRM is clearly incorrect, then you can warm transfer to:
-          <strong>Advisor Note: (Internal number Storm line):</strong>
-          <a href="tel: 87061"> 87061</a>depending on PCN type so we can investigate it further.
-        </p>
+      <p>
+        The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
+        If the VRM is clearly incorrect, then you can warm transfer to:
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87061">87061</a> depending on PCN type so we can investigate it further. If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
       </div>
     </details>
   `,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "" },
-  { typeKey: "parking_permit_information_provided" },
+  { buttonLabel: "PCN Enquiry", formName: "pcn_enquiry" },
+  { typeKey: "penalty_charge_notice_transferred_to_service" },
+  { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3847,7 +3854,7 @@ const unableToResolvePcn = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "09/05/2025", name: "Andy Walker" }
+  { date: "28/07/2025", name: "Andy Walker" }
 );
 
 const penaltyChargeNoticePcn = new MenuP(
