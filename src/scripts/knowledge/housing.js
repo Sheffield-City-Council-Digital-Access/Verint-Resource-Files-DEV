@@ -1675,6 +1675,26 @@ const programmedWorks = new ContentH(
   </div>
 </details>
 
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>External Wall Insulation 2 (United Living)</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <a href="https://sccextranet.sharepoint.com/:f:/r/sites/CustomerServices/Shared%20Documents/CRM/Housing/Planned%20Works/External%20Wall%20Insulation%202%20Programme%20(EWI%202)?csf=1&web=1&e=5GvPUz"target="_blank">External Wall Insulation 2 (United Living)</a>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>External Wall Insulation Phase 2 (Equans)</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <a href="https://sccextranet.sharepoint.com/:f:/r/sites/CustomerServices/Shared%20Documents/CRM/Housing/Planned%20Works/External%20Wall%20Insulation%20Phase%202%20Programme?csf=1&web=1&e=FtBQcE"target="_blank">External Wall Insulation Phase 2 (Equans)</a>
+  </div>
+</details>
+
 <p>
     Programme Support / Re-Roofing: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2052706')">0114 2052706</a><br>
     </p>
