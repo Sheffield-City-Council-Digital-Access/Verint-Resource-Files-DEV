@@ -2741,10 +2741,11 @@ const customerUnableToPay = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>If you are still unable to resolve the PCN, you can warm transfer to:
+      <p>
+        If you are still unable to resolve the PCN, you can warm transfer to:
         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87062">87062</a>
-        </p>
+        <a href="tel: 87062">87062</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
       </div>
     </details>
 
@@ -3087,9 +3088,11 @@ const howCanIAppeal = new ContentP(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <p>If you are still unable to resolve the PCN, you can warm transfer to:
-     <strong>Advisor Note: (Internal number Storm line):</strong>
-    <a href="tel: 87062">87062</a> (Internal Number).</p>
+<p>
+  If you are still unable to resolve the PCN, you can warm transfer to:
+  <strong>Advisor Note: (Internal number Storm line):</strong>
+  <a href="tel: 87062">87062</a> (Internal Number). If there is no answer, raise an enquiry using the form PCN enquiry below.
+</p>
   </div>
 </details>
 
@@ -3768,9 +3771,11 @@ const unableToResolvePcn = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>If you are still unable to resolve the PCN, you can warm transfer to:
-         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87062">87062</a> (Internal Number).</p>
+      <p>
+        If you are still unable to resolve the PCN, you can warm transfer to:
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87062">87062</a> (Internal Number). If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
       </div>
     </details>
 
