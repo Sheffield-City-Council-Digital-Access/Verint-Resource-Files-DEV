@@ -1586,7 +1586,7 @@ const programmedWorks = new ContentH(
   `
 <details class="accordion">
   <summary class="accordion-header">
-    <h3>Carwood Breifing</h3>
+    <h3>Carwood Briefing</h3>
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
