@@ -10678,15 +10678,13 @@ const temporaryAccommodation = new ContentH(
   {
     type: "",
     keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
+      "temp",
+      "temporary",
+      "accommodation",
     ],
     categories: ["Housing", "Sheltered and Supported"],
   },
-  { date: "15/10/2024", name: "Joe Nixon" }
+  { date: "29/07/2025", name: "Nathan Smith" }
 );
 
 const shelteredAndSupported = new MenuH(
