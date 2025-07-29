@@ -2372,7 +2372,7 @@ const utilityPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "16/07/2025", name: "Gee Whitehouse" }
+  { date: "29/07/2025", name: "Dinah Williams" }
 );
 
 const visitorsPermits = new ContentP(
