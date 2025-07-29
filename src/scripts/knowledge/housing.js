@@ -3558,9 +3558,9 @@ const bidding = new ContentH(
         </div>
       </details>
     `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
-  { typeKey: "repairs_and_investment_information_provided" },
+  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
   {
     type: "Apply",
     keywords: [
