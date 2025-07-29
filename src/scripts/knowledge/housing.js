@@ -10661,6 +10661,34 @@ const shelteredWardens = new ContentH(
   { date: "12/05/2025", name: "Joseph Coupland" }
 );
 
+const temporaryAccommodation = new ContentH(
+  "temporaryAccommodation",
+  "Temporary Accommodation",
+  "",
+  `
+    <p>
+      Contact the temporary accommodation team on: 
+      <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2053171')">0114 2053171</a> or 
+      <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930832')">0114 2930832</a>
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "sheltered_and_supported_transferred_to_service" },
+  { typeKey: "sheltered_and_supported_information_provided" },
+  {
+    type: "",
+    keywords: [
+      "repairs and investmant",
+      "repears and investment",
+      "repairs and invesment",
+      "repair and investement",
+      "repairs and invesmant",
+    ],
+    categories: ["Housing", "Sheltered and Supported"],
+  },
+  { date: "15/10/2024", name: "Joe Nixon" }
+);
+
 const shelteredAndSupported = new MenuH(
   "shelteredAndSupported",
   "Sheltered and Supported",
@@ -10671,6 +10699,7 @@ const shelteredAndSupported = new MenuH(
     gypsyAndTravellers,
     olderPersonsIndependentLiving,
     shelteredWardens,
+    temporaryAccommodation
   ]
 );
 
