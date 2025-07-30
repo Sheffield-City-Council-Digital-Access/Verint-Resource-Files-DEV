@@ -10664,7 +10664,7 @@ const shelteredWardens = new ContentH(
 const temporaryAccommodation = new ContentH(
   "temporaryAccommodation",
   "Temporary Accommodation",
-  "",
+  "The number/s for the temporary accommodation team is available on this page",
   `
     <p>
       Contact the temporary accommodation team on: 
