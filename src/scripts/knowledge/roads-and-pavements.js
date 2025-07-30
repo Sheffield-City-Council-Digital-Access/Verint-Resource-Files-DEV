@@ -813,6 +813,19 @@ const reportTree = new ContentRaP(
   { date: "21/07/2025", name: "Dinah Williams" }
 );
 
+const reportWaterDrainage = new FormRaP(
+  "reportWaterDrainage",
+  "Water Drainage",
+  "Report problems with water in cellar or other drainage issues",
+  "report_water_drainage", 
+  {
+    type: "Report",
+    keywords: ["Water", "Cellar", "Flood, Drainage"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "30/07/2025", name: "Dinah Williams" }
+);
+
 const requestHighwayInfo = new FormRaP(
   "requestHighwayInfo",
   "Highway information",
@@ -862,5 +875,6 @@ const roadsAndPavements = new ServiceRaP(
     requestClaimsPack,
     requestGritting,
     requestHighwayInfo,
+    reportWaterDrainage
   ]
 );
