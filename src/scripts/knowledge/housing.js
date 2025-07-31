@@ -1705,7 +1705,7 @@ const programmedWorks = new ContentH(
     Asbestos: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736315')">0114 2736315</a><br>
 </p>
   <p>
-    Adaptations: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736275')">0114 2736275</a><br>
+    Adaptations: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734908')">0114 2734908</a><br>
 </p>
   <p>
     Acquisitions: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734617')">0114 2734617</a><br>
@@ -1732,7 +1732,7 @@ const programmedWorks = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "17/06/2025", name: "Shahzad Athar" }
+  { date: "31/07/2025", name: "Andy Walker" }
 );
 
 const propertyAge = new ContentH(
@@ -5977,7 +5977,7 @@ const adaptation = new ContentH(
   }&txt_emailservice=CommunitiesEquip%26Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   <p>
-		Adaptations: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736275')">0114 2736275</a><br>
+		Adaptations: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734908')">0114 2734908</a><br>
 </p>
 
 
@@ -6001,7 +6001,7 @@ const adaptation = new ContentH(
     ],
     categories: ["Repairs"],
   },
-  { date: "17/06/2025", name: "Shahzad Athar" }
+  { date: "31/07/2025", name: "Andy Walker" }
 );
 
 const blacksmith = new ContentH(
