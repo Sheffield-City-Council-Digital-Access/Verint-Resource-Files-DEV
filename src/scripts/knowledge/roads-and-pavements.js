@@ -702,6 +702,58 @@ const reportLitterBin = new ContentRaP(
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
+const ReportwaterAndDrainage = new ContentRaP(
+  "ReportWaterAndDrainage",
+  "Water and Drainage",
+  "Information on who to contact for different water and drainage issues",
+  `
+  <section>
+    <h3>Water and Drainage Responsibilities</h3>
+    
+    <p><strong>Commercial Properties</strong><br />
+    If the issue is occurring within a commercial property, it is the responsibility of the property owner or tenant to resolve it.<br />
+    We advise you to contact a qualified plumber or appropriate contractor to investigate and carry out any necessary repairs.
+    </p>
+
+    <p><strong>Council Housing</strong><br />
+    If the issue is taking place within a Council Housing property, we will need to refer you to the Council Housing Repairs Service.<br />
+    Council Housing Repairs Service<br />
+    Telephone: <a href="tel:01142 735555">0114 2735555</a>
+    </p>
+
+    <p><strong>Housing Association Properties</strong><br />
+    If the issue is within a property rented from a housing association, the landlord or housing provider is responsible for resolving the problem.<br />
+    We advise you to contact your landlord or housing association directly for further assistance.
+    </p>
+
+    <p><strong>Privately Owned Properties</strong><br />
+    If the issue involves any of the following:<br />
+    • Burst pipe<br />
+    • Blocked drain or sewer<br />
+    • Sewage affecting multiple properties<br />
+    • Water in cellar<br />
+    You may need to contact Yorkshire Water for investigation and support.<br />
+    Telephone: <a href="tel:0345 1242424">0345 1242424</a>
+    </p>
+
+    <p>For other issues related to water or drainage, use the form below to submit your enquiry.</p>
+  </section>
+  `,
+  {
+    buttonLabel: "Report water drainage",
+    formName: "report_water_drainage",
+  },
+  { typeKey: "" },
+  { typeKey: "water_drainage_information_provided" },
+  {
+    type: "Report",
+    keywords: ["Water", "Drainage", "Sewage", "Pipe", "Flood", "Cellar"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "04/08/2025", name: "Andy Walker" }
+);
+
+
 const reportRoadStructure = new FormRaP(
   "reportRoadStructure",
   "Road structure",
@@ -869,6 +921,7 @@ const roadsAndPavements = new ServiceRaP(
     reportFallenLeaves,
     reportHedgePlantGrass,
     reportLitterBin,
+    ReportwaterAndDrainage,
     reportRoadStructure,
     reportStreetSignBollard,
     reportTree,
