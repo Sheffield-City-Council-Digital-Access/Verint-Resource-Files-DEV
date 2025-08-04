@@ -708,8 +708,6 @@ const ReportwaterAndDrainage = new ContentRaP(
   "Information on who to contact for different water and drainage issues",
   `
   <section>
-    <h3>Water and Drainage Responsibilities</h3>
-    
     <p><strong>Commercial Properties</strong><br />
     If the issue is occurring within a commercial property, it is the responsibility of the property owner or tenant to resolve it.<br />
     We advise you to contact a qualified plumber or appropriate contractor to investigate and carry out any necessary repairs.
