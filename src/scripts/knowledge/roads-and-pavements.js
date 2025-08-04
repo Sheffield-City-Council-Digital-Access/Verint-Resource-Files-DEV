@@ -736,7 +736,7 @@ const ReportwaterAndDrainage = new ContentRaP(
     Telephone: <a href="tel:0345 1242424">0345 1242424</a>
     </p>
 
-    <p>For other issues related to water or drainage, use the form below to submit your enquiry.</p>
+    <p>For other issues related to water or drainage, use the form below to submit the enquiry.</p>
   </section>
   `,
   {
