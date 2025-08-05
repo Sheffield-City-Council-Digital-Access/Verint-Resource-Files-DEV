@@ -3153,13 +3153,17 @@ const reportWaterAndDrainage = new ContentPaN(
     We advise you to contact your landlord or housing association directly for further assistance.
   </p>
    <h4><strong>Privately Owned Properties</strong></h4>
-   <p>
+  <p>
     If the issue involves any of the following:
-    • Burst pipe
-    • Blocked drain or sewer
-    • Sewage affecting multiple properties
-    • Water in cellar
-    You may need to contact Yorkshire Water for investigation and support.
+  </p>
+  <ul>
+    <li>Burst pipe</li>
+    <li>Blocked drain or sewer</li>
+    <li>Sewage affecting multiple properties</li>
+    <li>Water in cellar</li>
+  </ul>
+  <p>
+    You may need to contact Yorkshire Water for investigation and support.<br />
     Telephone: <a href="tel:0345 1242424">0345 1242424</a>
   </p>
   <p>
