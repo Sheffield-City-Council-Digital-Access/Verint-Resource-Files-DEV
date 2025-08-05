@@ -3152,7 +3152,7 @@ const reportWaterAndDrainage = new ContentPaN(
   </p>
    <h4>Privately Owned Properties</h4>
   <p>
-    If the issue involves any of the following contact Yorkshire Water for investigation and support:
+    If the issue involves any of the following:
   </p>
   <ul>
     <li>Burst pipe</li>
@@ -3161,7 +3161,7 @@ const reportWaterAndDrainage = new ContentPaN(
     <li>Water in cellar</li>
   </ul>
   <p>
-    <a href="#" class="telephoneNumber" onclick="copyToClipboard('0345 1242424')">0345 1242424</a>
+   Contact Yorkshire Water for investigation and support: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0345 1242424')">0345 1242424</a>
   </p>
   <p>
     For other issues related to water or drainage, use the form below to submit the enquiry.
