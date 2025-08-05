@@ -3133,28 +3133,26 @@ const abandonedVehicles = new ContentPaN(
 
 const reportWaterAndDrainage = new ContentPaN(
   "ReportWaterAndDrainage",
-  "Water and Drainage",
-  "Information on who to contact for different water and drainage issues",
+  "Report water and drainage issue",
+  "Who to contact for water and drainage issues, depending on the type of property",
   `
-  <h4><strong>Commercial Properties</strong></h4>
+  <h4>Commercial Properties</h4>
    <p>
-    If the issue is occurring within a commercial property, it is the responsibility of the property owner or tenant to resolve it.
+    It is the responsibility of the property owner or tenant to resolve it.
     We advise you to contact a qualified plumber or appropriate contractor to investigate and carry out any necessary repairs.
   </p>
-   <h4><strong>Council Housing</strong></h4>
+   <h4>Council Housing</h4>
   <p>
-    If the issue is taking place within a Council Housing property, we will need to refer you to the Council Housing Repairs Service.
-    Council Housing Repairs Service
-    Telephone: <a href="tel:01142 735555">0114 2735555</a>
+    If the issue is taking place within a Council Housing property, <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2735555')">0114 2735555</a>
   </p>
-   <h4><strong>Housing Association Properties</strong></h4>
+   <h4>Housing Association Properties</h4>
    <p>
     If the issue is within a property rented from a housing association, the landlord or housing provider is responsible for resolving the problem.
     We advise you to contact your landlord or housing association directly for further assistance.
   </p>
-   <h4><strong>Privately Owned Properties</strong></h4>
+   <h4>Privately Owned Properties</h4>
   <p>
-    If the issue involves any of the following:
+    If the issue involves any of the following contact Yorkshire Water for investigation and support:
   </p>
   <ul>
     <li>Burst pipe</li>
@@ -3163,22 +3161,21 @@ const reportWaterAndDrainage = new ContentPaN(
     <li>Water in cellar</li>
   </ul>
   <p>
-    You may need to contact Yorkshire Water for investigation and support.<br />
-    Telephone: <a href="tel:0345 1242424">0345 1242424</a>
+    <a href="#" class="telephoneNumber" onclick="copyToClipboard('0345 1242424')">0345 1242424</a>
   </p>
   <p>
     For other issues related to water or drainage, use the form below to submit the enquiry.
   </p>
   `,
   {
-    buttonLabel: "Report water drainage",
+    buttonLabel: "Report water and drainage issue",
     formName: "report_water_drainage",
   },
   { typeKey: "" },
   { typeKey: "water_and_drainage_information_provided" },
   {
     type: "Report",
-    keywords: ["Water", "Drainage", "Sewage", "Pipe", "Flood", "Cellar"],
+    keywords: ["Water", "Watr", "Drainage", "Drain", "Drian", "Sewage", "Sewer", "Sewege", "Pipe", "Pipes", "Pip", "Flood", "Flooded", "Fllood", "Cellar", "Basement", "Basment"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "04/08/2025", name: "Andy Walker" }
