@@ -3143,7 +3143,7 @@ const reportWaterAndDrainage = new ContentPaN(
   </p>
    <h4>Council Housing</h4>
   <p>
-    If the issue is taking place within a Council Housing property, <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2735555')">0114 2735555</a>
+    If the issue is taking place within a Council Housing property, call: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2735555')">0114 2735555</a>
   </p>
    <h4>Housing Association Properties</h4>
    <p>
