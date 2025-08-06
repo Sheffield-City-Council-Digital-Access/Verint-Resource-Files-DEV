@@ -1535,37 +1535,37 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
       if (
         KDF.kdf().access === "agent" ||
-        KDF.kdf.form.name === "damaged_missing_kerb" ||
-        KDF.kdf.form.name === "litter_pick_collection" ||
-        KDF.kdf.form.name === "manhole_stopcock_cover" ||
-        KDF.kdf.form.name === "report_dead_animal" ||
-        KDF.kdf.form.name === "report_dog_fouling" ||
-        KDF.kdf.form.name === "report_drain_gulley" ||
-        KDF.kdf.form.name === "report_fallen_leaves" ||
-        KDF.kdf.form.name === "report_fence_barrier" ||
-        KDF.kdf.form.name === "report_flooded_area" ||
-        KDF.kdf.form.name === "report_fly_posting" ||
-        KDF.kdf.form.name === "report_fly_tipping" ||
-        KDF.kdf.form.name === "report_graffiti" ||
-        KDF.kdf.form.name === "report_grit_bin" ||
-        KDF.kdf.form.name === "report_hedge_plant_grass" ||
-        KDF.kdf.form.name === "report_highway_damage" ||
-        KDF.kdf.form.name === "report_highway_spillage" ||
-        KDF.kdf.form.name === "report_invasive_weeds" ||
-        KDF.kdf.form.name === "report_litter" ||
-        KDF.kdf.form.name === "report_litter_bin" ||
-        KDF.kdf.form.name === "report_mud_gravel" ||
-        KDF.kdf.form.name === "report_needles_glass" ||
-        KDF.kdf.form.name === "report_pothole_crack" ||
-        KDF.kdf.form.name === "report_road_marking" ||
-        KDF.kdf.form.name === "report_street_furniture" ||
-        KDF.kdf.form.name === "report_street_light" ||
-        KDF.kdf.form.name === "report_traffic_signal" ||
-        KDF.kdf.form.name === "report_tree" ||
-        KDF.kdf.form.name === "report_wall_bridge" ||
-        KDF.kdf.form.name === "road_pavement_surface" ||
-        KDF.kdf.form.name === "road_street_sign_bollard" ||
-        KDF.kdf.form.name === "temporary_barrier_sign"
+        KDF.kdf().form.name === "damaged_missing_kerb" ||
+        KDF.kdf().form.name === "litter_pick_collection" ||
+        KDF.kdf().form.name === "manhole_stopcock_cover" ||
+        KDF.kdf().form.name === "report_dead_animal" ||
+        KDF.kdf().form.name === "report_dog_fouling" ||
+        KDF.kdf().form.name === "report_drain_gulley" ||
+        KDF.kdf().form.name === "report_fallen_leaves" ||
+        KDF.kdf().form.name === "report_fence_barrier" ||
+        KDF.kdf().form.name === "report_flooded_area" ||
+        KDF.kdf().form.name === "report_fly_posting" ||
+        KDF.kdf().form.name === "report_fly_tipping" ||
+        KDF.kdf().form.name === "report_graffiti" ||
+        KDF.kdf().form.name === "report_grit_bin" ||
+        KDF.kdf().form.name === "report_hedge_plant_grass" ||
+        KDF.kdf().form.name === "report_highway_damage" ||
+        KDF.kdf().form.name === "report_highway_spillage" ||
+        KDF.kdf().form.name === "report_invasive_weeds" ||
+        KDF.kdf().form.name === "report_litter" ||
+        KDF.kdf().form.name === "report_litter_bin" ||
+        KDF.kdf().form.name === "report_mud_gravel" ||
+        KDF.kdf().form.name === "report_needles_glass" ||
+        KDF.kdf().form.name === "report_pothole_crack" ||
+        KDF.kdf().form.name === "report_road_marking" ||
+        KDF.kdf().form.name === "report_street_furniture" ||
+        KDF.kdf().form.name === "report_street_light" ||
+        KDF.kdf().form.name === "report_traffic_signal" ||
+        KDF.kdf().form.name === "report_tree" ||
+        KDF.kdf().form.name === "report_wall_bridge" ||
+        KDF.kdf().form.name === "road_pavement_surface" ||
+        KDF.kdf().form.name === "road_street_sign_bollard" ||
+        KDF.kdf().form.name === "temporary_barrier_sign"
       ) {
         $(
           "#map_container > div.esri-view-root > div.esri-ui.calcite-theme-light > div.esri-ui-inner-container.esri-ui-corner-container > div.esri-ui-top-right.esri-ui-corner > div"
