@@ -204,9 +204,8 @@ const customerPaidTwice = new ContentP(
 const appealBlueBadge = new ContentP(
   "apealBlueBadge",
   "Appeal a Blue Badge Decision",
-  "",
-  `   
-   <h3>Appeal a Blue Badge Decision</h3>
+  "Information on how to appeal a decision, what steps the customer can take and how the case shoud be updated",
+  `
     <ul>
       <li>The customer can request a review of the decision.</li>
       <li>Add a note on the case outlining any information given by the customer.</li>
@@ -265,6 +264,18 @@ const applyBlueBadge = new ContentP(
         <li>Has a life-limiting illness and may have been issued with an SR1 form.</li>
       </ul>
 
+      <h3>Terminally Ill</h3>
+      <p>
+        A terminally ill applicant will have a DS1500 – A form giving medical facts relating to cancer or an SR1 form used for claiming benefits under the rules for people with terminal cancer.  There is a charge of £10.00 for all badges and the badge is issued for a year, should they apply the following 2 years there would be no further charge.
+      </p>
+      <p>
+        These applications will be fast tracked and would not be held up awaiting payment or other evidence.  When applying online these applications via gov.uk are processed the same working day.
+      </p>
+
+      <p>
+      An applicant would need to send their documentation and details to the following email address:<a href="mailto:bluebadge@sheffield.gov.uk">bluebadge@sheffield.gov.uk</a>
+      </p>
+      
       <h3>Eligible Subject to Further Assessment</h3>
       <p>(Previously known as 'discretionary')</p>
       <p>
@@ -336,7 +347,9 @@ const applyBlueBadge = new ContentP(
     KDF.getParams().customerid
       ? `customerid=${KDF.getParams().customerid}&`
       : ""
-  }interactionid=${KDF.getParams().interactionid}&sel_list_blue_badge_enquiry_about=Request%20a%20paper%20application">Request Paper application</a>
+  }interactionid=${
+    KDF.getParams().interactionid
+  }&sel_list_blue_badge_enquiry_about=Request%20a%20paper%20application">Request Paper application</a>
 
     </div>
   </details>
@@ -368,7 +381,7 @@ const applyBlueBadge = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "04/06/2025", name: "Dinah Williams" }
+  { date: "10/07/2025", name: "Dinah Williams" }
 );
 
 const blueBadgeHolderPassedAway = new ContentP(
@@ -392,7 +405,10 @@ const blueBadgeHolderPassedAway = new ContentP(
       S1 2SH
     </address>
   `,
-  { buttonLabel: "Report the death of a Blue Badge holder", formName: "blue_badge_enquiry" },
+  {
+    buttonLabel: "Report the death of a Blue Badge holder",
+    formName: "blue_badge_enquiry",
+  },
   { typeKey: "" },
   { typeKey: "blue_badge_information_provided" },
   {
@@ -476,7 +492,10 @@ const replacementBlueBadge = new ContentP(
      
     `,
 
-  { buttonLabel: "Request a paper application for a Blue Badge Replacement", formName: "blue_badge_enquiry" },
+  {
+    buttonLabel: "Request a paper application for a Blue Badge Replacement",
+    formName: "blue_badge_enquiry",
+  },
   { typeKey: "" },
   { typeKey: "blue_badge_information_provided" },
   {
@@ -1063,7 +1082,7 @@ const businessPermit = new ContentP(
 </details>
 
 <p>
-	For further information, visit <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+	For further information, visit <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/business-parking-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/business-parking-permit</a>.
 </p>
 
      <button
@@ -1073,11 +1092,17 @@ const businessPermit = new ContentP(
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Business%20Permit\`
             "
       >
         Send link to review further information
       </button>
+
+    <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 
 
 	`,
@@ -1110,7 +1135,7 @@ const businessPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "05/03/2025", name: "Gee Whitehouse" }
+  { date: "16/07/2025", name: "Gee Whitehouse" }
 );
 
 const residentsCarer = new ContentP(
@@ -1237,9 +1262,7 @@ const residentsCarer = new ContentP(
 
 <p>
     For further information, visit  
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">
-        https://www.sheffield.gov.uk/parking
-    </a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/residential-carers-parking-permit" target="_blank"> https://www.sheffield.gov.uk/parking/apply-parking-permit/residential-carers-parking-permit</a>
 </p>
 
 <button
@@ -1249,12 +1272,17 @@ const residentsCarer = new ContentP(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Residents%20Carer\`
     "
 >
     Send link to review further information
 </button>
 
+    <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
      
   `,
   {
@@ -1286,7 +1314,7 @@ const residentsCarer = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/03/2025", name: "Gee Whitehouse" }
+  { date: "16/07/2025", name: "Gee Whitehouse" }
 );
 
 //
@@ -1298,6 +1326,8 @@ const greenParkingPermit = new ContentP(
   "Green Parking Permit",
   "Learn about the eligibility, benefits, and application process for a free Green Parking Permit for ultra low-emission vehicles (ULEVs).",
   `
+
+
 	<p>
 	    A green parking permit allows Ultra Low Emission Vehicles (ULEVs) that meet the following criteria to park in the city centre for free. 
 	    Anyone with an eligible vehicle can apply for it.
@@ -1403,7 +1433,7 @@ const greenParkingPermit = new ContentP(
 	
 	<p>
 	  For further information, visit 
-	  <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+	  <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/green-parking-permits" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/green-parking-permits</a>.
 	</p>
 	
 	<button
@@ -1413,11 +1443,17 @@ const greenParkingPermit = new ContentP(
 	  onclick="
 	    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
 	      KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-	    }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+	    }interactionid=\${KDF.getParams().interactionid}&sel_service=Green%20Parking%20Permit\`
 	  "
 	>
 	  Send link to review further information
 	</button>
+
+    <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 `,
   {
     buttonLabel: "Parking Permit Enquiry",
@@ -1446,9 +1482,9 @@ const greenParkingPermit = new ContentP(
       "pemit",
       "premit"
     ],
-     categories: ["Parking"],
+    categories: ["Parking"],
   },
-  { date: "11/03/2025", name: "Gee Whitehouse" }
+  { date: "16/07/2025", name: "Gee Whitehouse" }
 );
 
 const langsettAndHillsboroughBusAndTramgate = new ContentP(
@@ -1456,8 +1492,6 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
   "Langsett And Hillsborough Bus And Tram Gate",
   "Learn about the eligibility and application process for a free permit to drive through the Langsett and Hillsborough bus and tram gate for residents of specific roads.",
   `
-<h3>Hillsborough Langsett Road bus and tram gate</h3>
-
 <p>
     The bus or tram gate on Langsett Road is just beyond Ripley Street and is usually limited to public transport and taxis.
 </p>
@@ -1494,7 +1528,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
    <div class="accordion-icon"></div>
  </summary>
  <div class="accordion-content">
-                <p>
+              <p>
                 We can't provide permits for visitors to properties, delivery vehicles,
                 or short-term hire or lease cars (unless registered at an address on one of the eligible roads).
             </p>
@@ -1569,7 +1603,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
 
 <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    <a href="https://www.sheffield.gov.uk/travel-transport/hillsborough-bus-tram-gates" target="_blank">https://www.sheffield.gov.uk/travel-transport/hillsborough-bus-tram-gates</a>.
 </p>
 
 <button
@@ -1579,12 +1613,17 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Langsett%20And%20Hillsborough%20Permit\`
     "
 >
     Send link to review further information
 </button>
 
+    <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 
 	`,
   {
@@ -1616,7 +1655,7 @@ const langsettAndHillsboroughBusAndTramgate = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/03/2025", name: "Gee Whitehouse" }
+  { date: "16/07/2025", name: "Gee Whitehouse" }
 );
 
 //
@@ -1674,7 +1713,7 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
     </p>
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/nhs-medical-practitioner-carer-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/nhs-medical-practitioner-carer-permit</a>.
   </p>
  </div>
 </details>
@@ -1686,11 +1725,17 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=NHS%20practitioner%20carer%20permit\`
     "
 >
     Send link to review further information
 </button>
+
+      <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 
 	`,
   {
@@ -1722,7 +1767,7 @@ const nhsPractitionerOrCarerParkingPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/03/2025", name: "Gee Whitehouse" }
+  { date: "16/07/2025", name: "Gee Whitehouse" }
 );
 
 const organisationCarer = new ContentP(
@@ -1730,8 +1775,6 @@ const organisationCarer = new ContentP(
   "Organisation Carer",
   "Learn about the eligibility, cost, and application process for organisation carer permits, allowing access to permit holder bays for healthcare and support professionals.",
   `
-	<h3>Organisation Carer</h3>
-
 <p>Mental health and healthcare organisations can apply for an All area medical/carer permit which can be used by their staff to park in Sheffield’s 
 parking zones. 
 The permit is a paper disc with a timer which will allow staff to park in any permit zone outside the city centre for a limited time.</p>
@@ -1806,7 +1849,7 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
 
   <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/organisation-carers-parking-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/organisation-carers-parking-permit</a>.
   </p>
 </div>
 
@@ -1817,11 +1860,18 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Organisation%20Carer%20Permit\`
     "
 >
     Send link to review further information
 </button>	
+
+     <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
+
 	`,
   {
     buttonLabel: "Parking Permit Enquiry",
@@ -1852,7 +1902,7 @@ The permit is a paper disc with a timer which will allow staff to park in any pe
     ],
     categories: ["Parking"],
   },
-  { date: "06/03/2025", name: "Gee Whitehouse" }
+  { date: "16/07/2025", name: "Gee Whitehouse" }
 );
 
 const residentsPermit = new ContentP(
@@ -1860,10 +1910,6 @@ const residentsPermit = new ContentP(
   "Residents Permit",
   "Learn about the eligibility, cost, and application process for residents parking permits, including vehicle and address verification requirements.",
   `
-
-<h3>Residents Parking Permit</h3>
-
-
 <p>If you live in a parking zone you will need a permit to park your vehicle on the street in this zone.</p>
 
 <p>Permits do not entitle you to park at directly at your address, but they allow you to park in any designated on street parking space within the zone
@@ -1979,7 +2025,7 @@ Get in touch with us for any other problems regarding parking permit application
 
 
                         <p>
-                    For further information, visit <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+                    For further information, visit <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/resident-parking-permits" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/resident-parking-permits</a>.
                     
                 </p>
          <button
@@ -1989,13 +2035,17 @@ Get in touch with us for any other problems regarding parking permit application
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Residents%20parking%20permit\`
             "
       >
         Send link to review further information
       </button>
 
-
+    <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 
 	`,
   {
@@ -2027,7 +2077,7 @@ Get in touch with us for any other problems regarding parking permit application
     ],
     categories: ["Parking"],
   },
-  { date: "05/03/2025", name: "Gee Whitehouse" }
+  { date: "16/07/2025", name: "Gee Whitehouse" }
 );
 
 const staffPermit = new ContentP(
@@ -2037,27 +2087,31 @@ const staffPermit = new ContentP(
 
   `<p>
   Staff who need to apply for a parking permit should contact Facilities Management 
-  for assistance. Full details on how to apply for a staff parking permit can be 
+  for assistance. Full details on how to apply for a staff parking permit can be (Internal Only)
   found on the <a href="https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit" 
   target="_blank">https://intranet.sheffield.gov.uk/services/facilities-management/applying-staff-parking-permit</a>.
 </p>
-<p>
-  For further information, visit:
-  <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-</p>
 
-          <button
+
+        <button
         type="button"
         class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information and to apply send link to apply online"
+        aria-label="For further information and to apply send link to apply online (Internal Only)"
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Staff%20Permit\`
             "
       >
         Send link to review further information
       </button>
+
+    <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
+
   `,
   {
     buttonLabel: "Parking Permit Enquiry",
@@ -2088,7 +2142,7 @@ const staffPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "12/02/2025", name: "Dinah WIlliams" }
+  { date: "16/07/2025", name: "Gee Whitehouse" }
 );
 
 const tradePermit = new ContentP(
@@ -2096,9 +2150,6 @@ const tradePermit = new ContentP(
   "Trade Permit",
   "Learn about the application process, costs, and required evidence for obtaining trade permits for parking while working in Sheffield permit zones.",
   `
-
-<h3>Trade permit </h3>
-
 <p>A trade parking permit allows you to park your vehicle in on street parking bays while you work in a parking permit zone. </p>
 <p>They do not entitle you to park at a specific address, but they allow you to park in any on street parking space signposted for permit users in any eligible zone. </p>
 
@@ -2195,7 +2246,7 @@ const tradePermit = new ContentP(
 
     <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/trade-parking-permits" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/trade-parking-permits</a>.
 
     </p>
              <button
@@ -2205,11 +2256,17 @@ const tradePermit = new ContentP(
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Trade%20Permit\`
             "
       >
         Send link to review further information
       </button>
+
+    <h4>Taranto</h4>
+
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 
 	`,
   {
@@ -2241,7 +2298,7 @@ const tradePermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/03/2025", name: "Gee Whitehouse" }
+  { date: "16/07/2025", name: "Gee Whitehouse" }
 );
 
 const utilityPermit = new ContentP(
@@ -2249,9 +2306,6 @@ const utilityPermit = new ContentP(
   "Utility Permit",
   "Learn about the utility permit application process, including costs and how utility companies can apply for permits in Sheffield's city centre.",
   `
-
-		<h3>Utility Permit</h3>
-
 <p>
   <li>Issued for city centre works taking place by utility companies. E.g. Yorkshire Water, BT, British Gas etc.</li>
   <li>25 half day cards per book</li>
@@ -2270,29 +2324,25 @@ const utilityPermit = new ContentP(
 
 <p class="cost">£193.75 for a book of 25 half day passes.</p>
 
-<p>
-  Ask customer to email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> to ask if they can order a 
-  utility permit or we can send them a link to apply.
-</p>
+  <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information and to apply send link to apply online"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+      "
+    >
+    Send link to review further information
+  </button>
   
+  <h4>Taranto</h4>
+  <p>
+    <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+  </p>
 
-      <p>
-      For further information, visit 
-      <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
-
-      </p>
-
-                   <button
-        type="button"
-        class="dform_widget email-btn dform_widget_type_button"
-        aria-label="For further information and to apply send link to apply online"
-        onclick="
-              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
-            "
-      >
-	`,
+ 	`,
   {
     buttonLabel: "Parking Permit Enquiry",
     formName: "parking_permit_enquiry",
@@ -2322,7 +2372,7 @@ const utilityPermit = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "06/03/2025", name: "Gee Whitehouse" }
+  { date: "29/07/2025", name: "Dinah Williams" }
 );
 
 const visitorsPermits = new ContentP(
@@ -2330,8 +2380,6 @@ const visitorsPermits = new ContentP(
   "Visitors Permits",
   "Learn about the application process, costs, and required evidence for obtaining visitor parking permits for guests and contractors.",
   `
-	<h3>Visitors Permit</h3>
-
 <p>If you live in a parking permit zone and would like visitors to be able to park nearby, 
 you can buy a book of single use parking permits. You can give this to your visitors.</p>
 
@@ -2370,7 +2418,6 @@ Contractors needing more time to work at a property will need to apply for trade
         <p>You can buy up to 150 visitor permits per year (we may consider discretionary applications for more permits).</p>
  </div>
 </details>
-
 
 <details class="accordion">
  <summary class="accordion-header">
@@ -2434,7 +2481,7 @@ Contractors needing more time to work at a property will need to apply for trade
 
   <p>
     For further information, visit 
-    <a href="https://www.sheffield.gov.uk/parking" target="_blank">https://www.sheffield.gov.uk/parking</a>.
+    <a href="https://www.sheffield.gov.uk/parking/apply-parking-permit/visitor-parking-permit" target="_blank">https://www.sheffield.gov.uk/parking/apply-parking-permit/visitor-parking-permit</a>.
   </p>
 </div>
 
@@ -2445,12 +2492,11 @@ Contractors needing more time to work at a property will need to apply for trade
         onclick="
               window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
                 KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-              }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Visitors%20Permits\`
             "
       >
         Send link to review further information
       </button>
-
 <p>
 
 <h3>If the customer is unable to apply online click the link to order on their behalf.</h3>
@@ -2458,6 +2504,11 @@ Contractors needing more time to work at a property will need to apply for trade
     Launch Visitor Permit Form
   </a>
 </p>
+       <h4>Taranto</h4>
+    
+    <p>
+      <a href="https://sheffield.taran.to/CombinedLogin.aspx" target="_blank">https://sheffield.taran.to/CombinedLogin.aspx</a>
+    </p>
 
 	`,
   {
@@ -2489,7 +2540,7 @@ Contractors needing more time to work at a property will need to apply for trade
     ],
     categories: ["Parking"],
   },
-  { date: "07/05/2025", name: "Gee Whitehouse" }
+  { date: "16/07/2025", name: "Gee Whitehouse" }
 );
 
 const parkingPermits = new MenuP(
@@ -2522,25 +2573,24 @@ const confirmationOfPayment = new ContentP(
   "Confirmation of payment",
   "Report payment discrepancies by submitting a written appeal and proof of payment, including the last 4 digits of the card if applicable.",
   `
-		<p>
-			Payments can take up to 3-4 days to show on our system regardless of the
-			payment method.
-      <br>
-      <br>
-			If the customer has received further correspondence from Parking Services
-			asking for a payment but:
-      <br>
-      <br>
-		<ul>
-			<li>They believe payment has already been made</li>
-			<li>Gateway is not showing case is fully paid (closed)</li>
-		</ul>
-      <br>
-      <br>
-			The customer should make a written appeal online or in writing (ideally online
-			as it will be processed quicker) and send proof of payment. If a card payment
-			was made, the last 4 digits of the card should be provided.
-		</p>
+  <p>
+    Payments can take up to 3–4 days to show on our system regardless of the
+    payment method.
+  </p>
+  <p>
+    If the customer has received further correspondence from Parking Services
+    asking for a payment but:
+  </p>
+  <ul>
+    <li>They believe payment has already been made</li>
+    <li>Gateway is not showing case is fully paid (closed)</li>
+  </ul>
+  <p>
+    The customer should make a written appeal online or in writing (ideally online
+    as it will be processed quicker) and send proof of payment. If a card payment
+    was made, the last 4 digits of the card should be provided.
+  </p>
+
 	`,
   { buttonLabel: "Parking Permit", formName: "" },
   { typeKey: "" },
@@ -2636,25 +2686,23 @@ const customerUnableToPay = new ContentP(
   "Customer Unable To Pay",
   "Find guidance on how to resolve issues with payments not appearing on the system, including how to submit proof of payment.",
   `
-		<p>
-			Payments can take up to 3-4 days to show on our system regardless of the
-			payment method.
-      <br>
-      <br>
-			If the customer has received further correspondence from Parking Services
-			asking for a payment but:
-      <br>
-      <br>
-		<ul>
-			<li>They believe payment has already been made</li>
-			<li>Gateway is not showing case is fully paid (closed)</li>
-		</ul>
-    <br>
-    <br>
-			The customer should make a written appeal online or in writing (ideally online
-			as it will be processed quicker) and send proof of payment. If a card payment
-			was made, the last 4 digits of the card should be provided.
-		</p>
+    <p>
+      Payments can take up to 3-4 days to show on our system regardless of the
+      payment method.
+    </p>
+    <p>
+      If the customer has received further correspondence from Parking Services
+      asking for a payment but:
+    </p>
+    <ul>
+      <li>They believe payment has already been made</li>
+      <li>Gateway is not showing case is fully paid (closed)</li>
+    </ul>
+    <p>
+      The customer should make a written appeal online or in writing (ideally online
+      as it will be processed quicker) and send proof of payment. If a card payment
+      was made, the last 4 digits of the card should be provided.
+    </p>
     <h3>Customer needs more time to pay the PCN</h3>
     <p>Advise the customer to make an appeal as normal.</p>
 
@@ -2664,11 +2712,11 @@ const customerUnableToPay = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>
-          You can warm transfer to:
-          <strong>Advisor Note: (Internal number Storm line):</strong>
-          <a href="tel: 87061">87061</a> dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
-        </p>
+      <p>
+        You can warm transfer to:
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87061">87061</a> dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong. If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
       </div>
     </details>
 
@@ -2678,10 +2726,11 @@ const customerUnableToPay = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>If you are still unable to resolve the PCN, you can warm transfer to:
-         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87061">87061</a>
-        </p>
+      <p>
+        If you are still unable to resolve the PCN, you can warm transfer to:
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
       </div>
     </details>
 
@@ -2691,10 +2740,11 @@ const customerUnableToPay = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>If you are still unable to resolve the PCN, you can warm transfer to:
+      <p>
+        If you are still unable to resolve the PCN, you can warm transfer to:
         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87062">87062</a>
-        </p>
+        <a href="tel: 87062">87062</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
       </div>
     </details>
 
@@ -2734,8 +2784,8 @@ const customerUnableToPay = new ContentP(
       </div>
     </details>
 	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "" },
+  { buttonLabel: "PCN Enquiry", formName: "pcn_enquiry" },
+  { typeKey: "penalty_charge_notice_transferred_to_service" },
   { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
@@ -2764,7 +2814,7 @@ const customerUnableToPay = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/05/2025", name: "Andy Walker" }
+  { date: "28/07/2025", name: "Andy Walker" }
 );
 
 const enforcementBaliffEnquiries = new ContentP(
@@ -2797,10 +2847,10 @@ const enforcementBaliffEnquiries = new ContentP(
     </p>
     <h3>Enforcement Agents are at a Customer’s Property</h3>
     <p>
-    If a customer calls and states enforcement agents are at their property to recover funds, then you can contact us via warm transfer on: 
-    <strong>Advisor Note: (Internal number):</strong>
-    <a href="tel: 87061">87061</a> (Storm line), dependent on PCN type.<br><br> 
-    If you can, try to get as much information from the customer such as the PCN reference and any background information.
+      If a customer calls and states enforcement agents are at their property to recover funds, then you can contact us via warm transfer on: 
+      <strong>Advisor Note: (Internal number):</strong>
+      <a href="tel: 87061">87061</a> (Storm line), dependent on PCN type.<br><br> 
+      If you can, try to get as much information from the customer such as the PCN reference and any background information. If there is no answer, raise an enquiry using the form PCN enquiry below.
     </p>
     <p>
     If they have grounds to file a Late Witness Statement, then we can request enforcement is placed on hold temporarily to allow them time to do so.
@@ -2843,8 +2893,8 @@ const enforcementBaliffEnquiries = new ContentP(
     </details>
 
 	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "" },
+  { buttonLabel: "PCN Enquiry", formName: "pcn_enquiry" },
+  { typeKey: "penalty_charge_notice_transferred_to_service" },
   { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
@@ -2877,7 +2927,7 @@ const enforcementBaliffEnquiries = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "14/05/2025", name: "Andy Walker" }
+  { date: "28/07/2025", name: "Andy Walker" }
 );
 
 const howCanIAppeal = new ContentP(
@@ -2976,12 +3026,12 @@ const howCanIAppeal = new ContentP(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <p>
-      The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
-      If the VRM is clearly incorrect, then you can warm transfer to:<br><br>
-      <strong>Advisor Note: (Internal number Storm line):</strong>
-      <a href="tel: 87061">87061</a> dependent on PCN type, so we can investigate it further.
-    </p>
+  <p>
+    The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
+    If the VRM is clearly incorrect, then you can warm transfer to:<br><br>
+    <strong>Advisor Note: (Internal number Storm line):</strong>
+    <a href="tel: 87061">87061</a> dependent on PCN type, so we can investigate it further. If there is no answer, raise an enquiry using the form PCN enquiry below.
+  </p>
   </div>
 </details>
 
@@ -3023,11 +3073,13 @@ const howCanIAppeal = new ContentP(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <p>If you are still unable to resolve the PCN, you can warm transfer to:
-    <strong>Advisor Note: (Internal number Storm line):</strong> 
-    <a href="tel: 87061">87061</a> 
+    <p>
+      If you are still unable to resolve the PCN, you can warm transfer to:
+      <strong>Advisor Note: (Internal number Storm line):</strong> 
+      <a href="tel: 87061">87061</a>. If there is no answer, raise an enquiry using the form PCN enquiry below.
+    </p>
   </div>
-  </details>
+</details>
 
 <details class="accordion">
   <summary class="accordion-header">
@@ -3035,16 +3087,18 @@ const howCanIAppeal = new ContentP(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <p>If you are still unable to resolve the PCN, you can warm transfer to:
-     <strong>Advisor Note: (Internal number Storm line):</strong>
-    <a href="tel: 87062">87062</a> (Internal Number).</p>
+<p>
+  If you are still unable to resolve the PCN, you can warm transfer to:
+  <strong>Advisor Note: (Internal number Storm line):</strong>
+  <a href="tel: 87062">87062</a> (Internal Number). If there is no answer, raise an enquiry using the form PCN enquiry below.
+</p>
   </div>
 </details>
 
 
 	`,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "" },
+  { buttonLabel: "PCN Enquiry", formName: "pcn_enquiry" },
+  { typeKey: "penalty_charge_notice_transferred_to_service" },
   { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
@@ -3073,7 +3127,7 @@ const howCanIAppeal = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "08/05/2025", name: "Andy Walker" }
+  { date: "28/07/2025", name: "Andy Walker" }
 );
 
 const howLongDoIHaveToAppeal = new ContentP(
@@ -3696,17 +3750,19 @@ const unableToResolvePcn = new ContentP(
   "Unable To Resolve a PCN",
   "Find out what happens when you are unable to resolve the PCN.",
   `
-    <details class="accordion">
-      <summary class="accordion-header">
-        <h3>Customer has a parking or bus lane PCN</h3>
-        <div class="accordion-icon"></div>
-      </summary>
-      <div class="accordion-content">
-        <p>If you are still unable to resolve the PCN, you can warm transfer to:
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Customer has a parking or bus lane PCN</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you are still unable to resolve the PCN, you can warm transfer to:
         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87061">87061</a> (Internal Number).</p>
-      </div>
-    </details>
+        <a href="tel: 87061">87061</a> (Internal Number). If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
+    </div>
+  </details>
 
     <details class="accordion">
       <summary class="accordion-header">
@@ -3714,9 +3770,11 @@ const unableToResolvePcn = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>If you are still unable to resolve the PCN, you can warm transfer to:
-         <strong>Advisor Note: (Internal number Storm line):</strong>
-        <a href="tel: 87062">87062</a> (Internal Number).</p>
+      <p>
+        If you are still unable to resolve the PCN, you can warm transfer to:
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87062">87062</a> (Internal Number). If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
       </div>
     </details>
 
@@ -3728,9 +3786,9 @@ const unableToResolvePcn = new ContentP(
       <div class="accordion-content">
         <p>
           You can warm transfer to:
-           <strong>Advisor Note: (Internal number Storm line):</strong>
+          <strong>Advisor Note: (Internal number Storm line):</strong>
           <a href="tel: 87061">87061</a><br><br>
-          dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong.
+          dependent on PCN type, to let us check the correct amount is showing and amend it on the call if it is wrong. If there is no answer, raise an enquiry using the form PCN enquiry below.
         </p>
       </div>
     </details>
@@ -3741,12 +3799,12 @@ const unableToResolvePcn = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>
-          If a customer calls and states enforcement agents are at their property to recover funds, then you can contact us via warm transfer on: 
-           <strong>Advisor Note: (Internal number Storm line):</strong>
-          <a href="tel: 87061">87061</a> dependent on PCN type.<br><br>
-          If you can, try to get as much information from the customer such as the PCN reference and any background information.
-        </p>
+      <p>
+        If a customer calls and states enforcement agents are at their property to recover funds, then you can contact us via warm transfer on: 
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87061">87061</a> dependent on PCN type.<br><br>
+        If you can, try to get as much information from the customer such as the PCN reference and any background information. If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
         <p>
           If they have grounds to file a Late Witness Statement, then we can request enforcement is placed on hold temporarily to allow them time to do so.
         </p>
@@ -3759,18 +3817,18 @@ const unableToResolvePcn = new ContentP(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>
-          The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
-          If the VRM is clearly incorrect, then you can warm transfer to:
-          <strong>Advisor Note: (Internal number Storm line):</strong>
-          <a href="tel: 87061"> 87061</a>depending on PCN type so we can investigate it further.
-        </p>
+      <p>
+        The customer can challenge the PCN as normal, and we will confirm to them in writing that the PCN has been cancelled.<br><br>
+        If the VRM is clearly incorrect, then you can warm transfer to:
+        <strong>Advisor Note: (Internal number Storm line):</strong>
+        <a href="tel: 87061">87061</a> depending on PCN type so we can investigate it further. If there is no answer, raise an enquiry using the form PCN enquiry below.
+      </p>
       </div>
     </details>
   `,
-  { buttonLabel: "Parking Permit", formName: "" },
-  { typeKey: "" },
-  { typeKey: "parking_permit_information_provided" },
+  { buttonLabel: "PCN Enquiry", formName: "pcn_enquiry" },
+  { typeKey: "penalty_charge_notice_transferred_to_service" },
+  { typeKey: "penalty_charge_notice_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -3798,7 +3856,7 @@ const unableToResolvePcn = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "09/05/2025", name: "Andy Walker" }
+  { date: "29/07/2025", name: "Dinah Williams" }
 );
 
 const penaltyChargeNoticePcn = new MenuP(

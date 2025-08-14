@@ -1584,6 +1584,16 @@ const programmedWorks = new ContentH(
   "Programmed Works",
   "Information regarding programmed works",
   `
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Carwood Briefing</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <a href="https://sccextranet.sharepoint.com/:w:/r/sites/CustomerServices/Shared%20Documents/CRM/Housing/Planned%20Works/Carwood%20briefing%20note%2024th%20June%202025/Carwood%20briefing%20note%2024th%20June%202025.docx?d=we34bcb652e924945a8535cbe09ae634d&csf=1&web=1&e=hbF4BP"target="_blank">Carwood briefing note - 24th June 2025</a>
+  </div>
+</details>
+
   <details class="accordion">
   <summary class="accordion-header">
     <h3>Electrical Upgrade</h3>
@@ -1665,6 +1675,26 @@ const programmedWorks = new ContentH(
   </div>
 </details>
 
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>External Wall Insulation 2 (United Living)</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <a href="https://sccextranet.sharepoint.com/:f:/r/sites/CustomerServices/Shared%20Documents/CRM/Housing/Planned%20Works/External%20Wall%20Insulation%202%20Programme%20(EWI%202)?csf=1&web=1&e=5GvPUz"target="_blank">External Wall Insulation 2 (United Living)</a>
+  </div>
+</details>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>External Wall Insulation Phase 2 (Equans)</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <a href="https://sccextranet.sharepoint.com/:f:/r/sites/CustomerServices/Shared%20Documents/CRM/Housing/Planned%20Works/External%20Wall%20Insulation%20Phase%202%20Programme?csf=1&web=1&e=FtBQcE"target="_blank">External Wall Insulation Phase 2 (Equans)</a>
+  </div>
+</details>
+
 <p>
     Programme Support / Re-Roofing: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2052706')">0114 2052706</a><br>
     </p>
@@ -1675,7 +1705,7 @@ const programmedWorks = new ContentH(
     Asbestos: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736315')">0114 2736315</a><br>
 </p>
   <p>
-    Adaptations: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736275')">0114 2736275</a><br>
+    Adaptations: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734908')">0114 2734908</a><br>
 </p>
   <p>
     Acquisitions: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734617')">0114 2734617</a><br>
@@ -1702,7 +1732,7 @@ const programmedWorks = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "17/06/2025", name: "Shahzad Athar" }
+  { date: "31/07/2025", name: "Andy Walker" }
 );
 
 const propertyAge = new ContentH(
@@ -3528,9 +3558,9 @@ const bidding = new ContentH(
         </div>
       </details>
     `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
-  { typeKey: "repairs_and_investment_information_provided" },
+  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
   {
     type: "Apply",
     keywords: [
@@ -5947,7 +5977,7 @@ const adaptation = new ContentH(
   }&txt_emailservice=CommunitiesEquip%26Adaptations@sheffield.gov.uk">CommunitiesEquip&Adaptations@sheffield.gov.uk</a>
 
   <p>
-		Adaptations: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736275')">0114 2736275</a><br>
+		Adaptations: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734908')">0114 2734908</a><br>
 </p>
 
 
@@ -5971,7 +6001,7 @@ const adaptation = new ContentH(
     ],
     categories: ["Repairs"],
   },
-  { date: "17/06/2025", name: "Shahzad Athar" }
+  { date: "31/07/2025", name: "Andy Walker" }
 );
 
 const blacksmith = new ContentH(
@@ -10631,6 +10661,32 @@ const shelteredWardens = new ContentH(
   { date: "12/05/2025", name: "Joseph Coupland" }
 );
 
+const temporaryAccommodation = new ContentH(
+  "temporaryAccommodation",
+  "Temporary Accommodation",
+  "The number/s for the temporary accommodation team is available on this page",
+  `
+    <p>
+      Contact the temporary accommodation team on: 
+      <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2053171')">0114 2053171</a> or 
+      <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930832')">0114 2930832</a>
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "sheltered_and_supported_transferred_to_service" },
+  { typeKey: "sheltered_and_supported_information_provided" },
+  {
+    type: "",
+    keywords: [
+      "temp",
+      "temporary",
+      "accommodation",
+    ],
+    categories: ["Housing", "Sheltered and Supported"],
+  },
+  { date: "29/07/2025", name: "Nathan Smith" }
+);
+
 const shelteredAndSupported = new MenuH(
   "shelteredAndSupported",
   "Sheltered and Supported",
@@ -10641,6 +10697,7 @@ const shelteredAndSupported = new MenuH(
     gypsyAndTravellers,
     olderPersonsIndependentLiving,
     shelteredWardens,
+    temporaryAccommodation
   ]
 );
 

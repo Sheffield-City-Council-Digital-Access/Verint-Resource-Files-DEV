@@ -67,6 +67,19 @@ const reportDamagedMissingKerb = new FormRaP(
   { date: "30/09/2024", name: "Elliott Griffiths" }
 );
 
+const reportTemporaryBarrierSign = new FormRaP(
+  "reportTemporaryBarrierSign",
+  "Temporary road barrier, sign, exposed hole, items left on site",
+  "Report a problem with a temporary road barrier, sign, exposed hole or items left on site",
+  "temporary_barrier_sign",
+  {
+    type: "Report",
+    keywords: ["Temporary", "Barrier", "Sign", "Board", "Exposed", "Hole", "Items", "Left", "Site"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "16/07/2025", name: "Dinah Williams" }
+);
+
 const requestLitterPickCollection = new FormRaP(
   "requestLitterPickCollection",
   "Community litter collection",
@@ -246,23 +259,50 @@ const reportTrafficSignal = new FormRaP(
 const requestClaimsPack = new ContentRaP(
   "requestClaimsPack",
   "Request Highways compensation claims pack",
-  "Request a claims pack due to damaged to a vehicle or personal property or personal injury due to a problem on the highway, upon receiving the pack provide information such as: if the issue has already been reported/repaired, date/time of incident, where the incident happened ect.",
+  "Request a claims pack due to damaged to a vehicle or personal property or personal injury due to a problem on the highway, upon receiving the pack provide information such as: if the issue has already been reported/repaired, date/time of incident, where the incident happened etc.",
   `
+    <h3>Information Required for Your Claim Review</h3>
+    <p>To ensure your claim can be thoroughly and efficiently reviewed, please provide all the information detailed below. Supplying complete and accurate details significantly increases the likelihood of a successful outcome.</p>
     
-    <h3>Highways Compensation Claims Pack</h3>
-<p>
-    So your claim can be thoroughly reviewed, you will need to have and provide all of the following information. <br>
-  Without providing full and complete information about your claim you may have a reduced chance of success. 
-</p>
+  <h3>For Personal Injury Claims</h3>
+    <p>When submitting a personal injury claim, please provide the following:</p>
+      <ul>
+      <li><strong>Date and Time of Incident:</strong> The precise date and time when the incident occurred.</li>
+      <li><strong>Weather Conditions:</strong> A description of the weather at the time of the incident.</li>
+      <li><strong>Direction of Travel:</strong> The direction you were traveling (by foot or vehicle) immediately before and during the incident.</li>
+      <li><strong>Details of Injury:</strong> Comprehensive details of all injuries sustained, including nature, severity, and any immediate effects.</li>
+      <li><strong>Exact Location:</strong> The precise street address or specific landmark of where the incident took place.</li>
+      <li><strong>National Insurance Number:</strong> Confirmation of your willingness to provide your National Insurance Number to support your claim.</li>
+      <li><strong>Supporting Documentation for Other Losses:</strong> Any documentation for financial losses, such as wage slips, receipts for medical expenses, or other related out-of-pocket costs.</li>
+      <li><strong>Access to Medical Records:</strong> Your consent for us to access your relevant medical records pertaining to the injury.</li>
+      </ul>
 
-    <ul>
-      <li>Date and time of Incident </li>
-      <li>The weather on the date of the incident</li>
-      <li>The direction of travel by foot or vehicle </li>
-      <li>Full details of any damage or injury suffered </li>
-      <li>The exact location of the incident </li>
-      <li>Be willing to provide your National Insurance Number to support your claim</li>
-    </ul>
+  <h3>For Vehicle Damage Claims</h3>
+    <p>For claims involving vehicle damage, please prepare the following information:</p>
+      <ul>
+      <li><strong>Date and Time of Incident:</strong> The precise date and time when the incident occurred.</li>
+      <li><strong>Weather Conditions:</strong> A description of the weather at the time of the incident.</li>
+      <li><strong>Direction of Travel:</strong> The direction your vehicle was traveling immediately before and during the incident.</li>
+      <li><strong>Details of Damage:</strong> Comprehensive details of all damage sustained by your vehicle, including specific parts affected and severity.</li>
+      <li><strong>Exact Location:</strong> The precise street address or specific landmark of where the incident took place.</li>
+      <li><strong>Independent Repair Estimates:</strong> Willingness to provide two independent estimates for the cost of repairing the vehicle or replacing damaged property.</li>
+      <li><strong>Proof of Ownership:</strong> Documentation proving your ownership of the damaged vehicle.</li>
+      <li><strong>Current MOT Certificate:</strong> A copy of your vehicle's current MOT (Ministry of Transport) certificate.</li>
+      <li><strong>Insurance Certificate:</strong> A copy of your current vehicle insurance certificate.</li>
+      </ul>
+  
+  <h3>For Personal Property Damage Claims</h3>
+    <p>For claims concerning damage to personal property, please provide:</p>
+      <ul>
+      <li><strong>Date and Time of Incident:</strong> The precise date and time when the incident occurred.</li>
+      <li><strong>Weather Conditions:</strong> A description of the weather at the time of the incident.</li>
+      <li><strong>Direction of Travel:</strong> Your direction of travel (by foot or vehicle) immediately before and during the incident, if relevant.</li>
+      <li><strong>Details of Damage:</strong> Comprehensive details of all damage sustained by the personal property, including its nature and extent.</li>
+      <li><strong>Exact Location:</strong> The precise street address or specific landmark of where the incident took place.</li>
+      <li><strong>Independent Replacement Estimates:</strong> Willingness to provide two independent estimates for the replacement value of the damaged property.</li>
+      </ul>
+    
+    <p>Providing this information upfront will help us process your claim efficiently and ensure a smooth review process.</p>  
 
   `,
   {
@@ -278,7 +318,7 @@ const requestClaimsPack = new ContentRaP(
      "Roads and pavements", "Highways", "Streets Ahead", "Amey"
     ],
   },
-  { date: "13/06/2025", name: "Gee Whitehouse" }
+  { date: "10/07/2025", name: "Dinah Williams" }
 );
 
 const reportGritBin = new ContentRaP(
@@ -708,6 +748,24 @@ const reportTree = new ContentRaP(
         in the spring and early summer unless for reasons of public safety.
       </p>
       <p>
+        We have looked into this for you and we can see that the tree(s) in question is(are) on private property. 
+        Because of this, the maintenance responsibility of the tree(s) falls to the property owner.
+        Sheffield City Council’s Streets Ahead/Highways services may be able to assist and/or enforce any maintenance on the tree,
+        if it is obstructing the footpath and/or road.
+      </p>
+      <p>
+        To address this issue, you will need to take it up with the property owner as a civil dispute. 
+        If you need to find out who owns this property, you can contact the Land Registry at <strong>0300 006 0008</strong>.
+        Please note that charges may apply.
+      </p>
+      <p>
+        If you believe the tree to be dangerous, our colleagues in Building Control may be able to assist. You can contact them via:
+      </p>
+       <ul>
+       <li>Email: <a href="mailto:buildingcontrol@sheffield.gov.uk">buildingcontrol@sheffield.gov.uk</a></li>
+       <li>Telephone: <strong>0114 2734168</strong></li>
+       </ul>
+      <p>
         If a hedge or tree is encroaching on to the highway from private property or
         land, you will need to transfer the call to the Highway Enforcement team.
         The Highway Enforcement team can serve hedge cutting/tree pruning notices to
@@ -717,7 +775,7 @@ const reportTree = new ContentRaP(
       </p>
       <p>
         Initially, the tree will be inspected and where it is considered hazardous
-        remedial works will be carried out to make the area safe.
+        remedial works will be carried out to make the area safe.   
       </p>
       <p>
         Tree removal is always the very last option undertaken after all other
@@ -752,7 +810,20 @@ const reportTree = new ContentRaP(
     keywords: ["Tree"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "29/01/2025", name: "Elliott Griffiths" }
+  { date: "21/07/2025", name: "Dinah Williams" }
+);
+
+const reportWaterDrainage = new FormRaP(
+  "reportWaterDrainage",
+  "Water Drainage",
+  "Report problems with water in cellar or other drainage issues",
+  "report_water_drainage", 
+  {
+    type: "Report",
+    keywords: ["Water", "Cellar", "Flood, Drainage"],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "30/07/2025", name: "Dinah Williams" }
 );
 
 const requestHighwayInfo = new FormRaP(
@@ -774,9 +845,10 @@ const requestHighwayInfo = new FormRaP(
 const roadsAndPavements = new ServiceRaP(
   "roadsAndPavements",
   "Roads and Pavements",
-  `Roadworks, Streets Ahead, maintenance, street lighting, traffic lights, road signs, traffic cameras, bus lanes, cycling…`,
+  `Roadworks, Streets Ahead, barriers, maintenance, street lighting, traffic lights, road signs, traffic cameras, bus lanes, cycling…`,
   [
     requestLitterPickCollection,
+    reportTemporaryBarrierSign,
     reportDamagedMissingKerb,
     reportDeadAnimal,
     reportDrainGulley,
@@ -803,5 +875,6 @@ const roadsAndPavements = new ServiceRaP(
     requestClaimsPack,
     requestGritting,
     requestHighwayInfo,
+    reportWaterDrainage
   ]
 );

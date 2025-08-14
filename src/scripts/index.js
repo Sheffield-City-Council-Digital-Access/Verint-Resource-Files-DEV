@@ -1,3 +1,5 @@
+console.log("Version 25.07:11.37");
+
 function logArguments(event, kdf, ...args) {
   console.group(event.type ? event.type : "event");
   console.log("event", event);
@@ -468,7 +470,9 @@ function handleInitialisingEvent() {
   (() => {
     $('input[type="email"]').attr(
       "pattern",
-      "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
+      // "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
+      //testing if enabling A-Z helps if form itself does the to lower.
+      "(?:[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
     );
   })();
 
@@ -608,7 +612,7 @@ function handleOnReadyEvent(_, kdf) {
   const formattedTitle = KDF.getVal("le_title").replace(/\s+/g, "-");
   $("#equality-btn").attr(
     "href",
-    `https://forms.sheffield.gov.uk/form/auto/equalities_monitoring?formTitle=${formattedTitle}&channel=web`
+    `https://forms.sheffield.gov.uk/site/form/auto/equalities_monitoring?formTitle=${formattedTitle}&channel=web`
   );
 
   storeDefaultValidationMessages();
@@ -1195,6 +1199,13 @@ function handleOnReadyEvent(_, kdf) {
       KDF.showWarning("A customer has not been set.");
     }
   });
+
+  if (kdf.form.name === "cm_blue_badge") {
+    updateMultipleRequiredStates([
+      { name: "tel_badge_contact_number", isRequired: false },
+      { name: "eml_badge_contact_address", isRequired: false },
+    ]);
+  }
 }
 
 // --- HANDLE ON PAGE CHANGE EVENT ----------------------------------------- \\
@@ -1218,6 +1229,8 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     if (kdf.access === "agent" && !kdf.form.data?.num_reporter_obj_id) {
       KDF.sendDesktopAction("raised_by");
     }
+    const emailToLower = KDF.getVal("eml_address").toLowerCase();
+    KDF.setVal("eml_address", emailToLower);
   }
 
   if (
@@ -1467,11 +1480,8 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
 
   handleSetReporter(new Date(response["profile-DateOfBirth"]), fullAddress);
 
-  // clear email field
   KDF.setVal("eml_address", "");
-  // repopulate meial field
-  KDF.setVal("eml_address", response["profile-Email"]);
-
+  KDF.setVal("eml_address", response["profile-Email"].toLowerCase());
   // keep at the bottom
   checkPageProgress();
 }
@@ -1481,7 +1491,7 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
 function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   if (action === "check-for-existing-case-management-form") {
     if (response.data.existingForm === "true") {
-      KDF.showInfo("This case manamgement form already exists");
+      KDF.showInfo("This case management form already exists");
       const dformHolder = document.getElementById("dform_holder");
       if (dformHolder) {
         dformHolder.remove();
@@ -1523,7 +1533,40 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       // Hide the "maps-unavailable-notice" element
       $(".maps-unavailable-notice").hide();
 
-      if (KDF.kdf().access === "agent") {
+      if (
+        KDF.kdf().access === "agent" ||
+        KDF.kdf().form.name === "damaged_missing_kerb" ||
+        KDF.kdf().form.name === "litter_pick_collection" ||
+        KDF.kdf().form.name === "manhole_stopcock_cover" ||
+        KDF.kdf().form.name === "report_dead_animal" ||
+        KDF.kdf().form.name === "report_dog_fouling" ||
+        KDF.kdf().form.name === "report_drain_gulley" ||
+        KDF.kdf().form.name === "report_fallen_leaves" ||
+        KDF.kdf().form.name === "report_fence_barrier" ||
+        KDF.kdf().form.name === "report_flooded_area" ||
+        KDF.kdf().form.name === "report_fly_posting" ||
+        KDF.kdf().form.name === "report_fly_tipping" ||
+        KDF.kdf().form.name === "report_graffiti" ||
+        KDF.kdf().form.name === "report_grit_bin" ||
+        KDF.kdf().form.name === "report_hedge_plant_grass" ||
+        KDF.kdf().form.name === "report_highway_damage" ||
+        KDF.kdf().form.name === "report_highway_spillage" ||
+        KDF.kdf().form.name === "report_invasive_weeds" ||
+        KDF.kdf().form.name === "report_litter" ||
+        KDF.kdf().form.name === "report_litter_bin" ||
+        KDF.kdf().form.name === "report_mud_gravel" ||
+        KDF.kdf().form.name === "report_needles_glass" ||
+        KDF.kdf().form.name === "report_pothole_crack" ||
+        KDF.kdf().form.name === "report_road_marking" ||
+        KDF.kdf().form.name === "report_street_furniture" ||
+        KDF.kdf().form.name === "report_street_light" ||
+        KDF.kdf().form.name === "report_traffic_signal" ||
+        KDF.kdf().form.name === "report_tree" ||
+        KDF.kdf().form.name === "report_wall_bridge" ||
+        KDF.kdf().form.name === "road_pavement_surface" ||
+        KDF.kdf().form.name === "road_street_sign_bollard" ||
+        KDF.kdf().form.name === "temporary_barrier_sign"
+      ) {
         $(
           "#map_container > div.esri-view-root > div.esri-ui.calcite-theme-light > div.esri-ui-inner-container.esri-ui-corner-container > div.esri-ui-top-right.esri-ui-corner > div"
         ).css("display", "inline-flex");
@@ -4557,7 +4600,9 @@ function updateMultipleRequiredStates(fields) {
 }
 
 function updateRequiredState(name, isRequired) {
-  isRequired = isRequired.toLowerCase();
+  if (typeof isRequired === "string") {
+    isRequired = isRequired.toLowerCase();
+  }
   if (
     isRequired === true ||
     isRequired === "true" ||
