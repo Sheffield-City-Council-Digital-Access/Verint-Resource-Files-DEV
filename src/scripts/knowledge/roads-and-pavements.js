@@ -129,7 +129,7 @@ const reportFenceBarrier = new FormRaP(
     keywords: ["Fence", "barrier"],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
+  { date: "14/08/2025", name: "Shahzad Athar" }
 );
 
 const reportFloodedArea = new FormRaP(
