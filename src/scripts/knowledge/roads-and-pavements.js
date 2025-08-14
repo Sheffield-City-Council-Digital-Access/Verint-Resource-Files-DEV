@@ -109,7 +109,7 @@ const reportDrainGulley = new FormRaP(
 const reportFenceBarrier = new FormRaP(
   "reportFenceBarrier",
   "Fences or safety barriers",
-  "Report problems with cycle barriers, fences, pedestrian barriers, temporary barriers/bollards or vehicle barriers",
+  "Report problems with cycle barriers, fences, pedestrian barriers, temporary barriers or vehicle barriers",
   "report_fence_barrier",
   {
     type: "Report",
