@@ -1703,7 +1703,7 @@ const masonryBeesTreatment = new ContentPaN(
     <p>
       All services include a £40.80 call-out fee which would be payable if the customer has made an appointment
       and decides not to proceed with a treatment or the Pest officer recommends not to treat at the time of visit. 
-      If the customer has paid in advance then a partial refund maybe issued i.e.. Full fee minus call-out charge.
+      If the customer has paid in advance then a partial refund maybe issued i.e. Full fee minus call-out charge.
     </p>
 
     </p>
