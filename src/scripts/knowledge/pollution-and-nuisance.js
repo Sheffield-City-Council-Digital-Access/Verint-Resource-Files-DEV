@@ -2607,7 +2607,6 @@ const handoverDogtoCouncil = new ContentPaN(
   "Handover Dog to Council",
   "",
   `
-    
   `,
   {
     buttonLabel: "Handover Dog to Council",
@@ -2627,13 +2626,6 @@ const handoverDogtoCouncil = new ContentPaN(
     ],
   },
   { date: "11/10/2024", name: "Shahzad Athar" }
-);
-
-const animalControl = new MenuPaN(
-  "animalControl",
-  "Animal Control",
-  "Animal control treatments, services and pricing",
-  [handoverDogtoCouncil]
 );
 
 const reportNeedlesGlass = new FormPaN(
@@ -2712,6 +2704,49 @@ const reportDogFouling = new FormPaN(
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
   { date: "30/09/2024", name: "Elliott Griffiths" }
+);
+
+const animalControl = new ContentPaN(
+  "animalControl",
+  "Animal Control",
+  "Animal control treatments, services and pricing",
+  `<p>Animal control deals with the following issues. To report these issue, use the from attached</p>
+  <ul>
+  <li>Animal Boarding Establishment</li>
+  <li>Animal Noise</li>
+  <li>Animal Welfare on Farms</li>
+  <li>Dangerous Wild Animals</li>
+  <li>Dead Animal</li>
+  <li>Deceased Pet</li>
+  <li>Dog - Adoption</li>
+  <li>Dog - Breeding Information</li>
+  <li>Dog - Micro-chipping</li>-
+  <li>Dumped Animal Bodies</li>
+  <li>Keeping of Animals Advice</li>
+  <li>Performing Animal Licence</li>
+  <li>Pet Shops</li>
+  <li>Riding Establishments</li>
+  <li>Abandoned Pets</li>
+</ul>
+
+  `,
+  {
+    buttonLabel: "Animal Control",
+    formName: "report_animal_control",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Treatment","services and prices"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Animal Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "03/09/2025", name: "Shahzad Athar" }
 );
 
 const abandonedVehicles = new ContentPaN(
@@ -3051,8 +3086,6 @@ const whyIsACleanAirZoneBeingIntroduced = new ContentPaN(
 );
 
 
-
-
 const cleanAirZone = new MenuPaN(
   "cleanAirZone",
   "Clean Air Zone",
@@ -3081,6 +3114,8 @@ const pollutionAndNuisance = new ServicePaN(
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone`,
   [
     abandonedVehicles,
+    animalControl,
+    handoverDogtoCouncil,
     pestControl,
     reportDogFouling,
     reportLitter,
