@@ -1664,11 +1664,15 @@ const masonryBeesTreatment = new ContentPaN(
   "Masonry Bees Treatment",
   "Details about masonry bee treatment, including costs, benefits-related discounts, and charges for additional nests or treatment of nests located at height.",
   `
-    <h3>Cost for Treatment</h3>
+  <h3>Masonry Bees</h3>
+  <p>Bees are not treated as pests in the traditional sense and should be relocated, not exterminated.
+  Sheffield City Council pest control service promotes this through legal adherence, professional partnerships, 
+  and prioritizing ethical environmental practices.</p> 
     
      <section class="info-panel" role="region" aria-label="Information panel">
       <p>
-       The treatment cost will be on request. We will send your 
+        <stong>All Bees</strong> - Only treated as a last resort & when there is a threat to health 
+        or are in a highly sensitive location. Send your
         <a href="${window.location.protocol}//${
     window.location.hostname
   }/form/launch/pest_control_technician?${
@@ -1676,13 +1680,32 @@ const masonryBeesTreatment = new ContentPaN(
       ? `customerid=${KDF.getParams().customerid}&`
       : ""
   }interactionid=${KDF.getParams().interactionid}">request to a technician</a>
-        for survey and provide a quote. 
+        or a team leader if unsure.
       </p>
     </section>
 
+    <h3> Treatment Cost</h3>
+
+    <p>The treatment cost is £70.20.</p>
     <p>
-      All prices include a call-out fee of £40.80 This fee applies if our officer
-      attends the property but is unable to complete the treatment.
+      If you receive one of the following benefits, the treatment cost will be
+      reduced to <strong>£61.20:</strong>
+    </p>
+    <ul>
+      <li>Pension Credits</li>
+      <li>Housing Benefits</li>
+      <li>Income Support Allowance</li>
+      <li>Income Related Job Seekers Allowance</li>
+      <li>Income Related Employment Support Allowance</li>
+    </ul>
+    <p>
+
+    <p>
+      All services include a £40.80 call-out fee which would be payable if the customer has made an appointment
+      and decides not to proceed with a treatment or the Pest officer recommends not to treat at the time of visit. 
+      If the customer has paid in advance then a partial refund maybe issued i.e. Full fee minus call-out charge.
+    </p>
+
     </p>
     <h3>Nests Up High</h3>
     <p>
@@ -1710,7 +1733,7 @@ const masonryBeesTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "26/02/2025", name: "Gee Whitehouse" }
+  { date: "26/08/2025", name: "Shaz Athar" }
 );
 
 const miceTreatment = new ContentPaN(
