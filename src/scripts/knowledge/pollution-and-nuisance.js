@@ -2711,6 +2711,29 @@ const animalControl = new ContentPaN(
   "Animal Control",
   "Animal control treatments, services and pricing",
   `<p>Animal control deals with the following issues. To report these issue, use the from attached</p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Abandoned Pets</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Reports of this nature need to go to the RSPCA.</p>
+        <p>Please contact the RSPCA on <strong>0300 1234 999</strong> or visit
+    <a href="https://www.rspca.org.uk" target="_blank" rel="noopener noreferrer">
+      www.rspca.org.uk </a>
+    </p>
+    </div>
+</details>
+
+
+
+
+
+
+
+
+
   <ul>
   <li>Animal Boarding Establishment</li>
   <li>Animal Noise</li>
