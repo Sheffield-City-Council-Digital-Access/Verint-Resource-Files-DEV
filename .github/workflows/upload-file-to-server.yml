@@ -10,6 +10,7 @@ on:
       folder_name:
         description: 'Select the destination folder name'
         required: true
+        type: choice
         options:
           - styles
           - scripts
