@@ -8,10 +8,15 @@ on:
         required: true
         type: string
       content_type:
-        description: 'File content type (e.g., text/css, image/svg, image/png)'
-        required: false
+        description: 'Select the file content type'
+        required: true
+        type: choice
         default: 'text/plain'
-        type: string
+        options:
+          - text/plain
+          - text/css
+          - image/svg
+          - image/png
       environment:
         description: 'Select the target environment'
         required: true
