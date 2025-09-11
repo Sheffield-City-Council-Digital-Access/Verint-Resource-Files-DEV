@@ -1,21 +1,30 @@
-name: Upload File to Server
+name: Upload File
 
 on:
   workflow_dispatch:
     inputs:
       file_path:
-        description: 'Path to file in repository (e.g., src/main.css)'
+        description: 'Path to file in repository (e.g., styles/main.css)'
         required: true
         type: string
       folder_name:
-        description: 'Destination folder name (e.g., styles, scripts, assets)'
+        description: 'Select the destination folder name'
         required: true
-        type: string
+        options:
+          - styles
+          - scripts
+          - images
+          - icons
       content_type:
-        description: 'File content type (e.g., text/css, image/svg, image/png)'
-        required: false
+        description: 'Select the fFile content type'
+        required: true
+        type: choice
         default: 'text/plain'
-        type: string
+        options:
+          - text/plain
+          - text/css
+          - image/svg
+          - image/png
       environment:
         description: 'Select the target environment'
         required: true
