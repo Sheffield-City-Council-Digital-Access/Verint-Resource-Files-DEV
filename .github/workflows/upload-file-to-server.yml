@@ -1,0 +1,173 @@
+name: Upload File to Server
+
+on:
+  workflow_dispatch:
+    inputs:
+      file_path:
+        description: 'Path to file in repository (e.g., src/main.css)'
+        required: true
+        type: string
+      folder_name:
+        description: 'Destination folder name (e.g., styles, scripts, assets)'
+        required: true
+        type: string
+      content_type:
+        description: 'File content type (e.g., text/css, image/svg, image/png)'
+        required: false
+        default: 'text/plain'
+        type: string
+      environment:
+        description: 'Select the target environment'
+        required: true
+        type: choice
+        default: 'dev'
+        options:
+          - dev
+          - qa
+          - prod
+
+jobs:
+  upload-file:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Validate file exists
+        run: |
+          FILE_PATH="${{ github.event.inputs.file_path }}"
+          if [ ! -f "$FILE_PATH" ]; then
+            echo "❌ File not found: $FILE_PATH"
+            echo "Available files in repository:"
+            find . -type f -name "*.css" -o -name "*.js" -o -name "*.html" -o -name "*.json" | head -20
+            exit 1
+          fi
+          echo "✅ File found: $FILE_PATH"
+          
+          # Get file info
+          file_size=$(stat -c%s "$FILE_PATH")
+          echo "📁 File size: ${file_size} bytes"
+          echo "📄 File type will be: ${{ github.event.inputs.content_type }}"
+      
+      - name: Upload file to Verint API
+        env:
+          API_BASE_URL: ${{ secrets[format('VERINT_BASE_URL_{0}', inputs.environment)] }}
+          API_USERNAME: ${{ secrets.VERINT_USERNAME }}
+          API_PASSWORD: ${{ secrets.VERINT_PASSWORD }}
+          FILE_PATH: ${{ github.event.inputs.file_path }}
+          FOLDER_NAME: ${{ github.event.inputs.folder_name }}
+          CONTENT_TYPE: ${{ github.event.inputs.content_type }}
+        run: |
+          echo "🚀 Starting file upload to the ${{ inputs.environment }} environment..."
+          echo "File: $FILE_PATH"
+          echo "Destination Folder: $FOLDER_NAME"
+          echo "Content Type: $CONTENT_TYPE"
+          echo ""
+          
+          # Extract filename from path
+          filename=$(basename "$FILE_PATH")
+          echo "📝 Filename: $filename"
+          
+          # Make the API call
+          response=$(curl -s -w "HTTPSTATUS:%{http_code}" \
+            -X 'POST' \
+            "${API_BASE_URL}/files" \
+            -H 'accept: application/json' \
+            -u "${API_USERNAME}:${API_PASSWORD}" \
+            -H 'Content-Type: multipart/form-data' \
+            -F "file=@${FILE_PATH};type=${CONTENT_TYPE}" \
+            -F "Folder={\"folderName\":\"${FOLDER_NAME}\"}")
+          
+          # Extract HTTP status code
+          http_code=$(echo $response | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
+          
+          # Extract response body
+          body=$(echo $response | sed -E 's/HTTPSTATUS\:[0-9]{3}$//')
+          
+          echo ""
+          echo "================== UPLOAD RESULT =================="
+          echo "HTTP Status Code: $http_code"
+          
+          # Check if the request was successful
+          if [ $http_code -eq 200 ] || [ $http_code -eq 201 ]; then
+            echo "✅ File upload successful!"
+            echo "$body" > upload_response.json
+            
+            # Try to parse and display the response
+            if command -v jq > /dev/null 2>&1 && echo "$body" | jq . > /dev/null 2>&1; then
+              echo ""
+              echo "📊 Upload Details:"
+              
+              if echo "$body" | jq -e '.fileName' > /dev/null 2>&1; then
+                fileName=$(echo "$body" | jq -r '.fileName // "N/A"')
+                echo "    File Name: $fileName"
+              fi
+              
+              if echo "$body" | jq -e '.folderName' > /dev/null 2>&1; then
+                folderName=$(echo "$body" | jq -r '.folderName // "N/A"')
+                echo "    Folder: $folderName"
+              fi
+              
+              if echo "$body" | jq -e '.fileType' > /dev/null 2>&1; then
+                fileType=$(echo "$body" | jq -r '.fileType // "N/A"')
+                echo "    File Type: $fileType"
+              fi
+              
+              if echo "$body" | jq -e '.size' > /dev/null 2>&1; then
+                size=$(echo "$body" | jq -r '.size // "N/A"')
+                if [ "$size" != "N/A" ] && [ "$size" -gt 0 ]; then
+                  if [ "$size" -gt 1048576 ]; then
+                    size_display=$(echo "scale=2; $size / 1048576" | bc 2>/dev/null || echo "$size")"MB"
+                  elif [ "$size" -gt 1024 ]; then
+                    size_display=$(echo "scale=2; $size / 1024" | bc 2>/dev/null || echo "$size")"KB"
+                  else
+                    size_display="${size}B"
+                  fi
+                else
+                  size_display="N/A"
+                fi
+                echo "    Size: $size_display"
+              fi
+              
+              if echo "$body" | jq -e '.distributionLink' > /dev/null 2>&1; then
+                distributionLink=$(echo "$body" | jq -r '.distributionLink // "N/A"')
+                echo "    Distribution Link: $distributionLink"
+              fi
+              
+              if echo "$body" | jq -e '.key' > /dev/null 2>&1; then
+                key=$(echo "$body" | jq -r '.key // "N/A"')
+                echo "    File Key: $key"
+              fi
+              
+            else
+              echo "📄 Raw Response:"
+              echo "$body"
+            fi
+            
+          else
+            echo "❌ File upload failed!"
+            echo "📄 Response: $body"
+            
+            echo ""
+            echo "🔍 Troubleshooting tips:"
+            echo "- Check if the folder name exists or is valid"
+            echo "- Verify the content type matches the file"
+            echo "- Ensure you have upload permissions"
+            echo "- Check if the file size is within limits"
+            
+            exit 1
+          fi
+          
+          echo "================================================="
+          echo "💾 Full response saved to upload_response.json"
+      
+      - name: Upload response as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: upload-response-${{ github.run_number }}
+          path: |
+            upload_response.json
+            ${{ env.FILE_PATH }}
+          retention-days: 30
