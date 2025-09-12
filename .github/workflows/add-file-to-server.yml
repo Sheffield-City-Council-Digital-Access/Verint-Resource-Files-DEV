@@ -22,7 +22,7 @@ on:
         description: 'Select the file content type'
         required: true
         type: choice
-        default: 'image/svg+xml'
+        default: 'text/plain'
         options:
           - text/plain
           - text/css
