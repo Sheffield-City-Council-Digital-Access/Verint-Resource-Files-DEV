@@ -11,13 +11,13 @@ on:
         description: 'Select the destination folder name'
         required: true
         type: choice
-        default: 'scripts'
+        default: 'knowledge'
         options:
-          - styles
+          - knowledge
           - scripts
+          - styles
           - images
           - icons
-          - JS
       content_type:
         description: 'Select the file content type'
         required: true
