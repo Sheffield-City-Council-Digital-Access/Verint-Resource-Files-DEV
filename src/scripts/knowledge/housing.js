@@ -10733,8 +10733,24 @@ const tenancyEnforcementASB = new ContentH(
     </ul>
 
     <h3>Reporting anti-social behaviour</h3>
-    <p>If the ASB involves a Council tenant, use the form at the bottom of this page to raise a report to 
-    the appropriate team. If it does not involve a Council tenant advise the customer to contact 101</p>
+    <p>
+      If the ASB involves a Council tenant, use the form at the bottom of this page to raise a report to the appropriate team. 
+      Use this link if it is not a council tenant. This is the link to report ASB to the Council's ASB team - <a href="https://www.sheffield.gov.uk/pollution-nuisance/anti-social-behaviour "target="_blank">https://www.sheffield.gov.uk/pollution-nuisance/anti-social-behaviour</a>. 
+      If the report involves a crime, advise the customer to contact 101.
+    </p>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20anti%20social%20behaviour\`
+    "
+  >
+    Send link to review further information
+  </button>
     
     <h3>Police responsibility</h3>
     <p>South Yorkshire Police are responsible for dealing with any behaviour or activity which results in a criminal offence being committed.</p>
