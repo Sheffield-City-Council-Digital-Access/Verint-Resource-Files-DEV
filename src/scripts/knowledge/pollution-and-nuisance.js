@@ -3086,6 +3086,275 @@ More information can be found at  <a href="https://www.gov.uk/garden-bonfires-ru
   { date: "13/06/2025", name: "Gee Whitehouse" }
 );
 
+const animalControl = new ContentPaN(
+  "animalControl",
+  "Animal Control",
+  "Animal control treatments, services and pricing",
+  `<p>Animal control deals with the following issues. To report these issue, use the from attached</p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Abandoned Pets</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Reports of this nature need to go to the RSPCA.</p>
+        <p>Please contact the RSPCA on <strong>0300 1234 999</strong> or visit
+    <a href="https://www.rspca.org.uk" target="_blank" rel="noopener noreferrer">
+      www.rspca.org.uk </a>
+    </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Animal Boarding Establishment</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Please provide us with details about the report / request</p>
+        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+        <textarea></textarea>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Animal Noise</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Please provide us with details about the report / request</p>
+        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+        <textarea></textarea>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Animal welfare on Farms</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Please provide us with details about the report / request</p>
+        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+        <textarea></textarea>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Dangerous Wild Animal License</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Please provide us with details about the report / request</p>
+        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+        <textarea></textarea>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Deceased Pet</h3>
+        <div class="accordion-icon"></div>
+        Which type of animal is it?
+    </summary>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Birds
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                  We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+                  </p>
+            </div>
+        </details>
+        
+         <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Cat
+            </summary>
+            <div class="details-accordion-content">
+                <p>Please provide us with details about the report / request</p>
+        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+        <textarea></textarea>
+            </div>
+        </details>
+        
+         <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Dog
+            </summary>
+            <div class="details-accordion-content">
+                <p>Please provide us with details about the report / request</p>
+        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+        <textarea></textarea>
+            </div>
+        </details>
+        
+         <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Mice
+            </summary>
+            <div class="details-accordion-content">
+                 <p>
+                  We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+                  </p>
+            </div>
+        </details>
+        
+        <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Rats
+            </summary>
+            <div class="details-accordion-content">
+                 <p>
+                  We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+                  </p>
+            </div>
+        </details>
+        
+          <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                None of the above
+            </summary>
+            <div class="details-accordion-content">
+            <p> please specify what animal it is</p>
+            <textarea></textarea>
+                <p>Please provide us with details about the report / request</p>
+        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+        <textarea></textarea>
+            </div>
+        </details>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Dog - Adoption</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>You can adopt a dog from Spring Street Kennels.</p>
+        <p>
+        If you would like to make an enquiry, please call them on 01142726758 or 07817497995</p>
+        <p><strong>Address:</strong> Bower Spring, Sheffield, S3 8PB</a></p>
+        <p><strong>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Dog - Breeding Information</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Please provide us with details about the report / request</p>
+        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+        <textarea></textarea>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Dog - Micro-chipping</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Spring Street Kennels offers a microchipping service.</p>
+        <p>If you would like to take up this service,please call them on 0114 2726758 or 07817 497995.</p>
+        <p><strong>Address:</strong> Bower Spring, Sheffield, S3 8PB</a></p>
+        <p><strong>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Dumped Animal Bodies</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Please provide us with details about the report / request</p>
+        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+        <textarea></textarea>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Keeping of Animals Advice</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Please provide us with details about the report / request</p>
+        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+        <textarea></textarea>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Riding Establishments</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Please provide us with details about the report / request</p>
+        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+        <textarea></textarea>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Performing Animal Licence</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Please provide us with details about the report / request</p>
+        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+        <textarea></textarea>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Pet Shops</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Please provide us with details about the report / request</p>
+        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+        <textarea></textarea>
+    </div>
+</details>
+
+  `,
+  {
+    buttonLabel: "Animal Control",
+    formName: "report_animal_control",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Treatment","services and prices"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Animal Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "15/09/2025", name: "Shahzad Athar" }
+);
+
 const abandonedVehicles = new ContentPaN(
   "abandonedVehicles",
   "Abandoned vehicles",
