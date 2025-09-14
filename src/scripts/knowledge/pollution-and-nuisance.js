@@ -3762,13 +3762,15 @@ const pollutionAndNuisance = new ServicePaN(
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone, Enviro, Eps, Env`,
   [
     abandonedVehicles,
+    animalControl,
+    cleanAirZone
+    handoverDogtoCouncil,
     pestControl,
     reportDangerousDog,
     reportDogFouling,
     reportFilthyPremises,
     reportStrayingDog,
     reportDogAsLost,
-    handoverDogtoCouncil,
     reportLitter,
     reportGraffiti,
     reportFlyPosting,
@@ -3777,6 +3779,6 @@ const pollutionAndNuisance = new ServicePaN(
     reportSmoke,
     reportNoise,
     reportWaterAndDrainage,
-    cleanAirZone
+   
   ]
 );
