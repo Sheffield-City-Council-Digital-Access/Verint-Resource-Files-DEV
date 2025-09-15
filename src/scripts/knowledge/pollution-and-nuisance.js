@@ -3161,7 +3161,6 @@ const animalControl = new ContentPaN(
   </summary>
   <button class="accordion">Select a Topic</button>
   <div class="panel">
-  
   <div class="accordion-content">
   <details class="details-accordion">
   <summary>
