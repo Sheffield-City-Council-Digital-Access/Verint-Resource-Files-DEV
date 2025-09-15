@@ -3155,34 +3155,33 @@ const animalControl = new ContentPaN(
 </details>
 
 <details class="accordion">
-    <summary class="accordion-header">
-        <h3>Deceased Pet</h3>
-        <div class="accordion-icon"></div>
-        Which type of animal is it?
-    </summary>
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Birds
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                  We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
-                  </p>
-            </div>
-        </details>
+  <summary class="accordion-header">
+  <h3>Deceased Pet</h3>
+  <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+  <details class="details-accordion">
+  <summary>
+  Birds
+  </summary>
+  <div class="details-accordion-content">
+  <p>
+  We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+  </p>
+  </div>
+  </details>
         
-         <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Cat
-            </summary>
-            <div class="details-accordion-content">
-                <p>Please provide us with details about the report / request</p>
-        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
-        <textarea></textarea>
-            </div>
-        </details>
+  <div class="accordion-content">
+  <details class="details-accordion">
+  <summary>
+  Cat
+  </summary>
+  <div class="details-accordion-content">
+  <p>Please provide us with details about the report / request</p>
+  <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+  <textarea></textarea>
+  </div>
+  </details>
         
          <div class="accordion-content">
         <details class="details-accordion">
@@ -3335,13 +3334,21 @@ const animalControl = new ContentPaN(
     </div>
 </details>
 
-<details class="accordion">
+ <details class="accordion">
     <summary class="accordion-header">
-        <h3>Dangerous Dog</h3>
-        <div class="accordion-icon"></div>
+    <h3>Dangerous Dog</h3>
+    <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-        "report_dangerous_dog"
+  <a href="${window.location.protocol}//${
+ window.location.hostname
+  }/form/launch/report_dangerous_dog?${
+ KDF.getParams().customerid
+ ? `customerid=${KDF.getParams().customerid}&`
+ : ""
+  }interactionid=${
+ KDF.getParams().interactionid
+  }">Report a dangerous dog</a>
     </div>
 </details>
 
