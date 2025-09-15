@@ -3763,7 +3763,7 @@ const pollutionAndNuisance = new ServicePaN(
   [
     abandonedVehicles,
     animalControl,
-    cleanAirZone
+    cleanAirZone,
     handoverDogtoCouncil,
     pestControl,
     reportDangerousDog,
