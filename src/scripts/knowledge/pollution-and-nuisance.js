@@ -3335,9 +3335,19 @@ const animalControl = new ContentPaN(
     </div>
 </details>
 
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Dangerous Dog</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        "report_dangerous_dog"
+    </div>
+</details>
+
   `,
   {
-    buttonLabel: "Animal Control",
+    buttonLabel: "Raise a Report",
     formName: "report_animal_control",
   },
   { typeKey: "pest_control_transfer_to_service" },
