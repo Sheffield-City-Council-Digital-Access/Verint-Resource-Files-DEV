@@ -10733,24 +10733,8 @@ const tenancyEnforcementASB = new ContentH(
     </ul>
 
     <h3>Reporting anti-social behaviour</h3>
-    <p>
-      If the ASB involves a Council tenant, use the form at the bottom of this page to raise a report to the appropriate team. 
-      Use this link if it is not a council tenant. This is the link to report ASB to the Council's ASB team - <a href="https://www.sheffield.gov.uk/pollution-nuisance/anti-social-behaviour "target="_blank">https://www.sheffield.gov.uk/pollution-nuisance/anti-social-behaviour</a>. 
-      If the report involves a crime, advise the customer to contact 101.
-    </p>
-
-  <button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20anti%20social%20behaviour\`
-    "
-  >
-    Send link to review further information
-  </button>
+    <p>If the ASB involves a Council tenant, use the form at the bottom of this page to raise a report to 
+    the appropriate team. If it does not involve a Council tenant advise the customer to contact 101</p>
     
     <h3>Police responsibility</h3>
     <p>South Yorkshire Police are responsible for dealing with any behaviour or activity which results in a criminal offence being committed.</p>
@@ -10810,7 +10794,7 @@ const tenancyEnforcementASB = new ContentH(
   { typeKey: "" },
   { typeKey: "tenancy_enforcement_information_provided" },
   { type: "Request", keywords: [], categories: ["Housing"] },
-  { date: "12/09/2025", name: "Motolani Akinola" }
+  { date: "14/02/2025", name: "Nathan Smith" }
 );
 //#endregion Tenancy enforcement
 
@@ -11328,22 +11312,413 @@ const tenancyConditions = new ContentH(
   "Tenancy Conditions",
   "Tenancy conditions outline tenant responsibilities, including rent payment, maintenance, and behavior expectations. Specific rules apply for alterations, pets, and tenancy violations. Tenants have rights like the right to repairs and compensation for certain improvements, and must follow rules for evictions and tenant references.",
   `
-<p>
-  Use the following link for further information on Tenancy Conditions: <a href="https://www.sheffield.gov.uk/sites/default/files/2022-10/you-your-home.pdf "target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-10/you-your-home.pdf</a>
-</p>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Conditions as a Tenant</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <details class="details-accordion">
+      <summary>What are Tenancy Conditions?</summary>
+      <div class="details-accordion-content">
+        <p>
+          Tenancy Conditions are an agreement between you and us. If you break these conditions of tenancy, you may lose your home. The basic conditions of your tenancy are:
+        </p>
+        <ul>
+          <li>You must pay your rent.</li>
+          <li>You must look after and carry out any day-to-day maintenance to the property.</li>
+          <li>You must not cause a nuisance or danger to people nearby.</li>
+        </ul>
+      </div>
+    </details>
 
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Tenancy%20Conditions\`
-    "
->
-    Send link to review further information
-</button>
+    <details class="details-accordion">
+      <summary>Keeping Animals</summary>
+      <div class="details-accordion-content">
+        <p>
+          You must not keep any animal which we consider to be dangerous or which may cause a nuisance. You must not keep a dog or a cat in a flat or maisonette which has shared parts or a shared entrance. If you live in a small block of flats or maisonettes, we will give you written permission to keep a dog or cat if all the tenants who use the same shared parts of the building have agreed to you keeping the dog or cat. 
+          If we give our permission, we may withdraw it if your pet causes nuisance or upset to any of your neighbours. If we gave you written permission before 3rd April 1995 to keep a dog or cat in a block of flats containing more than 12 homes, you can continue to keep that dog or cat. 
+          You must not keep any pigeons or doves in or on any part of the property unless before 3rd April 1995 we gave you written permission to do so. Parrots, budgies, etc., are allowed as long as they are not causing a nuisance.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Responsible and Maintenance We Are Responsible For</summary>
+      <div class="details-accordion-content">
+        <p>We will repair and maintain the following:</p>
+        <ul>
+          <li>The structure and outside of the building (roofs, outside walls, outside doors, window sills and frames, chimneys and chimney stacks, drains, gutters and outside pipes)</li>
+          <li>Inside walls, skirting boards, doors, door frames, floors, ceilings and major replastering work.</li>
+          <li>Electric wiring, sockets and light fittings and gas and water pipes.</li>
+          <li>Heating equipment (such as fires, radiators and storage radiators) and water heating equipment (such as boilers and immersion heaters).</li>
+          <li>Kitchen and bathroom fixtures (such as sinks, basins, baths, showers and toilets).</li>
+          <li>Pathways and steps which are the main means of getting to your home.</li>
+          <li>Shared TV aerial.</li>
+          <li>The glass in outside doors and windows.</li>
+          <li>Supporting or retaining walls and front walls and front metal railings to the property.</li>
+          <li>We will be responsible for cutting down or trimming large trees within the property, but only if they are causing danger or damage to your property or a nearby property.</li>
+          <li>We will decorate the outside and any shared parts of the building when necessary (this will be at least every five years).</li>
+          <li>With your help and cooperation, we will keep in good repair and look after the shared parts of the building.</li>
+          <li>When you ask for a repair, and we agree to do it, we will give you a receipt showing when we will carry out the work.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Appointable Repairs</summary>
+      <div class="details-accordion-content">
+        <p>
+          These are offered in 2-hour time slots for most non-urgent repairs including loose fitting doors and windows, leaking guttering, loose floorboards, or a light or electric socket not working. If you’re not at home at the appointed time, the repair will be cancelled, and you will need to make a new appointment via the contact centre. Some non-urgent repairs cannot be ordered straightaway but will be looked at by an inspector within two weeks of you reporting the fault. If the inspector finds that work is needed, then it will be ordered for you.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Emergency Repairs</summary>
+      <div class="details-accordion-content">
+        <p>
+          This category has a 4-hour time limit and is used only for repairs where your health and safety could be at risk. These repairs include burst water pipes, blocked WC basin, gas leaks, and total electrical failure.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Urgent Repairs</summary>
+      <div class="details-accordion-content">
+        <p>
+          This is a 24-hour category for urgent jobs. Urgent repairs include heating breakdowns where you have no other way of heating your home, replacement of door locks, and blocked drains.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Planned Work</summary>
+      <div class="details-accordion-content">
+        <p>
+          For jobs that need planning due to the nature of the work. This work includes manufactured items like external doors and windows or where there are large amounts of plastering to walls and ceilings.
+        </p>
+        <strong>We Will Not Be Responsible For:</strong>
+        <ul>
+          <li>Decorating the inside of your home.</li>
+          <li>Repairing any damage caused by you, members of your household or guests, deliberately, or through neglect or carelessness.</li>
+          <li>Repairing any fixtures and fittings which you have added to your home unless we agreed, in writing, to maintain them before you put them in.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Repairs and Maintenance You Are Responsible For</summary>
+      <div class="details-accordion-content">
+        <p>
+          You are responsible for any repair not listed above. If you need a repair which we are responsible for, you must tell us about this repair as soon as possible. You must look after and maintain the property and carry out any repair you are responsible for. If you do not, we may maintain the property or carry out the repairs. We will charge you for this. If you have broken condition 23 of these conditions, we may remove any scrap from the property or do anything else which is necessary. Again, we will charge you for this.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Permission for Alterations</summary>
+      <div class="details-accordion-content">
+        <p>
+          You must not alter or improve the property unless you have written permission from us. This includes:
+        </p>
+        <ul>
+          <li>Putting up an extension</li>
+          <li>Adding to or changing or replacing the fixtures and fittings provided by us</li>
+          <li>Altering essential gas, electricity, and water services</li>
+          <li>Putting up a radio or television aerial or satellite dish</li>
+          <li>Decorating the outside of your home</li>
+        </ul>
+        <p>
+          If we refuse to give you permission for any alteration, we will always write to you and say why.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Rent (Your Responsibilities)</summary>
+      <div class="details-accordion-content">
+        <p>
+          You must pay your rent and all other charges for the property (including any district heating charges) when they are due. The rent and any other charges are due every Monday, except for two weeks in each financial year which we will tell you about beforehand.
+        </p>
+        <p>
+          You must not withhold the rent for any reason whatsoever. In particular, you must not set off the cost of outstanding repairs which are our responsibility against your obligation to pay rent.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Rent (Our Responsibilities)</summary>
+      <div class="details-accordion-content">
+        <p>
+          If we change the amount of your rent or any other charges for the property, we will give you notice in writing. The notice will give details of the new amount, when it must be paid from, and why we have made the change. Whenever we change the general levels of net rent for Council properties, we will give you four weeks' notice in writing.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Use of the Property</summary>
+      <div class="details-accordion-content">
+        <p>You must only use the home to live in as your only or principal home.</p>
+        <ul>
+          <li>You can ask us for permission to run a business from your property. We may give you permission if we are satisfied that the business will not cause a nuisance to neighbours and other people living in the area and you have any planning permission you need. If we give permission we may withdraw it if your business causes a nuisance to any neighbours or other people living in the area.</li>
+          <li>You must not part with possession or sublet all of the property.</li>
+          <li>You may part with possession or sublet part of the property if you have written permission from us. If we refuse to give you permission we will write to you and say why.</li>
+          <li>You, your household and guests must respect the rights of other people and not do anything (either in or near the property or on the estate where the property is) which is illegal, immoral or would cause danger, a nuisance or annoyance, including harassment of other people.</li>
+          <li>You, members of your household or guests must not use violent, abusive or offensive behaviour to our employees, agents or contractors doing housing work.</li>
+          <li>You must not store petrol, paraffin, liquid or bottled gas or other dangerous materials in the property. In flats and maisonettes you must not use paraffin heaters or liquid or bottled gas heaters. You must take all reasonable precautions to prevent a fire.</li>
+          <li>You must not keep any vehicle (including a caravan, boat or trailer) at the property, if the size or condition of the vehicle spoils the surrounding property or estate.</li>
+          <li>You must not use any garden or drive to your property to store, load or unload scrap metal, or to strip down vehicles or persistently repair them.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>District Heating System</summary>
+      <div class="details-accordion-content">
+        <p>
+          You must not interfere with any part of a District Heating system (including any meters, pre-payment controllers or cards), whether the system is provided by us, Sheffield Heat & Power Limited, or anyone else. If the supply of heat to your home is individually metered you must pay for all the heat which is supplied to your home. If any supply of heating and hot water which you pay for as part of your rent goes off for more than a day, we will reduce the weekly charge by one seventh for each day (or part of a day over 8 hours), during which the heating and hot water is off.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Gardens</summary>
+      <div class="details-accordion-content">
+        <p>You must keep any private garden or hedges to the property tidy.</p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Car Parking</summary>
+      <div class="details-accordion-content">
+        <p>
+          You can only park a vehicle in your garden if there is a hardstanding. If you have to cross a pavement to get to your hardstanding, the kerb to that pavement must be adapted to allow vehicles to cross it. You must get permission from us to build a hardstanding in your garden. You must have written permission from us and the Highway Authority to adapt a pavement so a vehicle may cross it. You must not regularly park a vehicle on communal areas, pavements or verges at the side of roads.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Running a business from home</summary>
+      <div class="details-accordion-content">
+        <p>
+          You can ask us for permission to run a business from your property. We may give you permission if we are satisfied that the business will not cause a nuisance to neighbours and other people living in the area and you have any planning permission you need. If we give permission we may withdraw it if your business causes a nuisance to any neighbours or other people living in the area.
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>Access to your property</summary>
+      <div class="details-accordion-content">
+        <p>
+          You must allow our employees, agents or contractors to enter the property to inspect the property, carry out repairs or improvements, service appliances or carry out any of our duties. We will give you 72 hours notice in writing if we need to enter your property and our employees, agents or contractors will show you a pass proving their identity before they may enter your property. If it is convenient you may allow our employees, agents or contractors access to your property even if they have not given you notice. If we decide that it is necessary because of an emergency which could cause personal injury or damage to Council or adjoining properties and you do not give us immediate access, we may take steps to enter your property using force if necessary without giving notice.
+        </p>
+      </div>
+    </details>
+  </div>
+</details>
+<div class="accordion-content">
+    <details class="details-accordion">
+        <summary>Ending your Tenancy</summary>
+        <div class="details-accordion-content">
+            <p>If you want to end your tenancy you must give us four weeks written notice. The four weeks’ notice must end on a Monday. You must leave the property clean, safe, tidy, and ready for the next tenant to move into. You must hand all the keys into the Housing Area Office by the end of the four weeks’ notice.</p>
+
+            <p>You may have to remove fixtures and fittings which you have added to the property and replace them with the kind of fixtures and fittings we use. You will not have to do this if we had agreed to maintain the fixtures and fittings which you put in. If you have altered the property, even with our permission, we may ask you to restore the property to its original condition if the alterations make the property unsuitable for future tenants. If you do not replace fittings or restore the property to its original condition when we have asked you to do so, we will do the work and charge you for it.</p>
+
+            <p>We may charge you if we have to remove rubbish or other items which you have left in the property. We may also charge you for any damage to the property. You may give or send us any Notice about your tenancy (except for Notices about legal action against us) by addressing it to:</p>
+
+            <address>
+                Sheffield Council Housing Service<br>
+                PO Box 10589<br>
+                Nottingham<br>
+                NG6 6DN
+            </address>
+
+            <p>Send notices about legal action to:</p>
+
+            <address>
+                Head of Legal Services<br>
+                Town Hall<br>
+                Sheffield<br>
+                S1 2HH
+            </address>
+
+            <p>In addition to any way permitted by law, we may serve any notice on you at the dwelling by putting it through the letterbox or fixing it to the dwelling or by leaving it with somebody for you at the dwelling.</p>
+        </div>
+    </details>
+</div>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Rights as a Tenant</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <p>Most Sheffield City Council tenants are 'Secure Tenants'. A secure tenant has a number of rights either by law or under our policies. These rights include the following:</p>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>Right to Repairs</summary>
+            <div class="details-accordion-content">
+                <p>For certain types of repairs you can arrange to have the work carried out yourself if:</p>
+                <ul>
+                    <li>you have ordered a repair</li>
+                    <li>the value of the repair is less than £250</li>
+                    <li>the repair has not been completed in the time promised</li>
+                    <li>you use a contractor on the Council's approved contractor list</li>
+                </ul>
+                <p>The 'Repairs and Maintenance to your home' leaflet tells you how you can go about giving a notice of claim and includes a form for doing this. The Repairs and Maintenance Team will only discuss any claims for money once the form has been sent in to them.</p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>Right to compensation for improvements</summary>
+            <div class="details-accordion-content">
+                <p>At the end of your tenancy you may get compensation for certain improvements you have made to your home. The leaflet called “Tenants own improvements” explains the scheme. You cannot get compensation if you are buying your home through the ‘Right to Buy’ or ‘Rent to Mortgage’ scheme or for any improvements costing less than £50.</p>
+                <p>Tenant's Own Improvements ↗</p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>Right to take in lodgers</summary>
+            <div class="details-accordion-content">
+                <p>You can take in lodgers without getting the permission of the Council Housing Service as long as your home does not become overcrowded. If you get Housing Benefit you must tell the Area Housing Office and the Housing Benefits Service that you have taken in lodgers as this may affect the amount of benefit you can receive. (If you don’t tell the Area Housing Office and the Council Housing Service finds out later, your benefit may be reduced for the period you have had lodgers, and any benefit which has been overpaid may be recovered.)</p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>Right to Succeed</summary>
+            <div class="details-accordion-content">
+                <p>The following rules apply if you die and you did not take over the tenancy from a member of your family:</p>
+                <ul>
+                    <li>Your spouse or civil partner will have the right to succeed to the tenancy provided that they occupy the property as their only or principal home, or</li>
+                    <li>Another member of your family can take over the tenancy if they lived in the property throughout the 12 months before your death and the property was their only or principal home.</li>
+                </ul>
+                <p>If more than one person qualifies to take over the tenancy, your spouse or civil partner will be entitled to take it over. If you have no spouse or civil partner living with you, everyone entitled to the tenancy must agree on who will take it on. If the people involved cannot agree we will choose who to give the tenancy to.</p>
+                <p>People who are not entitled to take over your tenancy may, in certain circumstances, (which are set out in the Council's Lettings Policy) be given a new secure tenancy of your property.</p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>Right to inspect personal files</summary>
+            <div class="details-accordion-content">
+                <p>Under the law and the Council Housing Service policies you have the right to see certain information which the Council Housing Service has about your housing circumstances.</p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>Right for compensation for loss of income due to broken appointments</summary>
+            <div class="details-accordion-content">
+                <p>If any housing staff fail to keep an appointment they arranged with you, you may claim compensation for loss of income. The appointment must have been made in writing and you must have lost wages in order to claim compensation.</p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>Right to be consulted</summary>
+            <div class="details-accordion-content">
+                <p>The Council Housing Service will consult you before the Council makes any change to any part of the tenancy conditions. There are a number of ways of consulting tenants on issues affecting them. You can get more details in Sheffield’s City Wide Tenant and Resident Participation Compact.</p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>Right to Buy</summary>
+            <div class="details-accordion-content">
+                <p>If you have been a council or housing association tenant for at least three years (or five years if you became a tenant after 18th January 2005) you will probably have a right to buy your home. You can get more details from the Council's home ownership team.</p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>Right to Exchange</summary>
+            <div class="details-accordion-content">
+                <p>You may make a 'Mutual Exchange' (that is swap homes) with another Council or Housing Association tenant. As long as the size of the families involved qualify for the size and type of home and any Council tenants involved do not owe any rent, it should be possible to agree to an exchange. You can get more information from the leaflet called <strong>Mutual Exchanges - How to Apply</strong>. You must not swap homes until you have a letter from the Council Housing Service agreeing to the swap.</p>
+            </div>
+        </details>
+
+        <details class="details-accordion">
+            <summary>Assignment</summary>
+            <div class="details-accordion-content">
+                <p>You may ask the Council Housing Service for permission to transfer your tenancy to a member of your family living with you.</p>
+            </div>
+        </details>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Leaflets and Information</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>You can get copies of leaflets and information on housing services from any Area Housing Office.</p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Reasons for us evicting you</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>The Council Housing Service can only evict you on behalf of the Council if the Council Housing Service gives you a “Notice Seeking Possession” and applies to the court to end your tenancy. The Council Housing Service can evict you from your home if the court thinks this is reasonable for any of the following reasons:</p>
+        <ul>
+            <li>You have not paid the rent or not kept to these conditions.</li>
+            <li>You or anybody living with you or visiting you has caused a nuisance or annoyance to other people, has been convicted for using the premises for illegal or immoral purposes, or convicted of a serious offence in or near the premises.</li>
+            <li>If you have been living with someone as their partner and your partner has left because of violence or threats of violence from you, either to them or a member of the family, and it is unlikely they will return.</li>
+            <li>You have damaged the property or common parts.</li>
+            <li>You or anybody living with you has damaged any furniture provided by the Council.</li>
+            <li>You got the tenancy because you or somebody else on your behalf made false statements.</li>
+            <li>You refuse to leave a property which we let to you temporarily while work was being carried out at your own property.</li>
+            <li>You will usually have a chance to put things right before the Council Housing Service evicts you. The Council Housing Service will usually seek to evict you if you, your household or guests harass people (unless other legal action is more appropriate).</li>
+        </ul>
+
+        <p>The Council Housing Service can evict you for the following reasons, if the court is satisfied that there is suitable alternative accommodation:</p>
+
+        <ul>
+            <li>If your home is overcrowded as defined in the Housing Act 1985.</li>
+            <li>If your home is to be altered or demolished and this cannot be done while you’re still living there.</li>
+        </ul>
+
+        <p>The Council Housing Service will consult you if the Council Housing Service wants to evict you because of these reasons. The Council Housing Service will also offer you alternative accommodation which meets your reasonable needs.</p>
+        <p>The Council Housing Service can evict you for the following reasons if the court is satisfied that it is reasonable and you could get suitable alternative accommodation:</p>
+
+        <ul>
+            <li>The home was designed or adapted for a disabled person and there is no longer a disabled person living in the home but the home is required for a disabled person.</li>
+            <li>The home is one to which special services are provided and there is no longer anyone living in the home who needs the special services and the home is required for someone who does.</li>
+            <li>The home is much larger than you reasonably need and you have taken over the tenancy from another member of your family. (This reason is rarely used).</li>
+        </ul>
+
+        <p>The Council Housing Service will consult you if the Council Housing Service wants to evict you because of these reasons. The Council Housing Service will also offer you alternative accommodation which meets your reasonable needs. If the Council Housing Service has to go to court you can challenge the reasons given by the Council Housing Service to evict you and/or the suitability of the alternative accommodation offered by the Council Housing Service. You should get legal advice before you do this. These reasons for ending tenancies are part of the Housing Act 1985.</p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Abandonment and Notice to Quit</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>If you abandon your property, the Council Housing Service will treat it as a surrender of your tenancy, and the Council Housing Service may re-enter the property and relet it. You will be responsible for the rent until the Council Housing Service accepts the surrender. If you do not use the property as your only or principal home, the Council Housing Service may serve you with a Notice to Quit.</p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Tenancy References</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>IMFIT (Rents) can provide a financial reference for you. Your Neighbourhood Support Team can provide a Tenancy Reference.</p>
+        <p>Both of these may be subject to charges before the reference is returned.</p>
+        <p>If this is for a mortgage company or a private landlord, the company needs to put this request in writing. There is a charge for this of £60, which must be paid to IMFIT before the reference is returned. The fee can be paid by debit/credit card or by BACS. If they want to pay this, transfer the call to IMFIT - this is NOT paid to the rent account.</p>
+
+        <strong>Reference requests should be sent to:</strong><br>
+        <address>
+          Sheffield Council Housing Service<br>
+          PO Box 5967<br>
+          Sheffield<br>
+          S2 9GH</p>
+        </address>
+        <p>For Social Landlords (Housing Associations), these also need to be put in writing, but there is no charge. Social Landlords can also email details of their request to <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> if they prefer to send an email.</p>
+    </div>
+</details>
 `,
   { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
   { typeKey: "" },
@@ -11353,7 +11728,7 @@ const tenancyConditions = new ContentH(
     keywords: ["Tenancy"],
     categories: ["Housing"],
   },
-  { date: "12/09/2025", name: "Motolani Akinola" }
+  { date: "08/11/2024", name: "Shahzad Athar" }
 );
 
 const tenancyVisits = new FormH(
