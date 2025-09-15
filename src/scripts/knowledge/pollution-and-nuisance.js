@@ -1715,7 +1715,6 @@ const masonryBeesTreatment = new ContentPaN(
     If further access equipment is required, then it would possibly mean an added cost.<br>
     If your customer is unsure about the possible additional cost, escalate the pest control enquiry and an officer will contact the customer about it.
     </p>
- 
   `,
   {
     buttonLabel: "Book treatment for Masonry Bees",
