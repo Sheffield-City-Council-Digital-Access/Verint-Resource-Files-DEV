@@ -3159,6 +3159,9 @@ const animalControl = new ContentPaN(
   <h3>Deceased Pet</h3>
   <div class="accordion-icon"></div>
   </summary>
+  <button class="accordion">Select a Topic</button>
+  <div class="panel">
+  
   <div class="accordion-content">
   <details class="details-accordion">
   <summary>
@@ -3170,69 +3173,69 @@ const animalControl = new ContentPaN(
   </p>
   </div>
   </details>
-        
-  <div class="accordion-content">
+  
+   <div class="accordion-content">
   <details class="details-accordion">
   <summary>
   Cat
   </summary>
   <div class="details-accordion-content">
   <p>Please provide us with details about the report / request</p>
-  <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
+  <p><i>i.e specific information or the defect - (1500 characters max)</i></p>
   <textarea></textarea>
   </div>
   </details>
-        
-         <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Dog
-            </summary>
-            <div class="details-accordion-content">
-                <p>Please provide us with details about the report / request</p>
-        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
-        <textarea></textarea>
-            </div>
-        </details>
-        
-         <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Mice
-            </summary>
-            <div class="details-accordion-content">
-                 <p>
-                  We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
-                  </p>
-            </div>
-        </details>
-        
-        <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Rats
-            </summary>
-            <div class="details-accordion-content">
-                 <p>
-                  We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
-                  </p>
-            </div>
-        </details>
-        
-          <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                None of the above
-            </summary>
-            <div class="details-accordion-content">
-            <p> please specify what animal it is</p>
-            <textarea></textarea>
-                <p>Please provide us with details about the report / request</p>
-        <p><italic>i.e specific information or the defect - (1500 characters max)</italic></p>
-        <textarea></textarea>
-            </div>
-        </details>
+  
+<div class="accordion-content">
+<details class="details-accordion">
+<summary>
+    Dog
+    </summary>
+    <div class="details-accordion-content">
+    <p>Please provide us with details about the report / request</p>
+    <p><i>i.e specific information or the defect - (1500 characters max)</i></p>
+    <textarea></textarea>
     </div>
+</details>
+
+<div class="accordion-content">
+<details class="details-accordion">
+<summary>
+ Mice
+    </summary>
+    <div class="details-accordion-content">
+    <p>
+    We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+    </p>
+    </div>
+</details>
+
+<div class="accordion-content">
+<details class="details-accordion">
+ <summary>
+ Rats
+</summary>
+<div class="details-accordion-content">
+<p>
+We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+</p>
+</div>
+</details>
+
+<div class="accordion-content">
+<details class="details-accordion">
+<summary>
+None of the above
+</summary>
+<div class="details-accordion-content">
+<p> please specify what animal it is</p>
+<textarea></textarea>
+<p>Please provide us with details about the report / request</p>
+<p><i>i.e specific information or the defect - (1500 characters max)</i></p>
+<textarea></textarea>
+</div>
+</details>
+</div>
 </details>
 
 <details class="accordion">
@@ -3349,6 +3352,78 @@ const animalControl = new ContentPaN(
   }interactionid=${
  KDF.getParams().interactionid
   }">Report a dangerous dog</a>
+    </div>
+</details>
+
+ <details class="accordion">
+    <summary class="accordion-header">
+    <h3>Dog Fouling</h3>
+    <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+  <a href="${window.location.protocol}//${
+ window.location.hostname
+  }/form/launch/report_dog_fouling?${
+ KDF.getParams().customerid
+ ? `customerid=${KDF.getParams().customerid}&`
+ : ""
+  }interactionid=${
+ KDF.getParams().interactionid
+  }">Report a dog fouling</a>
+    </div>
+</details>
+
+ <details class="accordion">
+    <summary class="accordion-header">
+    <h3>Handover Dog to Council</h3>
+    <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+  <a href="${window.location.protocol}//${
+ window.location.hostname
+  }/form/launch/report_dog_handover?${
+ KDF.getParams().customerid
+ ? `customerid=${KDF.getParams().customerid}&`
+ : ""
+  }interactionid=${
+ KDF.getParams().interactionid
+  }">Handover Dog to Council</a>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+    <h3>Lost Dog</h3>
+    <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+  <a href="${window.location.protocol}//${
+ window.location.hostname
+  }/form/launch/report_dog_as_lost?${
+ KDF.getParams().customerid
+ ? `customerid=${KDF.getParams().customerid}&`
+ : ""
+  }interactionid=${
+ KDF.getParams().interactionid
+  }">Report a Lost or Missing Dog</a>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+    <h3>Dog Straying</h3>
+    <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+  <a href="${window.location.protocol}//${
+ window.location.hostname
+  }/form/launch/report_straying_dog?${
+ KDF.getParams().customerid
+ ? `customerid=${KDF.getParams().customerid}&`
+ : ""
+  }interactionid=${
+ KDF.getParams().interactionid
+  }">Report a Straying Dog</a>
     </div>
 </details>
 
