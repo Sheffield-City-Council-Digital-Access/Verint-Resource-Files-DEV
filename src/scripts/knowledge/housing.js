@@ -1714,6 +1714,76 @@ const programmedWorks = new ContentH(
     Asset Management: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736315')">0114 2736315</a>, <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736275')">0114 2736275</a><br>
 </p>
 
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Fire and Safety</h3>
+        <div class="accordion-icon"></div>
+        High Rise Blocks Waking Watch 
+    </summary>
+    <div class="accordion-content">
+    <p>The following information for tenants — Waking Watch & Fire Safety created for any tenants 
+      calling for further information on the back of letters sent around <time datetime="2025-08-04">4th August</time>.</p>
+    <p>This affects the following tower blocks:</p>
+    <ul>
+        <li>Handbank</li>
+        <li>Callow</li>
+        <li>Parkfield</li>
+        <li>Newfield</li>
+        <li>Bankwood</li>
+        <li>Pemberton</li>
+        <li>Gregory</li>
+        <li>Keating</li>
+        <li>Wiggen</li>
+      </ul>
+    <p>Thank you for getting in touch. I'd be happy to explain the recent fire safety measures being 
+    introduced in your building.</p>
+    <p><strong>Main Message:</strong>"<i>As part of our ongoing commitment to keeping all residents safe, 
+    we're introducing a temporary <strong>waking watch</strong> in your block. This is due to having 
+    identified a small amount of insulation in a handful of buildings that needs further investigation. 
+    While there is no immediate danger, we've already put extra safety measures in place. This is a 
+    precautionary measure while we continue to assess the external areas of the building."</i></p>
+
+     <p>"<i>This is in addition to the fire safety upgrades we've already completed, which have strengthened 
+     the overall safety provisions in your building."</i></p>
+
+      <p>"<i>The waking watch team will carry out regular patrols throughout the building and will be on hand 
+      to respond in the unlikely event of a fire. We're confident that no issues will arise, but this added 
+      layer of safety is there to provide reassurance and protection."</i></p>
+      
+      <p>"You can help us keep the building safe by:<br>
+    
+      <ul><i>
+        <li>Keep communal areas and escape routes clear of personal items or waste.</li>
+        <li>Dispose of rubbish properly and avoid leaving bulky items in or around bin stores.</li>
+        <li>Report any fire safety concerns to us straight away."</li>
+      </ul></i>
+    
+      <p>We will continue to keep you updated of any developments.</p>
+      
+      <p>Drop-in sessions have been arranged in your area to answer any further questions you might have:</p>
+      <ul>
+        <li>
+          <strong><i>Keating Block</strong> — <time datetime="2025-08-12">Tuesday 12th August</time>, 9:00-12:00.
+        </li>
+        <li>
+          <strong>Callow Block</strong> — <time datetime="2025-08-15">Friday 15th August</time>, 9:00-12:00.
+        </li>
+      </ul></i>
+      <p>Where representatives from the Fire Safety Team and Neighbourhood Officers will attend.</p>
+
+      <p><strong>Closing:</strong> "<i>We really appreciate your cooperation and understanding. If you have 
+      any further questions or concerns, please don't hesitate to contact us. We're here to help."</i></p>
+
+      <p><strong>NB:</strong>If the tenant asks to escalate their query, please advise them to call the FSCT 
+      on <a href="tel:+441142057501">0114 205 7501</a> and ask for <strong>James Hague</strong> or 
+      <strong>Luke Simpson</strong>.</p>
+    
+      <p>Residents with mobility concerns are encouraged to contact their Neighbourhood Officer to ensure 
+      their needs are considered in safety planning.</p>
+
+    </div>
+</details>
+
   `,
   {
     buttonLabel: "",
