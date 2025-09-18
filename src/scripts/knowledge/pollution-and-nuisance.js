@@ -1686,7 +1686,7 @@ const masonryBeesTreatment = new ContentPaN(
 
     <h3> Treatment Cost</h3>
 
-    <p>The treatment cost is £70.20.</p>
+    <p>The treatment cost is £79.20.</p>
     <p>
       If you receive one of the following benefits, the treatment cost will be
       reduced to <strong>£61.20:</strong>
@@ -1733,7 +1733,7 @@ const masonryBeesTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "26/08/2025", name: "Shaz Athar" }
+  { date: "18/09/2025", name: "Shaz Athar" }
 );
 
 const miceTreatment = new ContentPaN(
