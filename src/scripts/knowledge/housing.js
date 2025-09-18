@@ -1695,48 +1695,13 @@ const programmedWorks = new ContentH(
   </div>
 </details>
 
-<p>
-    Programme Support / Re-Roofing: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2052706')">0114 2052706</a><br>
-    </p>
- <p>
-    Surveyors: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2735715')">0114 2735715</a><br>
-</p>
-  <p>
-    Asbestos: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736315')">0114 2736315</a><br>
-</p>
-  <p>
-    Adaptations: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734908')">0114 2734908</a><br>
-</p>
-  <p>
-    Acquisitions: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734617')">0114 2734617</a><br>
-</p>
-<p>
-    Asset Management: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736315')">0114 2736315</a>, <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736275')">0114 2736275</a><br>
-</p>
-
 <details class="accordion">
     <summary class="accordion-header">
         <h3>Fire and Safety</h3>
         <div class="accordion-icon"></div>
-        High Rise Blocks Waking Watch 
     </summary>
     <div class="accordion-content">
-    <p>The following information for tenants — Waking Watch & Fire Safety created for any tenants 
-      calling for further information on the back of letters sent around <time datetime="2025-08-04">4th August</time>.</p>
-    <p>This affects the following tower blocks:</p>
-    <ul>
-        <li>Handbank</li>
-        <li>Callow</li>
-        <li>Parkfield</li>
-        <li>Newfield</li>
-        <li>Bankwood</li>
-        <li>Pemberton</li>
-        <li>Gregory</li>
-        <li>Keating</li>
-        <li>Wiggen</li>
-      </ul>
-    <p>Thank you for getting in touch. I'd be happy to explain the recent fire safety measures being 
-    introduced in your building.</p>
+    <h4>High Rise Blocks Waking Watch</h4>
     <p><strong>Main Message:</strong>"<i>As part of our ongoing commitment to keeping all residents safe, 
     we're introducing a temporary <strong>waking watch</strong> in your block. This is due to having 
     identified a small amount of insulation in a handful of buildings that needs further investigation. 
@@ -1763,10 +1728,10 @@ const programmedWorks = new ContentH(
       <p>Drop-in sessions have been arranged in your area to answer any further questions you might have:</p>
       <ul>
         <li>
-          <strong><i>Keating Block</strong> — <time datetime="2025-08-12">Tuesday 12th August</time>, 9:00-12:00.
+          <strong><i>Keating Block</strong> — Tuesday 12th August, 9:00-12:00.
         </li>
         <li>
-          <strong>Callow Block</strong> — <time datetime="2025-08-15">Friday 15th August</time>, 9:00-12:00.
+          <strong>Callow Block</strong> — Friday 15th August, 9:00-12:00.
         </li>
       </ul></i>
       <p>Where representatives from the Fire Safety Team and Neighbourhood Officers will attend.</p>
@@ -1775,14 +1740,33 @@ const programmedWorks = new ContentH(
       any further questions or concerns, please don't hesitate to contact us. We're here to help."</i></p>
 
       <p><strong>NB:</strong>If the tenant asks to escalate their query, please advise them to call the FSCT 
-      on <a href="tel:+441142057501">0114 205 7501</a> and ask for <strong>James Hague</strong> or 
-      <strong>Luke Simpson</strong>.</p>
+      on <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2057501')">0114 2057501</a>and 
+      ask for <strong>James Hague</strong> or <strong>Luke Simpson</strong>.</p>
     
       <p>Residents with mobility concerns are encouraged to contact their Neighbourhood Officer to ensure 
       their needs are considered in safety planning.</p>
 
     </div>
 </details>
+
+<p>
+    Programme Support / Re-Roofing: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2052706')">0114 2052706</a><br>
+    </p>
+ <p>
+    Surveyors: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2735715')">0114 2735715</a><br>
+</p>
+  <p>
+    Asbestos: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736315')">0114 2736315</a><br>
+</p>
+  <p>
+    Adaptations: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734908')">0114 2734908</a><br>
+</p>
+  <p>
+    Acquisitions: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734617')">0114 2734617</a><br>
+</p>
+<p>
+    Asset Management: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736315')">0114 2736315</a>, <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2736275')">0114 2736275</a><br>
+</p>
 
   `,
   {
@@ -1802,7 +1786,7 @@ const programmedWorks = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "31/07/2025", name: "Andy Walker" }
+  { date: "18/09/2025", name: "Shaz Athar" }
 );
 
 const propertyAge = new ContentH(
