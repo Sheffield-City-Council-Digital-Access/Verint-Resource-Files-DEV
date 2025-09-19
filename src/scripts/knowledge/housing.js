@@ -1741,10 +1741,20 @@ const programmedWorks = new ContentH(
       <p><strong>NB:</strong>If the tenant asks to escalate their query, please advise them to call the FSCT 
       on <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2057501')">0114 2057501</a> and 
       ask for <strong>James Hague</strong> or <strong>Luke Simpson</strong>.</p>
-    
-      <p>Residents with mobility concerns are encouraged to contact their Neighbourhood Officer to ensure 
-      their needs are considered in safety planning.</p>
 
+     <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+         Residents with mobility concerns are encouraged to contact their
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/hou_routing_enquiry?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">Neighbourhood officers</a>
+      to ensure their needs are considered in safety planning.
+      </p>
+    </section>
     </div>
 </details>
 
@@ -1772,8 +1782,8 @@ const programmedWorks = new ContentH(
     buttonLabel: "Raise a Report",
     formName: "hou_programmed_work",
   },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
-  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "asset_management_and_repairs_transferred_to_service" },
+  { typeKey: "asset_management_and_repairs_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1785,7 +1795,7 @@ const programmedWorks = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "18/09/2025", name: "Shaz Athar" }
+  { date: "19/09/2025", name: "Shaz Athar" }
 );
 
 const propertyAge = new ContentH(
