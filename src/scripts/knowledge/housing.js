@@ -1697,11 +1697,10 @@ const programmedWorks = new ContentH(
 
 <details class="accordion">
     <summary class="accordion-header">
-        <h3>Fire and Safety</h3>
+        <h3>Fire and Safety - High Rise Blocks Waking Watch</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-    <h4>High Rise Blocks Waking Watch</h4>
     <p><strong>Main Message:</strong>"<i>As part of our ongoing commitment to keeping all residents safe, 
     we're introducing a temporary <strong>waking watch</strong> in your block. This is due to having 
     identified a small amount of insulation in a handful of buildings that needs further investigation. 
@@ -1740,7 +1739,7 @@ const programmedWorks = new ContentH(
       any further questions or concerns, please don't hesitate to contact us. We're here to help."</i></p>
 
       <p><strong>NB:</strong>If the tenant asks to escalate their query, please advise them to call the FSCT 
-      on <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2057501')">0114 2057501</a>and 
+      on <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2057501')">0114 2057501</a> and 
       ask for <strong>James Hague</strong> or <strong>Luke Simpson</strong>.</p>
     
       <p>Residents with mobility concerns are encouraged to contact their Neighbourhood Officer to ensure 
