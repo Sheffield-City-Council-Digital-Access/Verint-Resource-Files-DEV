@@ -61,16 +61,20 @@ function handleInitialisingEvent() {
   }
 
   // --- HANDLE SIGN IN PAGE ----------------------------------------------- \\
- 
-  if (KDF.kdf().access === "citizen"
-    && KDF.kdf().customerset === "citizen_true") {
+
+  if (
+    KDF.kdf().access === "citizen" &&
+    KDF.kdf().customerset === "citizen_true"
+  ) {
     KDF.hidePage("page_sign_in");
     KDF.setVal("rad_sign_in", "true");
     if (enableSave) {
-      const buttons = document.querySelectorAll('button.success-btn');
-      const nextButtons = Array.from(buttons).filter(button => button.textContent.trim() === 'Next');
-      nextButtons.forEach(button => {
-        button.textContent = 'Save and continue';
+      const buttons = document.querySelectorAll("button.success-btn");
+      const nextButtons = Array.from(buttons).filter(
+        (button) => button.textContent.trim() === "Next"
+      );
+      nextButtons.forEach((button) => {
+        button.textContent = "Save and continue";
       });
     }
   }
@@ -100,7 +104,8 @@ function handleInitialisingEvent() {
       favicon.rel = "icon";
       document.head.appendChild(favicon);
     }
-    favicon.href = "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
+    favicon.href =
+      "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
   })();
 
   // --- APPLY CLASS WHEN SKIP IF FOCUSED  --------------------------------- \\
@@ -172,7 +177,10 @@ function handleInitialisingEvent() {
       console.error(".dform_section_box_core_case_fields element not found.");
     }
 
-    const targetElement = KDF.kdf().form.name === "cpe_my_profile" ? "NavigationAreaInSingleColumnTemplate" : "dform_control_buttons";
+    const targetElement =
+      KDF.kdf().form.name === "cpe_my_profile"
+        ? "NavigationAreaInSingleColumnTemplate"
+        : "dform_control_buttons";
     const controlButtons = document.getElementById(targetElement);
     if (controlButtons) {
       const visibleBackButtonHTML = `
@@ -199,7 +207,7 @@ function handleInitialisingEvent() {
   (() => {
     const printButton = document.getElementById("dform_print");
     if (printButton) {
-      printButton.textContent = "Print this page"
+      printButton.textContent = "Print this page";
     }
   })();
 
@@ -212,8 +220,8 @@ function handleInitialisingEvent() {
 
     if (pagenav && controlButtons && backButton) {
       const spans = pagenav.querySelectorAll("li > span");
-      spans.forEach(span => {
-        span.textContent = '>';
+      spans.forEach((span) => {
+        span.textContent = ">";
       });
       backButton.insertAdjacentElement("afterend", pagenav);
     }
@@ -267,9 +275,9 @@ function handleInitialisingEvent() {
   // --- ADD CURRECY SYMBOL ------------------------------------------------ \\
 
   (() => {
-    const currencyWidgets = document.querySelectorAll('.dform_widget.currency');
+    const currencyWidgets = document.querySelectorAll(".dform_widget.currency");
 
-    currencyWidgets.forEach(widget => {
+    currencyWidgets.forEach((widget) => {
       const inputElement = widget.querySelector('input[type="number"]');
 
       if (inputElement) {
@@ -280,19 +288,29 @@ function handleInitialisingEvent() {
           const originalGridRow = computedStyles.gridRow;
           const originalGridColumn = computedStyles.gridColumn;
 
-          const inputGroup = document.createElement('div');
-          inputGroup.classList.add('currency-input-group');
+          const inputGroup = document.createElement("div");
+          inputGroup.classList.add("currency-input-group");
 
-          if (originalGridRow && originalGridRow !== 'auto' && originalGridRow !== 'initial' && originalGridRow !== 'unset') {
+          if (
+            originalGridRow &&
+            originalGridRow !== "auto" &&
+            originalGridRow !== "initial" &&
+            originalGridRow !== "unset"
+          ) {
             inputGroup.style.gridRow = originalGridRow;
           }
-          if (originalGridColumn && originalGridColumn !== 'auto' && originalGridColumn !== 'initial' && originalGridColumn !== 'unset') {
+          if (
+            originalGridColumn &&
+            originalGridColumn !== "auto" &&
+            originalGridColumn !== "initial" &&
+            originalGridColumn !== "unset"
+          ) {
             inputGroup.style.gridColumn = originalGridColumn;
           }
 
-          const currencySymbol = document.createElement('span');
-          currencySymbol.classList.add('currency-symbol');
-          currencySymbol.textContent = '£';
+          const currencySymbol = document.createElement("span");
+          currencySymbol.classList.add("currency-symbol");
+          currencySymbol.textContent = "£";
 
           inputParent.insertBefore(inputGroup, inputElement);
           inputGroup.appendChild(currencySymbol);
@@ -305,15 +323,15 @@ function handleInitialisingEvent() {
   // --- OVERRIDE PRINT FUNCTION ------------------------------------------- \\
 
   (() => {
-    const printButton = document.getElementById('dform_print');
-    const confirmationPage = document.getElementById('dform_page_complete');
+    const printButton = document.getElementById("dform_print");
+    const confirmationPage = document.getElementById("dform_page_complete");
 
     if (printButton && confirmationPage) {
       // Override the default action by removing the href attribute
-      printButton.removeAttribute('href');
+      printButton.removeAttribute("href");
 
       // Add a custom event listener
-      printButton.addEventListener('click', function (event) {
+      printButton.addEventListener("click", function (event) {
         // Prevent the default browser action for the link
         event.preventDefault();
 
@@ -343,16 +361,22 @@ function handleOnReadyEvent(_, kdf) {
   customerState = kdf.customerset;
   formattedTitle = KDF.getVal("le_title").replace(/\s+/g, "-");
 
-  if (document.getElementById('selected-address')) {
-    defaultSelectedAddressMessage = document.getElementById('selected-address').textContent.trim();
+  if (document.getElementById("selected-address")) {
+    defaultSelectedAddressMessage = document
+      .getElementById("selected-address")
+      .textContent.trim();
   }
 
   // --- SET ADDRESS IF ACCOUNT IUDENTIFIED ---------------------------------- \\
 
-  if (kdf.profileData['customerid'] && kdf.profileData['customerid'] !== ""
-    && kdf.profileData['profile-Postcode'] && kdf.profileData['profile-Postcode'] !== "") {
+  if (
+    kdf.profileData["customerid"] &&
+    kdf.profileData["customerid"] !== "" &&
+    kdf.profileData["profile-Postcode"] &&
+    kdf.profileData["profile-Postcode"] !== ""
+  ) {
     initialProfileAddressLoad = true;
-    $('#dform_widget_button_but_find_address_about_you').click();
+    $("#dform_widget_button_but_find_address_about_you").click();
   }
 
   // --- ADD CONTENT TO WHY WE NEED DATE OF BIRTH -------------------------- \\
@@ -366,7 +390,7 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- BUILD RELATED SERVICES -------------------------------------------- \\
 
-  buildRelatedServiceCards(relatedServices, 'related-services-panel');
+  buildRelatedServiceCards(relatedServices, "related-services-panel");
 
   // --- REMOVE TAB INDEX FROM SELECT ELEMENTS ----------------------------- \\
 
@@ -426,7 +450,13 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- SET EQUALITIES LINK ----------------------------------------------- \\
 
-  //   buildFormLink("equalities-information", "equalities_monitoring", true);
+  buildFormLink("equalities-information", "equalities_monitoring", true);
+
+  // --- SET SURVEY LINK --------------------------------------------------- \\
+
+  buildFormLink("survey-btn", "customer_satisfaction", true);
+
+  // --- ADD VALIDATION MESSAGES TO STORAGE -------------------------------- \\
 
   storeDefaultValidationMessages();
 
@@ -438,45 +468,45 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
 
-    if (kdf.params.ref && kdf.params.token) {
-      KDF.showPage("page_review");
-      KDF.gotoPage("page_review");
+  if (kdf.params.ref && kdf.params.token) {
+    KDF.showPage("page_review");
+    KDF.gotoPage("page_review");
 
+    KDF.makeReadonly();
+    $(".review-page-edit-button").remove();
+    $('.dform_section_box_review div[data-type="buttonset"]').remove();
+    return;
+  }
+
+  if (kdf.form.complete === "Y") {
+    KDF.showPage("page_review");
+    KDF.gotoPage("page_review");
+    if (kdf.params.viewmode === "R") {
       KDF.makeReadonly();
       $(".review-page-edit-button").remove();
       $('.dform_section_box_review div[data-type="buttonset"]').remove();
-      return;
+    } else {
+      // use stored page array when case management
+      if (
+        !KDF.kdf().form.name.startsWith("cm_") &&
+        !KDF.kdf().form.name.endsWith("_cm")
+      ) {
+        KDF.makeReadonly();
+        $(".review-page-edit-button").remove();
+        $('.dform_section_box_review div[data-type="buttonset"]').remove();
+      }
     }
-    
-    if (kdf.form.complete === "Y") {
+  } else {
+    if (kdf.form.caseid && kdf.form.ref) {
       KDF.showPage("page_review");
       KDF.gotoPage("page_review");
       if (kdf.params.viewmode === "R") {
         KDF.makeReadonly();
         $(".review-page-edit-button").remove();
         $('.dform_section_box_review div[data-type="buttonset"]').remove();
-      } else {
-        // use stored page array when case management
-        if (
-          !KDF.kdf().form.name.startsWith("cm_") &&
-          !KDF.kdf().form.name.endsWith("_cm")
-        ) {
-          KDF.makeReadonly();
-          $(".review-page-edit-button").remove();
-          $('.dform_section_box_review div[data-type="buttonset"]').remove();
-        }
-      }
-    } else {
-      if (kdf.form.caseid && kdf.form.ref) {
-        KDF.showPage("page_review");
-        KDF.gotoPage("page_review");
-        if (kdf.params.viewmode === "R") {
-          KDF.makeReadonly();
-          $(".review-page-edit-button").remove();
-          $('.dform_section_box_review div[data-type="buttonset"]').remove();
-        }
       }
     }
+  }
 
   // --- HANDLE FORMAT TITLE CASE ------------------------------------------ \\
 
@@ -500,51 +530,81 @@ function handleOnReadyEvent(_, kdf) {
 
   $(document).on("click", ".search-again-btn", function () {
     const currentPageId = getCurrentPageId();
-    const searchInput = document.querySelector(`#${currentPageId} input[data-customalias="postcode"]`);
-    let searchButton = document.querySelector(`#${currentPageId} .address-search-btn`);
-    const resultsList = document.querySelector(`#${currentPageId} .address-search-results`);
+    const searchInput = document.querySelector(
+      `#${currentPageId} input[data-customalias="postcode"]`
+    );
+    let searchButton = document.querySelector(
+      `#${currentPageId} .address-search-btn`
+    );
+    const resultsList = document.querySelector(
+      `#${currentPageId} .address-search-results`
+    );
     if (resultsList) {
-      resultsList.value = '';
-      KDF.setWidgetRequired(resultsList.id.replace('dform_widget_', ''));
+      resultsList.value = "";
+      KDF.setWidgetRequired(resultsList.id.replace("dform_widget_", ""));
     }
 
-    let manualAddressElement = document.querySelector(`#${currentPageId} .manual-address-container`);
+    let manualAddressElement = document.querySelector(
+      `#${currentPageId} .manual-address-container`
+    );
     if (manualAddressElement) {
-      const detailsElement = manualAddressElement.querySelector('.details-accordion');
-      if (detailsElement && detailsElement.hasAttribute('open')) {
-        detailsElement.removeAttribute('open');
+      const detailsElement =
+        manualAddressElement.querySelector(".details-accordion");
+      if (detailsElement && detailsElement.hasAttribute("open")) {
+        detailsElement.removeAttribute("open");
       }
     }
 
-    let setAddressButton = document.querySelector(`#${currentPageId} .set-address-btn`);
+    let setAddressButton = document.querySelector(
+      `#${currentPageId} .set-address-btn`
+    );
 
-    const buttonContainer = document.querySelector(`#${getCurrentPageId()} .address-search-btn-container`);
+    const buttonContainer = document.querySelector(
+      `#${getCurrentPageId()} .address-search-btn-container`
+    );
     if (buttonContainer) {
-      buttonContainer.style.display = 'flex'; // Shows the element
+      buttonContainer.style.display = "flex"; // Shows the element
     }
 
-    searchButton = searchButton.id.replace('dform_widget_button_', '');
+    searchButton = searchButton.id.replace("dform_widget_button_", "");
     if (manualAddressElement) {
-      manualAddressElement = manualAddressElement.id.replace('dform_widget_html_', '');
+      manualAddressElement = manualAddressElement.id.replace(
+        "dform_widget_html_",
+        ""
+      );
     }
-    setAddressButton = setAddressButton.id.replace('dform_widget_button_', '');
+    setAddressButton = setAddressButton.id.replace("dform_widget_button_", "");
 
-    let selectedAddressContainer = document.querySelector(`#${getCurrentPageId()} .selected-address-container`);
+    let selectedAddressContainer = document.querySelector(
+      `#${getCurrentPageId()} .selected-address-container`
+    );
     if (selectedAddressContainer) {
-      selectedAddressContainer = selectedAddressContainer.id.replace('dform_widget_html_', '');
+      selectedAddressContainer = selectedAddressContainer.id.replace(
+        "dform_widget_html_",
+        ""
+      );
     }
 
-    const selectedAddressSpan = document.querySelector(`#${currentPageId} #selected-address`);
+    const selectedAddressSpan = document.querySelector(
+      `#${currentPageId} #selected-address`
+    );
     if (selectedAddressSpan) {
       selectedAddressSpan.textContent = defaultSelectedAddressMessage;
     }
 
-    let mapCntainer = document.querySelector(`#${currentPageId} .map-container`);
+    let mapCntainer = document.querySelector(
+      `#${currentPageId} .map-container`
+    );
     if (mapCntainer) {
-      mapCntainer = mapCntainer.id.replace('dform_widget_html_', '');
+      mapCntainer = mapCntainer.id.replace("dform_widget_html_", "");
     }
 
-    if (resultsList && searchInput && searchButton && selectedAddressContainer) {
+    if (
+      resultsList &&
+      searchInput &&
+      searchButton &&
+      selectedAddressContainer
+    ) {
       hideShowMultipleElements([
         { name: searchInput.name, display: "show" },
         { name: searchButton, display: "show" },
@@ -566,22 +626,32 @@ function handleOnReadyEvent(_, kdf) {
   // The main click event handler
   $(document).on("click", ".set-address-btn", function () {
     const handleSearchResults = (currentPageId, buttonId) => {
-      const searchResultsContainer = document.querySelector(`#${currentPageId} .address-search-results`);
-      const searchResultsSelect = searchResultsContainer?.querySelector('select');
+      const searchResultsContainer = document.querySelector(
+        `#${currentPageId} .address-search-results`
+      );
+      const searchResultsSelect =
+        searchResultsContainer?.querySelector("select");
 
       if (searchResultsSelect && searchResultsSelect.value) {
         // A valid address was selected.
-        const action = addressSearchType === "national" ? "retrieve-national-address" : "retrieve-local-address";
-        KDF.customdata(action, buttonId, true, true, { propertyId: searchResultsSelect.value });
+        const action =
+          addressSearchType === "national"
+            ? "retrieve-national-address"
+            : "retrieve-local-address";
+        KDF.customdata(action, buttonId, true, true, {
+          propertyId: searchResultsSelect.value,
+        });
         return true; // Return true to indicate success
       } else if (searchResultsContainer) {
         // No address was selected, so show the validation error.
-        const validationMessage = searchResultsContainer.querySelector('.dform_validationMessage');
+        const validationMessage = searchResultsContainer.querySelector(
+          ".dform_validationMessage"
+        );
         if (validationMessage) {
-          validationMessage.style.display = 'block';
+          validationMessage.style.display = "block";
         }
         if (searchResultsSelect) {
-          searchResultsSelect.classList.add('dform_fielderror');
+          searchResultsSelect.classList.add("dform_fielderror");
         }
         return false; // Return false to indicate failure
       }
@@ -589,19 +659,26 @@ function handleOnReadyEvent(_, kdf) {
     };
 
     const currentPageId = getCurrentPageId();
-    const manualAddressElement = document.querySelector(`#${currentPageId} .manual-address-container`);
+    const manualAddressElement = document.querySelector(
+      `#${currentPageId} .manual-address-container`
+    );
 
     // Check if the manual address form exists on the page
     if (manualAddressElement) {
-      const detailsElement = manualAddressElement.querySelector('.details-accordion');
+      const detailsElement =
+        manualAddressElement.querySelector(".details-accordion");
 
       // Check if the manual address accordion is open
-      if (detailsElement && detailsElement.hasAttribute('open')) {
+      if (detailsElement && detailsElement.hasAttribute("open")) {
         // Scenario 1: Manual form is open; validate its fields.
-        const searchResultsSelect = document.querySelector(`#${currentPageId} .address-search-results select`);
+        const searchResultsSelect = document.querySelector(
+          `#${currentPageId} .address-search-results select`
+        );
         if (searchResultsSelect) {
-          searchResultsSelect.value = ''; // Clear selected value from search results
-          KDF.setWidgetNotRequired(searchResultsSelect.id.replace('dform_widget_', ''));
+          searchResultsSelect.value = ""; // Clear selected value from search results
+          KDF.setWidgetNotRequired(
+            searchResultsSelect.id.replace("dform_widget_", "")
+          );
         }
 
         const addressFields = getValuesOfInputFields([
@@ -612,52 +689,83 @@ function handleOnReadyEvent(_, kdf) {
         ]);
 
         let allFieldsValid = true;
-        addressFields.forEach(field => {
-          const fieldContainer = document.querySelector(`[data-customalias="${field.alias}"]`)?.closest('.dform_widget_field');
-          const validationMessage = fieldContainer?.querySelector('.dform_validationMessage');
-          const inputElement = fieldContainer?.querySelector('input');
+        addressFields.forEach((field) => {
+          const fieldContainer = document
+            .querySelector(`[data-customalias="${field.alias}"]`)
+            ?.closest(".dform_widget_field");
+          const validationMessage = fieldContainer?.querySelector(
+            ".dform_validationMessage"
+          );
+          const inputElement = fieldContainer?.querySelector("input");
 
           if (!field.value) {
             allFieldsValid = false;
-            if (validationMessage) validationMessage.style.display = 'block';
-            if (inputElement) inputElement.classList.add('dform_fielderror');
+            if (validationMessage) validationMessage.style.display = "block";
+            if (inputElement) inputElement.classList.add("dform_fielderror");
           } else {
-            if (validationMessage) validationMessage.style.display = 'none';
-            if (inputElement) inputElement.classList.remove('dform_fielderror');
+            if (validationMessage) validationMessage.style.display = "none";
+            if (inputElement) inputElement.classList.remove("dform_fielderror");
           }
         });
 
         if (allFieldsValid) {
-          const addressearchResults = document.querySelector(`#${currentPageId} .address-search-results`);
-          let setAddressButton = document.querySelector(`#${currentPageId} .set-address-btn`);
+          const addressearchResults = document.querySelector(
+            `#${currentPageId} .address-search-results`
+          );
+          let setAddressButton = document.querySelector(
+            `#${currentPageId} .set-address-btn`
+          );
           if (setAddressButton) {
-            setAddressButton = setAddressButton.id.replace('dform_widget_button_', '');
+            setAddressButton = setAddressButton.id.replace(
+              "dform_widget_button_",
+              ""
+            );
           }
 
-          const buttonContainer = document.querySelector(`#${currentPageId} .address-search-btn-container`);
-          let manualAddressElement = document.querySelector(`#${currentPageId} .manual-address-container`);
+          const buttonContainer = document.querySelector(
+            `#${currentPageId} .address-search-btn-container`
+          );
+          let manualAddressElement = document.querySelector(
+            `#${currentPageId} .manual-address-container`
+          );
           if (manualAddressElement) {
-            manualAddressElement = manualAddressElement.id.replace('dform_widget_html_', '');
+            manualAddressElement = manualAddressElement.id.replace(
+              "dform_widget_html_",
+              ""
+            );
           }
 
           const addressDataForDisplay = {
-            property: addressFields.find(field => field.alias === 'property')?.value || '',
-            streetName: addressFields.find(field => field.alias === 'streetName')?.value || '',
-            city: addressFields.find(field => field.alias === 'city')?.value || '',
-            postcode: addressFields.find(field => field.alias === 'postCode')?.value || '',
+            property:
+              addressFields.find((field) => field.alias === "property")
+                ?.value || "",
+            streetName:
+              addressFields.find((field) => field.alias === "streetName")
+                ?.value || "",
+            city:
+              addressFields.find((field) => field.alias === "city")?.value ||
+              "",
+            postcode:
+              addressFields.find((field) => field.alias === "postCode")
+                ?.value || "",
           };
 
           const fullAddressDisplay = buildAddressMarkup(addressDataForDisplay);
-          let selectedAddressContainer = document.querySelector(`#${currentPageId} .selected-address-container`);
+          let selectedAddressContainer = document.querySelector(
+            `#${currentPageId} .selected-address-container`
+          );
           if (selectedAddressContainer) {
             selectedAddressContainer.innerHTML = fullAddressDisplay;
-            selectedAddressContainer = selectedAddressContainer.id.replace('dform_widget_html_', '');
+            selectedAddressContainer = selectedAddressContainer.id.replace(
+              "dform_widget_html_",
+              ""
+            );
           }
 
-          let fullAddress = '';
-          addressFields.forEach(field => {
+          let fullAddress = "";
+          addressFields.forEach((field) => {
             if (field.value) {
-              if (field.alias === 'streetName' || field.alias === 'city') {
+              if (field.alias === "streetName" || field.alias === "city") {
                 fullAddress += `${field.value}, `;
               } else {
                 fullAddress += `${field.value} `;
@@ -671,14 +779,14 @@ function handleOnReadyEvent(_, kdf) {
           ]);
 
           if (addressearchResults) {
-            const selectElement = addressearchResults.querySelector('select');
+            const selectElement = addressearchResults.querySelector("select");
             if (selectElement) {
-              selectElement.style.display = 'none'; // Hides the element
+              selectElement.style.display = "none"; // Hides the element
             }
           }
 
           if (buttonContainer) {
-            buttonContainer.style.display = 'none'; // Hides the element
+            buttonContainer.style.display = "none"; // Hides the element
           }
 
           hideShowMultipleElements([
@@ -687,7 +795,6 @@ function handleOnReadyEvent(_, kdf) {
             { name: manualAddressElement, display: "hide" },
           ]);
         }
-
       } else {
         // Scenario 2: Manual form is not open; validate the search results dropdown.
         handleSearchResults(currentPageId, this.id);
@@ -731,10 +838,10 @@ function handleOnReadyEvent(_, kdf) {
             error.code === error.PERMISSION_DENIED
               ? "User denied the request for Geolocation"
               : error.code === error.POSITION_UNAVAILABLE
-                ? "Location information is unavailable"
-                : error.code === error.TIMEOUT
-                  ? "The request to get user location timed out"
-                  : "An unknown error occurred";
+              ? "Location information is unavailable"
+              : error.code === error.TIMEOUT
+              ? "The request to get user location timed out"
+              : "An unknown error occurred";
 
           const errorMessageHtml = `
             <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
@@ -881,46 +988,76 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE CUSTOM TIME ------------------------------------------------ \\
 
-  $('.time-hour, .time-minute').on('input', function (e) {
-    const $parentTimeField = $(this).closest('.time-field');
-    const baseId = $parentTimeField.attr('id').replace('dform_widget_time_', '');
+  $(".time-hour, .time-minute").on("input", function (e) {
+    const $parentTimeField = $(this).closest(".time-field");
+    const baseId = $parentTimeField
+      .attr("id")
+      .replace("dform_widget_time_", "");
 
     let nextFieldId = null;
-    if ($(this).hasClass('time-hour')) {
+    if ($(this).hasClass("time-hour")) {
       nextFieldId = `dform_widget_num_${baseId}_minute`;
-    } else if ($(this).hasClass('time-minute')) {
+    } else if ($(this).hasClass("time-minute")) {
       nextFieldId = `dform_widget_sel_${baseId}_ampm`;
     }
     inputTime(this.id, nextFieldId);
   });
 
-  $('.time-ampm').on('change blur', function () {
-    const $parentTimeField = $(this).closest('.time-field');
-    const baseId = $parentTimeField.attr('id').replace('dform_widget_time_', '');
+  $(".time-ampm").on("change blur", function () {
+    const $parentTimeField = $(this).closest(".time-field");
+    const baseId = $parentTimeField
+      .attr("id")
+      .replace("dform_widget_time_", "");
 
     const hourVal = $(`#dform_widget_num_${baseId}_hour`).val();
     const minuteVal = $(`#dform_widget_num_${baseId}_minute`).val();
     const ampm = $(this).val();
 
-    const hour = (hourVal !== '' && hourVal !== null && hourVal !== undefined) ? parseInt(hourVal, 10) : NaN;
-    const minute = (minuteVal !== '' && minuteVal !== null && minuteVal !== undefined) ? parseInt(minuteVal, 10) : NaN;
+    const hour =
+      hourVal !== "" && hourVal !== null && hourVal !== undefined
+        ? parseInt(hourVal, 10)
+        : NaN;
+    const minute =
+      minuteVal !== "" && minuteVal !== null && minuteVal !== undefined
+        ? parseInt(minuteVal, 10)
+        : NaN;
 
-    handleTimeValidation($parentTimeField.attr('id'), hour, minute, ampm, baseId);
+    handleTimeValidation(
+      $parentTimeField.attr("id"),
+      hour,
+      minute,
+      ampm,
+      baseId
+    );
   });
 
-  $('.time-field').on('focusout', function (e) {
+  $(".time-field").on("focusout", function (e) {
     if (!$(this).has(e.relatedTarget).length && e.relatedTarget !== this) {
       const $parentTimeField = $(this);
-      const baseId = $parentTimeField.attr('id').replace('dform_widget_time_', '');
+      const baseId = $parentTimeField
+        .attr("id")
+        .replace("dform_widget_time_", "");
 
       const hourVal = $(`#dform_widget_num_${baseId}_hour`).val();
       const minuteVal = $(`#dform_widget_num_${baseId}_minute`).val();
       const ampm = $(`#dform_widget_sel_${baseId}_ampm`).val();
 
-      const hour = (hourVal !== '' && hourVal !== null && hourVal !== undefined) ? parseInt(hourVal, 10) : NaN;
-      const minute = (minuteVal !== '' && minuteVal !== null && minuteVal !== undefined) ? parseInt(minuteVal, 10) : NaN;
+      const hour =
+        hourVal !== "" && hourVal !== null && hourVal !== undefined
+          ? parseInt(hourVal, 10)
+          : NaN;
+      const minute =
+        minuteVal !== "" && minuteVal !== null && minuteVal !== undefined
+          ? parseInt(minuteVal, 10)
+          : NaN;
 
-      handleTimeValidation($parentTimeField.attr('id'), hour, minute, ampm, baseId);
+      handleTimeValidation(
+        $parentTimeField.attr("id"),
+        hour,
+        minute,
+        ampm,
+        baseId
+      );
     }
   });
 
@@ -957,14 +1094,14 @@ function handleOnReadyEvent(_, kdf) {
     streetName = formatTitleCase(kdf.profileData["profile-AddressLine1"]);
     fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
       streetName
-    )}, ${kdf.profileData["profile-AddressLine4"]}, ${kdf.profileData["profile-Postcode"]
-      }`;
+    )}, ${kdf.profileData["profile-AddressLine4"]}, ${
+      kdf.profileData["profile-Postcode"]
+    }`;
     handleSetReporter(
       new Date(kdf.profileData["profile-DateOfBirth"]),
       fullAddress
     );
-  } else if (KDF.getVal("txt_full_address_about_you")
-  ) {
+  } else if (KDF.getVal("txt_full_address_about_you")) {
     property = formatTitleCase(KDF.getVal("txt_property_about_you"));
     streetName = formatTitleCase(KDF.getVal("txt_street_name_about_you"));
     fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
@@ -1149,7 +1286,9 @@ function handleOnReadyEvent(_, kdf) {
         let page = element.closest('[data-type="page"]');
         if (page) {
           let pageTitleElement = page.querySelector(".header2");
-          pageTitleText = pageTitleElement ? pageTitleElement.textContent : "Unknown Section";
+          pageTitleText = pageTitleElement
+            ? pageTitleElement.textContent
+            : "Unknown Section";
           let pageId = page.id
             ? page.id.replace(/^dform_page_/, "")
             : `page-${Math.random().toString(36).substr(2, 9)}`;
@@ -1207,7 +1346,7 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE SIGN IN BUTTTON CLICK -------------------------------------- \\
 
-  $('#dform_widget_button_but_next_sign_in').on('click', function () {
+  $("#dform_widget_button_but_next_sign_in").on("click", function () {
     if (KDF.getVal("rad_sign_in") === "true") {
       window.location.href = `${PORTAL_URL}/account/${kdf.form.name}`;
     } else {
@@ -1215,7 +1354,7 @@ function handleOnReadyEvent(_, kdf) {
     }
   });
 
-  $('#dform_widget_button_but_view_my_requests').on('click', function () {
+  $("#dform_widget_button_but_view_my_requests").on("click", function () {
     window.location.href = `${PORTAL_URL}/requests`;
   });
 
@@ -1235,7 +1374,11 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   updateProgressBar(targetpageid);
 
   if (enableSave && kdf.customerset === "citizen_true") {
-    if (targetpageid > 2 && pageName !== "complete" && kdf.form.complete !== "Y") {
+    if (
+      targetpageid > 2 &&
+      pageName !== "complete" &&
+      kdf.form.complete !== "Y"
+    ) {
       KDF.saveQuiet();
     }
   }
@@ -1277,15 +1420,19 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
 
   let skipPages = 1;
-  if (document.getElementById('dform_page_page_sign_in')) {
+  if (document.getElementById("dform_page_page_sign_in")) {
     skipPages++;
   }
-  displayBackButton(targetpageid > skipPages && pageName !== "complete" && kdf.form.complete !== "Y");
+  displayBackButton(
+    targetpageid > skipPages &&
+      pageName !== "complete" &&
+      kdf.form.complete !== "Y"
+  );
 
-  const controlElement = document.getElementById('dform_controls');
+  const controlElement = document.getElementById("dform_controls");
   if (controlElement) {
-    const signInPage = document.getElementById('dform_page_page_sign_in');
-    const progressBar = document.getElementById('dform_progressbar_sheffield');
+    const signInPage = document.getElementById("dform_page_page_sign_in");
+    const progressBar = document.getElementById("dform_progressbar_sheffield");
     let showControls = false;
 
     if (progressBar) {
@@ -1427,9 +1574,9 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     "";
   const responsibility =
     main.responsibility ||
-      main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
-      main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
-      bg.sitecode
+    main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
+    main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
+    bg.sitecode
       ? "CHS"
       : "";
   const prestige =
@@ -1488,8 +1635,9 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
 
   property = formatTitleCase(response["profile-AddressNumber"]);
   streetName = formatTitleCase(response["profile-AddressLine1"]);
-  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${response["profile-AddressLine4"]
-    }, ${response["profile-Postcode"]}`;
+  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${
+    response["profile-AddressLine4"]
+  }, ${response["profile-Postcode"]}`;
 
   handleSetReporter(new Date(response["profile-DateOfBirth"]), fullAddress);
 
@@ -1529,15 +1677,15 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     action === "search-national-address"
   ) {
     let targetPageId = getCurrentPageId();
-    if (targetPageId === 'dform_page_page_about_you') {
-      KDF.setWidgetRequired('sel_search_results_about_you');
+    if (targetPageId === "dform_page_page_about_you") {
+      KDF.setWidgetRequired("sel_search_results_about_you");
     }
     if (initialProfileAddressLoad === true) {
       initialProfileAddressLoad = false;
       targetPageId = "dform_page_page_about_you";
       setTimeout(function () {
         setProfileAddressDetails(targetPageId, kdf);
-        KDF.setWidgetNotRequired('sel_search_results_about_you');
+        KDF.setWidgetNotRequired("sel_search_results_about_you");
       }, 0);
     }
 
@@ -1562,23 +1710,35 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       { alias: "searchResult", value: formattedSearchResult },
     ]);
 
-    const numberOfResults = propertySearchResult ? propertySearchResult.length : 0;
+    const numberOfResults = propertySearchResult
+      ? propertySearchResult.length
+      : 0;
 
-    const searchInput = document.querySelector(`#${targetPageId} input[data-customalias="postcode"]`);
-    let searchButton = document.querySelector(`#${targetPageId} .address-search-btn`);
+    const searchInput = document.querySelector(
+      `#${targetPageId} input[data-customalias="postcode"]`
+    );
+    let searchButton = document.querySelector(
+      `#${targetPageId} .address-search-btn`
+    );
 
-    const resultsList = document.querySelector(`#${targetPageId} .address-search-results`);
+    const resultsList = document.querySelector(
+      `#${targetPageId} .address-search-results`
+    );
     let resultsLabelId = null;
     if (resultsList) {
-      const labelElement = resultsList.querySelector('label');
+      const labelElement = resultsList.querySelector("label");
       if (labelElement) {
         resultsLabelId = labelElement.id;
       }
     }
 
-    let manualAddressElement = document.querySelector(`#${targetPageId} .manual-address-container`);
-    let setAddressButton = document.querySelector(`#${targetPageId} .set-address-btn`);
-    const searchedPostcode = searchInput ? searchInput.value : '';
+    let manualAddressElement = document.querySelector(
+      `#${targetPageId} .manual-address-container`
+    );
+    let setAddressButton = document.querySelector(
+      `#${targetPageId} .set-address-btn`
+    );
+    const searchedPostcode = searchInput ? searchInput.value : "";
 
     const resultsContent = `
         ${numberOfResults} addresses found for <strong>${searchedPostcode}</strong>.
@@ -1591,18 +1751,24 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
         searchStatusMessageElement.innerHTML = resultsContent;
       }
 
-      let selectElement = resultsList.querySelector('select');
+      let selectElement = resultsList.querySelector("select");
       if (selectElement) {
-        selectElement.style.display = 'block'; // Shows the element
+        selectElement.style.display = "block"; // Shows the element
       }
 
-      searchButton = searchButton.id.replace('dform_widget_button_', '');
+      searchButton = searchButton.id.replace("dform_widget_button_", "");
 
       if (manualAddressElement) {
-        manualAddressElement = manualAddressElement.id.replace('dform_widget_html_', '');
+        manualAddressElement = manualAddressElement.id.replace(
+          "dform_widget_html_",
+          ""
+        );
       }
       if (setAddressButton) {
-        setAddressButton = setAddressButton.id.replace('dform_widget_button_', '');
+        setAddressButton = setAddressButton.id.replace(
+          "dform_widget_button_",
+          ""
+        );
       }
 
       hideShowMultipleElements([
@@ -1649,61 +1815,84 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     } = response.data;
 
     const currentPageId = getCurrentPageId();
-    const addressSelectionSection = document.querySelector(`#${currentPageId} .address-selection-section`);
-    const selectedAddressSpan = document.querySelector(`#${currentPageId} #selected-address`);
+    const addressSelectionSection = document.querySelector(
+      `#${currentPageId} .address-selection-section`
+    );
+    const selectedAddressSpan = document.querySelector(
+      `#${currentPageId} #selected-address`
+    );
 
     if (status == 400 && action === "retrieve-location-from-coordinates") {
       if (addressSelectionSection) {
-        addressSelectionSection.classList.add('dform_fielderror');
+        addressSelectionSection.classList.add("dform_fielderror");
       }
 
       if (selectedAddressSpan) {
         selectedAddressSpan.textContent = message;
-        selectedAddressSpan.classList.add('dform_validationMessage');
-        selectedAddressSpan.style.display = 'block';
+        selectedAddressSpan.classList.add("dform_validationMessage");
+        selectedAddressSpan.style.display = "block";
       }
       return;
     }
 
     const addressDataForDisplay = {
-      subProperty: subProperty ? formatTitleCase(subProperty) : '',
-      buildingName: buildingName ? formatTitleCase(buildingName) : '',
-      buildingNumber: buildingNumber ? formatTitleCase(buildingNumber) : '',
-      property: property ? formatTitleCase(property) : '',
-      streetName: streetName ? formatTitleCase(streetName) : '',
-      locality: locality ? formatTitleCase(locality) : '',
-      city: city ? formatTitleCase(city) : '',
-      postcode: postcode ? postcode.toUpperCase() : ''
+      subProperty: subProperty ? formatTitleCase(subProperty) : "",
+      buildingName: buildingName ? formatTitleCase(buildingName) : "",
+      buildingNumber: buildingNumber ? formatTitleCase(buildingNumber) : "",
+      property: property ? formatTitleCase(property) : "",
+      streetName: streetName ? formatTitleCase(streetName) : "",
+      locality: locality ? formatTitleCase(locality) : "",
+      city: city ? formatTitleCase(city) : "",
+      postcode: postcode ? postcode.toUpperCase() : "",
     };
 
     const fullAddressDisplay = buildAddressMarkup(addressDataForDisplay);
-    let selectedAddressContainer = document.querySelector(`#${currentPageId} .selected-address-container`);
+    let selectedAddressContainer = document.querySelector(
+      `#${currentPageId} .selected-address-container`
+    );
     if (selectedAddressContainer) {
       selectedAddressContainer.innerHTML = fullAddressDisplay;
-      selectedAddressContainer = selectedAddressContainer.id.replace('dform_widget_html_', '');
+      selectedAddressContainer = selectedAddressContainer.id.replace(
+        "dform_widget_html_",
+        ""
+      );
     }
 
     if (addressSelectionSection) {
-      addressSelectionSection.classList.add('dform_fieldsuccess');
+      addressSelectionSection.classList.add("dform_fieldsuccess");
     }
 
     if (selectedAddressSpan) {
       const addressParts = Object.values(addressDataForDisplay)
         .filter(Boolean)
-        .join(', ');
+        .join(", ");
       selectedAddressSpan.innerHTML = addressParts;
-      selectedAddressSpan.classList.remove('dform_validationMessage');
+      selectedAddressSpan.classList.remove("dform_validationMessage");
     }
 
-    const addressearchResults = document.querySelector(`#${currentPageId} .address-search-results`);
-    let setAddressButton = document.querySelector(`#${currentPageId} .set-address-btn`);
+    const addressearchResults = document.querySelector(
+      `#${currentPageId} .address-search-results`
+    );
+    let setAddressButton = document.querySelector(
+      `#${currentPageId} .set-address-btn`
+    );
     if (setAddressButton) {
-      setAddressButton = setAddressButton.id.replace('dform_widget_button_', '');
+      setAddressButton = setAddressButton.id.replace(
+        "dform_widget_button_",
+        ""
+      );
     }
-    const buttonContainer = document.querySelector(`#${currentPageId} .address-search-btn-container`);
-    let manualAddressElement = document.querySelector(`#${currentPageId} .manual-address-container`);
+    const buttonContainer = document.querySelector(
+      `#${currentPageId} .address-search-btn-container`
+    );
+    let manualAddressElement = document.querySelector(
+      `#${currentPageId} .manual-address-container`
+    );
     if (manualAddressElement) {
-      manualAddressElement = manualAddressElement.id.replace('dform_widget_html_', '');
+      manualAddressElement = manualAddressElement.id.replace(
+        "dform_widget_html_",
+        ""
+      );
     }
 
     property = formatTitleCase(property);
@@ -1737,12 +1926,14 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     ]);
 
     if (addressearchResults) {
-      const selectElement = addressearchResults.querySelector('select');
+      const selectElement = addressearchResults.querySelector("select");
       if (selectElement) {
-        selectElement.style.display = 'none'; // Hides the element
-        selectElement.classList.remove('dform_fielderror');
+        selectElement.style.display = "none"; // Hides the element
+        selectElement.classList.remove("dform_fielderror");
       }
-      const validationMessage = addressearchResults?.querySelector('.dform_validationMessage');
+      const validationMessage = addressearchResults?.querySelector(
+        ".dform_validationMessage"
+      );
       if (validationMessage) {
         validationMessage.style.display = "none";
         validationMessage.textContent = "Select the address";
@@ -1750,15 +1941,17 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     }
 
     if (buttonContainer) {
-      buttonContainer.style.display = 'none'; // Hides the element
+      buttonContainer.style.display = "none"; // Hides the element
     }
 
-    let findOnMapElement = document.querySelector(`#${currentPageId} .map-container`);
+    let findOnMapElement = document.querySelector(
+      `#${currentPageId} .map-container`
+    );
     if (findOnMapElement) {
       if (easting && northing) {
         plotLocationOnMap(easting, northing);
       }
-      findOnMapElement = findOnMapElement.id.replace('dform_widget_html_', '');
+      findOnMapElement = findOnMapElement.id.replace("dform_widget_html_", "");
     }
 
     hideShowMultipleElements([
@@ -1928,21 +2121,23 @@ function handleFomComplate(event, kdf) {
   setTimeout(function () {
     const pagenav = document.getElementById("dform_pagenav");
     if (pagenav) {
-      pagenav.style.setProperty('display', 'none', 'important');
+      pagenav.style.setProperty("display", "none", "important");
       const ul = pagenav.querySelector("#dform_navigation");
       if (ul) {
-        ul.style.setProperty('display', 'none', 'important');
+        ul.style.setProperty("display", "none", "important");
       }
     }
   }, 0);
 
   const printButton = document.getElementById("dform_print");
   if (printButton) {
-    const controlButtonsList = document.querySelector('#dform_control_buttons > ul');
+    const controlButtonsList = document.querySelector(
+      "#dform_control_buttons > ul"
+    );
     if (controlButtonsList) {
-      controlButtonsList.style.setProperty('display', 'block', 'important');
+      controlButtonsList.style.setProperty("display", "block", "important");
     }
-    printButton.style.setProperty('display', 'inline-flex', 'important');
+    printButton.style.setProperty("display", "inline-flex", "important");
   }
 
   if (kdf.form.data.eml_address && kdf.form.data.eml_address !== "") {
@@ -2485,9 +2680,12 @@ function checkDate(id, dd, mm, yy, element) {
 
   const baseMessage = getValidationMessageFromSession(txtFieldId);
   let updatedMessage = baseMessage.replace("Enter ", "");
-  updatedMessage = updatedMessage.charAt(0).toUpperCase() + updatedMessage.slice(1);
+  updatedMessage =
+    updatedMessage.charAt(0).toUpperCase() + updatedMessage.slice(1);
 
-  $(`#${id} .date-dd, #${id} .date-mm, #${id} .date-yy`).removeClass("dform_fielderror");
+  $(`#${id} .date-dd, #${id} .date-mm, #${id} .date-yy`).removeClass(
+    "dform_fielderror"
+  );
   $(`#${id}`).find(".dform_validationMessage").text(baseMessage).hide();
 
   const activeField = element.name.slice(-2);
@@ -2517,7 +2715,11 @@ function checkDate(id, dd, mm, yy, element) {
       message: `${updatedMessage} must include a month and year`,
       fields: ["date-mm", "date-yy"],
     },
-    { condition: !dd, message: `${updatedMessage} must include a day`, fields: ["date-dd"] },
+    {
+      condition: !dd,
+      message: `${updatedMessage} must include a day`,
+      fields: ["date-dd"],
+    },
     {
       condition: activeField !== "dd" && !mm,
       message: `${updatedMessage} must include a month`,
@@ -2555,13 +2757,19 @@ function checkDate(id, dd, mm, yy, element) {
         .toString()
         .padStart(2, "0")}-${dd.toString().padStart(2, "0")}`;
       const localFormat = new Date(date).toLocaleDateString("en-GB");
-      $(`#${id.replace("_date_", "_txt_")}`).val(localFormat).change();
-      $(`#${id.replace("_date_", "_dt_")}`).val(date).change();
+      $(`#${id.replace("_date_", "_txt_")}`)
+        .val(localFormat)
+        .change();
+      $(`#${id.replace("_date_", "_dt_")}`)
+        .val(date)
+        .change();
     } else {
       $(`#${id.replace("_date_", "_txt_")}`).val("");
       $(`#${id.replace("_date_", "_dt_")}`).val("");
       setTimeout(function () {
-        $(`#${id}`).find('.date-dd, .date-mm, .date-yy').addClass("dform_fielderror");
+        $(`#${id}`)
+          .find(".date-dd, .date-mm, .date-yy")
+          .addClass("dform_fielderror");
       }, 0);
     }
   }
@@ -2598,8 +2806,19 @@ function getYearLabel(years) {
   return years === 1 ? "year" : "years";
 }
 
-function validDate(id, day, month, year, activeField, baseMessage, updatedMessage) {
-  const validationMsg = $(`#${id}`).find(".dform_validationMessage").text("").hide();
+function validDate(
+  id,
+  day,
+  month,
+  year,
+  activeField,
+  baseMessage,
+  updatedMessage
+) {
+  const validationMsg = $(`#${id}`)
+    .find(".dform_validationMessage")
+    .text("")
+    .hide();
   const inputDate = new Date(year, month - 1, day);
 
   if (activeField !== "yy") {
@@ -2620,22 +2839,30 @@ function validDate(id, day, month, year, activeField, baseMessage, updatedMessag
   if (inputDate < minDate) {
     const today = new Date();
     const yearsPast = today.getFullYear() - minDate.getFullYear();
-    validationMsg.text(
-      yearsPast > 0
-        ? `${updatedMessage} cannot be more than ${yearsPast} ${getYearLabel(yearsPast)} in the past`
-        : `${updatedMessage} must be today or in the future`
-    ).show();
+    validationMsg
+      .text(
+        yearsPast > 0
+          ? `${updatedMessage} cannot be more than ${yearsPast} ${getYearLabel(
+              yearsPast
+            )} in the past`
+          : `${updatedMessage} must be today or in the future`
+      )
+      .show();
     return false;
   }
 
   if (inputDate > maxDate) {
     const today = new Date();
     const yearsFuture = maxDate.getFullYear() - today.getFullYear();
-    validationMsg.text(
-      yearsFuture > 0
-        ? `${updatedMessage} cannot be more than ${yearsFuture} ${getYearLabel(yearsFuture)} in the future`
-        : `${updatedMessage} must be today or in the past`
-    ).show();
+    validationMsg
+      .text(
+        yearsFuture > 0
+          ? `${updatedMessage} cannot be more than ${yearsFuture} ${getYearLabel(
+              yearsFuture
+            )} in the future`
+          : `${updatedMessage} must be today or in the past`
+      )
+      .show();
     return false;
   }
 
@@ -2644,14 +2871,24 @@ function validDate(id, day, month, year, activeField, baseMessage, updatedMessag
       const [dateAId, dateBId] = pair.dateFields;
       if (id === dateAId) {
         const dateBValue = $(`#${dateBId.replace("_date_", "_dt_")}`).val();
-        if (dateBValue && !checkDateRelationship(inputDate, new Date(dateBValue), pair.rule)) {
-          validationMsg.text(`${baseMessage} ${pair.validationMessages[0]}`).show();
+        if (
+          dateBValue &&
+          !checkDateRelationship(inputDate, new Date(dateBValue), pair.rule)
+        ) {
+          validationMsg
+            .text(`${baseMessage} ${pair.validationMessages[0]}`)
+            .show();
           return false;
         }
       } else if (id === dateBId) {
         const dateAValue = $(`#${dateAId.replace("_date_", "_dt_")}`).val();
-        if (dateAValue && !checkDateRelationship(new Date(dateAValue), inputDate, pair.rule)) {
-          validationMsg.text(`${baseMessage} ${pair.validationMessages[1]}`).show();
+        if (
+          dateAValue &&
+          !checkDateRelationship(new Date(dateAValue), inputDate, pair.rule)
+        ) {
+          validationMsg
+            .text(`${baseMessage} ${pair.validationMessages[1]}`)
+            .show();
           return false;
         }
       }
@@ -2675,65 +2912,67 @@ function handleTimeValidation(parentId, hour, minute, ampm, baseId) {
   const txtFieldId = parentId.replace("_time_", "_txt_");
   const timeMessage = getValidationMessageFromSession(txtFieldId);
 
-  $(`#${parentId} .time-hour, #${parentId} .time-minute, #${parentId} .time-ampm`).removeClass('dform_fielderror');
-  $(`#${parentId}`).find('.dform_validationMessage').text(timeMessage).hide();
+  $(
+    `#${parentId} .time-hour, #${parentId} .time-minute, #${parentId} .time-ampm`
+  ).removeClass("dform_fielderror");
+  $(`#${parentId}`).find(".dform_validationMessage").text(timeMessage).hide();
 
   let hasError = false;
   let errorMsg = "";
   const errorFields = [];
-  const timeFields = ['time-hour', 'time-minute', 'time-ampm'];
+  const timeFields = ["time-hour", "time-minute", "time-ampm"];
 
   const errorConditions = [
     {
       condition: isNaN(hour) && isNaN(minute) && !ampm,
       message: timeMessage,
-      fields: timeFields
+      fields: timeFields,
     },
     {
       condition: !isNaN(hour) && !isNaN(minute) && !ampm,
       message: "The time you entered must include am or pm",
-      fields: ['time-ampm']
+      fields: ["time-ampm"],
     },
     {
       condition: !isNaN(hour) && isNaN(minute) && ampm,
       message: "The time you entered must include the minute",
-      fields: ['time-minute']
+      fields: ["time-minute"],
     },
     {
       condition: isNaN(hour) && !isNaN(minute) && ampm,
       message: "The time you entered must include the hour",
-      fields: ['time-hour']
+      fields: ["time-hour"],
     },
     {
       condition: !isNaN(hour) && isNaN(minute) && !ampm,
       message: "The time you entered must include the minute and am or pm",
-      fields: ['time-minute', 'time-ampm']
+      fields: ["time-minute", "time-ampm"],
     },
     {
       condition: isNaN(hour) && !isNaN(minute) && !ampm,
       message: "The time you entered must include am or pm",
-      fields: ['time-hour', 'time-ampm']
+      fields: ["time-hour", "time-ampm"],
     },
     {
       condition: isNaN(hour) && isNaN(minute) && ampm,
       message: "The time you entered must include the hour and minute",
-      fields: ['time-hour', 'time-minute']
+      fields: ["time-hour", "time-minute"],
     },
     {
       condition: hour > 12 || hour < 1,
       message: "Hour must be between 1 and 12.",
-      fields: ['time-hour']
+      fields: ["time-hour"],
     },
     {
       condition: minute > 59 || minute < 0,
       message: "Minute must be between 00 and 59.",
-      fields: ['time-minute']
+      fields: ["time-minute"],
     },
     {
-      condition: (isNaN(hour) || isNaN(minute) || !ampm),
+      condition: isNaN(hour) || isNaN(minute) || !ampm,
       message: timeMessage,
-      fields: timeFields
-    }
+      fields: timeFields,
+    },
   ];
 
   for (const condition of errorConditions) {
@@ -2746,19 +2985,25 @@ function handleTimeValidation(parentId, hour, minute, ampm, baseId) {
   }
 
   if (hasError) {
-    errorFields.forEach(field => {
-      $(`#${parentId} .${field}`).addClass('dform_fielderror');
+    errorFields.forEach((field) => {
+      $(`#${parentId} .${field}`).addClass("dform_fielderror");
     });
-    $(`#${parentId}`).find('.dform_validationMessage').text(errorMsg).show();
-    $(`#dform_widget_txt_${baseId}`).val('');
-    $(`#dform_widget_time_${baseId}[type="time"]`).val('');
+    $(`#${parentId}`).find(".dform_validationMessage").text(errorMsg).show();
+    $(`#dform_widget_txt_${baseId}`).val("");
+    $(`#dform_widget_time_${baseId}[type="time"]`).val("");
 
-    $(`#display_formatted_ampm_${baseId}`).text('N/A');
-    $(`#display_formatted_24hr_${baseId}`).text('N/A');
+    $(`#display_formatted_ampm_${baseId}`).text("N/A");
+    $(`#display_formatted_24hr_${baseId}`).text("N/A");
     return;
   }
 
-  if (hour !== null && !isNaN(hour) && minute !== null && !isNaN(minute) && ampm) {
+  if (
+    hour !== null &&
+    !isNaN(hour) &&
+    minute !== null &&
+    !isNaN(minute) &&
+    ampm
+  ) {
     const formattedAmpm = formatTimeInput(hour, minute, ampm);
     const formatted24hr = formatTimeForSubmission(hour, minute, ampm);
 
@@ -2778,7 +3023,7 @@ function handleTimeValidation(parentId, hour, minute, ampm, baseId) {
  * @param {string} nextID - The ID of the next input field to focus on.
  */
 function inputTime(id, nextID) {
-  const maxLength = $(`#${id}`).attr('maxlength');
+  const maxLength = $(`#${id}`).attr("maxlength");
   let value = $(`#${id}`).val();
 
   if (value.length >= maxLength) {
@@ -2799,7 +3044,7 @@ function inputTime(id, nextID) {
  * @returns {string} The formatted time string.
  */
 function formatTimeInput(hour, minute, ampm) {
-  const paddedMinute = minute.toString().padStart(2, '0');
+  const paddedMinute = minute.toString().padStart(2, "0");
   return `${hour}:${paddedMinute}${ampm.toLowerCase()}`;
 }
 
@@ -2812,13 +3057,13 @@ function formatTimeInput(hour, minute, ampm) {
  */
 function formatTimeForSubmission(hour, minute, ampm) {
   let hours24 = hour;
-  if (ampm === 'PM' && hour !== 12) {
+  if (ampm === "PM" && hour !== 12) {
     hours24 += 12;
-  } else if (ampm === 'AM' && hour === 12) {
+  } else if (ampm === "AM" && hour === 12) {
     hours24 = 0; // 12 AM is 00 in 24-hour format
   }
-  const paddedHour = hours24.toString().padStart(2, '0');
-  const paddedMinute = minute.toString().padStart(2, '0');
+  const paddedHour = hours24.toString().padStart(2, "0");
+  const paddedMinute = minute.toString().padStart(2, "0");
   return `${paddedHour}:${paddedMinute}`;
 }
 
@@ -2905,9 +3150,9 @@ function handleSetReporter(date, address) {
 // --- FORMAT ADDRESS ------------------------------------------------------- \\
 
 function removeDuplicateWords(address) {
-  const words = address.split(/\s+/).filter(word => word.length > 0);
+  const words = address.split(/\s+/).filter((word) => word.length > 0);
   const uniqueWords = [...new Set(words)];
-  return uniqueWords.join(' ');
+  return uniqueWords.join(" ");
 }
 
 // --- CREATE REVIEW PAGE --------------------------------------------------- \\
@@ -2947,7 +3192,9 @@ function getAndSetReviewPageData() {
       #dform_page_page_core_fields, 
       #dform_page_page_core_confirm_fields
     `;
-    const activeFormPages = $('.dform_page[data-active="true"]').not(excludedPages);
+    const activeFormPages = $('.dform_page[data-active="true"]').not(
+      excludedPages
+    );
 
     // Build an array of page numbers from the active pages
     let relevantPages = [];
@@ -2960,9 +3207,12 @@ function getAndSetReviewPageData() {
 
     // Handle the case where the form is complete
     if (KDF.kdf().form.complete === "Y") {
-      relevantPages = $(".dform_page").not(excludedPages).map(function () {
-        return $(this).attr("data-pos");
-      }).get();
+      relevantPages = $(".dform_page")
+        .not(excludedPages)
+        .map(function () {
+          return $(this).attr("data-pos");
+        })
+        .get();
     }
 
     // Store the constructed page array
@@ -3009,9 +3259,13 @@ function getAndSetReviewPageData() {
           contentDiv.empty();
         }
 
-        const headerContainer = $('<div class="review-page-header-container"></div>');
+        const headerContainer = $(
+          '<div class="review-page-header-container"></div>'
+        );
         const pageHeader = $(this).find(".header2").text();
-        headerContainer.append(`<h3 id="review-header-${pageName}">${pageHeader}</h3>`);
+        headerContainer.append(
+          `<h3 id="review-header-${pageName}">${pageHeader}</h3>`
+        );
         contentDiv.append(headerContainer);
 
         const dl = $("<dl class='review-list'></dl>");
@@ -3025,7 +3279,8 @@ function getAndSetReviewPageData() {
           let fieldValue = "Not answered";
 
           function getLegendText(classSelector) {
-            const parentElement = $(`.container[data-name="${fieldName}"]`).length
+            const parentElement = $(`.container[data-name="${fieldName}"]`)
+              .length
               ? $(`.container[data-name="${fieldName}"]`)
               : $(`.container.dform_widget_${fieldName}`);
             if (parentElement.length) {
@@ -3036,10 +3291,13 @@ function getAndSetReviewPageData() {
           if (fieldType === "select") {
             if (fieldName.startsWith("sel_search_results_")) {
               fieldLabel = "Address";
-              fieldValue = removeDuplicateWords(getValueFromAlias(pageId, "fullAddress"));
+              fieldValue = removeDuplicateWords(
+                getValueFromAlias(pageId, "fullAddress")
+              );
             } else {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-              fieldValue = KDF.kdf()?.form?.data?.[fieldName] ?? KDF.getVal(fieldName);
+              fieldValue =
+                KDF.kdf()?.form?.data?.[fieldName] ?? KDF.getVal(fieldName);
             }
           } else if (fieldType === "radio") {
             fieldLabel = getLegendText("radiogroup");
@@ -3052,8 +3310,12 @@ function getAndSetReviewPageData() {
             fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
           } else if (fieldType === "file") {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-            fieldValue = KDF.getVal(fieldName.replace("file_", "txt_file_name_"));
-            const filePath = KDF.getVal(fieldName.replace("file_", "txt_file_path_"));
+            fieldValue = KDF.getVal(
+              fieldName.replace("file_", "txt_file_name_")
+            );
+            const filePath = KDF.getVal(
+              fieldName.replace("file_", "txt_file_path_")
+            );
             if (KDF.kdf().access === "agent" && filePath) {
               fieldValue = `<a href="${filePath}" target="_blank">${fieldValue}</a>`;
             }
@@ -3063,8 +3325,12 @@ function getAndSetReviewPageData() {
               fieldValue = `£${KDF.getVal(fieldName)}`;
             } else if (fieldClass.indexOf("address-search") !== -1) {
               fieldLabel = "Address";
-              fieldValue = removeDuplicateWords(getValueFromAlias(pageId, "fullAddress"));
-            } else if (/\b(property|street-name|city|postcode)\b/.test(fieldClass)) {
+              fieldValue = removeDuplicateWords(
+                getValueFromAlias(pageId, "fullAddress")
+              );
+            } else if (
+              /\b(property|street-name|city|postcode)\b/.test(fieldClass)
+            ) {
               fieldLabel = false;
               fieldValue = "";
             } else {
@@ -3074,8 +3340,14 @@ function getAndSetReviewPageData() {
           }
 
           if (fieldLabel) {
-            if (!fieldValue || fieldValue === "" || fieldValue === null || fieldValue === undefined) {
-              fieldValue = fieldType === "file" ? "Not uploaded" : "Not answered";
+            if (
+              !fieldValue ||
+              fieldValue === "" ||
+              fieldValue === null ||
+              fieldValue === undefined
+            ) {
+              fieldValue =
+                fieldType === "file" ? "Not uploaded" : "Not answered";
             }
 
             const reviewItem = $("<div class='review-item'></div>")
@@ -3083,15 +3355,22 @@ function getAndSetReviewPageData() {
               .append(`<dd class="answer">${fieldValue}</dd>`);
 
             if (KDF.kdf().form.complete !== "Y") {
-              const changeLink = $("<a href='#'>Change</a>").on("click", function (e) {
-                e.preventDefault();
-                const buttonSet = $('.dform_section_box_review div[data-type="buttonset"]');
-                if (buttonSet.is(":hidden")) {
-                  buttonSet.show();
+              const changeLink = $("<a href='#'>Change</a>").on(
+                "click",
+                function (e) {
+                  e.preventDefault();
+                  const buttonSet = $(
+                    '.dform_section_box_review div[data-type="buttonset"]'
+                  );
+                  if (buttonSet.is(":hidden")) {
+                    buttonSet.show();
+                  }
+                  KDF.gotoPage(pageName, true, true, true);
                 }
-                KDF.gotoPage(pageName, true, true, true);
-              });
-              reviewItem.append($("<dd class='action'></dd>").append(changeLink));
+              );
+              reviewItem.append(
+                $("<dd class='action'></dd>").append(changeLink)
+              );
             }
 
             dl.append(reviewItem);
@@ -3116,12 +3395,16 @@ function refreshReviewPage() {
 function showCurrentProgress() {
   // Check if the URL contains the 'srid' parameter to identify a resumed session.
   const urlParams = new URLSearchParams(window.location.search);
-  const srid = urlParams.get('srid');
+  const srid = urlParams.get("srid");
 
   if (srid && KDF.kdf().form.complete !== "Y") {
     // Find all active pages, excluding the review page itself.
-    const activePages = $('.dform_page[data-active="true"]').not('#dform_page_page_review');
-    const totalPages = $('.dform_page').not('#dform_page_page_review, #dform_page_page_declaration, #dform_page_complete').length;
+    const activePages = $('.dform_page[data-active="true"]').not(
+      "#dform_page_page_review"
+    );
+    const totalPages = $(".dform_page").not(
+      "#dform_page_page_review, #dform_page_page_declaration, #dform_page_complete"
+    ).length;
 
     // Calculate the completion percentage.
     const completedPages = activePages.length;
@@ -3138,7 +3421,7 @@ function showCurrentProgress() {
     `;
 
     // Prepend the new markup to the correct container.
-    const reviewContentContainer = $('#dform_widget_html_ahtm_review_content');
+    const reviewContentContainer = $("#dform_widget_html_ahtm_review_content");
     if (reviewContentContainer.length) {
       reviewContentContainer.prepend(progressMarkup);
     }
@@ -3150,12 +3433,16 @@ function showCurrentProgress() {
     reviewContentContainer.after(continueButton);
 
     // Add a click handler to the button to navigate to the first incomplete page.
-    $('#btn_continue_application').on('click', function () {
+    $("#btn_continue_application").on("click", function () {
       // Find the first inactive page.
-      const firstIncompletePage = $('.dform_page[data-active="false"]').not('#dform_page_page_review, #dform_page_page_declaration, #dform_page_complete').first();
+      const firstIncompletePage = $('.dform_page[data-active="false"]')
+        .not(
+          "#dform_page_page_review, #dform_page_page_declaration, #dform_page_complete"
+        )
+        .first();
 
       if (firstIncompletePage.length) {
-        const pageName = firstIncompletePage.attr('id').split('dform_page_')[1];
+        const pageName = firstIncompletePage.attr("id").split("dform_page_")[1];
         KDF.gotoPage(pageName);
       }
     });
@@ -3177,7 +3464,9 @@ function closeCase() {
 
 function checkAddressHasBeenSet(action = "next page") {
   const currentPageId = getCurrentPageId();
-  const selectedAddressSpan = document.querySelector(`#${currentPageId} #selected-address`);
+  const selectedAddressSpan = document.querySelector(
+    `#${currentPageId} #selected-address`
+  );
   const fullAddress = document.querySelector(
     `#${currentPageId} input[data-customalias="fullAddress"]`
   );
@@ -3195,8 +3484,8 @@ function checkAddressHasBeenSet(action = "next page") {
       const validSiteCode = acceptGMSites
         ? true
         : KDF.getVal(siteCode.name).startsWith("344")
-          ? true
-          : false;
+        ? true
+        : false;
       if (siteNameHasValue && siteCodeHasValue && validSiteCode) {
         if (action === "submit") {
           KDF.gotoPage("complete", true, true, false);
@@ -3209,8 +3498,8 @@ function checkAddressHasBeenSet(action = "next page") {
           : "Choose a location on the public highway";
         if (selectedAddressSpan) {
           selectedAddressSpan.textContent = errorMessage;
-          selectedAddressSpan.classList.add('dform_validationMessage');
-          selectedAddressSpan.style.display = 'block';
+          selectedAddressSpan.classList.add("dform_validationMessage");
+          selectedAddressSpan.style.display = "block";
         }
         $("#map_container").addClass("map_container_error");
       }
@@ -3222,24 +3511,25 @@ function checkAddressHasBeenSet(action = "next page") {
       }
     }
   } else {
-    const mapElement = document.querySelector(`#${currentPageId} .map-container`);
-    const detailsElement = mapElement.querySelector('.details-accordion');
+    const mapElement = document.querySelector(
+      `#${currentPageId} .map-container`
+    );
+    const detailsElement = mapElement.querySelector(".details-accordion");
 
     // Check if the map element exists on the page
-    if (mapElement && detailsElement && detailsElement.hasAttribute('open')) {
-
+    if (mapElement && detailsElement && detailsElement.hasAttribute("open")) {
       // Check if the map accordion is open
       // if (detailsElement && detailsElement.hasAttribute('open')) {
 
-        const errorMessage = acceptGMSites
-          ? defaultSelectedAddressMessage
-          : "Choose a location on the public highway";
-        if (selectedAddressSpan) {
-          selectedAddressSpan.textContent = errorMessage;
-          selectedAddressSpan.classList.add('dform_validationMessage');
-          selectedAddressSpan.style.display = 'block';
-        }
-        $("#map_container").addClass("map_container_error");
+      const errorMessage = acceptGMSites
+        ? defaultSelectedAddressMessage
+        : "Choose a location on the public highway";
+      if (selectedAddressSpan) {
+        selectedAddressSpan.textContent = errorMessage;
+        selectedAddressSpan.classList.add("dform_validationMessage");
+        selectedAddressSpan.style.display = "block";
+      }
+      $("#map_container").addClass("map_container_error");
       // }
     } else {
       const searchResult = document.querySelector(
@@ -3248,25 +3538,31 @@ function checkAddressHasBeenSet(action = "next page") {
 
       const isSearchResultVisible = searchResult.offsetParent !== null;
       if (isSearchResultVisible) {
-        const searchResultContainer = searchResult.closest('.dform_widget_field');
-        const validationMessage = searchResultContainer?.querySelector('.dform_validationMessage');
+        const searchResultContainer = searchResult.closest(
+          ".dform_widget_field"
+        );
+        const validationMessage = searchResultContainer?.querySelector(
+          ".dform_validationMessage"
+        );
         const selectedValue = searchResult.value;
         let message = "Select the address";
 
-        if (selectedValue !== '' && selectedValue !== 'Please select...') {
+        if (selectedValue !== "" && selectedValue !== "Please select...") {
           message = "Click use this address";
         }
         if (validationMessage) {
           validationMessage.style.display = "block";
           validationMessage.textContent = message;
         }
-        searchResult.classList.add('dform_fielderror');
+        searchResult.classList.add("dform_fielderror");
       } else {
         const postcode = document.querySelector(
           `#${currentPageId} input[data-customalias="postcode"]`
         );
-        const postcodeContainer = postcode?.closest('.dform_widget_field');
-        const validationMessage = postcodeContainer?.querySelector('.dform_validationMessage');
+        const postcodeContainer = postcode?.closest(".dform_widget_field");
+        const validationMessage = postcodeContainer?.querySelector(
+          ".dform_validationMessage"
+        );
         const postcodeHasValue = postcode ? KDF.getVal(postcode.name) : false;
         let message = "Enter the postcode";
         if (postcodeHasValue) {
@@ -3276,65 +3572,84 @@ function checkAddressHasBeenSet(action = "next page") {
           validationMessage.style.display = "block";
           validationMessage.textContent = message;
         }
-        postcode?.classList.add('dform_fielderror');
+        postcode?.classList.add("dform_fielderror");
       }
-
     }
   }
 }
 
 function setProfileAddressDetails(targetPageId, kdf) {
   let {
-    'profile-AddressNumber': property,
-    'profile-AddressLine1': streetName,
-    'profile-AddressLine2': locality,
-    'profile-AddressLine4': city,
-    'profile-Postcode': postcode,
+    "profile-AddressNumber": property,
+    "profile-AddressLine1": streetName,
+    "profile-AddressLine2": locality,
+    "profile-AddressLine4": city,
+    "profile-Postcode": postcode,
   } = kdf.profileData;
   let subProperty, buildingName, buildingNumber, fullAddress;
 
-  const addressSelectionSection = document.querySelector(`#${targetPageId} .address-selection-section`);
-  const selectedAddressSpan = document.querySelector(`#${targetPageId} #selected-address`);
+  const addressSelectionSection = document.querySelector(
+    `#${targetPageId} .address-selection-section`
+  );
+  const selectedAddressSpan = document.querySelector(
+    `#${targetPageId} #selected-address`
+  );
 
   const addressDataForDisplay = {
-    subProperty: subProperty ? formatTitleCase(subProperty) : '',
-    buildingName: buildingName ? formatTitleCase(buildingName) : '',
-    buildingNumber: buildingNumber ? formatTitleCase(buildingNumber) : '',
-    property: property ? formatTitleCase(property) : '',
-    streetName: streetName ? formatTitleCase(streetName) : '',
-    locality: locality ? formatTitleCase(locality) : '',
-    city: city ? formatTitleCase(city) : '',
-    postcode: postcode ? postcode.toUpperCase() : ''
+    subProperty: subProperty ? formatTitleCase(subProperty) : "",
+    buildingName: buildingName ? formatTitleCase(buildingName) : "",
+    buildingNumber: buildingNumber ? formatTitleCase(buildingNumber) : "",
+    property: property ? formatTitleCase(property) : "",
+    streetName: streetName ? formatTitleCase(streetName) : "",
+    locality: locality ? formatTitleCase(locality) : "",
+    city: city ? formatTitleCase(city) : "",
+    postcode: postcode ? postcode.toUpperCase() : "",
   };
 
   const fullAddressDisplay = buildAddressMarkup(addressDataForDisplay);
-  let selectedAddressContainer = document.querySelector(`#${targetPageId} .selected-address-container`);
+  let selectedAddressContainer = document.querySelector(
+    `#${targetPageId} .selected-address-container`
+  );
   if (selectedAddressContainer) {
     selectedAddressContainer.innerHTML = fullAddressDisplay;
-    selectedAddressContainer = selectedAddressContainer.id.replace('dform_widget_html_', '');
+    selectedAddressContainer = selectedAddressContainer.id.replace(
+      "dform_widget_html_",
+      ""
+    );
   }
 
   if (addressSelectionSection) {
-    addressSelectionSection.classList.add('dform_fieldsuccess');
+    addressSelectionSection.classList.add("dform_fieldsuccess");
   }
 
   if (selectedAddressSpan) {
     const addressParts = Object.values(addressDataForDisplay)
       .filter(Boolean)
-      .join(', ');
+      .join(", ");
     selectedAddressSpan.innerHTML = addressParts;
-    selectedAddressSpan.classList.remove('dform_validationMessage');
+    selectedAddressSpan.classList.remove("dform_validationMessage");
   }
 
-  const addressearchResults = document.querySelector(`#${targetPageId} .address-search-results`);
-  let setAddressButton = document.querySelector(`#${targetPageId} .set-address-btn`);
+  const addressearchResults = document.querySelector(
+    `#${targetPageId} .address-search-results`
+  );
+  let setAddressButton = document.querySelector(
+    `#${targetPageId} .set-address-btn`
+  );
   if (setAddressButton) {
-    setAddressButton = setAddressButton.id.replace('dform_widget_button_', '');
+    setAddressButton = setAddressButton.id.replace("dform_widget_button_", "");
   }
-  const buttonContainer = document.querySelector(`#${targetPageId} .address-search-btn-container`);
-  let manualAddressElement = document.querySelector(`#${targetPageId} .manual-address-container`);
+  const buttonContainer = document.querySelector(
+    `#${targetPageId} .address-search-btn-container`
+  );
+  let manualAddressElement = document.querySelector(
+    `#${targetPageId} .manual-address-container`
+  );
   if (manualAddressElement) {
-    manualAddressElement = manualAddressElement.id.replace('dform_widget_html_', '');
+    manualAddressElement = manualAddressElement.id.replace(
+      "dform_widget_html_",
+      ""
+    );
   }
 
   property = formatTitleCase(property);
@@ -3352,12 +3667,14 @@ function setProfileAddressDetails(targetPageId, kdf) {
   ]);
 
   if (addressearchResults) {
-    const selectElement = addressearchResults.querySelector('select');
+    const selectElement = addressearchResults.querySelector("select");
     if (selectElement) {
-      selectElement.style.display = 'none'; // Hides the element
-      selectElement.classList.remove('dform_fielderror');
+      selectElement.style.display = "none"; // Hides the element
+      selectElement.classList.remove("dform_fielderror");
     }
-    const validationMessage = addressearchResults?.querySelector('.dform_validationMessage');
+    const validationMessage = addressearchResults?.querySelector(
+      ".dform_validationMessage"
+    );
     if (validationMessage) {
       validationMessage.style.display = "none";
       validationMessage.textContent = "Select the address";
@@ -3365,15 +3682,17 @@ function setProfileAddressDetails(targetPageId, kdf) {
   }
 
   if (buttonContainer) {
-    buttonContainer.style.display = 'none'; // Hides the element
+    buttonContainer.style.display = "none"; // Hides the element
   }
 
-  let findOnMapElement = document.querySelector(`#${targetPageId} .map-container`);
+  let findOnMapElement = document.querySelector(
+    `#${targetPageId} .map-container`
+  );
   if (findOnMapElement) {
     if (easting && northing) {
       plotLocationOnMap(easting, northing);
     }
-    findOnMapElement = findOnMapElement.id.replace('dform_widget_html_', '');
+    findOnMapElement = findOnMapElement.id.replace("dform_widget_html_", "");
   }
 
   hideShowMultipleElements([
@@ -3795,11 +4114,13 @@ function mapClick(evt) {
     { alias: "siteName", value: "" },
     { alias: "siteCode", value: "" },
   ]);
-  
-  const selectedAddressSpan = document.querySelector(`#${getCurrentPageId()} #selected-address`);
+
+  const selectedAddressSpan = document.querySelector(
+    `#${getCurrentPageId()} #selected-address`
+  );
   if (selectedAddressSpan) {
     selectedAddressSpan.textContent = defaultSelectedAddressMessage;
-    selectedAddressSpan.classList.remove('dform_validationMessage');
+    selectedAddressSpan.classList.remove("dform_validationMessage");
   }
 
   $(".esriPopup").hide();
@@ -3821,8 +4142,14 @@ function mapClick(evt) {
       var source = new proj4.Proj("SR-ORG:7483");
       var dest = new proj4.Proj("EPSG:27700");
       var dest4326 = new proj4.Proj("EPSG:4326");
-      var convertPointP4 = proj4.toPoint([selectedLocation.x, selectedLocation.y]);
-      var convertPoint4326 = proj4.toPoint([selectedLocation.x, selectedLocation.y]);
+      var convertPointP4 = proj4.toPoint([
+        selectedLocation.x,
+        selectedLocation.y,
+      ]);
+      var convertPoint4326 = proj4.toPoint([
+        selectedLocation.x,
+        selectedLocation.y,
+      ]);
 
       proj4.transform(source, dest, convertPointP4);
       proj4.transform(source, dest4326, convertPoint4326);
@@ -3839,9 +4166,10 @@ function mapClick(evt) {
 
       if (!withinSccCheck(convertPointP4)) {
         if (selectedAddressSpan) {
-          selectedAddressSpan.textContent = "Choose a location inside the Sheffield area";
-          selectedAddressSpan.classList.add('dform_validationMessage');
-          selectedAddressSpan.style.display = 'block';
+          selectedAddressSpan.textContent =
+            "Choose a location inside the Sheffield area";
+          selectedAddressSpan.classList.add("dform_validationMessage");
+          selectedAddressSpan.style.display = "block";
         }
         $("#map_container").addClass("map_container_error");
 
@@ -3874,11 +4202,11 @@ function mapClick(evt) {
         }
 
         KDF.customdata("gis_background_layer", "mapClick", true, true, {
-            url: vmap_config.consolidated_layer_url,
-            longitude: mapX,
-            latitude: mapY,
-            distance: 20,
-          });
+          url: vmap_config.consolidated_layer_url,
+          longitude: mapX,
+          latitude: mapY,
+          distance: 20,
+        });
 
         let foundFeatureGraphic = null;
         let sccBoundaryClicked = false;
@@ -3887,7 +4215,11 @@ function mapClick(evt) {
           graphic.forEach(function (arrayItem) {
             if (arrayItem.layer && arrayItem.layer.id === "scc_boundary") {
               sccBoundaryClicked = true;
-            } else if (arrayItem.layer && arrayItem.layer.id !== "scc_boundary" && !foundFeatureGraphic) {
+            } else if (
+              arrayItem.layer &&
+              arrayItem.layer.id !== "scc_boundary" &&
+              !foundFeatureGraphic
+            ) {
               // Prioritize and save the first non-boundary graphic found
               foundFeatureGraphic = arrayItem;
             }
@@ -3908,7 +4240,7 @@ function mapClick(evt) {
           store_layer_attr.main_attribute = {};
           store_layer_attr.main_attribute = layerAttributes;
           store_layer_attr.main_attribute.layername = layerName;
-          
+
           setValuesToInputFields([
             { alias: "easting", value: mapX },
             { alias: "northing", value: mapY },
@@ -4125,7 +4457,7 @@ function do_KDF_Custom_esriMap(action, response) {
             },
             { alias: "responsibility", value: "PWC" },
           ]);
-          
+
           $(".popup").text(store_layer_attr.background_attribute.sitename);
           setRequiredStateByAlias("postcode", "not required");
           return;
@@ -4211,7 +4543,9 @@ function do_KDF_Custom_esriMap(action, response) {
         // { alias: "northing", value: northing },
       ]);
 
-      const selectedAddressSpan = document.querySelector(`#${getCurrentPageId()} #selected-address`);
+      const selectedAddressSpan = document.querySelector(
+        `#${getCurrentPageId()} #selected-address`
+      );
       if (selectedAddressSpan) {
         selectedAddressSpan.textContent = fullAddress;
       }
@@ -4477,25 +4811,26 @@ function fetchSccRing() {
 }
 
 function plotLocationOnMap(easting, northing) {
-  require([
-    "esri/geometry/Point",
-    "esri/geometry/projection"
-  ], function (Point, projection) {
-
+  require(["esri/geometry/Point", "esri/geometry/projection"], function (
+    Point,
+    projection
+  ) {
     // Create OSGB point
     const osgbPoint = new Point({
       x: parseFloat(easting),
       y: parseFloat(northing),
-      spatialReference: { wkid: 27700 }
+      spatialReference: { wkid: 27700 },
     });
 
     // Project to Web Mercator (map’s spatial reference)
     projection.load().then(function () {
-      const wmPoint = projection.project(osgbPoint, streetMapView.spatialReference);
+      const wmPoint = projection.project(
+        osgbPoint,
+        streetMapView.spatialReference
+      );
 
       // Zoom to location
       streetMapView.goTo({ center: wmPoint, zoom: 18 }).then(() => {
-
         // Convert to screen coordinates
         const screenPoint = streetMapView.toScreen(wmPoint);
 
@@ -4511,7 +4846,7 @@ function plotLocationOnMap(easting, northing) {
           mapPoint: wmPoint,
           native: { isTrusted: true },
           timestamp: performance.now(),
-          cancelable: false
+          cancelable: false,
         };
 
         // Trigger mapClick like a real click
@@ -4960,11 +5295,7 @@ function getCookie(name) {
 // --- STORE VALIDATION MESSAGES -------------------------------------------- \\
 
 function storeDefaultValidationMessages() {
-  const fieldClasses = [
-    "address-search",
-    "date-field",
-    "time-field",
-  ];
+  const fieldClasses = ["address-search", "date-field", "time-field"];
 
   fieldClasses.forEach((className) => addValidationMessageToSession(className));
 }
@@ -5017,8 +5348,8 @@ function buildTypeAhead(inputName, listItems, listItemsOnly = true) {
   }
 
   // Create a new div to wrap the input, icon, and button
-  const wrapper = document.createElement('div');
-  wrapper.className = 'input-wrapper';
+  const wrapper = document.createElement("div");
+  wrapper.className = "input-wrapper";
 
   // Insert the new wrapper before the input element
   inputElement.parentNode.insertBefore(wrapper, inputElement);
@@ -5027,29 +5358,37 @@ function buildTypeAhead(inputName, listItems, listItemsOnly = true) {
   wrapper.appendChild(inputElement);
 
   // Create and add the magnifying glass SVG icon
-  const searchIconSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  searchIconSvg.setAttribute('viewBox', '0 0 640 640');
-  searchIconSvg.className = 'search-icon';
+  const searchIconSvg = document.createElementNS(
+    "http://www.w3.org/2000/svg",
+    "svg"
+  );
+  searchIconSvg.setAttribute("viewBox", "0 0 640 640");
+  searchIconSvg.className = "search-icon";
 
-  const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-  path.setAttribute('fill', 'currentColor');
-  path.setAttribute('d', 'M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z');
+  const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  path.setAttribute("fill", "currentColor");
+  path.setAttribute(
+    "d",
+    "M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
+  );
 
   searchIconSvg.appendChild(path);
   wrapper.appendChild(searchIconSvg);
 
   // Add Clear Button functionality
-  const clearButton = document.createElement('button');
-  clearButton.type = 'button';
-  clearButton.className = 'clear-btn';
-  clearButton.textContent = 'Clear';
+  const clearButton = document.createElement("button");
+  clearButton.type = "button";
+  clearButton.className = "clear-btn";
+  clearButton.textContent = "Clear";
 
-  clearButton.addEventListener('click', () => {
-    inputElement.value = '';
+  clearButton.addEventListener("click", () => {
+    inputElement.value = "";
     inputElement.focus();
     // Remove validation state on clear
-    inputElement.classList.remove('dform_fielderror');
-    const validationMessage = inputElement.parentNode.querySelector('.dform_validationMessage');
+    inputElement.classList.remove("dform_fielderror");
+    const validationMessage = inputElement.parentNode.querySelector(
+      ".dform_validationMessage"
+    );
     if (validationMessage) {
       validationMessage.remove();
     }
@@ -5062,42 +5401,47 @@ function buildTypeAhead(inputName, listItems, listItemsOnly = true) {
   let datalistElement = document.getElementById(datalistId);
 
   if (!datalistElement) {
-    datalistElement = document.createElement('datalist');
+    datalistElement = document.createElement("datalist");
     datalistElement.id = datalistId;
     inputElement.parentNode.appendChild(datalistElement);
   }
 
-  datalistElement.innerHTML = '';
-  listItems.forEach(item => {
-    const option = document.createElement('option');
+  datalistElement.innerHTML = "";
+  listItems.forEach((item) => {
+    const option = document.createElement("option");
     option.value = item;
     datalistElement.appendChild(option);
   });
 
-  inputElement.setAttribute('list', datalistId);
+  inputElement.setAttribute("list", datalistId);
 
   // Re-implement validation with a change event listener for robustness
   if (listItemsOnly) {
-    inputElement.addEventListener('change', () => {
+    inputElement.addEventListener("change", () => {
       const inputValue = inputElement.value;
       const normalizedInput = inputValue.trim().toLowerCase();
-      const normalizedList = listItems.map(item => item.trim().toLowerCase());
+      const normalizedList = listItems.map((item) => item.trim().toLowerCase());
       const isValid = normalizedList.includes(normalizedInput);
 
-      const parentContainer = inputElement.closest('.dform_widget');
+      const parentContainer = inputElement.closest(".dform_widget");
 
-      if (!isValid && inputValue !== '') {
-        inputElement.classList.add('dform_fielderror');
-        let validationMessage = parentContainer.querySelector('.dform_validationMessage');
+      if (!isValid && inputValue !== "") {
+        inputElement.classList.add("dform_fielderror");
+        let validationMessage = parentContainer.querySelector(
+          ".dform_validationMessage"
+        );
         if (!validationMessage) {
-          validationMessage = document.createElement('div');
-          validationMessage.classList.add('dform_validationMessage');
-          validationMessage.textContent = 'Please select a value from the list.';
+          validationMessage = document.createElement("div");
+          validationMessage.classList.add("dform_validationMessage");
+          validationMessage.textContent =
+            "Please select a value from the list.";
           parentContainer.appendChild(validationMessage);
         }
       } else {
-        inputElement.classList.remove('dform_fielderror');
-        const validationMessage = parentContainer.querySelector('.dform_validationMessage');
+        inputElement.classList.remove("dform_fielderror");
+        const validationMessage = parentContainer.querySelector(
+          ".dform_validationMessage"
+        );
         if (validationMessage) {
           validationMessage.remove();
         }
@@ -5127,35 +5471,33 @@ function buildRelatedServiceCards(servicesData, containerId) {
   }
 
   if (servicesData && servicesData.length > 0) {
-
-    let relatedServicesMenu = container.querySelector('.related-services-menu');
+    let relatedServicesMenu = container.querySelector(".related-services-menu");
     if (!relatedServicesMenu) {
-      const h2 = document.createElement('h2');
-      h2.textContent = 'Related services';
+      const h2 = document.createElement("h2");
+      h2.textContent = "Related services";
       container.appendChild(h2);
 
-      relatedServicesMenu = document.createElement('div');
-      relatedServicesMenu.classList.add('related-services-menu');
+      relatedServicesMenu = document.createElement("div");
+      relatedServicesMenu.classList.add("related-services-menu");
       container.appendChild(relatedServicesMenu);
     } else {
-      relatedServicesMenu.innerHTML = '';
+      relatedServicesMenu.innerHTML = "";
     }
 
-
     if (servicesData.length === 0) {
-      console.warn('No service data provided to build cards.');
+      console.warn("No service data provided to build cards.");
       return; // Exit if no data
     }
 
-    servicesData.forEach(service => {
-      const cardLink = document.createElement('a');
-      cardLink.href = service.url || '#';
-      cardLink.classList.add('related-services-card');
+    servicesData.forEach((service) => {
+      const cardLink = document.createElement("a");
+      cardLink.href = service.url || "#";
+      cardLink.classList.add("related-services-card");
 
-      const headline = document.createElement('h3');
+      const headline = document.createElement("h3");
       headline.textContent = service.headline;
 
-      const description = document.createElement('p');
+      const description = document.createElement("p");
       description.textContent = service.description;
 
       const svg = `
@@ -5166,7 +5508,7 @@ function buildRelatedServiceCards(servicesData, containerId) {
 
       cardLink.appendChild(headline);
       cardLink.appendChild(description);
-      cardLink.insertAdjacentHTML('beforeend', svg);
+      cardLink.insertAdjacentHTML("beforeend", svg);
 
       relatedServicesMenu.appendChild(cardLink);
     });
@@ -5200,16 +5542,27 @@ function buildAddressMarkup(addressData) {
 
   // Sub-property (e.g., Flat 1)
   if (addressData.subProperty) {
-    addressLines.push(`<span itemprop="subProperty">${addressData.subProperty}</span>`);
+    addressLines.push(
+      `<span itemprop="subProperty">${addressData.subProperty}</span>`
+    );
   }
 
   // Building Name (often used for itemprop="name" for the overall property)
   if (addressData.buildingName) {
-    addressLines.push(`<span itemprop="name">${addressData.buildingName}</span>`);
+    addressLines.push(
+      `<span itemprop="name">${addressData.buildingName}</span>`
+    );
   }
 
-  if (addressData.property && (!addressData.subProperty && !addressData.buildingName && !addressData.buildingNumber)) {
-    addressLines.push(`<span itemprop="property">${addressData.property}</span>`);
+  if (
+    addressData.property &&
+    !addressData.subProperty &&
+    !addressData.buildingName &&
+    !addressData.buildingNumber
+  ) {
+    addressLines.push(
+      `<span itemprop="property">${addressData.property}</span>`
+    );
   }
 
   // Street Address (Building Number and Street Name often go together)
@@ -5221,23 +5574,31 @@ function buildAddressMarkup(addressData) {
     streetAddressParts.push(addressData.streetName);
   }
   if (streetAddressParts.length > 0) {
-    addressLines.push(`<span itemprop="streetAddress">${streetAddressParts.join(' ')}</span>`);
+    addressLines.push(
+      `<span itemprop="streetAddress">${streetAddressParts.join(" ")}</span>`
+    );
   }
 
   // Locality (e.g., Sheffield City Centre - a more specific place within a city/town)
   // Check to avoid duplicating if locality is the same as the main city
   if (addressData.locality && addressData.locality !== addressData.city) {
-    addressLines.push(`<span itemprop="addressLocality">${addressData.locality}</span>`);
+    addressLines.push(
+      `<span itemprop="addressLocality">${addressData.locality}</span>`
+    );
   }
 
   // City (Post Town) - also uses addressLocality in Schema.org
   if (addressData.city) {
-    addressLines.push(`<span itemprop="addressLocality">${addressData.city}</span>`);
+    addressLines.push(
+      `<span itemprop="addressLocality">${addressData.city}</span>`
+    );
   }
 
   // Postal Code
   if (addressData.postcode) {
-    addressLines.push(`<span itemprop="postalCode">${addressData.postcode}</span>`);
+    addressLines.push(
+      `<span itemprop="postalCode">${addressData.postcode}</span>`
+    );
   }
 
   // Country (Assuming GB for UK context, adjust if needed)
@@ -5246,7 +5607,7 @@ function buildAddressMarkup(addressData) {
   // Join lines with <br> and wrap in <address> tags
   return `
     <address itemscope itemtype="http://schema.org/PostalAddress">
-      ${addressLines.join('\n')}
+      ${addressLines.join("\n")}
     </address>
   `;
 }
@@ -5261,11 +5622,15 @@ function buildAddressMarkup(addressData) {
 function createAndInsertReferenceDisplay(referenceValue) {
   // Get the parent container and the target insertion point (the #skip div)
   const controlButtons = document.getElementById("dform_control_buttons");
-  const skipElement = controlButtons ? controlButtons.querySelector("#skip") : null;
+  const skipElement = controlButtons
+    ? controlButtons.querySelector("#skip")
+    : null;
 
   // Safely proceed only if both elements exist and a value is provided
   if (!controlButtons || !skipElement || !referenceValue) {
-    console.error("Could not find required DOM elements or the reference value is missing.");
+    console.error(
+      "Could not find required DOM elements or the reference value is missing."
+    );
     return;
   }
 
@@ -5303,7 +5668,9 @@ function buildMyAccountLink(referenceNumber) {
   const linkElement = document.getElementById("my-account-request");
 
   if (!linkElement) {
-    console.error("The link element with id 'my-account-request' could not be found.");
+    console.error(
+      "The link element with id 'my-account-request' could not be found."
+    );
     return;
   }
 
@@ -5311,7 +5678,7 @@ function buildMyAccountLink(referenceNumber) {
   const newHref = `${PORTAL_URL}/requests?srid=${referenceNumber}`;
 
   // Update the href attribute of the existing link.
-  linkElement.setAttribute('href', newHref);
+  linkElement.setAttribute("href", newHref);
 
   KDF.showWidget("ahtm_confirmation_account");
 }
@@ -5330,11 +5697,13 @@ function buildFormLink(id, formName, includeFormTitle = false) {
   }
 
   // Conditionally add the formTitle part to the URL
-  const titleParameter = includeFormTitle ? `?formTitle=${KDF.getVal("le_title").replace(/\s+/g, "-")}` : '';
+  const titleParameter = includeFormTitle
+    ? `?formTitle=${KDF.getVal("le_title").replace(/\s+/g, "-")}`
+    : "";
   const newHref = `${PORTAL_URL}//${hostname}/form/${formName}${titleParameter}`;
 
   // Update the href attribute
-  linkElement.setAttribute('href', newHref);
+  linkElement.setAttribute("href", newHref);
 }
 
 // --- BUILD NOTIFICATION BANNERS ------------------------------------------- \\
@@ -5349,38 +5718,43 @@ function buildFormLink(id, formName, includeFormTitle = false) {
  * @param {string} type The type of notification ('info', 'warning', 'error', 'success').
  */
 const createNotification = (content, type) => {
-  const parentElement = document.querySelector('.header');
+  const parentElement = document.querySelector(".header");
   if (!parentElement) return;
 
   // Check for an existing notification of the same type and remove it
-  const existingNotification = document.querySelector(`.site-notification-bar--${type}`);
+  const existingNotification = document.querySelector(
+    `.site-notification-bar--${type}`
+  );
   if (existingNotification) {
     existingNotification.remove();
   }
 
-  const notificationBar = document.createElement('div');
-  notificationBar.classList.add('site-notification-bar', `site-notification-bar--${type}`);
+  const notificationBar = document.createElement("div");
+  notificationBar.classList.add(
+    "site-notification-bar",
+    `site-notification-bar--${type}`
+  );
 
-  const contentWrapper = document.createElement('div');
-  contentWrapper.classList.add('notification-content');
+  const contentWrapper = document.createElement("div");
+  contentWrapper.classList.add("notification-content");
 
-  const textContent = document.createElement('p');
+  const textContent = document.createElement("p");
   textContent.textContent = content.message;
-  textContent.style.margin = '0';
+  textContent.style.margin = "0";
 
   if (content.linkText && content.linkHref) {
-    const link = document.createElement('a');
+    const link = document.createElement("a");
     link.textContent = content.linkText;
     link.href = content.linkHref;
-    link.classList.add('notification-link');
+    link.classList.add("notification-link");
     textContent.appendChild(link);
   }
 
-  const closeLink = document.createElement('a');
-  closeLink.href = '#';
-  closeLink.textContent = 'Close all notifications';
-  closeLink.classList.add('close-notification-link');
-  closeLink.addEventListener('click', (event) => {
+  const closeLink = document.createElement("a");
+  closeLink.href = "#";
+  closeLink.textContent = "Close all notifications";
+  closeLink.classList.add("close-notification-link");
+  closeLink.addEventListener("click", (event) => {
     event.preventDefault();
     notificationBar.remove();
   });
@@ -5396,19 +5770,19 @@ const createNotification = (content, type) => {
 };
 
 function showInformationBanner(content) {
-  createNotification(content, 'info');
+  createNotification(content, "info");
 }
 
 function showSuccessBanner(content) {
-  createNotification(content, 'success');
+  createNotification(content, "success");
 }
 
 function showWarningBanner(content) {
-  createNotification(content, 'warning');
+  createNotification(content, "warning");
 }
 
 function showErrorBanner(content) {
-  createNotification(content, 'error');
+  createNotification(content, "error");
 }
 
 /**
@@ -5417,10 +5791,10 @@ function showErrorBanner(content) {
  */
 const closeAllNotifications = () => {
   // Select all elements with the class 'site-notification-bar'
-  const notifications = document.querySelectorAll('.site-notification-bar');
+  const notifications = document.querySelectorAll(".site-notification-bar");
 
   // Iterate through the NodeList and remove each element
-  notifications.forEach(notification => {
+  notifications.forEach((notification) => {
     notification.remove();
   });
 };
