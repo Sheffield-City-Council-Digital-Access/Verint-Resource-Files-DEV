@@ -1,0 +1,140 @@
+#dform_container input[type="file"] {
+  padding: 0 !important;
+  border: none;
+  height: 100%;
+}
+
+input[type="file"]::file-selector-button {
+  padding-inline: var(--spacing-xs);
+  height: 100%;
+  border-radius: 5px;
+  border: solid 1px #3D3D3B;
+  margin-right: var(--spacing-xs);
+}
+
+#dform_container input[type="file"].dform_fielderror::file-selector-button {
+  border: solid 2px var(--c-alerts-danger);
+}
+
+#dform_container .dform_widget_type_file br {
+  display: none;
+}
+
+#dform_container div[data-type="file"] > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: 8.3rem auto;
+  align-items: baseline;
+}
+
+@media screen and (min-width: 960px) {
+  #dform_container div[data-type="file"] > div:nth-child(2) {
+    grid-template-columns: 9.3rem auto;
+  }
+}
+
+#dform_container input[type="file"] {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  z-index: 0;
+  height: auto;
+  background: var(--c-greys-white);
+  border: 2px transparent var(--c-core-brand-secondary);
+}
+
+#dform_container .dform_filenames {
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+  max-width: 99%;
+  z-index: 1;
+  background: var(--c-greys-white);
+  overflow: hidden;
+}
+
+#dform_container div[data-type="file"] div.dform_validationMessage {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+#dform_container .dform_filenames:focus,
+#dform_container .dform_filenames:focus-within,
+#dform_container input[type="file"]:focus ~ .dform_filenames,
+#dform_container input[type="file"]:focus-within ~ .dform_filenames {
+  background: var(--c-greys-white);
+}
+
+#dform_container
+  :has(.dform_filenames:focus, .dform_filenames:focus-within)
+  input[type="file"] {
+  background: var(--c-greys-white);
+  box-shadow: inset 0 0 0 2px var(--c-core-brand-secondary),
+    0 0 0 2px var(--color-warning);
+}
+
+
+#dform_container .dform_filenames {
+    max-height: 90%;
+    transform: translateY(2px);
+}
+
+#dform_container .dform_filenames > span {
+  display: inline-block;
+  cursor: pointer;
+  color: var(--c-greys-black);
+  margin: unset;
+  padding: unset;
+  border-color: transparent;
+  transform: translateY(-2px);
+}
+
+#dform_container .dform_filenames span:hover {
+    border-color: transparent;
+    cursor: default;
+}
+
+#dform_container .dform_filenames > span a {
+    font-family: var(--font-family);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-body);
+    color: var(--c-greys-black);
+}
+
+#dform_container .dform_filenames > span,
+#dform_container .dform_filenames > span a:hover {
+  color: var(--c-greys-black);
+  background: var(--c-greys-white);
+  border: none;
+  text-decoration: none;
+  cursor: default !important;
+}
+
+#dform_container .dform_filenames span.file_delete {
+    margin-left: var(--spacing-xs);
+    padding: 0;
+    font-family: SpartaIcons;
+    cursor: pointer;
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-body);
+}
+
+#dform_container .file_delete::after {
+    margin-left: var(--spacing-xs);
+    content: 'Remove';
+    font-family: var(--font-family);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-body);
+    color: var(--c-greys-black);
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+}
+
+#dform_container .file_delete:hover::after,
+#dform_container .file_delete:focus::after {
+    text-decoration-thickness: 2px;
+}
+
+#dform_container div[data-type="file"] > div:nth-child(2) br,
+#dform_container .dform_fileupload_progressbar {
+  display: none;
+}

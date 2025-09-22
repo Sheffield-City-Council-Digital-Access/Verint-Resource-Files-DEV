@@ -1,0 +1,54 @@
+#home, #profile, #requests, #services {
+  background: var(--c-greys-chalk);
+}
+
+#register #content,
+#form {
+  background: var(--c-greys-white);
+}
+
+div.navigation,
+div.content {
+  margin: 0 auto !important;
+  padding: var(--spacing-sm) clamp(15px, 5vw, 131px) !important;
+  width: 100% !important;
+  max-width: 87.5rem !important;
+  background: var(--c-greys-chalk);
+}
+
+#account div.navigation,
+#account div.content,
+#form div.navigation,
+#form div.content {
+  background: var(--c-greys-white);
+}
+
+div.navigation {
+  padding-top: var(--spacing-md) !important;
+}
+
+div.navigation a {
+  color: var(--c-brand-accents-teal);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-xl);
+  text-decoration-thickness: 1px;
+}
+
+div.navigation a:hover {
+  color: var(--c-greys-black);
+  text-decoration-thickness: 2px;
+}
+
+div.navigation a:focus,
+div.navigation a:active {
+  color: var(--c-greys-black);
+}
+
+.page-title {
+  font-weight: var(--font-weight-700);
+  padding-bottom: var(--spacing-xs);
+}
+
+#NavigationAreaInSingleColumnTemplate {
+  border-bottom: 1px solid var(--c-core-brand-body);
+}
