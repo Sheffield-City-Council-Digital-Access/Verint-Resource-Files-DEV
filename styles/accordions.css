@@ -1,0 +1,142 @@
+#dform_container .accordion {
+  width: var(--field-width-100);
+  margin: var(--spacing-xl) 0;
+  border: none;
+  background-color: var(--c-greys-white);
+}
+
+#dform_container .accordion:focus-within {
+  box-shadow: none;
+  outline: 0.4rem solid var(--c-focus-links);
+}
+
+#dform_container .accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: var(--c-greys-white);
+  border-top: 1px solid var(--c-greys-black);
+  border-bottom: 1px solid var(--c-greys-black);
+  cursor: pointer;
+}
+
+#dform_container .accordion-header>h3 {
+  display: inline;
+  margin: 0;
+}
+
+#dform_container .accordion-header:hover {
+  background-color: var(--c-greys-white);
+}
+
+#dform_container .accordion-content {
+  display: none;
+  padding: var(--spacing-md) var(--spacing-sm);
+  background-color: var(--c-greys-white);
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+#dform_container .accordion-item.active .accordion-content {
+  display: block;
+}
+
+#dform_container .accordion-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+
+  background: var(--c-core-brand-primary-darken);
+}
+
+#dform_container .accordion-icon::after {
+  content: url(../icons/arrow-right-white.svg);
+  width: var(--font-size-xxxxl);
+  line-height: var(--line-height);
+  transform: rotate(90deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+#dform_container .accordion[open] .accordion-icon::after {
+  transform: rotate(270deg);
+}
+
+#dform_container details[open] .accordion-content {
+  display: block;
+}
+
+#dform_container .details-accordion {
+  margin-block: 0.6rem;
+}
+
+#dform_container .details-accordion:focus-within {
+  border: none;
+}
+
+#dform_container .details-accordion[open]:focus-within {
+  background: var(--c-greys-white);
+}
+
+#dform_container .details-accordion summary {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-body);
+  text-decoration: underline;
+  color: var(--c-core-brand-primary-darken);
+  border-bottom: 1px solid transparent;
+  margin-bottom: var(--spacing-xxs);
+}
+
+#dform_container .details-accordion:hover summary {
+  color: var(--c-brand-accents-teal);
+  cursor: pointer;
+}
+
+#dform_container .details-accordion summary:focus {
+  border: none;
+  background: var(--c-greys-white);
+  width: max-content;
+  background: var(--c-focus-links);
+  color: var(--c-greys-black);
+  border-bottom: 1px solid var(--c-greys-black);
+  text-decoration: none;
+  outline: none;
+}
+
+#dform_container .details-accordion-content {
+  background: transparent;
+}
+
+#dform_container .details-accordion-content {
+  border-left: solid var(--spacing-xxs) var(--c-brand-accents-teal);
+  padding: var(--spacing-sm);
+  margin: 0;
+}
+
+#dform_container .details-accordion-content .dform_widget_field_with_error {
+  border-left: solid var(--spacing-xxs) var(--c-danger-red);
+}
+
+#dform_container .details-accordion .details-accordion-content .dform_widget_field {
+  margin-block: var(--spacing-sm);
+}
+
+#dform_container .details-accordion-content .dform_widget_field:first-child {
+  padding-top: 0;
+}
+
+#dform_container .details-accordion-content p:first-child,
+#dform_container .details-accordion-content a:first-child,
+#dform_container .details-accordion-content ul:first-child {
+  margin-top: 0;
+}
+
+#dform_container .details-accordion-content p:last-child, 
+#dform_container .details-accordion-content a:last-child,
+#dform_container .details-accordion-content ul:last-child {
+  margin-bottom: 0;
+}
