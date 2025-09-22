@@ -7,27 +7,6 @@ on:
         description: 'Path to file in repository (e.g., styles/main.css)'
         required: true
         type: string
-      folder_name:
-        description: 'Select the destination folder name'
-        required: true
-        type: choice
-        default: 'knowledge'
-        options:
-          - knowledge
-          - scripts
-          - styles
-          - images
-          - icons
-      content_type:
-        description: 'Select the file content type'
-        required: true
-        type: choice
-        default: 'text/plain'
-        options:
-          - text/plain
-          - text/css
-          - image/svg+xml
-          - image/png
       environment:
         description: 'Select the target environment'
         required: true
@@ -59,7 +38,44 @@ jobs:
               echo "API_BASE_URL=${{ secrets.VERINT_BASE_URL_PROD }}" >> $GITHUB_ENV
               ;;
           esac
-      
+      - name: Extract file properties
+        id: file_props
+        run: |
+          FILE_PATH="${{ github.event.inputs.file_path }}"
+          # Get the directory name (the folder) from the path
+          FOLDER_NAME=$(dirname "$FILE_PATH")
+          # Remove the first part if it's a single dot '.'
+          if [ "$FOLDER_NAME" = "." ]; then
+            FOLDER_NAME="root"
+          fi
+          # Get the file extension
+          FILE_EXT="${FILE_PATH##*.}"
+          
+          # Determine the content type based on the file extension
+          case "$FILE_EXT" in
+            js)
+              CONTENT_TYPE="text/javascript"
+              ;;
+            css)
+              CONTENT_TYPE="text/css"
+              ;;
+            png)
+              CONTENT_TYPE="image/png"
+              ;;
+            svg)
+              CONTENT_TYPE="image/svg+xml"
+              ;;
+            *)
+              CONTENT_TYPE="text/plain" # Default to text/plain for unknown types
+              ;;
+          esac
+          
+          echo "📁 Extracted Folder: $FOLDER_NAME"
+          echo "📄 Extracted Content-Type: $CONTENT_TYPE"
+          
+          # Set the extracted values as job outputs
+          echo "folder_name=$FOLDER_NAME" >> $GITHUB_OUTPUT
+          echo "content_type=$CONTENT_TYPE" >> $GITHUB_OUTPUT
       - name: Validate file exists
         run: |
           echo '{"status": "failed", "error": "Unknown error"}' > upload_response.json
@@ -80,149 +96,44 @@ jobs:
           API_USERNAME: ${{ secrets.VERINT_USERNAME }}
           API_PASSWORD: ${{ secrets.VERINT_PASSWORD }}
           FILE_PATH: ${{ github.event.inputs.file_path }}
-          FOLDER_NAME: ${{ github.event.inputs.folder_name }}
-          CONTENT_TYPE: ${{ github.event.inputs.content_type }}
+          FOLDER_NAME: ${{ steps.file_props.outputs.folder_name }}
+          CONTENT_TYPE: ${{ steps.file_props.outputs.content_type }}
         run: |
           filename=$(basename "$FILE_PATH")
           echo "🚀 Uploading $filename to folder: $FOLDER_NAME"
           
-          # Method 1: Try the exact format that worked for map.js
-          echo "Method 1: Testing folderName parameter..."
-          response1=$(curl -s -w "HTTPSTATUS:%{http_code}" \
+          # Use a single, explicit method for consistency
+          # Method 2 is generally more robust for structured data like 'Folder'
+          response=$(curl -s -w "HTTPSTATUS:%{http_code}" \
             -X 'POST' \
             "${API_BASE_URL}/files" \
             -H 'accept: application/json' \
             -u "${API_USERNAME}:${API_PASSWORD}" \
             -H 'Content-Type: multipart/form-data' \
             -F "file=@${FILE_PATH};type=${CONTENT_TYPE}" \
-            -F "folderName=${FOLDER_NAME}")
+            -F "Folder={\"folderName\":\"${FOLDER_NAME}\"}")
+            
+          http_code=$(echo "$response" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
+          body=$(echo "$response" | sed -E 's/HTTPSTATUS\:[0-9]{3}$//')
           
-          http_code1=$(echo "$response1" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
-          body1=$(echo "$response1" | sed -E 's/HTTPSTATUS\:[0-9]{3}$//')
+          echo "HTTP Status: $http_code"
+          echo "Response: $body"
           
-          echo "Method 1 - HTTP Status: $http_code1"
-          echo "Method 1 - Response: $body1"
-          echo ""
-          
-          success=false
-          final_response=""
-          final_code=""
-          
-          if [ "$http_code1" -eq 200 ] || [ "$http_code1" -eq 201 ]; then
-            # Check if the response includes the correct folderName
-            folder_in_response=$(echo "$body1" | jq -r '.folderName // empty' 2>/dev/null)
+          if [ "$http_code" -eq 200 ] || [ "$http_code" -eq 201 ]; then
+            folder_in_response=$(echo "$body" | jq -r '.folderName // empty' 2>/dev/null)
             if [ "$folder_in_response" = "$FOLDER_NAME" ]; then
-              echo "✅ Method 1 succeeded with correct folder!"
-              success=true
-              final_response="$body1"
-              final_code="$http_code1"
+              echo "✅ Upload succeeded with correct folder!"
+              echo "$body" > upload_response.json
             else
-              echo "⚠️ Method 1 uploaded but folder is wrong: '$folder_in_response' (expected '$FOLDER_NAME')"
+              echo "❌ Upload succeeded, but folder is wrong: '$folder_in_response' (expected '$FOLDER_NAME')"
+              echo '{"status": "failed", "error": "Uploaded to wrong folder"}' > upload_response.json
+              exit 1
             fi
-          fi
-          
-          if [ "$success" = false ]; then
-            # Method 2: Try JSON format
-            echo "Method 2: Testing JSON Folder format..."
-            response2=$(curl -s -w "HTTPSTATUS:%{http_code}" \
-              -X 'POST' \
-              "${API_BASE_URL}/files" \
-              -H 'accept: application/json' \
-              -u "${API_USERNAME}:${API_PASSWORD}" \
-              -H 'Content-Type: multipart/form-data' \
-              -F "file=@${FILE_PATH};type=${CONTENT_TYPE}" \
-              -F "Folder={\"folderName\":\"${FOLDER_NAME}\"}")
-            
-            http_code2=$(echo "$response2" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
-            body2=$(echo "$response2" | sed -E 's/HTTPSTATUS\:[0-9]{3}$//')
-            
-            echo "Method 2 - HTTP Status: $http_code2"
-            echo "Method 2 - Response: $body2"
-            echo ""
-            
-            if [ "$http_code2" -eq 200 ] || [ "$http_code2" -eq 201 ]; then
-              folder_in_response=$(echo "$body2" | jq -r '.folderName // empty' 2>/dev/null)
-              if [ "$folder_in_response" = "$FOLDER_NAME" ]; then
-                echo "✅ Method 2 succeeded with correct folder!"
-                success=true
-                final_response="$body2"
-                final_code="$http_code2"
-              else
-                echo "⚠️ Method 2 uploaded but folder is wrong: '$folder_in_response' (expected '$FOLDER_NAME')"
-              fi
-            fi
-          fi
-          
-          if [ "$success" = false ]; then
-            # Method 3: Try folder parameter (different name)
-            echo "Method 3: Testing 'folder' parameter..."
-            response3=$(curl -s -w "HTTPSTATUS:%{http_code}" \
-              -X 'POST' \
-              "${API_BASE_URL}/files" \
-              -H 'accept: application/json' \
-              -u "${API_USERNAME}:${API_PASSWORD}" \
-              -H 'Content-Type: multipart/form-data' \
-              -F "file=@${FILE_PATH};type=${CONTENT_TYPE}" \
-              -F "folder=${FOLDER_NAME}")
-            
-            http_code3=$(echo "$response3" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
-            body3=$(echo "$response3" | sed -E 's/HTTPSTATUS\:[0-9]{3}$//')
-            
-            echo "Method 3 - HTTP Status: $http_code3"
-            echo "Method 3 - Response: $body3"
-            echo ""
-            
-            if [ "$http_code3" -eq 200 ] || [ "$http_code3" -eq 201 ]; then
-              folder_in_response=$(echo "$body3" | jq -r '.folderName // empty' 2>/dev/null)
-              if [ "$folder_in_response" = "$FOLDER_NAME" ]; then
-                echo "✅ Method 3 succeeded with correct folder!"
-                success=true
-                final_response="$body3"
-                final_code="$http_code3"
-              fi
-            fi
-          fi
-          
-          echo "================== FINAL RESULT =================="
-          
-          if [ "$success" = true ]; then
-            echo "✅ Upload successful with correct folder!"
-            echo "Final response: $final_response"
-            
-            if echo "$final_response" | jq . >/dev/null 2>&1; then
-              echo "$final_response" > upload_response.json
-            else
-              echo '{"status": "success", "message": "Upload successful"}' > upload_response.json
-            fi
-            
-            # Verify the upload by checking the file
-            echo ""
-            echo "🔍 Verification: Checking uploaded file..."
-            filename_check=$(basename "$FILE_PATH")
-            verify_response=$(curl -s -u "${API_USERNAME}:${API_PASSWORD}" "${API_BASE_URL}/files?query=${filename_check}")
-            
-            echo "Verification response:"
-            echo "$verify_response" | jq '.' 2>/dev/null || echo "$verify_response"
-            
           else
-            echo "❌ All upload methods failed or uploaded to wrong folder!"
-            echo ""
-            echo "Summary of attempts:"
-            echo "- Method 1 (folderName): HTTP $http_code1"
-            echo "- Method 2 (JSON Folder): HTTP $http_code2"
-            echo "- Method 3 (folder): HTTP $http_code3"
-            echo ""
-            echo "Troubleshooting:"
-            echo "- Check if folder '$FOLDER_NAME' exists on the server"
-            echo "- Verify folder name case sensitivity"
-            echo "- Check if you have permission to upload to this folder"
-            
-            echo '{"status": "failed", "error": "Upload failed or wrong folder"}' > upload_response.json
+            echo "❌ Upload failed. HTTP Status: $http_code"
+            echo '{"status": "failed", "error": "Upload failed"}' > upload_response.json
             exit 1
           fi
-          
-          echo "================================================="
-
       - name: Upload response as artifact
         if: always()
         uses: actions/upload-artifact@v4
