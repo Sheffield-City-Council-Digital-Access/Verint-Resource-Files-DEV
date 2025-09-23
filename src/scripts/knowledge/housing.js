@@ -1782,7 +1782,7 @@ const programmedWorks = new ContentH(
     buttonLabel: "Raise a Report",
     formName: "hou_programmed_work",
   },
-  { typeKey: "asset_management_and_repairs_transferred_to_service" },
+  { typeKey: "asset_management_and_repairs_transferred_to_servic" },
   { typeKey: "asset_management_and_repairs_information_provided" },
   {
     type: "Information",
