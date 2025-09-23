@@ -4,16 +4,16 @@ let userName;
  * Executes code after the DOM is fully loaded.
  * This ensures that all HTML elements are available for manipulation.
  */
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   (() => {
     /**
      * Creates and inserts a service header bar with the council logo and service label.
      */
-    const headerElement = document.querySelector('.header');
-    const areaElement = document.querySelector('.header > .area');
+    const headerElement = document.querySelector(".header");
+    const areaElement = document.querySelector(".header > .area");
 
-    const serviceHeaderBar = document.createElement('div');
-    serviceHeaderBar.classList.add('service-header-bar');
+    const serviceHeaderBar = document.createElement("div");
+    serviceHeaderBar.classList.add("service-header-bar");
 
     const logoContainer = document.createElement("div");
     logoContainer.classList.add("logo-container");
@@ -25,15 +25,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const logoImg = document.createElement("img");
     logoImg.classList.add("header-logo");
-    logoImg.src = "https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield/Images/logo.png";
+    logoImg.src =
+      "https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield/Images/logo.png";
     logoImg.alt = "Sheffield City Council Logo";
 
     logoLink.appendChild(logoImg);
     logoContainer.appendChild(logoLink);
 
-    const serviceLabel = document.createElement('span');
-    serviceLabel.id = 'service-label';
-    serviceLabel.classList.add('service-label');
+    const serviceLabel = document.createElement("span");
+    serviceLabel.id = "service-label";
+    serviceLabel.classList.add("service-label");
     serviceLabel.textContent = "My Account";
 
     serviceHeaderBar.appendChild(logoContainer);
@@ -50,17 +51,24 @@ document.addEventListener('DOMContentLoaded', function () {
      * and repositions it within the navigation menu.
      */
     const menuDiv = document.querySelector('.menu[role="navigation"]');
-    const originalAccountHomeLi = document.getElementById('nav_home').closest('li');
-    const accountHomeLink = document.getElementById('nav_home');
-    const menuButtonContainer = document.querySelector('.menuButton');
+    const originalAccountHomeLi = document
+      .getElementById("nav_home")
+      .closest("li");
+    const accountHomeLink = document.getElementById("nav_home");
+    const menuButtonContainer = document.querySelector(".menuButton");
 
-    if (menuDiv && originalAccountHomeLi && accountHomeLink && menuButtonContainer) {
-      accountHomeLink.classList.add('account-home-global-link');
+    if (
+      menuDiv &&
+      originalAccountHomeLi &&
+      accountHomeLink &&
+      menuButtonContainer
+    ) {
+      accountHomeLink.classList.add("account-home-global-link");
 
-      let iconSpan = accountHomeLink.querySelector('.icon-home');
+      let iconSpan = accountHomeLink.querySelector(".icon-home");
       if (!iconSpan) {
-        iconSpan = document.createElement('span');
-        iconSpan.classList.add('icon-home');
+        iconSpan = document.createElement("span");
+        iconSpan.classList.add("icon-home");
         accountHomeLink.prepend(iconSpan);
       }
 
@@ -79,20 +87,20 @@ document.addEventListener('DOMContentLoaded', function () {
     /**
      * Updates the text content of the Login/Register, Logout, and My Profile navigation links.
      */
-    const loginRegisterLink = document.getElementById('nav_login');
+    const loginRegisterLink = document.getElementById("nav_login");
     if (loginRegisterLink) {
-      loginRegisterLink.textContent = 'Sign in / Register';
+      loginRegisterLink.textContent = "Sign in / Register";
     }
 
-    const logoutButton = document.querySelector('#nav_logout button');
+    const logoutButton = document.querySelector("#nav_logout button");
     if (logoutButton) {
-      logoutButton.textContent = 'Sign out';
+      logoutButton.textContent = "Sign out";
     }
 
-    const myProfileLink = document.getElementById('nav_username');
+    const myProfileLink = document.getElementById("nav_username");
     userName = myProfileLink.textContent;
     if (myProfileLink) {
-      myProfileLink.textContent = 'My profile';
+      myProfileLink.textContent = "My profile";
     }
   })();
 
@@ -100,10 +108,10 @@ document.addEventListener('DOMContentLoaded', function () {
     /**
      * Creates a new link in the navigation that displays the user's username and links to their profile.
      */
-    const navigationDiv = document.querySelector('.navigation');
-    const usernameLink = document.createElement('a');
+    const navigationDiv = document.querySelector(".navigation");
+    const usernameLink = document.createElement("a");
 
-    usernameLink.href = '/site/sheffield_dev/profile';
+    usernameLink.href = "/site/portal/profile";
     usernameLink.tabIndex = 0;
 
     usernameLink.textContent = userName;
@@ -117,38 +125,40 @@ document.addEventListener('DOMContentLoaded', function () {
     /**
      * Creates and appends footer links and a copyright notice to the designated footer area.
      */
-    const footerArea = document.getElementById('FooterAreaInSingleColumnNoNavigationTemplate');
+    const footerArea = document.getElementById(
+      "FooterAreaInSingleColumnNoNavigationTemplate"
+    );
 
     if (footerArea) {
-      const footerLinksUl = document.createElement('ul');
-      footerLinksUl.classList.add('footer-links');
+      const footerLinksUl = document.createElement("ul");
+      footerLinksUl.classList.add("footer-links");
 
-      const cookiePolicyLi = document.createElement('li');
-      const cookieAnchor = document.createElement('a');
+      const cookiePolicyLi = document.createElement("li");
+      const cookieAnchor = document.createElement("a");
       cookieAnchor.href = "#";
-      cookieAnchor.classList.add('footer-link');
+      cookieAnchor.classList.add("footer-link");
       cookieAnchor.textContent = "Cookie policy";
       cookiePolicyLi.appendChild(cookieAnchor);
       footerLinksUl.appendChild(cookiePolicyLi);
 
-      const privacyStatementLi = document.createElement('li');
-      const privacyAnchor = document.createElement('a');
+      const privacyStatementLi = document.createElement("li");
+      const privacyAnchor = document.createElement("a");
       privacyAnchor.href = "#";
-      privacyAnchor.classList.add('footer-link');
+      privacyAnchor.classList.add("footer-link");
       privacyAnchor.textContent = "Privacy statement";
       privacyStatementLi.appendChild(privacyAnchor);
       footerLinksUl.appendChild(privacyStatementLi);
 
-      const accessibilityStatementLi = document.createElement('li');
-      const accessibilityAnchor = document.createElement('a');
+      const accessibilityStatementLi = document.createElement("li");
+      const accessibilityAnchor = document.createElement("a");
       accessibilityAnchor.href = "#";
-      accessibilityAnchor.classList.add('footer-link');
+      accessibilityAnchor.classList.add("footer-link");
       accessibilityAnchor.textContent = "Accessibility statement";
       accessibilityStatementLi.appendChild(accessibilityAnchor);
       footerLinksUl.appendChild(accessibilityStatementLi);
 
-      const footerCopyright = document.createElement('div');
-      footerCopyright.classList.add('footer-copyright');
+      const footerCopyright = document.createElement("div");
+      footerCopyright.classList.add("footer-copyright");
       footerCopyright.textContent = `© Sheffield City Council ${new Date().getFullYear()}`;
 
       footerArea.appendChild(footerLinksUl);
@@ -161,13 +171,13 @@ document.addEventListener('DOMContentLoaded', function () {
      * Contains logic specific to the '/requests' page, handling
      * the display and formatting of request lists and details.
      */
-    if (window.location.pathname.endsWith('/requests')) {
+    if (window.location.pathname.endsWith("/requests")) {
       /**
        * Checks if the 'srid' URL parameter exists and starts with '101000',
        * indicating a request details page.
        */
       const sridValue = KDF.getParams().srid;
-      const isSridValid = KDF.getParams()?.srid?.startsWith('1010') ?? false;
+      const isSridValid = KDF.getParams()?.srid?.startsWith("1010") ?? false;
 
       /**
        * Executes if the current page is a request details page (determined by checkSridParam).
@@ -175,52 +185,56 @@ document.addEventListener('DOMContentLoaded', function () {
        * certain elements and reformatting others.
        */
       if (isSridValid) {
-
-
-  // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
-        const page = document.getElementById('requests');
-        const content = document.getElementById('content');
-        const navigation = document.querySelector('.navigation');
-        const tabButtons = document.getElementById('widget_ahtm_request_tabs');
-        const requestInfo = document.getElementById('widget_ahtm_view_reuests_into');
+        // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
+        const page = document.getElementById("requests");
+        const content = document.getElementById("content");
+        const navigation = document.querySelector(".navigation");
+        const tabButtons = document.getElementById("widget_ahtm_request_tabs");
+        const requestInfo = document.getElementById(
+          "widget_ahtm_view_reuests_into"
+        );
 
         if (page && content) {
           // Check if the custom CSS variable is available
-          if (getComputedStyle(document.documentElement).getPropertyValue('--c-greys-white')) {
-            page.style.backgroundColor = 'var(--c-greys-white)';
-            content.style.backgroundColor = 'var(--c-greys-white)';
+          if (
+            getComputedStyle(document.documentElement).getPropertyValue(
+              "--c-greys-white"
+            )
+          ) {
+            page.style.backgroundColor = "var(--c-greys-white)";
+            content.style.backgroundColor = "var(--c-greys-white)";
           } else {
             // Fallback to a standard color if the variable is not found
-            page.style.backgroundColor = 'white';
-            content.style.backgroundColor = 'white';
+            page.style.backgroundColor = "white";
+            content.style.backgroundColor = "white";
           }
         }
 
         if (navigation) {
-          navigation.style.display = 'none';
+          navigation.style.display = "none";
         }
         if (tabButtons) {
-          tabButtons.style.display = 'none';
+          tabButtons.style.display = "none";
         }
         if (requestInfo) {
-          requestInfo.style.display = 'none';
+          requestInfo.style.display = "none";
         }
 
-        const linkContainer = document.querySelector('.le-request-list-link');
-        const backButton = linkContainer.querySelector('a');
+        const linkContainer = document.querySelector(".le-request-list-link");
+        const backButton = linkContainer.querySelector("a");
 
         if (backButton) {
-          backButton.innerHTML = '<span>Back</span>';
+          backButton.innerHTML = "<span>Back</span>";
 
-          const newDiv = document.createElement('div');
-          newDiv.className = 'le-request-label-value';
+          const newDiv = document.createElement("div");
+          newDiv.className = "le-request-label-value";
 
-          const spanLabel = document.createElement('span');
-          spanLabel.className = 'le-request-label';
-          spanLabel.textContent = 'Reference';
+          const spanLabel = document.createElement("span");
+          spanLabel.className = "le-request-label";
+          spanLabel.textContent = "Reference";
 
-          const spanValue = document.createElement('span');
-          spanValue.className = 'le-request-value';
+          const spanValue = document.createElement("span");
+          spanValue.className = "le-request-value";
           spanValue.textContent = sridValue;
 
           newDiv.appendChild(spanLabel);
@@ -229,23 +243,25 @@ document.addEventListener('DOMContentLoaded', function () {
           backButton.parentNode.insertBefore(newDiv, backButton.nextSibling);
         }
 
-        const detailsDiv = document.querySelector('.le-request-details-full');
+        const detailsDiv = document.querySelector(".le-request-details-full");
         if (detailsDiv) {
-          const typeDiv = detailsDiv.querySelector('.le-request-label-value:nth-child(3)');
-          const headerElement = detailsDiv.querySelector('.le-request-header');
+          const typeDiv = detailsDiv.querySelector(
+            ".le-request-label-value:nth-child(3)"
+          );
+          const headerElement = detailsDiv.querySelector(".le-request-header");
 
           if (typeDiv && headerElement) {
-            const lastRequestValue = typeDiv.querySelector('.le-request-value');
+            const lastRequestValue = typeDiv.querySelector(".le-request-value");
 
             if (lastRequestValue) {
               const getDynamicValue = (lowercase = false) => {
                 const textContent = lastRequestValue.textContent.trim();
-                const parts = textContent.split('>').map(part => part.trim());
+                const parts = textContent.split(">").map((part) => part.trim());
                 const value = parts[parts.length - 1];
                 return lowercase ? value.toLowerCase() : value;
               };
 
-              const h1 = document.createElement('h1');
+              const h1 = document.createElement("h1");
               h1.textContent = `Your ${getDynamicValue(true)} summary`;
               detailsDiv.prepend(h1);
 
@@ -253,47 +269,52 @@ document.addEventListener('DOMContentLoaded', function () {
             }
           }
         }
-        const statusSpan = document.querySelector('.le-request-status-text');
+        const statusSpan = document.querySelector(".le-request-status-text");
 
         if (statusSpan) {
           const statusText = statusSpan.textContent.trim().toLowerCase();
 
-          if (statusText === 'open') {
-            statusSpan.textContent = 'Submitted';
-          } else if (statusText === 'closed') {
-            statusSpan.textContent = 'Complete';
+          if (statusText === "open") {
+            statusSpan.textContent = "Submitted";
+          } else if (statusText === "closed") {
+            statusSpan.textContent = "Complete";
           }
         }
 
-        const notesHeader = Array.from(document.querySelectorAll('.le-request-header'))
-          .find(header => header.textContent.trim() === 'Notes');
+        const notesHeader = Array.from(
+          document.querySelectorAll(".le-request-header")
+        ).find((header) => header.textContent.trim() === "Notes");
 
-        const notesDetails = document.querySelector('.le-request-note-details');
+        const notesDetails = document.querySelector(".le-request-note-details");
 
         if (notesHeader && notesDetails) {
-          const container = document.createElement('div');
-          container.classList.add('notes-container');
+          const container = document.createElement("div");
+          container.classList.add("notes-container");
           notesHeader.parentNode.insertBefore(container, notesHeader);
           container.appendChild(notesHeader);
           container.appendChild(notesDetails);
         }
 
-        const formDetailsDiv = document.querySelector('.le-request-form-details');
+        const formDetailsDiv = document.querySelector(
+          ".le-request-form-details"
+        );
 
         if (formDetailsDiv) {
-          const backLink = document.createElement('a');
-          backLink.href = '/site/sheffield_dev/requests';
-          backLink.textContent = 'Back to My Requests';
-          backLink.id = 'back-to-requests-link';
+          const backLink = document.createElement("a");
+          backLink.href = "/site/portal/requests";
+          backLink.textContent = "Back to My Requests";
+          backLink.id = "back-to-requests-link";
           formDetailsDiv.after(backLink);
         }
 
-        const datetimeElements = document.querySelectorAll('.le-request-note-created time');
+        const datetimeElements = document.querySelectorAll(
+          ".le-request-note-created time"
+        );
 
         if (datetimeElements.length > 0) {
-          datetimeElements.forEach(element => {
-            const dateTime = element.getAttribute('datetime');
-            const timezone = element.getAttribute('data-timezone');
+          datetimeElements.forEach((element) => {
+            const dateTime = element.getAttribute("datetime");
+            const timezone = element.getAttribute("data-timezone");
             /**
              * Formats the date and time for request notes, adding ordinal suffixes to the day.
              */
@@ -302,42 +323,55 @@ document.addEventListener('DOMContentLoaded', function () {
               const date = new Date(dateTime);
 
               const options = {
-                day: 'numeric',
-                month: 'long',
-                year: 'numeric',
-                hour: 'numeric',
-                minute: 'numeric',
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+                hour: "numeric",
+                minute: "numeric",
                 hour12: true, // Use AM/PM format
                 timeZone: timezone,
               };
 
-              const formattedDate = new Intl.DateTimeFormat('en-GB', options).format(date);
+              const formattedDate = new Intl.DateTimeFormat(
+                "en-GB",
+                options
+              ).format(date);
 
               // Add ordinal suffix (e.g., "st", "nd", "rd", "th")
               const day = date.getDate();
-              const suffix = (day % 10 === 1 && day !== 11) ? 'st' :
-                (day % 10 === 2 && day !== 12) ? 'nd' :
-                  (day % 10 === 3 && day !== 13) ? 'rd' : 'th';
+              const suffix =
+                day % 10 === 1 && day !== 11
+                  ? "st"
+                  : day % 10 === 2 && day !== 12
+                  ? "nd"
+                  : day % 10 === 3 && day !== 13
+                  ? "rd"
+                  : "th";
 
-              const dayWithSuffix = formattedDate.replace(/(\d+)/, `$1${suffix}`);
+              const dayWithSuffix = formattedDate.replace(
+                /(\d+)/,
+                `$1${suffix}`
+              );
 
               element.textContent = dayWithSuffix;
             }
           });
         }
       } else {
-        document.querySelectorAll('li.le-request-status-text').forEach(el => {
-          el.textContent = 'Status:';
+        document.querySelectorAll("li.le-request-status-text").forEach((el) => {
+          el.textContent = "Status:";
         });
 
-        document.querySelectorAll('.le-request-title a').forEach(el => {
-          el.textContent = el.textContent.replace(/\s*\(.*?\)/g, '');
+        document.querySelectorAll(".le-request-title a").forEach((el) => {
+          el.textContent = el.textContent.replace(/\s*\(.*?\)/g, "");
         });
 
-        document.querySelectorAll('time').forEach(el => {
+        document.querySelectorAll("time").forEach((el) => {
           const text = el.textContent.trim();
 
-          const match = text.match(/^(.*?)\s*\((.*?)\s+([A-Za-z]+,\s+)?(.+?)\)$/);
+          const match = text.match(
+            /^(.*?)\s*\((.*?)\s+([A-Za-z]+,\s+)?(.+?)\)$/
+          );
 
           if (match) {
             let relative = match[1]; // "7 days ago"
@@ -358,11 +392,15 @@ document.addEventListener('DOMContentLoaded', function () {
          */
 
         // Select buttons and widgets
-        const submittedBtn = document.getElementById('submitted-tab');
-        const draftsBtn = document.getElementById('drafts-tab');
-        const widgetSubmitted = document.getElementById('widget_MySubmittedRequests');
-        const widgetDrafts = document.getElementById('widget_MyDraftRequests');
-        const paginationContainer = document.getElementById('pagination-container');
+        const submittedBtn = document.getElementById("submitted-tab");
+        const draftsBtn = document.getElementById("drafts-tab");
+        const widgetSubmitted = document.getElementById(
+          "widget_MySubmittedRequests"
+        );
+        const widgetDrafts = document.getElementById("widget_MyDraftRequests");
+        const paginationContainer = document.getElementById(
+          "pagination-container"
+        );
 
         /**
          * Initializes the pagination for a given widget.
@@ -372,13 +410,18 @@ document.addEventListener('DOMContentLoaded', function () {
           const activeWidget = document.getElementById(activeWidgetId);
           if (!activeWidget) return;
 
-          const itemsContainer = activeWidget.querySelector('.le-request-list ul');
-          const items = Array.from(itemsContainer.querySelectorAll('.le-request-item'));
+          const itemsContainer = activeWidget.querySelector(
+            ".le-request-list ul"
+          );
+          const items = Array.from(
+            itemsContainer.querySelectorAll(".le-request-item")
+          );
           const itemsPerPage = 5;
           let currentPage = 1;
 
           // Calculate the total number of pages. If there are 0 items, default to 1 page.
-          const totalPages = items.length === 0 ? 1 : Math.ceil(items.length / itemsPerPage);
+          const totalPages =
+            items.length === 0 ? 1 : Math.ceil(items.length / itemsPerPage);
 
           /**
            * Displays the items for a specific page.
@@ -389,7 +432,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const endIndex = startIndex + itemsPerPage;
 
             items.forEach((item, index) => {
-              item.style.display = (index >= startIndex && index < endIndex) ? 'list-item' : 'none';
+              item.style.display =
+                index >= startIndex && index < endIndex ? "list-item" : "none";
             });
           }
 
@@ -397,12 +441,12 @@ document.addEventListener('DOMContentLoaded', function () {
            * Creates the pagination buttons and appends them to the pagination container.
            */
           function createPagination() {
-            paginationContainer.innerHTML = '';
+            paginationContainer.innerHTML = "";
 
-            const createButton = (text, page, className = '') => {
-              const li = document.createElement('li');
-              const a = document.createElement('a');
-              a.href = '#';
+            const createButton = (text, page, className = "") => {
+              const li = document.createElement("li");
+              const a = document.createElement("a");
+              a.href = "#";
               a.textContent = text;
               li.appendChild(a);
 
@@ -411,16 +455,20 @@ document.addEventListener('DOMContentLoaded', function () {
               }
 
               if (page) {
-                a.setAttribute('data-page', page);
+                a.setAttribute("data-page", page);
               }
 
               return li;
             };
 
-            const prevButton = createButton('← Previous', null, 'le-pagination-nav');
+            const prevButton = createButton(
+              "← Previous",
+              null,
+              "le-pagination-nav"
+            );
             paginationContainer.appendChild(prevButton);
-            if (currentPage === 1) prevButton.classList.add('disabled');
-            prevButton.addEventListener('click', (e) => {
+            if (currentPage === 1) prevButton.classList.add("disabled");
+            prevButton.addEventListener("click", (e) => {
               e.preventDefault();
               if (currentPage > 1) {
                 currentPage--;
@@ -431,9 +479,9 @@ document.addEventListener('DOMContentLoaded', function () {
             for (let i = 1; i <= totalPages; i++) {
               const pageButton = createButton(i, i);
               if (i === currentPage) {
-                pageButton.classList.add('active');
+                pageButton.classList.add("active");
               }
-              pageButton.addEventListener('click', (e) => {
+              pageButton.addEventListener("click", (e) => {
                 e.preventDefault();
                 currentPage = i;
                 updatePagination();
@@ -441,10 +489,15 @@ document.addEventListener('DOMContentLoaded', function () {
               paginationContainer.appendChild(pageButton);
             }
 
-            const nextButton = createButton('Next →', null, 'le-pagination-nav');
+            const nextButton = createButton(
+              "Next →",
+              null,
+              "le-pagination-nav"
+            );
             paginationContainer.appendChild(nextButton);
-            if (currentPage === totalPages) nextButton.classList.add('disabled');
-            nextButton.addEventListener('click', (e) => {
+            if (currentPage === totalPages)
+              nextButton.classList.add("disabled");
+            nextButton.addEventListener("click", (e) => {
               e.preventDefault();
               if (currentPage < totalPages) {
                 currentPage++;
@@ -473,41 +526,39 @@ document.addEventListener('DOMContentLoaded', function () {
          * @param {HTMLElement} hideWidget - The widget to hide.
          */
         function activateTab(activeBtn, inactiveBtn, showWidget, hideWidget) {
-          activeBtn.classList.add('active');
-          inactiveBtn.classList.remove('active');
+          activeBtn.classList.add("active");
+          inactiveBtn.classList.remove("active");
 
-          showWidget.style.display = 'block';
-          hideWidget.style.display = 'none';
+          showWidget.style.display = "block";
+          hideWidget.style.display = "none";
 
           initPagination(showWidget.id);
         }
 
-        submittedBtn.addEventListener('click', () => {
+        submittedBtn.addEventListener("click", () => {
           activateTab(submittedBtn, draftsBtn, widgetSubmitted, widgetDrafts);
         });
 
-        draftsBtn.addEventListener('click', () => {
+        draftsBtn.addEventListener("click", () => {
           activateTab(draftsBtn, submittedBtn, widgetDrafts, widgetSubmitted);
         });
 
-        if (KDF.getParams().a === 'drafts') {
+        if (KDF.getParams().a === "drafts") {
           setTimeout(() => {
             activateTab(draftsBtn, submittedBtn, widgetDrafts, widgetSubmitted);
           }, 0);
         }
 
-        if (submittedBtn.classList.contains('active')) {
-          widgetSubmitted.style.display = 'block';
-          widgetDrafts.style.display = 'none';
-          initPagination('widget_MySubmittedRequests');
+        if (submittedBtn.classList.contains("active")) {
+          widgetSubmitted.style.display = "block";
+          widgetDrafts.style.display = "none";
+          initPagination("widget_MySubmittedRequests");
         } else {
-          widgetSubmitted.style.display = 'none';
-          widgetDrafts.style.display = 'block';
-          initPagination('widget_MyDraftRequests');
+          widgetSubmitted.style.display = "none";
+          widgetDrafts.style.display = "block";
+          initPagination("widget_MyDraftRequests");
         }
       }
     }
   })();
 });
-
-
