@@ -8,7 +8,7 @@
 @import url("./notice-pannels.css");
 @import url("./accordions.css");
 @import url("./widgets.css");
-@import url("type-ahead.css");
+@import url("./type-ahead.css");
 @import url("./file-upload.css");
 @import url("./buttons.css");
 @import url("./address-locator.css");
@@ -21,20 +21,20 @@
 @import url("./my-requests.css");
 @import url("./my-request-details.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
   /* Colors */
   --c-core-brand-primary-darken: #13384a;
-  --c-core-brand-primary: #1B4A60;
-  --c-core-brand-secondary: #0B0C0C;
+  --c-core-brand-primary: #1b4a60;
+  --c-core-brand-secondary: #0b0c0c;
   --c-core-brand-body: #3d3d3b;
   --c-brand-accents-teal: #00757f;
   --c-core-brand-accent-1-darken: #b45244;
   --c-core-brand-accent-1-tint-80: #ee6f5c;
   --c-core-tints-accent-1-tint-20: #fce6e3;
   --c-core-brand-accent-2: #9ed5df;
-  --c-core-tints-accent-2-tint-80: #B1DDE5;
+  --c-core-tints-accent-2-tint-80: #b1dde5;
   --c-core-tints-accent-2-tint-20: #e0f7fd;
   --c-greys-slate: #3c505d;
   --c-greys-chalk: #f1f1f5;
@@ -46,12 +46,12 @@
   --c-alerts-success-darken: #006b31;
   --c-core-tints-success-tint-20: #ddffed;
   --c-alerts-danger: #d4351c;
-  --c-alerts-warning: #FFCC3F;
+  --c-alerts-warning: #ffcc3f;
 
-  --c-blue: #0072BB;
+  --c-blue: #0072bb;
   --c-blue-lighten: #e0f7fd;
   --c-blue-darken: #004673;
-  --c-green-lighten: #EAFFF4;
+  --c-green-lighten: #eafff4;
   --c-red-lighten: #fff5f3;
   --c-green-darken: #006b31;
   --c-orange: #ff8b44;
@@ -251,7 +251,6 @@ body {
   }
 }
 
-
 #dform_container #dform_lock {
   display: none;
   z-index: 1001;
@@ -276,7 +275,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: URL('../Sheffield-Preloader.gif');
+  background: URL("../Sheffield-Preloader.gif");
   mix-blend-mode: multiply;
   background-repeat: no-repeat;
   border-radius: 50px;
