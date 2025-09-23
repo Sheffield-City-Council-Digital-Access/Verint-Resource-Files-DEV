@@ -1,0 +1,382 @@
+#dform_container input,
+#dform_container select,
+#dform_container textarea,
+#dform_container .currency-symbol {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+  color: var(--c-greys-black);
+  padding: var(--spacing-xs) var(--spacing-sm) !important;
+  height: var(--field-height-md);
+  width: var(--field-width-100);
+  background: var(--c-greys-white);
+  border: 2px solid var(--c-greys-black);
+  box-sizing: border-box;
+}
+
+#dform_container div.w-75 input,
+#dform_container div.w-75 select {
+  width: var(--field-width-75);
+}
+
+#dform_container div.w-50 input,
+#dform_container div.w-50 select {
+  width: var(--field-width-50);
+}
+
+#dform_container div.w-25 input,
+#dform_container div.w-25 select {
+  width: var(--field-width-25);
+}
+
+#dform_container div.max-4 input,
+#dform_container div.max-4 select {
+  width: var(--field-width-max-4);
+}
+
+#dform_container div.max-2 input {
+  width: var(--field-width-max-2);
+}
+
+#dform_container div.max-1 input {
+  width: var(--field-width-max-1);
+}
+
+#dform_container textarea {
+  height: var(--field-height-lg);
+}
+
+#dform_container div input[type="date"],
+#dform_container div input[type="time"] {
+  width: 12.5rem; /* 200px */
+}
+
+/* --- SELECT --- */
+
+#dform_container select {
+  appearance: base-select;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2210%22%20width%3D%2210%22%20viewBox%3D%220%200%20640%20640%22%3E%3Cpath%20d%3D%22M297.4%20470.6C309.9%20483.1%20330.2%20483.1%20342.7%20470.6L534.7%20278.6C547.2%20266.1%20547.2%20245.8%20534.7%20233.3C522.2%20220.8%20501.9%20220.8%20489.4%20233.3L320%20402.7L150.6%20233.4C138.1%20220.9%20117.8%20220.9%20105.3%20233.4C92.8%20245.9%2092.8%20266.2%20105.3%20278.7L297.3%20470.7z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1.25rem;
+  line-height: normal;
+  cursor: pointer;
+}
+
+#dform_container select option {
+  margin-block: var(--spacing-md);
+  padding: var(--spacing-md);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-style: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+  color: var(--c-core-brand-secondary);
+  /* background: var(--c-core-tints-accent-2-tint-20);
+  border-bottom: 1px solid var(--c-core-tints-accent-2-tint-80); */
+
+  display: block;
+  min-height: var(--field-height-md);
+  white-space: nowrap;
+}
+
+#dform_container select option:hover {
+  color: var(--c-greys-white);
+  background: var(--c-core-brand-primary);
+}
+
+/* --- RADIO --- */
+
+#dform_container fieldset,
+#dform_container div[data-type="child"] {
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 100%;
+  clear: both;
+}
+
+#dform_container fieldset.radiogroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: var(--field-width-100);
+}
+
+#dform_container fieldset.radiogroup .helptext {
+  width: var(--field-width-100);
+}
+
+#dform_container .vertical fieldset.radiogroup {
+  line-height: var(--line-height);
+}
+
+#dform_container .vertical fieldset.radiogroup {
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+#dform_container fieldset.radiogroup br {
+  display: none;
+}
+
+#dform_container fieldset.radiogroup span {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;;
+  gap: var(--spacing-xs);
+  margin-right: var(--spacing-lg);
+  margin-bottom: var(--spacing-xxs);
+  text-align: center;
+}
+
+#dform_container fieldset.radiogroup span:last-child {
+  margin-bottom: 0;
+}
+
+#dform_container fieldset.radiogroup span label {
+  margin-block: auto;
+  color: var(--c-greys-black);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+  text-align: left;
+  max-width: var(--field-width-100);
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+#dform_container fieldset.radiogroup .dform_validationMessage {
+  width: 100%;
+}
+
+#dform_container input[type="radio"] {
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: var(--c-greys-white);
+  border: 2px solid var(--c-greys-black);
+  border-radius: 50%;
+  width: var(--field-height-sm);
+  height: var(--field-height-sm);
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+#dform_container input[type="radio"]:checked {
+  background-color: var(--c-greys-white);
+  border: 2px solid var(--c-greys-black);
+}
+
+#dform_container input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 60%;
+  background-color: var(--c-greys-black);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* --- CHECKBOX --- */
+
+#dform_container fieldset.checkboxgroup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: var(--spacing-sm);
+}
+
+#dform_container fieldset.checkboxgroup br {
+  display: none;
+}
+
+#dform_container input[type="checkbox"] {
+  height: var(--field-height-sm);
+  width: var(--field-height-sm);
+  box-shadow: inset 0 0 0 1px var(--c-greys-black) !important;
+  accent-color: var(--c-greys-white);
+}
+
+#dform_container .dform_fielderror,
+.container.dform_widget:has(input.dform_fielderror) .currency-symbol {
+  box-shadow: none !important;
+  border: solid 2px var(--c-alerts-danger) !important;
+  outline: none;
+}
+
+#dform_container fieldset.checkboxgroup > span,
+#dform_container .dform_widget_type_checkbox > div {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: var(--spacing-sm);
+}
+
+#dform_container fieldset.checkboxgroup > span {
+  align-items: start;
+}
+
+#dform_container .dform_widget_type_checkbox label {
+  margin-block: auto;
+  color: var(--c-greys-black);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+}
+
+#dform_container fieldset.checkboxgroup > span > label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
+  margin-block: auto;
+  color: var(--c-greys-black);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+  text-align: left;
+  max-width: 100%;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+#dform_container fieldset.checkboxgroup .helptext,
+#dform_container fieldset.checkboxgroup .dform_validationMessage {
+  line-height: var(--line-height);
+}
+
+/* --- CURRENCY --- */
+
+#dform_container .currency-input-group {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#dform_container .currency-symbol {
+  display: flex;
+  align-items: center;
+  width: var(--field-width-max-1);
+  border-right: none !important;
+}
+
+/* --- DATE / TIME --- */
+
+#dform_container .container-date,
+#dform_container .container-time {
+  display: grid;
+  grid-template-columns: repeat(3, max-content) 1fr;
+  column-gap: var(--spacing-md);
+}
+
+.helptext,
+.dform_validationMessage {
+  grid-column: 1 / -1;
+}
+
+#dform_container .container-date input[type="text"],
+#dform_container .container-time input[type="text"] {
+  grid-column: 1 / -1;
+  display: none;
+}
+
+#dform_container .container-date input[type="number"],
+#dform_container .container-time input[type="number"] {
+  text-align: center;
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: none;
+  padding-right: 0.5rem !important;
+}
+
+#dform_container .date-dd,
+#dform_container .date-mm,
+#dform_container .time-hour,
+#dform_container .time-minute {
+  max-width: var(--field-width-max-2) !important;
+}
+
+#dform_container .date-yy,
+#dform_container .time-ampm {
+  max-width: var(--field-width-max-4) !important;
+}
+
+#dform_container .time-ampm {
+  width: 200%;
+}
+
+#dform_container div[data-type="html"] > div[data-type="date"],
+#dform_container div[data-type="html"] > div[data-type="time"] {
+  display: none !important;
+}
+
+#dform_container div[data-type="html"].remove-tab {
+  outline: none !important;
+}
+
+/* --- FIELD ERROR --- */
+
+.container.dform_widget:has(input.dform_fielderror),
+.container.dform_widget:has(textarea.dform_fielderror),
+.container.dform_widget:has(select.dform_fielderror) {
+  padding-left: var(--spacing-md) !important;
+  border-left: solid var(--spacing-xxs) var(--c-alerts-danger) !important;
+}
+
+#dform_container .dform_fielderror,
+.container.dform_widget:has(input.dform_fielderror) .currency-symbol {
+  box-shadow: none;
+  border: solid 2px var(--c-alerts-danger) !important;
+  outline: none;
+}
+
+/* --- FIELD FOCUS --- */
+
+#dform_container input:focus,
+#dform_container textarea:focus,
+#dform_container select:focus {
+  box-shadow: none;
+  border: 3px solid var(--c-greys-black) !important;
+  outline: 3px solid var(--c-focus-links) !important;
+  outline-offset: 0 !important;
+}
+
+#dform_container input[type="radio"]:focus {
+  box-shadow: none !important;
+}
+
+#dform_container input[type="checkbox"]:focus,
+#dform_container input[type="checkbox"]:checked:focus::after {
+  box-shadow: inset 0 0 0 2px var(--c-greys-black) !important;
+}
+
+#dform_container input:focus-visible {
+  outline-offset: 0 !important;
+}
+
+#dform_container .file_delete:focus {
+  outline: 0.4rem solid var(--c-focus-linksA);
+}
+
+/* --- CHARACTER COUNT --- */
+
+#dform_container .character-count {
+  color: var(--c-core-brand-body);
+  display: block;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
+}
