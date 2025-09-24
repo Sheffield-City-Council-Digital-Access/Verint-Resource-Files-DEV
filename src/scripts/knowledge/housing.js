@@ -1695,6 +1695,69 @@ const programmedWorks = new ContentH(
   </div>
 </details>
 
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Fire and Safety - High Rise Blocks Waking Watch</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+    <p><strong>Main Message:</strong>"<i>As part of our ongoing commitment to keeping all residents safe, 
+    we're introducing a temporary <strong>waking watch</strong> in your block. This is due to having 
+    identified a small amount of insulation in a handful of buildings that needs further investigation. 
+    While there is no immediate danger, we've already put extra safety measures in place. This is a 
+    precautionary measure while we continue to assess the external areas of the building."</i></p>
+
+     <p>"<i>This is in addition to the fire safety upgrades we've already completed, which have strengthened 
+     the overall safety provisions in your building."</i></p>
+
+      <p>"<i>The waking watch team will carry out regular patrols throughout the building and will be on hand 
+      to respond in the unlikely event of a fire. We're confident that no issues will arise, but this added 
+      layer of safety is there to provide reassurance and protection."</i></p>
+      
+      <p>"You can help us keep the building safe by:<br>
+    
+      <ul><i>
+        <li>Keep communal areas and escape routes clear of personal items or waste.</li>
+        <li>Dispose of rubbish properly and avoid leaving bulky items in or around bin stores.</li>
+        <li>Report any fire safety concerns to us straight away."</li>
+      </ul></i>
+    
+      <p>We will continue to keep you updated of any developments.</p>
+      
+      <p>Drop-in sessions have been arranged in your area to answer any further questions you might have:</p>
+      <ul>
+        <li>
+          <strong><i>Keating Block</strong> — Tuesday 12th August, 9:00-12:00.
+        </li>
+        <li>
+          <strong>Callow Block</strong> — Friday 15th August, 9:00-12:00.
+        </li>
+      </ul></i>
+      <p>Where representatives from the Fire Safety Team and Neighbourhood Officers will attend.</p>
+
+      <p><strong>Closing:</strong> "<i>We really appreciate your cooperation and understanding. If you have 
+      any further questions or concerns, please don't hesitate to contact us. We're here to help."</i></p>
+
+      <p><strong>NB:</strong>If the tenant asks to escalate their query, please advise them to call the FSCT 
+      on <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2057501')">0114 2057501</a> and 
+      ask for <strong>James Hague</strong> or <strong>Luke Simpson</strong>.</p>
+
+     <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+         Residents with mobility concerns are encouraged to contact their
+        <a href="${window.location.protocol}//${
+    window.location.hostname
+  }/form/launch/hou_routing_enquiry?${
+    KDF.getParams().customerid
+      ? `customerid=${KDF.getParams().customerid}&`
+      : ""
+  }interactionid=${KDF.getParams().interactionid}">Neighbourhood officers</a>
+      to ensure their needs are considered in safety planning.
+      </p>
+    </section>
+    </div>
+</details>
+
 <p>
     Programme Support / Re-Roofing: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2052706')">0114 2052706</a><br>
     </p>
@@ -1716,11 +1779,11 @@ const programmedWorks = new ContentH(
 
   `,
   {
-    buttonLabel: "",
-    formName: "",
+    buttonLabel: "Raise a Report",
+    formName: "hou_programmed_work",
   },
-  { typeKey: "repairs_and_investment_transferred_to_service" },
-  { typeKey: "repairs_and_investment_information_provided" },
+  { typeKey: "asset_management_and_repairs_transferred_to_servic" },
+  { typeKey: "asset_management_and_repairs_information_provided" },
   {
     type: "Information",
     keywords: [
@@ -1732,7 +1795,7 @@ const programmedWorks = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "31/07/2025", name: "Andy Walker" }
+  { date: "23/09/2025", name: "Shaz Athar" }
 );
 
 const propertyAge = new ContentH(
