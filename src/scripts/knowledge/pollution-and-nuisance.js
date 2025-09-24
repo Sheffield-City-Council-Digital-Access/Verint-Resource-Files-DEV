@@ -3192,8 +3192,7 @@ const animalControl = new ContentPaN(
     </p>
     <address>
         <strong>Address:</strong><br>
-        Bower Spring <br>
-        Sheffield <br> 
+        Bower Spring, Sheffield <br> 
         S3 8PB
     </address>
         <p><strong><i>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</i></p>
