@@ -3176,6 +3176,7 @@ const animalControl = new ContentPaN(
         <h3>Dog</h3>
         <div class="accordion-icon"></div>
     </summary>
+<div class="accordion-content">
   <details class="details-accordion">
   <summary>
   Dog - Adoption
