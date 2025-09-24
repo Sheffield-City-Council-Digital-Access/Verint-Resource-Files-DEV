@@ -3103,7 +3103,6 @@ const animalControl = new ContentPaN(
     <a href="https://www.rspca.org.uk" target="_blank" rel="noopener noreferrer">www.rspca.org.uk </a></p>
     </div>
 </details>
-
 <details class="accordion">
     <summary class="accordion-header">
         <h3>Animal Boarding Establishment</h3>
@@ -3121,7 +3120,6 @@ const animalControl = new ContentPaN(
                     }">Raise Animal Control report and provide us details</a>
     </div>
 </details>
-
 <details class="accordion">
     <summary class="accordion-header">
         <h3>Animal Noise</h3>
@@ -3139,7 +3137,6 @@ const animalControl = new ContentPaN(
                     }">Raise Animal Control report and provide us details</a>
     </div>
 </details>
-
 <details class="accordion">
     <summary class="accordion-header">
         <h3>Animal welfare on Farms</h3>
@@ -3157,7 +3154,6 @@ const animalControl = new ContentPaN(
                     }">Raise Animal Control report and provide us details</a>
     </div>
 </details>
-
 <details class="accordion">
     <summary class="accordion-header">
         <h3>Dangerous Wild Animal License</h3>
@@ -3175,7 +3171,6 @@ const animalControl = new ContentPaN(
                     }">Raise Animal Control report and provide us details</a>
     </div>
 </details>
-
 <details class="accordion">
     <summary class="accordion-header">
         <h3>Dog</h3>
@@ -3212,8 +3207,7 @@ const animalControl = new ContentPaN(
         <address><strong>Address:</strong> Bower Spring, Sheffield, S3 8PB</address>
         <p><strong><i>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</i></p>
             </div>
-        </details>
-        
+        </details>    
 <details class="details-accordion">
             <summary>
                 Dog - Breeding Information
@@ -3229,8 +3223,7 @@ const animalControl = new ContentPaN(
                     KDF.getParams().interactionid
                     }">Raise Animal Control report for Dog Breeding Information</a>
             </div>
-        </details>
-        
+        </details>       
 <details class="details-accordion">
             <summary>
                 Deceased Dog
@@ -3246,8 +3239,7 @@ const animalControl = new ContentPaN(
                     KDF.getParams().interactionid
                     }">Raise Animal Control report and provide us details</a>
             </div>
-        </details>
-        
+        </details>     
 <details class="details-accordion">
             <summary>
                 Dangerous Dog
@@ -3264,7 +3256,6 @@ const animalControl = new ContentPaN(
                   }">Report a dangerous dog</a>
             </div>
         </details>
-        
 <details class="details-accordion">
             <summary>
                 Dog Fouling
@@ -3280,8 +3271,7 @@ const animalControl = new ContentPaN(
                  KDF.getParams().interactionid
                   }">Report a dog fouling</a>
             </div>
-        </details>
-        
+        </details>     
 <details class="details-accordion">
             <summary>
                 Handover Dog to Council
@@ -3297,8 +3287,7 @@ const animalControl = new ContentPaN(
                  KDF.getParams().interactionid
                   }">Handover Dog to Council</a>
             </div>
-        </details>
-        
+        </details>       
 <details class="details-accordion">
             <summary>
                 Missing or Lost Dog
@@ -3315,7 +3304,6 @@ const animalControl = new ContentPaN(
                   }">Report a Lost or Missing Dog</a>
             </div>
         </details>
-        
 <details class="details-accordion">
             <summary>
                 Dog Straying
@@ -3334,87 +3322,76 @@ const animalControl = new ContentPaN(
         </details>
       </div>
     </details>
-        
 <details class="accordion">
-  <summary class="accordion-header">
-  <h3>Deceased Pet</h3>
-  <div class="accordion-icon"></div>
-  </summary>
-  <div class="panel">
-  <div class="accordion-content">
-  <details class="details-accordion">
-  <summary>
-  Birds
-  </summary>
-  <div class="details-accordion-content">
-  <p>
-  We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
-  </p>
-  </div>
-  </details>
-  
-<div class="accordion-content">
-<details class="details-accordion">
-<summary>
- Mice
+    <summary class="accordion-header">
+        <h3>Deceased Pet</h3>
+        <div class="accordion-icon"></div>
     </summary>
-    <div class="details-accordion-content">
-    <p>
-    We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
-    </p>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Birds
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+                </p>
+            </div>
+        </details>
+<details class="details-accordion">
+            <summary>
+                Mice
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                     We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+                </p>
+            </div>
+        </details>
+<details class="details-accordion">
+            <summary>
+                Rats
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+                </p>
+            </div>
+        </details>
+<details class="details-accordion">
+            <summary>
+                Cat
+            </summary>
+            <div class="details-accordion-content">
+                <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+            </div>
+        </details>
+<details class="details-accordion">
+            <summary>
+                None of above
+            </summary>
+            <div class="details-accordion-content">
+               <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+            </div>
+        </details>
     </div>
-</details>
-
-<div class="accordion-content">
-<details class="details-accordion">
- <summary>
- Rats
-</summary>
-<div class="details-accordion-content">
-<p>
-We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
-</p>
-</div>
-</details>
-
-<div class="accordion-content">
-  <details class="details-accordion">
-  <summary>
-  Cat
-  </summary>
-  <div class="details-accordion-content">
- <a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
-  </div>
-  </details>
-
-<div class="accordion-content">
-<details class="details-accordion">
-<summary>
-None of above
-</summary>
-<div class="details-accordion-content">
-<a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
-</div>
-</details>
-</div>
-</details>
-
+</details>    
 <details class="accordion">
     <summary class="accordion-header">
         <h3>Dumped Animal Bodies</h3>
@@ -3432,7 +3409,6 @@ None of above
                     }">Raise Animal Control report and provide us details</a>
     </div>
 </details>
-
 <details class="accordion">
     <summary class="accordion-header">
         <h3>Keeping of Animals Advice</h3>
@@ -3450,7 +3426,6 @@ None of above
                     }">Raise Animal Control report and provide us details</a>
     </div>
 </details>
-
 <details class="accordion">
     <summary class="accordion-header">
         <h3>Riding Establishments</h3>
@@ -3468,7 +3443,6 @@ None of above
                     }">Raise Animal Control report and provide us details</a>
     </div>
 </details>
-
 <details class="accordion">
     <summary class="accordion-header">
         <h3>Performing Animal Licence</h3>
@@ -3486,7 +3460,6 @@ None of above
                     }">Raise Animal Control report and provide us details</a>
     </div>
 </details>
-
 <details class="accordion">
     <summary class="accordion-header">
         <h3>Pet Shops</h3>
