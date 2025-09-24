@@ -3172,167 +3172,184 @@ const animalControl = new ContentPaN(
 </div>
 </details>
 <details class="accordion">
-    <summary class="accordion-header">
-        <h3>Dog</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-<div class="accordion-content">
-  <details class="details-accordion">
-  <summary>
-  Dog - Adoption
+  <summary class="accordion-header">
+    <h3>Dog</h3>
+    <div class="accordion-icon"></div>
   </summary>
-  <div class="details-accordion-content">
- <p>
-    You can adopt a dog from Spring Street Kennels.
-    </p>
-    <p>
-        If you would like to make an enquiry, please call them on 
-        <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2726758')">0114 2726758</a> or
-        <a href="#" class="telephoneNumber" onclick="copyToClipboard('07817 497995')">07817 497995</a>
-    </p>
-    <address>
-        <strong>Address:</strong><br>
-        Bower Spring <br>
-        Sheffield <br> 
-        S3 8PB
-    </address>
-        <p><strong><i>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</i></p>
-  </div>
-  </details>
-        <div class="accordion-content">
-            <details class="details-accordion">
-            <summary>
-                Dog - Micro-chipping
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                   Spring Street Kennels offers a micro-chipping service.</p>
-        <p>If you would like to take up this service, please call them on 
-        <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2726758')">0114 2726758</a> or
-        <a href="#" class="telephoneNumber" onclick="copyToClipboard('07817 497995')">07817 497995</a>.</p>
+
+  <div class="accordion-content">
+    <details class="details-accordion">
+      <summary>
+        Dog - Adoption
+      </summary>
+      <div class="details-accordion-content">
+        <p>
+          You can adopt a dog from Spring Street Kennels.
+        </p>
+        <p>
+          If you would like to make an enquiry, please call them on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2726758')">0114 2726758</a> or
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('07817 497995')">07817 497995</a>
+        </p>
         <address>
-        <strong>Address:</strong><br>
-        Bower Spring <br> 
-        Sheffield <br> 
-        S3 8PB
+          <strong>Address:</strong><br>
+          Bower Spring <br>
+          Sheffield <br> 
+          S3 8PB
         </address>
-        <p><strong><i>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</i></p>
-            </div>
-        </details>    
-<details class="details-accordion">
-            <summary>
-                Dog - Breeding Information
-            </summary>
-            <div class="details-accordion-content">
-                <a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report for Dog Breeding Information</a>
-            </div>
-        </details>       
-<details class="details-accordion">
-            <summary>
-                Deceased Dog
-            </summary>
-            <div class="details-accordion-content">
-                <a href="${window.location.protocol}//${
-                    window.location.hostname
-                    }/form/launch/report_animal_control?${
-                    KDF.getParams().customerid
-                    ? `customerid=${KDF.getParams().customerid}&`
-                     : ""
-                    }interactionid=${
-                    KDF.getParams().interactionid
-                    }">Raise Animal Control report and provide us details</a>
-            </div>
-        </details>     
-<details class="details-accordion">
-            <summary>
-                Dangerous Dog
-            </summary>
-            <div class="details-accordion-content">
-                <a href="${window.location.protocol}//${
-                 window.location.hostname
-                  }/form/launch/report_dangerous_dog?${
-                 KDF.getParams().customerid
-                 ? `customerid=${KDF.getParams().customerid}&`
-                 : ""
-                  }interactionid=${
-                 KDF.getParams().interactionid
-                  }">Report a dangerous dog</a>
-            </div>
-        </details>
-<details class="details-accordion">
-            <summary>
-                Dog Fouling
-            </summary>
-            <div class="details-accordion-content">
-                  <a href="${window.location.protocol}//${
-                 window.location.hostname
-                  }/form/launch/report_dog_fouling?${
-                 KDF.getParams().customerid
-                 ? `customerid=${KDF.getParams().customerid}&`
-                 : ""
-                  }interactionid=${
-                 KDF.getParams().interactionid
-                  }">Report a dog fouling</a>
-            </div>
-        </details>     
-<details class="details-accordion">
-            <summary>
-                Handover Dog to Council
-            </summary>
-            <div class="details-accordion-content">
-                <a href="${window.location.protocol}//${
-                 window.location.hostname
-                  }/form/launch/report_dog_handover?${
-                 KDF.getParams().customerid
-                 ? `customerid=${KDF.getParams().customerid}&`
-                 : ""
-                  }interactionid=${
-                 KDF.getParams().interactionid
-                  }">Handover Dog to Council</a>
-            </div>
-        </details>       
-<details class="details-accordion">
-            <summary>
-                Missing or Lost Dog
-            </summary>
-            <div class="details-accordion-content">
-                <a href="${window.location.protocol}//${
-                 window.location.hostname
-                  }/form/launch/report_dog_as_lost?${
-                 KDF.getParams().customerid
-                 ? `customerid=${KDF.getParams().customerid}&`
-                 : ""
-                  }interactionid=${
-                 KDF.getParams().interactionid
-                  }">Report a Lost or Missing Dog</a>
-            </div>
-        </details>
-<details class="details-accordion">
-            <summary>
-                Dog Straying
-            </summary>
-            <div class="details-accordion-content">
-                 <a href="${window.location.protocol}//${
-                 window.location.hostname
-                  }/form/launch/report_straying_dog?${
-                 KDF.getParams().customerid
-                 ? `customerid=${KDF.getParams().customerid}&`
-                 : ""
-                  }interactionid=${
-                 KDF.getParams().interactionid
-                  }">Report a Straying Dog</a>
-            </div>
-        </details>
+        <p>
+          <strong><i>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</i>
+        </p>
       </div>
     </details>
+
+    <details class="details-accordion">
+      <summary>
+        Dog - Micro-chipping
+      </summary>
+      <div class="details-accordion-content">
+        <p>
+          Spring Street Kennels offers a micro-chipping service.
+        </p>
+        <p>
+          If you would like to take up this service, please call them on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2726758')">0114 2726758</a> or
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('07817 497995')">07817 497995</a>.
+        </p>
+        <address>
+          <strong>Address:</strong><br>
+          Bower Spring <br> 
+          Sheffield <br> 
+          S3 8PB
+        </address>
+        <p>
+          <strong><i>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</i>
+        </p>
+      </div>
+    </details>    
+
+    <details class="details-accordion">
+      <summary>
+        Dog - Breeding Information
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_animal_control?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Raise Animal Control report for Dog Breeding Information
+        </a>
+      </div>
+    </details>       
+
+    <details class="details-accordion">
+      <summary>
+        Deceased Dog
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_animal_control?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Raise Animal Control report and provide us details
+        </a>
+      </div>
+    </details>     
+
+    <details class="details-accordion">
+      <summary>
+        Dangerous Dog
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_dangerous_dog?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Report a dangerous dog
+        </a>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>
+        Dog Fouling
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_dog_fouling?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Report a dog fouling
+        </a>
+      </div>
+    </details>     
+
+    <details class="details-accordion">
+      <summary>
+        Handover Dog to Council
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_dog_handover?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Handover Dog to Council
+        </a>
+      </div>
+    </details>       
+
+    <details class="details-accordion">
+      <summary>
+        Missing or Lost Dog
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_dog_as_lost?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Report a Lost or Missing Dog
+        </a>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>
+        Dog Straying
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_straying_dog?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Report a Straying Dog
+        </a>
+      </div>
+    </details>
+  </div>
+</details>
+
+
 <details class="accordion">
     <summary class="accordion-header">
         <h3>Deceased Pet</h3>
