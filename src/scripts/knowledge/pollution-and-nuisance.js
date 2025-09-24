@@ -3198,7 +3198,6 @@ const animalControl = new ContentPaN(
         <p><strong><i>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</i></p>
             </div>
         </details>
-        
         <div class="accordion-content">
             <details class="details-accordion">
             <summary>
@@ -3341,7 +3340,6 @@ const animalControl = new ContentPaN(
   <h3>Deceased Pet</h3>
   <div class="accordion-icon"></div>
   </summary>
-  <button class="accordion">Select a Topic</button>
   <div class="panel">
   <div class="accordion-content">
   <details class="details-accordion">
