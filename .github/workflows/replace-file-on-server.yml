@@ -1,22 +1,12 @@
-name: Replace File on Server
+name: Add File to Server
 
 on:
   workflow_dispatch:
     inputs:
       file_path:
-        description: 'Path to file in repository (e.g., scripts/main.js)'
+        description: 'Path to file in repository (e.g., styles/main.css)'
         required: true
         type: string
-      content_type:
-        description: 'Select the file content type'
-        required: true
-        type: choice
-        default: 'text/plain'
-        options:
-          - text/plain
-          - text/css
-          - image/svg+xml
-          - image/png
       environment:
         description: 'Select the target environment'
         required: true
@@ -28,335 +18,128 @@ on:
           - prod
 
 jobs:
-  update-file:
+  upload-file:
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
       
-      - name: Debug Environment and Validate File
+      - name: Set API Base URL
         run: |
-          echo "🔍 DEBUG: Starting validation and environment check..."
-          
-          # Create a default response file in case of early exit
-          echo '{"status": "debug", "step": "starting"}' > update_response.json
-          
-          # Debug environment variables (without showing sensitive data)
-          echo "DEBUG: Environment variables check:"
-          echo "  - FILE_PATH: '${{ github.event.inputs.file_path }}'"
-          echo "  - CONTENT_TYPE: '${{ github.event.inputs.content_type }}'"
-          echo "  - ENVIRONMENT: '${{ github.event.inputs.environment }}'"
-          echo "  - Expected secret name: VERINT_BASE_URL_${{ github.event.inputs.environment }} or VERINT_API_URL_${{ github.event.inputs.environment }}"
-          
-          # Check file existence first
-          FILE_PATH="${{ github.event.inputs.file_path }}"
-          echo "DEBUG: Checking file: $FILE_PATH"
-          
-          if [ ! -f "$FILE_PATH" ]; then
-            echo "❌ DEBUG: File not found: $FILE_PATH"
-            echo "DEBUG: Current directory contents:"
-            ls -la
-            echo "DEBUG: Searching for similar files:"
-            find . -name "*$(basename "$FILE_PATH")*" -type f 2>/dev/null || echo "No similar files found"
-            echo '{"status": "failed", "error": "File not found", "file_path": "'$FILE_PATH'"}' > update_response.json
-            exit 1
-          else
-            echo "✅ DEBUG: File found: $FILE_PATH"
-            echo "DEBUG: File info:"
-            ls -la "$FILE_PATH"
-            if command -v file >/dev/null 2>&1; then
-              file_type=$(file "$FILE_PATH")
-              echo "DEBUG: File type: $file_type"
-            fi
-          fi
-          
-          # Parse path information
-          FILENAME=$(basename "$FILE_PATH")
-          DIR_PATH=$(dirname "$FILE_PATH")
-          if [ "$DIR_PATH" = "." ]; then
-            FOLDER_NAME=""
-            echo "DEBUG: File is in root directory"
-          else
-            FOLDER_NAME=$(basename "$DIR_PATH")
-            echo "DEBUG: Extracted folder name: '$FOLDER_NAME'"
-          fi
-          
-          echo "DEBUG: Path parsing results:"
-          echo "  - Full path: $FILE_PATH"
-          echo "  - Filename: $FILENAME"
-          echo "  - Directory: $DIR_PATH"
-          echo "  - Folder name: '$FOLDER_NAME'"
-          
-          echo '{"status": "file_validation_passed", "file_found": true}' > update_response.json
-      
-      - name: Set API Base URL and Test Connectivity
-        run: |
-          echo "🔍 DEBUG: Setting API Base URL for environment '${{ github.event.inputs.environment }}'..."
-          echo '{"status": "setting_api_url"}' > update_response.json
-          
-          # Set the API_BASE_URL based on environment and your secret naming
           case "${{ github.event.inputs.environment }}" in
             "dev")
-              API_BASE_URL="${{ secrets.VERINT_API_URL_DEV }}"
-              SECRET_NAME="VERINT_API_URL_DEV"
+              echo "API_BASE_URL=${{ secrets.VERINT_API_URL_DEV }}" >> $GITHUB_ENV
               ;;
             "qa")
-              API_BASE_URL="${{ secrets.VERINT_BASE_URL_QA }}"
-              SECRET_NAME="VERINT_BASE_URL_QA"
+              echo "API_BASE_URL=${{ secrets.VERINT_BASE_URL_QA }}" >> $GITHUB_ENV
               ;;
             "prod")
-              API_BASE_URL="${{ secrets.VERINT_BASE_URL_PROD }}"
-              SECRET_NAME="VERINT_BASE_URL_PROD"
+              echo "API_BASE_URL=${{ secrets.VERINT_BASE_URL_PROD }}" >> $GITHUB_ENV
+              ;;
+          esac
+      - name: Extract file properties
+        id: file_props
+        run: |
+          FILE_PATH="${{ github.event.inputs.file_path }}"
+          # Get the directory name (the folder) from the path
+          FOLDER_NAME=$(dirname "$FILE_PATH")
+          # Remove the first part if it's a single dot '.'
+          if [ "$FOLDER_NAME" = "." ]; then
+            FOLDER_NAME="root"
+          fi
+          # Get the file extension
+          FILE_EXT="${FILE_PATH##*.}"
+          
+          # Determine the content type based on the file extension
+          case "$FILE_EXT" in
+            js)
+              CONTENT_TYPE="text/javascript"
+              ;;
+            css)
+              CONTENT_TYPE="text/css"
+              ;;
+            png)
+              CONTENT_TYPE="image/png"
+              ;;
+            svg)
+              CONTENT_TYPE="image/svg+xml"
+              ;;
+            *)
+              CONTENT_TYPE="text/plain" # Default to text/plain for unknown types
               ;;
           esac
           
-          echo "DEBUG: Using secret: $SECRET_NAME"
+          echo "📁 Extracted Folder: $FOLDER_NAME"
+          echo "📄 Extracted Content-Type: $CONTENT_TYPE"
           
-          if [ -z "$API_BASE_URL" ]; then
-            echo "❌ DEBUG: API_BASE_URL is empty for environment '${{ github.event.inputs.environment }}'"
-            echo "   Expected secret: $SECRET_NAME"
-            echo "{\"status\": \"failed\", \"error\": \"API_BASE_URL not configured\", \"environment\": \"${{ github.event.inputs.environment }}\", \"expected_secret\": \"$SECRET_NAME\"}" > update_response.json
+          # Set the extracted values as job outputs
+          echo "folder_name=$FOLDER_NAME" >> $GITHUB_OUTPUT
+          echo "content_type=$CONTENT_TYPE" >> $GITHUB_OUTPUT
+      - name: Validate file exists
+        run: |
+          echo '{"status": "failed", "error": "Unknown error"}' > upload_response.json
+          
+          FILE_PATH="${{ github.event.inputs.file_path }}"
+          if [ ! -f "$FILE_PATH" ]; then
+            echo "❌ File not found: $FILE_PATH"
+            echo '{"status": "failed", "error": "File not found"}' > upload_response.json
             exit 1
-          else
-            echo "✅ DEBUG: API_BASE_URL is configured"
           fi
           
-          # Set environment variables for subsequent steps
-          echo "API_BASE_URL=$API_BASE_URL" >> $GITHUB_ENV
-          
-          # Check other credentials
-          API_USERNAME="${{ secrets.VERINT_USERNAME }}"
-          API_PASSWORD="${{ secrets.VERINT_PASSWORD }}"
-          
-          if [ -z "$API_USERNAME" ]; then
-            echo "❌ DEBUG: API_USERNAME is empty"
-            echo '{"status": "failed", "error": "API_USERNAME not configured"}' > update_response.json
-            exit 1
-          else
-            echo "✅ DEBUG: API_USERNAME is configured"
-          fi
-          
-          if [ -z "$API_PASSWORD" ]; then
-            echo "❌ DEBUG: API_PASSWORD is empty"
-            echo '{"status": "failed", "error": "API_PASSWORD not configured"}' > update_response.json
-            exit 1
-          else
-            echo "✅ DEBUG: API_PASSWORD is configured"
-          fi
-          
-          # Test basic API connectivity
-          echo "DEBUG: Testing API connectivity to: $API_BASE_URL"
-          
-          basic_response=$(curl -s -w "HTTPSTATUS:%{http_code}" --connect-timeout 30 \
-            -u "$API_USERNAME:$API_PASSWORD" \
-            "${API_BASE_URL}/files" 2>/dev/null || echo "HTTPSTATUS:000")
-          
-          basic_code=$(echo "$basic_response" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
-          echo "DEBUG: API connectivity test - HTTP Status: $basic_code"
-          
-          if [ "$basic_code" = "000" ]; then
-            echo "❌ DEBUG: Cannot connect to API (network/DNS issue)"
-            echo "{\"status\": \"failed\", \"error\": \"Cannot connect to API\", \"base_url\": \"$API_BASE_URL\"}" > update_response.json
-            exit 1
-          elif [ "$basic_code" = "401" ]; then
-            echo "❌ DEBUG: Authentication failed (invalid credentials)"
-            echo '{"status": "failed", "error": "Authentication failed", "http_code": 401}' > update_response.json
-            exit 1
-          else
-            echo "✅ DEBUG: API connection test passed (HTTP $basic_code)"
-          fi
-          
-          echo '{"status": "api_connectivity_passed", "http_code": '$basic_code'}' > update_response.json
+          echo "✅ File found: $FILE_PATH"
+          file_size=$(stat -c%s "$FILE_PATH" 2>/dev/null || echo "unknown")
+          echo "📁 File size: ${file_size} bytes"
       
-      - name: Find File Key on Server
+      - name: Test Upload Methods
         env:
           API_USERNAME: ${{ secrets.VERINT_USERNAME }}
           API_PASSWORD: ${{ secrets.VERINT_PASSWORD }}
           FILE_PATH: ${{ github.event.inputs.file_path }}
+          FOLDER_NAME: ${{ steps.file_props.outputs.folder_name }}
+          CONTENT_TYPE: ${{ steps.file_props.outputs.content_type }}
         run: |
-          echo "🔍 DEBUG: Searching for file on server..."
-          echo '{"status": "searching_file"}' > update_response.json
+          filename=$(basename "$FILE_PATH")
+          echo "🚀 Uploading $filename to folder: $FOLDER_NAME"
           
-          # Parse file information
-          FILENAME=$(basename "$FILE_PATH")
-          DIR_PATH=$(dirname "$FILE_PATH")
-          
-          if [ "$DIR_PATH" = "." ]; then
-            FOLDER_NAME=""
-            echo "DEBUG: Searching for file in root directory"
-          else
-            FOLDER_NAME=$(basename "$DIR_PATH")
-            echo "DEBUG: Searching for file in folder: '$FOLDER_NAME'"
-          fi
-          
-          echo "DEBUG: Search criteria:"
-          echo "  - Filename: '$FILENAME'"
-          echo "  - Folder Name: '$FOLDER_NAME'"
-          echo "  - API Base URL: $API_BASE_URL"
-          
-          # Make API GET request to find the file
-          echo "DEBUG: Making API GET request..."
-          response_get=$(curl -s -w "HTTPSTATUS:%{http_code}" \
-            -u "${API_USERNAME}:${API_PASSWORD}" \
-            "${API_BASE_URL}/files?query=${FILENAME}" 2>/dev/null || echo "HTTPSTATUS:000")
-          
-          get_http_code=$(echo "$response_get" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
-          get_body=$(echo "$response_get" | sed -E 's/HTTPSTATUS\:[0-9]{3}$//')
-          
-          echo "DEBUG: GET API HTTP Status: $get_http_code"
-          
-          if [ "$get_http_code" = "000" ]; then
-            echo "❌ DEBUG: Failed to connect to API for file search"
-            echo '{"status": "failed", "error": "API connection failed during search"}' > update_response.json
-            exit 1
-          elif [ "$get_http_code" -ne 200 ]; then
-            echo "❌ DEBUG: Failed to query files from API"
-            echo "DEBUG: Response body (first 500 chars):"
-            echo "$get_body" | head -c 500
-            echo "{\"status\": \"failed\", \"error\": \"API query failed\", \"http_code\": $get_http_code}" > update_response.json
-            exit 1
-          fi
-          
-          echo "DEBUG: API GET response (first 1000 chars):"
-          echo "$get_body" | head -c 1000
-          echo ""
-          
-          # Try to extract file key with multiple approaches
-          echo "DEBUG: Attempting to extract file key..."
-          
-          if [ -n "$FOLDER_NAME" ]; then
-            echo "DEBUG: Searching for file with folder match..."
-            FILE_KEY=$(echo "$get_body" | jq -r --arg filename "$FILENAME" --arg foldername "$FOLDER_NAME" '
-              if type == "object" and has("collection") then
-                .collection[] | select(.fileName == $filename and .folderName == $foldername) | .key
-              elif type == "array" then
-                .[] | select(.fileName == $filename and .folderName == $foldername) | .key
-              else
-                empty
-              end' 2>/dev/null || echo "")
-          else
-            echo "DEBUG: Searching for file without folder constraint..."
-            FILE_KEY=$(echo "$get_body" | jq -r --arg filename "$FILENAME" '
-              if type == "object" and has("collection") then
-                .collection[] | select(.fileName == $filename) | .key
-              elif type == "array" then
-                .[] | select(.fileName == $filename) | .key
-              else
-                empty
-              end' 2>/dev/null || echo "")
-          fi
-          
-          echo "DEBUG: Extracted file key: '$FILE_KEY'"
-          
-          if [ -z "$FILE_KEY" ] || [ "$FILE_KEY" = "null" ]; then
-            echo "❌ DEBUG: File not found on server with matching criteria"
-            echo "DEBUG: Available files on server:"
-            echo "$get_body" | jq -r '
-              if type == "object" and has("collection") then
-                .collection[] | "  - \(.fileName) (folder: \(.folderName // "root")) [key: \(.key)]"
-              elif type == "array" then
-                .[] | "  - \(.fileName) (folder: \(.folderName // "root")) [key: \(.key)]"
-              else
-                "Could not parse file list - raw response structure may be different"
-              end' 2>/dev/null || echo "Could not parse response as JSON"
-            
-            echo '{"status": "failed", "error": "File not found on server"}' > update_response.json
-            exit 1
-          fi
-          
-          echo "✅ DEBUG: Found file on server! Key: $FILE_KEY"
-          
-          # Save the file key for the next step
-          echo "FILE_KEY=$FILE_KEY" >> $GITHUB_ENV
-          echo "{\"status\": \"file_found\", \"file_key\": \"$FILE_KEY\"}" > update_response.json
-      
-      - name: Update File on Server
-        env:
-          API_USERNAME: ${{ secrets.VERINT_USERNAME }}
-          API_PASSWORD: ${{ secrets.VERINT_PASSWORD }}
-          FILE_PATH: ${{ github.event.inputs.file_path }}
-          CONTENT_TYPE: ${{ github.event.inputs.content_type }}
-        run: |
-          echo "🔍 DEBUG: Starting file update..."
-          echo '{"status": "updating_file"}' > update_response.json
-          
-          echo "DEBUG: Update parameters:"
-          echo "  - File Key: $FILE_KEY"
-          echo "  - File Path: $FILE_PATH"
-          echo "  - Content Type: $CONTENT_TYPE"
-          echo "  - API Base URL: $API_BASE_URL"
-          
-          # Perform the PUT request to update the file
-          echo "DEBUG: Making PUT request to update file..."
-          response_put=$(curl -s -w "HTTPSTATUS:%{http_code}" \
-            -X 'PUT' \
-            "${API_BASE_URL}/files/${FILE_KEY}" \
+          # Use a single, explicit method for consistency
+          # Method 2 is generally more robust for structured data like 'Folder'
+          response=$(curl -s -w "HTTPSTATUS:%{http_code}" \
+            -X 'POST' \
+            "${API_BASE_URL}/files" \
             -H 'accept: application/json' \
             -u "${API_USERNAME}:${API_PASSWORD}" \
             -H 'Content-Type: multipart/form-data' \
-            -F "file=@${FILE_PATH};type=${CONTENT_TYPE}" 2>/dev/null || echo "HTTPSTATUS:000")
-          
-          http_code=$(echo "$response_put" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
-          body_put=$(echo "$response_put" | sed -E 's/HTTPSTATUS\:[0-9]{3}$//')
-          
-          echo ""
-          echo "================== UPDATE RESULT =================="
-          echo "HTTP Status Code: $http_code"
-          
-          if [ "$http_code" = "000" ]; then
-            echo "❌ DEBUG: Failed to connect to API for update"
-            echo '{"status": "failed", "error": "API connection failed during update"}' > update_response.json
-            exit 1
-          elif [ "$http_code" -eq 200 ] || [ "$http_code" -eq 204 ]; then
-            echo "✅ File update successful!"
-            echo "DEBUG: Update response body:"
-            echo "$body_put"
+            -F "file=@${FILE_PATH};type=${CONTENT_TYPE}" \
+            -F "Folder={\"folderName\":\"${FOLDER_NAME}\"}")
             
-            if [ -n "$body_put" ] && [ "$body_put" != "" ]; then
-              # Try to validate JSON
-              if echo "$body_put" | jq . >/dev/null 2>&1; then
-                echo "$body_put" > update_response.json
-              else
-                echo "{\"status\": \"success\", \"message\": \"File updated successfully\", \"file_key\": \"$FILE_KEY\", \"raw_response\": $(echo "$body_put" | jq -Rs .)}" > update_response.json
-              fi
+          http_code=$(echo "$response" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
+          body=$(echo "$response" | sed -E 's/HTTPSTATUS\:[0-9]{3}$//')
+          
+          echo "HTTP Status: $http_code"
+          echo "Response: $body"
+          
+          if [ "$http_code" -eq 200 ] || [ "$http_code" -eq 201 ]; then
+            folder_in_response=$(echo "$body" | jq -r '.folderName // empty' 2>/dev/null)
+            if [ "$folder_in_response" = "$FOLDER_NAME" ]; then
+              echo "✅ Upload succeeded with correct folder!"
+              echo "$body" > upload_response.json
             else
-              echo "{\"status\": \"success\", \"message\": \"File updated successfully\", \"file_key\": \"$FILE_KEY\"}" > update_response.json
+              echo "❌ Upload succeeded, but folder is wrong: '$folder_in_response' (expected '$FOLDER_NAME')"
+              echo '{"status": "failed", "error": "Uploaded to wrong folder"}' > upload_response.json
+              exit 1
             fi
-            
           else
-            echo "❌ File update failed!"
-            echo "DEBUG: Error response body:"
-            echo "$body_put"
-            
-            # Create detailed error response
-            error_response="{\"status\": \"failed\", \"error\": \"Update failed\", \"http_code\": $http_code, \"file_key\": \"$FILE_KEY\""
-            if [ -n "$body_put" ]; then
-              error_response="$error_response, \"response\": $(echo "$body_put" | jq -Rs .)"
-            fi
-            error_response="$error_response}"
-            echo "$error_response" > update_response.json
-            
-            echo ""
-            echo "🔍 DEBUG: Troubleshooting information:"
-            echo "- API Base URL: $API_BASE_URL"
-            echo "- File Path: $FILE_PATH"
-            echo "- File Key: $FILE_KEY"
-            echo "- Content Type: $CONTENT_TYPE"
-            echo "- File exists locally: $([ -f "$FILE_PATH" ] && echo "Yes" || echo "No")"
-            echo "- File size: $(stat -c%s "$FILE_PATH" 2>/dev/null || echo "unknown") bytes"
-            
-            # Don't exit in debug mode to preserve artifacts
-            echo "DEBUG: Not exiting to preserve debug information"
+            echo "❌ Upload failed. HTTP Status: $http_code"
+            echo '{"status": "failed", "error": "Upload failed"}' > upload_response.json
+            exit 1
           fi
-          echo "================================================="
-
       - name: Upload response as artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: debug-update-response-${{ github.run_number }}
+          name: upload-response-${{ github.run_number }}
           path: |
-            update_response.json
+            upload_response.json
             ${{ github.event.inputs.file_path }}
-          retention-days: 28
+          retention-days: 30

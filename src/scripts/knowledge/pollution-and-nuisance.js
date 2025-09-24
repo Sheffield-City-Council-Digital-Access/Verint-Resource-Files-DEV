@@ -1732,7 +1732,7 @@ const masonryBeesTreatment = new ContentPaN(
       "Environmental Health"
     ],
   },
-  { date: "26/08/2025", name: "Shaz Athar" }
+  { date: "18/09/2025", name: "Shaz Athar" }
 );
 
 const miceTreatment = new ContentPaN(

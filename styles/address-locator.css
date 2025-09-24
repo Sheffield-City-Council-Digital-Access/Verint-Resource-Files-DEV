@@ -1,0 +1,242 @@
+#dform_container .address-search {
+    margin-block: var(--spacing-sm);
+}
+
+#dform_container .address-search input[type="text"] {
+    width: 200px;
+}
+
+#dform_container .address-search-btn-container {
+    margin-block: var(--spacing-sm) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+}
+
+#dform_container .address-search-btn-container.margin-bottom {
+    margin-block: var(--spacing-sm);
+}
+
+#dform_container button.search-again-btn {
+    display: inline;
+    margin-left: var(--spacing-xs);
+    color: var(--c-links-link);
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+}
+
+#dform_container address {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    padding-left: var(--spacing-sm) !important;
+    border-left: solid var(--spacing-xxs) var(--c-brand-accents-teal) !important;
+}
+
+#dform_container .dform_widget_type_html.manual-address-container {
+    margin-block: var(--spacing-sm) 0;
+}
+
+#dform_container .map-container .details-accordion .details-accordion-content {
+    padding-bottom: 0;
+}
+
+#dform_container .map-container .address-selection-section {
+    margin-bottom: var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border: solid var(--spacing-xxs) var(--c-greys-slate);
+}
+
+#dform_container .map-container .address-selection-section p {
+    margin-top: 0;
+}
+
+#dform_container .map-container .address-selection-section p strong {
+    font-weight: var(--font-weight-semibold);
+    display: block;
+}
+
+#dform_container .map-container #selected-address>address {
+    display: block;
+    border-left: none !important;
+    padding-left: 0 !important;
+}
+
+#dform_container button.link-btn.locator-icon::before {
+    content: url(../icons/location-primary-darkened.svg);
+    align-items: center;
+    justify-content: center;
+    height: var(--font-size-xs);
+    width: var(--font-size-xs);
+    margin-right: var(--spacing-xs);
+    background: transparent;
+    transform: translateY(-4px);
+}
+
+#dform_container button.link-btn.locator-icon:focus::before {
+    content: url(../icons/location-black.svg);
+}
+
+#dform_container #dform_widget_button_but_use_current_location {
+    font-size: var(--font-size-sm);
+    text-decoration: underline;
+    text-underline-offset: 0.32rem;
+    font-weight: var(--font-weight-semibold);
+    text-align: start;
+}
+
+#dform_container .map-container #map_container {
+    height: 25rem;
+    border-radius: unset;
+    border: none;
+}
+
+#dform_container #map_container .esri-attribution {
+    display: none;
+}
+
+#dform_container #map_container div.esri-ui-top-left.esri-ui-corner div.esri-zoom {
+    margin-top: 730%;
+}
+
+#dform_container #map_container div.esri-component.esri-search.esri-widget>div {
+    display: inline-flex;
+    margin-left: -92% !important;
+    margin-top: 10% !important;
+}
+
+#dform_container #map_container .esri-search__form input.esri-search__input {
+    max-width: 110px;
+}
+
+@media screen and (min-width: 350px) {
+    #dform_container #map_container div.esri-component.esri-search.esri-widget>div {
+        margin-left: -105% !important;
+    }
+
+    #dform_container #map_container .esri-search__form input.esri-search__input {
+        max-width: 140px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #dform_container #map_container div.esri-component.esri-search.esri-widget>div {
+        margin-left: -130% !important;
+    }
+
+    #dform_container #map_container .esri-search__form input.esri-search__input {
+        max-width: 200px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #dform_container #map_container div.esri-component.esri-search.esri-widget>div {
+        margin-left: -130% !important;
+    }
+
+    #dform_container #map_container .esri-search__form input.esri-search__input {
+        max-width: 200px;
+    }
+}
+
+#dform_container #map_container .esri-search__submit-button {
+    min-width: max-content;
+    width: max-content;
+    border-radius: 0 !important;
+    border-left: none;
+}
+
+#dform_container #map_container .esri-search__submit-button:hover {
+    color: var(--c-brand-accents-teal);
+    background: var(--c-greys-white);
+    border-color: var(--c-brand-accents-teal);
+    box-shadow: none;
+}
+
+#dform_container #map_container .esri-search__submit-button:focus {
+    color: var(--c-greys-black);
+    background: var(--c-focus-links);
+    border-color: var(--c-focus-links);
+    box-shadow: none;
+    outline: none;
+}
+
+#dform_container #map_container .esri-search__submit-button span::before {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height);
+    color: var(--c-core-brand-primary-darken) !important;
+}
+
+@media screen and (min-width: 960px) {
+    #dform_container #map_container div.esri-component.esri-search.esri-widget>div {
+        margin-left: -167% !important;
+    }
+
+    #dform_container #map_container .esri-search__submit-button {
+        margin-left: var(--spacing-sm) !important;
+        border-radius: 25px !important;
+        border-left: 2px solid var(--c-core-brand-primary-darken) !important;
+    }
+
+    #dform_container #map_container .esri-search__submit-button span::before {
+        content: 'Search' !important;
+        font-family: var(--font-family);
+    }
+}
+
+#dform_container #map_container .esri-search__submit-button:hover span::before {
+    color: var(--c-brand-accents-teal) !important;
+}
+
+#dform_container #map_container .esri-search__submit-button:focus span::before {
+    color: var(--c-greys-black);
+    background: var(--c-focus-links);
+    box-shadow: none;
+    outline: none;
+}
+
+#map_container div.esri-ui-top-left.esri-ui-corner>div>div:nth-child(1),
+#map_container div.esri-ui-top-left.esri-ui-corner>div>div:nth-child(2) {
+    height: var(--field-height-sm);
+    width: var(--field-height-sm);
+    border: 2px solid var(--c-core-brand-primary-darken);
+}
+
+#map_container div.esri-ui-top-left.esri-ui-corner>div>div:nth-child(1) {
+    border-bottom: 1px solid var(--c-core-brand-primary-darken);
+}
+
+#map_container div.esri-ui-top-left.esri-ui-corner>div>div:nth-child(2) {
+    border-top: 1px solid var(--c-core-brand-primary-darken);
+}
+
+#map_container div.esri-ui-top-left.esri-ui-corner>div>div:nth-child(1):hover,
+#map_container div.esri-ui-top-left.esri-ui-corner>div>div:nth-child(2):hover {
+    color: var(--c-brand-accents-teal);
+    background: var(--c-greys-white);
+    border-color: var(--c-brand-accents-teal);
+    box-shadow: none;
+}
+
+#map_container div.esri-ui-top-left.esri-ui-corner>div>div:nth-child(1) span,
+#map_container div.esri-ui-top-left.esri-ui-corner>div>div:nth-child(2) span {
+    color: var(--c-core-brand-primary-darken);
+    font-weight: var(--font-weight-semibold);
+}
+
+#map_container div.esri-ui-top-left.esri-ui-corner>div>div:nth-child(1):hover span,
+#map_container div.esri-ui-top-left.esri-ui-corner>div>div:nth-child(2):hover span {
+    color: var(--c-brand-accents-teal);
+}
+
+
+#dform_container #map_container .esri-search__sources-button,
+#dform_container #map_container .esri-search__clear-button {
+    display: none !important;
+}
+
+#map_container > div.esri-view-root > div.esri-ui.calcite-theme-light > div.esri-ui-inner-container.esri-ui-manual-container > div.esri-component.esri-popup.esri-popup--aligned-top-center.esri-popup--shadow {
+    display: none !important;
+}

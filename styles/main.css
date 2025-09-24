@@ -1,0 +1,282 @@
+@charset "UTF-8";
+@import url("./layout.css");
+@import url("./typography.css");
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./controls.css");
+@import url("./notice-banners.css");
+@import url("./notice-pannels.css");
+@import url("./accordions.css");
+@import url("./widgets.css");
+@import url("./type-ahead.css");
+@import url("./file-upload.css");
+@import url("./buttons.css");
+@import url("./address-locator.css");
+@import url("./review.css");
+@import url("./modal.css");
+
+@import url("./my-account.css");
+@import url("./my-dashboard.css");
+@import url("./my-profile.css");
+@import url("./my-requests.css");
+@import url("./my-request-details.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Colors */
+  --c-core-brand-primary-darken: #13384a;
+  --c-core-brand-primary: #1b4a60;
+  --c-core-brand-secondary: #0b0c0c;
+  --c-core-brand-body: #3d3d3b;
+  --c-brand-accents-teal: #00757f;
+  --c-core-brand-accent-1-darken: #b45244;
+  --c-core-brand-accent-1-tint-80: #ee6f5c;
+  --c-core-tints-accent-1-tint-20: #fce6e3;
+  --c-core-brand-accent-2: #9ed5df;
+  --c-core-tints-accent-2-tint-80: #b1dde5;
+  --c-core-tints-accent-2-tint-20: #e0f7fd;
+  --c-greys-slate: #3c505d;
+  --c-greys-chalk: #f1f1f5;
+  --c-greys-white: #ffffff;
+  --c-greys-black: #000000;
+  --c-links-link: #003142;
+  --c-focus-links: #3fc49a;
+  --c-alerts-success: #008b40;
+  --c-alerts-success-darken: #006b31;
+  --c-core-tints-success-tint-20: #ddffed;
+  --c-alerts-danger: #d4351c;
+  --c-alerts-warning: #ffcc3f;
+
+  --c-blue: #0072bb;
+  --c-blue-lighten: #e0f7fd;
+  --c-blue-darken: #004673;
+  --c-green-lighten: #eafff4;
+  --c-red-lighten: #fff5f3;
+  --c-green-darken: #006b31;
+  --c-orange: #ff8b44;
+  --c-purple: #964a88;
+  --c-purple-darken: #723f6f;
+  --c-grey: #d1dbdf;
+
+  /* Typography */
+  --font-family: "Poppins";
+
+  /* Font Sizes - Using 16px as base for rem calculation */
+  --font-size-xs: 0.875rem;
+  /* 10.25rem */
+  --font-size-sm: 1rem;
+  /* 16px */
+  --font-size-base: 1rem;
+  /* 16px */
+  --font-size-lg: 1.125rem;
+  /* 18px */
+  --font-size-xl: 1.25rem;
+  /* 20px */
+  --font-size-xxl: 1.375rem;
+  /* 22px */
+  --font-size-xxxl: 1.5625rem;
+  /* 25px */
+  --font-size-xxxxl: 1.875rem;
+  /* 30px */
+
+  --font-size-responsive-header: 2.125rem;
+  /* 34px */
+  --font-size-confirmation-header: 2.125rem;
+  /* 34px */
+  --font-size-confirmation-text: 1.5rem;
+  /* 24px */
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-500: 500;
+  --font-weight-semibold: 600;
+  --font-weight-700: 700;
+
+  /* Line Heights */
+  --line-height: 1;
+  /* 100% */
+  --line-height-body: 1.6;
+  /* 160% */
+  --line-height-heading: 1.3;
+  /* 130% */
+
+  --line-height-confirmation-header: 3rem;
+  /* 48px */
+
+  /* Spacing */
+  --spacing-xxs: 0.3125rem;
+  /* 5px */
+  --spacing-xs: 0.5rem;
+  /* 8px */
+  --spacing-sm: 0.625rem;
+  /* 10px */
+  --spacing-smd: 1rem;
+  /* 16px */
+  --spacing-md: 0.9375rem;
+  /* 15px */
+  --spacing-lg: 1.5625rem;
+  /* 25px */
+  --spacing-xl: 1.875rem;
+  /* 30px */
+  --spacing-xxl: 3.125rem;
+  /* 50px */
+
+  /* Layout */
+  --min-content-width: 24rem;
+  /* 390px */
+  --max-content-width: 90rem;
+  /* 1440px */
+  --max-column-width: 47.6875rem;
+  /* 763px */
+
+  /* Field Heights */
+  --field-height-sm: 2.5rem;
+  /* 40px */
+  --field-height-md: 3.25rem;
+  /* 52px */
+  --field-height-lg: 14.375rem;
+  /* 230px */
+
+  /* Field Widths */
+  --field-width-100: 100%;
+  --field-width-75: 75%;
+  --field-width-50: 50%;
+  --field-width-25: 25%;
+  --field-width-max-4: 8.75rem;
+  /* 140px */
+  --field-width-max-2: 4.375rem;
+  /* 70px */
+  --field-width-max-1: 3.125rem;
+  /* 50px */
+
+  /* Field Padding */
+  --field-padding: 0.625rem 0.9375rem;
+  /* 10px 15px */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+*:focus {
+  background-color: var(--c-focus-links);
+  color: var(--c-greys-black);
+  outline: none !important;
+  box-shadow: inset 0 -2px 0 0 var(--c-greys-black);
+}
+
+::selection {
+  background-color: var(--c-focus-links);
+  color: var(--c-greys-black);
+}
+
+#dform_container .dform_hidden,
+#dform_container *.dform_hidden {
+  display: none !important;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: var(--line-height);
+  color: var(--c-core-brand-body);
+  background-color: var(--c-greys-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+
+/* Tablet and Desktop */
+@media screen and (min-width: 960px) {
+  :root {
+    /* Font Sizes - Using 16px as base for rem calculation */
+    --font-size-base: 1.125rem;
+    /* 18px */
+    --font-size-lg: 1.25rem;
+    /* 20px */
+    --font-size-xl: 1.375rem;
+    /* 22px */
+    --font-size-xxl: 1.563rem;
+    /* 25px */
+    --font-size-xxxl: 1.875rem;
+    /* 30px */
+    --font-size-xxxxl: 2.375rem;
+    /* 38px */
+
+    --font-size-responsive-header: 3.125rem;
+    /* 50px */
+    --font-size-confirmation-header: 3.125rem;
+    /* 50px */
+    --font-size-confirmation-text: 2rem;
+    /* 32px */
+
+    /* Line Heights */
+    --line-height: 1;
+    --line-height-body: 1.875;
+    /* 30px */
+
+    --line-height-confirmation-header: 4.375rem;
+    /* 70px */
+
+    /* Spacing */
+    --spacing-xs: 0.625rem;
+    /* 10px */
+    --spacing-sm: 0.9375rem;
+    /* 20px */
+    --spacing-smd: 1.25rem;
+    /* 20px */
+    --spacing-md: 1.5625rem;
+    /* 25px */
+    --spacing-lg: 1.5625rem;
+    /* 25px */
+    --spacing-xl: 2.5rem;
+    /* 40px */
+    --spacing-xxl: 1.875rem;
+    /* 30px */
+  }
+}
+
+#dform_container #dform_lock {
+  display: none;
+  z-index: 1001;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: var(--c-greys-white);
+  filter: alpha(Opacity=10);
+  opacity: 0.5;
+  padding-top: 0px;
+  font-weight: bold;
+}
+
+#dform_container #dform_lockMsg {
+  z-index: 2000;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: URL("../Sheffield-Preloader.gif");
+  mix-blend-mode: multiply;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}

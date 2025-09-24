@@ -1,0 +1,37 @@
+#dform_container section.review-page-content-section {
+    margin-block: var(--spacing-md);
+    padding-block: var(--spacing-sm);
+}
+
+#dform_container dl div.review-item {
+    padding-block: var(--spacing-xxs);
+    border-bottom: 1px solid var(--c-core-brand-body);
+}
+
+#dform_container dl div.review-item dt.question,
+#dform_container dl div.review-item dd.question {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: var(--line-height-body);
+    color: var(--c-core-brand-body);
+    font-weight: var(--font-weight-normal);
+}
+
+#dform_container dl div.review-item dt.question {
+    font-weight: var(--font-weight-semibold);
+}
+
+@media screen and (min-width: 960px) {
+    #dform_container dl div.review-item {
+        display: grid;
+        align-items: start;
+        gap: 10px;
+        grid-template-columns: 1fr 2fr max-content;
+    }
+
+    #dform_container dl div.review-item dd.action {
+        justify-self: end;
+    }
+}

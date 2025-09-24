@@ -1,0 +1,160 @@
+#dform_container .dform_info,
+#dform_container .dform_success,
+#dform_container .dform_warning,
+#dform_container .dform_error {
+  border: none;
+  border-radius: unset;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height);
+  background-color: transparent;
+  color: var(--c-greys-white);
+  background: var(--c-brand-accents-teal);
+}
+
+#dform_container .dform_infoMessage_outer {
+  background: var(--c-brand-accents-teal);
+}
+
+#dform_container .dform_success,
+#dform_container .dform_successMessage_outer {
+  background: var(--c-alerts-success);
+}
+
+#dform_container .dform_error,
+#dform_container .dform_errorMessage_outer {
+  background: var(--c-alerts-danger);
+}
+
+#dform_container .dform_warning,
+#dform_container .dform_warningMessage_outer {
+  color: var(--c-greys-black);
+  background: var(--c-alerts-warning);
+}
+
+#dform_container .dform_success::before,
+#dform_container .dform_info::before,
+#dform_container .dform_warning::before,
+#dform_container .dform_error::before {
+  display: inline-block;
+  margin-right: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  width: var(--font-size-xxxxl);
+  line-height: var(--line-height);
+  transform: translateY(8px);
+}
+
+#dform_container .dform_success::before {
+  content: url(../icons/circle-check-success-white.svg);
+}
+
+#dform_container .dform_info::before {
+  content: url(../icons/circle-info-white.svg);
+}
+
+#dform_container .dform_error::before {
+  content: url(../icons/triangle-exclamation-danger-white.svg);
+}
+
+#dform_container .dform_warning::before {
+  content: url(../icons/triangle-exclamation-danger-black.svg);
+}
+
+
+
+
+
+div.site-notification-bar--info {
+  background: var(--c-brand-accents-teal);
+}
+
+div.site-notification-bar--warning {
+  background: var(--c-alerts-warning);
+}
+
+div.site-notification-bar--error {
+  background: var(--c-alerts-danger);
+}
+
+div.site-notification-bar--success {
+  background: var(--c-alerts-success);
+}
+
+div.notification-content {
+  margin-inline: auto;
+  max-width: 87.5rem !important;
+  padding: var(--spacing-md) clamp(15px, 5vw, 131px) !important;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+div.notification-content p,
+div.notification-content a {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--c-greys-white);
+}
+
+div.notification-content p a {
+  font-weight: var(--font-weight-bold);
+} 
+
+div.notification-content a {
+  gap: var(--spacing-xs);
+}
+
+div.site-notification-bar--warning div.notification-content p,
+div.site-notification-bar--warning div.notification-content p a,
+div.site-notification-bar--warning div.notification-content a {
+  color: var(--c-greys-black);
+}
+
+div.notification-content p::before {
+  display: inline-block;
+  width: var(--font-size-xxl);
+  line-height: var(--line-height);
+  transform: scale(1.5);
+}
+
+div.site-notification-bar--success div.notification-content p::before {
+  content: url(../icons/circle-check-success-white.svg);
+}
+
+div.site-notification-bar--info div.notification-content p::before {
+  content: url(../icons/circle-info-white.svg);
+}
+
+div.site-notification-bar--error div.notification-content p::before {
+  content: url(../icons/triangle-exclamation-danger-white.svg);
+}
+
+div.site-notification-bar--warning div.notification-content p::before {
+  content: url(../icons/triangle-exclamation-danger-black.svg);
+}
+
+a.close-notification-link {
+  width: max-content;
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+}
+
+a.close-notification-link::before {
+  content: url(../icons/close-x-white.svg);
+  display: inline-block;
+  width: 14px;
+  transform: scale(1.3) translateY(2px);
+}
+
+a.close-notification-link:focus {
+  color: var(--c-greys-black) !important;
+}
+
+div.site-notification-bar--warning a.close-notification-link::before,
+a.close-notification-link:focus::before {
+  content: url(../icons/close-x-black.svg);
+}
