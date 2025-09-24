@@ -3189,7 +3189,7 @@ const animalControl = new ContentPaN(
         <p>
           If you would like to make an enquiry, please call them on 
           <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2726758')">0114 2726758</a> or
-          <a href="#" class="telephoneNumber" onclick="copyToClipboard('07817 497995')">07817 497995</a>
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0781 7497995')">0781 7497995</a>
         </p>
         <address>
           <strong>Address:</strong><br>
