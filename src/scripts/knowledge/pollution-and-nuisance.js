@@ -3169,14 +3169,13 @@ const animalControl = new ContentPaN(
                     }interactionid=${
                     KDF.getParams().interactionid
                     }">Raise Animal Control report and provide us details</a>
-    </div>
+</div>
 </details>
 <details class="accordion">
     <summary class="accordion-header">
         <h3>Dog</h3>
         <div class="accordion-icon"></div>
     </summary>
-<div class="accordion-content">
   <details class="details-accordion">
   <summary>
   Dog - Adoption
