@@ -1715,7 +1715,6 @@ const masonryBeesTreatment = new ContentPaN(
     If further access equipment is required, then it would possibly mean an added cost.<br>
     If your customer is unsure about the possible additional cost, escalate the pest control enquiry and an officer will contact the customer about it.
     </p>
- 
   `,
   {
     buttonLabel: "Book treatment for Masonry Bees",
@@ -3086,6 +3085,447 @@ More information can be found at  <a href="https://www.gov.uk/garden-bonfires-ru
   { date: "13/06/2025", name: "Gee Whitehouse" }
 );
 
+const animalControl = new ContentPaN(
+  "animalControl",
+  "Animal Control",
+  "Animal control treatments, services and pricing",
+  `<p>Animal control deals with the following issues. To report these issue, use the from attached</p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Abandoned Pets</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Reports of this nature need to go to the RSPCA.</p>
+        <p>Please contact the RSPCA on 
+        <a href="#" class="telephoneNumber" onclick="copyToClipboard('0300 1234999')">0300 1234999</a> or visit
+    <a href="https://www.rspca.org.uk" target="_blank" rel="noopener noreferrer">www.rspca.org.uk </a></p>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Animal Boarding Establishment</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Animal Noise</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Animal welfare on Farms</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Dangerous Wild Animal License</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+</div>
+</details>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Dog</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+
+  <div class="accordion-content">
+    <details class="details-accordion">
+      <summary>
+        Dog - Adoption
+      </summary>
+      <div class="details-accordion-content">
+        <p>
+          You can adopt a dog from Spring Street Kennels.
+        </p>
+        <p>
+          If you would like to make an enquiry, please call them on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2726758')">0114 2726758</a> or
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0781 7497995')">0781 7497995</a>
+        </p>
+        <address>
+          <strong>Address:</strong><br>
+          Bower Spring <br>
+          Sheffield <br> 
+          S3 8PB
+        </address>
+        <p>
+          <strong><i>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</i>
+        </p>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>
+        Dog - Micro-chipping
+      </summary>
+      <div class="details-accordion-content">
+        <p>
+          Spring Street Kennels offers a micro-chipping service.
+        </p>
+        <p>
+          If you would like to take up this service, please call them on 
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2726758')">0114 2726758</a> or
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('07817 497995')">07817 497995</a>.
+        </p>
+        <address>
+          <strong>Address:</strong><br>
+          Bower Spring <br> 
+          Sheffield <br> 
+          S3 8PB
+        </address>
+        <p>
+          <strong><i>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</i>
+        </p>
+      </div>
+    </details>    
+
+    <details class="details-accordion">
+      <summary>
+        Dog - Breeding Information
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_animal_control?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Raise Animal Control report for Dog Breeding Information
+        </a>
+      </div>
+    </details>       
+
+    <details class="details-accordion">
+      <summary>
+        Deceased Dog
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_animal_control?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Raise Animal Control report and provide us details
+        </a>
+      </div>
+    </details>     
+
+    <details class="details-accordion">
+      <summary>
+        Dangerous Dog
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_dangerous_dog?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Report a dangerous dog
+        </a>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>
+        Dog Fouling
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_dog_fouling?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Report a dog fouling
+        </a>
+      </div>
+    </details>     
+
+    <details class="details-accordion">
+      <summary>
+        Handover Dog to Council
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_dog_handover?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Handover Dog to Council
+        </a>
+      </div>
+    </details>       
+
+    <details class="details-accordion">
+      <summary>
+        Missing or Lost Dog
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_dog_as_lost?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Report a Lost or Missing Dog
+        </a>
+      </div>
+    </details>
+
+    <details class="details-accordion">
+      <summary>
+        Dog Straying
+      </summary>
+      <div class="details-accordion-content">
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/report_straying_dog?${
+          KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+        }interactionid=${KDF.getParams().interactionid}">
+          Report a Straying Dog
+        </a>
+      </div>
+    </details>
+  </div>
+</details>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Deceased Pet</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <details class="details-accordion">
+            <summary>
+                Birds
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+                </p>
+            </div>
+        </details>
+<details class="details-accordion">
+            <summary>
+                Mice
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                     We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+                </p>
+            </div>
+        </details>
+<details class="details-accordion">
+            <summary>
+                Rats
+            </summary>
+            <div class="details-accordion-content">
+                <p>
+                    We do not provide a collection service for this animal. We recommend you put the animal inside 2 black bin bags and dispose of it with your general waste.
+                </p>
+            </div>
+        </details>
+<details class="details-accordion">
+            <summary>
+                Cat
+            </summary>
+            <div class="details-accordion-content">
+                <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+            </div>
+        </details>
+<details class="details-accordion">
+            <summary>
+                None of above
+            </summary>
+            <div class="details-accordion-content">
+               <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+            </div>
+        </details>
+    </div>
+</details>    
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Dumped Animal Bodies</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Keeping of Animals Advice</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Riding Establishments</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+  <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Performing Animal Licence</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+     <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Pet Shops</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <a href="${window.location.protocol}//${
+                    window.location.hostname
+                    }/form/launch/report_animal_control?${
+                    KDF.getParams().customerid
+                    ? `customerid=${KDF.getParams().customerid}&`
+                     : ""
+                    }interactionid=${
+                    KDF.getParams().interactionid
+                    }">Raise Animal Control report and provide us details</a>
+    </div>
+</details>
+
+  `,
+  {
+    buttonLabel: "Raise a Report",
+    formName: "report_animal_control",
+  },
+  { typeKey: "pest_control_transfer_to_service" },
+  { typeKey: "pest_control_information_provided" },
+  {
+    type: "Book",
+    keywords: ["Treatment","services and prices"],
+    categories: [
+      "Pollution and Nuisance",
+      "Environmental",
+      "Animal Control",
+      "Environmental Health",
+    ],
+  },
+  { date: "24/09/2025", name: "Shahzad Athar" }
+);
+
 const abandonedVehicles = new ContentPaN(
   "abandonedVehicles",
   "Abandoned vehicles",
@@ -3493,13 +3933,15 @@ const pollutionAndNuisance = new ServicePaN(
   `Air pollution, noise, dangerous trees, animals and pests, abandoned vehicles, littering, graffiti, anti-social behaviour, Clean Air Zone, Enviro, Eps, Env`,
   [
     abandonedVehicles,
+    animalControl,
+    cleanAirZone,
+    handoverDogtoCouncil,
     pestControl,
     reportDangerousDog,
     reportDogFouling,
     reportFilthyPremises,
     reportStrayingDog,
     reportDogAsLost,
-    handoverDogtoCouncil,
     reportLitter,
     reportGraffiti,
     reportFlyPosting,
@@ -3507,7 +3949,7 @@ const pollutionAndNuisance = new ServicePaN(
     reportNeedlesGlass,
     reportSmoke,
     reportNoise,
-    reportWaterAndDrainage,
-    cleanAirZone
+    reportWaterAndDrainage
+   
   ]
 );
