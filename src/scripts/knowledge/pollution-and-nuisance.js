@@ -3176,23 +3176,29 @@ const animalControl = new ContentPaN(
         <h3>Dog</h3>
         <div class="accordion-icon"></div>
     </summary>
-    <div class="accordion-content">
-        <details class="details-accordion">
-            <summary>
-                Dog - Adoption
-            </summary>
-            <div class="details-accordion-content">
-                <p>
-                    You can adopt a dog from Spring Street Kennels.
-                    </p>
-        <p>
+<div class="accordion-content">
+  <details class="details-accordion">
+  <summary>
+  Dog - Adoption
+  </summary>
+  <div class="details-accordion-content">
+ <p>
+    You can adopt a dog from Spring Street Kennels.
+    </p>
+    <p>
         If you would like to make an enquiry, please call them on 
         <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2726758')">0114 2726758</a> or
-        <a href="#" class="telephoneNumber" onclick="copyToClipboard('07817 497995')">07817 497995</a></p>
-        <address><strong>Address:</strong> Bower Spring, Sheffield, S3 8PB</address>
+        <a href="#" class="telephoneNumber" onclick="copyToClipboard('07817 497995')">07817 497995</a>
+    </p>
+    <address>
+        <strong>Address:</strong><br>
+        Bower Spring <br>
+        Sheffield <br> 
+        S3 8PB
+    </address>
         <p><strong><i>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</i></p>
-            </div>
-        </details>
+  </div>
+  </details>
         <div class="accordion-content">
             <details class="details-accordion">
             <summary>
@@ -3204,7 +3210,12 @@ const animalControl = new ContentPaN(
         <p>If you would like to take up this service, please call them on 
         <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2726758')">0114 2726758</a> or
         <a href="#" class="telephoneNumber" onclick="copyToClipboard('07817 497995')">07817 497995</a>.</p>
-        <address><strong>Address:</strong> Bower Spring, Sheffield, S3 8PB</address>
+        <address>
+        <strong>Address:</strong><br>
+        Bower Spring <br> 
+        Sheffield <br> 
+        S3 8PB
+        </address>
         <p><strong><i>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</i></p>
             </div>
         </details>    
