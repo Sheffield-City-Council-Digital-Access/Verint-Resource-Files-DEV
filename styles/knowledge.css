@@ -122,7 +122,6 @@ small {
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   background: var(--color-grey-1);
   will-change: background-color, border-left;
-  transition: background-color 0.3s ease, border-left 0.3s ease;
 }
 
 #service-a-z-container > div.a-z-container > div.options > div.search-card {
@@ -256,7 +255,6 @@ small {
   font-size: 1rem;
   padding: 0;
   box-shadow: none;
-  transition: color 0.3s ease, background 0.3s ease;
 }
 
 #main-nav .link-button:hover,
@@ -314,7 +312,6 @@ small {
   cursor: pointer;
   text-decoration: none;
   clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
-  transition: background-color 0.3s ease;
   z-index: 1;
   display: inline-flex;
   align-items: center;
@@ -327,7 +324,6 @@ small {
   line-height: 1;
   white-space: normal;
   overflow: hidden;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #dform_container button.breadcrumb-btn:hover:not([disabled]),
@@ -415,7 +411,6 @@ small {
   border-radius: 0.5rem;
   background-color: var(--color-white);
   outline: none;
-  transition: box-shadow 0.3s, border-color 0.3s;
 }
 
 .news-article:focus {
@@ -442,7 +437,6 @@ small {
   width: 29%;
   flex-grow: 1;
   background: var(--color-grey-1);
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .card:hover {

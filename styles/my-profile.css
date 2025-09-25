@@ -10,21 +10,25 @@
 }
 
 #profile #dform_container .container .area .box,
-#profile #dform_container .container>.three {
+#profile #dform_container .container > .three {
   width: 100%;
   max-width: 100%;
 }
 
-#dform_page_page_profile>div.container.area.dform_section_area_account {
+#dform_page_page_profile > div.container.area.dform_section_area_account {
   display: flex;
   flex-direction: column;
 }
 
-#dform_page_page_profile > div.container.area.dform_section_area_account > div.box.profile-details-header.box_my_details.nine {
+#dform_page_page_profile
+  > div.container.area.dform_section_area_account
+  > div.box.profile-details-header.box_my_details.nine {
   flex: 1;
 }
 
-#dform_page_page_profile > div.container.area.dform_section_area_account > div.box.profile-details-header.box_account.last.three {
+#dform_page_page_profile
+  > div.container.area.dform_section_area_account
+  > div.box.profile-details-header.box_account.last.three {
   flex: 0.5;
 }
 
@@ -32,13 +36,15 @@
   #dform_page_page_profile > div.container.area.dform_section_area_account {
     flex-direction: row;
   }
-/* 
+  /* 
   #profile #dform_container .container>.three {
     width: 35%;
   } */
 }
 
-#dform_page_page_profile>div.container.area.dform_section_area_profile_info>div {
+#dform_page_page_profile
+  > div.container.area.dform_section_area_profile_info
+  > div {
   max-width: 100%;
 }
 
@@ -47,12 +53,11 @@
   margin-top: 0 !important;
 }
 
-#dform_container div.box.profile-details-header fieldset>legend {
+#dform_container div.box.profile-details-header fieldset > legend {
   margin: 0;
   background: var(--c-greys-white);
   padding: var(--spacing-sm) var(--spacing-smd);
   border-radius: 1.5625rem 1.5625rem 0 0 !important;
-  transform: translateX(3px);
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
@@ -109,20 +114,20 @@
   border-left: none !important;
 }
 
-.dform_section_box_account fieldset>legend::before,
-.dform_section_box_secure_details fieldset>legend::before,
-.dform_section_box_my_details fieldset>legend::before {
+.dform_section_box_account fieldset > legend::before,
+.dform_section_box_secure_details fieldset > legend::before,
+.dform_section_box_my_details fieldset > legend::before {
   content: url(../icons/gear.svg);
   width: var(--font-size-xxxl);
   height: var(--font-size-xxxl);
   line-height: var(--line-height);
 }
 
-.dform_section_box_secure_details fieldset>legend::before {
+.dform_section_box_secure_details fieldset > legend::before {
   content: url(../icons/lock.svg);
 }
 
-.dform_section_box_my_details fieldset>legend::before {
+.dform_section_box_my_details fieldset > legend::before {
   content: url(../icons/user.svg);
 }
 
@@ -134,7 +139,7 @@
   color: var(--c-brand-accents-teal);
   text-underline-offset: 0.25rem;
   width: max-content;
-  margin: 0
+  margin: 0;
 }
 
 #dform_container #see-all-services {

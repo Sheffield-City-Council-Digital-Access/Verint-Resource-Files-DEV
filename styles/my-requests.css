@@ -1,4 +1,4 @@
-div.tab-container>div {
+div.tab-container > div {
   display: flex;
   gap: var(--spacing-xs);
 }
@@ -21,7 +21,6 @@ button.tab-button {
   min-height: var(--field-height-sm);
   height: var(--field-height-md);
   max-height: 8.75rem;
-  transition: all 0.2s ease;
   text-decoration-line: underline;
   text-decoration-color: transparent;
   text-decoration-thickness: 4px;
@@ -52,7 +51,7 @@ button.tab-button.active {
 
 #widget_MySubmittedRequests,
 #widget_MyDraftRequests {
-  background: var(--c-greys-white)
+  background: var(--c-greys-white);
 }
 
 #widget_MyDraftRequests {
@@ -64,7 +63,7 @@ div.le-request-list {
   padding-bottom: 0;
 }
 
-div.le-content>div.le-request-list>ul {
+div.le-content > div.le-request-list > ul {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
@@ -94,25 +93,25 @@ li.le-request-item:focus-within *::after {
   background: var(--c-focus-links) !important;
 }
 
-li.le-request-item>div {
+li.le-request-item > div {
   display: flex;
   flex-direction: column;
 }
 
-li.le-request-item>div>div.le-request-panel1>ul {
+li.le-request-item > div > div.le-request-panel1 > ul {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xxs);
 }
 
-li.le-request-item>div>div.le-request-panel2>ul {
+li.le-request-item > div > div.le-request-panel2 > ul {
   display: flex;
   flex-direction: row;
   gap: var(--spacing-xxs);
 }
 
-li.le-request-item>div>div.le-request-panel1>ul>li,
-li.le-request-item>div>div.le-request-panel2>ul>li {
+li.le-request-item > div > div.le-request-panel1 > ul > li,
+li.le-request-item > div > div.le-request-panel2 > ul > li {
   margin-block: 0;
 }
 
@@ -163,7 +162,7 @@ li.le-stat-closed li.le-request-status-text::after {
   gap: var(--spacing-xxs);
   list-style: none;
   padding: 0;
-  font-family: var(--font-family)
+  font-family: var(--font-family);
 }
 
 #pagination-container a {
@@ -175,7 +174,6 @@ li.le-stat-closed li.le-request-status-text::after {
   text-decoration: underline;
   color: var(--c-core-brand-primary-darken);
   border-radius: 5px;
-  transition: all 0.2s ease-in-out;
 }
 
 #pagination-container li a {
