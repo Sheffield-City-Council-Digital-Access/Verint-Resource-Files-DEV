@@ -198,88 +198,7 @@ class FormDaMH extends CoreDaMH {
     },
     { date: "08/07/2025", name: "Andy Walker" }
   );
-  const directPayments = new ContentDaMH(
-    "directPayments",
-    "Direct Payments",
-    "Learn about direct payments and how they can be used to support your care plan.",
-    `
-    <p>
-      A direct payment is a cash payment made to you, or someone on your behalf,
-      which you use to pay for things outlined in your support plan.
-    </p>
-    <p>
-      The Direct Payment Support Service is open Monday to Friday, 9am to 5pm.  
-      You can contact the service by phone, email, or post using the information below.
-    </p>
-    <p>
-      Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>.
-      If the call is not answered, raise a case.
-    </p>
-    <p>
-      Email: <a href="mailto:directpaymentsupportservice@sheffield.gov.uk">directpaymentsupportservice@sheffield.gov.uk</a>
-    </p>
-
-    `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "short_breaks_transfered_to_service" },
-    { typeKey: "short_breaks_information_provided" },
-    {
-      type: "Request",
-      keywords: [],
-      categories: ["Disability and Mental Health"],
-    },
-    { date: "27/09/2024", name: "Dinah Williams" }
-  );
-
-  const fosterCare = new ContentDaMH(
-    "fosterCare",
-    "Foster Care",
-    "Discover how to become a foster carer in Sheffield and access local authority support.",
-    `
-      <p>
-        We have a responsibility as a local authority to provide you with advice and
-        support about becoming a foster carer in Sheffield.
-      </p>
-      <p>
-        Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the
-        call is not answered raise a case.
-      </p>
-    `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "short_breaks_transfered_to_service" },
-    { typeKey: "short_breaks_information_provided" },
-    {
-      type: "Request",
-      keywords: [],
-      categories: ["Disability and Mental Health"],
-    },
-    { date: "27/09/2024", name: "Dinah Williams" }
-  );
-
-  const overnightRespite = new ContentDaMH(
-    "overnightRespite",
-    "Overnight Respite",
-    "Learn about short respite services for children with disabilities in Sheffield.",
-    `
-      <p>
-        We provide short respite services for children with disabilities in Sheffield.
-      </p>
-      <p>
-        Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the
-        call is not answered raise a case.
-      </p>
-    `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "short_breaks_information_to_service" },
-    { typeKey: "short_breaks_information_provided" },
-    {
-      type: "Request",
-      keywords: [],
-      categories: ["Disability and Mental Health"],
-    },
-    { date: "27/09/2024", name: "Dinah Williams" }
-  );
-
+ 
   const specialNeedsInclusionPlaycareServices = new ContentDaMH(
     "specialNeedsInclusionPlaycareServices",
     "Special Needs Inclusion Playcare Services",
@@ -309,95 +228,12 @@ class FormDaMH extends CoreDaMH {
     { date: "27/09/2024", name: "Dinah Williams" }
   );
 
-  const specialistClubs = new ContentDaMH(
-    "specialistClubs",
-    "Specialist Clubs",
-    "Explore Specialist Clubs designed for children with disabilities, including cost details and payment options.",
-    `
-      <h3>Affordability</h3>
-      <p>
-        If you are in receipt of means tested benefits or your household income is
-        below £21,000.00 you will not have to pay for the actvity cost. Please
-        complete the household income assessment.
-      </p>
-      <h3>If your child cannot attend a session</h3>
-      <p>
-        You will still need to pay because the staff are employed for each session to
-        support your child, and so the club still has to pay these costs.
-      </p>
-      <h3>Ways of Paying</h3>
-      <p>You will pay the club directly.</p>
-      <p>
-        Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the
-        call is not answered raise a case.
-      </p>
-    `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "short_breaks_information_to_service" },
-    { typeKey: "short_breaks_information_provided" },
-    {
-      type: "Request",
-      keywords: [],
-      categories: ["Disability and Mental Health"],
-    },
-    { date: "27/09/2024", name: "Dinah Williams" }
-  );
-
-
-  const universalClubs = new ContentDaMH(
-    "universalClubs",
-    "Universal Clubs",
-    "Learn about Universal Clubs for children, including affordability, payment options, and support availability.",
-    `
-      <p>
-        Warm transfer the call to: <a href="tel:0114 2735068">0114 2735068</a>. If the
-        call is not answered raise a case.
-      </p>
-      <h3>Affordability</h3>
-      <p>
-        If you are in receipt of means tested benefits or your household income is
-        below £21,000.00 you will not have to pay for the activity cost. Please
-        complete the household income assessment.
-      </p>
-      <p>
-        If families receive other financial support, some of these might be able to be
-        used to help with these costs.
-      </p>
-      <p>
-        If your child attends a club that you find too expensive to pay on an ongoing
-        basis you may be able to find a lower cost alternative.
-      </p>
-      <h3>If your child cannot attend a session</h3>
-      <p>
-        You will still need to pay because the staff are employed for each session to
-        support your child, and so the club still has to pay these costs.
-      </p>
-      <h3>Ways of Paying</h3>
-      <p>You will pay the club directly.</p>
-    `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "short_breaks_information_to_service" },
-    { typeKey: "short_breaks_information_provided" },
-    {
-      type: "Request",
-      keywords: [],
-      categories: ["Disability and Mental Health"],
-    },
-    { date: "27/09/2024", name: "Dinah Williams" }
-  );
-
-
   const shortBreaks = new MenuDaMH(
     "shortBreaks",
     "Short Breaks Services",
     "Provides numerous services to help and support children with disabilities",
     [
       shortBreakGrants,
-      directPayments,
-      overnightRespite,
-      universalClubs,
-      specialistClubs,
-      fosterCare,
       specialNeedsInclusionPlaycareServices,
     ]
   );
