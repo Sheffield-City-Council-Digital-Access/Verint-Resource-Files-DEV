@@ -59,7 +59,7 @@
   appearance: base-select;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2210%22%20width%3D%2210%22%20viewBox%3D%220%200%20640%20640%22%3E%3Cpath%20d%3D%22M297.4%20470.6C309.9%20483.1%20330.2%20483.1%20342.7%20470.6L534.7%20278.6C547.2%20266.1%20547.2%20245.8%20534.7%20233.3C522.2%20220.8%20501.9%20220.8%20489.4%20233.3L320%20402.7L150.6%20233.4C138.1%20220.9%20117.8%20220.9%20105.3%20233.4C92.8%20245.9%2092.8%20266.2%20105.3%20278.7L297.3%20470.7z%22%2F%3E%3C%2Fsvg%3E');
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2210%22%20width%3D%2210%22%20viewBox%3D%220%200%20640%20640%22%3E%3Cpath%20d%3D%22M297.4%20470.6C309.9%20483.1%20330.2%20483.1%20342.7%20470.6L534.7%20278.6C547.2%20266.1%20547.2%20245.8%20534.7%20233.3C522.2%20220.8%20501.9%20220.8%20489.4%20233.3L320%20402.7L150.6%20233.4C138.1%20220.9%20117.8%20220.9%20105.3%20233.4C92.8%20245.9%2092.8%20266.2%20105.3%20278.7L297.3%20470.7z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 1.25rem;
@@ -127,7 +127,7 @@
 #dform_container fieldset.radiogroup span {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;;
+  align-items: flex-start;
   gap: var(--spacing-xs);
   margin-right: var(--spacing-lg);
   margin-bottom: var(--spacing-xxs);
@@ -379,4 +379,12 @@
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-base);
   line-height: var(--line-height-body);
+}
+
+/* --- HTML/AHTM Element --- */
+
+#dform_container div[data-type="html"] {
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
