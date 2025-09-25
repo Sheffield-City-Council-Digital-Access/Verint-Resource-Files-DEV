@@ -2,12 +2,12 @@
   margin-block: 0 2rem;
 }
 
-#dform_controls>div.container {
+#dform_controls > div.container {
   width: 100%;
   margin: 0;
 }
 
-#dform_controls>div:nth-child(2) {
+#dform_controls > div:nth-child(2) {
   width: 100%;
 }
 
@@ -33,8 +33,8 @@
   }
 }
 
-#dform_control_buttons>ul,
-#dform_control_buttons>ol {
+#dform_control_buttons > ul,
+#dform_control_buttons > ol {
   margin: 0;
   padding: 0;
 }
@@ -55,20 +55,19 @@
   left: 0;
 }
 
-#skip>a {
+#skip > a {
   font-family: Poppins;
   font-size: 2rem;
   margin-block: auto;
-    width: 100%;
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-normal);
-    text-decoration: underline !important;
-    line-height: var(--line-height);
-    border-radius: unset !important;
-    border: none !important;
-    color: var(--c-greys-black) !important;
-    padding: 10px !important;
-  transition: all 0.2s ease;
+  width: 100%;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  text-decoration: underline !important;
+  line-height: var(--line-height);
+  border-radius: unset !important;
+  border: none !important;
+  color: var(--c-greys-black) !important;
+  padding: 10px !important;
   outline: none !important;
 }
 
@@ -111,13 +110,13 @@
   margin-right: auto !important;
 }
 
-#NavigationAreaInSingleColumnTemplate button.back-btn>.back-btn--text,
-#dform_container button.back-btn>.back-btn--text {
+#NavigationAreaInSingleColumnTemplate button.back-btn > .back-btn--text,
+#dform_container button.back-btn > .back-btn--text {
   text-decoration: underline;
   text-underline-offset: 0.25rem;
 }
 
-#dform_control_buttons>ul {
+#dform_control_buttons > ul {
   display: none;
   align-items: center;
 }
@@ -130,8 +129,8 @@
   line-height: var(--line-height);
 }
 
-#NavigationAreaInSingleColumnTemplate ,button.back-btn:hover
-#dform_container button.back-btn:hover {
+#NavigationAreaInSingleColumnTemplate,
+button.back-btn:hover #dform_container button.back-btn:hover {
   background: transparent !important;
 }
 
@@ -154,9 +153,10 @@
   transform: translateY(2px);
 }
 
-#dform_container, #dform_widget_button_but_back,
-#NavigationAreaInSingleColumnTemplate button.back-btn:hover>.back-btn--text,
-#dform_container button.back-btn:hover>.back-btn--text,
+#dform_container,
+#dform_widget_button_but_back,
+#NavigationAreaInSingleColumnTemplate button.back-btn:hover > .back-btn--text,
+#dform_container button.back-btn:hover > .back-btn--text,
 #dform_control_buttons #dform_print:hover,
 #dform_control_buttons #dform_check:hover,
 #dform_control_buttons #dform_save:hover,
@@ -185,19 +185,19 @@
   content: url(../icons/arrow-right-black.svg);
 }
 
-#NavigationAreaInSingleColumnTemplate button.back-btn:focus>.back-btn--text,
-#dform_container button.back-btn:focus>.back-btn--text {
+#NavigationAreaInSingleColumnTemplate button.back-btn:focus > .back-btn--text,
+#dform_container button.back-btn:focus > .back-btn--text {
   font-weight: var(--font-weight-semibold);
   color: var(--c-greys-black) !important;
   background: var(--c-focus-links);
   text-decoration: none !important;
 }
 
-#dform_controls>div.container>div:nth-child(1) {
+#dform_controls > div.container > div:nth-child(1) {
   display: none;
 }
 
-#dform_controls>div.container>div.last.six {
+#dform_controls > div.container > div.last.six {
   width: 100%;
 }
 
@@ -220,7 +220,10 @@
   transform: translateY(1px);
 }
 
-#dform_controls #dform_control_buttons #case-display-wrapper #case-reference-display {
+#dform_controls
+  #dform_control_buttons
+  #case-display-wrapper
+  #case-reference-display {
   font-weight: var(--font-weight-semibold);
   color: var(--c-brand-accents-teal);
 }

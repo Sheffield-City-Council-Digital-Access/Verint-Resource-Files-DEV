@@ -21,7 +21,7 @@
   cursor: pointer;
 }
 
-#dform_container .accordion-header>h3 {
+#dform_container .accordion-header > h3 {
   display: inline;
   margin: 0;
 }
@@ -35,7 +35,6 @@
   padding: var(--spacing-md) var(--spacing-sm);
   background-color: var(--c-greys-white);
   overflow: hidden;
-  transition: max-height 0.2s ease-in-out;
 }
 
 #dform_container .accordion-item.active .accordion-content {
@@ -57,7 +56,6 @@
   width: var(--font-size-xxxxl);
   line-height: var(--line-height);
   transform: rotate(90deg);
-  transition: transform 0.2s ease-in-out;
 }
 
 #dform_container .accordion[open] .accordion-icon::after {
@@ -121,7 +119,10 @@
   border-left: solid var(--spacing-xxs) var(--c-danger-red);
 }
 
-#dform_container .details-accordion .details-accordion-content .dform_widget_field {
+#dform_container
+  .details-accordion
+  .details-accordion-content
+  .dform_widget_field {
   margin-block: var(--spacing-sm);
 }
 
@@ -135,7 +136,7 @@
   margin-top: 0;
 }
 
-#dform_container .details-accordion-content p:last-child, 
+#dform_container .details-accordion-content p:last-child,
 #dform_container .details-accordion-content a:last-child,
 #dform_container .details-accordion-content ul:last-child {
   margin-bottom: 0;
