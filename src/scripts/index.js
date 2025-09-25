@@ -2931,7 +2931,7 @@ function getAndSetReviewPageData() {
           if (fieldType === "select") {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
             fieldValue =
-              KDF.kdf()?.form?.data?.[fieldName] ?? KDF.getVal(fieldName);
+              KDF.getVal(fieldName) ?? KDF.kdf()?.form?.data?.[fieldName];
           } else if (fieldType === "radio") {
             fieldLabel = getLegendText("radiogroup");
             fieldValue = KDF.getVal(fieldName);
