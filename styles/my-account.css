@@ -1,8 +1,13 @@
-#home, #profile, #requests, #services {
+#home,
+#profile,
+#requests,
+#services {
   background: var(--c-greys-chalk);
 }
 
-#register #content,
+#register #content #register .navigation,
+#delete #content,
+#delete .navigation,
 #form {
   background: var(--c-greys-white);
 }
