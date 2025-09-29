@@ -11362,7 +11362,7 @@ const tenancyAgreementRequest = new ContentH(
         </tbody>
       </table>
   `,
-  { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
+  { buttonLabel: "tenancyAgreementRequest", formName: "hou_sustainment_ten_chan" },
   { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   {
@@ -11408,7 +11408,7 @@ const tenancyConditions = new ContentH(
     Send link to review further information
 </button>
 `,
-  { buttonLabel: "tenancyAgreementRequest", formName: "Tenancy Sustainment" },
+  { buttonLabel: "tenancyAgreementRequest", formName: "hou_sustainment_ten_chan" },
   { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   {
