@@ -525,6 +525,17 @@ function handleInitialisingEvent() {
 function handleOnReadyEvent(_, kdf) {
   customerState = kdf.customerset;
 
+  // --- DISPLAYING AGE ON REVIEW PAGE ------------------------------------- \\
+
+  if (
+    kdf.form.complete === "Y" &&
+    kdf.access === "agent" &&
+    KDF.showWidget("txt_age")
+  ) {
+    KDF.showWidget("txt_age");
+    refreshReviewPage();
+  }
+
   // --- ADD CONTENT TO WHY WE NEED DATE OF BIRTH --------------------------- \\
 
   $(".dob-reason").text(
