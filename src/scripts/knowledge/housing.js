@@ -11362,7 +11362,7 @@ const tenancyAgreementRequest = new ContentH(
         </tbody>
       </table>
   `,
-  { buttonLabel: "tenancyAgreementRequest", formName: "" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   {
@@ -11370,7 +11370,7 @@ const tenancyAgreementRequest = new ContentH(
     keywords: ["Tenancy"],
     categories: ["Housing"],
   },
-  { date: "29/09/2025", name: "Shahzad Athar" }
+  { date: "01/10/2025", name: "Shahzad Athar" }
 );
 
 const tenancyChange = new FormH(
