@@ -4,8 +4,8 @@
   flex-direction: column;
 }
 
-.header>.service-header-bar,
-#widget_Navigation>div,
+.header > .service-header-bar,
+#widget_Navigation > div,
 #dform_controls,
 #dform_pageholder,
 #dform_container .dform_message,
@@ -20,6 +20,10 @@
 
 #dform_pageholder {
   padding-block: 0;
+}
+
+#dform_ref_display {
+  display: none !important;
 }
 
 #dform_container .message-wrapper {
@@ -38,7 +42,7 @@
 }
 
 #dform_container,
-#dform_control_buttons>ul>li:nth-child(1) {
+#dform_control_buttons > ul > li:nth-child(1) {
   margin: unset;
   padding: unset;
 }
@@ -56,17 +60,14 @@
   max-width: 47.6875rem;
 }
 
-#dform_container .container .area .box.conditional>div {
+#dform_container .container .area .box.conditional > div {
   padding-left: var(--spacing-md) !important;
   border-left: solid var(--spacing-xxs) var(--c-brand-accents-teal) !important;
 }
 
-#form>#content {
+#form > #content {
   padding-top: 0 !important;
 }
-
-
-
 
 /* INTERNAL */
 
@@ -81,7 +82,7 @@
   padding: 3vh 8vw 0;
 }
 
-#dform_container.dform_agent>.service-header-bar {
+#dform_container.dform_agent > .service-header-bar {
   display: flex;
   align-items: center;
   gap: var(--spacing-xl);
@@ -89,11 +90,11 @@
   padding: var(--spacing-sm) clamp(15px, 5vw, 131px) var(--spacing-xxs) !important;
 }
 
-#dform_container.dform_agent>.service-header-bar>div>a>img {
+#dform_container.dform_agent > .service-header-bar > div > a > img {
   width: 4.375rem;
 }
 
-#dform_container.dform_agent>.service-header-bar>span {
+#dform_container.dform_agent > .service-header-bar > span {
   font-family: var(--font-family);
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-lg);
@@ -110,7 +111,9 @@
   transform: translateY(33px);
 }
 
-#dform_container.dform_agent #FooterAreaInSingleColumnNoNavigationTemplate .footer-copyright {
+#dform_container.dform_agent
+  #FooterAreaInSingleColumnNoNavigationTemplate
+  .footer-copyright {
   color: var(--c-greys-white);
 }
 
@@ -120,7 +123,7 @@
 
 #dform_container.dform_agent form.dform .dform_widget_field,
 #dform_container.dform_agent form.dform .dform_widget_type_html {
-  margin-block: var(--spacing-xl);
+  margin-block: var(--spacing-md);
 }
 
 #dform_container.dform_agent form.dform .dform_widget_type_buttonset {

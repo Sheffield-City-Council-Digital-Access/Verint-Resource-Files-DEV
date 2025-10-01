@@ -3513,6 +3513,8 @@ function checkAddressHasBeenSet(action = "next page") {
     } else {
       if (action === "submit") {
         KDF.gotoPage("complete", true, true, false);
+      } else if (action === "none") {
+        return true;
       } else {
         KDF.gotoNextPage();
       }
