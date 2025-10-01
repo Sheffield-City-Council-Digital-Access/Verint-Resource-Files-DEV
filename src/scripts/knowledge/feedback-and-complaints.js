@@ -285,12 +285,13 @@ const complaints = new ContentFaC(
   `
 <details class="accordion">
   <summary class="accordion-header">
-    <h3>Complaints</h3></h3>
+    <h3>Complaints</h3>
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <h3>Our Approach</h3>
 
+  <h3>Our Approach</h3>
+   
     <p> Our definition of a complaint is ‘an expression of dissatisfaction, however made, about the standard of service, 
     actions or lack of action by the organisation/landlord, its own staff, or those acting on its behalf, 
     affecting an individual/resident or group of individuals/residents.</p>
@@ -334,23 +335,31 @@ const complaints = new ContentFaC(
   </summary>
   <div class="accordion-content">
 
-<p> Sheffield City Council's Corporate Complaint Handling Procedure has been aligned to the new Ombudsman Complaint 
-    Handling Code. This is effective for Housing and Repairs Services from 1 April 2024 and for all other Corporate Council 
-    Services from 1 September 2024. Our corporate complaints procedure is a two staged process, consistent across the Council,
-     with clear timescales set out for responses.</p>
+<p>
+Sheffield City Council's Corporate Complaint Handling Procedure has been aligned to the new Ombudsman Complaint 
+Handling Code.This is effective for Housing and Repairs Services from 1 April 2024 and for all other Corporate 
+Council Services from 1 September 2024.Our corporate complaints procedure is a two staged process, consistent 
+across the Council, with clear timescales set out for responses.
+</p>
 
 <h3>Early resolution/Investigation</h3>
 
-<p> You are encouraged wherever possible to provide early and local resolution. Wherever possible, 
+<p> 
+You are encouraged wherever possible to provide early and local resolution. Wherever possible, 
 seek to resolve the complaint at the first point of contact or within 5 working days of receipt of the complaint. 
-Record these consistently in the complaint management recording system (CRM). </p>
+Record these consistently in the complaint management recording system (CRM). 
+</p>
 
-<p>This form should only be used for retrospective recording of a complaint resolved at the first point of contact. 
+<p>
+This form should only be used for retrospective recording of a complaint resolved at the first point of contact. 
 Once resolved, good practise is to ensure some written correspondence is sent to the complainant. 
-It should advise/confirm your agreed actions.</p>
+It should advise/confirm your agreed actions.
+</p>
 
-<p> If you cannot resolve within 5 working days, or the complaint is too complex to complete within this timeframe, 
-then you must ensure that a full investigation is completed and the complainant advised accordingly. </p>
+<p> 
+If you cannot resolve within 5 working days, or the complaint is too complex to complete within this timeframe, 
+then you must ensure that a full investigation is completed and the complainant advised accordingly. 
+</p>
 
 <h3>Acknowledgement</h3>
 
