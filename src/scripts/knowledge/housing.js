@@ -11408,7 +11408,7 @@ const tenancyConditions = new ContentH(
     Send link to review further information
 </button>
 `,
-  { buttonLabel: "tenancyAgreementRequest", formName: "" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   {
