@@ -11362,16 +11362,16 @@ const tenancyAgreementRequest = new ContentH(
         </tbody>
       </table>
   `,
-  { buttonLabel: "tenancyAgreementRequest", formName: "" },
-  { typeKey: "" },
-  { typeKey: "tenancy_sustainment_information_provided" },
-  {
-    type: "tenancyAgreementRequest",
-    keywords: ["Tenancy"],
-    categories: ["Housing"],
-  },
-  { date: "30/09/2025", name: "Shahzad Athar" }
-);
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "tenancy_sustainment_information_provided" },
+    {
+      type: "tenancyAgreementRequest",
+      keywords: ["Tenancy"],
+      categories: ["Housing"],
+    },
+    { date: "01/10/2025", name: "Shahzad Athar" }
+ );
 
 const tenancyChange = new FormH(
   "tenancyChange",
