@@ -281,10 +281,17 @@ const childrensSocialCareComplaints = new ContentFaC(
 const complaints = new ContentFaC(
   "complaints",
   "Complaints",
-  "How complaints are handled by Sheffield City Council, including the process, principles, and commitment to service improvement.",
+  "How Sheffield City Council handles complaints through its two-stage Corporate Complaints Procedure, outlining the process, principles, response times, escalation to the Ombudsman, and the Council's commitment to service improvement.",
   `
-    <h3>Our Approach</h3>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Complaints</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
 
+  <h3>Our Approach</h3>
+   
     <p> Our definition of a complaint is ‘an expression of dissatisfaction, however made, about the standard of service, 
     actions or lack of action by the organisation/landlord, its own staff, or those acting on its behalf, 
     affecting an individual/resident or group of individuals/residents.</p>
@@ -318,112 +325,41 @@ const complaints = new ContentFaC(
      <p>We will keep a record of complaints raised by customers.</p>
 
       <p>We will learn from complaints so that we can improve our service.</p>
+  </div>
+</details>
 
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Corporate complaints procedure</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
 
-  `,
-  {
-    buttonLabel: "Make a complaint",
-    formName: "make_complaint",
-  },
-  { typeKey: "" },
-  { typeKey: "feedback_services_complaint_information_provided" },
-  // {
-  //   buttonLabel: "Make a compliment",
-  //   formName: "feedback_compliment",
-  // },
-  // {
-  //   buttonLabel: "Complaint Survey",
-  //   formName: "complaints_survey",
-  // },
-  // { buttonLabel: "Make a Suggestion" },
-  // { formName: "feedback_suggestion" },
-  {
-    type: "Complaint",
-    keywords: [
-      "feadback and complaints",
-      "feedback and complants",
-      "feedbak and complaints",
-      "feedback and complaits",
-      "fedback and complaints"
-    ],
-    categories: ["Feedback and Complaint"],
-  },
-  { date: "11/11/2024", name: "Sam Coupland" }
-);
-
-
-const compliment = new FormFaC(
-  "compliment",
-  "Compliments",
-  "Log a compliment about our service.",
-  "feedback_compliment",
-  {
-    type: "Make",
-    keywords: 
-    [
-      "complaints",
-      "compliments",
-      "compliment",
-      "complament",
-      "feadback and complaints",
-      "feedback and complants",
-      "feedbak and complaints",
-      "feedback and complaits",
-      "fedback and complaints"
-    ],
-    categories: ["feedback and complaints"],
-  },
-  { date: "22/05/2025", name: "Sam Coupland" }
-);
-
-const suggestion = new FormFaC(
-  "suggestion",
-  "Give Feedback or a Suggestion",
-  "Log a suggestion for our service.",
-  "give_feedback_suggestion",
-  {
-    type: "Make",
-    keywords: 
-    [
-      "fedback",
-      "feedback",
-      "sugestion",
-      "suggestion",
-      "feadback and complaints",
-      "feedback and complants",
-      "feedbak and complaints",
-      "feedback and complaits",
-      "fedback and complaints"
-    ],
-    categories: ["feedback and complaints"],
-  },
-  { date: "04/06/2025", name: "Sam Coupland" }
-);
-
-const corporateComplaintsProcedure = new ContentFaC(
-  "corporateComplaintsProcedure",
-  "Corporate complaints procedure",
-  "Sheffield City Council's two-stage Corporate Complaints Procedure, including response times and escalation to the Ombudsman.",
-  `
-    <p> Sheffield City Council's Corporate Complaint Handling Procedure has been aligned to the new Ombudsman Complaint 
-    Handling Code. This is effective for Housing and Repairs Services from 1 April 2024 and for all other Corporate Council 
-    Services from 1 September 2024. Our corporate complaints procedure is a two staged process, consistent across the Council,
-     with clear timescales set out for responses.</p>
-
-
+<p>
+Sheffield City Council's Corporate Complaint Handling Procedure has been aligned to the new Ombudsman Complaint 
+Handling Code.This is effective for Housing and Repairs Services from 1 April 2024 and for all other Corporate 
+Council Services from 1 September 2024.Our corporate complaints procedure is a two staged process, consistent 
+across the Council, with clear timescales set out for responses.
+</p>
 
 <h3>Early resolution/Investigation</h3>
 
-<p> You are encouraged wherever possible to provide early and local resolution. Wherever possible, 
+<p> 
+You are encouraged wherever possible to provide early and local resolution. Wherever possible, 
 seek to resolve the complaint at the first point of contact or within 5 working days of receipt of the complaint. 
-Record these consistently in the complaint management recording system (CRM). </p>
+Record these consistently in the complaint management recording system (CRM). 
+</p>
 
-<p>This form should only be used for retrospective recording of a complaint resolved at the first point of contact. 
+<p>
+This form should only be used for retrospective recording of a complaint resolved at the first point of contact. 
 Once resolved, good practise is to ensure some written correspondence is sent to the complainant. 
-It should advise/confirm your agreed actions.</p>
+It should advise/confirm your agreed actions.
+</p>
 
-<p> If you cannot resolve within 5 working days, or the complaint is too complex to complete within this timeframe, 
-then you must ensure that a full investigation is completed and the complainant advised accordingly. </p>
+<p> 
+If you cannot resolve within 5 working days, or the complaint is too complex to complete within this timeframe, 
+then you must ensure that a full investigation is completed and the complainant advised accordingly. 
+</p>
 
 <h3>Acknowledgement</h3>
 
@@ -483,7 +419,8 @@ Within 5 working days of receipt of the complaint.
     buttonLabel: "Make a complaint",
     formName: "make_complaint",
   },
-
+  { typeKey: "" },
+  { typeKey: "feedback_services_complaint_information_provided" },
   // {
   //   buttonLabel: "Make a compliment",
   //   formName: "feedback_compliment",
@@ -494,11 +431,6 @@ Within 5 working days of receipt of the complaint.
   // },
   // { buttonLabel: "Make a Suggestion" },
   // { formName: "feedback_suggestion" },
-  
-  
-  
-  { typeKey: "" },
-  { typeKey: "feedback_services_complaint_information_provided" },
   {
     type: "Complaint",
     keywords: [
@@ -510,7 +442,56 @@ Within 5 working days of receipt of the complaint.
     ],
     categories: ["Feedback and Complaint"],
   },
-  { date: "11/11/2024", name: "Sam Coupland" }
+  { date: "29/09/2025", name: "Shaz Athar" }
+);
+
+
+const compliment = new FormFaC(
+  "compliment",
+  "Compliments",
+  "Log a compliment about our service.",
+  "feedback_compliment",
+  {
+    type: "Make",
+    keywords: 
+    [
+      "complaints",
+      "compliments",
+      "compliment",
+      "complament",
+      "feadback and complaints",
+      "feedback and complants",
+      "feedbak and complaints",
+      "feedback and complaits",
+      "fedback and complaints"
+    ],
+    categories: ["feedback and complaints"],
+  },
+  { date: "22/05/2025", name: "Sam Coupland" }
+);
+
+const suggestion = new FormFaC(
+  "suggestion",
+  "Give Feedback or a Suggestion",
+  "Log a suggestion for our service.",
+  "give_feedback_suggestion",
+  {
+    type: "Make",
+    keywords: 
+    [
+      "fedback",
+      "feedback",
+      "sugestion",
+      "suggestion",
+      "feadback and complaints",
+      "feedback and complants",
+      "feedbak and complaints",
+      "feedback and complaits",
+      "fedback and complaints"
+    ],
+    categories: ["feedback and complaints"],
+  },
+  { date: "04/06/2025", name: "Sam Coupland" }
 );
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
@@ -525,7 +506,6 @@ const feedbackAndComplaints = new ServiceFaC(
       childrensSocialCareComplaints,
       complaints,
       compliment,
-      corporateComplaintsProcedure,
       suggestion
     ]
 );
