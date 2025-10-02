@@ -2671,13 +2671,21 @@ const waspsTreatment = new ContentPaN(
       Officers carry equipment that enables them to treat a nest located at height.
       In most cases the officer will be able to carry out a successful treatment using such equipment. 
       If any further access equipment is required to treat the nest our officer will inform you of this 
-      at the time of the visit. If further access to equipment is required, then it would possibly mean 
-      an added cost. If your customer is unsure about the possible additional cost, escalate pest control 
-      enquiry and an officer will contact the customer about it.
+      at the time of the visit and we may need to rearrange the appointment. 
       <br>
-      <br>
-     
     </p>
+
+    <h3>Terms and Conditions</h3>
+
+  <ul>
+    <li>Treatment of wasps is subject to weather conditions; in adverse conditions we may contact you to rearrange the appointment.</li>
+    <li>We are only able to provide treatments to active wasps' nests.</li>
+    <li>If no active nest is found, no treatment will be provided (in this instance no refund of the call-out fee will be made).</li>
+    <li>If we are unable to locate or access the nest, we cannot treat it (in this instance no refund of the call-out fee will be made).</li>
+    <li>Once the nest is dead no wasps will use the nest again; we do not remove dead nests.</li>
+    <li>If the treatment on the original nest is unsuccessful, we can arrange a re-visit at no additional cost. The original treatment must have taken place within 2 weeks.</li>
+  </ul>
+
   `,
   {
     buttonLabel: "Book treatment for Wasps",
