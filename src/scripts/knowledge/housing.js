@@ -11152,7 +11152,7 @@ Streets Ahead, Environmental Services, Local Assistance Scheme<br>
   { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Parking Permits", keywords: ["Tenancy"], categories: ["Housing"] },
-  { date: "29/09/2025", name: "Shahzad Athar" }
+  { date: "30/09/2025", name: "Shahzad Athar" }
 );
 
 const nameChanges = new ContentH(
@@ -11183,7 +11183,7 @@ The same document cannot be used more than once (e.g., driving licence as primar
   { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Name Changes", keywords: ["Tenancy"], categories: ["Housing"] },
-  { date: "07/11/2024", name: "Shahzad Athar" }
+  { date: "30/09/2025", name: "Shahzad Athar" }
 );
 
 const permissions = new ContentH(
@@ -11362,16 +11362,16 @@ const tenancyAgreementRequest = new ContentH(
         </tbody>
       </table>
   `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "" },
-  { typeKey: "tenancy_sustainment_information_provided" },
-  {
-    type: "tenancyAgreementRequest",
-    keywords: ["Tenancy"],
-    categories: ["Housing"],
-  },
-  { date: "01/10/2025", name: "Shahzad Athar" }
-);
+    { buttonLabel: "", formName: "" },
+    { typeKey: "" },
+    { typeKey: "tenancy_sustainment_information_provided" },
+    {
+      type: "tenancyAgreementRequest",
+      keywords: ["Tenancy"],
+      categories: ["Housing"],
+    },
+    { date: "01/10/2025", name: "Shahzad Athar" }
+ );
 
 const tenancyChange = new FormH(
   "tenancyChange",
@@ -11408,7 +11408,7 @@ const tenancyConditions = new ContentH(
     Send link to review further information
 </button>
 `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "tenancyConditionsRequest", formName: "hou_sustainment_ten_chan" },
   { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   {
@@ -11416,7 +11416,7 @@ const tenancyConditions = new ContentH(
     keywords: ["Tenancy"],
     categories: ["Housing"],
   },
-  { date: "29/09/2025", name: "Shaz Athar" }
+  { date: "30/09/2025", name: "Shaz Athar" }
 );
 
 const tenancyVisits = new FormH(
