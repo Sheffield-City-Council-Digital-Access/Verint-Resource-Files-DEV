@@ -5502,7 +5502,7 @@ const housingOnline = new ContentH(
       Click <a href="https://housing-test.sheffield.gov.uk/ords/houtest4_selfserv/f?p=13000:101::::::" target="_blank">here</a> to access Housing Online.
     </p>
     <p>
-      Use the following login details to access the system;
+      Use the following login details to access the system:
     </p>
     <p>
       Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
