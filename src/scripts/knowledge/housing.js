@@ -5496,7 +5496,7 @@ const debtRecovery = new FormH(
 const housingOnline = new ContentH(
   "housingOnline",
   "Housing Online",
-  "Use this tile to gain access to Housing Online using dummy login details and navigate the system alongside customers, without their personal account.",
+  "Gain access to Housing Online using dummy login details and navigate the system alongside customers, without their personal account.",
   `
     <p>
       Click <a href="https://housing-test.sheffield.gov.uk/ords/houtest4_selfserv/f?p=13000:101::::::" target="_blank">here</a> to access Housing Online.
