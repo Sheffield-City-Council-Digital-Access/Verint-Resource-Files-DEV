@@ -5499,7 +5499,7 @@ const housingOnline = new ContentH(
   "Use this tile to gain access to Housing Online using dummy login details and navigate the system alongside customers, without their personal account.",
   `
     <p>
-      Click <a href="here" target="_blank">https://housing-test.sheffield.gov.uk/ords/houtest4_selfserv/f?p=13000:101::::::/a> to access Housing Online.
+      Click <a href="https://housing-test.sheffield.gov.uk/ords/houtest4_selfserv/f?p=13000:101::::::" target="_blank">here</a> to access Housing Online.
     </p>
     <p>
       Use the following login details to access the system;
