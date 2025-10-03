@@ -5493,6 +5493,29 @@ const debtRecovery = new FormH(
   { date: "12/03/2025", name: "Nathan Smith" }
 );
 
+const housingOnline = new ContentH(
+  "housingOnline",
+  "Housing Online",
+  "Gain access to Housing Online using dummy login details and navigate the system alongside customers, without their personal account.",
+  `
+    <p>
+      Click <a href="https://housing-test.sheffield.gov.uk/ords/houtest4_selfserv/f?p=13000:101::::::" target="_blank">here</a> to access Housing Online.
+    </p>
+    <p>
+      Use the following login details to access the system:
+    </p>
+    <p>
+      Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
+      Password: <strong>Password1*</strong>
+    </p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "rents_information_provided" },
+  { type: "References", keywords: ["Rent, Housing, Online, Housing Online, Dummy"], categories: ["Housing"] },
+  { date: "03/10/2025", name: "Nathan Smith" }
+);
+
 const references = new ContentH(
   "references",
   "References",
@@ -5960,6 +5983,7 @@ const rents = new MenuH(
     balanceEnquiry,
     contactRentsTeam,
     debtRecovery,
+    housingOnline,
     references,
     rentArrangements,
     rentRefunds,
