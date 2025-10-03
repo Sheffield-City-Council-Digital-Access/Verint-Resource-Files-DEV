@@ -39,10 +39,95 @@ let fieldsToCheckBeforeClose = [];
 // Initialize an array to store the user's form page history
 const formUserPath = [];
 
-// --- HANDLE INITIALISING EVENT ------------------------------------------- \\
+// --- HANDLE INITIALISING EVENT -------------------------------------------- \\
 
 function handleInitialisingEvent() {
-  // --- GOOGLE ANALITICS  ------------------------------------------------- \\
+  // --- ADD INTERNAL HEADER FOOTER  ---------------------------------------- \\
+
+  if (KDF.kdf().access === "agent") {
+    (() => {
+      /**
+       * Creates and inserts a service header bar with the council logo and service label.
+       */
+      const dformElement = document.querySelector("#dform_container");
+
+      const serviceHeaderBar = document.createElement("div");
+      serviceHeaderBar.classList.add("service-header-bar");
+
+      const logoContainer = document.createElement("div");
+      logoContainer.classList.add("logo-container");
+
+      const logoLink = document.createElement("a");
+      logoLink.href = "https://www.sheffield.gov.uk";
+      logoLink.title = "Back to homepage";
+      logoLink.classList.add("header-logo-link");
+
+      const logoImg = document.createElement("img");
+      logoImg.classList.add("header-logo");
+      logoImg.src =
+        "https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield/Images/logo.png";
+      logoImg.alt = "Sheffield City Council Logo";
+
+      logoLink.appendChild(logoImg);
+      logoContainer.appendChild(logoLink);
+
+      const serviceLabel = document.createElement("span");
+      serviceLabel.id = "service-label";
+      serviceLabel.classList.add("service-label");
+      serviceLabel.textContent = "My Account";
+
+      serviceHeaderBar.appendChild(logoContainer);
+      serviceHeaderBar.appendChild(serviceLabel);
+
+      if (dformElement) {
+        dformElement.prepend(serviceHeaderBar);
+      }
+    })();
+
+    (() => {
+      /**
+       * Creates and appends footer links and a copyright notice after the form element.
+       */
+      const formElement = document.querySelector("form");
+
+      if (formElement) {
+        const footerArea = document.createElement("div");
+        footerArea.id = "FooterAreaInSingleColumnNoNavigationTemplate";
+
+        const footerLinksUl = document.createElement("ul");
+        footerLinksUl.classList.add("footer-links");
+
+        const cookiePolicyLi = document.createElement("li");
+        const cookieAnchor = document.createElement("a");
+        cookieAnchor.href =
+          "https://sheffieldcc-it.uk.4me.com/self-service/requests/new";
+        cookieAnchor.classList.add("footer-link");
+        cookieAnchor.textContent = "Request change";
+        cookiePolicyLi.appendChild(cookieAnchor);
+        footerLinksUl.appendChild(cookiePolicyLi);
+
+        const privacyStatementLi = document.createElement("li");
+        const privacyAnchor = document.createElement("a");
+        privacyAnchor.href =
+          "https://sheffieldcc-it.uk.4me.com/self-service/requests/new/provide_description?template_id=681";
+        privacyAnchor.classList.add("footer-link");
+        privacyAnchor.textContent = "Report fault";
+        privacyStatementLi.appendChild(privacyAnchor);
+        footerLinksUl.appendChild(privacyStatementLi);
+
+        const footerCopyright = document.createElement("div");
+        footerCopyright.classList.add("footer-copyright");
+        footerCopyright.textContent = `© Sheffield City Council ${new Date().getFullYear()}`;
+
+        footerArea.appendChild(footerLinksUl);
+        footerArea.appendChild(footerCopyright);
+
+        formElement.insertAdjacentElement("afterend", footerArea);
+      }
+    })();
+  }
+
+  // --- GOOGLE ANALITICS  -------------------------------------------------- \\
 
   if (KDF.kdf().access === "citizen") {
     (function (w, d, s, l, i) {
@@ -60,7 +145,7 @@ function handleInitialisingEvent() {
     })(window, document, "script", "dataLayer", "GTM-PBGBFQVW");
   }
 
-  // --- HANDLE SIGN IN PAGE ----------------------------------------------- \\
+  // --- HANDLE SIGN IN PAGE ------------------------------------------------ \\
 
   if (
     KDF.kdf().access === "citizen" &&
@@ -79,7 +164,7 @@ function handleInitialisingEvent() {
     }
   }
 
-  // --- ADD TAB TITLE AND ICON  ------------------------------------------- \\
+  // --- ADD TAB TITLE AND ICON  -------------------------------------------- \\
 
   (() => {
     const defaultServiceTitle = "My Account";
@@ -108,7 +193,7 @@ function handleInitialisingEvent() {
       "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
   })();
 
-  // --- APPLY CLASS WHEN SKIP IF FOCUSED  --------------------------------- \\
+  // --- APPLY CLASS WHEN SKIP IF FOCUSED  ---------------------------------- \\
 
   (() => {
     const skipLink = document.getElementById("skip");
@@ -132,7 +217,7 @@ function handleInitialisingEvent() {
     }
   })();
 
-  // --- ADD LOADING SPINNER  ---------------------------------------------- \\
+  // --- ADD LOADING SPINNER  ----------------------------------------------- \\
 
   (() => {
     // Select the target element
@@ -152,7 +237,7 @@ function handleInitialisingEvent() {
     targetDiv.appendChild(spinnerDiv);
   })();
 
-  // --- ADD BACK BUTTON TO FORM CONTROLS ---------------------------------- \\
+  // --- ADD BACK BUTTON TO FORM CONTROLS ----------------------------------- \\
 
   (() => {
     const coreCaseFields = document.querySelector(
@@ -202,7 +287,7 @@ function handleInitialisingEvent() {
     }
   })();
 
-  // --- AUPDATE PRNT BUTTON LABEL ----------------------------------------- \\
+  // --- AUPDATE PRNT BUTTON LABEL ------------------------------------------ \\
 
   (() => {
     const printButton = document.getElementById("dform_print");
@@ -211,7 +296,7 @@ function handleInitialisingEvent() {
     }
   })();
 
-  // --- REPOSITIONING THE PAGE NAV ---------------------------------------- \\
+  // --- REPOSITIONING THE PAGE NAV ----------------------------------------- \\
 
   (() => {
     const pagenav = document.getElementById("dform_pagenav");
@@ -227,7 +312,7 @@ function handleInitialisingEvent() {
     }
   })();
 
-  // --- ADD CHARACTER COUNT ----------------------------------------------- \\
+  // --- ADD CHARACTER COUNT ------------------------------------------------ \\
 
   (() => {
     const textareas = document.querySelectorAll('div[data-type="textarea"]');
@@ -263,7 +348,7 @@ function handleInitialisingEvent() {
     });
   })();
 
-  // --- UPDATE ACCEPTED EMAIL PATTERN ------------------------------------- \\
+  // --- UPDATE ACCEPTED EMAIL PATTERN -------------------------------------- \\
 
   (() => {
     $('input[type="email"]').attr(
@@ -272,7 +357,7 @@ function handleInitialisingEvent() {
     );
   })();
 
-  // --- ADD CURRECY SYMBOL ------------------------------------------------ \\
+  // --- ADD CURRECY SYMBOL ------------------------------------------------- \\
 
   (() => {
     const currencyWidgets = document.querySelectorAll(".dform_widget.currency");
@@ -320,7 +405,7 @@ function handleInitialisingEvent() {
     });
   })();
 
-  // --- OVERRIDE PRINT FUNCTION ------------------------------------------- \\
+  // --- OVERRIDE PRINT FUNCTION -------------------------------------------- \\
 
   (() => {
     const printButton = document.getElementById("dform_print");
@@ -355,7 +440,7 @@ function handleInitialisingEvent() {
   scrollToTop();
 }
 
-// --- HANDLE ON READY EVENT ----------------------------------------------- \\
+// --- HANDLE ON READY EVENT ------------------------------------------------ \\
 
 function handleOnReadyEvent(_, kdf) {
   customerState = kdf.customerset;
@@ -367,7 +452,7 @@ function handleOnReadyEvent(_, kdf) {
       .textContent.trim();
   }
 
-  // --- SET ADDRESS IF ACCOUNT IUDENTIFIED ---------------------------------- \\
+  // --- SET ADDRESS IF ACCOUNT IUDENTIFIED --------------------------------- \\
 
   if (
     kdf.profileData["customerid"] &&
@@ -379,7 +464,7 @@ function handleOnReadyEvent(_, kdf) {
     $("#dform_widget_button_but_find_address_about_you").click();
   }
 
-  // --- ADD CONTENT TO WHY WE NEED DATE OF BIRTH -------------------------- \\
+  // --- ADD CONTENT TO WHY WE NEED DATE OF BIRTH --------------------------- \\
 
   $(".dob-reason").text(
     "Your date of birth is a helpful way to confirm your identity and protect your information."
@@ -388,28 +473,36 @@ function handleOnReadyEvent(_, kdf) {
     "Their date of birth is a helpful way to confirm their identity and protect their information."
   );
 
-  // --- BUILD RELATED SERVICES -------------------------------------------- \\
+  // --- DISPLAYING AGE ON REVIEW PAGE -------------------------------------- \\
+
+  if (kdf.form.complete === "Y" && kdf.access === "agent") {
+    KDF.showWidget("txt_age");
+    KDF.showWidget("txt_their_age");
+    refreshReviewPage();
+  }
+
+  // --- BUILD RELATED SERVICES --------------------------------------------- \\
 
   buildRelatedServiceCards(relatedServices, "related-services-panel");
 
-  // --- REMOVE TAB INDEX FROM SELECT ELEMENTS ----------------------------- \\
+  // --- REMOVE TAB INDEX FROM SELECT ELEMENTS ------------------------------ \\
 
   $(".remove-tab").each(function () {
     $(this).attr("tabindex", "-1");
   });
 
-  // --- SET FORM START DATE AND TIME -------------------------------------- \\
+  // --- SET FORM START DATE AND TIME --------------------------------------- \\
 
   if (!kdf.form.ref) {
     KDF.setVal("txt_start_date_and_time", formatDateTime().utc);
   }
 
-  // --- APPLY INTERNAL SYLE CHANGES --------------------------------------- \\
+  // --- APPLY INTERNAL SYLE CHANGES ---------------------------------------- \\
 
   if (KDF.kdf().access === "agent") {
     const root = document.documentElement;
 
-    // --- CHECK AGENT LOCATION -------------------------------------------- \\
+    // --- CHECK AGENT LOCATION --------------------------------------------- \\
 
     if (
       kdf.access === "agent" &&
@@ -444,29 +537,29 @@ function handleOnReadyEvent(_, kdf) {
     }
   }
 
-  // --- SET FEEDBACK LINK ------------------------------------------------- \\
+  // --- SET FEEDBACK LINK -------------------------------------------------- \\
 
   buildFormLink("give-feedback", "give_feedback_suggestion", true);
 
-  // --- SET EQUALITIES LINK ----------------------------------------------- \\
+  // --- SET EQUALITIES LINK ------------------------------------------------ \\
 
   buildFormLink("equalities-information", "equalities_monitoring", true);
 
-  // --- SET SURVEY LINK --------------------------------------------------- \\
+  // --- SET SURVEY LINK ---------------------------------------------------- \\
 
   buildFormLink("satisfaction-survey", "customer_satisfaction", true);
 
-  // --- ADD VALIDATION MESSAGES TO STORAGE -------------------------------- \\
+  // --- ADD VALIDATION MESSAGES TO STORAGE --------------------------------- \\
 
   storeDefaultValidationMessages();
 
-  // --- MAP --------------------------------------------------------------- \\
+  // --- MAP ---------------------------------------------------------------- \\
 
   if (document.getElementById("map_container")) {
     do_KDF_Ready_esriMap();
   }
 
-  // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
+  // --- HANDLE LOAD COMPLETED FORM ----------------------------------------- \\
 
   if (kdf.params.ref && kdf.params.token) {
     KDF.showPage("page_review");
@@ -508,13 +601,13 @@ function handleOnReadyEvent(_, kdf) {
     }
   }
 
-  // --- HANDLE FORMAT TITLE CASE ------------------------------------------ \\
+  // --- HANDLE FORMAT TITLE CASE ------------------------------------------- \\
 
   $(".format-title-case").on("change", (event) => {
     $(`#${event.target.id}`).val(formatTitleCase(event.target.value));
   });
 
-  // --- HANDLE FIND BUTTON CLICK ------------------------------------------ \\
+  // --- HANDLE FIND BUTTON CLICK ------------------------------------------- \\
 
   $(".find-btn").on("click", function () {
     if ($(this).text() === "Find address") {
@@ -526,7 +619,7 @@ function handleOnReadyEvent(_, kdf) {
     }
   });
 
-  // --- HANDLE RE-SEARCH ADDRESS ------------------------------------------ \\
+  // --- HANDLE RE-SEARCH ADDRESS ------------------------------------------- \\
 
   $(document).on("click", ".search-again-btn", function () {
     const currentPageId = getCurrentPageId();
@@ -621,7 +714,7 @@ function handleOnReadyEvent(_, kdf) {
     resetAddressSearch();
   });
 
-  // --- HANDLE RE-SEARCH ADDRESS ------------------------------------------ \\
+  // --- HANDLE SET ADDRESS ------------------------------------------------- \\
 
   // The main click event handler
   $(document).on("click", ".set-address-btn", function () {
@@ -805,14 +898,14 @@ function handleOnReadyEvent(_, kdf) {
     }
   });
 
-  // --- HANDLE VEHICLE LOOKUP --------------------------------------------- \\
+  // --- HANDLE VEHICLE LOOKUP ---------------------------------------------- \\
 
   $(".vehicle-details").on("click", (event) => {
     resetVehicleSearch(false);
     showVehicleFields();
   });
 
-  // --- HANDLE FIND CURRENT LOCATION CLICK -------------------------------- \\
+  // --- HANDLE FIND CURRENT LOCATION CLICK --------------------------------- \\
 
   $(".geo-btn").on("click", function () {
     const $button = $(this);
@@ -873,7 +966,7 @@ function handleOnReadyEvent(_, kdf) {
     }
   });
 
-  // --- HANDLE FIND ON MAP CLICK ------------------------------------------ \\
+  // --- HANDLE FIND ON MAP CLICK ------------------------------------------- \\
 
   $(".link-btn.map-icon").on("click", function () {
     $(`.address-search`).find(".dform_validationMessage").hide();
@@ -903,13 +996,13 @@ function handleOnReadyEvent(_, kdf) {
     resetAddressSearch();
   });
 
-  // --- HANDLE LOCATOR BUTTON CLICK --------------------------------------- \\
+  // --- HANDLE LOCATOR BUTTON CLICK ---------------------------------------- \\
 
   $(".locator-btn, .address-btn").click(function () {
     checkAddressHasBeenSet();
   });
 
-  // --- HANDLE CUSTOM DATE ------------------------------------------------ \\
+  // --- HANDLE CUSTOM DATE ------------------------------------------------- \\
 
   $(`.date-field`).find(".dform_validationMessage").hide();
 
@@ -986,7 +1079,7 @@ function handleOnReadyEvent(_, kdf) {
       if (e.type === "focusout") handleDateValidation(parentId, this);
     });
 
-  // --- HANDLE CUSTOM TIME ------------------------------------------------ \\
+  // --- HANDLE CUSTOM TIME ------------------------------------------------- \\
 
   $(".time-hour, .time-minute").on("input", function (e) {
     const $parentTimeField = $(this).closest(".time-field");
@@ -1061,13 +1154,13 @@ function handleOnReadyEvent(_, kdf) {
     }
   });
 
-  // --- HANDLE KEYUP EVENTLISTENER FOR CHECK PROGRESS --------------------- \\
+  // --- HANDLE KEYUP EVENTLISTENER FOR CHECK PROGRESS ---------------------- \\
 
   $("input, textarea").keyup(function () {
     checkPageProgress();
   });
 
-  // --- HANDLE CURRENCY INPUT --------------------------------------------- \\
+  // --- HANDLE CURRENCY INPUT ---------------------------------------------- \\
 
   $(".currency").on("change", function () {
     const currencyField = $(this).data("name");
@@ -1086,33 +1179,15 @@ function handleOnReadyEvent(_, kdf) {
     }
   });
 
-  // --- HANDLE SET REPORTER ----------------------------------------------- \\
+  // --- HANDLE SET REPORTER ------------------------------------------------ \\
 
+  console.log("getParams", KDF.getParams());
   // Check if customer set state is true
-  if (kdf.profileData["customerid"]) {
-    property = formatTitleCase(kdf.profileData["profile-AddressNumber"]);
-    streetName = formatTitleCase(kdf.profileData["profile-AddressLine1"]);
-    fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
-      streetName
-    )}, ${kdf.profileData["profile-AddressLine4"]}, ${
-      kdf.profileData["profile-Postcode"]
-    }`;
-    handleSetReporter(
-      new Date(kdf.profileData["profile-DateOfBirth"]),
-      fullAddress
-    );
-  } else if (KDF.getVal("txt_full_address_about_you")) {
-    property = formatTitleCase(KDF.getVal("txt_property_about_you"));
-    streetName = formatTitleCase(KDF.getVal("txt_street_name_about_you"));
-    fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
-      streetName
-    )}, ${KDF.getVal("txt_city_about_you")}, ${KDF.getVal(
-      "txt_postcode_about_you"
-    )}`;
-    handleSetReporter(new Date(KDF.getVal("dt_date_of_birth")), fullAddress);
+  if (kdf.profileData["customerid"] || KDF.getParams().customerid) {
+    handleSetReporter(new Date(kdf.profileData["profile-DateOfBirth"]), kdf);
   }
 
-  // --- HANDLE CHECK AGENT SET CUSTOMER ----------------------------------- \\
+  // --- HANDLE CHECK AGENT SET CUSTOMER ------------------------------------ \\
 
   $(".submit-btn").on("click", () => {
     const currentPageId = getCurrentPageId();
@@ -1128,7 +1203,7 @@ function handleOnReadyEvent(_, kdf) {
     }
   });
 
-  // --- HANDLE AONYMOUS SUBMITION ----------------------------------------- \\
+  // --- HANDLE AONYMOUS SUBMITION ------------------------------------------ \\
 
   $(".anonymous-btn").on("click", () => {
     KDF.hidePage("page_about_you");
@@ -1155,13 +1230,13 @@ function handleOnReadyEvent(_, kdf) {
     KDF.gotoPage("complete", true, true, false);
   });
 
-  // --- HANDLE SAVE AND EXIT CLICK ---------------------------------------- \\
+  // --- HANDLE SAVE AND EXIT CLICK ----------------------------------------- \\
 
   $(".save-exit-btn").on("click", () => {
     KDF.save();
   });
 
-  // --- HANDLE CLOSE CASE CLICK ------------------------------------------- \\
+  // --- HANDLE CLOSE CASE CLICK -------------------------------------------- \\
 
   function createReviewSection(pageId, pageTitle, fields) {
     let statusCardHtml = `
@@ -1326,7 +1401,7 @@ function handleOnReadyEvent(_, kdf) {
     }
   });
 
-  // --- OHMS -------------------------------------------------------------- \\
+  // --- OHMS --------------------------------------------------------------- \\
 
   if (kdf.params.customerid) {
     KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
@@ -1344,7 +1419,7 @@ function handleOnReadyEvent(_, kdf) {
     }
   });
 
-  // --- HANDLE SIGN IN BUTTTON CLICK -------------------------------------- \\
+  // --- HANDLE SIGN IN BUTTTON CLICK --------------------------------------- \\
 
   $("#dform_widget_button_but_next_sign_in").on("click", function () {
     if (KDF.getVal("rad_sign_in") === "true") {
@@ -1361,7 +1436,7 @@ function handleOnReadyEvent(_, kdf) {
   scrollToTop();
 }
 
-// --- HANDLE ON PAGE CHANGE EVENT ----------------------------------------- \\
+// --- HANDLE ON PAGE CHANGE EVENT ------------------------------------------ \\
 
 function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   KDF.hideMessages();
@@ -1384,7 +1459,11 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
 
   if (pageName === "page_about_you") {
-    if (kdf.access === "agent" && !kdf.form.data?.num_reporter_obj_id) {
+    if (
+      kdf.access === "agent" &&
+      !kdf.profileData["customerid"] &&
+      !KDF.getParams().customerid
+    ) {
       KDF.sendDesktopAction("raised_by");
     }
   }
@@ -1458,10 +1537,10 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   checkPageProgress();
 }
 
-// --- HANDLE ON FIELD CHANGE EVENT ---------------------------------------- \\
+// --- HANDLE ON FIELD CHANGE EVENT ----------------------------------------- \\
 
 function handleFieldChangeEvent(event, kdf, field) {
-  // --- HANDLE FORMAT REMOVE ECCESS WHITE SPACES -------------------------- \\
+  // --- HANDLE FORMAT REMOVE ECCESS WHITE SPACES --------------------------- \\
 
   if (
     field.type === "text" ||
@@ -1484,10 +1563,10 @@ function handleFieldChangeEvent(event, kdf, field) {
   checkPageProgress();
 }
 
-// --- HANDLE ON OPTION SELECTED EVENT ------------------------------------ \\
+// --- HANDLE ON OPTION SELECTED EVENT -------------------------------------- \\
 
 function handleOptionSelectedEvent(event, kdf, field, label, val) {
-  // --- HANDLE SET MULTI CHECK VALUE TO TEXT FIELD ------------------------ \\
+  // --- HANDLE SET MULTI CHECK VALUE TO TEXT FIELD ------------------------- \\
 
   if (field.startsWith("mchk_")) {
     const mchkField = field.replace("[]", "");
@@ -1496,7 +1575,7 @@ function handleOptionSelectedEvent(event, kdf, field, label, val) {
     KDF.setVal(textField, stringValue);
   }
 
-  // --- HANDLE TOGGLE NI NASS --------------------------------------------- \\
+  // --- HANDLE TOGGLE NI NASS ---------------------------------------------- \\
 
   if (field === "chk_no_national_insurance_number") {
     const showNass = $("#dform_widget_chk_no_national_insurance_number").is(
@@ -1508,7 +1587,7 @@ function handleOptionSelectedEvent(event, kdf, field, label, val) {
     ]);
   }
 
-  // --- MAP --------------------------------------------------------------- \\
+  // --- MAP ---------------------------------------------------------------- \\
 
   do_KDF_optionSelected_esriMap(field, label, val);
 
@@ -1516,7 +1595,7 @@ function handleOptionSelectedEvent(event, kdf, field, label, val) {
   checkPageProgress();
 }
 
-// --- HANDLE ON MAP READY EVENT ------------------------------------------ \\
+// --- HANDLE ON MAP READY EVENT -------------------------------------------- \\
 
 function handleMapReadyEvent(
   event,
@@ -1535,7 +1614,7 @@ function handleMapReadyEvent(
   checkPageProgress();
 }
 
-// --- HANDLE ON MAP CLICK EVENT ------------------------------------------ \\
+// --- HANDLE ON MAP CLICK EVENT -------------------------------------------- \\
 
 function handleMapClickEvent(
   event,
@@ -1555,7 +1634,7 @@ function handleMapClickEvent(
   checkPageProgress();
 }
 
-// --- HANDLE ON MAP LAYRE SELECTED EVENT --------------------------------- \\
+// --- HANDLE ON MAP LAYRE SELECTED EVENT ----------------------------------- \\
 
 function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
   const { main_attribute: main, background_attribute: bg } = layerAttributes;
@@ -1598,7 +1677,7 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
   checkPageProgress();
 }
 
-// --- HANDLE CLEAR MAP FIELDS EVENT -------------------------------------- \\
+// --- HANDLE CLEAR MAP FIELDS EVENT ---------------------------------------- \\
 
 function handleClearMapFieldsEvent() {
   setValuesToInputFields([
@@ -1612,7 +1691,7 @@ function handleClearMapFieldsEvent() {
   checkPageProgress();
 }
 
-// --- HANDLE ON OBJECT EVENT --------------------------------------------- \\
+// --- HANDLE ON OBJECT EVENT ----------------------------------------------- \\
 
 function handleObjectIdSet(event, kdf, type, id) {
   KDF.setVal("txt_reporter_obj_type", type);
@@ -1633,13 +1712,7 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
     customerid: id,
   });
 
-  property = formatTitleCase(response["profile-AddressNumber"]);
-  streetName = formatTitleCase(response["profile-AddressLine1"]);
-  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${
-    response["profile-AddressLine4"]
-  }, ${response["profile-Postcode"]}`;
-
-  handleSetReporter(new Date(response["profile-DateOfBirth"]), fullAddress);
+  handleSetReporter(new Date(response["profile-DateOfBirth"]), kdf);
 
   KDF.setVal("eml_address", "");
   KDF.setVal("eml_address", response["profile-Email"].toLowerCase());
@@ -1648,7 +1721,7 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
   checkPageProgress();
 }
 
-// --- HANDLE ON SUCCESSFUL ACTION EVENT ---------------------------------- \\
+// --- HANDLE ON SUCCESSFUL ACTION EVENT ------------------------------------ \\
 
 function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   if (action === "check-for-existing-case-management-form") {
@@ -2015,7 +2088,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     }
   }
 
-  // --- OHMS -------------------------------------------------------------- \\
+  // --- OHMS --------------------------------------------------------------- \\
 
   if (
     action === "retrieve-social-ids" &&
@@ -2066,7 +2139,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     }
   }
 
-  // --- MAP --------------------------------------------------------------- \\
+  // --- MAP ---------------------------------------------------------------- \\
 
   do_KDF_Custom_esriMap(action, response);
 
@@ -2074,7 +2147,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   checkPageProgress();
 }
 
-// --- HANDLE ON FAILED ACTION EVENT -------------------------------------- \\
+// --- HANDLE ON FAILED ACTION EVENT ---------------------------------------- \\
 
 function handleFailedAction(event, action, xhr, settings, thrownError) {
   KDF.hideMessages();
@@ -2093,7 +2166,7 @@ function handleFailedAction(event, action, xhr, settings, thrownError) {
   checkPageProgress();
 }
 
-// --- HANDLE ON SUCCESSFUL SAVE EVENT ------------------------------------ \\
+// --- HANDLE ON SUCCESSFUL SAVE EVENT -------------------------------------- \\
 
 function handleFormSave(event, kdf) {
   KDF.hideMessages();
@@ -2101,13 +2174,13 @@ function handleFormSave(event, kdf) {
   createAndInsertReferenceDisplay(kdf.form.caseid);
 }
 
-// --- HANDLE ON FAILED SAVE EVENT ---------------------------------------- \\
+// --- HANDLE ON FAILED SAVE EVENT ------------------------------------------ \\
 
 function handleFailedSave(event, kdf) {
   KDF.hideMessages();
 }
 
-// --- HANDLE ON COMPLETE EVENT ------------------------------------------- \\
+// --- HANDLE ON COMPLETE EVENT --------------------------------------------- \\
 
 function handleFomComplate(event, kdf) {
   setTimeout(function () {
@@ -2149,7 +2222,7 @@ function handleFomComplate(event, kdf) {
   }
 }
 
-// --- DISPLAY BACK BUTTON ------------------------------------------------ \\
+// --- DISPLAY BACK BUTTON -------------------------------------------------- \\
 
 function displayBackButton(show) {
   const controlContainer = document.getElementById("dform_control_buttons");
@@ -2574,7 +2647,7 @@ function resetVehicleSearch(hideFields = true) {
   }
 }
 
-// --- SHOW VEHICLE FIELDS ------------------------------------------------- \\
+// --- SHOW VEHICLE FIELDS -------------------------------------------------- \\
 
 function showVehicleFields() {
   showHideInputFields([
@@ -3133,7 +3206,7 @@ function updateProgressBar(currentPageIndex) {
 
 // --- SET REPORTER --------------------------------------------------------- \\
 
-function handleSetReporter(date, address) {
+function handleSetReporter(date, kdf) {
   // Set date to input fields and trigger change
   if (date !== "Invalid Date") {
     $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
@@ -3142,6 +3215,8 @@ function handleSetReporter(date, address) {
       .blur();
     $("#dform_widget_num_date_of_birth_yy").val(date.getFullYear()).blur();
   }
+
+  setProfileAddressDetails("dform_page_page_about_you", kdf);
 
   // Hide submit anonymously option and info
   $(".anonymous").hide();
@@ -3305,7 +3380,6 @@ function getAndSetReviewPageData() {
           } else if (fieldType === "multicheckbox") {
             fieldLabel = getLegendText("checkboxgroup");
             const values = KDF.getVal(fieldName);
-
             if (values && values.length > 0) {
               fieldValue = values.join(",<br>");
             } else {
@@ -5355,7 +5429,7 @@ function getValidationMessageFromSession(id) {
   }
 }
 
-// --- TYPE AHEAD SEARCH ------------------------------------------------- \\
+// --- TYPE AHEAD SEARCH ---------------------------------------------------- \\
 
 function buildTypeAhead(inputName, listItems, listItemsOnly = true) {
   const inputId = `dform_widget_${inputName}`;
