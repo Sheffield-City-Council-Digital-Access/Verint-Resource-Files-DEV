@@ -5505,8 +5505,8 @@ const housingOnline = new ContentH(
       Use the following login details to access the system;
     </p>
     <p>
-      Email Address: euxtzklhnprejkqlfy@nespj.com<br>
-      Password: Password1*
+      Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
+      Password: <strong>Password1*</strong>
     </p>
   `,
   { buttonLabel: "", formName: "" },
