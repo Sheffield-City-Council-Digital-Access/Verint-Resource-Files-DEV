@@ -5500,25 +5500,25 @@ const housingOnline = new ContentH(
   `
     // --- DO NOT REMOVE THE COMMENTED OUT SCRIPT BELOW ---
 
-    // <h3>
-    //   Housing Online Login
-    // </h3>
-    // <p>
-    //   Click <a href="https://housing-test.sheffield.gov.uk/ords/houtest4_selfserv/f?p=13000:101::::::" target="_blank">here</a> to access Housing Online.
-    // </p>
-    // <p>
-    //   Use the following login details to access the system:
-    // </p>
-    // <p>
-    //   Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
-    //   Password: <strong>Password1*</strong>
-    // </p>
-    // <h3>
-    //   Report a Housing Online System Issue
-    // </h3>
-    // <p>
-    //   Report a system issue <a href="https://sheffieldcc.uk.4me.com/self-service/requests/new/provide_description?template_id=3549" target="_blank">here</a>.
-    // </p>
+    <!-- <h3>
+      Housing Online Login
+    </h3>
+    <p>
+      Click <a href="https://housing-test.sheffield.gov.uk/ords/houtest4_selfserv/f?p=13000:101::::::" target="_blank">here</a> to access Housing Online.
+    </p>
+    <p>
+      Use the following login details to access the system:
+    </p>
+    <p>
+      Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
+      Password: <strong>Password1*</strong>
+    </p>
+    <h3>
+      Report a Housing Online System Issue
+    </h3>
+    <p>
+      Report a system issue <a href="https://sheffieldcc.uk.4me.com/self-service/requests/new/provide_description?template_id=3549" target="_blank">here</a>.
+    </p> -->
     <h3>
       Housing and Neighbourhoods Digital Ringbinder FAQ
     </h3>
