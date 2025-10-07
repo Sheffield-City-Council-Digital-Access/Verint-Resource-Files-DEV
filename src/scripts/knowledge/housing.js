@@ -5498,22 +5498,37 @@ const housingOnline = new ContentH(
   "Housing Online",
   "Gain access to Housing Online using dummy login details and navigate the system alongside customers, without their personal account.",
   `
+    // <h3>
+    //   Housing Online Login
+    // </h3>
+    // <p>
+    //   Click <a href="https://housing-test.sheffield.gov.uk/ords/houtest4_selfserv/f?p=13000:101::::::" target="_blank">here</a> to access Housing Online.
+    // </p>
+    // <p>
+    //   Use the following login details to access the system:
+    // </p>
+    // <p>
+    //   Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
+    //   Password: <strong>Password1*</strong>
+    // </p>
+    <h3>
+      Report a Housing Online System Issue
+    </h3>
     <p>
-      Click <a href="https://housing-test.sheffield.gov.uk/ords/houtest4_selfserv/f?p=13000:101::::::" target="_blank">here</a> to access Housing Online.
+      Report a system issue <a href="https://sheffieldcc.uk.4me.com/self-service/requests/new/provide_description?template_id=3549" target="_blank">here</a>.
     </p>
+    <h3>
+      Housing and Neighbourhoods Digital Ringbinder FAQ
+    </h3>
     <p>
-      Use the following login details to access the system:
-    </p>
-    <p>
-      Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
-      Password: <strong>Password1*</strong>
+      Access the FAQ <a href="https://sccextranet.sharepoint.com/sites/HousingandNeighbourhoodsDigitalRingbinder/SitePages/Countdown-to-NEC-Housing.aspx?xsdata=MDV8MDJ8fDBhYjVjODE4NTVkYzQyODVjYTIwMDhkZTA1OWU5MDk1fGExYmE1OWI5NzIwNDQ4ZDhhMzYwNzc3MDI0NWFkNGE5fDB8MHw2Mzg5NTQzNzU3MjE4OTY0ODB8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pObFpEaGpZekkyTFdVeE1ESXROR0kyTXkwNFl6TmxMVE5tT0RoaFpqSm1OR0kwTVY5bVlURmpaV0ptWWkwMVpUTTBMVFE1T0RZdFlqZ3pNQzFoTmpnMk9EWTFaV1F3TURCQWRXNXhMbWRpYkM1emNHRmpaWE12YldWemMyRm5aWE12TVRjMU9UZzBNRGMzTVRVNU5BPT18ZjNmYTRiNmQyOTkyNDVhZGNhMjAwOGRlMDU5ZTkwOTV8ODY4NDcwNDM1MzgwNGEwM2IzOGZmZDgwOTQ3MDJhZTM%3d&sdata=OVNTMlBOdjhUK2hvZWgrMVVaTHpyQUFETzk1bFRBazZpYnZVM2t3ZVNnMD0%3d&ovuser=a1ba59b9-7204-48d8-a360-7770245ad4a9%2cNathan.Smith%40sheffield.gov.uk&OR=Teams-HL&CT=1759840780927&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTA5MTExNjAxOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3d%3d&SafelinksUrl=https%3a%2f%2fsccextranet.sharepoint.com%2fsites%2fHousingandNeighbourhoodsDigitalRingbinder%2fSitePages%2fCountdown-to-NEC-Housing.aspx" target="_blank">here</a>.
     </p>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "References", keywords: ["Rent, Housing, Online, Housing Online, Dummy"], categories: ["Housing"] },
-  { date: "03/10/2025", name: "Nathan Smith" }
+  { date: "07/10/2025", name: "Nathan Smith" }
 );
 
 const references = new ContentH(
