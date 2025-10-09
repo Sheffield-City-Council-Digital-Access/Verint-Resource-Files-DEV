@@ -22,6 +22,8 @@
 @import url("./my-requests.css");
 @import url("./my-request-details.css");
 
+@import url("./internal.css");
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {

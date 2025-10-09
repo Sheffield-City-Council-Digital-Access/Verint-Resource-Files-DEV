@@ -1,3 +1,9 @@
+#dform_container div[data-type="html"] {
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 #dform_container input,
 #dform_container select,
 #dform_container textarea,
