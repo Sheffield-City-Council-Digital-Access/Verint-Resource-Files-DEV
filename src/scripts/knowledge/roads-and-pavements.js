@@ -522,10 +522,26 @@ const roadPavementSurface = new FormRaP(
   "road_pavement_surface",
   {
     type: "Report",
-    keywords: ["Road", "pavement", "surface"],
+    keywords: [
+      "road",
+      "pavement",
+      "pave",
+      "ment",
+      "footpath",
+      "foot",
+      "path",
+      "way",
+      "fotpath",
+      "walkway",
+      "walk",
+      "footway",
+      "path",
+      "paving",
+      "surface",
+    ],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
+  { date: "10/10/2025", name: "Liz Taster" }
 );
 
 const reportDeadAnimal = new FormRaP(
