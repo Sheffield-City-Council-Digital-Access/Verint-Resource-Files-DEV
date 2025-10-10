@@ -522,10 +522,26 @@ const roadPavementSurface = new FormRaP(
   "road_pavement_surface",
   {
     type: "Report",
-    keywords: ["Road", "pavement", "surface"],
+    keywords: [
+      "road",
+      "pavement",
+      "pave",
+      "ment",
+      "footpath",
+      "foot",
+      "path",
+      "way",
+      "fotpath",
+      "walkway",
+      "walk",
+      "footway",
+      "path",
+      "paving",
+      "surface",
+    ],
     categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
   },
-  { date: "30/09/2024", name: "Elliott Griffiths" }
+  { date: "10/10/2025", name: "Liz Taster" }
 );
 
 const reportDeadAnimal = new FormRaP(
@@ -572,10 +588,6 @@ const reportHedgePlantGrass = new ContentRaP(
       <p>
         Grass cutting seasons are Spring and Summer. The frequency in which they
         are cut varies from every 2-4 weeks or every year.
-      </p>
-      <p>
-        This is a test update to see if the branch is showing the updates when I sync
-        it and change to my branch
       </p>
       <ul>
         <li>
