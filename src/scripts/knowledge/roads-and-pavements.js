@@ -589,9 +589,6 @@ const reportHedgePlantGrass = new ContentRaP(
         Grass cutting seasons are Spring and Summer. The frequency in which they
         are cut varies from every 2-4 weeks or every year.
       </p>
-      <p>
-        Change made to test update of knowledge
-      </p>
       <ul>
         <li>
           Areas with daffodils or other bulbs are left uncut until early June.
