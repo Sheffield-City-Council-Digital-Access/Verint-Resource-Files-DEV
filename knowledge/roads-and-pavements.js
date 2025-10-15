@@ -531,7 +531,7 @@ const roadPavementSurface = new FormRaP(
 const reportDeadAnimal = new FormRaP(
   "reportDeadAnimal",
   "Dead animal",
-  "Report animals such as dead cats, dogs, sheep, deer, badger or foxes on the highway",
+  "Report animals such as dead cats, dogs, sheep, deer, badger or foxes on the",
   "report_dead_animal",
   {
     type: "Report",
