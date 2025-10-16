@@ -859,14 +859,14 @@ const missingCat = new ContentRaP(
       </p>
       <p>
       Tell us what you would like to know - include the phrase <em>Missing cat details</em> and record the below information:
+      </p>
       <ul>
         <li> Colour or distinct markings; </li>
         <li> Details of a collar, if they were wearing one; </li>
         <li> If the cat was microchipped; </li>
         <li> The location the cat was last seen; </li>
-        <li> Any other noteable information provided by the owner. </li>
+        <li> Any other notable information provided by the owner. </li>
       </ul>
-      </p>
       <p>
       Type of enquiry - select <em>Warm transfer</em>
       </p>
@@ -884,7 +884,7 @@ const missingCat = new ContentRaP(
     formName: "request_highway_info",
   },
   { typeKey: "" },
-  { typeKey: "missing_cat_information_provided" },
+  { typeKey: "roads_information_transferred_to_service" },
   {
     type: "Request",
     keywords: [
@@ -936,6 +936,7 @@ const roadsAndPavements = new ServiceRaP(
     requestClaimsPack,
     requestGritting,
     requestHighwayInfo,
-    reportWaterDrainage
+    reportWaterDrainage,
+    missingCat
   ]
 );
