@@ -63,7 +63,8 @@ const makingAPayment = new ContentP(
   `
     <p>
       It is quick, safe, and secure to make a payment online or using our automated
-      telephone payment line. To do this, you will need:
+      telephone payment line. <br />
+      To do this, you will need:
     </p>
     <ul>
       <li>Ticket reference number (can be found on Gateway)</li>
@@ -2306,36 +2307,23 @@ const utilityPermit = new ContentP(
   "Utility Permit",
   "Learn about the utility permit application process, including costs and how utility companies can apply for permits in Sheffield's city centre.",
   `
-<p>
-  <li>Issued for city centre works taking place by utility companies. E.g. Yorkshire Water, BT, British Gas etc.</li>
-  <li>25 half day cards per book</li>
-  <li>Maximum of 10 books per application</li>
-</p>
 
-<p>Utility Permits are only for major utility companies who need to complete work within the city centre.</p>
-<p>Valid for am/pm slots (not full days).</p>
+<p>Utility Permits are only for major utility companies who need to complete work within the city centre. E.g. Yorkshire Water, BT, British Gas etc.</p>
 
-<p>
-  If a company is working outside the City Centre then they would need a Trade
-  Permit.
-</p>
+<p>Utility Permits are valid for am/pm slots (not full days).</p>
+
+<p> Permits are issued in books of 25 half day cards </p>
+
+<p> A maximum of 10 books can be requested per application </p>
+
+<p> If a company is working outside the City Centre then they would need a Trade Permit. </p>
+
 
 <h4>Costs</h4>
 
 <p class="cost">£193.75 for a book of 25 half day passes.</p>
 
-  <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="For further information and to apply send link to apply online"
-      onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Parking\`
-      "
-    >
-    Send link to review further information
-  </button>
+<p> For further information or to order a Utility Permit please email <a href="mailto:customerservices@sheffield.gov.uk">customerservices@sheffield.gov.uk</a> </p>
   
   <h4>Taranto</h4>
   <p>
@@ -2368,11 +2356,13 @@ const utilityPermit = new ContentP(
       "permmit",
       "permitt",
       "pemit",
-      "premit"
+      "premit",
+      "utility",
+      "utlity"
     ],
     categories: ["Parking"],
   },
-  { date: "29/07/2025", name: "Dinah Williams" }
+  { date: "16/10/2025", name: "Liz Taster" }
 );
 
 const visitorsPermits = new ContentP(
