@@ -880,7 +880,7 @@ const missingCat = new ContentRaP(
     </section>
   `,
   {
-    buttonLabel: "Record details of a missing cat",
+    buttonLabel: "Record details of missing cat",
     formName: "request_highway_info",
   },
   { typeKey: "" },
