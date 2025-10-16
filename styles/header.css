@@ -37,11 +37,23 @@
 .header > .service-header-bar > span {
   font-family: var(--font-family);
   font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-lg);
-  line-height: var(--var-line-height);
+  font-size: var(--font-size-sm);
+  line-height: 1.4;
   color: var(--c-greys-white);
   font-style: normal;
   letter-spacing: 0;
+}
+
+@media screen and (min-width: 368px) {
+  .header > .service-header-bar > span {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header > .service-header-bar > span {
+    font-size: var(--font-size-lg);
+  }
 }
 
 #HeaderAreaInSingleColumnNoNavigationTemplate {

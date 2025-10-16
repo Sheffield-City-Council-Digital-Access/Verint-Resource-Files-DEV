@@ -1,3 +1,9 @@
+#dform_container.dform_agent #dform_holder {
+  display: flex;
+  height: 89vh;
+  flex-direction: column;
+}
+
 #dform_container.dform_agent form.dform {
   flex: 1;
   padding: 3vh 5vw 0;
@@ -5,4 +11,53 @@
 
 #dform_container.dform_agent .container .area .box {
   max-width: 100%;
+}
+
+#dform_container.dform_agent > .service-header-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  background: var(--c-core-brand-primary-darken);
+  padding: var(--spacing-sm) clamp(15px, 5vw, 131px) var(--spacing-xxs) !important;
+}
+
+#dform_container.dform_agent > .service-header-bar > div > a > img {
+  width: 4.375rem;
+}
+
+#dform_container.dform_agent > .service-header-bar > span {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+  line-height: var(--var-line-height);
+  color: var(--c-greys-white);
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+#dform_container.dform_agent #FooterAreaInSingleColumnNoNavigationTemplate {
+  max-width: 100% !important;
+  min-width: 100%;
+  background: var(--c-core-brand-primary-darken);
+  transform: translateY(33px);
+}
+
+#dform_container.dform_agent
+  #FooterAreaInSingleColumnNoNavigationTemplate
+  .footer-copyright {
+  color: var(--c-greys-white);
+}
+
+#dform_container.dform_agent #dform_control_buttons {
+  padding: var(--spacing-sm) clamp(15px, 5vw, 131px) !important;
+}
+
+#dform_container.dform_agent form.dform .dform_widget_field,
+#dform_container.dform_agent form.dform .dform_widget_type_html {
+  margin-block: var(--spacing-xl);
+}
+
+#dform_container.dform_agent form.dform .dform_widget_type_buttonset {
+  margin-block: var(--spacing-xxl);
+  gap: var(--spacing-md);
 }
