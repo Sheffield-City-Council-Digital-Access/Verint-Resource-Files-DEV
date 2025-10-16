@@ -2852,8 +2852,6 @@ const housingOnline = new ContentH(
   "Housing Online",
   "Gain access to Housing Online using dummy login details and navigate the system alongside customers, without their personal account.",
   `
-    <!-- DO NOT REMOVE THE COMMENTED OUT SCRIPT BELOW
-
     <h3>
       Housing Online Login
     </h3>
