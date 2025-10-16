@@ -2866,10 +2866,10 @@ const housingOnline = new ContentH(
       Password: <strong>Password1*</strong>
     </p>
     <p>
-      The letter sent to applicants on the Council housing register <a href="https://sccextranet.sharepoint.com/:w:/r/sites/CustomerServices/_layouts/15/Doc.aspx?sourcedoc=%7BEE7D2102-0D27-48E5-9E68-E8ED0002E140%7D&file=APPLICANTS%20-%20FOR%20PRINT.docx&action=default&mobileredirect=true"target="_blank">here</a>.
+      The letter sent to applicants on the Council housing register can be found <a href="https://sccextranet.sharepoint.com/:w:/r/sites/CustomerServices/_layouts/15/Doc.aspx?sourcedoc=%7BEE7D2102-0D27-48E5-9E68-E8ED0002E140%7D&file=APPLICANTS%20-%20FOR%20PRINT.docx&action=default&mobileredirect=true"target="_blank">here</a>.
     </p>
     <p>
-      The letter sent to Council housing tenants <a href="https://sccextranet.sharepoint.com/:w:/r/sites/CustomerServices/_layouts/15/Doc.aspx?sourcedoc=%7BFF046187-B0AD-4767-A2E3-1390F8B8848F%7D&file=TENANTS%20-%20FOR%20PRINT.docx&action=default&mobileredirect=true"target="_blank">here</a>.
+      The letter sent to Council housing tenants can be found <a href="https://sccextranet.sharepoint.com/:w:/r/sites/CustomerServices/_layouts/15/Doc.aspx?sourcedoc=%7BFF046187-B0AD-4767-A2E3-1390F8B8848F%7D&file=TENANTS%20-%20FOR%20PRINT.docx&action=default&mobileredirect=true"target="_blank">here</a>.
     </p>
     <h3>
       Report a Housing Online System Issue
