@@ -839,6 +839,67 @@ const requestHighwayInfo = new FormRaP(
   { date: "29/01/2025", name: "Elliott Griffiths" }
 );
 
+const missingCat = new ContentRaP(
+  "missingCat",
+  "Missing Cat",
+  "Query if a missing cat has been collected from the highway",
+  `
+    <section>
+      <h3>Record details of missing cat</h3>
+      <p>
+        If a user calls in asking to find out if their missing cat has been collected from the highway, details need to be recorded ready for transferring the call to Amey. <br />
+        The details are recorded on the "Request highway information" form as this ensures this is transferred and logged in the correct way. <br />
+        However, this means that the form is not set up specifically to record the details of the missing cat. Please follow the guidance below when completing the form.
+      </p>
+      <p>
+      Who is making the request - select <em>Member of public</em>
+      </p>
+      <p>
+      What is the request about - select <em>Service or works</em>
+      </p>
+      <p>
+      Tell us what you would like to know - include the phrase <em>Missing cat details</em> and record the below information:
+      <ul>
+        <li> Colour or distinct markings; </li>
+        <li> Details of a collar, if they were wearing one; </li>
+        <li> If the cat was microchipped; </li>
+        <li> The location the cat was last seen; </li>
+        <li> Any other noteable information provided by the owner. </li>
+      </ul>
+      </p>
+      <p>
+      Type of enquiry - select <em>Warm transfer</em>
+      </p>
+      <p>
+      On the <em>About the location</em> screen, log where the cat was last seen. 
+      </p>
+      <p>
+      Log the caller's details and complete a warm transfer.
+      </p>
+  
+    </section>
+  `,
+  {
+    buttonLabel: "Record details of a missing cat",
+    formName: "request_highway_info",
+  },
+  { typeKey: "" },
+  { typeKey: "missing_cat_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "Missing", 
+      "Dead", 
+      "Lost",
+      "Cat",
+      "Cat on Highway"
+    ],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "15/10/2025", name: "Liz Taster" }
+);
+
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
