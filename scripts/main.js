@@ -9,13 +9,16 @@ function logArguments(event, kdf, ...args) {
 }
 
 function scrollToTop() {
-  window.scrollTo(0, 0);
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+  }, 0);
 }
 
 // --- GLOBAL CONSTS AND VARIABLES ----------------------------------------- \\
 
 const { protocol, hostname } = window.location;
-const PORTAL_URL = `${protocol}//${hostname}/site/portal`;
+const portal = "site/portal";
+const PORTAL_URL = `${protocol}/${hostname}/site/portal`;
 
 let formattedTitle = "";
 
@@ -497,10 +500,17 @@ function handleOnReadyEvent(_, kdf) {
     KDF.setVal("txt_start_date_and_time", formatDateTime().utc);
   }
 
-  // --- APPLY INTERNAL SYLE CHANGES ---------------------------------------- \\
+  // --- REMOVE TITLE ATTRIBUTE --------------------------------------------- \\
+
+  const elementsWithTitle = document.querySelectorAll("[title]");
+  elementsWithTitle.forEach((element) => {
+    element.removeAttribute("title");
+  });
 
   if (KDF.kdf().access === "agent") {
     const root = document.documentElement;
+
+    // --- APPLY INTERNAL SYLE CHANGES ---------------------------------------- \\
 
     // --- CHECK AGENT LOCATION --------------------------------------------- \\
 
@@ -999,6 +1009,7 @@ function handleOnReadyEvent(_, kdf) {
   // --- HANDLE LOCATOR BUTTON CLICK ---------------------------------------- \\
 
   $(".locator-btn, .address-btn").click(function () {
+    console.log("Locator button clicked");
     checkAddressHasBeenSet();
   });
 
@@ -1409,28 +1420,32 @@ function handleOnReadyEvent(_, kdf) {
     });
   }
 
-  $("#dform_widget_button_but_view_rent_account").on("click", function () {
-    const customerid =
-      kdf.params.customerid ?? KDF.getVal("num_reporter_obj_id");
-    if (customerid) {
-      createModal("hubScreenRentSummary", "hub_rent_summary", customerid);
-    } else {
-      KDF.showWarning("A customer has not been set.");
-    }
-  });
+  // $("#dform_widget_button_but_view_rent_account").on("click", function () {
+  //   const customerid =
+  //     kdf.params.customerid ?? KDF.getVal("num_reporter_obj_id");
+  //   if (customerid) {
+  //     createModal("hubScreenRentSummary", "hub_rent_summary", customerid);
+  //   } else {
+  //     KDF.showWarning("A customer has not been set.");
+  //   }
+  // });
 
   // --- HANDLE SIGN IN BUTTTON CLICK --------------------------------------- \\
 
   $("#dform_widget_button_but_next_sign_in").on("click", function () {
     if (KDF.getVal("rad_sign_in") === "true") {
-      window.location.href = `${PORTAL_URL}/account/${kdf.form.name}`;
+      window.location.href = `/site/portal/account/${kdf.form.name}`;
     } else {
       KDF.gotoNextPage();
     }
   });
 
+  $("#dform_widget_button_but_register_my_account").on("click", function () {
+    window.open(`/site/portal/home`, "_blank");
+  });
+
   $("#dform_widget_button_but_view_my_requests").on("click", function () {
-    window.location.href = `${PORTAL_URL}/requests`;
+    window.open(`/site/portal/requests`, "_blank");
   });
 
   scrollToTop();
@@ -1745,6 +1760,116 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     // KDF.gotoNextPage();
   }
 
+  // if (
+  //   action === "search-local-address" ||
+  //   action === "search-national-address"
+  // ) {
+  //   let targetPageId = getCurrentPageId();
+  //   if (targetPageId === "dform_page_page_about_you") {
+  //     KDF.setWidgetRequired("sel_search_results_about_you");
+  //   }
+  //   //   if (initialProfileAddressLoad === true) {
+  //   //     initialProfileAddressLoad = false;
+  //   //     targetPageId = "dform_page_page_about_you";
+  //   //     setTimeout(function () {
+  //   //       setProfileAddressDetails(targetPageId, kdf);
+  //   //       KDF.setWidgetNotRequired("sel_search_results_about_you");
+  //   //     }, 0);
+  //   //   }
+
+  //   if (action === "search-local-address") {
+  //     addressSearchType[targetPageId] = "local";
+  //   }
+  //   if (action === "search-national-address") {
+  //     addressSearchType[targetPageId] = "national";
+  //   }
+
+  //   const { propertySearchResult } = response.data;
+  //   // if (propertySearchResult.length > 0) {
+  //   const formattedSearchResult = propertySearchResult.map((addressLine) => {
+  //     // Create a copy to avoid mutating the original object
+  //     const newAddressLine = { ...addressLine };
+  //     const parts = newAddressLine.label.split(",");
+  //     newAddressLine.label =
+  //       formatTitleCase(parts[0]) + "," + parts.slice(1).join(",");
+  //     return newAddressLine;
+  //   });
+  //   setValuesToInputFields([
+  //     { alias: "searchResult", value: formattedSearchResult },
+  //   ]);
+
+  //   const numberOfResults = propertySearchResult
+  //     ? propertySearchResult.length
+  //     : 0;
+
+  //   const searchInput = document.querySelector(
+  //     `#${targetPageId} input[data-customalias="postcode"]`
+  //   );
+  //   let searchButton = document.querySelector(
+  //     `#${targetPageId} .address-search-btn`
+  //   );
+
+  //   const resultsList = document.querySelector(
+  //     `#${targetPageId} .address-search-results`
+  //   );
+
+  //   let resultsLabelId = null;
+  //   if (resultsList) {
+  //     const labelElement = resultsList.querySelector("label");
+  //     if (labelElement) {
+  //       resultsLabelId = labelElement.id;
+  //     }
+  //   }
+
+  //   let manualAddressElement = document.querySelector(
+  //     `#${targetPageId} .manual-address-container`
+  //   );
+  //   let setAddressButton = document.querySelector(
+  //     `#${targetPageId} .set-address-btn`
+  //   );
+  //   const searchedPostcode = searchInput ? searchInput.value : "";
+
+  //   const resultsContent = `
+  //       ${numberOfResults} addresses found for <strong>${searchedPostcode}</strong>.
+  //       <button type="button" class="search-again-btn link-btn">Search again</button>
+  //     `;
+
+  //   if (resultsList && searchInput && searchButton) {
+  //     let searchStatusMessageElement = document.getElementById(resultsLabelId);
+  //     if (searchStatusMessageElement) {
+  //       searchStatusMessageElement.innerHTML = resultsContent;
+  //     }
+
+  //     let selectElement = resultsList.querySelector("select");
+  //     if (selectElement) {
+  //       selectElement.style.display = "block"; // Shows the element
+  //     }
+
+  //     searchButton = searchButton.id.replace("dform_widget_button_", "");
+
+  //     if (manualAddressElement) {
+  //       manualAddressElement = manualAddressElement.id.replace(
+  //         "dform_widget_html_",
+  //         ""
+  //       );
+  //     }
+  //     if (setAddressButton) {
+  //       setAddressButton = setAddressButton.id.replace(
+  //         "dform_widget_button_",
+  //         ""
+  //       );
+  //     }
+
+  //     hideShowMultipleElements([
+  //       { name: searchInput.name, display: "hide" },
+  //       { name: searchButton, display: "hide" },
+  //       { name: resultsList.dataset.name, display: "show" },
+  //       { name: manualAddressElement, display: "show" },
+  //       { name: setAddressButton, display: "show" },
+  //     ]);
+  //   }
+  // }
+
   if (
     action === "search-local-address" ||
     action === "search-national-address"
@@ -1753,14 +1878,14 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     if (targetPageId === "dform_page_page_about_you") {
       KDF.setWidgetRequired("sel_search_results_about_you");
     }
-    if (initialProfileAddressLoad === true) {
-      initialProfileAddressLoad = false;
-      targetPageId = "dform_page_page_about_you";
-      setTimeout(function () {
-        setProfileAddressDetails(targetPageId, kdf);
-        KDF.setWidgetNotRequired("sel_search_results_about_you");
-      }, 0);
-    }
+    //   if (initialProfileAddressLoad === true) {
+    //     initialProfileAddressLoad = false;
+    //     targetPageId = "dform_page_page_about_you";
+    //     setTimeout(function () {
+    //       setProfileAddressDetails(targetPageId, kdf);
+    //       KDF.setWidgetNotRequired("sel_search_results_about_you");
+    //     }, 0);
+    //   }
 
     if (action === "search-local-address") {
       addressSearchType[targetPageId] = "local";
@@ -1770,9 +1895,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     }
 
     const { propertySearchResult } = response.data;
-    // if (propertySearchResult.length > 0) {
     const formattedSearchResult = propertySearchResult.map((addressLine) => {
-      // Create a copy to avoid mutating the original object
       const newAddressLine = { ...addressLine };
       const parts = newAddressLine.label.split(",");
       newAddressLine.label =
@@ -1797,6 +1920,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     const resultsList = document.querySelector(
       `#${targetPageId} .address-search-results`
     );
+
     let resultsLabelId = null;
     if (resultsList) {
       const labelElement = resultsList.querySelector("label");
@@ -1814,9 +1938,9 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     const searchedPostcode = searchInput ? searchInput.value : "";
 
     const resultsContent = `
-        ${numberOfResults} addresses found for <strong>${searchedPostcode}</strong>.
-        <button type="button" class="search-again-btn link-btn">Search again</button>
-      `;
+    ${numberOfResults} addresses found for <strong>${searchedPostcode}</strong>.
+    <button type="button" class="search-again-btn link-btn">Search again</button>
+  `;
 
     if (resultsList && searchInput && searchButton) {
       let searchStatusMessageElement = document.getElementById(resultsLabelId);
@@ -1827,6 +1951,11 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       let selectElement = resultsList.querySelector("select");
       if (selectElement) {
         selectElement.style.display = "block"; // Shows the element
+
+        // Add placeholder if no results found
+        if (numberOfResults === 0) {
+          selectElement.innerHTML = `<option value="">No results found</option>`;
+        }
       }
 
       searchButton = searchButton.id.replace("dform_widget_button_", "");
@@ -2090,54 +2219,54 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
   // --- OHMS --------------------------------------------------------------- \\
 
-  if (
-    action === "retrieve-social-ids" &&
-    response.data["profile-socialId-ohms"]
-  ) {
-    const screen =
-      kdf.form.name === "hub_rent_summary" ? "RNT1" : "personDetails";
-    const agentId = response.data.agendId;
-    const ohmsId = response.data["profile-socialId-ohms"];
+  // if (
+  //   action === "retrieve-social-ids" &&
+  //   response.data["profile-socialId-ohms"]
+  // ) {
+  //   const screen =
+  //     kdf.form.name === "hub_rent_summary" ? "RNT1" : "personDetails";
+  //   const agentId = response.data.agendId;
+  //   const ohmsId = response.data["profile-socialId-ohms"];
 
-    const url = `${response.data.url}?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
-    const iframe = document.createElement("iframe");
+  //   const url = `${response.data.url}?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
+  //   const iframe = document.createElement("iframe");
 
-    iframe.id = "ifrm1";
-    iframe.width = "100%";
-    iframe.height = screen === "RNT1" ? "521" : "725";
-    iframe.src = url;
+  //   iframe.id = "ifrm1";
+  //   iframe.width = "100%";
+  //   iframe.height = screen === "RNT1" ? "521" : "725";
+  //   iframe.src = url;
 
-    const container = document.getElementById("hub-screen-container");
+  //   const container = document.getElementById("hub-screen-container");
 
-    if (container) {
-      container.innerHTML = "";
-      container.appendChild(iframe);
+  //   if (container) {
+  //     container.innerHTML = "";
+  //     container.appendChild(iframe);
 
-      hideShowMultipleElements([
-        { name: "ahtm_hub_screen", display: "show" },
-        { name: "area_about_you", display: "hide" },
-        { name: "area_address_lookup_about_you", display: "hide" },
-        { name: "area_address_details_about_you", display: "hide" },
-        { name: "but_view_rent_account", display: ohmsId ? "show" : "hide" },
-      ]);
-    }
+  //     hideShowMultipleElements([
+  //       { name: "ahtm_hub_screen", display: "show" },
+  //       { name: "area_about_you", display: "hide" },
+  //       { name: "area_address_lookup_about_you", display: "hide" },
+  //       { name: "area_address_details_about_you", display: "hide" },
+  //       { name: "but_view_rent_account", display: ohmsId ? "show" : "hide" },
+  //     ]);
+  //   }
 
-    if (kdf.access === "agent") {
-      setTimeout(() => {
-        KDF.customdata(
-          "retrieve-council-housing-property-details",
-          "_KDF_custom",
-          true,
-          true,
-          {
-            propertId: KDF.getVal("txt_uprn_about_you"),
-            property: KDF.getVal("txt_property_about_you"),
-            postcode: KDF.getVal("txt_postcode_about_you"),
-          }
-        );
-      }, 500);
-    }
-  }
+  // if (kdf.access === "agent") {
+  //   setTimeout(() => {
+  //     KDF.customdata(
+  //       "retrieve-council-housing-property-details",
+  //       "_KDF_custom",
+  //       true,
+  //       true,
+  //       {
+  //         propertId: KDF.getVal("txt_uprn_about_you"),
+  //         property: KDF.getVal("txt_property_about_you"),
+  //         postcode: KDF.getVal("txt_postcode_about_you"),
+  //       }
+  //     );
+  //   }, 500);
+  // }
+  // }
 
   // --- MAP ---------------------------------------------------------------- \\
 
@@ -2426,7 +2555,7 @@ function checkPageProgress() {
 
   // Check if any other required fields are empty or invalid
   const hasEmptyOrInvalidOtherFields = otherFields.some((el) => {
-    let isEmpty = el.value.trim() === "" || el.value === "Please select...";
+    let isEmpty = el.value.trim() === "" || el.value === "Please select";
     let isValid = el.checkValidity();
     const name = el.name;
     if (
@@ -3544,130 +3673,144 @@ function closeCase() {
 
 function checkAddressHasBeenSet(action = "next page") {
   const currentPageId = getCurrentPageId();
-  const selectedAddressSpan = document.querySelector(
-    `#${currentPageId} #selected-address`
-  );
-  const fullAddress = document.querySelector(
-    `#${currentPageId} input[data-customalias="fullAddress"]`
-  );
-  const fullAddressHasValue = KDF.getVal(fullAddress.name) ? true : false;
-  const siteName = document.querySelector(
-    `#${currentPageId} input[data-customalias="siteName"]`
-  );
-  const siteCode = document.querySelector(
-    `#${currentPageId} input[data-customalias="siteCode"]`
-  );
 
-  if (fullAddressHasValue) {
-    if (siteName && siteCode) {
-      const siteNameHasValue = KDF.getVal(siteName.name) ? true : false;
-      const siteCodeHasValue = KDF.getVal(siteCode.name) ? true : false;
-      const validSiteCode = acceptGMSites
-        ? true
-        : KDF.getVal(siteCode.name).startsWith("344")
-        ? true
-        : false;
-      if (siteNameHasValue && siteCodeHasValue && validSiteCode) {
-        if (action === "submit") {
-          KDF.gotoPage("complete", true, true, false);
-        } else {
-          KDF.gotoNextPage();
-        }
-      } else {
-        const errorMessage = acceptGMSites
-          ? defaultSelectedAddressMessage
-          : "Choose a location on the public highway";
-        if (selectedAddressSpan) {
-          selectedAddressSpan.textContent = errorMessage;
-          selectedAddressSpan.classList.add("dform_validationMessage");
-          selectedAddressSpan.style.display = "block";
-        }
-        $("#map_container").addClass("map_container_error");
-      }
-    } else {
-      if (action === "submit") {
-        KDF.gotoPage("complete", true, true, false);
-      } else {
-        KDF.gotoNextPage();
-      }
+  // Helper: Get element by custom alias
+  const getInput = (alias) =>
+    document.querySelector(
+      `#${currentPageId} input[data-customalias="${alias}"]`
+    );
+
+  // Helper: Show error on selected address span
+  function showSelectedAddressError(message) {
+    const selectedAddressSpan = document.querySelector(
+      `#${currentPageId} #selected-address`
+    );
+    if (selectedAddressSpan) {
+      selectedAddressSpan.textContent = message;
+      selectedAddressSpan.classList.add("dform_validationMessage");
+      selectedAddressSpan.style.display = "block";
     }
-  } else {
+    $("#map_container").addClass("map_container_error");
+  }
+
+  // Helper: Show error on field
+  function showFieldError(container, field, message) {
+    const validationMessage = container?.querySelector(
+      ".dform_validationMessage"
+    );
+    if (validationMessage) {
+      validationMessage.style.display = "block";
+      validationMessage.textContent = message;
+    }
+    field?.classList.add("dform_fielderror");
+  }
+
+  // Helper: Go to next or complete page
+  function goNextOrComplete() {
+    if (action === "submit") {
+      KDF.gotoPage("complete", true, true, false);
+    } else {
+      KDF.gotoNextPage();
+    }
+  }
+
+  // Address Section
+  function handleAddressSection() {
+    const fullAddress = getInput("fullAddress");
+    const fullAddressHasValue = fullAddress && KDF.getVal(fullAddress.name);
+
+    let siteName = getInput("siteName");
+    if (!siteName) siteName = getInput("streetName");
+    let siteCode = getInput("siteCode");
+    if (!siteCode) siteCode = getInput("usrn");
+
+    if (fullAddressHasValue) {
+      if (siteName && siteCode) {
+        const siteNameHasValue = KDF.getVal(siteName.name);
+        const siteCodeVal = KDF.getVal(siteCode.name);
+        const siteCodeHasValue = siteCodeVal;
+        const validSiteCode = acceptGMSites
+          ? true
+          : siteCodeVal && siteCodeVal.startsWith("344");
+        if (siteNameHasValue && siteCodeHasValue && validSiteCode) {
+          goNextOrComplete();
+        } else {
+          const errorMessage = acceptGMSites
+            ? defaultSelectedAddressMessage
+            : "Choose a location on the public highway";
+          showSelectedAddressError(errorMessage);
+        }
+      } else {
+        goNextOrComplete();
+      }
+      return true; // Address section handled
+    }
+    return false; // Move to next section
+  }
+
+  // Map Section
+  function handleMapSection() {
     const mapElement = document.querySelector(
       `#${currentPageId} .map-container`
     );
-    let detailsElement = undefined;
-    if (mapElement) {
-      detailsElement = mapElement.querySelector(".details-accordion");
-    }
+    const detailsElement = mapElement?.querySelector(".details-accordion");
 
-    // Check if the map element exists on the page
     if (mapElement && detailsElement && detailsElement.hasAttribute("open")) {
       const errorMessage = acceptGMSites
         ? defaultSelectedAddressMessage
         : "Choose a location on the public highway";
-      if (selectedAddressSpan) {
-        selectedAddressSpan.textContent = errorMessage;
-        selectedAddressSpan.classList.add("dform_validationMessage");
-        selectedAddressSpan.style.display = "block";
+      showSelectedAddressError(errorMessage);
+      return true; // Map section handled
+    }
+    return false; // Move to next section
+  }
+
+  // Geo Section
+  function handleGeoSection() {
+    const searchResult = document.querySelector(
+      `#${currentPageId} select[data-customalias="searchResult"]`
+    );
+    const isSearchResultVisible =
+      searchResult && searchResult.offsetParent !== null;
+
+    if (isSearchResultVisible) {
+      const searchResultContainer = searchResult.closest(".dform_widget_field");
+      const selectedValue = searchResult.value;
+      let message = "Select the address";
+      if (selectedValue !== "" && selectedValue !== "Please select...") {
+        message = "Click use this address";
       }
-      $("#map_container").addClass("map_container_error");
+      showFieldError(searchResultContainer, searchResult, message);
     } else {
-      const searchResult = document.querySelector(
-        `#${currentPageId} select[data-customalias="searchResult"]`
-      );
+      const postcode = getInput("postcode");
+      const postcodeContainer = postcode?.closest(".dform_widget_field");
+      const isPostcodeRequired =
+        postcodeContainer?.classList.contains("dform_required") ||
+        postcode?.hasAttribute("required");
+      const postcodeHasValue = postcode && KDF.getVal(postcode.name);
+      let message = "Enter the postcode";
+      if (postcodeHasValue) {
+        message = "Click find address";
+      }
 
-      const isSearchResultVisible = searchResult.offsetParent !== null;
-      if (isSearchResultVisible) {
-        const searchResultContainer = searchResult.closest(
-          ".dform_widget_field"
-        );
-        const validationMessage = searchResultContainer?.querySelector(
-          ".dform_validationMessage"
-        );
-        const selectedValue = searchResult.value;
-        let message = "Select the address";
-
-        if (selectedValue !== "" && selectedValue !== "Please select...") {
-          message = "Click use this address";
-        }
-        if (validationMessage) {
-          validationMessage.style.display = "block";
-          validationMessage.textContent = message;
-        }
-        searchResult.classList.add("dform_fielderror");
+      if (!isPostcodeRequired && !postcodeHasValue) {
+        goNextOrComplete();
       } else {
-        const postcode = document.querySelector(
-          `#${currentPageId} input[data-customalias="postcode"]`
-        );
-        const postcodeContainer = postcode?.closest(".dform_widget_field");
-        const isPostcodeRequired =
-          postcodeContainer?.classList.contains("dform_required") ||
-          postcode?.hasAttribute("required");
-        const validationMessage = postcodeContainer?.querySelector(
-          ".dform_validationMessage"
-        );
-        const postcodeHasValue = postcode ? KDF.getVal(postcode.name) : false;
-        let message = "Enter the postcode";
-        if (postcodeHasValue) {
-          message = "Click find address";
-        }
-
-        if (!isPostcodeRequired && !postcodeHasValue) {
-          if (action === "submit") {
-            KDF.gotoPage("complete", true, true, false);
-          } else {
-            KDF.gotoNextPage();
-          }
-        } else {
-          if (validationMessage) {
-            validationMessage.style.display = "block";
-            validationMessage.textContent = message;
-          }
-          postcode?.classList.add("dform_fielderror");
-        }
+        showFieldError(postcodeContainer, postcode, message);
       }
     }
   }
+
+  // Main logic: run sections in order
+  console.log("Main logic: running sections in order");
+  if (!handleAddressSection()) {
+    if (!handleMapSection()) {
+      handleGeoSection();
+    }
+  }
+
+  KDF.checkProgress();
+  console.log("KDF.checkProgress called");
 }
 
 function setProfileAddressDetails(targetPageId, kdf) {
@@ -4203,8 +4346,6 @@ function mapClick(evt) {
     { alias: "fullAddress", value: "" },
     { alias: "uprn", value: "" },
     { alias: "usrn", value: "" },
-    { alias: "siteName", value: "" },
-    { alias: "siteCode", value: "" },
   ]);
 
   const selectedAddressSpan = document.querySelector(
@@ -5767,7 +5908,7 @@ function buildMyAccountLink(referenceNumber) {
   }
 
   // Construct the new URL using the base URL and reference number.
-  const newHref = `${PORTAL_URL}/requests?srid=${referenceNumber}`;
+  const newHref = `/site/portal/requests?srid=${referenceNumber}`;
 
   // Update the href attribute of the existing link.
   linkElement.setAttribute("href", newHref);
@@ -5792,7 +5933,7 @@ function buildFormLink(id, formName, includeFormTitle = false) {
   const titleParameter = includeFormTitle
     ? `?formTitle=${KDF.getVal("le_title").replace(/\s+/g, "-")}`
     : "";
-  const newHref = `${PORTAL_URL}//${hostname}/form/${formName}${titleParameter}`;
+  const newHref = `/site/portal/form/${formName}${titleParameter}`;
 
   // Update the href attribute
   linkElement.setAttribute("href", newHref);

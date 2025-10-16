@@ -108,6 +108,8 @@
 #NavigationAreaInSingleColumnTemplate button.back-btn,
 #dform_container button.back-btn {
   margin-right: auto !important;
+  border-radius: 0 !important;
+  color: var(--c-links-link) !important;
 }
 
 #NavigationAreaInSingleColumnTemplate button.back-btn > .back-btn--text,
@@ -143,7 +145,7 @@ button.back-btn:hover #dform_container button.back-btn:hover {
 }
 
 #dform_container #dform_print::before {
-  content: url(../icons/sheffield-action-icons-black/PRINT.svg);
+  content: url(../icons/PRINT.svg);
   width: var(--font-size-base);
   line-height: var(--line-height);
   transform: translateY(2px);
@@ -175,9 +177,9 @@ button.back-btn:hover #dform_container button.back-btn:hover {
   color: var(--c-greys-black) !important;
   background: var(--c-focus-links) !important;
   text-decoration: none !important;
-  border-radius: unset !important;
+  border-radius: 0 !important;
   outline: none;
-  border-bottom: 2px solid var(--c-greys-black);
+  box-shadow: inset 0 -2px 0 0 var(--c-greys-black) !important;
 }
 
 #NavigationAreaInSingleColumnTemplate button.back-btn:focus::before,
@@ -191,6 +193,7 @@ button.back-btn:hover #dform_container button.back-btn:hover {
   color: var(--c-greys-black) !important;
   background: var(--c-focus-links);
   text-decoration: none !important;
+  box-shadow: inset 0 -2px 0 0 var(--c-greys-black) !important;
 }
 
 #dform_controls > div.container > div:nth-child(1) {

@@ -35,6 +35,35 @@ h6,
   font-weight: var(--font-weight-semibold);
 }
 
+h1:focus,
+.header1:focus,
+#dform_container h1:focus,
+#dform_container .header1:focus,
+h2:focus,
+.header2:focus,
+#dform_container h2:focus,
+#dform_container .header2:focus,
+h3:focus,
+.header3:focus,
+#dform_container h3:focus,
+#dform_container .header3:focus,
+h4:focus,
+.header4:focus,
+#dform_container h4:focus,
+#dform_container .header4:focus,
+h5:focus,
+.header5:focus,
+#dform_container h5:focus,
+#dform_container .header5:focus,
+h6:focus,
+.header6:focus,
+#dform_container h6:focus,
+#dform_container .header6:focus {
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 #dform_container .make-header fieldset.radiogroup > legend,
 #dform_container .make-header fieldset.checkboxgroup > legend {
   margin-top: 0;
@@ -51,16 +80,16 @@ h1,
 #dform_container h1,
 #dform_container .header1,
 #dform_container fieldset.area > legend,
-#dform_container div .header2 {
+#dform_container div .header2,
+#dform_container .make-header > div > label,
+#dform_container .make-header fieldset.radiogroup > legend,
+#dform_container .make-header fieldset.checkboxgroup > legend {
   font-size: var(--font-size-responsive-header);
 }
 h2,
 .header2,
 #dform_container h2,
-#dform_container .header2,
-#dform_container .make-header > div > label,
-#dform_container .make-header fieldset.radiogroup > legend,
-#dform_container .make-header fieldset.checkboxgroup > legend {
+#dform_container .header2 {
   font-size: var(--font-size-xxxl);
 }
 h3,
@@ -139,18 +168,18 @@ a.secondary-link:hover,
   text-decoration-thickness: 2px;
 }
 
-a:focus, 
+a:focus,
 #dform_container a:focus,
 a.secondary-link:focus,
 #dform_container a.secondary-link:focus,
-a:active, 
+a:active,
 #dform_container a:active,
 a.secondary-link:active,
 #dform_container a.secondary-link:active {
   outline: none !important;
   color: var(--c-greys-black) !important;
   background: var(--c-focus-links) !important;
-  box-shadow: inset 0 -2px 0 0 var(--c-greys-black)!important;
+  box-shadow: inset 0 -2px 0 0 var(--c-greys-black) !important;
   text-decoration: none !important;
 }
 
@@ -247,7 +276,6 @@ li,
 #dform_container .confirmation-panel p {
   font-size: var(--font-size-confirmation-text);
   color: var(--c-greys-white);
-  
 }
 
 #dform_container .confirmation-panel p.reference {

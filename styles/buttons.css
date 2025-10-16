@@ -90,9 +90,12 @@
 #dform_container button.link-btn,
 #dform_container button.secondary-link-btn,
 #dform_container button.action-link-btn {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--font-size-xs);
   align-items: center;
   justify-content: start;
+  text-align: start;
   min-width: fit-content;
   width: fit-content;
   max-width: fit-content;
@@ -126,7 +129,6 @@
   justify-content: center;
   height: var(--field-height-md);
   width: var(--field-height-md);
-  margin-right: 1rem;
   padding: 0.8rem;
   background: var(--c-core-brand-accent-2);
   border-radius: 100%;
@@ -155,7 +157,7 @@
   outline: none !important;
 }
 
-#dform_container button.teal-btn:hover{
+#dform_container button.teal-btn:hover {
   color: var(--c-greys-white);
   background: var(--c-core-brand-primary-darken);
   border-color: var(--c-core-brand-primary-darken);
@@ -191,7 +193,8 @@
   text-decoration: underline;
 }
 
-#dform_container .dform_widget_type_buttonset.action-link-btn-container:focus-within {
+#dform_container
+  .dform_widget_type_buttonset.action-link-btn-container:focus-within {
   width: max-content;
   background: var(--c-focus-links);
   /* border-bottom: 2px solid var(--c-greys-black); */
@@ -200,7 +203,7 @@
 #dform_container a.link-btn:focus,
 #dform_container a.link-btn:active,
 #dform_container button.link-btn:focus,
-#dform_container button.secondary-link-btn:focus, 
+#dform_container button.secondary-link-btn:focus,
 #dform_container button.action-link-btn:focus {
   color: var(--c-greys-black);
   background: var(--c-focus-links);
@@ -213,4 +216,8 @@
 #dform_container button.action-link-btn:focus::before {
   content: url(../icons/arrow-right-focus-link.svg);
   background: var(--c-greys-black);
+}
+
+#dform_container button.dform_widget_type_button {
+  transition: none !important;
 }
