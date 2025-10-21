@@ -3192,21 +3192,25 @@ const animalControl = new ContentPaN(
       </summary>
       <div class="details-accordion-content">
         <p>
-          You can adopt a dog from Spring Street Kennels.
+          Our kennel staff are experienced in matching unwanted dogs with new owners. 
+          If you feel that you could give a home to a new pet they would like to hear from you. 
+          The staff will listen to your preferences and suggest the sort of pet that would suit you best.
+           If we have suitable dogs the staff can arrange for you to seem them. 
+           Please note that if you are visiting to adopt, you must make an appointment before you visit.
         </p>
         <p>
-          If you would like to make an enquiry, please call them on 
-          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2726758')">0114 2726758</a> or
-          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0781 7497995')">0781 7497995</a>
+          If you would like to make an enquiry, please call them on
+          
+        <a href="#" class="telephoneNumber" onclick="copyToClipboard('0781 7497995')">0781 7497995</a>
         </p>
         <address>
           <strong>Address:</strong><br>
-          Bower Spring <br>
-          Sheffield <br> 
-          S3 8PB
+          RSPCA Animal Shelter <br>
+          2, Stadium Way <br> 
+          S9 3HN
         </address>
         <p>
-          <strong><i>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</i>
+          <strong><i>Opening hours:</strong>10am to 3pm on Monday, Tuesday, Thursday, Friday and Saturday.</i>
         </p>
       </div>
     </details>
@@ -3217,21 +3221,25 @@ const animalControl = new ContentPaN(
       </summary>
       <div class="details-accordion-content">
         <p>
-          Spring Street Kennels offers a micro-chipping service.
+          Our kennel staff are experienced in matching unwanted dogs with new owners. 
+          If you feel that you could give a home to a new pet they would like to hear from you. 
+          The staff will listen to your preferences and suggest the sort of pet that would suit you best.
+          If we have suitable dogs the staff can arrange for you to seem them. 
+          Please note that if you are visiting to adopt, you must make an appointment before you visit.
         </p>
         <p>
           If you would like to take up this service, please call them on 
-          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2726758')">0114 2726758</a> or
-          <a href="#" class="telephoneNumber" onclick="copyToClipboard('07817 497995')">07817 497995</a>.
+          
+          <a href="#" class="telephoneNumber" onclick="copyToClipboard('0781 7497995')">0781 7497995</a>.
         </p>
         <address>
           <strong>Address:</strong><br>
-          Bower Spring <br> 
-          Sheffield <br> 
-          S3 8PB
+          RSPCA Animal Shelter <br>
+          2, Stadium Way <br> 
+          S9 3HN
         </address>
         <p>
-          <strong><i>Opening hours:</strong> 8:30am till 8:00pm - 7 Days a week</i>
+          <strong><i>Opening hours:</strong>10am to 3pm on Monday, Tuesday, Thursday, Friday and Saturday.</i>
         </p>
       </div>
     </details>    
@@ -3531,7 +3539,7 @@ const animalControl = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "24/09/2025", name: "Shahzad Athar" }
+  { date: "21/10/2025", name: "Motolani Akinola" }
 );
 
 const abandonedVehicles = new ContentPaN(
