@@ -3196,7 +3196,7 @@ const animalControl = new ContentPaN(
           If you feel that you could give a home to a new pet they would like to hear from you. 
           The staff will listen to your preferences and suggest the sort of pet that would suit you best.
            If we have suitable dogs the staff can arrange for you to seem them. 
-           Please note that if you are visiting to adopt, you must make an appointment before you visit
+           Please note that if you are visiting to adopt, you must make an appointment before you visit.
         </p>
         <p>
           If you would like to make an enquiry, please call them on
