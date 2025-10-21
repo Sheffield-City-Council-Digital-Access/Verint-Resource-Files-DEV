@@ -3539,7 +3539,7 @@ const animalControl = new ContentPaN(
       "Environmental Health",
     ],
   },
-  { date: "24/09/2025", name: "Shahzad Athar" }
+  { date: "21/10/2025", name: "Motolani Akinola" }
 );
 
 const abandonedVehicles = new ContentPaN(
