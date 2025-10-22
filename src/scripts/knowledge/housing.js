@@ -6027,6 +6027,21 @@ const adaptation = new ContentH(
   "Adaptation",
   "Property modifications for accessibility or efficiency",
   `
+  <h2>Types of Adaptations</h2>
+ 
+<p>Home adaptations are changes made to a person's home to help them manage everyday tasks more easily
+and safely. These might include:</p>
+ 
+<ul>
+   <li>Widening doorways to allow wheelchair access</li>
+   <li>Installing a level-access (walk-in) shower</li>
+   <li>Adding a downstairs toilet</li>
+   <li>Lowering kitchen worktops for easier reach</li>
+   <li>Adjusting heating or lighting controls for accessibility</li>
+</ul>
+ 
+<p>These adaptations can help people live more independently and stay in their own homes for longer.</p>
+
   <h2>Handrails</h2>
     <p>For Council Housing properties, refer the customer to 
   
@@ -6090,22 +6105,6 @@ const adaptation = new ContentH(
   <p>
 		Adaptations: <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734908')">0114 2734908</a><br>
 </p>
-
-<h2>Types of Adaptations</h2>
- 
-<p>Home adaptations are changes made to a person's home to help them manage everyday tasks more easily
-and safely. These might include:</p>
- 
-<ul>
-   <li>Widening doorways to allow wheelchair access</li>
-   <li>Installing a level-access (walk-in) shower</li>
-   <li>Adding a downstairs toilet</li>
-   <li>Lowering kitchen worktops for easier reach</li>
-   <li>Adjusting heating or lighting controls for accessibility</li>
-</ul>
- 
-<p>These adaptations can help people live more independently and stay in their own homes for longer.</p>
-
 
   `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
