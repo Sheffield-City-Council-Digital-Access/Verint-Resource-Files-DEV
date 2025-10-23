@@ -847,8 +847,10 @@ const missingCat = new ContentRaP(
     <section>
       <h3>Record details of missing cat</h3>
       <p>
-        If a user calls in asking to find out if their missing cat has been collected from the highway, details need to be recorded ready for transferring the call to Amey. <br />
-        When you click on the <em>Record details of missing cat </em> button below, this opens the "highway information" form. Recording the details there ensures it is transferred to Amey and logged in the correct way. 
+        If a customer calls in asking to find out if their missing cat has been collected from the highway, details need to be recorded ready for transferring the call to Amey.
+      </p>
+      <p>
+        When you click on the <em>Record details of missing cat </em> button below, this opens the "highway information" form. Recording the details here ensures it is transferred to Amey and logged in the correct way. 
         As this isn't set up specifically to record the details of the missing cat, please follow the guidance below when completing the form.
       </p>
       <p>
