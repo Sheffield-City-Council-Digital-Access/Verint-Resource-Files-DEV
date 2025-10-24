@@ -855,6 +855,69 @@ const requestHighwayInfo = new FormRaP(
   { date: "29/01/2025", name: "Elliott Griffiths" }
 );
 
+const missingCat = new ContentRaP(
+  "missingCat",
+  "Missing Cat",
+  "Query if a missing cat has been collected from the highway",
+  `
+    <section>
+      <h3>Record details of missing cat</h3>
+      <p>
+        If a customer calls in asking to find out if their missing cat has been collected from the highway, details need to be recorded ready for transferring the call to Amey.
+      </p>
+      <p>
+        When you click on the <em>Record details of missing cat </em> button below, this opens the "highway information" form. Recording the details here ensures it is transferred to Amey and logged in the correct way. 
+        As this isn't set up specifically to record the details of the missing cat, please follow the guidance below when completing the form.
+      </p>
+      <p>
+      <strong>Who is making the request</strong> - select <em>Member of public</em>
+      </p>
+      <p>
+      <strong>What is the request about</strong> - select <em>Service or works</em>
+      </p>
+      <p>
+      <strong>Tell us what you would like to know</strong> - include the phrase <em>Missing cat details</em> and record the below information:
+      </p>
+      <ul>
+        <li> Colour or distinct markings; </li>
+        <li> Details of a collar, if they were wearing one; </li>
+        <li> If the cat was microchipped; </li>
+        <li> The location the cat was last seen; </li>
+        <li> Any other notable information provided by the owner. </li>
+      </ul>
+      <p>
+      <strong>Type of enquiry</strong> - select <em>Warm transfer</em>
+      </p>
+      <p>
+      On the <strong>About the location</strong> screen, log where the cat was last seen. 
+      </p>
+      <p>
+      On the <strong>About you</strong> screen, log the caller's details then submit the form and complete a warm transfer.
+      </p>
+  
+    </section>
+  `,
+  {
+    buttonLabel: "Record details of missing cat",
+    formName: "request_highway_info",
+  },
+  { typeKey: "" },
+  { typeKey: "roads_information_transferred_to_service" },
+  {
+    type: "Request",
+    keywords: [
+      "Missing", 
+      "Dead", 
+      "Lost",
+      "Cat",
+      "Cat on Highway"
+    ],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "22/10/2025", name: "Liz Taster" }
+);
+
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -891,6 +954,7 @@ const roadsAndPavements = new ServiceRaP(
     requestClaimsPack,
     requestGritting,
     requestHighwayInfo,
-    reportWaterDrainage
+    reportWaterDrainage,
+    missingCat
   ]
 );
