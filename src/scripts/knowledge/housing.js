@@ -3381,7 +3381,7 @@ const applicationChanges = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "12/02/2025", name: "Nathan Smith" }
+  { date: "27/10/2025", name: "Motolani Akinola" }
 );
 
 const applyForRehousing = new ContentH(
@@ -3435,7 +3435,7 @@ const applyForRehousing = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "12/02/2025", name: "Nathan Smith" }
+  { date: "27/10/2025", name: "Motolani Akinola" }
 );
 
 const bidding = new ContentH(
@@ -3686,7 +3686,7 @@ const bidding = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "14/10/2024", name: "Omily Parkin" }
+  { date: "27/10/2025", name: "Motolani Akinola" }
 );
 
 const eligibility = new ContentH(
@@ -3741,7 +3741,8 @@ const eligibility = new ContentH(
         A copy of the eligibility table can be found 
         <a href="https://sccextranet.sharepoint.com/:w:/s/CustomerServiceKnowledgeCouncilHousing/EbdSLAAvW9JGiy9NqU1kK10B4dnbAzvX4hi3YjglwR3TDQ?e=Nicw6D&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDEwMjAwMTMxOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank">here</a>.
       </p>
-      //The following section on relaxed eligibility is to be hidden from customers
+      <!-- The following section on relaxed eligibility is to be hidden from customers -->
+
       <div hidden>
       <h3>Relaxed eligibility</h3>
       <p>
@@ -3779,7 +3780,7 @@ const eligibility = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "14/10/2024", name: "Abishai Devarapalli" }
+  { date: "27/10/2025", name: "Motolani Akinola" }
 );
 
 const fosteringAndAdoption = new ContentH(
@@ -4733,7 +4734,7 @@ const mutualExchanges = new ContentH(
     keywords: ["rehousing", "rehousing", "rehousign", "rehozing"],
     categories: ["Housing"],
   },
-  { date: "12/02/2025", name: "Nathan Smith" }
+  { date: "27/10/2025", name: "Motolani Akinola" }
 );
 
 const priorities = new ContentH(
