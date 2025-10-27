@@ -3285,10 +3285,13 @@ const applicationChanges = new ContentH(
       </summary>
       <div class="accordion-content">
         <p>Log on using the details below if required.</p>
-        <p>Unique Reference - 1257822</p>
-        <p>Memorable date - 25/12/2012</p>
-        <p>Password - DMrm15</p>
         <p>
+          Use the following login details to access the system:
+          </p>
+        <p>
+          Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
+            Password: <strong>Password1*</strong>
+        </p>
           Advisor note: You have logged in using dummy login details. Please do not
           amend anything on screen. Log in if required using the login details above
           and follow the instructions:
