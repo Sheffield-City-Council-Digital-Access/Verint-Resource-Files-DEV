@@ -3563,13 +3563,13 @@ const bidding = new ContentH(
             Log on using the details below if required.
             <br>
             <br>
-            Unique Reference - 1257822
-            <br>
-            <br>
-            Memorable date - 25/12/2012
-            <br>
-            <br>
-            Password - DMrm15
+            <p>
+          Use the following login details to access the system:
+          </p>
+        <p>
+          Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
+            Password: <strong>Password1*</strong>
+        </p>
             <br>
             <br>
             Advisor note: You have logged in using dummy login details. Please do not
