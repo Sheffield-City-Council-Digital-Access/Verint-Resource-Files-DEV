@@ -4482,7 +4482,7 @@ const mutualExchanges = new ContentH(
         A Mutual Exchange is where two or more Council or Housing Association tenants can apply to swap
         their homes. The 1985 Housing Act (part 4, section 92) gives tenants this right under certain circumstances.<br><br>
   
-        The Mutual Exchange application form can be accessed online at the Property Shop website at: <a href="https://www.sheffieldpropertyshop.org.uk/" target="_blank">https://www.sheffieldpropertyshop.org.uk/</a> and the Sheffield City Council website at: <a href="https://www.sheffield.gov.uk/council-housing/mutual-exchanges" target="_blank">https://www.sheffield.gov.uk/council-housing/mutual-exchanges</a>.
+        The Mutual Exchange application form can be accessed online at the Housing Online website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a> and the Sheffield City Council website at: <a href="https://www.sheffield.gov.uk/council-housing/mutual-exchanges" target="_blank">https://www.sheffield.gov.uk/council-housing/mutual-exchanges</a>.
         <br>
         <button type="button" class="dform_widget email-btn dform_widget_type_button"
           aria-label="Send link to mutual exchanges page"
@@ -4497,7 +4497,7 @@ const mutualExchanges = new ContentH(
         <br>
         <br>
   
-        Advisor Note: Check for updates on the progress of a customer's mutual exchange on Abritas.
+        Advisor Note: Check for updates on the progress of a customer's mutual exchange on NECH.
       </p>
   
       <details class="accordion">
