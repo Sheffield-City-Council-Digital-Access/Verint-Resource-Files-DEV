@@ -3738,6 +3738,7 @@ const eligibility = new ContentH(
         A copy of the eligibility table can be found 
         <a href="https://sccextranet.sharepoint.com/:w:/s/CustomerServiceKnowledgeCouncilHousing/EbdSLAAvW9JGiy9NqU1kK10B4dnbAzvX4hi3YjglwR3TDQ?e=Nicw6D&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDEwMjAwMTMxOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank">here</a>.
       </p>
+      <div hidden>
       <h3>Relaxed eligibility</h3>
       <p>
         Relaxed eligibility criteria is uncommon, but has sometimes been applied in
@@ -3761,6 +3762,7 @@ const eligibility = new ContentH(
         (Rents) will contact the customer prior to any offer to ensure that the
         customer is able to afford the property.
       </p>
+      </div>
     `,
   {
     buttonLabel: "Report Housing Enquiry ",
