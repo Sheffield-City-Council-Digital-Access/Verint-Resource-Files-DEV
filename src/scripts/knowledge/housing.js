@@ -3352,7 +3352,7 @@ const applicationChanges = new ContentH(
       <div class="accordion-content">
         <h3>Main Applicant</h3>
         <p>
-          To remove a joint applicant, you must do this online at the Property Shop
+          To remove a joint applicant, you must do this online at the Housing Online
           website.
         </p>
         <h3>Joint Applicant</h3>
