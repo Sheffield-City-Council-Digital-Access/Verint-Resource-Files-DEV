@@ -3387,17 +3387,17 @@ const applyForRehousing = new ContentH(
   "Learn how to apply for rehousing in Sheffield by registering online and submitting required documents like ID and landlord references.",
   `
     <p>
-      To apply for Social Housing you need to do so via the Property Shop website.
+      To apply for Social Housing you need to do so via the Housing Online website.
       There are no paper application forms.
     </p>
-    <p>Go online and register on <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a><br> 
+    <p>Go online and register on <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a><br> 
     
     <button type="button" class="dform_widget email-btn dform_widget_type_button"
-      aria-label="Send link to property shop website"
+      aria-label="Send link to housing online website"
       onclick="
       window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
       KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-      }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`"
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
     >
       Send link to register online
     </button>
