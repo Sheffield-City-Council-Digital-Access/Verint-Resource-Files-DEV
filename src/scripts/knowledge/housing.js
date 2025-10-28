@@ -5018,6 +5018,39 @@ const PropertyOffersAndViewings = new ContentH(
         Once the bidding period has closed on a Tuesday night, 
         bids for each property are sorted automatically based on the eligibility criteria.
       </p>
+      <h3>How to View Available Properties and Bidding Periods</h3>
+
+    <p>Follow these steps to find and view the list of available properties and their bidding cycles on the Housing Online website.</p>
+
+    <ol>
+      <li>
+        <strong>Go to:</strong>
+        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">
+          https://housing.sheffield.gov.uk/
+        </a>
+      </li>
+
+      <li>
+        <strong>Log in</strong> with your username and password.
+      </li>
+
+      <li>
+        On the dashboard, click the tile labelled <strong>Search and bid for a property</strong>.
+      </li>
+
+      <li>
+        At the top right of the page, click the <strong>Actions</strong> button.
+      </li>
+
+      <li>
+        From the drop-down menu, select <strong>All Available Properties</strong>.
+      </li>
+
+      <li>
+        A list of properties will appear along with their <strong>bidding periods</strong>.
+       </li>
+    </ol>
+
       <h3>How does Sheffield City Council allocate the property?</h3>
        <p>
         Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short:
