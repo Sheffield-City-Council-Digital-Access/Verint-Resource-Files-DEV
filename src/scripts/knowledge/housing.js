@@ -3420,7 +3420,7 @@ const applicationChanges = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "27/10/2025", name: "Motolani Akinola" }
+  { date: "28/10/2025", name: "Motolani Akinola" }
 );
 
 const applyForRehousing = new ContentH(
@@ -3474,7 +3474,7 @@ const applyForRehousing = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "27/10/2025", name: "Motolani Akinola" }
+  { date: "28/10/2025", name: "Motolani Akinola" }
 );
 
 const bidding = new ContentH(
@@ -3792,7 +3792,7 @@ const bidding = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "27/10/2025", name: "Motolani Akinola" }
+  { date: "28/10/2025", name: "Motolani Akinola" }
 );
 
 const eligibility = new ContentH(
@@ -3886,7 +3886,7 @@ const eligibility = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "27/10/2025", name: "Motolani Akinola" }
+  { date: "28/10/2025", name: "Motolani Akinola" }
 );
 
 const fosteringAndAdoption = new ContentH(
@@ -5141,7 +5141,7 @@ const PropertyOffersAndViewings = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "12/02/2025", name: "Nathan Smith" }
+  { date: "28/10/2025", name: "Motolani Akinola" }
 );
 
 const referencesFAQs = new ContentH(
