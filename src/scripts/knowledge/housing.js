@@ -3341,6 +3341,40 @@ const applicationChanges = new ContentH(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
+      
+      <h2>How to Change Your Details</h2>
+
+    <p>Follow these steps to update your contact information on the Housing Sheffield site.</p>
+
+    <ol>
+      <li>
+        <strong>Open the website:</strong>
+        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">https://housing.sheffield.gov.uk/</a>
+      </li>
+
+      <li>
+        <strong>Log in:</strong>
+        Click the <em>Log in</em> button and enter your username and password.
+       </li>
+
+      <li>
+        <strong>Locate the dashboard tiles:</strong>
+        After logging in you'll see a grid of tiles/cards .
+      </li>
+
+      <li>
+        <strong>Click the correct tile:</strong>
+        Click the tile labelled <em>Change my details</em> .
+      </li>
+
+      <li>
+        <strong>Complete the form:</strong>
+        Fill in the required fields with your updated information and then click <em>Submit Contact</em>.
+      </li>
+
+      
+    </ol>
+
         <p>
           Present three proof documents to a housing office or First Point, where ID
           will be copied and saved. The name will be updated in our system. See above within the "Accepted ID" section
