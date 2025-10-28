@@ -3211,7 +3211,7 @@ const applicationChanges = new ContentH(
           </summary>
           <div class="details-accordion-content">
             <p>
-              Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
+              Log onto our website at <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a> and follow
               the links from the homepage.<br> 
               
       <button type="button"
@@ -3220,8 +3220,8 @@ const applicationChanges = new ContentH(
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`
-    "
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+  
 >
             Send link to review further information
     </button>
