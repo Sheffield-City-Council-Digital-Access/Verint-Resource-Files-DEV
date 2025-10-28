@@ -3288,7 +3288,7 @@ const applicationChanges = new ContentH(
       Login
     </h3>
     <p>
-      Click <a href="https://housing-test.sheffield.gov.uk/ords/houtest4_selfserv/f?p=13000:101::::::" target="_blank">here</a> to access Housing Online.
+      Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access Housing Online.
     </p>
     <p>
       Use the following login details to access the system:
