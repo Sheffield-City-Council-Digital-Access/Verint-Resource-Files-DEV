@@ -3341,7 +3341,7 @@ const applicationChanges = new ContentH(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-      
+
       <h2>How to Change Your Details</h2>
 
     <p>Follow these steps to update your contact information on the Housing Sheffield site.</p>
@@ -3494,8 +3494,7 @@ const bidding = new ContentH(
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`
-    "
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
 >
             Send link to review further information
     </button>
