@@ -3284,14 +3284,19 @@ const applicationChanges = new ContentH(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>Log on using the details below if required.</p>
-        <p>
-          Use the following login details to access the system:
-          </p>
-        <p>
-          Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
-            Password: <strong>Password1*</strong>
-        </p>
+        <h3>
+      Login
+    </h3>
+    <p>
+      Click <a href="https://housing-test.sheffield.gov.uk/ords/houtest4_selfserv/f?p=13000:101::::::" target="_blank">here</a> to access Housing Online.
+    </p>
+    <p>
+      Use the following login details to access the system:
+    </p>
+    <p>
+      Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
+      Password: <strong>Password1*</strong>
+    </p>
           Advisor note: You have logged in using dummy login details. Please do not
           amend anything on screen. Log in if required using the login details above
           and follow the instructions:
