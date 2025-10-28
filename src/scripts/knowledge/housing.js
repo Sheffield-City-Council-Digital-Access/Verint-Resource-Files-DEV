@@ -3485,9 +3485,43 @@ const bidding = new ContentH(
       <p>
         After you have registered for housing, you express your interest in renting a
         property by making a bid. You only have to bid once per property. You make
-        bids online at the Property Shop website
-        <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> <br> 
+        bids online at the Housing Online website
+        <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a> <br> 
         
+        <h3>How to View Available Properties and Bidding Periods</h3>
+
+    <p>Follow these steps to find and view the list of available properties and their bidding cycles on the Housing Online website.</p>
+
+    <ol>
+      <li>
+        <strong>Go to:</strong>
+        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">
+          https://housing.sheffield.gov.uk/
+        </a>
+      </li>
+
+      <li>
+        <strong>Log in</strong> with your username and password.
+      </li>
+
+      <li>
+        On the dashboard, click the tile labelled <strong>Search and bid for a property</strong>.
+      </li>
+
+      <li>
+        At the top right of the page, click the <strong>Actions</strong> button.
+      </li>
+
+      <li>
+        From the drop-down menu, select <strong>All Available Properties</strong>.
+      </li>
+
+      <li>
+        A list of properties will appear along with their <strong>bidding periods</strong>.
+       </li>
+    </ol>
+
+
         <button type="button"
             class="dform_widget email-btn dform_widget_type_button"
             aria-label="For further information send link"
