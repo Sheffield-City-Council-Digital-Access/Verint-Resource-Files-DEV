@@ -3211,7 +3211,7 @@ const applicationChanges = new ContentH(
           </summary>
           <div class="details-accordion-content">
             <p>
-              Log onto our website at <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> and follow
+              Log onto our website at <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a> and follow
               the links from the homepage.<br> 
               
       <button type="button"
@@ -3220,8 +3220,8 @@ const applicationChanges = new ContentH(
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`
-    "
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+  
 >
             Send link to review further information
     </button>
@@ -3284,11 +3284,19 @@ const applicationChanges = new ContentH(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <p>Log on using the details below if required.</p>
-        <p>Unique Reference - 1257822</p>
-        <p>Memorable date - 25/12/2012</p>
-        <p>Password - DMrm15</p>
-        <p>
+        <h3>
+      Login
+    </h3>
+    <p>
+      Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access Housing Online.
+    </p>
+    <p>
+      Use the following login details to access the system:
+    </p>
+    <p>
+      Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
+      Password: <strong>Password1*</strong>
+    </p>
           Advisor note: You have logged in using dummy login details. Please do not
           amend anything on screen. Log in if required using the login details above
           and follow the instructions:
@@ -3333,6 +3341,40 @@ const applicationChanges = new ContentH(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
+
+      <h2>How to Change Your Details</h2>
+
+    <p>Follow these steps to update your contact information on the Housing Sheffield site.</p>
+
+    <ol>
+      <li>
+        <strong>Open the website:</strong>
+        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">https://housing.sheffield.gov.uk/</a>
+      </li>
+
+      <li>
+        <strong>Log in:</strong>
+        Click the <em>Log in</em> button and enter your username and password.
+       </li>
+
+      <li>
+        <strong>Locate the dashboard tiles:</strong>
+        After logging in you'll see a grid of tiles/cards .
+      </li>
+
+      <li>
+        <strong>Click the correct tile:</strong>
+        Click the tile labelled <em>Change my details</em> .
+      </li>
+
+      <li>
+        <strong>Complete the form:</strong>
+        Fill in the required fields with your updated information and then click <em>Submit Contact</em>.
+      </li>
+
+      
+    </ol>
+
         <p>
           Present three proof documents to a housing office or First Point, where ID
           will be copied and saved. The name will be updated in our system. See above within the "Accepted ID" section
@@ -3352,7 +3394,7 @@ const applicationChanges = new ContentH(
       <div class="accordion-content">
         <h3>Main Applicant</h3>
         <p>
-          To remove a joint applicant, you must do this online at the Property Shop
+          To remove a joint applicant, you must do this online at the Housing Online
           website.
         </p>
         <h3>Joint Applicant</h3>
@@ -3378,7 +3420,7 @@ const applicationChanges = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "12/02/2025", name: "Nathan Smith" }
+  { date: "28/10/2025", name: "Motolani Akinola" }
 );
 
 const applyForRehousing = new ContentH(
@@ -3387,17 +3429,17 @@ const applyForRehousing = new ContentH(
   "Learn how to apply for rehousing in Sheffield by registering online and submitting required documents like ID and landlord references.",
   `
     <p>
-      To apply for Social Housing you need to do so via the Property Shop website.
+      To apply for Social Housing you need to do so via the Housing Online website.
       There are no paper application forms.
     </p>
-    <p>Go online and register on <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a><br> 
+    <p>Go online and register on <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a><br> 
     
     <button type="button" class="dform_widget email-btn dform_widget_type_button"
-      aria-label="Send link to property shop website"
+      aria-label="Send link to housing online website"
       onclick="
       window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
       KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-      }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`"
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
     >
       Send link to register online
     </button>
@@ -3432,28 +3474,61 @@ const applyForRehousing = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "12/02/2025", name: "Nathan Smith" }
+  { date: "28/10/2025", name: "Motolani Akinola" }
 );
 
 const bidding = new ContentH(
   "bidding",
   "Bidding",
-  "Learn how to place bids for properties on the Sheffield Property Shop website, manage your application details, and handle restrictions or disqualifications.",
+  "Learn how to place bids for properties on the Sheffield Housing Online website, manage your application details, and handle restrictions or disqualifications.",
   `
       <p>
         After you have registered for housing, you express your interest in renting a
         property by making a bid. You only have to bid once per property. You make
-        bids online at the Property Shop website
-        <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> <br> 
+        bids online at the Housing Online website
+        <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a> <br> 
         
+        <h3>How to View Available Properties and Bidding Periods</h3>
+
+    <p>Follow these steps to find and view the list of available properties and their bidding cycles on the Housing Online website.</p>
+
+    <ol>
+      <li>
+        <strong>Go to:</strong>
+        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">
+          https://housing.sheffield.gov.uk/
+        </a>
+      </li>
+
+      <li>
+        <strong>Log in</strong> with your username and password.
+      </li>
+
+      <li>
+        On the dashboard, click the tile labelled <strong>Search and bid for a property</strong>.
+      </li>
+
+      <li>
+        At the top right of the page, click the <strong>Actions</strong> button.
+      </li>
+
+      <li>
+        From the drop-down menu, select <strong>All Available Properties</strong>.
+      </li>
+
+      <li>
+        A list of properties will appear along with their <strong>bidding periods</strong>.
+       </li>
+    </ol>
+
+
         <button type="button"
             class="dform_widget email-btn dform_widget_type_button"
             aria-label="For further information send link"
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`
-    "
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
 >
             Send link to review further information
     </button>
@@ -3469,8 +3544,7 @@ const bidding = new ContentH(
         </summary>
         <div class="accordion-content">
           <p>
-            If you need assistance placing a bid, you can visit Sheffield Property Shop
-            located in Howden House on Union Street, Sheffield, or your nearest
+            If you need assistance placing a bid, you can visit Howden House on Union Street, Sheffield, or your nearest
             neighbourhood housing office.
           </p>        
         </div>
@@ -3493,8 +3567,8 @@ const bidding = new ContentH(
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`
-    "
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+    
 >
             Send link to review further information
     </button>
@@ -3559,17 +3633,19 @@ const bidding = new ContentH(
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
-          <p>
-            Log on using the details below if required.
-            <br>
-            <br>
-            Unique Reference - 1257822
-            <br>
-            <br>
-            Memorable date - 25/12/2012
-            <br>
-            <br>
-            Password - DMrm15
+          <h3>
+      Login
+    </h3>
+    <p>
+      Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access Housing Online.
+    </p>
+    <p>
+      Use the following login details to access the system:
+    </p>
+    <p>
+      Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
+      Password: <strong>Password1*</strong>
+    </p>
             <br>
             <br>
             Advisor note: You have logged in using dummy login details. Please do not
@@ -3622,6 +3698,38 @@ const bidding = new ContentH(
           <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
+            <h2>How to Change Your Details</h2>
+
+    <p>Follow these steps to update your contact information on the Housing Sheffield site.</p>
+
+    <ol>
+      <li>
+        <strong>Open the website:</strong>
+        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">https://housing.sheffield.gov.uk/</a>
+      </li>
+
+      <li>
+        <strong>Log in:</strong>
+        Click the <em>Log in</em> button and enter your username and password.
+       </li>
+
+      <li>
+        <strong>Locate the dashboard tiles:</strong>
+        After logging in you'll see a grid of tiles/cards .
+      </li>
+
+      <li>
+        <strong>Click the correct tile:</strong>
+        Click the tile labelled <em>Change my details</em> .
+      </li>
+
+      <li>
+        <strong>Complete the form:</strong>
+        Fill in the required fields with your updated information and then click <em>Submit Contact</em>.
+      </li>
+
+      
+    </ol>
           <p>
             Present three proof documents to a housing office or First Point, where ID
             will be copied and saved. The name will be updated in our system.
@@ -3641,9 +3749,10 @@ const bidding = new ContentH(
         <div class="accordion-content">
           <h3>Main Applicant</h3>
           <p>
-            To remove a joint applicant, you must do this online at the Property Shop
-            website at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a>
+            To remove a joint applicant, you must do this online at the Housing Online
+            website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>
           <br>
+          </p>
 
      <button 
             type="button"
@@ -3652,16 +3761,15 @@ const bidding = new ContentH(
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`
-    "
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+    
 >
             Send link to review further information
      </button>
 
           <br>
           <h3>Joint Applicant</h3>
-          <br>
-          <br>
+          <p>
             Speak to the Registration team to remove your National Insurance Number.
             You will need to submit a new application and confirm the removal from the
             previous application.
@@ -3683,7 +3791,7 @@ const bidding = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "14/10/2024", name: "Omily Parkin" }
+  { date: "28/10/2025", name: "Motolani Akinola" }
 );
 
 const eligibility = new ContentH(
@@ -3738,6 +3846,9 @@ const eligibility = new ContentH(
         A copy of the eligibility table can be found 
         <a href="https://sccextranet.sharepoint.com/:w:/s/CustomerServiceKnowledgeCouncilHousing/EbdSLAAvW9JGiy9NqU1kK10B4dnbAzvX4hi3YjglwR3TDQ?e=Nicw6D&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDEwMjAwMTMxOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank">here</a>.
       </p>
+      <!-- The following section on relaxed eligibility is to be hidden from customers -->
+
+      <div hidden>
       <h3>Relaxed eligibility</h3>
       <p>
         Relaxed eligibility criteria is uncommon, but has sometimes been applied in
@@ -3761,6 +3872,7 @@ const eligibility = new ContentH(
         (Rents) will contact the customer prior to any offer to ensure that the
         customer is able to afford the property.
       </p>
+      </div>
     `,
   {
     buttonLabel: "Report Housing Enquiry ",
@@ -3773,7 +3885,7 @@ const eligibility = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "14/10/2024", name: "Abishai Devarapalli" }
+  { date: "28/10/2025", name: "Motolani Akinola" }
 );
 
 const fosteringAndAdoption = new ContentH(
@@ -3862,7 +3974,7 @@ const housingAssociations = new ContentH(
                 Variety of properties across Woodthorpe and Lower Manor. Stock transfer from the Council Housing Service.
                 To register, a Council Housing Service rehousing registration form needs to be completed.
                 Properties are advertised through the Choice Based Letting System.
-                The only properties not advertised through the Sheffield Property Shop are those where Acis have agreed a management transfer for current tenants or mutual exchange.
+                The only properties not advertised through the Sheffield Housing Online are those where Acis have agreed a management transfer for current tenants or mutual exchange.
               </p>
             </div>
           </details>
@@ -4032,7 +4144,7 @@ const housingAssociations = new ContentH(
      </button>
               </address>
               <p>
-                Available properties are either advertised through the Council’s Property Shop and Property Shop website or are allocated from Guinness Northern Counties’ own waiting list.
+                Available properties are either advertised through the Council’s Housing Online and Housing Online website or are allocated from Guinness Northern Counties’ own waiting list.
                 You need to join Guinness Northern Counties’ waiting list as well as the Council’s Housing Register in order to bid for properties.
               </p>
             </div>
@@ -4158,7 +4270,7 @@ const housingAssociations = new ContentH(
               <p>
                 Stock transfer from Council Housing Service. All types of properties. Current stock is in Shiregreen. To register, a Council Housing Service rehousing registration form needs to be completed.
                 Properties are advertised through the Choice Based Letting System and a local lettings policy.
-                The only properties not advertised through the Sheffield Property Shop are those where Sanctuary has agreed a management transfer for current tenants or mutual exchange.
+                The only properties not advertised through the Sheffield Housing Online are those where Sanctuary has agreed a management transfer for current tenants or mutual exchange.
               </p>
             </div>
           </details>
@@ -4479,7 +4591,7 @@ const mutualExchanges = new ContentH(
         A Mutual Exchange is where two or more Council or Housing Association tenants can apply to swap
         their homes. The 1985 Housing Act (part 4, section 92) gives tenants this right under certain circumstances.<br><br>
   
-        The Mutual Exchange application form can be accessed online at the Property Shop website at: <a href="https://www.sheffieldpropertyshop.org.uk/" target="_blank">https://www.sheffieldpropertyshop.org.uk/</a> and the Sheffield City Council website at: <a href="https://www.sheffield.gov.uk/council-housing/mutual-exchanges" target="_blank">https://www.sheffield.gov.uk/council-housing/mutual-exchanges</a>.
+        The Mutual Exchange application form can be accessed online at the Housing Online website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a> and the Sheffield City Council website at: <a href="https://www.sheffield.gov.uk/council-housing/mutual-exchanges" target="_blank">https://www.sheffield.gov.uk/council-housing/mutual-exchanges</a>.
         <br>
         <button type="button" class="dform_widget email-btn dform_widget_type_button"
           aria-label="Send link to mutual exchanges page"
@@ -4494,7 +4606,7 @@ const mutualExchanges = new ContentH(
         <br>
         <br>
   
-        Advisor Note: Check for updates on the progress of a customer's mutual exchange on Abritas.
+        Advisor Note: Check for updates on the progress of a customer's mutual exchange on NECH.
       </p>
   
       <details class="accordion">
@@ -4727,7 +4839,7 @@ const mutualExchanges = new ContentH(
     keywords: ["rehousing", "rehousing", "rehousign", "rehozing"],
     categories: ["Housing"],
   },
-  { date: "12/02/2025", name: "Nathan Smith" }
+  { date: "27/10/2025", name: "Motolani Akinola" }
 );
 
 const priorities = new ContentH(
@@ -4971,6 +5083,39 @@ const PropertyOffersAndViewings = new ContentH(
         Once the bidding period has closed on a Tuesday night, 
         bids for each property are sorted automatically based on the eligibility criteria.
       </p>
+      <h3>How to View Available Properties and Bidding Periods</h3>
+
+    <p>Follow these steps to find and view the list of available properties and their bidding cycles on the Housing Online website.</p>
+
+    <ol>
+      <li>
+        <strong>Go to:</strong>
+        <a href="https://housing.sheffield.gov.uk/" target="_blank" rel="noopener">
+          https://housing.sheffield.gov.uk/
+        </a>
+      </li>
+
+      <li>
+        <strong>Log in</strong> with your username and password.
+      </li>
+
+      <li>
+        On the dashboard, click the tile labelled <strong>Search and bid for a property</strong>.
+      </li>
+
+      <li>
+        At the top right of the page, click the <strong>Actions</strong> button.
+      </li>
+
+      <li>
+        From the drop-down menu, select <strong>All Available Properties</strong>.
+      </li>
+
+      <li>
+        A list of properties will appear along with their <strong>bidding periods</strong>.
+       </li>
+    </ol>
+
       <h3>How does Sheffield City Council allocate the property?</h3>
        <p>
         Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short:
@@ -4979,7 +5124,7 @@ const PropertyOffersAndViewings = new ContentH(
         <li>Properties advertised to Waiting Time – These properties will be offered to customers in band D first in order of their effective date (oldest first). If no customers in band D accept the property, it will be offered to the other bands in the following order: band A, band B, band C, Band E.</li>
         <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in band A first in order of their effective date (oldest first). If no customers in band A accept the property, it will be offered to the other bands in the following order: band B, Band C, Band D, Band E.</li>
         <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
-        <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on the Sheffield Property Shop. You can do this by logging in to your account.</li>
+        <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on Sheffield Housing Online. You can do this by logging in to your account.</li>
         <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
         <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
       </ul>
@@ -4995,7 +5140,7 @@ const PropertyOffersAndViewings = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "12/02/2025", name: "Nathan Smith" }
+  { date: "28/10/2025", name: "Motolani Akinola" }
 );
 
 const referencesFAQs = new ContentH(
@@ -5055,7 +5200,7 @@ const referencesFAQs = new ContentH(
       <div class="accordion-content">
         <p>
           Landlord references should be submitted using the SCC reference form. This can be found online on the 
-          Property Shop website at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a>. Customer should select:
+          Housing Online website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>. Customer should select:
 
  <button
     type="button"
@@ -5064,8 +5209,8 @@ const referencesFAQs = new ContentH(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`
-    "
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+    
 >
     Send link to review further information
   </button>
@@ -5149,7 +5294,7 @@ const referencesFAQs = new ContentH(
         <p>
           There are alternatives to visiting the area office yourself, such as asking your friends or family 
           to bring your ID and Reference in for you, as this is safer than posting your original ID documents. 
-          <strong>Documents can be uploaded via the property shop website.</strong>
+          <strong>Documents can be uploaded via the housing online website.</strong>
         </p>
       </div>
     </details>
@@ -10175,7 +10320,7 @@ const olderPersonsIndependentLiving = new ContentH(
     <h3>Register for OPIL Accommodation</h3>
     <p>Applicants should be registered for rehousing.</p>
     <p>
-      You can access OPIL accommodation through the Sheffield Property Shop at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> or call
+      You can access OPIL accommodation through the Sheffield Housing Online at: <a href="https://www.sheffieldpropertyshop.org.uk" target="_blank">www.sheffieldpropertyshop.org.uk</a> or call
       in at any of the local Area Housing Offices.
 
   <button
@@ -10185,8 +10330,8 @@ const olderPersonsIndependentLiving = new ContentH(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Property%20Shop\`
-    "
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+    
 >
     Send link to review further information
  </button>
