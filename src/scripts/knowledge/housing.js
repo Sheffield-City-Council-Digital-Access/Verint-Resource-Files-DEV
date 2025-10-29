@@ -4613,7 +4613,7 @@ const mutualExchanges = new ContentH(
           onclick="
           window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
           KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Mutual%20Exchange\`"
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Mutual%20exchanges\`"
         >
         Send link to register online
         </button>
