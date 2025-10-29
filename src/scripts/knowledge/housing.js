@@ -3393,16 +3393,31 @@ const applicationChanges = new ContentH(
       </summary>
       <div class="accordion-content">
         <h3>Main Applicant</h3>
-        <p>
-          To remove a joint applicant, you must do this online at the Housing Online
-          website.
-        </p>
-        <h3>Joint Applicant</h3>
-        <p>
-          Speak to the Registration team to remove your National Insurance Number.
-          You will need to submit a new application and confirm the removal from the
-          previous application.
-        </p>
+          <p>
+            To remove a joint applicant, you must do this online at the Housing Online
+            website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>
+          <br>
+
+     <button 
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+    
+>
+            Send link to review further information
+     </button>
+
+          <br>
+          <h3>Joint Applicant</h3>
+          
+            Speak to the Registration team to remove your National Insurance Number.
+            You will need to submit a new application and confirm the removal from the
+            previous application.
+          </p>
       </div>
     </details>
   `,
@@ -4839,7 +4854,7 @@ const mutualExchanges = new ContentH(
     keywords: ["rehousing", "rehousing", "rehousign", "rehozing"],
     categories: ["Housing"],
   },
-  { date: "27/10/2025", name: "Motolani Akinola" }
+  { date: "29/10/2025", name: "Motolani Akinola" }
 );
 
 const priorities = new ContentH(
