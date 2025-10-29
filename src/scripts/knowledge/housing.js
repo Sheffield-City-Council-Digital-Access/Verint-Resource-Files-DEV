@@ -3560,8 +3560,7 @@ const bidding = new ContentH(
         </summary>
         <div class="accordion-content">
           <p>
-            If you need assistance placing a bid, you can visit Sheffield Housing Online
-            located in Howden House on Union Street, Sheffield, or your nearest
+            If you need assistance placing a bid, you can visit Howden House on Union Street, Sheffield, or your nearest
             neighbourhood housing office.
           </p>        
         </div>
@@ -3769,6 +3768,7 @@ const bidding = new ContentH(
             To remove a joint applicant, you must do this online at the Housing Online
             website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>
           <br>
+          </p>
 
      <button 
             type="button"
@@ -3785,8 +3785,7 @@ const bidding = new ContentH(
 
           <br>
           <h3>Joint Applicant</h3>
-          <br>
-          <br>
+          <p>
             Speak to the Registration team to remove your National Insurance Number.
             You will need to submit a new application and confirm the removal from the
             previous application.
@@ -5141,7 +5140,7 @@ const PropertyOffersAndViewings = new ContentH(
         <li>Properties advertised to Waiting Time – These properties will be offered to customers in band D first in order of their effective date (oldest first). If no customers in band D accept the property, it will be offered to the other bands in the following order: band A, band B, band C, Band E.</li>
         <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in band A first in order of their effective date (oldest first). If no customers in band A accept the property, it will be offered to the other bands in the following order: band B, Band C, Band D, Band E.</li>
         <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
-        <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on the Sheffield Housing Online. You can do this by logging in to your account.</li>
+        <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on Sheffield Housing Online. You can do this by logging in to your account.</li>
         <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
         <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
       </ul>
