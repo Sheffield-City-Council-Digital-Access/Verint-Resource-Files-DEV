@@ -3414,7 +3414,7 @@ const applicationChanges = new ContentH(
           <br>
           <h3>Joint Applicant</h3>
           <br>
-          <br>
+          
             Speak to the Registration team to remove your National Insurance Number.
             You will need to submit a new application and confirm the removal from the
             previous application.
