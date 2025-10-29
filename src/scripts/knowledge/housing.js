@@ -3752,6 +3752,7 @@ const bidding = new ContentH(
             To remove a joint applicant, you must do this online at the Housing Online
             website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a>
           <br>
+          </p>
 
      <button 
             type="button"
@@ -3768,8 +3769,7 @@ const bidding = new ContentH(
 
           <br>
           <h3>Joint Applicant</h3>
-          <br>
-          <br>
+          <p>
             Speak to the Registration team to remove your National Insurance Number.
             You will need to submit a new application and confirm the removal from the
             previous application.
