@@ -2885,11 +2885,10 @@ const housingOnline = new ContentH(
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/general_enquiry?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&enquiry=${encodeURIComponent(enquiryType
-      )}&typekey=housing_general_letter_received_in_error\`
-    "
->
-            Letter received in error
+            }interactionid=\${KDF.getParams().interactionid}&enquiry=Provided information about Housing Online&typekey=housing_general_letter_received_in_error\`
+            "
+        >
+          Letter received in error
         </button>
     <h3>
       Report a Housing Online System Issue
