@@ -17,84 +17,28 @@ class NewsArticle {
 }
 
 const newsArticles = [
-  new NewsArticle(
-    "Lorem Ipsum!",
+   new NewsArticle(
+    "The NEC Housing system is ready to launch today.",
     `
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor odio, ultrices in
-          eleifend in, aliquet quis justo. Cras sapien felis, pharetra ac eros a, blandit mattis
-          nulla. Sed vel tincidunt lectus. Donec consequat consectetur lorem, ac lacinia purus
-          volutpat molestie. In cursus justo ac sem sagittis mollis. Etiam euismod cursus convallis.
-          Pellentesque in est porta, iaculis tortor vel, rhoncus felis. Sed et enim nisl. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius ante ac convallis
-          consectetur. Pellentesque volutpat ultricies quam nec pretium. Vestibulum feugiat nulla et
-          ipsum ornare, auctor placerat lorem eleifend. Sed euismod dui eget nulla posuere rhoncus.
-          Duis id finibus mi.
-        </p>
-        <p>
-          Pellentesque sed egestas mauris. Quisque egestas sodales lobortis. Quisque condimentum non
-          ligula eu vestibulum. Pellentesque dignissim tempus lobortis. Ut non diam convallis, dapibus
-          ipsum non, maximus eros. Aenean pulvinar, tellus vel aliquam varius, magna nulla volutpat
-          ligula, at malesuada dolor lectus vel arcu. Integer ac ipsum porta, blandit erat et, facilisis
-          quam.
-        <p>
-    `,
-    "Elliott Griffiths",
-    "2024-08-15",
-    "2024-08-15",
-    "2024-12-31"
-  ),
-  new NewsArticle(
-    "Verint CRM Upgrade Coming Soon!",
-    `
-        <p><strong>We anticipate the launching the new system by the end of May 2025.</strong></p>
-        <p>To ensure a smooth transition and address any questions or issues that may arise, 
-        we'll be providing <strong>two weeks of hyper support</strong> from the launch date.
-        Our dedicated support team will be available to assist you with any concerns.</p>
-        <p><strong>Need help?</strong> Check out our helpful guides and resources:</p>
+        <h3>Key things to know</h3>
         <ul>
-        <li><strong>FAQ:</strong> [Link to FAQ page]</li>
-        <li><strong>How-to Guides:</strong> [Link to how-to guides]</li>
-        <li><strong>Community Forums:</strong> [Link to community forums]</li>
+        <li>Users will get their login information and links to NEC Housing in the morning, in batches, starting with project team at 9am, Ambassadors at 10am and then all staff (batched) from 11am. They will get an email with details of how to log in, closely followed by another email with their first-login password.</li>
+        <li>We’ll let you know if there are any changes to this timetable</li>
+        <li>So that your staff can benefit from Single Sign On (not having to type in usernames and passwords after a first successful login), they must sign into NEC Housing for the first time from their own laptop.</li>
+        <li>The <a href="https://sccextranet.sharepoint.com/sites/HousingandNeighbourhoodsDigitalRingbinder/SitePages/NECH-Ambassadors.aspx?web=1&xsdata=MDV8MDJ8TmF0aGFuLlNtaXRoQHNoZWZmaWVsZC5nb3YudWt8Y2E2NzI5MjRmYzI2NDkwOTU3MTcwOGRlMWFiYTA4MTR8YTFiYTU5Yjk3MjA0NDhkOGEzNjA3NzcwMjQ1YWQ0YTl8MHwwfDYzODk3NzU4MzQ2NDc3MTIwMHxVbmtub3dufFRXRnBiR1pzYjNkOGV5SkZiWEIwZVUxaGNHa2lPblJ5ZFdVc0lsWWlPaUl3TGpBdU1EQXdNQ0lzSWxBaU9pSlhhVzR6TWlJc0lrRk9Jam9pVFdGcGJDSXNJbGRVSWpveWZRPT18MHx8fA%3d%3d&sdata=ZXlaNUw0Z3lxNUdOSnlXcHpMV2NOTERXR1p4Q0VaL0xGVlM2WVNDcko4WT0%3d" target="_blank">NEC Housing Ambassadors</a> re-ran through on Friday the triage process for issues being raised and can help with signposting for login issues, training issues and comms to customers. They have access to a log which will improve visibility of issues.</li>
+        <li>If there are issues you are notified about to help resolve, your Ambassador(s) will know the process and can help complete a 4me request on the IT Service Desk if needed.  They also have access to a special phone number to escalate 4me tickets, which is also available to Service Managers.</li>
+        <li>The Service Desk form to use for NEC Housing issues is <a href="https://sheffieldcc.uk.4me.com/self-service/requests/new/provide_description?from=wizard&requested_for_id=353576&requestor_id=353576&service_id=219&service_instance_id=408&support_domain=sheffieldcc-it&template_id=4481" target="_blank">New Request | Sheffield City Council</a> and the form for users with incorrect access levels (this will be verified) is <a href="https://sheffieldcc.uk.4me.com/self-service/requests/new/provide_description?from=search&requested_for_id=21737&search_id=1192292&template_id=753&position=4
+          " target="_blank">New Request | Sheffield City Council</a>. To escalate a 4me call dial 0114 205 6047. Please do not share this number widely as we are asking Ambassadors to use this number so that issues are properly logged. As a service manager you can use the number too, to speak about issues that have been raised already.</li>
+        <li>For your information there is a page dedicated to the go-live period. Please visit this page to familiarise yourself: <a href="https://sccextranet.sharepoint.com/sites/HousingandNeighbourhoodsDigitalRingbinder/SitePages/First-weeks-of-NEC-Housing.aspx?xsdata=MDV8MDJ8TmF0aGFuLlNtaXRoQHNoZWZmaWVsZC5nb3YudWt8Y2E2NzI5MjRmYzI2NDkwOTU3MTcwOGRlMWFiYTA4MTR8YTFiYTU5Yjk3MjA0NDhkOGEzNjA3NzcwMjQ1YWQ0YTl8MHwwfDYzODk3NzU4MzQ2NDgwNDU2MXxVbmtub3dufFRXRnBiR1pzYjNkOGV5SkZiWEIwZVUxaGNHa2lPblJ5ZFdVc0lsWWlPaUl3TGpBdU1EQXdNQ0lzSWxBaU9pSlhhVzR6TWlJc0lrRk9Jam9pVFdGcGJDSXNJbGRVSWpveWZRPT18MHx8fA%3d%3d&sdata=c2xvanVkUXRsK2dWMzhvUjJzbGhEOWI2WEU0TEpqa0pncnpDQ3Z4QmFCND0%3d" target="_blank">First weeks of NEC Housing</a>.</li>
+        <li>There is information about when the system will be available to customers on that page, as well as guidance on how a NEC Housing user can find a customer’s Application Reference</li>
+        <li>We will not be able to write out to customers until all details have been loaded into NEC Housing and the system allocates them a new Application Reference (Registration Number).  This means that the letting cycle will start when we are sure there has been time for people to read their letter and use their registration number to log in, which will be around 20th November.</li>
+        <li>You’ll be notified as soon as we have confirmation of when the first lettings cycle starts.</li>
         </ul>
-        <p>We appreciate your patience and support as we work to enhance your experience.</p>
-        <p><strong>Stay tuned for more updates!</strong></p>
     `,
-    "Elliott Griffiths",
-    "2024-08-15",
-    "2025-03-01",
-    "2025-06-01"
+    "Motolani Akinola",
+    "2025-11-03",
+    "2025-11-03",
+    "2026-02-03"
   ),
-  new NewsArticle(
-    "My Account Coming Soon!",
-    `
-        <p><strong>We aare launching a customer account system during June 2025.</strong></p>
-        <p>tbc...</p>
-    `,
-    "Elliott Griffiths",
-    "2025-03-26",
-    "2025-06-01",
-    "2025-08-01"
-  ),
-  new NewsArticle(
-    "New Housing system Coming Soon!",
-    `
-        <p><strong>We anticipate the launch of the new system during November 2025.</strong></p>
-        <p>To ensure a smooth transition and address any questions or issues that may arise, 
-        we'll be providing <strong>two weeks of hyper support</strong> from the launch date.
-        Our dedicated support team will be available to assist you with any concerns.</p>
-        <p><strong>Need help?</strong> Check out our helpful guides and resources:</p>
-        <ul>
-        <li><strong>FAQ:</strong> [Link to FAQ page]</li>
-        <li><strong>How-to Guides:</strong> [Link to how-to guides]</li>
-        <li><strong>Community Forums:</strong> [Link to community forums]</li>
-        </ul>
-        <p>We appreciate your patience and support as we work to enhance your experience.</p>
-        <p><strong>Stay tuned for more updates!</strong></p>
-    `,
-    "Elliott Griffiths",
-    "2025-03-26",
-    "2025-09-01",
-    "2025-10-01"
-  ),
+   
 ];

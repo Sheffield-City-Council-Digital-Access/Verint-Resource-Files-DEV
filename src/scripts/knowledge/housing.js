@@ -2865,12 +2865,31 @@ const housingOnline = new ContentH(
       Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
       Password: <strong>Password1*</strong>
     </p>
+     <p>
+      A letter was sent by the council relating to the introduction of a new housing system. 
+      There were a number of people who received this letter in error and we are sorry for any confusion caused.
+      If you have received a letter which wasn’t meant for you, please disregard it and destroy it.
+      We apologise again for the inconvenience. 
+    </p>
     <p>
       The letter sent to applicants on the Council housing register can be found <a href="https://sccextranet.sharepoint.com/:w:/r/sites/CustomerServices/_layouts/15/Doc.aspx?sourcedoc=%7BEE7D2102-0D27-48E5-9E68-E8ED0002E140%7D&file=APPLICANTS%20-%20FOR%20PRINT.docx&action=default&mobileredirect=true"target="_blank">here</a>.
     </p>
     <p>
       The letter sent to Council housing tenants can be found <a href="https://sccextranet.sharepoint.com/:w:/r/sites/CustomerServices/_layouts/15/Doc.aspx?sourcedoc=%7BFF046187-B0AD-4767-A2E3-1390F8B8848F%7D&file=TENANTS%20-%20FOR%20PRINT.docx&action=default&mobileredirect=true"target="_blank">here</a>.
     </p>
+   
+    <br>
+        <button type="button"
+            class="dform_widget dform_widget_type_button"
+            aria-label="Letter received in error"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/general_enquiry?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&enquiry=Provided information about Housing Online&typekey=housing_general_letter_received_in_error\`
+            "
+        >
+          Letter received in error
+        </button>
     <h3>
       Report a Housing Online System Issue
     </h3>
@@ -2888,7 +2907,7 @@ const housingOnline = new ContentH(
   { typeKey: "" },
   { typeKey: "housing_general_information_provided" },
   { type: "References", keywords: ["Housing, Online, Housing Online, Dummy"], categories: ["Housing"] },
-  { date: "16/10/2025", name: "Nathan Smith" }
+  { date: "03/11/2025", name: "Motolani Akinola" }
 );
 
 //#endregion Housing Online
