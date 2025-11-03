@@ -2871,6 +2871,24 @@ const housingOnline = new ContentH(
     <p>
       The letter sent to Council housing tenants can be found <a href="https://sccextranet.sharepoint.com/:w:/r/sites/CustomerServices/_layouts/15/Doc.aspx?sourcedoc=%7BFF046187-B0AD-4767-A2E3-1390F8B8848F%7D&file=TENANTS%20-%20FOR%20PRINT.docx&action=default&mobileredirect=true"target="_blank">here</a>.
     </p>
+    <p>
+      A letter was sent by the council relating to the introduction of a new housing system. 
+      There were a number of people who received this letter in error and we are sorry for any confusion caused.
+      If you have received a letter which wasn’t meant for you, please disregard it and destroy it.
+      We apologise again for the inconvenience. 
+    </p>
+    <br>
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="Letter received in error"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/general_enquiry?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&typekey=housing_general_letter_received_in_error\`
+    "
+>
+            Letter received in error
+    </button>
     <h3>
       Report a Housing Online System Issue
     </h3>
