@@ -2906,7 +2906,7 @@ const housingOnline = new ContentH(
   { typeKey: "" },
   { typeKey: "housing_general_information_provided" },
   { type: "References", keywords: ["Housing, Online, Housing Online, Dummy"], categories: ["Housing"] },
-  { date: "16/10/2025", name: "Nathan Smith" }
+  { date: "03/11/2025", name: "Motolani Akinola" }
 );
 
 //#endregion Housing Online
