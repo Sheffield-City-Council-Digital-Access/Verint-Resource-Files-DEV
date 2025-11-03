@@ -2879,17 +2879,18 @@ const housingOnline = new ContentH(
     </p>
    
     <br>
-    <button type="button"
-            class="dform_widget email-btn dform_widget_type_button"
+        <button type="button"
+            class="dform_widget dform_widget_type_button"
             aria-label="Letter received in error"
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/general_enquiry?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&typekey=housing_general_letter_received_in_error\`
+            }interactionid=\${KDF.getParams().interactionid}&enquiry=${encodeURIComponent(enquiryType
+      )}&typekey=housing_general_letter_received_in_error\`
     "
 >
             Letter received in error
-    </button>
+        </button>
     <h3>
       Report a Housing Online System Issue
     </h3>
