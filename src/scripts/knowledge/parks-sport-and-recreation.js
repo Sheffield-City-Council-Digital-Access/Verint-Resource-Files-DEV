@@ -83,7 +83,7 @@ const allotmentsEligibility = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const contact = new ContentPSaR(
+const allotmentsContact = new ContentPSaR(
   "allotmentsContact",
   "Contact",
   "How to contact the Allotment Office",
@@ -104,7 +104,7 @@ const contact = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const applying = new ContentPSaR(
+const allotmentsApplying = new ContentPSaR(
   "allotmentsApplying",
   "Applying for a Plot",
   "How to apply for an allotment plot",
@@ -132,7 +132,7 @@ const applying = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const plotOffers = new ContentPSaR(
+const allotmentsPlotOffers = new ContentPSaR(
   "allotmentsPlotOffers",
   "Plot Offers",
   "How plots are offered from the waiting list",
@@ -158,7 +158,7 @@ const plotOffers = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const signingUp = new ContentPSaR(
+const allotmentsSigningUp = new ContentPSaR(
   "allotmentsSigningUp",
   "Signing Up",
   "Process after accepting a plot offer",
@@ -186,7 +186,7 @@ const signingUp = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const payingFees = new ContentPSaR(
+const allotmentsPayingFees = new ContentPSaR(
   "allotmentsPayingFees",
   "Paying Annual Fees",
   "Details about rent and water charges",
@@ -212,7 +212,7 @@ const payingFees = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const noticeToQuit = new ContentPSaR(
+const allotmentsNoticeToQuit = new ContentPSaR(
   "allotmentsNoticeToQuit",
   "Notice to Quit Policy",
   "What happens if rent is not paid",
@@ -237,7 +237,7 @@ const noticeToQuit = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const fires = new ContentPSaR(
+const allotmentsFires = new ContentPSaR(
   "allotmentsFires",
   "Burning / Fires",
   "Rules for burning and using fires on plots",
@@ -260,7 +260,7 @@ const fires = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const dogs = new ContentPSaR(
+const allotmentsDogs = new ContentPSaR(
   "allotmentsDogs",
   "Dogs",
   "Rules for dogs on allotment sites",
@@ -282,7 +282,7 @@ const dogs = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const water = new ContentPSaR(
+const allotmentsWater = new ContentPSaR(
   "allotmentsWater",
   "Use of Water",
   "Rules for using water on allotment plots",
@@ -304,7 +304,7 @@ const water = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const keys = new ContentPSaR(
+const allotmentsKeys = new ContentPSaR(
   "allotmentsKeys",
   "Site Keys",
   "Rules for access and key responsibility",
@@ -325,7 +325,7 @@ const keys = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const drones = new ContentPSaR(
+const allotmentsDrones = new ContentPSaR(
   "allotmentsDrones",
   "Drones",
   "Drone use policy on allotment sites",
@@ -346,7 +346,7 @@ const drones = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const trees = new ContentPSaR(
+const allotmentsTrees = new ContentPSaR(
   "allotmentsTrees",
   "Dangerous Trees",
   "Reporting dangerous trees on allotment sites",
@@ -368,7 +368,7 @@ const trees = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const asbestos = new ContentPSaR(
+const allotmentsAsbestos = new ContentPSaR(
   "allotmentsAsbestos",
   "Asbestos",
   "Asbestos policy on plots",
@@ -388,7 +388,7 @@ const asbestos = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const vermin = new ContentPSaR(
+const allotmentsVermin = new ContentPSaR(
   "allotmentsVermin",
   "Rats and Vermin",
   "Policy for vermin control on allotment sites",
@@ -408,7 +408,7 @@ const vermin = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
-const keyDeposit = new ContentPSaR(
+const allotmentsKeyDeposit = new ContentPSaR(
   "allotmentsKeyDeposits",
   "Allotment Key Deposits",
   "Costs and refunds for keys",
@@ -435,21 +435,21 @@ const allotmentsParks = new MenuPSaR(
   "Comprehensive FAQs for Sheffield City Council allotments",
   [
     allotmentsEligibility,
-    contact,
-    applying,
-    plotOffers,
-    signingUp,
-    payingFees,
-    noticeToQuit,
-    fires,
-    dogs,
-    water,
-    keys,
-    drones,
-    trees,
-    asbestos,
-    vermin,
-    keyDeposit
+    allotmentsContact,
+    allotmentsApplying,
+    allotmentsPlotOffers,
+    allotmentsSigningUp,
+    allotmentsPayingFees,
+    allotmentsNoticeToQuit,
+    allotmentsFires,
+    allotmentsDogs,
+    allotmentsWater,
+    allotmentsKeys,
+    allotmentsDrones,
+    allotmentsTrees,
+    allotmentsAsbestos,
+    allotmentsVermin,
+    allotmentsKeyDeposit
   ]
 );
 
