@@ -17,6 +17,7 @@ class NewsArticle {
 }
 
 const newsArticles = [
+  <div hidden>
    new NewsArticle(
     "The NEC Housing system is ready to launch today.",
     `
@@ -40,5 +41,6 @@ const newsArticles = [
     "2025-11-03",
     "2026-02-03"
   ),
+  </div>
    
 ];
