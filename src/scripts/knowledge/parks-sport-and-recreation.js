@@ -56,7 +56,7 @@ class FormPSaR extends CorePSaR {
 
 //#region Allotments
 
-const eligibility = new ContentPSaR(
+const allotmentsEligibility = new ContentPSaR(
   "allotmentsEligibility",
   "Eligibility",
   "Who can apply for an allotment plot",
@@ -434,7 +434,7 @@ const allotmentsParks = new MenuPSaR(
   "Allotments",
   "Comprehensive FAQs for Sheffield City Council allotments",
   [
-    eligibility,
+    allotmentsEligibility,
     contact,
     applying,
     plotOffers,
