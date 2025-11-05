@@ -111,7 +111,7 @@ const allotmentsApplying = new ContentPSaR(
   `
     <p>
     Applications can be made online at 
-    <a href="https://www.sheffield.gov.uk/parks-sport-recreation/allotments" 
+    <a href="https://sheffield.colonycloud.co.uk/" 
     target="_blank">Sheffield Allotments</a>, by email to <a 
     href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a>, 
     or by post to Allotment Office, The Centre in the Park, Guildford Avenue, 
@@ -429,6 +429,185 @@ const allotmentsKeyDeposit = new ContentPSaR(
   { date: "04/11/2025", name: "Andy Walker" }
 );
 
+const allotmentsEnquiries = new ContentPSaR(
+  "allotmentsEnquiries",
+  "Allotment Enquiries",
+  "Frequently asked questions about allotments in Sheffield, including waiting lists, plot availability, co-workers, and livestock rules.",
+  `
+  <p>
+    Below are answers to the most common allotment enquiries. If you need to contact us,
+    please log a case using the <strong>Allotment Enquiries</strong> form.
+  </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Where am I on the allotment waiting list?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you would like to know your position on the waiting list, please log a case using the
+        <strong>Allotment Enquiries</strong> form. Include your name, home address and the allotment site you have applied for.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>There are empty plots on my site — why can’t I have one?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Empty plots may already be on offer to other applicants who are higher up the waiting list.  
+        If you have questions about empty plots, please log a case using the <strong>Allotment Enquiries</strong> form and include the allotment site name.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How long will it take to get a plot?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        We are unable to provide exact waiting times, as there are many factors that can affect this.  
+        However, we can tell you how long the next person on the list has been waiting.  
+        Please log a case using the <strong>Allotment Enquiries</strong> form if you would like this information.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>If I change to a different site, will I keep my place?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        No. If you change to a different allotment site, you will go to the back of that site’s waiting list.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How many people are on the waiting list for my site?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can visit the <a href="https://www.sheffield.gov.uk/leisure/parks-woodlands/allotments" target="_blank">Allotments</a>
+        page to see how many plots and applicants there are at each site.  
+        For specific information, please log a case using the <strong>Allotment Enquiries</strong> form.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>I applied for two sites — where am I on both lists?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applicants can only be on one waiting list at a time. If you have applied for two sites, 
+        you will need to decide which one you prefer to remain on.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How big are the plots and how much do they cost?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Details about plot sizes and annual costs (rent and water) can be found on the 
+        <a href="https://www.sheffield.gov.uk/leisure/parks-woodlands/allotments" target="_blank">Allotments</a> 
+        page under <strong>Charges and payments</strong>.  
+        When a plot is offered, this information is also included in the acceptance form.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How do I add a co-worker to my plot?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You can have one registered co-worker per plot.  
+        To add one, please log a case using the <strong>Allotment Enquiries</strong> form and include:
+      </p>
+      <ul>
+        <li>Your name and plot details</li>
+        <li>The co-worker’s name, address, contact number, and email address</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How do I order a replacement key?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you need a replacement site key, please log a case using the <strong>Allotment Enquiries</strong> form and include your site and plot number.  
+        You will then receive payment details. The current replacement key cost is £30.00 (subject to confirmation).
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How do I quit my plot?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        If you wish to give up your plot, please log a case using the <strong>Allotment Enquiries</strong> form and include:
+      </p>
+      <ul>
+        <li>Your site and plot number</li>
+        <li>Confirmation that you would like to end your tenancy</li>
+      </ul>
+      <p>If you have received a "card to quit" letter, you can return this instead.</p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Can I keep animals or pigeons on my plot?</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        You are not allowed to keep livestock such as cockerels, ducks, pigs, or horses.  
+        You may, subject to permission, keep bees, up to 6 hens, 2 rabbits, or pigeons (on selected sites).  
+        All birds must be registered with DEFRA:
+        <a href="https://www.gov.uk/guidance/register-as-a-keeper-of-less-than-50-poultry-or-other-captive-birds" target="_blank">
+          Register as a keeper of less than 50 poultry or other captive birds
+        </a>.
+      </p>
+    </div>
+  </details>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "allotment_information_requested" },
+  { typeKey: "allotment_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Allotments", "Enquiries", "Waiting List", "Plots", "Sheffield"],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "05/11/2025", name: "Andy Walker" }
+);
+
 const allotmentsParks = new MenuPSaR(
   "allotments",
   "Allotments",
@@ -449,7 +628,8 @@ const allotmentsParks = new MenuPSaR(
     allotmentsTrees,
     allotmentsAsbestos,
     allotmentsVermin,
-    allotmentsKeyDeposit
+    allotmentsKeyDeposit,
+    allotmentsEnquiries
   ]
 );
 
