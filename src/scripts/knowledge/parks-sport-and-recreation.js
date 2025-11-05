@@ -146,8 +146,12 @@ const allotmentsPlotOffers = new ContentPSaR(
       <li>If no response within 28 days, you will be removed from the list; appeals are possible.</li>
       <li>Appeals must be in writing to <a href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a> for the attention of the Allotment Manager.</li>
     </ul>
+    <p>
+      If you would like to ask about your place on the waiting list or discuss a plot offer, 
+      use the <strong>Request allotment information</strong> button below.
+    </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
   { typeKey: "allotment_information_requested" },
   { typeKey: "allotment_information_provided" },
   {
@@ -174,8 +178,12 @@ const allotmentsSigningUp = new ContentPSaR(
     Failure to submit within 5 working days triggers a reminder; 
     after 10 working days, the offer may be withdrawn.
     </p>
+    <p>
+      If you need to ask about your acceptance documents or the signing-up process, 
+      use the <strong>Request allotment information</strong> button below.
+    </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
   { typeKey: "allotment_information_requested" },
   { typeKey: "allotment_information_provided" },
   {
@@ -225,8 +233,12 @@ const allotmentsNoticeToQuit = new ContentPSaR(
       <li>Successful appeals require clearing arrears within 1 month.</li>
       <li>Three Notices to Quit during a tenancy: the third stands. Appeals for exceptional circumstances are possible.</li>
     </ul>
+    <p>
+      If you have received a Notice to Quit or wish to discuss your situation, 
+      use the <strong>Request allotment information</strong> button below.
+    </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
   { typeKey: "allotment_information_requested" },
   { typeKey: "allotment_information_provided" },
   {
@@ -357,7 +369,7 @@ const allotmentsTrees = new ContentPSaR(
   parksandcountryside@sheffield.gov.uk</a> or call 0114 250 0500.
   </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report tree", formName: "report_tree" },
   { typeKey: "allotment_information_requested" },
   { typeKey: "allotment_information_provided" },
   {
@@ -417,8 +429,12 @@ const allotmentsKeyDeposit = new ContentPSaR(
     <li>Mul-T-Lock keys: £30 deposit, £25 refundable</li>
     <li>Lost or stolen keys: £30 replacement charge</li>
   </ul>
+  <p>
+      To request key replacement or refund details, use the 
+      <strong>Request allotment information</strong> button below.
+  </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
   { typeKey: "allotment_information_requested" },
   { typeKey: "allotment_information_provided" },
   {
@@ -449,6 +465,10 @@ const allotmentsEnquiries = new ContentPSaR(
         If you would like to know your position on the waiting list, please log a case using the
         <strong>Allotment Enquiries</strong> form. Include your name, home address and the allotment site you have applied for.
       </p>
+      <p>
+      To request an update or more detailed information about your place on the waiting list,
+      use the <strong>Request allotment information</strong> button below.
+    </p>
     </div>
   </details>
 
@@ -547,6 +567,10 @@ const allotmentsEnquiries = new ContentPSaR(
         <li>Your name and plot details</li>
         <li>The co-worker’s name, address, contact number, and email address</li>
       </ul>
+      <p>
+      If you need further guidance or confirmation about co-worker eligibility,
+      use the <strong>Request allotment information</strong> button below.
+    </p>
     </div>
   </details>
 
@@ -560,6 +584,10 @@ const allotmentsEnquiries = new ContentPSaR(
         If you need a replacement site key, please log a case using the <strong>Allotment Enquiries</strong> form and include your site and plot number.  
         You will then receive payment details. The current replacement key cost is £30.00 (subject to confirmation).
       </p>
+      <p>
+      To request a key or ask about the replacement process, use the
+      <strong>Request allotment information</strong> button below.
+    </p>
     </div>
   </details>
 
@@ -576,7 +604,13 @@ const allotmentsEnquiries = new ContentPSaR(
         <li>Your site and plot number</li>
         <li>Confirmation that you would like to end your tenancy</li>
       </ul>
-      <p>If you have received a "card to quit" letter, you can return this instead.</p>
+      <p>
+      If you have received a "card to quit" letter, you can return this instead.
+      </p>
+      <p>
+      To formally submit your notice or ask about the process for ending your tenancy,
+      use the <strong>Request allotment information</strong> button below.
+    </p>
     </div>
   </details>
 
@@ -594,10 +628,14 @@ const allotmentsEnquiries = new ContentPSaR(
           Register as a keeper of less than 50 poultry or other captive birds
         </a>.
       </p>
+      <p>
+      To request permission or ask about livestock guidelines, use the 
+      <strong>Request allotment information</strong> button below.
+    </p>
     </div>
   </details>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
   { typeKey: "allotment_information_requested" },
   { typeKey: "allotment_information_provided" },
   {
