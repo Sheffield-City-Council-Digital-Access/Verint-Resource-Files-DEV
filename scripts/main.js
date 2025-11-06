@@ -1019,7 +1019,6 @@ function handleOnReadyEvent(_, kdf) {
   // --- HANDLE LOCATOR BUTTON CLICK ---------------------------------------- \\
 
   $(".locator-btn, .address-btn").click(function () {
-    console.log("Locator button clicked");
     checkAddressHasBeenSet();
   });
 
@@ -3726,6 +3725,7 @@ function checkAddressHasBeenSet(action = "next page") {
 
   // Address Section
   function handleAddressSection() {
+    console.log('handleAddressSection')
     const fullAddress = getInput("fullAddress");
     const fullAddressHasValue = fullAddress && KDF.getVal(fullAddress.name);
 
@@ -3735,13 +3735,16 @@ function checkAddressHasBeenSet(action = "next page") {
     if (!siteCode) siteCode = getInput("usrn");
 
     if (fullAddressHasValue) {
+      console.log('fullAddressHasValue')
       if (siteName && siteCode) {
+        console.log('siteName', siteName, 'siteCode', siteCode)
         const siteNameHasValue = KDF.getVal(siteName.name);
         const siteCodeVal = KDF.getVal(siteCode.name);
         const siteCodeHasValue = siteCodeVal;
         const validSiteCode = acceptGMSites
           ? true
           : siteCodeVal && siteCodeVal.startsWith("344");
+        console.log('validSiteCode', validSiteCode)
         if (siteNameHasValue && siteCodeHasValue && validSiteCode) {
           goNextOrComplete();
         } else {
@@ -3810,9 +3813,9 @@ function checkAddressHasBeenSet(action = "next page") {
       }
     }
   }
-
-  // Main logic: run sections in order
-  console.log("Main logic: running sections in order");
+  console.log("handleAddressSection", handleAddressSection());
+  // console.log("handleMapSection", handleMapSection());
+  // console.log("handleGeoSection", handleGeoSection());
   if (!handleAddressSection()) {
     if (!handleMapSection()) {
       handleGeoSection();
