@@ -133,25 +133,28 @@ const allotmentsApplying = new ContentPSaR(
   "Applying for a Plot",
   "How to apply for an allotment plot",
   `
-    <p>
-      To apply for an allotment in Sheffield, you’ll need to complete the online 
-      application form using the link below. Applications are open to Sheffield 
-      residents and those living within 1 mile of the city boundary.
-    </p>
-
+    <h3>To apply for an allotment plot you must:</h3>
     <ul>
-      <li>You can only be on one waiting list at a time and only once per list (exceptions at discretion of the office).</li>
+      <li>Be a Sheffield resident or live within 1 mile of the city boundary.</li>
+      <li>Only be on one waiting list at a time (exceptions at the discretion of the office).</li>
+      <li>Apply using the online form: 
+        <a href="https://sheffield.colonycloud.co.uk/" target="_blank" rel="noopener noreferrer">
+          https://sheffield.colonycloud.co.uk/
+        </a>
+      </li>
     </ul>
 
     <button
       type="button"
       class="dform_widget email-btn dform_widget_type_button"
-      aria-label="Apply for an allotment"
+      aria-label="Send link to allotment application"
       onclick="
-        window.open('https://sheffield.colonycloud.co.uk/', '_blank');
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20Application\`
       "
     >
-      Apply for an allotment
+      Send link to apply for an allotment
     </button>
   `,
   { buttonLabel: "", formName: "" },
