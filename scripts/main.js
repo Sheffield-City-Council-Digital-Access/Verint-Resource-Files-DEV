@@ -5697,7 +5697,10 @@ function buildTypeAhead(inputName, listItems, listItemsOnly = true) {
  */
 function buildRelatedServiceCards(servicesData, containerId) {
   const container = document.getElementById(containerId);
-  const svgUrl = '../icons/arrow-right-primary-darkened.svg';
+  const baseUrl = hostname.startsWith('sheffielddev') ? 'https://cdn.ukpreview.empro.verintcloudservices.com/tenants/sheffielddev'
+  : hostname.startsWith('sheffieldqa') ? 'https://cdn.ukpreview.empro.verintcloudservices.com/tenants/sheffieldqa'
+  : 'https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield';
+  const svgUrl = `${baseUrl}/icons/arrow-right-primary-darkened.svg`
 
   if (!container) {
     console.warn(`Container with ID '${containerId}' not found.`);
