@@ -90,9 +90,10 @@
 #dform_container button.link-btn,
 #dform_container button.secondary-link-btn,
 #dform_container button.action-link-btn {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
   justify-content: start;
+  text-align: start;
   min-width: fit-content;
   width: fit-content;
   max-width: fit-content;
@@ -106,7 +107,6 @@
   border-radius: 0;
   padding: 0;
   text-decoration: none;
-  /* text-underline-offset: 0.25rem; */
 }
 
 #dform_container button.secondary-link-btn {
@@ -192,7 +192,7 @@
 }
 
 #dform_container .dform_widget_type_buttonset.action-link-btn-container:focus-within {
-  width: max-content;
+  /* width: max-content; */
   background: var(--c-focus-links);
   /* border-bottom: 2px solid var(--c-greys-black); */
 }

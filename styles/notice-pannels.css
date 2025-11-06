@@ -191,7 +191,7 @@
 #dform_container .related-services-card {
   margin: unset;
   display: grid;
-  grid-template-columns: 1fr max-content;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   column-gap: var(--spacing-sm);
   /* height: 8.8125rem; 141px */
@@ -200,6 +200,18 @@
   padding: var(--spacing-md);
   padding-bottom: 0;
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  #dform_container .related-services-card {
+    grid-template-columns: repeat(1fr, 2);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #dform_container .related-services-card {
+    grid-template-columns: repeat(1fr, 3);
+  }
 }
 
 #dform_container .related-services-menu .related-services-card h3 {
