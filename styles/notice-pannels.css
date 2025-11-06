@@ -184,20 +184,18 @@
 #dform_container .related-services-menu {
   display: grid;
   grid-template-columns: 1fr;
-  align-items: stretch;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: center; 
   gap: var(--spacing-md);
 }
 
 @media screen and (min-width: 768px) {
-  #dform_container .related-menu-card {
+  #dform_container .related-services-menu { 
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 960px) {
-  #dform_container .related-menu-card {
+  #dform_container .related-services-menu {
     grid-template-columns: repeat(3, 1fr);
   }
 }
