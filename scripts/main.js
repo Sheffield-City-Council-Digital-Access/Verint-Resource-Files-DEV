@@ -3680,7 +3680,7 @@ function closeCase() {
 
 // --- ADDRESS FUNCTIONS ---------------------------------------------------- \\
 
-function checkAddressHasBeenSet(action = "next page") {
+function checkAddressHasBeenSet(action = "next") {
   const currentPageId = getCurrentPageId();
 
   // Helper: Get element by custom alias
@@ -3716,6 +3716,7 @@ function checkAddressHasBeenSet(action = "next page") {
 
   // Helper: Go to next or complete page
   function goNextOrComplete() {
+    console.log('goNextOrComplete', action)
     if (action === "submit") {
       KDF.gotoPage("complete", true, true, false);
     } else {
@@ -3744,8 +3745,9 @@ function checkAddressHasBeenSet(action = "next page") {
         const validSiteCode = acceptGMSites
           ? true
           : siteCodeVal && siteCodeVal.startsWith("344");
-        console.log('validSiteCode', validSiteCode)
+
         if (siteNameHasValue && siteCodeHasValue && validSiteCode) {
+          console.log('siteNameHasValue', siteNameHasValue, 'siteCodeHasValue', siteCodeHasValue, 'validSiteCode', validSiteCode)
           goNextOrComplete();
         } else {
           const errorMessage = acceptGMSites
@@ -3821,9 +3823,6 @@ function checkAddressHasBeenSet(action = "next page") {
       handleGeoSection();
     }
   }
-
-  KDF.checkProgress();
-  console.log("KDF.checkProgress called");
 }
 
 function setProfileAddressDetails(targetPageId, kdf) {
