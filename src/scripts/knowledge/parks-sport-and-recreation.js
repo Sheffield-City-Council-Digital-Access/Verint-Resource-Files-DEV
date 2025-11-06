@@ -673,6 +673,282 @@ const allotmentsParks = new MenuPSaR(
 
 //#endregion Allotments
 
+//#region Parks Enquiries
+
+const parksAnimals = new ContentPSaR(
+  "parksAnimals",
+  "Sick, Hurt, or Injured Animals",
+  "What to do if you find a sick or injured animal in a park",
+  `
+    <h4>Animals inside park enclosures (e.g., Graves Park Animal Farm)</h4>
+    <ul>
+      <li>Report immediately and keep visitors away from the area if safe until staff arrive.</li>
+    </ul>
+
+    <h4>Loose or injured wild animals in public areas</h4>
+    <ul>
+      <li>If the animal poses a risk to people, traffic, or staff, call <strong>999</strong> immediately.</li>
+      <li>Parks are not responsible for wild animals — contact appropriate organisations instead:</li>
+      <ul>
+        <li><strong>RSPB Helpline:</strong> 01767 693690</li>
+        <li><strong>Local Wildlife Trusts:</strong> (add local options if available)</li>
+      </ul>
+    </ul>
+    <p>
+      To report a sick or injured animal in a park enclosure, use the
+      <strong>Parks Enquiry</strong> button below.
+    </p>
+  `,
+  { buttonLabel: "Parks Enquiry", formName: "parks_country_enquiry" },
+  { typeKey: "parks_information_requested" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Parks", "Animals", "Wildlife", "Injured", "Farm"],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "06/11/2025", name: "Andy Walker" }
+);
+
+const parksEvents = new ContentPSaR(
+  "parksEvents",
+  "Events and Visits",
+  "Information about holding or attending events in parks",
+  `
+    <p>All event or visit enquiries should be submitted using the Parks Enquiry form.</p>
+    <ul>
+      <li>Event permissions</li>
+      <li>School or family visits</li>
+      <li>Food vendors / ice cream vans</li>
+      <li>Volunteering, donations, litter picking</li>
+    </ul>
+    <p>
+      To submit an enquiry about events or visits, use the
+      <strong>Parks Enquiry</strong> button below.
+    </p>
+  `,
+  { buttonLabel: "Parks Enquiry", formName: "parks_country_enquiry" },
+  { typeKey: "parks_information_requested" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Parks", "Events", "Visits", "Permissions"],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "06/11/2025", name: "Andy Walker" }
+);
+
+const parksDonations = new ContentPSaR(
+  "parksDonations",
+  "Donations to Animal Farm",
+  "Information about donating to Graves Park Animal Farm",
+  `
+    <ul>
+      <li>Offers of hay, food, sawdust, blankets, or other materials can be submitted using the Parks Enquiry form.</li>
+      <li>Requests to donate animals: Graves Park does not rescue animals; suggest contacting <strong>Heeley City Farm</strong>.</li>
+    </ul>
+    <p>
+      To submit a donation enquiry, use the <strong>Parks Enquiry</strong> button below.
+    </p>
+  `,
+  { buttonLabel: "Parks Enquiry", formName: "parks_country_enquiry" },
+  { typeKey: "parks_information_requested" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Parks", "Donations", "Animal Farm", "Heeley City Farm"],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "06/11/2025", name: "Andy Walker" }
+);
+
+const parksVolunteering = new ContentPSaR(
+  "parksVolunteering",
+  "Volunteering and Work Experience",
+  "Opportunities for volunteering or work experience at parks and the Animal Farm",
+  `
+    <ul>
+      <li>All volunteering requests should be submitted via the Parks Enquiry form.</li>
+      <li>Customers can check the Graves Park Animal Farm Facebook page for updates.</li>
+      <li><strong>Generic response (until August 2026):</strong><br>
+      “We offer limited volunteer opportunities and hold trial mornings each September. Currently full for 2025/26; future openings will be posted on our Facebook page.”</li>
+    </ul>
+    <p>
+      To submit a volunteering enquiry, use the <strong>Parks Enquiry</strong> button below.
+    </p>
+  `,
+  { buttonLabel: "Parks Enquiry", formName: "parks_country_enquiry" },
+  { typeKey: "parks_information_requested" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Parks", "Volunteering", "Work Experience", "Animal Farm"],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "06/11/2025", name: "Andy Walker" }
+);
+
+const parksVisitorInfo = new ContentPSaR(
+  "parksVisitorInfo",
+  "Animal Farm Visitor Information",
+  "General visitor information for Graves Park Animal Farm",
+  `
+    <ul>
+      <li><strong>Admission:</strong> Free; donations welcome.</li>
+      <li><strong>Opening hours:</strong> 10am–3:30pm, 7 days a week.</li>
+      <li><strong>Parking:</strong> Small pay-and-display available.</li>
+      <li><strong>Feed:</strong> Available to purchase.</li>
+      <li><strong>Café / Toilets:</strong> Coffee cart on site; Rose Garden Café nearby.</li>
+      <li><strong>Animal sales/hire/sponsorship:</strong> Not available.</li>
+    </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "parks_information_requested" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Parks", "Visitor Info", "Animal Farm", "Opening Hours"],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "06/11/2025", name: "Andy Walker" }
+);
+
+const parksBarnHire = new ContentPSaR(
+  "parksBarnHire",
+  "Barn Hire",
+  "How to book the Animal Farm barn for private use",
+  `
+    <ul>
+      <li><strong>Fee:</strong> £50 flat rate (10am–3:30pm).</li>
+      <li>Provide name, contact info, date, duration, and number of attendees.</li>
+    </ul>
+    <p>
+      To submit a barn hire enquiry, use the <strong>Parks Enquiry</strong> button below.
+    </p>
+  `,
+  { buttonLabel: "Parks Enquiry", formName: "parks_country_enquiry" },
+  { typeKey: "parks_information_requested" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Parks", "Barn Hire", "Animal Farm", "Booking"],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "06/11/2025", name: "Andy Walker" }
+);
+
+const parksEcology = new ContentPSaR(
+  "parksEcology",
+  "Ecology and Community Forestry",
+  "Information about tree planting, wildlife, and forestry activities",
+  `
+    <ul>
+      <li>Disturbance to nesting birds or wildlife crime</li>
+      <li>Requests to plant personal trees (not permitted)</li>
+      <li>Commemorative tree applications</li>
+      <li>Trees requiring attention (include location)</li>
+      <li>Forestry volunteering and events</li>
+    </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "parks_information_requested" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Parks", "Forestry", "Ecology", "Wildlife", "Trees"],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "06/11/2025", name: "Andy Walker" }
+);
+
+const parksWoodCollection = new ContentPSaR(
+  "parksWoodCollection",
+  "Wood Collection",
+  "Policy on collecting or removing wood from parks or woodland",
+  `
+    <p>Wood collection is not permitted. Removal of any wood or natural materials from Sheffield City Council land is prohibited.</p>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "parks_information_requested" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Parks", "Wood Collection", "Forestry", "Rules"],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "06/11/2025", name: "Andy Walker" }
+);
+
+const parksAdvertising = new ContentPSaR(
+  "parksAdvertising",
+  "Advertising and Room Bookings",
+  "Information about advertising or booking rooms within parks venues",
+  `
+    <ul>
+      <li>Venues include Dorothy Fox Centre and Ecclesall Woods.</li>
+      <li>Bookings are handled through the Sheffield Council Booking System.</li>
+    </ul>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "parks_information_requested" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Parks", "Advertising", "Room Bookings", "Venues"],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "06/11/2025", name: "Andy Walker" }
+);
+
+const parksWeddings = new ContentPSaR(
+  "parksWeddings",
+  "Weddings",
+  "How to apply for a wedding at Sheffield parks venues",
+  `
+    <p>
+      Weddings are permitted at the following venues:
+    </p>
+    <ul>
+      <li>Sheffield Botanical Gardens</li>
+      <li>Ecclesall Woods</li>
+      <li>Weston Park Bandstand</li>
+    </ul>
+    <p>
+      To submit a wedding enquiry, use the <strong>Parks Enquiry</strong> button below.
+    </p>
+  `,
+  { buttonLabel: "Parks Enquiry", formName: "parks_country_enquiry" },
+  { typeKey: "parks_information_requested" },
+  { typeKey: "parks_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Parks", "Weddings", "Ceremonies", "Booking"],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "06/11/2025", name: "Andy Walker" }
+);
+
+const parksEnquiries = new MenuPSaR(
+  "parksEnquiries",
+  "Parks Enquiries",
+  "General enquiries and information related to Parks and Countryside services",
+  [
+    parksAnimals,
+    parksEvents,
+    parksDonations,
+    parksVolunteering,
+    parksVisitorInfo,
+    parksBarnHire,
+    parksEcology,
+    parksWoodCollection,
+    parksAdvertising,
+    parksWeddings
+  ]
+);
+
+//#endregion Parks Enquiries
+
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
@@ -680,5 +956,7 @@ const parksSportAndRecreation = new ServicePSaR(
   "parksSportAndRecreation",
   "Parks, Sport and Recreation",
   `Parks, gardens, trees and woodlands, allotments, leisure and sports facilities, what's on, tourist information…`,
-  [allotmentsParks]
+  [allotmentsParks,
+   parksEnquiries
+  ]
 );
