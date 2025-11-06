@@ -3734,6 +3734,7 @@ function checkAddressHasBeenSet(action = "next") {
     if (!siteName) siteName = getInput("streetName");
     let siteCode = getInput("siteCode");
     if (!siteCode) siteCode = getInput("usrn");
+    console.log("siteCode", siteCode)
 
     if (fullAddressHasValue) {
       console.log('fullAddressHasValue')
