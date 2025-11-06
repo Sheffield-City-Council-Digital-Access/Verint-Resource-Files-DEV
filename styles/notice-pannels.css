@@ -188,7 +188,8 @@
   gap: var(--spacing-md);
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) { */
+@media screen and (min-width: 820px) {
   #dform_container .related-services-menu { 
     grid-template-columns: repeat(2, max-content);
   }
