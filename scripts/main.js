@@ -5697,6 +5697,7 @@ function buildTypeAhead(inputName, listItems, listItemsOnly = true) {
  */
 function buildRelatedServiceCards(servicesData, containerId) {
   const container = document.getElementById(containerId);
+  const svgUrl = '../icons/arrow-right-primary-darkened.svg';
 
   if (!container) {
     console.warn(`Container with ID '${containerId}' not found.`);
@@ -5734,10 +5735,8 @@ function buildRelatedServiceCards(servicesData, containerId) {
       description.textContent = service.description;
 
       const svg = `
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-            </svg>
-        `;
+        <img src="${svgUrl}" alt="Right arrow icon" class="related-services-card-icon" />
+      `;
 
       cardLink.appendChild(headline);
       cardLink.appendChild(description);
