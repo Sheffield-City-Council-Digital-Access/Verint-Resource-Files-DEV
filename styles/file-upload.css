@@ -1,18 +1,14 @@
-#dform_container input[type="file"],
-#dform_container input[type="file"]::-webkit-file-upload-button,
-#dform_container input[type="file"]::file-selector-button {
+#dform_container input[type="file"] {
+  padding: 0 !important;
   border: none;
   height: 100%;
-  font-family: var(--font-family);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-normal);
-  color: var(--c-core-brand-secondary);
 }
 
-#dform_container input[type="file"]::file-selector-button {
-  padding-inline: var(--spacing-xxs);
+input[type="file"]::file-selector-button {
+  padding-inline: var(--spacing-xs);
+  height: 100%;
   border-radius: 5px;
-  border: solid 1px var(--c-core-brand-body);
+  border: solid 1px #3D3D3B;
   margin-right: var(--spacing-xs);
 }
 
@@ -24,32 +20,26 @@
   display: none;
 }
 
-#dform_container div[data-type="file"] > div:nth-child(2) {
+#dform_container div[data-type="file"]>div:nth-child(2) {
   display: grid;
-  grid-template-columns: 7.7rem auto;
+  grid-template-columns: 8.3rem auto;
   align-items: baseline;
 }
 
 @media screen and (min-width: 960px) {
-  #dform_container div[data-type="file"] > div:nth-child(2) {
-    grid-template-columns: 8.8rem auto;
+  #dform_container div[data-type="file"]>div:nth-child(2) {
+    grid-template-columns: 9.4rem auto;
   }
 }
 
 #dform_container input[type="file"] {
+  padding-left: 0 !important;
   grid-column: 1 / -1;
   grid-row: 2 / 3;
   z-index: 0;
-  height: var(--field-height-md);
+  height: auto;
   background: var(--c-greys-white);
-  border: 2px solid transparent !important;
-}
-
-#dform_container input[type="file"]:focus {
-  box-shadow: 0 0 0 3px var(--c-greys-black) !important;
-  outline: 3px solid var(--c-focus-links) !important;
-  outline-offset: 3px !important;
-  border: 2px solid transparent !important;
+  border: 2px transparent var(--c-core-brand-secondary);
 }
 
 #dform_container .dform_filenames {
@@ -68,25 +58,24 @@
 
 #dform_container .dform_filenames:focus,
 #dform_container .dform_filenames:focus-within,
-#dform_container input[type="file"]:focus ~ .dform_filenames,
-#dform_container input[type="file"]:focus-within ~ .dform_filenames {
+#dform_container input[type="file"]:focus~.dform_filenames,
+#dform_container input[type="file"]:focus-within~.dform_filenames {
   background: var(--c-greys-white);
 }
 
-#dform_container
-  :has(.dform_filenames:focus, .dform_filenames:focus-within)
-  input[type="file"] {
+#dform_container :has(.dform_filenames:focus, .dform_filenames:focus-within) input[type="file"] {
   background: var(--c-greys-white);
   box-shadow: inset 0 0 0 2px var(--c-core-brand-secondary),
     0 0 0 2px var(--color-warning);
 }
 
+
 #dform_container .dform_filenames {
-  max-height: 70%;
+  max-height: 90%;
   transform: translateY(2px);
 }
 
-#dform_container .dform_filenames > span {
+#dform_container .dform_filenames>span {
   display: inline-block;
   cursor: pointer;
   color: var(--c-greys-black);
@@ -101,7 +90,7 @@
   cursor: default;
 }
 
-#dform_container .dform_filenames > span a {
+#dform_container .dform_filenames>span a {
   font-family: var(--font-family);
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-normal);
@@ -109,8 +98,8 @@
   color: var(--c-greys-black);
 }
 
-#dform_container .dform_filenames > span,
-#dform_container .dform_filenames > span a:hover {
+#dform_container .dform_filenames>span,
+#dform_container .dform_filenames>span a:hover {
   color: var(--c-greys-black);
   background: var(--c-greys-white);
   border: none;
@@ -120,7 +109,7 @@
 
 #dform_container .dform_filenames span.file_delete {
   margin-left: var(--spacing-xs);
-  padding-block: 0.1rem 0.3rem;
+  padding: 0;
   font-family: SpartaIcons;
   cursor: pointer;
   font-size: var(--font-size-xl);
@@ -129,7 +118,7 @@
 
 #dform_container .file_delete::after {
   margin-left: var(--spacing-xs);
-  content: "Remove";
+  content: 'Remove';
   font-family: var(--font-family);
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-normal);
@@ -139,12 +128,15 @@
   text-underline-offset: 0.25rem;
 }
 
-#dform_container .file_delete:hover::after,
-#dform_container .file_delete:focus::after {
+#dform_container .file_delete:hover::after {
   text-decoration-thickness: 2px;
 }
 
-#dform_container div[data-type="file"] > div:nth-child(2) br,
+#dform_container .file_delete:focus::after {
+  text-decoration-color: transparent;
+}
+
+#dform_container div[data-type="file"]>div:nth-child(2) br,
 #dform_container .dform_fileupload_progressbar {
   display: none;
 }
