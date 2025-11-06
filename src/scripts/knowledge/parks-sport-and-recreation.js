@@ -62,26 +62,84 @@ const allotmentsEligibility = new ContentPSaR(
   "Who can apply for an allotment plot",
   `
     <p>
-    You must live within the Sheffield City Council boundary 
-    (or not more than 1 mile outside of it) to be eligible for a plot. 
-    If you plan to move to Sheffield, you may join the waiting list beforehand, 
-    but cannot sign up until you meet residency criteria. Moving more than 
-    1 mile outside Sheffield requires giving up your plot.
+      You must live within the Sheffield City Council boundary 
+      (or not more than 1 mile outside of it) to be eligible for a plot. 
+      If you plan to move to Sheffield, you may join the waiting list beforehand, 
+      but cannot sign up until you meet residency criteria. Moving more than 
+      1 mile outside Sheffield requires giving up your plot.
     </p>
-    <p>You must be 18 years old before taking a plot. If you reach the top of 
-    the waiting list before 18, you must wait until your 18th birthday.
+    <p>
+      You must be 18 years old before taking a plot. If you reach the top of 
+      the waiting list before 18, you must wait until your 18th birthday.
     </p>
+
+    <h3>Ready to apply?</h3>
+    <p>
+      You can apply for an allotment online using the Sheffield City Council 
+      Allotment Application Service:
+      <br />
+      <a href="https://sheffield.colonycloud.co.uk/" target="_blank" rel="noopener noreferrer">
+        https://sheffield.colonycloud.co.uk/
+      </a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to apply for an allotment"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20an%20Allotment\`
+      "
+    >
+      Send link to apply for an allotment
+    </button>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "allotment_information_requested" },
   { typeKey: "allotment_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Eligibility", "Plots", "Sheffield"],
+    keywords: ["Allotments", "Eligibility", "Application", "Plots", "Sheffield"],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "06/11/2025", name: "Andy Walker" }
 );
+
+const allotmentsApply = new ContentPSaR(
+  "allotmentsApply",
+  "How to Apply for an Allotment",
+  "Information and link to apply for an allotment plot in Sheffield",
+  `
+    <p>
+      To apply for an allotment in Sheffield, you’ll need to complete the online 
+      application form using the link below. Applications are open to Sheffield 
+      residents and those living within 1 mile of the city boundary.
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Apply for an allotment"
+      onclick="
+        window.location.href = 'https://sheffield.colonycloud.co.uk/';
+      "
+    >
+      Apply for an allotment
+    </button>
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "allotment_information_requested" },
+  { typeKey: "allotment_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Allotments", "Apply", "Plots", "Sheffield"],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "06/11/2025", name: "Andy Walker" }
+);
+
 
 const allotmentsContact = new ContentPSaR(
   "allotmentsContact",
@@ -652,6 +710,7 @@ const allotmentsParks = new MenuPSaR(
   "Comprehensive FAQs for Sheffield City Council allotments",
   [
     allotmentsEligibility,
+    allotmentsApply,
     allotmentsContact,
     allotmentsApplying,
     allotmentsPlotOffers,
