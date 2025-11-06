@@ -3746,14 +3746,12 @@ function checkAddressHasBeenSet(action = "next") {
           ? true
           : siteCodeVal && siteCodeVal.startsWith("344");
 
+        console.log('siteNameHasValue', siteNameHasValue, 'siteCodeHasValue', siteCodeHasValue, 'validSiteCode', validSiteCode)
         if (siteNameHasValue && siteCodeHasValue && validSiteCode) {
-          console.log('siteNameHasValue', siteNameHasValue, 'siteCodeHasValue', siteCodeHasValue, 'validSiteCode', validSiteCode)
+          console.log("if")
           goNextOrComplete();
         } else {
-          const errorMessage = acceptGMSites
-            ? defaultSelectedAddressMessage
-            : "Choose a location on the public highway";
-          showSelectedAddressError(errorMessage);
+          console.log("else")
         }
       } else {
         goNextOrComplete();
