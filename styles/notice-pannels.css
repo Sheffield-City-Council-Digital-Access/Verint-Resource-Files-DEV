@@ -191,20 +191,20 @@
 
 @media screen and (min-width: 768px) {
   #dform_container .related-menu-card {
-    grid-template-columns: repeat(1fr, 2);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 960px) {
   #dform_container .related-menu-card {
-    grid-template-columns: repeat(1fr, 3);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 #dform_container .related-services-card {
   margin: unset;
   display: grid;
-  grid-template-columns: 1fr max-content;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   column-gap: var(--spacing-sm);
   /* height: 8.8125rem; 141px */
