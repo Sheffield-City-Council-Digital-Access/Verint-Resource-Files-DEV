@@ -145,11 +145,6 @@
   --field-width-100: 100%;
   --field-width-75: 75%;
   --field-width-50: 50%;
-  --field-width-25: 25%;
-
-  --field-width-200px: 12.5rem;
-  /* 200px */
-
   --field-width-max-4: 8.75rem;
   /* 140px */
   --field-width-max-2: 4.375rem;
@@ -160,10 +155,6 @@
   /* Field Padding */
   --field-padding: 0.625rem 0.9375rem;
   /* 10px 15px */
-
-  /* Field Spacing */
-  --field-spacing: 1rem;
-  /* 16px */
 }
 
 *,
@@ -179,6 +170,11 @@
   color: var(--c-greys-black);
   outline: none !important;
   box-shadow: inset 0 -2px 0 0 var(--c-greys-black);
+}
+
+::selection {
+  background-color: var(--c-focus-links);
+  color: var(--c-greys-black);
 }
 
 #dform_container .dform_hidden,
@@ -254,10 +250,6 @@ body {
     /* 40px */
     --spacing-xxl: 1.875rem;
     /* 30px */
-
-    /* Field Spacing */
-    --field-spacing: 2rem;
-    /* 32px */
   }
 }
 
