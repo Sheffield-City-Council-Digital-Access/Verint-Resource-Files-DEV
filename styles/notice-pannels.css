@@ -213,12 +213,6 @@
   border-radius: 0.9375rem; /* 15px */
 }
 
-@media screen and (min-width: 768px) {
-  #dform_container .related-services-menu { 
-    grid-template-columns: repeat(2, max-content);
-  }
-}
-
 #dform_container .related-services-menu .related-services-card h3 {
   margin: unset;
   padding: unset;
@@ -240,6 +234,7 @@
 
 #dform_container .related-services-menu .related-services-card:focus {
   border-radius: 0.9375rem; /* 15px */
+  border-bottom: none !important;
 } 
 
 #dform_container .related-services-menu .related-services-card:focus h3,
@@ -248,5 +243,5 @@
 }
 
 #dform_container .related-services-menu .related-services-card:focus img {
-  filter: grayscale(1);
+  filter: grayscale(1) brightness(0.5);
 }
