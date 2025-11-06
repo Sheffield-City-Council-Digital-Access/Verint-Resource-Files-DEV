@@ -174,13 +174,19 @@ const allotmentsPlotOffers = new ContentPSaR(
   "How plots are offered from the waiting list",
   `
     <p>
-    Applicants are selected from the waiting list on a first-come, 
-    first-served basis. Offers are made via email (or post if no email).
+      Applicants are selected from the waiting list on a first-come, first-served basis. 
+      When you reach the top of your chosen list, you’ll be offered a specific plot by email 
+      (or by post if you do not have an email address).
     </p>
     <ul>
-      <li>Contact the office within 10 working days (14 for post) to accept, or the offer may be withdrawn.</li>
-      <li>If no response within 28 days, you will be removed from the list; appeals are possible.</li>
-      <li>Appeals must be in writing to <a href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a> for the attention of the Allotment Manager.</li>
+      <li>You must contact the office within 10 working days of the offer (14 for offers sent by post) to accept, or the offer may be withdrawn.</li>
+      <li>If we receive no response within 28 days, we’ll assume you no longer wish to apply and remove your name from the waiting list.</li>
+      <li>If you decline an offer, you may stay on the list once; further refusals could result in removal.</li>
+      <li>Plot offers are site-specific and cannot be transferred to another allotment site.</li>
+      <li>
+        Appeals must be made in writing using the 
+        <strong>Request allotment information</strong> button below.
+      </li>
     </ul>
     <p>
       If you would like to ask about your place on the waiting list or discuss a plot offer, 
@@ -192,31 +198,32 @@ const allotmentsPlotOffers = new ContentPSaR(
   { typeKey: "allotment_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Plot Offers", "Waiting List"],
+    keywords: ["Allotments", "Plot Offers", "Waiting List", "Eligibility", "Appeals"],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "06/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsSigningUp = new ContentPSaR(
   "allotmentsSigningUp",
-  "Signing Up",
+  "Signing Up for a Plot",
   "Process after accepting a plot offer",
   `
     <p>
-    Return your acceptance form immediately after viewing the plot along with:
+      If you accept a plot, you must return your acceptance form immediately after viewing it, 
+      along with the following documents:
     </p>
     <ul>
       <li>Photo ID and proof of address</li>
       <li>Proof of concession eligibility, if applicable</li>
     </ul>
     <p>
-    Failure to submit within 5 working days triggers a reminder; 
-    after 10 working days, the offer may be withdrawn.
+      If your acceptance form and supporting documents are not received by the office within 5 working days, 
+      you will receive a reminder by email. If the documents are still not received after a further 5 working days, 
+      the offer may be withdrawn and your name removed from the waiting list.
     </p>
     <p>
-      If you need to ask about your acceptance documents or the signing-up process, 
-      use the <strong>Request allotment information</strong> button below.
+      Use the <strong>Request allotment information</strong> button below to submit your acceptance form.
     </p>
   `,
   { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
@@ -224,10 +231,10 @@ const allotmentsSigningUp = new ContentPSaR(
   { typeKey: "allotment_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Signing Up", "Acceptance"],
+    keywords: ["Allotments", "Signing Up", "Acceptance", "Plot Offers"],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "06/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsPayingFees = new ContentPSaR(
@@ -236,13 +243,17 @@ const allotmentsPayingFees = new ContentPSaR(
   "Details about rent and water charges",
   `
     <p>
-    The rental year runs 1st April to 31st March. Rent is reviewed annually 
-    with notice. All rent is invested in service, amenities, and site maintenance.
+      The rental year runs from 1st April to 31st March. Rent is reviewed and set annually, 
+      with due notice. All allotment rent is invested in the running of the service, 
+      provision of amenities, and maintenance of sites.
     </p>
     <ul>
-      <li>Water charges apply if the site has water supply.</li>
-      <li>Pay promptly upon receiving your invoice.</li>
-      <li>If unable to pay in full, contact the Council to discuss options.</li>
+      <li>You (the tenant) will be charged rent, plus a water charge if your site has a water supply.</li>
+      <li>There are a range of ways to pay. You are responsible for paying promptly on receipt of your invoice, 
+          whichever payment method you choose.</li>
+      <li>If you opt for direct debit, you are responsible for ensuring payments are deducted from your account.</li>
+      <li>If you would struggle to pay your rent in full immediately, it is vital to contact the Council promptly 
+          on receipt of your invoice; there may be options to help.</li>
     </ul>
   `,
   { buttonLabel: "", formName: "" },
@@ -250,10 +261,10 @@ const allotmentsPayingFees = new ContentPSaR(
   { typeKey: "allotment_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Rent", "Payment", "Water Charges"],
+    keywords: ["Allotments", "Rent", "Payment", "Water Charges", "Direct Debit"],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "06/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsNoticeToQuit = new ContentPSaR(
@@ -262,12 +273,14 @@ const allotmentsNoticeToQuit = new ContentPSaR(
   "What happens if rent is not paid",
   `
     <p>
-    Failure to pay within 40 days triggers a Rent Notice to Quit. 
-    Appeals must be made within 14 days.
+      In addition to the Sheffield City Council standard payment policy, if you fail to pay within 40 days of your rent invoice date, you will be issued a Rent ‘Notice to Quit’. 
+      If you receive a Rent Notice to Quit, you may be able to keep the plot by submitting an appeal within 14 days of the issued date.
     </p>
     <ul>
-      <li>Successful appeals require clearing arrears within 1 month.</li>
-      <li>Three Notices to Quit during a tenancy: the third stands. Appeals for exceptional circumstances are possible.</li>
+      <li>Your appeal should be addressed via the <strong>Request allotment information</strong> form below.</li>
+      <li>If your appeal is successful, you must clear all arrears during the 1-month Notice period.</li>
+      <li>If you receive 3 Notices to Quit for non-payment during your tenancy, the 3rd Notice will stand, even if payment is made during the Notice period.</li>
+      <li>Exceptional circumstances can be considered through the appeals process.</li>
     </ul>
     <p>
       If you have received a Notice to Quit or wish to discuss your situation, 
@@ -279,10 +292,10 @@ const allotmentsNoticeToQuit = new ContentPSaR(
   { typeKey: "allotment_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Notice to Quit", "Rent"],
+    keywords: ["Allotments", "Notice to Quit", "Rent", "Arrears", "Appeals"],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "06/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsFires = new ContentPSaR(
@@ -291,10 +304,10 @@ const allotmentsFires = new ContentPSaR(
   "Rules for burning and using fires on plots",
   `
     <ul>
-      <li>Allowed only 1st October to 30th April.</li>
-      <li>Burn only organic material from previous growing seasons.</li>
-      <li>No bonfires on open ground; use an incinerator.</li>
-      <li>Do not cause nuisance (Environmental Protection Act 1990).</li>
+      <li>Allowed only from 1st October to 30th April (subject to changes in legislation).</li>
+      <li>Burn only organic plant material from previous growing seasons.</li>
+      <li>No bonfires on open ground; must be contained in an incinerator or similar.</li>
+      <li>Do not cause a nuisance as defined in the <a href="https://www.legislation.gov.uk/ukpga/1990/43/contents" target="_blank" rel="noopener noreferrer">Environmental Protection Act 1990</a>.</li>
     </ul>
   `,
   { buttonLabel: "", formName: "" },
@@ -302,10 +315,10 @@ const allotmentsFires = new ContentPSaR(
   { typeKey: "allotment_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Fires", "Burning", "Rules"],
+    keywords: ["Allotments", "Fires", "Burning", "Environmental Protection Act"],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "06/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsDogs = new ContentPSaR(
@@ -314,9 +327,11 @@ const allotmentsDogs = new ContentPSaR(
   "Rules for dogs on allotment sites",
   `
     <ul>
-      <li>Must be on leads in communal areas.</li>
-      <li>Must not foul paths or plots.</li>
-      <li>Cannot be left unattended on plots.</li>
+      <li>You can bring your dog on site, but it must not cause a nuisance.</li>
+      <li>Dog waste must be collected and disposed of appropriately.</li>
+      <li>Dogs must be on leads in communal areas and not stray.</li>
+      <li>Dogs must not foul paths or plots.</li>
+      <li>Dogs cannot be left unattended on plots.</li>
     </ul>
   `,
   { buttonLabel: "", formName: "" },
@@ -327,7 +342,7 @@ const allotmentsDogs = new ContentPSaR(
     keywords: ["Allotments", "Dogs", "Rules"],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "06/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsWater = new ContentPSaR(
@@ -336,9 +351,13 @@ const allotmentsWater = new ContentPSaR(
   "Rules for using water on allotment plots",
   `
     <ul>
-      <li>Must be present when using water supply.</li>
-      <li>Hosepipes can only fill water butts; no sprinklers or automated devices.</li>
-      <li>Water only for produce and livestock; not for paddling pools or washing vehicles.</li>
+      <li>Many of our sites have water supplies to help cultivate your plot and care for livestock. Do not drink the water; we cannot guarantee it is safe.</li>
+      <li>You must be present on your plot when using the water supply.</li>
+      <li>Hosepipes can only be used to fill water butts; no automated devices, sprinklers, or other water spraying devices are allowed.</li>
+      <li>Hosepipes must be disconnected from taps when not in use.</li>
+      <li>Water must only be used for watering produce and tending livestock kept on your plot.</li>
+      <li>Water must not be used to fill paddling pools or wash vehicles.</li>
+      <li>Supplies are metered; excessive use may result in increased charges.</li>
     </ul>
   `,
   { buttonLabel: "", formName: "" },
@@ -349,7 +368,7 @@ const allotmentsWater = new ContentPSaR(
     keywords: ["Allotments", "Water", "Rules"],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "06/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsKeys = new ContentPSaR(
@@ -358,8 +377,8 @@ const allotmentsKeys = new ContentPSaR(
   "Rules for access and key responsibility",
   `
     <ul>
-      <li>Only tenants or authorised persons may access the site.</li>
-      <li>Responsible for your key and co-worker's key; do not allow non-key holders on site.</li>
+      <li>Only the tenant, or a person authorised or accompanied by the tenant, is allowed on the site.</li>
+      <li>You are responsible for your site key and that of any co-worker; do not allow persons unknown to you or non-key holders to access the site.</li>
     </ul>
   `,
   { buttonLabel: "", formName: "" },
@@ -370,7 +389,7 @@ const allotmentsKeys = new ContentPSaR(
     keywords: ["Allotments", "Keys", "Access"],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "06/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsDrones = new ContentPSaR(
@@ -420,10 +439,20 @@ const allotmentsAsbestos = new ContentPSaR(
   "allotmentsAsbestos",
   "Asbestos",
   "Asbestos policy on plots",
-  `<p>
-  Do not bring asbestos onto your plot. Contact the office for advice 
-  if you suspect asbestos; removal will be arranged if confirmed.
-  </p>
+  `
+  <p>
+      You must not bring asbestos onto your plot or sites. Asbestos was once 
+      a common building material 
+      and has found its way onto some allotments in the past. This is 
+      often in the form of asbestos 
+      cement sheets or pipes (used for roofing, chimneys, etc.), 
+      but it can take many other forms.
+    </p>
+    <p>
+      If you are unsure whether something on your plot may contain asbestos, 
+      please contact us for advice. 
+      Where confirmed, we will arrange for testing and removal.
+    </p>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "allotment_information_requested" },
@@ -433,7 +462,7 @@ const allotmentsAsbestos = new ContentPSaR(
     keywords: ["Allotments", "Asbestos", "Safety"],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "06/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsVermin = new ContentPSaR(
