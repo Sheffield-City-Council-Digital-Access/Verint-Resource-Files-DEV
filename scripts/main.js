@@ -3730,11 +3730,14 @@ function checkAddressHasBeenSet(action = "next") {
     const fullAddress = getInput("fullAddress");
     const fullAddressHasValue = fullAddress && KDF.getVal(fullAddress.name);
 
-    let siteName = getInput("siteName");
-    if (!siteName) siteName = getInput("streetName");
-    let siteCode = getInput("siteCode");
-    if (!siteCode) siteCode = getInput("usrn");
-    console.log("siteCode", siteCode)
+    // let siteName = getInput("siteName");
+    // if (!siteName) siteName = getInput("streetName");
+    // let siteCode = getInput("siteCode");
+    // if (!siteCode) siteCode = getInput("usrn");
+
+    const siteName = getInput("streetName");
+    const siteCode = getInput("usrn");
+    console.log("siteName", siteName, "siteCode", siteCode)
 
     if (fullAddressHasValue) {
       console.log('fullAddressHasValue')
