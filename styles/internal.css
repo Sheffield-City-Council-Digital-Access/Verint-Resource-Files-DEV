@@ -27,7 +27,7 @@
 
 #dform_container.dform_agent > .service-header-bar > span {
   font-family: var(--font-family);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-lg);
   line-height: var(--var-line-height);
   color: var(--c-greys-white);

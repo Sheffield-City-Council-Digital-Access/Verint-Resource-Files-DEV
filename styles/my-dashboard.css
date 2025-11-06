@@ -96,7 +96,7 @@
   align-items: center;
   font-family: var(--font-family);
   font-size: var(--font-size-base);
-  font-weight: var(--font-weight-500);
+  font-weight: var(--font-weight-semibold);
   line-height: var(--line-height);
   color: var(--c-core-brand-primary-darken);
   text-decoration: none !important;
@@ -146,7 +146,7 @@
 
 #dform_container #location-results {
   color: var(--c-brand-accents-teal);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 /* MOST POPULAR */
@@ -194,7 +194,7 @@
 #dform_container .dashboard-details-container .card a.button {
   margin: 0 !important;
   color: var(--c-greys-white);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 #dform_container .dashboard-details-container .card.school {
@@ -291,7 +291,7 @@
 
 #dform_container .dashboard-details-container .card p span,
 #dform_container .dashboard-details-container .card.recycling ul li a {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 /* WASTE AND today */
@@ -336,7 +336,7 @@
 
 #dform_container .dashboard-details-container p.status-banner,
 #dform_container .dashboard-details-container p.status-banner a {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 #dform_container .dashboard-details-container p.status-banner span {
@@ -383,7 +383,7 @@
   align-items: center;
   line-height: var(--line-height);
   color: var(--c-core-brand-primary-darken);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 #dform_container .dashboard-details-container .waste-recycling-container .card.next p {
@@ -401,7 +401,7 @@
 
 #dform_container .dashboard-details-container a.calendar-link {
   margin-top: var(--spacing-smd);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   text-decoration: none;
 }
 
@@ -505,7 +505,7 @@
 }
 
 #dform_container .dashboard-details-container .your-nearest-container .card h3 {
-  font-weight: var(--font-weight-500);
+  font-weight: var(--font-weight-semibold);
 }
 
 #dform_container .dashboard-details-container .your-nearest-container .card .location address,
@@ -541,7 +541,7 @@
 #dform_container .dashboard-details-container .your-nearest-container .card .location a,
 #dform_container .dashboard-details-container .your-nearest-container .card .opening-times > p,
 #dform_container .dashboard-details-container .your-nearest-container .card .time-row .hours {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 #dform_container .dashboard-details-container .your-nearest-container .card .opening-times p,
@@ -591,7 +591,7 @@
 }
 
 #dform_container .dashboard-details-container .section-container h3.section-header {
-  font-weight: var(--font-weight-500);
+  font-weight: var(--font-weight-semibold);
   margin-top: 0;
 }
 
@@ -600,7 +600,7 @@
 }
 
 #dform_container .dashboard-details-container .section-container .contact-list a {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 
@@ -641,7 +641,7 @@
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   text-underline-offset: 0.5rem;
   margin-block: 0;
 }

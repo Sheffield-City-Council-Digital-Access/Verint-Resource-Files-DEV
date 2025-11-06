@@ -69,7 +69,7 @@
   align-self: start;
   font-family: "icomoon";
   font-size: var(--font-size-xxxxl);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   line-height: var(--line-height);
 }
 
@@ -161,7 +161,7 @@
 .info-panel a,
 #dform_container .notice-panel a,
 .notice-panel a {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 #dform_container .confirmation-panel {
@@ -184,19 +184,19 @@
 #dform_container .related-services-menu {
   display: grid;
   grid-template-columns: 1fr;
-  align-items: center; 
+  align-items: stretch;
   gap: var(--spacing-md);
 }
 
 @media screen and (min-width: 768px) {
   #dform_container .related-services-menu { 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, max-content);
   }
 }
 
 @media screen and (min-width: 960px) {
   #dform_container .related-services-menu {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, max-content);
   }
 }
 
@@ -205,12 +205,18 @@
   display: grid;
   grid-template-columns: 1fr max-content;
   grid-template-rows: max-content auto;
-  column-gap: var(--spacing-sm);
-  width: 22.5rem; /* 360px */
+  gap: var(--spacing-sm);
+  max-width: 22.5rem; /* 360px */
   background: var(--c-core-tints-accent-2-tint-20);
   padding: var(--spacing-md);
   text-decoration: none;
   border-radius: 0.9375rem; /* 15px */
+}
+
+@media screen and (min-width: 768px) {
+  #dform_container .related-services-menu { 
+    grid-template-columns: repeat(2, max-content);
+  }
 }
 
 #dform_container .related-services-menu .related-services-card h3 {
@@ -230,4 +236,17 @@
   grid-column: 2 / 3;
   grid-row: 1 / -1;
   align-self: end;
+}
+
+#dform_container .related-services-menu .related-services-card:focus {
+  border-radius: 0.9375rem; /* 15px */
+} 
+
+#dform_container .related-services-menu .related-services-card:focus h3,
+#dform_container .related-services-menu .related-services-card:focus p {
+  color: var(--c-greys-black);
+}
+
+#dform_container .related-services-menu .related-services-card:focus img {
+  filter: grayscale(1);
 }

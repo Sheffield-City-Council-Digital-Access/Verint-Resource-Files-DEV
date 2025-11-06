@@ -39,7 +39,7 @@ div.navigation {
 
 div.navigation a {
   color: var(--c-brand-accents-teal);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-xl);
   text-decoration-thickness: 1px;
 }
@@ -55,7 +55,7 @@ div.navigation a:active {
 }
 
 .page-title {
-  font-weight: var(--font-weight-700);
+  font-weight: var(--font-weight-extra-bold);
   padding-bottom: var(--spacing-xs);
 }
 

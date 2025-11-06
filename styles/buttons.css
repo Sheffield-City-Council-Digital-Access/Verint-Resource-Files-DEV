@@ -37,7 +37,7 @@
 }
 
 #dform_container button {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 #dform_container button.success-btn {
@@ -117,7 +117,7 @@
 
 #dform_container button.action-link-btn {
   padding: 5px 1px;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 #dform_container button.action-link-btn::before {

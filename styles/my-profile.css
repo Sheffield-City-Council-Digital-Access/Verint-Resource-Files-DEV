@@ -105,7 +105,7 @@
 }
 
 #dform_container .detail-label {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 #dform_container #address-value address {
@@ -143,7 +143,7 @@
 }
 
 #dform_container #see-all-services {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   text-underline-offset: 0.5rem;
 }
 
