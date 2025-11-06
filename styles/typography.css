@@ -32,7 +32,7 @@ h6,
   margin-top: var(--spacing-lg);
   margin-bottom: var(--spacing-sm);
   line-height: var(--line-height-heading);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 h1:focus,
@@ -216,7 +216,7 @@ li,
   padding-top: var(--spacing-lg);
   margin-bottom: var(--spacing-sm);
   line-height: var(--line-height);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-xxl);
   color: var(--c-core-brand-primary-darken);
   background: transparent;
@@ -234,7 +234,7 @@ li,
   font-family: var(--font-family);
   font-size: var(--font-size-xl);
   line-height: var(--line-height-body);
-  font-weight: var(--font-weight-500);
+  font-weight: var(--font-weight-semibold);
   color: var(--c-core-brand-primary-darken);
   vertical-align: unset;
   background: transparent;
@@ -260,7 +260,7 @@ li,
 }
 
 #dform_container .dform_validationMessage {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 #dform_container .dform_validationMessage {

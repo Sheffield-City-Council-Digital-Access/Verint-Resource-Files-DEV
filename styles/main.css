@@ -92,9 +92,9 @@
 
   /* Font Weights */
   --font-weight-normal: 400;
-  --font-weight-500: 500;
-  --font-weight-semibold: 600;
-  --font-weight-700: 700;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 600;
+  --font-weight-extra-bold: 700;
 
   /* Line Heights */
   --line-height: 1;

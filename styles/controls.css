@@ -141,7 +141,7 @@ button.back-btn:hover #dform_container button.back-btn:hover {
   padding: 0;
   display: none !important;
   gap: var(--spacing-xs);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 #dform_container #dform_print::before {
@@ -189,7 +189,7 @@ button.back-btn:hover #dform_container button.back-btn:hover {
 
 #NavigationAreaInSingleColumnTemplate button.back-btn:focus > .back-btn--text,
 #dform_container button.back-btn:focus > .back-btn--text {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   color: var(--c-greys-black) !important;
   background: var(--c-focus-links);
   text-decoration: none !important;
@@ -227,7 +227,7 @@ button.back-btn:hover #dform_container button.back-btn:hover {
   #dform_control_buttons
   #case-display-wrapper
   #case-reference-display {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   color: var(--c-brand-accents-teal);
 }
 
