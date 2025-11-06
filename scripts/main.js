@@ -3730,32 +3730,26 @@ function checkAddressHasBeenSet(action = "next") {
     const fullAddress = getInput("fullAddress");
     const fullAddressHasValue = fullAddress && KDF.getVal(fullAddress.name);
 
-    // let siteName = getInput("siteName");
-    // if (!siteName) siteName = getInput("streetName");
-    // let siteCode = getInput("siteCode");
-    // if (!siteCode) siteCode = getInput("usrn");
-
-    const siteName = getInput("streetName");
-    const siteCode = getInput("usrn");
-    console.log("siteName", siteName, "siteCode", siteCode)
+    const streetName = getInput("streetName");
+    const usrn = getInput("usrn");
 
     if (fullAddressHasValue) {
-      console.log('fullAddressHasValue')
-      if (siteName && siteCode) {
-        console.log('siteName', siteName, 'siteCode', siteCode)
-        const siteNameHasValue = KDF.getVal(siteName.name);
-        const siteCodeVal = KDF.getVal(siteCode.name);
-        const siteCodeHasValue = siteCodeVal;
-        const validSiteCode = acceptGMSites
+      if (streetName && usrn) {
+        const streetNameValue = KDF.getVal(streetName.name);
+        const usrnValue = KDF.getVal(usrn.name);
+        const validUsrn = acceptGMSites
           ? true
-          : siteCodeVal && siteCodeVal.startsWith("344");
+          : usrnValue && usrnValue.startsWith("344");
 
-        console.log('siteNameHasValue', siteNameHasValue, 'siteCodeHasValue', siteCodeHasValue, 'validSiteCode', validSiteCode)
-        if (siteNameHasValue && siteCodeHasValue && validSiteCode) {
-          console.log("if")
+        if (streetNameValue && usrnValue && validUsrn) {
+          const siteName = getInput("siteName");
+          const siteCode = getInput("siteCode");
+          KDF.setVal(siteName.name, streetNameValue);
+          KDF.setVal(siteCode.name, usrnValue);
+
           goNextOrComplete();
         } else {
-          console.log("else")
+          return false; // Move to next section
         }
       } else {
         goNextOrComplete();
