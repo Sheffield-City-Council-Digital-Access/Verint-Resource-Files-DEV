@@ -488,11 +488,21 @@ function handleOnReadyEvent(_, kdf) {
 
   buildRelatedServiceCards(relatedServices, "related-services-panel");
 
-  // --- REMOVE TAB INDEX FROM SELECT ELEMENTS ------------------------------ \\
+  // --- REMOVE TAB INDEX FROM HTML ELEMENTS -------------------------------- \\
 
-  $(".remove-tab").each(function () {
-    $(this).attr("tabindex", "-1");
-  });
+  (() => {
+    // Get all elements with the attribute data-type="html"
+    const elements = document.querySelectorAll('[data-type="html"]');
+
+    // Iterate through the collected elements and remove the 'tabindex' attribute
+    elements.forEach(element => {
+      // Check if the 'tabindex' attribute exists before attempting to remove it
+      if (element.hasAttribute('tabindex')) {
+        element.removeAttribute('tabindex');
+        console.log(`Removed 'tabindex' from element with ID: ${element.id || 'N/A'}`);
+      }
+    });
+  })();
 
   // --- SET FORM START DATE AND TIME --------------------------------------- \\
 
@@ -941,10 +951,10 @@ function handleOnReadyEvent(_, kdf) {
             error.code === error.PERMISSION_DENIED
               ? "User denied the request for Geolocation"
               : error.code === error.POSITION_UNAVAILABLE
-              ? "Location information is unavailable"
-              : error.code === error.TIMEOUT
-              ? "The request to get user location timed out"
-              : "An unknown error occurred";
+                ? "Location information is unavailable"
+                : error.code === error.TIMEOUT
+                  ? "The request to get user location timed out"
+                  : "An unknown error occurred";
 
           const errorMessageHtml = `
             <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
@@ -1519,8 +1529,8 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
   displayBackButton(
     targetpageid > skipPages &&
-      pageName !== "complete" &&
-      kdf.form.complete !== "Y"
+    pageName !== "complete" &&
+    kdf.form.complete !== "Y"
   );
 
   const controlElement = document.getElementById("dform_controls");
@@ -1668,9 +1678,9 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     "";
   const responsibility =
     main.responsibility ||
-    main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
-    main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
-    bg.sitecode
+      main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
+      main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
+      bg.sitecode
       ? "CHS"
       : "";
   const prestige =
@@ -3045,8 +3055,8 @@ function validDate(
       .text(
         yearsPast > 0
           ? `${updatedMessage} cannot be more than ${yearsPast} ${getYearLabel(
-              yearsPast
-            )} in the past`
+            yearsPast
+          )} in the past`
           : `${updatedMessage} must be today or in the future`
       )
       .show();
@@ -3060,8 +3070,8 @@ function validDate(
       .text(
         yearsFuture > 0
           ? `${updatedMessage} cannot be more than ${yearsFuture} ${getYearLabel(
-              yearsFuture
-            )} in the future`
+            yearsFuture
+          )} in the future`
           : `${updatedMessage} must be today or in the past`
       )
       .show();
@@ -5698,8 +5708,8 @@ function buildTypeAhead(inputName, listItems, listItemsOnly = true) {
 function buildRelatedServiceCards(servicesData, containerId) {
   const container = document.getElementById(containerId);
   const baseUrl = hostname.startsWith('sheffielddev') ? 'https://cdn.ukpreview.empro.verintcloudservices.com/tenants/sheffielddev'
-  : hostname.startsWith('sheffieldqa') ? 'https://cdn.ukpreview.empro.verintcloudservices.com/tenants/sheffieldqa'
-  : 'https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield';
+    : hostname.startsWith('sheffieldqa') ? 'https://cdn.ukpreview.empro.verintcloudservices.com/tenants/sheffieldqa'
+      : 'https://cdn.uk.empro.verintcloudservices.com/tenants/sheffield';
   const svgUrl = `${baseUrl}/icons/arrow-right-primary-darkened.svg`
 
   if (!container) {
@@ -5972,6 +5982,9 @@ const createNotification = (content, type) => {
 
   const contentWrapper = document.createElement("div");
   contentWrapper.classList.add("notification-content");
+  
+  const messageGroup = document.createElement("div");
+  messageGroup.classList.add("notification-message-group");
 
   const textContent = document.createElement("p");
   textContent.textContent = content.message;
@@ -5984,6 +5997,8 @@ const createNotification = (content, type) => {
     link.classList.add("notification-link");
     textContent.appendChild(link);
   }
+  
+  messageGroup.appendChild(textContent);
 
   const closeLink = document.createElement("a");
   closeLink.href = "#";
@@ -5994,11 +6009,9 @@ const createNotification = (content, type) => {
     notificationBar.remove();
   });
 
-  contentWrapper.appendChild(textContent);
+  contentWrapper.appendChild(messageGroup); 
   contentWrapper.appendChild(closeLink);
-
   notificationBar.appendChild(contentWrapper);
-
   parentElement.appendChild(notificationBar);
 
   scrollToTop();
