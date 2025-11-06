@@ -107,40 +107,6 @@ const allotmentsEligibility = new ContentPSaR(
   { date: "06/11/2025", name: "Andy Walker" }
 );
 
-const allotmentsApply = new ContentPSaR(
-  "allotmentsApply",
-  "How to Apply for an Allotment",
-  "Information and link to apply for an allotment plot in Sheffield",
-  `
-    <p>
-      To apply for an allotment in Sheffield, you’ll need to complete the online 
-      application form using the link below. Applications are open to Sheffield 
-      residents and those living within 1 mile of the city boundary.
-    </p>
-
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="Apply for an allotment"
-      onclick="
-        window.location.href = 'https://sheffield.colonycloud.co.uk/';
-      "
-    >
-      Apply for an allotment
-    </button>
-  `,
-  { buttonLabel: "", formName: "" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
-  {
-    type: "Information",
-    keywords: ["Allotments", "Apply", "Plots", "Sheffield"],
-    categories: ["Parks and Countryside"]
-  },
-  { date: "06/11/2025", name: "Andy Walker" }
-);
-
-
 const allotmentsContact = new ContentPSaR(
   "allotmentsContact",
   "Contact",
@@ -168,16 +134,25 @@ const allotmentsApplying = new ContentPSaR(
   "How to apply for an allotment plot",
   `
     <p>
-    Applications can be made online at 
-    <a href="https://sheffield.colonycloud.co.uk/" 
-    target="_blank">Sheffield Allotments</a>, by email to <a 
-    href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a>, 
-    or by post to Allotment Office, The Centre in the Park, Guildford Avenue, 
-    Sheffield, S2 2PL.
+      To apply for an allotment in Sheffield, you’ll need to complete the online 
+      application form using the link below. Applications are open to Sheffield 
+      residents and those living within 1 mile of the city boundary.
     </p>
+
     <ul>
       <li>You can only be on one waiting list at a time and only once per list (exceptions at discretion of the office).</li>
     </ul>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Apply for an allotment"
+      onclick="
+        window.open('https://sheffield.colonycloud.co.uk/', '_blank');
+      "
+    >
+      Apply for an allotment
+    </button>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "allotment_information_requested" },
@@ -187,7 +162,7 @@ const allotmentsApplying = new ContentPSaR(
     keywords: ["Allotments", "Application", "Plots", "Sheffield"],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "06/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsPlotOffers = new ContentPSaR(
@@ -710,7 +685,6 @@ const allotmentsParks = new MenuPSaR(
   "Comprehensive FAQs for Sheffield City Council allotments",
   [
     allotmentsEligibility,
-    allotmentsApply,
     allotmentsContact,
     allotmentsApplying,
     allotmentsPlotOffers,
