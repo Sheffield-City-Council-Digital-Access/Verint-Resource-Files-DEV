@@ -211,7 +211,15 @@
     > div.esri-ui-inner-container.esri-ui-corner-container
     > div.esri-ui-top-right.esri-ui-corner {
     top: 0.7rem;
-    right: 27.6rem;
+    right: 29.6rem;
+  }
+
+  #dform_container #map_container .esri-search__input-container,
+  #dform_container #map_container .esri-search__form input.esri-search__input,
+  #dform_container
+    #map_container
+    .esri-search__suggestions-list--current-location.esri-menu__list-item {
+    width: 17rem;
   }
 }
 
@@ -399,3 +407,5 @@
   > strong {
   font-weight: var(--font-weight-normal);
 }
+
+

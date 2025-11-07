@@ -92,7 +92,9 @@
 #dform_container button.action-link-btn {
   display: grid;
   grid-template-columns: auto 1fr;
+  align-items: center;
   justify-content: start;
+  gap: var(--spacing-xxs);
   text-align: start;
   min-width: fit-content;
   width: fit-content;
