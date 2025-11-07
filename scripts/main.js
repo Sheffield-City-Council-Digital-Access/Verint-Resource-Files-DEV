@@ -3742,6 +3742,7 @@ function checkAddressHasBeenSet(action = "next") {
 
   // Address Section
   function handleAddressSection() {
+    console.log('handleAddressSection')
     const fullAddress = getInput("fullAddress");
     const fullAddressHasValue = fullAddress && KDF.getVal(fullAddress.name);
 
@@ -3785,7 +3786,7 @@ function checkAddressHasBeenSet(action = "next") {
         const siteCode = getInput("siteCode");
         const validUsrn = acceptGMSites
           ? true
-          : usrnValue && usrnValue.startsWith("344");
+          : siteCode && siteCode.startsWith("344");
         
         if (siteName && siteCode && validUsrn) {
           clearPartialAddressSearch();
@@ -3805,8 +3806,49 @@ function checkAddressHasBeenSet(action = "next") {
     return false; // Move to next section
   }
 
+  // Geo Section
+  function handleGeoSection() {
+    const searchResult = document.querySelector(
+      `#${currentPageId} select[data-customalias="searchResult"]`
+    );
+    const isSearchResultVisible =
+      searchResult && searchResult.offsetParent !== null;
+
+    if (isSearchResultVisible) {
+      const searchResultContainer = searchResult.closest(".dform_widget_field");
+      const selectedValue = searchResult.value;
+      let message = "Select the address";
+
+      if (selectedValue !== "" && selectedValue !== "Please select...") {
+        message = "Click use this address";
+      }
+      showFieldError(searchResultContainer, searchResult, message);
+    } else {
+      const postcode = getInput("postcode");
+      const postcodeContainer = postcode?.closest(".dform_widget_field");
+      const isPostcodeRequired =
+        postcodeContainer?.classList.contains("dform_required") ||
+        postcode?.hasAttribute("required");
+      const postcodeHasValue = postcode && KDF.getVal(postcode.name);
+      let message = "Enter the postcode";
+
+      if (postcodeHasValue) {
+        message = "Click find address";
+      }
+
+      if (!isPostcodeRequired && !postcodeHasValue) {
+        clearPartialAddressSearch();
+        goNextOrComplete();
+      } else {
+        showFieldError(postcodeContainer, postcode, message);
+      }
+    }
+  }
+
   if (!handleMapSection()) {
-    handleAddressSection()
+    if (!handleAddressSection()) {
+      handleGeoSection();
+    }
   }
 }
 
