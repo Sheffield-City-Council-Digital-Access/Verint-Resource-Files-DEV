@@ -456,13 +456,14 @@ function handleOnReadyEvent(_, kdf) {
   }
 
   // --- SET ADDRESS IF ACCOUNT IUDENTIFIED --------------------------------- \\
-
+  console.log(kdf)
   if (
     kdf.profileData["customerid"] &&
     kdf.profileData["customerid"] !== "" &&
     kdf.profileData["profile-Postcode"] &&
     kdf.profileData["profile-Postcode"] !== ""
   ) {
+    console.log("### set address on load ###");
     initialProfileAddressLoad = true;
     $("#dform_widget_button_but_find_address_about_you").click();
   }
