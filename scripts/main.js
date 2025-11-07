@@ -651,7 +651,7 @@ function handleOnReadyEvent(_, kdf) {
     const resultsList = document.querySelector(
       `#${currentPageId} .address-search-results`
     );
- 
+
     let manualAddressElement = document.querySelector(
       `#${currentPageId} .manual-address-container`
     );
@@ -1755,7 +1755,6 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     action === "search-national-address"
   ) {
     let targetPageId = initialProfileAddressLoad ? 'dform_page_page_about_you' : getCurrentPageId();
-    if (initialProfileAddressLoad) initialProfileAddressLoad = false;
     if (targetPageId === "dform_page_page_about_you") {
       KDF.setWidgetRequired("sel_search_results_about_you");
     }
@@ -1853,6 +1852,19 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
         { name: manualAddressElement, display: "show" },
         { name: setAddressButton, display: "show" },
       ]);
+
+      if (initialProfileAddressLoad) {
+        initialProfileAddressLoad = false;
+        const addressearchResults = document.querySelector(
+          `#${currentPageId} .address-search-results`
+        );
+        if (addressearchResults) {
+          const selectElement = addressearchResults.querySelector("select");
+          if (selectElement) {
+            selectElement.style.display = "none"; // Hides the element
+          }
+        }
+      }
     }
   }
 
@@ -3651,7 +3663,7 @@ function checkAddressHasBeenSet(action = "next") {
       const validUsrn = acceptGMSites
         ? true
         : siteCode && siteCode.startsWith("344");
-      
+
       if (siteName && siteCode && validUsrn) {
         clearPartialAddressSearch();
         goNextOrComplete();
