@@ -1861,6 +1861,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
         if (addressearchResults) {
           const selectElement = addressearchResults.querySelector("select");
           if (selectElement) {
+            console.log('selectElement', selectElement);
             selectElement.style.display = "none"; // Hides the element
           }
         }
