@@ -456,14 +456,12 @@ function handleOnReadyEvent(_, kdf) {
   }
 
   // --- SET ADDRESS IF ACCOUNT IUDENTIFIED --------------------------------- \\
-  console.log(kdf)
   if (
     kdf.profileData["customerid"] &&
     kdf.profileData["customerid"] !== "" &&
     kdf.profileData["profile-Postcode"] &&
     kdf.profileData["profile-Postcode"] !== ""
   ) {
-    console.log("### set address on load ###");
     initialProfileAddressLoad = true;
     $("#dform_widget_button_but_find_address_about_you").click();
   }
@@ -1756,7 +1754,8 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     action === "search-local-address" ||
     action === "search-national-address"
   ) {
-    let targetPageId = getCurrentPageId();
+    let targetPageId = initialProfileAddressLoad ? 'dform_page_page_about_you' : getCurrentPageId();
+    if (initialProfileAddressLoad) initialProfileAddressLoad = false;
     if (targetPageId === "dform_page_page_about_you") {
       KDF.setWidgetRequired("sel_search_results_about_you");
     }
