@@ -5,6 +5,7 @@ let userName;
  * This ensures that all HTML elements are available for manipulation.
  */
 document.addEventListener("DOMContentLoaded", function () {
+  console.log('### DOMContentLoaded ###')
   (() => {
     /**
      * Creates and inserts a service header bar with the council logo and service label.
