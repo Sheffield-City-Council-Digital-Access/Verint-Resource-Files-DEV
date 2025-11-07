@@ -128,6 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const footerArea = document.getElementById(
       "FooterAreaInSingleColumnNoNavigationTemplate"
     );
+    console.log('footerArea', footerArea)
 
     if (footerArea) {
       const footerLinksUl = document.createElement("ul");
