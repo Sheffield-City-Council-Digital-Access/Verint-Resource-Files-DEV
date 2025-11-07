@@ -5,7 +5,6 @@ let userName;
  * This ensures that all HTML elements are available for manipulation.
  */
 document.addEventListener("DOMContentLoaded", function () {
-  console.log('### DOMContentLoaded ###')
   (() => {
     /**
      * Creates and inserts a service header bar with the council logo and service label.
@@ -99,10 +98,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const myProfileLink = document.getElementById("nav_username");
-    userName = myProfileLink.textContent;
-    if (myProfileLink) {
+    if (myProfileLink) { 
+      userName = myProfileLink.textContent;
       myProfileLink.textContent = "My profile";
-    }
+  }
   })();
 
   (() => {
@@ -129,7 +128,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const footerArea = document.getElementById(
       "FooterAreaInSingleColumnNoNavigationTemplate"
     );
-    console.log('footerArea', footerArea)
 
     if (footerArea) {
       const footerLinksUl = document.createElement("ul");
