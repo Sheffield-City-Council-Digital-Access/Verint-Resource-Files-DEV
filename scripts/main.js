@@ -1758,6 +1758,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     if (targetPageId === "dform_page_page_about_you") {
       KDF.setWidgetRequired("sel_search_results_about_you");
     }
+    console.log(initialProfileAddressLoad, targetPageId)
 
     if (action === "search-local-address") {
       addressSearchType[targetPageId] = "local";
