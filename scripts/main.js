@@ -3845,8 +3845,8 @@ function checkAddressHasBeenSet(action = "next") {
     }
   }
 
-  if (!handleMapSection()) {
-    if (!handleAddressSection()) {
+  if (!handleAddressSection()) {
+    if (!handleMapSection()) {
       handleGeoSection();
     }
   }
