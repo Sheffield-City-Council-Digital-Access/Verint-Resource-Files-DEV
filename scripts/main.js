@@ -3725,16 +3725,19 @@ function checkAddressHasBeenSet(action = "next") {
   }
 
   function clearPartialAddressSearch() {
+    console.log('clearPartialAddressSearch')
     const searchAgainButton = document.querySelector(`#${getCurrentPageId()} .search-again-btn`);
-    // if (searchAgainButton) {
-      // const isVisible = searchAgainButton.offsetWidth > 0 && 
-      //   searchAgainButton.offsetHeight > 0 &&
-      //   window.getComputedStyle(searchAgainButton).visibility !== 'hidden';
-
-      // if (isVisible) {
+    console.log('searchAgainButton', searchAgainButton)
+    if (searchAgainButton) {
+      const isVisible = searchAgainButton.offsetWidth > 0 && 
+        searchAgainButton.offsetHeight > 0 &&
+        window.getComputedStyle(searchAgainButton).visibility !== 'hidden';
+        console.log('isVisible', isVisible)
+      if (isVisible) {
+        console.log('click')
         searchAgainButton.click();
-      // }
-    // }
+      }
+    }
   }
 
   // Address Section
@@ -3823,9 +3826,7 @@ function checkAddressHasBeenSet(action = "next") {
       }
     }
   }
-  console.log("handleAddressSection", handleAddressSection());
-  // console.log("handleMapSection", handleMapSection());
-  // console.log("handleGeoSection", handleGeoSection());
+
   if (!handleAddressSection()) {
     if (!handleMapSection()) {
       handleGeoSection();
