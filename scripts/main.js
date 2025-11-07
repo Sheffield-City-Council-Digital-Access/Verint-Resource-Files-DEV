@@ -652,12 +652,7 @@ function handleOnReadyEvent(_, kdf) {
     const resultsList = document.querySelector(
       `#${currentPageId} .address-search-results`
     );
-    if (resultsList) {
-      resultsList.value = "";
-      console.log('resultsList', resultsList)
-      // KDF.setWidgetRequired(resultsList.id.replace("dform_widget_", ""));
-    }
-
+ 
     let manualAddressElement = document.querySelector(
       `#${currentPageId} .manual-address-container`
     );
@@ -723,7 +718,7 @@ function handleOnReadyEvent(_, kdf) {
         { name: searchInput.name, display: "show" },
         { name: searchButton, display: "show" },
         { name: resultsList.dataset.name, display: "hide" },
-        { name: manualAddressElement, display: "hide" },
+        { name: manualAddressElement, display: "show" },
         { name: setAddressButton, display: "hide" },
         { name: selectedAddressContainer, display: "hide" },
         { name: mapCntainer, display: "show" },
@@ -3738,11 +3733,6 @@ function checkAddressHasBeenSet(action = "next") {
       if (isVisible) {
         console.log('click', searchAgainButton);
         searchAgainButton.click();
-        
-        // const searchInput = document.querySelector(
-        //   `#${currentPageId} input[data-customalias="postcode"]`
-        // );
-        // KDF.setWidgetNotRequired(searchInput.name);
       }
     }
   }
