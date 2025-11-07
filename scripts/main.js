@@ -3724,6 +3724,19 @@ function checkAddressHasBeenSet(action = "next") {
     }
   }
 
+function clearPartialAddressSearch() {
+  const searchAgainButton = document.querySelector(`#${getCurrentPageId()} .search-again-btn`);
+  if (searchAgainButton) {
+    const isVisible = searchAgainButton.offsetWidth > 0 && 
+      searchAgainButton.offsetHeight > 0 &&
+      window.getComputedStyle(searchAgainButton).visibility !== 'hidden';
+
+    if (isVisible) {
+      searchAgainButton.click();
+    }
+  }
+}
+
   // Address Section
   function handleAddressSection() {
     console.log('handleAddressSection')
@@ -3769,6 +3782,7 @@ function checkAddressHasBeenSet(action = "next") {
         ? defaultSelectedAddressMessage
         : "Choose a location on the public highway";
       showSelectedAddressError(errorMessage);
+      clearPartialAddressSearch();
       return true; // Map section handled
     }
     return false; // Move to next section
@@ -3803,6 +3817,7 @@ function checkAddressHasBeenSet(action = "next") {
       }
 
       if (!isPostcodeRequired && !postcodeHasValue) {
+        clearPartialAddressSearch();
         goNextOrComplete();
       } else {
         showFieldError(postcodeContainer, postcode, message);
