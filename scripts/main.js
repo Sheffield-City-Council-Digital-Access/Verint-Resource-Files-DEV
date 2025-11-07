@@ -1775,13 +1775,30 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
         formatTitleCase(parts[0]) + "," + parts.slice(1).join(",");
       return newAddressLine;
     });
-    setValuesToInputFields([
-      { alias: "searchResult", value: formattedSearchResult },
-    ]);
 
     const numberOfResults = propertySearchResult
       ? propertySearchResult.length
       : 0;
+
+    // -------------------------------------------------------------------
+    // LOGIC START: Add the disabled/selected placeholder option
+    // -------------------------------------------------------------------
+    if (numberOfResults > 0) {
+      const placeholderOption = {
+        label: `Select one of the ${numberOfResults} addresses found...`,
+        value: "",
+        selected: true,
+        disabled: true,
+      };
+      formattedSearchResult.unshift(placeholderOption);
+    }
+    // -------------------------------------------------------------------
+    // LOGIC END
+    // -------------------------------------------------------------------
+
+    setValuesToInputFields([
+      { alias: "searchResult", value: formattedSearchResult },
+    ]);
 
     const searchInput = document.querySelector(
       `#${targetPageId} input[data-customalias="postcode"]`
