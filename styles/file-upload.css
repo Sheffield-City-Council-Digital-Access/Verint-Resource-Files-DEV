@@ -71,7 +71,7 @@ input[type="file"]::file-selector-button {
 
 
 #dform_container .dform_filenames {
-  max-height: 90%;
+  max-height: 66%;
   transform: translateY(2px);
 }
 
