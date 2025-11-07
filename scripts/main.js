@@ -3724,22 +3724,21 @@ function checkAddressHasBeenSet(action = "next") {
     }
   }
 
-function clearPartialAddressSearch() {
-  const searchAgainButton = document.querySelector(`#${getCurrentPageId()} .search-again-btn`);
-  if (searchAgainButton) {
-    const isVisible = searchAgainButton.offsetWidth > 0 && 
-      searchAgainButton.offsetHeight > 0 &&
-      window.getComputedStyle(searchAgainButton).visibility !== 'hidden';
+  function clearPartialAddressSearch() {
+    const searchAgainButton = document.querySelector(`#${getCurrentPageId()} .search-again-btn`);
+    // if (searchAgainButton) {
+      // const isVisible = searchAgainButton.offsetWidth > 0 && 
+      //   searchAgainButton.offsetHeight > 0 &&
+      //   window.getComputedStyle(searchAgainButton).visibility !== 'hidden';
 
-    if (isVisible) {
-      searchAgainButton.click();
-    }
+      // if (isVisible) {
+        searchAgainButton.click();
+      // }
+    // }
   }
-}
 
   // Address Section
   function handleAddressSection() {
-    console.log('handleAddressSection')
     const fullAddress = getInput("fullAddress");
     const fullAddressHasValue = fullAddress && KDF.getVal(fullAddress.name);
 
