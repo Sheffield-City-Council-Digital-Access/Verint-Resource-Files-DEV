@@ -498,7 +498,6 @@ function handleOnReadyEvent(_, kdf) {
       // Check if the 'tabindex' attribute exists before attempting to remove it
       if (element.hasAttribute('tabindex')) {
         element.removeAttribute('tabindex');
-        console.log(`Removed 'tabindex' from element with ID: ${element.id || 'N/A'}`);
       }
     });
   })();
@@ -1196,7 +1195,6 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE SET REPORTER ------------------------------------------------ \\
 
-  console.log("getParams", KDF.getParams());
   // Check if customer set state is true
   if (kdf.profileData["customerid"] || KDF.getParams().customerid) {
     handleSetReporter(new Date(kdf.profileData["profile-DateOfBirth"]), kdf);
@@ -1758,7 +1756,6 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     if (targetPageId === "dform_page_page_about_you") {
       KDF.setWidgetRequired("sel_search_results_about_you");
     }
-    console.log(initialProfileAddressLoad, targetPageId)
 
     if (action === "search-local-address") {
       addressSearchType[targetPageId] = "local";
@@ -1780,21 +1777,15 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       ? propertySearchResult.length
       : 0;
 
-    // -------------------------------------------------------------------
-    // LOGIC START: Add the disabled/selected placeholder option
-    // -------------------------------------------------------------------
     if (numberOfResults > 0) {
       const placeholderOption = {
-        label: `Select one of the ${numberOfResults} addresses found...`,
+        label: `Please select`,
         value: "",
         selected: true,
         disabled: true,
       };
       formattedSearchResult.unshift(placeholderOption);
     }
-    // -------------------------------------------------------------------
-    // LOGIC END
-    // -------------------------------------------------------------------
 
     setValuesToInputFields([
       { alias: "searchResult", value: formattedSearchResult },
@@ -3580,7 +3571,6 @@ function closeCase() {
 // --- ADDRESS FUNCTIONS ---------------------------------------------------- \\
 
 function checkAddressHasBeenSet(action = "next") {
-  console.log('checkAddressHasBeenSet', action);
   const currentPageId = getCurrentPageId();
 
   // Helper: Get element by custom alias
@@ -3616,7 +3606,6 @@ function checkAddressHasBeenSet(action = "next") {
 
   // Helper: Go to next or complete page
   function goNextOrComplete() {
-    console.log('goNextOrComplete', action)
     if (action === "submit") {
       KDF.gotoPage("complete", true, true, false);
     } else {
@@ -3625,16 +3614,12 @@ function checkAddressHasBeenSet(action = "next") {
   }
 
   function clearPartialAddressSearch() {
-    console.log('clearPartialAddressSearch')
     const searchAgainButton = document.querySelector(`#${getCurrentPageId()} .search-again-btn`);
-    console.log('searchAgainButton', searchAgainButton)
     if (searchAgainButton) {
       const isVisible = searchAgainButton.offsetWidth > 0 &&
         searchAgainButton.offsetHeight > 0 &&
         window.getComputedStyle(searchAgainButton).visibility !== 'hidden';
-      console.log('isVisible', isVisible)
       if (isVisible) {
-        console.log('click', searchAgainButton);
         searchAgainButton.click();
       }
     }
@@ -3642,7 +3627,6 @@ function checkAddressHasBeenSet(action = "next") {
 
   // Address Section
   function handleAddressSection() {
-    console.log('handleAddressSection')
     const fullAddress = getInput("fullAddress");
     const fullAddressHasValue = fullAddress && KDF.getVal(fullAddress.name);
 
