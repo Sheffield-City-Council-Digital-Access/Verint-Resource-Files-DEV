@@ -3743,14 +3743,12 @@ function checkAddressHasBeenSet(action = "next") {
 
         if (streetNameValue && usrnValue && validUsrn) {
           const siteName = getInput("siteName");
+          if (siteName) KDF.setVal(siteName.name, streetNameValue);
           const siteCode = getInput("siteCode");
-          KDF.setVal(siteName.name, streetNameValue);
-          KDF.setVal(siteCode.name, usrnValue);
-
-          goNextOrComplete();
-        } else {
-          return false; // Move to next section
+          if (siteCode) KDF.setVal(siteCode.name, usrnValue);
         }
+
+        goNextOrComplete();
       } else {
         goNextOrComplete();
       }
