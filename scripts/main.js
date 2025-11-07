@@ -3735,8 +3735,13 @@ function checkAddressHasBeenSet(action = "next") {
         window.getComputedStyle(searchAgainButton).visibility !== 'hidden';
       console.log('isVisible', isVisible)
       if (isVisible) {
-        console.log('click')
+        console.log('click', searchAgainButton);
         searchAgainButton.click();
+        
+        const searchInput = document.querySelector(
+          `#${currentPageId} input[data-customalias="postcode"]`
+        );
+        KDF.setWidgetNotRequired(searchInput.name);
       }
     }
   }
