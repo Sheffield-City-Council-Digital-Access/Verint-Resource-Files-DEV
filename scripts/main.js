@@ -3681,6 +3681,7 @@ function closeCase() {
 // --- ADDRESS FUNCTIONS ---------------------------------------------------- \\
 
 function checkAddressHasBeenSet(action = "next") {
+  console.log('checkAddressHasBeenSet', action);
   const currentPageId = getCurrentPageId();
 
   // Helper: Get element by custom alias
@@ -3842,8 +3843,8 @@ function checkAddressHasBeenSet(action = "next") {
     }
   }
 
-  if (!handleAddressSection()) {
-    if (!handleMapSection()) {
+  if (!handleMapSection()) {
+    if (!handleAddressSection()) {
       handleGeoSection();
     }
   }
