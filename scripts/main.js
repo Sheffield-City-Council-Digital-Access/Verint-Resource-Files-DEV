@@ -1856,7 +1856,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       if (initialProfileAddressLoad) {
         initialProfileAddressLoad = false;
         const addressearchResults = document.querySelector(
-          `#${currentPageId} .address-search-results`
+          `#${targetPageId} .address-search-results`
         );
         if (addressearchResults) {
           const selectElement = addressearchResults.querySelector("select");
@@ -1864,6 +1864,10 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
             selectElement.style.display = "none"; // Hides the element
           }
         }
+        hideShowMultipleElements([
+          { name: manualAddressElement, display: "hide" },
+          { name: setAddressButton, display: "hide" },
+        ]);
       }
     }
   }
