@@ -654,8 +654,8 @@ function handleOnReadyEvent(_, kdf) {
     );
     if (resultsList) {
       resultsList.value = "";
-      console.log('resultsList', resultsList.id.replace("dform_widget_", ""))
-      KDF.setWidgetRequired(resultsList.id.replace("dform_widget_", ""));
+      console.log('resultsList', resultsList)
+      // KDF.setWidgetRequired(resultsList.id.replace("dform_widget_", ""));
     }
 
     let manualAddressElement = document.querySelector(
