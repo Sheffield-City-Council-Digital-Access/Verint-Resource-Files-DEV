@@ -3729,10 +3729,10 @@ function checkAddressHasBeenSet(action = "next") {
     const searchAgainButton = document.querySelector(`#${getCurrentPageId()} .search-again-btn`);
     console.log('searchAgainButton', searchAgainButton)
     if (searchAgainButton) {
-      const isVisible = searchAgainButton.offsetWidth > 0 && 
+      const isVisible = searchAgainButton.offsetWidth > 0 &&
         searchAgainButton.offsetHeight > 0 &&
         window.getComputedStyle(searchAgainButton).visibility !== 'hidden';
-        console.log('isVisible', isVisible)
+      console.log('isVisible', isVisible)
       if (isVisible) {
         console.log('click')
         searchAgainButton.click();
@@ -3779,13 +3779,28 @@ function checkAddressHasBeenSet(action = "next") {
     );
     const detailsElement = mapElement?.querySelector(".details-accordion");
 
-    if (mapElement && detailsElement && detailsElement.hasAttribute("open")) {
-      const errorMessage = acceptGMSites
-        ? defaultSelectedAddressMessage
-        : "Choose a location on the public highway";
-      showSelectedAddressError(errorMessage);
-      clearPartialAddressSearch();
-      return true; // Map section handled
+    if (detailsElement.hasAttribute("open")) {
+      if (mapElement && detailsElement) {
+        const siteName = getInput("siteName");
+        const siteCode = getInput("siteCode");
+        const validUsrn = acceptGMSites
+          ? true
+          : usrnValue && usrnValue.startsWith("344");
+        
+        if (siteName && siteCode && validUsrn) {
+          clearPartialAddressSearch();
+          goNextOrComplete();
+          return true; // Map section handled
+        } else {
+          const errorMessage = acceptGMSites
+            ? defaultSelectedAddressMessage
+            : "Choose a location on the public highway";
+          showSelectedAddressError(errorMessage);
+          return true; // Map section handled
+        }
+      } else {
+        return false; // Move to next section
+      }
     }
     return false; // Move to next section
   }
@@ -5954,7 +5969,7 @@ const createNotification = (content, type) => {
 
   const contentWrapper = document.createElement("div");
   contentWrapper.classList.add("notification-content");
-  
+
   const messageGroup = document.createElement("div");
   messageGroup.classList.add("notification-message-group");
 
@@ -5969,7 +5984,7 @@ const createNotification = (content, type) => {
     link.classList.add("notification-link");
     textContent.appendChild(link);
   }
-  
+
   messageGroup.appendChild(textContent);
 
   const closeLink = document.createElement("a");
@@ -5981,7 +5996,7 @@ const createNotification = (content, type) => {
     notificationBar.remove();
   });
 
-  contentWrapper.appendChild(messageGroup); 
+  contentWrapper.appendChild(messageGroup);
   contentWrapper.appendChild(closeLink);
   notificationBar.appendChild(contentWrapper);
   parentElement.appendChild(notificationBar);
