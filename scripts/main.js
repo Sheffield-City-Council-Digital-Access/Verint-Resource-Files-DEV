@@ -717,7 +717,7 @@ function handleOnReadyEvent(_, kdf) {
         { name: searchInput.name, display: "show" },
         { name: searchButton, display: "show" },
         { name: resultsList.dataset.name, display: "hide" },
-        { name: manualAddressElement, display: "show" },
+        { name: manualAddressElement, display: "hide" },
         { name: setAddressButton, display: "hide" },
         { name: selectedAddressContainer, display: "hide" },
         { name: mapCntainer, display: "show" },
