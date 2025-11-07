@@ -654,6 +654,7 @@ function handleOnReadyEvent(_, kdf) {
     );
     if (resultsList) {
       resultsList.value = "";
+      console.log('resultsList', resultsList.id.replace("dform_widget_", ""))
       KDF.setWidgetRequired(resultsList.id.replace("dform_widget_", ""));
     }
 
@@ -3738,10 +3739,10 @@ function checkAddressHasBeenSet(action = "next") {
         console.log('click', searchAgainButton);
         searchAgainButton.click();
         
-        const searchInput = document.querySelector(
-          `#${currentPageId} input[data-customalias="postcode"]`
-        );
-        KDF.setWidgetNotRequired(searchInput.name);
+        // const searchInput = document.querySelector(
+        //   `#${currentPageId} input[data-customalias="postcode"]`
+        // );
+        // KDF.setWidgetNotRequired(searchInput.name);
       }
     }
   }
