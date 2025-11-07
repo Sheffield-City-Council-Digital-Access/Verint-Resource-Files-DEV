@@ -1418,23 +1418,13 @@ function handleOnReadyEvent(_, kdf) {
     }
   });
 
-  // --- OHMS --------------------------------------------------------------- \\
+  // --- NECH --------------------------------------------------------------- \\
 
   if (kdf.params.customerid) {
     KDF.customdata("retrieve-social-ids", "_KDF_objectdataLoaded", true, true, {
       customerid: kdf.params.customerid,
     });
   }
-
-  // $("#dform_widget_button_but_view_rent_account").on("click", function () {
-  //   const customerid =
-  //     kdf.params.customerid ?? KDF.getVal("num_reporter_obj_id");
-  //   if (customerid) {
-  //     createModal("hubScreenRentSummary", "hub_rent_summary", customerid);
-  //   } else {
-  //     KDF.showWarning("A customer has not been set.");
-  //   }
-  // });
 
   // --- HANDLE SIGN IN BUTTTON CLICK --------------------------------------- \\
 
@@ -1490,8 +1480,6 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
 
   if (
-    // pageName === "page_review" ||
-    // pageName === "page_declaration" ||
     pageName === "save" ||
     pageName === "complete"
   ) {
@@ -1762,119 +1750,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       return;
     }
     KDF.setCustomerID(customerid, false, KDF.gotoNextPage());
-    // KDF.setVal('num_customer_id', customerid);
-    // KDF.gotoNextPage();
   }
-
-  // if (
-  //   action === "search-local-address" ||
-  //   action === "search-national-address"
-  // ) {
-  //   let targetPageId = getCurrentPageId();
-  //   if (targetPageId === "dform_page_page_about_you") {
-  //     KDF.setWidgetRequired("sel_search_results_about_you");
-  //   }
-  //   //   if (initialProfileAddressLoad === true) {
-  //   //     initialProfileAddressLoad = false;
-  //   //     targetPageId = "dform_page_page_about_you";
-  //   //     setTimeout(function () {
-  //   //       setProfileAddressDetails(targetPageId, kdf);
-  //   //       KDF.setWidgetNotRequired("sel_search_results_about_you");
-  //   //     }, 0);
-  //   //   }
-
-  //   if (action === "search-local-address") {
-  //     addressSearchType[targetPageId] = "local";
-  //   }
-  //   if (action === "search-national-address") {
-  //     addressSearchType[targetPageId] = "national";
-  //   }
-
-  //   const { propertySearchResult } = response.data;
-  //   // if (propertySearchResult.length > 0) {
-  //   const formattedSearchResult = propertySearchResult.map((addressLine) => {
-  //     // Create a copy to avoid mutating the original object
-  //     const newAddressLine = { ...addressLine };
-  //     const parts = newAddressLine.label.split(",");
-  //     newAddressLine.label =
-  //       formatTitleCase(parts[0]) + "," + parts.slice(1).join(",");
-  //     return newAddressLine;
-  //   });
-  //   setValuesToInputFields([
-  //     { alias: "searchResult", value: formattedSearchResult },
-  //   ]);
-
-  //   const numberOfResults = propertySearchResult
-  //     ? propertySearchResult.length
-  //     : 0;
-
-  //   const searchInput = document.querySelector(
-  //     `#${targetPageId} input[data-customalias="postcode"]`
-  //   );
-  //   let searchButton = document.querySelector(
-  //     `#${targetPageId} .address-search-btn`
-  //   );
-
-  //   const resultsList = document.querySelector(
-  //     `#${targetPageId} .address-search-results`
-  //   );
-
-  //   let resultsLabelId = null;
-  //   if (resultsList) {
-  //     const labelElement = resultsList.querySelector("label");
-  //     if (labelElement) {
-  //       resultsLabelId = labelElement.id;
-  //     }
-  //   }
-
-  //   let manualAddressElement = document.querySelector(
-  //     `#${targetPageId} .manual-address-container`
-  //   );
-  //   let setAddressButton = document.querySelector(
-  //     `#${targetPageId} .set-address-btn`
-  //   );
-  //   const searchedPostcode = searchInput ? searchInput.value : "";
-
-  //   const resultsContent = `
-  //       ${numberOfResults} addresses found for <strong>${searchedPostcode}</strong>.
-  //       <button type="button" class="search-again-btn link-btn">Search again</button>
-  //     `;
-
-  //   if (resultsList && searchInput && searchButton) {
-  //     let searchStatusMessageElement = document.getElementById(resultsLabelId);
-  //     if (searchStatusMessageElement) {
-  //       searchStatusMessageElement.innerHTML = resultsContent;
-  //     }
-
-  //     let selectElement = resultsList.querySelector("select");
-  //     if (selectElement) {
-  //       selectElement.style.display = "block"; // Shows the element
-  //     }
-
-  //     searchButton = searchButton.id.replace("dform_widget_button_", "");
-
-  //     if (manualAddressElement) {
-  //       manualAddressElement = manualAddressElement.id.replace(
-  //         "dform_widget_html_",
-  //         ""
-  //       );
-  //     }
-  //     if (setAddressButton) {
-  //       setAddressButton = setAddressButton.id.replace(
-  //         "dform_widget_button_",
-  //         ""
-  //       );
-  //     }
-
-  //     hideShowMultipleElements([
-  //       { name: searchInput.name, display: "hide" },
-  //       { name: searchButton, display: "hide" },
-  //       { name: resultsList.dataset.name, display: "show" },
-  //       { name: manualAddressElement, display: "show" },
-  //       { name: setAddressButton, display: "show" },
-  //     ]);
-  //   }
-  // }
 
   if (
     action === "search-local-address" ||
@@ -1884,14 +1760,6 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     if (targetPageId === "dform_page_page_about_you") {
       KDF.setWidgetRequired("sel_search_results_about_you");
     }
-    //   if (initialProfileAddressLoad === true) {
-    //     initialProfileAddressLoad = false;
-    //     targetPageId = "dform_page_page_about_you";
-    //     setTimeout(function () {
-    //       setProfileAddressDetails(targetPageId, kdf);
-    //       KDF.setWidgetNotRequired("sel_search_results_about_you");
-    //     }, 0);
-    //   }
 
     if (action === "search-local-address") {
       addressSearchType[targetPageId] = "local";
