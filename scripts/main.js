@@ -3780,30 +3780,27 @@ function checkAddressHasBeenSet(action = "next") {
     );
     const detailsElement = mapElement?.querySelector(".details-accordion");
 
-    if (detailsElement.hasAttribute("open")) {
-      if (mapElement && detailsElement) {
-        const siteName = getInput("siteName");
-        const siteCode = getInput("siteCode");
-        const validUsrn = acceptGMSites
-          ? true
-          : siteCode && siteCode.startsWith("344");
-        
-        if (siteName && siteCode && validUsrn) {
-          clearPartialAddressSearch();
-          goNextOrComplete();
-          return true; // Map section handled
-        } else {
-          const errorMessage = acceptGMSites
-            ? defaultSelectedAddressMessage
-            : "Choose a location on the public highway";
-          showSelectedAddressError(errorMessage);
-          return true; // Map section handled
-        }
+    if (mapElement && detailsElement && detailsElement.hasAttribute("open")) {
+      const siteName = getInput("siteName");
+      const siteCode = getInput("siteCode");
+      const validUsrn = acceptGMSites
+        ? true
+        : siteCode && siteCode.startsWith("344");
+      
+      if (siteName && siteCode && validUsrn) {
+        clearPartialAddressSearch();
+        goNextOrComplete();
+        return true; // Map section handled
       } else {
-        return false; // Move to next section
+        const errorMessage = acceptGMSites
+          ? defaultSelectedAddressMessage
+          : "Choose a location on the public highway";
+        showSelectedAddressError(errorMessage);
+        return true; // Map section handled
       }
+    } else {
+      return false; // Move to next section
     }
-    return false; // Move to next section
   }
 
   // Geo Section
