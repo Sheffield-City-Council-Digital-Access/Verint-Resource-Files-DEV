@@ -51,8 +51,6 @@ class FormFaC extends CoreFaC {
   }
 }
 
-// --------- KEEP THIS AT THE TOP ------------------------------------------- \\
-// --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
 const adultsocialcarecomplaints = new ContentFaC(
   "adultSocialCareComplaints",
