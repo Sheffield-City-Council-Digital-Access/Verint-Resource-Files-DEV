@@ -149,7 +149,7 @@ class FormDaMH extends CoreDaMH {
             <li>sports club (tennis, football, swimming, karate etc)</li>
             <li>where children without additional needs or disabilities also attend short break clubs
              for disabled children only</li>
-        <li>direct payment</li>
+        <li>direct payment</li>asdas
         <li>befriending through SNIPS (open access activities funded by us however, 
             if you have more than one disabled child, and one child attends a short breaks service,
             you can still apply for a grant for your other child if they are eligible.</li>
