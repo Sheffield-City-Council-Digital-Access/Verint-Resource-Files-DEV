@@ -540,7 +540,7 @@ const adaptationChase = new ContentH(
     </summary>
     <div class="accordion-content">
       <p>Tenancy condition 47 states that:</p> 
-      <ul>//jctest
+      <ul>
         <li>You must ask for our permission, and you must not proceed until we give you our permission.</li>
         <li>We will confirm our answer in writing.</li>
         <li>If we refuse permission, we will explain why.</li>
