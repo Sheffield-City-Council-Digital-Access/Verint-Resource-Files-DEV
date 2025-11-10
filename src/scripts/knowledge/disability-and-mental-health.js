@@ -192,7 +192,7 @@ class FormDaMH extends CoreDaMH {
         "families",
         "grants",
         "disabled",
-        "mobility",
+        "mobility"
     ], 
       categories: ["disability and mental health"],
     },
