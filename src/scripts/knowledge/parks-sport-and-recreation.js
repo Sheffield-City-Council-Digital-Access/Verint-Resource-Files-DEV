@@ -1013,6 +1013,38 @@ const parksEnquiries = new MenuPSaR(
 
 //#endregion Parks Enquiries
 
+//#region Report tree in park
+
+const reportTreePark = new FormDaMH(
+  "reportTreePark",
+  "Report an issue with a tree in a park",
+  "Use this form to report a damaged, fallen, or dangerous tree located in one of our parks or public green spaces.",
+  "report_tree",
+  {
+    type: "Report",
+    keywords: [
+      "Report tree in park",
+      "Reprot tree in park",
+      "Tree issue in park",
+      "Tree isue in park",
+      "Fallen tree in park",
+      "Damaged tree in park",
+      "Damged tree in park",
+      "Dangerous tree in park",
+      "Dangeros tree in park",
+      "Report park tree problem",
+      "Reprot park tree problem",
+      "Park tree maintenance",
+      "Park tree maintainance",
+      "Report issue with a park tree",
+      "Report isue with a park tree"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "10/11/2025", name: "Andy Walker" }
+);
+
+//#endregion Report tree in park
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
@@ -1022,6 +1054,7 @@ const parksSportAndRecreation = new ServicePSaR(
   "Parks, Sport and Recreation",
   `Parks, gardens, trees and woodlands, allotments, leisure and sports facilities, what's on, tourist information…`,
   [allotmentsParks,
-   parksEnquiries
+   parksEnquiries,
+   reportTreePark
   ]
 );
