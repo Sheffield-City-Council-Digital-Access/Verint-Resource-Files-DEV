@@ -869,7 +869,6 @@ const allotmentsParks = new MenuPSaR(
     allotmentsContact,
     allotmentsApplying,
     allotmentsPlotOffers,
-    allotmentsSigningUp,
     allotmentsPayingFees,
     allotmentsNoticeToQuit,
     allotmentsFires,
