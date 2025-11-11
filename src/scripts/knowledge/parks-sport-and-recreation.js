@@ -618,26 +618,42 @@ const allotmentsEnquiries = new ContentPSaR(
     </div>
   </details>
 
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>How do I add a co-worker to my plot?</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        You can have one registered co-worker per plot.  
-        To add one, please log a case using the <strong>Allotment Enquiries</strong> form and include:
-      </p>
-      <ul>
-        <li>Your name and plot details</li>
-        <li>The co-worker’s name, address, contact number, and email address</li>
-      </ul>
-      <p>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>How do I add a co-worker to my plot?</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      You can have one registered co-worker per plot.  
+      <strong>Only the named tenant</strong> can request for a co-worker to be added to their allotment tenancy.
+    </p>
+    <p>
+      You are welcome to invite others to help informally on your plot, but you remain responsible for them and their actions on site.  
+      To formally register a co-worker, please log a case using the <strong>Allotment Enquiries</strong> form and include:
+    </p>
+    <ul>
+      <li>Your name and plot details</li>
+      <li>The co-worker’s name, address, contact number, and email address</li>
+    </ul>
+    <p>
+      Co-workers may be issued a site key (normal key charges apply).  
+      By registering someone as a co-worker, you give consent for the Council to discuss tenancy matters directly related to your plot with them 
+      (sensitive personal information will not be shared).
+    </p>
+    <p>
+      Co-workers do not hold any rights to the tenancy and can be removed by the tenant at any time without notice.  
+      If you wish to transfer your plot to a co-worker, they must meet the eligibility criteria set out in the 
+      <a href="2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+        Allotment Policy and Regulations (2025)
+      </a>.
+    </p>
+    <p>
       If you need further guidance or confirmation about co-worker eligibility,
       use the <strong>Request allotment information</strong> button below.
     </p>
-    </div>
-  </details>
+  </div>
+</details>
 
   <details class="accordion">
     <summary class="accordion-header">
