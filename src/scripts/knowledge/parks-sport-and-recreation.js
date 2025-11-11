@@ -644,7 +644,7 @@ const allotmentsEnquiries = new ContentPSaR(
     <p>
       Co-workers do not hold any rights to the tenancy and can be removed by the tenant at any time without notice.  
       If you wish to transfer your plot to a co-worker, they must meet the eligibility criteria set out in the 
-      <a href="2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
         Allotment Policy and Regulations (2025)
       </a>.
     </p>
