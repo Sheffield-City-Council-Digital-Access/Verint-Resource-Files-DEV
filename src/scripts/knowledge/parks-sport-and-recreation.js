@@ -348,7 +348,7 @@ const allotmentsNoticeToQuit = new ContentPSaR(
       <li>Exceptional circumstances can be considered through the appeals process.</li>
     </ul>
     <p>
-      If you have received a Notice to Quit or wish to discuss your situation, 
+      If you have received a Notice to Quit and wish to discuss your situation, 
       use the <strong>Request allotment information</strong> button below.
     </p>
     <p>
@@ -545,12 +545,15 @@ const allotmentsTrees = new ContentPSaR(
   "allotmentsTrees",
   "Dangerous Trees",
   "Reporting dangerous trees on allotment sites",
-  `<p>
-  If you notice a large tree that is diseased or at risk of failure and 
-  poses immediate danger, report to 
-  <a href="mailto:parksandcountryside@sheffield.gov.uk">
-  parksandcountryside@sheffield.gov.uk</a> or call 0114 250 0500.
-  </p>
+  `
+<p>
+  If you notice a large tree that appears diseased, damaged, or at 
+  risk of failure and poses an immediate danger. 
+  Please use the <strong>Report Tree</strong> button below to notify 
+  us so that the situation can be assessed and addressed safely.
+</p>
+
+
   `,
   { buttonLabel: "Report tree", formName: "report_tree" },
   { typeKey: "allotment_information_requested" },
