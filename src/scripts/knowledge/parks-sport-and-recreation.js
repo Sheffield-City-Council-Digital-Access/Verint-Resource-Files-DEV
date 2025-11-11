@@ -109,13 +109,33 @@ const allotmentsEligibility = new ContentPSaR(
 
 const allotmentsContact = new ContentPSaR(
   "allotmentsContact",
-  "Contact",
-  "How to contact the Allotment Office",
+  "Annual Waiting List Refresh",
+  "Information on the yearly waiting list refresh",
   `
-    <p>
-    Every October, applicants are asked to confirm they wish to remain on the list. 
-    Failure to respond may result in removal, though appeals are possible.
-    </p>
+  <p>
+  Every October, applicants are asked to confirm they wish to remain on the list. 
+  Failure to respond may result in removal, though appeals are possible.
+  </p>
+<p>
+  For more information on Sheffield allotments, consult the official policy and regulations document:
+  <br />
+  <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+    Allotment Policy and Regulations
+  </a>
+</p>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to Sheffield allotment policy and regulations"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+  "
+>
+  Send link to review the policy and regulations
+</button>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "allotment_information_requested" },
@@ -192,23 +212,6 @@ const allotmentsPlotOffers = new ContentPSaR(
       If you would like to ask about your place on the waiting list or discuss a plot offer, 
       use the <strong>Request allotment information</strong> button below.
     </p>
-  `,
-  { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
-  {
-    type: "Information",
-    keywords: ["Allotments", "Plot Offers", "Waiting List", "Eligibility", "Appeals"],
-    categories: ["Parks and Countryside"]
-  },
-  { date: "06/11/2025", name: "Andy Walker" }
-);
-
-const allotmentsSigningUp = new ContentPSaR(
-  "allotmentsSigningUp",
-  "Signing Up for a Plot",
-  "Process after accepting a plot offer",
-  `
     <p>
       If you accept a plot, you must return your acceptance form immediately after viewing it, 
       along with the following documents:
@@ -225,13 +228,32 @@ const allotmentsSigningUp = new ContentPSaR(
     <p>
       Use the <strong>Request allotment information</strong> button below to submit your acceptance form.
     </p>
+    <p>
+    For more information on Sheffield allotments, consult the official policy and regulations document:
+  <br />
+  <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+    Allotment Policy and Regulations
+  </a>
+</p>
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to Sheffield allotment policy and regulations"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+  "
+>
+  Send link to review the policy and regulations
+</button>
   `,
   { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
   { typeKey: "allotment_information_requested" },
   { typeKey: "allotment_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Signing Up", "Acceptance", "Plot Offers"],
+    keywords: ["Allotments", "Plot Offers", "Waiting List", "Eligibility", "Appeals"],
     categories: ["Parks and Countryside"]
   },
   { date: "06/11/2025", name: "Andy Walker" }
@@ -255,6 +277,26 @@ const allotmentsPayingFees = new ContentPSaR(
       <li>If you would struggle to pay your rent in full immediately, it is vital to contact the Council promptly 
           on receipt of your invoice; there may be options to help.</li>
     </ul>
+    <p>
+    For more information on Sheffield allotments, consult the official policy and regulations document:
+    <br />
+    <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+    Allotment Policy and Regulations
+    </a>
+    </p>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to Sheffield allotment policy and regulations"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+  "
+>
+  Send link to review the policy and regulations
+</button>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "allotment_information_requested" },
@@ -286,6 +328,27 @@ const allotmentsNoticeToQuit = new ContentPSaR(
       If you have received a Notice to Quit or wish to discuss your situation, 
       use the <strong>Request allotment information</strong> button below.
     </p>
+    <p>
+     For more information on Sheffield allotments, consult the official policy and regulations document:
+    <br />
+    <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+    Allotment Policy and Regulations
+    </a>
+    </p>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to Sheffield allotment policy and regulations"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+  "
+>
+  Send link to review the policy and regulations
+</button>
+
   `,
   { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
   { typeKey: "allotment_information_requested" },
@@ -309,6 +372,27 @@ const allotmentsFires = new ContentPSaR(
       <li>No bonfires on open ground; must be contained in an incinerator or similar.</li>
       <li>Do not cause a nuisance as defined in the <a href="https://www.legislation.gov.uk/ukpga/1990/43/contents" target="_blank" rel="noopener noreferrer">Environmental Protection Act 1990</a>.</li>
     </ul>
+    <p>
+    For more information on Sheffield allotments, consult the official policy and regulations document:
+   <br />
+    <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+    Allotment Policy and Regulations
+    </a>
+    </p>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to Sheffield allotment policy and regulations"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+  "
+>
+  Send link to review the policy and regulations
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "allotment_information_requested" },
@@ -380,6 +464,27 @@ const allotmentsKeys = new ContentPSaR(
       <li>Only the tenant, or a person authorised or accompanied by the tenant, is allowed on the site.</li>
       <li>You are responsible for your site key and that of any co-worker; do not allow persons unknown to you or non-key holders to access the site.</li>
     </ul>
+    <p>
+    For more information on Sheffield allotments, consult the official policy and regulations document:
+    <br />
+    <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+    Allotment Policy and Regulations
+    </a>
+    </p>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to Sheffield allotment policy and regulations"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+  "
+>
+  Send link to review the policy and regulations
+</button>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "allotment_information_requested" },
@@ -488,16 +593,38 @@ const allotmentsVermin = new ContentPSaR(
 const allotmentsKeyDeposit = new ContentPSaR(
   "allotmentsKeyDeposits",
   "Allotment Key Deposits",
-  "Costs and refunds for keys",
+  "Costs and payment for replacement keys",
   `<ul>
     <li>Squire keys: £5 deposit</li>
-    <li>Mul-T-Lock keys: £30 deposit, £25 refundable</li>
+    <li>Mul-T-Lock keys: £30 deposit</li>
     <li>Lost or stolen keys: £30 replacement charge</li>
   </ul>
   <p>
-      To request key replacement or refund details, use the 
+      After submitting your request, you will be contacted with instructions on how to make payment.  
+      To request a key replacement, use the 
       <strong>Request allotment information</strong> button below.
   </p>
+  <p>
+  For more information on Sheffield allotments, consult the official policy and regulations document:
+  <br />
+  <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+    Allotment Policy and Regulations
+  </a>
+  </p>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to Sheffield allotment policy and regulations"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+  "
+>
+  Send link to review the policy and regulations
+</button>
+
   `,
   { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
   { typeKey: "allotment_information_requested" },
@@ -649,8 +776,7 @@ const allotmentsEnquiries = new ContentPSaR(
       </a>.
     </p>
     <p>
-      If you need further guidance or confirmation about co-worker eligibility,
-      use the <strong>Request allotment information</strong> button below.
+      To request for a co-worker to be added to your tenancy, use the <strong>Request to add a co-worker</strong> button below.
     </p>
   </div>
 </details>
@@ -695,26 +821,33 @@ const allotmentsEnquiries = new ContentPSaR(
     </div>
   </details>
 
-  <details class="accordion">
-    <summary class="accordion-header">
-      <h3>Can I keep animals or pigeons on my plot?</h3>
-      <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-      <p>
-        You are not allowed to keep livestock such as cockerels, ducks, pigs, or horses.  
-        You may, subject to permission, keep bees, up to 6 hens, 2 rabbits, or pigeons (on selected sites).  
-        All birds must be registered with DEFRA:
-        <a href="https://www.gov.uk/guidance/register-as-a-keeper-of-less-than-50-poultry-or-other-captive-birds" target="_blank">
-          Register as a keeper of less than 50 poultry or other captive birds
-        </a>.
-      </p>
-      <p>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Can I keep animals or pigeons on my plot?</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>
+      You are not allowed to keep livestock such as cockerels, ducks, pigs, or horses.  
+      You may, subject to permission, keep bees, up to 6 hens, 2 rabbits, or pigeons (on selected sites).  
+      All birds must be registered with DEFRA:
+      <a href="https://www.gov.uk/guidance/register-as-a-keeper-of-less-than-50-poultry-or-other-captive-birds" target="_blank" rel="noopener noreferrer">
+        Register as a keeper of less than 50 poultry or other captive birds
+      </a>.
+    </p>
+    <p>
+      Pigeons are only allowed on certain sites. Include this in your 
+      application notes. Permission must be approved separately and is not automatic. 
+      Applications may be deferred if it affects allotment use for fruit and vegetable 
+      growing.
+    </p>
+    <p>
       To request permission or ask about livestock guidelines, use the 
       <strong>Request allotment information</strong> button below.
     </p>
-    </div>
-  </details>
+  </div>
+</details>
+
   `,
   { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
   { typeKey: "allotment_information_requested" },
