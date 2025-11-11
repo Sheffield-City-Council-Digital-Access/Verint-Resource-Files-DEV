@@ -334,11 +334,15 @@ const allotmentsNoticeToQuit = new ContentPSaR(
   "What happens if rent is not paid",
   `
     <p>
-      In addition to the Sheffield City Council standard payment policy, if you fail to pay within 40 days of your rent invoice date, you will be issued a Rent ‘Notice to Quit’. 
-      If you receive a Rent Notice to Quit, you may be able to keep the plot by submitting an appeal within 14 days of the issued date.
+      In addition to the Sheffield City Council standard payment policy, 
+      if you fail to pay within 40 days of your rent invoice date, 
+      you will be issued a Rent ‘Notice to Quit’. 
+      If you receive a Rent Notice to Quit, you may be able to keep the 
+      plot by submitting an appeal within 14 days of the issued date. 
+      Appeal details are included within the Notice to Quit letter, and 
+      customers should follow the instructions provided in their notice.
     </p>
     <ul>
-      <li>Your appeal should be addressed via the <strong>Request allotment information</strong> form below.</li>
       <li>If your appeal is successful, you must clear all arrears during the 1-month Notice period.</li>
       <li>If you receive 3 Notices to Quit for non-payment during your tenancy, the 3rd Notice will stand, even if payment is made during the Notice period.</li>
       <li>Exceptional circumstances can be considered through the appeals process.</li>
