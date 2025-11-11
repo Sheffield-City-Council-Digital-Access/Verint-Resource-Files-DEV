@@ -193,60 +193,49 @@ const allotmentsPlotOffers = new ContentPSaR(
   "Plot Offers",
   "How plots are offered from the waiting list",
   `
-    <p>
-      Applicants are selected from the waiting list on a first-come, first-served basis. 
-      When you reach the top of your chosen list, you’ll be offered a specific plot by email 
-      (or by post if you do not have an email address).
-    </p>
+    <h3>How Plots Are Offered</h3>
+    <p>Applicants are selected from the waiting list on a first-come, first-served basis. When you reach the top of your chosen list, you’ll be offered a specific plot by email (or by post if you do not have an email address).</p>
+
+    <h4>Responding to an Offer</h4>
     <ul>
-      <li>You must contact the office within 10 working days of the offer (14 for offers sent by post) to accept, or the offer may be withdrawn.</li>
-      <li>If we receive no response within 28 days, we’ll assume you no longer wish to apply and remove your name from the waiting list.</li>
-      <li>If you decline an offer, you may stay on the list once; further refusals could result in removal.</li>
-      <li>Plot offers are site-specific and cannot be transferred to another allotment site.</li>
-      <li>
-        Appeals must be made in writing using the 
-        <strong>Request allotment information</strong> button below.
-      </li>
+      <li>Contact the office within <strong>10 working days</strong> of the offer (or <strong>14 days</strong> if sent by post) to accept, or the offer may be withdrawn.</li>
+      <li>If no response is received within <strong>28 days</strong>, we’ll assume you no longer wish to apply and remove your name from the waiting list.</li>
+      <li>Declining an offer is allowed once; further refusals may result in removal from the list.</li>
+      <li>Plot offers are site-specific and cannot be transferred to another site.</li>
+      <li>Use the <strong>Request allotment information</strong> button below.</li>
     </ul>
-    <p>
-      If you would like to ask about your place on the waiting list or discuss a plot offer, 
-      use the <strong>Request allotment information</strong> button below.
-    </p>
-    <p>
-      If you accept a plot, you must return your acceptance form immediately after viewing it, 
-      along with the following documents:
-    </p>
+
+    <h4>Questions About Your Waiting List Position</h4>
+    <p>If you would like to ask about your place on the waiting list or discuss a plot offer, use the <strong>Request allotment information</strong> button below.</p>
+
+    <h4>Accepting a Plot</h4>
+    <p>When accepting a plot, return your acceptance form immediately after viewing it, along with:</p>
     <ul>
       <li>Photo ID and proof of address</li>
       <li>Proof of concession eligibility, if applicable</li>
     </ul>
+    <p>If your acceptance form and supporting documents are not received within <strong>5 working days</strong>, a reminder will be sent by email. Failure to respond after an additional 5 working days may result in the offer being withdrawn and removal from the waiting list.</p>
+    <p>Use the <strong>Request allotment information</strong> button to submit your acceptance form.</p>
+
+    <h4>Further Information</h4>
+    <p>For more information on Sheffield allotments, consult the official policy and regulations document:</p>
     <p>
-      If your acceptance form and supporting documents are not received by the office within 5 working days, 
-      you will receive a reminder by email. If the documents are still not received after a further 5 working days, 
-      the offer may be withdrawn and your name removed from the waiting list.
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+        Allotment Policy and Regulations
+      </a>
     </p>
-    <p>
-      Use the <strong>Request allotment information</strong> button below to submit your acceptance form.
-    </p>
-    <p>
-    For more information on Sheffield allotments, consult the official policy and regulations document:
-  <br />
-  <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
-    Allotment Policy and Regulations
-  </a>
-</p>
-<button
-  type="button"
-  class="dform_widget email-btn dform_widget_type_button"
-  aria-label="Send link to Sheffield allotment policy and regulations"
-  onclick="
-    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
-  "
->
-  Send link to review the policy and regulations
-</button>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Sheffield allotment policy and regulations"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+      "
+    >
+      Send link to review the policy and regulations
+    </button>
   `,
   { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
   { typeKey: "allotment_information_requested" },
