@@ -3660,6 +3660,29 @@ const reportWaterAndDrainage = new ContentPaN(
   { date: "05/08/2025", name: "Andy Walker" }
 );
 
+const reportAccumulations = new FormPaN(
+  "reportAccumulations",
+  "Accumulations",
+  "Report an accumulation of dog faeces, domestic waste, non domestic waste, or smoking waste.",
+  "report_accumulations",
+  {
+    type: "Report",
+    keywords: [
+      "accumulation",
+      "accumulations",
+      "acumulation",
+      "acumulations",
+      "dog faeces",
+      "dog poo",
+      "faeces",
+      "waste",
+      "smoking"
+    ],
+    categories: ["Roads and pavements", "Highways", "Streets Ahead", "Amey"],
+  },
+  { date: "11/11/2025", name: "Liz Taster" }
+);
+
 //#region Clean Air Zone
 
 const howAreChargesPaid = new ContentPaN(
@@ -3953,6 +3976,7 @@ const pollutionAndNuisance = new ServicePaN(
     cleanAirZone,
     handoverDogtoCouncil,
     pestControl,
+    reportAccumulations,
     reportDangerousDog,
     reportDogFouling,
     reportFilthyPremises,
