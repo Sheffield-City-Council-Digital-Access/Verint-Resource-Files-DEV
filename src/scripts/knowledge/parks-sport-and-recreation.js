@@ -194,7 +194,11 @@ const allotmentsPlotOffers = new ContentPSaR(
   "How plots are offered from the waiting list",
   `
     <h3>How Plots Are Offered</h3>
-    <p>Applicants are selected from the waiting list on a first-come, first-served basis. When you reach the top of your chosen list, you’ll be offered a specific plot by email (or by post if you do not have an email address).</p>
+    <p>
+    Applicants are selected from the waiting list on a first-come, 
+    first-served basis. When you reach the top of your chosen list, you’ll be 
+    offered a specific plot by email (or by post if you do not have an email address).
+    </p>
 
     <h4>Responding to an Offer</h4>
     <ul>
@@ -206,18 +210,44 @@ const allotmentsPlotOffers = new ContentPSaR(
     </ul>
 
     <h4>Questions About Your Waiting List Position</h4>
-    <p>If you would like to ask about your place on the waiting list or discuss a plot offer, use the <strong>Request allotment information</strong> button below.</p>
+    <p>
+    If you would like to ask about your place on the waiting list or discuss a 
+    plot offer, use the <strong>Request allotment information</strong> button below.
+    </p>
 
     <h4>Accepting a Plot</h4>
-    <p>When accepting a plot, return your acceptance form immediately after viewing it, along with:</p>
+    <p>
+    To accept a plot, you must submit your acceptance form promptly 
+    after viewing it. You can either return the paper form or complete the 
+    online form, along with the following documents:
+    </p>
     <ul>
       <li>Photo ID and proof of address</li>
       <li>Proof of concession eligibility, if applicable</li>
     </ul>
-    <p>If your acceptance form and supporting documents are not received within <strong>5 working days</strong>, a reminder will be sent by email. Failure to respond after an additional 5 working days may result in the offer being withdrawn and removal from the waiting list.</p>
-    <p>Use the <strong>Request allotment information</strong> button to submit your acceptance form.</p>
+    <p>
+    If your acceptance form and supporting documents are not 
+    received within <strong>5 working days</strong>, a reminder will be sent 
+    by email. If we do not receive them within a further <strong>5 working 
+    days</strong>, the offer may be withdrawn and your name removed from the 
+    waiting list.
+    </p>
+    <p>
+    Use the <strong>Request allotment information</strong> button to submit your 
+    acceptance form or access the online form.
+    </p>
 
-    <h4>Further Information</h4>
+    <h4>Concessions</h4>
+    <p>
+    Concessions are available to eligible tenants, including those on a 
+    low income, with disabilities, students, or of state pension age. You must 
+    provide valid evidence—such as proof of benefits, student status, or pension 
+    age—when first claiming and each year during the concession window 
+    (unless age-related). Claims cannot be backdated, and only one concession 
+    can be applied per tenant and plot. Failure to claim within the window 
+    means full rent is due.
+    </p>
+    
     <p>For more information on Sheffield allotments, consult the official policy and regulations document:</p>
     <p>
       <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
