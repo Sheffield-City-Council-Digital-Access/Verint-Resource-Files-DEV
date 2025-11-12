@@ -3870,7 +3870,7 @@ const emailPcnAppealsInfoLink = new ContentP(
   <li>Making an appeal</li>
   <li>Using the interactive tool Chatbox Max to gain advice on your case</li>
   <li>How to make an informal appeal - against a PCN left on your windscreen</li>
-  <li>How to make a formal appeal - agaisnt a Notice to Owner or PCN received in the post</li>
+  <li>How to make a formal appeal - against a Notice to Owner or PCN received in the post</li>
   <li>What happens if you do nothing about your PCN</li>
   <li>Debt recovery for PCNs if they remain unpaid</li>
   <li>What to do if your vehicle has been towed</li>
