@@ -886,6 +886,63 @@ const allotmentsEnquiries = new ContentPSaR(
   { date: "05/11/2025", name: "Andy Walker" }
 );
 
+const allotmentsReportIssue = new ContentPSaR(
+  "allotmentsReportIssue",
+  "Report an Issue",
+  "How to report problems on your allotment plot",
+  `
+    <p>
+      If you notice a problem on your allotment plot or site — such as damage, 
+      pests, maintenance issues, or potential hazards — 
+      please let us know so we can investigate and arrange appropriate action.
+    </p>
+    <h4>Asbestos Concerns</h4>
+    <p>
+      If you are unsure whether something on your plot may be an 
+      asbestos-containing material, contact us for advice. 
+      Where asbestos is confirmed, we will arrange for testing 
+      and removal by approved contractors.
+    </p>
+    <h4>Rats and Pests</h4>
+    <p>
+      If rats become a problem, we work with colleagues in Environmental 
+      Services to investigate and, where appropriate, 
+      take action to reduce numbers.
+    </p>
+    <h4>Water Leaks</h4>
+    <p>
+      If you suspect a water leak on your site, please report it as 
+      soon as possible so we can arrange for inspection and repairs. 
+      Providing details such as the exact location and visible signs 
+      of the leak will help us respond more quickly.
+    </p>
+    <h4>Maintenance and Responsibilities</h4>
+    <p>
+      In some cases, you may be asked to undertake maintenance work 
+      at your own cost, or the Council may carry out the work and 
+      charge you accordingly 
+      (see 10.33 Payment of Invoices). The Council accepts no 
+      liability for any damage caused to belongings or structures 
+      concealed within overgrown hedges or placed directly in the 
+      line of cutting or flailing. 
+      Re-inspection is at the discretion of the allotment officer.
+    </p>
+    <p>
+      For minor maintenance issues or if you have evidence of a problem, 
+      you can report it directly using the <strong>Report issue</strong> button below.
+    </p>
+  `,
+  { buttonLabel: "Report issue", formName: "report_allotment_issue" },
+  { typeKey: "allotment_information_requested" },
+  { typeKey: "allotment_information_provided" },
+  {
+    type: "Information",
+    keywords: ["Allotments", "Report Issue", "Maintenance", "Water Leak", "Pests", "Asbestos", "Repairs"],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "12/11/2025", name: "Andy Walker" }
+);
+
 const allotmentsParks = new MenuPSaR(
   "allotments",
   "Allotments",
@@ -906,7 +963,8 @@ const allotmentsParks = new MenuPSaR(
     allotmentsAsbestos,
     allotmentsVermin,
     allotmentsKeyDeposit,
-    allotmentsEnquiries
+    allotmentsEnquiries,
+    allotmentsReportIssue
   ]
 );
 
