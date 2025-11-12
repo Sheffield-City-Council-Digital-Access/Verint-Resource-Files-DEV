@@ -552,8 +552,6 @@ const allotmentsTrees = new ContentPSaR(
   Please use the <strong>Report Tree</strong> button below to notify 
   us so that the situation can be assessed and addressed safely.
 </p>
-
-
   `,
   { buttonLabel: "Report tree", formName: "report_tree" },
   { typeKey: "allotment_information_requested" },
