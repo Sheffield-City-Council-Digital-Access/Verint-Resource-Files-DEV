@@ -3857,9 +3857,13 @@ const emailPcnAppealsInfoLink = new ContentP(
   `
 <h4>Appeal a parking, bus lane, moving traffic or CAZ fine</h4>
 
-<p> If you think your fine should not have been issued, or you have been charged unfairly, you can make an appeal. </p>
+<p>
+   If you think your fine should not have been issued, or you have been charged unfairly, you can make an appeal.
+</p>
 
-<p> I am able to email you a link to the relevant page on the SCC website with information about making appeals. </p>
+<p> 
+I am able to email you a link to the relevant page on the SCC website with information about making appeals. 
+</p>
 
 <p>Details on the page include:</p>
 <ul>
@@ -3872,7 +3876,11 @@ const emailPcnAppealsInfoLink = new ContentP(
   <li>What to do if your vehicle has been towed</li>
 </ul>
 
-<p>Information about appealing a PCN is available at: <a href="https://www.sheffield.gov.uk/parking/appeal-parking-bus-lane-moving-traffic-or-caz-fine"target="_blank">https://www.sheffield.gov.uk/parking/appeal-parking-bus-lane-moving-traffic-or-caz-fine</a></p>
+<p>
+Information about appealing a PCN is available at: 
+<a href="https://www.sheffield.gov.uk/parking/appeal-parking-bus-lane-moving-traffic-or-caz-fine"
+target="_blank">https://www.sheffield.gov.uk/parking/appeal-parking-bus-lane-moving-traffic-or-caz-fine</a>
+</p>
 
 <button
     type="button"
