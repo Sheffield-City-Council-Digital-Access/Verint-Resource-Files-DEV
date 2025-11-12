@@ -888,7 +888,7 @@ const allotmentsEnquiries = new ContentPSaR(
 
 const allotmentsReportIssue = new ContentPSaR(
   "allotmentsReportIssue",
-  "Report an Issue",
+  "Report an issue in an allotment",
   "How to report problems on your allotment plot",
   `
     <p>
