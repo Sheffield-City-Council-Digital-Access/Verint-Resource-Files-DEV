@@ -3904,15 +3904,15 @@ const emailPcnAppealsInfoLink = new ContentP(
       "fine",
       "penalty charge notice",
       "fine",
-      "ticket"
+      "ticket",
       "parknig",
       "parkingg",
       "paking",
       "parrking",
       "parkng",
-      "bus lane"
-      "Notice to owner"
-      "CAZ"
+      "bus lane",
+      "Notice to owner",
+      "CAZ",
       "Taxi PCN",
       "Bailiff"
     ],
