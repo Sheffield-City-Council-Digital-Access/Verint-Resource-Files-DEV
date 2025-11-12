@@ -283,19 +283,21 @@ const allotmentsPayingFees = new ContentPSaR(
   "Paying Annual Fees",
   "Details about rent and water charges",
   `
-    <p>
-      The rental year runs from 1st April to 31st March. Rent is reviewed and set annually, 
-      with due notice. All allotment rent is invested in the running of the service, 
-      provision of amenities, and maintenance of sites.
-    </p>
-    <ul>
-      <li>You (the tenant) will be charged rent, plus a water charge if your site has a water supply.</li>
-      <li>There are a range of ways to pay. You are responsible for paying promptly on receipt of your invoice, 
-          whichever payment method you choose.</li>
-      <li>If you opt for direct debit, you are responsible for ensuring payments are deducted from your account.</li>
-      <li>If you would struggle to pay your rent in full immediately, it is vital to contact the Council promptly 
-          on receipt of your invoice; there may be options to help.</li>
-    </ul>
+  <p>
+    The rental year runs from 1st April to 31st March. Rent is reviewed and set annually, 
+    with due notice provided in accordance with the legal requirement to give tenants at least 
+    one year’s notice of any rent change. All allotment rent is reinvested into the running of the service, 
+    the provision of amenities, and the maintenance of sites.
+  </p>
+  <ul>
+    <li>You (the tenant) will be charged rent, plus a water charge if your site has a water supply.</li>
+    <li>There are a range of ways to pay. You are responsible for paying promptly on receipt of your invoice, 
+        whichever payment method you choose.</li>
+    <li>If you opt for Direct Debit, you are responsible for ensuring payments are deducted from your account.</li>
+    <li>If you would struggle to pay your rent in full immediately, contact the Council promptly on receipt of your invoice; there may be options to help.</li>
+    <li>Each January, tenants are contacted with details about the upcoming rental year, including information on rent and water charges, concession eligibility, 
+        and payment options such as Direct Debit setup.</li>
+  </ul>
     <p>
     For more information on Sheffield allotments, consult the official policy and regulations document:
     <br />
