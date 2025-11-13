@@ -1021,13 +1021,12 @@ const allotmentsEnquiries = new ContentPSaR(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>
-        If you need a replacement site key, please log a case using the <strong>Allotment Enquiries</strong> form and include your site and plot number.  
-        You will then receive payment details. The current replacement key cost is £30.00 (subject to confirmation).
-      </p>
-      <p>
-      To request a key or ask about the replacement process, use the
-      <strong>Allotment request</strong> button below.
+    <p>
+      If you need a replacement site key, please log a case using the <strong>Allotment request</strong> form and include your site and plot number.  
+      You will then receive payment details. The current replacement key cost is £30.00 (subject to confirmation).
+    </p>
+    <p>
+      To request a key or ask about the replacement process, use the <strong>Allotment request</strong> button below.
     </p>
     </div>
   </details>
