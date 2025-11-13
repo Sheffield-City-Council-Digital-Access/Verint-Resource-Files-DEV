@@ -1037,19 +1037,19 @@ const allotmentsEnquiries = new ContentPSaR(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>
-        If you wish to give up your plot, please log a case using the <strong>Allotment Enquiries</strong> form and include:
-      </p>
-      <ul>
-        <li>Your site and plot number</li>
-        <li>Confirmation that you would like to end your tenancy</li>
-      </ul>
-      <p>
-      If you have received a "card to quit" letter, you can return this instead.
-      </p>
-      <p>
-      To formally submit your notice or ask about the process for ending your tenancy,
-      use the <strong>Allotment request</strong> button below.
+    <p>
+      If you wish to give up your plot, please provide the following information:
+    </p>
+    <ul>
+      <li>Your site and plot number</li>
+      <li>Confirmation that you would like to end your tenancy</li>
+    </ul>
+    <p>
+      If you have received a "Notice to Quit" letter, you may return this instead.
+    </p>
+    <p>
+      To formally submit your notice or ask about the process for ending your tenancy, use the <strong>Allotment request</strong> button below. 
+      This ensures your request is recorded and processed correctly.
     </p>
     </div>
   </details>
