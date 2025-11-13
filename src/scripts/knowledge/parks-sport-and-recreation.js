@@ -1002,6 +1002,18 @@ const allotmentsEnquiries = new ContentPSaR(
         Allotment Policy and Regulations (2025)
       </a>.
     </p>
+    <button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to Sheffield allotment policy and regulations"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+  "
+>
+  Send link to review the policy and regulations
+</button>
     <p>
       To request for a co-worker to be added to your tenancy, use the <strong>Request to add a co-worker</strong> button below.
     </p>
