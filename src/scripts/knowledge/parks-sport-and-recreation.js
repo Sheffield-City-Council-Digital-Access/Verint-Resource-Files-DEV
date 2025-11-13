@@ -1173,7 +1173,7 @@ const allotmentsReportIssue = new ContentPSaR(
 const allotmentsParks = new MenuPSaR(
   "allotments",
   "Allotments",
-  "Comprehensive FAQs for Sheffield City Council allotments",
+  "Allotment eligibility, Applying for an allotment, Plot offers, Notice to quit, Rent and payments, Keys and access, Key deposits, Keeping livestock, Fires and burning, Trees, Asbestos, Vermin and pests, Water use and leaks, Drones, Dogs, Reporting an issue, General enquiries",
   [
     allotmentsEligibility,
     allotmentsContact,
