@@ -984,12 +984,7 @@ const allotmentsEnquiries = new ContentPSaR(
     </p>
     <p>
       You are welcome to invite others to help informally on your plot, but you remain responsible for them and their actions on site.  
-      To formally register a co-worker, please log a case using the <strong>Allotment Enquiries</strong> form and include:
     </p>
-    <ul>
-      <li>Your name and plot details</li>
-      <li>The co-worker’s name, address, contact number, and email address</li>
-    </ul>
     <p>
       Co-workers may be issued a site key (normal key charges apply).  
       By registering someone as a co-worker, you give consent for the Council to discuss tenancy matters directly related to your plot with them 
@@ -1015,7 +1010,7 @@ const allotmentsEnquiries = new ContentPSaR(
   Send link to review the policy and regulations
 </button>
     <p>
-      To request for a co-worker to be added to your tenancy, use the <strong>Request to add a co-worker</strong> button below.
+      To request for a co-worker to be added to your tenancy, use the <strong>Allotment request</strong> button below.
     </p>
   </div>
 </details>
