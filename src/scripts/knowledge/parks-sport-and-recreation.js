@@ -101,7 +101,17 @@ const allotmentsEligibility = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Allotment", "Alotment", "Eligibility", "Eligability", "Application", "Aplication", "Plots", "Plot"],
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Eligibility",
+  "Eligability",
+  "Application",
+  "Aplication",
+  "Plots",
+  "Plot"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "06/11/2025", name: "Andy Walker" }
@@ -142,7 +152,18 @@ const allotmentsContact = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Contact", "Email", "Sheffield"],
+    keywords: [
+  "Allotments",
+  "Alotments",
+  "Allotment",
+  "Alotment",
+  "Waiting List",
+  "Waitng List",
+  "Annual Refresh",
+  "Anual Refresh",
+  "Renewal",
+  "Renewel"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "04/11/2025", name: "Andy Walker" }
@@ -182,7 +203,15 @@ const allotmentsApplying = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Application", "Plots", "Sheffield"],
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Application",
+  "Aplication",
+  "Plots",
+  "Plot"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "06/11/2025", name: "Andy Walker" }
@@ -272,7 +301,24 @@ const allotmentsPlotOffers = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Plot Offers", "Waiting List", "Eligibility", "Appeals"],
+   keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Plot Offers",
+  "Plot Offer",
+  "Plot Ofers",
+  "Plot Ofer",
+  "Waiting List",
+  "Wating List",
+  "Waithing List",
+  "Eligibility",
+  "Eligability",
+  "Appeals",
+  "Appeal",
+  "Apeals",
+  "Apeal"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "06/11/2025", name: "Andy Walker" }
@@ -324,7 +370,19 @@ const allotmentsPayingFees = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Rent", "Payment", "Water Charges", "Direct Debit"],
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Rent",
+  "Rant",
+  "Payment",
+  "Paymant",
+  "Water Charges",
+  "Water Charge",
+  "Watar Charges",
+  "Watter Charges"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "06/11/2025", name: "Andy Walker" }
@@ -380,7 +438,20 @@ const allotmentsNoticeToQuit = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Notice to Quit", "Rent", "Arrears", "Appeals"],
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Notice to Quit",
+  "Notice to Quite",
+  "Rent",
+  "Rant",
+  "Arrears",
+  "Arears",
+  "Appeals",
+  "Appeel",
+  "Apeal"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "06/11/2025", name: "Andy Walker" }
@@ -424,7 +495,21 @@ const allotmentsFires = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Fires", "Burning", "Environmental Protection Act"],
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Fires",
+  "Fire",
+  "Fyres",
+  "Burning",
+  "Burnin",
+  "Buring",
+  "Environmental Protection Act",
+  "Enviromental Protection Act",
+  "Environmental Protetion Act",
+  "Enviromental Protction Act"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "06/11/2025", name: "Andy Walker" }
@@ -448,7 +533,18 @@ const allotmentsDogs = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Dogs", "Rules"],
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Dogs",
+  "Doggs",
+  "Dgos",
+  "Rules",
+  "Rule",
+  "Ruels",
+  "Ruless"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "06/11/2025", name: "Andy Walker" }
@@ -474,7 +570,21 @@ const allotmentsWater = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Water", "Rules"],
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Water",
+  "Watter",
+  "Watr",
+  "Use of Water",
+  "Use of Watter",
+  "Use of Watr",
+  "Rules",
+  "Rule",
+  "Ruels",
+  "Ruless"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "06/11/2025", name: "Andy Walker" }
@@ -516,7 +626,24 @@ const allotmentsKeys = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Keys", "Access"],
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Keys",
+  "Keyes",
+  "Kyes",
+  "Locks",
+  "Lokcs",
+  "Locs",
+  "Access",
+  "Acess",
+  "Acces",
+  "Acsess",
+  "Gate Access",
+  "Gate Acess",
+  "Gat Access"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "06/11/2025", name: "Andy Walker" }
@@ -537,7 +664,23 @@ const allotmentsDrones = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Drones", "Rules"],
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Drones",
+  "Drone",
+  "Drons",
+  "Dronz",
+  "Model Aircraft",
+  "Modell Aircraft",
+  "Flying Drones",
+  "Fliying Drones",
+  "Rules",
+  "Rule",
+  "Ruels",
+  "Ruless"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "04/11/2025", name: "Andy Walker" }
@@ -560,7 +703,23 @@ const allotmentsTrees = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Trees", "Safety"],
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Trees",
+  "Tree",
+  "Tress",
+  "Treees",
+  "Safety",
+  "Saftey",
+  "Safty",
+  "Tree Safety",
+  "Tree Saftey",
+  "Tree Safty",
+  "Tree Hazards",
+  "Tree Hazard"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "04/11/2025", name: "Andy Walker" }
@@ -590,7 +749,23 @@ const allotmentsAsbestos = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Asbestos", "Safety"],
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Asbestos",
+  "Asbestoes",
+  "Asbesto",
+  "Safety",
+  "Saftey",
+  "Safty",
+  "Asbestos Safety",
+  "Asbestos Saftey",
+  "Asbestos Safty",
+  "Hazardous Material",
+  "Hazardous Materials",
+  "Hazardous Matrial"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "06/11/2025", name: "Andy Walker" }
@@ -610,7 +785,21 @@ const allotmentsVermin = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Vermin", "Rats"],
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Vermin",
+  "Vermiin",
+  "Vermn",
+  "Rats",
+  "Rat",
+  "Ratts",
+  "Rodents",
+  "Rodent",
+  "Pests",
+  "Pest"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "04/11/2025", name: "Andy Walker" }
@@ -657,7 +846,19 @@ const allotmentsKeyDeposit = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Keys", "Deposit"],
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Keys",
+  "Keyes",
+  "Kyes",
+  "Deposit",
+  "Deposite",
+  "Depost",
+  "Security Deposit",
+  "Key Deposit"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "04/11/2025", name: "Andy Walker" }
@@ -880,7 +1081,22 @@ const allotmentsEnquiries = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Enquiries", "Waiting List", "Plots", "Sheffield"],
+    keywords: [
+  "Allotments",
+  "Allotment",
+  "Alotment",
+  "Alotments",
+  "Allotment Enquiry",
+  "Alotment Enquiry",
+  "Alotment Enqury",
+  "Allotment Enqury",
+  "Waiting List",
+  "Waitng List",
+  "Waithing List",
+  "Plots",
+  "Plot",
+  "Plottes"
+],
     categories: ["Parks and Countryside"]
   },
   { date: "05/11/2025", name: "Andy Walker" }
