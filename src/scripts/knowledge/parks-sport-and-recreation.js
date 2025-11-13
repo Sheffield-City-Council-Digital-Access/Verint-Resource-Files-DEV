@@ -1132,6 +1132,13 @@ const allotmentsReportIssue = new ContentPSaR(
       Providing details such as the exact location and visible signs 
       of the leak will help us respond more quickly.
     </p>
+    <h4>Litter and Fly-tipping</h4>
+    <p>
+      If you notice litter, dumped waste, or fly-tipping on your allotment 
+      site,report it. Providing details such as the 
+      location and type of waste will help us investigate and take 
+      appropriate action to remove the debris and prevent further issues.
+    </p>
     <h4>Maintenance and Responsibilities</h4>
     <p>
       In some cases, you may be asked to undertake maintenance work 
