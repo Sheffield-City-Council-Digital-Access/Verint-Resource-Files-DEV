@@ -880,13 +880,11 @@ const allotmentsEnquiries = new ContentPSaR(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>
-        If you would like to know your position on the waiting list, please log a case using the
-        <strong>Allotment Enquiries</strong> form. Include your name, home address and the allotment site you have applied for.
-      </p>
-      <p>
-      To request an update or more detailed information about your place on the waiting list,
-      use the <strong>Allotment request</strong> button below.
+    <p>
+      To check your position on the waiting list or request more detailed 
+      information, use the <strong>Allotment request</strong> button below. 
+      The waiting list is updated regularly, and you will 
+      be contacted once a plot becomes available.
     </p>
     </div>
   </details>
@@ -899,7 +897,7 @@ const allotmentsEnquiries = new ContentPSaR(
     <div class="accordion-content">
       <p>
         Empty plots may already be on offer to other applicants who are higher up the waiting list.  
-        If you have questions about empty plots, please log a case using the <strong>Allotment Enquiries</strong> form and include the allotment site name.
+        If you have questions about empty plots, please log a case using the <strong>Allotment request</strong> button below and include the allotment site name.
       </p>
     </div>
   </details>
@@ -911,9 +909,12 @@ const allotmentsEnquiries = new ContentPSaR(
     </summary>
     <div class="accordion-content">
       <p>
-        We are unable to provide exact waiting times, as there are many factors that can affect this.  
-        However, we can tell you how long the next person on the list has been waiting.  
-        Please log a case using the <strong>Allotment Enquiries</strong> form if you would like this information.
+        We are unable to provide exact waiting times, as there are many 
+        factors that can affect this.  
+        However, we can tell you how long the next person on the list 
+        has been waiting.  
+        Please log a case using the <strong>Allotment Request</strong> 
+        button below if you would like this information.
       </p>
     </div>
   </details>
@@ -939,7 +940,7 @@ const allotmentsEnquiries = new ContentPSaR(
       <p>
         You can visit the <a href="https://www.sheffield.gov.uk/leisure/parks-woodlands/allotments" target="_blank">Allotments</a>
         page to see how many plots and applicants there are at each site.  
-        For specific information, please log a case using the <strong>Allotment Enquiries</strong> form.
+        For specific information, please log a case using the <strong>Allotment request</strong> button below.
       </p>
     </div>
   </details>
@@ -1022,11 +1023,8 @@ const allotmentsEnquiries = new ContentPSaR(
     </summary>
     <div class="accordion-content">
     <p>
-      If you need a replacement site key, please log a case using the <strong>Allotment request</strong> form and include your site and plot number.  
+      If you need a replacement site key, please log a case using the <strong>Allotment request</strong> button below and include your site and plot number.  
       You will then receive payment details. The current replacement key cost is £30.00 (subject to confirmation).
-    </p>
-    <p>
-      To request a key or ask about the replacement process, use the <strong>Allotment request</strong> button below.
     </p>
     </div>
   </details>
