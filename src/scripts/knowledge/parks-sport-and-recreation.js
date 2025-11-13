@@ -97,7 +97,7 @@ const allotmentsEligibility = new ContentPSaR(
     </button>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -148,7 +148,7 @@ const allotmentsContact = new ContentPSaR(
 </button>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -199,7 +199,7 @@ const allotmentsApplying = new ContentPSaR(
     </button>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -297,7 +297,7 @@ const allotmentsPlotOffers = new ContentPSaR(
     </button>
   `,
   { buttonLabel: "Allotment request", formName: "request_allotment_parks" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -366,7 +366,7 @@ const allotmentsPayingFees = new ContentPSaR(
 </button>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -434,7 +434,7 @@ const allotmentsNoticeToQuit = new ContentPSaR(
 
   `,
   { buttonLabel: "Allotment Request", formName: "request_allotment_parks" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -491,7 +491,7 @@ const allotmentsFires = new ContentPSaR(
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -529,7 +529,7 @@ const allotmentsDogs = new ContentPSaR(
     </ul>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -566,7 +566,7 @@ const allotmentsWater = new ContentPSaR(
     </ul>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -622,7 +622,7 @@ const allotmentsKeys = new ContentPSaR(
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -660,7 +660,7 @@ const allotmentsDrones = new ContentPSaR(
   </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -699,7 +699,7 @@ const allotmentsTrees = new ContentPSaR(
 </p>
   `,
   { buttonLabel: "Report tree", formName: "report_tree" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -745,7 +745,7 @@ const allotmentsAsbestos = new ContentPSaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -781,7 +781,7 @@ const allotmentsVermin = new ContentPSaR(
   </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -842,7 +842,7 @@ const allotmentsKeyDeposit = new ContentPSaR(
 
   `,
   { buttonLabel: "Allotment request", formName: "request_allotment_parks" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -1083,7 +1083,7 @@ const allotmentsEnquiries = new ContentPSaR(
 
   `,
   { buttonLabel: "Allotment request", formName: "request_allotment_parks" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -1162,7 +1162,7 @@ const allotmentsReportIssue = new ContentPSaR(
     </p>
   `,
   { buttonLabel: "Report issue", formName: "report_allotment_issue" },
-  { typeKey: "allotments_information_requested" },
+  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
