@@ -97,8 +97,8 @@ const allotmentsEligibility = new ContentPSaR(
     </button>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Eligibility", "Application", "Plots", "Sheffield"],
@@ -138,8 +138,8 @@ const allotmentsContact = new ContentPSaR(
 </button>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Contact", "Email", "Sheffield"],
@@ -178,8 +178,8 @@ const allotmentsApplying = new ContentPSaR(
     </button>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Application", "Plots", "Sheffield"],
@@ -268,8 +268,8 @@ const allotmentsPlotOffers = new ContentPSaR(
     </button>
   `,
   { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Plot Offers", "Waiting List", "Eligibility", "Appeals"],
@@ -320,8 +320,8 @@ const allotmentsPayingFees = new ContentPSaR(
 </button>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Rent", "Payment", "Water Charges", "Direct Debit"],
@@ -376,8 +376,8 @@ const allotmentsNoticeToQuit = new ContentPSaR(
 
   `,
   { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Notice to Quit", "Rent", "Arrears", "Appeals"],
@@ -420,8 +420,8 @@ const allotmentsFires = new ContentPSaR(
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Fires", "Burning", "Environmental Protection Act"],
@@ -444,8 +444,8 @@ const allotmentsDogs = new ContentPSaR(
     </ul>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Dogs", "Rules"],
@@ -470,8 +470,8 @@ const allotmentsWater = new ContentPSaR(
     </ul>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Water", "Rules"],
@@ -512,8 +512,8 @@ const allotmentsKeys = new ContentPSaR(
 
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Keys", "Access"],
@@ -533,8 +533,8 @@ const allotmentsDrones = new ContentPSaR(
   </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Drones", "Rules"],
@@ -556,8 +556,8 @@ const allotmentsTrees = new ContentPSaR(
 </p>
   `,
   { buttonLabel: "Report tree", formName: "report_tree" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Trees", "Safety"],
@@ -586,8 +586,8 @@ const allotmentsAsbestos = new ContentPSaR(
     </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Asbestos", "Safety"],
@@ -606,8 +606,8 @@ const allotmentsVermin = new ContentPSaR(
   </p>
   `,
   { buttonLabel: "", formName: "" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Vermin", "Rats"],
@@ -653,8 +653,8 @@ const allotmentsKeyDeposit = new ContentPSaR(
 
   `,
   { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Keys", "Deposit"],
@@ -876,8 +876,8 @@ const allotmentsEnquiries = new ContentPSaR(
 
   `,
   { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Enquiries", "Waiting List", "Plots", "Sheffield"],
@@ -933,8 +933,8 @@ const allotmentsReportIssue = new ContentPSaR(
     </p>
   `,
   { buttonLabel: "Report issue", formName: "report_allotment_issue" },
-  { typeKey: "allotment_information_requested" },
-  { typeKey: "allotment_information_provided" },
+  { typeKey: "allotments_information_requested" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Information",
     keywords: ["Allotments", "Report Issue", "Maintenance", "Water Leak", "Pests", "Asbestos", "Repairs"],
