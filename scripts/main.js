@@ -3418,16 +3418,52 @@ function getAndSetReviewPageData() {
             fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
           } else if (fieldType === "file") {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-            fieldValue = KDF.getVal(
-              fieldName.replace("file_", "txt_file_name_")
-            );
-            const filePath = KDF.getVal(
-              fieldName.replace("file_", "txt_file_path_")
-            );
-            if (KDF.kdf().access === "agent" && filePath) {
-              fieldValue = `<a href="${filePath}" target="_blank">${fieldValue}</a>`;
+            let fileControlName = fieldName.replace("file_", "");
+            const fileNameField = "txt_file_name_" + fileControlName;
+            const filePathField = "txt_file_path_" + fileControlName;
+  
+            const fileNamesString = KDF.getVal(fileNameField);
+            const filePathsString = KDF.getVal(filePathField);
+
+            fieldValue = fileNamesString;
+            if (KDF.kdf().access === "agent" && filePathsString) {
+  
+              const fileNames = fileNamesString.split(",");
+              const filePaths = filePathsString.split(",");
+              if (
+                fileNames.length === filePaths.length &&
+                fileNames.length > 0
+              ) {
+                let linkedFiles = [];
+                for (let i = 0; i < filePaths.length; i++) {
+                  const name = fileNames[i].trim();
+                  const path = filePaths[i].trim();
+  
+                  if (name && path) {
+                    linkedFiles.push(
+                      `<a href="${path}" target="_blank">${name}</a>`
+                    );
+                  }
+                }
+  
+                fieldValue = linkedFiles.join("<br>");
+              } else {
+                let linkedFiles = [];
+                for (let i = 0; i < filePaths.length; i++) {
+                  const name = `${fileNames[0].trim()} ${i + 1}`;
+                  const path = filePaths[i].trim();
+  
+                  if (name && path) {
+                    linkedFiles.push(
+                      `<a href="${path}" target="_blank">${name}</a>`
+                    );
+                  }
+                }
+  
+                fieldValue = linkedFiles.join("<br>");
+              }
             }
-          } else {
+        } else {
             if (fieldClass.indexOf("currency") !== -1) {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
               fieldValue = `£${KDF.getVal(fieldName)}`;
