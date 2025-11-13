@@ -90,7 +90,7 @@ const allotmentsEligibility = new ContentPSaR(
       onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20an%20Allotment\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20an%20allotment\`
       "
     >
       Send link to apply for an allotment
@@ -131,7 +131,7 @@ const allotmentsContact = new ContentPSaR(
   onclick="
     window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
         KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20policy%20and%20regulations\`
   "
 >
   Send link to review the policy and regulations
@@ -261,7 +261,7 @@ const allotmentsPlotOffers = new ContentPSaR(
       onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20policy%20and%20regulations\`
       "
     >
       Send link to review the policy and regulations
@@ -313,7 +313,7 @@ const allotmentsPayingFees = new ContentPSaR(
   onclick="
     window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
         KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20policy%20and%20regulations\`
   "
 >
   Send link to review the policy and regulations
@@ -368,7 +368,7 @@ const allotmentsNoticeToQuit = new ContentPSaR(
   onclick="
     window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
         KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20policy%20and%20regulations\`
   "
 >
   Send link to review the policy and regulations
@@ -412,7 +412,7 @@ const allotmentsFires = new ContentPSaR(
   onclick="
     window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
         KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20policy%20and%20regulations\`
   "
 >
   Send link to review the policy and regulations
@@ -504,7 +504,7 @@ const allotmentsKeys = new ContentPSaR(
   onclick="
     window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
         KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20policy%20and%20regulations\`
   "
 >
   Send link to review the policy and regulations
@@ -645,7 +645,7 @@ const allotmentsKeyDeposit = new ContentPSaR(
   onclick="
     window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
         KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20Policy%20and%20Regulations\`
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Sheffield%20Allotment%20policy%20and%20regulations\`
   "
 >
   Send link to review the policy and regulations
