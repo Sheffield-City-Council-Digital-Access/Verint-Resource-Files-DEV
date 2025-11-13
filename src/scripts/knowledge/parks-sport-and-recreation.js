@@ -1173,7 +1173,7 @@ const allotmentsReportIssue = new ContentPSaR(
 const allotmentsParks = new MenuPSaR(
   "allotments",
   "Allotments",
-  "Allotment eligibility, Applying for an allotment, Plot offers, Notice to quit, Rent and payments, Keys and access, Key deposits, Keeping livestock, Fires and burning, Trees, Asbestos, Vermin and pests, Water use and leaks, Drones, Dogs, Reporting an issue, General enquiries",
+   `Allotment eligibility, Applying for an allotment, Plot offers, Notice to quit, Keys and access, Key deposits, Trees, Asbestos, Reporting an issue…`,
   [
     allotmentsEligibility,
     allotmentsContact,
