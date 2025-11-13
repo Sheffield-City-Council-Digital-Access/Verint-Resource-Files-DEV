@@ -101,7 +101,7 @@ const allotmentsEligibility = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Eligibility", "Application", "Plots", "Sheffield"],
+    keywords: ["Allotments", "Allotment", "Alotment", "Eligibility", "Eligability", "Application", "Aplication", "Plots", "Plot"],
     categories: ["Parks and Countryside"]
   },
   { date: "06/11/2025", name: "Andy Walker" }
@@ -206,13 +206,13 @@ const allotmentsPlotOffers = new ContentPSaR(
       <li>If no response is received within <strong>28 days</strong>, we’ll assume you no longer wish to apply and remove your name from the waiting list.</li>
       <li>Declining an offer is allowed once; further refusals may result in removal from the list.</li>
       <li>Plot offers are site-specific and cannot be transferred to another site.</li>
-      <li>Use the <strong>Request allotment information</strong> button below.</li>
+      <li>Use the <strong>Allotment request</strong> button below.</li>
     </ul>
 
     <h4>Questions About Your Waiting List Position</h4>
     <p>
     If you would like to ask about your place on the waiting list or discuss a 
-    plot offer, use the <strong>Request allotment information</strong> button below.
+    plot offer, use the <strong>Allotment request</strong> button below.
     </p>
 
     <h4>Accepting a Plot</h4>
@@ -233,7 +233,7 @@ const allotmentsPlotOffers = new ContentPSaR(
     waiting list.
     </p>
     <p>
-    Use the <strong>Request allotment information</strong> button to submit your 
+    Use the <strong>Allotment request</strong> button to submit your 
     acceptance form or access the online form.
     </p>
 
@@ -267,7 +267,7 @@ const allotmentsPlotOffers = new ContentPSaR(
       Send link to review the policy and regulations
     </button>
   `,
-  { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
+  { buttonLabel: "Allotment request", formName: "request_allotment_parks" },
   { typeKey: "allotments_information_requested" },
   { typeKey: "allotments_information_provided" },
   {
@@ -351,7 +351,7 @@ const allotmentsNoticeToQuit = new ContentPSaR(
     </ul>
     <p>
       If you have received a Notice to Quit and wish to discuss your situation, 
-      use the <strong>Request allotment information</strong> button below.
+      use the <strong>Allotment request</strong> button below.
     </p>
     <p>
      For more information on Sheffield allotments, consult the official policy and regulations document:
@@ -375,7 +375,7 @@ const allotmentsNoticeToQuit = new ContentPSaR(
 </button>
 
   `,
-  { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
+  { buttonLabel: "Allotment Request", formName: "request_allotment_parks" },
   { typeKey: "allotments_information_requested" },
   { typeKey: "allotments_information_provided" },
   {
@@ -628,7 +628,7 @@ const allotmentsKeyDeposit = new ContentPSaR(
   <p>
       After submitting your request, you will be contacted with instructions on how to make payment.  
       To request a key replacement, use the 
-      <strong>Request allotment information</strong> button below.
+      <strong>Allotment request</strong> button below.
   </p>
   <p>
   For more information on Sheffield allotments, consult the official policy and regulations document:
@@ -652,7 +652,7 @@ const allotmentsKeyDeposit = new ContentPSaR(
 </button>
 
   `,
-  { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
+  { buttonLabel: "Allotment request", formName: "request_allotment_parks" },
   { typeKey: "allotments_information_requested" },
   { typeKey: "allotments_information_provided" },
   {
@@ -685,7 +685,7 @@ const allotmentsEnquiries = new ContentPSaR(
       </p>
       <p>
       To request an update or more detailed information about your place on the waiting list,
-      use the <strong>Request allotment information</strong> button below.
+      use the <strong>Allotment request</strong> button below.
     </p>
     </div>
   </details>
@@ -819,7 +819,7 @@ const allotmentsEnquiries = new ContentPSaR(
       </p>
       <p>
       To request a key or ask about the replacement process, use the
-      <strong>Request allotment information</strong> button below.
+      <strong>Allotment request</strong> button below.
     </p>
     </div>
   </details>
@@ -842,7 +842,7 @@ const allotmentsEnquiries = new ContentPSaR(
       </p>
       <p>
       To formally submit your notice or ask about the process for ending your tenancy,
-      use the <strong>Request allotment information</strong> button below.
+      use the <strong>Allotment request</strong> button below.
     </p>
     </div>
   </details>
@@ -869,13 +869,13 @@ const allotmentsEnquiries = new ContentPSaR(
     </p>
     <p>
       To request permission or ask about livestock guidelines, use the 
-      <strong>Request allotment information</strong> button below.
+      <strong>Allotment request</strong> button below.
     </p>
   </div>
 </details>
 
   `,
-  { buttonLabel: "Request allotment information", formName: "request_allotment_parks" },
+  { buttonLabel: "Allotment request", formName: "request_allotment_parks" },
   { typeKey: "allotments_information_requested" },
   { typeKey: "allotments_information_provided" },
   {
