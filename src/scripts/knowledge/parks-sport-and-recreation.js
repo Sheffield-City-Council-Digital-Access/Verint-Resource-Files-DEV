@@ -938,7 +938,7 @@ const allotmentsEnquiries = new ContentPSaR(
     </summary>
     <div class="accordion-content">
       <p>
-        You can visit the <a href="https://www.sheffield.gov.uk/leisure/parks-woodlands/allotments" target="_blank">Allotments</a>
+        You can visit the <a href="https://www.sheffield.gov.uk/parks-sport-recreation/allotments" target="_blank">Allotments</a>
         page to see how many plots and applicants there are at each site.  
         For specific information, please log a case using the <strong>Allotment request</strong> button below.
       </p>
@@ -966,7 +966,7 @@ const allotmentsEnquiries = new ContentPSaR(
     <div class="accordion-content">
       <p>
         Details about plot sizes and annual costs (rent and water) can be found on the 
-        <a href="https://www.sheffield.gov.uk/leisure/parks-woodlands/allotments" target="_blank">Allotments</a> 
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/allotments" target="_blank">Allotments</a> 
         page under <strong>Charges and payments</strong>.  
         When a plot is offered, this information is also included in the acceptance form.
       </p>
