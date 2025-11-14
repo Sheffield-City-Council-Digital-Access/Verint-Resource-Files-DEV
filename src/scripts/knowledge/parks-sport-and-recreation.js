@@ -744,7 +744,7 @@ const allotmentsAsbestos = new ContentPSaR(
       Where confirmed, we will arrange for testing and removal.
     </p>
   `,
-  { buttonLabel: "Report allotment, formName: "report_allotment_issue" },
+  { buttonLabel: "Report allotment", formName: "report_allotment_issue" },
   { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
@@ -780,7 +780,7 @@ const allotmentsVermin = new ContentPSaR(
   when appropriate to reduce numbers.
   </p>
   `,
-  { buttonLabel: "Report allotment, formName: "report_allotment_issue" },
+  { buttonLabel: "Report allotment", formName: "report_allotment_issue" },
   { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
@@ -1159,7 +1159,7 @@ const allotmentsReportIssue = new ContentPSaR(
       you can report it directly using the <strong>Report issue</strong> button below.
     </p>
   `,
-  { buttonLabel: "Report allotment, formName: "report_allotment_issue" },
+  { buttonLabel: "Report allotment", formName: "report_allotment_issue" },
   { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
