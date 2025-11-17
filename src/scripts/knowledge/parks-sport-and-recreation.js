@@ -1189,6 +1189,85 @@ const allotmentsReportIssue = new ContentPSaR(
   { date: "12/11/2025", name: "Andy Walker" }
 );
 
+const allotmentsTreeManagement = new ContentPSaR(
+  "allotmentsTreeManagement",
+  "Tree Management on Allotments",
+  "Guidance on large trees, fruit trees, and other ornamental trees on allotment plots",
+  `
+  <h4>Large Trees Causing Shading and Seeding</h4>
+  <p>
+    Non-emergency requests to reduce or remove trees over 15cm diameter at chest height will be handled individually.  
+    Submit a photo of the issue; the Council will survey and, where appropriate, commission the work.  
+    Work is scheduled on a priority basis as the allotment budget allows, usually in autumn/winter.  
+    You may hire an approved arborist (Arboricultural Association) with Council permission.  
+    The Council may remove any tree, bush, or shrub interfering with other allotment plots.
+  </p>
+
+  <h4>Fruit Trees</h4>
+  <p>
+    Only fruit trees (dwarf/semi-dwarf) are allowed on up to 25% of your plot; this counts toward the 75% cultivation requirement.  
+    Fruit trees must not exceed 2.5m and areas beneath must be maintained.  
+    Only trees producing edible fruit for humans are permitted.
+  </p>
+
+  <h4>Other Trees and Ornamental Trees</h4>
+  <p>
+    Except for native or privet hedging, you may not plant ornamental or other non-fruit trees.  
+    Invasive species and bamboo, willow, blackthorn, cherry laurel, and conifers are prohibited.  
+    The Council may remove any tree, bush, or shrub that interferes with other allotment plots.
+  </p>
+
+  <p>
+    For more information on Sheffield allotments, consult the official policy and regulations document:
+    <br />
+    <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+      Allotment Policy and Regulations
+    </a>
+  </p>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="Send link to Sheffield allotment policy and regulations"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+    "
+  >
+    Send link to review the policy and regulations
+  </button>
+
+  <p>
+    To report an issue with a tree in an allotment, use the <strong>Report tree</strong> button below.
+  </p>
+  `,
+  { buttonLabel: "Report tree", formName: "report_tree" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Allotments",
+      "Allotment",
+      "Tree",
+      "Trees",
+      "Fruit Trees",
+      "Ornamental Trees",
+      "Shading",
+      "Seeding",
+      "Arborist",
+      "Tree removal",
+      "Tree reduction",
+      "Tree management",
+      "Report tree",
+      "Tree issue"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "17/11/2025", name: "Andy Walker" }
+);
+
 const allotmentsParks = new MenuPSaR(
   "allotments",
   "Allotments",
@@ -1210,7 +1289,8 @@ const allotmentsParks = new MenuPSaR(
     allotmentsVermin,
     allotmentsKeyDeposit,
     allotmentsEnquiries,
-    allotmentsReportIssue
+    allotmentsReportIssue,
+    allotmentsTreeManagement
   ]
 );
 
