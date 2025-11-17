@@ -949,11 +949,7 @@ const allotmentsEnquiries = new ContentPSaR(
   type="button"
   class="dform_widget email-btn dform_widget_type_button"
   aria-label="Send link to Allotment information page"
-  onclick="
-    window.location.href = `${window.location.protocol}//${window.location.hostname}/form/launch/send_link_to_service?${
-        KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : ''
-    }interactionid=${KDF.getParams().interactionid}&sel_service=Allotment%20information%20page`
-  "
+  onclick="window.location.href = window.location.protocol + '//' + window.location.hostname + '/form/launch/send_link_to_service?' + (KDF.getParams().customerid ? 'customerid=' + KDF.getParams().customerid + '&' : '') + 'interactionid=' + KDF.getParams().interactionid + '&sel_service=Allotment%20information%20page';"
   >
   Send link to Allotment information page
 </button>
@@ -981,10 +977,22 @@ const allotmentsEnquiries = new ContentPSaR(
     <div class="accordion-content">
       <p>
         Details about plot sizes and annual costs (rent and water) can be found on the 
-        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/allotments" target="_blank">Allotments</a> 
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/allotments" target="_blank" rel="noopener noreferrer">
+          Allotments
+        </a> 
         page under <strong>Charges and payments</strong>.  
         When a plot is offered, this information is also included in the acceptance form.
       </p>
+
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to plot size and cost information"
+        onclick="window.location.href = window.location.protocol + '//' + window.location.hostname + '/form/launch/send_link_to_service?' + (KDF.getParams().customerid ? 'customerid=' + KDF.getParams().customerid + '&' : '') + 'interactionid=' + KDF.getParams().interactionid + '&sel_service=Allotment%20plot%20sizes%20and%20costs';"
+      >
+        Send link to plot size and cost information
+      </button>
+
     </div>
   </details>
 
@@ -1014,17 +1022,13 @@ const allotmentsEnquiries = new ContentPSaR(
       </a>.
     </p>
     <button
-  type="button"
-  class="dform_widget email-btn dform_widget_type_button"
-  aria-label="Send link to Sheffield allotment policy and regulations"
-  onclick="
-    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
-  "
->
-  Send link to review the policy and regulations
-</button>
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Sheffield allotment policy and regulations"
+      onclick="window.location.href = window.location.protocol + '//' + window.location.hostname + '/form/launch/send_link_to_service?' + (KDF.getParams().customerid ? 'customerid=' + KDF.getParams().customerid + '&' : '') + 'interactionid=' + KDF.getParams().interactionid + '&sel_service=Allotment%20policy%20and%20regulations';"
+    >
+      Send link to review the policy and regulations
+    </button>
     <p>
       To request for a co-worker to be added to your tenancy, use the <strong>Allotment request</strong> button below.
     </p>
@@ -1104,10 +1108,10 @@ const allotmentsEnquiries = new ContentPSaR(
   "Allotments",
   "Allotment",
   "Alotment",
-  "Alotments",
+  "Allotments",
   "Allotment Enquiry",
   "Alotment Enquiry",
-  "Alotment Enqury",
+  "Allotment Enqury",
   "Allotment Enqury",
   "Waiting List",
   "Waitng List",
