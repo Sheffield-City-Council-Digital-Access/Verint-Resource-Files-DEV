@@ -937,11 +937,26 @@ const allotmentsEnquiries = new ContentPSaR(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>
-        You can visit the <a href="https://www.sheffield.gov.uk/parks-sport-recreation/allotments" target="_blank">Allotments</a>
-        page to see how many plots and applicants there are at each site.  
-        For specific information, please log a case using the <strong>Allotment request</strong> button below.
-      </p>
+<p>
+  You can visit the 
+  <a href="https://www.sheffield.gov.uk/parks-sport-recreation/allotments" target="_blank" rel="noopener noreferrer">
+    Allotments
+  </a>
+  page to see how many plots and applicants there are at each site.  
+  For specific information, please log a case using the <strong>Allotment request</strong> button below.
+</p>
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to Allotment information page"
+  onclick="
+    window.location.href = `${window.location.protocol}//${window.location.hostname}/form/launch/send_link_to_service?${
+        KDF.getParams().customerid ? `customerid=${KDF.getParams().customerid}&` : ''
+    }interactionid=${KDF.getParams().interactionid}&sel_service=Allotment%20information%20page`
+  "
+  >
+  Send link to Allotment information page
+</button>
     </div>
   </details>
 
@@ -966,10 +981,26 @@ const allotmentsEnquiries = new ContentPSaR(
     <div class="accordion-content">
       <p>
         Details about plot sizes and annual costs (rent and water) can be found on the 
-        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/allotments" target="_blank">Allotments</a> 
+        <a href="https://www.sheffield.gov.uk/parks-sport-recreation/allotments" target="_blank" rel="noopener noreferrer">
+          Allotments
+        </a> 
         page under <strong>Charges and payments</strong>.  
         When a plot is offered, this information is also included in the acceptance form.
       </p>
+
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="Send link to plot size and cost information"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20plot%20sizes%20and%20costs\`
+        "
+      >
+        Send link to plot size and cost information
+      </button>
+
     </div>
   </details>
 
