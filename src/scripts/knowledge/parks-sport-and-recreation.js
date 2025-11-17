@@ -1175,7 +1175,7 @@ const allotmentsReportIssue = new ContentPSaR(
     </p>
     <p>
       For minor maintenance issues or if you have evidence of a problem, 
-      you can report it directly using the <strong>Report issue</strong> button below.
+      you can report it directly using the <strong>Report allotment</strong> button below.
     </p>
   `,
   { buttonLabel: "Report allotment", formName: "report_allotment_issue" },
