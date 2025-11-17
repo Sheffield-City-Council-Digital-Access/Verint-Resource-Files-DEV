@@ -33,6 +33,9 @@ let addressSearchType = {};
 let acceptGMSites = true;
 let defaultSelectedAddressMessage = "Choose a location on the map";
 
+let paginationSize = 10;
+let allAccounts = [];
+
 const datePairs = [];
 
 const relatedServices = [];
@@ -3421,13 +3424,13 @@ function getAndSetReviewPageData() {
             let fileControlName = fieldName.replace("file_", "");
             const fileNameField = "txt_file_name_" + fileControlName;
             const filePathField = "txt_file_path_" + fileControlName;
-  
+
             const fileNamesString = KDF.getVal(fileNameField);
             const filePathsString = KDF.getVal(filePathField);
 
             fieldValue = fileNamesString;
             if (KDF.kdf().access === "agent" && filePathsString) {
-  
+
               const fileNames = fileNamesString.split(",");
               const filePaths = filePathsString.split(",");
               if (
@@ -3438,32 +3441,32 @@ function getAndSetReviewPageData() {
                 for (let i = 0; i < filePaths.length; i++) {
                   const name = fileNames[i].trim();
                   const path = filePaths[i].trim();
-  
+
                   if (name && path) {
                     linkedFiles.push(
                       `<a href="${path}" target="_blank">${name}</a>`
                     );
                   }
                 }
-  
+
                 fieldValue = linkedFiles.join("<br>");
               } else {
                 let linkedFiles = [];
                 for (let i = 0; i < filePaths.length; i++) {
                   const name = `${fileNames[0].trim()} ${i + 1}`;
                   const path = filePaths[i].trim();
-  
+
                   if (name && path) {
                     linkedFiles.push(
                       `<a href="${path}" target="_blank">${name}</a>`
                     );
                   }
                 }
-  
+
                 fieldValue = linkedFiles.join("<br>");
               }
             }
-        } else {
+          } else {
             if (fieldClass.indexOf("currency") !== -1) {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
               fieldValue = `£${KDF.getVal(fieldName)}`;
@@ -5992,3 +5995,787 @@ const closeAllNotifications = () => {
     notification.remove();
   });
 };
+
+// --- NEC SCREENS ---------------------------------------------------------- \\
+
+// --- PERSON DASHBOARD AND RENDER FUNCTION --------------------------------- \\
+
+// Function to dynamically render the entire account details section
+function renderProfileDetails(data) {
+  const accountDetailsPanel = document.getElementById('profile-details-panel');
+
+  // Build the inner HTML for the details panel
+  accountDetailsPanel.innerHTML = `
+      <div class="details-grid">
+          <div>
+              <p class="detail-label">Verint ID</p>
+              <p id="accountRef" class="detail-value">${KDF.getParams().customerid}</p>
+          </div>
+          <div>
+              <p class="detail-label">NEC ID</p>
+              <p id="accountRef" class="detail-value">${data["profile-socialId-nec"]}</p>
+          </div>
+          <div>
+              <p class="detail-label">Name</p>
+              <p id="formattedCreatedDate" class="detail-value">${data.title} ${data.forename} ${data.surname}</p>
+          </div>
+          <div>
+              <p class="detail-label">Date of birth</p>
+              <p id="formattedCreatedDate" class="detail-value">${data.dateOfBirth ? formatDateTime(data.dateOfBirth).readable.date : ''}</p>
+          </div>
+          <div>
+              <p class="detail-label">Phone Number</p>
+              <p id="currentBalance" class="detail-value">${data.phoneNumber}</p>
+          </div>
+          <div>
+              <p class="detail-label">Email Address</p>
+              <p id="totalBalance" class="detail-value">${data.emailAddress}</p>
+          </div>
+          <div>
+              <p class="detail-label">Address</p>
+              <p id="totalBalance" class="detail-value">${data.fullAddress}</p>
+          </div>
+          <div>
+
+          </div>
+      </div>
+
+      <div class="tab-nav">
+          <button id="info-tab" class="tab-button active-tab">Additional Details</button>
+          <button id="property-tab" class="tab-button">Property Details</button>
+          <button id="address-tab" class="tab-button">Address History</button>
+      </div>
+
+      <div id="additional-info" class="tab-content active-content">
+          <div class="table-container">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Type</th>
+                          <th>Details</th>
+                      </tr>
+                  </thead>
+                  <tbody id="info-table-body">
+                  </tbody>
+              </table>
+          </div>
+          <div id="info-pagination" class="pagination-controls"></div>
+      </div>
+
+      <div id="property-details" class="tab-content hidden">
+          <div class="table-container">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Type</th>
+                          <th>Details</th>
+                      </tr>
+                  </thead>
+                  <tbody id="property-table-body">
+                  </tbody>
+              </table>
+          </div>
+          <div id="property-pagination" class="pagination-controls"></div>
+      </div>
+
+      <div id="address-history" class="tab-content hidden">
+          <div class="table-container">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Address</th>
+                          <th>Start Date</th>
+                          <th>End Date</th>
+                      </tr>
+                  </thead>
+                  <tbody id="address-table-body">
+                  </tbody>
+              </table>
+          </div>
+          <div id="address-pagination" class="pagination-controls"></div>
+      </div>
+
+      <div id="notes-content" class="tab-content hidden">
+          </div>
+  `;
+
+  // After building the HTML, attach the new event listeners and populate tables
+  const infoTab = document.getElementById('info-tab');
+  const propertyTab = document.getElementById('property-tab');
+  const addressTab = document.getElementById('address-tab');
+
+  const infoContent = document.getElementById('additional-info');
+  const propertyContent = document.getElementById('property-details');
+  const addressContent = document.getElementById('address-history');
+
+  function showTab(targetId) {
+    const allTabs = [infoTab, propertyTab, addressTab];
+    const allContents = [infoContent, propertyContent, addressContent];
+
+    allTabs.forEach(tab => tab.classList.remove('active-tab'));
+    allContents.forEach(content => {
+      content.classList.remove('active-content');
+      content.classList.add('hidden');
+    });
+
+    const selectedTab = document.getElementById(targetId);
+    const selectedContentId = targetId.replace('-tab', '');
+    let selectedContent;
+
+    switch (selectedContentId) {
+      case 'info': selectedContent = infoContent; break;
+      case 'property': selectedContent = propertyContent; break;
+      case 'address': selectedContent = addressContent; break;
+    }
+
+    if (selectedTab) selectedTab.classList.add('active-tab');
+    if (selectedContent) {
+      selectedContent.classList.add('active-content');
+      selectedContent.classList.remove('hidden');
+    }
+  }
+
+  infoTab.addEventListener('click', () => showTab('info-tab'));
+  propertyTab.addEventListener('click', () => showTab('property-tab'));
+  addressTab.addEventListener('click', () => showTab('address-tab'));
+
+  populateInfoTable(data.additionalInformation, data.noLetter, data.disabilityIndicator, data.vulnerabilityIndicator);
+  populatePropertyDetailsTable(data);
+  populateAddressHistoryTable(data.addressHistory || []);
+}
+
+// --- RENT DASHBOARD AND RENDER FUNCTION ----------------------------------- \\
+
+// Function to initialize the dashboard with customer data
+function initializeDashboard(customerData) {
+  allAccounts = customerData;
+
+  const accountListContainer = document.getElementById('account-list');
+
+  // Sort the account data before rendering
+  allAccounts.sort((a, b) => {
+    const isActiveA = a.endDate === '';
+    const isActiveB = b.endDate === '';
+    if (isActiveA && !isActiveB) return -1;
+    if (!isActiveA && isActiveB) return 1;
+
+    const dateA = new Date(a.createdDate);
+    const dateB = new Date(b.createdDate);
+    return dateB.getTime() - dateA.getTime();
+  });
+
+  // Function to render the list of accounts
+  function renderAccountList() {
+    // Clear any existing list items
+    accountListContainer.innerHTML = '<h2 class="account-list-title">Accounts</h2>';
+
+    allAccounts.forEach((account, index) => {
+      const accountItem = document.createElement('div');
+      accountItem.classList.add('account-item');
+      accountItem.setAttribute('data-index', index);
+
+      const status = account.endDate === '' ? 'Current' : 'Former';
+      const statusClass = account.endDate === '' ? 'active' : 'inactive';
+
+      accountItem.innerHTML = `
+        <div class="account-item-header">
+          <p class="account-type">${account.accountStatus}</p>
+            <span class="status-badge ${statusClass}">${status}</span>
+        </div>
+        <p class="account-ref">${account.accountRef}</p>
+      `;
+
+      accountListContainer.appendChild(accountItem);
+
+      // Add click listener to trigger the second API call
+      accountItem.addEventListener('click', () => loadAccountDetails(accountItem, account));
+    });
+  }
+
+  // Call the function to render the list of accounts
+  renderAccountList();
+
+  // Automatically select and load details for the first account
+  if (allAccounts.length > 0) {
+    const firstAccountItem = document.querySelector('.account-item');
+    loadAccountDetails(firstAccountItem, allAccounts[0]);
+  }
+}
+
+// Function to simulate an API call for all details
+function loadAccountDetails(accountItem, account) {
+  // Remove active state from all items and add it to the clicked one
+  document.querySelectorAll('.account-item').forEach(el => el.classList.remove('active'));
+  accountItem.classList.add('active');
+
+  KDF.customdata('get-nec-rent-account-details', 'account-select', true, true, {
+    rentAccountRef: account.accountRef
+  });
+
+  // Render the initial account details structure, the tables will be populated once the KDF_custom response comes back.
+  // Empty arrays are passed as placeholders since the real data is fetched via the custom action.
+  // Pass the current account, even though it won't have the paymentMethod yet.
+  renderAccountDetails(account, [], [], [], [], [], [], []);
+}
+
+// Function to dynamically render the entire account details section
+function renderAccountDetails(account, summary, stage, payment, charges, transactions, arrangements, notes) {
+  const welcomeMessage = document.getElementById('welcome-message');
+  const accountDetailsPanel = document.getElementById('account-details-panel');
+
+  // Hide welcome message
+  if (welcomeMessage) {
+    welcomeMessage.classList.add('hidden');
+  }
+
+  // Build the inner HTML for the details panel
+  accountDetailsPanel.innerHTML = `
+    <h2 class="details-title">Account Details</h2>
+
+    <div class="details-grid">
+      <div>
+        <p class="detail-label">Payment Reference</p>
+        <p id="accountRef" class="detail-value">${account.accountRef}</p>
+      </div>
+      <div>
+        <p class="detail-label">Account Type</p>
+        <p id="accountType" class="detail-value">${summary?.accountType || ''}</p>
+      </div>
+      <div>
+        <p class="detail-label">Start Date</p>
+        <p id="formattedCreatedDate" class="detail-value">${account.formattedCreatedDate}</p>
+      </div>
+      <div>
+        ${account.formattedEndDate
+      ? `
+              <p class="detail-label">End Date</p>
+              <p id="formattedEndDate" class="detail-value">${account.formattedEndDate}</p>
+            `
+      : ''
+    }
+      </div>
+      <div>
+        <p class="detail-label">Current Balance</p>
+        <p id="currentBalance" class="detail-value">${summary?.currentBalance || ''}</p>
+      </div>
+      <div>
+        <p class="detail-label">Total Balance</p>
+        <p id="totalBalance" class="detail-value">${summary?.totalBalance || ''}</p>
+      </div>
+      <div>
+        <p class="detail-label">Payment Method</p>
+        <p id="paymentMethod" class="detail-value">${payment?.method || ''}${payment?.method !== 'Cash Receipting'
+      ? `
+                <br/><span id="paymentSheduled" class="detail-value">${payment?.scheduledDate}</span>
+              `
+      : ''
+    }
+        </p>
+      </div>
+      <div>
+        <p class="detail-label">Current Stage</p>
+        <p id="accountStage" class="detail-value">${stage?.route || 'No Action'}</p>
+      </div>
+      
+      <div>
+        <p class="detail-label">Address</p>
+        <p id="propertyAddress" class="detail-value">${summary?.propertyAddress || ''}</p>
+      </div>
+    </div>
+
+    <div class="tab-nav">
+      <button id="charges-tab" class="tab-button active-tab">Charges</button>
+      <button id="transactions-tab" class="tab-button">Transactions</button>
+      <button id="arrangements-tab" class="tab-button">Arrangements</button>
+      <button id="notes-tab" class="tab-button">Notes</button>
+    </div>
+
+    <div id="charges-info" class="tab-content active-content">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Details</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody id="charges-table-body">
+          </tbody>
+        </table>
+      </div>
+      <div id="charges-pagination" class="pagination-controls"></div>
+    </div>
+
+    <div id="transactions-history" class="tab-content hidden">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Details</th>
+              <th>Type</th>
+              <th>Amount</th>
+              <th>Balance</th>
+            </tr>
+          </thead>
+          <tbody id="transactions-table-body">
+          </tbody>
+        </table>
+      </div>
+      <div id="transactions-pagination" class="pagination-controls"></div>
+    </div>
+
+    <div id="arrangements-history" class="tab-content hidden">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Details</th>
+              <th>Balance</th>
+            </tr>
+          </thead>
+          <tbody id="arrangements-table-body">
+          </tbody>
+        </table>
+      </div>
+      <div id="arrangements-pagination" class="pagination-controls"></div>
+    </div>
+
+    <div id="notes-content" class="tab-content hidden">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody id="notes-table-body">
+          </tbody>
+        </table>
+      </div>
+      <div id="notes-pagination" class="pagination-controls"></div>
+    </div>
+  `;
+
+  // After building the HTML, attach the new event listeners and populate tables
+  const chargesTab = document.getElementById('charges-tab');
+  const transactionsTab = document.getElementById('transactions-tab');
+  const arrangementsTab = document.getElementById('arrangements-tab');
+  const notesTab = document.getElementById('notes-tab');
+
+  const chargesContent = document.getElementById('charges-info');
+  const transactionsContent = document.getElementById('transactions-history');
+  const arrangementsContent = document.getElementById('arrangements-history');
+  const notesContent = document.getElementById('notes-content');
+
+  function showTab(targetId) {
+    const allTabs = [chargesTab, transactionsTab, arrangementsTab, notesTab];
+    const allContents = [chargesContent, transactionsContent, arrangementsContent, notesContent];
+
+    // Remove active state from all tabs and contents
+    allTabs.forEach(tab => tab.classList.remove('active-tab'));
+    allContents.forEach(content => {
+      content.classList.remove('active-content');
+      content.classList.add('hidden');
+    });
+
+    // Add active state to the selected tab and content
+    const selectedTab = document.getElementById(targetId);
+    const selectedContentId = targetId.replace('-tab', '');
+    let selectedContent;
+
+    switch (selectedContentId) {
+      case 'charges': selectedContent = chargesContent; break;
+      case 'transactions': selectedContent = transactionsContent; break;
+      case 'arrangements': selectedContent = arrangementsContent; break;
+      case 'notes': selectedContent = notesContent; break;
+    }
+
+    if (selectedTab) selectedTab.classList.add('active-tab');
+    if (selectedContent) {
+      selectedContent.classList.add('active-content');
+      selectedContent.classList.remove('hidden');
+    }
+  }
+
+  // Ensure all four tabs have click handlers attached
+  chargesTab.addEventListener('click', () => showTab('charges-tab'));
+  transactionsTab.addEventListener('click', () => showTab('transactions-tab'));
+  arrangementsTab.addEventListener('click', () => showTab('arrangements-tab'));
+  notesTab.addEventListener('click', () => showTab('notes-tab'));
+
+  // Populate tables with the data passed in (will be empty initially, populated by KDF_custom later)
+  populateChargesTable(charges);
+  populateTransactionsTable(transactions);
+  populateArrangementsTable(arrangements);
+  populateNotesTable(notes);
+}
+
+// --- PAGINATION AND RENDER FUNCTION --------------------------------------- \\
+
+/**
+* Scrolls the user's view to the top of a specified element.
+* @param {string} targetElementId The ID of the element to scroll to (e.g., 'profile-details-panel').
+*/
+function scrollToTop(targetElementId) {
+  const target = $(`#${targetElementId}`);
+  if (target.length) {
+    $('html, body').animate({
+      scrollTop: target.offset().top
+    }, 500);
+  }
+}
+
+/**
+* Renders a table with pagination controls.
+* @param {Array<Object>} data - The full dataset to display.
+* @param {string} tableBodyId - The ID of the tbody element.
+* @param {string} paginationContainerId - The ID of the pagination div.
+* @param {function(Object): string} rowMapper - Function to generate the inner HTML of a <tr>.
+* @param {function(Array<Object>, Array<Object>): number} [sorter]
+*/
+function renderPaginatedTable(data, tableBodyId, paginationContainerId, rowMapper, sorter = null) {
+  const tableBody = document.getElementById(tableBodyId);
+  const paginationContainer = document.getElementById(paginationContainerId);
+  if (!tableBody || !paginationContainer) return;
+
+  // Sort the data if a sorter function is provided
+  if (sorter) {
+    data.sort(sorter);
+  }
+
+  // Calculate total pages
+  const totalItems = data.length;
+  const totalPages = Math.ceil(totalItems / paginationSize);
+
+  // Function to render a specific page
+  function renderPage(pageNumber) {
+    // Clear previous content
+    tableBody.innerHTML = '';
+
+    const start = (pageNumber - 1) * paginationSize;
+    const end = start + paginationSize;
+    const pageData = data.slice(start, end);
+
+    // Populate table body with rows for the current page
+    const colCount = tableBody.parentElement.querySelector('thead tr').children.length || 3;
+
+    if (pageData.length === 0) {
+      const emptyRow = document.createElement('tr');
+      emptyRow.innerHTML = `<td colspan="${colCount}" style="text-align: center; padding: 15px;">No records found.</td>`;
+      tableBody.appendChild(emptyRow);
+    } else {
+      pageData.forEach(item => {
+        const row = document.createElement('tr');
+        row.classList.add('table-row-item');
+        row.innerHTML = rowMapper(item);
+        tableBody.appendChild(row);
+      });
+    }
+
+    // Render pagination controls
+    renderControls(pageNumber);
+  }
+
+  // Function to render pagination buttons (Styled to match the image)
+  function renderControls(currentPage) {
+    paginationContainer.innerHTML = '';
+    if (totalItems === 0) return; // Don't show controls if no data
+
+    const pageRange = 5; // Max number of page buttons to show
+
+    // "Previous" button
+    const prevButton = document.createElement('button');
+    prevButton.classList.add('nav-button');
+    prevButton.innerHTML = `&larr; Previous`; // Left arrow
+    prevButton.disabled = currentPage === 1;
+    prevButton.addEventListener('click', () => {
+      renderPage(currentPage - 1);
+      scrollToTop('profile-details-panel');
+    });
+    paginationContainer.appendChild(prevButton);
+
+    // Page number buttons logic
+    let startPage = Math.max(1, currentPage - Math.floor(pageRange / 2));
+    let endPage = Math.min(totalPages, currentPage + Math.floor(pageRange / 2));
+
+    if (endPage - startPage + 1 < pageRange) {
+      if (startPage === 1) {
+        endPage = Math.min(totalPages, startPage + pageRange - 1);
+      } else if (endPage === totalPages) {
+        startPage = Math.max(1, totalPages - pageRange + 1);
+      }
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+      const pageButton = document.createElement('button');
+      pageButton.innerText = i;
+      if (i === currentPage) {
+        pageButton.classList.add('active-page');
+      }
+      pageButton.addEventListener('click', () => {
+        renderPage(i)
+        scrollToTop('profile-details-panel');
+      });
+      paginationContainer.appendChild(pageButton);
+    }
+
+    // "Next" button
+    const nextButton = document.createElement('button');
+    nextButton.classList.add('nav-button');
+    nextButton.innerHTML = `Next &rarr;`; // Right arrow
+    nextButton.disabled = currentPage === totalPages;
+    nextButton.addEventListener('click', () => {
+      renderPage(currentPage + 1);
+      scrollToTop('profile-details-panel');
+    });
+    paginationContainer.appendChild(nextButton);
+  }
+
+  // Initial render of the first page
+  renderPage(1);
+}
+
+// --- POPULATE FUNCTIONS --------------------------------------------------- \\
+
+function populateInfoTable(data, noLetter = false, disabilityIndicator = false, vulnerabilityIndicator = false) {
+  if (!document.getElementById('info-table-body')) return;
+
+  // Get the array data (warnings/risks/awareness)
+  let additionalInfoArray = Array.isArray(data.additionalInformation)
+    ? data.additionalInformation
+    : (Array.isArray(data) ? data : []); // This line is crucial for getting the array data back
+
+  let normalizedData = additionalInfoArray
+    .map(item => {
+      const type = Object.keys(item)[0];
+      const detail = item[type];
+      return {
+        type: type,
+        detail: detail
+      };
+    })
+    .filter(item => item.type && item.detail);
+
+  if (noLetter === 'true') {
+    normalizedData.push({
+      type: 'No Letter Indicator',
+      detail: 'Yes'
+    });
+  }
+
+  if (disabilityIndicator === 'true') {
+    normalizedData.push({
+      type: 'Disability Indicator',
+      detail: 'Yes'
+    });
+  }
+
+  if (vulnerabilityIndicator === 'true') {
+    normalizedData.push({
+      type: 'Vulnerability Indicator',
+      detail: 'Yes'
+    });
+  }
+
+  const infoRowMapper = (item) => {
+    let formattedType = item.type;
+    formattedType = formattedType.charAt(0).toUpperCase() + formattedType.slice(1);
+
+    return `
+          <td><strong>${formattedType}</strong></td>
+          <td>${item.detail}</td>
+      `;
+  };
+
+  renderPaginatedTable(normalizedData, 'info-table-body', 'info-pagination', infoRowMapper, null);
+}
+
+function populatePropertyDetailsTable(data) {
+  if (!document.getElementById('property-table-body')) return;
+
+  // Define the fields you want to display in order, 
+  const propertyFields = [
+    { key: 'ownership', label: 'Ownership' },
+    { key: 'rightToBuy', label: 'Right To Buy' },
+    { key: 'occupancyCount', label: 'Occupancy Count' },
+    { key: 'communalHeating', label: 'Communal Heating' },
+    { key: 'liveDisrepair', label: 'Live Disrepair' },
+    { key: 'managementCode', label: 'Management Code' },
+    { key: 'area', label: 'Area Code' },
+    { key: 'ward', label: 'Ward Code' }
+  ];
+
+  const normalizedData = propertyFields
+    .map(field => {
+      let detail = data[field.key];
+      const type = field.label;
+
+      if (typeof detail === 'string') {
+        // Normalize 'true'/'false' strings to 'Yes'/'No'
+        if (detail.toLowerCase() === 'true') {
+          detail = 'Yes';
+        } else if (detail.toLowerCase() === 'false') {
+          detail = 'No';
+        } else if (!detail) {
+          detail = ''; // Set empty/null/undefined strings to an empty string
+        }
+      } else if (typeof detail === 'boolean') {
+        detail = detail ? 'Yes' : 'No';
+      } else if (detail === null || detail === undefined) {
+        detail = ''; // Handle null or undefined values
+      }
+
+      // Apply Title Case (assuming formatTitleCase is available)
+      if (field.key === 'ownership' && typeof detail === 'string') {
+        detail = formatTitleCase(detail);
+      }
+
+      return {
+        type: type,
+        // Ensure detail is a string for filtering below
+        detail: String(detail)
+      };
+    })
+
+    .filter(item =>
+      item.detail !== '' && item.detail.toLowerCase() !== 'no'
+    );
+
+  const propertyRowMapper = (item) => {
+    return `
+          <td><strong>${item.type}</strong></td>
+          <td>${item.detail}</td>
+      `;
+  };
+
+  renderPaginatedTable(normalizedData, 'property-table-body', 'property-pagination', propertyRowMapper, null);
+}
+
+function populateAddressHistoryTable(data) {
+  // Note: This uses the existing arrangements table/pagination IDs
+  if (!document.getElementById('address-table-body')) return;
+
+  // Sort function: Oldest start date first (ascending order)
+  const addressSorter = (a, b) => {
+    // Use a default old date for items with no start date to push them to the end, 
+    const dateA = a.startDate ? new Date(a.startDate).getTime() : 0;
+    const dateB = b.startDate ? new Date(b.startDate).getTime() : 0;
+
+    // Sorting in ASCENDING order (oldest first: A - B)
+    return dateA - dateB;
+  };
+
+  // Row mapper function for Address History
+  const addressRowMapper = (item) => {
+    // formatDateTime is assumed to be available globally
+    const formattedStartDate = item.startDate ? formatDateTime(item.startDate).readable.date : 'N/A';
+    // Display 'Present' if endDate is missing or empty, otherwise format the date.
+    const formattedEndDate = item.endDate ? formatDateTime(item.endDate).readable.date : 'Present';
+
+    return `
+          <td>${item.fullAddress}</td>
+          <td>${formattedStartDate}</td>
+          <td>${formattedEndDate}</td>
+      `;
+  };
+
+  renderPaginatedTable(data, 'address-table-body', 'address-pagination', addressRowMapper, addressSorter);
+}
+
+function populateChargesTable(data) {
+  if (!document.getElementById('charges-table-body')) return;
+
+  // Sort function for Charges (newest to oldest)
+  const chargesSorter = (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime();
+
+  // Row mapper function for Charges
+  const chargesRowMapper = (item) => `
+    <td>${item.date}<br/><div class="note-text">${item.description}</div></td>
+    <td>${item.amount}</td>
+  `;
+
+  renderPaginatedTable(data, 'charges-table-body', 'charges-pagination', chargesRowMapper, chargesSorter);
+}
+
+function populateTransactionsTable(data) {
+  if (!document.getElementById('transactions-table-body')) return;
+
+  // Sort function for Transactions (newest to oldest)
+  const transactionsSorter = (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime();
+
+  // Row mapper function for Transactions
+  const transactionsRowMapper = (item) => `
+    <td>${item.date}<br/><div class="note-text">${item.description}</div></td>
+    <td>${item.type}</td>
+    <td>${item.amount}</td>
+    <td>${item.balance}</td>
+  `;
+
+  renderPaginatedTable(data, 'transactions-table-body', 'transactions-pagination', transactionsRowMapper, transactionsSorter);
+}
+
+function populateArrangementsTable(data) {
+  if (!document.getElementById('arrangements-table-body')) return;
+
+  const parseArrangementDate = (logDateString) => {
+    // Remove the " at " separator, the comma after the year, and the periods in A.M./P.M.
+    let dateStr = logDateString
+      .replace('<br/>', ' ')
+      .replace(/ at /, ' ')
+      .replace(/\.M\./i, 'M') // Replaces A.M. or P.M. with AM or PM
+      .replace(/,/, ''); // Removes the comma 
+
+    return new Date(dateStr);
+  };
+
+  // Sort function for Arrangements (newest to oldest)
+  const arrangementsSorter = (a, b) => {
+    const dateA = parseArrangementDate(a.logDate);
+    const dateB = parseArrangementDate(b.logDate);
+
+    // Ensure a valid date was created before attempting to subtract
+    const timeA = dateA.getTime();
+    const timeB = dateB.getTime();
+
+    // Handle invalid dates (NaN) by pushing them to the bottom/end
+    if (isNaN(timeA) && isNaN(timeB)) return 0;
+    if (isNaN(timeA)) return 1;
+    if (isNaN(timeB)) return -1;
+
+    // Newest to oldest: B (newer) - A (older)
+    return timeB - timeA;
+  };
+
+  // Row mapper function for Arrangements (no change needed here)
+  const arrangementsRowMapper = (item) => {
+    const formattedLogDate = item.logDate.replace('<br/>', ' at ');
+    return `
+      <td>${formattedLogDate}<br/><strong>Status: ${item.status}</strong><br/><div class="note-text">${item.arangementDescription}</div></td>
+      <td>${item.accountBalance}</td>
+    `;
+  };
+
+  renderPaginatedTable(data, 'arrangements-table-body', 'arrangements-pagination', arrangementsRowMapper, arrangementsSorter);
+}
+
+function populateNotesTable(data) {
+  if (!document.getElementById('notes-table-body')) return;
+
+  // Sort function for Notes (newest to oldest)
+  const notesSorter = (a, b) => {
+    const dateA = new Date(a.formattedCreatedDate.replace(' at ', ' '));
+    const dateB = new Date(b.formattedCreatedDate.replace(' at ', ' '));
+    return dateB.getTime() - dateA.getTime();
+  };
+
+  // Row mapper function for Notes
+  const notesRowMapper = (item) => `
+    <td>
+      <div class="note-date-time-container">${item.formattedCreatedDate} - ${item.createdBy}</div>
+      <div class="note-type"><strong>${item.typeDescription}</strong></div>
+      <div class="note-text">${item.text}</div>
+    </td>
+  `;
+
+  renderPaginatedTable(data, 'notes-table-body', 'notes-pagination', notesRowMapper, notesSorter);
+}

@@ -1,0 +1,303 @@
+#dform_container div[data-type="html"] {
+    background: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  #dform_container .dashboard-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  
+  #dform_container .dashboard-container .accounts-panel {
+    min-width: 9.5rem;
+    padding: 2%;
+    padding-left: 0;
+  }
+  
+  #dform_container .dashboard-container .account-item {
+    width: min-content;
+    padding: 3% 5%;
+    margin-bottom: 0.5rem;
+    color: var(--c-core-brand-primary-darken);
+    background-color: var(--c-greys-white);
+    border: 2px solid var(--c-core-brand-primary-darken);
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 200ms;
+  }
+  
+  #dform_container .dashboard-container .account-item:hover {
+    color: var(--c-greys-white);
+    background-color: var(--c-core-brand-primary-darken);
+    border-color: var(--c-core-brand-primary-darken);
+  }
+  
+  #dform_container .dashboard-container .account-item.active {
+    color: var(--c-greys-black);
+    background-color: var(--c-focus-links);
+    border-color: var(--c-focus-links);
+  }
+  
+  #dform_container .dashboard-container .account-item-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: inherit;
+    margin-top: 0;
+  }
+  
+  #dform_container .dashboard-container .account-type {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: inherit;
+  }
+  
+  #dform_container .dashboard-container .account-ref {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: inherit;
+  }
+  
+  #dform_container .dashboard-container .status-badge {
+    font-size: var(--font-size-xs);
+    padding: 2px 5px;
+    border-radius: 9999px;
+    line-height: 1;
+  }
+  
+  #dform_container .dashboard-container .status-badge.active {
+    color: var(--c-alerts-success);
+    background: var(--c-green-lighten);
+    border: 1px solid var(--c-green-darken);
+  }
+  
+  #dform_container .dashboard-container .status-badge.inactive {
+    color: var(--c-alerts-danger);
+    background: var(--c-red-lighten);
+    border: 1px solid var(--c-alerts-danger);
+  }
+  
+  #dform_container .dashboard-container .details-panel {
+    width: 100%;
+    padding: 2%;
+    padding-right: 0;
+    border-left: 1px solid var(--c-core-brand-body);
+  }
+  
+  #dform_container .dashboard-container .welcome-message {
+    text-align: center;
+    margin: 3rem 0;
+  }
+  
+  #dform_container .dashboard-container .details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 2rem;
+  }
+  
+  #dform_container .dashboard-container .accounts-panel .account-list-title,
+  #dform_container .dashboard-container .details-panel .details-title {
+      margin-top: 0;
+  }
+  
+  #dform_container .dashboard-container .detail-label {
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-xxs);
+  }
+  
+  #dform_container .dashboard-container .detail-value {
+    margin-bottom: var(--spacing-xxs);
+  }
+  
+  #dform_container .dashboard-container .tab-nav {
+    margin: var(--spacing-lg) 0 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #dform_container .dashboard-container .tab-button {
+    background: none;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0;
+    color: var(--c-core-brand-primary-darken);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 6px;
+    cursor: pointer;
+    height: auto;
+    width: auto;
+    min-width: auto;
+  }
+  
+  #dform_container .dashboard-container .tab-button:hover {
+    text-decoration-color: var(--c-core-brand-primary-darken);
+  }
+  
+  #dform_container .dashboard-container .tab-button:focus {
+    text-decoration-color: var(--c-core-brand-primary-darken);
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  
+  #dform_container .dashboard-container .tab-button.active-tab {
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--c-core-brand-accent-1-darken);
+  }
+  
+  #dform_container .dashboard-container .tab-content {
+    display: none;
+  }
+  
+  #dform_container .dashboard-container .tab-content.active-content {
+    display: block;
+  }
+  
+  #dform_container .dashboard-container .table-container {
+    overflow-x: auto;
+  }
+  
+  #dform_container .dashboard-container table {
+    min-width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #charges-info > div.table-container > table > thead > tr > th:nth-child(1),
+  #transactions-history > div.table-container > table > thead > tr > th:nth-child(1),
+  #arrangements-history > div.table-container > table > thead > tr > th:nth-child(1),
+  #notes-content > div.table-container > table > thead > tr > th {
+      width: 100%;
+  }
+  
+  #dform_container .dashboard-container thead {
+    background-color: var(--c-greys-chalk);
+  }
+  
+  #dform_container .dashboard-container th {
+    text-align: left;
+    font-weight: 500;
+    color: var(--c-core-brand-secondary);
+    background-color: var(--c-greys-chalk);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  #dform_container .dashboard-container tbody {
+    background-color: var(--c-greys-white);
+  }
+  
+  #dform_container .dashboard-container td {
+    white-space: nowrap;
+  }
+  
+  #dform_container .dashboard-container .table-row-item {
+    border-top: 1px solid var(--c-core-brand-secondary);
+  }
+  
+  #dform_container .dashboard-container .hidden {
+    display: none !important;
+  }
+  
+  .note-text {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    padding-top: 5px;
+  }
+  
+  #notes-content .table-container table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  
+  #notes-content .table-container th,
+  #notes-content .table-container td {
+    word-break: break-word;
+    width: 100%;
+  }
+  
+  
+  #dform_container div.pagination-controls {
+    margin-bottom: var(--spacing-xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xxs, 0.25rem);
+    padding: 0;
+    margin: 0;
+  }
+  
+  #dform_container div.pagination-controls button {
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    min-width: 30px;
+    padding: 0;
+    line-height: var(--line-height);
+    color: var(--c-core-brand-primary-darken);
+    font-weight: var(--font-weight-500);
+    border-radius: 5px !important;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+  }
+  
+  #dform_container div.pagination-controls button.nav-button {
+    text-decoration: none;
+  }
+  
+  #dform_container div.pagination-controls button:hover:not(:disabled) {
+    color: var(--c-brand-accents-teal);
+    background: var(--c-blue-lighten);
+    text-decoration: none;
+    border-color: transparent;
+  }
+  
+  #dform_container div.pagination-controls button:focus-visible {
+    outline: 2px solid var(--c-core-brand-primary-darken);
+    outline-offset: 2px;
+  }
+  
+  #dform_container div.pagination-controls button.active-page {
+    background-color: var(--c-core-brand-accent-1-darken);
+    color: var(--c-greys-white, white);
+    border-color: var(--c-core-brand-accent-1-darken);
+    font-weight: var(--font-weight-semibold);
+    text-decoration: none;
+    pointer-events: none;
+  }
+  
+  #dform_container div.pagination-controls button.nav-button {
+    font-weight: var(--font-weight-500);
+    padding-inline: var(--spacing-xs);
+  }
+  
+  #dform_container div.pagination-controls button:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+    background-color: transparent;
+    color: var(--c-core-brand-primary-darken);
+  }
+  
+  @media screen and (min-width: 960px) {
+      #dform_container .dashboard-container .accounts-panel {
+        min-width: 11rem;
+      }
+      
+      #dform_container .dashboard-container .account-item {
+        width: 10rem;
+        padding: 3% 10%;
+      }
+  }
