@@ -114,7 +114,7 @@ const allotmentsEligibility = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "06/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsContact = new ContentPSaR(
@@ -167,7 +167,7 @@ const allotmentsContact = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsApplying = new ContentPSaR(
@@ -215,7 +215,7 @@ const allotmentsApplying = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "06/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsPlotOffers = new ContentPSaR(
@@ -324,7 +324,7 @@ const allotmentsPlotOffers = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "06/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsPayingFees = new ContentPSaR(
@@ -393,7 +393,7 @@ const allotmentsPayingFees = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "06/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsNoticeToQuit = new ContentPSaR(
@@ -462,7 +462,7 @@ const allotmentsNoticeToQuit = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "06/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsFires = new ContentPSaR(
@@ -550,7 +550,7 @@ const allotmentsFires = new ContentPSaR(
     ],
     categories: ["Parks and Countryside"]
   },
-  { date: "06/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsDogs = new ContentPSaR(
@@ -585,7 +585,7 @@ const allotmentsDogs = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "06/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsWater = new ContentPSaR(
@@ -625,7 +625,7 @@ const allotmentsWater = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "06/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsKeys = new ContentPSaR(
@@ -720,7 +720,7 @@ const allotmentsDrones = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsTrees = new ContentPSaR(
@@ -759,7 +759,7 @@ const allotmentsTrees = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsAsbestos = new ContentPSaR(
@@ -805,7 +805,7 @@ const allotmentsAsbestos = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "06/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsVermin = new ContentPSaR(
@@ -839,7 +839,7 @@ const allotmentsVermin = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsKeyDeposit = new ContentPSaR(
@@ -898,7 +898,7 @@ const allotmentsKeyDeposit = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "04/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsEnquiries = new ContentPSaR(
@@ -1163,7 +1163,7 @@ const allotmentsEnquiries = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "05/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsReportIssue = new ContentPSaR(
@@ -1247,7 +1247,7 @@ const allotmentsReportIssue = new ContentPSaR(
     keywords: ["Allotments", "Report Issue", "Maintenance", "Water Leak", "Pests", "Asbestos", "Repairs"],
     categories: ["Parks and Countryside"]
   },
-  { date: "12/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsTreeManagement = new ContentPSaR(
@@ -1359,11 +1359,62 @@ const allotmentsParks = new MenuPSaR(
 
 //#region Report tree in park
 
-const reportTreePark = new FormDaMH(
+const reportTreePark = new ContentPSaR(
   "reportTreePark",
   "Report an issue with a tree",
-  "Use this form to report a damaged, fallen, or dangerous tree located in one of our parks or public green spaces.",
-  "report_tree",
+  "Information on how the Council manages trees, what issues we can respond to, and when you may take action yourself.",
+  `
+  <h3>Trees causing shade, overhang or other nuisance issues</h3>
+  <p>
+  Under normal circumstances the Council will not undertake pruning or 
+  removal work in direct response to natural or seasonal growth including:
+  </p>
+  <ul>
+    <li>Trees blocking light and causing shading</li>
+    <li>Overhanging branches (except those touching houses)</li>
+    <li>Branches obstructing telephone wires</li>
+    <li>Blocking or obstruction of views</li>
+    <li>Trees interfering with TV or satellite reception</li>
+    <li>Falling leaves, flowers, fruit or honeydew drip</li>
+    <li>Blocked gutters</li>
+    <li>Bird droppings</li>
+    <li>Seeds from trees that have germinated in gardens</li>
+    <li>Moss caused by shade</li>
+  </ul>
+  <h3>Pruning branches that overhang your property</h3>
+  <p>
+  Under Common Law you may prune branches back to your boundary line, 
+  but you should first seek legal advice and check with your local planning 
+  authority whether the tree is protected by a Tree Preservation Order or 
+  in a Conservation Area. Consider whether the work may make the tree unsafe 
+  and inform the Council before carrying out work.
+  </p>
+
+  <h3>Trees on council land touching houses</h3>
+  <p>
+  Where council trees are physically touching a building, the Council will 
+  carry out pruning work before damage occurs.
+  </p>
+  <h3>When the Council may carry out work</h3>
+  <ul>
+    <li>An assessment identifies a hazard such as significant decay or imminent failure</li>
+    <li>There is proven tree-root subsidence damage</li>
+    <li>Branches are touching buildings</li>
+    <li>Safety or sightlines are compromised (road signs, lighting, etc.)</li>
+  </ul>
+  <h3>Vandalism and illegal felling</h3>
+  <p>
+  Reports of vandalism will be investigated. Where vandalism affects new trees, 
+  we may plant larger replacements, involve local communities, or post notices 
+  to discourage further incidents.
+  </p>
+  <p>
+  To report an issue, use the <strong>Report tree</strong> button below.
+  </p>
+  `,
+  { buttonLabel: "Report tree", formName: "report_tree" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Report",
     keywords: [
@@ -1385,7 +1436,7 @@ const reportTreePark = new FormDaMH(
     ],
     categories: ["Parks and Countryside"]
   },
-  { date: "10/11/2025", name: "Andy Walker" }
+  { date: "18/11/2025", name: "Andy Walker" }
 );
 
 //#endregion Report tree in park
