@@ -120,7 +120,7 @@ const allotmentsEligibility = new ContentPSaR(
 const allotmentsContact = new ContentPSaR(
   "allotmentsContact",
   "Annual Waiting List Refresh",
-  "Information on the yearly waiting list refresh",
+  "Information on the yearly waiting list refresh for allotments",
   `
 <p>
   Every October, applicants are asked to confirm they wish to remain on the list. 
@@ -221,7 +221,7 @@ const allotmentsApplying = new ContentPSaR(
 const allotmentsPlotOffers = new ContentPSaR(
   "allotmentsPlotOffers",
   "Plot Offers",
-  "How plots are offered from the waiting list",
+  "How plots are offered from the waiting list for allotments",
   `
     <h3>How Plots Are Offered</h3>
     <p>
@@ -330,7 +330,7 @@ const allotmentsPlotOffers = new ContentPSaR(
 const allotmentsPayingFees = new ContentPSaR(
   "allotmentsPayingFees",
   "Paying Annual Fees",
-  "Details about rent and water charges",
+  "Details about rent and water charges for allotments",
   `
   <p>
     The rental year runs from 1st April to 31st March. Rent is reviewed and set annually, 
@@ -399,7 +399,7 @@ const allotmentsPayingFees = new ContentPSaR(
 const allotmentsNoticeToQuit = new ContentPSaR(
   "allotmentsNoticeToQuit",
   "Rent Notice to Quit Policy",
-  "What happens if rent is not paid",
+  "What happens if rent is not paid for an allotment",
   `
     <p>
       In addition to the Sheffield City Council standard payment policy, 
@@ -468,7 +468,7 @@ const allotmentsNoticeToQuit = new ContentPSaR(
 const allotmentsFires = new ContentPSaR(
   "allotmentsFires",
   "Burning / Fires",
-  "Rules for burning and using fires on plots",
+  "Rules for burning and using fires on plots within allotments",
   `
     <ul>
       <li>Allowed only from 1st October to 30th April (subject to changes in legislation).</li>
@@ -631,7 +631,7 @@ const allotmentsWater = new ContentPSaR(
 const allotmentsKeys = new ContentPSaR(
   "allotmentsKeys",
   "Site Keys",
-  "Rules for access and key responsibility",
+  "Rules for access and key responsibility for allotments",
   `
     <ul>
       <li>Only the tenant, or a person authorised or accompanied by the tenant, is allowed on the site.</li>
@@ -845,7 +845,7 @@ const allotmentsVermin = new ContentPSaR(
 const allotmentsKeyDeposit = new ContentPSaR(
   "allotmentsKeyDeposits",
   "Allotment Key Deposits",
-  "Costs and payment for replacement keys",
+  "Costs and payment for replacement keys for allotments",
   `<ul>
     <li>Squire keys: £5 deposit</li>
     <li>Mul-T-Lock keys: £30 deposit, with £25 refunded when the key is returned</li>
