@@ -100,7 +100,7 @@ class CoreBusiness {
     "Information regarding different buisnesses such as taxi licensing",
     "Buisness",
       [
-        switchboard
+        taxiLicensing
       ]
   );
 
