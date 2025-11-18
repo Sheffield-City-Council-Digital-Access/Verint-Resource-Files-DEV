@@ -122,10 +122,11 @@ const allotmentsContact = new ContentPSaR(
   "Annual Waiting List Refresh",
   "Information on the yearly waiting list refresh",
   `
-  <p>
+<p>
   Every October, applicants are asked to confirm they wish to remain on the list. 
-  Failure to respond may result in removal, though appeals are possible.
-  </p>
+  Failure to respond may result in removal. If you wish to appeal, please contact 
+  <a href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a>.
+</p>
 <p>
   For more information on Sheffield allotments, consult the official policy and regulations document:
   <br />
@@ -466,29 +467,55 @@ const allotmentsFires = new ContentPSaR(
       <li>Allowed only from 1st October to 30th April (subject to changes in legislation).</li>
       <li>Burn only organic plant material from previous growing seasons.</li>
       <li>No bonfires on open ground; must be contained in an incinerator or similar.</li>
-      <li>Do not cause a nuisance as defined in the <a href="https://www.legislation.gov.uk/ukpga/1990/43/contents" target="_blank" rel="noopener noreferrer">Environmental Protection Act 1990</a>.</li>
+      <li>Do not cause a nuisance as defined in the 
+        <a href="https://www.legislation.gov.uk/ukpga/1990/43/contents" target="_blank" rel="noopener noreferrer">
+          Environmental Protection Act 1990
+        </a>.
+      </li>
     </ul>
+    <h4>Reports from members of the public</h4>
     <p>
-    For more information on Sheffield allotments, consult the official policy and regulations document:
-   <br />
-    <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
-    Allotment Policy and Regulations
-    </a>
+      Burning or smoke issues reported by members of the public should be directed to Environmental Protection Services (EPS). 
+      If the burning is creating a <strong>statutory nuisance</strong>—including excessive smoke or visibility issues on the highway—please see:
     </p>
-
-<button
-  type="button"
-  class="dform_widget email-btn dform_widget_type_button"
-  aria-label="Send link to Sheffield allotment policy and regulations"
-  onclick="
-    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
-  "
->
-  Send link to review the policy and regulations
-</button>
-
+    <p>
+      <a href="https://www.sheffield.gov.uk/pollution-nuisance/smoke-nuisance" target="_blank" rel="noopener noreferrer">
+        Smoke Nuisance Guidance
+      </a>
+    </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Smoke Nuisance Guidance"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Smoke%20Nuisance%20Guidance\`
+      "
+    >
+      Send link to Smoke Nuisance Guidance
+    </button>
+    <p>
+      For more information on Sheffield allotments, consult the official policy and regulations document:
+      <br />
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" 
+         target="_blank" 
+         rel="noopener noreferrer">
+         Allotment Policy and Regulations
+      </a>
+    </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Sheffield allotment policy and regulations"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+      "
+    >
+      Send link to review the policy and regulations
+    </button>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -496,20 +523,24 @@ const allotmentsFires = new ContentPSaR(
   {
     type: "Information",
     keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Fires",
-  "Fire",
-  "Fyres",
-  "Burning",
-  "Burnin",
-  "Buring",
-  "Environmental Protection Act",
-  "Enviromental Protection Act",
-  "Environmental Protetion Act",
-  "Enviromental Protction Act"
-],
+      "Allotments",
+      "Allotment",
+      "Alotment",
+      "Fires",
+      "Fire",
+      "Fyres",
+      "Burning",
+      "Burnin",
+      "Buring",
+      "Environmental Protection Act",
+      "Enviromental Protection Act",
+      "Environmental Protetion Act",
+      "Enviromental Protction Act",
+      "Smoke nuisance",
+      "Smoke",
+      "Nuisance",
+      "Statutory nuisance"
+    ],
     categories: ["Parks and Countryside"]
   },
   { date: "06/11/2025", name: "Andy Walker" }
@@ -811,7 +842,7 @@ const allotmentsKeyDeposit = new ContentPSaR(
   "Costs and payment for replacement keys",
   `<ul>
     <li>Squire keys: £5 deposit</li>
-    <li>Mul-T-Lock keys: £30 deposit</li>
+    <li>Mul-T-Lock keys: £30 deposit, with £25 refunded when the key is returned</li>
     <li>Lost or stolen keys: £30 replacement charge</li>
   </ul>
   <p>
@@ -962,10 +993,12 @@ const allotmentsEnquiries = new ContentPSaR(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>
-        Applicants can only be on one waiting list at a time. If you have applied for two sites, 
-        you will need to decide which one you prefer to remain on.
-      </p>
+    <p>
+      Applicants can only be on one waiting list at a time. If you apply for more 
+      than one site, we will only accept and process your first application. 
+      If you have already applied for two sites, you will need to choose which 
+      waiting list you want to remain on.
+    </p>
     </div>
   </details>
 
@@ -1062,18 +1095,20 @@ const allotmentsEnquiries = new ContentPSaR(
       <li>Confirmation that you would like to end your tenancy</li>
     </ul>
     <p>
-      If you have received a "Notice to Quit" letter, you may return this instead.
-    </p>
-    <p>
       To formally submit your notice or ask about the process for ending your tenancy, use the <strong>Allotment request</strong> button below. 
       This ensures your request is recorded and processed correctly.
+    </p>
+    <p>
+      A follow-up email will be required as written confirmation that you wish 
+      to end your tenancy. Submitting the Allotment Request form will start 
+      the process, and we will then contact you to obtain your confirmation.
     </p>
     </div>
   </details>
 
 <details class="accordion">
   <summary class="accordion-header">
-    <h3>Can I keep animals or pigeons on my plot?</h3>
+    <h3>Can I keep livestock on my plot?</h3>
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
