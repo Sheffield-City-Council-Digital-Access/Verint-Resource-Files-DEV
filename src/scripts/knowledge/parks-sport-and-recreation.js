@@ -765,7 +765,7 @@ const allotmentsTrees = new ContentPSaR(
 const allotmentsAsbestos = new ContentPSaR(
   "allotmentsAsbestos",
   "Asbestos",
-  "Asbestos policy on plots",
+  "Asbestos policy on allotments",
   `
   <p>
       You must not bring asbestos onto your plot or sites. Asbestos was once 
