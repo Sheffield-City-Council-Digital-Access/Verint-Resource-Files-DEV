@@ -83,7 +83,7 @@ class CoreBusiness {
     { date: "18/11/2025", name: "Joseph Coupland"} 
   );
 
-  const taxiLicensing = new MenuB(
+  const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
   "Taxi Licensing",
   "Information regarding taxi licensing",
