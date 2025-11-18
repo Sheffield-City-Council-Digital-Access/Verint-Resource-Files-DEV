@@ -1214,6 +1214,26 @@ const allotmentsReportIssue = new ContentPSaR(
       line of cutting or flailing. 
       Re-inspection is at the discretion of the allotment officer.
     </p>
+      <p>
+    For more information on Sheffield allotments, consult the official policy and regulations document:
+    <br />
+    <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+      Allotment Policy and Regulations
+    </a>
+    </p>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="Send link to Sheffield allotment policy and regulations"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+    "
+  >
+    Send link to review the policy and regulations
+  </button>
     <p>
       For minor maintenance issues or if you have evidence of a problem, 
       you can report it directly using the <strong>Report allotment</strong> button below.
