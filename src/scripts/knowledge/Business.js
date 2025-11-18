@@ -97,8 +97,8 @@ class CoreBusiness {
   
   const business = new ServiceBusiness(
     "business",
+    "Business",
     "Information regarding different buisnesses such as taxi licensing",
-    "Buisness",
       [
         taxiLicensing
       ]
