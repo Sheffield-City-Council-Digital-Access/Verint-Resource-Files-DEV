@@ -54,7 +54,7 @@ class CoreBusiness {
   // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
   // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
   
-  const taxiLicensingExample = new ContentP(
+  const taxiLicensingExample = new ContentBusiness(
     "taxiLicensingExample",
     "Taxi Licensing Example",
     "Information regarding taxi licensing",
