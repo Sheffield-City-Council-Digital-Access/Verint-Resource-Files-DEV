@@ -725,7 +725,7 @@ const allotmentsDrones = new ContentPSaR(
 
 const allotmentsTrees = new ContentPSaR(
   "allotmentsTrees",
-  "Dangerous Trees",
+  "Dangerous Trees on an allotment",
   "Reporting dangerous trees on allotment sites",
   `
 <p>
