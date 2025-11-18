@@ -490,7 +490,7 @@ const allotmentsFires = new ContentPSaR(
       onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Smoke%20Nuisance%20Guidance\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Smoke%20nuisance%20guidance\`
       "
     >
       Send link to Smoke Nuisance Guidance
