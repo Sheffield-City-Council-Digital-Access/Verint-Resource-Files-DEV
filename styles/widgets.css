@@ -2,9 +2,9 @@
 #dform_container select,
 #dform_container textarea,
 #dform_container .currency-symbol {
-  margin: 0;
+  margin-top: var(--spacing-xxs);
   font-family: var(--font-family);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-body);
   color: var(--c-greys-black);
@@ -29,11 +29,6 @@
 #dform_container div.w-25 input,
 #dform_container div.w-25 select {
   width: var(--field-width-25);
-}
-
-#dform_container div.max-200 input,
-#dform_container div.max-200 select {
-  width: var(--field-width-200px);
 }
 
 #dform_container div.max-4 input,
@@ -272,6 +267,7 @@
 #dform_container .currency-symbol {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: var(--field-width-max-1);
   border-right: none !important;
 }
@@ -328,21 +324,6 @@
 
 #dform_container div[data-type="html"].remove-tab {
   outline: none !important;
-}
-
-/* For WebKit browsers (Chrome, Safari, newer versions of Edge) */
-.date-field input[type="number"]::-webkit-inner-spin-button,
-.date-field input[type="number"]::-webkit-outer-spin-button,
-.time-field input[type="number"]::-webkit-inner-spin-button,
-.time-field input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* For Firefox */
-.date-field input[type="number"],
-.time-field input[type="number"] {
-  -moz-appearance: textfield;
 }
 
 /* --- FIELD ERROR --- */
@@ -402,9 +383,7 @@
 
 /* --- HTML/AHTM Element --- */
 
-#dform_container div[data-type="html"]:focus,
-#dform_container div[data-type="html"]:focus-within {
-  background: var(--c-greys-white) !important;
+#dform_container div[data-type="html"] {
   outline: none !important;
   box-shadow: none !important;
 }

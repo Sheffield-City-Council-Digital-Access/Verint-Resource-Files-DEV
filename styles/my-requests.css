@@ -6,7 +6,7 @@ div.tab-container > div {
 button.tab-button {
   font-family: var(--font-family);
   font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   line-height: var(--line-height);
   margin: 0;
   padding: var(--spacing-xs) var(--spacing-md);
@@ -46,7 +46,7 @@ button.tab-button.active {
 }
 
 #widget_ahtm_view_reuests_into .info-panel p {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 #widget_MySubmittedRequests,
@@ -122,11 +122,11 @@ li.le-request-ref {
 
 li.le-request-ref::before {
   content: "Reference: ";
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 li.le-request-title a {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 li.le-request-associated {
@@ -134,7 +134,7 @@ li.le-request-associated {
 }
 
 li.le-request-status-text {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 }
 
 li.le-stat-open li.le-request-status-text::after {
@@ -179,7 +179,7 @@ li.le-stat-closed li.le-request-status-text::after {
 #pagination-container li a {
   background-color: transparent;
   border: 1px solid transparent;
-  font-weight: var(--font-weight-500);
+  font-weight: var(--font-weight-semibold);
 }
 
 #pagination-container li a:hover {
@@ -192,7 +192,7 @@ li.le-stat-closed li.le-request-status-text::after {
 }
 
 #pagination-container li.le-pagination-nav a {
-  font-weight: var(--font-weight-500);
+  font-weight: var(--font-weight-semibold);
   margin-inline: var(--spacing-xs);
   padding-inline: var(--spacing-xs);
 }
@@ -207,7 +207,7 @@ li.le-stat-closed li.le-request-status-text::after {
   background-color: var(--c-core-brand-accent-1-darken) !important;
   color: var(--c-greys-white) !important;
   border-color: var(--c-core-brand-accent-1-darken);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   text-decoration: none !important;
 }
 

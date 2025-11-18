@@ -98,10 +98,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const myProfileLink = document.getElementById("nav_username");
-    userName = myProfileLink.textContent;
-    if (myProfileLink) {
+    if (myProfileLink) { 
+      userName = myProfileLink.textContent;
       myProfileLink.textContent = "My profile";
-    }
+  }
   })();
 
   (() => {

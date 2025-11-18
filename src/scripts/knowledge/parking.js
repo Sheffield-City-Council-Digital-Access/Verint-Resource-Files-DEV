@@ -3169,6 +3169,7 @@ const howLongDoIHaveToAppeal = new ContentP(
       "parkng",
       "permt",
       "permmit",
+      "permits",
       "permitt",
       "pemit",
       "premit",
@@ -3849,6 +3850,86 @@ const unableToResolvePcn = new ContentP(
   { date: "29/07/2025", name: "Dinah Williams" }
 );
 
+const emailPcnAppealsInfoLink = new ContentP(
+  "emailPcnAppealsInfoLink",
+  "Email link to PCN appeals",
+  "Email link to SCC webpage on how to appeal a PCN.",
+  `
+<h4>Appeal a parking, bus lane, moving traffic or CAZ fine</h4>
+
+<p>
+   If you think your fine should not have been issued, or you have been charged unfairly, you can make an appeal.
+</p>
+
+<p> 
+   I am able to email you a link to the relevant page on the SCC website with information about making appeals. 
+</p>
+
+<p>Details on the page include:</p>
+<ul>
+  <li>Making an appeal</li>
+  <li>Using the interactive tool Chatbox Max to gain advice on your case</li>
+  <li>How to make an informal appeal - against a PCN left on your windscreen</li>
+  <li>How to make a formal appeal - against a Notice to Owner or PCN received in the post</li>
+  <li>What happens if you do nothing about your PCN</li>
+  <li>Debt recovery for PCNs if they remain unpaid</li>
+  <li>What to do if your vehicle has been towed</li>
+</ul>
+
+<p>
+   Information about appealing a PCN is available at: 
+   <a href="https://www.sheffield.gov.uk/parking/appeal-parking-bus-lane-moving-traffic-or-caz-fine"
+   target="_blank">https://www.sheffield.gov.uk/parking/appeal-parking-bus-lane-moving-traffic-or-caz-fine</a>
+</p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=PCN%20Appeal%20Information\`
+    "
+>
+    Send link to review further information
+</button>
+
+
+  `,
+  { buttonLabel: "Parking Permit", formName: "" },
+  { typeKey: "" },
+  { typeKey: "penalty_charge_notice_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Appeal",
+      "PCN",
+      "parking",
+      "penalty notice",
+      "penalty",
+      "charge",
+      "fine",
+      "penalty charge notice",
+      "fine",
+      "ticket",
+      "parknig",
+      "parkingg",
+      "paking",
+      "parrking",
+      "parkng",
+      "bus lane",
+      "Notice to owner",
+      "CAZ",
+      "Taxi PCN",
+      "Bailiff"
+    ],
+    categories: ["Parking"],
+  },
+  { date: "12/11/2025", name: "Liz Taster" }
+);
+
+
 const penaltyChargeNoticePcn = new MenuP(
   "penaltyChargeNoticePCN",
   "Penalty Charge Notice (PCN)",
@@ -3858,6 +3939,7 @@ const penaltyChargeNoticePcn = new MenuP(
     customerPaidTwice,
     customerTriedToPayOnline,
     customerUnableToPay,
+    emailPcnAppealsInfoLink,
     enforcementBaliffEnquiries,
     howCanIAppeal,
     howLongDoIHaveToAppeal,

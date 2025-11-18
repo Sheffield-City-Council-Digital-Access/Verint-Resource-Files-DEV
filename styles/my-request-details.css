@@ -31,7 +31,7 @@
 }
 
 .le-request-list-link a:focus span {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   color: var(--c-greys-black) !important;
   background: var(--c-focus-links);
   text-decoration: none !important;
@@ -64,7 +64,7 @@
 }
 
 .le-content .le-request-list-link .le-request-value {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   color: var(--c-brand-accents-teal);
 }
 
@@ -83,7 +83,7 @@
   margin-top: var(--spacing-lg);
   margin-bottom: var(--spacing-sm);
   line-height: var(--line-height);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-xxl);
 }
 
@@ -178,7 +178,7 @@
   letter-spacing: 0;
   line-height: var(--line-height-body);
   color: var(--c-core-brand-body);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   padding-bottom: 0 !important;
 }
 
@@ -221,7 +221,7 @@
 }
 
 div.le-request-note-created.datetime > time {
-  font-weight: var(--font-weight-500);
+  font-weight: var(--font-weight-semibold);
 }
 
 .le-request-notes-not-available {

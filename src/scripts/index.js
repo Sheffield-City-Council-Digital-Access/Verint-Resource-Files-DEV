@@ -527,11 +527,11 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- DISPLAYING AGE ON REVIEW PAGE ------------------------------------- \\
   if (kdf.form.complete === "Y" && kdf.access === "agent") {
-   KDF.showWidget("txt_age");
-   KDF.showWidget("txt_their_age");
-   refreshReviewPage();
-}
-  
+    KDF.showWidget("txt_age");
+    KDF.showWidget("txt_their_age");
+    refreshReviewPage();
+  }
+
   // --- ADD CONTENT TO WHY WE NEED DATE OF BIRTH --------------------------- \\
 
   $(".dob-reason").text(
@@ -832,10 +832,10 @@ function handleOnReadyEvent(_, kdf) {
             error.code === error.PERMISSION_DENIED
               ? "User denied the request for Geolocation"
               : error.code === error.POSITION_UNAVAILABLE
-              ? "Location information is unavailable"
-              : error.code === error.TIMEOUT
-              ? "The request to get user location timed out"
-              : "An unknown error occurred";
+                ? "Location information is unavailable"
+                : error.code === error.TIMEOUT
+                  ? "The request to get user location timed out"
+                  : "An unknown error occurred";
 
           const errorMessageHtml = `
                       <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
@@ -922,8 +922,8 @@ function handleOnReadyEvent(_, kdf) {
         const validSiteCode = acceptGMSites
           ? true
           : KDF.getVal(siteCode.name).startsWith("344")
-          ? true
-          : false;
+            ? true
+            : false;
         if (siteNameHasValue && siteCodeHasValue && validSiteCode) {
           if (action === "submit") {
             KDF.gotoPage("complete", true, true, false);
@@ -1110,9 +1110,8 @@ function handleOnReadyEvent(_, kdf) {
     streetName = formatTitleCase(kdf.profileData["profile-AddressLine1"]);
     fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
       streetName
-    )}, ${kdf.profileData["profile-AddressLine4"]}, ${
-      kdf.profileData["profile-Postcode"]
-    }`;
+    )}, ${kdf.profileData["profile-AddressLine4"]}, ${kdf.profileData["profile-Postcode"]
+      }`;
     handleSetReporter(
       new Date(kdf.profileData["profile-DateOfBirth"]),
       fullAddress
@@ -1481,9 +1480,8 @@ function handleObjectIdLoaded(event, kdf, response, type, id) {
 
   property = formatTitleCase(response["profile-AddressNumber"]);
   streetName = formatTitleCase(response["profile-AddressLine1"]);
-  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${
-    response["profile-AddressLine4"]
-  }, ${response["profile-Postcode"]}`;
+  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(streetName)}, ${response["profile-AddressLine4"]
+    }, ${response["profile-Postcode"]}`;
 
   handleSetReporter(new Date(response["profile-DateOfBirth"]), fullAddress);
 
@@ -2950,14 +2948,50 @@ function getAndSetReviewPageData() {
             fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
           } else if (fieldType === "file") {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-            fieldValue = KDF.getVal(
-              fieldName.replace("file_", "txt_file_name_")
-            );
-            const filePath = KDF.getVal(
-              fieldName.replace("file_", "txt_file_path_")
-            );
-            if (KDF.kdf().access === "agent" && filePath) {
-              fieldValue = `<a href="${filePath}" target="_blank">${fieldValue}</a>`;
+            let fileControlName = fieldName.replace("file_", "");
+            const fileNameField = "txt_file_name_" + fileControlName;
+            const filePathField = "txt_file_path_" + fileControlName;
+
+            const fileNamesString = KDF.getVal(fileNameField);
+            const filePathsString = KDF.getVal(filePathField);
+
+            fieldValue = fileNamesString;
+            if (KDF.kdf().access === "agent" && filePathsString) {
+
+              const fileNames = fileNamesString.split(",");
+              const filePaths = filePathsString.split(",");
+              if (
+                fileNames.length === filePaths.length &&
+                fileNames.length > 0
+              ) {
+                let linkedFiles = [];
+                for (let i = 0; i < filePaths.length; i++) {
+                  const name = fileNames[i].trim();
+                  const path = filePaths[i].trim();
+
+                  if (name && path) {
+                    linkedFiles.push(
+                      `<a href="${path}" target="_blank">${name}</a>`
+                    );
+                  }
+                }
+
+                fieldValue = linkedFiles.join("<br>");
+              } else {
+                let linkedFiles = [];
+                for (let i = 0; i < filePaths.length; i++) {
+                  const name = `${fileNames[0].trim()} ${i + 1}`;
+                  const path = filePaths[i].trim();
+
+                  if (name && path) {
+                    linkedFiles.push(
+                      `<a href="${path}" target="_blank">${name}</a>`
+                    );
+                  }
+                }
+
+                fieldValue = linkedFiles.join("<br>");
+              }
             }
           } else {
             if (fieldClass.indexOf("currency") !== -1) {
@@ -3118,12 +3152,12 @@ function createReviewSection(pageId, pageTitle, fields) {
                   <button type="button" class="go-to-page-btn" id="go-to-${pageId}">Edit</button>
               </div>
               ${fields
-                .map(
-                  (field) => `
+      .map(
+        (field) => `
                     <p>${field.fieldlabel}: ${field.fieldValue}</p>
                   `
-                )
-                .join("")}
+      )
+      .join("")}
           </div>
       </div>
    `;
