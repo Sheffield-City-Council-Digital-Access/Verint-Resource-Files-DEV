@@ -269,15 +269,17 @@ const allotmentsPlotOffers = new ContentPSaR(
 
     <h4>Concessions</h4>
     <p>
-    Concessions are available to eligible tenants, including those on a 
-    low income, with disabilities, students, or of state pension age. You must 
-    provide valid evidence—such as proof of benefits, student status, or pension 
-    age—when first claiming and each year during the concession window 
-    (unless age-related). Claims cannot be backdated, and only one concession 
-    can be applied per tenant and plot. Failure to claim within the window 
-    means full rent is due.
-    </p>
-    
+      Concessions are available to eligible tenants, including those on a 
+      low income, with disabilities, students, or of state pension age. You must 
+      provide valid evidence—such as proof of benefits, student status, or pension 
+      age—when first claiming and each year during the concession window 
+      (unless age-related). Claims cannot be backdated, and only one concession 
+      can be applied per tenant and plot. Failure to claim within the window 
+      means full rent is due.  
+      Please note that only one concession can be awarded per tenant overall, 
+      so if you have more than one plot, the concession can only be 
+      applied to a single plot.
+    </p>    
     <p>For more information on Sheffield allotments, consult the official policy and regulations document:</p>
     <p>
       <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
@@ -338,12 +340,17 @@ const allotmentsPayingFees = new ContentPSaR(
   </p>
   <ul>
     <li>You (the tenant) will be charged rent, plus a water charge if your site has a water supply.</li>
-    <li>There are a range of ways to pay. You are responsible for paying promptly on receipt of your invoice, 
-        whichever payment method you choose.</li>
-    <li>If you opt for Direct Debit, you are responsible for ensuring payments are deducted from your account.</li>
+    <li>There are a range of ways to pay. You are responsible for paying promptly on receipt of your invoice, whichever payment method you choose.</li>
+    <li>
+      If you opt for Direct Debit, you are responsible for ensuring payments are deducted from your account.  
+      Direct Debit arrangements must be in place no later than the <strong>1st of March</strong>.  
+      If the Direct Debit is not set up on time, other payment methods will be available.
+    </li>
     <li>If you would struggle to pay your rent in full immediately, contact the Council promptly on receipt of your invoice; there may be options to help.</li>
-    <li>Each January, tenants are contacted with details about the upcoming rental year, including information on rent and water charges, concession eligibility, 
-        and payment options such as Direct Debit setup.</li>
+    <li>
+      Each January, tenants are contacted with details about the upcoming rental year, including information on rent and water charges, concession eligibility, 
+      and payment options such as Direct Debit setup.
+    </li>
   </ul>
     <p>
     For more information on Sheffield allotments, consult the official policy and regulations document:
@@ -391,7 +398,7 @@ const allotmentsPayingFees = new ContentPSaR(
 
 const allotmentsNoticeToQuit = new ContentPSaR(
   "allotmentsNoticeToQuit",
-  "Notice to Quit Policy",
+  "Rent Notice to Quit Policy",
   "What happens if rent is not paid",
   `
     <p>
@@ -480,20 +487,20 @@ const allotmentsFires = new ContentPSaR(
     </p>
     <p>
       <a href="https://www.sheffield.gov.uk/pollution-nuisance/smoke-nuisance" target="_blank" rel="noopener noreferrer">
-        Smoke Nuisance Guidance
+        Report a smoke nuisance
       </a>
     </p>
     <button
       type="button"
       class="dform_widget email-btn dform_widget_type_button"
-      aria-label="Send link to Smoke Nuisance Guidance"
+      aria-label="Send link to Report a smoke nuisance"
       onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
         }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20a%20smoke%20nuisance\`
       "
     >
-      Send link to Smoke Nuisance Guidance
+      Send link to Report a smoke nuisance
     </button>
     <p>
       For more information on Sheffield allotments, consult the official policy and regulations document:
@@ -687,7 +694,6 @@ const allotmentsDrones = new ContentPSaR(
   `<p>
   Drones are not permitted on any Sheffield City Council estate, 
   including allotments, without prior written permission. 
-  Permission is only granted in exceptional circumstances.
   </p>
   `,
   { buttonLabel: "", formName: "" },
@@ -1335,7 +1341,7 @@ const allotmentsParks = new MenuPSaR(
 
 const reportTreePark = new FormDaMH(
   "reportTreePark",
-  "Report an issue with a tree in a park",
+  "Report an issue with a tree",
   "Use this form to report a damaged, fallen, or dangerous tree located in one of our parks or public green spaces.",
   "report_tree",
   {
