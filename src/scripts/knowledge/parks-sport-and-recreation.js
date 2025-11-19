@@ -556,7 +556,7 @@ const allotmentsFires = new ContentPSaR(
 const allotmentsDogs = new ContentPSaR(
   "allotmentsDogs",
   "Dogs",
-  "Rules for dogs on allotment sites",
+  "Rules for dogs on allotment site",
   `
     <ul>
       <li>You can bring your dog on site, but it must not cause a nuisance.</li>
