@@ -1244,7 +1244,7 @@ const allotmentsReportIssue = new ContentPSaR(
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
-    keywords: ["Allotments", "Report Issue", "Maintenance", "Water Leak", "Pests", "Asbestos", "Repairs"],
+    keywords: ["Allotments", "Report Issue", "Maintenance", "Water Leak", "Pests", "Asbestos"],
     categories: ["Parks and Countryside"]
   },
   { date: "18/11/2025", name: "Andy Walker" }
