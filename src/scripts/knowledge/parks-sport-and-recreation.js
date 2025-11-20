@@ -58,7 +58,7 @@ class FormPSaR extends CorePSaR {
 
 const allotmentsEligibility = new ContentPSaR(
   "allotmentsEligibility",
-  "Eligibility",
+  "Eligibility for Allotments",
   "Who can apply for an allotment plot",
   `
     <p>
@@ -467,7 +467,7 @@ const allotmentsNoticeToQuit = new ContentPSaR(
 
 const allotmentsFires = new ContentPSaR(
   "allotmentsFires",
-  "Burning / Fires",
+  "Burning and Fires",
   "Rules for burning and using fires on plots within allotments",
   `
     <ul>
@@ -555,7 +555,7 @@ const allotmentsFires = new ContentPSaR(
 
 const allotmentsDogs = new ContentPSaR(
   "allotmentsDogs",
-  "Dogs",
+  "Dogs on allotments",
   "Rules for dogs on allotment site",
   `
     <ul>
@@ -725,7 +725,7 @@ const allotmentsDrones = new ContentPSaR(
 
 const allotmentsTrees = new ContentPSaR(
   "allotmentsTrees",
-  "Dangerous Trees on an allotment",
+  "Dangerous Trees on an Allotment",
   "Reporting dangerous trees on allotment sites",
   `
 <p>
@@ -810,7 +810,7 @@ const allotmentsAsbestos = new ContentPSaR(
 
 const allotmentsVermin = new ContentPSaR(
   "allotmentsVermin",
-  "Rats and Vermin",
+  "Rats and Vermin on Allotments",
   "Policy for vermin control on allotment sites",
   `<p>
   Environmental Services will investigate rat issues and take action 
@@ -1027,7 +1027,7 @@ const allotmentsEnquiries = new ContentPSaR(
         type="button"
         class="dform_widget email-btn dform_widget_type_button"
         aria-label="Send link to plot size and cost information"
-        onclick="window.location.href = window.location.protocol + '//' + window.location.hostname + '/form/launch/send_link_to_service?' + (KDF.getParams().customerid ? 'customerid=' + KDF.getParams().customerid + '&' : '') + 'interactionid=' + KDF.getParams().interactionid + '&sel_service=Allotment%20plot%20sizes%20and%20costs';"
+        onclick="window.location.href = window.location.protocol + '//' + window.location.hostname + '/form/launch/send_link_to_service?' + (KDF.getParams().customerid ? 'customerid=' + KDF.getParams().customerid + '&' : '') + 'interactionid=' + KDF.getParams().interactionid + '&sel_service=Allotment%20information%20page';"
       >
         Send link to plot size and cost information
       </button>
@@ -1168,7 +1168,7 @@ const allotmentsEnquiries = new ContentPSaR(
 
 const allotmentsReportIssue = new ContentPSaR(
   "allotmentsReportIssue",
-  "Report an issue in an allotment",
+  "Report an Issue in an Allotment",
   "How to report problems on your allotment plot",
   `
     <p>
