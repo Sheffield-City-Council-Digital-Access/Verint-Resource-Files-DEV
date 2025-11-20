@@ -166,7 +166,7 @@ const universalCredit = new ContentH(
     <div class="accordion-content">
         <p>Universal Credit does not include help with your Council Tax, so you must claim this separately.</p>
         <p>You can do this at:
-        <a href="https://www.sheffield.gov.uk/benefits/council-tax-support" 
+        <a href="https://www.sheffield.gov.uk/benefits/council-tax-support" target="_blank">https://www.sheffield.gov.uk/benefits/council-tax-support</a>
       </p>
 <button
     type="button"
