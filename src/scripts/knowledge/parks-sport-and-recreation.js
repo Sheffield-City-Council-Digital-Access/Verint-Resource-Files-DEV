@@ -123,8 +123,20 @@ const allotmentsContact = new ContentPSaR(
   "Information on the yearly waiting list refresh for allotments",
   `
 <p>
-  Every October, applicants are asked to confirm they wish to remain on the list. 
-  Failure to respond may result in removal. If you wish to appeal, please contact 
+  In order to ensure our records are accurate and up to date, we 
+  conduct an annual refresh of the allotment waiting list around October. 
+  This involves contacting individuals who have been on the waiting list 
+  for more than a year to confirm whether they still wish to retain their place.
+  We request a response to this communication to verify continued interest. 
+  If we do not receive a reply, we will assume that the individual is no 
+  longer interested, and they will be removed from the waiting list.
+</p>
+<p>
+  It is important for applicants to check their email inboxes carefully — 
+  including spam and junk folders — to ensure they do not miss this communication. 
+  Many enquiries relate to individuals not realising an email had been sent. 
+  If you believe you missed the email and did not respond in time, appeals 
+  should be directed to the manager via 
   <a href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a>.
 </p>
 <p>
@@ -1202,6 +1214,13 @@ const allotmentsReportIssue = new ContentPSaR(
       site,report it. Providing details such as the 
       location and type of waste will help us investigate and take 
       appropriate action to remove the debris and prevent further issues.
+    </p>
+    <h4>Reporting Anti-Social Behaviour</h4>
+    <p>
+      For issues involving anti-social behaviour in or around an allotment site — 
+      including vandalism, theft, arson, harassment, or abuse. Tenants and witnesses 
+      should be advised to report the matter directly to South Yorkshire Police 
+      by calling 101 so the appropriate action can be taken.
     </p>
     <h4>Maintenance and Responsibilities</h4>
     <p>
