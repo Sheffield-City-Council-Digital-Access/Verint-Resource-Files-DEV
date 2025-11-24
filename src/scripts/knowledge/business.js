@@ -1465,6 +1465,262 @@ const applyTaxiDriver = new ContentBusiness(
   
 
 
+  const applyPrivateOperator = new ContentBusiness(
+    "applyPrivateOperator",
+    "Transfer a vehicle licence",
+    "Transfer a vehicle licence",
+    `
+    <h3>About private hire operator licences</h3>
+    <h4>Private Hire Operator Licence</h4>
+    <p>You will need to apply for a private hire operator licence to run a private hire business in Sheffield. This enables you to advertise and accept bookings for private hire work.</p>
+
+    <p>Although you may not drive passengers, if you own the business, you will still have to deal with the public. This includes face-to-face, email, or telephone conversations.</p>
+
+    <p>It is important that you only operate licensed vehicles that are driven by licensed drivers. The driver, vehicle, and operator must all be licensed by us.</p>
+
+    <h4>Applying for a licence</h4>
+    <p>Find out how to apply for a private operator licence:</p>
+    <p><a href="https://www.sheffield.gov.uk/taxi-licensing/private-hire-operator/new-private-hire-operator-licence" target="_blank">https://www.sheffield.gov.uk/taxi-licensing/private-hire-operator/new-private-hire-operator-licence</a> JCHERE add Send Link</p>
+    <h3>Find out how to apply for a private hire operator licence</h3>
+    <h4>Fit and Proper Check</h4>
+    <p>When you apply for a new private hire operator licence, we will check whether you are 'fit and proper' to hold the licence. This means you are safe and suitable to be a private hire operator, pose no threat to public safety, and have no links to serious criminal activity. To help us understand this, we will need to know the following information when you apply online.</p>
+
+    <h4>About DBS</h4>
+    <p>You will need to tell us whether all applicants, directors, or partners have any criminal convictions.</p>
+    <p><a href="#">About DBS checks</a></p>
+
+    <h4>About right to work</h4>
+    <p>We will need to know that you are legally allowed to work in the UK.</p>
+    <p><a href="#">Right to work in the UK for taxi operators</a></p>
+
+    <h4>About tax checks</h4>
+    <p>You will need to show us that you are aware of tax registration if you do not have a tax check code already.</p>
+    <p><a href="#">Private hire operator tax checks</a></p>
+
+    <h4>About insurance</h4>
+    <p>Find out about the insurance you will need as a private hire operator.</p>
+    <p><a href="#">Private hire operator insurance</a></p>
+
+    <h4>About planning permission</h4>
+    <p>Learn more about planning permission you might need for your premises.</p>
+    <p><a href="#">Private hire operator planning permission</a></p>
+
+    <h4>About data protection</h4>
+    <p>Understand about data protection and registering with the Information Commissioner’s Office (ICO).</p>
+    <p><a href="#">Registering with the ICO</a></p>
+
+    <h4>About operator name</h4>
+    <p>You must operate under a company name that is not similar to one already used in Sheffield. Learn more about the name your private hire business can have.</p>
+    <p><a href="#">Private hire operator name</a></p>
+
+    <h4>Apply for licence</h4>
+    <p>Use this form to apply for your new private hire operator licence. JCHERE need form link</p>
+
+    <h3>Private hire operator disclosure and barring checks<h3>
+    <h4>Annual DBS Certificate</h4>
+    <p>You will need to send us a basic Disclosure and Barring Service (DBS) certificate every year.</p>
+    <p>We will look at any and all convictions contained within the DBS check. These include:</p>
+    <ul>
+    <li>crimes resulting in death</li>
+    <li>exploitation</li>
+    <li>offences involving violence</li>
+    <li>possession of a weapon</li>
+    <li>sex and indecency offences</li>
+    <li>dishonesty</li>
+    <li>drugs</li>
+    <li>discrimination</li>
+    <li>any offence referenced in hackney carriage and private hire legislation</li>
+    </ul>
+    <p>If you are a company or partnership applying for a licence, all named directors and partners within the company will need to supply a basic DBS certificate every year.</p>
+    <p>If you have one or more convictions recorded for any of the above offences, your licence may be referred to our Licensing Sub-Committee. They will then review any convictions to decide whether you can be granted a private hire operator licence.</p>
+
+    <h4>How to apply</h4>
+    <p>The cost for a basic DBS check is £21.50. It is available for people working in England and Wales.</p>
+
+    <h4>About DBS checks - Living overseas</h4>
+    <p>If any director within the company or person within the partnership has lived outside of the UK for a period of more than three consecutive months, they will be required to supply a Certificate of Good Character.</p>
+
+    <h3>Right to work in the UK for taxi operators</h3>
+    <p>You will need to provide us with evidence that you are legally allowed to work in the UK if you are:</p>
+    <ul>
+    <li>applying to become a licensed driver</li>
+    <li>applying to become an operator</li>
+    <li>a hackney carriage or private hire vehicle licence holder</li>
+    </ul>
+    <p>To prove this, we will need to see your original right to work documents in person and take copies of them. This information can be provided when you make your in-person DBS application to us. Once we have seen you in person, we will not need to see you again unless you have right to work restrictions.</p>
+
+    <h4>Documents that we accept</h4>
+    <p>You will need to provide one of the documents listed below:</p>
+    <ul>
+    <li>British passport</li>
+    <li>Irish passport</li>
+    <li>document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+    <li>passport from immigration control</li>
+    <li>immigration status document issued by the Home Office, presented with an official document giving your permanent National Insurance (NI) number and your name</li>
+    <li>UK birth certificate, together with an official document giving your permanent NI number and name</li>
+    <li>Channel Islands, Isle of Man or Ireland birth certificate, presented with an official document giving your permanent NI number and name</li>
+    <li>certificate of naturalisation as a British citizen, presented with an official document giving your permanent NI number and your name</li>
+    </ul>
+
+    <h4>Under immigration controls</h4>
+    <p>If you are under immigration controls, then we will only issue a licence for the period that you are entitled to work in the UK. We will need to see one of the documents listed below before we can issue your licence:</p>
+    <ul>
+    <li>current passport</li>
+    <li>document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+    <li>current immigration status document containing a photograph issued by the Home Office</li>
+    </ul>
+
+    <h4>Right to work is time-limited</h4>
+    <p>Where your right to work in the UK is a time-limited period, we will need to see a:</p>
+    <ul>
+    <li>document or certificate of application (non-digital) issued by the Home Office</li>
+    <li>document from the Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+    <li>application Registration Card issued by the Home Office that says you can take employment</li>
+    <li>positive Verification Notice issued by the Home Office Employer Checking Service</li>
+    </ul>
+    <h3>Private hire operator insurance</h3>
+    <h4>Private Hire Operator Insurance</h4>
+    <p>As a private hire operator, you must have the right insurance in place for the services you offer. This includes:</p>
+    <ul>
+    <li>public liability insurance</li>
+    <li>employers' liability compulsory insurance</li>
+    </ul>
+    <p>We will need to see copies of the relevant insurance certificates when you make your application.</p>
+
+    <h4>Public Liability Insurance</h4>
+    <p>This must be in place if you have premises that are used by the public.</p>
+    <p>Public liability insurance, where required, must be a minimum of £2,000,000.</p>
+    <p>You will not need public liability insurance if:</p>
+    <ul>
+    <li>there is no public access to the premises</li>
+    <li>no people are employed</li>
+    <li>nobody works from the premises</li>
+    </ul>
+
+    <h4>Employers' Liability Compulsory Insurance</h4>
+    <p>This insurance must be in place if you employ staff.</p>
+    <p>Where staff are employed, the insurance must cover, as a minimum, death or personal injury from any incident during a person’s employment.</p>
+
+
+    <h3>Private hire operator planning permission</h3>
+    <h4>Premises and Planning Permission</h4>
+    <p>The premises where you operate must be suitable for business purposes and might need planning permission.</p>
+
+    <h4>Planning Permission Not Needed</h4>
+    <p>If planning permission is not needed, you will need to supply a letter from the Planning Department stating this.</p>
+    <p>You can get a letter from the Pre-Application Enquiry Service. There is a fee for this service.</p>
+    <p><a href="#">Make a pre-application enquiry JCHERE</a></p>
+
+    <h4>Planning Permission Needed</h4>
+    <p>If you need planning permission, you will have to provide us with a copy of your planning permission.</p>
+    <p>You will need to use the Planning Portal if you want to get planning permission.</p>
+
+    <h3>Registering with the ICO</h3>
+    <p>
+        Under Data Protection Regulations 2018, your private hire operator business must register with the Information Commissioner’s Office (ICO).<br>
+        You must follow the principles of the General Data Protection Regulations (GDPR) and understand what you must do to manage information.</br>
+    </p>
+
+
+    <h3>Private hire operator name</h3>
+    <p>Your private hire operator business must operate under a company name. This must not be the same, or similar to, one that is used by another company in the Sheffield area.</p>
+    <p>Where an operator’s licence is removed, has lapsed, or companies have merged, the name or a similar one cannot be used by another operator until 12 months has lapsed.</p>
+
+    <h4>Words You Cannot Use</h4>
+    <p>You must not use the following words, or any similar ones, in your operator name or when advertising your company:</p>
+    <ul>
+    <li>taxi</li>
+    <li>hackney carriage</li>
+    <li>cab</li>
+    </ul>
+    <p>Private hire vehicles must not display any words related to “taxi”.</p>
+
+    <h4>Search Existing Operator Names</h4>
+    <p>To help you decide and confirm your operator name, you can view a list of existing operator names in Sheffield on the public register.</p>
+
+    <h3>Apply for a new private hire operator licence</h3>
+    <h4>Cost</h4>
+    <p>The fee to apply for your private hire operator licence depends on how long your licence is for and how many vehicles you’re operating.</p>
+
+    <table>
+    <thead>
+        <tr>
+        <th>Duration</th>
+        <th>Number of Vehicles</th>
+        <th>Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1 year</td><td>1 to 10</td><td>£531</td></tr>
+        <tr><td></td><td>11 to 50</td><td>£664</td></tr>
+        <tr><td></td><td>51 to 100</td><td>£1993</td></tr>
+        <tr><td></td><td>101 to 250</td><td>£4650</td></tr>
+        <tr><td></td><td>Over 250 vehicles</td><td>£6643</td></tr>
+        <tr><td>2 years</td><td>1 to 10</td><td>£1026</td></tr>
+        <tr><td></td><td>11 to 50</td><td>£1282</td></tr>
+        <tr><td></td><td>51 to 100</td><td>£3063</td></tr>
+        <tr><td></td><td>101 to 250</td><td>£5840</td></tr>
+        <tr><td></td><td>Over 250 vehicles</td><td>£8119</td></tr>
+        <tr><td>3 years</td><td>1 to 10</td><td>£1521</td></tr>
+        <tr><td></td><td>11 to 50</td><td>£1900</td></tr>
+        <tr><td></td><td>51 to 100</td><td>£4133</td></tr>
+        <tr><td></td><td>101 to 250</td><td>£7030</td></tr>
+        <tr><td></td><td>Over 250 vehicles</td><td>£9595</td></tr>
+        <tr><td>4 years</td><td>1 to 10</td><td>£2016</td></tr>
+        <tr><td></td><td>11 to 50</td><td>£2518</td></tr>
+        <tr><td></td><td>51 to 100</td><td>£5203</td></tr>
+        <tr><td></td><td>101 to 250</td><td>£8220</td></tr>
+        <tr><td></td><td>Over 250 vehicles</td><td>£11071</td></tr>
+        <tr><td>5 years</td><td>1 to 10</td><td>£2510</td></tr>
+        <tr><td></td><td>11 to 50</td><td>£3137</td></tr>
+        <tr><td></td><td>51 to 100</td><td>£6274</td></tr>
+        <tr><td></td><td>101 to 250</td><td>£9411</td></tr>
+        <tr><td></td><td>Over 250 vehicles</td><td>£12548</td></tr>
+    </tbody>
+    </table>
+
+    <h4>Information You Will Need to Provide</h4>
+    <p>As well as your application and private hire operator's questionnaire, you will need to upload the following information when you apply for your private hire operator licence:</p>
+    <ul>
+    <li>current basic Disclosure and Barring Service (DBS) certificate of all directors (if not already a licensed driver with us) or DBS certificate number (found by logging into your DBS account)</li>
+    <li>right to work document(s) of all business owners (we will need to see this in person if you are not already licensed with us as a driver and/or if your right to work has limitations)</li>
+    <li>tax check information or nine-digit tax check code if you have one</li>
+    <li>public liability insurance certificate (if applicable)</li>
+    <li>employers' liability insurance</li>
+    <li>planning consent (if needed) or letter confirming that planning permission is not required</li>
+    <li>registration with the Information Commissioner’s Office</li>
+    <li>image of the proposed signage that you will use</li>
+    </ul>
+    <p>We may need to see other documents. If this is the case, we will contact you directly.</p>
+    <p>We will not process your application until we have seen all the documents we need.</p>
+
+    <h4>How to Get a Tax Code</h4>
+    <p>Find information about checking or getting a tax code at GOV.UK: <a href="https://www.gov.uk/complete-tax-check-for-a-taxi-private-hire-or-scrap-metal-licence">JCHERE SEND LINK Complete a tax check for a taxi, private hire or scrap metal licence</a></p>
+
+    <h3>Read our policy</h3>
+    <p>Read our <strong>Private Hire Operator and Vehicle Licence Policy</strong> to find out more about applying for a new private hire operator licence:</p>
+    <p><a href="https://www.sheffield.gov.uk/sites/default/files/2025-02/private_hire_operator_and_private_hire_vehicle_licence_policy_0_2.pdf" target="_blank">JCHERE SEND LINK Private Hire Operator and Vehicle Licence Policy (PDF)</a></p>
+
+    `,
+    { buttonLabel: "", formName: ""},
+    { typeKey: "switchboard_transferred_to_service" },
+    { typeKey: "switchboard_information_provided"},
+    {
+      type: "Request",
+      keywords: [
+        "Switchboard",
+        "Switch board",
+        "Switch",
+        "transfer",
+        "redirect",
+        "transfer call",
+        "call"
+      ],
+      categories: ["Your City Council"],
+    },
+    { date: "21/11/2025", name: "Joseph Coupland"} 
+  );
+
 
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
@@ -1483,7 +1739,8 @@ const applyTaxiDriver = new ContentBusiness(
     renewVechicleLicence,
     medicalNeeds,
     applyTaxiDriver,
-    applyPrivateLicence
+    applyPrivateLicence,
+    applyPrivateOperator
   ]
 );
 
