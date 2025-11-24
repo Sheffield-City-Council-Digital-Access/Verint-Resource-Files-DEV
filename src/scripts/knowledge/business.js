@@ -588,6 +588,7 @@ const applyTaxiDriver = new ContentBusiness(
         <div class="accordion-content">
             <p>
                 This is a valid insurance certificate or cover note that tells applicant or a licensed driver, are insured to drive the vehicle and the purposes to carry passengers for hire and reward.<br>
+                <br>
                 A copy of the insurance certificate must be provided when making application. Service will check the insurance every month to make sure hackney carriage is insured.
             </p>
         </div>
@@ -734,7 +735,7 @@ const applyTaxiDriver = new ContentBusiness(
    const renewPriviateHire = new ContentBusiness(
     "renewPriviateHire",
     "Renew a Private Hire Vehicle Licence",
-    "Information regarding taxi licensing",
+    "Renew a Private Hire Vehicle Licence",
     `
         <p>
         Hackney carriage vehicle licence will be valid for a maximum of 12 months.
@@ -1328,6 +1329,7 @@ const applyTaxiDriver = new ContentBusiness(
     <p>
         Your hackney carriage must have in place the correct insurance to carry passengers for hire and reward.<br>
         This is a valid insurance certificate or cover note that tells us that you or a licensed driver, are insured to drive the vehicle and the purposes that it can be used for.<br>
+        <br>
         We will need to see a copy of the insurance certificate when you make your application. We will check every month to make sure your hackney carriage is insured.
     </p>
     <h3>Right to work in the UK for hackney carriage vehicles</h3>
