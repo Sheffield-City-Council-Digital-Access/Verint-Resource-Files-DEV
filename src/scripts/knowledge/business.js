@@ -428,7 +428,7 @@ class CoreBusiness {
 
  const vechicleInspections = new ContentBusiness(
     "vechicleInspections",
-    "Vehicle inspections and testing",
+    "Vehicle Inspections and Testing",
     "Information Regarding Taxi Licensing",
     `
     <h3>Keeping your private hire or hackney carriage vehicle safe</h3>
@@ -626,7 +626,7 @@ class CoreBusiness {
 
    const surrenderLicence = new ContentBusiness(
     "surrenderLicence",
-    "Surrender a vehicle licence",
+    "Surrender a Vehicle Licence",
     "Surrender a vehicle licence",
     `
     <h3>Keeping your private hire or hackney carriage vehicle safe</h3>
@@ -657,7 +657,7 @@ class CoreBusiness {
 
   const transferLicence = new ContentBusiness(
     "transferLicence",
-    "Transfer a vehicle licence",
+    "Transfer a Vehicle Licence",
     "Transfer a vehicle licence",
     `
     <h3>When to contact us</h3>
@@ -713,8 +713,8 @@ class CoreBusiness {
 
     const renewPriviateLicence = new ContentBusiness(
     "renewPriviateLicence",
+    "Renewing a Private Hire Vehicle Licence",
     "Renewing a private hire vehicle licence",
-    "Renewing a private hire vehicle licencee",
     `
         <h3>Before you renew</h3>
         <p>
@@ -883,7 +883,7 @@ class CoreBusiness {
 
   const renewVechicleLicence = new ContentBusiness(
     "renewVechicleLicence",
-    "Renewing a hackney carriage vehicle licence",
+    "Renewing a Hackney Carriage Vehicle Licence",
     "Renewing a hackney carriage vehicle licence",
     `
     <h3>Before you renew</h3>
@@ -999,7 +999,7 @@ class CoreBusiness {
 
 const medicalNeeds = new ContentBusiness(
     "medicalNeeds",
-    "Medical exemptions",
+    "Medical Exemptions",
     "Medical Needs",
     `
     <p>Under the Equality Act 2010, the law says that you should carry passengers with assistance dogs and passengers in wheelchairs in your taxi. You should provide these passengers with the help they need, and not charge them extra for doing so.</p>
