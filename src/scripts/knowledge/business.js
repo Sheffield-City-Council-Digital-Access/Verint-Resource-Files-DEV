@@ -938,266 +938,145 @@ const applyPrivateOperator = new ContentBusiness(
     "Apply Private Hire Vehicle Operators Licence",
     `
         <details class="accordion">
-        <summary class="accordion-header">
-            <h3>About private hire operator licences</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
+  <summary class="accordion-header">
+    <h3>About private hire operator licences</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
 
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>Private Hire Operator Licence</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>You will need to apply for a private hire operator licence to run a private hire business in Sheffield. This enables you to advertise and accept bookings for private hire work.</p>
-                    <p>Although you may not drive passengers, if you own the business, you will still have to deal with the public. This includes face-to-face, email, or telephone conversations.</p>
-                    <p>It is important that you only operate licensed vehicles that are driven by licensed drivers. The driver, vehicle, and operator must all be licensed by us.</p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>Applying for a licence</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>Find out how to apply for a private operator licence:</p>
-                    <p><a href="https://www.sheffield.gov.uk/taxi-licensing/private-hire-operator/new-private-hire-operator-licence" target="_blank">https://www.sheffield.gov.uk/taxi-licensing/private-hire-operator/new-private-hire-operator-licence</a> JCHERE add Send Link</p>
-                </div>
-            </details>
-
-        </div>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>Private Hire Operator Licence</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>You will need to apply for a private hire operator licence to run a private hire business in Sheffield. This enables you to advertise and accept bookings for private hire work.</p>
+        <p>Although you may not drive passengers, if you own the business, you will still have to deal with the public. This includes face-to-face, email, or telephone conversations.</p>
+        <p>It is important that you only operate licensed vehicles that are driven by licensed drivers. The driver, vehicle, and operator must all be licensed by us.</p>
+      </div>
     </details>
 
     <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Find out how to apply for a private hire operator licence</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
+      <summary class="accordion-header">
+        <h4>Applying for a licence</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>Find out how to apply for a private hire operator licence:</p>
+        <p><a href="https://www.sheffield.gov.uk/taxi-licensing/private-hire-operator/new-private-hire-operator-licence" target="_blank">Apply for a new private hire operator licence</a> JCHERE add Send Link</p>
+      </div>
+    </details>
 
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>Fit and Proper Check</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>When you apply for a new private hire operator licence, we will check whether you are 'fit and proper' to hold the licence. This means you are safe and suitable to be a private hire operator, pose no threat to public safety, and have no links to serious criminal activity. To help us understand this, we will need to know the following information when you apply online.</p>
-                </div>
-            </details>
+  </div>
+</details>
 
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>About DBS</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>You will need to tell us whether all applicants, directors, or partners have any criminal convictions.</p>
-                    <p><a href="#">About DBS checks</a></p>
-                </div>
-            </details>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Find out how to apply for a private hire operator licence</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
 
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>About right to work</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>We will need to know that you are legally allowed to work in the UK.</p>
-                    <p><a href="#">Right to work in the UK for taxi operators</a></p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>About tax checks</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>You will need to show us that you are aware of tax registration if you do not have a tax check code already.</p>
-                    <p><a href="#">Private hire operator tax checks</a></p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>About insurance</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>Find out about the insurance you will need as a private hire operator.</p>
-                    <p><a href="#">Private hire operator insurance</a></p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>About planning permission</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>Learn more about planning permission you might need for your premises.</p>
-                    <p><a href="#">Private hire operator planning permission</a></p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>About data protection</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>Understand about data protection and registering with the Information Commissioner’s Office (ICO).</p>
-                    <p><a href="#">Registering with the ICO</a></p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>About operator name</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>You must operate under a company name that is not similar to one already used in Sheffield. Learn more about the name your private hire business can have.</p>
-                    <p><a href="#">Private hire operator name</a></p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>Apply for licence</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>Use this form to apply for your new private hire operator licence. JCHERE need form link</p>
-                </div>
-            </details>
-
-        </div>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>Fit and Proper Check</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>When you apply for a new private hire operator licence, we will check whether you are 'fit and proper' to hold the licence. This means you are safe and suitable to be a private hire operator, pose no threat to public safety, and have no links to serious criminal activity. To help us understand this, we will need to know the following information when you apply online.</p>
+      </div>
     </details>
 
     <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Private hire operator disclosure and barring checks</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>Annual DBS Certificate</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>You will need to send us a basic Disclosure and Barring Service (DBS) certificate every year.</p>
-                    <p>We will look at any and all convictions contained within the DBS check. These include:</p>
-                    <ul>
-                        <li>Crimes resulting in death.</li>
-                        <li>Exploitation.</li>
-                        <li>Offences involving violence.</li>
-                        <li>Possession of a weapon.</li>
-                        <li>Sex and indecency offences.</li>
-                        <li>Dishonesty.</li>
-                        <li>Drugs.</li>
-                        <li>Discrimination.</li>
-                        <li>Any offence referenced in hackney carriage and private hire legislation.</li>
-                    </ul>
-                    <p>If you are a company or partnership applying for a licence, all named directors and partners within the company will need to supply a basic DBS certificate every year.</p>
-                    <p>If you have one or more convictions recorded for any of the above offences, your licence may be referred to our Licensing Sub-Committee. They will then review any convictions to decide whether you can be granted a private hire operator licence.</p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>How to apply</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>The cost for a basic DBS check is £21.50. It is available for people working in England and Wales.</p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>About DBS checks - Living overseas</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>If any director within the company or person within the partnership has lived outside of the UK for a period of more than three consecutive months, they will be required to supply a Certificate of Good Character.</p>
-                </div>
-            </details>
-
-        </div>
+      <summary class="accordion-header">
+        <h4>About DBS</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>You will need to tell us whether all applicants, directors, or partners have any criminal convictions.</p>
+        <p><a href="#">About DBS checks</a></p>
+      </div>
     </details>
 
     <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Right to work in the UK for taxi operators</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-
-            <p>You will need to provide us with evidence that you are legally allowed to work in the UK if you are:</p>
-            <ul>
-                <li>Applying to become a licensed driver.</li>
-                <li>Applying to become an operator.</li>
-                <li>A hackney carriage or private hire vehicle licence holder.</li>
-            </ul>
-            <p>To prove this, we will need to see your original right to work documents in person and take copies of them. This information can be provided when you make your in-person DBS application to us. Once we have seen you in person, we will not need to see you again unless you have right to work restrictions.</p>
-
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>Documents that we accept</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <ul>
-                        <li>British passport.</li>
-                        <li>Irish passport.</li>
-                        <li>Document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man.</li>
-                        <li>Passport from immigration control.</li>
-                        <li>Immigration status document issued by the Home Office, presented with an official document giving your permanent National Insurance (NI) number and your name.</li>
-                        <li>UK birth certificate, together with an official document giving your permanent NI number and name.</li>
-                        <li>Channel Islands, Isle of Man or Ireland birth certificate, presented with an official document giving your permanent NI number and name.</li>
-                        <li>Certificate of naturalisation as a British citizen, presented with an official document giving your permanent NI number and your name.</li>
-                    </ul>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>Under immigration controls</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>If you are under immigration controls, then we will only issue a licence for the period that you are entitled to work in the UK. We will need to see one of the documents listed below before we can issue your licence:</p>
-                    <ul>
-                        <li>Current passport.</li>
-                        <li>Document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man.</li>
-                        <li>Current immigration status document containing a photograph issued by the Home Office.</li>
-                    </ul>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>Right to work is time-limited</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>Where your right to work in the UK is a time-limited period, we will need to see a:</p>
-                    <ul>
-                        <li>Document or certificate of application (non-digital) issued by the Home Office.</li>
-                        <li>Document from the Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man.</li>
-                        <li>Application Registration Card issued by the Home Office that says you can take employment.</li>
-                        <li>Positive Verification Notice issued by the Home Office Employer Checking Service.</li>
-                    </ul>
-                </div>
-            </details>
-
-        </div>
+      <summary class="accordion-header">
+        <h4>About right to work</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>We will need to know that you are legally allowed to work in the UK.</p>
+        <p><a href="#">Right to work in the UK for taxi operators</a></p>
+      </div>
     </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>About tax checks</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>You will need to show us that you are aware of tax registration if you do not have a tax check code already.</p>
+        <p><a href="#">Private hire operator tax checks</a></p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>About insurance</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>Find out about the insurance you will need as a private hire operator.</p>
+        <p><a href="#">Private hire operator insurance</a></p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>About planning permission</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>Learn more about planning permission you might need for your premises.</p>
+        <p><a href="#">Private hire operator planning permission</a></p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>About data protection</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>Understand about data protection and registering with the Information Commissioner’s Office (ICO).</p>
+        <p><a href="#">Registering with the ICO</a></p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>About operator name</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>You must operate under a company name that is not similar to one already used in Sheffield. Learn more about the name your private hire business can have.</p>
+        <p><a href="#">Private hire operator name</a></p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>Apply for licence</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>Use this form to apply for your new private hire operator licence. JCHERE need form link</p>
+      </div>
+    </details>
+
+  </div>
+</details>
+
 
     `,
     { buttonLabel: "", formName: ""},
