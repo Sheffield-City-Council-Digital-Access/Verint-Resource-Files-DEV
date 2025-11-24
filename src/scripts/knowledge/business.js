@@ -1000,9 +1000,8 @@ class CoreBusiness {
 const medicalNeeds = new ContentBusiness(
     "medicalNeeds",
     "Medical exemptions",
-    "Transfer a vehicle licence",
+    "Medical Needs",
     `
-    <h3>Medical exemptions</h3>
     <p>Under the Equality Act 2010, the law says that you should carry passengers with assistance dogs and passengers in wheelchairs in your taxi. You should provide these passengers with the help they need, and not charge them extra for doing so.</p>
     <p>You might have a medical reason why you cannot do these things, and this is known as a medical exemption. There are two types of medical exemption:</p>
     <ul>
@@ -1281,8 +1280,8 @@ const applyTaxiDriver = new ContentBusiness(
 
   const applyPrivateLicence = new ContentBusiness(
     "applyPrivateLicence",
-    "Transfer a vehicle licence",
-    "Transfer a vehicle licence",
+    "Apply for a Priviate Hire Driver License",
+    "Apply for a Priviate Hire Driver License",
     `
     <h3>Fit and Proper Test : Stage 1</h3>
     <h4>Obtaining the "Certificate in Introduction to the Role of Professional Taxi and Private Hire Driver"</h4>
@@ -1467,8 +1466,8 @@ const applyTaxiDriver = new ContentBusiness(
 
   const applyPrivateOperator = new ContentBusiness(
     "applyPrivateOperator",
-    "Transfer a vehicle licence",
-    "Transfer a vehicle licence",
+    "Apply Private Hire Vehicle Operators Licence",
+    "Apply Private Hire Vehicle Operators Licence",
     `
     <h3>About private hire operator licences</h3>
     <h4>Private Hire Operator Licence</h4>
@@ -1723,8 +1722,8 @@ const applyTaxiDriver = new ContentBusiness(
 
 const renewPrivateOperator = new ContentBusiness(
     "renewPrivateOperator",
-    "Transfer a vehicle licence",
-    "Transfer a vehicle licence",
+    "Renew Private Hire Vehicle Operators Licence",
+    "Renew Private Hire Vehicle Operators Licence",
     `
     <h3>About private hire operator licences</h3>
     <p>You will need to apply for a private hire operator licence to run a private hire business in Sheffield. This enables you to advertise and accept bookings for private hire work.</p>
