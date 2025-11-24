@@ -838,7 +838,110 @@ const applyPrivateLicence = new ContentBusiness(
       </div>
     </details>
 
-    <!-- Remaining Stage 2 sections like DBS application, DVLA checks, medicals, etc. would follow the same nested <details> pattern -->
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>To apply for an Enhanced Disclosure Certificate with Barred Check Lists</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <ul>
+          <li>Driver needs to email taxilicensing@sheffield.gov.uk to get a DBS pack.</li>
+          <li>Complete the DBS form and set up an appointment to have driver's documents checked face-to-face at our reception.</li>
+          <li>Taxi licensing service will send the driver's complete application to DBS, they will make the necessary checks and return the certificate to driver.</li>
+          <li>Applicant can apply for DBS certificate when taking knowledge test and driving standards test.</li>
+        </ul>
+        <p>Cost: The DBS certificate costs £49.50.</p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>DBS Update Service</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>To check whether applicant's DBS is current when granting the licence, applicant must send a copy of the full certificate to us by email and sign-up to the DBS Update Service within 30 days of receiving the certificate.</p>
+        <p>Applicant must maintain subscription with the DBS service by paying an annual fee of £16 per year to DBS.</p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>DVLA checks</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>Must supply the applicant's Driving and Vehicle Licensing Agency (DVLA) driving licence number. The applicant might receive an email from a company called TaxiPlus to give consent to allow the service to carry out these checks.</p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>Taxi driver medical assessments</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>Must pass a DVLA Group 2 Medical Fitness examination when an applicant first applies to be a licenced driver.</p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>Group 2 Medical Fitness examinations will focus on:</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <ul>
+          <li>Neurological (brain and nerves) disorders.</li>
+          <li>Cardiovascular (heart and blood vessels) disorders.</li>
+          <li>Diabetes.</li>
+          <li>Mental health.</li>
+          <li>Drug or alcohol misuse.</li>
+          <li>Visual (eyesight) disorders.</li>
+          <li>Renal (kidney, ureters and urethra) disorders.</li>
+          <li>Respiratory (breathing) disorders.</li>
+          <li>Any other conditions.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>Medical assessments by age</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <ul>
+          <li>45 years of age or older need to take a medical examination every 5 years.</li>
+          <li>65 years of age or older need to take a medical examination every year.</li>
+          <li>Where recommended by the GP, a more frequent medical examination or other medical tests may be required.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>Apply for the medical assessments</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>Get a medical assessment form from us, and it needs to be completed either by applicant's doctor or one recommended by us.</p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h4>Returning medical assessment</h4>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <ul>
+          <li>Email - Take clear photos of all pages and email them to taxilicensing@sheffield.gov.uk.</li>
+          <li>Post - by recorded delivery to Licensing Service Block C, Staniforth Road Depot, Staniforth Road Sheffield S9 3HD.</li>
+          <li>In-person - drop the medical pack off in the post box on site.</li>
+        </ul>
+      </div>
+    </details>
 
   </div>
 </details>
