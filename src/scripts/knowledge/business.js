@@ -213,7 +213,9 @@ const applyTaxiDriver = new ContentBusiness(
             <details class="details-accordion">
             <summary>Obtaining the "Certificate in Introduction to the Role of Professional Taxi and Private Hire Driver"</summary>
             <div class="details-accordion-content">
-                <p>Sheffield City College or other providers from Gov. UK.</p>
+                <p>
+                    Sheffield City College or other providers from Gov. UK.
+                </p>
             </div>
             </details>
 
@@ -221,14 +223,14 @@ const applyTaxiDriver = new ContentBusiness(
             <summary>Proof of right to work document?</summary>
             <div class="details-accordion-content">
                 <ul>
-                <li>British passport.</li>
-                <li>Irish passport.</li>
-                <li>Document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man.</li>
-                <li>Passport from immigration control.</li>
-                <li>Immigration status document issued by the Home Office, presented with an official document giving your permanent National Insurance (NI) number and your name.</li>
-                <li>UK birth certificate, together with an official document giving your permanent NI number and name.</li>
-                <li>Channel Islands, Isle of Man or Ireland birth certificate, presented with an official document giving your permanent NI number and name.</li>
-                <li>Certificate of naturalisation as a British citizen, presented with an official document giving your permanent NI number and your name.</li>
+                    <li>British passport.</li>
+                    <li>Irish passport.</li>
+                    <li>Document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man.</li>
+                    <li>Passport from immigration control.</li>
+                    <li>Immigration status document issued by the Home Office, presented with an official document giving your permanent National Insurance (NI) number and your name.</li>
+                    <li>UK birth certificate, together with an official document giving your permanent NI number and name.</li>
+                    <li>Channel Islands, Isle of Man or Ireland birth certificate, presented with an official document giving your permanent NI number and name.</li>
+                    <li>Certificate of naturalisation as a British citizen, presented with an official document giving your permanent NI number and your name.</li>
                 </ul>
             </div>
             </details>
@@ -237,9 +239,9 @@ const applyTaxiDriver = new ContentBusiness(
             <summary>If you are under immigration controls</summary>
             <div class="details-accordion-content">
                 <ul>
-                <li>Current passport.</li>
-                <li>Document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man.</li>
-                <li>Current immigration status document containing a photograph issued by the Home Office.</li>
+                    <li>Current passport.</li>
+                    <li>Document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man.</li>
+                    <li>Current immigration status document containing a photograph issued by the Home Office.</li>
                 </ul>
             </div>
             </details>
@@ -247,7 +249,9 @@ const applyTaxiDriver = new ContentBusiness(
             <details class="details-accordion">
             <summary>If the applicant is under immigration controls - applicable limitations</summary>
             <div class="details-accordion-content">
-                <p>Only issue a licence for the period that you are entitled to work in the UK.</p>
+                <p>
+                    Only issue a licence for the period that you are entitled to work in the UK.
+                </p>
             </div>
             </details>
 
@@ -255,16 +259,17 @@ const applyTaxiDriver = new ContentBusiness(
             <summary>If the right to work in the UK is a time-limited period</summary>
             <div class="details-accordion-content">
                 <ul>
-                <li>Document or certificate of application (non-digital) issued by the Home Office.</li>
-                <li>Document from the Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man.</li>
-                <li>Application Registration Card issued by the Home Office that says you can take employment.</li>
-                <li>Positive Verification Notice issued by the Home Office Employer Checking Service.</li>
+                    <li>Document or certificate of application (non-digital) issued by the Home Office.</li>
+                    <li>Document from the Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man.</li>
+                    <li>Application Registration Card issued by the Home Office that says you can take employment.</li>
+                    <li>Positive Verification Notice issued by the Home Office Employer Checking Service.</li>
                 </ul>
             </div>
             </details>
 
         </div>
         </details>
+
 
         <details class="accordion">
         <summary class="accordion-header">
@@ -276,27 +281,33 @@ const applyTaxiDriver = new ContentBusiness(
             <details class="details-accordion">
             <summary>Age & experience</summary>
             <div class="details-accordion-content">
-                <p>Must be above 21 years old & have held a DVLA licence for more than 12 months.</p>
+                <p>
+                    Must be above 21 years old & have held a Driver and Vehicle Licensing Agency (DVLA) driver licence for more than 12 months.
+                </p>
             </div>
             </details>
 
             <details class="details-accordion">
             <summary>Knowledge test pass mark</summary>
             <div class="details-accordion-content">
-                <p>Score at least 80% in each section to pass the Knowledge Test.</p>
+                <p>
+                    Score at least 80% in each section to pass the Knowledge Test.
+                </p>
             </div>
             </details>
 
             <details class="details-accordion">
             <summary>Driving standards test</summary>
             <div class="details-accordion-content">
-                <p>Pass a driving standards test…</p>
+                <p>
+                    Pass a driving standards test carried out by a driving standards examiner at our Transport Department. The test will include any 3 of the following:
+                </p>
                 <ul>
-                <li>Emergency stop.</li>
-                <li>Left-hand reverse.</li>
-                <li>Right-hand reverse.</li>
-                <li>Turn in the road.</li>
-                <li>Reverse parking.</li>
+                    <li>Emergency stop.</li>
+                    <li>Left-hand reverse.</li>
+                    <li>Right-hand reverse.</li>
+                    <li>Turn in the road.</li>
+                    <li>Reverse parking.</li>
                 </ul>
             </div>
             </details>
@@ -305,10 +316,10 @@ const applyTaxiDriver = new ContentBusiness(
             <summary>Requirements for Driving standards test</summary>
             <div class="details-accordion-content">
                 <ul>
-                <li>Must be 21 years of age.</li>
-                <li>Valid for one year.</li>
-                <li>Make a booking.</li>
-                <li>DVLA driving licence number in full.</li>
+                    <li>Must be 21 years of age.</li>
+                    <li>Valid for one year.</li>
+                    <li>Make a boking.</li>
+                    <li>DVLA driving licence number in full.</li>
                 </ul>
             </div>
             </details>
@@ -316,19 +327,23 @@ const applyTaxiDriver = new ContentBusiness(
             <details class="details-accordion">
             <summary>Cost for Driving standards test</summary>
             <div class="details-accordion-content">
-                <p>£70</p>
+                <p>
+                    £ 70
+                </p>
             </div>
             </details>
 
             <details class="details-accordion">
             <summary>Vehicles that can use for the Driving standards test</summary>
             <div class="details-accordion-content">
-                <p>With the right insurance:</p>
+                <p>
+                    With the right insurance:
+                </p>
                 <ul>
-                <li>Driving instructor’s vehicle.</li>
-                <li>Rental vehicle.</li>
-                <li>Your vehicle.</li>
-                <li>Licensed vehicle registered in applicant's name…</li>
+                    <li>Driving instructor’s vehicle.</li>
+                    <li>Rental vehicle.</li>
+                    <li>Your vehicle.</li>
+                    <li>Licenced vehicle that is registered in applicant's name and which applicant has a licence to drive (all licensing livery, including the licence plate should be removed before arriving at Staniforth Road).</li>
                 </ul>
             </div>
             </details>
@@ -336,19 +351,26 @@ const applyTaxiDriver = new ContentBusiness(
             <details class="details-accordion">
             <summary>Disclosure and barring checks</summary>
             <div class="details-accordion-content">
-                <p>An Enhanced Disclosure Certificate…</p>
+                <p>
+                    An Enhanced Disclosure Certificate with Barred Check Lists from the Disclosure and Barring Service (DBS).
+                </p>
+                <p>
+                    It will look at all convictions and particular attention will be given to the following:
+                </p>
                 <ul>
-                <li>Crimes resulting in death.</li>
-                <li>Exploitation.</li>
-                <li>Offences resulting in violence.</li>
-                <li>Possession of a weapon.</li>
-                <li>Sex and indecency offences.</li>
-                <li>Dishonesty.</li>
-                <li>Drugs.</li>
-                <li>Discrimination.</li>
-                <li>Motoring convictions…</li>
+                    <li>Crimes resulting in death.</li>
+                    <li>Exploitation.</li>
+                    <li>Offences resulting in violence.</li>
+                    <li>Possession of a weapon.</li>
+                    <li>Sex and indecency offences.</li>
+                    <li>Dishonesty.</li>
+                    <li>Drugs.</li>
+                    <li>Discrimination.</li>
+                    <li>Motoring convictions (drink driving, driving under the influence of drugs, using a hand-held device or telephone whilst driving).</li>
                 </ul>
-                <p>If you have had one or more conviction…</p>
+                <p>
+                    If you have had one or more conviction recorded for any of the above offences, your application may be referred to the Licensing Sub-Committee.
+                </p>
             </div>
             </details>
 
@@ -356,34 +378,45 @@ const applyTaxiDriver = new ContentBusiness(
             <summary>To apply for an Enhanced Disclosure Certificate with Barred Check Lists</summary>
             <div class="details-accordion-content">
                 <ul>
-                <li>Email taxilicensing@sheffield.gov.uk…</li>
-                <li>Complete the DBS form…</li>
-                <li>Service sends the application…</li>
-                <li>Applicant can apply during tests.</li>
+                    <li>Driver needs to email taxilicensing@sheffield.gov.uk to get a DBS pack.</li>
+                    <li>Complete the DBS form and set up an appointment to have documents checked face-to-face at the reception.</li>
+                    <li>Service will send the complete application to DBS, they will make the necessary checks and return the certificate to the driver/applicant.</li>
+                    <li>Applicant can apply for DBS certificate when taking knowledge test or driving standards test.</li>
                 </ul>
-                <p>Cost: £49.50</p>
+                <p>
+                    Cost: The DBS certificate costs £49.50.
+                </p>
             </div>
             </details>
 
             <details class="details-accordion">
             <summary>DBS Update Service</summary>
             <div class="details-accordion-content">
-                <p>Applicant must send a copy…</p>
-                <p>Must maintain subscription… £16/year.</p>
+                <p>
+                    To check whether applicant's DBS is current when granting the licence, applicant must send a copy of the full certificate to us by email and sign-up to the DBS Update Service within 30 days of receiving the certificate.
+                </p>
+                <p>
+                    Applicant must maintain subscription with the DBS service by paying an annual fee of £16 per year to DBS.
+                </p>
             </div>
             </details>
 
             <details class="details-accordion">
             <summary>DVLA checks</summary>
             <div class="details-accordion-content">
-                <p>Must supply the DVLA driving licence number…</p>
+                <p>
+                    Must supply the applicant's Driving and Vehicle Licensing Agency (DVLA) driving licence number.  
+                    The applicant might receive an email from a company called TaxiPlus to give consent to allow the service to carry out these checks.
+                </p>
             </div>
             </details>
 
             <details class="details-accordion">
             <summary>Taxi driver medical assessments</summary>
             <div class="details-accordion-content">
-                <p>Must pass a DVLA Group 2 Medical Fitness exam…</p>
+                <p>
+                    Must pass a DVLA Group 2 Medical Fitness examination when an applicant first apply to be a licenced driver.
+                </p>
             </div>
             </details>
 
@@ -391,15 +424,15 @@ const applyTaxiDriver = new ContentBusiness(
             <summary>Group 2 Medical Fitness examinations will focus on:</summary>
             <div class="details-accordion-content">
                 <ul>
-                <li>Neurological disorders.</li>
-                <li>Cardiovascular disorders.</li>
-                <li>Diabetes.</li>
-                <li>Mental health.</li>
-                <li>Drug or alcohol misuse.</li>
-                <li>Visual disorders.</li>
-                <li>Renal disorders.</li>
-                <li>Respiratory disorders.</li>
-                <li>Any other conditions.</li>
+                    <li>Neurological (brain and nerves) disorders.</li>
+                    <li>Cardiovascular (heart and blood vessels) disorders.</li>
+                    <li>Diabetes.</li>
+                    <li>Mental health.</li>
+                    <li>Drug or alcohol misuse.</li>
+                    <li>Visual (eyesight) disorders.</li>
+                    <li>Renal (kidney, ureters and urethra) disorders.</li>
+                    <li>Respiratory (breathing) disorders.</li>
+                    <li>Any other conditions.</li>
                 </ul>
             </div>
             </details>
@@ -408,9 +441,9 @@ const applyTaxiDriver = new ContentBusiness(
             <summary>Medical assessments by age</summary>
             <div class="details-accordion-content">
                 <ul>
-                <li>45+ every 5 years.</li>
-                <li>65+ every year.</li>
-                <li>More frequently if GP recommends.</li>
+                    <li>45 years of age or older need to take a medical examination every 5 years.</li>
+                    <li>65 years of age or older need to take a medical examination every year.</li>
+                    <li>Where recommended by the GP may be required to a take medical examination, or other medical tests, on a more frequent basis.</li>
                 </ul>
             </div>
             </details>
@@ -418,7 +451,9 @@ const applyTaxiDriver = new ContentBusiness(
             <details class="details-accordion">
             <summary>Apply for the medical assessments</summary>
             <div class="details-accordion-content">
-                <p>Get a medical assessment form…</p>
+                <p>
+                    Get a medical assessment form from service (email, post, download), and it needs to be completed either by applicant's doctor or one recommended by us. A driver can apply for the medical exemptions if applicable.
+                </p>
             </div>
             </details>
 
@@ -426,9 +461,9 @@ const applyTaxiDriver = new ContentBusiness(
             <summary>Returning medical assessment</summary>
             <div class="details-accordion-content">
                 <ul>
-                <li>Email photos.</li>
-                <li>Post via recorded delivery.</li>
-                <li>In-person drop-off.</li>
+                    <li>Email - Take clear photos of all pages and email them to taxilicensing@sheffield.gov.uk.</li>
+                    <li>Post - by recorded delivery to Licensing Service Block C, Staniforth Road Depot, Staniforth Road Sheffield S9 3HD.</li>
+                    <li>In-person - drop the medical pack off in the post box on site.</li>
                 </ul>
             </div>
             </details>
@@ -446,7 +481,9 @@ const applyTaxiDriver = new ContentBusiness(
             <details class="details-accordion">
             <summary>Apply for a new taxi driver licence</summary>
             <div class="details-accordion-content">
-                <p>Applicants who completed stages 1 & 2…</p>
+                <p>
+                    Applicants who completed stages 1 & 2 can apply for the new combined ph/hc driver licence.
+                </p>
             </div>
             </details>
 
@@ -454,20 +491,20 @@ const applyTaxiDriver = new ContentBusiness(
             <summary>New applications are defined as follows</summary>
             <div class="details-accordion-content">
                 <ol>
-                <li>Never held a licence.</li>
-                <li>Held one but expired over 12 months.</li>
-                <li>Applied over 1 month after expiry.</li>
+                    <li>Applicant has never held a licence with us.</li>
+                    <li>Applicant has held a licence previously but the expiry of that licence is over 12 months since the date they make the application and.</li>
+                    <li>An applicant who applies after 1 calendar month since the expiry of his last licence.</li>
                 </ol>
             </div>
             </details>
 
             <details class="details-accordion">
-            <summary>The fee for a new taxi driver licence depends on how many years</summary>
+            <summary>The fee for a new taxi driver licence depends on how many years the applicant wants it to last</summary>
             <div class="details-accordion-content">
                 <ul>
-                <li>One year - £223.</li>
-                <li>2 years - £245.</li>
-                <li>3 years - £268.</li>
+                    <li>One year - £223.</li>
+                    <li>2 years - £245.</li>
+                    <li>3 years - £268.</li>
                 </ul>
             </div>
             </details>
