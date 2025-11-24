@@ -814,7 +814,7 @@ class CoreBusiness {
         /p>
 
         <h4>When to apply</h4>
-        <p>We will usually contact you by email about 6 weeks before your vehicle licence is due to expire. This will tell you of your vehicle’s compliance test date and time. If you do not hear from us, please email INSERT CCP.</p>
+        <p>We will usually contact you by email about 6 weeks before your vehicle licence is due to expire. This will tell you of your vehicle’s compliance test date and time. If you do not hear from us, please email <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a> or telephone <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734264')">0114 2734264</a> to make enquires.</p>
 
         <p>Please check your expiry date to ensure that you can re-licence your vehicle on time.
         You should renew your licence in the month that it is due to end. If you miss this deadline, you will have up to one month to renew it. After that date, you will have to apply for a new private hire vehicle licence.
@@ -880,6 +880,131 @@ class CoreBusiness {
     { date: "21/11/2025", name: "Joseph Coupland"} 
   );
 
+
+  const renewVechicleLicence = new ContentBusiness(
+    "renewVechicleLicence",
+    "Renewing a hackney carriage vehicle licence",
+    "Renewing a hackney carriage vehicle licence",
+    `
+    <h3>Before you renew</h3>
+    <h4>About insurance</h4>
+    <p>You will need to have insurance in place to use your hackney carriage as a taxi.</p>
+
+    <h4>Hackney carriage vehicle insurance</h4>
+
+    <h4>About right to work</h4>
+    <p>To renew your hackney carriage vehicle licence, you must prove to us that you are legally allowed to work in the UK.</p>
+
+    <h4>Right to work in the UK for hackney carriage vehicles</h4>
+
+    <h4>Renew your licence</h4>
+    <p>Use our online form to renew your hackney carriage vehicle licence.</p>
+
+    <h4>Renew your hackney carriage vehicle licence</h4>
+    <p>
+        JCHERE no information
+    </p>
+    <h3>Hackney carriage vehicle insurance</h3>
+    <p>
+        Your hackney carriage must have in place the correct insurance to carry passengers for hire and reward.<br>
+        This is a valid insurance certificate or cover note that tells us that you or a licensed driver, are insured to drive the vehicle and the purposes that it can be used for.<br>
+        We will need to see a copy of the insurance certificate when you make your application. We will check every month to make sure your hackney carriage is insured.
+    </p>
+    <h3>Right to work in the UK for hackney carriage vehicles</h3>
+    <p>You will need to provide us with evidence that you are legally allowed to work in the UK if you are:</p>
+    <ul>
+    <li>applying to become a licensed driver</li>
+    <li>applying to become an operator</li>
+    <li>a hackney carriage or private hire vehicle licence holder</li>
+    </ul>
+
+    <p>To prove this, we will need to see your original right to work documents in person and take copies of them.
+    This information can be provided when you make your in-person Disclosure and Barring Service application to us.
+    Once we have seen you in person, we will not need to see you again unless you have right to work restrictions.</p>
+
+    <h4>Documents that we accept</h4>
+    <p>You will need to provide one of the documents listed below.</p>
+    <ul>
+    <li>British passport</li>
+    <li>Irish passport</li>
+    <li>document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+    <li>passport from immigration control</li>
+    <li>immigration status document issued by the Home Office, presented with an official document giving your permanent National Insurance (NI) number and your name</li>
+    <li>UK birth certificate, together with an official document giving your permanent NI number and name</li>
+    <li>Channel Islands, Isle of Man or Ireland birth certificate, presented with an official document giving your permanent NI number and name</li>
+    <li>certificate of naturalisation as a British citizen, presented with an official document giving your permanent NI number and your name</li>
+    </ul>
+
+    <h4>Under immigration controls</h4>
+    <p>If you are under immigration controls, then we will only issue a licence for the period that you are entitled to work in the UK.
+    We will need to see one of the documents listed below before we can issue your licence:</p>
+    <ul>
+    <li>current passport</li>
+    <li>document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+    <li>current immigration status document containing a photograph issued by the Home Office</li>
+    </ul>
+
+    <h4>Right to work is time-limited</h4>
+    <p>Where your right to work in the UK is a time-limited period, we will need to see a:</p>
+    <ul>
+    <li>document or certificate of application (non-digital) issued by the Home Office</li>
+    <li>document from the Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+    <li>application Registration Card issued by the Home Office that says you can take employment</li>
+    <li>positive Verification Notice issued by the Home Office Employer Checking Service</li>
+    </ul>
+
+    <h3>Renew your hackney carriage vehicle licence</h3>
+    <h4>About this licence</h4>
+    <p>We will usually contact you when your hackney carriage vehicle licence needs to be renewed. If we do not, please contact us immediately to notify us that your licence is due to expire and requires a test.
+    You should renew your licence in the month that it is due to end. If you miss this deadline, you will have up to one month to renew it.
+    After that date, you will have to apply for a new hackney carriage vehicle licence which will need to meet the vehicle age specification.</p>
+
+    <h4>Cost</h4>
+    <p>Renewing your hackney carriage hire vehicle licence costs £212.
+    You will need to pay this online when you complete your application form.</p>
+
+    <h4>Information you will need</h4>
+    <p>You will need to upload the following information when you renew your licence:</p>
+    <ul>
+    <li>valid insurance certificate</li>
+    <li>compliance certificate</li>
+    </ul>
+
+    <h4>Issuing the licence</h4>
+    <p>We will process your application within 5 working days of receipt if it is complete.
+    We will email you a PDF version of your licence and send your plate and a paper version of the licence by post.
+    If your vehicle has been for a test within the last week of the month, we will give you the option to collect it so that you have the plate in time for the end of the month.
+    If you are not available to collect your plate, you can send someone to collect it on your behalf.</p>
+
+    `,
+    { buttonLabel: "", formName: ""},
+    { typeKey: "switchboard_transferred_to_service" },
+    { typeKey: "switchboard_information_provided"},
+    {
+      type: "Request",
+      keywords: [
+        "Switchboard",
+        "Switch board",
+        "Switch",
+        "transfer",
+        "redirect",
+        "transfer call",
+        "call"
+      ],
+      categories: ["Your City Council"],
+    },
+    { date: "21/11/2025", name: "Joseph Coupland"} 
+  );
+
+
+
+
+
+
+
+
+
+
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
   "Taxi Licensing",
@@ -893,7 +1018,8 @@ class CoreBusiness {
     vechicleCustomerCharter,
     transferLicence,
     surrenderLicence,
-    renewPriviateLicence
+    renewPriviateLicence,
+    renewVechicleLicence
   ]
 );
 
