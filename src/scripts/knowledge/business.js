@@ -663,19 +663,6 @@ class CoreBusiness {
     { date: "21/11/2025", name: "Joseph Coupland"} 
   );
 
-
-const taxiVehicles = new MenuBusiness(
-  "taxiVehicles",
-  "Private hire and hackney carriage vehicles",
-  "lorem ipsum.",
-  [
-    vechicleInspections,
-    vechicleCustomerCharter
-  ]
-);
-
-
-
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
   "Taxi Licensing",
@@ -685,7 +672,8 @@ const taxiVehicles = new MenuBusiness(
     applyPrivateHire,
     renewHackneyCarriage,
     renewPriviateHire,
-    taxiVehicles,
+    vechicleInspections,
+    vechicleCustomerCharter
   ]
 );
 
