@@ -1098,7 +1098,186 @@ const medicalNeeds = new ContentBusiness(
   );
 
 
+const applyTaxiDriver = new ContentBusiness(
+    "applyTaxiDriver",
+    "Apply for a new taxi driver licence",
+    "Apply for a new taxi driver licence",
+    `
+    <h3>Fit and Proper Test : Stage 1</h3>
+    <h4>Obtaining the "Certificate in Introduction to the Role of Professional Taxi and Private Hire Driver"</h4>
+    <p>Sheffield City College or other providers from Gov. UK</p>
 
+    <h4>Proof of right to work document?</h4>
+    <ul>
+    <li>British passport</li>
+    <li>Irish passport</li>
+    <li>document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+    <li>passport from immigration control</li>
+    <li>immigration status document issued by the Home Office, presented with an official document giving your permanent National Insurance (NI) number and your name</li>
+    <li>UK birth certificate, together with an official document giving your permanent NI number and name</li>
+    <li>Channel Islands, Isle of Man or Ireland birth certificate, presented with an official document giving your permanent NI number and name</li>
+    <li>certificate of naturalisation as a British citizen, presented with an official document giving your permanent NI number and your name</li>
+    </ul>
+
+    <h4>If you are under immigration controls</h4>
+    <ul>
+    <li>current passport</li>
+    <li>document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+    <li>current immigration status document containing a photograph issued by the Home Office</li>
+    </ul>
+
+    <h4>If the applicant is under immigration controls - applicable limitations</h4>
+    <p>only issue a licence for the period that you are entitled to work in the UK.</p>
+
+    <h4>If the right to work in the UK is a time-limited period</h4>
+    <ul>
+    <li>document or certificate of application (non-digital) issued by the Home Office</li>
+    <li>document from the Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+    <li>application Registration Card issued by the Home Office that says you can take employment</li>
+    <li>positive Verification Notice issued by the Home Office Employer Checking Service</li>
+    </ul>
+
+    <h3>Fit and Proper Test : Stage 2</h3>
+    <h4>Age & experience</h4>
+    <p>Must be above 21 years old & have held a Driver and Vehicle Licensing Agency (DVLA) driver licence for more than 12 months.</p>
+
+    <h4>Knowledge test pass mark</h4>
+    <p>score at least 80% in each section to pass the Knowledge Test</p>
+
+    <h4>Driving standards test</h4>
+    <p>Pass a driving standards test carried out by a driving standards examiner at our Transport Department. The test will include any 3 of the following:</p>
+    <ul>
+    <li>emergency stop</li>
+    <li>left-hand reverse</li>
+    <li>right-hand reverse</li>
+    <li>turn in the road</li>
+    <li>reverse parking</li>
+    </ul>
+
+    <h4>Requirements for Driving standards test</h4>
+    <ul>
+    <li>must be 21 years of age</li>
+    <li>Valid for one year</li>
+    <li>Make a boking</li>
+    <li>DVLA driving licence number in full</li>
+    </ul>
+
+    <h4>Cost for Driving standards test</h4>
+    <p>£ 70</p>
+
+    <h4>Vehicles that can use for the Driving standards test</h4>
+    <p>With the right insurance:</p>
+    <ul>
+    <li>driving instructor’s vehicle</li>
+    <li>rental vehicle</li>
+    <li>your vehicle</li>
+    <li>licenced vehicle that is registered in applicant's name and which applicant has a licence to drive (all licensing livery, including the licence plate should be removed before arriving at Staniforth Road)</li>
+    </ul>
+
+    <h4>Disclosure and barring checks</h4>
+    <p>An Enhanced Disclosure Certificate with Barred Check Lists from the Disclosure and Barring Service (DBS)</p>
+    <p>It will look at all convictions and particular attention will be given to the following:</p>
+    <ul>
+    <li>crimes resulting in death</li>
+    <li>exploitation</li>
+    <li>offences resulting in violence</li>
+    <li>possession of a weapon</li>
+    <li>sex and indecency offences</li>
+    <li>dishonesty</li>
+    <li>drugs</li>
+    <li>discrimination</li>
+    <li>motoring convictions (drink driving, driving under the influence of drugs, using a hand-held device or telephone whilst driving)</li>
+    </ul>
+    <p>If you have had one or more conviction recorded for any of the above offences, your application may be referred to the Licensing Sub-Committee.</p>
+
+    <h4>To apply for an Enhanced Disclosure Certificate with Barred Check Lists</h4>
+    <ul>
+    <li>Driver needs to email taxilicensing@sheffield.gov.uk to get a DBS pack</li>
+    <li>complete the DBS form and set up an appointment to have documents checked face-to-face at the reception</li>
+    <li>Service will send the complete application to DBS, they will make the necessary checks and return the certificate to the driver/applicant.</li>
+    <li>Applicant can apply for DBS certificate when taking knowledge test or driving standards test.</li>
+    </ul>
+    <p>Cost: The DBS certificate costs £49.50.</p>
+
+    <h4>DBS Update Service</h4>
+    <p>To check whether applicant's DBS is current when granting the licence, applicant must send a copy of the full certificate to us by email and sign-up to the DBS Update Service within 30 days of receiving the certificate.</p>
+    <p>Applicant must maintain subscription with the DBS service by paying an annual fee of £16 per year to DBS.</p>
+
+    <h4>DVLA checks</h4>
+    <p>Must supply the applicant's Driving and Vehicle Licensing Agency (DVLA) driving licence number.
+    The applicant might receive an email from a company called TaxiPlus to give consent to allow the service to carry out these checks.</p>
+
+    <h4>Taxi driver medical assessments</h4>
+    <p>Must pass a DVLA Group 2 Medical Fitness examination when an applicant first apply to be a licenced driver.</p>
+
+    <h4>Group 2 Medical Fitness examinations will focus on:</h4>
+    <ul>
+    <li>neurological (brain and nerves) disorders</li>
+    <li>cardiovascular (heart and blood vessels) disorders</li>
+    <li>diabetes</li>
+    <li>mental health</li>
+    <li>drug or alcohol misuse</li>
+    <li>visual (eyesight) disorders</li>
+    <li>renal (kidney, ureters and urethra) disorders</li>
+    <li>respiratory (breathing) disorders</li>
+    <li>any other conditions</li>
+    </ul>
+
+    <h4>Medical assessments by age</h4>
+    <ul>
+    <li>45 years of age or older need to take a medical examination every 5 years.</li>
+    <li>65 years of age or older need to take a medical examination every year.</li>
+    <li>Where recommended by the GP may be required to a take medical examination, or other medical tests, on a more frequent basis.</li>
+    </ul>
+
+    <h4>Apply for the medical assessments</h4>
+    <p>Get a medical assessment form from service (email, post, download), and it needs to be completed either by applicant's doctor or one recommended by us. A driver can apply for the medical exemptions if applicable.</p>
+
+    <h4>Returning medical assessment</h4>
+    <ul>
+    <li>Email - Take clear photos of all pages and email them to taxilicensing@sheffield.gov.uk.</li>
+    <li>Post - by recorded delivery to Licensing Service Block C, Staniforth Road Depot, Staniforth Road Sheffield S9 3HD</li>
+    <li>In-person - drop the medical pack off in the post box on site</li>
+</ul>
+
+    <h3>Fit and Proper Test : Stage 2</h3>
+    <h4>Apply for a new taxi driver licence</h4>
+    <p>Applicants who completed stages 1 & 2 can apply for the new combined ph/hc driver licence.</p>
+
+    <h4>New applications are defined as follows</h4>
+    <ol>
+    <li>Applicant has never held a licence with us.</li>
+    <li>Applicant has held a licence previously but the expiry of that licence is over 12 months since the date they make the application and</li>
+    <li>An applicant who applies after 1 calendar month since the expiry of his last licence.</li>
+    </ol>
+
+    <h4>The fee for a new taxi driver licence depends on how many years the applicant wants it to last</h4>
+    <ul>
+    <li>one year - £223</li>
+    <li>2 years - £245</li>
+    <li>3 years - £268</li>
+    </ul>
+
+
+    `,
+    { buttonLabel: "", formName: ""},
+    { typeKey: "switchboard_transferred_to_service" },
+    { typeKey: "switchboard_information_provided"},
+    {
+      type: "Request",
+      keywords: [
+        "Switchboard",
+        "Switch board",
+        "Switch",
+        "transfer",
+        "redirect",
+        "transfer call",
+        "call"
+      ],
+      categories: ["Your City Council"],
+    },
+    { date: "21/11/2025", name: "Joseph Coupland"} 
+  );
 
 
 
@@ -1118,7 +1297,8 @@ const medicalNeeds = new ContentBusiness(
     surrenderLicence,
     renewPriviateLicence,
     renewVechicleLicence,
-    medicalNeeds
+    medicalNeeds,
+    applyTaxiDriver
   ]
 );
 
