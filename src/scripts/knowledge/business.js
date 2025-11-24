@@ -624,6 +624,41 @@ class CoreBusiness {
     { date: "21/11/2025", name: "Joseph Coupland"} 
   );
 
+   const surrenderLicence = new ContentBusiness(
+    "surrenderLicence",
+    "Surrender a vehicle licence",
+    "Surrender a vehicle licence",
+    `
+    <h3>Keeping your private hire or hackney carriage vehicle safe</h3>
+    <p>
+        You might want to de-licence your vehicle and surrender your plate. Where possible, you need to return your plate to us.<br>
+        In the future, if you want to licence your vehicle again, you will need to apply for a new one. This will mean that you must go through the application process again.
+    </p>
+    `,
+  
+    { buttonLabel: "", formName: ""},
+    { typeKey: "switchboard_transferred_to_service" },
+    { typeKey: "switchboard_information_provided"},
+    {
+      type: "Request",
+      keywords: [
+        "Switchboard",
+        "Switch board",
+        "Switch",
+        "transfer",
+        "redirect",
+        "transfer call",
+        "call"
+      ],
+      categories: ["Your City Council"],
+    },
+    { date: "21/11/2025", name: "Joseph Coupland"} 
+  );
+
+
+
+
+
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
   "Taxi Licensing",
