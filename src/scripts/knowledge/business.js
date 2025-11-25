@@ -2177,164 +2177,59 @@ const vechicleInspections = new ContentBusiness(
     "Vehicle Testing Customer Charter",
     "Information Regarding Taxi Licensing",
     `
-        <details class="accordion">
-        <summary class="accordion-header"><h3>Keeping your private hire or hackney carriage vehicle safe</h3></summary>
-        <div class="accordion-content">
-            <p>
-                Your vehicle needs to be checked regularly to ensure it is safe to use as a licensed private hire or hackney carriage vehicle. Due to high workloads and mileage, the testing frequency depends on the vehicle’s age. Older vehicles must be tested more regularly.<br><br>
-                Your vehicle must pass a compliance test at our testing station before we can issue a licence.
-            </p>
-        </div>
-    </details>
+        <h3>Keeping your vehicle on the road</h3>
+    <p>
+        Whether private hire or hackney carriage, our vehicle testing charter describes what we expect from you and what you can expect from our service.
+    </p>
+    <h3>Our promise to you</h3>
+    <h4>Thorough testing</h4>
+    <p>
+         We ensure every vehicle examination is detailed, of high quality and completely independent.
+    </p>
+    <h4>Service</h4>
+    <p>
+        We provide a prompt and polite service to all users
+    </p>
+     <h3>Re-tests</h3>
+    <p>
+        You can visit the test centre for general re-tests between 9am and 15:30pm without the need to pre book.<br>
+        Vehicles that fail with 8 faults or more must pre book a 15:30pm appointment.<br>
+    </p>
+    <h3>We will always be responsive</h3>
+    <h4>Complaints</h4>
+    <p>
+        If you want to make a complaint, we will clearly display and explain the steps you need to follow.
+    </p>
+    <h4>Your feedback</h4>
+    <p>
+        We value your comments, complaints and ideas about our service. We will aim to acknowledge your feedback within seven days of receipt (or within 3 days for emails).
+    </p>
+    <h4>Our responses</h4>
+    <p>
+        We will aim to respond fully to your questions or complaints within 28 days. If we can’t meet this timeframe, we will let you know of the progress and give you a date when we will reply.
+    </p>
+     <h4>Appointments</h4>
+    <p>
+        If you contact us without an appointment, we will try to see you as quickly as possible.
+    </p>
+    <h4>Keeping you informed</h4>
+    <p>
+        We will keep you updated if there are any delays to your vehicle testing.
+    </p>
 
-    <details class="accordion">
-        <summary class="accordion-header"><h3>New vehicles</h3></summary>
-        <div class="accordion-content">
-            <p>
-                New vehicles must pass a compliance test before we can issue a licence, even if they are less than 3 years old and would not normally require an MOT.<br>
-                Before we can issue a test date, you must submit either a:
-                <ul>
-                    <li>New private hire vehicle licence application</li>
-                    <li>New hackney carriage vehicle licence application</li>
-                </ul>
-                Once your vehicle passes the test, you must licence it within 10 days (for private hire vehicles) or 14 days (for hackney carriage vehicles) of passing.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Vehicles already licenced</h3></summary>
-        <div class="accordion-content">
-            <p>
-                Your vehicle must undergo a compliance test no more than 4 weeks before its licence is due for renewal.<br><br>
-                We usually email you about 6 weeks in advance with a test date and time.<br><br>
-                It is your responsibility to licence your vehicle on time. If you do not hear from us, email <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a> or call <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734264')">0114 2734264</a> to arrange a test date.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Changing your test date</h3></summary>
-        <div class="accordion-content">
-            <p>
-                If you need to change your test date, give us at least 24 hours' notice. Failing to provide sufficient notice will require payment of a missed test fee before rebooking.<br><br>
-                You must attend your vehicle's test. If you cannot, you may be asked to return your plate to us for safe keeping.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>How often your vehicle needs to be tested</h3></summary>
-        <div class="accordion-content">
-            <p>
-                The number of tests depends on your vehicle’s age.<br><br>
-            </p>
-
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Private hire vehicle testing</h4></summary>
-                <div class="accordion-content">
-                    <ul>
-                        <li>Under 5 years of age – every 12 months</li>
-                        <li>Over 6 years of age – every 6 months</li>
-                    </ul>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Hackney carriage vehicle testing</h4></summary>
-                <div class="accordion-content">
-                    <ul>
-                        <li>Under 9 years of age – every 12 months</li>
-                        <li>Over 9 years of age – every 6 months</li>
-                    </ul>
-                </div>
-            </details>
-
-            <p>
-                The age of the vehicle and testing frequency are confirmed by the V5C document presented during the licence application.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Vehicles that fail</h3></summary>
-        <div class="accordion-content">
-            <p>
-                If your vehicle fails several tests consecutively, it may be required to undergo more frequent testing. We will provide reasons for this. You may have to pay for up to 3 additional tests in any 12-month period.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Fees</h3></summary>
-        <div class="accordion-content">
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Compliance test</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        Private hire – £54 <br>
-                        Hackney carriage – £59 (includes meter check)
-                    </p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Additional compliance information</h4></summary>
-                <div class="accordion-content">
-                    <p>********************************No information provided****************************** JCHERE</p>
-                </div>
-            </details>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>How we test</h3></summary>
-        <div class="accordion-content">
-            <p>
-                Our inspections go beyond standard MOT tests. Due to the nature of taxi work, all areas of the vehicle are tested.<br><br>
-                We check for:
-                <ul>
-                    <li>Functionality</li>
-                    <li>Appearance</li>
-                    <li>Safety</li>
-                </ul>
-                Find out more about MOT testing standards and procedures: <a href="https://www.sheffield.gov.uk/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private-hire-vehicle-licence/inspections-and-testing" target="_blank">Inspections and Testing</a>
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>What happens if it fails</h3></summary>
-        <div class="accordion-content">
-            <p>
-                If your vehicle fails multiple tests, additional tests may be required. You will be informed of the reasons and may have to pay for up to 3 additional tests.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Where we test</h3></summary>
-        <div class="accordion-content">
-            <p>
-                Our testing station follows best practices and guidelines from:
-                <ul>
-                    <li>Department of Transport (DfT)</li>
-                    <li>Driver and Vehicle Standards Agency (DVSA)</li>
-                    <li>The Technical Officer Group of the Public Authority Network</li>
-                    <li>Vehicle testing customer charter</li>
-                </ul>
-                Find out about the service we promise when you book a vehicle inspection and test with us. <!-- JCHERE: Consider adding a link or rewording -->
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>View customer charter</h3></summary>
-        <div class="accordion-content">
-            <p>JCHERE – No information provided.</p>
-        </div>
-    </details>
-
+    <h3>Your commitment to us</h3>
+    <h4>Keep us updated</h4>
+    <p>
+        Tell us of us of any changes in your personal life that may affect the services we provide to you. 
+    </p>
+    <h4>Your appointment</h4>
+    <p>
+       Attend your scheduled appointment times or let us know in advance if you cannot make it. 
+    </p>
+    <h4>Your behaviour</h4>
+    <p>
+        Please behave politely and considerately, so that we can provide you and other customers with a high-quality service. 
+    </p>
     `,
   
     { buttonLabel: "", formName: ""},
