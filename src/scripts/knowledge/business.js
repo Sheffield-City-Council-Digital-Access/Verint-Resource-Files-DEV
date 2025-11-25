@@ -1802,243 +1802,150 @@ const renewPriviateLicence = new ContentBusiness(
     "Renewing a Private Hire Vehicle Licence",
     "Renewing a private hire vehicle licence",
     `
-        <details class="accordion">
-        <summary class="accordion-header"><h3>Before you renew</h3></summary>
-        <div class="accordion-content">
-            <p>
-                Your vehicle needs to pass a compliance test no more than 4 weeks before it's licence is due to be renewed.  
-            </p>
+        <h3>Before you renew</h3>
+        <p>
+            Your vehicle needs to pass a compliance test no more than 4 weeks before it's licence is due to be renewed.  
+        <p>
+        <h4>Test appointments</h4>
+        <p>
+            When your vehicle is due for a test, we will usually email you about 6 weeks in advance with a date and time. If you do not hear from us, please email taxilicensing@sheffield.gov.uk or telephone 0114 273 4264 to arrange the test.
+        </p>
+        <h4>Private hire vehicle insurance</h4>
+        <p>
+            You will need to have insurance to carry passengers in your vehicle.
+        </p>
+        <h4>About insurance</h4>
+        <p>
+            JCHere no information
+        </p>
+        <h4>Right to work in the UK for private hire vehicles</h4>
+        <p>
+            To licence your private hire vehicle, you must prove to us that you are legally allowed to work in the UK.
+        </p>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Test appointments</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        When your vehicle is due for a test, we will usually email you about 6 weeks in advance with a date and time. If you do not hear from us, please email taxilicensing@sheffield.gov.uk or telephone 0114 273 4264 to arrange the test.
-                    </p>
-                </div>
-            </details>
+        <h4>About right to work</h4>
+         <p>
+            JCHere no information
+        </p>
+        <h4>Renew a private hire vehicle licence</h4>
+        Use our online form to make your private hire vehicle renewal. ***JCHERE Add Send Link***
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Private hire vehicle insurance</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        You will need to have insurance to carry passengers in your vehicle.
-                    </p>
-                </div>
-            </details>
+        <h4>Renew your licence</h4>
+         <p>
+            JCHere no information
+        </p>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>About insurance</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        JCHere no information
-                    </p>
-                </div>
-            </details>
+    <h3>Private hire vehicle insurance</h3>
+    <p>
+        You must have vehicle insurance to carry passengers. If you want to carry wheelchair passengers, then you will also need public liability insurance.<br>
+        We will need to see copies of the relevant insurance certificates when you make your application.<br>
+    </p>
+        <h4>Vehicle insurance</h4>
+        <p>
+            You need to have a valid insurance certificate or cover note that tells us that you are insured to drive the vehicle. It should also state that the vehicle can be used to carry passengers for hire and reward.
+        </p>
+        <h4>Public liability insurance</h4>
+        <p>
+            To carry wheelchair passengers, you will have public liability insurance with a minimum cover of £2,000,000. As a minimum, this should cover personal injury claims and any damage to property.
+        </p>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Right to work in the UK for private hire vehicles</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        To licence your private hire vehicle, you must prove to us that you are legally allowed to work in the UK.
-                    </p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header"><h4>About right to work</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        JCHere no information
-                    </p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Renew a private hire vehicle licence</h4></summary>
-                <div class="accordion-content">
-                    Use our online form to make your private hire vehicle renewal. ***JCHERE Add Send Link***
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Renew your licence</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        JCHere no information
-                    </p>
-                </div>
-            </details>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Private hire vehicle insurance</h3></summary>
-        <div class="accordion-content">
-            <p>
-                You must have vehicle insurance to carry passengers. If you want to carry wheelchair passengers, then you will also need public liability insurance.<br>
-                We will need to see copies of the relevant insurance certificates when you make your application.<br>
-            </p>
-
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Vehicle insurance</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        You need to have a valid insurance certificate or cover note that tells us that you are insured to drive the vehicle. It should also state that the vehicle can be used to carry passengers for hire and reward.
-                    </p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Public liability insurance</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        To carry wheelchair passengers, you will have public liability insurance with a minimum cover of £2,000,000. As a minimum, this should cover personal injury claims and any damage to property.
-                    </p>
-                </div>
-            </details>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Right to work in the UK for private hire vehicles</h3></summary>
-        <div class="accordion-content">
-            <p>
-                You will need to provide us with evidence that you are legally allowed to work in the UK if you are:
-            </p>
+        <h3>Right to work in the UK for private hire vehicles</h3>
+    <p>
+        You will need to provide us with evidence that you are legally allowed to work in the UK if you are:
+        <ul>
+            <li>Applying to become a licensed driver</li>  
+            <li>Applying to become an operator</li>
+            <li>A hackney carriage or private hire vehicle licence holder</li>
+        </ul>
+        <p>
+            To prove this, we will need to see your original right to work documents in person and take copies of them.<br>
+            This information can be provided when you make your in-person Disclosure and Barring Service application to us.<br>  
+            Once we have seen you in-person, we will not need to see you again unless you have right to work restrictions.<br>
+        </p>
+        <h4>Documents that we accept</h4>
+        <p>
+            You will need to provide one of the documents listed below.
             <ul>
-                <li>Applying to become a licensed driver</li>  
-                <li>Applying to become an operator</li>
-                <li>A hackney carriage or private hire vehicle licence holder</li>
+                <li>British passport</li>
+                <li>Irish passport</li>
+                <li>document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+                <li>passport from immigration control</li>
+                <li>immigration status document issued by the Home Office, presented with an official document giving your permanent National Insurance (NI) number and your name</li>
+                <li>UK birth certificate, together with an official document giving your permanent NI number and name</li>
+                <li>Channel Islands, Isle of Man or Ireland birth certificate, presented with an official document giving your permanent NI number and name</li>
+                <li>Certificate of naturalisation as a British citizen, presented with an official document giving your permanent NI number and your name</li>
+                <li>Under immigration controls</li>
+                <li>If you are under immigration controls, then we will only issue a licence for the period that you are entitled to work in the UK</li>
             </ul>
+        </p>
+        <p>
+            We will need to see one of the documents listed below before we can issue your licence.
+        </p>
+        <ul>
+            <li>current passport</li>
+            <li>document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+            <li>current immigration status document containing a photograph issued by the Home Office</li>
+            <li>Right to work is time-limited</li>
+            <li>Where your right to work in the UK is a time-limited period, we will need to see a:</li>
+            <li>document or certificate of application (non-digital) issued by the Home Office</li>
+            <li>document from the Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+            <li>application Registration Card issued by the Home Office that says you can take employment</li>
+            <li>positive Verification Notice issued by the Home Office Employer Checking Service</li>
+        </ul>
+    </p>
+    <h3>Renew a private hire vehicle licence</h3>
+        <h4>About this licence</h4>
+        <p>
+            Your private hire vehicle licence will be valid for a maximum of 12 months.
+        /p>
 
-            <p>
-                To prove this, we will need to see your original right to work documents in person and take copies of them.<br>
-                This information can be provided when you make your in-person Disclosure and Barring Service application to us.<br>  
-                Once we have seen you in-person, we will not need to see you again unless you have right to work restrictions.<br>
-            </p>
+        <h4>When to apply</h4>
+        <p>We will usually contact you by email about 6 weeks before your vehicle licence is due to expire. This will tell you of your vehicle’s compliance test date and time. If you do not hear from us, please email <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a> or telephone <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734264')">0114 2734264</a> to make enquires.</p>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Documents that we accept</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        You will need to provide one of the documents listed below.
-                    </p>
-                    <ul>
-                        <li>British passport</li>
-                        <li>Irish passport</li>
-                        <li>document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
-                        <li>passport from immigration control</li>
-                        <li>immigration status document issued by the Home Office, presented with an official document giving your permanent National Insurance (NI) number and your name</li>
-                        <li>UK birth certificate, together with an official document giving your permanent NI number and name</li>
-                        <li>Channel Islands, Isle of Man or Ireland birth certificate, presented with an official document giving your permanent NI number and name</li>
-                        <li>Certificate of naturalisation as a British citizen, presented with an official document giving your permanent NI number and your name</li>
-                        <li>Under immigration controls</li>
-                        <li>If you are under immigration controls, then we will only issue a licence for the period that you are entitled to work in the UK</li>
-                    </ul>
+        <p>Please check your expiry date to ensure that you can re-licence your vehicle on time.
+        You should renew your licence in the month that it is due to end. If you miss this deadline, you will have up to one month to renew it. After that date, you will have to apply for a new private hire vehicle licence.
+        If your licence does expire, you are not legally allowed to drive your vehicle for the purpose of hire and reward. You can only resume doing this when you receive confirmation that the licence has been renewed.</p>
 
-                    <p>
-                        We will need to see one of the documents listed below before we can issue your licence.
-                    </p>
-                    <ul>
-                        <li>current passport</li>
-                        <li>document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
-                        <li>current immigration status document containing a photograph issued by the Home Office</li>
-                        <li>Right to work is time-limited</li>
-                        <li>Where your right to work in the UK is a time-limited period, we will need to see a:</li>
-                        <li>document or certificate of application (non-digital) issued by the Home Office</li>
-                        <li>document from the Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
-                        <li>application Registration Card issued by the Home Office that says you can take employment</li>
-                        <li>positive Verification Notice issued by the Home Office Employer Checking Service</li>
-                    </ul>
-                </div>
-            </details>
-        </div>
-    </details>
+        <h4>Cost</h4>
+        <p>Renewing your private hire vehicle licence costs £212.
+        You will need to pay this online when you complete your application form.</p>
 
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Renew a private hire vehicle licence</h3></summary>
-        <div class="accordion-content">
-            <details class="accordion">
-                <summary class="accordion-header"><h4>About this licence</h4></summary>
-                <div class="accordion-content">
-                    <p>Your private hire vehicle licence will be valid for a maximum of 12 months.</p>
-                </div>
-            </details>
+        <h4>Information you will need</h4>
+        <p>You will need to upload the following information when you renew your licence:</p>
+        <ul>
+        <li>private hire vehicle registration number</li>
+        <li>private hire vehicle licence number</li>
+        <li>vehicle expiry date</li>
+        <li>valid insurance certificate</li>
+        <li>compliance certificate</li>
+        </ul>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>When to apply</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        We will usually contact you by email about 6 weeks before your vehicle licence is due to expire. This will tell you of your vehicle’s compliance test date and time. If you do not hear from us, please email <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a> or telephone <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734264')">0114 2734264</a> to make enquires.
-                    </p>
-                    <p>
-                        Please check your expiry date to ensure that you can re-licence your vehicle on time.
-                        You should renew your licence in the month that it is due to end. If you miss this deadline, you will have up to one month to renew it. After that date, you will have to apply for a new private hire vehicle licence.
-                        If your licence does expire, you are not legally allowed to drive your vehicle for the purpose of hire and reward. You can only resume doing this when you receive confirmation that the licence has been renewed.
-                    </p>
-                </div>
-            </details>
+        <h4>Issuing the licence</h4>
+        <p>When your vehicle has passed the compliance test, we ask that you make your application straight away so that we can issue the licence to you on time.</p>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Cost</h4></summary>
-                <div class="accordion-content">
-                    <p>Renewing your private hire vehicle licence costs £212. You will need to pay this online when you complete your application form.</p>
-                </div>
-            </details>
+        <p>Once we receive your online application and payment, we will process your application within 5 working days.
+        We will then email you a PDF version of your licence and send you a paper version by post along with your licence plate.
+        If your vehicle has been for a test within the last week of the month, we will give you the option to collect your licence so that you have it in time for the end of the month.
+        If you are not available to collect your licence, you can send someone to collect it on your behalf.</p>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Information you will need</h4></summary>
-                <div class="accordion-content">
-                    <p>You will need to upload the following information when you renew your licence:</p>
-                    <ul>
-                        <li>private hire vehicle registration number</li>
-                        <li>private hire vehicle licence number</li>
-                        <li>vehicle expiry date</li>
-                        <li>valid insurance certificate</li>
-                        <li>compliance certificate</li>
-                    </ul>
-                </div>
-            </details>
+        <h4>Exceptional vehicles</h4>
+        <p>If you want us to licence your vehicle for longer than its licensable period, then you must be able to show us that it meets our exceptional vehicle standards. We will give your vehicle this status if:</p>
+        <ul>
+        <li>it has never failed a vehicle compliance test</li>
+        <li>it has never missed a pre-arranged vehicle compliance test</li>
+        <li>there is a complete service record, that shows us that is has been properly serviced to the manufacturer’s standards and all receipts and service book history are available</li>
+        <li>the vehicle has not been suspended at any time due to its mechanical or physical condition</li>
+        <li>the vehicle is Zero Emission Capable (ZEC)</li>
+        </ul>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Issuing the licence</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        When your vehicle has passed the compliance test, we ask that you make your application straight away so that we can issue the licence to you on time.
-                    </p>
-                    <p>
-                        Once we receive your online application and payment, we will process your application within 5 working days.
-                        We will then email you a PDF version of your licence and send you a paper version by post along with your licence plate.
-                        If your vehicle has been for a test within the last week of the month, we will give you the option to collect your licence so that you have it in time for the end of the month.
-                        If you are not available to collect your licence, you can send someone to collect it on your behalf.
-                    </p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Exceptional vehicles</h4></summary>
-                <div class="accordion-content">
-                    <p>If you want us to licence your vehicle for longer than its licensable period, then you must be able to show us that it meets our exceptional vehicle standards. We will give your vehicle this status if:</p>
-                    <ul>
-                        <li>it has never failed a vehicle compliance test</li>
-                        <li>it has never missed a pre-arranged vehicle compliance test</li>
-                        <li>there is a complete service record, that shows us that is has been properly serviced to the manufacturer’s standards and all receipts and service book history are available</li>
-                        <li>the vehicle has not been suspended at any time due to its mechanical or physical condition</li>
-                        <li>the vehicle is Zero Emission Capable (ZEC)</li>
-                    </ul>
-
-                    <p>The following parts of the vehicle must be in A1 condition:</p>
-                    <ul>
-                        <li>bodywork has no signs of rust, dents, scratches, stone chips, or any other problems with its appearance</li>
-                        <li>paintwork must not be faded, discoloured or mismatched</li>
-                        <li>interior, including carpets, mats and seats</li>
-                        <li>all luggage compartments are clean and free from damage</li>
-                    </ul>
-                </div>
-            </details>
-        </div>
-    </details>
+        <p>The following parts of the vehicle must be in A1 condition:</p>
+        <ul>
+        <li>bodywork has no signs of rust, dents, scratches, stone chips, or any other problems with its appearance</li>
+        <li>paintwork must not be faded, discoloured or mismatched</li>
+        <li>interior, including carpets, mats and seats</li>
+        <li>all luggage compartments are clean and free from damage</li>
+        </ul>
+    </p>
 
     `,
     { buttonLabel: "", formName: ""},
