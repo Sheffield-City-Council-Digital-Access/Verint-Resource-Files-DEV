@@ -2057,163 +2057,98 @@ const vechicleInspections = new ContentBusiness(
     "Vehicle Inspections and Testing",
     "Information Regarding Taxi Licensing",
     `
-        <details class="accordion">
-        <summary class="accordion-header"><h3>Keeping your private hire or hackney carriage vehicle safe</h3></summary>
-        <div class="accordion-content">
-            <p>
-                Your vehicle needs to be checked regularly to ensure it is safe to use as a licensed private hire or hackney carriage vehicle. Due to high workloads and mileage, the testing frequency depends on the vehicle’s age. Older vehicles must be tested more regularly.<br><br>
-                Your vehicle must pass a compliance test at our testing station before we can issue a licence.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>New vehicles</h3></summary>
-        <div class="accordion-content">
-            <p>
-                New vehicles must pass a compliance test before we can issue a licence, even if they are less than 3 years old and would not normally require an MOT.<br>
-                Before we can issue a test date, you must submit either a:
-                <ul>
-                    <li>New private hire vehicle licence application</li>
-                    <li>New hackney carriage vehicle licence application</li>
-                </ul>
-                Once your vehicle passes the test, you must licence it within 10 days (for private hire vehicles) or 14 days (for hackney carriage vehicles) of passing.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Vehicles already licenced</h3></summary>
-        <div class="accordion-content">
-            <p>
-                Your vehicle must undergo a compliance test no more than 4 weeks before its licence is due for renewal.<br><br>
-                We usually email you about 6 weeks in advance with a test date and time.<br><br>
-                It is your responsibility to licence your vehicle on time. If you do not hear from us, email <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a> or call <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734264')">0114 2734264</a> to arrange a test date.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Changing your test date</h3></summary>
-        <div class="accordion-content">
-            <p>
-                If you need to change your test date, give us at least 24 hours' notice. Failing to provide sufficient notice will require payment of a missed test fee before rebooking.<br><br>
-                You must attend your vehicle's test. If you cannot, you may be asked to return your plate to us for safe keeping.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>How often your vehicle needs to be tested</h3></summary>
-        <div class="accordion-content">
-            <p>
-                The number of tests depends on your vehicle’s age.<br><br>
-            </p>
-
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Private hire vehicle testing</h4></summary>
-                <div class="accordion-content">
-                    <ul>
-                        <li>Under 5 years of age – every 12 months</li>
-                        <li>Over 6 years of age – every 6 months</li>
-                    </ul>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Hackney carriage vehicle testing</h4></summary>
-                <div class="accordion-content">
-                    <ul>
-                        <li>Under 9 years of age – every 12 months</li>
-                        <li>Over 9 years of age – every 6 months</li>
-                    </ul>
-                </div>
-            </details>
-
-            <p>
-                The age of the vehicle and testing frequency are confirmed by the V5C document presented during the licence application.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Vehicles that fail</h3></summary>
-        <div class="accordion-content">
-            <p>
-                If your vehicle fails several tests consecutively, it may be required to undergo more frequent testing. We will provide reasons for this. You may have to pay for up to 3 additional tests in any 12-month period.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Fees</h3></summary>
-        <div class="accordion-content">
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Compliance test</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        Private hire – £54 <br>
-                        Hackney carriage – £59 (includes meter check)
-                    </p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Additional compliance information</h4></summary>
-                <div class="accordion-content">
-                    <p>********************************No information provided****************************** JCHERE</p>
-                </div>
-            </details>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>How we test</h3></summary>
-        <div class="accordion-content">
-            <p>
-                Our inspections go beyond standard MOT tests. Due to the nature of taxi work, all areas of the vehicle are tested.<br><br>
-                We check for:
-                <ul>
-                    <li>Functionality</li>
-                    <li>Appearance</li>
-                    <li>Safety</li>
-                </ul>
-                Find out more about MOT testing standards and procedures: <a href="https://www.sheffield.gov.uk/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private-hire-vehicle-licence/inspections-and-testing" target="_blank">Inspections and Testing</a>
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>What happens if it fails</h3></summary>
-        <div class="accordion-content">
-            <p>
-                If your vehicle fails multiple tests, additional tests may be required. You will be informed of the reasons and may have to pay for up to 3 additional tests.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Where we test</h3></summary>
-        <div class="accordion-content">
-            <p>
-                Our testing station follows best practices and guidelines from:
-                <ul>
-                    <li>Department of Transport (DfT)</li>
-                    <li>Driver and Vehicle Standards Agency (DVSA)</li>
-                    <li>The Technical Officer Group of the Public Authority Network</li>
-                    <li>Vehicle testing customer charter</li>
-                </ul>
-                Find out about the service we promise when you book a vehicle inspection and test with us. <!-- JCHERE: Consider adding a link or rewording -->
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header"><h3>View customer charter</h3></summary>
-        <div class="accordion-content">
-            <p>JCHERE – No information provided.</p>
-        </div>
-    </details>
+        <h3>Keeping your private hire or hackney carriage vehicle safe</h3>
+    <p>
+        Your vehicle needs to be checked regularly to make sure that it is safe to be used as a licensed private hire or hackney carriage vehicle. Because of high workloads and mileage, it will be tested according to it's age. If your vehicle is older, then it will need to be tested more regularly.<br>
+        <br>
+        Your vehicle must pass a compliance test at our testing station before we can issue a licence.
+    </p>
+    <h3>New vehicles</h3>
+    <p>
+        If your vehicle is new, then it needs to have passed a compliance test before we can issue a licence. This needs to happen even where it would not normally need an MOT test (if it is less than 3 years of age).<br>
+        Before we can issue you with a test date you will need to make either a:
+        <ul>
+            <li>new private hire vehicle licence application</li>
+            <li>new hackney carriage vehicle licence application</li>
+        </ul>
+        Once your vehicle has passed the test, you must licence the vehicle within either 10 days (for private hire vehicles) or 14 days (for hackney carriage vehicles) of the vehicle passing it's test.
+    </p>
+     <h3>Vehicles already licenced</h3>
+    <p>
+        Your vehicle needs to go through a compliance test no more than 4 weeks before it's licence is due to be renewed. <br>
+        <br>
+        When your vehicle is due to go for a test, we will usually email you about 6 weeks in advance with a date and time of the test.<br>
+        <br>
+        It is your responsibility to ensure you licence your vehicle on time and email <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a> or telephone <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734264')">0114 2734264</a> for a test date if you do not hear from us.   
+</p>
+    <h3>Changing your test date</h3>
+    <p>
+        If you need to change the test date, you should give us plenty of warning. We will accept nothing less than 24 hours' notice. If you do not give us enough notice to change the test, you will have to pay a missed test fee before you can rebook the test.<br>
+        <br>
+        You need to attend your vehicle's test. If you can't, then you may be asked to bring your plate back to us for safe keeping.
+    </p>
+    <h3>How often your vehicle needs to be testedV</h3>
+    <p>
+        The number of tests depends on how old your vehicle is.<br>
+        <h4>Private hire vehicle testing</h4>
+        You will need to test your private hire vehicle at the following intervals: <br>
+        Under 5 years of age – every 12 months.<br>
+        Over 6 years of age – every 6 months.<br>
+        <h4>Hackney carriage vehicle testing</h4>
+        You will need to test your hackney carriage vehicle at the following intervals:<br>
+        under 9 years of age – every 12 months.<br>
+        over 9 years of age – every 6 months.<br><br>
+        The age of the vehicle and how often it will be tested is made clear by the V5C document that is presented when you apply for a vehicle licence.
+    </p>
+    <h3>Vehicles that fail</h3>
+    <p>
+       If your vehicle fails several tests in a row, you may be required to have your vehicle tested on a more regular basis.<br>
+       If this is the case, we will tell you the reasons why we are doing this. You will have to pay for up to a maximum of 3 of these tests in any 12-month period.
+    </p>
+    <h3>Fees</h3>
+    <h4>Compliance test</h4>
+    <p>
+        Private hire - £54 <br>
+        Hackney carriage - £59 (includes meter check)
+    </p>
+    <h4>Compliance test</h4>
+    <p>
+        ********************************No information provided****************************** Jchere
+    </p>
+    <h3>How we test</h3>
+    <p>
+        Our vehicle inspection and testing go beyond that of the Ministry of Transport (MOT) test.<br>
+        Because of the nature of taxi work done by hackney carriage vehicles, it is important that all areas of the vehicle are tested. <br>
+        <br>
+        We will check for:
+        <ul>
+            <li>how it works.</li>
+            <li>how it looks.</li>
+            <li>how safe it is.</li>
+        </ul>
+        Find out more about MOT testing standards and procedures. 
+        SEND LINK - https://www.sheffield.gov.uk/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private-hire-vehicle-licence/inspections-and-testing
+    </p>
+    <h3>What happens if it fails</h3>
+    <p>
+       If your vehicle fails several tests in a row, we may need to do more tests on it. If this is the case, we will tell you the reasons why we are doing this. 
+       You will have to pay for up to a maximum of 3 of these tests.
+    </p>
+    <h3>Where we test</h3>
+    <p>
+        Our testing station follows best practice and guidelines developed by ourselves and the following organisations:
+        <ul>
+        <li>Department of Transport (DFT)</li>
+        <li>Drivers and Vehicles Standards Agency (DVSA)</li>
+        <li>The Technical Officer Group of the Public Authority Network</li>
+        <li>Vehicle testing customer charter</li>
+        </ul>
+        Find out about the service we promise to offer when you book a vehicle inspection and test with us. - JCHere should this be a send link or reworded etc.
+    </p>
+    <h3>View customer charter</h3>
+    <p>
+        JCHERE No information provided.
+    </p>
 
     `,
   
