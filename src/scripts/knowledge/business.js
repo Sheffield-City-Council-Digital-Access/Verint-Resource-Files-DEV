@@ -1688,166 +1688,95 @@ const renewVechicleLicence = new ContentBusiness(
     "Renewing a Hackney Carriage Vehicle Licence",
     "Renewing a hackney carriage vehicle licence",
     `
-        <details class="accordion">
-        <summary class="accordion-header"><h3>Before you renew</h3></summary>
-        <div class="accordion-content">
-            <details class="accordion">
-                <summary class="accordion-header"><h4>About insurance</h4></summary>
-                <div class="accordion-content">
-                    <p>You will need to have insurance in place to use your hackney carriage as a taxi.</p>
-                </div>
-            </details>
+        <h3>Before you renew</h3>
+    <h4>About insurance</h4>
+    <p>You will need to have insurance in place to use your hackney carriage as a taxi.</p>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Hackney carriage vehicle insurance</h4></summary>
-                <div class="accordion-content"></div>
-            </details>
+    <h4>Hackney carriage vehicle insurance</h4>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>About right to work</h4></summary>
-                <div class="accordion-content">
-                    <p>To renew your hackney carriage vehicle licence, you must prove to us that you are legally allowed to work in the UK.</p>
-                </div>
-            </details>
+    <h4>About right to work</h4>
+    <p>To renew your hackney carriage vehicle licence, you must prove to us that you are legally allowed to work in the UK.</p>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Right to work in the UK for hackney carriage vehicles</h4></summary>
-                <div class="accordion-content"></div>
-            </details>
+    <h4>Right to work in the UK for hackney carriage vehicles</h4>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Renew your licence</h4></summary>
-                <div class="accordion-content">
-                    <p>Use our online form to renew your hackney carriage vehicle licence.</p>
-                </div>
-            </details>
+    <h4>Renew your licence</h4>
+    <p>Use our online form to renew your hackney carriage vehicle licence.</p>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Renew your hackney carriage vehicle licence</h4></summary>
-                <div class="accordion-content">
-                    <p>JCHERE no information</p>
-                </div>
-            </details>
-        </div>
-    </details>
+    <h4>Renew your hackney carriage vehicle licence</h4>
+    <p>
+        JCHERE no information
+    </p>
+    <h3>Hackney carriage vehicle insurance</h3>
+    <p>
+        Your hackney carriage must have in place the correct insurance to carry passengers for hire and reward.<br>
+        This is a valid insurance certificate or cover note that tells us that you or a licensed driver, are insured to drive the vehicle and the purposes that it can be used for.<br>
+        We will need to see a copy of the insurance certificate when you make your application. We will check every month to make sure your hackney carriage is insured.
+    </p>
+    <h3>Right to work in the UK for hackney carriage vehicles</h3>
+    <p>You will need to provide us with evidence that you are legally allowed to work in the UK if you are:</p>
+    <ul>
+    <li>applying to become a licensed driver</li>
+    <li>applying to become an operator</li>
+    <li>a hackney carriage or private hire vehicle licence holder</li>
+    </ul>
 
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Hackney carriage vehicle insurance</h3></summary>
-        <div class="accordion-content">
-            <p>
-                Your hackney carriage must have in place the correct insurance to carry passengers for hire and reward.<br>
-                This must be a valid insurance certificate or cover note that shows you, or a licensed driver, are insured to drive the vehicle and the purposes it can be used for.<br><br>
-                We will need to see a copy of the insurance certificate when you make your application. We will check monthly to ensure your hackney carriage is insured.
-            </p>
-        </div>
-    </details>
+    <p>To prove this, we will need to see your original right to work documents in person and take copies of them.
+    This information can be provided when you make your in-person Disclosure and Barring Service application to us.
+    Once we have seen you in person, we will not need to see you again unless you have right to work restrictions.</p>
 
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Right to work in the UK for hackney carriage vehicles</h3></summary>
-        <div class="accordion-content">
-            <p>You will need to provide evidence that you are legally allowed to work in the UK if you are:</p>
-            <ul>
-                <li>Applying to become a licensed driver</li>
-                <li>Applying to become an operator</li>
-                <li>A hackney carriage or private hire vehicle licence holder</li>
-            </ul>
+    <h4>Documents that we accept</h4>
+    <p>You will need to provide one of the documents listed below.</p>
+    <ul>
+    <li>British passport</li>
+    <li>Irish passport</li>
+    <li>document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+    <li>passport from immigration control</li>
+    <li>immigration status document issued by the Home Office, presented with an official document giving your permanent National Insurance (NI) number and your name</li>
+    <li>UK birth certificate, together with an official document giving your permanent NI number and name</li>
+    <li>Channel Islands, Isle of Man or Ireland birth certificate, presented with an official document giving your permanent NI number and name</li>
+    <li>certificate of naturalisation as a British citizen, presented with an official document giving your permanent NI number and your name</li>
+    </ul>
 
-            <p>
-                To prove this, we will need to see your original right to work documents in person and take copies. This can be provided when you make your in-person Disclosure and Barring Service (DBS) application. Once we have seen you in person, we will not need to see you again unless you have right to work restrictions.
-            </p>
+    <h4>Under immigration controls</h4>
+    <p>If you are under immigration controls, then we will only issue a licence for the period that you are entitled to work in the UK.
+    We will need to see one of the documents listed below before we can issue your licence:</p>
+    <ul>
+    <li>current passport</li>
+    <li>document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+    <li>current immigration status document containing a photograph issued by the Home Office</li>
+    </ul>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Documents that we accept</h4></summary>
-                <div class="accordion-content">
-                    <p>You will need to provide one of the documents listed below:</p>
-                    <ul>
-                        <li>British passport</li>
-                        <li>Irish passport</li>
-                        <li>Document from Bailiwick of Jersey, Bailiwick of Guernsey, or the Isle of Man</li>
-                        <li>Passport from immigration control</li>
-                        <li>Immigration status document issued by the Home Office, presented with an official document giving your permanent National Insurance (NI) number and your name</li>
-                        <li>UK birth certificate, together with an official document giving your permanent NI number and name</li>
-                        <li>Channel Islands, Isle of Man, or Ireland birth certificate, presented with an official document giving your permanent NI number and name</li>
-                        <li>Certificate of naturalisation as a British citizen, presented with an official document giving your permanent NI number and your name</li>
-                    </ul>
-                </div>
-            </details>
+    <h4>Right to work is time-limited</h4>
+    <p>Where your right to work in the UK is a time-limited period, we will need to see a:</p>
+    <ul>
+    <li>document or certificate of application (non-digital) issued by the Home Office</li>
+    <li>document from the Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man</li>
+    <li>application Registration Card issued by the Home Office that says you can take employment</li>
+    <li>positive Verification Notice issued by the Home Office Employer Checking Service</li>
+    </ul>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Under immigration controls</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        If you are under immigration controls, we will only issue a licence for the period that you are entitled to work in the UK. We will need to see one of the following documents before we can issue your licence:
-                    </p>
-                    <ul>
-                        <li>Current passport</li>
-                        <li>Document from Bailiwick of Jersey, Bailiwick of Guernsey, or the Isle of Man</li>
-                        <li>Current immigration status document containing a photograph issued by the Home Office</li>
-                    </ul>
-                </div>
-            </details>
+    <h3>Renew your hackney carriage vehicle licence</h3>
+    <h4>About this licence</h4>
+    <p>We will usually contact you when your hackney carriage vehicle licence needs to be renewed. If we do not, please contact us immediately to notify us that your licence is due to expire and requires a test.
+    You should renew your licence in the month that it is due to end. If you miss this deadline, you will have up to one month to renew it.
+    After that date, you will have to apply for a new hackney carriage vehicle licence which will need to meet the vehicle age specification.</p>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Right to work is time-limited</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        Where your right to work in the UK is for a time-limited period, we will need to see one of the following:
-                    </p>
-                    <ul>
-                        <li>Document or certificate of application (non-digital) issued by the Home Office</li>
-                        <li>Document from the Bailiwick of Jersey, Bailiwick of Guernsey, or the Isle of Man</li>
-                        <li>Application Registration Card issued by the Home Office that says you can take employment</li>
-                        <li>Positive Verification Notice issued by the Home Office Employer Checking Service</li>
-                    </ul>
-                </div>
-            </details>
-        </div>
-    </details>
+    <h4>Cost</h4>
+    <p>Renewing your hackney carriage hire vehicle licence costs £212.
+    You will need to pay this online when you complete your application form.</p>
 
-    <details class="accordion">
-        <summary class="accordion-header"><h3>Renew your hackney carriage vehicle licence</h3></summary>
-        <div class="accordion-content">
-            <details class="accordion">
-                <summary class="accordion-header"><h4>About this licence</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        We will usually contact you when your hackney carriage vehicle licence needs to be renewed. If we do not, please contact us immediately to notify us that your licence is due to expire and requires a test.<br>
-                        You should renew your licence in the month that it is due to end. If you miss this deadline, you will have up to one month to renew it. After that date, you will have to apply for a new hackney carriage vehicle licence, which will need to meet the vehicle age specification.
-                    </p>
-                </div>
-            </details>
+    <h4>Information you will need</h4>
+    <p>You will need to upload the following information when you renew your licence:</p>
+    <ul>
+    <li>valid insurance certificate</li>
+    <li>compliance certificate</li>
+    </ul>
 
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Cost</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        Renewing your hackney carriage vehicle licence costs £212. You will need to pay this online when you complete your application form.
-                    </p>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Information you will need</h4></summary>
-                <div class="accordion-content">
-                    <p>You will need to upload the following information when you renew your licence:</p>
-                    <ul>
-                        <li>Valid insurance certificate</li>
-                        <li>Compliance certificate</li>
-                    </ul>
-                </div>
-            </details>
-
-            <details class="accordion">
-                <summary class="accordion-header"><h4>Issuing the licence</h4></summary>
-                <div class="accordion-content">
-                    <p>
-                        We will process your application within 5 working days of receipt if it is complete. We will email you a PDF version of your licence and send your plate and a paper version of the licence by post.<br>
-                        If your vehicle has been for a test within the last week of the month, we will give you the option to collect it so that you have the plate in time for the end of the month. If you are not available to collect your plate, you can send someone to collect it on your behalf.
-                    </p>
-                </div>
-            </details>
-        </div>
-    </details>
+    <h4>Issuing the licence</h4>
+    <p>We will process your application within 5 working days of receipt if it is complete.
+    We will email you a PDF version of your licence and send your plate and a paper version of the licence by post.
+    If your vehicle has been for a test within the last week of the month, we will give you the option to collect it so that you have the plate in time for the end of the month.
+    If you are not available to collect your plate, you can send someone to collect it on your behalf.</p>
     `,
     { buttonLabel: "", formName: ""},
     { typeKey: "switchboard_transferred_to_service" },
