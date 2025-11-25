@@ -131,6 +131,7 @@ const allotmentsContact = new ContentPSaR(
   If we do not receive a reply, we will assume that the individual is no 
   longer interested, and they will be removed from the waiting list.
 </p>
+
 <p>
   It is important for applicants to check their email inboxes carefully — 
   including spam and junk folders — to ensure they do not miss this communication. 
@@ -139,10 +140,39 @@ const allotmentsContact = new ContentPSaR(
   should be directed to the manager via 
   <a href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a>.
 </p>
+
+<p>
+  You can check the current waiting list information using the allotment map tool.  
+  The map shows the number of plots on each site, any vacancies, and how many people 
+  are currently on the waiting list. This can help you understand demand and expected 
+  waiting times before applying.
+  <br />
+  <a href="https://sheffieldcc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=227576827bf94eba994b9b64f907477b" 
+     target="_blank" 
+     rel="noopener noreferrer">
+     View allotment waiting list map
+  </a>
+</p>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to allotment waiting list map"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20waiting%20list%20map\`
+  "
+>
+  Send link to check the waiting list map
+</button>
+
 <p>
   For more information on Sheffield allotments, consult the official policy and regulations document:
   <br />
-  <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" 
+     target="_blank" 
+     rel="noopener noreferrer">
     Allotment Policy and Regulations
   </a>
 </p>
@@ -166,20 +196,23 @@ const allotmentsContact = new ContentPSaR(
   {
     type: "Information",
     keywords: [
-  "Allotments",
-  "Alotments",
-  "Allotment",
-  "Alotment",
-  "Waiting List",
-  "Waitng List",
-  "Annual Refresh",
-  "Anual Refresh",
-  "Renewal",
-  "Renewel"
-],
+      "Allotments",
+      "Alotments",
+      "Allotment",
+      "Alotment",
+      "Waiting List",
+      "Waitng List",
+      "Annual Refresh",
+      "Anual Refresh",
+      "Renewal",
+      "Renewel",
+      "Map",
+      "Waiting List Map",
+      "Vacancies"
+    ],
     categories: ["Parks and Countryside"]
   },
-  { date: "18/11/2025", name: "Andy Walker" }
+  { date: "25/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsApplying = new ContentPSaR(
@@ -577,6 +610,29 @@ const allotmentsDogs = new ContentPSaR(
       <li>Dogs must not foul paths or plots.</li>
       <li>Dogs cannot be left unattended on plots.</li>
     </ul>
+
+    <p>
+      For more information on Sheffield allotments, consult the official policy and regulations document:
+      <br />
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        Allotment Policy and Regulations
+      </a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Sheffield allotment policy and regulations"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+      "
+    >
+      Send link to review the policy and regulations
+    </button>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -584,20 +640,20 @@ const allotmentsDogs = new ContentPSaR(
   {
     type: "Information",
     keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Dogs",
-  "Doggs",
-  "Dgos",
-  "Rules",
-  "Rule",
-  "Ruels",
-  "Ruless"
-],
+      "Allotments",
+      "Allotment",
+      "Alotment",
+      "Dogs",
+      "Doggs",
+      "Dgos",
+      "Rules",
+      "Rule",
+      "Ruels",
+      "Ruless"
+    ],
     categories: ["Parks and Countryside"]
   },
-  { date: "18/11/2025", name: "Andy Walker" }
+  { date: "25/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsWater = new ContentPSaR(
@@ -614,6 +670,29 @@ const allotmentsWater = new ContentPSaR(
       <li>Water must not be used to fill paddling pools or wash vehicles.</li>
       <li>Supplies are metered; excessive use may result in increased charges.</li>
     </ul>
+
+    <p>
+      For more information on Sheffield allotments, consult the official policy and regulations document:
+      <br />
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        Allotment Policy and Regulations
+      </a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Sheffield allotment policy and regulations"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+      "
+    >
+      Send link to review the policy and regulations
+    </button>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -621,23 +700,23 @@ const allotmentsWater = new ContentPSaR(
   {
     type: "Information",
     keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Water",
-  "Watter",
-  "Watr",
-  "Use of Water",
-  "Use of Watter",
-  "Use of Watr",
-  "Rules",
-  "Rule",
-  "Ruels",
-  "Ruless"
-],
+      "Allotments",
+      "Allotment",
+      "Alotment",
+      "Water",
+      "Watter",
+      "Watr",
+      "Use of Water",
+      "Use of Watter",
+      "Use of Watr",
+      "Rules",
+      "Rule",
+      "Ruels",
+      "Ruless"
+    ],
     categories: ["Parks and Countryside"]
   },
-  { date: "18/11/2025", name: "Andy Walker" }
+  { date: "25/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsKeys = new ContentPSaR(
@@ -703,10 +782,34 @@ const allotmentsDrones = new ContentPSaR(
   "allotmentsDrones",
   "Drones",
   "Drone use policy on allotment sites",
-  `<p>
-  Drones are not permitted on any Sheffield City Council estate, 
-  including allotments, without prior written permission. 
-  </p>
+  `
+    <p>
+      Drones are not permitted on any Sheffield City Council estate, 
+      including allotments, without prior written permission.
+    </p>
+
+    <p>
+      For more information on Sheffield allotments, consult the official policy and regulations document:
+      <br />
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        Allotment Policy and Regulations
+      </a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Sheffield allotment policy and regulations"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+      "
+    >
+      Send link to review the policy and regulations
+    </button>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -714,25 +817,25 @@ const allotmentsDrones = new ContentPSaR(
   {
     type: "Information",
     keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Drones",
-  "Drone",
-  "Drons",
-  "Dronz",
-  "Model Aircraft",
-  "Modell Aircraft",
-  "Flying Drones",
-  "Fliying Drones",
-  "Rules",
-  "Rule",
-  "Ruels",
-  "Ruless"
-],
+      "Allotments",
+      "Allotment",
+      "Alotment",
+      "Drones",
+      "Drone",
+      "Drons",
+      "Dronz",
+      "Model Aircraft",
+      "Modell Aircraft",
+      "Flying Drones",
+      "Fliying Drones",
+      "Rules",
+      "Rule",
+      "Ruels",
+      "Ruless"
+    ],
     categories: ["Parks and Countryside"]
   },
-  { date: "18/11/2025", name: "Andy Walker" }
+  { date: "25/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsTrees = new ContentPSaR(
@@ -1130,14 +1233,28 @@ const allotmentsEnquiries = new ContentPSaR(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <p>
-      You are not allowed to keep livestock such as cockerels, ducks, pigs, or horses.  
-      You may, subject to permission, keep bees, up to 6 hens, 2 rabbits, or pigeons (on selected sites).  
-      All birds must be registered with DEFRA:
-      <a href="https://www.gov.uk/guidance/register-as-a-keeper-of-less-than-50-poultry-or-other-captive-birds" target="_blank" rel="noopener noreferrer">
-        Register as a keeper of less than 50 poultry or other captive birds
-      </a>.
-    </p>
+  <p>
+    You are not allowed to keep livestock such as cockerels, ducks, pigs, or horses.  
+    You may, subject to permission, keep bees, up to 6 hens, 2 rabbits, or pigeons (on selected sites).  
+    All birds must be registered with DEFRA:
+    <a href="https://www.gov.uk/guidance/register-as-a-keeper-of-less-than-50-poultry-or-other-captive-birds" 
+      target="_blank" 
+      rel="noopener noreferrer">
+      Register as a keeper of less than 50 poultry or other captive birds
+    </a>.
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="Send link to DEFRA bird registration"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=DEFRA%20bird%20registration\`
+    "
+  >
+    Send link to DEFRA bird registration
+  </button>
     <p>
       Pigeons are only allowed on certain sites. Include this in your 
       application notes. Permission must be approved separately and is not automatic. 
@@ -1175,7 +1292,7 @@ const allotmentsEnquiries = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "18/11/2025", name: "Andy Walker" }
+  { date: "25/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsReportIssue = new ContentPSaR(
