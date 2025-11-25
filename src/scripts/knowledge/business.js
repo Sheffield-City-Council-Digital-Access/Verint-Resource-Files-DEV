@@ -1035,178 +1035,79 @@ const medicalNeeds = new ContentBusiness(
     "Medical Exemptions",
     "Medical Needs",
     `
-        <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Medical Exemptions under Equality Act 2010</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-            <p>Under the Equality Act 2010, the law says that you should carry passengers with assistance dogs and passengers in wheelchairs in your taxi. You should provide these passengers with the help they need, and not charge them extra for doing so.</p>
-            <p>You might have a medical reason why you cannot do these things, and this is known as a medical exemption. There are two types of medical exemption:</p>
-            <ul>
-                <li>Section 166 exemption certificate (passengers in wheelchairs).</li>
-                <li>Section 169 exemption certificate (assistance dogs in taxis).</li>
-            </ul>
+    <p>Under the Equality Act 2010, the law says that you should carry passengers with assistance dogs and passengers in wheelchairs in your taxi. You should provide these passengers with the help they need, and not charge them extra for doing so.</p>
+    <p>You might have a medical reason why you cannot do these things, and this is known as a medical exemption. There are two types of medical exemption:</p>
+    <ul>
+    <li>Section 166 exemption certificate (passengers in wheelchairs)</li>
+    <li>Section 169 exemption certificate (assistance dogs in taxis)</li>
+    </ul>
 
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>About certificates</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <details class="accordion">
-                        <summary class="accordion-header">
-                            <h4>Section 166 exemption certificate</h4>
-                            <div class="accordion-icon"></div>
-                        </summary>
-                        <div class="accordion-content">
-                            <p>You can apply for this certificate if your physical health makes it impossible or very difficult to help passengers in wheelchairs. If you have been successful, you will be given a certificate which you must display in your taxi and present on request.</p>
-                        </div>
-                    </details>
+    <h4>About certificates</h4>
 
-                    <details class="accordion">
-                        <summary class="accordion-header">
-                            <h4>Section 169 exemption certificate</h4>
-                            <div class="accordion-icon"></div>
-                        </summary>
-                        <div class="accordion-content">
-                            <p>You can apply for this certificate if you have a medical condition caused by being near dogs. If you have been successful, you will be given a certificate. You must display this in your taxi or present it if you are asked to.</p>
-                        </div>
-                    </details>
+    <h4>Section 166 exemption certificate</h4>
+    <p>You can apply for this certificate if your physical health makes it impossible or very difficult to help passengers in wheelchairs. If you have been successful, you will be given a certificate which you must display in your taxi and present on request.</p>
 
-                    <details class="accordion">
-                        <summary class="accordion-header">
-                            <h4>How to apply</h4>
-                            <div class="accordion-icon"></div>
-                        </summary>
-                        <div class="accordion-content">
-                            <p>To apply for these certificates, you will need to complete a medical assessment. This will provide us with evidence from your doctor, or a doctor that has been approved by us, that you cannot carry passengers with:</p>
-                            <ul>
-                                <li>Wheelchairs.</li>
-                                <li>Assistance dogs.</li>
-                            </ul>
-                        </div>
-                    </details>
-                </div>
-            </details>
-        </div>
-    </details>
+    <h4>Section 169 exemption certificate</h4>
+    <p>You can apply for this certificate if you have a medical condition caused by being near dogs. If you have been successful, you will be given a certificate. You must display this in your taxi or present it if you are asked to.</p>
 
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Sheffield City Council Taxi Driver Medicals</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-            <p>The City Council deals with two types of applicants:</p>
-            <ul>
-                <li>Those already licensed who are applying to renew their licence. Under current policy they will be asked to complete and pass a medical at 45, then every 5 years until they reach 65, then annually whilst they continue to be licensed. There is currently no age restriction on Hackney Carriage and Private Hire drivers.</li>
-                <li>New applicants who are applying for their first licence in Sheffield. These applicants may have licences with other authorities, but the current policy of Sheffield City Council is that an applicant has to undertake all tests required by The Licensing Sub Committee, whether they are licensed elsewhere or not, and this includes the medical examination.</li>
-            </ul>
+    <h4>How to apply</h4>
+    <p>To apply for these certificates, you will need to complete a medical assessment. This will provide us with evidence from your doctor, or a doctor that has been approved by us, that you cannot carry passengers with:</p>
+    <ul>
+    <li>wheelchairs</li>
+    <li>assistance dogs</li>
+    </ul>
 
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>Procedures for booking medicals</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>A medical assessment may be carried out by the individual’s own GP, or a GP approved by the Licensing Authority. A list of approved practitioners will be provided by the Authority. Contact details of the GPs and costs of the medicals are made available on the list.</p>
-                </div>
-            </details>
+    <h3>Sheffield City Council Taxi Driver Medicals</h3>
+    <p>The City Council deals with two types of applicants:</p>
+    <ul>
+    <li>those already licensed who are applying to renew their licence. Under current policy they will be asked to complete and pass a medical at 45, then every 5 years until they reach 65 then annually whilst they continue to be licensed. There is currently no age restriction on Hackney Carriage and Private Hire drivers.</li>
+    <li>new applicants who are applying for their first licence in Sheffield. These applicants may have licences with other Authorities, but the current policy of Sheffield City Council is that an applicant has to undertake all tests required by The Licensing Sub Committee, whether they are licensed elsewhere or not, and this includes the medical examination.</li>
+    </ul>
 
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>On arrival at the medical examination</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p><strong>Existing License Holders</strong></p>
-                    <ul>
-                        <li>Will have been provided with a medical pack, including a DVLA Group 2 medical form and guidance, and a Certificate of Medical Fitness.</li>
-                        <li>Identification – They must supply you with their Photo Card DVLA drivers’ licence, or if not, photo ID such as a passport. They will also present their current Private Hire and Hackney Carriage drivers identification badge. The number on the badge should match the number on the medical (D4) form.</li>
-                    </ul>
+    <h4>Procedures for booking medicals</h4>
+    <p>A medical assessment may be carried out by the individual’s own GP, or a GP approved by the Licensing Authority. A list of approved practitioners will be provided by the Authority. Contact details of the GPs and costs of the medicals are made available on the list.</p>
 
-                    <p><strong>New Applicants</strong></p>
-                    <ul>
-                        <li>Again, the applicant will have been supplied with their Sheffield City Council medical pack.</li>
-                        <li>Identification – They must provide a Photo Card drivers licence, a second form of identification which must be either a passport or other form of photo ID, and a bank statement or utility bill.</li>
-                    </ul>
+    <h4>On arrival at the medical examination</h4>
 
-                    <p>If there are any doubts about the identification of any attendee – either an existing licence holder or new applicant – then the medical should be aborted until those matters are resolved.</p>
-                </div>
-            </details>
+    <p><strong>Existing License Holders</strong></p>
+    <ul>
+    <li>will have been provided with a medical pack, including a DVLA Group 2 medical form and guidance, and a Certificate of Medical Fitness.</li>
+    <li>Identification – They must supply you with their Photo Card DVLA drivers’ licence, or if not, photo ID such as a passport. They will also present their current Private Hire and Hackney Carriage drivers identification badge. The number on the Badge should match the number on the medical (D4) form.</li>
+    </ul>
 
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>If the driver passes the medical - new or renewal</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>If the driver passes the medical, you must, upon completion, inform him/her of this and (in the case of existing license holders) return to him/her the copies of previous medicals. You should then supply them with the completed passed medical form and Certificate of Medical Fitness. If this is not at the point or time of the medical, you must make the appropriate arrangements with the applicant to supply that information.</p>
-                    <p>Please be aware that any renewal applicant cannot receive their licence until they have presented the Certificate of Medical Fitness to the Licensing Service and must allow 3 working days for the administration process.</p>
-                </div>
-            </details>
+    <p><strong>New Applicants</strong></p>
+    <ul>
+    <li>Again, the applicant will have been supplied with their Sheffield City Council medical pack.</li>
+    <li>Identification – They must provide a Photo Card drivers licence, a second form of identification which must be either a passport or other form of photo id, and a bank statement or utility bill.</li>
+    </ul>
 
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>If the driver fails the medical - new or renewal</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>If the driver fails the medical, you are required to explain the reason for failure to the applicant. You must retain the medical notes and failure certificate, and these must then be returned securely to the Licensing Service within 7 working days of the date of the medical.</p>
-                </div>
-            </details>
+    <p>If there are any doubts about the identification of ANY attendee – either an existing licence holder or new applicant - then the medical should be aborted until those matters are resolved.</p>
 
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>If you need further information</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>In some circumstances you may require information from other sources such as consultants or the driver’s own GP. In such cases, you should retain the notes of the applicant, and inform him/her of the reasons for this. You must then inform the applicant of what is required and what he/she or you will have to do next.</p>
-                    <p>We have informed applicants that in these cases, the doctor who undertook the medical and retained the papers will be the doctor that has to deal with their particular case, and that they will have to return to you to be passed medically fit.</p>
-                </div>
-            </details>
+    <h4>If the driver passes the medical - new or renewal</h4>
+    <p>If the driver passes the medical, you must, upon completion, inform him/her of this and (in the case of existing license holders) return to him/her the copies of previous medicals. You should then supply them with the completed passed medical form and Certificate of Medical Fitness. If this is not at the point or time of the medical, you must make the appropriate arrangements with the applicant to supply that information.</p>
+    <p>Please be aware that any renewal applicant cannot receive their licence until they have presented the Certificate of Medical Fitness to the Licensing Service and must allow 3 working days for the administration process.</p>
 
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>Recommendations as to term of licence</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>The current Council Policy is to issue drivers with a licence for either 1, 2 or 3 years. You can make recommendations to the Council on the length of the licence granted, up to the maximum of 3 years. You may see some underlying health issues that you believe require monitoring, and you may wish to inform the Council that, in your opinion, the applicant should be granted a shorter than normal term licence and that at the end of that licence he/she should be medically examined again.</p>
-                    <p>If a doctor makes a recommendation that a driver should be medically examined again within a period of time that is outside the current policies, the licence issued will reflect that, e.g., the doctor may state that the driver should be seen in 12 months, thus a licence would be issued only for a 12-month period.</p>
-                    <p>Doctors may also recommend that the applicant or driver be medically examined again outside of the normal referral policy, e.g., that a driver is seen prior to the birthday trigger points as set out by the policy or every three years rather than five-year periods, etc. This would be recorded by the Licensing Service and would not alter unless a doctor, after a full medical examination, determined that the driver could be placed back on the normal referrals’ procedure and timescales.</p>
-                </div>
-            </details>
+    <h4>If the driver fails the medical - new or renewal</h4>
+    <p>If the driver fails the medical, you are required to explain the reason for failure to the applicant. You must retain the medical notes and failure certificate, and these must then be returned securely to the Licensing Service, within 7 working days of the date of the medical.</p>
 
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>Rights to appeal decisions</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>As with all legislative matters, with any judgement made on an application to the Council there are some avenues for applicants to appeal the decision of the Council. Your decision as a doctor becomes the Council decision as the reasons for refusal.</p>
-                    <p>The applicant may challenge your findings, and if they wish to do so they may firstly ask for their application to be referred to the Licensing Sub Committee for consideration. If the Sub Committee decide to revoke or refuse to grant or renew their licence the applicant has a right of appeal to a Magistrates Court.</p>
-                    <p>If an applicant asks for a Sub Committee Referral, or appeals a decision of the Council taken as recommended by you as the doctor, then you will be required to supply the Council with written statements explaining the decision. This is at no extra cost to Sheffield City Council.</p>
-                    <p>Please be aware that on very rare occasions doctors have been summoned to Court or the Licensing Sub Committee to give evidence in person. This is usually at the request of the appellant or their legal representatives. In winning cases at the Magistrates Court, costs can be applied for. Invariably, full costs are never awarded to the Council and appellants usually only have to pay a contribution to the costs. Any attendance cost you incur for such instances will have to be recovered through the legal system and not from Sheffield City Council.</p>
-                </div>
-            </details>
+    <h4>If you need further information</h4>
+    <p>In some circumstances you may require information from other sources such as consultants or the drivers own GP. In such cases, you should retain the notes of the applicant, and inform him/her of the reasons for this. You must then inform the applicant of what is required and what he/she or you will have to do next.</p>
+    <p>We have informed applicants that in these cases, the doctor who undertook the medical and retained the papers will be the doctor that has to deal with their particular case, and that they will have to return to you to be passed medically fit.</p>
 
-            <details class="accordion">
-                <summary class="accordion-header">
-                    <h4>On completion of the medical examination</h4>
-                    <div class="accordion-icon"></div>
-                </summary>
-                <div class="accordion-content">
-                    <p>You are required to inform the Licensing Service of the attendance of the applicant, and the outcome of the medical within 48 hours of the date of the medical. Email communication will be accepted.</p>
-                    <p>This does not override the need to supply the full written details of a failed medical within 7 working days of the date of the test.</p>
-                </div>
-            </details>
+    <h4>Recommendations as to term of licence</h4>
+    <p>The current Council Policy is to issue drivers with a licence for either 1, 2 or 3 years. You can make recommendations to the Council on the length of the Licence granted, up to the maximum of 3 years. You may see some underlying health issues that you believe require monitoring, and you may wish to inform the Council that, in your opinion, the applicant should be granted a shorter than normal term licence and that at the end of that licence he/she should be medically examined again.</p>
+    <p>If a doctor makes a recommendation that a driver should be medically examined again within a period of time that is outside the current policies, the licence issued will reflect that, e.g. the doctor may state that the driver should be seen in 12 months, thus a licence would be issued only for a 12 month period.</p>
+    <p>Doctors may also recommend that the applicant or driver be medically examined again outside of the normal referral policy, e.g., that a driver is seen prior to the birthday trigger points as set out by the policy or every three years rather than five years periods etc. This would be recorded by the Licensing Service and would not alter unless a doctor, after a full medical examination, determined that the driver could be placed back on the normal referrals’ procedure and timescales.</p>
 
-        </div>
-    </details>
+    <h4>Rights to appeal decisions</h4>
+    <p>As with all legislative matters, with any judgement made on an application to the Council there are some avenues for applicants to appeal the Decision of the Council. Your decision as a doctor becomes the Council decision as the reasons for refusal.</p>
+    <p>The applicant may challenge your findings, and if they wish to do so they may firstly ask for their application to be referred to the Licensing Sub Committee for consideration. If the Sub Committee decide to revoke or refuse to grant or renew their licence the applicant has a right of appeal to a Magistrates Court.</p>
+    <p>If an applicant asks for a Sub Committee Referral, or appeals a decision of the Council taken as recommended by you as the doctor, then you will be required to supply the Council with written statements explaining the decision. This is at no extra cost to Sheffield City Council.</p>
+    <p>Please be aware that on very rare occasions doctors have been summoned to Court or the Licensing Sub Committee to give evidence in person. This is usually at the request of the appellant or their legal representatives. In winning cases at the Magistrates Court, costs can be applied for. Invariably, full costs are never awarded to the Council and appellants usually only have to pay a contribution to the costs. Any attendance cost you incur for such instances will have to be recovered through the legal system and not from Sheffield City Council.</p>
 
+    <h4>On completion of the medical examination</h4>
+    <p>You are required to inform the Licensing Service of the attendance of the applicant, and the outcome of the medical within 48 hours of the date of the medical. Email communication will be accepted.</p>
+    <p>This does not override the need to supply the full written details of a failed medical within 7 working days of the date of the test.</p>
 
     `,
     { buttonLabel: "", formName: ""},
