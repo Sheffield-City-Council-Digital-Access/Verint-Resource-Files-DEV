@@ -1500,52 +1500,134 @@ const reportTreePark = new ContentPSaR(
   "Report an issue with a tree",
   "Information on how the Council manages trees, what issues we can respond to, and when you may take action yourself.",
   `
-  <h3>Trees causing shade, overhang or other nuisance issues</h3>
   <p>
-  Under normal circumstances the Council will not undertake pruning or 
-  removal work in direct response to natural or seasonal growth including:
-  </p>
-  <ul>
-    <li>Trees blocking light and causing shading</li>
-    <li>Overhanging branches (except those touching houses)</li>
-    <li>Branches obstructing telephone wires</li>
-    <li>Blocking or obstruction of views</li>
-    <li>Trees interfering with TV or satellite reception</li>
-    <li>Falling leaves, flowers, fruit or honeydew drip</li>
-    <li>Blocked gutters</li>
-    <li>Bird droppings</li>
-    <li>Seeds from trees that have germinated in gardens</li>
-    <li>Moss caused by shade</li>
-  </ul>
-  <h3>Pruning branches that overhang your property</h3>
-  <p>
-  Under Common Law you may prune branches back to your boundary line, 
-  but you should first seek legal advice and check with your local planning 
-  authority whether the tree is protected by a Tree Preservation Order or 
-  in a Conservation Area. Consider whether the work may make the tree unsafe 
-  and inform the Council before carrying out work.
+    Below you will find information on how the Council manages trees on parks and 
+    open spaces, including when we may carry out work, when you may take action 
+    yourself, and what to do in an emergency.
   </p>
 
-  <h3>Trees on council land touching houses</h3>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Trees causing shade, overhang or other nuisance issues</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Under normal circumstances the Council will not undertake pruning or 
+        removal work in direct response to natural or seasonal growth including:
+      </p>
+      <ul>
+        <li>Trees blocking light and causing shading</li>
+        <li>Overhanging branches (except those touching houses)</li>
+        <li>Branches obstructing telephone wires</li>
+        <li>Blocking or obstruction of views</li>
+        <li>Trees interfering with TV or satellite reception</li>
+        <li>Falling leaves, flowers, fruit or honeydew drip</li>
+        <li>Blocked gutters</li>
+        <li>Bird droppings</li>
+        <li>Seeds from trees that have germinated in gardens</li>
+        <li>Moss caused by shade</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Pruning branches that overhang your property</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Under Common Law you may prune branches back to your boundary line, 
+        but you should first seek legal advice and check with your local 
+        planning authority whether the tree is protected by a Tree Preservation 
+        Order or in a Conservation Area. Consider whether the work may make the 
+        tree unsafe and inform the Council before carrying out work.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Trees on council land touching houses</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Where council trees are physically touching a building, the Council will 
+        carry out pruning work before damage occurs.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>When the Council may carry out work</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>An assessment identifies a hazard such as significant decay or imminent failure</li>
+        <li>There is proven tree-root subsidence damage</li>
+        <li>Branches are touching buildings</li>
+        <li>Safety or sightlines are compromised (road signs, lighting, etc.)</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Vandalism and illegal felling</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Reports of vandalism will be investigated. Where vandalism affects new trees, 
+        we may plant larger replacements, involve local communities, or post notices 
+        to discourage further incidents.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Emergency situations with trees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+      <h4>What is considered an emergency?</h4>
+      <ul>
+        <li>A tree or limb has fallen from council land onto a property.</li>
+        <li>A tree or limb has fallen and is blocking the road or a public footpath.</li>
+        <li>A tree or limb has fallen and is blocking access in or out of a resident’s property.</li>
+        <li>A tree or limb is about to fall (its failure is considered imminent).</li>
+        <li>A limb or branch has broken and is likely to cause injury or property damage.</li>
+      </ul>
+      <h4>What is not considered an emergency?</h4>
+      <ul>
+        <li>Trees moving significantly in the wind (unless the root plate is shifting or lifting).</li>
+        <li>Trees considered dangerous only due to size or proximity.</li>
+      </ul>
+      <h4>Who to contact</h4>
+      <p><strong>During normal office hours (Mon–Fri, 08:00–17:00):</strong><br>
+        Email the Tree Team: 
+        <a href="mailto:treeteam@sheffield.gov.uk">treeteam@sheffield.gov.uk</a><br>
+        CC the Tree Manager: 
+        <a href="mailto:jerry.gunton@sheffield.gov.uk">jerry.gunton@sheffield.gov.uk</a><br>
+        Please mark emails as <strong>“emergency work”</strong>.
+      </p>
+      <p>
+      <strong>During out-of-hours (Mon–Fri 17:00–08:00, weekends and bank holidays):</strong><br>
+        Phone the Operations Control Room: 
+        <a href="tel:08001164743">0800 1164743</a><br>
+        Amey provides emergency tree cover under contract reference 
+        <strong>NC25-018/CS016</strong>.
+      </p>
+    </div>
+  </details>
   <p>
-  Where council trees are physically touching a building, the Council will 
-  carry out pruning work before damage occurs.
-  </p>
-  <h3>When the Council may carry out work</h3>
-  <ul>
-    <li>An assessment identifies a hazard such as significant decay or imminent failure</li>
-    <li>There is proven tree-root subsidence damage</li>
-    <li>Branches are touching buildings</li>
-    <li>Safety or sightlines are compromised (road signs, lighting, etc.)</li>
-  </ul>
-  <h3>Vandalism and illegal felling</h3>
-  <p>
-  Reports of vandalism will be investigated. Where vandalism affects new trees, 
-  we may plant larger replacements, involve local communities, or post notices 
-  to discourage further incidents.
-  </p>
-  <p>
-  To report an issue, use the <strong>Report tree</strong> button below.
+    To report an issue, use the <strong>Report tree</strong> button below.
   </p>
   `,
   { buttonLabel: "Report tree", formName: "report_tree" },
