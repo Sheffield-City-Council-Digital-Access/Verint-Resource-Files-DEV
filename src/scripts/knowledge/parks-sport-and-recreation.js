@@ -1520,7 +1520,7 @@ const allotmentsEmergencies = new ContentPSaR(
   <li>Off-road bikes (on applicable sites)</li>
 </ul>
   `,
-  { buttonLabel: "Report an issue", formName: "report_allotment_issue" },
+  { buttonLabel: "Report allotment", formName: "report_allotment_issue" },
   { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
