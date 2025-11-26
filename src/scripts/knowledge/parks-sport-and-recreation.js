@@ -1465,6 +1465,84 @@ const allotmentsTreeManagement = new ContentPSaR(
   { date: "17/11/2025", name: "Andy Walker" }
 );
 
+const allotmentsEmergencies = new ContentPSaR(
+  "allotmentsEmergencies",
+  "Allotment Emergencies",
+  "What to do in an emergency on an allotment site",
+  `
+<p>
+  Below is guidance on how allotment-related emergencies and urgent issues 
+  are managed both during and outside of normal operating hours.
+</p>
+
+<h3>Out-of-hours (4pm – 9am)</h3>
+<p>
+  For any urgent issue outside normal office hours, please call:
+  <br>
+  <a href="tel:01142734542">0114 2734542</a>
+  <br><br>
+  This number can also be reached via the general Council line: 
+  <a href="tel:01142500500">0114 2500500</a>.
+  All calls will be triaged by the out-of-hours service.
+</p>
+
+<h3>During office hours (9am – 4pm)</h3>
+<p>
+  If the situation presents an <strong>immediate risk to life</strong> (e.g. major fire, 
+  significant flooding, or danger to household occupants), please call 
+  the emergency services on <a href="tel:999">999</a>.
+  <br><br>
+  After calling emergency services, please email details to 
+  <a href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a>.
+</p>
+
+<h3>Issues that may require an emergency response</h3>
+<p>
+  During office hours, the only allotment issues that may require an emergency response are:
+</p>
+<ul>
+  <li>A tenant locked on plot due to a lock or gate failure.</li>
+  <li>A built structure at immediate risk of failure that could cause serious injury.</li>
+</ul>
+<p>
+  These will be managed through CRM and forwarded to 
+  <a href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a>.
+</p>
+
+<h3>Non-emergency issues</h3>
+<p>
+  All other issues should be reported using the 
+  <strong>Report an Issue</strong> button below. Examples include:
+</p>
+<ul>
+  <li>Water leaks</li>
+  <li>Small fires on plots</li>
+  <li>Off-road bikes (on applicable sites)</li>
+</ul>
+  `,
+  { buttonLabel: "Report an issue", formName: "report_allotment_issue" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Allotments",
+      "Allotment",
+      "Alotment",
+      "Emergency",
+      "Emergencies",
+      "Urgent",
+      "Out of hours",
+      "Locked in allotment",
+      "Allotment fire",
+      "Allotment water leak",
+      "Allotment danger"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "26/11/2025", name: "Andy Walker" }
+);
+
 const allotmentsParks = new MenuPSaR(
   "allotments",
   "Allotments",
@@ -1487,7 +1565,8 @@ const allotmentsParks = new MenuPSaR(
     allotmentsKeyDeposit,
     allotmentsEnquiries,
     allotmentsReportIssue,
-    allotmentsTreeManagement
+    allotmentsTreeManagement,
+    allotmentsEmergencies
   ]
 );
 
@@ -1620,7 +1699,7 @@ const reportTreePark = new ContentPSaR(
       <p>
       <strong>During out-of-hours (Mon–Fri 17:00–08:00, weekends and bank holidays):</strong><br>
         Phone the Operations Control Room: 
-        <a href="tel:08001164743">0800 1164743</a><br>
+        <a href="tel:08001164743">0800 116 4743</a><br>
         Amey provides emergency tree cover under contract reference 
         <strong>NC25-018/CS016</strong>.
       </p>
