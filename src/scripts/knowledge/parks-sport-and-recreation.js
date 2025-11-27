@@ -1475,17 +1475,6 @@ const allotmentsEmergencies = new ContentPSaR(
   are managed both during and outside of normal operating hours.
 </p>
 
-<h3>Out-of-hours (4pm – 9am)</h3>
-<p>
-  For any urgent issue outside normal office hours, please call:
-  <br>
-  <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142734542')">0114 2734542</a>
-  <br><br>
-  This number can also be reached via the general Council line:
-  <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142500500')">0114 2500500</a>.
-  All calls will be triaged by the out-of-hours service.
-</p>
-
 <h3>Issues that may require an emergency response</h3>
 <p>
   During office hours, the only allotment issues that may require an emergency response are:
