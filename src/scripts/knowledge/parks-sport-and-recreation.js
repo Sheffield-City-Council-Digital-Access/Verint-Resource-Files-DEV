@@ -1498,6 +1498,15 @@ const allotmentsEmergencies = new ContentPSaR(
   <li>Small fires on plots</li>
   <li>Off-road bikes (on applicable sites)</li>
 </ul>
+<p>
+  For any urgent issue outside normal office hours, please warm transfer the call:
+  <br>
+  <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142734542')">0114 2734542</a>
+  <br><br>
+  This number can also be reached via the general Council line:
+  <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142734567')">0114 2734567</a>.
+  All calls will be triaged by the out-of-hours service.
+</p>
   `,
   { buttonLabel: "Report allotment", formName: "report_allotment_issue" },
   { typeKey: "" },
@@ -1672,6 +1681,13 @@ const reportTreePark = new ContentPSaR(
       <strong>During normal office hours (Mon–Fri, 08:00–17:00):</strong><br>
       Please use the <strong>Report tree</strong> button below and select <strong>“Hazard”</strong> from the options.  
       This will automatically mark the case as urgent and send it to the correct contacts for immediate review.
+      </p>
+      <p>
+      <strong>During out-of-hours (Mon–Fri 17:00–08:00, weekends and bank holidays):</strong><br>
+      Transfer the call to the Operations Control Room: 
+      <a href="#" class="telephoneNumber" onclick="copyToClipboard('08001164743')">0800 1164743</a><br>
+      Amey provides emergency tree cover under contract reference 
+      <strong>NC25-018/CS016</strong>.
       </p>
     </div>
   </details>
