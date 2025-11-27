@@ -569,7 +569,7 @@ const allotmentsFires = new ContentPSaR(
       Send link to review the policy and regulations
     </button>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report smoke", formName: "report_smoke" },
   { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
