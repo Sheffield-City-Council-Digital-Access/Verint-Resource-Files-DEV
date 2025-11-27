@@ -600,7 +600,7 @@ const allotmentsFires = new ContentPSaR(
 
 const allotmentsDogs = new ContentPSaR(
   "allotmentsDogs",
-  "Dogs on allotments",
+  "Dogs on Allotments",
   "Rules for dogs on allotment site",
   `
     <ul>
@@ -1479,18 +1479,19 @@ const allotmentsEmergencies = new ContentPSaR(
 <p>
   For any urgent issue outside normal office hours, please call:
   <br>
-  <a href="tel:01142734542">0114 2734542</a>
+  <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142734542')">0114 2734542</a>
   <br><br>
-  This number can also be reached via the general Council line: 
-  <a href="tel:01142500500">0114 2500500</a>.
+  This number can also be reached via the general Council line:
+  <a href="#" class="telephoneNumber" onclick="copyToClipboard('01142500500')">0114 2500500</a>.
   All calls will be triaged by the out-of-hours service.
 </p>
 
 <h3>During office hours (9am – 4pm)</h3>
 <p>
-  If the situation presents an <strong>immediate risk to life</strong> (e.g. major fire, 
-  significant flooding, or danger to household occupants), please call 
-  the emergency services on <a href="tel:999">999</a>.
+  If the situation presents an <strong>immediate risk to life</strong> 
+  (e.g. major fire, significant flooding, or danger to household occupants), 
+  please call the emergency services on 
+  <a href="#" class="telephoneNumber" onclick="copyToClipboard('999')">999</a>.
   <br><br>
   After calling emergency services, please email details to 
   <a href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a>.
@@ -1576,7 +1577,7 @@ const allotmentsParks = new MenuPSaR(
 
 const reportTreePark = new ContentPSaR(
   "reportTreePark",
-  "Report an issue with a tree",
+  "Report an Issue with a Tree",
   "Information on how the Council manages trees, what issues we can respond to, and when you may take action yourself.",
   `
   <p>
@@ -1697,9 +1698,9 @@ const reportTreePark = new ContentPSaR(
         Please mark emails as <strong>“emergency work”</strong>.
       </p>
       <p>
-      <strong>During out-of-hours (Mon–Fri 17:00–08:00, weekends and bank holidays):</strong><br>
+        <strong>During out-of-hours (Mon–Fri 17:00–08:00, weekends and bank holidays):</strong><br>
         Phone the Operations Control Room: 
-        <a href="tel:08001164743">0800 116 4743</a><br>
+        <a href="#" class="telephoneNumber" onclick="copyToClipboard('08001164743')">0800 1164743</a><br>
         Amey provides emergency tree cover under contract reference 
         <strong>NC25-018/CS016</strong>.
       </p>
