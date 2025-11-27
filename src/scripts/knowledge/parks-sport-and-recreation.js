@@ -1509,7 +1509,7 @@ const allotmentsEmergencies = new ContentPSaR(
 </p>
   `,
   { buttonLabel: "Report allotment", formName: "report_allotment_issue" },
-  { typeKey: "" },
+  { typeKey: "allotments_transferred_to_service" },
   { typeKey: "allotments_information_provided" },
   {
     type: "Information",
@@ -1696,8 +1696,8 @@ const reportTreePark = new ContentPSaR(
   </p>
   `,
   { buttonLabel: "Report tree", formName: "report_tree" },
-  { typeKey: "" },
   { typeKey: "allotments_information_provided" },
+  { typeKey: "allotments_transferred_to_service" },
   {
     type: "Report",
     keywords: [
