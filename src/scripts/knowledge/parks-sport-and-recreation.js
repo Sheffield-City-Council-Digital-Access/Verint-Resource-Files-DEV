@@ -1491,7 +1491,7 @@ const allotmentsEmergencies = new ContentPSaR(
 <h3>Non-emergency issues</h3>
 <p>
   All other issues should be reported using the 
-  <strong>Report an Issue</strong> button below. Examples include:
+  <strong>Report allotment</strong> button below. Examples include:
 </p>
 <ul>
   <li>Water leaks</li>
