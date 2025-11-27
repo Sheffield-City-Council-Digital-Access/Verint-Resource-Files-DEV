@@ -123,14 +123,56 @@ const allotmentsContact = new ContentPSaR(
   "Information on the yearly waiting list refresh for allotments",
   `
 <p>
-  Every October, applicants are asked to confirm they wish to remain on the list. 
-  Failure to respond may result in removal. If you wish to appeal, please contact 
+  In order to ensure our records are accurate and up to date, we 
+  conduct an annual refresh of the allotment waiting list around October. 
+  This involves contacting individuals who have been on the waiting list 
+  for more than a year to confirm whether they still wish to retain their place.
+  We request a response to this communication to verify continued interest. 
+  If we do not receive a reply, we will assume that the individual is no 
+  longer interested, and they will be removed from the waiting list.
+</p>
+
+<p>
+  It is important for applicants to check their email inboxes carefully — 
+  including spam and junk folders — to ensure they do not miss this communication. 
+  Many enquiries relate to individuals not realising an email had been sent. 
+  If you believe you missed the email and did not respond in time, appeals 
+  should be directed to the manager via 
   <a href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a>.
 </p>
+
+<p>
+  You can check the current waiting list information using the allotment map tool.  
+  The map shows the number of plots on each site, any vacancies, and how many people 
+  are currently on the waiting list. This can help you understand demand and expected 
+  waiting times before applying.
+  <br />
+  <a href="https://sheffieldcc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=227576827bf94eba994b9b64f907477b" 
+     target="_blank" 
+     rel="noopener noreferrer">
+     View allotment waiting list map
+  </a>
+</p>
+
+<button
+  type="button"
+  class="dform_widget email-btn dform_widget_type_button"
+  aria-label="Send link to allotment waiting list map"
+  onclick="
+    window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+        KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+    }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20waiting%20list%20map\`
+  "
+>
+  Send link to check the waiting list map
+</button>
+
 <p>
   For more information on Sheffield allotments, consult the official policy and regulations document:
   <br />
-  <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf" 
+     target="_blank" 
+     rel="noopener noreferrer">
     Allotment Policy and Regulations
   </a>
 </p>
@@ -154,20 +196,23 @@ const allotmentsContact = new ContentPSaR(
   {
     type: "Information",
     keywords: [
-  "Allotments",
-  "Alotments",
-  "Allotment",
-  "Alotment",
-  "Waiting List",
-  "Waitng List",
-  "Annual Refresh",
-  "Anual Refresh",
-  "Renewal",
-  "Renewel"
-],
+      "Allotments",
+      "Alotments",
+      "Allotment",
+      "Alotment",
+      "Waiting List",
+      "Waitng List",
+      "Annual Refresh",
+      "Anual Refresh",
+      "Renewal",
+      "Renewel",
+      "Map",
+      "Waiting List Map",
+      "Vacancies"
+    ],
     categories: ["Parks and Countryside"]
   },
-  { date: "18/11/2025", name: "Andy Walker" }
+  { date: "25/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsApplying = new ContentPSaR(
@@ -524,7 +569,7 @@ const allotmentsFires = new ContentPSaR(
       Send link to review the policy and regulations
     </button>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report smoke", formName: "report_smoke" },
   { typeKey: "" },
   { typeKey: "allotments_information_provided" },
   {
@@ -555,7 +600,7 @@ const allotmentsFires = new ContentPSaR(
 
 const allotmentsDogs = new ContentPSaR(
   "allotmentsDogs",
-  "Dogs on allotments",
+  "Dogs on Allotments",
   "Rules for dogs on allotment site",
   `
     <ul>
@@ -565,6 +610,29 @@ const allotmentsDogs = new ContentPSaR(
       <li>Dogs must not foul paths or plots.</li>
       <li>Dogs cannot be left unattended on plots.</li>
     </ul>
+
+    <p>
+      For more information on Sheffield allotments, consult the official policy and regulations document:
+      <br />
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        Allotment Policy and Regulations
+      </a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Sheffield allotment policy and regulations"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+      "
+    >
+      Send link to review the policy and regulations
+    </button>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -572,20 +640,20 @@ const allotmentsDogs = new ContentPSaR(
   {
     type: "Information",
     keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Dogs",
-  "Doggs",
-  "Dgos",
-  "Rules",
-  "Rule",
-  "Ruels",
-  "Ruless"
-],
+      "Allotments",
+      "Allotment",
+      "Alotment",
+      "Dogs",
+      "Doggs",
+      "Dgos",
+      "Rules",
+      "Rule",
+      "Ruels",
+      "Ruless"
+    ],
     categories: ["Parks and Countryside"]
   },
-  { date: "18/11/2025", name: "Andy Walker" }
+  { date: "25/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsWater = new ContentPSaR(
@@ -602,6 +670,29 @@ const allotmentsWater = new ContentPSaR(
       <li>Water must not be used to fill paddling pools or wash vehicles.</li>
       <li>Supplies are metered; excessive use may result in increased charges.</li>
     </ul>
+
+    <p>
+      For more information on Sheffield allotments, consult the official policy and regulations document:
+      <br />
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        Allotment Policy and Regulations
+      </a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Sheffield allotment policy and regulations"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+      "
+    >
+      Send link to review the policy and regulations
+    </button>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -609,23 +700,23 @@ const allotmentsWater = new ContentPSaR(
   {
     type: "Information",
     keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Water",
-  "Watter",
-  "Watr",
-  "Use of Water",
-  "Use of Watter",
-  "Use of Watr",
-  "Rules",
-  "Rule",
-  "Ruels",
-  "Ruless"
-],
+      "Allotments",
+      "Allotment",
+      "Alotment",
+      "Water",
+      "Watter",
+      "Watr",
+      "Use of Water",
+      "Use of Watter",
+      "Use of Watr",
+      "Rules",
+      "Rule",
+      "Ruels",
+      "Ruless"
+    ],
     categories: ["Parks and Countryside"]
   },
-  { date: "18/11/2025", name: "Andy Walker" }
+  { date: "25/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsKeys = new ContentPSaR(
@@ -691,10 +782,34 @@ const allotmentsDrones = new ContentPSaR(
   "allotmentsDrones",
   "Drones",
   "Drone use policy on allotment sites",
-  `<p>
-  Drones are not permitted on any Sheffield City Council estate, 
-  including allotments, without prior written permission. 
-  </p>
+  `
+    <p>
+      Drones are not permitted on any Sheffield City Council estate, 
+      including allotments, without prior written permission.
+    </p>
+
+    <p>
+      For more information on Sheffield allotments, consult the official policy and regulations document:
+      <br />
+      <a href="https://www.sheffield.gov.uk/sites/default/files/2025-07/2025_allotment_policy_and_regulations.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        Allotment Policy and Regulations
+      </a>
+    </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="Send link to Sheffield allotment policy and regulations"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Allotment%20policy%20and%20regulations\`
+      "
+    >
+      Send link to review the policy and regulations
+    </button>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -702,25 +817,25 @@ const allotmentsDrones = new ContentPSaR(
   {
     type: "Information",
     keywords: [
-  "Allotments",
-  "Allotment",
-  "Alotment",
-  "Drones",
-  "Drone",
-  "Drons",
-  "Dronz",
-  "Model Aircraft",
-  "Modell Aircraft",
-  "Flying Drones",
-  "Fliying Drones",
-  "Rules",
-  "Rule",
-  "Ruels",
-  "Ruless"
-],
+      "Allotments",
+      "Allotment",
+      "Alotment",
+      "Drones",
+      "Drone",
+      "Drons",
+      "Dronz",
+      "Model Aircraft",
+      "Modell Aircraft",
+      "Flying Drones",
+      "Fliying Drones",
+      "Rules",
+      "Rule",
+      "Ruels",
+      "Ruless"
+    ],
     categories: ["Parks and Countryside"]
   },
-  { date: "18/11/2025", name: "Andy Walker" }
+  { date: "25/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsTrees = new ContentPSaR(
@@ -1118,14 +1233,28 @@ const allotmentsEnquiries = new ContentPSaR(
     <div class="accordion-icon"></div>
   </summary>
   <div class="accordion-content">
-    <p>
-      You are not allowed to keep livestock such as cockerels, ducks, pigs, or horses.  
-      You may, subject to permission, keep bees, up to 6 hens, 2 rabbits, or pigeons (on selected sites).  
-      All birds must be registered with DEFRA:
-      <a href="https://www.gov.uk/guidance/register-as-a-keeper-of-less-than-50-poultry-or-other-captive-birds" target="_blank" rel="noopener noreferrer">
-        Register as a keeper of less than 50 poultry or other captive birds
-      </a>.
-    </p>
+  <p>
+    You are not allowed to keep livestock such as cockerels, ducks, pigs, or horses.  
+    You may, subject to permission, keep bees, up to 6 hens, 2 rabbits, or pigeons (on selected sites).  
+    All birds must be registered with DEFRA:
+    <a href="https://www.gov.uk/guidance/register-as-a-keeper-of-less-than-50-poultry-or-other-captive-birds" 
+      target="_blank" 
+      rel="noopener noreferrer">
+      Register as a keeper of less than 50 poultry or other captive birds
+    </a>.
+  </p>
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="Send link to DEFRA bird registration"
+    onclick="
+      window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+      }interactionid=\${KDF.getParams().interactionid}&sel_service=DEFRA%20bird%20registration\`
+    "
+  >
+    Send link to DEFRA bird registration
+  </button>
     <p>
       Pigeons are only allowed on certain sites. Include this in your 
       application notes. Permission must be approved separately and is not automatic. 
@@ -1163,7 +1292,7 @@ const allotmentsEnquiries = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "18/11/2025", name: "Andy Walker" }
+  { date: "25/11/2025", name: "Andy Walker" }
 );
 
 const allotmentsReportIssue = new ContentPSaR(
@@ -1202,6 +1331,13 @@ const allotmentsReportIssue = new ContentPSaR(
       site,report it. Providing details such as the 
       location and type of waste will help us investigate and take 
       appropriate action to remove the debris and prevent further issues.
+    </p>
+    <h4>Reporting Anti-Social Behaviour</h4>
+    <p>
+      For issues involving anti-social behaviour in or around an allotment site — 
+      including vandalism, theft, arson, harassment, or abuse. Tenants and witnesses 
+      should be advised to report the matter directly to South Yorkshire Police 
+      by calling 101 so the appropriate action can be taken.
     </p>
     <h4>Maintenance and Responsibilities</h4>
     <p>
@@ -1329,6 +1465,63 @@ const allotmentsTreeManagement = new ContentPSaR(
   { date: "17/11/2025", name: "Andy Walker" }
 );
 
+const allotmentsEmergencies = new ContentPSaR(
+  "allotmentsEmergencies",
+  "Allotment Emergencies",
+  "What to do in an emergency on an allotment site",
+  `
+<p>
+  Below is guidance on how allotment-related emergencies and urgent issues 
+  are managed both during and outside of normal operating hours.
+</p>
+
+<h3>Issues that may require an emergency response</h3>
+<p>
+  During office hours, the only allotment issues that may require an emergency response are:
+</p>
+<ul>
+  <li>A tenant locked on plot due to a lock or gate failure.</li>
+  <li>A built structure at immediate risk of failure that could cause serious injury.</li>
+</ul>
+<p>
+  These will be managed through CRM and forwarded to 
+  <a href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a>.
+</p>
+
+<h3>Non-emergency issues</h3>
+<p>
+  All other issues should be reported using the 
+  <strong>Report allotment</strong> button below. Examples include:
+</p>
+<ul>
+  <li>Water leaks</li>
+  <li>Small fires on plots</li>
+  <li>Off-road bikes (on applicable sites)</li>
+</ul>
+  `,
+  { buttonLabel: "Report allotment", formName: "report_allotment_issue" },
+  { typeKey: "" },
+  { typeKey: "allotments_information_provided" },
+  {
+    type: "Information",
+    keywords: [
+      "Allotments",
+      "Allotment",
+      "Alotment",
+      "Emergency",
+      "Emergencies",
+      "Urgent",
+      "Out of hours",
+      "Locked in allotment",
+      "Allotment fire",
+      "Allotment water leak",
+      "Allotment danger"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "26/11/2025", name: "Andy Walker" }
+);
+
 const allotmentsParks = new MenuPSaR(
   "allotments",
   "Allotments",
@@ -1351,7 +1544,8 @@ const allotmentsParks = new MenuPSaR(
     allotmentsKeyDeposit,
     allotmentsEnquiries,
     allotmentsReportIssue,
-    allotmentsTreeManagement
+    allotmentsTreeManagement,
+    allotmentsEmergencies
   ]
 );
 
@@ -1361,55 +1555,128 @@ const allotmentsParks = new MenuPSaR(
 
 const reportTreePark = new ContentPSaR(
   "reportTreePark",
-  "Report an issue with a tree",
+  "Report an Issue with a Tree",
   "Information on how the Council manages trees, what issues we can respond to, and when you may take action yourself.",
   `
-  <h3>Trees causing shade, overhang or other nuisance issues</h3>
   <p>
-  Under normal circumstances the Council will not undertake pruning or 
-  removal work in direct response to natural or seasonal growth including:
-  </p>
-  <ul>
-    <li>Trees blocking light and causing shading</li>
-    <li>Overhanging branches (except those touching houses)</li>
-    <li>Branches obstructing telephone wires</li>
-    <li>Blocking or obstruction of views</li>
-    <li>Trees interfering with TV or satellite reception</li>
-    <li>Falling leaves, flowers, fruit or honeydew drip</li>
-    <li>Blocked gutters</li>
-    <li>Bird droppings</li>
-    <li>Seeds from trees that have germinated in gardens</li>
-    <li>Moss caused by shade</li>
-  </ul>
-  <h3>Pruning branches that overhang your property</h3>
-  <p>
-  Under Common Law you may prune branches back to your boundary line, 
-  but you should first seek legal advice and check with your local planning 
-  authority whether the tree is protected by a Tree Preservation Order or 
-  in a Conservation Area. Consider whether the work may make the tree unsafe 
-  and inform the Council before carrying out work.
+    Below you will find information on how the Council manages trees on parks and 
+    open spaces, including when we may carry out work, when you may take action 
+    yourself, and what to do in an emergency.
   </p>
 
-  <h3>Trees on council land touching houses</h3>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Trees causing shade, overhang or other nuisance issues</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Under normal circumstances the Council will not undertake pruning or 
+        removal work in direct response to natural or seasonal growth including:
+      </p>
+      <ul>
+        <li>Trees blocking light and causing shading</li>
+        <li>Overhanging branches (except those touching houses)</li>
+        <li>Branches obstructing telephone wires</li>
+        <li>Blocking or obstruction of views</li>
+        <li>Trees interfering with TV or satellite reception</li>
+        <li>Falling leaves, flowers, fruit or honeydew drip</li>
+        <li>Blocked gutters</li>
+        <li>Bird droppings</li>
+        <li>Seeds from trees that have germinated in gardens</li>
+        <li>Moss caused by shade</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Pruning branches that overhang your property</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Under Common Law you may prune branches back to your boundary line, 
+        but you should first seek legal advice and check with your local 
+        planning authority whether the tree is protected by a Tree Preservation 
+        Order or in a Conservation Area. Consider whether the work may make the 
+        tree unsafe and inform the Council before carrying out work.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Trees on council land touching houses</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Where council trees are physically touching a building, the Council will 
+        carry out pruning work before damage occurs.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>When the Council may carry out work</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>An assessment identifies a hazard such as significant decay or imminent failure</li>
+        <li>There is proven tree-root subsidence damage</li>
+        <li>Branches are touching buildings</li>
+        <li>Safety or sightlines are compromised (road signs, lighting, etc.)</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Vandalism and illegal felling</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Reports of vandalism will be investigated. Where vandalism affects new trees, 
+        we may plant larger replacements, involve local communities, or post notices 
+        to discourage further incidents.
+      </p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Emergency situations with trees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
+      <h4>What is considered an emergency?</h4>
+      <ul>
+        <li>A tree or limb has fallen from council land onto a property.</li>
+        <li>A tree or limb has fallen and is blocking the road or a public footpath.</li>
+        <li>A tree or limb has fallen and is blocking access in or out of a resident’s property.</li>
+        <li>A tree or limb is about to fall (its failure is considered imminent).</li>
+        <li>A limb or branch has broken and is likely to cause injury or property damage.</li>
+      </ul>
+      <h4>What is not considered an emergency?</h4>
+      <ul>
+        <li>Trees moving significantly in the wind (unless the root plate is shifting or lifting).</li>
+        <li>Trees considered dangerous only due to size or proximity.</li>
+      </ul>
+      <h4>Who to contact</h4>
+      <p>
+      <strong>During normal office hours (Mon–Fri, 08:00–17:00):</strong><br>
+      Please use the <strong>Report tree</strong> button below and select <strong>“Hazard”</strong> from the options.  
+      This will automatically mark the case as urgent and send it to the correct contacts for immediate review.
+      </p>
+    </div>
+  </details>
   <p>
-  Where council trees are physically touching a building, the Council will 
-  carry out pruning work before damage occurs.
-  </p>
-  <h3>When the Council may carry out work</h3>
-  <ul>
-    <li>An assessment identifies a hazard such as significant decay or imminent failure</li>
-    <li>There is proven tree-root subsidence damage</li>
-    <li>Branches are touching buildings</li>
-    <li>Safety or sightlines are compromised (road signs, lighting, etc.)</li>
-  </ul>
-  <h3>Vandalism and illegal felling</h3>
-  <p>
-  Reports of vandalism will be investigated. Where vandalism affects new trees, 
-  we may plant larger replacements, involve local communities, or post notices 
-  to discourage further incidents.
-  </p>
-  <p>
-  To report an issue, use the <strong>Report tree</strong> button below.
+    To report an issue, use the <strong>Report tree</strong> button below.
   </p>
   `,
   { buttonLabel: "Report tree", formName: "report_tree" },
