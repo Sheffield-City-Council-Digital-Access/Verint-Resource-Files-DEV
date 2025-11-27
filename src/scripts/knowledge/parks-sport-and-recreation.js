@@ -1486,17 +1486,6 @@ const allotmentsEmergencies = new ContentPSaR(
   All calls will be triaged by the out-of-hours service.
 </p>
 
-<h3>During office hours (9am – 4pm)</h3>
-<p>
-  If the situation presents an <strong>immediate risk to life</strong> 
-  (e.g. major fire, significant flooding, or danger to household occupants), 
-  please call the emergency services on 
-  <a href="#" class="telephoneNumber" onclick="copyToClipboard('999')">999</a>.
-  <br><br>
-  After calling emergency services, please email details to 
-  <a href="mailto:pwc.allotments@sheffield.gov.uk">pwc.allotments@sheffield.gov.uk</a>.
-</p>
-
 <h3>Issues that may require an emergency response</h3>
 <p>
   During office hours, the only allotment issues that may require an emergency response are:
@@ -1696,13 +1685,6 @@ const reportTreePark = new ContentPSaR(
         CC the Tree Manager: 
         <a href="mailto:jerry.gunton@sheffield.gov.uk">jerry.gunton@sheffield.gov.uk</a><br>
         Please mark emails as <strong>“emergency work”</strong>.
-      </p>
-      <p>
-        <strong>During out-of-hours (Mon–Fri 17:00–08:00, weekends and bank holidays):</strong><br>
-        Phone the Operations Control Room: 
-        <a href="#" class="telephoneNumber" onclick="copyToClipboard('08001164743')">0800 1164743</a><br>
-        Amey provides emergency tree cover under contract reference 
-        <strong>NC25-018/CS016</strong>.
       </p>
     </div>
   </details>
