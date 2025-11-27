@@ -1668,12 +1668,10 @@ const reportTreePark = new ContentPSaR(
         <li>Trees considered dangerous only due to size or proximity.</li>
       </ul>
       <h4>Who to contact</h4>
-      <p><strong>During normal office hours (Mon–Fri, 08:00–17:00):</strong><br>
-        Email the Tree Team: 
-        <a href="mailto:treeteam@sheffield.gov.uk">treeteam@sheffield.gov.uk</a><br>
-        CC the Tree Manager: 
-        <a href="mailto:jerry.gunton@sheffield.gov.uk">jerry.gunton@sheffield.gov.uk</a><br>
-        Please mark emails as <strong>“emergency work”</strong>.
+      <p>
+      <strong>During normal office hours (Mon–Fri, 08:00–17:00):</strong><br>
+      Please use the <strong>Report tree</strong> button below and select <strong>“Hazard”</strong> from the options.  
+      This will automatically mark the case as urgent and send it to the correct contacts for immediate review.
       </p>
     </div>
   </details>
