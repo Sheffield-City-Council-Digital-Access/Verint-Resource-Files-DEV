@@ -1696,8 +1696,8 @@ const reportTreePark = new ContentPSaR(
   </p>
   `,
   { buttonLabel: "Report tree", formName: "report_tree" },
-  { typeKey: "allotments_information_provided" },
   { typeKey: "allotments_transferred_to_service" },
+  { typeKey: "allotments_information_provided" },
   {
     type: "Report",
     keywords: [
