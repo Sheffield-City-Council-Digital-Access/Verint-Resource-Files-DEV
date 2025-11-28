@@ -1489,7 +1489,7 @@ function handleOnReadyKnowledge() {
         ? `interactionid=${encodeURIComponent(KDF.getParams().interactionid)}&`
         : "";
 
-      window.location.href = `${url}transfered_enquiry?${customerid}${interactionid}&enquiry=${encodeURIComponent(
+      window.location.href = `${url}transfered_enquiry?${customerid}${interactionid}enquiry=${encodeURIComponent(
         enquiryType
       )}&typekey=${encodeURIComponent(transferTypeKey)}`;
     });
@@ -1522,7 +1522,7 @@ function handleOnReadyKnowledge() {
         ? `interactionid=${encodeURIComponent(KDF.getParams().interactionid)}&`
         : "";
 
-      window.location.href = `${url}general_enquiry?${customerid}${interactionid}&enquiry=${encodeURIComponent(
+      window.location.href = `${url}general_enquiry?${customerid}${interactionid}enquiry=${encodeURIComponent(
         enquiryType
       )}&typekey=${encodeURIComponent(finishTypeKey)}`;
     });
