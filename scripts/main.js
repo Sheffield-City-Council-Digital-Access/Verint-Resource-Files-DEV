@@ -6590,67 +6590,6 @@ function populateInfoTable(data, noLetter = false, disabilityIndicator = false, 
   renderPaginatedTable(normalizedData, 'info-table-body', 'info-pagination', infoRowMapper, null);
 }
 
-// function populatePropertyDetailsTable(data) {
-//   if (!document.getElementById('property-table-body')) return;
-
-//   // Define the fields you want to display in order, 
-//   const propertyFields = [
-//     { key: 'ownership', label: 'Ownership' },
-//     { key: 'rightToBuy', label: 'Right To Buy' },
-//     { key: 'occupancyCount', label: 'Occupancy Count' },
-//     { key: 'communalHeating', label: 'Communal Heating' },
-//     { key: 'liveDisrepair', label: 'Live Disrepair' },
-//     { key: 'managementCode', label: 'Management Code' },
-//     { key: 'area', label: 'Area Code' },
-//     { key: 'ward', label: 'Ward Code' }
-//   ];
-
-//   const normalizedData = propertyFields
-//     .map(field => {
-//       let detail = data[field.key];
-//       const type = field.label;
-
-//       if (typeof detail === 'string') {
-//         // Normalize 'true'/'false' strings to 'Yes'/'No'
-//         if (detail.toLowerCase() === 'true') {
-//           detail = 'Yes';
-//         } else if (detail.toLowerCase() === 'false') {
-//           detail = 'No';
-//         } else if (!detail) {
-//           detail = ''; // Set empty/null/undefined strings to an empty string
-//         }
-//       } else if (typeof detail === 'boolean') {
-//         detail = detail ? 'Yes' : 'No';
-//       } else if (detail === null || detail === undefined) {
-//         detail = ''; // Handle null or undefined values
-//       }
-
-//       // Apply Title Case (assuming formatTitleCase is available)
-//       if (field.key === 'ownership' && typeof detail === 'string') {
-//         detail = formatTitleCase(detail);
-//       }
-
-//       return {
-//         type: type,
-//         // Ensure detail is a string for filtering below
-//         detail: String(detail)
-//       };
-//     })
-
-//     .filter(item =>
-//       item.detail !== '' && item.detail.toLowerCase() !== 'no'
-//     );
-
-//   const propertyRowMapper = (item) => {
-//     return `
-//           <td><strong>${item.type}</strong></td>
-//           <td>${item.detail}</td>
-//       `;
-//   };
-
-//   renderPaginatedTable(normalizedData, 'property-table-body', 'property-pagination', propertyRowMapper, null);
-// }
-
 function populatePropertyDetailsTable(data) {
   if (!document.getElementById('property-table-body')) return;
 
@@ -6703,12 +6642,10 @@ function populatePropertyDetailsTable(data) {
   if (data.attributeInformation && Array.isArray(data.attributeInformation)) {
     const attributeData = data.attributeInformation
       .map(attrItem => {
-        // Assuming the relevant text is in the 'attribute' key
         let detail = attrItem.attribute || '';
         
-        // Use 'Property Attribute' or a similar label for the type/label
-        return {
-          type: 'Property Attribute', 
+          return {
+          type: 'Attribute', 
           detail: String(detail)
         };
       })
