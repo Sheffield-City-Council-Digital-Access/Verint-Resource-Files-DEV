@@ -6139,7 +6139,7 @@ function renderProfileDetails(data) {
   propertyTab.addEventListener('click', () => showTab('property-tab'));
   addressTab.addEventListener('click', () => showTab('address-tab'));
 
-  populateInfoTable(data.additionalInformation, data.noLetter, data.disabilityIndicator, data.vulnerabilityIndicator);
+  populateInfoTable(data.concentInformation, data.additionalInformation, data.noLetter, data.disabilityIndicator, data.vulnerabilityIndicator);
   populatePropertyDetailsTable(data);
   populateAddressHistoryTable(data.addressHistory || []);
 }
@@ -6537,14 +6537,20 @@ function renderPaginatedTable(data, tableBodyId, paginationContainerId, rowMappe
 
 // --- POPULATE FUNCTIONS --------------------------------------------------- \\
 
-function populateInfoTable(data, noLetter = false, disabilityIndicator = false, vulnerabilityIndicator = false) {
+function populateInfoTable(consent, data, noLetter = false, disabilityIndicator = false, vulnerabilityIndicator = false) {
   if (!document.getElementById('info-table-body')) return;
+
+  // Get the array consent (Assumes the structure is consent.consentInformation or just the array)
+  let consentInfoArray = Array.isArray(consent.consentInformation)
+    ? consent.consentInformation
+    : (Array.isArray(consent) ? consent : []);
 
   // Get the array data (warnings/risks/awareness)
   let additionalInfoArray = Array.isArray(data.additionalInformation)
     ? data.additionalInformation
-    : (Array.isArray(data) ? data : []); // This line is crucial for getting the array data back
+    : (Array.isArray(data) ? data : []);
 
+  // Normalize the 'data' (additionalInformation) array
   let normalizedData = additionalInfoArray
     .map(item => {
       const type = Object.keys(item)[0];
@@ -6556,6 +6562,22 @@ function populateInfoTable(data, noLetter = false, disabilityIndicator = false, 
     })
     .filter(item => item.type && item.detail);
 
+  // Normalize the 'consent' (consentInformation) array (New Block)
+  let normalizedConsentData = consentInfoArray
+    .map(item => {
+      const type = Object.keys(item)[0];
+      const detail = item[type];
+      return {
+        type: type,
+        detail: detail
+      };
+    })
+    .filter(item => item.type && item.detail);
+
+  // Combine the normalized consent data and existing data
+  normalizedData = [...normalizedConsentData, ...normalizedData];
+
+  // Add the custom indicators if they are 'true'
   if (noLetter === 'true') {
     normalizedData.push({
       type: 'No Letter Indicator',
@@ -6579,6 +6601,7 @@ function populateInfoTable(data, noLetter = false, disabilityIndicator = false, 
 
   const infoRowMapper = (item) => {
     let formattedType = item.type;
+    // Capitalize the first letter of the type
     formattedType = formattedType.charAt(0).toUpperCase() + formattedType.slice(1);
 
     return `
@@ -6587,6 +6610,7 @@ function populateInfoTable(data, noLetter = false, disabilityIndicator = false, 
       `;
   };
 
+  // Ensure 'renderPaginatedTable' is defined elsewhere and handles the combined data
   renderPaginatedTable(normalizedData, 'info-table-body', 'info-pagination', infoRowMapper, null);
 }
 
