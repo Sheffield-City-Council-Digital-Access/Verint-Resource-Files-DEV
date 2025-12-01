@@ -6565,8 +6565,8 @@ function populateInfoTable(consent, data, noLetter = false, disabilityIndicator 
   // Normalize the 'consent' (consentInformation) array (New Block)
   let normalizedConsentData = consentInfoArray
     .map(item => {
-      const type = item[type];
-      const detail = item[detail];
+      const type = 'Authorised Contact';
+      const detail = `${item[type]}: ${item[detail]}`;
       return {
         type: type,
         detail: detail
