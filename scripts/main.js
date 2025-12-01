@@ -6139,7 +6139,7 @@ function renderProfileDetails(data) {
   propertyTab.addEventListener('click', () => showTab('property-tab'));
   addressTab.addEventListener('click', () => showTab('address-tab'));
 
-  populateInfoTable(data.concentInformation, data.additionalInformation, data.noLetter, data.disabilityIndicator, data.vulnerabilityIndicator);
+  populateInfoTable(data.consentInformation, data.additionalInformation, data.noLetter, data.disabilityIndicator, data.vulnerabilityIndicator);
   populatePropertyDetailsTable(data);
   populateAddressHistoryTable(data.addressHistory || []);
 }
