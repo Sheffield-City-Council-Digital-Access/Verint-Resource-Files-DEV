@@ -194,9 +194,9 @@
     background-color: var(--c-greys-white);
   }
   
-  #dform_container .dashboard-container td {
+  /* #dform_container .dashboard-container td {
     white-space: nowrap;
-  }
+  } */
   
   #dform_container .dashboard-container .table-row-item {
     border-top: 1px solid var(--c-core-brand-secondary);
