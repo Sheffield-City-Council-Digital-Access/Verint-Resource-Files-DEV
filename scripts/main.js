@@ -6538,8 +6538,6 @@ function renderPaginatedTable(data, tableBodyId, paginationContainerId, rowMappe
 // --- POPULATE FUNCTIONS --------------------------------------------------- \\
 
 function populateInfoTable(consent, data, noLetter = false, disabilityIndicator = false, vulnerabilityIndicator = false) {
-  console.log('populateInfoTable', consent, data, noLetter, disabilityIndicator, vulnerabilityIndicator)
-  
   if (!document.getElementById('info-table-body')) return;
 
   // Get the array consent (Assumes the structure is consent.consentInformation or just the array)
@@ -6567,8 +6565,8 @@ function populateInfoTable(consent, data, noLetter = false, disabilityIndicator 
   // Normalize the 'consent' (consentInformation) array (New Block)
   let normalizedConsentData = consentInfoArray
     .map(item => {
-      const type = Object.keys(item)[0];
-      const detail = item[type];
+      const type = item[type];
+      const detail = item[detail];
       return {
         type: type,
         detail: detail
