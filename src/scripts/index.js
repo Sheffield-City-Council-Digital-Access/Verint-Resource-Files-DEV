@@ -903,99 +903,165 @@ function handleOnReadyEvent(_, kdf) {
     checkAddressHasBeenSet();
   });
 
-  function checkAddressHasBeenSet(action = "next page") {
+  function checkAddressHasBeenSet(action = "next") {
     const currentPageId = getCurrentPageId();
-    const fullAddress = document.querySelector(
-      `#${currentPageId} input[data-customalias="fullAddress"]`
-    );
-    const fullAddressHasValue = KDF.getVal(fullAddress.name) ? true : false;
-    const siteName = document.querySelector(
-      `#${currentPageId} input[data-customalias="siteName"]`
-    );
-    const siteCode = document.querySelector(
-      `#${currentPageId} input[data-customalias="siteCode"]`
-    );
-    if (fullAddressHasValue) {
-      if (siteName && siteCode) {
-        const siteNameHasValue = KDF.getVal(siteName.name) ? true : false;
-        const siteCodeHasValue = KDF.getVal(siteCode.name) ? true : false;
-        const validSiteCode = acceptGMSites
-          ? true
-          : KDF.getVal(siteCode.name).startsWith("344")
-            ? true
-            : false;
-        if (siteNameHasValue && siteCodeHasValue && validSiteCode) {
-          if (action === "submit") {
-            KDF.gotoPage("complete", true, true, false);
-          } else {
-            KDF.gotoNextPage();
-          }
-        } else {
-          const errorMessage = acceptGMSites
-            ? "Select a location inside the Sheffield area"
-            : "Slecte a public highway inside the Sheffield area";
-          $("#map_container").addClass("map_container_error");
-          if ($("#map_error").length == "0") {
-            $("#dform_widget_html_ahtm_map_container").prepend(
-              `<div id="map_error" class="dform_validationMessage" style="display: block;">${errorMessage}</div>`
-            );
-          }
-          KDF.setVal("ahtm_map_location_error", errorMessage);
-          KDF.showWidget("ahtm_map_location_error");
-        }
+  
+    // Helper: Get element by custom alias
+    const getInput = (alias) =>
+      document.querySelector(
+        `#${currentPageId} input[data-customalias="${alias}"]`
+      );
+  
+    // Helper: Show error on selected address span
+    function showSelectedAddressError(message) {
+      const selectedAddressSpan = document.querySelector(
+        `#${currentPageId} #selected-address`
+      );
+      if (selectedAddressSpan) {
+        selectedAddressSpan.textContent = message;
+        selectedAddressSpan.classList.add("dform_validationMessage");
+        selectedAddressSpan.style.display = "block";
+      }
+      $("#map_container").addClass("map_container_error");
+    }
+  
+    // Helper: Show error on field
+    function showFieldError(container, field, message) {
+      const validationMessage = container?.querySelector(
+        ".dform_validationMessage"
+      );
+      if (validationMessage) {
+        validationMessage.style.display = "block";
+        validationMessage.textContent = message;
+      }
+      field?.classList.add("dform_fielderror");
+    }
+  
+    // Helper: Go to next or complete page
+    function goNextOrComplete() {
+      if (action === "submit") {
+        KDF.gotoPage("complete", true, true, false);
       } else {
-        if (action === "submit") {
-          KDF.gotoPage("complete", true, true, false);
-        } else {
-          KDF.gotoNextPage();
+        KDF.gotoNextPage();
+      }
+    }
+  
+    function clearPartialAddressSearch() {
+      const searchAgainButton = document.querySelector(`#${getCurrentPageId()} .search-again-btn`);
+      if (searchAgainButton) {
+        const isVisible = searchAgainButton.offsetWidth > 0 &&
+          searchAgainButton.offsetHeight > 0 &&
+          window.getComputedStyle(searchAgainButton).visibility !== 'hidden';
+        if (isVisible) {
+          searchAgainButton.click();
         }
       }
-    } else {
-      const isMapContainerVisible = $("#map_container").is(":visible");
-      if (isMapContainerVisible) {
-        const errorMessage = acceptGMSites
-          ? "Select a location inside the Sheffield area"
-          : "Slecte a public highway inside the Sheffield area";
-        $("#map_container").addClass("map_container_error");
-        if ($("#map_error").length == "0") {
-          $("#dform_widget_html_ahtm_map_container").prepend(
-            `<div id="map_error" class="dform_validationMessage" style="display: block;">${errorMessage}</div>`
-          );
-        }
-        KDF.setVal("ahtm_map_location_error", errorMessage);
-        KDF.showWidget("ahtm_map_location_error");
-      } else {
-        const searchResult = document.querySelector(
-          `#${currentPageId} select[data-customalias="searchResult"]`
-        );
-        const isSearchResultVisible = $(`#${searchResult.id}`).is(":visible");
-        if (isSearchResultVisible) {
-          document.querySelector(
-            `div[data-name="${searchResult.name}"] .dform_validationMessage`
-          ).style.display = "block";
-        } else {
-          const postcode = document.querySelector(
-            `#${currentPageId} input[data-customalias="postcode"]`
-          );
-          const postcodeHasValue = KDF.getVal(postcode.name) ? true : false;
-          if (postcodeHasValue) {
-            const findButton = document.querySelector(
-              `#${currentPageId} .find-btn`
-            );
-            if (findButton) {
-              findButton.click();
-            } else {
-              document.querySelector(
-                `div[data-name="${postcode.name}"] .dform_validationMessage`
-              ).style.display = "block";
-            }
-            findButton.click();
-          } else {
-            document.querySelector(
-              `div[data-name="${postcode.name}"] .dform_validationMessage`
-            ).style.display = "block";
+    }
+  
+    // Address Section
+    function handleAddressSection() {
+      const fullAddress = getInput("fullAddress");
+      const fullAddressHasValue = fullAddress && KDF.getVal(fullAddress.name);
+  
+      const streetName = getInput("streetName");
+      const usrn = getInput("usrn");
+  
+      if (fullAddressHasValue) {
+        if (streetName && usrn) {
+          const streetNameValue = KDF.getVal(streetName.name);
+          const usrnValue = KDF.getVal(usrn.name);
+          const validUsrn = acceptGMSites
+            ? true
+            : usrnValue && usrnValue.startsWith("344");
+  
+          if (streetNameValue && usrnValue && validUsrn) {
+            const siteName = getInput("siteName");
+            if (siteName) KDF.setVal(siteName.name, streetNameValue);
+            const siteCode = getInput("siteCode");
+            if (siteCode) KDF.setVal(siteCode.name, usrnValue);
           }
+  
+          goNextOrComplete();
+        } else {
+          goNextOrComplete();
         }
+        return true; // Address section handled
+      }
+      return false; // Move to next section
+    }
+  
+    // Map Section
+    function handleMapSection() {
+      const mapElement = document.querySelector(
+        `#${currentPageId} .map-container`
+      );
+      const detailsElement = mapElement?.querySelector(".details-accordion");
+  
+      if (mapElement && detailsElement && detailsElement.hasAttribute("open")) {
+        const siteName = getInput("siteName");
+        const siteCode = getInput("siteCode");
+        const validUsrn = acceptGMSites
+          ? true
+          : siteCode && siteCode.startsWith("344");
+  
+        if (siteName && siteCode && validUsrn) {
+          clearPartialAddressSearch();
+          goNextOrComplete();
+          return true; // Map section handled
+        } else {
+          const errorMessage = acceptGMSites
+            ? defaultSelectedAddressMessage
+            : "Choose a location on the public highway";
+          showSelectedAddressError(errorMessage);
+          return true; // Map section handled
+        }
+      } else {
+        return false; // Move to next section
+      }
+    }
+  
+    // Geo Section
+    function handleGeoSection() {
+      const searchResult = document.querySelector(
+        `#${currentPageId} select[data-customalias="searchResult"]`
+      );
+      const isSearchResultVisible =
+        searchResult && searchResult.offsetParent !== null;
+  
+      if (isSearchResultVisible) {
+        const searchResultContainer = searchResult.closest(".dform_widget_field");
+        const selectedValue = searchResult.value;
+        let message = "Select the address";
+  
+        if (selectedValue !== "" && selectedValue !== "Please select...") {
+          message = "Click use this address";
+        }
+        showFieldError(searchResultContainer, searchResult, message);
+      } else {
+        const postcode = getInput("postcode");
+        const postcodeContainer = postcode?.closest(".dform_widget_field");
+        const isPostcodeRequired =
+          postcodeContainer?.classList.contains("dform_required") ||
+          postcode?.hasAttribute("required");
+        const postcodeHasValue = postcode && KDF.getVal(postcode.name);
+        let message = "Enter the postcode";
+  
+        if (postcodeHasValue) {
+          message = "Click find address";
+        }
+  
+        if (!isPostcodeRequired && !postcodeHasValue) {
+          clearPartialAddressSearch();
+          goNextOrComplete();
+        } else {
+          showFieldError(postcodeContainer, postcode, message);
+        }
+      }
+    }
+  
+    if (!handleMapSection()) {
+      if (!handleAddressSection()) {
+        handleGeoSection();
       }
     }
   }
