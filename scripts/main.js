@@ -3706,8 +3706,8 @@ function checkAddressHasBeenSet(action = "next") {
     const detailsElement = mapElement?.querySelector(".details-accordion");
 
     if (mapElement && detailsElement && detailsElement.hasAttribute("open")) {
-      const siteName = KDF.getVal(getInput("siteName"));
-      const siteCode = KDF.getVal(getInput("siteCode"));
+      const siteName = KDF.getVal(getInput("siteName").name);
+      const siteCode = KDF.getVal(getInput("siteCode").name);
       const validUsrn = acceptGMSites
         ? true
         : siteCode && siteCode.startsWith("344");
