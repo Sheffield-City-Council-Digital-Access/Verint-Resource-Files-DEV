@@ -3672,6 +3672,7 @@ function checkAddressHasBeenSet(action = "next") {
 
     const streetName = getInput("streetName");
     const usrn = getInput("usrn");
+    console.log('handleAddressSection', streetName, usrn)
 
     if (fullAddressHasValue) {
       if (streetName && usrn) {
@@ -3681,7 +3682,7 @@ function checkAddressHasBeenSet(action = "next") {
           ? true
           : usrnValue && usrnValue.startsWith("344");
 
-        if (streetNameValue && usrnValue && validUsrn) {
+        if (&& usrnValue && validUsrn) {
           const siteName = getInput("siteName");
           if (siteName) KDF.setVal(siteName.name, streetNameValue);
           const siteCode = getInput("siteCode");
