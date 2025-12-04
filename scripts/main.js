@@ -3682,7 +3682,7 @@ function checkAddressHasBeenSet(action = "next") {
           ? true
           : usrnValue && usrnValue.startsWith("344");
 
-        if (&& usrnValue && validUsrn) {
+        if (streetNameValue && usrnValue && validUsrn) {
           const siteName = getInput("siteName");
           if (siteName) KDF.setVal(siteName.name, streetNameValue);
           const siteCode = getInput("siteCode");
