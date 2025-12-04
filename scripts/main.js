@@ -1950,17 +1950,17 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       postcode: postcode ? postcode.toUpperCase() : "",
     };
 
-    const fullAddressDisplay = buildAddressMarkup(addressDataForDisplay);
-    let selectedAddressContainer = document.querySelector(
-      `#${currentPageId} .selected-address-container`
-    );
-    if (selectedAddressContainer) {
-      selectedAddressContainer.innerHTML = fullAddressDisplay;
-      selectedAddressContainer = selectedAddressContainer.id.replace(
-        "dform_widget_html_",
-        ""
-      );
-    }
+    // const fullAddressDisplay = buildAddressMarkup(addressDataForDisplay);
+    // let selectedAddressContainer = document.querySelector(
+    //   `#${currentPageId} .selected-address-container`
+    // );
+    // if (selectedAddressContainer) {
+    //   selectedAddressContainer.innerHTML = fullAddressDisplay;
+    //   selectedAddressContainer = selectedAddressContainer.id.replace(
+    //     "dform_widget_html_",
+    //     ""
+    //   );
+    // }
 
     if (addressSelectionSection) {
       addressSelectionSection.classList.add("dform_fieldsuccess");
