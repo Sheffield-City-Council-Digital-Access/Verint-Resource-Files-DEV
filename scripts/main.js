@@ -2062,7 +2062,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       { name: setAddressButton, display: "hide" },
       { name: selectedAddressContainer, display: "show" },
       { name: manualAddressElement, display: "hide" },
-      { name: findOnMapElement, display: "hide" },
+      { name: findOnMapElement, display: action === "retrieve-location-from-coordinates" ? "show" : "hide" },
     ]);
   }
 
