@@ -942,7 +942,8 @@ function handleOnReadyEvent(_, kdf) {
           //     latitude: latitude.toString()
           //   }
           // );
-          plotLocationOnMap(longitude.toString(), latitude.toString())
+          plotLocationOnMap(-1.458642,53.375419)
+          // plotLocationOnMap(longitude.toString(), latitude.toString())
         },
         function (error) {
           const errorMessage =
