@@ -924,132 +924,14 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE FIND CURRENT LOCATION CLICK --------------------------------- \\
 
-  // --- Utility functions for trigonometric calculations ---
-  const toRad = (degrees) => degrees * (Math.PI / 180);
-  const toDeg = (radians) => radians * (180 / Math.PI);
-
-  /**
-   * Converts WGS84 (Lat/Lon) to OSGB36 (Easting/Northing).
-   * @param {number} latWGS84 - Latitude in degrees (WGS84).
-   * @param {number} lonWGS84 - Longitude in degrees (WGS84).
-   * @returns {{easting: number, northing: number}} OSGB36 coordinates.
-   */
-  function wgs84ToOsgb36(latWGS84, lonWGS84) {
-    // Define Ellipsoid and Datum Parameters
-
-    // Airy 1830 (OSGB36) Ellipsoid Parameters
-    const a = 6377563.396;   // Semi-major axis (m)
-    const b = 6356256.910;   // Semi-minor axis (m)
-    const f = (a - b) / a;   // Flattening
-    const e2 = f * (2 - f);  // Eccentricity squared (e^2)
-
-    // OSGB36 Datum (Helmert Transformation) Parameters (WGS84 to OSGB36)
-    const tx = -446.448;
-    const ty = 125.710;
-    const tz = -542.008;
-    const rx = toRad(-0.000000001097222);
-    const ry = toRad(-0.00000000216766);
-    const rz = toRad(-0.00000000000271);
-    const s = -0.0000204894; // Scale factor adjustment
-
-    // GRS80 (WGS84) Ellipsoid Parameters
-    const aWGS84 = 6378137.0;
-    const fWGS84 = 1 / 298.257222101;
-    const e2WGS84 = fWGS84 * (2 - fWGS84);
-
-    // Convert WGS84 Lat/Lon (φ, λ) to WGS84 Cartesian (x, y, z)
-    const lat = toRad(latWGS84);
-    const lon = toRad(lonWGS84);
-    const H = 0; // Height above ellipsoid is zero
-
-    const vWGS84 = aWGS84 / Math.sqrt(1 - e2WGS84 * Math.pow(Math.sin(lat), 2));
-
-    const xWGS84 = (vWGS84 + H) * Math.cos(lat) * Math.cos(lon);
-    const yWGS84 = (vWGS84 + H) * Math.cos(lat) * Math.sin(lon);
-    const zWGS84 = ((vWGS84 * (1 - e2WGS84)) + H) * Math.sin(lat);
-
-    // Apply Helmert Transform to get OSGB36 Cartesian (x', y', z')
-    const xOSGB = tx + (1 + s) * (xWGS84 + rz * yWGS84 - ry * zWGS84);
-    const yOSGB = ty + (1 + s) * (yWGS84 - rz * xWGS84 + rx * zWGS84);
-    const zOSGB = tz + (1 + s) * (zWGS84 + ry * xWGS84 - rx * yWGS84);
-
-    // Convert OSGB36 Cartesian (x', y', z') back to OSGB36 Lat/Lon (φ', λ')
-    let latOSGB = lat; // Initial estimate
-    for (let i = 0; i < 5; i++) {
-      const sinLat = Math.sin(latOSGB);
-      const v = a / Math.sqrt(1 - e2 * sinLat * sinLat);
-      latOSGB = Math.atan2(zOSGB + v * e2 * sinLat, Math.sqrt(xOSGB * xOSGB + yOSGB * yOSGB));
-    }
-    const lonOSGB = Math.atan2(yOSGB, xOSGB);
-
-    // Apply Transverse Mercator Projection (OSGB36 Lat/Lon to Easting/Northing)
-
-    // OSGB36 Projection Parameters (WKID 27700)
-    const lat0 = toRad(49.0); // Latitude of Origin (φ0)
-    const lon0 = toRad(-2.0); // Central Meridian (λ0)
-    const F0 = 0.9996012717;  // Scale factor
-    const N0 = -100000.0;     // False Northing (m)
-    const E0 = 400000.0;      // False Easting (m)
-
-    // Terms for Meridian Arc Length (M)
-    const n = (a - b) / (a + b);
-    const n2 = n * n;
-    const n3 = n * n2;
-
-    const A = a * F0 * (1 + n + (5 / 4) * n2 + (5 / 4) * n3);
-    const B = - (3 * a * F0 * n / 2) * (1 + n + (7 / 8) * n2);
-    const C = (15 * a * F0 * n2 / 16) * (1 + n);
-    const D = - (35 * a * F0 * n3 / 48);
-
-    const M_at_lat0 = B * Math.sin(2 * lat0) + C * Math.sin(4 * lat0) + D * Math.sin(6 * lat0);
-    const M_at_lat = A * latOSGB + B * Math.sin(2 * latOSGB) + C * Math.sin(4 * latOSGB) + D * Math.sin(6 * latOSGB);
-    const M_final = M_at_lat - M_at_lat0;
-
-    const cosLat = Math.cos(latOSGB);
-    const sinLat = Math.sin(latOSGB);
-    const tanLat = Math.tan(latOSGB);
-    const nu = a * F0 / Math.sqrt(1 - e2 * sinLat * sinLat);
-    const rho = a * F0 * (1 - e2) / Math.pow(1 - e2 * sinLat * sinLat, 1.5);
-    const eta2 = nu / rho - 1;
-    const deltaLon = lonOSGB - lon0;
-    const deltaLon2 = deltaLon * deltaLon;
-    const deltaLon3 = deltaLon2 * deltaLon;
-    const deltaLon4 = deltaLon3 * deltaLon;
-    const deltaLon5 = deltaLon4 * deltaLon;
-
-    // Easting Calculation (E)
-    const I = nu * cosLat;
-    const II = nu / 6 * Math.pow(cosLat, 3) * (nu / rho - tanLat * tanLat);
-    const III = nu / 120 * Math.pow(cosLat, 5) * (5 - 18 * tanLat * tanLat + Math.pow(tanLat, 4) + 14 * eta2 - 58 * eta2 * tanLat * tanLat);
-
-    const E = E0 + I * deltaLon + II * deltaLon3 + III * deltaLon5;
-
-    // Northing Calculation (N)
-    const IV = nu * sinLat * tanLat;
-    const V = nu / 24 * sinLat * Math.pow(cosLat, 3) * (5 - tanLat * tanLat + 9 * eta2 + 4 * eta2 * eta2);
-    const VI = nu / 720 * sinLat * Math.pow(cosLat, 5) * (61 - 58 * tanLat * tanLat + Math.pow(tanLat, 4));
-
-    const N = N0 + M_final + IV * deltaLon2 / 2 + V * deltaLon4 / 24 + VI * Math.pow(deltaLon, 6) / 720;
-
-    return {
-      easting: Math.round(E),
-      northing: Math.round(N)
-    };
-  }
-
   $(".geo-btn").on("click", function () {
     const $button = $(this);
 
+    // Proceed with geolocation retrieval
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         function (position) {
           const { latitude, longitude } = position.coords;
-
-          const osgbCoords = wgs84ToOsgb36(latitude, longitude);
-
-          console.log(`WGS84 Coords received: ${latitude.toFixed(6)}, ${longitude.toFixed(6)}`);
-          console.log(`OSGB36 Coords calculated: E:${osgbCoords.easting}, N:${osgbCoords.northing}`);
-
           KDF.customdata(
             "retrieve-location-from-coordinates",
             $button.attr("id"),
@@ -1057,9 +939,7 @@ function handleOnReadyEvent(_, kdf) {
             true,
             {
               longitude: longitude.toString(),
-              latitude: latitude.toString(),
-              easting: osgbCoords.easting.toString(),
-              northing: osgbCoords.northing.toString(),
+              latitude: latitude.toString()
             }
           );
         },
@@ -1084,11 +964,6 @@ function handleOnReadyEvent(_, kdf) {
           } else {
             $validationMessage.html(errorMessage).show();
           }
-        },
-        {
-          enableHighAccuracy: true,
-          timeout: 5000,
-          maximumAge: 0
         }
       );
     } else {
@@ -1107,67 +982,6 @@ function handleOnReadyEvent(_, kdf) {
       }
     }
   });
-
-  // $(".geo-btn").on("click", function () {
-  //   const $button = $(this);
-
-  //   // Proceed with geolocation retrieval
-  //   if (navigator.geolocation) {
-  //     navigator.geolocation.getCurrentPosition(
-  //       function (position) {
-  //         const { latitude, longitude } = position.coords;
-  //         KDF.customdata(
-  //           "retrieve-location-from-coordinates",
-  //           $button.attr("id"),
-  //           true,
-  //           true,
-  //           {
-  //             longitude: longitude.toString(),
-  //             latitude: latitude.toString(),
-  //             easting : ,
-  //             northing : ,
-  //           }
-  //         );
-  //       },
-  //       function (error) {
-  //         const errorMessage =
-  //           error.code === error.PERMISSION_DENIED
-  //             ? "User denied the request for Geolocation"
-  //             : error.code === error.POSITION_UNAVAILABLE
-  //               ? "Location information is unavailable"
-  //               : error.code === error.TIMEOUT
-  //                 ? "The request to get user location timed out"
-  //                 : "An unknown error occurred";
-
-  //         const errorMessageHtml = `
-  //           <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
-  //             ${errorMessage}
-  //           </div>
-  //         `;
-
-  //         if (!$validationMessage.length) {
-  //           $button.before(errorMessageHtml);
-  //         } else {
-  //           $validationMessage.html(errorMessage).show();
-  //         }
-  //       }
-  //     );
-  //   } else {
-  //     const errorMessage = "Geolocation is not supported by this browser";
-
-  //     const errorMessageHtml = `
-  //       <div class="dform_validationMessage" style="display: block; width: 100%; transform: translateY(12px);">
-  //         ${errorMessage}
-  //       </div>
-  //     `;
-
-  //     if (!$validationMessage.length) {
-  //       $button.before(errorMessageHtml);
-  //     } else {
-  //       $validationMessage.html(errorMessage).show();
-  //     }
-  //   }
-  // });
 
   // --- HANDLE FIND ON MAP CLICK ------------------------------------------- \\
 
