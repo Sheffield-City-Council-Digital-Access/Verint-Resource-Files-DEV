@@ -3709,7 +3709,7 @@ function checkAddressHasBeenSet(action = "next") {
       const siteName = KDF.getVal(getInput("siteName").name);
       const streetNameValue = KDF.getVal(siteName.name);
       const siteCode = getInput("siteCode");
-      const usrnValue = KDF.getVal(siteCode.name) || KDF.getVal(getInput("usrn").name)
+      const usrnValue = KDF.getVal(siteCode.name);
       const validUsrn = acceptGMSites
         ? true
         : siteCode && siteCode.startsWith("344");
@@ -3717,7 +3717,6 @@ function checkAddressHasBeenSet(action = "next") {
 
       if (streetNameValue && usrnValue && validUsrn) {
         clearPartialAddressSearch();
-        if (siteCode) KDF.setVal(siteCode.name, usrnValue);
         goNextOrComplete();
         return true; // Map section handled
       } else {
@@ -4672,8 +4671,9 @@ function do_KDF_Custom_esriMap(action, response) {
       setValuesToInputFields([
         { alias: "streetName", value: parseFeature["streetname"] },
         { alias: "fullAddress", value: parseFeature["streetname"] },
-        { alias: "uprn", value: parseFeature["usrn"] },
+        { alias: "usrn", value: parseFeature["usrn"] },
         { alias: "siteName", value: parseFeature["streetname"] },
+        { alias: "siteCode", value: parseFeature["usrn"] },
       ]);
       // setSelectedAddress(parseFeature["streetname"], "show");
       $(".popup").text(parseFeature["streetname"]);
