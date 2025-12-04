@@ -3707,14 +3707,17 @@ function checkAddressHasBeenSet(action = "next") {
 
     if (mapElement && detailsElement && detailsElement.hasAttribute("open")) {
       const siteName = KDF.getVal(getInput("siteName").name);
-      const siteCode = KDF.getVal(getInput("siteCode").name);
+      const streetNameValue = KDF.getVal(siteName.name);
+      const siteCode = getInput("siteCode");
+      const usrnValue = KDF.getVal(siteCode.name) || KDF.getVal(getInput("usrn").name)
       const validUsrn = acceptGMSites
         ? true
         : siteCode && siteCode.startsWith("344");
-      console.log('handleMapSection', siteName, siteCode, validUsrn)
+      console.log('handleMapSection', streetNameValue, usrnValue, validUsrn)
 
-      if (siteName && siteCode && validUsrn) {
+      if (streetNameValue && usrnValue && validUsrn) {
         clearPartialAddressSearch();
+        if (siteCode) KDF.setVal(siteCode.name, usrnValue);
         goNextOrComplete();
         return true; // Map section handled
       } else {
