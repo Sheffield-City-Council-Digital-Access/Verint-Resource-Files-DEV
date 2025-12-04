@@ -942,8 +942,7 @@ function handleOnReadyEvent(_, kdf) {
           //     latitude: latitude.toString()
           //   }
           // );
-          plotLocationOnMap(-1.458642,53.375419)
-          // plotLocationOnMap(longitude.toString(), latitude.toString())
+          plotLocationOnMapGeo(longitude.toString(), latitude.toString())
         },
         function (error) {
           const errorMessage =
@@ -5004,7 +5003,7 @@ function fetchSccRing() {
   });
 }
 
-function plotLocationOnMap(longitude, latitude) {
+function plotLocationOnMapGeo(longitude, latitude) {
   require(["esri/geometry/Point", "esri/geometry/projection"], function (
     Point,
     projection
@@ -5053,51 +5052,51 @@ function plotLocationOnMap(longitude, latitude) {
   });
 }
 
-// function plotLocationOnMap(easting, northing) {
-//   require(["esri/geometry/Point", "esri/geometry/projection"], function (
-//     Point,
-//     projection
-//   ) {
-//     // Create OSGB point
-//     const osgbPoint = new Point({
-//       x: parseFloat(easting),
-//       y: parseFloat(northing),
-//       spatialReference: { wkid: 27700 },
-//     });
+function plotLocationOnMap(easting, northing) {
+  require(["esri/geometry/Point", "esri/geometry/projection"], function (
+    Point,
+    projection
+  ) {
+    // Create OSGB point
+    const osgbPoint = new Point({
+      x: parseFloat(easting),
+      y: parseFloat(northing),
+      spatialReference: { wkid: 27700 },
+    });
 
-//     // Project to Web Mercator (map’s spatial reference)
-//     projection.load().then(function () {
-//       const wmPoint = projection.project(
-//         osgbPoint,
-//         streetMapView.spatialReference
-//       );
+    // Project to Web Mercator (map’s spatial reference)
+    projection.load().then(function () {
+      const wmPoint = projection.project(
+        osgbPoint,
+        streetMapView.spatialReference
+      );
 
-//       // Zoom to location
-//       streetMapView.goTo({ center: wmPoint, zoom: 18 }).then(() => {
-//         // Convert to screen coordinates
-//         const screenPoint = streetMapView.toScreen(wmPoint);
+      // Zoom to location
+      streetMapView.goTo({ center: wmPoint, zoom: 18 }).then(() => {
+        // Convert to screen coordinates
+        const screenPoint = streetMapView.toScreen(wmPoint);
 
-//         // Build a realistic fake event
-//         const fakeEvt = {
-//           type: "click",
-//           pointerType: "mouse",
-//           button: 0,
-//           buttons: 0,
-//           x: screenPoint.x,
-//           y: screenPoint.y,
-//           screenPoint: { x: screenPoint.x, y: screenPoint.y },
-//           mapPoint: wmPoint,
-//           native: { isTrusted: true },
-//           timestamp: performance.now(),
-//           cancelable: false,
-//         };
+        // Build a realistic fake event
+        const fakeEvt = {
+          type: "click",
+          pointerType: "mouse",
+          button: 0,
+          buttons: 0,
+          x: screenPoint.x,
+          y: screenPoint.y,
+          screenPoint: { x: screenPoint.x, y: screenPoint.y },
+          mapPoint: wmPoint,
+          native: { isTrusted: true },
+          timestamp: performance.now(),
+          cancelable: false,
+        };
 
-//         // Trigger mapClick like a real click
-//         mapClick(fakeEvt);
-//       });
-//     });
-//   });
-// }
+        // Trigger mapClick like a real click
+        mapClick(fakeEvt);
+      });
+    });
+  });
+}
 
 // --- FORMATING FUNCTIONS -------------------------------------------------- \\
 
