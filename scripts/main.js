@@ -5005,38 +5005,50 @@ function fetchSccRing() {
 }
 
 function plotLocationOnMap(longitude, latitude) {
-  require(["esri/geometry/Point"], function (Point) {
-    // Create a WGS 84 point (standard Longitude/Latitude)
+  require(["esri/geometry/Point", "esri/geometry/projection"], function (
+    Point,
+    projection
+  ) {
+    // Create the point in WGS 84 (Long/Lat)
     const wgs84Point = new Point({
       x: parseFloat(longitude),
       y: parseFloat(latitude),
       spatialReference: { wkid: 4326 }, // WGS 84
     });
 
-    const wmPoint = wgs84Point; // Use the WGS 84 point directly
+    // Project the WGS 84 point to the map's spatial reference (27700)
+    projection.load().then(function () {
+      const projectedPoint = projection.project(
+        wgs84Point,
+        streetMapView.spatialReference // streetMapView is in WKID 27700
+      );
 
-    // Zoom to location
-    streetMapView.goTo({ center: wmPoint, zoom: 18 }).then(() => {
-      // Convert to screen coordinates
-      const screenPoint = streetMapView.toScreen(wmPoint);
+      // The point is now in OSGB 1936 (Easting/Northing)
+      const mapPoint = projectedPoint; 
 
-      // Build a realistic fake event
-      const fakeEvt = {
-        type: "click",
-        pointerType: "mouse",
-        button: 0,
-        buttons: 0,
-        x: screenPoint.x,
-        y: screenPoint.y,
-        screenPoint: { x: screenPoint.x, y: screenPoint.y },
-        mapPoint: wmPoint,
-        native: { isTrusted: true },
-        timestamp: performance.now(),
-        cancelable: false,
-      };
+      // Zoom to location
+      streetMapView.goTo({ center: mapPoint, zoom: 18 }).then(() => {
+        // Convert to screen coordinates
+        const screenPoint = streetMapView.toScreen(mapPoint);
 
-      // Trigger mapClick like a real click
-      mapClick(fakeEvt);
+        // Build a realistic fake event
+        const fakeEvt = {
+          type: "click",
+          pointerType: "mouse",
+          button: 0,
+          buttons: 0,
+          x: screenPoint.x,
+          y: screenPoint.y,
+          screenPoint: { x: screenPoint.x, y: screenPoint.y },
+          mapPoint: mapPoint,
+          native: { isTrusted: true },
+          timestamp: performance.now(),
+          cancelable: false,
+        };
+
+        // Trigger mapClick like a real click
+        mapClick(fakeEvt);
+      });
     });
   });
 }
