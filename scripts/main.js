@@ -3711,6 +3711,7 @@ function checkAddressHasBeenSet(action = "next") {
       const validUsrn = acceptGMSites
         ? true
         : siteCode && siteCode.startsWith("344");
+      console.log('handleMapSection', siteName, siteCode, validUsrn)
 
       if (siteName && siteCode && validUsrn) {
         clearPartialAddressSearch();
