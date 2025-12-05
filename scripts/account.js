@@ -287,7 +287,7 @@ document.addEventListener("DOMContentLoaded", function () {
           document.querySelectorAll(".le-request-header")
         ).find((header) => header.textContent.trim() === "Notes");
         
-        if (notesHeader) {}
+        if (notesHeader) {
           notesHeader.textContent = "Request updates";
         }
 
