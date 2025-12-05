@@ -286,6 +286,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const notesHeader = Array.from(
           document.querySelectorAll(".le-request-header")
         ).find((header) => header.textContent.trim() === "Notes");
+        
+        if (notesHeader) {}
+          notesHeader.textContent = "Request updates";
+        }
 
         const notesDetails = document.querySelector(".le-request-note-details");
 
