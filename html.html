@@ -49,7 +49,8 @@
           id="dform_widget_label_txt_property_about_the_address">House name or number</label>
       </div>
       <div>
-        <div class="dform_validationMessage">Enter the house name or number</div><input
+        <div class="dform_validationMessage">Enter the house name or number</div>
+        <input
           id="dform_widget_txt_property_about_the_address" type="text" name="txt_property_about_the_address"
           class="dform_persist"
           aria-labelledby="dform_widget_label_txt_property_about_the_address dform_widget_helptext_txt_property_about_the_address"
@@ -63,7 +64,8 @@
           id="dform_widget_label_txt_street_name_about_the_address">Street name</label>
       </div>
       <div>
-        <div class="dform_validationMessage">Enter the street name</div><input
+        <div class="dform_validationMessage">Enter the street name</div>
+        <input
           id="dform_widget_txt_street_name_about_the_address" type="text" name="txt_street_name_about_the_address"
           class="dform_persist"
           aria-labelledby="dform_widget_label_txt_street_name_about_the_address dform_widget_helptext_txt_street_name_about_the_address"
@@ -77,7 +79,8 @@
           id="dform_widget_label_txt_city_about_the_address">City</label>
       </div>
       <div>
-        <div class="dform_validationMessage">Enter the city</div><input id="dform_widget_txt_city_about_the_address"
+        <div class="dform_validationMessage">Enter the city</div>
+        <input id="dform_widget_txt_city_about_the_address"
           type="text" name="txt_city_about_the_address" class="dform_persist"
           aria-labelledby="dform_widget_label_txt_city_about_the_address dform_widget_helptext_txt_city_about_the_address"
           data-mapfrom="" data-customalias="city" required="" title="Enter the city" data-forcecase="upper" tabindex="">
@@ -90,7 +93,8 @@
           id="dform_widget_label_txt_postcode_about_the_address">Postcode</label>
       </div>
       <div>
-        <div class="dform_validationMessage">Enter the postcode in the correct format</div><input
+        <div class="dform_validationMessage">Enter the postcode in the correct format</div>
+        <input
           id="dform_widget_txt_postcode_about_the_address" type="text" name="txt_postcode_about_the_address"
           class="dform_persist"
           aria-labelledby="dform_widget_label_txt_postcode_about_the_address dform_widget_helptext_txt_postcode_about_the_address"
@@ -99,9 +103,83 @@
           title="Enter the postcode in the correct format" data-forcecase="upper" tabindex="">
       </div>
     </div>
-    <button type="button" tabindex="0" id="dform_widget_button_but_set_manual_address_about_the_address" data-active="false"
+    <button type="button" tabindex="0" id="dform_widget_button_but_set_manual_address_about_the_address"
+      data-active="false" data-desktopaction=""
+      class="dform_widget secondary-btn set-manual-address-btn dform_widget_type_button dform_widget_but_set_manual_address_about_the_address">
+      Use this address
+    </button>
+  </div>
+</details>
+
+
+<details class="details-accordion">
+  <summary>
+    Enter address manually
+  </summary>
+  <div class="details-accordion-content">
+    <div data-type="text" data-name="txt_property_about_you" data-active="true" data-agentonly="false"
+      class="container dform_widget property format-title-case dform_widget_field dform_widget_type_text dform_widget_txt_property_about_you dform_widget_profile-AddressNumber">
+      <div>
+        <label for="dform_widget_txt_property_about_you" id="dform_widget_label_txt_property_about_you">House name or
+          number</label>
+      </div>
+      <div>
+        <div class="dform_validationMessage">Enter your house name or number</div>
+        <input
+          id="dform_widget_txt_property_about_you" type="text" name="txt_property_about_you" class="dform_persist"
+          aria-labelledby="dform_widget_label_txt_property_about_you dform_widget_helptext_txt_property_about_you"
+          data-mapfrom="profile-AddressNumber" data-customalias="property" required=""
+          title="Enter your house name or number" tabindex="">
+      </div>
+    </div>
+    <div data-type="text" data-name="txt_street_name_about_you" data-active="true" data-agentonly="false"
+      class="container dform_widget street-name format-title-case dform_widget_field dform_widget_type_text dform_widget_txt_street_name_about_you dform_widget_profile-AddressLine1">
+      <div>
+        <label for="dform_widget_txt_street_name_about_you" id="dform_widget_label_txt_street_name_about_you">Street
+          name</label>
+      </div>
+      <div>
+        <div class="dform_validationMessage">Enter your street name</div>
+        <input
+          id="dform_widget_txt_street_name_about_you" type="text" name="txt_street_name_about_you" class="dform_persist"
+          aria-labelledby="dform_widget_label_txt_street_name_about_you dform_widget_helptext_txt_street_name_about_you"
+          data-mapfrom="profile-AddressLine1" data-customalias="streetName" required="" title="Enter your street name"
+          tabindex="">
+      </div>
+    </div>
+    <div data-type="text" data-name="txt_city_about_you" data-active="true" data-agentonly="false"
+      class="container dform_widget city dform_widget_field dform_widget_type_text dform_widget_txt_city_about_you dform_widget_profile-AddressLine4">
+      <div>
+        <label for="dform_widget_txt_city_about_you" id="dform_widget_label_txt_city_about_you">City</label>
+      </div>
+      <div>
+        <div class="dform_validationMessage">Enter your city</div>
+        <input id="dform_widget_txt_city_about_you"
+          type="text" name="txt_city_about_you" class="dform_persist"
+          aria-labelledby="dform_widget_label_txt_city_about_you dform_widget_helptext_txt_city_about_you"
+          data-mapfrom="profile-AddressLine4" data-customalias="city" required="" title="Enter your city"
+          data-forcecase="upper" tabindex="">
+      </div>
+    </div>
+    <div data-type="text" data-name="txt_postcode_about_you" data-active="true" data-agentonly="false"
+      class="container dform_widget postcode dform_widget_field dform_widget_type_text dform_widget_txt_postcode_about_you dform_widget_profile-Postcode">
+      <div>
+        <label for="dform_widget_txt_postcode_about_you" id="dform_widget_label_txt_postcode_about_you">Postcode</label>
+      </div>
+      <div>
+        <div class="dform_validationMessage">Enter your postcode in the correct format</div>
+        <input
+          id="dform_widget_txt_postcode_about_you" type="text" name="txt_postcode_about_you" class="dform_persist"
+          aria-labelledby="dform_widget_label_txt_postcode_about_you dform_widget_helptext_txt_postcode_about_you"
+          data-mapfrom="profile-Postcode" data-customalias="postCode" required=""
+          pattern="([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2})"
+          title="Enter your postcode in the correct format" data-forcecase="upper" tabindex="">
+      </div>
+    </div>
+    <button type="button" tabindex="0" id="dform_widget_button_but_set_manual_address_about_you" data-active="false"
       data-desktopaction=""
-      class="dform_widget secondary-btn set-manual-address-btn dform_widget_type_button dform_widget_but_set_manual_address_about_the_address">Use
-      this address</button>
+      class="dform_widget secondary-btn set-manual-address-btn dform_widget_type_button dform_widget_but_set_manual_address_about_you">
+      Use this address
+    </button>
   </div>
 </details>

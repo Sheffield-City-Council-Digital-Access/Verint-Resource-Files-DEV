@@ -2118,17 +2118,17 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       postcode: postcode ? postcode.toUpperCase() : "",
     };
 
-    // const fullAddressDisplay = buildAddressMarkup(addressDataForDisplay);
-    // let selectedAddressContainer = document.querySelector(
-    //   `#${currentPageId} .selected-address-container`
-    // );
-    // if (selectedAddressContainer) {
-    //   selectedAddressContainer.innerHTML = fullAddressDisplay;
-    //   selectedAddressContainer = selectedAddressContainer.id.replace(
-    //     "dform_widget_html_",
-    //     ""
-    //   );
-    // }
+    const fullAddressDisplay = buildAddressMarkup(addressDataForDisplay);
+    let selectedAddressContainer = document.querySelector(
+      `#${currentPageId} .selected-address-container`
+    );
+    if (selectedAddressContainer) {
+      selectedAddressContainer.innerHTML = fullAddressDisplay;
+      selectedAddressContainer = selectedAddressContainer.id.replace(
+        "dform_widget_html_",
+        ""
+      );
+    }
 
     if (addressSelectionSection) {
       addressSelectionSection.classList.add("dform_fieldsuccess");
@@ -2228,7 +2228,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
     hideShowMultipleElements([
       { name: setAddressButton, display: "hide" },
-      // { name: selectedAddressContainer, display: "show" },
+      { name: selectedAddressContainer, display: action === "retrieve-location-from-coordinates" ? "hide" : "show" },
       { name: manualAddressElement, display: "hide" },
       { name: findOnMapElement, display: action === "retrieve-location-from-coordinates" ? "show" : "hide" },
     ]);
