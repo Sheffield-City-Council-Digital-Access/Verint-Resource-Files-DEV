@@ -285,7 +285,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const notesHeader = Array.from(
           document.querySelectorAll(".le-request-header")
-        ).find((header) => header.textContent.trim() === "Request updates");
+        ).find((header) => header.textContent.trim() === "Notes");
 
         const notesDetails = document.querySelector(".le-request-note-details");
 
