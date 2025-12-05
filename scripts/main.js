@@ -354,15 +354,6 @@ function handleInitialisingEvent() {
     });
   })();
 
-  // --- UPDATE ACCEPTED EMAIL PATTERN -------------------------------------- \\
-
-  (() => {
-    $('input[type="email"]').attr(
-      "pattern",
-      "(?:[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
-    );
-  })();
-
   // --- ADD CURRECY SYMBOL ------------------------------------------------- \\
 
   (() => {
@@ -719,7 +710,7 @@ function handleOnReadyEvent(_, kdf) {
         { name: searchInput.name, display: "show" },
         { name: searchButton, display: "show" },
         { name: resultsList.dataset.name, display: "hide" },
-        { name: manualAddressElement, display: "hide" },
+        { name: manualAddressElement, display: "show" },
         { name: setAddressButton, display: "hide" },
         { name: selectedAddressContainer, display: "hide" },
         { name: mapCntainer, display: "show" },
@@ -734,14 +725,198 @@ function handleOnReadyEvent(_, kdf) {
   // --- HANDLE SET ADDRESS ------------------------------------------------- \\
 
   // The main click event handler
-  $(document).on("click", ".set-address-btn", function () {
+  // $(document).on("click", ".set-address-btn", function () {
+  //   const handleSearchResults = (currentPageId, buttonId) => {
+  //     const searchResultsContainer = document.querySelector(
+  //       `#${currentPageId} .address-search-results`
+  //     );
+  //     const searchResultsSelect =
+  //       searchResultsContainer?.querySelector("select");
+
+  //     if (searchResultsSelect && searchResultsSelect.value) {
+  //       // A valid address was selected.
+  //       const action =
+  //         addressSearchType === "national"
+  //           ? "retrieve-national-address"
+  //           : "retrieve-local-address";
+  //       KDF.customdata(action, buttonId, true, true, {
+  //         propertyId: searchResultsSelect.value,
+  //       });
+  //       return true; // Return true to indicate success
+  //     } else if (searchResultsContainer) {
+  //       // No address was selected, so show the validation error.
+  //       const validationMessage = searchResultsContainer.querySelector(
+  //         ".dform_validationMessage"
+  //       );
+  //       if (validationMessage) {
+  //         validationMessage.style.display = "block";
+  //       }
+  //       if (searchResultsSelect) {
+  //         searchResultsSelect.classList.add("dform_fielderror");
+  //       }
+  //       return false; // Return false to indicate failure
+  //     }
+  //     return false; // No search results container found
+  //   };
+
+  //   const currentPageId = getCurrentPageId();
+  //   const manualAddressElement = document.querySelector(
+  //     `#${currentPageId} .manual-address-container`
+  //   );
+
+  //   // Check if the manual address form exists on the page
+  //   if (manualAddressElement) {
+  //     const detailsElement =
+  //       manualAddressElement.querySelector(".details-accordion");
+
+  //     // Check if the manual address accordion is open
+  //     if (detailsElement && detailsElement.hasAttribute("open")) {
+  //       // Scenario 1: Manual form is open; validate its fields.
+  //       const searchResultsSelect = document.querySelector(
+  //         `#${currentPageId} .address-search-results select`
+  //       );
+  //       if (searchResultsSelect) {
+  //         searchResultsSelect.value = ""; // Clear selected value from search results
+  //         KDF.setWidgetNotRequired(
+  //           searchResultsSelect.id.replace("dform_widget_", "")
+  //         );
+  //       }
+
+  //       const addressFields = getValuesOfInputFields([
+  //         { alias: "property" },
+  //         { alias: "streetName" },
+  //         { alias: "city" },
+  //         { alias: "postCode" },
+  //       ]);
+
+  //       let allFieldsValid = true;
+  //       addressFields.forEach((field) => {
+  //         const fieldContainer = document
+  //           .querySelector(`[data-customalias="${field.alias}"]`)
+  //           ?.closest(".dform_widget_field");
+  //         const validationMessage = fieldContainer?.querySelector(
+  //           ".dform_validationMessage"
+  //         );
+  //         const inputElement = fieldContainer?.querySelector("input");
+
+  //         if (!field.value) {
+  //           allFieldsValid = false;
+  //           if (validationMessage) validationMessage.style.display = "block";
+  //           if (inputElement) inputElement.classList.add("dform_fielderror");
+  //         } else {
+  //           if (validationMessage) validationMessage.style.display = "none";
+  //           if (inputElement) inputElement.classList.remove("dform_fielderror");
+  //         }
+  //       });
+
+  //       if (allFieldsValid) {
+  //         const addressearchResults = document.querySelector(
+  //           `#${currentPageId} .address-search-results`
+  //         );
+  //         let setAddressButton = document.querySelector(
+  //           `#${currentPageId} .set-address-btn`
+  //         );
+  //         if (setAddressButton) {
+  //           setAddressButton = setAddressButton.id.replace(
+  //             "dform_widget_button_",
+  //             ""
+  //           );
+  //         }
+
+  //         const buttonContainer = document.querySelector(
+  //           `#${currentPageId} .address-search-btn-container`
+  //         );
+  //         let manualAddressElement = document.querySelector(
+  //           `#${currentPageId} .manual-address-container`
+  //         );
+  //         if (manualAddressElement) {
+  //           manualAddressElement = manualAddressElement.id.replace(
+  //             "dform_widget_html_",
+  //             ""
+  //           );
+  //         }
+
+  //         const addressDataForDisplay = {
+  //           property:
+  //             addressFields.find((field) => field.alias === "property")
+  //               ?.value || "",
+  //           streetName:
+  //             addressFields.find((field) => field.alias === "streetName")
+  //               ?.value || "",
+  //           city:
+  //             addressFields.find((field) => field.alias === "city")?.value ||
+  //             "",
+  //           postcode:
+  //             addressFields.find((field) => field.alias === "postCode")
+  //               ?.value || "",
+  //         };
+
+  //         const fullAddressDisplay = buildAddressMarkup(addressDataForDisplay);
+  //         let selectedAddressContainer = document.querySelector(
+  //           `#${currentPageId} .selected-address-container`
+  //         );
+  //         if (selectedAddressContainer) {
+  //           selectedAddressContainer.innerHTML = fullAddressDisplay;
+  //           selectedAddressContainer = selectedAddressContainer.id.replace(
+  //             "dform_widget_html_",
+  //             ""
+  //           );
+  //         }
+
+  //         let fullAddress = "";
+  //         addressFields.forEach((field) => {
+  //           if (field.value) {
+  //             if (field.alias === "streetName" || field.alias === "city") {
+  //               fullAddress += `${field.value}, `;
+  //             } else {
+  //               fullAddress += `${field.value} `;
+  //             }
+  //           }
+  //         });
+  //         fullAddress = fullAddress.trim();
+
+  //         setValuesToInputFields([
+  //           { alias: "fullAddress", value: fullAddress },
+  //         ]);
+
+  //         if (addressearchResults) {
+  //           const selectElement = addressearchResults.querySelector("select");
+  //           if (selectElement) {
+  //             selectElement.style.display = "none"; // Hides the element
+  //           }
+  //         }
+
+  //         if (buttonContainer) {
+  //           buttonContainer.style.display = "none"; // Hides the element
+  //         }
+
+  //         hideShowMultipleElements([
+  //           { name: setAddressButton, display: "hide" },
+  //           { name: selectedAddressContainer, display: "show" },
+  //           { name: manualAddressElement, display: "hide" },
+  //         ]);
+  //       }
+  //     } else {
+  //       // Scenario 2: Manual form is not open; validate the search results dropdown.
+  //       handleSearchResults(currentPageId, this.id);
+  //     }
+  //   } else {
+  //     // Scenario 3: The manual address container doesn't exist at all; validate search results.
+  //     handleSearchResults(currentPageId, this.id);
+  //   }
+  // });
+
+  $(document).on("click", ".set-address-btn, .set-manual-address-btn", function () {
+    const clickedButton = $(this);
+    const isManualAddressClick = clickedButton.hasClass("set-manual-address-btn");
+  
     const handleSearchResults = (currentPageId, buttonId) => {
       const searchResultsContainer = document.querySelector(
         `#${currentPageId} .address-search-results`
       );
       const searchResultsSelect =
         searchResultsContainer?.querySelector("select");
-
+  
       if (searchResultsSelect && searchResultsSelect.value) {
         // A valid address was selected.
         const action =
@@ -767,150 +942,142 @@ function handleOnReadyEvent(_, kdf) {
       }
       return false; // No search results container found
     };
-
+  
     const currentPageId = getCurrentPageId();
     const manualAddressElement = document.querySelector(
       `#${currentPageId} .manual-address-container`
     );
-
-    // Check if the manual address form exists on the page
-    if (manualAddressElement) {
-      const detailsElement =
-        manualAddressElement.querySelector(".details-accordion");
-
-      // Check if the manual address accordion is open
-      if (detailsElement && detailsElement.hasAttribute("open")) {
-        // Scenario 1: Manual form is open; validate its fields.
-        const searchResultsSelect = document.querySelector(
-          `#${currentPageId} .address-search-results select`
+  
+    // Scenario A: The "Set Manual Address" button was explicitly clicked
+    if (isManualAddressClick) {
+      // Clear selected value from search results and make not required
+      const searchResultsSelect = document.querySelector(
+        `#${currentPageId} .address-search-results select`
+      );
+      if (searchResultsSelect) {
+        searchResultsSelect.value = "";
+        KDF.setWidgetNotRequired(
+          searchResultsSelect.id.replace("dform_widget_", "")
         );
-        if (searchResultsSelect) {
-          searchResultsSelect.value = ""; // Clear selected value from search results
-          KDF.setWidgetNotRequired(
-            searchResultsSelect.id.replace("dform_widget_", "")
+      }
+  
+      // Validate Manual Address Fields (same as your original Scenario 1 logic)
+      const addressFields = getValuesOfInputFields([
+        { alias: "property" },
+        { alias: "streetName" },
+        { alias: "city" },
+        { alias: "postCode" },
+      ]);
+  
+      let allFieldsValid = true;
+      addressFields.forEach((field) => {
+        const fieldContainer = document
+          .querySelector(`[data-customalias="${field.alias}"]`)
+          ?.closest(".dform_widget_field");
+        const validationMessage = fieldContainer?.querySelector(
+          ".dform_validationMessage"
+        );
+        const inputElement = fieldContainer?.querySelector("input");
+  
+        if (!field.value) {
+          allFieldsValid = false;
+          if (validationMessage) validationMessage.style.display = "block";
+          if (inputElement) inputElement.classList.add("dform_fielderror");
+        } else {
+          if (validationMessage) validationMessage.style.display = "none";
+          if (inputElement) inputElement.classList.remove("dform_fielderror");
+        }
+      });
+  
+      if (allFieldsValid) {
+        const addressearchResults = document.querySelector(
+          `#${currentPageId} .address-search-results`
+        );
+        let setAddressButton = document.querySelector(
+          `#${currentPageId} .set-address-btn`
+        );
+        if (setAddressButton) {
+          setAddressButton = setAddressButton.id.replace(
+            "dform_widget_button_",
+            ""
           );
         }
-
-        const addressFields = getValuesOfInputFields([
-          { alias: "property" },
-          { alias: "streetName" },
-          { alias: "city" },
-          { alias: "postCode" },
-        ]);
-
-        let allFieldsValid = true;
-        addressFields.forEach((field) => {
-          const fieldContainer = document
-            .querySelector(`[data-customalias="${field.alias}"]`)
-            ?.closest(".dform_widget_field");
-          const validationMessage = fieldContainer?.querySelector(
-            ".dform_validationMessage"
+  
+        const buttonContainer = document.querySelector(
+          `#${currentPageId} .address-search-btn-container`
+        );
+        let manualAddressElement = document.querySelector(
+          `#${currentPageId} .manual-address-container`
+        );
+        if (manualAddressElement) {
+          manualAddressElement = manualAddressElement.id.replace(
+            "dform_widget_html_",
+            ""
           );
-          const inputElement = fieldContainer?.querySelector("input");
-
-          if (!field.value) {
-            allFieldsValid = false;
-            if (validationMessage) validationMessage.style.display = "block";
-            if (inputElement) inputElement.classList.add("dform_fielderror");
-          } else {
-            if (validationMessage) validationMessage.style.display = "none";
-            if (inputElement) inputElement.classList.remove("dform_fielderror");
+        }
+  
+        const addressDataForDisplay = {
+          property:
+            addressFields.find((field) => field.alias === "property")
+              ?.value || "",
+          streetName:
+            addressFields.find((field) => field.alias === "streetName")
+              ?.value || "",
+          city:
+            addressFields.find((field) => field.alias === "city")?.value ||
+            "",
+          postcode:
+            addressFields.find((field) => field.alias === "postCode")
+              ?.value || "",
+        };
+  
+        const fullAddressDisplay = buildAddressMarkup(addressDataForDisplay);
+        let selectedAddressContainer = document.querySelector(
+          `#${currentPageId} .selected-address-container`
+        );
+        if (selectedAddressContainer) {
+          selectedAddressContainer.innerHTML = fullAddressDisplay;
+          selectedAddressContainer = selectedAddressContainer.id.replace(
+            "dform_widget_html_",
+            ""
+          );
+        }
+  
+        let fullAddress = "";
+        addressFields.forEach((field) => {
+          if (field.value) {
+            if (field.alias === "streetName" || field.alias === "city") {
+              fullAddress += `${field.value}, `;
+            } else {
+              fullAddress += `${field.value} `;
+            }
           }
         });
-
-        if (allFieldsValid) {
-          const addressearchResults = document.querySelector(
-            `#${currentPageId} .address-search-results`
-          );
-          let setAddressButton = document.querySelector(
-            `#${currentPageId} .set-address-btn`
-          );
-          if (setAddressButton) {
-            setAddressButton = setAddressButton.id.replace(
-              "dform_widget_button_",
-              ""
-            );
+        fullAddress = fullAddress.trim();
+  
+        setValuesToInputFields([
+          { alias: "fullAddress", value: fullAddress },
+        ]);
+  
+        if (addressearchResults) {
+          const selectElement = addressearchResults.querySelector("select");
+          if (selectElement) {
+            selectElement.style.display = "none"; // Hides the element
           }
-
-          const buttonContainer = document.querySelector(
-            `#${currentPageId} .address-search-btn-container`
-          );
-          let manualAddressElement = document.querySelector(
-            `#${currentPageId} .manual-address-container`
-          );
-          if (manualAddressElement) {
-            manualAddressElement = manualAddressElement.id.replace(
-              "dform_widget_html_",
-              ""
-            );
-          }
-
-          const addressDataForDisplay = {
-            property:
-              addressFields.find((field) => field.alias === "property")
-                ?.value || "",
-            streetName:
-              addressFields.find((field) => field.alias === "streetName")
-                ?.value || "",
-            city:
-              addressFields.find((field) => field.alias === "city")?.value ||
-              "",
-            postcode:
-              addressFields.find((field) => field.alias === "postCode")
-                ?.value || "",
-          };
-
-          const fullAddressDisplay = buildAddressMarkup(addressDataForDisplay);
-          let selectedAddressContainer = document.querySelector(
-            `#${currentPageId} .selected-address-container`
-          );
-          if (selectedAddressContainer) {
-            selectedAddressContainer.innerHTML = fullAddressDisplay;
-            selectedAddressContainer = selectedAddressContainer.id.replace(
-              "dform_widget_html_",
-              ""
-            );
-          }
-
-          let fullAddress = "";
-          addressFields.forEach((field) => {
-            if (field.value) {
-              if (field.alias === "streetName" || field.alias === "city") {
-                fullAddress += `${field.value}, `;
-              } else {
-                fullAddress += `${field.value} `;
-              }
-            }
-          });
-          fullAddress = fullAddress.trim();
-
-          setValuesToInputFields([
-            { alias: "fullAddress", value: fullAddress },
-          ]);
-
-          if (addressearchResults) {
-            const selectElement = addressearchResults.querySelector("select");
-            if (selectElement) {
-              selectElement.style.display = "none"; // Hides the element
-            }
-          }
-
-          if (buttonContainer) {
-            buttonContainer.style.display = "none"; // Hides the element
-          }
-
-          hideShowMultipleElements([
-            { name: setAddressButton, display: "hide" },
-            { name: selectedAddressContainer, display: "show" },
-            { name: manualAddressElement, display: "hide" },
-          ]);
         }
-      } else {
-        // Scenario 2: Manual form is not open; validate the search results dropdown.
-        handleSearchResults(currentPageId, this.id);
+  
+        if (buttonContainer) {
+          buttonContainer.style.display = "none"; // Hides the element
+        }
+  
+        hideShowMultipleElements([
+          { name: setAddressButton, display: "hide" },
+          { name: selectedAddressContainer, display: "show" },
+          { name: manualAddressElement, display: "hide" },
+        ]);
       }
     } else {
-      // Scenario 3: The manual address container doesn't exist at all; validate search results.
+      // Scenario B: The "Set Address" button was clicked (not the manual one)
       handleSearchResults(currentPageId, this.id);
     }
   });
@@ -1824,7 +1991,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
 
     const resultsContent = `
     ${numberOfResults} addresses found for <strong>${searchedPostcode}</strong>.
-    <button type="button" class="search-again-btn link-btn">Search again</button>
+    <button type="button" class="search-again-btn link-btn">Change</button>
   `;
 
     if (resultsList && searchInput && searchButton) {
