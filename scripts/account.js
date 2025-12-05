@@ -262,10 +262,12 @@ document.addEventListener("DOMContentLoaded", function () {
               };
 
               const h1 = document.createElement("h1");
-              h1.textContent = `Your ${getDynamicValue(true)} summary`;
+              // h1.textContent = `Your ${getDynamicValue(true)} summary`;
+              h1.textContent = `Your request summary`;
               detailsDiv.prepend(h1);
 
-              headerElement.textContent = `${getDynamicValue()} details`;
+              // headerElement.textContent = `${getDynamicValue()} details`;
+              headerElement.textContent = `Request details`;
             }
           }
         }
@@ -275,15 +277,15 @@ document.addEventListener("DOMContentLoaded", function () {
           const statusText = statusSpan.textContent.trim().toLowerCase();
 
           if (statusText === "open") {
-            statusSpan.textContent = "Submitted";
+            statusSpan.textContent = "In progress";
           } else if (statusText === "closed") {
-            statusSpan.textContent = "Complete";
+            statusSpan.textContent = "Resolved";
           }
         }
 
         const notesHeader = Array.from(
           document.querySelectorAll(".le-request-header")
-        ).find((header) => header.textContent.trim() === "Notes");
+        ).find((header) => header.textContent.trim() === "Request updates");
 
         const notesDetails = document.querySelector(".le-request-note-details");
 
@@ -311,49 +313,86 @@ document.addEventListener("DOMContentLoaded", function () {
           ".le-request-note-created time"
         );
 
+        // if (datetimeElements.length > 0) {
+        //   datetimeElements.forEach((element) => {
+        //     const dateTime = element.getAttribute("datetime");
+        //     const timezone = element.getAttribute("data-timezone");
+        //     /**
+        //      * Formats the date and time for request notes, adding ordinal suffixes to the day.
+        //      */
+
+        //     if (dateTime && timezone) {
+        //       const date = new Date(dateTime);
+
+        //       const options = {
+        //         day: "numeric",
+        //         month: "long",
+        //         year: "numeric",
+        //         hour: "numeric",
+        //         minute: "numeric",
+        //         hour12: true, // Use AM/PM format
+        //         timeZone: timezone,
+        //       };
+
+        //       const formattedDate = new Intl.DateTimeFormat(
+        //         "en-GB",
+        //         options
+        //       ).format(date);
+
+        //       // Add ordinal suffix (e.g., "st", "nd", "rd", "th")
+        //       const day = date.getDate();
+        //       const suffix =
+        //         day % 10 === 1 && day !== 11
+        //           ? "st"
+        //           : day % 10 === 2 && day !== 12
+        //           ? "nd"
+        //           : day % 10 === 3 && day !== 13
+        //           ? "rd"
+        //           : "th";
+
+        //       const dayWithSuffix = formattedDate.replace(
+        //         /(\d+)/,
+        //         `$1${suffix}`
+        //       );
+
+        //       element.textContent = dayWithSuffix;
+        //     }
+        //   });
+        // }
         if (datetimeElements.length > 0) {
           datetimeElements.forEach((element) => {
             const dateTime = element.getAttribute("datetime");
             const timezone = element.getAttribute("data-timezone");
-            /**
-             * Formats the date and time for request notes, adding ordinal suffixes to the day.
-             */
 
             if (dateTime && timezone) {
               const date = new Date(dateTime);
 
-              const options = {
-                day: "numeric",
-                month: "long",
-                year: "numeric",
-                hour: "numeric",
-                minute: "numeric",
-                hour12: true, // Use AM/PM format
+              // Options for date part: dd/month/yyyy
+              const dateOptions = {
+                day: "2-digit",   // dd
+                month: "long",    // month
+                year: "numeric",  // yyyy
                 timeZone: timezone,
               };
 
-              const formattedDate = new Intl.DateTimeFormat(
-                "en-GB",
-                options
-              ).format(date);
+              // Options for time part: hh:mm am/pm
+              const timeOptions = {
+                hour: "2-digit",  // hh
+                minute: "2-digit",// mm
+                hour12: true,     // am/pm
+                timeZone: timezone,
+              };
 
-              // Add ordinal suffix (e.g., "st", "nd", "rd", "th")
-              const day = date.getDate();
-              const suffix =
-                day % 10 === 1 && day !== 11
-                  ? "st"
-                  : day % 10 === 2 && day !== 12
-                  ? "nd"
-                  : day % 10 === 3 && day !== 13
-                  ? "rd"
-                  : "th";
+              // Get formatted date (e.g., "05 December 2025")
+              const formattedDate = date.toLocaleDateString("en-GB", dateOptions);
 
-              const dayWithSuffix = formattedDate.replace(
-                /(\d+)/,
-                `$1${suffix}`
-              );
+              // Get formatted time (e.g., "04:52 pm")
+              const formattedTime = date.toLocaleTimeString("en-US", timeOptions);
 
-              element.textContent = dayWithSuffix;
+              // Combine into the required format: dd/month/yyyy at hh:mm am/pm
+              const finalFormattedString = `${formattedDate.replace(/ /g, "/").replace(",", "")} at ${formattedTime}`;
+
+              element.textContent = finalFormattedString;
             }
           });
         }

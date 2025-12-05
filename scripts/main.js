@@ -2156,57 +2156,6 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     }
   }
 
-  // --- OHMS --------------------------------------------------------------- \\
-
-  // if (
-  //   action === "retrieve-social-ids" &&
-  //   response.data["profile-socialId-ohms"]
-  // ) {
-  //   const screen =
-  //     kdf.form.name === "hub_rent_summary" ? "RNT1" : "personDetails";
-  //   const agentId = response.data.agendId;
-  //   const ohmsId = response.data["profile-socialId-ohms"];
-
-  //   const url = `${response.data.url}?screenId=${screen}&crmAgentId=${agentId}&hmsPersonId=${ohmsId}&refreshParam=<xref1>&dummy=<!2!/CurrentTime/Time!>`;
-  //   const iframe = document.createElement("iframe");
-
-  //   iframe.id = "ifrm1";
-  //   iframe.width = "100%";
-  //   iframe.height = screen === "RNT1" ? "521" : "725";
-  //   iframe.src = url;
-
-  //   const container = document.getElementById("hub-screen-container");
-
-  //   if (container) {
-  //     container.innerHTML = "";
-  //     container.appendChild(iframe);
-
-  //     hideShowMultipleElements([
-  //       { name: "ahtm_hub_screen", display: "show" },
-  //       { name: "area_about_you", display: "hide" },
-  //       { name: "area_address_lookup_about_you", display: "hide" },
-  //       { name: "area_address_details_about_you", display: "hide" },
-  //       { name: "but_view_rent_account", display: ohmsId ? "show" : "hide" },
-  //     ]);
-  //   }
-
-  // if (kdf.access === "agent") {
-  //   setTimeout(() => {
-  //     KDF.customdata(
-  //       "retrieve-council-housing-property-details",
-  //       "_KDF_custom",
-  //       true,
-  //       true,
-  //       {
-  //         propertId: KDF.getVal("txt_uprn_about_you"),
-  //         property: KDF.getVal("txt_property_about_you"),
-  //         postcode: KDF.getVal("txt_postcode_about_you"),
-  //       }
-  //     );
-  //   }, 500);
-  // }
-  // }
-
   // --- MAP ---------------------------------------------------------------- \\
 
   do_KDF_Custom_esriMap(action, response);

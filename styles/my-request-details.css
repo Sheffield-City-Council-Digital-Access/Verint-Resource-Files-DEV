@@ -213,6 +213,8 @@
 
 .le-request-form-details #dform_container .container .area .box {
   max-width: 100% !important;
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-sm);
 }
 
 .le-request-form-details section.review-page-content-section {
