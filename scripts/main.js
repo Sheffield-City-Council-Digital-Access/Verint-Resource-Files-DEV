@@ -706,6 +706,17 @@ function handleOnReadyEvent(_, kdf) {
       mapCntainer = mapCntainer.id.replace("dform_widget_html_", "");
     }
 
+
+    let searchAgainButtonContainer = document.querySelector(
+      `#${currentPageId} .manual-address-search-again-container`
+    );
+    if (searchAgainButtonContainer) {
+      searchAgainButtonContainer = searchAgainButtonContainer.id.replace(
+        "dform_widget_html_",
+        ""
+      );
+    }
+
     if (
       resultsList &&
       searchInput &&
@@ -720,6 +731,7 @@ function handleOnReadyEvent(_, kdf) {
         { name: setAddressButton, display: "hide" },
         { name: selectedAddressContainer, display: "hide" },
         { name: mapCntainer, display: "show" },
+        { name: searchAgainButtonContainer, display: "hide" },
       ]);
 
       searchInput.focus();
