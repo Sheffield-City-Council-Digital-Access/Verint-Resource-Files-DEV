@@ -189,3 +189,7 @@
   background: var(--c-focus-links);
   border-color: var(--c-focus-links);
 }
+
+#dform_container .dform_section_box_account #dform_widget_button_but_edit_your_profile {
+  margin-top: var(--spacing-smd);
+}

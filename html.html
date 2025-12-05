@@ -50,8 +50,7 @@
       </div>
       <div>
         <div class="dform_validationMessage">Enter the house name or number</div>
-        <input
-          id="dform_widget_txt_property_about_the_address" type="text" name="txt_property_about_the_address"
+        <input id="dform_widget_txt_property_about_the_address" type="text" name="txt_property_about_the_address"
           class="dform_persist"
           aria-labelledby="dform_widget_label_txt_property_about_the_address dform_widget_helptext_txt_property_about_the_address"
           data-mapfrom="" data-customalias="property" required="" title="Enter the house name or number" tabindex="">
@@ -65,8 +64,7 @@
       </div>
       <div>
         <div class="dform_validationMessage">Enter the street name</div>
-        <input
-          id="dform_widget_txt_street_name_about_the_address" type="text" name="txt_street_name_about_the_address"
+        <input id="dform_widget_txt_street_name_about_the_address" type="text" name="txt_street_name_about_the_address"
           class="dform_persist"
           aria-labelledby="dform_widget_label_txt_street_name_about_the_address dform_widget_helptext_txt_street_name_about_the_address"
           data-mapfrom="" data-customalias="streetName" required="" title="Enter the street name" tabindex="">
@@ -80,8 +78,8 @@
       </div>
       <div>
         <div class="dform_validationMessage">Enter the city</div>
-        <input id="dform_widget_txt_city_about_the_address"
-          type="text" name="txt_city_about_the_address" class="dform_persist"
+        <input id="dform_widget_txt_city_about_the_address" type="text" name="txt_city_about_the_address"
+          class="dform_persist"
           aria-labelledby="dform_widget_label_txt_city_about_the_address dform_widget_helptext_txt_city_about_the_address"
           data-mapfrom="" data-customalias="city" required="" title="Enter the city" data-forcecase="upper" tabindex="">
       </div>
@@ -94,8 +92,7 @@
       </div>
       <div>
         <div class="dform_validationMessage">Enter the postcode in the correct format</div>
-        <input
-          id="dform_widget_txt_postcode_about_the_address" type="text" name="txt_postcode_about_the_address"
+        <input id="dform_widget_txt_postcode_about_the_address" type="text" name="txt_postcode_about_the_address"
           class="dform_persist"
           aria-labelledby="dform_widget_label_txt_postcode_about_the_address dform_widget_helptext_txt_postcode_about_the_address"
           data-mapfrom="" data-customalias="postCode" required=""
@@ -125,8 +122,7 @@
       </div>
       <div>
         <div class="dform_validationMessage">Enter your house name or number</div>
-        <input
-          id="dform_widget_txt_property_about_you" type="text" name="txt_property_about_you" class="dform_persist"
+        <input id="dform_widget_txt_property_about_you" type="text" name="txt_property_about_you" class="dform_persist"
           aria-labelledby="dform_widget_label_txt_property_about_you dform_widget_helptext_txt_property_about_you"
           data-mapfrom="profile-AddressNumber" data-customalias="property" required=""
           title="Enter your house name or number" tabindex="">
@@ -140,8 +136,8 @@
       </div>
       <div>
         <div class="dform_validationMessage">Enter your street name</div>
-        <input
-          id="dform_widget_txt_street_name_about_you" type="text" name="txt_street_name_about_you" class="dform_persist"
+        <input id="dform_widget_txt_street_name_about_you" type="text" name="txt_street_name_about_you"
+          class="dform_persist"
           aria-labelledby="dform_widget_label_txt_street_name_about_you dform_widget_helptext_txt_street_name_about_you"
           data-mapfrom="profile-AddressLine1" data-customalias="streetName" required="" title="Enter your street name"
           tabindex="">
@@ -154,8 +150,7 @@
       </div>
       <div>
         <div class="dform_validationMessage">Enter your city</div>
-        <input id="dform_widget_txt_city_about_you"
-          type="text" name="txt_city_about_you" class="dform_persist"
+        <input id="dform_widget_txt_city_about_you" type="text" name="txt_city_about_you" class="dform_persist"
           aria-labelledby="dform_widget_label_txt_city_about_you dform_widget_helptext_txt_city_about_you"
           data-mapfrom="profile-AddressLine4" data-customalias="city" required="" title="Enter your city"
           data-forcecase="upper" tabindex="">
@@ -168,8 +163,7 @@
       </div>
       <div>
         <div class="dform_validationMessage">Enter your postcode in the correct format</div>
-        <input
-          id="dform_widget_txt_postcode_about_you" type="text" name="txt_postcode_about_you" class="dform_persist"
+        <input id="dform_widget_txt_postcode_about_you" type="text" name="txt_postcode_about_you" class="dform_persist"
           aria-labelledby="dform_widget_label_txt_postcode_about_you dform_widget_helptext_txt_postcode_about_you"
           data-mapfrom="profile-Postcode" data-customalias="postCode" required=""
           pattern="([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2})"
@@ -183,3 +177,35 @@
     </button>
   </div>
 </details>
+
+
+
+
+<div class="user-account-details">
+  <div class="user-detail-group">
+    <p class="detail-label">Name</p>
+    <p class="detail-value" id="name-value"></p>
+  </div>
+  <div class="user-detail-group">
+    <p class="detail-label">Email</p>
+    <p class="detail-value" id="email-value"></p>
+  </div>
+  <div class="user-detail-group">
+    <p class="detail-label">Date of birth</p>
+    <p class="detail-value" id="dob-value"></p>
+  </div>
+  <div class="user-detail-group">
+    <p class="detail-label">Phone</p>
+    <p class="detail-value" id="phone-value"></p>
+  </div>
+  <div class="user-detail-group">
+    <p class="detail-label">Address</p>
+    <p class="detail-value" id="address-value"></p>
+  </div>
+</div>
+
+<button type="button" tabindex="0" id="dform_widget_button_but_edit_your_profile" data-active="true" data-type="move"
+  data-moveto="page_about_you" data-desktopaction=""
+  class="dform_widget success-btn dform_widget_type_button dform_widget_but_edit_your_profile">Edit your
+  profile
+</button>

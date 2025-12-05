@@ -619,6 +619,12 @@ function handleOnReadyEvent(_, kdf) {
     $(`#${event.target.id}`).val(formatTitleCase(event.target.value));
   });
 
+  // --- HANDLE FORMAT PHONE NUMBER ----------------------------------------- \\
+
+  $('input[type="tel"]').on('change', (event) => {
+    $(`#${event.target.id}`).val(formatPhoneNumber(event.target.value));
+  });
+
   // --- HANDLE FIND BUTTON CLICK ------------------------------------------- \\
 
   $(".find-btn").on("click", function () {
@@ -724,188 +730,6 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE SET ADDRESS ------------------------------------------------- \\
 
-  // The main click event handler
-  // $(document).on("click", ".set-address-btn", function () {
-  //   const handleSearchResults = (currentPageId, buttonId) => {
-  //     const searchResultsContainer = document.querySelector(
-  //       `#${currentPageId} .address-search-results`
-  //     );
-  //     const searchResultsSelect =
-  //       searchResultsContainer?.querySelector("select");
-
-  //     if (searchResultsSelect && searchResultsSelect.value) {
-  //       // A valid address was selected.
-  //       const action =
-  //         addressSearchType === "national"
-  //           ? "retrieve-national-address"
-  //           : "retrieve-local-address";
-  //       KDF.customdata(action, buttonId, true, true, {
-  //         propertyId: searchResultsSelect.value,
-  //       });
-  //       return true; // Return true to indicate success
-  //     } else if (searchResultsContainer) {
-  //       // No address was selected, so show the validation error.
-  //       const validationMessage = searchResultsContainer.querySelector(
-  //         ".dform_validationMessage"
-  //       );
-  //       if (validationMessage) {
-  //         validationMessage.style.display = "block";
-  //       }
-  //       if (searchResultsSelect) {
-  //         searchResultsSelect.classList.add("dform_fielderror");
-  //       }
-  //       return false; // Return false to indicate failure
-  //     }
-  //     return false; // No search results container found
-  //   };
-
-  //   const currentPageId = getCurrentPageId();
-  //   const manualAddressElement = document.querySelector(
-  //     `#${currentPageId} .manual-address-container`
-  //   );
-
-  //   // Check if the manual address form exists on the page
-  //   if (manualAddressElement) {
-  //     const detailsElement =
-  //       manualAddressElement.querySelector(".details-accordion");
-
-  //     // Check if the manual address accordion is open
-  //     if (detailsElement && detailsElement.hasAttribute("open")) {
-  //       // Scenario 1: Manual form is open; validate its fields.
-  //       const searchResultsSelect = document.querySelector(
-  //         `#${currentPageId} .address-search-results select`
-  //       );
-  //       if (searchResultsSelect) {
-  //         searchResultsSelect.value = ""; // Clear selected value from search results
-  //         KDF.setWidgetNotRequired(
-  //           searchResultsSelect.id.replace("dform_widget_", "")
-  //         );
-  //       }
-
-  //       const addressFields = getValuesOfInputFields([
-  //         { alias: "property" },
-  //         { alias: "streetName" },
-  //         { alias: "city" },
-  //         { alias: "postCode" },
-  //       ]);
-
-  //       let allFieldsValid = true;
-  //       addressFields.forEach((field) => {
-  //         const fieldContainer = document
-  //           .querySelector(`[data-customalias="${field.alias}"]`)
-  //           ?.closest(".dform_widget_field");
-  //         const validationMessage = fieldContainer?.querySelector(
-  //           ".dform_validationMessage"
-  //         );
-  //         const inputElement = fieldContainer?.querySelector("input");
-
-  //         if (!field.value) {
-  //           allFieldsValid = false;
-  //           if (validationMessage) validationMessage.style.display = "block";
-  //           if (inputElement) inputElement.classList.add("dform_fielderror");
-  //         } else {
-  //           if (validationMessage) validationMessage.style.display = "none";
-  //           if (inputElement) inputElement.classList.remove("dform_fielderror");
-  //         }
-  //       });
-
-  //       if (allFieldsValid) {
-  //         const addressearchResults = document.querySelector(
-  //           `#${currentPageId} .address-search-results`
-  //         );
-  //         let setAddressButton = document.querySelector(
-  //           `#${currentPageId} .set-address-btn`
-  //         );
-  //         if (setAddressButton) {
-  //           setAddressButton = setAddressButton.id.replace(
-  //             "dform_widget_button_",
-  //             ""
-  //           );
-  //         }
-
-  //         const buttonContainer = document.querySelector(
-  //           `#${currentPageId} .address-search-btn-container`
-  //         );
-  //         let manualAddressElement = document.querySelector(
-  //           `#${currentPageId} .manual-address-container`
-  //         );
-  //         if (manualAddressElement) {
-  //           manualAddressElement = manualAddressElement.id.replace(
-  //             "dform_widget_html_",
-  //             ""
-  //           );
-  //         }
-
-  //         const addressDataForDisplay = {
-  //           property:
-  //             addressFields.find((field) => field.alias === "property")
-  //               ?.value || "",
-  //           streetName:
-  //             addressFields.find((field) => field.alias === "streetName")
-  //               ?.value || "",
-  //           city:
-  //             addressFields.find((field) => field.alias === "city")?.value ||
-  //             "",
-  //           postcode:
-  //             addressFields.find((field) => field.alias === "postCode")
-  //               ?.value || "",
-  //         };
-
-  //         const fullAddressDisplay = buildAddressMarkup(addressDataForDisplay);
-  //         let selectedAddressContainer = document.querySelector(
-  //           `#${currentPageId} .selected-address-container`
-  //         );
-  //         if (selectedAddressContainer) {
-  //           selectedAddressContainer.innerHTML = fullAddressDisplay;
-  //           selectedAddressContainer = selectedAddressContainer.id.replace(
-  //             "dform_widget_html_",
-  //             ""
-  //           );
-  //         }
-
-  //         let fullAddress = "";
-  //         addressFields.forEach((field) => {
-  //           if (field.value) {
-  //             if (field.alias === "streetName" || field.alias === "city") {
-  //               fullAddress += `${field.value}, `;
-  //             } else {
-  //               fullAddress += `${field.value} `;
-  //             }
-  //           }
-  //         });
-  //         fullAddress = fullAddress.trim();
-
-  //         setValuesToInputFields([
-  //           { alias: "fullAddress", value: fullAddress },
-  //         ]);
-
-  //         if (addressearchResults) {
-  //           const selectElement = addressearchResults.querySelector("select");
-  //           if (selectElement) {
-  //             selectElement.style.display = "none"; // Hides the element
-  //           }
-  //         }
-
-  //         if (buttonContainer) {
-  //           buttonContainer.style.display = "none"; // Hides the element
-  //         }
-
-  //         hideShowMultipleElements([
-  //           { name: setAddressButton, display: "hide" },
-  //           { name: selectedAddressContainer, display: "show" },
-  //           { name: manualAddressElement, display: "hide" },
-  //         ]);
-  //       }
-  //     } else {
-  //       // Scenario 2: Manual form is not open; validate the search results dropdown.
-  //       handleSearchResults(currentPageId, this.id);
-  //     }
-  //   } else {
-  //     // Scenario 3: The manual address container doesn't exist at all; validate search results.
-  //     handleSearchResults(currentPageId, this.id);
-  //   }
-  // });
-
   $(document).on("click", ".set-address-btn, .set-manual-address-btn", function () {
     const clickedButton = $(this);
     const isManualAddressClick = clickedButton.hasClass("set-manual-address-btn");
@@ -950,15 +774,29 @@ function handleOnReadyEvent(_, kdf) {
   
     // Scenario A: The "Set Manual Address" button was explicitly clicked
     if (isManualAddressClick) {
+      let searchInput = document.querySelector(
+        `#${currentPageId} input[data-customalias="postcode"]`
+      );
+      if (searchInput) {
+        searchInput = searchInput.id.replace("dform_widget_", "");
+      }
+      let searchButton = document.querySelector(
+        `#${currentPageId} .address-search-btn`
+      );
+      if (searchButton) {
+        searchButton = searchButton.id.replace("dform_widget_button_", "");
+      }
+
       // Clear selected value from search results and make not required
-      const searchResultsSelect = document.querySelector(
+      let searchResultsSelect = document.querySelector(
         `#${currentPageId} .address-search-results select`
       );
       if (searchResultsSelect) {
-        searchResultsSelect.value = "";
-        KDF.setWidgetNotRequired(
-          searchResultsSelect.id.replace("dform_widget_", "")
+        searchResultsSelect = searchResultsSelect.id.replace(
+          "dform_widget_",
+          ""
         );
+        KDF.setWidgetNotRequired(searchResultsSelect);
       }
   
       // Validate Manual Address Fields (same as your original Scenario 1 logic)
@@ -1042,6 +880,16 @@ function handleOnReadyEvent(_, kdf) {
             ""
           );
         }
+
+        let searchAgainButtonContainer = document.querySelector(
+          `#${currentPageId} .manual-address-search-again-container`
+        );
+        if (searchAgainButtonContainer) {
+          searchAgainButtonContainer = searchAgainButtonContainer.id.replace(
+            "dform_widget_html_",
+            ""
+          );
+        }
   
         let fullAddress = "";
         addressFields.forEach((field) => {
@@ -1074,7 +922,16 @@ function handleOnReadyEvent(_, kdf) {
           { name: setAddressButton, display: "hide" },
           { name: selectedAddressContainer, display: "show" },
           { name: manualAddressElement, display: "hide" },
+          { name: searchAgainButtonContainer, display: isManualAddressClick ? "show" : "hide" },
         ]);
+
+        if (isManualAddressClick) {
+          hideShowMultipleElements([
+            { name: searchResultsSelect, display: "hide" },
+            { name: searchInput, display: "hide" },
+            { name: searchButton, display: "hide" },
+          ]);
+        }
       }
     } else {
       // Scenario B: The "Set Address" button was clicked (not the manual one)
@@ -5297,6 +5154,90 @@ function formatRemoveEccessWhiteSpace(value) {
     return formattedString;
   }
   return "";
+}
+
+// --- FORMATING PHONE NUMBER INTO GDS BEST PRACTICE ------------------------ \\
+
+function formatPhoneNumber(telephone) {
+  // Clean the input: strip all non-digits, but KEEP the leading plus sign (+)
+  let digits = telephone.replace(/[^0-9+]/g, '');
+
+  // Case A: Missing the leading '+' but includes the country code '44'
+  if (digits.startsWith('44') && !digits.startsWith('+')) {
+      digits = '+' + digits;
+  }
+
+  // Case B: Missing the domestic trunk code '0' after +44
+  if (digits.startsWith('+44') && digits.length === 12 && !digits.startsWith('+440')) {
+      digits = digits.substring(0, 3) + '0' + digits.substring(3);
+  }
+  
+  // Case C: Missing both +44 and 0
+  if (digits.length >= 10 && digits.length <= 11 && !digits.startsWith('0') && !digits.startsWith('+')) {
+      digits = '0' + digits;
+  }
+
+  // Check for International Format
+  if (digits.startsWith('+')) {
+      
+      // Specific UK International Formatting (+44)
+      if (digits.startsWith('+44')) {
+          const ukDigits = digits.substring(3); 
+          
+          // Check for 10 or 11 digits following the +44 (this includes the '0' if present)
+          if (ukDigits.length === 10 || ukDigits.length === 11) { 
+              
+              // If the number is 11 digits
+              if (ukDigits.length === 11) {
+                  // Assuming structure: 0 (1-digit) Area (2-digit) Exchange (4-digit) Line (4-digit)
+                  const areaCode = ukDigits.substring(1, 3);
+                  const exchange = ukDigits.substring(3, 7);
+                  const line = ukDigits.substring(7);
+                  
+                  return `+44 (0)${areaCode} ${exchange} ${line}`;
+              }
+              
+              // If the number is 10 digits (07xxx mobile/01xxx geographic)
+              if (ukDigits.length === 10) {
+                  // Structure: 0 (1-digit) MobilePrefix (4-digit) Line (5-digit)
+                  const prefix = ukDigits.substring(1, 5);
+                  const line = ukDigits.substring(5);
+                  
+                  return `+44 (0)${prefix} ${line}`;
+              }
+          }
+      }
+      
+      // General International
+      return digits; 
+  }
+
+  // Handle UK Domestic Numbers (must start with 0)
+  if (digits.startsWith('0')) {
+      
+      // --- 11-Digit Numbers ---
+      if (digits.length === 11) {
+          
+          // Geographic (01xx, 02xx) 
+          if (digits.startsWith('01') || digits.startsWith('02')) {
+              return digits.substring(0, 4) + ' ' + digits.substring(4, 7) + ' ' + digits.substring(7);
+          }
+
+          // Mobile (07xxx)
+          if (digits.startsWith('07')) {
+              return digits.substring(0, 5) + ' ' + digits.substring(5);
+          }
+      }
+      
+      // --- 10-Digit Numbers ---
+      if (digits.length === 10) {
+          // Non-Geographic/Memorable (0800, 03xx, etc.)
+          return digits.substring(0, 4) + ' ' + digits.substring(4, 7) + ' ' + digits.substring(7);
+      }
+  }
+  
+  // Fallback: Return the cleaned original input if it's unrecognizable
+  return digits;
 }
 
 // --- FORMATING DATE AND TIME ---------------------------------------------- \\
