@@ -2273,7 +2273,9 @@ function displayBackButton(show) {
   } else {
     console.warn("Element with ID 'dform_widget_button_but_back' not found.");
   }
-  if (show) controlContainer.style.display = "flex";
+  setTimeout(() => {
+    if (show) controlContainer.style.display = "flex";
+  }, 0);
 }
 
 // --- GET CURRENT PAGE ----------------------------------------------------- \\
