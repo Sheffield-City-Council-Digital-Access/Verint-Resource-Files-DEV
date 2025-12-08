@@ -965,6 +965,7 @@ function handleOnReadyEvent(_, kdf) {
   
       const streetName = getInput("streetName");
       const usrn = getInput("usrn");
+      console.log('handleAddressSection', streetName, usrn)
   
       if (fullAddressHasValue) {
         if (streetName && usrn) {
@@ -999,13 +1000,20 @@ function handleOnReadyEvent(_, kdf) {
   
       if (mapElement && detailsElement && detailsElement.hasAttribute("open")) {
         const siteName = getInput("siteName");
+        const streetNameValue = KDF.getVal(siteName.name) || KDF.getVal(getInput("streetName").name);
         const siteCode = getInput("siteCode");
+        const usrnValue = KDF.getVal(siteCode.name) || KDF.getVal(getInput("usrn").name);
         const validUsrn = acceptGMSites
           ? true
           : siteCode && siteCode.startsWith("344");
+        console.log('handleMapSection', streetNameValue, usrnValue, validUsrn)
   
-        if (siteName && siteCode && validUsrn) {
+        if (streetNameValue && usrnValue && validUsrn) {
           clearPartialAddressSearch();
+          const siteName = getInput("siteName");
+          if (siteName) KDF.setVal(siteName.name, streetNameValue);
+          const siteCode = getInput("siteCode");
+          if (siteCode) KDF.setVal(siteCode.name, usrnValue);
           goNextOrComplete();
           return true; // Map section handled
         } else {

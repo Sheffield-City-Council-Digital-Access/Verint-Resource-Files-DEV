@@ -522,7 +522,7 @@
 
 #dform_container .dashboard-details-container .your-nearest-container .card .opening-times {
   width: 100%;
-  gap: var(--spacing-sm);
+  gap: 0;
 }
 
 #dform_container .dashboard-details-container .your-nearest-container .card .time-row {
