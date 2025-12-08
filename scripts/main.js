@@ -42,26 +42,26 @@ const surveys = [
   {
     id: "satisfaction",
     content: [
-      { p: "We want to know how we’re doing and where we can do better. Please answer a few quick questions about your experience today." },
+      { p: "We’d like to know how we’re doing and where we can do better." },
+      { p: "Please take a moment to answer a few quick questions about your experience today. Your feedback helps us to:" },
+      {
+        ul: [
+          "See what’s working well",
+          "Find out what we can improve",
+          "Make our services better for everyone"
+        ]
+      },
     ],
     formName: "customer_satisfaction",
-    label: "Take our customer satisfaction survey"
+    label: "Give us your detailed feedback"
   },
   // {
-  //   id: "satisfaction2",
+  //   id: "satisfaction",
   //   content: [
-  //     { p: "We’d like to know how we’re doing and where we can do better." },
-  //     { p: "Please take a moment to answer a few quick questions about your experience today. Your feedback helps us to:" },
-  //     {
-  //       ul: [
-  //         "See what’s working well",
-  //         "Find out what we can improve",
-  //         "Make our services better for everyone"
-  //       ]
-  //     },
+  //     { p: "We want to know how we’re doing and where we can do better. Please answer a few quick questions about your experience today." },
   //   ],
   //   formName: "customer_satisfaction",
-  //   label: "Give us your detailed feedback"
+  //   label: "Take our customer satisfaction survey"
   // },
   // {
   //   id: "equalities",
