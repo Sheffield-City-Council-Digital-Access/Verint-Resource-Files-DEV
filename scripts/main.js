@@ -1549,8 +1549,9 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
 
   let skipPages = 1;
   console.log(kdf.access)
-  if (KDF.kdf().access === "citizen") {
-    console.log("else")
+  if (kdf.access === "citizen") {
+    console.log("if", pageName !== "complete" &&
+      kdf.form.complete !== "Y")
     displayBackButton(
       pageName !== "complete" &&
       kdf.form.complete !== "Y"
