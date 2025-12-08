@@ -1548,25 +1548,23 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
 
   let skipPages = 1;
-  console.log(kdf.access)
-  if (kdf.access === "citizen") {
-    console.log("if", pageName !== "complete" &&
-      kdf.form.complete !== "Y")
-    displayBackButton(
-      pageName !== "complete" &&
-      kdf.form.complete !== "Y"
-    );
-  } else {
-    console.log("else")
-    if (document.getElementById("dform_page_page_sign_in")) {
-      skipPages++;
+  setTimeout(() => {
+    if (kdf.access === "citizen") {
+      displayBackButton(
+        pageName !== "complete" &&
+        kdf.form.complete !== "Y"
+      );
+    } else {
+      if (document.getElementById("dform_page_page_sign_in")) {
+        skipPages++;
+      }
+      displayBackButton(
+        targetpageid > skipPages &&
+        pageName !== "complete" &&
+        kdf.form.complete !== "Y"
+      );
     }
-    displayBackButton(
-      targetpageid > skipPages &&
-      pageName !== "complete" &&
-      kdf.form.complete !== "Y"
-    );
-  }
+  }, 0);
 
   const controlElement = document.getElementById("dform_controls");
   if (controlElement) {
