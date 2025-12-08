@@ -38,6 +38,41 @@ let allAccounts = [];
 
 const datePairs = [];
 
+const surveys = [
+  {
+    id: "satisfaction",
+    content: [
+      { p: "We want to know how we’re doing and where we can do better. Please answer a few quick questions about your experience today." },
+    ],
+    formName: "customer_satisfaction",
+    label: "Take our customer satisfaction survey"
+  },
+  {
+    id: "satisfaction2",
+    content: [
+      { p: "We’d like to know how we’re doing and where we can do better." },
+      { p: "Please take a moment to answer a few quick questions about your experience today. Your feedback helps us to:" },
+      {
+        ul: [
+          "See what’s working well",
+          "Find out what we can improve",
+          "Make our services better for everyone"
+        ]
+      },
+    ],
+    formName: "customer_satisfaction",
+    label: "Give us your detailed feedback"
+  },
+  {
+    id: "equalities",
+    content: [
+      { p: "Please answer a few anonymous questions about yourself. Your answers will help make our forms as fair and accessible as possible." },
+    ],
+    formName: "equalities_monitoring",
+    label: "Take our equalities monitoring survey"
+  },
+];
+
 const relatedServices = [];
 
 let fieldsToCheckBeforeClose = [];
@@ -548,18 +583,6 @@ function handleOnReadyEvent(_, kdf) {
       );
     }
   }
-
-  // --- SET FEEDBACK LINK -------------------------------------------------- \\
-
-  buildFormLink("give-feedback", "give_feedback_suggestion", true);
-
-  // --- SET EQUALITIES LINK ------------------------------------------------ \\
-
-  buildFormLink("equalities-information", "equalities_monitoring", true);
-
-  // --- SET SURVEY LINK ---------------------------------------------------- \\
-
-  buildFormLink("satisfaction-survey", "customer_satisfaction", true);
 
   // --- ADD VALIDATION MESSAGES TO STORAGE --------------------------------- \\
 
@@ -6012,29 +6035,6 @@ function buildMyAccountLink(referenceNumber) {
   KDF.showWidget("ahtm_confirmation_account");
 }
 
-/**
- * Builds and updates the href for a given feedback link using the global formattedTitle.
- * @param {string} formName - The name of the form to build the URL for (e.g., 'equalities_monitoring').
- */
-function buildFormLink(id, formName, includeFormTitle = false) {
-  // Build the ID of the element to find based on the form name
-  const linkElement = document.getElementById(id);
-
-  if (!linkElement) {
-    console.warn(`The link element with id '${id}' could not be found.`);
-    return;
-  }
-
-  // Conditionally add the formTitle part to the URL
-  const titleParameter = includeFormTitle
-    ? `?formTitle=${KDF.getVal("le_title").replace(/\s+/g, "-")}`
-    : "";
-  const newHref = `/site/portal/form/${formName}${titleParameter}`;
-
-  // Update the href attribute
-  linkElement.setAttribute("href", newHref);
-}
-
 // --- BUILD NOTIFICATION BANNERS ------------------------------------------- \\
 
 /**
@@ -6130,6 +6130,95 @@ const closeAllNotifications = () => {
     notification.remove();
   });
 };
+
+// --- BUILD SURVEYS -------------------------------------------------------- \\
+
+/**
+ * Processes the entire survey data object and renders all surveys 
+ * under a single fixed header into the "survey-panel" container.
+ * @param {object[]} data The array of survey objects to render. 
+ */
+function displaySurveys(data) {
+  const container = document.getElementById("survey-panel");
+
+  if (!container) {
+    console.error(`Container with ID "survey-panel" not found.`);
+    return;
+  }
+
+  const surveysToRender = data;
+
+  if (surveysToRender.length === 0) {
+    container.innerHTML = "";
+    return;
+  }
+
+  let urlParam = '';
+  const kdfForm = KDF.kdf().form;
+
+  const caseId = kdfForm?.caseid;
+  const ref = kdfForm?.ref;
+
+  if (caseId && ref) {
+    urlParam = `?id=${caseId}-${ref}`;
+  } else if (caseId) {
+    urlParam = `?id=${caseId}`;
+  } else if (ref) {
+    urlParam = `?id=${ref}`;
+  }
+
+  let finalHtml = '';
+  finalHtml += `<div class="survey-section">`;
+  finalHtml += `<h3 class="fixed-header">Help us improve our services</h3>`;
+
+  surveysToRender.forEach((survey, index) => {
+    survey.content.forEach(contentBlock => {
+      if (contentBlock.p) {
+        finalHtml += `<p>${contentBlock.p}</p>`;
+      } else if (contentBlock.ul && Array.isArray(contentBlock.ul)) {
+        finalHtml += `<ul>`;
+        contentBlock.ul.forEach(item => {
+          finalHtml += `<li>${item}</li>`;
+        });
+        finalHtml += `</ul>`;
+      }
+    });
+    let finalLinkUrl = '';
+
+    if (KDF.kdf().access === "citizen") {
+      finalLinkUrl = `/site/portal/form/${survey.formName}${urlParam}`;
+    } else {
+      const customerid = KDF.getParams().customerid
+        ? `customerid=${KDF.getParams().customerid}&`
+        : "";
+      const interactionid = KDF.getParams().interactionid
+        ? `interactionid=${KDF.getParams().interactionid}&`
+        : "";
+
+      let baseParams = `${customerid}${interactionid}`;
+      finalLinkUrl = `/form/launch/${survey.formName}?${baseParams}`;
+
+      if (urlParam) {
+        if (baseParams.endsWith('&')) {
+          baseParams = baseParams.slice(0, -1);
+        }
+
+        let separator = baseParams.length > 0 ? '&' : '?';
+        const idParam = urlParam.substring(1);
+        finalLinkUrl = `/form/launch/${survey.formName}${separator}${idParam}`;
+      } else {
+        if (finalLinkUrl.endsWith('?')) {
+          finalLinkUrl = finalLinkUrl.slice(0, -1);
+        }
+      }
+    }
+    finalHtml += `<a href="${finalLinkUrl}" class="survey-link" target="_blank" rel="noopener noreferrer">${survey.label}</a>`;
+  });
+
+  finalHtml += `</div>`;
+
+  container.innerHTML = finalHtml;
+}
 
 // --- NEC SCREENS ---------------------------------------------------------- \\
 
