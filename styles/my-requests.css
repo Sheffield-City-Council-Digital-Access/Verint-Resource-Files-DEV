@@ -138,7 +138,7 @@ li.le-request-status-text {
 }
 
 li.le-stat-open li.le-request-status-text::after {
-  content: " Recieved";
+  content: " Received";
   color: var(--c-orange);
 }
 

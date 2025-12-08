@@ -374,7 +374,7 @@ document.addEventListener("DOMContentLoaded", function () {
               // Options for date part: dd/month/yyyy
               const dateOptions = {
                 day: "2-digit",   // dd
-                month: "long",    // month
+                month: "2-digit", // MM
                 year: "numeric",  // yyyy
                 timeZone: timezone,
               };
