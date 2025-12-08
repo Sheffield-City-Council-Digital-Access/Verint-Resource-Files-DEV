@@ -6173,7 +6173,7 @@ function displaySurveys(data) {
 
   let finalHtml = '';
   finalHtml += `<div class="survey-section">`;
-  finalHtml += `<h3 class="fixed-header">Help us improve our services</h3>`;
+  finalHtml += `<h2 class="fixed-header">Help us improve our services</h2>`;
 
   surveysToRender.forEach((survey, index) => {
     survey.content.forEach(contentBlock => {
