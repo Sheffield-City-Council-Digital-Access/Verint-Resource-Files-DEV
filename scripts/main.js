@@ -512,6 +512,10 @@ function handleOnReadyEvent(_, kdf) {
     refreshReviewPage();
   }
 
+  // --- BUILD SURVEYS ------------------------------------------------------ \\
+
+  displaySurveys(surveys);
+
   // --- BUILD RELATED SERVICES --------------------------------------------- \\
 
   buildRelatedServiceCards(relatedServices, "related-services-panel");
