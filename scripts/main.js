@@ -1548,21 +1548,21 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
 
   let skipPages = 1;
-  // if (kdf.access === "citizen") {
+  if (kdf.access === "citizen") {
     displayBackButton(
       pageName !== "complete" &&
       kdf.form.complete !== "Y"
     );
-  // } else {
-  //   if (document.getElementById("dform_page_page_sign_in")) {
-  //     skipPages++;
-  //   }
-  //   displayBackButton(
-  //     targetpageid > skipPages &&
-  //     pageName !== "complete" &&
-  //     kdf.form.complete !== "Y"
-  //   );
-  // }
+  } else {
+    if (document.getElementById("dform_page_page_sign_in")) {
+      skipPages++;
+    }
+    displayBackButton(
+      targetpageid > skipPages &&
+      pageName !== "complete" &&
+      kdf.form.complete !== "Y"
+    );
+  }
 
   const controlElement = document.getElementById("dform_controls");
   if (controlElement) {
@@ -1612,6 +1612,13 @@ function handleFieldChangeEvent(event, kdf, field) {
     const defaultMessage = getValidationMessageFromSession(field.id);
     if (defaultMessage) {
       updateValidationMessage(field.name, defaultMessage);
+    }
+  }
+
+  if (field.name === 'txt_site_name') {
+    const $selectedAddress = $("#selected-address");
+    if ($selectedAddress.text() === 'Choose a location on the map') {
+      $selectedAddress.text(field.value);
     }
   }
 
