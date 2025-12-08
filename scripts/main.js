@@ -42,14 +42,6 @@ const surveys = [
   {
     id: "satisfaction",
     content: [
-      { p: "We want to know how we’re doing and where we can do better. Please answer a few quick questions about your experience today." },
-    ],
-    formName: "customer_satisfaction",
-    label: "Take our customer satisfaction survey"
-  },
-  {
-    id: "satisfaction2",
-    content: [
       { p: "We’d like to know how we’re doing and where we can do better." },
       { p: "Please take a moment to answer a few quick questions about your experience today. Your feedback helps us to:" },
       {
@@ -63,14 +55,22 @@ const surveys = [
     formName: "customer_satisfaction",
     label: "Give us your detailed feedback"
   },
-  {
-    id: "equalities",
-    content: [
-      { p: "Please answer a few anonymous questions about yourself. Your answers will help make our forms as fair and accessible as possible." },
-    ],
-    formName: "equalities_monitoring",
-    label: "Take our equalities monitoring survey"
-  },
+  // {
+  //   id: "satisfaction",
+  //   content: [
+  //     { p: "We want to know how we’re doing and where we can do better. Please answer a few quick questions about your experience today." },
+  //   ],
+  //   formName: "customer_satisfaction",
+  //   label: "Take our customer satisfaction survey"
+  // },
+  // {
+  //   id: "equalities",
+  //   content: [
+  //     { p: "Please answer a few anonymous questions about yourself. Your answers will help make our forms as fair and accessible as possible." },
+  //   ],
+  //   formName: "equalities_monitoring",
+  //   label: "Take our equalities monitoring survey"
+  // },
 ];
 
 const relatedServices = [];
@@ -6173,7 +6173,7 @@ function displaySurveys(data) {
 
   let finalHtml = '';
   finalHtml += `<div class="survey-section">`;
-  finalHtml += `<h3 class="fixed-header">Help us improve our services</h3>`;
+  finalHtml += `<h2 class="fixed-header">Help us improve our services</h2>`;
 
   surveysToRender.forEach((survey, index) => {
     survey.content.forEach(contentBlock => {
