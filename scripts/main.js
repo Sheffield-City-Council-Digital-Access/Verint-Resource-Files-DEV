@@ -1548,12 +1548,15 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
 
   let skipPages = 1;
+  console.log(kdf.access)
   if (kdf.access === "citizen") {
+    console.log("else")
     displayBackButton(
       pageName !== "complete" &&
       kdf.form.complete !== "Y"
     );
   } else {
+    console.log("else")
     if (document.getElementById("dform_page_page_sign_in")) {
       skipPages++;
     }
@@ -3166,6 +3169,31 @@ function formatTimeForSubmission(hour, minute, ampm) {
   const paddedHour = hours24.toString().padStart(2, "0");
   const paddedMinute = minute.toString().padStart(2, "0");
   return `${paddedHour}:${paddedMinute}`;
+}
+
+// --- BACK BUTTON  FUNCTIONS ----------------------------------------------- \\
+
+function goBack() {
+  const page = KDF.kdf().form.currentpage;
+  const signInPage = document.getElementById("dform_page_page_sign_in");
+  const backBtn = document.getElementById('dform_widget_button_but_previous_page');
+  if (KDF.kdf().access === "citizen") {
+    if (signInPage && signInPage.classList.contains("dfrom_hidden")) {
+      if (page === "2") {
+        window.location.href = originatingUrl;
+      } else {
+        backBtn.click();
+      }
+    } else {
+      if (page === "1") {
+        window.location.href = originatingUrl;
+      } else {
+        backBtn.click();
+      }
+    }
+  } else {
+    backBtn.click();
+  }
 }
 
 // --- PROGRESS BAR --------------------------------------------------------- \\
@@ -6961,27 +6989,4 @@ function populateNotesTable(data) {
   `;
 
   renderPaginatedTable(data, 'notes-table-body', 'notes-pagination', notesRowMapper, notesSorter);
-}
-
-function goBack() {
-  const page = KDF.kdf().form.currentpage;
-  const signInPage = document.getElementById("dform_page_page_sign_in");
-  const backBtn = document.getElementById('dform_widget_button_but_previous_page');
-  if (KDF.kdf().access === "citizen") {
-    if (signInPage && signInPage.classList.contains("dfrom_hidden")) {
-      if (page === "2") {
-        window.location.href = originatingUrl;
-      } else {
-        backBtn.click();
-      }
-    } else {
-      if (page === "1") {
-        window.location.href = originatingUrl;
-      } else {
-        backBtn.click();
-      }
-    }
-  } else {
-    backBtn.click();
-  }
 }
