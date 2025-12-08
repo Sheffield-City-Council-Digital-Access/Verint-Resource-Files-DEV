@@ -16,6 +16,10 @@ function scrollToTop() {
 
 // --- GLOBAL CONSTS AND VARIABLES ----------------------------------------- \\
 
+const originatingUrl = document.referrer.includes("sheffield.gov.uk")
+  ? document.referrer
+  : "www.sheffield.gov.uk";
+
 const { protocol, hostname } = window.location;
 const portal = "site/portal";
 const PORTAL_URL = `${protocol}/${hostname}/site/portal`;
@@ -275,18 +279,18 @@ function handleInitialisingEvent() {
     const controlButtons = document.getElementById(targetElement);
     if (controlButtons) {
       const visibleBackButtonHTML = `
-      <button
-        type="button"
-        tabindex="0"
-        id="dform_widget_button_but_back"
-        data-active="true"
-        class="dform_widget dform_widget_type_button back-btn dform_widget_button_but_back"
-        onclick="document.getElementById('dform_widget_button_but_previous_page').click()"
-        style="display: none;"
-      >
-        <span class="back-btn--text">Back</span>
-      </button>
-    `;
+        <button
+          type="button"
+          tabindex="0"
+          id="dform_widget_button_but_back"
+          data-active="true"
+          class="dform_widget dform_widget_type_button back-btn dform_widget_button_but_back"
+          onclick="goBack()"
+          style="display: none;"
+        >
+          <span class="back-btn--text">Back</span>
+        </button>
+      `;
       controlButtons.insertAdjacentHTML("afterbegin", visibleBackButtonHTML);
     } else {
       console.warn("#dform_control_buttons element not found.");
@@ -442,6 +446,29 @@ function handleInitialisingEvent() {
 function handleOnReadyEvent(_, kdf) {
   customerState = kdf.customerset;
   formattedTitle = KDF.getVal("le_title").replace(/\s+/g, "-");
+
+  function goBack() {
+    const page = kdf.form.currentpage;
+    const signInPage = document.getElementById("dform_page_page_sign_in");
+    const backBtn = document.getElementById('dform_widget_button_but_previous_page');
+    if (kdf.access === "citizen") {
+      if (signInPage && signInPage.classList.contains("dfrom_hidden")) {
+        if (page === "2") {
+          window.location.href = originatingUrl;
+        } else {
+          backBtn.click();
+        }
+      } else {
+        if (page === "1") {
+          window.location.href = originatingUrl;
+        } else {
+          backBtn.click();
+        }
+      }
+    } else {
+      backBtn.click();
+    }
+  }
 
   if (document.getElementById("selected-address")) {
     defaultSelectedAddressMessage = document
@@ -745,14 +772,14 @@ function handleOnReadyEvent(_, kdf) {
   $(document).on("click", ".set-address-btn, .set-manual-address-btn", function () {
     const clickedButton = $(this);
     const isManualAddressClick = clickedButton.hasClass("set-manual-address-btn");
-  
+
     const handleSearchResults = (currentPageId, buttonId) => {
       const searchResultsContainer = document.querySelector(
         `#${currentPageId} .address-search-results`
       );
       const searchResultsSelect =
         searchResultsContainer?.querySelector("select");
-  
+
       if (searchResultsSelect && searchResultsSelect.value) {
         // A valid address was selected.
         const action =
@@ -778,12 +805,12 @@ function handleOnReadyEvent(_, kdf) {
       }
       return false; // No search results container found
     };
-  
+
     const currentPageId = getCurrentPageId();
     const manualAddressElement = document.querySelector(
       `#${currentPageId} .manual-address-container`
     );
-  
+
     // Scenario A: The "Set Manual Address" button was explicitly clicked
     if (isManualAddressClick) {
       let searchInput = document.querySelector(
@@ -810,7 +837,7 @@ function handleOnReadyEvent(_, kdf) {
         );
         KDF.setWidgetNotRequired(searchResultsSelect);
       }
-  
+
       // Validate Manual Address Fields (same as your original Scenario 1 logic)
       const addressFields = getValuesOfInputFields([
         { alias: "property" },
@@ -818,7 +845,7 @@ function handleOnReadyEvent(_, kdf) {
         { alias: "city" },
         { alias: "postCode" },
       ]);
-  
+
       let allFieldsValid = true;
       addressFields.forEach((field) => {
         const fieldContainer = document
@@ -828,7 +855,7 @@ function handleOnReadyEvent(_, kdf) {
           ".dform_validationMessage"
         );
         const inputElement = fieldContainer?.querySelector("input");
-  
+
         if (!field.value) {
           allFieldsValid = false;
           if (validationMessage) validationMessage.style.display = "block";
@@ -838,7 +865,7 @@ function handleOnReadyEvent(_, kdf) {
           if (inputElement) inputElement.classList.remove("dform_fielderror");
         }
       });
-  
+
       if (allFieldsValid) {
         const addressearchResults = document.querySelector(
           `#${currentPageId} .address-search-results`
@@ -852,7 +879,7 @@ function handleOnReadyEvent(_, kdf) {
             ""
           );
         }
-  
+
         const buttonContainer = document.querySelector(
           `#${currentPageId} .address-search-btn-container`
         );
@@ -865,7 +892,7 @@ function handleOnReadyEvent(_, kdf) {
             ""
           );
         }
-  
+
         const addressDataForDisplay = {
           property:
             addressFields.find((field) => field.alias === "property")
@@ -880,7 +907,7 @@ function handleOnReadyEvent(_, kdf) {
             addressFields.find((field) => field.alias === "postCode")
               ?.value || "",
         };
-  
+
         const fullAddressDisplay = buildAddressMarkup(addressDataForDisplay);
         let selectedAddressContainer = document.querySelector(
           `#${currentPageId} .selected-address-container`
@@ -902,7 +929,7 @@ function handleOnReadyEvent(_, kdf) {
             ""
           );
         }
-  
+
         let fullAddress = "";
         addressFields.forEach((field) => {
           if (field.value) {
@@ -914,22 +941,22 @@ function handleOnReadyEvent(_, kdf) {
           }
         });
         fullAddress = fullAddress.trim();
-  
+
         setValuesToInputFields([
           { alias: "fullAddress", value: fullAddress },
         ]);
-  
+
         if (addressearchResults) {
           const selectElement = addressearchResults.querySelector("select");
           if (selectElement) {
             selectElement.style.display = "none"; // Hides the element
           }
         }
-  
+
         if (buttonContainer) {
           buttonContainer.style.display = "none"; // Hides the element
         }
-  
+
         hideShowMultipleElements([
           { name: setAddressButton, display: "hide" },
           { name: selectedAddressContainer, display: "show" },
@@ -1543,15 +1570,22 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     KDF.setVal("txt_finish_date_and_time", formatDateTime().utc);
   }
 
-  let skipPages = 1;
-  if (document.getElementById("dform_page_page_sign_in")) {
-    skipPages++;
+  if (kdf.access === "citizen") {
+    displayBackButton(
+      pageName !== "complete" &&
+      kdf.form.complete !== "Y"
+    );
+  } else {
+    let skipPages = 1;
+    if (document.getElementById("dform_page_page_sign_in")) {
+      skipPages++;
+    }
+    displayBackButton(
+      targetpageid > skipPages &&
+      pageName !== "complete" &&
+      kdf.form.complete !== "Y"
+    );
   }
-  displayBackButton(
-    targetpageid > skipPages &&
-    pageName !== "complete" &&
-    kdf.form.complete !== "Y"
-  );
 
   const controlElement = document.getElementById("dform_controls");
   if (controlElement) {
@@ -5017,7 +5051,7 @@ function plotLocationOnMapGeo(longitude, latitude) {
       );
 
       // The point is now in OSGB 1936 (Easting/Northing)
-      const mapPoint = projectedPoint; 
+      const mapPoint = projectedPoint;
 
       // Zoom to location
       streetMapView.goTo({ center: mapPoint, zoom: 18 }).then(() => {
@@ -5125,78 +5159,78 @@ function formatPhoneNumber(telephone) {
 
   // Case A: Missing the leading '+' but includes the country code '44'
   if (digits.startsWith('44') && !digits.startsWith('+')) {
-      digits = '+' + digits;
+    digits = '+' + digits;
   }
 
   // Case B: Missing the domestic trunk code '0' after +44
   if (digits.startsWith('+44') && digits.length === 12 && !digits.startsWith('+440')) {
-      digits = digits.substring(0, 3) + '0' + digits.substring(3);
+    digits = digits.substring(0, 3) + '0' + digits.substring(3);
   }
-  
+
   // Case C: Missing both +44 and 0
   if (digits.length >= 10 && digits.length <= 11 && !digits.startsWith('0') && !digits.startsWith('+')) {
-      digits = '0' + digits;
+    digits = '0' + digits;
   }
 
   // Check for International Format
   if (digits.startsWith('+')) {
-      
-      // Specific UK International Formatting (+44)
-      if (digits.startsWith('+44')) {
-          const ukDigits = digits.substring(3); 
-          
-          // Check for 10 or 11 digits following the +44 (this includes the '0' if present)
-          if (ukDigits.length === 10 || ukDigits.length === 11) { 
-              
-              // If the number is 11 digits
-              if (ukDigits.length === 11) {
-                  // Assuming structure: 0 (1-digit) Area (2-digit) Exchange (4-digit) Line (4-digit)
-                  const areaCode = ukDigits.substring(1, 3);
-                  const exchange = ukDigits.substring(3, 7);
-                  const line = ukDigits.substring(7);
-                  
-                  return `+44 (0)${areaCode} ${exchange} ${line}`;
-              }
-              
-              // If the number is 10 digits (07xxx mobile/01xxx geographic)
-              if (ukDigits.length === 10) {
-                  // Structure: 0 (1-digit) MobilePrefix (4-digit) Line (5-digit)
-                  const prefix = ukDigits.substring(1, 5);
-                  const line = ukDigits.substring(5);
-                  
-                  return `+44 (0)${prefix} ${line}`;
-              }
-          }
+
+    // Specific UK International Formatting (+44)
+    if (digits.startsWith('+44')) {
+      const ukDigits = digits.substring(3);
+
+      // Check for 10 or 11 digits following the +44 (this includes the '0' if present)
+      if (ukDigits.length === 10 || ukDigits.length === 11) {
+
+        // If the number is 11 digits
+        if (ukDigits.length === 11) {
+          // Assuming structure: 0 (1-digit) Area (2-digit) Exchange (4-digit) Line (4-digit)
+          const areaCode = ukDigits.substring(1, 3);
+          const exchange = ukDigits.substring(3, 7);
+          const line = ukDigits.substring(7);
+
+          return `+44 (0)${areaCode} ${exchange} ${line}`;
+        }
+
+        // If the number is 10 digits (07xxx mobile/01xxx geographic)
+        if (ukDigits.length === 10) {
+          // Structure: 0 (1-digit) MobilePrefix (4-digit) Line (5-digit)
+          const prefix = ukDigits.substring(1, 5);
+          const line = ukDigits.substring(5);
+
+          return `+44 (0)${prefix} ${line}`;
+        }
       }
-      
-      // General International
-      return digits; 
+    }
+
+    // General International
+    return digits;
   }
 
   // Handle UK Domestic Numbers (must start with 0)
   if (digits.startsWith('0')) {
-      
-      // --- 11-Digit Numbers ---
-      if (digits.length === 11) {
-          
-          // Geographic (01xx, 02xx) 
-          if (digits.startsWith('01') || digits.startsWith('02')) {
-              return digits.substring(0, 4) + ' ' + digits.substring(4, 7) + ' ' + digits.substring(7);
-          }
 
-          // Mobile (07xxx)
-          if (digits.startsWith('07')) {
-              return digits.substring(0, 5) + ' ' + digits.substring(5);
-          }
+    // --- 11-Digit Numbers ---
+    if (digits.length === 11) {
+
+      // Geographic (01xx, 02xx) 
+      if (digits.startsWith('01') || digits.startsWith('02')) {
+        return digits.substring(0, 4) + ' ' + digits.substring(4, 7) + ' ' + digits.substring(7);
       }
-      
-      // --- 10-Digit Numbers ---
-      if (digits.length === 10) {
-          // Non-Geographic/Memorable (0800, 03xx, etc.)
-          return digits.substring(0, 4) + ' ' + digits.substring(4, 7) + ' ' + digits.substring(7);
+
+      // Mobile (07xxx)
+      if (digits.startsWith('07')) {
+        return digits.substring(0, 5) + ' ' + digits.substring(5);
       }
+    }
+
+    // --- 10-Digit Numbers ---
+    if (digits.length === 10) {
+      // Non-Geographic/Memorable (0800, 03xx, etc.)
+      return digits.substring(0, 4) + ' ' + digits.substring(4, 7) + ' ' + digits.substring(7);
+    }
   }
-  
+
   // Fallback: Return the cleaned original input if it's unrecognizable
   return digits;
 }
