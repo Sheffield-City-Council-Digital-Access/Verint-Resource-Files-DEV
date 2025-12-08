@@ -1548,21 +1548,21 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
 
   let skipPages = 1;
-  if (kdf.access === "citizen") {
+  // if (kdf.access === "citizen") {
     displayBackButton(
       pageName !== "complete" &&
       kdf.form.complete !== "Y"
     );
-  } else {
-    if (document.getElementById("dform_page_page_sign_in")) {
-      skipPages++;
-    }
-    displayBackButton(
-      targetpageid > skipPages &&
-      pageName !== "complete" &&
-      kdf.form.complete !== "Y"
-    );
-  }
+  // } else {
+  //   if (document.getElementById("dform_page_page_sign_in")) {
+  //     skipPages++;
+  //   }
+  //   displayBackButton(
+  //     targetpageid > skipPages &&
+  //     pageName !== "complete" &&
+  //     kdf.form.complete !== "Y"
+  //   );
+  // }
 
   const controlElement = document.getElementById("dform_controls");
   if (controlElement) {
@@ -2273,9 +2273,6 @@ function displayBackButton(show) {
   } else {
     console.warn("Element with ID 'dform_widget_button_but_back' not found.");
   }
-  setTimeout(() => {
-    if (show) controlContainer.style.display = "flex";
-  }, 0);
 }
 
 // --- GET CURRENT PAGE ----------------------------------------------------- \\
