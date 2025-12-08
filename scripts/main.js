@@ -1549,7 +1549,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
 
   let skipPages = 1;
   console.log(kdf.access)
-  if (kdf.access === "citizen") {
+  if (KDF.kdf().access === "citizen") {
     console.log("else")
     displayBackButton(
       pageName !== "complete" &&
