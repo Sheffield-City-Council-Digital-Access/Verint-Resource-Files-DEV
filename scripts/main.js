@@ -297,6 +297,29 @@ function handleInitialisingEvent() {
     }
   })();
 
+  function goBack() {
+    const page = KDF.kdf().form.currentpage;
+    const signInPage = document.getElementById("dform_page_page_sign_in");
+    const backBtn = document.getElementById('dform_widget_button_but_previous_page');
+    if (KDF.kdf().access === "citizen") {
+      if (signInPage && signInPage.classList.contains("dfrom_hidden")) {
+        if (page === "2") {
+          window.location.href = originatingUrl;
+        } else {
+          backBtn.click();
+        }
+      } else {
+        if (page === "1") {
+          window.location.href = originatingUrl;
+        } else {
+          backBtn.click();
+        }
+      }
+    } else {
+      backBtn.click();
+    }
+  }
+
   // --- AUPDATE PRNT BUTTON LABEL ------------------------------------------ \\
 
   (() => {
@@ -446,29 +469,6 @@ function handleInitialisingEvent() {
 function handleOnReadyEvent(_, kdf) {
   customerState = kdf.customerset;
   formattedTitle = KDF.getVal("le_title").replace(/\s+/g, "-");
-
-  function goBack() {
-    const page = kdf.form.currentpage;
-    const signInPage = document.getElementById("dform_page_page_sign_in");
-    const backBtn = document.getElementById('dform_widget_button_but_previous_page');
-    if (kdf.access === "citizen") {
-      if (signInPage && signInPage.classList.contains("dfrom_hidden")) {
-        if (page === "2") {
-          window.location.href = originatingUrl;
-        } else {
-          backBtn.click();
-        }
-      } else {
-        if (page === "1") {
-          window.location.href = originatingUrl;
-        } else {
-          backBtn.click();
-        }
-      }
-    } else {
-      backBtn.click();
-    }
-  }
 
   if (document.getElementById("selected-address")) {
     defaultSelectedAddressMessage = document
