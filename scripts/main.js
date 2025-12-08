@@ -18,7 +18,7 @@ function scrollToTop() {
 
 const originatingUrl = document.referrer.includes("sheffield.gov.uk")
   ? document.referrer
-  : "www.sheffield.gov.uk";
+  : "https://www.sheffield.gov.uk/";
 
 const { protocol, hostname } = window.location;
 const portal = "site/portal";
@@ -1570,13 +1570,13 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
     KDF.setVal("txt_finish_date_and_time", formatDateTime().utc);
   }
 
+  let skipPages = 1;
   if (kdf.access === "citizen") {
     displayBackButton(
       pageName !== "complete" &&
       kdf.form.complete !== "Y"
     );
   } else {
-    let skipPages = 1;
     if (document.getElementById("dform_page_page_sign_in")) {
       skipPages++;
     }
