@@ -47,30 +47,30 @@ const surveys = [
     formName: "customer_satisfaction",
     label: "Take our customer satisfaction survey"
   },
-  {
-    id: "satisfaction2",
-    content: [
-      { p: "We’d like to know how we’re doing and where we can do better." },
-      { p: "Please take a moment to answer a few quick questions about your experience today. Your feedback helps us to:" },
-      {
-        ul: [
-          "See what’s working well",
-          "Find out what we can improve",
-          "Make our services better for everyone"
-        ]
-      },
-    ],
-    formName: "customer_satisfaction",
-    label: "Give us your detailed feedback"
-  },
-  {
-    id: "equalities",
-    content: [
-      { p: "Please answer a few anonymous questions about yourself. Your answers will help make our forms as fair and accessible as possible." },
-    ],
-    formName: "equalities_monitoring",
-    label: "Take our equalities monitoring survey"
-  },
+  // {
+  //   id: "satisfaction2",
+  //   content: [
+  //     { p: "We’d like to know how we’re doing and where we can do better." },
+  //     { p: "Please take a moment to answer a few quick questions about your experience today. Your feedback helps us to:" },
+  //     {
+  //       ul: [
+  //         "See what’s working well",
+  //         "Find out what we can improve",
+  //         "Make our services better for everyone"
+  //       ]
+  //     },
+  //   ],
+  //   formName: "customer_satisfaction",
+  //   label: "Give us your detailed feedback"
+  // },
+  // {
+  //   id: "equalities",
+  //   content: [
+  //     { p: "Please answer a few anonymous questions about yourself. Your answers will help make our forms as fair and accessible as possible." },
+  //   ],
+  //   formName: "equalities_monitoring",
+  //   label: "Take our equalities monitoring survey"
+  // },
 ];
 
 const relatedServices = [];
