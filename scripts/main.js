@@ -1548,23 +1548,21 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
 
   let skipPages = 1;
-  setTimeout(() => {
-    if (kdf.access === "citizen") {
-      displayBackButton(
-        pageName !== "complete" &&
-        kdf.form.complete !== "Y"
-      );
-    } else {
-      if (document.getElementById("dform_page_page_sign_in")) {
-        skipPages++;
-      }
-      displayBackButton(
-        targetpageid > skipPages &&
-        pageName !== "complete" &&
-        kdf.form.complete !== "Y"
-      );
+  if (kdf.access === "citizen") {
+    displayBackButton(
+      pageName !== "complete" &&
+      kdf.form.complete !== "Y"
+    );
+  } else {
+    if (document.getElementById("dform_page_page_sign_in")) {
+      skipPages++;
     }
-  }, 0);
+    displayBackButton(
+      targetpageid > skipPages &&
+      pageName !== "complete" &&
+      kdf.form.complete !== "Y"
+    );
+  }
 
   const controlElement = document.getElementById("dform_controls");
   if (controlElement) {
@@ -2263,9 +2261,11 @@ function displayBackButton(show) {
       controlContainer.style.display = "flex";
       backButton.style.display = "flex";
     } else {
+      console.log("else")
       if (pageName === "complete" && KDF.kdf().form.complete === "Y") {
         controlContainer.style.display = "flex";
       } else {
+        console.log("else , else")
         controlContainer.style.display = "none";
       }
       backButton.style.display = "none";
