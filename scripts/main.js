@@ -16,10 +16,6 @@ function scrollToTop() {
 
 // --- GLOBAL CONSTS AND VARIABLES ----------------------------------------- \\
 
-const originatingUrl = document.referrer.includes("sheffield.gov.uk")
-  ? document.referrer
-  : "https://www.sheffield.gov.uk/";
-
 const { protocol, hostname } = window.location;
 const portal = "site/portal";
 const PORTAL_URL = `${protocol}/${hostname}/site/portal`;
@@ -285,7 +281,7 @@ function handleInitialisingEvent() {
           id="dform_widget_button_but_back"
           data-active="true"
           class="dform_widget dform_widget_type_button back-btn dform_widget_button_but_back"
-          onclick="goBack()"
+          onclick="document.getElementById('dform_widget_button_but_previous_page').click();"
           style="display: none;"
         >
           <span class="back-btn--text">Back</span>
@@ -1548,21 +1544,11 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   }
 
   let skipPages = 1;
-  if (kdf.access === "citizen") {
-    displayBackButton(
-      pageName !== "complete" &&
-      kdf.form.complete !== "Y"
-    );
-  } else {
-    if (document.getElementById("dform_page_page_sign_in")) {
-      skipPages++;
-    }
-    displayBackButton(
-      targetpageid > skipPages &&
-      pageName !== "complete" &&
-      kdf.form.complete !== "Y"
-    );
-  }
+  displayBackButton(
+    targetpageid > skipPages &&
+    pageName !== "complete" &&
+    kdf.form.complete !== "Y"
+  );
 
   const controlElement = document.getElementById("dform_controls");
   if (controlElement) {
@@ -3176,31 +3162,6 @@ function formatTimeForSubmission(hour, minute, ampm) {
   const paddedHour = hours24.toString().padStart(2, "0");
   const paddedMinute = minute.toString().padStart(2, "0");
   return `${paddedHour}:${paddedMinute}`;
-}
-
-// --- BACK BUTTON  FUNCTIONS ----------------------------------------------- \\
-
-function goBack() {
-  const page = KDF.kdf().form.currentpage;
-  const signInPage = document.getElementById("dform_page_page_sign_in");
-  const backBtn = document.getElementById('dform_widget_button_but_previous_page');
-  if (KDF.kdf().access === "citizen") {
-    if (signInPage && signInPage.classList.contains("dfrom_hidden")) {
-      if (page === "2") {
-        window.location.href = originatingUrl;
-      } else {
-        backBtn.click();
-      }
-    } else {
-      if (page === "1") {
-        window.location.href = originatingUrl;
-      } else {
-        backBtn.click();
-      }
-    }
-  } else {
-    backBtn.click();
-  }
 }
 
 // --- PROGRESS BAR --------------------------------------------------------- \\
