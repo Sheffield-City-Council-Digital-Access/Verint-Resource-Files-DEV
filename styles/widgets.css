@@ -203,6 +203,7 @@
 }
 
 #dform_container input[type="checkbox"] {
+  margin-block: var(--spacing-xxs);
   height: var(--field-height-sm);
   width: var(--field-height-sm);
   box-shadow: inset 0 0 0 1px var(--c-greys-black) !important;
