@@ -2278,15 +2278,12 @@ function displayBackButton(show) {
   const backButton = document.getElementById("dform_widget_button_but_back");
   if (backButton) {
     if (show) {
-      console.log("show")
       controlContainer.style.display = "flex";
       backButton.style.display = "flex";
     } else {
-      console.log("else")
       if (pageName === "complete" && KDF.kdf().form.complete === "Y") {
         controlContainer.style.display = "flex";
       } else {
-        console.log("else , else")
         controlContainer.style.display = "none";
       }
       backButton.style.display = "none";
@@ -3671,10 +3668,12 @@ function checkAddressHasBeenSet(action = "next") {
 
   // Helper: Go to next or complete page
   function goNextOrComplete() {
-    if (action === "submit") {
+    if (action === "next") {
+      KDF.gotoNextPage();
+    } else if (action === "submit") {
       KDF.gotoPage("complete", true, true, false);
     } else {
-      KDF.gotoNextPage();
+      // leave blank for form overide logic
     }
   }
 
@@ -3697,7 +3696,6 @@ function checkAddressHasBeenSet(action = "next") {
 
     const streetName = getInput("streetName");
     const usrn = getInput("usrn");
-    console.log('handleAddressSection', streetName, usrn)
 
     if (fullAddressHasValue) {
       if (streetName && usrn) {
@@ -3738,7 +3736,6 @@ function checkAddressHasBeenSet(action = "next") {
       const validUsrn = acceptGMSites
         ? true
         : siteCode && siteCode.startsWith("344");
-      console.log('handleMapSection', streetNameValue, usrnValue, validUsrn)
 
       if (streetNameValue && usrnValue && validUsrn) {
         clearPartialAddressSearch();
