@@ -489,7 +489,8 @@ function handleOnReadyEvent(_, kdf) {
     kdf.profileData["customerid"] &&
     kdf.profileData["customerid"] !== "" &&
     kdf.profileData["profile-Postcode"] &&
-    kdf.profileData["profile-Postcode"] !== ""
+    kdf.profileData["profile-Postcode"] !== "" &&
+    kdf.name !== "book_repair"
   ) {
     initialProfileAddressLoad = true;
     $("#dform_widget_button_but_find_address_about_you").click();
@@ -3258,6 +3259,11 @@ function updateProgressBar(currentPageIndex) {
 // --- SET REPORTER --------------------------------------------------------- \\
 
 function handleSetReporter(date, kdf) {
+  // skip
+  if (kdf.name === "book_repair") {
+    return;
+  }
+
   // Set date to input fields and trigger change
   if (date !== "Invalid Date") {
     $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
