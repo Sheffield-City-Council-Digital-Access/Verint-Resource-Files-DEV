@@ -3672,7 +3672,7 @@ function checkAddressHasBeenSet(action = "next") {
     } else if (action === "submit") {
       KDF.gotoPage("complete", true, true, false);
     } else {
-      return true;
+      // Leave blank for bispoke form logic routing
     }
   }
 
@@ -3797,8 +3797,16 @@ function checkAddressHasBeenSet(action = "next") {
 
   if (!handleMapSection()) {
     if (!handleAddressSection()) {
-      handleGeoSection();
+      if (!handleGeoSection()) {
+        return false;
+      } else {
+        return true;
+      }
+    } else {
+      return true;
     }
+  } else {
+    return true;
   }
 }
 
