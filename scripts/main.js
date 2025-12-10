@@ -3641,7 +3641,6 @@ function checkAddressHasBeenSet(action = "next") {
       `#${currentPageId} input[data-customalias="${alias}"]`
     );
 
-  // Helper: Show error on selected address span
   function showSelectedAddressError(message) {
     const selectedAddressSpan = document.querySelector(
       `#${currentPageId} #selected-address`
@@ -3673,7 +3672,7 @@ function checkAddressHasBeenSet(action = "next") {
     } else if (action === "submit") {
       KDF.gotoPage("complete", true, true, false);
     } else {
-      // leave blank for form overide logic
+      return true;
     }
   }
 
@@ -3696,9 +3695,11 @@ function checkAddressHasBeenSet(action = "next") {
 
     const streetName = getInput("streetName");
     const usrn = getInput("usrn");
+    const siteName = getInput("siteName");
+    const siteCode = getInput("siteCode");
 
     if (fullAddressHasValue) {
-      if (streetName && usrn) {
+      if (streetName && usrn && siteName && siteCode) {
         const streetNameValue = KDF.getVal(streetName.name);
         const usrnValue = KDF.getVal(usrn.name);
         const validUsrn = acceptGMSites
@@ -3706,9 +3707,7 @@ function checkAddressHasBeenSet(action = "next") {
           : usrnValue && usrnValue.startsWith("344");
 
         if (streetNameValue && usrnValue && validUsrn) {
-          const siteName = getInput("siteName");
           if (siteName) KDF.setVal(siteName.name, streetNameValue);
-          const siteCode = getInput("siteCode");
           if (siteCode) KDF.setVal(siteCode.name, usrnValue);
         }
 
