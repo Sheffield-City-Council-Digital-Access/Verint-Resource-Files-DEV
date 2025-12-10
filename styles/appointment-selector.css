@@ -101,12 +101,9 @@ border-color: var(--c-focus-links) !important;
 }
 
 #dform_container .appointment-container .appointment-active {
-/*background-color: var(--c-alerts-success) !important;*/
-/*color: var(--c-greys-white) !important;*/
-/*border-color: var(--c-alerts-success) !important;*/
-background-color: var(--c-focus-links) !important;
-color: var(--c-greys-black) !important;
-border-color: var(--c-focus-links) !important;
+  color: var(--c-greys-white) !important; 
+  background: var(--c-core-brand-primary-darken) !important;
+  border-color: var(--c-core-brand-primary-darken) !important;
 }
 
 #dform_container .appointment-container .disabled,
