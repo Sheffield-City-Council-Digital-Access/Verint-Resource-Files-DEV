@@ -3800,6 +3800,8 @@ function checkAddressHasBeenSet(action = "next") {
       handleGeoSection();
     }
   }
+
+  return false;
 }
 
 function setProfileAddressDetails(targetPageId, kdf) {
