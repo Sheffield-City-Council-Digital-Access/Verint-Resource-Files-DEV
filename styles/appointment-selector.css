@@ -11,7 +11,7 @@
   gap: var(--spacing-md);
 }
 
-#dform_container .appointment-container > * {
+#dform_container .appointment-container>* {
   margin: 0 !important;
 }
 
@@ -56,19 +56,19 @@
   border-radius: 16px !important;
 }
 
-#dform_container .appointment-container .earlier-date > svg,
-#dform_container .appointment-container .later-date > svg {
+#dform_container .appointment-container .earlier-date>svg,
+#dform_container .appointment-container .later-date>svg {
   width: var(--font-size-base);
   height: var(--font-size-base);
   transform: rotate(-90deg) scale(2);
 }
 
-#dform_container .appointment-container .later-date > svg {
+#dform_container .appointment-container .later-date>svg {
   transform: rotate(90deg) scale(2);
 }
 
-#dform_container .appointment-container .earlier-date > svg > path,
-#dform_container .appointment-container .later-date > svg > path {
+#dform_container .appointment-container .earlier-date>svg>path,
+#dform_container .appointment-container .later-date>svg>path {
   fill: var(--c-core-brand-primary-darken);
 }
 
@@ -76,13 +76,14 @@
 #dform_container .appointment-container .date-option:not(.appointment-container .disabled):hover,
 #dform_container .appointment-container .later-date:not(.appointment-container .disabled):hover,
 #dform_container .appointment-container .time-slot:not(.appointment-container .disabled):hover {
-background-color: var(--c-core-brand-primary-darken) !important;
-color: var(--c-greys-white) !important;
-border-color: var(--c-core-brand-primary-darken) !important;
+  background-color: var(--c-core-brand-primary-darken) !important;
+  color: var(--c-greys-white) !important;
+  border-color: var(--c-core-brand-primary-darken) !important;
+  cursor: not-allowed;
 }
 
-#dform_container .appointment-container .earlier-date:hover > svg > path,
-#dform_container .appointment-container .later-date:hover > svg > path {
+#dform_container .appointment-container .earlier-date:hover>svg>path,
+#dform_container .appointment-container .later-date:hover>svg>path {
   fill: var(--c-greys-white);
 }
 
@@ -90,18 +91,18 @@ border-color: var(--c-core-brand-primary-darken) !important;
 #dform_container .appointment-container .date-option:not(.appointment-container .disabled):focus,
 #dform_container .appointment-container .later-date:not(.appointment-container .disabled):focus,
 #dform_container .appointment-container .time-slot:not(.appointment-container .disabled):focus {
-background-color: var(--c-focus-links) !important;
-color: var(--c-greys-black) !important;
-border-color: var(--c-focus-links) !important;
+  background-color: var(--c-focus-links) !important;
+  color: var(--c-greys-black) !important;
+  border-color: var(--c-focus-links) !important;
 }
 
-#dform_container .appointment-container .earlier-date:focus > svg > path,
-#dform_container .appointment-container .later-date:focus > svg > path {
+#dform_container .appointment-container .earlier-date:focus>svg>path,
+#dform_container .appointment-container .later-date:focus>svg>path {
   fill: var(--c-greys-black);
 }
 
 #dform_container .appointment-container .appointment-active {
-  color: var(--c-greys-white) !important; 
+  color: var(--c-greys-white) !important;
   background: var(--c-core-brand-primary-darken) !important;
   border-color: var(--c-core-brand-primary-darken) !important;
 }
@@ -111,35 +112,36 @@ border-color: var(--c-focus-links) !important;
 #dform_container .appointment-container .date-option:disabled,
 #dform_container .appointment-container .later-date:disabled,
 #dform_container .appointment-container .time-slot:disabled {
-cursor: not-allowed !important;
-opacity: 0.5 !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
 }
 
 @media screen and (min-width: 700px) {
+
   #dform_container .appointment-container .date-selector,
   #dform_container .appointment-container .time-selector {
-      flex-direction: row;
+    flex-direction: row;
   }
-  
+
   #dform_container .appointment-container .earlier-date,
   #dform_container .appointment-container .later-date {
-      width: auto;
-      max-width: max-content !important;
-      border-radius: 25px !important;
+    width: auto;
+    max-width: max-content !important;
+    border-radius: 25px !important;
   }
-  
+
   #dform_container .appointment-container .date-option,
   #dform_container .appointment-container .time-slot {
-      flex: 1;
-      width: auto;
+    flex: 1;
+    width: auto;
   }
-  
+
   #dform_container .appointment-container .earlier-date svg {
-      transform: rotate(180deg) scale(2);
+    transform: rotate(180deg) scale(2);
   }
-  
+
   #dform_container .appointment-container .later-date svg {
-      transform: rotate(0deg) scale(2);
+    transform: rotate(0deg) scale(2);
   }
 }
 
