@@ -2856,7 +2856,7 @@ const housingOnline = new ContentH(
       Login
     </h3>
     <p>
-      Click <a href="housing.sheffield.gov.uk/ords/houlive_selfserv/f?p=13000:101::::::" target="_blank">here</a> to access Housing Online.
+      Click <a href="https://housing.sheffield.gov.uk/ords/houlive_selfserv/f?p=13000:101::::::" target="_blank">here</a> to access Housing Online.
     </p>
     <p>
       Use the following login details to access the system:
