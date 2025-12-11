@@ -2862,7 +2862,7 @@ const housingOnline = new ContentH(
       Use the following login details to access the system:
     </p>
     <p>
-      Email Address: <strong>propertyshop@sheffield.gov.uk</strong><br>
+      Email Address: <strong>ropertyshop@sheffield.gov.uk</strong><br>
       Password: <strong>StatusPoppyGlove1*</strong>
     </p>
      <p>
