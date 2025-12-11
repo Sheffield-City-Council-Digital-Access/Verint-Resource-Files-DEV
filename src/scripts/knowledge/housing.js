@@ -5789,8 +5789,8 @@ const rentVariation = new ContentH(
     <div class="accordion-content">
         <p>The rent-free weeks this year will be weeks commencing:</p>
         <ul>
-            <li>Monday 16th December 2024</li>
-            <li>Monday 23rd December 2024</li>
+            <li>Monday 15th December 2025</li>
+            <li>Monday 22nd December 2025</li>
         </ul>
     </div>
   </details>
