@@ -1800,7 +1800,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     action === "search-local-address" ||
     action === "search-national-address"
   ) {
-    console.log("action === search-local-address")
+    console.log(action, response)
     let targetPageId = initialProfileAddressLoad ? 'dform_page_page_about_you' : getCurrentPageId();
     if (targetPageId === "dform_page_page_about_you") {
       KDF.setWidgetRequired("sel_search_results_about_you");
@@ -1868,10 +1868,11 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     const searchedPostcode = searchInput ? searchInput.value : "";
 
     const resultsContent = `
-    ${numberOfResults} addresses found for <strong>${searchedPostcode}</strong>.
-    <button type="button" class="search-again-btn link-btn">Change</button>
-  `;
+      ${numberOfResults} addresses found for <strong>${searchedPostcode}</strong>.
+      <button type="button" class="search-again-btn link-btn">Change</button>
+    `;
 
+    console.log("checks", resultsList, searchInput, searchButton)
     if (resultsList && searchInput && searchButton) {
       console.log("if (resultsList && searchInput && searchButton)")
       let searchStatusMessageElement = document.getElementById(resultsLabelId);
