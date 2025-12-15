@@ -388,3 +388,21 @@
   outline: none !important;
   box-shadow: none !important;
 }
+
+/* --- CUSTOM MULTI CHECK CONTAINER --- */
+
+#dform_container.dform_agent form.dform div.custom-multi-check-container .dform_widget_field {
+  margin-block: var(--spacing-xxs);
+}
+
+#dform_container.dform_agent form.dform div.custom-multi-check-container .dform_widget_field.conditional {
+  margin: 0 !important;
+  padding-block: var(--spacing-xxs);
+  padding-left: var(--spacing-md) !important;
+  border-left: solid var(--spacing-xxs) var(--c-brand-accents-teal) !important;
+}
+
+#dform_container.dform_agent form.dform div.custom-multi-check-container .dform_widget_field.conditional fieldset {
+  margin: 0 !important;
+  padding-bottom: 10px;
+}
