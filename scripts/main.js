@@ -1800,6 +1800,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     action === "search-local-address" ||
     action === "search-national-address"
   ) {
+    console.log("action === search-local-address")
     let targetPageId = initialProfileAddressLoad ? 'dform_page_page_about_you' : getCurrentPageId();
     if (targetPageId === "dform_page_page_about_you") {
       KDF.setWidgetRequired("sel_search_results_about_you");
@@ -1872,6 +1873,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   `;
 
     if (resultsList && searchInput && searchButton) {
+      console.log("if (resultsList && searchInput && searchButton)")
       let searchStatusMessageElement = document.getElementById(resultsLabelId);
       if (searchStatusMessageElement) {
         searchStatusMessageElement.innerHTML = resultsContent;
