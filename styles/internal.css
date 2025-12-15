@@ -54,10 +54,10 @@
 
 #dform_container.dform_agent form.dform .dform_widget_field,
 #dform_container.dform_agent form.dform .dform_widget_type_html {
-  margin-block: var(--spacing-xl);
+  margin-block: var(--spacing-md);
 }
 
 #dform_container.dform_agent form.dform .dform_widget_type_buttonset {
-  margin-block: var(--spacing-xxl);
+  margin-block: var(--spacing-xl);
   gap: var(--spacing-md);
 }
