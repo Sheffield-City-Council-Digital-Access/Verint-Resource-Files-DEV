@@ -1802,6 +1802,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
   ) {
     console.log(action, response)
     let targetPageId = initialProfileAddressLoad ? 'dform_page_page_about_you' : getCurrentPageId();
+    console.log("targetPageId", targetPageId,getCurrentPageId())
     if (targetPageId === "dform_page_page_about_you") {
       KDF.setWidgetRequired("sel_search_results_about_you");
     }
