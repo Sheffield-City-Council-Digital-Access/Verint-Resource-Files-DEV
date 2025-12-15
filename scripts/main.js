@@ -1806,9 +1806,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     action === "search-local-address" ||
     action === "search-national-address"
   ) {
-    console.log(action, response)
     let targetPageId = initialProfileAddressLoad ? 'dform_page_page_about_you' : getCurrentPageId();
-    console.log("targetPageId", targetPageId,getCurrentPageId())
     if (targetPageId === "dform_page_page_about_you") {
       KDF.setWidgetRequired("sel_search_results_about_you");
     }
@@ -1879,9 +1877,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
       <button type="button" class="search-again-btn link-btn">Change</button>
     `;
 
-    console.log("checks", resultsList, searchInput, searchButton)
     if (resultsList && searchInput && searchButton) {
-      console.log("if (resultsList && searchInput && searchButton)")
       let searchStatusMessageElement = document.getElementById(resultsLabelId);
       if (searchStatusMessageElement) {
         searchStatusMessageElement.innerHTML = resultsContent;
@@ -6385,7 +6381,7 @@ function initializeDashboard(customerData) {
 
     const dateA = new Date(a.createdDate);
     const dateB = new Date(b.createdDate);
-    return dateB.getTime() - dateA.getTime();
+    return dateA.getTime() - dateB.getTime();
   });
 
   // Function to render the list of accounts
@@ -6404,7 +6400,7 @@ function initializeDashboard(customerData) {
       accountItem.innerHTML = `
         <div class="account-item-header">
           <p class="account-type">${account.accountStatus}</p>
-            <span class="status-badge ${statusClass}">${status}</span>
+          <span class="status-badge ${statusClass}">${status}</span>
         </div>
         <p class="account-ref">${account.accountRef}</p>
       `;
