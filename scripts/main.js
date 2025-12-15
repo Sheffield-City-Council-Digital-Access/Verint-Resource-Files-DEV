@@ -468,7 +468,13 @@ function handleOnReadyEvent(_, kdf) {
     kdf.profileData["profile-Postcode"] !== "" &&
     kdf.name !== "book_repair"
   ) {
-    initialProfileAddressLoad = true;
+    const searchInput = document.querySelector(
+      `#dform_page_page_about_you input[data-customalias="postcode"]`
+    );
+    let searchButton = document.querySelector(
+      `#dform_page_page_about_you .address-search-btn`
+    );
+    initialProfileAddressLoad = searchInput && searchButton ? true : false;
     $("#dform_widget_button_but_find_address_about_you").click();
   }
 
