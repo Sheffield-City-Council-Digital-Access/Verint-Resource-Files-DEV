@@ -9,6 +9,10 @@
   padding: 3vh 5vw 0;
 }
 
+#dform_container.dform_agent #dform_progressbar_sheffield {
+  padding: 3vh 5vw 0;
+}
+
 #dform_container.dform_agent .container .area .box {
   max-width: 100%;
 }
