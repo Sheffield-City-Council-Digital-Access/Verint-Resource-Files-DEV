@@ -3373,14 +3373,10 @@ function getAndSetReviewPageData() {
       const pageNumber = $(this).attr("data-pos");
       if (pageNumber) {
         relevantPages.push(pageNumber);
-        console.log(relevantPages)
-        console.log(KDF.kdf().form.complete)
         if (KDF.kdf().form.complete !== "Y") {
-          console.log("set array")
           // Store the constructed page array
           KDF.setVal("txt_pages", relevantPages.join(","));
         }
-        console.log(KDF.getVal("txt_pages"))
       }
     });
 
@@ -3389,8 +3385,6 @@ function getAndSetReviewPageData() {
       if (KDF.getVal("txt_pages") !== '') {
         relevantPages = KDF.getVal("txt_pages").split(',');
       } else {
-        console.log(relevantPages, relevantPages.length === 0)
-        console.log("populate")
         relevantPages = $(".dform_page")
           .not(excludedPages)
           .map(function () {
@@ -3556,7 +3550,7 @@ function getAndSetReviewPageData() {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
               fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
               if (KDF.kdf().access === "agent" && (fieldName.includes("date_of_birth") || fieldName.includes("_dob"))) {
-                fieldValue = `${formatDateTime(KDF.getVal(fieldName)).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName))}`;
+                fieldValue = `${formatDateTime(KDF.getVal(fieldName)).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName))})`;
               }
             } else if (fieldClass.indexOf("currency") !== -1) {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
@@ -5205,6 +5199,38 @@ function plotLocationOnMap(easting, northing) {
 }
 
 // --- FORMATING FUNCTIONS -------------------------------------------------- \\
+
+// --- FORMAT AGE TO DATE OF BIRTH ------------------------------------------ \\
+
+/**
+ * Calculates a person's age based on their date of birth.
+ *
+ * @param {string} dobString The date of birth in "YYYY-MM-DD" format (e.g., "1990-05-15").
+ * @returns {number|null} The calculated age in years, or null if the input date is invalid.
+ */
+function calculateAgeFromDob(dobString) {
+  // Try to create a Date object from the input string.
+  // Using YYYY-MM-DD format is recommended for reliable parsing.
+  const birthDate = new Date(dobString);
+
+  // Check if the date is valid. new Date("invalid-string") results in an invalid date.
+  if (isNaN(birthDate.getTime())) {
+    console.warn("Invalid date of birth provided:", dobString);
+    return null; // Return null for invalid input
+  }
+
+  const today = new Date();
+
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDifference = today.getMonth() - birthDate.getMonth();
+
+  // Adjust age if the birthday hasn't occurred yet this year
+  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+
+  return age;
+}
 
 // --- FORMATING TO TITLE CASE ---------------------------------------------- \\
 
