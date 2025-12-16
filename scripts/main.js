@@ -3387,8 +3387,8 @@ function getAndSetReviewPageData() {
     // Handle the case where the form is complete
     if (KDF.kdf().form.complete === "Y") {
       relevantPages = KDF.getVal("txt_pages").split(',');
-      console.log(relevantPages, relevantPages.length() = 0)
-      if (relevantPages.length() = 0) {
+      console.log(relevantPages, relevantPages.length === 0)
+      if (relevantPages.length === 0) {
         console.log("populate")
         relevantPages = $(".dform_page")
           .not(excludedPages)
