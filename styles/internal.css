@@ -1,3 +1,7 @@
+#dform_container.dform_agent #dform_files {
+  display: none;
+}
+
 #dform_container.dform_agent #dform_holder {
   display: flex;
   height: 89vh;
@@ -6,6 +10,10 @@
 
 #dform_container.dform_agent form.dform {
   flex: 1;
+  padding: 3vh 5vw 0;
+}
+
+#dform_container.dform_agent #dform_progressbar_sheffield {
   padding: 3vh 5vw 0;
 }
 

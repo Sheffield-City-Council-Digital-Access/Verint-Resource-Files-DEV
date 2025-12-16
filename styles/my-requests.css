@@ -138,12 +138,12 @@ li.le-request-status-text {
 }
 
 li.le-stat-open li.le-request-status-text::after {
-  content: " Received";
+  content: " In progress";
   color: var(--c-orange);
 }
 
 li.le-stat-closed li.le-request-status-text::after {
-  content: " Complete";
+  content: " Resolved";
   color: var(--c-alerts-success);
 }
 
