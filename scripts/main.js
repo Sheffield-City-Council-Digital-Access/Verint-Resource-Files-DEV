@@ -1557,6 +1557,7 @@ function handleOnReadyEvent(_, kdf) {
 // --- HANDLE ON PAGE CHANGE EVENT ------------------------------------------ \\
 
 function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
+  console.log("handlePageChangeEvent", kdf)
   KDF.hideMessages();
 
   // Get the name for the current page
