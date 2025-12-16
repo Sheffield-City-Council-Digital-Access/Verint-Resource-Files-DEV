@@ -628,15 +628,15 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE LOAD COMPLETED FORM ----------------------------------------- \\
 
-  if (kdf.params.ref && kdf.params.token) {
-    KDF.showPage("page_review");
-    KDF.gotoPage("page_review");
+  // if (kdf.params.ref && kdf.params.token) {
+  //   KDF.showPage("page_review");
+  //   KDF.gotoPage("page_review");
 
-    KDF.makeReadonly();
-    $(".review-page-edit-button").remove();
-    $('.dform_section_box_review div[data-type="buttonset"]').remove();
-    return;
-  }
+  //   KDF.makeReadonly();
+  //   $(".review-page-edit-button").remove();
+  //   $('.dform_section_box_review div[data-type="buttonset"]').remove();
+  //   return;
+  // }
 
   if (kdf.form.complete === "Y") {
     KDF.showPage("page_review");
