@@ -3527,7 +3527,7 @@ function getAndSetReviewPageData() {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
               fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
               if (KDF.kdf().access === "agent" && (fieldName.includes("date_of_birth") || fieldName.includes("_dob"))) {
-                fieldValue = `${formatDateTime(KDF.getVal(fieldName)).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName))}`;
+                fieldValue = `${formatDateTime(KDF.getVal(fieldName)).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName))})`;
               }
             } else if (fieldClass.indexOf("currency") !== -1) {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
