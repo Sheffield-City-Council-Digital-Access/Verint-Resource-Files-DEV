@@ -3387,6 +3387,15 @@ function getAndSetReviewPageData() {
     // Handle the case where the form is complete
     if (KDF.kdf().form.complete === "Y") {
       relevantPages = KDF.getVal("txt_pages").split(',');
+      if (!relevantPages) {
+        console.log("populate")
+        relevantPages = $(".dform_page")
+          .not(excludedPages)
+          .map(function () {
+            return $(this).attr("data-pos");
+          })
+          .get();
+      }
     }
 
     // Clear the review content HTML
