@@ -661,7 +661,7 @@ function handleOnReadyEvent(_, kdf) {
     const maxAttempts = 50;
     const forceReviewPage = setInterval(() => {
       attempts++;
-    
+
       if (getCurrentPageId() === "dform_page_page_review" || attempts > maxAttempts) {
         clearInterval(forceReviewPage);
       } else {
@@ -1364,18 +1364,18 @@ function handleOnReadyEvent(_, kdf) {
         <div class="review-content">
           <div class="review-content-header">
             <h3>${pageTitle}</h3>
-            ${KDF.kdf().form.complete !== "Y" 
-              ? `<button type="button" class="go-to-page-btn" id="go-to-${pageId}">Edit</button>` 
-              : ''
-            }
+            ${KDF.kdf().form.complete !== "Y"
+        ? `<button type="button" class="go-to-page-btn" id="go-to-${pageId}">Edit</button>`
+        : ''
+      }
           </div>
           ${fields
-            .map(
-              (field) => `
+        .map(
+          (field) => `
                 <p><strong>${field.fieldlabel}:</strong> ${field.fieldValue}</p>
               `
-            )
-            .join("")}
+        )
+        .join("")}
         </div>
       </div>
     `;
@@ -3386,9 +3386,10 @@ function getAndSetReviewPageData() {
 
     // Handle the case where the form is complete
     if (KDF.kdf().form.complete === "Y") {
-      relevantPages = KDF.getVal("txt_pages").split(',');
-      console.log(relevantPages, relevantPages.length === 0)
-      if (relevantPages.length === 0) {
+      if (KDF.getVal("txt_pages") !== '') {
+        relevantPages = KDF.getVal("txt_pages").split(',');
+      } else {
+        console.log(relevantPages, relevantPages.length === 0)
         console.log("populate")
         relevantPages = $(".dform_page")
           .not(excludedPages)
