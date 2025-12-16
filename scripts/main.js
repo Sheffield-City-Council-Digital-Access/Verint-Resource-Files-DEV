@@ -3374,7 +3374,9 @@ function getAndSetReviewPageData() {
       if (pageNumber) {
         relevantPages.push(pageNumber);
         console.log(relevantPages)
+        console.log(KDF.kdf().form.complete)
         if (KDF.kdf().form.complete !== "Y") {
+          console.log("set array")
           // Store the constructed page array
           KDF.setVal("txt_pages", relevantPages.join(","));
         }
