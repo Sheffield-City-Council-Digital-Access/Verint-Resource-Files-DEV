@@ -1,3 +1,7 @@
+#dform_container.dform_agent #dform_files {
+  display: none;
+}
+
 #dform_container.dform_agent #dform_holder {
   display: flex;
   height: 89vh;

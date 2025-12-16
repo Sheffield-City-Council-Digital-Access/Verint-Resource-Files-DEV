@@ -445,6 +445,50 @@ function handleInitialisingEvent() {
     }
   })();
 
+  // --- HANDLE FILE UPLOAD ------------------------------------------------ \\
+
+  $(document).ajaxComplete(function (event, xhr, settings) {
+    if (settings.url.startsWith(KDF.kdf().rest.attachFiles)) {
+      const { field, token, filename, mimetype } = xhr.responseJSON[0];
+      const deleteButton = getFileDeleteByInputId(field);
+      const fileNameField = field.replace("file_", "txt_file_name_");
+
+      $(`#${field}`).prop("disabled", true).css({
+        color: "var(--color-background)",
+      });
+      $(`#${fileNameField}`).val(filename).trigger("change");
+
+      if (deleteButton) {
+        deleteButton.addEventListener("click", () => {
+          setTimeout(() => {
+            if (!KDF.kdf().form.filetokens.includes(token)) {
+              $(`#${field}`).prop("disabled", false).css({
+                color: "var(--color-black)",
+              });
+              $(`#${fileNameField}`).val("").trigger("change");
+            }
+          }, 0);
+        });
+      }
+      checkPageProgress();
+    }
+  });
+
+  // Function to find file_delete element by input ID
+  function getFileDeleteByInputId(fileUploadId) {
+    const fileUploadElement = document.getElementById(fileUploadId);
+    if (fileUploadElement) {
+      const fileDeleteElement = fileUploadElement
+        .closest(".container")
+        .querySelector(".file_delete");
+      if (fileDeleteElement) {
+        return fileDeleteElement;
+      }
+    }
+    return null;
+  }
+
+
   scrollToTop();
 }
 
@@ -3313,17 +3357,15 @@ function getAndSetReviewPageData() {
       const pageNumber = $(this).attr("data-pos");
       if (pageNumber) {
         relevantPages.push(pageNumber);
+        if (KDF.kdf().form.complete !== "Y") {
+          KDF.setVal("txt_pages", relevantPages);
+        }
       }
     });
 
     // Handle the case where the form is complete
     if (KDF.kdf().form.complete === "Y") {
-      relevantPages = $(".dform_page")
-        .not(excludedPages)
-        .map(function () {
-          return $(this).attr("data-pos");
-        })
-        .get();
+      relevantPages = KDF.getVal("txt_pages").split(',');
     }
 
     // Store the constructed page array
@@ -3421,9 +3463,18 @@ function getAndSetReviewPageData() {
             } else {
               fieldValue = "";
             }
+          } else if (fieldType === "tel") {
+            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+            fieldValue = formatPhoneNumber(KDF.getVal(fieldName));
+            if (KDF.kdf().access === "agent") {
+              fieldValue = `<a href="tel:${fieldValue}">${fieldValue}</a>`;
+            }
           } else if (fieldType === "date") {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
             fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
+            if (KDF.kdf().access === "agent" && (fieldName.includes("date_of_birth") || fieldName.includes("_dob"))) {
+              fieldValue = `${formatDateTime(KDF.getVal(fieldName)).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName))})`;
+            }
           } else if (fieldType === "file") {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
             let fileControlName = fieldName.replace("file_", "");
@@ -3472,7 +3523,13 @@ function getAndSetReviewPageData() {
               }
             }
           } else {
-            if (fieldClass.indexOf("currency") !== -1) {
+            if (fieldClass.indexOf("date-field") !== -1) {
+              fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+              fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
+              if (KDF.kdf().access === "agent" && (fieldName.includes("date_of_birth") || fieldName.includes("_dob"))) {
+                fieldValue = `${formatDateTime(KDF.getVal(fieldName)).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName))}`;
+              }
+            } else if (fieldClass.indexOf("currency") !== -1) {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
               fieldValue = `£${KDF.getVal(fieldName)}`;
             } else if (fieldClass.indexOf("address-search") !== -1) {
