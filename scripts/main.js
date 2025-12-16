@@ -5389,7 +5389,7 @@ function calculateAgeFromDob(dobString) {
 
   // Check if the date is valid. new Date("invalid-string") results in an invalid date.
   if (isNaN(birthDate.getTime())) {
-    console.error("Invalid date of birth provided:", dobString);
+    console.warn("Invalid date of birth provided:", dobString);
     return null; // Return null for invalid input
   }
 
