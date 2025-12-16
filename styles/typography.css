@@ -267,17 +267,25 @@ li,
   color: var(--c-alerts-danger);
 }
 
-#dform_container .confirmation-panel h1 {
+#dform_container section.confirmation-panel {
+  background: var(--c-alerts-success) !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#dform_container section.confirmation-panel h1 {
   font-size: var(--font-size-confirmation-header);
   line-height: 70px;
   color: var(--c-greys-white);
 }
 
-#dform_container .confirmation-panel p {
+#dform_container section.confirmation-panel p {
   font-size: var(--font-size-confirmation-text);
   color: var(--c-greys-white);
 }
 
-#dform_container .confirmation-panel p.reference {
+#dform_container section.confirmation-panel p.reference {
   font-weight: 700;
 }
