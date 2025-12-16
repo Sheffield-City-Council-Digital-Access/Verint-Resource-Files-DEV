@@ -3373,9 +3373,12 @@ function getAndSetReviewPageData() {
       const pageNumber = $(this).attr("data-pos");
       if (pageNumber) {
         relevantPages.push(pageNumber);
+        console.log(relevantPages)
         if (KDF.kdf().form.complete !== "Y") {
-          KDF.setVal("txt_pages", relevantPages);
+          // Store the constructed page array
+          KDF.setVal("txt_pages", relevantPages.join(","));
         }
+        console.log(KDF.getVal("txt_pages"))
       }
     });
 
@@ -3383,9 +3386,6 @@ function getAndSetReviewPageData() {
     if (KDF.kdf().form.complete === "Y") {
       relevantPages = KDF.getVal("txt_pages").split(',');
     }
-
-    // Store the constructed page array
-    KDF.setVal("txt_pages", relevantPages.join(","));
 
     // Clear the review content HTML
     $("#review-page-content-container").html("");
