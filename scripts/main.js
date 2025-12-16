@@ -5403,6 +5403,38 @@ function formatReadableTime(date) {
 
 // --- HELPER FUNCTIONS ----------------------------------------------------- \\
 
+// --- CALCULATE AGE FROM DATE OF BIRTH ------------------------------------- \\
+
+/**
+ * Calculates a person's age based on their date of birth.
+ *
+ * @param {string} dobString The date of birth in "YYYY-MM-DD" format (e.g., "1990-05-15").
+ * @returns {number|null} The calculated age in years, or null if the input date is invalid.
+ */
+function calculateAgeFromDob(dobString) {
+  // Try to create a Date object from the input string.
+  // Using YYYY-MM-DD format is recommended for reliable parsing.
+  const birthDate = new Date(dobString);
+
+  // Check if the date is valid. new Date("invalid-string") results in an invalid date.
+  if (isNaN(birthDate.getTime())) {
+    console.error("Invalid date of birth provided:", dobString);
+    return null; // Return null for invalid input
+  }
+
+  const today = new Date();
+
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDifference = today.getMonth() - birthDate.getMonth();
+
+  // Adjust age if the birthday hasn't occurred yet this year
+  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+
+  return age;
+}
+
 // --- RESTORE PLACE HOLDER TEXT -------------------------------------------- \\
 
 function restorePlaceHolder(fieldName) {
@@ -7129,3 +7161,4 @@ function populateNotesTable(data) {
 
   renderPaginatedTable(data, 'notes-table-body', 'notes-pagination', notesRowMapper, notesSorter);
 }
+
