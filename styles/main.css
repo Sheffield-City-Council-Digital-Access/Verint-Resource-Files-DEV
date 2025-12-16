@@ -176,10 +176,10 @@
   box-shadow: inset 0 -2px 0 0 var(--c-greys-black);
 }
 
-::selection {
+/* ::selection {
   background-color: var(--c-focus-links);
   color: var(--c-greys-black);
-}
+} */
 
 #dform_container .dform_hidden,
 #dform_container *.dform_hidden {
