@@ -60,7 +60,7 @@ const formUserPath = [];
 
 function handleInitialisingEvent() {
   // --- ADD INTERNAL HEADER FOOTER  ---------------------------------------- \\
-
+  console.log("handleInitialisingEvent", KDF.kdf())
   if (KDF.kdf().access === "agent") {
     (() => {
       /**
@@ -495,6 +495,7 @@ function handleInitialisingEvent() {
 // --- HANDLE ON READY EVENT ------------------------------------------------ \\
 
 function handleOnReadyEvent(_, kdf) {
+  console.log("handleOnReadyEvent", kdf)
   customerState = kdf.customerset;
   formattedTitle = KDF.getVal("le_title").replace(/\s+/g, "-");
 
