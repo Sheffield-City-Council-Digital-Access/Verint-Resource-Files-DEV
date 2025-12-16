@@ -655,6 +655,19 @@ function handleOnReadyEvent(_, kdf) {
         $('.dform_section_box_review div[data-type="buttonset"]').remove();
       }
     }
+
+    // Force review page
+    let attempts = 0;
+    const maxAttempts = 50;
+    const forceReviewPage = setInterval(() => {
+      attempts++;
+    
+      if (getCurrentPageId() === "dform_page_page_review" || attempts > maxAttempts) {
+        clearInterval(forceReviewPage);
+      } else {
+        KDF.gotoPage('page_review', false, true, false);
+      }
+    }, 50);
   } else {
     if (kdf.form.caseid && kdf.form.ref) {
       KDF.showPage("page_review");
@@ -1351,18 +1364,21 @@ function handleOnReadyEvent(_, kdf) {
         <div class="review-content">
           <div class="review-content-header">
             <h3>${pageTitle}</h3>
-            <button type="button" class="go-to-page-btn" id="go-to-${pageId}">Edit</button>
+            ${KDF.kdf().form.complete !== "Y" 
+              ? `<button type="button" class="go-to-page-btn" id="go-to-${pageId}">Edit</button>` 
+              : ''
+            }
           </div>
-      ${fields
-        .map(
-          (field) => `
-            <p>${field.fieldlabel}: ${field.fieldValue}</p>
-          `
-        )
-        .join("")}
-          </div>
+          ${fields
+            .map(
+              (field) => `
+                <p><strong>${field.fieldlabel}:</strong> ${field.fieldValue}</p>
+              `
+            )
+            .join("")}
+        </div>
       </div>
-  `;
+    `;
 
     document
       .getElementById("review-case-content-container")
