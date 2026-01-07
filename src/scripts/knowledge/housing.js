@@ -59,7 +59,11 @@ class FormH extends CoreH {
 // Tested Shared Content areas. \\
 const sharedInformation = `
   <div class="shared-info">
-    Information used in multiple areas test.
+    <p>Information used in multiple areas test.</p>
+  <ul>
+    <li> test 1 </li>
+    <li> test 2 </li>
+  </ul>
   </div>
 `;
 
