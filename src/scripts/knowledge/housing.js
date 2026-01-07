@@ -118,7 +118,7 @@ const universalCredit = new ContentH(
   "Universal credit",
   "Learn about Universal Credit, including how to apply, report changes, and manage rent and Council Tax payments.",
   `
-  ${sharedInformation}
+ 
     <p>If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
    you may be directed to claim Universal Credit:</p>
 <ul>
@@ -300,7 +300,7 @@ const welfareReform = new ContentH(
         <h3>FAQ</h3>
         <div class="accordion-icon"></div>
     </summary>
-${sharedInformation}
+
     <div class="accordion-content">
         <details class="details-accordion">
             <summary>
