@@ -1945,16 +1945,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
-
-
-// Tested Shared Content areas. \\
-const sharedInformation = `
-  <div class="shared-info">
-    <p>Information used in multiple areas test.</p>
-  <ul>
-    <li> test 3 </li>
-    <li> test 4 </li>
-  </ul>
-  </div>
-`;
