@@ -54,10 +54,7 @@ class FormH extends CoreH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-container.innerHTML = `
-  <h2>Housing Information</h2>
-  ${window.sharedInformation}
-`;
+container.innerHTML = ${window.sharedInformation};
 
 //#region Crossregion
 
