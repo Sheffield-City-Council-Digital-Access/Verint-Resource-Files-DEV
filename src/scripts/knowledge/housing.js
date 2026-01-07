@@ -54,6 +54,8 @@ class FormH extends CoreH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
+import { sharedInformation } from "./telephone.js";
+
 //#region Crossregion
 
 const communalFireSafety = new ContentH(
