@@ -118,6 +118,7 @@ const universalCredit = new ContentH(
   "Universal credit",
   "Learn about Universal Credit, including how to apply, report changes, and manage rent and Council Tax payments.",
   `
+     ${sharedInformation}
     <p>If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
    you may be directed to claim Universal Credit:</p>
 <ul>
@@ -292,6 +293,7 @@ const welfareReform = new ContentH(
   <li>a mutual exchange, or</li>
   <li>a transfer to another council home</li>
   </ul>
+  ${sharedInformation}
   <p>Need to be aware of the impact that having a home with spare bedrooms will have on their welfare benefits.</p>
   
   <details class="accordion">
@@ -11710,6 +11712,17 @@ const tenancySustainment = new MenuH(
 );
 
 //#endregion Tenancy Management Tenancy Sustainment
+
+
+// Tested Shared Content areas. \\
+
+// Single source of truth
+const sharedInformation = `
+  <div class="shared-info">
+    Information used in multiple areas test.
+  </div>
+`;
+
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
