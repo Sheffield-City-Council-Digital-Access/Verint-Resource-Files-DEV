@@ -54,7 +54,10 @@ class FormH extends CoreH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
-import { sharedInformation } from "./telephone.js";
+container.innerHTML = `
+  <h2>Housing Information</h2>
+  ${window.sharedInformation}
+`;
 
 //#region Crossregion
 
