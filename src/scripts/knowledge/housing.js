@@ -54,6 +54,15 @@ class FormH extends CoreH {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
+
+
+// Tested Shared Content areas. \\
+const sharedInformation = `
+  <div class="shared-info">
+    Information used in multiple areas test.
+  </div>
+`;
+
 //#region Crossregion
 
 const communalFireSafety = new ContentH(
@@ -11712,16 +11721,6 @@ const tenancySustainment = new MenuH(
 );
 
 //#endregion Tenancy Management Tenancy Sustainment
-
-
-// Tested Shared Content areas. \\
-
-// Single source of truth
-const sharedInformation = `
-  <div class="shared-info">
-    Information used in multiple areas test.
-  </div>
-`;
 
 
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
