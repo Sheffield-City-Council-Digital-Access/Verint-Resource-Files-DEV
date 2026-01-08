@@ -3313,8 +3313,8 @@ const applicationChanges = new ContentH(
       Use the following login details to access the system:
     </p>
     <p>
-      Email Address: <strong>propertyshop@sheffield.gov.uk</strong><br>
-      Password: <strong>StatusPoppyGlove1*</strong>
+      Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
+      Password: <strong>Password1*</strong>
     </p>
           Advisor note: You have logged in using dummy login details. Please do not
           amend anything on screen. Log in if required using the login details above
@@ -3677,8 +3677,8 @@ const bidding = new ContentH(
       Use the following login details to access the system:
     </p>
     <p>
-      Email Address: <strong>euxtzklhnprejkqlfy@nespj.com</strong><br>
-      Password: <strong>Password1*</strong>
+      Email Address: <strong>propertyshop@sheffield.gov.uk</strong><br>
+      Password: <strong>StatusPoppyGlove1*</strong>
     </p>
             <br>
             <br>
