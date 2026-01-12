@@ -6625,7 +6625,7 @@ function renderAccountDetails(account, summary, stage, payment, charges, transac
         <p id="currentBalance" class="detail-value">${summary?.currentBalance || ''}</p>
       </div>
       <div>
-      ${account.totalBalance
+      ${summary.totalBalance
         ? `
             <p class="detail-label">Total Balance</p>
             <p id="totalBalance" class="detail-value">${summary?.totalBalance || ''}</p>
