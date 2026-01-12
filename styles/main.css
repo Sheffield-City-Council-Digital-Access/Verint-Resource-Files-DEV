@@ -31,7 +31,7 @@
 
 :root {
   /* Colors */
-  --c-core-brand-primary-darken: #13384a;
+  --c-core-brand-primary-darken: #13384A;
   --c-core-brand-primary: #1b4a60;
   --c-core-brand-secondary: #0b0c0c;
   --c-core-brand-body: #3d3d3b;
@@ -48,7 +48,7 @@
   --c-greys-black: #000000;
   --c-links-link: #003142;
   --c-focus-links: #3fc49a;
-  --c-alerts-success: #008b40;
+  --c-alerts-success: #00853E;
   --c-alerts-success-darken: #006b31;
   --c-core-tints-success-tint-20: #ddffed;
   --c-alerts-danger: #d4351c;
