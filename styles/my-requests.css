@@ -192,6 +192,7 @@ li.le-stat-closed li.le-request-status-text::after {
 }
 
 #pagination-container li.le-pagination-nav a {
+  color: var(--c-core-brand-primary-darken);
   font-weight: var(--font-weight-semibold);
   margin-inline: var(--spacing-xs);
   padding-inline: var(--spacing-xs);
