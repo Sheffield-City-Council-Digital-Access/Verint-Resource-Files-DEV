@@ -224,7 +224,7 @@ a.close-notification-link:focus::before {
 #dform_container section.alert-panel--ineligible {
   display: grid;
   grid-template-columns: 34px 1fr;
-  column-gap: var(--spacing-sm);
+  gap: var(--spacing-sm);
   max-width: 750px;
   padding: 26px 30px 30px;
   background: var(--c-greys-white);
@@ -247,18 +247,14 @@ a.close-notification-link:focus::before {
 #dform_container section.info-panel>h3,
 #dform_container section.success-panel>h3,
 #dform_container section.alert-panel--ineligible>h3,
-#dform_container section.alert-panel--ineligible>h3 {
-  grid-column: 2 / -1;
-  margin-top: 0;
-}
-
+#dform_container section.alert-panel--ineligible>h3,
 #dform_container section.notice-panel>p,
 #dform_container section.info-panel>p,
 #dform_container section.success-panel>p,
 #dform_container section.alert-panel--ineligible>p,
 #dform_container section.alert-panel--ineligible>p {
   grid-column: 2 / -1;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 #dform_container section.notice-panel a,
