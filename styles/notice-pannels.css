@@ -230,6 +230,11 @@ a.close-notification-link:focus::before {
     border-radius: 0 25px 0 0;
 }
 
+#dform_container section.notice-panel,
+#dform_container section.info-panel  {
+  content: url(../icons/circle-info-primary-darkened.svg);
+}
+
 #dform_container section.notice-panel > h3,
 #dform_container section.info-panel > h3,
 #dform_container section.success-panel > h3,
@@ -259,8 +264,17 @@ a.close-notification-link:focus::before {
     border-color: var(--c-alerts-success);
 }
 
+#dform_container section.success-panel::before {
+  content: url(../icons/circle-check-success.svg);
+}
+
 #dform_container section.alert-panel--ineligible,
 #dform_container section.alert-panel--ineligible {
     background: var(--c-core-tints-accent-1-tint-20);
     border-color: var(--c-alerts-danger);
+}
+
+#dform_container section.alert-panel--ineligible,
+#dform_container section.alert-panel--ineligible {
+  content: url(../icons/triangle-exclamation-danger.svg);
 }
