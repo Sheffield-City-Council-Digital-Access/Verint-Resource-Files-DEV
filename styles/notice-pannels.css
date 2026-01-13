@@ -102,7 +102,7 @@ div.notification-content a {
 
 div.notification-content p a {
   font-weight: var(--font-weight-bold);
-} 
+}
 
 div.notification-content a {
   gap: var(--spacing-xs);
@@ -222,33 +222,43 @@ a.close-notification-link:focus::before {
 #dform_container section.success-panel,
 #dform_container section.alert-panel--ineligible,
 #dform_container section.alert-panel--ineligible {
-    max-width: 750px;
-    padding: 26px 30px 30px;
-    background: var(--c-greys-white);
-    border: 2px solid var(--c-core-brand-primary-darken);
-    border-left: 5px solid var(--c-core-brand-primary-darken);
-    border-radius: 0 25px 0 0;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  column-gap: var(--spacing-sm);
+  max-width: 750px;
+  padding: 26px 30px 30px;
+  background: var(--c-greys-white);
+  border: 2px solid var(--c-core-brand-primary-darken);
+  border-left: 5px solid var(--c-core-brand-primary-darken);
+  border-radius: 0 25px 0 0;
 }
 
-#dform_container section.notice-panel,
-#dform_container section.info-panel  {
+#dform_container section.notice-panel::before,
+#dform_container section.info-panel::before,
+#dform_container section.success-panel::before,
+#dform_container section.alert-panel--ineligible::before,
+#dform_container section.alert-panel--ineligible::before {
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
   content: url(../icons/circle-info-primary-darkened.svg);
 }
 
-#dform_container section.notice-panel > h3,
-#dform_container section.info-panel > h3,
-#dform_container section.success-panel > h3,
-#dform_container section.alert-panel--ineligible > h3,
-#dform_container section.alert-panel--ineligible > h3 {
-    margin-top: 0;
+#dform_container section.notice-panel>h3,
+#dform_container section.info-panel>h3,
+#dform_container section.success-panel>h3,
+#dform_container section.alert-panel--ineligible>h3,
+#dform_container section.alert-panel--ineligible>h3 {
+  grid-column: 2 / -1;
+  margin-top: 0;
 }
 
-#dform_container section.notice-panel > p,
-#dform_container section.info-panel > p,
-#dform_container section.success-panel > p,
-#dform_container section.alert-panel--ineligible > p,
-#dform_container section.alert-panel--ineligible > p {
-    margin-bottom: 0;
+#dform_container section.notice-panel>p,
+#dform_container section.info-panel>p,
+#dform_container section.success-panel>p,
+#dform_container section.alert-panel--ineligible>p,
+#dform_container section.alert-panel--ineligible>p {
+  grid-column: 2 / -1;
+  margin-bottom: 0;
 }
 
 #dform_container section.notice-panel a,
@@ -256,12 +266,12 @@ a.close-notification-link:focus::before {
 #dform_container section.success-panel a,
 #dform_container section.alert-panel--ineligible a,
 #dform_container section.alert-panel--ineligible a {
-    font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
 }
 
 #dform_container section.success-panel {
-    background: var(--c-core-tints-success-tint-20);
-    border-color: var(--c-alerts-success);
+  background: var(--c-core-tints-success-tint-20);
+  border-color: var(--c-alerts-success);
 }
 
 #dform_container section.success-panel::before {
@@ -270,11 +280,11 @@ a.close-notification-link:focus::before {
 
 #dform_container section.alert-panel--ineligible,
 #dform_container section.alert-panel--ineligible {
-    background: var(--c-core-tints-accent-1-tint-20);
-    border-color: var(--c-alerts-danger);
+  background: var(--c-core-tints-accent-1-tint-20);
+  border-color: var(--c-alerts-danger);
 }
 
-#dform_container section.alert-panel--ineligible,
-#dform_container section.alert-panel--ineligible {
+#dform_container section.alert-panel--ineligible::before,
+#dform_container section.alert-panel--ineligible::before {
   content: url(../icons/triangle-exclamation-danger.svg);
 }
