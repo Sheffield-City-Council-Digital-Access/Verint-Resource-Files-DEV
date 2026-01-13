@@ -206,3 +206,61 @@ a.close-notification-link:focus::before {
   grid-row: 2 / -1;
   align-self: end;
 }
+
+
+
+
+
+
+
+
+
+
+
+#dform_container section.notice-panel,
+#dform_container section.info-panel,
+#dform_container section.success-panel,
+#dform_container section.alert-panel--ineligible,
+#dform_container section.alert-panel--ineligible {
+    max-width: 750px;
+    padding: 26px 30px 30px;
+    background: var(--c-greys-white);
+    border: 2px solid var(--c-core-brand-primary-darken);
+    border-left: 5px solid var(--c-core-brand-primary-darken);
+    border-radius: 0 25px 0 0;
+}
+
+#dform_container section.notice-panel > h3,
+#dform_container section.info-panel > h3,
+#dform_container section.success-panel > h3,
+#dform_container section.alert-panel--ineligible > h3,
+#dform_container section.alert-panel--ineligible > h3 {
+    margin-top: 0;
+}
+
+#dform_container section.notice-panel > p,
+#dform_container section.info-panel > p,
+#dform_container section.success-panel > p,
+#dform_container section.alert-panel--ineligible > p,
+#dform_container section.alert-panel--ineligible > p {
+    margin-bottom: 0;
+}
+
+#dform_container section.notice-panel a,
+#dform_container section.info-panel a,
+#dform_container section.success-panel a,
+#dform_container section.alert-panel--ineligible a,
+#dform_container section.alert-panel--ineligible a {
+    font-weight: var(--font-weight-bold);
+}
+
+#dform_container section.success-panel {
+    background: var(--c-core-tints-success-tint-20);
+    border-color: var(--c-alerts-success);
+}
+
+#dform_container section.alert-panel--ineligible,
+#dform_container section.alert-panel--ineligible {
+    background: var(--c-core-tints-accent-1-tint-20);
+    border-color: var(--c-alerts-danger);
+}
