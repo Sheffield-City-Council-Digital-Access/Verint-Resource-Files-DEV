@@ -231,3 +231,7 @@ li.le-stat-closed li.le-request-status-text::after {
   opacity: 50%;
   cursor: not-allowed;
 }
+
+#widget_ahtm_view_reuests_into > section > p {
+  margin: 0;
+}
