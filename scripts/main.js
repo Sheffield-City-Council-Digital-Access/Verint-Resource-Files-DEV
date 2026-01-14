@@ -3306,7 +3306,7 @@ function handleSetReporter(date, kdf) {
   }
 
   // Set date to input fields and trigger change
-  if (date !== "Invalid Date") {
+  if (!isNaN(date.getDate())) {
     $("#dform_widget_num_date_of_birth_dd").val(date.getDate()).blur();
     $("#dform_widget_num_date_of_birth_mm")
       .val(date.getMonth() + 1)
@@ -3883,6 +3883,10 @@ function setProfileAddressDetails(targetPageId, kdf) {
     "profile-Postcode": postcode,
   } = kdf.profileData;
   let subProperty, buildingName, buildingNumber, fullAddress;
+  
+  if (postcode === '') {
+      return
+  }
 
   const addressSelectionSection = document.querySelector(
     `#${targetPageId} .address-selection-section`
@@ -3997,6 +4001,15 @@ function setProfileAddressDetails(targetPageId, kdf) {
     { name: manualAddressElement, display: "hide" },
     { name: findOnMapElement, display: "hide" },
   ]);
+  
+  const searchInput = document.querySelector(
+    `#dform_page_page_about_you input[data-customalias="postcode"]`
+  );
+  let searchButton = document.querySelector(
+    `#dform_page_page_about_you .address-search-btn`
+  );
+  initialProfileAddressLoad = searchInput && searchButton ? true : false;
+  $("#dform_widget_button_but_find_address_about_you").click();
 }
 
 // --- MAP FUNCTIONS -------------------------------------------------------- \\
@@ -7194,4 +7207,3 @@ function populateNotesTable(data) {
 
   renderPaginatedTable(data, 'notes-table-body', 'notes-pagination', notesRowMapper, notesSorter);
 }
-
