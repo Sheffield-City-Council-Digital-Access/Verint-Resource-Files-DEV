@@ -166,7 +166,7 @@ const universalCredit = new ContentH(
     <div class="accordion-content">
         <p>Universal Credit does not include help with your Council Tax, so you must claim this separately.</p>
         <p>You can do this at:
-        <a href="https://www.sheffield.gov.uk/benefits/council-tax-support" 
+        <a href="https://www.sheffield.gov.uk/benefits/council-tax-support" target="_blank">https://www.sheffield.gov.uk/benefits/council-tax-support</a>
       </p>
 <button
     type="button"
@@ -2856,13 +2856,13 @@ const housingOnline = new ContentH(
       Login
     </h3>
     <p>
-      Click <a href="housing.sheffield.gov.uk/ords/houlive_selfserv/f?p=13000:101::::::" target="_blank">here</a> to access Housing Online.
+      Click <a href="https://housing.sheffield.gov.uk/ords/houlive_selfserv/f?p=13000:101::::::" target="_blank">here</a> to access Housing Online.
     </p>
     <p>
       Use the following login details to access the system:
     </p>
     <p>
-      Email Address: <strong>propertyshop@sheffield.gov.uk</strong><br>
+      Email Address: <strong>propertyshop@sheffield.gov.uk </strong><br>
       Password: <strong>StatusPoppyGlove1*</strong>
     </p>
      <p>
@@ -5789,8 +5789,8 @@ const rentVariation = new ContentH(
     <div class="accordion-content">
         <p>The rent-free weeks this year will be weeks commencing:</p>
         <ul>
-            <li>Monday 16th December 2024</li>
-            <li>Monday 23rd December 2024</li>
+            <li>Monday 15th December 2025</li>
+            <li>Monday 22nd December 2025</li>
         </ul>
     </div>
   </details>
