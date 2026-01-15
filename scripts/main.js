@@ -2585,8 +2585,8 @@ function disabledButtonToggle(enable) {
 // --- SET VALUE TO FIELD ON CURRENT PAGE ----------------------------------- \\
 
 // Function to set value to fields based on data-customalias attributes of inputs on the current page
-function setValuesToInputFields(aliasesAndValues) {
-  const currentPageId = getCurrentPageId(); // Get the current page ID
+function setValuesToInputFields(aliasesAndValues, targetPageId) {
+  const currentPageId = targetPageId ? targetPageId : getCurrentPageId(); // Get the current page ID
 
   // Iterate over each custom alias and value pair
   aliasesAndValues.forEach(({ alias, value }) => {
@@ -3964,7 +3964,7 @@ function setProfileAddressDetails(targetPageId, kdf) {
     { alias: "city", value: city },
     { alias: "postCode", value: postcode },
     { alias: "fullAddress", value: fullAddress },
-  ]);
+  ], "dform_page_page_about_you");
 
   if (addressearchResults) {
     const selectElement = addressearchResults.querySelector("select");
