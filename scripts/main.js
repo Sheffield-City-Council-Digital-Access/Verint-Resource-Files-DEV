@@ -3952,20 +3952,6 @@ function setProfileAddressDetails(targetPageId, kdf) {
     );
   }
 
-  property = formatTitleCase(property);
-  streetName = formatTitleCase(streetName);
-  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
-    streetName
-  )}, ${city}, ${postcode}`;
-
-  setValuesToInputFields([
-    { alias: "property", value: property },
-    { alias: "streetName", value: streetName },
-    { alias: "city", value: city },
-    { alias: "postCode", value: postcode },
-    { alias: "fullAddress", value: fullAddress },
-  ], "dform_page_page_about_you");
-
   if (addressearchResults) {
     const selectElement = addressearchResults.querySelector("select");
     if (selectElement) {
@@ -4010,6 +3996,22 @@ function setProfileAddressDetails(targetPageId, kdf) {
   );
   initialProfileAddressLoad = searchInput && searchButton ? true : false;
   $("#dform_widget_button_but_find_address_about_you").click();
+  
+  property = formatTitleCase(property);
+  streetName = formatTitleCase(streetName);
+  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
+    streetName
+  )}, ${city}, ${postcode}`;
+
+  setTimeout(() => {
+    setValuesToInputFields([
+      { alias: "property", value: property },
+      { alias: "streetName", value: streetName },
+      { alias: "city", value: city },
+      { alias: "postCode", value: postcode },
+      { alias: "fullAddress", value: fullAddress },
+    ], "dform_page_page_about_you");
+  }, 0);
 }
 
 // --- MAP FUNCTIONS -------------------------------------------------------- \\
