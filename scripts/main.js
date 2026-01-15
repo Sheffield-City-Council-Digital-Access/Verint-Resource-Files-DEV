@@ -2585,8 +2585,8 @@ function disabledButtonToggle(enable) {
 // --- SET VALUE TO FIELD ON CURRENT PAGE ----------------------------------- \\
 
 // Function to set value to fields based on data-customalias attributes of inputs on the current page
-function setValuesToInputFields(aliasesAndValues) {
-  const currentPageId = getCurrentPageId(); // Get the current page ID
+function setValuesToInputFields(aliasesAndValues, targetPageId) {
+  const currentPageId = targetPageId ? targetPageId : getCurrentPageId(); // Get the current page ID
 
   // Iterate over each custom alias and value pair
   aliasesAndValues.forEach(({ alias, value }) => {
@@ -3952,20 +3952,6 @@ function setProfileAddressDetails(targetPageId, kdf) {
     );
   }
 
-  property = formatTitleCase(property);
-  streetName = formatTitleCase(streetName);
-  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
-    streetName
-  )}, ${city}, ${postcode}`;
-
-  setValuesToInputFields([
-    { alias: "property", value: property },
-    { alias: "streetName", value: streetName },
-    { alias: "city", value: city },
-    { alias: "postCode", value: postcode },
-    { alias: "fullAddress", value: fullAddress },
-  ]);
-
   if (addressearchResults) {
     const selectElement = addressearchResults.querySelector("select");
     if (selectElement) {
@@ -4010,6 +3996,22 @@ function setProfileAddressDetails(targetPageId, kdf) {
   );
   initialProfileAddressLoad = searchInput && searchButton ? true : false;
   $("#dform_widget_button_but_find_address_about_you").click();
+  
+  property = formatTitleCase(property);
+  streetName = formatTitleCase(streetName);
+  fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
+    streetName
+  )}, ${city}, ${postcode}`;
+
+  setTimeout(() => {
+    setValuesToInputFields([
+      { alias: "property", value: property },
+      { alias: "streetName", value: streetName },
+      { alias: "city", value: city },
+      { alias: "postCode", value: postcode },
+      { alias: "fullAddress", value: fullAddress },
+    ], "dform_page_page_about_you");
+  }, 0);
 }
 
 // --- MAP FUNCTIONS -------------------------------------------------------- \\
