@@ -3833,7 +3833,7 @@ function checkAddressHasBeenSet(action = "next") {
       const selectedValue = searchResult.value;
       let message = "Select the address";
 
-      if (selectedValue !== "" && selectedValue !== "Please select...") {
+      if (selectedValue !== "" && selectedValue !== "Please select") {
         message = "Click use this address";
       }
       showFieldError(searchResultContainer, searchResult, message);
@@ -5482,7 +5482,7 @@ function calculateAgeFromDob(dobString) {
 
 function restorePlaceHolder(fieldName) {
   $(`#dform_widget_${fieldName} option:first`)
-    .text("Please select...")
+    .text("Please select")
     .val("")
     .prop("selected", true)
     .prop("disabled", true);
