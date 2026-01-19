@@ -8,7 +8,7 @@ input[type="file"]::file-selector-button {
   padding-inline: var(--spacing-xs);
   height: 100%;
   border-radius: 5px;
-  border: solid 1px #3D3D3B;
+  border: solid 1px var(--c-core-brand-body);
   margin-right: var(--spacing-xs);
 }
 
@@ -139,4 +139,90 @@ input[type="file"]::file-selector-button {
 #dform_container div[data-type="file"]>div:nth-child(2) br,
 #dform_container .dform_fileupload_progressbar {
   display: none;
+}
+
+/* --- Multiple Files  */
+
+#dform_container .multi-file[data-type="file"] input[type="file"] {
+  color: transparent;
+}
+
+#dform_container .multi-file[data-type="file"]>div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+#dform_container .multi-file[data-type="file"] .dform_filenames {
+  width: 100%;
+  max-width: 700px;
+}
+
+#dform_container .multi-file[data-type="file"] .dform_filenames::before {
+  content: "Files added";
+  margin-block: var(--spacing-md);
+  padding: 0;
+  display: inline-block;
+  font-family: var(--font-family);
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-body);
+  font-weight: var(--font-weight-semibold);
+  color: var(--c-core-brand-primary-darken);
+  vertical-align: unset;
+  background: transparent;
+}
+
+#dform_container .multi-file[data-type="file"] .dform_filenames>span {
+  padding-block: var(--spacing-sm);
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  column-gap: var(--spacing-xl);
+  border-bottom: 1px solid var(--c-core-brand-body);
+}
+
+#dform_container .multi-file[data-type="file"] .dform_filenames>span::before {
+
+  content: "Uploaded";
+  display: inline-flex;
+  align-items: center;
+  padding-left: var(--spacing-lg);
+  background-image: url("https://cdn.ukpreview.empro.verintcloudservices.com/tenants/sheffielddev/icons/circle-check-success.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px 20px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-body);
+  color: var(--c-alerts-success);
+  grid-row: 1 / -1;
+  grid-column: 2 / 3;
+}
+
+#dform_container .multi-file[data-type="file"] .dform_filenames>span>a {
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+  margin: 0;
+  text-decoration: none;
+}
+
+#dform_container .multi-file[data-type="file"] .file_delete {
+  grid-row: 1 / -1;
+  grid-column: 3 / 4;
+  color: transparent;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+#dform_container .multi-file[data-type="file"] .file_delete::after {
+  margin-left: var(--spacing-xs);
+  content: 'Remove';
+  font-family: var(--font-family);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+  color: var(--c-core-brand-primary-darken);
+  text-decoration: underline;
+  text-underline-offset: 0.50rem;
 }

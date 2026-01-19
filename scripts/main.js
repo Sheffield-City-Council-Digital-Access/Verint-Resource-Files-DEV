@@ -447,47 +447,97 @@ function handleInitialisingEvent() {
 
   // --- HANDLE FILE UPLOAD ------------------------------------------------ \\
 
+  $('.multi-file').each(function () {
+    const $container = $(this);
+    const $labelDiv = $container.find('div').first();
+    const $fileListDiv = $container.find('.dform_filenames');
+
+    if ($container.find('.file-counter-wrapper').length === 0) {
+      $labelDiv.after(`<div class="file-counter-wrapper"><span class="current-count">0</span> of 5 uploaded</div>`);
+    }
+
+    if ($fileListDiv.find('.empty-files-msg').length === 0) {
+      $fileListDiv.prepend(`<p class="empty-files-msg">You haven't uploaded any files yet.</p>`);
+    }
+
+    const fieldId = $container.find('input[type="file"]').attr('id');
+    updateMultiFileUI(fieldId);
+  });
+
   $(document).ajaxComplete(function (event, xhr, settings) {
     if (settings.url.startsWith(KDF.kdf().rest.attachFiles)) {
-      const { field, token, filename, mimetype } = xhr.responseJSON[0];
-      const deleteButton = getFileDeleteByInputId(field);
+      const { field, filename } = xhr.responseJSON[0];
+      const $field = $(`#${field}`);
+      const isMultiFile = $field.closest('.multi-file').length > 0;
       const fileNameField = field.replace("file_", "txt_file_name_");
+      const $nameInput = $(`#${fileNameField}`);
 
-      $(`#${field}`).prop("disabled", true).css({
-        color: "var(--color-background)",
-      });
-      $(`#${fileNameField}`).val(filename).trigger("change");
-
-      if (deleteButton) {
-        deleteButton.addEventListener("click", () => {
-          setTimeout(() => {
-            if (!KDF.kdf().form.filetokens.includes(token)) {
-              $(`#${field}`).prop("disabled", false).css({
-                color: "var(--color-black)",
-              });
-              $(`#${fileNameField}`).val("").trigger("change");
-            }
-          }, 0);
-        });
+      if (isMultiFile) {
+        let currentVal = $nameInput.val();
+        let newVal = currentVal ? currentVal + ", " + filename : filename;
+        $nameInput.val(newVal).trigger("change");
+      } else {
+        $field.prop("disabled", true).css({ color: "var(--color-background)" });
+        $nameInput.val(filename).trigger("change");
       }
+
+      const $container = $field.closest('.container');
+
+      $container.off('click', '.file_delete').on('click', '.file_delete', function () {
+        setTimeout(() => {
+          const names = [];
+          $container.find('.dform_filenames span[data-filename]').each(function () {
+            names.push($(this).attr('data-filename'));
+          });
+
+          if (isMultiFile) {
+            $nameInput.val(names.join(", ")).trigger("change");
+          } else {
+            if (names.length === 0) {
+              $field.prop("disabled", false).css({ color: "var(--color-black)" });
+              $nameInput.val("").trigger("change");
+            }
+          }
+
+          updateMultiFileUI(field);
+
+        }, 250);
+      });
+
+      updateMultiFileUI(field);
       checkPageProgress();
     }
   });
 
-  // Function to find file_delete element by input ID
-  function getFileDeleteByInputId(fileUploadId) {
-    const fileUploadElement = document.getElementById(fileUploadId);
-    if (fileUploadElement) {
-      const fileDeleteElement = fileUploadElement
-        .closest(".container")
-        .querySelector(".file_delete");
-      if (fileDeleteElement) {
-        return fileDeleteElement;
-      }
-    }
-    return null;
-  }
+  function updateMultiFileUI(fieldId) {
+    if (!fieldId) return;
 
+    const $container = $(`#${fieldId}`).closest('.multi-file');
+    if ($container.length === 0) return;
+
+    const $fileInput = $(`#${fieldId}`);
+    const $fileList = $container.find('.dform_filenames');
+    const $emptyMsg = $container.find('.empty-files-msg');
+    const $countDisplay = $container.find('.current-count');
+
+    const uploadCount = $fileList.find('span[data-filename]').length;
+
+    $countDisplay.text(uploadCount);
+
+    if (uploadCount > 0) {
+      $emptyMsg.hide();
+    } else {
+      $emptyMsg.show();
+    }
+
+    if (uploadCount >= 5) {
+      $fileInput.prop('disabled', true);
+      $fileInput.css('opacity', '0.5');
+    } else {
+      $fileInput.prop('disabled', false);
+      $fileInput.css('opacity', '1');
+    }
+  }
 
   scrollToTop();
 }
@@ -2469,7 +2519,7 @@ function checkPageProgress() {
 
   // Handle file inputs separately
   const fileUploads = Array.from(
-    currentPageElement.querySelectorAll("input[type='file']:required")
+    currentPageElement.querySelectorAll("input[type='file']:required:not(.multi-file)")
   ).filter((el) => isVisible(el));
 
   // Handle radio buttons and checkboxes separately
@@ -3883,9 +3933,9 @@ function setProfileAddressDetails(targetPageId, kdf) {
     "profile-Postcode": postcode,
   } = kdf.profileData;
   let subProperty, buildingName, buildingNumber, fullAddress;
-  
+
   if (postcode === '') {
-      return
+    return
   }
 
   const addressSelectionSection = document.querySelector(
@@ -3987,7 +4037,7 @@ function setProfileAddressDetails(targetPageId, kdf) {
     { name: manualAddressElement, display: "hide" },
     { name: findOnMapElement, display: "hide" },
   ]);
-  
+
   const searchInput = document.querySelector(
     `#dform_page_page_about_you input[data-customalias="postcode"]`
   );
@@ -3996,7 +4046,7 @@ function setProfileAddressDetails(targetPageId, kdf) {
   );
   initialProfileAddressLoad = searchInput && searchButton ? true : false;
   $("#dform_widget_button_but_find_address_about_you").click();
-  
+
   property = formatTitleCase(property);
   streetName = formatTitleCase(streetName);
   fullAddress = `${formatTitleCase(property)} ${formatTitleCase(
@@ -6641,12 +6691,12 @@ function renderAccountDetails(account, summary, stage, payment, charges, transac
       </div>
       <div>
       ${summary.totalBalance
-        ? `
+      ? `
             <p class="detail-label">Total Balance</p>
             <p id="totalBalance" class="detail-value">${summary?.totalBalance || ''}</p>
           `
-        : ''
-      }
+      : ''
+    }
       </div>
       <div>
         <p class="detail-label">Payment Method</p>
