@@ -532,10 +532,10 @@ function handleInitialisingEvent() {
 
     if (uploadCount >= 5) {
       $fileInput.prop('disabled', true);
-      $fileInput.css('opacity', '0.5');
+      // $fileInput.css('opacity', '0.5');
     } else {
       $fileInput.prop('disabled', false);
-      $fileInput.css('opacity', '1');
+      // $fileInput.css('opacity', '1');
     }
   }
 
