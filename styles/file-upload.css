@@ -8,7 +8,7 @@ input[type="file"]::file-selector-button {
   padding-inline: var(--spacing-xs);
   height: 100%;
   border-radius: 5px;
-  border: solid 1px #3D3D3B;
+  border: solid 1px var(--c-core-brand-body);
   margin-right: var(--spacing-xs);
 }
 
