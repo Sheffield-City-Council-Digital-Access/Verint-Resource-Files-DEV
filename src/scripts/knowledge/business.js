@@ -65,6 +65,7 @@ class CoreBusiness {
         Application process has 3 stages.
         <ol>
             <li>Apply</li> 
+            <li><a href="https://www.sheffield.gov.uk/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney-carriage-vehicle-licence/choosing-hackney-carriage" target="_blank">https://www.sheffield.gov.uk/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney-carriage-vehicle-licence/choosing-hackney-carriage</a></li>
             <li>Process</li>
             <li>Determine</li>
         </ol>
@@ -139,6 +140,18 @@ class CoreBusiness {
         </div>
     </details>
 
+     <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Apply for a new HC licence</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+                Online form via Big Change portal Must licence a vehicle to use it as a HC in Sheffield.    Soon to be SCC form
+            </p>
+        </div>
+    </details>
+
     <details class="accordion">
         <summary class="accordion-header">
             <h3>Collecting the licence</h3>
@@ -181,6 +194,7 @@ const applyPrivateHire = new ContentBusiness(
     Application process has 3 stages.
     <ol>
         <li>Apply</li> 
+        <li><a href="https://www.sheffield.gov.uk/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney-carriage-vehicle-licence/choosing-hackney-carriage" target="_blank">https://www.sheffield.gov.uk/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney-carriage-vehicle-licence/choosing-hackney-carriage</a></li>
         <li>Process</li>
         <li>Determine</li>
     </ol>
@@ -201,7 +215,7 @@ const applyPrivateHire = new ContentBusiness(
 
     <details class="accordion">
         <summary class="accordion-header">
-            <h3>Hackney carriage disclosure and barring checks</h3>
+            <h3>Private Hire Vehicle disclosure and barring checks</h3>
             <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
@@ -247,8 +261,8 @@ const applyPrivateHire = new ContentBusiness(
         </summary>
         <div class="accordion-content">
             <p>
-                A hackney carriage vehicle licence costs <strong>£212</strong>.  
-                Must pay online when complete the hackney carriage application form.
+                A private hire vehicle licence costs <strong>£212</strong>.  
+                Must pay online when complete the private hire application form.
             </p>
         </div>
     </details>
@@ -326,16 +340,27 @@ const applyPrivateHire = new ContentBusiness(
             <details class="details-accordion">
             <summary>Proof of right to work document?</summary>
             <div class="details-accordion-content">
+            <p>
+                You will need to provide us with evidence that you are legally allowed to work in the UK if you are:
+            </p>
                 <ul>
-                    <li>British passport.</li>
-                    <li>Irish passport.</li>
-                    <li>Document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man.</li>
-                    <li>Passport from immigration control.</li>
-                    <li>Immigration status document issued by the Home Office, presented with an official document giving your permanent National Insurance (NI) number and your name.</li>
-                    <li>UK birth certificate, together with an official document giving your permanent NI number and name.</li>
-                    <li>Channel Islands, Isle of Man or Ireland birth certificate, presented with an official document giving your permanent NI number and name.</li>
-                    <li>Certificate of naturalisation as a British citizen, presented with an official document giving your permanent NI number and your name.</li>
+                    <li>applying to become a licensed driver</li>
+                    <li>applying to become an operator</li>
+                    <li>a hackney carriage or private hire vehicle licence holder</li>
                 </ul>
+            <p>
+                To prove this, we will need to see your original right to work documents in person and take copies of them.  
+            </p>
+            <p>
+                This information can be provided when you make your in-person Disclosure and Barring Service application to us.    
+            </p>
+            <p>
+                Once we have seen you in-person, we will not need to see you again unless you have right to work restrictions.    
+            </p>
+            <p>
+                Documents that we accept can be found at <a href="https://www.sheffield.gov.uk/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/right-to-work" target="_blank">https://www.sheffield.gov.uk/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/right-to-work</a> 
+            </p>
+
             </div>
             </details>
 
@@ -346,27 +371,6 @@ const applyPrivateHire = new ContentBusiness(
                     <li>Current passport.</li>
                     <li>Document from Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man.</li>
                     <li>Current immigration status document containing a photograph issued by the Home Office.</li>
-                </ul>
-            </div>
-            </details>
-
-            <details class="details-accordion">
-            <summary>If the applicant is under immigration controls - applicable limitations</summary>
-            <div class="details-accordion-content">
-                <p>
-                    Only issue a licence for the period that you are entitled to work in the UK.
-                </p>
-            </div>
-            </details>
-
-            <details class="details-accordion">
-            <summary>If the right to work in the UK is a time-limited period</summary>
-            <div class="details-accordion-content">
-                <ul>
-                    <li>Document or certificate of application (non-digital) issued by the Home Office.</li>
-                    <li>Document from the Bailiwick of Jersey, Bailiwick of Guernsey or the Isle of Man.</li>
-                    <li>Application Registration Card issued by the Home Office that says you can take employment.</li>
-                    <li>Positive Verification Notice issued by the Home Office Employer Checking Service.</li>
                 </ul>
             </div>
             </details>
@@ -395,7 +399,7 @@ const applyPrivateHire = new ContentBusiness(
             <summary>Knowledge test pass mark</summary>
             <div class="details-accordion-content">
                 <p>
-                    Score at least 80% in each section to pass the Knowledge Test.
+                    Score at least 80% in each section to pass the Knowledge Test. <p><a href="https://www.sheffield.gov.uk/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/knowledge-test" target="_blank">https://www.sheffield.gov.uk/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/knowledge-test</a> JCHERE add Send Link</p>
                 </p>
             </div>
             </details>
@@ -432,7 +436,7 @@ const applyPrivateHire = new ContentBusiness(
             <summary>Cost for Driving standards test</summary>
             <div class="details-accordion-content">
                 <p>
-                    £ 70
+                    £75
                 </p>
             </div>
             </details>
@@ -567,7 +571,7 @@ const applyPrivateHire = new ContentBusiness(
                 <ul>
                     <li>Email - Take clear photos of all pages and email them to taxilicensing@sheffield.gov.uk.</li>
                     <li>Post - by recorded delivery to Licensing Service Block C, Staniforth Road Depot, Staniforth Road Sheffield S9 3HD.</li>
-                    <li>In-person - drop the medical pack off in the post box on site.</li>
+                    <li>In-person - drop the medical pack off in the post box on site ensure you keep a copy of your medical certificate for your own records in all cases.</li>
                 </ul>
             </div>
             </details>
@@ -760,7 +764,7 @@ const applyPrivateLicence = new ContentBusiness(
     <details class="details-accordion">
       <summary>Cost for driving standards test</summary>
       <div class="details-accordion-content">
-        <p>£70</p>
+        <p>£75</p>
       </div>
     </details>
 
