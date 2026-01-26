@@ -879,18 +879,20 @@ function handleOnReadyEvent(_, kdf) {
   // --- HANDLE ENTER ADDRESS MANUALLY  ------------------------------------- \\
 
   const manualAddressDetails = document.querySelector(`#${getCurrentPageId().replace("_page_page_", "_widget_html_ahtm_manual_address_")} details`);
-  manualAddressDetails.addEventListener('toggle', () => {
-    if (manualAddressDetails.open) {
-      const postcodeSearchInput = document.querySelector(`#${getCurrentPageId()} .address-search input`);
-      if (postcodeSearchInput) {
-        postcodeSearchInput.classList.remove('dform_fielderror');
-        const postcodeValidationMsg = postcodeSearchInput.parentElement.querySelector('.dform_validationMessage');
-        if (postcodeValidationMsg) {
-          postcodeValidationMsg.style.setProperty('display', 'none', 'important');
+  if (manualAddressDetails) {
+    manualAddressDetails.addEventListener('toggle', () => {
+      if (manualAddressDetails.open) {
+        const postcodeSearchInput = document.querySelector(`#${getCurrentPageId()} .address-search input`);
+        if (postcodeSearchInput) {
+          postcodeSearchInput.classList.remove('dform_fielderror');
+          const postcodeValidationMsg = postcodeSearchInput.parentElement.querySelector('.dform_validationMessage');
+          if (postcodeValidationMsg) {
+            postcodeValidationMsg.style.setProperty('display', 'none', 'important');
+          }
         }
       }
-    }
-  });
+    });
+  }
 
   // --- HANDLE SET ADDRESS ------------------------------------------------- \\
 
