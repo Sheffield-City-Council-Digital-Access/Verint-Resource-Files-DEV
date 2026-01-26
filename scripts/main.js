@@ -3639,7 +3639,7 @@ function getAndSetReviewPageData() {
               .append(`<dd class="answer">${fieldValue}</dd>`);
 
             if (KDF.kdf().form.complete !== "Y") {
-              const changeLink = $("<a href='#'>Change</a>").on(
+              const changeLink = $(`<a href='#'>${KDF.kdf().form.name.startsWith("cm_") ? "Update" : "Change"}</a>`).on(
                 "click",
                 function (e) {
                   e.preventDefault();
