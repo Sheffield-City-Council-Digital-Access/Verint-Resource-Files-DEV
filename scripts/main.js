@@ -60,7 +60,7 @@ const formUserPath = [];
 
 function handleInitialisingEvent() {
   // --- ADD INTERNAL HEADER FOOTER  ---------------------------------------- \\
-  console.log("handleInitialisingEvent", KDF.kdf())
+
   if (KDF.kdf().access === "agent") {
     (() => {
       /**
@@ -146,21 +146,21 @@ function handleInitialisingEvent() {
 
   // --- GOOGLE ANALITICS  -------------------------------------------------- \\
 
-  if (KDF.kdf().access === "citizen") {
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        "gtm.start": new Date().getTime(),
-        event: "gtm.js",
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-PBGBFQVW");
-  }
+  // if (KDF.kdf().access === "citizen") {
+  //   (function (w, d, s, l, i) {
+  //     w[l] = w[l] || [];
+  //     w[l].push({
+  //       "gtm.start": new Date().getTime(),
+  //       event: "gtm.js",
+  //     });
+  //     var f = d.getElementsByTagName(s)[0],
+  //       j = d.createElement(s),
+  //       dl = l != "dataLayer" ? "&l=" + l : "";
+  //     j.async = true;
+  //     j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+  //     f.parentNode.insertBefore(j, f);
+  //   })(window, document, "script", "dataLayer", "GTM-PBGBFQVW");
+  // }
 
   // --- HANDLE SIGN IN PAGE ------------------------------------------------ \\
 
@@ -327,6 +327,34 @@ function handleInitialisingEvent() {
       });
       backButton.insertAdjacentElement("afterend", pagenav);
     }
+  })();
+
+  // --- SET PRIVICY NOTICE ------------------------------------------------- \\
+
+  (() => {
+    const privacyNoticeMarkup = `
+      <details class="details-accordion" open="">
+        <summary>
+          What we do with your information
+        </summary>
+        <div class="details-accordion-content">
+          <p>The information you provide on this form will be used to process your request. We log your details on our Customer database so we have a record of your contact. Key details are then passed to the relevant officers so they can respond to your request. Sometimes we need to share your information with a third party. This might be because we’re working with another organisation, or we’ve contracted a company to deliver a service on our behalf. In these cases, we’ll only share the minimum information necessary. We keep your information in line with our retention policies.</p>
+          <p class="privacy-notice">For further information about how long we keep information, how we process personal data, your rights under data protection, and contacting the Data Protection Officer, please see our Privacy Notice web page <a href="https://www.sheffield.gov.uk/privacy" target="_blank" rel="noopener">https://www.sheffield.gov.uk/privacy/privacy</a></p>
+        </div>
+      </details>
+    `;
+
+    const targetIDs = [
+      'dform_widget_html_ahtm_privacy_notice',
+      'dform_widget_html_ahtm_privacy_notice_about_them'
+    ];
+
+    targetIDs.forEach(id => {
+      const container = document.getElementById(id);
+      if (container) {
+        container.innerHTML = privacyNoticeMarkup;
+      }
+    });
   })();
 
   // --- ADD CHARACTER COUNT ------------------------------------------------ \\
