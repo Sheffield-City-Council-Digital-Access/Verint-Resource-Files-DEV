@@ -3576,7 +3576,9 @@ function getAndSetReviewPageData() {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
             fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
             if (KDF.kdf().access === "agent" && (fieldName.includes("date_of_birth") || fieldName.includes("_dob"))) {
-              fieldValue = `${formatDateTime(KDF.getVal(fieldName)).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName))})`;
+              fieldValue = KDF.getVal(fieldName) !== '' 
+                ? `${formatDateTime(KDF.getVal(fieldName)).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName))})` 
+                : "Not answered";
             }
           } else if (fieldType === "file") {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
@@ -3630,7 +3632,9 @@ function getAndSetReviewPageData() {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
               fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
               if (KDF.kdf().access === "agent" && (fieldName.includes("date_of_birth") || fieldName.includes("_dob"))) {
-                fieldValue = `${formatDateTime(KDF.getVal(fieldName)).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName))})`;
+                fieldValue = KDF.getVal(fieldName.replace("txt_", "dt_")) !== '' 
+                  ? `${formatDateTime(KDF.getVal(fieldName.replace("txt_", "dt_"))).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName.replace("txt_", "dt_")))})` 
+                  : "Not answered";
               }
             } else if (fieldClass.indexOf("currency") !== -1) {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
@@ -5539,7 +5543,6 @@ function calculateAgeFromDob(dobString) {
 
   // Check if the date is valid. new Date("invalid-string") results in an invalid date.
   if (isNaN(birthDate.getTime())) {
-    console.error("Invalid date of birth provided:", dobString);
     return null; // Return null for invalid input
   }
 
@@ -6377,7 +6380,6 @@ function displaySurveys(data) {
   const container = document.getElementById("survey-panel");
 
   if (!container) {
-    console.error(`Container with ID "survey-panel" not found.`);
     return;
   }
 
