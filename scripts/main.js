@@ -333,7 +333,7 @@ function handleInitialisingEvent() {
 
   (() => {
     const privacyNoticeMarkup = `
-      <details class="details-accordion" open="">
+      <details class="details-accordion">
         <summary>
           What we do with your information
         </summary>
