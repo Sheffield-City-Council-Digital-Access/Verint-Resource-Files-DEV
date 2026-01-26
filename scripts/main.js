@@ -706,16 +706,6 @@ function handleOnReadyEvent(_, kdf) {
 
   // --- HANDLE LOAD COMPLETED FORM ----------------------------------------- \\
 
-  // if (kdf.params.ref && kdf.params.token) {
-  //   KDF.showPage("page_review");
-  //   KDF.gotoPage("page_review");
-
-  //   KDF.makeReadonly();
-  //   $(".review-page-edit-button").remove();
-  //   $('.dform_section_box_review div[data-type="buttonset"]').remove();
-  //   return;
-  // }
-
   if (kdf.form.complete === "Y") {
     KDF.showPage("page_review");
     KDF.gotoPage("page_review");
@@ -884,6 +874,22 @@ function handleOnReadyEvent(_, kdf) {
     }
 
     resetAddressSearch();
+  });
+
+  // --- HANDLE ENTER ADDRESS MANUALLY  ------------------------------------- \\
+
+  const manualAddressDetails = document.querySelector(`#${getCurrentPageId().replace("_page_page_", "_widget_html_ahtm_manual_address_")} details`);
+  manualAddressDetails.addEventListener('toggle', () => {
+    if (manualAddressDetails.open) {
+      const postcodeSearchInput = document.querySelector(`#${getCurrentPageId()} .address-search input`);
+      if (postcodeSearchInput) {
+        postcodeSearchInput.classList.remove('dform_fielderror');
+        const postcodeValidationMsg = postcodeSearchInput.parentElement.querySelector('.dform_validationMessage');
+        if (postcodeValidationMsg) {
+          postcodeValidationMsg.style.setProperty('display', 'none', 'important');
+        }
+      }
+    }
   });
 
   // --- HANDLE SET ADDRESS ------------------------------------------------- \\
@@ -3576,8 +3582,8 @@ function getAndSetReviewPageData() {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
             fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
             if (KDF.kdf().access === "agent" && (fieldName.includes("date_of_birth") || fieldName.includes("_dob"))) {
-              fieldValue = KDF.getVal(fieldName) !== '' 
-                ? `${formatDateTime(KDF.getVal(fieldName)).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName))})` 
+              fieldValue = KDF.getVal(fieldName) !== ''
+                ? `${formatDateTime(KDF.getVal(fieldName)).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName))})`
                 : "Not answered";
             }
           } else if (fieldType === "file") {
@@ -3632,8 +3638,8 @@ function getAndSetReviewPageData() {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
               fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
               if (KDF.kdf().access === "agent" && (fieldName.includes("date_of_birth") || fieldName.includes("_dob"))) {
-                fieldValue = KDF.getVal(fieldName.replace("txt_", "dt_")) !== '' 
-                  ? `${formatDateTime(KDF.getVal(fieldName.replace("txt_", "dt_"))).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName.replace("txt_", "dt_")))})` 
+                fieldValue = KDF.getVal(fieldName.replace("txt_", "dt_")) !== ''
+                  ? `${formatDateTime(KDF.getVal(fieldName.replace("txt_", "dt_"))).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName.replace("txt_", "dt_")))})`
                   : "Not answered";
               }
             } else if (fieldClass.indexOf("currency") !== -1) {
