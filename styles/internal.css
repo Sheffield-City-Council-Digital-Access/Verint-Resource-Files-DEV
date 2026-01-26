@@ -57,8 +57,7 @@
 }
 
 #dform_container.dform_agent #dform_control_buttons {
-  /* padding: var(--spacing-sm) clamp(15px, 5vw, 131px) !important; */
-  padding: var(--spacing-sm) 0 !important;
+  padding: var(--spacing-sm) clamp(15px, 5vw, 131px) !important;
 }
 
 #dform_container.dform_agent form.dform .dform_widget_field,
