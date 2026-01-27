@@ -225,7 +225,6 @@ content: "Uploaded";
 }
 
 #dform_container .multi-file[data-type="file"] .file_delete::after {
-  margin-left: var(--spacing-xs);
   content: 'Remove';
   font-family: var(--font-family);
   font-size: var(--font-size-lg);
@@ -234,4 +233,14 @@ content: "Uploaded";
   color: var(--c-core-brand-primary-darken);
   text-decoration: underline;
   text-underline-offset: 0.50rem;
+}
+
+#dform_container .multi-file[data-type="file"] .file_delete:hover::after {
+  color: var(--c-brand-accents-teal);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+#dform_container .multi-file[data-type="file"] .file_delete:focus::after {
+  text-decoration: none;
 }
