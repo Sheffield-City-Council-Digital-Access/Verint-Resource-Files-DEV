@@ -318,8 +318,8 @@ const applyPrivateHire = new ContentBusiness(
 
   const applyTaxiDriver = new ContentBusiness(
     "applyTaxiDriver",
-    "Apply for a new taxi driver licence (Combined Private Hire / Hackney Carriage Driver Licence)",
     "Apply for a new taxi driver licence",
+    "Apply for a Private Hire or Hackney Carriage Driver Licence",
     `
         <details class="accordion">
         <summary class="accordion-header">
