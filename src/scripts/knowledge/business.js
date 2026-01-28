@@ -318,7 +318,7 @@ const applyPrivateHire = new ContentBusiness(
 
   const applyTaxiDriver = new ContentBusiness(
     "applyTaxiDriver",
-    "Apply for a new taxi driver licence",
+    "Apply for a new taxi driver licence (Combined Private Hire / Hackney Carriage Driver Licence)",
     "Apply for a new taxi driver licence",
     `
         <details class="accordion">
@@ -332,7 +332,7 @@ const applyPrivateHire = new ContentBusiness(
             <summary>Obtaining the "Certificate in Introduction to the Role of Professional Taxi and Private Hire Driver"</summary>
             <div class="details-accordion-content">
                 <p>
-                    Sheffield City College or other providers from Gov. UK.
+                    Sheffield City College or other providers from Gov.UK. - https://www.sheffcol.ac.uk/courses/page/3858B78B-24D6-4FD5-9FC2-3E043293FE3B JCHERE
                 </p>
             </div>
             </details>
@@ -360,7 +360,6 @@ const applyPrivateHire = new ContentBusiness(
             <p>
                 Documents that we accept can be found at <a href="https://www.sheffield.gov.uk/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/right-to-work" target="_blank">https://www.sheffield.gov.uk/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/right-to-work</a> 
             </p>
-
             </div>
             </details>
 
@@ -399,7 +398,7 @@ const applyPrivateHire = new ContentBusiness(
             <summary>Knowledge test pass mark</summary>
             <div class="details-accordion-content">
                 <p>
-                    Score at least 80% in each section to pass the Knowledge Test. <p><a href="https://www.sheffield.gov.uk/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/knowledge-test" target="_blank">https://www.sheffield.gov.uk/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/knowledge-test</a> JCHERE add Send Link</p>
+                    Score at least 80% in each section to pass the Knowledge Test. <p><a href="https://www.sheffield.gov.uk/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/knowledge-test" target="_blank">https://www.sheffield.gov.uk/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/knowledge-test</a> JCHERE add Send Link
                 </p>
             </div>
             </details>
@@ -639,302 +638,6 @@ const applyPrivateHire = new ContentBusiness(
     { date: "21/11/2025", name: "Joseph Coupland"} 
   );
 
-const applyPrivateLicence = new ContentBusiness(
-    "applyPrivateLicence",
-    "Apply for a Priviate Hire Driver License",
-    "Apply for a Priviate Hire Driver License",
-    `
-       <details class="accordion">
-  <summary class="accordion-header">
-    <h3>Fit and Proper Test: Stage 1</h3>
-  </summary>
-  <div class="accordion-content">
-
-    <details class="details-accordion">
-      <summary>Obtaining the "Certificate in Introduction to the Role of Professional Taxi and Private Hire Driver"</summary>
-      <div class="details-accordion-content">
-        <p>Sheffield City College or other providers listed on Gov.uk</p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Proof of right to work</summary>
-      <div class="details-accordion-content">
-        <ul>
-          <li>British passport</li>
-          <li>Irish passport</li>
-          <li>Document from Bailiwick of Jersey, Bailiwick of Guernsey, or the Isle of Man</li>
-          <li>Passport from immigration control</li>
-          <li>Immigration status document issued by the Home Office, presented with an official document giving your permanent National Insurance (NI) number and name</li>
-          <li>UK birth certificate with an official document giving your permanent NI number and name</li>
-          <li>Channel Islands, Isle of Man, or Ireland birth certificate with an official document giving your permanent NI number and name</li>
-          <li>Certificate of naturalisation as a British citizen with an official document giving your permanent NI number and name</li>
-        </ul>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>If you are under immigration controls</summary>
-      <div class="details-accordion-content">
-        <ul>
-          <li>Current passport</li>
-          <li>Document from Bailiwick of Jersey, Bailiwick of Guernsey, or the Isle of Man</li>
-          <li>Current immigration status document containing a photograph issued by the Home Office</li>
-        </ul>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Limitations for applicants under immigration controls</summary>
-      <div class="details-accordion-content">
-        <p>Licence will only be issued for the period you are entitled to work in the UK.</p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>If right to work is time-limited</summary>
-      <div class="details-accordion-content">
-        <ul>
-          <li>Non-digital document or certificate of application issued by the Home Office</li>
-          <li>Document from the Bailiwick of Jersey, Bailiwick of Guernsey, or the Isle of Man</li>
-          <li>Application Registration Card issued by the Home Office stating you can take employment</li>
-          <li>Positive Verification Notice issued by the Home Office Employer Checking Service</li>
-        </ul>
-      </div>
-    </details>
-
-  </div>
-</details>
-
-<details class="accordion">
-  <summary class="accordion-header">
-    <h3>Fit and Proper Test: Stage 2</h3>
-  </summary>
-  <div class="accordion-content">
-
-    <details class="details-accordion">
-      <summary>Age & experience</summary>
-      <div class="details-accordion-content">
-        <p>Must be 21 years or older and have held a Driver and Vehicle Licensing Agency (DVLA) driver licence for more than 12 months.</p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Knowledge test pass mark</summary>
-      <div class="details-accordion-content">
-        <p>Score at least 80% in each section to pass the Knowledge Test.</p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Driving standards test</summary>
-      <div class="details-accordion-content">
-        <p>Pass a driving standards test conducted by a driving standards examiner at our Transport Department. The test will include any 3 of the following:</p>
-        <ul>
-          <li>Emergency stop</li>
-          <li>Left-hand reverse</li>
-          <li>Right-hand reverse</li>
-          <li>Turn in the road</li>
-          <li>Reverse parking</li>
-        </ul>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Requirements for the driving standards test</summary>
-      <div class="details-accordion-content">
-        <ul>
-          <li>Must be over 21 years of age</li>
-          <li>Held a DVLA driver licence for more than 12 months</li>
-          <li>DVLA driving licence number in full</li>
-        </ul>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Qualifications needed before the driving standards test</summary>
-      <div class="details-accordion-content">
-        <ul>
-          <li>Level 2 certificate in Introduction to the Role of the Professional Taxi and Private Hire Driver</li>
-          <li>Safeguarding training</li>
-        </ul>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Cost for driving standards test</summary>
-      <div class="details-accordion-content">
-        <p>£75</p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Vehicles allowed for the driving standards test</summary>
-      <div class="details-accordion-content">
-        <p>With the right insurance:</p>
-        <ul>
-          <li>Driving instructor’s vehicle</li>
-          <li>Rental vehicle</li>
-          <li>Your own vehicle</li>
-          <li>Licensed vehicle registered in applicant's name, with all licensing livery removed</li>
-        </ul>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Disclosure and Barring Checks (DBS)</summary>
-      <div class="details-accordion-content">
-        <p>An Enhanced Disclosure Certificate with Barred List checks from the DBS.</p>
-        <p>Attention will be given to convictions related to:</p>
-        <ul>
-          <li>Crimes resulting in death</li>
-          <li>Exploitation</li>
-          <li>Violence</li>
-          <li>Possession of weapons</li>
-          <li>Sex and indecency offences</li>
-          <li>Dishonesty</li>
-          <li>Drugs</li>
-          <li>Discrimination</li>
-          <li>Motoring offences (drink driving, driving under influence, using a hand-held device while driving)</li>
-        </ul>
-        <p>One or more relevant convictions may result in referral to the Licensing Sub-Committee.</p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Applying for a DBS certificate</summary>
-      <div class="details-accordion-content">
-        <ul>
-          <li>Email <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a> to request a DBS pack</li>
-          <li>Complete the DBS form and attend a face-to-face appointment for document verification</li>
-          <li>Taxi licensing service will submit your application to DBS and return the certificate to you</li>
-          <li>Applicants can apply for the DBS certificate when taking the knowledge or driving standards test</li>
-        </ul>
-        <p>Cost: £49.50</p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>DBS Update Service</summary>
-      <div class="details-accordion-content">
-        <p>Applicants must email a copy of the full certificate and sign up to the DBS Update Service within 30 days of receipt. Maintain the subscription with an annual fee of £16.</p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>DVLA checks</summary>
-      <div class="details-accordion-content">
-        <p>Applicants must provide their DVLA licence number. Consent may be required via TaxiPlus to carry out checks.</p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Taxi driver medical assessments</summary>
-      <div class="details-accordion-content">
-        <p>Must pass a DVLA Group 2 Medical Fitness examination.</p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Medical assessment areas</summary>
-      <div class="details-accordion-content">
-        <ul>
-          <li>Neurological disorders</li>
-          <li>Cardiovascular disorders</li>
-          <li>Diabetes</li>
-          <li>Mental health</li>
-          <li>Drug or alcohol misuse</li>
-          <li>Visual disorders</li>
-          <li>Renal disorders</li>
-          <li>Respiratory disorders</li>
-          <li>Other conditions as advised</li>
-        </ul>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Medical frequency by age</summary>
-      <div class="details-accordion-content">
-        <ul>
-          <li>45 years and older: every 5 years</li>
-          <li>65 years and older: every year</li>
-          <li>More frequent exams if recommended by GP</li>
-        </ul>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Submitting medical assessment</summary>
-      <div class="details-accordion-content">
-        <ul>
-          <li>Email: clear photos of all pages to <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a></li>
-          <li>Post: recorded delivery to Licensing Service, Block C, Staniforth Road Depot, Sheffield S9 3HD</li>
-          <li>In-person: drop off in on-site post box</li>
-        </ul>
-      </div>
-    </details>
-
-  </div>
-</details>
-
-<details class="accordion">
-  <summary class="accordion-header">
-    <h3>Fit and Proper Test: Stage 3</h3>
-  </summary>
-  <div class="accordion-content">
-
-    <details class="details-accordion">
-      <summary>Applying for a new taxi driver licence</summary>
-      <div class="details-accordion-content">
-        <p>Applicants who completed stages 1 & 2 can apply for the new combined PH/HC driver licence.</p>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>New applications defined</summary>
-      <div class="details-accordion-content">
-        <ol>
-          <li>Applicant has never held a licence with us</li>
-          <li>Applicant's previous licence expired more than 12 months ago</li>
-          <li>Applicant applies more than 1 calendar month after last licence expiry</li>
-        </ol>
-      </div>
-    </details>
-
-    <details class="details-accordion">
-      <summary>Licence fees</summary>
-      <div class="details-accordion-content">
-        <ul>
-          <li>1 year: £223</li>
-          <li>2 years: £245</li>
-          <li>3 years: £268</li>
-        </ul>
-      </div>
-    </details>
-
-  </div>
-</details>
-
-
-    `,
-    { buttonLabel: "", formName: ""},
-    { typeKey: "switchboard_transferred_to_service" },
-    { typeKey: "switchboard_information_provided"},
-    {
-      type: "Request",
-      keywords: [
-        "Switchboard",
-        "Switch board",
-        "Switch",
-        "transfer",
-        "redirect",
-        "transfer call",
-        "call"
-      ],
-      categories: ["Your City Council"],
-    },
-    { date: "21/11/2025", name: "Joseph Coupland"} 
-  );
 
 const applyPrivateOperator = new ContentBusiness(
     "applyPrivateOperator",
@@ -2566,7 +2269,6 @@ const vechicleInspections = new ContentBusiness(
     renewVechicleLicence,
     medicalNeeds,
     applyTaxiDriver,
-    applyPrivateLicence,
     applyPrivateOperator,
     renewPrivateOperator
   ]
