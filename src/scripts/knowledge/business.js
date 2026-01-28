@@ -1607,7 +1607,7 @@ const transferLicence = new ContentBusiness(
     `
         <details class="accordion">
         <summary class="accordion-header">
-            <h3>When to contact us</h3>
+            <h3>When to Contact Us</h3>
             <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
@@ -1620,7 +1620,7 @@ const transferLicence = new ContentBusiness(
 
         <details class="accordion">
         <summary class="accordion-header">
-            <h3>How to transfer a vehicle licence</h3>
+            <h3>How to Transfer a Vehicle Licence</h3>
             <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
@@ -1644,7 +1644,7 @@ const transferLicence = new ContentBusiness(
 
         <details class="accordion">
         <summary class="accordion-header">
-            <h3>When we contact you</h3>
+            <h3>When We Contact You</h3>
             <div class="accordion-icon"></div>
         </summary>
         <div class="accordion-content">
@@ -1810,60 +1810,145 @@ const vechicleInspections = new ContentBusiness(
     "vechicleCustomerCharter",
     "Vehicle Testing Customer Charter",
     "Information Regarding Taxi Licensing",
-    `
-        <h3>Keeping your vehicle on the road</h3>
-    <p>
-        Whether private hire or hackney carriage, our vehicle testing charter describes what we expect from you and what you can expect from our service.
-    </p>
-    <h3>Our promise to you</h3>
-    <h4>Thorough testing</h4>
-    <p>
-         We ensure every vehicle examination is detailed, of high quality and completely independent.
-    </p>
-    <h4>Service</h4>
-    <p>
-        We provide a prompt and polite service to all users
-    </p>
-     <h3>Re-tests</h3>
-    <p>
-        You can visit the test centre for general re-tests between 9am and 15:30pm without the need to pre book.<br>
-        Vehicles that fail with 8 faults or more must pre book a 15:30pm appointment.<br>
-    </p>
-    <h3>We will always be responsive</h3>
-    <h4>Complaints</h4>
-    <p>
-        If you want to make a complaint, we will clearly display and explain the steps you need to follow.
-    </p>
-    <h4>Your feedback</h4>
-    <p>
-        We value your comments, complaints and ideas about our service. We will aim to acknowledge your feedback within seven days of receipt (or within 3 days for emails).
-    </p>
-    <h4>Our responses</h4>
-    <p>
-        We will aim to respond fully to your questions or complaints within 28 days. If we can’t meet this timeframe, we will let you know of the progress and give you a date when we will reply.
-    </p>
-     <h4>Appointments</h4>
-    <p>
-        If you contact us without an appointment, we will try to see you as quickly as possible.
-    </p>
-    <h4>Keeping you informed</h4>
-    <p>
-        We will keep you updated if there are any delays to your vehicle testing.
-    </p>
+    `    
+        <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Keeping Your Vehicle on the Road</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+                Whether private hire or hackney carriage, our vehicle testing charter describes what we expect from you and what you can expect from our service.
+            </p>
+        </div>
+        </details>
 
-    <h3>Your commitment to us</h3>
-    <h4>Keep us updated</h4>
-    <p>
-        Tell us of us of any changes in your personal life that may affect the services we provide to you. 
-    </p>
-    <h4>Your appointment</h4>
-    <p>
-       Attend your scheduled appointment times or let us know in advance if you cannot make it. 
-    </p>
-    <h4>Your behaviour</h4>
-    <p>
-        Please behave politely and considerately, so that we can provide you and other customers with a high-quality service. 
-    </p>
+        <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Our Promise to You</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <details class="details-accordion">
+            <summary>Thorough Testing</summary>
+            <div class="details-accordion-content">
+                <p>
+                    We ensure every vehicle examination is detailed, of high quality and completely independent.
+                </p>
+            </div>
+            </details>
+
+            <details class="details-accordion">
+            <summary>Service</summary>
+            <div class="details-accordion-content">
+                <p>
+                    We provide a prompt and polite service to all users
+                </p>
+            </div>
+            </details>
+        </div>
+        </details>
+
+        <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Re-Tests</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+                You can visit the test centre for general re-tests between 9am and 15:30pm without the need to pre book.<br>
+                Vehicles that fail with 8 faults or more must pre book a 15:30pm appointment.<br>
+            </p>
+        </div>
+        </details>
+
+        <details class="accordion">
+        <summary class="accordion-header">
+            <h3>We Will Always Be Responsive</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <details class="details-accordion">
+            <summary>Complaints</summary>
+            <div class="details-accordion-content">
+                <p>
+                    If you want to make a complaint, we will clearly display and explain the steps you need to follow.
+                </p>
+            </div>
+            </details>
+
+            <details class="details-accordion">
+            <summary>Your Feedback</summary>
+            <div class="details-accordion-content">
+                <p>
+                    We value your comments, complaints and ideas about our service. We will aim to acknowledge your feedback within seven days of receipt (or within 3 days for emails).
+                </p>
+            </div>
+            </details>
+
+            <details class="details-accordion">
+            <summary>Our Responses</summary>
+            <div class="details-accordion-content">
+                <p>
+                    We will aim to respond fully to your questions or complaints within 28 days. If we can’t meet this timeframe, we will let you know of the progress and give you a date when we will reply.
+                </p>
+            </div>
+            </details>
+
+            <details class="details-accordion">
+            <summary>Appointments</summary>
+            <div class="details-accordion-content">
+                <p>
+                    If you contact us without an appointment, we will try to see you as quickly as possible.
+                </p>
+            </div>
+            </details>
+
+            <details class="details-accordion">
+            <summary>Keeping you Informed</summary>
+            <div class="details-accordion-content">
+                <p>
+                    We will keep you updated if there are any delays to your vehicle testing.
+                </p>
+            </div>
+            </details>
+        </div>
+        </details>
+
+        <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Your Commitment to us</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <details class="details-accordion">
+            <summary>Keep us updated</summary>
+            <div class="details-accordion-content">
+                <p>
+                    Tell us of us of any changes in your personal life that may affect the services we provide to you. 
+                </p>
+            </div>
+            </details>
+
+            <details class="details-accordion">
+            <summary>Your Appointment</summary>
+            <div class="details-accordion-content">
+                <p>
+                    Attend your scheduled appointment times or let us know in advance if you cannot make it. 
+                </p>
+            </div>
+            </details>
+
+            <details class="details-accordion">
+            <summary>Your Behaviour</summary>
+            <div class="details-accordion-content">
+                <p>
+                    Please behave politely and considerately, so that we can provide you and other customers with a high-quality service. 
+                </p>
+            </div>
+            </details>
+        </div>
+        </details>
     `,
   
     { buttonLabel: "", formName: ""},
