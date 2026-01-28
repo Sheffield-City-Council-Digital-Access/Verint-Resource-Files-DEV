@@ -1605,36 +1605,67 @@ const transferLicence = new ContentBusiness(
     "Transfer a Vehicle Licence",
     "Transfer a vehicle licence",
     `
-    <h3>When to contact us</h3>
-    <p>
-        If you transfer your vehicle licence to another person or company, you must contact us within 14 days.<br> 
-        It is an offence if you to fail to notify us that your vehicle licence has been transferred to another person or company.<br>
-    </p>
-    <h3>How to transfer a vehicle licence</h3>
-    <p>
-        You need to tell us the following things about the person you are transferring the licence to:
-        <ul>
-            <li>name(s)</li>
-            <li>date of birth</li>
-            <li>address</li>
-        </ul>
-        When you apply, we will need to see the following documents:
-        <ul>
-            <li>copy of the insurance certificate for the vehicle</li>
-            <li>basic Disclosure and Barring Service certificate (if the new licence holder does not hold a taxi driver licence with us)</li>
-            <li>The insurance certificate must cover a licensed driver to use the vehicle for its intended use.</li>
-        </ul>
-        We will transfer your vehicle licence once we have received all the information we need.
-    </p>
-    <h3>When we contact you</h3>
-    <p>
-        We will respond to your request within 5 working days.</br>
-        You will receive your transferred paperwork licence from us by email. We will also post it out to your registered address.
-    </p>
-    <h3>Cost</h3>
-    <p>
-        The fee to transfer your taxi licence is <strong>£33</strong>.
-    </p>
+        <details class="accordion">
+        <summary class="accordion-header">
+            <h3>When to contact us</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+                If you transfer your vehicle licence to another person or company, you must contact us within 14 days.<br> 
+                It is an offence if you to fail to notify us that your vehicle licence has been transferred to another person or company.<br>
+            </p>
+        </div>
+        </details>
+
+        <details class="accordion">
+        <summary class="accordion-header">
+            <h3>How to transfer a vehicle licence</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+                You need to tell us the following things about the person you are transferring the licence to:
+                <ul>
+                    <li>name(s)</li>
+                    <li>date of birth</li>
+                    <li>address</li>
+                </ul>
+                When you apply, we will need to see the following documents:
+                <ul>
+                    <li>copy of the insurance certificate for the vehicle</li>
+                    <li>basic Disclosure and Barring Service certificate (if the new licence holder does not hold a taxi driver licence with us)</li>
+                    <li>The insurance certificate must cover a licensed driver to use the vehicle for its intended use.</li>
+                </ul>
+                We will transfer your vehicle licence once we have received all the information we need.
+            </p>
+        </div>
+        </details>
+
+        <details class="accordion">
+        <summary class="accordion-header">
+            <h3>When we contact you</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+                We will respond to your request within 5 working days.</br>
+                You will receive your transferred paperwork licence from us by email. We will also post it out to your registered address.
+            </p>
+        </div>
+        </details>
+
+        <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Cost</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+                The fee to transfer your taxi licence is <strong>£33</strong>.
+            </p>
+        </div>
+        </details>
     `,
     { buttonLabel: "", formName: ""},
     { typeKey: "switchboard_transferred_to_service" },
