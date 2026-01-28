@@ -318,7 +318,7 @@ const applyPrivateHire = new ContentBusiness(
 
   const applyTaxiDriver = new ContentBusiness(
     "applyTaxiDriver",
-    "Apply for a new taxi driver licence",
+    "Apply for a New Taxi Driver Licence",
     "Apply for a Private Hire or Hackney Carriage Driver Licence",
     `
         <details class="accordion">
@@ -1133,7 +1133,7 @@ const medicalNeeds = new ContentBusiness(
 const renewDriverLicence = new ContentBusiness(
     "renewDriverLicence",
     "Renew a Driver Licence",
-    "Renew a Private Hire / Hackney Carriage Drivers Licence",
+    "Renew a Private Hire or Hackney Carriage Drivers Licence",
     `
         <p>
             We will usually contact you by email when your taxi driver’s licence needs to be renewed,
