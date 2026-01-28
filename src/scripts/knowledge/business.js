@@ -208,7 +208,7 @@ const applyPrivateHire = new ContentBusiness(
         <div class="accordion-content">
             <p>
                 Once the applicant make an application for a PHV Licence, the vehicle will be issued with a date to attend the compliance test.<br>
-                Vehicle compliance test certificate is valid for 14 days
+                Vehicle compliance test certificate is valid for 10 days
             </p>
         </div>
     </details>
