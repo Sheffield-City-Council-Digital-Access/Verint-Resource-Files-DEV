@@ -1184,43 +1184,64 @@ const renewDriverLicence = new ContentBusiness(
     "Renew a Driver Licence",
     "Renew a Private Hire or Hackney Carriage Drivers Licence",
     `
-        <p>
-            We will usually contact you by email when your taxi driver’s licence needs to be renewed,
-            but it is your responsibility to renew your licence on time.
-        </p>
-        <p>
-            You can renew your badge up to 2 months before the date it expires.
-        </p>
+    <p>
+    We will usually contact you by email when your taxi driver’s licence needs to be renewed,
+    but it is your responsibility to renew your licence on time.
+    </p>
+    <p>
+    You can renew your badge up to 2 months before the date it expires.
+    </p>
 
+    <details class="accordion">
+    <summary class="accordion-header">
         <h3>What is required to renew your badge</h3>
-        <h4>DVLA driving licence</h4>
-
-        <p>
-            You will need to supply us with your Driving and Vehicle Licensing Agency (DVLA)
-            driving licence number. When you make your application, we will check your driving
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <details class="details-accordion">
+        <summary>DVLA driving licence</summary>
+        <div class="details-accordion-content">
+            <p>
+                You will need to supply us with your Driving and Vehicle Licensing Agency (DVLA)
+                driving licence number. When you make your application, we will check your driving
             licence with the DVLA.
-        </p>
-        <p>
-            You will receive an email from a company called TaxiPlus. This will ask you to give
-            consent to allow us to carry out these checks.
-        </p>
-        <p>
-            Make sure that you do not share your email address with another driver so we can
-            carry out the check.
-        </p>
-        <h4>DBS check</h4>
-        <p>
-            You need to provide us with a current Enhanced Disclosure Certificate with Barred
-            Check Lists from the Disclosure and Barring Service (DBS).
-        </p>
-        <p>
+            </p>
+            <p>
+                You will receive an email from a company called TaxiPlus. This will ask you to give
+                consent to allow us to carry out these checks.
+            </p>
+            <p>
+                Make sure that you do not share your email address with another driver so we can
+                carry out the check.
+            </p>
+        </div>
+        </details>
+
+        <details class="details-accordion">
+        <summary>DBS check</summary>
+        <div class="details-accordion-content">
+            <p>
+                You need to provide us with a current Enhanced Disclosure Certificate with Barred
+                Check Lists from the Disclosure and Barring Service (DBS).
+            </p>
+            <p>
             We will look at all convictions that are listed in the certificate.
-        </p>
-        <p>
-            If you have had one or more convictions recorded for any of the above offences,
-            your application may be referred to the Licensing Sub-Committee.
-        </p>
+            </p>
+            <p>
+                If you have had one or more convictions recorded for any of the above offences,
+                your application may be referred to the Licensing Sub-Committee.
+            </p>
+        </div>
+        </details>
+    </div>
+    </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
         <h3>Routine checks</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
         <p>
             Once you are licensed as a taxi driver, we will carry out a routine check every
             6 months.
@@ -1234,8 +1255,15 @@ const renewDriverLicence = new ContentBusiness(
             Your licence will be suspended if we are not able to carry out routine checks on
             your DBS and you are unable to supply a certificate dated within one month.
         </p>
+    </div>
+    </details>
 
+    <details class="accordion">
+    <summary class="accordion-header">
         <h3>How to apply</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
         <p>
             To apply for an Enhanced Disclosure Certificate with Barred Check Lists, you need
             to do the following:
@@ -1261,6 +1289,9 @@ const renewDriverLicence = new ContentBusiness(
             You can apply for your DBS certificate when you take your knowledge test and
             driving standards test.
         </p>
+    </div>
+    </details>
+  
     `,
   
     { buttonLabel: "", formName: ""},
