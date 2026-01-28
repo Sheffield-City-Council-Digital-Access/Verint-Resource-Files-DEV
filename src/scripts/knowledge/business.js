@@ -1768,8 +1768,10 @@ const vechicleInspections = new ContentBusiness(
             <div class="details-accordion-content">
                 <p>
                     You will need to test your private hire vehicle at the following intervals: <br>
-                    Under 5 years of age – every 12 months.<br>
-                    Over 6 years of age – every 6 months.<br>
+                    <ul>
+                        <li>Under 5 years of age – every 12 months.</li>
+                        <li>Over 6 years of age – every 6 months.</li>
+                    </ul>
                 </p>
             </div>
             </details>
@@ -1779,8 +1781,10 @@ const vechicleInspections = new ContentBusiness(
             <div class="details-accordion-content">
                 <p>
                     You will need to test your hackney carriage vehicle at the following intervals:<br>
-                    under 9 years of age – every 12 months.<br>
-                    over 9 years of age – every 6 months.<br><br>
+                    <ul>
+                        <li>under 9 years of age – every 12 months.</li>
+                        <li>over 9 years of age – every 6 months.</li>
+                    </ul>
                     The age of the vehicle and how often it will be tested is made clear by the V5C document that is presented when you apply for a vehicle licence.
                 </p>
             </div>
