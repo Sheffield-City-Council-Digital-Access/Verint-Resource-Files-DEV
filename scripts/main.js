@@ -505,7 +505,7 @@ function handleInitialisingEvent() {
         let newVal = currentVal ? currentVal + ", " + filename : filename;
         $nameInput.val(newVal).trigger("change");
       } else {
-        $field.prop("disabled", true).css({ color: "var(--color-background)" });
+        $field.prop("disabled", true).css({ color: "transparent" });
         $nameInput.val(filename).trigger("change");
       }
 
@@ -522,7 +522,7 @@ function handleInitialisingEvent() {
             $nameInput.val(names.join(", ")).trigger("change");
           } else {
             if (names.length === 0) {
-              $field.prop("disabled", false).css({ color: "var(--color-black)" });
+              $field.prop("disabled", false).css({ color: "var(--c-core-brand-primary-darken)" });
               $nameInput.val("").trigger("change");
             }
           }
@@ -1302,6 +1302,14 @@ function handleOnReadyEvent(_, kdf) {
       nextFieldId = `dform_widget_sel_${baseId}_ampm`;
     }
     inputTime(this.id, nextFieldId);
+  });
+
+  $(".time-minute").on("blur", function () {
+    let val = $(this).val();
+  
+    if (val.length === 1 && /^\d$/.test(val)) {
+      $(this).val("0" + val);
+    }
   });
 
   $(".time-ampm").on("change blur", function () {

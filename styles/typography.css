@@ -35,6 +35,10 @@ h6,
   font-weight: var(--font-weight-bold);
 }
 
+#dform_container .dform_page > div.header2 {
+  margin-top: var(--spacing-xg);
+}
+
 h1:focus,
 .header1:focus,
 #dform_container h1:focus,

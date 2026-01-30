@@ -1,7 +1,7 @@
 #dform_container input[type="file"] {
   padding: 0 !important;
   border: none;
-  height: 100%;
+  height: 42px;
 }
 
 input[type="file"]::file-selector-button {
@@ -21,6 +21,7 @@ input[type="file"]::file-selector-button {
 }
 
 #dform_container div[data-type="file"]>div:nth-child(2) {
+  margin-top: var(--spacing-md);
   display: grid;
   grid-template-columns: 8.3rem auto;
   align-items: baseline;
@@ -156,7 +157,7 @@ input[type="file"]::file-selector-button {
   color: transparent;
 }
 
-#dform_container .multi-file[data-type="file"] > div:nth-child(3) {
+#dform_container .multi-file[data-type="file"]>div:nth-child(3) {
   display: flex;
   flex-direction: column;
 }
@@ -167,20 +168,20 @@ input[type="file"]::file-selector-button {
 }
 
 #dform_container .multi-file[data-type="file"] .dform_filenames::before {
-content: "Files added";
-margin-block: var(--spacing-md);
-padding: 0;
-display: inline-block;
-font-family: var(--font-family);
-font-size: var(--font-size-xl);
-line-height: var(--line-height-body);
-font-weight: var(--font-weight-semibold);
-color: var(--c-core-brand-primary-darken);
-vertical-align: unset;
-background: transparent;
+  content: "Files added";
+  margin-block: var(--spacing-md);
+  padding: 0;
+  display: inline-block;
+  font-family: var(--font-family);
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-body);
+  font-weight: var(--font-weight-semibold);
+  color: var(--c-core-brand-primary-darken);
+  vertical-align: unset;
+  background: transparent;
 }
 
-#dform_container .multi-file[data-type="file"] .dform_filenames > span {
+#dform_container .multi-file[data-type="file"] .dform_filenames>span {
   padding-block: var(--spacing-sm);
   display: grid;
   grid-template-columns: 1fr auto auto;
@@ -188,16 +189,15 @@ background: transparent;
   border-bottom: 1px solid var(--c-core-brand-body);
 }
 
-#dform_container .multi-file[data-type="file"] .dform_filenames > span::before {
-
-content: "Uploaded";
+#dform_container .multi-file[data-type="file"] .dform_filenames>span::before {
+  content: "Uploaded";
   display: inline-flex;
   align-items: center;
   padding-left: var(--spacing-lg);
   background-image: url("../icons/circle-check-success.svg");
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 20px 20px; 
+  background-size: 20px 20px;
   font-family: var(--font-family);
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-semibold);
@@ -207,7 +207,7 @@ content: "Uploaded";
   grid-column: 2 / 3;
 }
 
-#dform_container .multi-file[data-type="file"] .dform_filenames > span > a {
+#dform_container .multi-file[data-type="file"] .dform_filenames>span>a {
   grid-row: 1 / -1;
   grid-column: 1 / 2;
   margin: 0;
