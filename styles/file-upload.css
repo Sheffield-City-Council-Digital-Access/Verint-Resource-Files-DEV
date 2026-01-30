@@ -1,7 +1,7 @@
 #dform_container input[type="file"] {
   padding: 0 !important;
   border: none;
-  height: 42px;
+  height: 42px !important;
 }
 
 input[type="file"]::file-selector-button {
@@ -155,6 +155,10 @@ input[type="file"]::file-selector-button {
 
 #dform_container .multi-file[data-type="file"] input[type="file"] {
   color: transparent;
+}
+
+#dform_container .multi-file[data-type="file"] input[type="file"].dform_fielderror {
+  border: none !important;
 }
 
 #dform_container .multi-file[data-type="file"]>div:nth-child(3) {
