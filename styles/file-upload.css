@@ -12,9 +12,9 @@ input[type="file"]::file-selector-button {
   margin-right: var(--spacing-xs);
 }
 
-#dform_container input[type="file"].dform_fielderror::file-selector-button {
+/* #dform_container input[type="file"].dform_fielderror::file-selector-button {
   border: solid 2px var(--c-alerts-danger);
-}
+} */
 
 #dform_container .dform_widget_type_file br {
   display: none;

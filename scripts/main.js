@@ -6376,7 +6376,7 @@ function showWarningBanner(content) {
 }
 
 function showErrorBanner(content) {
-  createNotification(content, "error");
+  createNotification({ message: content }, "error");
 }
 
 /**
