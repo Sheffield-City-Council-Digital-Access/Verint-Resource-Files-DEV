@@ -12,10 +12,6 @@ input[type="file"]::file-selector-button {
   margin-right: var(--spacing-xs);
 }
 
-/* #dform_container input[type="file"].dform_fielderror::file-selector-button {
-  border: solid 2px var(--c-alerts-danger);
-} */
-
 #dform_container .dform_widget_type_file br {
   display: none;
 }
@@ -39,6 +35,7 @@ input[type="file"]::file-selector-button {
   grid-row: 2 / 3;
   z-index: 0;
   height: auto;
+  color: var(--c-core-brand-body);
   background: var(--c-greys-white);
   border: 2px transparent var(--c-core-brand-secondary);
 }
@@ -153,10 +150,6 @@ input[type="file"]::file-selector-button {
   margin-block: var(--spacing-xs);
 }
 
-#dform_container .multi-file[data-type="file"] input[type="file"] {
-  color: transparent;
-}
-
 #dform_container .multi-file[data-type="file"] input[type="file"].dform_fielderror {
   border: none !important;
 }
@@ -173,7 +166,7 @@ input[type="file"]::file-selector-button {
 
 #dform_container .multi-file[data-type="file"] .dform_filenames::before {
   content: "Files added";
-  margin-block: var(--spacing-md);
+  margin-block: var(--spacing-xxs);
   padding: 0;
   display: inline-block;
   font-family: var(--font-family);
