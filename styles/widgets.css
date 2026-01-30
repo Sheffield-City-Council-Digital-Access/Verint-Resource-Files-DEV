@@ -233,6 +233,10 @@
   align-items: start;
 }
 
+#dform_container fieldset.checkboxgroup span:firts-child {
+  margin-top: var(--spacing-lg);
+}
+
 #dform_container .dform_widget_type_checkbox label {
   margin-block: auto;
   color: var(--c-greys-black);
