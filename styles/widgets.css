@@ -233,7 +233,7 @@
   align-items: start;
 }
 
-#dform_container fieldset.checkboxgroup span:first-child {
+#dform_container fieldset.checkboxgroup span:first-of-type {
   margin-top: var(--spacing-lg);
 }
 
