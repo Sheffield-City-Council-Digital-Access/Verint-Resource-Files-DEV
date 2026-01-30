@@ -1122,16 +1122,6 @@ function handleOnReadyEvent(_, kdf) {
       navigator.geolocation.getCurrentPosition(
         function (position) {
           const { latitude, longitude } = position.coords;
-          // KDF.customdata(
-          //   "retrieve-location-from-coordinates",
-          //   $button.attr("id"),
-          //   true,
-          //   true,
-          //   {
-          //     longitude: longitude.toString(),
-          //     latitude: latitude.toString()
-          //   }
-          // );
           plotLocationOnMapGeo(longitude.toString(), latitude.toString())
         },
         function (error) {
@@ -1306,7 +1296,7 @@ function handleOnReadyEvent(_, kdf) {
 
   $(".time-minute").on("blur", function () {
     let val = $(this).val();
-  
+
     if (val.length === 1 && /^\d$/.test(val)) {
       $(this).val("0" + val);
     }
@@ -1643,6 +1633,24 @@ function handleOnReadyEvent(_, kdf) {
 
   $("#dform_widget_button_but_view_my_requests").on("click", function () {
     window.open(`/site/portal/requests`, "_blank");
+  });
+
+  // --- JUMP TO REQUIRED FIELD --------------------------------------------- \\
+  
+  document.addEventListener('click', function (event) {
+    const nextButton = event.target.closest('[data-type="next"]');
+    if (nextButton) {
+      const firstError = document.querySelector(`#${getCurrentPageId()} .dform_fielderror`);
+      if (firstError) {
+        firstError.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+
+        const input = firstError.querySelector('input, select, textarea');
+        if (input) input.focus({ preventScroll: true });
+      }
+    }
   });
 
   scrollToTop();
