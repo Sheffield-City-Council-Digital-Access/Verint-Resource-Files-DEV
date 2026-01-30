@@ -134,7 +134,7 @@
   text-align: center;
 }
 
-#dform_container fieldset.radiogroup span:firts-child {
+#dform_container fieldset.radiogroup span:first-child {
   margin-top: var(--spacing-lg);
 }
 
@@ -233,7 +233,7 @@
   align-items: start;
 }
 
-#dform_container fieldset.checkboxgroup span:firts-child {
+#dform_container fieldset.checkboxgroup span:first-child {
   margin-top: var(--spacing-lg);
 }
 
