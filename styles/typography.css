@@ -36,7 +36,7 @@ h6,
 }
 
 #dform_container .dform_page > div.header2 {
-  margin-top: var(--spacing-xg);
+  margin-top: var(--spacing-xl);
 }
 
 h1:focus,
