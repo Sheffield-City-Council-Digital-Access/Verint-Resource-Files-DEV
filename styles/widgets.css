@@ -128,10 +128,14 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-sm);
   margin-right: var(--spacing-lg);
   margin-bottom: var(--spacing-xxs);
   text-align: center;
+}
+
+#dform_container fieldset.radiogroup span:firts-child {
+  margin-top: var(--spacing-lg);
 }
 
 #dform_container fieldset.radiogroup span:last-child {
