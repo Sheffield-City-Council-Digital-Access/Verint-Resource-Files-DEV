@@ -166,7 +166,7 @@ input[type="file"]::file-selector-button {
 
 #dform_container .multi-file[data-type="file"] .dform_filenames::before {
   content: "Files added";
-  margin-block: var(--spacing-md);
+  margin-block: var(--spacing-xxs);
   padding: 0;
   display: inline-block;
   font-family: var(--font-family);
