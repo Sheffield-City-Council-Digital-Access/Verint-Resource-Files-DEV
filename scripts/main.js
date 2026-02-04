@@ -3452,7 +3452,7 @@ function getValueFromAlias(pageId, alias) {
 // Function to get and set data for the review page
 function getAndSetReviewPageData() {
   const compareDate = new Date("2026-02-04T08:40:00");
-  if (new Date(KDF.kdf().form.created) < compareDate) {
+  if (KDF.kdf().form.created && new Date(KDF.kdf().form.created) < compareDate) {
     oldGetAndSetReviewPageData();
     return;
   }
