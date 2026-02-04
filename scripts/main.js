@@ -5728,14 +5728,121 @@ function formatPhoneNumber(telephone) {
 
 // --- FORMATING DATE AND TIME ---------------------------------------------- \\
 
+// function formatDateTime(dateTime) {
+//   let date;
+//   if (!dateTime) {
+//     date = new Date(); // Use current time if no argument
+//   } else if (typeof dateTime === "number") {
+//     date = new Date(dateTime); // Assume dateTime is already a timestamp
+//   } else {
+//     date = new Date(dateTime); // Try to parse dateTime as a date string
+//   }
+
+//   const year = date.getFullYear().toString();
+//   const month = (date.getMonth() + 1).toString().padStart(2, "0");
+//   const day = date.getDate().toString().padStart(2, "0");
+//   const hours = date.getHours().toString().padStart(2, "0");
+//   const minutes = date.getMinutes().toString().padStart(2, "0");
+//   const seconds = date.getSeconds().toString().padStart(2, "0");
+//   const milliseconds = date.getMilliseconds().toString().padStart(3, "0");
+
+//   return {
+//     base: {
+//       year: year,
+//       month: month,
+//       day: day,
+//       hours: hours,
+//       minutes: minutes,
+//       seconds: seconds,
+//       milliseconds: milliseconds,
+//       weekday: {
+//         short: date.toLocaleDateString("en-GB", { weekday: "short" }),
+//         long: date.toLocaleDateString("en-GB", { weekday: "long" }),
+//       },
+//     },
+//     uk: {
+//       date: date.toLocaleString("en-GB", {
+//         timeZone: "Europe/London",
+//         year: "numeric",
+//         month: "2-digit",
+//         day: "2-digit",
+//       }),
+//       time: date.toLocaleString("en-GB", {
+//         timeZone: "Europe/London",
+//         hour: "2-digit",
+//         minute: "2-digit",
+//         second: "2-digit",
+//         millisecond: "3-digit",
+//       }),
+//       dateTime: date.toLocaleString("en-GB", {
+//         timeZone: "Europe/London",
+//         year: "numeric",
+//         month: "2-digit",
+//         day: "2-digit",
+//         hour: "2-digit",
+//         minute: "2-digit",
+//         second: "2-digit",
+//         millisecond: "3-digit",
+//       }),
+//     },
+//     readable: {
+//       date: date.toLocaleDateString("en-GB", {
+//         day: "numeric",
+//         month: "long",
+//         year: "numeric",
+//       }),
+//       dayDate: date.toLocaleDateString("en-GB", {
+//         weekday: "short",
+//         day: "numeric",
+//         month: "long",
+//         year: "numeric",
+//       }),
+//       time: formatReadableTime(date),
+//     },
+//     iso: date.toISOString().replace(/\.\d{3}Z/, "Z"),
+//     utc: `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}Z`,
+//     inputField: `${year}-${month}-${day}`,
+//   };
+// }
+
 function formatDateTime(dateTime) {
   let date;
-  if (!dateTime) {
-    date = new Date(); // Use current time if no argument
-  } else if (typeof dateTime === "number") {
-    date = new Date(dateTime); // Assume dateTime is already a timestamp
+
+  // Handle empty, null, or undefined input immediately
+  if (!dateTime || dateTime === "" || dateTime === null || dateTime === undefined) {
+    return {
+      uk: { date: "Not answered", time: "", dateTime: "" },
+      readable: { date: "Not answered", dayDate: "", time: "" },
+      iso: "",
+      utc: "",
+      inputField: ""
+    };
+  }
+
+  // Handle British format (DD/MM/YYYY) which native JS Date cannot parse
+  if (typeof dateTime === "string" && dateTime.includes("/")) {
+    const parts = dateTime.split("/");
+    if (parts.length === 3) {
+      // Reorganize to YYYY-MM-DD for standard parsing
+      dateTime = `${parts[2]}-${parts[1]}-${parts[0]}`;
+    }
+  }
+
+  if (typeof dateTime === "number") {
+    date = new Date(dateTime);
   } else {
-    date = new Date(dateTime); // Try to parse dateTime as a date string
+    date = new Date(dateTime);
+  }
+
+  // Safety Check: If the date is invalid, return placeholders instead of crashing
+  if (isNaN(date.getTime())) {
+    return {
+      uk: { date: "Invalid Date", time: "", dateTime: "" },
+      readable: { date: "Invalid Date", dayDate: "", time: "" },
+      iso: "",
+      utc: "",
+      inputField: ""
+    };
   }
 
   const year = date.getFullYear().toString();
@@ -5745,6 +5852,14 @@ function formatDateTime(dateTime) {
   const minutes = date.getMinutes().toString().padStart(2, "0");
   const seconds = date.getSeconds().toString().padStart(2, "0");
   const milliseconds = date.getMilliseconds().toString().padStart(3, "0");
+
+  // Safely attempt ISO generation
+  let isoString = "";
+  try {
+    isoString = date.toISOString().replace(/\.\d{3}Z/, "Z");
+  } catch (e) {
+    console.error("ISO Conversion failed for date:", date);
+  }
 
   return {
     base: {
@@ -5772,7 +5887,6 @@ function formatDateTime(dateTime) {
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit",
-        millisecond: "3-digit",
       }),
       dateTime: date.toLocaleString("en-GB", {
         timeZone: "Europe/London",
@@ -5782,7 +5896,6 @@ function formatDateTime(dateTime) {
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit",
-        millisecond: "3-digit",
       }),
     },
     readable: {
@@ -5797,9 +5910,9 @@ function formatDateTime(dateTime) {
         month: "long",
         year: "numeric",
       }),
-      time: formatReadableTime(date),
+      time: (typeof formatReadableTime === 'function') ? formatReadableTime(date) : `${hours}:${minutes}`,
     },
-    iso: date.toISOString().replace(/\.\d{3}Z/, "Z"),
+    iso: isoString,
     utc: `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}Z`,
     inputField: `${year}-${month}-${day}`,
   };
