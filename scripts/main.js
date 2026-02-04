@@ -3536,7 +3536,8 @@ function getAndSetReviewPageData() {
           .find(".dform_widget_field")
           .filter(function () {
             if (pageId === "dform_page_page_about_you") {
-              return $(this).attr("data-active") === "true";
+              console.log("disp")
+              return true;
             }
             return $(this).css("display") === "block";
           });
