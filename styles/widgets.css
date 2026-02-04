@@ -134,8 +134,12 @@
   text-align: center;
 }
 
+#dform_container .vertical fieldset.radiogroup span {
+  margin-top: 0 !important;
+}
+
 #dform_container .vertical fieldset.radiogroup span:first-of-type  {
-  margin-top: var(--spacing-lg);
+  margin-top: var(--spacing-lg) !important;
 }
 
 #dform_container :not(.vertical) fieldset.radiogroup span {
