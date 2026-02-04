@@ -573,7 +573,6 @@ function handleInitialisingEvent() {
 // --- HANDLE ON READY EVENT ------------------------------------------------ \\
 
 function handleOnReadyEvent(_, kdf) {
-  console.log("handleOnReadyEvent", kdf)
   customerState = kdf.customerset;
   formattedTitle = KDF.getVal("le_title").replace(/\s+/g, "-");
 
@@ -1663,7 +1662,6 @@ function handleOnReadyEvent(_, kdf) {
 // --- HANDLE ON PAGE CHANGE EVENT ------------------------------------------ \\
 
 function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
-  console.log("handlePageChangeEvent", kdf)
   KDF.hideMessages();
 
   // Get the name for the current page
@@ -3535,13 +3533,8 @@ function getAndSetReviewPageData() {
         const pageFields = $(this)
           .find(".dform_widget_field")
           .filter(function () {
-            if (pageId === "dform_page_page_about_you") {
-              console.log("disp")
-              return true;
-            }
             return $(this).css("display") === "block";
           });
-          console.log("pageFields", pageFields)
 
         if (!pageFields.length) {
           return; // Skip to next page
