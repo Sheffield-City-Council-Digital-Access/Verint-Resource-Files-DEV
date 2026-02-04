@@ -3452,11 +3452,6 @@ function getValueFromAlias(pageId, alias) {
 // Function to get and set data for the review page
 function getAndSetReviewPageData() {
   const compareDate = new Date("2026-02-04T08:40:00");
-  if (KDF.kdf().form.created && new Date(KDF.kdf().form.created) < compareDate) {
-    console.log("--legacy--")
-    oldGetAndSetReviewPageData();
-    return;
-  }
 
   const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
 
@@ -3486,7 +3481,12 @@ function getAndSetReviewPageData() {
         relevantPages.push(pageNumber);
         if (KDF.kdf().form.complete !== "Y") {
           // Store the constructed page array
-          KDF.setVal("txt_pages", relevantPages.join(","));
+          if (KDF.kdf().form.created && new Date(KDF.kdf().form.created) < compareDate) {
+            console.log("--legacy--")
+            return;
+          } else {
+            KDF.setVal("txt_pages", relevantPages.join(","));
+          }
         }
       }
     });
