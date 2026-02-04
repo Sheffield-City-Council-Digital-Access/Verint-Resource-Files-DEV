@@ -1432,7 +1432,11 @@ function handleOnReadyEvent(_, kdf) {
     KDF.setVal("txt_postcode_about_you", "");
     KDF.setVal("txt_full_address_about_you", "");
 
-    KDF.gotoPage("complete", true, true, false);
+    if (pageName === "page_about_you") {
+      KDF.gotoPage("complete", true, true, false);
+    } else {
+      checkAddressHasBeenSet("submit");
+    }
   });
 
   // --- HANDLE SAVE AND EXIT CLICK ----------------------------------------- \\
