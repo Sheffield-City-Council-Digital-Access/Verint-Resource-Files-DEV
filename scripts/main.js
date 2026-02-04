@@ -3452,6 +3452,10 @@ function getValueFromAlias(pageId, alias) {
 // Function to get and set data for the review page
 function getAndSetReviewPageData() {
   const compareDate = new Date("2026-02-04T08:40:00");
+  if (KDF.kdf().form.created && new Date(KDF.kdf().form.created) < compareDate) {
+    oldGetAndSetReviewPageData();
+    return;
+  }
 
   const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
 
@@ -3735,399 +3739,153 @@ function getAndSetReviewPageData() {
   }
 }
 
-// function oldGetAndSetReviewPageData() {
-//   // Find the currently active form page
-//   const activeFormPage = $('.dform_page[data-active="true"]:visible');
-//   // Get the page number of the current form page
-//   const thisPageNumber = activeFormPage.attr("data-pos");
-
-//   // Add the current page number to the user's history
-//   formUserPath.push(thisPageNumber);
-
-//   // Check if the review page is currently visible
-//   const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
-
-//   // Reverse the user's path to look back at the visited pages
-//   const formUserPathReversed = [...formUserPath].reverse();
-//   const relevantPagesReversed = [];
-
-//   // Determine relevant pages by looking back from the review page
-//   for (let i = 0; i < formUserPathReversed.length - 1; i++) {
-//     if (
-//       parseInt(formUserPathReversed[i]) > parseInt(formUserPathReversed[i + 1])
-//     ) {
-//       relevantPagesReversed.push(formUserPathReversed[i + 1]);
-//     } else {
-//       formUserPathReversed.splice(i + 1, 1);
-//       i--;
-//     }
-//   }
-
-//   // Reverse the relevant pages to the correct order
-//   let relevantPages = [];
-
-//   if (KDF.kdf().form.complete === "Y") {
-//     // use stored page array when complete
-//     relevantPages = KDF.getVal("txt_pages").split(",");
-//   } else {
-//     if (
-//       KDF.kdf().form.name.startsWith("cm_") ||
-//       KDF.kdf().form.name.endsWith("_cm")
-//     ) {
-//       // use stored page array when case management
-//       relevantPages = KDF.getVal("txt_pages").split(",");
-//     } else if (
-//       KDF.kdf().form.caseid &&
-//       KDF.getVal("txt_resume_form") === "true"
-//     ) {
-//       // use stored page array when resumed
-//       relevantPages = KDF.getVal("txt_pages").split(",");
-//       if (reviewPageIsVisible) {
-//         // check for review page due to page changes
-//         KDF.setVal("txt_resume_form", "false"); // to prevent coming back down the resume path and construct page array
-//       }
-//     } else {
-//       // construct page array
-//       relevantPages = [...relevantPagesReversed].reverse();
-//       KDF.setVal("txt_pages", relevantPages.join(","));
-//     }
-//   }
-
-//   if (reviewPageIsVisible) {
-//     // Clear the review content HTML
-//     $("#review-page-content-container").html("");
-
-//     // Find all form pages except the review page
-//     let formPages = $('.dform_page[data-active="true"]').not(
-//       "#dform_page_page_review"
-//     );
-//     // Picking up all pages encase form rules rehide them on reload
-//     if (KDF.kdf().form.complete === "Y") {
-//       formPages = $(".dform_page").not("#dform_page_page_review");
-//     }
-
-//     formPages.each(function (i) {
-//       // Get the page number of the current form page
-//       const pageNumber = $(this).attr("data-pos");
-
-//       // Check if the page is relevant and should be added to the review page
-//       if (relevantPages.indexOf(pageNumber) > -1) {
-//         // Extract the page name from the element's ID
-//         const pageId = $(formPages[i]).attr("id");
-//         const pageName = pageId.split("dform_page_")[1];
-
-//         KDF.showPage(pageName);
-//         const contentDivId = `review-page-content--${pageName}`;
-
-//         // Create a container for the review page content
-//         $("#review-page-content-container").append(
-//           `<div class="review-page-content-section" id="${contentDivId}"></div>`
-//         );
-
-//         // Create a button to allow editing of the page
-//         const buttonHtml = `<button type="button" id="edit_button_${pageName}" class="review-page-edit-button">Edit</button>`;
-//         const contentDiv = $("#" + contentDivId);
-//         contentDiv.append(buttonHtml);
-
-//         // Attach a click event handler to the button
-//         const button = contentDiv.find(".review-page-edit-button");
-//         button.on("click", function () {
-//           const buttonSet = $(
-//             '.dform_section_box_review div[data-type="buttonset"]'
-//           );
-//           if (buttonSet.is(":hidden")) {
-//             buttonSet.show();
-//           }
-//           KDF.gotoPage(pageName, true, true, true);
-//         });
-
-//         // Get the page header text
-//         const pageHeader = $(formPages[i]).find(".page-title").text();
-//         $("#" + contentDivId).append(`<h3>${pageHeader}</h3`);
-
-//         // Find all visible fields on the page
-//         const pageFields = $(formPages[i])
-//           .find(".dform_widget_field")
-//           .filter(function () {
-//             return $(this).css("display") === "block";
-//           });
-
-//         pageFields.each(function (field) {
-//           const fieldType = $(pageFields[field]).attr("data-type");
-//           const fieldName = $(pageFields[field]).attr("data-name");
-//           const fieldClass = $(pageFields[field]).attr("class");
-//           let fieldLabel = "";
-//           let fieldValue = "";
-
-//           function getLegendText(classSelector) {
-//             const parentElement = $(`.container[data-name="${fieldName}"]`)
-//               .length
-//               ? $(`.container[data-name="${fieldName}"]`)
-//               : $(`.container.dform_widget_${fieldName}`);
-
-//             if (parentElement.length) {
-//               return parentElement.find(`.${classSelector} legend`).text();
-//             }
-//           }
-//           if (fieldType === "select") {
-//             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-//             fieldValue =
-//               KDF.getVal(fieldName) ?? KDF.kdf()?.form?.data?.[fieldName];
-//           } else if (fieldType === "radio") {
-//             fieldLabel = getLegendText("radiogroup");
-//             fieldValue = KDF.getVal(fieldName);
-//           } else if (fieldType === "multicheckbox") {
-//             fieldLabel = getLegendText("checkboxgroup");
-//             fieldValue = `<br/>${KDF.getVal(fieldName).join("<br>")}`;
-//           } else if (fieldType === "date") {
-//             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-//             fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
-//           } else if (fieldType === "file") {
-//             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-//             let fileControlName = fieldName.replace("file_", "");
-//             const fileNameField = "txt_file_name_" + fileControlName;
-//             const filePathField = "txt_file_path_" + fileControlName;
-
-//             const fileNamesString = KDF.getVal(fileNameField);
-//             const filePathsString = KDF.getVal(filePathField);
-
-//             fieldValue = fileNamesString;
-//             if (KDF.kdf().access === "agent" && filePathsString) {
-
-//               const fileNames = fileNamesString.split(",");
-//               const filePaths = filePathsString.split(",");
-//               if (
-//                 fileNames.length === filePaths.length &&
-//                 fileNames.length > 0
-//               ) {
-//                 let linkedFiles = [];
-//                 for (let i = 0; i < filePaths.length; i++) {
-//                   const name = fileNames[i].trim();
-//                   const path = filePaths[i].trim();
-
-//                   if (name && path) {
-//                     linkedFiles.push(
-//                       `<a href="${path}" target="_blank">${name}</a>`
-//                     );
-//                   }
-//                 }
-
-//                 fieldValue = linkedFiles.join("<br>");
-//               } else {
-//                 let linkedFiles = [];
-//                 for (let i = 0; i < filePaths.length; i++) {
-//                   const name = `${fileNames[0].trim()} ${i + 1}`;
-//                   const path = filePaths[i].trim();
-
-//                   if (name && path) {
-//                     linkedFiles.push(
-//                       `<a href="${path}" target="_blank">${name}</a>`
-//                     );
-//                   }
-//                 }
-
-//                 fieldValue = linkedFiles.join("<br>");
-//               }
-//             }
-//           } else {
-//             if (fieldClass.indexOf("currency") !== -1) {
-//               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-//               fieldValue = `£${KDF.getVal(fieldName)}`;
-//             } else if (fieldClass.indexOf("address-search") !== -1) {
-//               fieldLabel = "Address";
-//               fieldValue = getValueFromAlias(pageId, "fullAddress");
-//             } else if (
-//               /\b(property|street-name|city|postcode)\b/.test(fieldClass)
-//             ) {
-//               fieldLabel = false;
-//               fieldValue = "";
-//             } else {
-//               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-//               fieldValue = KDF.getVal(fieldName);
-//             }
-//           }
-
-//           // Check if the field has a label
-//           if (fieldLabel) {
-//             // Set a default value for optional fields that are visible but not answered
-//             if (
-//               fieldValue === "" ||
-//               fieldValue === null ||
-//               fieldValue === undefined
-//             ) {
-//               if (fieldType === "file") {
-//                 fieldValue = "Not uploaded";
-//               } else {
-//                 fieldValue = "Not answered";
-//               }
-//             }
-
-//             // Append the field information to the review page content
-//             $(`#${contentDivId}`).append(
-//               `<p class="review-page-item"><span class="review-page-question-text">${fieldLabel}:</span> ${fieldValue}</p>`
-//             );
-//           }
-//         });
-//       }
-//     });
-//   }
-// }
-
 function oldGetAndSetReviewPageData() {
-  const compareDate = new Date("2026-02-04T08:40:00");
-  if (KDF.kdf().form.created && new Date(KDF.kdf().form.created) < compareDate) {
-    console.log("--legacy--")
-    oldGetAndSetReviewPageData();
-    return;
-  }
+  // Find the currently active form page
+  const activeFormPage = $('.dform_page[data-active="true"]:visible');
+  // Get the page number of the current form page
+  const thisPageNumber = activeFormPage.attr("data-pos");
 
+  // Add the current page number to the user's history
+  formUserPath.push(thisPageNumber);
+
+  // Check if the review page is currently visible
   const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
 
-  if (reviewPageIsVisible) {
-    // showCurrentProgress();
+  // Reverse the user's path to look back at the visited pages
+  const formUserPathReversed = [...formUserPath].reverse();
+  const relevantPagesReversed = [];
 
-    // Find all active form pages, excluding the review, declaration, and complete pages
-    // Note: save and complete are ment to only have page_ listed once
-    const excludedPages = `
-      #dform_page_page_sign_in, 
-      #dform_page_page_review, 
-      #dform_page_page_declaration, 
-      #dform_page_save,
-      #dform_page_complete, 
-      #dform_page_page_core_fields, 
-      #dform_page_page_core_confirm_fields
-    `;
-    const activeFormPages = $('.dform_page[data-active="true"]').not(
-      excludedPages
-    );
+  // Determine relevant pages by looking back from the review page
+  for (let i = 0; i < formUserPathReversed.length - 1; i++) {
+    if (
+      parseInt(formUserPathReversed[i]) > parseInt(formUserPathReversed[i + 1])
+    ) {
+      relevantPagesReversed.push(formUserPathReversed[i + 1]);
+    } else {
+      formUserPathReversed.splice(i + 1, 1);
+      i--;
+    }
+  }
 
-    // Build an array of page numbers from the active pages
-    let relevantPages = [];
-    activeFormPages.each(function () {
-      const pageNumber = $(this).attr("data-pos");
-      if (pageNumber) {
-        relevantPages.push(pageNumber);
-        if (KDF.kdf().form.complete !== "Y") {
-          // Store the constructed page array
-          KDF.setVal("txt_pages", relevantPages.join(","));
-        }
+  // Reverse the relevant pages to the correct order
+  let relevantPages = [];
+
+  if (KDF.kdf().form.complete === "Y") {
+    // use stored page array when complete
+    relevantPages = KDF.getVal("txt_pages").split(",");
+  } else {
+    if (
+      KDF.kdf().form.name.startsWith("cm_") ||
+      KDF.kdf().form.name.endsWith("_cm")
+    ) {
+      // use stored page array when case management
+      relevantPages = KDF.getVal("txt_pages").split(",");
+    } else if (
+      KDF.kdf().form.caseid &&
+      KDF.getVal("txt_resume_form") === "true"
+    ) {
+      // use stored page array when resumed
+      relevantPages = KDF.getVal("txt_pages").split(",");
+      if (reviewPageIsVisible) {
+        // check for review page due to page changes
+        KDF.setVal("txt_resume_form", "false"); // to prevent coming back down the resume path and construct page array
       }
-    });
+    } else {
+      // construct page array
+      relevantPages = [...relevantPagesReversed].reverse();
+      KDF.setVal("txt_pages", relevantPages.join(","));
+    }
+  }
 
-    // Handle the case where the form is complete
-    relevantPages = $(".dform_page")
-      .not(excludedPages)
-      .map(function () {
-        return $(this).attr("data-pos");
-      })
-      .get();
-
+  if (reviewPageIsVisible) {
     // Clear the review content HTML
     $("#review-page-content-container").html("");
 
-    // Find all form pages based on completion status, excluding the same pages
-    let formPages = $('.dform_page[data-active="true"]').not(excludedPages);
+    // Find all form pages except the review page
+    let formPages = $('.dform_page[data-active="true"]').not(
+      "#dform_page_page_review"
+    );
+    // Picking up all pages encase form rules rehide them on reload
     if (KDF.kdf().form.complete === "Y") {
-      formPages = $(".dform_page").not(excludedPages);
+      formPages = $(".dform_page").not("#dform_page_page_review");
     }
 
     formPages.each(function (i) {
+      // Get the page number of the current form page
       const pageNumber = $(this).attr("data-pos");
 
+      // Check if the page is relevant and should be added to the review page
       if (relevantPages.indexOf(pageNumber) > -1) {
-        const pageId = $(this).attr("id");
+        // Extract the page name from the element's ID
+        const pageId = $(formPages[i]).attr("id");
         const pageName = pageId.split("dform_page_")[1];
 
-        // Ensure the page is displayed so its contents can be processed
         KDF.showPage(pageName);
+        const contentDivId = `review-page-content--${pageName}`;
 
-        const pageFields = $(this)
+        // Create a container for the review page content
+        $("#review-page-content-container").append(
+          `<div class="review-page-content-section" id="${contentDivId}"></div>`
+        );
+
+        // Create a button to allow editing of the page
+        const buttonHtml = `<button type="button" id="edit_button_${pageName}" class="review-page-edit-button">Edit</button>`;
+        const contentDiv = $("#" + contentDivId);
+        contentDiv.append(buttonHtml);
+
+        // Attach a click event handler to the button
+        const button = contentDiv.find(".review-page-edit-button");
+        button.on("click", function () {
+          const buttonSet = $(
+            '.dform_section_box_review div[data-type="buttonset"]'
+          );
+          if (buttonSet.is(":hidden")) {
+            buttonSet.show();
+          }
+          KDF.gotoPage(pageName, true, true, true);
+        });
+
+        // Get the page header text
+        const pageHeader = $(formPages[i]).find(".page-title").text();
+        $("#" + contentDivId).append(`<h3>${pageHeader}</h3`);
+
+        // Find all visible fields on the page
+        const pageFields = $(formPages[i])
           .find(".dform_widget_field")
           .filter(function () {
             return $(this).css("display") === "block";
           });
 
-        if (!pageFields.length) {
-          return; // Skip to next page
-        }
-
-        const contentDivId = `review-page-content--${pageName}`;
-        let contentDiv = $("#" + contentDivId);
-
-        if (!contentDiv.length) {
-          $("#review-page-content-container").append(
-            `<section class="review-page-content-section" id="${contentDivId}" aria-labelledby="review-header-${pageName}"></section>`
-          );
-          contentDiv = $("#" + contentDivId);
-        } else {
-          contentDiv.empty();
-        }
-
-        const headerContainer = $(
-          '<div class="review-page-header-container"></div>'
-        );
-        const pageHeader = $(this).find(".header2").text();
-        headerContainer.append(
-          `<h3 id="review-header-${pageName}">${pageHeader}</h3>`
-        );
-        contentDiv.append(headerContainer);
-
-        const dl = $("<dl class='review-list'></dl>");
-        let hasFields = false;
-
         pageFields.each(function (field) {
-          const fieldType = $(this).attr("data-type");
-          const fieldName = $(this).attr("data-name");
-          const fieldClass = $(this).attr("class");
+          const fieldType = $(pageFields[field]).attr("data-type");
+          const fieldName = $(pageFields[field]).attr("data-name");
+          const fieldClass = $(pageFields[field]).attr("class");
           let fieldLabel = "";
-          let fieldValue = "Not answered";
+          let fieldValue = "";
 
           function getLegendText(classSelector) {
             const parentElement = $(`.container[data-name="${fieldName}"]`)
               .length
               ? $(`.container[data-name="${fieldName}"]`)
               : $(`.container.dform_widget_${fieldName}`);
+
             if (parentElement.length) {
               return parentElement.find(`.${classSelector} legend`).text();
             }
           }
-
           if (fieldType === "select") {
-            if (fieldName.startsWith("sel_search_results_")) {
-              fieldLabel = "Address";
-              fieldValue = removeDuplicateWords(
-                getValueFromAlias(pageId, "fullAddress")
-              );
-            } else {
-              fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-              fieldValue =
-                KDF.kdf()?.form?.data?.[fieldName] ?? KDF.getVal(fieldName);
-            }
+            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+            fieldValue =
+              KDF.getVal(fieldName) ?? KDF.kdf()?.form?.data?.[fieldName];
           } else if (fieldType === "radio") {
             fieldLabel = getLegendText("radiogroup");
             fieldValue = KDF.getVal(fieldName);
           } else if (fieldType === "multicheckbox") {
             fieldLabel = getLegendText("checkboxgroup");
-            const values = KDF.getVal(fieldName);
-            if (values && values.length > 0) {
-              fieldValue = values.join(",<br>");
-            } else {
-              fieldValue = "";
-            }
-          } else if (fieldType === "tel") {
-            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-            fieldValue = formatPhoneNumber(KDF.getVal(fieldName));
-            if (KDF.kdf().access === "agent") {
-              fieldValue = `<a href="tel:${fieldValue}">${fieldValue}</a>`;
-            }
+            fieldValue = `<br/>${KDF.getVal(fieldName).join("<br>")}`;
           } else if (fieldType === "date") {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
             fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
-            if (KDF.kdf().access === "agent" && (fieldName.includes("date_of_birth") || fieldName.includes("_dob"))) {
-              fieldValue = KDF.getVal(fieldName) !== ''
-                ? `${formatDateTime(KDF.getVal(fieldName)).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName))})`
-                : "Not answered";
-            }
           } else if (fieldType === "file") {
             fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
             let fileControlName = fieldName.replace("file_", "");
@@ -4176,22 +3934,12 @@ function oldGetAndSetReviewPageData() {
               }
             }
           } else {
-            if (fieldClass.indexOf("date-field") !== -1) {
+            if (fieldClass.indexOf("currency") !== -1) {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-              fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
-              if (KDF.kdf().access === "agent" && (fieldName.includes("date_of_birth") || fieldName.includes("_dob"))) {
-                fieldValue = KDF.getVal(fieldName.replace("txt_", "dt_")) !== ''
-                  ? `${formatDateTime(KDF.getVal(fieldName.replace("txt_", "dt_"))).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName.replace("txt_", "dt_")))})`
-                  : "Not answered";
-              }
-            } else if (fieldClass.indexOf("currency") !== -1) {
-              fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-              fieldValue = `£${KDF.getVal(fieldName)}`;
+              fieldValue = `Â£${KDF.getVal(fieldName)}`;
             } else if (fieldClass.indexOf("address-search") !== -1) {
               fieldLabel = "Address";
-              fieldValue = removeDuplicateWords(
-                getValueFromAlias(pageId, "fullAddress")
-              );
+              fieldValue = getValueFromAlias(pageId, "fullAddress");
             } else if (
               /\b(property|street-name|city|postcode)\b/.test(fieldClass)
             ) {
@@ -4203,50 +3951,27 @@ function oldGetAndSetReviewPageData() {
             }
           }
 
+          // Check if the field has a label
           if (fieldLabel) {
+            // Set a default value for optional fields that are visible but not answered
             if (
-              !fieldValue ||
               fieldValue === "" ||
               fieldValue === null ||
               fieldValue === undefined
             ) {
-              fieldValue =
-                fieldType === "file" ? "Not uploaded" : "Not answered";
+              if (fieldType === "file") {
+                fieldValue = "Not uploaded";
+              } else {
+                fieldValue = "Not answered";
+              }
             }
 
-            const reviewItem = $("<div class='review-item'></div>")
-              .append(`<dt class="question">${fieldLabel}</dt>`)
-              .append(`<dd class="answer">${fieldValue}</dd>`);
-
-            if (KDF.kdf().form.complete !== "Y") {
-              const changeLink = $(`<a href='#'>${KDF.kdf().form.name.startsWith("cm_") ? "Update" : "Change"}</a>`).on(
-                "click",
-                function (e) {
-                  e.preventDefault();
-                  const buttonSet = $(
-                    '.dform_section_box_review div[data-type="buttonset"]'
-                  );
-                  if (buttonSet.is(":hidden")) {
-                    buttonSet.show();
-                  }
-                  KDF.gotoPage(pageName, true, true, true);
-                }
-              );
-              reviewItem.append(
-                $("<dd class='action'></dd>").append(changeLink)
-              );
-            }
-
-            dl.append(reviewItem);
-            hasFields = true;
+            // Append the field information to the review page content
+            $(`#${contentDivId}`).append(
+              `<p class="review-page-item"><span class="review-page-question-text">${fieldLabel}:</span> ${fieldValue}</p>`
+            );
           }
         });
-
-        if (hasFields) {
-          contentDiv.append(dl);
-        } else {
-          contentDiv.remove();
-        }
       }
     });
   }
