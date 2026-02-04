@@ -4156,15 +4156,21 @@ function checkAddressHasBeenSet(action = "next") {
       const siteCode = getInput("siteCode");
       const usrnValue = KDF.getVal(siteCode.name) || KDF.getVal(getInput("usrn").name);
       const validUsrn = acceptGMSites
-        ? true
-        : siteCode && siteCode.startsWith("344");
+        ? usrnValue.startsWith("GM")
+        : usrnValue.startsWith("344");
 
       if (streetNameValue && usrnValue && validUsrn) {
         clearPartialAddressSearch();
         const siteName = getInput("siteName");
-        if (siteName) KDF.setVal(siteName.name, streetNameValue);
+        if (siteName) {
+          KDF.setVal(siteName.name, streetNameValue);
+          KDF.setVal(getInput("streetName").name, streetNameValue);
+        }
         const siteCode = getInput("siteCode");
-        if (siteCode) KDF.setVal(siteCode.name, usrnValue);
+        if (siteCode) {
+          KDF.setVal(siteCode.name, usrnValue);
+          KDF.setVal(getInput("usrn").name, usrnValue);
+        }
         goNextOrComplete();
         return true; // Map section handled
       } else {
