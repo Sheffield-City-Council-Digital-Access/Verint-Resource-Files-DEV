@@ -3453,6 +3453,7 @@ function getValueFromAlias(pageId, alias) {
 function getAndSetReviewPageData() {
   const compareDate = new Date("2026-02-04T08:40:00");
   if (KDF.kdf().form.created && new Date(KDF.kdf().form.created) < compareDate) {
+    console.log("--legacy--")
     oldGetAndSetReviewPageData();
     return;
   }
