@@ -3974,105 +3974,280 @@ function getAndSetReviewPageData() {
 // }
 
 function oldGetAndSetReviewPageData() {
+  const compareDate = new Date("2026-02-04T08:40:00");
+  if (KDF.kdf().form.created && new Date(KDF.kdf().form.created) < compareDate) {
+    console.log("--legacy--")
+    oldGetAndSetReviewPageData();
+    return;
+  }
+
   const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
 
   if (reviewPageIsVisible) {
-    $("#review-page-content-container").html("");
-    let formPages = $('.dform_page:visible').not("#dform_page_page_review");
+    // showCurrentProgress();
 
+    // Find all active form pages, excluding the review, declaration, and complete pages
+    // Note: save and complete are ment to only have page_ listed once
+    const excludedPages = `
+      #dform_page_page_sign_in, 
+      #dform_page_page_review, 
+      #dform_page_page_declaration, 
+      #dform_page_save,
+      #dform_page_complete, 
+      #dform_page_page_core_fields, 
+      #dform_page_page_core_confirm_fields
+    `;
+    const activeFormPages = $('.dform_page[data-active="true"]').not(
+      excludedPages
+    );
+
+    // Build an array of page numbers from the active pages
+    let relevantPages = [];
+    activeFormPages.each(function () {
+      const pageNumber = $(this).attr("data-pos");
+      if (pageNumber) {
+        relevantPages.push(pageNumber);
+        if (KDF.kdf().form.complete !== "Y") {
+          // Store the constructed page array
+          KDF.setVal("txt_pages", relevantPages.join(","));
+        }
+      }
+    });
+
+    // Handle the case where the form is complete
+    relevantPages = $(".dform_page")
+      .not(excludedPages)
+      .map(function () {
+        return $(this).attr("data-pos");
+      })
+      .get();
+
+    // Clear the review content HTML
+    $("#review-page-content-container").html("");
+
+    // Find all form pages based on completion status, excluding the same pages
+    let formPages = $('.dform_page[data-active="true"]').not(excludedPages);
     if (KDF.kdf().form.complete === "Y") {
-        formPages = $(".dform_page").not("#dform_page_page_review");
+      formPages = $(".dform_page").not(excludedPages);
     }
 
-    formPages.each(function () {
-      const $currentPage = $(this);
-      const pageId = $currentPage.attr("id");
-      const pageName = pageId.split("dform_page_")[1];
-      const contentDivId = `review-page-content--${pageName}`;
+    formPages.each(function (i) {
+      const pageNumber = $(this).attr("data-pos");
 
-      $("#review-page-content-container").append(
-        `<div class="review-page-content-section" id="${contentDivId}"></div>`
-      );
-      
-      const $contentDiv = $("#" + contentDivId);
+      if (relevantPages.indexOf(pageNumber) > -1) {
+        const pageId = $(this).attr("id");
+        const pageName = pageId.split("dform_page_")[1];
 
-      const pageHeader = $currentPage.find(".page-title").text();
-      $contentDiv.append(`<h3>${pageHeader}</h3>`);
+        // Ensure the page is displayed so its contents can be processed
+        KDF.showPage(pageName);
 
-      const pageFields = $currentPage.find(".dform_widget_field").filter(function () {
-        return $(this).is(':visible') || $(this).css("display") === "block";
-      });
+        const pageFields = $(this)
+          .find(".dform_widget_field")
+          .filter(function () {
+            return $(this).css("display") === "block";
+          });
 
-      pageFields.each(function () {
-        const $field = $(this);
-        const fieldType = $field.attr("data-type");
-        const fieldName = $field.attr("data-name");
-        const fieldClass = $field.attr("class") || "";
-        let fieldLabel = "";
-        let fieldValue = "";
-
-        function getLegendText(classSelector) {
-          const parentElement = $(`.container[data-name="${fieldName}"]`).length ?
-            $(`.container[data-name="${fieldName}"]`) :
-            $(`.container.dform_widget_${fieldName}`);
-          return parentElement.find(`.${classSelector} legend`).text();
+        if (!pageFields.length) {
+          return; // Skip to next page
         }
 
-        if (fieldType === "select") {
-          fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-          fieldValue = KDF.getVal(fieldName) ?? KDF.kdf()?.form?.data?.[fieldName];
-        } else if (fieldType === "radio") {
-          fieldLabel = getLegendText("radiogroup");
-          fieldValue = KDF.getVal(fieldName);
-        } else if (fieldType === "multicheckbox") {
-          fieldLabel = getLegendText("checkboxgroup");
-          const val = KDF.getVal(fieldName);
-          fieldValue = Array.isArray(val) ? `<br/>${val.join("<br>")}` : val;
-        } else if (fieldType === "date") {
-          fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-          fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
-        } else if (fieldType === "file") {
-          fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-          const fileControlName = fieldName.replace("file_", "");
-          const fileNamesString = KDF.getVal("txt_file_name_" + fileControlName);
-          const filePathsString = KDF.getVal("txt_file_path_" + fileControlName);
-          
-          fieldValue = fileNamesString;
-          if (KDF.kdf().access === "agent" && filePathsString) {
-            let linkedFiles = [];
-            const fileNames = (fileNamesString || "").split(",");
-            const filePaths = (filePathsString || "").split(",");
-            for (let i = 0; i < filePaths.length; i++) {
-              const name = fileNames[i] ? fileNames[i].trim() : `${fileNames[0]} ${i+1}`;
-              const path = filePaths[i].trim();
-              if (path) linkedFiles.push(`<a href="${path}" target="_blank">${name}</a>`);
-            }
-            fieldValue = linkedFiles.join("<br>");
-          }
-        } else {
-          if (fieldClass.includes("currency")) {
-            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-            fieldValue = `£${KDF.getVal(fieldName)}`;
-          } else if (fieldClass.includes("address-search")) {
-            fieldLabel = "Address";
-            fieldValue = getValueFromAlias(pageId, "fullAddress");
-          } else if (/\b(property|street-name|city|postcode)\b/.test(fieldClass)) {
-            fieldLabel = false;
-          } else {
-            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
-            fieldValue = KDF.getVal(fieldName);
-          }
-        }
+        const contentDivId = `review-page-content--${pageName}`;
+        let contentDiv = $("#" + contentDivId);
 
-        if (fieldLabel) {
-          if (!fieldValue || fieldValue === "" || fieldValue === null) {
-            fieldValue = (fieldType === "file") ? "Not uploaded" : "Not answered";
-          }
-          $contentDiv.append(
-            `<p class="review-page-item"><span class="review-page-question-text">${fieldLabel}:</span> ${fieldValue}</p>`
+        if (!contentDiv.length) {
+          $("#review-page-content-container").append(
+            `<section class="review-page-content-section" id="${contentDivId}" aria-labelledby="review-header-${pageName}"></section>`
           );
+          contentDiv = $("#" + contentDivId);
+        } else {
+          contentDiv.empty();
         }
-      });
+
+        const headerContainer = $(
+          '<div class="review-page-header-container"></div>'
+        );
+        const pageHeader = $(this).find(".header2").text();
+        headerContainer.append(
+          `<h3 id="review-header-${pageName}">${pageHeader}</h3>`
+        );
+        contentDiv.append(headerContainer);
+
+        const dl = $("<dl class='review-list'></dl>");
+        let hasFields = false;
+
+        pageFields.each(function (field) {
+          const fieldType = $(this).attr("data-type");
+          const fieldName = $(this).attr("data-name");
+          const fieldClass = $(this).attr("class");
+          let fieldLabel = "";
+          let fieldValue = "Not answered";
+
+          function getLegendText(classSelector) {
+            const parentElement = $(`.container[data-name="${fieldName}"]`)
+              .length
+              ? $(`.container[data-name="${fieldName}"]`)
+              : $(`.container.dform_widget_${fieldName}`);
+            if (parentElement.length) {
+              return parentElement.find(`.${classSelector} legend`).text();
+            }
+          }
+
+          if (fieldType === "select") {
+            if (fieldName.startsWith("sel_search_results_")) {
+              fieldLabel = "Address";
+              fieldValue = removeDuplicateWords(
+                getValueFromAlias(pageId, "fullAddress")
+              );
+            } else {
+              fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+              fieldValue =
+                KDF.kdf()?.form?.data?.[fieldName] ?? KDF.getVal(fieldName);
+            }
+          } else if (fieldType === "radio") {
+            fieldLabel = getLegendText("radiogroup");
+            fieldValue = KDF.getVal(fieldName);
+          } else if (fieldType === "multicheckbox") {
+            fieldLabel = getLegendText("checkboxgroup");
+            const values = KDF.getVal(fieldName);
+            if (values && values.length > 0) {
+              fieldValue = values.join(",<br>");
+            } else {
+              fieldValue = "";
+            }
+          } else if (fieldType === "tel") {
+            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+            fieldValue = formatPhoneNumber(KDF.getVal(fieldName));
+            if (KDF.kdf().access === "agent") {
+              fieldValue = `<a href="tel:${fieldValue}">${fieldValue}</a>`;
+            }
+          } else if (fieldType === "date") {
+            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+            fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
+            if (KDF.kdf().access === "agent" && (fieldName.includes("date_of_birth") || fieldName.includes("_dob"))) {
+              fieldValue = KDF.getVal(fieldName) !== ''
+                ? `${formatDateTime(KDF.getVal(fieldName)).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName))})`
+                : "Not answered";
+            }
+          } else if (fieldType === "file") {
+            fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+            let fileControlName = fieldName.replace("file_", "");
+            const fileNameField = "txt_file_name_" + fileControlName;
+            const filePathField = "txt_file_path_" + fileControlName;
+
+            const fileNamesString = KDF.getVal(fileNameField);
+            const filePathsString = KDF.getVal(filePathField);
+
+            fieldValue = fileNamesString;
+            if (KDF.kdf().access === "agent" && filePathsString) {
+
+              const fileNames = fileNamesString.split(",");
+              const filePaths = filePathsString.split(",");
+              if (
+                fileNames.length === filePaths.length &&
+                fileNames.length > 0
+              ) {
+                let linkedFiles = [];
+                for (let i = 0; i < filePaths.length; i++) {
+                  const name = fileNames[i].trim();
+                  const path = filePaths[i].trim();
+
+                  if (name && path) {
+                    linkedFiles.push(
+                      `<a href="${path}" target="_blank">${name}</a>`
+                    );
+                  }
+                }
+
+                fieldValue = linkedFiles.join("<br>");
+              } else {
+                let linkedFiles = [];
+                for (let i = 0; i < filePaths.length; i++) {
+                  const name = `${fileNames[0].trim()} ${i + 1}`;
+                  const path = filePaths[i].trim();
+
+                  if (name && path) {
+                    linkedFiles.push(
+                      `<a href="${path}" target="_blank">${name}</a>`
+                    );
+                  }
+                }
+
+                fieldValue = linkedFiles.join("<br>");
+              }
+            }
+          } else {
+            if (fieldClass.indexOf("date-field") !== -1) {
+              fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+              fieldValue = formatDateTime(KDF.getVal(fieldName)).uk.date;
+              if (KDF.kdf().access === "agent" && (fieldName.includes("date_of_birth") || fieldName.includes("_dob"))) {
+                fieldValue = KDF.getVal(fieldName.replace("txt_", "dt_")) !== ''
+                  ? `${formatDateTime(KDF.getVal(fieldName.replace("txt_", "dt_"))).uk.date} (${calculateAgeFromDob(KDF.getVal(fieldName.replace("txt_", "dt_")))})`
+                  : "Not answered";
+              }
+            } else if (fieldClass.indexOf("currency") !== -1) {
+              fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+              fieldValue = `£${KDF.getVal(fieldName)}`;
+            } else if (fieldClass.indexOf("address-search") !== -1) {
+              fieldLabel = "Address";
+              fieldValue = removeDuplicateWords(
+                getValueFromAlias(pageId, "fullAddress")
+              );
+            } else if (
+              /\b(property|street-name|city|postcode)\b/.test(fieldClass)
+            ) {
+              fieldLabel = false;
+              fieldValue = "";
+            } else {
+              fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
+              fieldValue = KDF.getVal(fieldName);
+            }
+          }
+
+          if (fieldLabel) {
+            if (
+              !fieldValue ||
+              fieldValue === "" ||
+              fieldValue === null ||
+              fieldValue === undefined
+            ) {
+              fieldValue =
+                fieldType === "file" ? "Not uploaded" : "Not answered";
+            }
+
+            const reviewItem = $("<div class='review-item'></div>")
+              .append(`<dt class="question">${fieldLabel}</dt>`)
+              .append(`<dd class="answer">${fieldValue}</dd>`);
+
+            if (KDF.kdf().form.complete !== "Y") {
+              const changeLink = $(`<a href='#'>${KDF.kdf().form.name.startsWith("cm_") ? "Update" : "Change"}</a>`).on(
+                "click",
+                function (e) {
+                  e.preventDefault();
+                  const buttonSet = $(
+                    '.dform_section_box_review div[data-type="buttonset"]'
+                  );
+                  if (buttonSet.is(":hidden")) {
+                    buttonSet.show();
+                  }
+                  KDF.gotoPage(pageName, true, true, true);
+                }
+              );
+              reviewItem.append(
+                $("<dd class='action'></dd>").append(changeLink)
+              );
+            }
+
+            dl.append(reviewItem);
+            hasFields = true;
+          }
+        });
+
+        if (hasFields) {
+          contentDiv.append(dl);
+        } else {
+          contentDiv.remove();
+        }
+      }
     });
   }
 }
