@@ -3541,6 +3541,7 @@ function getAndSetReviewPageData() {
             }
             return $(this).css("display") === "block";
           });
+          console.log("pageFields", pageFields)
 
         if (!pageFields.length) {
           return; // Skip to next page
