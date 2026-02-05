@@ -3462,11 +3462,11 @@ function getValueFromAlias(pageId, alias) {
 
 // Function to get and set data for the review page
 function getAndSetReviewPageData() {
-  const compareDate = new Date("2026-02-04T08:40:00");
-  if (KDF.kdf().form.created && new Date(KDF.kdf().form.created) < compareDate) {
-    oldGetAndSetReviewPageData();
-    return;
-  }
+  // const compareDate = new Date("2026-02-04T08:40:00");
+  // if (KDF.kdf().form.created && new Date(KDF.kdf().form.created) < compareDate) {
+  //   oldGetAndSetReviewPageData();
+  //   return;
+  // }
 
   const reviewPageIsVisible = $("#dform_page_page_review:visible").length > 0;
 
