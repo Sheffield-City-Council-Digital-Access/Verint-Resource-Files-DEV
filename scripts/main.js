@@ -1877,12 +1877,10 @@ function handleSelectedMapLayerEvent(event, kdf, layerName, layerAttributes) {
     main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.feature_type_code"] ||
     "";
   const responsibility =
+    main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
+    main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
     main.responsibility ||
-      main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
-      main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.responsibility"] ||
-      bg.sitecode
-      ? "CHS"
-      : "";
+    (bg.sitecode ? "CHS" : "");
   const prestige =
     main["sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category"] ||
     main?.["sheffield.corpmap.HCFP_Assets_GrassPlantArea.grass_category"] ||
@@ -4154,7 +4152,7 @@ function checkAddressHasBeenSet(action = "next") {
       const siteCode = getInput("siteCode");
       const usrnValue = KDF.getVal(siteCode.name) || KDF.getVal(getInput("usrn").name);
       const validUsrn = acceptGMSites
-        ? usrnValue.startsWith("GM")
+        ? (usrnValue.startsWith("GM") || usrnValue.startsWith("344"))
         : usrnValue.startsWith("344");
 
       if (streetNameValue && usrnValue && validUsrn) {
