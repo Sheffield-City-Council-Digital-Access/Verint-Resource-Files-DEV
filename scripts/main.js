@@ -723,6 +723,7 @@ function handleOnReadyEvent(_, kdf) {
       KDF.makeReadonly();
       $(".review-page-edit-button").remove();
       $('.dform_section_box_review div[data-type="buttonset"]').remove();
+      $('#dform_progressbar_sheffield').hide();
     } else {
       // use stored page array when case management
       if (
