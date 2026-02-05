@@ -3496,12 +3496,12 @@ function getAndSetReviewPageData() {
         relevantPages.push(pageNumber);
         if (KDF.kdf().form.complete !== "Y") {
           // Store the constructed page array
-          if (KDF.kdf().form.created && new Date(KDF.kdf().form.created) < compareDate) {
-            console.log("--legacy--")
-            return;
-          } else {
+          // if (KDF.kdf().form.created && new Date(KDF.kdf().form.created) < compareDate) {
+          //   console.log("--legacy--")
+          //   return;
+          // } else {
             KDF.setVal("txt_pages", relevantPages.join(","));
-          }
+          // }
         }
       }
     });
