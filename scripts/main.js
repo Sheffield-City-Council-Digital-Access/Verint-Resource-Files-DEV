@@ -691,6 +691,17 @@ function handleOnReadyEvent(_, kdf) {
         {}
       );
     }
+
+    KDF.setWidgetNotRequired("tel_phone_number");
+    KDF.setWidgetNotRequired("eml_address");
+    KDF.setWidgetNotRequired("num_date_of_birth_dd");
+    KDF.setWidgetNotRequired("num_date_of_birth_mm");
+    KDF.setWidgetNotRequired("num_date_of_birth_yy");
+    KDF.setWidgetNotRequired("dt_date_of_birth");
+    KDF.setWidgetNotRequired("txt_date_of_birth");
+    $(
+      "#dform_widget_html_ahtm_date_of_birth_about_you .container-date input"
+    ).removeAttr("required");
   }
 
   // --- ADD VALIDATION MESSAGES TO STORAGE --------------------------------- \\
