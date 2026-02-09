@@ -920,8 +920,8 @@ function handleOnReadyEvent(_, kdf) {
 
       if (searchResultsSelect && searchResultsSelect.value) {
         // A valid address was selected.
-        const action =
-          addressSearchType === "national"
+        const searchType = addressSearchType[currentPageId]; 
+        const action = searchType === "national"
             ? "retrieve-national-address"
             : "retrieve-local-address";
         KDF.customdata(action, buttonId, true, true, {
