@@ -64,3 +64,7 @@
 #form > #content {
   padding-top: 0 !important;
 }
+
+#dform_ref_display {
+  display: none !important;
+}

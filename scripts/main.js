@@ -450,7 +450,6 @@ function handleInitialisingEvent() {
     if (fileLimit) {
       fileLimit.textContent = maxFileLimit;
     }
-
   })();
 
   // --- OVERRIDE PRINT FUNCTION -------------------------------------------- \\

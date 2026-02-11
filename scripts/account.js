@@ -133,25 +133,25 @@ document.addEventListener("DOMContentLoaded", function () {
       const footerLinksUl = document.createElement("ul");
       footerLinksUl.classList.add("footer-links");
 
-      const cookiePolicyLi = document.createElement("li");
-      const cookieAnchor = document.createElement("a");
-      cookieAnchor.href = "#";
-      cookieAnchor.classList.add("footer-link");
-      cookieAnchor.textContent = "Cookie policy";
-      cookiePolicyLi.appendChild(cookieAnchor);
-      footerLinksUl.appendChild(cookiePolicyLi);
-
       const privacyStatementLi = document.createElement("li");
       const privacyAnchor = document.createElement("a");
-      privacyAnchor.href = "#";
+      privacyAnchor.href = "https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice";
       privacyAnchor.classList.add("footer-link");
-      privacyAnchor.textContent = "Privacy statement";
+      privacyAnchor.textContent = "Privacy notice";
       privacyStatementLi.appendChild(privacyAnchor);
       footerLinksUl.appendChild(privacyStatementLi);
 
+      const cookiePolicyLi = document.createElement("li");
+      const cookieAnchor = document.createElement("a");
+      cookieAnchor.href = "https://www.sheffield.gov.uk/utilities/footer-links/cookie-policy";
+      cookieAnchor.classList.add("footer-link");
+      cookieAnchor.textContent = "Use of cookies";
+      cookiePolicyLi.appendChild(cookieAnchor);
+      footerLinksUl.appendChild(cookiePolicyLi);
+
       const accessibilityStatementLi = document.createElement("li");
       const accessibilityAnchor = document.createElement("a");
-      accessibilityAnchor.href = "#";
+      accessibilityAnchor.href = "https://www.sheffield.gov.uk/utilities/footer-links/accessibility-statement";
       accessibilityAnchor.classList.add("footer-link");
       accessibilityAnchor.textContent = "Accessibility statement";
       accessibilityStatementLi.appendChild(accessibilityAnchor);
