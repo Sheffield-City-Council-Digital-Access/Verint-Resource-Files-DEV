@@ -446,7 +446,11 @@ function handleInitialisingEvent() {
   // --- ADD CHARACTER COUNT ------------------------------------------------ \\
 
   (() => {
-    document.getElementById("dform_fileLimit").textContent = maxFileLimit;
+    const fileLimit = document.getElementById("dform_fileLimit")
+    if (fileLimit) {
+      fileLimit.textContent = maxFileLimit;
+    }
+
   })();
 
   // --- OVERRIDE PRINT FUNCTION -------------------------------------------- \\
