@@ -33,6 +33,8 @@ let addressSearchType = {};
 let acceptGMSites = true;
 let defaultSelectedAddressMessage = "Choose a location on the map";
 
+let maxFileLimit = 3;
+
 let paginationSize = 10;
 let allAccounts = [];
 
@@ -441,6 +443,12 @@ function handleInitialisingEvent() {
     });
   })();
 
+  // --- ADD CHARACTER COUNT ------------------------------------------------ \\
+
+  (() => {
+    document.getElementById("dform_fileLimit").textContent = maxFileLimit;
+  })();
+
   // --- OVERRIDE PRINT FUNCTION -------------------------------------------- \\
 
   (() => {
@@ -481,7 +489,7 @@ function handleInitialisingEvent() {
     const $fileListDiv = $container.find('.dform_filenames');
 
     if ($container.find('.file-counter-wrapper').length === 0) {
-      $labelDiv.after(`<div class="file-counter-wrapper"><span class="current-count">0</span> of 5 uploaded</div>`);
+      $labelDiv.after(`<div class="file-counter-wrapper"><span class="current-count">0</span> of ${maxFileLimit} uploaded</div>`);
     }
 
     if ($fileListDiv.find('.empty-files-msg').length === 0) {
@@ -558,7 +566,7 @@ function handleInitialisingEvent() {
       $emptyMsg.show();
     }
 
-    if (uploadCount >= 5) {
+    if (uploadCount >= maxFileLimit) {
       $fileInput.prop('disabled', true);
       // $fileInput.css('opacity', '0.5');
     } else {
