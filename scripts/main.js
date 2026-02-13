@@ -930,10 +930,10 @@ function handleOnReadyEvent(_, kdf) {
 
       if (searchResultsSelect && searchResultsSelect.value) {
         // A valid address was selected.
-        const searchType = addressSearchType[currentPageId]; 
+        const searchType = addressSearchType[currentPageId];
         const action = searchType === "national"
-            ? "retrieve-national-address"
-            : "retrieve-local-address";
+          ? "retrieve-national-address"
+          : "retrieve-local-address";
         KDF.customdata(action, buttonId, true, true, {
           propertyId: searchResultsSelect.value,
         });
@@ -1661,15 +1661,15 @@ function handleOnReadyEvent(_, kdf) {
   });
 
   // --- JUMP TO REQUIRED FIELD --------------------------------------------- \\
-  
+
   document.addEventListener('click', function (event) {
     const selector = '[data-type="next"], .address-btn, .locator-btn, .submit-btn, .custom-btn';
     const triggerButton = event.target.closest(selector);
-  
+
     if (triggerButton) {
       setTimeout(() => {
         const firstError = document.querySelector(`#${getCurrentPageId()} .dform_fielderror`);
-        
+
         if (firstError) {
           if (document.activeElement instanceof HTMLElement) {
             document.activeElement.blur();
@@ -1682,6 +1682,31 @@ function handleOnReadyEvent(_, kdf) {
         }
       }, 0);
     }
+  });
+
+  // --- HANDLE FAILED FILE UPLAOD ------------------------------------------ \\
+
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      // Only trigger if a class attribute was changed
+      if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+        const el = mutation.target;
+
+        // Check if the element is a file input (or has your specific class)
+        if (el.tagName === 'INPUT' && el.type === 'file') {
+          if (el.classList.contains('dform_fielderror')) {
+            KDF.hideMessages();
+          }
+        }
+      }
+    });
+  });
+
+  // Start observing the entire document body
+  observer.observe(document.body, {
+    attributes: true,
+    subtree: true,
+    attributeFilter: ['class']
   });
 
   scrollToTop();
@@ -3507,7 +3532,7 @@ function getAndSetReviewPageData() {
       if (pageNumber) {
         relevantPages.push(pageNumber);
         if (KDF.kdf().form.complete !== "Y") {
-            KDF.setVal("txt_pages", relevantPages.join(","));
+          KDF.setVal("txt_pages", relevantPages.join(","));
         }
       }
     });
