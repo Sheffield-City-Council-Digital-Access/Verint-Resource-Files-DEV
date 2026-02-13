@@ -496,6 +496,7 @@
 
 #dform_container .dashboard-details-container .your-nearest-container .card div {
   align-items: flex-start;
+  flex: unset; 
 }
 
 #dform_container .dashboard-details-container .your-nearest-container .card * {
@@ -525,10 +526,16 @@
   gap: 0;
 }
 
+#dform_container .dashboard-details-container .your-nearest-container .card .external-opening-link {
+  margin-top: var(--spacing-sm);
+  display: inline-flex;
+  text-decoration: underline;
+}
+
 #dform_container .dashboard-details-container .your-nearest-container .card .time-row {
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
   width: 100%;
 }
 
@@ -538,10 +545,11 @@
   line-height: var(--line-height-body);
 }
 
-#dform_container .dashboard-details-container .your-nearest-container .card .location a,
+#dform_container .dashboard-details-container .your-nearest-container .card .location a, 
 #dform_container .dashboard-details-container .your-nearest-container .card .opening-times > p,
+#dform_container .dashboard-details-container .your-nearest-container .card .opening-times > a, 
 #dform_container .dashboard-details-container .your-nearest-container .card .time-row .hours {
-  font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
 }
 
 #dform_container .dashboard-details-container .your-nearest-container .card .opening-times p,

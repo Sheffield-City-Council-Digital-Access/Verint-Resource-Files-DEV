@@ -193,3 +193,7 @@
 #dform_container #dform_widget_button_but_edit_your_profile {
   margin-top: var(--spacing-smd);
 }
+
+#dform_container #dform_widget_html_ahtm_profile_updated div[data-type="html"] {
+  background: transparent !important;
+}
