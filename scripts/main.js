@@ -1671,6 +1671,10 @@ function handleOnReadyEvent(_, kdf) {
         const firstError = document.querySelector(`#${getCurrentPageId()} .dform_fielderror`);
         
         if (firstError) {
+          if (document.activeElement instanceof HTMLElement) {
+            document.activeElement.blur();
+          }
+
           firstError.scrollIntoView({
             behavior: 'smooth',
             block: 'center'
