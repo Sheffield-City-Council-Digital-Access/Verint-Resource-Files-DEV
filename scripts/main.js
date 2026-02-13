@@ -864,7 +864,6 @@ function handleOnReadyEvent(_, kdf) {
       mapCntainer = mapCntainer.id.replace("dform_widget_html_", "");
     }
 
-
     let searchAgainButtonContainer = document.querySelector(
       `#${currentPageId} .manual-address-search-again-container`
     );
@@ -1664,18 +1663,20 @@ function handleOnReadyEvent(_, kdf) {
   // --- JUMP TO REQUIRED FIELD --------------------------------------------- \\
   
   document.addEventListener('click', function (event) {
-    const nextButton = event.target.closest('[data-type="next"]');
-    if (nextButton) {
-      const firstError = document.querySelector(`#${getCurrentPageId()} .dform_fielderror`);
-      if (firstError) {
-        firstError.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center'
-        });
-
-        const input = firstError.querySelector('input, select, textarea');
-        if (input) input.focus({ preventScroll: true });
-      }
+    const selector = '[data-type="next"], .address-btn, .locator-btn, .submit-btn, .custom-btn';
+    const triggerButton = event.target.closest(selector);
+  
+    if (triggerButton) {
+      setTimeout(() => {
+        const firstError = document.querySelector(`#${getCurrentPageId()} .dform_fielderror`);
+        
+        if (firstError) {
+          firstError.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+          });
+        }
+      }, 0);
     }
   });
 
