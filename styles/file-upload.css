@@ -4,6 +4,10 @@
   height: 42px !important;
 }
 
+#dform_container [data-type="file"] input[type="file"].dform_fielderror {
+  border: none !important;
+}
+
 input[type="file"]::file-selector-button {
   padding-inline: var(--spacing-xs);
   height: 100%;
