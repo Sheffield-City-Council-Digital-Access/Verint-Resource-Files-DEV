@@ -3971,7 +3971,7 @@ function checkAddressHasBeenSet(action = "next") {
     if (isSearchResultVisible) {
       const searchResultContainer = searchResult.closest(".dform_widget_field");
       const selectedValue = searchResult.value;
-      let message = "Select the address";
+      let message = "Select an address from the list";
 
       if (selectedValue !== "" && selectedValue !== "Please select") {
         message = "Click use this address";
