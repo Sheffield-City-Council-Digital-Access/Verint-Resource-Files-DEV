@@ -7053,13 +7053,10 @@ function renderAccountDetails(account, summary, stage, payment, charges, transac
 * Scrolls the user's view to the top of a specified element.
 * @param {string} targetElementId The ID of the element to scroll to (e.g., 'profile-details-panel').
 */
-function scrollToTop(targetElementId) {
-  const target = $(`#${targetElementId}`);
-  if (target.length) {
-    $('html, body').animate({
-      scrollTop: target.offset().top
-    }, 500);
-  }
+function scrollToTop() {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 0);
 }
 
 /**
