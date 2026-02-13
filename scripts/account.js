@@ -6,6 +6,17 @@ let userName;
  */
 document.addEventListener("DOMContentLoaded", function () {
   (() => {
+    let favicon = document.querySelector("link[rel='icon']");
+    if (!favicon) {
+      favicon = document.createElement("link");
+      favicon.rel = "icon";
+      document.head.appendChild(favicon);
+    }
+    favicon.href =
+      "https://www.sheffield.gov.uk/verint-files/SCC%20Favicon.png";
+  })();
+
+  (() => {
     /**
      * Creates and inserts a service header bar with the council logo and service label.
      */
