@@ -6619,7 +6619,7 @@ function displaySurveys(data) {
     let finalLinkUrl = '';
 
     if (KDF.kdf().access === "citizen") {
-      finalLinkUrl = `/site/portal/form/${survey.formName}${urlParam}`;
+      finalLinkUrl = `/site/form/auto/${survey.formName}${urlParam}`;
     } else {
       const customerid = KDF.getParams().customerid
         ? `customerid=${KDF.getParams().customerid}&`
