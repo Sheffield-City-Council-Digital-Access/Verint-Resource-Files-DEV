@@ -219,6 +219,7 @@ input[type="file"]::file-selector-button {
 #dform_container .multi-file[data-type="file"] .file_delete {
   grid-row: 1 / -1;
   grid-column: 3 / 4;
+  align-self: center;
   color: transparent;
   font-size: 0;
   margin: 0;
