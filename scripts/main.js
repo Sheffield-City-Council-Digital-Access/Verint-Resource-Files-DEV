@@ -2027,7 +2027,7 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     if (targetPageId === "dform_page_page_about_you") {
       KDF.setWidgetRequired("sel_search_results_about_you");
     }
-    
+
     if (action === "search-local-address") {
       addressSearchType[targetPageId] = "local";
     }
@@ -4160,7 +4160,8 @@ function setProfileAddressDetails(targetPageId, kdf) {
     `#dform_page_page_about_you .address-search-btn`
   );
   initialProfileAddressLoad = searchInput && searchButton ? true : false;
-  $("#dform_widget_button_but_find_address_about_you").click();
+  // Causing duplicate click
+  // $("#dform_widget_button_but_find_address_about_you").click();
 
   property = formatTitleCase(property);
   streetName = formatTitleCase(streetName);
