@@ -3716,11 +3716,22 @@ function getAndSetReviewPageData() {
             } else if (fieldClass.indexOf("currency") !== -1) {
               fieldLabel = $(`#dform_widget_label_${fieldName}`).text();
               fieldValue = `£${KDF.getVal(fieldName)}`;
-            } else if (fieldClass.indexOf("address-search") !== -1) {
+            } else if (fieldClass.includes("address-search")) {
               fieldLabel = "Address";
-              fieldValue = removeDuplicateWords(
-                getValueFromAlias(pageId, "fullAddress")
-              );
+            
+              const fullAddress = removeDuplicateWords(getValueFromAlias(pageId, "fullAddress"));
+
+              const property = getValueFromAlias(pageId, "property");
+              const streetName = getValueFromAlias(pageId, "streetName");
+              const city = getValueFromAlias(pageId, "city");
+              const postCode = getValueFromAlias(pageId, "postCode");
+            
+              const street = [property, streetName].filter(Boolean).join(" ");
+              const manualAddress = [street, city, postCode].filter(Boolean).join(", ");
+            
+              const siteName = getValueFromAlias(pageId, "siteName");
+
+              fieldValue = fullAddress || manualAddress || siteName || "Not answered";
             } else if (
               /\b(property|street-name|city|postcode)\b/.test(fieldClass)
             ) {
