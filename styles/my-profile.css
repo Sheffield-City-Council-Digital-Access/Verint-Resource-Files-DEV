@@ -210,10 +210,6 @@
   border: none;
 }
 
-#dform_container #dform_widget_buttonset_bset_info_tabs > button.active {
-  background: var(--c-greys-white);
-}
-
 #dform_container #dform_widget_buttonset_bset_info_tabs > button > span {
   margin: 0;
   font-family: var(--font-family);
@@ -233,8 +229,21 @@
 }
 
 #dform_container #dform_widget_buttonset_bset_info_tabs > button:hover > span,
-#dform_container #dform_widget_buttonset_bset_info_tabs > button:active > span,
+#dform_container #dform_widget_buttonset_bset_info_tabs > button:active > span {
+  border-bottom: 4px solid var(--c-orange);
+}
+
 #dform_container #dform_widget_buttonset_bset_info_tabs > button:focus > span {
+  color: var(--c-core-brand-primary-darken) !important;
+  background: var(--c-greys-white) !important;
+  border-bottom: 4px solid var(--c-orange) !important;
+}
+
+#dform_container #dform_widget_buttonset_bset_info_tabs > button.active {
+  background: var(--c-greys-white);
+}
+
+#dform_container #dform_widget_buttonset_bset_info_tabs > button.active > span {
   border-bottom: 4px solid var(--c-orange);
 }
 
