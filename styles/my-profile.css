@@ -238,20 +238,6 @@
   border-bottom: 4px solid var(--c-orange);
 }
 
-/* #dform_container #dform_widget_buttonset_bset_info_tabs > button::before {
-  width: var(--font-size-xxxl);
-  height: var(--font-size-xxxl);
-  line-height: var(--line-height);
-} */
-
-/* #dform_widget_button_but_info_tab_my_details::before {
-  content: url(../icons/user.svg);
-}
-
-#dform_widget_button_but_info_tab_my_demo::before {
-  content: url(../icons/chart-user.svg);
-} */
-
 #dform_container #ahtm_notice_provide_demo_info,
 #dform_container #ahtm_notice_demo_info_provided {
   background-color: transparent !important;
