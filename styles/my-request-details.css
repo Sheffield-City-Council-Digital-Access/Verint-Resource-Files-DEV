@@ -233,10 +233,10 @@ div.le-request-note-created.datetime > time {
   margin-bottom: 0;
 }
 
-#back-to-requests-link {
+/* #back-to-requests-link {
   position: relative;
   bottom: 50px;
-}
+} */
 
 #back-to-requests-link:focus {
   border-bottom: none !important;

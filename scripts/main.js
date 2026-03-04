@@ -3917,9 +3917,6 @@ function checkAddressHasBeenSet(action = "next") {
         searchAgainButton.offsetHeight > 0 &&
         window.getComputedStyle(searchAgainButton).visibility !== 'hidden';
       if (isVisible) {
-        // Causing data refresh
-        // searchAgainButton.click();
-
         const currentPageId = getCurrentPageId();
         const searchInput = document.querySelector(
           `#${currentPageId} input[data-customalias="postcode"]`
