@@ -222,6 +222,11 @@
   background: var(--c-greys-white);
 }
 
+#dform_container #dform_widget_buttonset_bset_info_tabs > button::before {
+  width: var(--font-size-xxxl);
+  height: var(--font-size-xxxl);
+  line-height: var(--line-height);
+}
 
 #dform_widget_button_but_info_tab_my_details::before {
   content: url(../icons/user.svg);
