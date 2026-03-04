@@ -232,7 +232,6 @@
 
 #dform_container #dform_widget_buttonset_bset_info_tabs > button:hover > span,
 #dform_container #dform_widget_buttonset_bset_info_tabs > button:active > span {
-  background: var(--c-greys-white);
   border-color: var(--c-orange);
 }
 
