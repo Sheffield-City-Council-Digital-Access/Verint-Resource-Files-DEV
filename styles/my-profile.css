@@ -204,17 +204,9 @@
 
 #dform_container #dform_widget_buttonset_bset_info_tabs > button {
   margin: 0;
-  font-family: var(--font-family);
-  line-height: var(--line-height);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-xxl);
-  color: var(--c-core-brand-primary-darken);
   background: var(--c-grey);
   padding: var(--spacing-sm) var(--spacing-smd);
   border-radius: 1.5625rem 1.5625rem 0 0 !important;
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-xs);
   border: none;
 }
 
@@ -222,19 +214,43 @@
   background: var(--c-greys-white);
 }
 
-#dform_container #dform_widget_buttonset_bset_info_tabs > button::before {
+#dform_container #dform_widget_buttonset_bset_info_tabs > button > span {
+  margin: 0;
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xxl);
+  color: var(--c-core-brand-primary-darken);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+#dform_container #dform_widget_buttonset_bset_info_tabs > button > span > img {
   width: var(--font-size-xxxl);
   height: var(--font-size-xxxl);
   line-height: var(--line-height);
 }
 
-#dform_widget_button_but_info_tab_my_details::before {
+#dform_container #dform_widget_buttonset_bset_info_tabs > button:hover > span,
+#dform_container #dform_widget_buttonset_bset_info_tabs > button:active > span,
+#dform_container #dform_widget_buttonset_bset_info_tabs > button:focus > span {
+  border-bottom: 4px solid var(--c-orange);
+}
+
+/* #dform_container #dform_widget_buttonset_bset_info_tabs > button::before {
+  width: var(--font-size-xxxl);
+  height: var(--font-size-xxxl);
+  line-height: var(--line-height);
+} */
+
+/* #dform_widget_button_but_info_tab_my_details::before {
   content: url(../icons/user.svg);
 }
 
 #dform_widget_button_but_info_tab_my_demo::before {
-  content: url(../icons/user.svg);
-}
+  content: url(../icons/chart-user.svg);
+} */
 
 #dform_container #ahtm_notice_provide_demo_info,
 #dform_container #ahtm_notice_demo_info_provided {
