@@ -197,3 +197,81 @@
 #dform_container #dform_widget_html_ahtm_profile_updated[data-type="html"] {
   background: transparent !important;
 }
+
+#dform_container #dform_widget_buttonset_bset_info_tabs {
+  margin-block: 0;
+}
+
+#dform_container #dform_widget_buttonset_bset_info_tabs > button {
+  margin: 0;
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xxl);
+  color: var(--c-core-brand-primary-darken);
+  background: var(--c-grey);
+  padding: var(--spacing-sm) var(--spacing-smd);
+  border-radius: 1.5625rem 1.5625rem 0 0 !important;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  border: none;
+}
+
+#dform_container #dform_widget_buttonset_bset_info_tabs > button.active {
+  background: var(--c-greys-white);
+}
+
+
+#dform_widget_button_but_info_tab_my_details::before {
+  content: url(../icons/user.svg);
+}
+
+#dform_widget_button_but_info_tab_my_demo::before {
+  content: url(../icons/user.svg);
+}
+
+#dform_container #ahtm_notice_provide_demo_info,
+#dform_container #ahtm_notice_demo_info_provided {
+  background-color: transparent !important;
+}
+
+#dform_container section.provide-demo-info,
+#dform_container section.demo-info-provided {
+  padding: 32px 30px;
+  border-radius: 8px;
+  background-color: var(--c-purple);
+}
+
+#dform_container section.demo-info-provided {
+  background-color: var(--c-alerts-success-darken);
+}
+
+#dform_container section.provide-demo-info>h4,
+#dform_container section.demo-info-provided>h4 {
+  color: var(--c-greys-white);
+  margin-top: 0;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xxl);
+  font-family: var(--font-family);
+  line-height: var(--line-height-heading);
+}
+
+#dform_container section.demo-info-provided>h4>span {
+  color: var(--c-alerts-warning);
+}
+
+#dform_container section.provide-demo-info>p,
+#dform_container section.demo-info-provided>p {
+  color: var(--c-greys-white);
+  margin: 0;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family);
+  line-height: var(--line-height-body);
+}
+
+#dform_container #dform_widget_button_but_edit_your_profile,
+#dform_container #dform_widget_button_but_edit_your_demo_info {
+  margin-top: var(--spacing-smd);
+}
