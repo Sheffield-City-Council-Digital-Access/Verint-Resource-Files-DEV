@@ -200,12 +200,15 @@
 
 #dform_container #dform_widget_buttonset_bset_info_tabs {
   margin-block: 0;
+  flex-wrap: nowrap !important;
 }
 
 #dform_container #dform_widget_buttonset_bset_info_tabs > button {
   margin: 0;
+  min-width: max-content;
+  width: max-content;
   background: var(--c-grey);
-  padding: 0 var(--spacing-smd);
+  padding: 0 clamp(var(--spacing-xs), 3vw, var(--spacing-smd));
   border-radius: 1.5625rem 1.5625rem 0 0 !important;
   border: none;
 }
@@ -216,18 +219,25 @@
   font-family: var(--font-family);
   line-height: var(--line-height);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-xxl);
+  font-size: clamp(var(--font-size-base), 5vw, var(--font-size-xxl));
   color: var(--c-core-brand-primary-darken);
   display: flex;
   align-items: center;
-  gap: var(--spacing-xs);
+  gap: clamp(var(--spacing-xxs), 3vw, var(--spacing-xs));
   border-bottom: 4px solid transparent;
 }
 
 #dform_container #dform_widget_buttonset_bset_info_tabs > button > span > img {
+  display: none;
   width: var(--font-size-xxxl);
   height: var(--font-size-xxxl);
   line-height: var(--line-height);
+}
+
+@media screen and (min-width: 768px) {
+  #dform_container #dform_widget_buttonset_bset_info_tabs > button > span > img {
+    display: block;
+  }
 }
 
 #dform_container #dform_widget_buttonset_bset_info_tabs > button:hover > span,
