@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       `;
 
-      referenceDiv.parentNode.insertBefore(newElement, referenceDiv);
+      footerArea.parentNode.insertBefore(newElement, footerArea);
     }
   })();
 
