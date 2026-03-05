@@ -187,7 +187,7 @@ class CoreYCC {
     { typeKey: "" },
     { typeKey: "my_account_information_provided"},
     {
-      type: "Report",
+      type: "Information",
       keywords: [
         "Account",
         "MyAccount",
