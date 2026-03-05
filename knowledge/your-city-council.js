@@ -59,7 +59,7 @@ class CoreYCC {
     "My Account",
     "Our new digital service that lets customers track their enquiries online from start to finish.",
     `
-    <h3>What is My Account</h3>
+    <h3>What is My Account?</h3>
     <p>
       My Account gives customers a secure online login where they can see progress 
       of any enquiry submitted through an online form. This is a key part of making it easier 
