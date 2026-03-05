@@ -54,6 +54,43 @@ class CoreYCC {
   // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
   // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
   
+  const myAccount = new ContentP(
+    "myAccount",
+    "My Account",
+    "Our new digital service that lets customers track their enquiries online from start to finish.",
+    `
+    <h3>What is My Account</h3>
+    <p>
+      My Account gives customers a secure online login where they can see progress 
+      of any enquiry submitted through an online form. This is a key part of making it easier 
+      for people to interact with the Council and choose digital first.
+    </p>
+    <p>
+      The first phase of My Account focuses on enquiries made through online forms. 
+      The service will go live on Tuesday 17 March 2026.
+    </p>
+    <p>
+      By making customer enquiries more transparent and consistent, we are living 
+      our organisational value of openness and honesty, ensuring that customers 
+      and colleagues have clear, reliable information.
+    </p>
+    `,
+  
+    { buttonLabel: "", formName: ""},
+    { typeKey: "" },
+    { typeKey: "my_account_information_provided"},
+    {
+      type: "Report",
+      keywords: [
+        "Account",
+        "MyAccount",
+        "My Account"
+      ],
+      categories: ["Your City Council"],
+    },
+    { date: "05/03/2026", name: "Nathan Smith"} 
+  );
+
   const switchboard = new ContentP(
     "switchboard",
     "Switchboard",
@@ -91,6 +128,7 @@ class CoreYCC {
     "Your City Council",
     "Your City Council.",
       [
-        switchboard
+        switchboard,
+        myAccount
       ]
   );
