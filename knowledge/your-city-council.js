@@ -76,11 +76,11 @@ class CoreYCC {
     </p>
     <p>
       Click 
-      <a href="https://sccextranet.sharepoint.com/:w:/s/DigitalICT-TransformationProgramme/IQCFSJ_BezhxQqJeBfK2KOoUAY13nY3p_2Rp5alnXLMYmSQ?clickparams=eyAiWC1BcHBOYW1lIiA6ICJNaWNyb3NvZnQgT3V0bG9vayIsICJYLUFwcFZlcnNpb24iIDogIjE2LjAuMTk3MjUuMjAxNTIiLCAiT1MiIDogIldpbmRvd3MiIH0%3D&CID=D2D3F3AC-0BDC-4BD2-BA71-FB696A0B6A00&wdLOR=c94C1E888-7672-441D-A24F-0A1B08AB2E33" target="_blank">Here</a>
+      <a href="https://sccextranet.sharepoint.com/:w:/s/DigitalICT-TransformationProgramme/IQCFSJ_BezhxQqJeBfK2KOoUAY13nY3p_2Rp5alnXLMYmSQ?clickparams=eyAiWC1BcHBOYW1lIiA6ICJNaWNyb3NvZnQgT3V0bG9vayIsICJYLUFwcFZlcnNpb24iIDogIjE2LjAuMTk3MjUuMjAxNTIiLCAiT1MiIDogIldpbmRvd3MiIH0%3D&CID=D2D3F3AC-0BDC-4BD2-BA71-FB696A0B6A00&wdLOR=c94C1E888-7672-441D-A24F-0A1B08AB2E33" target="_blank">here</a>
        to access the My Account FAQ.
     </p>
     <p>
-      For any issues relating to My Account, use the 'Report a problem' link at the bottom of this page,
+      For any issues relating to My Account, use the 'Report a problem' link at the bottom of this page.
     </p>
     <details class="accordion">
       <summary class="accordion-header">
