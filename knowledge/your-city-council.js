@@ -74,6 +74,110 @@ class CoreYCC {
       our organisational value of openness and honesty, ensuring that customers 
       and colleagues have clear, reliable information.
     </p>
+    <p>
+      Click 
+      <a href="https://sccextranet.sharepoint.com/:w:/s/DigitalICT-TransformationProgramme/IQCFSJ_BezhxQqJeBfK2KOoUAY13nY3p_2Rp5alnXLMYmSQ?clickparams=eyAiWC1BcHBOYW1lIiA6ICJNaWNyb3NvZnQgT3V0bG9vayIsICJYLUFwcFZlcnNpb24iIDogIjE2LjAuMTk3MjUuMjAxNTIiLCAiT1MiIDogIldpbmRvd3MiIH0%3D&CID=D2D3F3AC-0BDC-4BD2-BA71-FB696A0B6A00&wdLOR=c94C1E888-7672-441D-A24F-0A1B08AB2E33" target="_blank">Here</a>
+       to access the My Account FAQ.
+    </p>
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>How My Account will help customers, colleagues and the Council</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          The delivery of this change will result in several 
+          improved outcomes for our customers, workforce and the Council as a whole.
+        </p> 
+        <h4>Customers</h4>
+        <p>
+          For our customers, My Account will provide a reliable and seamless digital 
+          service that enables quicker response times and more consistent experiences. 
+          It will offer improved access through a digital channel where enquiries can be 
+          tracked at any time, which will lead to fewer chase calls.
+        </p> 
+        <h4>Colleagues</h4>
+        <p>
+          For our workforce, My Account will provide access to better digitally enabled tools, 
+          processes, visibility and capability, all of which will make it easier to serve our 
+          customers. This improvement will:
+          <ul>
+            <li>increase productivity</li>
+            <li>reduce transactions between teams</li>
+            <li>enhance job purpose</li>
+            <li>deliver better customer experiences</li>
+            <li>create more capacity to support those with greater needs</li>
+          </ul>
+        </p>
+        <h4>The Council</h4>
+        <p>
+          For the Council, My Account will help us become the organisation we want 
+          and need to be in the future - a Council with people at its heart. It will 
+          help build trust in the Council by providing a consistent, modern, secure 
+          and high-quality experience where online enquiries work effectively and 
+          customers feel heard and connected to what we do.
+        </p> 
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Benefits of My Account</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          My Account will improve digital access for customers who prefer to use 
+          online services. This reduces call volumes and waiting times, freeing 
+          up capacity for customers with more complex needs.
+        </p>
+        <p>
+          Benefits include:
+        </p>
+        <p>
+          <ul>
+            <li>full visibility of each case and its progress</li>
+            <li>fewer duplicate enquiries and fewer customer chase contacts</li>
+            <li>more consistent response standards</li>
+            <li>all enquiry history available in one place</li>
+            <li>a secure way to share information and respond to customers</li>
+          </ul>
+        </p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>How My Account is part of Future Sheffield</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          Future Sheffield is our plan to become a modern, trusted council 
+          and a great place to work. It's focused on fixing things that slow 
+          us down and improving services across the city.
+        </p> 
+        <p>
+          Digital Transformation and Customer Experience Programmes are helping 
+          us move towards digital self-serve. My Account is a key part of this work, 
+          making it easier for customers who prefer digital access to get updates 
+          without needing to contact us.
+        </p>
+      </div>
+    </details>
+
+    <details class="accordion">
+      <summary class="accordion-header">
+        <h3>Contact us</h3>
+        <div class="accordion-icon"></div>
+      </summary>
+      <div class="accordion-content">
+        <p>
+          If you have any questions about My Account, please contact Leigh Graham by emailing
+          <a href="mailto:leigh.graham@sheffield.gov.uk">leigh.graham@sheffield.gov.uk</a>
+        </p>
+      </div>
+    </details>
     `,
   
     { buttonLabel: "", formName: ""},
