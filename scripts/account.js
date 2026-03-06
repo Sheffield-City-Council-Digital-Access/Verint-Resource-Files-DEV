@@ -195,11 +195,11 @@ document.addEventListener("DOMContentLoaded", function () {
             <p id="feedback-heading">
               This page is new,
               <a href="/site/portal/form/my_feedback_suggestion?path=${encodeURIComponent(sitePath)}" 
-                   id="feedback-link" 
-                   class="btn-feedback" 
-                   aria-label="Provide feedback on this page">
-                    please let us know if it was helpful.
-                </a>
+                id="feedback-link" 
+                class="btn-feedback" 
+                aria-label="Provide feedback on this page">
+                please let us know if it was helpful.
+              </a>
             </p>
           </div>
         </div>
