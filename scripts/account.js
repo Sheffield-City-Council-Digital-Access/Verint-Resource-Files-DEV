@@ -177,6 +177,8 @@ document.addEventListener("DOMContentLoaded", function () {
     
       // --- FEEDBACK ---
 
+      const currentFullPath = window.location.pathname;
+      const sitePath = currentFullPath.substring(currentFullPath.indexOf('/site'));
       const newElement = document.createElement('aside');
       newElement.className = 'feedback-banner';
       newElement.setAttribute('aria-labelledby', 'feedback-heading');
@@ -192,7 +194,11 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="feedback-content">
             <p id="feedback-heading">
               This page is new,
-              <a href="/site/portal/form/give_feedback_suggestion" id="feedback-link" class="btn-feedback" aria-label="Provide feedback on this page">
+              <a href="/site/portal/form/my_feedback_suggestion?path=${encodeURIComponent(sitePath)}" 
+                id="feedback-link" 
+                class="btn-feedback" 
+                aria-label="Provide feedback on this page"
+              >
                 please let us know if it was helpful.
               </a>
             </p>
