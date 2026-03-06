@@ -183,7 +183,7 @@ class CoreYCC {
     </details>
     `,
   
-    { buttonLabel: "", formName: ""},
+    { buttonLabel: "Provide Feedback", formName: "my_feedback_suggestion"},
     { typeKey: "" },
     { typeKey: "my_account_information_provided"},
     {
