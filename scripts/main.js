@@ -1645,10 +1645,10 @@ function handleOnReadyEvent(_, kdf) {
   // --- HANDLE SIGN IN BUTTTON CLICK --------------------------------------- \\
 
   $("#dform_widget_button_but_next_sign_in").on("click", function () {
-    if (KDF.getVal("rad_sign_in") === "true") {
-      window.location.href = `/site/portal/account/${kdf.form.name}`;
-    } else {
+    if (KDF.getVal("rad_sign_in") === "false") {
       KDF.gotoNextPage();
+    } else {
+      window.location.href = `/site/portal/account/${kdf.form.name}`;
     }
   });
 
