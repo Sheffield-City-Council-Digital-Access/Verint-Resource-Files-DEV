@@ -3718,17 +3718,17 @@ function getAndSetReviewPageData() {
               fieldValue = `£${KDF.getVal(fieldName)}`;
             } else if (fieldClass.includes("address-search")) {
               fieldLabel = "Address";
-            
+
               const fullAddress = removeDuplicateWords(getValueFromAlias(pageId, "fullAddress"));
 
               const property = getValueFromAlias(pageId, "property");
               const streetName = getValueFromAlias(pageId, "streetName");
               const city = getValueFromAlias(pageId, "city");
               const postCode = getValueFromAlias(pageId, "postCode");
-            
+
               const street = [property, streetName].filter(Boolean).join(" ");
               const manualAddress = [street, city, postCode].filter(Boolean).join(", ");
-            
+
               const siteName = getValueFromAlias(pageId, "siteName");
 
               fieldValue = fullAddress || manualAddress || siteName || "Not answered";
@@ -3927,7 +3927,7 @@ function checkAddressHasBeenSet(action = "next") {
         const resultsList = document.querySelector(
           `#${currentPageId} .address-search-results`
         );
-    
+
         let manualAddressElement = document.querySelector(
           `#${currentPageId} .manual-address-container`
         );
@@ -3938,18 +3938,18 @@ function checkAddressHasBeenSet(action = "next") {
             detailsElement.removeAttribute("open");
           }
         }
-    
+
         let setAddressButton = document.querySelector(
           `#${currentPageId} .set-address-btn`
         );
-    
+
         const buttonContainer = document.querySelector(
           `#${getCurrentPageId()} .address-search-btn-container`
         );
         if (buttonContainer) {
           buttonContainer.style.display = "flex"; // Shows the element
         }
-    
+
         searchButton = searchButton.id.replace("dform_widget_button_", "");
         if (manualAddressElement) {
           manualAddressElement = manualAddressElement.id.replace(
@@ -3958,7 +3958,7 @@ function checkAddressHasBeenSet(action = "next") {
           );
         }
         setAddressButton = setAddressButton.id.replace("dform_widget_button_", "");
-    
+
         let selectedAddressContainer = document.querySelector(
           `#${getCurrentPageId()} .selected-address-container`
         );
@@ -3968,14 +3968,14 @@ function checkAddressHasBeenSet(action = "next") {
             ""
           );
         }
-    
+
         const selectedAddressSpan = document.querySelector(
           `#${currentPageId} #selected-address`
         );
         if (selectedAddressSpan) {
           selectedAddressSpan.textContent = defaultSelectedAddressMessage;
         }
-    
+
         let searchAgainButtonContainer = document.querySelector(
           `#${currentPageId} .manual-address-search-again-container`
         );
@@ -3985,7 +3985,7 @@ function checkAddressHasBeenSet(action = "next") {
             ""
           );
         }
-    
+
         if (
           resultsList &&
           searchInput &&
@@ -7038,7 +7038,7 @@ function loadAccountDetails(accountItem, account) {
 //         <p class="detail-label">Current Stage</p>
 //         <p id="accountStage" class="detail-value">${stage?.route || 'No Action'}</p>
 //       </div>
-      
+
 //       <div>
 //         <p class="detail-label">Address</p>
 //         <p id="propertyAddress" class="detail-value">${summary?.propertyAddress || ''}</p>
@@ -7199,9 +7199,9 @@ function renderAccountDetails(account, summary, stage, payment, charges, transac
       </div>
       <div>
         ${account.formattedEndDate
-          ? `<p class="detail-label">End Date</p><p id="formattedEndDate" class="detail-value">${account.formattedEndDate}</p>`
-          : ''
-        }
+      ? `<p class="detail-label">End Date</p><p id="formattedEndDate" class="detail-value">${account.formattedEndDate}</p>`
+      : ''
+    }
       </div>
       <div>
         <p class="detail-label">Current Balance</p>
@@ -7209,16 +7209,16 @@ function renderAccountDetails(account, summary, stage, payment, charges, transac
       </div>
       <div>
       ${summary.totalBalance
-          ? `<p class="detail-label">Total Balance</p><p id="totalBalance" class="detail-value">${summary?.totalBalance || ''}</p>`
-          : ''
-        }
+      ? `<p class="detail-label">Total Balance</p><p id="totalBalance" class="detail-value">${summary?.totalBalance || ''}</p>`
+      : ''
+    }
       </div>
       <div>
         <p class="detail-label">Payment Method</p>
         <p id="paymentMethod" class="detail-value">${payment?.method || ''}${payment?.method !== 'Cash Receipting'
-          ? `<br/><span id="paymentSheduled" class="detail-value">${payment?.scheduledDate}</span>`
-          : ''
-        }
+      ? `<br/><span id="paymentSheduled" class="detail-value">${payment?.scheduledDate}</span>`
+      : ''
+    }
         </p>
       </div>
       <div>
@@ -7284,22 +7284,28 @@ function renderAccountDetails(account, summary, stage, payment, charges, transac
   const tabs = accountDetailsPanel.querySelectorAll('.tab-button');
   const contents = accountDetailsPanel.querySelectorAll('.tab-content');
 
-  function showTab(clickedTab) {
-    const targetId = clickedTab.getAttribute('data-target');
+  function showTab(targetId) {
+    const allTabs = accountDetailsPanel.querySelectorAll('.tab-button');
+    const allContents = accountDetailsPanel.querySelectorAll('.tab-content');
 
-    // Reset all tabs and contents
-    tabs.forEach(tab => tab.classList.remove('active-tab'));
-    contents.forEach(content => {
+    allTabs.forEach(tab => tab.classList.remove('active-tab'));
+    allContents.forEach(content => {
       content.classList.add('hidden');
       content.classList.remove('active-content');
     });
 
-    // Activate selected
-    clickedTab.classList.add('active-tab');
-    const targetContent = document.getElementById(targetId);
-    if (targetContent) {
-      targetContent.classList.remove('hidden');
-      targetContent.classList.add('active-content');
+    const selectedTab = document.getElementById(targetId);
+    if (!selectedTab) return;
+
+    const contentId = selectedTab.getAttribute('data-target');
+    const selectedContent = document.getElementById(contentId);
+
+    selectedTab.classList.add('active-tab');
+    if (selectedContent) {
+      selectedContent.classList.remove('hidden');
+      selectedContent.classList.add('active-content');
+    } else {
+      console.error("Could not find content section with ID:", contentId);
     }
   }
 
