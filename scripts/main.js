@@ -7046,10 +7046,10 @@ function renderAccountDetails(account, summary, stage, payment, charges, transac
     </div>
 
     <div class="tab-nav">
-      <button id="charges-tab" class="tab-button active-tab">Charges</button>
-      <button id="transactions-tab" class="tab-button">Transactions</button>
-      <button id="arrangements-tab" class="tab-button">Arrangements</button>
-      <button id="notes-tab" class="tab-button">Notes</button>
+      <button id="charges-tab" data-target="charges-info" class="tab-button active-tab">Charges</button>
+      <button id="transactions-tab" data-target="transactions-history" class="tab-button">Transactions</button>
+      <button id="arrangements-tab" data-target="arrangements-history" class="tab-button">Arrangements</button>
+      <button id="notes-tab" data-target="notes-content" class="tab-button">Notes</button>
     </div>
 
     <div id="charges-info" class="tab-content active-content">
