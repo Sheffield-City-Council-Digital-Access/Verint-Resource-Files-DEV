@@ -7373,76 +7373,148 @@ function populateInfoTable(consent, data, noLetter = false, disabilityIndicator 
   renderPaginatedTable(normalizedData, 'info-table-body', 'info-pagination', infoRowMapper, null);
 }
 
+// function populatePropertyDetailsTable(data) {
+//   if (!document.getElementById('property-table-body')) return;
+
+//   // Define the primary property fields you want to display in order.
+//   const propertyFields = [
+//     { key: 'ownership', label: 'Ownership' },
+//     { key: 'constructionDt', label: 'Construction Date' },
+//     { key: 'rightToBuy', label: 'Right To Buy' },
+//     { key: 'occupancyCount', label: 'Occupancy Count' },
+//     { key: 'communalHeating', label: 'Communal Heating' },
+//     { key: 'liveDisrepair', label: 'Live Disrepair' },
+//     { key: 'managementCode', label: 'Management Code' },
+//     { key: 'area', label: 'Area Code' },
+//     { key: 'ward', label: 'Ward Code' },
+//   ];
+
+//   // Normalize primary property data
+//   let normalizedData = propertyFields
+//     .map(field => {
+//       let detail = data[field.key];
+//       const type = field.label;
+
+//       if (typeof detail === 'string') {
+//         // Normalize 'true'/'false' strings to 'Yes'/'No'
+//         if (detail.toLowerCase() === 'true') {
+//           detail = 'Yes';
+//         } else if (detail.toLowerCase() === 'false') {
+//           detail = 'No';
+//         } else if (!detail) {
+//           detail = ''; // Set empty/null/undefined strings to an empty string
+//         }
+//       } else if (typeof detail === 'boolean') {
+//         detail = detail ? 'Yes' : 'No';
+//       } else if (detail === null || detail === undefined) {
+//         detail = ''; // Handle null or undefined values
+//       }
+
+//       // Apply Title Case (assuming formatTitleCase is available)
+//       if (field.key === 'ownership' && typeof detail === 'string') {
+//         detail = formatTitleCase(detail);
+//       }
+
+//       return {
+//         type: type,
+//         // Ensure detail is a string for filtering below
+//         detail: String(detail)
+//       };
+//     });
+
+//   // Extract and normalize the attributeInformation array
+//   if (data.attributeInformation && Array.isArray(data.attributeInformation)) {
+//     const attributeData = data.attributeInformation
+//       .map(attrItem => {
+//         let detail = attrItem.attribute || '';
+
+//         return {
+//           type: 'Attribute',
+//           detail: String(detail)
+//         };
+//       })
+//       .filter(item => item.detail !== '');
+
+//     // Combine the primary property data and the attribute data
+//     normalizedData = normalizedData.concat(attributeData);
+//   }
+
+//   // Apply final filter for all data (excluding empty or 'No' details)
+//   const finalFilteredData = normalizedData
+//     .filter(item =>
+//       item.detail !== '' && item.detail.toLowerCase() !== 'no'
+//     );
+
+//   const propertyRowMapper = (item) => {
+//     return `
+//       <td><strong>${item.type}</strong></td>
+//       <td>${item.detail}</td>
+//     `;
+//   };
+
+//   renderPaginatedTable(finalFilteredData, 'property-table-body', 'property-pagination', propertyRowMapper, null);
+// }
+
 function populatePropertyDetailsTable(data) {
   if (!document.getElementById('property-table-body')) return;
 
-  // Define the primary property fields you want to display in order.
   const propertyFields = [
     { key: 'ownership', label: 'Ownership' },
+    { key: 'constructionDt', label: 'Construction Date' },
     { key: 'rightToBuy', label: 'Right To Buy' },
     { key: 'occupancyCount', label: 'Occupancy Count' },
     { key: 'communalHeating', label: 'Communal Heating' },
     { key: 'liveDisrepair', label: 'Live Disrepair' },
     { key: 'managementCode', label: 'Management Code' },
     { key: 'area', label: 'Area Code' },
-    { key: 'ward', label: 'Ward Code' }
+    { key: 'ward', label: 'Ward Code' },
   ];
 
-  // Normalize primary property data
-  let normalizedData = propertyFields
-    .map(field => {
-      let detail = data[field.key];
-      const type = field.label;
+  const normalizeValue = (val) => {
+    if (val === null || val === undefined) return '';
+    if (typeof val === 'boolean') return val ? 'Yes' : 'No';
+    if (typeof val === 'string') {
+      const lower = val.toLowerCase();
+      if (lower === 'true') return 'Yes';
+      if (lower === 'false') return 'No';
+    }
+    return String(val);
+  };
 
-      if (typeof detail === 'string') {
-        // Normalize 'true'/'false' strings to 'Yes'/'No'
-        if (detail.toLowerCase() === 'true') {
-          detail = 'Yes';
-        } else if (detail.toLowerCase() === 'false') {
-          detail = 'No';
-        } else if (!detail) {
-          detail = ''; // Set empty/null/undefined strings to an empty string
-        }
-      } else if (typeof detail === 'boolean') {
-        detail = detail ? 'Yes' : 'No';
-      } else if (detail === null || detail === undefined) {
-        detail = ''; // Handle null or undefined values
-      }
+  let normalizedData = propertyFields.map(field => {
+    let detail = normalizeValue(data[field.key]);
 
-      // Apply Title Case (assuming formatTitleCase is available)
-      if (field.key === 'ownership' && typeof detail === 'string') {
-        detail = formatTitleCase(detail);
-      }
+    if (field.key === 'ownership' && detail && typeof formatTitleCase === 'function') {
+      detail = formatTitleCase(detail);
+    }
 
-      return {
-        type: type,
-        // Ensure detail is a string for filtering below
-        detail: String(detail)
-      };
+    return {
+      type: field.label,
+      detail: detail
+    };
+  });
+
+  if (data.attributeInformation && Array.isArray(data.attributeInformation)) {
+    const attributeRows = [];
+
+    data.attributeInformation.forEach(attrItem => {
+      Object.keys(attrItem).forEach(key => {
+        const detail = normalizeValue(attrItem[key]);
+        const label = typeof formatTitleCase === 'function' ? formatTitleCase(key) : key;
+
+        attributeRows.push({
+          type: label,
+          detail: detail
+        });
+      });
     });
 
-  // Extract and normalize the attributeInformation array
-  if (data.attributeInformation && Array.isArray(data.attributeInformation)) {
-    const attributeData = data.attributeInformation
-      .map(attrItem => {
-        let detail = attrItem.attribute || '';
-
-        return {
-          type: 'Attribute',
-          detail: String(detail)
-        };
-      })
-      .filter(item => item.detail !== '');
-
-    // Combine the primary property data and the attribute data
-    normalizedData = normalizedData.concat(attributeData);
+    normalizedData = normalizedData.concat(attributeRows);
   }
 
-  // Apply final filter for all data (excluding empty or 'No' details)
-  const finalFilteredData = normalizedData
-    .filter(item =>
-      item.detail !== '' && item.detail.toLowerCase() !== 'no'
-    );
+  const finalFilteredData = normalizedData.filter(item =>
+    item.detail !== '' && item.detail.toLowerCase() !== 'no'
+  );
 
   const propertyRowMapper = (item) => {
     return `
@@ -7451,7 +7523,13 @@ function populatePropertyDetailsTable(data) {
     `;
   };
 
-  renderPaginatedTable(finalFilteredData, 'property-table-body', 'property-pagination', propertyRowMapper, null);
+  renderPaginatedTable(
+    finalFilteredData, 
+    'property-table-body', 
+    'property-pagination', 
+    propertyRowMapper, 
+    null
+  );
 }
 
 function populateAddressHistoryTable(data) {
