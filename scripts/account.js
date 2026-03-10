@@ -193,13 +193,13 @@ document.addEventListener("DOMContentLoaded", function () {
           </svg>
           <div class="feedback-content">
             <p id="feedback-heading">
-              This page is new,
+              This service is new.
               <a href="/site/portal/form/my_feedback_suggestion?path=${encodeURIComponent(sitePath)}" 
                 id="feedback-link" 
                 class="btn-feedback" 
                 aria-label="Provide feedback on this page"
               >
-                please let us know if it was helpful.
+                Help us improve it and give your feedback.
               </a>
             </p>
           </div>
