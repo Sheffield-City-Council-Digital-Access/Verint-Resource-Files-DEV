@@ -548,8 +548,7 @@
 
 #dform_container .dashboard-details-container .your-nearest-container .card .location a, 
 #dform_container .dashboard-details-container .your-nearest-container .card .opening-times > p,
-#dform_container .dashboard-details-container .your-nearest-container .card .opening-times > a, 
-#dform_container .dashboard-details-container .your-nearest-container .card .time-row .hours {
+#dform_container .dashboard-details-container .your-nearest-container .card .opening-times > a {
     font-weight: var(--font-weight-bold);
 }
 

@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const privacyStatementLi = document.createElement("li");
       const privacyAnchor = document.createElement("a");
-      privacyAnchor.href = "https://www.sheffield.gov.uk/utilities/footer-links/privacy-notice";
+      privacyAnchor.href = "https://www.sheffield.gov.uk/myaccountprivacy";
       privacyAnchor.classList.add("footer-link");
       privacyAnchor.textContent = "Privacy notice";
       privacyStatementLi.appendChild(privacyAnchor);
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const cookiePolicyLi = document.createElement("li");
       const cookieAnchor = document.createElement("a");
-      cookieAnchor.href = "https://www.sheffield.gov.uk/utilities/footer-links/cookie-policy";
+      cookieAnchor.href = "https://www.sheffield.gov.uk/myaccountcookies";
       cookieAnchor.classList.add("footer-link");
       cookieAnchor.textContent = "Use of cookies";
       cookiePolicyLi.appendChild(cookieAnchor);
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const accessibilityStatementLi = document.createElement("li");
       const accessibilityAnchor = document.createElement("a");
-      accessibilityAnchor.href = "https://www.sheffield.gov.uk/utilities/footer-links/accessibility-statement";
+      accessibilityAnchor.href = "https://www.sheffield.gov.uk/myaccountaccessibility";
       accessibilityAnchor.classList.add("footer-link");
       accessibilityAnchor.textContent = "Accessibility statement";
       accessibilityStatementLi.appendChild(accessibilityAnchor);
@@ -199,9 +199,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 class="btn-feedback" 
                 aria-label="Provide feedback on this page"
               >
-                give your feedback
+                give your feedback.
               </a>
-              .
             </p>
           </div>
         </div>
