@@ -425,7 +425,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
               // Options for time part: hh:mm am/pm
               const timeOptions = {
-                hour: "2-digit",  // hh
+                hour: "numeric",  // hh
                 minute: "2-digit",// mm
                 hour12: true,     // am/pm
                 timeZone: timezone,
