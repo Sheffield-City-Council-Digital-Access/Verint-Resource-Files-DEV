@@ -1775,6 +1775,7 @@ function handlePageChangeEvent(event, kdf, currentpageid, targetpageid) {
   let skipPages = 1;
   displayBackButton(
     targetpageid > skipPages &&
+    pageName !== "updated" &&
     pageName !== "complete" &&
     kdf.form.complete !== "Y"
   );
