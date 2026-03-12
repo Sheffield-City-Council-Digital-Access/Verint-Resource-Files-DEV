@@ -18,7 +18,7 @@ function scrollToTop() {
 
 const { protocol, hostname } = window.location;
 const portal = "site/portal";
-const PORTAL_URL = `${protocol}/${hostname}/site/portal`;
+const PORTAL_URL = `${protocol}//${hostname}/site/portal`;
 
 let formattedTitle = "";
 
