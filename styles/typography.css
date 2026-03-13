@@ -149,6 +149,8 @@ a,
   color: var(--c-links-link);
   text-decoration: underline;
   text-underline-offset: 0.25rem;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 
 a.secondary-link,
