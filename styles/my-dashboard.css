@@ -400,6 +400,8 @@
 #dform_container .dashboard-details-container .waste-recycling-container .card.today {
   background: var(--c-alerts-warning);
   border: 4px solid var(--c-core-brand-primary-darken);
+
+  min-width: 0;
 }
 
 #dform_container .dashboard-details-container .waste-recycling-container .card.next {
