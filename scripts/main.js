@@ -1648,7 +1648,8 @@ function handleOnReadyEvent(_, kdf) {
     if (KDF.getVal("rad_sign_in") === "false") {
       KDF.gotoNextPage();
     } else {
-      window.location.href = `/site/portal/account/${kdf.form.name}`;
+      const params = new URLSearchParams(window.location.search);
+      window.location.href = `/site/portal/account/${kdf.form.name}?${params.toString()}`;
     }
   });
 
