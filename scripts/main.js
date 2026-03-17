@@ -192,7 +192,12 @@ function handleInitialisingEvent() {
 
     const formTitle = document.getElementById("dform_widget_le_title");
     if (formTitle && formTitle.value) {
-      finalServiceTitle = formTitle.value;
+      const cleanedValue = formTitle.value
+        .replace(/[^a-zA-Z0-9]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+      formTitle.value = cleanedValue;
+      finalServiceTitle = cleanedValue;
     }
 
     const serviceLabel = document.getElementById("service-label");
