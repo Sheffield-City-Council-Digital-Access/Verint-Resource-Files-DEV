@@ -168,36 +168,12 @@
 
 #dform_container input[type="radio"] {
   margin: 0;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color: var(--c-greys-white);
-  border: 2px solid var(--c-greys-black);
-  border-radius: 50%;
   width: var(--field-height-sm);
   height: var(--field-height-sm);
-  position: relative;
   cursor: pointer;
   outline: none;
   flex-shrink: 0;
-}
-
-#dform_container input[type="radio"]:checked {
-  background-color: var(--c-greys-white);
-  border: 2px solid var(--c-greys-black);
-}
-
-#dform_container input[type="radio"]:checked::before {
-  content: "";
-  display: block;
-  width: 60%;
-  height: 60%;
-  background-color: var(--c-greys-black);
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  accent-color: var(--c-greys-black);
 }
 
 /* --- CHECKBOX --- */
@@ -219,7 +195,7 @@
   height: var(--field-height-sm);
   width: var(--field-height-sm);
   box-shadow: inset 0 0 0 1px var(--c-greys-black) !important;
-  accent-color: var(--c-greys-white);
+  accent-color: var(--c-greys-black);
 }
 
 #dform_container .dform_fielderror,
