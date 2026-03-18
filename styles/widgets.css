@@ -50,7 +50,8 @@
 
 #dform_container div input[type="date"],
 #dform_container div input[type="time"] {
-  width: 12.5rem; /* 200px */
+  width: 12.5rem;
+  /* 200px */
 }
 
 /* --- SELECT --- */
@@ -138,7 +139,7 @@
   margin-top: 0 !important;
 }
 
-#dform_container .vertical fieldset.radiogroup span:first-of-type  {
+#dform_container .vertical fieldset.radiogroup span:first-of-type {
   margin-top: var(--spacing-lg) !important;
 }
 
@@ -223,17 +224,10 @@
 #dform_container input[type="checkbox"]:checked {
   background-color: var(--c-greys-black);
   border-color: var(--c-greys-black);
-}
-
-#dform_container input[type="checkbox"]:checked::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640'%3E%3Cpath fill='%23ffffff' d='M530.8 134.1C545.1 144.5 548.3 164.5 537.9 178.8L281.9 530.8C276.4 538.4 267.9 543.1 258.5 543.9C249.1 544.7 240 541.2 233.4 534.6L105.4 406.6C92.9 394.1 92.9 373.8 105.4 361.3C117.9 348.8 138.2 348.8 150.7 361.3L252.2 462.8L486.2 141.1C496.6 126.8 516.6 123.6 530.9 134z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%2220%206%209%2017%204%2012%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 70%;
+  background-size: 75%;
 }
 
 #dform_container .dform_fielderror,
@@ -243,15 +237,15 @@
   outline: none;
 }
 
-#dform_container fieldset.checkboxgroup > span,
-#dform_container .dform_widget_type_checkbox > div {
+#dform_container fieldset.checkboxgroup>span,
+#dform_container .dform_widget_type_checkbox>div {
   display: grid;
   grid-template-columns: max-content 1fr;
   align-items: center;
   column-gap: var(--spacing-sm);
 }
 
-#dform_container fieldset.checkboxgroup > span {
+#dform_container fieldset.checkboxgroup>span {
   align-items: start;
 }
 
@@ -267,7 +261,7 @@
   line-height: var(--line-height-body);
 }
 
-#dform_container fieldset.checkboxgroup > span > label {
+#dform_container fieldset.checkboxgroup>span>label {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -348,8 +342,8 @@
   width: 200%;
 }
 
-#dform_container div[data-type="html"] > div[data-type="date"],
-#dform_container div[data-type="html"] > div[data-type="time"] {
+#dform_container div[data-type="html"]>div[data-type="date"],
+#dform_container div[data-type="html"]>div[data-type="time"] {
   display: none !important;
 }
 
