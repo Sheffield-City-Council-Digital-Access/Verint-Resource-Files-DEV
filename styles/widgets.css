@@ -185,19 +185,9 @@
 #dform_container input[type="radio"]:checked {
   background-color: var(--c-greys-white);
   border: 2px solid var(--c-greys-black);
-}
-
-#dform_container input[type="radio"]:checked::before {
-  content: "";
-  display: block;
-  width: 60%;
-  height: 60%;
-  background-color: var(--c-greys-black);
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-image: radial-gradient(circle closest-side, var(--c-greys-black) 55%, transparent 60%);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* --- CHECKBOX --- */
@@ -215,11 +205,28 @@
 }
 
 #dform_container input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   margin-block: var(--spacing-xxs);
   height: var(--field-height-sm);
   width: var(--field-height-sm);
-  box-shadow: inset 0 0 0 1px var(--c-greys-black) !important;
-  accent-color: var(--c-greys-white);
+  background-color: var(--c-greys-white);
+  border: 2px solid var(--c-greys-black);
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  flex-shrink: 0;
+}
+
+#dform_container input[type="checkbox"]:checked {
+  background-color: var(--c-greys-black);
+  border-color: var(--c-greys-black);
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%2220%206%209%2017%204%2012%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
 }
 
 #dform_container .dform_fielderror,
@@ -374,9 +381,8 @@
   box-shadow: none !important;
 }
 
-#dform_container input[type="checkbox"]:focus,
-#dform_container input[type="checkbox"]:checked:focus::after {
-  box-shadow: inset 0 0 0 2px var(--c-greys-black) !important;
+#dform_container input[type="checkbox"]:focus {
+  box-shadow: none !important;
 }
 
 #dform_container input:focus-visible {
