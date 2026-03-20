@@ -114,7 +114,9 @@ const zoomZeroFare = new ContentTaT(
     </p>
     <h3>Apply for or renew a Zoom Zero travel pass</h3>
     <p>
-      You can apply for a new pass or renew an existing one at: <a href="https://www.sheffield.gov.uk/travel-transport/travelling-school/zero-fare-travel</a> 
+     You can apply for a new pass or renew an existing one at: 
+     <a href="https://www.sheffield.gov.uk/travel-transport/travelling-school/zero-fare-travel" target="_blank">
+       https://www.sheffield.gov.uk/travel-transport/travelling-school/zero-fare-travel</a> 
       <br>
       
 <button
