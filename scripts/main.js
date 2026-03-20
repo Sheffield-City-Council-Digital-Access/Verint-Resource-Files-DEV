@@ -1655,7 +1655,7 @@ function handleOnReadyEvent(_, kdf) {
     } else {
       // const params = new URLSearchParams(window.location.search);
       // window.location.href = `/site/portal/account/${kdf.form.name}?${params.toString()}`;
-      const params = KDF.params();
+      const params = KDF.getParams();
       const queryString = Object.keys(params)
         .map(key => `${key}=${params[key]}`)
         .join('&');
