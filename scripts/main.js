@@ -1653,8 +1653,13 @@ function handleOnReadyEvent(_, kdf) {
     if (KDF.getVal("rad_sign_in") === "false") {
       KDF.gotoNextPage();
     } else {
-      const params = new URLSearchParams(window.location.search);
-      window.location.href = `/site/portal/account/${kdf.form.name}?${params.toString()}`;
+      // const params = new URLSearchParams(window.location.search);
+      // window.location.href = `/site/portal/account/${kdf.form.name}?${params.toString()}`;
+      const params = KDF.params();
+      const queryString = Object.keys(params)
+        .map(key => `${key}=${params[key]}`)
+        .join('&');
+      window.location.href = `/site/portal/account/${kdf.form.name}?${queryString}`;
     }
   });
 
