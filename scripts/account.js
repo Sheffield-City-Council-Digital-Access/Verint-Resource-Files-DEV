@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
     usernameLink.href = "/site/portal/profile";
     usernameLink.tabIndex = 0;
 
-    usernameLink.textContent = userName;
+    usernameLink.textContent = formatTitleCase(userName);
 
     if (navigationDiv) {
       navigationDiv.prepend(usernameLink);
