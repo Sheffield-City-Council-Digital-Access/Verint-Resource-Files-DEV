@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const myProfileLink = document.getElementById("nav_username");
     if (myProfileLink) {
-      userName = formatTitleCase(myProfileLink.textContent);
+      userName = myProfileLink.textContent;
       myProfileLink.textContent = "My profile";
     }
   })();
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
     usernameLink.href = "/site/portal/profile";
     usernameLink.tabIndex = 0;
 
-    usernameLink.textContent = userName;
+    usernameLink.textContent = formatTitleCase(userName);
 
     if (navigationDiv) {
       navigationDiv.prepend(usernameLink);
