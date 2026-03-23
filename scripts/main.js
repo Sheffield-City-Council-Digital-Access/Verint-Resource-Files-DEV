@@ -2333,7 +2333,9 @@ function handleSuccessfulAction(event, kdf, response, action, actionedby) {
     );
     if (findOnMapElement) {
       if (easting && northing) {
-        plotLocationOnMap(easting, northing);
+        if (action !== "retrieve-local-address") {
+          plotLocationOnMap(easting, northing);
+        }
       }
       findOnMapElement = findOnMapElement.id.replace("dform_widget_html_", "");
     }
