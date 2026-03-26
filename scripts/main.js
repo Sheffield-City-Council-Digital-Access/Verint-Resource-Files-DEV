@@ -7387,98 +7387,18 @@ function populateInfoTable(consent, data, noLetter = false, disabilityIndicator 
   renderPaginatedTable(normalizedData, 'info-table-body', 'info-pagination', infoRowMapper, null);
 }
 
-// function populatePropertyDetailsTable(data) {
-//   if (!document.getElementById('property-table-body')) return;
-
-//   // Define the primary property fields you want to display in order.
-//   const propertyFields = [
-//     { key: 'ownership', label: 'Ownership' },
-//     { key: 'constructionDt', label: 'Construction Date' },
-//     { key: 'rightToBuy', label: 'Right To Buy' },
-//     { key: 'occupancyCount', label: 'Occupancy Count' },
-//     { key: 'communalHeating', label: 'Communal Heating' },
-//     { key: 'liveDisrepair', label: 'Live Disrepair' },
-//     { key: 'managementCode', label: 'Management Code' },
-//     { key: 'area', label: 'Area Code' },
-//     { key: 'ward', label: 'Ward Code' },
-//   ];
-
-//   // Normalize primary property data
-//   let normalizedData = propertyFields
-//     .map(field => {
-//       let detail = data[field.key];
-//       const type = field.label;
-
-//       if (typeof detail === 'string') {
-//         // Normalize 'true'/'false' strings to 'Yes'/'No'
-//         if (detail.toLowerCase() === 'true') {
-//           detail = 'Yes';
-//         } else if (detail.toLowerCase() === 'false') {
-//           detail = 'No';
-//         } else if (!detail) {
-//           detail = ''; // Set empty/null/undefined strings to an empty string
-//         }
-//       } else if (typeof detail === 'boolean') {
-//         detail = detail ? 'Yes' : 'No';
-//       } else if (detail === null || detail === undefined) {
-//         detail = ''; // Handle null or undefined values
-//       }
-
-//       // Apply Title Case (assuming formatTitleCase is available)
-//       if (field.key === 'ownership' && typeof detail === 'string') {
-//         detail = formatTitleCase(detail);
-//       }
-
-//       return {
-//         type: type,
-//         // Ensure detail is a string for filtering below
-//         detail: String(detail)
-//       };
-//     });
-
-//   // Extract and normalize the attributeInformation array
-//   if (data.attributeInformation && Array.isArray(data.attributeInformation)) {
-//     const attributeData = data.attributeInformation
-//       .map(attrItem => {
-//         let detail = attrItem.attribute || '';
-
-//         return {
-//           type: 'Attribute',
-//           detail: String(detail)
-//         };
-//       })
-//       .filter(item => item.detail !== '');
-
-//     // Combine the primary property data and the attribute data
-//     normalizedData = normalizedData.concat(attributeData);
-//   }
-
-//   // Apply final filter for all data (excluding empty or 'No' details)
-//   const finalFilteredData = normalizedData
-//     .filter(item =>
-//       item.detail !== '' && item.detail.toLowerCase() !== 'no'
-//     );
-
-//   const propertyRowMapper = (item) => {
-//     return `
-//       <td><strong>${item.type}</strong></td>
-//       <td>${item.detail}</td>
-//     `;
-//   };
-
-//   renderPaginatedTable(finalFilteredData, 'property-table-body', 'property-pagination', propertyRowMapper, null);
-// }
-
 function populatePropertyDetailsTable(data) {
   if (!document.getElementById('property-table-body')) return;
 
   const propertyFields = [
     { key: 'ownership', label: 'Ownership' },
     { key: 'constructionDt', label: 'Construction Date' },
+    { key: 'warranty', label: 'Under Warranty' },
     { key: 'rightToBuy', label: 'Right To Buy' },
     { key: 'occupancyCount', label: 'Occupancy Count' },
     { key: 'communalHeating', label: 'Communal Heating' },
-    { key: 'liveDisrepair', label: 'Live Disrepair' },
+    { key: 'disrepair', label: 'Live Disrepair' },
+    { key: 'asbestos', label: 'Asbestos' },
     { key: 'managementCode', label: 'Management Code' },
     { key: 'area', label: 'Area Code' },
     { key: 'ward', label: 'Ward Code' },
@@ -7526,8 +7446,11 @@ function populatePropertyDetailsTable(data) {
     normalizedData = normalizedData.concat(attributeRows);
   }
 
+  // const finalFilteredData = normalizedData.filter(item =>
+  //   item.detail !== '' && item.detail.toLowerCase() !== 'no'
+  // );
   const finalFilteredData = normalizedData.filter(item =>
-    item.detail !== '' && item.detail.toLowerCase() !== 'no'
+    item.detail !== ''
   );
 
   const propertyRowMapper = (item) => {
