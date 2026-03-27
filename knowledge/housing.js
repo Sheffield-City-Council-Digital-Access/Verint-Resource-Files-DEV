@@ -4804,7 +4804,7 @@ const mutualExchanges = new ContentH(
             <summary>Will I be able to monitor my progress online?</summary>
             <div class="details-accordion-content">
               <p>
-                This will be possible soon via HomeSwapper.
+                Yes, you can monitor the progress of your exchange online via your HomeSwapper account.
               </p>
             </div>
           </details>
@@ -4873,7 +4873,7 @@ const mutualExchanges = new ContentH(
     keywords: ["rehousing", "rehousing", "rehousign", "rehozing"],
     categories: ["Housing"],
   },
-  { date: "29/10/2025", name: "Motolani Akinola" }
+  { date: "27/03/2026", name: "Shaz Athar" }
 );
 
 const priorities = new ContentH(
