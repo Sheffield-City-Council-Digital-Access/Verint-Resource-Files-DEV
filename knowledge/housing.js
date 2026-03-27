@@ -4625,7 +4625,9 @@ const mutualExchanges = new ContentH(
         A Mutual Exchange is where two or more Council or Housing Association tenants can apply to swap
         their homes. The 1985 Housing Act (part 4, section 92) gives tenants this right under certain circumstances.<br><br>
   
-        The Mutual Exchange application form can be accessed online at the Housing Online website at: <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a> and the Sheffield City Council website at: <a href="https://www.sheffield.gov.uk/council-housing/mutual-exchanges" target="_blank">https://www.sheffield.gov.uk/council-housing/mutual-exchanges</a>.
+        To apply for a Mutual Exchange you need to fill in an online application form. Go to the HomeSwapper website at: <a href="https://www.homeswapper.co.uk/" target="_blank">https://www.homeswapper.co.uk/</a> <br>
+        You will need to create an account if you do not already have one. It is free to register for Sheffield City Council tenants. <br>
+        More information on Mutual Exchanges and how to apply can be found on the SCC website here: <a href="https://www.sheffield.gov.uk/housing/housing-options/registering-council-home/exchange-your-property-someone-else" target="_blank">https://www.sheffield.gov.uk/housing/housing-options/registering-council-home/exchange-your-property-someone-else</a>.
         <br>
         <button type="button" class="dform_widget email-btn dform_widget_type_button"
           aria-label="Send link to mutual exchanges page"
