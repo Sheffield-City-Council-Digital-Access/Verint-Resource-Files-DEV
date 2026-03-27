@@ -5964,7 +5964,7 @@ const rentVariation = new ContentH(
             tenants in the seven days after this.
         </p>
         <p>
-            These letters are based on information produced on <sstrong>12th February 2026</sstrong>, so any tenancy changes 
+            These letters are based on information produced on <strong>12th February 2026</strong>, so any tenancy changes 
             after that won’t be included. This means any successions, assignments, changes of names, etc. 
             will be correct on the system, but the letters will be sent with the original details on them.
         </p>
@@ -5981,7 +5981,7 @@ const rentVariation = new ContentH(
         <p>
             Anybody on Housing Benefit will also receive a letter directly from Sheffield Benefits Service 
             telling them what their Housing Benefit is and how it has been worked out. These letters from the
-            Benefits Service will be posted to tenants from 09th March 2026. Any queries need to be made directly
+            Benefits Service will be posted to tenants from 9th March 2026. Any queries need to be made directly
             to the Sheffield Benefits service.
         </p>
         <p>
