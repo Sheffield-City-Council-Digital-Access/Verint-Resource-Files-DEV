@@ -189,3 +189,116 @@
   background: var(--c-focus-links);
   border-color: var(--c-focus-links);
 }
+
+#dform_container #dform_widget_button_but_edit_your_profile {
+  margin-top: var(--spacing-smd);
+}
+
+#dform_container #dform_widget_html_ahtm_profile_updated[data-type="html"] {
+  background: transparent !important;
+}
+
+#dform_container #dform_widget_buttonset_bset_info_tabs {
+  margin-block: 0;
+  flex-wrap: nowrap !important;
+}
+
+#dform_container #dform_widget_buttonset_bset_info_tabs > button {
+  margin: 0;
+  min-width: max-content;
+  width: max-content;
+  background: var(--c-grey);
+  padding: 0 clamp(var(--spacing-xs), 3vw, var(--spacing-smd));
+  border-radius: 1.5625rem 1.5625rem 0 0 !important;
+  border: none;
+}
+
+#dform_container #dform_widget_buttonset_bset_info_tabs > button > span {
+  margin: 0;
+  height: 100%;
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight-bold);
+  font-size: clamp(var(--font-size-base), 5vw, var(--font-size-xxl));
+  color: var(--c-core-brand-primary-darken);
+  display: flex;
+  align-items: center;
+  gap: clamp(var(--spacing-xxs), 3vw, var(--spacing-xs));
+  border-bottom: 4px solid transparent;
+}
+
+#dform_container #dform_widget_buttonset_bset_info_tabs > button > span > img {
+  display: none;
+  width: var(--font-size-xxxl);
+  height: var(--font-size-xxxl);
+  line-height: var(--line-height);
+}
+
+@media screen and (min-width: 768px) {
+  #dform_container #dform_widget_buttonset_bset_info_tabs > button > span > img {
+    display: block;
+  }
+}
+
+#dform_container #dform_widget_buttonset_bset_info_tabs > button:hover > span,
+#dform_container #dform_widget_buttonset_bset_info_tabs > button:active > span {
+  border-color: var(--c-orange);
+}
+
+#dform_container #dform_widget_buttonset_bset_info_tabs > button:focus {
+  color: var(--c-core-brand-primary-darken) !important;
+  background: var(--c-greys-white) !important;
+}
+
+#dform_container #dform_widget_buttonset_bset_info_tabs > button.active {
+  background: var(--c-greys-white);
+}
+
+#dform_container #dform_widget_buttonset_bset_info_tabs > button.active > span {
+  border-color: var(--c-orange);
+}
+
+#dform_container #ahtm_notice_provide_demo_info,
+#dform_container #ahtm_notice_demo_info_provided {
+  background-color: transparent !important;
+}
+
+#dform_container section.provide-demo-info,
+#dform_container section.demo-info-provided {
+  padding: 32px 30px;
+  border-radius: 8px;
+  background-color: var(--c-purple);
+}
+
+#dform_container section.demo-info-provided {
+  background-color: var(--c-alerts-success-darken);
+}
+
+#dform_container section.provide-demo-info>h4,
+#dform_container section.demo-info-provided>h4 {
+  color: var(--c-greys-white);
+  margin-top: 0;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xxl);
+  font-family: var(--font-family);
+  line-height: var(--line-height-heading);
+}
+
+#dform_container section.demo-info-provided>h4>span {
+  color: var(--c-alerts-warning);
+}
+
+#dform_container section.provide-demo-info>p,
+#dform_container section.demo-info-provided>p {
+  color: var(--c-greys-white);
+  margin: 0;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family);
+  line-height: var(--line-height-body);
+}
+
+#dform_container #dform_widget_button_but_edit_your_profile,
+#dform_container #dform_widget_button_but_edit_your_demo_info {
+  margin-top: var(--spacing-smd);
+}

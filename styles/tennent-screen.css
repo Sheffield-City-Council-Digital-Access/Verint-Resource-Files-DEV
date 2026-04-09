@@ -195,7 +195,7 @@
 }
 
 #dform_container .dashboard-container td {
-  white-space: nowrap;
+  white-space: pre-wrap;
 }
 
 #dform_container .dashboard-container .table-row-item {

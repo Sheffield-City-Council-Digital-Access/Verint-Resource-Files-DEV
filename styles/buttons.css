@@ -59,6 +59,7 @@
 }
 
 #dform_container button.secondary-btn,
+#dform_container button.anonymous-btn,
 #back-to-requests-link {
   color: var(--c-core-brand-primary-darken);
   background: var(--c-greys-white);

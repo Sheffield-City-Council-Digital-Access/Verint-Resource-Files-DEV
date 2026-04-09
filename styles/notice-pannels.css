@@ -1,4 +1,4 @@
-#dform_container .dform_info,
+/* #dform_container .dform_info,
 #dform_container .dform_success,
 #dform_container .dform_warning,
 #dform_container .dform_error {
@@ -102,7 +102,7 @@ div.notification-content a {
 
 div.notification-content p a {
   font-weight: var(--font-weight-bold);
-} 
+}
 
 div.notification-content a {
   gap: var(--spacing-xs);
@@ -157,4 +157,130 @@ a.close-notification-link:focus {
 div.site-notification-bar--warning a.close-notification-link::before,
 a.close-notification-link:focus::before {
   content: url(../icons/close-x-black.svg);
+}
+
+#dform_container .container .area .box.box-full-width {
+  max-width: 100% !important;
+}
+
+#dform_container .related-services-menu {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+#dform_container .related-services-card {
+  flex: 1;
+  margin: unset;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: auto auto;
+  gap: var(--spacing-sm);
+  min-width: 22.5rem;
+  max-width: 22.5rem;
+  background: var(--c-core-tints-accent-2-tint-20);
+  padding: var(--spacing-md);
+  text-decoration: none;
+}
+
+#dform_container .related-services-menu .related-services-card h3 {
+  grid-column: 1 / -1;
+  grid-row: 1 / -2;
+  margin: unset;
+  padding: unset;
+  font-size: var(--font-size-lg);
+  color: var(--c-core-brand-primary-darken);
+}
+
+#dform_container .related-services-menu .related-services-card p {
+  grid-column: 1 / 2;
+  grid-row: 2 / -1;
+  font-size: var(--font-size-base);
+  margin-bottom: 0;
+}
+
+#dform_container .related-services-menu .related-services-card img {
+  width: 1.25rem;
+  grid-column: 2 / 3;
+  grid-row: 2 / -1;
+  align-self: end;
+}
+
+ */
+
+
+
+
+
+
+
+
+
+#dform_container section.notice-panel,
+#dform_container section.info-panel,
+#dform_container section.success-panel,
+#dform_container section.alert-panel--ineligible,
+#dform_container section.alert-panel--ineligible {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: var(--spacing-sm);
+  max-width: 750px;
+  padding: 26px 30px 30px;
+  background: var(--c-greys-white);
+  border: 2px solid var(--c-core-brand-primary-darken);
+  border-left: 5px solid var(--c-core-brand-primary-darken);
+  border-radius: 0 25px 0 0;
+}
+
+#dform_container section.notice-panel::before,
+#dform_container section.info-panel::before,
+#dform_container section.success-panel::before,
+#dform_container section.alert-panel--ineligible::before,
+#dform_container section.alert-panel--ineligible::before {
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+  content: url(../icons/circle-info-primary-darkened.svg);
+}
+
+#dform_container section.notice-panel>h3,
+#dform_container section.info-panel>h3,
+#dform_container section.success-panel>h3,
+#dform_container section.alert-panel--ineligible>h3,
+#dform_container section.alert-panel--ineligible>h3,
+#dform_container section.notice-panel>p,
+#dform_container section.info-panel>p,
+#dform_container section.success-panel>p,
+#dform_container section.alert-panel--ineligible>p,
+#dform_container section.alert-panel--ineligible>p {
+  grid-column: 2 / -1;
+  margin: 0;
+}
+
+#dform_container section.notice-panel a,
+#dform_container section.info-panel a,
+#dform_container section.success-panel a,
+#dform_container section.alert-panel--ineligible a,
+#dform_container section.alert-panel--ineligible a {
+  font-weight: var(--font-weight-bold);
+}
+
+#dform_container section.success-panel {
+  background: var(--c-core-tints-success-tint-20);
+  border-color: var(--c-alerts-success);
+}
+
+#dform_container section.success-panel::before {
+  content: url(../icons/circle-check-success.svg);
+}
+
+#dform_container section.alert-panel--ineligible,
+#dform_container section.alert-panel--ineligible {
+  background: var(--c-core-tints-accent-1-tint-20);
+  border-color: var(--c-alerts-danger);
+}
+
+#dform_container section.alert-panel--ineligible::before,
+#dform_container section.alert-panel--ineligible::before {
+  content: url(../icons/triangle-exclamation-danger.svg);
 }

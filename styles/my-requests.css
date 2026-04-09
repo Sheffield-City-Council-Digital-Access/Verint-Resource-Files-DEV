@@ -138,12 +138,12 @@ li.le-request-status-text {
 }
 
 li.le-stat-open li.le-request-status-text::after {
-  content: " Recieved";
+  content: " In progress";
   color: var(--c-orange);
 }
 
 li.le-stat-closed li.le-request-status-text::after {
-  content: " Complete";
+  content: " Resolved";
   color: var(--c-alerts-success);
 }
 
@@ -192,6 +192,7 @@ li.le-stat-closed li.le-request-status-text::after {
 }
 
 #pagination-container li.le-pagination-nav a {
+  color: var(--c-core-brand-primary-darken);
   font-weight: var(--font-weight-semibold);
   margin-inline: var(--spacing-xs);
   padding-inline: var(--spacing-xs);
@@ -229,4 +230,8 @@ li.le-stat-closed li.le-request-status-text::after {
 #pagination-container .le-pagination-nav.disabled a {
   opacity: 50%;
   cursor: not-allowed;
+}
+
+#widget_ahtm_view_reuests_into > section > p {
+  margin: 0;
 }

@@ -213,6 +213,8 @@
 
 .le-request-form-details #dform_container .container .area .box {
   max-width: 100% !important;
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-sm);
 }
 
 .le-request-form-details section.review-page-content-section {
@@ -231,10 +233,10 @@ div.le-request-note-created.datetime > time {
   margin-bottom: 0;
 }
 
-#back-to-requests-link {
+/* #back-to-requests-link {
   position: relative;
   bottom: 50px;
-}
+} */
 
 #back-to-requests-link:focus {
   border-bottom: none !important;

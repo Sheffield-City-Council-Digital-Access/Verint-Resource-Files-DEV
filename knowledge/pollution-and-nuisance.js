@@ -1759,8 +1759,8 @@ const miceTreatment = new ContentPaN(
       <li>Income Related Employment Support Allowance</li>
     </ul>
     <p>
-    This covers you for up to 3 visits. If you require further treatments, 
-    each additional treatment will cost <strong>£58.00.</strong>
+      This covers you for up to 3 visits. If you require further treatments, 
+      each additional treatment will cost <strong>£58.00.</strong>
     </p>
     <p>
       All prices include a call-out fee of £40.80 This fee applies if our officer
@@ -2134,7 +2134,7 @@ const ratTreatment = new ContentPaN(
     <h3>Cost for Treatment</h3>
     <p>
       The treatment cost for Rats is <strong>£124.80.</strong> This covers you for up to 3 visits.
-      If you require further treatments, each additional treatment is <strong>Free.</strong>
+      If you require further treatments, each additional treatment will cost <strong>£58.00.</strong>
     </p>
     <p>
       All prices include a call-out fee of <strong>£40.00.</strong> This fee applies if our officer

@@ -576,7 +576,9 @@ function redirectToFormPage(item) {
   const customerid = KDF.getParams().customerid
     ? `customerid=${KDF.getParams().customerid}&`
     : "";
-  const interactionid = `interactionid=${KDF.getParams().interactionid}`;
+  const interactionid = KDF.getParams().interactionid
+    ? `interactionid=${KDF.getParams().interactionid}&`
+    : "";
   window.location.href = `${url}${formName}?${customerid}${interactionid}`;
 }
 
@@ -1450,9 +1452,9 @@ function handleOnReadyKnowledge() {
       const customerid = KDF.getParams().customerid
         ? `customerid=${encodeURIComponent(KDF.getParams().customerid)}&`
         : "";
-      const interactionid = `interactionid=${encodeURIComponent(
-        KDF.getParams().interactionid
-      )}`;
+      const interactionid = KDF.getParams().interactionid
+        ? `interactionid=${encodeURIComponent(KDF.getParams().interactionid)}&`
+        : "";
 
       window.location.href = `${url}${encodeURIComponent(
         formName
@@ -1483,11 +1485,11 @@ function handleOnReadyKnowledge() {
       const customerid = KDF.getParams().customerid
         ? `customerid=${encodeURIComponent(KDF.getParams().customerid)}&`
         : "";
-      const interactionid = `interactionid=${encodeURIComponent(
-        KDF.getParams().interactionid
-      )}`;
+      const interactionid = KDF.getParams().interactionid
+        ? `interactionid=${encodeURIComponent(KDF.getParams().interactionid)}&`
+        : "";
 
-      window.location.href = `${url}transfered_enquiry?${customerid}${interactionid}&enquiry=${encodeURIComponent(
+      window.location.href = `${url}transfered_enquiry?${customerid}${interactionid}enquiry=${encodeURIComponent(
         enquiryType
       )}&typekey=${encodeURIComponent(transferTypeKey)}`;
     });
@@ -1516,11 +1518,11 @@ function handleOnReadyKnowledge() {
       const customerid = KDF.getParams().customerid
         ? `customerid=${encodeURIComponent(KDF.getParams().customerid)}&`
         : "";
-      const interactionid = `interactionid=${encodeURIComponent(
-        KDF.getParams().interactionid
-      )}`;
+      const interactionid = KDF.getParams().interactionid
+        ? `interactionid=${encodeURIComponent(KDF.getParams().interactionid)}&`
+        : "";
 
-      window.location.href = `${url}general_enquiry?${customerid}${interactionid}&enquiry=${encodeURIComponent(
+      window.location.href = `${url}general_enquiry?${customerid}${interactionid}enquiry=${encodeURIComponent(
         enquiryType
       )}&typekey=${encodeURIComponent(finishTypeKey)}`;
     });
