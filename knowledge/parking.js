@@ -216,6 +216,19 @@ const appealBlueBadge = new ContentP(
       <li>Advise the customer that the review request has been made.</li>
       <li>Reallocate the case to Appeals.</li>
     </ul>  
+
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+        If the information above does not answer your query, please 
+        <a href="${window.location.protocol}//${
+            window.location.hostname
+          }/form/launch/blue_badge_enquiry?${
+            KDF.getParams().customerid
+              ? `customerid=${KDF.getParams().customerid}&`
+              : ""
+          }interactionid=${KDF.getParams().interactionid}">raise an enquiry</a>.
+      </p>
+    </section>
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -355,7 +368,18 @@ const applyBlueBadge = new ContentP(
     </div>
   </details>
 
-
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+        If the information above does not answer your query, please 
+        <a href="${window.location.protocol}//${
+            window.location.hostname
+          }/form/launch/blue_badge_enquiry?${
+            KDF.getParams().customerid
+              ? `customerid=${KDF.getParams().customerid}&`
+              : ""
+          }interactionid=${KDF.getParams().interactionid}">raise an enquiry</a>.
+      </p>
+    </section>
   `,
   {
     buttonLabel: "Apply for a blue badge",
@@ -405,6 +429,19 @@ const blueBadgeHolderPassedAway = new ContentP(
       Sheffield<br />
       S1 2SH
     </address>
+
+    <section class="info-panel" role="region" aria-label="Information panel">
+      <p>
+        If the information above does not answer your query, please 
+        <a href="${window.location.protocol}//${
+            window.location.hostname
+          }/form/launch/blue_badge_enquiry?${
+            KDF.getParams().customerid
+              ? `customerid=${KDF.getParams().customerid}&`
+              : ""
+          }interactionid=${KDF.getParams().interactionid}">raise an enquiry</a>.
+      </p>
+    </section>
   `,
   {
     buttonLabel: "Report the death of a Blue Badge holder",
@@ -490,7 +527,19 @@ const replacementBlueBadge = new ContentP(
         contact you, and a decision will be made regarding the return of your Blue
         Badge.
       </p>
-     
+
+      <section class="info-panel" role="region" aria-label="Information panel">
+        <p>
+          If the information above does not answer your query, please 
+          <a href="${window.location.protocol}//${
+              window.location.hostname
+            }/form/launch/blue_badge_enquiry?${
+              KDF.getParams().customerid
+                ? `customerid=${KDF.getParams().customerid}&`
+                : ""
+            }interactionid=${KDF.getParams().interactionid}">raise an enquiry</a>.
+        </p>
+      </section>
     `,
 
   {
