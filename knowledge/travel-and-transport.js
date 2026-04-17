@@ -525,6 +525,19 @@ const disabledPersonsTravelPermit = new ContentTaT(
       >
         Send link to review further information
       </button>
+
+      <section class="info-panel" role="region" aria-label="Information panel">
+        <p>
+          If the information above does not answer your query, please 
+          <a href="${window.location.protocol}//${
+              window.location.hostname
+            }/form/launch/dtp_enquiry?${
+              KDF.getParams().customerid
+                ? `customerid=${KDF.getParams().customerid}&`
+                : ""
+            }interactionid=${KDF.getParams().interactionid}">raise an enquiry</a>.
+        </p>
+      </section>
    `,
   {
     buttonLabel: "Apply for Disabled Pass",
