@@ -362,8 +362,8 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
         if (datetimeElements.length > 0) {
-          $('#request-details').addClass('dform_hidden');
-          $('#raise-request-details').removeClass('dform_hidden');
+          $('#request-details').removeClass('hidden');
+          $('#raise-request-details').addClass('hidden');
 
           datetimeElements.forEach((element) => {
             const dateTime = element.getAttribute("datetime");
@@ -402,8 +402,8 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         }
       } else {
-        $('#request-details').removeClass('dform_hidden');
-        $('#raise-request-details').addClass('dform_hidden');
+        $('#request-details').addClass('hidden');
+        $('#raise-request-details').removeClass('hidden');
 
         document.querySelectorAll("li.le-request-status-text").forEach((el) => {
           el.textContent = "Status:";

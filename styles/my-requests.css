@@ -280,3 +280,7 @@ li.le-stat-closed li.le-request-status-text::after {
   box-shadow: none !important;
   outline: none !important;
 }
+
+.hidden {
+  display: none !important;
+}
