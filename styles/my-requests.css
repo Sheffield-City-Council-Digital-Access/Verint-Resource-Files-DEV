@@ -235,3 +235,52 @@ li.le-stat-closed li.le-request-status-text::after {
 #widget_ahtm_view_reuests_into > section > p {
   margin: 0;
 }
+
+#request-details {
+  display: none;
+}
+
+#raise-request-details {
+  background: var(--c-core-tints-accent-2-tint-20);
+  padding: var(--spacing-smd);
+  border-radius: 1.5625rem !important;
+}
+
+#dform_widget_button_but_home_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height);
+  margin: 0;
+  padding: var(--spacing-xs) var(--spacing-md);
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--c-greys-white);
+  background: var(--c-alerts-success);
+  border: solid 2px var(--c-alerts-success);
+  border-radius: 1.5625rem !important;
+  min-width: 8.75rem;
+  width: max-content;
+  min-height: var(--field-height-sm);
+  height: var(--field-height-md);
+  max-height: 8.75rem;
+}
+
+#dform_widget_button_but_home_page:hover,
+#dform_widget_button_but_home_page:active {
+  color: var(--c-greys-white);
+  background: var(--c-brand-accents-teal);
+  border-color: var(--c-brand-accents-teal);
+  box-shadow: none;
+}
+
+#dform_widget_button_but_home_page:focus {
+  color: var(--c-greys-black) !important;
+  background: var(--c-focus-links) !important;
+  border-color: var(--c-focus-links) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}

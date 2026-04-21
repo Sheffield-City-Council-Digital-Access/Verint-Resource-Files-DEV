@@ -361,53 +361,18 @@ document.addEventListener("DOMContentLoaded", function () {
           ".le-request-note-created time"
         );
 
-        // if (datetimeElements.length > 0) {
-        //   datetimeElements.forEach((element) => {
-        //     const dateTime = element.getAttribute("datetime");
-        //     const timezone = element.getAttribute("data-timezone");
-        //     /**
-        //      * Formats the date and time for request notes, adding ordinal suffixes to the day.
-        //      */
-
-        //     if (dateTime && timezone) {
-        //       const date = new Date(dateTime);
-
-        //       const options = {
-        //         day: "numeric",
-        //         month: "long",
-        //         year: "numeric",
-        //         hour: "numeric",
-        //         minute: "numeric",
-        //         hour12: true, // Use AM/PM format
-        //         timeZone: timezone,
-        //       };
-
-        //       const formattedDate = new Intl.DateTimeFormat(
-        //         "en-GB",
-        //         options
-        //       ).format(date);
-
-        //       // Add ordinal suffix (e.g., "st", "nd", "rd", "th")
-        //       const day = date.getDate();
-        //       const suffix =
-        //         day % 10 === 1 && day !== 11
-        //           ? "st"
-        //           : day % 10 === 2 && day !== 12
-        //           ? "nd"
-        //           : day % 10 === 3 && day !== 13
-        //           ? "rd"
-        //           : "th";
-
-        //       const dayWithSuffix = formattedDate.replace(
-        //         /(\d+)/,
-        //         `$1${suffix}`
-        //       );
-
-        //       element.textContent = dayWithSuffix;
-        //     }
-        //   });
-        // }
         if (datetimeElements.length > 0) {
+          
+          const requestDetals = document.getElementById('request-details');
+          if (requestDetals.style.display === "none") {
+            requestDetals.style.display = "none";
+          }
+          
+          const raiseRequest = document.getElementById('raise-request-details');
+          if (raiseRequest.style.display === "none") {
+            raiseRequest.style.display = "block";
+          }
+
           datetimeElements.forEach((element) => {
             const dateTime = element.getAttribute("datetime");
             const timezone = element.getAttribute("data-timezone");
@@ -445,6 +410,16 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         }
       } else {
+        const requestDetals = document.getElementById('request-details');
+        if (requestDetals.style.display === "none") {
+          requestDetals.style.display = "block";
+        }
+       
+        const raiseRequest = document.getElementById('raise-request-details');
+        if (raiseRequest.style.display === "block") {
+          raiseRequest.style.display = "none";
+        }
+
         document.querySelectorAll("li.le-request-status-text").forEach((el) => {
           el.textContent = "Status:";
         });
@@ -630,19 +605,19 @@ document.addEventListener("DOMContentLoaded", function () {
           activateTab(draftsBtn, submittedBtn, widgetDrafts, widgetSubmitted);
         });
 
-        if (KDF.getParams().a === "drafts") {
-          setTimeout(() => {
-            activateTab(draftsBtn, submittedBtn, widgetDrafts, widgetSubmitted);
-          }, 0);
-        }
+        // if (KDF.getParams().a === "drafts") {
+        //   setTimeout(() => {
+        //     activateTab(draftsBtn, submittedBtn, widgetDrafts, widgetSubmitted);
+        //   }, 0);
+        // }
 
         if (submittedBtn.classList.contains("active")) {
           widgetSubmitted.style.display = "block";
-          widgetDrafts.style.display = "none";
+          // widgetDrafts.style.display = "none";
           initPagination("widget_MySubmittedRequests");
         } else {
           widgetSubmitted.style.display = "none";
-          widgetDrafts.style.display = "block";
+          // widgetDrafts.style.display = "block";
           initPagination("widget_MyDraftRequests");
         }
       }
