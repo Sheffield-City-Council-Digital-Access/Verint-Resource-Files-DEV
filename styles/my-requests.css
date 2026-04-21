@@ -236,10 +236,6 @@ li.le-stat-closed li.le-request-status-text::after {
   margin: 0;
 }
 
-#request-details {
-  display: none;
-}
-
 #raise-request-details {
   background: var(--c-core-tints-accent-2-tint-20);
   padding: var(--spacing-smd);

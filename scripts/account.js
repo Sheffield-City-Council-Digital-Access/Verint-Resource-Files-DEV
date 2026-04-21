@@ -362,16 +362,8 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
         if (datetimeElements.length > 0) {
-          
-          const requestDetals = document.getElementById('request-details');
-          if (requestDetals.style.display === "none") {
-            requestDetals.style.display = "none";
-          }
-          
-          const raiseRequest = document.getElementById('raise-request-details');
-          if (raiseRequest.style.display === "none") {
-            raiseRequest.style.display = "block";
-          }
+          $('#request-details').addClass('dform_hidden');
+          $('#raise-request-details').removeClass('dform_hidden');
 
           datetimeElements.forEach((element) => {
             const dateTime = element.getAttribute("datetime");
@@ -410,15 +402,8 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         }
       } else {
-        const requestDetals = document.getElementById('request-details');
-        if (requestDetals.style.display === "none") {
-          requestDetals.style.display = "block";
-        }
-       
-        const raiseRequest = document.getElementById('raise-request-details');
-        if (raiseRequest.style.display === "block") {
-          raiseRequest.style.display = "none";
-        }
+        $('#request-details').removeClass('dform_hidden');
+        $('#raise-request-details').addClass('dform_hidden');
 
         document.querySelectorAll("li.le-request-status-text").forEach((el) => {
           el.textContent = "Status:";
