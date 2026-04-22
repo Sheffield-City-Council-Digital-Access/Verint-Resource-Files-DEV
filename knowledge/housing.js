@@ -3303,31 +3303,43 @@ const applicationChanges = new ContentH(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <h3>
-      Login
-    </h3>
+    <p>  
+    Change of circumstances are now online on <strong>My Housing</strong> website and you will need to 
+    log in to make changes.
+    </p>
+
     <p>
       Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access Housing Online.
     </p>
+
     <p>
-      Use the following login details to access the system:
+    Once logged in to make changes, the customer will need to click on the “update my housing application” tile.
+    On the next page, the customer will need to click the small action tile on the right-hand side of the screen.
+    They will then be able to view application addresses or view application people. Customers can then 
+    “add new address or add new person” or make edits to existing addresses or household members on their application. 
+    Once you have made your changes, click on the “back to application summary” tile.
     </p>
+
     <p>
-      Email Address: <strong>propertyshop@sheffield.gov.uk</strong><br>
-      Password: <strong>StatusPoppyGlove1*</strong>
+    You will then need to click on the action tile and scroll down to “upload documents and files”. 
+    Please click the “list of acceptable ID” link to ensure your document is suitable, and then upload your 
+    documents separately so we can process your changes.
     </p>
-          Advisor note: You have logged in using dummy login details. Please do not
-          amend anything on screen. Log in if required using the login details above
-          and follow the instructions:
-        </p>
-        <p>Select "My Social Housing" on the left-hand side.</p>
-        <p>
-          Click "Update your details" and navigate through the form using the "Next
-          section" buttons.
-        </p>
-        <p>Please do not submit the application.</p>
-      </div>
+
+    <p>
+    If a customer changes their name, adds a household member, or changes their address, they must provide 
+    ID at the time of the change by uploading it onto My Housing Sheffield. Their application will then go 
+    under entry “UE” in the list entries section of the system.
+    </p>
+
+    <p>
+    It is very important that you notify us of any changes in your circumstances so that we can amend your application. 
+    We will inform you if this results in your application moving to a different band.
+    </p>
+
+    </div>
     </details>
+
     <details class="accordion">
       <summary class="accordion-header">
         <h3>Exceptions</h3>
@@ -5785,14 +5797,14 @@ const rentVariation = new ContentH(
 
   <details class="accordion">
     <summary class="accordion-header">
-        <h3>Pre-paid Weeks</h3>
+        <h3>Rent Free Weeks</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-        <p>The pre-paid weeks this year will be weeks commencing:</p>
+        <p>The rent-free weeks this year will be weeks commencing:</p>
         <ul>
-            <li>Monday 21st December 2026</li>
-            <li>Monday 28th December 2026</li>
+            <li>Monday 15th December 2025</li>
+            <li>Monday 22nd December 2025</li>
         </ul>
     </div>
   </details>
@@ -5805,7 +5817,7 @@ const rentVariation = new ContentH(
     <div class="accordion-content">
         <p>
             The annual changes to the rent charged are agreed by the Council Cabinet every January. 
-            The general rent increase agreed from 6th April 2026 is <strong>4.8%</strong>.
+            The general rent increase agreed from 1st April 2024 is <strong>7.7%</strong>.
         </p>
         <p>
             You can check an outline of the changes to rents and charges at Sheffield city council website
@@ -5839,14 +5851,37 @@ const rentVariation = new ContentH(
 
 <details class="accordion">
     <summary class="accordion-header">
-        <h3>NEC System Issues</h3>
+        <h3>OHMS System Issues</h3>
         <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
         <p>
-            Any NEC Rent system issues can be reported through the IT Service Desk, Tel: <a href="tel:0114 2734476">0114 2734476</a>
-            or by visiting <a href="https://sheffieldcc.uk.4me.com/self-service" target="_blank">https://sheffieldcc.uk.4me.com/self-service </a> 
-        </p> 
+            Any OHMS Rent system issues can be reported through the IT Service Desk, Tel: <a href="tel:0114 2734476">0114 2734476</a>.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Weekly Rent Year</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            The year 2024-2025 is a 53-week rent year, which means there are 53 Mondays in the financial year. 
+            Taking into account the rent-free weeks, rent will be charged over 51 weeks.
+        </p>
+        <p>
+            When calculating monthly arrangements, these will need to be calculated over 51 weeks instead of the normal 50 weeks. 
+            The rent calculator can be used to assist in calculating arrangements:
+        </p>
+        <p><strong>File Path:</strong> G:/HSG/Public/Rents/001. public sharepoint digital ringbinder/1. Comms/51 week rent calculator.xlsx</p>
+        <h3>Rent Calculator</h3>
+        <p>
+            Anybody applying to pay by Direct Debit should be dealt with as normal, in the same way, during this rent change period. 
+            Any queries on Direct Debits need to be directed to the Income Management and Financial Inclusion Team.
+        </p>
+        <p>This is relevant to this year but can change year to year.</p>
     </div>
 </details>
 
@@ -5857,22 +5892,22 @@ const rentVariation = new ContentH(
     </summary>
     <div class="accordion-content">
         <ul>
-            <li>Social Council rents – 4.8% increase</li>
-            <li>Affordable Rents – 4.8% increase</li>
-            <li>Interim/High Support/Temporary Accommodation Rents – 4.8% increase</li> 
-            <li>Garage Rents – 4.8% increase</li>
-            <li>District/Community Heating – £5.50 per week</li>
-            <li>Sheltered Accommodation service charge – 3.8% increase</li>
-            <li>Furnished charges – 3.8% increase</li>
-            <li>Burglar alarm charges – 3.8% increase</li>
-            <li>Insurance charges – No increase.</li>
-            <li>South Yorkshire Housing leased managed properties – 4.8% increase</li>
-            <li>Shared Ownership Properties – 4.8% increase</li>
-            <li>Gypsy & Traveller charges – No increase</li>
-            <li>Direct deductions from the DWP for rent arrears will be £4.80 per week from 6th April 2026</li>
+            <li>Social Council rents – 7.7% increase</li>
+            <li>Affordable Rents – 7.7% increase</li>
+            <li>Interim/High Support/Temporary Accommodation Rents – 7.7% increase</li> 
+            <li>Garage Rents – 7.7% increase</li>
+            <li>District/Community Heating – No increase</li>
+            <li>Sheltered Accommodation service charge – 6.7% increase</li>
+            <li>Furnished charges – 6.7% increase</li>
+            <li>Burglar alarm charges – 6.7% increase</li>
+            <li>Insurance charges – 10% increase. Household contents insurance charges will be fixed for two years until April 2026</li>
+            <li>South Yorkshire Housing leased managed properties – 7.7% increase</li>
+            <li>Shared Ownership Properties – 7.7% increase</li>
+            <li>Gypsy & Traveller charges – to be confirmed</li>
+            <li>Direct deductions from the DWP for rent arrears will be £4.55 per week from 1st April 2024</li>
         </ul>
         <p>
-            <strong>This is relevant from April 2026 to April 2027 when it will be updated with new rent increase charges</strong>.
+            <strong>This is relevant from April 2024 to April 2025 when it will be updated with new rent increase charges</strong>.
         </p>
     </div>
 </details>
@@ -5884,8 +5919,27 @@ const rentVariation = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            Garage letters will be sent from 16th March 2026, so tenants will only receive one garage letter. 
+            Garage letters will be sent from 18th March 2024, so tenants will only receive one garage letter. 
             This is because we don't have to give legal notice of the rent change for garages.
+        </p>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Rent Charged After Property is Vacant</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            Please note that the rent for any properties let after being vacant will be set at the maximum 
+            rent, as agreed by the Co-op Executive. This will be applied automatically, so the rent showing in 
+            the Choice Based Letting advert will be correct. This may mean, in some instances but not all, that
+            the new tenant may pay a higher rent than the previous tenant.
+        </p>
+        <p>
+            <strong>From Notes Section on Spreadsheet:</strong> Needs changing; the wording is a bit odd! 
+            Not sure where this has come from!
         </p>
     </div>
 </details>
@@ -5929,11 +5983,11 @@ const rentVariation = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            The Housing Benefits Year end on Academy will start week commencing 2nd March 2026, so Academy
-            is possibly unavailable from Wednesday 4th March 2026 to Monday 09th March 2026.
+            The Housing Benefits Year end on Academy will start week commencing 4th March 2024, so Academy
+            is possibly unavailable from Wednesday 6th March 2024 to Monday 11th March 2024.
         </p>
         <p>
-            The Housing Benefit letters will be posted out from 09th March 2026.
+            The Housing Benefit letters will be posted out from 11th March 2024.
         </p>
         <p>
             Apart from these dates, Academy will be available to view as normal. If this changes, an update 
@@ -5944,13 +5998,13 @@ const rentVariation = new ContentH(
             or creation of a new case will continue as normal throughout March.
         </p>
         <p>
-            <strong><i>The Housing Benefit Overpayment recovery rate (Clawback) amount is increasing. From 6th April 2026, 
-            it will be £14.40 a week for normal cases up to a maximum of £24 per week, plus 50% of any disregard 
-            included in the calculation for earnings. The minimum clawback rate is £4.80 per week.</stong></i>
+            The Housing Benefit Overpayment recovery rate (Clawback) amount is increasing. From 1st April 2024, 
+            it will be £13.65 a week for normal cases up to a maximum of £22.75 per week, plus 50% of any disregard 
+            included in the calculation for earnings. The minimum clawback rate is £4.55 per week.
         </p>
         <p>
             All changes to weekly housing benefit for the new rent levels will be applied to the Rents system 
-            from 6th April 2026.
+            from 1st April 2024.
         </p>
     </div>
 </details>
@@ -5962,11 +6016,11 @@ const rentVariation = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            The Notice of Variation (NOV) letter will be posted from 12th February 2026, arriving with 
+            The Notice of Variation (NOV) letter will be posted from 15th February 2024, arriving with 
             tenants in the seven days after this.
         </p>
         <p>
-            These letters are based on information produced on <strong>12th February 2026</strong>, so any tenancy changes 
+            These letters are based on information produced on 8th February 2024, so any tenancy changes 
             after that won’t be included. This means any successions, assignments, changes of names, etc. 
             will be correct on the system, but the letters will be sent with the original details on them.
         </p>
@@ -5974,16 +6028,21 @@ const rentVariation = new ContentH(
             The NOV letter includes the detailed rent change letter and a letter from the Housing Cabinet Member.
         </p>
         <p>
-            The second letter will be posted to tenants from <strong>16th March 2026</strong>.
+            The second letter will be posted to tenants from 18th March 2024.
         </p>
         <p>
-            The second letter includes the Gross amount letter and inserts. This second letter <strong>WILL</strong> show 
-            all the charges on the account and WILL include the housing benefit, so it shows the <strong>net amount payable</strong>.
+            The second letter includes the Gross amount letter and inserts. This second letter will show 
+            all the charges on the account and WILL include the housing benefit, so it shows the net amount payable.
+        </p>
+        <p>
+            The benefit details included are as of 11th March 2024, so any changes in entitlement after that 
+            date won’t be shown on these rent change letters. Tenants will be notified separately by Sheffield 
+            Benefits Service for any changes after 11th March 2024.
         </p>
         <p>
             Anybody on Housing Benefit will also receive a letter directly from Sheffield Benefits Service 
             telling them what their Housing Benefit is and how it has been worked out. These letters from the
-            Benefits Service will be posted to tenants from 9th March 2026. Any queries need to be made directly
+            Benefits Service will be posted to tenants from 11th March 2024. Any queries need to be made directly
             to the Sheffield Benefits service.
         </p>
         <p>
@@ -6025,7 +6084,7 @@ const rentVariation = new ContentH(
   { typeKey: "" },
   { typeKey: "rents_information_provided" },
   { type: "Rent Varitaion", keywords: ["Rent"], categories: ["Housing"] },
-  { date: "26/03/2026", name: "Shahzad Athar" }
+  { date: "16/10/2024", name: "Shahzad Athar" }
 );
 
 const statements = new ContentH(
