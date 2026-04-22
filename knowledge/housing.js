@@ -3465,7 +3465,7 @@ const applicationChanges = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "28/10/2025", name: "Motolani Akinola" }
+  { date: "22/04/2026", name: "Shaz Athar" }
 );
 
 const applyForRehousing = new ContentH(
