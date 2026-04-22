@@ -3336,7 +3336,6 @@ const applicationChanges = new ContentH(
     It is very important that you notify us of any changes in your circumstances so that we can amend your application. 
     We will inform you if this results in your application moving to a different band.
     </p>
-
     </div>
     </details>
 
