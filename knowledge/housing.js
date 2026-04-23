@@ -3303,29 +3303,45 @@ const applicationChanges = new ContentH(
         <div class="accordion-icon"></div>
       </summary>
       <div class="accordion-content">
-        <h3>
-      Login
-    </h3>
-    <p>
+  <p>
+    Change of circumstances are now online on <strong>My Housing</strong> website and will need to log in to make changes.
+  </p>
+
+  <p>
       Click <a href="https://housing.sheffield.gov.uk/" target="_blank">here</a> to access Housing Online.
     </p>
-    <p>
-      Use the following login details to access the system:
-    </p>
-    <p>
-      Email Address: <strong>propertyshop@sheffield.gov.uk</strong><br>
-      Password: <strong>StatusPoppyGlove1*</strong>
-    </p>
-          Advisor note: You have logged in using dummy login details. Please do not
-          amend anything on screen. Log in if required using the login details above
-          and follow the instructions:
-        </p>
-        <p>Select "My Social Housing" on the left-hand side.</p>
-        <p>
-          Click "Update your details" and navigate through the form using the "Next
-          section" buttons.
-        </p>
-        <p>Please do not submit the application.</p>
+
+  <p>
+    Once logged in to make changes, the customer will need to click on the <strong>“update my housing application”</strong> tile. 
+    On the next page, the customer will need to click the small action tile on the right-hand side of the screen.
+  </p>
+
+  <p>
+    They will then be able to view application addresses or view application people. Customers can then 
+    <strong>“add new address or add new person”</strong> or make edits to existing addresses or household members on their application. 
+    Once you have made your changes, click on the <strong>“back to application summary”</strong> tile.
+  </p>
+
+  <p>
+    You will then need to click on the action tile and scroll down to <strong>“upload documents and files”</strong>.
+  </p>
+
+  <p>
+    Please click the <strong>“list of acceptable ID”</strong> link to ensure your document is suitable, 
+    and then upload your documents separately so we can process your changes.
+  </p>
+
+  <p>
+    If a customer changes their name, adds a household member, or changes their address, they must provide ID 
+    at the time of the change by uploading it onto <strong>My Housing Sheffield</strong>. Their application 
+    will then go under entry <strong>“UE”</strong> in the list entries section of the system.
+  </p>
+
+  <p>
+    It is very important that you notify us of any changes in your circumstances so that we can amend your application. 
+    We will inform you if this results in your application moving to a different band.
+  </p>
+
       </div>
     </details>
     <details class="accordion">
@@ -3454,7 +3470,7 @@ const applicationChanges = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "28/10/2025", name: "Motolani Akinola" }
+  { date: "23/04/2026", name: "Shaz Athar" }
 );
 
 const applyForRehousing = new ContentH(
