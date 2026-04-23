@@ -3402,7 +3402,6 @@ const applicationChanges = new ContentH(
         Fill in the required fields with your updated information and then click <em>Submit Contact</em>.
       </li>
 
-      
     </ol>
 
         <p>
