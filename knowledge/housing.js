@@ -11020,7 +11020,7 @@ const tenancyEnforcementASB = new ContentH(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20anti%20social%20behaviour%council%tenant\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20anti%20social%20behaviour%20council%20tenant\`
     "
   >
     Send link to review further information
