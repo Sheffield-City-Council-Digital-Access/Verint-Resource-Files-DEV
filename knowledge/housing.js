@@ -11162,7 +11162,7 @@ const tenancyEnforcementASB = new ContentH(
   { typeKey: "" },
   { typeKey: "tenancy_enforcement_information_provided" },
   { type: "Request", keywords: [], categories: ["Housing"] },
-  { date: "12/09/2025", name: "Motolani Akinola" }
+  { date: "30/04/2026", name: "Liz Taster" }
 );
 //#endregion Tenancy enforcement
 
