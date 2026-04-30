@@ -11009,8 +11009,28 @@ const tenancyEnforcementASB = new ContentH(
 
     <h3>Reporting anti-social behaviour</h3>
     <p>
-      If the ASB involves a Council tenant, use the form at the bottom of this page to raise a report to the appropriate team. 
-      Use this link if it is not a council tenant. This is the link to report ASB to the Council's ASB team - <a href="https://www.sheffield.gov.uk/pollution-nuisance/anti-social-behaviour "target="_blank">https://www.sheffield.gov.uk/pollution-nuisance/anti-social-behaviour</a>. 
+      <strong>If the person reporting is a council tenant or leaseholder, or their complaint is about a tenant or leaseholder</strong> 
+      use the form at the bottom of this page to raise a report to the appropriate team. You can also send them additional information using the link.
+    </p>
+
+      <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20anti%20social%20behaviour%council%tenant\`
+    "
+  >
+    Send link to review further information
+  </button>
+      
+    <p>
+      <strong> If the person reporting is not a council tenant or leaseholder</strong>, use the below link. 
+      This is the link to report ASB to the Council's ASB team - <a href="https://www.sheffield.gov.uk/pollution-nuisance/anti-social-behaviour "target="_blank">https://www.sheffield.gov.uk/pollution-nuisance/anti-social-behaviour</a>. 
+      The customer can contact the Anti Social Behaviour Team using the 'ask us a question' link at the bottom of the page.
+    <br>
       If the report involves a crime, advise the customer to contact 101.
     </p>
 
