@@ -11130,7 +11130,10 @@ const tenancyEnforcementASB = new ContentH(
             <li> harassment</li>
             <li> online abuse</li>
           </ul>
-    <br>
+        <p>
+          If you are a Council tenant and would like to discuss prevention equipment or having a home safety check, 
+          this can be arranged by contacting your Neighbourhood Officer.
+        </p>
     <h4>How to report Hate Crime</h4>
       <p>
         Anyone experiencing Hate Crime should report this to South Yorkshire Police, this can be done via 101 or via 
