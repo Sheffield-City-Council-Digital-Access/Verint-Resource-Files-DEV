@@ -11047,58 +11047,115 @@ const tenancyEnforcementASB = new ContentH(
     Send link to review further information
   </button>
     
-    <h3>Police responsibility</h3>
-    <p>South Yorkshire Police are responsible for dealing with any behaviour or activity which results in a criminal offence being committed.</p>
-    <p>Where the perpetrator is an SCC tenant the Tenancy Enforcement and Sustainment Team (TEST) will work closely with SYP to ensure that any appropriate enforcement action is taken by the council.</p>
-    <p>We feel, it is not appropriate to list specific incidents that Police deal with as this may result in the issue just being reported to police and not being routed to appropriate SCC teams who may also need to look at enforcement action.</p>
-    <h3>Council Responsibility</h3>
-    <p>We are responsible for incidents involving:</p>
-    <ul>
-      <li> abandoned vehicles</li>
-      <li> dead animals</li>
-      <li> dog fouling</li>
-      <li> fly posting</li>
-      <li> dumped, fly-tipped waste</li>
-      <li> inoffensive graffiti</li>
-      <li> non-hate crime graffiti</li>
-      <li> littering</li>
-      <li> lost, stray or barking dogs</li>
-      <li> noise nuisance or DIY related noise (We cannot log anonymous complaints about noise as we rely on evidence from the complainant, and observations at the complainant’s home, to evaluate whether the noise is a statutory nuisance).</li>
-      <li> syringes or needles</li>
-      <li> dumped, fly-tipped waste (nobody present)</li>
-    </ul>
-    <p>Please note that although all of the above are issues that the council will deal with, only noise nuisance and possibly barking dogs are generally dealt with by TEST (where it is a SCC tenant). A number of other teams are involved in managing these issues including Environmental services and Estates teams etc..</p>
-    <h3>Hate Crime</h3>
-    <h4>What is hate crime?</h4>
-    <p>Hate Crime is any criminal offence committed against a person or property that is motivated by an offender’s hatred of someone because of their Disability, Race, Religion or Beliefs, Sexual Orientation or Transgender.</p>
-    <p>Crimes committed against someone because of their disability, transgender-identity, race, religion or belief, or sexual orientation are hate crimes and should be reported to the police.</p>
-    <p>Hate crimes can include:</p>
-    <ul>
-      <li> threatening behaviour</li>
-      <li> assault</li>
-      <li> robbery</li>
-      <li> damage to property</li>
-      <li> inciting others to commit hate crimes</li>
-      <li> harassment</li>
-      <li> online abuse</li>
-    </ul>
+   <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Police responsibility</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        South Yorkshire Police are responsible for dealing with any behaviour or activity which results in a criminal 
+        offence being committed.
+      </p>
+      <p>
+        Where the perpetrator is an SCC tenant the Tenancy Enforcement and Sustainment Team (TEST) will work closely 
+        with SYP to ensure that any appropriate enforcement action is taken by the council.
+      </p>
+      <p>
+        We feel, it is not appropriate to list specific incidents that Police deal with as this may result in the 
+        issue just being reported to police and not being routed to appropriate SCC teams who may also need to look 
+        at enforcement action.
+      </p>    
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Council Responsibility</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        We are responsible for incidents involving:
+      </p>
+        <ul>
+          <li> abandoned vehicles</li>
+          <li> dead animals</li>
+          <li> dog fouling</li>
+          <li> fly posting</li>
+          <li> dumped, fly-tipped waste</li>
+          <li> inoffensive graffiti</li>
+          <li> non-hate crime graffiti</li>
+          <li> littering</li>
+          <li> lost, stray or barking dogs</li>
+          <li> noise nuisance or DIY related noise (We cannot log anonymous complaints about noise as we rely on 
+               evidence from the complainant, and observations at the complainant’s home, to evaluate whether the noise 
+               is a statutory nuisance).</li>
+          <li> syringes or needles</li>
+          <li> dumped, fly-tipped waste (nobody present)</li>
+        </ul>
+    <p>
+      Please note that although all of the above are issues that the council will deal with, only noise nuisance and 
+      possibly barking dogs are generally dealt with by TEST (where it is a SCC tenant). A number of other teams are 
+      involved in managing these issues including Environmental services and Estates teams, etc.
+    </p>    
+    </div>
+  </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Hate Crime</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <h4>What is hate crime?</h4>
+        <p>
+          Hate Crime is any criminal offence committed against a person or property that is motivated by an 
+          offender’s hatred of someone because of their Disability, Race, Religion or Beliefs, Sexual Orientation 
+          or Transgender.
+        </p>
+        <p>
+          Crimes committed against someone because of their disability, transgender-identity, race, religion or belief, 
+          or sexual orientation are hate crimes and should be reported to the police.
+        </p>
+        <p>
+          Hate crimes can include:
+        </p>
+          <ul>
+            <li> threatening behaviour</li>
+            <li> assault</li>
+            <li> robbery</li>
+            <li> damage to property</li>
+            <li> inciting others to commit hate crimes</li>
+            <li> harassment</li>
+            <li> online abuse</li>
+          </ul>
     <br>
     <h4>How to report Hate Crime</h4>
-    <p>Anyone experiencing Hate Crime should report this to South Yorkshire Police, this can be done via 101 or via 999 if a crime is in progress or someone is in immediate danger. Hate Crime should also be reported to SCC, the Neighbourhood Team/ TEST who will work closely with Police and establish if any enforcement action against perpetrators is appropriate.</p>
-    <ul>
-      <li> robbery</li>
-      <li> damage to property</li>
-      <li> inciting others to commit hate crimes</li>
-      <li> harassment</li>
-      <li> online abuse</li>
-    </ul>
-    <h3>Sanctuary Scheme/Target hardening</h3>
-    <p>Service Area: Action Domestic Abuse (Sanctuary Scheme)</p>
-    <p>Telephone Number: Helpline No: <a href="tel:0808 8082241">0808 8082241</a>; Office No. <a href="tel:0114 2706999">0114 2706999</a></p>
-    <p>Email Address: <a href="mailto:sanctuary.scheme@actionorg.uk">sanctuary.scheme@actionorg.uk</a></p>
-    <p>South Yorkshire Fire and Rescue Service can fit blank letter boxes if there are concerns regarding harmful items being posted through the door. The Neighbourhood Officer can make a referral to SYF&amp;R for a Home Safety check.</p>
-    <p>Neighbourhood Teams may have stock of target hardening equipment.</p>
-    <p>Victim Support may support with target hardening.</p>
+      <p>
+        Anyone experiencing Hate Crime should report this to South Yorkshire Police, this can be done via 101 or via 
+        999 if a crime is in progress or someone is in immediate danger. Hate Crime should also be reported to SCC, the 
+        Neighbourhood Team/ TEST who will work closely with Police and establish if any enforcement action against 
+        perpetrators is appropriate.
+      </p>
+    </div>
+  </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Sanctuary Scheme/Target hardening</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Service Area: Action Domestic Abuse (Sanctuary Scheme)</p>
+      <p>Telephone Number: Helpline No: <a href="tel:0808 8082241">0808 8082241</a>; Office No. <a href="tel:0114 2706999">0114 2706999</a></p>
+      <p>Email Address: <a href="mailto:sanctuary.scheme@actionorg.uk">sanctuary.scheme@actionorg.uk</a></p>
+      <p>South Yorkshire Fire and Rescue Service can fit blank letter boxes if there are concerns regarding harmful items 
+        being posted through the door. The Neighbourhood Officer can make a referral to SYF&amp;R for a Home Safety check.</p>
+      <p>Neighbourhood Teams may have stock of target hardening equipment.</p>
+      <p>Victim Support may support with target hardening.</p>
+    </div>
+  </details>
   `,
 
   { buttonLabel: "Raise report", formName: "hou_enforcement_asb" },
