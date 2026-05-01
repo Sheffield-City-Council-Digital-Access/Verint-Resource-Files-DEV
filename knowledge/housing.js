@@ -2648,13 +2648,17 @@ const contactHousingBenefits = new ContentH(
   "Contact housing benefits",
   "Find contact details and guidance for housing benefits and council tax enquiries, including phone numbers, email addresses, and online form links",
   `
-    <p>Transfer the customer to the benefits team on the number below. If the line is busy, 
-    <strong>do not</strong> ask the customer to call back later today; instead, advise the customer to email either:</p>
+    <p>
+      Transfer the customer to the benefits team on the number below. If the line is busy, 
+      <strong>do not</strong> ask the customer to call back later today; instead, advise the customer to email:
+    </p>
     <ul>
-        <li><a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></li>
         <li><a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></li>
     </ul>
-    <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax" target="_blank">https://www.sheffield.gov.uk/council-tax</a> <br> 
+    <p>
+      Or they can find further information at: <a href="https://www.sheffield.gov.uk/benefits/housing-benefit" target="_blank">https://www.sheffield.gov.uk/benefits/housing-benefit</a> 
+      <br>
+      This page includes details about eligibility and how to apply, a tool to check eligibility and entitlement, and a link to start or continue a housing benefit application. 
     </p>
 
 <button
@@ -2664,7 +2668,7 @@ const contactHousingBenefits = new ContentH(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Council%20Tax\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20Housing%20Benefit\`
     "
 >
     Send link to review further information
@@ -2677,12 +2681,11 @@ const contactHousingBenefits = new ContentH(
 
     <h4>Contact council tax</h4>
     <p>Transfer the customer to the council tax team on the number below. If the line is busy, <strong>do not</strong> 
-    ask the customer to call back later today; instead, advise the customer to email either:</p>
+    ask the customer to call back later today; instead, advise the customer to email:</p>
     <ul>
         <li><a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></li>
-        <li><a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></li>
     </ul>
-    <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html" target="_blank">https://www.sheffield.gov.uk/council-tax</a><br> 
+    <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax" target="_blank">https://www.sheffield.gov.uk/council-tax</a><br> 
     
 <button
     type="button"
@@ -2730,7 +2733,7 @@ const contactHousingBenefits = new ContentH(
     ],
     categories: ["Housing", "Benefits"],
   },
-  { date: "07/05/2025", name: "Dinah Williams" }
+  { date: "01/05/2026", name: "Liz Taster" }
 );
 
 const localAssistanceScheme = new ContentH(
@@ -11134,13 +11137,13 @@ const tenancyEnforcementASB = new ContentH(
           If you are a Council tenant and would like to discuss prevention equipment or having a home safety check, 
           this can be arranged by contacting your Neighbourhood Officer.
         </p>
-    <h4>How to report Hate Crime</h4>
-      <p>
-        Anyone experiencing Hate Crime should report this to South Yorkshire Police, this can be done via 101 or via 
-        999 if a crime is in progress or someone is in immediate danger. Hate Crime should also be reported to SCC, the 
-        Neighbourhood Team/ TEST who will work closely with Police and establish if any enforcement action against 
-        perpetrators is appropriate.
-      </p>
+      <h4>How to report Hate Crime</h4>
+        <p>
+          Anyone experiencing Hate Crime should report this to South Yorkshire Police, this can be done via 101 or via 
+          999 if a crime is in progress or someone is in immediate danger. Hate Crime should also be reported to SCC, the 
+          Neighbourhood Team/ TEST who will work closely with Police and establish if any enforcement action against 
+          perpetrators is appropriate.
+        </p>
     </div>
   </details>
 
