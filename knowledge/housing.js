@@ -1436,6 +1436,49 @@ const newAndExistingRepairs = new ContentH(
   "New and Existing Repairs",
   "Information for leaseholders on repair responsibilities within their flats and shared areas, including service charge details for communal repairs.",
   `
+  
+  <p>
+    If the customer is a <strong>current tenant or leaseholder</strong> provide information on how to log a repairs via the website 
+    <a href="https://www.sheffield.gov.uk/council-housing/repairing-improving-council-houses/request-repair-council-property"target="_blank">https://www.sheffield.gov.uk/council-housing/repairing-improving-council-houses/request-repair-council-property</a>
+  </p>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Request%20a%20repair%20to%20a%20council%20property\`
+    "
+>
+    Send link to review further information
+</button>
+
+  <p>
+    If the customer is <strong>not an SCC tenant</strong>, advise them to speak to their own landlord. 
+    <br>
+    If the customer is struggling to get their landlord to take action, provide information about what the council can do in this scenario via the website 
+    <a href="https://www.sheffield.gov.uk/housing/repairs-to-rented-homes"target="_blank">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a>
+  </p> 
+
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20disrepair%20in%20private%20rented%20properties\`
+    "
+>
+    Send link to review further information
+</button>
+
+  <p>
+    If the repair is an <strong>emergency</strong> please also view the information in the <strong>Emergency Repairs</strong> area.
+  </p>
+  
   <h3>Leaseholder Repairs</h3> 
   <p>
     You are responsible for repairs within your own flat or home, and should make your own arrangements for these.
