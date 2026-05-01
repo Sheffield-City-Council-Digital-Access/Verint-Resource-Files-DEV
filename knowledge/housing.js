@@ -9253,35 +9253,66 @@ const rightToBuy = new ContentH(
   "Right To Buy",
   "Tenant purchase scheme for homes",
   `
-  <p>If an address is shown as Right to Buy, we can only put repairs on to make the property "wind and 
-  watertight". For example, doors, windows, and roof repairs that are related to Health and Safety, also 
-  any internal leaks to a flat below.</p>
+    <p>
+      If an address is shown as Right to Buy, we can only put repairs on to make the property "wind and 
+      watertight". For example, doors, windows, and roof repairs that are related to Health and Safety, also 
+      any internal leaks to a flat below.
+    </p>
 
   <h3>Customer claims they are not in the RTB process.</h3>
 
-    <p>Sometimes a customer may say that their Right to Buy application has been denied and that they are no
-    longer in the RTB process. Technically, the application may indeed have been denied but the tenant has 
-    the right to appeal the denial. For this reason, we do not close the application or remove the RTB status 
-    code until after the expiration date of the possible appeal. This is 8 weeks from the date we denied the 
-    application.</p>
-    <p>If the tenant contacts us prior to the expiration date to state, they are not going to appeal we will 
-    close the application and change the repairs status back to tenanted. Any queries about this, please 
-    contact the contact the Home Ownership Team on </p>
-
-    <a href="${window.location.protocol}//${
-    window.location.hostname
-  }/form/launch/refer_to_service?${
-    KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : ""
-  }interactionid=${
-    KDF.getParams().interactionid
-  }&txt_emailservice=rdh@sheffield.gov.uk">rdh@sheffield.gov.uk</a>
+    <p>
+       Sometimes a customer may say that their Right to Buy application has been denied and that they are no
+       longer in the RTB process. Technically, the application may indeed have been denied but the tenant has 
+       the right to appeal the denial. For this reason, we do not close the application or remove the RTB status 
+       code until after the expiration date of the possible appeal. This is 8 weeks from the date we denied the 
+       application.
+    </p>
+    <p>
+       If the tenant contacts us prior to the expiration date to state, they are not going to appeal we will 
+       close the application and change the repairs status back to tenanted. Any queries about this, please 
+       contact the contact the Home Ownership Team on 
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/refer_to_service?${
+          KDF.getParams().customerid
+            ? `customerid=${KDF.getParams().customerid}&`
+            : ""
+        }interactionid=${
+          KDF.getParams().interactionid
+        }&txt_emailservice=rdh@sheffield.gov.uk">rdh@sheffield.gov.uk</a>
+    </p>
 
   <h3>Right to Buy inspection requests</h3>
 
-    <p>For Right to Buy inspections, please contact the Home Ownership team on <a href="mailto:rdh@sheffield.gov.uk"></a></p>
-    <p>Any tenant that is in a Right to Buy stage is not eligible for the Handyperson service.</p>
+    <p>For Right to Buy inspections, please contact the Home Ownership team on 
+      <a href="${window.location.protocol}//${
+        window.location.hostname
+        }/form/launch/refer_to_service?${
+        KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+      }interactionid=${
+        KDF.getParams().interactionid
+      }&txt_emailservice=rdh@sheffield.gov.uk">rdh@sheffield.gov.uk</a>
+    </p>
+    
+    <p>
+      Any tenant that is in a Right to Buy stage is not eligible for the Handyperson service.
+    </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Right%20to%20Buy\`
+    "
+>
+    Send link to review further information
+</button>
 
   `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
@@ -9313,7 +9344,7 @@ const rightToBuy = new ContentH(
     ],
     categories: ["Repairs"],
   },
-  { date: "28/04/2025", name: "Shahzad Athar" }
+  { date: "01/05/2026", name: "Liz Taster" }
 );
 
 const rightToRepair = new ContentH(
