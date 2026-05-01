@@ -1438,7 +1438,7 @@ const newAndExistingRepairs = new ContentH(
   `
   
   <p>
-    If the customer is a <strong>current tenant or leaseholder</strong> provide information on how to log a repairs via the website 
+    If the customer is a <strong>current tenant or leaseholder</strong> provide information on how to log repairs via the website 
     <a href="https://www.sheffield.gov.uk/council-housing/repairing-improving-council-houses/request-repair-council-property"target="_blank">https://www.sheffield.gov.uk/council-housing/repairing-improving-council-houses/request-repair-council-property</a>
   </p>
 
@@ -1455,6 +1455,7 @@ const newAndExistingRepairs = new ContentH(
     Send link to review further information
 </button>
 
+  <br>
   <p>
     If the customer is <strong>not an SCC tenant</strong>, advise them to speak to their own landlord. 
     <br>
@@ -1475,6 +1476,7 @@ const newAndExistingRepairs = new ContentH(
     Send link to review further information
 </button>
 
+  <br>
   <p>
     If the repair is an <strong>emergency</strong> please also view the information in the <strong>Emergency Repairs</strong> area.
   </p>
