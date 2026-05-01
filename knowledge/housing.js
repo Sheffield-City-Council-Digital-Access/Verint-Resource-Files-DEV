@@ -1478,7 +1478,7 @@ const newAndExistingRepairs = new ContentH(
 
   <br>
   <p>
-    If the repair is an <strong>emergency</strong> please also view the information in the <strong>Emergency Repairs</strong> area.
+    If the repair is an <strong>emergency</strong> please also view the information in the <strong>Emergency Repairs</strong> section.
   </p>
   
   <h3>Leaseholder Repairs</h3> 
@@ -1516,7 +1516,7 @@ const newAndExistingRepairs = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "27/02/2025", name: "Nathan Smith" }
+  { date: "01/05/2026", name: "Liz Taster" }
 );
 
 const payment = new ContentH(
@@ -2749,6 +2749,11 @@ const contactHousingBenefits = new ContentH(
     <p><strong>Telephone number:</strong> <a href="tel:0114 2736633">0114 2736633</a> (public number)</p>
     <p><strong>Further information:</strong> Lines open 8:30-5:30</p>
     <p><strong>Email address:</strong> <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></p>
+
+    <br>
+    <p>
+      Please also view the information in the <strong>Money support</strong> section.
+    </p>
   `,
 
   { buttonLabel: "Contact benefits", formName: "" },
@@ -3075,7 +3080,7 @@ const allocationsPolicy = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            Advisor Note - Check Housing Registration Application on Abritas – this will show the applicant’s band.
+            Advisor Note - Check Housing Registration Application on My Housing – this will show the applicant’s band.
         </p>
     </div>
 </details>
@@ -3090,6 +3095,29 @@ const allocationsPolicy = new ContentH(
             The bands take into account your individual circumstances, and you have been placed in the band which is seen as the most appropriate 
             for your needs, based on the information you have provided.
         </p>
+        <p>
+            <strong>If you do not agree</strong> with your banding or circumstances have changed we can review your application or we re-assess your housing need.
+        </p>
+        <p>
+            Current council tenants need to contact their Neighbourhood Officer for assessment. Either at their local housing office or on the freephone in Howden House.
+        </p>
+        <p>
+            <strong>If your banding has been reduced</strong> due to arrears, application can be reviewed by Registration Team and customer will be advised to 
+            contact Income Management if arrears are impacting banding. 
+        </p>
+
+        [INSERT LINK]
+
+        <p>
+            <strong>If your banding has been reduced</strong> due to 3 or more refusals in 12 months an officer would need to check if this is still the case or if it has expired. 
+        </p>
+        <p>
+            <strong>If your banding has been reduced</strong> due to no local connection, proof of this can be uploaded to the My Housing account and will be reviewed. 
+            <br>
+            The following proof is acceptable:
+        </p>
+
+        [INSERT TABLE HERE]
     </div>
 </details>
 
@@ -3165,7 +3193,7 @@ const allocationsPolicy = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "05/12/2024", name: "Joseph Coupland" }
+  { date: "01/05/2026", name: "Liz Taster" }
 );
 
 const applicationChanges = new ContentH(
@@ -4504,9 +4532,7 @@ const idReferences = new ContentH(
         Proof of child benefit receipt is required where children under 16 years of age are 
         being rehoused with you.<br><br>
   
-        All required ID's and References must be brought to your Local Area Housing Office, 
-        or to Howden House First Point, at the same time. <br>
-        <strong> Alternatively, you can upload your documents via the website (including reference if appropriate) </strong><br><br>
+        <strong> You can upload your documents via the website (including reference if appropriate) </strong><br><br>
   
         Failure to submit all required ID and references at the same time, 
         may mean that you will need to restart the application process from the beginning by 
@@ -4556,7 +4582,7 @@ const idReferences = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "08/05/2025", name: "Dinah Williams" }
+  { date: "01/05/2026", name: "Liz Taster" }
 );
 
 const idFaq = new ContentH(
@@ -4573,9 +4599,7 @@ const idFaq = new ContentH(
         ID is required for all Household Members and should be submitted within 28 days of filling-in 
         the Application.<br><br>
   
-        Applicants should present the relevant documents at a Housing Office or First Point where the 
-        Main Applicant's and the Joint Applicant's (if appropriate) documents will be photocopied and 
-        copies sent to the Registration Team. Household Members documents must also be produced and witnessed by an officer.<br><br>
+        Applicants should upload all the required documents for themselves and household members via the My Housing Portal<br><br>
       </p>
       <h4>Customer advising ID/proofs have been posted to us</h4>
       <p> 
@@ -4604,7 +4628,7 @@ const idFaq = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "07/11/2024", name: "George Whitehouse" }
+  { date: "01/05/2026", name: "Liz Taster" }
 );
 
 const movingIn = new ContentH(
@@ -11428,12 +11452,16 @@ const fobsandKeys = new ContentH(
     </div>
   </details>
 
+  <p>
+    Please also view the information in the <strong>Lost Stolen Keys and Lock Repairs</strong> section.
+  </p>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Fobs and Keys", keywords: ["Tenancy"], categories: ["Housing"] },
-  { date: "07/05/2025", name: "Dinah Williams" }
+  { date: "01/05/2026", name: "Liz Taster" }
 );
 
 const garageRequest = new ContentH(
