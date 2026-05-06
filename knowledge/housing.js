@@ -3106,7 +3106,7 @@ const allocationsPolicy = new ContentH(
             contact Income Management if arrears are impacting banding. 
         </p>
 
-        [INSERT LINK]
+        [INSERT INTERNAL KNOWLEDGE LINK to Financial Assistance and Support]
 
         <p>
             <strong>If your banding has been reduced</strong> due to 3 or more refusals in 12 months an officer would need to check if this is still the case or if it has expired. 
@@ -3117,7 +3117,6 @@ const allocationsPolicy = new ContentH(
             The following proof is acceptable:
         </p>
 
-        [INSERT TABLE HERE]
         <table>
           <tr>
             <th>Local Connection Type</th>
@@ -3161,6 +3160,18 @@ const allocationsPolicy = new ContentH(
             <td>Job Offer letter</td>
           </tr>
         </table>
+
+        <p>
+          Local connection banding rule exceptions:
+        </p>
+          <ul>
+            <li><strong>Fleeing Domestic Violence</strong> from outside Sheffield will be classed as having local connection regardless of what their address is;</li>
+            <li><strong>Care leaver customers</strong> customers who are either care leavers for a minimum of one day;</li>
+            <li><strong>People from or were in the regular armed forces</strong> – will be classed as having local connection regardless of what their address is.</li>
+          </ul>
+        <p>
+        <strong>For more info about support for our armed forces visit <a href="https://www.sheffield.gov.uk/your-city-council/armed-forces" target="_blank">Armed Forces Covenant | Sheffield City Council</a> </strong>
+        </p>
     </div>
 </details>
 
