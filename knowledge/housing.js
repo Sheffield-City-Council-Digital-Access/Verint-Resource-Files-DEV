@@ -3118,6 +3118,49 @@ const allocationsPolicy = new ContentH(
         </p>
 
         [INSERT TABLE HERE]
+        <table>
+          <tr>
+            <th>Local Connection Type</th>
+            <th>Evidence Required</th>
+          </tr>
+          <tr>
+            <td>No Local Connection</td>
+            <td>NA</td>
+          </tr>
+          <tr>
+            <td>Family lives in area</td>
+            <td>
+              My Housing check 
+              <br>Phone call to a family member 
+              <br>Signed declaration from family member
+            </td>
+          </tr>
+          <tr>
+            <td>Employed/Study in area</td>
+            <td>
+              Contract of employment (if recently started)
+              <br>Letter from Employer
+              <br>ID card
+              <br>College/University card
+            </td>
+          </tr>
+          <tr>
+            <td>Live in Area</td>
+            <td>Proof of address</td>
+          </tr>
+          <tr>
+            <td>Used to live in Area</td>
+            <td>Ohms/Abritas utility bills from previous address – within 6 months </td>
+          </tr>
+          <tr>
+            <td>To give or receive Care</td>
+            <td>Letter/confirmation from support service and/or GP etc.</td>
+          </tr>
+          <tr>
+            <td>Offered employment in area</td>
+            <td>Job Offer letter</td>
+          </tr>
+        </table>
     </div>
 </details>
 
