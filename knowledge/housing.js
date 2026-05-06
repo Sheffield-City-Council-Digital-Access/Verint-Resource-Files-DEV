@@ -5506,13 +5506,56 @@ const threeOffersDemotedorDisqualified = new ContentH(
     </ul>
     If you are to be Demoted, we will write to you 21 days before you are Demoted. If you do not respond, you will be Demoted to band E on the Housing Register for 12 months. After 12 months you can request to be moved back in to band D.
   </p>
-     <h3>Disqualification following refusal of 3 reasonable offers</h3>
-     <p>
+  
+  <h3>Disqualification following refusal of 3 reasonable offers</h3>
+    <p>
       If a customer who is in band E refuses 3 reasonable offers, they can be disqualified from the Housing Register.<br>
       The customer will be notified in writing and they have 21 days to appeal the decision. <br>
       If we do not hear from the customer within 21 days, their housing application will be cancelled and they will be disqualified from the Housing Register for 12 months. <br>
       After 12 months the customer is able to submit an on-line application for Social Housing to re-join the Housing Register.
-     </p>
+    </p>
+
+  <h3>Eligibility</h3>
+    <p>
+      Sheffield City Council operates an open register and therefore any person over the age of 16 can apply to join the Housing Register. 
+      However, generally you will not be made an offer of a property until you are at least 18 years old.
+    </p>
+
+    <p>
+      The Housing Act 1996 prevents Local Authorities from offering a property to some people because of their immigration status. 
+      We will let you know if this applies to you after you register and request the appropriate documents.   
+    </p>
+
+    <p>
+      There are some people who are not eligible to be included on the Housing Register. These are:  
+    </p>
+      <ul>
+        <li>Certain people who are subject to Immigration Control under the 1996 Asylum and Immigration Act.</li>
+        <li>Certain people from abroad who are not subject to immigration control but who are not habitually resident in the UK, 
+        the Channel Islands, the Isle of Man or the Republic of Ireland.</li>
+      </ul>
+
+  <h3>Disqualified for Unacceptable Behaviour</h3>
+
+
+  <h3>Exception Requests</h3>
+    <p>
+      The Allocations Policy advises various circumstances in which we will reduce the preference given to applicants on the Housing 
+      Register or prevent them from joining the register. These include circumstances such as rent arrears or past/current anti-social behaviour.
+    </p>
+
+    <p>
+      An Exception Request allows us to make decisions on whether it is appropriate to waive these restrictions in exceptional circumstances, such 
+      as awarding a priority or when an applicant wishes to move to more suitable accommodation using their waiting time due to a change in circumstances.
+    </p>
+
+    <p>
+      Applicants must demonstrate exceptional circumstances and prove that they have taken action to rectify issues that led to reduced preference or disqualification.
+    </p>
+
+    <p>
+      Contact Neighbourhood Officer to help fill in the form and submit evidence. 
+    </p>
     `,
   {
     buttonLabel: "",
