@@ -4287,19 +4287,20 @@ const healthAndHousing = new ContentH(
     <ul>
       <li><strong>Anti-social behaviour</strong> – contact your local area housing office</li>
       <li><strong>Disrepairs / Damp</strong> – contact Council Housing Repairs on 0114 273 5555 or online at 
-      <a href="www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">www.sheffield.gov.uk/council-housing/council-housing-repairs</a>.</li>
+      <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a></li>
       <li><strong>Overcrowding in your home</strong> – contact your local area housing office</li>
       <li><strong>Homelessness / Threat of homelessness</strong> – contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
       <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
       <li><strong>Suffering domestic abuse</strong> - contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
       <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
-      <li><strong>Private rented repairs / landlord issues</strong> – please contact 0114 273 4680 or online at www.sheffield.gov.uk/housing/repairs-to-rented-homes </li>
+      <li><strong>Private rented repairs / landlord issues</strong> – please contact 0114 273 4680 or online at 
+      <a href="www.sheffield.gov.uk/housing/repairs-to-rented-homes" target="_blank">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a></li>
     </ul>
 
     <p>
       You will not be awarded medical priority if your current property can be adapted to meet your needs. 
       If you think your property could be adapted, please make a referral to our occupational therapy service for an assessment. 
-      <a href="www.sheffield.gov.uk/social-care/adults/adapting-your-home" target="_blank">www.sheffield.gov.uk/social-care/adults/adapting-your-home</a>. 
+      <a href="https://www.sheffield.gov.uk/social-care/adults/adapting-your-home" target="_blank">https://www.sheffield.gov.uk/social-care/adults/adapting-your-home</a>. 
     </p>
 
     <p>
