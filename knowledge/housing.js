@@ -2945,6 +2945,7 @@ const housingOnline = new ContentH(
         </button>
     
     <p>
+      <br>
       Information on how to apply for a council home can be found here: <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-home/applying-council-home" 
       target="_blank">Applying for a council home | Sheffield City Council</a>
     </p>
@@ -3230,6 +3231,17 @@ const allocationsPolicy = new ContentH(
         <p>
         <strong>For more info about support for our armed forces visit <a href="https://www.sheffield.gov.uk/your-city-council/armed-forces" target="_blank">Armed Forces Covenant | Sheffield City Council</a> </strong>
         </p>
+
+        <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Armed%20Forces%20Covenant\`"
+>
+            Send link to review further information
+    </button>
     </div>
 </details>
 
