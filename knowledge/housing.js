@@ -4287,18 +4287,18 @@ const healthAndHousing = new ContentH(
     <ul>
       <li><strong>Anti-social behaviour</strong> – contact your local area housing office</li>
       <li><strong>Disrepairs / Damp</strong> – contact Council Housing Repairs on 0114 273 5555 or online at 
-      www.sheffield.gov.uk/council-housing/council-housing-repairs. </li>
+      <a href="www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">www.sheffield.gov.uk/council-housing/council-housing-repairs</a>.</li>
       <li><strong>Overcrowding in your home</strong> – contact your local area housing office</li>
       <li><strong>Homelessness / Threat of homelessness</strong> – contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
-      https://www.sheffield.gov.uk/home/your-city-council/contact-us</li>
+      <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
       <li><strong>Suffering domestic abuse</strong> - contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
-      https://www.sheffield.gov.uk/home/your-city-council/contact-us</li>
+      <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
       <li><strong>Private rented repairs / landlord issues</strong> – please contact 0114 273 4680 or online at www.sheffield.gov.uk/housing/repairs-to-rented-homes </li>
     </ul>
 
     <p>
       You will not be awarded medical priority if your current property can be adapted to meet your needs. 
-      If you think your property could be adapted, please make a referral to our occupational therapy service for an assessment. <br>
+      If you think your property could be adapted, please make a referral to our occupational therapy service for an assessment. 
       <a href="www.sheffield.gov.uk/social-care/adults/adapting-your-home" target="_blank">www.sheffield.gov.uk/social-care/adults/adapting-your-home</a>. 
     </p>
 
@@ -4331,7 +4331,7 @@ const healthAndHousing = new ContentH(
 
     <p>
       For more information around anti-social behaviour (ASB) please refer to the knowledge area <strong>Tenenacy Enforcement (ASB)</strong>. 
-      This is the top result if you enter <strong>ASB</strong> in the search above. The page provides general information about ASB, and will also allow you 
+      This is the top result if you enter <strong>ASB</strong> in the Knowledge search above. The page provides general information about ASB, and will also allow you 
       to send a link to the customer to correctly report ASB as either a council or non-council tenant.
     </p>
 
@@ -5517,23 +5517,18 @@ const PropertyOffersAndViewings = new ContentH(
           https://housing.sheffield.gov.uk/
         </a>
       </li>
-
       <li>
         <strong>Log in</strong> with your username and password.
       </li>
-
       <li>
         On the dashboard, click the tile labelled <strong>Search and bid for a property</strong>.
       </li>
-
       <li>
         At the top right of the page, click the <strong>Actions</strong> button.
       </li>
-
       <li>
         From the drop-down menu, select <strong>All Available Properties</strong>.
       </li>
-
       <li>
         A list of properties will appear along with their <strong>bidding periods</strong>.
        </li>
@@ -5551,23 +5546,29 @@ const PropertyOffersAndViewings = new ContentH(
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
             }interactionid=\${KDF.getParams().interactionid}&sel_service=Bidding%20for%20a%20Council%20home\`"
-  
 >
             Send link to review further information
     </button>
 
-      <h3>How does Sheffield City Council allocate the property?</h3>
-       <p>
-        Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short:
-      </p>
-      <ul>
-        <li>Properties advertised to Waiting Time – These properties will be offered to customers in band D first in order of their effective date (oldest first). If no customers in band D accept the property, it will be offered to the other bands in the following order: band A, band B, band C, Band E.</li>
-        <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in band A first in order of their effective date (oldest first). If no customers in band A accept the property, it will be offered to the other bands in the following order: band B, Band C, Band D, Band E.</li>
-        <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
-        <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on Sheffield Housing Online. You can do this by logging in to your account.</li>
-        <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
-        <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
-      </ul>
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>How does Sheffield City Council allocate the property?</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short:
+          </p>
+          <ul>
+            <li>Properties advertised to Waiting Time – These properties will be offered to customers in band D first in order of their effective date (oldest first). If no customers in band D accept the property, it will be offered to the other bands in the following order: band A, band B, band C, Band E.</li>
+            <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in band A first in order of their effective date (oldest first). If no customers in band A accept the property, it will be offered to the other bands in the following order: band B, Band C, Band D, Band E.</li>
+            <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
+            <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on Sheffield Housing Online. You can do this by logging in to your account.</li>
+            <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
+            <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
+          </ul> 
+        </div>
+    </details>
 
     <details class="accordion">
         <summary class="accordion-header">
@@ -5775,6 +5776,24 @@ const demotedOrDisqualified = new ContentH(
   "Demoted or Disqualified",
   "Understand the consequences of refusing three reasonable housing offers, including potential demotion or disqualification from the Housing Register.",
   `
+  <h3>Eligibility</h3>
+    <p>
+      Sheffield City Council operates an open register and therefore any person over the age of 16 can apply to join the Housing Register. 
+      However, generally you will not be made an offer of a property until you are at least 18 years old.
+    </p>
+    <p>
+      The Housing Act 1996 prevents Local Authorities from offering a property to some people because of their immigration status. 
+      We will let you know if this applies to you after you register and request the appropriate documents.   
+    </p>
+    <p>
+      There are some people who are not eligible to be included on the Housing Register. These are:  
+    </p>
+      <ul>
+        <li>Certain people who are subject to Immigration Control under the 1996 Asylum and Immigration Act.</li>
+        <li>Certain people from abroad who are not subject to immigration control but who are not habitually resident in the UK, 
+        the Channel Islands, the Isle of Man or the Republic of Ireland.</li>
+      </ul>
+      
   <h3>Reduced preference (demotion) following refusal of 3 reasonable offers</h3>
   <p> 
     If a customer is in band D and they have refused 3 offers in 12 months, the Sheffield City Council Allocations Policy states:<br>
@@ -5794,26 +5813,6 @@ const demotedOrDisqualified = new ContentH(
       After 12 months the customer is able to submit an on-line application for Social Housing to re-join the Housing Register.
     </p>
 
-  <h3>Eligibility</h3>
-    <p>
-      Sheffield City Council operates an open register and therefore any person over the age of 16 can apply to join the Housing Register. 
-      However, generally you will not be made an offer of a property until you are at least 18 years old.
-    </p>
-
-    <p>
-      The Housing Act 1996 prevents Local Authorities from offering a property to some people because of their immigration status. 
-      We will let you know if this applies to you after you register and request the appropriate documents.   
-    </p>
-
-    <p>
-      There are some people who are not eligible to be included on the Housing Register. These are:  
-    </p>
-      <ul>
-        <li>Certain people who are subject to Immigration Control under the 1996 Asylum and Immigration Act.</li>
-        <li>Certain people from abroad who are not subject to immigration control but who are not habitually resident in the UK, 
-        the Channel Islands, the Isle of Man or the Republic of Ireland.</li>
-      </ul>
-
   <h3>Disqualified for Unacceptable Behaviour</h3>
     <p>
       Applications that are rejected for unacceptable behaviour will receive a letter explaining the 12 month restriction and what action to take. 
@@ -5822,15 +5821,12 @@ const demotedOrDisqualified = new ContentH(
     </p>
 
     <h4>Unacceptable behaviour</h4>
-
     <p>
       Some people may not be allowed to join the housing register because of past behaviour either their own or someone in their household.
     </p>
-
     <p>
       This includes situations where:
     </p>
-
     <ul>
       <li>you’ve had persistent rent arrears and not made efforts to repay them</li>
       <li>you or a joint applicant caused serious damage to a property</li>
@@ -5839,13 +5835,11 @@ const demotedOrDisqualified = new ContentH(
       <li>you previously sublet a council home without permission</li>
       <li>you gave false information in a housing application</li>
     </ul>
-
     <p>
       We also look at behaviour from people in your household if they lived with you at the time the behaviour took place.
     </p>
 
     <h4>If this applies to you</h4>
-
     <p>
       You won’t be able to join the register now, but if your behaviour has changed, you can apply again in the future. 
       We may ask for evidence that things have improved such as references, repayment history or changes in your circumstances. 
@@ -5856,16 +5850,13 @@ const demotedOrDisqualified = new ContentH(
       The Allocations Policy advises various circumstances in which we will reduce the preference given to applicants on the Housing 
       Register or prevent them from joining the register. These include circumstances such as rent arrears or past/current anti-social behaviour.
     </p>
-
     <p>
       An Exception Request allows us to make decisions on whether it is appropriate to waive these restrictions in exceptional circumstances, such 
       as awarding a priority or when an applicant wishes to move to more suitable accommodation using their waiting time due to a change in circumstances.
     </p>
-
     <p>
       Applicants must demonstrate exceptional circumstances and prove that they have taken action to rectify issues that led to reduced preference or disqualification.
     </p>
-
     <p>
       Contact Neighbourhood Officer to help fill in the form and submit evidence. 
     </p>
