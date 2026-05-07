@@ -4206,6 +4206,99 @@ const fosteringAndAdoption = new ContentH(
   { date: "07/22/2024", name: "George Whitehouse" }
 );
 
+const healthAndHousing = new ContentH(
+  "healthAndHousing",
+  "Health and Housing Advice",
+  "Learn about options when health conditions impact the suitability of current housing.",
+  `
+    <h3>Adaptations</h3>
+    
+    <p>
+      If you're disabled or have a long-term health condition, you may need changes to your home to help you live more safely and independently. 
+    </p> 
+
+    <p>
+      Before you consider adapting your home, we recommend checking whether equipment or technology could meet your needs. 
+      These can often be quicker and more affordable solutions. For example:
+    </p>
+
+    <ul>
+      <li>using a commode during the day may help you avoid using the stairs</li>
+      <li>grab rails or a shower seat can help in the bathroom</li>
+    </ul>
+
+    <p>
+      Details of different potential equipment and adaptations can be found at the following link:
+      <a href="https://www.sheffielddirectory.org.uk/equipment-house/" target="_blank">Equipment House | Sheffield</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Equipment%20House\`"
+    >
+            Send link to review further information
+    </button>
+
+    <p>
+      Further information and the online form to request a home adaptation can be found at the following link:
+      <a href="https://www.sheffield.gov.uk/social-care/adults/how-we-can-help/daily-tasks/request-home-adaptation" target="_blank">Request a home adaptation | Sheffield City Council</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Request%20a%20home%20adaptation%20assessment\`"
+    >
+            Send link to review further information
+    </button>
+
+    <h3>Financial help for major adaptations</h3>
+
+    <p>
+    If your assessment recommends a major adaptation such as a stair lift or ramp you may be eligible for a Disabled Facilities Grant. 
+    Information can be found at <a href="https://www.gov.uk/disabled-facilities-grants" target="_blank">https://www.gov.uk/disabled-facilities-grants</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Disabled%20Facilities%20Grants\`"
+    >
+            Send link to review further information
+    </button>
+
+    <h3>Rehousing due to medical or mobility needs</h3>
+
+    <p>
+    </p>
+
+
+    `,
+  {
+    buttonLabel: "Raise Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Request",
+    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
+    categories: ["Housing"],
+  },
+  { date: "07/05/2026", name: "Liz Taster" }
+);
+
+
 const housingAssociations = new ContentH(
   "housingAssociations",
   "Housing Associations",
@@ -5625,9 +5718,9 @@ const referencesFAQs = new ContentH(
   { date: "15/05/2025", name: "Dinah Williams" }
 );
 
-const threeOffersDemotedorDisqualified = new ContentH(
-  "threeOffersDemotedorDisqualified",
-  "Three Offers Demoted or Disqualified",
+const demotedOrDisqualified = new ContentH(
+  "demotedOrDisqualified",
+  "Demoted or Disqualified",
   "Understand the consequences of refusing three reasonable housing offers, including potential demotion or disqualification from the Housing Register.",
   `
   <h3>Reduced preference (demotion) following refusal of 3 reasonable offers</h3>
@@ -5758,8 +5851,10 @@ const rehousing = new MenuH(
     applicationChanges,
     applyForRehousing,
     bidding,
+    demotedOrDisqualified,
     eligibility,
     fosteringAndAdoption,
+    healthAndHousing,
     housingAssociations,
     idReferences,
     idFaq,
@@ -5769,7 +5864,6 @@ const rehousing = new MenuH(
     priorityBandingTable,
     PropertyOffersAndViewings,
     referencesFAQs,
-    threeOffersDemotedorDisqualified,
   ]
 );
 
