@@ -4228,7 +4228,7 @@ const healthAndHousing = new ContentH(
     </ul>
 
     <p>
-      Details of different potential equipment and adaptations can be found at the following link:
+      Details of different potential equipment and adaptations can be found at the following link:<br>
       <a href="https://www.sheffielddirectory.org.uk/equipment-house/" target="_blank">Equipment House | Sheffield</a>
     </p>
 
@@ -4280,15 +4280,67 @@ const healthAndHousing = new ContentH(
     <h3>Rehousing due to medical or mobility needs</h3>
 
     <p>
+      If your primary reason for requesting rehousing is identified as any of the following your referral will not be accepted. 
+      Please contact the relevant team on the details below.
     </p>
 
+    <ul>
+      <li><strong>Anti-social behaviour</strong> – contact your local area housing office</li>
+      <li><strong>Disrepairs / Damp</strong> – contact Council Housing Repairs on 0114 273 5555 or online at 
+      www.sheffield.gov.uk/council-housing/council-housing-repairs. </li>
+      <li><strong>Overcrowding in your home</strong> – contact your local area housing office</li>
+      <li><strong>Homelessness / Threat of homelessness</strong> – contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
+      https://www.sheffield.gov.uk/home/your-city-council/contact-us</li>
+      <li><strong>Suffering domestic abuse</strong> - contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
+      https://www.sheffield.gov.uk/home/your-city-council/contact-us</li>
+      <li><strong>Private rented repairs / landlord issues</strong> – please contact 0114 273 4680 or online at www.sheffield.gov.uk/housing/repairs-to-rented-homes </li>
+    </ul>
+
+    <p>
+      You will not be awarded medical priority if your current property can be adapted to meet your needs. 
+      If you think your property could be adapted, please make a referral to our occupational therapy service for an assessment. <br>
+      <a href="www.sheffield.gov.uk/social-care/adults/adapting-your-home" target="_blank">www.sheffield.gov.uk/social-care/adults/adapting-your-home</a>. 
+    </p>
+
+    <p>
+      If following assessment, it is determined that your property cannot be adapted the assessing officer will advise you to complete the 
+      medical priority rehousing application
+    </p>
+
+    <p>
+      If you believe you meet the criteria, you can apply by completing the Health and Housing Application form. 
+      The quickest way to send your application is to scan and return to <a href="healthandhousingneeds@sheffield.gov.uk" target="_blank">healthandhousingneeds@sheffield.gov.uk</a>  
+      This will minimise delays in considering your application.
+    </p>
+
+    <p>
+      Further details of support available for a variety of issues causing Housing Problems (including overcrowding, family problens, 
+      domestic abuse and relationship breakdown) can be found at <a href="https://www.sheffield.gov.uk/housing/housing-options/housing-problems" target="_blank">Housing problems | Sheffield City Council</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Problems\`"
+    >
+            Send link to review further information
+    </button>
+
+    <p>
+      For more information around anti-social behaviour (ASB) please refer to the knowledge area <strong>Tenenacy Enforcement (ASB)</strong>. 
+      This is the top result if you enter <strong>ASB</strong> in the search above. The page provides general information about ASB, and will also allow you 
+      to send a link to the customer to correctly report ASB as either a council or non-council tenant.
+    </p>
 
     `,
   {
     buttonLabel: "Raise Enquiry ",
     formName: "hou_rehousing_enquiry",
   },
-  { typeKey: "" },
+  { typeKey: "rehousing_services_transferred_to_service" },
   { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
