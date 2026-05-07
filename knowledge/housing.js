@@ -5536,7 +5536,41 @@ const threeOffersDemotedorDisqualified = new ContentH(
       </ul>
 
   <h3>Disqualified for Unacceptable Behaviour</h3>
+    <p>
+      Applications that are rejected for unacceptable behaviour will receive a letter explaining the 12 month restriction and what action to take. 
+      The customer can request a review of the decision from a senior officer they must do this within 21 days or the disqualification letter, 
+      giving information that was not considered in the original decision.
+    </p>
 
+    <p><strong>Unacceptable behaviour</strong></p>
+
+    <p>
+      Some people may not be allowed to join the housing register because of past behaviour either their own or someone in their household.
+    </p>
+
+    <p>
+      This includes situations where:
+    </p>
+
+    <ul>
+      <li>you’ve had persistent rent arrears and not made efforts to repay them</li>
+      <li>you or a joint applicant caused serious damage to a property</li>
+      <li>there was antisocial behaviour that led to the loss of a previous home</li>
+      <li>you’ve been convicted of domestic abuse or certain other criminal behaviour</li>
+      <li>you previously sublet a council home without permission</li>
+      <li>you gave false information in a housing application</li>
+    </ul>
+
+    <p>
+      We also look at behaviour from people in your household if they lived with you at the time the behaviour took place.
+    </p>
+
+    <h4>If this applies to you</h4>
+
+    <p>
+      You won’t be able to join the register now, but if your behaviour has changed, you can apply again in the future. 
+      We may ask for evidence that things have improved such as references, repayment history or changes in your circumstances. 
+    </p>
 
   <h3>Exception Requests</h3>
     <p>
