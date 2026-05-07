@@ -5394,6 +5394,23 @@ const PropertyOffersAndViewings = new ContentH(
        </li>
     </ol>
 
+    <p>
+      The following link provides details of each step regarding bidding/offers/viewings: 
+      <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/bidding-council-home" target="_blank">Bidding for a Council home | Sheffield City Council[</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Bidding%20for%20a%20Council%20home\`"
+  
+>
+            Send link to review further information
+    </button>
+
       <h3>How does Sheffield City Council allocate the property?</h3>
        <p>
         Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short:
