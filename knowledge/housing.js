@@ -2999,7 +2999,7 @@ const housingOnline = new ContentH(
   { typeKey: "" },
   { typeKey: "housing_general_information_provided" },
   { type: "References", keywords: ["Housing, Online, Housing Online, Dummy"], categories: ["Housing"] },
-  { date: "03/11/2025", name: "Motolani Akinola" }
+  { date: "07/05/2026", name: "Liz Taster" }
 );
 
 //#endregion Housing Online
@@ -3286,7 +3286,7 @@ const allocationsPolicy = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "01/05/2026", name: "Liz Taster" }
+  { date: "06/05/2026", name: "Liz Taster" }
 );
 
 const applicationChanges = new ContentH(
@@ -3701,13 +3701,43 @@ const bidding = new ContentH(
   "Bidding",
   "Learn how to place bids for properties on the Sheffield Housing Online website, manage your application details, and handle restrictions or disqualifications.",
   `
-      <p>
+    <p>
         After you have registered for housing, you express your interest in renting a
         property by making a bid. You only have to bid once per property. You make
         bids online at the Housing Online website
         <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a> <br> 
+    </p>
+    
+    <p>
+      You will only be able to bid on properties once your application is active and only for properties you are eligible for. The properties you 
+      see to bid on is determined by the information you have provided on your application form. You will only be able to bid for the size and type 
+      of property that is suitable to meet your household needs. 
+    </p>
+
+    <p>
+      Please check the additional information on the property advert, before placing a bid to check it is suitable. Refusing a property that has 
+      been offered to you could affect your banding or the position of your application on the housing register.
+    </p>
+
+    <p>
+      Guidance on applying for a council home, becoming a tenant and exploring your housing choices can be found at 
+      <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-home" target="_blank" rel="noopener">
+      Registering for a council home | Sheffield City Council </a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Registering%20for%20a%20council%20home\`"
+>
+            Send link to review further information
+    </button>
         
-        <h3>How to View Available Properties and Bidding Periods</h3>
+
+    <h3>How to View Available Properties and Bidding Periods</h3>
 
     <p>Follow these steps to find and view the list of available properties and their bidding cycles on the Housing Online website.</p>
 
@@ -5374,7 +5404,7 @@ const PropertyOffersAndViewings = new ContentH(
     keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
     categories: ["Housing"],
   },
-  { date: "28/10/2025", name: "Motolani Akinola" }
+  { date: "07/05/2026", name: "Liz Taster" }
 );
 
 const referencesFAQs = new ContentH(
@@ -5668,7 +5698,7 @@ const threeOffersDemotedorDisqualified = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "04/12/2024", name: "Joseph Coupland" }
+  { date: "07/05/2026", name: "Liz Taster" }
 );
 
 const rehousing = new MenuH(
