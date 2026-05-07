@@ -5559,7 +5559,7 @@ const threeOffersDemotedorDisqualified = new ContentH(
       giving information that was not considered in the original decision.
     </p>
 
-    <h5>Unacceptable behaviour</h>
+    <h5>Unacceptable behaviour</h5>
 
     <p>
       Some people may not be allowed to join the housing register because of past behaviour either their own or someone in their household.
