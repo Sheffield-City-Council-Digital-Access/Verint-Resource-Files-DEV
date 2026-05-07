@@ -5306,6 +5306,23 @@ const PropertyOffersAndViewings = new ContentH(
         <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
         <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
       </ul>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Refusing a viewing/offer of a property</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+              If you have placed a bid on a property and we have checked you are eligible for the offer, we will contact you to arrange a viewing. 
+            </p>
+            <p>
+              If you choose not to view or accept a property offer, it could affect your banding or position on the housing register. 
+              We will explain this to you, dependent on your circumstances. 
+            </p>
+        </div>
+    </details>
+
     `,
   {
     buttonLabel: "Raise Enquiry",
