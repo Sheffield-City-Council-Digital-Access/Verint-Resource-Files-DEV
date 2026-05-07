@@ -2943,12 +2943,19 @@ const housingOnline = new ContentH(
         >
           Letter received in error
         </button>
+    
+    <p>
+      Information on how to apply for a council home can be found here: <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-home/applying-council-home" 
+      target="_blank">Applying for a council home | Sheffield City Council</a>
+    </p>
+    
     <h3>
       Report a Housing Online System Issue
     </h3>
     <p>
       Report a system issue <a href="https://sheffieldcc.uk.4me.com/self-service/requests/new/provide_description?template_id=3549" target="_blank">here</a>.
     </p>
+    
     <h3>
       Housing and Neighbourhoods Digital Ringbinder FAQ
     </h3>
