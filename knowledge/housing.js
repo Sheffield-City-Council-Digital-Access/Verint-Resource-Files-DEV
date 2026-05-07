@@ -2955,6 +2955,45 @@ const housingOnline = new ContentH(
     <p>
       Access the FAQ <a href="https://sccextranet.sharepoint.com/sites/HousingandNeighbourhoodsDigitalRingbinder/SitePages/Countdown-to-NEC-Housing.aspx?xsdata=MDV8MDJ8fDBhYjVjODE4NTVkYzQyODVjYTIwMDhkZTA1OWU5MDk1fGExYmE1OWI5NzIwNDQ4ZDhhMzYwNzc3MDI0NWFkNGE5fDB8MHw2Mzg5NTQzNzU3MjE4OTY0ODB8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pObFpEaGpZekkyTFdVeE1ESXROR0kyTXkwNFl6TmxMVE5tT0RoaFpqSm1OR0kwTVY5bVlURmpaV0ptWWkwMVpUTTBMVFE1T0RZdFlqZ3pNQzFoTmpnMk9EWTFaV1F3TURCQWRXNXhMbWRpYkM1emNHRmpaWE12YldWemMyRm5aWE12TVRjMU9UZzBNRGMzTVRVNU5BPT18ZjNmYTRiNmQyOTkyNDVhZGNhMjAwOGRlMDU5ZTkwOTV8ODY4NDcwNDM1MzgwNGEwM2IzOGZmZDgwOTQ3MDJhZTM%3d&sdata=OVNTMlBOdjhUK2hvZWgrMVVaTHpyQUFETzk1bFRBazZpYnZVM2t3ZVNnMD0%3d&ovuser=a1ba59b9-7204-48d8-a360-7770245ad4a9%2cNathan.Smith%40sheffield.gov.uk&OR=Teams-HL&CT=1759840780927&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTA5MTExNjAxOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3d%3d&SafelinksUrl=https%3a%2f%2fsccextranet.sharepoint.com%2fsites%2fHousingandNeighbourhoodsDigitalRingbinder%2fSitePages%2fCountdown-to-NEC-Housing.aspx" target="_blank">here</a>.
     </p>
+
+    <h3>My Housing</h3>
+    <p>
+      My Housing is the Sheffield City Council website for social housing applications and for Sheffield City Council tenants 
+      to access their rent accounts. Information is available on rent balances, statements and how to make a payment.  
+    </p>
+
+    <p>
+      Once your application is validated, you can bid for available properties.
+    </p>
+
+    <p>
+      To set up an account on the website you will need an email address which you can access at the time you create the account. 
+      This is because we need to confirm your email address. Only those who have a <strong>My Housing</strong> account can join our 
+      Housing Register and bid for advertised housing.
+    </p>
+
+    <p>
+      Current Sheffield City Council tenants can also use the My Housing website to access their rent accounts. 
+      Information is available on rent balances, statements and how to make a payment.  
+    </p>
+
+    <p>
+      If you do not have internet access there are self-serve laptops are available at Housing First Points in Area offices and at Howden House. 
+    </p>
+
+    <p>
+      Search for “how to set up an email account on your phone” on the internet.
+    </p>
+
+    <p>
+      If you do not have family/friends or anyone supporting you, Sheffield Libraries provide free digital skills classes across their sites 
+      between 10am and 12pm each day as drop-in sessions. You will be given assistance to create an email address and use websites.
+    </p>
+
+    <p>
+      In exceptional circumstances, assistance to create an admin application can be provided. Refer customer to Registration Team.
+    </p>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
@@ -5559,7 +5598,7 @@ const threeOffersDemotedorDisqualified = new ContentH(
       giving information that was not considered in the original decision.
     </p>
 
-    <h5>Unacceptable behaviour</h5>
+    <h4>Unacceptable behaviour</h4>
 
     <p>
       Some people may not be allowed to join the housing register because of past behaviour either their own or someone in their household.
