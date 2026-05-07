@@ -2948,6 +2948,18 @@ const housingOnline = new ContentH(
       Information on how to apply for a council home can be found here: <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-home/applying-council-home" 
       target="_blank">Applying for a council home | Sheffield City Council</a>
     </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Applying%20for%20a%20council%20home\`"
+  
+>
+            Send link to review further information
+    </button>
     
     <h3>
       Report a Housing Online System Issue
