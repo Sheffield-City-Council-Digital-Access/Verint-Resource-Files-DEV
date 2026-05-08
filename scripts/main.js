@@ -6994,192 +6994,86 @@ function renderAccountDetails(account, summary, stage, payment, charges, transac
   const welcomeMessage = document.getElementById('welcome-message');
   const accountDetailsPanel = document.getElementById('account-details-panel');
 
-  // Hide welcome message
   if (welcomeMessage) {
     welcomeMessage.classList.add('hidden');
   }
 
-  // Build the inner HTML for the details panel
   accountDetailsPanel.innerHTML = `
     <h2 class="details-title">Account Details</h2>
-
     <div class="details-grid">
-      <div>
-        <p class="detail-label">Payment Reference</p>
-        <p id="accountRef" class="detail-value">${account.accountRef}</p>
-      </div>
-      <div>
-        <p class="detail-label">Account Type</p>
-        <p id="accountType" class="detail-value">${summary?.accountType || ''}</p>
-      </div>
-      <div>
-        <p class="detail-label">Start Date</p>
-        <p id="formattedCreatedDate" class="detail-value">${account.formattedCreatedDate}</p>
-      </div>
-      <div>
-        ${account.formattedEndDate
-      ? `
-              <p class="detail-label">End Date</p>
-              <p id="formattedEndDate" class="detail-value">${account.formattedEndDate}</p>
-            `
-      : ''
-    }
-      </div>
-      <div>
-        <p class="detail-label">Current Balance</p>
-        <p id="currentBalance" class="detail-value">${summary?.currentBalance || ''}</p>
-      </div>
-      <div>
-      ${summary.totalBalance
-      ? `
-            <p class="detail-label">Total Balance</p>
-            <p id="totalBalance" class="detail-value">${summary?.totalBalance || ''}</p>
-          `
-      : ''
-    }
-      </div>
+      <div><p class="detail-label">Payment Reference</p><p class="detail-value">${account.accountRef}</p></div>
+      <div><p class="detail-label">Account Type</p><p class="detail-value">${summary?.accountType || ''}</p></div>
+      <div><p class="detail-label">Start Date</p><p class="detail-value">${account.formattedCreatedDate}</p></div>
+      <div>${account.formattedEndDate ? `<p class="detail-label">End Date</p><p class="detail-value">${account.formattedEndDate}</p>` : ''}</div>
+      <div><p class="detail-label">Current Balance</p><p class="detail-value">${summary?.currentBalance || ''}</p></div>
+      <div>${summary.totalBalance ? `<p class="detail-label">Total Balance</p><p class="detail-value">${summary?.totalBalance || ''}</p>` : ''}</div>
       <div>
         <p class="detail-label">Payment Method</p>
-        <p id="paymentMethod" class="detail-value">${payment?.method || ''}${payment?.method !== 'Cash Receipting'
-      ? `
-                <br/><span id="paymentSheduled" class="detail-value">${payment?.scheduledDate}</span>
-              `
-      : ''
-    }
-        </p>
+        <p class="detail-value">${payment?.method || ''}${payment?.method !== 'Cash Receipting' ? `<br/><span>${payment?.scheduledDate}</span>` : ''}</p>
       </div>
-      <div>
-        <p class="detail-label">Current Stage</p>
-        <p id="accountStage" class="detail-value">${stage?.route || 'No Action'}</p>
-      </div>
-
-      <div>
-        <p class="detail-label">Address</p>
-        <p id="propertyAddress" class="detail-value">${summary?.propertyAddress || ''}</p>
-      </div>
+      <div><p class="detail-label">Current Stage</p><p class="detail-value">${stage?.route || 'No Action'}</p></div>
+      <div><p class="detail-label">Address</p><p class="detail-value">${summary?.propertyAddress || ''}</p></div>
     </div>
 
     <div class="tab-nav">
       <button id="charges-tab" data-target="charges-info" class="tab-button active-tab">Charges</button>
       <button id="transactions-tab" data-target="transactions-history" class="tab-button">Transactions</button>
       <button id="arrangements-tab" data-target="arrangements-history" class="tab-button">Arrangements</button>
-      <button id="notes-tab" data-target="notes-content" class="tab-button">Notes</button>
+      <button id="notes-tab" data-target="rent-notes" class="tab-button">Notes</button>
     </div>
 
     <div id="charges-info" class="tab-content active-content">
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Details</th>
-              <th>Amount</th>
-            </tr>
-          </thead>
-          <tbody id="charges-table-body">
-          </tbody>
-        </table>
-      </div>
+      <div class="table-container"><table><thead><tr><th>Details</th><th>Amount</th></tr></thead><tbody id="charges-table-body"></tbody></table></div>
       <div id="charges-pagination" class="pagination-controls"></div>
     </div>
 
     <div id="transactions-history" class="tab-content hidden">
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Details</th>
-              <th>Type</th>
-              <th>Amount</th>
-              <th>Balance</th>
-            </tr>
-          </thead>
-          <tbody id="transactions-table-body">
-          </tbody>
-        </table>
-      </div>
+      <div class="table-container"><table><thead><tr><th>Details</th><th>Type</th><th>Amount</th><th>Balance</th></tr></thead><tbody id="transactions-table-body"></tbody></table></div>
       <div id="transactions-pagination" class="pagination-controls"></div>
     </div>
 
     <div id="arrangements-history" class="tab-content hidden">
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Details</th>
-              <th>Balance</th>
-            </tr>
-          </thead>
-          <tbody id="arrangements-table-body">
-          </tbody>
-        </table>
-      </div>
+      <div class="table-container"><table><thead><tr><th>Details</th><th>Balance</th></tr></thead><tbody id="arrangements-table-body"></tbody></table></div>
       <div id="arrangements-pagination" class="pagination-controls"></div>
     </div>
 
-    <div id="notes-content" class="tab-content hidden">
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Details</th>
-            </tr>
-          </thead>
-          <tbody id="notes-table-body">
-          </tbody>
-        </table>
-      </div>
+    <div id="rent-notes" class="tab-content hidden">
+      <div class="table-container"><table><thead><tr><th>Details</th></tr></thead><tbody id="notes-table-body"></tbody></table></div>
       <div id="notes-pagination" class="pagination-controls"></div>
     </div>
   `;
 
-  // After building the HTML, attach the new event listeners and populate tables
-  const chargesTab = document.getElementById('charges-tab');
-  const transactionsTab = document.getElementById('transactions-tab');
-  const arrangementsTab = document.getElementById('arrangements-tab');
-  const notesTab = document.getElementById('notes-tab');
+  const allTabs = accountDetailsPanel.querySelectorAll('.tab-button');
+  const allContents = accountDetailsPanel.querySelectorAll('.tab-content');
 
-  const chargesContent = document.getElementById('charges-info');
-  const transactionsContent = document.getElementById('transactions-history');
-  const arrangementsContent = document.getElementById('arrangements-history');
-  const notesContent = document.getElementById('notes-content');
+  function showTab(clickedTab) {
+    const targetId = clickedTab.getAttribute('data-target'); 
+    
+    console.log("Button clicked. Looking for content ID:", targetId);
 
-  function showTab(targetId) {
-    const allTabs = [chargesTab, transactionsTab, arrangementsTab, notesTab];
-    const allContents = [chargesContent, transactionsContent, arrangementsContent, notesContent];
-
-    // Remove active state from all tabs and contents
     allTabs.forEach(tab => tab.classList.remove('active-tab'));
     allContents.forEach(content => {
-      content.classList.remove('active-content');
       content.classList.add('hidden');
+      content.classList.remove('active-content');
     });
 
-    // Add active state to the selected tab and content
-    const selectedTab = document.getElementById(targetId);
-    const selectedContentId = targetId.replace('-tab', '');
-    let selectedContent;
+    clickedTab.classList.add('active-tab');
 
-    switch (selectedContentId) {
-      case 'charges': selectedContent = chargesContent; break;
-      case 'transactions': selectedContent = transactionsContent; break;
-      case 'arrangements': selectedContent = arrangementsContent; break;
-      case 'notes': selectedContent = notesContent; break;
-    }
-
-    if (selectedTab) selectedTab.classList.add('active-tab');
-    if (selectedContent) {
-      selectedContent.classList.add('active-content');
-      selectedContent.classList.remove('hidden');
+    const targetContent = document.getElementById(targetId);
+    
+    if (targetContent) {
+      console.log("Found the div! Removing hidden class now.");
+      targetContent.classList.remove('hidden');
+      targetContent.classList.add('active-content');
+    } else {
+      console.error("Could not find a div with ID:", targetId);
     }
   }
 
-  // Ensure all four tabs have click handlers attached
-  chargesTab.addEventListener('click', () => showTab('charges-tab'));
-  transactionsTab.addEventListener('click', () => showTab('transactions-tab'));
-  arrangementsTab.addEventListener('click', () => showTab('arrangements-tab'));
-  notesTab.addEventListener('click', () => showTab('notes-tab'));
+  allTabs.forEach(tab => {
+    tab.onclick = function() { showTab(this); };
+  });
 
-  // Populate tables with the data passed in (will be empty initially, populated by KDF_custom later)
   populateChargesTable(charges);
   populateTransactionsTable(transactions);
   populateArrangementsTable(arrangements);
