@@ -3728,7 +3728,7 @@ const applyForRehousing = new ContentH(
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Options\`"
         >
             Send link to review further information
         </button>
@@ -3800,7 +3800,7 @@ const applyForRehousing = new ContentH(
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Becoming%20a%20council%20tenant\`"
         >
             Send link to review further information
         </button>
