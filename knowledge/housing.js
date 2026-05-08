@@ -3090,7 +3090,7 @@ const leaseholderInformation = new ContentH(
       "repears and investment",
       "repairs and invesment",
       "repair and investement",
-      "repairs and invesmant",
+      "repairs and invesmant"
     ],
     categories: ["Housing"],
   },
@@ -3314,8 +3314,21 @@ const allocationsPolicy = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "allocation",
+      "allocations",
+      "alocation",
+      "alocations",
+      "allocations policy",
+      "priority",
+      "banding",
+      "priority band"],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "06/05/2026", name: "Liz Taster" }
 );
@@ -3662,15 +3675,22 @@ const applicationChanges = new ContentH(
   {
     type: "Apply",
     keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "application",
+      "aplication",
+      "change",
+      "changes",
+      "changing",
+      "circumstances",
+      "circumstance"
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "23/04/2026", name: "Shaz Athar" }
+  { date: "08/05/2026", name: "Liz Taster" }
 );
 
 const applyForRehousing = new ContentH(
@@ -3728,7 +3748,7 @@ const applyForRehousing = new ContentH(
             onclick="
             window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Options\`"
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Other%20Housing%20Options\`"
         >
             Send link to review further information
         </button>
@@ -3814,11 +3834,15 @@ const applyForRehousing = new ContentH(
   {
     type: "Request",
     keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "apply",
+      "applying",
+      "apply for rehousing",
+      "options"
     ],
     categories: ["Housing", "Rehousing"],
   },
@@ -4161,15 +4185,24 @@ const bidding = new ContentH(
   {
     type: "Apply",
     keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "bidding",
+      "biding",
+      "bid",
+      "bids",
+      "housing",
+      "houzing",
+      "houssing",
+      "housin",
+      "housingg"
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "28/10/2025", name: "Motolani Akinola" }
+  { date: "07/05/2026", name: "Liz Taster" }
 );
 
 const eligibility = new ContentH(
@@ -4260,8 +4293,17 @@ const eligibility = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "eligibility",
+      "eligible",
+      "eligibility table"
+    ],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "28/10/2025", name: "Motolani Akinola" }
 );
@@ -4298,7 +4340,15 @@ const fosteringAndAdoption = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "fostering",
+      "adoption"
+    ],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "George Whitehouse" }
@@ -4443,8 +4493,21 @@ const healthAndHousing = new ContentH(
   { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "health",
+      "adaptations",
+      "adaptation",
+      "medical",
+      "grants",
+      "mobility",
+      "needs"
+    ],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "07/05/2026", name: "Liz Taster" }
 );
@@ -4899,8 +4962,13 @@ const housingAssociations = new ContentH(
       "rehousingg",
       "rehosuing",
       "rehouzing",
+      "association",
+      "associations",
+      "asociation",
+      "asociations",
+      "housing"
     ],
-    categories: ["Housing"],
+    categories: ["Housing", "Rehousing"],
   },
   {
     date: "13/05/2025",
@@ -4977,8 +5045,20 @@ const idReferences = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "references",
+      "referee",
+      "ID",
+      "identification",
+      "requirements"
+    ],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "01/05/2026", name: "Liz Taster" }
 );
@@ -5023,8 +5103,20 @@ const idFaq = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing"
+      "housing",
+      "ID",
+      "identification",
+      "requirements",
+      "FAQ",
+      "FAQs"
+    ],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "01/05/2026", name: "Liz Taster" }
 );
@@ -5096,8 +5188,16 @@ const movingIn = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "moving in"
+    ],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "07/11/2024", name: "George Whitehouse" }
 );
@@ -5358,7 +5458,18 @@ const mutualExchanges = new ContentH(
   { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
-    keywords: ["rehousing", "rehousing", "rehousign", "rehozing"],
+    keywords: [
+      "rehousing", 
+      "rehousing", 
+      "rehousign", 
+      "rehozing",
+      "housing",
+      "mutual",
+      "exchange",
+      "exchanges",
+      "swap",
+      "swop"
+    ],
     categories: ["Housing"],
   },
   { date: "27/03/2026", name: "Shaz Athar" }
@@ -5389,7 +5500,16 @@ const priorities = new ContentH(
   { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "priority",
+      "priorities"
+    ],
     categories: ["Housing"],
   },
   { date: "12/02/2025", name: "Nathan Smith" }
@@ -5590,8 +5710,22 @@ const priorityBandingTable = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "priority banding table",
+      "priority",
+      "priorities",
+      "band",
+      "banding",
+      "banding table",
+      "table"
+    ],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "07/22/2024", name: "George Whitehouse" }
 );
@@ -5694,8 +5828,21 @@ const PropertyOffersAndViewings = new ContentH(
   { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "viewing",
+      "view",
+      "property",
+      "properties",
+      "offer",
+      "offers"
+    ],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "07/05/2026", name: "Liz Taster" }
 );
@@ -5864,8 +6011,20 @@ const referencesFAQs = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs"
+    ],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "15/05/2025", name: "Dinah Williams" }
 );
@@ -5978,6 +6137,10 @@ const demotedOrDisqualified = new ContentH(
       "offers",
       "demoted",
       "disqualified",
+      "disqualify",
+      "disqualification",
+      "demotion",
+      "refused"
     ],
     categories: ["Housing"],
   },
