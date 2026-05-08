@@ -118,19 +118,39 @@ const universalCredit = new ContentH(
   "Universal credit",
   "Learn about Universal Credit, including how to apply, report changes, and manage rent and Council Tax payments.",
   `
-    <p>If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
-   you may be directed to claim Universal Credit:</p>
-<ul>
+  <p>
+    If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
+    you may be directed to claim Universal Credit:
+   </p>
+  <ul>
     <li>Housing Benefit</li>
     <li>Income-related Employment and Support Allowance (ESA)</li>
     <li>Income-based Jobseeker's Allowance (JSA)</li>
     <li>Child Tax Credit</li>
     <li>Working Tax Credit</li>
     <li>Income Support</li>
-</ul>
-<p>At some point in the future, many people currently on the benefits above will be moved across to Universal Credit. 
-   The Government has not yet given a date for this, but the Department for Work and Pensions 
-   will contact anyone affected before there are changes to their benefits or tax credits.</p>
+  </ul>
+  <p>
+    At some point in the future, many people currently on the benefits above will be moved across to Universal Credit. 
+    The Government has not yet given a date for this, but the Department for Work and Pensions 
+    will contact anyone affected before there are changes to their benefits or tax credits.
+  </p>
+
+  <p>
+    Information about Universal Credit, including a link to apply for Universal Credit through the GOV.UK, can be found here: 
+    <a href="https://www.sheffield.gov.uk/benefits/apply-universal-credit" target="_blank">Apply for Universal Credit | Sheffield City Council</a>
+  </p>
+
+      <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20Universal%20Credit\`"
+    >
+            Send link to review further information
+    </button>
 
 <details class="accordion">
     <summary class="accordion-header">
@@ -1290,6 +1310,9 @@ const emergencyRepairs = new ContentH(
       "repairs and invesment",
       "repair and investement",
       "repairs and invesmant",
+      "repair",
+      "repairs",
+      "emergency",
     ],
     categories: ["Housing"],
   },
@@ -1425,6 +1448,11 @@ const loststolenkeys = new ContentH(
       "repairs and invesment",
       "repair and investement",
       "repairs and invesmant",
+      "lock",
+      "locks",
+      "stolen keys",
+      "keys",
+      "repairs",
     ],
     categories: ["Housing"],
   },
@@ -1479,6 +1507,8 @@ const newAndExistingRepairs = new ContentH(
   <br>
   <p>
     If the repair is an <strong>emergency</strong> please also view the information in the <strong>Emergency Repairs</strong> section.
+    This is the top result if you enter <strong>Emergency Repairs</strong> in the Knowledge search above.
+    The page covers how to handle emergency repairs, including gas leaks, equipment issues, and out-of-hours emergencies, with relevant contact numbers.
   </p>
   
   <h3>Leaseholder Repairs</h3> 
@@ -2750,10 +2780,6 @@ const contactHousingBenefits = new ContentH(
     <p><strong>Further information:</strong> Lines open 8:30-5:30</p>
     <p><strong>Email address:</strong> <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></p>
 
-    <br>
-    <p>
-      Please also view the information in the <strong>Money support</strong> section.
-    </p>
   `,
 
   { buttonLabel: "Contact benefits", formName: "" },
@@ -3163,9 +3189,13 @@ const allocationsPolicy = new ContentH(
         <p>
             <strong>If your banding has been reduced</strong> due to arrears, application can be reviewed by Registration Team and customer will be advised to 
             contact Income Management if arrears are impacting banding. 
+            <br>
+            The customer may also find the information in the knowledge area <strong>Money Support</strong> helpful.
+            This is the top result if you enter <strong>Money Support</strong> in the Knowledge search above. 
+            The page provides information about support options for managing housing, bills, benefits, and financial hardships in Sheffield.
+            <br>
+            The customer can also visit their local Neighbourhood Office where staff can provide advice and information.
         </p>
-
-        [INSERT INTERNAL KNOWLEDGE LINK to Financial Assistance and Support]
 
         <p>
             <strong>If your banding has been reduced</strong> due to 3 or more refusals in 12 months an officer would need to check if this is still the case or if it has expired. 
@@ -5481,6 +5511,16 @@ const priorities = new ContentH(
   "Priorities",
   "Learn about priority for rehousing, including how priority is assessed, what it means for your housing options, and how to request a review.",
   `
+    <h3>Customers who have a priority</h3>  
+    <p>
+      After completing security checks with the applicant, check NEC for priority banding and ‘Actions’ for who is managing the case. 
+      The Priorities Team have a public phone number 0114 0114 2736970  and email address for enquiries 
+      <a href="mailto:RehousingPriorities@sheffield.gov.uk">RehousingPriorities@sheffield.gov.uk</a> 
+      or if in person at Howden House the customer can be seen without an appointment.
+    </p>
+
+
+    <h3>General information about housing priorities</h3>  
     <p>
       Priority for rehousing can be awarded if there is a need to be rehoused urgently and immediately. When your circumstances have been assessed, we will look at whether we can give you priority for housing ahead of other people on the Housing Register. We will then write to you explaining our decision. If we give you priority, we will explain why it has been given, what sort of property it is for and how long you have to use it. The letter will also explain how to request a review of the decision if you are unhappy with it.<br><br>
   
@@ -12118,7 +12158,9 @@ const fobsandKeys = new ContentH(
   </details>
 
   <p>
-    Please also view the information in the <strong>Lost Stolen Keys and Lock Repairs</strong> section.
+    Please also view the information in the knowledge area <strong>Lost Stolen Keys and Lock Repairs</strong>.
+    This is the top result if you enter <strong>lock repairs</strong> in the Knowledge search above. 
+    The page provides information how to replace lost or stolen keys and fobs, including costs, required ID, and the process for requesting replacements.
   </p>
 
   `,
