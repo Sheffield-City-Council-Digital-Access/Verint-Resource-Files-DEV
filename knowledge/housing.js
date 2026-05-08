@@ -3709,6 +3709,104 @@ const applyForRehousing = new ContentH(
       documents can be uploaded via the website or at your local housing office or
       First Point before your application will be validated.
     </p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Other Housing Options</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            There are other housing options customers can consider for finding a home in Sheffield that might work better for your situation. 
+            Details around mutual exchanges (for current council tenants), renting privately and housing associations can be found here:
+            <a href="https://www.sheffield.gov.uk/housing/housing-options/other-housing-options" target="_blank">Other housing options | Sheffield City Council</a>
+        </p>
+
+        <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+        >
+            Send link to review further information
+        </button>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Housing Associations</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            Details of housing associations can be found through the Sheffield Directory. This link is pre-filtered to Housing Associations:
+            <a href="https://www.sheffielddirectory.org.uk/directory/?searchTab=servicesSearchTab&templateId=D770A514-E446-440B-A074-B0C8010100A3&searchText=housing%20associations&sortOption=Rank%3Basc&pageNumber=1&pageSize=15&distance=1609" target="_blank">Directory | Sheffield</a>
+        </p>
+
+        <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Associations\`"
+        >
+            Send link to review further information
+        </button>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Getting a council home</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            A large amount of information about getting a council home can be found through the Sheffield Council website here:
+            <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home" target="_blank">Getting a council home | Sheffield City Council</a>
+        </p>
+
+        <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Getting%20a%20council%20home\`"
+        >
+            Send link to review further information
+        </button>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Becoming a council Tenant</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            Guidance on becoming and being a council tenant can be found here:
+            <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-house/becoming-tenant" target="_blank">Becoming a tenant | Sheffield City Council</a>
+        </p>
+
+        <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Online\`"
+        >
+            Send link to review further information
+        </button>
+    </div>
+</details>
+
   `,
   { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
   { typeKey: "" },
@@ -12175,18 +12273,6 @@ const tenancyAgreementRequest = new ContentH(
     { date: "01/10/2025", name: "Shahzad Athar" }
  );
 
-const tenancyChange = new FormH(
-  "tenancyChange",
-  "Tenancy Change",
-  "Request for adding, removing or enquiring about occupants, changes to tenancy both sole and joint, reporting a deceased tenant, ending a tenancy, passing on a tenancy or enquiring about tenancy start and end dates.",
-  "hou_sustainment_ten_chan",
-  {
-    type: "Request",
-    keywords: ["Housing", "Tenancy", "Tenant"],
-    categories: ["Housing"],
-  },
-  { date: "07/03/2025", name: "Nathan Smith" }
-);
 
 const changesToTenancy = new ContentH(
   "changesToTenancy",
@@ -12387,7 +12473,6 @@ const tenancySustainment = new MenuH(
     nameChanges,
     permissions,
     tenancyAgreementRequest,
-    tenancyChange,
     tenancyConditions,
     tenancyVisits,
     vulnerability
