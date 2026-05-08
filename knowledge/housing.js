@@ -12196,80 +12196,108 @@ const changesToTenancy = new ContentH(
 
 <h3>Tenancy Change</h3> 
   <p>
-    Use the button at the bottom of this page to complete a Tenancy Change request. 
+    Use the button at the bottom of this page to complete a <strong>Tenancy Change Request</strong>. 
     This includes requests for adding, removing or enquiring about occupants, changes to tenancy both sole and joint, 
     reporting a deceased tenant, ending a tenancy, passing on a tenancy or enquiring about tenancy start and end dates.
   </p>
 
-<h3>Introductory Tenancies</h3>
-  <p>
-    New SCC tenants will be offered a 12 month introductory tenancy.
-    Tenants with Introductory Tenancies cannot apply for a mutual exchange. 
-  </p>
-  <p>
-    Further information about introductory tenancies can be found here: 
-    <a href="https://www.sheffield.gov.uk/council-housing/introductory-tenancies" target="_blank">https://www.sheffield.gov.uk/council-housing/introductory-tenancies</a>
-  </p>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Introductory Tenancies</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        New SCC tenants will be offered a 12 month introductory tenancy.
+        Tenants with Introductory Tenancies cannot apply for a mutual exchange. 
+        </p>
+        <p>
+          Further information about introductory tenancies can be found here: 
+          <a href="https://www.sheffield.gov.uk/council-housing/introductory-tenancies" target="_blank">https://www.sheffield.gov.uk/council-housing/introductory-tenancies</a>
+        </p>
 
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Introductory%20Council%20Tenancies\`
-    "
->
-    Send link to review further information
-</button>
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Introductory%20Council%20Tenancies\`
+            "
+        >
+            Send link to review further information
+        </button>
+    </div>
+</details>
 
-<h3>Tenancy Conditions</h3>
-<p>
-  Further information explaining tenant and landlord responsibilities, including a link to the "You and Your Home" leaflet can be found under General Tenancy Conditions here:
-  <a href="https://www.sheffield.gov.uk/general-tenancy-conditions" target="_blank">https://www.sheffield.gov.uk/general-tenancy-conditions</a>
-</p>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Tenancy Conditions</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+          Further information explaining tenant and landlord responsibilities, including a link to the "You and Your Home" leaflet can be found under General Tenancy Conditions here:
+          <a href="https://www.sheffield.gov.uk/general-tenancy-conditions" target="_blank">https://www.sheffield.gov.uk/general-tenancy-conditions</a>
+        </p>
 
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Tenancy%20Conditions\`
-    "
->
-    Send link to review further information
-</button>
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Tenancy%20Conditions\`
+           "
+        >
+            Send link to review further information
+        </button>
+    </div>
+</details>
 
-<h3>General Enquiries from existing tenants</h3>
-<p>
-  For general enquiries, a large variety of information - including questions on pets, insurance, ASB, Right to Buy and being a good neighbour - 
-  can be found in the Council Housing Tenants section of the website here:
-</p>
-<a href="https://www.sheffield.gov.uk/council-housing/council-housing-tenants" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-tenants</a>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>General Enquiries from existing tenants</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+          For general enquiries, a large variety of information - including questions on pets, insurance, ASB, Right to Buy and being a good neighbour - 
+          can be found in the Council Housing Tenants section of the website here:
+        </p>
+        <a href="https://www.sheffield.gov.uk/council-housing/council-housing-tenants" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-tenants</a>
 
-<button
-    type="button"
-    class="dform_widget email-btn dform_widget_type_button"
-    aria-label="For further information send link"
-    onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Council%20Housing%20Tenants\`
-    "
->
-    Send link to review further information
-</button>
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                  }interactionid=\${KDF.getParams().interactionid}&sel_service=Council%20Housing%20Tenants\`
+            "
+        >
+            Send link to review further information
+        </button>
+    </div>
+</details>
 
-<h3>Mutual Exchange Information</h3>
-<p>
-  For detailed information regarding <strong>Mutual Exchanges</strong>, please review the information in that section of Knowledge. 
-  This tile includes details and guidelines regarding the process, eligibility, and conditions of Mutual Exchange for housing tenants, 
-  required documentation, restrictions, and steps to complete an exchange.
-  <br>This is the top result if you enter <strong>Mutual Exchange</strong> in the Knowledge search above.
-</p>
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Mutual Exchange Information</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+          For detailed information regarding <strong>Mutual Exchanges</strong>, please review the information in that section of Knowledge. 
+          This tile includes details and guidelines regarding the process, eligibility, and conditions of Mutual Exchange for housing tenants, 
+          required documentation, restrictions, and steps to complete an exchange.
+          <br>This is the top result if you enter <strong>Mutual Exchange</strong> in the Knowledge search above.
+        </p>
+    </div>
+</details>
 
 `,
   { buttonLabel: "Tenancy Change Request", formName: "hou_sustainment_ten_chan" },
