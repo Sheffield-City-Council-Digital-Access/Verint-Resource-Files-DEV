@@ -3327,7 +3327,8 @@ const allocationsPolicy = new ContentH(
       "allocations policy",
       "priority",
       "banding",
-      "priority band"],
+      "priority band",
+    ],
     categories: ["Housing", "Rehousing"],
   },
   { date: "06/05/2026", name: "Liz Taster" }
@@ -3686,7 +3687,7 @@ const applicationChanges = new ContentH(
       "changes",
       "changing",
       "circumstances",
-      "circumstance"
+      "circumstance",
     ],
     categories: ["Housing", "Rehousing"],
   },
@@ -3842,7 +3843,7 @@ const applyForRehousing = new ContentH(
       "apply",
       "applying",
       "apply for rehousing",
-      "options"
+      "options",
     ],
     categories: ["Housing", "Rehousing"],
   },
@@ -4198,7 +4199,7 @@ const bidding = new ContentH(
       "houzing",
       "houssing",
       "housin",
-      "housingg"
+      "housingg",
     ],
     categories: ["Housing", "Rehousing"],
   },
@@ -4301,7 +4302,7 @@ const eligibility = new ContentH(
       "rehouzing",
       "eligibility",
       "eligible",
-      "eligibility table"
+      "eligibility table",
     ],
     categories: ["Housing", "Rehousing"],
   },
@@ -4347,7 +4348,7 @@ const fosteringAndAdoption = new ContentH(
       "rehosuing", 
       "rehouzing",
       "fostering",
-      "adoption"
+      "adoption",
     ],
     categories: ["Housing"],
   },
@@ -4505,7 +4506,7 @@ const healthAndHousing = new ContentH(
       "medical",
       "grants",
       "mobility",
-      "needs"
+      "needs",
     ],
     categories: ["Housing", "Rehousing"],
   },
@@ -4966,7 +4967,7 @@ const housingAssociations = new ContentH(
       "associations",
       "asociation",
       "asociations",
-      "housing"
+      "housing",
     ],
     categories: ["Housing", "Rehousing"],
   },
@@ -5056,7 +5057,7 @@ const idReferences = new ContentH(
       "referee",
       "ID",
       "identification",
-      "requirements"
+      "requirements",
     ],
     categories: ["Housing", "Rehousing"],
   },
@@ -5114,7 +5115,7 @@ const idFaq = new ContentH(
       "identification",
       "requirements",
       "FAQ",
-      "FAQs"
+      "FAQs",
     ],
     categories: ["Housing", "Rehousing"],
   },
@@ -5195,7 +5196,7 @@ const movingIn = new ContentH(
       "rehosuing", 
       "rehouzing",
       "housing",
-      "moving in"
+      "moving in",
     ],
     categories: ["Housing", "Rehousing"],
   },
@@ -5468,7 +5469,7 @@ const mutualExchanges = new ContentH(
       "exchange",
       "exchanges",
       "swap",
-      "swop"
+      "swop",
     ],
     categories: ["Housing"],
   },
@@ -5508,9 +5509,9 @@ const priorities = new ContentH(
       "rehouzing",
       "housing",
       "priority",
-      "priorities"
+      "priorities",
     ],
-    categories: ["Housing"],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "12/02/2025", name: "Nathan Smith" }
 );
@@ -5723,7 +5724,7 @@ const priorityBandingTable = new ContentH(
       "band",
       "banding",
       "banding table",
-      "table"
+      "table",
     ],
     categories: ["Housing", "Rehousing"],
   },
@@ -5840,7 +5841,7 @@ const PropertyOffersAndViewings = new ContentH(
       "property",
       "properties",
       "offer",
-      "offers"
+      "offers",
     ],
     categories: ["Housing", "Rehousing"],
   },
@@ -6022,7 +6023,7 @@ const referencesFAQs = new ContentH(
       "references",
       "referee",
       "FAQ",
-      "FAQs"
+      "FAQs",
     ],
     categories: ["Housing", "Rehousing"],
   },
@@ -6140,7 +6141,7 @@ const demotedOrDisqualified = new ContentH(
       "disqualify",
       "disqualification",
       "demotion",
-      "refused"
+      "refused",
     ],
     categories: ["Housing"],
   },
