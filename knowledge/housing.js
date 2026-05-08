@@ -12204,7 +12204,7 @@ const changesToTenancy = new ContentH(
 <h3>Introductory Tenancies</h3>
   <p>
     New SCC tenants will be offered a 12 month introductory tenancy.
-    <br> Tenants with Introductory Tenancies cannot apply for a mutual exchange. 
+    Tenants with Introductory Tenancies cannot apply for a mutual exchange. 
   </p>
   <p>
     Further information about introductory tenancies can be found here: 
@@ -12218,7 +12218,7 @@ const changesToTenancy = new ContentH(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Introductory%20Tenancies\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Introductory%20Council%20Tenancies\`
     "
 >
     Send link to review further information
