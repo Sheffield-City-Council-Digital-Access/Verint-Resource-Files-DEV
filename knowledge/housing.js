@@ -1313,6 +1313,7 @@ const emergencyRepairs = new ContentH(
       "repair",
       "repairs",
       "emergency",
+      "Emergency Repairs"
     ],
     categories: ["Housing"],
   },
@@ -11972,7 +11973,7 @@ const tenancyEnforcementASB = new ContentH(
   { buttonLabel: "Raise report", formName: "hou_enforcement_asb" },
   { typeKey: "" },
   { typeKey: "tenancy_enforcement_information_provided" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
+  { type: "Request", keywords: ["ASB","Enforcement"], categories: ["Housing"] },
   { date: "30/04/2026", name: "Liz Taster" }
 );
 //#endregion Tenancy enforcement
@@ -12036,6 +12037,12 @@ const fobsandKeys = new ContentH(
   </p>
   <p>
     Lost or stolen keys, there may be a recharge (£5), communal doors are £5. If it's your own door, it's over £200 recharge from repairs.
+  </p>
+
+  <p>
+    Please also view the information in the knowledge area <strong>Lost Stolen Keys and Lock Repairs</strong>.
+    This is the top result if you enter <strong>lock repairs</strong> in the Knowledge search above. 
+    The page provides information how to replace lost or stolen keys and fobs, including costs, required ID, and the process for requesting replacements.
   </p>
 
   <details class="accordion">
@@ -12156,13 +12163,6 @@ const fobsandKeys = new ContentH(
     </p>
     </div>
   </details>
-
-  <p>
-    Please also view the information in the knowledge area <strong>Lost Stolen Keys and Lock Repairs</strong>.
-    This is the top result if you enter <strong>lock repairs</strong> in the Knowledge search above. 
-    The page provides information how to replace lost or stolen keys and fobs, including costs, required ID, and the process for requesting replacements.
-  </p>
-
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
