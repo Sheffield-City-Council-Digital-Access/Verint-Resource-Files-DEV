@@ -2364,7 +2364,7 @@ const generalCouncilHousing = new ContentH(
     ],
     categories: ["Housing", "Estates and Environments"],
   },
-  { date: "07/05/2025", name: "Dinah Williams" }
+  { date: "12/05/2026", name: "Liz Taster" }
 );
 //#endregion General Council Housing
 
@@ -3885,7 +3885,7 @@ const applyForRehousing = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "28/10/2025", name: "Motolani Akinola" }
+  { date: "12/05/2026", name: "Liz Taster" }
 );
 
 const bidding = new ContentH(
