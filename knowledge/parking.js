@@ -587,7 +587,7 @@ const replacementBlueBadge = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "04/06/2025", name: "Dinah Williams" }
+  { date: "11/05/2026", name: "Liz Taster" }
 );
 
 const blueBadge = new MenuP(
