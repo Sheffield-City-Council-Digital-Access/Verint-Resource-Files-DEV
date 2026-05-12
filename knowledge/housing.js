@@ -2347,7 +2347,7 @@ const generalCouncilHousing = new ContentH(
   <p>
     If a customer queries who their local councillors are, please refer to the informaiton on the <strong>Councillors</strong> page.
     This is the top result if you enter <strong>Councillors</strong> in the Knowledge search above. 
-    The page allows you to send links to customers to review information about Sheffield Councillors and their duties, and to find who their local councillors are.
+    <br>The page allows you to send links to customers to review information about Sheffield Councillors and their duties, and to find who their local councillors are.
   </p>
   `,
   { buttonLabel: "Raise enquiry", formName: "hou_routing_enquiry" },
@@ -11763,7 +11763,7 @@ const temporaryAccommodation = new ContentH(
       <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930832')">0114 2930832</a>
     </p>
   `,
-  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "sheltered_and_supported_transferred_to_service" },
   { typeKey: "sheltered_and_supported_information_provided" },
   {
