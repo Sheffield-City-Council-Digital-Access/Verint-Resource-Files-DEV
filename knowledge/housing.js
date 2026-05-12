@@ -2342,6 +2342,8 @@ const generalCouncilHousing = new ContentH(
   <p>
     <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx"target="_blank">Telephone Directory</a>
   </p>
+  
+  <h3>Local Councillors</h3>
   <p>
     If a customer queries who their local councillors are, please refer to the informaiton on the <strong>Councillors</strong> page.
     This is the top result if you enter <strong>Councillors</strong> in the Knowledge search above. 
@@ -3866,7 +3868,7 @@ const applyForRehousing = new ContentH(
 
   `,
   { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
-  { typeKey: "" },
+  { typeKey: "rehousing_services_transferred_to_service" },
   { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
@@ -11761,7 +11763,7 @@ const temporaryAccommodation = new ContentH(
       <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2930832')">0114 2930832</a>
     </p>
   `,
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
   { typeKey: "sheltered_and_supported_transferred_to_service" },
   { typeKey: "sheltered_and_supported_information_provided" },
   {
