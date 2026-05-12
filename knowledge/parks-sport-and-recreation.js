@@ -1219,11 +1219,11 @@ const allotmentsEnquiries = new ContentPSaR(
        If a customer wishes to end their tenancy they need to write to PWC with the end date, site name, plot number, and the tenants name.
        <br>This information should be sent to:
        <br>
-       <br>   Allotment Office,
-       <br>   The Centre in the Park,
-       <br>   Guildford Avenue,
-       <br>   Sheffield, 
-       <br>   S2 2PL
+       <br>%20%20%20Allotment Office,
+       <br>%20%20%20The Centre in the Park,
+       <br>%20%20%20Guildford Avenue,
+       <br>%20%20%20Sheffield, 
+       <br>%20%20%20S2 2PL
     </p>
     </div>
   </details>
