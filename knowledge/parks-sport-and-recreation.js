@@ -1293,7 +1293,7 @@ const allotmentsEnquiries = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "25/11/2025", name: "Andy Walker" }
+  { date: "12/05/2026", name: "Liz Taster" }
 );
 
 const allotmentsReportIssue = new ContentPSaR(
