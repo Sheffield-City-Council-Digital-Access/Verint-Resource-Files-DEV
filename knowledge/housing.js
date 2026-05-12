@@ -2342,6 +2342,11 @@ const generalCouncilHousing = new ContentH(
   <p>
     <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx"target="_blank">Telephone Directory</a>
   </p>
+  <p>
+    If a customer queries who their local councillors are, please refer to the informaiton on the <strong>Councillors</strong> page.
+    This is the top result if you enter <strong>Councillors</strong> in the Knowledge search above. 
+    The page allows you to send links to customers to review information about Sheffield Councillors and their duties, and to find who their local councillors are.
+  </p>
   `,
   { buttonLabel: "Raise enquiry", formName: "hou_routing_enquiry" },
   { typeKey: "housing_general_transferred_to_service" },
