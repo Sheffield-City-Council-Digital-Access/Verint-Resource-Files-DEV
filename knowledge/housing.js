@@ -2342,6 +2342,13 @@ const generalCouncilHousing = new ContentH(
   <p>
     <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx"target="_blank">Telephone Directory</a>
   </p>
+  
+  <h3>Local Councillors</h3>
+  <p>
+    If a customer queries who their local councillors are, please refer to the informaiton on the <strong>Councillors</strong> page.
+    This is the top result if you enter <strong>Councillors</strong> in the Knowledge search above. 
+    <br>The page allows you to send links to customers to review information about Sheffield Councillors and their duties, and to find who their local councillors are.
+  </p>
   `,
   { buttonLabel: "Raise enquiry", formName: "hou_routing_enquiry" },
   { typeKey: "housing_general_transferred_to_service" },
@@ -2357,7 +2364,7 @@ const generalCouncilHousing = new ContentH(
     ],
     categories: ["Housing", "Estates and Environments"],
   },
-  { date: "07/05/2025", name: "Dinah Williams" }
+  { date: "12/05/2026", name: "Liz Taster" }
 );
 //#endregion General Council Housing
 
@@ -3861,7 +3868,7 @@ const applyForRehousing = new ContentH(
 
   `,
   { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
-  { typeKey: "" },
+  { typeKey: "rehousing_services_transferred_to_service" },
   { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
@@ -3878,7 +3885,7 @@ const applyForRehousing = new ContentH(
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "28/10/2025", name: "Motolani Akinola" }
+  { date: "12/05/2026", name: "Liz Taster" }
 );
 
 const bidding = new ContentH(
