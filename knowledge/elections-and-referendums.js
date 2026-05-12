@@ -2462,7 +2462,8 @@ const councillors = new ContentEaR(
     </section>
     <p>
       For more information about Sheffield Councillors and their duties, you can
-      visit the official Sheffield City Council page:
+      visit the official Sheffield City Council page 
+      <a href="https://www.sheffield.gov.uk/your-city-council/about-council/elected-representatives" target="_blank">Elected representatives | Sheffield City Council</a>
     </p>
     <p>
     </p>
@@ -2479,6 +2480,29 @@ const councillors = new ContentEaR(
 >
     Send link to review further information
 </button>
+
+    <p>
+      To find your local councillor, you can visit the official Sheffield City Council page 
+      <a href="https://democracy.sheffield.gov.uk/mgFindMember.aspx" target="_blank">Find Your Councillor | Sheffield City Council</a>
+    </p>
+    <p>
+    This page allows you to search for your councillor by name, party, ward or postcode. There is also a link to an interactive map.
+    </p>
+
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Find%20Your%20Councillor\`
+    "
+>
+    Send link to review further information
+</button>
+
+
 
   `,
   { buttonLabel: "", formName: "" },
@@ -2499,11 +2523,16 @@ const councillors = new ContentEaR(
       "clr",
       "cllr",
       "counc",
-      "Council"
+      "Council",
+      "Councillor",
+      "Representative",
+      "Councillors",
+      "councilor",
+      "councilors",
     ],
     categories: ["Elections and Referendums", "Electoral"],
   },
-  { date: "01/05/2025", name: "Dinah Williams" }
+  { date: "12/06/2026", name: "Liz Taster" }
 );
 
 const electionResults = new ContentEaR(
