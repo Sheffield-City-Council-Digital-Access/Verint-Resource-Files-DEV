@@ -380,6 +380,12 @@ const applyBlueBadge = new ContentP(
           }interactionid=${KDF.getParams().interactionid}">raise an enquiry</a>.
       </p>
     </section>
+
+  <p>
+    Please also view the information in the knowledge area <strong>Request a replacement badge</strong>.
+    This is the top result if you enter <strong>replace blue badge</strong> in the Knowledge search above. 
+    The page provides information how to replace a lost, stolen or seized Blue Badge.
+  </p>
   `,
   {
     buttonLabel: "Apply for a blue badge",
@@ -540,6 +546,14 @@ const replacementBlueBadge = new ContentP(
             }interactionid=${KDF.getParams().interactionid}">raise an enquiry</a>.
         </p>
       </section>
+
+   <p>
+    Please also view the information in the knowledge area <strong>Apply for a Blue Badge</strong>.
+    This is the top result if you enter <strong>apply blue badge</strong> in the Knowledge search above. 
+    The page provides information about how to apply for a Blue Badge, including the eligibility, cost, evidence required 
+    and the ability to request a paper application form.
+  </p>
+
     `,
 
   {
@@ -573,7 +587,7 @@ const replacementBlueBadge = new ContentP(
     ],
     categories: ["Parking"],
   },
-  { date: "04/06/2025", name: "Dinah Williams" }
+  { date: "11/05/2026", name: "Liz Taster" }
 );
 
 const blueBadge = new MenuP(
