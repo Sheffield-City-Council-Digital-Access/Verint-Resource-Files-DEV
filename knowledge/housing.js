@@ -2345,7 +2345,7 @@ const generalCouncilHousing = new ContentH(
   
   <h3>Local Councillors</h3>
   <p>
-    If a customer queries who their local councillors are, please refer to the informaiton on the <strong>Councillors</strong> page.
+    If a customer queries who their local councillors are, please refer to the information on the <strong>Councillors</strong> page.
     This is the top result if you enter <strong>Councillors</strong> in the Knowledge search above. 
     <br>The page allows you to send links to customers to review information about Sheffield Councillors and their duties, and to find who their local councillors are.
   </p>
