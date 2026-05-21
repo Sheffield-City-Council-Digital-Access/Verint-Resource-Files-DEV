@@ -488,6 +488,13 @@ document.addEventListener("DOMContentLoaded", function () {
            * Creates the pagination buttons and appends them to the pagination container.
            */
           function createPagination() {
+            const requestInfo = document.getElementById(
+              "widget_ahtm_view_reuests_into"
+            );
+            if (requestInfo) {
+              requestInfo.style.display = "none";
+            }
+
             paginationContainer.innerHTML = "";
 
             const createButton = (text, page, className = "") => {
