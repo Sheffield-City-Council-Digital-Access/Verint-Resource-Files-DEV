@@ -56,7 +56,117 @@ class CoreBusiness {
   
 //#region Taxi Licensing
 
-  const applyHackneyCarriage = new ContentBusiness(
+  
+const drivingStandardsTestGuide = new ContentBusiness(
+  "drivingStandardsTestGuide",
+  "Driving Standards Test Guide",
+  "Apply for the Driving Standards Test as part of a taxi driver licence application with Sheffield City Council.",
+  `<h3>Service Overview</h3>
+  <p>The Driving Standards Test is part of the process for applying for a new taxi driver licence with Sheffield City Council. It is designed to assess whether an applicant can drive safely, competently, and to a standard above that expected of an average driver.</p>
+  <p>Applicants must pass this test as part of Stage 2 of the “fit and proper” assessment required before submitting a taxi driver licence application.</p>
+
+  <h3>Eligibility Criteria</h3>
+  <ul>
+    <li>Be at least 21 years old</li>
+    <li>Have held a DVLA driving licence for at least 12 months</li>
+    <li>Have already completed:</li>
+    <ul>
+      <li>A Level 2 Certificate in the Introduction to the Role of the Professional Taxi and Private Hire Driver</li>
+      <li>Safeguarding training</li>
+    </ul>
+  </ul>
+
+  <h3>Test Details</h3>
+  <p>The test is carried out by a driving standards examiner at the Council’s Transport Department.</p>
+  <p>During the assessment, applicants will be tested on practical driving ability and knowledge of road safety. The test will include any three of the following manoeuvres:</p>
+  <ul>
+    <li>Emergency stop</li>
+    <li>Left-hand reverse</li>
+    <li>Right-hand reverse</li>
+    <li>Turn in the road</li>
+    <li>Reverse parking</li>
+  </ul>
+  <p>Applicants are also assessed on their knowledge of the Highway Code.</p>
+  <p>To prepare, the Council recommends studying the Driving and Vehicle Standards Agency (DVSA) Official Guide to Driving.</p>
+
+  <h3>Assessment Outcome</h3>
+  <p>To pass the test, applicants must demonstrate a high standard of driving and road safety awareness.</p>
+  <p>If an applicant fails:</p>
+  <ul>
+    <li>They will need to take additional lessons with a qualified instructor</li>
+    <li>They must complete this before booking another test</li>
+    <li>The test fee is not refundable and must be paid again for a re-test</li>
+  </ul>
+
+  <h3>Validity Period</h3>
+  <p>A passed Driving Standards Test is valid for one year from the date of passing.</p>
+
+  <h3>Application Process</h3>
+  <p>Applications for the Driving Standards Test must be completed online.</p>
+  <p>Applicants are required to provide:</p>
+  <ul>
+    <li>Full DVLA driving licence number (held for at least 12 months)</li>
+  </ul>
+  <p>A fee is required at the point of application.</p>
+
+  <h3>Fees and Charges</h3>
+  <ul>
+    <li>Driving Standards Test fee: £75</li>
+  </ul>
+  <p>Fees are not refunded if:</p>
+  <ul>
+    <li>The applicant fails the test</li>
+    <li>The applicant arrives late and the test cannot be carried out</li>
+  </ul>
+
+  <h3>Vehicle Requirements</h3>
+  <p>Applicants may use one of the following vehicles for the test:</p>
+  <ul>
+    <li>Driving instructor’s vehicle</li>
+    <li>Rental vehicle</li>
+    <li>Personal vehicle</li>
+    <li>Licensed vehicle registered in their name (with licence markings removed before attending)</li>
+  </ul>
+  <p>Applicants must ensure the vehicle used is appropriately insured.</p>
+
+  <h3>Next Steps</h3>
+  <p>Once the Driving Standards Test is passed, applicants can proceed with the remaining requirements in Stage 2 of the taxi licensing process before applying for their taxi driver licence.</p>`,
+  { buttonLabel: "Apply Online", formName: "drivingStandardsTestForm" },
+  { typeKey: "Application" },
+  { typeKey: "Apply" },
+  {
+    type: "Application",
+    keywords: [
+      "driving standards test",
+      "driving",
+      "standards",
+      "test",
+      "taxi driver licence",
+      "DVLA",
+      "DVSA",
+      "driver test",
+      "taxi licensing",
+      "private hire driver",
+      "application",
+      "apply driving test",
+      "driving assessment",
+      "road safety test",
+      "drivers licence test",
+      "taxi test",
+      "drivng standards test",
+      "drving",
+      "standrds",
+      "driving tests",
+      "taxi driver tests",
+      "standards test"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "03/06/2026", name: "Liz Taster" }
+);
+
+
+const applyHackneyCarriage = new ContentBusiness(
     "applyHackneyCarriage",
     "Apply for a New Hackney Carriage Licence",
     "Information regarding taxi licensing",
@@ -2865,7 +2975,8 @@ const renewDriverLicence = new ContentBusiness(
     renewDriverLicence,
     applyPrivateLicence,
     applyPrivateOperator,
-    renewPrivateOperator
+    renewPrivateOperator,
+    drivingStandardsTestGuide
   ]
 );
 
