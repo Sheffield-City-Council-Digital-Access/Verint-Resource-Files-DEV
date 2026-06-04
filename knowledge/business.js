@@ -2964,9 +2964,13 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
     <p>Customers must apply for a private hire vehicle licence if they want to use a vehicle for private hire services in Sheffield. Once granted, the licence is valid for <strong>up to 12 months</strong>.</p>
     <p>The application is completed online via the Sheffield City Council website.</p>
     <p>Detailed information about all stages of applying for a Private Hire Vehicle Licence can be found at:
-    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private">Private hire vehicle licence Sheffield City Council</a></p>
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private">
+    Private hire vehicle licence Sheffield City Council</a></p>
+    <p>[insert send link]</p>
     <p>A link to the online form to be completed can be found here:
-    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/applying-private-hire/apply-new-licence">Apply for a private hire vehicle licence Sheffield City Council</a></p>
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/applying-private-hire/apply-new-licence">
+    Apply for a private hire vehicle licence Sheffield City Council</a></p>
+    <p>[insert send link]</p>
 
   <h3>Key Points for Agents</h3>
     <p>The licence is <strong>for the vehicle only</strong> (separate licences are required for drivers and operators).</p>
@@ -2988,7 +2992,9 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
     <div class="accordion-content">
         <p>Vehicles must meet specific standards (for example, safety and design requirements).</p>
         <p>Customers are advised to check vehicle suitability before applying. Full details can be found here:
-        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-private-hire">Choosing a private hire vehicle</a></p>
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-private-hire">
+        Choosing a private hire vehicle</a></p>
+        <p>[insert send link]</p>
     </div>
     </details>
 
