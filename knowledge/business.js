@@ -2981,34 +2981,64 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
   <h3>Cost</h3>
     <p>The fee is <strong>£212</strong>, payable online when submitting the application.</p>
 
-  <h3>Before Applying</h3>
-    <p>Vehicles must meet specific standards (for example, safety and design requirements).</p>
-    <p>Customers are advised to check vehicle suitability before applying. Full details can be found here:
-    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-private-hire">Choosing a private hire vehicle</a></p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before Applying</h3>
+    </summary>
+    <div class="accordion-content">
+        <p>Vehicles must meet specific standards (for example, safety and design requirements).</p>
+        <p>Customers are advised to check vehicle suitability before applying. Full details can be found here:
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-private-hire">Choosing a private hire vehicle</a></p>
+    </div>
+    </details>
 
-  <h3>What Customers Need to Apply</h3>
-    <p>Customers must provide: </p>
-      <ul>
-        <li><strong>V5C registration certificate (log book)</strong> or keeper’s supplement</li>
-        <li><strong>Basic DBS certificate</strong> (only if they do not already hold a taxi driver licence with the council)</li>
-      </ul>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Customers Need to Apply</h3>
+    </summary>
+    <div class="accordion-content">
+        <p>Customers must provide: </p>
+          <ul>
+            <li><strong>V5C registration certificate (log book)</strong> or keeper’s supplement</li>
+            <li><strong>Basic DBS certificate</strong> (only if they do not already hold a taxi driver licence with the council)</li>
+          </ul>
+    </div>
+  </details>
 
-  <h3>After Applying</h3>
-    <p>The council will contact the customer <strong>within 5 working days</strong> with a <strong>compliance test appointment</strong>.</p>
-    <p>Vehicles must attend and <strong>pass the compliance test</strong>.</p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>After Applying</h3>
+    </summary>
+    <div class="accordion-content">
+      <p>The council will contact the customer <strong>within 5 working days</strong> with a <strong>compliance test appointment</strong>.</p>
+      <p>Vehicles must attend and <strong>pass the compliance test</strong>.</p>
+    </div>
+  </details>
 
-  <h3>Issuing the Licence</h3>
-    <p>Once the vehicle passes the test, the customer must provide:</p>
-      <ul>
-        <li><strong>Insurance certificate or cover note</strong></li>
-        <li><strong>Compliance certificate</strong></li>
-      </ul>
-    <p>The council will then issue the vehicle licence.</p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Issuing the Licence</h3>
+    </summary>
+    <div class="accordion-content">
+      <p>Once the vehicle passes the test, the customer must provide:</p>
+        <ul>
+          <li><strong>Insurance certificate or cover note</strong></li>
+          <li><strong>Compliance certificate</strong></li>
+        </ul>
+      <p>The council will then issue the vehicle licence.</p>
+    </div>
+  </details>
 
-  <h3>Collecting the Licence</h3>
-    <p>Customers will be contacted by email to <strong>arrange collection</strong>.</p>
-    <p>The licence includes a <strong>plate, bracket, clips, and signage</strong>, so it <strong>cannot be posted</strong>.</p>
-    <p>Someone else can collect it on their behalf if arranged in advance.</p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Collecting the Licence</h3>
+    </summary>
+    <div class="accordion-content">
+      <p>Customers will be contacted by email to <strong>arrange collection</strong>.</p>
+      <p>The licence includes a <strong>plate, bracket, clips, and signage</strong>, so it <strong>cannot be posted</strong>.</p>
+      <p>Someone else can collect it on their behalf if arranged in advance.</p>
+    </div>
+  </details>
 
   <h3>Related Information</h3>
     <p>Customers should ensure they also have: </p>
