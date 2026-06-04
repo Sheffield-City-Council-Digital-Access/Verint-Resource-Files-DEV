@@ -2961,62 +2961,62 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
   "Apply for a Private Hire Vehicle Licence",
   "Guidance on applying for a private hire vehicle licence in Sheffield, including requirements, stages, costs, and collection.",
   `<h3>Overview</h3>
-<p>Customers must apply for a private hire vehicle licence if they want to use a vehicle for private hire services in Sheffield. Once granted, the licence is valid for <strong>up to 12 months</strong>.</p>
-<p>The application is completed online via the Sheffield City Council website.</p>
-<p>Detailed information about all stages of applying for a Private Hire Vehicle Licence can be found at:
-<a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private">Private hire vehicle licence Sheffield City Council</a></p>
-<p>A link to the online form to be completed can be found here:
-<a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/applying-private-hire/apply-new-licence">Apply for a private hire vehicle licence Sheffield City Council</a></p>
+    <p>Customers must apply for a private hire vehicle licence if they want to use a vehicle for private hire services in Sheffield. Once granted, the licence is valid for <strong>up to 12 months</strong>.</p>
+    <p>The application is completed online via the Sheffield City Council website.</p>
+    <p>Detailed information about all stages of applying for a Private Hire Vehicle Licence can be found at:
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private">Private hire vehicle licence Sheffield City Council</a></p>
+    <p>A link to the online form to be completed can be found here:
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/applying-private-hire/apply-new-licence">Apply for a private hire vehicle licence Sheffield City Council</a></p>
 
-<h3>Key Points for Agents</h3>
-<ul>
-<li>The licence is <strong>for the vehicle only</strong> (separate licences are required for drivers and operators).</li>
-<li>The vehicle <strong>must pass a compliance test</strong> before a licence can be issued.</li>
-<li>Applications follow a <strong>3-stage process</strong>:
-  <ul>
-    <li>Apply (online form submitted)</li>
-    <li>Process (council checks application)</li>
-    <li>Determine (decision made after test)</li>
-  </ul>
-</li>
-</ul>
+  <h3>Key Points for Agents</h3>
+    <p>The licence is <strong>for the vehicle only</strong> (separate licences are required for drivers and operators).</p>
+    <p>The vehicle <strong>must pass a compliance test</strong> before a licence can be issued.</p>
+    <p>Applications follow a <strong>3-stage process</strong>:<p>
+      <ul>
+        <li>Apply (online form submitted)</li>
+        <li>Process (council checks application)</li>
+        <li>Determine (decision made after test)</li>
+      </ul>
 
-<h3>Cost</h3>
-<p>The fee is <strong>£212</strong>, payable online when submitting the application.</p>
+  <h3>Cost</h3>
+    <p>The fee is <strong>£212</strong>, payable online when submitting the application.</p>
 
-<h3>Before Applying</h3>
-<p>Vehicles must meet specific standards (for example, safety and design requirements).</p>
-<p>Customers are advised to check vehicle suitability before applying. Full details can be found here:
-<a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-private-hire">Choosing a private hire vehicle</a></p>
+  <h3>Before Applying</h3>
+    <p>Vehicles must meet specific standards (for example, safety and design requirements).</p>
+    <p>Customers are advised to check vehicle suitability before applying. Full details can be found here:
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-private-hire">Choosing a private hire vehicle</a></p>
 
-<h3>What Customers Need to Apply</h3>
-<ul>
-<li><strong>V5C registration certificate (log book)</strong> or keeper’s supplement</li>
-<li><strong>Basic DBS certificate</strong> (only if they do not already hold a taxi driver licence with the council)</li>
-</ul>
+  <h3>What Customers Need to Apply</h3>
+    <p>Customers must provide: </p>
+      <ul>
+        <li><strong>V5C registration certificate (log book)</strong> or keeper’s supplement</li>
+        <li><strong>Basic DBS certificate</strong> (only if they do not already hold a taxi driver licence with the council)</li>
+      </ul>
 
-<h3>After Applying</h3>
-<p>The council will contact the customer <strong>within 5 working days</strong> with a <strong>compliance test appointment</strong>.</p>
-<p>Vehicles must attend and <strong>pass the compliance test</strong>.</p>
+  <h3>After Applying</h3>
+    <p>The council will contact the customer <strong>within 5 working days</strong> with a <strong>compliance test appointment</strong>.</p>
+    <p>Vehicles must attend and <strong>pass the compliance test</strong>.</p>
 
-<h3>Issuing the Licence</h3>
-<p>Once the vehicle passes the test, the customer must provide:</p>
-<ul>
-<li><strong>Insurance certificate or cover note</strong></li>
-<li><strong>Compliance certificate</strong></li>
-</ul>
-<p>The council will then issue the vehicle licence.</p>
+  <h3>Issuing the Licence</h3>
+    <p>Once the vehicle passes the test, the customer must provide:</p>
+      <ul>
+        <li><strong>Insurance certificate or cover note</strong></li>
+        <li><strong>Compliance certificate</strong></li>
+      </ul>
+    <p>The council will then issue the vehicle licence.</p>
 
-<h3>Collecting the Licence</h3>
-<p>Customers will be contacted by email to <strong>arrange collection</strong>.</p>
-<p>The licence includes a <strong>plate, bracket, clips, and signage</strong>, so it <strong>cannot be posted</strong>.</p>
-<p>Someone else can collect it on their behalf if arranged in advance.</p>
+  <h3>Collecting the Licence</h3>
+    <p>Customers will be contacted by email to <strong>arrange collection</strong>.</p>
+    <p>The licence includes a <strong>plate, bracket, clips, and signage</strong>, so it <strong>cannot be posted</strong>.</p>
+    <p>Someone else can collect it on their behalf if arranged in advance.</p>
 
-<h3>Related Information</h3>
-<ul>
-<li>A <strong>valid private hire driver licence</strong></li>
-<li>A <strong>licensed operator</strong> (if working through a company)</li>
-</ul>`,
+  <h3>Related Information</h3>
+    <p>Customers should ensure they also have: </p>
+      <ul>
+        <li>A <strong>valid private hire driver licence</strong></li>
+        <li>A <strong>licensed operator</strong> (if working through a company)</li>
+      </ul>`,
+
   { buttonLabel: "Apply Now", formName: "privateHireVehicleLicenceForm" },
   { typeKey: "LicenceApplication" },
   { typeKey: "VehicleLicensing" },
