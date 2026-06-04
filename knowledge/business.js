@@ -2961,8 +2961,11 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
   "Apply for a Private Hire Vehicle Licence",
   "Guidance on applying for a private hire vehicle licence in Sheffield, including requirements, stages, costs, and collection.",
   `<h3>Overview</h3>
-    <p>Customers must apply for a private hire vehicle licence if they want to use a vehicle for private hire services in Sheffield. Once granted, the licence is valid for <strong>up to 12 months</strong>.</p>
-    <p>The application is completed online via the Sheffield City Council website.</p>
+    <p>
+      Customers must apply for a private hire vehicle licence if they want to use a vehicle for private hire services in Sheffield. 
+      Once granted, the licence is valid for <strong>up to 12 months</strong>. 
+      The application is completed online via the Sheffield City Council website.
+    </p>
     <p>Detailed information about all stages of applying for a Private Hire Vehicle Licence can be found at:
     <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private">
     Private hire vehicle licence Sheffield City Council</a></p>
@@ -2973,21 +2976,22 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
     <p>[insert send link]</p>
 
   <h3>Key Points for Agents</h3>
-    <p>The licence is <strong>for the vehicle only</strong> (separate licences are required for drivers and operators).</p>
-    <p>The vehicle <strong>must pass a compliance test</strong> before a licence can be issued.</p>
+    <p>The licence is <strong>for the vehicle only</strong> - separate licences are required for <strong>drivers</strong> and <strong>operators</strong>.</p>
+    <p>As part of the process, the vehicle <strong>must pass a compliance test</strong> before a licence can be issued.</p>
     <p>Applications follow a <strong>3-stage process</strong>:<p>
       <ul>
-        <li>Apply (online form submitted)</li>
-        <li>Process (council checks application)</li>
-        <li>Determine (decision made after test)</li>
+        <li><strong>Apply</strong> - online form submitted</li>
+        <li><strong>Process</strong> - council checks application, vehicle undergoes compliance test</li>
+        <li><strong>Determine</strong> - decision made after test, after which a licence may be issued</li>
       </ul>
 
   <h3>Cost</h3>
-    <p>The fee is <strong>£212</strong>, payable online when submitting the application.</p>
+    <p>The fee is <strong>£212</strong>. This is payable online when submitting the application.</p>
 
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Before Applying</h3>
+     <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
         <p>Vehicles must meet specific standards (for example, safety and design requirements).</p>
@@ -3001,6 +3005,7 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
   <details class="accordion">
     <summary class="accordion-header">
       <h3>What Customers Need to Apply</h3>
+     <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
         <p>Customers must provide: </p>
@@ -3014,6 +3019,7 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
   <details class="accordion">
     <summary class="accordion-header">
       <h3>After Applying</h3>
+     <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>The council will contact the customer <strong>within 5 working days</strong> with a <strong>compliance test appointment</strong>.</p>
@@ -3024,6 +3030,7 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Issuing the Licence</h3>
+     <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>Once the vehicle passes the test, the customer must provide:</p>
@@ -3038,6 +3045,7 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
   <details class="accordion">
     <summary class="accordion-header">
       <h3>Collecting the Licence</h3>
+     <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
       <p>Customers will be contacted by email to <strong>arrange collection</strong>.</p>
@@ -3053,34 +3061,32 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
         <li>A <strong>licensed operator</strong> (if working through a company)</li>
       </ul>`,
 
-  { buttonLabel: "Apply Now", formName: "privateHireVehicleLicenceForm" },
+  { buttonLabel: "Apply Now", formName: "apply_private_hire" },
   { typeKey: "LicenceApplication" },
   { typeKey: "VehicleLicensing" },
   {
     type: "Application",
     keywords: [
-      "private hire vehicle licence",
+      "private hire",
       "PHV licence",
       "taxi vehicle licence",
-      "Sheffield City Council taxi licensing",
+      "taxi licensing",
       "private hire application",
       "vehicle compliance test",
-      "V5C log book",
-      "DBS certificate",
-      "taxi licence Sheffield",
-      "private hire car licence",
+      "licence",
+      "taxi licence",
       "apply PHV",
       "vehicle licensing process",
       "taxi vehicle permit",
       "PHV application",
-      "vehcle licnce",
-      "prvate hire licence",
-      "taxi licens",
+      "vehcle",
+      "licnce",
+      "license",
+      "prvate hire",
+      "licens",
       "vehicle compliance",
-      "operator licence",
-      "driver licence private hire"
     ],
-    categories: ["Parks and Countryside"]
+    categories: ["Business"]
   },
   { date: "04/06/2026", name: "Liz Taster" }
 );
