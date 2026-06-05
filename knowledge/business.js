@@ -165,137 +165,6 @@ const drivingStandardsTestGuide = new ContentBusiness(
   { date: "03/06/2026", name: "Liz Taster" }
 );
 
-
-const applyHackneyCarriage = new ContentBusiness(
-    "applyHackneyCarriage",
-    "Apply for a New Hackney Carriage Licence",
-    "**To Review** Information regarding taxi licensing",
-    `
-        <p>
-        Application process has 3 stages.
-        <ol>
-            <li>Apply</li> 
-            <li><a href="https://www.sheffield.gov.uk/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney-carriage-vehicle-licence/choosing-hackney-carriage" target="_blank">https://www.sheffield.gov.uk/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney-carriage-vehicle-licence/choosing-hackney-carriage</a></li>
-            <li>Process</li>
-            <li>Determine</li>
-        </ol>
-    </p>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Test appointments</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-            <p>
-                Once the applicant make an application for a Hackney Carriage Licence, the vehicle will be issued with a date to attend the compliance test.<br>
-                Vehicle compliance test certificate is valid for 14 days
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Hackney carriage disclosure and barring checks</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-            <p>
-                If the applicant does not currently hold a taxi driver licence with SCC, then they must provide a  basic Disclosure and Barring Service (DBS) certificate.<br>
-                <br>
-                If a vehicle licence is in the name of a company or a partnership, all named directors and partners within the company will need to provide us with a Basic Disclosure from the DBS.<br>
-                <br>
-                The cost for a basic DBS check is <strong>£21.50</strong>.  
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Hackney carriage vehicle insurance</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-            <p>
-                This is a valid insurance certificate or cover note that tells applicant or a licensed driver, are insured to drive the vehicle and the purposes to carry passengers for hire and reward.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Cost</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-            <p>
-                A hackney carriage vehicle licence costs <strong>£212</strong>.  
-                Must pay online when complete the hackney carriage application form.
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Information need</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-            <p>
-                Basic DBS disclosure or your DBS certificate number if you are signed up to the online check service.<br>
-                Original V5C registration certificate (logbook) or the keepers supplement of the V5C if you have recently bought the vehicle.<br>
-                Original certificate of insurance or the insurance cover note.<br>
-                Compliance certificate.
-            </p>
-        </div>
-    </details>
-
-     <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Apply for a new HC licence</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-            <p>
-                Online form via Big Change portal Must licence a vehicle to use it as a HC in Sheffield.    Soon to be SCC form
-            </p>
-        </div>
-    </details>
-
-    <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Collecting the licence</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
-            <p>
-                Service will contact the applicant by email to confirm that they have issued  hackney carriage licence and arrange a time for the applicant to collect  licence from the reception at depot.
-                Arrange a time for pick by either by, email <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a> or telephone <a href="#" class="telephoneNumber" onclick="copyToClipboard('0114 2734264')">0114 2734264</a>.
-            </p>
-        </div>
-    </details>
-    `,
-  
-    { buttonLabel: "", formName: ""},
-    { typeKey: "switchboard_transferred_to_service" },
-    { typeKey: "switchboard_information_provided"},
-    {
-      type: "Request",
-      keywords: [
-        "Switchboard",
-        "Switch board",
-        "Switch",
-        "transfer",
-        "redirect",
-        "transfer call",
-        "call"
-      ],
-      categories: ["Your City Council"],
-    },
-    { date: "21/11/2025", name: "Joseph Coupland"} 
-  );
-
-
   const renewHackneyCarriage = new ContentBusiness(
     "renewHackneyCarriage",
     "Renew a Hackney Carriage Vehicle Licence",
@@ -2801,7 +2670,7 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
   <h3>Related Information</h3>
     <p>Customers should ensure they also have: </p>
       <ul>
-        <li>A <strong>valid private hire driver licence</strong></li>
+        <li>A <strong>valid taxi driver licence</strong></li>
         <li>A <strong>licensed operator</strong> (if working through a company)</li>
       </ul>`,
 
@@ -2938,11 +2807,8 @@ const applyHackneyCarriageVehicleLicence = new ContentBusiness(
   </details>
 
   <h3>Related Information</h3>
-    <p>Customers should ensure they also have: </p>
-      <ul>
-        <li>A <strong>valid private hire driver licence</strong></li>
-        <li>A <strong>licensed operator</strong> (if working through a company)</li>
-      </ul>`,
+    <p>Customers should ensure they also have a <strong>valid taxi driver licence</strong>.</p>`
+,
 
   { buttonLabel: "Apply Now", formName: "apply_hackney_carriage" },
   { typeKey: "LicenceApplication" },
@@ -2976,12 +2842,113 @@ const applyHackneyCarriageVehicleLicence = new ContentBusiness(
   { date: "05/06/2026", name: "Liz Taster" }
 );
 
+
+const applyTaxiDriverLicence = new ContentBusiness(
+  "applyTaxiDriverLicence",
+  "Apply for a Taxi Driver Licence",
+  "Customers must apply for a taxi driver licence to drive a private hire vehicle or hackney carriage in Sheffield.",
+  `
+  <h3>Overview</h3>
+    <p>Customers must apply for a taxi driver licence to drive a private hire vehicle or hackney carriage in Sheffield. A licence will only be granted once the applicant has passed all stages of the “fit and proper test”. Applicants cannot drive a taxi while their application is being processed.</p>
+
+  <h3>Eligibility and Pre‑Application Requirements</h3>
+    <p>Applicants must be over 21 years old and have held a DVLA driving licence for more than 12 months.</p>
+    <p>Before applying, customers must complete stages 1 and 2 of the process, which include the following checks, tests, and qualifications:</p>
+      <ul>
+        <li>Taxi driver qualification:</li>
+        <li>Certificate in Introduction to the Role of the Professional Taxi and Private Hire Driver (includes safeguarding and disability awareness)</li>
+        <li>Proof of right to work in the UK</li>
+        <li>Knowledge Test (local area knowledge, licensing conditions, highway code, safeguarding)</li>
+        <li>Driving standards test</li>
+        <li>Disclosure and Barring Service (DBS) check</li>
+        <li>Criminal and motoring convictions check</li>
+        <li>DVLA check</li>
+        <li>Medical assessment confirming fitness to drive</li>
+      </ul>
+    <p>Applicants must complete all required stages before they are eligible to submit an application. Applicants must also submit a passport-sized photograph.</p>
+
+  <h3>Application Process</h3>
+    <p>Once all pre‑application requirements are completed, customers can:</p>
+      <ul>
+        <li>Submit an online application form for a new taxi driver licence.</li>
+        <li>Provide required documents, including:</li>
+        <li>Proof of right to work (if not already verified)</li>
+        <li>Current DVLA driving licence</li>
+      </ul>
+    <p>After submitting the application, an email link will be sent to pay the licence fee.</p>
+
+  <h3>Costs</h3>
+    <p>The fee depends on the licence duration chosen. Licences can be granted for 1, 2 or 3 years:</p>
+      <ul>
+        <li>1 year: £223</li>
+        <li>2 years: £245</li>
+        <li>3 years: £268</li>
+      </ul>
+    <p>Once an online application is completed, the customer will receive a separate email with a link to pay.</p>
+
+  <h3>Key Information for Call Handling</h3>
+    <ul>
+      <li>Customers must complete all tests and checks before applying; the application cannot proceed without these.</li>
+      <li>The process is structured in three stages, with the application only submitted at the final stage.</li>
+      <li>Customers are not permitted to work as taxi drivers until their licence is approved.</li>
+      <li>Payment is made after submitting the online form via a separate email link.</li>
+    </ul>
+
+  <h3>Useful Links</h3>
+    <p>Detailed information about all stages of applying for a taxi driver licence can be found here:
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence">Applying for a new taxi driver licence | Sheffield City Council</a></p>
+    <p>[insert send link]</p>
+
+    <p>A link to the licensing policy and the online form that needs to be completed can be found here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/apply">Apply for a new taxi driver licence | Sheffield City Council</a></p>
+    <p>[insert send link]</p>
+    `,
+
+    { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Application",
+    keywords: [
+      "taxi driver licence",
+      "taxi license",
+      "private hire licence",
+      "hackney carriage licence",
+      "Sheffield taxi",
+      "DVLA",
+      "DBS check",
+      "Disclosure and Barring Service",
+      "fit and proper test",
+      "taxi application",
+      "driver application",
+      "knowledge test",
+      "driving standards",
+      "medical assessment",
+      "right to work",
+      "licensing policy",
+      "apply taxi licence",
+      "apply taxi license",
+      "apply taxi driver licence Sheffield",
+      "taxi driver liscence",
+      "taxi driver lisence",
+      "taxi driver licnese",
+      "taksi licence",
+      "private hire liscense",
+      "hackney carrage licence",
+      "DBS chek",
+      "DVLA check licence"
+    ],
+    categories: ["Business"]
+  },
+  { date: "05/06/2026", name: "Liz Taster" }
+);
+
+
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
   "Taxi Licensing",
   "Information regarding taxi licensing",
   [
-    applyHackneyCarriage,
     renewHackneyCarriage,
     renewPriviateHire,
     vechicleInspections,
@@ -2997,9 +2964,11 @@ const applyHackneyCarriageVehicleLicence = new ContentBusiness(
     renewPrivateOperator,
     drivingStandardsTestGuide,
     applyPrivateHireVehicleLicence,
-    applyHackneyCarriageVehicleLicence
+    applyHackneyCarriageVehicleLicence,
+    applyTaxiDriverLicence
   ]
 );
+
 
 
 //#endregion Taxi Licensing
