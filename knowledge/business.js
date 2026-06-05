@@ -169,7 +169,7 @@ const drivingStandardsTestGuide = new ContentBusiness(
 const applyHackneyCarriage = new ContentBusiness(
     "applyHackneyCarriage",
     "Apply for a New Hackney Carriage Licence",
-    "Information regarding taxi licensing",
+    "**To Review** Information regarding taxi licensing",
     `
         <p>
         Application process has 3 stages.
@@ -299,7 +299,7 @@ const applyHackneyCarriage = new ContentBusiness(
   const renewHackneyCarriage = new ContentBusiness(
     "renewHackneyCarriage",
     "Renew a Hackney Carriage Vehicle Licence",
-    "Information regarding taxi licensing",
+    "**To Review** - Information regarding taxi licensing",
     `
     <p>
       Hackney carriage vehicle licence will be valid for a maximum of 12 months.
@@ -412,7 +412,7 @@ const applyHackneyCarriage = new ContentBusiness(
    const renewPriviateHire = new ContentBusiness(
     "renewPriviateHire",
     "Renew a Private Hire Vehicle Licence",
-    "Information regarding taxi licensing",
+    "**To Review** - Information regarding taxi licensing",
     `
     <p>
       Hackney carriage vehicle licence will be valid for a maximum of 12 months.
@@ -526,7 +526,7 @@ const applyHackneyCarriage = new ContentBusiness(
 const vechicleInspections = new ContentBusiness(
     "vechicleInspections",
     "Vehicle Inspections and Testing",
-    "Information Regarding Taxi Licensing",
+    "**To Review** - Information Regarding Taxi Licensing",
     `
         <details class="accordion">
         <summary class="accordion-header">
@@ -747,7 +747,7 @@ const vechicleInspections = new ContentBusiness(
   const vechicleCustomerCharter = new ContentBusiness(
     "vechicleCustomerCharter",
     "Vehicle Testing Customer Charter",
-    "Information Regarding Taxi Licensing",
+    "**To Review** - Information Regarding Taxi Licensing",
     `    
         <details class="accordion">
         <summary class="accordion-header">
@@ -911,7 +911,7 @@ const vechicleInspections = new ContentBusiness(
 const surrenderLicence = new ContentBusiness(
     "surrenderLicence",
     "Surrender a Vehicle Licence",
-    "Surrender a vehicle licence",
+    "**To Review** - Surrender a vehicle licence",
     `
     <h3>Keeping your private hire or hackney carriage vehicle safe</h3>
     <p>
@@ -941,7 +941,7 @@ const surrenderLicence = new ContentBusiness(
 const transferLicence = new ContentBusiness(
     "transferLicence",
     "Transfer a Vehicle Licence",
-    "Transfer a vehicle licence",
+    "**To Review** - Transfer a vehicle licence",
     `
         <details class="accordion">
         <summary class="accordion-header">
@@ -1027,7 +1027,7 @@ const transferLicence = new ContentBusiness(
     const renewPriviateLicence = new ContentBusiness(
     "renewPriviateLicence",
     "Renewing a Private Hire Vehicle Licence",
-    "Renewing a private hire vehicle licence",
+    "**To Review** - Renewing a private hire vehicle licence",
     `
         <h3>Before you renew</h3>
         <p>
@@ -1197,7 +1197,7 @@ const transferLicence = new ContentBusiness(
   const renewVechicleLicence = new ContentBusiness(
     "renewVechicleLicence",
     "Renewing a Hackney Carriage Vehicle Licence",
-    "Renewing a hackney carriage vehicle licence",
+    "**To Review** - Renewing a hackney carriage vehicle licence",
     `
     <h3>Before you renew</h3>
     <h4>About insurance</h4>
@@ -1313,7 +1313,7 @@ const transferLicence = new ContentBusiness(
 const medicalNeeds = new ContentBusiness(
     "medicalNeeds",
     "Medical Exemptions",
-    "Medical Needs",
+    "**To Review** - Medical Needs",
     `
     <p>
         Under the Equality Act 2010, the law says that you should carry passengers with assistance dogs and passengers in wheelchairs in your taxi.<br>
@@ -1548,7 +1548,7 @@ const medicalNeeds = new ContentBusiness(
   const applyTaxiDriver = new ContentBusiness(
     "applyTaxiDriver",
     "Apply for a New Taxi Driver Licence",
-    "Apply for a Private Hire or Hackney Carriage Driver Licence",
+    "**To Review** - Apply for a Private Hire or Hackney Carriage Driver Licence",
     `
         <details class="accordion">
         <summary class="accordion-header">
@@ -1872,7 +1872,7 @@ const medicalNeeds = new ContentBusiness(
 const applyPrivateOperator = new ContentBusiness(
     "applyPrivateOperator",
     "Apply Private Hire Vehicle Operators Licence",
-    "Apply Private Hire Vehicle Operators Licence",
+    "**To Review** - Apply Private Hire Vehicle Operators Licence",
     `
     <details class="accordion">
   <summary class="accordion-header">
@@ -2308,7 +2308,7 @@ const applyPrivateOperator = new ContentBusiness(
 const renewPrivateOperator = new ContentBusiness(
     "renewPrivateOperator",
     "Renew Private Hire Vehicle Operators Licence",
-    "Renew Private Hire Vehicle Operators Licence",
+    "**To Review** - Renew Private Hire Vehicle Operators Licence",
     `
         <details class="accordion">
         <summary class="accordion-header">
@@ -2566,7 +2566,7 @@ const renewPrivateOperator = new ContentBusiness(
 const renewDriverLicence = new ContentBusiness(
     "renewDriverLicence",
     "Renew a Driver Licence",
-    "Renew a Private Hire or Hackney Carriage Drivers Licence",
+    "**To Review** - Renew a Private Hire or Hackney Carriage Drivers Licence",
     `
     <p>
     We will usually contact you by email when your taxi driver’s licence needs to be renewed,
@@ -2858,12 +2858,6 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
     applyPrivateHireVehicleLicence
   ]
 );
-
-
-
-
-
-
 
 
 //#endregion Taxi Licensing
