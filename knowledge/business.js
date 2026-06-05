@@ -2705,7 +2705,7 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
   `<h3>Overview</h3>
     <p>
       Customers must apply for a private hire vehicle licence if they want to use a vehicle for private hire services in Sheffield. 
-      Once granted, the licence is valid for <strong>up to 12 months</strong>. 
+      Once granted, the licence is valid for a maximum of <strong>12 months</strong>. 
       The application is completed online via the Sheffield City Council website.
     </p>
     <p>Detailed information about all stages of applying for a Private Hire Vehicle Licence can be found at:
@@ -2728,7 +2728,7 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
       </ul>
 
   <h3>Cost</h3>
-    <p>The fee is <strong>£212</strong>. This is payable online when submitting the application.</p>
+    <p>The fee is <strong>£212</strong>. Payment is made online when submitting the application.</p>
     <br>
 
   <details class="accordion">
@@ -2753,7 +2753,7 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
     <div class="accordion-content">
         <p>Customers must provide: </p>
           <ul>
-            <li><strong>V5C registration certificate (log book)</strong> or keeper’s supplement</li>
+            <li><strong>V5C registration certificate (log book)</strong>, or keeper’s supplement if the vehicle is recently purchased </li>
             <li><strong>Basic DBS certificate</strong> (only if they do not already hold a taxi driver licence with the council)</li>
           </ul>
     </div>
@@ -2765,7 +2765,7 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
      <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>The council will contact the customer <strong>within 5 working days</strong> with a <strong>compliance test appointment</strong>.</p>
+      <p>The council will contact the customer <strong>within 5 working days</strong> with a <strong>vehicle compliance test appointment</strong>.</p>
       <p>Vehicles must attend and <strong>pass the compliance test</strong>.</p>
     </div>
   </details>
@@ -2776,11 +2776,12 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
      <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>Once the vehicle passes the test, the customer must provide:</p>
+      <p>Once the vehicle passes the compliance test, the customer must provide:</p>
         <ul>
-          <li><strong>Insurance certificate or cover note</strong></li>
+          <li><strong>Insurance certificate or insurance cover note</strong></li>
           <li><strong>Compliance certificate</strong></li>
         </ul>
+      <p>The compliance test certificate is valid for <strong>14 days</strong>.</p>
       <p>The council will then issue the vehicle licence.</p>
     </div>
   </details>
@@ -2792,7 +2793,7 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
     </summary>
     <div class="accordion-content">
       <p>Customers will be contacted by email to <strong>arrange collection</strong>.</p>
-      <p>The licence includes a <strong>plate, bracket, clips, and signage</strong>, so it <strong>cannot be posted</strong>.</p>
+      <p>The licence includes a <strong>plate, bracket, clips, and signage</strong>, so it <strong>must be collected in person</strong>, it cannot be posted.</p>
       <p>Someone else can collect it on their behalf if arranged in advance.</p>
     </div>
   </details>
@@ -2817,6 +2818,7 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
       "private hire application",
       "vehicle compliance test",
       "licence",
+      "taxi",
       "taxi licence",
       "apply PHV",
       "vehicle licensing process",
@@ -2834,6 +2836,145 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
   { date: "04/06/2026", name: "Liz Taster" }
 );
 
+
+const applyHackneyCarriageVehicleLicence = new ContentBusiness(
+  "applyHackneyCarriageVehicleLicence",
+  "Apply for a Hackney Carriage Vehicle Licence",
+  "Guidance on applying for a Hackney Carriage vehicle licence in Sheffield, including requirements, stages, costs, and collection.",
+  `<h3>Overview</h3>
+    <p>
+      Customers must apply for a vehicle licence if they want to use a vehicle as a Hackney carriage (taxi) in Sheffield. 
+      Once granted, the licence is valid for a maximum of <strong>12 months</strong>. 
+      The application is completed online via the Sheffield City Council website.
+    </p>
+    <p>Detailed information about all stages of applying for a Hackney carriage Vehicle Licence can be found at:
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney">
+    Hackney carriage vehicle licence | Sheffield City Council</a></p>
+    <p>[insert send link]</p>
+    <p>A link to the online form to be completed can be found here:
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/applying-hackney-carriage/apply-new-licence">
+    Apply for a new hackney carriage vehicle licence | Sheffield City Council</a></p>
+    <p>[insert send link]</p>
+
+  <h3>Key Points for Agents</h3>
+    <p>The licence is for the <strong>vehicle only</strong> - separate licences are required for <strong>drivers</strong> and <strong>operators</strong>.</p>
+    <p>As part of the process, the vehicle <strong>must pass a compliance test</strong> before a licence can be issued.</p>
+    <p>Applications follow a <strong>3-stage process</strong>:<p>
+      <ul>
+        <li><strong>Apply</strong> - online form submitted</li>
+        <li><strong>Process</strong> - council checks application, vehicle undergoes compliance test</li>
+        <li><strong>Determine</strong> - decision made after test, after which a licence may be issued</li>
+      </ul>
+
+  <h3>Cost</h3>
+    <p>The fee is <strong>£212</strong>. Payment is made online when submitting the application.</p>
+    <br>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before Applying</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Vehicles must meet specific standards (for example, safety and design requirements).</p>
+        <p>Customers are advised to check vehicle suitability before applying. Full details can be found here:
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-hackney-carriage">
+        Choosing a Hackney carriage | Sheffield City Council</a></p>
+        <p>[insert send link]</p>
+    </div>
+    </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Customers Need to Apply</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>Customers must provide: </p>
+          <ul>
+            <li><strong>V5C registration certificate (log book)</strong>, or keeper’s supplement if the vehicle is recently purchased </li>
+            <li><strong>Basic DBS certificate</strong> (only if they do not already hold a taxi driver licence with the council)</li>
+          </ul>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>After Applying</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The council will contact the customer <strong>within 5 working days</strong> with a <strong>vehicle compliance test appointment</strong>.</p>
+      <p>Vehicles must attend and <strong>pass the compliance test</strong>.</p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Issuing the Licence</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Once the vehicle passes the compliance test, the customer must provide:</p>
+        <ul>
+          <li><strong>Insurance certificate or insurance cover note</strong></li>
+          <li><strong>Compliance certificate</strong></li>
+        </ul>
+      <p>The compliance test certificate is valid for <strong>14 days</strong>.</p>
+      <p>The council will then issue the vehicle licence.</p>
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Collecting the Licence</h3>
+     <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Customers will be contacted by email to <strong>arrange collection</strong>.</p>
+      <p>The licence includes a <strong>plate, bracket, clips, and signage</strong>, so it <strong>must be collected in person</strong>, it cannot be posted.</p>
+      <p>Someone else can collect it on their behalf if arranged in advance.</p>
+    </div>
+  </details>
+
+  <h3>Related Information</h3>
+    <p>Customers should ensure they also have: </p>
+      <ul>
+        <li>A <strong>valid private hire driver licence</strong></li>
+        <li>A <strong>licensed operator</strong> (if working through a company)</li>
+      </ul>`,
+
+  { buttonLabel: "Apply Now", formName: "apply_hackney_carriage" },
+  { typeKey: "LicenceApplication" },
+  { typeKey: "VehicleLicensing" },
+  {
+    type: "Application",
+    keywords: [
+      "hackney carriage",
+      "hackney",
+      "taxi vehicle licence",
+      "taxi licensing",
+      "hackney carriage application",
+      "vehicle compliance test",
+      "licence",
+      "taxi licence",
+      "apply HC",
+      "vehicle licensing process",
+      "taxi vehicle permit",
+      "HC application",
+      "taxi",
+      "vehcle",
+      "licnce",
+      "license",
+      "hckney",
+      "hackny",
+      "licens",
+      "vehicle compliance",
+    ],
+    categories: ["Business"]
+  },
+  { date: "05/06/2026", name: "Liz Taster" }
+);
 
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
@@ -2855,7 +2996,8 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
     applyPrivateOperator,
     renewPrivateOperator,
     drivingStandardsTestGuide,
-    applyPrivateHireVehicleLicence
+    applyPrivateHireVehicleLicence,
+    applyHackneyCarriageVehicleLicence
   ]
 );
 
