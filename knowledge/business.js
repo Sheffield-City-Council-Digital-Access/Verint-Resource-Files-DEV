@@ -2846,17 +2846,21 @@ const applyHackneyCarriageVehicleLicence = new ContentBusiness(
 const applyTaxiDriverLicence = new ContentBusiness(
   "applyTaxiDriverLicence",
   "Apply for a Taxi Driver Licence",
-  "Customers must apply for a taxi driver licence to drive a private hire vehicle or hackney carriage in Sheffield.",
+  "Guidance for applying for a taxi driver licence to drive a private hire vehicle or hackney carriage in Sheffield.",
   `
   <h3>Overview</h3>
-    <p>Customers must apply for a taxi driver licence to drive a private hire vehicle or hackney carriage in Sheffield. A licence will only be granted once the applicant has passed all stages of the “fit and proper test”. Applicants cannot drive a taxi while their application is being processed.</p>
+    <p>Customers must apply for a taxi driver licence to drive a private hire vehicle or hackney carriage in Sheffield. 
+    A licence will only be granted once the applicant has passed all stages of the “fit and proper test”. 
+    <strong>Applicants cannot drive a taxi while their application is being processed.</strong></p>
 
   <h3>Eligibility and Pre‑Application Requirements</h3>
-    <p>Applicants must be over 21 years old and have held a DVLA driving licence for more than 12 months.</p>
+    <p>Applicants must be <strong>over 21 years old</strong> and have held a DVLA driving licence for <strong>more than 12 months</strong>.</p>
     <p>Before applying, customers must complete stages 1 and 2 of the process, which include the following checks, tests, and qualifications:</p>
       <ul>
         <li>Taxi driver qualification:</li>
-        <li>Certificate in Introduction to the Role of the Professional Taxi and Private Hire Driver (includes safeguarding and disability awareness)</li>
+          <ul>
+            <li>Certificate in Introduction to the Role of the Professional Taxi and Private Hire Driver (includes safeguarding and disability awareness)</li>
+          </ul>
         <li>Proof of right to work in the UK</li>
         <li>Knowledge Test (local area knowledge, licensing conditions, highway code, safeguarding)</li>
         <li>Driving standards test</li>
@@ -2864,14 +2868,14 @@ const applyTaxiDriverLicence = new ContentBusiness(
         <li>Criminal and motoring convictions check</li>
         <li>DVLA check</li>
         <li>Medical assessment confirming fitness to drive</li>
+        <li>Provide a passport-sized photograph.</li>
       </ul>
-    <p>Applicants must complete all required stages before they are eligible to submit an application. Applicants must also submit a passport-sized photograph.</p>
+    <p>Applicants must complete all required stages before they are eligible to submit an application.</p>
 
   <h3>Application Process</h3>
-    <p>Once all pre‑application requirements are completed, customers can:</p>
+    <p>Once all pre‑application requirements are completed, customers can submit an online application form for a new taxi driver licence.</p>
+    <p>As part of the application, customers ust provide all required documents, including:</p>
       <ul>
-        <li>Submit an online application form for a new taxi driver licence.</li>
-        <li>Provide required documents, including:</li>
         <li>Proof of right to work (if not already verified)</li>
         <li>Current DVLA driving licence</li>
       </ul>
@@ -2884,12 +2888,12 @@ const applyTaxiDriverLicence = new ContentBusiness(
         <li>2 years: £245</li>
         <li>3 years: £268</li>
       </ul>
-    <p>Once an online application is completed, the customer will receive a separate email with a link to pay.</p>
+    <p>Once an online application is completed, the customer will receive a separate email with a link to pay the relevant fee.</p>
 
   <h3>Key Information for Call Handling</h3>
     <ul>
-      <li>Customers must complete all tests and checks before applying; the application cannot proceed without these.</li>
-      <li>The process is structured in three stages, with the application only submitted at the final stage.</li>
+      <li>Customers must complete all tests and checks before applying - the application cannot proceed without these.</li>
+      <li>The process is structured in three stages, with the application only submitted their application at the final stage.</li>
       <li>Customers are not permitted to work as taxi drivers until their licence is approved.</li>
       <li>Payment is made after submitting the online form via a separate email link.</li>
     </ul>
