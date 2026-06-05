@@ -2709,11 +2709,11 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
       The application is completed online via the Sheffield City Council website.
     </p>
     <p>Detailed information about all stages of applying for a Private Hire Vehicle Licence can be found at:
-    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private">
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private" target="_blank">
     Private hire vehicle licence | Sheffield City Council</a></p>
     <p>[insert send link]</p>
     <p>A link to the online form to be completed can be found here:
-    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/applying-private-hire/apply-new-licence">
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/applying-private-hire/apply-new-licence" target="_blank">
     Apply for a private hire vehicle licence | Sheffield City Council</a></p>
     <p>[insert send link]</p>
 
@@ -2739,7 +2739,7 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
     <div class="accordion-content">
         <p>Vehicles must meet specific standards (for example, safety and design requirements).</p>
         <p>Customers are advised to check vehicle suitability before applying. Full details can be found here:
-        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-private-hire">
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-private-hire" target="_blank">
         Choosing a private hire vehicle | Sheffield City Council</a></p>
         <p>[insert send link]</p>
     </div>
@@ -2848,11 +2848,11 @@ const applyHackneyCarriageVehicleLicence = new ContentBusiness(
       The application is completed online via the Sheffield City Council website.
     </p>
     <p>Detailed information about all stages of applying for a Hackney carriage Vehicle Licence can be found at:
-    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney">
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney" target="_blank">
     Hackney carriage vehicle licence | Sheffield City Council</a></p>
     <p>[insert send link]</p>
     <p>A link to the online form to be completed can be found here:
-    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/applying-hackney-carriage/apply-new-licence">
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/applying-hackney-carriage/apply-new-licence" target="_blank">
     Apply for a new hackney carriage vehicle licence | Sheffield City Council</a></p>
     <p>[insert send link]</p>
 
@@ -2878,7 +2878,7 @@ const applyHackneyCarriageVehicleLicence = new ContentBusiness(
     <div class="accordion-content">
         <p>Vehicles must meet specific standards (for example, safety and design requirements).</p>
         <p>Customers are advised to check vehicle suitability before applying. Full details can be found here:
-        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-hackney-carriage">
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-hackney-carriage"target="_blank">
         Choosing a Hackney carriage | Sheffield City Council</a></p>
         <p>[insert send link]</p>
     </div>
