@@ -2899,7 +2899,7 @@ const applyTaxiDriverLicence = new ContentBusiness(
     </ul>
 
   <h3>Useful Links</h3>
-    <p>Detailed information about all stages of applying for a taxi driver licence can be found here:
+    <p>Detailed information about all stages of applying for a taxi driver licence can be found at:
     <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence">Applying for a new taxi driver licence | Sheffield City Council</a></p>
     <p>[insert send link]</p>
 
@@ -2908,20 +2908,21 @@ const applyTaxiDriverLicence = new ContentBusiness(
     <p>[insert send link]</p>
     `,
 
-    { buttonLabel: "", formName: "" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
   {
     type: "Application",
     keywords: [
-      "taxi driver licence",
-      "taxi license",
-      "private hire licence",
-      "hackney carriage licence",
+      "taxi driver",
+      "driver",
+      "taxi",
+      "license",
+      "licence",
+      "private hire",
+      "hackney carriage",
       "Sheffield taxi",
       "DVLA",
-      "DBS check",
-      "Disclosure and Barring Service",
       "fit and proper test",
       "taxi application",
       "driver application",
@@ -2932,15 +2933,11 @@ const applyTaxiDriverLicence = new ContentBusiness(
       "licensing policy",
       "apply taxi licence",
       "apply taxi license",
-      "apply taxi driver licence Sheffield",
-      "taxi driver liscence",
-      "taxi driver lisence",
-      "taxi driver licnese",
-      "taksi licence",
-      "private hire liscense",
-      "hackney carrage licence",
-      "DBS chek",
-      "DVLA check licence"
+      "liscence",
+      "lisence",
+      "licnese",
+      "taksi",
+      "DBS",
     ],
     categories: ["Business"]
   },
