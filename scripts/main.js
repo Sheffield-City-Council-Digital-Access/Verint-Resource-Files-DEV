@@ -6245,106 +6245,86 @@ function buildTypeAhead(inputName, listItems, listItemsOnly = true) {
     return;
   }
 
+  // Capture container BEFORE wrapping
+  const inputContainer = inputElement.parentNode;
+
   // Create a new div to wrap the input, icon, and button
   const wrapper = document.createElement("div");
   wrapper.className = "input-wrapper";
-
-  // Insert the new wrapper before the input element
   inputElement.parentNode.insertBefore(wrapper, inputElement);
-
-  // Move the input element into the new wrapper
   wrapper.appendChild(inputElement);
 
-  // Create and add the magnifying glass SVG icon
-  const searchIconSvg = document.createElementNS(
-    "http://www.w3.org/2000/svg",
-    "svg"
-  );
+  // Search icon
+  const searchIconSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   searchIconSvg.setAttribute("viewBox", "0 0 640 640");
   searchIconSvg.className = "search-icon";
-
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
   path.setAttribute("fill", "currentColor");
-  path.setAttribute(
-    "d",
-    "M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
-  );
-
+  path.setAttribute("d", "M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z");
   searchIconSvg.appendChild(path);
   wrapper.appendChild(searchIconSvg);
 
-  // Add Clear Button functionality
+  // Clear button
   const clearButton = document.createElement("button");
   clearButton.type = "button";
   clearButton.className = "clear-btn";
   clearButton.textContent = "Clear";
-
   clearButton.addEventListener("click", () => {
     inputElement.value = "";
     inputElement.focus();
-    // Remove validation state on clear
-    inputElement.classList.remove("dform_fielderror");
-    const validationMessage = inputElement.parentNode.querySelector(
-      ".dform_validationMessage"
-    );
-    if (validationMessage) {
-      validationMessage.remove();
-    }
   });
-
   wrapper.appendChild(clearButton);
 
-  // Datalist functionality
+  // Datalist
   const datalistId = `${inputId}-datalist`;
   let datalistElement = document.getElementById(datalistId);
-
   if (!datalistElement) {
     datalistElement = document.createElement("datalist");
     datalistElement.id = datalistId;
-    inputElement.parentNode.appendChild(datalistElement);
+    inputContainer.appendChild(datalistElement);
   }
-
   datalistElement.innerHTML = "";
   listItems.forEach((item) => {
     const option = document.createElement("option");
     option.value = item;
     datalistElement.appendChild(option);
   });
-
   inputElement.setAttribute("list", datalistId);
 
-  // Re-implement validation with a change event listener for robustness
+  // Watch for dform_fielderror being added/removed and toggle the message
+  const validationMessage = inputContainer.querySelector(".dform_validationMessage");
+  if (validationMessage) {
+    const observer = new MutationObserver(() => {
+      validationMessage.style.display = inputElement.classList.contains("dform_fielderror")
+        ? "block"
+        : "none";
+    });
+
+    observer.observe(inputElement, { attributes: true, attributeFilter: ["class"] });
+
+    // Set initial state
+    validationMessage.style.display = inputElement.classList.contains("dform_fielderror")
+      ? "block"
+      : "none";
+  }
+
+  // Validation
   if (listItemsOnly) {
-    inputElement.addEventListener("change", () => {
+    function validate() {
       const inputValue = inputElement.value;
-      const normalizedInput = inputValue.trim().toLowerCase();
-      const normalizedList = listItems.map((item) => item.trim().toLowerCase());
-      const isValid = normalizedList.includes(normalizedInput);
+      const isValid = listItems
+        .map((item) => item.trim().toLowerCase())
+        .includes(inputValue.trim().toLowerCase());
 
-      const parentContainer = inputElement.closest(".dform_widget");
-
-      if (!isValid && inputValue !== "") {
+      if (!isValid) {
         inputElement.classList.add("dform_fielderror");
-        let validationMessage = parentContainer.querySelector(
-          ".dform_validationMessage"
-        );
-        if (!validationMessage) {
-          validationMessage = document.createElement("div");
-          validationMessage.classList.add("dform_validationMessage");
-          validationMessage.textContent =
-            "Please select a value from the list.";
-          parentContainer.appendChild(validationMessage);
-        }
       } else {
         inputElement.classList.remove("dform_fielderror");
-        const validationMessage = parentContainer.querySelector(
-          ".dform_validationMessage"
-        );
-        if (validationMessage) {
-          validationMessage.remove();
-        }
       }
-    });
+    }
+
+    inputElement.addEventListener("change", validate);
+    inputElement.addEventListener("blur", validate);
   }
 }
 
