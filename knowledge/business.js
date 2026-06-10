@@ -2621,6 +2621,116 @@ const applyTaxiDriverLicence = new ContentBusiness(
 );
 
 
+const applyPrivateHireOperatorLicence = new ContentBusiness(
+  "applyPrivateHireOperatorLicence",
+  "Apply for a Private Hire Operator Licence",
+  "Apply to Sheffield City Council for a private hire operator licence.",
+  `<h3>Overview</h3>
+    <p>Customers must apply to Sheffield City Council for a private hire operator licence if they want to <strong>take bookings or supply drivers for private hire vehicles</strong>. The council will assess whether the applicant is a “fit and proper” person to hold the licence, ensuring they are suitable and do not pose a risk to public safety.</p>
+
+  <h3>Eligibility Criteria</h3>
+    <p>When applying, customers must demonstrate that they are suitable to operate a private hire business. This includes:</p>
+      <ul>
+        <li>Being considered a <strong>fit and proper person</strong> (safe and suitable, with no links to serious criminal activity)</li>
+        <li>Declaring any <strong>criminal convictions</strong> for all applicants, directors or partners</li>
+        <li>Having the <strong>legal right to work in the UK</strong></li>
+        <li>Having appropriate <strong>tax registration</strong> (or being aware of requirements if they do not yet have a tax check code)</li>
+        <li>Using a <strong>business name</strong> that is not the same as, or too similar to, one already used in Sheffield</li>
+      </ul>
+
+  <h3>How to Apply</h3>
+    <p>Customers need to:</p>
+      <ul>
+        <li>Complete the <strong>private hire operator licence application form</strong>.</li>
+        <li>Submit the application along with the required questionnaire and supporting documents.</li>
+        <li>Ensure all required information is provided, as the council will not process incomplete applications.</li>
+      </ul>
+    <p>The application is typically completed online via the council’s website. The application can be found here: <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator/apply">Apply for a private hire operator licence</a></p>
+
+  <h3>Supporting Documents Required</h3>
+    <p>Applicants must provide the following (where applicable):</p>
+      <ul>
+        <li><strong>Basic DBS certificate</strong> for all directors (or DBS certificate number)</li>
+        <li><strong>Right to work documentation</strong> for all business owners (this may need to be seen in person)</li>
+        <li><strong>Tax check information</strong> or a 9-digit tax check code</li>
+        <li><strong>Public liability insurance certificate</strong></li>
+        <li><strong>Employers’ liability insurance</strong></li>
+        <li><strong>Planning permission</strong> for operator premises, or confirmation it is not needed</li>
+        <li>Proof of <strong>registration with the Information Commissioner’s Office (ICO)</strong></li>
+      </ul>
+    <p>Additional documents may be requested during the process.</p>
+
+  <h3>Fees</h3>
+    <p>The cost of the licence depends on:</p>
+      <ul>
+        <li>The <strong>duration of the licence</strong> (1 to 5 years)</li>
+        <li>The <strong>number of vehicles operated</strong></li>
+      </ul>
+    <p>The longer the duration of the licence, and the more vehicles the license is for, the higher the fee. A full breakdown of fees can be found here: <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator/apply">Apply for a new private hire operator licence | Sheffield City Council</a></p>
+    <p>Examples:</p>
+      <ul>
+        <li>1 year licenses range from £531 (1-10 vehicles) to £6,643 (over 250 vehicles)</li>
+        <li>5 year licences range from £2,510 (1-10 vehicles) to £12,548 (over 250 vehicles)</li>
+      </ul>
+
+  <h3>Processing the Application</h3>
+    <ul>
+      <li>The council will <strong>not process the application until all required documents are received</strong>.</li>
+      <li>Further information or documents may be requested during the assessment.</li>
+      <li>The council will assess whether the applicant meets the <strong>fit and proper person standard</strong> before making a decision.</li>
+    </ul>
+
+  <h3>Key Information for Call Handling</h3>
+    <ul>
+      <li>Customers must apply <strong>before operating</strong> - it is illegal to accept bookings without a licence.</li>
+      <li>Emphasise the importance of <strong>submitting all documents correctly</strong> to avoid delays.</li>
+      <li>Direct customers to the <strong>online application form</strong> for submission.</li>
+      <li>Advise that fees vary based on <strong>fleet size and licence length</strong>.</li>
+      <li>Remind customers that <strong>additional checks and documents may be required</strong>.</li>
+    </ul>
+
+  <h3>Related Guidance</h3>
+    <p>Customers can read the council’s Private Hire Operator and Vehicle Licence Policy for full requirements and standards. 
+    This can be found here: <a href="https://www.sheffield.gov.uk/sites/default/files/2025-02/private_hire_operator_and_private_hire_vehicle_licence_policy_0_2.pdf">
+    Private Hire Operator and Vehicle Licence Policy</a></p>`,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Application",
+    keywords: [
+      "private hire operator licence",
+      "apply private hire operator",
+      "sheffield city council taxi licence",
+      "PHO licence",
+      "taxi operator licence",
+      "private hire licence application",
+      "operator licence Sheffield",
+      "ICO registration",
+      "DBS certificate taxi",
+      "right to work UK taxi",
+      "tax check code",
+      "public liability insurance",
+      "employers liability insurance",
+      "planning permission taxi base",
+      "fleet size licence fees",
+      "private hire operator",
+      "ph operator licence",
+      "taxi licensing Sheffield",
+      "apply taxi operator",
+      "licence application form taxi",
+      "private hire operater licence",
+      "privte hire operator licence",
+      "private hire operator liscence"
+    ],
+    categories: ["Business"]
+  },
+  { date: "10/06/2026", name: "Liz Taster" }
+);
+
+
+
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
   "Taxi Licensing",
@@ -2641,7 +2751,8 @@ const applyTaxiDriverLicence = new ContentBusiness(
     drivingStandardsTestGuide,
     applyPrivateHireVehicleLicence,
     applyHackneyCarriageVehicleLicence,
-    applyTaxiDriverLicence
+    applyTaxiDriverLicence,
+    applyPrivateHireOperatorLicence
   ]
 );
 
