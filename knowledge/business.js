@@ -2221,6 +2221,15 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
     Apply for a new private hire operator licence | Sheffield City Council</a></p>
     <p>[insert send link]</p>
 
+    <p>As part of the application, the customer will need to provide business and applicant details, including: </p>
+      <ul>
+        <li>Company and contact information </li>
+        <li>Details of directors/partners</li>
+        <li>Operating address and trading name</li>
+        <li>Number of vehicles to be operated </li>
+      </ul>
+ 
+
   <h3>Supporting Documents Required</h3>
     <p>Applicants must provide the following (where applicable):</p>
       <ul>
@@ -2251,11 +2260,9 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
       </ul>
 
   <h3>Processing the Application</h3>
-    <ul>
-      <li>The council will <strong>not process the application until all required documents are received</strong>.</li>
-      <li>Further information or documents may be requested during the assessment.</li>
-      <li>The council will assess whether the applicant meets the <strong>fit and proper person standard</strong> before making a decision.</li>
-    </ul>
+    <p> The council will <strong>not process the application until all required documents are received</strong>. 
+    Further information or documents may be requested during the assessment.</p>
+    <p>The council will assess whether the applicant meets the <strong>fit and proper person standard</strong> before making a decision.</p>
 
   <h3>Key Information for Call Handling</h3>
     <ul>
