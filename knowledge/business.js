@@ -2322,7 +2322,6 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
     renewVechicleLicence,
     medicalNeeds,
     renewDriverLicence,
-    applyPrivateOperator,
     renewPrivateOperator,
     drivingStandardsTestGuide,
     applyPrivateHireVehicleLicence,
