@@ -2626,7 +2626,11 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
   "Apply for a Private Hire Operator Licence",
   "Apply to Sheffield City Council for a private hire operator licence.",
   `<h3>Overview</h3>
-    <p>Customers must apply to Sheffield City Council for a private hire operator licence if they want to <strong>take bookings or supply drivers for private hire vehicles</strong>. The council will assess whether the applicant is a “fit and proper” person to hold the licence, ensuring they are suitable and do not pose a risk to public safety.</p>
+    <p>Customers must apply to Sheffield City Council for a private hire operator licence if they want to <strong>take bookings or supply drivers 
+    for private hire vehicles</strong>. The council will assess whether the applicant is a “fit and proper” person to hold the licence, ensuring 
+    they are suitable and do not pose a risk to public safety.</p>
+    <p>Full details about the process and requirements can be found here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator">Applying for a new private hire operator licence | Sheffield City Coulcil</a> </p>
 
   <h3>Eligibility Criteria</h3>
     <p>When applying, customers must demonstrate that they are suitable to operate a private hire business. This includes:</p>
@@ -2640,12 +2644,15 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
 
   <h3>How to Apply</h3>
     <p>Customers need to:</p>
-      <ul>
+      <ol>
         <li>Complete the <strong>private hire operator licence application form</strong>.</li>
         <li>Submit the application along with the required questionnaire and supporting documents.</li>
         <li>Ensure all required information is provided, as the council will not process incomplete applications.</li>
-      </ul>
-    <p>The application is typically completed online via the council’s website. The application can be found here: <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator/apply">Apply for a private hire operator licence</a></p>
+      </ol>
+    <p>The application is typically completed online via the council’s website - this can be found here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator/apply" target="_blank">
+    Apply for a private hire operator licence</a></p>
+    <p>[insert send link]</p>
 
   <h3>Supporting Documents Required</h3>
     <p>Applicants must provide the following (where applicable):</p>
@@ -2666,7 +2673,9 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
         <li>The <strong>duration of the licence</strong> (1 to 5 years)</li>
         <li>The <strong>number of vehicles operated</strong></li>
       </ul>
-    <p>The longer the duration of the licence, and the more vehicles the license is for, the higher the fee. A full breakdown of fees can be found here: <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator/apply">Apply for a new private hire operator licence | Sheffield City Council</a></p>
+    <p>The longer the duration of the licence, and the more vehicles the license is for, the higher the fee. A full breakdown of fees can be found here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator/apply" target="_blank">
+    Apply for a new private hire operator licence | Sheffield City Council</a></p>
     <p>Examples:</p>
       <ul>
         <li>1 year licenses range from £531 (1-10 vehicles) to £6,643 (over 250 vehicles)</li>
@@ -2690,9 +2699,11 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
     </ul>
 
   <h3>Related Guidance</h3>
-    <p>Customers can read the council’s Private Hire Operator and Vehicle Licence Policy for full requirements and standards. 
-    This can be found here: <a href="https://www.sheffield.gov.uk/sites/default/files/2025-02/private_hire_operator_and_private_hire_vehicle_licence_policy_0_2.pdf">
-    Private Hire Operator and Vehicle Licence Policy</a></p>`,
+    <p>Customers can read the council’s <strong>Private Hire Operator and Vehicle Licence Policy</strong> for full requirements and standards. 
+    This can be found here: <a href="https://www.sheffield.gov.uk/sites/default/files/2025-02/private_hire_operator_and_private_hire_vehicle_licence_policy_0_2.pdf" target="_blank">
+    Private Hire Operator and Vehicle Licence Policy</a></p>
+    
+    <p>[insert send link]</p>`,
 
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
