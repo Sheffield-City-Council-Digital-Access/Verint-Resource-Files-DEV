@@ -2189,7 +2189,7 @@ const applyTaxiDriverLicence = new ContentBusiness(
 const applyPrivateHireOperatorLicence = new ContentBusiness(
   "applyPrivateHireOperatorLicence",
   "Apply for a Private Hire Operator Licence",
-  "Apply to Sheffield City Council for a private hire operator licence.",
+  "Details of how to apply to Sheffield City Council for a private hire operator licence.",
   `<h3>Overview</h3>
     <p>Customers must apply to Sheffield City Council for a private hire operator licence if they want to <strong>take bookings or supply drivers 
     for private hire vehicles</strong>. The council will assess whether the applicant is a “fit and proper” person to hold the licence, ensuring 
@@ -2271,6 +2271,7 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
       <li>Direct customers to the <strong>online application form</strong> for submission.</li>
       <li>Emphasise the importance of <strong>submitting all documents correctly</strong> to avoid delays.</li>
       <li>Remind customers that <strong>additional checks and documents may be required</strong>.</li>
+      <li>Where applying as a company or partnership, <strong>all relevant individuals must meet the requirements</strong> (e.g. DBS and tax checks) </li>
       <li>Advise that fees vary based on <strong>fleet size and licence length</strong>.</li>
     </ul>
 
@@ -2313,6 +2314,145 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
   { date: "10/06/2026", name: "Liz Taster" }
 );
 
+const renewPrivateHireOperatorLicence = new ContentBusiness(
+  "renewPrivateHireOperatorLicence",
+  "Renew a Private Hire Operator Licence",
+  "Details of how to renew a private hire operator licence.",
+  `<h3>Overview</h3>
+    <p>Customers must renew <strong>before their current licence expires</strong> to continue operating legally. 
+    A renewal application should be made <strong>within a month of the current licence expiry date</strong>. 
+    A company cannot continue to operate if their operator licence has expired.</p>
+
+    <p>The renewal process is similar to the original application process and requires the same or similar documentation.
+    The operator does not need to complete the long questionnaire needed for a new application.
+    As part of the renewal application, the council will assess whether the applicant is a “fit and proper” person to hold the licence, ensuring 
+    they are suitable and do not pose a risk to public safety.</p>
+
+    <p>Full details about the process and requirements can be found here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/renewing-private-hire-operator" target="_blank">
+    Renewing a private hire operator licence | Sheffield City Council</a> </p>
+    <p>[insert send link]</p>
+
+    <p>Customers can renew a Private Hire Operator Licence through Sheffield City Council using an online form available here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/renewing-private-hire-operator/renew" target="_blank">
+    Renew a private hire operator licence | Sheffield City Council</a> </p>
+    <p>[insert send link]</p>
+
+  <h3>Eligibility Criteria</h3>
+    <p>Only existing operator's can use the renewal process. If a customer does not have an existing private hire operator licence 
+    they should be directed to the information to apply for a <strong>new</strong> private hire operator licence.<p>  
+    <p>When applying, customers must demonstrate that they continue to be suitable to operate a private hire business. This includes:</p>
+      <ul>
+        <li>Being considered a <strong>fit and proper person</strong> (safe and suitable, with no links to serious criminal activity)</li>
+        <li>Declaring any <strong>criminal convictions</strong> for all applicants, directors or partners</li>
+        <li>Having the <strong>legal right to work in the UK</strong></li>
+        <li>Having appropriate <strong>tax registration</strong> (or being aware of requirements if they do not yet have a tax check code)</li>
+        <li>Having appropriate insurance in place</li>
+        <li>Having appropriate premises in place</li>
+      </ul>
+
+  <h3>How to Apply</h3>
+    <p>Customers need to:</p>
+      <ol>
+        <li>Complete the <strong>renew private hire operator licence form</strong> online.</li>
+        <li>Submit any supporting documents.</li>
+        <li>Ensure all required information is provided, as the council will not process incomplete applications.</li>
+      </ol>
+    <p>The application is completed online via the council’s website - this can be found here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/renewing-private-hire-operator/renew" target="_blank">
+    Renew a private hire operator licence | Sheffield City Council</a></p>
+    <p>[insert send link]</p>
+
+    <p>As part of the application, the customer will need to provide business and applicant details, including: </p>
+      <ul>
+        <li>Company and contact information </li>
+        <li>Details of directors/partners</li>
+        <li>Operating address and trading name</li>
+        <li>Number of vehicles to be operated </li>
+      </ul>
+
+  <h3>Supporting Documents Required</h3>
+    <p>Applicants must provide the following (where applicable):</p>
+      <ul>
+        <li><strong>Basic DBS certificate</strong> for all directors (or DBS certificate number)</li>
+        <li><strong>Right to work documentation</strong> for all business owners (this may need to be seen in person)</li>
+        <li><strong>Tax check information</strong> or a 9-digit tax check code</li>
+        <li><strong>Public liability insurance certificate</strong></li>
+        <li><strong>Employers’ liability insurance</strong></li>
+        <li>Proof of <strong>registration with the Information Commissioner’s Office (ICO)</strong></li>
+      </ul>
+    <p>Additional documents may be requested during the process.</p>
+
+  <h3>Fees</h3>
+    <p>The cost of the licence depends on:</p>
+      <ul>
+        <li>The <strong>duration of the licence</strong> (1 to 5 years)</li>
+        <li>The <strong>number of vehicles operated</strong></li>
+      </ul>
+    <p>The longer the duration of the licence, and the more vehicles the license is for, the higher the fee.</p>
+    <p> A full breakdown of fees can be found here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/renewing-private-hire-operator/renew" target="_blank">
+    Renew a private hire operator licence | Sheffield City Council</a> </p>
+    <p>Examples:</p>
+      <ul>
+        <li>1 year licenses range from £531 (1-10 vehicles) to £6,643 (over 250 vehicles)</li>
+        <li>5 year licences range from £2,510 (1-10 vehicles) to £12,548 (over 250 vehicles)</li>
+      </ul>
+
+  <h3>Processing the Application</h3>
+    <p> The council will <strong>not process the application until all required documents are received</strong>. 
+    Further information or documents may be requested during the assessment.</p>
+    <p>The council will assess whether the applicant meets the <strong>fit and proper person standard</strong> before making a decision.</p>
+
+  <h3>Key Information for Call Handling</h3>
+    <ul>
+      <li>Customers must renew <strong>before their current licence expires</strong> - it is illegal to accept bookings without a licence.</li>
+      <li>Emphasise the importance of <strong>submitting all documents correctly</strong> to avoid delays.</li>
+      <li>Where applying as a company or partnership, <strong>all relevant individuals must meet the requirements</strong> (e.g. DBS and tax checks) </li>
+      <li>Remind customers that <strong>additional checks and documents may be required</strong>.</li>
+      <li>Advise that fees vary based on <strong>fleet size and licence length</strong>.</li>
+    </ul>
+
+  <h3>Related Guidance</h3>
+    <p>Customers can read the council’s <strong>Private Hire Operator and Vehicle Licence Policy</strong> for full details of requirements and standards. </p>
+    <p>This can be found here: <a href="https://www.sheffield.gov.uk/sites/default/files/2025-02/private_hire_operator_and_private_hire_vehicle_licence_policy_0_2.pdf" target="_blank">
+    Private Hire Operator and Vehicle Licence Policy</a></p>
+    
+    <p>[insert send link]</p>`,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Application",
+    keywords: [
+      "private hire operator licence",
+      "renew private hire operator",
+      "renew",
+      "taxi licence",
+      "PHO licence",
+      "taxi",
+      "operator",
+      "licence",
+      "private hire",
+      "operator licence",
+      "fleet size",
+      "licence fees",
+      "private hire operator",
+      "ph operator",
+      "taxi licensing",
+      "renew taxi operator",
+      "licence application form taxi",
+      "operater",
+      "privte",
+      "liscence",
+      "license",
+    ],
+    categories: ["Business", "Taxi Licensing"],
+  },
+  { date: "10/06/2026", name: "Liz Taster" }
+);
+
 
 
   const taxiLicensing = new MenuBusiness(
@@ -2335,7 +2475,8 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
     applyPrivateHireVehicleLicence,
     applyHackneyCarriageVehicleLicence,
     applyTaxiDriverLicence,
-    applyPrivateHireOperatorLicence
+    applyPrivateHireOperatorLicence,
+    renewPrivateHireOperatorLicence
   ]
 );
 
