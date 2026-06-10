@@ -2195,7 +2195,7 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
     for private hire vehicles</strong>. The council will assess whether the applicant is a “fit and proper” person to hold the licence, ensuring 
     they are suitable and do not pose a risk to public safety.</p>
     <p>Full details about the process and requirements can be found here: 
-    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator">
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator" target="_blank">
     Applying for a new private hire operator licence | Sheffield City Council</a> </p>
     <p>[insert send link]</p>
 
