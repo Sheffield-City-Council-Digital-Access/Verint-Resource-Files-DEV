@@ -2212,8 +2212,9 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
   <h3>How to Apply</h3>
     <p>Customers need to:</p>
       <ol>
-        <li>Complete the <strong>private hire operator licence application form</strong>.</li>
-        <li>Submit the application along with the required questionnaire and supporting documents.</li>
+        <li>Complete the <strong>private hire operator licence application form</strong> online.</li>
+        <li>Once you submit your application, you will receive a questionnaire by email.</li>
+        <li>Complete and submit the questionnaire and any remaining supporting documents.</li>
         <li>Ensure all required information is provided, as the council will not process incomplete applications.</li>
       </ol>
     <p>The application is completed online via the council’s website - this can be found here: 
