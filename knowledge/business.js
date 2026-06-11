@@ -708,9 +708,6 @@ const transferLicence = new ContentBusiness(
                 The customer must complete the online form to request to transfer a vehicle licence.<br> 
                 The same form can be used for both private hire and hackney carriage vehicles.<br>
             </p>
-            <p>
-                The fee to transfer a taxi licence is <strong>£33</strong>. The fee is payable by the previous licence holder.
-            </p>    
 
         <h3>How to Transfer a Vehicle Licence</h3>
             <p>
@@ -734,6 +731,12 @@ const transferLicence = new ContentBusiness(
                The information provided will be used to contact the new licence holder(s) to complete a declaration form.
             </p>
 
+        <h3>Cost</h3>
+            <p>
+                The fee to transfer a taxi licence is <strong>£33</strong>. The fee is payable by the previous licence holder.
+            </p>
+        
+        <h3>After Applying</h3>
             <p>
                 <strong>[***Information from service is needed here to explain what happens next in the process and timeframes***]</strong>
             </p>
