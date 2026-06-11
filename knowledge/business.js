@@ -2041,10 +2041,10 @@ const changeOfNameOrAddress = new ContentBusiness(
       "change of address",
       "taxi drivers",
       "taxi licensing",
-      "taxi"
+      "taxi",
       "change",
       "name",
-      "address"
+      "address",
       "licence records",
       "update details",
       "driver details",
