@@ -1988,6 +1988,86 @@ const renewPrivateHireOperatorLicence = new ContentBusiness(
 
 
 
+const changeOfNameOrAddress = new ContentBusiness(
+  "changeOfNameOrAddress",
+  "Change of Name or Address",
+  "Details of how taxi drivers inform the council if they change their name or address so that their licensing records can be updated.",
+  
+  `
+  <h3>Overview</h3>
+    <p>Customers (taxi drivers) must inform the council using an online form if they change their name or address so that their licensing records can be updated.</p>
+    <p>The customer must contact the council straight away after changing their name or address.</p>
+    <p>There is <strong>no charge</strong> unless licence documents need to be reissued.</p>
+
+  <h3>How to Notify the Council</h3>
+    <p>To update their name or address, the customer must:</p>
+        <ul>
+            <li>Complete the <strong>online form</strong>.</li>
+            <li>Provide their <strong>DVLA driving licence</strong> showing the new name or address.</li>
+        </ul>
+    <p>The update form can be found here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/change-name-or-address" target="_blank">
+    Change of name or address | Sheffield City Council</a></p>
+
+    <p> [Insert send link] </p>
+
+  <h3>Impact on DBS certificates</h3>
+    <p>If the customer has changed their <strong>name</strong> they must apply for a <strong>new Enhanced Disclosure and Barring Service (DBS) certificate</strong> in their new name.</p>
+    <p>This must be completed in time for badge renewal applications and routine DBS checks (every 6 months).</p>
+    <p>If the customer has changed their address, the existing DBS certificate remains valid. The customer can update their address in their DBS account. The DBS certificate itself will still show the old address.</p>
+
+  <h3>Fees</h3>
+    <ul>
+        <li>Updating licence <strong>records</strong> is <strong>free</strong>.</li>
+        <li>If updated paper or digital licence documents are required, the cost is <strong>£15</strong>.</li>
+    </ul>
+
+  <h3>Additional Notes</h3>
+    <ul>
+        <li>The same process and fee apply if changes are needed for a taxi vehicle licence.</li>
+        <li>Customers should ensure all supporting documents (such as DVLA licence details) are up to date before submitting their request.</li>
+        <li>The customer may also need to notify their taxi operator.</li>
+    </ul>
+    
+    `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "change of name",
+      "change of address",
+      "taxi drivers",
+      "taxi licensing",
+      "taxi"
+      "change",
+      "name",
+      "address"
+      "licence records",
+      "update details",
+      "driver details",
+      "address change",
+      "name change",
+      "licence reissue",
+      "taxi vehicle licence",
+      "adress",
+      "addres",
+      "chagne",
+      "chage",
+      "updat",
+      "licesnce",
+      "licence",
+      "license",
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "11/06/2026", name: "Liz Taster" }
+);
+
+
+
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
   "Taxi Licensing",
@@ -2006,7 +2086,8 @@ const renewPrivateHireOperatorLicence = new ContentBusiness(
     applyHackneyCarriageVehicleLicence,
     applyTaxiDriverLicence,
     applyPrivateHireOperatorLicence,
-    renewPrivateHireOperatorLicence
+    renewPrivateHireOperatorLicence,
+    changeOfNameOrAddress
   ]
 );
 
