@@ -696,87 +696,68 @@ const surrenderLicence = new ContentBusiness(
 const transferLicence = new ContentBusiness(
     "transferLicence",
     "Transfer a Vehicle Licence",
-    "**To Review** - Transfer a vehicle licence",
+    "Guidance on the process to transfer a vehicle licence",
     `
-        <details class="accordion">
-        <summary class="accordion-header">
-            <h3>When to Contact Us</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
+        <h3>Overview</h3>
             <p>
                 If you transfer your vehicle licence to another person or company, you must contact us within 14 days.<br> 
                 It is an offence if you to fail to notify us that your vehicle licence has been transferred to another person or company.<br>
             </p>
-        </div>
-        </details>
-
-        <details class="accordion">
-        <summary class="accordion-header">
-            <h3>How to Transfer a Vehicle Licence</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
             <p>
-                You need to tell us the following things about the person you are transferring the licence to:
+                Only the previous vehicle owner can request to transfer a vehicle licence.<br>
+                The customer must complete the online form to request to transfer a vehicle licence.<br> 
+                The same form can be used for both private hire and hackney carriage vehicles.<br>
+            </p>
+            <p>
+                The fee to transfer a taxi licence is <strong>£33</strong>. The fee is payable by the previous licence holder.
+            </p>    
+
+        <h3>How to Transfer a Vehicle Licence</h3>
+            <p>
+                The previous licence holder must complete the online form to request to transfer a vehicle licence. The form can be found here:
+                <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/transfer"target="_blank">
+                Transfer a vehicle licence | Sheffield City Council</a>
+            </p>
+
+            <p> [Insert send link] </p>
+
+            <p>
+                The customer will need to tell us the following things:
+            </p>
                 <ul>
-                    <li>name(s)</li>
-                    <li>date of birth</li>
-                    <li>address</li>
+                    <li>details of the vehicle the licence applies to</li>
+                    <li>the licence number</li>
+                    <li>details of the person, business or partnership </li>
+                    <li>details of the person, business or partnership the licence is being transferred to</li>
+                    <li>where this is a parnership, details of all partners need to be submitted</li>
                 </ul>
-                When you apply, we will need to see the following documents:
-                <ul>
-                    <li>copy of the insurance certificate for the vehicle</li>
-                    <li>basic Disclosure and Barring Service certificate (if the new licence holder does not hold a taxi driver licence with us)</li>
-                    <li>The insurance certificate must cover a licensed driver to use the vehicle for its intended use.</li>
-                </ul>
-                We will transfer your vehicle licence once we have received all the information we need.
-            </p>
-        </div>
-        </details>
-
-        <details class="accordion">
-        <summary class="accordion-header">
-            <h3>When We Contact You</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
             <p>
-                We will respond to your request within 5 working days.</br>
-                You will receive your transferred paperwork licence from us by email. We will also post it out to your registered address.
+               The information provided will be used to contact the new licence holder(s) to complete a declaration form.
             </p>
-        </div>
-        </details>
 
-        <details class="accordion">
-        <summary class="accordion-header">
-            <h3>Cost</h3>
-            <div class="accordion-icon"></div>
-        </summary>
-        <div class="accordion-content">
             <p>
-                The fee to transfer your taxi licence is <strong>£33</strong>.
+                [***Information from service is needed here to explain what happens next in the process and timeframes***]
             </p>
-        </div>
-        </details>
+
     `,
     { buttonLabel: "", formName: ""},
-    { typeKey: "switchboard_transferred_to_service" },
-    { typeKey: "switchboard_information_provided"},
+    { typeKey: "" },
+    { typeKey: ""},
     {
       type: "Request",
       keywords: [
-        "Switchboard",
-        "Switch board",
-        "Switch",
         "transfer",
-        "redirect",
-        "transfer call",
-        "call"
+        "vehicle",
+        "licence",
+        "tranfer",
+        "trasnfer",
+        "vehcle",
+        "license",
+        "taxi",        
       ],
       categories: ["Business", "Taxi Licensing"],
     },
-    { date: "21/11/2025", name: "Joseph Coupland"} 
+    { date: "11/06/2026", name: "Liz Taster"} 
   );
 
     const renewPriviateLicence = new ContentBusiness(
