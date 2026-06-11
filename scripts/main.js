@@ -4069,7 +4069,7 @@ function checkAddressHasBeenSet(action = "next") {
       const siteCode = getInput("siteCode");
       const usrnValue = KDF.getVal(siteCode.name) || KDF.getVal(getInput("usrn").name);
       const validUsrn = acceptGMSites
-        ? (usrnValue.startsWith("GM") || usrnValue.startsWith("344"))
+        ? (usrnValue.startsWith("GM") || usrnValue.startsWith("PF") || usrnValue.startsWith("344"))
         : usrnValue.startsWith("344");
 
       if (streetNameValue && usrnValue && validUsrn) {
