@@ -700,7 +700,7 @@ const transferLicence = new ContentBusiness(
     `
         <h3>Overview</h3>
             <p>
-                If you transfer your vehicle licence to another person or company, you must contact us within 14 days.<br> 
+                If you transfer your vehicle licence to another person or company, <strong>you must contact us within 14 days</strong>.<br> 
                 It is an offence if you to fail to notify us that your vehicle licence has been transferred to another person or company.<br>
             </p>
             <p>
@@ -725,8 +725,7 @@ const transferLicence = new ContentBusiness(
                 The customer will need to tell us the following things:
             </p>
                 <ul>
-                    <li>details of the vehicle the licence applies to</li>
-                    <li>the licence number</li>
+                    <li>details of the vehicle licence</li>
                     <li>details of the person, business or partnership </li>
                     <li>details of the person, business or partnership the licence is being transferred to</li>
                     <li>where this is a parnership, details of all partners need to be submitted</li>
@@ -736,7 +735,7 @@ const transferLicence = new ContentBusiness(
             </p>
 
             <p>
-                [***Information from service is needed here to explain what happens next in the process and timeframes***]
+                <strong>[***Information from service is needed here to explain what happens next in the process and timeframes***]</strong>
             </p>
 
     `,
