@@ -674,6 +674,8 @@ const surrenderLicence = new ContentBusiness(
 
     <p>
         For private hire vehicles, customers need to click on <strong>Surrender your vehicle licence</strong> at this link:
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/surrender"target="_blank">
+        Surrender a private hire vehicle licence | Sheffield City Council</a></p>
     </p>
 
     <p>
@@ -682,6 +684,8 @@ const surrenderLicence = new ContentBusiness(
 
     <p>
         For hackney carriage vehicles, customers need to click on <strong>Surrender your vehicle licence</strong> at this link:
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/Surrender-vehicle-licence"target="_blank">
+        Surrender a hackney carriage vehicle licence | Sheffield City Council</a></p>
     </p>
 
     <p>
