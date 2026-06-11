@@ -1995,7 +1995,7 @@ const changeOfNameOrAddress = new ContentBusiness(
   
   `
   <h3>Overview</h3>
-    <p>Customers (taxi drivers) must inform the council using an online form if they change their name or address so that their licensing records can be updated.</p>
+    <p>Customers (taxi drivers) must inform the council <strong>using an online form</strong> if they change their name or address so that their licensing records can be updated.</p>
     <p>The customer must contact the council straight away after changing their name or address.</p>
     <p>There is <strong>no charge</strong> unless licence documents need to be reissued.</p>
 
@@ -2012,13 +2012,15 @@ const changeOfNameOrAddress = new ContentBusiness(
     <p> [Insert send link] </p>
 
   <h3>Impact on DBS certificates</h3>
-    <p>If the customer has changed their <strong>name</strong> they must apply for a <strong>new Enhanced Disclosure and Barring Service (DBS) certificate</strong> in their new name.</p>
-    <p>This must be completed in time for badge renewal applications and routine DBS checks (every 6 months).</p>
-    <p>If the customer has changed their address, the existing DBS certificate remains valid. The customer can update their address in their DBS account. The DBS certificate itself will still show the old address.</p>
+    <p>If the customer has changed their <strong>name</strong> they must apply for a <strong>new Enhanced Disclosure and Barring Service (DBS) 
+    certificate</strong> in their new name.
+    <br>This must be completed in time for badge renewal applications and routine DBS checks (every 6 months).</p>
+    <p>If the customer has changed their <strong>address</strong>, the existing DBS certificate remains valid. 
+    The customer can update their address in their DBS account. The DBS certificate itself will still show the old address.</p>
 
   <h3>Fees</h3>
     <ul>
-        <li>Updating licence <strong>records</strong> is <strong>free</strong>.</li>
+        <li>Updating licence <strong>records</strong> is free.</li>
         <li>If updated paper or digital licence documents are required, the cost is <strong>£15</strong>.</li>
     </ul>
 
