@@ -666,31 +666,62 @@ const vechicleInspections = new ContentBusiness(
 const surrenderLicence = new ContentBusiness(
     "surrenderLicence",
     "Surrender a Vehicle Licence",
-    "**To Review** - Surrender a vehicle licence",
+    "What to do if you decide to stop using your vehicle as a licenced vehicle.",
     `
-    <h3>Keeping your private hire or hackney carriage vehicle safe</h3>
     <p>
-        You might want to de-licence your vehicle and surrender your plate. Where possible, you need to return your plate to us.<br>
-        In the future, if you want to licence your vehicle again, you will need to apply for a new one. This will mean that you must go through the application process again.
+        To surrender a vehicle licence customers need to complete an online form.        
+    </p>
+
+    <p>
+        For private hire vehicles, customers need to click on <strong>Surrender your vehicle licence</strong> at this link:
+    </p>
+
+    <p>
+        [insert send link]
+    </p>
+
+    <p>
+        For hackney carriage vehicles, customers need to click on <strong>Surrender your vehicle licence</strong> at this link:
+    </p>
+
+    <p>
+        [insert send link]
+    </p>
+    
+    <p>The Where possible, the customer needs to return their plate to us.</p>
+
+    <h3>Re-licencing a vehicle</h3>
+    <p>
+       If the customer wants to licence their vehicle again, they need to apply a new licence. This will mean the customer must go through the application process again.
     </p>
     `,
     { buttonLabel: "", formName: ""},
-    { typeKey: "switchboard_transferred_to_service" },
-    { typeKey: "switchboard_information_provided"},
+    { typeKey: "" },
+    { typeKey: ""},
     {
       type: "Request",
       keywords: [
-        "Switchboard",
-        "Switch board",
-        "Switch",
-        "transfer",
-        "redirect",
-        "transfer call",
-        "call"
+        "taxi",
+        "licence",
+        "license",
+        "surrender",
+        "surender",
+        "surrendar",
+        "de-licence",
+        "delicence",
+        "de-license",
+        "delicense",
+        "vehicle",
+        "vehcle",
+        "private hire",
+        "hackney",
+        "carriage",
+        "hckney",
+        "hackny",
       ],
       categories: ["Business", "Taxi Licensing"],
     },
-    { date: "21/11/2025", name: "Joseph Coupland"} 
+    { date: "11/06/2026", name: "Liz Taster"} 
   );
 
 const transferLicence = new ContentBusiness(
