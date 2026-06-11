@@ -673,7 +673,7 @@ const surrenderLicence = new ContentBusiness(
     </p>
 
     <p>
-        For private hire vehicles, customers need to click on <strong>Surrender your vehicle licence</strong> at this link:
+        For <strong>private hire</strong> vehicles, customers need to click on <strong>Surrender your vehicle licence</strong> at this link:
         <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/surrender"target="_blank">
         Surrender a private hire vehicle licence | Sheffield City Council</a></p>
     </p>
@@ -683,7 +683,7 @@ const surrenderLicence = new ContentBusiness(
     </p>
 
     <p>
-        For hackney carriage vehicles, customers need to click on <strong>Surrender your vehicle licence</strong> at this link:
+        For <strong>hackney carriage</strong> vehicles, customers need to click on <strong>Surrender your vehicle licence</strong> at this link:
         <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/Surrender-vehicle-licence"target="_blank">
         Surrender a hackney carriage vehicle licence | Sheffield City Council</a></p>
     </p>
@@ -692,11 +692,12 @@ const surrenderLicence = new ContentBusiness(
         [insert send link]
     </p>
     
-    <p>The Where possible, the customer needs to return their plate to us.</p>
+    <p>Where possible, the customer needs to return their plate to us.</p>
 
     <h3>Re-licencing a vehicle</h3>
     <p>
-       If the customer wants to licence their vehicle again, they need to apply a new licence. This will mean the customer must go through the application process again.
+       If the customer wants to licence their vehicle again, they need to apply a new licence.<br>
+       This means the customer must go through the new application process again.
     </p>
     `,
     { buttonLabel: "", formName: ""},
