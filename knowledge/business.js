@@ -2082,12 +2082,14 @@ const convictionsAndDrivingOffences = new ContentBusiness(
     <p>This includes serious matters such as:</p>
       <ul>
         <li>sexual offences</li>
-        <li>violence or dishonesty offences</li>
+        <li>offences involving violence</li>
+        <li>offenses involving dishonesty</li>
+        <li>using a hand-held mobile phone while driving</li>
+        <li><li>crimes resulting in death</li>
         <li>drug-related offences</li>
         <li>discrimination</li>
         <li>possession of a weapon</li>
-        <li>crimes resulting in death or exploitation</li>
-        <li>using a hand-held mobile phone while driving</li>
+        <li>exploitation</li>
       </ul>
 
   <h3>Why this is important</h3>
