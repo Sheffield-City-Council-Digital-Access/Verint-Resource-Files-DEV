@@ -1204,141 +1204,6 @@ const medicalNeeds = new ContentBusiness(
   );
 
 
-const renewDriverLicence = new ContentBusiness(
-    "renewDriverLicence",
-    "Renew a Driver Licence",
-    "**To Review** - Renew a Private Hire or Hackney Carriage Drivers Licence",
-    `
-    <p>
-    We will usually contact you by email when your taxi driver’s licence needs to be renewed,
-    but it is your responsibility to renew your licence on time.
-    </p>
-    <p>
-    You can renew your badge up to 2 months before the date it expires.
-    </p>
-
-    <details class="accordion">
-    <summary class="accordion-header">
-        <h3>What is required to renew your badge</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <details class="details-accordion">
-        <summary>DVLA driving licence</summary>
-        <div class="details-accordion-content">
-            <p>
-                You will need to supply us with your Driving and Vehicle Licensing Agency (DVLA)
-                driving licence number. When you make your application, we will check your driving
-            licence with the DVLA.
-            </p>
-            <p>
-                You will receive an email from a company called TaxiPlus. This will ask you to give
-                consent to allow us to carry out these checks.
-            </p>
-            <p>
-                Make sure that you do not share your email address with another driver so we can
-                carry out the check.
-            </p>
-        </div>
-        </details>
-
-        <details class="details-accordion">
-        <summary>DBS check</summary>
-        <div class="details-accordion-content">
-            <p>
-                You need to provide us with a current Enhanced Disclosure Certificate with Barred
-                Check Lists from the Disclosure and Barring Service (DBS).
-            </p>
-            <p>
-            We will look at all convictions that are listed in the certificate.
-            </p>
-            <p>
-                If you have had one or more convictions recorded for any of the above offences,
-                your application may be referred to the Licensing Sub-Committee.
-            </p>
-        </div>
-        </details>
-    </div>
-    </details>
-
-    <details class="accordion">
-    <summary class="accordion-header">
-        <h3>Routine checks</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <p>
-            Once you are licensed as a taxi driver, we will carry out a routine check every
-            6 months.
-        </p>
-        <p>
-            To do this, you need to register with the DBS Update Service. If you do not use
-            this service, you will need to provide a valid DBS certificate that has been issued
-            within one month of the check.
-        </p>
-        <p>
-            Your licence will be suspended if we are not able to carry out routine checks on
-            your DBS and you are unable to supply a certificate dated within one month.
-        </p>
-    </div>
-    </details>
-
-    <details class="accordion">
-    <summary class="accordion-header">
-        <h3>How to apply</h3>
-        <div class="accordion-icon"></div>
-    </summary>
-    <div class="accordion-content">
-        <p>
-            To apply for an Enhanced Disclosure Certificate with Barred Check Lists, you need
-            to do the following:
-        </p>
-        <ul>
-            <li>Email <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a> to request a DBS pack</li>
-            <li>Ensure your DBS application form is completed in black ink</li>
-            <li>Do not sign the back of the form</li>
-            <li>
-                Complete the DBS form and attend Howden House First Point to have your documents
-                checked and verified face-to-face (open 10am to 4pm, Monday to Friday)
-            </li>
-            <li>
-                Make a £49.50 payment for your application before attending Howden House
-                (the payment link is provided below)
-            </li>
-            <li>
-                We will send your completed application to the DBS, who will carry out the
-                necessary checks and return the certificate to you
-            </li>
-        </ul>
-        <p>
-            You can apply for your DBS certificate when you take your knowledge test and
-            driving standards test.
-        </p>
-    </div>
-    </details>
-  
-    `,
-  
-    { buttonLabel: "", formName: ""},
-    { typeKey: "switchboard_transferred_to_service" },
-    { typeKey: "switchboard_information_provided"},
-    {
-      type: "Request",
-      keywords: [
-        "Switchboard",
-        "Switch board",
-        "Switch",
-        "transfer",
-        "redirect",
-        "transfer call",
-        "call"
-      ],
-      categories: ["Business", "Taxi Licensing"],
-    },
-    { date: "21/11/2025", name: "Joseph Coupland"} 
-  );
-
-  
 const applyPrivateHireVehicleLicence = new ContentBusiness(
   "applyPrivateHireVehicleLicence",
   "Apply for a Private Hire Vehicle Licence",
@@ -2141,6 +2006,105 @@ const convictionsAndDrivingOffences = new ContentBusiness(
 );
 
 
+const renewTaxiDriverLicence = new ContentBusiness(
+  "renewTaxiDriverLicence",
+  "Renewing a Taxi Driver Licence",
+  "Guidance on how to renew a taxi driver licence, including requirements, costs, and process details.",
+  `
+<h3>Overview</h3>
+  <p>Customers should renew their taxi driver licence online. Applications are assessed to confirm the driver is still a “fit and proper” person to hold a licence.</p>
+  <p>Drivers can renew their licence <strong>up to 2 months before the expiry date</strong>.</p>
+  <p>If the licence has expired, the driver <strong>must not drive a licensed vehicle</strong> until renewal is confirmed.</p>
+
+<h3>How to Apply</h3>
+  <p>Applications are completed using the council’s <strong>online renewal form</strong>. Customers have to submit all relevant documents as part of the application (details below).</p>
+  <p>Payment is made during the application process.</p>
+  <p>After submission, the council will review the application either:</p>
+  <ul>
+    <li>Confirm the licence has been renewed, or</li>
+    <li>Ask for further information, if required.</li>
+  </ul>
+
+<h3>Information and Documents Required</h3>
+  <p>Applicants must provide:</p>
+  <ul>
+    <li>Current taxi licence number</li>
+    <li>Licence expiry date (must be within 2 months of renewal)</li>
+    <li>DVLA driving licence number</li>
+    <li>HMRC tax check code (9 digits)</li>
+    <li>DBS certificate number or DBS online service details (dated within the same month as licence expiry)</li>
+    <li>Medical assessment certificate (if required based on age or medical condition)</li>
+    <li>Right to work documentation (if applicable)</li>
+  </ul>
+
+<h3>Costs</h3>
+  <p>The fee depends on the duration of the chosen. Licences can be granted for 1, 2 or 3 years:</p>
+    <ul>
+      <li>1 year: £223</li>
+      <li>2 years: £245</li>
+      <li>3 years: £268</li>
+    </ul>
+  <p>Once an online application is completed, the customer will receive a separate email with a link to pay.</p>
+
+<h3>Late Renewals</h3>
+  <ul>
+    <li>A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still use the renewal process.</li>
+    <li>After this period, the driver must <strong>apply for a new licence instead of renewing.</strong></li>
+  </ul>
+
+<h3>Important Notes for Call Handling</h3>
+  <ul>
+    <li>Payment does <strong>not guarantee automatic renewal</strong>—applications must be approved first.</li>
+    <li>Drivers must <strong>stop working immediately if their licence expires</strong> until renewal is confirmed.</li>
+    <li>If the renewal window is missed by more than 1 month, direct the customer to <strong>apply for a new licence</strong> instead.</li>
+    <li>Customers should ensure all required information is ready before starting the online application to avoid delays.</li>
+    <li>It is the driver’s responsibility to renew on time, although reminder emails are usually sent.</li>
+  </ul>
+
+<h3>Useful Links</h3>
+  <p>Detailed information about all stages of renewing a taxi driver licence can be found here:
+  <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/renewing-taxi-driver-licence" target="_blank">
+  Renewing a taxi driver licence | Sheffield City Council</a></p>
+
+  <p>A link to the licensing policy and the online form that needs to be completed can be found here:
+  <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/renewing-taxi-driver-licence/renew-taxi" target="_blank">
+  Renew a taxi driver licence | Sheffield City Council</a></p>
+
+  `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Application",
+    keywords: [
+      "taxi driver licence",
+      "taxi licence renewal",
+      "renew taxi licence",
+      "driver licence renewal",
+      "renew",
+      "taxi",
+      "driver",
+      "licence",
+      "renewal",
+      "permit renewal",
+      "cab",
+      "hackney carriage",
+      "private hire",
+      "driver licence",
+      "liscence",
+      "license",
+      "renwal",
+      "licsense",
+      "hckney",
+      "hackny",
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "12/06/2026", name: "Liz Taster" }
+);
+
+
+
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
   "Taxi Licensing",
@@ -2153,7 +2117,6 @@ const convictionsAndDrivingOffences = new ContentBusiness(
     surrenderLicence,
     renewPriviateLicence,
     medicalNeeds,
-    renewDriverLicence,
     drivingStandardsTestGuide,
     applyPrivateHireVehicleLicence,
     applyHackneyCarriageVehicleLicence,
@@ -2161,7 +2124,8 @@ const convictionsAndDrivingOffences = new ContentBusiness(
     applyPrivateHireOperatorLicence,
     renewPrivateHireOperatorLicence,
     changeOfNameOrAddress,
-    convictionsAndDrivingOffences
+    convictionsAndDrivingOffences,
+    renewTaxiDriverLicence
   ]
 );
 
