@@ -2070,6 +2070,75 @@ const changeOfNameOrAddress = new ContentBusiness(
 
 
 
+const convictionsAndDrivingOffences = new ContentBusiness(
+  "convictionsAndDrivingOffences",
+  "Taxi Driver Convictions and Driving Offences",
+  "Information for Sheffield taxi drivers on reporting arrests, charges, or convictions.",
+  `
+  <h3>Key message</h3>
+    <p>If you’re a licensed taxi driver in Sheffield, you must tell the council about certain arrests, charges or convictions within 48 hours.</p>
+
+  <h3>What must be reported</h3>
+    <p>This includes serious matters such as:</p>
+      <ul>
+        <li>sexual offences</li>
+        <li>violence or dishonesty offences</li>
+        <li>drug-related offences</li>
+        <li>discrimination</li>
+        <li>possession of a weapon</li>
+        <li>crimes resulting in death or exploitation</li>
+        <li>using a hand-held mobile phone while driving</li>
+      </ul>
+
+  <h3>Why this is important</h3>
+    <p>The council will review your licence to decide if you are still considered a ‘fit and proper’ person to hold a taxi licence.</p>
+
+  <h3>Failure to report</h3>
+    <p>If you don’t report an arrest or offence, it may be treated as dishonest behaviour and could affect your licence, even if no conviction is made.</p>
+
+  <h3>How to report</h3>
+    <p>To report a conviction or offence, you should use the online form available here:.
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/convictions-and-driving-offences" target="_blank">
+    Convictions and driving offences | Sheffield City Council</a>
+    </p>
+
+    <p>[Insert send link]</p>
+
+    `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "taxi driver convictions",
+      "driving offences",
+      "Sheffield taxi licensing",
+      "report conviction taxi",
+      "report arrest taxi driver",
+      "taxi licence rules",
+      "fit and proper person",
+      "taxi licensing team",
+      "Sheffield council taxi",
+      "driver offences reporting",
+      "mobile phone driving offence",
+      "taxi driver arrest report",
+      "convictions reporting",
+      "offence notification taxi",
+      "licence review taxi",
+      "taxi licensing Sheffield",
+      "taxi convctions",
+      "taxi convitions",
+      "drving offences",
+      "taxi liscence",
+      "Sheffiled taxi"
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "11/06/2026", name: "Liz Taster" }
+);
+
+
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
   "Taxi Licensing",
@@ -2089,7 +2158,8 @@ const changeOfNameOrAddress = new ContentBusiness(
     applyTaxiDriverLicence,
     applyPrivateHireOperatorLicence,
     renewPrivateHireOperatorLicence,
-    changeOfNameOrAddress
+    changeOfNameOrAddress,
+    convictionsAndDrivingOffences
   ]
 );
 
