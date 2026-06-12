@@ -2077,6 +2077,14 @@ const convictionsAndDrivingOffences = new ContentBusiness(
   `
   <h3>Key message</h3>
     <p>If you’re a licensed taxi driver in Sheffield, you must tell the council about certain arrests, charges or convictions within 48 hours.</p>
+  
+  <h3>How to report</h3>
+    <p>To report a conviction or offence, you should use the online form available here:.
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/convictions-and-driving-offences" target="_blank">
+    Convictions and driving offences | Sheffield City Council</a>
+    </p>
+
+    <p>[Insert send link]</p>
 
   <h3>What must be reported</h3>
     <p>This includes serious matters such as:</p>
@@ -2085,26 +2093,18 @@ const convictionsAndDrivingOffences = new ContentBusiness(
         <li>offences involving violence</li>
         <li>offenses involving dishonesty</li>
         <li>using a hand-held mobile phone while driving</li>
-        <li><li>crimes resulting in death</li>
+        <li>crimes resulting in death</li>
         <li>drug-related offences</li>
-        <li>discrimination</li>
         <li>possession of a weapon</li>
+        <li>discrimination</li>
         <li>exploitation</li>
       </ul>
 
-  <h3>Why this is important</h3>
+  <h3>Why must these be reported?</h3>
     <p>The council will review your licence to decide if you are still considered a ‘fit and proper’ person to hold a taxi licence.</p>
 
   <h3>Failure to report</h3>
     <p>If you don’t report an arrest or offence, it may be treated as dishonest behaviour and could affect your licence, even if no conviction is made.</p>
-
-  <h3>How to report</h3>
-    <p>To report a conviction or offence, you should use the online form available here:.
-    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/convictions-and-driving-offences" target="_blank">
-    Convictions and driving offences | Sheffield City Council</a>
-    </p>
-
-    <p>[Insert send link]</p>
 
     `,
   { buttonLabel: "", formName: "" },
