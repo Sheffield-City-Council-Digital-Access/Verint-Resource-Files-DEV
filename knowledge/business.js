@@ -924,7 +924,7 @@ const medicalNeeds = new ContentBusiness(
 
 const applyPrivateHireVehicleLicence = new ContentBusiness(
   "applyPrivateHireVehicleLicence",
-  "Apply for a Private Hire Vehicle Licence",
+  "Apply - Private Hire Vehicle Licence",
   "Guidance on applying for a private hire vehicle licence in Sheffield, including requirements, stages, costs, and collection.",
   `<h3>Overview</h3>
     <p>
@@ -1063,7 +1063,7 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
 
 const applyHackneyCarriageVehicleLicence = new ContentBusiness(
   "applyHackneyCarriageVehicleLicence",
-  "Apply for a Hackney Carriage Vehicle Licence",
+  "Apply - Hackney Carriage Vehicle Licence",
   "Guidance on applying for a Hackney Carriage vehicle licence in Sheffield, including requirements, stages, costs, and collection.",
   `<h3>Overview</h3>
     <p>
@@ -1200,7 +1200,7 @@ const applyHackneyCarriageVehicleLicence = new ContentBusiness(
 
 const applyTaxiDriverLicence = new ContentBusiness(
   "applyTaxiDriverLicence",
-  "Apply for a Taxi Driver Licence",
+  "Apply - Taxi Driver Licence",
   "Guidance for applying for a taxi driver licence to drive a private hire vehicle or hackney carriage in Sheffield.",
   `
   <h3>Overview</h3>
@@ -1302,7 +1302,7 @@ const applyTaxiDriverLicence = new ContentBusiness(
 
 const applyPrivateHireOperatorLicence = new ContentBusiness(
   "applyPrivateHireOperatorLicence",
-  "Apply for a Private Hire Operator Licence",
+  "Apply - Private Hire Operator Licence",
   "Details of how to apply to Sheffield City Council for a private hire operator licence.",
   `<h3>Overview</h3>
     <p>Customers must apply to Sheffield City Council for a private hire operator licence if they want to <strong>take bookings or supply drivers 
@@ -1430,7 +1430,7 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
 
 const renewPrivateHireOperatorLicence = new ContentBusiness(
   "renewPrivateHireOperatorLicence",
-  "Renew a Private Hire Operator Licence",
+  "Renew - Private Hire Operator Licence",
   "Details of how to renew a private hire operator licence.",
   `<h3>Overview</h3>
     <p>Customers must renew <strong>before their current licence expires</strong> to continue operating legally. 
@@ -1726,7 +1726,7 @@ const convictionsAndDrivingOffences = new ContentBusiness(
 
 const renewTaxiDriverLicence = new ContentBusiness(
   "renewTaxiDriverLicence",
-  "Renew a Taxi Driver Licence",
+  "Renew - Taxi Driver Licence",
   "Guidance on how to renew a taxi driver licence, including requirements, costs, and process details.",
   `
 <h3>Overview</h3>
@@ -1734,6 +1734,19 @@ const renewTaxiDriverLicence = new ContentBusiness(
   <p>Drivers can renew their licence <strong>up to 2 months before the expiry date</strong>.</p>
   <p>If the licence has expired, the driver <strong>must not drive a licensed vehicle</strong> until renewal is confirmed.</p>
 
+<h3>Useful Links</h3>
+  <p>Detailed information about all stages of renewing a taxi driver licence can be found here:
+  <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/renewing-taxi-driver-licence" target="_blank">
+  Renewing a taxi driver licence | Sheffield City Council</a></p>
+
+  <p>[Insert send link]</p>
+
+  <p>A link to the licensing policy and the online form that needs to be completed can be found here:
+  <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/renewing-taxi-driver-licence/renew-taxi" target="_blank">
+  Renew a taxi driver licence | Sheffield City Council</a></p>
+
+  <p>[Insert send link]</p>
+  
 <h3>How to Apply</h3>
   <p>Applications are completed using the council’s <strong>online renewal form</strong>. Customers have to submit all relevant documents as part of the application (details below).</p>
   <p>Payment is made during the application process.</p>
@@ -1780,18 +1793,7 @@ const renewTaxiDriverLicence = new ContentBusiness(
     <li>It is the driver’s responsibility to renew on time, although reminder emails are usually sent.</li>
   </ul>
 
-<h3>Useful Links</h3>
-  <p>Detailed information about all stages of renewing a taxi driver licence can be found here:
-  <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/renewing-taxi-driver-licence" target="_blank">
-  Renewing a taxi driver licence | Sheffield City Council</a></p>
 
-  <p>[Insert send link]</p>
-
-  <p>A link to the licensing policy and the online form that needs to be completed can be found here:
-  <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/renewing-taxi-driver-licence/renew-taxi" target="_blank">
-  Renew a taxi driver licence | Sheffield City Council</a></p>
-
-  <p>[Insert send link]</p>
 
   `,
   { buttonLabel: "", formName: "" },
