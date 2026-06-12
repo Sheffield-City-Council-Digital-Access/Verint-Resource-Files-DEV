@@ -2008,7 +2008,7 @@ const convictionsAndDrivingOffences = new ContentBusiness(
 
 const renewTaxiDriverLicence = new ContentBusiness(
   "renewTaxiDriverLicence",
-  "Renewing a Taxi Driver Licence",
+  "Renew a Taxi Driver Licence",
   "Guidance on how to renew a taxi driver licence, including requirements, costs, and process details.",
   `
 <h3>Overview</h3>
@@ -2050,13 +2050,14 @@ const renewTaxiDriverLicence = new ContentBusiness(
   <ul>
     <li>A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still use the renewal process.</li>
     <li>After this period, the driver must <strong>apply for a new licence instead of renewing.</strong></li>
+    <li>If the licence has expired, the driver <strong>must not drive a licensed vehicle</strong> until renewal is confirmed.</li>
   </ul>
 
 <h3>Important Notes for Call Handling</h3>
   <ul>
-    <li>Payment does <strong>not guarantee automatic renewal</strong>—applications must be approved first.</li>
     <li>Drivers must <strong>stop working immediately if their licence expires</strong> until renewal is confirmed.</li>
-    <li>If the renewal window is missed by more than 1 month, direct the customer to <strong>apply for a new licence</strong> instead.</li>
+    <li>Payment <strong>does not guarantee automatic renewal</strong> — applications must be approved first.</li>
+        <li>If the renewal window is missed by more than 1 month, direct the customer to <strong>apply for a new licence</strong> instead.</li>
     <li>Customers should ensure all required information is ready before starting the online application to avoid delays.</li>
     <li>It is the driver’s responsibility to renew on time, although reminder emails are usually sent.</li>
   </ul>
@@ -2066,9 +2067,13 @@ const renewTaxiDriverLicence = new ContentBusiness(
   <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/renewing-taxi-driver-licence" target="_blank">
   Renewing a taxi driver licence | Sheffield City Council</a></p>
 
+  <p>[Insert send link]</p>
+
   <p>A link to the licensing policy and the online form that needs to be completed can be found here:
   <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/renewing-taxi-driver-licence/renew-taxi" target="_blank">
   Renew a taxi driver licence | Sheffield City Council</a></p>
+
+  <p>[Insert send link]</p>
 
   `,
   { buttonLabel: "", formName: "" },
