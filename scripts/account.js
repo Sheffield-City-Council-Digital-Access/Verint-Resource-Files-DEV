@@ -1,3 +1,4 @@
+
 let userName;
 
 /**
@@ -211,17 +212,19 @@ document.addEventListener("DOMContentLoaded", function () {
   })();
 
   (() => {
+      console.log('run')
     /**
      * Contains logic specific to the '/requests' page, handling
      * the display and formatting of request lists and details.
      */
     if (window.location.pathname.endsWith("/requests")) {
+        console.log("/requests")
       /**
        * Checks if the 'srid' URL parameter exists and starts with '101000',
        * indicating a request details page.
        */
-      const sridValue = KDF.getParams().srid;
-      const isSridValid = KDF.getParams()?.srid?.startsWith("1010") ?? false;
+      const srid = KDF.getParams()?.srid;
+      const isSridValid = srid && (srid.startsWith("1010") || srid.startsWith("2020"));
 
       /**
        * Executes if the current page is a request details page (determined by checkSridParam).
@@ -229,6 +232,7 @@ document.addEventListener("DOMContentLoaded", function () {
        * certain elements and reformatting others.
        */
       if (isSridValid) {
+          console.log("/isSridValid")
         // --- HANDLE LOAD COMPLETED FORM ---------------------------------------- \\
         const page = document.getElementById("requests");
         const content = document.getElementById("content");
@@ -279,7 +283,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           const spanValue = document.createElement("span");
           spanValue.className = "le-request-value";
-          spanValue.textContent = sridValue;
+          spanValue.textContent = srid;
 
           newDiv.appendChild(spanLabel);
           newDiv.appendChild(spanValue);
@@ -358,9 +362,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         const datetimeElements = document.querySelectorAll(
-          ".le-request-note-created time"
+          ".le-request-note-created time, .le-request-brief-details time"
         );
-
+        console.log("datetimeElements", datetimeElements, datetimeElements.length > 0)
         if (datetimeElements.length > 0) {
           $('#request-details').removeClass('hidden');
           $('#raise-request-details').addClass('hidden');
@@ -402,6 +406,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         }
       } else {
+          console.log("isSridValid else")
         $('#request-details').addClass('hidden');
         $('#raise-request-details').removeClass('hidden');
 
@@ -460,6 +465,12 @@ document.addEventListener("DOMContentLoaded", function () {
           const itemsContainer = activeWidget.querySelector(
             ".le-request-list ul"
           );
+
+          if (!itemsContainer) {
+            console.warn(`Pagination skipped: '.le-request-list ul' not found inside #${activeWidgetId}.`);
+            return; 
+          }
+
           const items = Array.from(
             itemsContainer.querySelectorAll(".le-request-item")
           );
