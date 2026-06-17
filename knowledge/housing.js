@@ -12475,15 +12475,11 @@ const tenancyAgreementRequest = new ContentH(
         </tbody>
       </table>
   `,
-    { buttonLabel: "", formName: "" },
-    { typeKey: "" },
+    { buttonLabel: "Request", formName: "" },
+    { typeKey: "tenancy_sustainment_transferred_to_service" },
     { typeKey: "tenancy_sustainment_information_provided" },
-    {
-      type: "tenancyAgreementRequest",
-      keywords: ["Tenancy"],
-      categories: ["Housing"],
-    },
-    { date: "01/10/2025", name: "Shahzad Athar" }
+    {type: "tenancyAgreementRequest", keywords: ["Tenancy"], categories: ["Housing"],},
+    { date: "17/06/2026", name: "Shahzad Athar" }
  );
 
 
@@ -12607,7 +12603,7 @@ const changesToTenancy = new ContentH(
     keywords: ["Housing", "Tenancy", "Tenant"],
     categories: ["Housing"],
   },
-  { date: "08/05/2026", name: "Liz Taster" }
+  { date: "17/06/2026", name: "Shaz Athar" }
 );
 
 const tenancyConditions = new ContentH(
@@ -12616,9 +12612,8 @@ const tenancyConditions = new ContentH(
   "Tenancy conditions outline tenant responsibilities, including rent payment, maintenance, and behavior expectations. Specific rules apply for alterations, pets, and tenancy violations. Tenants have rights like the right to repairs and compensation for certain improvements, and must follow rules for evictions and tenant references.",
   `
 <p>
-  Use the following link for further information on Tenancy Conditions: <a href="https://www.sheffield.gov.uk/sites/default/files/2022-10/you-your-home.pdf "target="_blank">https://www.sheffield.gov.uk/sites/default/files/2022-10/you-your-home.pdf</a>
+  Use the following link for further information on Tenancy Conditions: <a href="https://www.sheffield.gov.uk/sites/default/files/2025-12/you_and_your_home_-_revised_2025_edition.pdf "target="_blank">https://www.sheffield.gov.uk/sites/default/files/2025-12/you_and_your_home_-_revised_2025_edition.pdf</a>
 </p>
-
 <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
