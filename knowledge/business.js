@@ -1831,16 +1831,16 @@ const renewTaxiDriverLicence = new ContentBusiness(
 
 const renewPrivateHireVehicleLicence = new ContentBusiness(
   "renewPrivateHireVehicleLicence",
-  "Renew Private Hire Vehicle Licence",
+  "Renew - Private Hire Vehicle Licence",
   "Guidance on renewing a private hire vehicle licence, including requirements, costs, and process details.",
 
   `<h3>Overview</h3>
-    <p>Customers should renew their private hire vehicle licence online. The licence allows a vehicle to continue 
-    operating for private hire purposes and is valid for a maximum of 12 months.</p>
+    <p>Customers should renew their private hire vehicle licence <strong>online</strong>. The licence allows a vehicle to 
+    continue operating for private hire purposes and is valid for a maximum of 12 months.</p>
     <p>Renewal should be completed <strong>within the same month the licence is due to expire</strong>. 
     Customers are responsible for checking their licence expiry date and renewing on time.</p>
-    <p>If the licence expires, the vehicle <strong>cannot legally be used for hire and reward</strong> until 
-    renewal is confirmed.</p>
+    <p>If the licence <strong>expires</strong>, the vehicle <strong>cannot legally be used for hire and reward</strong> 
+    until renewal is confirmed.</p>
 
   <h3>Useful Links</h3>
     <p>Detailed information about all stages of renewing a private hire vehicle licence can be found here: 
@@ -1868,7 +1868,7 @@ const renewPrivateHireVehicleLicence = new ContentBusiness(
     <p>The renewal fee is <strong>£212</strong>, payable online at the time of application.</p>
 
   <h3>How to Apply</h3>
-    <p>Customers must apply online.</p>
+    <p>Customers must apply <strong>online</strong>.</p>
     <p>Payment is made during the application process.</p>
     <p>Applicants must provide:</p>
       <ul>
@@ -1896,11 +1896,11 @@ const renewPrivateHireVehicleLicence = new ContentBusiness(
 
   <h3>Important Notes for Call Handling</h3>
     <ul>
-      <li>If the licence expires, the vehicle <strong>cannot legally be used for hire and reward</strong> 
-      until renewal is confirmed.</li>
       <li>The renewal application should be made as soon as possible after the vehicle passes its compliance test.</li>
       <li>If a vehicle compliance test is in the last week of the final month the licence is valid, 
       the customer will be given the option to collect the licence.</li>
+      <li>If the licence expires, the vehicle <strong>cannot legally be used for hire and reward</strong> 
+      until renewal is confirmed.</li>
     </ul>`,
 
   { buttonLabel: "Apply Now", formName: "renew_private_hire" },
