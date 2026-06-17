@@ -11602,7 +11602,6 @@ const tenancyConditions = new ContentH(
 <p>
   Use the following link for further information on Tenancy Conditions: <a href="https://www.sheffield.gov.uk/sites/default/files/2025-12/you_and_your_home_-_revised_2025_edition.pdf "target="_blank">https://www.sheffield.gov.uk/sites/default/files/2025-12/you_and_your_home_-_revised_2025_edition.pdf</a>
 </p>
-
 <button
     type="button"
     class="dform_widget email-btn dform_widget_type_button"
