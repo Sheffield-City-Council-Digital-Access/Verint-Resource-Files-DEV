@@ -2544,17 +2544,18 @@ function getCurrentPageId() {
 function checkAndRefreshAgentLocation() {
   const rawData = localStorage.getItem("agentLocation");
 
-  if (!rawData) {
-    console.warn("No agentLocation found in localStorage.");
+  if (!rawData || rawData === "null") {
+    console.warn("No valid agentLocation found in localStorage string.");
     checkAndDisplayModal();
     return;
   }
 
   try {
     const data = JSON.parse(rawData);
+
     if (data && typeof data === 'object') {
       const currentTime = new Date().getTime();
-      
+
       if (currentTime < data.expiry) {
         // Refresh expiry time for another 25 minutes
         data.expiry = currentTime + 25 * 60 * 1000; 
@@ -2572,14 +2573,14 @@ function checkAndRefreshAgentLocation() {
         checkAndDisplayModal();
       }
     } else {
-      // Data was saved in an invalid format (e.g., a plain string or number)
-      console.warn("agentLocation in localStorage is not a valid object:", data);
+      // Handles cases where data parsed into a number, boolean, or literal null
+      console.warn("agentLocation in localStorage parsed to an invalid type:", data);
       localStorage.removeItem("agentLocation");
       checkAndDisplayModal();
     }
     
   } catch (e) {
-    // Catch-all for JSON parsing errors if localStorage contains malformed JSON
+    // Catch-all for malformed JSON parsing errors
     console.error("Failed to parse agentLocation from localStorage:", e);
     localStorage.removeItem("agentLocation");
     checkAndDisplayModal();
