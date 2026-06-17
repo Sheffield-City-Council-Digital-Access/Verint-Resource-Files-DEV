@@ -2517,26 +2517,71 @@ function getCurrentPageId() {
 
 // --- HANDLE SET AGENT LOCATION -------------------------------------------- \\
 
-function checkAndRefreshAgentLocation() {
-  const data = JSON.parse(localStorage.getItem("agentLocation"));
-  if (data) {
-    const currentTime = new Date().getTime();
-    if (currentTime < data.expiry) {
-      // Refresh expiry time for another hour
-      data.expiry = currentTime + 25 * 60 * 1000; // 25 minutes in milliseconds
-      localStorage.setItem("agentLocation", JSON.stringify(data));
+// function checkAndRefreshAgentLocation() {
+//   const data = JSON.parse(localStorage.getItem("agentLocation"));
+//   if (data) {
+//     const currentTime = new Date().getTime();
+//     if (currentTime < data.expiry) {
+//       // Refresh expiry time for another hour
+//       data.expiry = currentTime + 25 * 60 * 1000; // 25 minutes in milliseconds
+//       localStorage.setItem("agentLocation", JSON.stringify(data));
 
-      if (data.location) {
-        KDF.setVal("txt_agent_location", data.location);
+//       if (data.location) {
+//         KDF.setVal("txt_agent_location", data.location);
+//       } else {
+//         console.warn("agentLocation data exists in localStorage, but the 'location' property is missing or empty:", data);
+//       }
+//     } else {
+//       // Data has expired
+//       localStorage.removeItem("agentLocation");
+//       checkAndDisplayModal();
+//     }
+//   } else {
+//     checkAndDisplayModal();
+//   }
+// }
+
+function checkAndRefreshAgentLocation() {
+  const rawData = localStorage.getItem("agentLocation");
+
+  if (!rawData) {
+    console.warn("No agentLocation found in localStorage.");
+    checkAndDisplayModal();
+    return;
+  }
+
+  try {
+    const data = JSON.parse(rawData);
+    if (data && typeof data === 'object') {
+      const currentTime = new Date().getTime();
+      
+      if (currentTime < data.expiry) {
+        // Refresh expiry time for another 25 minutes
+        data.expiry = currentTime + 25 * 60 * 1000; 
+        localStorage.setItem("agentLocation", JSON.stringify(data));
+
+        if (data.location) {
+          KDF.setVal("txt_agent_location", data.location);
+        } else {
+          console.warn("agentLocation data object exists, but 'location' property is missing:", data);
+        }
+
       } else {
-        console.warn("agentLocation data exists in localStorage, but the 'location' property is missing or empty:", data);
+        // Data has expired
+        localStorage.removeItem("agentLocation");
+        checkAndDisplayModal();
       }
     } else {
-      // Data has expired
+      // Data was saved in an invalid format (e.g., a plain string or number)
+      console.warn("agentLocation in localStorage is not a valid object:", data);
       localStorage.removeItem("agentLocation");
       checkAndDisplayModal();
     }
-  } else {
+    
+  } catch (e) {
+    // Catch-all for JSON parsing errors if localStorage contains malformed JSON
+    console.error("Failed to parse agentLocation from localStorage:", e);
+    localStorage.removeItem("agentLocation");
     checkAndDisplayModal();
   }
 }
