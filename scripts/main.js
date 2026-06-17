@@ -2561,10 +2561,10 @@ function checkAndRefreshAgentLocation() {
         data.expiry = currentTime + 25 * 60 * 1000; 
         localStorage.setItem("agentLocation", JSON.stringify(data));
 
-        if (data.location) {
-          KDF.setVal("txt_agent_location", data.location);
+        if (data.value) {
+          KDF.setVal("txt_agent_location", data.value);
         } else {
-          console.warn("agentLocation data object exists, but 'location' property is missing:", data);
+          console.warn("agentLocation data object exists, but 'value' property is missing:", data);
         }
 
       } else {
