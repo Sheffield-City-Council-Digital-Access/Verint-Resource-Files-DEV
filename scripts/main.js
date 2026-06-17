@@ -2525,6 +2525,12 @@ function checkAndRefreshAgentLocation() {
       // Refresh expiry time for another hour
       data.expiry = currentTime + 25 * 60 * 1000; // 25 minutes in milliseconds
       localStorage.setItem("agentLocation", JSON.stringify(data));
+
+      if (data.location) {
+        KDF.setVal("txt_agent_location", data.location);
+      } else {
+        console.warn("agentLocation data exists in localStorage, but the 'location' property is missing or empty:", data);
+      }
     } else {
       // Data has expired
       localStorage.removeItem("agentLocation");
