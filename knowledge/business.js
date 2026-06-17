@@ -2049,7 +2049,7 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
 
 const applyKnowledgeTest = new ContentBusiness(
   "applyKnowledgeTest",
-  "Apply Knowledge Test",
+  "Apply - Knowledge Test",
   "Information on applying for the taxi driver Knowledge Test, including requirements, cost, and process.",
   
   `<h3>Overview</h3>
@@ -2061,6 +2061,8 @@ const applyKnowledgeTest = new ContentBusiness(
     <p>Additional information and a link to apply can be found here: 
     <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/knowledge-test" target="_blank">
     Knowledge Test | Sheffield City Council</a></p>
+
+    <p>[Insert send link]</p>
 
   <h3>What the Knowledge Test Covers</h3>
     <p>Applicants are expected to demonstrate knowledge of:</p>
@@ -2087,9 +2089,11 @@ const applyKnowledgeTest = new ContentBusiness(
       <ul>
         <li>Be <strong>over 21 years of age</strong></li>
         <li>Have completed and passed:</li>
-        <li>Level 2 Certificate in Introduction to the Role of the Professional Taxi and Private Hire Driver</li>
-        <li>Safeguarding training</li>
-        <li>Disability Awareness training</li>
+        <ul>
+          <li>Level 2 Certificate in Introduction to the Role of the Professional Taxi and Private Hire Driver</li>
+          <li>Safeguarding training</li>
+          <li>Disability Awareness training</li>
+        </ul>
       </ul>
     <p>Applicants must also provide:</p>
       <ul>
