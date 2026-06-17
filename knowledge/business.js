@@ -2134,11 +2134,11 @@ const applyKnowledgeTest = new ContentBusiness(
       "Taxi licence test",
       "KnowledgeTest",
       "knowlege",
-      "tst"
+      "tst",
       "knowlegeTest",
-      "knwledge"
+      "knwledge",
       "liscence",
-      "lisence"
+      "lisence",
     ],
     categories: ["Business", "Taxi Licensing"]
   },
