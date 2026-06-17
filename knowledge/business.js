@@ -2007,7 +2007,7 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
       <li>If a vehicle compliance test is in the last week of the final month the licence is valid, 
       the customer will be given the option to collect the licence.</li>
       <li>A valid insurance policy covering use as a taxi must be in place.</li>
-      <li>If the licence expires, the vehicle <strong>cannot legally be used as a hackney carriage</strong> 
+      <li>If the licence expires, the vehicle <strong>cannot legally be used as a taxi</strong> 
       until renewal is confirmed.</li>
     </ul>`,
 
@@ -2046,6 +2046,106 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
   { date: "17/06/2026", name: "Liz Taster" }
 );
 
+
+const applyKnowledgeTest = new ContentBusiness(
+  "applyKnowledgeTest",
+  "Apply Knowledge Test",
+  "Information on applying for the taxi driver Knowledge Test, including requirements, cost, and process.",
+  
+  `<h3>Overview</h3>
+    <p>The Knowledge Test is part of the process for applying for a new taxi driver licence. It is designed 
+    to assess whether applicants have a good understanding of the local area and key responsibilities required 
+    to work as a taxi or private hire driver.</p>
+    <p>Applicants must pass the Knowledge Test as part of Stage Two of the taxi driver licensing process, 
+    and forms part of assessing whether an applicant is “fit and proper” to hold a taxi driver licence.</p>
+    <p>Additional information and a link to apply can be found here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/knowledge-test" target="_blank">
+    Knowledge Test | Sheffield City Council</a></p>
+
+  <h3>What the Knowledge Test Covers</h3>
+    <p>Applicants are expected to demonstrate knowledge of:</p>
+      <ul>
+        <li>Routes within Sheffield</li>
+        <li>Places of interest</li>
+        <li>Highway Code</li>
+        <li>Road safety</li>
+        <li>Safeguarding responsibilities</li>
+      </ul>
+    <p>Drivers should be able to navigate the city without relying on satnav or other electronic navigation devices.</p>
+
+  <h3>Test Format and Requirements</h3>
+    <p>The test is computer-based and taken at a council office.</p>
+    <p>Applicants must score at least <strong>80% in each section</strong> to pass.</p>
+    <p>The test result is valid for <strong>one year</strong> from the pass date.</p>
+
+  <h3>Cost</h3>
+    <p>The fee to take the Knowledge Test is <strong>£87</strong>.</p>
+    <p>If the applicant fails, the fee is <strong>non-refundable</strong> and must be paid again to retake the test.</p>
+
+  <h3>Eligibility and Requirements to Apply</h3>
+    <p>Before applying for the Knowledge Test, applicants must:</p>
+      <ul>
+        <li>Be <strong>over 21 years of age</strong></li>
+        <li>Have completed and passed:</li>
+        <li>Level 2 Certificate in Introduction to the Role of the Professional Taxi and Private Hire Driver</li>
+        <li>Safeguarding training</li>
+        <li>Disability Awareness training</li>
+      </ul>
+    <p>Applicants must also provide:</p>
+      <ul>
+        <li>DVLA driving licence number (held for at least 12 months)</li>
+        <li>A photo of their DVLA driving licence</li>
+        <li>A passport-style photograph</li>
+      </ul>
+
+  <h3>How to Apply</h3>
+    <p>The Knowledge Test must be booked <strong>online</strong>.</p>
+    <p>Applicants need to <strong>make an appointment</strong> to take the test.</p>
+    <p>Payment is made as part of the online application.</p>
+    <p>If an applicant arrives late for their appointment, the test will not take place and the fee will not be refunded.</p>
+
+  <h3>Outcome</h3>
+    <ul>
+      <li>Applicants who pass can continue with the taxi driver licence process.</li>
+      <li>Applicants who fail must pay again to retake the test.</li>
+    </ul>`,
+
+  { buttonLabel: "Apply for Knowledge Test", formName: "knowledgeTestApplication" },
+  { typeKey: "Application" },
+  { typeKey: "Taxi Licensing" },
+  {
+    type: "Application",
+    keywords: [
+      "Knowledge Test",
+      "Knowledge",
+      "Test",
+      "Taxi driver licence",
+      "taxi",
+      "driver",
+      "licence",
+      "Private hire",
+      "hackney carriage",
+      "licensing",
+      "Taxi test",
+      "application",
+      "Book knowledge test",
+      "Taxi exam",
+      "Driver assessment",
+      "Taxi licence test",
+      "KnowledgeTest",
+      "knowlege",
+      "tst"
+      "knowlegeTest",
+      "knwledge"
+      "liscence",
+      "lisence"
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "17/06/2026", name: "Liz Taster" }
+);
+
+
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
   "Taxi Licensing",
@@ -2066,7 +2166,8 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
     convictionsAndDrivingOffences,
     renewTaxiDriverLicence,
     renewPrivateHireVehicleLicence,
-    renewHackneyCarriageVehicleLicence
+    renewHackneyCarriageVehicleLicence,
+    applyKnowledgeTest
   ]
 );
 
