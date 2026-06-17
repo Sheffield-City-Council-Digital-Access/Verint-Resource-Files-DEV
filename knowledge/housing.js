@@ -12479,7 +12479,7 @@ const tenancyAgreementRequest = new ContentH(
     { typeKey: "tenancy_sustainment_transferred_to_service" },
     { typeKey: "tenancy_sustainment_information_provided" },
     {type: "tenancyAgreementRequest", keywords: ["Tenancy"], categories: ["Housing"],},
-    { date: "01/10/2025", name: "Shahzad Athar" }
+    { date: "17/06/2026", name: "Shahzad Athar" }
  );
 
 
@@ -12603,7 +12603,7 @@ const changesToTenancy = new ContentH(
     keywords: ["Housing", "Tenancy", "Tenant"],
     categories: ["Housing"],
   },
-  { date: "08/05/2026", name: "Liz Taster" }
+  { date: "17/06/2026", name: "Shaz Athar" }
 );
 
 const tenancyConditions = new ContentH(
