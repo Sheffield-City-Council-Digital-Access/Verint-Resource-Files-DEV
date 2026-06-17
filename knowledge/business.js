@@ -1899,9 +1899,9 @@ const renewPrivateHireVehicleLicence = new ContentBusiness(
       <li>The renewal application should be made as soon as possible after the vehicle passes its compliance test.</li>
       <li>If a vehicle compliance test is in the last week of the final month the licence is valid, 
       the customer will be given the option to collect the licence.</li>
+      <li>A valid insurance policy covering use as a taxi must be in place.</li>
       <li>If the licence expires, the vehicle <strong>cannot legally be used for hire and reward</strong> 
       until renewal is confirmed.</li>
-      <li>A valid insurance policy covering use as a taxi must be in place.</li>
     </ul>`,
 
   { buttonLabel: "Apply Now", formName: "renew_private_hire" },
@@ -1943,10 +1943,10 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
 
   `<h3>Overview</h3>
     <p>Customers should renew their hackney carriage vehicle licence <strong>online</strong>. The licence allows a vehicle to 
-    continue operating their hackney carriage legally and is valid for a maximum of 12 months.</p>
+    continue operating legally as a hackney carriage and is valid for a maximum of 12 months.</p>
     <p>Renewal should be completed <strong>within the same month the licence is due to expire</strong>. 
     Customers are responsible for checking their licence expiry date and renewing on time.</p>
-    <p>If the licence <strong>expires</strong>, the vehicle <strong>cannot legally be used for hire and reward</strong> 
+    <p>If the licence <strong>expires</strong>, the vehicle <strong>cannot legally be used as a taxi</strong> 
     until renewal is confirmed.</p>
 
   <h3>Useful Links</h3>
@@ -1998,7 +1998,7 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
     <p>A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still 
     use the renewal process.</p>
     <p>After this period, the driver must <strong>apply for a new vehicle licence instead of renewing.</strong></p>
-    <p>If the licence has expired, the vehicle <strong>cannot legally be used for hire and reward</strong> 
+    <p>If the licence has expired, the vehicle <strong>cannot legally be used as a hackney carriage</strong> 
     until renewal is confirmed.</p>
 
   <h3>Important Notes for Call Handling</h3>
@@ -2006,9 +2006,9 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
       <li>The renewal application should be made as soon as possible after the vehicle passes its compliance test.</li>
       <li>If a vehicle compliance test is in the last week of the final month the licence is valid, 
       the customer will be given the option to collect the licence.</li>
+      <li>A valid insurance policy covering use as a taxi must be in place.</li>
       <li>If the licence expires, the vehicle <strong>cannot legally be used as a hackney carriage</strong> 
       until renewal is confirmed.</li>
-      <li>A valid insurance policy covering use as a taxi must be in place.</li>
     </ul>`,
 
   { buttonLabel: "Apply Now", formName: "renew_hackney_carriage" },
