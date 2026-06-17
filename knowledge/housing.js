@@ -118,19 +118,39 @@ const universalCredit = new ContentH(
   "Universal credit",
   "Learn about Universal Credit, including how to apply, report changes, and manage rent and Council Tax payments.",
   `
-    <p>If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
-   you may be directed to claim Universal Credit:</p>
-<ul>
+  <p>
+    If you need to make a new claim or if you have a change in circumstances with one of the following benefits, 
+    you may be directed to claim Universal Credit:
+   </p>
+  <ul>
     <li>Housing Benefit</li>
     <li>Income-related Employment and Support Allowance (ESA)</li>
     <li>Income-based Jobseeker's Allowance (JSA)</li>
     <li>Child Tax Credit</li>
     <li>Working Tax Credit</li>
     <li>Income Support</li>
-</ul>
-<p>At some point in the future, many people currently on the benefits above will be moved across to Universal Credit. 
-   The Government has not yet given a date for this, but the Department for Work and Pensions 
-   will contact anyone affected before there are changes to their benefits or tax credits.</p>
+  </ul>
+  <p>
+    At some point in the future, many people currently on the benefits above will be moved across to Universal Credit. 
+    The Government has not yet given a date for this, but the Department for Work and Pensions 
+    will contact anyone affected before there are changes to their benefits or tax credits.
+  </p>
+
+  <p>
+    Information about Universal Credit, including a link to apply for Universal Credit through the GOV.UK, can be found here: 
+    <a href="https://www.sheffield.gov.uk/benefits/apply-universal-credit" target="_blank">Apply for Universal Credit | Sheffield City Council</a>
+  </p>
+
+      <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20Universal%20Credit\`"
+    >
+            Send link to review further information
+    </button>
 
 <details class="accordion">
     <summary class="accordion-header">
@@ -1290,6 +1310,10 @@ const emergencyRepairs = new ContentH(
       "repairs and invesment",
       "repair and investement",
       "repairs and invesmant",
+      "repair",
+      "repairs",
+      "emergency",
+      "Emergency Repairs"
     ],
     categories: ["Housing"],
   },
@@ -1425,6 +1449,11 @@ const loststolenkeys = new ContentH(
       "repairs and invesment",
       "repair and investement",
       "repairs and invesmant",
+      "lock",
+      "locks",
+      "stolen keys",
+      "keys",
+      "repairs",
     ],
     categories: ["Housing"],
   },
@@ -1436,6 +1465,53 @@ const newAndExistingRepairs = new ContentH(
   "New and Existing Repairs",
   "Information for leaseholders on repair responsibilities within their flats and shared areas, including service charge details for communal repairs.",
   `
+  
+  <p>
+    If the customer is a <strong>current tenant or leaseholder</strong> provide information on how to log repairs via the website 
+    <a href="https://www.sheffield.gov.uk/council-housing/repairing-improving-council-houses/request-repair-council-property"target="_blank">https://www.sheffield.gov.uk/council-housing/repairing-improving-council-houses/request-repair-council-property</a>
+  </p>
+
+  <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Request%20a%20repair%20to%20a%20council%20property\`
+    "
+>
+    Send link to review further information
+</button>
+
+  <br>
+  <p>
+    If the customer is <strong>not an SCC tenant</strong>, advise them to speak to their own landlord. 
+    <br>
+    If the customer is struggling to get their landlord to take action, provide information about what the council can do in this scenario via the website 
+    <a href="https://www.sheffield.gov.uk/housing/repairs-to-rented-homes"target="_blank">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a>
+  </p> 
+
+    <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20disrepair%20in%20private%20rented%20properties\`
+    "
+>
+    Send link to review further information
+</button>
+
+  <br>
+  <p>
+    If the repair is an <strong>emergency</strong> please also view the information in the <strong>Emergency Repairs</strong> section.
+    This is the top result if you enter <strong>Emergency Repairs</strong> in the Knowledge search above.
+    The page covers how to handle emergency repairs, including gas leaks, equipment issues, and out-of-hours emergencies, with relevant contact numbers.
+  </p>
+  
   <h3>Leaseholder Repairs</h3> 
   <p>
     You are responsible for repairs within your own flat or home, and should make your own arrangements for these.
@@ -1471,7 +1547,7 @@ const newAndExistingRepairs = new ContentH(
     ],
     categories: ["Housing"],
   },
-  { date: "27/02/2025", name: "Nathan Smith" }
+  { date: "01/05/2026", name: "Liz Taster" }
 );
 
 const payment = new ContentH(
@@ -2266,6 +2342,13 @@ const generalCouncilHousing = new ContentH(
   <p>
     <a href="https://sccextranet.sharepoint.com/sites/CustomerServiceKnowledgePhoneDirectory/SitePages/Telephone%20Directory.aspx"target="_blank">Telephone Directory</a>
   </p>
+  
+  <h3>Local Councillors</h3>
+  <p>
+    If a customer queries who their local councillors are, please refer to the information on the <strong>Councillors</strong> page.
+    This is the top result if you enter <strong>Councillors</strong> in the Knowledge search above. 
+    <br>The page allows you to send links to customers to review information about Sheffield Councillors and their duties, and to find who their local councillors are.
+  </p>
   `,
   { buttonLabel: "Raise enquiry", formName: "hou_routing_enquiry" },
   { typeKey: "housing_general_transferred_to_service" },
@@ -2281,7 +2364,7 @@ const generalCouncilHousing = new ContentH(
     ],
     categories: ["Housing", "Estates and Environments"],
   },
-  { date: "07/05/2025", name: "Dinah Williams" }
+  { date: "12/05/2026", name: "Liz Taster" }
 );
 //#endregion General Council Housing
 
@@ -2648,13 +2731,17 @@ const contactHousingBenefits = new ContentH(
   "Contact housing benefits",
   "Find contact details and guidance for housing benefits and council tax enquiries, including phone numbers, email addresses, and online form links",
   `
-    <p>Transfer the customer to the benefits team on the number below. If the line is busy, 
-    <strong>do not</strong> ask the customer to call back later today; instead, advise the customer to email either:</p>
+    <p>
+      Transfer the customer to the benefits team on the number below. If the line is busy, 
+      <strong>do not</strong> ask the customer to call back later today; instead, advise the customer to email:
+    </p>
     <ul>
-        <li><a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></li>
         <li><a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></li>
     </ul>
-    <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax" target="_blank">https://www.sheffield.gov.uk/council-tax</a> <br> 
+    <p>
+      Or they can find further information at: <a href="https://www.sheffield.gov.uk/benefits/housing-benefit" target="_blank">https://www.sheffield.gov.uk/benefits/housing-benefit</a> 
+      <br>
+      This page includes details about eligibility and how to apply, a tool to check eligibility and entitlement, and a link to start or continue a housing benefit application. 
     </p>
 
 <button
@@ -2664,7 +2751,7 @@ const contactHousingBenefits = new ContentH(
     onclick="
         window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
             KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-        }interactionid=\${KDF.getParams().interactionid}&sel_service=Council%20Tax\`
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20for%20Housing%20Benefit\`
     "
 >
     Send link to review further information
@@ -2677,12 +2764,11 @@ const contactHousingBenefits = new ContentH(
 
     <h4>Contact council tax</h4>
     <p>Transfer the customer to the council tax team on the number below. If the line is busy, <strong>do not</strong> 
-    ask the customer to call back later today; instead, advise the customer to email either:</p>
+    ask the customer to call back later today; instead, advise the customer to email:</p>
     <ul>
         <li><a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></li>
-        <li><a href="mailto:benefits@sheffield.gov.uk">benefits@sheffield.gov.uk</a></li>
     </ul>
-    <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax.html" target="_blank">https://www.sheffield.gov.uk/council-tax</a><br> 
+    <p>Or they can complete the online form at: <a href="https://www.sheffield.gov.uk/council-tax" target="_blank">https://www.sheffield.gov.uk/council-tax</a><br> 
     
 <button
     type="button"
@@ -2701,6 +2787,7 @@ const contactHousingBenefits = new ContentH(
     <p><strong>Telephone number:</strong> <a href="tel:0114 2736633">0114 2736633</a> (public number)</p>
     <p><strong>Further information:</strong> Lines open 8:30-5:30</p>
     <p><strong>Email address:</strong> <a href="mailto:council.tax@sheffield.gov.uk">council.tax@sheffield.gov.uk</a></p>
+
   `,
 
   { buttonLabel: "Contact benefits", formName: "" },
@@ -2730,7 +2817,7 @@ const contactHousingBenefits = new ContentH(
     ],
     categories: ["Housing", "Benefits"],
   },
-  { date: "07/05/2025", name: "Dinah Williams" }
+  { date: "01/05/2026", name: "Liz Taster" }
 );
 
 const localAssistanceScheme = new ContentH(
@@ -2890,24 +2977,83 @@ const housingOnline = new ContentH(
         >
           Letter received in error
         </button>
+    
+    <p>
+      <br>
+      Information on how to apply for a council home can be found here: <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-home/applying-council-home" 
+      target="_blank">Applying for a council home | Sheffield City Council</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Applying%20for%20a%20council%20home\`"
+  
+>
+            Send link to review further information
+    </button>
+    
     <h3>
       Report a Housing Online System Issue
     </h3>
     <p>
       Report a system issue <a href="https://sheffieldcc.uk.4me.com/self-service/requests/new/provide_description?template_id=3549" target="_blank">here</a>.
     </p>
+    
     <h3>
       Housing and Neighbourhoods Digital Ringbinder FAQ
     </h3>
     <p>
       Access the FAQ <a href="https://sccextranet.sharepoint.com/sites/HousingandNeighbourhoodsDigitalRingbinder/SitePages/Countdown-to-NEC-Housing.aspx?xsdata=MDV8MDJ8fDBhYjVjODE4NTVkYzQyODVjYTIwMDhkZTA1OWU5MDk1fGExYmE1OWI5NzIwNDQ4ZDhhMzYwNzc3MDI0NWFkNGE5fDB8MHw2Mzg5NTQzNzU3MjE4OTY0ODB8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pObFpEaGpZekkyTFdVeE1ESXROR0kyTXkwNFl6TmxMVE5tT0RoaFpqSm1OR0kwTVY5bVlURmpaV0ptWWkwMVpUTTBMVFE1T0RZdFlqZ3pNQzFoTmpnMk9EWTFaV1F3TURCQWRXNXhMbWRpYkM1emNHRmpaWE12YldWemMyRm5aWE12TVRjMU9UZzBNRGMzTVRVNU5BPT18ZjNmYTRiNmQyOTkyNDVhZGNhMjAwOGRlMDU5ZTkwOTV8ODY4NDcwNDM1MzgwNGEwM2IzOGZmZDgwOTQ3MDJhZTM%3d&sdata=OVNTMlBOdjhUK2hvZWgrMVVaTHpyQUFETzk1bFRBazZpYnZVM2t3ZVNnMD0%3d&ovuser=a1ba59b9-7204-48d8-a360-7770245ad4a9%2cNathan.Smith%40sheffield.gov.uk&OR=Teams-HL&CT=1759840780927&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTA5MTExNjAxOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3d%3d&SafelinksUrl=https%3a%2f%2fsccextranet.sharepoint.com%2fsites%2fHousingandNeighbourhoodsDigitalRingbinder%2fSitePages%2fCountdown-to-NEC-Housing.aspx" target="_blank">here</a>.
     </p>
+
+    <h3>My Housing</h3>
+    <p>
+      My Housing is the Sheffield City Council website for social housing applications and for Sheffield City Council tenants 
+      to access their rent accounts. Information is available on rent balances, statements and how to make a payment.  
+    </p>
+
+    <p>
+      Once your application is validated, you can bid for available properties.
+    </p>
+
+    <p>
+      To set up an account on the website you will need an email address which you can access at the time you create the account. 
+      This is because we need to confirm your email address. Only those who have a <strong>My Housing</strong> account can join our 
+      Housing Register and bid for advertised housing.
+    </p>
+
+    <p>
+      Current Sheffield City Council tenants can also use the My Housing website to access their rent accounts. 
+      Information is available on rent balances, statements and how to make a payment.  
+    </p>
+
+    <p>
+      If you do not have internet access there are self-serve laptops are available at Housing First Points in Area offices and at Howden House. 
+    </p>
+
+    <p>
+      Search for “how to set up an email account on your phone” on the internet.
+    </p>
+
+    <p>
+      If you do not have family/friends or anyone supporting you, Sheffield Libraries provide free digital skills classes across their sites 
+      between 10am and 12pm each day as drop-in sessions. You will be given assistance to create an email address and use websites.
+    </p>
+
+    <p>
+      In exceptional circumstances, assistance to create an admin application can be provided. Refer customer to Registration Team.
+    </p>
+
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "housing_general_information_provided" },
   { type: "References", keywords: ["Housing, Online, Housing Online, Dummy"], categories: ["Housing"] },
-  { date: "03/11/2025", name: "Motolani Akinola" }
+  { date: "07/05/2026", name: "Liz Taster" }
 );
 
 //#endregion Housing Online
@@ -2978,7 +3124,7 @@ const leaseholderInformation = new ContentH(
       "repears and investment",
       "repairs and invesment",
       "repair and investement",
-      "repairs and invesmant",
+      "repairs and invesmant"
     ],
     categories: ["Housing"],
   },
@@ -3027,7 +3173,7 @@ const allocationsPolicy = new ContentH(
     </summary>
     <div class="accordion-content">
         <p>
-            Advisor Note - Check Housing Registration Application on Abritas – this will show the applicant’s band.
+            Advisor Note - Check Housing Registration Application on My Housing – this will show the applicant’s band.
         </p>
     </div>
 </details>
@@ -3042,6 +3188,98 @@ const allocationsPolicy = new ContentH(
             The bands take into account your individual circumstances, and you have been placed in the band which is seen as the most appropriate 
             for your needs, based on the information you have provided.
         </p>
+        <p>
+            <strong>If you do not agree</strong> with your banding or circumstances have changed we can review your application or we re-assess your housing need.
+        </p>
+        <p>
+            Current council tenants need to contact their Neighbourhood Officer for assessment. Either at their local housing office or on the freephone in Howden House.
+        </p>
+        <p>
+            <strong>If your banding has been reduced</strong> due to arrears, application can be reviewed by Registration Team and customer will be advised to 
+            contact Income Management if arrears are impacting banding. 
+            <br>
+            The customer may also find the information in the knowledge area <strong>Money Support</strong> helpful.
+            This is the top result if you enter <strong>Money Support</strong> in the Knowledge search above. 
+            The page provides information about support options for managing housing, bills, benefits, and financial hardships in Sheffield.
+            <br>
+            The customer can also visit their local Neighbourhood Office where staff can provide advice and information.
+        </p>
+
+        <p>
+            <strong>If your banding has been reduced</strong> due to 3 or more refusals in 12 months an officer would need to check if this is still the case or if it has expired. 
+        </p>
+        <p>
+            <strong>If your banding has been reduced</strong> due to no local connection, proof of this can be uploaded to the My Housing account and will be reviewed. 
+            <br>
+            The following proof is acceptable:
+        </p>
+
+        <table>
+          <tr>
+            <th>Local Connection Type</th>
+            <th>Evidence Required</th>
+          </tr>
+          <tr>
+            <td>No Local Connection</td>
+            <td>NA</td>
+          </tr>
+          <tr>
+            <td>Family lives in area</td>
+            <td>
+              My Housing check 
+              <br>Phone call to a family member 
+              <br>Signed declaration from family member
+            </td>
+          </tr>
+          <tr>
+            <td>Employed/Study in area</td>
+            <td>
+              Contract of employment (if recently started)
+              <br>Letter from Employer
+              <br>ID card
+              <br>College/University card
+            </td>
+          </tr>
+          <tr>
+            <td>Live in Area</td>
+            <td>Proof of address</td>
+          </tr>
+          <tr>
+            <td>Used to live in Area</td>
+            <td>Ohms/Abritas utility bills from previous address – within 6 months </td>
+          </tr>
+          <tr>
+            <td>To give or receive Care</td>
+            <td>Letter/confirmation from support service and/or GP etc.</td>
+          </tr>
+          <tr>
+            <td>Offered employment in area</td>
+            <td>Job Offer letter</td>
+          </tr>
+        </table>
+
+        <p>
+          Local connection banding rule exceptions:
+        </p>
+          <ul>
+            <li><strong>Fleeing Domestic Violence</strong> from outside Sheffield will be classed as having local connection regardless of what their address is;</li>
+            <li><strong>Care leaver customers</strong> customers who are either care leavers for a minimum of one day;</li>
+            <li><strong>People from or were in the regular armed forces</strong> – will be classed as having local connection regardless of what their address is.</li>
+          </ul>
+        <p>
+        <strong>For more info about support for our armed forces visit <a href="https://www.sheffield.gov.uk/your-city-council/armed-forces" target="_blank">Armed Forces Covenant | Sheffield City Council</a> </strong>
+        </p>
+
+        <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Armed%20Forces%20Covenant\`"
+>
+            Send link to review further information
+    </button>
     </div>
 </details>
 
@@ -3114,10 +3352,24 @@ const allocationsPolicy = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "allocation",
+      "allocations",
+      "alocation",
+      "alocations",
+      "allocations policy",
+      "priority",
+      "banding",
+      "priority band",
+    ],
+    categories: ["Housing", "Rehousing"],
   },
-  { date: "05/12/2024", name: "Joseph Coupland" }
+  { date: "06/05/2026", name: "Liz Taster" }
 );
 
 const applicationChanges = new ContentH(
@@ -3462,15 +3714,22 @@ const applicationChanges = new ContentH(
   {
     type: "Apply",
     keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "application",
+      "aplication",
+      "change",
+      "changes",
+      "changing",
+      "circumstances",
+      "circumstance",
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "23/04/2026", name: "Shaz Athar" }
+  { date: "08/05/2026", name: "Liz Taster" }
 );
 
 const applyForRehousing = new ContentH(
@@ -3509,22 +3768,124 @@ const applyForRehousing = new ContentH(
       documents can be uploaded via the website or at your local housing office or
       First Point before your application will be validated.
     </p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Other Housing Options</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            There are other housing options customers can consider for finding a home in Sheffield that might work better for your situation. 
+            Details around mutual exchanges (for current council tenants), renting privately and housing associations can be found here:
+            <a href="https://www.sheffield.gov.uk/housing/housing-options/other-housing-options" target="_blank">Other housing options | Sheffield City Council</a>
+        </p>
+
+        <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Other%20Housing%20Options\`"
+        >
+            Send link to review further information
+        </button>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Housing Associations</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            Details of housing associations can be found through the Sheffield Directory. This link is pre-filtered to Housing Associations:
+            <a href="https://www.sheffielddirectory.org.uk/directory/?searchTab=servicesSearchTab&templateId=D770A514-E446-440B-A074-B0C8010100A3&searchText=housing%20associations&sortOption=Rank%3Basc&pageNumber=1&pageSize=15&distance=1609" target="_blank">Directory | Sheffield</a>
+        </p>
+
+        <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Associations\`"
+        >
+            Send link to review further information
+        </button>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Getting a council home</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            A large amount of information about getting a council home can be found through the Sheffield Council website here:
+            <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home" target="_blank">Getting a council home | Sheffield City Council</a>
+        </p>
+
+        <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Getting%20a%20council%20home\`"
+        >
+            Send link to review further information
+        </button>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Becoming a council Tenant</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+            Guidance on becoming and being a council tenant can be found here:
+            <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-house/becoming-tenant" target="_blank">Becoming a tenant | Sheffield City Council</a>
+        </p>
+
+        <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Becoming%20a%20council%20tenant\`"
+        >
+            Send link to review further information
+        </button>
+    </div>
+</details>
+
   `,
   { buttonLabel: "Raise Enquiry", formName: "hou_rehousing_enquiry" },
-  { typeKey: "" },
+  { typeKey: "rehousing_services_transferred_to_service" },
   { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
     keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "apply",
+      "applying",
+      "apply for rehousing",
+      "options",
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "28/10/2025", name: "Motolani Akinola" }
+  { date: "12/05/2026", name: "Liz Taster" }
 );
 
 const bidding = new ContentH(
@@ -3532,13 +3893,43 @@ const bidding = new ContentH(
   "Bidding",
   "Learn how to place bids for properties on the Sheffield Housing Online website, manage your application details, and handle restrictions or disqualifications.",
   `
-      <p>
+    <p>
         After you have registered for housing, you express your interest in renting a
         property by making a bid. You only have to bid once per property. You make
         bids online at the Housing Online website
         <a href="https://housing.sheffield.gov.uk/" target="_blank">https://housing.sheffield.gov.uk/</a> <br> 
+    </p>
+    
+    <p>
+      You will only be able to bid on properties once your application is active and only for properties you are eligible for. The properties you 
+      see to bid on is determined by the information you have provided on your application form. You will only be able to bid for the size and type 
+      of property that is suitable to meet your household needs. 
+    </p>
+
+    <p>
+      Please check the additional information on the property advert, before placing a bid to check it is suitable. Refusing a property that has 
+      been offered to you could affect your banding or the position of your application on the housing register.
+    </p>
+
+    <p>
+      Guidance on applying for a council home, becoming a tenant and exploring your housing choices can be found at 
+      <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/registering-council-home" target="_blank" rel="noopener">
+      Registering for a council home | Sheffield City Council </a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Registering%20for%20a%20council%20home\`"
+>
+            Send link to review further information
+    </button>
         
-        <h3>How to View Available Properties and Bidding Periods</h3>
+
+    <h3>How to View Available Properties and Bidding Periods</h3>
 
     <p>Follow these steps to find and view the list of available properties and their bidding cycles on the Housing Online website.</p>
 
@@ -3833,15 +4224,24 @@ const bidding = new ContentH(
   {
     type: "Apply",
     keywords: [
-      "repairs and investmant",
-      "repears and investment",
-      "repairs and invesment",
-      "repair and investement",
-      "repairs and invesmant",
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "bidding",
+      "biding",
+      "bid",
+      "bids",
+      "housing",
+      "houzing",
+      "houssing",
+      "housin",
+      "housingg",
     ],
     categories: ["Housing", "Rehousing"],
   },
-  { date: "28/10/2025", name: "Motolani Akinola" }
+  { date: "07/05/2026", name: "Liz Taster" }
 );
 
 const eligibility = new ContentH(
@@ -3932,8 +4332,17 @@ const eligibility = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "eligibility",
+      "eligible",
+      "eligibility table",
+    ],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "28/10/2025", name: "Motolani Akinola" }
 );
@@ -3970,11 +4379,178 @@ const fosteringAndAdoption = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "fostering",
+      "adoption",
+    ],
     categories: ["Housing"],
   },
   { date: "07/22/2024", name: "George Whitehouse" }
 );
+
+const healthAndHousing = new ContentH(
+  "healthAndHousing",
+  "Health and Housing Advice",
+  "Learn about options when health conditions impact the suitability of current housing.",
+  `
+    <h3>Adaptations</h3>
+    
+    <p>
+      If you're disabled or have a long-term health condition, you may need changes to your home to help you live more safely and independently. 
+    </p> 
+
+    <p>
+      Before you consider adapting your home, we recommend checking whether equipment or technology could meet your needs. 
+      These can often be quicker and more affordable solutions. For example:
+    </p>
+
+    <ul>
+      <li>using a commode during the day may help you avoid using the stairs</li>
+      <li>grab rails or a shower seat can help in the bathroom</li>
+    </ul>
+
+    <p>
+      Details of different potential equipment and adaptations can be found at the following link:<br>
+      <a href="https://www.sheffielddirectory.org.uk/equipment-house/" target="_blank">Equipment House | Sheffield</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Equipment%20House\`"
+    >
+            Send link to review further information
+    </button>
+
+    <p>
+      Further information and the online form to request a home adaptation can be found at the following link:
+      <a href="https://www.sheffield.gov.uk/social-care/adults/how-we-can-help/daily-tasks/request-home-adaptation" target="_blank">Request a home adaptation | Sheffield City Council</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Request%20a%20home%20adaptation%20assessment\`"
+    >
+            Send link to review further information
+    </button>
+
+    <h3>Financial help for major adaptations</h3>
+
+    <p>
+    If your assessment recommends a major adaptation such as a stair lift or ramp you may be eligible for a Disabled Facilities Grant. 
+    Information can be found at <a href="https://www.gov.uk/disabled-facilities-grants" target="_blank">https://www.gov.uk/disabled-facilities-grants</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Disabled%20Facilities%20Grants\`"
+    >
+            Send link to review further information
+    </button>
+
+    <h3>Rehousing due to medical or mobility needs</h3>
+
+    <p>
+      If your primary reason for requesting rehousing is identified as any of the following your referral will not be accepted. 
+      Please contact the relevant team on the details below.
+    </p>
+
+    <ul>
+      <li><strong>Anti-social behaviour</strong> – contact your local area housing office</li>
+      <li><strong>Disrepairs / Damp</strong> – contact Council Housing Repairs on 0114 273 5555 or online at 
+      <a href="https://www.sheffield.gov.uk/council-housing/council-housing-repairs" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-repairs</a></li>
+      <li><strong>Overcrowding in your home</strong> – contact your local area housing office</li>
+      <li><strong>Homelessness / Threat of homelessness</strong> – contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
+      <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
+      <li><strong>Suffering domestic abuse</strong> - contact Housing Options on 0114 293 0000 or 0114 205 3333 or online at 
+      <a href="https://www.sheffield.gov.uk/home/your-city-council/contact-us" target="_blank">https://www.sheffield.gov.uk/home/your-city-council/contact-us</a></li>
+      <li><strong>Private rented repairs / landlord issues</strong> – please contact 0114 273 4680 or online at 
+      <a href="www.sheffield.gov.uk/housing/repairs-to-rented-homes" target="_blank">https://www.sheffield.gov.uk/housing/repairs-to-rented-homes</a></li>
+    </ul>
+
+    <p>
+      You will not be awarded medical priority if your current property can be adapted to meet your needs. 
+      If you think your property could be adapted, please make a referral to our occupational therapy service for an assessment. 
+      <a href="https://www.sheffield.gov.uk/social-care/adults/adapting-your-home" target="_blank">https://www.sheffield.gov.uk/social-care/adults/adapting-your-home</a>. 
+    </p>
+
+    <p>
+      If following assessment, it is determined that your property cannot be adapted the assessing officer will advise you to complete the 
+      medical priority rehousing application
+    </p>
+
+    <p>
+      If you believe you meet the criteria, you can apply by completing the Health and Housing Application form. 
+      The quickest way to send your application is to scan and return to <a href="healthandhousingneeds@sheffield.gov.uk" target="_blank">healthandhousingneeds@sheffield.gov.uk</a>  
+      This will minimise delays in considering your application.
+    </p>
+
+    <p>
+      Further details of support available for a variety of issues causing Housing Problems (including overcrowding, family problens, 
+      domestic abuse and relationship breakdown) can be found at <a href="https://www.sheffield.gov.uk/housing/housing-options/housing-problems" target="_blank">Housing problems | Sheffield City Council</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Housing%20Problems\`"
+    >
+            Send link to review further information
+    </button>
+
+    <p>
+      For more information around anti-social behaviour (ASB) please refer to the knowledge area <strong>Tenenacy Enforcement (ASB)</strong>. 
+      This is the top result if you enter <strong>ASB</strong> in the Knowledge search above. The page provides general information about ASB, and will also allow you 
+      to send a link to the customer to correctly report ASB as either a council or non-council tenant.
+    </p>
+
+    `,
+  {
+    buttonLabel: "Raise Enquiry ",
+    formName: "hou_rehousing_enquiry",
+  },
+  { typeKey: "rehousing_services_transferred_to_service" },
+  { typeKey: "rehousing_services_information_provided" },
+  {
+    type: "Request",
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "health",
+      "adaptations",
+      "adaptation",
+      "medical",
+      "grants",
+      "mobility",
+      "needs",
+    ],
+    categories: ["Housing", "Rehousing"],
+  },
+  { date: "07/05/2026", name: "Liz Taster" }
+);
+
 
 const housingAssociations = new ContentH(
   "housingAssociations",
@@ -4425,8 +5001,13 @@ const housingAssociations = new ContentH(
       "rehousingg",
       "rehosuing",
       "rehouzing",
+      "association",
+      "associations",
+      "asociation",
+      "asociations",
+      "housing",
     ],
-    categories: ["Housing"],
+    categories: ["Housing", "Rehousing"],
   },
   {
     date: "13/05/2025",
@@ -4456,9 +5037,7 @@ const idReferences = new ContentH(
         Proof of child benefit receipt is required where children under 16 years of age are 
         being rehoused with you.<br><br>
   
-        All required ID's and References must be brought to your Local Area Housing Office, 
-        or to Howden House First Point, at the same time. <br>
-        <strong> Alternatively, you can upload your documents via the website (including reference if appropriate) </strong><br><br>
+        <strong> You can upload your documents via the website (including reference if appropriate) </strong><br><br>
   
         Failure to submit all required ID and references at the same time, 
         may mean that you will need to restart the application process from the beginning by 
@@ -4505,10 +5084,22 @@ const idReferences = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "references",
+      "referee",
+      "ID",
+      "identification",
+      "requirements",
+    ],
+    categories: ["Housing", "Rehousing"],
   },
-  { date: "08/05/2025", name: "Dinah Williams" }
+  { date: "01/05/2026", name: "Liz Taster" }
 );
 
 const idFaq = new ContentH(
@@ -4525,9 +5116,7 @@ const idFaq = new ContentH(
         ID is required for all Household Members and should be submitted within 28 days of filling-in 
         the Application.<br><br>
   
-        Applicants should present the relevant documents at a Housing Office or First Point where the 
-        Main Applicant's and the Joint Applicant's (if appropriate) documents will be photocopied and 
-        copies sent to the Registration Team. Household Members documents must also be produced and witnessed by an officer.<br><br>
+        Applicants should upload all the required documents for themselves and household members via the My Housing Portal<br><br>
       </p>
       <h4>Customer advising ID/proofs have been posted to us</h4>
       <p> 
@@ -4553,10 +5142,22 @@ const idFaq = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "ID",
+      "identification",
+      "requirements",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
   },
-  { date: "07/11/2024", name: "George Whitehouse" }
+  { date: "01/05/2026", name: "Liz Taster" }
 );
 
 const movingIn = new ContentH(
@@ -4626,8 +5227,16 @@ const movingIn = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "moving in",
+    ],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "07/11/2024", name: "George Whitehouse" }
 );
@@ -4888,7 +5497,18 @@ const mutualExchanges = new ContentH(
   { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
-    keywords: ["rehousing", "rehousing", "rehousign", "rehozing"],
+    keywords: [
+      "rehousing", 
+      "rehousing", 
+      "rehousign", 
+      "rehozing",
+      "housing",
+      "mutual",
+      "exchange",
+      "exchanges",
+      "swap",
+      "swop",
+    ],
     categories: ["Housing"],
   },
   { date: "27/03/2026", name: "Shaz Athar" }
@@ -4899,6 +5519,16 @@ const priorities = new ContentH(
   "Priorities",
   "Learn about priority for rehousing, including how priority is assessed, what it means for your housing options, and how to request a review.",
   `
+    <h3>Customers who have a priority</h3>  
+    <p>
+      After completing security checks with the applicant, check NEC for priority banding and ‘Actions’ for who is managing the case. 
+      The Priorities Team have a public phone number 0114 0114 2736970  and email address for enquiries 
+      <a href="mailto:RehousingPriorities@sheffield.gov.uk">RehousingPriorities@sheffield.gov.uk</a> 
+      or if in person at Howden House the customer can be seen without an appointment.
+    </p>
+
+
+    <h3>General information about housing priorities</h3>  
     <p>
       Priority for rehousing can be awarded if there is a need to be rehoused urgently and immediately. When your circumstances have been assessed, we will look at whether we can give you priority for housing ahead of other people on the Housing Register. We will then write to you explaining our decision. If we give you priority, we will explain why it has been given, what sort of property it is for and how long you have to use it. The letter will also explain how to request a review of the decision if you are unhappy with it.<br><br>
   
@@ -4919,8 +5549,17 @@ const priorities = new ContentH(
   { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "priority",
+      "priorities",
+    ],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "12/02/2025", name: "Nathan Smith" }
 );
@@ -5120,8 +5759,22 @@ const priorityBandingTable = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "priority banding table",
+      "priority",
+      "priorities",
+      "band",
+      "banding",
+      "banding table",
+      "table",
+    ],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "07/22/2024", name: "George Whitehouse" }
 );
@@ -5146,40 +5799,75 @@ const PropertyOffersAndViewings = new ContentH(
           https://housing.sheffield.gov.uk/
         </a>
       </li>
-
       <li>
         <strong>Log in</strong> with your username and password.
       </li>
-
       <li>
         On the dashboard, click the tile labelled <strong>Search and bid for a property</strong>.
       </li>
-
       <li>
         At the top right of the page, click the <strong>Actions</strong> button.
       </li>
-
       <li>
         From the drop-down menu, select <strong>All Available Properties</strong>.
       </li>
-
       <li>
         A list of properties will appear along with their <strong>bidding periods</strong>.
        </li>
     </ol>
 
-      <h3>How does Sheffield City Council allocate the property?</h3>
-       <p>
-        Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short:
-      </p>
-      <ul>
-        <li>Properties advertised to Waiting Time – These properties will be offered to customers in band D first in order of their effective date (oldest first). If no customers in band D accept the property, it will be offered to the other bands in the following order: band A, band B, band C, Band E.</li>
-        <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in band A first in order of their effective date (oldest first). If no customers in band A accept the property, it will be offered to the other bands in the following order: band B, Band C, Band D, Band E.</li>
-        <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
-        <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on Sheffield Housing Online. You can do this by logging in to your account.</li>
-        <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
-        <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
-      </ul>
+    <p>
+      The following link provides details of each step regarding bidding/offers/viewings: 
+      <a href="https://www.sheffield.gov.uk/housing/housing-options/getting-council-home/bidding-council-home" target="_blank">Bidding for a Council home | Sheffield City Council[</a>
+    </p>
+
+    <button type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Bidding%20for%20a%20Council%20home\`"
+>
+            Send link to review further information
+    </button>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>How does Sheffield City Council allocate the property?</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+          <p>
+            Once the bidding period has closed on a Tuesday night, bids for each property are sorted automatically based on the eligibility criteria. Full details of how we allocate properties can be found in Sheffield City Council’s Allocations Policy however in short:
+          </p>
+          <ul>
+            <li>Properties advertised to Waiting Time – These properties will be offered to customers in band D first in order of their effective date (oldest first). If no customers in band D accept the property, it will be offered to the other bands in the following order: band A, band B, band C, Band E.</li>
+            <li>Properties advertised to Housing Register – These properties will be offered to customers with a priority in band A first in order of their effective date (oldest first). If no customers in band A accept the property, it will be offered to the other bands in the following order: band B, Band C, Band D, Band E.</li>
+            <li>Properties advertised to First Come First Served – These properties will be offered to the customer who placed their bid first regardless of their band or effective date. The customer must still meet the minimum eligibility requirements in order for their bid to be considered.</li>
+            <li>If your bid for a property was successful, we will contact you and invite you to view the property as soon as possible. We do not contact unsuccessful applicants however; you will be able to check your final bid position on Sheffield Housing Online. You can do this by logging in to your account.</li>
+            <li>There are some circumstances where a customer may come in first position for a property however due to other circumstances such as a debt to the Housing Service or a history of anti-social behaviour, they are bypassed and are not made the offer. We will let you know if we bypass you for an offer and explain how you can rectify this.</li>
+            <li>Please note, if you make a bid for a property and your circumstances change or your priority ends during the bidding period, we will not offer you the property if you no longer meet the eligibility criteria.</li>
+          </ul> 
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary class="accordion-header">
+            <h3>Refusing a viewing/offer of a property</h3>
+            <div class="accordion-icon"></div>
+        </summary>
+        <div class="accordion-content">
+            <p>
+              If you have placed a bid on a property and we have checked you are eligible for the offer, we will contact you to arrange a viewing. 
+            </p>
+            <p>
+              If you choose not to view or accept a property offer, it could affect your banding or position on the housing register. 
+              We will explain this to you, dependent on your circumstances. 
+            </p>
+        </div>
+    </details>
+
     `,
   {
     buttonLabel: "Raise Enquiry",
@@ -5189,10 +5877,23 @@ const PropertyOffersAndViewings = new ContentH(
   { typeKey: "rehousing_services_information_provided" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "viewing",
+      "view",
+      "property",
+      "properties",
+      "offer",
+      "offers",
+    ],
+    categories: ["Housing", "Rehousing"],
   },
-  { date: "28/10/2025", name: "Motolani Akinola" }
+  { date: "07/05/2026", name: "Liz Taster" }
 );
 
 const referencesFAQs = new ContentH(
@@ -5359,17 +6060,47 @@ const referencesFAQs = new ContentH(
   { typeKey: "rehousing_services_information_requested" },
   {
     type: "Request",
-    keywords: ["rehosing", "rehausing", "rehousingg", "rehosuing", "rehouzing"],
-    categories: ["Housing"],
+    keywords: [
+      "rehosing", 
+      "rehausing", 
+      "rehousingg", 
+      "rehosuing", 
+      "rehouzing",
+      "housing",
+      "reference",
+      "references",
+      "referee",
+      "FAQ",
+      "FAQs",
+    ],
+    categories: ["Housing", "Rehousing"],
   },
   { date: "15/05/2025", name: "Dinah Williams" }
 );
 
-const threeOffersDemotedorDisqualified = new ContentH(
-  "threeOffersDemotedorDisqualified",
-  "Three Offers Demoted or Disqualified",
+const demotedOrDisqualified = new ContentH(
+  "demotedOrDisqualified",
+  "Demoted or Disqualified",
   "Understand the consequences of refusing three reasonable housing offers, including potential demotion or disqualification from the Housing Register.",
   `
+  <h3>Eligibility</h3>
+    <p>
+      Sheffield City Council operates an open register and therefore any person over the age of 16 can apply to join the Housing Register. 
+      However, generally you will not be made an offer of a property until you are at least 18 years old.
+    </p>
+    <p>
+      The Housing Act 1996 prevents Local Authorities from offering a property to some people because of their immigration status. 
+      We will let you know if this applies to you after you register and request the appropriate documents.   
+    </p>
+    <p>
+      There are some people who are not eligible to be included on the Housing Register. These are:  
+    </p>
+      <ul>
+        <li>Certain people who are subject to Immigration Control under the 1996 Asylum and Immigration Act.</li>
+        <li>Certain people from abroad who are not subject to immigration control but who are not habitually resident in the UK, 
+        the Channel Islands, the Isle of Man or the Republic of Ireland.</li>
+      </ul>
+      
   <h3>Reduced preference (demotion) following refusal of 3 reasonable offers</h3>
   <p> 
     If a customer is in band D and they have refused 3 offers in 12 months, the Sheffield City Council Allocations Policy states:<br>
@@ -5380,13 +6111,62 @@ const threeOffersDemotedorDisqualified = new ContentH(
     </ul>
     If you are to be Demoted, we will write to you 21 days before you are Demoted. If you do not respond, you will be Demoted to band E on the Housing Register for 12 months. After 12 months you can request to be moved back in to band D.
   </p>
-     <h3>Disqualification following refusal of 3 reasonable offers</h3>
-     <p>
+  
+  <h3>Disqualification following refusal of 3 reasonable offers</h3>
+    <p>
       If a customer who is in band E refuses 3 reasonable offers, they can be disqualified from the Housing Register.<br>
       The customer will be notified in writing and they have 21 days to appeal the decision. <br>
       If we do not hear from the customer within 21 days, their housing application will be cancelled and they will be disqualified from the Housing Register for 12 months. <br>
       After 12 months the customer is able to submit an on-line application for Social Housing to re-join the Housing Register.
-     </p>
+    </p>
+
+  <h3>Disqualified for Unacceptable Behaviour</h3>
+    <p>
+      Applications that are rejected for unacceptable behaviour will receive a letter explaining the 12 month restriction and what action to take. 
+      The customer can request a review of the decision from a senior officer they must do this within 21 days or the disqualification letter, 
+      giving information that was not considered in the original decision.
+    </p>
+
+    <h4>Unacceptable behaviour</h4>
+    <p>
+      Some people may not be allowed to join the housing register because of past behaviour either their own or someone in their household.
+    </p>
+    <p>
+      This includes situations where:
+    </p>
+    <ul>
+      <li>you’ve had persistent rent arrears and not made efforts to repay them</li>
+      <li>you or a joint applicant caused serious damage to a property</li>
+      <li>there was antisocial behaviour that led to the loss of a previous home</li>
+      <li>you’ve been convicted of domestic abuse or certain other criminal behaviour</li>
+      <li>you previously sublet a council home without permission</li>
+      <li>you gave false information in a housing application</li>
+    </ul>
+    <p>
+      We also look at behaviour from people in your household if they lived with you at the time the behaviour took place.
+    </p>
+
+    <h4>If this applies to you</h4>
+    <p>
+      You won’t be able to join the register now, but if your behaviour has changed, you can apply again in the future. 
+      We may ask for evidence that things have improved such as references, repayment history or changes in your circumstances. 
+    </p>
+
+  <h3>Exception Requests</h3>
+    <p>
+      The Allocations Policy advises various circumstances in which we will reduce the preference given to applicants on the Housing 
+      Register or prevent them from joining the register. These include circumstances such as rent arrears or past/current anti-social behaviour.
+    </p>
+    <p>
+      An Exception Request allows us to make decisions on whether it is appropriate to waive these restrictions in exceptional circumstances, such 
+      as awarding a priority or when an applicant wishes to move to more suitable accommodation using their waiting time due to a change in circumstances.
+    </p>
+    <p>
+      Applicants must demonstrate exceptional circumstances and prove that they have taken action to rectify issues that led to reduced preference or disqualification.
+    </p>
+    <p>
+      Contact Neighbourhood Officer to help fill in the form and submit evidence. 
+    </p>
     `,
   {
     buttonLabel: "",
@@ -5406,10 +6186,14 @@ const threeOffersDemotedorDisqualified = new ContentH(
       "offers",
       "demoted",
       "disqualified",
+      "disqualify",
+      "disqualification",
+      "demotion",
+      "refused",
     ],
     categories: ["Housing"],
   },
-  { date: "04/12/2024", name: "Joseph Coupland" }
+  { date: "07/05/2026", name: "Liz Taster" }
 );
 
 const rehousing = new MenuH(
@@ -5421,8 +6205,10 @@ const rehousing = new MenuH(
     applicationChanges,
     applyForRehousing,
     bidding,
+    demotedOrDisqualified,
     eligibility,
     fosteringAndAdoption,
+    healthAndHousing,
     housingAssociations,
     idReferences,
     idFaq,
@@ -5432,7 +6218,6 @@ const rehousing = new MenuH(
     priorityBandingTable,
     PropertyOffersAndViewings,
     referencesFAQs,
-    threeOffersDemotedorDisqualified,
   ]
 );
 
@@ -9250,35 +10035,66 @@ const rightToBuy = new ContentH(
   "Right To Buy",
   "Tenant purchase scheme for homes",
   `
-  <p>If an address is shown as Right to Buy, we can only put repairs on to make the property "wind and 
-  watertight". For example, doors, windows, and roof repairs that are related to Health and Safety, also 
-  any internal leaks to a flat below.</p>
+    <p>
+      If an address is shown as Right to Buy, we can only put repairs on to make the property "wind and 
+      watertight". For example, doors, windows, and roof repairs that are related to Health and Safety, also 
+      any internal leaks to a flat below.
+    </p>
 
   <h3>Customer claims they are not in the RTB process.</h3>
 
-    <p>Sometimes a customer may say that their Right to Buy application has been denied and that they are no
-    longer in the RTB process. Technically, the application may indeed have been denied but the tenant has 
-    the right to appeal the denial. For this reason, we do not close the application or remove the RTB status 
-    code until after the expiration date of the possible appeal. This is 8 weeks from the date we denied the 
-    application.</p>
-    <p>If the tenant contacts us prior to the expiration date to state, they are not going to appeal we will 
-    close the application and change the repairs status back to tenanted. Any queries about this, please 
-    contact the contact the Home Ownership Team on </p>
-
-    <a href="${window.location.protocol}//${
-    window.location.hostname
-  }/form/launch/refer_to_service?${
-    KDF.getParams().customerid
-      ? `customerid=${KDF.getParams().customerid}&`
-      : ""
-  }interactionid=${
-    KDF.getParams().interactionid
-  }&txt_emailservice=rdh@sheffield.gov.uk">rdh@sheffield.gov.uk</a>
+    <p>
+       Sometimes a customer may say that their Right to Buy application has been denied and that they are no
+       longer in the RTB process. Technically, the application may indeed have been denied but the tenant has 
+       the right to appeal the denial. For this reason, we do not close the application or remove the RTB status 
+       code until after the expiration date of the possible appeal. This is 8 weeks from the date we denied the 
+       application.
+    </p>
+    <p>
+       If the tenant contacts us prior to the expiration date to state, they are not going to appeal we will 
+       close the application and change the repairs status back to tenanted. Any queries about this, please 
+       contact the contact the Home Ownership Team on 
+        <a href="${window.location.protocol}//${
+          window.location.hostname
+        }/form/launch/refer_to_service?${
+          KDF.getParams().customerid
+            ? `customerid=${KDF.getParams().customerid}&`
+            : ""
+        }interactionid=${
+          KDF.getParams().interactionid
+        }&txt_emailservice=rdh@sheffield.gov.uk">rdh@sheffield.gov.uk</a>
+    </p>
 
   <h3>Right to Buy inspection requests</h3>
 
-    <p>For Right to Buy inspections, please contact the Home Ownership team on <a href="mailto:rdh@sheffield.gov.uk"></a></p>
-    <p>Any tenant that is in a Right to Buy stage is not eligible for the Handyperson service.</p>
+    <p>For Right to Buy inspections, please contact the Home Ownership team on 
+      <a href="${window.location.protocol}//${
+        window.location.hostname
+        }/form/launch/refer_to_service?${
+        KDF.getParams().customerid
+          ? `customerid=${KDF.getParams().customerid}&`
+          : ""
+      }interactionid=${
+        KDF.getParams().interactionid
+      }&txt_emailservice=rdh@sheffield.gov.uk">rdh@sheffield.gov.uk</a>
+    </p>
+    
+    <p>
+      Any tenant that is in a Right to Buy stage is not eligible for the Handyperson service.
+    </p>
+
+<button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Right%20to%20Buy\`
+    "
+>
+    Send link to review further information
+</button>
 
   `,
   { buttonLabel: "Enquiry Counter", formName: "menu_repairs_service" },
@@ -9310,7 +10126,7 @@ const rightToBuy = new ContentH(
     ],
     categories: ["Repairs"],
   },
-  { date: "28/04/2025", name: "Shahzad Athar" }
+  { date: "01/05/2026", name: "Liz Taster" }
 );
 
 const rightToRepair = new ContentH(
@@ -11009,8 +11825,28 @@ const tenancyEnforcementASB = new ContentH(
 
     <h3>Reporting anti-social behaviour</h3>
     <p>
-      If the ASB involves a Council tenant, use the form at the bottom of this page to raise a report to the appropriate team. 
-      Use this link if it is not a council tenant. This is the link to report ASB to the Council's ASB team - <a href="https://www.sheffield.gov.uk/pollution-nuisance/anti-social-behaviour "target="_blank">https://www.sheffield.gov.uk/pollution-nuisance/anti-social-behaviour</a>. 
+      <strong>If the person reporting is a council tenant or leaseholder, or their complaint is about a tenant or leaseholder</strong> 
+      use the form at the bottom of this page to raise a report to the appropriate team. You can also send them additional information using the link.
+    </p>
+
+      <button
+    type="button"
+    class="dform_widget email-btn dform_widget_type_button"
+    aria-label="For further information send link"
+    onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+        }interactionid=\${KDF.getParams().interactionid}&sel_service=Report%20anti%20social%20behaviour%20council%20tenant\`
+    "
+  >
+    Send link to review further information
+  </button>
+      
+    <p>
+      <strong> If the person reporting is not a council tenant or leaseholder</strong>, use the below link. 
+      This is the link to report ASB to the Council's ASB team - <a href="https://www.sheffield.gov.uk/pollution-nuisance/anti-social-behaviour "target="_blank">https://www.sheffield.gov.uk/pollution-nuisance/anti-social-behaviour</a>. 
+      The customer can contact the Anti Social Behaviour Team using the 'ask us a question' link at the bottom of the page.
+    <br>
       If the report involves a crime, advise the customer to contact 101.
     </p>
 
@@ -11027,65 +11863,125 @@ const tenancyEnforcementASB = new ContentH(
     Send link to review further information
   </button>
     
-    <h3>Police responsibility</h3>
-    <p>South Yorkshire Police are responsible for dealing with any behaviour or activity which results in a criminal offence being committed.</p>
-    <p>Where the perpetrator is an SCC tenant the Tenancy Enforcement and Sustainment Team (TEST) will work closely with SYP to ensure that any appropriate enforcement action is taken by the council.</p>
-    <p>We feel, it is not appropriate to list specific incidents that Police deal with as this may result in the issue just being reported to police and not being routed to appropriate SCC teams who may also need to look at enforcement action.</p>
-    <h3>Council Responsibility</h3>
-    <p>We are responsible for incidents involving:</p>
-    <ul>
-      <li> abandoned vehicles</li>
-      <li> dead animals</li>
-      <li> dog fouling</li>
-      <li> fly posting</li>
-      <li> dumped, fly-tipped waste</li>
-      <li> inoffensive graffiti</li>
-      <li> non-hate crime graffiti</li>
-      <li> littering</li>
-      <li> lost, stray or barking dogs</li>
-      <li> noise nuisance or DIY related noise (We cannot log anonymous complaints about noise as we rely on evidence from the complainant, and observations at the complainant’s home, to evaluate whether the noise is a statutory nuisance).</li>
-      <li> syringes or needles</li>
-      <li> dumped, fly-tipped waste (nobody present)</li>
-    </ul>
-    <p>Please note that although all of the above are issues that the council will deal with, only noise nuisance and possibly barking dogs are generally dealt with by TEST (where it is a SCC tenant). A number of other teams are involved in managing these issues including Environmental services and Estates teams etc..</p>
-    <h3>Hate Crime</h3>
-    <h4>What is hate crime?</h4>
-    <p>Hate Crime is any criminal offence committed against a person or property that is motivated by an offender’s hatred of someone because of their Disability, Race, Religion or Beliefs, Sexual Orientation or Transgender.</p>
-    <p>Crimes committed against someone because of their disability, transgender-identity, race, religion or belief, or sexual orientation are hate crimes and should be reported to the police.</p>
-    <p>Hate crimes can include:</p>
-    <ul>
-      <li> threatening behaviour</li>
-      <li> assault</li>
-      <li> robbery</li>
-      <li> damage to property</li>
-      <li> inciting others to commit hate crimes</li>
-      <li> harassment</li>
-      <li> online abuse</li>
-    </ul>
-    <br>
-    <h4>How to report Hate Crime</h4>
-    <p>Anyone experiencing Hate Crime should report this to South Yorkshire Police, this can be done via 101 or via 999 if a crime is in progress or someone is in immediate danger. Hate Crime should also be reported to SCC, the Neighbourhood Team/ TEST who will work closely with Police and establish if any enforcement action against perpetrators is appropriate.</p>
-    <ul>
-      <li> robbery</li>
-      <li> damage to property</li>
-      <li> inciting others to commit hate crimes</li>
-      <li> harassment</li>
-      <li> online abuse</li>
-    </ul>
-    <h3>Sanctuary Scheme/Target hardening</h3>
-    <p>Service Area: Action Domestic Abuse (Sanctuary Scheme)</p>
-    <p>Telephone Number: Helpline No: <a href="tel:0808 8082241">0808 8082241</a>; Office No. <a href="tel:0114 2706999">0114 2706999</a></p>
-    <p>Email Address: <a href="mailto:sanctuary.scheme@actionorg.uk">sanctuary.scheme@actionorg.uk</a></p>
-    <p>South Yorkshire Fire and Rescue Service can fit blank letter boxes if there are concerns regarding harmful items being posted through the door. The Neighbourhood Officer can make a referral to SYF&amp;R for a Home Safety check.</p>
-    <p>Neighbourhood Teams may have stock of target hardening equipment.</p>
-    <p>Victim Support may support with target hardening.</p>
+   <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Police responsibility</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        South Yorkshire Police are responsible for dealing with any behaviour or activity which results in a criminal 
+        offence being committed.
+      </p>
+      <p>
+        Where the perpetrator is an SCC tenant the Tenancy Enforcement and Sustainment Team (TEST) will work closely 
+        with SYP to ensure that any appropriate enforcement action is taken by the council.
+      </p>
+      <p>
+        We feel, it is not appropriate to list specific incidents that Police deal with as this may result in the 
+        issue just being reported to police and not being routed to appropriate SCC teams who may also need to look 
+        at enforcement action.
+      </p>    
+    </div>
+  </details>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Council Responsibility</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        We are responsible for incidents involving:
+      </p>
+        <ul>
+          <li> abandoned vehicles</li>
+          <li> dead animals</li>
+          <li> dog fouling</li>
+          <li> fly posting</li>
+          <li> dumped, fly-tipped waste</li>
+          <li> inoffensive graffiti</li>
+          <li> non-hate crime graffiti</li>
+          <li> littering</li>
+          <li> lost, stray or barking dogs</li>
+          <li> noise nuisance or DIY related noise (We cannot log anonymous complaints about noise as we rely on 
+               evidence from the complainant, and observations at the complainant’s home, to evaluate whether the noise 
+               is a statutory nuisance).</li>
+          <li> syringes or needles</li>
+          <li> dumped, fly-tipped waste (nobody present)</li>
+        </ul>
+    <p>
+      Please note that although all of the above are issues that the council will deal with, only noise nuisance and 
+      possibly barking dogs are generally dealt with by TEST (where it is a SCC tenant). A number of other teams are 
+      involved in managing these issues including Environmental services and Estates teams, etc.
+    </p>    
+    </div>
+  </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Hate Crime</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <h4>What is hate crime?</h4>
+        <p>
+          Hate Crime is any criminal offence committed against a person or property that is motivated by an 
+          offender’s hatred of someone because of their Disability, Race, Religion or Beliefs, Sexual Orientation 
+          or Transgender.
+        </p>
+        <p>
+          Crimes committed against someone because of their disability, transgender-identity, race, religion or belief, 
+          or sexual orientation are hate crimes and should be reported to the police.
+        </p>
+        <p>
+          Hate crimes can include:
+        </p>
+          <ul>
+            <li> threatening behaviour</li>
+            <li> assault</li>
+            <li> robbery</li>
+            <li> damage to property</li>
+            <li> inciting others to commit hate crimes</li>
+            <li> harassment</li>
+            <li> online abuse</li>
+          </ul>
+        <p>
+          If you are a Council tenant and would like to discuss prevention equipment or having a home safety check, 
+          this can be arranged by contacting your Neighbourhood Officer.
+        </p>
+      <h4>How to report Hate Crime</h4>
+        <p>
+          Anyone experiencing Hate Crime should report this to South Yorkshire Police, this can be done via 101 or via 
+          999 if a crime is in progress or someone is in immediate danger. Hate Crime should also be reported to SCC, the 
+          Neighbourhood Team/ TEST who will work closely with Police and establish if any enforcement action against 
+          perpetrators is appropriate.
+        </p>
+    </div>
+  </details>
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Sanctuary Scheme/Target hardening</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Service Area: Action Domestic Abuse (Sanctuary Scheme)</p>
+      <p>Telephone Number: Helpline No: <a href="tel:0808 8082241">0808 8082241</a>; Office No. <a href="tel:0114 2706999">0114 2706999</a></p>
+      <p>Email Address: <a href="mailto:sanctuary.scheme@actionorg.uk">sanctuary.scheme@actionorg.uk</a></p>
+      <p>South Yorkshire Fire and Rescue Service can fit blank letter boxes if there are concerns regarding harmful items 
+        being posted through the door. The Neighbourhood Officer can make a referral to SYF&amp;R for a Home Safety check.</p>
+      <p>Neighbourhood Teams may have stock of target hardening equipment.</p>
+      <p>Victim Support may support with target hardening.</p>
+    </div>
+  </details>
   `,
 
   { buttonLabel: "Raise report", formName: "hou_enforcement_asb" },
   { typeKey: "" },
   { typeKey: "tenancy_enforcement_information_provided" },
-  { type: "Request", keywords: [], categories: ["Housing"] },
-  { date: "12/09/2025", name: "Motolani Akinola" }
+  { type: "Request", keywords: ["ASB","Enforcement"], categories: ["Housing"] },
+  { date: "30/04/2026", name: "Liz Taster" }
 );
 //#endregion Tenancy enforcement
 
@@ -11148,6 +12044,12 @@ const fobsandKeys = new ContentH(
   </p>
   <p>
     Lost or stolen keys, there may be a recharge (£5), communal doors are £5. If it's your own door, it's over £200 recharge from repairs.
+  </p>
+
+  <p>
+    Please also view the information in the knowledge area <strong>Lost Stolen Keys and Lock Repairs</strong>.
+    This is the top result if you enter <strong>lock repairs</strong> in the Knowledge search above. 
+    The page provides information how to replace lost or stolen keys and fobs, including costs, required ID, and the process for requesting replacements.
   </p>
 
   <details class="accordion">
@@ -11268,13 +12170,12 @@ const fobsandKeys = new ContentH(
     </p>
     </div>
   </details>
-
   `,
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "tenancy_sustainment_information_provided" },
   { type: "Fobs and Keys", keywords: ["Tenancy"], categories: ["Housing"] },
-  { date: "07/05/2025", name: "Dinah Williams" }
+  { date: "01/05/2026", name: "Liz Taster" }
 );
 
 const garageRequest = new ContentH(
@@ -11581,17 +12482,128 @@ const tenancyAgreementRequest = new ContentH(
     { date: "01/10/2025", name: "Shahzad Athar" }
  );
 
-const tenancyChange = new FormH(
-  "tenancyChange",
-  "Tenancy Change",
-  "Request for adding, removing or enquiring about occupants, changes to tenancy both sole and joint, reporting a deceased tenant, ending a tenancy, passing on a tenancy or enquiring about tenancy start and end dates.",
-  "hou_sustainment_ten_chan",
+
+const changesToTenancy = new ContentH(
+  "changesToTenancy",
+  "Changes to Tenancy",
+  "Details around changes to tenancy, including the form for requesting a tenancy change",
+  `
+
+<h3>Tenancy Change</h3> 
+  <p>
+    Use the button at the bottom of this page to complete a <strong>Tenancy Change Request</strong>. 
+    This includes requests for adding, removing or enquiring about occupants, changes to tenancy both sole and joint, 
+    reporting a deceased tenant, ending a tenancy, passing on a tenancy or enquiring about tenancy start and end dates.
+  </p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Introductory Tenancies</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        New SCC tenants will be offered a 12 month introductory tenancy.
+        Tenants with Introductory Tenancies cannot apply for a mutual exchange. 
+        </p>
+        <p>
+          Further information about introductory tenancies can be found here: 
+          <a href="https://www.sheffield.gov.uk/council-housing/introductory-tenancies" target="_blank">https://www.sheffield.gov.uk/council-housing/introductory-tenancies</a>
+        </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Introductory%20Council%20Tenancies\`
+            "
+        >
+            Send link to review further information
+        </button>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Tenancy Conditions</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+          Further information explaining tenant and landlord responsibilities, including a link to the "You and Your Home" leaflet can be found under General Tenancy Conditions here:
+          <a href="https://www.sheffield.gov.uk/general-tenancy-conditions" target="_blank">https://www.sheffield.gov.uk/general-tenancy-conditions</a>
+        </p>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Tenancy%20Conditions\`
+           "
+        >
+            Send link to review further information
+        </button>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>General Enquiries from existing tenants</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+          For general enquiries, a large variety of information - including questions on pets, insurance, ASB, Right to Buy and being a good neighbour - 
+          can be found in the Council Housing Tenants section of the website here:
+        </p>
+        <a href="https://www.sheffield.gov.uk/council-housing/council-housing-tenants" target="_blank">https://www.sheffield.gov.uk/council-housing/council-housing-tenants</a>
+
+        <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                  }interactionid=\${KDF.getParams().interactionid}&sel_service=Council%20Housing%20Tenants\`
+            "
+        >
+            Send link to review further information
+        </button>
+    </div>
+</details>
+
+<details class="accordion">
+    <summary class="accordion-header">
+        <h3>Mutual Exchange Information</h3>
+        <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+        <p>
+          For detailed information regarding <strong>Mutual Exchanges</strong>, please review the information in that section of Knowledge. 
+          This tile includes details and guidelines regarding the process, eligibility, and conditions of Mutual Exchange for housing tenants, 
+          required documentation, restrictions, and steps to complete an exchange.
+          <br>This is the top result if you enter <strong>Mutual Exchange</strong> in the Knowledge search above.
+        </p>
+    </div>
+</details>
+
+`,
+  { buttonLabel: "Tenancy Change Request", formName: "hou_sustainment_ten_chan" },
+  { typeKey: "" },
+  { typeKey: "tenancy_sustainment_information_provided" },
   {
-    type: "Request",
+    type: "Request Tenancy Change",
     keywords: ["Housing", "Tenancy", "Tenant"],
     categories: ["Housing"],
   },
-  { date: "07/03/2025", name: "Nathan Smith" }
+  { date: "08/05/2026", name: "Liz Taster" }
 );
 
 const tenancyConditions = new ContentH(
@@ -11660,6 +12672,7 @@ const tenancySustainment = new MenuH(
     abandonment,
     boundaries,
     burglarAlarmRequest,
+    changesToTenancy,
     fencesCouncilHousing,
     fobsandKeys,
     garageRequest,
@@ -11668,7 +12681,6 @@ const tenancySustainment = new MenuH(
     nameChanges,
     permissions,
     tenancyAgreementRequest,
-    tenancyChange,
     tenancyConditions,
     tenancyVisits,
     vulnerability

@@ -1,3 +1,4 @@
+
 let userName;
 
 /**
@@ -220,8 +221,8 @@ document.addEventListener("DOMContentLoaded", function () {
        * Checks if the 'srid' URL parameter exists and starts with '101000',
        * indicating a request details page.
        */
-      const sridValue = KDF.getParams().srid;
-      const isSridValid = KDF.getParams()?.srid?.startsWith("1010") ?? false;
+      const srid = KDF.getParams()?.srid;
+      const isSridValid = srid && (srid.startsWith("1010") || srid.startsWith("2020"));
 
       /**
        * Executes if the current page is a request details page (determined by checkSridParam).
@@ -279,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           const spanValue = document.createElement("span");
           spanValue.className = "le-request-value";
-          spanValue.textContent = sridValue;
+          spanValue.textContent = srid;
 
           newDiv.appendChild(spanLabel);
           newDiv.appendChild(spanValue);
@@ -358,9 +359,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         const datetimeElements = document.querySelectorAll(
-          ".le-request-note-created time"
+          ".le-request-note-created time, .le-request-brief-details time"
         );
-
         if (datetimeElements.length > 0) {
           $('#request-details').removeClass('hidden');
           $('#raise-request-details').addClass('hidden');
@@ -460,6 +460,11 @@ document.addEventListener("DOMContentLoaded", function () {
           const itemsContainer = activeWidget.querySelector(
             ".le-request-list ul"
           );
+
+          if (!itemsContainer) {
+            return; 
+          }
+
           const items = Array.from(
             itemsContainer.querySelectorAll(".le-request-item")
           );
@@ -488,6 +493,13 @@ document.addEventListener("DOMContentLoaded", function () {
            * Creates the pagination buttons and appends them to the pagination container.
            */
           function createPagination() {
+            const requestInfo = document.getElementById(
+              "widget_ahtm_view_reuests_into"
+            );
+            if (requestInfo) {
+              requestInfo.style.display = "none";
+            }
+
             paginationContainer.innerHTML = "";
 
             const createButton = (text, page, className = "") => {

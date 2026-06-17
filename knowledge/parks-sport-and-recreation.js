@@ -1216,13 +1216,14 @@ const allotmentsEnquiries = new ContentPSaR(
       <li>Confirmation that you would like to end your tenancy</li>
     </ul>
     <p>
-      To formally submit your notice or ask about the process for ending your tenancy, use the <strong>Allotment request</strong> button below. 
-      This ensures your request is recorded and processed correctly.
-    </p>
-    <p>
-      A follow-up email will be required as written confirmation that you wish 
-      to end your tenancy. Submitting the Allotment Request form will start 
-      the process, and we will then contact you to obtain your confirmation.
+       If a customer wishes to end their tenancy they need to write to PWC with the end date, site name, plot number, and the tenants name.
+       <br>This information should be sent to:
+       <br>
+       <br>   Allotment Office,
+       <br>   The Centre in the Park,
+       <br>   Guildford Avenue,
+       <br>   Sheffield, 
+       <br>    S2 2PL
     </p>
     </div>
   </details>
@@ -1292,7 +1293,7 @@ const allotmentsEnquiries = new ContentPSaR(
 ],
     categories: ["Parks and Countryside"]
   },
-  { date: "25/11/2025", name: "Andy Walker" }
+  { date: "12/05/2026", name: "Liz Taster" }
 );
 
 const allotmentsReportIssue = new ContentPSaR(
