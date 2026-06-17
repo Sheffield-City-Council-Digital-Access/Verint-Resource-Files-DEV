@@ -1829,6 +1829,113 @@ const renewTaxiDriverLicence = new ContentBusiness(
 );
 
 
+const renewPrivateHireVehicleLicence = new ContentBusiness(
+  "renewPrivateHireVehicleLicence",
+  "Renew Private Hire Vehicle Licence",
+  "Guidance on renewing a private hire vehicle licence, including requirements, costs, and process details.",
+
+  `<h3>Overview</h3>
+    <p>Customers should renew their private hire vehicle licence online. The licence allows a vehicle to continue 
+    operating for private hire purposes and is valid for a maximum of 12 months.</p>
+    <p>Renewal should be completed <strong>within the same month the licence is due to expire</strong>. 
+    Customers are responsible for checking their licence expiry date and renewing on time.</p>
+    <p>If the licence expires, the vehicle <strong>cannot legally be used for hire and reward</strong> until 
+    renewal is confirmed.</p>
+
+  <h3>Useful Links</h3>
+    <p>Detailed information about all stages of renewing a private hire vehicle licence can be found here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/renewing-private-hire" target="_blank">
+    Renewing a private hire vehicle licence | Sheffield City Council</a></p>
+
+    <p> [Insert send link] </p>
+
+    <p>A link to the online form that needs to be completed can be found here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/renewing-private-hire/renew-licence" target="_blank">
+    Renew a private hire vehicle licence | Sheffield City Council</a></p>
+
+    <p> [Insert send link] </p>
+
+  <h3>Before Applying</h3>
+    <p>The vehicle must pass a <strong>compliance test no more than 4 weeks before renewal</strong>.</p>
+    <p>The council usually sends an email <strong>around 6 weeks before expiry</strong> with compliance test details.</p>
+    <p>If the customer has not received a test appointment, they should contact Taxi Licensing:</p>
+      <ul>
+        <li>Email: <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a></li>
+        <li>Telephone: 0114 273 4264</li>
+      </ul>
+
+  <h3>Cost</h3>
+    <p>The renewal fee is <strong>£212</strong>, payable online at the time of application.</p>
+
+  <h3>How to Apply</h3>
+    <p>Customers must apply online.</p>
+    <p>Payment is made during the application process.</p>
+    <p>Applicants must provide:</p>
+      <ul>
+        <li>Private hire vehicle registration number</li>
+        <li>Private hire vehicle licence number</li>
+        <li>Licence expiry date</li>
+        <li>Valid vehicle insurance certificate (document upload)</li>
+        <li>Vehicle compliance/test certificate (document upload)</li>
+      </ul>
+
+  <h3>After Applying</h3>
+    <p>Applications are processed within <strong>5 working days</strong> after submission and payment.</p>
+    <p>The customer will receive:</p>
+      <ul>
+        <li>A <strong>PDF licence by email</strong></li>
+        <li>A <strong>paper licence and plate by post</strong></li>
+      </ul>
+
+  <h3>Late Renewals</h3>
+    <p>A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still 
+    use the renewal process.</p>
+    <p>After this period, the driver must <strong>apply for a new vehicle licence instead of renewing.</strong></p>
+    <p>If the licence has expired, the vehicle <strong>cannot legally be used for hire and reward</strong> 
+    until renewal is confirmed.</p>
+
+  <h3>Important Notes for Call Handling</h3>
+    <ul>
+      <li>If the licence expires, the vehicle <strong>cannot legally be used for hire and reward</strong> 
+      until renewal is confirmed.</li>
+      <li>The renewal application should be made as soon as possible after the vehicle passes its compliance test.</li>
+      <li>If a vehicle compliance test is in the last week of the final month the licence is valid, 
+      the customer will be given the option to collect the licence.</li>
+    </ul>`,
+
+  { buttonLabel: "Apply Now", formName: "renew_private_hire" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Application",
+    keywords: [
+      "private hire vehicle licence",
+      "private hire",
+      "taxi",
+      "licence",
+      "renew",
+      "private",
+      "hire",
+      "compliance test",
+      "renewal",
+      "vehicle",
+      "license",
+      "licensing",
+      "licencing",
+      "privte",
+      "vehcle",
+      "renwal",
+      "licsense",
+      "renw",
+      "rnew",
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "17/06/2026", name: "Liz Taster" }
+);
+
+
+
 
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
@@ -1848,7 +1955,8 @@ const renewTaxiDriverLicence = new ContentBusiness(
     renewPrivateHireOperatorLicence,
     changeOfNameOrAddress,
     convictionsAndDrivingOffences,
-    renewTaxiDriverLicence
+    renewTaxiDriverLicence,
+    renewPrivateHireVehicleLicence
   ]
 );
 
