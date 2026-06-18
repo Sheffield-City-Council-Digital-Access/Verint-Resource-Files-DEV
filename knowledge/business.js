@@ -2225,6 +2225,113 @@ const orderReplacementTaxiItems = new ContentBusiness(
 );
 
 
+
+const taxiAdvertisingConsent = new ContentBusiness(
+  "taxiAdvertisingConsent",
+  "Taxi Advertising Consent",
+  "Details of how to apply for consent to display advertising on private hire and hackney carriage vehicles.",
+  `
+  <h3>Overview</h3>
+    <p>Advertising consent is required before any advert is added to a licensed taxi vehicle, and customers must apply 
+    to the licensing service with full details of their proposal.</p>
+    <p>All content must meet strict standards, and approval must be granted before any advertising is displayed on a 
+    licensed vehicle.</p>
+    <p>This applies to both private hire vehicles and Hackney carriage (taxi) vehicles.</p>
+    <p>Full details and a link to apply online can be found here:</p>
+      <ul>
+        <li>for private hire vehicles: 
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private-0" target="_blank">
+        Private hire advertising consent | Sheffield City Council</a></li>
+        <li>for hackney carriage vehicles: 
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney-0" target="_blank">
+        Hackney carriage advertising consent | Sheffield City Council</a></li>
+      </ul>
+
+  <h3>Restrictions on Advertising Content</h3>
+    <p>All advertisements are checked for suitability. The council will not approve adverts that:</p>
+      <ul>
+        <li>Promote smoking, tobacco, or vaping</li>
+        <li>Promote alcohol or gambling</li>
+        <li>Are sexual, religious, or political in nature</li>
+        <li>Are likely to cause offence to members of the public</li>
+      </ul>
+
+  <h3>Where Advertising Can Be Displayed</h3>
+    <p>Advertising may be placed:</p>
+      <ul>
+        <li>On the rear window - using contra vision or similar material</li>
+        <li>As half or full vehicle livery* – this must not distract from required signage</li>
+        <li>On a digital screen</li>
+        <li>As illuminated exterior media</li>
+        <li>As a door sign (<em>Hackney carriage only</em>)</li>
+        <li>On tip seats (<em>Hackney carriage only</em>)</li>
+      </ul>
+    <p>* If a vehicle is fully wrapped (full livery) the DVLA V5C logbook must be updated, and vehicle colour must be recorded as “full livery”.</p>
+    <p>Advertisements must not cover any required notices, signs, or licence plates and must not negatively affect the safety or appearance of the vehicle.</p>
+    <p>If the council determines that advertising is unsafe or in poor condition, the vehicle licence may be suspended until the issue is resolved.</p>
+
+  <h3>Fees</h3>
+    <ul>
+      <li>Advertising consent application - £15</li>
+      <li>Full livery advertising application - £55</li>
+    </ul>
+
+  <h3>Key Requirements and How to Apply</h3>
+    <p>Applications are submitted <strong>online</strong>.</p>
+    <p>The application must be submitted by the <strong>vehicle owner</strong>.</p>
+    <p><strong>Full details</strong> of the proposed advertisement must be provided as part of the application.</p>
+    <p>A <strong>contract for the advertisement</strong> must be included with the application. The contract must:</p>
+      <ul>
+        <li>State the vehicle details</li>
+        <li>Include the end date of the contract</li>
+        <li>Confirm the advertisement will be removed at the end of the contract period</li>
+      </ul>
+    <p>The customer <strong>must wait for approval</strong> before adding the advertisement to the vehicle.</p>
+
+  <h3>Key Advice for Call Handling</h3>
+    <ul>
+      <li>Customers must not apply or display advertising before receiving approval.</li>
+      <li>Remind customers that not all advert types are allowed.</li>
+      <li>Check whether the enquiry relates to a <strong>private hire vehicle</strong> or a <strong>hackney carriage</strong>, as permitted advertising locations differ.</li>
+      <li>If customers ask about costs, confirm the standard fees listed above.</li>
+    </ul>
+  `,
+  {},
+  {},
+  {},
+  {
+    type: "Application",
+    keywords: [
+      "taxi advertising consent",
+      "advert",
+      "advertising",
+      "taxi",
+      "consent",
+      "approval",
+      "vehicle",
+      "hackney carriage",
+      "private hire",
+      "taxi livery",
+      "livery",
+      "adverts",
+      "application",
+      "apply",
+      "contra vision",
+      "taxi ad",
+      "vehcle",
+      "advertisng",
+      "advertisin",
+      "addvertising",
+      "hackney cab",
+      "ads",
+      "taxi marketing"
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "18/06/2026", name: "Liz Taster" }
+);
+
+
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
   "Taxi Licensing",
@@ -2247,7 +2354,8 @@ const orderReplacementTaxiItems = new ContentBusiness(
     renewPrivateHireVehicleLicence,
     renewHackneyCarriageVehicleLicence,
     applyKnowledgeTest,
-    orderReplacementTaxiItems
+    orderReplacementTaxiItems,
+    taxiAdvertisingConsent
   ]
 );
 
