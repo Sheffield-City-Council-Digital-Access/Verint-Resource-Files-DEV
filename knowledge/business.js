@@ -2367,7 +2367,7 @@ const reportTaxiAccident = new ContentBusiness(
     <p>If the vehicle is <strong>not fit for use</strong>, the vehicle licence will be <strong>suspended</strong>. 
     This means the vehicle cannot be used until repairs are completed, and the vehicle <strong>passes a compliance test</strong> 
     at the Council’s testing station.</p>
-    <p>Where a vehicle is badly damaged and cannot be driven, the driver will then be asked to return the vehicle 
+    <p>Where a vehicle is badly damaged and cannot be driven, the driver will be asked to return the vehicle 
     licence plate rather than being issued with a suspension.</p>
 
   <h3>After the Repairs are Completed</h3>
@@ -2420,6 +2420,88 @@ const reportTaxiAccident = new ContentBusiness(
 );
 
 
+const taxiComplaints = new ContentBusiness(
+  "taxiComplaints",
+  "Taxi Complaint Process",
+  "Details of how to report issues with taxi drivers, vehicles, or operators licensed in Sheffield.",
+  `
+  <h3>Overview</h3>
+    <p>Customers can report complaints about taxi drivers, vehicles, or operators licensed in Sheffield. 
+    The council is responsible for investigating these complaints and may take enforcement action where necessary.</p>
+    <p>Complaints are currently submitted by email using a form available here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/passenger-information/complain-about-taxi-or-driver" target="_blank">
+    Complain about a taxi or driver | Sheffield City Council</a></p>
+
+    <p>[insert send link]</p>
+
+    <p><strong>In emergencies, residents should call 999.</strong></p>
+
+  <h3>What Can Be Reported</h3>
+    <ul>
+      <li>Poor customer service</li>
+      <li>Poor or unsafe driving standards</li>
+      <li>Overcharging</li>
+      <li>Refusal to take a passenger</li>
+      <li>Vehicle defects</li>
+      <li>Failure to display driver or vehicle identification</li>
+      <li>Unnecessarily long routes</li>
+      <li>Illegal plying for hire</li>
+      <li>Issues with operators</li>
+      <li>Equality concerns (e.g. refusal of wheelchair users or guide dogs)</li>
+      <li>Breaches of licence conditions</li>
+    </ul>
+
+  <h3>How to Report</h3>
+    <p>Complete a taxi incident or complaint form and provide as much detail as possible to support the investigation.</p>
+    <p>Submit the form and any supporting information (such as evidence) to the taxi licensing service via email at 
+    <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a>.
+    </p>
+
+  <h3>Investigation and Outcomes</h3>
+    <p>The council investigates complaints relating to taxi drivers, vehicles, and operators. They may:</p>
+      <ul>
+        <li>Offer advice</li>
+        <li>Issue warnings</li>
+        <li>Suspend or revoke licences</li>
+        <li>Prosecute where appropriate</li>
+      </ul>
+
+  <h3>Important Considerations</h3>
+    <ul>
+      <li>If prosecution is pursued, the complainant may need to attend a council committee or magistrates’ court as a witness.</li>
+      <li>Criminal matters (such as assault, theft, or dangerous driving) must be reported to the police first, then to the licensing service.</li>
+      <li>In emergencies, residents should call 999.</li>
+    </ul>`,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "Report" },
+  { typeKey: "Complaint" },
+  {
+    type: "Report",
+    keywords: [
+      "taxi",
+      "complaint",
+      "report",
+      "issue",
+      "driver",
+      "vehicle",
+      "taxi operator",
+      "overcharging",
+      "unsafe driving",
+      "refusal passenger",
+      "complaints",
+      "cab",
+      "hackney carriage",
+      "private hire",
+      "complant",
+      "compaint",
+      "lisencing"
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "18/06/2026", name: "Liz Taster" }
+);
+
+
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
   "Taxi Licensing",
@@ -2444,7 +2526,8 @@ const reportTaxiAccident = new ContentBusiness(
     applyKnowledgeTest,
     orderReplacementTaxiItems,
     taxiAdvertisingConsent,
-    reportTaxiAccident
+    reportTaxiAccident,
+    taxiComplaints
   ]
 );
 
