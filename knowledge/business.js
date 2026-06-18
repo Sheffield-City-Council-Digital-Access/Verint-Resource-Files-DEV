@@ -2426,7 +2426,7 @@ const taxiComplaints = new ContentBusiness(
   "Details of how to report issues with taxi drivers, vehicles, or operators licensed in Sheffield.",
   `
   <h3>Overview</h3>
-    <p>Customers can report complaints about taxi drivers, vehicles, or operators licensed in Sheffield. 
+    <p>Customers can report <strong>complaints about taxi drivers</strong>, vehicles, or operators licensed in Sheffield. 
     The council is responsible for investigating these complaints and may take enforcement action where necessary.</p>
     <p>Complaints are currently submitted by email using a form available here: 
     <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/passenger-information/complain-about-taxi-or-driver" target="_blank">
@@ -2437,22 +2437,24 @@ const taxiComplaints = new ContentBusiness(
     <p><strong>In emergencies, residents should call 999.</strong></p>
 
   <h3>What Can Be Reported</h3>
-    <ul>
-      <li>Poor customer service</li>
-      <li>Poor or unsafe driving standards</li>
-      <li>Overcharging</li>
-      <li>Refusal to take a passenger</li>
-      <li>Vehicle defects</li>
-      <li>Failure to display driver or vehicle identification</li>
-      <li>Unnecessarily long routes</li>
-      <li>Illegal plying for hire</li>
-      <li>Issues with operators</li>
-      <li>Equality concerns (e.g. refusal of wheelchair users or guide dogs)</li>
-      <li>Breaches of licence conditions</li>
-    </ul>
+    <p>Complaints may include issues such as:</p>
+      <ul>
+        <li>Poor customer service</li>
+        <li>Poor or unsafe driving standards</li>
+        <li>Overcharging</li>
+        <li>Refusal to take a passenger</li>
+        <li>Vehicle defects</li>
+        <li>Failure to display driver or vehicle identification</li>
+        <li>Unnecessarily long routes</li>
+        <li>Illegal plying for hire</li>
+        <li>Issues with operators</li>
+        <li>Equality concerns (e.g. refusal of wheelchair users or guide dogs)</li>
+        <li>Breaches of licence conditions</li>
+      </ul>
 
   <h3>How to Report</h3>
-    <p>Complete a taxi incident or complaint form and provide as much detail as possible to support the investigation.</p>
+    <p>Customers should complete a <strong>taxi incident/complaint form</strong>, 
+    providing as much detail as possible to support the investigation.</p>
     <p>Submit the form and any supporting information (such as evidence) to the taxi licensing service via email at 
     <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a>.
     </p>
