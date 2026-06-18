@@ -2151,11 +2151,11 @@ const applyKnowledgeTest = new ContentBusiness(
 
 
 const orderTaxiReplacementItems = new ContentBusiness(
-  "orderTaxiReplacementItems",
-  "Order Taxi Replacement Items",
+  "orderReplacementTaxiItems",
+  "Order Replacement Taxi Items",
   "Details of how to request replacement taxi licensing items if lost or stolen.",
   `
-  <h3>Service Overview</h3>
+  <h3>Overview</h3>
     <p>Taxi drivers or vehicle licence holders can request replacement taxi licensing items if items have been lost or stolen. 
     The service allows users to order replacements online for a small fee per item.</p>
     <p>Full details, including a document showing pictures of the different items and a link to the form to order replacements 
@@ -2247,7 +2247,7 @@ const orderTaxiReplacementItems = new ContentBusiness(
     renewPrivateHireVehicleLicence,
     renewHackneyCarriageVehicleLicence,
     applyKnowledgeTest,
-    orderTaxiReplacementItems
+    orderReplacementTaxiItems
   ]
 );
 
