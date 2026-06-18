@@ -2249,7 +2249,7 @@ const taxiAdvertisingConsent = new ContentBusiness(
     <p>[insert send link x 2]</p>
 
   <h3>Restrictions on Advertising Content</h3>
-    <p>All advertisements are checked for suitability. The council will not approve adverts that:</p>
+    <p>All advertisements are checked for suitability. The council <strong>will not approve adverts</strong> that:</p>
       <ul>
         <li>Promote smoking, tobacco, or vaping</li>
         <li>Promote alcohol or gambling</li>
@@ -2294,7 +2294,7 @@ const taxiAdvertisingConsent = new ContentBusiness(
       <li>Customers must not apply or display advertising before receiving approval.</li>
       <li>Remind customers that not all advert types are allowed.</li>
       <li>Check whether the enquiry relates to a <strong>private hire vehicle</strong> or a <strong>hackney carriage</strong>, as permitted advertising locations differ.</li>
-      <li>If customers ask about costs, confirm the standard fee of £15, or £55 for full livery.</li>
+      <li>If customers ask about costs, confirm the standard fee of £15, or £55 if full livery.</li>
     </ul>
   `,
   {},
