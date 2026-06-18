@@ -2232,7 +2232,7 @@ const taxiAdvertisingConsent = new ContentBusiness(
   "Details of how to apply for consent to display advertising on private hire and hackney carriage vehicles.",
   `
   <h3>Overview</h3>
-    <p>Advertising consent is required before any advert is added to a licensed taxi vehicle, and customers must apply 
+    <p>Advertising consent is required <strong>before</strong> any advert is added to a licensed taxi vehicle, and customers must apply 
     to the licensing service with full details of their proposal.</p>
     <p>All content must meet strict standards, and approval must be granted before any advertising is displayed on a 
     licensed vehicle.</p>
@@ -2246,6 +2246,7 @@ const taxiAdvertisingConsent = new ContentBusiness(
         <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney-0" target="_blank">
         Hackney carriage advertising consent | Sheffield City Council</a></li>
       </ul>
+    <p>[insert send link x 2]</p>
 
   <h3>Restrictions on Advertising Content</h3>
     <p>All advertisements are checked for suitability. The council will not approve adverts that:</p>
@@ -2267,7 +2268,7 @@ const taxiAdvertisingConsent = new ContentBusiness(
         <li>On tip seats (<em>Hackney carriage only</em>)</li>
       </ul>
     <p>* If a vehicle is fully wrapped (full livery) the DVLA V5C logbook must be updated, and vehicle colour must be recorded as “full livery”.</p>
-    <p>Advertisements must not cover any required notices, signs, or licence plates and must not negatively affect the safety or appearance of the vehicle.</p>
+    <p>Advertisements <strong>must not</strong> cover any required notices, signs, or licence plates and must not negatively affect the safety or appearance of the vehicle.</p>
     <p>If the council determines that advertising is unsafe or in poor condition, the vehicle licence may be suspended until the issue is resolved.</p>
 
   <h3>Fees</h3>
@@ -2277,7 +2278,7 @@ const taxiAdvertisingConsent = new ContentBusiness(
     </ul>
 
   <h3>Key Requirements and How to Apply</h3>
-    <p>Applications are submitted <strong>online</strong>.</p>
+    <p>Applications are <strong>submitted online</strong>.</p>
     <p>The application must be submitted by the <strong>vehicle owner</strong>.</p>
     <p><strong>Full details</strong> of the proposed advertisement must be provided as part of the application.</p>
     <p>A <strong>contract for the advertisement</strong> must be included with the application. The contract must:</p>
@@ -2293,7 +2294,7 @@ const taxiAdvertisingConsent = new ContentBusiness(
       <li>Customers must not apply or display advertising before receiving approval.</li>
       <li>Remind customers that not all advert types are allowed.</li>
       <li>Check whether the enquiry relates to a <strong>private hire vehicle</strong> or a <strong>hackney carriage</strong>, as permitted advertising locations differ.</li>
-      <li>If customers ask about costs, confirm the standard fees listed above.</li>
+      <li>If customers ask about costs, confirm the standard fee of £15, or £55 for full livery.</li>
     </ul>
   `,
   {},
