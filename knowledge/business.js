@@ -2158,19 +2158,16 @@ const orderTaxiReplacementItems = new ContentBusiness(
   <h3>Service Overview</h3>
     <p>Taxi drivers or vehicle licence holders can request replacement taxi licensing items if items have been lost or stolen. 
     The service allows users to order replacements online for a small fee per item.</p>
-    <p>Full details, including a document with pictures of the different items and a link to the form to order replacements 
+    <p>Full details, including a document showing pictures of the different items and a link to the form to order replacements 
     can be found here:</p>
     <p><a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/order-replacement-taxi-items"target="_blank">
     Order replacement taxi items | Sheffield City Council</a></p>
 
     <p>[insert send link]</p>
 
-<h2> h2 Test text </h2>
-<h4> h4 Test text </h4>
-
   <h3>Items Available</h3>
 
-  <h3>Taxi Driver Items</h3>
+  <h4>Taxi Driver Items</h4>
     <p>The following replacement items can be ordered:</p>
       <ul>
         <li>Internal driver ID – £6</li>
@@ -2180,7 +2177,7 @@ const orderTaxiReplacementItems = new ContentBusiness(
         <li>Lanyard – £2</li>
       </ul>
 
-  <h3>Taxi Vehicle Items</h3>
+  <h4>Taxi Vehicle Items</h4>
     <p>The following replacement vehicle items are available:</p>
       <ul>
         <li>Licence plate (private hire or hackney carriage) – £25</li>
@@ -2190,11 +2187,11 @@ const orderTaxiReplacementItems = new ContentBusiness(
         <li>Bracket – £15</li>
         <li>Wallet for private hire sticker – £6</li>
         <li>Paper licence (paper and digital copy issued) – £15</li>
-        <li>Private hire advance booking door stickers can be ordered - £6 for one sticker/£12 for two stickers</li>
+        <li>Private hire advance booking door stickers - £6 for one sticker/£12 for two stickers</li>
       </ul>
 
   <h3>How to Request</h3>
-    <p>Orders are made online using a form and payment links.</p>
+    <p>Orders are made <strong>online</strong> using a form and payment links.</p>
     <p>Items can either be posted to the applicant, or collected in person. Some larger items are collection only.</p>
     <p>The council will confirm when items are ready for collection.</p>
   `,
