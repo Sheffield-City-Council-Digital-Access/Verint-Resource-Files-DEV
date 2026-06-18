@@ -2150,7 +2150,7 @@ const applyKnowledgeTest = new ContentBusiness(
 );
 
 
-const orderTaxiReplacementItems = new ContentBusiness(
+const orderReplacementTaxiItems = new ContentBusiness(
   "orderReplacementTaxiItems",
   "Order Replacement Taxi Items",
   "Details of how to request replacement taxi licensing items if lost or stolen.",
