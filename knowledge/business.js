@@ -2343,16 +2343,17 @@ const reportTaxiAccident = new ContentBusiness(
     <p>If a taxi has been involved in an accident, this <strong>must be reported within 72 hours</strong>.</p>
     <p>This applies to both <strong>private hire vehicles</strong> and <strong>hackney carriage vehicles</strong> 
     licensed by Sheffield City Council.</p>
-    <p>Drivers (or vehicle proprietors) must complete the <strong>Accident Damage Report form online</strong>, 
-    then await inspection and follow Licensing instructions before returning to work. This ensures compliance with 
+    <p>Drivers must complete the <strong>Accident Damage Report form online</strong>, 
+    then await vehicle inspection and Licensing instructions before returning to work. This ensures compliance with 
     taxi licensing requirements and maintains passenger safety.</p>
     <p>Further details and a link to the form can be found here: 
     <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/road"target="_blank">
     Road traffic accident or damage | Sheffield City Council</a></p>
+    <p>[insert send link]</p>
 
   <h3>How and What to Report</h3>
     <p>Drivers (or vehicle proprietors) must complete an <strong>Accident Damage Report form online</strong>.</p>
-    <p>They must provide full details of the accident and damage to the vehicle, and include any damage that affects:</p>
+    <p>They must provide full details of the accident and damage to the vehicle, including any damage that affects:</p>
       <ul>
         <li>Safety</li>
         <li>Performance</li>
@@ -2373,10 +2374,10 @@ const reportTaxiAccident = new ContentBusiness(
     <p>Once the vehicle has been repaired, the driver is responsible for <strong>contacting the Licensing Service</strong>, 
     who will arrange a <strong>compliance test</strong> before the vehicle can return to service.</p>
 
-  <h3>Key Message for Call Handling</h3>
+  <h3>Key Messages for Call Handling</h3>
     <ul>
       <li>Report the accident <strong>within 72 hours</strong></li>
-      <li>Complete the <strong>Accident Damage Report form</strong></li>
+      <li>Complete the <strong>Accident Damage Report form</strong> online</li>
       <li>Do not use the vehicle if it may be unsafe</li>
       <li>Await inspection and follow Licensing instructions before returning to work</li>
     </ul>`,
