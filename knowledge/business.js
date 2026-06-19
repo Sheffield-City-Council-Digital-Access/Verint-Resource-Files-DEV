@@ -2334,7 +2334,7 @@ const medicalExemptionsTaxi = new ContentBusiness(
 );
 
 
-const dbsChecksTaxiDrivers = new ContentPSaR(
+const dbsChecksTaxiDrivers = new ContentBusiness(
   "dbsChecksTaxiDrivers",
   "DBS checks for Taxi drivers",
   "Information and application guidance for taxi drivers requiring DBS checks.",
@@ -2395,7 +2395,7 @@ const dbsChecksTaxiDrivers = new ContentPSaR(
       "dbs chek",
       "drviver",
     ],
-    categories: ["Parks and Countryside"]
+    categories: ["Business", "Taxi Licensing"]
   },
   { date: "19/06/2026", name: "Liz Taster" }
 );
