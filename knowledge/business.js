@@ -2433,13 +2433,9 @@ const taxiDriverMedical = new ContentBusiness(
 
   <h3>How to complete the medical assessment</h3>
   <p>Applicants must obtain a <strong>medical assessment form (medical pack)</strong> from the council.</p>
-  <p>The form must be completed by: </p>
-  <ul>
-    <li>The applicant’s own GP, or</li>
-    <li>A doctor recommended by the licensing authority</li>
-  </ul>
+  <p>The form must be completed by <strong>the applicant’s own GP</strong>, or a doctor recommended by the licensing authority.</p>
 
-  <p>Once completed, both the <strong>medical pack and certificate of fitness</strong> must be returned to the licensing service in one of the following ways:</p>
+  <p>Once completed, both the <strong>medical pack</strong> and a <strong>certificate of fitness</strong> must be returned to the licensing service in one of the following ways:</p>
   <ul>
     <li>Email (photos of all pages)</li>
     <li>Post</li>
@@ -2448,11 +2444,11 @@ const taxiDriverMedical = new ContentBusiness(
 
   <h3>Key information for call centre staff</h3>
   <ul>
-    <li>A medical assessment is <strong> mandatory for all new taxi driver licence applications</strong></li>
-    <li>The assessment must meet <strong>DVLA Group 2 standards</strong></li>
-    <li>Forms must be completed by an appropriate doctor</li>
-    <li>Completed documents must be returned before the application can proceed</li>
-    <li>Ongoing medical checks are required depending on the driver’s age</li>
+    <li>A medical assessment is <strong> mandatory for all new taxi driver licence applications</strong>.</li>
+    <li>The assessment must meet <strong>DVLA Group 2 standards</strong>.</li>
+    <li>Forms must be completed by an appropriate doctor.</li>
+    <li>Completed documents must be returned before the application can proceed.</li>
+    <li>Ongoing medical checks are required depending on the driver’s age.</li>
   </ul>
   `,
   {},
