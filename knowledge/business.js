@@ -70,6 +70,8 @@ const drivingStandardsTestGuide = new ContentBusiness(
   <p>Further information and a link to apply can be found here: <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/driving" target="_blank">
   Driving standards test | Sheffield City Council</a> </p>
 
+  <p>[insert send link]</p>
+
   <h3>Eligibility Criteria</h3>
   <p>Applicants must:</p> 
   <ul>
@@ -128,21 +130,20 @@ const drivingStandardsTestGuide = new ContentBusiness(
     keywords: [
       "driving standards test",
       "driving",
+      "driver",
       "standards",
       "test",
-      "taxi driver licence",
-      "DVLA",
-      "DVSA",
+      "licence",
       "driver test",
-      "taxi licensing",
-      "private hire driver",
+      "taxi",
+      "licensing",
+      "private hire",
       "application",
       "apply driving test",
       "driving assessment",
       "road safety test",
       "drivers licence test",
       "taxi test",
-      "drivng standards test",
       "drving",
       "standrds",
       "driving tests",
@@ -2333,6 +2334,74 @@ const medicalExemptionsTaxi = new ContentBusiness(
 );
 
 
+const dbsChecksTaxiDrivers = new ContentPSaR(
+  "dbsChecksTaxiDrivers",
+  "DBS checks for Taxi drivers",
+  "Information and application guidance for taxi drivers requiring DBS checks.",
+  `
+    <h3>Interaction Type: Apply</h3>
+
+    <h3>Disclosure and Barring Service (DBS) checks for Taxi drivers</h3>
+
+    <h3>Key Information</h3>
+    <p>Taxi drivers must have an <strong>Enhanced DBS check with barred list checks</strong>.</p>
+    <p>This is used to assess if they are a <strong>fit and proper person</strong> to hold a licence.</p>
+    <p>Further details, including how to apply can be found here:
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/taxi-0" target="_blank">
+        Taxi driver disclosure and barring checks | Sheffield City Council
+      </a>
+    </p>
+
+    <h3>What Drivers Need to Do</h3>
+    <ul>
+      <li>Request a DBS application pack from the taxi licensing team</li>
+      <li>Complete the form and attend <strong>Howden House</strong> for document checks</li>
+      <li>Pay the <strong>£49.50 fee</strong></li>
+    </ul>
+
+    <h3>After Receiving the DBS Certificate</h3>
+    <p>Send a copy of the certificate to licensing and sign up to the <strong>DBS Update Service within 30 days</strong></p>
+
+    <h3>Ongoing Requirement</h3>
+    <ul>
+      <li>DBS checks are reviewed <strong>every 6 months</strong></li>
+      <li>Drivers must stay subscribed to the Update Service or provide a recent certificate</li>
+      <li>Failure to do this may result in <strong>licence suspension</strong></li>
+    </ul>
+  `,
+  {},
+  {},
+  {},
+  {
+    type: "Application",
+    keywords: [
+      "DBS",
+      "Disclosure"
+      "Barring",
+      "Service",
+      "taxi",
+      "driver",
+      "drivers",
+      "licence",
+      "license",
+      "licensing",
+      "Enhanced DBS",
+      "barred list",
+      "check",
+      "checks",
+      "Update Service",
+      "CRB",
+      "criminal record",
+      "dbs chek",
+      "drviver",
+    ],
+    categories: ["Parks and Countryside"]
+  },
+  { date: "19/06/2026", name: "Liz Taster" }
+);
+
+
+
 
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
@@ -2359,7 +2428,8 @@ const medicalExemptionsTaxi = new ContentBusiness(
     taxiAdvertisingConsent,
     reportTaxiAccident,
     taxiComplaints,
-    medicalExemptionsTaxi
+    medicalExemptionsTaxi,
+    dbsChecksTaxiDrivers
   ]
 );
 
