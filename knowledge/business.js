@@ -2105,9 +2105,9 @@ const taxiVehicleInspections = new ContentBusiness(
   `<h3>Overview</h3>
   <p>Vehicle inspections and testing are required to ensure that all private hire and hackney carriage vehicles are safe to operate. Vehicles are checked regularly because of the high mileage and workload associated with taxi use. The frequency of testing depends on the age of the vehicle.</p>
   <p>All vehicles must pass a <strong>compliance test at the council’s testing station</strong> before a licence can be issued.</p>
-  <p>Further details about vehicle testing can be found here: <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/vehicle">Vehicle inspections and testing | Sheffield City Council</a></p>
+  <p>Further details about vehicle testing can be found here: <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/vehicle" target="_blank">Vehicle inspections and testing | Sheffield City Council</a></p>
   <p>Insert send link</p>
-  <p>A copy of the Vehicle Testing Customer Charter can be found here: <a href="https://www.sheffield.gov.uk/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private-hire-vehicle-licence/inspections-and-testing/vehicle-testing-customer-charter">Vehicle testing customer charter | Sheffield City Council</a></p>
+  <p>A copy of the Vehicle Testing Customer Charter can be found here: <a href="https://www.sheffield.gov.uk/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private-hire-vehicle-licence/inspections-and-testing/vehicle-testing-customer-charter" target="_blank">Vehicle testing customer charter | Sheffield City Council</a></p>
   <p>Insert send link</p>
 
 
