@@ -2106,9 +2106,18 @@ const taxiVehicleInspections = new ContentBusiness(
   <p>Vehicle inspections and testing are required to ensure that all private hire and hackney carriage vehicles are safe to operate. Vehicles are checked regularly because of the high mileage and workload associated with taxi use. The frequency of testing depends on the age of the vehicle.</p>
   <p>All vehicles must pass a <strong>compliance test at the council’s testing station</strong> before a licence can be issued.</p>
   <p>Further details about vehicle testing can be found here: <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/vehicle">Vehicle inspections and testing | Sheffield City Council</a></p>
+  <p>Insert send link</p>
   <p>A copy of the Vehicle Testing Customer Charter can be found here: <a href="https://www.sheffield.gov.uk/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private-hire-vehicle-licence/inspections-and-testing/vehicle-testing-customer-charter">Vehicle testing customer charter | Sheffield City Council</a></p>
+  <p>Insert send link</p>
 
-  <h3>New Vehicle Applications</h3>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>New Vehicle Applications</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
   <p>For new vehicle applications the vehicle must pass a <strong>compliance test before a licence can be issued</strong>.</p>
   <p>This applies even if the vehicle would not normally require an MOT (for example, if it is less than 3 years old).</p>
   <p><strong>Before receiving a test appointment</strong>, the applicant must submit either:</p>
@@ -2121,8 +2130,16 @@ const taxiVehicleInspections = new ContentBusiness(
     <li><strong>10 days</strong> for private hire vehicles</li>
     <li><strong>14 days</strong> for hackney carriage vehicles</li>
   </ul>
+      </div>
+  </details>
 
-  <h3>Vehicles that are already licensed</h3>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Vehicles that are already licensed</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+
   <p>For existing licensed vehicles a <strong>compliance test is required before renewal</strong>, and no more than <strong>4 weeks before the licence expiry date</strong>.</p>
   <p>The council will usually contact the licence holder <strong>around 6 weeks in advance</strong> with a test date and time.</p>
   <p>It is the vehicle proprietor’s responsibility to ensure the vehicle is licensed on time and to contact Taxi Licensing if they do not receive a test appointment.</p>
@@ -2139,6 +2156,9 @@ const taxiVehicleInspections = new ContentBusiness(
     <li>Under 9 years old: <strong>every 12 months</strong></li>
     <li>Over 9 years old: <strong>every 6 months</strong></li>
   </ul>
+
+    </div>
+  </details>
 
 
   <details class="accordion">
