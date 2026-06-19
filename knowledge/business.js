@@ -2397,6 +2397,96 @@ const dbsChecksTaxiDrivers = new ContentBusiness(
 
 
 
+const taxiDriverMedical = new ContentBusiness(
+  "taxiDriverMedical",
+  "Taxi Driver Medical Assessments",
+  "Requirements and process for taxi driver medical assessments.",
+  `
+   <h3>Overview</h3>
+  <p>Taxi drivers must meet specific medical standards to ensure they are safe to carry passengers and operate a licensed vehicle. 
+  As part of applying for a new taxi driver licence in Sheffield, applicants are required to complete a <strong>DVLA Group 2 medical</strong>. 
+  This is a higher medical standard to ensure taxi drivers can meet the demands of the role.</p>
+  <p>Further information, including a copy of the documentation needed can be found here: 
+  <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/taxi-2"target="_blank">
+  Taxi driver medical assessments | Sheffield City Council</a></p>
+
+  <h3>What the medical checks</h3>
+  <p>The assessment looks at key health areas, including:</p>
+    <ul>
+      <li>Neurological health</li>
+      <li>Eyesight</li>
+      <li>Heart health</li>
+      <li>Mental health</li>
+      <li>Diabetes</li>
+      <li>Drug or alcohol issues</li>
+      <li>Other relevant conditions</li>
+    </ul>
+
+  <h3>Ongoing requirements</h3>
+    <p>Drivers must continue to meet medical standards after they are licensed.</p>
+      <ul>
+        <li>Drivers age <strong>45+</strong> require a medical every 5 years</li>
+        <li>Drivers age <strong>65+</strong> require a medical every year</li>
+        <li>Extra checks may be required if recommended by a GP</li>
+        <li>Drivers must report any health changes</li>
+      </ul>
+
+  <h3>How to complete it</h3>
+  <p>Applicants must obtain a <strong>medical assessment form (medical pack)</strong> from the council</p>
+  <p>The form must be completed by: </p>
+  <ul>
+    <li>The applicant’s own GP, or</li>
+    <li>A doctor recommended by the licensing authority</li>
+  </ul>
+
+  <h3>Returning the form</h3>
+  <p>Once completed, both the medical pack and certificate of fitness must be returned to the licensing service in one of the following ways:</p>
+  <ul>
+    <li>Email (photos of all pages)</li>
+    <li>Post</li>
+    <li>In person</li>
+  </ul>
+
+  <h3>Key information for call centre staff</h3>
+  <ul>
+    <li>A medical assessment is <strong> mandatory for all new taxi driver licence applications</strong></li>
+    <li>The assessment must meet <strong>DVLA Group 2 standards</strong></li>
+    <li>Forms must be completed by an appropriate doctor</li>
+    <li>Completed documents must be returned before the application can proceed</li>
+    <li>Ongoing medical checks are required depending on the driver’s age</li>
+  </ul>
+  `,
+  {},
+  {},
+  {},
+  {
+    type: "Application",
+    keywords: [
+      "taxi",
+      "driver",
+      "drivers",
+      "licence",
+      "licensing",
+      "DVLA Group 2",
+      "medical",
+      "assessment",
+      "assessments",
+      "check",
+      "checks",
+      "GP",
+      "doctor",
+      "medical pack",
+      "certificate of fitness",
+      "medcial",
+      "assesment",
+      "lisence",
+      "drvier"
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "19/06/2026", name: "Liz Taster" }
+);
+
 
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
@@ -2424,7 +2514,8 @@ const dbsChecksTaxiDrivers = new ContentBusiness(
     reportTaxiAccident,
     taxiComplaints,
     medicalExemptionsTaxi,
-    dbsChecksTaxiDrivers
+    dbsChecksTaxiDrivers,
+    taxiDriverMedical
   ]
 );
 
