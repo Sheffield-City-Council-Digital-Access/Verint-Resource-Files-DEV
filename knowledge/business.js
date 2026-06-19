@@ -2508,9 +2508,9 @@ const medicalExemptionsTaxi = new ContentBusiness(
   "medicalExemptionsTaxi",
   "Medical Exemptions for Taxi Drivers",
   "Information on medical exemptions for taxi drivers under the Equality Act 2010, including how to apply.",
-  
+
   `<h3>Overview</h3>
-    <p>Taxi drivers are legally required to assist passengers with disabilities, including carrying assistance dogs and helping passengers using wheelchairs. This duty is set out under the Equality Act 2010.</p>
+    <p>Taxi drivers are legally required to assist passengers with disabilities, including carrying <strong>assistance dogs</strong> and helping passengers using <strong>wheelchairs</strong>. This duty is set out under the Equality Act 2010.</p>
     <p>A <strong>medical exemption</strong> may be granted if a driver has a medical condition that prevents them from carrying out these duties.</p>
     <p>Further information and a link to the online form can be found here: 
     <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/medical-exemptions" target="_blank">
@@ -2537,6 +2537,8 @@ const medicalExemptionsTaxi = new ContentBusiness(
       <li>Obtain <strong>medical evidence</strong> from your GP, or a doctor approved by the council – ensure this confirms that you cannot carry passengers with wheelchairs, and/or assistance dogs</li>
       <li>Submit the evidence to support your application</li>
     </ol>
+
+    <p>The application will then be reviewed by the Licensing team and a certificate issued if an exemption is granted.</p>
 
   <h3>Key Information for Call Handlers</h3>
     <ul>
