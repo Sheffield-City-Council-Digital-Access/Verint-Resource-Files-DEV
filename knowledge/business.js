@@ -2425,22 +2425,21 @@ const taxiDriverMedical = new ContentBusiness(
   <h3>Ongoing requirements</h3>
     <p>Drivers must continue to meet medical standards after they are licensed.</p>
       <ul>
-        <li>Drivers age <strong>45+</strong> require a medical every 5 years</li>
-        <li>Drivers age <strong>65+</strong> require a medical every year</li>
+        <li>Drivers <strong>age 45+</strong> require a medical <strong>every 5 years</strong></li>
+        <li>Drivers <strong>age 65+</strong> require a medical <strong>every year</strong></li>
         <li>Extra checks may be required if recommended by a GP</li>
         <li>Drivers must report any health changes</li>
       </ul>
 
-  <h3>How to complete it</h3>
-  <p>Applicants must obtain a <strong>medical assessment form (medical pack)</strong> from the council</p>
+  <h3>How to complete the medical assessment</h3>
+  <p>Applicants must obtain a <strong>medical assessment form (medical pack)</strong> from the council.</p>
   <p>The form must be completed by: </p>
   <ul>
     <li>The applicant’s own GP, or</li>
     <li>A doctor recommended by the licensing authority</li>
   </ul>
 
-  <h3>Returning the form</h3>
-  <p>Once completed, both the medical pack and certificate of fitness must be returned to the licensing service in one of the following ways:</p>
+  <p>Once completed, both the <strong>medical pack and certificate of fitness</strong> must be returned to the licensing service in one of the following ways:</p>
   <ul>
     <li>Email (photos of all pages)</li>
     <li>Post</li>
