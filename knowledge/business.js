@@ -2376,7 +2376,7 @@ const dbsChecksTaxiDrivers = new ContentBusiness(
     type: "Application",
     keywords: [
       "DBS",
-      "Disclosure"
+      "Disclosure",
       "Barring",
       "Service",
       "taxi",
