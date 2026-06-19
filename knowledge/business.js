@@ -75,7 +75,7 @@ const drivingStandardsTestGuide = new ContentBusiness(
   <ul>
     <li>Be at least 21 years old</li>
     <li>Have held a DVLA driving licence for at least 12 months</li>
-    <li>Have already completed a Level 2 Certificate in the Introduction to the Role of the Professional Taxi and Private Hire Driver and Safeguarding training</li>
+    <li>Have already completed a Level 2 Certificate in the Introduction to the Role of the Professional Taxi and Private Hire Driver <em>and</em> Safeguarding training</li>
   </ul>
 
   <h3>Test Details</h3>
@@ -104,8 +104,8 @@ const drivingStandardsTestGuide = new ContentBusiness(
 
 
   <h3>How to Apply</h3>
-  <p>Applications for the Driving Standards Test must be completed <strong>online</strong>.</p>
-  <p>Applicants are required to provide: Full DVLA driving licence number (held for at least 12 months)</p>
+  <p>Applications for the Driving Standards Test must be <strong>completed online</strong>.</p>
+  <p>Applicants are required to provide a full DVLA driving licence number (held for at least 12 months)</p>
   <p>A <strong>fee of £75</strong> is payable at the point of application.</p>
 
   <p>Fees are not refunded if the applicant fails the test or if the applicant arrives late and the test cannot be carried out.</p>
