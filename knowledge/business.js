@@ -2504,6 +2504,81 @@ const taxiComplaints = new ContentBusiness(
 );
 
 
+const medicalExemptionsTaxi = new ContentBusiness(
+  "medicalExemptionsTaxi",
+  "Medical Exemptions for Taxi Drivers",
+  "Information on medical exemptions for taxi drivers under the Equality Act 2010, including how to apply.",
+  
+  `<h3>Overview</h3>
+    <p>Taxi drivers are legally required to assist passengers with disabilities, including carrying assistance dogs and helping passengers using wheelchairs. This duty is set out under the Equality Act 2010.</p>
+    <p>A <strong>medical exemption</strong> may be granted if a driver has a medical condition that prevents them from carrying out these duties.</p>
+    <p>Further information and a link to the online form can be found here: 
+    <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/medical-exemptions" target="_blank">
+    Medical exemptions – Sheffield City Council</a></p>
+
+    <p>[insert send link]</p>
+
+  <h3>Types of Medical Exemption</h3>
+    <p>There are two types of exemption certificates available:</p>
+      <ul>
+        <li><strong>Section 166 Exemption Certificate (Wheelchairs)</strong> - applies where a driver’s <strong>physical health makes it impossible or very difficult</strong> to assist passengers in wheelchairs.</li>
+        <li><strong>Section 169 Exemption Certificate (Assistance Dogs)</strong> - applies where a driver has a <strong>medical condition caused by being near dogs</strong>.</li>
+      </ul>
+    <p>Evidence must confirm that the condition makes it <strong>impossible or very difficult</strong> to carry out these duties.</p>
+
+  <h3>What the Exemption Means</h3>
+    <p>Drivers who are granted an exemption will receive a <strong>certificate</strong>.</p>
+    <p>The certificate must be <strong>displayed in the taxi</strong>, or be <strong>produced on request</strong>.</p>
+    <p>Without a valid exemption certificate, drivers are still required by law to provide assistance.</p>
+
+  <h3>How to Apply</h3>
+    <ol>
+      <li>Complete the <strong>online form</strong> to request a medical exemption</li>
+      <li>Obtain <strong>medical evidence</strong> from your GP, or a doctor approved by the council – ensure this confirms that you cannot carry passengers with wheelchairs, and/or assistance dogs</li>
+      <li>Submit the evidence to support your application</li>
+    </ol>
+
+  <h3>Key Information for Call Handlers</h3>
+    <ul>
+      <li>Medical exemptions are <strong>not automatic</strong> and must be approved by the council.</li>
+      <li>A <strong>valid certificate must be displayed, or shown</strong> if requested.</li>
+      <li>Without an exemption, drivers <strong>must assist wheelchair users and carry assistance dogs</strong> and <strong>must not charge extra</strong> for doing so.</li>
+    </ul>`,
+
+  { buttonLabel: "Apply online", formName: "request_driver_med_exemp" },
+  { typeKey: "Application" },
+  { typeKey: "Apply" },
+  {
+    type: "Application",
+    keywords: [
+      "medical",
+      "exemption",
+      "taxi",
+      "drivers",
+      "wheelchair",
+      "assistance dog",
+      "guide dog",
+      "dog",
+      "section 166",
+      "section 169",
+      "taxi licensing",
+      "apply",
+      "disability",
+      "wheelchair",
+      "assistance",
+      "certificate",
+      "exemptions",
+      "medcial",
+      "excemption",
+      "exemtion"
+    ],
+    categories: ["Business", "Taxi Licensing"]
+  },
+  { date: "19/06/2026", name: "Liz Taster" }
+);
+
+
+
   const taxiLicensing = new MenuBusiness(
   "taxiLicensing",
   "Taxi Licensing",
@@ -2529,7 +2604,8 @@ const taxiComplaints = new ContentBusiness(
     orderReplacementTaxiItems,
     taxiAdvertisingConsent,
     reportTaxiAccident,
-    taxiComplaints
+    taxiComplaints,
+    medicalExemptionsTaxi
   ]
 );
 
