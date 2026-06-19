@@ -2123,41 +2123,53 @@ const taxiVehicleInspections = new ContentBusiness(
   </ul>
 
   <h3>Vehicles that are already licensed</h3>
-  <p>For existing licensed vehicles a <strong>compliance test is required before renewal</strong>, no more than <strong>4 weeks before the licence expiry date</strong>.</p>
+  <p>For existing licensed vehicles a <strong>compliance test is required before renewal</strong>, and no more than <strong>4 weeks before the licence expiry date</strong>.</p>
   <p>The council will usually contact the licence holder <strong>around 6 weeks in advance</strong> with a test date and time.</p>
-  <p>It is the vehicle proprietor’s responsibility to ensure the vehicle is licensed on time and to contact Taxi Licensing if they do not receive a test appointment</p>
+  <p>It is the vehicle proprietor’s responsibility to ensure the vehicle is licensed on time and to contact Taxi Licensing if they do not receive a test appointment.</p>
 
-  <h3>Test frequency</h3>
-  <p>The number of required tests depends on the <strong>age and type of vehicle</strong>. Vehicle is based on <strong>the V5C registration document.</strong></p>
-  <p><strong>Private hire vehicles</strong></p>
+  <h4>Test frequency</h4>
+  <p>The number of required tests depends on the <strong>age and type of vehicle</strong>. Vehicle age is based on <strong>the V5C registration document.</strong></p>
+  <p><em><strong>Private hire vehicles</strong></em></p>
   <ul>
     <li>Under 5 years old: <strong>every 12 months</strong></li>
     <li>Over 6 years old: <strong>every 6 months</strong></li>
   </ul>
-  <p><strong>Hackney carriage vehicles</strong></p>
+  <p><em><strong>Hackney carriage vehicles</strong></em></p>
   <ul>
     <li>Under 9 years old: <strong>every 12 months</strong></li>
     <li>Over 9 years old: <strong>every 6 months</strong></li>
   </ul>
 
-  <h3>Test appointments</h3>
-  <h3>Receiving a test date</h3>
+
+  <details class="accordion">
+
+    <summary class="accordion-header">
+      <h3>Test appointments</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+  
+  <h4>Receiving a test date</h4>
   <ul>
     <li>Test appointments are usually issued automatically in advance.</li>
     <li>If no appointment is received, drivers must contact Taxi Licensing to arrange one.</li>
   </ul>
 
-  <h3>Changing a test date</h3>
+  <h4>Changing a test date</h4>
   <ul>
     <li>Drivers must give <strong>at least 24 hours’ notice</strong> to change an appointment.</li>
     <li>If insufficient notice is given a <strong>missed test fee</strong> must be paid before rebooking</li>
   </ul>
 
-  <h3>Attending the test</h3>
+  <h4>Attending the test</h4>
   <ul>
     <li>The vehicle must be presented for testing at the scheduled time.</li>
     <li>If the driver cannot attend the appointment, they may be required to return their vehicle licence plate for safekeeping</li>
   </ul>
+
+      </div>
+
+  </details>
 
   <h3>Key points for call handling</h3>
   <ul>
