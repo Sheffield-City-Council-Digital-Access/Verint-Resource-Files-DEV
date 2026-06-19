@@ -2339,13 +2339,9 @@ const dbsChecksTaxiDrivers = new ContentBusiness(
   "DBS checks for Taxi drivers",
   "Information and application guidance for taxi drivers requiring DBS checks.",
   `
-    <h3>Interaction Type: Apply</h3>
-
-    <h3>Disclosure and Barring Service (DBS) checks for Taxi drivers</h3>
-
     <h3>Key Information</h3>
     <p>Taxi drivers must have an <strong>Enhanced DBS check with barred list checks</strong>.</p>
-    <p>This is used to assess if they are a <strong>fit and proper person</strong> to hold a licence.</p>
+    <p>This is part of the process for applying for a <strong>new taxi driver licence</strong>, and is used to assess if they are a <strong>fit and proper person</strong> to hold a licence.</p>
     <p>Further details, including how to apply can be found here:
       <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/taxi-0" target="_blank">
         Taxi driver disclosure and barring checks | Sheffield City Council
@@ -2359,15 +2355,12 @@ const dbsChecksTaxiDrivers = new ContentBusiness(
       <li>Pay the <strong>£49.50 fee</strong></li>
     </ul>
 
-    <h3>After Receiving the DBS Certificate</h3>
-    <p>Send a copy of the certificate to licensing and sign up to the <strong>DBS Update Service within 30 days</strong></p>
+    <p>After Receiving the DBS Certificate, drivers must <strong>send a copy</strong> of the certificate to the Licensing team and sign up to the <strong>DBS Update Service within 30 days</strong></p>
 
-    <h3>Ongoing Requirement</h3>
-    <ul>
-      <li>DBS checks are reviewed <strong>every 6 months</strong></li>
-      <li>Drivers must stay subscribed to the Update Service or provide a recent certificate</li>
-      <li>Failure to do this may result in <strong>licence suspension</strong></li>
-    </ul>
+    <h3>Ongoing Requirements</h3>
+      <p>DBS checks are reviewed <strong>every 6 months</strong></p>
+      <p>Drivers must stay subscribed to the Update Service or provide a recent certificate</p>
+      <p>Failure to do this may result in <strong>licence suspension</strong></p>
   `,
   {},
   {},
