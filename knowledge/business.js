@@ -62,7 +62,7 @@ const drivingStandardsTestGuide = new ContentBusiness(
   "Driving Standards Test Guide",
   "Details of the Driving Standards Test - part of a taxi driver licence application.",
   `<h3>Overview</h3>
-  <p>The Driving Standards Test is part of the process for applying for a new taxi driver licence. It is designed to assess whether an applicant 
+  <p>The <strong>Driving Standards Test</strong> is part of the process for applying for a <strong>new taxi driver licence</strong>. It is designed to assess whether an applicant 
   can drive safely, competently, and to a standard above that expected of an average driver.</p>
   <p>Applicants must pass this test as part of Stage 2 of the “fit and proper” assessment required before submitting a taxi driver licence application.</p>
   <p>Once the Driving Standards Test is passed, applicants can proceed with the remaining requirements in Stage 2 of the taxi licensing process before applying for their taxi driver licence.</p>
@@ -71,15 +71,16 @@ const drivingStandardsTestGuide = new ContentBusiness(
   Driving standards test | Sheffield City Council</a> </p>
 
   <h3>Eligibility Criteria</h3>
+  <p>Applicants must:</p> 
   <ul>
     <li>Be at least 21 years old</li>
     <li>Have held a DVLA driving licence for at least 12 months</li>
-    <li>Have already completed aA Level 2 Certificate in the Introduction to the Role of the Professional Taxi and Private Hire Driver andSafeguarding training</li>
+    <li>Have already completed a Level 2 Certificate in the Introduction to the Role of the Professional Taxi and Private Hire Driver and Safeguarding training</li>
   </ul>
 
   <h3>Test Details</h3>
   <p>The test is carried out by a driving standards examiner at the Council’s Transport Department.</p>
-  <p>During the assessment, applicants will be tested on practical driving ability and knowledge of road safety. The test will include any three of the following manoeuvres:</p>
+  <p>During the assessment <strong>applicants will be tested on practical driving ability and knowledge of road safety</strong>. The test will include any three of the following manoeuvres:</p>
   <ul>
     <li>Emergency stop</li>
     <li>Left-hand reverse</li>
@@ -92,7 +93,7 @@ const drivingStandardsTestGuide = new ContentBusiness(
 
   <h3>Assessment Outcome</h3>
   <p>To pass the test, applicants must demonstrate a high standard of driving and road safety awareness.</p>
-  <p>A passed Driving Standards Test is valid for one year from the date of passing.</p>
+  <p>A <strong>passed Driving Standards Test is valid for one year</strong> from the date of passing.</p>
 
   <p>If an applicant fails:</p>
   <ul>
@@ -103,11 +104,8 @@ const drivingStandardsTestGuide = new ContentBusiness(
 
 
   <h3>How to Apply</h3>
-  <p>Applications for the Driving Standards Test must be completed online.</p>
-  <p>Applicants are required to provide:</p>
-  <ul>
-    <li>Full DVLA driving licence number (held for at least 12 months)</li>
-  </ul>
+  <p>Applications for the Driving Standards Test must be completed <strong>online</strong>.</p>
+  <p>Applicants are required to provide: Full DVLA driving licence number (held for at least 12 months)</p>
   <p>A <strong>fee of £75</strong> is payable at the point of application.</p>
 
   <p>Fees are not refunded if the applicant fails the test or if the applicant arrives late and the test cannot be carried out.</p>
