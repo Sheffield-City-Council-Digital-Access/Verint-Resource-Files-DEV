@@ -444,9 +444,61 @@ function handleInitialisingEvent() {
           inputGroup.appendChild(currencySymbol);
           inputGroup.appendChild(inputElement);
         }
+
+        ['input', 'change', 'blur'].forEach(eventName => {
+          inputElement.addEventListener(eventName, () => {
+            validateCurrencyField(inputElement.id);
+          });
+        });
       }
     });
   })();
+
+/**
+ * Custom validation function for Currency widgets with custom input-group markup.
+ * @param {string} fieldId - The ID of the currency input widget (e.g., 'dform_widget_num_currency')
+ * @returns {boolean} - Returns true if valid, false if invalid.
+ */
+function validateCurrencyField(fieldId) {
+  const inputElement = document.getElementById(fieldId);
+  if (!inputElement) return true;
+
+  // Find the closest container or parent that wraps both the validation message and input
+  const widgetContainer = inputElement.closest('.dform_widget.currency') || inputElement.parentElement.parentElement;
+  if (!widgetContainer) return true;
+
+  const validationMessage = widgetContainer.querySelector('.dform_validationMessage');
+  
+  // Perform check based on standard constraints
+  const isRequired = inputElement.hasAttribute('required');
+  const isEmpty = inputElement.value.trim() === '';
+  const pattern = inputElement.getAttribute('pattern');
+  let isValidPattern = true;
+
+  if (pattern && !isEmpty) {
+    const regex = new RegExp(pattern);
+    isValidPattern = regex.test(inputElement.value);
+  }
+
+  if ((isRequired && isEmpty) || !isValidPattern) {
+    inputElement.classList.add('dform_fielderror');
+    if (validationMessage) {
+      validationMessage.style.setProperty('display', 'block', 'important');
+      if (isEmpty && isRequired) {
+        validationMessage.textContent = "This field is required";
+      } else if (!isValidPattern) {
+        validationMessage.textContent = "Please enter a valid currency amount";
+      }
+    }
+    return false;
+  } else {
+    inputElement.classList.remove('dform_fielderror');
+    if (validationMessage) {
+      validationMessage.style.setProperty('display', 'none', 'important');
+    }
+    return true;
+  }
+}
 
   // --- ADD CHARACTER COUNT ------------------------------------------------ \\
 
