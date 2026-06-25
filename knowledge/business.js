@@ -875,7 +875,7 @@ const applyTaxiDriverLicence = new ContentBusiness(
   <h3>Useful Links</h3>
     <p>
       Detailed information about all stages of applying for a taxi driver licence can be found at:
-      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence">
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence" target="_blank">
       Applying for a new taxi driver licence | Sheffield City Council</a>
     </p>
     
@@ -894,7 +894,7 @@ const applyTaxiDriverLicence = new ContentBusiness(
 
     <p>
       A link to the licensing policy and the online form that needs to be completed can be found here: 
-      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/apply">
+      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/apply" target="_blank">
       Apply for a new taxi driver licence | Sheffield City Council</a>
     </p>
     
@@ -2341,7 +2341,7 @@ const taxiAdvertisingConsent = new ContentBusiness(
           }interactionid=\${KDF.getParams().interactionid}&sel_service=Private%20Hire%20Advertising%20Consent\`
         "
       >
-            Send link to review further information (Hackney Carriage)
+            Send link to review further information (Private)
     </button>
 
     <button
@@ -2354,7 +2354,7 @@ const taxiAdvertisingConsent = new ContentBusiness(
           }interactionid=\${KDF.getParams().interactionid}&sel_service=Hackney%20Carriage%20Advertising%20Consent\`
         "
       >
-            Send link to review further information (Private Hire)
+            Send link to review further information (Hackney)
     </button>    
 
 
