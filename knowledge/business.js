@@ -177,11 +177,11 @@ const drivingStandardsTestGuide = new ContentBusiness(
 
   `,
 
-  { buttonLabel: "Apply Online", formName: "drivingStandardsTestForm" },
-  { typeKey: "Application" },
-  { typeKey: "Apply" },
+  { buttonLabel: "Apply Driving Standards", formName: "apply_driving_standards" },
+  { typeKey: "" },
+  { typeKey: "driving_standards_information_provided" },
   {
-    type: "Application",
+    type: "Apply",
     keywords: [
       "driving standards test",
       "driving",
@@ -269,11 +269,11 @@ const surrenderLicence = new ContentBusiness(
 
     `,
 
-    { buttonLabel: "", formName: ""},
+    { buttonLabel: "Surrender Licence Plate", formName: "surrender_license_plate"},
     { typeKey: "" },
-    { typeKey: ""},
+    { typeKey: "surrender_license_plate_information_provided"},
     {
-      type: "Request",
+      type: "Report",
       keywords: [
         "taxi",
         "licence",
@@ -359,9 +359,9 @@ const transferLicence = new ContentBusiness(
 
     `,
 
-    { buttonLabel: "", formName: ""},
+    { buttonLabel: "Transfer Licence", formName: "request_vehicle_transfer"},
     { typeKey: "" },
-    { typeKey: ""},
+    { typeKey: "transfer_vehicle_license_information_provided"},
     {
       type: "Request",
       keywords: [
@@ -558,11 +558,11 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
       
       `,
 
-  { buttonLabel: "Apply Now", formName: "apply_private_hire" },
-  { typeKey: "LicenceApplication" },
-  { typeKey: "VehicleLicensing" },
+  { buttonLabel: "Apply Private Hire Vehicle Licence", formName: "apply_private_hire" },
+  { typeKey: "" },
+  { typeKey: "private_hire_vehicle_licence_information_provided" },
   {
-    type: "Application",
+    type: "Apply",
     keywords: [
       "private hire",
       "PHV licence",
@@ -767,11 +767,11 @@ const applyHackneyCarriageVehicleLicence = new ContentBusiness(
     
   `,
 
-  { buttonLabel: "Apply Now", formName: "apply_hackney_carriage" },
-  { typeKey: "LicenceApplication" },
-  { typeKey: "VehicleLicensing" },
+  { buttonLabel: "Apply Hackney Carriage Vehicle Licence", formName: "apply_hackney_carriage" },
+  { typeKey: "" },
+  { typeKey: "hackney_carriage_information_provided" },
   {
-    type: "Application",
+    type: "Apply",
     keywords: [
       "hackney carriage",
       "hackney",
@@ -913,9 +913,9 @@ const applyTaxiDriverLicence = new ContentBusiness(
 
     `,
 
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Apply Taxi Driver Licence", formName: "apply_taxi_driver_lice" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "taxi_driver_new_license_information_provided" },
   {
     type: "Application",
     keywords: [
@@ -1115,11 +1115,11 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
     
     `,
 
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Apply Private Hire Operator Licence", formName: "apply_taxi_operator_lice" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "taxi_operator_new_license_information_provided" },
   {
-    type: "Application",
+    type: "Apply",
     keywords: [
       "private hire operator licence",
       "apply private hire operator",
@@ -1351,11 +1351,11 @@ const renewPrivateHireOperatorLicence = new ContentBusiness(
     
     `,
 
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Renew Private Hire Operator Licence", formName: "renew_taxi_operator_lice" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "taxi_operator_renew_licence_information_provided" },
   {
-    type: "Application",
+    type: "Apply",
     keywords: [
       "private hire operator licence",
       "renew private hire operator",
@@ -1457,11 +1457,11 @@ const changeOfNameOrAddress = new ContentBusiness(
     
     `,
 
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Update Name or Address", formName: "request_chg_name_address" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "taxi_change_name_address_information_provided" },
   {
-    type: "Information",
+    type: "Report",
     keywords: [
       "change of name",
       "change of address",
@@ -1550,11 +1550,11 @@ const convictionsAndDrivingOffences = new ContentBusiness(
 
     `,
 
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "Report Offence", formName: "report_vehicle_offence" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "vehicle_offence_information_provided" },
   {
-    type: "Information",
+    type: "Report",
     keywords: [
       "taxi driver",
       "driving",
@@ -1696,11 +1696,11 @@ const renewTaxiDriverLicence = new ContentBusiness(
 
   `,
 
-  { buttonLabel: "", formName: "" },
+  { buttonLabel: "", formName: "taxi_driver_renewal" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "taxi_driver_renewal_information_provided" },
   {
-    type: "Application",
+    type: "Apply",
     keywords: [
       "taxi driver licence",
       "taxi licence renewal",
@@ -1864,11 +1864,11 @@ const renewPrivateHireVehicleLicence = new ContentBusiness(
     
     `,
 
-  { buttonLabel: "Apply Now", formName: "renew_private_hire" },
+  { buttonLabel: "Renew Private Hire Licence", formName: "renew_private_hire" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "renew_private_hire_information_provided" },
   {
-    type: "Application",
+    type: "Apply",
     keywords: [
       "private hire vehicle licence",
       "private hire",
@@ -2027,11 +2027,11 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
     
     `,
 
-  { buttonLabel: "Apply Now", formName: "renew_hackney_carriage" },
+  { buttonLabel: "Renew Hackney Carriage Licence", formName: "renew_hackney_carriage" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "renew_hackney_carriage_information_provided" },
   {
-    type: "Application",
+    type: "Apply",
     keywords: [
       "hackney carriage vehicle licence",
       "hackney",
@@ -2171,11 +2171,11 @@ const applyKnowledgeTest = new ContentBusiness(
     
     `,
 
-  { buttonLabel: "Apply for Knowledge Test", formName: "knowledgeTestApplication" },
-  { typeKey: "Application" },
-  { typeKey: "Taxi Licensing" },
+  { buttonLabel: "Apply for Knowledge Test", formName: "apply_knowledge_test" },
+  { typeKey: "" },
+  { typeKey: "knowledge_test_information_provided" },
   {
-    type: "Application",
+    type: "Apply",
     keywords: [
       "Knowledge Test",
       "Knowledge",
@@ -2276,7 +2276,7 @@ const orderReplacementTaxiItems = new ContentBusiness(
 
   { buttonLabel: "Order Replacement Items", formName: "request_replacement_taxi" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "order_taxi_replacements_information_provided" },
   {
     type: "Request",
     keywords: [
@@ -2427,11 +2427,11 @@ const taxiAdvertisingConsent = new ContentBusiness(
 
   `,
 
-  {},
-  {},
-  {},
+  { buttonLabel: "Request Advertising Consent", formName: "request_vehicle_advert" },
+  { typeKey: "" },
+  { typeKey: "vehicle_advert_information_provided" },
   {
-    type: "Application",
+    type: "Request",
     keywords: [
       "taxi advertising consent",
       "advert",
@@ -2547,9 +2547,9 @@ const reportTaxiAccident = new ContentBusiness(
     
     `,
 
-  {},
-  {},
-  {},
+  { buttonLabel: "Report Accident", formName: "report_vehicle_accident" },
+  { typeKey: "" },
+  { typeKey: "vehicle_accident_information_provided" },
   {
     type: "Report",
     keywords: [
@@ -2663,8 +2663,8 @@ const taxiComplaints = new ContentBusiness(
     `,
 
   { buttonLabel: "", formName: "" },
-  { typeKey: "Report" },
-  { typeKey: "Complaint" },
+  { typeKey: "" },
+  { typeKey: "" },
   {
     type: "Report",
     keywords: [
@@ -2767,11 +2767,11 @@ const medicalExemptionsTaxi = new ContentBusiness(
     
     `,
 
-  { buttonLabel: "Apply online", formName: "request_driver_med_exemp" },
-  { typeKey: "Application" },
-  { typeKey: "Apply" },
+  { buttonLabel: "Apply Medical Exemption", formName: "request_driver_med_exemp" },
+  { typeKey: "" },
+  { typeKey: "driver_exemption_information_provided" },
   {
-    type: "Application",
+    type: "Apply",
     keywords: [
       "medical",
       "exemption",
@@ -2844,11 +2844,11 @@ const dbsChecksTaxiDrivers = new ContentBusiness(
 
   `,
 
-  {},
-  {},
-  {},
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "taxi_driver_new_license_information_provided" },
   {
-    type: "Application",
+    type: "Information",
     keywords: [
       "DBS",
       "Disclosure",
@@ -2947,11 +2947,11 @@ const taxiDriverMedical = new ContentBusiness(
 
   `,
 
-  {},
-  {},
-  {},
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "taxi_driver_new_license_information_provided" },
   {
-    type: "Application",
+    type: "Information",
     keywords: [
       "taxi",
       "driver",
@@ -3148,9 +3148,9 @@ const taxiVehicleInspections = new ContentBusiness(
   
   `,
 
-  {},
-  {},
-  {},
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "vehicle_compliance_checks_information_provided" },
   {
     type: "Information",
     keywords: [
