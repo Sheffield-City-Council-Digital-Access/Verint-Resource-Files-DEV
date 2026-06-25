@@ -81,7 +81,18 @@ const drivingStandardsTestGuide = new ContentBusiness(
       Driving standards test | Sheffield City Council</a> 
     </p>
 
-  <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Driving%20Standards%20Test\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <h3>Eligibility Criteria</h3>
     <p>Applicants must:</p> 
@@ -214,9 +225,18 @@ const surrenderLicence = new ContentBusiness(
     Surrender a private hire vehicle licence | Sheffield City Council</a></p>
   </p>
 
-  <p>
-    [insert send link]
-  </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Surrender%20Private%20Hire\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <p>
     For <strong>hackney carriage</strong> vehicles, customers need to click on <strong>Surrender your vehicle licence</strong> at this link:
@@ -224,9 +244,18 @@ const surrenderLicence = new ContentBusiness(
     Surrender a hackney carriage vehicle licence | Sheffield City Council</a></p>
   </p>
 
-  <p>
-    [insert send link]
-  </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Surrender%20Hackney%20Carriage\`
+        "
+      >
+            Send link to review further information
+    </button>
     
   <p>
     Where possible, the customer needs to return their plate to us.
@@ -292,7 +321,18 @@ const transferLicence = new ContentBusiness(
         Transfer a vehicle licence | Sheffield City Council</a>
       </p>
 
-      <p> [Insert send link] </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Transfer%20Vehicle%20Licence\`
+        "
+      >
+            Send link to review further information
+    </button>
 
       <p>
         The customer will need to tell us the following things:
@@ -358,7 +398,18 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
       Private hire vehicle licence | Sheffield City Council</a>
     </p>
     
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Private%20Hire%20Vehicle%20Licence\`
+        "
+      >
+            Send link to review further information
+    </button>
     
     <p>
       A link to the online form to be completed can be found here:
@@ -366,7 +417,18 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
       Apply for a private hire vehicle licence | Sheffield City Council</a>
     </p>
     
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20New%20Private%20Hire\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <h3>Key Points for Agents</h3>
     <p>
@@ -404,7 +466,18 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
           <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-private-hire" target="_blank">
           Choosing a private hire vehicle | Sheffield City Council</a>
         </p>
-        <p>[insert send link]</p>
+            <button
+                type="button"
+                class="dform_widget email-btn dform_widget_type_button"
+                aria-label="For further information send link"
+                onclick="
+                  window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                    }interactionid=\${KDF.getParams().interactionid}&sel_service=Choosing%20Private%20Hire\`
+                  "
+                >
+                      Send link to review further information
+            </button>
     </div>
     </details>
 
@@ -535,7 +608,18 @@ const applyHackneyCarriageVehicleLicence = new ContentBusiness(
       Hackney carriage vehicle licence | Sheffield City Council</a>
     </p>
     
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Hackney%20Carriage%20Vehicle%20Licence\`
+        "
+      >
+            Send link to review further information
+    </button>
     
     <p>
       A link to the online form to be completed can be found here:
@@ -543,7 +627,18 @@ const applyHackneyCarriageVehicleLicence = new ContentBusiness(
       Apply for a new hackney carriage vehicle licence | Sheffield City Council</a>
     </p>
     
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20New%20Hackney%20Carriage\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <h3>Key Points for Agents</h3>
     <p>
@@ -582,7 +677,18 @@ const applyHackneyCarriageVehicleLicence = new ContentBusiness(
           Choosing a Hackney carriage | Sheffield City Council</a>
         </p>
         
-        <p>[insert send link]</p>
+          <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+              window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Choosing%20Hackney%20Carriage\`
+              "
+            >
+              Send link to review further information
+        </button>
     </div>
     </details>
 
@@ -773,7 +879,18 @@ const applyTaxiDriverLicence = new ContentBusiness(
       Applying for a new taxi driver licence | Sheffield City Council</a>
     </p>
     
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Applying%20New%20Taxi%20Driver\`
+        "
+      >
+            Send link to review further information
+    </button>
 
     <p>
       A link to the licensing policy and the online form that needs to be completed can be found here: 
@@ -781,7 +898,18 @@ const applyTaxiDriverLicence = new ContentBusiness(
       Apply for a new taxi driver licence | Sheffield City Council</a>
     </p>
     
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20New%20Taxi%20Driver\`
+        "
+      >
+            Send link to review further information
+    </button>
 
     `,
 
@@ -842,7 +970,18 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
     Applying for a new private hire operator licence | Sheffield City Council</a> 
   </p>
   
-  <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Applying%20New%20Private%20Hire%20Operator\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <h3>Eligibility Criteria</h3>
     <p>When applying, customers must demonstrate that they are suitable to operate a private hire business. This includes:</p>
@@ -869,7 +1008,18 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
       Apply for a new private hire operator licence | Sheffield City Council</a>
     </p>
     
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20New%20Private%20Hire%20Operator\`
+        "
+      >
+            Send link to review further information
+    </button>
 
     <p>As part of the application, the customer will need to provide business and applicant details, including: </p>
       <ul>
@@ -950,7 +1100,18 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
       Private Hire Operator and Vehicle Licence Policy</a>
     </p>
     
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Private%20Hire%20Operator%20Policy\`
+        "
+      >
+            Send link to review further information
+    </button>
     
     `,
 
@@ -1012,7 +1173,18 @@ const renewPrivateHireOperatorLicence = new ContentBusiness(
       Renewing a private hire operator licence | Sheffield City Council</a> 
     </p>
     
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renewing%20Private%20Hire%20Operator\`
+        "
+      >
+            Send link to review further information
+    </button>
 
     <p>
       Customers can renew a Private Hire Operator Licence through Sheffield City Council using an online form available here: 
@@ -1020,7 +1192,18 @@ const renewPrivateHireOperatorLicence = new ContentBusiness(
       Renew a private hire operator licence | Sheffield City Council</a> 
     </p>
     
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Private%20Hire%20Operator\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <h3>Eligibility Criteria</h3>
     <p>
@@ -1052,7 +1235,18 @@ const renewPrivateHireOperatorLicence = new ContentBusiness(
       Renew a private hire operator licence | Sheffield City Council</a>
     </p>
     
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Private%20Hire%20Operator\`
+        "
+      >
+            Send link to review further information
+    </button>
 
     <p>As part of the application, the customer will need to provide business and applicant details, including: </p>
       <ul>
@@ -1100,7 +1294,18 @@ const renewPrivateHireOperatorLicence = new ContentBusiness(
         <li>5 year licences range from £2,510 (1-10 vehicles) to £12,548 (over 250 vehicles)</li>
       </ul>
 
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Private%20Hire%20Operator\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <h3>Processing the Application</h3>
     <p> 
@@ -1131,7 +1336,18 @@ const renewPrivateHireOperatorLicence = new ContentBusiness(
       Private Hire Operator and Vehicle Licence Policy</a>
     </p>
     
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Private%20Hire%20Operator%20Policy\`
+        "
+      >
+            Send link to review further information
+    </button>
     
     `,
 
@@ -1202,7 +1418,18 @@ const changeOfNameOrAddress = new ContentBusiness(
       Change of name or address | Sheffield City Council</a>
     </p>
 
-    <p> [Insert send link] </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Change%20Taxi%20Name%20or%20Address\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <h3>Impact on DBS certificates</h3>
     <p>
@@ -1284,7 +1511,18 @@ const convictionsAndDrivingOffences = new ContentBusiness(
       Convictions and driving offences | Sheffield City Council</a>
     </p>
 
-    <p>[Insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Convictions%20and%20Driving%20Offences\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <h3>What must be reported</h3>
     <p>This includes serious matters such as:</p>
@@ -1369,7 +1607,18 @@ const renewTaxiDriverLicence = new ContentBusiness(
     Renewing a taxi driver licence | Sheffield City Council</a>
   </p>
 
-  <p>[Insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renewing%20Taxi%20Driver\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <p>
     A link to the licensing policy and the online form that needs to be completed can be found here:
@@ -1377,7 +1626,18 @@ const renewTaxiDriverLicence = new ContentBusiness(
     Renew a taxi driver licence | Sheffield City Council</a>
   </p>
 
-  <p>[Insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Taxi%20Driver\`
+        "
+      >
+            Send link to review further information
+    </button>
   
 <h3>How to Apply</h3>
   <p>
@@ -1496,7 +1756,18 @@ const renewPrivateHireVehicleLicence = new ContentBusiness(
       Renewing a private hire vehicle licence | Sheffield City Council</a>
     </p>
 
-    <p> [Insert send link] </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renewing%20Private%20Hire\`
+        "
+      >
+            Send link to review further information
+    </button>
 
     <p>
       A link to the online renewal form can be found here: 
@@ -1504,7 +1775,18 @@ const renewPrivateHireVehicleLicence = new ContentBusiness(
       Renew a private hire vehicle licence | Sheffield City Council</a>
     </p>
 
-    <p> [Insert send link] </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Private%20Hire\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <h3>Before Applying</h3>
     <p>
@@ -1641,7 +1923,18 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
       Renewing a hackney carriage vehicle licence | Sheffield City Council</a>
     </p>
 
-    <p> [Insert send link] </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renewing%20Hackney%20Carriage\`
+        "
+      >
+            Send link to review further information
+    </button>
 
     <p>
       The Hackney Carriage Vehicle Licence Policy, and a link to the online renewal form can be found here: 
@@ -1649,7 +1942,18 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
       Renew your hackney carriage vehicle licence | Sheffield City Council</a>
     </p>
 
-    <p> [Insert send link] </p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Hackney%20Carriage\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <h3>Before Applying</h3>
     <p>
@@ -1780,7 +2084,18 @@ const applyKnowledgeTest = new ContentBusiness(
       Knowledge Test | Sheffield City Council</a>
     </p>
 
-    <p>[Insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Taxi%20Knowledge%20Test\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <h3>What the Knowledge Test Covers</h3>
     <p>Applicants are expected to demonstrate knowledge of:</p>
@@ -1908,7 +2223,18 @@ const orderReplacementTaxiItems = new ContentBusiness(
       Order replacement taxi items | Sheffield City Council</a>
     </p>
 
-    <p>[insert send link]</p>
+        <button
+          type="button"
+          class="dform_widget email-btn dform_widget_type_button"
+          aria-label="For further information send link"
+          onclick="
+            window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+              KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+              }interactionid=\${KDF.getParams().interactionid}&sel_service=Order%20Replacement%20Taxi%20Items\`
+           "
+         >
+             Send link to review further information
+        </button>
 
   <h3>Items Available</h3>
 
@@ -2005,7 +2331,32 @@ const taxiAdvertisingConsent = new ContentBusiness(
             <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney-0" target="_blank">
             Hackney carriage advertising consent | Sheffield City Council</a></li>
       </ul>
-    <p>[insert send link x 2]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Private%20Hire%20Advertising%20Consent\`
+        "
+      >
+            Send link to review further information (Hackney Carriage)
+    </button>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Hackney%20Carriage%20Advertising%20Consent\`
+        "
+      >
+            Send link to review further information (Private Hire)
+    </button>    
+
 
   <h3>Restrictions on Advertising Content</h3>
     <p>All advertisements are checked for suitability. The council <strong>will not approve adverts</strong> that:</p>
@@ -2137,7 +2488,18 @@ const reportTaxiAccident = new ContentBusiness(
       Road traffic accident or damage | Sheffield City Council</a>
     </p>
     
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Taxi%20Traffic%20Accident\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <h3>How and What to Report</h3>
     <p>
@@ -2240,7 +2602,18 @@ const taxiComplaints = new ContentBusiness(
       Complain about a taxi or driver | Sheffield City Council</a>
     </p>
 
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Taxi%20Complaint\`
+        "
+      >
+            Send link to review further information
+    </button>
 
     <p>
       <strong>In emergencies, residents should call 999.</strong>
@@ -2336,10 +2709,21 @@ const medicalExemptionsTaxi = new ContentBusiness(
     <p>
       Further information and a link to the online form can be found here: 
       <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/medical-exemptions" target="_blank">
-      Medical exemptions – Sheffield City Council</a>
+      Medical exemptions | Sheffield City Council</a>
     </p>
 
-    <p>[insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Taxi%20Medical%20Exemptions\`
+        "
+      >
+            Send link to review further information
+    </button>
 
   <h3>Types of Medical Exemption</h3>
     <p>There are two types of exemption certificates available:</p>
@@ -2615,7 +2999,18 @@ const taxiVehicleInspections = new ContentBusiness(
         Vehicle inspections and testing | Sheffield City Council</a>
     </p>
   
-    <p>[Insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Vehicle%20Inspections%20and%20Testing\`
+        "
+      >
+            Send link to review further information
+    </button>
 
     <p>
       A copy of the Vehicle Testing Customer Charter can be found here: 
@@ -2623,7 +3018,18 @@ const taxiVehicleInspections = new ContentBusiness(
       Vehicle testing customer charter | Sheffield City Council</a>
     </p>
 
-    <p>[Insert send link]</p>
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Vehicle%20Testing%20Customer%20Charter\`
+        "
+      >
+            Send link to review further information
+    </button>
 
 
   <details class="accordion">
