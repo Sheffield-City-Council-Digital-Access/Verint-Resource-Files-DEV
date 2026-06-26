@@ -2524,6 +2524,7 @@ const orderReplacementTaxiItems = new ContentBusiness(
         <li>Paper licence (paper and digital copy issued) – £15</li>
         <li>Lanyard – £2</li>
       </ul>
+      <br>
 
   <h4>Taxi Vehicle Items</h4>
     <p>The following replacement vehicle items are available:</p>
