@@ -94,58 +94,8 @@ const drivingStandardsTestGuide = new ContentBusiness(
             Send link to review further information
     </button>
 
-  <h3>Eligibility Criteria</h3>
-    <p>Applicants must:</p> 
-      <ul>
-        <li>Be at least 21 years old</li>
-        <li>Have held a DVLA driving licence for at least 12 months</li>
-        <li>Have already completed a Level 2 Certificate in the Introduction to the Role of the Professional Taxi and Private Hire Driver <em>and</em> 
-            Safeguarding training</li>
-      </ul>
 
-  <h3>Test Details</h3>
-    <p>
-      The test is carried out by a driving standards examiner at the Council’s Transport Department.
-    </p>
-
-    <p>
-      During the assessment <strong>applicants will be tested on practical driving ability and knowledge of road safety</strong>. 
-      The test will include any three of the following manoeuvres:
-    </p>
-      <ul>
-        <li>Emergency stop</li>
-        <li>Left-hand reverse</li>
-        <li>Right-hand reverse</li>
-        <li>Turn in the road</li>
-        <li>Reverse parking</li>
-      </ul>
-   
-    <p>
-      Applicants are also assessed on their knowledge of the Highway Code.
-    </p>
-  
-    <p>
-      To prepare, the Council recommends studying the Driving and Vehicle Standards Agency (DVSA) Official Guide to Driving.
-    </p>
-
-  <h3>Assessment Outcome</h3>
-    <p>
-      To pass the test, applicants must demonstrate a high standard of driving and road safety awareness.
-    </p>
-
-    <p>
-      A <strong>passed Driving Standards Test is valid for one year</strong> from the date of passing.
-    </p>
-
-    <p>If an applicant fails:</p>
-      <ul>
-        <li>They will need to take additional lessons with a qualified instructor</li>
-        <li>They must complete this before booking another test</li>
-        <li>The test fee is not refundable and must be paid again for a re-test</li>
-      </ul>
-
-
-  <h3>How to Apply</h3>
+    <h3>How to Apply</h3>
     <p>
       Applications for the Driving Standards Test must be <strong>completed online</strong>.
     </p>
@@ -162,19 +112,101 @@ const drivingStandardsTestGuide = new ContentBusiness(
       Fees are not refunded if the applicant fails the test or if the applicant arrives late and the test cannot be carried out.
     </p>
 
-  <h3>Vehicle Requirements</h3>
-    <p>Applicants may use one of the following vehicles for the test:</p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eligibility Criteria</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+         <p>Applicants must:</p> 
       <ul>
-        <li>Driving instructor’s vehicle</li>
-        <li>Rental vehicle</li>
-        <li>Personal vehicle</li>
-        <li>Licensed vehicle registered in their name (with licence markings removed before attending)</li>
+        <li>Be at least 21 years old</li>
+        <li>Have held a DVLA driving licence for at least 12 months</li>
+        <li>Have already completed a Level 2 Certificate in the Introduction to the Role of the Professional Taxi and Private Hire Driver <em>and</em> 
+            Safeguarding training</li>
       </ul>
+    </div>
+  </details>
+ 
 
-    <p>
-      Applicants must ensure the vehicle used is appropriately insured.
-    </p>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Test Details</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The test is carried out by a driving standards examiner at the Council’s Transport Department.
+      </p>
 
+      <p>
+        During the assessment <strong>applicants will be tested on practical driving ability and knowledge of road safety</strong>. 
+        The test will include any three of the following manoeuvres:
+      </p>
+        <ul>
+          <li>Emergency stop</li>
+          <li>Left-hand reverse</li>
+          <li>Right-hand reverse</li>
+          <li>Turn in the road</li>
+          <li>Reverse parking</li>
+        </ul>
+   
+      <p>
+        Applicants are also assessed on their knowledge of the Highway Code.
+      </p>
+  
+      <p>
+        To prepare, the Council recommends studying the Driving and Vehicle Standards Agency (DVSA) Official Guide to Driving.
+      </p>
+    </div>
+  </details>
+ 
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Assessment Outcome</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        To pass the test, applicants must demonstrate a high standard of driving and road safety awareness.
+      </p>
+
+      <p>
+        A <strong>passed Driving Standards Test is valid for one year</strong> from the date of passing.
+      </p>
+
+      <p>If an applicant fails:</p>
+        <ul>
+          <li>They will need to take additional lessons with a qualified instructor</li>
+          <li>They must complete this before booking another test</li>
+          <li>The test fee is not refundable and must be paid again for a re-test</li>
+        </ul>
+    </div>
+  </details>
+
+  
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Vehicle Requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Applicants may use one of the following vehicles for the test:</p>
+        <ul>
+          <li>Driving instructor’s vehicle</li>
+          <li>Rental vehicle</li>
+          <li>Personal vehicle</li>
+          <li>Licensed vehicle registered in their name (with licence markings removed before attending)</li>
+        </ul>
+
+      <p>
+        Applicants must ensure the vehicle used is appropriately insured.
+      </p>
+    </div>
+  </details>
+ 
   `,
 
   { buttonLabel: "Apply Driving Standards", formName: "apply_driving_standards" },
@@ -209,6 +241,7 @@ const drivingStandardsTestGuide = new ContentBusiness(
   },
   { date: "03/06/2026", name: "Liz Taster" }
 );
+
 
 const surrenderLicence = new ContentBusiness(
   "surrenderLicence",
@@ -812,34 +845,44 @@ const applyTaxiDriverLicence = new ContentBusiness(
       <strong>Applicants cannot drive a taxi while their application is being processed.</strong>
     </p>
 
-  <h3>Eligibility and Pre‑Application Requirements</h3>
-    <p>
-      Applicants must be <strong>over 21 years old</strong> and have held a DVLA driving licence for <strong>more than 12 months</strong>.
-    </p>
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eligibility and Pre‑Application Requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applicants must be <strong>over 21 years old</strong> and have held a DVLA driving licence for <strong>more than 12 months</strong>.
+      </p>
     
-    <p>Before applying, customers must complete stages 1 and 2 of the process, which include the following checks, tests, and qualifications:</p>
-      <ul>
-        <li>Taxi driver qualification:</li>
-          <ul>
-            <li>Certificate in Introduction to the Role of the Professional Taxi and Private Hire Driver (includes safeguarding and disability awareness)</li>
-          </ul>
-        <li>Proof of right to work in the UK</li>
-        <li>Knowledge Test (local area knowledge, licensing conditions, highway code, safeguarding)</li>
-        <li>Driving standards test</li>
-        <li>Disclosure and Barring Service (DBS) check</li>
-        <li>Criminal and motoring convictions check</li>
-        <li>DVLA check</li>
-        <li>Medical assessment confirming fitness to drive</li>
-        <li>Provide a passport-sized photograph.</li>
-      </ul>
+      <p>Before applying, customers must complete stages 1 and 2 of the process, which include the following checks, tests, and qualifications:</p>
+        <ul>
+          <li>Taxi driver qualification:</li>
+            <ul>
+              <li>Certificate in Introduction to the Role of the Professional Taxi and Private Hire Driver (includes safeguarding and disability awareness)</li>
+            </ul>
+          <li>Proof of right to work in the UK</li>
+          <li>Knowledge Test (local area knowledge, licensing conditions, highway code, safeguarding)</li>
+          <li>Driving standards test</li>
+          <li>Disclosure and Barring Service (DBS) check</li>
+          <li>Criminal and motoring convictions check</li>
+          <li>DVLA check</li>
+          <li>Medical assessment confirming fitness to drive</li>
+          <li>Provide a passport-sized photograph.</li>
+        </ul>
     
-    <p>
-      Applicants must complete all required stages before they are eligible to submit an application.
-    </p>
+      <p>
+        Applicants must complete all required stages before they are eligible to submit an application.
+      </p>
+
+    </div>
+  </details>
+ 
 
   <h3>Application Process</h3>
     <p>
-      Once all pre‑application requirements are completed, customers can submit an online application form for a new taxi driver licence.
+      Once all pre‑application requirements are completed, customers can submit an <strong>online application form</strong> for a new taxi driver licence.
     </p>
     
     <p>As part of the application, customers ust provide all required documents, including:</p>
@@ -852,8 +895,9 @@ const applyTaxiDriverLicence = new ContentBusiness(
       After submitting the application, an email link will be sent to pay the licence fee.
     </p>
 
+
   <h3>Costs</h3>
-    <p>The fee depends on the licence duration chosen. Licences can be granted for 1, 2 or 3 years:</p>
+    <p>The <strong>fee depends on the licence duration</strong> chosen. Licences can be granted for 1, 2 or 3 years:</p>
       <ul>
         <li>1 year: £223</li>
         <li>2 years: £245</li>
@@ -983,15 +1027,6 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
             Send link to review further information
     </button>
 
-  <h3>Eligibility Criteria</h3>
-    <p>When applying, customers must demonstrate that they are suitable to operate a private hire business. This includes:</p>
-      <ul>
-        <li>Being considered a <strong>fit and proper person</strong> (safe and suitable, with no links to serious criminal activity)</li>
-        <li>Declaring any <strong>criminal convictions</strong> for all applicants, directors or partners</li>
-        <li>Having the <strong>legal right to work in the UK</strong></li>
-        <li>Having appropriate <strong>tax registration</strong> (or being aware of requirements if they do not yet have a tax check code)</li>
-        <li>Using a <strong>business name</strong> that is not the same as, or too similar to, one already used in Sheffield</li>
-      </ul>
 
   <h3>How to Apply</h3>
     <p>Customers need to:</p>
@@ -1030,54 +1065,96 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
       </ul>
  
 
-  <h3>Supporting Documents Required</h3>
-    <p>Applicants must provide the following (where applicable):</p>
-      <ul>
-        <li><strong>Basic DBS certificate</strong> for all directors (or DBS certificate number)</li>
-        <li><strong>Right to work documentation</strong> for all business owners (this may need to be seen in person)</li>
-        <li><strong>Tax check information</strong> or a 9-digit tax check code</li>
-        <li><strong>Public liability insurance certificate</strong></li>
-        <li><strong>Employers’ liability insurance</strong></li>
-        <li><strong>Planning permission</strong> for operator premises, or confirmation it is not needed</li>
-        <li>Proof of <strong>registration with the Information Commissioner’s Office (ICO)</strong></li>
-      </ul>
-    
-    <p>
-      Additional documents may be requested during the process.
-    </p>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eligibility Criteria</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>When applying, customers must demonstrate that they are suitable to operate a private hire business. This includes:</p>
+        <ul>
+          <li>Being considered a <strong>fit and proper person</strong> (safe and suitable, with no links to serious criminal activity)</li>
+          <li>Declaring any <strong>criminal convictions</strong> for all applicants, directors or partners</li>
+          <li>Having the <strong>legal right to work in the UK</strong></li>
+          <li>Having appropriate <strong>tax registration</strong> (or being aware of requirements if they do not yet have a tax check code)</li>
+          <li>Using a <strong>business name</strong> that is not the same as, or too similar to, one already used in Sheffield</li>
+        </ul>
+    </div>
+  </details>
+ 
 
-  <h3>Fees</h3>
-    <p>The cost of the licence depends on:</p>
-      <ul>
-        <li>The <strong>duration of the licence</strong> (1 to 5 years)</li>
-        <li>The <strong>number of vehicles operated</strong></li>
-      </ul>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Supporting Documents Required</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Applicants must provide the following (where applicable):</p>
+        <ul>
+          <li><strong>Basic DBS certificate</strong> for all directors (or DBS certificate number)</li>
+          <li><strong>Right to work documentation</strong> for all business owners (this may need to be seen in person)</li>
+          <li><strong>Tax check information</strong> or a 9-digit tax check code</li>
+          <li><strong>Public liability insurance certificate</strong></li>
+          <li><strong>Employers’ liability insurance</strong></li>
+          <li><strong>Planning permission</strong> for operator premises, or confirmation it is not needed</li>
+          <li>Proof of <strong>registration with the Information Commissioner’s Office (ICO)</strong></li>
+        </ul>
     
-    <p>
-      The longer the duration of the licence, and the more vehicles the license is for, the higher the fee.
-    </p>
-    
-    <p> 
-      A full breakdown of fees can be found here: 
-      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator/apply" target="_blank">
-      Apply for a new private hire operator licence | Sheffield City Council</a>
-    </p>
-    
-    <p>Examples:</p>
-      <ul>
-        <li>1 year licenses range from £531 (1-10 vehicles) to £6,643 (over 250 vehicles)</li>
-        <li>5 year licences range from £2,510 (1-10 vehicles) to £12,548 (over 250 vehicles)</li>
-      </ul>
+      <p>
+        Additional documents may be requested during the process.
+      </p>
+    </div>
+  </details>
+ 
 
-  <h3>Processing the Application</h3>
-    <p> 
-      The council will <strong>not process the application until all required documents are received</strong>. 
-      Further information or documents may be requested during the assessment.
-    </p>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The cost of the licence depends on:</p>
+        <ul>
+          <li>The <strong>duration of the licence</strong> (1 to 5 years)</li>
+          <li>The <strong>number of vehicles operated</strong></li>
+        </ul>
     
-    <p>
-      The council will assess whether the applicant meets the <strong>fit and proper person standard</strong> before making a decision.
-    </p>
+      <p>
+        The longer the duration of the licence, and the more vehicles the license is for, the higher the fee.
+      </p>
+    
+      <p> 
+        A full breakdown of fees can be found here: 
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator/apply" target="_blank">
+        Apply for a new private hire operator licence | Sheffield City Council</a>
+      </p>
+    
+      <p>Examples:</p>
+        <ul>
+          <li>1 year licenses range from £531 (1-10 vehicles) to £6,643 (over 250 vehicles)</li>
+          <li>5 year licences range from £2,510 (1-10 vehicles) to £12,548 (over 250 vehicles)</li>
+        </ul>
+    </div>
+  </details>
+ 
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Processing the Application<</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p> 
+        The council will <strong>not process the application until all required documents are received</strong>. 
+        Further information or documents may be requested during the assessment.
+      </p>
+    
+      <p>
+        The council will assess whether the applicant meets the <strong>fit and proper person standard</strong> before making a decision.
+      </p>
+    </div>
+  </details>
+ 
 
   <h3>Key Information for Call Handling</h3>
     <ul>
@@ -1088,6 +1165,7 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
       <li>Where applying as a company or partnership, <strong>all relevant individuals must meet the requirements</strong> (e.g. DBS and tax checks) </li>
       <li>Advise that fees vary based on <strong>fleet size and licence length</strong>.</li>
     </ul>
+
 
   <h3>Related Guidance</h3>
     <p>
@@ -1205,23 +1283,8 @@ const renewPrivateHireOperatorLicence = new ContentBusiness(
             Send link to review further information
     </button>
 
-  <h3>Eligibility Criteria</h3>
-    <p>
-      Only existing operator's can use the renewal process. If a customer does not have an existing private hire operator licence 
-      they should be directed to the information to apply for a <strong>new</strong> private hire operator licence.
-    <p>  
-    
-    <p>When applying, customers must demonstrate that they continue to be suitable to operate a private hire business. This includes:</p>
-      <ul>
-        <li>Being considered a <strong>fit and proper person</strong> (safe and suitable, with no links to serious criminal activity)</li>
-        <li>Declaring any <strong>criminal convictions</strong> for all applicants, directors or partners</li>
-        <li>Having the <strong>legal right to work in the UK</strong></li>
-        <li>Having appropriate <strong>tax registration</strong> (or being aware of requirements if they do not yet have a tax check code)</li>
-        <li>Having appropriate insurance in place</li>
-        <li>Having appropriate premises in place</li>
-      </ul>
 
-  <h3>How to Apply</h3>
+<h3>How to Apply</h3>
     <p>Customers need to:</p>
       <ol>
         <li>Complete the <strong>renew private hire operator licence form</strong> online.</li>
@@ -1256,66 +1319,117 @@ const renewPrivateHireOperatorLicence = new ContentBusiness(
         <li>Number of vehicles to be operated </li>
       </ul>
 
-  <h3>Supporting Documents Required</h3>
-    <p>Applicants must provide the following (where applicable):</p>
-      <ul>
-        <li><strong>Basic DBS certificate</strong> for all directors (or DBS certificate number)</li>
-        <li><strong>Right to work documentation</strong> for all business owners (this may need to be seen in person)</li>
-        <li><strong>Tax check information</strong> or a 9-digit tax check code</li>
-        <li><strong>Public liability insurance certificate</strong></li>
-        <li><strong>Employers’ liability insurance</strong></li>
-        <li>Proof of <strong>registration with the Information Commissioner’s Office (ICO)</strong></li>
-      </ul>
-    
-    <p>
-      Additional documents may be requested during the process.
-    </p>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>[Accordion Title]</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>[Accordion content]</p>
+    </div>
+  </details>
+ 
 
-  <h3>Fees</h3>
-    <p>The cost of the licence depends on:</p>
-      <ul>
-        <li>The <strong>duration of the licence</strong> (1 to 5 years)</li>
-        <li>The <strong>number of vehicles operated</strong></li>
-      </ul>
-    
+  <h3>Eligibility Criteria</h3>
     <p>
-      The longer the duration of the licence, and the more vehicles the license is for, the higher the fee.
-    </p>
+      Only existing operator's can use the renewal process. If a customer does not have an existing private hire operator licence 
+      they should be directed to the information to apply for a <strong>new</strong> private hire operator licence.
+    <p>  
     
-    <p> 
-      A full breakdown of fees can be found here: 
-      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/renewing-private-hire-operator/renew" target="_blank">
-      Renew a private hire operator licence | Sheffield City Council</a> 
-    </p>
-    
-    <p>Examples:</p>
+    <p>When applying, customers must demonstrate that they continue to be suitable to operate a private hire business. This includes:</p>
       <ul>
-        <li>1 year licenses range from £531 (1-10 vehicles) to £6,643 (over 250 vehicles)</li>
-        <li>5 year licences range from £2,510 (1-10 vehicles) to £12,548 (over 250 vehicles)</li>
+        <li>Being considered a <strong>fit and proper person</strong> (safe and suitable, with no links to serious criminal activity)</li>
+        <li>Declaring any <strong>criminal convictions</strong> for all applicants, directors or partners</li>
+        <li>Having the <strong>legal right to work in the UK</strong></li>
+        <li>Having appropriate <strong>tax registration</strong> (or being aware of requirements if they do not yet have a tax check code)</li>
+        <li>Having appropriate insurance in place</li>
+        <li>Having appropriate premises in place</li>
       </ul>
 
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="For further information send link"
-      onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Private%20Hire%20Operator\`
-        "
-      >
-            Send link to review further information
-    </button>
-
-  <h3>Processing the Application</h3>
-    <p> 
-      The council will <strong>not process the application until all required documents are received</strong>. 
-      Further information or documents may be requested during the assessment.
-    </p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Supporting Documents Required</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Applicants must provide the following (where applicable):</p>
+        <ul>
+          <li><strong>Basic DBS certificate</strong> for all directors (or DBS certificate number)</li>
+          <li><strong>Right to work documentation</strong> for all business owners (this may need to be seen in person)</li>
+          <li><strong>Tax check information</strong> or a 9-digit tax check code</li>
+          <li><strong>Public liability insurance certificate</strong></li>
+          <li><strong>Employers’ liability insurance</strong></li>
+          <li>Proof of <strong>registration with the Information Commissioner’s Office (ICO)</strong></li>
+        </ul>
     
-    <p>
-      The council will assess whether the applicant meets the <strong>fit and proper person standard</strong> before making a decision.
-    </p>
+      <p>
+        Additional documents may be requested during the process.
+      </p>
+    </div>
+  </details>
+ 
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The cost of the licence depends on:</p>
+        <ul>
+          <li>The <strong>duration of the licence</strong> (1 to 5 years)</li>
+          <li>The <strong>number of vehicles operated</strong></li>
+        </ul>
+    
+      <p>
+        The longer the duration of the licence, and the more vehicles the license is for, the higher the fee.
+      </p>
+    
+      <p> 
+        A full breakdown of fees can be found here: 
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/renewing-private-hire-operator/renew" target="_blank">
+        Renew a private hire operator licence | Sheffield City Council</a> 
+      </p>
+    
+      <p>Examples:</p>
+        <ul>
+          <li>1 year licenses range from £531 (1-10 vehicles) to £6,643 (over 250 vehicles)</li>
+          <li>5 year licences range from £2,510 (1-10 vehicles) to £12,548 (over 250 vehicles)</li>
+        </ul>
+
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Private%20Hire%20Operator\`
+          "
+        >
+              Send link to review further information
+      </button>
+    </div>
+  </details>
+
+  
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Processing the Application</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p> 
+        The council will <strong>not process the application until all required documents are received</strong>. 
+        Further information or documents may be requested during the assessment.
+      </p>
+    
+      <p>
+        The council will assess whether the applicant meets the <strong>fit and proper person standard</strong> before making a decision.
+      </p>
+    </div>
+  </details>
+ 
 
   <h3>Key Information for Call Handling</h3>
     <ul>
@@ -1325,6 +1439,7 @@ const renewPrivateHireOperatorLicence = new ContentBusiness(
       <li>Remind customers that <strong>additional checks and documents may be required</strong>.</li>
       <li>Advise that fees vary based on <strong>fleet size and licence length</strong>.</li>
     </ul>
+
 
   <h3>Related Guidance</h3>
     <p>
@@ -1496,12 +1611,12 @@ const changeOfNameOrAddress = new ContentBusiness(
 
 const convictionsAndDrivingOffences = new ContentBusiness(
   "convictionsAndDrivingOffences",
-  "Taxi Driver Convictions and Driving Offences",
+  "Driver Convictions and Driving Offences",
   "Information for Sheffield taxi drivers on reporting arrests, charges, or convictions.",
   `
   <h3>Key message</h3>
     <p>
-      If you’re a licensed taxi driver in Sheffield, you must tell the council about certain arrests, charges or convictions within 48 hours.
+      If you’re a licensed taxi driver in Sheffield, you must tell the council about certain arrests, charges or convictions <strong>within 48 hours</strong>.
     </p>
   
   <h3>How to report</h3>
@@ -1654,36 +1769,60 @@ const renewTaxiDriverLicence = new ContentBusiness(
       <li>Ask for further information, if required.</li>
     </ul>
 
-<h3>Information and Documents Required</h3>
-  <p>Applicants must provide:</p>
-    <ul>
-      <li>Current taxi licence number</li>
-      <li>Licence expiry date (must be within 2 months of renewal)</li>
-      <li>DVLA driving licence number</li>
-      <li>HMRC tax check code (9 digits)</li>
-      <li>DBS certificate number or DBS online service details (dated within the same month as licence expiry)</li>
-      <li>Medical assessment certificate (if required based on age or medical condition)</li>
-      <li>Right to work documentation (if applicable)</li>
-    </ul>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Information and Documents Required</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>Applicants must provide:</p>
+      <ul>
+        <li>Current taxi licence number</li>
+        <li>Licence expiry date (must be within 2 months of renewal)</li>
+        <li>DVLA driving licence number</li>
+        <li>HMRC tax check code (9 digits)</li>
+        <li>DBS certificate number or DBS online service details (dated within the same month as licence expiry)</li>
+        <li>Medical assessment certificate (if required based on age or medical condition)</li>
+        <li>Right to work documentation (if applicable)</li>
+      </ul>
+  </div>
+</details>
+ 
 
-<h3>Costs</h3>
-  <p>The fee depends on the duration of the chosen. Licences can be granted for 1, 2 or 3 years:</p>
-    <ul>
-      <li>1 year: £223</li>
-      <li>2 years: £245</li>
-      <li>3 years: £268</li>
-    </ul>
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Costs</h3>
+    <div class="accordion-icon"></div>
+  </summary>
+  <div class="accordion-content">
+    <p>The fee depends on the duration of the chosen. Licences can be granted for 1, 2 or 3 years:</p>
+      <ul>
+        <li>1 year: £223</li>
+        <li>2 years: £245</li>
+        <li>3 years: £268</li>
+      </ul>
   
-  <p>
-    Once an online application is completed, the customer will receive a separate email with a link to pay.
-  </p>
+    <p>
+      Once an online application is completed, the customer will receive a separate email with a link to pay.
+    </p>
+  </div>
+</details>
 
-<h3>Late Renewals</h3>
-  <ul>
-    <li>A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still use the renewal process.</li>
-    <li>After this period, the driver must <strong>apply for a new licence instead of renewing.</strong></li>
-    <li>If the licence has expired, the driver <strong>must not drive a licensed vehicle</strong> until renewal is confirmed.</li>
-  </ul>
+
+<details class="accordion">
+  <summary class="accordion-header">
+    <h3>Late Renewals</h3>
+    <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still use the renewal process.</li>
+        <li>After this period, the driver must <strong>apply for a new licence instead of renewing.</strong></li>
+        <li>If the licence has expired, the driver <strong>must not drive a licensed vehicle</strong> until renewal is confirmed.</li>
+      </ul>
+    </div>
+</details>
+ 
 
 <h3>Important Notes for Call Handling</h3>
   <ul>
@@ -1788,69 +1927,110 @@ const renewPrivateHireVehicleLicence = new ContentBusiness(
             Send link to review further information
     </button>
 
-  <h3>Before Applying</h3>
-    <p>
-      The vehicle must pass a <strong>compliance test no more than 4 weeks before renewal</strong>.
-    </p>
-    
-    <p>
-      The council usually sends an email <strong>around 6 weeks before expiry</strong> with compliance test details.
-    </p>
-    
-    <p>If the customer has not received a test appointment, they should contact Taxi Licensing:</p>
-      <ul>
-        <li>Email: <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a></li>
-        <li>Telephone: 0114 273 4264</li>
-      </ul>
 
-  <h3>Cost</h3>
-    <p>
-      The renewal fee is <strong>£212</strong>, payable online at the time of application.
-    </p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before Applying</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The vehicle must pass a <strong>compliance test no more than 4 weeks before renewal</strong>.
+      </p>
+    
+      <p>
+        The council usually sends an email <strong>around 6 weeks before expiry</strong> with compliance test details.
+      </p>
+    
+      <p>If the customer has not received a test appointment, they should contact Taxi Licensing:</p>
+        <ul>
+          <li>Email: <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a></li>
+          <li>Telephone: 0114 273 4264</li>
+        </ul>
+    </div>
+  </details>
+      
+    
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cost</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The renewal fee is <strong>£212</strong>, payable online at the time of application.
+      </p>
+    </div>
+  </details>
+ 
 
-  <h3>How to Apply</h3>
-    <p>
-      Customers must apply <strong>online</strong>.
-    </p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers must apply <strong>online</strong>.
+      </p>
     
-    <p>
-      Payment is made during the application process.
-    </p>
+      <p>
+        Payment is made during the application process.
+      </p>
     
-    <p>Applicants must provide:</p>
-      <ul>
-        <li>Private hire vehicle registration number</li>
-        <li>Private hire vehicle licence number</li>
-        <li>Licence expiry date</li>
-        <li>Valid vehicle insurance certificate (document upload)</li>
-        <li>Vehicle compliance/test certificate (document upload)</li>
-      </ul>
+      <p>Applicants must provide:</p>
+        <ul>
+          <li>Private hire vehicle registration number</li>
+          <li>Private hire vehicle licence number</li>
+          <li>Licence expiry date</li>
+          <li>Valid vehicle insurance certificate (document upload)</li>
+          <li>Vehicle compliance/test certificate (document upload)</li>
+        </ul>
+    </div>
+  </details>
+ 
 
-  <h3>After Applying</h3>
-    <p>
-      Applications are processed within <strong>5 working days</strong> after submission and payment.
-    </p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>After Applying</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applications are processed within <strong>5 working days</strong> after submission and payment.
+      </p>
     
-    <p>The customer will receive:</p>
-      <ul>
-        <li>A <strong>PDF licence by email</strong></li>
-        <li>A <strong>paper licence and plate by post</strong></li>
-      </ul>
+      <p>The customer will receive:</p>
+        <ul>
+          <li>A <strong>PDF licence by email</strong></li>
+          <li>A <strong>paper licence and plate by post</strong></li>
+        </ul>
+    </div>
+  </details>
+ 
 
-  <h3>Late Renewals</h3>
-    <p>
-      A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still 
-      use the renewal process.
-    </p>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Late Renewals</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still 
+        use the renewal process.
+      </p>
     
-    <p>
-      After this period, the driver must <strong>apply for a new vehicle licence instead of renewing.</strong>
-    </p>
+      <p>
+        After this period, the driver must <strong>apply for a new vehicle licence instead of renewing.</strong>
+      </p>
     
-    <p>
-      If the licence has expired, the vehicle <strong>cannot legally be used for hire and reward</strong> 
-      until renewal is confirmed.
-    </p>
+      <p>
+        If the licence has expired, the vehicle <strong>cannot legally be used for hire and reward</strong> 
+        until renewal is confirmed.
+      </p>
+    </div>
+  </details>
+ 
 
   <h3>Important Notes for Call Handling</h3>
     <ul>
@@ -1955,65 +2135,105 @@ const renewHackneyCarriageVehicleLicence = new ContentBusiness(
             Send link to review further information
     </button>
 
-  <h3>Before Applying</h3>
-    <p>
-      The vehicle must pass a <strong>compliance test no more than 4 weeks before renewal</strong>.
-    </p>
-    <p>
-      The council usually sends an email <strong>around 6 weeks before expiry</strong> with compliance test details.
-    </p>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Before Applying</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The vehicle must pass a <strong>compliance test no more than 4 weeks before renewal</strong>.
+      </p>
+      <p>
+        The council usually sends an email <strong>around 6 weeks before expiry</strong> with compliance test details.
+      </p>
     
-    <p>If the customer has not received a test appointment, they should contact Taxi Licensing:</p>
-      <ul>
-        <li>Email: <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a></li>
-        <li>Telephone: 0114 273 4264</li>
-      </ul>
+      <p>If the customer has not received a test appointment, they should contact Taxi Licensing:</p>
+        <ul>
+          <li>Email: <a href="mailto:taxilicensing@sheffield.gov.uk">taxilicensing@sheffield.gov.uk</a></li>
+          <li>Telephone: 0114 273 4264</li>
+        </ul>
+    </div>
+  </details>
+ 
 
-  <h3>Cost</h3>
-    <p>
-      The renewal fee is <strong>£212</strong>, payable online at the time of application.
-    </p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Cost</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The renewal fee is <strong>£212</strong>, payable online at the time of application.
+      </p>
+    </div>
+  </details>
+ 
 
-  <h3>How to Apply</h3>
-    <p>
-      Customers must apply <strong>online</strong>.
-    </p>
-    <p>
-      Payment is made during the application process.
-    </p>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Customers must apply <strong>online</strong>.
+      </p>
+      <p>
+        Payment is made during the application process.
+      </p>
     
-    <p>Applicants must provide:</p>
-      <ul>
-        <li>Hackney carriage vehicle registration number</li>
-        <li>Hackney carriage vehicle licence number</li>
-        <li>Licence expiry date</li>
-        <li>Valid vehicle insurance certificate (document upload)</li>
-        <li>Vehicle compliance/test certificate (document upload)</li>
-      </ul>
+      <p>Applicants must provide:</p>
+        <ul>
+          <li>Hackney carriage vehicle registration number</li>
+          <li>Hackney carriage vehicle licence number</li>
+          <li>Licence expiry date</li>
+          <li>Valid vehicle insurance certificate (document upload)</li>
+          <li>Vehicle compliance/test certificate (document upload)</li>
+        </ul>
+    </div>
+  </details>
+ 
 
-  <h3>After Applying</h3>
-    <p>
-      Applications are processed within <strong>5 working days</strong> after submission and payment.
-    </p>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>After Applying</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applications are processed within <strong>5 working days</strong> after submission and payment.
+      </p>
     
-    <p>The customer will receive:</p>
-      <ul>
-        <li>A <strong>PDF licence by email</strong></li>
-        <li>A <strong>paper licence and plate by post</strong></li>
-      </ul>
+      <p>The customer will receive:</p>
+        <ul>
+          <li>A <strong>PDF licence by email</strong></li>
+          <li>A <strong>paper licence and plate by post</strong></li>
+        </ul>
+    </div>
+  </details>
+       
 
-  <h3>Late Renewals</h3>
-    <p>
-      A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still 
-      use the renewal process.
-    </p>
-    <p>
-      After this period, the driver must <strong>apply for a new vehicle licence instead of renewing.</strong>
-    </p>
-    <p>
-      If the licence has expired, the vehicle <strong>cannot legally be used as a hackney carriage</strong> 
-      until renewal is confirmed.
-    </p>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Late Renewals</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        A <strong>grace period of up to 1 month</strong> may be allowed after expiry where customers can still 
+        use the renewal process.
+      </p>
+      <p>
+        After this period, the driver must <strong>apply for a new vehicle licence instead of renewing.</strong>
+      </p>
+      <p>
+        If the licence has expired, the vehicle <strong>cannot legally be used as a hackney carriage</strong> 
+        until renewal is confirmed.
+      </p>
+    </div>
+  </details>
+       
 
   <h3>Important Notes for Call Handling</h3>
     <ul>
@@ -2097,58 +2317,6 @@ const applyKnowledgeTest = new ContentBusiness(
             Send link to review further information
     </button>
 
-  <h3>What the Knowledge Test Covers</h3>
-    <p>Applicants are expected to demonstrate knowledge of:</p>
-      <ul>
-        <li>Routes within Sheffield</li>
-        <li>Places of interest</li>
-        <li>Highway Code</li>
-        <li>Road safety</li>
-        <li>Safeguarding responsibilities</li>
-      </ul>
-    
-    <p>
-      Drivers should be able to navigate the city without relying on satnav or other electronic navigation devices.
-    </p>
-
-  <h3>Test Format and Requirements</h3>
-    <p>
-      The test is computer-based and taken at a council office.
-    </p>
-    <p>
-      Applicants must score at least <strong>80% in each section</strong> to pass.
-    </p>
-    <p>
-      The test result is valid for <strong>one year</strong> from the pass date.
-    </p>
-
-  <h3>Cost</h3>
-    <p>
-      The fee to take the Knowledge Test is <strong>£87</strong>.
-    </p>
-    <p>
-      If the applicant fails, the fee is <strong>non-refundable</strong> and must be paid again to retake the test.
-    </p>
-
-  <h3>Eligibility and Requirements to Apply</h3>
-    <p>Before applying for the Knowledge Test, applicants must:</p>
-      <ul>
-        <li>Be <strong>over 21 years of age</strong></li>
-        <li>Have completed and passed:</li>
-        <ul>
-          <li>Level 2 Certificate in Introduction to the Role of the Professional Taxi and Private Hire Driver</li>
-          <li>Safeguarding training</li>
-          <li>Disability Awareness training</li>
-        </ul>
-      </ul>
-
-    <p>Applicants must also provide:</p>
-      <ul>
-        <li>DVLA driving licence number (held for at least 12 months)</li>
-        <li>A photo of their DVLA driving licence</li>
-        <li>A passport-style photograph</li>
-      </ul>
-
   <h3>How to Apply</h3>
     <p>
       The Knowledge Test must be booked <strong>online</strong>.
@@ -2163,11 +2331,96 @@ const applyKnowledgeTest = new ContentBusiness(
       If an applicant arrives late for their appointment, the test will not take place and the fee will not be refunded.
     </p>
 
-  <h3>Outcome</h3>
-    <ul>
-      <li>Applicants who pass can continue with the taxi driver licence process.</li>
-      <li>Applicants who fail must pay again to retake the test.</li>
-    </ul>
+  <h3>Cost</h3>
+    <p>
+      The fee to take the Knowledge Test is <strong>£87</strong>.
+    </p>
+    <p>
+      If the applicant fails, the fee is <strong>non-refundable</strong> and must be paid again to retake the test.
+    </p>
+    
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What the Knowledge Test Covers</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Applicants are expected to demonstrate knowledge of:</p>
+        <ul>
+          <li>Routes within Sheffield</li>
+          <li>Places of interest</li>
+          <li>Highway Code</li>
+          <li>Road safety</li>
+          <li>Safeguarding responsibilities</li>
+        </ul>
+    
+      <p>
+        Drivers should be able to navigate the city without relying on satnav or other electronic navigation devices.
+      </p>
+    </div>
+  </details>  
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Test Format and Requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The test is computer-based and taken at a council office.
+      </p>
+      <p>
+        Applicants must score at least <strong>80% in each section</strong> to pass.
+      </p>
+      <p>
+        The test result is valid for <strong>one year</strong> from the pass date.
+      </p>
+    </div>
+  </details>
+ 
+ 
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eligibility and Requirements to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Before applying for the Knowledge Test, applicants must:</p>
+      <ul>
+        <li>Be <strong>over 21 years of age</strong></li>
+        <li>Have completed and passed:</li>
+        <ul>
+          <li>Level 2 Certificate in Introduction to the Role of the Professional Taxi and Private Hire Driver</li>
+          <li>Safeguarding training</li>
+          <li>Disability Awareness training</li>
+        </ul>
+      </ul>
+
+      <p>Applicants must also provide:</p>
+        <ul>
+          <li>DVLA driving licence number (held for at least 12 months)</li>
+          <li>A photo of their DVLA driving licence</li>
+          <li>A passport-style photograph</li>
+        </ul>
+    </div>
+  </details>
+ 
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Outcome</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <ul>
+        <li>Applicants who pass can continue with the taxi driver licence process.</li>
+        <li>Applicants who fail must pay again to retake the test.</li>
+      </ul>
+    </div>
+  </details>
+
     
     `,
 
@@ -2357,64 +2610,95 @@ const taxiAdvertisingConsent = new ContentBusiness(
             Send link to review further information (Hackney)
     </button>    
 
-
-  <h3>Restrictions on Advertising Content</h3>
-    <p>All advertisements are checked for suitability. The council <strong>will not approve adverts</strong> that:</p>
-      <ul>
-        <li>Promote smoking, tobacco, or vaping</li>
-        <li>Promote alcohol or gambling</li>
-        <li>Are sexual, religious, or political in nature</li>
-        <li>Are likely to cause offence to members of the public</li>
-      </ul>
-
-  <h3>Where Advertising Can Be Displayed</h3>
-    <p>Advertising may be placed:</p>
-      <ul>
-        <li>On the rear window - using contra vision or similar material</li>
-        <li>As half or full vehicle livery* – this must not distract from required signage</li>
-        <li>On a digital screen</li>
-        <li>As illuminated exterior media</li>
-        <li>As a door sign (<em>Hackney carriage only</em>)</li>
-        <li>On tip seats (<em>Hackney carriage only</em>)</li>
-      </ul>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Restrictions on Advertising Content</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>All advertisements are checked for suitability. The council <strong>will not approve adverts</strong> that:</p>
+        <ul>
+          <li>Promote smoking, tobacco, or vaping</li>
+          <li>Promote alcohol or gambling</li>
+          <li>Are sexual, religious, or political in nature</li>
+          <li>Are likely to cause offence to members of the public</li>
+        </ul>
+    </div>
+  </details>
     
-    <p>
-      <em>* If a vehicle is fully wrapped (full livery) the DVLA V5C logbook must be updated, and vehicle colour must be recorded as “full livery”.</em>
-    </p>
-    <p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Where Advertising Can Be Displayed</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Advertising may be placed:</p>
+        <ul>
+          <li>On the rear window - using contra vision or similar material</li>
+          <li>As half or full vehicle livery* – this must not distract from required signage</li>
+          <li>On a digital screen</li>
+          <li>As illuminated exterior media</li>
+          <li>As a door sign (<em>Hackney carriage only</em>)</li>
+          <li>On tip seats (<em>Hackney carriage only</em>)</li>
+        </ul>
+    
+      <p>
+        <em>* If a vehicle is fully wrapped (full livery) the DVLA V5C logbook must be updated, and vehicle colour must be recorded as “full livery”.</em>
+      </p>
+      <p>
       Advertisements <strong>must not</strong> cover any required notices, signs, or licence plates and must not negatively affect the safety or appearance of the vehicle.
-    </p>
-    <p>
-      If the council determines that advertising is unsafe or in poor condition, the vehicle licence may be suspended until the issue is resolved.
-    </p>
+      </p>
+      <p>
+        If the council determines that advertising is unsafe or in poor condition, the vehicle licence may be suspended until the issue is resolved.
+      </p>
+    </div>
+  </details>
+ 
 
-  <h3>Fees</h3>
-    <ul>
-      <li>Advertising consent application - £15</li>
-      <li>Full livery advertising application - £55</li>
-    </ul>
-
-  <h3>Key Requirements and How to Apply</h3>
-    <p>
-      Applications are <strong>submitted online</strong>.
-    </p>
-    <p>
-      The application must be submitted by the <strong>vehicle owner</strong>.
-    </p>
-    <p>
-      <strong>Full details</strong> of the proposed advertisement must be provided as part of the application.
-    </p>
-    
-    <p>A <strong>contract for the advertisement</strong> must be included with the application. The contract must:</p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Fees</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
       <ul>
-        <li>State the vehicle details</li>
-        <li>Include the end date of the contract</li>
-        <li>Confirm the advertisement will be removed at the end of the contract period</li>
+        <li>Advertising consent application - £15</li>
+        <li>Full livery advertising application - £55</li>
       </ul>
+    </div>
+  </details>
     
-    <p>
-      The customer <strong>must wait for approval</strong> before adding the advertisement to the vehicle.
-    </p>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Key Requirements and How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applications are <strong>submitted online</strong>.
+      </p>
+      <p>
+        The application must be submitted by the <strong>vehicle owner</strong>.
+      </p>
+      <p>
+        <strong>Full details</strong> of the proposed advertisement must be provided as part of the application.
+      </p>
+    
+      <p>A <strong>contract for the advertisement</strong> must be included with the application. The contract must:</p>
+        <ul>
+          <li>State the vehicle details</li>
+          <li>Include the end date of the contract</li>
+          <li>Confirm the advertisement will be removed at the end of the contract period</li>
+        </ul>
+    
+      <p>
+        The customer <strong>must wait for approval</strong> before adding the advertisement to the vehicle.
+      </p>
+    </div>
+  </details>
+ 
 
   <h3>Key Advice for Call Handling</h3>
     <ul>
@@ -2879,7 +3163,7 @@ const dbsChecksTaxiDrivers = new ContentBusiness(
 
 const taxiDriverMedical = new ContentBusiness(
   "taxiDriverMedical",
-  "Taxi Driver Medical Assessments",
+  "Driver Medical Assessments",
   "Requirements and process for taxi driver medical assessments.",
   `
   <h3>Overview</h3>
@@ -2894,22 +3178,35 @@ const taxiDriverMedical = new ContentBusiness(
       Taxi driver medical assessments | Sheffield City Council</a>
     </p>
 
-  <h3>What the medical checks</h3>
-  <p>The assessment looks at key health areas, including:</p>
-    <ul>
-      <li>Neurological health</li>
-      <li>Eyesight</li>
-      <li>Heart health</li>
-      <li>Mental health</li>
-      <li>Diabetes</li>
-      <li>Drug or alcohol issues</li>
-      <li>Other relevant conditions</li>
-    </ul>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What the medical checks</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The assessment looks at key health areas, including:</p>
+        <ul>
+          <li>Neurological health</li>
+          <li>Eyesight</li>
+          <li>Heart health</li>
+          <li>Mental health</li>
+          <li>Diabetes</li>
+          <li>Drug or alcohol issues</li>
+          <li>Other relevant conditions</li>
+      </ul>
+    </div>
+  </details>
+ 
 
-  <h3>Ongoing requirements</h3>
-    <p>
-      Drivers must continue to meet medical standards after they are licensed.
-    </p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Ongoing requirements</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Drivers must continue to meet medical standards after they are licensed.
+      </p>
     
       <ul>
         <li>Drivers <strong>age 45+</strong> require a medical <strong>every 5 years</strong></li>
@@ -2917,24 +3214,35 @@ const taxiDriverMedical = new ContentBusiness(
         <li>Extra checks may be required if recommended by a GP</li>
         <li>Drivers must report any health changes</li>
       </ul>
+    </div>
+  </details>
+ 
 
-  <h3>How to complete the medical assessment</h3>
-    <p>
-      Applicants must obtain a <strong>medical assessment form (medical pack)</strong> from the council.
-    </p>
-    <p>
-      The form must be completed by <strong>the applicant’s own GP</strong>, or a doctor recommended by the licensing authority.
-    </p>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to complete the medical assessment</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Applicants must obtain a <strong>medical assessment form (medical pack)</strong> from the council.
+      </p>
+      <p>
+        The form must be completed by <strong>the applicant’s own GP</strong>, or a doctor recommended by the licensing authority.
+      </p>
 
-  <p>
-    Once completed, both the <strong>medical pack</strong> and a <strong>certificate of fitness</strong> must be returned to the 
-    licensing service in one of the following ways:
-  </p>
-      <ul>
-        <li>Email (photos of all pages)</li>
-        <li>Post</li>
-        <li>In person</li>
-      </ul>
+      <p>
+        Once completed, both the <strong>medical pack</strong> and a <strong>certificate of fitness</strong> must be returned to the 
+        licensing service in one of the following ways:
+      </p>
+        <ul>
+          <li>Email (photos of all pages)</li>
+          <li>Post</li>
+          <li>In person</li>
+        </ul>
+    </div>
+  </details>
+    
 
   <h3>Key information for call centre staff</h3>
     <ul>
