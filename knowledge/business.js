@@ -384,11 +384,6 @@ const transferLicence = new ContentBusiness(
       <p>
         The fee to transfer a taxi licence is <strong>£33</strong>. The fee is payable by the previous licence holder.
       </p>
-        
-    <h3>After Applying</h3>
-      <p>
-        <strong>[***Information from service is needed here to explain what happens next in the process and timeframes***]</strong>
-      </p>
 
     `,
 
@@ -1597,7 +1592,7 @@ const changeOfNameOrAddress = new ContentBusiness(
     
     `,
 
-  { buttonLabel: "Update Name or Address", formName: "request_chg_name_address" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "taxi_change_name_address_information_provided" },
   {
