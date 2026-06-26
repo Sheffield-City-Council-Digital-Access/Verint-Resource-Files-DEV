@@ -2992,7 +2992,7 @@ const taxiComplaints = new ContentBusiness(
 
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "taxi_driver_licensing_complaint" },
+  { typeKey: "taxi_driver_licensing_information_provided" },
   {
     type: "Report",
     keywords: [
