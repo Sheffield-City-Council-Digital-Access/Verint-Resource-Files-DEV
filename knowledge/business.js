@@ -202,7 +202,7 @@ const drivingStandardsTestGuide = new ContentBusiness(
         </ul>
 
       <p>
-        Applicants must ensure the vehicle used is appropriately insured.
+        Applicants must ensure the vehicle used is appropriately <strong>insured</strong>.
       </p>
     </div>
   </details>
@@ -879,34 +879,48 @@ const applyTaxiDriverLicence = new ContentBusiness(
     </div>
   </details>
  
-
-  <h3>Application Process</h3>
-    <p>
-      Once all pre‑application requirements are completed, customers can submit an <strong>online application form</strong> for a new taxi driver licence.
-    </p>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Once all pre‑application requirements are completed, customers can submit an <strong>online application form</strong> for a new taxi driver licence.
+      </p>
     
-    <p>As part of the application, customers ust provide all required documents, including:</p>
-      <ul>
-        <li>Proof of right to work (if not already verified)</li>
-        <li>Current DVLA driving licence</li>
-      </ul>
+      <p>As part of the application, customers ust provide all required documents, including:</p>
+        <ul>
+          <li>Proof of right to work (if not already verified)</li>
+          <li>Current DVLA driving licence</li>
+        </ul>
     
-    <p>
-      After submitting the application, an email link will be sent to pay the licence fee.
-    </p>
+      <p>
+        After submitting the application, an email link will be sent to pay the licence fee.
+      </p>
 
+    </div>
+  </details>
 
-  <h3>Costs</h3>
-    <p>The <strong>fee depends on the licence duration</strong> chosen. Licences can be granted for 1, 2 or 3 years:</p>
-      <ul>
-        <li>1 year: £223</li>
-        <li>2 years: £245</li>
-        <li>3 years: £268</li>
-      </ul>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>Costs</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The <strong>fee depends on the licence duration</strong> chosen. Licences can be granted for 1, 2 or 3 years:</p>
+        <ul>
+          <li>1 year: £223</li>
+          <li>2 years: £245</li>
+          <li>3 years: £268</li>
+        </ul>
     
-    <p>
-      Once an online application is completed, the customer will receive a separate email with a link to pay the relevant fee.
-    </p>
+      <p>
+        Once an online application is completed, the customer will receive a separate email with a link to pay the relevant fee.
+      </p>
+    </div>
+  </details>
+    
 
   <h3>Key Information for Call Handling</h3>
     <ul>
@@ -1027,43 +1041,50 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
             Send link to review further information
     </button>
 
-
-  <h3>How to Apply</h3>
-    <p>Customers need to:</p>
-      <ol>
-        <li>Complete the <strong>private hire operator licence application form</strong> online.</li>
-        <li>Once they submit an application, they will receive a questionnaire by email.</li>
-        <li>Complete and submit the questionnaire and any additional supporting documents.</li>
-        <li>Ensure all required information is provided, as the council will not process incomplete applications.</li>
-      </ol>
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Apply</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Customers need to:</p>
+        <ol>
+          <li>Complete the <strong>private hire operator licence application form</strong> online.</li>
+          <li>Once they submit an application, they will receive a questionnaire by email.</li>
+          <li>Complete and submit the questionnaire and any additional supporting documents.</li>
+          <li>Ensure all required information is provided, as the council will not process incomplete applications.</li>
+        </ol>
     
-    <p>
-      The application is completed online via the council’s website - this can be found here: 
-      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator/apply" target="_blank">
-      Apply for a new private hire operator licence | Sheffield City Council</a>
-    </p>
+      <p>
+        The application is completed online via the council’s website - this can be found here: 
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/applying-new-private-hire-operator/apply" target="_blank">
+        Apply for a new private hire operator licence | Sheffield City Council</a>
+      </p>
     
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="For further information send link"
-      onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20New%20Private%20Hire%20Operator\`
-        "
-      >
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Apply%20New%20Private%20Hire%20Operator\`
+          "
+        >
             Send link to review further information
-    </button>
+      </button>
 
-    <p>As part of the application, the customer will need to provide business and applicant details, including: </p>
-      <ul>
-        <li>Company and contact information </li>
-        <li>Details of directors/partners</li>
-        <li>Operating address and trading name</li>
-        <li>Number of vehicles to be operated </li>
-      </ul>
- 
+      <br>
+      <p>As part of the application, the customer will need to provide business and applicant details, including: </p>
+        <ul>
+          <li>Company and contact information </li>
+          <li>Details of directors/partners</li>
+          <li>Operating address and trading name</li>
+          <li>Number of vehicles to be operated </li>
+        </ul>
+    </div>
+  </details>
+
 
 <details class="accordion">
     <summary class="accordion-header">
@@ -1283,68 +1304,72 @@ const renewPrivateHireOperatorLicence = new ContentBusiness(
             Send link to review further information
     </button>
 
-
-<h3>How to Apply</h3>
-    <p>Customers need to:</p>
-      <ol>
-        <li>Complete the <strong>renew private hire operator licence form</strong> online.</li>
-        <li>Submit any supporting documents.</li>
-        <li>Ensure all required information is provided, as the council will not process incomplete applications.</li>
-      </ol>
-    
-    <p>
-      The application is completed online via the council’s website - this can be found here: 
-      <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/renewing-private-hire-operator/renew" target="_blank">
-      Renew a private hire operator licence | Sheffield City Council</a>
-    </p>
-    
-    <button
-      type="button"
-      class="dform_widget email-btn dform_widget_type_button"
-      aria-label="For further information send link"
-      onclick="
-        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
-          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
-          }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Private%20Hire%20Operator\`
-        "
-      >
-            Send link to review further information
-    </button>
-
-    <p>As part of the application, the customer will need to provide business and applicant details, including: </p>
-      <ul>
-        <li>Company and contact information </li>
-        <li>Details of directors/partners</li>
-        <li>Operating address and trading name</li>
-        <li>Number of vehicles to be operated </li>
-      </ul>
-
-<details class="accordion">
+  <details class="accordion">
     <summary class="accordion-header">
-      <h3>[Accordion Title]</h3>
+      <h3>How to Apply</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <p>[Accordion content]</p>
+      <p>Customers need to:</p>
+        <ol>
+          <li>Complete the <strong>renew private hire operator licence form</strong> online.</li>
+          <li>Submit any supporting documents.</li>
+          <li>Ensure all required information is provided, as the council will not process incomplete applications.</li>
+        </ol>
+    
+      <p>
+        The application is completed online via the council’s website - this can be found here: 
+        <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-operator/renewing-private-hire-operator/renew" target="_blank">
+        Renew a private hire operator licence | Sheffield City Council</a>
+      </p>
+    
+      <button
+        type="button"
+        class="dform_widget email-btn dform_widget_type_button"
+        aria-label="For further information send link"
+        onclick="
+          window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+            KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+            }interactionid=\${KDF.getParams().interactionid}&sel_service=Renew%20Private%20Hire%20Operator\`
+          "
+        >
+            Send link to review further information
+      </button>
+
+      <p>As part of the application, the customer will need to provide business and applicant details, including: </p>
+        <ul>
+          <li>Company and contact information </li>
+          <li>Details of directors/partners</li>
+          <li>Operating address and trading name</li>
+          <li>Number of vehicles to be operated </li>
+        </ul>
+    </div>
+  </details>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>Eligibility Criteria</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Only existing operator's can use the renewal process. If a customer does not have an existing private hire operator licence 
+        they should be directed to the information to apply for a <strong>new</strong> private hire operator licence.
+      <p>  
+    
+      <p>When applying, customers must demonstrate that they continue to be suitable to operate a private hire business. This includes:</p>
+        <ul>
+          <li>Being considered a <strong>fit and proper person</strong> (safe and suitable, with no links to serious criminal activity)</li>
+          <li>Declaring any <strong>criminal convictions</strong> for all applicants, directors or partners</li>
+          <li>Having the <strong>legal right to work in the UK</strong></li>
+          <li>Having appropriate <strong>tax registration</strong> (or being aware of requirements if they do not yet have a tax check code)</li>
+          <li>Having appropriate insurance in place</li>
+          <li>Having appropriate premises in place</li>
+        </ul>
     </div>
   </details>
  
-
-  <h3>Eligibility Criteria</h3>
-    <p>
-      Only existing operator's can use the renewal process. If a customer does not have an existing private hire operator licence 
-      they should be directed to the information to apply for a <strong>new</strong> private hire operator licence.
-    <p>  
-    
-    <p>When applying, customers must demonstrate that they continue to be suitable to operate a private hire business. This includes:</p>
-      <ul>
-        <li>Being considered a <strong>fit and proper person</strong> (safe and suitable, with no links to serious criminal activity)</li>
-        <li>Declaring any <strong>criminal convictions</strong> for all applicants, directors or partners</li>
-        <li>Having the <strong>legal right to work in the UK</strong></li>
-        <li>Having appropriate <strong>tax registration</strong> (or being aware of requirements if they do not yet have a tax check code)</li>
-        <li>Having appropriate insurance in place</li>
-        <li>Having appropriate premises in place</li>
-      </ul>
 
   <details class="accordion">
     <summary class="accordion-header">
@@ -1715,7 +1740,6 @@ const renewTaxiDriverLicence = new ContentBusiness(
     If the licence has expired, the driver <strong>must not drive a licensed vehicle</strong> until renewal is confirmed.
   </p>
 
-<h3>Useful Links</h3>
   <p>
     Detailed information about all stages of renewing a taxi driver licence can be found here:
     <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/renewing-taxi-driver-licence" target="_blank">
@@ -2785,41 +2809,65 @@ const reportTaxiAccident = new ContentBusiness(
             Send link to review further information
     </button>
 
-  <h3>How and What to Report</h3>
-    <p>
-      Drivers (or vehicle proprietors) must complete an <strong>Accident Damage Report form online</strong>.
-    </p>
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>How and What to Report</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Drivers (or vehicle proprietors) must complete an <strong>Accident Damage Report form online</strong>.
+      </p>
     
-    <p>They must provide full details of the accident and damage to the vehicle, including any damage that affects:</p>
-      <ul>
-        <li>Safety</li>
-        <li>Performance</li>
-        <li>Appearance</li>
-      </ul>
+      <p>They must provide full details of the accident and damage to the vehicle, including any damage that affects:</p>
+        <ul>
+          <li>Safety</li>
+          <li>Performance</li>
+          <li>Appearance</li>
+        </ul>
     
-    <p>
-      This information allows the Licensing Service to understand what happened and assess the condition of the vehicle.
-    </p>
+      <p>
+        This information allows the Licensing Service to understand what happened and assess the condition of the vehicle.
+      </p>
+    </div>
+  </details>
 
-  <h3>After the Report is Submitted</h3>
-    <p>
-      The Council will <strong>inspect the vehicle in person</strong> to decide whether the vehicle is still suitable to carry passengers.
-    </p>
-    <p>
-      If the vehicle is <strong>not fit for use</strong>, the vehicle licence will be <strong>suspended</strong>. 
-      This means the vehicle cannot be used until repairs are completed, and the vehicle <strong>passes a compliance test</strong> 
-      at the Council’s testing station.
-    </p>
-    <p>
-      Where a vehicle is badly damaged and cannot be driven, the driver will be asked to return the vehicle 
-      licence plate rather than being issued with a suspension.
-    </p>
 
-  <h3>After the Repairs are Completed</h3>
-    <p>
-      Once the vehicle has been repaired, the driver is responsible for <strong>contacting the Licensing Service</strong>, 
-      who will arrange a <strong>compliance test</strong> before the vehicle can return to service.
-    </p>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>After the Report is Submitted</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        The Council will <strong>inspect the vehicle in person</strong> to decide whether the vehicle is still suitable to carry passengers.
+      </p>
+      <p>
+        If the vehicle is <strong>not fit for use</strong>, the vehicle licence will be <strong>suspended</strong>. 
+        This means the vehicle cannot be used until repairs are completed, and the vehicle <strong>passes a compliance test</strong> 
+        at the Council’s testing station.
+      </p>
+      <p>
+        Where a vehicle is badly damaged and cannot be driven, the driver will be asked to return the vehicle 
+        licence plate rather than being issued with a suspension.
+      </p>
+    </div>
+  </details>
+
+
+    <details class="accordion">
+    <summary class="accordion-header">
+      <h3>After the Repairs are Completed</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Once the vehicle has been repaired, the driver is responsible for <strong>contacting the Licensing Service</strong>, 
+        who will arrange a <strong>compliance test</strong> before the vehicle can return to service.
+      </p>
+    </div>
+  </details>
+
 
   <h3>Key Messages for Call Handling</h3>
     <ul>
@@ -3177,6 +3225,20 @@ const taxiDriverMedical = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/taxi-2"target="_blank">
       Taxi driver medical assessments | Sheffield City Council</a>
     </p>
+
+  <button
+            type="button"
+            class="dform_widget email-btn dform_widget_type_button"
+            aria-label="For further information send link"
+            onclick="
+                window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+                    KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+                }interactionid=\${KDF.getParams().interactionid}&sel_service=Taxi%20Driver%20Medical%20Assessments\`
+            "
+        >
+            Send link to review further information
+        </button>
+
 
   <details class="accordion">
     <summary class="accordion-header">
