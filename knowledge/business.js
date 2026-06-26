@@ -1854,7 +1854,7 @@ const renewTaxiDriverLicence = new ContentBusiness(
 
   `,
 
-  { buttonLabel: "", formName: "taxi_driver_renewal" },
+  { buttonLabel: "Renew Taxi Driver Licence", formName: "taxi_driver_renewal" },
   { typeKey: "" },
   { typeKey: "taxi_driver_renewal_information_provided" },
   {
@@ -2992,7 +2992,7 @@ const taxiComplaints = new ContentBusiness(
 
   { buttonLabel: "", formName: "" },
   { typeKey: "" },
-  { typeKey: "" },
+  { typeKey: "taxi_driver_licensing_complaint" },
   {
     type: "Report",
     keywords: [
