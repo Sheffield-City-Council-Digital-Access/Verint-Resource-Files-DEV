@@ -621,17 +621,17 @@ const applyPrivateHireVehicleLicence = new ContentBusiness(
 const applyHackneyCarriageVehicleLicence = new ContentBusiness(
   "applyHackneyCarriageVehicleLicence",
   "Apply - Hackney Carriage Vehicle Licence",
-  "Guidance on applying for a Hackney Carriage vehicle licence in Sheffield, including requirements, stages, costs, and collection.",
+  "Guidance on applying for a hackney Carriage vehicle licence in Sheffield, including requirements, stages, costs, and collection.",
   `
   <h3>Overview</h3>
     <p>
-      Customers must apply for a vehicle licence if they want to use a vehicle as a Hackney carriage (taxi) in Sheffield. 
+      Customers must apply for a vehicle licence if they want to use a vehicle as a hackney carriage (taxi) in Sheffield. 
       Once granted, the licence is valid for a maximum of <strong>12 months</strong>. 
       The application is completed online via the Sheffield City Council website.
     </p>
     
     <p>
-      Detailed information about all stages of applying for a Hackney carriage Vehicle Licence can be found at:
+      Detailed information about all stages of applying for a hackney carriage Vehicle Licence can be found at:
       <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney" target="_blank">
       Hackney carriage vehicle licence | Sheffield City Council</a>
     </p>
@@ -702,7 +702,7 @@ const applyHackneyCarriageVehicleLicence = new ContentBusiness(
         <p>
           Customers are advised to check vehicle suitability before applying. Full details can be found here:
           <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/choosing-hackney-carriage"target="_blank">
-          Choosing a Hackney carriage | Sheffield City Council</a>
+          Choosing a hackney carriage | Sheffield City Council</a>
         </p>
         
           <button
@@ -2592,12 +2592,12 @@ const taxiAdvertisingConsent = new ContentBusiness(
       licensed vehicle.
     </p>
     <p>
-      This applies to both private hire vehicles and Hackney carriage (taxi) vehicles.
+      This applies to both private hire vehicles and hackney carriage (taxi) vehicles.
     </p>
     
     <p>Full details and a link to apply online can be found here:</p>
       <ul>
-        <li>for private hire vehicles: 
+        <li>For <strong>private hire</strong> vehicles: 
             <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private-0" target="_blank">
             Private hire advertising consent | Sheffield City Council</a></li>
       </ul>
@@ -2616,7 +2616,7 @@ const taxiAdvertisingConsent = new ContentBusiness(
     </button>
 
       <ul>
-        <li>for hackney carriage vehicles: 
+        <li>For <strong>hackney carriage</strong> vehicles: 
             <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney-0" target="_blank">
             Hackney carriage advertising consent | Sheffield City Council</a></li>
       </ul>
@@ -2663,8 +2663,8 @@ const taxiAdvertisingConsent = new ContentBusiness(
           <li>As half or full vehicle livery* – this must not distract from required signage</li>
           <li>On a digital screen</li>
           <li>As illuminated exterior media</li>
-          <li>As a door sign (<em>Hackney carriage only</em>)</li>
-          <li>On tip seats (<em>Hackney carriage only</em>)</li>
+          <li>As a door sign (<em>hackney carriage only</em>)</li>
+          <li>On tip seats (<em>hackney carriage only</em>)</li>
         </ul>
     
       <p>
