@@ -1156,7 +1156,7 @@ const applyPrivateHireOperatorLicence = new ContentBusiness(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Processing the Application<</h3>
+      <h3>Processing the Application</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -2600,10 +2600,8 @@ const taxiAdvertisingConsent = new ContentBusiness(
         <li>for private hire vehicles: 
             <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/private-0" target="_blank">
             Private hire advertising consent | Sheffield City Council</a></li>
-        <li>for hackney carriage vehicles: 
-            <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney-0" target="_blank">
-            Hackney carriage advertising consent | Sheffield City Council</a></li>
       </ul>
+
     <button
       type="button"
       class="dform_widget email-btn dform_widget_type_button"
@@ -2614,8 +2612,14 @@ const taxiAdvertisingConsent = new ContentBusiness(
           }interactionid=\${KDF.getParams().interactionid}&sel_service=Private%20Hire%20Advertising%20Consent\`
         "
       >
-            Send link to review further information (Private)
+            Send link to review further information
     </button>
+
+      <ul>
+        <li>for hackney carriage vehicles: 
+            <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/private-hire-and-hackney-carriage-vehicles/hackney-0" target="_blank">
+            Hackney carriage advertising consent | Sheffield City Council</a></li>
+      </ul>
 
     <button
       type="button"
@@ -2627,7 +2631,7 @@ const taxiAdvertisingConsent = new ContentBusiness(
           }interactionid=\${KDF.getParams().interactionid}&sel_service=Hackney%20Carriage%20Advertising%20Consent\`
         "
       >
-            Send link to review further information (Hackney)
+            Send link to review further information
     </button>    
 
   <details class="accordion">
@@ -3026,7 +3030,7 @@ const medicalExemptionsTaxi = new ContentBusiness(
   "Information on medical exemptions for taxi drivers under the Equality Act 2010, including how to apply.",
 
   `
-  <h3>Overview</h3>
+
     <p>
       Taxi drivers are legally required to assist passengers with disabilities, including carrying <strong>assistance dogs</strong> and helping passengers using 
       <strong>wheelchairs</strong>. This duty is set out under the Equality Act 2010.
@@ -3130,7 +3134,7 @@ const medicalExemptionsTaxi = new ContentBusiness(
 
 const dbsChecksTaxiDrivers = new ContentBusiness(
   "dbsChecksTaxiDrivers",
-  "DBS checks for Taxi drivers",
+  "DBS Checks for Taxi Drivers",
   "Information and application guidance for taxi drivers requiring DBS checks.",
   `
     <h3>Key Information</h3>
@@ -3146,6 +3150,19 @@ const dbsChecksTaxiDrivers = new ContentBusiness(
       <a href="https://www.sheffield.gov.uk/licences-permits-registrations/taxi-licensing/taxi-drivers/applying-new-taxi-driver-licence/taxi-0" target="_blank">
       Taxi driver disclosure and barring checks | Sheffield City Council</a>
     </p>
+
+    <button
+      type="button"
+      class="dform_widget email-btn dform_widget_type_button"
+      aria-label="For further information send link"
+      onclick="
+        window.location.href = \`\${window.location.protocol}//\${window.location.hostname}/form/launch/send_link_to_service?\${
+          KDF.getParams().customerid ? \`customerid=\${KDF.getParams().customerid}&\` : ''
+          }interactionid=\${KDF.getParams().interactionid}&sel_service=Taxi%20Driver%20DBS\`
+        "
+      >
+            Send link to review further information
+    </button>
 
     <h3>What Drivers Need to Do</h3>
     <ul>
@@ -3238,7 +3255,7 @@ const taxiDriverMedical = new ContentBusiness(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>What the medical checks</h3>
+      <h3>What the Medical Checks</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -3258,7 +3275,7 @@ const taxiDriverMedical = new ContentBusiness(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Ongoing requirements</h3>
+      <h3>Ongoing Requirements</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -3278,7 +3295,7 @@ const taxiDriverMedical = new ContentBusiness(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>How to complete the medical assessment</h3>
+      <h3>How to Complete the Medical Assessment</h3>
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
@@ -3347,7 +3364,7 @@ const taxiDriverMedical = new ContentBusiness(
 
 const taxiVehicleInspections = new ContentBusiness(
   "taxiVehicleInspections",
-  "Vehicle inspections and testing",
+  "Vehicle Inspections and Testing",
   "Details of vehicle inspections and testing are required to ensure that all private hire and hackney carriage vehicles are safe to operate.",
   
   `
@@ -3431,7 +3448,7 @@ const taxiVehicleInspections = new ContentBusiness(
 
   <details class="accordion">
     <summary class="accordion-header">
-      <h3>Vehicles that are already licensed</h3>
+      <h3>Vehicles That Are Already Licensed</h3>
       <div class="accordion-icon"></div>
     </summary>
     
@@ -3471,7 +3488,7 @@ const taxiVehicleInspections = new ContentBusiness(
   <details class="accordion">
 
     <summary class="accordion-header">
-      <h3>Test appointments</h3>
+      <h3>Test Appointments</h3>
       <div class="accordion-icon"></div>
     </summary>
     
