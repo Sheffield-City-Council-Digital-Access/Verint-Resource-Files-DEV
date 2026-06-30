@@ -414,7 +414,7 @@ const copyCertificates = new ContentBDMaC(
     <li>Form: Log the case using the registrars enquiry button below.</li>
   </ul>
 
-    <p>There is a standard fee of £13.50 for these:</p>
+    <p>There is a standard fee of £12.50 for these:</p>
     <ul>
         <li>full birth certificate.</li>
         <li>full civil partnership certificate.</li>
