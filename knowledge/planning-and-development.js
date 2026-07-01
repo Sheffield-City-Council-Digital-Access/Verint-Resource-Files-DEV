@@ -54,6 +54,46 @@ class FormPaD extends CorePaD {
 // --------- KEEP THIS AT THE TOP ------------------------------------------- \\
 // --- v - ADD SCRIPT BELOW THIS LINE - v ----------------------------------- \\
 
+//#region Building Control
+
+
+const templateTile = new ContentPaD(
+  "templateTile",
+  "Template Tile",
+  "Description to go on main tile.",
+  `
+    <h3>Header</h3>
+    <p>Content</p>
+
+  `,
+
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Information",
+    keywords: [
+      "template",
+      "templte"
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "01/07/2026", name: "Liz Taster" }
+);
+
+
+
+const buildingControl = new MenuPaD(
+  "buildingControl",
+  "Building Control",
+  "Information regarding building control",
+  [
+    templateTile,
+  ]
+);
+
+//#endregion Building Control
+
 // --- ^ - ADD SCRIPT ABOVE THIS LINE - ^ ----------------------------------- \\
 // --------- KEEP THIS AT THE BOTTOM ---------------------------------------- \\
 
