@@ -12664,6 +12664,24 @@ const vulnerability = new FormH(
   { date: "17/06/2025", name: "Joseph Coupland" }
 );
 
+const subletting = new FormH(
+  "subletting",
+  "Subletting",
+  "",
+  "",
+
+
+{ buttonLabel: "", formName: "hou_subletting" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "",
+    keywords: ["Tenancy"],
+    categories: ["Housing"],
+  },
+  { date: "02/07/2026", name: "Shaz Athar" }
+
+
 const tenancySustainment = new MenuH(
   "tenancySustainment",
   "Tenancy Sustainment",
