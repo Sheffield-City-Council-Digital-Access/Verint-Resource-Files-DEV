@@ -12413,6 +12413,20 @@ const permissions = new ContentH(
   { date: "07/03/2025", name: "Nathan Smith" }
 );
 
+const subletting = new FormH(
+  "subletting",
+  "Subletting",
+  "Report Housing Subletting",
+  "hou_subletting",
+
+  {
+    type: "Report",
+    keywords: ["Housing", "Subletting"],
+    categories: ["Housing"],
+  },
+  { date: "02/07/2026", name: "Shaz Athar" }
+);
+
 const tenancyAgreementRequest = new ContentH(
   "tenancyAgreementRequest",
   "Tenancy Agreement Request",
@@ -12664,23 +12678,7 @@ const vulnerability = new FormH(
   { date: "17/06/2025", name: "Joseph Coupland" }
 );
 
-const subletting = new FormH(
-  "subletting",
-  "Subletting",
-  "",
-  "",
 
-{ buttonLabel: "", formName: "hou_subletting" },
-  { typeKey: "" },
-  { typeKey: "" },
-  {
-    type: "",
-    keywords: ["Tenancy"],
-    categories: ["Housing"],
-  },
-  { date: "02/07/2026", name: "Shaz Athar" }
-
-);
 
 const tenancySustainment = new MenuH(
   "tenancySustainment",
