@@ -12664,13 +12664,13 @@ const vulnerability = new FormH(
   { date: "17/06/2025", name: "Joseph Coupland" }
 );
 
-const subletting = new ContentH(
+const subletting = new FormH(
   "subletting",
   "Subletting",
   "",
   "",
 
-{ buttonLabel: "Report Subletting", formName: "hou_subletting" },
+{ buttonLabel: "", formName: "hou_subletting" },
   { typeKey: "" },
   { typeKey: "" },
   {
