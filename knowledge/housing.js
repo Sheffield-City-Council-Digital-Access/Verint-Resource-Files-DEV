@@ -12664,7 +12664,7 @@ const vulnerability = new FormH(
   { date: "17/06/2025", name: "Joseph Coupland" }
 );
 
-const subletting = new FormH(
+const subletting = new ContentH(
   "subletting",
   "Subletting",
   "",
