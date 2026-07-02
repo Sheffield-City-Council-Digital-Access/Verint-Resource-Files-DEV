@@ -12416,7 +12416,7 @@ const permissions = new ContentH(
 const subletting = new FormH(
   "subletting",
   "Subletting",
-  "Report Housing Subletting",
+  "Use this form to report suspected council subletting",
   "hou_subletting",
 
   {
