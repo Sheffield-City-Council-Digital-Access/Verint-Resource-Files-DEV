@@ -12669,7 +12669,7 @@ const subletting = new FormH(
   "Subletting",
   "",
   "",
-  
+
 { buttonLabel: "", formName: "hou_subletting" },
   { typeKey: "" },
   { typeKey: "" },
@@ -12698,6 +12698,7 @@ const tenancySustainment = new MenuH(
     housingServiceParkingPermits,
     nameChanges,
     permissions,
+    subletting,
     tenancyAgreementRequest,
     tenancyConditions,
     tenancyVisits,
