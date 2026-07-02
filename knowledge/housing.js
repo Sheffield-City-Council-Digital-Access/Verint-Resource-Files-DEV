@@ -12670,7 +12670,7 @@ const subletting = new ContentH(
   "",
   "",
 
-{ buttonLabel: "Housing Subletting", formName: "hou_subletting" },
+{ buttonLabel: "Report Subletting", formName: "hou_subletting" },
   { typeKey: "" },
   { typeKey: "" },
   {
