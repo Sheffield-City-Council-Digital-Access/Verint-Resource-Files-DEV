@@ -428,4 +428,8 @@
   font-weight: var(--font-weight-normal);
 }
 
+/* Chrome/Edge Update Fix for showing the search field */
+.esri-search__container, .esri-search__input-container, .esri-search__form {
+  display: flex !important;
+}
 
