@@ -155,7 +155,7 @@ const guideForDemolitionNoticeQueries = new ContentPaD(
   <h3>Key Points for Call Centre Staff</h3>
     <ul>
       <li>Customers <strong>must notify the council before demolition begins</strong></li>
-      <li>A form and <strong>site location plan</strong> are required</li>
+      <li>A <strong>form</strong> and <strong>site location plan</strong> must be submitted</li>
       <li>The council will issue a <strong>Counter Notice with conditions</strong></li>
       <li>Additional checks may apply for <strong>listed buildings or conservation areas</strong></li>
       <li>Inspections may be carried out at different stages of the work</li>
@@ -187,6 +187,141 @@ const guideForDemolitionNoticeQueries = new ContentPaD(
 );
  
 
+const reportingAPlanningEnforcementIssue = new ContentPaD(
+  "reportingAPlanningEnforcementIssue",
+  "Reporting a Planning Enforcement Issue",
+  "Information about reporting a planning enforcement issue, including what can and cannot be reported.",
+  `
+<h3>Overview</h3>
+  <p>
+    Residents can report a planning enforcement issue to the council if they believe development has taken place without planning permission 
+    or is not in line with the permission granted.
+  </p>
+  <p>
+    Planning enforcement allows the council to investigate potential breaches of planning control and decide if action is required.
+  </p>
+  <p>
+    Further details about planning enforcement, including a link to the form to report an issue can be found here: 
+    <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank">
+    Reporting a planning enforcement issue | Sheffield City Council</a>
+  </p>
+
+  <p>[Insert Send Link]</p>
+
+
+<h3>How to Report an Issue</h3>
+  <p>
+    <strong>Before reporting</strong>, residents are advised to check if the development already has planning permission before making a report.
+  </p>
+  <p>
+    Reports can be submitted using the council’s online reporting form. This can be found at 
+    <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank">
+    Reporting a planning enforcement issue | Sheffield City Council</a>
+  </p>
+
+  <p>[Insert Send Link]</p>
+
+  <p>Residents should report if they believe:</p>
+    <ul>
+      <li>Development has taken place without permission</li>
+      <li>A development is not complying with its approved plans or conditions</li>
+    </ul>
+
+  <p>
+    Residents can search to find out if a property has already been served with an enforcement notice or breach of condition notice here: 
+    <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/search-view-comment" target="_blank">
+    Search, view and comment on planning applications | Sheffield City Council</a>
+  </p>
+
+  <p>[Insert Send Link]</p>
+
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Can Be Reported</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>The council can investigate the following types of issues:</p>
+        <ul>
+          <li>Development carried out without planning permission</li>
+          <li>Development that differs from approved planning permission</li>
+          <li>Breaches of planning conditions</li>
+          <li>Unauthorised advertisements</li>
+          <li>Unauthorised works to a listed building</li>
+          <li>Unauthorised works to protected trees</li>
+          <li>Unauthorised works in conservation areas or protected areas (such as greenbelt)</li>
+          <li>Unauthorised changes of use</li>
+          <li>Untidy land</li>
+        </ul>
+    </div>
+  </details>
+  
+  
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>What Cannot Be Reported</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Some issues are not planning enforcement matters and cannot be investigated:</p>
+        <ul>
+          <li>Non-material planning considerations – loss of property value, damage to private property, loss of view;</li>
+          <li>Private disputes or interests – boundary or land ownership disputes, internal alterations to houses (unless listed), security lights on houses, high hedges, business competition concerns;</li>
+          <li>Issues covered by other legislation – noise complaints, improper use of highways, building safety or dangerous structures, blocked rights of way, health and safety or site security issues</li>
+        </ul>
+      <p>
+        More detail on what can and cannot be investigated is available in the Local Enforcement Plan, available here: 
+        <a href="https://www.sheffield.gov.uk/sites/default/files/2025-05/local-enforcement-plan-may-2025.pdf" target="_blank">
+        Sheffield Local Enforcement Plan</a>
+      </p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
+
+
+
+  <h3>Actions for Call Centre Staff</h3>
+    <p>When handling enquiries:</p>
+      <ul>
+        <li>Confirm whether the issue relates to a potential breach of planning control.</li>
+        <li>Check the issue is within planning enforcement scope.</li>
+        <li>Advise the resident to check if planning permission exists.</li>
+        <li>Direct the resident to the online reporting form if appropriate.</li>
+        <li>If the issue falls outside planning enforcement, signpost to the relevant service where applicable.</li>
+      </ul>
+    
+    `,
+  { buttonLabel: "", formName: "" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Report",
+    keywords: [
+      "planning",
+      "enforcement",
+      "report",
+      "planning",
+      "issue",
+      "breach",
+      "control",
+      "unauthorised",
+      "development",
+      "works",
+      "permission",
+      "enforcement",
+      "notice",
+      "applications",
+      "developement",
+      "planing",
+      "enforcment",
+      "enforcemnt"
+      "developement"
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "09/07/2026", name: "Liz Taster" }
+);
 
 
 const buildingControl = new MenuPaD(
@@ -196,6 +331,7 @@ const buildingControl = new MenuPaD(
   [
     templateTile,
     guideForDemolitionNoticeQueries,
+    reportingAPlanningEnforcementIssue,
   ]
 );
 
