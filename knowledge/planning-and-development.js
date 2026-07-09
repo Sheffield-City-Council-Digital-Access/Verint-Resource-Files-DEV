@@ -315,7 +315,7 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
       "developement",
       "planing",
       "enforcment",
-      "enforcemnt"
+      "enforcemnt",
       "developement"
     ],
     categories: ["Planning and Development", "Building Control"]
