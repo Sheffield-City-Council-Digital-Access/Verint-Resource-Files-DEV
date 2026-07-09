@@ -197,6 +197,7 @@ const buildingControl = new MenuPaD(
   "Information regarding building control",
   [
     templateTile,
+    guideForDemolitionNoticeQueries,
   ]
 );
 
