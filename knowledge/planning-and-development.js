@@ -86,9 +86,7 @@ const guideForDemolitionNoticeQueries = new ContentPaD(
   "giveNoticeToDemolishABuilding",
   "Give Notice to Demolish a Building",
   "Guidance for customers on giving notice to demolish a building, including requirements, process, and Building Control involvement.",
-  ` 
-  <h3>Give Notice to Demolish a Building</h3>
- 
+  `  
   <h3>Overview</h3>
     <p>
       Customers planning to demolish a building in Sheffield must inform the council before any work begins. This is a legal requirement for most demolition work and is managed through Building Control.
@@ -101,15 +99,15 @@ const guideForDemolitionNoticeQueries = new ContentPaD(
     <p>Customers intending to carry out demolition work must:</p>
       <ul>
         <li>Complete a <strong>“Notice of Intention to Demolish a Building” form</strong></li>
-        <li>Submit the completed form to Building Control</li>
+        <li><strong>Submit</strong> the completed form to Building Control</li>
         <li>Provide a <strong>site location plan</strong></li>
       </ul>
     <p>
-      The form can be returned by email, by post or in person.
+      The form can be returned by email, post or in person.
     </p>
     <p>
       For full details and access to the form, see:
-      <a href="https://www.sheffield.gov.uk/planning-development/building-control/demolish-building">Give notice to demolish a building</a>
+      <a href="https://www.sheffield.gov.uk/planning-development/building-control/demolish-building" target="_blank">Apply to demolish a building | Sheffield City Council</a>
     </p>
 
     <p>[Insert Send Link]</p>
@@ -134,8 +132,8 @@ const guideForDemolitionNoticeQueries = new ContentPaD(
     
       <p>Building Control will also confirm if the building is:</p>
         <ul>
-          <li><strong>Listed</strong></li>
           <li>Within a <strong>Conservation Area</strong></li>
+          <li>A <strong>Listed Building</strong></li>
           <li>Affecting a <strong>Listed Building</strong></li>
         </ul>
     
