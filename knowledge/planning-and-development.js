@@ -209,31 +209,38 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
   <p>[Insert Send Link]</p>
 
 
-<h3>How to Report an Issue</h3>
-  <p>
-    <strong>Before reporting</strong>, residents are advised to check if the development already has planning permission before making a report.
-  </p>
-  <p>
-    Reports can be submitted using the council’s online reporting form. This can be found at 
-    <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank">
-    Reporting a planning enforcement issue | Sheffield City Council</a>
-  </p>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Report an Issue</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        <strong>Before reporting</strong>, residents are advised to check if the development already has planning permission before making a report.
+      </p>
+      <p>
+        Reports can be submitted using the council’s online reporting form. This can be found at 
+        <a href="https://www.sheffield.gov.uk/planning-development/report-planning-enforcement-issue" target="_blank">
+        Reporting a planning enforcement issue | Sheffield City Council</a>
+      </p>
 
-  <p>[Insert Send Link]</p>
+      <p>[Insert Send Link]</p>
 
-  <p>Residents should report if they believe:</p>
-    <ul>
-      <li>Development has taken place without permission</li>
-      <li>A development is not complying with its approved plans or conditions</li>
-    </ul>
+      <p>Residents should report if they believe:</p>
+        <ul>
+          <li>Development has taken place without permission</li>
+          <li>A development is not complying with its approved plans or conditions</li>
+        </ul>
 
-  <p>
-    Residents can search to find out if a property has already been served with an enforcement notice or breach of condition notice here: 
-    <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/search-view-comment" target="_blank">
-    Search, view and comment on planning applications | Sheffield City Council</a>
-  </p>
+      <p>
+        Residents can search to find out if a property has already been served with an enforcement notice or breach of condition notice here: 
+        <a href="https://www.sheffield.gov.uk/planning-development/applications-advice/search-view-comment" target="_blank">
+        Search, view and comment on planning applications | Sheffield City Council</a>
+      </p>
 
-  <p>[Insert Send Link]</p>
+      <p>[Insert Send Link]</p>
+    </div>
+  </details>
 
 
   <details class="accordion">
@@ -281,7 +288,7 @@ const reportingAPlanningEnforcementIssue = new ContentPaD(
 
 
 
-  <h3>Actions for Call Centre Staff</h3>
+  <h3>Key information for Call Centre Staff</h3>
     <p>When handling enquiries:</p>
       <ul>
         <li>Confirm whether the issue relates to a potential breach of planning control.</li>
