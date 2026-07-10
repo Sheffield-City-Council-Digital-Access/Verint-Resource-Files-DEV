@@ -839,11 +839,13 @@ const requestACompletionCertificate = new ContentPaD(
   `
   <h3>Overview</h3>
     <p>
-      A <strong>completion certificate</strong> is issued at the end of a building project to confirm that the work <strong>complies with Building Regulations</strong>. 
+      A <strong>completion certificate</strong> is issued at the end of a building project to confirm that the <strong>work complies with Building Regulations</strong>. 
+    </p>
+    <p>
       It is provided by Building Control after all required checks and inspections are successfully completed.
     </p>
     <p>
-      This document is important and should be kept safe, as it may be required when selling a property or requested by mortgage lenders or insurers.
+      This document is <strong>important and should be kept safe</strong>, as it may be required when selling a property or requested by mortgage lenders or insurers.
     </p>
     <p>
       Further information and the application form can be found here: 
@@ -859,7 +861,7 @@ const requestACompletionCertificate = new ContentPaD(
     </summary>
     <div class="accordion-content">
       <p>
-        To request a completion certificate, <strong>Regulation 16 (4) Notice of Completion form</strong> must be completed and submitted to Building Control.
+        To request a completion certificate, a <strong>Regulation 16 (4) Notice of Completion form</strong> must be completed and submitted to Building Control.
       </p>
       <p>
         This form acts as a <strong>declaration that the building work is complete and complies with regulations</strong>.
@@ -871,7 +873,7 @@ const requestACompletionCertificate = new ContentPaD(
           <li>The principal contractor</li>
         </ul>
       <p>
-        The Notice of Completion form is usually issued as part of the original application acknowledgement but can also be downloaded.
+        The Notice of Completion form is usually issued as part of the original application acknowledgement, but it can also be downloaded.
       </p>
     </div>
   </details>
@@ -887,7 +889,7 @@ const requestACompletionCertificate = new ContentPaD(
         <li>The completed Notice of Completion form is submitted to Building Control.</li>
         <li>The council reviews the form to ensure all required information is provided.</li>
         <li>A <strong>completion inspection</strong> is arranged.</li>
-        <li>If the inspection is satisfactory, or any outstanding issues are resolved, a completion certificate is issued.</li>
+        <li>If the inspection is satisfactory, or once any outstanding issues are resolved, a completion certificate is issued.</li>
       </ul>
       <p>
         This marks the formal completion of the Building Control process.
@@ -898,7 +900,7 @@ const requestACompletionCertificate = new ContentPaD(
   
   <h3>Key points for Call Handlers</h3>
   <ul>
-    <li>The <strong>Notice of Completion form</strong> must be completed by all relevant parties and submitted to Building Control</li>
+    <li>The <strong>Notice of Completion form</strong> must be completed by all relevant parties and submitted to Building Control.</li>
     <li>This form acts as a <strong>declaration that the building work is complete and complies with regulations</strong>.</li>
     <li>A <strong>completion inspection</strong> must take place before a certificate can be issued.</li>
     <li>The certificate confirms the work <strong>meets legal Building Regulation standards</strong>.</li>
