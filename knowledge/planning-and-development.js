@@ -912,7 +912,7 @@ const requestACompletionCertificate = new ContentPaD(
   { typeKey: "" },
   { typeKey: "" },
   {
-    type: "Transactional",
+    type: "Request",
     keywords: [
       "completion",
       "certificate",
@@ -937,6 +937,124 @@ const requestACompletionCertificate = new ContentPaD(
   { date: "10/07/2026", name: "Liz Taster" }
 );
 
+
+const reportingDangerousStructures = new ContentPaD(
+  "reportingDangerousStructures",
+  "Reporting Dangerous Structures",
+  "Information on how residents can report a dangerous structure if a building or structure appears to pose a risk to people, property, or the surrounding area.",
+  `
+<h3><strong>Emergency Situations</strong></h3>
+  <p>
+    If there is an <strong>immediate danger to life</strong> or a structure is at risk of imminent collapse advise the customer to call <strong>999</strong> immediately.
+  </p>
+  
+<h3>Overview</h3>
+  <p>
+    Residents can report a dangerous structure to Sheffield City Council if a building or structure appears to pose a risk to people, property, or the surrounding area.
+  </p>
+  <p>
+    A dangerous structure may be publicly or privately owned and includes anything that could become unsafe or unstable.
+  </p>
+  <p>
+    Full details and a link to the report form can be found here: 
+    <a href="https://www.sheffield.gov.uk/planning-development/building-regulations/report-dangerous-structure" target="_blank">
+    Report a dangerous structure | Sheffield City Council</a>
+  </p>
+  <p>[Insert Send Link]</p>
+
+
+<h3>How to Report</h3>
+  <p>
+    Reports are submitted online via the council’s website.
+  </p>
+  <p>
+    The enquiry will be directed to the appropriate team for investigation.
+  </p>
+
+<h3>What Happens Next</h3>
+  <ul>
+    <li>The council will assess the report</li>
+    <li>An inspection may be carried out</li>
+    <li>Appropriate action will be taken to remove or reduce the danger</li>
+  </ul>
+
+  <details class="accordion">
+    <summary class="accordion-header">
+      <h3>What <strong>Can</strong> be Reported</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>A report should be made when a structure could present a hazard to the public or nearby property. Examples include:</p>
+        <ul>
+          <li>Damaged or leaning walls, particularly where the public can access them</li>
+          <li>Walls over 1.5 metres high or retaining walls above 1.5 metres</li>
+          <li>Loose slates, tiles, gutters, or building materials</li>
+          <li>Broken glass or window frames</li>
+          <li>Damaged or unstable chimneys or chimney stacks</li>
+          <li>Falling debris from a building or structure</li>
+          <li>Buildings showing signs of possible collapse</li>
+          <li>Fire-damaged buildings</li>
+          <li>Vacant or accessible buildings posing a danger</li>
+          <li>Structures weakened or undermined</li>
+          <li>Trees posing a specific or imminent danger</li>
+        </ul>
+    </div>
+  </details>
+
+
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>What <strong>Cannot</strong> be Reported</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>Some issues are not handled through the dangerous structures service. These include:</p>
+        <ul>
+          <li>Timber fences or domestic sheds</li>
+          <li>Debris contained within a private enclosed area</li>
+          <li>Walls in private rear gardens under 1.5 metres high</li>
+          <li>Hanging cables (should be reported to the relevant utility provider)</li>
+          <li>Highway-related hazards such as trip hazards or inspection covers</li>
+          <li>Boundary disputes or encroachments</li>
+          <li>Unsafe working practices (report to the Health and Safety Executive)</li>
+          <li>General tree issues such as overgrowth or roots causing damage</li>
+          <li>Bus shelters</li>
+        </ul>
+    </div>
+  </details>
+
+`,
+  { buttonLabel: "Report a dangerous structure", formName: "dangerous_structures" },
+  { typeKey: "" },
+  { typeKey: "" },
+  {
+    type: "Report",
+    keywords: [
+      "dangerous",
+      "structure",
+      "report",
+      "structures",
+      "unsafe",
+      "building",
+      "hazard",
+      "collapse",
+      "damage",
+      "damaged",
+      "falling",
+      "debris",
+      "unsafe",
+      "issue",
+      "dangeruos",
+      "dangrous",
+      "structre",
+      "stucture",
+    ],
+    categories: ["Planning and Development", "Building Control"]
+  },
+  { date: "10/07/2026", name: "Liz Taster" }
+);
+
+
 const buildingControl = new MenuPaD(
   "buildingControl",
   "Building Control",
@@ -949,6 +1067,7 @@ const buildingControl = new MenuPaD(
     fullPlansBuildingApplication,
     applyForARegularisationCertificate,
     requestACompletionCertificate,
+    reportingDangerousStructures,
   ]
 );
 
