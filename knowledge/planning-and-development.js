@@ -675,6 +675,8 @@ const applyForARegularisationCertificate = new ContentPaD(
     Regularisation Application | Sheffield City Council</a>
   </p>
 
+  <p>[Insert Send Link]</p>
+
 
   <details class="accordion">
     <summary class="accordion-header">
@@ -705,7 +707,7 @@ const applyForARegularisationCertificate = new ContentPaD(
         The work must be capable of meeting the Building Regulations that applied <strong>at the time it was carried out</strong>.
       </p>
       <p>
-        The applicant must be willing to carry out <strong>additional or remedial work</strong> if required to achieve compliance.
+        The applicant must be willing to carry out <strong>additional or remedial work if required</strong> to achieve compliance.
       </p>
     </div>
   </details>
@@ -745,7 +747,7 @@ const applyForARegularisationCertificate = new ContentPaD(
       <p>Residents can apply using one of the following methods:</p>
         <ul>
           <li><strong>Online via the Planning Portal</strong> - The council encourages use of the Planning Portal as it is quick and fully digital.</li>
-          <li><strong>Directly to Sheffield City Council</strong> - Available for customers unable to use the Planning Portal</li>
+          <li><strong>Directly to Sheffield City Council</strong> - Available for customers unable to use the Planning Portal.</li>
         </ul>
     </div>
   </details>
@@ -774,14 +776,14 @@ const applyForARegularisationCertificate = new ContentPaD(
       <div class="accordion-icon"></div>
     </summary>
     <div class="accordion-content">
-      <ul>
-        <li><strong>Assessment of Information - </strong>Building Control will review the information submitted with the application. 
-          <strong><em>More detailed applications are processed more easily.</em></strong></li>
-        <li><strong>Inspection and Investigation - </strong>A site visit may be required. 
+      <ol>
+        <li><strong>Assessment of Information</strong> - Building Control will review the information submitted with the application. 
+          <em>More detailed applications are processed more easily.</em></li>
+        <li><strong>Inspection and Investigation</strong> - A site visit may be required. 
           In some circumstances the resident may need to expose parts of the work for inspection, testing, or sampling.</li>
-        <li><strong>Remedial Work (if required) - </strong>Any work that does not meet regulations must be corrected.</li>
+        <li><strong>Remedial Work</strong> (if required) - Any work that does not meet regulations must be corrected.</li>
         <li><strong>Decision - </strong>A Regularisation Certificate will only be issued if the work complies with the relevant regulations.</li>
-      </ul>
+      </ol>
     </div>
   </details>
 
@@ -792,8 +794,9 @@ const applyForARegularisationCertificate = new ContentPaD(
     <li>Building Control <strong>cannot advise how to make the work compliant</strong> – this responsibility lies with the applicant</li>
     <li>Residents may need to appoint a professional (such as an architect or surveyor) to support their application</li>
     <li>Regularisation may involve <strong>additional work, inspections, or opening up completed structures</strong></li>
-    <li>Work completed before <strong>11 November 1985 cannot be regularised</strong></li>
-    <li><strong>If work has not yet started, or is ongoing, this is not the correct process. Customers should instead be directed to information about a Building Notice Application or Full Plans Application depending on the scale of the work.</strong></li>
+    <li>Work completed before 11 November 1985 cannot be regularised</li>
+    <li>If work has <strong>not yet started, or is ongoing</strong>, this is not the correct process. Customers should instead be directed 
+      to information about a <strong>Building Notice Application</strong> or <strong>Full Plans Application</strong> depending on the scale of the work.</li>
   </ul>
 
 `,
