@@ -603,7 +603,7 @@ const fullPlansBuildingApplication = new ContentPaD(
 
   <h3>Key Points for Call Centre Staff</h3>
     <ul>
-      <li>A Full Plans Application is the <strong>most thorough building control route<strong></li>
+      <li>A Full Plans Application is the <strong>most thorough building control route</strong></li>
       <li>It involves submitting <strong>detailed plans</strong> for approval <strong>before starting work</strong></li>
       <li>It is recommended where customers want certainty and compliance upfront</li>
       <li>This type of application is commonly submitted by an architect or principal designer on behalf of the customer.</li>
