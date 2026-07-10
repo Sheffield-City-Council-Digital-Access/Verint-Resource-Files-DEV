@@ -943,10 +943,12 @@ const reportingDangerousStructures = new ContentPaD(
   "Reporting Dangerous Structures",
   "Information on how residents can report a dangerous structure if a building or structure appears to pose a risk to people, property, or the surrounding area.",
   `
-<h3><strong>Emergency Situations</strong></h3>
-  <p>
-    If there is an <strong>immediate danger to life</strong> or a structure is at risk of imminent collapse advise the customer to call <strong>999</strong> immediately.
-  </p>
+  <section class="alert-panel--ineligible" role="alert" aria-label="Alert panel">
+    <h3>Emergency Situations</h3>
+      <p>
+        If there is an <strong>immediate danger to life</strong> or a structure is at risk of imminent collapse advise the customer to call <strong>999</strong> immediately.
+      </p>
+  </section>
   
 <h3>Overview</h3>
   <p>
