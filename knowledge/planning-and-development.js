@@ -941,7 +941,7 @@ const requestACompletionCertificate = new ContentPaD(
 const reportingDangerousStructures = new ContentPaD(
   "reportingDangerousStructures",
   "Reporting Dangerous Structures",
-  "Information on how residents can report a dangerous structure if a building or structure appears to pose a <strong>risk to people, property, or the surrounding area</strong>.",
+  "Information on how residents can report a dangerous structure if a building or structure appears to pose a risk to people, property, or the surrounding area.",
   `
   <section class="alert-panel--ineligible" role="alert" aria-label="Alert panel">
     <h3>Emergency Situations</h3>
@@ -952,7 +952,7 @@ const reportingDangerousStructures = new ContentPaD(
   
 <h3>Overview</h3>
   <p>
-    Residents can report a dangerous structure to Sheffield City Council if a building or structure appears to pose a risk to people, property, or the surrounding area.
+    Residents can report a dangerous structure to Sheffield City Council if a building or structure appears to pose a <strong>risk to people, property, or the surrounding area</strong>.
   </p>
   <p>
     A dangerous structure may be publicly or privately owned and includes anything that could become unsafe or unstable.
@@ -965,18 +965,26 @@ const reportingDangerousStructures = new ContentPaD(
   <p>[Insert Send Link]</p>
 
 
-<h3>How to Report</h3>
-  <p>
-    Reports are submitted online via the council’s website.
-  </p>
-  <p>
-    The enquiry will then be directed to the appropriate team for investigation.
-  </p>
+<details class="accordion">
+    <summary class="accordion-header">
+      <h3>How to Report</h3>
+      <div class="accordion-icon"></div>
+    </summary>
+    <div class="accordion-content">
+      <p>
+        Reports are submitted online via the council’s website.
+      </p>
+      <p>
+        The enquiry will then be directed to the appropriate team for investigation.
+      </p>
 
-  <p>
-    Once the report is received, the council will assess the report and an inspection may be carried out.
-    <br>Appropriate action will be taken to remove or reduce the danger
-  </p>
+      <p>
+        Once the report is received, the council will assess the report and an inspection may be carried out.
+        <br>Appropriate action will be taken to remove or reduce the danger
+      </p>
+    </div>
+  </details>
+  
 
   <details class="accordion">
     <summary class="accordion-header">
@@ -1016,10 +1024,10 @@ const reportingDangerousStructures = new ContentPaD(
           <li>Timber fences or domestic sheds</li>
           <li>Debris contained within a private enclosed area</li>
           <li>Walls in private rear gardens under 1.5 metres high</li>
-          <li>Hanging cables (should be reported to the relevant utility provider)</li>
-          <li>Highway-related hazards such as trip hazards or inspection covers</li>
+          <li>Hanging cables (<em>report to the relevant utility provider</em>)</li>
+          <li>Highway-related hazards such as trip hazards or inspection covers (<em>report to Amey</em>)</li>
           <li>Boundary disputes or encroachments</li>
-          <li>Unsafe working practices (report to the Health and Safety Executive)</li>
+          <li>Unsafe working practices (<em>report to the Health and Safety Executive</em>)</li>
           <li>General tree issues such as overgrowth or roots causing damage</li>
           <li>Bus shelters</li>
         </ul>
@@ -1027,7 +1035,7 @@ const reportingDangerousStructures = new ContentPaD(
   </details>
 
 `,
-  { buttonLabel: "Report a dangerous structure", formName: "dangerous_structures" },
+  { buttonLabel: "", formName: "" },
   { typeKey: "" },
   { typeKey: "" },
   {
