@@ -502,7 +502,7 @@ const fullPlansBuildingApplication = new ContentPaD(
       This type of application is commonly submitted by an architect or principal designer on behalf of the customer.
     </p>
     <p>
-      For more information, staff can refer to the official page: 
+      For more information can be found here: 
       <a href="https://www.sheffield.gov.uk/planning-development/building-control/full-plans" target="_blank">
       Full Plans Application – Sheffield City Council</a>
     </p>
@@ -568,11 +568,11 @@ const fullPlansBuildingApplication = new ContentPaD(
     <div class="accordion-content">
       <p>Customers can submit a Full Plans Application in two ways:</p>
         <ul>
-          <li><strong>Online via the Planning Portal - The council encourages use of the Planning Portal as it is quick and fully digital.</strong></li>
-          <li><strong>Directly to Sheffield City Council - </strong>Available for customers unable to use the Planning Portal</li>
+          <li><strong>Online via the Planning Portal</strong> - The council encourages use of the Planning Portal as it is quick and fully digital.</li>
+          <li><strong>Directly to Sheffield City Council</strong> - Available for customers unable to use the Planning Portal</li>
         </ul>
       <p>
-        <strong>Please note: Any service charge added by the Planning Portal is deducted so the total cost remains the same</strong>
+        <em>Please note: Any service charge added by the Planning Portal is deducted so the total cost remains the same</em>
       </p>
     </div>
   </details>
@@ -589,8 +589,8 @@ const fullPlansBuildingApplication = new ContentPaD(
       </p>
       <p>The RBI will either:</p>
         <ul>
-          <li>Approve the plans, or</li>
-          <li>Request amendments if needed to meet regulations</li>
+          <li><strong>Approve the plans</strong>, or</li>
+          <li><strong>Request amendments</strong> if needed to meet regulations</li>
         </ul>
       <p>
         If information is missing, the customer will be contacted before the application can be validated.
